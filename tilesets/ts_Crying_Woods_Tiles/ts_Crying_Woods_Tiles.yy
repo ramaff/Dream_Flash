@@ -1,0 +1,47 @@
+{
+  "resourceType": "GMTileSet",
+  "resourceVersion": "1.0",
+  "name": "ts_Crying_Woods_Tiles",
+  "spriteId": {
+    "name": "bg_Crying_Woods_Tiles",
+    "path": "sprites/bg_Crying_Woods_Tiles/bg_Crying_Woods_Tiles.yy",
+  },
+  "tileWidth": 64,
+  "tileHeight": 64,
+  "tilexoff": 0,
+  "tileyoff": 0,
+  "tilehsep": 0,
+  "tilevsep": 0,
+  "spriteNoExport": false,
+  "textureGroupId": {
+    "name": "Default",
+    "path": "texturegroups/Default",
+  },
+  "out_tilehborder": 3,
+  "out_tilevborder": 3,
+  "out_columns": 2,
+  "tile_count": 6,
+  "autoTileSets": [],
+  "tileAnimationFrames": [],
+  "tileAnimationSpeed": 15.0,
+  "tileAnimation": {
+    "FrameData": [
+      0,
+      1,
+      2,
+      3,
+      4,
+      5,
+    ],
+    "SerialiseFrameCount": 1,
+  },
+  "macroPageTiles": {
+    "SerialiseWidth": 0,
+    "SerialiseHeight": 0,
+    "TileSerialiseData": [],
+  },
+  "parent": {
+    "name": "Feel BG's",
+    "path": "folders/Tile Sets/Feel BG's.yy",
+  },
+}

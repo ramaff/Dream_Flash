@@ -1,0 +1,9 @@
+// Script assets have changed for v2.3.0 see
+// https://help.yoyogames.com/hc/en-us/articles/360005277377 for more information
+function scr_After_Image(lifespan = 10, shrink = true, fade = false){
+	with instance_create(x,y, obj_After_Image) {
+		alarm[0] = lifespan;
+		shrinking = shrink;
+		fading = fade;
+	}
+}

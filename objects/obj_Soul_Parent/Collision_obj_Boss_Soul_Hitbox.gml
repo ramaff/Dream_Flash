@@ -1,0 +1,74 @@
+//if other.bossid.state = states.normal {
+if instance_exists(other.bossid) {
+
+	if soulinvincibility <= 0 {
+	    if (scontactdamage + scontactdamageadd) > 0 {
+			
+			var cdam = scontactdamage + scontactdamageadd
+			var bspd = other.bossid.speed;
+			
+	        other.bossid.bosshealth -= cdam;
+        
+	        with instance_create(other.bossid.x,other.bossid.y,obj_Damage_Indicator) {
+	            element = 0;
+	            damageIndication = cdam;
+	            textSize = 1;
+	            direction = 90;
+	            speed = 1 + (bspd / 6) + random(0.05)
+	            friction = 0.01 + (bspd / 600)
+	            alarm[0] = 30 + irandom(3);
+	        }
+	    }
+		
+		hitType = "Boss";
+    
+	    damageamount = other.bossid.bosscontactdamage + (global.souldespair / 20) + (global.soulloathing / 10);
+	    defenseamount = (sdefenseadd + sdefensebuffamount + scontactdefenseadd) + global.currentheartdefense + (global.soulvanity / 20);
+    
+		if global.A[11] > 0 {
+			if (other.bossid.bosshealth < 0) {
+				damageamount = 0;
+			}
+			/*
+			part_type_sprite(ptype,spr_Soul_Bit,0,0,0);
+			part_type_color_mix(ptype, make_color_rgb(255,50,50),make_color_rgb(255,150,150));
+			part_type_alpha1(ptype, 1)
+				
+			repeat(8) {
+				scr_Soul_Part_Summon_Burst(2.5 + random(5));
+			}
+			*/
+		}
+	
+	    if (damageamount > defenseamount) {
+	        scr_B14_Boss();
+	        scr_Soul_Spirit_Check_Boss();
+	    }
+    	
+	    scr_Soul_Damage_Calculation();
+		soulinvincibility += 5;
+    
+	    if global.totalhearts <= 0 {
+	    if shealth <= 0 {
+	        instance_destroy();
+	    }
+	    }
+
+	}
+	
+	var i;
+	i = point_direction(other.bossid.x, other.bossid.y, x, y);
+	x += lengthdir_x(2, i);
+	y += lengthdir_y(2, i);
+
+
+	if sknockbackdefense < other.bossid.bossknockbackforce {
+	    direction = other.bossid.direction;
+	    speed = (other.bossid.bossknockbackforce - sknockbackdefense);
+	    alarm[10] = 6;
+	    scr_Knockback_Reactions();
+	}
+			
+}
+
+//}

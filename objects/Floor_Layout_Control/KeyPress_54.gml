@@ -1,0 +1,4 @@
+exit;
+
+global.soulhope++;
+

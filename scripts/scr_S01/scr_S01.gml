@@ -1,0 +1,39 @@
+function scr_S01() {
+	// Soul Hit Reactions
+
+	if global.S[1] > 0 {
+
+	    scr_Default_Weapon_Stats();
+    
+	    Shot_Spread += 36;
+	    Shot_Accuracy += 36;
+	    Shot_Count = 10;
+	
+    
+	    Shot_Sprite = spr_Defensive_Shot;
+	    Shot_Type = obj_Lesser_Soul_Shot;
+    
+	    Shot_Speed = 5.5;
+	    Shot_Power = 5 + ((20 + global.soulparanoia + global.soulparanoiaTemp) / 2 * global.S[1]);
+	    Shot_Knockback = 15;
+	    Shot_Lifespan = 100;
+		Shot_Mouse = 0;
+		if instance_exists(obj_Boss_Parent) {
+		Shot_Direction = point_direction(x,y,instance_nearest(x,y,obj_Boss_Parent).x,instance_nearest(x,y,obj_Boss_Parent).y);
+		}
+	
+		Shot_Size = 0.5;
+		Shot_Point_Angle = 1;
+	
+		Shot_Pierce++;
+	
+		if hitType = "Boss" {
+			Shot_Count = 5;
+		}
+    
+	    scr_Shot_Creation();
+
+	}
+
+
+}

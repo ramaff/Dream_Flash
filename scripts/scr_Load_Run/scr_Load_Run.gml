@@ -1,0 +1,446 @@
+function scr_Load_Run() {
+	if (file_exists("saverun.sav"))
+	{
+		
+		var i = 0;
+		var j = 0;
+
+		ini_open("saverun.sav")
+		for(i = 0; i <= 39; i++) {
+			flo = asset_get_index(ini_read_string("Run", "floor" + string(i) + "-" + string(4),0));
+	
+			if !(sprite_exists(flo)) || flo = spr_Leave_Indicator {
+				file_delete("saverun.sav");
+				ini_close();
+				global.loadrun = 0;
+				exit;	
+			}
+		}
+    
+	    //extracting values
+    
+	    for(i = 0; i <= 699; i++) {
+	        global.Weap[i] = ini_read_real("Run","Weap" + string(i),-1);
+	    }
+    
+	    for(i = 0; i <= 4; i++) {
+	        for(j = 1; j <= 2; j++) {
+	        Soul_Weapons_Control.weapon[i,j] = ini_read_real("Run", "weapon" + string(i) + "-" + string(j),0);
+	        }
+	    }
+	    for(i = 0; i < 16; i++) {
+	        for(j = 0; j <= 5; j++) {
+	        Soul_Hearts_Control.heart[i,j] = ini_read_real("Run", "heart" + string(i) + "-" + string(j),0);
+	        }
+	    }
+	    for(i = 0; i <= 39; i++) {
+	        //for(j = 0; j <= 39; j++) {
+	        //Floor_Layout_Control.Flash[i,j] = ini_read_string("Run", "floor" + string(i) + "-" + string(j),0);
+	        //}
+	        //}
+	        Floor_Layout_Control.Flash[i,0] = ini_read_string("Run", "floor" + string(i) + "-" + string(0),0);
+	        Floor_Layout_Control.Flash[i,1] = ini_read_real("Run", "floor" + string(i) + "-" + string(1),0);
+	        Floor_Layout_Control.Flash[i,2] = ini_read_real("Run", "floor" + string(i) + "-" + string(2),0);
+	        Floor_Layout_Control.Flash[i,3] = ini_read_real("Run", "floor" + string(i) + "-" + string(3),0);
+	        Floor_Layout_Control.Flash[i,4] = asset_get_index(ini_read_string("Run", "floor" + string(i) + "-" + string(4),0));
+	        Floor_Layout_Control.Flash[i,5] = ini_read_real("Run", "floor" + string(i) + "-" + string(5),0);
+	        Floor_Layout_Control.Flash[i,6] = ini_read_real("Run", "floor" + string(i) + "-" + string(6),0);
+	        Floor_Layout_Control.Flash[i,7] = ini_read_string("Run", "floor" + string(i) + "-" + string(7),0);
+	        Floor_Layout_Control.Flash[i,8] = ini_read_string("Run", "floor" + string(i) + "-" + string(8),0);
+	        Floor_Layout_Control.Flash[i,9] = ini_read_string("Run", "floor" + string(i) + "-" + string(9),0);
+	        Floor_Layout_Control.Flash[i,10] = ini_read_string("Run", "floor" + string(i) + "-" + string(10),0);
+	        Floor_Layout_Control.Flash[i,11] = ini_read_string("Run", "floor" + string(i) + "-" + string(11),0);
+	        Floor_Layout_Control.Flash[i,12] = ini_read_string("Run", "floor" + string(i) + "-" + string(12),0);
+	        Floor_Layout_Control.Flash[i,13] = ini_read_string("Run", "floor" + string(i) + "-" + string(13),0);
+	        Floor_Layout_Control.Flash[i,14] = ini_read_string("Run", "floor" + string(i) + "-" + string(14),0);
+	        Floor_Layout_Control.Flash[i,15] = ini_read_string("Run", "floor" + string(i) + "-" + string(15),0);
+	        Floor_Layout_Control.Flash[i,16] = ini_read_string("Run", "floor" + string(i) + "-" + string(16),0);
+	        Floor_Layout_Control.Flash[i,17] = ini_read_string("Run", "floor" + string(i) + "-" + string(17),0);
+	        Floor_Layout_Control.Flash[i,18] = ini_read_string("Run", "floor" + string(i) + "-" + string(18),0);
+	        Floor_Layout_Control.Flash[i,19] = ini_read_string("Run", "floor" + string(i) + "-" + string(19),0);
+	        Floor_Layout_Control.Flash[i,20] = ini_read_string("Run", "floor" + string(i) + "-" + string(20),0);
+	        Floor_Layout_Control.Flash[i,21] = asset_get_index(ini_read_string("Run", "floor" + string(i) + "-" + string(21),0));
+	        Floor_Layout_Control.Flash[i,22] = ini_read_real("Run", "floor" + string(i) + "-" + string(22),0);
+	        Floor_Layout_Control.Flash[i,23] = ini_read_real("Run", "floor" + string(i) + "-" + string(23),0);
+	        Floor_Layout_Control.Flash[i,24] = ini_read_real("Run", "floor" + string(i) + "-" + string(24),0);
+	        Floor_Layout_Control.Flash[i,25] = asset_get_index(ini_read_string("Run", "floor" + string(i) + "-" + string(25),0));
+	        Floor_Layout_Control.Flash[i,26] = asset_get_index(ini_read_string("Run", "floor" + string(i) + "-" + string(26),0));
+			Floor_Layout_Control.Flash[i,27] = ini_read_real("Run", "floor" + string(i) + "-" + string(27),0);
+			Floor_Layout_Control.Flash[i,28] = asset_get_index(ini_read_string("Run", "floor" + string(i) + "-" + string(28),0));
+			Floor_Layout_Control.Flash[i,29] = ini_read_real("Run", "floor" + string(i) + "-" + string(29),0);
+	        Floor_Layout_Control.Flash[i,30] = ini_read_real("Run", "floor" + string(i) + "-" + string(30),0);
+			Floor_Layout_Control.Flash[i,31] = asset_get_index(ini_read_string("Run", "floor" + string(i) + "-" + string(31),0));
+			Floor_Layout_Control.Flash[i,32] = ini_read_real("Run", "floor" + string(i) + "-" + string(32),0);
+	        Floor_Layout_Control.Flash[i,33] = ini_read_real("Run", "floor" + string(i) + "-" + string(33),0);
+	    }
+    
+	    global.currentchapter = ini_read_real("Run","currentchapter",1);
+	    global.currentroom = ini_read_real("Run","currentroom",0);
+	    global.strFields = ini_read_real("Run","strFields",0);
+	    global.vitFields = ini_read_real("Run","vitFields",0);
+	    global.essFields = ini_read_real("Run","essFields",0);
+	    global.dexFields = ini_read_real("Run","dexFields",0);
+	    global.perFields = ini_read_real("Run","perFields",0);
+	    global.staFields = ini_read_real("Run","staFields",0);
+		global.strFieldSpawn = ini_read_real("Run","strFieldSpawn",0);
+	    global.vitFieldSpawn = ini_read_real("Run","vitFieldSpawn",0);
+	    global.essFieldSpawn = ini_read_real("Run","essFieldSpawn",0);
+	    global.dexFieldSpawn = ini_read_real("Run","dexFieldSpawn",0);
+	    global.perFieldSpawn = ini_read_real("Run","perFieldSpawn",0);
+	    global.staFieldSpawn = ini_read_real("Run","staFieldSpawn",0);
+		
+		global.hopFieldSpawn = ini_read_real("Run","hopFieldSpawn",0);
+	    global.blsFieldSpawn = ini_read_real("Run","blsFieldSpawn",0);
+	    global.assFieldSpawn = ini_read_real("Run","assFieldSpawn",0);
+	    global.loaFieldSpawn = ini_read_real("Run","loaFieldSpawn",0);
+	    global.parFieldSpawn = ini_read_real("Run","parFieldSpawn",0);
+	    global.desFieldSpawn = ini_read_real("Run","desFieldSpawn",0);	   
+		
+		global.emoteFieldSpawn = ini_read_real("Run","emoteFieldSpawn",0);
+		global.totalFieldSpawn = ini_read_real("Run","totalFieldSpawn",0);
+		
+	    global.weaponslots = ini_read_real("Run","weaponslots",0);
+	    global.soulstrength = ini_read_real("Run","soulstrength",0);
+	    global.soulvitality = ini_read_real("Run","soulvitality",0);
+	    global.soulessence = ini_read_real("Run","soulessence",0);
+	    global.souldexterity = ini_read_real("Run","souldexterity",0);
+	    global.soulperception = ini_read_real("Run","soulperception",0);
+	    global.soulstate = ini_read_real("Run","soulstate",0);
+    
+	    global.souldespair = ini_read_real("Run","souldespair",0);
+	    global.soulparanoia = ini_read_real("Run","soulparanoia",0);
+	    global.soulloathing = ini_read_real("Run","soulloathing",0);
+	    global.soulvanity = ini_read_real("Run","soulvanity",0);
+	    global.soulbliss = ini_read_real("Run","soulbliss",0);
+	    global.soulhope = ini_read_real("Run","soulhope",0);
+    
+	    global.soulflash = ini_read_real("Run","soulflash",0);
+	    global.soulfeel = ini_read_real("Run","soulfeel",0);
+	    global.souldream = ini_read_real("Run","souldream",0);
+	    global.soulnightmare = ini_read_real("Run","soulnightmare",0);
+		global.chaptertime = ini_read_real("Run","chaptertime",0);
+		global.glasstime = ini_read_real("Run","glasstime",0);
+    
+	    global.totalhearts = ini_read_real("Run","totalhearts",3);
+	    global.spiritRoom = ini_read_real("Run","spiritRoom",0);
+	    global.evilSpiritRoom = ini_read_real("Run","evilSpiritRoom",0);
+		
+		global.H06refill = ini_read_real("Run","H06refill",0);
+		
+		global.soulstatecharge = ini_read_real("Run","soulstatecharge",0);
+	    global.soultransformedstate = ini_read_string("Run","soultransformedstate","None");
+		global.currentstate = ini_read_string("Run","currentstate","Base");
+		
+		obj_Soul_Parent.scurrentstate = global.currentstate;
+		obj_Soul_Parent.stransformedstate = global.soultransformedstate;
+		obj_Soul_Parent.sstatecharge = global.soulstatecharge;
+		
+		global.maxRooms = ini_read_real("Run","maxrooms",0);
+		global.extraRooms = ini_read_real("Run","extrarooms",0);
+		
+		if global.maxRooms = 0 {
+			global.maxRooms = 18;
+			global.extraRooms = 1;
+			if global.currentchapter = 2 {
+			    global.maxRooms = 18;
+			}
+			if global.currentchapter = 3 {
+			    global.maxRooms = 25;
+			}
+			if global.currentchapter = 4 {
+			    global.maxRooms = 21;
+			}
+		}
+		
+		global.snakeprogress = ini_read_real("Run","snakeprogress",0);
+		global.beastprogress = ini_read_real("Run","beastprogress",0);
+		global.mechprogress = ini_read_real("Run","mechprogress",0);
+		global.scrubprogress = ini_read_real("Run","scrubprogress",0);
+		global.spikeprogress = ini_read_real("Run","spikeprogress",0);
+		global.bleedingprogress = ini_read_real("Run","bleedingprogress",0);
+		global.castingprogress = ini_read_real("Run","castingprogress",0);
+	
+		global.soulhealth = Soul_Hearts_Control.heart[global.totalhearts - 1,3];
+		global.soulhealthmax = Soul_Hearts_Control.heart[global.totalhearts - 1,4];
+		obj_Soul_Parent.shealth = Soul_Hearts_Control.heart[global.totalhearts - 1,3];
+		obj_Soul_Parent.smaxhealth = Soul_Hearts_Control.heart[global.totalhearts - 1,4]; 
+	
+    
+	    for(i = 0; i <= 99; i++) {
+	        global.A[i] = ini_read_real("Run","A" + string(i),0);
+			repeat(global.A[i]) {
+				if i > 9 {
+					scr_Hard_Coded_Item_Stats("A" + string(i), 1, true);
+				} else {
+					scr_Hard_Coded_Item_Stats("A" + "0" + string(i), 1, true);
+				}
+			}
+	        global.B[i] = ini_read_real("Run","B" + string(i),0);
+			repeat(global.B[i]) {
+				if i > 9 {
+					scr_Hard_Coded_Item_Stats("B" + string(i), 1, true);
+				} else {
+					scr_Hard_Coded_Item_Stats("B" + "0" + string(i), 1, true);
+				}
+			}
+	        global.C[i] = ini_read_real("Run","C" + string(i),0);
+			repeat(global.C[i]) {
+				if i > 9 {
+					scr_Hard_Coded_Item_Stats("C" + string(i), 1, true);
+				} else {
+					scr_Hard_Coded_Item_Stats("C" + "0" + string(i), 1, true);
+				}
+			}
+	        global.D[i] = ini_read_real("Run","D" + string(i),0);
+			repeat(global.D[i]) {
+				if i > 9 {
+					scr_Hard_Coded_Item_Stats("D" + string(i), 1, true);
+				} else {
+					scr_Hard_Coded_Item_Stats("D" + "0" + string(i), 1, true);
+				}
+			}
+	        global.E[i] = ini_read_real("Run","E" + string(i),0);
+			repeat(global.E[i]) {
+				if i > 9 {
+					scr_Hard_Coded_Item_Stats("E" + string(i), 1, true);
+				} else {
+					scr_Hard_Coded_Item_Stats("E" + "0" + string(i), 1, true);
+				}
+			}
+	        global.F[i] = ini_read_real("Run","F" + string(i),0);
+			repeat(global.F[i]) {
+				if i > 9 {
+					scr_Hard_Coded_Item_Stats("F" + string(i), 1, true);
+				} else {
+					scr_Hard_Coded_Item_Stats("F" + "0" + string(i), 1, true);
+				}
+			}
+	        global.G[i] = ini_read_real("Run","G" + string(i),0);
+			repeat(global.G[i]) {
+				if i > 9 {
+					scr_Hard_Coded_Item_Stats("G" + string(i), 1, true);
+				} else {
+					scr_Hard_Coded_Item_Stats("G" + "0" + string(i), 1, true);
+				}
+			}
+	        global.H[i] = ini_read_real("Run","H" + string(i),0);
+			repeat(global.H[i]) {
+				if i > 9 {
+					scr_Hard_Coded_Item_Stats("H" + string(i), 1, true);
+				} else {
+					scr_Hard_Coded_Item_Stats("H" + "0" + string(i), 1, true);
+				}
+			}
+			global.I[i] = ini_read_real("Run","I" + string(i),0);
+			repeat(global.I[i]) {
+				if i > 9 {
+					scr_Hard_Coded_Item_Stats("I" + string(i), 1, true);
+				} else {
+					scr_Hard_Coded_Item_Stats("I" + "0" + string(i), 1, true);
+				}
+			}
+	        global.J[i] = ini_read_real("Run","J" + string(i),0);
+			repeat(global.J[i]) {
+				if i > 9 {
+					scr_Hard_Coded_Item_Stats("J" + string(i), 1, true);
+				} else {
+					scr_Hard_Coded_Item_Stats("J" + "0" + string(i), 1, true);
+				}
+			}
+	        global.K[i] = ini_read_real("Run","K" + string(i),0);
+			repeat(global.K[i]) {
+				if i > 9 {
+					scr_Hard_Coded_Item_Stats("K" + string(i), 1, true);
+				} else {
+					scr_Hard_Coded_Item_Stats("K" + "0" + string(i), 1, true);
+				}
+			}
+			global.L[i] = ini_read_real("Run","L" + string(i),0);
+			repeat(global.L[i]) {
+				if i > 9 {
+					scr_Hard_Coded_Item_Stats("L" + string(i), 1, true);
+				} else {
+					scr_Hard_Coded_Item_Stats("L" + "0" + string(i), 1, true);
+				}
+			}
+	        global.M[i] = ini_read_real("Run","M" + string(i),0);
+			repeat(global.M[i]) {
+				if i > 9 {
+					scr_Hard_Coded_Item_Stats("M" + string(i), 1, true);
+				} else {
+					scr_Hard_Coded_Item_Stats("M" + "0" + string(i), 1, true);
+				}
+			}
+			global.N[i] = ini_read_real("Run","N" + string(i),0);
+			repeat(global.N[i]) {
+				if i > 9 {
+					scr_Hard_Coded_Item_Stats("N" + string(i), 1, true);
+				} else {
+					scr_Hard_Coded_Item_Stats("N" + "0" + string(i), 1, true);
+				}
+			}
+			global.OA[i] = ini_read_real("Run","OA" + string(i),0);
+			repeat(global.OA[i]) {
+				if i > 9 {
+					scr_Hard_Coded_Item_Stats("OA" + string(i), 1, true);
+				} else {
+					scr_Hard_Coded_Item_Stats("OA" + "0" + string(i), 1, true);
+				}
+			}
+			global.OB[i] = ini_read_real("Run","OB" + string(i),0);
+			repeat(global.OB[i]) {
+				if i > 9 {
+					scr_Hard_Coded_Item_Stats("OB" + string(i), 1, true);
+				} else {
+					scr_Hard_Coded_Item_Stats("OB" + "0" + string(i), 1, true);
+				}
+			}
+			global.OC[i] = ini_read_real("Run","OC" + string(i),0);
+			repeat(global.OC[i]) {
+				if i > 9 {
+					scr_Hard_Coded_Item_Stats("OC" + string(i), 1, true);
+				} else {
+					scr_Hard_Coded_Item_Stats("OC" + "0" + string(i), 1, true);
+				}
+			}
+			global.P[i] = ini_read_real("Run","P" + string(i),0);
+			repeat(global.P[i]) {
+				if i > 9 {
+					scr_Hard_Coded_Item_Stats("P" + string(i), 1, true);
+				} else {
+					scr_Hard_Coded_Item_Stats("P" + "0" + string(i), 1, true);
+				}
+			}
+			global.S[i] = ini_read_real("Run","S" + string(i),0);
+			repeat(global.S[i]) {
+				if i > 9 {
+					scr_Hard_Coded_Item_Stats("S" + string(i), 1, true);
+				} else {
+					scr_Hard_Coded_Item_Stats("S" + "0" + string(i), 1, true);
+				}
+			}
+	        global.R[i] = ini_read_real("Run","R" + string(i),0);
+			repeat(global.R[i]) {
+				if i > 9 {
+					scr_Hard_Coded_Item_Stats("R" + string(i), 1, true);
+				} else {
+					scr_Hard_Coded_Item_Stats("R" + "0" + string(i), 1, true);
+				}
+			}
+			global.T[i] = ini_read_real("Run","T" + string(i),0);
+			repeat(global.T[i]) {
+				if i > 9 {
+					scr_Hard_Coded_Item_Stats("T" + string(i), 1, true);
+				} else {
+					scr_Hard_Coded_Item_Stats("T" + "0" + string(i), 1, true);
+				}
+			}
+			global.U[i] = ini_read_real("Run","U" + string(i),0);
+			repeat(global.U[i]) {
+				if i > 9 {
+					scr_Hard_Coded_Item_Stats("U" + string(i), 1, true);
+				} else {
+					scr_Hard_Coded_Item_Stats("U" + "0" + string(i), 1, true);
+				}
+			}
+			global.V[i] = ini_read_real("Run","V" + string(i),0);
+			repeat(global.V[i]) {
+				if i > 9 {
+					scr_Hard_Coded_Item_Stats("V" + string(i), 1, true);
+				} else {
+					scr_Hard_Coded_Item_Stats("V" + "0" + string(i), 1, true);
+				}
+			}
+			global.W[i] = ini_read_real("Run","W" + string(i),0);
+			repeat(global.W[i]) {
+				if i > 9 {
+					scr_Hard_Coded_Item_Stats("W" + string(i), 1, true);
+				} else {
+					scr_Hard_Coded_Item_Stats("W" + "0" + string(i), 1, true);
+				}
+			}
+			global.XA[i] = ini_read_real("Run","XA" + string(i),0);
+			repeat(global.XA[i]) {
+				if i > 9 {
+					scr_Hard_Coded_Item_Stats("XA" + string(i), 1, true);
+				} else {
+					scr_Hard_Coded_Item_Stats("XA" + "0" + string(i), 1, true);
+				}
+			}
+			global.XB[i] = ini_read_real("Run","XB" + string(i),0);
+			repeat(global.XB[i]) {
+				if i > 9 {
+					scr_Hard_Coded_Item_Stats("XB" + string(i), 1, true);
+				} else {
+					scr_Hard_Coded_Item_Stats("XB" + "0" + string(i), 1, true);
+				}
+			}
+			global.XC[i] = ini_read_real("Run","XC" + string(i),0);
+			repeat(global.XC[i]) {
+				if i > 9 {
+					scr_Hard_Coded_Item_Stats("XC" + string(i), 1, true);
+				} else {
+					scr_Hard_Coded_Item_Stats("XC" + "0" + string(i), 1, true);
+				}
+			}
+
+	    }
+			
+		var pools = [global.AItemPool, global.BItemPool, global.CItemPool, global.DItemPool, global.EItemPool, global.FItemPool, global.GItemPool, global.HItemPool, global.IItemPool, global.JItemPool, global.KItemPool, global.LItemPool, global.MItemPool, global.NItemPool, global.OAItemPool, global.OBItemPool, global.OCItemPool, global.PItemPool, global.RItemPool, global.SItemPool, global.TItemPool, global.UItemPool, global.VItemPool, global.WItemPool, global.XAItemPool, global.XBItemPool, global.XCItemPool];
+		for(j = 0; j < array_length(pools); j++) {
+			var pool = pools[j];
+			ds_list_clear(pool);
+			//array_delete(pool, 0, array_length(pool))
+		}
+		
+		
+		var pletters = ["A", "B", "C", "D", "E", "F", "G", "H", "I", "J", "K", "L", "M", "N", "OA", "OB", "OC", "P", "R", "S", "T", "U", "V", "W", "XA", "XB", "XC"];
+		for(j = 0; j < array_length(pools); j++) {
+			var pool = pools[j];
+			var pletter = pletters[j];
+			var psize = 50;
+			for(i = 0; i < psize; i++) {
+				if i < 10 {
+					var pool00 = "Pool" + string(pletter) + "0" + string(i);
+					var p00 = ini_read_real("Run", pool00, 0);
+					if (p00 >= 1) and (pool00 = "PoolA00" || pool00 = "PoolB00" || pool00 = "PoolC00" || pool00 = "PoolD00" || pool00 = "PoolE00" || pool00 = "PoolF00") {
+						repeat(p00) {
+							ds_list_add(global.IItemPool, string(pletter) + "0" + string(i));
+							 //array_push(global.IItemPool, string(pletter) + "0" + string(i));
+						}
+						continue;
+					}
+					var it = ini_read_real("Run", "Pool" + string(pletter) + "0" + string(i), 0);
+					if it = 1 {
+						ds_list_add(pool, string(pletter) + "0" + string(i));
+						//array_push(pool, string(pletter) + "0" + string(i));
+					}
+				} else {
+					var it = ini_read_real("Run", "Pool" + string(pletter) + string(i), 0);
+					if it = 1 {
+						ds_list_add(pool, string(pletter) + string(i));
+						//array_push(global.IItemPool, string(pletter) + string(i));
+					}
+				}
+			}
+			
+		}
+	        //global.A[i] = ini_read_real("Run","A" + string(i));
+			
+		
+		global.clarityBomb = ini_read_real("Run","clarityBomb",0);
+	    global.OC4Debuff = ini_read_string("Run","OC4Debuff","None");
+		global.temperCharge = ini_read_real("Run","temperCharge",0);
+		global.temperActive = ini_read_string("Run","temperActive","Base");
+		global.downwardSpiralBoost = ini_read_real("Run","downwardSpiralBoost",0);
+	
+        
+	    ini_close();
+
+	}
+
+
+
+
+
+}

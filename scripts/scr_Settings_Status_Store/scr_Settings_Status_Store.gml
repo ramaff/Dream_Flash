@@ -1,0 +1,20 @@
+function scr_Settings_Status_Store() {
+	global.gameTutorial = 0;
+	global.gameSound = 100;
+	global.gameMusic = 100;
+	global.gameFocusPause = 1;
+	global.gameDamageDisplay = 1;
+	global.gameResolutionX = 1280;
+	global.gameResolutionY = 720;
+	global.gameFullscreen = 0;
+	global.gameBloomShader = 1;
+	
+	global.gameScreenShake = 1;
+	global.gameParticles = 1;
+	global.gameGraphics = "High";
+	
+	scr_Controls_Setup();
+
+
+
+}

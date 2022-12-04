@@ -1,0 +1,2 @@
+bulletphase = 0;
+

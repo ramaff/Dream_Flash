@@ -1,0 +1,1 @@
+    soulshotblock = 1;

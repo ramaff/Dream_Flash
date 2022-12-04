@@ -1,0 +1,4 @@
+
+
+friction = speed / 100;
+

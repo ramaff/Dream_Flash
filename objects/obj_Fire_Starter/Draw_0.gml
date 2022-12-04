@@ -1,0 +1,13 @@
+/// @description Insert description here
+// You can write your code in this editor
+//texture_set_interpolation(0);
+
+var palindex = champ;
+
+pal_swap_set(spr_Fire_Starter_Palette,palindex,false);
+    
+draw_self();
+
+pal_swap_reset();
+
+//texture_set_interpolation(1);

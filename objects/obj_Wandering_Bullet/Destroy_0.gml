@@ -1,0 +1,21 @@
+/// @description Insert description here
+// You can write your code in this editor
+
+dir = -90 + (-45 + random(90));
+    repeat(4) {
+        dir += 90;
+        with instance_create(x,y,obj_Basic_Bullet) {
+            scr_Bullet_Replicate_Properties();
+            sprite_index = spr_Grey_Shot;
+            bulletspeed = 4;
+            bulletpower = other.bulletpower;
+            speed = bulletspeed;
+            direction = other.direction + other.dir;
+            bulletlifespan = 300;
+            alarm[0] = 300;
+        }
+    }
+
+// Inherit the parent event
+event_inherited();
+

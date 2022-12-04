@@ -1,0 +1,3 @@
+exit;
+game_restart();
+

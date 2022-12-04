@@ -1,0 +1,192 @@
+// Script assets have changed for v2.3.0 see
+// https://help.yoyogames.com/hc/en-us/articles/360005277377 for more information
+function scr_Soul_Shot_Boss_Hit(){
+
+	var hit_again = variable_struct_exists(other.projectile_hits, shot_boss_id)
+	if !hit_again and shotdamage {
+    
+	    if shotpierce > 0 || shotcontinue = 1 {
+		
+			if shotpierce = 1 and shotimpacttype = 2 {
+				scr_Screen_Shake(20, 14);
+				scr_Screen_Flash(7);
+		
+				with (obj_Boss_Parent) {
+				    dmg = other.shotimpactpower;
+				    bosshealth -= dmg;
+				    scr_Damage_Indicator(0, dmg, 2);
+				}
+		
+				with(obj_Bullet_Parent) {
+				    bulletspeed = bulletspeed / 3;
+				    speed = speed / 3;
+				
+					bulletpower -= other.shotimpactpower / 2;
+					bulletsize = (bulletpower / bulletpowermax);
+				
+					if bulletsize < 0.05 {
+						bulletsize = 0.05;	
+					}
+					if bulletpower < 1 {
+						instance_destroy();	
+					}
+				}
+			}
+		
+	        scr_Boss_Damage_Calc();
+		
+			if shotscreenshake > 2 {
+				scr_Screen_Shake(shotscreenshake, shotscreenshake - 2);
+				shotscreenshake = 0;
+			}
+		
+			if shotDamage > 0 {
+				//scr_Boss_Hit_Part_Splash_Juice();
+				
+				scr_Particle_Burst(shottrailhittype, shottrailhitsprite, shottrailcolor1, shottrailcolor2, shottrailhitcount, shottrailhitspeed, 0, 360 / shottrailhitcount, shottrailarea, shotsize, shottrailhitlife, true)
+				scr_Particle_Burst(shottrailhittype, shottrailhitsprite, shottrailcolor1, shottrailcolor2, shottrailhitcount / 2, shottrailhitspeed * 2, 0, 720 / shottrailhitcount, shottrailarea, shotsize, shottrailhitlife, true)
+				
+				if shotessencedrain > 0 {
+					obj_Soul_Parent.senergy += shotpower * shotessencedrain;
+				}
+			}
+		
+			if shotlifedrain > 0 {
+				var valdis = (shotDamage / 10) * shotlifedrain;
+				scr_Heal_Soul(valdis);
+
+				with instance_create(obj_Soul_Parent.x,obj_Soul_Parent.y,obj_Damage_Indicator) {
+					element = 6;
+					damageIndication = valdis;
+					textSize = 1;
+					direction = 90;
+					speed = 1.5 + random(0.35)
+					friction = 0.01 + (other.speed / 600)
+					alarm[0] = 30 + irandom(6);
+				}
+			}
+		
+			if global.A[7] > 0 and shotorigin = obj_Soul_Parent {
+				scr_A07();	
+			}
+        
+	        if shotweaken != 0 {
+	            for(i = 0; i <= 49; i++) {
+	                if other.bossweaken[i] = 0 {
+	                    other.bossweaken[i] = shotweaken;
+	                    other.bossweakentime[i] = shotweakentime;
+	                    break;
+	                }
+	            }
+	        }
+		
+			if shotarmourtear != 0 {
+				if other.bossdefense > 0 {
+					other.bossdefense -= shotarmourtear;
+					if other.bossdefense < 0 {
+						other.bossdefense = 0;	
+					}
+				}
+			}
+        
+	        if other.pathBoss = 0 {
+	            if shotknockback >= other.bossknockdefense {
+	                other.bossknockbackdirection = direction;
+	                other.bossknockback = (shotknockback - other.bossknockdefense);
+	                other.bossknockbacktime = 5;
+					if other.bossknockback > 200 {
+						other.bossknockback = 200;	
+					}
+	            }
+	        } else {
+	            if shotknockback > other.bossknockdefense {
+	                other.path_position -= (shotknockback - other.bossknockdefense) / 1000;
+	            }
+	        }
+        
+	        //ds_list_add(other.projectile_hits, shot_boss_id);
+			variable_struct_set(other.projectile_hits, shot_boss_id, shot_boss_id)
+			
+	        if shotbursttype >= 1 {
+	            dir = 90
+	            repeat(shotburstamount) {
+	                with instance_create(x,y,obj_Lesser_Soul_Shot) {
+						shotlifespan = other.shotlifespan / 2;
+	                    scr_Duplicate_Shot_Stats();
+	                    //shotlifespan = shotlifespan / 2;
+	                    //alarm[0] = shotlifespan;
+	                }
+	                dir += 360 / shotburstamount;
+	            }
+	        }
+        
+	        if shotimpacttype = 1 {
+	            with (obj_Boss_Parent) {
+	                var hit_again = variable_struct_exists(projectile_hits, other.shot_boss_id)
+					if !hit_again {
+	                    if distance_to_object(other) < other.shotimpactsize {
+	                        scr_Boss_Splash_Damage_Calc();
+	                    }
+	                }
+	            }
+				/*
+	            with instance_create(x,y,obj_Essence_Impact_Show) {
+					sprite_index = other.shotexplosionsprite;
+	                size = other.shotimpactsize / 150;
+	                image_xscale = size;
+	                image_yscale = size;
+	            }
+				*/
+				if shotimpactexplode = 1 {
+					scr_Boss_Hit_Explosion();
+				}
+	        }
+		
+			if shotbounce = 2 {
+				direction = random(360);	
+			}
+        
+	        if shotchain <= 0 || shotmelee = 1 { 
+				if shotcontinue = 0 {
+		            shotpierce--;
+		            if shotpierce <= 0 {
+		                instance_destroy();
+		            }
+				} else {
+					if shotpower >= (other.bosshealth + shotpower) {
+				        shotpower -= (other.bosshealth + shotpower);
+				    } else {
+				        instance_destroy();
+				    }
+				}
+	        } else {
+				if (shotmelee = 0 and shothomingtype != 2) {
+		            shotchain--;
+		            target = noone
+		            x = other.x;
+		            y = other.y;
+		            with obj_Boss_Parent {
+		                dis = distance_to_object(other);
+		                var hit_again = variable_struct_exists(projectile_hits, other.shot_boss_id)
+						if !hit_again
+		                if other.target == noone || dis < other.target.dis
+		                if collision_circle(other.x, other.y, other.shotchainrange, id, true, false)
+		                other.target = id;
+		            }
+		            if target != noone {
+		                move_towards_point(target.x,target.y,shotchainspeed);
+		            } else if shotpierce <= 0 and shotextrahits <= 0 {
+		                instance_destroy();
+		            }
+				}
+	        }
+        
+	        if other.currentphase >= other.finalphase
+	        if other.bosshealth <= 0 {
+	            instance_destroy(other);
+	        }
+	    }
+	}
+
+
+}

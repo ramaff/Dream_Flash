@@ -1,0 +1,10 @@
+draw_sprite_ext(sprite_index,image_index,x,y,image_xscale,image_yscale,image_angle,c_white,image_alpha);
+if instance_exists(obj_Boss_Parent) {
+senergy = 100;
+scr_Draw_Standalone_Beam();
+
+scr_Draw_Beam_Setup_No_Mouse("Weapon");
+}
+
+sWeaponUseFrame = 0;
+

@@ -1,0 +1,80 @@
+/// @description Insert description here
+// You can write your code in this editor
+#macro view view_camera[0]
+
+if instance_exists(Floor_Layout_Control) {
+	var rsize = Floor_Layout_Control.Flash[global.currentroom, 3];
+	var ideal_zoom = sqrt(1024 / rsize);
+	if ideal_zoom < 0.875 {
+		ideal_zoom = 0.875;	
+	}
+	if global.layerdeep >= 1 {
+		ideal_zoom = 0.875;	
+	}
+	view_zoom = lerp(ideal_zoom, view_zoom, 0.0001)
+}
+
+view_zoom = clamp(view_zoom, 0.5, 2);
+view_width_zoom = ideal_width / view_zoom;
+view_height_zoom = ideal_height / view_zoom;
+ 
+camera_set_view_size(view, view_width_zoom, view_height_zoom);
+
+// Game Zoom
+/*
+view_zoom += keyboard_check(vk_up) * 0.1;
+view_zoom -= keyboard_check(vk_down) * 0.1;
+*/
+
+// Center View
+
+if instance_exists(obj_Soul_Parent) {
+	
+	/*
+	var xAv = mean(obj_Soul_Parent.x*4,mouse_x) / 2.5;
+	var yAv = mean(obj_Soul_Parent.y*4,mouse_y) / 2.5;
+
+	if instance_exists(obj_Main_Boss_Parent) {
+		if obj_Main_Boss_Parent.state = states.normal || obj_Main_Boss_Parent.state = states.jumping {
+			var xAv = mean(obj_Soul_Parent.x * 4,obj_Main_Boss_Parent.x,mouse_x) / 2;
+			var yAv = mean(obj_Soul_Parent.y * 4,obj_Main_Boss_Parent.y,mouse_y) / 2;
+		}
+	}
+	*/
+	
+	var xAv = mean(obj_Soul_Parent.x * 4,room_width / 2,mouse_x) / 2;
+	var yAv = mean(obj_Soul_Parent.y * 4,room_height / 2,mouse_y) / 2;
+	
+	if instance_exists(obj_Wall_Of_Thoughts) {
+		if obj_Wall_Of_Thoughts.state = states.normal || obj_Wall_Of_Thoughts.state = states.jumping {
+			var xAv = mean(obj_Soul_Parent.x * 3,obj_Wall_Of_Thoughts.x * 2,mouse_x) / 2;
+			var yAv = mean(obj_Soul_Parent.y * 3,obj_Wall_Of_Thoughts.y * 2,mouse_y) / 2;
+		}
+	}
+	
+	var camX = clamp((xAv - (view_width_zoom / 2)), 0, room_width - view_width_zoom);
+	var camY = clamp((yAv - (view_height_zoom / 2)), 0, room_height - view_height_zoom);
+
+	if instance_exists(Tutorial_Control) {
+
+	    camX = Tutorial_Control.x - (view_width_zoom / 2);
+	    camY = Tutorial_Control.y - (view_height_zoom / 2);
+	}
+
+	//camX = clamp(camX,obj_Soul_Parent.x - view_width_zoom * 2,obj_Soul_Parent.x + view_width_zoom * 2);
+	//camY = clamp(camY,obj_Soul_Parent.y - view_height_zoom * 2,obj_Soul_Parent.y + view_height_zoom * 2);	
+	
+	var _cur_x = camera_get_view_x(view);
+	var _cur_y = camera_get_view_y(view);
+	
+	var spd = 0.075;
+	
+	camera_set_view_pos(view, 
+						(lerp(_cur_x, camX, spd)), 
+						(lerp(_cur_y, camY, spd)));
+} else {
+	//camera_set_view_pos(view, room_width / 2 - view_width_zoom / 2, room_height / 2 - view_height_zoom / 2);
+}
+
+
+//camera_set_default(view);

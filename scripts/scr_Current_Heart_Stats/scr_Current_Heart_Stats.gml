@@ -1,0 +1,154 @@
+function scr_Current_Heart_Stats() {
+
+	global.totalhearts = 0;
+
+	global.currenthearthp = 20;
+	global.currentheartdefense = 0;
+	global.currentheartregen = 1;
+	global.currentheartsurvival = 0;
+
+	for (i = 0; i < 16; i++) {
+	    if Soul_Hearts_Control.heart[i,2] != 0 {
+	        global.totalhearts++;
+	    }
+	}
+	//if global.mousehearttype != 0 {
+	//	global.currentheart--;
+	//}
+	global.currentheart = global.totalhearts - 1;
+
+	if global.mousehearttype != 0 {
+		global.totalhearts++;	
+	}
+
+	if global.currentheart < 0 {
+		global.currentheart = 0;	
+	}
+
+	if global.totalhearts > 0 {
+		global.currenthearttype = heart[global.currentheart,2]
+	}
+
+	if global.bosscount = 0 {
+	    for (i = 0; i < 16; i++) {
+	        //if Soul_Hearts_Control.heart[i,2] = 0.01 {
+	        //    Soul_Hearts_Control.heart[i,2] -= 0.01;
+	        //}
+	        if frac(Soul_Hearts_Control.heart[i,2]) > 0 {
+	            Soul_Hearts_Control.heart[i,2] -= frac(Soul_Hearts_Control.heart[i,2]);
+	        }
+	    }
+	    global.currenthearttype = heart[global.currentheart,2]
+	}
+
+	var currHeart = global.currenthearttype - frac(global.currenthearttype);
+
+	if currHeart != 3 {
+	    if frac(global.currenthearttype) = (0.01 * global.B[4]) {
+	        global.currentheartsurvival = 0;
+	    } else {
+	        global.currentheartsurvival = 1;
+	    }
+	}
+
+	/////////////////////////////////////////////Regen Heart
+	if currHeart = 2 {
+	global.currentheartregen = 3 * global.soulheartboost;
+	}
+	/////////////////////////////////////////////Survivor Heart
+	if global.currenthearttype = 3 {
+	global.currentheartsurvival = 2;
+	}
+	/////////////////////////////////////////////Survivor Heart Pt II
+	if global.currenthearttype = 3.01 {
+	global.currentheartsurvival = 1;
+	global.currenthearthp = 1;
+	}
+	/////////////////////////////////////////////Survivor Heart Pt III
+	if global.currenthearttype = 3.02 {
+	global.currentheartsurvival = 0;
+	global.currenthearthp = 1;
+	}
+	/////////////////////////////////////////////Jumbo Heart
+	if currHeart = 4 {
+	global.currenthearthp = 40;
+	}
+	/////////////////////////////////////////////Tough Heart
+	if currHeart = 5 {
+	global.currentheartdefense = 4 * global.soulheartboost;
+	}
+	/////////////////////////////////////////////Undying Heart
+	if currHeart = 6 {
+	global.currenthearthp = 10;
+	}
+	/////////////////////////////////////////////Hourglass Heart
+	if currHeart = 7 {
+	global.currenthearthp = 60;
+	global.currentheartregen = 0;
+	}
+	/////////////////////////////////////////////Spike Heart
+	if currHeart = 8 {
+	global.currenthearthp = 20;
+	}
+	/////////////////////////////////////////////Bleeding Heart
+	if currHeart = 9 {
+	global.currenthearthp = 20;
+	}
+	/////////////////////////////////////////////Magician Heart
+	if currHeart = 10 {
+	global.currenthearthp = 20;
+	}
+	/////////////////////////////////////////////Rocket Heart
+	if currHeart = 11 {
+	global.currenthearthp = 20;
+	}
+	/////////////////////////////////////////////Lightning Heart
+	if currHeart = 12 {
+	global.currenthearthp = 20;
+	}
+	/////////////////////////////////////////////Scaley Heart
+	if currHeart = 13 {
+	global.currenthearthp = 20;
+	//global.currentheartregen = 2;
+	}
+	/////////////////////////////////////////////Beast Heart
+	if currHeart = 14 {
+	global.currenthearthp = 25;
+	}
+	/////////////////////////////////////////////Rubber Heart
+	if currHeart = 15 {
+	global.currenthearthp = 20;
+	}
+	/////////////////////////////////////////////Jello Heart
+	if currHeart = 16 {
+	global.currenthearthp = 20;
+	}
+	///////////////////////////////////////////// Cope Heart
+	if currHeart = 51 {
+		global.currenthearthp = 20 * global.T[1];
+	}
+	///////////////////////////////////////////// Security Heart
+	if currHeart = 52 {
+		global.currenthearthp = 20 * global.OC[2];
+	}
+	///////////////////////////////////////////// Seethe Heart
+	if currHeart = 53 {
+		global.currenthearthp = 20 * global.XA[4];
+	}
+	/////////////////////////////////////////////Body Bag Heart
+	if currHeart = 103 {
+		global.currenthearthp = 20 + 20 * global.B[3];
+	}
+
+	/*
+	if global.V[5] > 0 {
+		if global.currentheart = 0 {
+			global.currenthearthp += 20 * global.V[5];
+		}
+	}
+	*/
+	
+	//scr_H05();
+
+
+}

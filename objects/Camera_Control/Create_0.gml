@@ -1,0 +1,64 @@
+/// @description Insert description here
+// You can write your code in this editor
+if instance_number(Camera_Control) > 1 {
+	instance_destroy();
+	exit;
+}
+ideal_width = 0;
+ideal_height = 540;
+
+aspect_ratio = display_get_width() / display_get_gui_height();
+aspect_ratio = 960/540;
+
+ideal_width = floor(ideal_height * aspect_ratio);
+ideal_width = 960;
+//ideal_height = round(ideal_width / aspect_ratio);
+/*
+if (display_get_width() mod ideal_width != 0) {
+	var d = round(display_get_width() / ideal_width);
+	ideal_width = display_get_width() / d;
+}
+if (display_get_height() mod ideal_height != 0) {
+	var d = round(display_get_height() / ideal_height);
+	ideal_height = display_get_height() / d;
+}
+*/
+view_zoom = 1;
+view_max_zoom = 10;
+
+view_zoom = 0.875;
+
+if(ideal_width & 1) {
+	ideal_width++;
+}
+if(ideal_height & 1) {
+	ideal_height++;
+}
+
+window_scale = 720/540;
+window_scale = 1;
+
+max_scale = (display_get_width()/ideal_width);
+max_scale = 10;
+
+view_width = ideal_width;
+view_height = ideal_height;
+
+/*
+for(i = 1; i < room_last; i++) {
+	if room_exists(i) {
+		room_set_view_enabled()
+	}	
+}
+*/
+
+//surface_resize(application_surface, view_width * window_scale, view_height * window_scale);
+window_set_size((view_width * window_scale), view_height * window_scale);
+surface_resize(application_surface, (view_width * window_scale), view_height * window_scale);
+alarm[0] = 1;
+
+//alarm[1] = 600;
+
+//camSpeed = 0.1;
+camX = room_width / 2;
+camY = room_height / 2;
