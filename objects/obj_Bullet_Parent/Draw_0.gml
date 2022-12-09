@@ -11,7 +11,8 @@ for(c = 0;c < 360;c += 36){
 draw_set_blend_mode(bm_normal)
 */
 
-draw_self();
 
+draw_self();
+/*
 draw_set_color(c_black)
 draw_text(x + 30, y, string(bulletpower));

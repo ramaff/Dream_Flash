@@ -14,6 +14,10 @@ speed = 0.5;
 
 bossPassiveAttackDelay[1] = 10;
 
-bossHandDirection = random(360);
+bossEyeDirection = random(360);
 
 scr_Boss_Height_Setup(70);
+
+if champ = 8 {
+	bossActiveAttackCooldown[1] = 60 + random(180);	
+}

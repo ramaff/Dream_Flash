@@ -21,6 +21,6 @@ function scr_Boss_Attack_Setup() {
 	    bossPatternDirection = 0;
 	    bossPatternCooldown = 0;
 
-
+		setbeamlength = 0;
 
 }

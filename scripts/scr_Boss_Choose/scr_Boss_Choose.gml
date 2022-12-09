@@ -392,7 +392,7 @@ function scr_Boss_Choose(roomNum, exclude, difficultyAdd = 0) {
 	{
 	    bosstype = obj_Crazy_Eye;
 	    difficulty = 5;
-	    global.champ = 0 + irandom(1);
+	    global.champ = choose(0,1,8);
 		//global.champ = 0;
 	}
 
