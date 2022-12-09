@@ -1,4 +1,4 @@
-if champ = 0 {
+if champ = 0 || champ = 8 {
     direction = point_direction(x,y,instance_nearest(x,y,obj_Soul).x,instance_nearest(x,y,obj_Soul).y);
 }
 if champ = 1 {
@@ -9,4 +9,5 @@ if champ = 1 {
     x += lengthdir_x(backSpeed, i);
     y += lengthdir_y(backSpeed, i);
 }
+
 
