@@ -4,6 +4,8 @@ scr_Boss_Step();
 
 scr_Room_Loop_Horizontal();
 
+scr_Boss_Height_Bob(40, 0.5, 0);
+
 ///Passive Attack Prep
 
 ///////////////////////////////////////////////////////////////////
@@ -16,32 +18,37 @@ var bossdirection = scr_Soul_Point()
     direction = bossdirection;
 
 if bossActiveAttackDelay[1] <= 0 and bossActiveAttackCooldown[1] <= 0 and bossActiveAttackDuration[1] <= 0 {
-    mCount = instance_number(obj_Minion_Parent);
-    bCount = instance_number(obj_Main_Boss_Parent);
 	
     bossActiveAttack[1] = choose(1,2,2,2);
-	if ((mCount - 3) / bCount) >= 6 {
+	
+	if scr_Minion_Count() {
         bossActiveAttack[1] = choose(1);
     }
     if currentphase = 2 {
         bossActiveAttack[1] = choose(3,4);
     }
     if bossActiveAttack[1] = 1 {
+		/*
         bossActiveAttackDelay[1] = 10;
         bossPatternCount = 3;
         bossPatternCooldown = 60;
         bossPatternCooldownMax = 60;
         bossActiveAttackDuration[1] = 10 + bossPatternCooldownMax * bossPatternCount;
         bossActiveAttackCooldown[1] = 100 + (irandom(1) * 20);
+		*/
+		scr_Boss_Attack_Time_Setup(3, 40, 50, 120, 30, 0);
     }
     if bossActiveAttack[1] = 2 {
-		
+		/*
         bossActiveAttackDelay[1] = 10;
         bossPatternCount = 6;
         bossPatternCooldown = 15;
         bossPatternCooldownMax = 15;
         bossActiveAttackDuration[1] = 10 + bossPatternCooldownMax * bossPatternCount;
         bossActiveAttackCooldown[1] = 90 + (irandom(1) * 20);
+		*/
+		scr_Boss_Attack_Time_Setup(4, 20, 20, 120, 30, 0);
+		spawnFrame = 0;
     }
 	if bossActiveAttack[1] = 3 {
         bossActiveAttackDelay[1] = 10;
@@ -180,6 +187,7 @@ if bossActiveAttackDelay[1] <= 0 and bossPatternCooldown <= 0 and bossPatternCou
 			minion_count = 1;
 	        minion_type = obj_Sweeping_Locust_Clone;
 	        minion_health = bossmaxhealth / 20;
+			minion_defense = 0;
 	        scr_Minion_Spawn();
 		//}
 	
@@ -296,14 +304,13 @@ if bossActiveAttackDuration[1] <= 0 {
 scr_Boss_Size_Lerp_Dir(0.15);
 
 //if champ = 0 {
-	if bossActiveAttack[1] != 0 { 
-			sprite_index = spr_Locust_Shoot;
-			if image_index >= 8 {
-				image_index = 5;	
-			}
-	} else { // Default
-		sprite_index = spr_Locust;		
-	}
+if bossActiveAttack[1] = 1 { 
+	scr_Boss_Attack_Sprite(spr_Locust_Shoot, 50, 0, 5);
+} else if bossActiveAttack[1] = 2 { 
+	scr_Boss_Attack_Sprite(spr_Locust_Spawning, 40, 5, 6);
+} else { // Default
+	sprite_index = spr_Locust;		
+}
 //}
 
 #endregion

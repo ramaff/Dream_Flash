@@ -4,10 +4,10 @@ function scr_Minion_Count(){
 	var mCount = instance_number(obj_Minion_Parent);
     var bCount = instance_number(obj_Main_Boss_Parent);
 	
-	var mT = 0
+	var mT = false;
 	
-	if ((mCount - 3) / bCount) >= 6 {
-        mT = 1;
+	if ((mCount - 3) / bCount) >= 3 {
+        mT = true;
     }
 	
 	return mT;

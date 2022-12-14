@@ -9,10 +9,10 @@ if currentphase = 2 {
 	if bossHeight > 0 {
 		var fallSpeed = 100 / max(bossHeight, 1);
 		bossHeight -= fallSpeed;
-		y -= fallSpeed
+		y += fallSpeed
 	}
 	if bossHeight < 0 {
-		y -= bossHeight;
+		y += bossHeight;
 		bossHeight -= bossHeight;
 	}
 	scr_Boss_Wobble("Horizontal", 0.3, 1, 0);
@@ -60,22 +60,6 @@ if champ = 8 and currentphase = 1 and bossActiveAttack[1] = 0 {
 		bossPassiveAttackCooldown[2] = 12;
 	}
 }
-
-/*
-if currentphase = 2 {
-    
-    if bossPassiveAttackDelay[2] <= 0 and bossPassiveAttackCooldown[2] <= 0 {
-        
-        bossPassiveAttack[2] = 1;
-        bossPassiveAttackCooldown[2] = 30 + irandom(3);
-        bossPassiveAttackDelay[2] = 2;
-        if champ = 8 {
-			bossPassiveAttack[2] = 1;
-			bossPassiveAttackCooldown[2] = 10;
-		}
-    }
-}
-*/
 
 
 ///Passive Attack Code
@@ -155,6 +139,9 @@ if bossActiveAttackDelay[1] <= 0 and bossActiveAttackCooldown[1] <= 0 and bossAc
         bossActiveAttack[1] = 4;
 		if currentphase = 2 {
 			bossActiveAttack[1] = 5;
+			if bossActiveAttackCooldown[1] > 180 {
+				bossActiveAttackCooldown[1] = 180;	
+			}
 		}
     }
     if bossActiveAttack[1] = 1 {
@@ -325,10 +312,11 @@ if bossActiveAttackDelay[1] <= 0 and bossPatternCooldown <= 0 and bossPatternCou
 		
 		boss_xoffset = 5;
     
+        var beamFr = min(5,floor((bossPatternCountMax - bossPatternCount) / 5));
         if bossPatternCount < (bossPatternCountMax - 30) {
-            scr_Boss_Beam_Attack_New("Active",25,scr_Boss_Beam_Frame(beamstart));  
+            scr_Boss_Beam_Attack_New("Active",25,beamFr);  
         } else {
-            scr_Boss_Beam_Attack_New("Dormant",25,scr_Boss_Beam_Frame(beamstart));    
+            scr_Boss_Beam_Attack_New("Dormant",25,beamFr);    
         }
 		
 		var beamMoveSpeed = (bossPatternCountMax - bossPatternCount) / 40;
@@ -355,8 +343,15 @@ if bossActiveAttackDelay[1] <= 0 and bossPatternCooldown <= 0 and bossPatternCou
 		
 			bullet_type = obj_Very_Wide_Wiggle_Bullet_Alt;
 			scr_Just_Shoot();
+			
+			bullet_direction = bossPatternDirection + 180;
+			bullet_type = obj_Very_Wide_Wiggle_Bullet;
+			scr_Just_Shoot();
+			bullet_type = obj_Very_Wide_Wiggle_Bullet_Alt;
+			scr_Just_Shoot();
 		}
 		
+		/*
 		if bossPatternCount < 12 and bossPatternCount mod 3 = 1 {
 			bullet_sprite = spr_Glowy_Dark_Blue_Shot;
 			bullet_type = obj_Modest_Wave_Bullet;
@@ -369,6 +364,7 @@ if bossActiveAttackDelay[1] <= 0 and bossPatternCooldown <= 0 and bossPatternCou
 			
 		    scr_Just_Shoot();  
 		}
+		*/
 		
         scr_Default_Attack_Settings();
 		scr_Beam_Shoot_Properties();
@@ -376,11 +372,11 @@ if bossActiveAttackDelay[1] <= 0 and bossPatternCooldown <= 0 and bossPatternCou
         bullet_sprite = spr_Laser_Beam_Charge;
         bullet_speed = 0;
         bullet_power = bosspower;
-        bullet_direction = bossPatternDirection + (-0.1 + random(0.2)) / bossaccuracy;
+        bullet_direction = bossPatternDirection + 90 + (-0.1 + random(0.2)) / bossaccuracy;
         bullet_lifespan = 7;
         bullet_size = 1;
-        bullet_count = 1;
-        bullet_spread = 0;
+        bullet_count = 2;
+        bullet_spread = 180;
         boss_radius = 0;
         bullet_sprite = spr_Arcane_Beam;
         beam_sprite = spr_Arcane_Beam;
@@ -393,11 +389,12 @@ if bossActiveAttackDelay[1] <= 0 and bossPatternCooldown <= 0 and bossPatternCou
 		
 		boss_xoffset = 5;
 		boss_yoffset = -60;
-    
+		
+		var beamFr = min(5,floor((bossPatternCountMax - bossPatternCount) / 5));
         if bossPatternCount < (bossPatternCountMax - 30) {
-            scr_Boss_Beam_Attack_New("Active",25,scr_Boss_Beam_Frame(beamstart));  
+            scr_Boss_Beam_Attack_New("Active",25,beamFr);  
         } else {
-            scr_Boss_Beam_Attack_New("Dormant",25,scr_Boss_Beam_Frame(beamstart));    
+            scr_Boss_Beam_Attack_New("Dormant",25,beamFr);    
         }
 		
 		var beamMoveSpeed = (bossPatternCountMax - bossPatternCount) / 1500;

@@ -15,3 +15,7 @@ image_index = 0;
 scr_Boss_Size_Setup(0.5);
 
 scr_Default_Attack_Settings();
+
+scr_Boss_Height_Setup(90);
+
+spawnFrame = 0;
