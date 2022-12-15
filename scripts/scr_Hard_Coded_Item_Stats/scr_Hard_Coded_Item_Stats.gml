@@ -32,7 +32,7 @@ function scr_Hard_Coded_Item_Stats(itemVal, items_to_add = 1, reload = false) {
 	   // global.A[4]++;
 	}
 	if itemVal = "A05" {
-	    global.A[5]++;
+	    //global.A[5]++;
 	}
 	if itemVal = "A06" {
 	    global.soulshotknockback += 5;

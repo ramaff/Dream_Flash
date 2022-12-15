@@ -4,16 +4,10 @@ scr_Boss_Two_Face_Direction();
 
 scr_Room_Loop_Horizontal_Long();
 
-speed = setspeed;
 
-souldir = scr_Soul_Point();
-var adif = angle_difference(direction, souldir);
-if adif < 0 {
-    direction += 0.2;
-}
-if adif > 0 {
-    direction -= 0.2;
-}
+	speed = scr_Converge(speed, setspeed, 0.05)
+	//direction = scr_Converge(direction, 0, 0.1);
+	direction = scr_Angle_Converge(direction, 0, 1);
 
 scr_Boss_Attack_Step();
 

@@ -47,7 +47,7 @@ if bossActiveAttackDelay[1] <= 0 and bossActiveAttackCooldown[1] <= 0 and bossAc
         bossActiveAttackDuration[1] = 10 + bossPatternCooldownMax * bossPatternCount;
         bossActiveAttackCooldown[1] = 90 + (irandom(1) * 20);
 		*/
-		scr_Boss_Attack_Time_Setup(4, 20, 20, 120, 30, 0);
+		scr_Boss_Attack_Time_Setup(4, 31, 20, 120, 30, 0);
 		spawnFrame = 0;
     }
 	if bossActiveAttack[1] = 3 {
@@ -182,8 +182,43 @@ if bossActiveAttackDelay[1] <= 0 and bossPatternCooldown <= 0 and bossPatternCou
 	if bossActiveAttack[1] = 2 {
 		
 		//if (bossPatternCount > bossPatternCountMax - 6) {
-			scr_Boss_Stretch("Vertical", 0.2);
+			if bossPatternCount mod 2 = 0 {
+				scr_Boss_Stretch("Vertical", 0.4);
+			} else {
+				scr_Boss_Stretch("Horizontal", 0.4);
+			}
+			show_debug_message("bossPatternCount: " + string(bossPatternCount) + "image_index: " + string(image_index))
+			
+			if bossPatternCount = bossPatternCountMax {
+				boss_xoffset = 0;
+				boss_yoffset = -75;
+				minion_dir = 90;
+				minion_speed = 4;
+			} else {
+				
+				var modCount = bossPatternCount mod 3;
+				if modCount = 0 {
+					boss_xoffset = -50;
+					boss_yoffset = -45;
+					minion_dir = 215;
+					minion_speed = 4;
+				}
+				if modCount = 2 {
+					boss_xoffset = 45;
+					boss_yoffset = 25;
+					minion_dir = 30;
+					minion_speed = 4;
+				}
+				if modCount = 1 {
+					boss_xoffset = 55;
+					boss_yoffset = -20;
+					minion_dir = 300;
+					minion_speed = 4;
+				}
+			}
 		
+			minion_xx = boss_xoffset;
+			minion_yy = boss_yoffset;
 			minion_count = 1;
 	        minion_type = obj_Sweeping_Locust_Clone;
 	        minion_health = bossmaxhealth / 20;
@@ -306,8 +341,11 @@ scr_Boss_Size_Lerp_Dir(0.15);
 //if champ = 0 {
 if bossActiveAttack[1] = 1 { 
 	scr_Boss_Attack_Sprite(spr_Locust_Shoot, 50, 0, 5);
+	if image_index = 2 || image_index = 3 {
+		scr_Boss_Wobble("Horizontal", 1, 0.1, 0);	
+	}
 } else if bossActiveAttack[1] = 2 { 
-	scr_Boss_Attack_Sprite(spr_Locust_Spawning, 40, 5, 6);
+	scr_Boss_Attack_Sprite(spr_Locust_Spawning_Slow, 5, 15, 15);
 } else { // Default
 	sprite_index = spr_Locust;		
 }

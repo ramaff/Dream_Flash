@@ -14,6 +14,7 @@ image_index = 0;
 scr_Boss_Size_Setup(0.5);
 scr_Boss_Attack_Setup();
 
+/*
 var bossdirection = scr_Soul_Point();
 	bossdashorientation = 0;
 	if bossdirection > 90 and bossdirection <= 270 {
@@ -25,5 +26,6 @@ var bossdirection = scr_Soul_Point();
 		clamp(bossdirection,355,5);
 		direction = 0 - 10 + random(20);
 	}
+*/
 
-setspeed = 3 + random(1);
+setspeed = 2.5;
