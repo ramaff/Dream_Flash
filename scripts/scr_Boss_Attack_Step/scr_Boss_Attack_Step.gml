@@ -1,5 +1,5 @@
 function scr_Boss_Attack_Step() {
-	for(i = 0; i < 10; i++) {
+	for(i = 0; i < 4; i++) {
 	    if bossActiveAttackDuration[i] <= 0 {
 	        bossActiveAttackCooldown[i] -= 1 * bossattackspeed;
 	    }

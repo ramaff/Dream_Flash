@@ -13,6 +13,8 @@ image_index = 0;
 
 scr_Boss_Size_Setup(0.5);
 scr_Boss_Attack_Setup();
+scr_Boss_Height_Setup(60);
+y += 60;
 
 /*
 var bossdirection = scr_Soul_Point();
