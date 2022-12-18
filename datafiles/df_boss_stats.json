@@ -834,20 +834,29 @@
         "Name": "Crazy Eyes",
         "Recollection_Sprite": "reco_Crazy_Eye",
         "Health_Phase_1": 190,
-        "Health_Phase_2": 100,
-        "Defense_Phase_1": 0,
-        "Defense_Phase_2": 1,
+        "Health_Phase_2": 190,
+        "Defense_Phase_1": 1,
+        "Defense_Phase_2": 0,
         "Boss_Danger": 5,
         "Bullet_Speed": 3.6,
         "Move_Speed": 4.75,
+        "Palette": "spr_Crazy_Eyes_Palette",
 
         "recollectionDescription": "Pair of Erratic and Unpredicatable Bosses that see all.",
     
         "Champ 1": {
             "Name": "Phaser Eye",
-            "Recollection_Sprite": "spr_Phaser_Eye",
+            "Recollection_Sprite": "reco_Crazy_Eye",
             "Health_Phase_1": 200,
-            "Health_Phase_2": 225
+            "Health_Phase_2": 225,
+            "Palette_Index": 1
+        },
+        "Champ 8": {
+            "Name": "Gamma Ray Eye",
+            "Recollection_Sprite": "reco_Crazy_Eye",
+            "Health_Phase_1": 210,
+            "Health_Phase_2": 260,
+            "Palette_Index": 2
         }
     },
     
@@ -1005,11 +1014,25 @@
         "Recollection_Sprite": "reco_Locust",
         "Health_Phase_1": 490,
         "Health_Phase_2": 350,
-        "Defense_Phase_1": 6,
-        "Defense_Phase_2": 2,
+        "Defense_Phase_1": 4,
+        "Defense_Phase_2": 4,
         "Boss_Danger": 7,
+        "Palette": "spr_Locust_Palette",
     
-        "recollectionDescription": "Bringer of plagues and famine. Creates several clones of itself that cause havoc all over the field."
+        "recollectionDescription": "Bringer of plagues and famine. Creates several clones of itself that cause havoc all over the field.",
+
+        "Champ 1": {
+            "Name": "Swarm Locust",
+            "Health_Phase_1": 520,
+            "Health_Phase_2": 400,
+            "Palette_Index": 1
+        },
+        "Champ 2": {
+            "Name": "Pestilence Locust",
+            "Health_Phase_1": 210,
+            "Health_Phase_2": 260,
+            "Palette_Index": 2
+        }
     },
 
     "Boss 035": {

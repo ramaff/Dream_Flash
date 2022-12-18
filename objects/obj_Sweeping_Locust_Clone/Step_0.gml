@@ -62,11 +62,19 @@ if bossActiveAttackDelay[1] <= 0 {
 		
         bullet_spread = 15;
 	    bullet_count = 2;
+		if champ = 1 {
+			bullet_count = 1;
+			bullet_size = 0.8;
+		}
 		
 	    scr_Soul_Shoot();
 		
 		bullet_count = 1;
 		bullet_speed += bossbulletspeed * 0.4;
+		if champ = 1 {
+			bullet_size = 1;
+			bullet_speed -= bossbulletspeed * 0.15;
+		}
 		
 		scr_Soul_Shoot()
 		
