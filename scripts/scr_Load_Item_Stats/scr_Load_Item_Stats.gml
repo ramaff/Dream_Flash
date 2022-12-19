@@ -2,6 +2,12 @@ function scr_Load_Item_Stats() {
 	if (!instance_exists(obj_Soul_Parent)) {
 	    exit;
 	}
+	
+	//////////////////////////////////////////////////////////////////
+	
+	//// This is no longer used, all item stats in scr_Hard_Coded_Item_Stats()
+	
+	//////////////////////////////////////////////////////////////////
 
 	if global.A[00] > 0 {
 	}

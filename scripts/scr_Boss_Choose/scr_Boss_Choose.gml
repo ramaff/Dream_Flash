@@ -442,7 +442,7 @@ function scr_Boss_Choose(roomNum, exclude, difficultyAdd = 0) {
 	{
 	    bosstype = obj_Locust;
 	    difficulty = 7;
-	    global.champ = 0;
+	    global.champ = choose(0,1);
 		//global.champ = 1;
 	}
 	if bossform = 35.1 // Peering Spectre

@@ -4,6 +4,8 @@ scr_Boss_Step();
 
 scr_Room_Loop_Horizontal();
 
+scr_Boss_Height_Bob(60, 1, 0);
+
 ///Passive Attack Prep
 
 ///////////////////////////////////////////////////////////////////
@@ -15,35 +17,71 @@ var bossdirection = scr_Soul_Point()
     speed = 0.3 * bossmovespeed;
     direction = bossdirection;
 
+if bossActiveAttack[1] = 3 and bossActiveAttackDelay[1] <= 0 {
+	scr_Boss_Wind(1.5, 0);	
+	if bossActiveAttackDuration[1] mod 3 = 0 {
+		scr_Particle_Burst(obj_Wind_Particle, spr_Soul_Big_Bit, c_green, c_green, 1, 4 + random(2), 0, 0, 1200, 0.3 + random(0.1), 75 + irandom(30), false)	
+	}
+}
+
 if bossActiveAttackDelay[1] <= 0 and bossActiveAttackCooldown[1] <= 0 and bossActiveAttackDuration[1] <= 0 {
-    mCount = instance_number(obj_Minion_Parent);
-    bCount = instance_number(obj_Main_Boss_Parent);
 	
     bossActiveAttack[1] = choose(1,2,2,2);
-	if ((mCount - 3) / bCount) >= 6 {
+	if champ = 1 {
+		bossActiveAttack[1] = choose(4,2,2,2);	
+	}
+	
+	if scr_Minion_Count() {
         bossActiveAttack[1] = choose(1);
+		if champ = 1 {
+			bossActiveAttack[1] = 4
+		}
     }
     if currentphase = 2 {
-        bossActiveAttack[1] = choose(3,4);
+        bossActiveAttack[1] = choose(3);
+		if champ = 1 {
+			bossActiveAttack[1] = 5;
+		}
     }
     if bossActiveAttack[1] = 1 {
+		/*
         bossActiveAttackDelay[1] = 10;
         bossPatternCount = 3;
         bossPatternCooldown = 60;
         bossPatternCooldownMax = 60;
         bossActiveAttackDuration[1] = 10 + bossPatternCooldownMax * bossPatternCount;
         bossActiveAttackCooldown[1] = 100 + (irandom(1) * 20);
+		*/
+		scr_Boss_Attack_Time_Setup(3, 40, 50, 120, 30, 0);
     }
     if bossActiveAttack[1] = 2 {
-		
+		/*
         bossActiveAttackDelay[1] = 10;
         bossPatternCount = 6;
         bossPatternCooldown = 15;
         bossPatternCooldownMax = 15;
         bossActiveAttackDuration[1] = 10 + bossPatternCooldownMax * bossPatternCount;
         bossActiveAttackCooldown[1] = 90 + (irandom(1) * 20);
+		*/
+		if champ = 0 {
+			scr_Boss_Attack_Time_Setup(4, 31, 20, 120, 30, 0);
+		} else if champ = 1 {
+			scr_Boss_Attack_Time_Setup(7, 31, 20, 120, 30, 0);
+		}
     }
 	if bossActiveAttack[1] = 3 {
+		scr_Boss_Attack_Time_Setup(40, 30, 8, 60, 30, 0);
+		spawnFrame = 0;
+    }
+	if bossActiveAttack[1] = 4 {
+		scr_Boss_Attack_Time_Setup(3, 40, 50, 120, 30, 0);
+    }
+	if bossActiveAttack[1] = 5 {
+		scr_Boss_Attack_Time_Setup(8, 30, 90, 60, 30, 0);
+		spawnFrame = 0;
+    }
+	/*
+	if bossActiveAttack[1] = 4 {
         bossActiveAttackDelay[1] = 10;
         bossPatternCount = 3;
         bossPatternCooldown = 20;
@@ -51,7 +89,7 @@ if bossActiveAttackDelay[1] <= 0 and bossActiveAttackCooldown[1] <= 0 and bossAc
         bossActiveAttackDuration[1] = 10 + bossPatternCooldownMax * bossPatternCount;
         bossActiveAttackCooldown[1] = 90 + (irandom(1) * 20);
     }
-	if bossActiveAttack[1] = 4 {
+	if bossActiveAttack[1] = 5 {
         scr_Boss_Dash_Setup();
         bossPatternCount = 150;
         bossPatternCountMax = bossPatternCount;
@@ -65,14 +103,14 @@ if bossActiveAttackDelay[1] <= 0 and bossActiveAttackCooldown[1] <= 0 and bossAc
 		bossMaxDashSpeed = 1.5 * bossmovespeed;
 		bossDashSpeed = 0;
     }
-	if bossActiveAttack[1] = 5 {
+	if bossActiveAttack[1] = 6 {
         bossActiveAttackDelay[1] = 10;
         bossPatternCount = 9;
         bossPatternCooldown = 7;
         bossPatternCooldownMax = 7;
         bossActiveAttackDuration[1] = 7 + bossPatternCooldownMax * bossPatternCount;
         bossActiveAttackCooldown[1] = 120 + (irandom(1) * 20);
-    }
+    } */
     bossPatternCountMax = bossPatternCount;
 }
 
@@ -161,6 +199,96 @@ if bossActiveAttackDelay[1] <= 0 and bossPatternCooldown <= 0 and bossPatternCou
 		
         scr_Soul_Shoot();
     }
+	if bossActiveAttack[1] = 4 {
+		scr_Boss_Stretch("Vertical", 0.4);
+        bullet_direction = (-10 + random(20)) / bossaccuracy;
+		bullet_sprite = spr_Fly_Bullet
+		bullet_type = obj_Homing_Fly_Circle
+		bullet_speed = bossbulletspeed * (1 + random(0.6));
+		bullet_lifespan = 480;
+		bullet_direction = -90 + random(180);
+		
+        scr_Soul_Shoot();
+    }
+	if bossActiveAttack[1] = 3 {
+		scr_Boss_Stretch("Horizontal", 0.05);
+        bullet_direction = 0;
+		bullet_sprite = spr_Fly_Bullet;
+		bullet_type = obj_Wave_Bullet;
+		bullet_speed = bossbulletspeed * 1.8;
+		bullet_count =  1;
+		
+		if bossPatternCount mod 10 >= 6 {
+			var startX = (room_width / 2) - ((global.roomSizeX / 2) + 64);
+			var startY = (room_height / 2) - ((global.roomSizeY / 2) + 64);
+			var sweepSize = global.roomSizeX + 128;
+			var sweepInterval = sweepSize / 5;
+			
+			if bossPatternCount mod 20 >= 10 {
+				startY += sweepInterval * 0.5;	
+			}
+			if bossPatternCount < bossPatternCountMax / 2 {
+				startY += sweepInterval * 0.25;	
+			}
+		
+			for(var i = 0; i < 5; i++) {
+				boss_xoffset = startX - 128;
+				boss_yoffset = startY + (i * sweepInterval);
+		
+		        scr_Just_Shoot(true);
+			}
+		}
+		
+		if bossPatternCount = 1 and !scr_Minion_Count() {
+			minion_xx = (room_width / 2) - ((global.roomSizeX / 2) + 64) - x;
+			var startY = (room_height / 2) - ((global.roomSizeY / 2) + 64);
+			minion_yy = startY + random(global.roomSizeY) - y;
+			minion_count = 1;
+	        minion_type = obj_Sweeping_Locust_Clone;
+	        minion_health = bossmaxhealth / 20;
+			minion_defense = 0;
+	        scr_Minion_Spawn();
+		}
+    }
+	if bossActiveAttack[1] = 5 {
+		scr_Boss_Stretch("Horizontal", 0.05);
+        bullet_direction = 0;
+		bullet_sprite = spr_Fly_Bullet;
+		bullet_type = obj_Bullet_Circle;
+		bullet_speed = bossbulletspeed * 1.3;
+		bullet_count =  1;
+		
+		var startX = (room_width / 2) - ((global.roomSizeX / 2) + 64);
+		var startY = (room_height / 2) - ((global.roomSizeY / 2) + 64);
+		var sweepSize = global.roomSizeX + 128;
+		var sweepInterval = sweepSize / 2;
+			
+		if bossPatternCount mod 2 = 1 {
+			startY += sweepInterval * 0.5;	
+		}
+		if bossPatternCount mod 4 >= 2 {
+			startY += sweepInterval * 0.25;	
+		}
+		
+		for(var i = 0; i < 2; i++) {
+		boss_xoffset = startX - 128;
+		boss_yoffset = startY + (i * sweepInterval);
+		
+		scr_Just_Shoot(true);
+		}
+		
+		if bossPatternCount = 1 and !scr_Minion_Count() {
+			minion_xx = (room_width / 2) - ((global.roomSizeX / 2) + 64) - x;
+			var startY = (room_height / 2) - ((global.roomSizeY / 2) + 64);
+			minion_yy = startY + random(global.roomSizeY) - y;
+			minion_count = 1;
+	        minion_type = obj_Sweeping_Locust_Clone;
+	        minion_health = bossmaxhealth / 25;
+			minion_defense = 0;
+	        scr_Minion_Spawn();
+		}
+    }
+	/*
     if bossActiveAttack[1] = 5 {
 		scr_Boss_Stretch("Vertical", 0.4);
         bullet_direction = (-10 + random(20)) / bossaccuracy;
@@ -171,19 +299,58 @@ if bossActiveAttackDelay[1] <= 0 and bossPatternCooldown <= 0 and bossPatternCou
 		bullet_spread = 100 / bullet_count;
 		
         scr_Soul_Shoot();
-    }
+    } */
 	if bossActiveAttack[1] = 2 {
 		
 		//if (bossPatternCount > bossPatternCountMax - 6) {
-			scr_Boss_Stretch("Vertical", 0.2);
+			if bossPatternCount mod 2 = 0 {
+				scr_Boss_Stretch("Vertical", 0.4);
+			} else {
+				scr_Boss_Stretch("Horizontal", 0.4);
+			}
+			
+			if bossPatternCount = bossPatternCountMax {
+				boss_xoffset = 0;
+				boss_yoffset = -75;
+				minion_dir = 90;
+				minion_speed = 4;
+			} else {
+				
+				var modCount = bossPatternCount mod 3;
+				if modCount = 0 {
+					boss_xoffset = -50;
+					boss_yoffset = -45;
+					minion_dir = 215;
+					minion_speed = 4;
+				}
+				if modCount = 2 {
+					boss_xoffset = 45;
+					boss_yoffset = 25;
+					minion_dir = 30;
+					minion_speed = 4;
+				}
+				if modCount = 1 {
+					boss_xoffset = 55;
+					boss_yoffset = -20;
+					minion_dir = 300;
+					minion_speed = 4;
+				}
+			}
 		
+			minion_xx = boss_xoffset;
+			minion_yy = boss_yoffset;
 			minion_count = 1;
 	        minion_type = obj_Sweeping_Locust_Clone;
 	        minion_health = bossmaxhealth / 20;
+			minion_defense = 0;
+			if champ = 1 {
+				minion_health = bossmaxhealth / 25;
+			}
 	        scr_Minion_Spawn();
 		//}
 	
     }
+	/*
 	if bossActiveAttack[1] = 3 {
 		scr_Boss_Stretch("Vertical", 0.4);
 		
@@ -215,7 +382,7 @@ if bossActiveAttackDelay[1] <= 0 and bossPatternCooldown <= 0 and bossPatternCou
 			scr_Soul_Shoot();
 		}
 		
-    }
+    } */
 	/*
 	if bossActiveAttack[1] = 3 {
 		minion_count = 1;
@@ -231,7 +398,7 @@ if bossActiveAttackDelay[1] <= 0 and bossPatternCooldown <= 0 and bossPatternCou
 		}
 	}
 	*/
-	
+	/*
 	if bossActiveAttack[1] = 5 {
 		scr_Boss_Stretch("Vertical", 0.1);
 		
@@ -273,7 +440,7 @@ if bossActiveAttackDelay[1] <= 0 and bossPatternCooldown <= 0 and bossPatternCou
 		if adif > 0 {
 			bossDashDirection -= 0.66;
 		}
-    }
+    } */
     
     bossPatternCount -= 1;
     bossPatternCooldown += bossPatternCooldownMax;
@@ -296,14 +463,18 @@ if bossActiveAttackDuration[1] <= 0 {
 scr_Boss_Size_Lerp_Dir(0.15);
 
 //if champ = 0 {
-	if bossActiveAttack[1] != 0 { 
-			sprite_index = spr_Locust_Shoot;
-			if image_index >= 8 {
-				image_index = 5;	
-			}
-	} else { // Default
-		sprite_index = spr_Locust;		
+if bossActiveAttack[1] = 1 || bossActiveAttack[1] = 4 { 
+	scr_Boss_Attack_Sprite(spr_Locust_Shoot, 50, 0, 5);
+	if image_index = 2 || image_index = 3 {
+		scr_Boss_Wobble("Horizontal", 10, 0.1, 0);	
 	}
+} else if bossActiveAttack[1] = 2 { 
+	scr_Boss_Attack_Sprite(spr_Locust_Spawning_Slow, 5, 15, 15);
+} else if bossActiveAttack[1] = 3 || bossActiveAttack[1] = 5 { 
+	scr_Boss_Attack_Sprite(spr_Locust_Flap, 20, 5, 7);
+} else { // Default
+	sprite_index = spr_Locust;		
+}
 //}
 
 #endregion
