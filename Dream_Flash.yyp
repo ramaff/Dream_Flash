@@ -4013,6 +4013,7 @@
     {"resourceType":"GMFolder","resourceVersion":"1.0","name":"Laser Beams","folderPath":"folders/Sprites/Boss Bullet Sprites/Laser Beams.yy","order":13,},
     {"resourceType":"GMFolder","resourceVersion":"1.0","name":"Laser Blasts","folderPath":"folders/Sprites/Boss Bullet Sprites/Laser Blasts.yy","order":4,},
     {"resourceType":"GMFolder","resourceVersion":"1.0","name":"Lightning","folderPath":"folders/Sprites/Boss Bullet Sprites/Lightning.yy","order":6,},
+    {"resourceType":"GMFolder","resourceVersion":"1.0","name":"Living Bullets","folderPath":"folders/Sprites/Boss Bullet Sprites/Living Bullets.yy","order":39,},
     {"resourceType":"GMFolder","resourceVersion":"1.0","name":"Lob Shots","folderPath":"folders/Sprites/Boss Bullet Sprites/Lob Shots.yy","order":33,},
     {"resourceType":"GMFolder","resourceVersion":"1.0","name":"Mullet","folderPath":"folders/Sprites/Boss Bullet Sprites/Mullet.yy","order":8,},
     {"resourceType":"GMFolder","resourceVersion":"1.0","name":"Pillar","folderPath":"folders/Sprites/Boss Bullet Sprites/Pillar.yy","order":19,},
@@ -4217,7 +4218,6 @@
     {"resourceType":"GMFolder","resourceVersion":"1.0","name":"Misc BGs","folderPath":"folders/Tile Sets/Misc BGs.yy","order":13,},
     {"resourceType":"GMFolder","resourceVersion":"1.0","name":"Nightmare BGs","folderPath":"folders/Tile Sets/Nightmare BGs.yy","order":9,},
     {"resourceType":"GMFolder","resourceVersion":"1.0","name":"Timelines","folderPath":"folders/Timelines.yy","order":9,},
-    {"resourceType":"GMFolder","resourceVersion":"1.0","name":"Living Bullets","folderPath":"folders/Sprites/Boss Bullet Sprites/Living Bullets.yy","order":39,},
   ],
   "AudioGroups": [
     {"resourceType":"GMAudioGroup","resourceVersion":"1.3","name":"audiogroup_default","targets":-1,},

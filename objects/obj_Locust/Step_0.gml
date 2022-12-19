@@ -77,7 +77,7 @@ if bossActiveAttackDelay[1] <= 0 and bossActiveAttackCooldown[1] <= 0 and bossAc
 		scr_Boss_Attack_Time_Setup(3, 40, 50, 120, 30, 0);
     }
 	if bossActiveAttack[1] = 5 {
-		scr_Boss_Attack_Time_Setup(8, 30, 120, 60, 30, 0);
+		scr_Boss_Attack_Time_Setup(8, 30, 90, 60, 30, 0);
 		spawnFrame = 0;
     }
 	/*
@@ -255,13 +255,13 @@ if bossActiveAttackDelay[1] <= 0 and bossPatternCooldown <= 0 and bossPatternCou
         bullet_direction = 0;
 		bullet_sprite = spr_Fly_Bullet;
 		bullet_type = obj_Bullet_Circle;
-		bullet_speed = bossbulletspeed * 1.8;
+		bullet_speed = bossbulletspeed * 1.3;
 		bullet_count =  1;
 		
 		var startX = (room_width / 2) - ((global.roomSizeX / 2) + 64);
 		var startY = (room_height / 2) - ((global.roomSizeY / 2) + 64);
 		var sweepSize = global.roomSizeX + 128;
-		var sweepInterval = sweepSize / 5;
+		var sweepInterval = sweepSize / 2;
 			
 		if bossPatternCount mod 2 = 1 {
 			startY += sweepInterval * 0.5;	
@@ -270,12 +270,12 @@ if bossActiveAttackDelay[1] <= 0 and bossPatternCooldown <= 0 and bossPatternCou
 			startY += sweepInterval * 0.25;	
 		}
 		
-		//for(var i = 0; i < 5; i++) {
+		for(var i = 0; i < 2; i++) {
 		boss_xoffset = startX - 128;
-		boss_yoffset = startY;
+		boss_yoffset = startY + (i * sweepInterval);
 		
 		scr_Just_Shoot(true);
-		//}
+		}
 		
 		if bossPatternCount = 1 and !scr_Minion_Count() {
 			minion_xx = (room_width / 2) - ((global.roomSizeX / 2) + 64) - x;
@@ -283,7 +283,7 @@ if bossActiveAttackDelay[1] <= 0 and bossPatternCooldown <= 0 and bossPatternCou
 			minion_yy = startY + random(global.roomSizeY) - y;
 			minion_count = 1;
 	        minion_type = obj_Sweeping_Locust_Clone;
-	        minion_health = bossmaxhealth / 20;
+	        minion_health = bossmaxhealth / 25;
 			minion_defense = 0;
 	        scr_Minion_Spawn();
 		}
@@ -343,6 +343,9 @@ if bossActiveAttackDelay[1] <= 0 and bossPatternCooldown <= 0 and bossPatternCou
 	        minion_type = obj_Sweeping_Locust_Clone;
 	        minion_health = bossmaxhealth / 20;
 			minion_defense = 0;
+			if champ = 1 {
+				minion_health = bossmaxhealth / 25;
+			}
 	        scr_Minion_Spawn();
 		//}
 	
