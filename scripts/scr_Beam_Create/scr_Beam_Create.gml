@@ -15,6 +15,8 @@ function scr_Beam_Create(shxx,shyy){
 		var curvedir = other.Shot_Beam_Curve * (-1 + random(2))
 		var beamstop = other.Shot_Melee;
 		
+		//beamdir = 0;
+		
 		var beamxx = lengthdir_x(-6, beamdir)
 		var beamyy = lengthdir_y(-6, beamdir)
 		
@@ -50,14 +52,6 @@ function scr_Beam_Create(shxx,shyy){
 			beamdir += beamseg * curvedir;
 			
 			if shothomingtype > 0 {
-				if homespeed > 0 and homespeed < 12.5 {
-					homespeed = 12.5	
-				}
-				if homespeed > 12.5 {
-					homespeed = 25	
-				}
-				//show_debug_message("shothomingspeed" + string(shothomingspeed))
-				//show_debug_message("homespeed" + string(homespeed))
 				var target = noone
 				if instance_exists(obj_Boss_Parent) {
 				    with(obj_Boss_Parent) {
@@ -78,91 +72,31 @@ function scr_Beam_Create(shxx,shyy){
     
 			        var pointDir = point_direction(shxx + beamxx,shyy + beamyy,target.x,target.y);
 					dirChange = sin(degtorad(pointDir - beamdir)) * homespeed;
-						if dirChange >= 5 and dirChange < 15 {
-							dirChange = 12.5;	
-						}
-						if dirChange > 15 {
-							dirChange = 25;	
-						}
-						if dirChange <= -5 and dirChange > -15 {
-							dirChange = -12.5;	
-						}
-						if dirChange < -15 {
-							dirChange = -25;	
-						} 
-						if dirChange > -5 and dirChange < 5 {
-							dirChange = 0;	
-						}
+					dirChange = round(dirChange / 5) * 5;
+					dirChange = clamp(dirChange, -15, 15);
 					
-					
-						beamdir += dirChange
-					
-					/*
-					if angle_difference(pointDir, beamdir) < 0 {
-						curvemirror = true;	
-					}
-					if abs(dirChange) != 0 {
-						curve = true;
-					}
-					*/
-					
-					//splitsize = 40 - min((abs(sin(degtorad(pointDir - beamdir))) * shothomingspeed * 10),20)
-			    } else {
-					//splitsize = min(40, splitsize + 4);
-				}
-			} else {
-				/*
-				splitsize = 40;	
-				if beamseg <= 2 {
-					splitsize = 20;	
-				}
-				if beamseg <= 2 and other.Shot_Beam = 2 {
-					splitsize = 20 * global.essencebeamsize;	
-				}
-				*/
-			}
+					beamdir += dirChange
+			    } 
+			} 
 			
 			beamxx += lengthdir_x(splitsize, oldbeamdir)
 			beamyy += lengthdir_y(splitsize, oldbeamdir)
+			//show_debug_message(string(lengthdir_x(splitsize, oldbeamdir)) + ", " + string(lengthdir_y(splitsize, oldbeamdir)));
 			
 			oldbeamdir = beamdir
-			
-			//scr_Particle_Burst(obj_Weapon_Trail, spr_Soul_Bit, c_black, c_black,1,0,0,0,0,1,5)
-			
-			/*
-			with instance_create(shxx + beamxx,shyy + beamyy,obj_Item_Trail) {
-				direction = 0;
-				speed = 0;
-						
-				sprite_index = spr_Soul_Big_Bit;
-				
-				if abs(dirChange) = 12.5 {
-					image_blend = c_yellow;	
-				}
-				if abs(dirChange) = 25 {
-					image_blend = c_red;	
-				}
 
-				size = 0.5
-				image_xscale = size;
-				image_yscale = size;
-		
-				life = 15;
-				alarm[0] = life;
-				alarm[1] = life;
-		
-				depth = other.depth + 2;
-			}*/
 			
 			//show_debug_message("beamxx: " + string(beamxx) + ", beamyy: " + string(beamyy))
 			//show_debug_message("beamdir: " + string(beamdir) + ", dirChange: " + string(dirChange))
 			
 			if (beamseg != beamtotalsegs || other.Shot_Beam = 3) {
 				with instance_create(shxx + beamxx,shyy + beamyy,obj_Beam_Shot) {
+					
+					//show_debug_message(string(beamxx) + ", " + string(beamyy));
 					scr_Duplicate_Shot_Stats();
 					image_angle = beamdir - dirChange;
 					image_xscale = other.shotsize;
-					image_yscale = other.shotsize / 2;
+					image_yscale = other.shotsize;
 					speed = 0;
 					beamty = beamtype;
 				
@@ -178,22 +112,16 @@ function scr_Beam_Create(shxx,shyy){
 					
 					//sprite_index = spr_Straight_Beam;
 					if dirChange != 0 {
-						if dirChange = 12.5 {
-							//sprite_index = spr_Beam_Curve_15;
-							var pspr = asset_get_index(ssstr + "Curve_15")
-						} 
-						if dirChange = 25 {
-							//sprite_index = spr_Beam_Curve_30;
-							var pspr = asset_get_index(ssstr + "Curve_30")
+						var absChange = abs(dirChange);
+						
+						var pspr = ssstr + "Curve_" + string(absChange);
+						
+						if dirChange < 0 {
+							image_yscale = image_yscale * -1;
+							//pspr = pspr + "_Mirror"	
 						}
-						if dirChange = -12.5 {
-							//sprite_index = spr_Beam_Curve_15_Counter;
-							var pspr = asset_get_index(ssstr + "Curve_15_Mirror")
-						} 
-						if dirChange = -25 {
-							//sprite_index = spr_Beam_Curve_30_Counter;
-							var pspr = asset_get_index(ssstr + "Curve_30_Mirror")
-						}
+						
+						pspr = asset_get_index(pspr);
 					
 						if sprite_exists(pspr) {
 							sprite_index = pspr

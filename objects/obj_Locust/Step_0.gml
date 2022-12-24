@@ -460,7 +460,7 @@ if bossActiveAttackDuration[1] <= 0 {
 
 #region /// Boss Sprite Code
 
-scr_Boss_Size_Lerp_Dir(0.15);
+scr_Boss_Size_Lerp(0.15);
 
 //if champ = 0 {
 if bossActiveAttack[1] = 1 || bossActiveAttack[1] = 4 { 
@@ -469,7 +469,11 @@ if bossActiveAttack[1] = 1 || bossActiveAttack[1] = 4 {
 		scr_Boss_Wobble("Horizontal", 10, 0.1, 0);	
 	}
 } else if bossActiveAttack[1] = 2 { 
-	scr_Boss_Attack_Sprite(spr_Locust_Spawning_Slow, 5, 15, 15);
+	if champ = 0 {
+		scr_Boss_Attack_Sprite(spr_Locust_Spawning_Slow, 5, 15, 15);
+	} else if champ = 1 {
+		scr_Boss_Attack_Sprite(spr_Locust_Spawning_Loop, 5, 15, 15);
+	}
 } else if bossActiveAttack[1] = 3 || bossActiveAttack[1] = 5 { 
 	scr_Boss_Attack_Sprite(spr_Locust_Flap, 20, 5, 7);
 } else { // Default

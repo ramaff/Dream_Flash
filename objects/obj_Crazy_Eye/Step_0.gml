@@ -303,7 +303,7 @@ if bossActiveAttackDelay[1] <= 0 and bossPatternCooldown <= 0 and bossPatternCou
         boss_radius = 0;
         bullet_sprite = spr_Arcane_Beam;
         beam_sprite = spr_Arcane_Beam;
-        beamSize = 0.8;
+        beamSize = 0.6 + scr_Wave(0, 0.05, 0.2, 0);
         bossbeamattackactive = 1;
 		
 		bullet_depth = -5;
@@ -312,12 +312,13 @@ if bossActiveAttackDelay[1] <= 0 and bossPatternCooldown <= 0 and bossPatternCou
 		
 		boss_xoffset = 5;
     
-        var beamFr = min(5,floor((bossPatternCountMax - bossPatternCount) / 5));
+		scr_Easy_Boss_Beam_Shoot(bossPatternCountMax, 25);
+        /*var beamFr = min(5,floor((bossPatternCountMax - bossPatternCount) / 5));
         if bossPatternCount < (bossPatternCountMax - 30) {
             scr_Boss_Beam_Attack_New("Active",25,beamFr);  
         } else {
             scr_Boss_Beam_Attack_New("Dormant",25,beamFr);    
-        }
+        } */
 		
 		var beamMoveSpeed = (bossPatternCountMax - bossPatternCount) / 40;
 		y -= beamMoveSpeed;
@@ -380,7 +381,7 @@ if bossActiveAttackDelay[1] <= 0 and bossPatternCooldown <= 0 and bossPatternCou
         boss_radius = 0;
         bullet_sprite = spr_Arcane_Beam;
         beam_sprite = spr_Arcane_Beam;
-        beamSize = 0.8;
+        beamSize = 0.6 + scr_Wave(0, 0.05, 0.2, 0);
         bossbeamattackactive = 1;
 		
 		bullet_depth = -5;
@@ -390,12 +391,14 @@ if bossActiveAttackDelay[1] <= 0 and bossPatternCooldown <= 0 and bossPatternCou
 		boss_xoffset = 5;
 		boss_yoffset = -60;
 		
+		scr_Easy_Boss_Beam_Shoot(bossPatternCountMax, 25);
+		/*
 		var beamFr = min(5,floor((bossPatternCountMax - bossPatternCount) / 5));
         if bossPatternCount < (bossPatternCountMax - 30) {
             scr_Boss_Beam_Attack_New("Active",25,beamFr);  
         } else {
             scr_Boss_Beam_Attack_New("Dormant",25,beamFr);    
-        }
+        } */
 		
 		var beamMoveSpeed = (bossPatternCountMax - bossPatternCount) / 1500;
 		bossPatternDirection = scr_Converge(bossPatternDirection, scr_Soul_Point(), beamMoveSpeed);
