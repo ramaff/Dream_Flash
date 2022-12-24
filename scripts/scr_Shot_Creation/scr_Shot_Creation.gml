@@ -253,11 +253,11 @@ function scr_Shot_Creation() {
 			
 				scr_Beam_Create(shxx,shyy);
 				
-				if other.Shot_Beam = 2 {
+				/*if other.Shot_Beam = 2 {
 					shotsize = other.Shot_Size * ((1 + other.sshotsizefactor) / 1);
 			        image_xscale = shotsize;
 			        image_yscale = shotsize * 1.33;
-				}
+				} */
 				
 				if other.Shot_Point_Angle {
 					image_angle = direction;

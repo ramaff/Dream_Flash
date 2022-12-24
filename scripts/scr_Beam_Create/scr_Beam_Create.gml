@@ -5,6 +5,8 @@ function scr_Beam_Create(shxx,shyy){
 		shotdamage = false;
 		if other.sWeaponTicker mod 3 = 0 { 
 			shotdamage = true;	
+		} else {
+			other.Shot_Power = 0;
 		}
 	}	
 	if other.Shot_Type = obj_Beam_Shot {
@@ -31,6 +33,10 @@ function scr_Beam_Create(shxx,shyy){
 		var splitsize = 40;
 		var beamtotalsegs = other.Shot_Beam_Count;
 		beamtotalsegs = 15;
+		beamtotalsegs = 5;
+		
+		var beamspriteindex = 0;
+		var beamsize = shotsize;
 		
 		splitsize = 64;
 		var dirChange = 0;
@@ -39,12 +45,26 @@ function scr_Beam_Create(shxx,shyy){
 		
 		//show_debug_message("/nbeam start:\n--------------")
 		
-		var homespeed = shothomingspeed * 2.5;
+		var homespeed = shothomingspeed * 3;
 		var hit_again = -1;
 		
 		splitsize = 128 * shotsize;
+		/*
 		if beamseg <= 2 and other.Shot_Beam = 2 {
 			splitsize = 128 * global.essencebeamsize;	
+		}
+		*/
+		
+		if other.Shot_Beam = 2 {
+			beamspriteindex = global.essencebeamtime / 5
+			beamspriteindex = clamp(beamspriteindex, 0, 3);
+			beamsize = shotsize + scr_Wave(0,0.05,0.25,0);
+			
+			image_xscale = beamsize;
+			image_yscale = beamsize;
+			speed = 0;
+			image_index = beamspriteindex;
+			
 		}
 				
 		while(beamseg <= beamtotalsegs) {
@@ -95,9 +115,10 @@ function scr_Beam_Create(shxx,shyy){
 					//show_debug_message(string(beamxx) + ", " + string(beamyy));
 					scr_Duplicate_Shot_Stats();
 					image_angle = beamdir - dirChange;
-					image_xscale = other.shotsize;
-					image_yscale = other.shotsize;
+					image_xscale = beamsize;
+					image_yscale = beamsize;
 					speed = 0;
+					image_index = beamspriteindex;
 					beamty = beamtype;
 				
 					tip = 0;
@@ -140,7 +161,7 @@ function scr_Beam_Create(shxx,shyy){
 						} else {
 							sprite_index = spr_Laser_Tip;
 						}
-						shotsize = other.shotsize;
+						shotsize = beamsize
 						depth = other.depth - 2;
 					}
 				
@@ -148,8 +169,8 @@ function scr_Beam_Create(shxx,shyy){
 			} else if other.Shot_Beam != 3 {
 				with instance_create(shxx + beamxx,shyy + beamyy,obj_Laser_Trail) {
 					
-					image_xscale = other.shotsize;
-					image_yscale = other.shotsize;
+					image_xscale = beamsize;
+					image_yscale = beamsize;
 					
 					//// All Laser beam segments must have a sprite in the format of beam_Start, and beam_Tip
 					
@@ -167,8 +188,8 @@ function scr_Beam_Create(shxx,shyy){
 						sprite_index = spr_Laser_Tip;
 						depth = -55;
 					}
-					size = other.shotsize;
-					alarm[0] = 10;
+					size = beamsize;
+					alarm[0] = other.shotlifespan;
 				}	
 			}
 			beamseg++;
