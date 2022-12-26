@@ -33,7 +33,6 @@ function scr_Beam_Create(shxx,shyy){
 		var splitsize = 40;
 		var beamtotalsegs = other.Shot_Beam_Count;
 		beamtotalsegs = 15;
-		beamtotalsegs = 5;
 		
 		var beamspriteindex = 0;
 		var beamsize = shotsize;
@@ -167,10 +166,10 @@ function scr_Beam_Create(shxx,shyy){
 				
 				}
 			} else if other.Shot_Beam != 3 {
-				with instance_create(shxx + beamxx,shyy + beamyy,obj_Laser_Trail) {
+				with instance_create(shxx + beamxx,shyy + beamyy,obj_Laser_Tip) {
 					
-					image_xscale = beamsize;
-					image_yscale = beamsize;
+					image_xscale = beamsize * 0.8;
+					image_yscale = beamsize * 0.8;
 					
 					//// All Laser beam segments must have a sprite in the format of beam_Start, and beam_Tip
 					
@@ -179,7 +178,7 @@ function scr_Beam_Create(shxx,shyy){
 					
 					var pspr = asset_get_index(ssstr + "Tip")
 					
-					depth = -50;
+					depth = other.depth - 10;
 					image_angle = beamdir;
 					
 					if sprite_exists(pspr) {
