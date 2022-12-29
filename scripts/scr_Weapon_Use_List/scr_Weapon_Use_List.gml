@@ -183,6 +183,7 @@ function scr_Weapon_Use_List() {
 	    sdelay += weaponDelay / ((160 + global.souldexterity + global.souldexterityTemp) / 160);
 	    sWeaponUseFrame = 1;   
 		sWeaponTicker++;
+		global.essencebeamtime++;
 		
 		sWeaponWarmUp += weaponDelay * (2 + (300 / 180));
 		
@@ -196,6 +197,8 @@ function scr_Weapon_Use_List() {
 		scr_Soul_Attack_Think();
 		
 	
+	} else {
+		global.essencebeamtime = 0;	
 	}
 
 

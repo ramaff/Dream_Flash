@@ -54,6 +54,9 @@ repeat(inum) {
 with(obj_Beam_Shot) {
 	event_perform(ev_draw,0)	
 }
+with(obj_Laser_Tip) {
+	event_perform(ev_draw,0)	
+}
 with(obj_Soul_Hurt) {
 	if depth <= 0 {
 		event_perform(ev_draw,0)	

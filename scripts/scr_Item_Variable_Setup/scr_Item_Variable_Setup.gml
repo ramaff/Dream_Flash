@@ -20,6 +20,7 @@ function scr_Item_Variable_Setup() {
 	global.D14Trigger = 0;
 	
 	global.essencebeamsize = 0;
+	global.essencebeamtime = 0;
 	
 	global.C01Boost = 0;
 	

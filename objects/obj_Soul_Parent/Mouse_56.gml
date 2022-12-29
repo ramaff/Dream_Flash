@@ -7,4 +7,6 @@ Charge_Lifespan = 0;
 Charge_Time = 0;
 Charge_Hold = 0;
 
+global.essencebeamtime = 0;
+
 scr_U03_Off();

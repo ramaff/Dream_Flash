@@ -53,15 +53,24 @@ function scr_Hard_Coded_Weapon_Stats(cWP){
 			barrage = true;
 	        break;
 	    case 51:
+			if sWeaponTicker mod 2 = 1 {
+				Shot_Sprite = spr_New_Soul_Punch_Alt;
+			}
 	        //scr_Soul_Punch_Use();
 	        break;
 	    case 52:
+			if sWeaponTicker mod 2 = 1 {
+				Shot_Sprite = spr_New_Power_Whip_Alt;
+			}
 	       // scr_Power_Whip_Shot();
 	        break;
 	    case 53:
 	       // scr_Dreamers_Blade_Use();
 	        break;
 	    case 54:
+			if sWeaponTicker mod 2 = 1 {
+				Shot_Sprite = spr_New_Soul_Strike_Alt;
+			}
 	        //scr_Soul_Strike_Use();
 	        break;
     
