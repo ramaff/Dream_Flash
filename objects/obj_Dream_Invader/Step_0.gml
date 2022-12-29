@@ -300,13 +300,13 @@ if bossActiveAttackDelay[1] <= 0 and bossPatternCooldown <= 0 and bossPatternCou
         bullet_count = 1;
         bullet_spread = 0;
         boss_radius = 0;
-		setbeamlength = bossHeight - 20;
+		setbeamlength = bossHeight;
         
         bullet_sprite = spr_Arcane_Beam;
         beam_sprite = spr_Arcane_Beam;
-        beamSize = 0.75;
+        beamSize = 0.4;
         bossbeamattackactive = 1;
-        boss_yoffset = 36;
+        boss_yoffset = 15;
     
         if bossPatternCount < 340 {
             scr_Boss_Beam_Attack("Active",24);  

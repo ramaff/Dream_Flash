@@ -9,5 +9,5 @@ if bosshealth <= 0 {
 scr_Soul_Spiritual_Add("Paranoia");
 }
 
-global.soulparanoia += 5;
+global.soulparanoia += 3;
 scr_Stat_Up_Indication(11);

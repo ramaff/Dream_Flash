@@ -88,12 +88,14 @@ function scr_Boss_Beam_Attack_New(beamActive, beamOffest, beamFrame) {
         
 	    //scr_Boss_Beam_Draw(angle,length);
 		
+		var trueBeamSize = other.beamSize + scr_Wave(0, 0.05, 0.25, 0);
+		
 		var beamPartNum = irandom(29);
 		
 		for(beamseg = 1; beamseg <= beamtotalsegs; beamseg++) {
 			if beamseg = 1 {
 				beamSpr = startSpr;	
-				splitsize = 40 * other.beamSize;
+				splitsize = 60 * trueBeamSize;
 			} else if (beamseg = beamtotalsegs) {
 				beamSpr = tipSpr;
 			} else {
@@ -112,7 +114,7 @@ function scr_Boss_Beam_Attack_New(beamActive, beamOffest, beamFrame) {
 				direction = angle;
 				image_angle = direction;
 				image_xscale = splitsize * 2;
-				image_yscale = other.beamSize;
+				image_yscale = trueBeamSize;
 				if (beamseg = 1 || (beamseg = beamtotalsegs)) {
 					image_xscale = image_yscale;
 				}
@@ -142,7 +144,7 @@ function scr_Boss_Beam_Attack_New(beamActive, beamOffest, beamFrame) {
 		
 				sprite_index = spr_Soul_Big_Bit;
 
-				size = other.beamSize * (0.75 + random(0.25));
+				size = trueBeamSize * (0.75 + random(0.25));
 				image_xscale = size;
 				image_yscale = size;
 		

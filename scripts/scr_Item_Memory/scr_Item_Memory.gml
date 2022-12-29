@@ -48,6 +48,9 @@ function scr_Item_Memory(displayItemSprite = true) {
 			}
 		}*/
 		state_description = scr_Add_State_Credit_To_Extra_Stat_Description(current_item_stats);
+		if itemVal = "L05" {
+			state_description = "";	
+		}
 		if recollectionExtraStats != "No Special Properties" {
 			recollectionExtraStats += " " + state_description
 		} else {

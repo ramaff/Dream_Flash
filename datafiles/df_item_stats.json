@@ -1022,7 +1022,7 @@
     "L05": {
         "recollectionString": "Potential",
         "recollectionSprite": "spr_Potential_Art",
-        "recollectionExtraStats": "+1/2 State Credit",
+        "recollectionExtraStats": "+1/2 All State Credits",
         "recollectionDescription": "Potential for anything, brings you closer to any state transformation.",
         "Snake_Credit": 0.5,
         "Beast_Credit": 0.5,

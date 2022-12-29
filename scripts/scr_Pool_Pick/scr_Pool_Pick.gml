@@ -9,6 +9,7 @@ function scr_Pool_Pick(pool){
 		scr_Pool_Refill(pool);	
 	} 
 	scr_Shuffle_Pool_List(pool); */
+	ds_list_shuffle(pool);
 	itemtype = ds_list_find_value(pool, 0);
 	ds_list_delete(pool, 0);
 	//show_debug_message(pool)

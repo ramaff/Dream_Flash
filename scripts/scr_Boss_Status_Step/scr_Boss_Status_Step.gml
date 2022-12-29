@@ -98,14 +98,7 @@ function scr_Boss_Status_Step() {
 	    bossattackspeed = bossattackspeedmax;
 	    bossmovespeed = bossmovespeedmax;
 	}
-
-	/*
-	if bossknockback != 0 and bossknockbacktime > 0 and inside = 1 {
-	    var angl = bossknockbackdirection;
-	    x += lengthdir_x(bossknockback, angl);
-	    y += lengthdir_y(bossknockback, angl);
-	}
-	*/
+	
 
 	if bossknockbacktime <= 0 {
 	    bossknockback = 0;

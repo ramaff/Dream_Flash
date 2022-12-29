@@ -41,14 +41,16 @@ function scr_Boss_Beam_Draw() {
 
 	var frame = bossPatternCountMax - bossPatternCount;
 	var eframe = frame
-	if frame >= 2 {
-	    frame = 2;
+	if frame >= 7 {
+	    frame = 7;
 	}
+	
+	var truebeamSize = beamSize + scr_Wave(0,0.05,0.25,0);
 
-	draw_sprite_ext(startSpr,frame,bossxs[i],bossys[i],beamSize,beamSize,angle,c_white,1);
-	draw_sprite_ext(beamSpr,frame,bossxx[i],bossyy[i],length + 0,beamSize,angle,c_white,1);
+	draw_sprite_ext(beamSpr,frame,bossxx[i],bossyy[i],length + 0,truebeamSize,angle,c_white,1);
+	draw_sprite_ext(startSpr,frame,bossxs[i],bossys[i],truebeamSize,truebeamSize,angle,c_white,1);
 	//if frame >= 10 {
-	draw_sprite_ext(tipSpr,eframe,bossxx[i]+lengthdir_x(length + 0,angle),bossyy[i]+lengthdir_y(length + 0,angle),beamSize,beamSize,angle,c_white,1);
+	draw_sprite_ext(tipSpr,eframe,bossxx[i]+lengthdir_x(length + 0,angle),bossyy[i]+lengthdir_y(length + 0,angle),truebeamSize,truebeamSize,angle + (current_time * 0.1),c_white,1);
 	//}
 
 

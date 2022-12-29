@@ -44,8 +44,8 @@ function scr_Bullet_Shoot_Properties() {
 	if bulletpower < global.stagedamage {
 		bulletpower = global.stagedamage;	
 	}
-	scr_E08();
 	bulletpowermax = bulletpower;
+	scr_E08();
 	bulletlife = other.bullet_lifespan;
 	bulletimagespeed = other.bullet_image_speed;
 				

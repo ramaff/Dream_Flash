@@ -25,9 +25,9 @@ function scr_Boss_Splash_Damage_Calc() {
 	shotDamageBase += (shotenergy * shotPowerLevel) * (1 - other.bossEnergyResistance);
 	*/
 	if other.shotarmourpierce > bossdefense {
-	    shotDamage = shotDamageMult * (shotDamageBase + bossweak) * ((400 + global.soulhope + global.soulhopeTemp) / 400) * ((120 + global.soulloathing + global.soulloathingTemp) / 120);
+	    shotDamage = shotDamageMult * (shotDamageBase + bossweak);
 	} else {
-	    shotDamage = shotDamageMult * ((shotDamageBase + bossweak) - (bossdefense - other.shotarmourpierce)) * ((400 + global.soulhope + global.soulhopeTemp) / 400) * ((120 + global.soulloathing + global.soulloathingTemp) / 120);
+	    shotDamage = shotDamageMult * ((shotDamageBase + bossweak) - (bossdefense - other.shotarmourpierce));
 	}
 	if shotDamage < 0 {
 	shotDamage = 0;

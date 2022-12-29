@@ -15,5 +15,11 @@ function scr_Boss_Step() {
 	        }
 	    }
 	}
+	
+	if bossknockback != 0 and bossknockbacktime > 0 /*and inside = 1 */{
+	    var angl = bossknockbackdirection;
+	    x += lengthdir_x(bossknockback, angl);
+	    y += lengthdir_y(bossknockback, angl);
+	}
 
 }

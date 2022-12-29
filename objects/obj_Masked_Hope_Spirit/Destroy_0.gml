@@ -6,8 +6,7 @@ global.recollectionBoss[global.bossval - frac(global.bossval)]++;
 
 if currentphase >= finalphase
 if bosshealth <= 0 {
-scr_Soul_Spiritual_Add("Hope");
+	scr_Soul_Spiritual_Add("Hope");
+	global.soulhope += 5;
+	scr_Stat_Up_Indication(7);
 }
-
-global.soulhope += 5;
-scr_Stat_Up_Indication(7);

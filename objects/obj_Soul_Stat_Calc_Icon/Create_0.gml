@@ -4,7 +4,7 @@ basehp = (20 * ((10 + global.soulhpfactor) / 10) + global.soulhpadd + ((global.s
 regenhp = (60 / 200) * global.soulhealthregenfactor * ((10 + global.soulhealthregenadd) / 10) * ((40 + global.soulvitality + global.soulvitalityTemp) / 40) / ((60 + (global.soulloathing + global.soulloathingTemp)) / 60) * ((200 + (global.soulhope + global.soulhopeTemp)) / 200) * ((160 + (global.soulbliss + global.soulblissTemp)) / 160);  
 defense = global.souldefenseadd + ((global.soulvanity + global.soulvanityTemp) / 20) + ((global.soulbliss + global.soulblissTemp) / 20) - ((global.souldespair + global.souldespairTemp) / 20);
 
-basepow = ((10 + global.soulpowerfactor) / 10) * global.soulpower / 10 * ((160 + global.soulstrength + global.soulstrengthTemp) / 160) * ((400 + global.soulhope + global.soulhopeTemp) / 400) * ((120 + (global.soulloathing + global.soulloathingTemp)) / 120);
+basepow = ((10 + global.soulpowerfactor) / 10) * global.soulpower / 10 * scr_Class_Stat_Damage_Multiplier();
 powadd = global.soulpoweradd;
 
 baseep = global.soulmaxenergy + (1.25 * (global.soulessence + global.soulessenceTemp));
