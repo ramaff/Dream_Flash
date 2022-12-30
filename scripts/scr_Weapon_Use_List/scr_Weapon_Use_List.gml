@@ -59,7 +59,7 @@ function scr_Weapon_Use_List() {
 
 	scr_E11_Weapon();
 
-	weaponCost = weaponCost / (1 + ((global.soulperception + global.soulperceptionTemp) / 160));
+	weaponCost = weaponCost / scr_Class_Stat_Weapon_Cost_Multiplier();
 
 	var lHalf = 0;
 
@@ -180,7 +180,7 @@ function scr_Weapon_Use_List() {
 		}
     
 	    senergy -= weaponCost / (1 + (global.U03boost / 2000));
-	    sdelay += weaponDelay / ((160 + global.souldexterity + global.souldexterityTemp) / 160);
+	    sdelay += weaponDelay / scr_Class_Stat_Firerate_Multiplier();
 	    sWeaponUseFrame = 1;   
 		sWeaponTicker++;
 		global.essencebeamtime++;

@@ -26,7 +26,7 @@ if soulinvincibility <= 0 {
 	hitType = "Nonboss";
 
     damageamount = other.hazardDamage;
-    defenseamount = (sdefenseadd + sdefensebuffamount + scontactdefenseadd) + global.currentheartdefense + (global.soulvanity / 20);
+    defenseamount = (sdefenseadd + sdefensebuffamount + scontactdefenseadd) + global.currentheartdefense + scr_Class_Stat_Defense_Increase();
     
 	negate = 2;
 	

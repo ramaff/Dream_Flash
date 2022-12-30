@@ -69,7 +69,7 @@ function scr_State_Form_Unlock(){
 			global.recollectionState[6]++;
 			global.recollectionStateUnlocked = 1;
 		}
-		if global.bleedingprogress >= (3 - spikedis) {
+		if global.bleedingprogress >= (3 - bleedingdis) {
 			global.soultransformedstate = "Bleeding";
 			global.recollectionState[7]++;
 			global.recollectionStateUnlocked = 1;

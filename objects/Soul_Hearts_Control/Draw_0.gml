@@ -1,8 +1,13 @@
-var x1 = camera_get_view_x(view);
-var x2 = x1 + camera_get_view_width(view);
-var y1 = camera_get_view_y(view);
-var y2 = y1 + 64;
-    
+//var x1 = camera_get_view_x(view);
+//var x2 = x1 + camera_get_view_width(view);
+//var y1 = camera_get_view_y(view);
+//var y2 = y1 + 64;
+
+var x1 = 10;
+var y1 = 10;
+var x2 = camera_get_view_width(view)
+var y2 = 74;
+
     if instance_exists(obj_Heart_Butt) {
     for(i = 0; i < 16; i++) {
         if instance_exists(heartbutt[i]) {

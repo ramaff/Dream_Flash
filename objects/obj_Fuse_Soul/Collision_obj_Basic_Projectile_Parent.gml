@@ -16,6 +16,7 @@ if !hit_again {
         shotexplosive = 0;
         shotenergy = 0;
         shotexplosive += 1;
+		shotImpactPowerLevel = shotimpactpower;
         
         if shotimpacttype = 0 {
             shotimpacttype = 1;

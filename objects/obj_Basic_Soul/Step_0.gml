@@ -29,7 +29,7 @@ var dy = keyboard_check(ord(global.gameMoveDown)) - keyboard_check(ord(global.ga
 
 smovefactor = 1;
 
-smovemultiplier = smovefactor * smovementspeed * ((10 + smovementfactorbuffamount) / 10) * ((10 + smovementfactor) / 10) * ((80 + global.souldexterity + global.souldexterityTemp) / 80);
+smovemultiplier = smovefactor * smovementspeed * ((10 + smovementfactorbuffamount) / 10) * ((10 + smovementfactor) / 10) * scr_Class_Stat_Movement_Speed_Multiplier();
 
 var soulDirectionAttempt = 0;
 var move = false;
@@ -50,9 +50,9 @@ if ((dx != 0) or (dy != 0)) and move {
     var l = sqrt(dx*dx + dy*dy);
     dx /= l;
     dy /= l;
-    shealthregenfactor = 0.8 * ((160 + global.soulbliss + global.soulblissTemp) / 160) * ((10 + sregenfactorbuffamount) / 10);
-    energyregenfactor = 0.9 * sstatefirerate * ((120 + global.soulbliss + global.soulblissTemp) / 120) * ((10 + senergyregenfactor) / 10);
-    sdelayregenfactor = 1 * sstatefirerate * ((200 + global.soulvanity + global.soulvanityTemp) / 200) * ((10 + sfireratefactorbuffamount) / 10);
+    shealthregenfactor = 0.8 * ((10 + sregenfactorbuffamount) / 10);
+    energyregenfactor = 0.9 * sstatefirerate * ((10 + senergyregenfactor) / 10);
+    sdelayregenfactor = 1 * sstatefirerate * ((10 + sfireratefactorbuffamount) / 10);
 
     scr_D14();
 	
@@ -124,9 +124,9 @@ if ((dx != 0) or (dy != 0)) and move {
 		}
 	}
 } else {
-    shealthregenfactor = 1 * ((160 + global.soulbliss + global.soulblissTemp) / 160) * ((10 + shealthidleregenfactor) / 10) * ((10 + sregenfactorbuffamount) / 10);
-    energyregenfactor = 1 * sstatefirerate * ((120 + global.soulbliss + global.soulblissTemp) / 120) * ((10 + senergyidleregenfactor) / 10) * ((10 + senergyregenfactor) / 10);
-    sdelayregenfactor = 1 * sstatefirerate * ((200 + global.soulvanity + global.soulvanityTemp) / 200) * ((10 + sfireratefactorbuffamount) / 10);
+    shealthregenfactor = 1 * ((10 + shealthidleregenfactor) / 10) * ((10 + sregenfactorbuffamount) / 10);
+    energyregenfactor = 1 * sstatefirerate * ((10 + senergyidleregenfactor) / 10) * ((10 + senergyregenfactor) / 10);
+    sdelayregenfactor = 1 * sstatefirerate * ((10 + sfireratefactorbuffamount) / 10);
 	soulmovetimer = 0;
 	
 	if abs(soulCurrentHorizontalSpeed) > 0 {
@@ -201,11 +201,11 @@ scr_State_Power_Down();
 
 if (global.P[1] = 0 and global.C[9] = 0) || global.C[11] > 0 {
 	if global.bosscount > 0 {
-	    senergy += 0.333 * energyregenfactor * ((60 + global.soulessence + global.soulessenceTemp) / 60);
+	    senergy += 0.333 * energyregenfactor * scr_Class_Stat_Essence_Regen_Multiplier();
 	} else {
-	    senergy += 3.33 * energyregenfactor * ((60 + global.soulessence + global.soulessenceTemp) / 60);
+	    senergy += 3.33 * energyregenfactor * scr_Class_Stat_Essence_Regen_Multiplier();
 	}
-	var essenceCap = smaxenergy + (1.25 * (global.soulessence + global.soulessenceTemp));
+	var essenceCap = smaxenergy + scr_Class_Stat_Essence_Cap_Increase();
 
 	if senergy > essenceCap {
 		
@@ -218,7 +218,7 @@ if (global.P[1] = 0 and global.C[9] = 0) || global.C[11] > 0 {
 } else {//if global.P[1] > 0 {
 	//scr_P01();
 //} if global.C[9] > 0 {
-	var essenceCap = smaxenergy + (1.25 * (global.soulessence + global.soulessenceTemp));
+	var essenceCap = smaxenergy + scr_Class_Stat_Essence_Cap_Increase();
 	
 	/*if senergy > essenceCap {
 		if global.C[11] > 0 {
@@ -229,9 +229,9 @@ if (global.P[1] = 0 and global.C[9] = 0) || global.C[11] > 0 {
 	
 	if senergy < essenceCap {
 		if global.bosscount > 0 {
-		    senergy += 0.5 * energyregenfactor * ((60 + global.soulessence + global.soulessenceTemp) / 60);
+		    senergy += 0.5 * energyregenfactor * scr_Class_Stat_Essence_Regen_Multiplier();
 		} else {
-		    senergy += 5 * energyregenfactor * ((60 + global.soulessence + global.soulessenceTemp) / 60);
+		    senergy += 5 * energyregenfactor * scr_Class_Stat_Essence_Regen_Multiplier();
 		}
 	}
 }
@@ -239,7 +239,7 @@ if (global.P[1] = 0 and global.C[9] = 0) || global.C[11] > 0 {
 if stransformedstate != "None"{
 	var sCap = smaxstate;
 	
-	var sFac = ((60 + global.soulstate + global.soulstateTemp) / 60);
+	//var sFac = ((60 + global.soulstate + global.soulstateTemp) / 60);
 	
 	/*
 	if sstatecharge > essenceCap {

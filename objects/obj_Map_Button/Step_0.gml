@@ -9,6 +9,10 @@ if mapRoomType = "Normal" || mapRoomType = "Spawn" {
 	image_index = 5;
 } else if mapRoomType = "Super Boss" {
 	image_index = 3;
+} else if mapRoomType = "Chamber" {
+	image_index = 6;
+} else if mapRoomType = "State" {
+	image_index = 7;
 } else {
 	image_index = 4;
 }

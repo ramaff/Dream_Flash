@@ -548,7 +548,7 @@ function scr_Hard_Coded_Item_Stats(itemVal, items_to_add = 1, reload = false) {
 			//global.scrubprogress++;
 		}
 	
-		if recoGroup = "I" {
+		if recoGroup = "I" and !reload {
 		
 			var emNum = string_digits(itemVal)
 			var spirNum = 1 + ((emNum - 1) mod 6);
@@ -955,12 +955,16 @@ function scr_Hard_Coded_Item_Stats(itemVal, items_to_add = 1, reload = false) {
 
 	if itemVal = "P03" {
 		//global.P[3]++;	
-		global.soulloathing += 4;
+		if !reload {
+			global.soulloathing += 4;
+		}
 	}
 
 	if itemVal = "P04" {
 		//global.P[4]++;
-		global.soulparanoia += 4;
+		if !reload {
+			global.soulparanoia += 4;
+		}
 	}
 	if itemVal = "P05" {
 		//global.P[5]++;	

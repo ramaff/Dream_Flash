@@ -51,6 +51,10 @@ function scr_Floor_Generation() {
 	        Flash[i,0] = "Super Boss";
 	        Flash[i,3] = 1536;
 	    }
+		if i = 15 and global.currentchapter = 4 {
+	        Flash[i,0] = "Super Boss";
+	        Flash[i,3] = 1536;
+	    }
 	    //if i = 17 and global.currentchapter = 3 {
 	    //    Flash[i,0] = "Super Boss";
 	    //    Flash[i,3] = 1344;
