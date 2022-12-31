@@ -22,7 +22,7 @@ scr_Current_Heart_Stats();
 
 if global.totalhearts > 0 {
 	heart[global.currentheart,3] = obj_Soul_Parent.shealth;
-	heart[global.currentheart,4] = ((global.currenthearthp * ((10 + obj_Soul_Parent.shpfactor) / 10)) + obj_Soul_Parent.shpadd + ((global.soulvitality + global.soulvitalityTemp) / 4));
+	heart[global.currentheart,4] = ((global.currenthearthp * ((10 + obj_Soul_Parent.shpfactor) / 10)) + obj_Soul_Parent.shpadd + scr_Class_Stat_Health_Cap_Increase());
 }
 
 var i = 0;
@@ -79,7 +79,7 @@ if global.totalhearts >= 1 {
 		}
 
 	
-		global.currenthearthp = ((global.currenthearthp * ((10 + obj_Soul_Parent.shpfactor) / 10)) + obj_Soul_Parent.shpadd + ((global.soulvitality + global.soulvitalityTemp) / 4));
+		global.currenthearthp = ((global.currenthearthp * ((10 + obj_Soul_Parent.shpfactor) / 10)) + obj_Soul_Parent.shpadd + scr_Class_Stat_Health_Cap_Increase());
 	
 		}
 	for(i = 0; i < 16; i++) {
@@ -153,13 +153,13 @@ if global.totalhearts >= 1 {
 			heartHea = 20 * global.OC[2];
 		}
 		
-		heart[i,4] = ((heartHea * ((10 + obj_Soul_Parent.shpfactor) / 10)) + obj_Soul_Parent.shpadd + ((global.soulvitality + global.soulvitalityTemp) / 4));
+		heart[i,4] = ((heartHea * ((10 + obj_Soul_Parent.shpfactor) / 10)) + obj_Soul_Parent.shpadd + scr_Class_Stat_Health_Cap_Increase());
 		
         if heart[i,2] != 7 /*and heart[i,2] != 103*/ {
             if global.bosscount > 0 {
-                heart[i,3] += obj_Soul_Parent.shealthregenfactor * heartReg * ((10 + obj_Soul_Parent.shealthregenadd) / 10) * ((40 + global.soulvitality + global.soulvitalityTemp) / 40) / 200;   
+                heart[i,3] += obj_Soul_Parent.shealthregenfactor * heartReg * ((10 + obj_Soul_Parent.shealthregenadd) / 10) * scr_Class_Stat_Health_Regen_Multiplier() / 200;   
             } else {
-                heart[i,3] += obj_Soul_Parent.shealthregenfactor * heartReg * ((10 + obj_Soul_Parent.shealthregenadd) / 10) * ((40 + global.soulvitality + global.soulvitalityTemp) / 40) * 5;   
+                heart[i,3] += obj_Soul_Parent.shealthregenfactor * heartReg * ((10 + obj_Soul_Parent.shealthregenadd) / 10) * scr_Class_Stat_Health_Regen_Multiplier() * 5;   
             }
         }
 		

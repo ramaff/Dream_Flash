@@ -1,11 +1,11 @@
 {
   "resourceType": "GMScript",
   "resourceVersion": "1.0",
-  "name": "scr_State_Stat_Unlock",
+  "name": "scr_Class_Stat_Health_Cap_Increase",
   "isDnD": false,
   "isCompatibility": false,
   "parent": {
-    "name": "State Commands",
-    "path": "folders/Scripts/State Commands.yy",
+    "name": "Stat Commands",
+    "path": "folders/Scripts/Stat Commands.yy",
   },
 }

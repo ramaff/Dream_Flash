@@ -38,6 +38,12 @@ function scr_Mini_Map_Update(){
 	        } else if Floor_Layout_Control.Flash[i,0] = "Super Boss" {
 	            //draw_sprite(spr_Mini_Map_Square,3,xOrigin + xx,yOrigin + yy);
 				Floor_Layout_Control.miniMap[mapXOffset + 2,mapYOffset + 2] = 3;	
+	        } else if Floor_Layout_Control.Flash[i,0] = "Chamber" {
+	            //draw_sprite(spr_Mini_Map_Square,3,xOrigin + xx,yOrigin + yy);
+				Floor_Layout_Control.miniMap[mapXOffset + 2,mapYOffset + 2] = 6;	
+	        } else if Floor_Layout_Control.Flash[i,0] = "State" {
+	            //draw_sprite(spr_Mini_Map_Square,3,xOrigin + xx,yOrigin + yy);
+				Floor_Layout_Control.miniMap[mapXOffset + 2,mapYOffset + 2] = 7;	
 	        } else {
 	            //draw_sprite(spr_Mini_Map_Square,4,xOrigin + xx,yOrigin + yy);
 				Floor_Layout_Control.miniMap[mapXOffset + 2,mapYOffset + 2] = 4;	

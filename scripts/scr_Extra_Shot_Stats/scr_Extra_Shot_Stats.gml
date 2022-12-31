@@ -6,7 +6,7 @@ function scr_Extra_Shot_Stats() {
 	}
 	shotimagespeed = other.Shot_Image_Speed;
 
-	var shotaddedpow = ((10 + other.spowerfactor + other.sattackfactorbuffamount) / 10) * other.spower / 10 * ((160 + global.soulstrength + global.soulstrengthTemp) / 160)
+	var shotaddedpow = ((10 + other.spowerfactor + other.sattackfactorbuffamount) / 10) * other.spower / 10 * scr_Class_Stat_Damage_Multiplier();
 
 	image_rotation_speed = other.Shot_Image_Rotation_Speed;
 
@@ -107,7 +107,7 @@ function scr_Extra_Shot_Stats() {
 		shotextrahits[i] = other.Shot_Extra_Hits[i];
 		shotextrahitssprite[i] = other.Shot_Extra_Hits_Sprite[i];
 		shotextrahitfrequency[i] = other.Shot_Extra_Hit_Frequency[i];
-		shotextrahitpower[i] = (other.Shot_Extra_Hit_Power[i] + other.spoweradd) * ((10 + other.spowerfactor + other.sattackfactorbuffamount) / 10) * other.spower / 10 * ((160 + global.soulstrength + global.soulstrengthTemp) / 160);
+		shotextrahitpower[i] = (other.Shot_Extra_Hit_Power[i] + other.spoweradd) * ((10 + other.spowerfactor + other.sattackfactorbuffamount) / 10) * other.spower / 10 * scr_Class_Stat_Damage_Multiplier();
 		shotextrahitspeed[i] = other.Shot_Extra_Hit_Speed[i];
 		shotextrahitlifespan[i] = other.Shot_Extra_Hit_Lifespan[i];
 		shotextrahithoming[i] = other.Shot_Extra_Hit_Homing[i];

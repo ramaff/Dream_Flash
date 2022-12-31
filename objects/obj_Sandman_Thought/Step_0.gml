@@ -69,7 +69,7 @@ if bossActiveAttackDelay[1] <= 0 and bossActiveAttackCooldown[1] <= 0 and bossAc
         bossActiveAttackDuration[1] = 15;
     }
     if bossActiveAttack[1] = 3 {
-        scr_Boss_Teleport_From_Boss(225);
+        scr_Boss_Teleport_From_Boss(250);
         bossActiveAttackCooldown[1] = (15 + random(5));
         bossActiveAttackDuration[1] = 15;
     }

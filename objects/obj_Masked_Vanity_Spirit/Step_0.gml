@@ -239,13 +239,14 @@ if bossActiveAttackDelay[1] <= 0 and bossPatternCooldown <= 0 and bossPatternCou
     }
     
     if bossActiveAttack[1] = 5 {
-        bullet_direction = bossPatternDirection;
+        /*bullet_direction = bossPatternDirection;
         bullet_count = 3;
         bullet_spread = 360 / bullet_count;
         bullet_speed = 75;
         bullet_lifespan = 1;
 
         scr_Just_Shoot_No_Paranoia();    
+		*/
     
         scr_Default_Attack_Settings();
         bullet_power = bosspower * 0.5;
@@ -255,24 +256,22 @@ if bossActiveAttackDelay[1] <= 0 and bossPatternCooldown <= 0 and bossPatternCou
         bullet_spread = 360 / bullet_count;
         boss_radius = 0;
         
-        boss_xoffset = 80;
-        boss_yoffset = 80;
+        //boss_xoffset = 80;
+        //boss_yoffset = 80;
         
         bullet_sprite = spr_Arcane_Beam;
         beam_sprite = spr_Arcane_Beam;
         bossbeamattackactive = 1;
         bossoffsetangle = 1;
+		beamSize = 0.75;
 		
-		beamStart = 540 - bossPatternCount;
+		//beamStart = 540 - bossPatternCount;
     
-        if bossPatternCount < 520 {
-			if bossPatternCount mod 5 = 0 {
-				scr_Boss_Stretch("Vertical", 0.05);	
-			}
-            scr_Boss_Beam_Attack_New("Active",35,scr_Boss_Beam_Frame(beamStart)); 
-        } else {
-            scr_Boss_Beam_Attack_New("Dormant",35,scr_Boss_Beam_Frame(beamStart));  
-        } 
+        scr_Easy_Boss_Beam_Shoot(bossPatternCountMax, 36);
+		
+		if bossPatternCount mod 5 = 0 {
+			scr_Boss_Stretch("Vertical", 0.05);	
+		}
 		
 		if bossPatternCount mod 120 = 15 {
 			scr_Boss_Stretch("Horizontal", 0.6);

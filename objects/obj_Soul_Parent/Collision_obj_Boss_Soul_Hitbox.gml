@@ -22,8 +22,8 @@ if instance_exists(other.bossid) {
 		
 		hitType = "Boss";
     
-	    damageamount = other.bossid.bosscontactdamage + (global.souldespair / 20) + (global.soulloathing / 10);
-	    defenseamount = (sdefenseadd + sdefensebuffamount + scontactdefenseadd) + global.currentheartdefense + (global.soulvanity / 20);
+	    damageamount = other.bossid.bosscontactdamage + (global.soulloathing / 10);
+	    defenseamount = (sdefenseadd + sdefensebuffamount + scontactdefenseadd) + global.currentheartdefense + scr_Class_Stat_Defense_Increase();
     
 		if global.A[11] > 0 {
 			if (other.bossid.bosshealth < 0) {

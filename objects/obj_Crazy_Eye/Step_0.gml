@@ -80,6 +80,9 @@ if champ = 8 and currentphase = 1 and bossActiveAttack[1] = 0 {
 if bossPassiveAttack[1] = 1 {
 	bullet_blend = c_red;
 	boss_yoffset = bossHeight;
+	if currentphase = 2 {
+		boss_yoffset += 20;	
+	}
     scr_Just_Shoot();    
 }
 

@@ -25,18 +25,26 @@ with(other) {
 		}
 		ddir += 45;
 	}
-	var poww = other.shotshieldpower;
-	if bulletpower <= poww {
+	//var poww = other.shotshieldpower;
+	if bulletpower <= other.shotpower {
 		var xxx = x;
 		var yyy = y;
 		var shpower = other.shotpower
 		with (obj_Soul_Parent) {
-			scr_Baseball_Shot(xxx,yyy,shpower);
+			scr_Baseball_Shot(xxx,yyy,shpower + 50);
+			var dirrr = point_direction(x,y,xxx,yyy) + 180;
+			x += lengthdir_x(shpower / 3, dirrr)
+			y += lengthdir_y(shpower / 3, dirrr)
 		}
+		//other.shotshieldpower -= bulletpower;
+		other.shotpower -= bulletpower;
 		instance_destroy();	
 	} else {
-		bulletpower -= poww;
+		bulletpower -= other.shotpower;
 		bulletsize = (bulletpower / bulletpowermax);
+		with(other) {
+			instance_destroy();	
+		}
 	}
 	//instance_destroy();
 }

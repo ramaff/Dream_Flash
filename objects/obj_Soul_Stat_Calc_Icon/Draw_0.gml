@@ -34,7 +34,7 @@ if statVal = "Dexterity" {
 if statVal = "Perception" {
     draw_sprite_ext(spr_Soul_Menu_Perception,0,x,y,1,1,0,c_white,1);
 	sprite_index = spr_Soul_Menu_Perception;
-    scr_Draw_Text_Outlined(x-1,y-8,c_black,c_white,"-" + string(essCost * 100) + "%");
+    scr_Draw_Text_Outlined(x-1,y-8,c_black,c_white,"-" + string((1 - essCost) * 100) + "%");
     vis = 1;
 }
 

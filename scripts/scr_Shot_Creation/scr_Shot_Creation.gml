@@ -185,7 +185,7 @@ function scr_Shot_Creation() {
 		        image_xscale = shotsize;
 		        image_yscale = shotsize;
 		        shotspeed = (other.Shot_Speed + other.sshotspeedaddition) * (other.Weapon_Vomit_Min_Speed + random(other.Weapon_Vomit_Max_Speed - other.Weapon_Vomit_Min_Speed)) * other.sshotspeed / 10;
-		        shotpowermax = (other.Shot_Power + other.spoweradd) * ((10 + other.spowerfactor + other.sattackfactorbuffamount) / 10) * other.spower / 10 * ((160 + global.soulstrength + global.soulstrengthTemp) / 160);
+		        shotpowermax = (other.Shot_Power + other.spoweradd) * ((10 + other.spowerfactor + other.sattackfactorbuffamount) / 10) * other.spower / 10 * scr_Class_Stat_Damage_Multiplier();
 		        shotpower = shotpowermax;
 		        shotPowerLevel = other.Shot_Power;
 		        shotknockback = other.Shot_Knockback * other.sshotknockback / 10;

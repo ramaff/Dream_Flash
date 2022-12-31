@@ -9,5 +9,5 @@ if bosshealth <= 0 {
 scr_Soul_Spiritual_Add("Loathing");
 }
 
-global.soulloathing += 5;
+global.soulloathing += 3;
 scr_Stat_Up_Indication(10);

@@ -206,7 +206,7 @@ if shotaura = 1 {
 
 if shothomingtype = 1 {
     target = noone
-	if instance_exists(obj_Boss_Parent) {
+	/* if instance_exists(obj_Boss_Parent) {
 	    with(obj_Boss_Parent) {
 	        dis = distance_to_object(other);
 			if ds_exists(projectile_hits, ds_type_list) {
@@ -215,6 +215,15 @@ if shothomingtype = 1 {
 		        if other.target == noone || dis < other.target.dis
 		        if collision_circle(other.x, other.y, other.shothomingrange, id, true, false)
 		        other.target = id;
+			}
+	    }
+	} */
+	if instance_exists(obj_Boss_Parent) {
+	    with(obj_Boss_Parent) {
+	        var dis = distance_to_object(other);
+		    var hit_again = variable_struct_exists(projectile_hits, id)
+			if !hit_again and dis < other.shothomingrange {
+				other.target = id;
 			}
 	    }
 	}

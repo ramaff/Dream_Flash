@@ -9,5 +9,5 @@ if bosshealth <= 0 {
 scr_Soul_Spiritual_Add("Despair");
 }
 
-global.souldespair += 5;
+global.souldespair += 3;
 scr_Stat_Up_Indication(12);

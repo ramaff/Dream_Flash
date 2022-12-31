@@ -53,7 +53,7 @@ function scr_Information_Memory() {
 	}
 	if itemVal = "Tutorial 14" {
 	    recollectionSprite = spr_Stat_Tutorial_Stuff;
-		recollectionDescription = "Strength\n+25% Damage at max strength (40)";
+		recollectionDescription = "Strength\n+20% Damage at max strength (40)";
 	}
 	if itemVal = "Tutorial 15" {
 	    recollectionSprite = spr_Stat_Tutorial_Stuff;
@@ -69,7 +69,7 @@ function scr_Information_Memory() {
 	}
 	if itemVal = "Tutorial 18" {
 	    recollectionSprite = spr_Stat_Tutorial_Stuff;
-		recollectionDescription = "Perception\n+100% Teleport Recharge Speed at max perception (40)\n-25% Weapon Essence Cost at max perception (40)";
+		recollectionDescription = "Perception\n+100% Teleport Recharge Speed at max perception (40)\n-25% Weapon/Teleport Essence Cost at max perception (40)";
 	}
 	if itemVal = "Tutorial 19" {
 	    recollectionSprite = spr_Stat_Tutorial_Stuff;
@@ -85,11 +85,11 @@ function scr_Information_Memory() {
 	}
 	if itemVal = "Tutorial 22" {
 	    recollectionSprite = spr_Stat_Tutorial_Stuff;
-		recollectionDescription = "Assurance\n+20% Soul Attack Speed at max assurance(40)\n+20% Boss Attack Speed at max assurance(40)\n+2 Defense at max assurance(40)";
+		recollectionDescription = "Assurance\n+16.6% Soul Attack Speed at max assurance(40)\n+20% Boss Attack Speed at max assurance(40)\n+2 Defense at max assurance(40)";
 	}
 	if itemVal = "Tutorial 23" {
 	    recollectionSprite = spr_Stat_Tutorial_Stuff;
-		recollectionDescription = "Loathing\n+20% Soul Attack Power at max loathing(40)\n+4 Boss Attack Damage at max loathing(40)\n+20% Boss Bullet Speed at max loathing(40)";
+		recollectionDescription = "Loathing\n+12.5% Soul Attack Power at max loathing(40)\n+4 Boss Attack Damage at max loathing(40)\n+20% Boss Bullet Speed at max loathing(40)";
 	}
 	if itemVal = "Tutorial 24" {
 	    recollectionSprite = spr_Stat_Tutorial_Stuff;
@@ -97,7 +97,7 @@ function scr_Information_Memory() {
 	}
 	if itemVal = "Tutorial 25" {
 	    recollectionSprite = spr_Stat_Tutorial_Stuff;
-		recollectionDescription = "Despair\n+5 Boss Difficulty at max despair(40)\n+2 Boss Attack Damage at max despair(40)\n+20% Boss Attack Speed at max despair(40)\n+100% Field Darkness at max despair(40)";
+		recollectionDescription = "Despair\n+5 Boss Difficulty at max despair(40)\n-2 Soul Defense at max despair(40)\n+20% Boss Attack Speed at max despair(40)\n+100% Field Darkness at max despair(40)";
 	}
 	if itemVal = "Tutorial 26" and global.spiritTutorial >= 1 {
 	    recollectionSprite = spr_Misc_Tutorial_Stuff;

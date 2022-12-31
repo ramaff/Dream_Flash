@@ -31,7 +31,7 @@ function scr_Soul_Icon_Cloud() {
 		//var fireratedown = global.souldelayconservation;
 		draw_text(x-258,y+280-180, string_hash_to_newline("Teleport Cost: " + string(teleCost)));
 	    draw_text(x-258,y+280-148, string_hash_to_newline("Teleport Cooldown: " + string(teleSpeed / 60) + "s"));
-		draw_text(x-258,y+280-116, string_hash_to_newline("Weapon Ess. Cost: " + "-" + string(essCost * 100) + "%"));
+		draw_text(x-258,y+280-116, string_hash_to_newline("Weapon Ess. Cost: " + "-" + string((1 - essCost) * 100) + "%"));
 	}
 
 	depth += 1;

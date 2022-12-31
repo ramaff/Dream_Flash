@@ -1023,15 +1023,10 @@
 
         "Champ 1": {
             "Name": "Swarm Locust",
+            "Recollection_Sprite": "reco_Locust",
             "Health_Phase_1": 520,
             "Health_Phase_2": 400,
             "Palette_Index": 1
-        },
-        "Champ 2": {
-            "Name": "Pestilence Locust",
-            "Health_Phase_1": 210,
-            "Health_Phase_2": 260,
-            "Palette_Index": 2
         }
     },
 
@@ -1360,7 +1355,7 @@
         "Defense_Phase_2": 3,
         "Defense_Phase_3": 3,
         "Boss_Danger": 16,
-        "Bullet_Speed": 3.75,
+        "Bullet_Speed": 3,
         "Move_Speed": 1.95,
         "Final_Phase": 3,
         "recollectionDescription": "????"
@@ -1545,8 +1540,8 @@
     "Boss 084": {
         "Name": "Brainwash",
         "Recollection_Sprite": "reco_Brainwash",
-        "Health_Phase_1": 350,
-        "Health_Phase_2": 250,
+        "Health_Phase_1": 260,
+        "Health_Phase_2": 190,
         "Defense_Phase_1": 0,
         "Defense_Phase_2": 0,
         "Boss_Danger": 4,
@@ -1557,20 +1552,20 @@
         "Champ 1": {
             "Name": "Brainwash (Tier 2)",
             "Recollection_Sprite": "reco_Brainwash",
-            "Health_Phase_1": 590,
-            "Health_Phase_2": 410
+            "Health_Phase_1": 460,
+            "Health_Phase_2": 330
         },
         "Champ 2": { 
             "Name":  "Brainwash (Tier 3)",
             "Recollection_Sprite": "reco_Brainwash",
-            "Health_Phase_1": 890,
-            "Health_Phase_2": 610
+            "Health_Phase_1": 730,
+            "Health_Phase_2": 470
         },
         "Champ 3": {
             "Name": "Brainwash (Tier 4)",
             "Recollection_Sprite": "reco_Brainwash",
-            "Health_Phase_1": 1250,
-            "Health_Phase_2": 850
+            "Health_Phase_1": 990,
+            "Health_Phase_2": 730
         }
     },
     "Boss 086": {

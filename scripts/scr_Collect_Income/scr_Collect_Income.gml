@@ -15,6 +15,7 @@ function scr_Collect_Income() {
 	    global.soulflash++;
 	    instance_destroy();
 	}
+	/*
 	with (obj_Soul_Spiritual) {
 	    if spirit = "Hope" {
 	        global.soulhope++;
@@ -36,6 +37,7 @@ function scr_Collect_Income() {
 	    }
 	    instance_destroy();
 	}
+	*/
 
 
 }

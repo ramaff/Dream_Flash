@@ -29,6 +29,7 @@
   "physicsShapePoints": [],
   "eventList": [
     {"resourceType":"GMEvent","resourceVersion":"1.0","name":"","isDnD":false,"eventNum":0,"eventType":4,"collisionObjectId":{"name":"obj_Bullet_Parent","path":"objects/obj_Bullet_Parent/obj_Bullet_Parent.yy",},},
+    {"resourceType":"GMEvent","resourceVersion":"1.0","name":"","isDnD":false,"eventNum":0,"eventType":4,"collisionObjectId":{"name":"obj_Boss_Parent","path":"objects/obj_Boss_Parent/obj_Boss_Parent.yy",},},
   ],
   "properties": [],
   "overriddenProperties": [],
