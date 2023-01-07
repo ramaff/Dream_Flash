@@ -23,11 +23,11 @@ function scr_Rubber_Soul_Rebound_Shot() {
 	    Shot_Speed = 0; 
 	}
 	Shot_Power = other.bulletpower * 3;
-	if Shot_Speed < 0 {
-		Shot_Speed = 0;	
+	if Shot_Speed < 2 {
+		Shot_Speed = 2;	
 	}
-	if Shot_Power < 0 {
-		Shot_Power = 0;	
+	if Shot_Power < 5 {
+		Shot_Power = 5;	
 	}
 	Shot_Knockback = 10;
 	Shot_Lifespan = 100;

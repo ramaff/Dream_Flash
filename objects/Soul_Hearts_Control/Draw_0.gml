@@ -9,20 +9,20 @@ var x2 = camera_get_view_width(view)
 var y2 = 74;
 
     if instance_exists(obj_Heart_Butt) {
-    for(i = 0; i < 16; i++) {
-        if instance_exists(heartbutt[i]) {
-        var ix = 25 + x1 + (i * 45);
-        var iy = y2 - 29;
+	    for(i = 0; i < 16; i++) {
+	        if instance_exists(heartbutt[i]) {
+		        var ix = 25 + x1 + (i * 45);
+		        var iy = y2 - 29;
     
-        var hpercent = 100 * (heart[i,3] / heart[i,4]);
-        heartbutt[i].x = ix;
-        heartbutt[i].y = iy;
-        }
-        //if heart[i,2] != 0 
-        //{
-        //    draw_sprite(spr_Basic_Heart,round(hpercent / 5),ix,iy);
-        //}
-    }
+		        var hpercent = 100 * (heart[i,3] / heart[i,4]);
+		        heartbutt[i].x = ix;
+		        heartbutt[i].y = iy;
+	        }
+	        //if heart[i,2] != 0 
+	        //{
+	        //    draw_sprite(spr_Basic_Heart,round(hpercent / 5),ix,iy);
+	        //}
+	    }
     }
 
 /*
