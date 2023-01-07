@@ -266,11 +266,16 @@ if shothomingtype = 2 {
 if shotsnakemove = 2 {
 	target = noone
 	if instance_exists(obj_Boss_Parent) {
+		var mdist = 10000;
+		var dis = 0;
 	    with obj_Boss_Parent {
 	        dis = distance_to_object(other);
-	        if other.target == noone || dis < other.target.dis
-	        if collision_circle(other.x, other.y, 10000, id, true, false)
-	        other.target = id;
+	        if other.target == noone || dis < mdist {
+				if collision_circle(other.x, other.y, 10000, id, true, false) {
+					other.target = id;
+					mdist = dis;
+				}
+			}
 	    }
 	}
 	
