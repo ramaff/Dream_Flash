@@ -117,50 +117,86 @@ if !instance_exists(target) {
     target = obj_Soul_Parent;
 }
 
-if shotbursttype = 3 {
-	if instance_exists(obj_Boss_Parent) {
-		if distance_to_object(obj_Boss_Parent) <= shotburstrange {
-			dir = -shotburstspread / 2;
-	        repeat(shotburstamount) {
-	            with instance_create(x,y,obj_Lesser_Soul_Shot) {
-					shotlifespan = other.shotlifespan / 2;
-	                scr_Duplicate_Shot_Stats();
-	                //shotlifespan = shotlifespan / 2;
-	                //alarm[0] = shotlifespan;
-	            }
-	            dir += shotburstspread / shotburstamount;
-	        }
-			shotbursttype = 0;
-			instance_destroy();
+if shotburststats != false {
+	if shotburststats.Air_Burst = true {
+		if instance_exists(obj_Boss_Parent) {
+			if distance_to_object(obj_Boss_Parent) <= shotburststats.Range {
+				dir = -shotburststats.Spread / 2;
+		        repeat(shotburststats.Amount) {
+		            with instance_create(x,y,obj_Lesser_Soul_Shot) {
+						shotlifespan = other.shotlifespan / 2;
+		                scr_Duplicate_Shot_Stats();
+						
+						var vshotburststats = other.shotburststats
+						show_debug_message(vshotburststats)
+						if variable_struct_exists(vshotburststats, "Burst_Type") {
+							if vshotburststats.Burst_Type = "OC6" {
+								
+							}
+						}
+						if variable_struct_exists(vshotburststats, "Shot_Sprite") {
+							show_debug_message(vshotburststats.Shot_Sprite)
+							sprite_index = asset_get_index(vshotburststats.Shot_Sprite)
+						}
+						if variable_struct_exists(vshotburststats, "Shot_Burst_Stats") {
+							shotburststats = vshotburststats.Shot_Burst_Stats
+						}
+	
+						scr_Shot_Burst_Stats();
+		            }
+		            dir += shotburststats.Range / shotburststats.Amount;
+		        }
+				instance_destroy();
+			}
+		}
+	}	
+} else {
+
+	if shotbursttype = 3 {
+		if instance_exists(obj_Boss_Parent) {
+			if distance_to_object(obj_Boss_Parent) <= shotburstrange {
+				dir = -shotburstspread / 2;
+		        repeat(shotburstamount) {
+		            with instance_create(x,y,obj_Lesser_Soul_Shot) {
+						shotlifespan = other.shotlifespan / 2;
+		                scr_Duplicate_Shot_Stats();
+		                //shotlifespan = shotlifespan / 2;
+		                //alarm[0] = shotlifespan;
+		            }
+		            dir += shotburstspread / shotburstamount;
+		        }
+				shotbursttype = 0;
+				instance_destroy();
+			}
 		}
 	}
-}
 
-if shotbursttype = 4 {
+	if shotbursttype = 4 {
 	
-	var jiggle = speed / 2;
-	x += -(jiggle / 2) + random(jiggle);
-	y += -(jiggle / 2) + random(jiggle);
+		var jiggle = speed / 2;
+		x += -(jiggle / 2) + random(jiggle);
+		y += -(jiggle / 2) + random(jiggle);
 	
-	if instance_exists(obj_Boss_Parent) {
-		if distance_to_object(obj_Boss_Parent) <= shotburstrange {
-	        repeat(shotburstamount) {
-				dir = -shotburstspread / 2 + random(shotburstspread);
-	            with instance_create(x,y,obj_Lesser_Soul_Shot) {
-					shotlifespan = other.shotlifespan / 2;
-	                scr_Duplicate_Shot_Stats();
-					shotsize = other.shotsize - 0.25;
-					image_xscale = shotsize;
-					image_yscale = shotsize;
-					shotspeed = other.shotburstspeed / 2 + random(other.shotburstspeed / 2);
+		if instance_exists(obj_Boss_Parent) {
+			if distance_to_object(obj_Boss_Parent) <= shotburstrange {
+		        repeat(shotburstamount) {
+					dir = -shotburstspread / 2 + random(shotburstspread);
+		            with instance_create(x,y,obj_Lesser_Soul_Shot) {
+						shotlifespan = other.shotlifespan / 2;
+		                scr_Duplicate_Shot_Stats();
+						shotsize = other.shotsize - 0.25;
+						image_xscale = shotsize;
+						image_yscale = shotsize;
+						shotspeed = other.shotburstspeed / 2 + random(other.shotburstspeed / 2);
 				
-					speed = shotspeed;
-	                //shotlifespan = shotlifespan / 2;
-	                //alarm[0] = shotlifespan;
-	            }
-	        }
-			shotbursttype = 0;
-			instance_destroy();
+						speed = shotspeed;
+		                //shotlifespan = shotlifespan / 2;
+		                //alarm[0] = shotlifespan;
+		            }
+		        }
+				shotbursttype = 0;
+				instance_destroy();
+			}
 		}
 	}
 }
@@ -246,10 +282,11 @@ if shothomingtype = 2 {
     target = noone
 	if instance_exists(obj_Boss_Parent) {
 	    with obj_Boss_Parent {
-	        dis = distance_to_object(other);
-	        if other.target == noone || dis < other.target.dis
-	        if collision_circle(other.x, other.y, other.shothomingrange, id, true, false)
-	        other.target = id;
+	        var dis = distance_to_object(other);
+		    var hit_again = variable_struct_exists(projectile_hits, id)
+			if !hit_again and dis < other.shothomingrange {
+				other.target = id;
+			}
 	    }
 	}
     if target != noone {

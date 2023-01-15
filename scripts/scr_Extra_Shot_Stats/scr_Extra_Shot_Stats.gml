@@ -14,6 +14,9 @@ function scr_Extra_Shot_Stats() {
 	shothitagain = other.Weapon_Split_Hit_Again;
 	shotmelee = other.Weapon_Melee;
 	
+	shotburststats = other.Shot_Burst_Stats;
+	shotextrastats = other.Shot_Extra_Stats;
+	
 
 	if other.Shot_Sprite = spr_Marble_Shot {
 	    shotframe = 1 + irandom(8);

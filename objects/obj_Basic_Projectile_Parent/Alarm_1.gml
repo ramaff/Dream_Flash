@@ -1,3 +1,5 @@
+
+
 var i = 0;
 for(i = 0; i < 5; i++) {
 	if shotextrahits[i] > 0 and (shottimer mod shotextrahitfrequency[i] = 0) {

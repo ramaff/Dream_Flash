@@ -140,7 +140,7 @@ function scr_Weapon_Use_List() {
 		
 		if spawnProjectile {
 			if !minion {
-				scr_Shot_Creation();
+				scr_Shot_Creation(current_weapon_stats);
 			} else {
 				scr_Soul_Spawn();	
 			}
@@ -160,7 +160,7 @@ function scr_Weapon_Use_List() {
 		
 				if spawnProjectile {
 					if !minion {
-						scr_Shot_Creation();
+						scr_Shot_Creation(current_weapon_stats);
 					} else {
 						scr_Soul_Spawn();	
 					}

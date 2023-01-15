@@ -168,6 +168,9 @@ function scr_Default_Shot_Stats() {
 	shotburstpointangle = 0;
 	shotburstimpact = 0;
 	
+	shotburststats = false;
+	shotextrastats = false;
+	
 	shotaura = 0;
 	shotaurapower = 0;
 	shotaurarange = 0;

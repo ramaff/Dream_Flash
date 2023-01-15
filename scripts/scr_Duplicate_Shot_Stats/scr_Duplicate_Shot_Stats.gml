@@ -75,8 +75,6 @@ function scr_Duplicate_Shot_Stats() {
 	shotPowerLevel = other.shotPowerLevel;
 	shotImpactPowerLevel = other.shotImpactPowerLevel;
 	shotspeed = other.shotspeed;
-	shotpower = other.shotburstpower;
-	shotpowermax = shotpower;
 	shotknockback = other.shotknockback;
 	shotlifespan = other.shotlifespan;
 	shottimer = shotlifespan;
@@ -84,9 +82,26 @@ function scr_Duplicate_Shot_Stats() {
 	shotinitspeed = shotspeed;
 
 	shotsize = other.shotsize;
+	
+	var oshotburststats = other.shotburststats
+	
+	if oshotburststats = false {
+		shotpower = other.shotburstpower;
+	} else {
+		shotpower = other.shotpower;	
+		shotsize = other.shotsize;
+		if variable_struct_exists(oshotburststats, "Burst_Power") {
+			shotpower = oshotburststats.Burst_Power;
+		}
+		if variable_struct_exists(oshotburststats, "Burst_Size") {
+			shotsize = oshotburststats.Burst_Size;
+		}
+	}
+	
 	image_xscale = shotsize;
 	image_yscale = shotsize;
 	shotsizemax = other.shotsizemax;
+	shotpowermax = shotpower;
 	
 	shotscreenshake = other.shotscreenshake - 5;
 
@@ -196,6 +211,8 @@ function scr_Duplicate_Shot_Stats() {
 		shotimpacttype = other.shotburstimpact;
 	}
 
+	shotburststats = false;
+	shotextrastats = other.shotextrastats;
 	
 	shotbursttype = -1;
 	shotburstamount = 0;

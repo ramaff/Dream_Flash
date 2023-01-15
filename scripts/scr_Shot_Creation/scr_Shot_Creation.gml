@@ -8,6 +8,8 @@ function scr_Shot_Creation() {
 	scr_D06();
 	scr_D11();
 	scr_V09_Add();
+	
+	scr_OC06();
 	//scr_OC03();
 	
 	
