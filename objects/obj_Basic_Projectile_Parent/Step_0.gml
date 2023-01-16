@@ -117,37 +117,49 @@ if !instance_exists(target) {
     target = obj_Soul_Parent;
 }
 
-if shotburststats != false {
-	if shotburststats.Air_Burst = true {
-		if instance_exists(obj_Boss_Parent) {
-			if distance_to_object(obj_Boss_Parent) <= shotburststats.Range {
-				dir = -shotburststats.Spread / 2;
-		        repeat(shotburststats.Amount) {
-		            with instance_create(x,y,obj_Lesser_Soul_Shot) {
-						shotlifespan = other.shotlifespan / 2;
-		                scr_Duplicate_Shot_Stats();
+if shotairburststats != false {
+	var burstIndex = array_length(shotairburststats) - 1;
+	//show_debug_message(burstIndex)
+	if instance_exists(obj_Boss_Parent) and burstIndex >= 0 {
+		//show_debug_message(shotairburststats)
+		if distance_to_object(obj_Boss_Parent) <= shotairburststats[burstIndex].Range {
+			dir = -shotairburststats[burstIndex].Spread / 2;
+		    repeat(shotairburststats[burstIndex].Amount) {
+		        with instance_create(x,y,obj_Lesser_Soul_Shot) {
+					shotlifespan = other.shotlifespan / 2;
+		            scr_Duplicate_Shot_Stats();
 						
-						var vshotburststats = other.shotburststats
-						show_debug_message(vshotburststats)
-						if variable_struct_exists(vshotburststats, "Burst_Type") {
-							if vshotburststats.Burst_Type = "OC6" {
-								
-							}
+					var vshotairburststats = other.shotairburststats[burstIndex]
+					if variable_struct_exists(vshotairburststats, "Burst_Power") {
+						shotpower = shotpower * vshotairburststats.Burst_Power
+						//show_debug_message(shotpower)
+						shotpowermax = shotpower;
+					}
+					if variable_struct_exists(vshotairburststats, "Burst_Size") {
+						shotsize = shotsize * vshotairburststats.Burst_Size
+						image_xscale = shotsize;
+						image_yscale = shotsize;
+						shotsizemax = other.shotsizemax;
+					}
+					if variable_struct_exists(vshotairburststats, "Shot_Sprite") {
+						//show_debug_message(vshotburststats.Shot_Sprite)
+						sprite_index = asset_get_index(vshotairburststats.Shot_Sprite)
+					}
+					
+					scr_Shot_Burst_Stats();
+					if burstIndex > 0 {
+						shotairburststats = [];
+						for(var i = 0; i <= burstIndex-1; i++) {
+							array_insert(shotairburststats,i,other.shotairburststats[i])
 						}
-						if variable_struct_exists(vshotburststats, "Shot_Sprite") {
-							show_debug_message(vshotburststats.Shot_Sprite)
-							sprite_index = asset_get_index(vshotburststats.Shot_Sprite)
-						}
-						if variable_struct_exists(vshotburststats, "Shot_Burst_Stats") {
-							shotburststats = vshotburststats.Shot_Burst_Stats
-						}
-	
-						scr_Shot_Burst_Stats();
-		            }
-		            dir += shotburststats.Range / shotburststats.Amount;
+					} else {
+						shotairburststats = false;	
+					}
+					//array_delete(shotairburststats,burstIndex,1);
 		        }
-				instance_destroy();
-			}
+		        dir += shotairburststats[burstIndex].Spread;
+		    }
+			instance_destroy();
 		}
 	}	
 } else {

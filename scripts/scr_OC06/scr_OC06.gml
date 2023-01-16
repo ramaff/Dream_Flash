@@ -3,18 +3,22 @@
 function scr_OC06(){
 
 	if global.OC[6] > 0 {
-		Shot_Burst_Stats = current_weapon_stats;
+		if Shot_Air_Burst_Stats = false {
+			Shot_Air_Burst_Stats = [json_parse(json_stringify(current_weapon_stats))]
+		} else {
+			array_push(Shot_Air_Burst_Stats, json_parse(json_stringify(current_weapon_stats)))	
+		}
 		Weapon_Split_Visible = 1;
         Weapon_Split_Hit_Again = 1;
-		//Shot_Burst_Stats.Shot_Power = Shot_Burst_Stats.Shot_Power * 0.8;
-		//Shot_Burst_Stats.Shot_Size = Shot_Burst_Stats.Shot_Size * 0.9;
-		variable_struct_set(Shot_Burst_Stats, "Burst_Type", "OC6"); 
-		variable_struct_set(Shot_Burst_Stats, "Burst_Power", Shot_Power * 0.85); 
-		variable_struct_set(Shot_Burst_Stats, "Burst_Size", Shot_Size * 0.9); 
-		variable_struct_set(Shot_Burst_Stats, "Air_Burst", true); 
-		variable_struct_set(Shot_Burst_Stats, "Range", 130); 
-		variable_struct_set(Shot_Burst_Stats, "Amount", 1 + global.OC[6]); 
-		variable_struct_set(Shot_Burst_Stats, "Spread", 90);
+		var burstIndex = array_length(Shot_Air_Burst_Stats) - 1;
+		variable_struct_set(Shot_Air_Burst_Stats[burstIndex], "Burst_Power", 0.9); 
+		variable_struct_set(Shot_Air_Burst_Stats[burstIndex], "Burst_Size", 0.85); 
+		variable_struct_set(Shot_Air_Burst_Stats[burstIndex], "Air_Burst", true); 
+		variable_struct_set(Shot_Air_Burst_Stats[burstIndex], "Range", 130); 
+		variable_struct_set(Shot_Air_Burst_Stats[burstIndex], "Amount", 1 + global.OC[6]); 
+		variable_struct_set(Shot_Air_Burst_Stats[burstIndex], "Spread", 90);
+		
+		//show_debug_message(Shot_Air_Burst_Stats)
 		/*
 		if global.OC[6] > 1 {
 			var loops = global.OC[6];

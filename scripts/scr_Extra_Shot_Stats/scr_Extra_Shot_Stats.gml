@@ -15,6 +15,7 @@ function scr_Extra_Shot_Stats() {
 	shotmelee = other.Weapon_Melee;
 	
 	shotburststats = other.Shot_Burst_Stats;
+	shotairburststats = other.Shot_Air_Burst_Stats;
 	shotextrastats = other.Shot_Extra_Stats;
 	
 

@@ -169,6 +169,7 @@ function scr_Default_Shot_Stats() {
 	shotburstimpact = 0;
 	
 	shotburststats = false;
+	shotairburststats = false;
 	shotextrastats = false;
 	
 	shotaura = 0;

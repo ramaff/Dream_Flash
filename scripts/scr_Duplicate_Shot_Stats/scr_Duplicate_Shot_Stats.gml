@@ -82,7 +82,17 @@ function scr_Duplicate_Shot_Stats() {
 	shotinitspeed = shotspeed;
 
 	shotsize = other.shotsize;
+	if other.shotburststats = false {
+		shotpower = other.shotburstpower;
+	} else {
+		shotpower = other.shotpower;	
+	}
 	
+	if other.shotairburststats != false {
+		shotpower = other.shotpower;
+	}
+	
+	/*
 	var oshotburststats = other.shotburststats
 	
 	if oshotburststats = false {
@@ -97,6 +107,7 @@ function scr_Duplicate_Shot_Stats() {
 			shotsize = oshotburststats.Burst_Size;
 		}
 	}
+	*/
 	
 	image_xscale = shotsize;
 	image_yscale = shotsize;
@@ -212,6 +223,7 @@ function scr_Duplicate_Shot_Stats() {
 	}
 
 	shotburststats = false;
+	shotairburststats = false;
 	shotextrastats = other.shotextrastats;
 	
 	shotbursttype = -1;

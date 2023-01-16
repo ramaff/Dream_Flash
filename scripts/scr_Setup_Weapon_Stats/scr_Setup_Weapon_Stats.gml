@@ -8,6 +8,9 @@ function scr_Setup_Weapon_Stats(){
 	if variable_struct_exists(current_weapon_stats, "Shot_Burst_Stats") {
 		Shot_Burst_Stats = current_weapon_stats.Shot_Burst_Stats
 	}
+	if variable_struct_exists(current_weapon_stats, "Shot_Air_Burst_Stats") {
+		Shot_Air_Burst_Stats = current_weapon_stats.Shot_Air_Burst_Stats
+	}
 	
 	if variable_struct_exists(current_weapon_stats, "Shot_Count") {
 		Shot_Count = current_weapon_stats.Shot_Count
