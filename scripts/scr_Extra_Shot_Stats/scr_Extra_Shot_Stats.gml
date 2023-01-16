@@ -265,6 +265,7 @@ function scr_Extra_Shot_Stats() {
 		scr_D10_Shot_Mod();
 		
 		scr_OA04();
+		scr_OA06();
 		
 		if global.XA[2] > 0 {
 			scr_XA02_Shot_Mod();	

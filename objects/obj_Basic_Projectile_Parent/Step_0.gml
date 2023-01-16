@@ -6,6 +6,9 @@ if shotairtarget = 0 and shotmelee = 0 {
 }*/
 
 scr_A14();
+scr_OA06_Damage();
+
+shotexisttime++;
 
 //shotmelee = 1;
 if shotmovement = 0 {
@@ -124,9 +127,10 @@ if shotairburststats != false {
 		//show_debug_message(shotairburststats)
 		if distance_to_object(obj_Boss_Parent) <= shotairburststats[burstIndex].Range {
 			dir = -shotairburststats[burstIndex].Spread / 2;
+			shotlifespan = shotlifespan * 0.6;
 		    repeat(shotairburststats[burstIndex].Amount) {
 		        with instance_create(x,y,obj_Lesser_Soul_Shot) {
-					shotlifespan = other.shotlifespan / 2;
+					//shotlifespan = other.shotlifespan / 2;
 		            scr_Duplicate_Shot_Stats();
 						
 					var vshotairburststats = other.shotairburststats[burstIndex]
@@ -168,9 +172,10 @@ if shotairburststats != false {
 		if instance_exists(obj_Boss_Parent) {
 			if distance_to_object(obj_Boss_Parent) <= shotburstrange {
 				dir = -shotburstspread / 2;
+				shotlifespan = shotlifespan * 0.6;
 		        repeat(shotburstamount) {
 		            with instance_create(x,y,obj_Lesser_Soul_Shot) {
-						shotlifespan = other.shotlifespan / 2;
+						//shotlifespan = other.shotlifespan / 2;
 		                scr_Duplicate_Shot_Stats();
 		                //shotlifespan = shotlifespan / 2;
 		                //alarm[0] = shotlifespan;

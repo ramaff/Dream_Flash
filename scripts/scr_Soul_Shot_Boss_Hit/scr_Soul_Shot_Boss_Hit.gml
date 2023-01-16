@@ -110,8 +110,9 @@ function scr_Soul_Shot_Boss_Hit(){
 	        if shotbursttype >= 1 {
 	            dir = 90
 	            repeat(shotburstamount) {
+					shotlifespan = shotlifespan * 0.6;
 	                with instance_create(x,y,obj_Lesser_Soul_Shot) {
-						shotlifespan = other.shotlifespan / 2;
+						//shotlifespan = other.shotlifespan / 2;
 	                    scr_Duplicate_Shot_Stats();
 	                    //shotlifespan = shotlifespan / 2;
 	                    //alarm[0] = shotlifespan;

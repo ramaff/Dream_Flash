@@ -56,6 +56,7 @@ function scr_Item_Variable_Setup() {
 	global.XB4Dir = 0;
 	
 	global.downwardSpiralBoost = 0;
+	global.Tunnel_Vision_Angle = 0;
 	
 	var i = 0;
 	for(i = 0; i < 9; i++) {

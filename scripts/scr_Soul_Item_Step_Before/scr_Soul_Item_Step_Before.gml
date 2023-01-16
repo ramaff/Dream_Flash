@@ -21,6 +21,8 @@ function scr_Soul_Item_Step_Before() {
 	scr_Essence_Beam_Step()
 	
 	scr_XC02();
+	
+	scr_OC05();
 
 
 }

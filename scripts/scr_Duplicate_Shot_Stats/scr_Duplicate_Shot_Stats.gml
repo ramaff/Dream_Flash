@@ -78,6 +78,8 @@ function scr_Duplicate_Shot_Stats() {
 	shotknockback = other.shotknockback;
 	shotlifespan = other.shotlifespan;
 	shottimer = shotlifespan;
+	
+	shotexisttime = other.shotexisttime;
 
 	shotinitspeed = shotspeed;
 
@@ -291,6 +293,7 @@ function scr_Duplicate_Shot_Stats() {
 	shotwander = other.shotwander;
 	
 	shotwishful = other.shotwishful;
+	shotmiracle = other.shotmiracle;
 	
 	shotsuck = other.shotsuck;
 	

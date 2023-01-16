@@ -2,6 +2,8 @@ function scr_Default_Shot_Stats() {
 	//global.instanceidincrementer = 1;
 	shot_id = global.instanceidincrementer - 1;
 	shot_boss_id = shot_id;
+	
+	shotexisttime = 0;
 
 	bullet_hits = {}
 
@@ -214,6 +216,7 @@ function scr_Default_Shot_Stats() {
 	shotangularvelocity = 0;
 	
 	shotwishful = 0;
+	shotmiracle = 0;
 	shotsuck = 0;
 	
 	scr_A07_Setup();

@@ -31,6 +31,8 @@ function scr_Soul_Damage_Calculation() {
 			scr_T01_Decay(truedam)
 		}
 		
+		truedam = scr_OB05(truedam);
+		
 		shealth -= truedam;
 		
 		with instance_create(obj_Soul_Parent.x,obj_Soul_Parent.y,obj_Damage_Indicator) {
