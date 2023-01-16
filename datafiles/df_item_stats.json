@@ -1281,6 +1281,18 @@
         "recollectionExtraStats": "+Big Idea Seeking",
         "recollectionDescription": "Your Shots/Ideas gradually become bigger and more powerful."
     },
+    "OA05": {
+        "recollectionString": "Potential For Anything",
+        "recollectionSprite": "spr_Potential_For_Anything_Art",
+        "recollectionExtraStats": "+Item Pool Control",
+        "recollectionDescription": "The possibilities are endless! Sometimes grants the soul the ability to pick which item pool to pick items from."
+    },
+    "OA06": {
+        "recollectionString": "Miracle",
+        "recollectionSprite": "spr_Miracle_Art",
+        "recollectionExtraStats": "+Miraculous Shot",
+        "recollectionDescription": "The soul gains a very low chance to create an immensely powerful shot. This shot has a powerful aura which damages enemies and erases bullets."
+    },
     
     "OB01": {
         "recollectionString": "Pure Bliss",
@@ -1306,6 +1318,18 @@
         "recollectionExtraStats": "+Bullet Slowdown Aura",
         "recollectionDescription": "Bullets that get near the soul move 30% slower. No need to stress!"
     },
+    "OB05": {
+        "recollectionString": "Ignorance Is Bliss",
+        "recollectionSprite": "spr_Ignorance_Is_Bliss_Art",
+        "recollectionExtraStats": "+Delayed Soul Damage",
+        "recollectionDescription": "The soul doesn't register that its taken damage. All damage is now recieved over a period of time."
+    },
+    "OB06": {
+        "recollectionString": "Euphoria",
+        "recollectionSprite": "spr_Euphoria_Art",
+        "recollectionExtraStats": "+Excitied Shots",
+        "recollectionDescription": "Shots will now burst in 4 directions when near bosses."
+    },
     
     "OC01": {
         "recollectionString": "Assured",
@@ -1330,6 +1354,18 @@
         "recollectionSprite": "spr_Delusions_Art",
         "recollectionExtraStats": "+25% Delusional Damage",
         "recollectionDescription": "Deal 25% more damage to enemies, however upon getting hit in a boss fight you will recieve 50% more damage until the end of that field."
+    },
+    "OC05": {
+        "recollectionString": "Tunnel Vision",
+        "recollectionSprite": "spr_Tunnel_Vision_Art",
+        "recollectionExtraStats": "+Lined up Shots",
+        "recollectionDescription": "All shots fired will follow a direct line toward your cursor."
+    },
+    "OC06": {
+        "recollectionString": "Split Focus",
+        "recollectionSprite": "spr_Split_Focus_Art",
+        "recollectionExtraStats": "+2 Way Splitting",
+        "recollectionDescription": "Focus on two things at once. Shots split in 2 when near bosses in widely different directions."
     },
 
     "P01": {
@@ -1636,6 +1672,18 @@
         "recollectionExtraStats": "+Seething Heart",
         "recollectionDescription": "Getting hit has a 1/8 chance to convert the soul's rightmost heart into a seething heart. These hearts lose some of their max HP every room, but let the soul light enemies on fire."
     },
+    "XA05": {
+        "recollectionString": "Rub It In",
+        "recollectionSprite": "spr_Rub_It_In_Art",
+        "recollectionExtraStats": "+Extra Damage Speech",
+        "recollectionDescription": "Hitting bosses creates loathing speech bubbles which deal extra damage to bosses when collecting. Bosses also shoot much faster due to being provoked."
+    },
+    "XA06": {
+        "recollectionString": "Petty",
+        "recollectionSprite": "spr_Petty_Art",
+        "recollectionExtraStats": "+Unhealthy Shot Burst",
+        "recollectionDescription": "Hitting bosses with shots causes them to burst into shots which deal additional damage to both bosses and souls."
+    },
     
     "XB01": {
         "recollectionString": "Paranoid",
@@ -1661,6 +1709,18 @@
         "recollectionExtraStats": "+Jittery Shots/Bullets",
         "recollectionDescription": "Causes soul shots and boss bullets jitter and change directions."
     },
+    "XB05": {
+        "recollectionString": "Seeing Things",
+        "recollectionSprite": "spr_Seeing_Double_Art",
+        "recollectionExtraStats": "+Extra Boss Bullets",
+        "recollectionDescription": "Bosses sometimes shoot extra bullets at the soul. The soul also can sometimes shoot more."
+    },
+    "XB06": {
+        "recollectionString": "Claustrophobia",
+        "recollectionSprite": "spr_Claustrophobia_Art",
+        "recollectionExtraStats": "+Crowd of Spirits",
+        "recollectionDescription": "Constant crowd of spirits that wander across the stage. Some of which will attack the soul when near."
+    },
     
     "XC01": {
         "recollectionString": "Full Despair",
@@ -1685,6 +1745,18 @@
         "recollectionSprite": "spr_Downward_Spiral_Art",
         "recollectionExtraStats": "+Ever Growing Pain",
         "recollectionDescription": "Every time the soul takes damage, all future damage is increased by 2%. Also has a slight boost to the damage the soul deals to bosses."
+    },
+    "XC05": {
+        "recollectionString": "Lasting Pain",
+        "recollectionSprite": "spr_Lasting_Pain_Art",
+        "recollectionExtraStats": "+Pain that Follows",
+        "recollectionDescription": "Every time the soul takes damage, pained spirits will closely follow the soul. These spirits eventually explode dealing extra damage to the soul."
+    },
+    "XC06": {
+        "recollectionString": "Helpless",
+        "recollectionSprite": "spr_Cowardly_Art",
+        "recollectionExtraStats": "+Cowardly Shots",
+        "recollectionDescription": "Shots are incapable of directly going at bosses. Instead they trail behind the soul in a conga line. Shots cost 33% less essence and shoot out 15% faster."
     }
 
 

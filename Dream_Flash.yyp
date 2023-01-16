@@ -3137,7 +3137,7 @@
     {"id":{"name":"scr_State_Form_Unlock","path":"scripts/scr_State_Form_Unlock/scr_State_Form_Unlock.yy",},"order":8,},
     {"id":{"name":"obj_Soul_Stat_Calc_Icon","path":"objects/obj_Soul_Stat_Calc_Icon/obj_Soul_Stat_Calc_Icon.yy",},"order":2,},
     {"id":{"name":"spr_Hungry_Soul","path":"sprites/spr_Hungry_Soul/spr_Hungry_Soul.yy",},"order":29,},
-    {"id":{"name":"spr_Ignorace_Is_Bliss_Art","path":"sprites/spr_Ignorace_Is_Bliss_Art/spr_Ignorace_Is_Bliss_Art.yy",},"order":4,},
+    {"id":{"name":"spr_Ignorance_Is_Bliss_Art","path":"sprites/spr_Ignorance_Is_Bliss_Art/spr_Ignorance_Is_Bliss_Art.yy",},"order":4,},
     {"id":{"name":"obj_Item_Butt","path":"objects/obj_Item_Butt/obj_Item_Butt.yy",},"order":3,},
     {"id":{"name":"spr_Comfortable_Art","path":"sprites/spr_Comfortable_Art/spr_Comfortable_Art.yy",},"order":4,},
     {"id":{"name":"obj_Recollection_Menu","path":"objects/obj_Recollection_Menu/obj_Recollection_Menu.yy",},"order":0,},
