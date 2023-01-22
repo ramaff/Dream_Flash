@@ -8,6 +8,6 @@ function scr_Change_Chapter() {
 	    bulletpower = 0;
 	}
 
-
+	
 
 }

@@ -230,6 +230,9 @@ function scr_Save_Run() {
 	ini_write_real("Run", "temperCharge", global.temperCharge);
 	ini_write_real("Run", "temperActive", global.temperActive);
 	ini_write_real("Run", "downwardSpiralBoost", global.downwardSpiralBoost);
+	for(i = 0; i <= 39; i++) {
+	    ini_write_real("Run", "OA5rooms" + string(i), global.OA5rooms[i]);
+	}
 	
 	
 	

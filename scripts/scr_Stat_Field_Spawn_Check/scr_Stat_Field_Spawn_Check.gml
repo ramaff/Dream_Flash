@@ -31,5 +31,11 @@ function scr_Stat_Field_Spawn_Check() {
 	    item[i] = Floor_Layout_Control.Flash[global.currentroom,6+i];
 	}
             
+	scr_OA05_Current_Room_Add()
+	if global.OA5rooms[global.currentroom] = 1 {
+		scr_OA05();
+		exit;	
+	}
+
 	scr_Item_Spawn(field, item[1], item[2], item[3], item[4], item[5], item[6], item[7], item[8], item[9], item[10], item[11], item[12], item[13]);
 }

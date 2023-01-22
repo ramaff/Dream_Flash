@@ -14,6 +14,11 @@ function scr_Item_Variable_Setup() {
 	
 	global.turretSpawnTime = 120;
 	
+	global.OA5rooms = [];
+	for(var i = 0; i <= 39; i++) {
+		global.OA5rooms[i] = 0;	
+	}
+	
 	global.gembeam_hits = ds_list_create();
 	
 	global.H5timer = 0;

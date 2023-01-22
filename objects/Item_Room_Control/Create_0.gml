@@ -15,7 +15,7 @@ global.orbit[2] = 0;
 global.orbit[3] = 0;
 global.orbit[999] = -1000;
 
-if global.OA[5] > 0 {
+if global.OA[5] > 0 and global.OA5rooms[global.currentroom] = 1 {
 	scr_OA05();
 	exit;
 }

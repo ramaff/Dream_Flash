@@ -893,6 +893,11 @@ function scr_Hard_Coded_Item_Stats(itemVal, items_to_add = 1, reload = false) {
 	if itemVal = "OA04" {
 	    //global.OA[4]++;
 	}
+	if itemVal = "OA05" {
+		if !reload {
+			scr_OA05_Setup();
+		}
+	}
 	
 	if itemVal = "OB01" {
 		//global.OB[1]++;
