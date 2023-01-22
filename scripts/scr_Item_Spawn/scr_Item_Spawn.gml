@@ -1,4 +1,5 @@
 function scr_Item_Spawn() {
+	
 	fieldType = argument[0];
 	currItem = 1;
 	totalItems = 0;

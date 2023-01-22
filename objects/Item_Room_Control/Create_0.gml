@@ -15,6 +15,11 @@ global.orbit[2] = 0;
 global.orbit[3] = 0;
 global.orbit[999] = -1000;
 
+if global.OA[5] > 0 {
+	scr_OA05();
+	exit;
+}
+
 field = Floor_Layout_Control.Flash[global.currentroom,0];
 for(i = 1; i <= 13; i++) {
     item[i] = Floor_Layout_Control.Flash[global.currentroom,6+i];
