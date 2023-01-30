@@ -2,7 +2,7 @@
 // https://help.yoyogames.com/hc/en-us/articles/360005277377 for more information
 function scr_OC06(){
 
-	if global.OC[6] > 0 {
+	if global.OC[6] > 0 and sWeaponTicker mod 2 = 0 {
 		if Shot_Air_Burst_Stats = false {
 			Shot_Air_Burst_Stats = [json_parse(json_stringify(current_weapon_stats))]
 		} else {

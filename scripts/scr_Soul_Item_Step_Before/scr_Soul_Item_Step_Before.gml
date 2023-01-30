@@ -23,6 +23,8 @@ function scr_Soul_Item_Step_Before() {
 	scr_XC02();
 	
 	scr_OC05();
+	
+	scr_XC06_Step();
 
 
 }

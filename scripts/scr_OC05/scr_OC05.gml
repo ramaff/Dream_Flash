@@ -18,24 +18,8 @@ function scr_OC05(){
 				var tarPositionX = xx + lengthdir_x(dist, tangle)
 				var tarPositionY = yy + lengthdir_y(dist, tangle)
 				
-				//x = tarPositionX;
-				//y = tarPositionY;
-				
-				//x = scr_Converge(x, tarPositionX, shotspeed);
-				//y = scr_Converge(y, tarPositionY, shotspeed);
-				
 				x = lerp(x, tarPositionX, 0.05 * speed)
 				y = lerp(y, tarPositionY, 0.05 * speed)
-				
-				
-				/*var sdist = point_distance(x,y,xx,yy)
-				var dir = point_direction(x,y,xx,yy) + 180;
-				if sdist < dist {
-					//x += lengthdir_x(shotspeed, dir);
-					//y += lengthdir_y(shotspeed, dir);
-					//x = lerp(x, tarPositionX, 0.5)
-					//y = lerp(y, tarPositionY, 0.5)
-				}*/
 				
 				
 			}

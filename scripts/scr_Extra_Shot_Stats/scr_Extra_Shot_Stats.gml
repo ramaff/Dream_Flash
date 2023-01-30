@@ -272,12 +272,16 @@ function scr_Extra_Shot_Stats() {
 		}
 		scr_XA03_Shot_Mod();
 		scr_XA04_Shot_Mod();
+		
 		scr_XB02();
 		
 		if global.XC[2] > 0 {
 			scr_XC02_Shot_Mod();
 		}
+		
 	}
+	
+	scr_XC06_Setup();
 	
 	shotsizemax = shotsize;
 	

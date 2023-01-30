@@ -37,3 +37,5 @@ startVanity = global.soulvanity;
 startLoathing = global.soulloathing;
 startParanoia = global.soulparanoia;
 startDespair = global.souldespair;
+
+scr_XB06();

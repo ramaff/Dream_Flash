@@ -134,23 +134,12 @@ if shotairburststats != false {
 		            scr_Duplicate_Shot_Stats();
 						
 					var vshotairburststats = other.shotairburststats[burstIndex]
-					if variable_struct_exists(vshotairburststats, "Burst_Power") {
-						shotpower = shotpower * vshotairburststats.Burst_Power
-						//show_debug_message(shotpower)
-						shotpowermax = shotpower;
-					}
-					if variable_struct_exists(vshotairburststats, "Burst_Size") {
-						shotsize = shotsize * vshotairburststats.Burst_Size
-						image_xscale = shotsize;
-						image_yscale = shotsize;
-						shotsizemax = other.shotsizemax;
-					}
-					if variable_struct_exists(vshotairburststats, "Shot_Sprite") {
-						//show_debug_message(vshotburststats.Shot_Sprite)
-						sprite_index = asset_get_index(vshotairburststats.Shot_Sprite)
-					}
 					
-					scr_Shot_Burst_Stats();
+					scr_Shot_Burst_Stats(vshotairburststats);
+					
+					shotburststats = other.shotburststats;
+					shotextrastats = other.shotextrastats;
+					
 					if burstIndex > 0 {
 						shotairburststats = [];
 						for(var i = 0; i <= burstIndex-1; i++) {
