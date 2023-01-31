@@ -1,6 +1,6 @@
 /// @description Insert description here
 // You can write your code in this editor
 
-scr_Boss_Shadow(0.15,0,0);
+alarm[1] = 60;
 
-draw_self();
+image_index = 1;
