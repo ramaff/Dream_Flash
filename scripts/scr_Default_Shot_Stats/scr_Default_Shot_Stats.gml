@@ -219,6 +219,8 @@ function scr_Default_Shot_Stats() {
 	shotmiracle = 0;
 	shotsuck = 0;
 	
+	followtarget = noone;
+	
 	scr_A07_Setup();
 
 }

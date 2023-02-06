@@ -153,7 +153,7 @@ if bossActiveAttackDelay[1] <= 0 {
         
         bullet_count = 1;
         bullet_direction = (-5 + random(10)) / bossaccuracy;
-        bullet_power = bosspower;
+        bullet_power = bosspower * 10;
         bullet_type = obj_Black_Hole_Bullet;
         bullet_sprite = spr_Despair_Ball;
         bullet_spread = 10;
@@ -177,7 +177,7 @@ if bossActiveAttackDelay[1] <= 0 {
         
         bullet_count = 1;
         bullet_direction = (-5 + random(10)) / bossaccuracy;
-        bullet_power = bosspower;
+        bullet_power = bosspower * 10;
         bullet_type = obj_Mega_Black_Hole_Bullet;
         bullet_sprite = spr_Despair_Super_Ball;
         bullet_spread = 10;
@@ -249,7 +249,7 @@ if bossActiveAttackDelay[1] <= 0 and bossPatternCooldown <= 0 and bossPatternCou
 		if bossPatternCount = bossPatternCountMax {
 	        bullet_count = 1;
 	        bullet_direction = scr_Soul_Point() + 180;
-	        bullet_power = bosspower;
+	        bullet_power = bosspower * 10;
 	        bullet_type = obj_Despair_Ball;
 	        bullet_sprite = spr_Despair_Ball;
 	        bullet_spread = 10;
@@ -265,7 +265,7 @@ if bossActiveAttackDelay[1] <= 0 and bossPatternCooldown <= 0 and bossPatternCou
         
         bullet_count = 1;
         bullet_direction = (-5 + random(10)) / bossaccuracy;
-        bullet_power = bosspower;
+        bullet_power = bosspower * 10;
         bullet_type = obj_Black_Hole_Bullet;
         bullet_sprite = spr_Despair_Ball;
         bullet_spread = 10;

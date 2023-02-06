@@ -44,7 +44,7 @@ function scr_Stat_Field_Check(){
 			Floor_Layout_Control.Flash[global.currentroom,0] = "Normal";
 		}
 	}
-	if instance_number(obj_Item_Parent) = 0 and field != "Normal" and field != "Boss" {
+	if instance_number(obj_Item_Parent) = 0 and field != "Normal" and field != "Boss" and instance_number(obj_Potential_For_Anything) = 0 {
 		Floor_Layout_Control.Flash[global.currentroom,0] = "Normal";
 	}
 }

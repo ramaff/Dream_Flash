@@ -15,7 +15,9 @@ fieldColor = c_red;
 
 with instance_create(x,y,obj_Potential_For_Anything) {
 	itemFieldPositionOffset = 0;
+	pool = global.OA5rooms[global.currentroom][0];
 }
 with instance_create(x,y,obj_Potential_For_Anything) {
 	itemFieldPositionOffset = 180;
+	pool = global.OA5rooms[global.currentroom][1];
 }

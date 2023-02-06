@@ -6,6 +6,7 @@ var xx = x;
 var yy = y;
 
 with(obj_Potential_For_Anything) {
+	//fieldColor = other.fieldColor
     if distance_to_object(obj_Astral_Indicator) < 30 {
         other.itemFieldSpeed = 0.1
     }
@@ -20,7 +21,7 @@ itemFieldPosition += itemFieldSpeed / 1;
 
 scr_Item_Field_Push(5);
 
-if instance_number(obj_Item_Parent) = 0 and fieldActive = 1 {
+if instance_number(obj_Potential_For_Anything) = 0 {
     instance_destroy();
 }
 

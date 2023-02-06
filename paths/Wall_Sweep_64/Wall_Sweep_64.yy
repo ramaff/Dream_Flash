@@ -2,9 +2,12 @@
   "resourceType": "GMPath",
   "resourceVersion": "1.0",
   "name": "Wall_Sweep_64",
-  "kind": 1,
   "closed": true,
-  "precision": 4,
+  "kind": 1,
+  "parent": {
+    "name": "Paths",
+    "path": "folders/Paths.yy",
+  },
   "points": [
     {"speed":200.0,"x":2368.0,"y":1952.0,},
     {"speed":100.0,"x":2304.0,"y":1792.0,},
@@ -31,8 +34,5 @@
     {"speed":10.0,"x":2528.0,"y":2048.0,},
     {"speed":100.0,"x":2480.0,"y":2000.0,},
   ],
-  "parent": {
-    "name": "Paths",
-    "path": "folders/Paths.yy",
-  },
+  "precision": 4,
 }

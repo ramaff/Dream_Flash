@@ -16,7 +16,7 @@ function scr_Item_Variable_Setup() {
 	
 	global.OA5rooms = [];
 	for(var i = 0; i <= 39; i++) {
-		global.OA5rooms[i] = 0;	
+		global.OA5rooms[i] = [];
 	}
 	
 	global.gembeam_hits = ds_list_create();

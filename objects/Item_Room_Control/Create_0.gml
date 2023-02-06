@@ -15,11 +15,16 @@ global.orbit[2] = 0;
 global.orbit[3] = 0;
 global.orbit[999] = -1000;
 
-if global.OA[5] > 0 and global.OA5rooms[global.currentroom] = 1 {
+//json_decode(global.OA5rooms)
+//show_debug_message(json_parse(global.OA5rooms))
+//show_debug_message(global.OA5rooms[global.currentroom])
+//show_debug_message(array_length(global.OA5rooms[global.currentroom]))
+
+if global.OA[5] > 0 and array_length(global.OA5rooms[global.currentroom]) > 0 {
 	scr_OA05();
 	exit;
 }
-
+//show_debug_message("did not exit somehow")
 field = Floor_Layout_Control.Flash[global.currentroom,0];
 for(i = 1; i <= 13; i++) {
     item[i] = Floor_Layout_Control.Flash[global.currentroom,6+i];

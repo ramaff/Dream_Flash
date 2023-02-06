@@ -2,9 +2,12 @@
   "resourceType": "GMPath",
   "resourceVersion": "1.0",
   "name": "Medium_Wall_Crawl_A",
-  "kind": 1,
   "closed": true,
-  "precision": 4,
+  "kind": 1,
+  "parent": {
+    "name": "Paths",
+    "path": "folders/Paths.yy",
+  },
   "points": [
     {"speed":100.0,"x":2096.0,"y":1648.0,},
     {"speed":100.0,"x":2048.0,"y":1600.0,},
@@ -19,8 +22,5 @@
     {"speed":100.0,"x":2496.0,"y":2048.0,},
     {"speed":100.0,"x":2448.0,"y":2000.0,},
   ],
-  "parent": {
-    "name": "Paths",
-    "path": "folders/Paths.yy",
-  },
+  "precision": 4,
 }

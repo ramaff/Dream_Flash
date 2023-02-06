@@ -8,7 +8,6 @@ function scr_XC05(truedam){
 	if global.XC[5] >= 1 {
 		with instance_create(x,y,obj_Lasting_Pain) {
 			damage = truedam * ((global.XC[5]) / (1 + global.XC[5]));
-			show_debug_message("damage: " + string(damage));
 			damage = max(1, damage);
 			scr_Boss_Size_Setup(0.1 + (sqrt(damage) / 7));
 		}

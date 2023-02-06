@@ -2,8 +2,8 @@
   "resourceType": "GMScript",
   "resourceVersion": "1.0",
   "name": "scr_Soul_Shot_Expire_Event",
-  "isDnD": false,
   "isCompatibility": false,
+  "isDnD": false,
   "parent": {
     "name": "Soul Shots",
     "path": "folders/Scripts/Weapon Commands/Soul Shots.yy",

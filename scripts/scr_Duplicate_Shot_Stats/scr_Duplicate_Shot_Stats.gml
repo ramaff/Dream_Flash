@@ -300,6 +300,7 @@ function scr_Duplicate_Shot_Stats() {
 	shotangularvelocity = other.shotangularvelocity;
 	
 	shotA07 = other.shotA07;
+	followtarget = other.followtarget;
 	
 	/*
 	if other.shotextrahits = 2 {

@@ -2,8 +2,8 @@
   "resourceType": "GMScript",
   "resourceVersion": "1.0",
   "name": "scr_Soul_Spear_Use",
-  "isDnD": false,
   "isCompatibility": false,
+  "isDnD": false,
   "parent": {
     "name": "Imaginary Weapon Use",
     "path": "folders/Scripts/Weapon And Projectile Commands/Imaginary Weapon Use.yy",

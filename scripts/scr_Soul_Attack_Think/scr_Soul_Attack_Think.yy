@@ -2,8 +2,8 @@
   "resourceType": "GMScript",
   "resourceVersion": "1.0",
   "name": "scr_Soul_Attack_Think",
-  "isDnD": false,
   "isCompatibility": false,
+  "isDnD": false,
   "parent": {
     "name": "Soul Commands",
     "path": "folders/Scripts/Soul Commands.yy",

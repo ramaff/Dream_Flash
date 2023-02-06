@@ -31,9 +31,12 @@ function scr_Stat_Field_Spawn_Check() {
 	    item[i] = Floor_Layout_Control.Flash[global.currentroom,6+i];
 	}
             
-	scr_OA05_Current_Room_Add()
-	if global.OA5rooms[global.currentroom] = 1 {
-		scr_OA05();
+	if global.OA[5] > 0 and array_length(global.OA5rooms[global.currentroom]) = 0 {
+		scr_OA05_Current_Room_Add()
+		scr_OA05()
+		exit;
+	} else if global.OA[5] > 0 and array_length(global.OA5rooms[global.currentroom]) > 0 {
+		//scr_OA05();
 		exit;	
 	}
 
