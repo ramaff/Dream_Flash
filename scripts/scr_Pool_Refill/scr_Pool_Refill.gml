@@ -70,15 +70,15 @@ function scr_Pool_Refill(pool){
 	}
 	if pool = global.OAItemPool {
 		letter = "OA"
-		totalitems = 4;
+		totalitems = 6;
 	}
 	if pool = global.OBItemPool {
 		letter = "OB"
-		totalitems = 4;
+		totalitems = 6;
 	}
 	if pool = global.OCItemPool {
 		letter = "OC"
-		totalitems = 4;
+		totalitems = 6;
 	}
 	if pool = global.PItemPool {
 		letter = "P"
@@ -110,15 +110,15 @@ function scr_Pool_Refill(pool){
 	}
 	if pool = global.XAItemPool {
 		letter = "XA"
-		totalitems = 4;
+		totalitems = 6;
 	}
 	if pool = global.XBItemPool {
 		letter = "XB"
-		totalitems = 4;
+		totalitems = 6;
 	}
 	if pool = global.XCItemPool {
 		letter = "XC"
-		totalitems = 4;
+		totalitems = 6;
 	}
 	
 	if pool == global.simpleWeaponPool || pool == global.complexWeaponPool || pool == global.masterfulWeaponPool {

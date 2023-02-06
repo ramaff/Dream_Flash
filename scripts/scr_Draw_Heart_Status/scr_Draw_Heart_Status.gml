@@ -25,11 +25,11 @@ function scr_Draw_Heart_Status() {
 			scr_Draw_Heart_Health(spr_Survivor_Heart, scale, hpercent, 78, 72, 10);
 	    }
 	    if Soul_Hearts_Control.heart[slot,2] = 3.01 {
-	        draw_sprite_ext(spr_Survivor_Heart,2,x,y,scale,scale,0,c_white,1);
+	        draw_sprite_ext(spr_Survivor_Heart,2,x,y,0.5 * scale,0.5 * scale,0,c_white,1);
 	        //draw_sprite(spr_Survivor_Heart,21,x,y);
 	    }
 	    if Soul_Hearts_Control.heart[slot,2] = 3.02 {
-	        draw_sprite_ext(spr_Survivor_Heart,3,x,y,scale,scale,0,c_white,1);
+	        draw_sprite_ext(spr_Survivor_Heart,3,x,y,0.5 * scale,0.5 * scale,0,c_white,1);
 	        //draw_sprite(spr_Survivor_Heart,22,x,y);
 	    }
 	    if currHeart = 4 {
@@ -103,7 +103,7 @@ function scr_Draw_Heart_Status() {
 	    if currHeart = 14 {
 	        //draw_sprite_ext(spr_Beast_Heart,0,x,y,0.5,0.5,0,c_white,1);
 	        //draw_sprite_part_ext(spr_Beast_Heart,1,0,96 * (1 - (hpercent / 100)),83,96,x-19,y - 24 + 48 * (1 - (hpercent / 100)),0.5,0.5,c_white,1);
-			scr_Draw_Heart_Health(spr_Beast_Heart, scale, hpercent, 83, 96);
+			scr_Draw_Heart_Health(spr_Beast_Heart, scale, hpercent, 83, 96, 0, 2);
 	    }
 	    if currHeart = 15 {
 	        //draw_sprite_ext(spr_Rubber_Heart,0,x,y,0.5,0.5,0,c_white,1);

@@ -193,24 +193,24 @@ function scr_Recollection_Panel_Assign() {
 	    }
 		inum += 4;
 		
-		for(i = inum; i <= inum+3; i++) {
+		for(i = inum; i <= inum+5; i++) {
 	        if buttNum = i {
 	            itemVal = "OA0" + string(i + 1 - inum);
 	        }
 	    }
-		inum += 4;
-		for(i = inum; i <= inum+3; i++) {
+		inum += 6;
+		for(i = inum; i <= inum+5; i++) {
 	        if buttNum = i {
 	            itemVal = "OB0" + string(i + 1 - inum);
 	        }
 	    }
-		inum += 4;
-		for(i = inum; i <= inum+3; i++) {
+		inum += 6;
+		for(i = inum; i <= inum+5; i++) {
 	        if buttNum = i {
 	            itemVal = "OC0" + string(i + 1 - inum);
 	        }
 	    }
-		inum += 4;
+		inum += 6;
 		
 		for(i = inum; i <= inum+7; i++) {
 	        if buttNum = i {
@@ -260,24 +260,24 @@ function scr_Recollection_Panel_Assign() {
 	    }
 		inum += 5;
 		
-		for(i = inum; i <= inum+3; i++) {
+		for(i = inum; i <= inum+5; i++) {
 	        if buttNum = i {
 	            itemVal = "XA0" + string(i + 1 - inum);
 	        }
 	    }
-		inum += 4;
-		for(i = inum; i <= inum+3; i++) {
+		inum += 6;
+		for(i = inum; i <= inum+5; i++) {
 	        if buttNum = i {
 	            itemVal = "XB0" + string(i + 1 - inum);
 	        }
 	    }
-		inum += 4;
-		for(i = inum; i <= inum+3; i++) {
+		inum += 6;
+		for(i = inum; i <= inum+5; i++) {
 	        if buttNum = i {
 	            itemVal = "XC0" + string(i + 1 - inum);
 	        }
 	    }
-		inum += 4;
+		inum += 6;
 	}
 
 	if global.recollectCategory = "Bosses" {

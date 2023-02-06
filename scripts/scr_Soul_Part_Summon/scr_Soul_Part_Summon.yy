@@ -2,8 +2,8 @@
   "resourceType": "GMScript",
   "resourceVersion": "1.0",
   "name": "scr_Soul_Part_Summon",
-  "isDnD": false,
   "isCompatibility": false,
+  "isDnD": false,
   "parent": {
     "name": "Partlcles",
     "path": "folders/Scripts/Soul Commands/Partlcles.yy",

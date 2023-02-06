@@ -1,6 +1,17 @@
 // Script assets have changed for v2.3.0 see
 // https://help.yoyogames.com/hc/en-us/articles/360005277377 for more information
 function scr_Setup_Weapon_Stats(){
+	
+	if variable_struct_exists(current_weapon_stats, "Shot_Extra_Stats") {
+		Shot_Extra_Stats = current_weapon_stats.Shot_Extra_Stats
+	}
+	if variable_struct_exists(current_weapon_stats, "Shot_Burst_Stats") {
+		Shot_Burst_Stats = current_weapon_stats.Shot_Burst_Stats
+	}
+	if variable_struct_exists(current_weapon_stats, "Shot_Air_Burst_Stats") {
+		Shot_Air_Burst_Stats = current_weapon_stats.Shot_Air_Burst_Stats
+	}
+	
 	if variable_struct_exists(current_weapon_stats, "Shot_Count") {
 		Shot_Count = current_weapon_stats.Shot_Count
 	}

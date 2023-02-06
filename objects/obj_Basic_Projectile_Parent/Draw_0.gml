@@ -39,3 +39,8 @@ if ((shotlifespan - shottimer) <= (tdist)) and (shotlifespan > (tdist)) and (sho
 } else {
     draw_sprite_ext(sprite_index,image_index,x,y,image_xscale * shotSizeRelation,image_yscale * shotSizeRelation,image_angle,c_white,image_alpha);
 }
+
+if shotmiracle > 0 {
+	draw_sprite_ext(spr_Heart_Halo,image_index,x,y - (24 * image_yscale),image_xscale * shotSizeRelation,image_yscale * shotSizeRelation,image_angle,c_white,image_alpha);	
+	draw_sprite_ext(spr_Miracle_Aura,0,x,y,0.8,0.8,0,c_white,1);
+}

@@ -1,6 +1,6 @@
 // Script assets have changed for v2.3.0 see
 // https://help.yoyogames.com/hc/en-us/articles/360005277377 for more information
-function scr_Soul_Shot_Boss_Hit(){
+function scr_Soul_Shot_Boss_Hit() {
 
 	var hit_again = variable_struct_exists(other.projectile_hits, shot_boss_id)
 	if !hit_again and shotdamage {
@@ -107,11 +107,39 @@ function scr_Soul_Shot_Boss_Hit(){
 	        //ds_list_add(other.projectile_hits, shot_boss_id);
 			variable_struct_set(other.projectile_hits, shot_boss_id, shot_boss_id)
 			
-	        if shotbursttype >= 1 {
+			if shotburststats != false {
+				var burstIndex = array_length(shotburststats) - 1;
+				if instance_exists(obj_Boss_Parent) and burstIndex >= 0 {
+					dir = -shotburststats[burstIndex].Spread / 2;
+					shotlifespan = shotlifespan * 0.6;
+					repeat(shotburststats[burstIndex].Amount) {
+					    with instance_create(x,y,obj_Lesser_Soul_Shot) {
+					        scr_Duplicate_Shot_Stats();
+						
+							var vshotburststats = other.shotburststats[burstIndex]
+					
+							scr_Shot_Burst_Stats(vshotburststats);
+					
+							if burstIndex > 0 {
+								shotburststats = [];
+								for(var i = 0; i <= burstIndex-1; i++) {
+									array_insert(shotburststats,i,other.shotburststats[i])
+								}
+							} else {
+								shotburststats = false;	
+							}
+							//array_delete(shotburststats,burstIndex,1);
+					    }
+					    dir += shotburststats[burstIndex].Spread;
+					}
+					instance_destroy();
+				}	
+			} else if shotbursttype >= 1 {
 	            dir = 90
 	            repeat(shotburstamount) {
+					shotlifespan = shotlifespan * 0.6;
 	                with instance_create(x,y,obj_Lesser_Soul_Shot) {
-						shotlifespan = other.shotlifespan / 2;
+						//shotlifespan = other.shotlifespan / 2;
 	                    scr_Duplicate_Shot_Stats();
 	                    //shotlifespan = shotlifespan / 2;
 	                    //alarm[0] = shotlifespan;

@@ -14,6 +14,10 @@ function scr_Extra_Shot_Stats() {
 	shothitagain = other.Weapon_Split_Hit_Again;
 	shotmelee = other.Weapon_Melee;
 	
+	shotburststats = other.Shot_Burst_Stats;
+	shotairburststats = other.Shot_Air_Burst_Stats;
+	shotextrastats = other.Shot_Extra_Stats;
+	
 
 	if other.Shot_Sprite = spr_Marble_Shot {
 	    shotframe = 1 + irandom(8);
@@ -261,18 +265,23 @@ function scr_Extra_Shot_Stats() {
 		scr_D10_Shot_Mod();
 		
 		scr_OA04();
+		scr_OA06();
 		
 		if global.XA[2] > 0 {
 			scr_XA02_Shot_Mod();	
 		}
 		scr_XA03_Shot_Mod();
 		scr_XA04_Shot_Mod();
+		
 		scr_XB02();
 		
 		if global.XC[2] > 0 {
 			scr_XC02_Shot_Mod();
 		}
+		
 	}
+	
+	scr_XC06_Setup();
 	
 	shotsizemax = shotsize;
 	

@@ -433,6 +433,16 @@ function scr_Load_Run() {
 		global.temperCharge = ini_read_real("Run","temperCharge",0);
 		global.temperActive = ini_read_string("Run","temperActive","Base");
 		global.downwardSpiralBoost = ini_read_real("Run","downwardSpiralBoost",0);
+		
+		//for(i = 0; i <= 39; i++) {
+	  
+		//}
+		//show_debug_message(global.OA5rooms)
+		//show_debug_message(json_parse(global.OA5rooms))
+		global.OA5rooms = ini_read_string("Run", "OA5rooms",0);
+		global.OA5rooms = json_parse(global.OA5rooms);
+		
+		//show_debug_message("loaded OA5rooms: " + string(global.OA5rooms))
 	
         
 	    ini_close();

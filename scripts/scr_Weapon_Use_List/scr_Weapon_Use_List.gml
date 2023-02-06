@@ -140,7 +140,7 @@ function scr_Weapon_Use_List() {
 		
 		if spawnProjectile {
 			if !minion {
-				scr_Shot_Creation();
+				scr_Shot_Creation(current_weapon_stats);
 			} else {
 				scr_Soul_Spawn();	
 			}
@@ -160,7 +160,7 @@ function scr_Weapon_Use_List() {
 		
 				if spawnProjectile {
 					if !minion {
-						scr_Shot_Creation();
+						scr_Shot_Creation(current_weapon_stats);
 					} else {
 						scr_Soul_Spawn();	
 					}
@@ -169,6 +169,8 @@ function scr_Weapon_Use_List() {
 		}
 		
 		scr_OC03();
+		
+		scr_XC06_Cost_Adjustment();
 		
 		if global.V06Overwhelm > (8 - global.V[6]) {
 			weaponCost += weaponCost;

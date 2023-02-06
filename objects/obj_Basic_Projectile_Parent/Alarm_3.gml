@@ -3,3 +3,4 @@
 alarm[3] = 15;
 
 scr_OA04_Proc();
+scr_OA06_Proc();

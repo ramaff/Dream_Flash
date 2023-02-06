@@ -1,4 +1,5 @@
 function scr_Item_Spawn() {
+	
 	fieldType = argument[0];
 	currItem = 1;
 	totalItems = 0;
@@ -79,6 +80,8 @@ function scr_Item_Spawn() {
 		fieldSprite = spr_Mind_Item_Field; 
 		tFieldColor = make_color_rgb(214,0,255);	
 	}
+	
+	//show_debug_message("somehow scr_Item_Spawn")
 
 	with instance_create(room_width/2,room_height/2,obj_Item_Field) {
 	    sprite_index = fieldSprite;

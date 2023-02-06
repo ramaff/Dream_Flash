@@ -230,6 +230,14 @@ function scr_Save_Run() {
 	ini_write_real("Run", "temperCharge", global.temperCharge);
 	ini_write_real("Run", "temperActive", global.temperActive);
 	ini_write_real("Run", "downwardSpiralBoost", global.downwardSpiralBoost);
+	//for(i = 0; i <= 39; i++) {
+	//show_debug_message("saving OA5rooms: " + string(global.OA5rooms))
+	//global.OA5rooms = json_stringify(global.OA5rooms)
+	//global.OA5rooms = string_replace_all(global.OA5rooms, "\"", "\'")
+	
+	//show_debug_message("saving OA5rooms: " + string(string_replace_all(json_stringify(global.OA5rooms), "\"", "\'")))
+	ini_write_string("Run", "OA5rooms", string_replace_all(json_stringify(global.OA5rooms), "\"", "'"));
+	//}
 	
 	
 	

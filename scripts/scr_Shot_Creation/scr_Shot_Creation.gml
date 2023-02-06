@@ -8,6 +8,10 @@ function scr_Shot_Creation() {
 	scr_D06();
 	scr_D11();
 	scr_V09_Add();
+	
+	scr_OB06();
+	scr_OC06();
+	scr_XA06();
 	//scr_OC03();
 	
 	
@@ -46,6 +50,8 @@ function scr_Shot_Creation() {
 	}
 	*/
 	scr_D10();
+	
+	scr_XB05_Shot_Mod();
 
 	if Shot_Count > 1 {
 	    if Shot_Spread < 1 {
@@ -172,6 +178,7 @@ function scr_Shot_Creation() {
 		
 		scr_E14_Shot_Mod();
 		
+		scr_XB05_Shot_Stats();
 		
 		repeat(mechFac) {
 			

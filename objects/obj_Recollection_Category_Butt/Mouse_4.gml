@@ -19,7 +19,7 @@ if cat = 1 {
 }
 if cat = 2 {
     global.recollectCategory = "Items";
-    numOfButts = 261;
+    numOfButts = 273;
 }
 if cat = 3 {
     global.recollectCategory = "Bosses";

@@ -30,6 +30,9 @@ function scr_Soul_Damage_Calculation() {
 		if global.T[1] > 0 {
 			scr_T01_Decay(truedam)
 		}
+		scr_XC05(truedam);
+		
+		truedam = scr_OB05(truedam);
 		
 		shealth -= truedam;
 		
