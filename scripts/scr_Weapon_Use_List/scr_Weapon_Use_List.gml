@@ -172,6 +172,8 @@ function scr_Weapon_Use_List() {
 		
 		scr_XC06_Cost_Adjustment();
 		
+		scr_XA03_Cost_Adjustment();
+		
 		if global.V06Overwhelm > (8 - global.V[6]) {
 			weaponCost += weaponCost;
 		}
