@@ -921,7 +921,6 @@ function scr_Hard_Coded_Item_Stats(itemVal, items_to_add = 1, reload = false) {
 		global.soulshotspeed -= 1.5;
 	    obj_Soul_Parent.sshotspeed -= 1.5;
 	}
-	show_debug_message(itemVal)
 	if itemVal = "OC01" {
 	    //global.OC[1]++;
 		global.souldelayconservationfactor += 0.15;
