@@ -26,6 +26,7 @@ with(other) {
 		ddir += 45;
 	}
 	//var poww = other.shotshieldpower;
+	//show_debug_message("bulletpower: " + string(bulletpower))
 	if bulletpower <= other.shotpower {
 		var xxx = x;
 		var yyy = y;

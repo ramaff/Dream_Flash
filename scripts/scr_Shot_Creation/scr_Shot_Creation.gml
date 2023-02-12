@@ -182,6 +182,9 @@ function scr_Shot_Creation() {
 		
 		scr_XB05_Shot_Stats();
 		
+		//show_debug_message("x: " + string(shxx) + "y: " + string(shyy))
+		//show_debug_message("x: " + string(obj_Soul_Parent.x) + "y: " + string(obj_Soul_Parent.y))
+		
 		repeat(mechFac) {
 			
 		    with instance_create(shxx,shyy,Shot_Type) {
