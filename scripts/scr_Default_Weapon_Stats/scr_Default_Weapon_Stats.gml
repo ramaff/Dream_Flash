@@ -3,6 +3,14 @@ function scr_Default_Weapon_Stats() {
 	Shot_Accuracy = 15;
 	Shot_Count = 1;
 	//Shot_Default_Count = 1;
+	
+	Shot_Stats = {
+		Shot_Lobbing: false,
+		Shot_Lobbing_Tilt: 0,
+		Shot_Height: 10,
+		Shot_Fall_Speed: 0,
+		Shot_Gravity: 0,
+	}
 
 	Shot_Beam = 0;
 	Shot_Beam_Count = 40;

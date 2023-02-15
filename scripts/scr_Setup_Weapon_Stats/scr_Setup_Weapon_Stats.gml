@@ -2,6 +2,30 @@
 // https://help.yoyogames.com/hc/en-us/articles/360005277377 for more information
 function scr_Setup_Weapon_Stats(){
 	
+	// Newer System ? idk
+	
+	//Shot_Stats = current_weapon_stats;
+	if variable_struct_exists(current_weapon_stats, "Shot_Lobbing") {
+		Shot_Stats.Shot_Lobbing = current_weapon_stats.Shot_Lobbing;
+	}
+	if variable_struct_exists(current_weapon_stats, "Shot_Lobbing_Tilt") {
+		Shot_Stats.Shot_Lobbing_Tilt = current_weapon_stats.Shot_Lobbing_Tilt;
+	}
+	if variable_struct_exists(current_weapon_stats, "Shot_Lobbing_Wobble") {
+		Shot_Stats.Shot_Lobbing_Wobble = current_weapon_stats.Shot_Lobbing_Wobble;
+	}
+	if variable_struct_exists(current_weapon_stats, "Shot_Height") {
+		Shot_Stats.Shot_Height = current_weapon_stats.Shot_Height;
+	}
+	if variable_struct_exists(current_weapon_stats, "Shot_Fall_Speed") {
+		Shot_Stats.Shot_Fall_Speed = current_weapon_stats.Shot_Fall_Speed;
+	}
+	if variable_struct_exists(current_weapon_stats, "Shot_Gravity") {
+		Shot_Stats.Shot_Gravity = current_weapon_stats.Shot_Gravity;
+	}
+	
+	// Older System
+	
 	if variable_struct_exists(current_weapon_stats, "Shot_Extra_Stats") {
 		Shot_Extra_Stats = current_weapon_stats.Shot_Extra_Stats
 	}

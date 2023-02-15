@@ -10,6 +10,8 @@ function scr_Duplicate_Shot_Stats() {
 		bullet_hits = {};
 	}
 	
+	shot_stats = json_parse(json_stringify(other.shot_stats));
+	
 	//ptype = other.ptype;
 
 	target = other.target;
