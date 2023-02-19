@@ -23,6 +23,17 @@ function scr_Setup_Weapon_Stats(){
 	if variable_struct_exists(current_weapon_stats, "Shot_Gravity") {
 		Shot_Stats.Shot_Gravity = current_weapon_stats.Shot_Gravity;
 	}
+	if variable_struct_exists(current_weapon_stats, "Shot_Extra_Stats") {
+		/*if current_weapon_stats.Shot_Extra_Stats != false {
+			show_debug_message("current_weapon_stats.Shot_Extra_Stats: " + string(current_weapon_stats.Shot_Extra_Stats))
+			Shot_Stats.Shot_Extra_Stats = json_parse(json_stringify(global.DEFAULT_SHOT_STATS));
+			var _PropertyNames = variable_struct_get_names(current_weapon_stats.Shot_Extra_Stats);
+	        for (var i = 0; i < array_length(_PropertyNames); i++) {
+	            variable_struct_set(Shot_Stats.Shot_Extra_Stats, _PropertyNames[i], variable_struct_get(current_weapon_stats.Shot_Extra_Stats, _PropertyNames[i]));
+	        }
+		} */
+		Shot_Stats.Shot_Extra_Stats = current_weapon_stats.Shot_Extra_Stats;
+	}
 	
 	// Older System
 	

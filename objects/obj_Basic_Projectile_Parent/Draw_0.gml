@@ -11,12 +11,21 @@ if shotorbitaltype = 1 {
 var height = shot_stats.Shot_Height;
 var fall_speed = shot_stats.Shot_Fall_Speed;
 
+var wobble = shot_stats.Shot_Lobbing_Wobble
+wobble = scr_Wave(-wobble, wobble, 2, 0);
+
 if shot_stats.Shot_Lobbing = true {
+	
 	var shadow_size = shotsize * 1.5 * (1.2 - (height / 200));
-	shot_stats.Shot_Height -= fall_speed
+	shot_stats.Shot_Height -= fall_speed + wobble
 	shot_stats.Shot_Fall_Speed += shot_stats.Shot_Gravity
 	
 	y += fall_speed;
+	
+	/*if scr_Chance(15) {
+		show_debug_message("shadow_size: " + string(shadow_size) + ", " + sprite_get_name(sprite_index) + ", height: " + string(height) + ", shotsize" + string(shotsize));
+		show_debug_message("xsize: " + string(image_xscale))
+	} */
 	
 	if height - fall_speed < 0 {
 		shot_stats.Shot_Fall_Speed = -1 * fall_speed;	
@@ -53,6 +62,7 @@ if sSize < 0 {
 var angle = image_angle;
 if shot_stats.Shot_Lobbing_Tilt != 0 {
 	angle -= fall_speed * shot_stats.Shot_Lobbing_Tilt;
+	angle -= wobble * shot_stats.Shot_Lobbing_Tilt;
 }
 
 if ((shotlifespan - shottimer) <= (tdist)) and (shotlifespan > (tdist)) and (shotformshow = 1) {
