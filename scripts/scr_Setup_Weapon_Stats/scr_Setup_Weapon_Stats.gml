@@ -520,6 +520,12 @@ function scr_Setup_Weapon_Stats(){
 	if variable_struct_exists(current_weapon_stats, "Weapon_Y_Maintain") {
 		Weapon_Y_Maintain = current_weapon_stats.Weapon_Y_Maintain
 	}
+	if variable_struct_exists(current_weapon_stats, "Shot_Mouse") {
+		Shot_Mouse = current_weapon_stats.Shot_Mouse
+	}
+	if variable_struct_exists(current_weapon_stats, "Shot_Direction") {
+		Shot_Direction = current_weapon_stats.Shot_Direction
+	}
 		
 	var i = 0;
 	if variable_struct_exists(current_weapon_stats, "Shot_Extra_Hits") {

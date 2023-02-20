@@ -1,12 +1,11 @@
 function scr_Default_Attack_Settings() {
 
-
 		bullet_type = obj_Basic_Red_Bullet;
-	    bullet_sprite = spr_Lob_Shot;
+	    bullet_sprite = spr_Glowy_Enemy_Shot;
 	    bullet_speed = bossbulletspeed * 1.5;
-	    bullet_power = bosspower * 2;
-	    bullet_direction = (-5 + random(10)) / bossaccuracy;
-	    bullet_lifespan = 85;
+	    bullet_power = bosspower;
+	    bullet_direction = (-10 + random(20)) / bossaccuracy;
+	    bullet_lifespan = 180;
 	    bullet_size = 1;
 	    bullet_count = 1;
 	    bullet_spread = 0;

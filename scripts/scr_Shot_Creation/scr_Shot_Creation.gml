@@ -64,14 +64,16 @@ function scr_Shot_Creation() {
 	Shot_Current_Count = 0;
 
 
-	if soulshotmouse = 0 {
+	/* if soulshotmouse = 0 {
 		Shot_Mouse = 0;
 		Shot_Direction = soulshotdirection;
-	}
+	} */
 	
 	if Shot_Repetition[bi] >= 1 {
 		Shot_Direction = Shot_Repetition_Direction[bi];
 	}
+	/*
+	var actual_shot_direction = 0;
 	
 	if Shot_Mouse {
 		actual_shot_direction = point_direction(x,y,mouse_x,mouse_y);
@@ -85,6 +87,7 @@ function scr_Shot_Creation() {
 			actual_shot_direction = point_direction(x,y,instance_nearest(x,y,obj_Boss_Parent).x,instance_nearest(x,y,obj_Boss_Parent).y);
 		}
 	}
+	*/
 	
 	if Shot_Repetition[bi] == Shot_Repetition_Max[bi] - 1 {
 		Shot_Repetition_Direction[bi] = actual_shot_direction
@@ -105,10 +108,11 @@ function scr_Shot_Creation() {
 		} else if soulshotmouse = 0 {
 			actual_shot_direction = soulshotdirection;
 		}
+
 		if Shot_Boss_Aim {
 			if instance_exists(obj_Boss_Parent) {
 				actual_shot_direction = point_direction(x,y,instance_nearest(x,y,obj_Boss_Parent).x,instance_nearest(x,y,obj_Boss_Parent).y);
-			}
+		 	}
 		}
 		var shotdirectionaddition = dir * ((40 + random(global.soulparanoia)) / 40) / saccuracy;
 		actual_shot_direction += shotdirectionaddition + Shot_Angle_Relative;
