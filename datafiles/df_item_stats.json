@@ -816,7 +816,7 @@
         "recollectionDescription": ""
     },
     "I22": {
-        "recollectionString": "Frustrated",
+        "recollectionString": "Impatient",
         "recollectionSprite": "spr_Frustrated_Art",
         "recollectionExtraStats": "+6 Dexterity +4 Loathing",
         "recollectionDescription": ""
@@ -1334,8 +1334,8 @@
     "OC01": {
         "recollectionString": "Assured",
         "recollectionSprite": "spr_Assured_Art",
-        "recollectionExtraStats": "+20% Firerate +1 Defense +10% Boss Attack Speed",
-        "recollectionDescription": "Feeling assured lets you think faster and take slightly less damage."
+        "recollectionExtraStats": "+15% Firerate +1 Defense +10% Boss Attack Speed",
+        "recollectionDescription": "Feeling assured lets you think faster and take slightly less damage. Also increases Shot Speed and decreases Shot Lifespan."
     },
     "OC02": {
         "recollectionString": "Sense Of Security",
@@ -1652,7 +1652,7 @@
         "recollectionString": "Loathsome",
         "recollectionSprite": "spr_Loathsome_Art",
         "recollectionExtraStats": "+10% Soul Damage +20% Boss Damage",
-        "recollectionDescription": "An overall increase in loathing results in 10% more damage being dealt to bosses, but 20% more damage being dealt to the soul"
+        "recollectionDescription": "An overall increase in loathing results in 10% more damage being dealt to bosses, but 20% more damage being dealt to the soul. Also lowers shot accuracy."
     },
     "XA02": {
         "recollectionString": "Hatred",
@@ -1663,7 +1663,7 @@
     "XA03": {
         "recollectionString": "Temper",
         "recollectionSprite": "spr_Temper_Art",
-        "recollectionExtraStats": "+Temper Charge",
+        "recollectionExtraStats": "+Fiery Rage Charge",
         "recollectionDescription": "Getting hit increases your temper. If a temper tantrum is activated you will rapidly lose health for the rest of the fight, while also dealing extra damage to enemies."
     },
     "XA04": {
@@ -1676,7 +1676,7 @@
         "recollectionString": "Rub It In",
         "recollectionSprite": "spr_Rub_It_In_Art",
         "recollectionExtraStats": "+Extra Damage Speech",
-        "recollectionDescription": "Hitting bosses creates loathing speech bubbles which deal extra damage to bosses when collecting. Bosses also shoot much faster due to being provoked."
+        "recollectionDescription": "Hitting bosses creates loathing speech bubbles which deal extra damage to bosses when collecting. Bosses also shoot out a bunch of bullets due to being provoked."
     },
     "XA06": {
         "recollectionString": "Petty",
