@@ -2,9 +2,9 @@
 if !instance_exists(followtarget) {
 	var followtar = obj_Soul_Parent.id
 	with (obj_Manifested_Fig) {
+		followtarget = followtar
 		followtar = id	
 	}
-	followtarget = followtar
 }
 
 scr_Invincibility_Frames();
