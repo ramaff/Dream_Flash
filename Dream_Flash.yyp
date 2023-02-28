@@ -4246,6 +4246,7 @@
     {"id":{"name":"obj_Warding_Figment","path":"objects/obj_Warding_Figment/obj_Warding_Figment.yy",},"order":15,},
     {"id":{"name":"obj_Positive_Thoughts","path":"objects/obj_Positive_Thoughts/obj_Positive_Thoughts.yy",},"order":16,},
     {"id":{"name":"scr_Only_Soul_Push_Pull","path":"scripts/scr_Only_Soul_Push_Pull/scr_Only_Soul_Push_Pull.yy",},"order":18,},
+    {"id":{"name":"shd_gaussian_blur","path":"shaders/shd_gaussian_blur/shd_gaussian_blur.yy",},"order":12,},
     {"id":{"name":"obj_Positive_Essence","path":"objects/obj_Positive_Essence/obj_Positive_Essence.yy",},"order":17,},
     {"id":{"name":"obj_Glum_Chum","path":"objects/obj_Glum_Chum/obj_Glum_Chum.yy",},"order":18,},
     {"id":{"name":"spr_Scrub_Soul_Hard_Think","path":"sprites/spr_Scrub_Soul_Hard_Think/spr_Scrub_Soul_Hard_Think.yy",},"order":3,},

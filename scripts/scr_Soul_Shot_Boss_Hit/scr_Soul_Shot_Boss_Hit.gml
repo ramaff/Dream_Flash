@@ -8,26 +8,34 @@ function scr_Soul_Shot_Boss_Hit() {
 	    if shotpierce > 0 || shotcontinue = 1 {
 			
 			if shotchain > 0 {
+				
+				show_debug_message("shot chain: " + string(shotchain))
+				show_debug_message("shot chain range: " + string(shotchainrange))
+				
 				var max_streaks = 30;
 				var xst = x;
 				var yst = y;
 				var streak_length = 64;
 				var bosses_struck = {};
-				variable_struct_set(bosses_struck, shot_boss_id, shot_boss_id)
+				variable_struct_set(bosses_struck, other.id, other.id)
 				streak_target = other.id;
 				var chain_damage = shotchainpower;
+				show_debug_message(shot_stats)
+				var streak_color = shot_stats.Shot_Chain_Color;
+				streak_color = make_color_rgb(streak_color[0], streak_color[1], streak_color[2])
+				show_debug_message(string(streak_color))
 				
 				while instance_exists(streak_target) and shotchain > 0 {
 					var streak_target = noone
 					var streak_dis = 99999
 			        with obj_Boss_Parent {
 			            var cur_dis = distance_to_object(other);
-			            var hit_again = variable_struct_exists(bosses_struck, other.shot_boss_id)
+			            var hit_again = variable_struct_exists(bosses_struck, id)
 						if !hit_again {
-				            if streak_target == noone || cur_dis < streak_dis {
-								if point_distance(x,y,other.x,other.y) < other.shotchainrange {
+				            if cur_dis < streak_dis {
+								if point_distance(x,y,xst,yst) < other.shotchainrange {
 									streak_target = id;
-									streak_dis = cur_dis
+									streak_dis = cur_dis;
 								}
 							}
 						}
@@ -39,6 +47,7 @@ function scr_Soul_Shot_Boss_Hit() {
 						while boss_dist > 70 and max_streaks > 0 {
 							with instance_create(xst, yst, obj_Lightning_Streak) {
 								image_angle = aim_angle;
+								image_blend = streak_color;
 							}
 							xst += lengthdir_x(streak_length, aim_angle)
 							yst += lengthdir_y(streak_length, aim_angle)
@@ -49,20 +58,24 @@ function scr_Soul_Shot_Boss_Hit() {
 						var boss_aim_angle = point_direction(xst, yst, streak_target.x, streak_target.y);
 						with instance_create(xst, yst, obj_Lightning_Streak) {
 							image_angle = boss_aim_angle;
+							image_blend = streak_color;
 						}
 						with streak_target {
 							bosshealth -= chain_damage;
             
 							scr_Damage_Indicator(0, chain_damage, 1);
 						}
-						variable_struct_set(bosses_struck, streak_target.shot_boss_id, streak_target.shot_boss_id)
+						variable_struct_set(bosses_struck, streak_target, streak_target)
 						shotchain--;
+						xst = streak_target.x;
+						yst = streak_target.y;
 					} else {
-						max_streaks = 2 + irandom(1);
+						max_streaks = 1 + irandom(1);
 						aim_angle = random(360);
 						while max_streaks > 0 {
 							with instance_create(xst, yst, obj_Lightning_Streak) {
 								image_angle = aim_angle;
+								image_blend = streak_color;
 							}
 							xst += lengthdir_x(streak_length, aim_angle)
 							yst += lengthdir_y(streak_length, aim_angle)
@@ -240,20 +253,20 @@ function scr_Soul_Shot_Boss_Hit() {
 				direction = random(360);	
 			}
         
-	        if shotmelee = 1 { 
-				if shotcontinue = 0 {
-		            shotpierce--;
-		            if shotpierce <= 0 {
-		                instance_destroy();
-		            }
+	       // if shotmelee = 1 { 
+			if shotcontinue = 0 {
+		        shotpierce--;
+		        if shotpierce <= 0 {
+		            instance_destroy();
+		        }
+			} else {
+				if shotpower >= (other.bosshealth + shotpower) {
+				    shotpower -= (other.bosshealth + shotpower);
 				} else {
-					if shotpower >= (other.bosshealth + shotpower) {
-				        shotpower -= (other.bosshealth + shotpower);
-				    } else {
-				        instance_destroy();
-				    }
+				    instance_destroy();
 				}
-	        } 
+			}
+	      //  } 
 			
 			/*
 			if shotchain <= 0 || shotmelee = 1 { 

@@ -3834,6 +3834,7 @@
     {"name":"obj_Warding_Figment","order":15,"path":"objects/obj_Warding_Figment/obj_Warding_Figment.yy",},
     {"name":"obj_Positive_Thoughts","order":16,"path":"objects/obj_Positive_Thoughts/obj_Positive_Thoughts.yy",},
     {"name":"scr_Only_Soul_Push_Pull","order":18,"path":"scripts/scr_Only_Soul_Push_Pull/scr_Only_Soul_Push_Pull.yy",},
+    {"name":"shd_gaussian_blur","order":12,"path":"shaders/shd_gaussian_blur/shd_gaussian_blur.yy",},
     {"name":"obj_Positive_Essence","order":17,"path":"objects/obj_Positive_Essence/obj_Positive_Essence.yy",},
     {"name":"obj_Glum_Chum","order":18,"path":"objects/obj_Glum_Chum/obj_Glum_Chum.yy",},
     {"name":"spr_Scrub_Soul_Hard_Think","order":3,"path":"sprites/spr_Scrub_Soul_Hard_Think/spr_Scrub_Soul_Hard_Think.yy",},

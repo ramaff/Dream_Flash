@@ -27,7 +27,9 @@ function scr_Setup_Default_Shot_Stats(){
 		Shot_Fade: 0,
 		Shot_Shrink: 0,
 		Shot_Boss_Aim: 0,
-		Shot_Face_Direction: false
+		Shot_Face_Direction: false,
+		Shot_Zig_Zag: false,
+		Shot_Chain_Color: [255,255,255]
 	}
 
 }
