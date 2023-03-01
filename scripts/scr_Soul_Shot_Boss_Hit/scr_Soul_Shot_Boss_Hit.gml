@@ -9,81 +9,18 @@ function scr_Soul_Shot_Boss_Hit() {
 			
 			if shotchain > 0 {
 				
-				show_debug_message("shot chain: " + string(shotchain))
-				show_debug_message("shot chain range: " + string(shotchainrange))
-				
 				var max_streaks = 30;
 				var xst = x;
 				var yst = y;
 				var streak_length = 64;
-				var bosses_struck = {};
-				variable_struct_set(bosses_struck, other.id, other.id)
-				streak_target = other.id;
+				var streak_target = other.id;
 				var chain_damage = shotchainpower;
-				show_debug_message(shot_stats)
 				var streak_color = shot_stats.Shot_Chain_Color;
 				streak_color = make_color_rgb(streak_color[0], streak_color[1], streak_color[2])
-				show_debug_message(string(streak_color))
+				var chains = shotchain;
+	
+				scr_Soul_Shot_Chain_Hit(max_streaks, streak_target, chains, xst, yst, streak_length, chain_damage, streak_color)
 				
-				while instance_exists(streak_target) and shotchain > 0 {
-					var streak_target = noone
-					var streak_dis = 99999
-			        with obj_Boss_Parent {
-			            var cur_dis = distance_to_object(other);
-			            var hit_again = variable_struct_exists(bosses_struck, id)
-						if !hit_again {
-				            if cur_dis < streak_dis {
-								if point_distance(x,y,xst,yst) < other.shotchainrange {
-									streak_target = id;
-									streak_dis = cur_dis;
-								}
-							}
-						}
-			        }
-					if instance_exists(streak_target) {
-						//var boss_target = instance_nearest(x,y,obj_Boss_Parent)
-						var aim_angle = point_direction(xst, yst, streak_target.x, streak_target.y);
-						var boss_dist = point_distance(xst, yst, streak_target.x, streak_target.y);
-						while boss_dist > 70 and max_streaks > 0 {
-							with instance_create(xst, yst, obj_Lightning_Streak) {
-								image_angle = aim_angle;
-								image_blend = streak_color;
-							}
-							xst += lengthdir_x(streak_length, aim_angle)
-							yst += lengthdir_y(streak_length, aim_angle)
-							aim_angle = point_direction(xst, yst, streak_target.x, streak_target.y) - 90 + random(180);
-							boss_dist = point_distance(xst, yst, streak_target.x, streak_target.y);
-							max_streaks--;
-						}
-						var boss_aim_angle = point_direction(xst, yst, streak_target.x, streak_target.y);
-						with instance_create(xst, yst, obj_Lightning_Streak) {
-							image_angle = boss_aim_angle;
-							image_blend = streak_color;
-						}
-						with streak_target {
-							bosshealth -= chain_damage;
-            
-							scr_Damage_Indicator(0, chain_damage, 1);
-						}
-						variable_struct_set(bosses_struck, streak_target, streak_target)
-						shotchain--;
-						xst = streak_target.x;
-						yst = streak_target.y;
-					} else {
-						max_streaks = 1 + irandom(1);
-						aim_angle = random(360);
-						while max_streaks > 0 {
-							with instance_create(xst, yst, obj_Lightning_Streak) {
-								image_angle = aim_angle;
-								image_blend = streak_color;
-							}
-							xst += lengthdir_x(streak_length, aim_angle)
-							yst += lengthdir_y(streak_length, aim_angle)
-							aim_angle = aim_angle - 90 + random(180);
-							max_streaks--;
-						}
-					}
-				}
 			}
 		
 			if shotpierce = 1 and shotimpacttype = 2 {

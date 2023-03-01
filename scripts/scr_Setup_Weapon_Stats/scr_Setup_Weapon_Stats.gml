@@ -26,6 +26,9 @@ function scr_Setup_Weapon_Stats(){
 	if variable_struct_exists(current_weapon_stats, "Shot_Chain_Color") {
 		Shot_Stats.Shot_Chain_Color = current_weapon_stats.Shot_Chain_Color;
 	}
+	if variable_struct_exists(current_weapon_stats, "Shot_Zig_Zag") {
+		Shot_Stats.Shot_Zig_Zag = current_weapon_stats.Shot_Zig_Zag;
+	}
 	if variable_struct_exists(current_weapon_stats, "Shot_Extra_Stats") {
 		/*if current_weapon_stats.Shot_Extra_Stats != false {
 			show_debug_message("current_weapon_stats.Shot_Extra_Stats: " + string(current_weapon_stats.Shot_Extra_Stats))

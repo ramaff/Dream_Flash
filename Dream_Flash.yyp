@@ -2378,6 +2378,7 @@
     {"id":{"name":"spr_Sore_Eye","path":"sprites/spr_Sore_Eye/spr_Sore_Eye.yy",},"order":20,},
     {"id":{"name":"scr_Class_Stat_Essence_Regen_Multiplier","path":"scripts/scr_Class_Stat_Essence_Regen_Multiplier/scr_Class_Stat_Essence_Regen_Multiplier.yy",},"order":2,},
     {"id":{"name":"spr_Warding_Figment","path":"sprites/spr_Warding_Figment/spr_Warding_Figment.yy",},"order":21,},
+    {"id":{"name":"scr_Soul_Shot_Chain_Hit","path":"scripts/scr_Soul_Shot_Chain_Hit/scr_Soul_Shot_Chain_Hit.yy",},"order":16,},
     {"id":{"name":"spr_Positive_Thoughts","path":"sprites/spr_Positive_Thoughts/spr_Positive_Thoughts.yy",},"order":22,},
     {"id":{"name":"spr_Shield_Friend","path":"sprites/spr_Shield_Friend/spr_Shield_Friend.yy",},"order":23,},
     {"id":{"name":"spr_Coping_Cloud","path":"sprites/spr_Coping_Cloud/spr_Coping_Cloud.yy",},"order":24,},

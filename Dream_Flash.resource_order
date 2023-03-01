@@ -2155,6 +2155,7 @@
     {"name":"spr_Sore_Eye","order":20,"path":"sprites/spr_Sore_Eye/spr_Sore_Eye.yy",},
     {"name":"scr_Class_Stat_Essence_Regen_Multiplier","order":2,"path":"scripts/scr_Class_Stat_Essence_Regen_Multiplier/scr_Class_Stat_Essence_Regen_Multiplier.yy",},
     {"name":"spr_Warding_Figment","order":21,"path":"sprites/spr_Warding_Figment/spr_Warding_Figment.yy",},
+    {"name":"scr_Soul_Shot_Chain_Hit","order":16,"path":"scripts/scr_Soul_Shot_Chain_Hit/scr_Soul_Shot_Chain_Hit.yy",},
     {"name":"spr_Positive_Thoughts","order":22,"path":"sprites/spr_Positive_Thoughts/spr_Positive_Thoughts.yy",},
     {"name":"spr_Shield_Friend","order":23,"path":"sprites/spr_Shield_Friend/spr_Shield_Friend.yy",},
     {"name":"spr_Coping_Cloud","order":24,"path":"sprites/spr_Coping_Cloud/spr_Coping_Cloud.yy",},
