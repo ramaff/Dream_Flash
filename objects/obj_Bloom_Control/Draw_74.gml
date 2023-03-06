@@ -33,7 +33,13 @@ var bloom_darken	= 1 - 0.1;
 var bloom_saturation = 0.8 * 2;
 */
 
-if global.gameBloomShader = 1000 {
+var blur_steps		= round(0.4 * 15) + 1;
+var sigma			= max(0.2, 0.0001);
+var bloom_threshold = 0.25;
+var bloom_range		= 0.15;
+var bloom_intensity	= 0.0875 * 2;
+var bloom_darken	= 1;
+var bloom_saturation = 1 * 2;
 
 	var blur_steps		= round(0.5 * 15) + 1;
 	var sigma			= max(0.2, 0.0001);

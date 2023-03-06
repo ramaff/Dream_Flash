@@ -9,7 +9,11 @@ function scr_Boss_Status_Setup() {
 
 	pathBoss = 0;
 
-	scr_Boss_Dash_Setup();
+	if version = 1 {
+		scr_Boss_Dash_Setup();
+	} else {
+		scr_Boss_Dash_Setup_v2();
+	}
 
 	currentphase = 1;
 	finalphase = 2;

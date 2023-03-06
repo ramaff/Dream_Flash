@@ -6,6 +6,23 @@ function scr_Soul_Shot_Boss_Hit() {
 	if !hit_again and shotdamage {
     
 	    if shotpierce > 0 || shotcontinue = 1 {
+			
+			if shotchain > 0 {
+				
+				var max_streaks = 30;
+				var xst = x;
+				var yst = y;
+				var streak_length = 64;
+				var streak_target = other.id;
+				var chain_damage = shotchainpower;
+				var streak_color = shot_stats.Shot_Chain_Color;
+				streak_color = make_color_rgb(streak_color[0], streak_color[1], streak_color[2])
+				var chains = shotchain;
+				var chain_range = shotchainrange;
+	
+				scr_Soul_Shot_Chain_Hit(max_streaks, streak_target, chains, xst, yst, streak_length, chain_damage, streak_color, chain_range)
+				
+			}
 		
 			if shotpierce = 1 and shotimpacttype = 2 {
 				scr_Screen_Shake(20, 14);

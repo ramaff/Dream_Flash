@@ -1,12 +1,15 @@
+// Just defaults basically I think
 boost = global.boost;
 champ = global.champ;
 
-bossValue = 9;
-scr_Boss_Stats_Setup();
+// Boss # id
+bossValue = 999;
+scr_Boss_Stats_Setup(2);
 
-scr_Boss_Size_Setup(0.5);
+// Required, usually set to 0.5
+scr_Boss_Size_Setup(0.6);
 
-//image_speed = 0;
-image_index = 0;
+// If boss is visually 'floating' setup boss height
+// Needed for bobbing/boss shadows
+scr_Boss_Height_Setup(0);
 
-//state = states.spawned;

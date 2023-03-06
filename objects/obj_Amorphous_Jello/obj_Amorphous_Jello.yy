@@ -14,8 +14,8 @@
     "path": "folders/Objects/Bosses/Flash Bosses.yy",
   },
   "parentObjectId": {
-    "name": "obj_Wall_Stop_Boss_Parent",
-    "path": "objects/obj_Wall_Stop_Boss_Parent/obj_Wall_Stop_Boss_Parent.yy",
+    "name": "obj_Main_Boss_Parent",
+    "path": "objects/obj_Main_Boss_Parent/obj_Main_Boss_Parent.yy",
   },
   "persistent": false,
   "physicsAngularDamping": 0.1,
@@ -32,10 +32,7 @@
   "physicsStartAwake": true,
   "properties": [],
   "solid": false,
-  "spriteId": {
-    "name": "spr_Jello_Amorphous",
-    "path": "sprites/spr_Jello_Amorphous/spr_Jello_Amorphous.yy",
-  },
+  "spriteId": null,
   "spriteMaskId": null,
   "visible": false,
 }

@@ -71,7 +71,7 @@
             {"resourceType":"Keyframe<SpriteFrameKeyframe>","resourceVersion":"1.0","Channels":{"0":{"resourceType":"SpriteFrameKeyframe","resourceVersion":"1.0","Id":{"name":"57760d46-4182-4a9f-84d2-8395a45f9f35","path":"sprites/spr_Wisper/spr_Wisper.yy",},},},"Disabled":false,"id":"fd6c3e80-c85e-4b5d-9434-1085a326a17f","IsCreationKey":false,"Key":7.0,"Length":1.0,"Stretch":false,},
           ],},"modifiers":[],"spriteId":null,"trackColour":0,"tracks":[],"traits":0,},
     ],
-    "visibleRange": {"x":0.0,"y":0.0,},
+    "visibleRange": null,
     "volume": 1.0,
     "xorigin": 236,
     "yorigin": 128,
