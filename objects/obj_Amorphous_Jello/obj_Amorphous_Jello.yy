@@ -32,7 +32,10 @@
   "physicsStartAwake": true,
   "properties": [],
   "solid": false,
-  "spriteId": null,
+  "spriteId": {
+    "name": "spr_Amorphous_Jello",
+    "path": "sprites/spr_Amorphous_Jello/spr_Amorphous_Jello.yy",
+  },
   "spriteMaskId": null,
   "visible": false,
 }

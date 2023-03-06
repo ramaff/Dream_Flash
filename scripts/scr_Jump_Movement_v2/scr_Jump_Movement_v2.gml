@@ -1,4 +1,4 @@
-function scr_Jump_Movement_v2(jumpSpeed = 2) {
+function scr_Jump_Movement_v2(jumpSpeed) {
 	
 	if patternCount <= ((patternCountMax / 2) + 0.5) {
 		jumpDirection = "Down";	

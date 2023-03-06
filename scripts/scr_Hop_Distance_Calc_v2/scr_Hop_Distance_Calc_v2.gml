@@ -1,6 +1,6 @@
-function scr_Hop_Distance_Calc_v2(basespeed = 0, xx = x, yy = y) {
+function scr_Hop_Distance_Calc_v2(basespeed = 1) {
 
-	var sCalc = scr_Soul_Point(xx, yy)
+	var sCalc = point_distance(x,y,obj_Soul_Parent.perX,obj_Soul_Parent.perY);
 	var iRange = 0;
 		
 	if sCalc < (basespeed * patternCountMax) {
@@ -12,8 +12,8 @@ function scr_Hop_Distance_Calc_v2(basespeed = 0, xx = x, yy = y) {
 	if iRange = 0 {
 		maxDashSpeed = basespeed;
 	} else {
-		//bossPatternCountMax = 10 + (bossPatternCountMax * 0.25) + (sCalc / basespeed);
-		//bossPatternCount = bossPatternCountMax;
+		//patternCountMax = 10 + (patternCountMax * 0.25) + (sCalc / basespeed);
+		//patternCount = patternCountMax;
 		maxDashSpeed = basespeed;
 		maxDashSpeed = 1 + (sCalc / patternCountMax);
 	}
