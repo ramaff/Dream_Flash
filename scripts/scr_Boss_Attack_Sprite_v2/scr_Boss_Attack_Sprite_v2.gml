@@ -17,8 +17,3 @@ function scr_Boss_Attack_Sprite_v2(sprite, attackHoldFrame, attackLoopStartFrame
 		image_index = attackLoopStartFrame;   
 	}
 }
-
-scr_Boss_Attack_Sprite_v2.gml
-
-
-chain_Hit\scr_Soul_Shot_Chain_Hit.gml

@@ -18,7 +18,7 @@ function scr_C05() {
 			var chains = 1;
 			var chain_range = 300;
 	
-			scr_Soul_Shot_Chain_Hit(max_streaks, streak_target, chains, xst, yst, streak_length, chain_damage, streak_color, chain_range)
+			scr_Shot_Lightning_Chain(max_streaks, streak_target, chains, xst, yst, streak_length, chain_damage, streak_color, chain_range)
 			
 			scr_Refresh_Soul(2)
 			

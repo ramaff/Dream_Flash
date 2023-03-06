@@ -20,7 +20,7 @@ function scr_Soul_Shot_Boss_Hit() {
 				var chains = shotchain;
 				var chain_range = shotchainrange;
 	
-				scr_Soul_Shot_Chain_Hit(max_streaks, streak_target, chains, xst, yst, streak_length, chain_damage, streak_color, chain_range)
+				scr_Shot_Lightning_Chain(max_streaks, streak_target, chains, xst, yst, streak_length, chain_damage, streak_color, chain_range)
 				
 			}
 		
