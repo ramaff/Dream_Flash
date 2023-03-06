@@ -32,6 +32,7 @@ function scr_Minion_Shot_Creation() {
 			shottimer = shotlifespan;
 			
 			scr_Shot_Particle_Setup();
+			
 	    }
 	    dir += Shot_Spread;
 	}

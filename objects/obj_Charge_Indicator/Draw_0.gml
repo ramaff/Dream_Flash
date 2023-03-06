@@ -83,8 +83,8 @@ if instance_exists(obj_Soul_Parent) {
 			cAlpha2 = 0;	
 		}
 		
-		draw_sprite_ext(spr_Temper_Indication,0,x + 30,y,image_xscale,image_yscale,image_angle,c_white,cAlpha2);
-		draw_sprite_part_ext(spr_Temper_Indication,1,0,31 * (1 - (cPercentL)),32,31,x-14,y - 30 + 31 * (1 - (cPercentL)),image_xscale,image_yscale,c_white,cAlpha2);
+		draw_sprite_ext(spr_Temper_Indication,0,x,y-15,image_xscale,image_yscale,image_angle,c_white,cAlpha2);
+		draw_sprite_part_ext(spr_Temper_Indication,1,0,31 * (1 - (cPercentL)),32,31,x-15,y - 30 + 31 * (1 - (cPercentL)),image_xscale,image_yscale,c_white,cAlpha2);
 		
 	}
 

@@ -168,221 +168,32 @@ function scr_Load_Run() {
     
 	    for(i = 0; i <= 99; i++) {
 	        global.A[i] = ini_read_real("Run","A" + string(i),0);
-			repeat(global.A[i]) {
-				if i > 9 {
-					scr_Hard_Coded_Item_Stats("A" + string(i), 1, true);
-				} else {
-					scr_Hard_Coded_Item_Stats("A" + "0" + string(i), 1, true);
-				}
-			}
 	        global.B[i] = ini_read_real("Run","B" + string(i),0);
-			repeat(global.B[i]) {
-				if i > 9 {
-					scr_Hard_Coded_Item_Stats("B" + string(i), 1, true);
-				} else {
-					scr_Hard_Coded_Item_Stats("B" + "0" + string(i), 1, true);
-				}
-			}
 	        global.C[i] = ini_read_real("Run","C" + string(i),0);
-			repeat(global.C[i]) {
-				if i > 9 {
-					scr_Hard_Coded_Item_Stats("C" + string(i), 1, true);
-				} else {
-					scr_Hard_Coded_Item_Stats("C" + "0" + string(i), 1, true);
-				}
-			}
 	        global.D[i] = ini_read_real("Run","D" + string(i),0);
-			repeat(global.D[i]) {
-				if i > 9 {
-					scr_Hard_Coded_Item_Stats("D" + string(i), 1, true);
-				} else {
-					scr_Hard_Coded_Item_Stats("D" + "0" + string(i), 1, true);
-				}
-			}
 	        global.E[i] = ini_read_real("Run","E" + string(i),0);
-			repeat(global.E[i]) {
-				if i > 9 {
-					scr_Hard_Coded_Item_Stats("E" + string(i), 1, true);
-				} else {
-					scr_Hard_Coded_Item_Stats("E" + "0" + string(i), 1, true);
-				}
-			}
 	        global.F[i] = ini_read_real("Run","F" + string(i),0);
-			repeat(global.F[i]) {
-				if i > 9 {
-					scr_Hard_Coded_Item_Stats("F" + string(i), 1, true);
-				} else {
-					scr_Hard_Coded_Item_Stats("F" + "0" + string(i), 1, true);
-				}
-			}
 	        global.G[i] = ini_read_real("Run","G" + string(i),0);
-			repeat(global.G[i]) {
-				if i > 9 {
-					scr_Hard_Coded_Item_Stats("G" + string(i), 1, true);
-				} else {
-					scr_Hard_Coded_Item_Stats("G" + "0" + string(i), 1, true);
-				}
-			}
 	        global.H[i] = ini_read_real("Run","H" + string(i),0);
-			repeat(global.H[i]) {
-				if i > 9 {
-					scr_Hard_Coded_Item_Stats("H" + string(i), 1, true);
-				} else {
-					scr_Hard_Coded_Item_Stats("H" + "0" + string(i), 1, true);
-				}
-			}
 			global.I[i] = ini_read_real("Run","I" + string(i),0);
-			repeat(global.I[i]) {
-				if i > 9 {
-					scr_Hard_Coded_Item_Stats("I" + string(i), 1, true);
-				} else {
-					scr_Hard_Coded_Item_Stats("I" + "0" + string(i), 1, true);
-				}
-			}
 	        global.J[i] = ini_read_real("Run","J" + string(i),0);
-			repeat(global.J[i]) {
-				if i > 9 {
-					scr_Hard_Coded_Item_Stats("J" + string(i), 1, true);
-				} else {
-					scr_Hard_Coded_Item_Stats("J" + "0" + string(i), 1, true);
-				}
-			}
 	        global.K[i] = ini_read_real("Run","K" + string(i),0);
-			repeat(global.K[i]) {
-				if i > 9 {
-					scr_Hard_Coded_Item_Stats("K" + string(i), 1, true);
-				} else {
-					scr_Hard_Coded_Item_Stats("K" + "0" + string(i), 1, true);
-				}
-			}
 			global.L[i] = ini_read_real("Run","L" + string(i),0);
-			repeat(global.L[i]) {
-				if i > 9 {
-					scr_Hard_Coded_Item_Stats("L" + string(i), 1, true);
-				} else {
-					scr_Hard_Coded_Item_Stats("L" + "0" + string(i), 1, true);
-				}
-			}
 	        global.M[i] = ini_read_real("Run","M" + string(i),0);
-			repeat(global.M[i]) {
-				if i > 9 {
-					scr_Hard_Coded_Item_Stats("M" + string(i), 1, true);
-				} else {
-					scr_Hard_Coded_Item_Stats("M" + "0" + string(i), 1, true);
-				}
-			}
 			global.N[i] = ini_read_real("Run","N" + string(i),0);
-			repeat(global.N[i]) {
-				if i > 9 {
-					scr_Hard_Coded_Item_Stats("N" + string(i), 1, true);
-				} else {
-					scr_Hard_Coded_Item_Stats("N" + "0" + string(i), 1, true);
-				}
-			}
 			global.OA[i] = ini_read_real("Run","OA" + string(i),0);
-			repeat(global.OA[i]) {
-				if i > 9 {
-					scr_Hard_Coded_Item_Stats("OA" + string(i), 1, true);
-				} else {
-					scr_Hard_Coded_Item_Stats("OA" + "0" + string(i), 1, true);
-				}
-			}
 			global.OB[i] = ini_read_real("Run","OB" + string(i),0);
-			repeat(global.OB[i]) {
-				if i > 9 {
-					scr_Hard_Coded_Item_Stats("OB" + string(i), 1, true);
-				} else {
-					scr_Hard_Coded_Item_Stats("OB" + "0" + string(i), 1, true);
-				}
-			}
 			global.OC[i] = ini_read_real("Run","OC" + string(i),0);
-			repeat(global.OC[i]) {
-				if i > 9 {
-					scr_Hard_Coded_Item_Stats("OC" + string(i), 1, true);
-				} else {
-					scr_Hard_Coded_Item_Stats("OC" + "0" + string(i), 1, true);
-				}
-			}
 			global.P[i] = ini_read_real("Run","P" + string(i),0);
-			repeat(global.P[i]) {
-				if i > 9 {
-					scr_Hard_Coded_Item_Stats("P" + string(i), 1, true);
-				} else {
-					scr_Hard_Coded_Item_Stats("P" + "0" + string(i), 1, true);
-				}
-			}
 			global.S[i] = ini_read_real("Run","S" + string(i),0);
-			repeat(global.S[i]) {
-				if i > 9 {
-					scr_Hard_Coded_Item_Stats("S" + string(i), 1, true);
-				} else {
-					scr_Hard_Coded_Item_Stats("S" + "0" + string(i), 1, true);
-				}
-			}
 	        global.R[i] = ini_read_real("Run","R" + string(i),0);
-			repeat(global.R[i]) {
-				if i > 9 {
-					scr_Hard_Coded_Item_Stats("R" + string(i), 1, true);
-				} else {
-					scr_Hard_Coded_Item_Stats("R" + "0" + string(i), 1, true);
-				}
-			}
 			global.T[i] = ini_read_real("Run","T" + string(i),0);
-			repeat(global.T[i]) {
-				if i > 9 {
-					scr_Hard_Coded_Item_Stats("T" + string(i), 1, true);
-				} else {
-					scr_Hard_Coded_Item_Stats("T" + "0" + string(i), 1, true);
-				}
-			}
 			global.U[i] = ini_read_real("Run","U" + string(i),0);
-			repeat(global.U[i]) {
-				if i > 9 {
-					scr_Hard_Coded_Item_Stats("U" + string(i), 1, true);
-				} else {
-					scr_Hard_Coded_Item_Stats("U" + "0" + string(i), 1, true);
-				}
-			}
 			global.V[i] = ini_read_real("Run","V" + string(i),0);
-			repeat(global.V[i]) {
-				if i > 9 {
-					scr_Hard_Coded_Item_Stats("V" + string(i), 1, true);
-				} else {
-					scr_Hard_Coded_Item_Stats("V" + "0" + string(i), 1, true);
-				}
-			}
 			global.W[i] = ini_read_real("Run","W" + string(i),0);
-			repeat(global.W[i]) {
-				if i > 9 {
-					scr_Hard_Coded_Item_Stats("W" + string(i), 1, true);
-				} else {
-					scr_Hard_Coded_Item_Stats("W" + "0" + string(i), 1, true);
-				}
-			}
 			global.XA[i] = ini_read_real("Run","XA" + string(i),0);
-			repeat(global.XA[i]) {
-				if i > 9 {
-					scr_Hard_Coded_Item_Stats("XA" + string(i), 1, true);
-				} else {
-					scr_Hard_Coded_Item_Stats("XA" + "0" + string(i), 1, true);
-				}
-			}
 			global.XB[i] = ini_read_real("Run","XB" + string(i),0);
-			repeat(global.XB[i]) {
-				if i > 9 {
-					scr_Hard_Coded_Item_Stats("XB" + string(i), 1, true);
-				} else {
-					scr_Hard_Coded_Item_Stats("XB" + "0" + string(i), 1, true);
-				}
-			}
 			global.XC[i] = ini_read_real("Run","XC" + string(i),0);
-			repeat(global.XC[i]) {
-				if i > 9 {
-					scr_Hard_Coded_Item_Stats("XC" + string(i), 1, true);
-				} else {
-					scr_Hard_Coded_Item_Stats("XC" + "0" + string(i), 1, true);
-				}
-			}
 
 	    }
 			

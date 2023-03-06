@@ -11,7 +11,7 @@ if global.loadrun = 1 {
     
     scr_Load_Run();
     
-    //scr_Load_Item_Stats();
+    scr_Load_Item_Stats();
     
     scr_Load_Room();
 	

@@ -2,6 +2,47 @@
 // https://help.yoyogames.com/hc/en-us/articles/360005277377 for more information
 function scr_Setup_Weapon_Stats(){
 	
+	// Newer System ? idk
+	
+	//Shot_Stats = current_weapon_stats;
+	if variable_struct_exists(current_weapon_stats, "Shot_Lobbing") {
+		Shot_Stats.Shot_Lobbing = current_weapon_stats.Shot_Lobbing;
+	}
+	if variable_struct_exists(current_weapon_stats, "Shot_Lobbing_Tilt") {
+		Shot_Stats.Shot_Lobbing_Tilt = current_weapon_stats.Shot_Lobbing_Tilt;
+	}
+	if variable_struct_exists(current_weapon_stats, "Shot_Lobbing_Wobble") {
+		Shot_Stats.Shot_Lobbing_Wobble = current_weapon_stats.Shot_Lobbing_Wobble;
+	}
+	if variable_struct_exists(current_weapon_stats, "Shot_Height") {
+		Shot_Stats.Shot_Height = current_weapon_stats.Shot_Height;
+	}
+	if variable_struct_exists(current_weapon_stats, "Shot_Fall_Speed") {
+		Shot_Stats.Shot_Fall_Speed = current_weapon_stats.Shot_Fall_Speed;
+	}
+	if variable_struct_exists(current_weapon_stats, "Shot_Gravity") {
+		Shot_Stats.Shot_Gravity = current_weapon_stats.Shot_Gravity;
+	}
+	if variable_struct_exists(current_weapon_stats, "Shot_Chain_Color") {
+		Shot_Stats.Shot_Chain_Color = current_weapon_stats.Shot_Chain_Color;
+	}
+	if variable_struct_exists(current_weapon_stats, "Shot_Zig_Zag") {
+		Shot_Stats.Shot_Zig_Zag = current_weapon_stats.Shot_Zig_Zag;
+	}
+	if variable_struct_exists(current_weapon_stats, "Shot_Extra_Stats") {
+		/*if current_weapon_stats.Shot_Extra_Stats != false {
+			show_debug_message("current_weapon_stats.Shot_Extra_Stats: " + string(current_weapon_stats.Shot_Extra_Stats))
+			Shot_Stats.Shot_Extra_Stats = json_parse(json_stringify(global.DEFAULT_SHOT_STATS));
+			var _PropertyNames = variable_struct_get_names(current_weapon_stats.Shot_Extra_Stats);
+	        for (var i = 0; i < array_length(_PropertyNames); i++) {
+	            variable_struct_set(Shot_Stats.Shot_Extra_Stats, _PropertyNames[i], variable_struct_get(current_weapon_stats.Shot_Extra_Stats, _PropertyNames[i]));
+	        }
+		} */
+		Shot_Stats.Shot_Extra_Stats = current_weapon_stats.Shot_Extra_Stats;
+	}
+	
+	// Older System
+	
 	if variable_struct_exists(current_weapon_stats, "Shot_Extra_Stats") {
 		Shot_Extra_Stats = current_weapon_stats.Shot_Extra_Stats
 	}
@@ -484,6 +525,12 @@ function scr_Setup_Weapon_Stats(){
 	}
 	if variable_struct_exists(current_weapon_stats, "Weapon_Y_Maintain") {
 		Weapon_Y_Maintain = current_weapon_stats.Weapon_Y_Maintain
+	}
+	if variable_struct_exists(current_weapon_stats, "Shot_Mouse") {
+		Shot_Mouse = current_weapon_stats.Shot_Mouse
+	}
+	if variable_struct_exists(current_weapon_stats, "Shot_Direction") {
+		Shot_Direction = current_weapon_stats.Shot_Direction
 	}
 		
 	var i = 0;

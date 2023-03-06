@@ -609,6 +609,7 @@ function scr_Boss_Choose(roomNum, exclude, difficultyAdd = 0) {
 			difficulty += 2;	
 		}
 	}
+	
 
 	if bossform = 98.1 // Spirit of Mischief 
 	{

@@ -13,7 +13,7 @@ function scr_XA03(){
 			    heart[i,3] -= 0.2;
 			}
 		} */
-		damageamount = 1 * global.XA[3];
+		damageamount = round((1 + random(1)) * global.XA[3]);
 		defenseamount = 0;
 		scr_Soul_Damage_Calculation();
 	}

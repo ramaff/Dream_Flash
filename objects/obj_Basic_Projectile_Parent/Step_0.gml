@@ -207,25 +207,30 @@ if shotairburststats != false {
 	}
 }
 
-if shotorbitaltype > 0 and instance_exists(otarget) {
+if shotorbitaltype > 0 {
+	if instance_exists(otarget) {
 
-    shotCenterX = otarget.x;
-    shotCenterY = otarget.y;
+	    shotCenterX = otarget.x;
+	    shotCenterY = otarget.y;
     
-    shotAngle += shotspeed;
+	    shotAngle += shotspeed;
     
-    image_angle = shotAngle + 90;
+	    image_angle = shotAngle + 90;
     
-    if (shotAngle >= 360) {
-        shotAngle -= 360;
-    }
+	    if (shotAngle >= 360) {
+	        shotAngle -= 360;
+	    }
 	
-	shotOrbit = 75;
+		shotOrbit = 75;
 
-    x = lengthdir_x(shotOrbit, shotAngle) + shotCenterX;
-    y = lengthdir_y(shotOrbit, shotAngle) + shotCenterY;
+	    x = lengthdir_x(shotOrbit, shotAngle) + shotCenterX;
+	    y = lengthdir_y(shotOrbit, shotAngle) + shotCenterY;
     
-    image_angle = shotAngle + 90;
+	    image_angle = shotAngle + 90;
+	} else {
+		direction = shotAngle + 90;
+		speed = shotspeed
+	}
     
 }
 
