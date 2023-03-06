@@ -10,7 +10,7 @@ function scr_B05() {
 
 	    if rubber = 1 {
 			repeat(8) {
-				scr_Particle_Burst(obj_Friction_Part, spr_Soul_Big_Bit, make_color_rgb(255,50,255), make_color_rgb(255,150,255), 1, 16 + random(8), random(360), 0, 0, 0.5, 25 + random(5))
+				scr_Particle_Burst(obj_Friction_Part, spr_Soul_Big_Bit, make_color_rgb(255,50,255), make_color_rgb(255,150,255), 1, 16 + random(8), other.direction - 270 + random(180), 0, 0, 0.5, 25 + random(5))
 			}
 			/*part_type_sprite(ptype,spr_Soul_Small_Bit,0,0,0);
 			part_type_color_mix(ptype, make_color_rgb(255,50,255),make_color_rgb(255,150,255));

@@ -17,7 +17,8 @@ function scr_Soul_Spawn() {
 	repeat(Shot_Count) {
 
 	    with instance_create(x,y,Minion_Type) {
-			followtarget = obj_Soul_Parent//ct;
+			followtarget = noone;
+			//followtarget = obj_Soul_Parent//ct;
 			//ct = id;
 			
 	        smovementspeed = other.Minion_Speed;

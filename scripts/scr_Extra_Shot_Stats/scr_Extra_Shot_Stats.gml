@@ -5,6 +5,10 @@ function scr_Extra_Shot_Stats() {
 		shotframe = irandom(other.Shot_Frames)	
 	}
 	shotimagespeed = other.Shot_Image_Speed;
+	
+	shot_stats = json_parse(json_stringify(other.Shot_Stats));
+	
+	y -= shot_stats.Shot_Height;
 
 	var shotaddedpow = ((10 + other.spowerfactor + other.sattackfactorbuffamount) / 10) * other.spower / 10 * scr_Class_Stat_Damage_Multiplier();
 

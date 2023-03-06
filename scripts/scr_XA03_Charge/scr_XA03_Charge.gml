@@ -4,7 +4,7 @@
 // Soul Damage Calc
 
 function scr_XA03_Charge(dam){
-	if global.XA[3] > 0 {
+	if global.XA[3] > 0 and global.temperActive = false {
 		global.temperCharge += dam * 3;
 	
 		if global.temperActive = false and global.temperCharge >= 100 {

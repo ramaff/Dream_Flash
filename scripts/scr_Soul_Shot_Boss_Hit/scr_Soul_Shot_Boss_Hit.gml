@@ -191,7 +191,23 @@ function scr_Soul_Shot_Boss_Hit() {
 				direction = random(360);	
 			}
         
-	        if shotchain <= 0 || shotmelee = 1 { 
+	       // if shotmelee = 1 { 
+			if shotcontinue = 0 {
+		        shotpierce--;
+		        if shotpierce <= 0 {
+		            instance_destroy();
+		        }
+			} else {
+				if shotpower >= (other.bosshealth + shotpower) {
+				    shotpower -= (other.bosshealth + shotpower);
+				} else {
+				    instance_destroy();
+				}
+			}
+	      //  } 
+			
+			/*
+			if shotchain <= 0 || shotmelee = 1 { 
 				if shotcontinue = 0 {
 		            shotpierce--;
 		            if shotpierce <= 0 {
@@ -224,7 +240,7 @@ function scr_Soul_Shot_Boss_Hit() {
 		                instance_destroy();
 		            }
 				}
-	        }
+	        } */
         
 	        if other.currentphase >= other.finalphase
 	        if other.bosshealth <= 0 {

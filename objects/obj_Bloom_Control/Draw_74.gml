@@ -41,13 +41,25 @@ var bloom_intensity	= 0.0875 * 2;
 var bloom_darken	= 1;
 var bloom_saturation = 1 * 2;
 
-	var blur_steps		= round(0.5 * 15) + 1;
-	var sigma			= max(0.2, 0.0001);
-	var bloom_threshold = 0.25;
-	var bloom_range		= 0.15;
-	var bloom_intensity	= 0.0875 * 2;
-	var bloom_darken	= 1;
-	var bloom_saturation = 1 * 2;
+if global.gameBloomShader = 1 {
+	
+	draw_surface_stretched(application_surface, 0, 0, gui_w, gui_h);
+	shader_set(shader_blur);
+	shader_set_uniform_f(u_blur_steps,		blur_steps);
+		shader_set_uniform_f(u_sigma,			sigma);
+		shader_set_uniform_f(u_blur_vector,		1, 0);
+		shader_set_uniform_f(u_texel_size,		texel_w, texel_h);
+		
+	draw_set_alpha(0.5);
+	draw_surface(application_surface, 0, 0);
+	shader_set_uniform_f(u_blur_vector,		0, 1);
+	draw_surface(application_surface, 0, 0);
+	
+	draw_set_alpha(1);
+	shader_reset();
+	
+	
+} else if global.gameBloomShader = 100 {
 
 
 	// DRAW:
@@ -66,6 +78,7 @@ var bloom_saturation = 1 * 2;
 
 	// 1st pass: Draw brights to bloom surface:
 	// AppSrf -> srf_ping
+	/*
 	shader_set(shader_bloom_lum);
 		shader_set_uniform_f(u_bloom_threshold,		bloom_threshold);
 		shader_set_uniform_f(u_bloom_range,			bloom_range);
@@ -73,6 +86,7 @@ var bloom_saturation = 1 * 2;
 		surface_set_target(srf_ping);
 			draw_surface(application_surface, 0, 0);
 		surface_reset_target();
+		*/
 	
 	// 2nd pass: blur horizontally
 	// srf_ping -> srf_pong
@@ -99,6 +113,7 @@ var bloom_saturation = 1 * 2;
 
 	// 4th pass: Blend bloom surface with app surface
 	// AppSrf & srf_ping -> screen
+	/*
 	shader_set(shader_bloom_blend);
 		shader_set_uniform_f(u_bloom_intensity, bloom_intensity);
 		shader_set_uniform_f(u_bloom_darken, bloom_darken);
@@ -107,10 +122,13 @@ var bloom_saturation = 1 * 2;
 		gpu_set_tex_filter_ext(u_bloom_texture, true);
 	
 		texture_set_interpolation(true);
+		*/
 	
 		draw_surface_stretched(application_surface, 0, 0, gui_w, gui_h);
 	
 	shader_reset();
+	
+	draw_surface_stretched(application_surface, 0, 0, gui_w, gui_h);
 
 } else {
 	draw_surface_stretched(application_surface, 0, 0, gui_w, gui_h);	

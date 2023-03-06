@@ -1899,6 +1899,18 @@
             "Health_Phase_1": 135,
             "Health_Phase_2": 2450
         }
+    },
+    "Boss 999": {
+        "Name": "Template Boss",
+        "Recollection_Sprite": "spr_Template_Boss",
+        "Health_Phase_1": 150,
+        "Health_Phase_2": 150,
+        "Defense_Phase_1": 0,
+        "Defense_Phase_2": 0,
+        "Boss_Danger": 1,
+        "Bullet_Speed": 2.5,
+        "Move_Speed": 1,
+        "recollectionDescription": "Look at this cutie",
     }
     
 }

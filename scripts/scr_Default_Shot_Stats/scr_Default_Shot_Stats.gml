@@ -6,6 +6,8 @@ function scr_Default_Shot_Stats() {
 	shotexisttime = 0;
 
 	bullet_hits = {}
+	
+	shot_stats = {};
 
 	image = 0;
 	shothitagain = 0;
