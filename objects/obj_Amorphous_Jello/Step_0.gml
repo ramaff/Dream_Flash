@@ -55,9 +55,9 @@ if activeAttackDelay <= 0 and activeAttackCooldown <= 0 and activeAttackDuration
     }
 	if activeAttack = 4 {
 		// Setup how many attacks per boss move, delay, etc
-		scr_Boss_Attack_Time_Setup_v2(50, 40, 1, 30, 30, -10);
+		scr_Boss_Attack_Time_Setup_v2(80, 40, 1, 30, 30, 0);
 		
-		scr_Boss_Jump_Setup_v2(0, 10 * bossmovespeed, x, y);
+		scr_Boss_Jump_Setup_v2(0, 7 * bossmovespeed, x, y);
 		
 		// Can set up the initial pattern direction
 		// patternDirection = scr_Soul_Point();
@@ -77,10 +77,21 @@ if activeAttackDelay <= 0 and patternCooldown <= 0 and patternCount > 0 {
     if activeAttack = 1 {
 		scr_Boss_Stretch("Vertical", 0.7);
 		
-		boss_xoffset = 0;
-		boss_yoffset = -40;
 		bullet_direction = scr_Soul_Point();
+		bullet_direction += (-30 + random(60)) / bossaccuracy;
+		bullet_type = obj_Jelly_Bullet;
+		bullet_sprite = spr_Lob_Shot;
+		bullet_speed = bossbulletspeed * 2;
 		direction = bullet_direction;
+		var face_direction = round(direction / 180) * 180
+		bullet_lifespan = 170;
+		
+		boss_yoffset = -70;
+		if face_direction = 0 {
+			boss_xoffset = 10;
+		} else {
+			boss_xoffset = -10;
+		}
 		
 		scr_Boss_Shoot();
 	
@@ -99,6 +110,11 @@ if activeAttackDelay <= 0 and patternCooldown <= 0 and patternCount > 0 {
 			bullet_direction = 45;
 			bullet_count = 4;
 			bullet_spread = 90;
+			
+			bullet_type = obj_Jelly_Bullet_Straight;
+			bullet_sprite = spr_Lob_Shot;
+			bullet_speed = bossbulletspeed * 2;
+			bullet_lifespan = 130;
 			
 			scr_Boss_Shoot();
 			
@@ -124,10 +140,17 @@ if activeAttackDelay <= 0 and patternCooldown <= 0 and patternCount > 0 {
 		
 		boss_xoffset = 0;
 		boss_yoffset = -40;
-		bullet_direction = scr_Soul_Point();
-		direction = bullet_direction;
 		
-		scr_Boss_Shoot();
+		bullet_type = obj_Jello_Spawning_Bullet
+		bullet_count = 1;
+		bullet_lifespan = 80;
+		bullet_sprite = spr_Lob_Shot;
+		bullet_size = 0.8;
+		
+		repeat(3) {
+			bullet_direction = random(360)
+			scr_Boss_Shoot();
+		}
 	
 		// If you gotta change the pattern aim direction
 	    // bossPatternDirection += 0;
@@ -141,11 +164,18 @@ if activeAttackDelay <= 0 and patternCooldown <= 0 and patternCount > 0 {
 			
 			boss_yoffset = 20;
 			
-			bullet_direction = scr_Soul_Point();
-			bullet_count = 3;
-			bullet_spread = 90;
+			bullet_direction_base = scr_Soul_Point();
+			bullet_count = 1;
 			
-			scr_Boss_Shoot();
+			bullet_type = obj_Jelly_Bullet;
+			bullet_sprite = spr_Lob_Shot;
+			bullet_lifespan = 40;
+			
+			repeat(3) {
+				bullet_direction = bullet_direction_base - 90 + random(180)
+				bullet_speed = bossbulletspeed * (1.4 + random(1.2))
+				scr_Boss_Shoot();
+			}
 			
 			scr_Screen_Shake(3,5);
 		}
@@ -155,7 +185,7 @@ if activeAttackDelay <= 0 and patternCooldown <= 0 and patternCount > 0 {
 		speed = dashSpeed;
         direction = dashDirection;
 		
-		scr_Jump_Movement_v2(3);
+		scr_Jump_Movement_v2(2);
 	}
 	
 	// Maybe I should put this into a script
@@ -197,7 +227,7 @@ if activeAttack = 1 {
 	}
 } else if activeAttack = 4 {
 	var holdFrame = 2;
-	scr_Boss_Attack_Sprite_v2(spr_Amorphous_Jello_Hop, holdFrame, 6, 6, 60);
+	scr_Boss_Attack_Sprite_v2(spr_Amorphous_Jello_Hop, holdFrame, 5, 5, 60);
 	if image_index = holdFrame {
 		scr_Boss_Wobble("Horizontal", 2, 0.25, 0)	
 	}
