@@ -11,27 +11,27 @@ scr_Boss_Size_Setup(0.5);
 
 // If boss is visually 'floating' setup boss height
 // Needed for bobbing/boss shadows
-scr_Boss_Height_Setup(0);
+scr_Boss_Height_Setup(50);
 
-followtarget = noone
-var congacount = 18
+followtarget = noone;
 
 if instance_number(obj_Conga_Line) < 2 {
 	var ct = id;
 	var ang = 0;
 	var dis = 20;
+	var xx = 0;
+	var yy = 0;
 
-	for(var i = 0; i < congacount; i++) {
-		with instance_create(x + lengthdir_x(dis, ang),y + lengthdir_y(dis, ang),obj_Conga_Line) {
+	for(var i = 0; i < 9; i++) {
+		xx = -100 + 50 * (i mod 5)
+		if i > 3 {
+			yy = -100;
+		}
+		with instance_create(x + xx,y + yy,obj_Conga_Line) {
 			followtarget = ct;
 		
 			ct = id;
-			tail = false;
-		
-			//champ = other.champ + 0.1;
 			scr_Boss_Stats_Setup();
 		}
-		ang += 45;
-		dis += 5 + (300 / dis);
 	}
 }

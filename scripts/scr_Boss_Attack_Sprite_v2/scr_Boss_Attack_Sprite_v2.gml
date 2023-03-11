@@ -11,8 +11,6 @@ function scr_Boss_Attack_Sprite_v2(sprite, attackHoldFrame, attackLoopStartFrame
 			image_index = attackHoldFrame + 1;	
 		}
 	}
-	show_debug_message("activeAttackDuration: " + string(activeAttackDuration))
-	show_debug_message("attackEndDuration: " + string(attackEndDuration))
 	if activeAttackDuration > attackEndDuration and image_index >= attackLoopEndFrame + 1 {
 		image_index = attackLoopStartFrame;   
 	}
