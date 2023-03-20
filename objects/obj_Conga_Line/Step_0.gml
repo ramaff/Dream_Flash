@@ -3,22 +3,31 @@
 if currentphase = 1 {
 	if instance_exists(followtarget) {
 		if point_distance(x, y, followtarget.x, followtarget.y) > 100 {
-			//   direction = round(point_direction(x, y, followtarget.x, followtarget.y) / 90) * 90;
 			direction = point_direction(x, y, followtarget.x, followtarget.y);
 			speed = followtarget.speed;
 		}
-		if followtarget.currentphase = 2 {
-			followtarget = noone;	
-		} else {
+		//if followtarget.currentphase = 2 {
+		//	followtarget = noone;
+		//} else {
+		if followtarget.currentphase = 1 {
 			activeAttackCooldown = followtarget.activeAttackCooldown	
 		}
+		//}
  	} else {
 		var xdis = abs(x - obj_Soul_Parent.perX);
 		var ydis = abs(y - obj_Soul_Parent.perY);
 		var dist = scr_Soul_Distance();
-		speed = bossmovespeed * (1 + (dist / 400));
 		if speed = 0 or xdis < 20 or ydis < 20 or dist > 500 {
 			direction = round(scr_Soul_Point() / 90) * 90;
+		}
+		var speedtar = bossmovespeed * (1 + (dist / 400));
+		speed = lerp(speed, speedtar, 0.02);
+	}
+} else {
+	var original_target = followtarget
+	with obj_Conga_Line {
+		if followtarget == other.id {
+			followtarget = original_target;	
 		}
 	}
 }
@@ -60,7 +69,7 @@ if activeAttackDelay <= 0 and activeAttackCooldown <= 0 and activeAttackDuration
 	
     if activeAttack = 1 {
 		// Setup how many attacks per boss move, delay, etc
-		scr_Boss_Attack_Time_Setup_v2(150, 40, 1, 360, 90, 20);
+		scr_Boss_Attack_Time_Setup_v2(120, 40, 1, 240, 60, 20);
 		scr_Boss_Jump_Setup_v2(0, 0 * bossmovespeed, x, y);
 		
 		// Can set up the initial pattern direction
@@ -155,11 +164,11 @@ scr_Boss_Size_Lerp_Dir(0.15);
 // Handles boss attack sprite animation
 if activeAttack = 1 {
 	var holdFrame = 1;
-	scr_Boss_Attack_Sprite_v2(spr_Conga_Line_Hop, holdFrame, 6, 6, 110);
+	scr_Boss_Attack_Sprite_v2(spr_Conga_Line_Hop, holdFrame, 4, 4, 110);
 	if image_index = holdFrame {
 		scr_Boss_Wobble("Horizontal", 2, 0.25, 0)	
 	}
-	if image_index = 7 {
+	if image_index = 5 {
 		scr_Boss_Stretch("Vertical", 0.8);	
 	}
 } else if activeAttack = 2 {

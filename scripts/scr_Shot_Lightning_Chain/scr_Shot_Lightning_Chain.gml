@@ -25,10 +25,12 @@ function scr_Shot_Lightning_Chain(max_streaks = 30, streak_target = noone, chain
 			var aim_angle = point_direction(xst, yst, streak_target.x, streak_target.y);
 			var boss_dist = point_distance(xst, yst, streak_target.x, streak_target.y);
 			while boss_dist > 70 and max_streaks > 0 {
-				with instance_create(xst, yst, obj_Lightning_Streak) {
+				/*with instance_create(xst, yst, obj_Lightning_Streak) {
 					image_angle = aim_angle;
 					image_blend = streak_color;
-				}
+				} */
+				scr_Create_Lightning_Streak(xst, yst, aim_angle, streak_color)
+				
 				xst += lengthdir_x(streak_length, aim_angle)
 				yst += lengthdir_y(streak_length, aim_angle)
 				aim_angle = point_direction(xst, yst, streak_target.x, streak_target.y) - 90 + random(180);
@@ -53,10 +55,12 @@ function scr_Shot_Lightning_Chain(max_streaks = 30, streak_target = noone, chain
 			max_streaks = 1 + irandom(1);
 			aim_angle = random(360);
 			while max_streaks > 0 {
-				with instance_create(xst, yst, obj_Lightning_Streak) {
+				/*with instance_create(xst, yst, obj_Lightning_Streak) {
 					image_angle = aim_angle;
 					image_blend = streak_color;
-				}
+				} */
+				scr_Create_Lightning_Streak(xst, yst, aim_angle, streak_color)
+				
 				xst += lengthdir_x(streak_length, aim_angle)
 				yst += lengthdir_y(streak_length, aim_angle)
 				aim_angle = aim_angle - 90 + random(180);

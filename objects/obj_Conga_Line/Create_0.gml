@@ -11,23 +11,27 @@ scr_Boss_Size_Setup(0.5);
 
 // If boss is visually 'floating' setup boss height
 // Needed for bobbing/boss shadows
-scr_Boss_Height_Setup(50);
+scr_Boss_Height_Setup(0);
 
 followtarget = noone;
 
 if instance_number(obj_Conga_Line) < 2 {
 	var ct = id;
-	var ang = 0;
-	var dis = 20;
+	var opdir = scr_Soul_Point() + 180;
+	
 	var xx = 0;
 	var yy = 0;
+	//var xxx = [-50, -50, 0, 50, 50, 50, 0, -50, -100, -100, -100, -100];
+	//var yyy = [0, -50, -50, -50, 0, 50, 50, 50, 50, 0, -50, -100];
+	var distt = 0;
 
-	for(var i = 0; i < 9; i++) {
-		xx = -100 + 50 * (i mod 5)
-		if i > 3 {
-			yy = -100;
-		}
-		with instance_create(x + xx,y + yy,obj_Conga_Line) {
+	for(var i = 0; i < 12; i++) {
+		distt = 50 * i
+		xx = lengthdir_x(distt, opdir - 15 + random(30)) + x;
+		yy = lengthdir_x(distt, opdir - 15 + random(30)) + y;
+		xx = scr_Round_To_Nearest(xx, 100)
+		yy = scr_Round_To_Nearest(yy, 100)
+		with instance_create(xx,yy,obj_Conga_Line) {
 			followtarget = ct;
 		
 			ct = id;
@@ -35,3 +39,5 @@ if instance_number(obj_Conga_Line) < 2 {
 		}
 	}
 }
+
+activeAttackCooldown = 240;

@@ -172,8 +172,8 @@ if activeAttackDelay <= 0 and patternCooldown <= 0 and patternCount > 0 {
 			bullet_lifespan = 40;
 			
 			repeat(3) {
-				bullet_direction = bullet_direction_base - 90 + random(180)
-				bullet_speed = bossbulletspeed * (1.4 + random(1.2))
+				bullet_direction = bullet_direction_base - 60 + random(120)
+				bullet_speed = bossbulletspeed * (0.9 + random(0.7))
 				scr_Boss_Shoot();
 			}
 			

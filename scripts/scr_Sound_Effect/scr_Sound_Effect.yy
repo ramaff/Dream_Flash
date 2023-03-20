@@ -5,7 +5,7 @@
   "isCompatibility": false,
   "isDnD": false,
   "parent": {
-    "name": "Misc Commands",
-    "path": "folders/Scripts/Misc Commands.yy",
+    "name": "Utility Commands",
+    "path": "folders/Scripts/Utility Commands.yy",
   },
 }
