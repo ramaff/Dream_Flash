@@ -9,6 +9,12 @@ scr_Boss_Height_Bob(30, 1, 0);
 // Make boss shape wobble:
 scr_Boss_Wobble("Horizontal", 0.3, 1, 0);
 
+scr_Above_Soul_Sweep(180, -300, 300, 10, sweepOffset);
+
+if activeAttack != 0 {
+	speed = bossmovespeed * 0.05;
+}
+
 //////////////////////////////////////////////////////////////////////////////////////////
 /////////////// Active Attack Prep
 //////////////////////////////////////////////////////////////////////////////////////////
@@ -20,7 +26,7 @@ if activeAttackDelay <= 0 and activeAttackCooldown <= 0 and activeAttackDuration
 	
     if activeAttack = 1 {
 		// Setup how many attacks per boss move, delay, etc
-		scr_Boss_Attack_Time_Setup_v2(1, 40, 1, 120, 30, 10);
+		scr_Boss_Attack_Time_Setup_v2(3, 60, 15, 210, 60, 10);
 		
 		// Can set up the initial pattern direction
 		// patternDirection = scr_Soul_Point();
@@ -40,7 +46,7 @@ if activeAttackDelay <= 0 and patternCooldown <= 0 and patternCount > 0 {
     if activeAttack = 1 {
 		scr_Boss_Stretch("Vertical", 0.7);
 		
-		bullet_direction = scr_Boss_Bullet_Direction_Formula(scr_Soul_Point(), 30)
+		bullet_direction = scr_Boss_Bullet_Direction_Formula(270, 60)
 		
 		scr_Boss_Shoot();
 	
@@ -68,13 +74,13 @@ scr_Boss_Size_Lerp(0.15);
 
 // Handles boss attack sprite animation
 if activeAttack != 0 {
-	var holdFrame = 1;
-	scr_Boss_Attack_Sprite_v2(spr_Boss_Template_Attack, holdFrame, 2, 2, 20);
+	var holdFrame = 2;
+	scr_Boss_Attack_Sprite_v2(spr_Angel_Head_Attack, holdFrame, 4, 4, 10);
 	if image_index = holdFrame {
 		scr_Boss_Wobble("Horizontal", 2, 0.25, 0)	
 	}
 } else {
-	sprite_index = spr_Boss_Template;
+	sprite_index = spr_Angel_Head;
 }
 
 // So that the boss hurts soul on collision

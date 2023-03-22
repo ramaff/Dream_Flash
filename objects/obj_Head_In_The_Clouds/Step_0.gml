@@ -22,7 +22,20 @@ if activeAttack = 0 {
 if activeAttackDelay <= 0 and activeAttackCooldown <= 0 and activeAttackDuration <= 0 {
     
 	// Pick a random attack to do
-	activeAttack = choose(2);
+	if currentphase = 1 {
+		if !scr_Minion_Count() {
+			activeAttack = choose(1, 1, 2, 3);
+		} else {
+			activeAttack = choose(1, 1, 2);	
+		}
+	} else if currentphase = 2 {
+		if !scr_Minion_Count() {
+			activeAttack = choose(4, 4, 2, 3);
+		} else {
+			activeAttack = choose(4, 4, 2);	
+		}
+	}
+	//activeAttack = 3
 	
 	// Guided Halo Bullets
     if activeAttack = 1 {
@@ -39,11 +52,11 @@ if activeAttackDelay <= 0 and activeAttackCooldown <= 0 and activeAttackDuration
 		scr_Boss_Attack_Time_Setup_v2(7, 90, 20, 180, 30, 0);
 		lightning_xx = [0]
 		lightning_yy = [0]
-		var soul_x = obj_Soul_Parent.perX - x;
-		var soul_y = obj_Soul_Parent.perY - y;
+		var xxx = ((obj_Soul_Parent.perX - x) + ((room_width / 2) - x)) / 2;
+		var yyy = ((obj_Soul_Parent.perY - y) + ((room_height / 2) - y)) / 2;
 		for(var i = 0; i < 7; i++) {
-			lightning_xx[i] = soul_x - 300 + random(600);
-			lightning_yy[i] = soul_y - 300 + random(600);
+			lightning_xx[i] = xxx - 300 + random(600);
+			lightning_yy[i] = yyy - 300 + random(600);
 		}
 		
 		// Can set up the initial pattern direction
@@ -53,7 +66,7 @@ if activeAttackDelay <= 0 and activeAttackCooldown <= 0 and activeAttackDuration
 	// Angel Heads
 	if activeAttack = 3 {
 		// Setup how many attacks per boss move, delay, etc
-		scr_Boss_Attack_Time_Setup_v2(3, 40, 60, 120, 30, 10);
+		scr_Boss_Attack_Time_Setup_v2(4, 40, 30, 180, 30, 10);
 		
 		// Can set up the initial pattern direction
 		// patternDirection = scr_Soul_Point();
@@ -62,7 +75,7 @@ if activeAttackDelay <= 0 and activeAttackCooldown <= 0 and activeAttackDuration
 	// Holy Smite Bounce Bomb
 	if activeAttack = 4 {
 		// Setup how many attacks per boss move, delay, etc
-		scr_Boss_Attack_Time_Setup_v2(3, 40, 60, 120, 30, 10);
+		scr_Boss_Attack_Time_Setup_v2(210, 30, 1, 180, 60, 10);
 		
 		// Can set up the initial pattern direction
 		// patternDirection = scr_Soul_Point();
@@ -116,6 +129,38 @@ if activeAttackDelay <= 0 and patternCooldown <= 0 and patternCount > 0 {
 	
 		// If you gotta change the pattern aim direction
 	    // bossPatternDirection += 0;
+	}
+	
+	if activeAttack = 3 {
+		minion_yy = 20
+		minion_xx = -20 + random(40);
+		minion_speed = 4;
+		minion_dir = 90;
+		minion_count = 1;
+	    minion_type = obj_Angel_Head;
+	    minion_health = bossmaxhealth / 20;
+		minion_defense = 0;
+	    scr_Minion_Spawn();
+	}
+	
+	if activeAttack = 4 {
+		if patternCount mod 10 = 0 {
+			scr_Boss_Stretch("Horizontal", 0.075);
+		}
+		
+		if patternCount = patternCountMax {
+			 bullet_direction = 0;
+		    bullet_count = 1;
+		    bullet_spread = 0;
+		    bullet_speed = bossbulletspeed * (2);
+			bullet_type = obj_Nightmare_Grow;
+			bullet_sprite = spr_Nightmare_Ball;
+			bullet_size = 0;
+			boss_xoffset = 0;
+			boss_yoffset = -300;
+			
+			scr_Boss_Shoot()
+		}
 	}
 	
 	// Maybe I should put this into a script
