@@ -35,7 +35,7 @@ if activeAttackDelay <= 0 and activeAttackCooldown <= 0 and activeAttackDuration
 			activeAttack = choose(4, 4, 2);	
 		}
 	}
-	//activeAttack = 3
+	activeAttack = 2;
 	
 	// Guided Halo Bullets
     if activeAttack = 1 {
@@ -153,11 +153,12 @@ if activeAttackDelay <= 0 and patternCooldown <= 0 and patternCount > 0 {
 		    bullet_count = 1;
 		    bullet_spread = 0;
 		    bullet_speed = bossbulletspeed * (2);
-			bullet_type = obj_Nightmare_Grow;
-			bullet_sprite = spr_Nightmare_Ball;
+			bullet_type = obj_Holy_Bounce_Ball;
+			bullet_charged = true;
+			bullet_sprite = spr_Holy_Ball;
 			bullet_size = 0;
 			boss_xoffset = 0;
-			boss_yoffset = -300;
+			boss_yoffset = -100;
 			
 			scr_Boss_Shoot()
 		}

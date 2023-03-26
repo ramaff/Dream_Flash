@@ -16,7 +16,8 @@ draw_self();
 //pal_swap_reset();
 
 if activeAttack = 2 and activeAttackDelay > 0 and image_index >= 2 {
+	var frame = (activeAttackDelay / 5)
 	for(var i = 0; i < 7; i++) {
-		draw_sprite_ext(spr_Boss_Sky_Lightning, i, x + lightning_xx[i], y + lightning_yy[i], 1, 1, 90, c_yellow, 1);
+		draw_sprite_ext(spr_Boss_Sky_Lightning_Pre, i + frame, x + lightning_xx[i], y + lightning_yy[i], 1, 1, 90, c_yellow, 1);
 	}
 }

@@ -46,7 +46,7 @@ if activeAttackDelay <= 0 and patternCooldown <= 0 and patternCount > 0 {
     if activeAttack = 1 {
 		scr_Boss_Stretch("Vertical", 0.7);
 		
-		bullet_direction = scr_Boss_Bullet_Direction_Formula(270, 60)
+		bullet_direction = scr_Boss_Bullet_Direction_Formula(270, 30)
 		
 		scr_Boss_Shoot();
 	

@@ -29,6 +29,8 @@ function scr_Default_Attack_Settings() {
 		bullet_bounce_speed = 10;
 	    bullet_bounce_direction = 1;
 		
+		bullet_charged = false;
+		
 	
 		bullet_blend = 0;
 	    bullet_fade = 1;
