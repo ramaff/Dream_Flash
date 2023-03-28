@@ -34,7 +34,7 @@ if (Pause_Control.pause) {
 	beastprog += 0.5 * floor((global.soulstrength + global.soulvitality) / 20);
 	mechprog += 0.5 * floor((global.soulessence + global.soulvitality) / 20);
 	scrubprog += 0.5 * floor((global.soulvitality + global.souldexterity) / 20);
-	spikeprog += 0.5 * floor((global.soulessence + global.soulperception) / 20);
+	spikeprog += 0.5 * floor((global.soulessence + global.souldexterity) / 20);
 	bleedingprog += 0.5 * floor((global.soulstrength + global.souldexterity) / 20);
 	castingprog += 0.5 * floor((global.soulvitality + global.soulperception) / 20);
     

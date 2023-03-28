@@ -443,7 +443,7 @@
     {"name":"spr_OverEssence_Container","order":2,"path":"sprites/spr_OverEssence_Container/spr_OverEssence_Container.yy",},
     {"name":"spr_OverOverEssence_Container","order":3,"path":"sprites/spr_OverOverEssence_Container/spr_OverOverEssence_Container.yy",},
     {"name":"spr_Charge_Indication","order":4,"path":"sprites/spr_Charge_Indication/spr_Charge_Indication.yy",},
-    {"name":"spr_Wisper_old","order":12,"path":"sprites/spr_Wisper_old/spr_Wisper_old.yy",},
+    {"name":"spr_Wisper","order":12,"path":"sprites/spr_Wisper/spr_Wisper.yy",},
     {"name":"spr_Mini_Map_Square","order":5,"path":"sprites/spr_Mini_Map_Square/spr_Mini_Map_Square.yy",},
     {"name":"spr_Mini_Map","order":6,"path":"sprites/spr_Mini_Map/spr_Mini_Map.yy",},
     {"name":"spr_Broken_Heart","order":7,"path":"sprites/spr_Broken_Heart/spr_Broken_Heart.yy",},

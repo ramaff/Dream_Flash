@@ -36,6 +36,11 @@ function scr_State_Particles(){
 			partrad = 112;
 		}
 		
+		if scurrentstate = "Ascending" {
+			parts = spr_Casting_Part;	
+			partrad = 112;
+		}
+		
 		var partx = 20;
 		if image_xscale < 0 {
 			partx = -20;	

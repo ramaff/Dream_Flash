@@ -16,39 +16,33 @@ function scr_State_Form(){
 		scr_F03(false);
 	}
 	
-	if scurrentstate = "Powering Up" and global.soultransformedstate = "Snake" {
-		sprite_index = spr_Snake_Powering_Up;	
-		//image_index = 12;
+	if scurrentstate = "Powering Up" {
 		image_index = 14 - ceil(statepoweruptime / 5);
+		if global.soultransformedstate = "Snake" {
+			sprite_index = spr_Snake_Powering_Up;
+		}
+		if global.soultransformedstate = "Beast" {
+			sprite_index = spr_Beast_Powering_Up;
+		}
+		if global.soultransformedstate = "Mechanical" {
+			sprite_index = spr_Mechanical_Powering_Up;	
+		}
+		if global.soultransformedstate = "Scrub" {
+			sprite_index = spr_Scrub_Powering_Up;	
+		}
+		if global.soultransformedstate = "Spike" {
+			sprite_index = spr_Spike_Powering_Up;
+		}
+		if global.soultransformedstate = "Bleeding" {
+			sprite_index = spr_Bleeding_Powering_Up;
+		}
+		if global.soultransformedstate = "Casting" {
+			sprite_index = spr_Casting_Powering_Up;
+		}
+		if global.soultransformedstate = "Ascending" {
+			sprite_index = spr_Ascending_Powering_Up;
+		}
 	}
-	if scurrentstate = "Powering Up" and global.soultransformedstate = "Beast" {
-		sprite_index = spr_Beast_Powering_Up;	
-		//image_index = 12;
-		image_index = 14 - ceil(statepoweruptime / 5);
-	}
-	if scurrentstate = "Powering Up" and global.soultransformedstate = "Mechanical" {
-		sprite_index = spr_Mechanical_Powering_Up;	
-		image_index = 14 - ceil(statepoweruptime / 5);
-	}
-	if scurrentstate = "Powering Up" and global.soultransformedstate = "Scrub" {
-		sprite_index = spr_Scrub_Powering_Up;	
-		image_index = 14 - ceil(statepoweruptime / 5);
-	}
-	if scurrentstate = "Powering Up" and global.soultransformedstate = "Spike" {
-		sprite_index = spr_Spike_Powering_Up;	
-		//image_index = 12;
-		image_index = 14 - ceil(statepoweruptime / 5);
-	}
-	if scurrentstate = "Powering Up" and global.soultransformedstate = "Bleeding" {
-		sprite_index = spr_Bleeding_Powering_Up;	
-		image_index = 14 - ceil(statepoweruptime / 5);
-	}
-	if scurrentstate = "Powering Up" and global.soultransformedstate = "Casting" {
-		sprite_index = spr_Casting_Powering_Up;	
-		image_index = 14 - ceil(statepoweruptime / 5);
-	}
-	
-	
 	
 	if scurrentstate != "Base" and global.bosscount = 0 and global.stateTutorial = 0 and (!instance_exists(obj_Higher_State_Note)) {
 		instance_create(x,y,obj_Higher_State_Note);		 
@@ -97,6 +91,12 @@ function scr_State_Form(){
 	if scurrentstate = "Mechanical" {
 		if sprite_index != spr_Mechanical_Soul_Hard_Think {
 			sprite_index = spr_Mechanical_Soul;
+		}
+	}
+	
+	if scurrentstate = "Ascending" {
+		if sprite_index != spr_Ascending_Soul_Hard_Think {
+			sprite_index = spr_Ascending_Soul;
 		}
 	}
 }
