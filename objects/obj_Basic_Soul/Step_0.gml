@@ -65,27 +65,6 @@ if ((dx != 0) or (dy != 0)) and move {
 	}
 	var aDif = angle_difference(soulDirectionAttempt, soulCurrentDirection);
 	
-	/*
-	if soulDirectionAttempt = soulCurrentDirection || soulFriction >= 1 {
-		soulCurrentSpeed += 0.2 * smovemultiplier * soulAcceleration;
-		soulCurrentDirection = soulDirectionAttempt;
-	} else {
-		if abs(aDif) > 90 {
-			soulCurrentSpeed -= 0.2 * smovemultiplier * soulFriction;
-		} /*else {
-			var aChange = soulFriction * 45;
-			if abs(aDif) < aChange {
-				soulCurrentDirection = soulDirectionAttempt;	
-			} else if aDif > 0 {
-				soulCurrentDirection -= aChange;
-			} else if aDif < 0 {
-				soulCurrentDirection -= aChange;
-			}
-		} */
-		/*if soulCurrentSpeed <= 0 {
-			soulCurrentDirection = soulDirectionAttempt;	
-		} 
-	}*/
 	soulCurrentHorizontalSpeed += lengthdir_x(smovemultiplier * 0.2 * soulAcceleration, soulDirectionAttempt)
 	soulCurrentVerticalSpeed += lengthdir_y(smovemultiplier * 0.2 * soulAcceleration, soulDirectionAttempt)
 	var maxHSpeed = abs(lengthdir_x(smovemultiplier, soulDirectionAttempt))

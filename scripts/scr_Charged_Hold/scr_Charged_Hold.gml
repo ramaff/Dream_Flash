@@ -24,7 +24,17 @@ function scr_Charged_Hold() {
 	
 	var cUpAmt = ((3 + global.P[5]) / 3);
 	
-	if weaponcharge = 10 || weaponcharge = 110 || weaponcharge = 111 || weaponcharge = 153 || weaponcharge = 212 || weaponcharge = 312 || weaponcharge = 405 || weaponcharge = 411 || weaponcharge = 412 {
+	if scurrentstate = "Ascending" || weaponcharge = 10 || weaponcharge = 110 || weaponcharge = 111 || weaponcharge = 153 || weaponcharge = 212 || weaponcharge = 312 || weaponcharge = 405 || weaponcharge = 411 || weaponcharge = 412 {
+		if scurrentstate = "Ascending" {
+			Shot_Charge_Power = current_weapon_stats.Shot_Power * 10;
+			Shot_Charge_Speed = current_weapon_stats.Shot_Speed * 0.25;
+			Shot_Charge_Lifespan = 0;	
+			Shot_Charge_Knockback = 10;
+			Shot_Charge_Size = current_weapon_stats.Shot_Size * 0.5;
+			Charge_Total_Time = 120;
+			Charge_Essence = weaponCost * 7.5;
+		}
+		
 		wtt = Charge_Total_Time;
 		wdelay = weaponDelay;
 		wenergy = Charge_Essence;
