@@ -5,7 +5,7 @@
   "isCompatibility": false,
   "isDnD": false,
   "parent": {
-    "name": "JSon",
-    "path": "folders/Scripts/JSon.yy",
+    "name": "JSON load stats",
+    "path": "folders/Scripts/JSON load stats.yy",
   },
 }

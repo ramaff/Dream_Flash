@@ -60,6 +60,7 @@ function scr_Soul_Teleport() {
 		
 		scr_Spike_Soul_Teleport();
 		scr_Casting_Soul_Teleport();
+		scr_Ascending_Soul_Teleport();
 	
 		scr_Sound_Effect(sd_Soul_Teleport);
     

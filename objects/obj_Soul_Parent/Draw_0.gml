@@ -11,6 +11,13 @@ draw_sprite_ext(spr_Soul_Glow,0,x,y,flk,flk,0,c_white,0.15);
     draw_self();
 //shader_reset();
 
+current_weapon_stats = variable_struct_get(global.weapon_stats, string(weaponcharge))
+
+if Charge_Hold = 2 {
+	var size = Charge_Size;
+	draw_sprite_ext(asset_get_index(current_weapon_stats.Shot_Sprite), 0, x, y - 50, size, size, 0, c_white, 1)
+}
+
 /*
 if mouse_check_button(mb_left) {
 	//draw_sprite_ext(spr_The_Soul_Hard_Think_Face,0,x,y,image_xscale,image_yscale,0,c_white,image_alpha);	

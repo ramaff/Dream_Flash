@@ -6,8 +6,8 @@ function scr_State_Weapon_Mod(){
 		reverie = scr_Chance(10 / global.F[5]);
 	}
 	
-	if other.Shot_Off_State = 0 {
-		if (obj_Soul_Parent.scurrentstate == "Snake" || (obj_Soul_Parent.stransformedstate == "Snake" and reverie == true)) and shotorigin = obj_Soul_Parent {
+	if other.Shot_Off_State = 0 and shotorigin = obj_Soul_Parent {
+		if (obj_Soul_Parent.scurrentstate == "Snake" || (obj_Soul_Parent.stransformedstate == "Snake" and reverie == true)) {
 			shotsnakemove = 2;
 			shottargetX = mouse_x;
 			shottargetY = mouse_y;
@@ -31,7 +31,7 @@ function scr_State_Weapon_Mod(){
 			shotspeed = shotspeed * 2;
 			speed = shotspeed;
 		}
-		if (obj_Soul_Parent.scurrentstate == "Beast" || (obj_Soul_Parent.stransformedstate == "Beast" and reverie == true)) and shotorigin = obj_Soul_Parent {
+		if (obj_Soul_Parent.scurrentstate == "Beast" || (obj_Soul_Parent.stransformedstate == "Beast" and reverie == true)) {
 		
 			image = 1;
 		
@@ -47,7 +47,7 @@ function scr_State_Weapon_Mod(){
 		    shotpower = shotpowermax;
 		    shotPowerLevel = shotPowerLevel * (1.5 * global.soulstateformboost);
 		}
-		if (obj_Soul_Parent.scurrentstate == "Scrub" || (obj_Soul_Parent.stransformedstate == "Scrub" and reverie == true)) and shotorigin = obj_Soul_Parent {
+		if (obj_Soul_Parent.scurrentstate == "Scrub" || (obj_Soul_Parent.stransformedstate == "Scrub" and reverie == true)) {
 		
 			image = 1;
 			shotduplicatesprite = sprite_index;
@@ -87,7 +87,7 @@ function scr_State_Weapon_Mod(){
 				shothomingspeed += 5;	
 			}
 		}
-		if (obj_Soul_Parent.scurrentstate == "Spike" || (obj_Soul_Parent.stransformedstate == "Spike" and reverie == true)) and shotorigin = obj_Soul_Parent {
+		if (obj_Soul_Parent.scurrentstate == "Spike" || (obj_Soul_Parent.stransformedstate == "Spike" and reverie == true)) {
 		
 			shotspeed = shotspeed * (1.25 * global.soulstateformboost);
 			shotpierce += 1;
@@ -104,7 +104,7 @@ function scr_State_Weapon_Mod(){
 			}
 		
 		}
-		if (obj_Soul_Parent.scurrentstate == "Casting" || (obj_Soul_Parent.stransformedstate == "Casting" and reverie == true)) and shotorigin = obj_Soul_Parent and other.Shot_Beam = 0 {
+		if (obj_Soul_Parent.scurrentstate == "Casting" || (obj_Soul_Parent.stransformedstate == "Casting" and reverie == true)) and other.Shot_Beam = 0 {
 		
 			image = 1;
 		
@@ -156,6 +156,21 @@ function scr_State_Weapon_Mod(){
 				
 			target = other;
 			otarget = other.id;
+		}
+	
+		if (obj_Soul_Parent.scurrentstate == "Ascending" || (obj_Soul_Parent.stransformedstate == "Ascending" and reverie == true)) {
+			
+			shot_stats.Shot_Lobbing = true;
+			shot_stats.Shot_Height = 50;
+			shot_stats.Shot_Fall_Speed = -0.5;
+			var grav = (100 / (shotlifespan * shotlifespan)) - (-1 / shotlifespan) 
+			shot_stats.Shot_Gravity = grav + 0.01
+			y -= shot_stats.Shot_Height;
+			
+			shotchain = 4;
+			shotchaintype = 2;
+			shotchainpower = shotpower / 4;
+			shotchainrange = 500
 		}
 	}
 }

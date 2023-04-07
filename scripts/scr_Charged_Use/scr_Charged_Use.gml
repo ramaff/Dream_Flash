@@ -22,6 +22,9 @@ function scr_Charged_Use() {
 		        sdelay += (weaponDelay - sdelayconservation) / sdelayconservationfactor / ((6 + global.Weap[weaponcharge]) / 6);
 		        energyCost = (weaponCost - senergyconservation) / senergyconservationfactor / ((6 + global.Weap[weaponcharge]) / 6);
 		        Charge_Hold = 1;
+				if scurrentstate = "Ascending" {
+					Charge_Hold = 2;	
+				}
 		    }
 
 		}
