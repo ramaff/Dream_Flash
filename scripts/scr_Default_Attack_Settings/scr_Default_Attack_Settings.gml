@@ -6,7 +6,9 @@ function scr_Default_Attack_Settings() {
 	    bullet_power = bosspower;
 	    bullet_direction = (-10 + random(20)) / bossaccuracy;
 	    bullet_lifespan = 180;
+		bullet_lob_time = 40;
 	    bullet_size = 1;
+		bullet_size_max = 1;
 	    bullet_count = 1;
 	    bullet_spread = 0;
 	    bullet_image_speed = 1;
@@ -26,8 +28,9 @@ function scr_Default_Attack_Settings() {
 		bullet_crowd_acceleration = 0;
 		
 		bullet_bounce_Y = 0;
-		bullet_bounce_speed = 10;
+		bullet_bounce_speed = 4;
 	    bullet_bounce_direction = 1;
+		bullet_bounce_gravity = 0.2;
 		
 		bullet_charged = false;
 		

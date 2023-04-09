@@ -36,6 +36,7 @@ function scr_Bullet_Shoot_Properties() {
 	bulletbouncedirection = other.bullet_bounce_direction;
 	sprite_index = bulletsprite;
 	bulletsize = other.bullet_size * 0.5;
+	bulletsizemax = other.bullet_size_max * 0.5;
 	image_xscale = bulletsize;
 	image_yscale = bulletsize;
 	bulletspeed = other.bullet_speed;
@@ -47,6 +48,12 @@ function scr_Bullet_Shoot_Properties() {
 	bulletpowermax = bulletpower;
 	scr_E08();
 	bulletlife = other.bullet_lifespan;
+	
+	bulletlobtime = other.bullet_lob_time;
+	bounce_speed = other.bullet_bounce_speed;
+	bounce_gravity = 2 * bounce_speed / other.bullet_lob_time;
+	bullet_bounce_Y = other.bullet_bounce_Y;
+	
 	bulletimagespeed = other.bullet_image_speed;
 				
 	bulletcrowddirection = other.bullet_crowd_direction;
@@ -66,10 +73,9 @@ function scr_Bullet_Shoot_Properties() {
 	alarm[8] = 2;
 				
 	bulletspeed = bulletspeed * ((200 + global.soulparanoia + global.soulparanoiaTemp) / 200) * ((200 + global.soulloathing + global.soulloathingTemp) / 200);
-				
-				
+	
 	speed = bulletspeed;
-			
+	
 	with instance_create(x,y,obj_LightS) {
 		target = other.id;
 		//lightsize = other.shotlightsize;
@@ -78,14 +84,6 @@ function scr_Bullet_Shoot_Properties() {
 		lightsize = other.bulletsize;
 	}
 				
-	/*
-	with instance_create(x,y,obj_Dream_Light) {
-		target = other.id;
-		//lightsize = other.shotlightsize;
-				
-		//sprite_index = spr_Bullet_Glow;
-		lightsize = other.bulletsize;
-	}*/
 	if bpart != 0 {
 		scr_Bullet_Particle_Setup();
 	}

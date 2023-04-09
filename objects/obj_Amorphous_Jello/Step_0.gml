@@ -84,7 +84,7 @@ if activeAttackDelay <= 0 and patternCooldown <= 0 and patternCount > 0 {
 		bullet_speed = bossbulletspeed * 2;
 		direction = bullet_direction;
 		var face_direction = round(direction / 180) * 180
-		bullet_lifespan = 170;
+		bullet_lifespan = 127;
 		
 		boss_yoffset = -70;
 		if face_direction = 0 {
@@ -93,7 +93,25 @@ if activeAttackDelay <= 0 and patternCooldown <= 0 and patternCount > 0 {
 			boss_xoffset = -10;
 		}
 		
-		scr_Boss_Shoot();
+		if champ = 0 {
+			scr_Boss_Shoot();
+		}
+		if champ = 1 {
+			bullet_type = obj_Poison_Jelly_Bullet;
+			bullet_sprite = spr_Poison_Lob_Shot;
+			repeat(3) {
+				bullet_direction = scr_Boss_Bullet_Direction_Formula(scr_Soul_Point(), 75)
+				bullet_speed = bossbulletspeed * (1 + random(0.6) + ((patternCountMax - patternCount) / 3))
+				scr_Boss_Shoot();
+			}
+		}
+		if champ = 2 {
+			repeat(7) {
+				bullet_direction = scr_Boss_Bullet_Direction_Formula(scr_Soul_Point(), 90)
+				bullet_speed = bossbulletspeed * (1 + random(0.6) + ((patternCountMax - patternCount) / 3))
+				scr_Boss_Shoot();
+			}
+		}
 	
 		// If you gotta change the pattern aim direction
 	    // bossPatternDirection += 0;
@@ -113,10 +131,22 @@ if activeAttackDelay <= 0 and patternCooldown <= 0 and patternCount > 0 {
 			
 			bullet_type = obj_Jelly_Bullet_Straight;
 			bullet_sprite = spr_Lob_Shot;
-			bullet_speed = bossbulletspeed * 2;
-			bullet_lifespan = 130;
+			bullet_speed = bossbulletspeed * 1.5;
+			bullet_lifespan = 86;
 			
-			scr_Boss_Shoot();
+			if champ = 0 {
+				scr_Boss_Shoot();
+			}
+			if champ = 1 {
+				bullet_count = 1;
+				bullet_sprite = spr_Poison_Lob_Shot;
+				repeat(6) {
+					bullet_speed = bossbulletspeed * (1 + random(1));
+					bullet_direction = random(360);
+					
+					scr_Boss_Shoot();
+				}
+			}
 			
 			scr_Screen_Shake(7,5);	
 		}
@@ -141,14 +171,16 @@ if activeAttackDelay <= 0 and patternCooldown <= 0 and patternCount > 0 {
 		boss_xoffset = 0;
 		boss_yoffset = -40;
 		
-		bullet_type = obj_Jello_Spawning_Bullet
+		bullet_type = obj_Jello_Spawning_Bullet;
 		bullet_count = 1;
-		bullet_lifespan = 80;
+		bullet_lob_time = 45 + random(30);
+		bullet_lifespan = bullet_lob_time + 2;
+		bullet_bounce_speed = 3 + random(2);
 		bullet_sprite = spr_Lob_Shot;
 		bullet_size = 0.8;
 		
 		repeat(3) {
-			bullet_direction = random(360)
+			bullet_direction = random(360);
 			scr_Boss_Shoot();
 		}
 	
@@ -164,17 +196,38 @@ if activeAttackDelay <= 0 and patternCooldown <= 0 and patternCount > 0 {
 			
 			boss_yoffset = 20;
 			
-			bullet_direction_base = scr_Soul_Point();
+			//bullet_direction_base = scr_Soul_Point();
 			bullet_count = 1;
 			
 			bullet_type = obj_Jelly_Bullet;
 			bullet_sprite = spr_Lob_Shot;
-			bullet_lifespan = 40;
+			bullet_lifespan = 62;
+			bullet_lob_time = 60;
+			bullet_bounce_speed = 4;
 			
-			repeat(3) {
-				bullet_direction = bullet_direction_base - 60 + random(120)
-				bullet_speed = bossbulletspeed * (0.9 + random(0.7))
-				scr_Boss_Shoot();
+			if champ = 0 {
+				repeat(3) {
+					bullet_bounce_speed = 4 + random(2);
+					bullet_lob_time = 45 + random(25);
+					bullet_lifespan = bullet_lob_time + 2;
+					
+					bullet_direction = scr_Boss_Bullet_Direction_Formula(scr_Soul_Point(), 120)
+					bullet_speed = bossbulletspeed * (1 + random(1))
+					scr_Boss_Shoot();
+				}
+			}
+			if champ = 1 {
+				bullet_type = obj_Poison_Jelly_Bullet;
+				bullet_sprite = spr_Poison_Lob_Shot;
+				repeat(8) {
+					bullet_bounce_speed = 4 + random(4);
+					bullet_lob_time = 60 + random(30);
+					bullet_lifespan = bullet_lob_time + 2;
+					
+					bullet_direction = random(360);
+					bullet_speed = bossbulletspeed * (1 + random(1));
+					scr_Boss_Shoot();
+				}
 			}
 			
 			scr_Screen_Shake(3,5);

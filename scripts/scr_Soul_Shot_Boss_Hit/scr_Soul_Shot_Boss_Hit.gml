@@ -110,7 +110,7 @@ function scr_Soul_Shot_Boss_Hit() {
 	            if shotknockback >= other.bossknockdefense {
 	                other.bossknockbackdirection = direction;
 	                other.bossknockback = (shotknockback - other.bossknockdefense);
-	                other.bossknockbacktime = 5;
+	                other.bossknockbacktime = 3;
 					if other.bossknockback > 200 {
 						other.bossknockback = 200;	
 					}
@@ -174,14 +174,7 @@ function scr_Soul_Shot_Boss_Hit() {
 	                    }
 	                }
 	            }
-				/*
-	            with instance_create(x,y,obj_Essence_Impact_Show) {
-					sprite_index = other.shotexplosionsprite;
-	                size = other.shotimpactsize / 150;
-	                image_xscale = size;
-	                image_yscale = size;
-	            }
-				*/
+
 				if shotimpactexplode = 1 {
 					scr_Boss_Hit_Explosion();
 				}
@@ -204,43 +197,7 @@ function scr_Soul_Shot_Boss_Hit() {
 				    instance_destroy();
 				}
 			}
-	      //  } 
-			
-			/*
-			if shotchain <= 0 || shotmelee = 1 { 
-				if shotcontinue = 0 {
-		            shotpierce--;
-		            if shotpierce <= 0 {
-		                instance_destroy();
-		            }
-				} else {
-					if shotpower >= (other.bosshealth + shotpower) {
-				        shotpower -= (other.bosshealth + shotpower);
-				    } else {
-				        instance_destroy();
-				    }
-				}
-	        } else {
-				if (shotmelee = 0 and shothomingtype != 2) {
-		            shotchain--;
-		            target = noone
-		            x = other.x;
-		            y = other.y;
-		            with obj_Boss_Parent {
-		                dis = distance_to_object(other);
-		                var hit_again = variable_struct_exists(projectile_hits, other.shot_boss_id)
-						if !hit_again
-		                if other.target == noone || dis < other.target.dis
-		                if collision_circle(other.x, other.y, other.shotchainrange, id, true, false)
-		                other.target = id;
-		            }
-		            if target != noone {
-		                move_towards_point(target.x,target.y,shotchainspeed);
-		            } else if shotpierce <= 0 and shotextrahits <= 0 {
-		                instance_destroy();
-		            }
-				}
-	        } */
+
         
 	        if other.currentphase >= other.finalphase
 	        if other.bosshealth <= 0 {

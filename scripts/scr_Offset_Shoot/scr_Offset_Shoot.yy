@@ -5,7 +5,7 @@
   "isCompatibility": false,
   "isDnD": false,
   "parent": {
-    "name": "Shooting",
-    "path": "folders/Scripts/Boss Commands/Shooting.yy",
+    "name": "bossv1_scripts",
+    "path": "folders/Scripts/Boss Commands/Shooting/bossv1_scripts.yy",
   },
 }

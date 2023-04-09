@@ -1,10 +1,14 @@
 
 	var dir = 0;
+	var spawned_bullet_sprite = spr_Glowy_Purple_Shot;
+	if sprite_index = spr_Poison_Lob_Shot {
+		spawned_bullet_sprite = spr_Glowy_Green_Shot;	
+	}
     repeat(4) {
         dir += 90;
         with instance_create(x,y,obj_Basic_Bullet) {
             scr_Bullet_Replicate_Properties();
-            sprite_index = spr_Glowy_Purple_Shot;
+            sprite_index = spawned_bullet_sprite;
             bulletspeed = other.bulletspeed * (1);
             bulletpower = global.stagedamage;
             speed = bulletspeed;
