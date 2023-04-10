@@ -1,16 +1,12 @@
 
 	var dir = 0;
-    var spawned_bullet_sprite = spr_Glowy_Purple_Shot;
-	var spawned_pool_sprite = spr_Jelly_Pool;
-	if sprite_index = spr_Poison_Lob_Shot {
-		spawned_bullet_sprite = spr_Glowy_Green_Shot;
-		spawned_pool_sprite = spr_Poison_Pool;
-	}
+    var spawned_pool_sprite = spr_Tar_Pool;
+	
     repeat(4) {
         dir += 90;
         with instance_create(x,y,obj_Basic_Bullet) {
             scr_Bullet_Replicate_Properties();
-            sprite_index = spawned_bullet_sprite;
+            sprite_index = spr_Glowy_Purple_Shot;
             bulletspeed = other.bulletspeed * (1);
             bulletpower = global.stagedamage;
             speed = bulletspeed;
@@ -20,7 +16,7 @@
         }
     }
 	
-	with instance_create(x,y,obj_Poison_Pool) {
+	with instance_create(x,y,obj_Tar_Pool) {
         scr_Bullet_Replicate_Properties();
         bulletsprite = spawned_pool_sprite;
         sprite_index = spawned_pool_sprite;

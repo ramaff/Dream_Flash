@@ -33,6 +33,10 @@
 	
 	bullet_type = obj_Poison_Ball_Bullet;
     bullet_sprite = spr_Glowy_Green_Shot;
+	
+	bullet_lob_time = 50 + random(30);
+	bullet_lifespan = bullet_lob_time + 2;
+	bullet_bounce_speed = 3 + random(3);
     
 	bullet_speedfac_min = 1;
     bullet_speedfac_add = 1;

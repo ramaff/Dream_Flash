@@ -106,9 +106,25 @@ if activeAttackDelay <= 0 and patternCooldown <= 0 and patternCount > 0 {
 			}
 		}
 		if champ = 2 {
-			repeat(7) {
-				bullet_direction = scr_Boss_Bullet_Direction_Formula(scr_Soul_Point(), 90)
-				bullet_speed = bossbulletspeed * (1 + random(0.6) + ((patternCountMax - patternCount) / 3))
+			bullet_type = obj_Bubble_Bullet;
+			bullet_sprite = spr_Pink_Bubble_Bullet;
+			repeat(5) {
+				bullet_direction = scr_Boss_Bullet_Direction_Formula(scr_Soul_Point(), 75)
+				bullet_speed = bossbulletspeed * (1.5 + random(0.8) + ((patternCountMax - patternCount) / 3))
+				scr_Boss_Shoot();
+			}
+		}
+		if champ = 8 {
+			bullet_type = obj_Tar_Ball_Bullet;
+			bullet_sprite = spr_Tar_Lob_Shot;
+			
+			bullet_bounce_speed = 4 + random(4);
+			bullet_lob_time = 60 + random(30);
+			bullet_lifespan = bullet_lob_time + 2;
+			
+			repeat(2) {
+				bullet_direction = scr_Boss_Bullet_Direction_Formula(scr_Soul_Point(), 75)
+				bullet_speed = bossbulletspeed * (1 + random(0.3) + ((patternCountMax - patternCount) / 2.5))
 				scr_Boss_Shoot();
 			}
 		}
@@ -147,6 +163,31 @@ if activeAttackDelay <= 0 and patternCooldown <= 0 and patternCount > 0 {
 					scr_Boss_Shoot();
 				}
 			}
+			if champ = 2 {
+				bullet_type = obj_Bubble_Bullet;
+				bullet_sprite = spr_Pink_Bubble_Bullet;	
+				bullet_lifespan = 150;
+				
+				var add = 0
+				repeat(4) {
+					bullet_speed = bossbulletspeed * (1.5 + add + random(0.5));
+					bullet_direction = scr_Boss_Bullet_Direction_Formula(45, 40);
+					scr_Boss_Shoot();
+					add += 0.35;
+				}
+			}
+			if champ = 8 {
+				bullet_count = 6;
+				bullet_type = obj_Tar_Jelly_Bullet_Straight
+				bullet_sprite = spr_Tar_Lob_Shot;
+				
+				bullet_lob_time = 60;
+				bullet_lifespan = 62;
+				
+				bullet_spread = 60;
+					
+				scr_Boss_Shoot();
+			}
 			
 			scr_Screen_Shake(7,5);	
 		}
@@ -179,6 +220,16 @@ if activeAttackDelay <= 0 and patternCooldown <= 0 and patternCount > 0 {
 		bullet_sprite = spr_Lob_Shot;
 		bullet_size = 0.8;
 		
+		if champ = 1 {
+			bullet_type = obj_PJello_Spawning_Bullet;
+		}
+		if champ = 2 {
+			bullet_type = obj_BBJello_Spawning_Bullet;	
+		}
+		if champ = 8 {
+			bullet_type = obj_BJello_Spawning_Bullet;	
+		}
+		
 		repeat(3) {
 			bullet_direction = random(360);
 			scr_Boss_Shoot();
@@ -205,7 +256,11 @@ if activeAttackDelay <= 0 and patternCooldown <= 0 and patternCount > 0 {
 			bullet_lob_time = 60;
 			bullet_bounce_speed = 4;
 			
-			if champ = 0 {
+			if champ = 0 || champ = 8 {
+				champ = 8 {
+					bullet_type = obj_Tar_Jelly_Bullet_Straight
+					bullet_sprite = spr_Tar_Lob_Shot;	
+				}
 				repeat(3) {
 					bullet_bounce_speed = 4 + random(2);
 					bullet_lob_time = 45 + random(25);
@@ -226,6 +281,16 @@ if activeAttackDelay <= 0 and patternCooldown <= 0 and patternCount > 0 {
 					
 					bullet_direction = random(360);
 					bullet_speed = bossbulletspeed * (1 + random(1));
+					scr_Boss_Shoot();
+				}
+			}
+			if champ = 2 {
+				bullet_type = obj_Bubble_Bullet;
+				bullet_sprite = spr_Pink_Bubble_Bullet;
+				bullet_lifespan = 150;
+				repeat(10) {
+					bullet_direction = scr_Boss_Bullet_Direction_Formula(scr_Soul_Point(), 180)
+					bullet_speed = bossbulletspeed * (1.6 + random(1.3))
 					scr_Boss_Shoot();
 				}
 			}

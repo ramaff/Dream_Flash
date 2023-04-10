@@ -37,8 +37,8 @@
   "properties": [],
   "solid": false,
   "spriteId": {
-    "name": "spr_Poison_Pool",
-    "path": "sprites/spr_Poison_Pool/spr_Poison_Pool.yy",
+    "name": "spr_Tar_Pool",
+    "path": "sprites/spr_Tar_Pool/spr_Tar_Pool.yy",
   },
   "spriteMaskId": null,
   "visible": false,
