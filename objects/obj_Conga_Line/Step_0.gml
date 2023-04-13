@@ -183,7 +183,26 @@ if activeAttack = 1 {
 		scr_Boss_Wobble("Horizontal", 2, 0.25, 0)	
 	}
 } else {
-	sprite_index = spr_Conga_Line;
+	switch(conga_type) {
+		case "normal":
+			sprite_index = spr_Conga_Line_v2;
+			break;
+		case "angry":
+			sprite_index = spr_Conga_Line_v2_Angry;
+			break;
+		case "shades":
+			sprite_index = spr_Conga_Line_v2_Cool;
+			break;
+		case "dope":
+			sprite_index = spr_Conga_Line_v2_Dope;
+			break;
+		case "dopey":
+			sprite_index = spr_Conga_Line_v2_Dopey;
+			break;
+		default:
+			sprite_index = spr_Conga_Line_v2;
+			break;
+	}
 }
 
 // So that the boss hurts soul on collision

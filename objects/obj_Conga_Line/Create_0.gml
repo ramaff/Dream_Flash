@@ -15,6 +15,8 @@ scr_Boss_Height_Setup(0);
 
 followtarget = noone;
 
+conga_type = choose("normal", "dope", "dopey", "angry", "shades");
+
 if instance_number(obj_Conga_Line) < 2 {
 	var ct = id;
 	var opdir = scr_Soul_Point() + 180;
