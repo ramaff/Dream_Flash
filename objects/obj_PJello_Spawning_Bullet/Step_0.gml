@@ -1,3 +1,5 @@
+image_index = 2;
+
 friction = speed / 100;
 
 scr_Wall_Bounce()

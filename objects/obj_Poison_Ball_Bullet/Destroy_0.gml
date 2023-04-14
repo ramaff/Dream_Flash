@@ -2,11 +2,11 @@
     bullet_type = obj_Poison_Pool;
     bulletsprite = spr_Poison_Pool;
     bulletspeed = 0;
-    bulletpower = bulletpower * 0.66;
+    bulletpower = global.stagedamage;
     bulletlife = 240;
     bullet_spread = 90;
     bullet_count = 1;
-	bulletsize = 0.5;
+	bulletsize = 0.33;
     
     bulletspeed = 0
     

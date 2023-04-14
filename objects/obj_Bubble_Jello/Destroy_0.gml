@@ -34,21 +34,25 @@
     bullet_spread = 0;
     boss_radius = 0;
 	
-	bullet_type = obj_Basic_Bullet;
-    bullet_sprite = spr_Glowy_Blue_Shot;
+	bullet_type = obj_Bubble_Bullet;
+	bullet_sprite = spr_Pink_Bubble_Bullet;
     
 	bullet_speedfac_min = 1;
     bullet_speedfac_add = 1;
     bullet_timefac_min = 1;
     bullet_timefac_add = 0;
 	
-	repeat(7) {
+	repeat(4) {
 		bullet_speed = bossbulletspeed * (0.75 + random(0.7));
-		bullet_direction = scr_Soul_Point() - 25 + random(50);
 		
-		scr_Suicide_Vomit_Tar();
+		bullet_direction = scr_Boss_Bullet_Direction_Formula(scr_Soul_Point(), 50)
+		
+		scr_Suicide_Even_Shoot(1,bullet_speed,300, bullet_direction, 0);
+		
+		//scr_Boss_Shoot()
+		//scr_Suicide_Vomit_Tar();
 	}
     
-    ds_list_destroy(projectile_hits);
+    //ds_list_destroy(projectile_hits);
     scr_H14_Minion();
 

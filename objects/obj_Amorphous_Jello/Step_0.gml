@@ -217,8 +217,7 @@ if activeAttackDelay <= 0 and patternCooldown <= 0 and patternCount > 0 {
 		bullet_lob_time = 45 + random(30);
 		bullet_lifespan = bullet_lob_time + 2;
 		bullet_bounce_speed = 3 + random(2);
-		bullet_sprite = spr_Lob_Shot;
-		bullet_size = 0.8;
+		bullet_sprite = spr_Slime_Minion_Hop;
 		
 		if champ = 1 {
 			bullet_type = obj_PJello_Spawning_Bullet;

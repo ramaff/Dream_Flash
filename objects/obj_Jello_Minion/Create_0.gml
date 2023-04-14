@@ -1,18 +1,15 @@
-bossmaxhealth = 25;
-bosshealth = 25;
-bosspower = 5;
-bossbulletspeed = 2;
-bossmovespeed = 1;
-bossattackspeed = 1;
-bossaccuracy = 1;
+boost = 0;
+champ = 0;
 
-alarm[0] = 10 / bossattackspeed;
+scr_Boss_Minion_Stat_Setup();
 
-image_speed = 0;
-image_index = 0;
+scr_Boss_Attack_Setup(2);
 
-bossSize = 0.5;
-image_xscale = bossSize;
-image_yscale = bossSize;
+// Required, usually set to 0.5
+scr_Boss_Size_Setup(0.5);
 
-scr_Boss_Attack_Setup();
+// If boss is visually 'floating' setup boss height
+// Needed for bobbing/boss shadows
+scr_Boss_Height_Setup(0);
+
+scr_Boss_Stretch("Horizonal", 1);

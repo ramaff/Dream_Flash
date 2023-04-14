@@ -26,6 +26,14 @@ if activeAttackDelay <= 0 and activeAttackCooldown <= 0 and activeAttackDuration
 		// patternDirection = scr_Soul_Point();
 		// patternDirection = random(360;
     }
+	
+	// Hop leap attack setup example
+	if activeAttack = 2 {
+		// 
+		scr_Boss_Attack_Time_Setup_v2(50, 30, 1, 30, 30, -10);
+		
+		scr_Boss_Jump_Setup_v2(0, 7 * bossmovespeed, x, y);
+    }
 }
 
 //////////////////////////////////////////////////////////////////////////////////////////

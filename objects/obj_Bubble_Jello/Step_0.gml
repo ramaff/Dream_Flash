@@ -1,66 +1,94 @@
-scr_Boss_Status_Step();
-scr_Boss_Attack_Step();
+/// @description  Boss Step Event
 
-///
+// Mandatory:
+scr_Boss_Step(2);
 
-if bossActiveAttackDelay[1] <= 0 and bossActiveAttackCooldown[1] <= 0 and bossActiveAttackDuration[1] <= 0 {
-    bossActiveAttack[1] = choose(1);
+// If boss is floating in air, can make it bob up and down:
+//scr_Boss_Height_Bob(30, 1, 0);
+
+// Make boss shape wobble:
+scr_Boss_Wobble("Horizontal", 0.3, 1, 0);
+
+//////////////////////////////////////////////////////////////////////////////////////////
+/////////////// Active Attack Prep
+//////////////////////////////////////////////////////////////////////////////////////////
+
+if activeAttackDelay <= 0 and activeAttackCooldown <= 0 and activeAttackDuration <= 0 {
+    
+	// Pick a random attack to do
+	activeAttack = choose(1);
 	
-	state = states.normal;
-	
-    if bossActiveAttack[1] = 1 {
-		jumpDirection = "Up";
-		jumpHeight = 0;
+    if activeAttack = 1 {
+		// Setup how many attacks per boss move, delay, etc
+		scr_Boss_Attack_Time_Setup_v2(50, 30, 1, 30, 30, -10);
 		
-        scr_Boss_Dash_Setup();
-        bossPatternCount = 48;
-        bossPatternCountMax = bossPatternCount;
-        bossPatternCooldown = 10;
-        bossPatternCooldownMax = 1;
+		scr_Boss_Jump_Setup_v2(0, 7 * bossmovespeed, x, y);
 		
-		var bossdirection = point_direction(x,y,instance_nearest(x,y,obj_Soul).x,instance_nearest(x,y,obj_Soul).y);
-        bossDashDirection = bossdirection;
-		
-		scr_Hop_Distance_Calc(4 * bossmovespeed);
-		
-		bossDashSpeed = 0;
-		state = states.jumping;
-		
-		bossActiveAttackDuration[1] = 15 + bossattackspeed * bossPatternCooldownMax * bossPatternCount;
-        bossActiveAttackCooldown[1] = 30 + random(15);
+		// Can set up the initial pattern direction
+		// patternDirection = scr_Soul_Point();
+		// patternDirection = random(360;
     }
 }
 
+//////////////////////////////////////////////////////////////////////////////////////////
 /// Active Attack Pattern Code
+//////////////////////////////////////////////////////////////////////////////////////////    
 
+scr_Default_Attack_Settings();
 
-if bossActiveAttackDelay[1] <= 0 and bossPatternCooldown <= 0 and bossPatternCount > 0 {
-        
-	if bossActiveAttack[1] = 1 {
-        scr_Boss_Dash_Movement(6,2);
-		
-		speed = bossDashSpeed;
-        direction = bossDashDirection;
-		
-		scr_Jump_Movement(2);
-		
-		bossPatternCount -= 1;
-        bossPatternCooldown += bossPatternCooldownMax;
-    }
-	
-}
-
-/// Active Attack Post
-
-if state = states.jumping {
-	if jumpHeight > 10 {
-		image_index = 1;
-	} else {
-		if jumpDirection = "Down" {
-			state = states.normal;
+// If its time to attack, attack
+if activeAttackDelay <= 0 and patternCooldown <= 0 and patternCount > 0 {
+   
+    if activeAttack = 1 {
+		if patternCount = 1 {
+			scr_Boss_Stretch("Horizontal", 1);
+			
+			bullet_type = obj_Bubble_Bullet;
+			bullet_sprite = spr_Pink_Bubble_Bullet;
+			
+			bullet_direction = random(360);
+			bullet_speed = bossbulletspeed * (0.5 + random(0.5));
+			
+			scr_Boss_Shoot();
 		}
-		image_index = 0;
+		
+		scr_Boss_Dash_Movement_v2(4,2);
+		
+		speed = dashSpeed;
+        direction = dashDirection;
+		
+		scr_Jump_Movement_v2(2);
 	}
+	
+	// Maybe I should put this into a script
+    patternCount -= 1;
+    patternCooldown += patternCooldownMax;
 }
 
+//////////////////////////////////////////////////////////////////////////////////////////
+/// Active Attack Post
+//////////////////////////////////////////////////////////////////////////////////////////
+
+if activeAttackDuration <= 0 { 
+    activeAttack = 0;
+}
+
+/// Boss Sprite Code
+
+// Go back to normal default size
+scr_Boss_Size_Lerp(0.15);
+
+// Handles boss attack sprite animation
+if activeAttack != 0 {
+	var holdFrame = 1;
+	scr_Boss_Attack_Sprite_v2(spr_Slime_Minion_Hop, holdFrame, 2, 2, 20);
+	if image_index = holdFrame {
+		scr_Boss_Wobble("Horizontal", 2, 0.25, 0)	
+	}
+} else {
+	sprite_index = spr_Slime_Minion;
+}
+
+// So that the boss hurts soul on collision
+// Smaller than the actual boss hitbox
 scr_Boss_Soul_Hitbox(sprite_index);
