@@ -50,7 +50,7 @@ if activeAttackDelay <= 0 and patternCooldown <= 0 and patternCount > 0 {
 				bullet_bounce_speed = 3 + random(3);
 				bullet_lob_time = 50 + random(30);
 				bullet_lifespan = bullet_lob_time + 2;
-				bullet_speed = bossbulletspeed * (1 + random(0.5));
+				bullet_speed = bossbulletspeed * (0.7 + random(0.6));
 			
 				bullet_direction = random(360);
 				scr_Boss_Shoot();
