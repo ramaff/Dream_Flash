@@ -9,4 +9,5 @@ function scr_Minion_Shot_Stats(){
 	minion_accuracy = 1; 
 	
 	champ = 0;
+	
 }
