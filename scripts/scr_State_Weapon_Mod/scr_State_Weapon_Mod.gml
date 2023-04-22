@@ -158,7 +158,12 @@ function scr_State_Weapon_Mod(){
 			otarget = other.id;
 		}
 	
-		if (obj_Soul_Parent.scurrentstate == "Ascending" || (obj_Soul_Parent.stransformedstate == "Ascending" and reverie == true)) {
+		if scr_State_Active_Check("Ascending", reverie) {
+			
+			shotsize += 0.1;
+			shotsizemax += 0.1;
+			image_xscale = shotsize;
+			image_yscale = shotsize;
 			
 			shot_stats.Shot_Lobbing = true;
 			shot_stats.Shot_Height = 50;

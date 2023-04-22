@@ -10,4 +10,6 @@ function scr_Minion_Shot_Stats(){
 	
 	champ = 0;
 	
+	bossmaxhealth2 = 0;
+	
 }

@@ -35,7 +35,7 @@ if activeAttackDelay <= 0 and activeAttackCooldown <= 0 and activeAttackDuration
 			activeAttack = choose(4, 4, 2);	
 		}
 	}
-	activeAttack = 2;
+	//activeAttack = 2;
 	
 	// Guided Halo Bullets
     if activeAttack = 1 {
@@ -98,8 +98,8 @@ if activeAttackDelay <= 0 and patternCooldown <= 0 and patternCount > 0 {
 		boss_yoffset = 60
 		bullet_direction = 240 + random(60);
 		bullet_type = obj_Guided_Bullet_Halo_Bullet;
-		bullet_speed = bossbulletspeed * (3 - (patternCount * 0.5))
-		bullet_lifespan = 420;
+		bullet_speed = bossbulletspeed * (patternCount * 0.6)
+		bullet_lifespan = 240 + (patternCount * 60);
 		bullet_sprite = spr_Glowy_Yellow_Shot;
 		
 		scr_Boss_Shoot();
@@ -116,7 +116,7 @@ if activeAttackDelay <= 0 and patternCooldown <= 0 and patternCount > 0 {
 		bullet_lifespan = 15;
 		bullet_size = 2;
 		bullet_speed = 0;
-		bullet_blend = c_yellow;
+		bullet_blend = c_red;
 		
 		for(var i = 0; i < 7; i++) {
 			boss_xoffset = lightning_xx[i];
@@ -154,6 +154,9 @@ if activeAttackDelay <= 0 and patternCooldown <= 0 and patternCount > 0 {
 		    bullet_spread = 0;
 		    bullet_speed = bossbulletspeed * (2);
 			bullet_type = obj_Holy_Bounce_Ball;
+			bullet_bounce_speed = 3;
+			bullet_lob_time = 60;
+			bullet_lifespan = 182;
 			bullet_charged = true;
 			bullet_sprite = spr_Holy_Ball;
 			bullet_size = 0;

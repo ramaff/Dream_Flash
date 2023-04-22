@@ -1,6 +1,4 @@
 if !(instance_exists(Tutorial_Control)) {
-	
-	
 
     if Charge_Hold = 0 {
         //ds_list_clear(global.gembeam_hits);

@@ -11,8 +11,8 @@
   "managed": true,
   "overriddenProperties": [],
   "parent": {
-    "name": "Stationary Spawning Bullets",
-    "path": "folders/Objects/Boss Bullets/Stationary Spawning Bullets.yy",
+    "name": "Spawning Bullets",
+    "path": "folders/Objects/Boss Bullets/Spawning Bullets.yy",
   },
   "parentObjectId": {
     "name": "obj_Lob_Bullet",

@@ -28,11 +28,11 @@ if instance_number(obj_Conga_Line) < 2 {
 	var distt = 0;
 
 	for(var i = 0; i < 12; i++) {
-		distt = 50 * i
-		xx = lengthdir_x(distt, opdir - 15 + random(30)) + x;
-		yy = lengthdir_x(distt, opdir - 15 + random(30)) + y;
-		xx = scr_Round_To_Nearest(xx, 100)
-		yy = scr_Round_To_Nearest(yy, 100)
+		distt = 30 * i
+		xx = lengthdir_x(distt, opdir - 60 + random(120)) + x;
+		yy = lengthdir_y(distt, opdir - 60 + random(120)) + y;
+		xx = scr_Round_To_Nearest(xx, 50)
+		yy = scr_Round_To_Nearest(yy, 50)
 		with instance_create(xx,yy,obj_Conga_Line) {
 			followtarget = ct;
 		

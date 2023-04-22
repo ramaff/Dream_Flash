@@ -1,25 +1,26 @@
 image_angle = direction;
+bulletspeed += bulletspeed * 0.003;
 
 if instance_exists(obj_Soul_Parent) {
 
-    var bulletCenterX = obj_Soul_Parent.perX;
-    var bulletCenterY = obj_Soul_Parent.perY;
+    var bulletCenterX = center_x;
+    var bulletCenterY = center_y;
 	
-	var bulletOrbit = max(0, alarm[0] * bulletspeed / 3) 
+	center_x += lengthdir_x(bulletspeed / 2, direction);
+	center_y += lengthdir_y(bulletspeed / 2, direction);
+	
+	direction = scr_Angle_Converge(direction, scr_Soul_Point(), 0.5 + (bulletspeed / 6));
+	
+    bulletOrbit = 80 + (alarm[0] / 3);
     
-    //var bulletCircumference = distance_to_point(bulletCenterX,bulletCenterY) * 3.14;
-    
-    bulletAngle += 2;
-    //bulletAngle = bulletAngle mod 360
+    bulletAngle += 8;
     
 	var xx = lengthdir_x(bulletOrbit, bulletAngle) + bulletCenterX;
 	var yy = lengthdir_y(bulletOrbit, bulletAngle) + bulletCenterY;
 	
-	var dis = point_distance(x,y,xx,yy)
-	
 	speed = 0;
 	
-	x = lerp(x, xx, bulletspeed / 400);
-	y = lerp(y, yy, bulletspeed / 400);
+	x = lerp(x, xx, 0.05);
+	y = lerp(y, yy, 0.05);
 
 }

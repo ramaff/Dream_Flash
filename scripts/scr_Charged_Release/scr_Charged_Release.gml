@@ -83,7 +83,7 @@ function scr_Charged_Release() {
 		
 			scr_Shot_Creation();
 
-			weaponcharge = 0;
+			//weaponcharge = 0;
 	    }
 		
 		if global.V[7] > 0 {

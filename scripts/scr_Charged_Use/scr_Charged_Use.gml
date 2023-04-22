@@ -1,5 +1,6 @@
 function scr_Charged_Use() {
-	if scurrentstate = "Ascending" || global.currentweapon = 10 || global.currentweapon = 110 || global.currentweapon = 111 || global.currentweapon = 153 || global.currentweapon = 212 || global.currentweapon = 312 || global.currentweapon = 405 || global.currentweapon = 411 || global.currentweapon = 412 {
+	var cw = global.currentweapon;
+	if scurrentstate = "Ascending" || cw = 10 || cw = 110 || cw = 111 || cw = 153 || cw = 212 || cw = 312 || cw = 405 || cw = 411 || cw = 412 {
 		var energyCost = 0;
 		Shot_Charge_Power = 0;
 		Shot_Charge_Speed = 0;
@@ -28,17 +29,20 @@ function scr_Charged_Use() {
 		    }
 
 		}
+		
+		if Charge_Hold > 0 {
 	
-		var slot = Soul_Weapons_Control.weapon[0,1];
-		var eeContain = global.L01essence[slot];
+			var slot = Soul_Weapons_Control.weapon[0,1];
+			var eeContain = global.L01essence[slot];
 
-		if global.L[1] > 0 and eeContain > 0 {
-			global.L01essence[slot] -= energyCost;
-		} else {
-			senergy -= energyCost;
+			if global.L[1] > 0 and eeContain > 0 {
+				global.L01essence[slot] -= energyCost;
+			} else {
+				senergy -= energyCost;
+			}
+
+			scr_V07_Gain(energyCost / 5);
 		}
-
-		scr_V07_Gain(energyCost / 5);
 
 	}
 }

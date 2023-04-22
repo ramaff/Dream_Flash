@@ -1,5 +1,9 @@
 function scr_Charged_Hold() {
 	
+	if weaponcharge == 0 {
+		exit;
+	}
+	
 	Shot_Charge_Power = 0;
 	Shot_Charge_Speed = 0;
 	Shot_Charge_Lifespan = 0;
@@ -26,13 +30,13 @@ function scr_Charged_Hold() {
 	
 	if scurrentstate = "Ascending" || weaponcharge = 10 || weaponcharge = 110 || weaponcharge = 111 || weaponcharge = 153 || weaponcharge = 212 || weaponcharge = 312 || weaponcharge = 405 || weaponcharge = 411 || weaponcharge = 412 {
 		if scurrentstate = "Ascending" {
-			Shot_Charge_Power = current_weapon_stats.Shot_Power * 10;
-			Shot_Charge_Speed = current_weapon_stats.Shot_Speed * 0.25;
+			Shot_Charge_Power = 5 + current_weapon_stats.Shot_Power * 5;
+			Shot_Charge_Speed = current_weapon_stats.Shot_Speed * 0.1;
 			Shot_Charge_Lifespan = 0;	
 			Shot_Charge_Knockback = 10;
 			Shot_Charge_Size = current_weapon_stats.Shot_Size * 1.5;
-			Charge_Total_Time = 120;
-			Charge_Essence = weaponCost * 7.5;
+			Charge_Total_Time = 15 + (weaponDelay * 3);
+			Charge_Essence = weaponCost * 4;
 		}
 		
 		wtt = Charge_Total_Time;

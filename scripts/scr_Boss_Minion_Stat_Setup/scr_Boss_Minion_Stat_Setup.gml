@@ -2,6 +2,9 @@
 // https://help.yoyogames.com/hc/en-us/articles/360005277377 for more information
 function scr_Boss_Minion_Stat_Setup(){
 	bossmaxhealth = 25;
+	bossmaxhealth2 = 0;
+	bossdefense = 0;
+	bossdefense2 = 0;
 	bosshealth = 25;
 	bosspower = 5;
 	bossbulletspeed = 2;

@@ -1,7 +1,7 @@
 function scr_Weapon_Use() {
 	var chargeweapon = 0
   
-	    if global.currentweapon = 10 || global.currentweapon = 56 || global.currentweapon = 110 || global.currentweapon = 111 || global.currentweapon = 153 || global.currentweapon = 212 || global.currentweapon = 312 || global.currentweapon = 405 || global.currentweapon = 411 || global.currentweapon = 412 {
+	    if scurrentstate = "Ascending" || global.currentweapon = 10 || global.currentweapon = 56 || global.currentweapon = 110 || global.currentweapon = 111 || global.currentweapon = 153 || global.currentweapon = 212 || global.currentweapon = 312 || global.currentweapon = 405 || global.currentweapon = 411 || global.currentweapon = 412 {
 	        chargeweapon = 1;
 	    }
 
