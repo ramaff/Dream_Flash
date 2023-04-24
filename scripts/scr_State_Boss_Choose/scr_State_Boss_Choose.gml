@@ -32,6 +32,10 @@ function scr_State_Boss_Choose(bossn) {
 		bossn = 9;
 		cMaxProg = global.castingprogress;
 	}
+	if global.ascendingprogress > cMaxProg {
+		bossn = 10;
+		cMaxProg = global.ascendingprogress;
+	}
 
 	switch(bossn) {
 		case 1:
@@ -54,6 +58,9 @@ function scr_State_Boss_Choose(bossn) {
 			break;
 		case 9:
 			bosstype = obj_Sleep_Caster;
+			break;
+		case 10:
+			bosstype = obj_Head_In_The_Clouds;
 			break;
 		
 		
