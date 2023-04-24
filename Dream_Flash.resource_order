@@ -2318,6 +2318,7 @@
     {"name":"spr_Cartwheel","order":6,"path":"sprites/spr_Cartwheel/spr_Cartwheel.yy",},
     {"name":"Sound16","order":1,"path":"sounds/Sound16/Sound16.yy",},
     {"name":"spr_Eye_Flower","order":7,"path":"sprites/spr_Eye_Flower/spr_Eye_Flower.yy",},
+    {"name":"sprheadinthecloudsallsprites","order":11,"path":"sprites/sprheadinthecloudsallsprites/sprheadinthecloudsallsprites.yy",},
     {"name":"obj_Spin_Expand_Line_Bullet_Alt","order":11,"path":"objects/obj_Spin_Expand_Line_Bullet_Alt/obj_Spin_Expand_Line_Bullet_Alt.yy",},
     {"name":"old_Tree","order":1,"path":"sprites/old_Tree/old_Tree.yy",},
     {"name":"scr_Converge","order":12,"path":"scripts/scr_Converge/scr_Converge.yy",},

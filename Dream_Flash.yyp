@@ -2555,6 +2555,7 @@
     {"id":{"name":"spr_Cartwheel","path":"sprites/spr_Cartwheel/spr_Cartwheel.yy",},},
     {"id":{"name":"Sound16","path":"sounds/Sound16/Sound16.yy",},},
     {"id":{"name":"spr_Eye_Flower","path":"sprites/spr_Eye_Flower/spr_Eye_Flower.yy",},},
+    {"id":{"name":"sprheadinthecloudsallsprites","path":"sprites/sprheadinthecloudsallsprites/sprheadinthecloudsallsprites.yy",},},
     {"id":{"name":"spr_Tree","path":"sprites/spr_Tree/spr_Tree.yy",},},
     {"id":{"name":"obj_Spin_Expand_Line_Bullet_Alt","path":"objects/obj_Spin_Expand_Line_Bullet_Alt/obj_Spin_Expand_Line_Bullet_Alt.yy",},},
     {"id":{"name":"old_Tree","path":"sprites/old_Tree/old_Tree.yy",},},
