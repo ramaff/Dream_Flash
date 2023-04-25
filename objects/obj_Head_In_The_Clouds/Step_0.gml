@@ -4,7 +4,7 @@
 scr_Boss_Step(2);
 
 // If boss is floating in air, can make it bob up and down:
-scr_Boss_Height_Bob(10, 1, 0);
+scr_Boss_Height_Bob(20, 1, 0);
 
 // Make boss shape wobble:
 direction = scr_Soul_Point(x, y+150);
@@ -54,7 +54,7 @@ if activeAttackDelay <= 0 and activeAttackCooldown <= 0 and activeAttackDuration
 		lightning_yy = [0]
 		var xxx = ((obj_Soul_Parent.perX - x) + ((room_width / 2) - x)) / 2;
 		var yyy = ((obj_Soul_Parent.perY - y) + ((room_height / 2) - y)) / 2;
-		for(var i = 0; i < 7; i++) {
+		for(var i = 0; i < 11; i++) {
 			lightning_xx[i] = xxx - 300 + random(600);
 			lightning_yy[i] = yyy - 300 + random(600);
 		}
@@ -116,9 +116,9 @@ if activeAttackDelay <= 0 and patternCooldown <= 0 and patternCount > 0 {
 		bullet_lifespan = 15;
 		bullet_size = 2;
 		bullet_speed = 0;
-		bullet_blend = c_red;
+		bullet_blend = make_color_rgb(255,100,100);
 		
-		for(var i = 0; i < 7; i++) {
+		for(var i = 0; i < 11; i++) {
 			boss_xoffset = lightning_xx[i];
 			boss_yoffset = lightning_yy[i];
 			var dirr = scr_Soul_Point(x + boss_xoffset, y + boss_yoffset);

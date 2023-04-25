@@ -561,13 +561,13 @@ function scr_Hard_Coded_Item_Stats(itemVal, items_to_add = 1, reload = false) {
 				upAmt = 4;	
 			}
 			if spirNum = 4 {
-				upAmt = 6;	
+				upAmt = 7;
 			}
 			if spirNum = 5 {
-				upAmt = 7;	
+				upAmt = 9;	
 			}
 			if spirNum = 6 {
-				upAmt = 8;	
+				upAmt = 11;	
 			}
 		
 			if emNum > 0 and emNum <= 6 {

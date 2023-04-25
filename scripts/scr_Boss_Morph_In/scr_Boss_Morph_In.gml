@@ -1,6 +1,6 @@
 // Script assets have changed for v2.3.0 see
 // https://help.yoyogames.com/hc/en-us/articles/360005277377 for more information
-function scr_Boss_Morph_In(){
+function scr_Boss_Morph_In(version = 1){
 	if state = states.spawned { 
 		
 		with instance_create(x,y,obj_Boss_Overlay) {
@@ -23,10 +23,14 @@ function scr_Boss_Morph_In(){
 			
 			bossd = other.id;
 		}
-		var ac = 0;
-		for(ac = 0; ac < 10; ac++) {
-			bossActiveAttackDelay[ac] += 120;
-			bossPassiveAttackDelay[ac] += 120;
+		if version = 1 {
+			var ac = 0;
+			for(ac = 0; ac < 10; ac++) {
+				bossActiveAttackDelay[ac] += 120;
+				bossPassiveAttackDelay[ac] += 120;
+			}
+		} else if version = 2 {
+			activeAttackDelay += 120;
 		}
 		state = states.phasing;
 		

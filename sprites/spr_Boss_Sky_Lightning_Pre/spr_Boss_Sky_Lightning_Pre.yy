@@ -15,6 +15,7 @@
   "frames": [
     {"resourceType":"GMSpriteFrame","resourceVersion":"1.1","name":"03794b5b-419a-40a5-93c3-4dc51bb1bf0d",},
     {"resourceType":"GMSpriteFrame","resourceVersion":"1.1","name":"6d790f35-5558-45bf-bb3d-28b12912508a",},
+    {"resourceType":"GMSpriteFrame","resourceVersion":"1.1","name":"11e87b6d-d142-493f-a43c-c6b3c6b9920e",},
     {"resourceType":"GMSpriteFrame","resourceVersion":"1.1","name":"c6b98013-a48b-4953-ba32-d4f9f5bb0902",},
   ],
   "gridX": 0,
@@ -45,7 +46,7 @@
     "events": {"resourceType":"KeyframeStore<MessageEventKeyframe>","resourceVersion":"1.0","Keyframes":[],},
     "eventStubScript": null,
     "eventToFunction": {},
-    "length": 3.0,
+    "length": 4.0,
     "lockOrigin": false,
     "moments": {"resourceType":"KeyframeStore<MomentsEventKeyframe>","resourceVersion":"1.0","Keyframes":[],},
     "playback": 1,
@@ -56,9 +57,10 @@
     "timeUnits": 1,
     "tracks": [
       {"resourceType":"GMSpriteFramesTrack","resourceVersion":"1.0","name":"frames","builtinName":0,"events":[],"inheritsTrackColour":true,"interpolation":1,"isCreationTrack":false,"keyframes":{"resourceType":"KeyframeStore<SpriteFrameKeyframe>","resourceVersion":"1.0","Keyframes":[
-            {"resourceType":"Keyframe<SpriteFrameKeyframe>","resourceVersion":"1.0","Channels":{"0":{"resourceType":"SpriteFrameKeyframe","resourceVersion":"1.0","Id":{"name":"03794b5b-419a-40a5-93c3-4dc51bb1bf0d","path":"sprites/spr_Boss_Sky_Lightning_Pre/spr_Boss_Sky_Lightning_Pre.yy",},},},"Disabled":false,"id":"f6f04e90-fb8d-494c-921d-9850c86af6be","IsCreationKey":false,"Key":0.0,"Length":1.0,"Stretch":false,},
-            {"resourceType":"Keyframe<SpriteFrameKeyframe>","resourceVersion":"1.0","Channels":{"0":{"resourceType":"SpriteFrameKeyframe","resourceVersion":"1.0","Id":{"name":"6d790f35-5558-45bf-bb3d-28b12912508a","path":"sprites/spr_Boss_Sky_Lightning_Pre/spr_Boss_Sky_Lightning_Pre.yy",},},},"Disabled":false,"id":"ad466556-cf37-438a-b716-0ea18d66ca82","IsCreationKey":false,"Key":1.0,"Length":1.0,"Stretch":false,},
-            {"resourceType":"Keyframe<SpriteFrameKeyframe>","resourceVersion":"1.0","Channels":{"0":{"resourceType":"SpriteFrameKeyframe","resourceVersion":"1.0","Id":{"name":"c6b98013-a48b-4953-ba32-d4f9f5bb0902","path":"sprites/spr_Boss_Sky_Lightning_Pre/spr_Boss_Sky_Lightning_Pre.yy",},},},"Disabled":false,"id":"a0838943-491f-45fd-a796-e4ce3ebed7b7","IsCreationKey":false,"Key":2.0,"Length":1.0,"Stretch":false,},
+            {"resourceType":"Keyframe<SpriteFrameKeyframe>","resourceVersion":"1.0","Channels":{"0":{"resourceType":"SpriteFrameKeyframe","resourceVersion":"1.0","Id":{"name":"03794b5b-419a-40a5-93c3-4dc51bb1bf0d","path":"sprites/spr_Boss_Sky_Lightning_Pre/spr_Boss_Sky_Lightning_Pre.yy",},},},"Disabled":false,"id":"c2ce04cb-f5b1-4845-abd5-5731d1f49c5b","IsCreationKey":false,"Key":0.0,"Length":1.0,"Stretch":false,},
+            {"resourceType":"Keyframe<SpriteFrameKeyframe>","resourceVersion":"1.0","Channels":{"0":{"resourceType":"SpriteFrameKeyframe","resourceVersion":"1.0","Id":{"name":"6d790f35-5558-45bf-bb3d-28b12912508a","path":"sprites/spr_Boss_Sky_Lightning_Pre/spr_Boss_Sky_Lightning_Pre.yy",},},},"Disabled":false,"id":"274dbafc-d6c7-4caf-a2b4-ce683496e718","IsCreationKey":false,"Key":1.0,"Length":1.0,"Stretch":false,},
+            {"resourceType":"Keyframe<SpriteFrameKeyframe>","resourceVersion":"1.0","Channels":{"0":{"resourceType":"SpriteFrameKeyframe","resourceVersion":"1.0","Id":{"name":"11e87b6d-d142-493f-a43c-c6b3c6b9920e","path":"sprites/spr_Boss_Sky_Lightning_Pre/spr_Boss_Sky_Lightning_Pre.yy",},},},"Disabled":false,"id":"2f39b184-af8e-4196-80d7-9a421c6e7bc7","IsCreationKey":false,"Key":2.0,"Length":1.0,"Stretch":false,},
+            {"resourceType":"Keyframe<SpriteFrameKeyframe>","resourceVersion":"1.0","Channels":{"0":{"resourceType":"SpriteFrameKeyframe","resourceVersion":"1.0","Id":{"name":"c6b98013-a48b-4953-ba32-d4f9f5bb0902","path":"sprites/spr_Boss_Sky_Lightning_Pre/spr_Boss_Sky_Lightning_Pre.yy",},},},"Disabled":false,"id":"c024fd3a-57ce-4f3b-a570-1b41f1f405b6","IsCreationKey":false,"Key":3.0,"Length":1.0,"Stretch":false,},
           ],},"modifiers":[],"spriteId":null,"trackColour":0,"tracks":[],"traits":0,},
     ],
     "visibleRange": null,

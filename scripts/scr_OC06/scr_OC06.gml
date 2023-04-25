@@ -16,7 +16,7 @@ function scr_OC06(){
 		variable_struct_set(Shot_Air_Burst_Stats[burstIndex], "Air_Burst", true); 
 		variable_struct_set(Shot_Air_Burst_Stats[burstIndex], "Range", 130); 
 		variable_struct_set(Shot_Air_Burst_Stats[burstIndex], "Amount", 1 + global.OC[6]); 
-		variable_struct_set(Shot_Air_Burst_Stats[burstIndex], "Spread", 90);
+		variable_struct_set(Shot_Air_Burst_Stats[burstIndex], "Spread", 70);
 		
 		//show_debug_message(Shot_Air_Burst_Stats)
 		/*

@@ -2,7 +2,7 @@ function scr_Boss_Step(version = 1) {
 	scr_Next_Phase_Check();
 	scr_Boss_Attack_Step(version);
 	//scr_Boss_Status_Step();
-	scr_Boss_Morph_In();
+	scr_Boss_Morph_In(version);
 	//scr_Room_Depth(0);
 	
 	if state = states.normal || state = states.jumping {

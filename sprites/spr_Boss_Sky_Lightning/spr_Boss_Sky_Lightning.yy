@@ -15,6 +15,7 @@
   "frames": [
     {"resourceType":"GMSpriteFrame","resourceVersion":"1.1","name":"03794b5b-419a-40a5-93c3-4dc51bb1bf0d",},
     {"resourceType":"GMSpriteFrame","resourceVersion":"1.1","name":"6d790f35-5558-45bf-bb3d-28b12912508a",},
+    {"resourceType":"GMSpriteFrame","resourceVersion":"1.1","name":"11e87b6d-d142-493f-a43c-c6b3c6b9920e",},
     {"resourceType":"GMSpriteFrame","resourceVersion":"1.1","name":"c6b98013-a48b-4953-ba32-d4f9f5bb0902",},
   ],
   "gridX": 0,
@@ -45,7 +46,7 @@
     "events": {"resourceType":"KeyframeStore<MessageEventKeyframe>","resourceVersion":"1.0","Keyframes":[],},
     "eventStubScript": null,
     "eventToFunction": {},
-    "length": 3.0,
+    "length": 4.0,
     "lockOrigin": false,
     "moments": {"resourceType":"KeyframeStore<MomentsEventKeyframe>","resourceVersion":"1.0","Keyframes":[],},
     "playback": 1,
@@ -58,7 +59,8 @@
       {"resourceType":"GMSpriteFramesTrack","resourceVersion":"1.0","name":"frames","builtinName":0,"events":[],"inheritsTrackColour":true,"interpolation":1,"isCreationTrack":false,"keyframes":{"resourceType":"KeyframeStore<SpriteFrameKeyframe>","resourceVersion":"1.0","Keyframes":[
             {"resourceType":"Keyframe<SpriteFrameKeyframe>","resourceVersion":"1.0","Channels":{"0":{"resourceType":"SpriteFrameKeyframe","resourceVersion":"1.0","Id":{"name":"03794b5b-419a-40a5-93c3-4dc51bb1bf0d","path":"sprites/spr_Boss_Sky_Lightning/spr_Boss_Sky_Lightning.yy",},},},"Disabled":false,"id":"4ed7e039-3599-46d8-a723-97fad3eb30e9","IsCreationKey":false,"Key":0.0,"Length":1.0,"Stretch":false,},
             {"resourceType":"Keyframe<SpriteFrameKeyframe>","resourceVersion":"1.0","Channels":{"0":{"resourceType":"SpriteFrameKeyframe","resourceVersion":"1.0","Id":{"name":"6d790f35-5558-45bf-bb3d-28b12912508a","path":"sprites/spr_Boss_Sky_Lightning/spr_Boss_Sky_Lightning.yy",},},},"Disabled":false,"id":"ed715655-8633-4980-95ed-3aa0aedbff75","IsCreationKey":false,"Key":1.0,"Length":1.0,"Stretch":false,},
-            {"resourceType":"Keyframe<SpriteFrameKeyframe>","resourceVersion":"1.0","Channels":{"0":{"resourceType":"SpriteFrameKeyframe","resourceVersion":"1.0","Id":{"name":"c6b98013-a48b-4953-ba32-d4f9f5bb0902","path":"sprites/spr_Boss_Sky_Lightning/spr_Boss_Sky_Lightning.yy",},},},"Disabled":false,"id":"d02a3b26-126a-47ca-a661-24f37026886a","IsCreationKey":false,"Key":2.0,"Length":1.0,"Stretch":false,},
+            {"resourceType":"Keyframe<SpriteFrameKeyframe>","resourceVersion":"1.0","Channels":{"0":{"resourceType":"SpriteFrameKeyframe","resourceVersion":"1.0","Id":{"name":"11e87b6d-d142-493f-a43c-c6b3c6b9920e","path":"sprites/spr_Boss_Sky_Lightning/spr_Boss_Sky_Lightning.yy",},},},"Disabled":false,"id":"fc1484d0-7eef-4527-8c89-19998e6bca5b","IsCreationKey":false,"Key":2.0,"Length":1.0,"Stretch":false,},
+            {"resourceType":"Keyframe<SpriteFrameKeyframe>","resourceVersion":"1.0","Channels":{"0":{"resourceType":"SpriteFrameKeyframe","resourceVersion":"1.0","Id":{"name":"c6b98013-a48b-4953-ba32-d4f9f5bb0902","path":"sprites/spr_Boss_Sky_Lightning/spr_Boss_Sky_Lightning.yy",},},},"Disabled":false,"id":"d02a3b26-126a-47ca-a661-24f37026886a","IsCreationKey":false,"Key":3.0,"Length":1.0,"Stretch":false,},
           ],},"modifiers":[],"spriteId":null,"trackColour":0,"tracks":[],"traits":0,},
     ],
     "visibleRange": null,
