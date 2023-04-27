@@ -4,4 +4,3 @@
 // Inherit the parent event
 event_inherited();
 
-scr_Channel_Boss_Kill("Bleeding")

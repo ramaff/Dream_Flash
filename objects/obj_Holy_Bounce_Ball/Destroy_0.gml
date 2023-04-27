@@ -9,7 +9,7 @@ repeat(3) {
 	    bulletsize = 0.5;
 	    image_xscale = bulletsize;
 	    image_yscale = bulletsize;
-	    bulletspeed = other.bulletspeed;
+	    bulletspeed = other.bulletspeed * 1.4;
 	    bulletpower = global.stagedamage;
 	    speed = bulletspeed;
 	    direction = dir;
@@ -23,7 +23,7 @@ repeat(3) {
 		    bulletsize = 0.5;
 		    image_xscale = bulletsize;
 		    image_yscale = bulletsize;
-		    bulletspeed = other.bulletspeed;
+		    bulletspeed = other.bulletspeed * 1.4;
 		    bulletpower = global.stagedamage;
 		    speed = bulletspeed;
 		    direction = dir;

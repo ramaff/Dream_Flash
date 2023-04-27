@@ -1,7 +1,5 @@
 /// @description Insert description here
 // You can write your code in this editor
-
-// Inherit the parent event
-event_inherited();
-
-scr_Channel_Boss_Kill("Bleeding")
+image_index = irandom(2);
+image_speed = 0;
+image_angle = 180;

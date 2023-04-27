@@ -26,7 +26,7 @@ if activeAttackDelay <= 0 and activeAttackCooldown <= 0 and activeAttackDuration
 	
     if activeAttack = 1 {
 		// Setup how many attacks per boss move, delay, etc
-		scr_Boss_Attack_Time_Setup_v2(3, 60, 15, 210, 60, 10);
+		scr_Boss_Attack_Time_Setup_v2(1, 60, 15, 210, 60, 10);
 		
 		// Can set up the initial pattern direction
 		// patternDirection = scr_Soul_Point();
@@ -47,6 +47,9 @@ if activeAttackDelay <= 0 and patternCooldown <= 0 and patternCount > 0 {
 		scr_Boss_Stretch("Vertical", 0.7);
 		
 		bullet_direction = scr_Boss_Bullet_Direction_Formula(270, 30)
+		bullet_direction = (bullet_direction + scr_Soul_Point()) / 2
+		bullet_count = 3;
+		bullet_spread = 15;
 		
 		scr_Boss_Shoot();
 	

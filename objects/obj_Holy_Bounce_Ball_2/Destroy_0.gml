@@ -1,7 +1,6 @@
-if alarm[0] > 10 {
-	var dir = 45;
+var dir = 30;
 	var sfac = 0.8;
-	repeat(3) {
+	repeat(6) {
 		var tar = id;
 		with instance_create(x,y,obj_Zig_Zag_Bullet) {
 		    scr_Bullet_Replicate_Properties();
@@ -30,9 +29,7 @@ if alarm[0] > 10 {
 				tar = id;
 			}
 		}
-		dir += 120;
+		dir += 60;
 	}
-	alarm[1] = 80;
 
-	scr_Screen_Shake(7,5);
-}
+scr_Screen_Shake(7,5);

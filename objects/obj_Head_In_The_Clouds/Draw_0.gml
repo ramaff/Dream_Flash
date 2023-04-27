@@ -18,6 +18,6 @@ draw_self();
 if activeAttack = 2 and activeAttackDelay > 0 and image_index >= 2 {
 	var frame = (activeAttackDelay / 5)
 	for(var i = 0; i < 11; i++) {
-		draw_sprite_ext(spr_Boss_Sky_Lightning_Pre, i + frame, x + lightning_xx[i], y + lightning_yy[i], 1, 1, 90, make_color_rgb(255,100,100), 1);
+		draw_sprite_ext(spr_Boss_Sky_Lightning_Pre, i + frame, x + lightning_xx[i], y + lightning_yy[i], 1, 1, 90, make_color_rgb(255,255,100), 1);
 	}
 }

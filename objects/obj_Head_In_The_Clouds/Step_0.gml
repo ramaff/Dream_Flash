@@ -40,7 +40,13 @@ if activeAttackDelay <= 0 and activeAttackCooldown <= 0 and activeAttackDuration
 	// Guided Halo Bullets
     if activeAttack = 1 {
 		// Setup how many attacks per boss move, delay, etc
-		scr_Boss_Attack_Time_Setup_v2(3, 40, 60, 300, 30, 10);
+		var attack_count = 3;
+		var attack_gap = 60;
+		if tier = 1 || tier >= 3 {
+			attack_count = 5;
+			attack_gap = 40;
+		}
+		scr_Boss_Attack_Time_Setup_v2(attack_count, 40, attack_gap, 360, 30, 10);
 		
 		// Can set up the initial pattern direction
 		// patternDirection = scr_Soul_Point();
@@ -49,14 +55,18 @@ if activeAttackDelay <= 0 and activeAttackCooldown <= 0 and activeAttackDuration
 	// Lightning Strikes
 	if activeAttack = 2 {
 		// Setup how many attacks per boss move, delay, etc
-		scr_Boss_Attack_Time_Setup_v2(7, 90, 20, 180, 30, 0);
+		var attack_count = 7;
+		if tier = 1 || tier >= 3 {
+			attack_count = 11;	
+		}
+		scr_Boss_Attack_Time_Setup_v2(attack_count, 90, 20, 180, 30, 0);
 		lightning_xx = [0]
 		lightning_yy = [0]
 		var xxx = ((obj_Soul_Parent.perX - x) + ((room_width / 2) - x)) / 2;
 		var yyy = ((obj_Soul_Parent.perY - y) + ((room_height / 2) - y)) / 2;
 		for(var i = 0; i < 11; i++) {
-			lightning_xx[i] = xxx - 300 + random(600);
-			lightning_yy[i] = yyy - 300 + random(600);
+			lightning_xx[i] = xxx - 400 + random(800);
+			lightning_yy[i] = yyy - 400 + random(800);
 		}
 		
 		// Can set up the initial pattern direction
@@ -66,7 +76,12 @@ if activeAttackDelay <= 0 and activeAttackCooldown <= 0 and activeAttackDuration
 	// Angel Heads
 	if activeAttack = 3 {
 		// Setup how many attacks per boss move, delay, etc
-		scr_Boss_Attack_Time_Setup_v2(4, 40, 30, 180, 30, 10);
+		var attack_count = 4 + tier;
+		attack_gap = 30;
+		if tier >= 2 {
+			attack_gap = 20;
+		}
+		scr_Boss_Attack_Time_Setup_v2(attack_count, 40, attack_gap, 180, 30, 10);
 		
 		// Can set up the initial pattern direction
 		// patternDirection = scr_Soul_Point();
@@ -74,8 +89,12 @@ if activeAttackDelay <= 0 and activeAttackCooldown <= 0 and activeAttackDuration
     }
 	// Holy Smite Bounce Bomb
 	if activeAttack = 4 {
+		var ball_time = 180;
+		if tier = 1 || tier >= 3 {
+			ball_time = 300;	
+		}
 		// Setup how many attacks per boss move, delay, etc
-		scr_Boss_Attack_Time_Setup_v2(210, 30, 1, 180, 60, 10);
+		scr_Boss_Attack_Time_Setup_v2(210, 30, 1, ball_time, 60, 10);
 		
 		// Can set up the initial pattern direction
 		// patternDirection = scr_Soul_Point();
@@ -96,10 +115,16 @@ if activeAttackDelay <= 0 and patternCooldown <= 0 and patternCount > 0 {
 		scr_Boss_Stretch("Vertical", 0.7);
 		
 		boss_yoffset = 60
-		bullet_direction = 240 + random(60);
+		bullet_direction = 270 - 120 + random(240);
 		bullet_type = obj_Guided_Bullet_Halo_Bullet;
-		bullet_speed = bossbulletspeed * (patternCount * 0.6)
-		bullet_lifespan = 240 + (patternCount * 60);
+		bullet_speed = bossbulletspeed * (1.1 + patternCount * 0.45)
+		bullet_lifespan = 300 + (patternCount * 60);
+		if tier = 1 || tier >= 3 {
+			bullet_lifespan = 330 + (patternCount * 40);
+		}
+		if tier >= 2 {
+			bullet_type = obj_Guided_Bullet_Halo_Bullet_2;
+		}
 		bullet_sprite = spr_Glowy_Yellow_Shot;
 		
 		scr_Boss_Shoot();
@@ -116,7 +141,11 @@ if activeAttackDelay <= 0 and patternCooldown <= 0 and patternCount > 0 {
 		bullet_lifespan = 15;
 		bullet_size = 2;
 		bullet_speed = 0;
-		bullet_blend = make_color_rgb(255,100,100);
+		bullet_blend = make_color_rgb(255,255,100)
+		
+		if tier >= 2 {
+			bullet_type = obj_Boss_Sky_Lightning_2;
+		}
 		
 		for(var i = 0; i < 11; i++) {
 			boss_xoffset = lightning_xx[i];
@@ -138,7 +167,7 @@ if activeAttackDelay <= 0 and patternCooldown <= 0 and patternCount > 0 {
 		minion_dir = 90;
 		minion_count = 1;
 	    minion_type = obj_Angel_Head;
-	    minion_health = bossmaxhealth / 20;
+	    minion_health = 10 + (bossmaxhealth / 40);
 		minion_defense = 0;
 	    scr_Minion_Spawn();
 	}
@@ -152,11 +181,17 @@ if activeAttackDelay <= 0 and patternCooldown <= 0 and patternCount > 0 {
 			 bullet_direction = 0;
 		    bullet_count = 1;
 		    bullet_spread = 0;
-		    bullet_speed = bossbulletspeed * (2);
+		    bullet_speed = bossbulletspeed * (1.4);
 			bullet_type = obj_Holy_Bounce_Ball;
 			bullet_bounce_speed = 3;
 			bullet_lob_time = 60;
 			bullet_lifespan = 182;
+			if tier = 1 || tier >= 3 {
+				bullet_lifespan = 302;	
+			}
+			if tier >= 2 {
+				bullet_type = obj_Holy_Bounce_Ball_2;	
+			}
 			bullet_charged = true;
 			bullet_sprite = spr_Holy_Ball;
 			bullet_size = 0;

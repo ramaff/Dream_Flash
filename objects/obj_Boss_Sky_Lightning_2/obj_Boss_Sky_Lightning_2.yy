@@ -1,19 +1,22 @@
 {
   "resourceType": "GMObject",
   "resourceVersion": "1.0",
-  "name": "obj_Boost_Spark",
+  "name": "obj_Boss_Sky_Lightning_2",
   "eventList": [
     {"resourceType":"GMEvent","resourceVersion":"1.0","name":"","collisionObjectId":null,"eventNum":0,"eventType":2,"isDnD":false,},
+    {"resourceType":"GMEvent","resourceVersion":"1.0","name":"","collisionObjectId":null,"eventNum":1,"eventType":3,"isDnD":false,},
+    {"resourceType":"GMEvent","resourceVersion":"1.0","name":"","collisionObjectId":null,"eventNum":0,"eventType":8,"isDnD":false,},
+    {"resourceType":"GMEvent","resourceVersion":"1.0","name":"","collisionObjectId":null,"eventNum":0,"eventType":0,"isDnD":false,},
   ],
   "managed": true,
   "overriddenProperties": [],
   "parent": {
-    "name": "State Bosses",
-    "path": "folders/Objects/Bosses/State Bosses.yy",
+    "name": "Boss Bullets",
+    "path": "folders/Objects/Boss Bullets.yy",
   },
   "parentObjectId": {
-    "name": "obj_Depth",
-    "path": "objects/obj_Depth/obj_Depth.yy",
+    "name": "obj_Soul_Hurt",
+    "path": "objects/obj_Soul_Hurt/obj_Soul_Hurt.yy",
   },
   "persistent": false,
   "physicsAngularDamping": 0.1,
@@ -31,8 +34,8 @@
   "properties": [],
   "solid": false,
   "spriteId": {
-    "name": "spr_Boost_Spark",
-    "path": "sprites/spr_Boost_Spark/spr_Boost_Spark.yy",
+    "name": "spr_Boss_Sky_Lightning",
+    "path": "sprites/spr_Boss_Sky_Lightning/spr_Boss_Sky_Lightning.yy",
   },
   "spriteMaskId": null,
   "visible": false,
