@@ -7,8 +7,11 @@ function scr_Boss_Step(version = 1) {
 	
 	if state = states.normal || state = states.jumping {
 		if !scr_Outside_Check_Bool(256) {
-			x = lerp(x, room_width / 2, 0.01);
-			y = lerp(y, room_height / 2, 0.01);
+			var dirr = point_direction(x, y, room_width / 2, room_height / 2);
+			var xx = x + lengthdir_x(10, dirr)
+			var yy = y + lengthdir_y(10, dirr)
+			x = lerp(x, xx, 0.001);
+			y = lerp(y, yy, 0.001);
 		}
 	}
 

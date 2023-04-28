@@ -7,13 +7,13 @@ scr_Boss_Shadow();
 draw_sprite_ext(spr_Cartwheel, image_index, x, y + bossHeight - 40, image_xscale, image_yscale, 0, c_white, 1)
 
 // Palette Color Swap for different boss champs:
-var palindex = champ;
+var palindex = tier;
 
-//pal_swap_set(spr_Crazy_Eyes_Palette,palindex,false);
+pal_swap_set(spr_Head_In_The_Clouds_Palette,palindex,false);
 
 draw_self();
 
-//pal_swap_reset();
+pal_swap_reset();
 
 if activeAttack = 2 and activeAttackDelay > 0 and image_index >= 2 {
 	var frame = (activeAttackDelay / 5)

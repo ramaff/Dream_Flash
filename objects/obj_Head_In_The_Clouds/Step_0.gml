@@ -40,11 +40,11 @@ if activeAttackDelay <= 0 and activeAttackCooldown <= 0 and activeAttackDuration
 	// Guided Halo Bullets
     if activeAttack = 1 {
 		// Setup how many attacks per boss move, delay, etc
-		var attack_count = 3;
-		var attack_gap = 60;
+		var attack_count = 4;
+		var attack_gap = 45;
 		if tier = 1 || tier >= 3 {
 			attack_count = 5;
-			attack_gap = 40;
+			attack_gap = 35;
 		}
 		scr_Boss_Attack_Time_Setup_v2(attack_count, 40, attack_gap, 360, 30, 10);
 		
@@ -115,17 +115,18 @@ if activeAttackDelay <= 0 and patternCooldown <= 0 and patternCount > 0 {
 		scr_Boss_Stretch("Vertical", 0.7);
 		
 		boss_yoffset = 60
-		bullet_direction = 270 - 120 + random(240);
+		//bullet_direction = 270 - 120 + random(240);
 		bullet_type = obj_Guided_Bullet_Halo_Bullet;
-		bullet_speed = bossbulletspeed * (1.1 + patternCount * 0.45)
-		bullet_lifespan = 300 + (patternCount * 60);
+		bullet_speed = bossbulletspeed * (1.3 + patternCount * 0.55)
+		bullet_lifespan = 360 + (patternCount * 45);
 		if tier = 1 || tier >= 3 {
-			bullet_lifespan = 330 + (patternCount * 40);
+			bullet_lifespan = 360 + (patternCount * 35);
 		}
 		if tier >= 2 {
 			bullet_type = obj_Guided_Bullet_Halo_Bullet_2;
 		}
 		bullet_sprite = spr_Glowy_Yellow_Shot;
+		bullet_direction = 120 + ((240 / patternCountMax) * patternCount)
 		
 		scr_Boss_Shoot();
 	
