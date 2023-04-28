@@ -35,8 +35,8 @@
   "properties": [],
   "solid": false,
   "spriteId": {
-    "name": "spr_Wisper",
-    "path": "sprites/spr_Wisper/spr_Wisper.yy",
+    "name": "spr_Wisper_new",
+    "path": "sprites/spr_Wisper_new/spr_Wisper_new.yy",
   },
   "spriteMaskId": null,
   "visible": false,

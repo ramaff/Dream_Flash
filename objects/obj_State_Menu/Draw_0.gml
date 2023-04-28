@@ -29,14 +29,16 @@ if (Pause_Control.pause) {
 	var spikeprog = global.spikeprogress;
 	var bleedingprog = global.bleedingprogress;
 	var castingprog = global.castingprogress;
+	var ascendingprog = global.ascendingprogress;
 	
 	snakeprog += 0.5 * floor((global.souldexterity + global.soulperception) / 20);
 	beastprog += 0.5 * floor((global.soulstrength + global.soulvitality) / 20);
-	mechprog += 0.5 * floor((global.soulessence + global.soulvitality) / 20);
+	mechprog += 0.5 * floor((global.soulvitality + global.soulessence) / 20);
 	scrubprog += 0.5 * floor((global.soulvitality + global.souldexterity) / 20);
-	spikeprog += 0.5 * floor((global.soulessence + global.soulperception) / 20);
+	spikeprog += 0.5 * floor((global.soulessence + global.souldexterity) / 20);
 	bleedingprog += 0.5 * floor((global.soulstrength + global.souldexterity) / 20);
 	castingprog += 0.5 * floor((global.soulvitality + global.soulperception) / 20);
+	ascendingprog += 0.5 * floor((global.soulessence + global.soulperception) / 20);
     
     draw_sprite_ext(spr_Snake_Soul_Reco_Icon,0,cX,cY,0.4,0.4,0,c_white,1);
 	draw_sprite(spr_State_Reco_Prog,0,cX + 64,cY - 64);
@@ -78,6 +80,12 @@ if (Pause_Control.pause) {
 	draw_sprite_ext(spr_Casting_Soul_Reco_Icon,0,cX,cY,0.4,0.4,0,c_white,1);
 	draw_sprite(spr_State_Reco_Prog,0,cX + 64,cY - 64);
     draw_sprite_part(spr_State_Reco_Prog,1,0,0,224 * (castingprog / 3),80,cX + 64,cY - 64);	
+	
+	cY += 96;
+	
+	draw_sprite_ext(spr_Ascending_Soul_Reco_Icon,0,cX,cY,0.4,0.4,0,c_white,1);
+	draw_sprite(spr_State_Reco_Prog,0,cX + 64,cY - 64);
+    draw_sprite_part(spr_State_Reco_Prog,1,0,0,224 * (ascendingprog / 3),80,cX + 64,cY - 64);	
     
     //draw_sprite(spr_Soul_Menu_Essence,0,view_xview + 896,view_yview + 152);
 

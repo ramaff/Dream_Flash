@@ -1,3 +1,5 @@
+exit;
+
 alarm[8] = 1 / bulletimagespeed;
 
 bulletbounceY += bulletbouncedirection * 1;

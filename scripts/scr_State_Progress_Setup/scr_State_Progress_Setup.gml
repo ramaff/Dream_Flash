@@ -10,5 +10,5 @@ function scr_State_Progress_Setup(){
 	global.bleedingprogress = 0;
 	global.rocketprogress = 0;
 	global.castingprogress = 0;
-	global.flyingprogress = 0;
+	global.ascendingprogress = 0;
 }

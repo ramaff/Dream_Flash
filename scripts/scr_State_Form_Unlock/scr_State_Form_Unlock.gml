@@ -11,37 +11,16 @@ function scr_State_Form_Unlock(){
 		var bleedingdis = 0;
 		var rocketdis = 0;
 		var castingdis = 0;
-		var flyingdis = 0;
-		
-		/*
-		if global.soulstrength >= 20 {
-			beastdis += 0.5;
-		}
-		if global.soulvitality >= 20 {
-			castingdis += 0.5;
-			beastdis += 0.5;
-		}
-		if global.soulessence >= 20 {
-			spikedis += 0.5;
-		}
-		if global.souldexterity >= 20 {
-			beastdis += 0.5;
-			snakedis += 0.5;
-		}
-		if global.soulperception >= 20 {
-			castingdis += 0.5;
-			spikedis += 0.5;
-			snakedis += 0.5;
-		}
-		*/
+		var ascendingdis = 0;
 		
 		snakedis += 0.5 * floor((global.souldexterity + global.soulperception) / 20);
 		beastdis += 0.5 * floor((global.soulstrength + global.soulvitality) / 20);
 		mechdis += 0.5 * floor((global.soulvitality + global.soulessence) / 20);
 		scrubdis += 0.5 * floor((global.soulvitality + global.souldexterity) / 20);
-		spikedis += 0.5 * floor((global.soulessence + global.soulperception) / 20);
+		spikedis += 0.5 * floor((global.soulessence + global.souldexterity) / 20);
 		bleedingdis += 0.5 * floor((global.soulstrength + global.souldexterity) / 20);
 		castingdis += 0.5 * floor((global.soulvitality + global.soulperception) / 20);
+		ascendingdis += 0.5 * floor((global.soulessence + global.soulperception) / 20);
 		
 		
 		if global.snakeprogress >= (3 - snakedis) {
@@ -77,6 +56,11 @@ function scr_State_Form_Unlock(){
 		if global.castingprogress >= (3 - castingdis) {
 			global.soultransformedstate = "Casting";
 			global.recollectionState[9]++;
+			global.recollectionStateUnlocked = 1;
+		}
+		if global.castingprogress >= (3 - ascendingdis) {
+			global.soultransformedstate = "Ascending";
+			global.recollectionState[10]++;
 			global.recollectionStateUnlocked = 1;
 		}
 		if global.soultransformedstate != "None" and obj_Soul_Parent.stransformedstate = "None" {

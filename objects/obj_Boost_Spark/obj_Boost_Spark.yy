@@ -8,8 +8,8 @@
   "managed": true,
   "overriddenProperties": [],
   "parent": {
-    "name": "Bosses",
-    "path": "folders/Objects/Bosses.yy",
+    "name": "State Bosses",
+    "path": "folders/Objects/Bosses/State Bosses.yy",
   },
   "parentObjectId": {
     "name": "obj_Depth",

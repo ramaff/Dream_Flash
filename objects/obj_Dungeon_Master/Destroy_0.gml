@@ -4,18 +4,4 @@
 // Inherit the parent event
 event_inherited();
 
-if room = State_Room {
-	global.bleedingprogress++;	
-	
-	var sDir = random(360);
-
-	repeat(8) {
-		with instance_create(x,y,obj_State_Essence) {
-			direction = sDir;
-			speed = 15;
-		}
-		sDir += 45;
-	}
-}
-
-scr_State_Form_Unlock();
+scr_Channel_Boss_Kill("Bleeding")

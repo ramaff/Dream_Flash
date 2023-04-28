@@ -5,12 +5,13 @@
   "eventList": [
     {"resourceType":"GMEvent","resourceVersion":"1.0","name":"","collisionObjectId":null,"eventNum":0,"eventType":1,"isDnD":false,},
     {"resourceType":"GMEvent","resourceVersion":"1.0","name":"","collisionObjectId":null,"eventNum":0,"eventType":3,"isDnD":false,},
+    {"resourceType":"GMEvent","resourceVersion":"1.0","name":"","collisionObjectId":null,"eventNum":0,"eventType":8,"isDnD":false,},
   ],
   "managed": true,
   "overriddenProperties": [],
   "parent": {
-    "name": "Stationary Spawning Bullets",
-    "path": "folders/Objects/Boss Bullets/Stationary Spawning Bullets.yy",
+    "name": "Spawning Bullets",
+    "path": "folders/Objects/Boss Bullets/Spawning Bullets.yy",
   },
   "parentObjectId": {
     "name": "obj_Lob_Bullet",

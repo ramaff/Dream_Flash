@@ -33,8 +33,8 @@ var bloom_darken	= 1 - 0.1;
 var bloom_saturation = 0.8 * 2;
 */
 
-var blur_steps		= round(0.35 * 15) + 1;
-var sigma			= max(0.2, 0.0001);
+var blur_steps		= round(0.4 * 15) + 1;
+var sigma			= max(0.3, 0.0001);
 var bloom_threshold = 0.25;
 var bloom_range		= 0.15;
 var bloom_intensity	= 0.0875 * 2;

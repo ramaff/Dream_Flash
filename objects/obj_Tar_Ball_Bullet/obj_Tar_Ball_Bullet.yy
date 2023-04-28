@@ -8,8 +8,8 @@
   "managed": true,
   "overriddenProperties": [],
   "parent": {
-    "name": "Stationary Spawning Bullets",
-    "path": "folders/Objects/Boss Bullets/Stationary Spawning Bullets.yy",
+    "name": "Lob Splash Group",
+    "path": "folders/Objects/Boss Bullets/Lob Splash Group.yy",
   },
   "parentObjectId": {
     "name": "obj_Lob_Bullet",

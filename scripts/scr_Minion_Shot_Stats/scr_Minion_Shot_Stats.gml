@@ -6,6 +6,10 @@ function scr_Minion_Shot_Stats(){
 	
 	minion_dir = 0;
 	minion_speed = 0;
+	minion_accuracy = 1; 
 	
 	champ = 0;
+	
+	bossmaxhealth2 = 0;
+	
 }

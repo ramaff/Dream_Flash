@@ -26,13 +26,17 @@
     bullet_power = bosspower;
     bullet_direction = (-10 + random(20)) / bossaccuracy;
     bullet_lifespan = 80;
-    bullet_size = 1;
+    bullet_size = 0.75;
     bullet_count = 3;
     bullet_spread = 360;
     boss_radius = 0;
 	
 	bullet_type = obj_Poison_Ball_Bullet;
-    bullet_sprite = spr_Glowy_Green_Shot;
+    bullet_sprite = spr_Poison_Lob_Shot;
+	
+	bullet_lob_time = 50 + random(30);
+	bullet_lifespan = bullet_lob_time + 2;
+	bullet_bounce_speed = 3 + random(3);
     
 	bullet_speedfac_min = 1;
     bullet_speedfac_add = 1;

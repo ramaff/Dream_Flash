@@ -7,9 +7,11 @@ function scr_Boss_Attack_Sprite_v2(sprite, attackHoldFrame, attackLoopStartFrame
 			image_index = attackHoldFrame
 		}
 	} else {
-		image_index = attackHoldFrame + 1;	
+		if image_index < attackHoldFrame + 1 {
+			image_index = attackHoldFrame + 1;	
+		}
 	}
-	if activeAttackDuration > attackEndDuration and image_index > attackLoopEndFrame {
-		image_index = attackLoopStartFrame;
+	if activeAttackDuration > attackEndDuration and image_index >= attackLoopEndFrame + 1 {
+		image_index = attackLoopStartFrame;   
 	}
 }

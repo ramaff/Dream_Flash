@@ -1,339 +1,357 @@
 /// @description  Boss Step Event
 
-scr_Boss_Step();
+// Mandatory:
+scr_Boss_Step(2);
 
-//scr_Boss_Morph_In();
+// If boss is floating in air, can make it bob up and down:
+//scr_Boss_Height_Bob(30, 1, 0);
 
-#region /// Active Attack Prep
+// Make boss shape wobble:
+if activeAttack = 0 {
+	scr_Boss_Wobble("Horizontal", 0.6, 1, 0);
+	speed = bossmovespeed;
+	direction = scr_Soul_Point();
+} 
 
-if bossActiveAttackDelay[1] <= 0 and bossActiveAttackCooldown[1] <= 0 and bossActiveAttackDuration[1] <= 0 {
-    bossActiveAttack[1] = choose(1,1,1,2,2);
+//////////////////////////////////////////////////////////////////////////////////////////
+/////////////// Active Attack Prep
+//////////////////////////////////////////////////////////////////////////////////////////
+
+if activeAttackDelay <= 0 and activeAttackCooldown <= 0 and activeAttackDuration <= 0 {
+    
+	speed = 0;
+	// Pick a random attack to do
+	activeAttack = choose(1, 2, 3);
 	
-	state = states.normal;
-	
-	if champ = 1 {
-		bossActiveAttack[1] = choose(3,3,3,2,2);
+	if currentphase = 2 {
+		activeAttack = 4;	
 	}
-	if champ = 2 {
-		bossActiveAttack[1] = choose(5,5,5,2,2);
-	}
 	
-    if currentphase = 2 {
-        bossActiveAttack[1] = 4;
+    if activeAttack = 1 {
+		// Setup how many attacks per boss move, delay, etc
+		scr_Boss_Attack_Time_Setup_v2(4, 40, 30, 120, 30, 30);
+		
+		// Can set up the initial pattern direction
+		// patternDirection = scr_Soul_Point();
+		// patternDirection = random(360;
     }
-    if bossActiveAttack[1] = 1 {
-		if champ = 0 {
-			scr_Boss_Attack_Time_Setup(4, 30, 20, 90, 15, -10);
+	if activeAttack = 2 {
+		// Setup how many attacks per boss move, delay, etc
+		scr_Boss_Attack_Time_Setup_v2(80, 40, 1, 120, 30, 0);
+		
+		scr_Boss_Jump_Setup_v2(0, 12.5 * bossmovespeed, x, y);
+		
+		// Can set up the initial pattern direction
+		// patternDirection = scr_Soul_Point();
+		// patternDirection = random(360;
+    }
+	if activeAttack = 3 {
+		// Setup how many attacks per boss move, delay, etc
+		scr_Boss_Attack_Time_Setup_v2(1, 40, 1, 120, 30, 10);
+		
+		// Can set up the initial pattern direction
+		// patternDirection = scr_Soul_Point();
+		// patternDirection = random(360;
+    }
+	if activeAttack = 4 {
+		// Setup how many attacks per boss move, delay, etc
+		scr_Boss_Attack_Time_Setup_v2(80, 40, 1, 30, 30, 0);
+		
+		scr_Boss_Jump_Setup_v2(0, 7 * bossmovespeed, x, y);
+		
+		// Can set up the initial pattern direction
+		// patternDirection = scr_Soul_Point();
+		// patternDirection = random(360;
+    }
+}
+
+//////////////////////////////////////////////////////////////////////////////////////////
+/// Active Attack Pattern Code
+//////////////////////////////////////////////////////////////////////////////////////////    
+
+scr_Default_Attack_Settings();
+
+// If its time to attack, attack
+if activeAttackDelay <= 0 and patternCooldown <= 0 and patternCount > 0 {
+   
+    if activeAttack = 1 {
+		scr_Boss_Stretch("Vertical", 0.7);
+		
+		bullet_direction = scr_Soul_Point();
+		bullet_direction += (-30 + random(60)) / bossaccuracy;
+		bullet_type = obj_Jelly_Bullet;
+		bullet_sprite = spr_Lob_Shot;
+		bullet_speed = bossbulletspeed * 2;
+		direction = bullet_direction;
+		var face_direction = round(direction / 180) * 180
+		bullet_lifespan = 127;
+		
+		boss_yoffset = -70;
+		if face_direction = 0 {
+			boss_xoffset = 10;
 		} else {
-			scr_Boss_Attack_Time_Setup(1, 30, 20, 90, 15);
-		}
-    }
-    if bossActiveAttack[1] = 2 {
-        scr_Boss_Attack_Time_Setup(1, 30, 10, 180, 15);
-    }
-	if bossActiveAttack[1] = 3 {                       
-		scr_Boss_Attack_Time_Setup(1, 10, 20, 90, 15);
-    }
-	if bossActiveAttack[1] = 5 {
-        scr_Boss_Attack_Time_Setup(3, 30, 30, 90, 15);
-    }
-    if bossActiveAttack[1] = 4 {
-		/*
-		jumpDirection = "Up";
-		jumpHeight = 0;
-		
-		//bossActiveAttackDelay[1] = 10;
-		
-        scr_Boss_Dash_Setup();
-        bossPatternCount = 50;
-        bossPatternCountMax = bossPatternCount;
-        bossPatternCooldown = 15;
-        bossPatternCooldownMax = 1;
-		
-		var bossdirection = scr_Soul_Point();
-        bossDashDirection = bossdirection;
-		
-		scr_Hop_Distance_Calc(5.5 * bossmovespeed);
-		
-		bossDashSpeed = 0;
-		state = states.jumping;
-		
-		bossActiveAttackDuration[1] = 25 + bossattackspeed * bossPatternCooldownMax * bossPatternCount;
-        bossActiveAttackCooldown[1] = 30 + random(15); */
-		
-		scr_Boss_Attack_Time_Setup(30, 15, 1, 30, 15, 15);
-		scr_Boss_Jump_Setup(scr_Soul_Point(), 0, 8 * bossmovespeed);
-    }
-}
-#endregion
-
-#region /// Active Attack Code
-    
-    scr_Default_Attack_Settings();
-    bullet_type = obj_Jelly_Ball_Bullet;
-    bullet_sprite = spr_Lob_Shot;
-    bullet_speed = bossbulletspeed * 1.5;
-    bullet_power = bosspower * 1.5;
-    bullet_direction = (-5 + random(10)) / bossaccuracy;
-    bullet_lifespan = 80;
-    bullet_size = 1;
-    bullet_count = 1;
-    bullet_spread = 0;
-    bullet_image_speed = 0.5;
-    boss_radius = 0;
-    
-    if champ = 1 {
-        bullet_type = obj_Poison_Ball_Bullet;
-        bullet_sprite = spr_Green_Jam_Shot;
-    }
-    
-    if champ = 8 {
-        bullet_type = obj_Bullet_Jelly_Bullet;
-		bullet_sprite = spr_Bullet_Jam_Shot;
-    }
-	
-
-if bossActiveAttackDelay[1] <= 0 {
-
-}
-
-#endregion
-
-#region /// Active Attack Pattern Code
-
-
-if bossActiveAttackDelay[1] <= 0 and bossPatternCooldown <= 0 and bossPatternCount > 0 {
-        
-	if bossActiveAttack[1] = 1 {
-		
-		scr_Boss_Stretch("Horizontal",0.3);
-		
-		if champ = 8 {
-			bullet_speed = bossbulletspeed * 1.66;
-			bullet_type = obj_Tar_Ball_Bullet;
-			
-			bullet_count = 3;
-			bullet_spread = 45;
-			bullet_speed = bossbulletspeed;
+			boss_xoffset = -10;
 		}
 		
+		if champ = 0 {
+			scr_Boss_Shoot();
+		}
 		if champ = 1 {
-			bullet_count = 6;
-	        bullet_spread = 360;
-	        bullet_speed = bossbulletspeed;
-			bullet_size = 0.75;
+			bullet_type = obj_Poison_Jelly_Bullet;
+			bullet_sprite = spr_Poison_Lob_Shot;
+			repeat(3) {
+				bullet_direction = scr_Boss_Bullet_Direction_Formula(scr_Soul_Point(), 75)
+				bullet_speed = bossbulletspeed * (1 + random(0.6) + ((patternCountMax - patternCount) / 3))
+				scr_Boss_Shoot();
+			}
+		}
+		if champ = 2 {
+			bullet_type = obj_Bubble_Bullet;
+			bullet_sprite = spr_Pink_Bubble_Bullet;
+			repeat(5) {
+				bullet_direction = scr_Boss_Bullet_Direction_Formula(scr_Soul_Point(), 75)
+				bullet_speed = bossbulletspeed * (1.5 + random(0.8) + ((patternCountMax - patternCount) / 3))
+				scr_Boss_Shoot();
+			}
+		}
+		if champ = 8 {
+			bullet_type = obj_Tar_Ball_Bullet;
+			bullet_sprite = spr_Tar_Lob_Shot;
+			
+			bullet_bounce_speed = 4 + random(4);
+			bullet_lob_time = 60 + random(30);
+			bullet_lifespan = bullet_lob_time + 2;
+			
+			repeat(2) {
+				bullet_direction = scr_Boss_Bullet_Direction_Formula(scr_Soul_Point(), 75)
+				bullet_speed = bossbulletspeed * (1 + random(0.3) + ((patternCountMax - patternCount) / 2.5))
+				scr_Boss_Shoot();
+			}
+		}
+	
+		// If you gotta change the pattern aim direction
+	    // bossPatternDirection += 0;
+	}
+	
+	if activeAttack = 2 {
 		
-			bullet_speedfac_min = 1;
-	        bullet_speedfac_add = 1.2;
-	        bullet_timefac_min = 1;
-	        bullet_timefac_add = 0;
-		
-			scr_Soul_Shoot_Vomit();
+		if patternCount = 1 {
+			
+			scr_Boss_Stretch("Horizontal", 1.5);
+			
+			boss_yoffset = 20;
+			
+			bullet_direction = 45;
+			bullet_count = 4;
+			bullet_spread = 90;
+			
+			bullet_type = obj_Jelly_Bullet_Straight;
+			bullet_sprite = spr_Lob_Shot;
+			bullet_speed = bossbulletspeed * 1.5;
+			bullet_lifespan = 86;
+			
+			if champ = 0 {
+				scr_Boss_Shoot();
+			}
+			if champ = 1 {
+				bullet_count = 1;
+				bullet_sprite = spr_Poison_Lob_Shot;
+				repeat(6) {
+					bullet_speed = bossbulletspeed * (1 + random(1));
+					bullet_direction = random(360);
+					
+					scr_Boss_Shoot();
+				}
+			}
+			if champ = 2 {
+				bullet_type = obj_Bubble_Bullet;
+				bullet_sprite = spr_Pink_Bubble_Bullet;	
+				bullet_lifespan = 150;
+				
+				var add = 0
+				repeat(4) {
+					bullet_speed = bossbulletspeed * (1.5 + add + random(0.5));
+					bullet_direction = scr_Boss_Bullet_Direction_Formula(45, 40);
+					scr_Boss_Shoot();
+					add += 0.35;
+				}
+			}
+			if champ = 8 {
+				bullet_count = 6;
+				bullet_type = obj_Tar_Jelly_Bullet_Straight
+				bullet_sprite = spr_Tar_Lob_Shot;
+				
+				bullet_lob_time = 60;
+				bullet_lifespan = 62;
+				
+				bullet_spread = 60;
+					
+				scr_Boss_Shoot();
+			}
+			
+			scr_Screen_Shake(7,5);	
 		}
 		
-		if champ != 1 {
-			bullet_direction = (-20 + random(40)) / bossaccuracy * (1 + bossPatternCountMax - bossPatternCount);
+		scr_Boss_Dash_Movement_v2(4,2);
 		
-			scr_Soul_Shoot();
-		}
+		speed = dashSpeed;
+        direction = dashDirection;
 		
-        scr_Soul_Point();
-		speed = 0.3 * bossmovespeed
-    }
-    if bossActiveAttack[1] = 2 {
-		scr_Boss_Stretch("Horizontal",0.3);
+		var dir = scr_Soul_Point(x, y + bossHeight);
+		var dist = scr_Soul_Distance(x, y + bossHeight);
+		var aimspeed = min(5, dist);
+		x += lengthdir_x(aimspeed, dir);
+		y += lengthdir_y(aimspeed, dir);
 		
-        bullet_type = obj_Jello_Spawning_Bullet;
+		scr_Jump_Movement_v2(5);
+	}
+	
+	if activeAttack = 3 {
+		scr_Boss_Stretch("Vertical", 0.7);
+		
+		boss_xoffset = 0;
+		boss_yoffset = -40;
+		
+		bullet_type = obj_Jello_Spawning_Bullet;
+		bullet_count = 1;
+		bullet_lob_time = 45 + random(30);
+		bullet_lifespan = bullet_lob_time + 2;
+		bullet_bounce_speed = 3 + random(2);
+		bullet_sprite = spr_Slime_Minion_Hop;
+		
 		if champ = 1 {
 			bullet_type = obj_PJello_Spawning_Bullet;
 		}
 		if champ = 2 {
-			bullet_type = obj_BBJello_Spawning_Bullet;
+			bullet_type = obj_BBJello_Spawning_Bullet;	
 		}
 		if champ = 8 {
-			bullet_type = obj_BJello_Spawning_Bullet;
-		}
-        
-        bullet_count = 3;
-        bullet_spread = 180;
-        bullet_lifespan = 80;
-        bullet_speed = bossbulletspeed;
-		bullet_size = 0.75;
-		
-		bullet_speedfac_min = 1;
-        bullet_speedfac_add = 1.2;
-        bullet_timefac_min = 1;
-        bullet_timefac_add = 0;
-		
-		scr_Soul_Shoot_Vomit();
-        scr_Soul_Point();
-		speed = 0.3 * bossmovespeed;
-    }
-    if bossActiveAttack[1] = 3 {
-		
-		scr_Boss_Stretch("Horizontal",0.3);
-        
-        bullet_count = 5;
-        bullet_spread = 30;
-        bullet_lifespan = 80;
-        bullet_speed = bossbulletspeed;
-		
-		if champ = 1 {
-			bullet_count = 7;
-			bullet_spread = 240;
+			bullet_type = obj_BJello_Spawning_Bullet;	
 		}
 		
-		bullet_speedfac_min = 0.8;
-        bullet_speedfac_add = 1.35;
-        bullet_timefac_min = 1;
-        bullet_timefac_add = 0;
-		
-		scr_Soul_Shoot_Vomit();
-        scr_Soul_Point();
-		speed = 0.3 * bossmovespeed;
-    }
-	if bossActiveAttack[1] = 5 {
-		
-		scr_Boss_Stretch("Horizontal",0.3);
-		
-		bullet_type = obj_Smart_Home_Bullet;
-		bullet_sprite = spr_Cyan_Bubble_Bullet;
-        
-        bullet_count = 7;
-        bullet_spread = 60;
-        bullet_lifespan = 300;
-        bullet_speed = bossbulletspeed;
-		
-		bullet_speedfac_min = 0.8;
-        bullet_speedfac_add = 1.35;
-        bullet_timefac_min = 1;
-        bullet_timefac_add = 0;
-		
-		scr_Soul_Shoot_Vomit();
-        scr_Soul_Point();
-		speed = 0.3 * bossmovespeed;
-    }
+		repeat(3) {
+			bullet_direction = random(360);
+			scr_Boss_Shoot();
+		}
 	
-	if bossActiveAttack[1] = 4 {
-		
-		if bossPatternCount = 1 {
-			scr_Screen_Shake(5,5);	
-		}
-		
-        scr_Boss_Dash_Movement(4,2);
-		
-		speed = bossDashSpeed;
-        direction = bossDashDirection;
-		
-		scr_Jump_Movement(3);
-		
-    }
+		// If you gotta change the pattern aim direction
+	    // bossPatternDirection += 0;
+	}
 	
-	bossPatternCount -= 1;
-    bossPatternCooldown += bossPatternCooldownMax;
-	
-}
-
-#endregion
-
-#region /// Active Attack Post + Sprites
-
-scr_Boss_Size_Lerp(0.15);
-
-if bossActiveAttack[1] = 0 {
-	sprite_index = spr_Jello_Amorphous;	
-}
-
-if state = states.jumping {
-	if jumpHeight > 10 || bossPatternCooldown > 0 {
-		scr_Boss_Attack_Sprite(spr_Jello_Hop, 15, 7, 7);
-	} else if jumpHeight <= 10 {
-		if jumpDirection = "Down" {
-			state = states.normal;
-		}
-		if bossActiveAttackDuration[1] <= 0 {
+	if activeAttack = 4 {
+		
+		if patternCount = 1 {
 			
+			scr_Boss_Stretch("Horizontal", 1.5);
+			
+			boss_yoffset = 20;
+			
+			//bullet_direction_base = scr_Soul_Point();
+			bullet_count = 1;
+			
+			bullet_type = obj_Jelly_Bullet;
+			bullet_sprite = spr_Lob_Shot;
+			bullet_lifespan = 62;
+			bullet_lob_time = 60;
+			bullet_bounce_speed = 4;
+			
+			if champ = 0 || champ = 8 {
+				champ = 8 {
+					bullet_type = obj_Tar_Jelly_Bullet_Straight
+					bullet_sprite = spr_Tar_Lob_Shot;	
+				}
+				repeat(3) {
+					bullet_bounce_speed = 4 + random(2);
+					bullet_lob_time = 45 + random(25);
+					bullet_lifespan = bullet_lob_time + 2;
+					
+					bullet_direction = scr_Boss_Bullet_Direction_Formula(scr_Soul_Point(), 120)
+					bullet_speed = bossbulletspeed * (1 + random(1))
+					scr_Boss_Shoot();
+				}
+			}
+			if champ = 1 {
+				bullet_type = obj_Poison_Jelly_Bullet;
+				bullet_sprite = spr_Poison_Lob_Shot;
+				repeat(8) {
+					bullet_bounce_speed = 4 + random(4);
+					bullet_lob_time = 60 + random(30);
+					bullet_lifespan = bullet_lob_time + 2;
+					
+					bullet_direction = random(360);
+					bullet_speed = bossbulletspeed * (1 + random(1));
+					scr_Boss_Shoot();
+				}
+			}
+			if champ = 2 {
+				bullet_type = obj_Bubble_Bullet;
+				bullet_sprite = spr_Pink_Bubble_Bullet;
+				bullet_lifespan = 150;
+				repeat(10) {
+					bullet_direction = scr_Boss_Bullet_Direction_Formula(scr_Soul_Point(), 180)
+					bullet_speed = bossbulletspeed * (1.6 + random(1.3))
+					scr_Boss_Shoot();
+				}
+			}
+			
+			scr_Screen_Shake(3,5);
 		}
+		
+		scr_Boss_Dash_Movement_v2(4,2);
+		
+		speed = dashSpeed;
+        direction = dashDirection;
+		
+		scr_Jump_Movement_v2(2);
 	}
+	
+	// Maybe I should put this into a script
+    patternCount -= 1;
+    patternCooldown += patternCooldownMax;
 }
 
-if bossActiveAttack[1] = 1 || bossActiveAttack[1] = 3 || bossActiveAttack[1] = 5 || bossActiveAttack[1] = 6 {
-	scr_Boss_Attack_Sprite(spr_Jello_Attack, 25, 3, 8);
-} else if bossActiveAttack[1] = 2 {
-	scr_Boss_Attack_Sprite(spr_Jello_Attack, 10, 6, 6);
+//////////////////////////////////////////////////////////////////////////////////////////
+/// Active Attack Post
+//////////////////////////////////////////////////////////////////////////////////////////
+
+if activeAttackDuration <= 0 { 
+    activeAttack = 0;
 }
-   
-if bossActiveAttackDuration[1] <= 0 { 
-	state = states.normal;
-	jumpDirection = "None"
-	jumpHeight = 0;
-	
-	sprite_index = spr_Jello_Amorphous;	
-	
-	if bossActiveAttack[1] = 4 {
-	
-	    if champ = 0 {
-			scr_Boss_Stretch("Horizontal",0.45);
-		
-	        scr_Soul_Shoot();
-	    }
-	    if champ = 1 {
-			scr_Boss_Stretch("Horizontal",0.45);
-		
-	        bullet_type = obj_Poison_Ball_Bullet;
-	        bullet_sprite = spr_Green_Jam_Shot;
-	        bullet_lifespan = 85;
-	        bullet_count = 3;
-	        bullet_direction = random(360);
-	        bullet_spread = 120;
-	        scr_Just_Shoot();
-	    }
-	    if champ = 2 {
-			scr_Boss_Stretch("Horizontal",0.45);
-		
-	        bullet_sprite = spr_Cyan_Bubble_Bullet;
-			bullet_type = obj_Smart_Home_Bullet;
-        
-	        bullet_count = 7;
-	        bullet_spread = 60;
-	        bullet_lifespan = 300;
-	        bullet_speed = bossbulletspeed;
-		
-			bullet_speedfac_min = 0.8;
-	        bullet_speedfac_add = 1.35;
-	        bullet_timefac_min = 1;
-	        bullet_timefac_add = 0;
-		
-			scr_Soul_Shoot_Vomit();
-	    }
-	    if champ = 8 {
-			scr_Boss_Stretch("Horizontal",0.45);
-		
-			/*
-	        bullet_type = obj_Bullet_Jelly_Bullet;
-	        bullet_sprite = spr_Bullet_Jam_Shot;
-			*/
-		
-			bullet_type = obj_Tar_Ball_Bullet;
-	        bullet_sprite = spr_Bullet_Jam_Shot;
-		
-	        bullet_lifespan = 85;
-	        bullet_count = 4;
-	        bullet_spread = 90;
-	        scr_Just_Shoot();
-	    }
-	
+
+/// Boss Sprite Code
+
+// Go back to normal default size
+scr_Boss_Size_Lerp_DirAlt(0.15);
+
+// Handles boss attack sprite animation
+if activeAttack = 1 {
+	var holdFrame = 2;
+	scr_Boss_Attack_Sprite_v2(spr_Amorphous_Jello_Shoot, holdFrame, 3, 5, 40);
+	if image_index = holdFrame {
+		scr_Boss_Wobble("Horizontal", 2, 0.25, 0)	
 	}
-    //image_speed = 0;
-    image_index = 0;
-    friction = 0;
-    bossActiveAttack[1] = 0;
-    bossActiveAttack[2] = 0;
-    bossActiveAttack[3] = 0;
-	bossActiveAttack[8] = 0;
-    bossActiveAttack[0] = 0;
+} else if activeAttack = 2 {
+	var holdFrame = 2;
+	scr_Boss_Attack_Sprite_v2(spr_Amorphous_Jello_Slam, holdFrame, 6, 6, 50);
+	if image_index = holdFrame {
+		scr_Boss_Wobble("Horizontal", 2, 0.25, 0)	
+	}
+} else if activeAttack = 3 {
+	var holdFrame = 2;
+	scr_Boss_Attack_Sprite_v2(spr_Amorphous_Jello_Summon, holdFrame, 3, 3, 20);
+	if image_index = holdFrame {
+		scr_Boss_Wobble("Horizontal", 2, 0.25, 0)	
+	}
+} else if activeAttack = 4 {
+	var holdFrame = 2;
+	scr_Boss_Attack_Sprite_v2(spr_Amorphous_Jello_Hop, holdFrame, 5, 5, 60);
+	if image_index = holdFrame {
+		scr_Boss_Wobble("Horizontal", 2, 0.25, 0)	
+	}
+} else {
+	sprite_index = spr_Amorphous_Jello;
 }
 
-#endregion
-
+// So that the boss hurts soul on collision
+// Smaller than the actual boss hitbox
 scr_Boss_Soul_Hitbox(sprite_index);

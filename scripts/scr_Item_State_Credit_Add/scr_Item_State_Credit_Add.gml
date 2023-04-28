@@ -25,6 +25,9 @@ function scr_Item_State_Credit_Add(itemVal){
 	if variable_struct_exists(current_item_stats, "Casting_Credit") {
 		global.castingprogress += current_item_stats.Casting_Credit
 	}
+	if variable_struct_exists(current_item_stats, "Ascending_Credit") {
+		global.ascendingprogress += current_item_stats.Ascending_Credit
+	}
 	
 	//var credAdd = 0;
 	//var stateToAdd = "None"

@@ -2,7 +2,7 @@
   "resourceType": "GMSprite",
   "resourceVersion": "1.0",
   "name": "spr_Jello_Amorphous_Palette",
-  "bbox_bottom": 8,
+  "bbox_bottom": 6,
   "bbox_left": 0,
   "bbox_right": 3,
   "bbox_top": 0,

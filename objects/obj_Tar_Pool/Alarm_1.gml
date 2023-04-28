@@ -1,19 +1,25 @@
 /// @description Insert description here
 // You can write your code in this editor
-	var dir = 0;
+	var dir = -45 + random(90);
 	repeat(1) {
-		with instance_create(x,y,obj_Basic_Bullet) {
+		with instance_create(x,y,obj_Lob_Bullet) {
 	        scr_Bullet_Replicate_Properties();
+			bulletbounceY = 0;
+			bounce_speed = (3 + random(2));
+			bulletlobtime = 50 + random(30);
+			bounce_gravity = 2 * bounce_speed / bulletlobtime;
+			bulletlife = bulletlobtime + 2;
+			alarm[0] = bulletlife;
             bulletsize = 0.5;
+			bulletsizemax = bulletsize;
             image_xscale = bulletsize;
             image_yscale = bulletsize;
-            sprite_index = spr_Glowy_Dark_Shot;
+            sprite_index = spr_Glowy_Purple_Shot;
             bulletspeed = 4;
-            bulletpower = other.bulletpower * 3;
+            bulletpower = global.stagedamage
             direction = scr_Soul_Point() + dir;
             speed = bulletspeed;
 		}
-		dir += 15;
 	}
 
-alarm[1] = 120 + random(60);
+alarm[1] = 90 + random(30);

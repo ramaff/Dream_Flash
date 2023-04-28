@@ -2,8 +2,18 @@ function scr_Boss_Step(version = 1) {
 	scr_Next_Phase_Check();
 	scr_Boss_Attack_Step(version);
 	//scr_Boss_Status_Step();
-	scr_Boss_Morph_In();
+	scr_Boss_Morph_In(version);
 	//scr_Room_Depth(0);
+	
+	if state = states.normal || state = states.jumping {
+		if !scr_Outside_Check_Bool(256) {
+			var dirr = point_direction(x, y, room_width / 2, room_height / 2);
+			var xx = x + lengthdir_x(10, dirr)
+			var yy = y + lengthdir_y(10, dirr)
+			x = lerp(x, xx, 0.001);
+			y = lerp(y, yy, 0.001);
+		}
+	}
 
 	if boost = 1 {
 	    val = irandom(6)

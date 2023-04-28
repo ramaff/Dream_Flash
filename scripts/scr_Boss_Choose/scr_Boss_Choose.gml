@@ -56,25 +56,25 @@ function scr_Boss_Choose(roomNum, exclude, difficultyAdd = 0) {
 
 	
 	if global.currentchapter = 1 {
-	    bossform = choose(1,3,5,9,12,13,14,16,18,19,20,24,25,37,42,43,98);
+	    bossform = choose(1,3,5,9,12,13,14,16,18,19,20,24,25,37,42,43,44,98);
 	    if exclude = 1 {
-	        bossform = choose(1,3,5,9,12,14,16,18,19,20,24,25,37,42,43,98);
+	        bossform = choose(1,3,5,9,12,14,16,18,19,20,24,25,37,42,43,44,98);
 	    }
 		sboss = scr_Chance(17/0.5);
 		if sboss = true {
-			bossform = choose(81,82,83,84,86,87,89);
+			bossform = choose(81,82,83,84,86,87,89, 90);
 		}
 	}
 	if global.currentchapter = 2 {
-	    bossform = choose(2,3,6,10,14,17,20,23,26,27,32,34,35,36,38,45,48,50,64);
+	    bossform = choose(2,3,6,10,14,17,20,23,26,27,32,34,35,36,38,44,45,48,50,64);
 		
 		if bossform = 50 and scr_Chance(2) {
-			bossform = choose(2,3,6,10,14,17,20,23,26,27,32,34,35,36,38,45,48,64);
+			bossform = choose(2,3,6,10,14,17,20,23,26,27,32,34,35,36,38,44,45,48,64);
 		}
 		
 		sboss = scr_Chance(18);
 		if sboss = true {
-			bossform = choose(81,82,83,84,86,87,89);
+			bossform = choose(81,82,83,84,86,87,89, 90);
 		}
 	}
 	if global.currentchapter = 3 {
@@ -86,7 +86,7 @@ function scr_Boss_Choose(roomNum, exclude, difficultyAdd = 0) {
 		
 		sboss = scr_Chance(17);
 		if sboss = true {
-			bossform = choose(81,82,83,84,86,87,89);
+			bossform = choose(81,82,83,84,86,87,89, 90);
 		}
 	}
 	if global.currentchapter >= 4 {
@@ -94,7 +94,7 @@ function scr_Boss_Choose(roomNum, exclude, difficultyAdd = 0) {
 		
 		sboss = scr_Chance(6);
 		if sboss = true {
-			bossform = choose(81,82,83,84,86,87,89);
+			bossform = choose(81,82,83,84,86,87,89, 90);
 		}
 	}
 	
@@ -499,6 +499,12 @@ function scr_Boss_Choose(roomNum, exclude, difficultyAdd = 0) {
 	    difficulty = 3;
 	    global.champ = choose(0,1);
 	}
+	if bossform = 44.1 // Congaline
+	{
+	    bosstype = obj_Conga_Line;
+	    difficulty = 2;
+	    global.champ = choose(0);
+	}
 	if bossform = 45.1 // Tough Luck
 	{
 	    bosstype = obj_Tough_Luck;
@@ -599,8 +605,14 @@ function scr_Boss_Choose(roomNum, exclude, difficultyAdd = 0) {
 	    global.champ = 0;
 	    global.boost = 0;
 	}
+	if bossform = 90.1
+	{
+	    bosstype = obj_Head_In_The_Clouds;
+	    global.champ = 0;
+	    global.boost = 0;
+	}
 	
-	if bossform > 80 and bossform < 90 {
+	if bossform > 80 and bossform <= 90 {
 		difficulty = 4 * global.currentchapter;
 		if global.currentchapter = 3 {
 			difficulty += 1;	

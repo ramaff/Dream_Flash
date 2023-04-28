@@ -36,6 +36,7 @@ function scr_Bullet_Replicate_Properties() {
 	bulletfade = other.bulletfade;
 	bulletblend = other.bulletblend;
 	bulletsize = other.bulletsize;
+	bulletsizemax = other.bulletsize;
 	image_xscale = bulletsize;
 	image_yscale = bulletsize;
 	bulletspeed = other.bulletspeed;
@@ -43,6 +44,7 @@ function scr_Bullet_Replicate_Properties() {
 	bulletpower = other.bulletpower;
 	bulletpowermax = bulletpower;
 	bulletlife = other.bulletlife;
+	bulletlobtime = other.bulletlobtime;
 	bulletimagespeed = other.bulletimagespeed;
 	        
 	bulletbounceY = other.bulletbounceY;
@@ -81,6 +83,10 @@ function scr_Bullet_Replicate_Properties() {
 	if bulletblend != 0 {
 		scr_Bullet_Blend(bulletblend);	
 	}
+	
+	bounce_speed = other.bounce_speed;
+	bounce_gravity = other.bounce_gravity;
+	bullet_bounce_Y = other.bullet_bounce_Y;
 				
 	//sizeF = other.sizeF;
 

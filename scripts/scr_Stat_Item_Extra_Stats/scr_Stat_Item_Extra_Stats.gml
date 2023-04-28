@@ -77,13 +77,13 @@ function scr_Stat_Item_Extra_Stats(){
 					valUp = 4;	
 				}
 				if spirNum = 4 {
-					valUp = 6;	
-				}
-				if spirNum = 5 {
 					valUp = 7;	
 				}
+				if spirNum = 5 {
+					valUp = 9;	
+				}
 				if spirNum = 6 {
-					valUp = 8;	
+					valUp = 11;	
 				}
 		
 				if emNum > 0 and emNum <= 6 {

@@ -13,6 +13,13 @@ draw_set_blend_mode(bm_normal)
 
 
 draw_self();
+
+//image_blend = c_red;
+
+//draw_sprite_ext(spr_Generic_Glow, 0, x, y, image_xscale * 2, image_yscale * 2, image_angle, image_blend, image_alpha / 4);
+
+//image_blend = c_white;
+
 /*
 draw_set_color(c_black)
 draw_text(x + 30, y, string(bulletpower));

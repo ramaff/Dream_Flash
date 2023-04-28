@@ -1,6 +1,8 @@
 function scr_Boss_Stats_Setup(version=1) {
 	currentphase = 1;
 	finalphase = 2;
+	
+	tier = global.currentchapter - 1;
 
 	    scr_Boss_Status_Setup(version);
 	
