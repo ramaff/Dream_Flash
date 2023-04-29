@@ -36,7 +36,7 @@ function scr_Bullet_Shoot_Properties() {
 	bulletbouncedirection = other.bullet_bounce_direction;
 	sprite_index = bulletsprite;
 	bulletsize = other.bullet_size * 0.5;
-	bulletsizemax = other.bullet_size_max * 0.5;
+	bulletsizemax = bulletsize;
 	image_xscale = bulletsize;
 	image_yscale = bulletsize;
 	bulletspeed = other.bullet_speed;

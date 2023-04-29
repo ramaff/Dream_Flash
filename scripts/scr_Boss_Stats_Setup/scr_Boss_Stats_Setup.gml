@@ -150,9 +150,9 @@ function scr_Boss_Stats_Setup(version=1) {
 	}
     
 	
-	if bossnum > 80 and bossnum < 90 and room = State_Room {
-		bossmaxhealth = bossmaxhealth * 1.75;
-		bossmaxhealth2 = bossmaxhealth2 * 1.75;
+	if bossnum > 80 and bossnum <= 90 and room = State_Room {
+		bossmaxhealth = bossmaxhealth * 1.5;
+		bossmaxhealth2 = bossmaxhealth2 * 1.5;
 	}
 	
 	if bossnum = 161 {
@@ -165,6 +165,8 @@ function scr_Boss_Stats_Setup(version=1) {
 		
 		bossdefense2 = bossdefense;
 	}
+	
+	show_debug_message("scr_boss_stats_setup boss hps: " + string(bossmaxhealth) + ", " + string(bossmaxhealth2))
 	
 
 	/////////////////////////////////////////////////////////////////////

@@ -6,8 +6,8 @@ function scr_Boss_Item_Field(roomType){
 	global.emoteFieldSpawn--;
 	
 	if global.emoteFieldSpawn <= 0 {
-		global.emoteFieldSpawn = 2 + floor(global.totalFieldSpawn / 2);
 		global.totalFieldSpawn++;
+		global.emoteFieldSpawn = 1 + round(global.totalFieldSpawn / 1.5);
 		//global.emoteFieldSpawn = 1;
 		Floor_Layout_Control.Flash[global.currentroom,0] = "Emotion Field"
 	} else {

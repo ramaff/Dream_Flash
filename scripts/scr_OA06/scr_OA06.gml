@@ -5,7 +5,7 @@ function scr_OA06(){
 
 	if global.OA[6] >= 1 {
 	    //if obj_Soul_Parent.senergy >= 50 {
-		var chance = 40 / (1 + global.OA[6]);
+		var chance = 30 / (1 + global.OA[6]);
 		if scr_Chance(chance) {
 			shotmiracle += 1;
 			

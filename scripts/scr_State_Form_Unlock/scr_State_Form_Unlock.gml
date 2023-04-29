@@ -58,7 +58,7 @@ function scr_State_Form_Unlock(){
 			global.recollectionState[9]++;
 			global.recollectionStateUnlocked = 1;
 		}
-		if global.castingprogress >= (3 - ascendingdis) {
+		if global.ascendingprogress >= (3 - ascendingdis) {
 			global.soultransformedstate = "Ascending";
 			global.recollectionState[10]++;
 			global.recollectionStateUnlocked = 1;

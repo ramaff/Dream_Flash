@@ -3,6 +3,7 @@
 function scr_Soul_Attack_Think() {
 	with obj_Soul_Parent {
 		sprite_index = spr_The_Soul_Hard_Think;
+		//show_debug_message("scr_soul_attack_think: " + string(scurrentstate))
 		if scurrentstate != "Base" {
 			//show_debug_message(sprite_get_name(sprite_index))
 				switch(scurrentstate) {
@@ -33,6 +34,10 @@ function scr_Soul_Attack_Think() {
 						
 					case "Casting":
 						sprite_index = spr_Casting_Soul_Hard_Think;
+						break;
+						
+					case "Ascending":
+						sprite_index = spr_Ascending_Soul_Hard_Think;
 						break;
 				
 					default:

@@ -25,6 +25,9 @@ function scr_State_Weapon_Progress(itemVal, add){
 	if variable_struct_exists(current_weapon_stats, "Casting_Credit") {
 		global.castingprogress += current_weapon_stats.Casting_Credit * add
 	}
+	if variable_struct_exists(current_weapon_stats, "Ascending_Credit") {
+		global.ascendingprogress += current_weapon_stats.Ascending_Credit * add
+	}
 	
 	/*
 	if itemVal = 12 || itemVal = 13 || itemVal = 14 || itemVal = 402 || itemVal = 7 || itemVal = 116 {

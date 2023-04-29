@@ -3,7 +3,7 @@
 function scr_Bullet_Dampen(dampen = 5){
 	bulletpower -= dampen
 	
-	if bulletpower < 1 {
+	if bulletpower < 2 {
 		instance_destroy();	
 	}
 	
@@ -11,7 +11,7 @@ function scr_Bullet_Dampen(dampen = 5){
 	image_xscale = bulletsize;
 	image_yscale = bulletsize;
 				
-	if bulletsize < 0.05 {
-		bulletsize = 0.05;
+	if bulletsize < 0.1 {
+		bulletsize = 0.1;
 	}
 }

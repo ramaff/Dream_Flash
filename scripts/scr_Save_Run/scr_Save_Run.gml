@@ -81,9 +81,11 @@ function scr_Save_Run() {
 	ini_write_real("Run", "beastprogress", global.beastprogress);
 	ini_write_real("Run", "mechprogress", global.mechprogress);
 	ini_write_real("Run", "scrubprogress", global.scrubprogress);
+	ini_write_real("Run", "dragonprogress", global.dragonprogress);
 	ini_write_real("Run", "spikeprogress", global.spikeprogress);
 	ini_write_real("Run", "bleedingprogress", global.bleedingprogress);
 	ini_write_real("Run", "castingprogress", global.castingprogress);
+	ini_write_real("Run", "ascendingprogress", global.ascendingprogress);
 	
 	ini_write_real("Run", "H06refill", global.H06refill);
 

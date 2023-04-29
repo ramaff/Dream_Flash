@@ -69,11 +69,9 @@ function scr_Shot_Creation() {
 		Shot_Direction = soulshotdirection;
 	} */
 	
-	if Shot_Repetition[bi] >= 1 {
-		Shot_Direction = Shot_Repetition_Direction[bi];
-	}
-	/*
-	var actual_shot_direction = 0;
+	//actual_shot_direction = 0;
+	
+	actual_shot_direction = 0;
 	
 	if Shot_Mouse {
 		actual_shot_direction = point_direction(x,y,mouse_x,mouse_y);
@@ -87,17 +85,22 @@ function scr_Shot_Creation() {
 			actual_shot_direction = point_direction(x,y,instance_nearest(x,y,obj_Boss_Parent).x,instance_nearest(x,y,obj_Boss_Parent).y);
 		}
 	}
-	*/
+	
+	
 	
 	if Shot_Repetition[bi] == Shot_Repetition_Max[bi] - 1 {
 		Shot_Repetition_Direction[bi] = actual_shot_direction
+	}
+	
+	if Shot_Repetition[bi] >= 1 {
+		Shot_Direction = Shot_Repetition_Direction[bi];
 	}
 
 	repeat(Shot_Count) {
 	    if Weapon_Vomit = 1 {
 	        dir = (-(Shot_Accuracy / 2) + random(Shot_Accuracy));
 	    }
-		var actual_shot_direction = 0;
+		actual_shot_direction = 0;
 	    xx = 0;
 	    yy = 0;
 		
@@ -118,6 +121,7 @@ function scr_Shot_Creation() {
 		actual_shot_direction += shotdirectionaddition + Shot_Angle_Relative;
 		
 		actual_shot_direction += scr_XA03_Weapon_Mod();
+		
 		
 	   // if Shot_Forward = 1 {
 			var forward = 16;
@@ -206,7 +210,7 @@ function scr_Shot_Creation() {
 		        shotPowerLevel = other.Shot_Power;
 		        shotknockback = other.Shot_Knockback * other.sshotknockback / 10;
 		        shotarmourpierce = other.Shot_Armour_Pierce + other.sarmourpierce;
-				direction = actual_shot_direction;
+				direction = other.actual_shot_direction;
 		        //
 				
 		        if mechFac > 1 {
@@ -269,12 +273,6 @@ function scr_Shot_Creation() {
 			
 				scr_Beam_Create(shxx,shyy);
 				
-				/*if other.Shot_Beam = 2 {
-					shotsize = other.Shot_Size * ((1 + other.sshotsizefactor) / 1);
-			        image_xscale = shotsize;
-			        image_yscale = shotsize * 1.33;
-				} */
-				
 				if other.Shot_Point_Angle {
 					image_angle = direction;
 				}
@@ -287,23 +285,6 @@ function scr_Shot_Creation() {
 					image_angle = other.Shot_Image_Direction;
 				}
 				
-			
-		        /*
-		        if other.Shot_Beam = 1 {
-        
-		            var xx = x;
-		            var yy = y;
-		            var angle = direction;  
-		            var length = 0;
-            
-		            while(!collision_point(xx + lengthdir_x(length,angle),yy + lengthdir_y(length,angle),obj_The_Border,true,true)) {
-		                length++;
-		            }
-        
-		            image_xscale = length;
-		            image_yscale = shotsize;
-		        }
-		        */
 		    }
 			speedFac += 0.4;
 		}

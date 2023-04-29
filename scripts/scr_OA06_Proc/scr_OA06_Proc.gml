@@ -10,17 +10,7 @@ function scr_OA06_Proc(){
 		        bulletspeed = bulletspeed / 1.5;
 		        speed = speed / 1.5;
 				
-				bulletpower -= dam
-				bulletsize = (bulletpower / bulletpowermax);
-				image_xscale = bulletsize;
-				image_yscale = bulletsize;
-				
-				if bulletsize < 0.05 {
-					bulletsize = 0.05;	
-				}
-				if bulletpower < 1 {
-					instance_destroy();	
-				}
+				scr_Bullet_Dampen(dam)
 		    }
 		}
 	}
