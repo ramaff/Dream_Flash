@@ -953,12 +953,14 @@ function scr_Hard_Coded_Item_Stats(itemVal, items_to_add = 1, reload = false) {
 
 	if itemVal = "P02" {
 		//global.P[2]++;
-		global.soulstrength += 2;
-		global.soulvitality += 2;
-		global.soulessence += 2;
-		global.souldexterity += 2;
-		global.soulperception += 2;
-		global.soulstate += 2;
+		if !reload {
+			global.soulstrength += 2;
+			global.soulvitality += 2;
+			global.soulessence += 2;
+			global.souldexterity += 2;
+			global.soulperception += 2;
+			global.soulstate += 2;
+		}
 	}
 
 	if itemVal = "P03" {
@@ -1118,12 +1120,14 @@ function scr_Hard_Coded_Item_Stats(itemVal, items_to_add = 1, reload = false) {
 		//global.V[2]++;
 	}
 	if itemVal = "V03" {
-	    var tempV03 = global.V[3];
-		global.V[3] = 1;
-		repeat(global.currentchapter) {
-			scr_V03();
+		if !reload {
+		    var tempV03 = global.V[3];
+			global.V[3] = 1;
+			repeat(global.currentchapter) {
+				scr_V03();
+			}
+			global.V[3] = tempV03;
 		}
-		global.V[3] = tempV03;
 		//global.V[3]++;
 	}
 	if itemVal = "V04" {

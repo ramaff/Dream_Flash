@@ -20,7 +20,9 @@ function scr_Beam_Create(shxx,shyy){
 		//beamdir = 0;
 		
 		var beamxx = lengthdir_x(-6, beamdir)
+		//var beamxx = 0
 		var beamyy = lengthdir_y(-6, beamdir)
+		//var beamyy = 0
 		
 		var oldbeamdir = beamdir
 		
@@ -30,24 +32,25 @@ function scr_Beam_Create(shxx,shyy){
 		shotspeed = 0;
 		
 		var beamtype = other.Shot_Beam;
-		var splitsize = 40;
 		var beamtotalsegs = other.Shot_Beam_Count;
 		beamtotalsegs = 15;
 		
 		var beamspriteindex = 0;
 		var beamsize = shotsize;
 		
-		splitsize = 64;
 		var dirChange = 0;
 		
 		var boss_hits = {};
 		
 		//show_debug_message("/nbeam start:\n--------------")
 		
+		//show_debug_message("beamxx: " + string(x + beamxx) + ", beamyy: " + string(y + beamyy))
+		//show_debug_message("beamxx: " + string(x) + ", beamyy: " + string(y))
+		
 		var homespeed = shothomingspeed * 3;
 		var hit_again = -1;
 		
-		splitsize = 128 * shotsize;
+		var splitsize = 128 * shotsize;
 		/*
 		if beamseg <= 2 and other.Shot_Beam = 2 {
 			splitsize = 128 * global.essencebeamsize;	
@@ -105,13 +108,12 @@ function scr_Beam_Create(shxx,shyy){
 			oldbeamdir = beamdir
 
 			
-			//show_debug_message("beamxx: " + string(beamxx) + ", beamyy: " + string(beamyy))
+			//show_debug_message("beamxx: " + string(shxx + beamxx) + ", beamyy: " + string(shyy + beamyy))
 			//show_debug_message("beamdir: " + string(beamdir) + ", dirChange: " + string(dirChange))
 			
 			if (beamseg != beamtotalsegs || other.Shot_Beam = 3) {
 				with instance_create(shxx + beamxx,shyy + beamyy,obj_Beam_Shot) {
-					
-					//show_debug_message(string(beamxx) + ", " + string(beamyy));
+
 					scr_Duplicate_Shot_Stats();
 					image_angle = beamdir - dirChange;
 					image_xscale = beamsize;
@@ -138,7 +140,6 @@ function scr_Beam_Create(shxx,shyy){
 						
 						if dirChange < 0 {
 							image_yscale = image_yscale * -1;
-							//pspr = pspr + "_Mirror"	
 						}
 						
 						pspr = asset_get_index(pspr);

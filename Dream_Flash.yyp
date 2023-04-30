@@ -396,6 +396,7 @@
     {"resourceType":"GMFolder","resourceVersion":"1.0","name":"beam_punches","folderPath":"folders/Sprites/Soul Shot Sprites/Imaginary Shots/beam_punches.yy",},
     {"resourceType":"GMFolder","resourceVersion":"1.0","name":"Item Shots","folderPath":"folders/Sprites/Soul Shot Sprites/Item Shots.yy",},
     {"resourceType":"GMFolder","resourceVersion":"1.0","name":"Laser and Beams","folderPath":"folders/Sprites/Soul Shot Sprites/Laser and Beams.yy",},
+    {"resourceType":"GMFolder","resourceVersion":"1.0","name":"Energy_Crystal","folderPath":"folders/Sprites/Soul Shot Sprites/Laser and Beams/Energy_Crystal.yy",},
     {"resourceType":"GMFolder","resourceVersion":"1.0","name":"Laser Essence","folderPath":"folders/Sprites/Soul Shot Sprites/Laser and Beams/Laser Essence.yy",},
     {"resourceType":"GMFolder","resourceVersion":"1.0","name":"Magical Shots","folderPath":"folders/Sprites/Soul Shot Sprites/Magical Shots.yy",},
     {"resourceType":"GMFolder","resourceVersion":"1.0","name":"Misc Weapondry","folderPath":"folders/Sprites/Soul Shot Sprites/Misc Weapondry.yy",},
@@ -438,7 +439,6 @@
     {"resourceType":"GMFolder","resourceVersion":"1.0","name":"Misc BGs","folderPath":"folders/Tile Sets/Misc BGs.yy",},
     {"resourceType":"GMFolder","resourceVersion":"1.0","name":"Nightmare BGs","folderPath":"folders/Tile Sets/Nightmare BGs.yy",},
     {"resourceType":"GMFolder","resourceVersion":"1.0","name":"Timelines","folderPath":"folders/Timelines.yy",},
-    {"resourceType":"GMFolder","resourceVersion":"1.0","name":"Energy_Crystal","folderPath":"folders/Sprites/Soul Shot Sprites/Laser and Beams/Energy_Crystal.yy",},
   ],
   "IncludedFiles": [
     {"resourceType":"GMIncludedFile","resourceVersion":"1.0","name":"df_boss_stats.json","CopyToMask":-1,"filePath":"datafiles",},
@@ -2949,6 +2949,7 @@
     {"id":{"name":"spr_Amorphous_Jello_Palette","path":"sprites/spr_Amorphous_Jello_Palette/spr_Amorphous_Jello_Palette.yy",},},
     {"id":{"name":"scr_XC05","path":"scripts/scr_XC05/scr_XC05.yy",},},
     {"id":{"name":"scr_Soul_Spear_Use","path":"scripts/scr_Soul_Spear_Use/scr_Soul_Spear_Use.yy",},},
+    {"id":{"name":"obj_Wall_Stop_Ground_Boss_Parent","path":"objects/obj_Wall_Stop_Ground_Boss_Parent/obj_Wall_Stop_Ground_Boss_Parent.yy",},},
     {"id":{"name":"spr_Coming_After_Me_Art","path":"sprites/spr_Coming_After_Me_Art/spr_Coming_After_Me_Art.yy",},},
     {"id":{"name":"scr_Negative_Room_Check","path":"scripts/scr_Negative_Room_Check/scr_Negative_Room_Check.yy",},},
     {"id":{"name":"scr_Dreamers_Blade_Use","path":"scripts/scr_Dreamers_Blade_Use/scr_Dreamers_Blade_Use.yy",},},

@@ -31,7 +31,7 @@ if souldist < 320 {
 	boss_radius = 0;
 
 	bullet_spread = 15;
-	bullet_count = choose(2, 2, 3, 7);
+	bullet_count = choose(5, 5, 5, 10);
 	scr_Soul_Shoot();
 	
 	scr_Boss_Stretch("Vertical", 0.4);

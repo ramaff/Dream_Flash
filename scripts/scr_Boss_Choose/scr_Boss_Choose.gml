@@ -19,6 +19,9 @@ function scr_Boss_Choose(roomNum, exclude, difficultyAdd = 0) {
 	if roomDifficulty > 30 {
 	    roomDifficulty = 30;
 	}
+	if roomDifficulty < 1 {
+		roomDifficulty = 1;	
+	}
 
 	/*
 	if roomNum = 16 and global.currentchapter < 3 {
@@ -761,6 +764,7 @@ function scr_Boss_Choose(roomNum, exclude, difficultyAdd = 0) {
 	//show_debug_message("roomDifficulty: " + string(roomDifficulty))
 	//show_debug_message("boss: " + string(bossform) + ", champ: " + string(global.champ) + ", boost" + string(global.boost))
 
+	var min_diff = (global.currentchapter * global.currentchapter) / 2
 	if repeatBoss = 1 {
 		return scr_Boss_Choose(roomNum, exclude);	
 	} else {
@@ -768,9 +772,10 @@ function scr_Boss_Choose(roomNum, exclude, difficultyAdd = 0) {
 		    return bosstype;
 		}
 		else {
-			if difficultyAdd > 0 {
-				difficultyAdd--;	
-			}
+			//if difficultyAdd > 0 {
+				//difficultyAdd--;	
+			//}
+			difficultyAdd -= 0.25;
 		    return scr_Boss_Choose(roomNum, exclude, difficultyAdd);
 		}
 	}

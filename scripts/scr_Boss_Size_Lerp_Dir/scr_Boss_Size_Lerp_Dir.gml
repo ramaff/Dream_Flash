@@ -3,12 +3,12 @@ function scr_Boss_Size_Lerp_Dir(argument0) {
 	bossSizeY = lerp(bossSizeY,bossSize,argument0);
 
 	if hspeed > 0 {
-	    image_xscale = -bossSizeX;
+	    facing_direction = -1;
 	} else if hspeed < 0 {
-	    image_xscale = bossSizeX;
+	    facing_direction = 1;
 	}
 
+	image_xscale = facing_direction * bossSizeX;
 	image_yscale = bossSizeY;
-
 
 }

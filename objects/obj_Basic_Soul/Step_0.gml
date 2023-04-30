@@ -166,10 +166,12 @@ y += soulCurrentVerticalSpeed;
 
 //image_speed = 0;
 if dx > 0 {
-    size = -0.5;
+    //soulSizeX = -(abs(soulSizeX));
+	//size = -0.5
 } 
 if dx < 0 {
-    size = 0.5;
+    //soulSizeX = (abs(soulSizeX));
+	//size = 0.5;
 }
 
 if scurrentstate = "Powering Up" {
@@ -292,7 +294,24 @@ if soulsleep = 1 {
 	scr_Soul_Attack_Think();	
 }
 
-scr_Soul_Size_Lerp(0.15);
+var lerp_speed = 0.15;
+
+soulSizeX = lerp(soulSizeX,abs(size),lerp_speed);
+soulSizeY = lerp(soulSizeY,abs(size),lerp_speed);
+
+//image_xscale = soulSizeX; //* (size * 2);
+image_yscale = soulSizeY;
+
+if soulCurrentHorizontalSpeed != 0 {
+	if soulCurrentHorizontalSpeed > 0 {
+		facing_direction = -1;
+	} else {
+		facing_direction = 1;
+	}
+}
+
+image_xscale = facing_direction * abs(soulSizeX);
+
 
 if scurrentstate = "Mechanical" {
 	image_angle = lerp(image_angle, 0, 0.15);	

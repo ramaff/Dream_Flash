@@ -355,6 +355,7 @@
     {"name":"beam_punches","order":59,"path":"folders/Sprites/Soul Shot Sprites/Imaginary Shots/beam_punches.yy",},
     {"name":"Item Shots","order":8,"path":"folders/Sprites/Soul Shot Sprites/Item Shots.yy",},
     {"name":"Laser and Beams","order":10,"path":"folders/Sprites/Soul Shot Sprites/Laser and Beams.yy",},
+    {"name":"Energy_Crystal","order":9,"path":"folders/Sprites/Soul Shot Sprites/Laser and Beams/Energy_Crystal.yy",},
     {"name":"Laser Essence","order":2,"path":"folders/Sprites/Soul Shot Sprites/Laser and Beams/Laser Essence.yy",},
     {"name":"Magical Shots","order":3,"path":"folders/Sprites/Soul Shot Sprites/Magical Shots.yy",},
     {"name":"Misc Weapondry","order":5,"path":"folders/Sprites/Soul Shot Sprites/Misc Weapondry.yy",},
@@ -395,7 +396,6 @@
     {"name":"Misc BGs","order":13,"path":"folders/Tile Sets/Misc BGs.yy",},
     {"name":"Nightmare BGs","order":9,"path":"folders/Tile Sets/Nightmare BGs.yy",},
     {"name":"Timelines","order":9,"path":"folders/Timelines.yy",},
-    {"name":"Energy_Crystal","order":9,"path":"folders/Sprites/Soul Shot Sprites/Laser and Beams/Energy_Crystal.yy",},
   ],
   "ResourceOrderSettings": [
     {"name":"spr_Masked_Bliss_Spirit_Attack","order":1,"path":"sprites/spr_Masked_Bliss_Spirit_Attack/spr_Masked_Bliss_Spirit_Attack.yy",},
@@ -2677,6 +2677,7 @@
     {"name":"spr_Amorphous_Jello_Palette","order":14,"path":"sprites/spr_Amorphous_Jello_Palette/spr_Amorphous_Jello_Palette.yy",},
     {"name":"scr_XC05","order":7,"path":"scripts/scr_XC05/scr_XC05.yy",},
     {"name":"scr_Soul_Spear_Use","order":23,"path":"scripts/scr_Soul_Spear_Use/scr_Soul_Spear_Use.yy",},
+    {"name":"obj_Wall_Stop_Ground_Boss_Parent","order":20,"path":"objects/obj_Wall_Stop_Ground_Boss_Parent/obj_Wall_Stop_Ground_Boss_Parent.yy",},
     {"name":"spr_Coming_After_Me_Art","order":6,"path":"sprites/spr_Coming_After_Me_Art/spr_Coming_After_Me_Art.yy",},
     {"name":"scr_Negative_Room_Check","order":15,"path":"scripts/scr_Negative_Room_Check/scr_Negative_Room_Check.yy",},
     {"name":"scr_Dreamers_Blade_Use","order":24,"path":"scripts/scr_Dreamers_Blade_Use/scr_Dreamers_Blade_Use.yy",},

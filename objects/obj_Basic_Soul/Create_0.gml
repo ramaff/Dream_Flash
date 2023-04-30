@@ -28,6 +28,11 @@ scr_Soul_Create_Mod();
 
 size = 0.5;
 
+image_xscale = 0.5;
+image_yscale = 0.5;
+
+facing_direction = 1;
+
 scr_Soul_Particles();
 
 sprite_index = spr_The_Soul_Trail_Sway;

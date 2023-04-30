@@ -1,6 +1,11 @@
 if !(instance_exists(Tutorial_Control)) {
+	
+	var reverie = false;
+	if global.F[5] >= 1 {
+		reverie = scr_Chance(10 / global.F[5]);
+	}
 
-    if Charge_Hold = 0 {
+    if Charge_Hold = 0 and !scr_State_Active_Check("Ascending", reverie) {
         //ds_list_clear(global.gembeam_hits);
 		soulshotmouse = 1;
 		soulshotdirection = 0;

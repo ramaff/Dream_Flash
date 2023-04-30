@@ -3,11 +3,12 @@ function scr_Boss_Size_Lerp_DirAlt(argument0) {
 	bossSizeY = lerp(bossSizeY,bossSize,argument0);
 
 	if direction > 90 and direction < 270 {
-	    image_xscale = bossSizeX;
+	    facing_direction = 1;
 	} else {
-	    image_xscale = -bossSizeX;
+	    facing_direction = -1;
 	}
 
+	image_xscale = facing_direction * bossSizeX;
 	image_yscale = bossSizeY;
 
 

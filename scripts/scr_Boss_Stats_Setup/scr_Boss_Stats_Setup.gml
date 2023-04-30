@@ -2,6 +2,8 @@ function scr_Boss_Stats_Setup(version=1) {
 	currentphase = 1;
 	finalphase = 2;
 	
+	facing_direction = 1;
+	
 	tier = global.currentchapter - 1;
 
 	    scr_Boss_Status_Setup(version);
@@ -166,7 +168,7 @@ function scr_Boss_Stats_Setup(version=1) {
 		bossdefense2 = bossdefense;
 	}
 	
-	show_debug_message("scr_boss_stats_setup boss hps: " + string(bossmaxhealth) + ", " + string(bossmaxhealth2))
+	//show_debug_message("scr_boss_stats_setup boss hps: " + string(bossmaxhealth) + ", " + string(bossmaxhealth2))
 	
 
 	/////////////////////////////////////////////////////////////////////

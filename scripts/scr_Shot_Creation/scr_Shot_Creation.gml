@@ -271,7 +271,8 @@ function scr_Shot_Creation() {
 				}
 				alarm[3] = 15;
 			
-				scr_Beam_Create(shxx,shyy);
+				//scr_Beam_Create(shxx,shyy);
+				scr_Beam_Create(x,y);
 				
 				if other.Shot_Point_Angle {
 					image_angle = direction;
@@ -296,7 +297,7 @@ function scr_Shot_Creation() {
 	if Shot_Power > 0 {
 		scr_Soul_Stretch("Horizontal", sqrt(Shot_Power) / 20);
 	}
-	if Shot_Weapon_Lean > 0 {
+	if Shot_Weapon_Lean != 0 {
 		speed = Shot_Weapon_Lean;
 		friction = 1;
 		direction = point_direction(x,y,mouse_x,mouse_y);

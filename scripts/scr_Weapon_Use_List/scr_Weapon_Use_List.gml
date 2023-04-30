@@ -21,10 +21,7 @@ function scr_Weapon_Use_List() {
 	}
 	
 	current_weapon_stats = variable_struct_get(global.weapon_stats, string(cWP))
-	//show_debug_message(current_weapon_stats)
 	
-	//weaponCost = variable_struct_get(current_weapon_stats, "Essence");
-	//weaponDelay = variable_struct_get(current_weapon_stats, "Delay");
 	weaponCost = current_weapon_stats.Essence;	
 	weaponDelay = current_weapon_stats.Delay;
 	//show_debug_message("Weapon Cost: " + string(weaponCost) + ", Weapon Delay: " + string(weaponDelay))
@@ -51,11 +48,6 @@ function scr_Weapon_Use_List() {
 	scr_C12();
 
 	scr_C14();
-
-	//if global.D10activate >= 1 {
-		//weaponCost = weaponCost * (1 + (0.5 * global.D10activate));
-	//}
-
 
 	scr_E11_Weapon();
 
@@ -90,16 +82,6 @@ function scr_Weapon_Use_List() {
 	
 			for(bi = 0; bi < 9; bi++) {
 				if Shot_Repetition[bi] <= 0 {
-					/*
-					Shot_Repetition[bi] = 6;
-					Shot_Repetition_Type[bi] = "Hyper Essence";
-					//Shot_Repetition_Max[bi] = 7;
-					Shot_Barrage_Speed[bi] = 3;
-					alarm[11] = (Shot_Barrage_Speed[bi]);
-
-					Shot_Repetition_Forward_Interval[bi] = 0;
-					Shot_Default_Count[bi] = Shot_Count;
-					*/
 					
 					if variable_struct_exists(current_weapon_stats, "Shot_Repetition") {
 						Shot_Repetition[bi] = current_weapon_stats.Shot_Repetition
