@@ -19,8 +19,8 @@ function scr_Soul_Stretch(argument0, argument1){
 	soulSizeX = clamp(soulSizeX, 0.1, 0.9)
 	soulSizeY = clamp(soulSizeY, 0.1, 0.9)
 	
-	show_debug_message("scr_soul_stretch xscale yscale: " + string(image_xscale) + ", " + string(image_yscale))
-	show_debug_message("scr_soul_stretch xsize ysize: " + string(soulSizeX) + ", " + string(soulSizeY))
+	//show_debug_message("scr_soul_stretch xscale yscale: " + string(image_xscale) + ", " + string(image_yscale))
+	//show_debug_message("scr_soul_stretch xsize ysize: " + string(soulSizeX) + ", " + string(soulSizeY))
 	
 
 

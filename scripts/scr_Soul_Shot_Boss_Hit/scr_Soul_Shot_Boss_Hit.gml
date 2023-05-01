@@ -129,6 +129,8 @@ function scr_Soul_Shot_Boss_Hit() {
 	        //ds_list_add(other.projectile_hits, shot_boss_id);
 			variable_struct_set(other.projectile_hits, shot_boss_id, shot_boss_id)
 			
+			show_debug_message("scr_Soul_Shot_Boss_Hit: " + string(shotburststats))
+			
 			if shotburststats != false {
 				var burstIndex = array_length(shotburststats) - 1;
 				if instance_exists(obj_Boss_Parent) and burstIndex >= 0 {
@@ -139,8 +141,15 @@ function scr_Soul_Shot_Boss_Hit() {
 					        scr_Duplicate_Shot_Stats();
 						
 							var vshotburststats = other.shotburststats[burstIndex]
+							
+							//show_debug_message("scr_Soul_Shot_Boss_Hit image alpha: " + string(image_alpha))
+							//show_debug_message("scr_Soul_Shot_Boss_Hit spr: " + string(sprite_get_name(sprite_index)))
 					
 							scr_Shot_Burst_Stats(vshotburststats);
+							
+							/*show_debug_message("scr_Soul_Shot_Boss_Hit stats: " + string(shot_stats))
+							show_debug_message("scr_Soul_Shot_Boss_Hit lifespan: " + string(shotlifespan))
+							show_debug_message("scr_Soul_Shot_Boss_Hit alarm[0]: " + string(alarm[0])) */
 					
 							if burstIndex > 0 {
 								shotburststats = [];

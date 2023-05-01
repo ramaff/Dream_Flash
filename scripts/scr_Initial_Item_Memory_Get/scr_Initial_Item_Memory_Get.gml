@@ -46,5 +46,7 @@ function scr_Initial_Item_Memory_Get(){
 		}
 	}
 	
+	//show_debug_message("upgrade: " + string(recollectionUpgrade))
+	
 	scr_Stat_Item_Extra_Stats();
 }

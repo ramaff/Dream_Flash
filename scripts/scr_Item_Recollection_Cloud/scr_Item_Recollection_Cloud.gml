@@ -21,9 +21,11 @@ function scr_Item_Recollection_Cloud(time = 1, linger) {
 		recollectionExtraStats = other.recollectionExtraStats;
 		shop = other.shop;
 		
-		if !(is_string(other.itemVal)) {
-			recollectionUpgrade--;	
-		}
+		//if !(is_string(other.itemVal)) {
+			//recollectionUpgrade--;	
+		//}
+		
+		//show_debug_message("making cloud: " + string(recollectionUpgrade))
 		
 		alarm[0] = time;
 		
