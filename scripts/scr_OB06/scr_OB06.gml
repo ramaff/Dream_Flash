@@ -4,6 +4,8 @@ function scr_OB06(){
 
 	if global.OB[6] > 0 and sWeaponTicker mod 3 = 0 {
 		if Shot_Air_Burst_Stats = false {
+			//show_debug_message("scr_ob06: " + string(current_weapon_stats))
+			//show_debug_message("scr_ob06 stringify: " + string(json_stringify(current_weapon_stats)))
 			Shot_Air_Burst_Stats = [json_parse(json_stringify(current_weapon_stats))]
 		} else {
 			array_push(Shot_Air_Burst_Stats, json_parse(json_stringify(current_weapon_stats)))	

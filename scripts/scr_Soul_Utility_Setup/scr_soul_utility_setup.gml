@@ -79,6 +79,7 @@ function scr_Soul_Utility_Setup() {
 	
 	for(bi = 0; bi < 10; bi++) {
 		Shot_Repetition[bi] = 0;
+		Shot_Repetition_Stats[bi] = {};
 		Shot_Repetition_Type[bi] = "Default";
 		Shot_Repetition_Max[bi] = 0;
 		Shot_Barrage_Speed[bi] = 0;

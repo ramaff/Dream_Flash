@@ -4,13 +4,26 @@ if !(instance_exists(Tutorial_Control)) {
 	if global.F[5] >= 1 {
 		reverie = scr_Chance(10 / global.F[5]);
 	}
+	
+	if scr_State_Active_Check("Ascending", reverie) and Charge_Hold = 0 {
+		Charge_Speed = 0;
+		Charge_Power = 0;
+		Charge_Knockback = 0;
+		Charge_Lifespan = 0;
+		Charge_Time = 0;
+		Charge_Hold = 0;
+		Charge_Size = 0;
+
+		scr_Charged_Use();
+	
+	}
 
     if Charge_Hold = 0 and !scr_State_Active_Check("Ascending", reverie) {
         //ds_list_clear(global.gembeam_hits);
 		soulshotmouse = 1;
 		soulshotdirection = 0;
         scr_Weapon_Use();
-    } else {
+    } else if Charge_Hold > 0 {
 		soulshotmouse = 1;
 		soulshotdirection = 0;
         scr_Charged_Hold();

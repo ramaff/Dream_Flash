@@ -29,6 +29,8 @@ for (bi = 0; bi < 9; bi++) {
 			scr_Barrage_Weapon_Use(16);
 		}
 		if Shot_Repetition_Type[bi] = "Stubborn" {
+			current_weapon_stats = Shot_Repetition_Stats[bi]
+			
 			Shot_Mouse = 0;
 			Shot_Count = Shot_Default_Count[bi];
 			scr_Shot_Creation();

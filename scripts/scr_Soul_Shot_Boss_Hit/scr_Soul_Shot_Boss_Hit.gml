@@ -129,7 +129,7 @@ function scr_Soul_Shot_Boss_Hit() {
 	        //ds_list_add(other.projectile_hits, shot_boss_id);
 			variable_struct_set(other.projectile_hits, shot_boss_id, shot_boss_id)
 			
-			show_debug_message("scr_Soul_Shot_Boss_Hit: " + string(shotburststats))
+			//show_debug_message("scr_Soul_Shot_Boss_Hit: " + string(shotburststats))
 			
 			if shotburststats != false {
 				var burstIndex = array_length(shotburststats) - 1;

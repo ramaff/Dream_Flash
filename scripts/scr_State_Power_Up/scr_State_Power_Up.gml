@@ -34,7 +34,7 @@ function scr_State_Power_Up(){
 		}
 	
 		if global.soultransformedstate = "Ascending" {
-			duration = 45;
+			duration = 55;
 		}
 	
 		obj_Soul_Parent.sstatedrainrate = (10 / duration) / drainfac;

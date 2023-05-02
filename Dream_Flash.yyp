@@ -1049,6 +1049,7 @@
     {"id":{"name":"spr_Spike_Amorphous","path":"sprites/spr_Spike_Amorphous/spr_Spike_Amorphous.yy",},},
     {"id":{"name":"spr_Lightning","path":"sprites/spr_Lightning/spr_Lightning.yy",},},
     {"id":{"name":"spr_Agony_Amorphous_Palette","path":"sprites/spr_Agony_Amorphous_Palette/spr_Agony_Amorphous_Palette.yy",},},
+    {"id":{"name":"Print_DF","path":"scripts/Print_DF/Print_DF.yy",},},
     {"id":{"name":"spr_Snake_Eyes_Nightmare","path":"sprites/spr_Snake_Eyes_Nightmare/spr_Snake_Eyes_Nightmare.yy",},},
     {"id":{"name":"spr_Behemoth_old_old","path":"sprites/spr_Behemoth_old_old/spr_Behemoth_old_old.yy",},},
     {"id":{"name":"spr_Infatuation_Cloud_old","path":"sprites/spr_Infatuation_Cloud_old/spr_Infatuation_Cloud_old.yy",},},

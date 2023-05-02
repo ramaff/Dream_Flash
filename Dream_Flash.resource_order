@@ -955,6 +955,7 @@
     {"name":"spr_Spike_Amorphous","order":10,"path":"sprites/spr_Spike_Amorphous/spr_Spike_Amorphous.yy",},
     {"name":"spr_Lightning","order":6,"path":"sprites/spr_Lightning/spr_Lightning.yy",},
     {"name":"spr_Agony_Amorphous_Palette","order":11,"path":"sprites/spr_Agony_Amorphous_Palette/spr_Agony_Amorphous_Palette.yy",},
+    {"name":"Print_DF","order":15,"path":"scripts/Print_DF/Print_DF.yy",},
     {"name":"spr_Snake_Eyes_Nightmare","order":6,"path":"sprites/spr_Snake_Eyes_Nightmare/spr_Snake_Eyes_Nightmare.yy",},
     {"name":"spr_Behemoth_old_old","order":2,"path":"sprites/spr_Behemoth_old_old/spr_Behemoth_old_old.yy",},
     {"name":"old_Sprinkler_Cloud","order":1,"path":"sprites/old_Sprinkler_Cloud/old_Sprinkler_Cloud.yy",},

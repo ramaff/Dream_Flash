@@ -36,7 +36,7 @@ if bossActiveAttackDelay[1] <= 0 and bossActiveAttackCooldown[1] <= 0 and bossAc
         bossPatternCooldown = 45;
         bossPatternCooldownMax = 45;
         bossActiveAttackDuration[1] = 10 + bossPatternCooldownMax * bossPatternCount;
-        bossActiveAttackCooldown[1] = 90 + random(15);
+        bossActiveAttackCooldown[1] = 120 + random(15);
     }
     if bossActiveAttack[1] = 2 {
         bossActiveAttackDelay[1] = 10;
@@ -44,7 +44,7 @@ if bossActiveAttackDelay[1] <= 0 and bossActiveAttackCooldown[1] <= 0 and bossAc
         bossPatternCooldown = 15;
         bossPatternCooldownMax = 15;
         bossActiveAttackDuration[1] = 10 + bossPatternCooldownMax * bossPatternCount;
-        bossActiveAttackCooldown[1] = 90 + random(15);
+        bossActiveAttackCooldown[1] = 120 + random(15);
     }
     if bossActiveAttack[1] = 3 {
 		bossActiveAttackDelay[1] = 0;
@@ -66,7 +66,7 @@ if bossActiveAttackDelay[1] <= 0 and bossActiveAttackCooldown[1] <= 0 and bossAc
 		state = states.leaping;
 		
 		bossActiveAttackDuration[1] = 30 + bossattackspeed * bossPatternCooldownMax * bossPatternCount;
-        bossActiveAttackCooldown[1] = 75 + random(15);
+        bossActiveAttackCooldown[1] = 105 + random(15);
         
     }
 	if bossActiveAttack[1] = 4 {
@@ -82,7 +82,7 @@ if bossActiveAttackDelay[1] <= 0 and bossActiveAttackCooldown[1] <= 0 and bossAc
 		}
 		
         bossActiveAttackDuration[1] = 10 + bossPatternCooldownMax * bossPatternCount;
-        bossActiveAttackCooldown[1] = 90 + random(15);
+        bossActiveAttackCooldown[1] = 120 + random(15);
     }
     if bossActiveAttack[1] = 5 {
         bossActiveAttackDelay[1] = 10;
@@ -90,7 +90,7 @@ if bossActiveAttackDelay[1] <= 0 and bossActiveAttackCooldown[1] <= 0 and bossAc
         bossPatternCooldown = 20;
         bossPatternCooldownMax = 20;
         bossActiveAttackDuration[1] = 10 + bossPatternCooldownMax * bossPatternCount;
-        bossActiveAttackCooldown[1] = 90 + random(15);
+        bossActiveAttackCooldown[1] = 120 + random(15);
     }
 	if bossActiveAttack[1] = 6 {
         bossActiveAttackDelay[1] = 10;
@@ -98,7 +98,7 @@ if bossActiveAttackDelay[1] <= 0 and bossActiveAttackCooldown[1] <= 0 and bossAc
         bossPatternCooldown = 2;
         bossPatternCooldownMax = 2;
         bossActiveAttackDuration[1] = 10 + bossPatternCooldownMax * bossPatternCount;
-        bossActiveAttackCooldown[1] = 90 + random(15);
+        bossActiveAttackCooldown[1] = 120 + random(15);
 		
 		bossPatternDirection = random(360);
 		bossPatternDirection2 = bossPatternDirection + 180;
@@ -111,7 +111,7 @@ if bossActiveAttackDelay[1] <= 0 and bossActiveAttackCooldown[1] <= 0 and bossAc
         bossPatternDirection = scr_Soul_Point() + ((-5 + random(10)) / bossaccuracy);
 		
         bossActiveAttackDuration[1] = 10 + bossPatternCooldownMax * bossPatternCount;
-        bossActiveAttackCooldown[1] = 90 + random(15);
+        bossActiveAttackCooldown[1] = 120 + random(15);
     }
     bossPatternCountMax = bossPatternCount;
 }
