@@ -234,15 +234,17 @@ if bossActiveAttackDelay[1] <= 0 and bossPatternCooldown <= 0 and bossPatternCou
             bossbeamattackactive = 1;
 			
 			var beamstart = (bossPatternCountMax - 30) - bossPatternCount;
+			
+			scr_Easy_Boss_Beam_Shoot(bossPatternCountMax - 30, 36);
         
             if bossPatternCount < (bossPatternCountMax - 60) and bossPatternCount > 30 {
 				if bossPatternCount mod 5 = 0 {
 					scr_Boss_Stretch("Vertical", 0.1);	
 				}
 			
-				scr_Boss_Beam_Attack_New("Active",35,scr_Boss_Beam_Frame(beamstart));
+				//scr_Boss_Beam_Attack_New("Active",35,scr_Boss_Beam_Frame(beamstart));
             } else {
-                scr_Boss_Beam_Attack_New("Dormant",35,scr_Boss_Beam_Frame(beamstart));
+                //scr_Boss_Beam_Attack_New("Dormant",35,scr_Boss_Beam_Frame(beamstart));
             }
         }
     }
@@ -328,11 +330,13 @@ if bossActiveAttackDelay[1] <= 0 and bossPatternCooldown <= 0 and bossPatternCou
 				
 			var beamstart = (bossPatternCountMax - 30) - bossPatternCount;
         
+			scr_Easy_Boss_Beam_Shoot(bossPatternCountMax - 30, 36);
+		
             if bossPatternCount < (bossPatternCountMax - 60) and bossPatternCount > 30 {
-                scr_Boss_Beam_Attack_New("Active",35,scr_Boss_Beam_Frame(beamstart));
+               // scr_Boss_Beam_Attack_New("Active",35,scr_Boss_Beam_Frame(beamstart));
              
             } else {
-                scr_Boss_Beam_Attack_New("Dormant",35,scr_Boss_Beam_Frame(beamstart));  
+                //scr_Boss_Beam_Attack_New("Dormant",35,scr_Boss_Beam_Frame(beamstart));  
             }
 			
 			if bossPatternCount mod 36 = 0 and bossPatternCount > 180 {

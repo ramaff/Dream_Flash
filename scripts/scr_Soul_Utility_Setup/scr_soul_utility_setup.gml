@@ -15,6 +15,8 @@ function scr_Soul_Utility_Setup() {
 	soulCurrentDirection = 0;
 	
 	soulmovetimer = 0;
+	
+	Charge_Hold = 0;
 
 	sNoHitTime = 0;
 	sWeaponOvertime = 0;

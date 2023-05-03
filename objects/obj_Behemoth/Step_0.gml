@@ -313,7 +313,9 @@ if bossActiveAttackDelay[1] <= 0 and bossPatternCooldown <= 0 and bossPatternCou
         beam_sprite = spr_Green_Beam;
 		}
 		
-		var bFrame = (bossPatternCountMax - 20)
+		scr_Easy_Boss_Beam_Shoot(bossPatternCountMax, 36);
+		
+		var bFrame = (bossPatternCountMax - 30)
     
         if (bossPatternCount < bFrame) {
 			
@@ -321,7 +323,7 @@ if bossActiveAttackDelay[1] <= 0 and bossPatternCooldown <= 0 and bossPatternCou
 				scr_Boss_Stretch("Vertical", 0.05);	
 			}
 			
-            scr_Boss_Beam_Attack_New("Active",35,scr_Boss_Beam_Frame(bFrame));
+            //scr_Boss_Beam_Attack_New("Active",35,scr_Boss_Beam_Frame(bFrame));
             
             souldir = scr_Soul_Point();
             var adif = angle_difference(bossPatternDirection, souldir);
@@ -343,7 +345,7 @@ if bossActiveAttackDelay[1] <= 0 and bossPatternCooldown <= 0 and bossPatternCou
 			}
          
         } else {
-            scr_Boss_Beam_Attack_New("Dormant",35,scr_Boss_Beam_Frame(bFrame));
+            //scr_Boss_Beam_Attack_New("Dormant",35,scr_Boss_Beam_Frame(bFrame));
         }
         
         if ((bossPatternCount mod 25 = 0) and (bossPatternCount > 0) and (bossPatternCount < bossPatternCountMax - 10)) {
@@ -453,7 +455,8 @@ if bossActiveAttackDelay[1] <= 0 and bossPatternCooldown <= 0 and bossPatternCou
         beamSize = 1;
         bossbeamattackactive = 1;
 		
-		var bFrame = (bossPatternCountMax - 20)
+		var bFrame = (bossPatternCountMax - 30)
+		scr_Easy_Boss_Beam_Shoot(bossPatternCountMax, 36);
     
         if (bossPatternCount < bFrame) {
 			
@@ -461,7 +464,7 @@ if bossActiveAttackDelay[1] <= 0 and bossPatternCooldown <= 0 and bossPatternCou
 				scr_Boss_Stretch("Vertical", 0.05);	
 			}
 			
-            scr_Boss_Beam_Attack_New("Active",35,scr_Boss_Beam_Frame(bFrame));
+            //scr_Boss_Beam_Attack_New("Active",35,scr_Boss_Beam_Frame(bFrame));
             
             souldir = scr_Soul_Point();
             var adif = angle_difference(bossPatternDirection, souldir);
@@ -473,7 +476,7 @@ if bossActiveAttackDelay[1] <= 0 and bossPatternCooldown <= 0 and bossPatternCou
 	        }
          
         } else {
-            scr_Boss_Beam_Attack_New("Dormant",35,scr_Boss_Beam_Frame(bFrame));
+            //scr_Boss_Beam_Attack_New("Dormant",35,scr_Boss_Beam_Frame(bFrame));
         }
         
 		

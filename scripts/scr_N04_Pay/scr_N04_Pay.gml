@@ -5,7 +5,7 @@
 
 function scr_N04_Pay(){
 	with (obj_Productivity) {
-		repeat(2 + irandom(1)) {
+		repeat(2 + irandom(global.currentchapter)) {
 			with instance_create(x,y,obj_Soul_Flash) {
 			    direction = random(360);
 			    speed = 1 + random(4);

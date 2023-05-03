@@ -263,19 +263,21 @@ if bossActiveAttackDelay[1] <= 0 and bossPatternCooldown <= 0 and bossPatternCou
 		}
 		
 		var beamstart = bossPatternCountMax - bossPatternCount;
+		
+		scr_Easy_Boss_Beam_Shoot(bossPatternCountMax, 35);
     
         if (bossPatternCount < (bossPatternCountMax - 20)) {
 			
-	        scr_Boss_Beam_Attack_New("Active",35,scr_Boss_Beam_Frame(beamstart));
+	        //scr_Boss_Beam_Attack_New("Active",35,scr_Boss_Beam_Frame(beamstart));
             
 			var aacc = (bossPatternCountMax - bossPatternCount) / 120;
 	        bossPatternDirection += 0.25 + aacc;
          
         } else {
-            scr_Boss_Beam_Attack_New("Dormant",35,scr_Boss_Beam_Frame(beamstart)); 
+            //scr_Boss_Beam_Attack_New("Dormant",35,scr_Boss_Beam_Frame(beamstart)); 
         }
         
-        if ((bossPatternCount mod 20 = 0) and (bossPatternCount > 0) and (bossPatternCount < bossPatternCountMax - 10)) {
+        if ((bossPatternCount mod 20 = 0) and (bossPatternCount > 0) and (bossPatternCount < bossPatternCountMax - 30)) {
             bullet_power = bosspower * 1;
 			
 			scr_Boss_Stretch("Vertical", 0.04);	

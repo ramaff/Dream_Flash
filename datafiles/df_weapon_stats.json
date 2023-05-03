@@ -203,7 +203,8 @@
         "Shot_Trail": 1,
         "Shot_Trail_Color1": [0,250,255],
         "Shot_Trail_Color2": [0,215,255],
-        "Spike_Credit": 0.5
+        "Spike_Credit": 0.5,
+        "Ascending_Credit": 0.5
     },
     "11": {
         "Name": "Tomatoes",
@@ -308,12 +309,12 @@
         "Recollection_Sprite": "spr_Rainmaker_Art",
         "Extra_Stats": "+4 Way Shooting",
         "Description": "Sad Cloud Weapondry shoots tears of sadness in all directions.",
-        "Essence": 15,
-        "Delay": 28,
+        "Essence": 14,
+        "Delay": 25,
         "Shot_Sprite": "spr_Rain_Shot",
         "Shot_Type": "obj_Lesser_Soul_Shot",
-        "Shot_Speed": 6.5,
-        "Shot_Speed_Random_Add": 1,
+        "Shot_Speed": 6,
+        "Shot_Speed_Random_Add": 3,
         "Shot_Power": 10,
         "Shot_Knockback": 10,
         "Shot_Lifespan": 60,
@@ -321,19 +322,28 @@
         "Shot_Point_Angle": 1,
         "Shot_Count": 4,
         "Shot_Spread": 90,
-        "Shot_Accuracy": 30,
+        "Shot_Accuracy": 15,
         "Shot_Angle_Relative": 45,
+        "Shot_Lobbing": true,
+		"Shot_Lobbing_Tilt": 10,
+        "Shot_Height": 30,
+        "Shot_Fall_Speed": -5,
+        "Shot_Gravity": 0.18,
         "Shot_Extra": [{
             "Shot_Count": 4,
             "Shot_Spread": 90,
             "Shot_Sprite": "spr_Rain_Shot",
             "Shot_Type": "obj_Lesser_Soul_Shot",
-            "Shot_Speed": 8.5,
-            "Shot_Speed_Random_Add": 1,
+            "Shot_Speed": 9,
+            "Shot_Speed_Random_Add": 3,
             "Shot_Power": 10,
             "Shot_Knockback": 10,
             "Shot_Lifespan": 60,
             "Shot_Size": 0.4,
+            "Shot_Lobbing_Tilt": 10,
+            "Shot_Height": 30,
+            "Shot_Fall_Speed": -5,
+            "Shot_Gravity": 0.18,
             "Shot_Point_Angle": 1
         }],
         "Scrub_Credit": 0.5
@@ -559,10 +569,17 @@
         "Shot_Size": 0.55,
         "Shot_Lobbing": 1,
         "Shot_Bullet_Redirect": 1,
-        "Shot_Bullet_Redirect_Chance": 40,
-        "Shot_Extra_Hits": [1,0,0,0,0],
-        "Shot_Extra_Hit_Frequency": [10,0,0,0,0],
-        "Shot_Extra_Hit_Power": [3,0,0,0,0]
+        "Shot_Bullet_Redirect_Chance": 50,
+        "Shot_Extra_Hits": false,
+        "Shot_Extra_Stats": [
+            {
+                "Shot_Count": 1,
+                "Shot_Sprite": "spr_Flying_Disk_Shot",
+                "Shot_Type": "obj_Lesser_Soul_Shot",
+                "Shot_Extra_Hit_Frequency": 10,
+                "Shot_Power": 3
+            }
+        ]
     },
     "104": {
         "Name": "Shuriken",
@@ -630,9 +647,16 @@
         "Shot_Sprite": "spr_Spinning_Top_Shot",
         "Shot_Type": "obj_Lesser_Soul_Shot",
         "Shot_Duplicate_Sprite": "spr_Spinning_Top_Shot",
-        "Shot_Extra_Hits": [1],
-        "Shot_Extra_Hit_Frequency": [15],
-        "Shot_Extra_Hit_Power": [3],
+        "Shot_Extra_Hits": false,
+        "Shot_Extra_Stats": [
+            {
+                "Shot_Count": 1,
+                "Shot_Sprite": "spr_Spinning_Top_Shot",
+                "Shot_Type": "obj_Lesser_Soul_Shot",
+                "Shot_Extra_Hit_Frequency": 15,
+                "Shot_Power": 4
+            }
+        ],
         "Shot_Friction": 0.1,
         "Shot_Min_Speed": 0.33,
         "Shot_Speed": 6,
@@ -640,9 +664,9 @@
         "Shot_Knockback": 10,
         "Shot_Lifespan": 270,
         "Shot_Bullet_Redirect": 1,
-        "Shot_Bullet_Redirect_Chance": 25,
+        "Shot_Bullet_Redirect_Chance": 35,
         "Shot_Size": 0.5,
-        "Shot_Pierce": 1
+        "Shot_Pierce": 3
     },
     "108": {
         "Name": "Sharpshooter",
@@ -1144,9 +1168,16 @@
         "Shot_Lifespan": 180,
         "Shot_Homing_Type": 2,
         "Shot_Homing_Range": 90,
-        "Shot_Extra_Hits": [1],
-        "Shot_Extra_Hit_Frequency": [30],
-        "Shot_Extra_Hit_Power": [6],
+        "Shot_Extra_Hits": false,
+        "Shot_Extra_Stats": [
+            {
+                "Shot_Count": 1,
+                "Shot_Sprite": "spr_Boss_Muncher_Shot",
+                "Shot_Type": "obj_Lesser_Soul_Shot",
+                "Shot_Extra_Hit_Frequency": 30,
+                "Shot_Power": 6
+            }
+        ],
         "Shot_Size": 0.5,
         "Shot_Point_Angle": 1,
         "Shot_Trail": 1,
@@ -1207,17 +1238,37 @@
         "Shot_Power": 16,
         "Shot_Knockback": 10,
         "Shot_Lifespan": 90,
-        "Shot_Burst_Type": 2,
-        "Shot_Burst_Amount": 1,
-        "Shot_Burst_Power": 6,
-        "Shot_Burst_Speed": 0,
-        "Shot_Burst_Pierce": 2,
-        "Shot_Burst_Lifespan": 90,
-        "Shot_Burst_Extra_Hits": 1,
-        "Shot_Burst_Extra_Hit_Frequency": 15,
-        "Shot_Burst_Extra_Hit_Power": 3,
-        "Shot_Burst_Point_Angle": 0,
-        "Shot_Burst_Impact": 0,
+        "Shot_Burst_Type": 0,
+        "Shot_Burst_Extra_Hits": false,
+        "Shot_Burst_Stats": [
+            {
+                "Shot_Count": 1,
+                "Shot_Sprite": "spr_Soul_Fire",
+                "Shot_Type": "obj_Lesser_Soul_Shot",
+                "Shot_Extra_Hit_Frequency": 15,
+                "Burst_Power": 0.2,
+                "Shot_Lifespan": 90,
+                "Shot_Speed": 0,
+                "Shot_Point_Angle": 0,
+                "Shot_Impact_Type": 0,
+                "Shot_Power": 3,
+                "Burst_Size": 1,
+                "Shot_Pierce": 3,
+                "Weapon_Split_Visible": 0,
+                "Weapon_Split_Hit_Again": 1,
+                "Spread": 0,
+                "Amount": 1,
+                "Shot_Extra_Stats": [
+                    {
+                        "Shot_Count": 1,
+                        "Shot_Sprite": "spr_Soul_Fire",
+                        "Shot_Type": "obj_Lesser_Soul_Shot",
+                        "Shot_Extra_Hit_Frequency": 15,
+                        "Shot_Power": 1
+                    }
+                ]
+            }
+        ],
         "Weapon_Split_Visible": 1,
         "Weapon_Split_Hit_Again": 1,
         "Shot_Impact_Type": 1,
@@ -1227,7 +1278,7 @@
         "Shot_Trail": 1,
         "Shot_Trail_Sprite": "spr_Big_Essence_Trail_Bit",
         "Shot_Trail_Life": 15,
-        "Shot_Trail_Area": 5,
+        "Shot_Trail_Area": 20,
         "Shot_Trail_Fade": 0,
         "Shot_Trail_Color1": [255,53,0],
         "Shot_Trail_Color2": [255,191,101],
@@ -1331,8 +1382,15 @@
         "Shot_Image_Rotation_Speed": 2,
         "Shot_Phasing": 1,
         "Shot_Extra_Hits": [1],
-        "Shot_Extra_Hit_Frequency": [15],
-        "Shot_Extra_Hit_Power": [6],
+        "Shot_Extra_Stats": [
+            {
+                "Shot_Count": 1,
+                "Shot_Sprite": "spr_Explosion_Machine_Shot",
+                "Shot_Type": "obj_Lesser_Soul_Shot",
+                "Shot_Extra_Hit_Frequency": 15,
+                "Shot_Power": 6
+            }
+        ],
         "Shot_Speed": 5,
         "Shot_Power": 18,
         "Shot_Knockback": 10,
@@ -1349,10 +1407,17 @@
         "Shot_Trail_Color2": [255,191,101],
         "Shot_Extra": [{
             "Shot_Count": 3,
-            "Shot_Accuracy": 45,  
-            "Shot_Extra_Hits": [1],
-            "Shot_Extra_Hit_Frequency": [15],
-            "Shot_Extra_Hit_Power": [2], 
+            "Shot_Accuracy": 45,
+            "Shot_Extra_Hits": false,
+            "Shot_Extra_Stats": [
+                {
+                    "Shot_Count": 1,
+                    "Shot_Sprite": "spr_Explosion_Machine_Shot",
+                    "Shot_Type": "obj_Lesser_Soul_Shot",
+                    "Shot_Extra_Hit_Frequency": 15,
+                    "Shot_Power": 2
+                }
+            ],
             "Shot_Speed": 5,
             "Shot_Power": 6,
             "Shot_Knockback": 10,
@@ -1424,24 +1489,28 @@
         "Recollection_Sprite": "spr_Fire_Ball_Art",
         "Extra_Stats": "+3 Fire Damage",
         "Description": "Does magic damage and then sets those enemies on fire.",
-        "Essence": 11,
-        "Delay": 25,
+        "Essence": 12,
+        "Delay": 28,
         "Shot_Element": "Magic",
         "Shot_Sprite": "spr_Fire_Ball_Shot",
         "Shot_Type": "obj_Lesser_Soul_Shot",
-        "Shot_Speed": 8,
-        "Shot_Power": 18,
-        "Shot_Knockback": 10,
-        "Shot_Lifespan": 70,
-        "Shot_Fire": 3,
+        "Shot_Speed": 6,
+        "Shot_Power": 19,
+        "Shot_Knockback": 15,
+        "Shot_Wave_Direction": 8,
+        "Shot_Wave_Acceleration": 2,
+        "Shot_Wave_Time": 8,
+        "Shot_Lifespan": 60,
+        "Shot_Fire": 4,
         "Shot_Fire_Time": 30,
         "Shot_Fire_Ticks": 3,
         "Shot_Size": 0.4,
-        "Shot_Acceleration": 0.05,
+        "Shot_Acceleration": 0.1,
         "Shot_Trail": 1,
-        "Shot_Trail_Sprite": "spr_Big_Essence_Trail_Bit",
-        "Shot_Trail_Area": 15,
-        "Shot_Trail_Life": 20,
+        "Shot_Trail_Sprite": "spr_Soul_Big_Bit",
+        "Shot_Trail_Area": 25,
+        "Shot_Trail_Frequency": 2,
+        "Shot_Trail_Life": 16,
         "Shot_Trail_Fade": 0,
         "Shot_Trail_Color1": [255,246,0],
         "Shot_Trail_Color2": [255,119,0],
@@ -1500,9 +1569,16 @@
         "Shot_Sprite": "spr_Magic_Twister_Shot",
         "Shot_Type": "obj_Lesser_Soul_Shot",
         "Shot_Duplicate_Sprite": "spr_Magic_Twister_Shot",
-        "Shot_Extra_Hits": [1],
-        "Shot_Extra_Hit_Frequency": [10],
-        "Shot_Extra_Hit_Power": [8],
+        "Shot_Extra_Hits": false,
+        "Shot_Extra_Stats": [
+            {
+                "Shot_Count": 1,
+                "Shot_Sprite": "spr_Magic_Twister_Shot",
+                "Shot_Type": "obj_Lesser_Soul_Shot",
+                "Shot_Extra_Hit_Frequency": 10,
+                "Shot_Power": 8
+            }
+        ],
         "Shot_Friction": 0.02,
         "Shot_Min_Speed": 0.5,
         "Shot_Speed": 5.5,
@@ -1510,7 +1586,7 @@
         "Shot_Knockback": 13,
         "Shot_Lifespan": 150,
         "Shot_Bullet_Redirect": 1,
-        "Shot_Bullet_Redirect_Chance": 70,
+        "Shot_Bullet_Redirect_Chance": 80,
         "Shot_Size": 0.5,
         "Shot_Pierce": 4,
         "Shot_Trail": 1,
@@ -1732,8 +1808,15 @@
         "Shot_Mouse_Origin": 1,
         "Shot_Life_Drain": 0.33,
         "Shot_Extra_Hits": [1],
-        "Shot_Extra_Hit_Frequency": [15],
-        "Shot_Extra_Hit_Power": [14],
+        "Shot_Extra_Stats": [
+            {
+                "Shot_Count": 1,
+                "Shot_Sprite": "spr_Maw_Shot",
+                "Shot_Type": "obj_Lesser_Soul_Shot",
+                "Shot_Extra_Hit_Frequency": 15,
+                "Shot_Power": 14
+            }
+        ],
         "Shot_Phasing": 1,
         "Weapon_Melee": 1,
         "Shot_Pierce": 100,
@@ -1811,7 +1894,8 @@
         "Shot_Trail_Life": 10,
         "Shot_Trail_Fade": 0,
         "Shot_Trail_Color1": [255,255,0],
-        "Shot_Trail_Color2": [255,255,255]
+        "Shot_Trail_Color2": [255,255,255],
+        "Ascending_Credit": 0.5
     },
     "402": {
         "Name": "Connective Sparks",
@@ -1823,25 +1907,29 @@
         "Shot_Element": "Energy",
         "Shot_Sprite": "spr_Sparks_Shot",
         "Shot_Type": "obj_Lesser_Soul_Shot",
-        "Shot_Speed": 8,
-        "Shot_Power": 18,
+        "Shot_Speed": 9.5,
+        "Shot_Power": 19,
         "Shot_Knockback": 5,
-        "Shot_Lifespan": 120,
-        "Shot_Chain": 1,
+        "Shot_Lifespan": 90,
+        "Shot_Chain": 2,
         "Shot_Chain_Type": 1,
-        "Shot_Chain_Power": 18,
-        "Shot_Chain_Range": 200,
+        "Shot_Chain_Power": 9,
+        "Shot_Chain_Range": 500,
         "Shot_Chain_Speed": 12,
+        "Shot_Chain_Color": [204,255,255],
         "Shot_Size": 0.5,
+        "Shot_Zig_Zag": 45,
+        "Shot_Angle_Relative": -22.5,
         "Shot_Point_Angle": 1,
         "Shot_Trail": 1,
         "Shot_Trail_Sprite": "spr_Big_Essence_Trail_Bit",
-        "Shot_Trail_Area": 5,
-        "Shot_Trail_Life": 10,
+        "Shot_Trail_Area": 15,
+        "Shot_Trail_Life": 15,
         "Shot_Trail_Fade": 0,
         "Shot_Trail_Color1": [255,255,255],
         "Shot_Trail_Color2": [204,255,255],
-        "Snake_Credit": 0.5
+        "Snake_Credit": 0.5,
+        "Ascending_Credit": 1
     },
     "403": {
         "Name": "Laser Barrage",
@@ -1866,7 +1954,8 @@
         "Shot_Repetition_Type": "Laser Barrage",
         "Shot_Barrage_Speed": 5,
         "Shot_Repetition_Forward_Interval": 0,
-        "Shot_Default_Count": 2
+        "Shot_Default_Count": 2,
+        "Ascending_Credit": 0.5
     },
     "404": {
         "Name": "Plasma Visor",
@@ -1893,7 +1982,8 @@
         "Shot_Trail_Life": 10,
         "Shot_Trail_Fade": 0,
         "Shot_Trail_Color1": [243,153,255],
-        "Shot_Trail_Color2": [255,255,255]
+        "Shot_Trail_Color2": [255,255,255],
+        "Ascending_Credit": 0.5
     },
     "405": {
         "Name": "Power Gun",
@@ -1927,7 +2017,8 @@
         "Shot_Charge_Power": 155,
         "Shot_Charge_Knockback": 0,
         "Shot_Charge_Lifespan": 0,
-        "Shot_Charge_Size": 0.325
+        "Shot_Charge_Size": 0.325,
+        "Ascending_Credit": 1
     },
     "406": {
         "Name": "Bouncer Gun",
@@ -1936,6 +2027,8 @@
         "Description": "Shoot fast waves that can bounce off walls.",
         "Essence": 13,
         "Delay": 20,
+        "Shot_Sprite": "spr_Bouncer_Gun_Shot",
+        "Shot_Type": "obj_Lesser_Soul_Shot",
         "Shot_Element": "Energy",
         "Shot_Speed": 8,
         "Shot_Power": 20,
@@ -1952,7 +2045,8 @@
         "Shot_Trail_Frequency": 2,
         "Shot_Trail_Fade": 0,
         "Shot_Trail_Color1": [190,127,255],
-        "Shot_Trail_Color2": [126,0,255]
+        "Shot_Trail_Color2": [126,0,255],
+        "Ascending_Credit": 0.5
     },
     "407": {
         "Name": "Tesla Coil",
@@ -1972,7 +2066,8 @@
         "Shot_Pierce": 10,
         "Shot_Phasing": 1,
         "Shot_Point_Angle": 1,
-        "Shot_Size": 0.5
+        "Shot_Size": 0.5,
+        "Ascending_Credit": 0.5
     },
     "408": {
         "Name": "Shocking Gun",
@@ -2009,7 +2104,8 @@
         "Shot_Trail_Fade": 0,
         "Shot_Trail_Color1": [255,255,255],
         "Shot_Trail_Color2": [127,255,185],
-        "Scrub_Credit": 0.5
+        "Scrub_Credit": 0.5,
+        "Ascending_Credit": 0.5
     },
     "409": {
         "Name": "Charge Rod",
@@ -2037,7 +2133,8 @@
         "Shot_Trail_Fade": 0,
         "Shot_Trail_Color1": [127,205,255],
         "Shot_Trail_Color2": [255,255,255],
-        "Casting_Credit": 0.5
+        "Casting_Credit": 0.5,
+        "Ascending_Credit": 0.5
     },
     "410": {
         "Name": "Energy Crystal",
@@ -2052,21 +2149,20 @@
         "Shot_Weapon_Lean": -3,
         "Shot_Accuracy": 10,
         "Shot_Phasing": 1,
-        "Shot_Frames": 5,
-        "Shot_Image_Speed": 0,
         "Shot_Beam": 1,
-        "Shot_Sprite": "spr_Energy_Crystal_Start",
+        "Shot_Sprite": "spr_Crystal_Laser_Start",
         "Shot_Type": "obj_Beam_Shot",
-        "Shot_Duplicate_Sprite": "spr_Energy_Crystal_Shot",
+        "Shot_Duplicate_Sprite": "spr_Crystal_Laser_Shot",
         "Shot_Speed": 0,
         "Shot_Power": 12,
         "Shot_Knockback": 0,
-        "Shot_Lifespan": 10,
+        "Shot_Lifespan": 15,
         "Shot_Burst_Power": 12,
         "Shot_Size": 0.5,
         "Weapon_Split_Visible": 1,
         "Weapon_Split_Hit_Again": 0,
-        "Shot_Pierce": 100
+        "Shot_Pierce": 100,
+        "Ascending_Credit": 0.5
     },
     "411": {
         "Name": "Forcefield Charger",
@@ -2100,7 +2196,8 @@
         "Shot_Charge_Knockback": 0,
         "Shot_Charge_Lifespan": 0,
         "Shot_Charge_Size": 0.4,
-        "Scrub_Credit": 0.5
+        "Scrub_Credit": 0.5,
+        "Ascending_Credit": 0.5
     },
     "412": {
         "Name": "Energy Bomb Cannon",
@@ -2138,7 +2235,8 @@
         "Shot_Charge_Power": 135,
         "Shot_Charge_Knockback": 0,
         "Shot_Charge_Lifespan": 0,
-        "Shot_Charge_Size": 0.325
+        "Shot_Charge_Size": 0.325,
+        "Ascending_Credit": 0.5
     },
     "413": {
         "Name": "Idea Cannon",
@@ -2152,15 +2250,23 @@
         "Shot_Type": "obj_Lesser_Soul_Shot",
         "Shot_Duplicate_Sprite": "spr_Guardian_Light",
         "Shot_Phasing": 1,
-        "Shot_Extra_Hits": [0,1],
-        "Shot_Extra_Hits_Sprite": [0,"spr_Guardian_Light"],
-        "Shot_Extra_Hit_Frequency": [0,18],
-        "Shot_Extra_Hit_Power": [0,5],
-        "Shot_Extra_Hit_Speed": [0,15],
-        "Shot_Extra_Hit_Lifespan": [0,35],
-        "Shot_Extra_Hit_Homing": [0,1],
-        "Shot_Extra_Hit_Homing_Speed": [0,10],
-        "Shot_Extra_Hit_Pierce": [0,1],
+        "Shot_Extra_Hits": false,
+        "Shot_Extra_Stats": [
+            {
+                "Shot_Count": 1,
+                "Shot_Extra_Hit_Frequency": 18,
+                "Shot_Sprite": "spr_Guardian_Light",
+                "Shot_Power": 5,
+                "Shot_Speed": 15,
+                "Shot_Lifespan": 35,
+                "Shot_Homing_Type": 1,
+                "Shot_Homing_Speed": 5,
+                "Shot_Pierce": 1,
+                "Shot_Size": 0.5,
+                "Shot_Point_Angle": true,
+                "Shot_Face_Direction": false
+            }
+        ],
         "Shot_Homing_Type": 1,
         "Shot_Homing_Range": 180,
         "Shot_Friction": 0.05,
@@ -2172,7 +2278,8 @@
         "Shot_Armour_Pierce": 5,
         "Shot_Pierce": 4,
         "Weapon_Split_Visible": 1,
-        "Shot_Size": 0.5
+        "Shot_Size": 0.5,
+        "Ascending_Credit": 0.5
     },
     "414": {
         "Name": "Dream Cell",
@@ -2195,9 +2302,16 @@
         "Shot_Pierce": 100,
         "Shot_Phasing": 1,
         "Shot_Size": 0.8,
-        "Shot_Extra_Hits": [1],
-        "Shot_Extra_Hit_Frequency": [15],
-        "Shot_Extra_Hit_Power": [5],
+        "Shot_Extra_Hits": false,
+        "Shot_Extra_Stats": [
+            {
+                "Shot_Count": 1,
+                "Shot_Sprite": "spr_Dream_Cell_Shot",
+                "Shot_Type": "obj_Lesser_Soul_Shot",
+                "Shot_Extra_Hit_Frequency": 15,
+                "Shot_Power": 5
+            }
+        ],
         "Weapon_Melee": 1,
         "Shot_Extra": [{
             "Shot_Spread": 90,
@@ -2222,7 +2336,8 @@
             "Shot_Trail_Fade": 0,
             "Shot_Trail_Color1": [0,0,0],
             "Shot_Trail_Color2": [204,255,255]
-        }]
+        }],
+        "Ascending_Credit": 0.5
     },
     "501": {
         "Name": "Fleeting Soul Staff",
@@ -2315,7 +2430,11 @@
         "Extra_Stats": "+Soul Healing",
         "Description": "Quickly Heals the soul, more potent with a higher vitality stat.",
         "Essence": 9,
-        "Delay": 3
+        "Delay": 3,
+        "Shot_Power": 0,
+        "Shot_Speed": 0,
+        "Shot_Size": 0.5,
+        "Shot_Sprite": "spr_Healing_Essence_Art"
     },
     "602": {
         "Name": "Healing Barrier",
@@ -2352,7 +2471,7 @@
         "Extra_Stats": "+Bullet Redirection",
         "Description": "Blocks bullet rain patterns, redirects bullets back to the direction of your astral cursor.",
         "Essence": 30,
-        "Delay": 6,
+        "Delay": 15,
         "Shot_Spread": 0,
         "Shot_Accuracy": 1,
         "Shot_Count": 1,
@@ -2372,7 +2491,7 @@
         "Shot_Phasing": 1,
         "Shot_Form_Show": 0,
         "Shot_Size": 0.5,
-        "Shot_Mouse": 0
+        "Shot_Mouse": 1
     },
     "604": {
         "Name": "Bounce Forcefield",

@@ -5,6 +5,8 @@ if !(instance_exists(Tutorial_Control)) {
 		reverie = scr_Chance(10 / global.F[5]);
 	}
 	
+	
+	
 	if scr_State_Active_Check("Ascending", reverie) and Charge_Hold = 0 {
 		Charge_Speed = 0;
 		Charge_Power = 0;

@@ -14,7 +14,7 @@ draw_sprite_ext(spr_Soul_Glow,0,x,y,flk,flk,0,c_white,0.15);
 current_weapon_stats = variable_struct_get(global.weapon_stats, string(weaponcharge))
 
 if Charge_Hold = 2 {
-	var size = Charge_Size + 0.1;
+	var size = Charge_Size + 0.25;
 	draw_sprite_ext(asset_get_index(current_weapon_stats.Shot_Sprite), 0, x, y - 50, size, size, 0, c_white, 1)
 }
 

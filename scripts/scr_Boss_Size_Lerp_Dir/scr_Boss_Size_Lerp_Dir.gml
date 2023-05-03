@@ -8,7 +8,7 @@ function scr_Boss_Size_Lerp_Dir(amount = 0.15, mirror = false) {
 	    facing_direction = 1;
 	}
 	
-	if mirror {
+	if mirror and hspeed != 0 {
 		facing_direction = facing_direction * -1;	
 	}
 

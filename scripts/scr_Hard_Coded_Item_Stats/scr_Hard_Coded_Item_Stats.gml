@@ -438,38 +438,37 @@ function scr_Hard_Coded_Item_Stats(itemVal, items_to_add = 1, reload = false) {
 	if !reload {
 
 		if itemVal = "H01" {
-		    Soul_Hearts_Control.heart[global.currentheart + 1, 2] = 1
-		    global.totalhearts++;
+			scr_Heart_Item_Pickup_Setup(1, 20);
+		    //Soul_Hearts_Control.heart[global.currentheart + 1, 2] = 1
+		    //global.totalhearts++;
 		    //global.H[1]++;
 		}
 		if itemVal = "H02" {
-		    Soul_Hearts_Control.heart[global.currentheart + 1, 2] = 2;
-		    global.totalhearts++;
+			scr_Heart_Item_Pickup_Setup(2, 20);
+		    //Soul_Hearts_Control.heart[global.currentheart + 1, 2] = 2;
+		    //global.totalhearts++;
 		    //global.H[2]++;
 		}
 		if itemVal = "H03" {
-		    Soul_Hearts_Control.heart[global.currentheart + 1, 2] = 3;
-		    global.totalhearts++;
+			scr_Heart_Item_Pickup_Setup(3, 20);
+		    //Soul_Hearts_Control.heart[global.currentheart + 1, 2] = 3;
+		    //global.totalhearts++;
 		    //global.H[3]++;
 		}
 		if itemVal = "H04" {
-		    Soul_Hearts_Control.heart[global.currentheart + 1, 2] = 4;
-		    global.totalhearts++;
+			scr_Heart_Item_Pickup_Setup(4, 40);
+		    //Soul_Hearts_Control.heart[global.currentheart + 1, 2] = 4;
+		    //global.totalhearts++;
 		    //global.H[4]++;
 		}
 		if itemVal = "H05" {
-		    Soul_Hearts_Control.heart[global.currentheart + 1, 2] = 5;
-		    global.totalhearts++;
-		    //global.H[5]++;
-		
-			//global.mechprogress++;
+		    scr_Heart_Item_Pickup_Setup(5, 20);
 		}
 		if itemVal = "H06" {
-		    Soul_Hearts_Control.heart[global.currentheart + 1, 2] = 6;
-		    global.totalhearts++;
-		    //global.H[6]++;
+		    scr_Heart_Item_Pickup_Setup(6, 10);
 		}
 		if itemVal = "H07" {
+			/*
 		    Soul_Hearts_Control.heart[global.currentheart + 1, 2] = 7;
 			var heartHealth = ((60 * ((10 + obj_Soul_Parent.shpfactor) / 10)) + obj_Soul_Parent.shpadd + ((global.soulvitality + global.soulvitalityTemp) / 4));
 		    global.soulhealth = heartHealth;
@@ -479,73 +478,40 @@ function scr_Hard_Coded_Item_Stats(itemVal, items_to_add = 1, reload = false) {
 		    Soul_Hearts_Control.heart[global.currentheart + 1, 3] = heartHealth;
 		    Soul_Hearts_Control.heart[global.currentheart + 1, 4] = heartHealth;
 		    global.totalhearts++;
+			*/
 		    //global.H[7]++;
+			scr_Heart_Item_Pickup_Setup(7, 60);
 			global.glasstime = 0;
 		}
 		if itemVal = "H08" {
-		    Soul_Hearts_Control.heart[global.currentheart + 1, 2] = 8;
-		    global.totalhearts++;
-		
-			//global.spikeprogress++;
-		    //global.H[8]++;
+		    scr_Heart_Item_Pickup_Setup(8, 20);
 		}
 		if itemVal = "H09" {
-		    Soul_Hearts_Control.heart[global.currentheart + 1, 2] = 9;
-		    global.totalhearts++;
-		
-			//global.bleedingprogress++;
-		    //global.H[9]++;
+		    scr_Heart_Item_Pickup_Setup(9, 20);
 		}
 		if itemVal = "H10" {
-		    Soul_Hearts_Control.heart[global.currentheart + 1, 2] = 10;
-		    global.totalhearts++;
-		
-			//global.castingprogress++;
-		    //global.H[10]++;
+		    scr_Heart_Item_Pickup_Setup(10, 20);
 		}
 		if itemVal = "H11" {
-		    Soul_Hearts_Control.heart[global.currentheart + 1, 2] = 11;
-		    global.totalhearts++;
-		
-		    //global.H[11]++;
+		    scr_Heart_Item_Pickup_Setup(11, 20);
 		}
 		if itemVal = "H12" {
-		    Soul_Hearts_Control.heart[global.currentheart + 1, 2] = 12;
-		    global.totalhearts++;
-		    //global.H[12]++;
-		
-			//global.beastprogress++;
+		    scr_Heart_Item_Pickup_Setup(12, 20);
 		}
 		if itemVal = "H13" {
-		    Soul_Hearts_Control.heart[global.currentheart + 1, 2] = 13;
-		    global.totalhearts++;
-		    //global.H[13]++;
-		
-			//global.snakeprogress++;
+		    scr_Heart_Item_Pickup_Setup(13, 20);
 		}
 		if itemVal = "H14" {
-		    Soul_Hearts_Control.heart[global.currentheart + 1, 2] = 14;
-		    global.totalhearts++;
-		    //global.H[14]++;
-		
-			//global.beastprogress++;
+		    scr_Heart_Item_Pickup_Setup(14, 25);
 		}
 		if itemVal = "H15" {
-		    Soul_Hearts_Control.heart[global.currentheart + 1, 2] = 15;
-		    global.totalhearts++;
-		    //global.H[15]++;
+		    scr_Heart_Item_Pickup_Setup(15, 20);
 		}
 		if itemVal = "H16" {
-		    Soul_Hearts_Control.heart[global.currentheart + 1, 2] = 16;
-		    global.totalhearts++;
-		    //global.H[16]++;
-			//global.scrubprogress += 0.5;
+		    scr_Heart_Item_Pickup_Setup(16, 20);
 		}
 		if itemVal = "H17" {
-		    Soul_Hearts_Control.heart[global.currentheart + 1, 2] = 17;
-		    global.totalhearts++;
-		    //global.H[17]++;
-			//global.scrubprogress++;
+		    scr_Heart_Item_Pickup_Setup(17, 20);
 		}
 	
 		if recoGroup = "I" and !reload {
@@ -935,8 +901,10 @@ function scr_Hard_Coded_Item_Stats(itemVal, items_to_add = 1, reload = false) {
 	}
 	if itemVal = "OC02" {
 	    //global.OC[2]++;
-		Soul_Hearts_Control.heart[global.currentheart + 1, 2] = 52;
-	    global.totalhearts++;
+		if !reload {
+			Soul_Hearts_Control.heart[global.currentheart + 1, 2] = 52;
+		    global.totalhearts++;
+		}
 	}
 	if itemVal = "OC03" {
 	    //global.OC[3]++;

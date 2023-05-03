@@ -38,6 +38,17 @@ if roomType = "Shop" {
 if roomType = "Title" {
 	musicType = Title_Theme;
 }
+if roomType = "Super Boss" {
+	if global.currentchapter = 1 {
+		musicType = Flash_Boss_Theme;
+	}
+	if global.currentchapter = 2 {
+		musicType = Feel_Boss_Theme;
+	}
+	if global.currentchapter >= 3 {
+		musicType = Dream_Boss_Theme;
+	}
+}
 
 //pTimer++;
 var transitionTime = 1000;
@@ -81,6 +92,10 @@ if ((audio_is_playing(musicType) = false) and (currentMusic != musicType)) {
 	if previousMusic != currentMusic {
         audio_sound_gain(previousMusic,0,transitionTime);
     }
+	
+	if roomType = "Super Boss" {
+		trackPosition = 0;	
+	}
 	
 	cMus = audio_play_sound(currentMusic, 1000, true);
 	//}

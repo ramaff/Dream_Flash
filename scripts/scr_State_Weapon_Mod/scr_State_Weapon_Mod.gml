@@ -158,10 +158,10 @@ function scr_State_Weapon_Mod(){
 			otarget = other.id;
 		}
 	
-		if scr_State_Active_Check("Ascending", reverie) {
+		if other.Charge_Hold = 2 || scr_State_Active_Check("Ascending", reverie) {
 			
-			shotsize += 0.1;
-			shotsizemax += 0.1;
+			shotsize += 0.25;
+			shotsizemax += 0.25;
 			image_xscale = shotsize;
 			image_yscale = shotsize;
 			

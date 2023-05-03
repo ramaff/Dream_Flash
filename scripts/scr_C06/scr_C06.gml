@@ -3,9 +3,9 @@ function scr_C06() {
 
 	if global.C[6] > 0 {
     
-	    var val = irandom(2 * global.C[6]) + irandom(80);
+	    var val = irandom(2 * global.C[6]) + irandom(60);
     
-	    if val >= 80
+	    if val >= 60
 	    if (instance_exists(obj_Bullet_Parent) and (distance_to_object(obj_Bullet_Parent) < 100)) {
 	        var tar = instance_nearest(x,y,obj_Bullet_Parent).id;
 			
@@ -15,7 +15,7 @@ function scr_C06() {
 				scr_Bullet_Dampen(5)
 			}
 			
-			scr_Refresh_Soul(3)
+			scr_Refresh_Soul(2)
 			
 			
 			//scr_Essence_Defense_Field();

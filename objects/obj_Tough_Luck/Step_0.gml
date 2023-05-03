@@ -217,6 +217,18 @@ if bossActiveAttackDelay[1] <= 0 and bossPatternCooldown <= 0 and bossPatternCou
         beam_sprite = spr_Lightning_Beam;
         bossbeamattackactive = 1;
 		
+		scr_Easy_Boss_Beam_Shoot(bossPatternCountMax, 36);
+		
+		souldir = scr_Soul_Point();
+        var adif = angle_difference(bossPatternDirection, souldir);
+        if adif < 0 {
+            bossPatternDirection += 0.25 + ((bossPatternCountMax - bossPatternCount) / 30);
+        }
+        if adif > 0 {
+            bossPatternDirection += 0.25 + ((bossPatternCountMax - bossPatternCount) / 30);
+        }
+		
+		/*
 		var beamstart = bossPatternCountMax - bossPatternCount
     
         if bossPatternCount < 140 {
@@ -234,6 +246,7 @@ if bossActiveAttackDelay[1] <= 0 and bossPatternCooldown <= 0 and bossPatternCou
         } else {
             scr_Boss_Beam_Attack_New("Dormant",18,scr_Boss_Beam_Frame(beamstart));
         }
+		*/
         
     }
 
@@ -478,11 +491,14 @@ if bossActiveAttackDelay[1] <= 0 and bossPatternCooldown <= 0 and bossPatternCou
         
         bullet_sprite = spr_Red_Beam;
         beam_sprite = spr_Red_Beam;
-        beamSize = 0.75;
+        beamSize = 0.5;
         bossbeamattackactive = 1;
 		boss_xoffset = bossPatternX;
 		boss_yoffset = bossPatternY;
     
+		//scr_Easy_Boss_Beam_Shoot(bossPatternCountMax, 36);
+		
+		
         if bossPatternCount < 280 {
             scr_Boss_Beam_Attack("Active",24);  
         } else {

@@ -121,6 +121,7 @@ function scr_Item_Spawn() {
 	    if item[i] != 0 and item[i] != "0" {
 		    with instance_create(1024 + 50,576,obj_Item_Parent) {
 		        itemOrbit = 1 + floor((i-1) / 4);
+				itemOrbit = 1;
 		        path_start(Item_Path,25,path_action_continue,1)
 		        path_position = (i / other.totalItems);
 		        itemVal = other.item[i];

@@ -12,6 +12,8 @@ function scr_Charged_Hold() {
 	Charge_Essence = 0;
 	Charge_Total_Time = 0;
 	
+	//scr_Default_Weapon_Stats();
+	
 	current_weapon_stats = variable_struct_get(global.weapon_stats, string(weaponcharge))
 	scr_Setup_Charge_Stats()
 	
@@ -30,7 +32,7 @@ function scr_Charged_Hold() {
 	
 	if scurrentstate = "Ascending" || weaponcharge = 10 || weaponcharge = 110 || weaponcharge = 111 || weaponcharge = 153 || weaponcharge = 212 || weaponcharge = 312 || weaponcharge = 405 || weaponcharge = 411 || weaponcharge = 412 {
 		if scurrentstate = "Ascending" {
-			Shot_Charge_Power = 5 + current_weapon_stats.Shot_Power * 5;
+			Shot_Charge_Power = 5 + current_weapon_stats.Shot_Power * 6;
 			Shot_Charge_Speed = current_weapon_stats.Shot_Speed * 0.1;
 			Shot_Charge_Lifespan = 0;	
 			Shot_Charge_Knockback = 10;
