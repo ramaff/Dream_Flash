@@ -222,14 +222,16 @@
         "recollectionString": "Venting",
         "recollectionSprite": "spr_Essence_Attack_Field_Item",
         "recollectionExtraStats": "+Essence Attack",
-        "recollectionDescription": "Occasionally release a whip at nearby enemies, sucking up essence when they are hit. Ignores boss armour."
+        "recollectionDescription": "Occasionally release a whip at nearby enemies, sucking up essence when they are hit. Ignores boss armour.",
+        "Ascending_Credit": 0.5
     },
     "C06": {
         "recollectionString": "Self Respect",
         "recollectionSprite": "spr_Essence_Defense_Field_Item",
         "recollectionExtraStats": "+Essence Defense",
         "recollectionDescription": "Occasionally destroy nearby bullets, which gives you some additional essence.",
-        "Scrub_Credit": 0.5
+        "Scrub_Credit": 0.5,
+        "Ascending_Credit": 0.5
     },
     "C07": {
         "recollectionString": "Imaginary Reload",

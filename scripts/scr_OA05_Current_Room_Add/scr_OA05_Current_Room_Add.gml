@@ -4,11 +4,16 @@ function scr_OA05_Current_Room_Add(){
 	
 	// Location: Stat_Field_Spawn_Check
 
+
 	if global.OA[5] >= 1 {
-		if scr_Chance(5 / global.OA[5]) {
+		if scr_Chance(4 / global.OA[5]) {
 			global.OA5rooms[global.currentroom][0] = scr_Pick_Pool_Letter();
 			global.OA5rooms[global.currentroom][1] = scr_Pick_Pool_Letter();
+			
+			return true
 		}
 	}
+	
+	return false
 
 }

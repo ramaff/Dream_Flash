@@ -4,6 +4,8 @@ function scr_Default_Figment_Stats() {
 
 	gembeam_hit_id = noone;
 	global.gembeam_hits = {}
+	
+	scurrentstate = "None"
 
 	scr_Soul_Particles();
 

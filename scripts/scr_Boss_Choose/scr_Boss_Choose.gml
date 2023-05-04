@@ -1,6 +1,15 @@
 function scr_Boss_Choose(roomNum, exclude, difficultyAdd = 0) {
 	var simRoom = (roomNum + difficultyAdd)
-	roomDifficulty = 1.5 + (4 * (global.currentchapter - 1)) + ((3.5 * simRoom) / 10) + (global.souldespair / 8);
+	
+	var stage_base_diff = 1.5 + (4 * (global.currentchapter - 1))
+	if global.currentchapter = 3 {
+		stage_base_diff += 0.75;
+	}
+	if global.currentchapter >= 4 {
+		stage_base_diff += 2;
+	}
+	
+	roomDifficulty = stage_base_diff + ((3.5 * simRoom) / 10) + (global.souldespair / 8);
 
 	roomDifficulty += global.bossdifficultyadd;
 	
@@ -9,18 +18,16 @@ function scr_Boss_Choose(roomNum, exclude, difficultyAdd = 0) {
 	}
 	if global.currentchapter = 3 {
 		roomDifficulty += ((1 * simRoom) / 10);
-		roomDifficulty += 0.75;
 	}
 	if global.currentchapter >= 4 {
 		roomDifficulty += ((1.5 * simRoom) / 10);
-		roomDifficulty += 2;
 	}
 
 	if roomDifficulty > 30 {
 	    roomDifficulty = 30;
 	}
-	if roomDifficulty < 1 {
-		roomDifficulty = 1;	
+	if roomDifficulty < stage_base_diff {
+		roomDifficulty = stage_base_diff;	
 	}
 
 	/*

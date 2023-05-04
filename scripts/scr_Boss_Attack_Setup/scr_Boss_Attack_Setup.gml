@@ -1,5 +1,8 @@
 function scr_Boss_Attack_Setup(version = 1) {
 	
+	// XB05
+	boss_bullet_count_modded = false;
+	
 	// Old way
 	if version = 1 {
 		for(i = 0; i < 10; i++) {
@@ -18,6 +21,8 @@ function scr_Boss_Attack_Setup(version = 1) {
 		    bossPatternsCooldown[i] = 0;
 			
 		}
+		
+		
 		
 		bossAttacking = 0;
 	    bossPassivePatternDirection = 0;

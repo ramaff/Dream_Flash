@@ -9,7 +9,7 @@ function scr_XC05(truedam){
 		with instance_create(x,y,obj_Lasting_Pain) {
 			damage = truedam * ((global.XC[5]) / (1 + global.XC[5]));
 			damage = max(1, damage);
-			scr_Boss_Size_Setup(0.1 + (sqrt(damage) / 7));
+			scr_Boss_Size_Setup(0.15 + (sqrt(damage) / 6));
 		}
 	}
 

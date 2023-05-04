@@ -6,6 +6,8 @@ function scr_Boss_Size_Setup(argument0) {
 
 	bossSizeX = bossSize;
 	bossSizeY = bossSize;
+	
+	facing_direction = 1;
 
 
 }
