@@ -29,6 +29,8 @@ function scr_Default_Figment_Stats() {
 	gemDrawBeam = 0;
 	gemBeamStandaloneHeat = 0;
 	gemDrawStandaloneBeam = 0;
+	
+	Charge_Hold = 0;
 
 
 	sBeamNum = 0;

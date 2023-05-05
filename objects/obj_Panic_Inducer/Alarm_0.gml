@@ -23,6 +23,8 @@ if instance_exists(obj_Boss_Parent) {
     Shot_Knockback = 10;
     Shot_Lifespan = 120;
 	Shot_Size = 0.55;
+	
+	Shot_Pierce += 1;
 		
 	scr_Minion_Shot_Creation();
 	

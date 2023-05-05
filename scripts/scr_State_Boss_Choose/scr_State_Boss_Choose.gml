@@ -1,4 +1,10 @@
-function scr_State_Boss_Choose(bossn) {
+function scr_State_Boss_Choose(only_forced_bosses = false) {
+
+	if !only_forced_bosses {
+		bossn = choose(1,2,3,4,6,7,9,10);
+	} else {
+		bossn = 0;	
+	}
 
 	var bosstype = noone;
 	var cMaxProg = 1.5;
@@ -38,6 +44,8 @@ function scr_State_Boss_Choose(bossn) {
 	}
 
 	switch(bossn) {
+		case 0:
+			return noone;
 		case 1:
 			bosstype = obj_Snake_Eyes;
 			break;

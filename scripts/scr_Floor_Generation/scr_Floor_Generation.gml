@@ -347,8 +347,7 @@ function scr_Floor_Generation() {
 			
 			itemNumChoice = 1 + floor((global.soulhope + random(global.soulhope * 3)) / 100);
 	        itemNumPick = 1;
-			
-			var stype = choose(1,2,3,4,6,7,9);
+
 			
 	        for(j = 1; j <= itemNumChoice; j++) {
 	            Flash[i,j+6] = scr_Misc_Field_Pool_Pick();
@@ -356,7 +355,7 @@ function scr_Floor_Generation() {
 			
 			var baseroom = ceil(i / 4);
 			
-			Flash[i,21] = scr_State_Boss_Choose(stype); // Boss Type or Item Type
+			Flash[i,21] = scr_State_Boss_Choose(false); // Boss Type or Item Type
 	        Flash[i,22] = 0; // Boss Champ or Second Item
 	        Flash[i,23] = 0; // Boss Boost or Third Item
 	        Flash[i,24] = 0;
