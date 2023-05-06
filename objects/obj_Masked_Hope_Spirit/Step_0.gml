@@ -205,6 +205,8 @@ if bossActiveAttackDelay[1] <= 0 and bossPatternCooldown <= 0 and bossPatternCou
         bullet_count = 1;
         bullet_spread = 0;
         boss_radius = 0;
+		//bullet_size = 0.7;
+		beamSize = 0.7;
         
         bullet_sprite = spr_Hope_Beam;
         beam_sprite = spr_Hope_Beam;
@@ -213,13 +215,15 @@ if bossActiveAttackDelay[1] <= 0 and bossPatternCooldown <= 0 and bossPatternCou
 		beamStart = 200 - bossPatternCount;
 		bossPatternDirection = scr_Angle_Converge(bossPatternDirection, scr_Soul_Point(), (bossPatternCountMax - bossPatternCount) / 200)
     
+		scr_Easy_Boss_Beam_Shoot(bossPatternCountMax, 18);
+	
         if bossPatternCount < 180 {
 			if bossPatternCount mod 5 = 0 {
 				scr_Boss_Stretch("Vertical", 0.05);	
 			}
-            scr_Boss_Beam_Attack_New("Active",35,scr_Boss_Beam_Frame(beamStart)); 
+            //scr_Boss_Beam_Attack_New("Active",35,scr_Boss_Beam_Frame(beamStart)); 
         } else {
-            scr_Boss_Beam_Attack_New("Dormant",35,scr_Boss_Beam_Frame(beamStart));  
+            //scr_Boss_Beam_Attack_New("Dormant",35,scr_Boss_Beam_Frame(beamStart));  
         } 
         
         if frac((bossPatternCount - 1) / 45) = 0 and bossPatternCount > 0 {

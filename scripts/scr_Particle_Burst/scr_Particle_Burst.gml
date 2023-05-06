@@ -9,8 +9,6 @@ function scr_Particle_Burst(particletype = obj_Weapon_Trail, particlesprite = sp
 	
 			with instance_create(x + xx,y + yy, particletype) {
 				
-
-		
 				if burstUniformSpread {
 					direction = burstdir;
 					burstdir += burstspread;
@@ -19,7 +17,9 @@ function scr_Particle_Burst(particletype = obj_Weapon_Trail, particlesprite = sp
 				}
 				
 				speed = (burstspeed / 4) + random(3 * burstspeed / 4);
-		
+				
+				//Print_DF("part sprite: " + string(sprite_get_name(particlesprite)))
+				
 				sprite_index = particlesprite;
 		
 				image_angle = other.image_angle;

@@ -4380,6 +4380,7 @@
     {"id":{"name":"obj_Title_Screen_Effect_Control","path":"objects/obj_Title_Screen_Effect_Control/obj_Title_Screen_Effect_Control.yy",},},
     {"id":{"name":"obj_Menu_Fade_In","path":"objects/obj_Menu_Fade_In/obj_Menu_Fade_In.yy",},},
     {"id":{"name":"spr_Comfort_Zones_Art","path":"sprites/spr_Comfort_Zones_Art/spr_Comfort_Zones_Art.yy",},},
+    {"id":{"name":"scr_Soul_Shot_Rebound_Parts","path":"scripts/scr_Soul_Shot_Rebound_Parts/scr_Soul_Shot_Rebound_Parts.yy",},},
     {"id":{"name":"obj_Start_Button","path":"objects/obj_Start_Button/obj_Start_Button.yy",},},
     {"id":{"name":"obj_Start_Run_Menu","path":"objects/obj_Start_Run_Menu/obj_Start_Run_Menu.yy",},},
     {"id":{"name":"obj_Start_Run_Button","path":"objects/obj_Start_Run_Button/obj_Start_Run_Button.yy",},},

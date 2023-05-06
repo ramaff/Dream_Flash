@@ -144,7 +144,7 @@ function scr_Default_Shot_Stats() {
 	shotchainspeed = 0;
 	shothomingtype = 0;
 	shothomingrange = 0;
-	shothomingspeed = 5;
+	shothomingspeed = 0;
 	shotcontinue = 0;
 	shothealing = 0;
 

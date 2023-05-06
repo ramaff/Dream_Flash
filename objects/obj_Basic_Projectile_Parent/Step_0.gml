@@ -129,7 +129,7 @@ if shotairburststats != false {
 			dir = -shotairburststats[burstIndex].Spread / 2;
 			shotlifespan = shotlifespan * 0.6;
 		    repeat(shotairburststats[burstIndex].Amount) {
-		        with instance_create(x,y,obj_Lesser_Soul_Shot) {
+		        with instance_create(x,y,object_index) {
 					//shotlifespan = other.shotlifespan / 2;
 		            scr_Duplicate_Shot_Stats();
 						

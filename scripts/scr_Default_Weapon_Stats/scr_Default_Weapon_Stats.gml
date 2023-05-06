@@ -188,7 +188,7 @@ function scr_Default_Weapon_Stats() {
 	Shot_Chain_Speed = 0;
 	Shot_Homing_Type = 0;
 	Shot_Homing_Range = 0;
-	Shot_Homing_Speed = 5;
+	Shot_Homing_Speed = 0;
 	Shot_Impact_Type = 0;
 	Shot_Impact_Size = 0;
 	Shot_Impact_Power = 0;

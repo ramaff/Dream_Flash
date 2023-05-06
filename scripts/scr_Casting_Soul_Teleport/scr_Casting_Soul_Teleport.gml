@@ -6,6 +6,9 @@ function scr_Casting_Soul_Teleport() {
 		var xxx = 0;
 		var yyy = 0;
 		
+		scr_Disk_Effect(20, 0.5, c_fuchsia);
+		scr_Disk_Effect(20, 0.9, c_purple);
+		
 		var stdis = ((((1 - (global.teleportenergyconservation / 50)) / global.soulstatedrainslow) / global.soulstateteleportfactor) / global.teleportdelayconservationfactor);
 		
 		with(obj_Bullet_Parent) {

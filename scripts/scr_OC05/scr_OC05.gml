@@ -18,8 +18,8 @@ function scr_OC05(){
 				var tarPositionX = xx + lengthdir_x(dist, tangle)
 				var tarPositionY = yy + lengthdir_y(dist, tangle)
 				
-				x = lerp(x, tarPositionX, 0.05 * speed)
-				y = lerp(y, tarPositionY, 0.05 * speed)
+				x = lerp(x, tarPositionX, convergeSpeed * 0.005 * speed)
+				y = lerp(y, tarPositionY, convergeSpeed * 0.005 * speed)
 				
 				
 			}

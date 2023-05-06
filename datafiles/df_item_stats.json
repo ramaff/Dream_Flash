@@ -516,8 +516,8 @@
         "recollectionDescription": "Use spite to get ahead and become stronger. Your state bar charges up proportional to damage take, with bonus state being granted when losing a heart."
     },
     "F07": {
-        "recollectionString": "Necesity",
-        "recollectionSprite": "spr_Necesity_Item",
+        "recollectionString": "Necessity",
+        "recollectionSprite": "spr_Necessity_Item",
         "recollectionExtraStats": "+200% Stage Boss State Recharge",
         "recollectionDescription": "Gain state much faster when fighting the final boss of each stage."
     },
