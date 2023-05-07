@@ -1,6 +1,6 @@
 // Script assets have changed for v2.3.0 see
 // https://help.yoyogames.com/hc/en-us/articles/360005277377 for more information
-function scr_OC03(){
+function scr_OC03(cWP = global.currentweapon){
 	if cWP = 13 || cWP = 16 || cWP = 403 || cWP = 211 || cWP = 14 {
 		exit;	
 	}

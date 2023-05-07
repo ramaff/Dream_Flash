@@ -30,16 +30,44 @@ function scr_Charged_Hold() {
 	
 	var cUpAmt = ((3 + global.P[5]) / 3);
 	
-	if scurrentstate = "Ascending" || weaponcharge = 10 || weaponcharge = 110 || weaponcharge = 111 || weaponcharge = 153 || weaponcharge = 212 || weaponcharge = 312 || weaponcharge = 405 || weaponcharge = 411 || weaponcharge = 412 {
+	var charged_weap = scr_Charged_Weapon(weaponcharge)
+	
+	if scurrentstate = "Ascending" || charged_weap {
 		if scurrentstate = "Ascending" {
-			Shot_Charge_Power = 5 + current_weapon_stats.Shot_Power * 6;
-			Shot_Charge_Speed = current_weapon_stats.Shot_Speed * 0.1;
-			Shot_Charge_Lifespan = 0;	
-			Shot_Charge_Knockback = 10;
-			Shot_Charge_Size = current_weapon_stats.Shot_Size * 1.5;
-			Charge_Total_Time = 15 + (weaponDelay * 3);
-			Charge_Essence = weaponCost * 4;
+			if !charged_weap {
+				if variable_struct_exists(current_weapon_stats, "Shot_Speed") {
+					Shot_Charge_Speed = current_weapon_stats.Shot_Speed * 0.1;
+				} else {
+					Shot_Charge_Speed = 0;	
+				}
+				
+				if variable_struct_exists(current_weapon_stats, "Shot_Power") {
+					Shot_Charge_Power = current_weapon_stats.Shot_Power * 6.5;
+				} else {
+					Shot_Charge_Power = 0
+				}
+				
+				if variable_struct_exists(current_weapon_stats, "Shot_Knockback") {
+					Shot_Charge_Knockback = current_weapon_stats.Shot_Knockback * 1;
+				} else {
+					Shot_Charge_Knockback = 0;
+				}
+				
+				if variable_struct_exists(current_weapon_stats, "Shot_Size") {
+					Shot_Charge_Size = current_weapon_stats.Shot_Size * 1.5;
+				} else {
+					Shot_Charge_Size = 0
+				}
+				
+				Shot_Charge_Lifespan = 0;
+				
+				Charge_Total_Time = 15 + (weaponDelay * 3);
+				Charge_Essence = weaponCost * 4;
+			} else {
+				Shot_Charge_Power = Shot_Charge_Power * 1.15;	
+			}
 		}
+		
 		
 		wtt = Charge_Total_Time;
 		wdelay = weaponDelay;

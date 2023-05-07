@@ -70,9 +70,9 @@ function scr_Boss_Choose(roomNum, exclude, difficultyAdd = 0) {
 	    if exclude = 1 {
 	        bossform = choose(1,3,5,9,12,14,16,18,19,20,24,25,37,42,43,44,98);
 	    }
-		sboss = scr_Chance(17/0.5);
+		sboss = scr_Chance(34);
 		if sboss = true {
-			bossform = choose(81,82,83,84,86,87,89, 90);
+			bossform = choose(81,82,83,84,86,87,89,90);
 		}
 	}
 	if global.currentchapter = 2 {
@@ -84,7 +84,7 @@ function scr_Boss_Choose(roomNum, exclude, difficultyAdd = 0) {
 		
 		sboss = scr_Chance(18);
 		if sboss = true {
-			bossform = choose(81,82,83,84,86,87,89, 90);
+			bossform = choose(81,82,83,84,86,87,89,90);
 		}
 	}
 	if global.currentchapter = 3 {
@@ -94,17 +94,17 @@ function scr_Boss_Choose(roomNum, exclude, difficultyAdd = 0) {
 			bossform = choose(2,4,7,11,15,21,22,26,28,29,30,31,33,39,41,45,56,65);
 		}
 		
-		sboss = scr_Chance(17);
+		sboss = scr_Chance(15);
 		if sboss = true {
-			bossform = choose(81,82,83,84,86,87,89, 90);
+			bossform = choose(81,82,83,84,86,87,89,90);
 		}
 	}
 	if global.currentchapter >= 4 {
 	    bossform = choose(8,21,29,30,40,46,47,49);
 		
-		sboss = scr_Chance(6);
+		sboss = scr_Chance(5);
 		if sboss = true {
-			bossform = choose(81,82,83,84,86,87,89, 90);
+			bossform = choose(81,82,83,84,86,87,89,90);
 		}
 	}
 	

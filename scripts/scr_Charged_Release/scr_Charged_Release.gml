@@ -8,12 +8,11 @@ function scr_Charged_Release() {
 			current_weapon_stats = variable_struct_get(global.weapon_stats, string(weaponcharge))
 			scr_Setup_Charge_Stats()
 			
-			scr_Default_Weapon_Stats();
+			//scr_Default_Weapon_Stats();
 		
 			scr_Setup_Weapon_Stats();
 		
 			scr_Hard_Coded_Weapon_Stats(weaponcharge);
-			
 			
 			Shot_Speed += Charge_Speed;
 			Shot_Power += Charge_Power;
@@ -22,7 +21,8 @@ function scr_Charged_Release() {
 			Shot_Size += Charge_Size;
 			
 			if Charge_Hold = 2 {
-				Shot_Size = Charge_Size;	
+				//Shot_Size = Charge_Size;	
+				scr_Weapon_Use_List(weaponcharge)
 			}
 			
 			if weaponcharge = 10 {

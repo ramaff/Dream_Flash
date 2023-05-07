@@ -1,6 +1,6 @@
 
 
-function scr_Weapon_Use_List() {
+function scr_Weapon_Use_List(cWP = global.currentweapon) {
 	weapStop = 0;
 
 	scr_C08();
@@ -8,7 +8,7 @@ function scr_Weapon_Use_List() {
 	weaponCost = 0;
 	weaponDelay = 0;
 	
-	cWP = global.currentweapon;
+	//cWP = global.currentweapon;
 	
 	umbrellaActive = false;
 	
@@ -62,7 +62,7 @@ function scr_Weapon_Use_List() {
 		}
 	}
 	
-	if senergy >= weapStop + weaponCost { 
+	if senergy >= weapStop + weaponCost || Charge_Hold = 2 { 
 	
 		global.soulNoShoot = 0;
 		
@@ -75,6 +75,10 @@ function scr_Weapon_Use_List() {
 		spawnProjectile = true;
 		
 		scr_Hard_Coded_Weapon_Stats(cWP);
+		
+		if Charge_Hold = 2 {
+			scr_Ascending_Soul_Weapon_Mod();
+		}
 		
 		if barrage {
 			
@@ -150,7 +154,7 @@ function scr_Weapon_Use_List() {
 			}
 		}
 		
-		scr_OC03();
+		scr_OC03(cWP);
 		
 		scr_XC06_Cost_Adjustment();
 		
