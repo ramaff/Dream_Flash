@@ -967,7 +967,7 @@
         "Recollection_Sprite": "spr_Safety_Scissors_Art",
         "Extra_Stats": "+Melee +Bullet Slash +4 Bleed",
         "Description": "Sharp Scissors that allow the soul to cut and inflict bleed to nearby enemies.",
-        "Essence": 18,
+        "Essence": 15,
         "Delay": 24,
         "Shot_Element": "Sharp",
         "Shot_Weapon_Lean": 5,
@@ -1570,13 +1570,15 @@
         "Shot_Type": "obj_Lesser_Soul_Shot",
         "Shot_Duplicate_Sprite": "spr_Magic_Twister_Shot",
         "Shot_Extra_Hits": false,
+        "Weapon_Split_Visible": 1,
         "Shot_Extra_Stats": [
             {
                 "Shot_Count": 1,
                 "Shot_Sprite": "spr_Magic_Twister_Shot",
                 "Shot_Type": "obj_Lesser_Soul_Shot",
                 "Shot_Extra_Hit_Frequency": 10,
-                "Shot_Power": 8
+                "Shot_Power": 8,
+                "Shot_Lifespan": 1
             }
         ],
         "Shot_Friction": 0.02,

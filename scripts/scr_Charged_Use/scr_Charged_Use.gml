@@ -15,8 +15,18 @@ function scr_Charged_Use() {
 
 			current_weapon_stats = variable_struct_get(global.weapon_stats, string(weaponcharge))
 			
+			if Charge_Hold = 2 {
+				scr_Ascending_Soul_Essence_Beam(weaponcharge);
+			}
+			
 			weaponCost = current_weapon_stats.Essence;	
 			weaponDelay = current_weapon_stats.Delay;
+			
+			if global.OC[3] > 0 {
+				weaponDelay = weaponDelay * 2.5;
+				weaponCost = weaponCost * 2.5;	
+			}
+			
 			scr_Setup_Charge_Stats()
 		
 		    if senergy > ((weaponCost - senergyconservation) / senergyconservationfactor / ((6 + global.Weap[weaponcharge]) / 6)) {        

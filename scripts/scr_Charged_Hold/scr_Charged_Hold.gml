@@ -15,10 +15,20 @@ function scr_Charged_Hold() {
 	//scr_Default_Weapon_Stats();
 	
 	current_weapon_stats = variable_struct_get(global.weapon_stats, string(weaponcharge))
+	if Charge_Hold = 2 {
+		scr_Ascending_Soul_Essence_Beam(weaponcharge);
+	}
 	scr_Setup_Charge_Stats()
 	
 	weaponCost = current_weapon_stats.Essence;	
 	weaponDelay = current_weapon_stats.Delay;
+	
+	if global.OC[3] > 0 {
+		weaponDelay = weaponDelay * 2.5;
+		weaponCost = weaponCost * 2.5;	
+		Charge_Essence = Charge_Essence * 2.5;
+		Charge_Total_Time = Charge_Total_Time * 2.5;
+	}
 	
 	
 	crate = 1 * sdelayconservationfactor * ((6 + global.Weap[weaponcharge]) / 6);
@@ -42,7 +52,7 @@ function scr_Charged_Hold() {
 				}
 				
 				if variable_struct_exists(current_weapon_stats, "Shot_Power") {
-					Shot_Charge_Power = current_weapon_stats.Shot_Power * 6.5;
+					Shot_Charge_Power = current_weapon_stats.Shot_Power * 7;
 				} else {
 					Shot_Charge_Power = 0
 				}

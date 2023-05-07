@@ -42,6 +42,7 @@ function scr_Hard_Coded_Weapon_Stats(cWP){
 			barrage = true;
 	        break;
 	    case 14:
+			
 	        //scr_Essence_Beam_Shot();
 	        break;
 	    case 15:

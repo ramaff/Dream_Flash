@@ -15,7 +15,19 @@ current_weapon_stats = variable_struct_get(global.weapon_stats, string(weaponcha
 
 if Charge_Hold = 2 {
 	var size = Charge_Size + 0.25;
-	draw_sprite_ext(asset_get_index(current_weapon_stats.Shot_Sprite), 0, x, y - 50, size, size, 0, c_white, 1)
+	var sspr = current_weapon_stats.Shot_Sprite;
+	
+	if sspr = "spr_Laser_Start" {
+		sspr = "spr_Laser_Charge_Ball"
+	}
+	if sspr = "spr_Beam_Start" {
+		sspr = "spr_Essence_Beam_Charge_Ball"
+	}
+	if sspr = "spr_Crystal_Laser_Start" {
+		sspr = "spr_Crystal_Laser_Charge_Ball"
+	}
+	
+	draw_sprite_ext(asset_get_index(sspr), 0, x, y - 50, size, size, 0, c_white, 1)
 }
 
 /*

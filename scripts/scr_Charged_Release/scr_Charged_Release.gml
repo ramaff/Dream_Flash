@@ -11,8 +11,12 @@ function scr_Charged_Release() {
 			//scr_Default_Weapon_Stats();
 		
 			scr_Setup_Weapon_Stats();
+			
+			if Charge_Hold = 2 {
+				scr_Ascending_Soul_Essence_Beam(weaponcharge);
+			}
 		
-			scr_Hard_Coded_Weapon_Stats(weaponcharge);
+			//scr_Hard_Coded_Weapon_Stats(weaponcharge);
 			
 			Shot_Speed += Charge_Speed;
 			Shot_Power += Charge_Power;
@@ -80,6 +84,8 @@ function scr_Charged_Release() {
 	            //scr_Energy_Bomb_Cannon_Use();
 				Shot_Burst_Power = Shot_Power / 10;
 	        }
+			
+			scr_OC03(weaponcharge);
 		
 			scr_Shot_Creation();
 

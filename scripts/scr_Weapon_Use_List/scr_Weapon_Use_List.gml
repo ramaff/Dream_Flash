@@ -20,7 +20,7 @@ function scr_Weapon_Use_List(cWP = global.currentweapon) {
 		}
 	}
 	
-	current_weapon_stats = variable_struct_get(global.weapon_stats, string(cWP))
+	current_weapon_stats = json_parse(json_stringify(variable_struct_get(global.weapon_stats, string(cWP))))
 	
 	weaponCost = current_weapon_stats.Essence;	
 	weaponDelay = current_weapon_stats.Delay;
@@ -68,6 +68,10 @@ function scr_Weapon_Use_List(cWP = global.currentweapon) {
 		
 		scr_Default_Weapon_Stats();
 		
+		if Charge_Hold = 2 {
+			scr_Ascending_Soul_Essence_Beam(cWP);	
+		}
+		
 		scr_Setup_Weapon_Stats();
 		
 		barrage = false;
@@ -86,6 +90,10 @@ function scr_Weapon_Use_List(cWP = global.currentweapon) {
 	
 			for(bi = 0; bi < 9; bi++) {
 				if Shot_Repetition[bi] <= 0 {
+					
+					if Charge_Hold = 2 {
+						Shot_Repetition_Stats[bi] = current_weapon_stats
+					}
 					
 					if variable_struct_exists(current_weapon_stats, "Shot_Repetition") {
 						Shot_Repetition[bi] = current_weapon_stats.Shot_Repetition
