@@ -2589,6 +2589,7 @@
     {"id":{"name":"obj_Boss_Sky_Lightning","path":"objects/obj_Boss_Sky_Lightning/obj_Boss_Sky_Lightning.yy",},},
     {"id":{"name":"scr_Scrub_Soul_Weapon_Mod","path":"scripts/scr_Scrub_Soul_Weapon_Mod/scr_Scrub_Soul_Weapon_Mod.yy",},},
     {"id":{"name":"spr_Woods_Tree","path":"sprites/spr_Woods_Tree/spr_Woods_Tree.yy",},},
+    {"id":{"name":"scr_Push_Away_From_Self","path":"scripts/scr_Push_Away_From_Self/scr_Push_Away_From_Self.yy",},},
     {"id":{"name":"spr_Shrub","path":"sprites/spr_Shrub/spr_Shrub.yy",},},
     {"id":{"name":"spr_LF_Grass","path":"sprites/spr_LF_Grass/spr_LF_Grass.yy",},},
     {"id":{"name":"spr_Dream_Striker","path":"sprites/spr_Dream_Striker/spr_Dream_Striker.yy",},},

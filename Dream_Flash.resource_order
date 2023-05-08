@@ -2350,6 +2350,7 @@
     {"name":"obj_Boss_Sky_Lightning","order":53,"path":"objects/obj_Boss_Sky_Lightning/obj_Boss_Sky_Lightning.yy",},
     {"name":"scr_Scrub_Soul_Weapon_Mod","order":16,"path":"scripts/scr_Scrub_Soul_Weapon_Mod/scr_Scrub_Soul_Weapon_Mod.yy",},
     {"name":"spr_Woods_Tree","order":2,"path":"sprites/spr_Woods_Tree/spr_Woods_Tree.yy",},
+    {"name":"scr_Push_Away_From_Self","order":25,"path":"scripts/scr_Push_Away_From_Self/scr_Push_Away_From_Self.yy",},
     {"name":"spr_Shrub","order":3,"path":"sprites/spr_Shrub/spr_Shrub.yy",},
     {"name":"spr_LF_Grass","order":4,"path":"sprites/spr_LF_Grass/spr_LF_Grass.yy",},
     {"name":"spr_Dream_Striker","order":27,"path":"sprites/spr_Dream_Striker/spr_Dream_Striker.yy",},

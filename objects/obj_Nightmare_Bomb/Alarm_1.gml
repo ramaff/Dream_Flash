@@ -11,7 +11,8 @@ repeat(12) {
 	        image_xscale = bulletsize;
 	        image_yscale = bulletsize;
 	        bulletspeed = other.bulletspeed * sfac;
-	        bulletpower = other.bulletpower * 0.5;
+	        bulletpower = global.stagedamage;
+			bulletpowermax = global.stagedamage;
 	        speed = bulletspeed;
 	        direction = other.direction + dir;
 		}

@@ -5,6 +5,14 @@ function scr_Boss_Step(version = 1) {
 	scr_Boss_Morph_In(version);
 	//scr_Room_Depth(0);
 	
+	if version = 2 {
+		if state = states.jumping || state = states.leaping {
+			if activeAttack = 0 and bossHeight < 10 {
+				state = states.normal;	
+			}
+		}
+	}
+	
 	if state = states.normal || state = states.jumping {
 		if !scr_Outside_Check_Bool(256) {
 			var dirr = point_direction(x, y, room_width / 2, room_height / 2);

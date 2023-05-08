@@ -15,6 +15,8 @@ repeat(2) {
 				bulletsize = 0.5;
 	            bulletspeed = 0;
 	            bulletpower = other.bulletpower * 0.333;
+				bulletpower = global.stagedamage;
+				bulletpowermax = global.stagedamage;
 	            speed = 0;
 	            direction = other.dir * 90;
 	            bulletOrbit = 50 * (19 - other.orbitsum);

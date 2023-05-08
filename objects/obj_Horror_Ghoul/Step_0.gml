@@ -68,7 +68,7 @@ if bossActiveAttackDelay[1] <= 0 and bossPatternCooldown <= 0 and bossPatternCou
 	scr_Default_Attack_Settings();
     bullet_type = obj_Basic_Bullet;
     bullet_sprite = spr_Glowy_Enemy_Shot;
-    bullet_speed = bossbulletspeed * (1 + random(0.15));
+    bullet_speed = bossbulletspeed * (0.9 + random(0.15));
     bullet_power = bosspower;
     bullet_direction = (-5 + random(10)) / bossaccuracy;
     bullet_lifespan = 400;
@@ -88,7 +88,7 @@ if bossActiveAttackDelay[1] <= 0 and bossPatternCooldown <= 0 and bossPatternCou
 	if bossActiveAttack[1] = 1 {
 		scr_Boss_Stretch("Vertical",0.4);
 		
-	    bullet_count = 9;
+	    bullet_count = 7;
 		bullet_spread = 180 / bullet_count;
 		
 	    scr_Soul_Shoot();

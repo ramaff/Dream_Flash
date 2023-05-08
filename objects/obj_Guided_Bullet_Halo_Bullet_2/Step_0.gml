@@ -22,5 +22,7 @@ if instance_exists(obj_Soul_Parent) {
 	
 	x = lerp(x, xx, 0.05);
 	y = lerp(y, yy, 0.05);
+	
+	scr_Push_Away_From_Self(bulletOrbit, 2)
 
 }
