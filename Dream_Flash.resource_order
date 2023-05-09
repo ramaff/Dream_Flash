@@ -3604,7 +3604,7 @@
     {"name":"obj_Guardian_of_Knowing","order":10,"path":"objects/obj_Guardian_of_Knowing/obj_Guardian_of_Knowing.yy",},
     {"name":"spr_Corruption_Ball","order":12,"path":"sprites/spr_Corruption_Ball/spr_Corruption_Ball.yy",},
     {"name":"spr_Snake_Eyes_Feel","order":4,"path":"sprites/spr_Snake_Eyes_Feel/spr_Snake_Eyes_Feel.yy",},
-    {"name":"obj_Blind_Hunger","order":11,"path":"objects/obj_Blind_Hunger/obj_Blind_Hunger.yy",},
+    {"name":"obj_Blind_Hunger","order":7,"path":"objects/obj_Blind_Hunger/obj_Blind_Hunger.yy",},
     {"name":"spr_Anything_Field","order":17,"path":"sprites/spr_Anything_Field/spr_Anything_Field.yy",},
     {"name":"spr_Conga_Line_v2","order":6,"path":"sprites/spr_Conga_Line_v2/spr_Conga_Line_v2.yy",},
     {"name":"spr_Casting_Part","order":7,"path":"sprites/spr_Casting_Part/spr_Casting_Part.yy",},

@@ -30,7 +30,8 @@
 			image_yscale = bulletsize;
             sprite_index = spr_Glowy_Green_Shot;
             bulletspeed = other.bulletspeed * (0.8);
-            bulletpower = other.bulletpowermax * 0.5;
+            bulletpower = global.stagedamage;
+	        bulletpowermax = global.stagedamage;
             speed = bulletspeed;
             direction = dir;
         }

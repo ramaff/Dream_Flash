@@ -4,6 +4,8 @@ function scr_Game_Control_Setup() {
 	global.glasstime = 0;
 	global.currentdarkness = 0;
 	global.stagedamage = 10;
+	
+	global.cameramode = "Boss";
 
 	scr_Item_Variable_Setup();
 	global.weapon_stats = scr_Load_Weapon_Stats();

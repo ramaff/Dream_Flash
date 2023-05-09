@@ -21,6 +21,7 @@ if bossActiveAttackDelay[1] <= 0 and bossActiveAttackCooldown[1] <= 0 and bossAc
             bossActiveAttack[1] = choose(7,4,5);
         }
     }
+	
 	bossActiveAttackDelay[1] = 10;
     
     if bossActiveAttack[1] = 1 {
@@ -28,30 +29,30 @@ if bossActiveAttackDelay[1] <= 0 and bossActiveAttackCooldown[1] <= 0 and bossAc
         bossPatternCooldown = 0;
         bossPatternCooldownMax = 60;
         bossActiveAttackDuration[1] = 30 + bossPatternCooldownMax * bossPatternCount;
-        bossActiveAttackCooldown[1] = 45 + random(30);
+        bossActiveAttackCooldown[1] = 120 + random(30);
     }
     if bossActiveAttack[1] = 2 {
         scr_Boss_Dash_Setup();
-        bossPatternCount = 145;
+        bossPatternCount = 185;
         bossPatternCountMax = bossPatternCount;
         bossPatternCooldown = 1;
         bossPatternCooldownMax = 1;
         bossActiveAttackDuration[1] = 15 + bossattackspeed * bossPatternCooldownMax * bossPatternCount;
-        bossActiveAttackCooldown[1] = 30 + random(15);
+        bossActiveAttackCooldown[1] = 120 + random(15);
 		
 		var bossdirection = scr_Soul_Point();
 		bossdirection = clamp(bossdirection, 0, 180);
-        bossMaxDashSpeed = 5.5 * bossmovespeed;
+        bossMaxDashSpeed = 7.5 * bossmovespeed;
 		bossDashSpeed = 0;
     }
     if bossActiveAttack[1] = 3 {
         scr_Boss_Dash_Setup();
-        bossPatternCount = 130;
+        bossPatternCount = 180;
         bossPatternCountMax = bossPatternCount;
         bossPatternCooldown = 1;
         bossPatternCooldownMax = 1;
         bossActiveAttackDuration[1] = 15 + bossattackspeed * bossPatternCooldownMax * bossPatternCount;
-        bossActiveAttackCooldown[1] = 30 + random(15);
+        bossActiveAttackCooldown[1] = 120 + random(15);
 		
 		var bossdirection = scr_Soul_Point();
         bossMaxDashSpeed = 3 * bossmovespeed;
@@ -67,7 +68,7 @@ if bossActiveAttackDelay[1] <= 0 and bossActiveAttackCooldown[1] <= 0 and bossAc
         bossPatternCooldown = 1;
         bossPatternCooldownMax = 1;
         bossActiveAttackDuration[1] = 15 + bossPatternCooldownMax * bossPatternCount;
-        bossActiveAttackCooldown[1] = 30 + random(15);
+        bossActiveAttackCooldown[1] = 120 + random(15);
 		
 		var bossdirection = scr_Soul_Point();
 		bossdirection = clamp(bossdirection, 0, 180);
@@ -76,15 +77,15 @@ if bossActiveAttackDelay[1] <= 0 and bossActiveAttackCooldown[1] <= 0 and bossAc
     }
     if bossActiveAttack[1] = 5 {
         scr_Boss_Dash_Setup();
-        bossPatternCount = 90;
+        bossPatternCount = 160;
         bossPatternCountMax = bossPatternCount;
         bossPatternCooldown = 1;
         bossPatternCooldownMax = 1;
         bossActiveAttackDuration[1] = 15 + bossPatternCooldownMax * bossPatternCount;
-        bossActiveAttackCooldown[1] = 30 + random(15);
+        bossActiveAttackCooldown[1] = 120 + random(15);
 		
 		var bossdirection = scr_Soul_Point();
-        bossMaxDashSpeed = 2.25 * bossmovespeed;
+        bossMaxDashSpeed = 1.75 * bossmovespeed;
 		bossDashSpeed = 0;
     }
     if bossActiveAttack[1] = 6 {
@@ -93,7 +94,7 @@ if bossActiveAttackDelay[1] <= 0 and bossActiveAttackCooldown[1] <= 0 and bossAc
         bossPatternCooldown = 50;
         bossPatternCooldownMax = 50;
         bossActiveAttackDuration[1] = 30 + bossPatternCooldownMax * bossPatternCount;
-        bossActiveAttackCooldown[1] = 60 + random(30);
+        bossActiveAttackCooldown[1] = 120 + random(30);
     }
     if bossActiveAttack[1] = 7 {
         bossActiveAttackDelay[1] = 15;
@@ -101,7 +102,7 @@ if bossActiveAttackDelay[1] <= 0 and bossActiveAttackCooldown[1] <= 0 and bossAc
         bossPatternCooldown = 3;
         bossPatternCooldownMax = 3;
         bossActiveAttackDuration[1] = 30 + bossPatternCooldownMax * bossPatternCount;
-        bossActiveAttackCooldown[1] = 60 + random(30);
+        bossActiveAttackCooldown[1] = 120 + random(30);
     }
     bossPatternCountMax = bossPatternCount;
 }
@@ -130,40 +131,7 @@ if bossActiveAttackDelay[1] <= 0 and bossActiveAttackCooldown[1] <= 0 and bossAc
     }
     
 if bossActiveAttackDelay[1] <= 0 {
-/*
-    if bossActiveAttack[1] = 1 {
-        bullet_count = 20;
-        bullet_spread = 50;
-        bullet_lifespan = 110;
-        
-        bullet_speedfac_min = 0.8;
-        bullet_speedfac_add = 1.65;
-        bullet_timefac_min = 0.85;
-        bullet_timefac_add = 1;
-        
-        scr_Soul_Shoot_Vomit();
-    
-        bossActiveAttack[1] = 0;
-    }
-    
-    if bossActiveAttack[1] = 6 {
-    
-        bullet_count = 7;
-        bullet_spread = 12;
-        bullet_speed = bossbulletspeed * 1.95;
-        bullet_sprite = spr_Bleeding_Direction_Bullet;
-        scr_Soul_Shoot();
-        bullet_count = 8;
-        bullet_speed = bossbulletspeed * 1.6;
-        scr_Soul_Shoot();
-        bullet_count = 9;
-        bullet_speed = bossbulletspeed * 1.25;
-        scr_Soul_Shoot();
-        
-        bossActiveAttack[1] = 0;
-    
-    }
- */   
+
 }
 
 /* */
@@ -184,9 +152,9 @@ if bossActiveAttackDelay[1] <= 0 {
     bullet_speed = bossbulletspeed * (1.5 + random(0.5));
     
     if champ = 1 {
-        bullet_type = obj_Bounce_Bullet;
-        bullet_sprite = spr_Lob_Shot;
-        bullet_lifespan = 108;
+        bullet_type = obj_Bubble_Bullet;
+        bullet_sprite = spr_Pink_Bubble_Bullet;
+        bullet_lifespan = 210;
         bullet_image_speed = 0.33;
     }
 
@@ -200,12 +168,13 @@ if bossActiveAttackDelay[1] <= 0 and bossPatternCooldown <= 0 and bossPatternCou
         bullet_lifespan = 110;
         
         bullet_speedfac_min = 0.75;
-        bullet_speedfac_add = 0.7;
+        bullet_speedfac_add = 0.5;
         bullet_timefac_min = 1.05;
         bullet_timefac_add = 0.8;
 		
 		if champ = 1 {
 			bullet_type = obj_No_Jelly_Ball_Bullet;
+			bullet_sprite = spr_Lob_Shot;
 			bullet_image_speed = 0.5;
 			bullet_lifespan = 80;
 			bullet_timefac_min = 1;
@@ -216,8 +185,13 @@ if bossActiveAttackDelay[1] <= 0 and bossPatternCooldown <= 0 and bossPatternCou
         
         scr_Soul_Shoot_Vomit();
 		
+		if champ = 1 {
+			bullet_type = obj_Lob_Bullet;
+			bullet_sprite = spr_Pink_Bubble_Bullet;
+		}
+		
 		bullet_count = 18;
-		bullet_spread = 210 / bullet_count;
+		bullet_spread = 240 / bullet_count;
 		bullet_lifespan = 300;
 		bullet_speed = bossbulletspeed;
 		
@@ -257,7 +231,7 @@ if bossActiveAttackDelay[1] <= 0 and bossPatternCooldown <= 0 and bossPatternCou
     }
 
     if bossActiveAttack[1] = 2 {
-        scr_Boss_Dash_Movement(30,25);
+        scr_Boss_Dash_Movement(60,25);
 		
 		speed = bossDashSpeed;
         direction = bossDashDirection;
@@ -272,12 +246,12 @@ if bossActiveAttackDelay[1] <= 0 and bossPatternCooldown <= 0 and bossPatternCou
     }
     if bossActiveAttack[1] = 3 {
 		
-		scr_Boss_Dash_Movement(30,25);
+		scr_Boss_Dash_Movement(60,25);
 		
 		speed = bossDashSpeed;
         direction = bossDashDirection;
 		
-		if frac(bossPatternCount / 30) = 0 {
+		if frac(bossPatternCount / 40) = 0 {
 			scr_Boss_Stretch("Vertical", 0.3);
 			//bullet_type = obj_Spin_Quick_Phase_Bullet;
 			bullet_type = obj_Spin_Phase_Bullet;
@@ -286,8 +260,9 @@ if bossActiveAttackDelay[1] <= 0 and bossPatternCooldown <= 0 and bossPatternCou
 			if champ = 8 {
 				bullet_count += 4;	
 			}
+			bullet_speed = bossbulletspeed * 0.85;
 			bullet_crowd_direction = 180 * round(bossPatternCount / 30);
-			bullet_crowd_speed = bossbulletspeed;
+			bullet_crowd_speed = bossbulletspeed * 0.85;
 	        bullet_spread = 360 / bullet_count;
 	        scr_Just_Shoot();
 		}
@@ -313,8 +288,8 @@ if bossActiveAttackDelay[1] <= 0 and bossPatternCooldown <= 0 and bossPatternCou
 		speed = bossDashSpeed;
         direction = bossDashDirection;
 		
-		if frac(bossPatternCount / 5) = 0 {
-			if bossPatternCount mod 15 = 0 {
+		if frac(bossPatternCount / 6) = 0 {
+			if bossPatternCount mod 18 = 0 {
 				scr_Boss_Stretch("Vertical", 0.1);
 			}
 			
@@ -324,6 +299,13 @@ if bossActiveAttackDelay[1] <= 0 and bossPatternCooldown <= 0 and bossPatternCou
 	        bullet_speed = bossbulletspeed * 1.8;
 	        bossPatternDirection -= 8;
 	        scr_Just_Shoot();
+			
+			/*bullet_count = 1;
+			bullet_direction = random(360);
+			bullet_speed = bossbulletspeed * 1.9;
+			
+			scr_Just_Shoot(); */
+			
 	        if champ = 8 {
 	            bullet_direction = random(360);
 	            bullet_sprite = spr_Ache_Bullet;

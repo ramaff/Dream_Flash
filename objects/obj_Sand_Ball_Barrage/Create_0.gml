@@ -6,4 +6,4 @@ y += 25 + random(90);
 alarm[1] = 60 + irandom(30);
 alarm[2] = 60;
 
-arraydir = random(360);
+arraydir = scr_Soul_Point() - 180 + random(360)

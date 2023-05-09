@@ -2,21 +2,45 @@
 // You can write your code in this editor
 #macro view view_camera[0]
 
-if instance_exists(Floor_Layout_Control) {
+var tote_bosses = instance_number(obj_Main_Boss_Parent)
+var potency = min(2, tote_bosses)
+var fac = (1 / tote_bosses) * potency
+
+if instance_exists(Floor_Layout_Control) and global.layerdeep < 1 {
 	var rsize = Floor_Layout_Control.Flash[global.currentroom, 3];
 	var ideal_zoom = sqrt(1024 / rsize);
-	if ideal_zoom < 0.875 {
-		ideal_zoom = 0.875;	
+	if ideal_zoom < 0.8 {
+		ideal_zoom = 0.8;
 	}
-	if global.layerdeep >= 1 {
-		ideal_zoom = 0.875;	
+	
+	if global.cameramode = "Boss" {
+		var extra_zoom = 0
+		with (obj_Main_Boss_Parent) {
+			var dist = point_distance(x,y, obj_Soul_Parent.x, obj_Soul_Parent.y);
+			//dist += point_distance(x,y, room_width / 2, room_height / 2)
+			
+			if dist > 500 {
+				extra_zoom = max(extra_zoom, (dist - 500) / 2)
+			}
+			
+		}
+		ideal_zoom = sqrt(1024 / (rsize + extra_zoom))
 	}
-	view_zoom = lerp(ideal_zoom, view_zoom, 0.0001)
+	
+	//if global.layerdeep >= 1 {
+	//	ideal_zoom = 0.875;	
+	//}
+	//Print_DF("--------\nideal_zoom: " + string(ideal_zoom))
+	//Print_DF("view_zoom: " + string(view_zoom))
+	view_zoom = lerp(view_zoom, ideal_zoom, 0.0375)
+	
+	view_zoom = clamp(view_zoom, 0.5, 2);
+	view_width_zoom = ideal_width / view_zoom;
+	view_height_zoom = ideal_height / view_zoom;
+} else {
+	view_width_zoom = ideal_width / 0.875;
+	view_height_zoom = ideal_height / 0.875;
 }
-
-view_zoom = clamp(view_zoom, 0.5, 2);
-view_width_zoom = ideal_width / view_zoom;
-view_height_zoom = ideal_height / view_zoom;
  
 camera_set_view_size(view, view_width_zoom, view_height_zoom);
 
@@ -42,14 +66,33 @@ if instance_exists(obj_Soul_Parent) {
 	}
 	*/
 	
-	var xAv = mean(obj_Soul_Parent.x * 4,room_width / 2,mouse_x) / 2;
-	var yAv = mean(obj_Soul_Parent.y * 4,room_height / 2,mouse_y) / 2;
+	if global.cameramode = "Soul" {
+		var xAv = mean(obj_Soul_Parent.x * 4,room_width / 2,mouse_x) / 2;
+		var yAv = mean(obj_Soul_Parent.y * 4,room_height / 2,mouse_y) / 2;
 	
-	if instance_exists(obj_Wall_Of_Thoughts) {
-		if obj_Wall_Of_Thoughts.state = states.normal || obj_Wall_Of_Thoughts.state = states.jumping {
-			var xAv = mean(obj_Soul_Parent.x * 3,obj_Wall_Of_Thoughts.x * 2,mouse_x) / 2;
-			var yAv = mean(obj_Soul_Parent.y * 3,obj_Wall_Of_Thoughts.y * 2,mouse_y) / 2;
+		if instance_exists(obj_Wall_Of_Thoughts) {
+			if obj_Wall_Of_Thoughts.state = states.normal || obj_Wall_Of_Thoughts.state = states.jumping {
+				var xAv = mean(obj_Soul_Parent.x * 3,obj_Wall_Of_Thoughts.x * 2,mouse_x) / 2;
+				var yAv = mean(obj_Soul_Parent.y * 3,obj_Wall_Of_Thoughts.y * 2,mouse_y) / 2;
+			}
 		}
+	}
+	if global.cameramode = "Boss" {
+		
+		var totalaveragers = 7.5;
+		var xTote = (obj_Soul_Parent.x * 6) + (mouse_x * 1.5);
+		var yTote = (obj_Soul_Parent.y * 6) + (mouse_y * 1.5);
+
+		with (obj_Main_Boss_Parent) {
+			if state = states.normal || state = states.jumping {
+				xTote += x * fac;
+				yTote += y * fac;
+				totalaveragers += fac;
+			}
+		}
+		
+		var xAv = xTote / totalaveragers;
+		var yAv = yTote / totalaveragers;
 	}
 	
 	var camX = clamp((xAv - (view_width_zoom / 2)), 0, room_width - view_width_zoom);
