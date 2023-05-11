@@ -20,7 +20,7 @@ if instance_exists(Floor_Layout_Control) and global.layerdeep < 1 {
 			//dist += point_distance(x,y, room_width / 2, room_height / 2)
 			
 			if dist > 500 {
-				extra_zoom = max(extra_zoom, (dist - 500) / 2)
+				extra_zoom = max(extra_zoom, (dist - 500))
 			}
 			
 		}
@@ -32,7 +32,7 @@ if instance_exists(Floor_Layout_Control) and global.layerdeep < 1 {
 	//}
 	//Print_DF("--------\nideal_zoom: " + string(ideal_zoom))
 	//Print_DF("view_zoom: " + string(view_zoom))
-	view_zoom = lerp(view_zoom, ideal_zoom, 0.0375)
+	view_zoom = lerp(view_zoom, ideal_zoom, 0.0175)
 	
 	view_zoom = clamp(view_zoom, 0.5, 2);
 	view_width_zoom = ideal_width / view_zoom;

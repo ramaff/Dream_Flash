@@ -87,11 +87,11 @@ if bossActiveAttackDelay[1] <= 0 and bossActiveAttackCooldown[1] <= 0 and bossAc
     }
     if bossActiveAttack[1] = 2  {
 		
-		scr_Boss_Attack_Time_Setup(120, 15, 1, 90, 30);
+		scr_Boss_Attack_Time_Setup(150, 15, 1, 90, 30);
 		
-		var dashSpeed = 7;
+		var dashSpeed = 5.5;
         if champ = 8 {
-            dashSpeed = 7.8;
+            dashSpeed = 6.3;
         }
 		scr_Boss_Dash_Setup(scr_Soul_Point(), 0, dashSpeed * bossmovespeed);
     }
@@ -134,8 +134,8 @@ if bossActiveAttackDelay[1] <= 0 and bossActiveAttackCooldown[1] <= 0 and bossAc
         bossMaxDashSpeed = 7.5 * bossmovespeed;
 		bossDashSpeed = 0; */
 		
-		scr_Boss_Attack_Time_Setup(80, 15, 1, 90, 30, 1);
-		scr_Boss_Dash_Setup(scr_Soul_Point(), 0, 7.6 * bossmovespeed);
+		scr_Boss_Attack_Time_Setup(100, 15, 1, 90, 30, 1);
+		scr_Boss_Dash_Setup(scr_Soul_Point(), 0, 5.5 * bossmovespeed);
     }
 	
 	bossPatternCountMax = bossPatternCount;
@@ -225,7 +225,7 @@ if bossActiveAttackDelay[1] <= 0 and bossPatternCooldown <= 0 and bossPatternCou
 			scr_Boss_Stretch("Horizontal",0.15);
 		}
 		
-        scr_Boss_Dash_Movement(15,12);
+        scr_Boss_Dash_Movement(45,12);
 		
 		speed = bossDashSpeed;
         direction = bossDashDirection;
@@ -291,7 +291,7 @@ if bossActiveAttackDelay[1] <= 0 and bossPatternCooldown <= 0 and bossPatternCou
 			scr_Boss_Stretch("Horizontal",0.03);
 		//}
         
-		scr_Boss_Dash_Movement(15,5);
+		scr_Boss_Dash_Movement(45,5);
 		speed = bossDashSpeed;
         direction = bossDashDirection;
 		

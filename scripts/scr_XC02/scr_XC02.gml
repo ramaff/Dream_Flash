@@ -5,6 +5,6 @@
 
 function scr_XC02(){
 	if global.XC[2] > 0 {
-		scr_Enemy_Bullet_Suck(0.5 + (1 * global.XC[2]));
+		scr_Enemy_Bullet_Suck(0.4 + (0.75 * global.XC[2]));
 	}
 }

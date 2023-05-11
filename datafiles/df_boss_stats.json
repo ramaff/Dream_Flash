@@ -723,7 +723,7 @@
         "Defense_Phase_1": 0,
         "Defense_Phase_2": 0,
         "Boss_Danger": 5,
-        "Bullet_Speed": 3.5,
+        "Bullet_Speed": 2.8,
         "Move_Speed": 1.4,
         "recollectionDescription": "This heart aches in pain and horror. Splits into smaller versions of itself."
     },

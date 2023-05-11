@@ -51,6 +51,19 @@ function scr_Boss_Damage_Calc() {
 
 	scr_Boss_Damage_Display();
 
+	//Adding Poison
+	if shotpoison != 0 {
+	    for(i = 0; i <= 49; i++) {
+	        if other.bosspoison[i] = 0 {
+	            other.bosspoison[i] = shotpoison;
+	            other.bosspoisontime[i] = shotpoisontime;
+	            other.bosspoisonmaxtime[i] = shotpoisontime;
+	            other.bosspoisonticks[i] = shotpoisonticks;
+	            break;
+	        }
+	    }
+	}
+
 	if shotDamage > 0 {
 	    other.bosshealth -= shotDamage
 		
@@ -59,20 +72,6 @@ function scr_Boss_Damage_Calc() {
 		scr_State_Gain(shotDamage);
 	
 		scr_Sound_Effect(sd_Small_Damage_To_Boss);
-    
-    
-	    //Adding Poison
-	    if shotpoison != 0 {
-	        for(i = 0; i <= 49; i++) {
-	            if other.bosspoison[i] = 0 {
-	                other.bosspoison[i] = shotpoison;
-	                other.bosspoisontime[i] = shotpoisontime;
-	                other.bosspoisonmaxtime[i] = shotpoisontime;
-	                other.bosspoisonticks[i] = shotpoisonticks;
-	                break;
-	            }
-	        }
-	    }
     
 	    //Adding Bleed
 	    if shotbleed != 0 {

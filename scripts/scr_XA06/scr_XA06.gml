@@ -4,7 +4,7 @@
 // location: shot creation near the top
 
 function scr_XA06(){
-	if global.XA[6] >= 1 and sWeaponTicker mod 4 = 0 {
+	if global.XA[6] >= 1 and scr_Chance(6) {
 		Shot_Size += 0.1;
 		if Shot_Burst_Stats = false {
 			Shot_Burst_Stats = [{}]

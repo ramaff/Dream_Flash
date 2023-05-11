@@ -55,7 +55,7 @@ function scr_Soul_Teleport() {
 	    x = mouse_x;
 	    y = mouse_y;
 	
-		scr_W02();
+		scr_W02(dir);
 		scr_W03();
 		
 		scr_Spike_Soul_Teleport();

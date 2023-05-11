@@ -8,7 +8,8 @@ function scr_Shot_Burst_Stats(vshotburststats){
 		shotpowermax = shotpower;
 	} */
 	if variable_struct_exists(vshotburststats, "Burst_Power") {
-		shotpower = shotpower * vshotburststats.Burst_Power
+		shotpower = shotpower * vshotburststats.Burst_Power;
+		shotaurapower = shotaurapower * vshotburststats.Burst_Power;
 		//show_debug_message(shotpower)
 		shotpowermax = shotpower;
 	}
