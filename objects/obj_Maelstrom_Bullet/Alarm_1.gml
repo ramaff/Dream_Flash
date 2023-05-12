@@ -13,5 +13,5 @@ dir = bullDir;
             direction = other.direction + other.dir - 7.5 + random(15);
         }
     }
-alarm[1] = 18 + irandom(3);
+alarm[1] = 30 + irandom(6);
 

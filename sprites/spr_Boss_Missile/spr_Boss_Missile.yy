@@ -57,7 +57,7 @@
             {"resourceType":"Keyframe<SpriteFrameKeyframe>","resourceVersion":"1.0","Channels":{"0":{"resourceType":"SpriteFrameKeyframe","resourceVersion":"1.0","Id":{"name":"783c6e61-42bd-47db-9e75-221442b49bf1","path":"sprites/spr_Boss_Missile/spr_Boss_Missile.yy",},},},"Disabled":false,"id":"ec71973b-734e-474f-9de5-2334691cd6ba","IsCreationKey":false,"Key":0.0,"Length":1.0,"Stretch":false,},
           ],},"modifiers":[],"spriteId":null,"trackColour":0,"tracks":[],"traits":0,},
     ],
-    "visibleRange": {"x":0.0,"y":0.0,},
+    "visibleRange": null,
     "volume": 1.0,
     "xorigin": 64,
     "yorigin": 64,

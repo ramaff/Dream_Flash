@@ -12,7 +12,7 @@ repeat(5) {
         image_yscale = bulletsize;
         soulshotblock = 0;
         sprite_index = spr_Glowy_Dark_Green_Shot;
-        bulletspeed = other.bulletspeed * 1.25;
+        bulletspeed = other.bulletspeed * 1;
         bulletpower = other.bulletpowermax * 0.5;
         direction = scr_Soul_Point() + dir;
         speed = bulletspeed;
@@ -30,7 +30,7 @@ repeat(12) {
         image_yscale = bulletsize;
         soulshotblock = 0;
         sprite_index = spr_Glowy_Dark_Green_Shot;
-        bulletspeed = other.bulletspeed * 0.75;
+        bulletspeed = other.bulletspeed * 0.6;
         bulletpower = other.bulletpowermax * 0.5;
         direction =  dir;
         speed = bulletspeed;
