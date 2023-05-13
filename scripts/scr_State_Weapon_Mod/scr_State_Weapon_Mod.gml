@@ -104,7 +104,31 @@ function scr_State_Weapon_Mod(){
 			}
 		
 		}
-		if (obj_Soul_Parent.scurrentstate == "Casting" || (obj_Soul_Parent.stransformedstate == "Casting" and reverie == true)) and other.Shot_Beam = 0 {
+		if scr_State_Active_Check("Casting", reverie) and other.Shot_Beam = 0 {
+			
+			//Shot_Extra_Hits = false
+			shotsize += 0.2;
+			shotsizemax += 0.2;
+			image_xscale = shotsize;
+			image_yscale = shotsize;
+			
+			shot_stats.Shot_Extra_Stats = [other.Shot_Stats];
+			
+			shot_stats.Shot_Extra_Stats[0].Shot_Count = 1;
+			shot_stats.Shot_Extra_Stats[0].Shot_Sprite = string(sprite_get_name(sprite_index));
+			shot_stats.Shot_Extra_Stats[0].Shot_Extra_Hit_Frequency = 15 + (shotlifespan / 10);
+			shot_stats.Shot_Extra_Stats[0].Shot_Power = shotpower * global.soulstateformboost / 2.5;
+			shot_stats.Shot_Extra_Stats[0].Shot_Speed = shotspeed * 1.5;
+			shot_stats.Shot_Extra_Stats[0].Shot_Lifespan = shotlifespan / 2;
+			shot_stats.Shot_Extra_Stats[0].Shot_Pierce = shotpierce;
+			shot_stats.Shot_Extra_Stats[0].Shot_Size = (0.05 + shotsize * 0.5);
+			//shot_stats.Shot_Extra_Stats[0].Shot_Mouse = true;
+			
+			
+			shotextrahitshrink[4] = 0;
+			shotextrahitfade[4] = 0;
+			
+			//Print_DF("init init: " + string(shot_stats.Shot_Extra_Stats))
 		
 			image = 1;
 		
@@ -130,9 +154,9 @@ function scr_State_Weapon_Mod(){
 			image_xscale = shotsize;
 			image_yscale = shotsize;
 			
-			shotduplicatesprite = sprite_index;
+			//shotduplicatesprite = sprite_index;
 			
-			shotextrahits[4] = 1;
+			/*shotextrahits[4] = 1;
 			shotextrahitssprite[4] = shotduplicatesprite;
 			shotextrahitfrequency[4] = 15 + (shotlifespan / 10);
 			shotextrahitpower[4] = shotpower * global.soulstateformboost / 2.5;
@@ -144,6 +168,7 @@ function scr_State_Weapon_Mod(){
 			
 			shotextrahitshrink[4] = 0;
 			shotextrahitfade[4] = 0;
+			*/
 			
 			if other.Weapon_Melee > 0 and obj_Soul_Parent.scurrentstate = "Casting" {
 		

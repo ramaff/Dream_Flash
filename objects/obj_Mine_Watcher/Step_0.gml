@@ -259,7 +259,7 @@ if bossActiveAttackDelay[1] <= 0 {
         bullet_sprite = spr_Maelstrom_Shot;
 		bullet_size = 1.2;
         bullet_speed = bossbulletspeed * (0.8 + random(0.15));
-        bullet_lifespan = 480 + random(240);
+        bullet_lifespan = 360 + random(60);
         scr_Soul_Shoot();
 		bossActiveAttack[1] = -4;
     }

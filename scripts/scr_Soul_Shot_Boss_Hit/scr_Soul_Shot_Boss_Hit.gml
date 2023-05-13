@@ -114,8 +114,8 @@ function scr_Soul_Shot_Boss_Hit() {
 	        if other.pathBoss = 0 {
 	            if shotknockback >= other.bossknockdefense {
 	                other.bossknockbackdirection = direction;
-	                other.bossknockback = (shotknockback - other.bossknockdefense);
-	                other.bossknockbacktime = 3;
+	                other.bossknockback = (shotknockback - other.bossknockdefense) / 2;
+	                other.bossknockbacktime = 5;
 					if other.bossknockback > 200 {
 						other.bossknockback = 200;	
 					}

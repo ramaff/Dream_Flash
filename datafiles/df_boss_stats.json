@@ -919,7 +919,7 @@
         "Defense_Phase_1": 3,
         "Defense_Phase_2": 2,
         "Boss_Danger": 13,
-        "Bullet_Speed": 3.5,
+        "Bullet_Speed": 3,
         "Move_Speed": 2,
         "Champ 1": {
             "Name": "Barrage Behemoth",
@@ -927,7 +927,7 @@
             "Health_Phase_1": 870,
             "Health_Phase_2": 760
         },
-        "Champ 2": { 
+        "Champ 2": {
             "Name":  "Beam Behemoth",
             "Recollection_Sprite": "spr_Beam_Behemoth",
             "Health_Phase_1": 870,
@@ -1130,7 +1130,7 @@
         "Defense_Phase_1": 2,
         "Defense_Phase_2": 1,
         "Boss_Danger": 15,
-        "Bullet_Speed": 3.9,
+        "Bullet_Speed": 3.4,
         "Move_Speed": 3,
         "recollectionDescription": "Evil doer that unleashes pain in a variety of ways."
     },

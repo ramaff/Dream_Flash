@@ -1344,6 +1344,7 @@
     {"id":{"name":"spr_Spawn_Cloud","path":"sprites/spr_Spawn_Cloud/spr_Spawn_Cloud.yy",},},
     {"id":{"name":"spr_Role_Model_Art","path":"sprites/spr_Role_Model_Art/spr_Role_Model_Art.yy",},},
     {"id":{"name":"scr_N02","path":"scripts/scr_N02/scr_N02.yy",},},
+    {"id":{"name":"scr_Explorable_Room","path":"scripts/scr_Explorable_Room/scr_Explorable_Room.yy",},},
     {"id":{"name":"spr_No_Mask_Spirit","path":"sprites/spr_No_Mask_Spirit/spr_No_Mask_Spirit.yy",},},
     {"id":{"name":"spr_High_Bliss_Spirit","path":"sprites/spr_High_Bliss_Spirit/spr_High_Bliss_Spirit.yy",},},
     {"id":{"name":"spr_Jello_Amorphous_Test","path":"sprites/spr_Jello_Amorphous_Test/spr_Jello_Amorphous_Test.yy",},},

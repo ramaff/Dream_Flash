@@ -1212,6 +1212,7 @@
     {"name":"bg_Nightmare_Dungeon_Fallout","order":2,"path":"sprites/bg_Nightmare_Dungeon_Fallout/bg_Nightmare_Dungeon_Fallout.yy",},
     {"name":"spr_Spawn_Cloud","order":2,"path":"sprites/spr_Spawn_Cloud/spr_Spawn_Cloud.yy",},
     {"name":"spr_Role_Model_Art","order":5,"path":"sprites/spr_Role_Model_Art/spr_Role_Model_Art.yy",},
+    {"name":"scr_Explorable_Room","order":27,"path":"scripts/scr_Explorable_Room/scr_Explorable_Room.yy",},
     {"name":"spr_High_Bliss_Spirit","order":1,"path":"sprites/spr_High_Bliss_Spirit/spr_High_Bliss_Spirit.yy",},
     {"name":"spr_Jello_Amorphous_Test","order":16,"path":"sprites/spr_Jello_Amorphous_Test/spr_Jello_Amorphous_Test.yy",},
     {"name":"spr_Hope_Minion","order":5,"path":"sprites/spr_Hope_Minion/spr_Hope_Minion.yy",},
