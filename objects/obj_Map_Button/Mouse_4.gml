@@ -11,7 +11,7 @@ for(i = 0; i <= global.maxRooms; i++) {
 	
 	if ((abs(mapXOffset) = 1 and abs(mapYOffset) = 0) || (abs(mapXOffset) = 0 and abs(mapYOffset) = 1)) {
 		//if room_type = "Normal" || room_type = "Spawn" || room_type = "Emotion Field" {
-			explorable = scr_Explorable_Room(room_type)
+			explorable = explorable || scr_Explorable_Room(room_type)
 		//}
 	}
 }
@@ -31,7 +31,7 @@ for(i = 0; i <= global.maxRooms; i++) {
 		partex += 1;	
 	}
 		
-	if partex = 2 {
+	if partex >= 2 {
 		explorable = 1;
 	}
 }
