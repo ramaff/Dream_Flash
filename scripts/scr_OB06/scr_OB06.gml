@@ -1,8 +1,20 @@
 // Script assets have changed for v2.3.0 see
 // https://help.yoyogames.com/hc/en-us/articles/360005277377 for more information
 function scr_OB06(){
+	
+	var active = false
+	
+	if global.currentweapon = 14 {
+		if sWeaponTicker mod 45 >= 30 {
+			active = true	
+		}
+	} else {
+		if sWeaponTicker mod 3 = 0 {
+			active = true	
+		}
+	}
 
-	if global.OB[6] > 0 and sWeaponTicker mod 3 = 0 {
+	if global.OB[6] > 0 and active = true {
 		if Shot_Air_Burst_Stats = false {
 			//show_debug_message("scr_ob06: " + string(current_weapon_stats))
 			//show_debug_message("scr_ob06 stringify: " + string(json_stringify(current_weapon_stats)))
@@ -13,7 +25,7 @@ function scr_OB06(){
 		Weapon_Split_Visible = 1;
         Weapon_Split_Hit_Again = 1;
 		var burstIndex = array_length(Shot_Air_Burst_Stats) - 1;
-		variable_struct_set(Shot_Air_Burst_Stats[burstIndex], "Burst_Power", 0.85); 
+		variable_struct_set(Shot_Air_Burst_Stats[burstIndex], "Burst_Power", 0.7); 
 		variable_struct_set(Shot_Air_Burst_Stats[burstIndex], "Burst_Size", 0.9); 
 		variable_struct_set(Shot_Air_Burst_Stats[burstIndex], "Air_Burst", true); 
 		variable_struct_set(Shot_Air_Burst_Stats[burstIndex], "Range", 100); 

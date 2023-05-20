@@ -274,7 +274,7 @@ function scr_Shot_Creation() {
 				alarm[3] = 15;
 			
 				//scr_Beam_Create(shxx,shyy);
-				scr_Beam_Create(x,y);
+				scr_Initial_Beam_Shot_Setup(x,y);
 				
 				if other.Shot_Point_Angle {
 					image_angle = direction;

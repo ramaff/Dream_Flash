@@ -91,6 +91,7 @@ function scr_Item_Spawn() {
 	if fieldType = "Strength Field" || fieldType = "Vitality Field" || fieldType = "Dexterity Field" || fieldType = "Essence Field" || fieldType = "Perception Field" || fieldType = "State Field" {
 	    if item[13] != 0 and item[13] != "0" {
 	        with instance_create(1024 + 50,576,obj_Item_Parent) {
+				shop = 0;
 	            itemOrbit = 0;
 	            path_start(Item_Path_Minus,25,path_action_continue,1)
 	            path_position = 0.5;
@@ -120,6 +121,7 @@ function scr_Item_Spawn() {
 		iTier = scr_Check_Special(item[i]);
 	    if item[i] != 0 and item[i] != "0" {
 		    with instance_create(1024 + 50,576,obj_Item_Parent) {
+				shop = 0;
 		        itemOrbit = 1 + floor((i-1) / 4);
 				itemOrbit = 1;
 		        path_start(Item_Path,25,path_action_continue,1)

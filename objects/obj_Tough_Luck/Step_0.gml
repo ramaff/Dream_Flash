@@ -97,9 +97,9 @@ if bossActiveAttackDelay[1] <= 0 and bossActiveAttackCooldown[1] <= 0 and bossAc
     }
 	if bossActiveAttack[1] = 8 {
         bossActiveAttackDelay[1] = 10;
-        bossPatternCount = 5;
-        bossPatternCooldown = 40;
-        bossPatternCooldownMax = 40;
+        bossPatternCount = 7;
+        bossPatternCooldown = 30;
+        bossPatternCooldownMax = 30;
 		
 		bossPatternDirection = 50 + irandom(100);
         bossActiveAttackDuration[1] = 10 + bossPatternCooldownMax * bossPatternCount;
@@ -356,16 +356,16 @@ if bossActiveAttackDelay[1] <= 0 and bossPatternCooldown <= 0 and bossPatternCou
 	if bossActiveAttack[1] = 8 {
 		scr_Boss_Stretch("Horizontal", 0.2);
 		
-		bullet_type = obj_Stationary_Damager;
-		bullet_sprite = spr_Boss_Spike;
+		bullet_type = obj_Boss_Spike;
+		bullet_sprite = spr_Boss_Ground_Spike;
 		bullet_speed = 0;
-		bullet_size = 2;
-		bullet_lifespan = 45;
+		bullet_size = 1;
+		bullet_lifespan = 75;
 		bullet_image_speed = 1;
 		
-		var spikelen = bossPatternDirection + (150 * (bossPatternCountMax - bossPatternCount));
+		var spikelen = bossPatternDirection + (100 * (bossPatternCountMax - bossPatternCount));
 		
-		var scount = 8 + 8 * (bossPatternCountMax - bossPatternCount);
+		var scount = 8 + 6 * (bossPatternCountMax - bossPatternCount);
 		var rdir = random(360 / scount);
 		for(var s = 0; s < scount; s++) {
 		    boss_xoffset = lengthdir_x(spikelen, rdir + s * (360 / scount));

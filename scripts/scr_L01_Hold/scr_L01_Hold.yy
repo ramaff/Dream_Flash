@@ -6,6 +6,6 @@
   "isDnD": false,
   "parent": {
     "name": "L Items",
-    "path": "folders/Scripts/Item Commands/L Items.yy",
+    "path": "folders/Scripts/Item Commands/OB Items/L Items.yy",
   },
 }

@@ -22,6 +22,9 @@ function scr_Extra_Shot_Stats() {
 	shotairburststats = other.Shot_Air_Burst_Stats;
 	shotextrastats = other.Shot_Extra_Stats;
 	
+	//Print_DF("shotextrastats: " + string(shotextrastats))
+	//Print_DF("Shot_Extra_Stats: " + string(other.Shot_Extra_Stats))
+	
 
 	if other.Shot_Sprite = spr_Marble_Shot {
 	    shotframe = 1 + irandom(8);

@@ -1,11 +1,11 @@
 {
   "resourceType": "GMScript",
   "resourceVersion": "1.0",
-  "name": "scr_L04",
+  "name": "scr_Emotion_Field_Spawn_Check",
   "isCompatibility": false,
   "isDnD": false,
   "parent": {
-    "name": "L Items",
-    "path": "folders/Scripts/Item Commands/OB Items/L Items.yy",
+    "name": "Item Pools",
+    "path": "folders/Scripts/Item Pools.yy",
   },
 }

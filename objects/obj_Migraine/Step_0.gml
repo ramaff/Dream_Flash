@@ -8,7 +8,7 @@ if currentphase = 2 and !instance_exists(obj_Migraine_After_Image) {
 	repeat(3) {
 		with instance_create(x,y, obj_Migraine_After_Image) {
 			target = targ;
-			dist = 20;
+			dist = 40;
 			targ = id;
 			image_xscale = other.image_xscale;
 			image_yscale = other.image_yscale;
@@ -100,7 +100,7 @@ if bossActiveAttackDelay[1] <= 0 and bossActiveAttackCooldown[1] <= 0 and bossAc
 	bossPatternCooldownMax = 5;
     
     if bossActiveAttack[1] = 1 {
-        bossPatternCount = 30;
+        bossPatternCount = 31
 		bossActiveAttackDelay[1] = 15;
 		var bossSavedPos = scr_Boss_Teleport_Near_Return();
 		bossSavedX = bossSavedPos[0];
@@ -113,7 +113,7 @@ if bossActiveAttackDelay[1] <= 0 and bossActiveAttackCooldown[1] <= 0 and bossAc
 		bossPatternCooldownMax = 1;
         //bossActiveAttackCooldown[1] -= 30;
 		
-		bossActiveAttackDuration[1] = 30 + bossPatternCooldownMax * bossPatternCount;
+		bossActiveAttackDuration[1] = 44 + bossPatternCooldownMax * bossPatternCount;
     }
     if bossActiveAttack[1] = 2 {
         bossPatternCount = 1;
@@ -149,7 +149,7 @@ if bossActiveAttackDelay[1] <= 0 and bossActiveAttackCooldown[1] <= 0 and bossAc
 		bossPatternCooldownMax = 2;
         //bossActiveAttackCooldown[1] -= 30;
 		
-		bossActiveAttackDuration[1] = 30 + bossPatternCooldownMax * bossPatternCount;
+		bossActiveAttackDuration[1] = 45 + bossPatternCooldownMax * bossPatternCount;
     }
     if bossActiveAttack[1] = 5 {
         bossPatternCount = 3;
@@ -245,24 +245,41 @@ if bossActiveAttackDelay[1] <= 0 and bossPatternCooldown <= 0 and bossPatternCou
 		}
 		bullet_type = obj_Completely_Dormant_Bullet;
 		bullet_sprite = spr_Glowy_Pink_Shot;
-        bullet_count = 1;
+		
+	    bullet_count = 1;
 		
 		bullet_direction = bossPatternDirection + 90 + (180 * (bossPatternCount mod 2));
-        bullet_speed = bossbulletspeed * (1.2 + random(0.25));
+	    bullet_speed = bossbulletspeed * (1.2 + random(0.25));
 		if bossPatternCount mod 4 < 2 {
 			bullet_speed = bossbulletspeed * (2 + random(0.4));
 		}
-		bullet_lifespan = (bossPatternCount * 1)
+		bullet_lifespan = 15 + (bossPatternCount * 1)
 		
 		var fac = (1 / bossPatternCountMax) * (bossPatternCountMax - bossPatternCount) * 1.5;
+			
+		if bossPatternCount < bossPatternCountMax - 1 {
+			boss_xoffset = lengthdir_x(bossSavedDistance * fac, bossPatternDirection);
+			boss_yoffset = lengthdir_y(bossSavedDistance * fac, bossPatternDirection);
 		
-		boss_xoffset = lengthdir_x(bossSavedDistance * fac, bossPatternDirection);
-		boss_yoffset = lengthdir_y(bossSavedDistance * fac, bossPatternDirection);
+			boss_xoffset += lengthdir_x(bullet_speed * 3, bullet_direction);
+			boss_yoffset += lengthdir_y(bullet_speed * 3, bullet_direction);
 		
-		boss_xoffset += lengthdir_x(bullet_speed * 3, bullet_direction);
-		boss_yoffset += lengthdir_y(bullet_speed * 3, bullet_direction);
+		    scr_Offset_Normal_Shoot();
+		} else {
+			bullet_direction = 15 * (bossPatternCount mod 2)
+			bullet_speed -= bossbulletspeed * 0.5 * (bossPatternCount mod 2)
+			repeat(12) {
+				boss_xoffset = lengthdir_x(bossSavedDistance * fac, bossPatternDirection);
+				boss_yoffset = lengthdir_y(bossSavedDistance * fac, bossPatternDirection);
 		
-        scr_Offset_Normal_Shoot();
+				boss_xoffset += lengthdir_x(bullet_speed * 3, bullet_direction);
+				boss_yoffset += lengthdir_y(bullet_speed * 3, bullet_direction);
+		
+			    scr_Offset_Normal_Shoot();	
+				
+				bullet_direction += 30;
+			}
+		}
     }
     if bossActiveAttack[1] = 2 {
 		scr_Boss_Stretch("Vertical",0.4);
@@ -284,7 +301,7 @@ if bossActiveAttackDelay[1] <= 0 and bossPatternCooldown <= 0 and bossPatternCou
 		
 		bullet_type = obj_Speed_UpDown_Bullet;
 		bullet_sprite = spr_Glowy_Purple_Shot;
-        bullet_count = 20;
+        bullet_count = 15;
 		bullet_spread = 360 / bullet_count;
 		bullet_direction = bossPatternDirection;
 		bullet_speed = bossbulletspeed * 1.35;
@@ -302,7 +319,7 @@ if bossActiveAttackDelay[1] <= 0 and bossPatternCooldown <= 0 and bossPatternCou
 			bullet_type = obj_Completely_Dormant_Bullet;
 			bullet_sprite = spr_Glowy_Pink_Shot;
 	        bullet_count = 1;
-			bullet_lifespan = (bossPatternCount * 1);
+			bullet_lifespan = 15 + (bossPatternCount * 1);
 			if bossPatternCount mod 4 < 2 {
 				bullet_speed = bossbulletspeed * (2 + random(0.4));
 			}

@@ -868,7 +868,7 @@
         "Defense_Phase_1": 2,
         "Defense_Phase_2": 2,
         "Boss_Danger": 11,
-        "Bullet_Speed": 3.5,
+        "Bullet_Speed": 2.8,
         "Move_Speed": 2,
         "Champ 1": {
             "Name": "Dream Crawler",
@@ -1117,8 +1117,8 @@
         "Defense_Phase_1": 0,
         "Defense_Phase_2": 0,
         "Boss_Danger": 9,
-        "Bullet_Speed": 3.6,
-        "Move_Speed": 3,
+        "Bullet_Speed": 3.1,
+        "Move_Speed": 2.6,
         "recollectionDescription": "Headache inducing boss. Imagines complex bullet patterns and materializes them instantly."
     },
     

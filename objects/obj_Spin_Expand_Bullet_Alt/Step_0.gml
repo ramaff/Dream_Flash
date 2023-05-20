@@ -9,5 +9,8 @@ bulletOrbit += bulletspeed;
 bulletCenterX = starX
 bulletCenterY = starY
     
-x = lengthdir_x(bulletOrbit, direction) + bulletCenterX;
-y = lengthdir_y(bulletOrbit, direction) + bulletCenterY;
+var tarx = lengthdir_x(bulletOrbit, direction) + bulletCenterX;
+var tary = lengthdir_y(bulletOrbit, direction) + bulletCenterY;
+
+x = lerp(x,tarx,0.05)
+y = lerp(y,tary,0.05)

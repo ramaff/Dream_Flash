@@ -1,6 +1,6 @@
 /// @description Insert description here
 // You can write your code in this editor
-alarm[0] = 45;
+alarm[0] = 33;
 
 if instance_number(obj_Social_Anxiety_Spirit) < 8 {
 	alarm[0] = 1;	
@@ -28,10 +28,15 @@ with instance_create(xx,yy, obj_Social_Anxiety_Spirit) {
 	speed = 1.5 + random(2);
 	alarm[0] = 1200;
 	
-	evil = false
-	if scr_Chance(24 / (1 + global.XB[6])) {
-		evil = true;
+	evil = 0
+	good = 0
+	if scr_Chance(18 / (1 + global.XB[6])) {
+		evil = 1;
 		sprite_index = spr_Paranoia_Crowd_Spirit_Eye;
+		if scr_Chance(4) {
+			good = 1;
+			evil = 0;
+		}
 	}
 	
 	if instance_number(obj_Social_Anxiety_Spirit) < 8 {

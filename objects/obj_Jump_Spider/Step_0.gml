@@ -63,13 +63,16 @@ if bossActiveAttackDelay[1] <= 0 and bossPatternCooldown <= 0 and bossPatternCou
 		if bossPatternCount = 1 {
 			scr_Boss_Stretch("Horizontal", 0.5);
 			
-			bullet_count = 4;
-			bullet_spread = 90;
+			bullet_direction = 90;
+			bullet_count = 2;
+			bullet_spread = 180;
 			bullet_type = obj_Basic_Bullet;
 			bullet_sprite = spr_Glowy_Purple_Shot;
-			bullet_lifespan = 400;
+			bullet_lifespan = 240;
+			
+			boss_yoffset = 50;
 		
-			scr_Soul_Shoot();
+			scr_Just_Shoot();
 		}
 		
 		if bossPatternCount < 1 {

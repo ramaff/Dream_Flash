@@ -33,23 +33,6 @@ yPos = (room_height / 2) - (size / 2);
 spriteSize = size / 1024;
 //if size >= 992 {
 leaveSprite = spr_Adjustable_Leave_Indicator;
-/*} else if size >= 1056 {
-leaveSprite = spr_Leave_Plus_One;
-} else if size >= 1120 {
-leaveSprite = spr_Leave_Plus_Two;
-} else if size >= 1184 {
-leaveSprite = spr_Leave_Plus_Three;
-} else if size >= 1248 {
-leaveSprite = spr_Leave_Plus_Four;
-} else if size >= 1312 {
-leaveSprite = spr_Leave_Plus_Five;
-} else if size >= 1376 {
-leaveSprite = spr_Leave_Plus_Six;
-} else if size >= 1440 {
-leaveSprite = spr_Leave_Plus_Seven;
-} else if size >= 1504 {
-leaveSprite = spr_Leave_Plus_Eight;
-} */
 
 var odep = depth;
 depth = 100;
@@ -64,7 +47,7 @@ if lalp > 1.05 {
 	lalpdir = -0.005;
 }
 
-if global.bosscount <= 0 and (((global.spiritRoom != global.currentroom) and (global.evilSpiritRoom != global.currentroom)) || global.currentroom = 0) and scr_Negative_Room_Check() {
+if scr_Room_Leavable() {
     if roomXUp = 1 {
         draw_sprite_ext(leaveSprite,0,xPos,yPos+2,spriteSize,spriteSize,0+180,c_white,lalp);
     }

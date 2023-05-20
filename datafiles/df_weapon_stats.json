@@ -232,7 +232,9 @@
         "Shot_Trail_Hit_Life": 15,
         "Shot_Trail_Area": 30,
         "Shot_Trail_Color1": [255,0,19],
-        "Shot_Trail_Color2": [255,0,425]
+        "Shot_Trail_Color2": [255,0,425],
+        "Shot_Trail_Hit_Count": 13,
+        "Shot_Trail_Hit_Sprite": "spr_Soul_Bit"
     },
     "12": {
         "Name": "Laser Essence",
@@ -302,7 +304,8 @@
         "Shot_Armour_Pierce": 10,
         "Shot_Pierce": 100,
         "Snake_Credit": 0.5,
-        "Spike_Credit": 0.5
+        "Spike_Credit": 0.5,
+        "Shot_Weapon_Lean": -2
     },
     "15": {
         "Name": "Rainmaker",
@@ -577,7 +580,9 @@
                 "Shot_Sprite": "spr_Flying_Disk_Shot",
                 "Shot_Type": "obj_Lesser_Soul_Shot",
                 "Shot_Extra_Hit_Frequency": 10,
-                "Shot_Power": 3
+                "Shot_Power": 3,
+                "Shot_Lifespan": 1,
+                "Shot_Alpha": 0
             }
         ]
     },
@@ -654,7 +659,9 @@
                 "Shot_Sprite": "spr_Spinning_Top_Shot",
                 "Shot_Type": "obj_Lesser_Soul_Shot",
                 "Shot_Extra_Hit_Frequency": 15,
-                "Shot_Power": 4
+                "Shot_Power": 4,
+                "Shot_Lifespan": 1,
+                "Shot_Alpha": 0
             }
         ],
         "Shot_Friction": 0.1,
@@ -1177,7 +1184,9 @@
                 "Shot_Sprite": "spr_Boss_Muncher_Shot",
                 "Shot_Type": "obj_Lesser_Soul_Shot",
                 "Shot_Extra_Hit_Frequency": 30,
-                "Shot_Power": 6
+                "Shot_Power": 6,
+                "Shot_Lifespan": 1,
+                "Shot_Alpha": 0
             }
         ],
         "Shot_Size": 0.5,
@@ -1266,7 +1275,9 @@
                         "Shot_Sprite": "spr_Soul_Fire",
                         "Shot_Type": "obj_Lesser_Soul_Shot",
                         "Shot_Extra_Hit_Frequency": 15,
-                        "Shot_Power": 1
+                        "Shot_Power": 1,
+                        "Shot_Lifespan": 1,
+                        "Shot_Alpha": 0
                     }
                 ]
             }
@@ -1390,7 +1401,9 @@
                 "Shot_Sprite": "spr_Explosion_Machine_Shot",
                 "Shot_Type": "obj_Lesser_Soul_Shot",
                 "Shot_Extra_Hit_Frequency": 15,
-                "Shot_Power": 6
+                "Shot_Power": 6,
+                "Shot_Lifespan": 1,
+                "Shot_Alpha": 0
             }
         ],
         "Shot_Speed": 5,
@@ -1417,7 +1430,9 @@
                     "Shot_Sprite": "spr_Explosion_Machine_Shot",
                     "Shot_Type": "obj_Lesser_Soul_Shot",
                     "Shot_Extra_Hit_Frequency": 15,
-                    "Shot_Power": 2
+                    "Shot_Power": 2,
+                    "Shot_Lifespan": 1,
+                    "Shot_Alpha": 0
                 }
             ],
             "Shot_Speed": 5,
@@ -1538,12 +1553,24 @@
         "Shot_Power": 27,
         "Shot_Knockback": 10,
         "Shot_Lifespan": 90,
-        "Shot_Burst_Type": 2,
-        "Shot_Burst_Amount": 3,
-        "Shot_Burst_Power": 9,
-        "Shot_Burst_Speed": 10,
-        "Shot_Burst_Lifespan": 90,
-        "Shot_Burst_Pierce": 1,
+        "Shot_Burst_Stats": [
+            {
+                "Shot_Count": 1,
+                "Shot_Sprite": "spr_Frost_Shard_Shot",
+                "Shot_Type": "obj_Lesser_Soul_Shot",
+                "Burst_Power": 0.3,
+                "Shot_Lifespan": 90,
+                "Shot_Speed": 10,
+                "Shot_Point_Angle": 1,
+                "Shot_Power": 3,
+                "Burst_Size": 1,
+                "Shot_Pierce": 1,
+                "Weapon_Split_Hit_Again": 1,
+                "Weapon_Split_Visible": 1,
+                "Spread": 120,
+                "Amount": 3
+            }
+        ],
         "Weapon_Split_Visible": 1,
         "Weapon_Split_Hit_Again": 1,
         "Shot_Freeze_Chance": 0.25,
@@ -1581,7 +1608,8 @@
                 "Shot_Type": "obj_Lesser_Soul_Shot",
                 "Shot_Extra_Hit_Frequency": 10,
                 "Shot_Power": 8,
-                "Shot_Lifespan": 1
+                "Shot_Lifespan": 1,
+                "Shot_Alpha": 0
             }
         ],
         "Shot_Friction": 0.02,
@@ -1821,7 +1849,9 @@
                 "Shot_Sprite": "spr_Maw_Shot",
                 "Shot_Type": "obj_Lesser_Soul_Shot",
                 "Shot_Extra_Hit_Frequency": 15,
-                "Shot_Power": 14
+                "Shot_Power": 14,
+                "Shot_Lifespan": 1,
+                "Shot_Alpha": 0
             }
         ],
         "Shot_Phasing": 1,
@@ -2318,7 +2348,9 @@
                 "Shot_Sprite": "spr_Dream_Cell_Shot",
                 "Shot_Type": "obj_Lesser_Soul_Shot",
                 "Shot_Extra_Hit_Frequency": 15,
-                "Shot_Power": 5
+                "Shot_Power": 5,
+                "Shot_Lifespan": 1,
+                "Shot_Alpha": 0
             }
         ],
         "Weapon_Melee": 1,

@@ -622,7 +622,7 @@ function scr_Boss_Choose(roomNum, exclude, difficultyAdd = 0) {
 	    global.boost = 0;
 	}
 	
-	if bossform > 80 and bossform <= 90 {
+	if bossform > 80 and bossform <= 90.1 {
 		difficulty = 4 * global.currentchapter;
 		if global.currentchapter = 3 {
 			difficulty += 1;	

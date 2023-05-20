@@ -5,7 +5,7 @@ function scr_XB02() {
 	if global.XB[2] > 0 {
 		if scr_Chance(6 / global.XB[2]) {
 			shotbursttype = 4;
-			shotburstpower = shotpower / 2;
+			shotburstpower = shotpower / 2.5;
 			shotburstspeed = shotspeed * 1.5;
 			shotburstamount = 5;
 			shotburstrange = 110;

@@ -40,6 +40,8 @@ if instance_number(obj_Conga_Line) < 2 {
 		
 			ct = id;
 			scr_Boss_Stats_Setup();
+			
+			difficulty = Floor_Layout_Control.Flash[global.currentroom,24];
 		}
 	}
 }

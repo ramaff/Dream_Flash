@@ -122,10 +122,14 @@ if !instance_exists(target) {
 
 if shotairburststats != false {
 	var burstIndex = array_length(shotairburststats) - 1;
-	//show_debug_message(burstIndex)
-	if instance_exists(obj_Boss_Parent) and burstIndex >= 0 {
+	var near_boss = noone;
+	if instance_exists(obj_Boss_Parent) {
+		near_boss = instance_nearest(x,y, obj_Boss_Parent).id
+	}
+	if instance_exists(near_boss) and burstIndex >= 0 and shotairburststats[burstIndex] != false {
 		//show_debug_message(shotairburststats)
-		if distance_to_object(obj_Boss_Parent) <= shotairburststats[burstIndex].Range {
+		//Print_DF(string(object_get_name(near_boss.object_index)))
+		if distance_to_object(near_boss) <= shotairburststats[burstIndex].Range {
 			dir = -shotairburststats[burstIndex].Spread / 2;
 			shotlifespan = shotlifespan * 0.6;
 		    repeat(shotairburststats[burstIndex].Amount) {

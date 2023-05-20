@@ -11,8 +11,10 @@ function scr_OA05_Setup(){
 			var rm = Floor_Layout_Control.Flash[i,0]
 			if rm = "Misc Field" || rm = "Chamber" {
 				global.OA5rooms[i] = [];
-				global.OA5rooms[i][0] = scr_Pick_Pool_Letter()
-				global.OA5rooms[i][1] = scr_Pick_Pool_Letter()
+				var oacount = 1 + global.OA[5];
+				for(var j = 0; j < oacount; j++) {
+					global.OA5rooms[i][j] = scr_Pick_Pool_Letter();
+				}
 				//show_debug_message("global.OA5rooms: " + string(global.OA5rooms[i]))
 			}
 		}

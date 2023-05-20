@@ -67,6 +67,7 @@ if bossActiveAttackDelay[1] <= 0 and bossActiveAttackCooldown[1] <= 0 and bossAc
             bossActiveAttack[1] = choose(4,8,6);
         }
     }
+	
     bossActiveAttackDelay[1] = 20;
     bossActiveAttackCooldown[1] = (90 + random(15));
     bossPatternCooldown = 5;
@@ -152,6 +153,12 @@ if bossActiveAttackDelay[1] <= 0 and bossActiveAttackCooldown[1] <= 0 and bossAc
         bossActiveAttackCooldown[1] += 90;
     }
 	if bossActiveAttack[1] = 9 {
+		bossActiveAttackDelay[1] = 20;
+		bossActiveAttackDuration[1] = 20;
+	    bossActiveAttackCooldown[1] = (90 + random(15));
+	    bossPatternCooldown = 500;
+		bossPatternCooldownMax = 500;
+		bossActiveAttackDelay[1] = 20;
         bossActiveAttackCooldown[1] += 60;
     }
 	
@@ -191,39 +198,6 @@ if bossActiveAttackDelay[1] <= 0 {
         
         bossActiveAttack[1] = -4;
     }  
-	
-	/*
-    if bossActiveAttack[1] = 5 {
-		scr_Boss_Stretch("Horizontal",0.3);
-		
-        bullet_type = obj_Phase_All_Direction_Bullet;
-        bullet_sprite = spr_Thunderbolt_Bullet;
-        bullet_speed = bossbulletspeed * (1);
-        bullet_direction = 45 + (-5 + random(10)) / bossaccuracy;
-        bullet_count = 4;
-        bullet_spread = 90;
-        bullet_lifespan = 30;
-        
-        scr_Offset_Just_Shoot(40);
-        
-        bullet_type = obj_Direction_Bullet;
-        bullet_sprite = spr_Lightning_Bullet;
-		bullet_direction = random(360);
-        bullet_count = 10;
-        bullet_spread = 360 / bullet_count;
-        bullet_lifespan = 300;
-		bullet_speed = bossbulletspeed * 2.55;
-        
-        scr_Just_Shoot();
-		
-		bullet_speed = bossbulletspeed * 1.75;
-		bullet_direction += 180 / bullet_count;
-        
-        scr_Just_Shoot();
-        
-        bossActiveAttack[1] = 0;
-    }     
-	*/
 	
 	
 	///// Triple Vomit Splash Attack
@@ -268,7 +242,7 @@ if bossActiveAttackDelay[1] <= 0 {
 		
 		scr_Soul_Shoot();
         
-        bossActiveAttack[1] = 0;
+        bossActiveAttack[1] = -8;
     }     
 	
 	///// 8 Way Zig Zag Lightning
@@ -284,7 +258,7 @@ if bossActiveAttackDelay[1] <= 0 {
         bullet_speed = bossbulletspeed * (1.55 + random(0.15));
         scr_Just_Shoot();
 		
-		bossActiveAttack[1] = 0;
+		bossActiveAttack[1] = -9;
     }
 }
 

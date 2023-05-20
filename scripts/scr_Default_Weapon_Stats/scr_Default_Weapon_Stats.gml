@@ -75,8 +75,8 @@ function scr_Default_Weapon_Stats() {
 	Shot_Trail_Hit_Count = 8;
 	Shot_Trail_Hit_Speed = 10;
 	Shot_Trail_Hit_Life = 7;
-	Shot_Trail_Hit_Sprite = spr_Big_Essence_Trail_Bit;	
-	Shot_Trail_Hit_Type = obj_Weapon_Trail;
+	Shot_Trail_Hit_Sprite = spr_Soul_Bit;
+	Shot_Trail_Hit_Type = obj_Friction_Part;
 
 	//Shot_Explosion = false;
 	Shot_Explosion_Sprite = spr_Explosion_Part;

@@ -2,7 +2,19 @@
 // https://help.yoyogames.com/hc/en-us/articles/360005277377 for more information
 function scr_OC06(){
 
-	if global.OC[6] > 0 and sWeaponTicker mod 2 = 0 {
+	var active = false
+	
+	if global.currentweapon = 14 {
+		if sWeaponTicker mod 30 >= 15 {
+			active = true	
+		}
+	} else {
+		if sWeaponTicker mod 2 = 0 {
+			active = true	
+		}
+	}
+ 
+	if global.OC[6] > 0 and active = true {
 		if Shot_Air_Burst_Stats = false {
 			Shot_Air_Burst_Stats = [json_parse(json_stringify(current_weapon_stats))]
 		} else {
@@ -11,7 +23,7 @@ function scr_OC06(){
 		Weapon_Split_Visible = 1;
         Weapon_Split_Hit_Again = 1;
 		var burstIndex = array_length(Shot_Air_Burst_Stats) - 1;
-		variable_struct_set(Shot_Air_Burst_Stats[burstIndex], "Burst_Power", 0.9); 
+		variable_struct_set(Shot_Air_Burst_Stats[burstIndex], "Burst_Power", 0.8);
 		variable_struct_set(Shot_Air_Burst_Stats[burstIndex], "Burst_Size", 0.85); 
 		variable_struct_set(Shot_Air_Burst_Stats[burstIndex], "Air_Burst", true); 
 		variable_struct_set(Shot_Air_Burst_Stats[burstIndex], "Range", 130); 

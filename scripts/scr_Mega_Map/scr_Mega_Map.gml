@@ -4,7 +4,7 @@ function scr_Mega_Map() {
 	mapXOrigin = Floor_Layout_Control.Flash[global.currentroom,1];
 	mapYOrigin = Floor_Layout_Control.Flash[global.currentroom,2];
 	
-	show_debug_message(string(object_get_name(object_index)));
+	//Print_DF(string(object_get_name(object_index)), 8);
 
 	//draw_sprite(spr_Mini_Map,0,xOrigin,yOrigin);
 

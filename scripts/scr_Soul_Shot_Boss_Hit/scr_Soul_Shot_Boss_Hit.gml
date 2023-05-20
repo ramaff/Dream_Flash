@@ -49,6 +49,8 @@ function scr_Soul_Shot_Boss_Hit() {
 					}
 				}
 			}
+			
+			//Print_DF("shot power: " + string(shotpower))
 		
 	        scr_Boss_Damage_Calc();
 		
@@ -63,9 +65,10 @@ function scr_Soul_Shot_Boss_Hit() {
 				//scr_Particle_Burst(shottrailhittype, shottrailhitsprite, shottrailcolor1, shottrailcolor2, shottrailhitcount, shottrailhitspeed, 0, 360 / shottrailhitcount, shottrailarea, shotsize, shottrailhitlife, true)
 				//scr_Particle_Burst(shottrailhittype, shottrailhitsprite, shottrailcolor1, shottrailcolor2, shottrailhitcount / 2, shottrailhitspeed * 2, 0, 720 / shottrailhitcount, shottrailarea, shotsize, shottrailhitlife, true)
 				
-				repeat(7) {
+				repeat(shottrailhitcount) {
 					var ddir = direction - 90 + random(180);
-					scr_Particle_Burst(obj_Friction_Part, spr_Soul_Bit, c_white, c_white, 1, 12 + random(8), ddir, 0, 0, shotsize + random(0.2), 15 + random(10))
+					scr_Particle_Burst(shottrailhittype, shottrailhitsprite, shottrailcolor1, shottrailcolor2, 1, 12 + random(8), ddir, 0, 0, shotsize + random(0.2), 15 + random(10))
+					//scr_Particle_Burst(obj_Friction_Part, spr_Soul_Bit, c_white, c_white, 1, 12 + random(8), ddir, 0, 0, shotsize + random(0.2), 15 + random(10))
 				}
 				
 				if shotessencedrain > 0 {

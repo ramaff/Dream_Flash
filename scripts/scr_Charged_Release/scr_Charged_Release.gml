@@ -54,16 +54,20 @@ function scr_Charged_Release() {
 	        if weaponcharge = 312 {
 	            //scr_Adept_Magic_Staff_Use();
 				if Shot_Power > 50 {
-					Shot_Extra_Hits[1] = 1;
-					Shot_Extra_Hits_Sprite[1] = Shot_Duplicate_Sprite;
-					Shot_Extra_Hit_Frequency[1] = 15;
-					Shot_Extra_Hit_Power[1] = Shot_Power / 8;
-					Shot_Extra_Hit_Speed[1] = 0;
-					Shot_Extra_Hit_Lifespan[1] = 75;
-					Shot_Extra_Hit_Homing[1] = 1;
-					Shot_Extra_Hit_Homing_Speed[1] = 10;
-					Shot_Extra_Hit_Pierce[1] = 1;
-					Shot_Extra_Hit_Acceleration[1] = 0.6;
+			        Shot_Stats.Shot_Extra_Stats[0] = {
+			            Shot_Count: 1,
+			            Shot_Extra_Hit_Frequency: 15,
+			            Shot_Sprite: "spr_Adept_Bolt_Shot",
+			            Shot_Power: Shot_Power / 8,
+			            Shot_Speed: 1,
+			            Shot_Acceleration: 0.6,
+			            Shot_Lifespan: 60,
+			            Shot_Homing_Type: 1,
+			            Shot_Homing_Speed: 10,
+			            Shot_Pierce: 1,
+			            Shot_Size: 0.5
+			        }
+			        
 				}
 		
 				Weapon_Split_Visible = 1;

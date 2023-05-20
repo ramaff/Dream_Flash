@@ -3,7 +3,7 @@ with (obj_Main_Boss_Parent) {
 	var dmg = 25;
 	bosshealth -= dmg;
             
-	scr_Damage_Indicator(0, dmg, 2);
+	scr_Damage_Indicator(0, dmg, 3);
 	
 	scr_Default_Attack_Settings();
     bullet_type = obj_Basic_Bullet;

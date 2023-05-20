@@ -7,40 +7,51 @@ function scr_State_Boss_Choose(only_forced_bosses = false) {
 	}
 
 	var bosstype = noone;
-	var cMaxProg = 1.5;
+	var cMaxProg = 2;
+	
+	snakedis = global.snakeprogress;
+	beastdis = global.beastprogress;
+	mechdis = global.mechprogress;
+	scrubdis = global.scrubprogress;
+	spikedis = global.spikeprogress;
+	bleedingdis = global.bleedingprogress;
+	castingdis = global.castingprogress;
+	ascendingdis = global.ascendingprogress;
+	
+	scr_State_Stat_Credits();
 	
 	
-	if global.snakeprogress > cMaxProg {
+	if snakedis >= cMaxProg {
 		bossn = 1;
-		cMaxProg = global.snakeprogress;
+		cMaxProg = snakedis;
 	}
-	if global.beastprogress > cMaxProg {
+	if beastdis >= cMaxProg {
 		bossn = 2;
-		cMaxProg = global.beastprogress;
+		cMaxProg = beastdis;
 	}
-	if global.mechprogress > cMaxProg {
+	if mechdis >= cMaxProg {
 		bossn = 3;
-		cMaxProg = global.mechprogress;
+		cMaxProg = mechdis;
 	}
-	if global.scrubprogress > cMaxProg {
+	if scrubdis >= cMaxProg {
 		bossn = 4;
-		cMaxProg = global.scrubprogress;
+		cMaxProg = scrubdis;
 	}
-	if global.spikeprogress > cMaxProg {
+	if spikedis >= cMaxProg {
 		bossn = 6;
-		cMaxProg = global.spikeprogress;
+		cMaxProg = spikedis;
 	}
-	if global.bleedingprogress > cMaxProg {
+	if bleedingdis >= cMaxProg {
 		bossn = 7;
-		cMaxProg = global.bleedingprogress;
+		cMaxProg = bleedingdis;
 	}
-	if global.castingprogress > cMaxProg {
+	if castingdis >= cMaxProg {
 		bossn = 9;
-		cMaxProg = global.castingprogress;
+		cMaxProg = castingdis;
 	}
-	if global.ascendingprogress > cMaxProg {
+	if ascendingdis >= cMaxProg {
 		bossn = 10;
-		cMaxProg = global.ascendingprogress;
+		cMaxProg = ascendingdis;
 	}
 
 	switch(bossn) {
