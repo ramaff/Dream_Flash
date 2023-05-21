@@ -547,7 +547,7 @@
         "Shot_Friction": 0.4,
         "Shot_Min_Speed": 0,
         "Shot_Bounce": 2,
-        "Shot_Pierce": 1,
+        "Shot_Pierce": 2,
         "Shot_Speed": 18,
         "Shot_Power": 10,
         "Shot_Knockback": 10,
