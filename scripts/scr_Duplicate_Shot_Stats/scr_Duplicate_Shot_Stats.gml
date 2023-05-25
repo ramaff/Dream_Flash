@@ -96,6 +96,8 @@ function scr_Duplicate_Shot_Stats() {
 		shotpower = other.shotpower;
 	}
 	
+	shotbeam = other.shotbeam
+	
 	/*
 	var oshotburststats = other.shotburststats
 	

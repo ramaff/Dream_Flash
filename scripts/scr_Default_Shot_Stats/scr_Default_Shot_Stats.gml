@@ -45,6 +45,8 @@ function scr_Default_Shot_Stats() {
 	shottrailhitlife = 7;
 	shottrailhitsprite = spr_Soul_Bit;
 	
+	shotbeam = 0;
+	
 	shotexplosionsprite = spr_Explosion_Part;
 	shotexplosionpart = spr_Explosion_Part;
 	shotexplosionsmoke = spr_Essence_Trail_Bit;

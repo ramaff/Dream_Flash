@@ -694,8 +694,9 @@ function scr_Hard_Coded_Item_Stats(itemVal, items_to_add = 1, reload = false) {
 	}
 
 	if itemVal = "L03" {
-		//global.L[3]++;
-		global.Weap[global.currentweapon]++;
+		if !reload {
+			global.Weap[global.currentweapon]++;
+		}
 	}
 
 	if itemVal = "L04" {

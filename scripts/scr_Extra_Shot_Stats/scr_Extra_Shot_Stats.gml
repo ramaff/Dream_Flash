@@ -22,6 +22,8 @@ function scr_Extra_Shot_Stats() {
 	shotairburststats = other.Shot_Air_Burst_Stats;
 	shotextrastats = other.Shot_Extra_Stats;
 	
+	shotbeam = other.Shot_Beam;
+	
 	//Print_DF("shotextrastats: " + string(shotextrastats))
 	//Print_DF("Shot_Extra_Stats: " + string(other.Shot_Extra_Stats))
 	

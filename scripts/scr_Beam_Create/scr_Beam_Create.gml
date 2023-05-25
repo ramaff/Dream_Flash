@@ -2,22 +2,7 @@
 // https://help.yoyogames.com/hc/en-us/articles/360005277377 for more information
 function scr_Beam_Create(shxx, shyy, beamseg, beamdir, curvedir, beamstop, beamxx, beamyy, beamtype, beamtotalsegs, beamspriteindex, beamsize, dirChange, homespeed, splitsize){
 		
-	var oldbeamdir = beamdir
-		
-	//dir = beamdir;
-	//image_angle = beamdir;
-	//speed = 0;
-	//shotspeed = 0;	
-	//var beamtype = other.Shot_Beam;
-	//var beamtotalsegs = other.Shot_Beam_Count;
-	//beamtotalsegs = 15;	
-	/*var beamspriteindex = 0;
-	var beamsize = shotsize;
-	var dirChange = 0;
-	var boss_hits = {};
-	var homespeed = shothomingspeed * 3;
-	var hit_again = -1;
-	var splitsize = 128 * shotsize; */
+	var oldbeamdir = beamdir;
 
 	dir = beamdir;
 	image_angle = beamdir;
@@ -74,10 +59,20 @@ function scr_Beam_Create(shxx, shyy, beamseg, beamdir, curvedir, beamstop, beamx
 				beamdir += dirChange
 			} 
 		} 
+		
 			
 		beamxx += lengthdir_x(splitsize, oldbeamdir)
 		beamyy += lengthdir_y(splitsize, oldbeamdir)
+		
+		if shotwander > 0 and beamseg > 8 {
+			scr_Create_Beam_Tip(shxx, shyy, beamxx, beamyy, beamsize, beamdir);
 			
+			beamdir = beamdir + scr_Wave(0, 360, 2, 0);
+			beamseg -= 8;
+			
+			shotwander--;
+		}
+		
 		oldbeamdir = beamdir
 			
 		/////////////////////// Air Burst //////////////////////////////

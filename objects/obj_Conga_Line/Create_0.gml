@@ -17,7 +17,12 @@ followtarget = noone;
 
 conga_type = choose("normal", "dope", "dopey", "angry", "shades");
 
-if instance_number(obj_Conga_Line) < 2 {
+var total_num = 1
+if Floor_Layout_Control.Flash[global.currentroom,23] = 2 {
+	total_num = 2;	
+}
+
+if instance_number(obj_Conga_Line) <= total_num {
 	var ct = id;
 	var opdir = scr_Soul_Point() + 180;
 	

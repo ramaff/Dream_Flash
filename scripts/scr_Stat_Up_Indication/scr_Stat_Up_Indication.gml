@@ -57,9 +57,13 @@ function scr_Stat_Up_Indication(statUp){
 	var dir = 70 + random(40);
 	var xx = lengthdir_x(100 + random(200), dir)
 	
-	with instance_create(obj_Soul_Parent.x + xx, obj_Soul_Parent.y - 40 + random(60), obj_Stat_Up_Indicator) {
-		statUpStr = statUpString;
-		statUpCol = statUpColor;
+	if instance_exists(obj_Soul_Parent) {
+	
+		with instance_create(obj_Soul_Parent.x + xx, obj_Soul_Parent.y - 40 + random(60), obj_Stat_Up_Indicator) {
+			statUpStr = statUpString;
+			statUpCol = statUpColor;
+		}
+		
 	}
 	
 }
