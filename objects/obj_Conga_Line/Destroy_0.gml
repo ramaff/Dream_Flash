@@ -4,7 +4,7 @@
 // Inherit the parent event
 
 var total_num = 1
-if Floor_Layout_Control.Flash[global.currentroom,23] = 2 {
+if boost = 2 {
 	total_num = 2;	
 }
 

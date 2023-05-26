@@ -18,7 +18,7 @@ followtarget = noone;
 conga_type = choose("normal", "dope", "dopey", "angry", "shades");
 
 var total_num = 1
-if Floor_Layout_Control.Flash[global.currentroom,23] = 2 {
+if boost = 2 {
 	total_num = 2;	
 }
 
@@ -46,6 +46,8 @@ if instance_number(obj_Conga_Line) <= total_num {
 			ct = id;
 			scr_Boss_Stats_Setup();
 			
+			champ = other.champ;
+			boost = other.boost;
 			difficulty = Floor_Layout_Control.Flash[global.currentroom,24];
 		}
 	}

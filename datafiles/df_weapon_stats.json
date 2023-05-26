@@ -174,6 +174,22 @@
         "Shot_Lifespan": 60,
         "Weapon_Split_Visible": true,
         "Shot_Size": 0.4,
+        "Shot_Burst_Stats": [
+            {
+                "Shot_Count": 1,
+                "Shot_Sprite": "spr_Lesser_Essence_Shot",
+                "Shot_Type": "obj_Lesser_Soul_Shot",
+                "Burst_Power": 0.5,
+                "Shot_Lifespan": 60,
+                "Burst_Size": 0.8,
+                "Shot_Size": 0.3,
+                "Shot_Pierce": 1,
+                "Weapon_Split_Visible": 1,
+                "Weapon_Split_Hit_Again": 1,
+                "Spread": 90,
+                "Amount": 4
+            }
+        ],
         "Shot_Burst_Type": 1,
         "Shot_Burst_Amount": 4,
         "Shot_Burst_Power": 5,
