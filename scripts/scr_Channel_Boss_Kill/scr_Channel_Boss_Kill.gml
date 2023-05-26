@@ -39,8 +39,8 @@ function scr_Channel_Boss_Kill(type = "None"){
 			}
 		} else {
 			global.soulstate += 4;
-			scr_Stat_Up_Indication("STE")
-			scr_Stat_Up_Indication("STE")
+			scr_Stat_Up_Indication(6)
+			scr_Stat_Up_Indication(6)
 		}
 	}
 	

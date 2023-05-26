@@ -242,6 +242,7 @@ if currentphase = finalphase and split = 0 {
         boost = other.boost;
         global.bosscount += 1;
 		scr_Boss_Stats_Setup();
+		difficulty = Floor_Layout_Control.Flash[global.currentroom,24] / 2;
     }
 	with instance_create(x,y, obj_Relentless_Wisper) {
 		difficulty = other.difficulty / 2;
@@ -249,6 +250,8 @@ if currentphase = finalphase and split = 0 {
         boost = other.boost;
         global.bosscount += 1;
 		scr_Boss_Stats_Setup();
+		
+		difficulty = Floor_Layout_Control.Flash[global.currentroom,24] / 2;
     }
 	difficulty = 0;
 	instance_destroy();
