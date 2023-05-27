@@ -1,7 +1,7 @@
 // Script assets have changed for v2.3.0 see
 // https://help.yoyogames.com/hc/en-us/articles/360005277377 for more information
 function scr_State_Power_Up(){
-	if global.soultransformedstate != "Base" and obj_Soul_Parent.scurrentstate = "Base" and global.soultransformedstate != "None" and (obj_Soul_Parent.sstatecharge = obj_Soul_Parent.smaxstate) {
+	if global.soultransformedstate != "Base" and obj_Soul_Parent.scurrentstate = "Base" and global.soultransformedstate != "None" and (obj_Soul_Parent.sstatecharge >= obj_Soul_Parent.smaxstate) {
 		var drainfac = (1 + global.soulstatedrainslow);
 		var duration = 45; // I have no clue what the unit here is
 		

@@ -14,6 +14,7 @@ function scr_State_Weapon_Mod(){
 		
 			shotduplicatesprite = sprite_index;
 		
+			/*
 			shotextrahits[3] = 1;
 			shotextrahitssprite[3] = shotduplicatesprite;
 			shotextrahitfrequency[3] = 7;
@@ -23,12 +24,41 @@ function scr_State_Weapon_Mod(){
 			shotextrahitpierce[3] = 2;
 			shotextrahitsize[3] = shotsize * 1;
 			shotextrahitfade[3] = 1;
-		
-			shotpierce += 1;
+			*/
+			//shotpierce += 1;
 		
 			image = 1;
-		
-			shotspeed = shotspeed * 2;
+			
+			dir = 0;
+			var followtar = id
+			var count = 2 * global.soulstateformboost;
+			var remainder = frac(count);
+			if remainder > 0 {
+				if scr_Chance(1 / remainder) {
+					count = ceil(count)	
+				} else {
+					count = floor(count)	
+				}
+			}
+			
+			shotburstpower = shotpower
+			
+			repeat(count) {
+				with instance_create(x,y, object_index) {
+					scr_Duplicate_Shot_Stats();
+				
+					followtarget = followtar;
+					followtar = id;	
+					
+					shotsnakemove = 1;
+					
+					scr_Shot_Power_Set(0.15)
+					scr_Shot_Size_Set(0.7)
+					
+				}
+			}
+			
+			shotspeed = shotspeed * 1.75;
 			speed = shotspeed;
 		}
 		if (obj_Soul_Parent.scurrentstate == "Beast" || (obj_Soul_Parent.stransformedstate == "Beast" and reverie == true)) {

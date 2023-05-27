@@ -354,6 +354,18 @@ if shotsnakemove > 0 {
 	direction = round(direction / 90) * 90;
 }
 
+if instance_exists(followtarget) {
+	var setdist = shotspeed * 5;
+	var dis = point_distance(x, y, followtarget.x, followtarget.y)
+	var follow_dir = point_direction(x, y, followtarget.x, followtarget.y)
+	if dis > setdist {
+		speed = min(dis - setdist, shotspeed * 2);
+		direction = follow_dir;
+		//x = lerp(x, followtarget.x, 0.05);
+		//y = lerp(y, followtarget.y, 0.05);
+	} 
+} 
+
 if shotangularvelocity != 0 {
 	direction += shotangularvelocity;
 }
