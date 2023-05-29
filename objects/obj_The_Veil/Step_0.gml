@@ -32,6 +32,7 @@ if currentphase = 1 {
         bossID = other.bossID;
 		startX = other.startX;
 		startY = other.startY;
+		difficulty = Floor_Layout_Control.Flash[global.currentroom,24];
         //currentphase = other.currentphase;
     }
 	with (obj_Veil_Mask) {

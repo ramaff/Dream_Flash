@@ -263,7 +263,7 @@ if bossActiveAttack[1] != 5 {
 
 #region ///Sprites
 
-scr_Boss_Size_Lerp_DirAlt(0.15);
+scr_Boss_Size_Lerp_Dir(0.15, true);
 
 /*
 if bossActiveAttack[1] = 3 {

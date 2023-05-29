@@ -70,7 +70,7 @@ if bossActiveAttackDelay[1] <= 0 and bossActiveAttackCooldown[1] <= 0 and bossAc
         bossPatternCooldownMax = 4;
         bossPatternDirection = random(360);
         bossActiveAttackDuration[1] = 30 + bossPatternCooldownMax * bossPatternCount;
-        bossActiveAttackCooldown[1] = 90 + random(30);
+        bossActiveAttackCooldown[1] = 120 + random(30);
     }
     if bossActiveAttack[1] = 2 {
         bossActiveAttackDelay[1] = 15;
@@ -79,21 +79,21 @@ if bossActiveAttackDelay[1] <= 0 and bossActiveAttackCooldown[1] <= 0 and bossAc
         bossPatternCooldownMax = 3;
         bossPatternDirection = random(360);
         bossActiveAttackDuration[1] = 30 + bossPatternCooldownMax * bossPatternCount;
-        bossActiveAttackCooldown[1] = 90 + random(30);
+        bossActiveAttackCooldown[1] = 120 + random(30);
     }
     if bossActiveAttack[1] = 3 {
         bossActiveAttackDelay[1] = 15;
         bossActiveAttackDuration[1] = 30;
-        bossActiveAttackCooldown[1] = 60 + random(30);
+        bossActiveAttackCooldown[1] = 120 + random(30);
     }
     if bossActiveAttack[1] = 4 {
         bossActiveAttackDelay[1] = 15;
-        bossPatternCount = 9;
-        bossPatternCooldown = 10;
-        bossPatternCooldownMax = 10;
+        bossPatternCount = 6;
+        bossPatternCooldown = 45;
+        bossPatternCooldownMax = 45;
         bossPatternDirection = 90;
         bossActiveAttackDuration[1] = 30 + bossPatternCooldownMax * bossPatternCount;
-        bossActiveAttackCooldown[1] = 180 + random(30);
+        bossActiveAttackCooldown[1] = 240 + random(30);
     }
     if bossActiveAttack[1] = 5 {
         bossActiveAttackDelay[1] = 15;
@@ -112,7 +112,7 @@ if bossActiveAttackDelay[1] <= 0 and bossActiveAttackCooldown[1] <= 0 and bossAc
     if bossActiveAttack[1] = 7 {
         bossActiveAttackDelay[1] = 15;
         bossActiveAttackDuration[1] = 30;
-        bossActiveAttackCooldown[1] = 90 + random(60);
+        bossActiveAttackCooldown[1] = 180 + random(60);
     }
     bossPatternCountMax = bossPatternCount;
 }
@@ -143,14 +143,14 @@ if bossActiveAttackDelay[1] <= 0 {
         bullet_type = obj_Speed_UpDown_Bullet;
         bullet_size = 1;
         bullet_sprite = spr_Heart_Sword_Energy;
-        bullet_speed = bossbulletspeed * 3.5;
-        scr_Just_Shoot();
-		
-		bullet_speed = bossbulletspeed * 2.75;
-		bullet_direction += bullet_spread / 2;
+        bullet_speed = bossbulletspeed * 2.6;
         scr_Just_Shoot();
 		
 		bullet_speed = bossbulletspeed * 2;
+		bullet_direction += bullet_spread / 2;
+        scr_Just_Shoot();
+		
+		bullet_speed = bossbulletspeed * 1.4;
 		bullet_direction -= bullet_spread / 2;
         scr_Just_Shoot();
 		
@@ -187,14 +187,14 @@ if bossActiveAttackDelay[1] <= 0 {
         bullet_sprite = spr_Glowy_Enemy_Shot;
         bullet_lifespan = 600;
         
-        bullet_speed = bossbulletspeed * 2.5;
+        bullet_speed = bossbulletspeed * 2;
         scr_Just_Shoot();
         angAdd = 0;
         
         repeat(6) {
             angAdd += 3;
             bullet_direction += (40/6);
-            bullet_speed = bossbulletspeed * (2.5 - (sqrt(angAdd) / 3));
+            bullet_speed = bossbulletspeed * (2 - (sqrt(angAdd) / 3));
             scr_Just_Shoot();
         }
         
@@ -204,7 +204,7 @@ if bossActiveAttackDelay[1] <= 0 {
         repeat(6) {
             angAdd += 3;
             bullet_direction -= (40/6);
-            bullet_speed = bossbulletspeed * (2.5 - (sqrt(angAdd) / 3));
+            bullet_speed = bossbulletspeed * (2 - (sqrt(angAdd) / 3));
             scr_Just_Shoot();
         }
     

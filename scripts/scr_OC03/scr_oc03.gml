@@ -1,6 +1,11 @@
 // Script assets have changed for v2.3.0 see
 // https://help.yoyogames.com/hc/en-us/articles/360005277377 for more information
-function scr_OC03(){
+
+// Location: before shot_creation
+
+// hardcoded stat adjustment in charged use/hold, and in obj_Charge_Indicator
+
+function scr_OC03(cWP = global.currentweapon){
 	if cWP = 13 || cWP = 16 || cWP = 403 || cWP = 211 || cWP = 14 {
 		exit;	
 	}
@@ -20,7 +25,7 @@ function scr_OC03(){
 					Shot_Repetition_Direction[bi] = point_direction(x,y,mouse_x,mouse_y);
 				}
 				//Shot_Repetition_Max[bi] = 7;
-				Shot_Barrage_Speed[bi] = 7;
+				Shot_Barrage_Speed[bi] = (7 + (weaponDelay / 3)) / 2;
 				alarm[11] = (Shot_Barrage_Speed[bi]);
 
 				if global.D[10] > 0 {

@@ -36,7 +36,7 @@ function scr_State_Memory() {
 	    recollectionSprite = spr_Spike_State_Reco;
 		recollectionSize = 0.5;
 		recollectionExtraStats = "+Sharper Shots +5 Way Shots";
-		recollectionDescription = "State Stats: Essence x Perception\nUnload a storm of spikes onto your enemies. Spiked shots have extra pierce, and extra damage. Occasionally unload a 5 way burst for field-wide punishment.";
+		recollectionDescription = "State Stats: Essence x Dexterity\nUnload a storm of spikes onto your enemies. Spiked shots have extra pierce, and extra damage. Occasionally unload a 5 way burst for field-wide punishment.";
 	}
 	
 	if itemVal = "State 07" and global.recollectionState[7] >= 1 {
@@ -53,6 +53,14 @@ function scr_State_Memory() {
 		recollectionSize = 0.5;
 		recollectionExtraStats = "+Orbital Shots +Shooting Shots";
 		recollectionDescription = "State Stats: Vitality x Perception\nCreate orbitals that shoot additional shots at enemies. You can also unload these orbitals onto your enemies for extra damage.";
+	}
+	
+	if itemVal = "State 10" and global.recollectionState[10] >= 1 {
+	    recollectionString = "Ascending Soul State";
+	    recollectionSprite = spr_Ascending_Soul_Reco;
+		recollectionSize = 0.5;
+		recollectionExtraStats = "+Charged Shots +Electric Shots";
+		recollectionDescription = "State Stats: Essence x Perception\nCharges up super powered shots directly from the core of its imagination. These shots come packed with static electricity that damages all surrounding foes.";
 	}
 
 

@@ -11,4 +11,5 @@ function scr_Boss_Minion_Stat_Setup(){
 	bossmovespeed = 0.2;
 	bossattackspeed = 1;
 	bossaccuracy = 1;
+	facing_direction = 1;
 }

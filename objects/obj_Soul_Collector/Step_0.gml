@@ -337,6 +337,7 @@ if currentphase = 1 {
         //coreNum = other.coreCount;
         bossID = other.bossID;
         //currentphase = other.currentphase;
+		difficulty = Floor_Layout_Control.Flash[global.currentroom,24];
     }
     instance_destroy();
 }

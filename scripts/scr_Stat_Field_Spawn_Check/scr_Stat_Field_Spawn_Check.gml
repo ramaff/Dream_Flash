@@ -14,6 +14,16 @@ function scr_Stat_Field_Spawn_Check() {
 	}
         
 	itemNumChoice = 2 + floor((global.soulhope + random(100 + global.soulhope * 3)) / 100);
+	
+	var fr = frac(global.extraitems);
+	itemNumChoice += global.extraitems - fr;
+			
+	if fr > 0 {
+		if scr_Chance(1 / fr) {
+			itemNumChoice += 1;
+		}
+	}
+	
 	itemNumPick = 1;
 	var class = Floor_Layout_Control.Flash[global.currentroom,0];
 	for(j = 1; j <= itemNumChoice; j++) {
@@ -32,9 +42,10 @@ function scr_Stat_Field_Spawn_Check() {
 	}
             
 	if global.OA[5] > 0 and array_length(global.OA5rooms[global.currentroom]) = 0 {
-		scr_OA05_Current_Room_Add()
-		scr_OA05()
-		exit;
+		if scr_OA05_Current_Room_Add() {
+			scr_OA05()
+			exit;
+		}
 	} else if global.OA[5] > 0 and array_length(global.OA5rooms[global.currentroom]) > 0 {
 		//scr_OA05();
 		exit;	

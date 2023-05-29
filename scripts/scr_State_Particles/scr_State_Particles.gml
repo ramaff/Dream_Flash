@@ -37,7 +37,7 @@ function scr_State_Particles(){
 		}
 		
 		if scurrentstate = "Ascending" {
-			parts = spr_Casting_Part;	
+			parts = spr_Ascending_Part;	
 			partrad = 112;
 		}
 		

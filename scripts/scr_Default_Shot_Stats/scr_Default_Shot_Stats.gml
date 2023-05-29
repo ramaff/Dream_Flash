@@ -32,7 +32,7 @@ function scr_Default_Shot_Stats() {
 
 	shottrail = 0;
 	shottrailtype = obj_Weapon_Trail;
-	shottrailhittype = obj_Weapon_Trail;
+	shottrailhittype = obj_Friction_Part;
 	shottrailsprite = spr_Essence_Trail_Bit;
 	shottrailcolor1 = c_white;
 	shottrailcolor2 = c_white;
@@ -43,7 +43,9 @@ function scr_Default_Shot_Stats() {
 	shottrailhitcount = 7;
 	shottrailhitspeed = 10;
 	shottrailhitlife = 7;
-	shottrailhitsprite = spr_Big_Essence_Trail_Bit;
+	shottrailhitsprite = spr_Soul_Bit;
+	
+	shotbeam = 0;
 	
 	shotexplosionsprite = spr_Explosion_Part;
 	shotexplosionpart = spr_Explosion_Part;
@@ -144,7 +146,7 @@ function scr_Default_Shot_Stats() {
 	shotchainspeed = 0;
 	shothomingtype = 0;
 	shothomingrange = 0;
-	shothomingspeed = 5;
+	shothomingspeed = 0;
 	shotcontinue = 0;
 	shothealing = 0;
 

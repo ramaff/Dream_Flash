@@ -69,7 +69,7 @@ if bossActiveAttackDelay[1] <= 0 and bossActiveAttackCooldown[1] <= 0 and bossAc
         bossActiveAttackDuration[1] = 15;
     }
     if bossActiveAttack[1] = 3 {
-        scr_Boss_Teleport_From_Boss(250);
+        scr_Boss_Teleport_From_Boss(300);
         bossActiveAttackCooldown[1] = (15 + random(5));
         bossActiveAttackDuration[1] = 15;
     }
@@ -99,7 +99,7 @@ if bossActiveAttackDelay[1] <= 0 {
     
     if bossActiveAttack[1] = 2 {
         bullet_count = 1 + irandom(1);
-        bullet_spread = 10 + irandom(20);
+        bullet_spread = 20
         bullet_speed = bossbulletspeed * (1.5 + random(0.4));
         scr_Soul_Shoot();
         bossActiveAttack[1] = 0;

@@ -33,7 +33,7 @@ var bloom_darken	= 1 - 0.1;
 var bloom_saturation = 0.8 * 2;
 */
 
-var blur_steps		= round(0.4 * 15) + 1;
+var blur_steps		= round(0.35 * 15) + 1;
 var sigma			= max(0.3, 0.0001);
 var bloom_threshold = 0.25;
 var bloom_range		= 0.15;
@@ -44,16 +44,19 @@ var bloom_saturation = 1 * 2;
 if global.gameBloomShader = 1 {
 	
 	draw_surface_stretched(application_surface, 0, 0, gui_w, gui_h);
+	
 	shader_set(shader_blur);
 	shader_set_uniform_f(u_blur_steps,		blur_steps);
-		shader_set_uniform_f(u_sigma,			sigma);
-		shader_set_uniform_f(u_blur_vector,		1, 0);
-		shader_set_uniform_f(u_texel_size,		texel_w, texel_h);
+	shader_set_uniform_f(u_sigma,			sigma);
+	shader_set_uniform_f(u_blur_vector,		1, 0);
+	shader_set_uniform_f(u_texel_size,		texel_w, texel_h);
 		
-	draw_set_alpha(0.5);
-	draw_surface(application_surface, 0, 0);
+	draw_set_alpha(0.4);
+	gpu_set_tex_filter(true);
+	draw_surface_stretched(application_surface, 0, 0, gui_w, gui_h);
 	shader_set_uniform_f(u_blur_vector,		0, 1);
-	draw_surface(application_surface, 0, 0);
+	draw_surface_stretched(application_surface, 0, 0, gui_w, gui_h);
+	gpu_set_tex_filter(false);
 	
 	draw_set_alpha(1);
 	shader_reset();

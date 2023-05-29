@@ -2,7 +2,7 @@
 // You can write your code in this editor
 
 with(other) {
-	var ddir = random(360);
+	/*var ddir = random(360);
 	var sspd = 9 + random(4);
 	var ssize = 0.4 + random(0.2);
 	var llife = 10 + irandom(2);
@@ -24,19 +24,21 @@ with(other) {
 			depth = other.depth + 2;
 		}
 		ddir += 45;
-	}
+	} */
+	scr_Soul_Shot_Rebound_Parts();
 	var poww = other.shotshieldpower;
 	if bulletpower <= poww {
 		var xxx = x;
 		var yyy = y;
-		var shpower = other.shotpower
+		//var shpower = other.shotpower
 		with (obj_Soul_Parent) {
 			scr_Bleeding_Shot(xxx,yyy,shpower);
 		}
-		instance_destroy();	
+		//instance_destroy();	
 	} else {
-		bulletpower -= poww;
-		bulletsize = (bulletpower / bulletpowermax);
+		//bulletpower -= poww;
+		//bulletsize = (bulletpower / bulletpowermax);
 	}
+	scr_Bullet_Dampen(poww)
 	//instance_destroy();
 }

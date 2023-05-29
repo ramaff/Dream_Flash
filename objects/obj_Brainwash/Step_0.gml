@@ -327,7 +327,7 @@ if bossActiveAttackDuration[1] <= 0 {
 
 #region /// Boss Sprite Code
 
-scr_Boss_Size_Lerp_DirAlt(0.15);
+scr_Boss_Size_Lerp_Dir(0.15, true);
 
 //if champ = 0 {
 if bossActiveAttack[1] = 1 || bossActiveAttack[1] = 4 {

@@ -156,9 +156,11 @@ function scr_Load_Run() {
 		global.beastprogress = ini_read_real("Run","beastprogress",0);
 		global.mechprogress = ini_read_real("Run","mechprogress",0);
 		global.scrubprogress = ini_read_real("Run","scrubprogress",0);
+		global.dragonprogress = ini_read_real("Run","dragonprogress",0);
 		global.spikeprogress = ini_read_real("Run","spikeprogress",0);
 		global.bleedingprogress = ini_read_real("Run","bleedingprogress",0);
 		global.castingprogress = ini_read_real("Run","castingprogress",0);
+		global.ascendingprogress = ini_read_real("Run","ascendingprogress",0);
 	
 		global.soulhealth = Soul_Hearts_Control.heart[global.totalhearts - 1,3];
 		global.soulhealthmax = Soul_Hearts_Control.heart[global.totalhearts - 1,4];

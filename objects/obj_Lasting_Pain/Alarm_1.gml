@@ -11,8 +11,8 @@ scr_Disk_Effect(20, 0.9, color2);
 
 with (obj_Boss_Parent) {
 	if point_distance(x,y,other.x,other.y) < 150 {
-		bosshealth -= other.damage * 5;
-		scr_Damage_Indicator(0, other.damage * 5, 1);
+		bosshealth -= other.damage * 6;
+		scr_Damage_Indicator(0, other.damage * 6, 1);
 	}
 }
 with (obj_Soul_Parent) {

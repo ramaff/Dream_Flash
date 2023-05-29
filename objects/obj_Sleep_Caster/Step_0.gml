@@ -43,7 +43,7 @@ if bossActiveAttackDelay[1] <= 0 and bossActiveAttackCooldown[1] <= 0 and bossAc
 		bossActiveAttack[1] = choose(1,2,2,3); 
     }
 	
-	bossActiveAttack[1] = 1;
+	//bossActiveAttack[1] = 1;
 	
 	
     bossActiveAttackDelay[1] = 15;

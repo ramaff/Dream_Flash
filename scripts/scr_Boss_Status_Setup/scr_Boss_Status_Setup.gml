@@ -8,6 +8,7 @@ function scr_Boss_Status_Setup(version=1) {
 	bossNum = 0;
 
 	pathBoss = 0;
+	facing_direction = 1;
 
 	if version = 1 {
 		scr_Boss_Dash_Setup();

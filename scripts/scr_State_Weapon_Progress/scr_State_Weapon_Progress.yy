@@ -5,7 +5,7 @@
   "isCompatibility": false,
   "isDnD": false,
   "parent": {
-    "name": "Item Commands",
-    "path": "folders/Scripts/Item Commands.yy",
+    "name": "State Commands",
+    "path": "folders/Scripts/State Commands.yy",
   },
 }

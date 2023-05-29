@@ -36,8 +36,7 @@ global.parFieldSpawn = 10;
 global.desFieldSpawn = 10;
 
 global.totalFieldSpawn = 0;
-
-global.emoteFieldSpawn = 3;
+global.emoteFieldSpawn = 1;
 
 global.NewArt = 1;
 

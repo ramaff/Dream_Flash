@@ -27,6 +27,10 @@ if instance_exists(obj_Soul_Parent) {
 		if variable_struct_exists(current_stats, "Charge_Time") {
 			cMax = current_stats.Charge_Time * cNum;
 		}
+		
+		if global.OC[3] > 0 {
+			cMax = cMax * 2.5;
+		}
 	}
 
 	var cpercent = 100 * (obj_Soul_Parent.Charge_Time / cMax);

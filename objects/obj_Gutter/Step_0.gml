@@ -427,7 +427,7 @@ if bossActiveAttackDuration[1] <= 0 {
 
 #region /// Boss Sprite Code
 
-scr_Boss_Size_Lerp_DirAlt(0.15);
+scr_Boss_Size_Lerp_Dir(0.15, true);
 
 if bossActiveAttack[1] = 1 || bossActiveAttack[1] = -1 /* and (bossActiveAttackDelay[1] > 0)*/ {
 	sprite_index = spr_Gutsy_Attack;

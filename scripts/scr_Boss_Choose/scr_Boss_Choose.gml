@@ -1,6 +1,15 @@
 function scr_Boss_Choose(roomNum, exclude, difficultyAdd = 0) {
 	var simRoom = (roomNum + difficultyAdd)
-	roomDifficulty = 1.5 + (4 * (global.currentchapter - 1)) + ((3.5 * simRoom) / 10) + (global.souldespair / 8);
+	
+	var stage_base_diff = 1.5 + (4 * (global.currentchapter - 1))
+	if global.currentchapter = 3 {
+		stage_base_diff += 0.75;
+	}
+	if global.currentchapter >= 4 {
+		stage_base_diff += 2;
+	}
+	
+	roomDifficulty = stage_base_diff + ((3.5 * simRoom) / 10) + (global.souldespair / 8);
 
 	roomDifficulty += global.bossdifficultyadd;
 	
@@ -9,15 +18,16 @@ function scr_Boss_Choose(roomNum, exclude, difficultyAdd = 0) {
 	}
 	if global.currentchapter = 3 {
 		roomDifficulty += ((1 * simRoom) / 10);
-		roomDifficulty += 0.75;
 	}
 	if global.currentchapter >= 4 {
 		roomDifficulty += ((1.5 * simRoom) / 10);
-		roomDifficulty += 2;
 	}
 
 	if roomDifficulty > 30 {
 	    roomDifficulty = 30;
+	}
+	if roomDifficulty < stage_base_diff {
+		roomDifficulty = stage_base_diff;	
 	}
 
 	/*
@@ -60,41 +70,41 @@ function scr_Boss_Choose(roomNum, exclude, difficultyAdd = 0) {
 	    if exclude = 1 {
 	        bossform = choose(1,3,5,9,12,14,16,18,19,20,24,25,37,42,43,44,98);
 	    }
-		sboss = scr_Chance(17/0.5);
+		sboss = scr_Chance(34);
 		if sboss = true {
-			bossform = choose(81,82,83,84,86,87,89, 90);
+			bossform = choose(81,82,83,84,86,87,89,90);
 		}
 	}
 	if global.currentchapter = 2 {
-	    bossform = choose(2,3,6,10,14,17,20,23,26,27,32,34,35,36,38,44,45,48,50,64);
+	    bossform = choose(2,3,6,10,14,17,20,23,26,27,32,34,35,36,38,45,48,50,64);
 		
 		if bossform = 50 and scr_Chance(2) {
-			bossform = choose(2,3,6,10,14,17,20,23,26,27,32,34,35,36,38,44,45,48,64);
+			bossform = choose(2,3,6,10,14,17,20,23,26,27,32,34,35,36,38,45,48,64);
 		}
 		
 		sboss = scr_Chance(18);
 		if sboss = true {
-			bossform = choose(81,82,83,84,86,87,89, 90);
+			bossform = choose(81,82,83,84,86,87,89,90);
 		}
 	}
 	if global.currentchapter = 3 {
-	    bossform = choose(2,4,7,11,15,21,22,26,28,29,30,31,33,39,41,45,50,56,65);
+	    bossform = choose(2,4,7,11,15,22,26,28,29,30,31,33,39,41,45,50,56,65);
 		
 		if bossform = 50 and scr_Chance(2) {
-			bossform = choose(2,4,7,11,15,21,22,26,28,29,30,31,33,39,41,45,56,65);
+			bossform = choose(2,4,7,11,15,22,26,28,29,30,31,33,39,41,45,56,65);
 		}
 		
-		sboss = scr_Chance(17);
+		sboss = scr_Chance(15);
 		if sboss = true {
-			bossform = choose(81,82,83,84,86,87,89, 90);
+			bossform = choose(81,82,83,84,86,87,89,90);
 		}
 	}
 	if global.currentchapter >= 4 {
 	    bossform = choose(8,21,29,30,40,46,47,49);
 		
-		sboss = scr_Chance(6);
+		sboss = scr_Chance(5);
 		if sboss = true {
-			bossform = choose(81,82,83,84,86,87,89, 90);
+			bossform = choose(81,82,83,84,86,87,89,90);
 		}
 	}
 	
@@ -338,7 +348,7 @@ function scr_Boss_Choose(roomNum, exclude, difficultyAdd = 0) {
 	if bossform = 21.1 // Blind Hunger 
 	{
 	    bosstype = obj_Blind_Hunger;
-	    difficulty = 12;
+	    difficulty = 14;
 	    global.champ = choose(0,1,8);
 		//global.champ = 8;
 	}
@@ -612,7 +622,7 @@ function scr_Boss_Choose(roomNum, exclude, difficultyAdd = 0) {
 	    global.boost = 0;
 	}
 	
-	if bossform > 80 and bossform <= 90 {
+	if bossform > 80 and bossform <= 90.1 {
 		difficulty = 4 * global.currentchapter;
 		if global.currentchapter = 3 {
 			difficulty += 1;	
@@ -761,6 +771,7 @@ function scr_Boss_Choose(roomNum, exclude, difficultyAdd = 0) {
 	//show_debug_message("roomDifficulty: " + string(roomDifficulty))
 	//show_debug_message("boss: " + string(bossform) + ", champ: " + string(global.champ) + ", boost" + string(global.boost))
 
+	var min_diff = (global.currentchapter * global.currentchapter) / 2
 	if repeatBoss = 1 {
 		return scr_Boss_Choose(roomNum, exclude);	
 	} else {
@@ -768,9 +779,10 @@ function scr_Boss_Choose(roomNum, exclude, difficultyAdd = 0) {
 		    return bosstype;
 		}
 		else {
-			if difficultyAdd > 0 {
-				difficultyAdd--;	
-			}
+			//if difficultyAdd > 0 {
+				//difficultyAdd--;	
+			//}
+			difficultyAdd -= 0.25;
 		    return scr_Boss_Choose(roomNum, exclude, difficultyAdd);
 		}
 	}

@@ -15,6 +15,8 @@ function scr_Soul_Utility_Setup() {
 	soulCurrentDirection = 0;
 	
 	soulmovetimer = 0;
+	
+	Charge_Hold = 0;
 
 	sNoHitTime = 0;
 	sWeaponOvertime = 0;
@@ -79,6 +81,7 @@ function scr_Soul_Utility_Setup() {
 	
 	for(bi = 0; bi < 10; bi++) {
 		Shot_Repetition[bi] = 0;
+		Shot_Repetition_Stats[bi] = false;
 		Shot_Repetition_Type[bi] = "Default";
 		Shot_Repetition_Max[bi] = 0;
 		Shot_Barrage_Speed[bi] = 0;

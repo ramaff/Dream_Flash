@@ -4,6 +4,8 @@ function scr_Baseball_Shot(xxx,yyy, pow) {
 		
 	Shot_XX = xxx - x;
 	Shot_YY = yyy - y;
+	//shot_dir = point_direction(x, y, xxx, yyy)
+	//shot_dir = shot_dir + (angle_difference(shot_dir, point_direction(xxx,yyy, mouse_x, mouse_y)) / 2)
 		
 	current_weapon_stats = {
 		Shot_Spread: 0,
@@ -17,7 +19,7 @@ function scr_Baseball_Shot(xxx,yyy, pow) {
 		Shot_Forward: 0,
 		//Shot_Form_Show: 0,
 		Shot_Speed: (8 + other.speed) * (pow / 100),
-		Shot_Power: (5 + other.bulletpower / 4) * (pow / 100),
+		Shot_Power: (5 + other.bulletpower / 3) * (pow / 100),
 		Shot_Knockback: 10,
 		Shot_Lifespan: 30,
 		Shot_Trail: 1,

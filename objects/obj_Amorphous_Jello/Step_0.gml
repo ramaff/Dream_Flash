@@ -256,7 +256,7 @@ if activeAttackDelay <= 0 and patternCooldown <= 0 and patternCount > 0 {
 			bullet_bounce_speed = 4;
 			
 			if champ = 0 || champ = 8 {
-				champ = 8 {
+				if champ = 8 {
 					bullet_type = obj_Tar_Jelly_Bullet_Straight
 					bullet_sprite = spr_Tar_Lob_Shot;	
 				}
@@ -321,7 +321,7 @@ if activeAttackDuration <= 0 {
 /// Boss Sprite Code
 
 // Go back to normal default size
-scr_Boss_Size_Lerp_DirAlt(0.15);
+scr_Boss_Size_Lerp_Dir(0.15, false);
 
 // Handles boss attack sprite animation
 if activeAttack = 1 {

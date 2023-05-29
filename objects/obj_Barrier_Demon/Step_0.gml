@@ -61,6 +61,9 @@ if bossActiveAttackDelay[1] <= 0 and bossActiveAttackCooldown[1] <= 0 and bossAc
 			bossActiveAttack[1] = choose(10);
 		}	
 	}
+	
+	//bossActiveAttack[1] = 1;
+	
 	if bossActiveAttack[1] = 1 {
         bossActiveAttackDelay[1] = 15;
         bossActiveAttackDuration[1] = 390;
@@ -70,7 +73,7 @@ if bossActiveAttackDelay[1] <= 0 and bossActiveAttackCooldown[1] <= 0 and bossAc
         bossActiveAttackCooldown[1] = 60 + random(30);
     }
     if bossActiveAttack[1] = 2 {
-        bossActiveAttackCooldown[1] = (60 + random(30));
+        bossActiveAttackCooldown[1] = (180 + random(30));
         bossPatternCount = 8;
         bossPatternCooldown = 30;
         bossPatternCooldownMax = bossPatternCooldown;
@@ -79,7 +82,7 @@ if bossActiveAttackDelay[1] <= 0 and bossActiveAttackCooldown[1] <= 0 and bossAc
         bossActiveAttackDuration[1] = 15 + bossPatternCooldown * bossPatternCount;
     }
     if bossActiveAttack[1] = 3 {
-        bossActiveAttackCooldown[1] = (60 + random(30));
+        bossActiveAttackCooldown[1] = (90 + random(30));
         bossPatternCount = 4;
         bossPatternCooldown = 75;
         bossPatternCooldownMax = bossPatternCooldown;
@@ -91,7 +94,7 @@ if bossActiveAttackDelay[1] <= 0 and bossActiveAttackCooldown[1] <= 0 and bossAc
         bossActiveAttackCooldown[1] = (30 + random(15));
 		bossPatternAttackCount = 30 + irandom(2);
         bossPatternCount = 25;
-        bossPatternCooldown = 20;
+        bossPatternCooldown = 25;
         bossPatternCooldownMax = bossPatternCooldown;
         bulletdirection = random(360);
 		bossPatternGap = 10 + irandom(bossPatternAttackCount - 28);
@@ -100,7 +103,7 @@ if bossActiveAttackDelay[1] <= 0 and bossActiveAttackCooldown[1] <= 0 and bossAc
         bossActiveAttackDuration[1] = 15 + bossPatternCooldown * bossPatternCount;
     }
 	if bossActiveAttack[1] = 5 {
-        bossActiveAttackCooldown[1] = (60 + random(30));
+        bossActiveAttackCooldown[1] = (120 + random(30));
         bossPatternCount = 4;
         bossPatternCooldown = 60;
         bossPatternCooldownMax = bossPatternCooldown;
@@ -110,7 +113,7 @@ if bossActiveAttackDelay[1] <= 0 and bossActiveAttackCooldown[1] <= 0 and bossAc
     }
     if bossActiveAttack[1] = 6 {
         
-        bossActiveAttackCooldown[1] = (60 + random(30));
+        bossActiveAttackCooldown[1] = (120 + random(30));
         bossPatternCount = 4;
         bossPatternCooldown = 75;
         bossPatternCooldownMax = bossPatternCooldown;
@@ -119,9 +122,9 @@ if bossActiveAttackDelay[1] <= 0 and bossActiveAttackCooldown[1] <= 0 and bossAc
         bossActiveAttackDuration[1] = 15 + bossPatternCooldown * bossPatternCount;
     }
 	if bossActiveAttack[1] = 7 {
-        bossActiveAttackCooldown[1] = (30 + random(15));
+        bossActiveAttackCooldown[1] = (60 + random(15));
 		bossPatternCount = 30;
-        bossPatternCooldown = 20;
+        bossPatternCooldown = 30;
         bossPatternCooldownMax = bossPatternCooldown;
         bulletdirection = scr_Soul_Point() - 45 + random(90) - 180;
 		
@@ -129,7 +132,7 @@ if bossActiveAttackDelay[1] <= 0 and bossActiveAttackCooldown[1] <= 0 and bossAc
         bossActiveAttackDuration[1] = 15 + bossPatternCooldown * bossPatternCount;
     }
 	if bossActiveAttack[1] = 8 {
-        bossActiveAttackCooldown[1] = (60 + random(30));
+        bossActiveAttackCooldown[1] = (120 + random(30));
         bossPatternCount = 8;
         bossPatternCooldown = 30;
         bossPatternCooldownMax = bossPatternCooldown;
@@ -138,7 +141,7 @@ if bossActiveAttackDelay[1] <= 0 and bossActiveAttackCooldown[1] <= 0 and bossAc
         bossActiveAttackDuration[1] = 15 + bossPatternCooldown * bossPatternCount;
     }
     if bossActiveAttack[1] = 9 {
-        bossActiveAttackCooldown[1] = (60 + random(30));
+        bossActiveAttackCooldown[1] = (120 + random(30));
         bossPatternCount = 4;
         bossPatternCooldown = 75;
         bossPatternCooldownMax = bossPatternCooldown;
@@ -147,10 +150,10 @@ if bossActiveAttackDelay[1] <= 0 and bossActiveAttackCooldown[1] <= 0 and bossAc
         bossActiveAttackDuration[1] = 15 + bossPatternCooldown * bossPatternCount;
     }
 	if bossActiveAttack[1] = 10 {
-        bossActiveAttackCooldown[1] = (30 + random(15));
+        bossActiveAttackCooldown[1] = (60 + random(15));
 		bossPatternAttackCount = 7 + irandom(1);
         bossPatternCount = 10;
-        bossPatternCooldown = 75;
+        bossPatternCooldown = 90;
         bossPatternCooldownMax = bossPatternCooldown;
         bulletdirection = random(360);
 		bossPatternGap = 10 + irandom(bossPatternAttackCount - 28);
@@ -193,7 +196,7 @@ if bossActiveAttackDelay[1] <= 0 {
 		}
 		bullet_speed = bossbulletspeed * 0.9;
 		soul_shot_block = 1;
-		bullet_power = bosspower * 3;
+		bullet_power = bosspower * 8;
 		if champ = 8 {
 			bullet_type = obj_Super_Barrier_Bullet;
 			bullet_sprite = spr_Big_Super_Shield_Ball;
@@ -243,7 +246,7 @@ if bossActiveAttackDelay[1] <= 0 and bossPatternCooldown <= 0 and bossPatternCou
         bossPatternDirection += 18;
     }
     if bossActiveAttack[1] = 3 {
-        var bsp = 2.4 + random(0.15);
+        var bsp = 2.7 + random(0.15);
 		bullet_count = 4;
 		bullet_spread = 90;
 		bullet_direction = random(90);
@@ -299,7 +302,7 @@ if bossActiveAttackDelay[1] <= 0 and bossPatternCooldown <= 0 and bossPatternCou
 		bullet_size = 1.1;
         bullet_count = bossPatternAttackCount;
         bullet_spread = 0.1;
-        bullet_speed = bossbulletspeed * (2.5);
+        bullet_speed = bossbulletspeed * (2);
         bullet_lifespan = 300;
 		bullet_direction = 270 + ((-0.5 + random(1)) / other.bossaccuracy);
 		
@@ -358,7 +361,7 @@ if bossActiveAttackDelay[1] <= 0 and bossPatternCooldown <= 0 and bossPatternCou
         bullet_sprite = spr_Glowy_Blue_Shot;
 		bullet_type = obj_Split_Bullet;
     
-        bullet_speed = bossbulletspeed * (1.85 + random(0.05));
+        bullet_speed = bossbulletspeed * (0.75 + random(0.05) + (0.05 * (bossPatternCountMax - bossPatternCount)));
         bullet_direction = bossPatternDirection;
         bullet_count = 20;
         bullet_spread = 320 / bullet_count;
@@ -449,14 +452,14 @@ if bossActiveAttackDelay[1] <= 0 and bossPatternCooldown <= 0 and bossPatternCou
 	
 	if bossActiveAttack[1] = 10 {
 		
-		bossPatternAttackCount = 8 + irandom(1);
+		bossPatternAttackCount = 7 + irandom(1);
 		
 		bullet_type = obj_Array_Sum_Bullet;
 		bullet_sprite = spr_Glowy_Enemy_Shot;
 		bullet_size = 1.1;
         bullet_count = bossPatternAttackCount;
         bullet_spread = 0;
-        bullet_speed = bossbulletspeed * (2.75);
+        bullet_speed = bossbulletspeed * (2.15);
         bullet_lifespan = 360;
 		bullet_direction = 270 + ((-0.1 + random(0.2)) / other.bossaccuracy);
 		

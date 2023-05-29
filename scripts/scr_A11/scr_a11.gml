@@ -23,7 +23,10 @@ function scr_A11() {
 		
 		with(obj_Bullet_Parent) {
 		    if distance_to_object(other) <= dist {
-		        bulletspeed = bulletspeed / 3;
+				
+				scr_Bullet_Dampen(dam)
+				
+		        /*bulletspeed = bulletspeed / 3;
 		        speed = speed / 3;
 				
 				bulletpower -= dam
@@ -36,7 +39,7 @@ function scr_A11() {
 				}
 				if bulletpower < 1 {
 					instance_destroy();	
-				}
+				} */
 		    }
 		}
 		

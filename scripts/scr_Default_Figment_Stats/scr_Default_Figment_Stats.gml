@@ -4,6 +4,8 @@ function scr_Default_Figment_Stats() {
 
 	gembeam_hit_id = noone;
 	global.gembeam_hits = {}
+	
+	scurrentstate = "None"
 
 	scr_Soul_Particles();
 
@@ -27,6 +29,8 @@ function scr_Default_Figment_Stats() {
 	gemDrawBeam = 0;
 	gemBeamStandaloneHeat = 0;
 	gemDrawStandaloneBeam = 0;
+	
+	Charge_Hold = 0;
 
 
 	sBeamNum = 0;

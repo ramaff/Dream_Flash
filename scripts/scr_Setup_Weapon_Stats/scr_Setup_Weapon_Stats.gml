@@ -532,6 +532,15 @@ function scr_Setup_Weapon_Stats(){
 	if variable_struct_exists(current_weapon_stats, "Shot_Direction") {
 		Shot_Direction = current_weapon_stats.Shot_Direction
 	}
+	if variable_struct_exists(current_weapon_stats, "Shot_XX") {
+		Shot_XX = current_weapon_stats.Shot_XX
+	}
+	if variable_struct_exists(current_weapon_stats, "Shot_YY") {
+		Shot_YY = current_weapon_stats.Shot_YY
+	}
+	if variable_struct_exists(current_weapon_stats, "Shot_Alpha") {
+		Shot_Alpha = current_weapon_stats.Shot_Alpha
+	}
 		
 	var i = 0;
 	if variable_struct_exists(current_weapon_stats, "Shot_Extra_Hits") {

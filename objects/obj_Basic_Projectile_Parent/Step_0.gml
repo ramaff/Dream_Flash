@@ -122,14 +122,18 @@ if !instance_exists(target) {
 
 if shotairburststats != false {
 	var burstIndex = array_length(shotairburststats) - 1;
-	//show_debug_message(burstIndex)
-	if instance_exists(obj_Boss_Parent) and burstIndex >= 0 {
+	var near_boss = noone;
+	if instance_exists(obj_Boss_Parent) {
+		near_boss = instance_nearest(x,y, obj_Boss_Parent).id
+	}
+	if instance_exists(near_boss) and burstIndex >= 0 and shotairburststats[burstIndex] != false {
 		//show_debug_message(shotairburststats)
-		if distance_to_object(obj_Boss_Parent) <= shotairburststats[burstIndex].Range {
+		//Print_DF(string(object_get_name(near_boss.object_index)))
+		if distance_to_object(near_boss) <= shotairburststats[burstIndex].Range {
 			dir = -shotairburststats[burstIndex].Spread / 2;
 			shotlifespan = shotlifespan * 0.6;
 		    repeat(shotairburststats[burstIndex].Amount) {
-		        with instance_create(x,y,obj_Lesser_Soul_Shot) {
+		        with instance_create(x,y,object_index) {
 					//shotlifespan = other.shotlifespan / 2;
 		            scr_Duplicate_Shot_Stats();
 						
@@ -349,6 +353,18 @@ if shotsnakemove = 2 {
 if shotsnakemove > 0 {
 	direction = round(direction / 90) * 90;
 }
+
+if instance_exists(followtarget) {
+	var setdist = shotspeed * 5;
+	var dis = point_distance(x, y, followtarget.x, followtarget.y)
+	var follow_dir = point_direction(x, y, followtarget.x, followtarget.y)
+	if dis > setdist {
+		speed = min(dis - setdist, shotspeed * 2);
+		direction = follow_dir;
+		//x = lerp(x, followtarget.x, 0.05);
+		//y = lerp(y, followtarget.y, 0.05);
+	} 
+} 
 
 if shotangularvelocity != 0 {
 	direction += shotangularvelocity;

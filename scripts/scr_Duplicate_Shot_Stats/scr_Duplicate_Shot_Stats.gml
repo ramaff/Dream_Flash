@@ -96,6 +96,8 @@ function scr_Duplicate_Shot_Stats() {
 		shotpower = other.shotpower;
 	}
 	
+	shotbeam = other.shotbeam
+	
 	/*
 	var oshotburststats = other.shotburststats
 	
@@ -251,7 +253,7 @@ function scr_Duplicate_Shot_Stats() {
 	shotshieldtype = other.shotshieldtype;
 	shotshieldpower = 0;
 	shotreboundtype = other.shotreboundtype;
-	shotreboundpower = 0;
+	shotreboundpower = other.shotreboundpower;
 	shotweaken = other.shotweaken;
 	shotweakentime = other.shotweakentime;
 	shotpoison = other.shotpoison;

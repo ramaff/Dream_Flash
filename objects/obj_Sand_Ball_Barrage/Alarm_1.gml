@@ -1,5 +1,6 @@
 alarm[1] = 90 + irandom(45);
 
+/*
 var dir = scr_Soul_Point();
 dir += -5 + random(10);
 var spd = bulletspeed * (0.8 + random(0.1));

@@ -4,7 +4,7 @@ if instance_exists(target) {
 	var dis = point_distance(x, y, target.x, target.y)
 	if dis > dist {
 		direction = point_direction(x, y, target.x, target.y);
-		speed = (dis - dist) / 10;
+		speed = (dis - dist) / 30;
 	} else {
 		speed = lerp(speed, 0, 0.3);
 	}

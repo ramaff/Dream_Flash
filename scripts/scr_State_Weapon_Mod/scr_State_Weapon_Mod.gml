@@ -14,6 +14,7 @@ function scr_State_Weapon_Mod(){
 		
 			shotduplicatesprite = sprite_index;
 		
+			/*
 			shotextrahits[3] = 1;
 			shotextrahitssprite[3] = shotduplicatesprite;
 			shotextrahitfrequency[3] = 7;
@@ -23,12 +24,41 @@ function scr_State_Weapon_Mod(){
 			shotextrahitpierce[3] = 2;
 			shotextrahitsize[3] = shotsize * 1;
 			shotextrahitfade[3] = 1;
-		
-			shotpierce += 1;
+			*/
+			//shotpierce += 1;
 		
 			image = 1;
-		
-			shotspeed = shotspeed * 2;
+			
+			dir = 0;
+			var followtar = id
+			var count = 2 * global.soulstateformboost;
+			var remainder = frac(count);
+			if remainder > 0 {
+				if scr_Chance(1 / remainder) {
+					count = ceil(count)	
+				} else {
+					count = floor(count)	
+				}
+			}
+			
+			shotburstpower = shotpower
+			
+			repeat(count) {
+				with instance_create(x,y, object_index) {
+					scr_Duplicate_Shot_Stats();
+				
+					followtarget = followtar;
+					followtar = id;	
+					
+					shotsnakemove = 1;
+					
+					scr_Shot_Power_Set(0.15)
+					scr_Shot_Size_Set(0.7)
+					
+				}
+			}
+			
+			shotspeed = shotspeed * 1.75;
 			speed = shotspeed;
 		}
 		if (obj_Soul_Parent.scurrentstate == "Beast" || (obj_Soul_Parent.stransformedstate == "Beast" and reverie == true)) {
@@ -104,7 +134,31 @@ function scr_State_Weapon_Mod(){
 			}
 		
 		}
-		if (obj_Soul_Parent.scurrentstate == "Casting" || (obj_Soul_Parent.stransformedstate == "Casting" and reverie == true)) and other.Shot_Beam = 0 {
+		if scr_State_Active_Check("Casting", reverie) and other.Shot_Beam = 0 {
+			
+			//Shot_Extra_Hits = false
+			shotsize += 0.2;
+			shotsizemax += 0.2;
+			image_xscale = shotsize;
+			image_yscale = shotsize;
+			
+			shot_stats.Shot_Extra_Stats = [other.Shot_Stats];
+			
+			shot_stats.Shot_Extra_Stats[0].Shot_Count = 1;
+			shot_stats.Shot_Extra_Stats[0].Shot_Sprite = string(sprite_get_name(sprite_index));
+			shot_stats.Shot_Extra_Stats[0].Shot_Extra_Hit_Frequency = 15 + (shotlifespan / 10);
+			shot_stats.Shot_Extra_Stats[0].Shot_Power = shotpower * global.soulstateformboost / 2.5;
+			shot_stats.Shot_Extra_Stats[0].Shot_Speed = shotspeed * 1.5;
+			shot_stats.Shot_Extra_Stats[0].Shot_Lifespan = shotlifespan / 2;
+			shot_stats.Shot_Extra_Stats[0].Shot_Pierce = shotpierce;
+			shot_stats.Shot_Extra_Stats[0].Shot_Size = (0.05 + shotsize * 0.5);
+			//shot_stats.Shot_Extra_Stats[0].Shot_Mouse = true;
+			
+			
+			shotextrahitshrink[4] = 0;
+			shotextrahitfade[4] = 0;
+			
+			//Print_DF("init init: " + string(shot_stats.Shot_Extra_Stats))
 		
 			image = 1;
 		
@@ -130,9 +184,9 @@ function scr_State_Weapon_Mod(){
 			image_xscale = shotsize;
 			image_yscale = shotsize;
 			
-			shotduplicatesprite = sprite_index;
+			//shotduplicatesprite = sprite_index;
 			
-			shotextrahits[4] = 1;
+			/*shotextrahits[4] = 1;
 			shotextrahitssprite[4] = shotduplicatesprite;
 			shotextrahitfrequency[4] = 15 + (shotlifespan / 10);
 			shotextrahitpower[4] = shotpower * global.soulstateformboost / 2.5;
@@ -144,6 +198,7 @@ function scr_State_Weapon_Mod(){
 			
 			shotextrahitshrink[4] = 0;
 			shotextrahitfade[4] = 0;
+			*/
 			
 			if other.Weapon_Melee > 0 and obj_Soul_Parent.scurrentstate = "Casting" {
 		
@@ -158,10 +213,10 @@ function scr_State_Weapon_Mod(){
 			otarget = other.id;
 		}
 	
-		if scr_State_Active_Check("Ascending", reverie) {
+		if other.Charge_Hold = 2 || scr_State_Active_Check("Ascending", reverie) {
 			
-			shotsize += 0.1;
-			shotsizemax += 0.1;
+			shotsize += 0.25;
+			shotsizemax += 0.25;
 			image_xscale = shotsize;
 			image_yscale = shotsize;
 			

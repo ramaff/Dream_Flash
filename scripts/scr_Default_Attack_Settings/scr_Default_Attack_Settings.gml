@@ -1,5 +1,8 @@
 function scr_Default_Attack_Settings() {
-
+	
+		// XB05
+		boss_bullet_count_modded = false;
+		
 		bullet_type = obj_Basic_Red_Bullet;
 	    bullet_sprite = spr_Glowy_Enemy_Shot;
 	    bullet_speed = bossbulletspeed * 1.5;

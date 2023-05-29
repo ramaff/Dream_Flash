@@ -4,4 +4,4 @@
 // Inherit the parent event
 event_inherited();
 
-scr_Channel_Boss_Kill("Spike")
+scr_Channel_Boss_Kill("Ascending")

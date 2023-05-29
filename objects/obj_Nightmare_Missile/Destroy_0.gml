@@ -8,7 +8,8 @@ var dir = random(360)
             scr_Bullet_Replicate_Properties();
             sprite_index = spr_Glowy_Enemy_Shot;
             bulletspeed = other.bulletspeed * 1.1;
-            bulletpower = other.bulletpowermax * 0.66;
+            bulletpower = global.stagedamage;
+			bulletpowermax = global.stagedamage;
             speed = bulletspeed;
             direction = other.direction + dir;
             bulletlifespan = 180;

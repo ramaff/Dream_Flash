@@ -1,6 +1,6 @@
 function scr_Adjacent_Room_Cloud() {
 	//draw_self();
-	draw_text(room_width / 2,room_height / 2,string(object_get_name(id)));
+	//Print_DF(string(object_get_name(id)), 6);
 	
 	draw_sprite(spr_Recollection_Hover_Cloud,0,x,y);
 

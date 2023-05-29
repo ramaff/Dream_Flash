@@ -1,6 +1,6 @@
 
 
-function scr_Weapon_Use_List() {
+function scr_Weapon_Use_List(cWP = global.currentweapon) {
 	weapStop = 0;
 
 	scr_C08();
@@ -8,7 +8,7 @@ function scr_Weapon_Use_List() {
 	weaponCost = 0;
 	weaponDelay = 0;
 	
-	cWP = global.currentweapon;
+	//cWP = global.currentweapon;
 	
 	umbrellaActive = false;
 	
@@ -20,17 +20,14 @@ function scr_Weapon_Use_List() {
 		}
 	}
 	
-	current_weapon_stats = variable_struct_get(global.weapon_stats, string(cWP))
-	//show_debug_message(current_weapon_stats)
+	current_weapon_stats = json_parse(json_stringify(variable_struct_get(global.weapon_stats, string(cWP))))
 	
-	//weaponCost = variable_struct_get(current_weapon_stats, "Essence");
-	//weaponDelay = variable_struct_get(current_weapon_stats, "Delay");
 	weaponCost = current_weapon_stats.Essence;	
 	weaponDelay = current_weapon_stats.Delay;
 	//show_debug_message("Weapon Cost: " + string(weaponCost) + ", Weapon Delay: " + string(weaponDelay))
 	
 	if cWP = 603 and umbrellaActive {
-		weaponCost = weaponCost / 15;
+		weaponCost = weaponCost / 10;
 	}
 	
 	if weaponCost > 2 {
@@ -52,11 +49,6 @@ function scr_Weapon_Use_List() {
 
 	scr_C14();
 
-	//if global.D10activate >= 1 {
-		//weaponCost = weaponCost * (1 + (0.5 * global.D10activate));
-	//}
-
-
 	scr_E11_Weapon();
 
 	weaponCost = weaponCost / scr_Class_Stat_Weapon_Cost_Multiplier();
@@ -64,17 +56,22 @@ function scr_Weapon_Use_List() {
 	var lHalf = 0;
 
 	if (global.L[1] > 0) {
-		lHalf = scr_L01();	
+		lHalf = scr_L01(weaponCost);
 		if lHalf = 1 {
 			weaponDelay = weaponDelay / 1.25;
 		}
 	}
 	
-	if senergy >= weapStop + weaponCost { 
+	//if senergy >= weapStop + weaponCost || Charge_Hold = 2 { 
+	if senergy >= weaponCost || Charge_Hold = 2 || weapStop != 0 { 
 	
 		global.soulNoShoot = 0;
 		
 		scr_Default_Weapon_Stats();
+		
+		if Charge_Hold = 2 {
+			scr_Ascending_Soul_Essence_Beam(cWP);	
+		}
 		
 		scr_Setup_Weapon_Stats();
 		
@@ -84,22 +81,20 @@ function scr_Weapon_Use_List() {
 		
 		scr_Hard_Coded_Weapon_Stats(cWP);
 		
+		if Charge_Hold = 2 {
+			scr_Ascending_Soul_Weapon_Mod();
+		}
+		
 		if barrage {
 			
 			var fval = 0;
 	
 			for(bi = 0; bi < 9; bi++) {
 				if Shot_Repetition[bi] <= 0 {
-					/*
-					Shot_Repetition[bi] = 6;
-					Shot_Repetition_Type[bi] = "Hyper Essence";
-					//Shot_Repetition_Max[bi] = 7;
-					Shot_Barrage_Speed[bi] = 3;
-					alarm[11] = (Shot_Barrage_Speed[bi]);
-
-					Shot_Repetition_Forward_Interval[bi] = 0;
-					Shot_Default_Count[bi] = Shot_Count;
-					*/
+					
+					if Charge_Hold = 2 {
+						Shot_Repetition_Stats[bi] = current_weapon_stats
+					}
 					
 					if variable_struct_exists(current_weapon_stats, "Shot_Repetition") {
 						Shot_Repetition[bi] = current_weapon_stats.Shot_Repetition
@@ -168,7 +163,9 @@ function scr_Weapon_Use_List() {
 			}
 		}
 		
-		scr_OC03();
+		if spawnProjectile {
+			scr_OC03(cWP);
+		}
 		
 		scr_XC06_Cost_Adjustment();
 		
@@ -188,6 +185,10 @@ function scr_Weapon_Use_List() {
 	    sWeaponUseFrame = 1;   
 		sWeaponTicker++;
 		global.essencebeamtime++;
+		
+		if weapStop != 0 {
+			senergy = max(0, senergy)	
+		}
 		
 		sWeaponWarmUp += weaponDelay * (2 + (300 / 180));
 		

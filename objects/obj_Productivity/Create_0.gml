@@ -1,7 +1,7 @@
 scr_Default_Figment_Stats();
 
-shealth = 20 + (10 * global.currentchapter);
-smaxhealth = 20 + (10 * global.currentchapter);
+shealth = 20 + (20 * global.currentchapter);
+smaxhealth = 20 + (20 * global.currentchapter);
 sfirerate = 85;
 spower = 10;
 spoweraddition = 0;

@@ -10,6 +10,7 @@ if !hit_again {
         } else {
             shothomingrange += 60;
         }
+		shothomingspeed += 2	
         shotspeed += 1.5;
         speed += 1.5;
 		

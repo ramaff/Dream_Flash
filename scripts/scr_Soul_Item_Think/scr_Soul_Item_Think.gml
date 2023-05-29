@@ -33,6 +33,10 @@ function scr_Soul_Item_Think(){
 				case "Casting":
 					sprite_index = spr_Casting_Soul_Think;
 					break;
+					
+				case "Ascending":
+					sprite_index = spr_Ascending_Soul_Think;
+					break;
 				
 				default:
 					sprite_index = spr_The_Soul_Think;

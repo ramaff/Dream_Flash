@@ -1,7 +1,7 @@
 
 dir += bulletspeed * 0.33 / 90 * 30;
 
-repeat(2) {
+repeat(1) {
 	
 	repeat(4) {
 
@@ -13,12 +13,13 @@ repeat(2) {
 	            soulshotblock = 0;
 	            sprite_index = spr_Glowy_Green_Shot;
 				bulletsize = 0.5;
-	            bulletspeed = other.bulletspeed * 0.333;
-	            bulletpower = other.bulletpower * 0.333;
+	            bulletspeed = other.bulletspeed * 0.25;
+	            bulletpower = global.stagedamage;
+				bulletpowermax = global.stagedamage;
 	            speed = bulletspeed;
 	            direction = other.dir * 90;
 	            bulletOrbit = 50 * (11 - other.orbitsum);
-	            bulletAngle = direction;
+	            bulletAngle = direction + (18 * other.orbitsum);
 	            bulletCenterX = other.x;
 	            bulletCenterY = other.y;
 	    }
@@ -30,6 +31,6 @@ repeat(2) {
 }
 
 if orbitsum > 0 {
-	alarm[1] = 30;
+	alarm[1] = 15;
 }
 

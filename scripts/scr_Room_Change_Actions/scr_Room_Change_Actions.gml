@@ -20,6 +20,8 @@ function scr_Room_Change_Actions() {
 	roomType = Floor_Layout_Control.Flash[global.currentroom,0];
 
 	scr_Soul_Stat_Store();
+	
+	//scr_Emotion_Field_Spawn_Check()
 
 	part_particles_clear(global.psystem);
 	//part_system_clear(global.psystem);

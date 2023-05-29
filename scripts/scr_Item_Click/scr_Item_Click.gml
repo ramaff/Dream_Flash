@@ -190,14 +190,14 @@ function scr_Item_Click(linger = false){
 	}
 	
 	scr_Hard_Coded_Item_Stats(itemVal);
-
-	
 	
 	if weapon = 0 {
 		scr_Item_State_Credit_Add(itemVal);
 	}
 	
 	scr_State_Form_Unlock();
+	
+	scr_Channel_Boss_Reroll();
 	
 	instance_destroy();
 	

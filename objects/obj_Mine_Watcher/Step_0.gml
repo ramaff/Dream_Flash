@@ -114,6 +114,7 @@ if bossPassiveAttack[1] = 2 {
         bullet_type = obj_Split_Mine_Bullet;
         bullet_sprite = spr_Boss_Green_Bomb;
         bullet_speed = bossbulletspeed;
+		bullet_count = 4
     }
     scr_Soul_Shoot();       
 }
@@ -230,13 +231,13 @@ if bossActiveAttackDelay[1] <= 0 {
 		bullet_part = 2;
 		bullet_part_sprite = spr_Bullet_Missile_Part;
 		bullet_part_area = 25;
-		bullet_part_life = 40;
-		bullet_part_color1 = make_color_rgb(155,155,255);
+		bullet_part_life = 60;
+		bullet_part_color1 = make_color_rgb(0,154,255);
 		bullet_part_color2 = c_white;
 		
         bullet_type = obj_Homing_Bullet;
         bullet_sprite = spr_Boss_Missile;
-        bullet_speed = bossbulletspeed * (0.75 + random(0.2));
+        bullet_speed = bossbulletspeed * (0.75 + random(0.3));
         bullet_power = bosspower * 1;
         bullet_lifespan = 600;
         scr_Soul_Shoot(); 
@@ -257,8 +258,8 @@ if bossActiveAttackDelay[1] <= 0 {
         bullet_type = obj_Maelstrom_Bullet;
         bullet_sprite = spr_Maelstrom_Shot;
 		bullet_size = 1.2;
-        bullet_speed = bossbulletspeed * (0.65 + random(0.15));
-        bullet_lifespan = 480 + random(240);
+        bullet_speed = bossbulletspeed * (0.8 + random(0.15));
+        bullet_lifespan = 360 + random(60);
         scr_Soul_Shoot();
 		bossActiveAttack[1] = -4;
     }
@@ -282,7 +283,7 @@ if bossActiveAttackDelay[1] <= 0 {
         if currentphase = 1 {
             scr_Soul_Shoot();
         } else {
-            bullet_direction = 90 + (-10 + random(20)) / bossaccuracy;
+            bullet_direction = direction - 135 + (-20 + random(40)) / bossaccuracy;
             scr_Direction_Shoot();
         }
 		bossActiveAttack[1] = -5;

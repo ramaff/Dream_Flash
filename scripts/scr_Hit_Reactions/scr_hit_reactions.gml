@@ -63,12 +63,12 @@ function scr_Hit_Reactions() {
 		}
 	}
 
-	var hchance = irandom(smaxhealth);
+	var hchance = irandom(smaxhealth / 2);
 	if (dmg > hchance) and (dmg < shealth) {
 		scr_S02();
 	}
 
-	var hchance = irandom(smaxhealth);
+	var hchance = irandom(smaxhealth / 2);
 	if (dmg > hchance) and (dmg < shealth) {
 		scr_S03();
 	}

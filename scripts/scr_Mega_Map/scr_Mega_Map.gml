@@ -4,7 +4,7 @@ function scr_Mega_Map() {
 	mapXOrigin = Floor_Layout_Control.Flash[global.currentroom,1];
 	mapYOrigin = Floor_Layout_Control.Flash[global.currentroom,2];
 	
-	show_debug_message(string(object_get_name(object_index)));
+	//Print_DF(string(object_get_name(object_index)), 8);
 
 	//draw_sprite(spr_Mini_Map,0,xOrigin,yOrigin);
 
@@ -25,19 +25,6 @@ function scr_Mega_Map() {
 				mapRoomX = Floor_Layout_Control.Flash[other.i,1];
 				mapRoomY = Floor_Layout_Control.Flash[other.i,2];
 			}
-			/*
-	        if Floor_Layout_Control.Flash[i,0] = "Normal" || Floor_Layout_Control.Flash[i,0] = "Spawn" {
-	            //draw_sprite(spr_Mini_Map_Square,0,xOrigin + xx,yOrigin + yy);
-	        } else if Floor_Layout_Control.Flash[i,0] = "Boss" {
-	            draw_sprite(spr_Mini_Map_Square,2,xOrigin + xx,yOrigin + yy);
-	        }  else if Floor_Layout_Control.Flash[i,0] = "Shop" {
-	            draw_sprite(spr_Mini_Map_Square,5,xOrigin + xx,yOrigin + yy);
-	        } else if Floor_Layout_Control.Flash[i,0] = "Super Boss" {
-	            draw_sprite(spr_Mini_Map_Square,3,xOrigin + xx,yOrigin + yy);
-	        } else {
-	            draw_sprite(spr_Mini_Map_Square,4,xOrigin + xx,yOrigin + yy);
-	        }
-			*/
 	    }
 	}
 

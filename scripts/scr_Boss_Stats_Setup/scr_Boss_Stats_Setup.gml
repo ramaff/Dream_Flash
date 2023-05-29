@@ -2,58 +2,60 @@ function scr_Boss_Stats_Setup(version=1) {
 	currentphase = 1;
 	finalphase = 2;
 	
+	facing_direction = 1;
+	
 	tier = global.currentchapter - 1;
 
-	    scr_Boss_Status_Setup(version);
+	scr_Boss_Status_Setup(version);
 	
-		bossattackspeed = 1;
-		if boost = 1 {
-	        bossattackspeed += 0.5;
-	    }
+	bossattackspeed = 1;
+	if boost = 1 {
+	    bossattackspeed += 0.5;
+	}
 		
-		bossHeight = 0;
+	bossHeight = 0;
     
-	    scr_Boss_Attack_Setup(version);
+	scr_Boss_Attack_Setup(version);
     
-	    //alarm[11] = 30;
+	//alarm[11] = 30;
     
-	    baseDepth = 0;
+	baseDepth = 0;
 
-	    //var champval = frac(global.bossval);
-	    //var bossnum = global.bossval - champval;
-		var bossnum = bossValue - frac(bossValue)
-		champval = champ
+	//var champval = frac(global.bossval);
+	//var bossnum = global.bossval - champval;
+	var bossnum = bossValue - frac(bossValue)
+	champval = champ
 	
-	    difficulty = 0;
+	difficulty = 0;
     
-	    bossknockdefense = 10;
-	    bossmovespeed = 2;
-	    bossattackspeed = 1;
-	    bossaccuracy = 1;    
-	    bossdefense = 0;
-	    bossdefense2 = 0;
-	    bossdefense3 = 0;
-	    bossbulletspeed = 3;
-	    patterndir = 0;
-	    bosspower = 6;
+	bossknockdefense = 10;
+	bossmovespeed = 2;
+	bossattackspeed = 1;
+	bossaccuracy = 1;    
+	bossdefense = 0;
+	bossdefense2 = 0;
+	bossdefense3 = 0;
+	bossbulletspeed = 3;
+	patterndir = 0;
+	bosspower = 6;
     
-	    bossknockbackforce = 10;
-	    bosscontactdamage = 5;
-	    bossmaxhealth3 = 0
+	bossknockbackforce = 10;
+	bosscontactdamage = 5;
+	bossmaxhealth3 = 0
     
-	    bossImaginaryResistance = 0;
-	    bossSharpSolidResistance = 0;
-	    bossMagicResistance = 0;
-	    bossExplosiveResistance = 0;
-	    bossEnergyResistance = 0;
+	bossImaginaryResistance = 0;
+	bossSharpSolidResistance = 0;
+	bossMagicResistance = 0;
+	bossExplosiveResistance = 0;
+	bossEnergyResistance = 0;
 		
-		bosstotalhealth = 0;
-		bossmaxhealth = 0;
-		bossmaxhealth2 = 0;
+	bosstotalhealth = 0;
+	bossmaxhealth = 0;
+	bossmaxhealth2 = 0;
 		
-		if bossnum > 110 and bossnum <= 116 {
-			champval = global.currentchapter - 1;	
-		}
+	if bossnum > 110 and bossnum <= 116 {
+		champval = global.currentchapter - 1;	
+	}
 	
 	var bossstring = "Boss " + string(bossnum)
 	if bossnum < 100 {
@@ -150,9 +152,9 @@ function scr_Boss_Stats_Setup(version=1) {
 	}
     
 	
-	if bossnum > 80 and bossnum < 90 and room = State_Room {
-		bossmaxhealth = bossmaxhealth * 1.75;
-		bossmaxhealth2 = bossmaxhealth2 * 1.75;
+	if bossnum > 80 and bossnum <= 90 and room = State_Room {
+		bossmaxhealth = bossmaxhealth * 1.5;
+		bossmaxhealth2 = bossmaxhealth2 * 1.5;
 	}
 	
 	if bossnum = 161 {
@@ -166,6 +168,8 @@ function scr_Boss_Stats_Setup(version=1) {
 		bossdefense2 = bossdefense;
 	}
 	
+	//show_debug_message("scr_boss_stats_setup boss hps: " + string(bossmaxhealth) + ", " + string(bossmaxhealth2))
+	
 
 	/////////////////////////////////////////////////////////////////////
 	//////////////////////////// Extra Setup ////////////////////////////
@@ -173,7 +177,7 @@ function scr_Boss_Stats_Setup(version=1) {
 
 
 	    if boost = 1 {
-	        bossattackspeed += 0.5;
+	        bossattackspeed += 0.33;
 	    }
     
 	    bossattackspeed = bossattackspeed * ((200 + global.souldespair + global.souldespairTemp) / 200) * ((200 + global.soulparanoia + global.soulparanoiaTemp) / 200) * ((200 + global.soulvanity + global.soulvanityTemp) / 200);
@@ -230,6 +234,12 @@ function scr_Boss_Stats_Setup(version=1) {
 				bossmaxhealth2 = bossmaxhealth2 * mult;
 				bossmaxhealth3 = bossmaxhealth3 * mult;
 			}
+		}
+		
+		if bossnum = 53 {
+			bossmaxhealth = bossmaxhealth * 1.25;	
+			bossmaxhealth2 = bossmaxhealth2 * 1.25;	
+			bossmaxhealth3 = bossmaxhealth3 * 1.25;	
 		}
 	
 		bosshealth = bossmaxhealth;

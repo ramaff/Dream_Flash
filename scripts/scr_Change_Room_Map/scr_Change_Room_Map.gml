@@ -45,7 +45,7 @@ function scr_Change_Room_Map(argument0) {
 	        global.currentroom = nextRoom;
 	    }
     
-	    if nextRoomType = "Item" || nextRoomType = "Strength Field" || nextRoomType = "Vitality Field" || nextRoomType = "Essence Field" || nextRoomType = "Dexterity Field" || nextRoomType = "Perception Field" {
+	    if nextRoomType = "Item" || nextRoomType = "Emotion Field" || nextRoomType = "Strength Field" || nextRoomType = "Vitality Field" || nextRoomType = "Essence Field" || nextRoomType = "Dexterity Field" || nextRoomType = "Perception Field" {
 	        room_goto(Medium_Item_Room);
 	        global.currentroom = nextRoom;
 	    }

@@ -9,6 +9,8 @@ function scr_Weapon_Rebound_Mouse() {
 	if bspeed > 50 {
 		exit;	
 	}
+	
+	var pow = max(1, shotreboundpower)
 
 	with(obj_Soul_Parent) {
 		scr_Default_Weapon_Stats();
@@ -24,15 +26,15 @@ function scr_Weapon_Rebound_Mouse() {
 			Shot_Sprite: sprite_get_name(other.bsprite),
 			Shot_Type: "obj_Lesser_Soul_Shot",
 			Shot_Speed: 4,
-			Shot_Direction: point_direction(obj_Soul_Parent.x,obj_Soul_Parent.y,mouse_x,mouse_y),
-			Shot_Power: other.shotreboundpower,
+			Shot_Direction: other.image_angle, //point_direction(obj_Soul_Parent.x,obj_Soul_Parent.y,mouse_x,mouse_y),
+			Shot_Power: pow,
 			Shot_Knockback: 10,
 			Shot_Lifespan: 100,
 			Shot_Pierce: 1,
 			Shot_Size: other.bsize,
 			Shot_Forward: 0,
 			Shot_Form_Show: 0,
-			Shot_Angle: point_direction(obj_Soul_Parent.x,obj_Soul_Parent.y,mouse_x,mouse_y)
+			Shot_Angle: other.image_angle//point_direction(obj_Soul_Parent.x,obj_Soul_Parent.y,mouse_x,mouse_y)
 		};
 	
 		if other.bspeed > 0 {

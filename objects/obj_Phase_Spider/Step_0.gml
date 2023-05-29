@@ -17,7 +17,7 @@ if bossActiveAttackDelay[1] <= 0 and bossActiveAttackCooldown[1] <= 0 and bossAc
 		bossActiveAttackDelay[1] = 0;
 		
         scr_Boss_Dash_Setup();
-        bossPatternCount = 90;
+        bossPatternCount = 135;
         bossPatternCountMax = bossPatternCount;
         bossPatternCooldown = 10;
         bossPatternCooldownMax = 1;
@@ -31,7 +31,7 @@ if bossActiveAttackDelay[1] <= 0 and bossActiveAttackCooldown[1] <= 0 and bossAc
 		state = states.leaping;
 		
 		bossActiveAttackDuration[1] = 15 + bossattackspeed * bossPatternCooldownMax * bossPatternCount;
-        bossActiveAttackCooldown[1] = 180 + random(60);
+        bossActiveAttackCooldown[1] = 210 + random(120);
     }
 	
 }
@@ -69,13 +69,17 @@ if bossActiveAttackDelay[1] <= 0 and bossPatternCooldown <= 0 and bossPatternCou
 			bullet_type = obj_Basic_Bullet;
 			bullet_sprite = spr_Glowy_Purple_Shot;
 			bullet_lifespan = 400;
+			bullet_speed = bossbulletspeed * (1 + random(0.25));
+			bullet_direction = 45;
+			
+			boss_yoffset = 50;
 		
-			scr_Soul_Shoot();
+			scr_Just_Shoot();
 			
 			state = states.normal;
 		}
 		
-		scr_Jump_Movement(30);
+		scr_Jump_Movement(18);
 		
 		bossPatternCount -= 1;
         bossPatternCooldown += bossPatternCooldownMax;

@@ -112,6 +112,7 @@ if activeAttackDelay <= 0 and patternCooldown <= 0 and patternCount > 0 {
 			bullet_direction = direction
 			bullet_count = 2;
 			bullet_spread = 180;
+			bullet_speed = bossbulletspeed * 1.65;
 		
 			scr_Boss_Shoot();
 		}
@@ -135,6 +136,8 @@ if activeAttackDelay <= 0 and patternCooldown <= 0 and patternCount > 0 {
 			bullet_direction = random(360);
 			bullet_count = 6;
 			bullet_spread = 60;
+			
+			bullet_speed = bossbulletspeed * 1.75;
 		
 			scr_Boss_Shoot();
 		}

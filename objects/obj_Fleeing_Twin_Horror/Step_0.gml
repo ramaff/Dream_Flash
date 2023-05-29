@@ -197,7 +197,7 @@ if bossActiveAttackDelay[1] <= 0 {
 		
         bullet_count = 24;
         bullet_spread = 360 / bullet_count;
-        bullet_speed = bossbulletspeed * (1 + random(0.15));
+        bullet_speed = bossbulletspeed * (0.8 + random(0.15));
         scr_Just_Shoot();
 		
 		bullet_direction -= 3;
@@ -256,7 +256,7 @@ if bossActiveAttackDelay[1] <= 0 and bossPatternCooldown <= 0 and bossPatternCou
     if bossActiveAttack[1] = 3 {
 		scr_Boss_Stretch("Vertical",0.1);
 		
-        bullet_speed = bossbulletspeed * 0.9;
+        bullet_speed = bossbulletspeed * 0.75;
         bullet_direction = bossPatternDirection;
         bullet_count = 2;
         bullet_spread = 360 / bullet_count;
@@ -266,7 +266,7 @@ if bossActiveAttackDelay[1] <= 0 and bossPatternCooldown <= 0 and bossPatternCou
 			bullet_size = 1.25;
 			bullet_sprite = spr_Glowy_Dark_Blue_Shot;
 			bullet_type = obj_Smart_Home_Bullet;
-			bullet_speed = bossbulletspeed * 1.4;
+			bullet_speed = bossbulletspeed * 1.15;
 			
 			bullet_count = 2;
 			bullet_spread = 360 / bullet_count;

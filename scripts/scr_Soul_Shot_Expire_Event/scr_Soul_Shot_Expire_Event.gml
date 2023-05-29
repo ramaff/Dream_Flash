@@ -45,7 +45,7 @@ function scr_Soul_Shot_Expire_Event(){
 			sprite_index = other.sprite_index;
 			direction = point_direction(obj_Soul_Parent.x,obj_Soul_Parent.y,mouse_x, mouse_y) - (shotaccuracy / 2) + random(shotaccuracy);
 	    } 
-	} else if shotwander > 0 {
+	} else if shotwander > 0 and shotbeam = 0 {
 		shotwander--;
 		direction = random(360);
 		var fac = (1 + random(1))
@@ -54,7 +54,7 @@ function scr_Soul_Shot_Expire_Event(){
 		dir = random(360);
 		shotburstpower = shotpower;
 		
-		with instance_create(x,y,obj_Lesser_Soul_Shot) {
+		with instance_create(x,y,object_index) {
 	        scr_Duplicate_Shot_Stats();
 			shottimer = shotlifespan;
 			image_alpha = 1;

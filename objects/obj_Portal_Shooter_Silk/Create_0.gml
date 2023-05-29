@@ -1,4 +1,4 @@
-alarm[1] = 110;
+alarm[1] = 90 + random(90);
 alarm[2] = 20;
 //alarm[10] = 30;
 

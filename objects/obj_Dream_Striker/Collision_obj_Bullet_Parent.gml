@@ -2,7 +2,7 @@
 // You can write your code in this editor
 
 with(other) {
-	var ddir = random(360);
+	/*var ddir = random(360);
 	var sspd = 9 + random(4);
 	var ssize = 0.4 + random(0.2);
 	var llife = 10 + irandom(2);
@@ -24,6 +24,10 @@ with(other) {
 			depth = other.depth + 2;
 		}
 		ddir += 45;
+	}*/
+	repeat(4) {
+		var ddir = direction - 270 + random(180);
+		scr_Particle_Burst(obj_Friction_Part, spr_Soul_Bit, c_white, c_white, 1, 16 + random(8), ddir, 0, 0, image_xscale + random(0.1), 20 + random(10))
 	}
 	//var poww = other.shotshieldpower;
 	//show_debug_message("bulletpower: " + string(bulletpower))
@@ -34,11 +38,12 @@ with(other) {
 		with (obj_Soul_Parent) {
 			scr_Baseball_Shot(xxx,yyy,shpower + 50);
 			var dirrr = point_direction(x,y,xxx,yyy) + 180;
-			x += lengthdir_x(shpower / 3, dirrr)
-			y += lengthdir_y(shpower / 3, dirrr)
+			var push = sqrt(max(1, shpower))
+			x += lengthdir_x(push, dirrr)
+			y += lengthdir_y(push, dirrr)
 		}
 		//other.shotshieldpower -= bulletpower;
-		other.shotpower -= bulletpower;
+		other.shotpower -= bulletpower / 2;
 		instance_destroy();	
 	} else {
 		bulletpower -= other.shotpower;

@@ -49,6 +49,8 @@ function scr_Soul_Shot_Boss_Hit() {
 					}
 				}
 			}
+			
+			//Print_DF("shot power: " + string(shotpower))
 		
 	        scr_Boss_Damage_Calc();
 		
@@ -60,8 +62,14 @@ function scr_Soul_Shot_Boss_Hit() {
 			if shotDamage > 0 {
 				//scr_Boss_Hit_Part_Splash_Juice();
 				
-				scr_Particle_Burst(shottrailhittype, shottrailhitsprite, shottrailcolor1, shottrailcolor2, shottrailhitcount, shottrailhitspeed, 0, 360 / shottrailhitcount, shottrailarea, shotsize, shottrailhitlife, true)
-				scr_Particle_Burst(shottrailhittype, shottrailhitsprite, shottrailcolor1, shottrailcolor2, shottrailhitcount / 2, shottrailhitspeed * 2, 0, 720 / shottrailhitcount, shottrailarea, shotsize, shottrailhitlife, true)
+				//scr_Particle_Burst(shottrailhittype, shottrailhitsprite, shottrailcolor1, shottrailcolor2, shottrailhitcount, shottrailhitspeed, 0, 360 / shottrailhitcount, shottrailarea, shotsize, shottrailhitlife, true)
+				//scr_Particle_Burst(shottrailhittype, shottrailhitsprite, shottrailcolor1, shottrailcolor2, shottrailhitcount / 2, shottrailhitspeed * 2, 0, 720 / shottrailhitcount, shottrailarea, shotsize, shottrailhitlife, true)
+				
+				repeat(shottrailhitcount) {
+					var ddir = direction - 90 + random(180);
+					scr_Particle_Burst(shottrailhittype, shottrailhitsprite, shottrailcolor1, shottrailcolor2, 1, 12 + random(8), ddir, 0, 0, shotsize + random(0.2), 15 + random(10))
+					//scr_Particle_Burst(obj_Friction_Part, spr_Soul_Bit, c_white, c_white, 1, 12 + random(8), ddir, 0, 0, shotsize + random(0.2), 15 + random(10))
+				}
 				
 				if shotessencedrain > 0 {
 					obj_Soul_Parent.senergy += shotpower * shotessencedrain;
@@ -109,8 +117,8 @@ function scr_Soul_Shot_Boss_Hit() {
 	        if other.pathBoss = 0 {
 	            if shotknockback >= other.bossknockdefense {
 	                other.bossknockbackdirection = direction;
-	                other.bossknockback = (shotknockback - other.bossknockdefense);
-	                other.bossknockbacktime = 3;
+	                other.bossknockback = (shotknockback - other.bossknockdefense) / 2;
+	                other.bossknockbacktime = 5;
 					if other.bossknockback > 200 {
 						other.bossknockback = 200;	
 					}
@@ -124,6 +132,8 @@ function scr_Soul_Shot_Boss_Hit() {
 	        //ds_list_add(other.projectile_hits, shot_boss_id);
 			variable_struct_set(other.projectile_hits, shot_boss_id, shot_boss_id)
 			
+			//show_debug_message("scr_Soul_Shot_Boss_Hit: " + string(shotburststats))
+			
 			if shotburststats != false {
 				var burstIndex = array_length(shotburststats) - 1;
 				if instance_exists(obj_Boss_Parent) and burstIndex >= 0 {
@@ -134,8 +144,15 @@ function scr_Soul_Shot_Boss_Hit() {
 					        scr_Duplicate_Shot_Stats();
 						
 							var vshotburststats = other.shotburststats[burstIndex]
+							
+							//show_debug_message("scr_Soul_Shot_Boss_Hit image alpha: " + string(image_alpha))
+							//show_debug_message("scr_Soul_Shot_Boss_Hit spr: " + string(sprite_get_name(sprite_index)))
 					
 							scr_Shot_Burst_Stats(vshotburststats);
+							
+							/*show_debug_message("scr_Soul_Shot_Boss_Hit stats: " + string(shot_stats))
+							show_debug_message("scr_Soul_Shot_Boss_Hit lifespan: " + string(shotlifespan))
+							show_debug_message("scr_Soul_Shot_Boss_Hit alarm[0]: " + string(alarm[0])) */
 					
 							if burstIndex > 0 {
 								shotburststats = [];

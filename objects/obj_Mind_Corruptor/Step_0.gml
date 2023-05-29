@@ -96,7 +96,7 @@ if bossActiveAttackDelay[1] <= 0 and bossActiveAttackCooldown[1] <= 0 and bossAc
         bossPatternCooldown = 1;
         bossPatternCooldownMax = 1;
         bossActiveAttackDuration[1] = 30 + bossPatternCooldownMax * bossPatternCount;
-        bossActiveAttackCooldown[1] = 120 + random(15);
+        bossActiveAttackCooldown[1] = 180 + random(15);
     }
     if bossActiveAttack[1] = 2 {
 		if currentphase = 2 {
@@ -107,7 +107,7 @@ if bossActiveAttackDelay[1] <= 0 and bossActiveAttackCooldown[1] <= 0 and bossAc
         bossPatternCooldown = 1;
         bossPatternCooldownMax = 1;
         bossActiveAttackDuration[1] = 30 + bossattackspeed * bossPatternCooldownMax * (bossPatternCount + 30);
-        bossActiveAttackCooldown[1] = 120 + random(15);
+        bossActiveAttackCooldown[1] = 180 + random(15);
 		
 		var bossdirection = point_direction(x,y,instance_nearest(x,y,obj_Soul).x,instance_nearest(x,y,obj_Soul).y);
         
@@ -215,7 +215,7 @@ if bossActiveAttackDelay[1] <= 0 and bossPatternCooldown <= 0 and bossPatternCou
         
     
     if bossActiveAttack[1] = 1 {
-		bullet_power = bosspower * 2;
+		bullet_power = bosspower * 10;
 		if bossPatternCount mod 10 = 0 {
 			scr_Boss_Stretch("Vertical", 0.075);
 		}
@@ -226,7 +226,7 @@ if bossActiveAttackDelay[1] <= 0 and bossPatternCooldown <= 0 and bossPatternCou
 	        bullet_direction = 0;
 	        bullet_count = 1;
 	        bullet_spread = 0;
-	        bullet_speed = bossbulletspeed * (2.5 + random(0.15));
+	        bullet_speed = bossbulletspeed * (1.5 + random(0.15));
 			bullet_type = obj_Corruption_Grow;
 			bullet_sprite = spr_Corruption_Ball;
 			bullet_size = 0;
@@ -269,14 +269,16 @@ if bossActiveAttackDelay[1] <= 0 and bossPatternCooldown <= 0 and bossPatternCou
 		}
 		
 		var beamstart = bossPatternCountMax - bossPatternCount;
+		
+		scr_Easy_Boss_Beam_Shoot(bossPatternCountMax, 33);
 			
 	    if bossPatternCount < 280 {
 			
-	        scr_Boss_Beam_Attack_New("Active",35,scr_Boss_Beam_Frame(beamstart));
+	        //scr_Boss_Beam_Attack_New("Active",35,scr_Boss_Beam_Frame(beamstart));
 				
 			bossPatternDirection += 0.5 + ((280 - bossPatternCount) / 560);
 	    } else {
-	        scr_Boss_Beam_Attack_New("Dormant",35,scr_Boss_Beam_Frame(beamstart));
+	        //scr_Boss_Beam_Attack_New("Dormant",35,scr_Boss_Beam_Frame(beamstart));
 	    }
 			
 		if bossPatternCount mod (15) = 0 {

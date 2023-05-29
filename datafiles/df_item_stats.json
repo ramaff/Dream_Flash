@@ -222,14 +222,16 @@
         "recollectionString": "Venting",
         "recollectionSprite": "spr_Essence_Attack_Field_Item",
         "recollectionExtraStats": "+Essence Attack",
-        "recollectionDescription": "Occasionally release a whip at nearby enemies, sucking up essence when they are hit. Ignores boss armour."
+        "recollectionDescription": "Occasionally release a whip at nearby enemies, sucking up essence when they are hit. Ignores boss armour.",
+        "Ascending_Credit": 0.5
     },
     "C06": {
         "recollectionString": "Self Respect",
         "recollectionSprite": "spr_Essence_Defense_Field_Item",
         "recollectionExtraStats": "+Essence Defense",
         "recollectionDescription": "Occasionally destroy nearby bullets, which gives you some additional essence.",
-        "Scrub_Credit": 0.5
+        "Scrub_Credit": 0.5,
+        "Ascending_Credit": 0.5
     },
     "C07": {
         "recollectionString": "Imaginary Reload",
@@ -514,8 +516,8 @@
         "recollectionDescription": "Use spite to get ahead and become stronger. Your state bar charges up proportional to damage take, with bonus state being granted when losing a heart."
     },
     "F07": {
-        "recollectionString": "Necesity",
-        "recollectionSprite": "spr_Necesity_Item",
+        "recollectionString": "Necessity",
+        "recollectionSprite": "spr_Necessity_Item",
         "recollectionExtraStats": "+200% Stage Boss State Recharge",
         "recollectionDescription": "Gain state much faster when fighting the final boss of each stage."
     },
@@ -649,7 +651,8 @@
         "recollectionString": "Lightning Heart",
         "recollectionSprite": "spr_Lightning_Heart_Art",
         "recollectionExtraStats": "+20 HP +Energy Revenge Damage",
-        "recollectionDescription": "Sends in Lightning Bolts from the sky when hit."
+        "recollectionDescription": "Sends in Lightning Bolts from the sky when hit.",
+        "Ascending_Credit": 1
     },
     "H13": {
         "recollectionString": "Scaley Heart",
@@ -707,19 +710,19 @@
     "I04": {
         "recollectionString": "Aggressive",
         "recollectionSprite": "spr_Aggressive_Art",
-        "recollectionExtraStats": "+6 Strength +4 Loathing",
+        "recollectionExtraStats": "+7 Strength +4 Loathing",
         "recollectionDescription": ""
     },
     "I05": {
         "recollectionString": "Insecure",
         "recollectionSprite": "spr_Insecure_Art",
-        "recollectionExtraStats": "+7 Strength +4 Paranoia",
+        "recollectionExtraStats": "+9 Strength +4 Paranoia",
         "recollectionDescription": ""
     },
     "I06": {
         "recollectionString": "Destructive",
         "recollectionSprite": "spr_Destructive_Art",
-        "recollectionExtraStats": "+8 Strength +4 Despair",
+        "recollectionExtraStats": "+11 Strength +4 Despair",
         "recollectionDescription": ""
     },
     
@@ -744,19 +747,19 @@
     "I10": {
         "recollectionString": "Strained",
         "recollectionSprite": "spr_Strained_Art",
-        "recollectionExtraStats": "+6 Vitality +4 Loathing",
+        "recollectionExtraStats": "+7 Vitality +4 Loathing",
         "recollectionDescription": ""
     },
     "I11": {
         "recollectionString": "Overwhelmed",
         "recollectionSprite": "spr_Overwhelmed_Art",
-        "recollectionExtraStats": "+7 Vitality +4 Paranoia",
+        "recollectionExtraStats": "+9 Vitality +4 Paranoia",
         "recollectionDescription": ""
     },
     "I12": {
         "recollectionString": "Sorrow",
         "recollectionSprite": "spr_Sorrow_Art",
-        "recollectionExtraStats": "+8 Vitality +4 Despair",
+        "recollectionExtraStats": "+11 Vitality +4 Despair",
         "recollectionDescription": ""
     },
     
@@ -781,19 +784,19 @@
     "I16": {
         "recollectionString": "Hateful",
         "recollectionSprite": "spr_Hateful_Art",
-        "recollectionExtraStats": "+6 Essence +4 Loathing",
+        "recollectionExtraStats": "+7 Essence +4 Loathing",
         "recollectionDescription": ""
     },
     "I17": {
         "recollectionString": "Pressured",
         "recollectionSprite": "spr_Pressured_Art",
-        "recollectionExtraStats": "+7 Essence +4 Paranoia",
+        "recollectionExtraStats": "+9 Essence +4 Paranoia",
         "recollectionDescription": ""
     },
     "I18": {
         "recollectionString": "Defeated",
         "recollectionSprite": "spr_Defeated_Art",
-        "recollectionExtraStats": "+8 Essence +4 Despair",
+        "recollectionExtraStats": "+11 Essence +4 Despair",
         "recollectionDescription": ""
     },
     
@@ -818,19 +821,19 @@
     "I22": {
         "recollectionString": "Impatient",
         "recollectionSprite": "spr_Frustrated_Art",
-        "recollectionExtraStats": "+6 Dexterity +4 Loathing",
+        "recollectionExtraStats": "+7 Dexterity +4 Loathing",
         "recollectionDescription": ""
     },
     "I23": {
         "recollectionString": "Panic",
         "recollectionSprite": "spr_Panic_Art",
-        "recollectionExtraStats": "+7 Dexterity +4 Paranoia",
+        "recollectionExtraStats": "+9 Dexterity +4 Paranoia",
         "recollectionDescription": ""
     },
     "I24": {
         "recollectionString": "Crushed",
         "recollectionSprite": "spr_Crushed_Art",
-        "recollectionExtraStats": "+8 Dexterity +4 Despair",
+        "recollectionExtraStats": "+11 Dexterity +4 Despair",
         "recollectionDescription": ""
     },
     
@@ -855,19 +858,19 @@
     "I28": {
         "recollectionString": "Boiling",
         "recollectionSprite": "spr_Boiling_Art",
-        "recollectionExtraStats": "+6 Perception +4 Loathing",
+        "recollectionExtraStats": "+7 Perception +4 Loathing",
         "recollectionDescription": ""
     },
     "I29": {
         "recollectionString": "Anxious",
         "recollectionSprite": "spr_Anxious_Art",
-        "recollectionExtraStats": "+7 Perception +4 Paranoia",
+        "recollectionExtraStats": "+9 Perception +4 Paranoia",
         "recollectionDescription": ""
     },
     "I30": {
         "recollectionString": "Depressed",
         "recollectionSprite": "spr_Depressed_Art",
-        "recollectionExtraStats": "+8 Perception +4 Despair",
+        "recollectionExtraStats": "+11 Perception +4 Despair",
         "recollectionDescription": ""
     },
     "I31": {
@@ -891,19 +894,19 @@
     "I34": {
         "recollectionString": "Envious",
         "recollectionSprite": "spr_Envious_Art",
-        "recollectionExtraStats": "+6 State +4 Loathing",
+        "recollectionExtraStats": "+7 State +4 Loathing",
         "recollectionDescription": ""
     },
     "I35": {
         "recollectionString": "Hysterical",
         "recollectionSprite": "spr_Hysterical_Art",
-        "recollectionExtraStats": "+7 State +4 Paranoia",
+        "recollectionExtraStats": "+9 State +4 Paranoia",
         "recollectionDescription": ""
     },
     "I36": {
         "recollectionString": "Empty",
         "recollectionSprite": "spr_Empty_Art",
-        "recollectionExtraStats": "+8 State +4 Despair",
+        "recollectionExtraStats": "+11 State +4 Despair",
         "recollectionDescription": ""
     },
     
@@ -1196,7 +1199,8 @@
         "recollectionSprite": "spr_Electro_Soul",
         "recollectionSize": 0.375,
         "recollectionExtraStats": "+Ally Soul",
-        "recollectionDescription": "Electrical Soul that shoots chain shots. Projectiles passing through gain chain and energy."
+        "recollectionDescription": "Electrical Soul that shoots chain shots. Projectiles passing through gain chain and energy.",
+        "Ascending_Credit": 1
     },
     "M22": {
         "recollectionString": "Glum Chum",
@@ -1522,11 +1526,12 @@
         "Casting_Credit": 0.5
     },
     "U05": {
-        "recollectionString": "Idea Connection",
+        "recollectionString": "Synapses",
         "recollectionSprite": "spr_Idea_Connection_Art",
         "recollectionExtraStats": "+Projectile Chain Hit",
         "recollectionDescription": "Connecting your ideas allows them to hit multiple targets in a single shot.",
-        "Snake_Credit": 0.5
+        "Snake_Credit": 0.5,
+        "Ascending_Credit": 0.5
     },
     "U06": {
         "recollectionString": "Unload",
@@ -1716,7 +1721,7 @@
         "recollectionDescription": "Bosses sometimes shoot extra bullets at the soul. The soul also can sometimes shoot more."
     },
     "XB06": {
-        "recollectionString": "Claustrophobia",
+        "recollectionString": "Social Anxiety",
         "recollectionSprite": "spr_Claustrophobia_Art",
         "recollectionExtraStats": "+Crowd of Spirits",
         "recollectionDescription": "Constant crowd of spirits that wander across the stage. Some of which will attack the soul when near."

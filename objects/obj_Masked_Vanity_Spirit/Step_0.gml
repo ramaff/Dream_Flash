@@ -127,12 +127,13 @@ if bossActiveAttackDelay[1] <= 0 and bossActiveAttackCooldown[1] <= 0 and bossAc
     bullet_speed = bossbulletspeed;
     bullet_power = bosspower * 1.5;
     bullet_direction = (-5 + random(10)) / bossaccuracy;
-    bullet_lifespan = 320;
+    bullet_lifespan = 322;
     bullet_size = 1;
     bullet_count = 1;
     bullet_spread = 0;
     boss_radius = 0;
 	bullet_image_speed = 0.5;
+	bullet_lob_time = 80;
 
 if bossActiveAttackDelay[1] <= 0 {        
     
@@ -179,11 +180,12 @@ if bossActiveAttackDelay[1] <= 0 {
     bullet_speed = bossbulletspeed;
     bullet_power = bosspower * 1.5;
     bullet_direction = (-5 + random(10)) / bossaccuracy;
-    bullet_lifespan = 320;
+    bullet_lifespan = 322;
     bullet_size = 1;
     bullet_count = 1;
     bullet_spread = 0;
     boss_radius = 0;
+	bullet_lob_time = 80;
 
 if bossActiveAttackDelay[1] <= 0 and bossPatternCooldown <= 0 and bossPatternCount > 0 {
 	
@@ -192,6 +194,7 @@ if bossActiveAttackDelay[1] <= 0 and bossPatternCooldown <= 0 and bossPatternCou
 		bullet_sprite = spr_Vanity_Ball;
 		bullet_power = bosspower * 1.1;
 		bullet_image_speed = 0.5;
+		
 		
 		scr_Boss_Stretch("Vertical", 0.3);
 		

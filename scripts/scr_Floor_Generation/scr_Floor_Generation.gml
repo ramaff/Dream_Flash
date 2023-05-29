@@ -11,16 +11,20 @@ function scr_Floor_Generation() {
 	for(i = 1; i <= (global.maxRooms); i++) {
 		//show_debug_message("scr_Floor_Generation: " + string(i))
 	    roomAttempt = 0;
-	    if i = 6 {
-	        nextRoomType = choose("Weapon Field");
+	    if i = 4 {
+	        nextRoomType = choose("Weapon Field", "Misc Field");
 	    } 
-	    if i = 12 {
-	        nextRoomType = choose("Misc Field");
+	    if i = 11 {
+			if Flash[4,0] = "Weapon Field" {
+				nextRoomType = "Misc Field";
+			} else {
+				nextRoomType = "Weapon Field";
+			}
 	    }
-	    if i = 9 {
+	    if i = 8 {
 	        nextRoomType = "Shop";
 	    } 
-	    if i != 6 and i != 9 and i != 12 {
+	    if i != 4 and i != 8 and i != 11 {
 	        nextRoomType = "Boss";
 	    }
 		if (i >= extraRoomStart + 1) {
@@ -32,10 +36,10 @@ function scr_Floor_Generation() {
 				}
 			}
 		}
-	    if i = 3 and global.currentchapter = 1 {
+	    /*if i = 3 and global.currentchapter = 1 {
 	        nextRoomType = choose("Strength Field","Vitality Field","Essence Field","Dexterity Field","Perception Field");
 			//nextRoomType = "Strength Field";
-		} 
+		}  */
 	    Flash[i,0] = nextRoomType;
     
 	    Flash[i,3] = 1024;
@@ -123,7 +127,7 @@ function scr_Floor_Generation() {
 				}
 				
 	        }
-	        Flash[9,4] = bg_Safe_Room_Tiles;
+	        Flash[8,4] = bg_Safe_Room_Tiles;
 	        //Flash[1,4] = bg_Caves;
 	        //Flash[2,4] = bg_Depths;
 	    }
@@ -343,8 +347,7 @@ function scr_Floor_Generation() {
 			
 			itemNumChoice = 1 + floor((global.soulhope + random(global.soulhope * 3)) / 100);
 	        itemNumPick = 1;
-			
-			var stype = choose(1,2,3,4,6,7,9);
+
 			
 	        for(j = 1; j <= itemNumChoice; j++) {
 	            Flash[i,j+6] = scr_Misc_Field_Pool_Pick();
@@ -352,7 +355,7 @@ function scr_Floor_Generation() {
 			
 			var baseroom = ceil(i / 4);
 			
-			Flash[i,21] = scr_State_Boss_Choose(stype); // Boss Type or Item Type
+			Flash[i,21] = scr_State_Boss_Choose(false); // Boss Type or Item Type
 	        Flash[i,22] = 0; // Boss Champ or Second Item
 	        Flash[i,23] = 0; // Boss Boost or Third Item
 	        Flash[i,24] = 0;

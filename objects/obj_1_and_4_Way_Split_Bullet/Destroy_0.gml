@@ -20,7 +20,7 @@ repeat(1) {
     dir += 30;
 }
 
-dir = 45;
+dir = -45;
 repeat(4) {
     with instance_create(x,y,obj_Basic_Bullet) {
         scr_Bullet_Replicate_Properties();
@@ -31,12 +31,12 @@ repeat(4) {
         image_yscale = bulletsize;
         soulshotblock = 0;
         sprite_index = spr_Glowy_Dark_Green_Shot;
-        bulletspeed = other.bulletspeed * 1;
+        bulletspeed = other.bulletspeed * 0.5;
         bulletpower = other.bulletpowermax * 0.5;
         direction = scr_Soul_Point() + dir;
         speed = bulletspeed;
     }   
-    dir += 90;
+    dir += 30;
 }
 /*
 dir = -15;

@@ -8,12 +8,15 @@ function scr_Charged_Release() {
 			current_weapon_stats = variable_struct_get(global.weapon_stats, string(weaponcharge))
 			scr_Setup_Charge_Stats()
 			
-			scr_Default_Weapon_Stats();
+			//scr_Default_Weapon_Stats();
 		
 			scr_Setup_Weapon_Stats();
-		
-			scr_Hard_Coded_Weapon_Stats(weaponcharge);
 			
+			if Charge_Hold = 2 {
+				scr_Ascending_Soul_Essence_Beam(weaponcharge);
+			}
+		
+			//scr_Hard_Coded_Weapon_Stats(weaponcharge);
 			
 			Shot_Speed += Charge_Speed;
 			Shot_Power += Charge_Power;
@@ -22,7 +25,8 @@ function scr_Charged_Release() {
 			Shot_Size += Charge_Size;
 			
 			if Charge_Hold = 2 {
-				Shot_Size = Charge_Size;	
+				//Shot_Size = Charge_Size;	
+				scr_Weapon_Use_List(weaponcharge)
 			}
 			
 			if weaponcharge = 10 {
@@ -50,16 +54,20 @@ function scr_Charged_Release() {
 	        if weaponcharge = 312 {
 	            //scr_Adept_Magic_Staff_Use();
 				if Shot_Power > 50 {
-					Shot_Extra_Hits[1] = 1;
-					Shot_Extra_Hits_Sprite[1] = Shot_Duplicate_Sprite;
-					Shot_Extra_Hit_Frequency[1] = 15;
-					Shot_Extra_Hit_Power[1] = Shot_Power / 8;
-					Shot_Extra_Hit_Speed[1] = 0;
-					Shot_Extra_Hit_Lifespan[1] = 75;
-					Shot_Extra_Hit_Homing[1] = 1;
-					Shot_Extra_Hit_Homing_Speed[1] = 10;
-					Shot_Extra_Hit_Pierce[1] = 1;
-					Shot_Extra_Hit_Acceleration[1] = 0.6;
+			        Shot_Stats.Shot_Extra_Stats[0] = {
+			            Shot_Count: 1,
+			            Shot_Extra_Hit_Frequency: 15,
+			            Shot_Sprite: "spr_Adept_Bolt_Shot",
+			            Shot_Power: Shot_Power / 8,
+			            Shot_Speed: 1,
+			            Shot_Acceleration: 0.6,
+			            Shot_Lifespan: 60,
+			            Shot_Homing_Type: 1,
+			            Shot_Homing_Speed: 10,
+			            Shot_Pierce: 1,
+			            Shot_Size: 0.5
+			        }
+			        
 				}
 		
 				Weapon_Split_Visible = 1;
@@ -80,6 +88,8 @@ function scr_Charged_Release() {
 	            //scr_Energy_Bomb_Cannon_Use();
 				Shot_Burst_Power = Shot_Power / 10;
 	        }
+			
+			scr_OC03(weaponcharge);
 		
 			scr_Shot_Creation();
 

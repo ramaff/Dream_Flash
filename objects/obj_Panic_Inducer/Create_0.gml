@@ -12,7 +12,7 @@ sshotknockback = 5;
 sshotknockbackaddition = 0;
 sknockbackdefense = 0;
 sknockbackforce = 5;
-scontactdamage = 5;
+scontactdamage = 1;
 
 saccuracy = 1;
 

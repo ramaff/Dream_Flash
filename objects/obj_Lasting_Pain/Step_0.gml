@@ -1,6 +1,7 @@
 /// @description Insert description here
 // You can write your code in this editor
 
+depth = -10;
 
 scr_Boss_Height_Bob(30, 2, 0);
 if alarm[0] <= 0 {
@@ -24,7 +25,7 @@ if instance_exists(obj_Soul_Parent) {
 	instance_destroy();	
 }
 
-var setdist = 30;
+var setdist = 25;
 var setspeed = 2.25;
 
 var dis = point_distance(x, y, followtarget.perX, followtarget.perY)

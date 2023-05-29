@@ -14,8 +14,8 @@
     "path": "folders/Objects/Bosses/Flash Bosses.yy",
   },
   "parentObjectId": {
-    "name": "obj_Main_Boss_Parent",
-    "path": "objects/obj_Main_Boss_Parent/obj_Main_Boss_Parent.yy",
+    "name": "obj_Wall_Stop_Ground_Boss_Parent",
+    "path": "objects/obj_Wall_Stop_Ground_Boss_Parent/obj_Wall_Stop_Ground_Boss_Parent.yy",
   },
   "persistent": false,
   "physicsAngularDamping": 0.1,

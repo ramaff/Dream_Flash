@@ -2,6 +2,13 @@ function scr_Barrage_Weapon_Use(cWP) {
 
 	current_weapon_stats = variable_struct_get(global.weapon_stats, string(cWP))
 	scr_Default_Weapon_Stats();
+	
+	//Print_DF(string(Shot_Repetition_Stats[bi]))
+	
+	if Shot_Repetition_Stats[bi] != false {
+		current_weapon_stats = Shot_Repetition_Stats[bi]
+	}
+	
 	scr_Setup_Weapon_Stats();
 	
 	if Shot_Repetition[bi] >= 1 {

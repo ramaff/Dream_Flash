@@ -53,7 +53,7 @@ if instance_exists(obj_Soul_Parent) {
 
 }
 
-if instance_exists(obj_Main_Boss_Parent) || instance_exists(obj_Soul_Collector) || (global.spiritRoom == global.currentroom) || (global.currentroom != 0 and global.evilSpiritRoom == global.currentroom) and scr_Negative_Room_Check() {
+if !scr_Room_Leavable() {
     var totalbossnum = instance_number(obj_Main_Boss_Parent);
 	totalbossnum -= instance_number(obj_Sandman_Thought);
 	totalbossnum -= instance_number(obj_Veil_Mask);

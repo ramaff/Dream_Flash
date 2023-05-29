@@ -1,5 +1,5 @@
 var dir = 0;
-repeat(4) {
+repeat(3) {
     with instance_create(x,y,obj_Corruption_Bomb) {
         scr_Bullet_Replicate_Properties();
 		bulletlifespan = 120;
@@ -19,7 +19,7 @@ repeat(4) {
         //direction += other.dir;
         speed = bulletspeed;
     }   
-    dir += 360 / 4;
+    dir += 360 / 3;
 }
 	dir = 0;
 	repeat(30) {
@@ -31,7 +31,8 @@ repeat(4) {
 			image_yscale = bulletsize;
             sprite_index = spr_Glowy_Green_Shot;
             bulletspeed = other.bulletspeed * (0.6);
-            bulletpower = other.bulletpower * 0.5;
+            bulletpower = global.stagedamage
+            bulletpowermax = global.stagedamage
             speed = bulletspeed;
             direction = dir;
         }

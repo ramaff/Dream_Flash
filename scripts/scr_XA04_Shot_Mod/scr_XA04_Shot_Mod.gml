@@ -8,9 +8,23 @@ function scr_XA04_Shot_Mod(){
 		shotspeed += 2 * global.XA[4];
 		speed = shotspeed;
 		
-		shotfire += 2 * global.XA[4];
+		shotfire += 3 * global.XA[4];
 		shotfireticks = 3;
 		shotfiretime = 90;
+		
+		if shotimpacttype = 0 {
+            shotimpacttype = 1;
+        }
+		
+		shotimpactpower += 4 * global.XA[4];
+        shotimpactsize += 40;
+		if shotimpactsize <= 80 {
+			shotimpactsize = 80;
+		}
+		if shotimpactpower <= 8 {
+			shotimpactpower = 8;	
+		}
+		shotImpactPowerLevel = shotimpactpower;
 		
 		//if shottrail < 2 {
 			shottrail = 2;

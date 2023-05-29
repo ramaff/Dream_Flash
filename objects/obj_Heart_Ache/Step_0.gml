@@ -64,7 +64,7 @@ if bossActiveAttackDelay[1] <= 0 and bossActiveAttackCooldown[1] <= 0 and bossAc
     scr_Default_Attack_Settings();
     bullet_type = obj_Speed_UpDown_Bullet;
     bullet_sprite = spr_Ache_Direction_Bullet;
-    bullet_speed = bossbulletspeed * (2.1 + random(0.3));
+    bullet_speed = bossbulletspeed * (1.6 + random(0.3));
     bullet_power = bosspower;
     bullet_direction = (-20 + random(40)) / bossaccuracy;
     bullet_lifespan = 400;
@@ -128,7 +128,7 @@ if bossActiveAttackDelay[1] <= 0 and bossPatternCooldown <= 0 and bossPatternCou
 		scr_Boss_Stretch("Vertical", 0.3);
 		
         bullet_count = 1;
-        var startspeed = 3 + random(0.15);
+        var startspeed = 2.1 + random(0.15);
         bullet_speed = bossbulletspeed * startspeed;
         scr_Soul_Shoot();
         bullet_count = 6;
@@ -153,7 +153,7 @@ if bossActiveAttackDelay[1] <= 0 and bossPatternCooldown <= 0 and bossPatternCou
         bullet_direction = random(360);
         bullet_count = 6;
         bullet_spread = 360 / bullet_count;
-        bullet_speed = bossbulletspeed * (2.5 + random(0.15));
+        bullet_speed = bossbulletspeed * (1.9 + random(0.15));
         scr_Just_Shoot();
         bullet_direction += 8;
         bullet_speed -= bossbulletspeed * 0.1;
