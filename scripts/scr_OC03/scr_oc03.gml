@@ -25,7 +25,7 @@ function scr_OC03(cWP = global.currentweapon){
 					Shot_Repetition_Direction[bi] = point_direction(x,y,mouse_x,mouse_y);
 				}
 				//Shot_Repetition_Max[bi] = 7;
-				Shot_Barrage_Speed[bi] = 7;
+				Shot_Barrage_Speed[bi] = (7 + (weaponDelay / 3)) / 2;
 				alarm[11] = (Shot_Barrage_Speed[bi]);
 
 				if global.D[10] > 0 {

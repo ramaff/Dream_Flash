@@ -11,13 +11,6 @@ alarm[2] = 2;
 
 instance_create(x,y,obj_Astral_Indicator);
 
-/*if global.soulSpawnXAdd < 0 {
-    image_index = 1
-} else {
-    image_index = 0;
-}
-*/
-
 upixelH = shader_get_uniform(shOutline,"pixelH");
 upixelW = shader_get_uniform(shOutline,"pixelW");
 

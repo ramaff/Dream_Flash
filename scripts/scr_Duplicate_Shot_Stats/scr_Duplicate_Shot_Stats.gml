@@ -253,7 +253,7 @@ function scr_Duplicate_Shot_Stats() {
 	shotshieldtype = other.shotshieldtype;
 	shotshieldpower = 0;
 	shotreboundtype = other.shotreboundtype;
-	shotreboundpower = 0;
+	shotreboundpower = other.shotreboundpower;
 	shotweaken = other.shotweaken;
 	shotweakentime = other.shotweakentime;
 	shotpoison = other.shotpoison;

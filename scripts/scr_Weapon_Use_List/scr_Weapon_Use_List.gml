@@ -27,7 +27,7 @@ function scr_Weapon_Use_List(cWP = global.currentweapon) {
 	//show_debug_message("Weapon Cost: " + string(weaponCost) + ", Weapon Delay: " + string(weaponDelay))
 	
 	if cWP = 603 and umbrellaActive {
-		weaponCost = weaponCost / 15;
+		weaponCost = weaponCost / 10;
 	}
 	
 	if weaponCost > 2 {
@@ -56,13 +56,14 @@ function scr_Weapon_Use_List(cWP = global.currentweapon) {
 	var lHalf = 0;
 
 	if (global.L[1] > 0) {
-		lHalf = scr_L01();	
+		lHalf = scr_L01(weaponCost);
 		if lHalf = 1 {
 			weaponDelay = weaponDelay / 1.25;
 		}
 	}
 	
-	if senergy >= weapStop + weaponCost || Charge_Hold = 2 { 
+	//if senergy >= weapStop + weaponCost || Charge_Hold = 2 { 
+	if senergy >= weaponCost || Charge_Hold = 2 || weapStop != 0 { 
 	
 		global.soulNoShoot = 0;
 		
@@ -162,7 +163,9 @@ function scr_Weapon_Use_List(cWP = global.currentweapon) {
 			}
 		}
 		
-		scr_OC03(cWP);
+		if spawnProjectile {
+			scr_OC03(cWP);
+		}
 		
 		scr_XC06_Cost_Adjustment();
 		
@@ -182,6 +185,10 @@ function scr_Weapon_Use_List(cWP = global.currentweapon) {
 	    sWeaponUseFrame = 1;   
 		sWeaponTicker++;
 		global.essencebeamtime++;
+		
+		if weapStop != 0 {
+			senergy = max(0, senergy)	
+		}
 		
 		sWeaponWarmUp += weaponDelay * (2 + (300 / 180));
 		
