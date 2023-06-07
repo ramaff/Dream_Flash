@@ -4,4 +4,6 @@ function scr_Shot_Power_Set(factor = 1){
 	shotpower = shotpower * factor;
 	shotaurapower = shotaurapower * factor;
 	shotpowermax = shotpower;
+	
+	shotPowelLevel = shotPowerLevel * factor;
 }

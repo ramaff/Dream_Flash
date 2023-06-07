@@ -5,33 +5,6 @@ function scr_Default_Weapon_Stats() {
 	//Shot_Default_Count = 1;
 	
 	Shot_Stats = scr_Setup_Default_Shot_Stats()
-    // json_parse(json_stringify(global.DEFAULT_SHOT_STATS));
-	
-	/*Shot_Stats = {
-		Shot_Extra_Stats: false,
-		Shot_Burst_Stats: false,
-		Shot_Air_Burst_Stats: false,
-		Shot_Lobbing: false,
-		Shot_Lobbing_Tilt: 0,
-		Shot_Height: 10,
-		Shot_Fall_Speed: 0,
-		Shot_Gravity: 0,
-		Shot_Count: 3,
-        Shot_Sprite: spr_Soul_Shot,
-        Shot_Power: 9,
-        Shot_Speed: 12,
-        Shot_Lifespan: 25,
-        Shot_Homing_Type: 0,
-        Shot_Homing_Speed: 0,
-        Shot_Pierce: 1,
-        Shot_Size: 0.5,
-        Shot_Point_Angle: true,
-		Shot_Extra_Hit_Frequency: 0,
-		Shot_Acceleration: 0,
-		Shot_Fade: 0,
-		Shot_Shrink: 0,
-		Shot_Boss_Aim: 0
-	} */
 
 	Shot_Beam = 0;
 	Shot_Beam_Count = 40;

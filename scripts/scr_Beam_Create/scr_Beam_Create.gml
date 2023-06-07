@@ -87,13 +87,18 @@ function scr_Beam_Create(shxx, shyy, beamseg, beamdir, curvedir, beamstop, beamx
 			}
 			if instance_exists(near_boss) and burstIndex >= 0 and shotairburststats[burstIndex] != false {
 				var near_dist = point_distance(shxx + beamxx,shyy + beamyy,near_boss.x,near_boss.y) - 50
+				var sprd = shotairburststats[burstIndex].Spread
 				if near_dist <= shotairburststats[burstIndex].Range {
-					dir = -shotairburststats[burstIndex].Spread / 2;
+					dir = -sprd / 2;
 					shotlifespan = shotlifespan * 0.6;
 					shothitagain = 1
 					
 					repeat(shotairburststats[burstIndex].Amount) {
-							
+						
+						if sprd < 0 {
+							dir = random(sprd) - (sprd / 2)
+						}
+						
 						with instance_create(shxx + beamxx,shyy + beamyy,obj_Beam_Shot) {
 							
 							//Print_DF("hitagain: " + string(other.shothitagain))

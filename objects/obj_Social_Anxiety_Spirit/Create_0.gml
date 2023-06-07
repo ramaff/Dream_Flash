@@ -25,3 +25,5 @@ sshotknockback = 5;
 sshotknockbackaddition = 0;
 
 saccuracy = 1;
+
+bosshealth = 200;

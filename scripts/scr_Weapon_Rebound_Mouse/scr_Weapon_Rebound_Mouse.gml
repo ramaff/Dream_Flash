@@ -34,7 +34,8 @@ function scr_Weapon_Rebound_Mouse() {
 			Shot_Size: other.bsize,
 			Shot_Forward: 0,
 			Shot_Form_Show: 0,
-			Shot_Angle: other.image_angle//point_direction(obj_Soul_Parent.x,obj_Soul_Parent.y,mouse_x,mouse_y)
+			Shot_Angle: other.image_angle, //point_direction(obj_Soul_Parent.x,obj_Soul_Parent.y,mouse_x,mouse_y)
+			Shot_Init_Grow: 0
 		};
 	
 		if other.bspeed > 0 {
