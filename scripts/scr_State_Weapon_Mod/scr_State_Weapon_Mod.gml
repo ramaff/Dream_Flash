@@ -7,7 +7,7 @@ function scr_State_Weapon_Mod(){
 	}
 	
 	if other.Shot_Off_State = 0 and shotorigin = obj_Soul_Parent {
-		if (obj_Soul_Parent.scurrentstate == "Snake" || (obj_Soul_Parent.stransformedstate == "Snake" and reverie == true)) {
+		if scr_State_Active_Check("Snake", reverie) and other.Shot_Beam = 0 {
 			shotsnakemove = 2;
 			shottargetX = mouse_x;
 			shottargetY = mouse_y;

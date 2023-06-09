@@ -65,10 +65,14 @@ if shot_stats.Shot_Lobbing_Tilt != 0 {
 	angle -= wobble * shot_stats.Shot_Lobbing_Tilt;
 }
 
+//Print_DF(shot_stats.Shot_Init_Grow)
+
+if shot_stats.Shot_Init_Grow = 0 {
+	shotSizeRelation = 1;
+	sSize = 1;
+} 
+
 if ((shotlifespan - shottimer) <= (tdist)) and (shotlifespan > (tdist)) and (shotformshow = 1) {
-    //d3d_set_fog(true,c_white,0,0);
-    //draw_sprite_ext(sprite_index,image_index,x,y,image_xscale * sSize,image_yscale * sSize,image_angle,c_white,image_alpha);
-    //d3d_set_fog(false,c_black,0,0);
     draw_sprite_ext(sprite_index,image_index,x,y,image_xscale * sSize,image_yscale * sSize,angle,c_white,image_alpha/* * sSize*/);
 } else {
     draw_sprite_ext(sprite_index,image_index,x,y,image_xscale * shotSizeRelation,image_yscale * shotSizeRelation,angle,c_white,image_alpha);

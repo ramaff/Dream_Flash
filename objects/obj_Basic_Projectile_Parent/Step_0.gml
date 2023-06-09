@@ -46,6 +46,7 @@ shottimer--;
 	speed = speed * fac;
 } */
 
+
 if shotshrink = 1 {
 	shotsize -= shotsizemax / shotlifespan;
 	image_xscale = shotsize;
@@ -91,14 +92,6 @@ if shotmousemaintain = 1 {
 	direction = scr_Angle_Converge(direction, targetdirection, speed + 2);
 	image_angle = direction
 	
-	/*
-	if image_angle >= direction + shotturnspeed {
-		image_angle -= shotturnspeed;
-	} else if image_angle <= direction - shotturnspeed {
-		image_angle += shotturnspeed;
-	} else {
-		image_angle = direction;	
-	} */
 }
 if shotsoulmaintain = 1 {
 	if instance_exists(shotfolloworigin) {
@@ -126,15 +119,18 @@ if shotairburststats != false {
 	if instance_exists(obj_Boss_Parent) {
 		near_boss = instance_nearest(x,y, obj_Boss_Parent).id
 	}
+	var sprd = shotairburststats[burstIndex].Spread
 	if instance_exists(near_boss) and burstIndex >= 0 and shotairburststats[burstIndex] != false {
-		//show_debug_message(shotairburststats)
-		//Print_DF(string(object_get_name(near_boss.object_index)))
 		if distance_to_object(near_boss) <= shotairburststats[burstIndex].Range {
-			dir = -shotairburststats[burstIndex].Spread / 2;
+			dir = -sprd / 2;
 			shotlifespan = shotlifespan * 0.6;
 		    repeat(shotairburststats[burstIndex].Amount) {
+				
+				if sprd < 0 {
+					dir = random(sprd) - (sprd / 2)
+				}
+				
 		        with instance_create(x,y,object_index) {
-					//shotlifespan = other.shotlifespan / 2;
 		            scr_Duplicate_Shot_Stats();
 						
 					var vshotairburststats = other.shotairburststats[burstIndex]
@@ -257,18 +253,7 @@ if shotaura = 1 {
 
 if shothomingtype = 1 {
     target = noone
-	/* if instance_exists(obj_Boss_Parent) {
-	    with(obj_Boss_Parent) {
-	        dis = distance_to_object(other);
-			if ds_exists(projectile_hits, ds_type_list) {
-		        var hit_again = ds_list_find_index(projectile_hits, other.shot_boss_id);
-		        if hit_again = -1
-		        if other.target == noone || dis < other.target.dis
-		        if collision_circle(other.x, other.y, other.shothomingrange, id, true, false)
-		        other.target = id;
-			}
-	    }
-	} */
+
 	if instance_exists(obj_Boss_Parent) {
 	    with(obj_Boss_Parent) {
 	        var dis = distance_to_object(other);

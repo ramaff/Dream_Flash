@@ -261,7 +261,7 @@ function scr_Extra_Shot_Stats() {
 		scr_U01();
 		scr_U05();
 	
-		scr_V06();
+		//scr_V06();
 		scr_V08();
 		scr_V09();
 	
@@ -282,7 +282,7 @@ function scr_Extra_Shot_Stats() {
 		scr_XA03_Shot_Mod();
 		scr_XA04_Shot_Mod();
 		
-		scr_XB02();
+		//scr_XB02();
 		
 		if global.XC[2] > 0 {
 			scr_XC02_Shot_Mod();

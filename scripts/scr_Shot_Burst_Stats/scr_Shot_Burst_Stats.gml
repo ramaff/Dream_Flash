@@ -42,6 +42,10 @@ function scr_Shot_Burst_Stats(vshotburststats){
 		shotspeed = vshotburststats.Shot_Speed
 		speed = shotspeed;
 	}
+	if variable_struct_exists(vshotburststats, "Burst_Speed") {
+		shotspeed = vshotburststats.Burst_Speed
+		speed = shotspeed;
+	}
 	if variable_struct_exists(vshotburststats, "Shot_Point_Angle") {
 		shotpointangle = vshotburststats.Shot_Point_Angle
 	}
