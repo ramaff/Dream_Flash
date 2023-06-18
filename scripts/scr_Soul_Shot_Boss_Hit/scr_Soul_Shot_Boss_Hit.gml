@@ -139,20 +139,13 @@ function scr_Soul_Shot_Boss_Hit() {
 				if instance_exists(obj_Boss_Parent) and burstIndex >= 0 {
 					dir = -shotburststats[burstIndex].Spread / 2;
 					shotlifespan = shotlifespan * 0.6;
+					image = 1
 					repeat(shotburststats[burstIndex].Amount) {
-					    with instance_create(x,y,obj_Lesser_Soul_Shot) {
+					    with instance_create(x,y,object_index) {
 					        scr_Duplicate_Shot_Stats();
-						
 							var vshotburststats = other.shotburststats[burstIndex]
-							
-							//show_debug_message("scr_Soul_Shot_Boss_Hit image alpha: " + string(image_alpha))
-							//show_debug_message("scr_Soul_Shot_Boss_Hit spr: " + string(sprite_get_name(sprite_index)))
 					
 							scr_Shot_Burst_Stats(vshotburststats);
-							
-							/*show_debug_message("scr_Soul_Shot_Boss_Hit stats: " + string(shot_stats))
-							show_debug_message("scr_Soul_Shot_Boss_Hit lifespan: " + string(shotlifespan))
-							show_debug_message("scr_Soul_Shot_Boss_Hit alarm[0]: " + string(alarm[0])) */
 					
 							if burstIndex > 0 {
 								shotburststats = [];
@@ -162,7 +155,6 @@ function scr_Soul_Shot_Boss_Hit() {
 							} else {
 								shotburststats = false;	
 							}
-							//array_delete(shotburststats,burstIndex,1);
 					    }
 					    dir += shotburststats[burstIndex].Spread;
 					}

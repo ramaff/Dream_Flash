@@ -140,12 +140,12 @@ function scr_Recollection_Panel_Assign() {
 	            itemVal = "H0" + string(i + 1 - inum);
 	        }
 	    }
-	    for(i = inum+9; i <= inum+15; i++) {
+	    for(i = inum+9; i <= inum+16; i++) {
 	        if buttNum = i {
 	            itemVal = "H" + string(i + 1 - inum);
 	        }
 	    }
-		inum += 16;
+		inum += 17;
 		for(i = inum; i <= inum+8; i++) {
 	        if buttNum = i {
 	            itemVal = "I0" + string(i + 1 - inum);

@@ -4250,6 +4250,7 @@
     {"id":{"name":"obj_Big_Barrier_Bullet","path":"objects/obj_Big_Barrier_Bullet/obj_Big_Barrier_Bullet.yy",},},
     {"id":{"name":"obj_Spectre_Big_Blast","path":"objects/obj_Spectre_Big_Blast/obj_Spectre_Big_Blast.yy",},},
     {"id":{"name":"obj_Basic_Wall_Bullet","path":"objects/obj_Basic_Wall_Bullet/obj_Basic_Wall_Bullet.yy",},},
+    {"id":{"name":"scr_V06_Active","path":"scripts/scr_V06_Active/scr_V06_Active.yy",},},
     {"id":{"name":"obj_Accel_Bullet","path":"objects/obj_Accel_Bullet/obj_Accel_Bullet.yy",},},
     {"id":{"name":"spr_Split_Focus_Art","path":"sprites/spr_Split_Focus_Art/spr_Split_Focus_Art.yy",},},
     {"id":{"name":"obj_Wall_Spit_Bullet","path":"objects/obj_Wall_Spit_Bullet/obj_Wall_Spit_Bullet.yy",},},

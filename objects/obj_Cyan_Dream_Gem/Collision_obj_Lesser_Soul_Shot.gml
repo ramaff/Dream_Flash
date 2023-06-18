@@ -28,8 +28,10 @@ if !hit_again and other.shotmelee = 0 {
             shotspeed = 10;
             speed = 10;
         }
-        sprite_index = spr_Cyan_Gem_Shot;
-        if shotbursttype = 0 {
+		if shotmelee = 0 and shotbeam = 0 and sprite_get_width(sprite_index) <= 100 {
+			sprite_index = spr_Cyan_Gem_Shot;
+		}
+        /*if shotbursttype = 0 {
             shotbursttype = 1;
             shothitagain = 0;
             image = 1;
@@ -49,6 +51,28 @@ if !hit_again and other.shotmelee = 0 {
 	        if shotburstpower < 3 {
 	            shotburstpower = 3;
 	        }
+			} */
+			if shotburststats != false {
+				var burstIndex = max(0, array_length(shotburststats));
+			} else {
+				shotburststats = [];
+				var burstIndex = 0;
+			}
+
+			shotburststats[burstIndex] = {
+				Shot_Count: 1,
+                Shot_Sprite: string(sprite_get_name(sprite_index)),
+                Shot_Type: "obj_Lesser_Soul_Shot",
+                Burst_Power: 0.25,
+                Shot_Lifespan: 30,
+                Burst_Size: 0.7,
+                Shot_Size: 1,
+                Shot_Pierce: shotpierce,
+                Weapon_Split_Visible: 1,
+                Weapon_Split_Hit_Again: 1,
+                Spread: 180,
+                Amount: 2,
+				Shot_Alpha: 1
 			}
 		
 		if shotsize > 1 {

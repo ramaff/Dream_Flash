@@ -171,7 +171,7 @@ function scr_Weapon_Use_List(cWP = global.currentweapon) {
 		
 		scr_XA03_Cost_Adjustment();
 		
-		if global.V06Overwhelm > (8 - global.V[6]) {
+		if scr_V06_Active() {
 			weaponCost += weaponCost;
 		}
 
