@@ -33,7 +33,7 @@ if instance_number(obj_Conga_Line) <= total_num {
 	var distt = 0;
 	var angg = 0;
 
-	for(var i = 0; i < 14; i++) {
+	for(var i = 0; i < 10; i++) {
 		distt = 120 + (120 * floor(i / 4))
 		angg = -45 + ((i mod 4) * 30)
 		xx = lengthdir_x(distt, opdir + angg) + x;

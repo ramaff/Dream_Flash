@@ -640,33 +640,33 @@ function scr_Hard_Coded_Item_Stats(itemVal, items_to_add = 1, reload = false) {
 		}
 
 		if itemVal = "K03" {
-		    global.soulstrength += 2.5 * global.currentchapter;
-		    obj_Soul_Parent.sstrength += 2.5 * global.currentchapter;
+		    global.soulstrength += 2 * global.currentchapter;
+		    obj_Soul_Parent.sstrength += 2 * global.currentchapter;
 		    //global.K[3]++;
 		}
 		if itemVal = "K04" {
-		    global.soulvitality += 2.5 * global.currentchapter;
-		    obj_Soul_Parent.svitality += 2.5 * global.currentchapter;
+		    global.soulvitality += 2 * global.currentchapter;
+		    obj_Soul_Parent.svitality += 2 * global.currentchapter;
 		    //global.K[4]++;
 		}
 		if itemVal = "K05" {
-		    global.soulessence += 2.5 * global.currentchapter;
-		    obj_Soul_Parent.sessence += 2.5 * global.currentchapter;
+		    global.soulessence += 2 * global.currentchapter;
+		    obj_Soul_Parent.sessence += 2 * global.currentchapter;
 		    //global.K[5]++;
 		}
 		if itemVal = "K06" {
-		    global.souldexterity += 2.5 * global.currentchapter;
-		    obj_Soul_Parent.sdexterity += 2.5 * global.currentchapter;
+		    global.souldexterity += 2 * global.currentchapter;
+		    obj_Soul_Parent.sdexterity += 2 * global.currentchapter;
 		    //global.K[6]++;
 		}
 		if itemVal = "K07" {
-		    global.soulperception += 2.5 * global.currentchapter;
-		    obj_Soul_Parent.sperception += 2.5 * global.currentchapter;
+		    global.soulperception += 2 * global.currentchapter;
+		    obj_Soul_Parent.sperception += 2 * global.currentchapter;
 		    //global.K[7]++;
 		}
 		if itemVal = "K08" {
-		    global.soulstate += 2.5 * global.currentchapter;
-		    obj_Soul_Parent.sstate += 2.5 * global.currentchapter;
+		    global.soulstate += 2 * global.currentchapter;
+		    obj_Soul_Parent.sstate += 2 * global.currentchapter;
 		    //global.K[8]++;
 		}
 	
@@ -961,30 +961,30 @@ function scr_Hard_Coded_Item_Stats(itemVal, items_to_add = 1, reload = false) {
 
 	if !reload {
 		if itemVal = "R01" {
-		    global.soulflash += 60;
+		    global.soulflash += 55;
 		    global.souldespair += 5;
 		    scr_Spirit_Add_Commands();
 		    //global.R[1]++;
 		}
 		if itemVal = "R02" {
-		    global.soulflash += 50;
+		    global.soulflash += 45;
 		    global.soulparanoia += 5;
 		    //global.R[2]++;
 		}
 		if itemVal = "R03" {
-		    global.soulflash += 40;
+		    global.soulflash += 35;
 		    global.soulloathing += 5;
 		    scr_Spirit_Add_Commands();
 		    //global.R[3]++;
 		}
 		if itemVal = "R04" {
-		    global.soulflash += 30;
+		    global.soulflash += 20;
 		    global.soulvanity += 5;
 			scr_Spirit_Add_Commands();
 		    //global.R[4]++;
 		}
 		if itemVal = "R05" {
-		    global.soulflash += 20;
+		    global.soulflash += 15;
 		    global.soulbliss += 5;
 			scr_Spirit_Add_Commands();
 		    //global.R[5]++;

@@ -72,7 +72,8 @@ if global.gameTutorial < 5 {
     instance_create(room_width / 2,room_height / 2, Tutorial_Control);
 }
 
-alarm[0] = 2;
+alarm[0] = 1;
+//alarm[0] = 15;
 
 instance_create(room_width / 2,room_height / 2, obj_Basic_Soul);
 

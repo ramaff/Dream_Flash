@@ -2,7 +2,7 @@ function scr_Soul_Damage_Calculation() {
 	//Location Soul Hit Events
 
 	//if (damageamount > defenseamount) {
-	    soulinvincibility = 24;
+	    soulinvincibility = 36;
 		
 		//scr_E01();
     

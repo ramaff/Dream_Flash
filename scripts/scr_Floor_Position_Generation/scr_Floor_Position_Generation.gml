@@ -19,6 +19,10 @@ function scr_Floor_Position_Generation() {
 	    }
 	}
 	
+	/*if !scr_Chance(100) {
+		startOver = 1
+	} */
+	
 	if startOver != 1 {
 		for(i = extraRoomStart + 1; i <= global.maxRooms; i++) {
 			//show_debug_message("extra room attempt")
