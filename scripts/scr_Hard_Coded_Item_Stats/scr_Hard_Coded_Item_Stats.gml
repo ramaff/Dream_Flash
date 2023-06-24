@@ -12,67 +12,50 @@ function scr_Hard_Coded_Item_Stats(itemVal, items_to_add = 1, reload = false) {
 	if itemVal = "A01" {
 	    global.soulpoweradd += 2;
 	    obj_Soul_Parent.spoweradd += 2;
-	    //global.A[1]++;
 	}
 	if itemVal = "A02" {
-	    global.soularmourpierce += 4;
-	    obj_Soul_Parent.sarmourpierce += 4;
-	    //global.soulpoweradd += 1;
-	    //obj_Soul_Parent.spoweradd += 1;
-	    //global.A[2]++;
+	    global.soularmourpierce += 6;
+	    obj_Soul_Parent.sarmourpierce += 6;
 	}
 	if itemVal = "A03" {
-	    global.soulpowerfactor += 1;
-	    obj_Soul_Parent.spowerfactor += 1;
-	    //global.A[3]++;
+	    global.soulpowerfactor += 1.25;
+	    obj_Soul_Parent.spowerfactor += 1.25;
 	}
 	if itemVal = "A04" {
 	    global.soulshotpierce += 1;
 	    obj_Soul_Parent.sshotpierce += 1;
-	   // global.A[4]++;
 	}
 	if itemVal = "A05" {
-	    //global.A[5]++;
 	}
 	if itemVal = "A06" {
 	    global.soulshotknockback += 5;
 	    obj_Soul_Parent.sshotknockback += 5;
 	    global.soulshotspeed += 2;
 	    obj_Soul_Parent.sshotspeed += 2;
-	    //global.A[6]++;
 	}
 	if itemVal = "A07" {
-		/*
-	    global.soulpowerfactor += 1.5;
-	    obj_Soul_Parent.spowerfactor += 1.5;
-	    global.soulenergyconservationfactor -= 0.1;
-	    obj_Soul_Parent.senergyconservationfactor -= 0.1;
-	    global.soulshotspeed += 1;
-	    obj_Soul_Parent.sshotspeed += 1;
-		*/
-	    //global.A[7]++;
 	}
 	if itemVal = "A08" {
-	    global.soulpowerfactor += 1.5;
-	    obj_Soul_Parent.spowerfactor += 1.5;
-	    global.soulshotlifefactor -= 2;
-	    obj_Soul_Parent.sshotlifefactor -= 2;
-	    global.soulshotspeed += 1;
-	    obj_Soul_Parent.sshotspeed += 1;
+	    global.soulpowerfactor += 2.5;
+	    obj_Soul_Parent.spowerfactor += 2.5;
+	    global.soulshotlifefactor = ((global.soulshotlifefactor + 10) / 1.25) - 10;
+	    obj_Soul_Parent.sshotlifefactor = ((obj_Soul_Parent.sshotlifefactor + 10) / 1.25) - 10;
+	    //global.soulshotspeed += 1;
+	    //obj_Soul_Parent.sshotspeed += 1;
 	    //global.A[8]++;
 	}
 	if itemVal = "A09" {
 	    global.soulshotsizefactor += 0.25;
 	    obj_Soul_Parent.sshotsizefactor += 0.25;
-	    global.soulpowerfactor += 0.5;
-	    obj_Soul_Parent.spowerfactor += 0.5;
+	    global.soulpowerfactor += 0.75;
+	    obj_Soul_Parent.spowerfactor += 0.75;
 	    //global.A[9]++;
 	}
 	if itemVal = "A10" {
 	    global.soulcritadd += 1;
 	    obj_Soul_Parent.scritadd += 1;
-	    global.soulcritaddchance += 10;
-	    obj_Soul_Parent.scritaddchance += 10;
+	    global.soulcritaddchance += 12.5;
+	    obj_Soul_Parent.scritaddchance += 12.5;
 		//global.A[10]++;
 	}
 	if itemVal = "A11" {
@@ -86,8 +69,8 @@ function scr_Hard_Coded_Item_Stats(itemVal, items_to_add = 1, reload = false) {
 	if itemVal = "A13" {
 	    global.soulpoweradd += 1;
 	    obj_Soul_Parent.spoweradd += 1;
-	    global.soulpowerfactor += 0.5;
-	    obj_Soul_Parent.spowerfactor += 0.5;
+	    global.soulpowerfactor += 0.75;
+	    obj_Soul_Parent.spowerfactor += 0.75;
 	    //global.A[13]++;
 	}
 	if itemVal = "A14" {
@@ -122,8 +105,11 @@ function scr_Hard_Coded_Item_Stats(itemVal, items_to_add = 1, reload = false) {
 	}
 	if itemVal = "B06" {
 	    //global.B[6]++;
-	    global.soulheartboost += 0.25;
-	    obj_Soul_Parent.sheartboost += 0.25;
+	    //global.soulheartboost += 0.25;
+	    //obj_Soul_Parent.sheartboost += 0.25;
+		if !reload {
+			global.B06HeartConversions += 3;
+		}
 	}
 	if itemVal = "B07" {
 	    //global.B[7]++;

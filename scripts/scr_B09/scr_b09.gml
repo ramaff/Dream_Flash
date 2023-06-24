@@ -5,7 +5,7 @@
 
 function scr_B09(damage){
 	if global.B[9] > 0 {
-		var threshold = 60 + 30 * global.currentchapter;
+		var threshold = 40 + 20 * global.currentchapter;
 		
 		var bossid = other.id;
 	

@@ -6,6 +6,7 @@ function scr_Shot_Creation() {
 	scr_E10();
 	scr_A12();
 	scr_D06();
+	scr_A08();
 	scr_D11();
 	scr_V09_Add();
 	
@@ -77,7 +78,10 @@ function scr_Shot_Creation() {
 	actual_shot_direction = 0;
 	
 	if Shot_Mouse {
-		actual_shot_direction = point_direction(x,y,mouse_x,mouse_y);
+		actual_shot_direction = point_direction(x, y, mouse_x, mouse_y);
+		if Shot_XX != 0 || Shot_YY != 0 {
+			actual_shot_direction = point_direction(x + Shot_XX, y + Shot_YY, mouse_x ,mouse_y);
+		}
 	} else if !Shot_Mouse {
 		actual_shot_direction = Shot_Direction;
 	} else if soulshotmouse = 0 {
@@ -109,7 +113,10 @@ function scr_Shot_Creation() {
 	    yy = 0;
 		
 		if Shot_Mouse {
-			actual_shot_direction = point_direction(x,y,mouse_x,mouse_y);
+			actual_shot_direction = point_direction(x, y, mouse_x, mouse_y);
+			if Shot_XX != 0 || Shot_YY != 0 {
+				actual_shot_direction = point_direction(x + Shot_XX, y + Shot_YY, mouse_x ,mouse_y);
+			}
 		} else if !Shot_Mouse {
 		    actual_shot_direction = Shot_Direction;
 		} else if soulshotmouse = 0 {

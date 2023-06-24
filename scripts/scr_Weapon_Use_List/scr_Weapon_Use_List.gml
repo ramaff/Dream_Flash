@@ -139,6 +139,7 @@ function scr_Weapon_Use_List(cWP = global.currentweapon) {
 			} else {
 				scr_Soul_Spawn();	
 			}
+			scr_U10();
 		}
 		
 		if Shot_Extra != false {
@@ -159,6 +160,7 @@ function scr_Weapon_Use_List(cWP = global.currentweapon) {
 					} else {
 						scr_Soul_Spawn();	
 					}
+					scr_U10();
 				}
 			}
 		}
@@ -166,6 +168,7 @@ function scr_Weapon_Use_List(cWP = global.currentweapon) {
 		if spawnProjectile {
 			scr_OC03(cWP);
 		}
+		
 		
 		scr_XC06_Cost_Adjustment();
 		
@@ -196,8 +199,6 @@ function scr_Weapon_Use_List(cWP = global.currentweapon) {
 		
 		//scr_Soul_Stretch("Horizontal", 0.2);
 		// set to 0 on weapon Switch
-		
-		scr_U10();
 		
 		scr_Soul_Attack_Think();
 		

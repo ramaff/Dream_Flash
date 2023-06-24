@@ -31,6 +31,7 @@ function scr_Soul_Damage_Calculation() {
 			scr_T01_Decay(truedam)
 		}
 		scr_XC05(truedam);
+		scr_B14_Heart(truedam);
 		
 		truedam = scr_OB05(truedam);
 		

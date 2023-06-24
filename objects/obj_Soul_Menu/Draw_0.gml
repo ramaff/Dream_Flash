@@ -11,8 +11,8 @@ if (Pause_Control.pause) {
 	
 	draw_set_color(c_white);
 	
-	draw_text(camX + 80, camY - 296, "Items");
-	draw_line_color(camX + 40, camY - 276, camX + 300, camY - 276, c_white, c_white);
+	draw_text(camX + 40, camY - 274, "Items");
+	draw_line_color(camX, camY - 254, camX + 300, camY - 254, c_white, c_white);
 	
 	if global.recollectionStateUnlocked = 1 {
 		draw_text(camX - 304,camY + 176, "Switch to State Menu:");

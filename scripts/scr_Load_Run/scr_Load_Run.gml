@@ -246,6 +246,7 @@ function scr_Load_Run() {
 		global.temperCharge = ini_read_real("Run","temperCharge",0);
 		global.temperActive = ini_read_string("Run","temperActive","Base");
 		global.downwardSpiralBoost = ini_read_real("Run","downwardSpiralBoost",0);
+		global.B06HeartConversions = ini_read_real("Run","B06HeartConversions",0);
 		
 		//for(i = 0; i <= 39; i++) {
 	  

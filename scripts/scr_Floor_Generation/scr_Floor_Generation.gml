@@ -2,7 +2,7 @@ function scr_Floor_Generation() {
 	global.spiritRoom = choose(7,10,13);
 	//global.spiritRoom = 1;
 	if global.goodSpirits > 0 {
-	    global.evilSpiritRoom = choose(8,11,14);
+	    global.evilSpiritRoom = choose(9,12,14);
 	}
 
 	var extraRoomStart = global.chapterRooms;

@@ -29,19 +29,10 @@ if instance_exists(other.bossid) {
 			if (other.bossid.bosshealth < 0) {
 				damageamount = 0;
 			}
-			/*
-			part_type_sprite(ptype,spr_Soul_Bit,0,0,0);
-			part_type_color_mix(ptype, make_color_rgb(255,50,50),make_color_rgb(255,150,150));
-			part_type_alpha1(ptype, 1)
-				
-			repeat(8) {
-				scr_Soul_Part_Summon_Burst(2.5 + random(5));
-			}
-			*/
 		}
 	
 	    if (damageamount > defenseamount) {
-	        scr_B14_Boss();
+	        //scr_B14_Boss();
 	        scr_Soul_Spirit_Check_Boss();
 	    }
     	

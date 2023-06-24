@@ -2,7 +2,7 @@ function scr_Soul_Icon_Blank_Cloud() {
 	recollectionString = " ";
 	recollectionUpgrade = 0;
 	priceString = "";
-	recollectionMirror = 3;
+	recollectionMirror = 2;
 
 	with instance_create(x,y,obj_Recollection_Cloud) {
 	    recollectionMirror = other.recollectionMirror;

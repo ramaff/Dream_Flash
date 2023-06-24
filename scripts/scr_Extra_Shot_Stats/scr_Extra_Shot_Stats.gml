@@ -256,6 +256,8 @@ function scr_Extra_Shot_Stats() {
 	scr_State_Weapon_Mod();
 	
 	if shotorigin = obj_Soul_Parent {
+		scr_A06();
+		
 		scr_E06();
 		scr_E07();
 		scr_U01();

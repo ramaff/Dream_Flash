@@ -27,6 +27,8 @@ function scr_Item_Variable_Setup() {
 	global.essencebeamsize = 0;
 	global.essencebeamtime = 0;
 	
+	global.B06HeartConversions = 0;
+	
 	global.C01Boost = 0;
 	
 	global.V2activate = 0
