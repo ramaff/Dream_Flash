@@ -162,8 +162,8 @@ function scr_Hard_Coded_Item_Stats(itemVal, items_to_add = 1, reload = false) {
 	    //global.C[2]++;
 	}
 	if itemVal = "C03" {
-	    global.soulenergyregenfactor += 1.5;
-	    obj_Soul_Parent.senergyregenfactor += 1.5;
+	    global.soulenergyregenfactor += 2;
+	    obj_Soul_Parent.senergyregenfactor += 2;
 	    //global.C[3]++;
 	}
 	if itemVal = "C04" {
@@ -221,13 +221,15 @@ function scr_Hard_Coded_Item_Stats(itemVal, items_to_add = 1, reload = false) {
 	    //global.D[1]++;
 	}
 	if itemVal = "D02" {
-	    global.souldelayconservationfactor += 0.15;
-	    obj_Soul_Parent.sdelayconservationfactor += 0.15;
+	    global.souldelayconservationfactor += 0.2;
+	    obj_Soul_Parent.sdelayconservationfactor += 0.2;
 	    //global.D[2]++;
 	}
 	if itemVal = "D03" {
 	    global.soulshotspeed += 4;
 	    obj_Soul_Parent.sshotspeed += 4;
+		global.souldelayconservationfactor += 0.1;
+	    obj_Soul_Parent.sdelayconservationfactor += 0.1;
 	    //global.D[3]++;
 	}
 	if itemVal = "D04" {
@@ -246,10 +248,10 @@ function scr_Hard_Coded_Item_Stats(itemVal, items_to_add = 1, reload = false) {
 	    //global.D[7]++;
 	}
 	if itemVal = "D08" {
-	    global.souldelayconservationfactor += 0.25;
-	    obj_Soul_Parent.sdelayconservationfactor += 0.25;
-	    global.soulaccuracy = global.soulaccuracy * 0.75;
-	    obj_Soul_Parent.saccuracy = obj_Soul_Parent.saccuracy * 0.75;
+	    global.souldelayconservationfactor += 0.35;
+	    obj_Soul_Parent.sdelayconservationfactor += 0.35;
+	    global.soulaccuracy = global.soulaccuracy * 0.7;
+	    obj_Soul_Parent.saccuracy = obj_Soul_Parent.saccuracy * 0.7;
 	    //global.D[8]++;
 	}
 	if itemVal = "D09" {
@@ -271,8 +273,8 @@ function scr_Hard_Coded_Item_Stats(itemVal, items_to_add = 1, reload = false) {
 	if itemVal = "D13" {
 	    global.soulmovementfactor += 1.5;
 	    obj_Soul_Parent.smovementfactor += 1.5;
-	    global.souldelayconservationfactor += 0.075;
-	    obj_Soul_Parent.sdelayconservationfactor += 0.075;
+	    global.souldelayconservationfactor += 0.1;
+	    obj_Soul_Parent.sdelayconservationfactor += 0.1;
 	    //global.D[13]++;
 	}
 	if itemVal = "D14" {
@@ -289,15 +291,15 @@ function scr_Hard_Coded_Item_Stats(itemVal, items_to_add = 1, reload = false) {
 	if itemVal = "E01" {
 	    //global.soulsize -= 1;
 	    //obj_Soul_Parent.ssize -= 1;
-		global.soulenergyconservationfactor += 0.15;
-	    obj_Soul_Parent.senergyconservationfactor += 0.15;
+		global.soulenergyconservationfactor += 0.2;
+	    obj_Soul_Parent.senergyconservationfactor += 0.2;
 	    //global.E[1]++;
 	}
 	if itemVal = "E02" {
-	    global.teleportenergyconservation += 5;
-	    obj_Soul_Parent.tenergyconservation += 5;
-		global.teleportdelayconservationfactor += 0.2;
-	    obj_Soul_Parent.tdelayconservationfactor += 0.2;
+	    global.teleportenergyconservation += 10;
+	    obj_Soul_Parent.tenergyconservation += 10;
+		global.teleportdelayconservationfactor += 0.25;
+	    obj_Soul_Parent.tdelayconservationfactor += 0.25;
 	    //global.E[2]++;
 	}
 	if itemVal = "E03" {
@@ -310,7 +312,7 @@ function scr_Hard_Coded_Item_Stats(itemVal, items_to_add = 1, reload = false) {
 	if itemVal = "E04" {
 	    global.teleportenergyconservationfactor += 0.2;
 	    obj_Soul_Parent.tenergyconservationfactor += 0.2;
-		global.teleportboost += 0.25;
+		global.teleportboost += 0.3;
 	    //global.E[4]++;
 	}
 	if itemVal = "E05" {
@@ -342,8 +344,8 @@ function scr_Hard_Coded_Item_Stats(itemVal, items_to_add = 1, reload = false) {
 	if itemVal = "E12" {
 	    global.teleportenergyconservationfactor += 0.2;
 	    obj_Soul_Parent.tenergyconservationfactor += 0.2;
-		global.soulenergyconservationfactor += 0.1;
-	    obj_Soul_Parent.senergyconservationfactor += 0.1;
+		global.soulenergyconservationfactor += 0.15;
+	    obj_Soul_Parent.senergyconservationfactor += 0.15;
 	    //global.E[12]++;
 	}
 	if itemVal = "E13" {

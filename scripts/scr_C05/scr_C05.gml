@@ -27,7 +27,7 @@ function scr_C05() {
 	
 				//scr_Shot_Lightning_Chain(max_streaks, streak_target, chains, xst, yst, streak_length, chain_damage, streak_color, chain_range)
 			
-				scr_Refresh_Soul(2)
+				scr_Refresh_Soul(3)
 			
 				//scr_Essence_Attack_Field();
 		    }

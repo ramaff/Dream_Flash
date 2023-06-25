@@ -10,7 +10,7 @@ function scr_Emotion_Field_Spawn_Check(){
 	if global.emoteFieldSpawn <= 0 {
 		global.totalFieldSpawn++;
 		//global.emoteFieldSpawn = (1 + round(global.totalFieldSpawn / 1.5));
-		global.emoteFieldSpawn += (1 + round(global.totalFieldSpawn / 1.75)) * max(1, (1 + ((global.totalFieldSpawn - 2) / 4)));
+		global.emoteFieldSpawn += (1 + round(global.totalFieldSpawn / 1.75)) * max(1, (1 + ((global.totalFieldSpawn - 2) / 2)));
 		//global.emoteFieldSpawn = 1;
 		Floor_Layout_Control.Flash[global.currentroom,0] = "Emotion Field"
 	} else {
