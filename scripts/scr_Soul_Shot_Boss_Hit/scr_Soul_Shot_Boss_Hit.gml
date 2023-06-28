@@ -7,6 +7,24 @@ function scr_Soul_Shot_Boss_Hit() {
     
 	    if shotpierce > 0 || shotcontinue = 1 {
 			
+			if shot_stats.Shot_Excess_Essence > 0 {
+				var ex_ess = shot_stats.Shot_Excess_Essence;
+				var pot = 0
+				while(ex_ess > 0) {
+					pot = min(ex_ess, 4)
+					with instance_create(x,y,obj_Essence_Blop) {
+						speed = 8 + random(16);
+						direction = random(360);
+						friction = 0.5;
+						potency = pot;
+						size = sqrt(pot) / 3;
+						maxsize = size;
+					}
+					ex_ess -= pot;
+				}
+				shot_stats.Shot_Excess_Essence = 0;
+			}
+			
 			if shotchain > 0 {
 				
 				var max_streaks = 30;

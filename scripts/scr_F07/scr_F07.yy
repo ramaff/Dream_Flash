@@ -1,11 +1,11 @@
 {
   "resourceType": "GMScript",
   "resourceVersion": "1.0",
-  "name": "scr_Soul_Left_Click",
+  "name": "scr_F07",
   "isCompatibility": false,
   "isDnD": false,
   "parent": {
-    "name": "Soul Commands",
-    "path": "folders/Scripts/Soul Commands.yy",
+    "name": "F Items",
+    "path": "folders/Scripts/Item Commands/F Items.yy",
   },
 }

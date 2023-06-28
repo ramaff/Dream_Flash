@@ -17,5 +17,7 @@ function scr_Soul_Item_Step_After() {
 	scr_XA05();
 
 	scr_Weapon_Warmup_Step();
+	
+	scr_F07();
 
 }
