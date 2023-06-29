@@ -8,7 +8,7 @@ sshotspeed = 10;
 sshotspeedaddition = 0;
 sshotknockback = 5;
 sshotknockbackaddition = 0;
-sfirerate = 120;
+sfirerate = 360;
 
 saccuracy = 1;
 
@@ -20,3 +20,5 @@ image_xscale = size;
 image_yscale = size;
 
 scr_Soul_Stat_Refresh();
+
+rattling = 0;

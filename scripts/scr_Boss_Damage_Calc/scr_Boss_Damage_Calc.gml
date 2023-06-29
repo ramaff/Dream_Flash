@@ -23,6 +23,8 @@ function scr_Boss_Damage_Calc() {
 	}
 	shotDamageBase = 0;
 	shotDamageBase += shotPowerLevel;
+	
+	var shotweaktotal = 0;
 	/*
 	shotDamageBase += (shotimaginary * shotPowerLevel) * (1 - other.bossImaginaryResistance);
 	shotDamageBase += (shotsharpandsolid * shotPowerLevel) * (1 - other.bossSharpSolidResistance);
@@ -32,8 +34,10 @@ function scr_Boss_Damage_Calc() {
 	*/
 	if shotarmourpierce > other.bossdefense {
 	    shotDamage = shotDamageMult * (shotDamageBase + bossweak + speeddmg);
+		shotweaktotal = shotDamageMult * bossweak;
 	} else {
 	    shotDamage = shotDamageMult * ((shotDamageBase + bossweak + speeddmg) - (other.bossdefense - shotarmourpierce));
+		shotweaktotal = shotDamageMult * bossweak;
 	}
 	scr_A07_Boss_Damage();
 	if shotDamage < 0 {
@@ -47,9 +51,12 @@ function scr_Boss_Damage_Calc() {
 		weakStrong = 1;
 	}
 	
-	shotDamage += shotDamage * min(global.downwardSpiralBoost / 3, 0.2 * global.XC[4]);
+	var downward_boost = min(global.downwardSpiralBoost / 3, 0.2 * global.XC[4])
+	
+	shotDamage += shotDamage * downward_boost;
+	shotweaktotal += shotweaktotal * downward_boost;
 
-	scr_Boss_Damage_Display();
+	scr_Boss_Damage_Display(shotweaktotal);
 
 	//Adding Poison
 	if shotpoison != 0 {

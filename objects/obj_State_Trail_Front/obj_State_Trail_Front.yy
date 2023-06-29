@@ -1,19 +1,22 @@
 {
   "resourceType": "GMObject",
   "resourceVersion": "1.0",
-  "name": "obj_Damage_Indicator",
+  "name": "obj_State_Trail_Front",
   "eventList": [
     {"resourceType":"GMEvent","resourceVersion":"1.0","name":"","collisionObjectId":null,"eventNum":0,"eventType":2,"isDnD":false,},
-    {"resourceType":"GMEvent","resourceVersion":"1.0","name":"","collisionObjectId":null,"eventNum":0,"eventType":8,"isDnD":false,},
+    {"resourceType":"GMEvent","resourceVersion":"1.0","name":"","collisionObjectId":null,"eventNum":1,"eventType":2,"isDnD":false,},
     {"resourceType":"GMEvent","resourceVersion":"1.0","name":"","collisionObjectId":null,"eventNum":0,"eventType":0,"isDnD":false,},
   ],
   "managed": true,
   "overriddenProperties": [],
   "parent": {
-    "name": "Room Stuff",
-    "path": "folders/Objects/Room Stuff.yy",
+    "name": "Particles",
+    "path": "folders/Objects/Particles.yy",
   },
-  "parentObjectId": null,
+  "parentObjectId": {
+    "name": "obj_Particle_Parent_Front",
+    "path": "objects/obj_Particle_Parent_Front/obj_Particle_Parent_Front.yy",
+  },
   "persistent": false,
   "physicsAngularDamping": 0.1,
   "physicsDensity": 0.5,
@@ -29,7 +32,10 @@
   "physicsStartAwake": true,
   "properties": [],
   "solid": false,
-  "spriteId": null,
+  "spriteId": {
+    "name": "spr_Bullet_Conquest",
+    "path": "sprites/spr_Bullet_Conquest/spr_Bullet_Conquest.yy",
+  },
   "spriteMaskId": null,
   "visible": true,
 }

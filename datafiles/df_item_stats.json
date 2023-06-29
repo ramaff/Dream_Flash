@@ -12,19 +12,19 @@
         "recollectionDescription": "Increases the base damage of weapons by 2, which can be further increased by other attributes you possess."
     },
     "A02": {
-        "recollectionString": "Armour Piercing",
+        "recollectionString": "Deep Thoughts",
         "recollectionSprite": "spr_Armour_Piercing_Item",
-        "recollectionExtraStats": "+4 Armour Piercing",
-        "recollectionDescription": "All of your attacks ignore 4 points of boss armour. Effective with fast weapons that have low base damage."
+        "recollectionExtraStats": "+6 Armour Piercing",
+        "recollectionDescription": "Your thoughts sink deep into your enemies, ignoring 6 points of armour. Effective with fast weapons that have low base damage."
     },
     "A03": {
         "recollectionString": "Thinking Harder",
         "recollectionSprite": "spr_Powered_Shots_Item",
-        "recollectionExtraStats": "+10% Damage",
-        "recollectionDescription": "Increases your attack damage by 10%!"
+        "recollectionExtraStats": "+12.5% Damage",
+        "recollectionDescription": "Increases your attack damage by 12.5%!"
     },
     "A04": {
-        "recollectionString": "Body Penetrating",
+        "recollectionString": "Piercing Thoughts",
         "recollectionSprite": "spr_Body_Penetrating_Item",
         "recollectionExtraStats": "+1 Piercing Hit",
         "recollectionDescription": "Gives your weapons +1 pierce, letting them damage 2 or more enemies at once."
@@ -37,42 +37,42 @@
         "Beast_Credit": 0.5
     },
     "A06": {
-        "recollectionString": "Headstrong",
+        "recollectionString": "Hard Headed",
         "recollectionSprite": "spr_Hard_Headed_Item",
-        "recollectionExtraStats": "+50% Knockback +20% Shot Speed",
-        "recollectionDescription": "Hammer-like mindset, lets your attacks move faster and with more force.",
+        "recollectionExtraStats": "+Bullet/Boss Knockback +20% Shot Speed",
+        "recollectionDescription": "Hammer-like mindset, your shots now move bullets out of the way. Also lets your attacks move faster and with more force.",
         "Beast_Credit": 0.5
     },
     "A07": {
         "recollectionString": "Muscle Memory",
         "recollectionSprite": "spr_Muscle_Memory_Item",
         "recollectionExtraStats": "+Strength from consistency",
-        "recollectionDescription": "Every time you hit a boss gain +2% damage, can increase to a max of +20%. If a projectile misses then the boost resets"
+        "recollectionDescription": "Every time you hit a boss gain +6% damage, can increase to a max of +30%. If a projectile misses then the boost resets"
     },
     "A08": {
         "recollectionString": "Intense Thoughts",
         "recollectionSprite": "spr_Dense_Mindset_Item",
-        "recollectionExtraStats": "+15% Shot Power +10% Shot Speed -20% Shot Lifespan",
+        "recollectionExtraStats": "+25% Initial Shot Power -25% Shot Lifespan",
         "recollectionDescription": "Intense thoughts do more damage but burn out quicker.",
         "Beast_Credit": 0.5
     },
     "A09": {
         "recollectionString": "Thinking Bigger",
         "recollectionSprite": "spr_Thinking_Bigger_Item",
-        "recollectionExtraStats": "+25% Shot Size +5% Shot Power",
+        "recollectionExtraStats": "+25% Shot Size +7.5% Shot Power",
         "recollectionDescription": "Thoughts that take up more space and hit harder."
     },
     "A10": {
         "recollectionString": "Critical Thinking",
         "recollectionSprite": "spr_Critical_Thinking_Item",
-        "recollectionExtraStats": "+10% Chance for x2 Critical Damage",
+        "recollectionExtraStats": "+12.5% Chance for x2 Critical Damage",
         "recollectionDescription": "Critical thinking hits where it hurts the most, doing twice as much damage."
     },
     "A11": {
         "recollectionString": "Strong Personality",
         "recollectionSprite": "spr_Radiant_Strength_Item",
         "recollectionExtraStats": "+Soul Hit Aura",
-        "recollectionDescription": "Field of radiance surrounds your soul, damage is done to enemies touching the soul. In addition to this bullets near the soul get dampened by the aura."
+        "recollectionDescription": "Field of radiance surrounds your soul. When the soul is hit damage everything nearby and destroy all bullets."
     },
     "A12": {
         "recollectionString": "Overwhelming Thoughts",
@@ -83,7 +83,7 @@
     "A13": {
         "recollectionString": "Good Thinking",
         "recollectionSprite": "spr_Stronger_Imagination_Item",
-        "recollectionExtraStats": "+1 Shot Power +5% Damage",
+        "recollectionExtraStats": "+1 Shot Power +7.5% Damage",
         "recollectionDescription": "Overall damage increase to your weapons, balanced strength."
     },
     "A14": {
@@ -126,15 +126,15 @@
     "B05": {
         "recollectionString": "Rubber Soul",
         "recollectionSprite": "spr_Rubber_Soul_Item",
-        "recollectionExtraStats": "+Soul Hit Rebound",
-        "recollectionDescription": "Projectiles that hit your soul have the chance to do much less damage and bounce back at the enemy.",
+        "recollectionExtraStats": "+Soul Hit Rebound +15% Soul Damage Reduction",
+        "recollectionDescription": "Projectiles that hit your soul bounce back dealing damage to anything they run into.",
         "Scrub_Credit": 0.5
     },
     "B06": {
         "recollectionString": "Lovely Personality",
         "recollectionSprite": "spr_Lovely_Personality_Item",
-        "recollectionExtraStats": "+25% Heart Effect Boost",
-        "recollectionDescription": "Increases the potency of special heart effects by 25%."
+        "recollectionExtraStats": "+3 Stronger Hearts",
+        "recollectionDescription": "Converts up to 3 current or future basic lesser hearts into stronger hearts."
     },
     "B07": {
         "recollectionString": "Encouragement",
@@ -146,7 +146,7 @@
     "B08": {
         "recollectionString": "Self Love",
         "recollectionSprite": "spr_Healing_Concentration_Item",
-        "recollectionExtraStats": "+30% Health Regen +150% Attack Idle Regen",
+        "recollectionExtraStats": "+Super Fast Idle Regen +30% Health Regen",
         "recollectionDescription": "Removing your focus on attacking allows you to focus much more on self healing. If the soul is fully healed, then will instead restore essence."
     },
     "B09": {
@@ -181,7 +181,7 @@
         "recollectionDescription": "Makes your hearts greater."
     },
     "B14": {
-        "recollectionString": "Vengeful Heart",
+        "recollectionString": "Fairness",
         "recollectionSprite": "spr_Punch_Back_Hearts_Item",
         "recollectionExtraStats": "+400% Revenge Damage",
         "recollectionDescription": "When injured by an attack, hearts inflict punishment upon the source of the damage."
@@ -197,7 +197,7 @@
         "recollectionString": "Warming Up",
         "recollectionSprite": "spr_Warming_Up_Item",
         "recollectionExtraStats": "+Increasing Essence Regen",
-        "recollectionDescription": "Increases essence regen the longer each battle lasts, up to 30% essence regen",
+        "recollectionDescription": "Increases essence regen the longer each battle lasts, up to 40% essence regen",
         "Mech_Credit": 0.5
     },
     "C02": {
@@ -209,7 +209,7 @@
     "C03": {
         "recollectionString": "Dreamer's Stamina",
         "recollectionSprite": "spr_Dreamers_Stamina_Item",
-        "recollectionExtraStats": "+15% Essence Regen",
+        "recollectionExtraStats": "+20% Essence Regen",
         "recollectionDescription": "Allows you to make more complicated thoughts in less time."
     },
     "C04": {
@@ -236,7 +236,7 @@
     "C07": {
         "recollectionString": "Imaginary Reload",
         "recollectionSprite": "spr_Imaginary_Reload_Item",
-        "recollectionExtraStats": "+40% Attack Idle Essence Regen",
+        "recollectionExtraStats": "+50% Attack Idle Essence Regen",
         "recollectionDescription": "You pretend to reload your weapon between shots. Very good when low on essence."
     },
     "C08": {
@@ -246,23 +246,23 @@
         "recollectionDescription": "Once per field, you can continue to use your attacks for a bit after running out of essence."
     },
     "C09": {
-        "recollectionString": "Painful Epiphany",
+        "recollectionString": "Epiphany",
         "recollectionSprite": "spr_Painful_Epiphany_Item",
-        "recollectionExtraStats": "+40 Hit Essence",
+        "recollectionExtraStats": "+75 Hit Essence",
         "recollectionDescription": "Getting hit sends a jolt throughout your ethereal form, allowing you to regain some essence. Extra essence can go above your max"
     },
     "C10": {
         "recollectionString": "Adrenaline",
         "recollectionSprite": "spr_Adrenaline_Item",
-        "recollectionExtraStats": "+Danger Essence Regen",
-        "recollectionDescription": "Gain extra essence regen the lower your current heart health is. An additional regen effect is added when on your last heart.",
+        "recollectionExtraStats": "+Danger Essence/Firerate Regen",
+        "recollectionDescription": "Gain extra essence regen and firerate the lower your current heart health is. An additional regen effect is added when on your last heart.",
         "Beast_Credit": 0.5
     },
     "C11": {
         "recollectionString": "Overthinking",
         "recollectionSprite": "spr_Overflow_Item",
-        "recollectionExtraStats": "+Excess Essence Damage +10% Essence Regen",
-        "recollectionDescription": "Any excess essence that the soul produces over its maximum capacity will flow into bosses, damaging them."
+        "recollectionExtraStats": "+Excess Essence Shots",
+        "recollectionDescription": "When over 50% essence the soul leaks more essence into each shot. These shots do more damage but cost much more. Excess essence can be recollected if quick enough."
     },
     "C12": {
         "recollectionString": "Pour Your Heart Out",
@@ -273,7 +273,7 @@
     "C13": {
         "recollectionString": "Mental Endurance",
         "recollectionSprite": "spr_Essence_Pool_Item",
-        "recollectionExtraStats": "+20 Max Essence +10% Essence Regen",
+        "recollectionExtraStats": "+30 Max Essence +10% Essence Regen",
         "recollectionDescription": "Extra pool of essence useful for using more complicated weapon ideas."
     },
     "C14": {
@@ -298,13 +298,13 @@
     "D02": {
         "recollectionString": "Quick Thinking",
         "recollectionSprite": "spr_Quick_Thinking_Item",
-        "recollectionExtraStats": "+15% Weapon Fire Rate",
+        "recollectionExtraStats": "+20% Weapon Fire Rate",
         "recollectionDescription": "Quick thinking lets you think of things to attack with faster."
     },
     "D03": {
         "recollectionString": "Idea Throwing",
         "recollectionSprite": "spr_Projectile_Launching_Item",
-        "recollectionExtraStats": "+40% Shot Speed",
+        "recollectionExtraStats": "+40% Shot Speed +10% Firerate",
         "recollectionDescription": "By throwing your ideas out there they move 40% faster",
         "Snake_Credit": 0.5
     },
@@ -317,14 +317,14 @@
     "D05": {
         "recollectionString": "Flight Response",
         "recollectionSprite": "spr_Flight_Response_Item",
-        "recollectionExtraStats": "+50% Response Speed +33% Response Weapon Speed",
-        "recollectionDescription": "Temporarily boosts your speed by a massive amount when hit.",
+        "recollectionExtraStats": "+ Invinciblity Time  +Response Speed and Firerate",
+        "recollectionDescription": "Temporarily boosts your speed by a massive amount when hit. During this time you are also invincible. Also gain a longer lasting firerate boost.",
         "Snake_Credit": 0.5
     },
     "D06": {
         "recollectionString": "Momentous Occasion",
         "recollectionSprite": "spr_Relief_Item",
-        "recollectionExtraStats": "+Shot Acceleration +Speed Damage",
+        "recollectionExtraStats": "+Speed Damage",
         "recollectionDescription": "Once your ideas get out there, they just keep gaining momentum. Projectiles move faster and also will now do more damage based on how fast they are"
     },
     "D07": {
@@ -336,7 +336,7 @@
     "D08": {
         "recollectionString": "Information Dump",
         "recollectionSprite": "spr_Information_Dump_Item",
-        "recollectionExtraStats": "+25% Weapon Fire Rate -20% Accuracy",
+        "recollectionExtraStats": "+35% Weapon Fire Rate -30% Accuracy",
         "recollectionDescription": "Dump your thoughts onto your enemies. This technique is potent, but inefficient."
     },
     "D09": {
@@ -367,7 +367,7 @@
     "D13": {
         "recollectionString": "Nice Going",
         "recollectionSprite": "spr_Faster_Dreams_Item",
-        "recollectionExtraStats": "+15% Soul Speed +7.5% Weapon Speed",
+        "recollectionExtraStats": "+15% Soul Speed +10% Weapon Speed",
         "recollectionDescription": "Increased soul speed in multiple aspects."
     },
     "D14": {
@@ -387,13 +387,13 @@
     "E01": {
         "recollectionString": "Think Smarter",
         "recollectionSprite": "spr_Think_Smarter_Item",
-        "recollectionExtraStats": "-15% Essence Use",
-        "recollectionDescription": "Process your dreams better, all weapons take 15% less essence to think of."
+        "recollectionExtraStats": "-20% Essence Use",
+        "recollectionDescription": "Process your dreams better, all weapons take 20% less essence to think of."
     },
     "E02": {
         "recollectionString": "Perspective Change",
         "recollectionSprite": "spr_Phase_Sense_Item",
-        "recollectionExtraStats": "-20% Teleport Cooldown Reduction -5 Teleport Cost",
+        "recollectionExtraStats": "-25% Teleport Cooldown Reduction -10 Teleport Cost",
         "recollectionDescription": "Phase through reality in a less costly matter."
     },
     "E03": {
@@ -405,7 +405,7 @@
     "E04": {
         "recollectionString": "Positive Headspace",
         "recollectionSprite": "spr_Space_Warping_Adeptness_Item",
-        "recollectionExtraStats": "-20% Teleport Cost +25% Teleport Effect Power",
+        "recollectionExtraStats": "-20% Teleport Cost +30% Teleport Effect Power",
         "recollectionDescription": "Increases your warp proficiency."
     },
     "E05": {
@@ -455,7 +455,7 @@
     "E12": {
         "recollectionString": "Perceptive",
         "recollectionSprite": "spr_Turbo_Transitioning_Item",
-        "recollectionExtraStats": "-20% Teleport Cost -10% Weapon Cost",
+        "recollectionExtraStats": "-20% Teleport Cost -15% Weapon Cost",
         "recollectionDescription": "Increases your understanding of concepts such as teleporting and thought based weaponry."
     },
     "E13": {
@@ -518,8 +518,8 @@
     "F07": {
         "recollectionString": "Necessity",
         "recollectionSprite": "spr_Necessity_Item",
-        "recollectionExtraStats": "+200% Stage Boss State Recharge",
-        "recollectionDescription": "Gain state much faster when fighting the final boss of each stage."
+        "recollectionExtraStats": "+Needed Transformations",
+        "recollectionDescription": "Any time a boss fight lasts more than 8 seconds you gain chance to instantly gain max state and transform."
     },
     "F08": {
         "recollectionString": "Hidden Potential",
@@ -964,37 +964,37 @@
     "K03": {
         "recollectionString": "Dumbell",
         "recollectionSprite": "spr_Dumbell_Art",
-        "recollectionExtraStats": "+2.5 Strength Per Floor",
+        "recollectionExtraStats": "+2 Strength Per Floor",
         "recollectionDescription": "Lifting heavy objects makes you stronger over time!"
     },
     "K04": {
         "recollectionString": "Vitamins",
         "recollectionSprite": "spr_Vitamins_Art",
-        "recollectionExtraStats": "+2.5 Vitality Per Floor",
+        "recollectionExtraStats": "+2 Vitality Per Floor",
         "recollectionDescription": "Taking your vitamins makes you healthier over time!"
     },
     "K05": {
         "recollectionString": "Essentials",
         "recollectionSprite": "spr_Essentials_Art",
-        "recollectionExtraStats": "+2.5 Essence Per Floor",
+        "recollectionExtraStats": "+2 Essence Per Floor",
         "recollectionDescription": "Essential items give you more essence over time!"
     },
     "K06": {
         "recollectionString": "Running Shoes",
         "recollectionSprite": "spr_Running_Shoes_Art",
-        "recollectionExtraStats": "+2.5 Dexterity Per Floor",
+        "recollectionExtraStats": "+2 Dexterity Per Floor",
         "recollectionDescription": "These dream-like kicks give you more speed over time!"
     },
     "K07": {
         "recollectionString": "Glasses",
         "recollectionSprite": "spr_Glasses_Art",
-        "recollectionExtraStats": "+2.5 Perception Per Floor",
+        "recollectionExtraStats": "+2 Perception Per Floor",
         "recollectionDescription": "Wearing glasses give you more perception over time!"
     },
     "K08": {
         "recollectionString": "Role Model",
         "recollectionSprite": "spr_Role_Model_Art",
-        "recollectionExtraStats": "+2.5 State Per Floor",
+        "recollectionExtraStats": "+2 State Per Floor",
         "recollectionDescription": "Having someone to look up to gives you more state over time!"
     },
 
@@ -1041,7 +1041,7 @@
         "recollectionSprite": "spr_Wandering_Soul",
         "recollectionSize": 0.375,
         "recollectionExtraStats": "+Ally Soul",
-        "recollectionDescription": "This soul seems a bit lost, luckily it's on your side. Shoots at bosses and loosely follows your soul.",
+        "recollectionDescription": "This soul seems a bit lost, luckily it's on your side. Shoots at bosses and loosely follows your soul. More souls wander onto your party the longer the fight goes on.",
         "Mech_Credit": 0.5
     },
     "M02": {
@@ -1426,31 +1426,31 @@
     "R01": {
         "recollectionString": "Frightened Memory",
         "recollectionSprite": "spr_Frightened_Memory_Art",
-        "recollectionExtraStats": "+5 Despair +60 Recalls",
+        "recollectionExtraStats": "+5 Despair +55 Recalls",
         "recollectionDescription": "Remembering fills you with despair..."
     },
     "R02": {
         "recollectionString": "Anxious Memory",
         "recollectionSprite": "spr_Anxious_Memory_Art",
-        "recollectionExtraStats": "+5 Paranoia +50 Recalls",
+        "recollectionExtraStats": "+5 Paranoia +45 Recalls",
         "recollectionDescription": "Remembering fills you with paranoia..."
     },
     "R03": {
         "recollectionString": "Angry Memory",
         "recollectionSprite": "spr_Angry_Memory_Art",
-        "recollectionExtraStats": "+5 Loathing +40 Recalls",
+        "recollectionExtraStats": "+5 Loathing +35 Recalls",
         "recollectionDescription": "Remembering fills you with loathing..."
     },
     "R04": {
         "recollectionString": "Proud Memory",
         "recollectionSprite": "spr_Proud_Memory_Art",
-        "recollectionExtraStats": "+5 Vanity +30 Recalls",
+        "recollectionExtraStats": "+5 Vanity +20 Recalls",
         "recollectionDescription": "Remembering fills you with vanity..."
     },
     "R05": {
         "recollectionString": "Peaceful Memory",
         "recollectionSprite": "spr_Peaceful_Memory_Art",
-        "recollectionExtraStats": "+5 Bliss +20 Recalls",
+        "recollectionExtraStats": "+5 Bliss +15 Recalls",
         "recollectionDescription": "Remembering fills you with bliss..."
     },
     "R06": {

@@ -40,6 +40,7 @@ function scr_Soul_Damage_Calculation() {
 		with instance_create(obj_Soul_Parent.x,obj_Soul_Parent.y,obj_Damage_Indicator) {
 			element = 1;
 			damageIndication = truedam /* / global.healthungen */
+			additiveIndication = 0
 			if damageIndication < 1 {
 				damageIndication = 1;	
 			}
