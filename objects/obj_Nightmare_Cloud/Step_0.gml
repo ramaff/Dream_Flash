@@ -593,3 +593,4 @@ if (bossActiveAttack[1] != 0 and bossActiveAttack[1] != 6 and (bossPatternCountM
 
 #endregion
 
+scr_Boss_Soul_Hitbox(sprite_index);

@@ -7,7 +7,12 @@
 function scr_Emotion_Field_Spawn_Check(){
 	//Print_DF(global.emoteFieldSpawn)
 	
-	if global.emoteFieldSpawn <= 0 {
+	/*if instance_exists(Chapter_Change_Control) and Floor_Layout_Control.Flash[global.currentroom,0] != "Spawn" {
+		exit;	
+	} */
+	
+	
+	if global.emoteFieldSpawn <= 0 and Floor_Layout_Control.Flash[global.currentroom,0] != "Super Boss" {
 		global.totalFieldSpawn++;
 		//global.emoteFieldSpawn = (1 + round(global.totalFieldSpawn / 1.5));
 		global.emoteFieldSpawn += (1 + round(global.totalFieldSpawn / 1.75)) * max(1, (1 + ((global.totalFieldSpawn - 2) / 2)));
