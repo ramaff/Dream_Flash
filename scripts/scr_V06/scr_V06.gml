@@ -1,8 +1,7 @@
 function scr_V06() {
 	
-	var active = scr_V06_Active()
 
-	if active = true {
+	{
 		
 		Shot_Size = Shot_Size * 1.4;
 
@@ -27,11 +26,6 @@ function scr_V06() {
 		if global.currentweapon = 14 {
 			variable_struct_set(Shot_Air_Burst_Stats[burstIndex], "Spread", (90 / saccuracy) / amount);
 		}
-	}
-	
-	
-	if global.V[6] > 0 {
-		global.V06Overwhelm++;
 	}
 
 }

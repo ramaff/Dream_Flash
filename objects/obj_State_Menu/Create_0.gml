@@ -15,9 +15,9 @@ sprog = 1;
 
 
 
-with instance_create(camX + 168,camY - 208,obj_Back_To_Soul_Menu_Button) {
+with instance_create(camX - 352,camY + 240,obj_Back_To_Soul_Menu_Button) {
 	depth = -1000000;	
 }
-with instance_create(camX + 264,camY - 208,obj_State_Menu_Button) {
+with instance_create(camX - 256,camY + 240,obj_State_Menu_Button) {
 	depth = -1000000;	
 }

@@ -22,11 +22,11 @@ function scr_Emotion_Field_Spawn_Check(){
 		Floor_Layout_Control.Flash[global.currentroom,0] = "Normal"
 	}
 	
-	if Floor_Layout_Control.Flash[global.currentroom,0] != "Emotion Field" and Floor_Layout_Control.Flash[global.currentroom,0] != "Normal" {
+	if Floor_Layout_Control.Flash[global.currentroom,0] != "Emotion Field" and Floor_Layout_Control.Flash[global.currentroom,0] != "Normal" and Floor_Layout_Control.Flash[global.currentroom,0] != "Spawn" {
 		scr_Stat_Field_Check();
 	}
         
-	if Floor_Layout_Control.Flash[global.currentroom,0] = "Normal" {
+	if Floor_Layout_Control.Flash[global.currentroom,0] = "Normal" || Floor_Layout_Control.Flash[global.currentroom,0] = "Spawn" {
 	    //instance_create(x,y,Normal_Room_Start_Control)
 	} else {
 		scr_Stat_Field_Spawn_Check();
