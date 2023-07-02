@@ -51,6 +51,9 @@ repeat(inum) {
     yyy++;
 }
 
+with(obj_Particle_Parent_Front) {
+	event_perform(ev_draw,0)
+}
 with(obj_Beam_Shot) {
 	event_perform(ev_draw,0)	
 }

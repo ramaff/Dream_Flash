@@ -35,12 +35,25 @@ function scr_Soul_Menu_Cloud() {
 	}
 	
 	var camX = camera_get_view_x(view) + (camera_get_view_width(view) / 2);
+	var camY = camera_get_view_y(view) + (camera_get_view_height(view) / 2);
+	var xx = x - camera_get_view_x(view)
+	var yy = y - camera_get_view_y(view)
 
-	if x > camX { 
-		recollectionMirror = 1;
+	if xx > camX { 
+		recollectionMirror = 0;
+		if yy > camY {
+			recollectionMirror = 1;	
+		}
 	} else {
-		recollectionMirror = 0;	
+		recollectionMirror = 3;	
+		if yy > camY {
+			recollectionMirror = 2;	
+		}
 	}
+	
+	recollectionMirror = 3;	
+	
+	//show_debug_message(string(recollectionMirror))
 
 	with instance_create(x,y,obj_Recollection_Cloud) {
 		depth -= 1;

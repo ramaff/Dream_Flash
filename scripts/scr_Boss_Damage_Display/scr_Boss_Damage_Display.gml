@@ -1,4 +1,4 @@
-function scr_Boss_Damage_Display() {
+function scr_Boss_Damage_Display(shotweaktotal = 0) {
 	xx = other.x - 3 + random(6);
 	yy = other.y - 23 + random(6);
 
@@ -26,6 +26,6 @@ function scr_Boss_Damage_Display() {
 	    textSize = 2;
 	}
 	
-	scr_Damage_Indicator(primaryElement, shotDamage, textSize);
+	scr_Damage_Indicator(primaryElement, shotDamage, textSize, shotweaktotal);
 
 }

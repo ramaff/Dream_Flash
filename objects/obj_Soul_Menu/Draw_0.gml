@@ -11,11 +11,11 @@ if (Pause_Control.pause) {
 	
 	draw_set_color(c_white);
 	
-	draw_text(camX - 448, camY - 12, "Items");
-	draw_line_color(camX - 488, camY + 8, camX, camY + 8, c_white, c_white);
+	draw_text(camX + 40, camY - 274, "Items");
+	draw_line_color(camX, camY - 254, camX + 300, camY - 254, c_white, c_white);
 	
 	if global.recollectionStateUnlocked = 1 {
-		draw_text(camX + 216,camY - 272, "Switch to State Menu:");
+		draw_text(camX - 304,camY + 176, "Switch to State Menu:");
 	}
     
     //draw_sprite(spr_Soul_Menu_Essence,0,view_xview + 896,view_yview + 152);

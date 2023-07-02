@@ -7,6 +7,24 @@ function scr_Soul_Shot_Boss_Hit() {
     
 	    if shotpierce > 0 || shotcontinue = 1 {
 			
+			if shot_stats.Shot_Excess_Essence > 0 {
+				var ex_ess = shot_stats.Shot_Excess_Essence;
+				var pot = 0
+				while(ex_ess > 0) {
+					pot = min(ex_ess, 4)
+					with instance_create(x,y,obj_Essence_Blop) {
+						speed = 8 + random(16);
+						direction = random(360);
+						friction = 0.5;
+						potency = pot;
+						size = sqrt(pot) / 3;
+						maxsize = size;
+					}
+					ex_ess -= pot;
+				}
+				shot_stats.Shot_Excess_Essence = 0;
+			}
+			
 			if shotchain > 0 {
 				
 				var max_streaks = 30;
@@ -139,20 +157,13 @@ function scr_Soul_Shot_Boss_Hit() {
 				if instance_exists(obj_Boss_Parent) and burstIndex >= 0 {
 					dir = -shotburststats[burstIndex].Spread / 2;
 					shotlifespan = shotlifespan * 0.6;
+					image = 1
 					repeat(shotburststats[burstIndex].Amount) {
-					    with instance_create(x,y,obj_Lesser_Soul_Shot) {
+					    with instance_create(x,y,object_index) {
 					        scr_Duplicate_Shot_Stats();
-						
 							var vshotburststats = other.shotburststats[burstIndex]
-							
-							//show_debug_message("scr_Soul_Shot_Boss_Hit image alpha: " + string(image_alpha))
-							//show_debug_message("scr_Soul_Shot_Boss_Hit spr: " + string(sprite_get_name(sprite_index)))
 					
 							scr_Shot_Burst_Stats(vshotburststats);
-							
-							/*show_debug_message("scr_Soul_Shot_Boss_Hit stats: " + string(shot_stats))
-							show_debug_message("scr_Soul_Shot_Boss_Hit lifespan: " + string(shotlifespan))
-							show_debug_message("scr_Soul_Shot_Boss_Hit alarm[0]: " + string(alarm[0])) */
 					
 							if burstIndex > 0 {
 								shotburststats = [];
@@ -162,7 +173,6 @@ function scr_Soul_Shot_Boss_Hit() {
 							} else {
 								shotburststats = false;	
 							}
-							//array_delete(shotburststats,burstIndex,1);
 					    }
 					    dir += shotburststats[burstIndex].Spread;
 					}

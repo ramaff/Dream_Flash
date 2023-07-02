@@ -5,7 +5,7 @@
 
 function scr_A07_Setup(){
 	shotA07 = false;
-	if global.A07memory >= 0.2 {
+	if global.A07memory >= 0.3 {
 		shotA07 = true;
 	}
 }

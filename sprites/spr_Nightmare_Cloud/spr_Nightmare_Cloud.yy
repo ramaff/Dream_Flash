@@ -57,7 +57,7 @@
             {"resourceType":"Keyframe<SpriteFrameKeyframe>","resourceVersion":"1.0","Channels":{"0":{"resourceType":"SpriteFrameKeyframe","resourceVersion":"1.0","Id":{"name":"1fa8fc8f-bc9c-4da6-99b4-d32b05c41b79","path":"sprites/spr_Nightmare_Cloud/spr_Nightmare_Cloud.yy",},},},"Disabled":false,"id":"a8f2e683-cc19-4c55-9149-05b9ca1142be","IsCreationKey":false,"Key":0.0,"Length":1.0,"Stretch":false,},
           ],},"modifiers":[],"spriteId":null,"trackColour":0,"tracks":[],"traits":0,},
     ],
-    "visibleRange": {"x":0.0,"y":0.0,},
+    "visibleRange": null,
     "volume": 1.0,
     "xorigin": 232,
     "yorigin": 232,

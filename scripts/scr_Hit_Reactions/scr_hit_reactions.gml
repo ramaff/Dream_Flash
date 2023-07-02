@@ -11,14 +11,22 @@ function scr_Hit_Reactions() {
 
 	if global.A[5] > 0 {
 	    if sattackfactorbuffamount < 5 * global.A[5] {
+			repeat(8) {
+				scr_Particle_Burst(obj_State_Trail_Front, spr_Soul_Big_Bit, c_red, c_red, 1, 3 + random(3), 60 + random(60), 0, 100, 0.2 + random(0.3), 20 + random(20))	
+			}
+			
 	        sattackfactorbuffamount = 5 * global.A[5];
-	        sattackfactorbuffduration = 240;
+	        sattackfactorbuffduration = 300;
 			smovementfactorbuffamount = 1.5
-	        smovementfactorbuffduration = 240;
+	        smovementfactorbuffduration = 300;
 	    }
 	}
 	if global.B[11] > 0 and global.B11Count > 0 {
 	    if sregenfactorbuffamount < 20 * global.B[11] {
+			repeat(8) {
+				scr_Particle_Burst(obj_State_Trail_Front, spr_Soul_Big_Bit, c_fuchsia, c_fuchsia, 1, 3 + random(3), 60 + random(60), 0, 100, 0.2 + random(0.3), 20 + random(20))	
+			}
+			
 	        sregenfactorbuffamount = 20 * global.B[11];
 	        sregenfactorbuffduration = 180;
 		
@@ -32,15 +40,18 @@ function scr_Hit_Reactions() {
 	    }
 	} */
 	if global.D[5] > 0 {
-	    if smovementfactorbuffamount < 10 * global.D[5] {
-	        smovementfactorbuffamount = 3.5 + (1.75 * global.D[5]);
-	        smovementfactorbuffduration = 300;
-	        sfireratefactorbuffamount = 3.3 * global.D[5];
+	    //if smovementfactorbuffamount < 10 * global.D[5] {
+			var color = make_color_rgb(0, 255, 84);	
+			repeat(8) {
+				scr_Particle_Burst(obj_State_Trail_Front, spr_Soul_Big_Bit, color, color, 1, 3 + random(3), 60 + random(60), 0, 100, 0.2 + random(0.3), 20 + random(20))	
+			}
+			
+	        soulinvincibility += 20 + (5 * global.D[5]);
+			smovementfactorbuffamount = 5 + (3.5 * global.D[5]);
+	        smovementfactorbuffduration = soulinvincibility;
+	        sfireratefactorbuffamount = 1.5 + (3 * global.D[5]);
 	        sfireratefactorbuffduration = 300;
-	        if soulinvincibility < 20 {
-	            soulinvincibility = 20;
-	        }
-	    }
+	   // }
 	}
 
 	var hchance = irandom(smaxhealth);

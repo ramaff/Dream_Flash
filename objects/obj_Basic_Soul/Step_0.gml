@@ -190,9 +190,9 @@ if (global.P[1] = 0 and global.C[9] = 0) || global.C[11] > 0 {
 
 	if senergy > essenceCap {
 		
-		if global.C[11] > 0 {
+		/*if global.C[11] > 0 {
 			scr_C11_Essup(senergy - essenceCap);
-		}
+		} */
 		
 	    senergy = essenceCap;
 	}

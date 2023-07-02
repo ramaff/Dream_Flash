@@ -10,7 +10,7 @@ function scr_Soul_Currency_Add() {
 	var recalls = ((global.soulhope + global.soulhopeTemp) / 20) + 1 + global.extrarecalls;
 
 	if global.currentchapter = 1 {
-	    repeat(recalls + (difficulty * 2.35 * giveFac)) {
+	    repeat(recalls + (difficulty * 2 * giveFac)) {
 	        with instance_create(x,y,obj_Soul_Flash) {
 	            direction = random(360);
 	            speed = 1 + random(4);
@@ -21,7 +21,7 @@ function scr_Soul_Currency_Add() {
 	}
 
 	if global.currentchapter = 2 {
-	    repeat(recalls + (difficulty * 1.15 * giveFac)) {
+	    repeat(recalls + (difficulty * 1 * giveFac)) {
 	        with instance_create(x,y,obj_Soul_Feel) {
 	            direction = random(360);
 	            speed = 1 + random(4);
@@ -32,7 +32,7 @@ function scr_Soul_Currency_Add() {
 	}
 
 	if global.currentchapter = 3 {
-	    repeat(recalls + (difficulty * 0.6 * giveFac)) {
+	    repeat(recalls + (difficulty * 0.5 * giveFac)) {
 	        with instance_create(x,y,obj_Soul_Dream) {
 	            direction = random(360);
 	            speed = 1 + random(4);
@@ -43,7 +43,7 @@ function scr_Soul_Currency_Add() {
 	}
 
 	if global.currentchapter = 4 {
-	    repeat(recalls + (difficulty * 0.4 * giveFac)) {
+	    repeat(recalls + (difficulty * 0.35 * giveFac)) {
 	        with instance_create(x,y,obj_Soul_Nightmare) {
 	            direction = random(360);
 	            speed = 1 + random(4);

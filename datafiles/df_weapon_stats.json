@@ -187,7 +187,8 @@
                 "Weapon_Split_Visible": 1,
                 "Weapon_Split_Hit_Again": 1,
                 "Spread": 90,
-                "Amount": 4
+                "Amount": 4,
+                "Shot_Alpha": 1
             }
         ],
         "Shot_Burst_Type": 1,
@@ -1732,7 +1733,7 @@
         "Shot_Lifespan": 50,
         "Shot_Pierce": 2,
         "Shot_Armour_Tear": 1,
-        "Shot_Bullet_Displace": 1,
+        "Shot_Bullet_Displace": 2,
         "Shot_Point_Angle": 1,
         "Shot_Size": 0.5,
         "Scrub_Credit": 1,

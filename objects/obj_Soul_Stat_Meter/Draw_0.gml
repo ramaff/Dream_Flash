@@ -97,7 +97,8 @@ if stat > 6 {
 }
 
 if vis = 1 {
-	draw_sprite_ext(sprite_index,0,x,y,0.5,0.5,0,c_white,1);
+	//draw_sprite_ext(sprite_index,0,x,y,0.5,0.5,0,c_white,1);
+	draw_sprite_ext(spr_Stat_Meter_Butt_Empty,stat - 1,x,y,0.5,0.5,0,c_white,1)
     draw_sprite_part_ext(sprite_index,stat,0,yy * (1 - (sPercent / 100)),80,yy,x,y - (100) + yy * (1 - (sPercent / 200)),0.5,0.5,c_white,1);	
 }
 

@@ -30,7 +30,7 @@ function scr_XB02() {
 		var burstIndex = array_length(Shot_Air_Burst_Stats) - 1;
 		variable_struct_set(Shot_Air_Burst_Stats[burstIndex], "Burst_Power", 0.4); 
 		variable_struct_set(Shot_Air_Burst_Stats[burstIndex], "Burst_Size", 0.7); 
-		variable_struct_set(Shot_Air_Burst_Stats[burstIndex], "Burst_Speed", Shot_Speed * 1.5); 
+		variable_struct_set(Shot_Air_Burst_Stats[burstIndex], "Burst_Speed", Shot_Speed * 1.2);
 		variable_struct_set(Shot_Air_Burst_Stats[burstIndex], "Air_Burst", true); 
 		variable_struct_set(Shot_Air_Burst_Stats[burstIndex], "Range", 110); 
 		var amount = 5

@@ -1,14 +1,20 @@
 plusStr = "";
-dmgIndication = damageIndication;
+var dmgIndication = damageIndication;
+var addIndication = additiveIndication;
 if global.gameDamageDisplay = 1 {
     f = frac(damageIndication);
     dmgIndication = damageIndication - f;
+	addIndication = addIndication - frac(addIndication)
     if(f > 0) {
         plusStr = "+";
     }
 }
 
-str = string(dmgIndication) + plusStr;
+if addIndication <= 0 {
+	str = string(dmgIndication) + plusStr;
+} else {
+	str = string(dmgIndication) + "+" + string(addIndication) + plusStr;	
+}
 
 draw_set_font(Damage_Font);
 

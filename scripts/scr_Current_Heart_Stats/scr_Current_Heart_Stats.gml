@@ -11,6 +11,9 @@ function scr_Current_Heart_Stats() {
 	    if Soul_Hearts_Control.heart[i,2] != 0 {
 	        global.totalhearts++;
 	    }
+		if global.B06HeartConversions > 0 {
+			scr_B06();
+		}
 	}
 	//if global.mousehearttype != 0 {
 	//	global.currentheart--;

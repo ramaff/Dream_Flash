@@ -6,6 +6,8 @@ function scr_Soul_Item_Step_After() {
 	//scr_D10();
 	scr_C01();
 	scr_C07();
+	
+	scr_M01();
 
 	scr_H13();
 
@@ -15,5 +17,7 @@ function scr_Soul_Item_Step_After() {
 	scr_XA05();
 
 	scr_Weapon_Warmup_Step();
+	
+	scr_F07();
 
 }

@@ -2,7 +2,7 @@ function scr_Soul_Damage_Calculation() {
 	//Location Soul Hit Events
 
 	//if (damageamount > defenseamount) {
-	    soulinvincibility = 24;
+	    soulinvincibility = 36;
 		
 		//scr_E01();
     
@@ -31,6 +31,7 @@ function scr_Soul_Damage_Calculation() {
 			scr_T01_Decay(truedam)
 		}
 		scr_XC05(truedam);
+		scr_B14_Heart(truedam);
 		
 		truedam = scr_OB05(truedam);
 		
@@ -39,6 +40,7 @@ function scr_Soul_Damage_Calculation() {
 		with instance_create(obj_Soul_Parent.x,obj_Soul_Parent.y,obj_Damage_Indicator) {
 			element = 1;
 			damageIndication = truedam /* / global.healthungen */
+			additiveIndication = 0
 			if damageIndication < 1 {
 				damageIndication = 1;	
 			}

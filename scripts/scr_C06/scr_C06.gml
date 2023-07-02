@@ -15,7 +15,7 @@ function scr_C06() {
 				scr_Bullet_Dampen(5)
 			}
 			
-			scr_Refresh_Soul(2)
+			scr_Refresh_Soul(3)
 			
 			
 			//scr_Essence_Defense_Field();

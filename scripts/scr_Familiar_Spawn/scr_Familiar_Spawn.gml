@@ -138,8 +138,8 @@ function scr_Familiar_Spawn() {
 
 	if global.M[18] > 0 {
 	    repeat(global.M[18]) {
-	        followminions[cMinAlt] = obj_Bullet_Eater;
-			cMinAlt++;
+	        exemptminions[cMinEx] = obj_Bullet_Eater;
+			cMinEx++;
 	    }
 	}
 
@@ -235,6 +235,7 @@ function scr_Familiar_Spawn() {
 	
 	for(var i = 0; i < cMinEx; i++) {
 		with instance_create(x + lengthdir_x(dis, ang),y + lengthdir_y(dis, ang), exemptminions[i]) {
+			followtarget = noone;
 		}
 		ang += 45;
 		dis += 5 + (300 / dis);

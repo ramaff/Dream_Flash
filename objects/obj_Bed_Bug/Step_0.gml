@@ -423,6 +423,7 @@ if bossActiveAttackDelay[1] <= 0 and bossPatternCooldown <= 0 and bossPatternCou
 if bossActiveAttackDuration[1] <= 0 { 
     bossActiveAttack[1] = 0;
     bossActiveAttack[2] = 0;
+	state = states.normal
 }
 
 #region /// Boss Sprite

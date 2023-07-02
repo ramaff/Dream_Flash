@@ -1,6 +1,6 @@
 // Script assets have changed for v2.3.0 see
 // https://help.yoyogames.com/hc/en-us/articles/360005277377 for more information
-function scr_Damage_Indicator(primaryElement, damageInd, baseSize){
+function scr_Damage_Indicator(primaryElement, damageInd, baseSize, additive = 0){
 	
 	if damageInd >= 50 {
 		baseSize += 1;
@@ -13,7 +13,8 @@ function scr_Damage_Indicator(primaryElement, damageInd, baseSize){
 	var yy = -20 + random(20);
 	with instance_create(x + xx,y + yy,obj_Damage_Indicator) {
 	        element = primaryElement;
-	        damageIndication = damageInd;
+	        damageIndication = damageInd - additive;
+			additiveIndication = additive
 	        textSize = baseSize;
 	        direction = 90;
 	        speed = 2 + (damageIndication / 50) + random(1);

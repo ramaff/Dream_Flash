@@ -15,11 +15,8 @@ function scr_Outside_Check() {
 
 	if inside = 0 {
 
-	    x = clamp(x,(room_width / 2) - ((global.roomSizeY / 2) - abs(yval)),(room_width / 2) + ((global.roomSizeY / 2) - abs(yval)));
+	    x = clamp(x,(room_width / 2) - ((global.roomSizeX / 2) - abs(yval)),(room_width / 2) + ((global.roomSizeY / 2) - abs(yval)));
 	    y = clamp(y,(room_height / 2) - ((global.roomSizeY / 2) - abs(xval)),(room_height / 2) + ((global.roomSizeX / 2) - abs(xval)));
-    
-	    //x = room_width / 2;
-	    //y = room_height / 2;
 	}
 
 

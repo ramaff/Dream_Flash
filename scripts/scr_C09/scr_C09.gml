@@ -2,20 +2,9 @@ function scr_C09() {
 	// Location Soul Hit by Bullet Event
 
 	if global.C[9] > 0 {
-	    obj_Soul_Parent.senergy += 40 * global.C[9];
-		/*
-		part_type_sprite(ptype,spr_Soul_Bit,0,0,0);
-		part_type_color1(ptype, make_color_rgb(50,50,255));
-		part_type_alpha1(ptype, 1)
-		*/		
-		repeat(4) {
-			/*
-			scr_Soul_Part_Summon_Burst(2.5 + random(5));
-		
-			part_type_color1(ptype, make_color_rgb(255,255,50));
-		
-			scr_Soul_Part_Summon_Burst(2.5 + random(5));
-			*/
+		scr_Refresh_Soul(75 * global.C[9])
+		repeat(8) {
+			scr_Particle_Burst(obj_Friction_Part, spr_Soul_Big_Bit, c_aqua, c_blue, 1, 16 + random(8), random(360), 0, 0, 0.5, 25 + random(5))
 		}
 	}
 

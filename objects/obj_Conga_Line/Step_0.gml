@@ -2,17 +2,13 @@
 
 if currentphase = 1 {
 	if instance_exists(followtarget) {
-		if point_distance(x, y, followtarget.x, followtarget.y) > 100 {
+		if point_distance(x, y, followtarget.x, followtarget.y) > 130 {
 			direction = point_direction(x, y, followtarget.x, followtarget.y);
 			speed = followtarget.speed;
 		}
-		//if followtarget.currentphase = 2 {
-		//	followtarget = noone;
-		//} else {
 		if followtarget.currentphase = 1 {
 			activeAttackCooldown = followtarget.activeAttackCooldown	
 		}
-		//}
  	} else {
 		var xdis = abs(x - obj_Soul_Parent.perX);
 		var ydis = abs(y - obj_Soul_Parent.perY);
@@ -112,9 +108,20 @@ if activeAttackDelay <= 0 and patternCooldown <= 0 and patternCount > 0 {
 			bullet_direction = direction
 			bullet_count = 2;
 			bullet_spread = 180;
-			bullet_speed = bossbulletspeed * 1.65;
+			bullet_speed = bossbulletspeed * 1.85;
 		
 			scr_Boss_Shoot();
+			
+			bullet_direction += 22.5 / bossaccuracy
+			bullet_speed = bossbulletspeed * 1.25;
+			
+			scr_Boss_Shoot();
+			
+			bullet_direction -= 45 / bossaccuracy
+			bullet_speed = bossbulletspeed * 1.25;
+			
+			scr_Boss_Shoot();
+			
 		}
 	
 		// If you gotta change the pattern aim direction
@@ -134,8 +141,8 @@ if activeAttackDelay <= 0 and patternCooldown <= 0 and patternCount > 0 {
 			scr_Boss_Stretch("Horizontal", 1.5);
 		
 			bullet_direction = random(360);
-			bullet_count = 6;
-			bullet_spread = 60;
+			bullet_count = 8;
+			bullet_spread = 45;
 			
 			bullet_speed = bossbulletspeed * 1.75;
 		

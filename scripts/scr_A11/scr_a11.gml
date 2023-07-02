@@ -15,37 +15,25 @@ function scr_A11() {
 			scr_Particle_Burst(obj_Friction_Part, spr_Soul_Big_Bit, c_black, c_black, 1, 16 + random(8), random(360), 0, 0, 0.5, 25 + random(5))
 		}
 		
-		scr_Disk_Effect(20, 0.5, c_red);
-		scr_Disk_Effect(20, 0.9, c_red);
+		scr_Disk_Effect(20, 0.7, c_red);
+		scr_Disk_Effect(20, 1.3, c_red);
 		
-		var dist = (150 + global.A[11] * 25)
-		var dam = 4 + (4 * global.A[11]);
+		var dist = (160 + global.A[11] * 50)
+		var dam = 6 + (9 * global.A[11]);
 		
 		with(obj_Bullet_Parent) {
 		    if distance_to_object(other) <= dist {
 				
 				scr_Bullet_Dampen(dam)
-				
-		        /*bulletspeed = bulletspeed / 3;
-		        speed = speed / 3;
-				
-				bulletpower -= dam
-				bulletsize = (bulletpower / bulletpowermax);
-				image_xscale = bulletsize;
-				image_yscale = bulletsize;
-				
-				if bulletsize < 0.05 {
-					bulletsize = 0.05;	
-				}
-				if bulletpower < 1 {
-					instance_destroy();	
-				} */
 		    }
 		}
 		
+		var suckpow = dam * 10;
+	    scr_Enemy_Bullet_Suck(-suckpow);
+		
 		with(obj_Boss_Parent) {
-	        if distance_to_object(other) <= (150 + 25 * global.A[11]) {
-	            dmg = global.A[11] * 20;
+	        if distance_to_object(other) <= (dist) {
+	            dmg = dam * 3;
 	            bosshealth -= dmg;
             
 	            with instance_create(x,y,obj_Damage_Indicator) {

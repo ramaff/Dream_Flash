@@ -85,9 +85,9 @@ if recollectionMirror = 0 {
     draw_sprite_ext(cloudS,recollectionIndex,x,y,-1,-1,0,c_white,image_alpha);
     if image_alpha >= 0.5 {
     draw_set_alpha(image_alpha);
-    draw_text(x-172,y+128, string_hash_to_newline(recollectionString + recollectionUpgradeString));
+    draw_text(x-172,y+96, string_hash_to_newline(recollectionString + recollectionUpgradeString));
     if recollectionExtraStats != 0 {
-		draw_text_ext(x-172,y+96, string_hash_to_newline(recollectionExtraStats),24,200);
+		draw_text_ext(x-172,y+128, string_hash_to_newline(recollectionExtraStats),24,200);
 	}
 	draw_set_alpha(1);
     }

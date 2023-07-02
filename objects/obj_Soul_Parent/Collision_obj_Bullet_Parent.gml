@@ -6,7 +6,7 @@ if soulinvincibility <= 0 {
     scr_H15();
     
     if (damageamount > defenseamount) {
-        scr_B14_Bullet();
+        //scr_B14_Bullet();
         scr_Soul_Spirit_Check_Bullet();
     }
     

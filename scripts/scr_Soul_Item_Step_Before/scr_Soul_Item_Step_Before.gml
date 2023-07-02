@@ -4,7 +4,7 @@ function scr_Soul_Item_Step_Before() {
 	scr_C05();
 	scr_C06();
 	
-	scr_C11();
+	//scr_C11();
 
 	scr_D12_Gust();
 

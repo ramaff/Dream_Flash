@@ -133,12 +133,28 @@ function scr_Weapon_Use_List(cWP = global.currentweapon) {
 		
 		//show_debug_message(current_weapon_stats)
 		
+		scr_XC06_Cost_Adjustment();
+		
+		scr_XA03_Cost_Adjustment();
+		
+		if scr_V06_Active() {
+			weaponCost += weaponCost;
+			scr_V06();
+		}
+		
+		var realCost = weaponCost / (1 + (global.U03boost / 2000));
+		
+		scr_C11_Shot_Mod(realCost)
+		
+		senergy -= realCost;
+		
 		if spawnProjectile {
 			if !minion {
 				scr_Shot_Creation(current_weapon_stats);
 			} else {
 				scr_Soul_Spawn();	
 			}
+			scr_U10();
 		}
 		
 		if Shot_Extra != false {
@@ -159,6 +175,7 @@ function scr_Weapon_Use_List(cWP = global.currentweapon) {
 					} else {
 						scr_Soul_Spawn();	
 					}
+					scr_U10();
 				}
 			}
 		}
@@ -167,20 +184,10 @@ function scr_Weapon_Use_List(cWP = global.currentweapon) {
 			scr_OC03(cWP);
 		}
 		
-		scr_XC06_Cost_Adjustment();
-		
-		scr_XA03_Cost_Adjustment();
-		
-		if global.V06Overwhelm > (8 - global.V[6]) {
-			weaponCost += weaponCost;
-		}
-
-		
 		if obj_Soul_Parent.scurrentstate = "Bleeding" and cWP < 700 {
 			scr_Bleeding_Blade_Use();
 		}
     
-	    senergy -= weaponCost / (1 + (global.U03boost / 2000));
 	    sdelay += weaponDelay / scr_Class_Stat_Firerate_Multiplier();
 	    sWeaponUseFrame = 1;   
 		sWeaponTicker++;
@@ -196,8 +203,6 @@ function scr_Weapon_Use_List(cWP = global.currentweapon) {
 		
 		//scr_Soul_Stretch("Horizontal", 0.2);
 		// set to 0 on weapon Switch
-		
-		scr_U10();
 		
 		scr_Soul_Attack_Think();
 		

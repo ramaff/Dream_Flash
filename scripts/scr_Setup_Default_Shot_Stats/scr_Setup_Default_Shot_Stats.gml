@@ -30,7 +30,8 @@ function scr_Setup_Default_Shot_Stats(){
 		Shot_Face_Direction: false,
 		Shot_Zig_Zag: 0,
 		Shot_Chain_Color: [255,255,255],
-		Shot_Init_Grow: 1
+		Shot_Init_Grow: 1,
+		Shot_Excess_Essence: 0
 	}
 
 }
