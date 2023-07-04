@@ -13,13 +13,16 @@ scr_Boss_Wobble("Horizontal", 0.4, 1, 0);
 /////////////// Active Attack Prep
 //////////////////////////////////////////////////////////////////////////////////////////
 
-if activeAttackDelay <= 0 and activeAttackCooldown <= 0 and activeAttackDuration <= 0 {
+if active_attack_delay <= 0 and active_attack_cooldown <= 0 and active_attack_duration <= 0 {
     
 	// Pick a random attack to do
-	activeAttack = choose(1);
+	active_attack = choose(1, 2, 3);
+	if scr_Minion_Count() {
+		active_attack = choose(1, 2)	
+	}
 	
 	// Triple Spin Shots
-    if activeAttack = 1 {
+    if active_attack = 1 {
 		// Setup how many attacks per boss move, delay, etc
 		scr_Boss_Attack_Time_Setup_v2(3, 50, 45, 120, 30, 10);
 		
@@ -28,7 +31,7 @@ if activeAttackDelay <= 0 and activeAttackCooldown <= 0 and activeAttackDuration
 		// patternDirection = random(360;
     }
 	// Multi Portal Hop
-    if activeAttack = 2 {
+    if active_attack = 2 {
 		// Setup how many attacks per boss move, delay, etc
 		scr_Boss_Attack_Time_Setup_v2(3, 50, 45, 120, 30, 10);
 		
@@ -37,7 +40,7 @@ if activeAttackDelay <= 0 and activeAttackCooldown <= 0 and activeAttackDuration
 		// patternDirection = random(360;
     }
 	// Cheeky Pocket Spawns
-    if activeAttack = 3 {
+    if active_attack = 3 {
 		// Setup how many attacks per boss move, delay, etc
 		scr_Boss_Attack_Time_Setup_v2(3, 50, 45, 120, 30, 10);
 		
@@ -46,7 +49,7 @@ if activeAttackDelay <= 0 and activeAttackCooldown <= 0 and activeAttackDuration
 		// patternDirection = random(360;
     }
 	// Triple Portal Soul Array Shots
-    if activeAttack = 4 {
+    if active_attack = 4 {
 		// Setup how many attacks per boss move, delay, etc
 		scr_Boss_Attack_Time_Setup_v2(3, 50, 45, 120, 30, 10);
 		
@@ -63,9 +66,9 @@ if activeAttackDelay <= 0 and activeAttackCooldown <= 0 and activeAttackDuration
 scr_Default_Attack_Settings();
 
 // If its time to attack, attack
-if activeAttackDelay <= 0 and patternCooldown <= 0 and patternCount > 0 {
+if active_attack_delay <= 0 and pattern_cooldown <= 0 and pattern_count > 0 {
    
-    if activeAttack = 1 {
+    if active_attack = 1 {
 		scr_Boss_Stretch("Vertical", 1);
 		
 		bullet_direction = scr_Boss_Bullet_Direction_Formula(scr_Soul_Point(), 180)
@@ -88,16 +91,16 @@ if activeAttackDelay <= 0 and patternCooldown <= 0 and patternCount > 0 {
 	}
 	
 	// Maybe I should put this into a script
-    patternCount -= 1;
-    patternCooldown += patternCooldownMax;
+    pattern_count -= 1;
+    pattern_cooldown += pattern_cooldown_max;
 }
 
 //////////////////////////////////////////////////////////////////////////////////////////
 /// Active Attack Post
 //////////////////////////////////////////////////////////////////////////////////////////
 
-if activeAttackDuration <= 0 { 
-    activeAttack = 0;
+if active_attack_duration <= 0 { 
+    active_attack = 0;
 }
 
 /// Boss Sprite Code
@@ -106,14 +109,26 @@ if activeAttackDuration <= 0 {
 scr_Boss_Size_Lerp(0.15);
 
 // Handles boss attack sprite animation
-if activeAttack != 0 {
-	var holdFrame = 2;
-	scr_Boss_Attack_Sprite_v2(spr_Pocket_v2_Shoot, holdFrame, 3, 3, 20);
-	if image_index = holdFrame {
+if active_attack == 1 {
+	var _hold_frame = 2;
+	scr_Boss_Attack_Sprite_v2(spr_pocket_v2_shoot, _hold_frame, 3, 3, 20);
+	if image_index = _hold_frame {
+		scr_Boss_Wobble("Horizontal", 2, 0.4, 0)	
+	}
+} else if active_attack == 2 {
+	var _hold_frame = 2;
+	scr_Boss_Attack_Sprite_v2(spr_pocket_v2_springy_pop, _hold_frame, 3, 3, 20);
+	if image_index = _hold_frame {
+		scr_Boss_Wobble("Horizontal", 2, 0.4, 0)	
+	}
+} else if active_attack == 3 {
+	var _hold_frame = 2;
+	scr_Boss_Attack_Sprite_v2(spr_pocket_v2_cheeky, _hold_frame, 3, 3, 20);
+	if image_index = _hold_frame {
 		scr_Boss_Wobble("Horizontal", 2, 0.4, 0)	
 	}
 } else {
-	sprite_index = spr_Pocket_v2;
+	sprite_index = spr_pocket_v2;
 }
 
 // So that the boss hurts soul on collision

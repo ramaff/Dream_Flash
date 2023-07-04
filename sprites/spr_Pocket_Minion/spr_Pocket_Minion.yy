@@ -1,7 +1,7 @@
 {
   "resourceType": "GMSprite",
   "resourceVersion": "1.0",
-  "name": "spr_Pocket_Minion",
+  "name": "spr_pocket_minion",
   "bbox_bottom": 333,
   "bbox_left": 128,
   "bbox_right": 276,
@@ -36,7 +36,7 @@
   "sequence": {
     "resourceType": "GMSequence",
     "resourceVersion": "1.4",
-    "name": "spr_Pocket_Minion",
+    "name": "spr_pocket_minion",
     "autoRecord": true,
     "backdropHeight": 768,
     "backdropImageOpacity": 0.5,
@@ -58,11 +58,11 @@
     "timeUnits": 1,
     "tracks": [
       {"resourceType":"GMSpriteFramesTrack","resourceVersion":"1.0","name":"frames","builtinName":0,"events":[],"inheritsTrackColour":true,"interpolation":1,"isCreationTrack":false,"keyframes":{"resourceType":"KeyframeStore<SpriteFrameKeyframe>","resourceVersion":"1.0","Keyframes":[
-            {"resourceType":"Keyframe<SpriteFrameKeyframe>","resourceVersion":"1.0","Channels":{"0":{"resourceType":"SpriteFrameKeyframe","resourceVersion":"1.0","Id":{"name":"e8d9fc84-da30-4bd1-bcd2-2fa0bb7cae5b","path":"sprites/spr_Pocket_Minion/spr_Pocket_Minion.yy",},},},"Disabled":false,"id":"870b1949-e8d2-4564-a794-4ea79831a036","IsCreationKey":false,"Key":0.0,"Length":1.0,"Stretch":false,},
-            {"resourceType":"Keyframe<SpriteFrameKeyframe>","resourceVersion":"1.0","Channels":{"0":{"resourceType":"SpriteFrameKeyframe","resourceVersion":"1.0","Id":{"name":"1f19abf2-f284-4770-b64e-19a3c62dad21","path":"sprites/spr_Pocket_Minion/spr_Pocket_Minion.yy",},},},"Disabled":false,"id":"0f98035a-cf3f-4afe-8d5b-bbb076e26984","IsCreationKey":false,"Key":1.0,"Length":1.0,"Stretch":false,},
-            {"resourceType":"Keyframe<SpriteFrameKeyframe>","resourceVersion":"1.0","Channels":{"0":{"resourceType":"SpriteFrameKeyframe","resourceVersion":"1.0","Id":{"name":"0c1f82a4-e596-44c5-b27e-44f3d1299504","path":"sprites/spr_Pocket_Minion/spr_Pocket_Minion.yy",},},},"Disabled":false,"id":"bd87b15b-ae02-4a0a-adef-ace37a86c38e","IsCreationKey":false,"Key":2.0,"Length":1.0,"Stretch":false,},
-            {"resourceType":"Keyframe<SpriteFrameKeyframe>","resourceVersion":"1.0","Channels":{"0":{"resourceType":"SpriteFrameKeyframe","resourceVersion":"1.0","Id":{"name":"da47a704-8017-4c0a-84ef-d1e4cf0a4851","path":"sprites/spr_Pocket_Minion/spr_Pocket_Minion.yy",},},},"Disabled":false,"id":"2255bc14-c00c-4e12-9c81-18ce757bf2c6","IsCreationKey":false,"Key":3.0,"Length":1.0,"Stretch":false,},
-            {"resourceType":"Keyframe<SpriteFrameKeyframe>","resourceVersion":"1.0","Channels":{"0":{"resourceType":"SpriteFrameKeyframe","resourceVersion":"1.0","Id":{"name":"2541ce29-d652-4f22-8002-c0b3f4d6e501","path":"sprites/spr_Pocket_Minion/spr_Pocket_Minion.yy",},},},"Disabled":false,"id":"ee7d7c3a-1f0c-47ed-895b-86c5ab689c03","IsCreationKey":false,"Key":4.0,"Length":1.0,"Stretch":false,},
+            {"resourceType":"Keyframe<SpriteFrameKeyframe>","resourceVersion":"1.0","Channels":{"0":{"resourceType":"SpriteFrameKeyframe","resourceVersion":"1.0","Id":{"name":"e8d9fc84-da30-4bd1-bcd2-2fa0bb7cae5b","path":"sprites/spr_pocket_minion/spr_pocket_minion.yy",},},},"Disabled":false,"id":"870b1949-e8d2-4564-a794-4ea79831a036","IsCreationKey":false,"Key":0.0,"Length":1.0,"Stretch":false,},
+            {"resourceType":"Keyframe<SpriteFrameKeyframe>","resourceVersion":"1.0","Channels":{"0":{"resourceType":"SpriteFrameKeyframe","resourceVersion":"1.0","Id":{"name":"1f19abf2-f284-4770-b64e-19a3c62dad21","path":"sprites/spr_pocket_minion/spr_pocket_minion.yy",},},},"Disabled":false,"id":"0f98035a-cf3f-4afe-8d5b-bbb076e26984","IsCreationKey":false,"Key":1.0,"Length":1.0,"Stretch":false,},
+            {"resourceType":"Keyframe<SpriteFrameKeyframe>","resourceVersion":"1.0","Channels":{"0":{"resourceType":"SpriteFrameKeyframe","resourceVersion":"1.0","Id":{"name":"0c1f82a4-e596-44c5-b27e-44f3d1299504","path":"sprites/spr_pocket_minion/spr_pocket_minion.yy",},},},"Disabled":false,"id":"bd87b15b-ae02-4a0a-adef-ace37a86c38e","IsCreationKey":false,"Key":2.0,"Length":1.0,"Stretch":false,},
+            {"resourceType":"Keyframe<SpriteFrameKeyframe>","resourceVersion":"1.0","Channels":{"0":{"resourceType":"SpriteFrameKeyframe","resourceVersion":"1.0","Id":{"name":"da47a704-8017-4c0a-84ef-d1e4cf0a4851","path":"sprites/spr_pocket_minion/spr_pocket_minion.yy",},},},"Disabled":false,"id":"2255bc14-c00c-4e12-9c81-18ce757bf2c6","IsCreationKey":false,"Key":3.0,"Length":1.0,"Stretch":false,},
+            {"resourceType":"Keyframe<SpriteFrameKeyframe>","resourceVersion":"1.0","Channels":{"0":{"resourceType":"SpriteFrameKeyframe","resourceVersion":"1.0","Id":{"name":"2541ce29-d652-4f22-8002-c0b3f4d6e501","path":"sprites/spr_pocket_minion/spr_pocket_minion.yy",},},},"Disabled":false,"id":"ee7d7c3a-1f0c-47ed-895b-86c5ab689c03","IsCreationKey":false,"Key":4.0,"Length":1.0,"Stretch":false,},
           ],},"modifiers":[],"spriteId":null,"trackColour":0,"tracks":[],"traits":0,},
     ],
     "visibleRange": null,

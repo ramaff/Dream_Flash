@@ -1,4 +1,4 @@
-function scr_Boss_Stats_Setup(version=1) {
+function scr_Boss_Stats_Setup(_version=1) {
 	currentphase = 1;
 	finalphase = 2;
 	
@@ -6,24 +6,28 @@ function scr_Boss_Stats_Setup(version=1) {
 	
 	tier = global.currentchapter - 1;
 
-	scr_Boss_Status_Setup(version);
+	scr_Boss_Status_Setup(_version);
 	
 	bossattackspeed = 1;
 	if boost = 1 {
 	    bossattackspeed += 0.5;
 	}
 		
-	bossHeight = 0;
+	boss_height = 0;
     
-	scr_Boss_Attack_Setup(version);
+	scr_Boss_Attack_Setup(_version);
     
 	//alarm[11] = 30;
     
 	baseDepth = 0;
 
 	//var champval = frac(global.bossval);
-	//var bossnum = global.bossval - champval;
-	var bossnum = bossValue - frac(bossValue)
+	//var _boss_num = global.bossval - champval;
+	if _version = 1 {
+		var _boss_num = bossValue - frac(bossValue)
+	} else {
+		var _boss_num = boss_value - frac(boss_value)	
+	}
 	champval = champ
 	
 	difficulty = 0;
@@ -53,16 +57,16 @@ function scr_Boss_Stats_Setup(version=1) {
 	bossmaxhealth = 0;
 	bossmaxhealth2 = 0;
 		
-	if bossnum > 110 and bossnum <= 116 {
+	if _boss_num > 110 and _boss_num <= 116 {
 		champval = global.currentchapter - 1;	
 	}
 	
-	var bossstring = "Boss " + string(bossnum)
-	if bossnum < 100 {
-		bossstring = "Boss 0" + string(bossnum)
+	var bossstring = "Boss " + string(_boss_num)
+	if _boss_num < 100 {
+		bossstring = "Boss 0" + string(_boss_num)
 	}
-	if bossnum < 10 {
-		bossstring = "Boss 00" + string(bossnum)
+	if _boss_num < 10 {
+		bossstring = "Boss 00" + string(_boss_num)
 	}
 	if variable_struct_exists(global.boss_stats, bossstring) {
 		current_boss_stats = variable_struct_get(global.boss_stats, bossstring)
@@ -152,12 +156,12 @@ function scr_Boss_Stats_Setup(version=1) {
 	}
     
 	
-	if bossnum > 80 and bossnum <= 90 and room = State_Room {
+	if _boss_num > 80 and _boss_num <= 90 and room = State_Room {
 		bossmaxhealth = bossmaxhealth * 1.5;
 		bossmaxhealth2 = bossmaxhealth2 * 1.5;
 	}
 	
-	if bossnum = 161 {
+	if _boss_num = 161 {
 	    bossmaxhealth = 50 + 50 * global.currentchapter;
 	    bossmaxhealth2 = 0;
 	    bosspower = 6;
@@ -236,7 +240,7 @@ function scr_Boss_Stats_Setup(version=1) {
 			}
 		}
 		
-		if bossnum = 53 {
+		if _boss_num = 53 {
 			bossmaxhealth = bossmaxhealth * 1.25;	
 			bossmaxhealth2 = bossmaxhealth2 * 1.25;	
 			bossmaxhealth3 = bossmaxhealth3 * 1.25;	

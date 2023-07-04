@@ -1,7 +1,7 @@
 {
   "resourceType": "GMSprite",
   "resourceVersion": "1.0",
-  "name": "spr_Pocket_Minion_Steppers",
+  "name": "spr_pocket_minion_steppers",
   "bbox_bottom": 216,
   "bbox_left": 61,
   "bbox_right": 238,
@@ -35,7 +35,7 @@
   "sequence": {
     "resourceType": "GMSequence",
     "resourceVersion": "1.4",
-    "name": "spr_Pocket_Minion_Steppers",
+    "name": "spr_pocket_minion_steppers",
     "autoRecord": true,
     "backdropHeight": 768,
     "backdropImageOpacity": 0.5,
@@ -57,10 +57,10 @@
     "timeUnits": 1,
     "tracks": [
       {"resourceType":"GMSpriteFramesTrack","resourceVersion":"1.0","name":"frames","builtinName":0,"events":[],"inheritsTrackColour":true,"interpolation":1,"isCreationTrack":false,"keyframes":{"resourceType":"KeyframeStore<SpriteFrameKeyframe>","resourceVersion":"1.0","Keyframes":[
-            {"resourceType":"Keyframe<SpriteFrameKeyframe>","resourceVersion":"1.0","Channels":{"0":{"resourceType":"SpriteFrameKeyframe","resourceVersion":"1.0","Id":{"name":"2541ce29-d652-4f22-8002-c0b3f4d6e501","path":"sprites/spr_Pocket_Minion_Steppers/spr_Pocket_Minion_Steppers.yy",},},},"Disabled":false,"id":"a1d6c66d-e3dc-4140-aa02-fff24965f4bf","IsCreationKey":false,"Key":0.0,"Length":1.0,"Stretch":false,},
-            {"resourceType":"Keyframe<SpriteFrameKeyframe>","resourceVersion":"1.0","Channels":{"0":{"resourceType":"SpriteFrameKeyframe","resourceVersion":"1.0","Id":{"name":"40e29739-0018-4a9e-a6fc-c3c708bc8a63","path":"sprites/spr_Pocket_Minion_Steppers/spr_Pocket_Minion_Steppers.yy",},},},"Disabled":false,"id":"206de1a9-c09c-42a2-ad26-4810cad07173","IsCreationKey":false,"Key":1.0,"Length":1.0,"Stretch":false,},
-            {"resourceType":"Keyframe<SpriteFrameKeyframe>","resourceVersion":"1.0","Channels":{"0":{"resourceType":"SpriteFrameKeyframe","resourceVersion":"1.0","Id":{"name":"ac086710-9205-45bd-a9f1-764429544a4f","path":"sprites/spr_Pocket_Minion_Steppers/spr_Pocket_Minion_Steppers.yy",},},},"Disabled":false,"id":"bdfd2385-350c-4095-a428-91f317ebe316","IsCreationKey":false,"Key":2.0,"Length":1.0,"Stretch":false,},
-            {"resourceType":"Keyframe<SpriteFrameKeyframe>","resourceVersion":"1.0","Channels":{"0":{"resourceType":"SpriteFrameKeyframe","resourceVersion":"1.0","Id":{"name":"fde5dda6-2c92-43d4-b373-9206b8c2587c","path":"sprites/spr_Pocket_Minion_Steppers/spr_Pocket_Minion_Steppers.yy",},},},"Disabled":false,"id":"5b00f570-af79-4f2d-88da-3dd655fc621e","IsCreationKey":false,"Key":3.0,"Length":1.0,"Stretch":false,},
+            {"resourceType":"Keyframe<SpriteFrameKeyframe>","resourceVersion":"1.0","Channels":{"0":{"resourceType":"SpriteFrameKeyframe","resourceVersion":"1.0","Id":{"name":"2541ce29-d652-4f22-8002-c0b3f4d6e501","path":"sprites/spr_pocket_minion_steppers/spr_pocket_minion_steppers.yy",},},},"Disabled":false,"id":"a1d6c66d-e3dc-4140-aa02-fff24965f4bf","IsCreationKey":false,"Key":0.0,"Length":1.0,"Stretch":false,},
+            {"resourceType":"Keyframe<SpriteFrameKeyframe>","resourceVersion":"1.0","Channels":{"0":{"resourceType":"SpriteFrameKeyframe","resourceVersion":"1.0","Id":{"name":"40e29739-0018-4a9e-a6fc-c3c708bc8a63","path":"sprites/spr_pocket_minion_steppers/spr_pocket_minion_steppers.yy",},},},"Disabled":false,"id":"206de1a9-c09c-42a2-ad26-4810cad07173","IsCreationKey":false,"Key":1.0,"Length":1.0,"Stretch":false,},
+            {"resourceType":"Keyframe<SpriteFrameKeyframe>","resourceVersion":"1.0","Channels":{"0":{"resourceType":"SpriteFrameKeyframe","resourceVersion":"1.0","Id":{"name":"ac086710-9205-45bd-a9f1-764429544a4f","path":"sprites/spr_pocket_minion_steppers/spr_pocket_minion_steppers.yy",},},},"Disabled":false,"id":"bdfd2385-350c-4095-a428-91f317ebe316","IsCreationKey":false,"Key":2.0,"Length":1.0,"Stretch":false,},
+            {"resourceType":"Keyframe<SpriteFrameKeyframe>","resourceVersion":"1.0","Channels":{"0":{"resourceType":"SpriteFrameKeyframe","resourceVersion":"1.0","Id":{"name":"fde5dda6-2c92-43d4-b373-9206b8c2587c","path":"sprites/spr_pocket_minion_steppers/spr_pocket_minion_steppers.yy",},},},"Disabled":false,"id":"5b00f570-af79-4f2d-88da-3dd655fc621e","IsCreationKey":false,"Key":3.0,"Length":1.0,"Stretch":false,},
           ],},"modifiers":[],"spriteId":null,"trackColour":0,"tracks":[],"traits":0,},
     ],
     "visibleRange": null,

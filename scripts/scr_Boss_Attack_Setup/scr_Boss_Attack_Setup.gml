@@ -1,10 +1,10 @@
-function scr_Boss_Attack_Setup(version = 1) {
+function scr_Boss_Attack_Setup(_version = 1) {
 	
 	// XB05
 	boss_bullet_count_modded = false;
 	
 	// Old way
-	if version = 1 {
+	if _version = 1 {
 		for(i = 0; i < 10; i++) {
 		    bossActiveAttack[i] = 0;
 		    bossPassiveAttack[i] = 0;
@@ -30,17 +30,17 @@ function scr_Boss_Attack_Setup(version = 1) {
 	    bossPatternDirection = 0;
 	    bossPatternCooldown = 0;
 	}
-	if version = 2 {
-		activeAttack = 0;
-		activeAttackDelay = 0;
-		activeAttackDuration = 0;
-		activeAttackCooldown = 60 / bossattackspeed;
+	if _version = 2 {
+		active_attack = 0;
+		active_attack_delay = 0;
+		active_attack_duration = 0;
+		active_attack_cooldown = 60 / bossattackspeed;
 
-	    patternCount = 0;
-		patternCountMax = 0;
-	    patternDirection = 0;
-	    patternCooldown = 0;
-	    patternCooldownMax = 0;
+	    pattern_count = 0;
+		pattern_count_max = 0;
+	    pattern_direction = 0;
+	    pattern_cooldown = 0;
+	    pattern_cooldown_max = 0;
 	}
 
 	setbeamlength = 0;

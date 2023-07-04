@@ -1,7 +1,7 @@
 {
   "resourceType": "GMObject",
   "resourceVersion": "1.0",
-  "name": "obj_Pocket_v2",
+  "name": "obj_pocket_v2",
   "eventList": [
     {"resourceType":"GMEvent","resourceVersion":"1.0","name":"","collisionObjectId":null,"eventNum":0,"eventType":0,"isDnD":false,},
     {"resourceType":"GMEvent","resourceVersion":"1.0","name":"","collisionObjectId":null,"eventNum":0,"eventType":3,"isDnD":false,},
@@ -33,8 +33,8 @@
   "properties": [],
   "solid": false,
   "spriteId": {
-    "name": "spr_Pocket_v2",
-    "path": "sprites/spr_Pocket_v2/spr_Pocket_v2.yy",
+    "name": "spr_pocket_v2",
+    "path": "sprites/spr_pocket_v2/spr_pocket_v2.yy",
   },
   "spriteMaskId": null,
   "visible": false,

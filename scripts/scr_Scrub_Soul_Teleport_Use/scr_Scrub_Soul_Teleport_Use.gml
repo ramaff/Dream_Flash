@@ -29,7 +29,7 @@ function scr_Scrub_Soul_Teleport_Use(dist, ang) {
 	current_weapon_stats.Shot_XX = lengthdir_x(dist, ang) - 75 + random(150);
 	current_weapon_stats.Shot_YY = lengthdir_y(dist, ang) - 75 + random(150);
 	
-	scr_Setup_Weapon_Stats(current_weapon_stats);
+	scr_setup_weapon_stats(current_weapon_stats);
 	
 	scr_Shot_Creation();
 

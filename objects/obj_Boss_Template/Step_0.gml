@@ -13,12 +13,12 @@ scr_Boss_Wobble("Horizontal", 0.4, 1, 0);
 /////////////// Active Attack Prep
 //////////////////////////////////////////////////////////////////////////////////////////
 
-if activeAttackDelay <= 0 and activeAttackCooldown <= 0 and activeAttackDuration <= 0 {
+if active_attack_delay <= 0 and active_attack_cooldown <= 0 and active_attack_duration <= 0 {
     
 	// Pick a random attack to do
-	activeAttack = choose(1);
+	active_attack = choose(1);
 	
-    if activeAttack = 1 {
+    if active_attack = 1 {
 		// Setup how many attacks per boss move, delay, etc
 		scr_Boss_Attack_Time_Setup_v2(1, 50, 1, 120, 30, 10);
 		
@@ -35,9 +35,9 @@ if activeAttackDelay <= 0 and activeAttackCooldown <= 0 and activeAttackDuration
 scr_Default_Attack_Settings();
 
 // If its time to attack, attack
-if activeAttackDelay <= 0 and patternCooldown <= 0 and patternCount > 0 {
+if active_attack_delay <= 0 and pattern_cooldown <= 0 and pattern_count > 0 {
    
-    if activeAttack = 1 {
+    if active_attack = 1 {
 		scr_Boss_Stretch("Vertical", 1);
 		
 		bullet_direction = scr_Boss_Bullet_Direction_Formula(scr_Soul_Point(), 30)
@@ -49,16 +49,16 @@ if activeAttackDelay <= 0 and patternCooldown <= 0 and patternCount > 0 {
 	}
 	
 	// Maybe I should put this into a script
-    patternCount -= 1;
-    patternCooldown += patternCooldownMax;
+    pattern_count -= 1;
+    pattern_cooldown += pattern_cooldown_max;
 }
 
 //////////////////////////////////////////////////////////////////////////////////////////
 /// Active Attack Post
 //////////////////////////////////////////////////////////////////////////////////////////
 
-if activeAttackDuration <= 0 { 
-    activeAttack = 0;
+if active_attack_duration <= 0 { 
+    active_attack = 0;
 }
 
 /// Boss Sprite Code
@@ -67,7 +67,7 @@ if activeAttackDuration <= 0 {
 scr_Boss_Size_Lerp(0.15);
 
 // Handles boss attack sprite animation
-if activeAttack != 0 {
+if active_attack != 0 {
 	var holdFrame = 1;
 	scr_Boss_Attack_Sprite_v2(spr_Boss_Template_Attack, holdFrame, 2, 2, 20);
 	if image_index = holdFrame {

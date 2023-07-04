@@ -1,7 +1,7 @@
 {
   "resourceType": "GMSprite",
   "resourceVersion": "1.0",
-  "name": "spr_Pocket_Minion_Shoot",
+  "name": "spr_pocket_minion_shoot",
   "bbox_bottom": 233,
   "bbox_left": 78,
   "bbox_right": 226,
@@ -36,7 +36,7 @@
   "sequence": {
     "resourceType": "GMSequence",
     "resourceVersion": "1.4",
-    "name": "spr_Pocket_Minion_Shoot",
+    "name": "spr_pocket_minion_shoot",
     "autoRecord": true,
     "backdropHeight": 768,
     "backdropImageOpacity": 0.5,
@@ -58,11 +58,11 @@
     "timeUnits": 1,
     "tracks": [
       {"resourceType":"GMSpriteFramesTrack","resourceVersion":"1.0","name":"frames","builtinName":0,"events":[],"inheritsTrackColour":true,"interpolation":1,"isCreationTrack":false,"keyframes":{"resourceType":"KeyframeStore<SpriteFrameKeyframe>","resourceVersion":"1.0","Keyframes":[
-            {"resourceType":"Keyframe<SpriteFrameKeyframe>","resourceVersion":"1.0","Channels":{"0":{"resourceType":"SpriteFrameKeyframe","resourceVersion":"1.0","Id":{"name":"e8d9fc84-da30-4bd1-bcd2-2fa0bb7cae5b","path":"sprites/spr_Pocket_Minion_Shoot/spr_Pocket_Minion_Shoot.yy",},},},"Disabled":false,"id":"28753659-9ce1-4b62-97dd-5d6a1512a55b","IsCreationKey":false,"Key":0.0,"Length":1.0,"Stretch":false,},
-            {"resourceType":"Keyframe<SpriteFrameKeyframe>","resourceVersion":"1.0","Channels":{"0":{"resourceType":"SpriteFrameKeyframe","resourceVersion":"1.0","Id":{"name":"1f19abf2-f284-4770-b64e-19a3c62dad21","path":"sprites/spr_Pocket_Minion_Shoot/spr_Pocket_Minion_Shoot.yy",},},},"Disabled":false,"id":"b8ac03a7-a46d-4037-bcc7-8a54f41de3e8","IsCreationKey":false,"Key":1.0,"Length":1.0,"Stretch":false,},
-            {"resourceType":"Keyframe<SpriteFrameKeyframe>","resourceVersion":"1.0","Channels":{"0":{"resourceType":"SpriteFrameKeyframe","resourceVersion":"1.0","Id":{"name":"0c1f82a4-e596-44c5-b27e-44f3d1299504","path":"sprites/spr_Pocket_Minion_Shoot/spr_Pocket_Minion_Shoot.yy",},},},"Disabled":false,"id":"5404a072-a8f6-4138-9e45-6aa20c0d9a45","IsCreationKey":false,"Key":2.0,"Length":1.0,"Stretch":false,},
-            {"resourceType":"Keyframe<SpriteFrameKeyframe>","resourceVersion":"1.0","Channels":{"0":{"resourceType":"SpriteFrameKeyframe","resourceVersion":"1.0","Id":{"name":"da47a704-8017-4c0a-84ef-d1e4cf0a4851","path":"sprites/spr_Pocket_Minion_Shoot/spr_Pocket_Minion_Shoot.yy",},},},"Disabled":false,"id":"bb155a4b-b717-4453-8cfc-5b17fe0bfc52","IsCreationKey":false,"Key":3.0,"Length":1.0,"Stretch":false,},
-            {"resourceType":"Keyframe<SpriteFrameKeyframe>","resourceVersion":"1.0","Channels":{"0":{"resourceType":"SpriteFrameKeyframe","resourceVersion":"1.0","Id":{"name":"27c434f1-605a-4b88-8e5a-f2662b085c3c","path":"sprites/spr_Pocket_Minion_Shoot/spr_Pocket_Minion_Shoot.yy",},},},"Disabled":false,"id":"777bb04e-932c-4651-bc56-53eb465055df","IsCreationKey":false,"Key":4.0,"Length":1.0,"Stretch":false,},
+            {"resourceType":"Keyframe<SpriteFrameKeyframe>","resourceVersion":"1.0","Channels":{"0":{"resourceType":"SpriteFrameKeyframe","resourceVersion":"1.0","Id":{"name":"e8d9fc84-da30-4bd1-bcd2-2fa0bb7cae5b","path":"sprites/spr_pocket_minion_shoot/spr_pocket_minion_shoot.yy",},},},"Disabled":false,"id":"28753659-9ce1-4b62-97dd-5d6a1512a55b","IsCreationKey":false,"Key":0.0,"Length":1.0,"Stretch":false,},
+            {"resourceType":"Keyframe<SpriteFrameKeyframe>","resourceVersion":"1.0","Channels":{"0":{"resourceType":"SpriteFrameKeyframe","resourceVersion":"1.0","Id":{"name":"1f19abf2-f284-4770-b64e-19a3c62dad21","path":"sprites/spr_pocket_minion_shoot/spr_pocket_minion_shoot.yy",},},},"Disabled":false,"id":"b8ac03a7-a46d-4037-bcc7-8a54f41de3e8","IsCreationKey":false,"Key":1.0,"Length":1.0,"Stretch":false,},
+            {"resourceType":"Keyframe<SpriteFrameKeyframe>","resourceVersion":"1.0","Channels":{"0":{"resourceType":"SpriteFrameKeyframe","resourceVersion":"1.0","Id":{"name":"0c1f82a4-e596-44c5-b27e-44f3d1299504","path":"sprites/spr_pocket_minion_shoot/spr_pocket_minion_shoot.yy",},},},"Disabled":false,"id":"5404a072-a8f6-4138-9e45-6aa20c0d9a45","IsCreationKey":false,"Key":2.0,"Length":1.0,"Stretch":false,},
+            {"resourceType":"Keyframe<SpriteFrameKeyframe>","resourceVersion":"1.0","Channels":{"0":{"resourceType":"SpriteFrameKeyframe","resourceVersion":"1.0","Id":{"name":"da47a704-8017-4c0a-84ef-d1e4cf0a4851","path":"sprites/spr_pocket_minion_shoot/spr_pocket_minion_shoot.yy",},},},"Disabled":false,"id":"bb155a4b-b717-4453-8cfc-5b17fe0bfc52","IsCreationKey":false,"Key":3.0,"Length":1.0,"Stretch":false,},
+            {"resourceType":"Keyframe<SpriteFrameKeyframe>","resourceVersion":"1.0","Channels":{"0":{"resourceType":"SpriteFrameKeyframe","resourceVersion":"1.0","Id":{"name":"27c434f1-605a-4b88-8e5a-f2662b085c3c","path":"sprites/spr_pocket_minion_shoot/spr_pocket_minion_shoot.yy",},},},"Disabled":false,"id":"777bb04e-932c-4651-bc56-53eb465055df","IsCreationKey":false,"Key":4.0,"Length":1.0,"Stretch":false,},
           ],},"modifiers":[],"spriteId":null,"trackColour":0,"tracks":[],"traits":0,},
     ],
     "visibleRange": null,
