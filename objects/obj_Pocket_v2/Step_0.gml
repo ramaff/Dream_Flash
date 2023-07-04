@@ -18,9 +18,37 @@ if activeAttackDelay <= 0 and activeAttackCooldown <= 0 and activeAttackDuration
 	// Pick a random attack to do
 	activeAttack = choose(1);
 	
+	// Triple Spin Shots
     if activeAttack = 1 {
 		// Setup how many attacks per boss move, delay, etc
-		scr_Boss_Attack_Time_Setup_v2(1, 50, 1, 120, 30, 10);
+		scr_Boss_Attack_Time_Setup_v2(3, 50, 45, 120, 30, 10);
+		
+		// Can set up the initial pattern direction
+		// patternDirection = scr_Soul_Point();
+		// patternDirection = random(360;
+    }
+	// Multi Portal Hop
+    if activeAttack = 2 {
+		// Setup how many attacks per boss move, delay, etc
+		scr_Boss_Attack_Time_Setup_v2(3, 50, 45, 120, 30, 10);
+		
+		// Can set up the initial pattern direction
+		// patternDirection = scr_Soul_Point();
+		// patternDirection = random(360;
+    }
+	// Cheeky Pocket Spawns
+    if activeAttack = 3 {
+		// Setup how many attacks per boss move, delay, etc
+		scr_Boss_Attack_Time_Setup_v2(3, 50, 45, 120, 30, 10);
+		
+		// Can set up the initial pattern direction
+		// patternDirection = scr_Soul_Point();
+		// patternDirection = random(360;
+    }
+	// Triple Portal Soul Array Shots
+    if activeAttack = 4 {
+		// Setup how many attacks per boss move, delay, etc
+		scr_Boss_Attack_Time_Setup_v2(3, 50, 45, 120, 30, 10);
 		
 		// Can set up the initial pattern direction
 		// patternDirection = scr_Soul_Point();
@@ -40,7 +68,18 @@ if activeAttackDelay <= 0 and patternCooldown <= 0 and patternCount > 0 {
     if activeAttack = 1 {
 		scr_Boss_Stretch("Vertical", 1);
 		
-		bullet_direction = scr_Boss_Bullet_Direction_Formula(scr_Soul_Point(), 30)
+		bullet_direction = scr_Boss_Bullet_Direction_Formula(scr_Soul_Point(), 180)
+		
+		bullet_speed = bossbulletspeed * 1;
+		bullet_power = bosspower * 2;
+		bullet_type = obj_Portal_Spinner;
+        bullet_sprite = spr_Portal_Shot;
+		bullet_count = 1;
+		
+		if champ = 1 {
+			bullet_count = 2;
+			bullet_spread = 120;
+		}
 		
 		scr_Boss_Shoot();
 	
@@ -68,13 +107,13 @@ scr_Boss_Size_Lerp(0.15);
 
 // Handles boss attack sprite animation
 if activeAttack != 0 {
-	var holdFrame = 1;
-	scr_Boss_Attack_Sprite_v2(spr_Boss_Template_Attack, holdFrame, 2, 2, 20);
+	var holdFrame = 2;
+	scr_Boss_Attack_Sprite_v2(spr_Pocket_v2_Shoot, holdFrame, 3, 3, 20);
 	if image_index = holdFrame {
 		scr_Boss_Wobble("Horizontal", 2, 0.4, 0)	
 	}
 } else {
-	sprite_index = spr_Boss_Template;
+	sprite_index = spr_Pocket_v2;
 }
 
 // So that the boss hurts soul on collision
