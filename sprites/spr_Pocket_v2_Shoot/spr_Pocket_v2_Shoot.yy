@@ -30,8 +30,8 @@
   "nineSlice": null,
   "origin": 4,
   "parent": {
-    "name": "New Pocket Group",
-    "path": "folders/Sprites/Boss Sprites/Flash Bosses/New Pocket Group.yy",
+    "name": "Pocket v2 Group",
+    "path": "folders/Sprites/Boss Sprites/Flash Bosses/Pocket v2 Group.yy",
   },
   "preMultiplyAlpha": false,
   "sequence": {
