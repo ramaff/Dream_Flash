@@ -79,6 +79,7 @@ function scr_Default_Attack_Settings() {
 	    minion_knockbackforce = bossknockbackforce;
 	    minion_contactdamage = bosscontactdamage;
 		minion_target = other.id;
+		minion_spawn_animation = noone;
 		
 		minion_dir = 0;
 		minion_speed = 0;

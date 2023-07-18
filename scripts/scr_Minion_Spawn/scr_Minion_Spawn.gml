@@ -10,6 +10,11 @@ function scr_Minion_Spawn() {
 	                bossNum = 0;
 	                pathBoss = 0;
 					
+					if other.minion_spawn_animation != noone {
+						sprite_index = other.minion_spawn_animation;
+						active_attack = -1;
+					}
+					
 				
 					champ = other.champ;
                 

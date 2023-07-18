@@ -13,12 +13,12 @@ scr_Boss_Wobble("Horizontal", 0.3, 1, 0);
 /////////////// Active Attack Prep
 //////////////////////////////////////////////////////////////////////////////////////////
 
-if activeAttackDelay <= 0 and activeAttackCooldown <= 0 and activeAttackDuration <= 0 {
+if active_attack_delay <= 0 and active_attack_cooldown <= 0 and active_attack_duration <= 0 {
     
 	// Pick a random attack to do
-	activeAttack = choose(1);
+	active_attack = choose(1);
 	
-    if activeAttack = 1 {
+    if active_attack = 1 {
 		// Setup how many attacks per boss move, delay, etc
 		scr_Boss_Attack_Time_Setup_v2(1, 40, 1, 120, 30, 10);
 		
@@ -28,7 +28,7 @@ if activeAttackDelay <= 0 and activeAttackCooldown <= 0 and activeAttackDuration
     }
 	
 	// Hop leap attack setup example
-	if activeAttack = 2 {
+	if active_attack = 2 {
 		// 
 		scr_Boss_Attack_Time_Setup_v2(50, 30, 1, 30, 30, -10);
 		
@@ -43,30 +43,40 @@ if activeAttackDelay <= 0 and activeAttackCooldown <= 0 and activeAttackDuration
 scr_Default_Attack_Settings();
 
 // If its time to attack, attack
-if activeAttackDelay <= 0 and patternCooldown <= 0 and patternCount > 0 {
+if active_attack_delay <= 0 and pattern_cooldown <= 0 and pattern_count > 0 {
    
-    if activeAttack = 1 {
-		scr_Boss_Stretch("Vertical", 0.7);
-		
-		bullet_direction = scr_Boss_Bullet_Direction_Formula(scr_Soul_Point(), 30)
-		
-		scr_Boss_Shoot();
+    if active_attack = 1 {
 	
 		// If you gotta change the pattern aim direction
 	    // bossPatternDirection += 0;
 	}
 	
+	if active_attack = 2 {
+		scr_Boss_Dash_Movement_v2(4,2);
+		
+		speed = dash_speed;
+        direction = dash_direction;
+		
+		scr_Jump_Movement_v2(2);	
+		
+		if pattern_count = floor(pattern_count_max) {
+			bullet_direction = scr_Boss_Bullet_Direction_Formula(scr_Soul_Point(), 30)
+		
+			scr_Boss_Shoot();	
+		}
+	}
+	
 	// Maybe I should put this into a script
-    patternCount -= 1;
-    patternCooldown += patternCooldownMax;
+    pattern_count -= 1;
+    pattern_cooldown += pattern_cooldown_max;
 }
 
 //////////////////////////////////////////////////////////////////////////////////////////
 /// Active Attack Post
 //////////////////////////////////////////////////////////////////////////////////////////
 
-if activeAttackDuration <= 0 { 
-    activeAttack = 0;
+if active_attack_duration <= 0 { 
+    active_attack = 0;
 }
 
 /// Boss Sprite Code
@@ -75,10 +85,10 @@ if activeAttackDuration <= 0 {
 scr_Boss_Size_Lerp(0.15);
 
 // Handles boss attack sprite animation
-if activeAttack != 0 {
-	var holdFrame = 1;
-	scr_Boss_Attack_Sprite_v2(spr_Boss_Template_Attack, holdFrame, 2, 2, 20);
-	if image_index = holdFrame {
+if active_attack != 0 {
+	var _hold_frame = 1;
+	scr_Boss_Attack_Sprite_v2(spr_Boss_Template_Attack, _hold_frame, 2, 2, 20);
+	if image_index = _hold_frame {
 		scr_Boss_Wobble("Horizontal", 2, 0.25, 0)	
 	}
 } else {

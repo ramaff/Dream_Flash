@@ -7,7 +7,7 @@ function scr_Boss_Step(version = 1) {
 	
 	if version = 2 {
 		if state = states.jumping || state = states.leaping {
-			if activeAttack = 0 and bossHeight < 10 {
+			if active_attack = 0 and boss_height < 10 {
 				state = states.normal;	
 			}
 		}

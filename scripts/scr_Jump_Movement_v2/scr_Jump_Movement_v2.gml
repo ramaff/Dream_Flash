@@ -1,20 +1,20 @@
 function scr_Jump_Movement_v2(jumpSpeed) {
 	
-	if patternCount <= ((patternCountMax / 2) + 0.5) {
+	if pattern_count <= ((pattern_count_max / 2) + 0.5) {
 		jumpDirection = "Down";	
 	} else {
 		jumpDirection = "Up";	
 	}
 
-	var aspeed = jumpSpeed * 2 * ((patternCount - ((patternCountMax / 2) + 0.5)) / ((patternCountMax / 2) + 0.5));
-	var bspeed = jumpSpeed * 2 * ((((patternCountMax / 2) + 0.5) - patternCount) / ((patternCountMax / 2) + 0.5));
+	var _a_speed = jumpSpeed * 2 * ((pattern_count - ((pattern_count_max / 2) + 0.5)) / ((pattern_count_max / 2) + 0.5));
+	var _b_speed = jumpSpeed * 2 * ((((pattern_count_max / 2) + 0.5) - pattern_count) / ((pattern_count_max / 2) + 0.5));
 
 	if jumpDirection = "Up" {
-		bossHeight += aspeed;
-		y -= aspeed;
+		boss_height += _a_speed;
+		y -= _a_speed;
 	} else if jumpDirection = "Down" {
-		bossHeight -= bspeed;
-		y += bspeed;
+		boss_height -= _b_speed;
+		y += _b_speed;
 	}
 
 

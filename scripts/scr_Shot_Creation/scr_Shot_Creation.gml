@@ -57,7 +57,7 @@ function scr_Shot_Creation() {
 	scr_XB05_Shot_Mod();
 
 	if Shot_Count > 1 {
-	    if Shot_Spread < 1 {
+	    if Shot_Spread < 10 and Shot_Spread >= 0 {
 	        Shot_Spread = 10;
 	    }
 	}
