@@ -16,9 +16,12 @@ scr_Boss_Wobble("Horizontal", 0.4, 1, 0);
 if active_attack = 0 {
 	direction = scr_Soul_Point();
 	speed = bossmovespeed * 0.5;
-} else if active_attack != 2 {
+} else if active_attack = 1 {
 	direction = scr_Soul_Point();
 	speed = bossmovespeed * 0.05;
+} else if active_attack = 3 {
+	direction = scr_Soul_Point() + 180;
+	speed = bossmovespeed * 0.25;
 }
 
 if active_attack = 5 {
@@ -34,7 +37,10 @@ if active_attack_delay <= 0 and active_attack_cooldown <= 0 and active_attack_du
 	}
 	
 	if currentphase = 2 {
-		active_attack = 5;	
+		active_attack = choose(4, 5);
+		if scr_Minion_Count() {
+			active_attack = choose(5);
+		}
 	}
 	
 	// Triple Spin Shots
@@ -61,8 +67,9 @@ if active_attack_delay <= 0 and active_attack_cooldown <= 0 and active_attack_du
 		scr_Boss_Attack_Time_Setup_v2(2, 50, 90, 120, 30, 10);
 		
 		for(var _i = 0; _i < 3; _i++) {
-	        pocket_spawn[_i].xx = random(400) - 200;
-	        pocket_spawn[_i].yy = random(400) - 200;
+			var _pos = scr_Boss_Teleport_v2_Return(-128)
+	        pocket_spawn[_i].xx = _pos[0] - x;
+	        pocket_spawn[_i].yy = _pos[1] - y;
 		}
 		
 		// Can set up the initial pattern direction
@@ -72,7 +79,11 @@ if active_attack_delay <= 0 and active_attack_cooldown <= 0 and active_attack_du
 	// Dash Spawns
     if active_attack = 4 {
 		// Setup how many attacks per boss move, delay, etc
-		scr_Boss_Attack_Time_Setup_v2(3, 50, 45, 120, 30, 10);
+		scr_Boss_Attack_Time_Setup_v2(480, 20, 1, 120, 30, 10);
+		
+		scr_Boss_Dash_Setup_v2(scr_Soul_Point(), 0, bossmovespeed * 2.2)
+		
+		dash_direction = scr_Keep_Horizontal(dash_direction, 30)
 		
 		// Can set up the initial pattern direction
 		// patternDirection = scr_Soul_Point();
@@ -81,7 +92,7 @@ if active_attack_delay <= 0 and active_attack_cooldown <= 0 and active_attack_du
 	// Triple Portal Soul Array Shots
     if active_attack = 5 {
 		// Setup how many attacks per boss move, delay, etc
-		scr_Boss_Attack_Time_Setup_v2(20, 50, 12, 120, 30, 10);
+		scr_Boss_Attack_Time_Setup_v2(18, 50, 15, 120, 30, 10);
 		
 		var _ang = 180
 		
@@ -167,6 +178,40 @@ if active_attack_delay <= 0 and pattern_cooldown <= 0 and pattern_count > 0 {
 		}
 	}
 	
+	if active_attack = 4 {
+		scr_Boss_Dash_Movement_v2(30,30);
+		
+		scr_Room_Loop_Everywhere();
+		
+		speed = dash_speed;
+        direction = dash_direction;	
+		
+		dash_direction = scr_Angle_Converge(dash_direction, scr_Soul_Point(), 0.5)
+		
+		if pattern_count mod 15 = 0 {
+			scr_Boss_Stretch("Horizontal", 0.2);
+			
+			bullet_speed = bossbulletspeed * 0.25;
+			bullet_direction = dash_direction + 180;
+			
+	        bullet_type = obj_Dormant_Bullet;
+	        bullet_sprite = spr_Glowy_Purple_Shot;	
+			
+			scr_Boss_Shoot();
+		}
+		if pattern_count mod 100 = 30 {
+			minion_count = 1;
+		    minion_type = obj_pocket_minion_v2
+		    minion_health = bossmaxhealth / 15;
+			minion_spawn_animation = spr_pocket_minion_spawn
+		
+			var _pos = scr_Boss_Teleport_v2_Return(-128)
+			minion_xx = _pos[0] - x;
+			minion_yy = _pos[1] - y;
+	        scr_Minion_Spawn();
+		}
+	}
+	
 	if active_attack = 5 {
 		scr_Boss_Stretch("Vertical", 0.5);
 		
@@ -176,6 +221,8 @@ if active_attack_delay <= 0 and pattern_cooldown <= 0 and pattern_count > 0 {
 		bullet_speed += bossbulletspeed * 0.075 * (pattern_count_max - pattern_count)
 		bullet_count = 3;
 		bullet_spread = 90;
+		
+		bullet_sprite = spr_Glowy_Purple_Shot;
 		
 		scr_Boss_Shoot();
 
@@ -219,14 +266,14 @@ if active_attack == 1 || active_attack == 5 {
 		scr_Boss_Wobble("Horizontal", 2, 0.4, 0)	
 	}
 	if image_index = 9 {
-		scr_Boss_Teleport_From_Boss(150, 0)
+		scr_Boss_Teleport_From_Boss(200, -64)
 		if y > obj_Soul_Parent.y {
 			y += 150;
 		}
 		direction = scr_Soul_Point()
 		speed = 0.01;
 	}
-} else if active_attack == 3 {
+} else if active_attack == 3 || active_attack == 4 {
 	var _hold_frame = 2;
 	scr_Boss_Attack_Sprite_v2(spr_pocket_v2_cheeky, _hold_frame, 2, 2, 20);
 	if image_index = _hold_frame {

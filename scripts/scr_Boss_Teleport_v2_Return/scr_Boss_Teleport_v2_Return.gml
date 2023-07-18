@@ -50,7 +50,7 @@ function scr_Boss_Teleport_v2_Return(_border_offset = -128, _near_soul = -1) {
 	} 
 
 	if _inside = 0 || _soul_away = 0 || _og_away = 0 {
-	    return scr_Boss_Teleport_v2_Return(_border_offset + 32, _soul_away, _og_away);
+	    return scr_Boss_Teleport_v2_Return(_border_offset + 32, _near_soul);
 	} else {
 	    return [_potx, _poty];
 	}

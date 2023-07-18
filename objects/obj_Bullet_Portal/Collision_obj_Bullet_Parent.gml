@@ -12,4 +12,4 @@
 	other.direction = portal_direction
 //}
 
-portal_direction = scr_Angle_Converge(portal_direction, scr_Soul_Point(xx, yy), other.speed * 2)
+portal_direction = scr_Angle_Converge(portal_direction, scr_Soul_Point(xx, yy), other.speed + 3)
