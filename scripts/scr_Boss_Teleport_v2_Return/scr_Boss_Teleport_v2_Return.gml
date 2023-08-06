@@ -16,7 +16,7 @@ function scr_Boss_Teleport_v2_Return(_border_offset = -128, _near_soul = -1) {
 	var _y_pos = _poty - _y_center;
 	
 	// half the room width/height (so the distance from the center to the corner)
-	var _room_half_size = (global.roomSizeX / 2)
+	var _room_half_size = (_diamond_bound / 2)
 	
 	///////////////// Teleport Condition Checks ///////////////////////////////
 	
@@ -45,11 +45,11 @@ function scr_Boss_Teleport_v2_Return(_border_offset = -128, _near_soul = -1) {
 		}
 	}
 
-	if distance_to_point(_potx, _poty) > 100 {
+	/*if distance_to_point(_potx, _poty) > 100 {
 	    _og_away = 1;
-	} 
+	}  */
 
-	if _inside = 0 || _soul_away = 0 || _og_away = 0 {
+	if _inside = 0 || _soul_away = 1 {
 	    return scr_Boss_Teleport_v2_Return(_border_offset + 32, _near_soul);
 	} else {
 	    return [_potx, _poty];

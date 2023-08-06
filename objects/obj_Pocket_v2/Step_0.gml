@@ -81,7 +81,7 @@ if active_attack_delay <= 0 and active_attack_cooldown <= 0 and active_attack_du
 		// Setup how many attacks per boss move, delay, etc
 		scr_Boss_Attack_Time_Setup_v2(480, 20, 1, 120, 30, 10);
 		
-		scr_Boss_Dash_Setup_v2(scr_Soul_Point(), 0, bossmovespeed * 2.2)
+		scr_Boss_Dash_Setup_v2(scr_Soul_Point(), 0, bossmovespeed * 2.7)
 		
 		dash_direction = scr_Keep_Horizontal(dash_direction, 30)
 		
@@ -186,7 +186,7 @@ if active_attack_delay <= 0 and pattern_cooldown <= 0 and pattern_count > 0 {
 		speed = dash_speed;
         direction = dash_direction;	
 		
-		dash_direction = scr_Angle_Converge(dash_direction, scr_Soul_Point(), 0.5)
+		//dash_direction = scr_Angle_Converge(dash_direction, scr_Soul_Point(), 0.5)
 		
 		if pattern_count mod 15 = 0 {
 			scr_Boss_Stretch("Horizontal", 0.2);

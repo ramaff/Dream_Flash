@@ -1,6 +1,17 @@
 function scr_Charged_Use() {
 	var cw = global.currentweapon;
-	if scurrentstate = "Ascending" || scr_Charged_Weapon(cw) {
+	
+	var reverie = false;
+	if global.F[5] >= 1 {
+		reverie = scr_Chance(10 / global.F[5]);
+	}
+	
+	var _ascending = false
+	if scr_State_Active_Check("Ascending", reverie) and global.currentweapon != 605 {
+		_ascending = true
+	}
+	
+	if _ascending || scr_Charged_Weapon(cw) {
 		var energyCost = 0;
 		Shot_Charge_Power = 0;
 		Shot_Charge_Speed = 0;
@@ -33,7 +44,7 @@ function scr_Charged_Use() {
 		        sdelay += (weaponDelay - sdelayconservation) / sdelayconservationfactor / ((6 + global.Weap[weaponcharge]) / 6);
 		        energyCost = (weaponCost - senergyconservation) / senergyconservationfactor / ((6 + global.Weap[weaponcharge]) / 6);
 		        Charge_Hold = 1;
-				if scurrentstate = "Ascending" and !scr_Charged_Weapon(cw) {
+				if _ascending and !scr_Charged_Weapon(cw) {
 					Charge_Hold = 2;	
 				}
 		    }
