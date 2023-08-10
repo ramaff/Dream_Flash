@@ -15,30 +15,6 @@ if active_attack = 2 {
 	
 	scr_Soul_Outside_Check()
 	
-	/*if edge_xx > xx_center and edge_yy > yy_center {
-		edge_direction = 225
-	}
-	if edge_xx <= xx_center and edge_yy > yy_center {
-		edge_direction = 135
-	}
-	if edge_xx <= xx_center and edge_yy <= yy_center {
-		edge_direction = 45
-	}
-	if edge_xx > xx_center and edge_yy <= yy_center {
-		edge_direction = 315
-	} */
-	
-	//Print_DF(edge_direction)	
-	Print_DF(shadow_positions)
-
-	//}
-	
-	/*edge_xx += lengthdir_x(bossmovespeed * 3, edge_direction)
-	edge_yy += lengthdir_y(bossmovespeed * 3, edge_direction)
-	
-	x = lerp(x, edge_xx, 0.1)
-	y = lerp(y, edge_yy, 0.1)  */
-	
 	var _i = 0
 	var _dir_off = 90
 	for(_i = 0; _i < 4; _i++) {
@@ -57,29 +33,30 @@ if active_attack = 2 {
 			edge_direction = 315
 		}
 		
-		shadow_positions[_i].ex += lengthdir_x(bossmovespeed * 3, edge_direction)
-		shadow_positions[_i].ey += lengthdir_y(bossmovespeed * 3, edge_direction)
+		shadow_positions[_i].ex += lengthdir_x(bossmovespeed * 4.5, edge_direction)
+		shadow_positions[_i].ey += lengthdir_y(bossmovespeed * 4.5, edge_direction)
+		
+		_s_pos = shadow_positions[_i];
 	
 		shadow_positions[_i].xx = lerp(_s_pos.xx, _s_pos.ex, 0.1)
 		shadow_positions[_i].yy = lerp(_s_pos.yy, _s_pos.ey, 0.1)
+		
+		shadow_positions[_i].dir = edge_direction;
 		
 	}
 	
 	x = shadow_positions[0].xx;
 	y = shadow_positions[0].yy;
 	
-	/*
-	var _xx_off = (xx_center - x) * 2;
-	var _yy_off = (yy_center - y) * 2;
-
-	shadow_positions[0].xx = x + _xx_off
-	shadow_positions[0].yy = y + _yy_off
-	shadow_positions[1].xx = x
-	shadow_positions[1].yy = y + _yy_off
-	shadow_positions[2].xx = x + _xx_off
-	shadow_positions[2].yy = y 
-	*/
+	direction = shadow_positions[0].dir
+	speed = 0.1;
 	
+} else if active_attack != 0 {
+	direction = scr_Soul_Point();
+	speed = bossmovespeed * 0.25
+} else {
+	direction = scr_Soul_Point();
+	speed = bossmovespeed
 }
 
 //////////////////////////////////////////////////////////////////////////////////////////
@@ -89,16 +66,15 @@ if active_attack = 2 {
 if active_attack_delay <= 0 and active_attack_cooldown <= 0 and active_attack_duration <= 0 {
     
 	// Pick a random attack to do
-	active_attack = choose(1, 2);
-	if currentphase == 2 {
+	active_attack = choose(1, 1, 2);
+	/*if currentphase == 2 {
 		active_attack = 3;	
-	}
-	active_attack = 2
+	} */
 	
 	// Rapid Throws
     if active_attack = 1 {
 		// Setup how many attacks per boss move, delay, etc
-		scr_Boss_Attack_Time_Setup_v2(4, 50, 30, 120, 30, -10);
+		scr_Boss_Attack_Time_Setup_v2(4, 50, 20, 120, 30, -10);
 		
 		// Can set up the initial pattern direction
 		pattern_direction = 180;
@@ -106,17 +82,24 @@ if active_attack_delay <= 0 and active_attack_cooldown <= 0 and active_attack_du
 	// Shadow Clone Jitsu
     if active_attack = 2 {
 		// Setup how many attacks per boss move, delay, etc
-		scr_Boss_Attack_Time_Setup_v2(8, 50, 60, 120, 30, -10);
+		scr_Boss_Attack_Time_Setup_v2(6, 50, 90, 120, 30, -10);
 		
-		for(_i = 0; _i < 3; _i++) {
+		/*for(_i = 0; _i < 4; _i++) {
 			var _s_pos = shadow_positions[_i];
 		
-			_s_pos.ex = x
-			_s_pos.ey = y
+			shadow_positions[_i].ex = x
+			shadow_positions[_i].ey = y
 	
-			_s_pos.xx = x
-			_s_pos.yy = y
-		}
+			shadow_positions[_i].xx = x
+			shadow_positions[_i].yy = y
+		} */
+		
+		shadow_positions = [
+					{xx: x, yy: y, ex: xx_center - room_half_size, ey: yy_center, dir: direction}, 
+					{xx: x, yy: y, ex: xx_center + room_half_size, ey: yy_center, dir: direction}, 
+					{xx: x, yy: y, ex: xx_center, ey: yy_center - room_half_size, dir: direction}, 
+					{xx: x, yy: y, ex: xx_center, ey: yy_center + room_half_size, dir: direction}
+					];
 	
     }
 	// Smoke Bomb Throw Barrage
@@ -180,6 +163,24 @@ if active_attack_delay <= 0 and pattern_cooldown <= 0 and pattern_count > 0 {
 		bullet_sprite = spr_Boss_Ninja_Star;
 		
 		scr_Boss_Shoot();
+		
+		boss_xoffset = shadow_positions[1].xx - x;
+		boss_yoffset = shadow_positions[1].yy - y
+		bullet_direction = scr_Boss_Bullet_Direction_Formula(scr_Soul_Point(boss_xoffset + x, boss_yoffset + y), 15)
+		
+		scr_Boss_Shoot();
+		
+		boss_xoffset = shadow_positions[2].xx - x;
+		boss_yoffset = shadow_positions[2].yy - y
+		bullet_direction = scr_Boss_Bullet_Direction_Formula(scr_Soul_Point(boss_xoffset + x, boss_yoffset + y), 15)
+		
+		scr_Boss_Shoot();
+		
+		boss_xoffset = shadow_positions[3].xx - x;
+		boss_yoffset = shadow_positions[3].yy - y
+		bullet_direction = scr_Boss_Bullet_Direction_Formula(scr_Soul_Point(boss_xoffset + x, boss_yoffset + y), 15)
+		
+		scr_Boss_Shoot();
 	}
 	
 	// Maybe I should put this into a script
@@ -198,15 +199,19 @@ if active_attack_duration <= 0 {
 /// Boss Sprite Code
 
 // Go back to normal default size
-scr_Boss_Size_Lerp(0.15);
+if active_attack = 2 {
+	scr_Boss_Size_Lerp_Dir(0.15, true);
+} else {
+	scr_Boss_Size_Lerp(0.15);
+}
 
 // Handles boss attack sprite animation
 if active_attack = 1 {
 	var _hold_frame = 2;
-	scr_Boss_Attack_Sprite_v2(spr_ninja_spirit_v2_single_throw, _hold_frame, 2, 4, 20);
+	scr_Boss_Attack_Sprite_v2(spr_ninja_spirit_v2_single_throw, _hold_frame, 2, 3, 20);
 } else if active_attack = 2 {
 	var _hold_frame = 2;
-	scr_Boss_Attack_Sprite_v2(spr_ninja_spirit_v2_shuffle_throw, _hold_frame, 3, 8, 20, 10);
+	scr_Boss_Attack_Sprite_v2(spr_ninja_spirit_v2_shuffle_throw, _hold_frame, 3, 11, 20, 10);
 } else {
 	sprite_index = spr_ninja_spirit_v2
 }

@@ -37,6 +37,9 @@ function scr_Default_Attack_Settings() {
 		
 		bullet_charged = false;
 		
+		boss_xoffset = 0
+		boss_yoffset = 0
+		
 	
 		bullet_blend = 0;
 	    bullet_fade = 1;

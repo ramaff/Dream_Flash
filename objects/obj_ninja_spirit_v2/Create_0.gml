@@ -20,10 +20,10 @@ room_half_size = (diamond_bound / 2)
 
 
 shadow_positions = [
-					{xx: xx_center, yy: yy_center, ex: xx_center - room_half_size, ey: yy_center}, 
-					{xx: xx_center, yy: yy_center, ex: xx_center + room_half_size, ey: yy_center}, 
-					{xx: xx_center, yy: yy_center, ex: xx_center, ey: yy_center - room_half_size}, 
-					{xx: xx_center, yy: yy_center, ex: xx_center, ey: yy_center + room_half_size}
+					{xx: xx_center, yy: yy_center, ex: xx_center - room_half_size, ey: yy_center, dir: 0}, 
+					{xx: xx_center, yy: yy_center, ex: xx_center + room_half_size, ey: yy_center, dir: 0}, 
+					{xx: xx_center, yy: yy_center, ex: xx_center, ey: yy_center - room_half_size, dir: 0}, 
+					{xx: xx_center, yy: yy_center, ex: xx_center, ey: yy_center + room_half_size, dir: 0}
 					];
 	
 edge_xx = xx_center - room_half_size

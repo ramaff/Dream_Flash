@@ -16,6 +16,14 @@ if active_attack = 2 {
 	var _i = 0
 	for(_i = 1; _i < 4; _i++) {
 		var _s_pos = shadow_positions[_i];
-		draw_sprite_ext(sprite_index, image_index, _s_pos.xx, _s_pos.yy, image_xscale, image_yscale, image_angle, image_blend, image_alpha)	
+		var _x_scale = abs(image_xscale)
+		
+		if (_s_pos.yy - yy_center) > 0 {
+			_x_scale = -1 * _x_scale
+		}
+		
+		//Print_DF("_x_scale: " + string(_x_scale) + ", _s_pos.xx - xx_center: " + string(_s_pos.xx - xx_center))
+		
+		draw_sprite_ext(sprite_index, image_index, _s_pos.xx, _s_pos.yy, _x_scale, image_yscale, image_angle, image_blend, image_alpha)	
 	}
 }
