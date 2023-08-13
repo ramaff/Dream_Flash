@@ -67,9 +67,9 @@ if active_attack_delay <= 0 and active_attack_cooldown <= 0 and active_attack_du
     
 	// Pick a random attack to do
 	active_attack = choose(1, 1, 2);
-	/*if currentphase == 2 {
+	if currentphase == 2 {
 		active_attack = 3;	
-	} */
+	}
 	
 	// Rapid Throws
     if active_attack = 1 {
@@ -84,28 +84,18 @@ if active_attack_delay <= 0 and active_attack_cooldown <= 0 and active_attack_du
 		// Setup how many attacks per boss move, delay, etc
 		scr_Boss_Attack_Time_Setup_v2(6, 50, 90, 120, 30, -10);
 		
-		/*for(_i = 0; _i < 4; _i++) {
-			var _s_pos = shadow_positions[_i];
-		
-			shadow_positions[_i].ex = x
-			shadow_positions[_i].ey = y
-	
-			shadow_positions[_i].xx = x
-			shadow_positions[_i].yy = y
-		} */
-		
 		shadow_positions = [
-					{xx: x, yy: y, ex: xx_center - room_half_size, ey: yy_center, dir: direction}, 
-					{xx: x, yy: y, ex: xx_center + room_half_size, ey: yy_center, dir: direction}, 
-					{xx: x, yy: y, ex: xx_center, ey: yy_center - room_half_size, dir: direction}, 
-					{xx: x, yy: y, ex: xx_center, ey: yy_center + room_half_size, dir: direction}
-					];
+			{xx: x, yy: y, ex: xx_center - room_half_size, ey: yy_center, dir: direction}, 
+			{xx: x, yy: y, ex: xx_center + room_half_size, ey: yy_center, dir: direction}, 
+			{xx: x, yy: y, ex: xx_center, ey: yy_center - room_half_size, dir: direction}, 
+			{xx: x, yy: y, ex: xx_center, ey: yy_center + room_half_size, dir: direction}
+		];
 	
     }
 	// Smoke Bomb Throw Barrage
     if active_attack = 3 {
 		// Setup how many attacks per boss move, delay, etc
-		scr_Boss_Attack_Time_Setup_v2(4, 50, 30, 120, 30, -10);
+		scr_Boss_Attack_Time_Setup_v2(4, 120, 20, 30, 30, -80);
 		
 		// Can set up the initial pattern direction
 		pattern_direction = 180;
@@ -118,6 +108,8 @@ if active_attack_delay <= 0 and active_attack_cooldown <= 0 and active_attack_du
 
 scr_Default_Attack_Settings();
 
+bullet_sprite = spr_Boss_Ninja_Star;
+
 // If its time to attack, attack
 if active_attack_delay <= 0 and pattern_cooldown <= 0 and pattern_count > 0 {
    
@@ -126,7 +118,6 @@ if active_attack_delay <= 0 and pattern_cooldown <= 0 and pattern_count > 0 {
 		
 		bullet_direction = pattern_direction
 		bullet_speed = bossbulletspeed * 1.75;
-		bullet_sprite = spr_Boss_Ninja_Star;
 		
 		bullet_count = 2;
 		bullet_spread = 60;
@@ -135,6 +126,8 @@ if active_attack_delay <= 0 and pattern_cooldown <= 0 and pattern_count > 0 {
 		
 		bullet_type = obj_Hatred_Seeking_Bullet;
 		bullet_speed = bossbulletspeed * 2;
+		
+		bullet_lifespan = 300;
 			
 		bullet_count = 1;
 		bullet_spread = 0;
@@ -160,7 +153,6 @@ if active_attack_delay <= 0 and pattern_cooldown <= 0 and pattern_count > 0 {
 		
 		bullet_direction = scr_Boss_Bullet_Direction_Formula(scr_Soul_Point(), 15)
 		bullet_speed = bossbulletspeed * 2.25;
-		bullet_sprite = spr_Boss_Ninja_Star;
 		
 		scr_Boss_Shoot();
 		
@@ -182,6 +174,24 @@ if active_attack_delay <= 0 and pattern_cooldown <= 0 and pattern_count > 0 {
 		
 		scr_Boss_Shoot();
 	}
+	
+	if active_attack = 3 {
+		
+		if pattern_count = pattern_count_max {
+			pattern_direction = scr_Soul_Point()	
+		}
+		
+		scr_Boss_Stretch("Horizontal", 0.3);
+		
+        bullet_speed = bossbulletspeed * 2.25;
+        bullet_direction = pattern_direction;
+        bullet_spread = 20;
+        bullet_count = 8 - pattern_count
+		
+		scr_Boss_Shoot()
+		
+		pattern_direction = scr_Angle_Converge(pattern_direction, scr_Soul_Point(), 30)
+    }
 	
 	// Maybe I should put this into a script
     pattern_count -= 1;
@@ -212,6 +222,21 @@ if active_attack = 1 {
 } else if active_attack = 2 {
 	var _hold_frame = 2;
 	scr_Boss_Attack_Sprite_v2(spr_ninja_spirit_v2_shuffle_throw, _hold_frame, 3, 11, 20, 10);
+} else if active_attack = 3 {
+	if active_attack_delay > 20 {
+		scr_Boss_Attack_Sprite_v2(spr_ninja_spirit_v2_smoke_cloud, -1, 3, 100, 20, 0);
+		if image_index >= 4 and image_index < 8 {
+			image_speed = 2;
+		} else {
+			image_speed = 1;	
+		}
+		if image_index = 7.2 {
+			scr_Boss_Teleport_From_Boss(250, -64)
+		}
+	} else {
+		var _hold_frame = 2;
+		scr_Boss_Attack_Sprite_v2(spr_ninja_spirit_v2_throw_barrage, _hold_frame, 3, 5, 30, 0);
+	}
 } else {
 	sprite_index = spr_ninja_spirit_v2
 }
