@@ -71,6 +71,8 @@ if active_attack_delay <= 0 and active_attack_cooldown <= 0 and active_attack_du
 		active_attack = 3;	
 	}
 	
+	active_attack = 4;
+	
 	// Rapid Throws
     if active_attack = 1 {
 		// Setup how many attacks per boss move, delay, etc
@@ -96,6 +98,18 @@ if active_attack_delay <= 0 and active_attack_cooldown <= 0 and active_attack_du
     if active_attack = 3 {
 		// Setup how many attacks per boss move, delay, etc
 		scr_Boss_Attack_Time_Setup_v2(4, 120, 20, 30, 30, -80);
+		
+		// Can set up the initial pattern direction
+		pattern_direction = 180;
+    }
+	// Crazy Sword Slash
+    if active_attack = 4 {
+		// Setup how many attacks per boss move, delay, etc
+		scr_Boss_Attack_Time_Setup_v2(30, 160, 1, 30, 30, -120);
+		
+		scr_Boss_Dash_Setup_v2(scr_Soul_Point(), 0, bossmovespeed * 18)
+		
+		dash_direction = 270
 		
 		// Can set up the initial pattern direction
 		pattern_direction = 180;
@@ -193,6 +207,25 @@ if active_attack_delay <= 0 and pattern_cooldown <= 0 and pattern_count > 0 {
 		pattern_direction = scr_Angle_Converge(pattern_direction, scr_Soul_Point(), 30)
     }
 	
+	if active_attack = 4 {
+		scr_Boss_Dash_Movement_v2(5,5);
+		
+		speed = dash_speed;
+        direction = dash_direction;	
+		
+		if pattern_count mod 3 = 0 {
+			scr_Boss_Stretch("Horizontal", 0.2);
+			
+			bullet_speed = bossbulletspeed * (1.9 + (pattern_count * 0.05));
+			bullet_direction = dash_direction;
+			bullet_spread = 90 + (7.5 * pattern_count);
+			bullet_count = 2;
+			
+			scr_Boss_Shoot();
+		}
+		
+	}
+	
 	// Maybe I should put this into a script
     pattern_count -= 1;
     pattern_cooldown += pattern_cooldown_max;
@@ -236,6 +269,22 @@ if active_attack = 1 {
 	} else {
 		var _hold_frame = 2;
 		scr_Boss_Attack_Sprite_v2(spr_ninja_spirit_v2_throw_barrage, _hold_frame, 3, 5, 30, 0);
+	}
+} else if active_attack = 4 {
+	if active_attack_delay > 70 {
+		scr_Boss_Attack_Sprite_v2(spr_ninja_spirit_v2_smoke_cloud, -1, 3, 100, 20, 0);
+		if image_index >= 4 and image_index < 8 {
+			image_speed = 2;
+		} else {
+			image_speed = 1;	
+		}
+		if image_index = 7.2 {
+			y = obj_Soul_Parent.y - 210;
+			x = obj_Soul_Parent.x;
+		}
+	} else {
+		var _hold_frame = 4;
+		scr_Boss_Attack_Sprite_v2(spr_ninja_spirit_v2_sword_death_slash, _hold_frame, 5, 7, 40, 0);
 	}
 } else {
 	sprite_index = spr_ninja_spirit_v2

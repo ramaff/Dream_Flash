@@ -19,8 +19,8 @@ if instance_exists(Floor_Layout_Control) and global.layerdeep < 1 {
 			var dist = point_distance(x,y, obj_Soul_Parent.x, obj_Soul_Parent.y);
 			//dist += point_distance(x,y, room_width / 2, room_height / 2)
 			
-			if dist > 500 {
-				extra_zoom = max(extra_zoom, (dist - 500))
+			if dist > 300 {
+				extra_zoom = max(extra_zoom, (dist - 300))
 			}
 			
 		}

@@ -67,7 +67,7 @@ if active_attack_delay <= 0 and active_attack_cooldown <= 0 and active_attack_du
 		scr_Boss_Attack_Time_Setup_v2(2, 50, 90, 120, 30, 10);
 		
 		for(var _i = 0; _i < 3; _i++) {
-			var _pos = scr_Boss_Teleport_v2_Return(-128)
+			var _pos = scr_Boss_Teleport_v2_Return(-256)
 	        pocket_spawn[_i].xx = _pos[0] - x;
 	        pocket_spawn[_i].yy = _pos[1] - y;
 		}
@@ -99,7 +99,7 @@ if active_attack_delay <= 0 and active_attack_cooldown <= 0 and active_attack_du
 		for(var _i = 0; _i < 3; _i++) {
 			var _xx = x + lengthdir_x(100, _ang)
 			var _yy = y + lengthdir_y(100, _ang)
-			_ang += 90
+			_ang += 120
 			
 	        with instance_create(_xx, _yy, obj_Bullet_Portal) {
 				alarm[0] = 330;
@@ -125,7 +125,11 @@ if active_attack_delay <= 0 and pattern_cooldown <= 0 and pattern_count > 0 {
     if active_attack = 1 {
 		scr_Boss_Stretch("Vertical", 1);
 		
-		bullet_direction = scr_Boss_Bullet_Direction_Formula(scr_Soul_Point(), 270)
+		bullet_direction = scr_Boss_Bullet_Direction_Formula(scr_Soul_Point(), 30)
+		
+		if pattern_count > 1 {
+			bullet_direction += (270 * (pattern_count - 2)) - 135
+		}
 		
 		bullet_speed = bossbulletspeed * 1;
 		bullet_power = bosspower * 2;
@@ -155,9 +159,9 @@ if active_attack_delay <= 0 and pattern_cooldown <= 0 and pattern_count > 0 {
 		
 		bullet_speed = bossbulletspeed * 2.25;
 		bullet_power = bosspower;
-		bullet_count = 7;
+		bullet_count = 9;
         bullet_sprite = spr_Glowy_Purple_Shot;
-		bullet_spread = 20;
+		bullet_spread = 18;
 		
 		scr_Boss_Shoot();
 
@@ -181,7 +185,7 @@ if active_attack_delay <= 0 and pattern_cooldown <= 0 and pattern_count > 0 {
 	if active_attack = 4 {
 		scr_Boss_Dash_Movement_v2(30,30);
 		
-		scr_Room_Loop_Everywhere();
+		scr_Room_Loop_Everywhere(128);
 		
 		speed = dash_speed;
         direction = dash_direction;	
@@ -215,12 +219,12 @@ if active_attack_delay <= 0 and pattern_cooldown <= 0 and pattern_count > 0 {
 	if active_attack = 5 {
 		scr_Boss_Stretch("Vertical", 0.5);
 		
-		bullet_direction = 270
+		bullet_direction = 180
 		
 		bullet_speed = bossbulletspeed * 1.5;
 		bullet_speed += bossbulletspeed * 0.075 * (pattern_count_max - pattern_count)
 		bullet_count = 3;
-		bullet_spread = 90;
+		bullet_spread = 120;
 		
 		bullet_sprite = spr_Glowy_Purple_Shot;
 		
@@ -266,7 +270,7 @@ if active_attack == 1 || active_attack == 5 {
 		scr_Boss_Wobble("Horizontal", 2, 0.4, 0)	
 	}
 	if image_index = 9 {
-		scr_Boss_Teleport_From_Boss(200, -64)
+		scr_Boss_Teleport_From_Boss(200, -192)
 		if y > obj_Soul_Parent.y {
 			y += 150;
 		}
