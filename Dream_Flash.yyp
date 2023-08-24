@@ -2526,6 +2526,7 @@
     {"id":{"name":"scr_Essence_Beam_Step","path":"scripts/scr_Essence_Beam_Step/scr_Essence_Beam_Step.yy",},},
     {"id":{"name":"spr_Tutorial_Stuff","path":"sprites/spr_Tutorial_Stuff/spr_Tutorial_Stuff.yy",},},
     {"id":{"name":"spr_Tree_Scale","path":"sprites/spr_Tree_Scale/spr_Tree_Scale.yy",},},
+    {"id":{"name":"spr_ninja_spirit_v2_palette","path":"sprites/spr_ninja_spirit_v2_palette/spr_ninja_spirit_v2_palette.yy",},},
     {"id":{"name":"spr_Thought_Cloud","path":"sprites/spr_Thought_Cloud/spr_Thought_Cloud.yy",},},
     {"id":{"name":"spr_Scroll_Bar","path":"sprites/spr_Scroll_Bar/spr_Scroll_Bar.yy",},},
     {"id":{"name":"spr_No_BG","path":"sprites/spr_No_BG/spr_No_BG.yy",},},

@@ -7,22 +7,24 @@ scr_Boss_Shadow(undefined, undefined, undefined, 2);
 // Palette Color Swap for different boss champs:
 var _pal_index = champ;
 
-//pal_swap_set(spr_Crazy_Eyes_Palette, _pal_index, false);
+pal_swap_set(spr_ninja_spirit_v2_palette, _pal_index, false);
 
 draw_self();
 
 //pal_swap_reset();
-if active_attack = 2 {
+if (active_attack = 2 || (active_attack = 6 and active_attack_delay < 50)) and champ != 1 {
 	var _i = 0
-	for(_i = 1; _i < 4; _i++) {
+	var _clone_count = 4
+	if active_attack = 6 {
+		_clone_count = 3	
+	}
+	for(_i = 1; _i < _clone_count; _i++) {
 		var _s_pos = shadow_positions[_i];
 		var _x_scale = abs(image_xscale)
 		
 		if (_s_pos.yy - yy_center) > 0 {
 			_x_scale = -1 * _x_scale
 		}
-		
-		//Print_DF("_x_scale: " + string(_x_scale) + ", _s_pos.xx - xx_center: " + string(_s_pos.xx - xx_center))
 		
 		draw_sprite_ext(sprite_index, image_index, _s_pos.xx, _s_pos.yy, _x_scale, image_yscale, image_angle, image_blend, image_alpha)	
 	}
