@@ -151,8 +151,8 @@ if active_attack_delay <= 0 and active_attack_cooldown <= 0 and active_attack_du
 	// Shadow Clone Jitsu II
     if active_attack = 6 {
 		// Setup how many attacks per boss move, delay, etc
-		var _a_space = 40
-		var _a_amount = 5
+		var _a_space = 50
+		var _a_amount = 4
 		scr_Boss_Attack_Time_Setup_v2(_a_amount, 120, _a_space, 30, 30, -80);
 	
     }
@@ -420,6 +420,11 @@ if active_attack = 1 {
 		if active_attack != 6 {
 			scr_Boss_Attack_Sprite_v2(spr_ninja_spirit_v2_throw_barrage, _hold_frame, 3, 5, 30, 0);
 		} else {
+			if image_index >= 2 and image_index < 3 {
+				image_speed = 0.5	
+			} else {
+				image_speed = 1	
+			}
 			scr_Boss_Attack_Sprite_v2(spr_ninja_spirit_v2_single_throw, _hold_frame, 2, 5, 20);
 		}
 	}
