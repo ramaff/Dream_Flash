@@ -87,7 +87,7 @@ if active_attack_delay <= 0 and active_attack_cooldown <= 0 and active_attack_du
 		}
 	}
 	
-	active_attack = 2;
+	//active_attack = 2;
 	
 	// Rapid Throws
     if active_attack = 1 {
@@ -373,7 +373,7 @@ if active_attack_duration <= 0 {
 if active_attack = 2 {
 	scr_Boss_Size_Lerp_Dir(0.15, true);
 } else {
-	scr_Boss_Size_Lerp(0.15);
+	scr_Boss_Size_Lerp_Dir(0.15, false);
 }
 
 // Handles boss attack sprite animation
