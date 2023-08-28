@@ -4,7 +4,7 @@
   "name": "spr_ninja_spirit_v2_palette",
   "bbox_bottom": 6,
   "bbox_left": 0,
-  "bbox_right": 2,
+  "bbox_right": 3,
   "bbox_top": 0,
   "bboxMode": 0,
   "collisionKind": 1,

@@ -7,12 +7,13 @@ scr_Boss_Shadow(undefined, undefined, undefined, 2);
 // Palette Color Swap for different boss champs:
 var _pal_index = champ;
 
-pal_swap_set(spr_ninja_spirit_v2_palette, _pal_index, false);
 
-draw_self();
-
-//pal_swap_reset();
 if (active_attack = 2 || (active_attack = 6 and active_attack_delay < 50)) and champ != 1 {
+	
+	_pal_index = 3;
+	
+	pal_swap_set(spr_ninja_spirit_v2_palette, _pal_index, false);
+	
 	var _i = 0
 	var _clone_count = 4
 	if active_attack = 6 {
@@ -28,4 +29,10 @@ if (active_attack = 2 || (active_attack = 6 and active_attack_delay < 50)) and c
 		
 		draw_sprite_ext(sprite_index, image_index, _s_pos.xx, _s_pos.yy, _x_scale, image_yscale, image_angle, image_blend, image_alpha)	
 	}
+} else {
+	pal_swap_set(spr_ninja_spirit_v2_palette, _pal_index, false);	
 }
+
+draw_self();
+
+pal_swap_reset();

@@ -40,8 +40,8 @@ if active_attack = 2 {
 			edge_direction = 315
 		}
 		
-		shadow_positions[_i].ex += lengthdir_x(bossmovespeed * 6, edge_direction)
-		shadow_positions[_i].ey += lengthdir_y(bossmovespeed * 6, edge_direction)
+		shadow_positions[_i].ex += lengthdir_x(bossmovespeed * 3.6, edge_direction)
+		shadow_positions[_i].ey += lengthdir_y(bossmovespeed * 3.6, edge_direction)
 		
 		_s_pos = shadow_positions[_i];
 	
@@ -60,7 +60,7 @@ if active_attack = 2 {
 	
 } else if active_attack != 0 {
 	direction = scr_Soul_Point();
-	speed = bossmovespeed * 0.3
+	speed = bossmovespeed * 0.05
 } else {
 	direction = scr_Soul_Point();
 	speed = bossmovespeed
@@ -87,7 +87,7 @@ if active_attack_delay <= 0 and active_attack_cooldown <= 0 and active_attack_du
 		}
 	}
 	
-	//active_attack = 4;
+	active_attack = 2;
 	
 	// Rapid Throws
     if active_attack = 1 {
@@ -133,7 +133,7 @@ if active_attack_delay <= 0 and active_attack_cooldown <= 0 and active_attack_du
 		// Setup how many attacks per boss move, delay, etc
 		scr_Boss_Attack_Time_Setup_v2(30, 160, 1, 30, 30, -120);
 		
-		scr_Boss_Dash_Setup_v2(scr_Soul_Point(), 0, bossmovespeed * 18)
+		scr_Boss_Dash_Setup_v2(scr_Soul_Point(), 0, bossmovespeed * 12)
 		
 		dash_direction = 270
 		
@@ -451,6 +451,8 @@ if active_attack = 1 {
 	sprite_index = spr_ninja_spirit_v2
 }
 
-// So that the boss hurts soul on collision
-// Smaller than the actual boss hitbox
-scr_Boss_Soul_Hitbox(sprite_index);
+if active_attack != 2 || (point_direction(x,y,shadow_positions[0].xx, shadow_positions[0].yy) < 20) {
+	// So that the boss hurts soul on collision
+	// Smaller than the actual boss hitbox
+	scr_Boss_Soul_Hitbox(sprite_index);
+}

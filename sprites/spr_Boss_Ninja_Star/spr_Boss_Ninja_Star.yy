@@ -57,7 +57,7 @@
             {"resourceType":"Keyframe<SpriteFrameKeyframe>","resourceVersion":"1.0","Channels":{"0":{"resourceType":"SpriteFrameKeyframe","resourceVersion":"1.0","Id":{"name":"684cf478-4aab-4c69-b397-9d9593bd94a6","path":"sprites/spr_Boss_Ninja_Star/spr_Boss_Ninja_Star.yy",},},},"Disabled":false,"id":"6e7300be-dcc9-45e6-9565-36994eb4a19c","IsCreationKey":false,"Key":0.0,"Length":1.0,"Stretch":false,},
           ],},"modifiers":[],"spriteId":null,"trackColour":0,"tracks":[],"traits":0,},
     ],
-    "visibleRange": {"x":0.0,"y":0.0,},
+    "visibleRange": null,
     "volume": 1.0,
     "xorigin": 47,
     "yorigin": 47,
