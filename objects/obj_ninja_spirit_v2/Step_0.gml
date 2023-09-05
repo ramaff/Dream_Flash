@@ -441,8 +441,8 @@ if active_attack = 1 {
 			x = obj_Soul_Parent.x;
 		}
 	} else {
-		var _hold_frame = 4;
-		scr_Boss_Attack_Sprite_v2(spr_ninja_spirit_v2_sword_death_slash, _hold_frame, 5, 7, 40, 0);
+		var _hold_frame = 7;
+		scr_Boss_Attack_Sprite_v2(spr_ninja_spirit_v2_sword_death_slash, _hold_frame, 8, 10, 40, 0);
 	}
 } else if active_attack = 5 {
 	var _hold_frame = 2;
