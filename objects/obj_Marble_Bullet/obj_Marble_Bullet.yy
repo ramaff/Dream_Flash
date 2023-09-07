@@ -1,11 +1,13 @@
 {
   "resourceType": "GMObject",
   "resourceVersion": "1.0",
-  "name": "obj_Jelly_Bullet_Straight",
+  "name": "obj_Marble_Bullet",
   "eventList": [
-    {"resourceType":"GMEvent","resourceVersion":"1.0","name":"","collisionObjectId":null,"eventNum":0,"eventType":1,"isDnD":false,},
-    {"resourceType":"GMEvent","resourceVersion":"1.0","name":"","collisionObjectId":null,"eventNum":0,"eventType":0,"isDnD":false,},
+    {"resourceType":"GMEvent","resourceVersion":"1.0","name":"","collisionObjectId":null,"eventNum":8,"eventType":2,"isDnD":false,},
+    {"resourceType":"GMEvent","resourceVersion":"1.0","name":"","collisionObjectId":null,"eventNum":0,"eventType":8,"isDnD":false,},
+    {"resourceType":"GMEvent","resourceVersion":"1.0","name":"","collisionObjectId":null,"eventNum":1,"eventType":3,"isDnD":false,},
     {"resourceType":"GMEvent","resourceVersion":"1.0","name":"","collisionObjectId":null,"eventNum":0,"eventType":3,"isDnD":false,},
+    {"resourceType":"GMEvent","resourceVersion":"1.0","name":"","collisionObjectId":null,"eventNum":0,"eventType":0,"isDnD":false,},
   ],
   "managed": true,
   "overriddenProperties": [],
@@ -14,8 +16,8 @@
     "path": "folders/Objects/Boss Bullets/Lobbing Group.yy",
   },
   "parentObjectId": {
-    "name": "obj_Lob_Bullet",
-    "path": "objects/obj_Lob_Bullet/obj_Lob_Bullet.yy",
+    "name": "obj_Bounce_Bullet_Parent",
+    "path": "objects/obj_Bounce_Bullet_Parent/obj_Bounce_Bullet_Parent.yy",
   },
   "persistent": false,
   "physicsAngularDamping": 0.1,
@@ -33,8 +35,8 @@
   "properties": [],
   "solid": false,
   "spriteId": {
-    "name": "spr_Lob_Shot",
-    "path": "sprites/spr_Lob_Shot/spr_Lob_Shot.yy",
+    "name": "spr_Glowy_Enemy_Shot",
+    "path": "sprites/spr_Glowy_Enemy_Shot/spr_Glowy_Enemy_Shot.yy",
   },
   "spriteMaskId": null,
   "visible": false,

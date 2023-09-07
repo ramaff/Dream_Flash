@@ -9,6 +9,45 @@ scr_Boss_Height_Bob(30, 1, 0);
 // Make boss shape wobble:
 scr_Boss_Wobble("Horizontal", 0.4, 1, 0);
 
+if active_attack = 0 {
+	speed = bossmovespeed * 0.75;
+	direction = scr_Soul_Point();
+} else if active_attack = 2 {
+	if box_xx <= center_xx - box_size {
+		if box_yy >= center_yy + box_size {
+			box_move_direction = 90;
+		}
+		if box_yy <= center_yy - box_size {
+			box_move_direction = 0;
+		}
+	} else if box_xx >= center_xx + box_size {
+		if box_yy >= center_yy + box_size {
+			box_move_direction = 180;
+		} 
+		if box_yy <= center_yy - box_size {
+			box_move_direction = 270;
+		}
+	}
+	//Print_DF("box_xx: " + string(box_xx) + ", box_yy: " + string(box_yy))
+	//Print_DF("box_move_direction: " + string(box_move_direction))
+	
+	var _attack_speed_curr = 0.75 + ((70 - active_attack_delay) / 105)
+	if active_attack_delay < 0 {
+		_attack_speed_curr = 0.75 + (sqrt((pattern_count_max - pattern_count)) / 2);
+	} if pattern_count <= 0 {
+		_attack_speed_curr = 0.75 + ((active_attack_duration) / 20)
+	}
+	
+	box_xx += lengthdir_x(bossmovespeed * _attack_speed_curr, box_move_direction)
+	box_yy += lengthdir_y(bossmovespeed * _attack_speed_curr, box_move_direction)
+	
+	speed = min(bossmovespeed * _attack_speed_curr, point_distance(x, y, box_xx, box_yy))
+	direction = point_direction(x, y, box_xx, box_yy)
+} else {
+	speed = bossmovespeed * 0.5;
+	direction = scr_Soul_Point();
+}
+
 //////////////////////////////////////////////////////////////////////////////////////////
 /////////////// Active Attack Prep
 //////////////////////////////////////////////////////////////////////////////////////////
@@ -21,7 +60,7 @@ if active_attack_delay <= 0 and active_attack_cooldown <= 0 and active_attack_du
 	// Hammer Attack
     if active_attack = 1 {
 		// Setup how many attacks per boss move, delay, etc
-		scr_Boss_Attack_Time_Setup_v2(6, 50, 20, 120, 30, 10);
+		scr_Boss_Attack_Time_Setup_v2(6, 50, 20, 120, 30, -10);
 		
 		// Can set up the initial pattern direction
 		// patternDirection = scr_Soul_Point();
@@ -30,7 +69,7 @@ if active_attack_delay <= 0 and active_attack_cooldown <= 0 and active_attack_du
 	// Marble Dump
 	if active_attack = 2 {
 		// 
-		scr_Boss_Attack_Time_Setup_v2(24, 50, 10, 120, 30, 10);
+		scr_Boss_Attack_Time_Setup_v2(30, 70, 10, 120, 30, 0);
     }
 	// Spill
 	if active_attack = 3 {
@@ -49,9 +88,22 @@ scr_Default_Attack_Settings();
 if active_attack_delay <= 0 and pattern_cooldown <= 0 and pattern_count > 0 {
    
     if active_attack = 1 {
-		scr_Boss_Stretch("Vertical", 1);
+		scr_Boss_Stretch("Horizontal", 0.5);
 		
-		bullet_direction = scr_Boss_Bullet_Direction_Formula(scr_Soul_Point(), 30)
+		bullet_count = 4;
+		bullet_spread = 90;
+		bullet_speed = bossbulletspeed * 2;
+		
+		boss_xoffset = 60;
+		boss_yoffset = 40;
+		bullet_direction = 0;
+		if pattern_count mod 2 = 0 {
+			boss_xoffset = -60;
+			boss_yoffset = 40;
+			bullet_direction = 45;
+		}
+		
+		bullet_direction = scr_Boss_Bullet_Direction_Formula(bullet_direction, 10)
 		
 		scr_Boss_Shoot();
 	
@@ -60,9 +112,14 @@ if active_attack_delay <= 0 and pattern_cooldown <= 0 and pattern_count > 0 {
 	}
 	
 	if active_attack = 2 {
-		scr_Boss_Stretch("Vertical", 1);
+		scr_Boss_Stretch("Horizontal", 0.2);
 		
-		bullet_direction = scr_Boss_Bullet_Direction_Formula(scr_Soul_Point(), 30)
+		bullet_direction = scr_Boss_Bullet_Direction_Formula(scr_Soul_Point(), 360)
+		bullet_type = obj_Marble_Bullet;
+		bullet_lob_time = 45 + random(30);
+		bullet_lifespan = (bullet_lob_time + 2) * 4;
+		bullet_bounce_speed = 3 + random(2);
+		bullet_speed = bossbulletspeed * (0.5 + random(0.6))
 		
 		scr_Boss_Shoot();
 	
