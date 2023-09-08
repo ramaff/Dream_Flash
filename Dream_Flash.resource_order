@@ -2069,6 +2069,7 @@
     {"name":"spr_Soul_Reaper","order":11,"path":"sprites/spr_Soul_Reaper/spr_Soul_Reaper.yy",},
     {"name":"spr_Blaze_Soul_Shoot","order":9,"path":"sprites/spr_Blaze_Soul_Shoot/spr_Blaze_Soul_Shoot.yy",},
     {"name":"spr_Power_Whip_Art","order":23,"path":"sprites/spr_Power_Whip_Art/spr_Power_Whip_Art.yy",},
+    {"name":"obj_boxless","order":17,"path":"objects/obj_boxless/obj_boxless.yy",},
     {"name":"spr_Dreamers_Blade_Art","order":24,"path":"sprites/spr_Dreamers_Blade_Art/spr_Dreamers_Blade_Art.yy",},
     {"name":"spr_Soul_Spear_Art","order":25,"path":"sprites/spr_Soul_Spear_Art/spr_Soul_Spear_Art.yy",},
     {"name":"spr_Soul_Punches_Art","order":26,"path":"sprites/spr_Soul_Punches_Art/spr_Soul_Punches_Art.yy",},

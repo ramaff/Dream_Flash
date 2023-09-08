@@ -110,7 +110,8 @@ function scr_Save_Run() {
 	    ini_write_real("Run", "floor" + string(i) + "-" + string(1), Floor_Layout_Control.Flash[i,1]);
 	    ini_write_real("Run", "floor" + string(i) + "-" + string(2), Floor_Layout_Control.Flash[i,2]);
 	    ini_write_real("Run", "floor" + string(i) + "-" + string(3), Floor_Layout_Control.Flash[i,3]);
-	    ini_write_string("Run", "floor" + string(i) + "-" + string(4), sprite_get_name(string(Floor_Layout_Control.Flash[i,4])));
+	    //ini_write_string("Run", "floor" + string(i) + "-" + string(4), sprite_get_name(string(Floor_Layout_Control.Flash[i,4])));
+	    ini_write_string("Run", "floor" + string(i) + "-" + string(4), sprite_get_name(Floor_Layout_Control.Flash[i,4]));
 	    ini_write_real("Run", "floor" + string(i) + "-" + string(5), Floor_Layout_Control.Flash[i,5]);
 	    ini_write_real("Run", "floor" + string(i) + "-" + string(6), Floor_Layout_Control.Flash[i,6]);
 	    ini_write_string("Run", "floor" + string(i) + "-" + string(7), string(Floor_Layout_Control.Flash[i,7]));
