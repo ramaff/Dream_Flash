@@ -6,14 +6,14 @@ if currentphase = 1 {
 	scr_Boss_Height_Bob(40, 1, 0);
 } 
 if currentphase = 2 {
-	if bossHeight > 0 {
-		var fallSpeed = 100 / max(bossHeight, 1);
-		bossHeight -= fallSpeed;
+	if boss_height > 0 {
+		var fallSpeed = 100 / max(boss_height, 1);
+		boss_height -= fallSpeed;
 		y += fallSpeed
 	}
-	if bossHeight < 0 {
-		y += bossHeight;
-		bossHeight -= bossHeight;
+	if boss_height < 0 {
+		y += boss_height;
+		boss_height -= boss_height;
 	}
 	scr_Boss_Wobble("Horizontal", 0.3, 1, 0);
 }
@@ -79,7 +79,7 @@ if champ = 8 and currentphase = 1 and bossActiveAttack[1] = 0 {
 
 if bossPassiveAttack[1] = 1 {
 	bullet_blend = c_red;
-	boss_yoffset = bossHeight;
+	boss_yoffset = boss_height;
 	if currentphase = 2 {
 		boss_yoffset += 20;	
 	}

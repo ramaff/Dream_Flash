@@ -10,6 +10,11 @@ for (bi = 0; bi < 9; bi++) {
 			Shot_YY = lengthdir_y(len,Shot_Direction);
 		}
 		
+		current_weapon_stats = Shot_Repetition_Stats[bi]
+		
+		scr_setup_weapon_stats()
+		
+		Shot_Repetition[bi]--;
 		
 		if Shot_Repetition_Type[bi] = "Bullet Hell" {
 			//scr_Bullet_Hell_Use_Helper();	
@@ -29,14 +34,13 @@ for (bi = 0; bi < 9; bi++) {
 			scr_Barrage_Weapon_Use(16);
 		}
 		if Shot_Repetition_Type[bi] = "Stubborn" {
-			current_weapon_stats = Shot_Repetition_Stats[bi]
+			//current_weapon_stats = Shot_Repetition_Stats[bi]
 			
 			Shot_Mouse = 0;
 			Shot_Count = Shot_Default_Count[bi];
 			scr_Shot_Creation();
 		}
 		
-		Shot_Repetition[bi]--;
 	}
 
 }

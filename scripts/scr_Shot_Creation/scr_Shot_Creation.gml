@@ -92,9 +92,7 @@ function scr_Shot_Creation() {
 		}
 	}
 	
-	
-	
-	if Shot_Repetition[bi] == Shot_Repetition_Max[bi] - 1 {
+	if Shot_Repetition[bi] == Shot_Repetition_Max[bi] {
 		Shot_Repetition_Stats[bi] = current_weapon_stats
 		Shot_Repetition_Direction[bi] = actual_shot_direction
 	}

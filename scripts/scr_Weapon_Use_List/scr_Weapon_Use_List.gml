@@ -121,8 +121,8 @@ function scr_Weapon_Use_List(cWP = global.currentweapon) {
 					
 					alarm[11] = (Shot_Barrage_Speed[bi]);
 					
+					//Shot_Repetition[bi]--;
 					Shot_Repetition_Max[bi] = Shot_Repetition[bi];
-					Shot_Repetition[bi]--;
 		
 					fval = bi;
 					break;
