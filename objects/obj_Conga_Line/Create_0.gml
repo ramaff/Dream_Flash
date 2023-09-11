@@ -3,7 +3,7 @@ boost = global.boost;
 champ = global.champ;
 
 // Boss # id
-bossValue = 44;
+boss_value = 44;
 scr_Boss_Stats_Setup(2);
 
 // Required, usually set to 0.5
@@ -44,7 +44,7 @@ if instance_number(obj_Conga_Line) <= total_num {
 			followtarget = ct;
 		
 			ct = id;
-			scr_Boss_Stats_Setup();
+			scr_Boss_Stats_Setup(2);
 			
 			champ = other.champ;
 			boost = other.boost;

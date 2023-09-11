@@ -13,5 +13,4 @@
     
     scr_Soul_Shoot();
     
-    ds_list_destroy(projectile_hits);
 

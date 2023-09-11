@@ -4,6 +4,12 @@ function scr_Boss_Stats_Setup(_version=1) {
 	
 	facing_direction = 1;
 	
+	new_boss = true
+	
+	if _version = 1 {
+		new_boss = false
+	}
+	
 	tier = global.currentchapter - 1;
 
 	scr_Boss_Status_Setup(_version);

@@ -185,6 +185,7 @@ if bosshealth <= bossmaxhealth / 2 or currentphase = finalphase {
     with instance_create(x,y - 100, obj_Flying_Stacklet) {
         champ = other.champ;
         boost = other.boost;
+		bossValue = other.bossValue;
         global.bosscount += 1;
     }
 }
@@ -194,6 +195,7 @@ if currentphase = finalphase {
     with instance_create(x,y - 50, obj_Crawling_Stacklet) {
         champ = other.champ;
         boost = other.boost;
+		bossValue = other.bossValue;
         global.bosscount += 1;
     }
 }

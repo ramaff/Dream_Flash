@@ -1,8 +1,9 @@
-ds_list_destroy(projectile_hits);
+/// @description Insert description here
+// You can write your code in this editor
 
-scr_Soul_Currency_Add();
 
-global.recollectionBoss[global.bossval - frac(global.bossval)]++;
+
+// Inherit the parent event
+event_inherited();
 
 scr_Change_Chapter();
-

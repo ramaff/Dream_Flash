@@ -21,5 +21,5 @@ with(obj_Tri_Ghoul) {
     }
 }
 
-ds_list_destroy(projectile_hits);
+//ds_list_destroy(projectile_hits);
 

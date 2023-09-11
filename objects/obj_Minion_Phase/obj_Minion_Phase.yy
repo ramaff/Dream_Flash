@@ -3,7 +3,6 @@
   "resourceVersion": "1.0",
   "name": "obj_Minion_Phase",
   "eventList": [
-    {"resourceType":"GMEvent","resourceVersion":"1.0","name":"","collisionObjectId":null,"eventNum":0,"eventType":1,"isDnD":false,},
     {"resourceType":"GMEvent","resourceVersion":"1.0","name":"","collisionObjectId":{"name":"obj_Boss_Parent","path":"objects/obj_Boss_Parent/obj_Boss_Parent.yy",},"eventNum":0,"eventType":4,"isDnD":false,},
     {"resourceType":"GMEvent","resourceVersion":"1.0","name":"","collisionObjectId":{"name":"obj_Minion_Parent","path":"objects/obj_Minion_Parent/obj_Minion_Parent.yy",},"eventNum":0,"eventType":4,"isDnD":false,},
     {"resourceType":"GMEvent","resourceVersion":"1.0","name":"","collisionObjectId":{"name":"obj_Projectile_Parent","path":"objects/obj_Projectile_Parent/obj_Projectile_Parent.yy",},"eventNum":0,"eventType":4,"isDnD":false,},

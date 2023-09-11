@@ -4,7 +4,7 @@
 scr_Boss_Step(2);
 
 // If boss is floating in air, can make it bob up and down:
-scr_Boss_Height_Bob(30, 1, 0);
+scr_Boss_Height_Bob(40, 1, 0);
 
 // Make boss shape wobble:
 scr_Boss_Wobble("Horizontal", 0.4, 1, 0);
@@ -31,9 +31,9 @@ if active_attack = 0 {
 	//Print_DF("box_xx: " + string(box_xx) + ", box_yy: " + string(box_yy))
 	//Print_DF("box_move_direction: " + string(box_move_direction))
 	
-	var _attack_speed_curr = 0.75 + ((70 - active_attack_delay) / 105)
+	var _attack_speed_curr = 0.75 + ((65 - active_attack_delay) / 100)
 	if active_attack_delay < 0 {
-		_attack_speed_curr = 0.75 + (sqrt((pattern_count_max - pattern_count)) / 2);
+		_attack_speed_curr = 0.75 + (sqrt((pattern_count_max - pattern_count)));
 	} if pattern_count <= 0 {
 		_attack_speed_curr = 0.75 + ((active_attack_duration) / 20)
 	}
@@ -44,7 +44,7 @@ if active_attack = 0 {
 	speed = min(bossmovespeed * _attack_speed_curr, point_distance(x, y, box_xx, box_yy))
 	direction = point_direction(x, y, box_xx, box_yy)
 } else if active_attack != 3 {
-	speed = bossmovespeed * 0.5;
+	speed = bossmovespeed * 0.375;
 	direction = scr_Soul_Point();
 }
 
@@ -63,7 +63,7 @@ if active_attack_delay <= 0 and active_attack_cooldown <= 0 and active_attack_du
 	// Hammer Attack
     if active_attack = 1 {
 		// Setup how many attacks per boss move, delay, etc
-		scr_Boss_Attack_Time_Setup_v2(6, 50, 20, 120, 30, -10);
+		scr_Boss_Attack_Time_Setup_v2(6, 60, 20, 120, 30, -10);
 		
 		// Can set up the initial pattern direction
 		// patternDirection = scr_Soul_Point();
@@ -72,17 +72,17 @@ if active_attack_delay <= 0 and active_attack_cooldown <= 0 and active_attack_du
 	// Marble Dump
 	if active_attack = 2 {
 		// 
-		scr_Boss_Attack_Time_Setup_v2(30, 70, 10, 120, 30, 0);
+		scr_Boss_Attack_Time_Setup_v2(25, 70, 15, 120, 30, 0);
     }
 	// Spill
 	if active_attack = 3 {
 		// Setup how many attacks per boss move, delay, etc
-		scr_Boss_Attack_Time_Setup_v2(360, 20, 3, 120, 30, 10);
+		scr_Boss_Attack_Time_Setup_v2(360, 30, 3, 120, 30, 10);
 		
 		scr_Boss_Dash_Setup_v2(scr_Soul_Point(), bossmovespeed * 0.75, bossmovespeed * 2)
 		
-		dash_direction = (round(random(4)) + 0.5) * 90
-		direction = dash_direction
+		//dash_direction = (round(random(4)) + 0.5) * 90
+		direction = dash_direction - 60 + random(120)
 		
 		boss_height = 90;
 		
@@ -197,13 +197,13 @@ scr_Boss_Size_Lerp(0.15);
 if active_attack = 1 {
 	var _hold_frame = 2;
 	scr_Boss_Attack_Sprite_v2(spr_boxer_hammers, _hold_frame, 3, 6, 20);
-	if image_index = _hold_frame {
+	if image_index = floor(_hold_frame) {
 		scr_Boss_Wobble("Horizontal", 2, 0.4, 0)
 	}
 } else if active_attack = 2 {
 	var _hold_frame = 2;
 	scr_Boss_Attack_Sprite_v2(spr_boxer_dump, _hold_frame, 2, 2, 20);
-	if image_index = _hold_frame {
+	if image_index = floor(_hold_frame) {
 		scr_Boss_Wobble("Horizontal", 2, 0.4, 0)
 	}
 } else if active_attack = 3 {

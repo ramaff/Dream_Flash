@@ -1,7 +1,5 @@
 global.bosscount -= 1;
 
-ds_list_destroy(projectile_hits);
-
 global.recollectionBoss[global.bossval - frac(global.bossval)]++;
 
 if currentphase >= finalphase
