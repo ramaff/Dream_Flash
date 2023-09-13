@@ -150,8 +150,8 @@ function scr_Floor_Generation() {
 	            Flash[i,3] += 256;
 	        }
 	        if Flash[i,0] = "Boss" {
-				Flash[i,3] += 96;
-	            Flash[i,3] += 24 * Flash[i,24];
+				Flash[i,3] += 112;
+	            Flash[i,3] += 12 * Flash[i,24];
 				Flash[i,3] += random(8) * Flash[i,24];
 	        }
 	        if i = global.spiritRoom {

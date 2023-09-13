@@ -10,7 +10,7 @@ if alarm[0] <= 0 {
 	if alarm[1] <= 15 {
 		bossSize -= bossSize / alarm[1];
 	} else {
-		bossSize += 0.009;
+		bossSize += 0.015;
 		scr_Boss_Wobble("Vertical", 1.2, 0.2, 0);
 	}
 } else {

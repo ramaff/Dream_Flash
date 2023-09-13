@@ -84,7 +84,7 @@ if active_attack_delay <= 0 and active_attack_cooldown <= 0 and active_attack_du
 		//dash_direction = (round(random(4)) + 0.5) * 90
 		direction = dash_direction - 60 + random(120)
 		
-		boss_height = 90;
+		boss_height = 140;
 		
 		// Can set up the initial pattern direction
 		// patternDirection = scr_Soul_Point();

@@ -39,7 +39,7 @@ if point_distance(x,y,obj_Soul_Parent.x,obj_Soul_Parent.y) < 40 {
 	instance_destroy();	
 }
 
-scr_Particle_Burst(obj_Particle_Parent, spr_White_Diamond, c_white, c_white, 1, 0, 0, 0, 0, image_xscale, 20, 0)
+scr_Particle_Burst(obj_Weapon_Trail, spr_White_Diamond, c_white, c_white, 1, 0, 0, 0, 0, image_xscale, 20, 0)
 
 //part_emitter_region(global.psystem,global.pemitter, x, x, y, y,ps_shape_diamond,ps_distr_linear);
 //part_emitter_burst(global.psystem, global.pemitter, ptype, 1);

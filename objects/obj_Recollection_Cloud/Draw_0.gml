@@ -35,7 +35,7 @@ if recollectionMirror = 2 {
 
 var _text_xoffset = 172;
 var _text_xoffset_minus = 172;
-var _text_yoffset = 128;
+var _text_yoffset = 104;
 var _text_yoffset_minus = 176;
 
 if shop > 0 || (cloudS = spr_Recollection_Hover_Cloud and string_length(recollectionExtraStats) > 50) {
