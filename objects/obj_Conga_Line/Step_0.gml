@@ -112,6 +112,7 @@ if active_attack_delay <= 0 and pattern_cooldown <= 0 and pattern_count > 0 {
 		
 			scr_Boss_Shoot();
 			
+			/*
 			bullet_direction += 22.5 / bossaccuracy
 			bullet_speed = bossbulletspeed * 1.25;
 			
@@ -121,6 +122,7 @@ if active_attack_delay <= 0 and pattern_cooldown <= 0 and pattern_count > 0 {
 			bullet_speed = bossbulletspeed * 1.25;
 			
 			scr_Boss_Shoot();
+			*/
 			
 		}
 	

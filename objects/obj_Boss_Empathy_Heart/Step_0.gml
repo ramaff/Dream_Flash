@@ -12,7 +12,9 @@ if bosshealth < bossmaxhealth {
 		with (followtarget) {
 			scr_Damage_Indicator(0, diff, 1);
 		}
-		scr_Boss_Stretch("Vertical", 0.1);
+		if diff >= 1 {
+			scr_Boss_Stretch("Vertical", 0.1);
+		}
 		scr_Heal_Soul(diff / 20);
 	}
 	alarm[2] = 10;

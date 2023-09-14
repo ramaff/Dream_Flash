@@ -85,18 +85,18 @@ if global.bosscount < 1 and (/*bossSpawn = 0 ||*/ bossSpawn = 1) {
         fieldSpawn = 1;
         //chooseVal = random(99);
 		
-		global.staFieldSpawn -= 5;
+		//global.staFieldSpawn -= 5;
 		
-		
+		/*
 		if global.staFieldSpawn <= 0 {
 			global.staFieldSpawn +=	16;
 			staChoose = 1;
-		}
+		}*/
 		
 
 		
 		if staChoose = 1 {
-            Floor_Layout_Control.Flash[global.currentroom,0] = "State Field"
+            //Floor_Layout_Control.Flash[global.currentroom,0] = "State Field"
         } else {
             Floor_Layout_Control.Flash[global.currentroom,0] = "Normal"
         }
@@ -105,6 +105,7 @@ if global.bosscount < 1 and (/*bossSpawn = 0 ||*/ bossSpawn = 1) {
         if Floor_Layout_Control.Flash[global.currentroom,0] = "Normal" {
             //instance_create(x,y,Normal_Room_Start_Control)
         } else {
+			/*
             global.orbit[0] = 0;
             global.orbit[1] = 0;
             global.orbit[2] = 0;
@@ -130,7 +131,7 @@ if global.bosscount < 1 and (/*bossSpawn = 0 ||*/ bossSpawn = 1) {
             }
             
             scr_Item_Spawn(field, item[1], item[2], item[3], item[4], item[5], item[6], item[7], item[8], item[9], item[10], item[11], item[12], item[13]);
-
+			*/
         }
         
         } else {

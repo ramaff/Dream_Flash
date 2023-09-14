@@ -20,6 +20,9 @@ function scr_Boss_Stats_Setup(_version=1) {
 	}
 		
 	boss_height = 0;
+	if _version = 1 {
+		bossHeight = 0;	
+	}
     
 	scr_Boss_Attack_Setup(_version);
     
