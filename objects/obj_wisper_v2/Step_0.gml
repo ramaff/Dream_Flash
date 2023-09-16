@@ -19,7 +19,7 @@ speed = bossmovespeed
 if active_attack_delay <= 0 and active_attack_cooldown <= 0 and active_attack_duration <= 0 {
     
 	// Pick a random attack to do
-	active_attack = choose(1);
+	active_attack = choose(1, 2, 3);
 	
     if active_attack = 1 {
 		// Setup how many attacks per boss move, delay, etc
@@ -29,12 +29,15 @@ if active_attack_delay <= 0 and active_attack_cooldown <= 0 and active_attack_du
 		// patternDirection = scr_Soul_Point();
 		// patternDirection = random(360;
     }
-	// Hop leap attack setup example
+	// 
 	if active_attack = 2 {
-		// 
-		scr_Boss_Attack_Time_Setup_v2(50, 30, 1, 30, 30, -10);
-		
-		scr_Boss_Jump_Setup_v2(0, 7 * bossmovespeed, x, y);
+		// Setup how many attacks per boss move, delay, etc
+		scr_Boss_Attack_Time_Setup_v2(1, 50, 1, 180, 30, 10);
+    }
+	
+	if active_attack = 3 {
+		// Setup how many attacks per boss move, delay, etc
+		scr_Boss_Attack_Time_Setup_v2(1, 50, 1, 180, 30, 10);
     }
 }
 
@@ -60,7 +63,7 @@ if active_attack_delay <= 0 and pattern_cooldown <= 0 and pattern_count > 0 {
         bullet_spread = 180;
         scr_Boss_Shoot();
 		
-		repeat(3) {
+		repeat(2) {
 			bullet_speed += bossbulletspeed * 0.35;
 			bullet_direction -= 20 + random(40)
 			scr_Boss_Shoot();
@@ -71,17 +74,28 @@ if active_attack_delay <= 0 and pattern_cooldown <= 0 and pattern_count > 0 {
 	}
 	
 	if active_attack = 2 {
-		scr_Boss_Dash_Movement_v2(4,2);
+			
+		bullet_sprite = spr_Big_Glowy_Green_Shot
+		bullet_type = obj_Whisper_Strike_Bullet;
 		
-		speed = dash_speed;
-        direction = dash_direction;
+		repeat(3) {
+			bullet_direction = scr_Boss_Bullet_Direction_Formula(scr_Soul_Point(), 360)
+			bullet_speed = bossbulletspeed * (0.65 + random(0.575));
+			
+			scr_Boss_Shoot();
+		}
+	}
+	
+	if active_attack = 3 {
+			
+		bullet_sprite = spr_Big_Glowy_Shot
+		bullet_type = obj_Whisper_Mine_Bullet;
 		
-		scr_Jump_Movement_v2(2);	
-		
-		if pattern_count = floor(pattern_count_max) {
-			bullet_direction = scr_Boss_Bullet_Direction_Formula(scr_Soul_Point(), 30)
-		
-			scr_Boss_Shoot();	
+		repeat(2) {
+			bullet_direction = scr_Boss_Bullet_Direction_Formula(scr_Soul_Point(), 360)
+			bullet_speed = bossbulletspeed * (0.35 + random(0.375));
+			
+			scr_Boss_Shoot();
 		}
 	}
 	
@@ -102,6 +116,7 @@ if currentphase = finalphase and split = 0 {
         boost = other.boost;
         global.bosscount += 1;
 		scr_Boss_Stats_Setup(2);
+		scr_Boss_Height_Setup(80);
 		difficulty = Floor_Layout_Control.Flash[global.currentroom,24] / 2;
     }
 	with instance_create(x,y, obj_relentless_wisper_v2) {
@@ -110,7 +125,7 @@ if currentphase = finalphase and split = 0 {
         boost = other.boost;
         global.bosscount += 1;
 		scr_Boss_Stats_Setup(2);
-		
+		scr_Boss_Height_Setup(80);
 		difficulty = Floor_Layout_Control.Flash[global.currentroom,24] / 2;
     }
 	difficulty = 0;

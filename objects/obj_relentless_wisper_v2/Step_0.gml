@@ -29,13 +29,6 @@ if active_attack_delay <= 0 and active_attack_cooldown <= 0 and active_attack_du
 		// patternDirection = scr_Soul_Point();
 		// patternDirection = random(360;
     }
-	// Hop leap attack setup example
-	if active_attack = 2 {
-		// 
-		scr_Boss_Attack_Time_Setup_v2(50, 30, 1, 30, 30, -10);
-		
-		scr_Boss_Jump_Setup_v2(0, 7 * bossmovespeed, x, y);
-    }
 }
 
 //////////////////////////////////////////////////////////////////////////////////////////
@@ -52,25 +45,16 @@ if active_attack_delay <= 0 and pattern_cooldown <= 0 and pattern_count > 0 {
 		
 		bullet_direction = scr_Boss_Bullet_Direction_Formula(scr_Soul_Point(), 30)
 		
+		bullet_sprite = spr_Glowy_Green_Shot;
+		bullet_speed = bossbulletspeed * 2;
+		
+		bullet_count = 5;
+		bullet_spread = 15;
+		
 		scr_Boss_Shoot();
 	
 		// If you gotta change the pattern aim direction
 	    // pattern_direction += 0;
-	}
-	
-	if active_attack = 2 {
-		scr_Boss_Dash_Movement_v2(4,2);
-		
-		speed = dash_speed;
-        direction = dash_direction;
-		
-		scr_Jump_Movement_v2(2);	
-		
-		if pattern_count = floor(pattern_count_max) {
-			bullet_direction = scr_Boss_Bullet_Direction_Formula(scr_Soul_Point(), 30)
-		
-			scr_Boss_Shoot();	
-		}
 	}
 	
 	// Maybe I should put this into a script

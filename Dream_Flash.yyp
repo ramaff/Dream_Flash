@@ -314,6 +314,7 @@
     {"resourceType":"GMFolder","resourceVersion":"1.0","name":"Watcher Boss Group","folderPath":"folders/Sprites/Boss Sprites/Flash Bosses/Watcher Boss Group.yy",},
     {"resourceType":"GMFolder","resourceVersion":"1.0","name":"oild","folderPath":"folders/Sprites/Boss Sprites/Flash Bosses/Watcher Boss Group/oild.yy",},
     {"resourceType":"GMFolder","resourceVersion":"1.0","name":"Wisper Group","folderPath":"folders/Sprites/Boss Sprites/Flash Bosses/Wisper Group.yy",},
+    {"resourceType":"GMFolder","resourceVersion":"1.0","name":"Wisper v2","folderPath":"folders/Sprites/Boss Sprites/Flash Bosses/Wisper v2.yy",},
     {"resourceType":"GMFolder","resourceVersion":"1.0","name":"Masked Spirit Bosses","folderPath":"folders/Sprites/Boss Sprites/Masked Spirit Bosses.yy",},
     {"resourceType":"GMFolder","resourceVersion":"1.0","name":"High Spirits","folderPath":"folders/Sprites/Boss Sprites/Masked Spirit Bosses/High Spirits.yy",},
     {"resourceType":"GMFolder","resourceVersion":"1.0","name":"Masked Spirits","folderPath":"folders/Sprites/Boss Sprites/Masked Spirit Bosses/Masked Spirits.yy",},
@@ -444,7 +445,6 @@
     {"resourceType":"GMFolder","resourceVersion":"1.0","name":"Misc BGs","folderPath":"folders/Tile Sets/Misc BGs.yy",},
     {"resourceType":"GMFolder","resourceVersion":"1.0","name":"Nightmare BGs","folderPath":"folders/Tile Sets/Nightmare BGs.yy",},
     {"resourceType":"GMFolder","resourceVersion":"1.0","name":"Timelines","folderPath":"folders/Timelines.yy",},
-    {"resourceType":"GMFolder","resourceVersion":"1.0","name":"Wisper v2","folderPath":"folders/Sprites/Boss Sprites/Flash Bosses/Wisper v2.yy",},
   ],
   "IncludedFiles": [
     {"resourceType":"GMIncludedFile","resourceVersion":"1.0","name":"df_boss_stats.json","CopyToMask":-1,"filePath":"datafiles",},
@@ -3577,6 +3577,7 @@
     {"id":{"name":"obj_Horror_Ghoul","path":"objects/obj_Horror_Ghoul/obj_Horror_Ghoul.yy",},},
     {"id":{"name":"scr_Figment_Stat_Refresh","path":"scripts/scr_Figment_Stat_Refresh/scr_Figment_Stat_Refresh.yy",},},
     {"id":{"name":"spr_Dangerous_Bomb","path":"sprites/spr_Dangerous_Bomb/spr_Dangerous_Bomb.yy",},},
+    {"id":{"name":"scr_Bullet_Expand_Before_Contract","path":"scripts/scr_Bullet_Expand_Before_Contract/scr_Bullet_Expand_Before_Contract.yy",},},
     {"id":{"name":"spr_Locust_Shoot","path":"sprites/spr_Locust_Shoot/spr_Locust_Shoot.yy",},},
     {"id":{"name":"spr_Active_Lifestyle_Item","path":"sprites/spr_Active_Lifestyle_Item/spr_Active_Lifestyle_Item.yy",},},
     {"id":{"name":"scr_Soul_Stat_Refresh","path":"scripts/scr_Soul_Stat_Refresh/scr_Soul_Stat_Refresh.yy",},},

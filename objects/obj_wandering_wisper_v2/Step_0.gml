@@ -3,7 +3,7 @@
 // Mandatory:
 scr_Boss_Step(2);
 
-scr_Room_Loop_Everywhere(128)
+//scr_Room_Loop_Everywhere(128)
 
 // If boss is floating in air, can make it bob up and down:
 scr_Boss_Height_Bob(30, 1, 0);
@@ -15,8 +15,10 @@ var _dist = scr_Soul_Distance()
 
 if _dist < 300 {
 	direction = scr_Soul_Point() - 180 + scr_Wave(-90, 90, 4, 0);
+	//direction = scr_Soul_Point() - 180 + scr_Wave(-(_dist/2), (_dist/2), 4, 0);
 } else {
 	direction = scr_Soul_Point() + scr_Wave(-90, 90, 4, 0);
+	//direction = scr_Soul_Point() + scr_Wave(-180, 180, 4, 0);
 }
 
 speed = bossmovespeed
@@ -32,7 +34,7 @@ if active_attack_delay <= 0 and active_attack_cooldown <= 0 and active_attack_du
 	
     if active_attack = 1 {
 		// Setup how many attacks per boss move, delay, etc
-		scr_Boss_Attack_Time_Setup_v2(1, 50, 1, 120, 30, 10);
+		scr_Boss_Attack_Time_Setup_v2(1, 50, 1, 180, 60, 10);
 		
 		// Can set up the initial pattern direction
 		// patternDirection = scr_Soul_Point();
@@ -54,25 +56,19 @@ if active_attack_delay <= 0 and pattern_cooldown <= 0 and pattern_count > 0 {
 		
 		bullet_direction = scr_Boss_Bullet_Direction_Formula(scr_Soul_Point(), 30)
 		
+		bullet_sprite = spr_Glowy_Pink_Shot;
+		bullet_speed = bossbulletspeed * 1.35;
+        
+        bullet_count = 16;
+        bullet_spread = 360 / bullet_count;
+        bullet_lifespan = 400;
+        bullet_speed = bossbulletspeed;
 		scr_Boss_Shoot();
-	
-		// If you gotta change the pattern aim direction
-	    // pattern_direction += 0;
-	}
-	
-	if active_attack = 2 {
-		scr_Boss_Dash_Movement_v2(4,2);
 		
-		speed = dash_speed;
-        direction = dash_direction;
+		bullet_count = 6;
+		bullet_speed += bossbulletspeed * 0.35;
 		
-		scr_Jump_Movement_v2(2);	
-		
-		if pattern_count = floor(pattern_count_max) {
-			bullet_direction = scr_Boss_Bullet_Direction_Formula(scr_Soul_Point(), 30)
-		
-			scr_Boss_Shoot();	
-		}
+        scr_Boss_Shoot();
 	}
 	
 	// Maybe I should put this into a script

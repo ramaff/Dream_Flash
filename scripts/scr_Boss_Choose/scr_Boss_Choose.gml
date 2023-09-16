@@ -385,7 +385,7 @@ function scr_Boss_Choose(roomNum, exclude, difficultyAdd = 0) {
 
 	if bossform = 25.1 // Wisper
 	{
-	    bosstype = obj_Wisper;
+	    bosstype = obj_wisper_v2;
 	    difficulty = 3;
 		global.champ = 0 + irandom(2);
 	    //global.champ = 2;

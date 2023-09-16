@@ -280,6 +280,7 @@
     {"name":"TriGhoul Group","order":10,"path":"folders/Sprites/Boss Sprites/Flash Bosses/TriGhoul Group.yy",},
     {"name":"oild","order":1,"path":"folders/Sprites/Boss Sprites/Flash Bosses/Watcher Boss Group/oild.yy",},
     {"name":"Wisper Group","order":16,"path":"folders/Sprites/Boss Sprites/Flash Bosses/Wisper Group.yy",},
+    {"name":"Wisper v2","order":24,"path":"folders/Sprites/Boss Sprites/Flash Bosses/Wisper v2.yy",},
     {"name":"Masked Spirit Bosses","order":12,"path":"folders/Sprites/Boss Sprites/Masked Spirit Bosses.yy",},
     {"name":"High Spirits","order":35,"path":"folders/Sprites/Boss Sprites/Masked Spirit Bosses/High Spirits.yy",},
     {"name":"Masked Spirits","order":34,"path":"folders/Sprites/Boss Sprites/Masked Spirit Bosses/Masked Spirits.yy",},
@@ -401,7 +402,6 @@
     {"name":"Misc BGs","order":13,"path":"folders/Tile Sets/Misc BGs.yy",},
     {"name":"Nightmare BGs","order":9,"path":"folders/Tile Sets/Nightmare BGs.yy",},
     {"name":"Timelines","order":9,"path":"folders/Timelines.yy",},
-    {"name":"Wisper v2","order":24,"path":"folders/Sprites/Boss Sprites/Flash Bosses/Wisper v2.yy",},
   ],
   "ResourceOrderSettings": [
     {"name":"spr_Masked_Bliss_Spirit_Attack","order":1,"path":"sprites/spr_Masked_Bliss_Spirit_Attack/spr_Masked_Bliss_Spirit_Attack.yy",},
@@ -3255,6 +3255,7 @@
     {"name":"obj_Horror_Ghoul","order":3,"path":"objects/obj_Horror_Ghoul/obj_Horror_Ghoul.yy",},
     {"name":"scr_Figment_Stat_Refresh","order":9,"path":"scripts/scr_Figment_Stat_Refresh/scr_Figment_Stat_Refresh.yy",},
     {"name":"spr_Dangerous_Bomb","order":8,"path":"sprites/spr_Dangerous_Bomb/spr_Dangerous_Bomb.yy",},
+    {"name":"scr_Bullet_Expand_Before_Contract","order":38,"path":"scripts/scr_Bullet_Expand_Before_Contract/scr_Bullet_Expand_Before_Contract.yy",},
     {"name":"spr_Locust_Shoot","order":5,"path":"sprites/spr_Locust_Shoot/spr_Locust_Shoot.yy",},
     {"name":"spr_Active_Lifestyle_Item","order":17,"path":"sprites/spr_Active_Lifestyle_Item/spr_Active_Lifestyle_Item.yy",},
     {"name":"scr_Soul_Stat_Refresh","order":10,"path":"scripts/scr_Soul_Stat_Refresh/scr_Soul_Stat_Refresh.yy",},
