@@ -3,14 +3,14 @@ function scr_Charged_Release() {
 	    if Charge_Hold > 0 {
 			
 			scr_Default_Weapon_Stats();
-			scr_Setup_Weapon_Stats()
+			scr_setup_weapon_stats()
 			
 			current_weapon_stats = variable_struct_get(global.weapon_stats, string(weaponcharge))
 			scr_Setup_Charge_Stats()
 			
 			//scr_Default_Weapon_Stats();
 		
-			scr_Setup_Weapon_Stats();
+			//scr_Setup_Weapon_Stats();
 			
 			if Charge_Hold = 2 {
 				scr_Ascending_Soul_Essence_Beam(weaponcharge);
@@ -23,6 +23,9 @@ function scr_Charged_Release() {
 			Shot_Knockback += Charge_Knockback;
 			Shot_Lifespan += Charge_Lifespan;
 			Shot_Size += Charge_Size;
+			
+			//Print_DF(Shot_Stats)
+			//Print_DF(sprite_get_name(Shot_Sprite))
 			
 			if Charge_Hold = 2 {
 				//Shot_Size = Charge_Size;	

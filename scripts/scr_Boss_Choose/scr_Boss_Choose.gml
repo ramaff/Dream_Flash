@@ -512,7 +512,7 @@ function scr_Boss_Choose(roomNum, exclude, difficultyAdd = 0) {
 	if bossform = 44.1 // Congaline
 	{
 	    bosstype = obj_Conga_Line;
-	    difficulty = 1;
+	    difficulty = 2;
 	    global.champ = choose(0);
 	}
 	if bossform = 45.1 // Tough Luck

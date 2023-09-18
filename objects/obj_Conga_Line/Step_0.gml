@@ -2,7 +2,7 @@
 
 if currentphase = 1 {
 	if instance_exists(followtarget) {
-		if point_distance(x, y, followtarget.x, followtarget.y) > 130 {
+		if point_distance(x, y, followtarget.x, followtarget.y) > 110 {
 			direction = point_direction(x, y, followtarget.x, followtarget.y);
 			speed = followtarget.speed;
 		}
@@ -108,7 +108,11 @@ if active_attack_delay <= 0 and pattern_cooldown <= 0 and pattern_count > 0 {
 			bullet_direction = direction
 			bullet_count = 2;
 			bullet_spread = 180;
-			bullet_speed = bossbulletspeed * 1.85;
+			bullet_speed = bossbulletspeed * 1.75;
+		
+			scr_Boss_Shoot();
+			
+			bullet_speed = bossbulletspeed * 2.1;
 		
 			scr_Boss_Shoot();
 			

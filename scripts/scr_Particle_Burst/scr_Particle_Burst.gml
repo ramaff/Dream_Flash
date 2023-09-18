@@ -16,6 +16,8 @@ function scr_Particle_Burst(particletype = obj_Weapon_Trail, particlesprite = sp
 					direction = burstdir - (burstspread / 2) + random(burstspread);
 				}
 				
+				base_direction = direction
+				
 				speed = (burstspeed / 4) + random(3 * burstspeed / 4);
 				
 				//Print_DF("part sprite: " + string(sprite_get_name(particlesprite)))

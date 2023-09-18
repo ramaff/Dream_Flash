@@ -53,4 +53,4 @@ if instance_number(obj_Conga_Line) <= total_num {
 	}
 }
 
-activeAttackCooldown = 240;
+active_attack_cooldown = 240;

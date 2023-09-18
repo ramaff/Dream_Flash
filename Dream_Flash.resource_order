@@ -2659,6 +2659,7 @@
     {"name":"spr_Relaxed_Art","order":3,"path":"sprites/spr_Relaxed_Art/spr_Relaxed_Art.yy",},
     {"name":"spr_Downward_Spiral_Art","order":3,"path":"sprites/spr_Downward_Spiral_Art/spr_Downward_Spiral_Art.yy",},
     {"name":"scr_Weapon_Part_Create","order":1,"path":"scripts/scr_Weapon_Part_Create/scr_Weapon_Part_Create.yy",},
+    {"name":"obj_Fire_Part","order":21,"path":"objects/obj_Fire_Part/obj_Fire_Part.yy",},
     {"name":"spr_Bleeding_Soul_Reco_icon","order":14,"path":"sprites/spr_Bleeding_Soul_Reco_icon/spr_Bleeding_Soul_Reco_icon.yy",},
     {"name":"scr_Shot_Particle_Setup","order":2,"path":"scripts/scr_Shot_Particle_Setup/scr_Shot_Particle_Setup.yy",},
     {"name":"scr_Check_Shot_Ground","order":3,"path":"scripts/scr_Check_Shot_Ground/scr_Check_Shot_Ground.yy",},

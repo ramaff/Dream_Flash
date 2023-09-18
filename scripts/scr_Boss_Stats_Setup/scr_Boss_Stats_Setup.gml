@@ -15,9 +15,6 @@ function scr_Boss_Stats_Setup(_version=1) {
 	scr_Boss_Status_Setup(_version);
 	
 	bossattackspeed = 1;
-	if boost = 1 {
-	    bossattackspeed += 0.5;
-	}
 		
 	boss_height = 0;
 	if _version = 1 {
@@ -249,10 +246,21 @@ function scr_Boss_Stats_Setup(_version=1) {
 			}
 		}
 		
-		if _boss_num = 53 {
+		if _boss_num = 53 and global.currentchapter = 4 {
 			bossmaxhealth = bossmaxhealth * 1.25;	
 			bossmaxhealth2 = bossmaxhealth2 * 1.25;	
 			bossmaxhealth3 = bossmaxhealth3 * 1.25;	
+		}
+		
+		if boost = 1 {
+			//if _version = 1 {
+			//	bossattackspeed += 0.5;
+			//} else {
+				bossattackspeed += 0.75;
+				bossmaxhealth = bossmaxhealth * 1.2;
+				bossmaxhealth2 = bossmaxhealth2 * 1.2;
+				bossmaxhealth3 = bossmaxhealth3 * 1.2;
+			//}
 		}
 	
 		bosshealth = bossmaxhealth;
