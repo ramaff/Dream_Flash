@@ -74,6 +74,8 @@ if active_attack_delay <= 0 and pattern_cooldown <= 0 and pattern_count > 0 {
 	}
 	
 	if active_attack = 2 {
+		
+		scr_Boss_Stretch("Vertical", 1);
 			
 		bullet_sprite = spr_Big_Glowy_Green_Shot
 		bullet_type = obj_Whisper_Strike_Bullet;
@@ -87,6 +89,8 @@ if active_attack_delay <= 0 and pattern_cooldown <= 0 and pattern_count > 0 {
 	}
 	
 	if active_attack = 3 {
+		
+		scr_Boss_Stretch("Vertical", 1);
 			
 		bullet_sprite = spr_Big_Glowy_Shot
 		bullet_type = obj_Whisper_Mine_Bullet;
