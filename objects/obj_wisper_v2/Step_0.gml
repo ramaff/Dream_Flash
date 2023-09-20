@@ -79,13 +79,24 @@ if active_attack_delay <= 0 and pattern_cooldown <= 0 and pattern_count > 0 {
 			
 		bullet_sprite = spr_Big_Glowy_Green_Shot
 		bullet_type = obj_Whisper_Strike_Bullet;
+		bullet_size = 0.9;
 		
-		repeat(3) {
-			bullet_direction = scr_Boss_Bullet_Direction_Formula(scr_Soul_Point(), 360)
-			bullet_speed = bossbulletspeed * (0.65 + random(0.575));
+		bullet_direction = scr_Boss_Bullet_Direction_Formula(scr_Soul_Point(), 90)
+		bullet_speed = bossbulletspeed * (0.85 + random(0.175));
+		bullet_count = 3;
+		bullet_spread = 120;
+		
+		if champ = 1 {
+			bullet_type = obj_Air_Mine_Bullet;
+			bullet_sprite = spr_Big_Glowy_Blue_Shot;
 			
-			scr_Boss_Shoot();
+			bullet_count = 2;
+			bullet_spread = 180;
+			
+			bullet_speed = bossbulletspeed * (0.55 + random(0.075));
 		}
+		
+		scr_Boss_Shoot();
 	}
 	
 	if active_attack = 3 {
@@ -94,13 +105,20 @@ if active_attack_delay <= 0 and pattern_cooldown <= 0 and pattern_count > 0 {
 			
 		bullet_sprite = spr_Big_Glowy_Shot
 		bullet_type = obj_Whisper_Mine_Bullet;
+		bullet_size = 0.9;
 		
-		repeat(2) {
-			bullet_direction = scr_Boss_Bullet_Direction_Formula(scr_Soul_Point(), 360)
-			bullet_speed = bossbulletspeed * (0.35 + random(0.375));
-			
-			scr_Boss_Shoot();
+		bullet_direction = scr_Boss_Bullet_Direction_Formula(scr_Soul_Point(), 360)
+		bullet_speed = bossbulletspeed * (0.55 + random(0.075));
+		bullet_count = 2;
+		bullet_spread = 180;
+		
+		if champ = 2 {
+			bullet_type = obj_Burst_Strike_Bullet;
+			bullet_sprite = spr_Big_Glowy_Purple_Shot;
+			bullet_speed = bossbulletspeed * (0.8 + random(0.135));
 		}
+			
+		scr_Boss_Shoot();
 	}
 	
 	// Maybe I should put this into a script

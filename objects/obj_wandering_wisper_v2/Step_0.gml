@@ -21,7 +21,7 @@ if _dist < 300 {
 	//direction = scr_Soul_Point() + scr_Wave(-180, 180, 4, 0);
 }
 
-speed = bossmovespeed
+speed = bossmovespeed * 0.6
 
 //////////////////////////////////////////////////////////////////////////////////////////
 /////////////// Active Attack Prep
@@ -32,7 +32,11 @@ if active_attack_delay <= 0 and active_attack_cooldown <= 0 and active_attack_du
 	// Pick a random attack to do
 	active_attack = choose(1);
 	
-    if active_attack = 1 {
+	if floor(champ) = 2 {
+		active_attack = 2;	
+	}
+	
+    if active_attack = 1 || active_attack = 2 {
 		// Setup how many attacks per boss move, delay, etc
 		scr_Boss_Attack_Time_Setup_v2(1, 50, 1, 180, 60, 10);
 		
@@ -69,6 +73,23 @@ if active_attack_delay <= 0 and pattern_cooldown <= 0 and pattern_count > 0 {
 		bullet_speed += bossbulletspeed * 0.35;
 		
         scr_Boss_Shoot();
+	}
+	
+	if active_attack = 2 {
+		
+		scr_Boss_Stretch("Vertical", 1);
+		
+		bullet_direction = scr_Boss_Bullet_Direction_Formula(scr_Soul_Point(), 30)
+		bullet_size = 0.9;
+	
+		bullet_count = 1;
+
+		bullet_speed = bossbulletspeed * (0.8 + random(0.125));
+		bullet_sprite = spr_Big_Glowy_Purple_Shot;
+		bullet_type = obj_Burst_Strike_Bullet;
+		
+		scr_Soul_Shoot();
+	
 	}
 	
 	// Maybe I should put this into a script

@@ -63,7 +63,7 @@ if active_attack_delay <= 0 and active_attack_cooldown <= 0 and active_attack_du
 	// Hammer Attack
     if active_attack = 1 {
 		// Setup how many attacks per boss move, delay, etc
-		scr_Boss_Attack_Time_Setup_v2(6, 60, 20, 120, 30, -10);
+		scr_Boss_Attack_Time_Setup_v2(6, 60, 20, 120, 30, -20);
 		
 		// Can set up the initial pattern direction
 		// patternDirection = scr_Soul_Point();

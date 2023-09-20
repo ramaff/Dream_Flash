@@ -10,7 +10,7 @@ scr_Boss_Height_Bob(30, 1, 0);
 scr_Boss_Wobble("Horizontal", 0.4, 1, 0);
 
 direction = scr_Soul_Point() + scr_Wave(-45, 45, 4, 0);
-speed = bossmovespeed
+speed = bossmovespeed;
 
 //////////////////////////////////////////////////////////////////////////////////////////
 /////////////// Active Attack Prep
@@ -23,7 +23,7 @@ if active_attack_delay <= 0 and active_attack_cooldown <= 0 and active_attack_du
 	
     if active_attack = 1 {
 		// Setup how many attacks per boss move, delay, etc
-		scr_Boss_Attack_Time_Setup_v2(1, 50, 1, 120, 30, 10);
+		scr_Boss_Attack_Time_Setup_v2(1, 50, 1, 105, 30, 10);
 		
 		// Can set up the initial pattern direction
 		// patternDirection = scr_Soul_Point();
@@ -46,10 +46,21 @@ if active_attack_delay <= 0 and pattern_cooldown <= 0 and pattern_count > 0 {
 		bullet_direction = scr_Boss_Bullet_Direction_Formula(scr_Soul_Point(), 30)
 		
 		bullet_sprite = spr_Glowy_Green_Shot;
-		bullet_speed = bossbulletspeed * 2;
+		bullet_speed = bossbulletspeed * 2.2;
 		
 		bullet_count = 5;
-		bullet_spread = 15;
+		bullet_spread = 20;
+		
+		if floor(champ) = 1 {
+			
+			bullet_sprite = spr_Glowy_Blue_Shot;
+			bullet_speed = bossbulletspeed * 1.9;
+			
+			repeat(2) {
+				scr_Boss_Shoot();
+				bullet_speed += bossbulletspeed * 0.5;
+			}
+		}
 		
 		scr_Boss_Shoot();
 	
