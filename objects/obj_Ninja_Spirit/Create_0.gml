@@ -12,4 +12,4 @@ bossattack = 1;
 //image_speed = 0;
 image_index = 0;
 
-scr_Boss_Size_Setup(0.5);
+scr_Boss_Size_Setup(0.45);

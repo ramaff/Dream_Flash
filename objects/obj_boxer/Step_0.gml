@@ -198,7 +198,7 @@ if active_attack = 1 {
 	var _hold_frame = 2;
 	scr_Boss_Attack_Sprite_v2(spr_boxer_hammers, _hold_frame, 3, 6, 20);
 	if image_index = floor(_hold_frame) {
-		scr_Boss_Wobble("Horizontal", 2, 0.4, 0)
+		scr_Boss_Wobble("Horizontal", 4, 0.4, 0)
 	}
 } else if active_attack = 2 {
 	var _hold_frame = 2;

@@ -44,7 +44,10 @@ function scr_Soul_Shot_Boss_Hit() {
 		
 			if shotpierce = 1 and shotimpacttype = 2 {
 				scr_Screen_Shake(20, 14);
-				scr_Screen_Flash(7);
+				//scr_Screen_Flash(7);
+				scr_Disk_Effect(20, 1, c_white)
+				scr_Disk_Effect(25, 1.25, c_white)
+				scr_Disk_Effect(30, 1.5, c_white)
 		
 				with (obj_Boss_Parent) {
 				    dmg = other.shotimpactpower;

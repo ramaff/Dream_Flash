@@ -7,7 +7,7 @@ boss_value = 57;
 scr_Boss_Stats_Setup(2);
 
 // Required, usually set to 0.5
-scr_Boss_Size_Setup(0.5);
+scr_Boss_Size_Setup(0.475);
 
 // If boss is visually 'floating' setup boss height
 // Needed for bobbing/boss shadows

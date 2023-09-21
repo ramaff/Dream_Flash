@@ -11,5 +11,7 @@ if bulletbounceY + bounce_speed < 0 {
 	bounce_speed = bounce_speed * -0.7;
 }
 
-bulletspeed = bulletspeed * 0.99;
-speed = bulletspeed;
+if alarm[0] mod 2 = 0 {
+	bulletspeed = bulletspeed * 0.99;
+	speed = bulletspeed;
+}

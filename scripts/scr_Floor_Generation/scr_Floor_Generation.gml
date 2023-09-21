@@ -156,11 +156,11 @@ function scr_Floor_Generation() {
 	        }
 	        if i = global.spiritRoom {
 	            Flash[i,25] = scr_Spirit_Choose("Good");
-	            Flash[i,3] += 128;
+	            //Flash[i,3] += 128;
 	        }
 	        if i = global.evilSpiritRoom {
 	            Flash[i,26] = scr_Spirit_Choose("Bad");
-	            Flash[i,3] += 128;
+	            //Flash[i,3] += 128;
 	        }
 	    }
 	    //Flash[i,3] = 1216;

@@ -50,6 +50,12 @@ if active_attack = 2 {
 		
 		shadow_positions[_i].dir = edge_direction;
 		
+		if (active_attack_delay - _i) mod 3 = 0 {
+			var _xx = shadow_positions[_i].xx - x;
+			var _yy = shadow_positions[_i].yy - y;
+			scr_Particle_Burst(obj_Fire_Part, spr_Soul_Big_Bit, c_black, c_black, 1, 2 + random(4), random(360), 0, 120, 0.4 + random(0.2), 20 + random(20), false, _xx, _yy)	
+		}
+		
 	}
 	
 	x = shadow_positions[0].xx;
@@ -78,7 +84,7 @@ if active_attack_delay <= 0 and active_attack_cooldown <= 0 and active_attack_du
 		active_attack = choose(5, 2);	
 	}
 	if champ = 2 {
-		active_attack = choose(6, 2);	
+		active_attack = choose(6, 2);
 	}
 	if currentphase == 2 {
 		active_attack = 3;	
@@ -158,6 +164,21 @@ if active_attack_delay <= 0 and active_attack_cooldown <= 0 and active_attack_du
     }
 }
 
+if active_attack = 6 {
+
+	var _clone_count = 3
+	var _i = 0
+	for(_i = 0; _i < _clone_count; _i++) {
+		if active_attack_delay mod 3 = 0 and active_attack_delay <= 20 and active_attack_duration > 0 {
+			var _xx = shadow_positions[_i].xx - x;
+			var _yy = shadow_positions[_i].yy - y;
+			scr_Particle_Burst(obj_Fire_Part, spr_Soul_Big_Bit, c_black, c_black, 1, 2 + random(4), random(360), 0, 160, 0.4 + random(0.2), 40 + random(20), false, _xx, _yy)	
+		}
+	}
+
+}
+	
+
 //////////////////////////////////////////////////////////////////////////////////////////
 /// Active Attack Pattern Code
 //////////////////////////////////////////////////////////////////////////////////////////    
@@ -215,31 +236,48 @@ if active_attack_delay <= 0 and pattern_cooldown <= 0 and pattern_count > 0 {
 			bullet_spread = 20
 		}
 		if champ = 2 {
-			bullet_count = 2
-			bullet_spread = 20
-			bullet_speed = bossbulletspeed * 1.6;
+			//bullet_count = 2
+			bullet_speed = bossbulletspeed * 1.8;
 		}
 		
 		scr_Boss_Shoot();
 		
 		if champ != 1 {
-			boss_xoffset = shadow_positions[1].xx - x;
-			boss_yoffset = shadow_positions[1].yy - y
-			bullet_direction = scr_Boss_Bullet_Direction_Formula(scr_Soul_Point(boss_xoffset + x, boss_yoffset + y), 15)
+			
+			var _i = 1
+			repeat(3) {
+				
+				boss_xoffset = shadow_positions[_i].xx - x;
+				boss_yoffset = shadow_positions[_i].yy - y
+				bullet_direction = scr_Boss_Bullet_Direction_Formula(scr_Soul_Point(boss_xoffset + x, boss_yoffset + y), 5)
+				
+				if champ = 2 {
+					bullet_direction -= 12.5;	
+				}
 		
-			scr_Boss_Shoot();
+				scr_Boss_Shoot();
 		
-			boss_xoffset = shadow_positions[2].xx - x;
-			boss_yoffset = shadow_positions[2].yy - y
-			bullet_direction = scr_Boss_Bullet_Direction_Formula(scr_Soul_Point(boss_xoffset + x, boss_yoffset + y), 15)
+				_i++;
+			}
+		}
 		
-			scr_Boss_Shoot();
+		if champ = 2 {
+			
+			bullet_speed = bossbulletspeed * 1.2;
+			
+			var _i = 0
+			repeat(4) {
+				
+				boss_xoffset = shadow_positions[_i].xx - x;
+				boss_yoffset = shadow_positions[_i].yy - y
+				bullet_direction = scr_Boss_Bullet_Direction_Formula(scr_Soul_Point(boss_xoffset + x, boss_yoffset + y), 5)
 		
-			boss_xoffset = shadow_positions[3].xx - x;
-			boss_yoffset = shadow_positions[3].yy - y
-			bullet_direction = scr_Boss_Bullet_Direction_Formula(scr_Soul_Point(boss_xoffset + x, boss_yoffset + y), 15)
+				bullet_direction += 12.5;
 		
-			scr_Boss_Shoot();
+				scr_Boss_Shoot();
+		
+				_i++;
+			}
 		}
 	}
 	
@@ -397,7 +435,7 @@ if active_attack = 1 {
 		}
 		if image_index = 7.2 {
 			if active_attack != 6 {
-				scr_Boss_Teleport_From_Boss(250, -64)
+				scr_Boss_Teleport_From_Boss(330, -64)
 			} else {
 				for(var _i = 0; _i < 3; _i++) {
 					var _pos = scr_Boss_Teleport_v2_Return(-256)
@@ -413,9 +451,12 @@ if active_attack = 1 {
 				y = shadow_positions[0].yy;
 	
 				direction = shadow_positions[0].dir
+				
+				image_alpha = 0
 			}
 		}
 	} else {
+		image_alpha = 1
 		var _hold_frame = 2;
 		if active_attack != 6 {
 			scr_Boss_Attack_Sprite_v2(spr_ninja_spirit_v2_throw_barrage, _hold_frame, 3, 5, 30, 0);
@@ -451,7 +492,7 @@ if active_attack = 1 {
 	sprite_index = spr_ninja_spirit_v2
 }
 
-if active_attack != 2 || (point_direction(x,y,shadow_positions[0].xx, shadow_positions[0].yy) < 20) {
+if active_attack != 2 || active_attack_delay <= 0 {
 	// So that the boss hurts soul on collision
 	// Smaller than the actual boss hitbox
 	scr_Boss_Soul_Hitbox(sprite_index);

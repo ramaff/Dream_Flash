@@ -24,7 +24,7 @@ function scr_Boss_Teleport_From_Boss(min_dist_from_soul = 150, _edge_add = 256) 
 	    }
 	}
 
-	with obj_Boss_Parent {
+	with obj_Boss_Parent if away = 1 {
 	    if distance_to_point(other.potx, other.poty) > 128 {
 	        other.away = 1;
 	    } else {
@@ -39,7 +39,7 @@ function scr_Boss_Teleport_From_Boss(min_dist_from_soul = 150, _edge_add = 256) 
 	}
 
 	if inside = 0 || away = 0 || port = 0 {
-	    scr_Boss_Teleport_From_Boss(min_dist_from_soul);
+	    scr_Boss_Teleport_From_Boss(min_dist_from_soul, _edge_add);
 	} else {
 	    x = potx;
 	    y = poty;
