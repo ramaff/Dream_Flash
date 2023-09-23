@@ -757,8 +757,8 @@ function scr_Boss_Choose(roomNum, exclude, difficultyAdd = 0) {
 	var repeatBoss = 0;
 	if i > roomNum {
 		for(j = 1; j < roomNum; j++) {
-			if bosstype = Floor_Layout_Control.Flash[j,21] {
-				if global.champ = Floor_Layout_Control.Flash[j,22] {
+			if bosstype = global.floor[j,21] {
+				if global.champ = global.floor[j,22] {
 					repeatBoss = 1;	
 				}
 			}

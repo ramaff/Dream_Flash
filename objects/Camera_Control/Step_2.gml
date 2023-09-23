@@ -7,7 +7,7 @@ var potency = min(2, tote_bosses)
 var fac = (1 / tote_bosses) * potency
 
 if instance_exists(Floor_Layout_Control) and global.layerdeep < 1 {
-	var rsize = Floor_Layout_Control.Flash[global.currentroom, 3];
+	var rsize = global.floor[global.currentroom, 3];
 	var ideal_zoom = sqrt(1024 / rsize);
 	if ideal_zoom < 0.8 {
 		ideal_zoom = 0.8;

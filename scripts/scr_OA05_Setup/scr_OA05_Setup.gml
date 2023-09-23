@@ -8,7 +8,7 @@ function scr_OA05_Setup(){
 	//global.OA5rooms[12] = 1;
 	if global.OA[5] > 0 {
 		for(var i = 0; i <= 39; i++) {
-			var rm = Floor_Layout_Control.Flash[i,0]
+			var rm = global.floor[i,0]
 			if rm = "Misc Field" || rm = "Chamber" {
 				global.OA5rooms[i] = [];
 				var oacount = 1 + global.OA[5];

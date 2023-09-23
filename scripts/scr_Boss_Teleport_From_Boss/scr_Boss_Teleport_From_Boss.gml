@@ -24,12 +24,14 @@ function scr_Boss_Teleport_From_Boss(min_dist_from_soul = 150, _edge_add = 256) 
 	    }
 	}
 
-	with obj_Boss_Parent if away = 1 {
-	    if distance_to_point(other.potx, other.poty) > 128 {
-	        other.away = 1;
-	    } else {
-	        other.away = 0;
-	    }
+	if away = 1 {
+		with obj_Boss_Parent {
+		    if distance_to_point(other.potx, other.poty) > 128 {
+		        other.away = 1;
+		    } else {
+		        other.away = 0;
+		    }
+		}
 	}
 
 	if distance_to_point(other.potx, other.poty) > 100 {

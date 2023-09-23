@@ -148,7 +148,7 @@ if !scr_Room_Leavable() {
 		draw_sprite(spr_Mega_Map,0,winx / 2,winy / 2)	
 	}
 
-    rType = Floor_Layout_Control.Flash[global.currentroom,0];
+    rType = global.floor[global.currentroom,0];
     
     if rType = "Shop" {
         if global.currentchapter = 1 {

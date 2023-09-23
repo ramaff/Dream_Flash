@@ -48,7 +48,7 @@ if instance_number(obj_Conga_Line) <= total_num {
 			
 			champ = other.champ;
 			boost = other.boost;
-			difficulty = Floor_Layout_Control.Flash[global.currentroom,24];
+			difficulty = global.floor[global.currentroom,24];
 		}
 	}
 }

@@ -1,5 +1,5 @@
 if weapon = 0 {
-    Floor_Layout_Control.Flash[global.currentroom,itemData] = 0;
+    global.floor[global.currentroom,itemData] = 0;
 }
 
 global.orbit[itemOrbit] += 1;

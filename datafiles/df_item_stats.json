@@ -1417,10 +1417,17 @@
         "recollectionDescription": "Occasionally your shots have flames applied to them. These shots do more damage, and can pierce through enemies."
     },
     "P08": {
-        "recollectionString": "Optimistic",
+        "recollectionString": "Trailing Off",
         "recollectionSprite": "spr_Optimistic_Art",
-        "recollectionExtraStats": "+Bullet Conversion",
-        "recollectionDescription": "You can now occasionally turn things into your favor. Converts nearby bullets into wisps that seek out the enemy and deal damage."
+        "recollectionExtraStats": "+Shot Trail",
+        "recollectionDescription": "Constantly create shots that passively float around for a while."
+    },
+
+    "Q01": {
+        "recollectionString": "No Brainer",
+        "recollectionSprite": "spr_Frightened_Memory_Art",
+        "recollectionExtraStats": "+Free Thoughts",
+        "recollectionDescription": "Occasionally shot free extra shots that automatically aim at the nearest enemy. Extra damage is a no brainer."
     },
 
     "R01": {
@@ -1615,10 +1622,10 @@
         "recollectionDescription": "Producing shots uses up much less essence. Shots will wander around after a set distance in random directions."
     },
     "V09": {
-        "recollectionString": "Spitballing",
+        "recollectionString": "Self Awareness",
         "recollectionSprite": "spr_Spit_Balling_Art",
-        "recollectionExtraStats": "+Lobbing Spray Shots",
-        "recollectionDescription": "Gives the soul a peculiar short ranged spread lobbing attack pattern. Shoots 3x as many shots but each one deals 50% damage"
+        "recollectionExtraStats": "+Teleport Evasion +2 Assurance +6 Paranoia",
+        "recollectionDescription": "Self Awareness allows the soul to automatically teleport away to a nearby location whenever they would have taken damage."
     },
 
 

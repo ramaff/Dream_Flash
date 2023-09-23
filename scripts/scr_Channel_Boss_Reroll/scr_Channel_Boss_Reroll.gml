@@ -9,10 +9,10 @@ function scr_Channel_Boss_Reroll(){
 	
 	if bosstype != noone {
 		for (i = 0; i <= global.maxRooms + global.extraRooms; i++) {
-			if Floor_Layout_Control.Flash[i,0] = "State" {
-				Floor_Layout_Control.Flash[i,21] = bosstype; // Boss Type or Item Type
-			    Floor_Layout_Control.Flash[i,22] = 0; // Boss Champ or Second Item
-			    Floor_Layout_Control.Flash[i,23] = 0; // Boss Boost or Third Item	
+			if global.floor[i,0] = "State" {
+				global.floor[i,21] = bosstype; // Boss Type or Item Type
+			    global.floor[i,22] = 0; // Boss Champ or Second Item
+			    global.floor[i,23] = 0; // Boss Boost or Third Item	
 			}
 		}
 	}

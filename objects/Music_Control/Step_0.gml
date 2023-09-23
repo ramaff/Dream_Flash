@@ -1,8 +1,6 @@
-alarm[0] = 1;
-
 roomType = "Title"
 if instance_exists(Floor_Layout_Control) {
-	roomType = Floor_Layout_Control.Flash[global.currentroom,0];
+	roomType = global.floor[global.currentroom,0];
 }
 //musicType = Flash_Theme;
 

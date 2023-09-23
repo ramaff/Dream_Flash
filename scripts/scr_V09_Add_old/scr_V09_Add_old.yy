@@ -1,7 +1,7 @@
 {
   "resourceType": "GMScript",
   "resourceVersion": "1.0",
-  "name": "scr_V09_Add",
+  "name": "scr_V09_Add_old",
   "isCompatibility": false,
   "isDnD": false,
   "parent": {

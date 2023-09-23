@@ -1,4 +1,4 @@
-function scr_V09_Add() {
+function scr_V09_Add_old() {
 	// Location: Extra Shot Stats
 
 	if global.V[9] >= 1 {

@@ -139,7 +139,7 @@ if currentphase = finalphase and split = 0 {
         global.bosscount += 1;
 		scr_Boss_Stats_Setup(2);
 		scr_Boss_Height_Setup(80);
-		difficulty = Floor_Layout_Control.Flash[global.currentroom,24] / 2;
+		difficulty = global.floor[global.currentroom,24] / 2;
     }
 	with instance_create(x,y, obj_relentless_wisper_v2) {
 		difficulty = other.difficulty / 2;
@@ -148,7 +148,7 @@ if currentphase = finalphase and split = 0 {
         global.bosscount += 1;
 		scr_Boss_Stats_Setup(2);
 		scr_Boss_Height_Setup(80);
-		difficulty = Floor_Layout_Control.Flash[global.currentroom,24] / 2;
+		difficulty = global.floor[global.currentroom,24] / 2;
     }
 	difficulty = 0;
 	instance_destroy();

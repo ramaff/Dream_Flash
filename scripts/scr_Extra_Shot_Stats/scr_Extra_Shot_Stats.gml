@@ -265,7 +265,7 @@ function scr_Extra_Shot_Stats() {
 	
 		//scr_V06();
 		scr_V08();
-		scr_V09();
+		scr_V09_old();
 	
 		scr_P06();
 		scr_P07();

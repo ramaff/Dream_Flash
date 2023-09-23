@@ -35,43 +35,43 @@ function scr_Load_Run() {
 	    }
 	    for(i = 0; i <= 39; i++) {
 	        //for(j = 0; j <= 39; j++) {
-	        //Floor_Layout_Control.Flash[i,j] = ini_read_string("Run", "floor" + string(i) + "-" + string(j),0);
+	        //global.floor[i,j] = ini_read_string("Run", "floor" + string(i) + "-" + string(j),0);
 	        //}
 	        //}
-	        Floor_Layout_Control.Flash[i,0] = ini_read_string("Run", "floor" + string(i) + "-" + string(0),0);
-	        Floor_Layout_Control.Flash[i,1] = ini_read_real("Run", "floor" + string(i) + "-" + string(1),0);
-	        Floor_Layout_Control.Flash[i,2] = ini_read_real("Run", "floor" + string(i) + "-" + string(2),0);
-	        Floor_Layout_Control.Flash[i,3] = ini_read_real("Run", "floor" + string(i) + "-" + string(3),0);
-	        Floor_Layout_Control.Flash[i,4] = asset_get_index(ini_read_string("Run", "floor" + string(i) + "-" + string(4),0));
-	        Floor_Layout_Control.Flash[i,5] = ini_read_real("Run", "floor" + string(i) + "-" + string(5),0);
-	        Floor_Layout_Control.Flash[i,6] = ini_read_real("Run", "floor" + string(i) + "-" + string(6),0);
-	        Floor_Layout_Control.Flash[i,7] = ini_read_string("Run", "floor" + string(i) + "-" + string(7),0);
-	        Floor_Layout_Control.Flash[i,8] = ini_read_string("Run", "floor" + string(i) + "-" + string(8),0);
-	        Floor_Layout_Control.Flash[i,9] = ini_read_string("Run", "floor" + string(i) + "-" + string(9),0);
-	        Floor_Layout_Control.Flash[i,10] = ini_read_string("Run", "floor" + string(i) + "-" + string(10),0);
-	        Floor_Layout_Control.Flash[i,11] = ini_read_string("Run", "floor" + string(i) + "-" + string(11),0);
-	        Floor_Layout_Control.Flash[i,12] = ini_read_string("Run", "floor" + string(i) + "-" + string(12),0);
-	        Floor_Layout_Control.Flash[i,13] = ini_read_string("Run", "floor" + string(i) + "-" + string(13),0);
-	        Floor_Layout_Control.Flash[i,14] = ini_read_string("Run", "floor" + string(i) + "-" + string(14),0);
-	        Floor_Layout_Control.Flash[i,15] = ini_read_string("Run", "floor" + string(i) + "-" + string(15),0);
-	        Floor_Layout_Control.Flash[i,16] = ini_read_string("Run", "floor" + string(i) + "-" + string(16),0);
-	        Floor_Layout_Control.Flash[i,17] = ini_read_string("Run", "floor" + string(i) + "-" + string(17),0);
-	        Floor_Layout_Control.Flash[i,18] = ini_read_string("Run", "floor" + string(i) + "-" + string(18),0);
-	        Floor_Layout_Control.Flash[i,19] = ini_read_string("Run", "floor" + string(i) + "-" + string(19),0);
-	        Floor_Layout_Control.Flash[i,20] = ini_read_string("Run", "floor" + string(i) + "-" + string(20),0);
-	        Floor_Layout_Control.Flash[i,21] = asset_get_index(ini_read_string("Run", "floor" + string(i) + "-" + string(21),0));
-	        Floor_Layout_Control.Flash[i,22] = ini_read_real("Run", "floor" + string(i) + "-" + string(22),0);
-	        Floor_Layout_Control.Flash[i,23] = ini_read_real("Run", "floor" + string(i) + "-" + string(23),0);
-	        Floor_Layout_Control.Flash[i,24] = ini_read_real("Run", "floor" + string(i) + "-" + string(24),0);
-	        Floor_Layout_Control.Flash[i,25] = asset_get_index(ini_read_string("Run", "floor" + string(i) + "-" + string(25),0));
-	        Floor_Layout_Control.Flash[i,26] = asset_get_index(ini_read_string("Run", "floor" + string(i) + "-" + string(26),0));
-			Floor_Layout_Control.Flash[i,27] = ini_read_real("Run", "floor" + string(i) + "-" + string(27),0);
-			Floor_Layout_Control.Flash[i,28] = asset_get_index(ini_read_string("Run", "floor" + string(i) + "-" + string(28),0));
-			Floor_Layout_Control.Flash[i,29] = ini_read_real("Run", "floor" + string(i) + "-" + string(29),0);
-	        Floor_Layout_Control.Flash[i,30] = ini_read_real("Run", "floor" + string(i) + "-" + string(30),0);
-			Floor_Layout_Control.Flash[i,31] = asset_get_index(ini_read_string("Run", "floor" + string(i) + "-" + string(31),0));
-			Floor_Layout_Control.Flash[i,32] = ini_read_real("Run", "floor" + string(i) + "-" + string(32),0);
-	        Floor_Layout_Control.Flash[i,33] = ini_read_real("Run", "floor" + string(i) + "-" + string(33),0);
+	        global.floor[i,0] = ini_read_string("Run", "floor" + string(i) + "-" + string(0),0);
+	        global.floor[i,1] = ini_read_real("Run", "floor" + string(i) + "-" + string(1),0);
+	        global.floor[i,2] = ini_read_real("Run", "floor" + string(i) + "-" + string(2),0);
+	        global.floor[i,3] = ini_read_real("Run", "floor" + string(i) + "-" + string(3),0);
+	        global.floor[i,4] = asset_get_index(ini_read_string("Run", "floor" + string(i) + "-" + string(4),0));
+	        global.floor[i,5] = ini_read_real("Run", "floor" + string(i) + "-" + string(5),0);
+	        global.floor[i,6] = ini_read_real("Run", "floor" + string(i) + "-" + string(6),0);
+	        global.floor[i,7] = ini_read_string("Run", "floor" + string(i) + "-" + string(7),0);
+	        global.floor[i,8] = ini_read_string("Run", "floor" + string(i) + "-" + string(8),0);
+	        global.floor[i,9] = ini_read_string("Run", "floor" + string(i) + "-" + string(9),0);
+	        global.floor[i,10] = ini_read_string("Run", "floor" + string(i) + "-" + string(10),0);
+	        global.floor[i,11] = ini_read_string("Run", "floor" + string(i) + "-" + string(11),0);
+	        global.floor[i,12] = ini_read_string("Run", "floor" + string(i) + "-" + string(12),0);
+	        global.floor[i,13] = ini_read_string("Run", "floor" + string(i) + "-" + string(13),0);
+	        global.floor[i,14] = ini_read_string("Run", "floor" + string(i) + "-" + string(14),0);
+	        global.floor[i,15] = ini_read_string("Run", "floor" + string(i) + "-" + string(15),0);
+	        global.floor[i,16] = ini_read_string("Run", "floor" + string(i) + "-" + string(16),0);
+	        global.floor[i,17] = ini_read_string("Run", "floor" + string(i) + "-" + string(17),0);
+	        global.floor[i,18] = ini_read_string("Run", "floor" + string(i) + "-" + string(18),0);
+	        global.floor[i,19] = ini_read_string("Run", "floor" + string(i) + "-" + string(19),0);
+	        global.floor[i,20] = ini_read_string("Run", "floor" + string(i) + "-" + string(20),0);
+	        global.floor[i,21] = asset_get_index(ini_read_string("Run", "floor" + string(i) + "-" + string(21),0));
+	        global.floor[i,22] = ini_read_real("Run", "floor" + string(i) + "-" + string(22),0);
+	        global.floor[i,23] = ini_read_real("Run", "floor" + string(i) + "-" + string(23),0);
+	        global.floor[i,24] = ini_read_real("Run", "floor" + string(i) + "-" + string(24),0);
+	        global.floor[i,25] = asset_get_index(ini_read_string("Run", "floor" + string(i) + "-" + string(25),0));
+	        global.floor[i,26] = asset_get_index(ini_read_string("Run", "floor" + string(i) + "-" + string(26),0));
+			global.floor[i,27] = ini_read_real("Run", "floor" + string(i) + "-" + string(27),0);
+			global.floor[i,28] = asset_get_index(ini_read_string("Run", "floor" + string(i) + "-" + string(28),0));
+			global.floor[i,29] = ini_read_real("Run", "floor" + string(i) + "-" + string(29),0);
+	        global.floor[i,30] = ini_read_real("Run", "floor" + string(i) + "-" + string(30),0);
+			global.floor[i,31] = asset_get_index(ini_read_string("Run", "floor" + string(i) + "-" + string(31),0));
+			global.floor[i,32] = ini_read_real("Run", "floor" + string(i) + "-" + string(32),0);
+	        global.floor[i,33] = ini_read_real("Run", "floor" + string(i) + "-" + string(33),0);
 	    }
     
 	    global.currentchapter = ini_read_real("Run","currentchapter",1);

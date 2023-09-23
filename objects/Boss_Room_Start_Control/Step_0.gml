@@ -1,7 +1,7 @@
 if ((global.bosscount <= 0) and (global.spiritRoom != global.currentroom) and (global.evilSpiritRoom != global.currentroom)) and instance_number(obj_Boss_Parent) = 0 {
     
     scr_Room_End();
-    var roomType = Floor_Layout_Control.Flash[global.currentroom,0];
+    var roomType = global.floor[global.currentroom,0];
 	
     if fieldSpawn = 0 {
 		
@@ -114,12 +114,12 @@ if (chealth < MThealth / 4) {
 }
 
 if global.spiritRoom = global.currentroom and (global.bosscount <= 0) {
-    boss = Floor_Layout_Control.Flash[global.currentroom,25];
+    boss = global.floor[global.currentroom,25];
     scr_Spirit_Summon(boss);
     global.spiritRoom = 0;
 }
 if global.evilSpiritRoom = global.currentroom and global.bosscount <= 0 {
-    boss = Floor_Layout_Control.Flash[global.currentroom,26];
+    boss = global.floor[global.currentroom,26];
     scr_Spirit_Summon(boss);
     global.evilSpiritRoom = 0;
 }

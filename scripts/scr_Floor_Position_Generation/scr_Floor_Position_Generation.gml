@@ -12,8 +12,8 @@ function scr_Floor_Position_Generation() {
 		/*} else {
 			scr_Extra_Room_Position();
 		}*/
-	    Flash[i,1] = nextRoomX;
-	    Flash[i,2] = nextRoomY;
+	    global.floor[i,1] = nextRoomX;
+	    global.floor[i,2] = nextRoomY;
 	    if startOver = 1 {
 	        break;
 	    }
@@ -28,8 +28,8 @@ function scr_Floor_Position_Generation() {
 			//show_debug_message("extra room attempt")
 		    roomAttempt = 0;
 		    scr_Extra_Room_Position();
-		    Flash[i,1] = nextRoomX;
-		    Flash[i,2] = nextRoomY;
+		    global.floor[i,1] = nextRoomX;
+		    global.floor[i,2] = nextRoomY;
 			//break;
 		    if startOver = 1 {
 		        break;
@@ -43,9 +43,9 @@ function scr_Floor_Position_Generation() {
 	} else {
 		/*show_debug_message("done O.O")
 		for(i = 0; i <= global.maxRooms; i++) {
-			show_debug_message(Flash[i,0])
-			show_debug_message(Flash[i,1])
-			show_debug_message(Flash[i,2])
+			show_debug_message(global.floor[i,0])
+			show_debug_message(global.floor[i,1])
+			show_debug_message(global.floor[i,2])
 		} */
 	    loading = 0;
 		scr_Floor_Generation();

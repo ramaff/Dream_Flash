@@ -4,7 +4,7 @@ function scr_Mental_Background(){
 	global.backLayer = layer_create(10000000);
 	global.mentalBackground = layer_background_create(global.backLayer, spr_No_BG);
 	
-	var roomBG = Floor_Layout_Control.Flash[global.currentroom,4];
+	var roomBG = global.floor[global.currentroom,4];
 	var bgType = "Flash";
 	
 	if global.currentchapter = 2 {

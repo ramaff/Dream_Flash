@@ -1,8 +1,8 @@
 function scr_Hazard_Form() {
 	var centerX = room_width / 2;
 	var centerY = room_height / 2;
-	var hazNum = Floor_Layout_Control.Flash[global.currentroom,27];
-	var fieldBG = Floor_Layout_Control.Flash[global.currentroom,4];
+	var hazNum = global.floor[global.currentroom,27];
+	var fieldBG = global.floor[global.currentroom,4];
 
 	var roomEdge = (global.roomSizeX / 2) / 64;
 

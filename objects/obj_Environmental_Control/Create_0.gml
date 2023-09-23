@@ -19,7 +19,7 @@ with instance_create(room_width / 2,room_height / 2,obj_LightS) {
     target = obj_Soul_Parent;
 }
 
-instance_create(x,y,obj_light_renderer);
+//instance_create(x,y,obj_light_renderer);
 
 instance_create(room_width / 2, room_height / 2, obj_Flash_Overlay);
 
@@ -27,8 +27,8 @@ scr_Mental_Background();
 
 var h2 = 0;
 
-properSize = Floor_Layout_Control.Flash[global.currentroom,3];
-properBG = Floor_Layout_Control.Flash[global.currentroom,4];
+properSize = global.floor[global.currentroom,3];
+properBG = global.floor[global.currentroom,4];
 
 properTileSet = ts_Flash_Tiles;
 properTileFall = ts_Flash_Fall_Out;
@@ -172,7 +172,7 @@ if properBG = bg_State_Tiles {
 //texture_set_interpolation(false);
 
 var stretchb = 0;
-if Floor_Layout_Control.Flash[global.currentroom,3] > properSize {
+if global.floor[global.currentroom,3] > properSize {
 	stretchb = 1;
 }
 //stretchb = 1;
@@ -342,17 +342,17 @@ if properTileSet = ts_Dream_Tiles {
 	//layer_x(global.backl,(room_width - properSize) / 2);
 	//layer_y(global.backl,(room_height - properSize) / 2);
 } else {
-	//draw_background_part(properBG,0,0,Floor_Layout_Control.Flash[global.currentroom,4],Floor_Layout_Control.Flash[global.currentroom,4],room_width/2 - properSize/2,room_height/2 - properSize/2);
+	//draw_background_part(properBG,0,0,global.floor[global.currentroom,4],global.floor[global.currentroom,4],room_width/2 - properSize/2,room_height/2 - properSize/2);
 	global.backl = layer_create(10000);
 	global.envr = layer_background_create(global.backl, properBG);
 	//global.backt = layer_tilemap_create(global.backl, 0, 0, bg_Flassh_tileset, 16, 32);
 	/*
 	layer_background_visible(global.envr, true);
-	layer_x(global.backl,(room_width - Floor_Layout_Control.Flash[global.currentroom,3]) / 2);
-	layer_y(global.backl,(room_height - Floor_Layout_Control.Flash[global.currentroom,3]) / 2);
+	layer_x(global.backl,(room_width - global.floor[global.currentroom,3]) / 2);
+	layer_y(global.backl,(room_height - global.floor[global.currentroom,3]) / 2);
 	
-	layer_background_xscale(global.envr,Floor_Layout_Control.Flash[global.currentroom,3] / properSize);
-	layer_background_yscale(global.envr,Floor_Layout_Control.Flash[global.currentroom,3] / properSize);
+	layer_background_xscale(global.envr,global.floor[global.currentroom,3] / properSize);
+	layer_background_yscale(global.envr,global.floor[global.currentroom,3] / properSize);
 	
 }
 */

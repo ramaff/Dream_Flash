@@ -28,7 +28,7 @@ global.chaptertime = 0;
 
 for (i = 0; i <= 99; i++) {
 	for (j = 0; j <= 33; j++) {	
-		Flash[i,j] = 0;
+		global.floor[i,j] = 0;
 	}
 }
 
@@ -58,32 +58,32 @@ loading = 1;
 if global.loadrun = 0 || global.doneLoading = 1 {
 
 	for (i = 0; i <= 99; i++) {
-	    Flash[i,0] = "Spawn"; // Room Type
-	    Flash[i,1] = 0; // Map X Position
-	    Flash[i,2] = 0; // Map Y Position
-	    Flash[i,3] = 1024; // Room Size
-	    Flash[i,4] = bg_Flash_Tiles; // Room Background
-	    Flash[i,5] = 0; // Room X Offset
-	    Flash[i,6] = 0; // Room Y Offset
-	    Flash[i,7] = ""; // Boss Type or Item Type
-	    Flash[i,8] = ""; // Boss Champ or Second Item
-	    Flash[i,9] = ""; // Boss Boost or Third Item
+	    global.floor[i,0] = "Spawn"; // Room Type
+	    global.floor[i,1] = 0; // Map X Position
+	    global.floor[i,2] = 0; // Map Y Position
+	    global.floor[i,3] = 1024; // Room Size
+	    global.floor[i,4] = bg_Flash_Tiles; // Room Background
+	    global.floor[i,5] = 0; // Room X Offset
+	    global.floor[i,6] = 0; // Room Y Offset
+	    global.floor[i,7] = ""; // Boss Type or Item Type
+	    global.floor[i,8] = ""; // Boss Champ or Second Item
+	    global.floor[i,9] = ""; // Boss Boost or Third Item
 	    for(j = 10; j <= 39; j++) {
-	        Flash[i,j] = "";
+	        global.floor[i,j] = "";
 	    }
-		Flash[i,21] = obj_Wall_Watcher;
-		Flash[i,22] = 0;
-		Flash[i,23] = 0;
-		Flash[i,24] = 0;
-		Flash[i,25] = obj_Wall_Watcher;
-		Flash[i,26] = obj_Wall_Watcher;
-		Flash[i,27] = 0;
-		Flash[i,28] = obj_Wall_Watcher;
-		Flash[i,29] = 0;
-		Flash[i,30] = 0;
-		Flash[i,31] = obj_Wall_Watcher;
-		Flash[i,32] = 0;
-		Flash[i,33] = 0;
+		global.floor[i,21] = obj_Wall_Watcher;
+		global.floor[i,22] = 0;
+		global.floor[i,23] = 0;
+		global.floor[i,24] = 0;
+		global.floor[i,25] = obj_Wall_Watcher;
+		global.floor[i,26] = obj_Wall_Watcher;
+		global.floor[i,27] = 0;
+		global.floor[i,28] = obj_Wall_Watcher;
+		global.floor[i,29] = 0;
+		global.floor[i,30] = 0;
+		global.floor[i,31] = obj_Wall_Watcher;
+		global.floor[i,32] = 0;
+		global.floor[i,33] = 0;
 	}
 
 	// currRoom = 

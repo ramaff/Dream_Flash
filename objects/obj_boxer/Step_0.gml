@@ -160,15 +160,17 @@ if active_attack_delay <= 0 and pattern_cooldown <= 0 and pattern_count > 0 {
 		boss_yoffset = boss_height;
 	    scr_Just_Shoot();
 		
-		if pattern_count mod 80 = 40 {
-			minion_count = 1;
-		    minion_type = obj_boxless
-		    minion_health = bossmaxhealth / 10;
-			//minion_spawn_animation = spr_pocket_minion_spawn
+		if !scr_Minion_Count(2) {
+			if pattern_count mod 80 = 40 {
+				minion_count = 1;
+			    minion_type = obj_boxless
+			    minion_health = bossmaxhealth / 10;
+				//minion_spawn_animation = spr_pocket_minion_spawn
 		
-			var _pos = scr_Boss_Teleport_v2_Return(-128)
-			minion_yy = boss_height;
-	        scr_Minion_Spawn();
+				var _pos = scr_Boss_Teleport_v2_Return(-128)
+				minion_yy = boss_height;
+		        scr_Minion_Spawn();
+			}
 		}
 		
 		direction += (pattern_count_max / 120) - (pattern_count / 60)
