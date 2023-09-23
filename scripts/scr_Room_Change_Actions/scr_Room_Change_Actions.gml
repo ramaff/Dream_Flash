@@ -2,10 +2,10 @@ function scr_Room_Change_Actions() {
 	scr_Heart_Respawn();
 	//scr_H07();
 
-	global.roomSizeX = Floor_Layout_Control.Flash[global.currentroom,3];
-	global.roomSizeY = Floor_Layout_Control.Flash[global.currentroom,3];
+	global.roomSizeX = global.floor[global.currentroom,3];
+	global.roomSizeY = global.floor[global.currentroom,3];
 
-	roomEnvironment = Floor_Layout_Control.Flash[global.currentroom,4];
+	roomEnvironment = global.floor[global.currentroom,4];
 
 	if roomEnvironment = bg_Deep_Woods_Tiles || roomEnvironment = bg_Cave_Tiles || roomEnvironment = bg_Graveyard_Tiles {
 	    global.roomdarkness = 0.3;
@@ -17,7 +17,7 @@ function scr_Room_Change_Actions() {
 
 	scr_Room_Change_Variables();
 
-	roomType = Floor_Layout_Control.Flash[global.currentroom,0];
+	roomType = global.floor[global.currentroom,0];
 
 	scr_Soul_Stat_Store();
 	

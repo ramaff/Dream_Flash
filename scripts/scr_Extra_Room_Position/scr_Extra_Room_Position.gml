@@ -5,8 +5,8 @@ function scr_Extra_Room_Position() {
 
 	for(z = 8; z < 14; z++) {
 		if z != 1 {
-		currRoomX = Flash[z-1,1];
-		currRoomY = Flash[z-1,2];
+		currRoomX = global.floor[z-1,1];
+		currRoomY = global.floor[z-1,2];
 		} else {
 		currRoomX = 0;
 		currRoomY = 0;
@@ -33,7 +33,7 @@ function scr_Extra_Room_Position() {
 
 		if z >= 8 {
 		    for(j = 0; j < global.maxRooms; j++) {
-		        if (posRoomX = Flash[j,1]) and (posRoomY = Flash[j,2]) {
+		        if (posRoomX = global.floor[j,1]) and (posRoomY = global.floor[j,2]) {
 		            decision = 0;
 		        }
 		    }

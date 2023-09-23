@@ -1,14 +1,12 @@
 // Script assets have changed for v2.3.0 see
 // https://help.yoyogames.com/hc/en-us/articles/360005277377 for more information
-function scr_Minion_Count(){
-	var mCount = instance_number(obj_Minion_Parent);
-    var bCount = instance_number(obj_Main_Boss_Parent);
+function scr_Minion_Count(_threshold = 3){
+	var _m_count = instance_number(obj_Minion_Parent);
+    var _b_count = instance_number(obj_Main_Boss_Parent);
 	
-	var mT = false;
-	
-	if ((mCount - 3) / bCount) >= 3 {
-        mT = true;
+	if ((_m_count - _threshold) / _b_count) >= _threshold {
+        return true;
     }
 	
-	return mT;
+	return false;
 }

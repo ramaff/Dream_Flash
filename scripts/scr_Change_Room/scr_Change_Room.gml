@@ -62,10 +62,10 @@ function scr_Change_Room() {
 	//global.currentroom += 1;
 	if roomGoX != 0 {
 	    for(i = 0; i <= global.maxRooms; i++) {
-	        if Floor_Layout_Control.Flash[global.currentroom,1] = Floor_Layout_Control.Flash[i,1] + roomGoX
-	        if Floor_Layout_Control.Flash[global.currentroom,2] = Floor_Layout_Control.Flash[i,2] {
+	        if global.floor[global.currentroom,1] = global.floor[i,1] + roomGoX
+	        if global.floor[global.currentroom,2] = global.floor[i,2] {
 	            nextRoomX = roomGoX;
-	            nextRoomY = Floor_Layout_Control.Flash[global.currentroom,2];
+	            nextRoomY = global.floor[global.currentroom,2];
 	            nextRoom = i
 	        }
 	    }
@@ -73,10 +73,10 @@ function scr_Change_Room() {
 
 	if roomGoY != 0 {
 	    for(i = 0; i <= global.maxRooms; i++) {
-	        if Floor_Layout_Control.Flash[global.currentroom,1] = Floor_Layout_Control.Flash[i,1]
-	        if Floor_Layout_Control.Flash[global.currentroom,2] = Floor_Layout_Control.Flash[i,2] + roomGoY {
+	        if global.floor[global.currentroom,1] = global.floor[i,1]
+	        if global.floor[global.currentroom,2] = global.floor[i,2] + roomGoY {
 	            nextRoomY = roomGoY;
-	            nextRoomX = Floor_Layout_Control.Flash[global.currentroom,1];
+	            nextRoomX = global.floor[global.currentroom,1];
 	            nextRoom = i
 	        }
 	    }
@@ -85,13 +85,13 @@ function scr_Change_Room() {
 	global.soulSpawnXAdd = -200 * roomGoX + 200 * roomGoY;
 	global.soulSpawnYAdd = -200 * roomGoX - 200 * roomGoY;
 
-	var nextRoomType = Floor_Layout_Control.Flash[nextRoom,0];
+	var nextRoomType = global.floor[nextRoom,0];
 
 	if global.currentroom != nextRoom {
     
 	    if nextRoomType = "Boss" || nextRoomType = "Super Boss" {
 	        room_goto(Medium_Flash_Boss_Room);
-	        //if Floor_Layout_Control.Flash[nextRoom,3] = 1216 {
+	        //if global.floor[nextRoom,3] = 1216 {
 	        //    room_goto(Large_Flash_Boss_Room);
 	        //}
 	        global.currentroom = nextRoom;

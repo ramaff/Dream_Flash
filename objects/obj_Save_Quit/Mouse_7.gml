@@ -5,7 +5,7 @@ if global.totalhearts <= 0 {
 	game_restart();
 }
 
-var rom = Floor_Layout_Control.Flash[global.currentroom,0]
+var rom = global.floor[global.currentroom,0]
 
 if rom != "Boss" and rom != "Super Boss" and rom != "Chamber" and rom != "State" {
     scr_Save();

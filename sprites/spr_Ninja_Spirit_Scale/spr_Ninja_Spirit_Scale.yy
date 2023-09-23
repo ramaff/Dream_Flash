@@ -57,7 +57,7 @@
             {"resourceType":"Keyframe<SpriteFrameKeyframe>","resourceVersion":"1.0","Channels":{"0":{"resourceType":"SpriteFrameKeyframe","resourceVersion":"1.0","Id":{"name":"f8445d74-4dfe-44ab-b1c8-745f23889035","path":"sprites/spr_Ninja_Spirit_Scale/spr_Ninja_Spirit_Scale.yy",},},},"Disabled":false,"id":"43a0ac49-3d50-4d1f-abf9-c9c1dff0cefd","IsCreationKey":false,"Key":0.0,"Length":1.0,"Stretch":false,},
           ],},"modifiers":[],"spriteId":null,"trackColour":0,"tracks":[],"traits":0,},
     ],
-    "visibleRange": {"x":0.0,"y":0.0,},
+    "visibleRange": null,
     "volume": 1.0,
     "xorigin": 160,
     "yorigin": 213,

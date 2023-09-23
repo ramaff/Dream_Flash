@@ -37,6 +37,9 @@ function scr_Default_Attack_Settings() {
 		
 		bullet_charged = false;
 		
+		boss_xoffset = 0
+		boss_yoffset = 0
+		
 	
 		bullet_blend = 0;
 	    bullet_fade = 1;
@@ -79,6 +82,7 @@ function scr_Default_Attack_Settings() {
 	    minion_knockbackforce = bossknockbackforce;
 	    minion_contactdamage = bosscontactdamage;
 		minion_target = other.id;
+		minion_spawn_animation = noone;
 		
 		minion_dir = 0;
 		minion_speed = 0;

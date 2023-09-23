@@ -11,7 +11,7 @@ if surface_exists(surf) {
 	*/
 	
 
-    roomEnvironment = Floor_Layout_Control.Flash[global.currentroom,4];
+    roomEnvironment = global.floor[global.currentroom,4];
     
     global.roomdarkness = -0.05;
 	

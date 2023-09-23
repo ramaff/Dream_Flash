@@ -66,9 +66,9 @@ function scr_Boss_Choose(roomNum, exclude, difficultyAdd = 0) {
 
 	
 	if global.currentchapter = 1 {
-	    bossform = choose(1,3,5,9,12,13,14,16,18,19,20,24,25,37,42,43,44,98);
+	    bossform = choose(1,3,5,9,12,13,14,16,18,19,20,24,25,37,42,43,44,57,98);
 	    if exclude = 1 {
-	        bossform = choose(1,3,5,9,12,14,16,18,19,20,24,25,37,42,43,44,98);
+	        bossform = choose(1,3,5,9,12,14,16,18,19,20,24,25,37,42,43,44,57,98);
 	    }
 		sboss = scr_Chance(34);
 		if sboss = true {
@@ -370,7 +370,7 @@ function scr_Boss_Choose(roomNum, exclude, difficultyAdd = 0) {
 
 	if bossform = 24.1 // Ninja Spirit
 	{
-	    bosstype = obj_Ninja_Spirit;
+	    bosstype = obj_ninja_spirit_v2;
 	    difficulty = 2;
 	    global.champ = 0 + irandom(2);
 		/*
@@ -385,7 +385,7 @@ function scr_Boss_Choose(roomNum, exclude, difficultyAdd = 0) {
 
 	if bossform = 25.1 // Wisper
 	{
-	    bosstype = obj_Wisper;
+	    bosstype = obj_wisper_v2;
 	    difficulty = 3;
 		global.champ = 0 + irandom(2);
 	    //global.champ = 2;
@@ -499,7 +499,7 @@ function scr_Boss_Choose(roomNum, exclude, difficultyAdd = 0) {
 	}
 	if bossform = 42.1 // Pocket
 	{
-	    bosstype = obj_Pocket;
+	    bosstype = obj_pocket_v2
 	    difficulty = 2;
 	    global.champ = choose(0,1,2);
 	}
@@ -555,6 +555,12 @@ function scr_Boss_Choose(roomNum, exclude, difficultyAdd = 0) {
 	{
 	    bosstype = obj_Dream_Crawler;
 	    difficulty = 9;
+	    global.champ = choose(0);
+	}
+	if bossform = 57.1 // Boxer
+	{
+	    bosstype = obj_boxer;
+	    difficulty = 2;
 	    global.champ = choose(0);
 	}
 	if bossform = 64.1 // Puck
@@ -751,8 +757,8 @@ function scr_Boss_Choose(roomNum, exclude, difficultyAdd = 0) {
 	var repeatBoss = 0;
 	if i > roomNum {
 		for(j = 1; j < roomNum; j++) {
-			if bosstype = Floor_Layout_Control.Flash[j,21] {
-				if global.champ = Floor_Layout_Control.Flash[j,22] {
+			if bosstype = global.floor[j,21] {
+				if global.champ = global.floor[j,22] {
 					repeatBoss = 1;	
 				}
 			}

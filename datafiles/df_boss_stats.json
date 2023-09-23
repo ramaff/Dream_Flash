@@ -1,1965 +1,1993 @@
-{
-    "Boss 001": {
-        "Name": "Wall Watcher",
-        "Description": "A Strange figment of your imagination, wanders around the edges of the dreamscape shooting aimlessly.",
-        "Boss_Danger": 1,
-        "Recollection_Sprite": "reco_Watcher_Wall",
-        "Health_Phase_1": 200,
-        "Health_Phase_2": 200,
-        "Defense_Phase_1": 0,
-        "Defense_Phase_2": 0,
-        "Attack_Speed": 1,
-        "Bullet_Speed": 3,
-        "Move_Speed": 1.75,
-        "Knock_Defense": 999,
-        "Accuracy": 1,
-        "Palette": "spr_Wall_Watcher_Palette",
-        "Champ 1": {
-            "Name": "Green Wall",
+    {
+        "Boss 001": {
+            "Name": "Wall Watcher",
+            "Description": "A Strange figment of your imagination, wanders around the edges of the dreamscape shooting aimlessly.",
+            "Boss_Danger": 1,
             "Recollection_Sprite": "reco_Watcher_Wall",
-            "Health_Phase_1": 240,
-            "Health_Phase_2": 240,
-            "Defense_Phase_1": 0,
-            "Defense_Phase_2": 0,
-            "Palette_Index": 1
-        },
-        "Champ 2": {
-            "Name": "Laser Wall",
-            "Recollection_Sprite": "reco_Watcher_Wall",
-            "Health_Phase_1": 240,
-            "Health_Phase_2": 240,
-            "Defense_Phase_1": 0,
-            "Defense_Phase_2": 0,
-            "Move_Speed": 2.5,
-            "Palette_Index": 2
-        },
-        "Champ 8": { 
-            "Name": "Pink Wall",
-            "Recollection_Sprite": "reco_Watcher_Wall",
-            "Health_Phase_1": 280,
-            "Health_Phase_2": 280,
-            "Defense_Phase_1": 0,
-            "Defense_Phase_2": 0,
-            "Accuracy": 0.5,
-            "Bullet_Speed": 3.3,
-            "Palette_Index": 3
-        }
-    },
-    "Boss 002": {
-        "Name": "Deep Watcher",
-        "Recollection_Sprite": "reco_Deep_Watcher",
-        "Health_Phase_1": 440,
-        "Health_Phase_2": 350,
-        "Defense_Phase_1": 1,
-        "Defense_Phase_2": 1,
-        "Boss_Danger": 7,
-        "Bullet_Speed": 3.35,
-        "Move_Speed": 2.25,
-        "Knock_Defense": 999,
-    
-        "recollectionDescription": "Found deep in the depths of your psyche. Can manifest explosions all over the dreamscape!",
-    
-        "Champ 1": {
-            "Name": "Deep Explosive",
-            "Recollection_Sprite": "spr_Yellow_Miner",
-            "Health_Phase_1": 510,
-            "Health_Phase_2": 420
-        },
-        "Champ 2": { 
-            "Name": "Deep Armour",
-            "Recollection_Sprite": "spr_Armoured_Miner",
-            "Health_Phase_1": 510,
-            "Health_Phase_2": 420,
-            "Defense_Phase_1": 2,
-            "Defense_Phase_2": 2,
-            "Move_Speed": 2.65
-        },
-        "Champ 3": {
-            "Name": "Deep Trail",
-            "Recollection_Sprite": "spr_Green_Miner",
-            "Health_Phase_1": 510,
-            "Health_Phase_2": 420,
-            "Move_Speed": 1.5
-        },
-        "Champ 8": {
-            "Name": "Deep Maelstrom",
-            "Recollection_Sprite": "spr_Purple_Miner",
-            "Health_Phase_1": 580,
-            "Health_Phase_2": 490,
-            "Attack_Speed": 1.2
-        }
-    },
-
-    "Boss 003": {
-        "Name": "Growing Sorrows",
-        "Recollection_Sprite": "reco_Growing_Sorrows",
-        "Health_Phase_1": 290,
-        "Health_Phase_2": 230,
-        "Defense_Phase_1": 0,
-        "Defense_Phase_2": 0,
-        "Boss_Danger": 4,
-        "Bullet_Speed": 3.5,
-        "Move_Speed": 1.95,
-        "Palette": "spr_Growing_Sorrows_Palette",
-    
-        "recollectionDescription": "This boss grows in sadness as the fight goes on.",
-    
-        "Champ 1": {
-            "Name": "Feel Sorrows",
-            "Recollection_Sprite": "reco_Growing_Sorrows",
-            "Health_Phase_1": 340,
-            "Health_Phase_2": 270,
-            "Palette_Index": 3
-        },
-        "Champ 2": { 
-            "Name": "Toxic Sorrows",
-            "Recollection_Sprite": "reco_Growing_Sorrows",
-            "Health_Phase_1": 340,
-            "Health_Phase_2": 270,
-            "Palette_Index": 1
-        },
-        "Champ 8": {
-            "Name": "Sonic Sorrows",
-            "Recollection_Sprite": "reco_Growing_Sorrows",
-            "Health_Phase_1": 390,
-            "Health_Phase_2": 310,
-            "Bullet_Speed": 4,
-            "Palette_Index": 4
-        }
-    },
-
-    "Boss 004": {
-        "Name": "Soaring Sorrows",
-        "Recollection_Sprite": "reco_Soaring_Sorrows",
-        "Health_Phase_1": 590,
-        "Health_Phase_2": 530,
-        "Defense_Phase_1": 0,
-        "Defense_Phase_2": 0,
-        "Boss_Danger": 10,
-        "recollectionDescription": "Feeds off the sorrow of others. Capable of using advanced attacks.",
-        "Bullet_Speed": 3.9,
-        "Move_Speed": 3.3,
-    
-        "Champ 1": {
-            "Name": "Arcane Sorrows",
-            "Recollection_Sprite": "spr_Arcane_Sorrows",
-            "Health_Phase_1": 675,
-            "Health_Phase_2": 595
-        }
-    },
-
-    "Boss 005": {
-        "Name": "Thought Cloud",
-        "Recollection_Sprite": "reco_Thought_Cloud",
-        "Health_Phase_1": 200,
-        "Health_Phase_2": 180,
-        "Defense_Phase_1": 0,
-        "Defense_Phase_2": 0,
-        "Boss_Danger": 1,
-        "recollectionDescription": "Your thoughts and dreams in the form of a crying rain cloud.",
-        "Bullet_Speed": 2.1,
-        "Move_Speed": 0.25,
-        "Palette": "spr_Thought_Cloud_Palette",
-
-        "Champ 1": {
-            "Name": "Rainy Cloud",
-            "Recollection_Sprite": "reco_Thought_Cloud_Champ",
-            "Health_Phase_1": 250,
-            "Health_Phase_2": 210,
-            "Bullet_Speed": 2.4,
-            "Palette_Index": 2
-        },
-        "Champ 2": { 
-            "Name":  "Cloudy Cloud",
-            "Recollection_Sprite": "reco_Thought_Cloud_Champ",
-            "Health_Phase_1": 250,
-            "Health_Phase_2": 210,
-            "Bullet_Speed": 2.6,
-            "Move_Speed": 0.6,
-            "Palette_Index": 3
-        },
-        "Champ 3": {
-            "Name": "Crush Cloud",
-            "Recollection_Sprite": "reco_Thought_Cloud_Champ",
-            "Health_Phase_1": 250,
-            "Health_Phase_2": 210,
-            "Bullet_Speed": 2.9,
-            "Move_Speed": 1,
-            "Palette_Index": 0
-        },
-        "Champ 8": {
-            "Name": "Rainbow Cloud",
-            "Recollection_Sprite": "reco_Thought_Cloud_Champ",
-            "Health_Phase_1": 300,
-            "Health_Phase_2": 240,
-            "Bullet_Speed": 2.5,
-            "Palette_Index": 4
-        }
-    },
-
-    "Boss 006": {
-        "Name": "Infatuation Cloud",
-        "Recollection_Sprite": "reco_Infatuation_Cloud",
-        "Health_Phase_1": 340,
-        "Health_Phase_2": 310,
-        "Defense_Phase_1": 0,
-        "Defense_Phase_2": 0,
-        "Boss_Danger": 4,
-        "Bullet_Speed": 2.2,
-        "Move_Speed": 0.3,
-
-        "recollectionDescription": "Thoughts of lust forming together to make strange weather patterns.",
-
-        "Champ 1": {
-            "Name": "Fluffy Cloud",
-            "Recollection_Sprite": "spr_Fluffy_Cloud",
-            "Health_Phase_1": 390,
-            "Health_Phase_2": 360,
-            "Move_Speed": 2.5
-        },
-        "Champ 2": { 
-            "Name":  "Sprinkler Cloud",
-            "Recollection_Sprite": "spr_Sprinkler_Cloud",
-            "Health_Phase_1": 390,
-            "Health_Phase_2": 360,
-            "Move_Speed": 0.7,
-            "Bullet_Speed": 3.5
-        }
-    },
-
-    "Boss 007": {
-        "Name": "Storm Cloud",
-        "Recollection_Sprite": "reco_Storm_Cloud",
-        "Health_Phase_1": 510,
-        "Health_Phase_2": 490,
-        "Defense_Phase_1": 1,
-        "Defense_Phase_2": 0,
-        "Boss_Danger": 8,
-        "Bullet_Speed": 2.3,
-        "Move_Speed": 0.75,
-    
-        "recollectionDescription": "These dark thoughts start to cloud your judgement.",
-    
-        "Champ 1": {
-            "Name": "Flood Cloud",
-            "Recollection_Sprite": "spr_Flood_Cloud",
-            "Health_Phase_1": 585,
-            "Health_Phase_2": 560,
-            "Bullet_Speed": 2.8
-        },
-        "Champ 2": { 
-            "Name":  "Thunder Cloud",
-            "Recollection_Sprite": "spr_Thunder_Cloud",
-            "Health_Phase_1": 585,
-            "Health_Phase_2": 560
-        }
-    },
-
-    "Boss 008": {
-        "Name": "Nightmare Cloud",
-        "Recollection_Sprite": "reco_Nightmare_Cloud",
-        "Health_Phase_1": 750,
-        "Health_Phase_2": 730,
-        "Defense_Phase_1": 1,
-        "Defense_Phase_2": 1,
-        "Boss_Danger": 13,
-        "Bullet_Speed": 2.4,
-        "Move_Speed": 1,
-    
-        "recollectionDescription": "Storm of evil, uses immensely powerful rain attacks and can spawn more nightmare clouds."
-    
-    },
-
-    "Boss 009": {
-        "Name": "Jello Amorphous",
-        "Recollection_Sprite": "reco_Jello_Amorphous",
-        "Health_Phase_1": 300,
-        "Health_Phase_2": 180,
-        "Defense_Phase_1": 0,
-        "Defense_Phase_2": 0,
-        "Boss_Danger": 1,
-        "Bullet_Speed": 2.75,
-        "Move_Speed": 1,
-        "Palette": "spr_Jello_Amorphous_Palette",
-    
-        "recollectionDescription": "Big Slime jumps around and spawns more jello.",
-
-        "Champ 1": {
-            "Name": "Corrosive Jello",
-            "Recollection_Sprite": "reco_Jello_Amorphous",
-            "Health_Phase_1": 360,
-            "Health_Phase_2": 220,
-            "Palette_Index": 1
-        },
-        "Champ 2": { 
-            "Name":  "Bubble Jello",
-            "Recollection_Sprite": "reco_Jello_Amorphous",
-            "Health_Phase_1": 360,
-            "Health_Phase_2": 220,
-            "Palette_Index": 2
-        },
-        "Champ 8": {
-            "Name": "Ink Jello",
-            "Recollection_Sprite": "reco_Jello_Amorphous",
-            "Health_Phase_1": 420,
-            "Health_Phase_2": 260,
-            "Palette_Index": 3
-        }
-    },
-
-    "Boss 010": {
-        "Name": "Agony Amorphous",
-        "Recollection_Sprite": "reco_Agony_Amorphous",
-        "Health_Phase_1": 400,
-        "Health_Phase_2": 300,
-        "Defense_Phase_1": 1,
-        "Defense_Phase_2": 1,
-        "Boss_Danger": 5,
-        "recollectionDescription": "This foe seems distressed at the sight of you. Existence is pain and it will try to spread some of that pain to you.",
-        "Bullet_Speed": 3.3,
-        "Move_Speed": 1.5,
-        "Knock_Defense": 15,
-
-        "Champ 1": {
-            "Name": "Spike Jello",
-            "Recollection_Sprite": "spr_Spike_Amorphous",
-            "Health_Phase_1": 460,
-            "Health_Phase_2": 350,
-            "Bullet_Speed": 4.2
-        },
-        "Champ 2": { 
-            "Name":  "Radioactive Jello",
-            "Recollection_Sprite": "spr_Radioactive_Amorphous",
-            "Health_Phase_1": 460,
-            "Health_Phase_2": 350
-        }
-    },
-
-    "Boss 011": {
-        "Name": "Amorphous Prime",
-        "Recollection_Sprite": "reco_Amorphous_Prime",
-        "Health_Phase_1": 550,
-        "Health_Phase_2": 450,
-        "Defense_Phase_1": 2,
-        "Defense_Phase_2": 2,
-        "Boss_Danger": 9,
-        "Bullet_Speed": 3.65,
-        "Move_Speed": 1.75,
-        "Knock_Defense": 20,
-    
-        "recollectionDescription": "The apex of slime based bosses, both powerful and agile."
-    },
-
-    "Boss 012": {
-        "Name": "Hand of the Accuser",
-        "Recollection_Sprite": "reco_Hand_of_the_Accuser",
-        "Health_Phase_1": 140,
-        "Health_Phase_2": 160,
-        "Defense_Phase_1": 0,
-        "Defense_Phase_2": 0,
-        "Boss_Danger": 1,
-        "Bullet_Speed": 7,
-        "Move_Speed": 4.4,
-        "Palette": "spr_Hand_Palettes",
-    
-        "recollectionDescription": "Points and shoots at those accused.",
-    
-        "Champ 1": {
-            "Name": "Blind Accuser",
-            "Recollection_Sprite": "reco_Hand_of_the_Accuser",
-            "Health_Phase_1": 160,
-            "Health_Phase_2": 180,
-            "Bullet_Speed": 9,
-            "Move_Speed": 5.4,
-            "Palette_Index": 1
-        },
-        "Champ 2": { 
-            "Name":  "Angry Pointer",
-            "Recollection_Sprite": "reco_Hand_of_the_Accuser",
-            "Health_Phase_1": 160,
-            "Health_Phase_2": 180,
-            "Palette_Index": 2
-        },
-        "Champ 8": {
-            "Name": "Punch Accuser",
-            "Recollection_Sprite": "reco_Hand_of_the_Accuser",
-            "Health_Phase_1": 180,
+            "Health_Phase_1": 200,
             "Health_Phase_2": 200,
-            "Move_Speed": 7.5,
-            "Attack_Speed": 2,
-            "Palette_Index": 3
-        }
-    },
-
-    "Boss 013": {
-        "Name": "Cursed Clappers",
-        "Recollection_Sprite": "reco_Cursed_Clapper",
-        "Health_Phase_1": 150,
-        "Health_Phase_2": 120,
-        "Defense_Phase_1": 0,
-        "Defense_Phase_2": 0,
-        "Boss_Danger": 2,
-        "Bullet_Speed": 6.5,
-        "Move_Speed": 3,
-        "Knock_Defense": 999,
-    
-        "recollectionDescription": "Pair of hands that move fast and use powerful applause to damage the soul.",
-    
-        "Champ 1": {
-            "Name": "Swift Clapper",
-            "Recollection_Sprite": "spr_Swift_Clapper",
-            "Health_Phase_1": 170,
-            "Health_Phase_2": 140,
-            "Move_Speed": 3.5,
-            "Attack_Speed": 1.15
+            "Defense_Phase_1": 0,
+            "Defense_Phase_2": 0,
+            "Attack_Speed": 1,
+            "Bullet_Speed": 3,
+            "Move_Speed": 1.75,
+            "Knock_Defense": 999,
+            "Accuracy": 1,
+            "Palette": "spr_Wall_Watcher_Palette",
+            "Champ 1": {
+                "Name": "Green Wall",
+                "Recollection_Sprite": "reco_Watcher_Wall",
+                "Health_Phase_1": 240,
+                "Health_Phase_2": 240,
+                "Defense_Phase_1": 0,
+                "Defense_Phase_2": 0,
+                "Palette_Index": 1
+            },
+            "Champ 2": {
+                "Name": "Laser Wall",
+                "Recollection_Sprite": "reco_Watcher_Wall",
+                "Health_Phase_1": 240,
+                "Health_Phase_2": 240,
+                "Defense_Phase_1": 0,
+                "Defense_Phase_2": 0,
+                "Move_Speed": 2.5,
+                "Palette_Index": 2
+            },
+            "Champ 8": { 
+                "Name": "Pink Wall",
+                "Recollection_Sprite": "reco_Watcher_Wall",
+                "Health_Phase_1": 280,
+                "Health_Phase_2": 280,
+                "Defense_Phase_1": 0,
+                "Defense_Phase_2": 0,
+                "Accuracy": 0.5,
+                "Bullet_Speed": 3.3,
+                "Palette_Index": 3
+            }
         },
-        "Champ 2": { 
-            "Name":  "Mine Sweeper",
-            "Recollection_Sprite": "spr_Minesweeper_Clapper",
-            "Health_Phase_1": 170,
-            "Health_Phase_2": 140,
-            "Bullet_Speed": 7.5,
-            "Attack_Speed": 1.15
-        }
-    },
-
-    "Boss 014": {
-        "Name": "Spooked Spirit",
-        "Recollection_Sprite": "reco_Spooky_Spirit",
-        "Health_Phase_1": 300,
-        "Health_Phase_2": 230,
-        "Defense_Phase_1": 0,
-        "Defense_Phase_2": 0,
-        "Boss_Danger": 4,
-        "Bullet_Speed": 2.75,
-        "Move_Speed": 1.9,
-        "Palette": "spr_Spooky_Spirit_Palette",
-    
-        "recollectionDescription": "This spirit is scared, causing it to shoot unpredictable bad energy at you.",
-    
-        "Champ 1": {
-            "Name": "Ecto Spirit",
-            "Recollection_Sprite": "reco_Spooky_Spirit",
-            "Health_Phase_1": 330,
-            "Health_Phase_2": 260,
-            "Palette_Index": 1
-        },
-        "Champ 2": { 
-            "Name":  "Distorted Spirit",
-            "Recollection_Sprite": "reco_Spooky_Spirit",
-            "Health_Phase_1": 330,
-            "Health_Phase_2": 260,
-            "Palette_Index": 2
-        },
-        "Champ 8": {
-            "Name": "Terrifying Spirit",
-            "Recollection_Sprite": "reco_Spooky_Spirit",
-            "Health_Phase_1": 360,
-            "Health_Phase_2": 390,
-            "Move_Speed": 2.6,
-            "Bullet_Speed": 3.1,
-            "Palette_Index": 3
-        }
-    },
-
-    "Boss 015": {
-        "Name": "Wicked Spectre",
-        "Recollection_Sprite": "reco_Wicked_Spectre",
-        "Health_Phase_1": 590,
-        "Health_Phase_2": 530,
-        "Defense_Phase_1": 0,
-        "Defense_Phase_2": 0,
-        "Boss_Danger": 10,
-        "Bullet_Speed": 2.3,
-        "Move_Speed": 1.5,
-        "recollectionDescription": "Strong and Dangerous apparition that has complete control over all of its projectiles!",
-    
-        "Champ 1": {
-            "Name": "Chilling Spectre",
-            "Recollection_Sprite": "spr_Chilling_Spectre",
-            "Health_Phase_1": 680,
-            "Health_Phase_2": 600
-        },
-        "Champ 2": { 
-            "Name":  "Cursed Spectre",
-            "Recollection_Sprite": "spr_Cursed_Spectre",
-            "Health_Phase_1": 680,
-            "Health_Phase_2": 600
-        }
-    },
-
-    "Boss 016": {
-        "Name": "Horror Stack",
-        "Recollection_Sprite": "reco_Horror_Stack",
-        "Health_Phase_1": 200,
-        "Health_Phase_2": 125,
-        "Defense_Phase_1": 0,
-        "Defense_Phase_2": 0,
-        "Boss_Danger": 2,
-        "Bullet_Speed": 3.3,
-        "Move_Speed": 2.1,
-        "recollectionDescription": "These three bosses combine into one menace.",
-    
-        "Champ 0.1": {
-            "Health_Phase_1": 125,
-            "Health_Phase_2": 0,
-            "Final_Phase": 1
-        },
-        "Champ 1": {
-            "Name": "Horror Totem",
-            "Recollection_Sprite": "spr_Horror_Totem",
-            "Health_Phase_1": 200,
-            "Health_Phase_2": 125
-        },
-        "Champ 1.1": {
-            "Health_Phase_1": 125,
-            "Health_Phase_2": 0,
-            "Final_Phase": 1
-        },
-        "Champ 2": { 
-            "Name":  "Metal Stack",
-            "Recollection_Sprite": "spr_Metal_Stack",
-            "Health_Phase_1": 200,
-            "Health_Phase_2": 150,
-            "Bullet_Speed": 4.2
-        },
-        "Champ 2.1": {
-            "Health_Phase_1": 150,
-            "Health_Phase_2": 0,
-            "Final_Phase": 1,
-            "Bullet_Speed": 4.2
-        },
-        "Champ 8": {
-            "Name": "Horror Tower",
-            "Recollection_Sprite": "spr_Tower_Stack",
-            "Health_Phase_1": 200,
-            "Health_Phase_2": 175,
+        "Boss 002": {
+            "Name": "Deep Watcher",
+            "Recollection_Sprite": "reco_Deep_Watcher",
+            "Health_Phase_1": 440,
+            "Health_Phase_2": 350,
             "Defense_Phase_1": 1,
             "Defense_Phase_2": 1,
-            "Bullet_Speed": 4.2
-        },
-        "Champ 8.1": {
-            "Health_Phase_1": 175,
-            "Health_Phase_2": 0,
-            "Final_Phase": 1,
-            "Bullet_Speed": 4.2
-        }
-    },
-
-    "Boss 017": {
-        "Name": "Twister Devil",
-        "Recollection_Sprite": "reco_Twister_Demon",
-        "Health_Phase_1": 355,
-        "Health_Phase_2": 425,
-        "Defense_Phase_1": 0,
-        "Defense_Phase_2": 0,
-        "Boss_Danger": 6,
-        "Bullet_Speed": 3.9,
-        "Move_Speed": 3.3,
-        "recollectionDescription": "Chaotic Demon, capable of using the power of wind and tornadoes to aid in its unpredictable attacks!",
-    
-        "Champ 1": {
-            "Name": "Vortex Devil",
-            "Recollection_Sprite": "spr_Vortex_Demon",
-            "Health_Phase_1": 405,
-            "Health_Phase_2": 485
-        },
-        "Champ 2": { 
-            "Name":  "Entropy Devil",
-            "Recollection_Sprite": "spr_Entropy_Demon",
-            "Health_Phase_1": 405,
-            "Health_Phase_2": 485
-        }
-    },
-
-    "Boss 018": {
-        "Name": "Fire Starter",
-        "Recollection_Sprite": "reco_Fire_Starter",
-        "Health_Phase_1": 270,
-        "Health_Phase_2": 220,
-        "Defense_Phase_1": 0,
-        "Defense_Phase_2": 0,
-        "Boss_Danger": 3,
-        "Bullet_Speed": 2.8,
-        "Move_Speed": 1.9,
-        "recollectionDescription": "Powerful spirit, likes to start fires and shoot a lot of accelerating shots.",
-    
-        "Champ 1": {
-            "Name": "Magic Starter",
-            "Recollection_Sprite": "spr_Magic_Starter",
-            "Health_Phase_1": 300,
-            "Health_Phase_2": 270
-        },
-        "Champ 2": { 
-            "Name":  "Explosion Starter",
-            "Recollection_Sprite": "spr_Explosive_Starter",
-            "Health_Phase_1": 300,
-            "Health_Phase_2": 270
-        },
-        "Champ 3": {
-            "Name": "Thunder Starter",
-            "Recollection_Sprite": "spr_Energy_Starter",
-            "Health_Phase_1": 300,
-            "Health_Phase_2": 270
-        }
-    },
-
-    "Boss 019": {
-        "Name": "The Ghoul of Gestures",
-        "Recollection_Sprite": "reco_Tri_Ghoul",
-        "Health_Phase_1": 210,
-        "Health_Phase_2": 105,
-        "Defense_Phase_1": 0,
-        "Defense_Phase_2": 0,
-        "Boss_Danger": 2,
-        "Bullet_Speed": 3,
-        "Move_Speed": 1.4,
-        "recollectionDescription": "Has three Guardian hands orbiting it and is capable of shooting from all three of them.",
-
-        "Champ 1": {
-            "Name": "Shooty Ghoul",
-            "Recollection_Sprite": "spr_Shooty_Ghoul",
-            "Health_Phase_1": 240,
-            "Health_Phase_2": 135
-        },
-        "Champ 8": {
-            "Name": "Blast Ghoul",
-            "Recollection_Sprite": "spr_Blast_Ghoul",
-            "Health_Phase_1": 270,
-            "Health_Phase_2": 165
-        }
-    },
-
-    "Boss 020": {
-        "Name": "Manifest Spire",
-        "Recollection_Sprite": "reco_Manifest_Core",
-        "Health_Phase_1": 400,
-        "Health_Phase_2": 250,
-        "Defense_Phase_1": 25,
-        "Defense_Phase_2": 0,
-        "Boss_Danger": 4,
-        "Bullet_Speed": 2.75,
-        "Move_Speed": 1.75,
-        "recollectionDescription": "Strange construct that can manifest all kinds of other figures.",
+            "Boss_Danger": 7,
+            "Bullet_Speed": 3.35,
+            "Move_Speed": 2.25,
+            "Knock_Defense": 999,
         
-        "Champ 0.1": {
-            "Health_Phase_1": 100,
-            "Health_Phase_2": 0,
-            "Final_Phase": 1,
-            "Knock_Defense": 1,
-            "Defense_Phase_1": 0
+            "recollectionDescription": "Found deep in the depths of your psyche. Can manifest explosions all over the dreamscape!",
+        
+            "Champ 1": {
+                "Name": "Deep Explosive",
+                "Recollection_Sprite": "spr_Yellow_Miner",
+                "Health_Phase_1": 510,
+                "Health_Phase_2": 420
+            },
+            "Champ 2": { 
+                "Name": "Deep Armour",
+                "Recollection_Sprite": "spr_Armoured_Miner",
+                "Health_Phase_1": 510,
+                "Health_Phase_2": 420,
+                "Defense_Phase_1": 2,
+                "Defense_Phase_2": 2,
+                "Move_Speed": 2.65
+            },
+            "Champ 3": {
+                "Name": "Deep Trail",
+                "Recollection_Sprite": "spr_Green_Miner",
+                "Health_Phase_1": 510,
+                "Health_Phase_2": 420,
+                "Move_Speed": 1.5
+            },
+            "Champ 8": {
+                "Name": "Deep Maelstrom",
+                "Recollection_Sprite": "spr_Purple_Miner",
+                "Health_Phase_1": 580,
+                "Health_Phase_2": 490,
+                "Attack_Speed": 1.2
+            }
         },
-        "Champ 1": {
-            "Name": "Vortex Spire",
-            "Recollection_Sprite": "spr_Vortex_Core",
+
+        "Boss 003": {
+            "Name": "Growing Sorrows",
+            "Recollection_Sprite": "reco_Growing_Sorrows",
+            "Health_Phase_1": 290,
+            "Health_Phase_2": 230,
+            "Defense_Phase_1": 0,
+            "Defense_Phase_2": 0,
+            "Boss_Danger": 4,
+            "Bullet_Speed": 3.5,
+            "Move_Speed": 1.95,
+            "Palette": "spr_Growing_Sorrows_Palette",
+        
+            "recollectionDescription": "This boss grows in sadness as the fight goes on.",
+        
+            "Champ 1": {
+                "Name": "Feel Sorrows",
+                "Recollection_Sprite": "reco_Growing_Sorrows",
+                "Health_Phase_1": 340,
+                "Health_Phase_2": 270,
+                "Palette_Index": 3
+            },
+            "Champ 2": { 
+                "Name": "Toxic Sorrows",
+                "Recollection_Sprite": "reco_Growing_Sorrows",
+                "Health_Phase_1": 340,
+                "Health_Phase_2": 270,
+                "Palette_Index": 1
+            },
+            "Champ 8": {
+                "Name": "Sonic Sorrows",
+                "Recollection_Sprite": "reco_Growing_Sorrows",
+                "Health_Phase_1": 390,
+                "Health_Phase_2": 310,
+                "Bullet_Speed": 4,
+                "Palette_Index": 4
+            }
+        },
+
+        "Boss 004": {
+            "Name": "Soaring Sorrows",
+            "Recollection_Sprite": "reco_Soaring_Sorrows",
+            "Health_Phase_1": 590,
+            "Health_Phase_2": 530,
+            "Defense_Phase_1": 0,
+            "Defense_Phase_2": 0,
+            "Boss_Danger": 10,
+            "recollectionDescription": "Feeds off the sorrow of others. Capable of using advanced attacks.",
+            "Bullet_Speed": 3.9,
+            "Move_Speed": 3.3,
+        
+            "Champ 1": {
+                "Name": "Arcane Sorrows",
+                "Recollection_Sprite": "spr_Arcane_Sorrows",
+                "Health_Phase_1": 675,
+                "Health_Phase_2": 595
+            }
+        },
+
+        "Boss 005": {
+            "Name": "Thought Cloud",
+            "Recollection_Sprite": "reco_Thought_Cloud",
+            "Health_Phase_1": 200,
+            "Health_Phase_2": 180,
+            "Defense_Phase_1": 0,
+            "Defense_Phase_2": 0,
+            "Boss_Danger": 1,
+            "recollectionDescription": "Your thoughts and dreams in the form of a crying rain cloud.",
+            "Bullet_Speed": 2.1,
+            "Move_Speed": 0.25,
+            "Palette": "spr_Thought_Cloud_Palette",
+
+            "Champ 1": {
+                "Name": "Rainy Cloud",
+                "Recollection_Sprite": "reco_Thought_Cloud_Champ",
+                "Health_Phase_1": 250,
+                "Health_Phase_2": 210,
+                "Bullet_Speed": 2.4,
+                "Palette_Index": 2
+            },
+            "Champ 2": { 
+                "Name":  "Cloudy Cloud",
+                "Recollection_Sprite": "reco_Thought_Cloud_Champ",
+                "Health_Phase_1": 250,
+                "Health_Phase_2": 210,
+                "Bullet_Speed": 2.6,
+                "Move_Speed": 0.6,
+                "Palette_Index": 3
+            },
+            "Champ 3": {
+                "Name": "Crush Cloud",
+                "Recollection_Sprite": "reco_Thought_Cloud_Champ",
+                "Health_Phase_1": 250,
+                "Health_Phase_2": 210,
+                "Bullet_Speed": 2.9,
+                "Move_Speed": 1,
+                "Palette_Index": 0
+            },
+            "Champ 8": {
+                "Name": "Rainbow Cloud",
+                "Recollection_Sprite": "reco_Thought_Cloud_Champ",
+                "Health_Phase_1": 300,
+                "Health_Phase_2": 240,
+                "Bullet_Speed": 2.5,
+                "Palette_Index": 4
+            }
+        },
+
+        "Boss 006": {
+            "Name": "Infatuation Cloud",
+            "Recollection_Sprite": "reco_Infatuation_Cloud",
+            "Health_Phase_1": 340,
+            "Health_Phase_2": 310,
+            "Defense_Phase_1": 0,
+            "Defense_Phase_2": 0,
+            "Boss_Danger": 4,
+            "Bullet_Speed": 2.2,
+            "Move_Speed": 0.3,
+
+            "recollectionDescription": "Thoughts of lust forming together to make strange weather patterns.",
+
+            "Champ 1": {
+                "Name": "Fluffy Cloud",
+                "Recollection_Sprite": "spr_Fluffy_Cloud",
+                "Health_Phase_1": 390,
+                "Health_Phase_2": 360,
+                "Move_Speed": 2.5
+            },
+            "Champ 2": { 
+                "Name":  "Sprinkler Cloud",
+                "Recollection_Sprite": "spr_Sprinkler_Cloud",
+                "Health_Phase_1": 390,
+                "Health_Phase_2": 360,
+                "Move_Speed": 0.7,
+                "Bullet_Speed": 3.5
+            }
+        },
+
+        "Boss 007": {
+            "Name": "Storm Cloud",
+            "Recollection_Sprite": "reco_Storm_Cloud",
+            "Health_Phase_1": 510,
+            "Health_Phase_2": 490,
+            "Defense_Phase_1": 1,
+            "Defense_Phase_2": 0,
+            "Boss_Danger": 8,
+            "Bullet_Speed": 2.3,
+            "Move_Speed": 0.75,
+        
+            "recollectionDescription": "These dark thoughts start to cloud your judgement.",
+        
+            "Champ 1": {
+                "Name": "Flood Cloud",
+                "Recollection_Sprite": "spr_Flood_Cloud",
+                "Health_Phase_1": 585,
+                "Health_Phase_2": 560,
+                "Bullet_Speed": 2.8
+            },
+            "Champ 2": { 
+                "Name":  "Thunder Cloud",
+                "Recollection_Sprite": "spr_Thunder_Cloud",
+                "Health_Phase_1": 585,
+                "Health_Phase_2": 560
+            }
+        },
+
+        "Boss 008": {
+            "Name": "Nightmare Cloud",
+            "Recollection_Sprite": "reco_Nightmare_Cloud",
+            "Health_Phase_1": 750,
+            "Health_Phase_2": 730,
+            "Defense_Phase_1": 1,
+            "Defense_Phase_2": 1,
+            "Boss_Danger": 13,
+            "Bullet_Speed": 2.4,
+            "Move_Speed": 1,
+        
+            "recollectionDescription": "Storm of evil, uses immensely powerful rain attacks and can spawn more nightmare clouds."
+        
+        },
+
+        "Boss 009": {
+            "Name": "Jello Amorphous",
+            "Recollection_Sprite": "reco_Jello_Amorphous",
+            "Health_Phase_1": 300,
+            "Health_Phase_2": 180,
+            "Defense_Phase_1": 0,
+            "Defense_Phase_2": 0,
+            "Boss_Danger": 1,
+            "Bullet_Speed": 2.75,
+            "Move_Speed": 1,
+            "Palette": "spr_Jello_Amorphous_Palette",
+        
+            "recollectionDescription": "Big Slime jumps around and spawns more jello.",
+
+            "Champ 1": {
+                "Name": "Corrosive Jello",
+                "Recollection_Sprite": "reco_Jello_Amorphous",
+                "Health_Phase_1": 360,
+                "Health_Phase_2": 220,
+                "Palette_Index": 1
+            },
+            "Champ 2": { 
+                "Name":  "Bubble Jello",
+                "Recollection_Sprite": "reco_Jello_Amorphous",
+                "Health_Phase_1": 360,
+                "Health_Phase_2": 220,
+                "Palette_Index": 2
+            },
+            "Champ 8": {
+                "Name": "Ink Jello",
+                "Recollection_Sprite": "reco_Jello_Amorphous",
+                "Health_Phase_1": 420,
+                "Health_Phase_2": 260,
+                "Palette_Index": 3
+            }
+        },
+
+        "Boss 010": {
+            "Name": "Agony Amorphous",
+            "Recollection_Sprite": "reco_Agony_Amorphous",
             "Health_Phase_1": 400,
-            "Health_Phase_2": 300
+            "Health_Phase_2": 300,
+            "Defense_Phase_1": 1,
+            "Defense_Phase_2": 1,
+            "Boss_Danger": 5,
+            "recollectionDescription": "This foe seems distressed at the sight of you. Existence is pain and it will try to spread some of that pain to you.",
+            "Bullet_Speed": 3.3,
+            "Move_Speed": 1.5,
+            "Knock_Defense": 15,
+
+            "Champ 1": {
+                "Name": "Spike Jello",
+                "Recollection_Sprite": "spr_Spike_Amorphous",
+                "Health_Phase_1": 460,
+                "Health_Phase_2": 350,
+                "Bullet_Speed": 4.2
+            },
+            "Champ 2": { 
+                "Name":  "Radioactive Jello",
+                "Recollection_Sprite": "spr_Radioactive_Amorphous",
+                "Health_Phase_1": 460,
+                "Health_Phase_2": 350
+            }
         },
-        "Champ 1.1": {
+
+        "Boss 011": {
+            "Name": "Amorphous Prime",
+            "Recollection_Sprite": "reco_Amorphous_Prime",
+            "Health_Phase_1": 550,
+            "Health_Phase_2": 450,
+            "Defense_Phase_1": 2,
+            "Defense_Phase_2": 2,
+            "Boss_Danger": 9,
+            "Bullet_Speed": 3.65,
+            "Move_Speed": 1.75,
+            "Knock_Defense": 20,
+        
+            "recollectionDescription": "The apex of slime based bosses, both powerful and agile."
+        },
+
+        "Boss 012": {
+            "Name": "Hand of the Accuser",
+            "Recollection_Sprite": "reco_Hand_of_the_Accuser",
+            "Health_Phase_1": 140,
+            "Health_Phase_2": 160,
+            "Defense_Phase_1": 0,
+            "Defense_Phase_2": 0,
+            "Boss_Danger": 1,
+            "Bullet_Speed": 7,
+            "Move_Speed": 4.4,
+            "Palette": "spr_Hand_Palettes",
+        
+            "recollectionDescription": "Points and shoots at those accused.",
+        
+            "Champ 1": {
+                "Name": "Blind Accuser",
+                "Recollection_Sprite": "reco_Hand_of_the_Accuser",
+                "Health_Phase_1": 160,
+                "Health_Phase_2": 180,
+                "Bullet_Speed": 9,
+                "Move_Speed": 5.4,
+                "Palette_Index": 1
+            },
+            "Champ 2": { 
+                "Name":  "Angry Pointer",
+                "Recollection_Sprite": "reco_Hand_of_the_Accuser",
+                "Health_Phase_1": 160,
+                "Health_Phase_2": 180,
+                "Palette_Index": 2
+            },
+            "Champ 8": {
+                "Name": "Punch Accuser",
+                "Recollection_Sprite": "reco_Hand_of_the_Accuser",
+                "Health_Phase_1": 180,
+                "Health_Phase_2": 200,
+                "Move_Speed": 7.5,
+                "Attack_Speed": 2,
+                "Palette_Index": 3
+            }
+        },
+
+        "Boss 013": {
+            "Name": "Cursed Clappers",
+            "Recollection_Sprite": "reco_Cursed_Clapper",
             "Health_Phase_1": 150,
-            "Health_Phase_2": 0,
-            "Final_Phase": 1,
-            "Knock_Defense": 1,
-            "Defense_Phase_1": 0
+            "Health_Phase_2": 120,
+            "Defense_Phase_1": 0,
+            "Defense_Phase_2": 0,
+            "Boss_Danger": 2,
+            "Bullet_Speed": 6.5,
+            "Move_Speed": 3,
+            "Knock_Defense": 999,
+        
+            "recollectionDescription": "Pair of hands that move fast and use powerful applause to damage the soul.",
+        
+            "Champ 1": {
+                "Name": "Swift Clapper",
+                "Recollection_Sprite": "spr_Swift_Clapper",
+                "Health_Phase_1": 170,
+                "Health_Phase_2": 140,
+                "Move_Speed": 3.5,
+                "Attack_Speed": 1.15
+            },
+            "Champ 2": { 
+                "Name":  "Mine Sweeper",
+                "Recollection_Sprite": "spr_Minesweeper_Clapper",
+                "Health_Phase_1": 170,
+                "Health_Phase_2": 140,
+                "Bullet_Speed": 7.5,
+                "Attack_Speed": 1.15
+            }
         },
-        "Champ 2": { 
-            "Name":  "Queen Spire",
-            "Recollection_Sprite": "spr_Queen_Core",
+
+        "Boss 014": {
+            "Name": "Spooked Spirit",
+            "Recollection_Sprite": "reco_Spooky_Spirit",
+            "Health_Phase_1": 300,
+            "Health_Phase_2": 230,
+            "Defense_Phase_1": 0,
+            "Defense_Phase_2": 0,
+            "Boss_Danger": 4,
+            "Bullet_Speed": 2.75,
+            "Move_Speed": 1.9,
+            "Palette": "spr_Spooky_Spirit_Palette",
+        
+            "recollectionDescription": "This spirit is scared, causing it to shoot unpredictable bad energy at you.",
+        
+            "Champ 1": {
+                "Name": "Ecto Spirit",
+                "Recollection_Sprite": "reco_Spooky_Spirit",
+                "Health_Phase_1": 330,
+                "Health_Phase_2": 260,
+                "Palette_Index": 1
+            },
+            "Champ 2": { 
+                "Name":  "Distorted Spirit",
+                "Recollection_Sprite": "reco_Spooky_Spirit",
+                "Health_Phase_1": 330,
+                "Health_Phase_2": 260,
+                "Palette_Index": 2
+            },
+            "Champ 8": {
+                "Name": "Terrifying Spirit",
+                "Recollection_Sprite": "reco_Spooky_Spirit",
+                "Health_Phase_1": 360,
+                "Health_Phase_2": 390,
+                "Move_Speed": 2.6,
+                "Bullet_Speed": 3.1,
+                "Palette_Index": 3
+            }
+        },
+
+        "Boss 015": {
+            "Name": "Wicked Spectre",
+            "Recollection_Sprite": "reco_Wicked_Spectre",
+            "Health_Phase_1": 590,
+            "Health_Phase_2": 530,
+            "Defense_Phase_1": 0,
+            "Defense_Phase_2": 0,
+            "Boss_Danger": 10,
+            "Bullet_Speed": 2.3,
+            "Move_Speed": 1.5,
+            "recollectionDescription": "Strong and Dangerous apparition that has complete control over all of its projectiles!",
+        
+            "Champ 1": {
+                "Name": "Chilling Spectre",
+                "Recollection_Sprite": "spr_Chilling_Spectre",
+                "Health_Phase_1": 680,
+                "Health_Phase_2": 600
+            },
+            "Champ 2": { 
+                "Name":  "Cursed Spectre",
+                "Recollection_Sprite": "spr_Cursed_Spectre",
+                "Health_Phase_1": 680,
+                "Health_Phase_2": 600
+            }
+        },
+
+        "Boss 016": {
+            "Name": "Horror Stack",
+            "Recollection_Sprite": "reco_Horror_Stack",
+            "Health_Phase_1": 200,
+            "Health_Phase_2": 125,
+            "Defense_Phase_1": 0,
+            "Defense_Phase_2": 0,
+            "Boss_Danger": 2,
+            "Bullet_Speed": 3.3,
+            "Move_Speed": 2.1,
+            "recollectionDescription": "These three bosses combine into one menace.",
+        
+            "Champ 0.1": {
+                "Health_Phase_1": 125,
+                "Health_Phase_2": 0,
+                "Final_Phase": 1
+            },
+            "Champ 1": {
+                "Name": "Horror Totem",
+                "Recollection_Sprite": "spr_Horror_Totem",
+                "Health_Phase_1": 200,
+                "Health_Phase_2": 125
+            },
+            "Champ 1.1": {
+                "Health_Phase_1": 125,
+                "Health_Phase_2": 0,
+                "Final_Phase": 1
+            },
+            "Champ 2": { 
+                "Name":  "Metal Stack",
+                "Recollection_Sprite": "spr_Metal_Stack",
+                "Health_Phase_1": 200,
+                "Health_Phase_2": 150,
+                "Bullet_Speed": 4.2
+            },
+            "Champ 2.1": {
+                "Health_Phase_1": 150,
+                "Health_Phase_2": 0,
+                "Final_Phase": 1,
+                "Bullet_Speed": 4.2
+            },
+            "Champ 8": {
+                "Name": "Horror Tower",
+                "Recollection_Sprite": "spr_Tower_Stack",
+                "Health_Phase_1": 200,
+                "Health_Phase_2": 175,
+                "Defense_Phase_1": 1,
+                "Defense_Phase_2": 1,
+                "Bullet_Speed": 4.2
+            },
+            "Champ 8.1": {
+                "Health_Phase_1": 175,
+                "Health_Phase_2": 0,
+                "Final_Phase": 1,
+                "Bullet_Speed": 4.2
+            }
+        },
+
+        "Boss 017": {
+            "Name": "Twister Devil",
+            "Recollection_Sprite": "reco_Twister_Demon",
+            "Health_Phase_1": 355,
+            "Health_Phase_2": 425,
+            "Defense_Phase_1": 0,
+            "Defense_Phase_2": 0,
+            "Boss_Danger": 6,
+            "Bullet_Speed": 3.9,
+            "Move_Speed": 3.3,
+            "recollectionDescription": "Chaotic Demon, capable of using the power of wind and tornadoes to aid in its unpredictable attacks!",
+        
+            "Champ 1": {
+                "Name": "Vortex Devil",
+                "Recollection_Sprite": "spr_Vortex_Demon",
+                "Health_Phase_1": 405,
+                "Health_Phase_2": 485
+            },
+            "Champ 2": { 
+                "Name":  "Entropy Devil",
+                "Recollection_Sprite": "spr_Entropy_Demon",
+                "Health_Phase_1": 405,
+                "Health_Phase_2": 485
+            }
+        },
+
+        "Boss 018": {
+            "Name": "Fire Starter",
+            "Recollection_Sprite": "reco_Fire_Starter",
+            "Health_Phase_1": 270,
+            "Health_Phase_2": 220,
+            "Defense_Phase_1": 0,
+            "Defense_Phase_2": 0,
+            "Boss_Danger": 3,
+            "Bullet_Speed": 2.8,
+            "Move_Speed": 1.9,
+            "recollectionDescription": "Powerful spirit, likes to start fires and shoot a lot of accelerating shots.",
+        
+            "Champ 1": {
+                "Name": "Magic Starter",
+                "Recollection_Sprite": "spr_Magic_Starter",
+                "Health_Phase_1": 300,
+                "Health_Phase_2": 270
+            },
+            "Champ 2": { 
+                "Name":  "Explosion Starter",
+                "Recollection_Sprite": "spr_Explosive_Starter",
+                "Health_Phase_1": 300,
+                "Health_Phase_2": 270
+            },
+            "Champ 3": {
+                "Name": "Thunder Starter",
+                "Recollection_Sprite": "spr_Energy_Starter",
+                "Health_Phase_1": 300,
+                "Health_Phase_2": 270
+            }
+        },
+
+        "Boss 019": {
+            "Name": "The Ghoul of Gestures",
+            "Recollection_Sprite": "reco_Tri_Ghoul",
+            "Health_Phase_1": 210,
+            "Health_Phase_2": 105,
+            "Defense_Phase_1": 0,
+            "Defense_Phase_2": 0,
+            "Boss_Danger": 2,
+            "Bullet_Speed": 3,
+            "Move_Speed": 1.4,
+            "recollectionDescription": "Has three Guardian hands orbiting it and is capable of shooting from all three of them.",
+
+            "Champ 1": {
+                "Name": "Shooty Ghoul",
+                "Recollection_Sprite": "spr_Shooty_Ghoul",
+                "Health_Phase_1": 240,
+                "Health_Phase_2": 135
+            },
+            "Champ 8": {
+                "Name": "Blast Ghoul",
+                "Recollection_Sprite": "spr_Blast_Ghoul",
+                "Health_Phase_1": 270,
+                "Health_Phase_2": 165
+            }
+        },
+
+        "Boss 020": {
+            "Name": "Manifest Spire",
+            "Recollection_Sprite": "reco_Manifest_Core",
             "Health_Phase_1": 400,
-            "Health_Phase_2": 300
+            "Health_Phase_2": 250,
+            "Defense_Phase_1": 25,
+            "Defense_Phase_2": 0,
+            "Boss_Danger": 4,
+            "Bullet_Speed": 2.75,
+            "Move_Speed": 1.75,
+            "recollectionDescription": "Strange construct that can manifest all kinds of other figures.",
+            
+            "Champ 0.1": {
+                "Health_Phase_1": 100,
+                "Health_Phase_2": 0,
+                "Final_Phase": 1,
+                "Knock_Defense": 1,
+                "Defense_Phase_1": 0
+            },
+            "Champ 1": {
+                "Name": "Vortex Spire",
+                "Recollection_Sprite": "spr_Vortex_Core",
+                "Health_Phase_1": 400,
+                "Health_Phase_2": 300
+            },
+            "Champ 1.1": {
+                "Health_Phase_1": 150,
+                "Health_Phase_2": 0,
+                "Final_Phase": 1,
+                "Knock_Defense": 1,
+                "Defense_Phase_1": 0
+            },
+            "Champ 2": { 
+                "Name":  "Queen Spire",
+                "Recollection_Sprite": "spr_Queen_Core",
+                "Health_Phase_1": 400,
+                "Health_Phase_2": 300
+            },
+            "Champ 2.1": {
+                "Health_Phase_1": 50,
+                "Health_Phase_2": 0,
+                "Final_Phase": 1,
+                "Knock_Defense": 1,
+                "Defense_Phase_1": 0
+            }
         },
-        "Champ 2.1": {
-            "Health_Phase_1": 50,
-            "Health_Phase_2": 0,
-            "Final_Phase": 1,
-            "Knock_Defense": 1,
-            "Defense_Phase_1": 0
-        }
-    },
 
-    "Boss 021": {
-        "Name": "Blind Hunger",
-        "Recollection_Sprite": "reco_Blind_Hunger",
-        "Health_Phase_1": 770,
-        "Health_Phase_2": 920,
-        "Defense_Phase_1": 4,
-        "Defense_Phase_2": 1,
-        "Boss_Danger": 14,
-        "Bullet_Speed": 3.4,
-        "Move_Speed": 1.9,
-        "Knock_Defense": 15,
-        "Champ 1": {
-            "Name": "Alcoholic Hunger",
-            "Recollection_Sprite": "spr_Alcoholic_Hunger",
-            "Health_Phase_1": 855,
-            "Health_Phase_2": 1025
+        "Boss 021": {
+            "Name": "Blind Hunger",
+            "Recollection_Sprite": "reco_Blind_Hunger",
+            "Health_Phase_1": 770,
+            "Health_Phase_2": 920,
+            "Defense_Phase_1": 4,
+            "Defense_Phase_2": 1,
+            "Boss_Danger": 14,
+            "Bullet_Speed": 3.4,
+            "Move_Speed": 1.9,
+            "Knock_Defense": 15,
+            "Champ 1": {
+                "Name": "Alcoholic Hunger",
+                "Recollection_Sprite": "spr_Alcoholic_Hunger",
+                "Health_Phase_1": 855,
+                "Health_Phase_2": 1025
+            },
+            "Champ 8": { 
+                "Name":  "Midnight Hunger",
+                "Recollection_Sprite": "spr_Midnight_Hunger",
+                "Health_Phase_1": 940,
+                "Health_Phase_2": 1130
+            }
         },
-        "Champ 8": { 
-            "Name":  "Midnight Hunger",
-            "Recollection_Sprite": "spr_Midnight_Hunger",
-            "Health_Phase_1": 940,
-            "Health_Phase_2": 1130
-        }
-    },
 
-    "Boss 022": {
-        "Name": "Guardian",
-        "Recollection_Sprite": "reco_Guardian_of_Knowing",
-        "Health_Phase_1": 610,
-        "Health_Phase_2": 510,
-        "Defense_Phase_1": 0,
-        "Defense_Phase_2": 0,
-        "Boss_Danger": 10,
-        "Bullet_Speed": 3.5,
-        "Move_Speed": 3,
-        "recollectionDescription": "All Knowing boss uses orbs of pure recollection to attack the soul."
-    },
-
-    "Boss 023": {
-        "Name": "Heart Ache",
-        "Recollection_Sprite": "reco_Heart_Ache",
-        "Health_Phase_1": 390,
-        "Health_Phase_2": 300,
-        "Defense_Phase_1": 0,
-        "Defense_Phase_2": 0,
-        "Boss_Danger": 5,
-        "Bullet_Speed": 2.8,
-        "Move_Speed": 1.4,
-        "recollectionDescription": "This heart aches in pain and horror. Splits into smaller versions of itself."
-    },
-
-    "Boss 024": {
-        "Name": "Ninja Spirit",
-        "Recollection_Sprite": "reco_Ninja_Spirit",
-        "Health_Phase_1": 240,
-        "Health_Phase_2": 180,
-        "Defense_Phase_1": 0,
-        "Defense_Phase_2": 0,
-        "Boss_Danger": 2,
-        "Bullet_Speed": 3.3,
-        "Move_Speed": 1.75,
-        "recollectionDescription": "Throws shurikens at the soul, which can home in and cause trouble.",
-    
-        "Champ 1": {
-            "Name": "White Belt Ninja",
-        "Recollection_Sprite": "spr_White_Belt_Ninja",
-        "Health_Phase_1": 270,
-        "Health_Phase_2": 210
+        "Boss 022": {
+            "Name": "Guardian",
+            "Recollection_Sprite": "reco_Guardian_of_Knowing",
+            "Health_Phase_1": 610,
+            "Health_Phase_2": 510,
+            "Defense_Phase_1": 0,
+            "Defense_Phase_2": 0,
+            "Boss_Danger": 10,
+            "Bullet_Speed": 3.5,
+            "Move_Speed": 3,
+            "recollectionDescription": "All Knowing boss uses orbs of pure recollection to attack the soul."
         },
-        "Champ 2": { 
-            "Name":  "Black Belt Ninja",
-            "Recollection_Sprite": "spr_Black_Belt_Ninja",
+
+        "Boss 023": {
+            "Name": "Heart Ache",
+            "Recollection_Sprite": "reco_Heart_Ache",
+            "Health_Phase_1": 390,
+            "Health_Phase_2": 300,
+            "Defense_Phase_1": 0,
+            "Defense_Phase_2": 0,
+            "Boss_Danger": 5,
+            "Bullet_Speed": 2.8,
+            "Move_Speed": 1.4,
+            "recollectionDescription": "This heart aches in pain and horror. Splits into smaller versions of itself."
+        },
+
+        "Boss 024": {
+            "Name": "Ninja Spirit",
+            "Recollection_Sprite": "reco_Ninja_Spirit",
+            "Health_Phase_1": 270,
+            "Health_Phase_2": 210,
+            "Defense_Phase_1": 0,
+            "Defense_Phase_2": 0,
+            "Boss_Danger": 2,
+            "Bullet_Speed": 2.4,
+            "Move_Speed": 2.1,
+            "recollectionDescription": "Throws shurikens at the soul, which can home in and cause trouble.",
+        
+            "Champ 1": {
+                "Name": "White Belt Ninja",
+            "Recollection_Sprite": "spr_White_Belt_Ninja",
             "Health_Phase_1": 270,
             "Health_Phase_2": 210
-        }
-    },
+            },
+            "Champ 2": { 
+                "Name":  "Black Belt Ninja",
+                "Recollection_Sprite": "spr_Black_Belt_Ninja",
+                "Health_Phase_1": 270,
+                "Health_Phase_2": 210
+            }
+        },
 
-    "Boss 025": {
-        "Name": "Wisper",
-        "Recollection_Sprite": "reco_Wisper",
-        "Health_Phase_1": 280,
-        "Health_Phase_2": 280,
-        "Defense_Phase_1": 0,
-        "Defense_Phase_2": 0,
-        "Boss_Danger": 3,
-        "Bullet_Speed": 2.5,
-        "Move_Speed": 1.35,
-        "recollectionDescription": "Silent Threat, can ditch its corporeal form and split into two equally dangerous spirits.",
-    
-        "Champ 0.1": {
-            "Health_Phase_1": 100,
-            "Health_Phase_2": 0,
-            "Final_Phase": 1
-        },
-        "Champ 0.2": {
-            "Health_Phase_1": 180,
-            "Health_Phase_2": 0,
-            "Final_Phase": 1
-        },
-        "Champ 1": {
-            "Name": "Air Wisper",
-            "Recollection_Sprite": "spr_Air_Wisper",
+        "Boss 025": {
+            "Name": "Wisper",
+            "Recollection_Sprite": "reco_Wisper",
             "Health_Phase_1": 330,
-            "Health_Phase_2": 300
-        },
-        "Champ 1.1": {
-            "Health_Phase_1": 120,
-            "Health_Phase_2": 0,
-            "Final_Phase": 1
-        },
-        "Champ 1.2": {
-            "Health_Phase_1": 200,
-            "Health_Phase_2": 0,
-            "Final_Phase": 1
-        },
-        "Champ 2": { 
-            "Name":  "Burst Wisper",
-            "Recollection_Sprite": "spr_Burst_Wisper",
-            "Health_Phase_1": 330,
-            "Health_Phase_2": 300
-        },
-        "Champ 2.1": {
-            "Health_Phase_1": 120,
-            "Health_Phase_2": 0,
-            "Final_Phase": 1
-        },
-        "Champ 2.2": {
-            "Health_Phase_1": 200,
-            "Health_Phase_2": 0,
-            "Final_Phase": 1
-        }
-    },
+            "Health_Phase_2": 350,
+            "Defense_Phase_1": 0,
+            "Defense_Phase_2": 0,
+            "Boss_Danger": 3,
+            "Bullet_Speed": 2.5,
+            "Move_Speed": 2.3,
+            "recollectionDescription": "Silent Threat, can ditch its corporeal form and split into two equally dangerous spirits.",
+            "Palette": "spr_wisper_v2_palette",
 
-    "Boss 026": {
-        "Name": "Manic Wall Mage",
-        "Recollection_Sprite": "reco_Manic_Wall_Mage",
-        "Health_Phase_1": 535,
-        "Health_Phase_2": 435,
-        "Defense_Phase_1": 0,
-        "Defense_Phase_2": 0,
-        "Boss_Danger": 8,
-        "Bullet_Speed": 2.6,
-        "Move_Speed": 1.2,
-        "recollectionDescription": "Armed in the magic craft of making walls of bullets!",
-    
-        "Champ 1": {
-            "Name": "Bullet Wall Mage",
-            "Recollection_Sprite": "spr_Projectile_Wall_Mage",
-            "Health_Phase_1": 595,
-            "Health_Phase_2": 495
-        }
-    },
-
-    "Boss 027": {
-        "Name": "Crazy Eyes",
-        "Recollection_Sprite": "reco_Crazy_Eye",
-        "Health_Phase_1": 190,
-        "Health_Phase_2": 190,
-        "Defense_Phase_1": 1,
-        "Defense_Phase_2": 0,
-        "Boss_Danger": 5,
-        "Bullet_Speed": 3.6,
-        "Move_Speed": 4.75,
-        "Palette": "spr_Crazy_Eyes_Palette",
-
-        "recollectionDescription": "Pair of Erratic and Unpredicatable Bosses that see all.",
-    
-        "Champ 1": {
-            "Name": "Phaser Eye",
-            "Recollection_Sprite": "reco_Crazy_Eye",
-            "Health_Phase_1": 210,
-            "Health_Phase_2": 255,
-            "Palette_Index": 1
-        },
-        "Champ 8": {
-            "Name": "Gamma Ray Eye",
-            "Recollection_Sprite": "reco_Crazy_Eye",
-            "Health_Phase_1": 240,
-            "Health_Phase_2": 320,
-            "Palette_Index": 2
-        }
-    },
-    
-    "Boss 028": {
-        "Name": "Phase Crawler",
-        "Recollection_Sprite": "reco_Phase_Crawler",
-        "Health_Phase_1": 650,
-        "Health_Phase_2": 550,
-        "Defense_Phase_1": 2,
-        "Defense_Phase_2": 2,
-        "Boss_Danger": 11,
-        "Bullet_Speed": 2.8,
-        "Move_Speed": 2,
-        "Champ 1": {
-            "Name": "Dream Crawler",
-            "Recollection_Sprite": "spr_Dream_Crawler",
-            "Health_Phase_1": 745,
-            "Health_Phase_2": 635
-        },
-        "Champ 8": {
-            "Name": "Widow Crawler",
-            "Recollection_Sprite": "spr_Venomous_Crawler",
-            "Health_Phase_1": 840,
-            "Health_Phase_2": 720
-        },
-        "recollectionDescription": "Crawls through dimensions. Spawns portals that release intricate bullet patterns."
-    },
-
-    "Boss 029": {
-        "Name": "Barrier Demon",
-        "Recollection_Sprite": "reco_Barrier_Demon",
-        "Health_Phase_1": 690,
-        "Health_Phase_2": 560,
-        "Defense_Phase_1": 3,
-        "Defense_Phase_2": 3,
-        "Boss_Danger": 12,
-        "Bullet_Speed": 3.5,
-        "Move_Speed": 2,
-        "Champ 1": {
-            "Name": "Spiral Demon",
-            "Recollection_Sprite": "spr_Spiral_Demon",
-            "Health_Phase_1": 790,
-            "Health_Phase_2": 640
-        },
-        "Champ 8": {
-            "Name": "Super Shielded Demon",
-            "Recollection_Sprite": "spr_Super_Shielded_Demon",
-            "Health_Phase_1": 890,
-            "Health_Phase_2": 720
-        },
-    
-        "recollectionDescription": "Creates barriers between individuals. Has several attacks that render entire portions of the dreamscape inhospitable."
-    },
-    
-    "Boss 030": {
-        "Name": "Behemoth",
-        "Recollection_Sprite": "reco_Behemoth",
-        "Health_Phase_1": 750,
-        "Health_Phase_2": 660,
-        "Defense_Phase_1": 3,
-        "Defense_Phase_2": 2,
-        "Boss_Danger": 13,
-        "Bullet_Speed": 3,
-        "Move_Speed": 2,
-        "Champ 1": {
-            "Name": "Barrage Behemoth",
-            "Recollection_Sprite": "spr_Barrage_Behemoth",
-            "Health_Phase_1": 870,
-            "Health_Phase_2": 760
-        },
-        "Champ 2": {
-            "Name":  "Beam Behemoth",
-            "Recollection_Sprite": "spr_Beam_Behemoth",
-            "Health_Phase_1": 870,
-            "Health_Phase_2": 760
+            "Champ 0.1": {
+                "Health_Phase_1": 125,
+                "Health_Phase_2": 0,
+                "Final_Phase": 1
+            },
+            "Champ 0.2": {
+                "Health_Phase_1": 225,
+                "Health_Phase_2": 0,
+                "Final_Phase": 1
+            },
+            "Champ 1": {
+                "Name": "Air Wisper",
+                "Recollection_Sprite": "spr_Air_Wisper",
+                "Health_Phase_1": 370,
+                "Health_Phase_2": 390
+            },
+            "Champ 1.1": {
+                "Health_Phase_1": 140,
+                "Health_Phase_2": 0,
+                "Final_Phase": 1
+            },
+            "Champ 1.2": {
+                "Health_Phase_1": 250,
+                "Health_Phase_2": 0,
+                "Final_Phase": 1
+            },
+            "Champ 2": { 
+                "Name":  "Burst Wisper",
+                "Recollection_Sprite": "spr_Burst_Wisper",
+                "Health_Phase_1": 370,
+                "Health_Phase_2": 390
+            },
+            "Champ 2.1": {
+                "Health_Phase_1": 140,
+                "Health_Phase_2": 0,
+                "Final_Phase": 1
+            },
+            "Champ 2.2": {
+                "Health_Phase_1": 250,
+                "Health_Phase_2": 0,
+                "Final_Phase": 1
+            }
         },
 
-        "recollectionDescription": "Massive beast found deep within dreams. Releases an onslaught of bullets from its limitless supply of heads."
-    },
-
-    "Boss 031": {
-        "Name": "Sleeper x Manifestation",
-        "Recollection_Sprite": "reco_Sleeper",
-        "Health_Phase_1": 400,
-        "Health_Phase_2": 450,
-        "Defense_Phase_1": 2,
-        "Defense_Phase_2": 1,
-        "Boss_Danger": 7,
-        "Bullet_Speed": 3,
-        "Move_Speed": 1.5,
-        "recollectionDescription": "Sleeper creates a dream that can manifest itself in a variety of ways.",
+        "Boss 026": {
+            "Name": "Manic Wall Mage",
+            "Recollection_Sprite": "reco_Manic_Wall_Mage",
+            "Health_Phase_1": 535,
+            "Health_Phase_2": 435,
+            "Defense_Phase_1": 0,
+            "Defense_Phase_2": 0,
+            "Boss_Danger": 8,
+            "Bullet_Speed": 2.6,
+            "Move_Speed": 1.2,
+            "recollectionDescription": "Armed in the magic craft of making walls of bullets!",
         
-        "Champ 0.1": {
-            "Defense_Phase_1": 9999
+            "Champ 1": {
+                "Name": "Bullet Wall Mage",
+                "Recollection_Sprite": "spr_Projectile_Wall_Mage",
+                "Health_Phase_1": 595,
+                "Health_Phase_2": 495
+            }
         },
-        "Champ 1": {
-            "Name": "Sleeper x Wall Manifesto",
+
+        "Boss 027": {
+            "Name": "Crazy Eyes",
+            "Recollection_Sprite": "reco_Crazy_Eye",
+            "Health_Phase_1": 190,
+            "Health_Phase_2": 190,
+            "Defense_Phase_1": 1,
+            "Defense_Phase_2": 0,
+            "Boss_Danger": 5,
+            "Bullet_Speed": 3.6,
+            "Move_Speed": 4.75,
+            "Palette": "spr_Crazy_Eyes_Palette",
+
+            "recollectionDescription": "Pair of Erratic and Unpredicatable Bosses that see all.",
+        
+            "Champ 1": {
+                "Name": "Phaser Eye",
+                "Recollection_Sprite": "reco_Crazy_Eye",
+                "Health_Phase_1": 210,
+                "Health_Phase_2": 255,
+                "Palette_Index": 1
+            },
+            "Champ 8": {
+                "Name": "Gamma Ray Eye",
+                "Recollection_Sprite": "reco_Crazy_Eye",
+                "Health_Phase_1": 240,
+                "Health_Phase_2": 320,
+                "Palette_Index": 2
+            }
+        },
+        
+        "Boss 028": {
+            "Name": "Phase Crawler",
+            "Recollection_Sprite": "reco_Phase_Crawler",
+            "Health_Phase_1": 650,
+            "Health_Phase_2": 550,
+            "Defense_Phase_1": 2,
+            "Defense_Phase_2": 2,
+            "Boss_Danger": 11,
+            "Bullet_Speed": 2.8,
+            "Move_Speed": 2,
+            "Champ 1": {
+                "Name": "Dream Crawler",
+                "Recollection_Sprite": "spr_Dream_Crawler",
+                "Health_Phase_1": 745,
+                "Health_Phase_2": 635
+            },
+            "Champ 8": {
+                "Name": "Widow Crawler",
+                "Recollection_Sprite": "spr_Venomous_Crawler",
+                "Health_Phase_1": 840,
+                "Health_Phase_2": 720
+            },
+            "recollectionDescription": "Crawls through dimensions. Spawns portals that release intricate bullet patterns."
+        },
+
+        "Boss 029": {
+            "Name": "Barrier Demon",
+            "Recollection_Sprite": "reco_Barrier_Demon",
+            "Health_Phase_1": 690,
+            "Health_Phase_2": 560,
+            "Defense_Phase_1": 3,
+            "Defense_Phase_2": 3,
+            "Boss_Danger": 12,
+            "Bullet_Speed": 3.5,
+            "Move_Speed": 2,
+            "Champ 1": {
+                "Name": "Spiral Demon",
+                "Recollection_Sprite": "spr_Spiral_Demon",
+                "Health_Phase_1": 790,
+                "Health_Phase_2": 640
+            },
+            "Champ 8": {
+                "Name": "Super Shielded Demon",
+                "Recollection_Sprite": "spr_Super_Shielded_Demon",
+                "Health_Phase_1": 890,
+                "Health_Phase_2": 720
+            },
+        
+            "recollectionDescription": "Creates barriers between individuals. Has several attacks that render entire portions of the dreamscape inhospitable."
+        },
+        
+        "Boss 030": {
+            "Name": "Behemoth",
+            "Recollection_Sprite": "reco_Behemoth",
+            "Health_Phase_1": 750,
+            "Health_Phase_2": 660,
+            "Defense_Phase_1": 3,
+            "Defense_Phase_2": 2,
+            "Boss_Danger": 13,
+            "Bullet_Speed": 3,
+            "Move_Speed": 2,
+            "Champ 1": {
+                "Name": "Barrage Behemoth",
+                "Recollection_Sprite": "spr_Barrage_Behemoth",
+                "Health_Phase_1": 870,
+                "Health_Phase_2": 760
+            },
+            "Champ 2": {
+                "Name":  "Beam Behemoth",
+                "Recollection_Sprite": "spr_Beam_Behemoth",
+                "Health_Phase_1": 870,
+                "Health_Phase_2": 760
+            },
+
+            "recollectionDescription": "Massive beast found deep within dreams. Releases an onslaught of bullets from its limitless supply of heads."
+        },
+
+        "Boss 031": {
+            "Name": "Sleeper x Manifestation",
             "Recollection_Sprite": "reco_Sleeper",
-            "Health_Phase_1": 460,
-            "Health_Phase_2": 440
+            "Health_Phase_1": 400,
+            "Health_Phase_2": 450,
+            "Defense_Phase_1": 2,
+            "Defense_Phase_2": 1,
+            "Boss_Danger": 7,
+            "Bullet_Speed": 3,
+            "Move_Speed": 1.5,
+            "recollectionDescription": "Sleeper creates a dream that can manifest itself in a variety of ways.",
+            
+            "Champ 0.1": {
+                "Defense_Phase_1": 9999
+            },
+            "Champ 1": {
+                "Name": "Sleeper x Wall Manifesto",
+                "Recollection_Sprite": "reco_Sleeper",
+                "Health_Phase_1": 460,
+                "Health_Phase_2": 440
+            },
+            "Champ 1.1": {
+                "Defense_Phase_1": 9999
+            }
         },
-        "Champ 1.1": {
-            "Defense_Phase_1": 9999
-        }
-    },
 
-    "Boss 032": {
-        "Name": "Animated Head",
-        "Recollection_Sprite": "reco_Animated_Head",
-        "Health_Phase_1": 360,
-        "Health_Phase_2": 330,
-        "Defense_Phase_1": 4,
-        "Defense_Phase_2": 1,
-        "Boss_Danger": 5,
-        "Bullet_Speed": 3.3,
-        "Move_Speed": 3,
-        "recollectionDescription": "Reanimated boss, uses the powers of pestilence to create trailing bullets.",
-    
-        "Champ 1": {
-            "Name": "Maw Head",
-            "Recollection_Sprite": "spr_Maw_Head",
-            "Health_Phase_1": 410,
-            "Health_Phase_2": 370
-        }
-    },
-
-    "Boss 033": {
-        "Name": "Chaotic Unrest",
-        "Recollection_Sprite": "reco_Chaotic_Unrest",
-        "Health_Phase_1": 570,
-        "Health_Phase_2": 440,
-        "Defense_Phase_1": 3,
-        "Defense_Phase_2": 1,
-        "Boss_Danger": 8,
-        "Bullet_Speed": 3.8,
-        "Move_Speed": 3.53,
-        "recollectionDescription": "Deadly spirit unable to rest, its soul lingers in this skull. Shoots chaotic magic and can create additional chaos spirits.",
-
-        "Champ 1": {
-            "Name": "Angry Unrest",
-            "Recollection_Sprite": "spr_Angry_Unrest",
-            "Health_Phase_1": 630,
-            "Health_Phase_2": 500
-        },
-        "Champ 8": {
-            "Name": "Demonic Unrest",
-            "Recollection_Sprite": "spr_Demonic_Unrest",
-            "Health_Phase_1": 696,
-            "Health_Phase_2": 566
-        }
-    },
-
-    "Boss 034": {
-        "Name": "Locust",
-        "Recollection_Sprite": "reco_Locust",
-        "Health_Phase_1": 490,
-        "Health_Phase_2": 350,
-        "Defense_Phase_1": 4,
-        "Defense_Phase_2": 3,
-        "Boss_Danger": 6,
-        "Palette": "spr_Locust_Palette",
-    
-        "recollectionDescription": "Bringer of plagues and famine. Creates several clones of itself that cause havoc all over the field.",
-
-        "Champ 1": {
-            "Name": "Swarm Locust",
-            "Recollection_Sprite": "reco_Locust",
-            "Health_Phase_1": 590,
-            "Health_Phase_2": 440,
-            "Palette_Index": 1
-        }
-    },
-
-    "Boss 035": {
-        "Name": "Grim Apparition",
-        "Recollection_Sprite": "reco_Grim_Apparition",
-        "Health_Phase_1": 330,
-        "Health_Phase_2": 250,
-        "Defense_Phase_1": 0,
-        "Defense_Phase_2": 2,
-        "Boss_Danger": 4,
-        "Bullet_Speed": 3.3,
-        "Move_Speed": 3.9,
-        "recollectionDescription": "Instills you with a grim feeling. Malicous apparition that channels bursts of dark energy.",
-    
-        "Champ 1": {
-            "Name": "Laser Beam Apparition",
-            "Recollection_Sprite": "spr_Beam_Apparition",
-            "Health_Phase_1": 380,
-            "Health_Phase_2": 280
-        }
-    },
-
-    "Boss 036": {
-        "Name": "Dream Invader",
-        "Recollection_Sprite": "reco_Dream_Invader",
-        "Health_Phase_1": 400,
-        "Health_Phase_2": 375,
-        "Defense_Phase_1": 2,
-        "Defense_Phase_2": 1,
-        "Boss_Danger": 6,
-        "Bullet_Speed": 2.85,
-        "Move_Speed": 3.3,
-        "recollectionDescription": "Arbiter of invasive thoughts. Can produce tractor beams and stun the soul with advanced techniques. Also has the power to summon meteorites.",
-
-        "Champ 1": {
-            "Name": "Asteroid Belt Invader",
-            "Recollection_Sprite": "spr_Asteroid_Belt_Invader",
-            "Health_Phase_1": 450,
-            "Health_Phase_2": 425
-        },
-        "Champ 2": { 
-            "Name":  "Laser Invader",
-            "Recollection_Sprite": "spr_Laser_Invader",
-            "Health_Phase_1": 450,
-            "Health_Phase_2": 425
-        }
-    },
-
-    "Boss 037": {
-        "Name": "Jackhamster",
-        "Recollection_Sprite": "reco_Jackhamster",
-        "Health_Phase_1": 320,
-        "Health_Phase_2": 180,
-        "Defense_Phase_1": 0,
-        "Defense_Phase_2": 0,
-        "Boss_Danger": 3,
-        "Bullet_Speed": 2.4,
-        "Move_Speed": 3,
-        "recollectionDescription": "Pogo stick master, can perform several maneuvers in the air to shower the field in bullets.",
-
-        "Champ 1": {
-            "Name": "Power Hamster",
-            "Recollection_Sprite": "spr_Power_Jackhamster",
+        "Boss 032": {
+            "Name": "Animated Head",
+            "Recollection_Sprite": "reco_Animated_Head",
             "Health_Phase_1": 360,
-            "Health_Phase_2": 240
-        }
-    },
-    
-    "Boss 038": {
-        "Name": "Crush",
-        "Recollection_Sprite": "reco_Crush",
-        "Health_Phase_1": 475,
-        "Health_Phase_2": 400,
-        "Defense_Phase_1": 1,
-        "Defense_Phase_2": 1,
-        "Boss_Danger": 7,
-        "Bullet_Speed": 2.4,
-        "Move_Speed": 3,
-        "recollectionDescription": "Love hurts, this foe is capable of swinging a large bullet flail that makes the entire field dangerous."
-    },
-    
-    "Boss 039": {
-        "Name": "Migraine",
-        "Recollection_Sprite": "reco_Migraine",
-        "Health_Phase_1": 550,
-        "Health_Phase_2": 550,
-        "Defense_Phase_1": 0,
-        "Defense_Phase_2": 0,
-        "Boss_Danger": 9,
-        "Bullet_Speed": 3.1,
-        "Move_Speed": 2.6,
-        "recollectionDescription": "Headache inducing boss. Imagines complex bullet patterns and materializes them instantly."
-    },
-    
-    "Boss 040": {
-        "Name": "Demonic Villainy",
-        "Recollection_Sprite": "reco_Demonic_Villainy",
-        "Health_Phase_1": 960,
-        "Health_Phase_2": 700,
-        "Defense_Phase_1": 2,
-        "Defense_Phase_2": 1,
-        "Boss_Danger": 15,
-        "Bullet_Speed": 3.4,
-        "Move_Speed": 3,
-        "recollectionDescription": "Evil doer that unleashes pain in a variety of ways."
-    },
-    
-    "Boss 041": {
-        "Name": "The Veil",
-        "Recollection_Sprite": "reco_The_Veil",
-        "Health_Phase_1": 425,
-        "Health_Phase_2": 550,
-        "Defense_Phase_1": 1,
-        "Defense_Phase_2": 1,
-        "Boss_Danger": 11,
-        "Bullet_Speed": 2.4,
-        "Move_Speed": 3,
-        "Champ 0.1": {
+            "Health_Phase_2": 330,
+            "Defense_Phase_1": 4,
+            "Defense_Phase_2": 1,
+            "Boss_Danger": 5,
+            "Bullet_Speed": 3.3,
+            "Move_Speed": 3,
+            "recollectionDescription": "Reanimated boss, uses the powers of pestilence to create trailing bullets.",
+        
+            "Champ 1": {
+                "Name": "Maw Head",
+                "Recollection_Sprite": "spr_Maw_Head",
+                "Health_Phase_1": 410,
+                "Health_Phase_2": 370
+            }
+        },
+
+        "Boss 033": {
+            "Name": "Chaotic Unrest",
+            "Recollection_Sprite": "reco_Chaotic_Unrest",
+            "Health_Phase_1": 570,
+            "Health_Phase_2": 440,
+            "Defense_Phase_1": 3,
+            "Defense_Phase_2": 1,
+            "Boss_Danger": 8,
+            "Bullet_Speed": 3.8,
+            "Move_Speed": 3.53,
+            "recollectionDescription": "Deadly spirit unable to rest, its soul lingers in this skull. Shoots chaotic magic and can create additional chaos spirits.",
+
+            "Champ 1": {
+                "Name": "Angry Unrest",
+                "Recollection_Sprite": "spr_Angry_Unrest",
+                "Health_Phase_1": 630,
+                "Health_Phase_2": 500
+            },
+            "Champ 8": {
+                "Name": "Demonic Unrest",
+                "Recollection_Sprite": "spr_Demonic_Unrest",
+                "Health_Phase_1": 696,
+                "Health_Phase_2": 566
+            }
+        },
+
+        "Boss 034": {
+            "Name": "Locust",
+            "Recollection_Sprite": "reco_Locust",
+            "Health_Phase_1": 490,
+            "Health_Phase_2": 350,
+            "Defense_Phase_1": 4,
+            "Defense_Phase_2": 3,
+            "Boss_Danger": 6,
+            "Palette": "spr_Locust_Palette",
+        
+            "recollectionDescription": "Bringer of plagues and famine. Creates several clones of itself that cause havoc all over the field.",
+
+            "Champ 1": {
+                "Name": "Swarm Locust",
+                "Recollection_Sprite": "reco_Locust",
+                "Health_Phase_1": 590,
+                "Health_Phase_2": 440,
+                "Palette_Index": 1
+            }
+        },
+
+        "Boss 035": {
+            "Name": "Grim Apparition",
+            "Recollection_Sprite": "reco_Grim_Apparition",
+            "Health_Phase_1": 330,
+            "Health_Phase_2": 250,
+            "Defense_Phase_1": 0,
+            "Defense_Phase_2": 2,
+            "Boss_Danger": 4,
+            "Bullet_Speed": 3.3,
+            "Move_Speed": 3.9,
+            "recollectionDescription": "Instills you with a grim feeling. Malicous apparition that channels bursts of dark energy.",
+        
+            "Champ 1": {
+                "Name": "Laser Beam Apparition",
+                "Recollection_Sprite": "spr_Beam_Apparition",
+                "Health_Phase_1": 380,
+                "Health_Phase_2": 280
+            }
+        },
+
+        "Boss 036": {
+            "Name": "Dream Invader",
+            "Recollection_Sprite": "reco_Dream_Invader",
+            "Health_Phase_1": 400,
+            "Health_Phase_2": 375,
+            "Defense_Phase_1": 2,
+            "Defense_Phase_2": 1,
+            "Boss_Danger": 6,
+            "Bullet_Speed": 2.85,
+            "Move_Speed": 3.3,
+            "recollectionDescription": "Arbiter of invasive thoughts. Can produce tractor beams and stun the soul with advanced techniques. Also has the power to summon meteorites.",
+
+            "Champ 1": {
+                "Name": "Asteroid Belt Invader",
+                "Recollection_Sprite": "spr_Asteroid_Belt_Invader",
+                "Health_Phase_1": 450,
+                "Health_Phase_2": 425
+            },
+            "Champ 2": { 
+                "Name":  "Laser Invader",
+                "Recollection_Sprite": "spr_Laser_Invader",
+                "Health_Phase_1": 450,
+                "Health_Phase_2": 425
+            }
+        },
+
+        "Boss 037": {
+            "Name": "Jackhamster",
+            "Recollection_Sprite": "reco_Jackhamster",
+            "Health_Phase_1": 320,
+            "Health_Phase_2": 180,
+            "Defense_Phase_1": 0,
+            "Defense_Phase_2": 0,
+            "Boss_Danger": 3,
+            "Bullet_Speed": 2.4,
+            "Move_Speed": 3,
+            "recollectionDescription": "Pogo stick master, can perform several maneuvers in the air to shower the field in bullets.",
+
+            "Champ 1": {
+                "Name": "Power Hamster",
+                "Recollection_Sprite": "spr_Power_Jackhamster",
+                "Health_Phase_1": 360,
+                "Health_Phase_2": 240
+            }
+        },
+        
+        "Boss 038": {
+            "Name": "Crush",
+            "Recollection_Sprite": "reco_Crush",
+            "Health_Phase_1": 475,
+            "Health_Phase_2": 400,
+            "Defense_Phase_1": 1,
+            "Defense_Phase_2": 1,
+            "Boss_Danger": 7,
+            "Bullet_Speed": 2.4,
+            "Move_Speed": 3,
+            "recollectionDescription": "Love hurts, this foe is capable of swinging a large bullet flail that makes the entire field dangerous."
+        },
+        
+        "Boss 039": {
+            "Name": "Migraine",
+            "Recollection_Sprite": "reco_Migraine",
+            "Health_Phase_1": 550,
+            "Health_Phase_2": 550,
+            "Defense_Phase_1": 0,
+            "Defense_Phase_2": 0,
+            "Boss_Danger": 9,
+            "Bullet_Speed": 3.1,
+            "Move_Speed": 2.6,
+            "recollectionDescription": "Headache inducing boss. Imagines complex bullet patterns and materializes them instantly."
+        },
+        
+        "Boss 040": {
+            "Name": "Demonic Villainy",
+            "Recollection_Sprite": "reco_Demonic_Villainy",
+            "Health_Phase_1": 960,
+            "Health_Phase_2": 700,
+            "Defense_Phase_1": 2,
+            "Defense_Phase_2": 1,
+            "Boss_Danger": 15,
+            "Bullet_Speed": 3.4,
+            "Move_Speed": 3,
+            "recollectionDescription": "Evil doer that unleashes pain in a variety of ways."
+        },
+        
+        "Boss 041": {
+            "Name": "The Veil",
+            "Recollection_Sprite": "reco_The_Veil",
             "Health_Phase_1": 425,
             "Health_Phase_2": 550,
-            "Defense_Phase_1": 100,
-            "Defense_Phase_2": 100
+            "Defense_Phase_1": 1,
+            "Defense_Phase_2": 1,
+            "Boss_Danger": 11,
+            "Bullet_Speed": 2.4,
+            "Move_Speed": 3,
+            "Champ 0.1": {
+                "Health_Phase_1": 425,
+                "Health_Phase_2": 550,
+                "Defense_Phase_1": 100,
+                "Defense_Phase_2": 100
+            },
+            "Champ 1": {
+                "Name": "Chaotic Veil",
+                "Recollection_Sprite": "spr_Chaotic_Veil",
+                "Health_Phase_1": 500,
+                "Health_Phase_2": 625
+            },
+            "Champ 1.1": {
+                "Health_Phase_1": 500,
+                "Health_Phase_2": 625,
+                "Defense_Phase_1": 100,
+                "Defense_Phase_2": 100
+            },
+            "recollectionDescription": "Evil lurking behind the masks."
         },
-        "Champ 1": {
-            "Name": "Chaotic Veil",
-            "Recollection_Sprite": "spr_Chaotic_Veil",
-            "Health_Phase_1": 500,
-            "Health_Phase_2": 625
+
+        "Boss 042": {
+            "Name": "Pocket",
+            "Recollection_Sprite": "reco_Pocket",
+            "Health_Phase_1": 290,
+            "Health_Phase_2": 160,
+            "Defense_Phase_1": 0,
+            "Defense_Phase_2": 0,
+            "Boss_Danger": 2,
+            "Bullet_Speed": 2.5,
+            "Move_Speed": 2.5,
+            "recollectionDescription": "Sentient pocket dimension, drops bullets across the dreamscape. Can possess inanimate objects and summon more opponents.",
+
+            "Champ 1": {
+                "Name": "Hot Pocket",
+                "Recollection_Sprite": "spr_Hot_Pocket",
+                "Health_Phase_1": 330,
+                "Health_Phase_2": 200
+            },
+            "Champ 2": { 
+                "Name":  "Junk Pocket",
+                "Recollection_Sprite": "spr_Junk_Pocket",
+                "Health_Phase_1": 330,
+                "Health_Phase_2": 200
+            }
         },
-        "Champ 1.1": {
-            "Health_Phase_1": 500,
-            "Health_Phase_2": 625,
-            "Defense_Phase_1": 100,
-            "Defense_Phase_2": 100
+
+        "Boss 043": {
+            "Name": "Gutter Ball",
+            "Recollection_Sprite": "reco_Gutter_Ball",
+            "Health_Phase_1": 270,
+            "Health_Phase_2": 250,
+            "Defense_Phase_1": 1,
+            "Defense_Phase_2": 1,
+            "Boss_Danger": 3,
+            "recollectionDescription": "Rolls around the field chasing after the soul. Can perform high scoring attacks.",
+            "Bullet_Speed": 2.5,
+            "Move_Speed": 2.5,
+            "Champ 1": {
+                "Name": "Alley Ball",
+                "Recollection_Sprite": "spr_Alley_Gutterball",
+                "Health_Phase_1": 320,
+                "Health_Phase_2": 300
+            }
         },
-        "recollectionDescription": "Evil lurking behind the masks."
-    },
 
-    "Boss 042": {
-        "Name": "Pocket",
-        "Recollection_Sprite": "reco_Pocket",
-        "Health_Phase_1": 290,
-        "Health_Phase_2": 160,
-        "Defense_Phase_1": 0,
-        "Defense_Phase_2": 0,
-        "Boss_Danger": 2,
-        "Bullet_Speed": 2.5,
-        "Move_Speed": 2.5,
-        "recollectionDescription": "Sentient pocket dimension, drops bullets across the dreamscape. Can possess inanimate objects and summon more opponents.",
-
-        "Champ 1": {
-            "Name": "Hot Pocket",
-            "Recollection_Sprite": "spr_Hot_Pocket",
-            "Health_Phase_1": 330,
-            "Health_Phase_2": 200
+        "Boss 044": {
+            "Name": "Conga Line",
+            "Recollection_Sprite": "reco_Conga_Line",
+            "Health_Phase_1": 40,
+            "Health_Phase_2": 20,
+            "Defense_Phase_1": 0,
+            "Defense_Phase_2": 0,
+            "Boss_Danger": 2,
+            "recollectionDescription": "They move in formation and attack with coordination.",
+            "Bullet_Speed": 2.5,
+            "Move_Speed": 3.5
         },
-        "Champ 2": { 
-            "Name":  "Junk Pocket",
-            "Recollection_Sprite": "spr_Junk_Pocket",
-            "Health_Phase_1": 330,
-            "Health_Phase_2": 200
-        }
-    },
-
-    "Boss 043": {
-        "Name": "Gutter Ball",
-        "Recollection_Sprite": "reco_Gutter_Ball",
-        "Health_Phase_1": 270,
-        "Health_Phase_2": 250,
-        "Defense_Phase_1": 1,
-        "Defense_Phase_2": 1,
-        "Boss_Danger": 3,
-        "recollectionDescription": "Rolls around the field chasing after the soul. Can perform high scoring attacks.",
-        "Bullet_Speed": 2.5,
-        "Move_Speed": 2.5,
-        "Champ 1": {
-            "Name": "Alley Ball",
-            "Recollection_Sprite": "spr_Alley_Gutterball",
-            "Health_Phase_1": 320,
-            "Health_Phase_2": 300
-        }
-    },
-
-    "Boss 044": {
-        "Name": "Conga Line",
-        "Recollection_Sprite": "reco_Conga_Line",
-        "Health_Phase_1": 50,
-        "Health_Phase_2": 20,
-        "Defense_Phase_1": 0,
-        "Defense_Phase_2": 0,
-        "Boss_Danger": 2,
-        "recollectionDescription": "They move in formation and attack with coordination.",
-        "Bullet_Speed": 2.5,
-        "Move_Speed": 3.5
-    },
-    
-    "Boss 045": {
-        "Name": "Tough Luck",
-        "Recollection_Sprite": "reco_Tough_Luck",
-        "Health_Phase_1": 450,
-        "Health_Phase_2": 500,
-        "Defense_Phase_1": 2,
-        "Defense_Phase_2": 2,
-        "Boss_Danger": 8,
-        "Bullet_Speed": 2.4,
-        "Move_Speed": 3,
-        "recollectionDescription": "6-Sided Boss, each side has unique attack patterns. Rerolls itself every phase."
-    },
-    
-    "Boss 046": {
-        "Name": "Soul Collector",
-        "Recollection_Sprite": "reco_Soul_Collector",
-        "Health_Phase_1": 1070,
-        "Health_Phase_2": 850,
-        "Defense_Phase_1": 3,
-        "Defense_Phase_2": 3,
-        "Boss_Danger": 14,
-        "Bullet_Speed": 3.85,
-        "Move_Speed": 1.75,
-        "Champ 1": {
-            "Name": "Spirit Collector",
-            "Recollection_Sprite": "spr_Spirit_Collector",
+        
+        "Boss 045": {
+            "Name": "Tough Luck",
+            "Recollection_Sprite": "reco_Tough_Luck",
+            "Health_Phase_1": 450,
+            "Health_Phase_2": 500,
+            "Defense_Phase_1": 2,
+            "Defense_Phase_2": 2,
+            "Boss_Danger": 8,
+            "Bullet_Speed": 2.4,
+            "Move_Speed": 3,
+            "recollectionDescription": "6-Sided Boss, each side has unique attack patterns. Rerolls itself every phase."
+        },
+        
+        "Boss 046": {
+            "Name": "Soul Collector",
+            "Recollection_Sprite": "reco_Soul_Collector",
             "Health_Phase_1": 1070,
-            "Health_Phase_2": 960
+            "Health_Phase_2": 850,
+            "Defense_Phase_1": 3,
+            "Defense_Phase_2": 3,
+            "Boss_Danger": 14,
+            "Bullet_Speed": 3.85,
+            "Move_Speed": 1.75,
+            "Champ 1": {
+                "Name": "Spirit Collector",
+                "Recollection_Sprite": "spr_Spirit_Collector",
+                "Health_Phase_1": 1070,
+                "Health_Phase_2": 960
+            },
+            "recollectionDescription": "Collection of lost souls trapped in the ooze. Stationary opponent that releases massive amounts of bullets."
         },
-        "recollectionDescription": "Collection of lost souls trapped in the ooze. Stationary opponent that releases massive amounts of bullets."
-    },
-    
-    "Boss 047": {
-        "Name": "Twin Horrors",
-        "Recollection_Sprite": "reco_Twin_Horror",
-        "Health_Phase_1": 333,
-        "Health_Phase_2": 333,
-        "Defense_Phase_1": 3,
-        "Defense_Phase_2": 0,
-        "Boss_Danger": 14,
-        "Bullet_Speed": 3.6,
-        "Move_Speed": 2,
-        "Champ 0.1": {
-            "Health_Phase_1": 666,
-            "Health_Phase_2": 766
+        
+        "Boss 047": {
+            "Name": "Twin Horrors",
+            "Recollection_Sprite": "reco_Twin_Horror",
+            "Health_Phase_1": 333,
+            "Health_Phase_2": 333,
+            "Defense_Phase_1": 3,
+            "Defense_Phase_2": 0,
+            "Boss_Danger": 14,
+            "Bullet_Speed": 3.6,
+            "Move_Speed": 2,
+            "Champ 0.1": {
+                "Health_Phase_1": 666,
+                "Health_Phase_2": 766
+            },
+            "recollectionDescription": "A pair of horrific bosses that get scarier when released."
         },
-        "recollectionDescription": "A pair of horrific bosses that get scarier when released."
-    },
-    
-    "Boss 048": {
-        "Name": "Danger Raiser",
-        "Recollection_Sprite": "reco_Danger_Picker",
-        "Health_Phase_1": 480,
-        "Health_Phase_2": 400,
-        "Defense_Phase_1": 0,
-        "Defense_Phase_2": 0,
-        "Boss_Danger": 6,
-        "Bullet_Speed": 2.4,
-        "Move_Speed": 3,
-        "Champ 8": {
-            "Name": "Explosive Danger",
-            "Recollection_Sprite": "spr_Explosive_Danger",
-            "Health_Phase_1": 600,
-            "Health_Phase_2": 540
+        
+        "Boss 048": {
+            "Name": "Danger Raiser",
+            "Recollection_Sprite": "reco_Danger_Picker",
+            "Health_Phase_1": 480,
+            "Health_Phase_2": 400,
+            "Defense_Phase_1": 0,
+            "Defense_Phase_2": 0,
+            "Boss_Danger": 6,
+            "Bullet_Speed": 2.4,
+            "Move_Speed": 3,
+            "Champ 8": {
+                "Name": "Explosive Danger",
+                "Recollection_Sprite": "spr_Explosive_Danger",
+                "Health_Phase_1": 600,
+                "Health_Phase_2": 540
+            },
+        
+            "recollectionDescription": "Sprouts various methods of harming the soul. Has masterful control of bullet movements."
         },
-    
-        "recollectionDescription": "Sprouts various methods of harming the soul. Has masterful control of bullet movements."
-    },
-    
-    "Boss 049": {
-        "Name": "Mind Corruptor",
-        "Recollection_Sprite": "reco_Mind_Corruptor",
-        "Health_Phase_1": 1080,
-        "Health_Phase_2": 720,
-        "Defense_Phase_1": 4,
-        "Defense_Phase_2": 3,
-        "Boss_Danger": 16,
-        "Bullet_Speed": 3.8,
-        "Move_Speed": 3.53,
-        "recollectionDescription": "Immensely powerful boss that can render large portions of the field inhospitable."
-    },
-    
-    "Boss 050": {
-        "Name": "Wall of Thoughts",
-        "Recollection_Sprite": "reco_Wall_Of_Thoughts",
-        "Health_Phase_1": 650,
-        "Health_Phase_2": 650,
-        "Defense_Phase_1": 0,
-        "Defense_Phase_2": 0,
-        "Boss_Danger": 8,
-        "Bullet_Speed": 3,
-        "Move_Speed": 0,
-        "Knock_Defense": 999,
-        "recollectionDescription": "Huge formation of thoughts that attacks the soul with painful rain memories."
-    },
+        
+        "Boss 049": {
+            "Name": "Mind Corruptor",
+            "Recollection_Sprite": "reco_Mind_Corruptor",
+            "Health_Phase_1": 1080,
+            "Health_Phase_2": 720,
+            "Defense_Phase_1": 4,
+            "Defense_Phase_2": 3,
+            "Boss_Danger": 16,
+            "Bullet_Speed": 3.8,
+            "Move_Speed": 3.53,
+            "recollectionDescription": "Immensely powerful boss that can render large portions of the field inhospitable."
+        },
+        
+        "Boss 050": {
+            "Name": "Wall of Thoughts",
+            "Recollection_Sprite": "reco_Wall_Of_Thoughts",
+            "Health_Phase_1": 650,
+            "Health_Phase_2": 650,
+            "Defense_Phase_1": 0,
+            "Defense_Phase_2": 0,
+            "Boss_Danger": 8,
+            "Bullet_Speed": 3,
+            "Move_Speed": 0,
+            "Knock_Defense": 999,
+            "recollectionDescription": "Huge formation of thoughts that attacks the soul with painful rain memories."
+        },
 
-    "Boss 051": {
-        "Name": "Flash Knight",
-        "Recollection_Sprite": "reco_Flash_Knight",
-        "Health_Phase_1": 590,
-        "Health_Phase_2": 350,
-        "Health_Phase_3": 250,
-        "Defense_Phase_1": 2,
-        "Defense_Phase_2": 1,
-        "Defense_Phase_3": 0,
-        "Boss_Danger": 5,
-        "Bullet_Speed": 2.75,
-        "Move_Speed": 1.5,
-        "Final_Phase": 3,
-        "recollectionDescription": "????"
-    },
-
-    "Boss 052": {
-        "Name": "Sandman",
-        "Recollection_Sprite": "reco_Sandman",
-        "Health_Phase_1": 630,
-        "Health_Phase_2": 1330,
-        "Health_Phase_3": 730,
-        "Defense_Phase_1": 0,
-        "Defense_Phase_2": 3,
-        "Defense_Phase_3": 1,
-        "Boss_Danger": 10,
-        "Bullet_Speed": 3.5,
-        "Move_Speed": 1.95,
-        "Final_Phase": 3,
-        "recollectionDescription": "????",
-
-        "Champ 0.1": {
-            "Final_Phase": 1,
-            "Health_Phase_1": 99999,
-            "Defense_Phase_1": 999,
-            "Defense_Phase_2": 999
-        }
-    },
-    
-    "Boss 053": {
-        "Name": "Dreamer x Nightmare",
-        "Recollection_Sprite": "reco_Nightmare",
-        "Health_Phase_1": 1190,
-        "Health_Phase_2": 2540,
-        "Health_Phase_3": 1540,
-        "Defense_Phase_1": 0,
-        "Defense_Phase_2": 3,
-        "Defense_Phase_3": 3,
-        "Boss_Danger": 16,
-        "Bullet_Speed": 3,
-        "Move_Speed": 1.95,
-        "Final_Phase": 3,
-        "recollectionDescription": "????"
-    },
-    
-    "Boss 056": {
-        "Name": "Dream Crawler",
-        "Recollection_Sprite": "reco_Dream_Crawler",
-        "Health_Phase_1": 750,
-        "Health_Phase_2": 750,
-        "Defense_Phase_1": 3,
-        "Defense_Phase_2": 3,
-        "Bullet_Speed": 2.4,
-        "Move_Speed": 7.5,
-        "Boss_Danger": 9,
-    
-        "recollectionDescription": "These crawl around feeding off of dreams. Unleashes a barrage of bullets with its many eyes."
-    },
-
-    "Boss 064": {
-        "Name": "Puck",
-        "Recollection_Sprite": "reco_Puck_Man",
-        "Health_Phase_1": 320,
-        "Health_Phase_2": 270,
-        "Defense_Phase_1": 0,
-        "Defense_Phase_2": 0,
-        "Boss_Danger": 5,
-        "Bullet_Speed": 2.5,
-        "Move_Speed": 3,
-    
-        "recollectionDescription": "Weird and unpredictable boss that can shoot looping projectiles.",
-    
-        "Champ 1": {
-            "Name": "Dimensional Puck",
-            "Recollection_Sprite": "spr_Distorted_Puck",
-            "Health_Phase_1": 360,
-            "Health_Phase_2": 300
-        },
-        "Champ 8": {
-            "Name": "Biter Puck",
-            "Recollection_Sprite": "spr_Biter_Man",
-            "Health_Phase_1": 400,
-            "Health_Phase_2": 330
-        }
-    },
-
-    "Boss 065": {
-        "Name": "Mass Puck",
-        "Recollection_Sprite": "reco_Mass_Puck",
-        "Health_Phase_1": 450,
-        "Health_Phase_2": 250,
-        "Defense_Phase_1": 0,
-        "Defense_Phase_2": 0,
-        "Boss_Danger": 7,
-        "Bullet_Speed": 3.5,
-        "Move_Speed": 3,
-        "recollectionDescription": "Distorted Boss that shoots looping projectiles all over the place.",
-    
-        "Champ 1": {
-            "Name": "Dimensional Mass",
-            "Recollection_Sprite": "spr_Dimensional_Mass",
-            "Health_Phase_1": 500,
-            "Health_Phase_2": 300
-        },
-        "Champ 8": {
-            "Name": "Biter Mass",
-            "Recollection_Sprite": "spr_Mass_Biter",
-            "Health_Phase_1": 550,
-            "Health_Phase_2": 350
-        }
-    },
-    
-    "Boss 081": {
-        "Name": "Snake Eyes",
-        "Recollection_Sprite": "reco_Snake_Eyes",
-        "Health_Phase_1": 340,
-        "Health_Phase_2": 340,
-        "Defense_Phase_1": 0,
-        "Defense_Phase_2": 0,
-        "Boss_Danger": 4,
-        "Bullet_Speed": 3.1,
-        "Move_Speed": 2.55,
-        "recollectionDescription": "Slithery Menace, attacks the soul with exotic bullet patterns.",
-    
-        "Champ 1": {
-            "Name": "Snake Eyes (Tier 2)",
-            "Recollection_Sprite": "spr_Snake_Eyes_Feel",
-            "Health_Phase_1": 540,
-            "Health_Phase_2": 540
-        },
-        "Champ 2": { 
-            "Name":  "Snake Eyes (Tier 3)",
-            "Recollection_Sprite": "spr_Snake_Eyes_Dream",
-            "Health_Phase_1": 810,
-            "Health_Phase_2": 810,
-            "Defense_Phase_1": 1,
-            "Defense_Phase_2": 1
-        },
-        "Champ 3": {
-            "Name": "Snake Eyes (Tier 4)",
-            "Recollection_Sprite": "spr_Snake_Eyes_Nightmare",
-            "Health_Phase_1": 1140,
-            "Health_Phase_2": 1140,
+        "Boss 051": {
+            "Name": "Flash Knight",
+            "Recollection_Sprite": "reco_Flash_Knight",
+            "Health_Phase_1": 590,
+            "Health_Phase_2": 350,
+            "Health_Phase_3": 250,
             "Defense_Phase_1": 2,
-            "Defense_Phase_2": 2
-        }
-    },
-    
-    "Boss 082": {
-        "Name": "King of Beasts",
-        "Recollection_Sprite": "reco_King_Of_Beasts",
-        "Health_Phase_1": 300,
-        "Health_Phase_2": 300,
-        "Defense_Phase_1": 0,
-        "Defense_Phase_2": 0,
-        "Boss_Danger": 4,
-        "Bullet_Speed": 3.1,
-        "Move_Speed": 2.55,
-        "recollectionDescription": "Savage beast, viciously attacks the soul with bite styled moves.",
-    
-        "Champ 1": {
-            "Name": "King of Beasts (Tier 2)",
+            "Defense_Phase_2": 1,
+            "Defense_Phase_3": 0,
+            "Boss_Danger": 5,
+            "Bullet_Speed": 2.75,
+            "Move_Speed": 1.5,
+            "Final_Phase": 3,
+            "recollectionDescription": "????"
+        },
+
+        "Boss 052": {
+            "Name": "Sandman",
+            "Recollection_Sprite": "reco_Sandman",
+            "Health_Phase_1": 630,
+            "Health_Phase_2": 1330,
+            "Health_Phase_3": 730,
+            "Defense_Phase_1": 0,
+            "Defense_Phase_2": 3,
+            "Defense_Phase_3": 1,
+            "Boss_Danger": 10,
+            "Bullet_Speed": 3.5,
+            "Move_Speed": 1.95,
+            "Final_Phase": 3,
+            "recollectionDescription": "????",
+
+            "Champ 0.1": {
+                "Final_Phase": 1,
+                "Health_Phase_1": 99999,
+                "Defense_Phase_1": 999,
+                "Defense_Phase_2": 999
+            }
+        },
+        
+        "Boss 053": {
+            "Name": "Dreamer x Nightmare",
+            "Recollection_Sprite": "reco_Nightmare",
+            "Health_Phase_1": 1190,
+            "Health_Phase_2": 2540,
+            "Health_Phase_3": 1540,
+            "Defense_Phase_1": 0,
+            "Defense_Phase_2": 3,
+            "Defense_Phase_3": 3,
+            "Boss_Danger": 16,
+            "Bullet_Speed": 3,
+            "Move_Speed": 1.95,
+            "Final_Phase": 3,
+            "recollectionDescription": "????"
+        },
+        
+        "Boss 056": {
+            "Name": "Dream Crawler",
+            "Recollection_Sprite": "reco_Dream_Crawler",
+            "Health_Phase_1": 750,
+            "Health_Phase_2": 750,
+            "Defense_Phase_1": 3,
+            "Defense_Phase_2": 3,
+            "Bullet_Speed": 2.4,
+            "Move_Speed": 7.5,
+            "Boss_Danger": 9,
+        
+            "recollectionDescription": "These crawl around feeding off of dreams. Unleashes a barrage of bullets with its many eyes."
+        },
+
+        "Boss 057": {
+            "Name": "Boxer",
+            "Recollection_Sprite": "reco_Puck_Man",
+            "Health_Phase_1": 320,
+            "Health_Phase_2": 240,
+            "Defense_Phase_1": 0,
+            "Defense_Phase_2": 0,
+            "Boss_Danger": 1,
+            "Bullet_Speed": 2.4,
+            "Move_Speed": 2,
+        
+            "recollectionDescription": "Weird and unpredictable boss that can shoot looping projectiles.",
+        
+            "Champ 1": {
+                "Name": "Dimensional Puck",
+                "Recollection_Sprite": "spr_Distorted_Puck",
+                "Health_Phase_1": 360,
+                "Health_Phase_2": 300
+            },
+            "Champ 8": {
+                "Name": "Biter Puck",
+                "Recollection_Sprite": "spr_Biter_Man",
+                "Health_Phase_1": 400,
+                "Health_Phase_2": 330
+            }
+        },
+
+        "Boss 064": {
+            "Name": "Puck",
+            "Recollection_Sprite": "reco_Puck_Man",
+            "Health_Phase_1": 320,
+            "Health_Phase_2": 270,
+            "Defense_Phase_1": 0,
+            "Defense_Phase_2": 0,
+            "Boss_Danger": 5,
+            "Bullet_Speed": 2.5,
+            "Move_Speed": 3,
+        
+            "recollectionDescription": "Weird and unpredictable boss that can shoot looping projectiles.",
+        
+            "Champ 1": {
+                "Name": "Dimensional Puck",
+                "Recollection_Sprite": "spr_Distorted_Puck",
+                "Health_Phase_1": 360,
+                "Health_Phase_2": 300
+            },
+            "Champ 8": {
+                "Name": "Biter Puck",
+                "Recollection_Sprite": "spr_Biter_Man",
+                "Health_Phase_1": 400,
+                "Health_Phase_2": 330
+            }
+        },
+
+        "Boss 065": {
+            "Name": "Mass Puck",
+            "Recollection_Sprite": "reco_Mass_Puck",
+            "Health_Phase_1": 450,
+            "Health_Phase_2": 250,
+            "Defense_Phase_1": 0,
+            "Defense_Phase_2": 0,
+            "Boss_Danger": 7,
+            "Bullet_Speed": 3.5,
+            "Move_Speed": 3,
+            "recollectionDescription": "Distorted Boss that shoots looping projectiles all over the place.",
+        
+            "Champ 1": {
+                "Name": "Dimensional Mass",
+                "Recollection_Sprite": "spr_Dimensional_Mass",
+                "Health_Phase_1": 500,
+                "Health_Phase_2": 300
+            },
+            "Champ 8": {
+                "Name": "Biter Mass",
+                "Recollection_Sprite": "spr_Mass_Biter",
+                "Health_Phase_1": 550,
+                "Health_Phase_2": 350
+            }
+        },
+        
+        "Boss 081": {
+            "Name": "Snake Eyes",
+            "Recollection_Sprite": "reco_Snake_Eyes",
+            "Health_Phase_1": 340,
+            "Health_Phase_2": 340,
+            "Defense_Phase_1": 0,
+            "Defense_Phase_2": 0,
+            "Boss_Danger": 4,
+            "Bullet_Speed": 3.1,
+            "Move_Speed": 2.55,
+            "recollectionDescription": "Slithery Menace, attacks the soul with exotic bullet patterns.",
+        
+            "Champ 1": {
+                "Name": "Snake Eyes (Tier 2)",
+                "Recollection_Sprite": "spr_Snake_Eyes_Feel",
+                "Health_Phase_1": 540,
+                "Health_Phase_2": 540
+            },
+            "Champ 2": { 
+                "Name":  "Snake Eyes (Tier 3)",
+                "Recollection_Sprite": "spr_Snake_Eyes_Dream",
+                "Health_Phase_1": 810,
+                "Health_Phase_2": 810,
+                "Defense_Phase_1": 1,
+                "Defense_Phase_2": 1
+            },
+            "Champ 3": {
+                "Name": "Snake Eyes (Tier 4)",
+                "Recollection_Sprite": "spr_Snake_Eyes_Nightmare",
+                "Health_Phase_1": 1140,
+                "Health_Phase_2": 1140,
+                "Defense_Phase_1": 2,
+                "Defense_Phase_2": 2
+            }
+        },
+        
+        "Boss 082": {
+            "Name": "King of Beasts",
             "Recollection_Sprite": "reco_King_Of_Beasts",
-            "Health_Phase_1": 500,
-            "Health_Phase_2": 500
+            "Health_Phase_1": 300,
+            "Health_Phase_2": 300,
+            "Defense_Phase_1": 0,
+            "Defense_Phase_2": 0,
+            "Boss_Danger": 4,
+            "Bullet_Speed": 3.1,
+            "Move_Speed": 2.55,
+            "recollectionDescription": "Savage beast, viciously attacks the soul with bite styled moves.",
+        
+            "Champ 1": {
+                "Name": "King of Beasts (Tier 2)",
+                "Recollection_Sprite": "reco_King_Of_Beasts",
+                "Health_Phase_1": 500,
+                "Health_Phase_2": 500
+            },
+            "Champ 2": { 
+                "Name":  "King of Beasts (Tier 3)",
+                "Recollection_Sprite": "spr_King_Of_Beasts_Dream",
+                "Health_Phase_1": 760,
+                "Health_Phase_2": 760,
+                "Defense_Phase_1": 1,
+                "Defense_Phase_2": 1
+            },
+            "Champ 3": {
+                "Name": "King of Beasts (Tier 4)",
+                "Recollection_Sprite": "spr_King_Of_Beasts_Nightmare",
+                "Health_Phase_1": 1080,
+                "Health_Phase_2": 1080,
+                "Defense_Phase_1": 2,
+                "Defense_Phase_2": 2
+            }
         },
-        "Champ 2": { 
-            "Name":  "King of Beasts (Tier 3)",
-            "Recollection_Sprite": "spr_King_Of_Beasts_Dream",
-            "Health_Phase_1": 760,
-            "Health_Phase_2": 760,
-            "Defense_Phase_1": 1,
-            "Defense_Phase_2": 1
-        },
-        "Champ 3": {
-            "Name": "King of Beasts (Tier 4)",
-            "Recollection_Sprite": "spr_King_Of_Beasts_Nightmare",
-            "Health_Phase_1": 1080,
-            "Health_Phase_2": 1080,
+        
+        "Boss 083": {
+            "Name": "The Construct",
+            "Recollection_Sprite": "reco_The_Construct",
+            "Health_Phase_1": 375,
+            "Health_Phase_2": 225,
             "Defense_Phase_1": 2,
-            "Defense_Phase_2": 2
-        }
-    },
-    
-    "Boss 083": {
-        "Name": "The Construct",
-        "Recollection_Sprite": "reco_The_Construct",
-        "Health_Phase_1": 375,
-        "Health_Phase_2": 225,
-        "Defense_Phase_1": 2,
-        "Defense_Phase_2": 1,
-        "Boss_Danger": 4,
-        "Bullet_Speed": 3,
-        "Move_Speed": 2.4,
-        "recollectionDescription": "Mechanical Construct, piloted by a wicked soul. Flies and attacks with precisely engineered attacks.",
-    
-        "Champ 1": {
-            "Name": "The Construct (Tier 2)",
-            "Recollection_Sprite": "reco_The_Construct",
-            "Health_Phase_1": 625,
-            "Health_Phase_2": 375,
-            "Defense_Phase_1": 3,
-            "Defense_Phase_2": 2
+            "Defense_Phase_2": 1,
+            "Boss_Danger": 4,
+            "Bullet_Speed": 3,
+            "Move_Speed": 2.4,
+            "recollectionDescription": "Mechanical Construct, piloted by a wicked soul. Flies and attacks with precisely engineered attacks.",
+        
+            "Champ 1": {
+                "Name": "The Construct (Tier 2)",
+                "Recollection_Sprite": "reco_The_Construct",
+                "Health_Phase_1": 625,
+                "Health_Phase_2": 375,
+                "Defense_Phase_1": 3,
+                "Defense_Phase_2": 2
+            },
+            "Champ 2": { 
+                "Name":  "The Construct (Tier 3)",
+                "Recollection_Sprite": "reco_The_Construct",
+                "Health_Phase_1": 935,
+                "Health_Phase_2": 565,
+                "Defense_Phase_1": 4,
+                "Defense_Phase_2": 3
+            },
+            "Champ 3": {
+                "Name": "The Construct (Tier 4)",
+                "Recollection_Sprite": "reco_The_Construct",
+                "Health_Phase_1": 1315,
+                "Health_Phase_2": 805,
+                "Defense_Phase_1": 5,
+                "Defense_Phase_2": 4
+            }
         },
-        "Champ 2": { 
-            "Name":  "The Construct (Tier 3)",
-            "Recollection_Sprite": "reco_The_Construct",
-            "Health_Phase_1": 935,
-            "Health_Phase_2": 565,
-            "Defense_Phase_1": 4,
-            "Defense_Phase_2": 3
-        },
-        "Champ 3": {
-            "Name": "The Construct (Tier 4)",
-            "Recollection_Sprite": "reco_The_Construct",
-            "Health_Phase_1": 1315,
-            "Health_Phase_2": 805,
-            "Defense_Phase_1": 5,
-            "Defense_Phase_2": 4
-        }
-    },
-    "Boss 084": {
-        "Name": "Brainwash",
-        "Recollection_Sprite": "reco_Brainwash",
-        "Health_Phase_1": 260,
-        "Health_Phase_2": 190,
-        "Defense_Phase_1": 0,
-        "Defense_Phase_2": 0,
-        "Boss_Danger": 4,
-        "Bullet_Speed": 2.8,
-        "Move_Speed": 2.7,
-        "recollectionDescription": "Cleanses the dreamscape of your presence. Soapy boss that moves erratically and leaves a slippery path behind",
-    
-        "Champ 1": {
-            "Name": "Brainwash (Tier 2)",
+        "Boss 084": {
+            "Name": "Brainwash",
             "Recollection_Sprite": "reco_Brainwash",
-            "Health_Phase_1": 460,
-            "Health_Phase_2": 330
-        },
-        "Champ 2": { 
-            "Name":  "Brainwash (Tier 3)",
-            "Recollection_Sprite": "reco_Brainwash",
-            "Health_Phase_1": 730,
-            "Health_Phase_2": 470
-        },
-        "Champ 3": {
-            "Name": "Brainwash (Tier 4)",
-            "Recollection_Sprite": "reco_Brainwash",
-            "Health_Phase_1": 990,
-            "Health_Phase_2": 730
-        }
-    },
-    "Boss 086": {
-        "Name": "Bed Bugs",
-        "Recollection_Sprite": "reco_Bed_Bug",
-        "Health_Phase_1": 200,
-        "Health_Phase_2": 200,
-        "Defense_Phase_1": 4,
-        "Defense_Phase_2": 4,
-        "Boss_Danger": 4,
-        "Bullet_Speed": 3.1,
-        "Move_Speed": 2.55,
-        "recollectionDescription": "Spikey Fiend, jumps around and spawns swarms of bed bugs to terrorize the soul.",
-    
-        "Champ 1": {
-            "Name": "Bed Bugs (Tier 2)",
-            "Recollection_Sprite": "spr_Bed_Bug_Feel",
-            "Health_Phase_1": 325,
-            "Health_Phase_2": 325,
-            "Defense_Phase_1": 5,
-            "Defense_Phase_2": 5
-        },
-        "Champ 2": { 
-            "Name":  "Bed Bugs (Tier 3)",
-            "Recollection_Sprite": "spr_Bed_Bug_Dream",
-            "Health_Phase_1": 485,
-            "Health_Phase_2": 485,
-            "Defense_Phase_1": 7,
-            "Defense_Phase_2": 7
-        },
-        "Champ 3": {
-            "Name": "Bed Bugs (Tier 4)",
-            "Recollection_Sprite": "spr_Bed_Bug_Nightmare",
-            "Health_Phase_1": 705,
-            "Health_Phase_2": 705,
-            "Defense_Phase_1": 10,
-            "Defense_Phase_2": 10
-        }
-    },
-    
-    "Boss 087": {
-        "Name": "Dungeon Executioner",
-        "Recollection_Sprite": "reco_Dungeon_Master",
-        "Health_Phase_1": 300,
-        "Health_Phase_2": 270,
-        "Defense_Phase_1": 1,
-        "Defense_Phase_2": 1,
-        "Boss_Danger": 4,
-        "Bullet_Speed": 3,
-        "Move_Speed": 2.7,
-        "recollectionDescription": "Powerful knight. Uses it's axe to deal punishment with quick moves.",
-    
-        "Champ 1": {
-            "Name": "Dungeon Executioner (Tier 2)",
-            "Recollection_Sprite": "reco_Dungeon_Master",
-            "Health_Phase_1": 500,
-            "Health_Phase_2": 460,
-            "Defense_Phase_1": 2,
-            "Defense_Phase_2": 2
-        },
-        "Champ 2": { 
-            "Name":  "Dungeon Executioner (Tier 3)",
-            "Recollection_Sprite": "reco_Dungeon_Master",
-            "Health_Phase_1": 760,
-            "Health_Phase_2": 710,
-            "Defense_Phase_1": 3,
-            "Defense_Phase_2": 3
-        },
-        "Champ 3": {
-            "Name": "Dungeon Executioner (Tier 4)",
-            "Recollection_Sprite": "reco_Dungeon_Master",
-            "Health_Phase_1": 1080,
-            "Health_Phase_2": 1010,
-            "Defense_Phase_1": 4,
-            "Defense_Phase_2": 4
-        }
-    },
-    
-    "Boss 089": {
-        "Name": "Sleep Caster",
-        "Recollection_Sprite": "reco_Sleep_Caster",
-        "Health_Phase_1": 330,
-        "Health_Phase_2": 330,
-        "Defense_Phase_1": 0,
-        "Defense_Phase_2": 0,
-        "Boss_Danger": 4,
-        "Bullet_Speed": 3.1,
-        "Move_Speed": 2.55,
-        "recollectionDescription": "Trickey Spellcaster. Uses spells to make the soul fall alseep, and create strange bullet patterns.",
-    
-        "Champ 1": {
-            "Name": "Sleep Caster (Tier 2)",
-            "Recollection_Sprite": "spr_Sleep_Caster_Feel",
-            "Health_Phase_1": 540,
-            "Health_Phase_2": 540
-        },
-        "Champ 2": { 
-            "Name":  "Sleep Caster (Tier 3)",
-            "Recollection_Sprite": "spr_Sleep_Caster_Dream",
-            "Health_Phase_1": 815,
-            "Health_Phase_2": 815,
-            "Defense_Phase_1": 1,
-            "Defense_Phase_2": 1
-        },
-        "Champ 3": {
-            "Name": "Sleep Caster (Tier 4)",
-            "Recollection_Sprite": "spr_Sleep_Caster_Nightmare",
-            "Health_Phase_1": 1165,
-            "Health_Phase_2": 1165,
-            "Defense_Phase_1": 1,
-            "Defense_Phase_2": 1
-        }
-    },
-
-    "Boss 090": {
-        "Name": "Head In The Clouds",
-        "Recollection_Sprite": "reco_Head_In_The_Clouds",
-        "Health_Phase_1": 310,
-        "Health_Phase_2": 350,
-        "Defense_Phase_1": 0,
-        "Defense_Phase_2": 0,
-        "Boss_Danger": 4,
-        "Bullet_Speed": 3.3,
-        "Move_Speed": 2.3,
-        "recollectionDescription": "Flying angel head. Summons deadly attacks directly from the inside of its head.",
-        "Palette": "spr_Head_In_The_Clouds_Palette",
-    
-        "Champ 1": {
-            "Name": "Head In The Clouds (Tier 2)",
-            "Recollection_Sprite": "reco_Head_In_The_Clouds",
-            "Health_Phase_1": 510,
-            "Health_Phase_2": 570
-        },
-        "Champ 2": { 
-            "Name":  "Head In The Clouds (Tier 3)",
-            "Recollection_Sprite": "reco_Head_In_The_Clouds",
-            "Health_Phase_1": 760,
-            "Health_Phase_2": 870
-        },
-        "Champ 3": {
-            "Name": "Head In The Clouds (Tier 4)",
-            "Recollection_Sprite": "reco_Head_In_The_Clouds",
-            "Health_Phase_1": 1090,
-            "Health_Phase_2": 1260,
-            "Defense_Phase_1": 1,
-            "Defense_Phase_2": 1
-        }
-    },
-
-    "Boss 098": {
-        "Name": "Spirit of Mischief",
-        "Recollection_Sprite": "reco_Spirit_of_Mischief",
-        "Health_Phase_1": 190,
-        "Health_Phase_2": 130,
-        "Defense_Phase_1": 0,
-        "Defense_Phase_2": 0,
-        "Boss_Danger": 2,
-        "Bullet_Speed": 2,
-        "Move_Speed": 1.4,
-    
-        "recollectionDescription": "Covers the screen in mischief.",
-    
-        "Champ 1": {
-            "Name": "Spirit of Maelstrom",
-            "Recollection_Sprite": "spr_Maelstrom_Spirit",
-            "Health_Phase_1": 220,
-            "Health_Phase_2": 160
-        },
-        "Champ 2": { 
-            "Name":  "Spirit of Warping",
-            "Recollection_Sprite": "spr_Warping_Spirit",
-            "Health_Phase_1": 220,
-            "Health_Phase_2": 160
-        },
-        "Champ 8": {
-            "Name": "Spirit of Chaos",
-            "Recollection_Sprite": "spr_Chaos_Spirit",
-            "Health_Phase_1": 250,
+            "Health_Phase_1": 260,
             "Health_Phase_2": 190,
-            "Bullet_Speed": 2.9,
-            "Move_Speed": 1.8
-        }
-    },
-    "Boss 111": {
-        "Name": "Masked Hope Spirit",
-        "Recollection_Sprite": "reco_Masked_Hope_Spirit",
-        "Health_Phase_1": 75,
-        "Health_Phase_2": 450,
-        "Defense_Phase_1": 0,
-        "Defense_Phase_2": 0,
-        "Boss_Danger": 5,
-        "Bullet_Speed": 3.1,
-        "Move_Speed": 2.55,
-        "recollectionDescription": "Covers the screen in mischief.",
-    
-        "Champ 1": {
+            "Defense_Phase_1": 0,
+            "Defense_Phase_2": 0,
+            "Boss_Danger": 4,
+            "Bullet_Speed": 2.8,
+            "Move_Speed": 2.7,
+            "recollectionDescription": "Cleanses the dreamscape of your presence. Soapy boss that moves erratically and leaves a slippery path behind",
+        
+            "Champ 1": {
+                "Name": "Brainwash (Tier 2)",
+                "Recollection_Sprite": "reco_Brainwash",
+                "Health_Phase_1": 460,
+                "Health_Phase_2": 330
+            },
+            "Champ 2": { 
+                "Name":  "Brainwash (Tier 3)",
+                "Recollection_Sprite": "reco_Brainwash",
+                "Health_Phase_1": 730,
+                "Health_Phase_2": 470
+            },
+            "Champ 3": {
+                "Name": "Brainwash (Tier 4)",
+                "Recollection_Sprite": "reco_Brainwash",
+                "Health_Phase_1": 990,
+                "Health_Phase_2": 730
+            }
+        },
+        "Boss 086": {
+            "Name": "Bed Bugs",
+            "Recollection_Sprite": "reco_Bed_Bug",
+            "Health_Phase_1": 200,
+            "Health_Phase_2": 200,
+            "Defense_Phase_1": 4,
+            "Defense_Phase_2": 4,
+            "Boss_Danger": 4,
+            "Bullet_Speed": 3.1,
+            "Move_Speed": 2.55,
+            "recollectionDescription": "Spikey Fiend, jumps around and spawns swarms of bed bugs to terrorize the soul.",
+        
+            "Champ 1": {
+                "Name": "Bed Bugs (Tier 2)",
+                "Recollection_Sprite": "spr_Bed_Bug_Feel",
+                "Health_Phase_1": 325,
+                "Health_Phase_2": 325,
+                "Defense_Phase_1": 5,
+                "Defense_Phase_2": 5
+            },
+            "Champ 2": { 
+                "Name":  "Bed Bugs (Tier 3)",
+                "Recollection_Sprite": "spr_Bed_Bug_Dream",
+                "Health_Phase_1": 485,
+                "Health_Phase_2": 485,
+                "Defense_Phase_1": 7,
+                "Defense_Phase_2": 7
+            },
+            "Champ 3": {
+                "Name": "Bed Bugs (Tier 4)",
+                "Recollection_Sprite": "spr_Bed_Bug_Nightmare",
+                "Health_Phase_1": 705,
+                "Health_Phase_2": 705,
+                "Defense_Phase_1": 10,
+                "Defense_Phase_2": 10
+            }
+        },
+        
+        "Boss 087": {
+            "Name": "Dungeon Executioner",
+            "Recollection_Sprite": "reco_Dungeon_Master",
+            "Health_Phase_1": 300,
+            "Health_Phase_2": 270,
+            "Defense_Phase_1": 1,
+            "Defense_Phase_2": 1,
+            "Boss_Danger": 4,
+            "Bullet_Speed": 3,
+            "Move_Speed": 2.7,
+            "recollectionDescription": "Powerful knight. Uses it's axe to deal punishment with quick moves.",
+        
+            "Champ 1": {
+                "Name": "Dungeon Executioner (Tier 2)",
+                "Recollection_Sprite": "reco_Dungeon_Master",
+                "Health_Phase_1": 500,
+                "Health_Phase_2": 460,
+                "Defense_Phase_1": 2,
+                "Defense_Phase_2": 2
+            },
+            "Champ 2": { 
+                "Name":  "Dungeon Executioner (Tier 3)",
+                "Recollection_Sprite": "reco_Dungeon_Master",
+                "Health_Phase_1": 760,
+                "Health_Phase_2": 710,
+                "Defense_Phase_1": 3,
+                "Defense_Phase_2": 3
+            },
+            "Champ 3": {
+                "Name": "Dungeon Executioner (Tier 4)",
+                "Recollection_Sprite": "reco_Dungeon_Master",
+                "Health_Phase_1": 1080,
+                "Health_Phase_2": 1010,
+                "Defense_Phase_1": 4,
+                "Defense_Phase_2": 4
+            }
+        },
+        
+        "Boss 089": {
+            "Name": "Sleep Caster",
+            "Recollection_Sprite": "reco_Sleep_Caster",
+            "Health_Phase_1": 330,
+            "Health_Phase_2": 330,
+            "Defense_Phase_1": 0,
+            "Defense_Phase_2": 0,
+            "Boss_Danger": 4,
+            "Bullet_Speed": 3.1,
+            "Move_Speed": 2.55,
+            "recollectionDescription": "Trickey Spellcaster. Uses spells to make the soul fall alseep, and create strange bullet patterns.",
+        
+            "Champ 1": {
+                "Name": "Sleep Caster (Tier 2)",
+                "Recollection_Sprite": "spr_Sleep_Caster_Feel",
+                "Health_Phase_1": 540,
+                "Health_Phase_2": 540
+            },
+            "Champ 2": { 
+                "Name":  "Sleep Caster (Tier 3)",
+                "Recollection_Sprite": "spr_Sleep_Caster_Dream",
+                "Health_Phase_1": 815,
+                "Health_Phase_2": 815,
+                "Defense_Phase_1": 1,
+                "Defense_Phase_2": 1
+            },
+            "Champ 3": {
+                "Name": "Sleep Caster (Tier 4)",
+                "Recollection_Sprite": "spr_Sleep_Caster_Nightmare",
+                "Health_Phase_1": 1165,
+                "Health_Phase_2": 1165,
+                "Defense_Phase_1": 1,
+                "Defense_Phase_2": 1
+            }
+        },
+
+        "Boss 090": {
+            "Name": "Head In The Clouds",
+            "Recollection_Sprite": "reco_Head_In_The_Clouds",
+            "Health_Phase_1": 310,
+            "Health_Phase_2": 350,
+            "Defense_Phase_1": 0,
+            "Defense_Phase_2": 0,
+            "Boss_Danger": 4,
+            "Bullet_Speed": 3.3,
+            "Move_Speed": 2.3,
+            "recollectionDescription": "Flying angel head. Summons deadly attacks directly from the inside of its head.",
+            "Palette": "spr_Head_In_The_Clouds_Palette",
+        
+            "Champ 1": {
+                "Name": "Head In The Clouds (Tier 2)",
+                "Recollection_Sprite": "reco_Head_In_The_Clouds",
+                "Health_Phase_1": 510,
+                "Health_Phase_2": 570
+            },
+            "Champ 2": { 
+                "Name":  "Head In The Clouds (Tier 3)",
+                "Recollection_Sprite": "reco_Head_In_The_Clouds",
+                "Health_Phase_1": 760,
+                "Health_Phase_2": 870
+            },
+            "Champ 3": {
+                "Name": "Head In The Clouds (Tier 4)",
+                "Recollection_Sprite": "reco_Head_In_The_Clouds",
+                "Health_Phase_1": 1090,
+                "Health_Phase_2": 1260,
+                "Defense_Phase_1": 1,
+                "Defense_Phase_2": 1
+            }
+        },
+
+        "Boss 098": {
+            "Name": "Spirit of Mischief",
+            "Recollection_Sprite": "reco_Spirit_of_Mischief",
+            "Health_Phase_1": 190,
+            "Health_Phase_2": 130,
+            "Defense_Phase_1": 0,
+            "Defense_Phase_2": 0,
+            "Boss_Danger": 2,
+            "Bullet_Speed": 2,
+            "Move_Speed": 1.4,
+        
+            "recollectionDescription": "Covers the screen in mischief.",
+        
+            "Champ 1": {
+                "Name": "Spirit of Maelstrom",
+                "Recollection_Sprite": "spr_Maelstrom_Spirit",
+                "Health_Phase_1": 220,
+                "Health_Phase_2": 160
+            },
+            "Champ 2": { 
+                "Name":  "Spirit of Warping",
+                "Recollection_Sprite": "spr_Warping_Spirit",
+                "Health_Phase_1": 220,
+                "Health_Phase_2": 160
+            },
+            "Champ 8": {
+                "Name": "Spirit of Chaos",
+                "Recollection_Sprite": "spr_Chaos_Spirit",
+                "Health_Phase_1": 250,
+                "Health_Phase_2": 190,
+                "Bullet_Speed": 2.15,
+                "Move_Speed": 1.8
+            }
+        },
+        "Boss 111": {
             "Name": "Masked Hope Spirit",
             "Recollection_Sprite": "reco_Masked_Hope_Spirit",
-            "Health_Phase_1": 95,
-            "Health_Phase_2": 900
+            "Health_Phase_1": 75,
+            "Health_Phase_2": 450,
+            "Defense_Phase_1": 0,
+            "Defense_Phase_2": 0,
+            "Boss_Danger": 5,
+            "Bullet_Speed": 3.1,
+            "Move_Speed": 2.55,
+            "recollectionDescription": "Covers the screen in mischief.",
+        
+            "Champ 1": {
+                "Name": "Masked Hope Spirit",
+                "Recollection_Sprite": "reco_Masked_Hope_Spirit",
+                "Health_Phase_1": 95,
+                "Health_Phase_2": 900
+            },
+            "Champ 2": { 
+                "Name":  "Masked High Hopes Spirit",
+                "Recollection_Sprite": "reco_Masked_High_Hope_Spirit",
+                "Health_Phase_1": 115,
+                "Health_Phase_2": 1550
+            },
+            "Champ 3": {
+                "Name": "Masked High Hopes Spirit",
+                "Recollection_Sprite": "reco_Masked_High_Hope_Spirit",
+                "Health_Phase_1": 135,
+                "Health_Phase_2": 2450
+            }
         },
-        "Champ 2": { 
-            "Name":  "Masked High Hopes Spirit",
-            "Recollection_Sprite": "reco_Masked_High_Hope_Spirit",
-            "Health_Phase_1": 115,
-            "Health_Phase_2": 1550
-        },
-        "Champ 3": {
-            "Name": "Masked High Hopes Spirit",
-            "Recollection_Sprite": "reco_Masked_High_Hope_Spirit",
-            "Health_Phase_1": 135,
-            "Health_Phase_2": 2450
-        }
-    },
-    "Boss 112": {
-        "Name": "Masked Bliss Spirit",
-        "Recollection_Sprite": "reco_Masked_Bliss_Spirit",
-        "Health_Phase_1": 75,
-        "Health_Phase_2": 450,
-        "Defense_Phase_1": 0,
-        "Defense_Phase_2": 0,
-        "Boss_Danger": 5,
-        "Bullet_Speed": 3,
-        "Move_Speed": 2.7,
-        "recollectionDescription": "Covers the screen in mischief.",
-    
-        "Champ 1": {
+        "Boss 112": {
             "Name": "Masked Bliss Spirit",
             "Recollection_Sprite": "reco_Masked_Bliss_Spirit",
-            "Health_Phase_1": 95,
-            "Health_Phase_2": 900
+            "Health_Phase_1": 75,
+            "Health_Phase_2": 450,
+            "Defense_Phase_1": 0,
+            "Defense_Phase_2": 0,
+            "Boss_Danger": 5,
+            "Bullet_Speed": 3,
+            "Move_Speed": 2.7,
+            "recollectionDescription": "Covers the screen in mischief.",
+        
+            "Champ 1": {
+                "Name": "Masked Bliss Spirit",
+                "Recollection_Sprite": "reco_Masked_Bliss_Spirit",
+                "Health_Phase_1": 95,
+                "Health_Phase_2": 900
+            },
+            "Champ 2": { 
+                "Name":  "Masked High Bliss Spirit",
+                "Recollection_Sprite": "reco_Masked_High_Bliss_Spirit",
+                "Health_Phase_1": 115,
+                "Health_Phase_2": 1550
+            },
+            "Champ 3": {
+                "Name": "Masked High Bliss Spirit",
+                "Recollection_Sprite": "reco_Masked_High_Hope_Spirit",
+                "Health_Phase_1": 135,
+                "Health_Phase_2": 2450
+            }
         },
-        "Champ 2": { 
-            "Name":  "Masked High Bliss Spirit",
-            "Recollection_Sprite": "reco_Masked_High_Bliss_Spirit",
-            "Health_Phase_1": 115,
-            "Health_Phase_2": 1550
-        },
-        "Champ 3": {
-            "Name": "Masked High Bliss Spirit",
-            "Recollection_Sprite": "reco_Masked_High_Hope_Spirit",
-            "Health_Phase_1": 135,
-            "Health_Phase_2": 2450
-        }
-    },
-    "Boss 113": {
-        "Name": "Masked Assurance Spirit",
-        "Recollection_Sprite": "reco_Masked_Assurance_Spirit",
-        "Health_Phase_1": 75,
-        "Health_Phase_2": 450,
-        "Defense_Phase_1": 0,
-        "Defense_Phase_2": 0,
-        "Boss_Danger": 5,
-        "Bullet_Speed": 3,
-        "Move_Speed": 2.1,
-        "recollectionDescription": "Covers the screen in mischief.",
-    
-        "Champ 1": {
+        "Boss 113": {
             "Name": "Masked Assurance Spirit",
             "Recollection_Sprite": "reco_Masked_Assurance_Spirit",
-            "Health_Phase_1": 95,
-            "Health_Phase_2": 900
+            "Health_Phase_1": 75,
+            "Health_Phase_2": 450,
+            "Defense_Phase_1": 0,
+            "Defense_Phase_2": 0,
+            "Boss_Danger": 5,
+            "Bullet_Speed": 3,
+            "Move_Speed": 2.1,
+            "recollectionDescription": "Covers the screen in mischief.",
+        
+            "Champ 1": {
+                "Name": "Masked Assurance Spirit",
+                "Recollection_Sprite": "reco_Masked_Assurance_Spirit",
+                "Health_Phase_1": 95,
+                "Health_Phase_2": 900
+            },
+            "Champ 2": { 
+                "Name":  "Masked High Assurance Spirit",
+                "Recollection_Sprite": "reco_Masked_High_Assurance_Spirit",
+                "Health_Phase_1": 115,
+                "Health_Phase_2": 1550
+            },
+            "Champ 3": {
+                "Name": "Masked High Assurance Spirit",
+                "Recollection_Sprite": "reco_Masked_High_Assurance_Spirit",
+                "Health_Phase_1": 135,
+                "Health_Phase_2": 2450
+            }
         },
-        "Champ 2": { 
-            "Name":  "Masked High Assurance Spirit",
-            "Recollection_Sprite": "reco_Masked_High_Assurance_Spirit",
-            "Health_Phase_1": 115,
-            "Health_Phase_2": 1550
-        },
-        "Champ 3": {
-            "Name": "Masked High Assurance Spirit",
-            "Recollection_Sprite": "reco_Masked_High_Assurance_Spirit",
-            "Health_Phase_1": 135,
-            "Health_Phase_2": 2450
-        }
-    },
-    "Boss 114": {
-        "Name": "Masked Loathing Spirit",
-        "Recollection_Sprite": "reco_Masked_Loathing_Spirit",
-        "Health_Phase_1": 75,
-        "Health_Phase_2": 450,
-        "Defense_Phase_1": 0,
-        "Defense_Phase_2": 0,
-        "Boss_Danger": 5,
-        "Bullet_Speed": 3,
-        "Move_Speed": 2.1,
-        "recollectionDescription": "Covers the screen in mischief.",
-    
-        "Champ 1": {
+        "Boss 114": {
             "Name": "Masked Loathing Spirit",
             "Recollection_Sprite": "reco_Masked_Loathing_Spirit",
-            "Health_Phase_1": 95,
-            "Health_Phase_2": 900
+            "Health_Phase_1": 75,
+            "Health_Phase_2": 450,
+            "Defense_Phase_1": 0,
+            "Defense_Phase_2": 0,
+            "Boss_Danger": 5,
+            "Bullet_Speed": 3,
+            "Move_Speed": 2.1,
+            "recollectionDescription": "Covers the screen in mischief.",
+        
+            "Champ 1": {
+                "Name": "Masked Loathing Spirit",
+                "Recollection_Sprite": "reco_Masked_Loathing_Spirit",
+                "Health_Phase_1": 95,
+                "Health_Phase_2": 900
+            },
+            "Champ 2": { 
+                "Name":  "Masked High Loathing Spirit",
+                "Recollection_Sprite": "reco_Masked_High_Loathing_Spirit",
+                "Health_Phase_1": 115,
+                "Health_Phase_2": 1550
+            },
+            "Champ 3": {
+                "Name": "Masked High Loathing Spirit",
+                "Recollection_Sprite": "reco_Masked_High_Loathing_Spirit",
+                "Health_Phase_1": 135,
+                "Health_Phase_2": 2450
+            }
         },
-        "Champ 2": { 
-            "Name":  "Masked High Loathing Spirit",
-            "Recollection_Sprite": "reco_Masked_High_Loathing_Spirit",
-            "Health_Phase_1": 115,
-            "Health_Phase_2": 1550
-        },
-        "Champ 3": {
-            "Name": "Masked High Loathing Spirit",
-            "Recollection_Sprite": "reco_Masked_High_Loathing_Spirit",
-            "Health_Phase_1": 135,
-            "Health_Phase_2": 2450
-        }
-    },
-    "Boss 115": {
-        "Name": "Masked Paranoia Spirit",
-        "Recollection_Sprite": "reco_Masked_Paranoia_Spirit",
-        "Health_Phase_1": 75,
-        "Health_Phase_2": 450,
-        "Defense_Phase_1": 0,
-        "Defense_Phase_2": 0,
-        "Boss_Danger": 5,
-        "Bullet_Speed": 3.25,
-        "Move_Speed": 2.7,
-        "recollectionDescription": "Covers the screen in mischief.",
-    
-        "Champ 1": {
+        "Boss 115": {
             "Name": "Masked Paranoia Spirit",
             "Recollection_Sprite": "reco_Masked_Paranoia_Spirit",
-            "Health_Phase_1": 95,
-            "Health_Phase_2": 900
+            "Health_Phase_1": 75,
+            "Health_Phase_2": 450,
+            "Defense_Phase_1": 0,
+            "Defense_Phase_2": 0,
+            "Boss_Danger": 5,
+            "Bullet_Speed": 3.25,
+            "Move_Speed": 2.7,
+            "recollectionDescription": "Covers the screen in mischief.",
+        
+            "Champ 1": {
+                "Name": "Masked Paranoia Spirit",
+                "Recollection_Sprite": "reco_Masked_Paranoia_Spirit",
+                "Health_Phase_1": 95,
+                "Health_Phase_2": 900
+            },
+            "Champ 2": { 
+                "Name":  "Masked High Paranoias Spirit",
+                "Recollection_Sprite": "reco_Masked_High_Paranoia_Spirit",
+                "Health_Phase_1": 115,
+                "Health_Phase_2": 1550
+            },
+            "Champ 3": {
+                "Name": "Masked High Paranoias Spirit",
+                "Recollection_Sprite": "reco_Masked_High_Paranoia_Spirit",
+                "Health_Phase_1": 135,
+                "Health_Phase_2": 2450
+            }
         },
-        "Champ 2": { 
-            "Name":  "Masked High Paranoias Spirit",
-            "Recollection_Sprite": "reco_Masked_High_Paranoia_Spirit",
-            "Health_Phase_1": 115,
-            "Health_Phase_2": 1550
-        },
-        "Champ 3": {
-            "Name": "Masked High Paranoias Spirit",
-            "Recollection_Sprite": "reco_Masked_High_Paranoia_Spirit",
-            "Health_Phase_1": 135,
-            "Health_Phase_2": 2450
-        }
-    },
-    "Boss 116": {
-        "Name": "Masked Despair Spirit",
-        "Recollection_Sprite": "reco_Masked_Despair_Spirit",
-        "Health_Phase_1": 75,
-        "Health_Phase_2": 450,
-        "Defense_Phase_1": 0,
-        "Defense_Phase_2": 0,
-        "Boss_Danger": 5,
-        "Bullet_Speed": 3.15,
-        "Move_Speed": 2.1,
-        "recollectionDescription": "Covers the screen in mischief.",
-    
-        "Champ 1": {
+        "Boss 116": {
             "Name": "Masked Despair Spirit",
             "Recollection_Sprite": "reco_Masked_Despair_Spirit",
-            "Health_Phase_1": 95,
-            "Health_Phase_2": 900
+            "Health_Phase_1": 75,
+            "Health_Phase_2": 450,
+            "Defense_Phase_1": 0,
+            "Defense_Phase_2": 0,
+            "Boss_Danger": 5,
+            "Bullet_Speed": 3.15,
+            "Move_Speed": 2.1,
+            "recollectionDescription": "Covers the screen in mischief.",
+        
+            "Champ 1": {
+                "Name": "Masked Despair Spirit",
+                "Recollection_Sprite": "reco_Masked_Despair_Spirit",
+                "Health_Phase_1": 95,
+                "Health_Phase_2": 900
+            },
+            "Champ 2": { 
+                "Name":  "Masked High Despairs Spirit",
+                "Recollection_Sprite": "reco_Masked_High_Despair_Spirit",
+                "Health_Phase_1": 115,
+                "Health_Phase_2": 1550
+            },
+            "Champ 3": {
+                "Name": "Masked High Despairs Spirit",
+                "Recollection_Sprite": "reco_Masked_High_Despair_Spirit",
+                "Health_Phase_1": 135,
+                "Health_Phase_2": 2450
+            }
         },
-        "Champ 2": { 
-            "Name":  "Masked High Despairs Spirit",
-            "Recollection_Sprite": "reco_Masked_High_Despair_Spirit",
-            "Health_Phase_1": 115,
-            "Health_Phase_2": 1550
-        },
-        "Champ 3": {
-            "Name": "Masked High Despairs Spirit",
-            "Recollection_Sprite": "reco_Masked_High_Despair_Spirit",
-            "Health_Phase_1": 135,
-            "Health_Phase_2": 2450
+        "Boss 999": {
+            "Name": "Template Boss",
+            "Recollection_Sprite": "spr_Template_Boss",
+            "Health_Phase_1": 150,
+            "Health_Phase_2": 150,
+            "Defense_Phase_1": 0,
+            "Defense_Phase_2": 0,
+            "Boss_Danger": 1,
+            "Bullet_Speed": 2.5,
+            "Move_Speed": 1,
+            "recollectionDescription": "Look at this cutie"
         }
-    },
-    "Boss 999": {
-        "Name": "Template Boss",
-        "Recollection_Sprite": "spr_Template_Boss",
-        "Health_Phase_1": 150,
-        "Health_Phase_2": 150,
-        "Defense_Phase_1": 0,
-        "Defense_Phase_2": 0,
-        "Boss_Danger": 1,
-        "Bullet_Speed": 2.5,
-        "Move_Speed": 1,
-        "recollectionDescription": "Look at this cutie"
+        
     }
-    
-}

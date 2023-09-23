@@ -60,13 +60,13 @@ function scr_Load_Room() {
 	global.soulSpawnXAdd = 0;
 	global.soulSpawnYAdd = 0;
 
-	nextRoomType = Floor_Layout_Control.Flash[nextRoom,0];
+	nextRoomType = global.floor[nextRoom,0];
 
 	if global.currentroom = nextRoom {
     
 	    if nextRoomType = "Boss" || nextRoomType = "Super Boss" {
 	        room_goto(Medium_Flash_Boss_Room);
-	        if Floor_Layout_Control.Flash[nextRoom,3] = 1216 {
+	        if global.floor[nextRoom,3] = 1216 {
 	            room_goto(Large_Flash_Boss_Room);
 	        }
 	        global.currentroom = nextRoom;

@@ -1,4 +1,4 @@
-fieldType = Floor_Layout_Control.Flash[global.currentroom,4];
+fieldType = global.floor[global.currentroom,4];
 
 var hbase = (room_width / 2) - (global.roomSizeX / 2);
 var vbase = (room_height / 2) - (global.roomSizeY / 2);

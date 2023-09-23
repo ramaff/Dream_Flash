@@ -73,7 +73,7 @@ function scr_Weapon_Use_List(cWP = global.currentweapon) {
 			scr_Ascending_Soul_Essence_Beam(cWP);	
 		}
 		
-		scr_Setup_Weapon_Stats();
+		scr_setup_weapon_stats(current_weapon_stats);
 		
 		barrage = false;
 		minion = false;
@@ -121,8 +121,8 @@ function scr_Weapon_Use_List(cWP = global.currentweapon) {
 					
 					alarm[11] = (Shot_Barrage_Speed[bi]);
 					
+					//Shot_Repetition[bi]--;
 					Shot_Repetition_Max[bi] = Shot_Repetition[bi];
-					Shot_Repetition[bi]--;
 		
 					fval = bi;
 					break;
@@ -150,7 +150,7 @@ function scr_Weapon_Use_List(cWP = global.currentweapon) {
 		
 		if spawnProjectile {
 			if !minion {
-				scr_Shot_Creation(current_weapon_stats);
+				scr_Shot_Creation();
 			} else {
 				scr_Soul_Spawn();	
 			}
@@ -166,12 +166,12 @@ function scr_Weapon_Use_List(cWP = global.currentweapon) {
 			
 				current_weapon_stats = Shot_Extra[i]
 			
-				scr_Setup_Weapon_Stats()
+				scr_setup_weapon_stats(current_weapon_stats)
 				scr_Hard_Coded_Weapon_Stats(cWP);
 		
 				if spawnProjectile {
 					if !minion {
-						scr_Shot_Creation(current_weapon_stats);
+						scr_Shot_Creation();
 					} else {
 						scr_Soul_Spawn();	
 					}

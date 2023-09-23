@@ -270,7 +270,7 @@ if bossActiveAttackDelay[1] <= 0 and bossPatternCooldown <= 0 and bossPatternCou
 		
 		var beamstart = bossPatternCountMax - bossPatternCount;
 		
-		scr_Easy_Boss_Beam_Shoot(bossPatternCountMax, 33);
+		scr_Easy_Boss_Beam_Shoot(bossPatternCountMax, 31);
 			
 	    if bossPatternCount < 280 {
 			

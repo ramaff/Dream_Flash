@@ -26,7 +26,7 @@ function scr_Emotion_Item_Choose() {
 	var dItem = 0;
 
 	for(f = 1; f <= 12; f++) {
-		if itemtype = string(Floor_Layout_Control.Flash[i,f+6]) {
+		if itemtype = string(global.floor[i,f+6]) {
 			dItem = 1;	
 		}
 	}

@@ -57,7 +57,7 @@
             {"resourceType":"Keyframe<SpriteFrameKeyframe>","resourceVersion":"1.0","Channels":{"0":{"resourceType":"SpriteFrameKeyframe","resourceVersion":"1.0","Id":{"name":"b70da9db-c607-49ec-923e-210d27305da2","path":"sprites/spr_Boss_Shadow/spr_Boss_Shadow.yy",},},},"Disabled":false,"id":"a0a7e036-17bf-4657-8b20-13c60ea91b8e","IsCreationKey":false,"Key":0.0,"Length":1.0,"Stretch":false,},
           ],},"modifiers":[],"spriteId":null,"trackColour":0,"tracks":[],"traits":0,},
     ],
-    "visibleRange": {"x":0.0,"y":0.0,},
+    "visibleRange": null,
     "volume": 1.0,
     "xorigin": 200,
     "yorigin": 200,

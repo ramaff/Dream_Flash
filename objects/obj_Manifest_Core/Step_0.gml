@@ -10,7 +10,7 @@ if currentphase = 2 {
         bossID = other.bossID;
         currentphase = other.currentphase;
         bossdefense = other.bossdefense - 25;
-		difficulty = Floor_Layout_Control.Flash[global.currentroom,24];
+		difficulty = global.floor[global.currentroom,24];
     }
     instance_destroy();
 }

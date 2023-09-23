@@ -100,6 +100,7 @@ function scr_Beam_Create(shxx, shyy, beamseg, beamdir, curvedir, beamstop, beamx
 						}
 						
 						with instance_create(shxx + beamxx,shyy + beamyy,obj_Beam_Shot) {
+						//with instance_create(shxx, shyy,obj_Beam_Shot) {
 							
 							//Print_DF("hitagain: " + string(other.shothitagain))
 
@@ -123,11 +124,15 @@ function scr_Beam_Create(shxx, shyy, beamseg, beamdir, curvedir, beamstop, beamx
 							shothitagain = 0;
 							shotburstpower = shotpower
 							
+							splitsize = 128 * shotsize;
+							beamsize = shotsize;
+							
 							scr_Beam_Create(shxx, shyy, beamseg, beamdir + other.dir, curvedir, beamstop, beamxx, beamyy, beamtype, beamtotalsegs, beamspriteindex, beamsize, dirChange, homespeed, splitsize)
 						}
 							
 					    dir += shotairburststats[burstIndex].Spread;
 					}
+					//scr_Create_Beam_Tip(shxx, shyy, beamxx, beamyy, beamsize, beamdir);
 					scr_Create_Beam_Tip(shxx, shyy, beamxx, beamyy, beamsize, beamdir);
 					//instance_destroy();
 					exit;

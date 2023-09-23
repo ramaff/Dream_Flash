@@ -10,7 +10,7 @@ function scr_Stat_Field_Spawn_Check() {
 	global.orbit[999] = -1000;
             
 	for(j = 1; j <= 13; j++) {
-	    Floor_Layout_Control.Flash[global.currentroom,6 + j] = "00"; 
+	    global.floor[global.currentroom,6 + j] = "00"; 
 	}
         
 	itemNumChoice = 2 + floor((global.soulhope + random(100 + global.soulhope * 3)) / 100);
@@ -25,7 +25,7 @@ function scr_Stat_Field_Spawn_Check() {
 	}
 	
 	itemNumPick = 1;
-	var class = Floor_Layout_Control.Flash[global.currentroom,0];
+	var class = global.floor[global.currentroom,0];
 	for(j = 1; j <= itemNumChoice; j++) {
 		i = global.currentroom;
 		if class = "Emotion Field" {
@@ -33,12 +33,12 @@ function scr_Stat_Field_Spawn_Check() {
 		} else {
 			itemPick = scr_Class_Item_Choose(class,0);
 		}
-	    Floor_Layout_Control.Flash[global.currentroom,6+j] = itemPick;
+	    global.floor[global.currentroom,6+j] = itemPick;
 	}
-	//Floor_Layout_Control.Flash[global.currentroom,19] = scr_Stat_Up_Choose(class);
-	field = Floor_Layout_Control.Flash[global.currentroom,0];
+	//global.floor[global.currentroom,19] = scr_Stat_Up_Choose(class);
+	field = global.floor[global.currentroom,0];
 	for(i = 1; i <= 13; i++) {
-	    item[i] = Floor_Layout_Control.Flash[global.currentroom,6+i];
+	    item[i] = global.floor[global.currentroom,6+i];
 	}
             
 	if global.OA[5] > 0 and array_length(global.OA5rooms[global.currentroom]) = 0 {

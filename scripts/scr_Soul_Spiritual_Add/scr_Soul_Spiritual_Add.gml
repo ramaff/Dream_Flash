@@ -16,13 +16,13 @@ function scr_Soul_Spiritual_Add() {
 	    if global.goodSpirits = 1 and global.badSpirits = 0 {
 	        badSpiritRoom = global.currentroom + 1;
 	        for(i = badSpiritRoom; i <= global.maxRooms; i++) {
-	            if Floor_Layout_Control.Flash[i,0] = "Boss" {
+	            if global.floor[i,0] = "Boss" {
 	                badSpiritRoom = i;
 	                break;
 	            }
 	        }
-	        Floor_Layout_Control.Flash[badSpiritRoom,26] = scr_Spirit_Choose("Bad");
-	         Floor_Layout_Control.Flash[badSpiritRoom,3] += 128;
+	        global.floor[badSpiritRoom,26] = scr_Spirit_Choose("Bad");
+	         global.floor[badSpiritRoom,3] += 128;
 	        global.evilSpiritRoom = badSpiritRoom;
 	    }
 	}

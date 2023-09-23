@@ -2,8 +2,8 @@ function scr_Next_Room_Position(currRoomIndex) {
 	move = choose(1,2,3,4);
 
 	if currRoomIndex != 1 {
-		currRoomX = Flash[currRoomIndex-1,1];
-		currRoomY = Flash[currRoomIndex-1,2];
+		currRoomX = global.floor[currRoomIndex-1,1];
+		currRoomY = global.floor[currRoomIndex-1,2];
 	} else {
 		currRoomX = 0;
 		currRoomY = 0;
@@ -30,7 +30,7 @@ function scr_Next_Room_Position(currRoomIndex) {
 
 	if currRoomIndex > 1 {
 	    for(j = 0; j < currRoomIndex; j++) {
-	        if (posRoomX = Flash[j,1]) and (posRoomY = Flash[j,2]) {
+	        if (posRoomX = global.floor[j,1]) and (posRoomY = global.floor[j,2]) {
 	            decision = 0;
 	        }
 	    }
@@ -38,31 +38,31 @@ function scr_Next_Room_Position(currRoomIndex) {
 	    startNext = 0;
     
 	    for(j = 0; j < currRoomIndex; j++) {
-	        if (posRoomX = Flash[j,1] + 1) and (posRoomY = Flash[j,2]) {
+	        if (posRoomX = global.floor[j,1] + 1) and (posRoomY = global.floor[j,2]) {
 	            adjThree++;
 	        }
-	        if (posRoomX = Flash[j,1]) and (posRoomY = Flash[j,2] + 1) {
+	        if (posRoomX = global.floor[j,1]) and (posRoomY = global.floor[j,2] + 1) {
 	            adjThree++;
 	        }
-	        if (posRoomX = Flash[j,1] - 1) and (posRoomY = Flash[j,2]) {
+	        if (posRoomX = global.floor[j,1] - 1) and (posRoomY = global.floor[j,2]) {
 	            adjThree++;
 	        }
-	        if (posRoomX = Flash[j,1]) and (posRoomY = Flash[j,2] - 1) {
+	        if (posRoomX = global.floor[j,1]) and (posRoomY = global.floor[j,2] - 1) {
 	            adjThree++;
 	        }
 	    }
     
 	    if currRoomIndex > 7 {
-	        if (posRoomX = Flash[0,1] + 1) and (posRoomY = Flash[0,2]) {
+	        if (posRoomX = global.floor[0,1] + 1) and (posRoomY = global.floor[0,2]) {
 	            startNext++;
 	        }
-	        if (posRoomX = Flash[0,1]) and (posRoomY = Flash[0,2] + 1) {
+	        if (posRoomX = global.floor[0,1]) and (posRoomY = global.floor[0,2] + 1) {
 	            startNext++;
 	        }
-	        if (posRoomX = Flash[0,1] - 1) and (posRoomY = Flash[0,2]) {
+	        if (posRoomX = global.floor[0,1] - 1) and (posRoomY = global.floor[0,2]) {
 	            startNext++;
 	        }
-	        if (posRoomX = Flash[0,1]) and (posRoomY = Flash[0,2] - 1) {
+	        if (posRoomX = global.floor[0,1]) and (posRoomY = global.floor[0,2] - 1) {
 	            startNext++;
 	        }
 	    }

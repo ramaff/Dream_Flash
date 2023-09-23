@@ -3,7 +3,7 @@ boost = global.boost;
 champ = global.champ;
 
 // Boss # id
-bossValue = 44;
+boss_value = 44;
 scr_Boss_Stats_Setup(2);
 
 // Required, usually set to 0.5
@@ -33,8 +33,8 @@ if instance_number(obj_Conga_Line) <= total_num {
 	var distt = 0;
 	var angg = 0;
 
-	for(var i = 0; i < 10; i++) {
-		distt = 120 + (120 * floor(i / 4))
+	for(var i = 0; i < 12; i++) {
+		distt = 120 + (90 * floor(i / 4))
 		angg = -45 + ((i mod 4) * 30)
 		xx = lengthdir_x(distt, opdir + angg) + x;
 		yy = lengthdir_y(distt, opdir + angg) + y;
@@ -44,13 +44,13 @@ if instance_number(obj_Conga_Line) <= total_num {
 			followtarget = ct;
 		
 			ct = id;
-			scr_Boss_Stats_Setup();
+			scr_Boss_Stats_Setup(2);
 			
 			champ = other.champ;
 			boost = other.boost;
-			difficulty = Floor_Layout_Control.Flash[global.currentroom,24];
+			difficulty = global.floor[global.currentroom,24];
 		}
 	}
 }
 
-activeAttackCooldown = 240;
+active_attack_cooldown = 240;

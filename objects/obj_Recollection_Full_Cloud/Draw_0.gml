@@ -2,7 +2,6 @@
 // You can write your code in this editor
 
 depth = -2;
-
 draw_self();
 
 draw_set_color(c_black);

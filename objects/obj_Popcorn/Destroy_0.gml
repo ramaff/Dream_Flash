@@ -1,6 +1,5 @@
 /// @description Insert description here
 // You can write your code in this editor
-    ds_list_destroy(projectile_hits);
     scr_H14_Minion();
     
     scr_Default_Attack_Settings();

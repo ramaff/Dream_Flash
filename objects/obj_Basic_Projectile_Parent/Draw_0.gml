@@ -37,7 +37,9 @@ if shot_stats.Shot_Lobbing = true {
 }
 
 if global.A[14] > 0 and shotorigin = obj_Soul_Parent {
-    draw_sprite_ext(spr_Aura_Strike_Aura,0,x,y,0.8,0.8,0,c_white,1);
+	var _size = sqrt(sprite_get_width(sprite_index) * sprite_get_height(sprite_index)) * shotsize * 1.5
+	_size = _size / 80
+    draw_sprite_ext(spr_Aura_Strike_Aura,0,x,y,_size, _size,0,c_white,1);
 }
 
 if shotaura = 1 and image_alpha > 0 {

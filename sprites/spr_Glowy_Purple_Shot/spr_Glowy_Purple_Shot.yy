@@ -57,7 +57,7 @@
             {"resourceType":"Keyframe<SpriteFrameKeyframe>","resourceVersion":"1.0","Channels":{"0":{"resourceType":"SpriteFrameKeyframe","resourceVersion":"1.0","Id":{"name":"435524d1-fe74-454d-82eb-70d3a7f36ec8","path":"sprites/spr_Glowy_Purple_Shot/spr_Glowy_Purple_Shot.yy",},},},"Disabled":false,"id":"8f192235-23a6-41c2-8b9f-82dd0ea76b97","IsCreationKey":false,"Key":0.0,"Length":1.0,"Stretch":false,},
           ],},"modifiers":[],"spriteId":null,"trackColour":0,"tracks":[],"traits":0,},
     ],
-    "visibleRange": {"x":0.0,"y":0.0,},
+    "visibleRange": null,
     "volume": 1.0,
     "xorigin": 36,
     "yorigin": 36,

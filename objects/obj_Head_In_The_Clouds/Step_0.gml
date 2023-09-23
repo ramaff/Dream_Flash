@@ -8,7 +8,7 @@ scr_Boss_Height_Bob(20, 1, 0);
 
 // Make boss shape wobble:
 direction = scr_Soul_Point(x, y+150);
-if activeAttack = 0 {
+if active_attack = 0 {
 	scr_Boss_Wobble("Horizontal", 0.4, 1, 0);
 	speed = bossmovespeed;
 } else {
@@ -19,26 +19,26 @@ if activeAttack = 0 {
 /////////////// Active Attack Prep
 //////////////////////////////////////////////////////////////////////////////////////////
 
-if activeAttackDelay <= 0 and activeAttackCooldown <= 0 and activeAttackDuration <= 0 {
+if active_attack_delay <= 0 and active_attack_cooldown <= 0 and active_attack_duration <= 0 {
     
 	// Pick a random attack to do
 	if currentphase = 1 {
 		if !scr_Minion_Count() {
-			activeAttack = choose(1, 1, 2, 3);
+			active_attack = choose(1, 1, 2, 3);
 		} else {
-			activeAttack = choose(1, 1, 2);	
+			active_attack = choose(1, 1, 2);	
 		}
 	} else if currentphase = 2 {
 		if !scr_Minion_Count() {
-			activeAttack = choose(4, 4, 2, 3);
+			active_attack = choose(4, 4, 2, 3);
 		} else {
-			activeAttack = choose(4, 4, 2);	
+			active_attack = choose(4, 4, 2);	
 		}
 	}
-	//activeAttack = 2;
+	//active_attack = 2;
 	
 	// Guided Halo Bullets
-    if activeAttack = 1 {
+    if active_attack = 1 {
 		// Setup how many attacks per boss move, delay, etc
 		var attack_count = 4;
 		var attack_gap = 45;
@@ -49,11 +49,11 @@ if activeAttackDelay <= 0 and activeAttackCooldown <= 0 and activeAttackDuration
 		scr_Boss_Attack_Time_Setup_v2(attack_count, 40, attack_gap, 360, 30, 10);
 		
 		// Can set up the initial pattern direction
-		// patternDirection = scr_Soul_Point();
-		// patternDirection = random(360;
+		// pattern_direction = scr_Soul_Point();
+		// pattern_direction = random(360;
     }
 	// Lightning Strikes
-	if activeAttack = 2 {
+	if active_attack = 2 {
 		// Setup how many attacks per boss move, delay, etc
 		var attack_count = 7;
 		if tier = 1 || tier >= 3 {
@@ -70,11 +70,11 @@ if activeAttackDelay <= 0 and activeAttackCooldown <= 0 and activeAttackDuration
 		}
 		
 		// Can set up the initial pattern direction
-		// patternDirection = scr_Soul_Point();
-		// patternDirection = random(360;
+		// pattern_direction = scr_Soul_Point();
+		// pattern_direction = random(360;
     }
 	// Angel Heads
-	if activeAttack = 3 {
+	if active_attack = 3 {
 		// Setup how many attacks per boss move, delay, etc
 		var attack_count = 4 + tier;
 		attack_gap = 30;
@@ -84,11 +84,11 @@ if activeAttackDelay <= 0 and activeAttackCooldown <= 0 and activeAttackDuration
 		scr_Boss_Attack_Time_Setup_v2(attack_count, 40, attack_gap, 180, 30, 10);
 		
 		// Can set up the initial pattern direction
-		// patternDirection = scr_Soul_Point();
-		// patternDirection = random(360;
+		// pattern_direction = scr_Soul_Point();
+		// pattern_direction = random(360;
     }
 	// Holy Smite Bounce Bomb
-	if activeAttack = 4 {
+	if active_attack = 4 {
 		var ball_time = 180;
 		if tier = 1 || tier >= 3 {
 			ball_time = 300;	
@@ -97,8 +97,8 @@ if activeAttackDelay <= 0 and activeAttackCooldown <= 0 and activeAttackDuration
 		scr_Boss_Attack_Time_Setup_v2(210, 30, 1, ball_time, 60, 10);
 		
 		// Can set up the initial pattern direction
-		// patternDirection = scr_Soul_Point();
-		// patternDirection = random(360;
+		// pattern_direction = scr_Soul_Point();
+		// pattern_direction = random(360;
     }
 }
 
@@ -109,32 +109,32 @@ if activeAttackDelay <= 0 and activeAttackCooldown <= 0 and activeAttackDuration
 scr_Default_Attack_Settings();
 
 // If its time to attack, attack
-if activeAttackDelay <= 0 and patternCooldown <= 0 and patternCount > 0 {
+if active_attack_delay <= 0 and pattern_cooldown <= 0 and pattern_count > 0 {
    
-    if activeAttack = 1 {
+    if active_attack = 1 {
 		scr_Boss_Stretch("Vertical", 0.7);
 		
 		boss_yoffset = 60
 		//bullet_direction = 270 - 120 + random(240);
 		bullet_type = obj_Guided_Bullet_Halo_Bullet;
-		bullet_speed = bossbulletspeed * (1.3 + patternCount * 0.55)
-		bullet_lifespan = 360 + (patternCount * 45);
+		bullet_speed = bossbulletspeed * (1.3 + pattern_count * 0.55)
+		bullet_lifespan = 360 + (pattern_count * 45);
 		if tier = 1 || tier >= 3 {
-			bullet_lifespan = 360 + (patternCount * 35);
+			bullet_lifespan = 360 + (pattern_count * 35);
 		}
 		if tier >= 2 {
 			bullet_type = obj_Guided_Bullet_Halo_Bullet_2;
 		}
 		bullet_sprite = spr_Glowy_Yellow_Shot;
-		bullet_direction = 120 + ((240 / patternCountMax) * patternCount)
+		bullet_direction = 120 + ((240 / pattern_count_max) * pattern_count)
 		
 		scr_Boss_Shoot();
 	
 		// If you gotta change the pattern aim direction
-	    // bossPatternDirection += 0;
+	    // bossPattern_direction += 0;
 	}
 	
-	if activeAttack = 2 {
+	if active_attack = 2 {
 		scr_Boss_Stretch("Vertical", 0.7);
 		
 		bullet_type = obj_Boss_Sky_Lightning;
@@ -158,10 +158,10 @@ if activeAttackDelay <= 0 and patternCooldown <= 0 and patternCount > 0 {
 		}
 	
 		// If you gotta change the pattern aim direction
-	    // bossPatternDirection += 0;
+	    // bossPattern_direction += 0;
 	}
 	
-	if activeAttack = 3 {
+	if active_attack = 3 {
 		minion_yy = 20
 		minion_xx = -20 + random(40);
 		minion_speed = 4;
@@ -173,12 +173,12 @@ if activeAttackDelay <= 0 and patternCooldown <= 0 and patternCount > 0 {
 	    scr_Minion_Spawn();
 	}
 	
-	if activeAttack = 4 {
-		if patternCount mod 10 = 0 {
+	if active_attack = 4 {
+		if pattern_count mod 10 = 0 {
 			scr_Boss_Stretch("Horizontal", 0.075);
 		}
 		
-		if patternCount = patternCountMax {
+		if pattern_count = pattern_count_max {
 			 bullet_direction = 0;
 		    bullet_count = 1;
 		    bullet_spread = 0;
@@ -204,16 +204,16 @@ if activeAttackDelay <= 0 and patternCooldown <= 0 and patternCount > 0 {
 	}
 	
 	// Maybe I should put this into a script
-    patternCount -= 1;
-    patternCooldown += patternCooldownMax;
+    pattern_count -= 1;
+    pattern_cooldown += pattern_cooldown_max;
 }
 
 //////////////////////////////////////////////////////////////////////////////////////////
 /// Active Attack Post
 //////////////////////////////////////////////////////////////////////////////////////////
 
-if activeAttackDuration <= 0 { 
-    activeAttack = 0;
+if active_attack_duration <= 0 { 
+    active_attack = 0;
 }
 
 /// Boss Sprite Code
@@ -222,19 +222,19 @@ if activeAttackDuration <= 0 {
 scr_Boss_Size_Lerp_Dir(0.15);
 
 // Handles boss attack sprite animation
-if activeAttack = 1 {
+if active_attack = 1 {
 	var holdFrame = 2;
 	scr_Boss_Attack_Sprite_v2(spr_Head_In_The_Clouds_Mouth_Shoot, holdFrame, 3, 3, 20);
 	if image_index = holdFrame {
 		scr_Boss_Wobble("Horizontal", 2, 0.25, 0)	
 	}
-} else if activeAttack = 3 || activeAttack = 4 {
+} else if active_attack = 3 || active_attack = 4 {
 	var holdFrame = 2;
 	scr_Boss_Attack_Sprite_v2(spr_Head_In_The_Clouds_Hard_Think, holdFrame, 3, 3, 20);
 	if image_index = holdFrame {
 		scr_Boss_Wobble("Horizontal", 2, 0.25, 0)	
 	}
-} else if activeAttack = 2 {
+} else if active_attack = 2 {
 	var holdFrame = 2;
 	scr_Boss_Attack_Sprite_v2(spr_Head_In_The_Clouds_Sky_Lightning, holdFrame, 3, 3, 20);
 	if image_index = holdFrame {

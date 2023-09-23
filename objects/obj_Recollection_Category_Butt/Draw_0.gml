@@ -5,13 +5,16 @@ depth = -1;
 
 if selected = true {
 	depth = -100;	
+	image_alpha = 1
 } else {
 	depth = -1;	
+	image_alpha = 0.75 + scr_Wave(0, 0.05, 1, 0)
 }
 
 draw_set_font(Dream_Flash_Font);
 draw_set_colour(c_black);
 draw_set_halign(fa_center);
+
 draw_self();
 image_speed = 0;
 image_index = 0;

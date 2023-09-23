@@ -1,7 +1,7 @@
 /// @description Insert description here
 // You can write your code in this editor
 
-scr_Boss_Shadow();
+scr_Boss_Shadow(undefined, undefined, undefined, 2);
 
 var palindex = champ;
 

@@ -15,10 +15,10 @@ function scr_Adjacent_Room_Cloud() {
 
 	if roomGoX != 0 and roomGoY = 0 {
 	    for(i = 0; i <= global.maxRooms; i++) {
-	        if Floor_Layout_Control.Flash[global.currentroom,1] = Floor_Layout_Control.Flash[i,1] + roomGoX
-	        if Floor_Layout_Control.Flash[global.currentroom,2] = Floor_Layout_Control.Flash[i,2] {
+	        if global.floor[global.currentroom,1] = global.floor[i,1] + roomGoX
+	        if global.floor[global.currentroom,2] = global.floor[i,2] {
 	            nextRoomX = roomGoX;
-	            nextRoomY = Floor_Layout_Control.Flash[global.currentroom,2];
+	            nextRoomY = global.floor[global.currentroom,2];
 	            nextRoom = i
 				if i <= global.maxRooms - global.extraRooms {
 		            if global.currentchapter = 1 {
@@ -35,9 +35,9 @@ function scr_Adjacent_Room_Cloud() {
 		            }
 				} else {
 					var sadd = "Chamber";
-					if Floor_Layout_Control.Flash[i,0] = "Chamber" {
+					if global.floor[i,0] = "Chamber" {
 					}
-					if Floor_Layout_Control.Flash[i,0] = "State" {
+					if global.floor[i,0] = "State" {
 						sadd = "Channel";	
 					}
 						if global.currentchapter = 1 {
@@ -59,10 +59,10 @@ function scr_Adjacent_Room_Cloud() {
 
 	if roomGoY != 0 and roomGoX = 0 {
 	    for(i = 0; i <= global.maxRooms; i++) {
-	        if Floor_Layout_Control.Flash[global.currentroom,1] = Floor_Layout_Control.Flash[i,1]
-	        if Floor_Layout_Control.Flash[global.currentroom,2] = Floor_Layout_Control.Flash[i,2] + roomGoY {
+	        if global.floor[global.currentroom,1] = global.floor[i,1]
+	        if global.floor[global.currentroom,2] = global.floor[i,2] + roomGoY {
 	            nextRoomY = roomGoY;
-	            nextRoomX = Floor_Layout_Control.Flash[global.currentroom,1];
+	            nextRoomX = global.floor[global.currentroom,1];
 	            nextRoom = i
 	            if i <= global.maxRooms - global.extraRooms {
 		            if global.currentchapter = 1 {
@@ -79,9 +79,9 @@ function scr_Adjacent_Room_Cloud() {
 		            }
 				} else {
 					var sadd = "Chamber";
-					if Floor_Layout_Control.Flash[i,0] = "Chamber" {
+					if global.floor[i,0] = "Chamber" {
 					}
-					if Floor_Layout_Control.Flash[i,0] = "State" {
+					if global.floor[i,0] = "State" {
 						sadd = "Channel";	
 					}
 						if global.currentchapter = 1 {

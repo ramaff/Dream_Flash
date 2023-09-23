@@ -8,25 +8,25 @@ roomYUp = 0;
 roomYDown = 0;
 
 for(i = 0; i <= global.maxRooms; i++) {
-    if Floor_Layout_Control.Flash[global.currentroom,1] = Floor_Layout_Control.Flash[i,1] + 1
-    if Floor_Layout_Control.Flash[global.currentroom,2] = Floor_Layout_Control.Flash[i,2] {
+    if global.floor[global.currentroom,1] = global.floor[i,1] + 1
+    if global.floor[global.currentroom,2] = global.floor[i,2] {
         roomXDown = 1;
     }
-    if Floor_Layout_Control.Flash[global.currentroom,1] = Floor_Layout_Control.Flash[i,1] - 1
-    if Floor_Layout_Control.Flash[global.currentroom,2] = Floor_Layout_Control.Flash[i,2] {
+    if global.floor[global.currentroom,1] = global.floor[i,1] - 1
+    if global.floor[global.currentroom,2] = global.floor[i,2] {
         roomXUp = 1;
     }
-    if Floor_Layout_Control.Flash[global.currentroom,1] = Floor_Layout_Control.Flash[i,1]
-    if Floor_Layout_Control.Flash[global.currentroom,2] = Floor_Layout_Control.Flash[i,2] + 1 {
+    if global.floor[global.currentroom,1] = global.floor[i,1]
+    if global.floor[global.currentroom,2] = global.floor[i,2] + 1 {
         roomYUp = 1;
     }
-    if Floor_Layout_Control.Flash[global.currentroom,1] = Floor_Layout_Control.Flash[i,1]
-    if Floor_Layout_Control.Flash[global.currentroom,2] = Floor_Layout_Control.Flash[i,2] - 1 {
+    if global.floor[global.currentroom,1] = global.floor[i,1]
+    if global.floor[global.currentroom,2] = global.floor[i,2] - 1 {
         roomYDown = 1;
     }
 }
 
-size = Floor_Layout_Control.Flash[global.currentroom,3];
+size = global.floor[global.currentroom,3];
 xPos = (room_width / 2) - (size / 2);
 yPos = (room_height / 2) - (size / 2);
 

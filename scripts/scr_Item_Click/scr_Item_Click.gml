@@ -43,7 +43,7 @@ function scr_Item_Click(linger = false){
 		global.orbit[itemOrbit] += 1;
 		with(obj_Item_Parent) {
 			if global.orbit[itemOrbit] >= 1 and itemID != global.weaponTaken {
-				Floor_Layout_Control.Flash[global.currentroom,itemData] = 0;
+				global.floor[global.currentroom,itemData] = 0;
 				instance_destroy();	
 			}
 		}

@@ -1,7 +1,7 @@
-Floor_Layout_Control.Flash[global.currentroom,3] = floor(Floor_Layout_Control.Flash[global.currentroom,3] / 128) * 128;
+global.floor[global.currentroom,3] = floor(global.floor[global.currentroom,3] / 128) * 128;
 
-global.roomSizeX = Floor_Layout_Control.Flash[global.currentroom,3];
-global.roomSizeY = Floor_Layout_Control.Flash[global.currentroom,3];
+global.roomSizeX = global.floor[global.currentroom,3];
+global.roomSizeY = global.floor[global.currentroom,3];
 
 instance_create((room_width / 2) + global.soulSpawnXAdd,(room_height / 2) + global.soulSpawnYAdd, obj_Basic_Soul);
 
@@ -15,15 +15,15 @@ fieldSpawn = 0;
 global.bosscount = 0;
 global.bossval = 0;
 
-difficulty = Floor_Layout_Control.Flash[global.currentroom,24];
-boss = Floor_Layout_Control.Flash[global.currentroom,21];
-champ = Floor_Layout_Control.Flash[global.currentroom,22];
-boost = Floor_Layout_Control.Flash[global.currentroom,23];
+difficulty = global.floor[global.currentroom,24];
+boss = global.floor[global.currentroom,21];
+champ = global.floor[global.currentroom,22];
+boost = global.floor[global.currentroom,23];
 
 scr_Boss_Summon(boss,champ,boost,difficulty,0);
 
-properSize = Floor_Layout_Control.Flash[global.currentroom,3];
-properBG = Floor_Layout_Control.Flash[global.currentroom,4];
+properSize = global.floor[global.currentroom,3];
+properBG = global.floor[global.currentroom,4];
 
 instance_create(x,y,obj_Environment_Emitter)
 

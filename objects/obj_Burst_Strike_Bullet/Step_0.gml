@@ -20,3 +20,5 @@ if speed < (bulletspeed * 0.1) {
 if speed > bulletspeed {
 	speed = bulletspeed;
 }	
+
+scr_Bullet_Expand_Before_Contract()

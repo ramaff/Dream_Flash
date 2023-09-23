@@ -10,8 +10,8 @@
   "managed": true,
   "overriddenProperties": [],
   "parent": {
-    "name": "Lob Splash Group",
-    "path": "folders/Objects/Boss Bullets/Lob Splash Group.yy",
+    "name": "Lobbing Group",
+    "path": "folders/Objects/Boss Bullets/Lobbing Group.yy",
   },
   "parentObjectId": {
     "name": "obj_Lob_Bullet",

@@ -5,6 +5,6 @@ instance_destroy();
 
 surf = -1;
 
-properSize = Floor_Layout_Control.Flash[global.currentroom,3];
+properSize = global.floor[global.currentroom,3];
 
 scale = properSize / 1024;

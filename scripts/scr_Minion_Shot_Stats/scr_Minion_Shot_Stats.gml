@@ -12,4 +12,6 @@ function scr_Minion_Shot_Stats(){
 	
 	bossmaxhealth2 = 0;
 	
+	minion_spawn_animation = noone;
+	
 }

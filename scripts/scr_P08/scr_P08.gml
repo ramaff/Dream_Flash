@@ -6,6 +6,29 @@
 function scr_P08(){
 
 	if global.P[8] > 0 {
+		
+		var _c_wp = global.currentweapon
+		
+		current_weapon_stats = json_parse(json_stringify(variable_struct_get(global.weapon_stats, string(_c_wp))))
+		
+		scr_Default_Weapon_Stats();
+		
+		current_weapon_stats.Shot_Speed = 0
+		current_weapon_stats.Shot_Lifespan = current_weapon_stats.Shot_Lifespan * 2
+		current_weapon_stats.Shot_Lobbing = true
+        current_weapon_stats.Shot_Height += 40
+        current_weapon_stats.Shot_Fall_Speed = 0
+        current_weapon_stats.Shot_Gravity = 2 * (current_weapon_stats.Shot_Height * current_weapon_stats.Shot_Lifespan) / (current_weapon_stats.Shot_Lifespan * current_weapon_stats.Shot_Lifespan)
+		//current_weapon_stats.Shot_Lobbing_Tilt = -10;
+
+		scr_setup_weapon_stats(current_weapon_stats);
+		
+		scr_Hard_Coded_Weapon_Stats(_c_wp);
+		
+		scr_Shot_Creation();
+		
+	}
+		/*
 		with(obj_Bullet_Parent) {
 			if distance_to_object(other) <= (150) and scr_Chance(300 / max(1, global.P[8])) {
 				var ddir = random(360);
@@ -45,5 +68,5 @@ function scr_P08(){
 				}
 			}
 		}
-	}
+	} */
 }

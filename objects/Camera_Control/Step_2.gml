@@ -7,7 +7,7 @@ var potency = min(2, tote_bosses)
 var fac = (1 / tote_bosses) * potency
 
 if instance_exists(Floor_Layout_Control) and global.layerdeep < 1 {
-	var rsize = Floor_Layout_Control.Flash[global.currentroom, 3];
+	var rsize = global.floor[global.currentroom, 3];
 	var ideal_zoom = sqrt(1024 / rsize);
 	if ideal_zoom < 0.8 {
 		ideal_zoom = 0.8;
@@ -19,8 +19,8 @@ if instance_exists(Floor_Layout_Control) and global.layerdeep < 1 {
 			var dist = point_distance(x,y, obj_Soul_Parent.x, obj_Soul_Parent.y);
 			//dist += point_distance(x,y, room_width / 2, room_height / 2)
 			
-			if dist > 500 {
-				extra_zoom = max(extra_zoom, (dist - 500))
+			if dist > 300 {
+				extra_zoom = max(extra_zoom, (dist - 300))
 			}
 			
 		}

@@ -7,7 +7,7 @@ scr_Boss_Step(2);
 //scr_Boss_Height_Bob(30, 1, 0);
 
 // Make boss shape wobble:
-if activeAttack = 0 {
+if active_attack = 0 {
 	scr_Boss_Wobble("Horizontal", 0.6, 1, 0);
 	speed = bossmovespeed;
 	direction = scr_Soul_Point();
@@ -17,17 +17,17 @@ if activeAttack = 0 {
 /////////////// Active Attack Prep
 //////////////////////////////////////////////////////////////////////////////////////////
 
-if activeAttackDelay <= 0 and activeAttackCooldown <= 0 and activeAttackDuration <= 0 {
+if active_attack_delay <= 0 and active_attack_cooldown <= 0 and active_attack_duration <= 0 {
     
 	speed = 0;
 	// Pick a random attack to do
-	activeAttack = choose(1, 2, 3);
+	active_attack = choose(1, 2, 3);
 	
 	if currentphase = 2 {
-		activeAttack = 4;	
+		active_attack = 4;	
 	}
 	
-    if activeAttack = 1 {
+    if active_attack = 1 {
 		// Setup how many attacks per boss move, delay, etc
 		scr_Boss_Attack_Time_Setup_v2(4, 40, 30, 120, 30, 30);
 		
@@ -35,7 +35,7 @@ if activeAttackDelay <= 0 and activeAttackCooldown <= 0 and activeAttackDuration
 		// patternDirection = scr_Soul_Point();
 		// patternDirection = random(360;
     }
-	if activeAttack = 2 {
+	if active_attack = 2 {
 		// Setup how many attacks per boss move, delay, etc
 		scr_Boss_Attack_Time_Setup_v2(80, 40, 1, 120, 30, 0);
 		
@@ -45,7 +45,7 @@ if activeAttackDelay <= 0 and activeAttackCooldown <= 0 and activeAttackDuration
 		// patternDirection = scr_Soul_Point();
 		// patternDirection = random(360;
     }
-	if activeAttack = 3 {
+	if active_attack = 3 {
 		// Setup how many attacks per boss move, delay, etc
 		scr_Boss_Attack_Time_Setup_v2(1, 40, 1, 120, 30, 10);
 		
@@ -53,7 +53,7 @@ if activeAttackDelay <= 0 and activeAttackCooldown <= 0 and activeAttackDuration
 		// patternDirection = scr_Soul_Point();
 		// patternDirection = random(360;
     }
-	if activeAttack = 4 {
+	if active_attack = 4 {
 		// Setup how many attacks per boss move, delay, etc
 		scr_Boss_Attack_Time_Setup_v2(80, 40, 1, 30, 30, 0);
 		
@@ -72,9 +72,9 @@ if activeAttackDelay <= 0 and activeAttackCooldown <= 0 and activeAttackDuration
 scr_Default_Attack_Settings();
 
 // If its time to attack, attack
-if activeAttackDelay <= 0 and patternCooldown <= 0 and patternCount > 0 {
+if active_attack_delay <= 0 and pattern_cooldown <= 0 and pattern_count > 0 {
    
-    if activeAttack = 1 {
+    if active_attack = 1 {
 		scr_Boss_Stretch("Vertical", 0.7);
 		
 		bullet_direction = scr_Soul_Point();
@@ -101,7 +101,7 @@ if activeAttackDelay <= 0 and patternCooldown <= 0 and patternCount > 0 {
 			bullet_sprite = spr_Poison_Lob_Shot;
 			repeat(3) {
 				bullet_direction = scr_Boss_Bullet_Direction_Formula(scr_Soul_Point(), 75)
-				bullet_speed = bossbulletspeed * (1 + random(0.6) + ((patternCountMax - patternCount) / 3))
+				bullet_speed = bossbulletspeed * (1 + random(0.6) + ((pattern_count_max - pattern_count) / 3))
 				scr_Boss_Shoot();
 			}
 		}
@@ -110,7 +110,7 @@ if activeAttackDelay <= 0 and patternCooldown <= 0 and patternCount > 0 {
 			bullet_sprite = spr_Pink_Bubble_Bullet;
 			repeat(5) {
 				bullet_direction = scr_Boss_Bullet_Direction_Formula(scr_Soul_Point(), 75)
-				bullet_speed = bossbulletspeed * (1.5 + random(0.8) + ((patternCountMax - patternCount) / 3))
+				bullet_speed = bossbulletspeed * (1.5 + random(0.8) + ((pattern_count_max - pattern_count) / 3))
 				scr_Boss_Shoot();
 			}
 		}
@@ -124,7 +124,7 @@ if activeAttackDelay <= 0 and patternCooldown <= 0 and patternCount > 0 {
 			
 			repeat(2) {
 				bullet_direction = scr_Boss_Bullet_Direction_Formula(scr_Soul_Point(), 75)
-				bullet_speed = bossbulletspeed * (1 + random(0.3) + ((patternCountMax - patternCount) / 2.5))
+				bullet_speed = bossbulletspeed * (1 + random(0.3) + ((pattern_count_max - pattern_count) / 2.5))
 				scr_Boss_Shoot();
 			}
 		}
@@ -133,9 +133,9 @@ if activeAttackDelay <= 0 and patternCooldown <= 0 and patternCount > 0 {
 	    // bossPatternDirection += 0;
 	}
 	
-	if activeAttack = 2 {
+	if active_attack = 2 {
 		
-		if patternCount = 1 {
+		if pattern_count = 1 {
 			
 			scr_Boss_Stretch("Horizontal", 1.5);
 			
@@ -194,11 +194,11 @@ if activeAttackDelay <= 0 and patternCooldown <= 0 and patternCount > 0 {
 		
 		scr_Boss_Dash_Movement_v2(4,2);
 		
-		speed = dashSpeed;
-        direction = dashDirection;
+		speed = dash_speed;
+        direction = dash_direction;
 		
-		var dir = scr_Soul_Point(x, y + bossHeight);
-		var dist = scr_Soul_Distance(x, y + bossHeight);
+		var dir = scr_Soul_Point(x, y + boss_height);
+		var dist = scr_Soul_Distance(x, y + boss_height);
 		var aimspeed = min(5, dist);
 		x += lengthdir_x(aimspeed, dir);
 		y += lengthdir_y(aimspeed, dir);
@@ -206,7 +206,7 @@ if activeAttackDelay <= 0 and patternCooldown <= 0 and patternCount > 0 {
 		scr_Jump_Movement_v2(5);
 	}
 	
-	if activeAttack = 3 {
+	if active_attack = 3 {
 		scr_Boss_Stretch("Vertical", 0.7);
 		
 		boss_xoffset = 0;
@@ -238,9 +238,9 @@ if activeAttackDelay <= 0 and patternCooldown <= 0 and patternCount > 0 {
 	    // bossPatternDirection += 0;
 	}
 	
-	if activeAttack = 4 {
+	if active_attack = 4 {
 		
-		if patternCount = 1 {
+		if pattern_count = 1 {
 			
 			scr_Boss_Stretch("Horizontal", 1.5);
 			
@@ -299,23 +299,23 @@ if activeAttackDelay <= 0 and patternCooldown <= 0 and patternCount > 0 {
 		
 		scr_Boss_Dash_Movement_v2(4,2);
 		
-		speed = dashSpeed;
-        direction = dashDirection;
+		speed = dash_speed;
+        direction = dash_direction;
 		
 		scr_Jump_Movement_v2(2);
 	}
 	
 	// Maybe I should put this into a script
-    patternCount -= 1;
-    patternCooldown += patternCooldownMax;
+    pattern_count -= 1;
+    pattern_cooldown += pattern_cooldown_max;
 }
 
 //////////////////////////////////////////////////////////////////////////////////////////
 /// Active Attack Post
 //////////////////////////////////////////////////////////////////////////////////////////
 
-if activeAttackDuration <= 0 { 
-    activeAttack = 0;
+if active_attack_duration <= 0 { 
+    active_attack = 0;
 }
 
 /// Boss Sprite Code
@@ -324,25 +324,25 @@ if activeAttackDuration <= 0 {
 scr_Boss_Size_Lerp_Dir(0.15, false);
 
 // Handles boss attack sprite animation
-if activeAttack = 1 {
+if active_attack = 1 {
 	var holdFrame = 2;
 	scr_Boss_Attack_Sprite_v2(spr_Amorphous_Jello_Shoot, holdFrame, 3, 5, 40);
 	if image_index = holdFrame {
 		scr_Boss_Wobble("Horizontal", 2, 0.25, 0)	
 	}
-} else if activeAttack = 2 {
+} else if active_attack = 2 {
 	var holdFrame = 2;
 	scr_Boss_Attack_Sprite_v2(spr_Amorphous_Jello_Slam, holdFrame, 6, 6, 50);
 	if image_index = holdFrame {
 		scr_Boss_Wobble("Horizontal", 2, 0.25, 0)	
 	}
-} else if activeAttack = 3 {
+} else if active_attack = 3 {
 	var holdFrame = 2;
 	scr_Boss_Attack_Sprite_v2(spr_Amorphous_Jello_Summon, holdFrame, 3, 3, 20);
 	if image_index = holdFrame {
 		scr_Boss_Wobble("Horizontal", 2, 0.25, 0)	
 	}
-} else if activeAttack = 4 {
+} else if active_attack = 4 {
 	var holdFrame = 2;
 	scr_Boss_Attack_Sprite_v2(spr_Amorphous_Jello_Hop, holdFrame, 5, 5, 60);
 	if image_index = holdFrame {

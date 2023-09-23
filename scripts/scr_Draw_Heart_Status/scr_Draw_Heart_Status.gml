@@ -113,7 +113,7 @@ function scr_Draw_Heart_Status() {
 	    if currHeart = 16 {
 	        //draw_sprite_ext(spr_Jello_Heart,0,x,y,0.5,0.5,0,c_white,1);
 	        //draw_sprite_part_ext(spr_Jello_Heart,1,0,96 * (1 - (hpercent / 100)),78,96,x-19,y - 26 + 48 * (1 - (hpercent / 100)),0.5,0.5,c_white,1);
-			scr_Draw_Heart_Health(spr_Jello_Heart, scale, hpercent, 78, 96);
+			scr_Draw_Heart_Health(spr_Jello_Heart, scale, hpercent, 78, 96, 0, 0, 2);
 	    }
 		if currHeart = 17 {
 	        //draw_sprite_ext(spr_Soapy_Heart,0,x,y,0.5,0.5,0,c_white,1);

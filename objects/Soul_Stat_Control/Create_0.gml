@@ -154,3 +154,5 @@ global.bossaccuracyfactor = 1;
 global.bossdifficultyadd = 0;
 
 global.gamedarknessadd = 0;
+
+global.currentheartdefense = 0;

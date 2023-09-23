@@ -7,7 +7,7 @@ function scr_Boss_Step(version = 1) {
 	
 	if version = 2 {
 		if state = states.jumping || state = states.leaping {
-			if activeAttack = 0 and bossHeight < 10 {
+			if active_attack = 0 and boss_height < 10 {
 				state = states.normal;	
 			}
 		}
@@ -30,14 +30,17 @@ function scr_Boss_Step(version = 1) {
 	}
 
 	if boost = 1 {
-	    val = irandom(6)
-	    if val = 6 {
-	        with instance_create(x,y,obj_Boost_Spark) {
-	            alarm[0] = 15 + random(60);
-	            speed = 0.2 + random(1);
-	            direction = random(360);
-	        }
+	    var _val = irandom(20)
+	    if _val >= 12 {
+			
+			var color = make_color_rgb(255, 155, 0);		
+			var color2 = make_color_rgb(255, 50, 0);
+			scr_Particle_Burst(obj_Fire_Part, spr_Soul_Big_Bit, color, color2, 1, 2 + random(4), random(360), 0, 120, 0.4 + random(0.2), 40 + random(35), false)
+			
 	    }
+		if _val >= 19 {
+			scr_Particle_Burst(obj_Friction_Part, spr_Soul_Big_Bit, c_black, c_black, 1, 4 + random(8), random(360), 0, 120, 0.4 + random(0.2), 20 + random(10), false)
+		}
 	}
 	
 	if bossknockback != 0 and bossknockbacktime > 0 /*and inside = 1 */{

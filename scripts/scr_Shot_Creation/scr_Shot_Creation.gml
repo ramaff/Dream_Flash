@@ -8,7 +8,7 @@ function scr_Shot_Creation() {
 	scr_D06();
 	scr_A08();
 	scr_D11();
-	scr_V09_Add();
+	scr_V09_Add_old();
 	
 	scr_OB06();
 	scr_OC06();
@@ -57,7 +57,7 @@ function scr_Shot_Creation() {
 	scr_XB05_Shot_Mod();
 
 	if Shot_Count > 1 {
-	    if Shot_Spread < 1 {
+	    if Shot_Spread < 10 and Shot_Spread >= 0 {
 	        Shot_Spread = 10;
 	    }
 	}
@@ -92,9 +92,7 @@ function scr_Shot_Creation() {
 		}
 	}
 	
-	
-	
-	if Shot_Repetition[bi] == Shot_Repetition_Max[bi] - 1 {
+	if Shot_Repetition[bi] == Shot_Repetition_Max[bi] {
 		Shot_Repetition_Stats[bi] = current_weapon_stats
 		Shot_Repetition_Direction[bi] = actual_shot_direction
 	}

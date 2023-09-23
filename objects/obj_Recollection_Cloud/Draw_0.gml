@@ -33,16 +33,21 @@ if recollectionMirror = 2 {
 	//cloudS = spr_Reco_Hover_Cloud_Down;
 }
 
-if cloudS = spr_Recollection_Hover_Cloud and string_length(recollectionExtraStats) > 50 {
-	shop = 1;
-}
+var _text_xoffset = 172;
+var _text_xoffset_minus = 172;
+var _text_yoffset = 104;
+var _text_yoffset_minus = 176;
 
-if shop > 0 {
+if shop > 0 || (cloudS = spr_Recollection_Hover_Cloud and string_length(recollectionExtraStats) > 50) {
 	cloudS = spr_Recollection_Hover_Cloud_Bigger;
 	if leave = 1 {
 		cloudS = spr_Recollection_Hover_Cloud_Bigger_Leave;
 		image_speed = 1/60;
 	}
+	_text_xoffset = 188
+	_text_xoffset_minus = 192;
+	_text_yoffset = 112;
+	_text_yoffset_minus = 224;
 }
 
 if leave = 1 {
@@ -55,9 +60,9 @@ if recollectionMirror = 0 {
     draw_sprite_ext(cloudS,recollectionIndex,x,y,1,1,0,c_white,image_alpha);
     if image_alpha >= 0.5 {
     draw_set_alpha(image_alpha);
-    draw_text(x+172,y-176, string_hash_to_newline(recollectionString + recollectionUpgradeString));
+    draw_text(x+_text_xoffset,y-_text_yoffset_minus, string_hash_to_newline(recollectionString + recollectionUpgradeString));
 	if recollectionExtraStats != 0 {
-		draw_text_ext(x+172,y-144, string_hash_to_newline(recollectionExtraStats),24,200);
+		draw_text_ext(x+_text_xoffset,y-_text_yoffset_minus+32, string_hash_to_newline(recollectionExtraStats),24,200);
 	}
     draw_set_alpha(1);
     }
@@ -65,9 +70,9 @@ if recollectionMirror = 0 {
     draw_sprite_ext(cloudS,recollectionIndex,x,y,-1,1,0,c_white,image_alpha);
     if image_alpha >= 0.5 {
     draw_set_alpha(image_alpha);
-    draw_text(x-172,y-176, string_hash_to_newline(recollectionString + recollectionUpgradeString));
+    draw_text(x-_text_xoffset_minus,y-_text_yoffset_minus, string_hash_to_newline(recollectionString + recollectionUpgradeString));
     if recollectionExtraStats != 0 {
-		draw_text_ext(x-172,y-144, string_hash_to_newline(recollectionExtraStats),24,200);
+		draw_text_ext(x-_text_xoffset_minus,y-_text_yoffset_minus+32, string_hash_to_newline(recollectionExtraStats),24,200);
 	}
 	draw_set_alpha(1);
     }
@@ -75,9 +80,9 @@ if recollectionMirror = 0 {
     draw_sprite_ext(cloudS,recollectionIndex,x,y,1,-1,0,c_white,image_alpha);
     if image_alpha >= 0.5 {
     draw_set_alpha(image_alpha);
-    draw_text(x+172,y+128, string_hash_to_newline(recollectionString + recollectionUpgradeString));
+    draw_text(x+_text_xoffset,y+_text_yoffset, string_hash_to_newline(recollectionString + recollectionUpgradeString));
     if recollectionExtraStats != 0 {
-		draw_text_ext(x+172,y+96, string_hash_to_newline(recollectionExtraStats),24,200);
+		draw_text_ext(x+_text_xoffset,y+_text_yoffset+32, string_hash_to_newline(recollectionExtraStats),24,200);
 	}
 	draw_set_alpha(1);
     }
@@ -85,9 +90,9 @@ if recollectionMirror = 0 {
     draw_sprite_ext(cloudS,recollectionIndex,x,y,-1,-1,0,c_white,image_alpha);
     if image_alpha >= 0.5 {
     draw_set_alpha(image_alpha);
-    draw_text(x-172,y+96, string_hash_to_newline(recollectionString + recollectionUpgradeString));
+    draw_text(x-_text_xoffset_minus,y+_text_yoffset, string_hash_to_newline(recollectionString + recollectionUpgradeString));
     if recollectionExtraStats != 0 {
-		draw_text_ext(x-172,y+128, string_hash_to_newline(recollectionExtraStats),24,200);
+		draw_text_ext(x-_text_xoffset_minus,y+_text_yoffset+32, string_hash_to_newline(recollectionExtraStats),24,200);
 	}
 	draw_set_alpha(1);
     }

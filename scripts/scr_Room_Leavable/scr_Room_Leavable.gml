@@ -3,7 +3,12 @@
 function scr_Room_Leavable(){
 	if instance_exists(obj_Soul_Collector) {
 		return false
-	}	
+	}
 	
-	return Floor_Layout_Control.Flash[global.currentroom,0] == "Normal" || (global.bosscount <= 0 and (((global.spiritRoom != global.currentroom) and (global.evilSpiritRoom != global.currentroom)) || global.currentroom = 0) and scr_Negative_Room_Check())
+	/*Print_DF("/n" + string(global.floor[0]))
+	Print_DF(string(global.floor[1]))
+	Print_DF(string(global.floor[2]))
+	Print_DF(string(global.floor[3 */
+	
+	return global.floor[global.currentroom,0] == "Normal" || (global.bosscount <= 0 and (((global.spiritRoom != global.currentroom) and (global.evilSpiritRoom != global.currentroom)) || global.currentroom = 0) and scr_Negative_Room_Check())
 }

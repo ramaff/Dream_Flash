@@ -11,8 +11,8 @@ with (obj_Item_Parent) {
 itemNumChoice = 0
 
 for(i = 1; i <= 13; i++) {
-	//show_debug_message(Floor_Layout_Control.Flash[global.currentroom,6+i])
-	var iItem = Floor_Layout_Control.Flash[global.currentroom,6+i];
+	//show_debug_message(global.floor[global.currentroom,6+i])
+	var iItem = global.floor[global.currentroom,6+i];
     if iItem != "0" and iItem != "00" {
 		itemNumChoice++;	
 	}
@@ -26,9 +26,9 @@ for(j = 1; j <= itemNumChoice; j++) {
 		hopeDiamond = 1;	
 	}
 				
-	Floor_Layout_Control.Flash[global.currentroom,j+6] = scr_Pool_Pick(scr_Get_Item_Pool_From_Letter(pool))
+	global.floor[global.currentroom,j+6] = scr_Pool_Pick(scr_Get_Item_Pool_From_Letter(pool))
 	//show_debug_message(string(j+6))
-	//show_debug_message(Floor_Layout_Control.Flash[global.currentroom,j+6])
+	//show_debug_message(global.floor[global.currentroom,j+6])
 }
 
 var fieldPicked = "Misc Field"
@@ -73,16 +73,16 @@ if pool = "I" {
 	fieldPicked = "Emotion Field";
 }
 
-Floor_Layout_Control.Flash[global.currentroom,0] = fieldPicked
+global.floor[global.currentroom,0] = fieldPicked
 
 global.OA5rooms[global.currentroom] = [];
 
 //scr_Save_Run()
 
-field = Floor_Layout_Control.Flash[global.currentroom,0];
+field = global.floor[global.currentroom,0];
 for(i = 1; i <= 13; i++) {
-	//show_debug_message(Floor_Layout_Control.Flash[global.currentroom,6+i])
-    item[i] = Floor_Layout_Control.Flash[global.currentroom,6+i];
+	//show_debug_message(global.floor[global.currentroom,6+i])
+    item[i] = global.floor[global.currentroom,6+i];
 	//show_debug_message(string(i+6))
 	//show_debug_message(item[i])
 }

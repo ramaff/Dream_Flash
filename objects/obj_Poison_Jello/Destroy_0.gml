@@ -48,7 +48,5 @@
 		//bullet_direction = random(360);
 		scr_Suicide_Vomit();
 	//}
-    
-    ds_list_destroy(projectile_hits);
     scr_H14_Minion();
 
