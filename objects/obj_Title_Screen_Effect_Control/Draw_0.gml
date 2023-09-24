@@ -8,7 +8,7 @@
 	    starty = camera_get_view_y(view);
 		bottomy = starty + (camera_get_view_height(view)/* / camcon.view_zoom */);
     
-	    draw_text(startx + 8, bottomy - 20, string_hash_to_newline("Dream Flash Demo 21 beta 2"));
+	    draw_text(startx + 8, bottomy - 20, string_hash_to_newline("Dream Flash Demo 21 beta 5"));
 	
 	}
 

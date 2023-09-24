@@ -501,7 +501,8 @@ function scr_Boss_Choose(roomNum, exclude, difficultyAdd = 0) {
 	{
 	    bosstype = obj_pocket_v2
 	    difficulty = 2;
-	    global.champ = choose(0,1,2);
+	    //global.champ = choose(0,1,2);
+		global.champ = 0;
 	}
 	if bossform = 43.1 // Gutterball
 	{
