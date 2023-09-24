@@ -1523,7 +1523,7 @@
         "recollectionString": "Train of Thought",
         "recollectionSprite": "spr_Train_Of_Thought_Art",
         "recollectionExtraStats": "+Increasing Weapon Firerate and Efficiency",
-        "recollectionDescription": "By keeping up a train of thought, slowly gain upto +50% firerate and -25% essence cost with a weapon as long as you don’t switch weapons, get hit, stop firing, or teleport."
+        "recollectionDescription": "By keeping up a train of thought, slowly gain upto +100% firerate and -50% essence cost with a weapon as long as you don’t switch weapons, get hit, stop firing, or change shooting angle."
     },
     "U04": {
         "recollectionString": "Circle of Trust",

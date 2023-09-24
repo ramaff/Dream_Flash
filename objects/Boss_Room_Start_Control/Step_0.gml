@@ -113,17 +113,19 @@ if (chealth < MThealth / 4) {
     spiritSend = 1;
 }
 
-if global.spiritRoom = global.currentroom and instance_number(obj_Boss_Parent) = 0 {
-    boss = global.floor[global.currentroom,25];
-    scr_Spirit_Summon(boss);
-    global.spiritRoom = 0;
-}
-if global.evilSpiritRoom = global.currentroom and instance_number(obj_Boss_Parent) = 0 {
-    boss = global.floor[global.currentroom,26];
-    scr_Spirit_Summon(boss);
-    global.evilSpiritRoom = 0;
-}
+if instance_number(obj_Boss_Parent) = 0 and global.bosscount <= 0 {
+	if global.spiritRoom = global.currentroom {
+	    boss = global.floor[global.currentroom,25];
+	    scr_Spirit_Summon(boss);
+	    global.spiritRoom = 0;
+	}
+	if global.evilSpiritRoom = global.currentroom {
+	    boss = global.floor[global.currentroom,26];
+	    scr_Spirit_Summon(boss);
+	    global.evilSpiritRoom = 0;
+	}
 
-if instance_number(obj_Boss_Parent) = 0 and global.spiritRoom = global.currentroom { 
-    global.spiritRoom = 0;
+	if global.spiritRoom = global.currentroom { 
+	    global.spiritRoom = 0;
+	}
 }

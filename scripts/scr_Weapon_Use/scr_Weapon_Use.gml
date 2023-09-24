@@ -11,6 +11,8 @@ function scr_Weapon_Use() {
 	        scr_Weapon_Use_List();
 	    }
 	}
+	
+	scr_U03_Step()
 
 
 
