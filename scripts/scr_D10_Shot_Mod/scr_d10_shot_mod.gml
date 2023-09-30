@@ -6,7 +6,7 @@ function scr_D10_Shot_Mod() {
 		shotpower = shotpowermax;
 		shotPowerLevel = shotPowerLevel * (0.6);
 		
-		shotsize = shotsize * 0.8;
+		shotsize = shotsize * 0.75;
 		image_xscale = shotsize;
 		image_yscale = shotsize;
 	}

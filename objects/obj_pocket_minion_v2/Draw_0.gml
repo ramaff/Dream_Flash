@@ -7,8 +7,8 @@ scr_Boss_Shadow(undefined, 30, undefined, 2);
 // Palette Color Swap for different boss champs:
 var palindex = champ;
 
-//pal_swap_set(spr_Crazy_Eyes_Palette,palindex,false);
+pal_swap_set(spr_pocket_v2_palette,palindex,false);
 
 draw_self();
 
-//pal_swap_reset();
+pal_swap_reset();

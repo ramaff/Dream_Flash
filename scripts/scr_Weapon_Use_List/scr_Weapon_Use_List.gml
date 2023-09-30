@@ -142,7 +142,7 @@ function scr_Weapon_Use_List(cWP = global.currentweapon) {
 			scr_V06();
 		}
 		
-		var realCost = weaponCost / (1 + (global.U03boost / 2000));
+		var realCost = weaponCost * scr_U03_Ess_Cost();
 		
 		scr_C11_Shot_Mod(realCost)
 		

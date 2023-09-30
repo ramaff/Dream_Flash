@@ -1392,7 +1392,7 @@
 
         "Boss 057": {
             "Name": "Boxer",
-            "Recollection_Sprite": "reco_Puck_Man",
+            "Recollection_Sprite": "reco_boxer",
             "Health_Phase_1": 320,
             "Health_Phase_2": 240,
             "Defense_Phase_1": 0,
@@ -1401,20 +1401,7 @@
             "Bullet_Speed": 2.4,
             "Move_Speed": 2,
         
-            "recollectionDescription": "Weird and unpredictable boss that can shoot looping projectiles.",
-        
-            "Champ 1": {
-                "Name": "Dimensional Puck",
-                "Recollection_Sprite": "spr_Distorted_Puck",
-                "Health_Phase_1": 360,
-                "Health_Phase_2": 300
-            },
-            "Champ 8": {
-                "Name": "Biter Puck",
-                "Recollection_Sprite": "spr_Biter_Man",
-                "Health_Phase_1": 400,
-                "Health_Phase_2": 330
-            }
+            "recollectionDescription": "Dreamscape resident puppet. Attacks with a wacky box of tricks."
         },
 
         "Boss 064": {
