@@ -5,7 +5,7 @@
   "isCompatibility": false,
   "isDnD": false,
   "parent": {
-    "name": "Item Choose",
-    "path": "folders/Scripts/Item Choose.yy",
+    "name": "ol",
+    "path": "folders/Scripts/Item Choose/ol.yy",
   },
 }

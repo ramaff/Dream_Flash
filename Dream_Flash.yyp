@@ -445,6 +445,7 @@
     {"resourceType":"GMFolder","resourceVersion":"1.0","name":"Misc BGs","folderPath":"folders/Tile Sets/Misc BGs.yy",},
     {"resourceType":"GMFolder","resourceVersion":"1.0","name":"Nightmare BGs","folderPath":"folders/Tile Sets/Nightmare BGs.yy",},
     {"resourceType":"GMFolder","resourceVersion":"1.0","name":"Timelines","folderPath":"folders/Timelines.yy",},
+    {"resourceType":"GMFolder","resourceVersion":"1.0","name":"ol","folderPath":"folders/Scripts/Item Choose/ol.yy",},
   ],
   "IncludedFiles": [
     {"resourceType":"GMIncludedFile","resourceVersion":"1.0","name":"df_boss_stats.json","CopyToMask":-1,"filePath":"datafiles",},
@@ -2420,6 +2421,7 @@
     {"id":{"name":"spr_Healing_Barrier_Art","path":"sprites/spr_Healing_Barrier_Art/spr_Healing_Barrier_Art.yy",},},
     {"id":{"name":"spr_Heart_Pick_Art","path":"sprites/spr_Heart_Pick_Art/spr_Heart_Pick_Art.yy",},},
     {"id":{"name":"spr_Wandering_Soul","path":"sprites/spr_Wandering_Soul/spr_Wandering_Soul.yy",},},
+    {"id":{"name":"scr_Get_Item_Pools","path":"scripts/scr_Get_Item_Pools/scr_Get_Item_Pools.yy",},},
     {"id":{"name":"spr_Wander_Soul_Shot","path":"sprites/spr_Wander_Soul_Shot/spr_Wander_Soul_Shot.yy",},},
     {"id":{"name":"scr_Drone_Soul_Remote_Use","path":"scripts/scr_Drone_Soul_Remote_Use/scr_Drone_Soul_Remote_Use.yy",},},
     {"id":{"name":"spr_Fleeting_Soul_Shot","path":"sprites/spr_Fleeting_Soul_Shot/spr_Fleeting_Soul_Shot.yy",},},

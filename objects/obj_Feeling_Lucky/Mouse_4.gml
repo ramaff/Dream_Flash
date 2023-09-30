@@ -13,96 +13,100 @@ if global.soulflash >= price {
 	}
 	
 	itemVal = "00";
-	var pool = global.AItemPool;
+	var pool = global.A_item_pool;
 	
 	repeat(2) {
 		var poolPick = 1 + irandom(26);
 	
+		/*
 		switch(poolPick) {
 			case 1:
-				pool = global.AItemPool;
+				pool = global.a_item_pool;
 				break;
 			case 2:
-				pool = global.BItemPool;
+				pool = global.b_item_pool;
 				break;
 			case 3:
-				pool = global.CItemPool;
+				pool = global.c_item_pool;
 				break;
 			case 4:
-				pool = global.DItemPool;
+				pool = global.d_item_pool;
 				break;
 			case 5:
-				pool = global.EItemPool;
+				pool = global.e_item_pool;
 				break;
 			case 6:
-				pool = global.FItemPool;
+				pool = global.f_item_pool;
 				break;
 			case 7:
-				pool = global.GItemPool;
+				pool = global.g_item_pool;
 				break;
 			case 8:
-				pool = global.HItemPool;
+				pool = global.h_item_pool;
 				break;
 			case 9:
-				pool = global.IItemPool;
+				pool = global.i_item_pool;
 				break;
 			case 10:
-				pool = global.JItemPool;
+				pool = global.j_item_pool;
 				break;
 			case 11:
-				pool = global.KItemPool;
+				pool = global.k_item_pool;
 				break;
 			case 12:
-				pool = global.LItemPool;
+				pool = global.l_item_pool;
 				break;
 			case 13:
-				pool = global.MItemPool;
+				pool = global.m_item_pool;
 				break;
 			case 14:
-				pool = global.NItemPool;
+				pool = global.n_item_pool;
 				break;
 			case 15:
-				pool = global.OAItemPool;
+				pool = global.oa_item_pool;
 				break;
 			case 16:
-				pool = global.OBItemPool;
+				pool = global.ob_item_pool;
 				break;
 			case 17:
-				pool = global.OCItemPool;
+				pool = global.oc_item_pool;
 				break;
 			case 18:
-				pool = global.PItemPool;
+				pool = global.p_item_pool;
 				break;
 			case 19:
-				pool = global.RItemPool;
+				pool = global.r_item_pool;
 				break;
 			case 20:
-				pool = global.SItemPool;
+				pool = global.s_item_pool;
 				break;
 			case 21:
-				pool = global.TItemPool;
+				pool = global.t_item_pool;
 				break;
 			case 22:
-				pool = global.UItemPool;
+				pool = global.u_item_pool;
 				break;
 			case 23:
-				pool = global.VItemPool;
+				pool = global.v_item_pool;
 				break;
 			case 24:
-				pool = global.WItemPool;
+				pool = global.w_item_pool;
 				break;
 			case 25:
-				pool = global.XAItemPool;
+				pool = global.xa_item_pool;
 				break;
 			case 26:
-				pool = global.XBItemPool;
+				pool = global.xb_item_pool;
 				break;
 			case 27:
-				pool = global.XCItemPool;
+				pool = global.xc_item_pool;
 				break;
 			default:
-				pool = global.AItemPool;
+				pool = global.a_item_pool;
 		}
+		*/
+		var _pool_letter = scr_Pick_Pool_Letter()
+		pool = scr_Get_Item_Pool_From_Letter(_pool_letter)
 		itemVal = scr_Pool_Pick(pool);
 		flashcost = 0;
 		shop = 0;

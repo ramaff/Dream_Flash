@@ -199,7 +199,7 @@ function scr_Load_Run() {
 
 	    }
 			
-		var pools = [global.AItemPool, global.BItemPool, global.CItemPool, global.DItemPool, global.EItemPool, global.FItemPool, global.GItemPool, global.HItemPool, global.IItemPool, global.JItemPool, global.KItemPool, global.LItemPool, global.MItemPool, global.NItemPool, global.OAItemPool, global.OBItemPool, global.OCItemPool, global.PItemPool, global.RItemPool, global.SItemPool, global.TItemPool, global.UItemPool, global.VItemPool, global.WItemPool, global.XAItemPool, global.XBItemPool, global.XCItemPool];
+		var pools = scr_Get_Item_Pools(false)
 		for(j = 0; j < array_length(pools); j++) {
 			var pool = pools[j];
 			ds_list_clear(pool);
@@ -207,7 +207,7 @@ function scr_Load_Run() {
 		}
 		
 		
-		var pletters = ["A", "B", "C", "D", "E", "F", "G", "H", "I", "J", "K", "L", "M", "N", "OA", "OB", "OC", "P", "R", "S", "T", "U", "V", "W", "XA", "XB", "XC"];
+		var pletters = scr_Get_Item_Pools(true)
 		for(j = 0; j < array_length(pools); j++) {
 			var pool = pools[j];
 			var pletter = pletters[j];
