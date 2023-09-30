@@ -17,7 +17,7 @@ repeat(5) {
         move_towards_point(instance_nearest(x,y,obj_Soul_Parent).x,instance_nearest(x,y,obj_Soul_Parent).y, bulletspeed);
         direction += other.dir;
         speed = bulletspeed;
-    }   
+    }  
     dir += 15;
 }
 

@@ -41,6 +41,9 @@ if active_attack_delay <= 0 and active_attack_cooldown <= 0 and active_attack_du
 		if scr_Minion_Count() {
 			active_attack = choose(5);
 		}
+		if champ = 1 {
+			active_attack = 4;	
+		}
 	}
 	
 	// Triple Spin Shots
@@ -55,7 +58,7 @@ if active_attack_delay <= 0 and active_attack_cooldown <= 0 and active_attack_du
 	// Multi Portal Hop
     if active_attack = 2 {
 		// Setup how many attacks per boss move, delay, etc
-		scr_Boss_Attack_Time_Setup_v2(3, 150, 130, 120, 30, 10);
+		scr_Boss_Attack_Time_Setup_v2(3, 160, 130, 120, 30, 10);
 		
 		// Can set up the initial pattern direction
 		// patternDirection = scr_Soul_Point();
@@ -159,12 +162,31 @@ if active_attack_delay <= 0 and pattern_cooldown <= 0 and pattern_count > 0 {
 		
 		bullet_speed = bossbulletspeed * 2.25;
 		bullet_power = bosspower;
-		bullet_count = 9;
-        bullet_sprite = spr_Glowy_Purple_Shot;
-		bullet_spread = 18;
+		if champ = 0 {
+			bullet_count = 9;
+	        bullet_sprite = spr_Glowy_Purple_Shot;
+			bullet_spread = 18;
 		
-		scr_Boss_Shoot();
-
+			scr_Boss_Shoot();
+		}
+		if champ = 1 {
+			bullet_count = 1;
+	        bullet_sprite = spr_Glowy_Orange_Shot;
+			bullet_spread = 0;
+			bullet_type = obj_Popcorn_Kernel_Bullet;
+			
+			
+			repeat(6) {
+				bullet_speed = bossbulletspeed * (2.1 + random(1.2));
+				bullet_lob_time = 45 + random(30);
+				bullet_lifespan = (bullet_lob_time + 2) * 4;
+				bullet_bounce_speed = 3 + random(2);
+				
+				bullet_direction = scr_Boss_Bullet_Direction_Formula(scr_Soul_Point(), 50)
+				
+				scr_Boss_Shoot();
+			}
+		}
 	}
 	
 	if active_attack = 3 {
@@ -201,18 +223,30 @@ if active_attack_delay <= 0 and pattern_cooldown <= 0 and pattern_count > 0 {
 	        bullet_type = obj_Dormant_Bullet;
 	        bullet_sprite = spr_Glowy_Purple_Shot;	
 			
+			if champ = 1 {
+				bullet_sprite = spr_Glowy_Orange_Shot;
+				bullet_type = obj_Popcorn_Kernel_Bullet;
+				bullet_lob_time = 60;
+				bullet_lifespan = (bullet_lob_time + 2) * 4;
+				bullet_bounce_speed = 3;
+				
+				bullet_direction = scr_Boss_Bullet_Direction_Formula(scr_Soul_Point(), 50)	
+			}
+			
 			scr_Boss_Shoot();
 		}
-		if pattern_count mod 100 = 30 {
-			minion_count = 1;
-		    minion_type = obj_pocket_minion_v2
-		    minion_health = bossmaxhealth / 15;
-			minion_spawn_animation = spr_pocket_minion_spawn
+		if !scr_Minion_Count() {
+			if pattern_count mod 100 = 30 {
+				minion_count = 1;
+			    minion_type = obj_pocket_minion_v2
+			    minion_health = bossmaxhealth / 15;
+				minion_spawn_animation = spr_pocket_minion_spawn
 		
-			var _pos = scr_Boss_Teleport_v2_Return(-128)
-			minion_xx = _pos[0] - x;
-			minion_yy = _pos[1] - y;
-	        scr_Minion_Spawn();
+				var _pos = scr_Boss_Teleport_v2_Return(-128)
+				minion_xx = _pos[0] - x;
+				minion_yy = _pos[1] - y;
+		        scr_Minion_Spawn();
+			}
 		}
 	}
 	
@@ -265,7 +299,7 @@ if active_attack == 1 || active_attack == 5 {
 		scr_Boss_Wobble("Horizontal", 2, 0.4, 0)	
 	}
 } else if active_attack == 2 {
-	scr_Boss_Attack_Sprite_v2(spr_pocket_v2_springy, -1, 9, 21, 90);
+	scr_Boss_Attack_Sprite_v2(spr_pocket_v2_springy, -1, 9, 21, 100);
 	if image_index = 15 {
 		scr_Boss_Wobble("Horizontal", 2, 0.4, 0)	
 	}

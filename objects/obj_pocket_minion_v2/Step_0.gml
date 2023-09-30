@@ -14,6 +14,9 @@ if active_attack_delay <= 0 and active_attack_cooldown <= 0 and active_attack_du
     
 	// Pick a random attack to do
 	active_attack = choose(1, 2);
+	if champ = 1 {
+		active_attack = 1;	
+	}
 	
     if active_attack = 1 {
 		// Setup how many attacks per boss move, delay, etc
