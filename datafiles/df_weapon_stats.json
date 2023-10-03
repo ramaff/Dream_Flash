@@ -241,17 +241,20 @@
         "Shot_Weaken": 2,
 	    "Shot_Weaken_Time": 60,
         "Shot_Size": 0.33,
-	    "Shot_Lobbing": 1,
         "Shot_Trail": 2,
         "Shot_Trail_Frequency": 15,
         "Shot_Trail_Hit_Type": "obj_Gravity_Particle",
-        "Shot_Trail_Sprite": "spr_Big_Essence_Trail_Bit",
+        "Shot_Trail_Sprite": "spr_Soul_Big_Bit",
         "Shot_Trail_Hit_Life": 15,
         "Shot_Trail_Area": 30,
         "Shot_Trail_Color1": [255,0,19],
         "Shot_Trail_Color2": [255,0,425],
         "Shot_Trail_Hit_Count": 13,
-        "Shot_Trail_Hit_Sprite": "spr_Soul_Bit"
+        "Shot_Trail_Hit_Sprite": "spr_Soul_Big_Bit",
+        "Shot_Lobbing": true,
+        "Shot_Height": 10,
+        "Shot_Fall_Speed": -1,
+        "Shot_Gravity": 0.033
     },
     "12": {
         "Name": "Laser Essence",

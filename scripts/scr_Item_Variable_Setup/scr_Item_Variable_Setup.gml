@@ -65,6 +65,9 @@ function scr_Item_Variable_Setup() {
 	global.downwardSpiralBoost = 0;
 	global.Tunnel_Vision_Angle = 0;
 	
+	global.trailing_off = 0;
+	global.no_brainer = 0;
+	
 	var i = 0;
 	for(i = 0; i < 9; i++) {
 		global.L01essence[i] = 50 * global.L[1];

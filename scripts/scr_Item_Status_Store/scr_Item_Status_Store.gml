@@ -22,7 +22,8 @@ function scr_Item_Status_Store() {
 		global.OB[i] = 0;
 		global.OC[i] = 0;
 	    global.P[i] = 0;
-	    global.R[i] = 0;
+	    global.Q[i] = 0;
+		global.R[i] = 0;
 	    global.S[i] = 0;
 	    global.T[i] = 0;
 	    global.U[i] = 0;

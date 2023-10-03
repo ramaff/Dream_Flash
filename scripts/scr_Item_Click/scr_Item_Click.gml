@@ -202,7 +202,7 @@ function scr_Item_Click(linger = false){
 	instance_destroy();
 	
 	if recoGroup = "I" || itemVal = "A00" || itemVal = "B00" || itemVal = "C00" || itemVal = "D00" || itemVal = "E00" || itemVal = "F00" {
-		ds_list_delete(global.IItemPool, ds_list_find_index(global.IItemPool, itemVal));
+		ds_list_delete(global.i_item_pool, ds_list_find_index(global.i_item_pool, itemVal));
 	}
 	
 	scr_Memory_Info_Bank();

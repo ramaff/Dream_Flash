@@ -31,11 +31,11 @@ function scr_Boss_Step(version = 1) {
 
 	if boost = 1 {
 	    var _val = irandom(20)
-	    if _val >= 12 {
+	    if _val >= 17 {
 			
 			var color = make_color_rgb(255, 155, 0);		
 			var color2 = make_color_rgb(255, 50, 0);
-			scr_Particle_Burst(obj_Fire_Part, spr_Soul_Big_Bit, color, color2, 1, 2 + random(4), random(360), 0, 120, 0.4 + random(0.2), 40 + random(35), false)
+			scr_Particle_Burst(obj_Fire_Part, spr_Star_Part, color, color2, 1, 2 + random(4), random(360), 0, 120, 0.4 + random(0.2), 40 + random(35), false)
 			
 	    }
 		if _val >= 19 {

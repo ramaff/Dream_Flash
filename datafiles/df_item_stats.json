@@ -181,7 +181,7 @@
         "recollectionDescription": "Makes your hearts greater."
     },
     "B14": {
-        "recollectionString": "Fairness",
+        "recollectionString": "Catharsis",
         "recollectionSprite": "spr_Punch_Back_Hearts_Item",
         "recollectionExtraStats": "+400% Revenge Damage",
         "recollectionDescription": "When injured by an attack, hearts inflict punishment upon the source of the damage."
@@ -1429,6 +1429,18 @@
         "recollectionExtraStats": "+Free Thoughts",
         "recollectionDescription": "Occasionally shot free extra shots that automatically aim at the nearest enemy. Extra damage is a no brainer."
     },
+    "Q02": {
+        "recollectionString": "On Second Thought",
+        "recollectionSprite": "spr_Hold_That_Thought_Art",
+        "recollectionExtraStats": "+25% Thought Recycling",
+        "recollectionDescription": "When your thoughts expire from running out of their lifespan, they have a chance to get shot again from the soul."
+    },
+    "Q03": {
+        "recollectionString": "Thinking Outside the Box",
+        "recollectionSprite": "spr_Thinking_Outside_The_Box_Art",
+        "recollectionExtraStats": "+Unconventional Thinking",
+        "recollectionDescription": "Shot Projectiles spawn away from soul and then travel back to the soul."
+    },
 
     "R01": {
         "recollectionString": "Frightened Memory",
@@ -1523,7 +1535,7 @@
         "recollectionString": "Train of Thought",
         "recollectionSprite": "spr_Train_Of_Thought_Art",
         "recollectionExtraStats": "+Increasing Weapon Firerate and Efficiency",
-        "recollectionDescription": "By keeping up a train of thought, slowly gain upto +50% firerate and -25% essence cost with a weapon as long as you don’t switch weapons, get hit, stop firing, or teleport."
+        "recollectionDescription": "By keeping up a train of thought, slowly gain upto +100% firerate and -50% essence cost with a weapon as long as you don’t switch weapons, get hit, stop firing, or change shooting angle."
     },
     "U04": {
         "recollectionString": "Circle of Trust",
@@ -1533,7 +1545,7 @@
         "Casting_Credit": 0.5
     },
     "U05": {
-        "recollectionString": "Synapses",
+        "recollectionString": "Idea Connection",
         "recollectionSprite": "spr_Idea_Connection_Art",
         "recollectionExtraStats": "+Projectile Chain Hit",
         "recollectionDescription": "Connecting your ideas allows them to hit multiple targets in a single shot.",
@@ -1541,7 +1553,7 @@
         "Ascending_Credit": 0.5
     },
     "U06": {
-        "recollectionString": "Unload",
+        "recollectionString": "Mental Unload",
         "recollectionSprite": "spr_Venting_Art",
         "recollectionExtraStats": "+High Firerate +Lighter Shots",
         "recollectionDescription": "Completely unload your thoughts, massively increasing firerate but lowering shot power, accuracy, and essence cost.",
@@ -1555,22 +1567,16 @@
         "Beast_Credit": 1
     },
     "U08": {
-        "recollectionString": "On Second Thought",
-        "recollectionSprite": "spr_Hold_That_Thought_Art",
-        "recollectionExtraStats": "+25% Thought Recycling",
-        "recollectionDescription": "When your thoughts expire from running out of their lifespan, they have a chance to get shot again from the soul."
+        "recollectionString": "Brain Fart",
+        "recollectionSprite": "spr_Chilling_Thoughts_Art",
+        "recollectionExtraStats": "+1/8 Freezing Shots",
+        "recollectionDescription": "Occasionally create freezing shots, which can slow down bosses or freeze bullets."
     },
     "U09": {
         "recollectionString": "Chilling Thoughts",
         "recollectionSprite": "spr_Chilling_Thoughts_Art",
         "recollectionExtraStats": "+1/8 Freezing Shots",
         "recollectionDescription": "Occasionally create freezing shots, which can slow down bosses or freeze bullets."
-    },
-    "U10": {
-        "recollectionString": "Thinking Outside the Box",
-        "recollectionSprite": "spr_Thinking_Outside_The_Box_Art",
-        "recollectionExtraStats": "+Unconventional Thinking",
-        "recollectionDescription": "Shot Projectiles spawn away from soul and then travel back to the soul."
     },
 
     "V01": {
@@ -1598,10 +1604,10 @@
         "recollectionDescription": "Creates a random dark area on the field, this area does damage to everything it touches. Grows more powerful with a higher despair stat."
     },
     "V05": {
-        "recollectionString": "Sense of Security",
-        "recollectionSprite": "spr_Sense_Of_Security_Art",
-        "recollectionExtraStats": "+Leftmost Secure Heart +5 Assurance",
-        "recollectionDescription": "Your sense of security manifests itself in the form of a more secure final heart."
+        "recollectionString": "Self Aware",
+        "recollectionSprite": "spr_Spit_Balling_Art",
+        "recollectionExtraStats": "+Teleport Evasion +2 Assurance +6 Paranoia",
+        "recollectionDescription": "Self Awareness allows the soul to automatically teleport away to a nearby location whenever they would have taken damage."
     },
     "V06": {
         "recollectionString": "Extreme Thoughts",
@@ -1620,12 +1626,6 @@
         "recollectionSprite": "spr_Wandering_Thoughts_Art",
         "recollectionExtraStats": "+Aimless Shots",
         "recollectionDescription": "Producing shots uses up much less essence. Shots will wander around after a set distance in random directions."
-    },
-    "V09": {
-        "recollectionString": "Self Awareness",
-        "recollectionSprite": "spr_Spit_Balling_Art",
-        "recollectionExtraStats": "+Teleport Evasion +2 Assurance +6 Paranoia",
-        "recollectionDescription": "Self Awareness allows the soul to automatically teleport away to a nearby location whenever they would have taken damage."
     },
 
 

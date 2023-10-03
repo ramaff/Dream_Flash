@@ -270,7 +270,8 @@ function scr_Extra_Shot_Stats() {
 		scr_P06();
 		scr_P07();
 	
-		scr_U08();
+		//scr_U08();
+		scr_Q02();
 		scr_U09();
 		
 		scr_D10_Shot_Mod();

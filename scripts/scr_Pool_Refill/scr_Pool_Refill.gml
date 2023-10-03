@@ -164,8 +164,8 @@ function scr_Pool_Refill(pool){
 		}
 	}
 	
-	ds_list_delete(global.p_item_pool, ds_list_find_index(global.p_item_pool, "P08"));
-	ds_list_delete(global.v_item_pool, ds_list_find_index(global.v_item_pool, "V05"));
+	//ds_list_delete(global.p_item_pool, ds_list_find_index(global.p_item_pool, "P08"));
+	//ds_list_delete(global.v_item_pool, ds_list_find_index(global.v_item_pool, "V05"));
 	
 	//variable_struct_remove(global.P_item_pool, "P08")
 	//variable_struct_remove(global.V_item_pool, "V05")

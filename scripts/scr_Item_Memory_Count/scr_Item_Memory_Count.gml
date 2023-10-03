@@ -58,6 +58,9 @@ function scr_Item_Memory_Count(itemVal){
 	if recoGroup = "OC" {
 		recollectionCount = global.recollectionOC[string_digits(itemVal)];
 	}
+	if recoGroup = "Q" {
+		recollectionCount = global.recollectionQ[string_digits(itemVal)];
+	}
 	if recoGroup = "R" {
 		recollectionCount = global.recollectionR[string_digits(itemVal)];
 	}
