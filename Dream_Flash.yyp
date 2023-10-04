@@ -524,6 +524,7 @@
     {"id":{"name":"spr_Head_In_The_Clouds_Palette","path":"sprites/spr_Head_In_The_Clouds_Palette/spr_Head_In_The_Clouds_Palette.yy",},},
     {"id":{"name":"spr_Lesser_Heart","path":"sprites/spr_Lesser_Heart/spr_Lesser_Heart.yy",},},
     {"id":{"name":"spr_Regen_Heart","path":"sprites/spr_Regen_Heart/spr_Regen_Heart.yy",},},
+    {"id":{"name":"obj_Class_Level_Up_Indicator","path":"objects/obj_Class_Level_Up_Indicator/obj_Class_Level_Up_Indicator.yy",},},
     {"id":{"name":"spr_Survivor_Heart","path":"sprites/spr_Survivor_Heart/spr_Survivor_Heart.yy",},},
     {"id":{"name":"spr_Jumbo_Heart","path":"sprites/spr_Jumbo_Heart/spr_Jumbo_Heart.yy",},},
     {"id":{"name":"spr_Tough_Heart","path":"sprites/spr_Tough_Heart/spr_Tough_Heart.yy",},},

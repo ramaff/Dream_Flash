@@ -1,39 +1,5 @@
 function scr_Soul_Item_Assign() {
 	
-	/*
-	var letterArray = ["A","M"];
-	var j = 0;
-	
-	for(var i = 0; i < array_length(letterArray); i++) {
-		if letterArray[i] = "A" {
-			for(j = 1; j <= 29; j++) {
-				if global.A[i] > 0 {
-					numOfButts++;
-					soulItemCount[numOfButts] = global.A[i];
-				}
-			}
-		}
-		if letterArray[i] = "M" {
-			for(var j = 1; j <= 29; j++) {
-				if global.M[i] > 0 {
-					numOfButts++;
-					soulItemCount[numOfButts] = global.M[i];
-				}
-			}
-		}
-		
-		for(var j = 1; j <= numOfButts; j++) {
-			if soulItemCount[numOfButts] > 0 {
-			    if j < 10 {
-			        soulItems[numOfButts] = letterArray[i] + "0" + string(j);
-			    } else {
-			        soulItems[numOfButts] = letterArray[i] + string(j)
-			    }
-			}
-		}
-	}
-	*/
-	
 	for(i = 1; i <= 99; i++) {
 		if global.A[i] >= 1 {
 	        numOfButts++
@@ -208,6 +174,17 @@ function scr_Soul_Item_Assign() {
 	            soulItems[numOfButts] = "P" + string(i)
 			}
 			soulItemCount[numOfButts] = global.P[i] - 1;
+	    }
+	}
+	for(i = 1; i <= 99; i++) {
+	    if global.Q[i] >= 1 {
+	        numOfButts++
+	        if i < 10 {
+	            soulItems[numOfButts] = "Q" + "0" + string(i)
+	        } else {
+	            soulItems[numOfButts] = "Q" + string(i)
+	        }
+			soulItemCount[numOfButts] = global.R[i] - 1;
 	    }
 	}
 	for(i = 1; i <= 99; i++) {

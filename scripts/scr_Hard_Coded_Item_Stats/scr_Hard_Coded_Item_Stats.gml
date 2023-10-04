@@ -630,31 +630,49 @@ function scr_Hard_Coded_Item_Stats(itemVal, items_to_add = 1, reload = false) {
 		if itemVal = "K03" {
 		    global.soulstrength += 2 * global.currentchapter;
 		    obj_Soul_Parent.sstrength += 2 * global.currentchapter;
+			repeat(global.currentchapter) {
+				scr_Stat_Up_Indication(1, false)	
+			}
 		    //global.K[3]++;
 		}
 		if itemVal = "K04" {
 		    global.soulvitality += 2 * global.currentchapter;
 		    obj_Soul_Parent.svitality += 2 * global.currentchapter;
+			repeat(global.currentchapter) {
+				scr_Stat_Up_Indication(2, false)	
+			}
 		    //global.K[4]++;
 		}
 		if itemVal = "K05" {
 		    global.soulessence += 2 * global.currentchapter;
 		    obj_Soul_Parent.sessence += 2 * global.currentchapter;
+			repeat(global.currentchapter) {
+				scr_Stat_Up_Indication(3, false)	
+			}
 		    //global.K[5]++;
 		}
 		if itemVal = "K06" {
 		    global.souldexterity += 2 * global.currentchapter;
 		    obj_Soul_Parent.sdexterity += 2 * global.currentchapter;
+			repeat(global.currentchapter) {
+				scr_Stat_Up_Indication(4, false)	
+			}
 		    //global.K[6]++;
 		}
 		if itemVal = "K07" {
 		    global.soulperception += 2 * global.currentchapter;
 		    obj_Soul_Parent.sperception += 2 * global.currentchapter;
+			repeat(global.currentchapter) {
+				scr_Stat_Up_Indication(5, false)	
+			}
 		    //global.K[7]++;
 		}
 		if itemVal = "K08" {
 		    global.soulstate += 2 * global.currentchapter;
 		    obj_Soul_Parent.sstate += 2 * global.currentchapter;
+			repeat(global.currentchapter) {
+				scr_Stat_Up_Indication(6, false)	
+			}
 		    //global.K[8]++;
 		}
 	

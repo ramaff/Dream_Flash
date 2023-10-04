@@ -2,10 +2,10 @@
 // You can write your code in this editor
 
 direction = 90;
-speed = 2;
-friction = 0.066;
+speed = 3;
+friction = 0.05;
 
-alarm[0] = 90 + irandom(10);
+alarm[0] = 120 + irandom(15);
 
-statUpStr = "none somehow"
-statUpCol = c_white;
+stat_up_str = "none somehow"
+stat_up_col = c_white;
