@@ -218,6 +218,12 @@ function scr_Recollection_Panel_Assign() {
 	        }
 	    }
 		inum += 8;
+	    for(i = inum; i <= inum+2; i++) {
+	        if buttNum = i {
+	            itemVal = "Q0" + string(i + 1 - inum);
+	        }
+	    }
+		inum += 3;
 	    for(i = inum; i <= inum+5; i++) {
 	        if buttNum = i {
 	            itemVal = "R0" + string(i + 1 - inum);
@@ -241,12 +247,12 @@ function scr_Recollection_Panel_Assign() {
 	            itemVal = "U0" + string(i + 1 - inum);
 	        }
 	    }
-		for(i = inum+9; i <= inum+9; i++) {
+		/*for(i = inum+9; i <= inum+9; i++) {
 	        if buttNum = i {
 	            itemVal = "U" + string(i + 1 - inum);
 	        }
-	    }
-		inum += 10;
+	    } */
+		inum += 9;
 		for(i = inum; i <= inum+7; i++) {
 	        if buttNum = i {
 	            itemVal = "V0" + string(i + 1 - inum);

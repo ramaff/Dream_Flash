@@ -154,7 +154,7 @@ function scr_Weapon_Use_List(cWP = global.currentweapon) {
 			} else {
 				scr_Soul_Spawn();	
 			}
-			scr_U10();
+			scr_Q03();
 		}
 		
 		if Shot_Extra != false {
@@ -175,7 +175,7 @@ function scr_Weapon_Use_List(cWP = global.currentweapon) {
 					} else {
 						scr_Soul_Spawn();	
 					}
-					scr_U10();
+					scr_Q03();
 				}
 			}
 		}

@@ -40,6 +40,7 @@ function scr_Recollect_Item_Store() {
 		global.recollectionOB[i] = 0;
 		global.recollectionOC[i] = 0;
 	    global.recollectionP[i] = 0;
+	    global.recollectionQ[i] = 0;
 	    global.recollectionR[i] = 0;
 	    global.recollectionS[i] = 0;
 	    global.recollectionT[i] = 0;

@@ -39,7 +39,7 @@ function scr_Misc_Field_Pool_Pick(){
 	if _type <= itemcount { /// T
 		return scr_Pool_Pick(global.t_item_pool);
 	}
-	itemcount += 10;
+	itemcount += 9;
 	if _type <= itemcount { /// U
 		return scr_Pool_Pick(global.u_item_pool);
 	}

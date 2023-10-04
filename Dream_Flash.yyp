@@ -994,7 +994,7 @@
     {"id":{"name":"spr_Gutsy","path":"sprites/spr_Gutsy/spr_Gutsy.yy",},},
     {"id":{"name":"obj_Tar_Pool","path":"objects/obj_Tar_Pool/obj_Tar_Pool.yy",},},
     {"id":{"name":"spr_Alley_Gutterball","path":"sprites/spr_Alley_Gutterball/spr_Alley_Gutterball.yy",},},
-    {"id":{"name":"scr_U10","path":"scripts/scr_U10/scr_U10.yy",},},
+    {"id":{"name":"scr_Q03","path":"scripts/scr_Q03/scr_Q03.yy",},},
     {"id":{"name":"spr_Spike_Gutterball","path":"sprites/spr_Spike_Gutterball/spr_Spike_Gutterball.yy",},},
     {"id":{"name":"spr_Alley_Ball","path":"sprites/spr_Alley_Ball/spr_Alley_Ball.yy",},},
     {"id":{"name":"spr_light_point","path":"sprites/spr_light_point/spr_light_point.yy",},},

@@ -52,7 +52,7 @@ function scr_Item_Variable_Setup() {
 	
 	global.SpikeExtra = 0;
 	
-	global.U10count = 0;
+	global.Q3count = 0;
 	global.clarityBomb = 0;
 	
 	global.OC4Debuff = false;

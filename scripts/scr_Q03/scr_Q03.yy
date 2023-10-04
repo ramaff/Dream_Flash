@@ -1,11 +1,11 @@
 {
   "resourceType": "GMScript",
   "resourceVersion": "1.0",
-  "name": "scr_U10",
+  "name": "scr_Q03",
   "isCompatibility": false,
   "isDnD": false,
   "parent": {
-    "name": "U Items",
-    "path": "folders/Scripts/Item Commands/U Items.yy",
+    "name": "Q Group",
+    "path": "folders/Scripts/Item Commands/Q Group.yy",
   },
 }
