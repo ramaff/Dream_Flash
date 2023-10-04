@@ -180,8 +180,6 @@ function scr_Weapon_Use_List(cWP = global.currentweapon) {
 			}
 		}
 		
-		scr_P08();
-		
 		if spawnProjectile {
 			scr_OC03(cWP);
 		}

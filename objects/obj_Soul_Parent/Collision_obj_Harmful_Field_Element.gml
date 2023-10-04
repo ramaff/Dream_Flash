@@ -22,6 +22,14 @@ if soulinvincibility <= 0 {
 */
 
 if soulinvincibility <= 0 {
+	
+	if global.V[5] > 0 {
+		var _evaded = scr_V05();
+		if _evaded {
+			exit;	
+		}
+	}
+	
 	if other.hazardActive = 1 {	
 	hitType = "Nonboss";
 

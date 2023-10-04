@@ -1,6 +1,13 @@
 if other.shotsouldamage > 0 {
     if soulinvincibility <= 0 {
 		
+		if global.V[5] > 0 {
+			var _evaded = scr_V05();
+			if _evaded {
+				exit;	
+			}
+		}
+		
 		hitType = "Nonboss";
 		
         damageamount = other.shotsouldamage;

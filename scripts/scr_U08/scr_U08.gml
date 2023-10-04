@@ -14,8 +14,8 @@ function scr_U08(){
 				var _poison_size = sqrt(image_xscale * (100 + _pow)) * 35
 				var _poison_sprite_size = _poison_size / 400
 				
-				Print_DF("_poison_size: " + string(_poison_size))
-				Print_DF("_poison_sprite_size: " + string(_poison_sprite_size))
+				//Print_DF("_poison_size: " + string(_poison_size))
+				//Print_DF("_poison_sprite_size: " + string(_poison_sprite_size))
 				
 				repeat(8) {
 					var _ddir = random(360);

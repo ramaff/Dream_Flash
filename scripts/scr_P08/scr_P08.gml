@@ -1,23 +1,25 @@
 // Script assets have changed for v2.3.0 see
 // https://help.yoyogames.com/hc/en-us/articles/360005277377 for more information
 
-// Weapon Use List
+// Soul Alarm 4
 
 function scr_P08(){
 
 	if global.P[8] > 0 {
 		
-		global.trailing_off += 0.75 * global.P[8]
+		var _c_wp = global.currentweapon
+		
+		current_weapon_stats = json_parse(json_stringify(variable_struct_get(global.weapon_stats, string(_c_wp))))
+		
+		scr_Default_Weapon_Stats();
+		
+		var _delay = current_weapon_stats.Delay / scr_Class_Stat_Firerate_Multiplier();
+		
+		global.trailing_off += global.P[8] * 4 / _delay
 		
 		while global.trailing_off >= 1 {
 			
 			global.trailing_off -= 1;
-		
-			var _c_wp = global.currentweapon
-		
-			current_weapon_stats = json_parse(json_stringify(variable_struct_get(global.weapon_stats, string(_c_wp))))
-		
-			scr_Default_Weapon_Stats();
 		
 			current_weapon_stats.Shot_Speed = 0
 			current_weapon_stats.Shot_Forward = 0;
