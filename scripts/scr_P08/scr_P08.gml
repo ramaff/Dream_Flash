@@ -8,6 +8,10 @@ function scr_P08(){
 	if global.P[8] > 0 {
 		
 		var _c_wp = global.currentweapon
+
+		if scr_Non_Projectile_Weapon(_c_wp) {
+			exit;	
+		}
 		
 		current_weapon_stats = json_parse(json_stringify(variable_struct_get(global.weapon_stats, string(_c_wp))))
 		

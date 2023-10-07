@@ -2495,7 +2495,8 @@
         "Shot_Power": 0,
         "Shot_Speed": 0,
         "Shot_Size": 0.5,
-        "Shot_Sprite": "spr_Healing_Essence_Art"
+        "Shot_Sprite": "spr_Healing_Essence_Art",
+        "Shot_Lifespan": 0
     },
     "602": {
         "Name": "Healing Barrier",

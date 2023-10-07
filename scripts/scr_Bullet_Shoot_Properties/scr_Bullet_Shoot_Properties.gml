@@ -30,6 +30,7 @@ function scr_Bullet_Shoot_Properties() {
 	bulletsprite = other.bullet_sprite;
 	//baseDepth = 0;
 	bulletblend = other.bullet_blend;
+	image_blend = bulletblend
 	bulletfade = other.bullet_fade;
 	bulletbounceY = other.bullet_bounce_Y;
 	bulletbouncespeed = other.bullet_bounce_speed;

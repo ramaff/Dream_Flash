@@ -136,14 +136,7 @@ function scr_Soul_Shot_Boss_Hit() {
 			}
         
 	        if other.pathBoss = 0 {
-	            if shotknockback >= other.bossknockdefense {
-	                other.bossknockbackdirection = direction;
-	                other.bossknockback = (shotknockback - other.bossknockdefense) / 2;
-	                other.bossknockbacktime = 5;
-					if other.bossknockback > 200 {
-						other.bossknockback = 200;	
-					}
-	            }
+	            scr_Apply_Boss_Knockback(other.id, shotknockback, 5, direction)
 	        } else {
 	            if shotknockback > other.bossknockdefense {
 	                other.path_position -= (shotknockback - other.bossknockdefense) / 1000;

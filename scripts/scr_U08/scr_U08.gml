@@ -19,7 +19,7 @@ function scr_U08(){
 				
 				repeat(8) {
 					var _ddir = random(360);
-					scr_Particle_Burst(obj_Friction_Part, spr_Smoke_Part, make_color_rgb(40,255,80), make_color_rgb(30,205,60), 
+					scr_Particle_Burst(obj_Smoke_Part, spr_Smoke_Part, make_color_rgb(40,255,80), make_color_rgb(30,205,60), 
 									   1, 4 + random(2), _ddir, 0, 30, _poison_sprite_size + random(0.1), 45 + random(15))
 	
 				}
@@ -32,23 +32,14 @@ function scr_U08(){
 				with (obj_Boss_Parent) {
 					if point_distance(x,y,_xx,_yy) < _poison_size {
 						
-						direction = point_direction(_xx, _yy, x, y);
-						speed = 50 / max(10, sqrt(point_distance(x, y, _xx, _yy)));
-						friction = 1;
+						var _knock = 300 / max(10, sqrt(point_distance(x, y, _xx, _yy)));
+						
+						scr_Apply_Boss_Knockback(id, _knock, 5, point_direction(_xx, _yy, x, y))
 						
 						bosshealth -= _pow;
 						scr_Damage_Indicator(0, _pow, 1);
 					
-						for(i = 0; i <= 49; i++) {
-					        if bosspoison[i] = 0 {
-					            bosspoison[i] = _poison_pow;
-					            bosspoisontime[i] = 30;
-					            bosspoisonmaxtime[i] = 30;
-					            bosspoisonticks[i] = 6;
-					            break;
-					        }
-					    }
-					
+						scr_Apply_Boss_Poison(id, _poison_pow, 30, 6);			
 					}
 				}
 				instance_destroy();

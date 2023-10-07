@@ -1,18 +1,6 @@
 /// @description Insert description here
 // You can write your code in this editor
 
-/*
-if bpart = 1 {
-	var psize = 0.1 + bulletsize;
-
-	psize = (psize / 2) + random(psize / 2);
-
-	part_type_size(ptype,psize,0,-(psize/bpartlife),0);
-	
-	part_emitter_region(global.psystem,global.pemitter, x - bpartarea, x + bpartarea, y - bpartarea, y + bpartarea,ps_shape_ellipse,ps_distr_linear);
-	part_emitter_burst(global.psystem, global.pemitter, ptype, 1);
-}
-*/
 if global.gameParticles > 0 {
 	if bpart > 0 {
 	

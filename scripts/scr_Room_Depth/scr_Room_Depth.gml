@@ -1,7 +1,9 @@
 function scr_Room_Depth() {
+	
+	exit;
 	var addDepth = argument[0];
 
-	var roomsize = Floor_Layout_Control.Flash[0,3];
+	var roomsize = Floor_Layout_Control.floor[0,3];
 
 	var xxv = room_width / 2;
 	var yyv = room_height / 2;

@@ -1418,14 +1418,14 @@
     },
     "P08": {
         "recollectionString": "Trailing Off",
-        "recollectionSprite": "spr_Optimistic_Art",
+        "recollectionSprite": "spr_Trailing_Off_Art",
         "recollectionExtraStats": "+Shot Trail",
         "recollectionDescription": "Constantly create shots that passively float around for a while."
     },
 
     "Q01": {
         "recollectionString": "No Brainer",
-        "recollectionSprite": "spr_Frightened_Memory_Art",
+        "recollectionSprite": "spr_No_Brainer_Art",
         "recollectionExtraStats": "+Free Thoughts",
         "recollectionDescription": "Occasionally shot free extra shots that automatically aim at the nearest enemy. Extra damage is a no brainer."
     },
@@ -1440,6 +1440,12 @@
         "recollectionSprite": "spr_Thinking_Outside_The_Box_Art",
         "recollectionExtraStats": "+Unconventional Thinking",
         "recollectionDescription": "Shot Projectiles spawn away from soul and then travel back to the soul."
+    },
+    "Q04": {
+        "recollectionString": "Slipped My Mind",
+        "recollectionSprite": "spr_Thinking_Outside_The_Box_Art",
+        "recollectionExtraStats": "+Thought Redirection",
+        "recollectionDescription": "The soul now constantly shoots banana peels on to the field. These redirect any bullets that come in contact with them. They also can make the soul slip."
     },
 
     "R01": {
@@ -1568,9 +1574,9 @@
     },
     "U08": {
         "recollectionString": "Brain Fart",
-        "recollectionSprite": "spr_Chilling_Thoughts_Art",
-        "recollectionExtraStats": "+1/8 Freezing Shots",
-        "recollectionDescription": "Occasionally create freezing shots, which can slow down bosses or freeze bullets."
+        "recollectionSprite": "spr_Brain_Fart_Art",
+        "recollectionExtraStats": "+Projectile Fart",
+        "recollectionDescription": "Every projectile at any moment could instantly explode into a fart. These farts do splash damage and inflict powerful poison on enemies."
     },
     "U09": {
         "recollectionString": "Chilling Thoughts",
@@ -1605,12 +1611,12 @@
     },
     "V05": {
         "recollectionString": "Self Aware",
-        "recollectionSprite": "spr_Spit_Balling_Art",
+        "recollectionSprite": "spr_Self_Awareness_Art",
         "recollectionExtraStats": "+Teleport Evasion +2 Assurance +6 Paranoia",
         "recollectionDescription": "Self Awareness allows the soul to automatically teleport away to a nearby location whenever they would have taken damage."
     },
     "V06": {
-        "recollectionString": "Extreme Thoughts",
+        "recollectionString": "Overstimulation",
         "recollectionSprite": "spr_Overexertion_Art",
         "recollectionExtraStats": "+Overpowered Shots",
         "recollectionDescription": "Place an excess of essence into these shots. Occasionally shoot over exerted shots that drain twice as much essence but dish out more damage."
