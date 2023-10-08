@@ -22,7 +22,7 @@ if type = 1 and category = 3 {
 if type = 2 and category = 3 {
     global.gameMusic = percent;
 }
-if type = 3 and category = 1 {
+if type = 4 and category = 1 {
     global.gameScreenShake = percent / 100;
 }
 if type = 15 and category = 4 {

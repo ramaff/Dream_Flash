@@ -10,5 +10,9 @@ function scr_Room_Leavable(){
 	Print_DF(string(global.floor[2]))
 	Print_DF(string(global.floor[3 */
 	
-	return global.floor[global.currentroom,0] == "Normal" || (global.bosscount <= 0 and (((global.spiritRoom != global.currentroom) and (global.evilSpiritRoom != global.currentroom)) || global.currentroom = 0) and scr_Negative_Room_Check())
+	if global.floor[global.currentroom,0] == "Normal" {
+		return true	
+	}
+	
+	return (global.bosscount <= 0 and instance_number(obj_Main_Boss_Parent) <= 0 and (((global.spiritRoom != global.currentroom) and (global.evilSpiritRoom != global.currentroom)) || global.currentroom = 0) and scr_Negative_Room_Check())
 }

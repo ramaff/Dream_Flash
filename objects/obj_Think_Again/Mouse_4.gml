@@ -12,89 +12,32 @@ if global.soulflash >= price {
 			
 				var itemform = 0;
 				
-				var ppool = global.AItemPool;
+				var ppool = global.a_item_pool;
 	
-			    if itemGroup = "A" and itemVal != "A00" {
-			        ppool = global.AItemPool;
+			    /*if itemGroup = "A" and itemVal != "A00" {
+			        ppool = scr_Get_Item_Pool_From_Letter(itemGroup)
 			    }
 			    if itemGroup = "B" and itemVal != "B00" {
-			        ppool = global.BItemPool;
+			        ppool = scr_Get_Item_Pool_From_Letter(itemGroup)
 			    }
 			    if itemGroup = "C" and itemVal != "C00" {
-			        ppool = global.CItemPool;
+			        ppool = scr_Get_Item_Pool_From_Letter(itemGroup)
 			    }
 			    if itemGroup = "D" and itemVal != "D00" {
-			        ppool = global.DItemPool;
+			        ppool = scr_Get_Item_Pool_From_Letter(itemGroup)
 			    }
 			    if itemGroup = "E" and itemVal != "E00" {
-			        ppool = global.EItemPool;
+			        ppool = scr_Get_Item_Pool_From_Letter(itemGroup)
 			    }
 			    if itemGroup = "F" and itemVal != "F00" {
-			        ppool = global.FItemPool;
-			    }
-			    if itemGroup = "G" {
-			        ppool = global.GItemPool;
-			    }
-			    if itemGroup = "H" {
-			        ppool = global.HItemPool;
-			    }
+			        ppool = scr_Get_Item_Pool_From_Letter(itemGroup)
+			    } */
 				if itemGroup = "I" || itemVal = "A00" || itemVal = "B00" || itemVal = "C00" || itemVal = "D00" || itemVal = "E00" || itemVal = "F00" {
-			        ppool = global.IItemPool;
-			    }
-			    if itemGroup = "J" {
-			        ppool = global.JItemPool;
-			    }
-			    if itemGroup = "K" {
-			        ppool = global.KItemPool;
-			    }
-				if itemGroup = "L" {
-			        ppool = global.RItemPool;
-			    }
-			    if itemGroup = "M" {
-			        ppool = global.MItemPool;
-			    }
-				if itemGroup = "N" {
-			        ppool = global.NItemPool;
-			    }
-				if itemGroup = "P" {
-			        ppool = global.PItemPool;
-			    }
-				if itemGroup = "OA" {
-			        ppool = global.OAItemPool;
-			    }
-				if itemGroup = "OB" {
-			        ppool = global.OBItemPool;
-			    }
-				if itemGroup = "OC" {
-			        ppool = global.OCItemPool;
-			    }
-			    if itemGroup = "R" {
-			        ppool = global.RItemPool;
-			    }
-				if itemGroup = "S" {
-			        ppool = global.SItemPool;
-			    }
-				if itemGroup = "T" {
-			        ppool = global.TItemPool;
-			    }
-				if itemGroup = "U" {
-			        ppool = global.UItemPool;
-			    }
-				if itemGroup = "V" {
-			        ppool = global.VItemPool;
-			    }
-				if itemGroup = "W" {
-			        ppool = global.WItemPool;
-			    }
-				if itemGroup = "XA" {
-			        ppool = global.XAItemPool;
-			    }
-				if itemGroup = "XB" {
-			        ppool = global.XBItemPool;
-			    }
-				if itemGroup = "XC" {
-			        ppool = global.XCItemPool;
-			    }
+			        ppool = scr_Get_Item_Pool_From_Letter("I")
+			    } else {
+					ppool = scr_Get_Item_Pool_From_Letter(itemGroup)	
+				}
+			    
 
 				/*
 				if itemNum > 0 {

@@ -8,6 +8,7 @@ function scr_Settings_Status_Store() {
 	global.gameResolutionY = 720;
 	global.gameFullscreen = 0;
 	global.gameBloomShader = 1;
+	global.level_up_camera_lock = 1;
 	
 	global.gameScreenShake = 1;
 	global.gameParticles = 1;

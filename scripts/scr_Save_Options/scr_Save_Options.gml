@@ -15,6 +15,7 @@ function scr_Save_Options() {
 	ini_write_real("Options", "gameResolutionY", global.gameResolutionY);
 	ini_write_real("Options", "gameFullscreen", global.gameFullscreen);
 	ini_write_real("Options", "gameBloomShader", global.gameBloomShader);
+	ini_write_real("Options", "level_up_camera_lock", global.level_up_camera_lock);
 	
 	ini_write_real("Options", "gameScreenShake", global.gameScreenShake);
 	ini_write_real("Options", "gameParticles", global.gameParticles);

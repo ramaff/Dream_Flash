@@ -198,22 +198,22 @@ function scr_Boss_Item_Field_Old(roomType){
 	}
 		
 		if strChoose = 1 {
-		    Floor_Layout_Control.Flash[global.currentroom,0] = "Strength Field"
+		    global.floor[global.currentroom,0] = "Strength Field"
 		} else if vitChoose = 1 {
-		    Floor_Layout_Control.Flash[global.currentroom,0] = "Vitality Field"
+		    global.floor[global.currentroom,0] = "Vitality Field"
 		} else if essChoose = 1 {
-		    Floor_Layout_Control.Flash[global.currentroom,0] = "Essence Field"
+		    global.floor[global.currentroom,0] = "Essence Field"
 		} else if dexChoose = 1 {
-		    Floor_Layout_Control.Flash[global.currentroom,0] = "Dexterity Field"
+		    global.floor[global.currentroom,0] = "Dexterity Field"
 		} else if perChoose = 1 {
-		    Floor_Layout_Control.Flash[global.currentroom,0] = "Perception Field"
+		    global.floor[global.currentroom,0] = "Perception Field"
 		} else if staChoose = 1 {
-		    Floor_Layout_Control.Flash[global.currentroom,0] = "State Field"
+		    global.floor[global.currentroom,0] = "State Field"
 		} else {
-		    Floor_Layout_Control.Flash[global.currentroom,0] = "Normal"
+		    global.floor[global.currentroom,0] = "Normal"
 		}
         
-	if Floor_Layout_Control.Flash[global.currentroom,0] = "Normal" {
+	if global.floor[global.currentroom,0] = "Normal" {
 	    //instance_create(x,y,Normal_Room_Start_Control)
 	} else {
 	    global.orbit[0] = 0;
@@ -223,20 +223,20 @@ function scr_Boss_Item_Field_Old(roomType){
 	    global.orbit[999] = -1000;
             
 	    for(j = 1; j <= 13; j++) {
-	        Floor_Layout_Control.Flash[global.currentroom,6 + j] = "00"; 
+	        global.floor[global.currentroom,6 + j] = "00"; 
 	    }
         
 	    itemNumChoice = 2 + floor((global.soulhope + random(100 + global.soulhope * 3)) / 100);
 	    itemNumPick = 1;
-		var class = Floor_Layout_Control.Flash[global.currentroom,0];
+		var class = global.floor[global.currentroom,0];
 	    for(j = 1; j <= itemNumChoice; j++) {
 			i = global.currentroom;
-	        Floor_Layout_Control.Flash[global.currentroom,6+j] = scr_Class_Item_Choose(class,0);
+	        global.floor[global.currentroom,6+j] = scr_Class_Item_Choose(class,0);
 	    }
-	    Floor_Layout_Control.Flash[global.currentroom,19] = scr_Stat_Up_Choose(class);
-	    field = Floor_Layout_Control.Flash[global.currentroom,0];
+	    global.floor[global.currentroom,19] = scr_Stat_Up_Choose(class);
+	    field = global.floor[global.currentroom,0];
 	    for(i = 1; i <= 13; i++) {
-	        item[i] = Floor_Layout_Control.Flash[global.currentroom,6+i];
+	        item[i] = global.floor[global.currentroom,6+i];
 	    }
             
 	    scr_Item_Spawn(field, item[1], item[2], item[3], item[4], item[5], item[6], item[7], item[8], item[9], item[10], item[11], item[12], item[13]);

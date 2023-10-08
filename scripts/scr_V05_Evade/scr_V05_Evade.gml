@@ -6,8 +6,6 @@ function scr_V05_Evade(_og_x = x, _og_y = y){
 	var _new_yy = _og_y;
 	var _evasion_attempts = 1 + (1 * global.V[5]);
 	
-	Print_DF("og x: " + string(_og_x) + ", og y: " + string(_og_y))
-	
 	while(_evasion_attempts > 0) {
 		_evasion_attempts--;
 		

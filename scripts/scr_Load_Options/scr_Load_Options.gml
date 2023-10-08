@@ -18,6 +18,7 @@ function scr_Load_Options() {
 			global.gameScreenShake = ini_read_real("Options","gameScreenShake",1);
 			global.gameParticles = ini_read_real("Options","gameParticles",1);
 			global.gameGraphics = ini_read_string("Options","gameGraphics","High");
+			global.level_up_camera_lock = ini_read_real("Options","level_up_camera_lock",1);
 			
 			global.gameMoveLeft = ini_read_string("Options","gameMoveLeft","A");
 			global.gameMoveDown = ini_read_string("Options","gameMoveDown","S");

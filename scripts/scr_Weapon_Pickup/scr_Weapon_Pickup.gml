@@ -4,17 +4,19 @@ function scr_Weapon_Pickup() {
 
 	weapUp = 0;
 
+	// upgrade weapon if its the same as any of them
 	for (i = 0; i < 5; i++) {
 	    if (Soul_Weapons_Control.weapon[i,2] = itemindex) {
 	        weapUp = 1;
 	    }
 	}
 
+	// upgrade weapon if its the same as any of them
 	for (i = 0; i < global.weaponslots; i++) {
 	    if (Soul_Weapons_Control.weapon[i,2] = itemindex) {
 	        scr_Weapon_Stat_Add();
 	        instance_destroy();
-	        Floor_Layout_Control.Flash[global.currentroom,itemData] = 0;
+	        global.floor[global.currentroom,itemData] = 0;
 	        exit;
 	    }
 	}
@@ -31,7 +33,7 @@ function scr_Weapon_Pickup() {
 	    Soul_Weapons_Control.weapon[emptynumber,2] = itemindex;
 	    scr_Weapon_Stat_Add();
 	    instance_destroy();
-	    Floor_Layout_Control.Flash[global.currentroom,itemData] = 0;
+	    global.floor[global.currentroom,itemData] = 0;
 	} else {
 	    for (i = 0; i < global.weaponslots; i++) {
 	        if (Soul_Weapons_Control.weapon[i,1] = 0) {
@@ -42,6 +44,7 @@ function scr_Weapon_Pickup() {
 	        }
 	    }
 	}
+	
 
 
 

@@ -3,8 +3,8 @@ if global.layerdeep = 2 {
     global.layerdeep = 3;
     
     if category = 1 {
-        for(i = 1; i <= 3; i++) {
-			if i != 3 {
+        for(i = 1; i <= 4; i++) {
+			if i != 4 {
 				with instance_create(camera_get_view_x(view) + camera_get_view_width(view) / 2 - 32 + 128,camera_get_view_y(view) + 96 * i,obj_Option_Button) {
 	                type = other.i;
 	                category = other.category;

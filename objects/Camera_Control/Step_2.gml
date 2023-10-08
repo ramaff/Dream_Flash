@@ -27,7 +27,7 @@ if instance_exists(Floor_Layout_Control) and global.layerdeep < 1 {
 		ideal_zoom = sqrt(1024 / (rsize + extra_zoom))
 	}
 	
-	if instance_exists(obj_Class_Level_Up_Indicator) {
+	if instance_exists(obj_Class_Level_Up_Indicator) and global.level_up_camera_lock = 1 {
 		var ideal_zoom = 1;
 	}
 
@@ -103,7 +103,7 @@ if instance_exists(obj_Soul_Parent) {
 	var camX = clamp((xAv - (view_width_zoom / 2)), 0, room_width - view_width_zoom);
 	var camY = clamp((yAv - (view_height_zoom / 2)), 0, room_height - view_height_zoom);
 	
-	if instance_exists(obj_Class_Level_Up_Indicator) {
+	if instance_exists(obj_Class_Level_Up_Indicator) and global.level_up_camera_lock = 1 {
 		var camX = (room_width / 2) - (view_width_zoom / 2)
 		var camY = (room_height / 2) - (view_height_zoom / 2)
 	}
