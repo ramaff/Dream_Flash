@@ -94,6 +94,7 @@
     {"name":"Boss Commands","order":2,"path":"folders/Scripts/Boss Commands.yy",},
     {"name":"Attack Helper Functions","order":6,"path":"folders/Scripts/Boss Commands/Attack Helper Functions.yy",},
     {"name":"Behaviors","order":1,"path":"folders/Scripts/Boss Commands/Behaviors.yy",},
+    {"name":"Hit Boss","order":7,"path":"folders/Scripts/Boss Commands/Hit Boss.yy",},
     {"name":"Math and Displays","order":4,"path":"folders/Scripts/Boss Commands/Math and Displays.yy",},
     {"name":"Set Up","order":5,"path":"folders/Scripts/Boss Commands/Set Up.yy",},
     {"name":"olf","order":18,"path":"folders/Scripts/Boss Commands/Set Up/olf.yy",},
@@ -406,7 +407,6 @@
     {"name":"Misc BGs","order":13,"path":"folders/Tile Sets/Misc BGs.yy",},
     {"name":"Nightmare BGs","order":9,"path":"folders/Tile Sets/Nightmare BGs.yy",},
     {"name":"Timelines","order":9,"path":"folders/Timelines.yy",},
-    {"name":"Hit Boss","order":7,"path":"folders/Scripts/Boss Commands/Hit Boss.yy",},
   ],
   "ResourceOrderSettings": [
     {"name":"spr_Masked_Bliss_Spirit_Attack","order":1,"path":"sprites/spr_Masked_Bliss_Spirit_Attack/spr_Masked_Bliss_Spirit_Attack.yy",},

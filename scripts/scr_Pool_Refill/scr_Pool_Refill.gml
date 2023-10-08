@@ -102,7 +102,7 @@ function scr_Pool_Refill(pool){
 	}
 	if pool = global.u_item_pool {
 		letter = "U"
-		totalitems = 10;
+		totalitems = 9;
 	}
 	if pool = global.v_item_pool {
 		letter = "V"

@@ -1108,12 +1108,15 @@ function scr_Hard_Coded_Item_Stats(itemVal, items_to_add = 1, reload = false) {
 	if itemVal = "V04" {
 	    //global.V[4]++;
 	}
-	if itemVal = "V05" { /*
-		Soul_Hearts_Control.heart[global.currentheart + 1, 2] = 52;
-	    global.totalhearts++;
-		
-		global.soulvanity += 4;
-	    //global.V[5]++; */
+	if itemVal = "V05" {
+		if !reload {
+			global.soulparanoia += 6;
+			global.soulvanity += 2;
+			scr_Stat_Up_Indication(9, false)
+			scr_Stat_Up_Indication(11, false)
+			scr_Stat_Up_Indication(11, false)
+			scr_Stat_Up_Indication(11, false)
+		}
 	}
 	if itemVal = "V06" {
 	    //global.V[6]++;

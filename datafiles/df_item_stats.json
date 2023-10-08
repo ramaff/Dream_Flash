@@ -260,7 +260,7 @@
     },
     "C11": {
         "recollectionString": "Overthinking",
-        "recollectionSprite": "spr_Overflow_Item",
+        "recollectionSprite": "spr_Overthinking_Item",
         "recollectionExtraStats": "+Excess Essence Shots",
         "recollectionDescription": "When over 50% essence the soul leaks more essence into each shot. These shots do more damage but cost much more. Excess essence can be recollected if quick enough."
     },

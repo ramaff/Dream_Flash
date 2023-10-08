@@ -13,7 +13,7 @@ if global.soulflash >= price {
 	}
 	
 	itemVal = "00";
-	var pool = global.A_item_pool;
+	var pool = global.a_item_pool;
 	
 	repeat(2) {
 		var poolPick = 1 + irandom(26);

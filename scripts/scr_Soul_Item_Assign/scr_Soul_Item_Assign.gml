@@ -184,7 +184,7 @@ function scr_Soul_Item_Assign() {
 	        } else {
 	            soulItems[numOfButts] = "Q" + string(i)
 	        }
-			soulItemCount[numOfButts] = global.R[i] - 1;
+			soulItemCount[numOfButts] = global.Q[i] - 1;
 	    }
 	}
 	for(i = 1; i <= 99; i++) {

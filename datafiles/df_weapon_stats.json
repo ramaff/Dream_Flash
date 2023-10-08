@@ -425,7 +425,8 @@
         "Weapon_Split_Visible": 1,
         "Weapon_Split_Hit_Again": 0,
         "Shot_Pierce": 10,
-        "Beast_Credit": 0.5
+        "Beast_Credit": 0.5,
+        "Shot_Bullet_Displace": 25
         },
     "52": {
         "Name": "Power Whip",
@@ -451,7 +452,9 @@
         "Shot_Beam_Curve": 0.75,
         "Weapon_Split_Visible": 1,
         "Weapon_Split_Hit_Again": 0,
-        "Beast_Credit": 0.5
+        "Beast_Credit": 0.5,
+        "Shot_Bullet_Redirect": 1,
+        "Shot_Bullet_Redirect_Chance": 100
     },
     "53": {
         "Name": "Dreamer's Blade",

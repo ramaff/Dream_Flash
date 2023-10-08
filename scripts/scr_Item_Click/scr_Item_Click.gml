@@ -148,6 +148,11 @@ function scr_Item_Click(linger = false){
 		global.R[itemNum]++;
 		recollectionCount = global.recollectionR[string_digits(itemVal)];
 	}
+	if recoGroup = "Q" {
+	    global.recollectionQ[string_digits(itemVal)]++;
+		global.Q[itemNum]++;
+		recollectionCount = global.recollectionQ[string_digits(itemVal)];
+	}
 	if recoGroup = "S" {
 	    global.recollectionS[string_digits(itemVal)]++;
 		global.S[itemNum]++;

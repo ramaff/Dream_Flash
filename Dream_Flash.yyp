@@ -109,6 +109,7 @@
     {"resourceType":"GMFolder","resourceVersion":"1.0","name":"Attack Helper Functions","folderPath":"folders/Scripts/Boss Commands/Attack Helper Functions.yy",},
     {"resourceType":"GMFolder","resourceVersion":"1.0","name":"Behaviors","folderPath":"folders/Scripts/Boss Commands/Behaviors.yy",},
     {"resourceType":"GMFolder","resourceVersion":"1.0","name":"Dash_Teleporting","folderPath":"folders/Scripts/Boss Commands/Dash_Teleporting.yy",},
+    {"resourceType":"GMFolder","resourceVersion":"1.0","name":"Hit Boss","folderPath":"folders/Scripts/Boss Commands/Hit Boss.yy",},
     {"resourceType":"GMFolder","resourceVersion":"1.0","name":"Math and Displays","folderPath":"folders/Scripts/Boss Commands/Math and Displays.yy",},
     {"resourceType":"GMFolder","resourceVersion":"1.0","name":"Set Up","folderPath":"folders/Scripts/Boss Commands/Set Up.yy",},
     {"resourceType":"GMFolder","resourceVersion":"1.0","name":"olf","folderPath":"folders/Scripts/Boss Commands/Set Up/olf.yy",},
@@ -449,7 +450,6 @@
     {"resourceType":"GMFolder","resourceVersion":"1.0","name":"Misc BGs","folderPath":"folders/Tile Sets/Misc BGs.yy",},
     {"resourceType":"GMFolder","resourceVersion":"1.0","name":"Nightmare BGs","folderPath":"folders/Tile Sets/Nightmare BGs.yy",},
     {"resourceType":"GMFolder","resourceVersion":"1.0","name":"Timelines","folderPath":"folders/Timelines.yy",},
-    {"resourceType":"GMFolder","resourceVersion":"1.0","name":"Hit Boss","folderPath":"folders/Scripts/Boss Commands/Hit Boss.yy",},
   ],
   "IncludedFiles": [
     {"resourceType":"GMIncludedFile","resourceVersion":"1.0","name":"df_boss_stats.json","CopyToMask":-1,"filePath":"datafiles",},
