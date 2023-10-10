@@ -1,12 +1,11 @@
 {
   "resourceType": "GMObject",
   "resourceVersion": "1.0",
-  "name": "obj_Marble_Bullet",
+  "name": "obj_Popcorn_Kernel_Bullet",
   "eventList": [
-    {"resourceType":"GMEvent","resourceVersion":"1.0","name":"","collisionObjectId":null,"eventNum":8,"eventType":2,"isDnD":false,},
-    {"resourceType":"GMEvent","resourceVersion":"1.0","name":"","collisionObjectId":null,"eventNum":0,"eventType":8,"isDnD":false,},
     {"resourceType":"GMEvent","resourceVersion":"1.0","name":"","collisionObjectId":null,"eventNum":0,"eventType":3,"isDnD":false,},
     {"resourceType":"GMEvent","resourceVersion":"1.0","name":"","collisionObjectId":null,"eventNum":0,"eventType":0,"isDnD":false,},
+    {"resourceType":"GMEvent","resourceVersion":"1.0","name":"","collisionObjectId":null,"eventNum":0,"eventType":1,"isDnD":false,},
   ],
   "managed": true,
   "overriddenProperties": [],
@@ -15,8 +14,8 @@
     "path": "folders/Objects/Boss Bullets/Lobbing Group.yy",
   },
   "parentObjectId": {
-    "name": "obj_Bounce_Bullet_Parent",
-    "path": "objects/obj_Bounce_Bullet_Parent/obj_Bounce_Bullet_Parent.yy",
+    "name": "obj_Marble_Bullet",
+    "path": "objects/obj_Marble_Bullet/obj_Marble_Bullet.yy",
   },
   "persistent": false,
   "physicsAngularDamping": 0.1,
