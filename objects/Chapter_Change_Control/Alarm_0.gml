@@ -36,18 +36,18 @@ for (i = 0; i < 5; i++) {
 instance_destroy(Floor_Layout_Control)
 instance_destroy(Gui_Control)
 with instance_create(x,y,Floor_Layout_Control) {
-    Flash[0,3] = 1024;
+    global.floor[0,3] = 1024;
     if global.currentchapter = 1 {
-        Flash[0,4] = bg_Flash_Tiles;
+        global.floor[0,4] = bg_Flash_Tiles;
     }
     if global.currentchapter = 2 {
-        Flash[0,4] = bg_Feel_Tiles;
+        global.floor[0,4] = bg_Feel_Tiles;
     }
     if global.currentchapter = 3 {
-        Flash[0,4] = bg_Dream_Tiles;
+        global.floor[0,4] = bg_Dream_Tiles;
     }
 	if global.currentchapter = 4 {
-        Flash[0,4] = bg_Nightmare_Tiles;
+        global.floor[0,4] = bg_Nightmare_Tiles;
     }
 }
 

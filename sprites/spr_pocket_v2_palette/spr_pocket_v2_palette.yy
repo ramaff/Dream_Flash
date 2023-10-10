@@ -13,7 +13,7 @@
   "edgeFiltering": false,
   "For3D": false,
   "frames": [
-    {"resourceType":"GMSpriteFrame","resourceVersion":"1.1","name":"3f556eb3-3aa4-4ec0-b151-112b2f2e8071",},
+    {"resourceType":"GMSpriteFrame","resourceVersion":"1.1","name":"3f556eb3-3aa4-4ec0-b151-112b2f2e8071",}
   ],
   "gridX": 0,
   "gridY": 0,

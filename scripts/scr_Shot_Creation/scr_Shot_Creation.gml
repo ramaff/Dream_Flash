@@ -256,14 +256,6 @@ function scr_Shot_Creation() {
 					x = obj_Astral_Indicator.x;
 		            y = obj_Astral_Indicator.y;
 				}
-		        if shotorbitaltype > 0 {
-		            shotOrbit = other.Shot_Orbital_Range;
-		            shotAngle = point_direction(x,y,mouse_x,mouse_y);
-		            shotAngle += other.Shot_Current_Count * (360 / other.Shot_Count)
-		            shotCenterX = other.x;
-		            shotCenterY = other.y;
-					speed = 0;
-		        }
 				if shotmovement = 0 {
 					speed = 0;	
 				}

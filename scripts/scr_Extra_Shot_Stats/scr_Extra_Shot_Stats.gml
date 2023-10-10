@@ -149,6 +149,13 @@ function scr_Extra_Shot_Stats() {
 	if shotorbitaltype > 0 {
 	    target = other;
 		otarget = other.id;
+		
+		shotOrbit = other.Shot_Orbital_Range;
+		shotAngle = point_direction(x,y,mouse_x,mouse_y);
+		shotAngle += other.Shot_Current_Count * (360 / other.Shot_Count)
+		shotCenterX = other.x;
+		shotCenterY = other.y;
+		speed = 0;
 	}
 
 	shotcontinue = other.Shot_Continue;

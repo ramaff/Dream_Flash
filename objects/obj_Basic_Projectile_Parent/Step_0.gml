@@ -103,7 +103,7 @@ if shotsoulmaintain = 1 {
 if shot_stats.Shot_Excess_Essence > 0 {
 	if scr_Chance(5) {
 		var color = make_color_rgb(0, 170, 255)
-		scr_Particle_Burst(obj_Weapon_Trail, spr_Soul_Big_Bit, color, color, 1, 4 + random(4), random(360), 0, 0, shotsize, 10 + random(5))
+		scr_Particle_Burst(obj_Friction_Part, spr_Soul_Big_Bit, color, color, 1, 4 + random(4), random(360), 0, 0, shotsize, 10 + random(5))
 	}
 	var fac = speed / 2;
 	x += (random(1) - 0.5) * fac;

@@ -377,6 +377,7 @@ function scr_Floor_Generation() {
 	global.floor[0,1] = 0; // Map X Position
 	global.floor[0,2] = 0; // Map Y Position
 	global.floor[0,3] = 1024; // Room Size
+	
 	if global.currentchapter = 1 {
 	    global.floor[0,4] = bg_Flash_Tiles;
 	}
@@ -389,6 +390,7 @@ function scr_Floor_Generation() {
 	if global.currentchapter >= 4 {
 	    global.floor[0,4] = bg_Nightmare_Tiles;
 	}
+
 
 	//global.floor[extraRoomStart + 1,4] = bg_Mind_Chamber_Tiles;
 	

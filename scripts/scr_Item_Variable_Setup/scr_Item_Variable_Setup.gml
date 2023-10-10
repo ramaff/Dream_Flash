@@ -37,6 +37,7 @@ function scr_Item_Variable_Setup() {
 	global.D10activate = 0;
 
 	global.U03boost = 0;
+	global.U03_direction = 0;
 
 	global.P02status = 0;
 
