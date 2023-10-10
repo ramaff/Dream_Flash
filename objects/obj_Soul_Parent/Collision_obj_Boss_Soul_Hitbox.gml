@@ -1,5 +1,12 @@
 //if other.bossid.state = states.normal {
 if instance_exists(other.bossid) {
+	
+	if global.V[5] > 0 {
+		var _evaded = scr_V05();
+		if _evaded {
+			exit;	
+		}
+	}
 
 	if soulinvincibility <= 0 {
 	    if (scontactdamage + scontactdamageadd) > 0 {

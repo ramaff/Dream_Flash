@@ -35,6 +35,7 @@ function scr_Weapon_Item_Change() {
 	            path_position = other.path_position;
 	        }
 	    }
+		scr_Initial_Item_Memory_Get()
 	}
 
 	global.Weap[itemform]--;

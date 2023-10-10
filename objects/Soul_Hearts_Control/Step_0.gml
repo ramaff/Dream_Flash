@@ -119,7 +119,7 @@ if global.totalhearts >= 1 {
     
     scr_One_Heart_Drop();
 	
-	scr_V05();
+	//scr_V05();
 	
     if global.currentheart < 0 {
 		global.currentheart = 0;	

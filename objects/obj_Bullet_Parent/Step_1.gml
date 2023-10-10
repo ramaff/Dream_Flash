@@ -5,11 +5,9 @@ if bulletfade = 0 {
 
 	
 if alarm[0] <= 15 {
-	sizeF -= 0.066;
 	bulletpower = 0;
-		
-	var tsize = bulletsize * sizeF;
 	
-	image_xscale = tsize;
-	image_yscale = tsize;
+	image_xscale -= image_xscale / alarm[0]
+	image_yscale -= image_yscale / alarm[0]
+
 } 

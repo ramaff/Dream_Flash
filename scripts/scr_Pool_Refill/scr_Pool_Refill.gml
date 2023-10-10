@@ -6,39 +6,39 @@ function scr_Pool_Refill(pool){
 	var totalitems = 1;
 	var minitems = 1;
 	
-	if pool = global.AItemPool {
+	if pool = global.a_item_pool {
 		letter = "A"
 		totalitems = 14;
 	}
-	if pool = global.BItemPool {
+	if pool = global.b_item_pool {
 		letter = "B"
 		totalitems = 14;
 	}
-	if pool = global.CItemPool {
+	if pool = global.c_item_pool {
 		letter = "C"
 		totalitems = 14;
 	}
-	if pool = global.DItemPool {
+	if pool = global.d_item_pool {
 		letter = "D"
 		totalitems = 14;
 	}
-	if pool = global.EItemPool {
+	if pool = global.e_item_pool {
 		letter = "E"
 		totalitems = 14;
 	}
-	if pool = global.FItemPool {
+	if pool = global.f_item_pool {
 		letter = "F"
 		totalitems = 10;
 	}
-	if pool = global.GItemPool {
+	if pool = global.g_item_pool {
 		letter = "G"
 		totalitems = 6;
 	}
-	if pool = global.HItemPool {
+	if pool = global.h_item_pool {
 		letter = "H"
 		totalitems = 17;
 	}
-	if pool = global.IItemPool {
+	if pool = global.i_item_pool {
 		letter = "I"
 		totalitems = 30;
 		if instance_exists(obj_Soul_Parent) {
@@ -47,76 +47,80 @@ function scr_Pool_Refill(pool){
 			}
 		}
 	}
-	if pool = global.JItemPool {
+	if pool = global.j_item_pool {
 		letter = "J"
-		totalitems = 6;
+		totalitems = 8;
 	}
-	if pool = global.KItemPool {
+	if pool = global.k_item_pool {
 		letter = "K"
 		totalitems = 8;
 		minitems = 3;
 	}
-	if pool = global.LItemPool {
+	if pool = global.l_item_pool {
 		letter = "L"
 		totalitems = 5;
 	}
-	if pool = global.MItemPool {
+	if pool = global.m_item_pool {
 		letter = "M"
 		totalitems = 25;
 	}
-	if pool = global.NItemPool {
+	if pool = global.n_item_pool {
 		letter = "N"
 		totalitems = 4;
 	}
-	if pool = global.OAItemPool {
+	if pool = global.oa_item_pool {
 		letter = "OA"
 		totalitems = 6;
 	}
-	if pool = global.OBItemPool {
+	if pool = global.ob_item_pool {
 		letter = "OB"
 		totalitems = 6;
 	}
-	if pool = global.OCItemPool {
+	if pool = global.oc_item_pool {
 		letter = "OC"
 		totalitems = 6;
 	}
-	if pool = global.PItemPool {
+	if pool = global.p_item_pool {
 		letter = "P"
-		totalitems = 7;
+		totalitems = 8;
 	}
-	if pool = global.RItemPool {
+	if pool = global.q_item_pool {
+		letter = "Q"
+		totalitems = 3;
+	}
+	if pool = global.r_item_pool {
 		letter = "R"
 		totalitems = 6;
 	}
-	if pool = global.SItemPool {
+	if pool = global.s_item_pool {
 		letter = "S"
 		totalitems = 3;
 	}
-	if pool = global.TItemPool {
+	if pool = global.t_item_pool {
 		letter = "T"
 		totalitems = 3;
 	}
-	if pool = global.UItemPool {
+	if pool = global.u_item_pool {
 		letter = "U"
-		totalitems = 10;
+		totalitems = 9;
 	}
-	if pool = global.VItemPool {
+	if pool = global.v_item_pool {
 		letter = "V"
 		totalitems = 8;
 	}
-	if pool = global.WItemPool {
+	if pool = global.w_item_pool {
 		letter = "W"
 		totalitems = 5;
 	}
-	if pool = global.XAItemPool {
+	if pool = global.xa_item_pool {
 		letter = "XA"
 		totalitems = 6;
 	}
-	if pool = global.XBItemPool {
+	if pool = global.xb_item_pool {
 		letter = "XB"
 		totalitems = 6;
 	}
-	if pool = global.XCItemPool {
+	if pool = global.xc_item_pool {
 		letter = "XC"
 		totalitems = 6;
 	}
@@ -160,43 +164,43 @@ function scr_Pool_Refill(pool){
 		}
 	}
 	
-	ds_list_delete(global.PItemPool, ds_list_find_index(global.PItemPool, "P08"));
-	ds_list_delete(global.VItemPool, ds_list_find_index(global.VItemPool, "V05"));
+	//ds_list_delete(global.p_item_pool, ds_list_find_index(global.p_item_pool, "P08"));
+	//ds_list_delete(global.v_item_pool, ds_list_find_index(global.v_item_pool, "V05"));
 	
-	//variable_struct_remove(global.PItemPool, "P08")
-	//variable_struct_remove(global.VItemPool, "V05")
+	//variable_struct_remove(global.P_item_pool, "P08")
+	//variable_struct_remove(global.V_item_pool, "V05")
 	
-	/*if pool = global.PItemPool {
-		array_delete(global.PItemPool, 7, 1)
+	/*if pool = global.P_item_pool {
+		array_delete(global.P_item_pool, 7, 1)
 	}
-	if pool = global.VItemPool {
-		array_delete(global.VItemPool, 4, 1)
+	if pool = global.V_item_pool {
+		array_delete(global.V_item_pool, 4, 1)
 	} */
 	
 	if letter = "I" {
 		repeat(6) {
-			ds_list_add(global.IItemPool, "A00");
-			ds_list_add(global.IItemPool, "B00");
-			ds_list_add(global.IItemPool, "C00");
-			ds_list_add(global.IItemPool, "D00");
-			ds_list_add(global.IItemPool, "E00");
-			//pool[global.IItemPool] = "A00";
-			//pool[global.IItemPool] = "B00";
-			//pool[global.IItemPool] = "C00";
-			//pool[global.IItemPool] = "D00";
-			//pool[global.IItemPool] = "E00";
-			//variable_struct_set(global.IItemPool, "A00", "A00")
-			//variable_struct_set(global.IItemPool, "B00", "B00")
-			//variable_struct_set(global.IItemPool, "C00", "C00")
-			//variable_struct_set(global.IItemPool, "D00", "D00")
-			//variable_struct_set(global.IItemPool, "E00", "E00")
-			//array_push(global.IItemPool, "A00", "B00", "C00", "D00", "E00")
+			ds_list_add(global.i_item_pool, "A00");
+			ds_list_add(global.i_item_pool, "B00");
+			ds_list_add(global.i_item_pool, "C00");
+			ds_list_add(global.i_item_pool, "D00");
+			ds_list_add(global.i_item_pool, "E00");
+			//pool[global.I_item_pool] = "A00";
+			//pool[global.I_item_pool] = "B00";
+			//pool[global.I_item_pool] = "C00";
+			//pool[global.I_item_pool] = "D00";
+			//pool[global.I_item_pool] = "E00";
+			//variable_struct_set(global.I_item_pool, "A00", "A00")
+			//variable_struct_set(global.I_item_pool, "B00", "B00")
+			//variable_struct_set(global.I_item_pool, "C00", "C00")
+			//variable_struct_set(global.I_item_pool, "D00", "D00")
+			//variable_struct_set(global.I_item_pool, "E00", "E00")
+			//array_push(global.I_item_pool, "A00", "B00", "C00", "D00", "E00")
 			if instance_exists(obj_Soul_Parent) {
 				if global.soultransformedstate != "None" {
-					ds_list_add(global.IItemPool, "F00");
-					//pool[global.IItemPool] = "F00";
-					//variable_struct_set(global.IItemPool, "F00", "F00")
-					//array_push(global.IItemPool, "F00")
+					ds_list_add(global.i_item_pool, "F00");
+					//pool[global.I_item_pool] = "F00";
+					//variable_struct_set(global.I_item_pool, "F00", "F00")
+					//array_push(global.I_item_pool, "F00")
 				}
 			}
 		}

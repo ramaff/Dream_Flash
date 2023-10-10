@@ -21,12 +21,12 @@ function scr_Save_Run() {
 
 	ini_write_real("Run", "currentchapter", global.currentchapter);
 	ini_write_real("Run", "currentroom", global.currentroom);
-	ini_write_real("Run", "strFields", global.strFields);
+	/*ini_write_real("Run", "strFields", global.strFields);
 	ini_write_real("Run", "vitFields", global.vitFields);
 	ini_write_real("Run", "essFields", global.essFields);
 	ini_write_real("Run", "dexFields", global.dexFields);
 	ini_write_real("Run", "perFields", global.perFields);
-	ini_write_real("Run", "staFields", global.staFields);
+	ini_write_real("Run", "staFields", global.staFields); */
 	ini_write_real("Run", "strFieldSpawn", global.strFieldSpawn);
 	ini_write_real("Run", "vitFieldSpawn", global.vitFieldSpawn);
 	ini_write_real("Run", "essFieldSpawn", global.essFieldSpawn);
@@ -162,7 +162,8 @@ function scr_Save_Run() {
 		ini_write_real("Run", "OC" + string(i), global.OC[i]);
 		ini_write_real("Run", "P" + string(i), global.P[i]);
 		ini_write_real("Run", "S" + string(i), global.S[i]);
-	    ini_write_real("Run", "R" + string(i), global.R[i]);
+	    ini_write_real("Run", "Q" + string(i), global.Q[i]);
+		ini_write_real("Run", "R" + string(i), global.R[i]);
 		ini_write_real("Run", "T" + string(i), global.T[i]);
 		ini_write_real("Run", "U" + string(i), global.U[i]);
 		ini_write_real("Run", "V" + string(i), global.V[i]);
@@ -181,7 +182,7 @@ function scr_Save_Run() {
 	var dd = 0;
 	var ee = 0;
 	var ff = 0;
-	var pools = [global.AItemPool, global.BItemPool, global.CItemPool, global.DItemPool, global.EItemPool, global.FItemPool, global.GItemPool, global.HItemPool, global.IItemPool, global.JItemPool, global.KItemPool, global.LItemPool, global.MItemPool, global.NItemPool, global.OAItemPool, global.OBItemPool, global.OCItemPool, global.PItemPool, global.RItemPool, global.SItemPool, global.TItemPool, global.UItemPool, global.VItemPool, global.WItemPool, global.XAItemPool, global.XBItemPool, global.XCItemPool];
+	var pools = scr_Get_Item_Pools(false)
 	for(j = 0; j < array_length(pools); j++) {
 		var pool = pools[j];
 		var psize = ds_list_size(pool);

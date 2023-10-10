@@ -1,7 +1,7 @@
 // Script assets have changed for v2.3.0 see
 // https://help.yoyogames.com/hc/en-us/articles/360005277377 for more information
 
-function scr_Soul_Teleport(){
+function scr_Soul_Teleport(_evasion = false){
 	soulfade = 15;
 	with instance_create(obj_Soul_Parent.x,obj_Soul_Parent.y,obj_Soul_Linger) {
 	    if other.image_index = 1 {
@@ -23,9 +23,18 @@ function scr_Soul_Teleport(){
 	perY = y;
 	
 	TPCooldown = 30 + (30 * global.E[11]);
+	
+	var _xx = mouse_x;
+	var _yy = mouse_y;
+	
+	if _evasion = true {
+		var _new_pos = scr_V05_Evade(x, y);
+		_xx = _new_pos[0]
+		_yy = _new_pos[1]
+	}
 		
-	var dist = point_distance(x,y,mouse_x,mouse_y);
-	var dir = point_direction(x,y,mouse_x,mouse_y);
+	var dist = point_distance(x,y, _xx, _yy);
+	var dir = point_direction(x,y, _xx, _yy);
 		
 	for(var i = 0; i < 11; i++) {
 		var cd = (dist / 10) * i;
@@ -35,8 +44,8 @@ function scr_Soul_Teleport(){
 	scr_W04();
 	scr_W05();
     
-	x = mouse_x;
-	y = mouse_y;
+	x = _xx;
+	y = _yy;
 	
 	scr_W02(dir);
 	scr_W03();

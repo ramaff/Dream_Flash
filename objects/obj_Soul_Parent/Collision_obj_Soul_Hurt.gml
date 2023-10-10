@@ -1,4 +1,11 @@
 if soulinvincibility <= 0 {
+	
+	if global.V[5] > 0 {
+		var _evaded = scr_V05();
+		if _evaded {
+			exit;	
+		}
+	}
     
     damageamount = other.bulletpower + (global.souldespair / 20) + (global.soulloathing / 10);
     defenseamount = (sdefenseadd + sdefensebuffamount) + global.currentheartdefense + (global.soulvanity / 20);

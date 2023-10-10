@@ -32,6 +32,7 @@ function scr_Charged_Release() {
 				scr_Weapon_Use_List(weaponcharge)
 			}
 			
+			
 			if weaponcharge = 10 {
 	            //scr_Charged_Essence_Shot();
 	        }
@@ -91,6 +92,11 @@ function scr_Charged_Release() {
 	            //scr_Energy_Bomb_Cannon_Use();
 				Shot_Burst_Power = Shot_Power / 10;
 	        }
+			
+			if Charge_Hold = 2 {
+				
+				exit;
+			}
 			
 			scr_OC03(weaponcharge);
 		

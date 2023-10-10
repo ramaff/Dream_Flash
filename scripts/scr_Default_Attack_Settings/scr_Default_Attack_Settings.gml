@@ -41,7 +41,7 @@ function scr_Default_Attack_Settings() {
 		boss_yoffset = 0
 		
 	
-		bullet_blend = 0;
+		bullet_blend = c_white;
 	    bullet_fade = 1;
 	
 	    soul_shot_block = 0;

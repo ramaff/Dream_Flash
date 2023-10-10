@@ -1,6 +1,6 @@
 baseDepth = 0;
 
-roomsize = Floor_Layout_Control.Flash[0,3];
+roomsize = global.floor[0,3];
 
 xv = room_width / 2;
 yv = room_height / 2;

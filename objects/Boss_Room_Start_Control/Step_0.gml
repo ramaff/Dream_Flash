@@ -113,6 +113,7 @@ if (chealth < MThealth / 4) {
     spiritSend = 1;
 }
 
+
 if instance_number(obj_Boss_Parent) = 0 and global.bosscount <= 0 {
 	if global.spiritRoom = global.currentroom {
 	    boss = global.floor[global.currentroom,25];

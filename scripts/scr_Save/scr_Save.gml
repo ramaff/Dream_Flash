@@ -42,7 +42,8 @@ function scr_Save() {
 		ini_write_real("Recollection", "recollectionOB" + string(i), global.recollectionOB[i]);
 		ini_write_real("Recollection", "recollectionOC" + string(i), global.recollectionOC[i]);
 		ini_write_real("Recollection", "recollectionP" + string(i), global.recollectionP[i]);
-	    ini_write_real("Recollection", "recollectionR" + string(i), global.recollectionR[i]);
+	    ini_write_real("Recollection", "recollectionQ" + string(i), global.recollectionQ[i]);
+		ini_write_real("Recollection", "recollectionR" + string(i), global.recollectionR[i]);
 		ini_write_real("Recollection", "recollectionS" + string(i), global.recollectionS[i]);
 		ini_write_real("Recollection", "recollectionT" + string(i), global.recollectionT[i]);
 		ini_write_real("Recollection", "recollectionU" + string(i), global.recollectionU[i]);

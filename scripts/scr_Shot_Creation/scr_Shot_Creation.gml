@@ -1,4 +1,5 @@
 function scr_Shot_Creation() {
+	
 	scr_Spike_Soul_Extra();
 	scr_Casting_Soul_Manual_Synergy();
 	scr_Scrub_Soul_Weapon_Mod();
@@ -227,6 +228,9 @@ function scr_Shot_Creation() {
 				}
 				speed = shotspeed;
 		        shotlifespan = other.Shot_Lifespan * (other.Weapon_Vomit_Min_Life + random(other.Weapon_Vomit_Max_Life - other.Weapon_Vomit_Min_Life)) * ((10 + other.sshotlifefactor) / 10);
+				if shotlifespan < 1 {
+					shotlifespan = 1;	
+				}
 		        alarm[0] = shotlifespan;
 		        scr_Extra_Shot_Stats();
 		        scr_Weapon_Direction_List();

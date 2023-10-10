@@ -5,15 +5,19 @@
 function scr_OC05(){
 
 	if global.OC[5] > 0 {
-		var convergeSpeed = 1.25 * (1 + global.OC[5]);
+		var convergeSpeed = 0.6 + (0.9 * global.OC[5]);
 		var tunnelAngleTarget = point_direction(x,y,mouse_x,mouse_y);
 		global.Tunnel_Vision_Angle = scr_Angle_Converge(global.Tunnel_Vision_Angle, tunnelAngleTarget, convergeSpeed)
+		
+		//Print_DF("tunnelAngleTarget: " + string(tunnelAngleTarget))
+		//Print_DF("global.TunnelAngleTarget: " + string(global.Tunnel_Vision_Angle))
+		
 		var xx = x;
 		var yy = y;
 		var tangle = global.Tunnel_Vision_Angle;
 		
 		//var convergeVelocity = convergeSpeed * 0.4;
-		var convergeLerpSpeed = convergeSpeed * 0.002
+		var convergeLerpSpeed = convergeSpeed * 0.0125
 		
 		with (obj_Projectile_Parent) {
 			if shotmelee == 0 {
@@ -22,12 +26,9 @@ function scr_OC05(){
 				var tarPositionY = yy + lengthdir_y(dist, tangle)
 				
 				var lerp_amount = convergeLerpSpeed * speed;
-				//var converge_amount = convergeVelocity * speed;
 				
 				x = lerp(x, tarPositionX, lerp_amount)
 				y = lerp(y, tarPositionY, lerp_amount)
-				//x = scr_Converge(x, tarPositionX, converge_amount)
-				//y = scr_Converge(y, tarPositionY, converge_amount)
 				
 				
 			}

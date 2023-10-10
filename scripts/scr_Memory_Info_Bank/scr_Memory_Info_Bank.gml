@@ -62,6 +62,9 @@ function scr_Memory_Info_Bank() {
 		if recoGroup = "P" {
 	        recollectionCount = global.recollectionP[recoNum];
 	    }
+	    if recoGroup = "Q" {
+	        recollectionCount = global.recollectionQ[recoNum];
+	    }
 	    if recoGroup = "R" {
 	        recollectionCount = global.recollectionR[recoNum];
 	    }

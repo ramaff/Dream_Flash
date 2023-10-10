@@ -188,6 +188,7 @@ function scr_Load_Run() {
 			global.OC[i] = ini_read_real("Run","OC" + string(i),0);
 			global.P[i] = ini_read_real("Run","P" + string(i),0);
 			global.S[i] = ini_read_real("Run","S" + string(i),0);
+	        global.Q[i] = ini_read_real("Run","Q" + string(i),0);
 	        global.R[i] = ini_read_real("Run","R" + string(i),0);
 			global.T[i] = ini_read_real("Run","T" + string(i),0);
 			global.U[i] = ini_read_real("Run","U" + string(i),0);
@@ -199,7 +200,7 @@ function scr_Load_Run() {
 
 	    }
 			
-		var pools = [global.AItemPool, global.BItemPool, global.CItemPool, global.DItemPool, global.EItemPool, global.FItemPool, global.GItemPool, global.HItemPool, global.IItemPool, global.JItemPool, global.KItemPool, global.LItemPool, global.MItemPool, global.NItemPool, global.OAItemPool, global.OBItemPool, global.OCItemPool, global.PItemPool, global.RItemPool, global.SItemPool, global.TItemPool, global.UItemPool, global.VItemPool, global.WItemPool, global.XAItemPool, global.XBItemPool, global.XCItemPool];
+		var pools = scr_Get_Item_Pools(false)
 		for(j = 0; j < array_length(pools); j++) {
 			var pool = pools[j];
 			ds_list_clear(pool);
@@ -207,7 +208,7 @@ function scr_Load_Run() {
 		}
 		
 		
-		var pletters = ["A", "B", "C", "D", "E", "F", "G", "H", "I", "J", "K", "L", "M", "N", "OA", "OB", "OC", "P", "R", "S", "T", "U", "V", "W", "XA", "XB", "XC"];
+		var pletters = scr_Get_Item_Pools(true)
 		for(j = 0; j < array_length(pools); j++) {
 			var pool = pools[j];
 			var pletter = pletters[j];
@@ -218,7 +219,7 @@ function scr_Load_Run() {
 					var p00 = ini_read_real("Run", pool00, 0);
 					if (p00 >= 1) and (pool00 = "PoolA00" || pool00 = "PoolB00" || pool00 = "PoolC00" || pool00 = "PoolD00" || pool00 = "PoolE00" || pool00 = "PoolF00") {
 						repeat(p00) {
-							ds_list_add(global.IItemPool, string(pletter) + "0" + string(i));
+							ds_list_add(global.i_item_pool, string(pletter) + "0" + string(i));
 							 //array_push(global.IItemPool, string(pletter) + "0" + string(i));
 						}
 						continue;

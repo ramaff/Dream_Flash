@@ -94,7 +94,7 @@ function scr_Soul_Utility_Setup() {
 	
 	alarm[2] = 5;
 	alarm[3] = 1;
-	alarm[4] = 1;
+	alarm[4] = 5;
 	alarm[5] = 60;
 	alarm[6] = 15;
 

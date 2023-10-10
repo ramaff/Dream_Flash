@@ -25,8 +25,8 @@
   "nineSlice": null,
   "origin": 4,
   "parent": {
-    "name": "(U) Mental Phenomena Item Art",
-    "path": "folders/Sprites/Item Sprites/(U) Mental Phenomena Item Art.yy",
+    "name": "(Q) Metaphorical Item Art",
+    "path": "folders/Sprites/Item Sprites/(Q) Metaphorical Item Art.yy",
   },
   "preMultiplyAlpha": false,
   "sequence": {

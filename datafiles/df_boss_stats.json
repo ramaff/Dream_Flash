@@ -739,18 +739,21 @@
             "Bullet_Speed": 2.4,
             "Move_Speed": 2.1,
             "recollectionDescription": "Throws shurikens at the soul, which can home in and cause trouble.",
+            "Palette": "spr_ninja_spirit_v2_palette",
         
             "Champ 1": {
                 "Name": "White Belt Ninja",
-            "Recollection_Sprite": "spr_White_Belt_Ninja",
-            "Health_Phase_1": 270,
-            "Health_Phase_2": 210
+                "Recollection_Sprite": "reco_Ninja_Spirit",
+                "Health_Phase_1": 315,
+                "Health_Phase_2": 245,
+                "Palette_Index": 1
             },
             "Champ 2": { 
                 "Name":  "Black Belt Ninja",
-                "Recollection_Sprite": "spr_Black_Belt_Ninja",
-                "Health_Phase_1": 270,
-                "Health_Phase_2": 210
+                "Recollection_Sprite": "reco_Ninja_Spirit",
+                "Health_Phase_1": 315,
+                "Health_Phase_2": 245,
+                "Palette_Index": 2
             }
         },
 
@@ -779,7 +782,8 @@
             },
             "Champ 1": {
                 "Name": "Air Wisper",
-                "Recollection_Sprite": "spr_Air_Wisper",
+                "Recollection_Sprite": "reco_Wisper",
+                "Palette_Index": 2,
                 "Health_Phase_1": 370,
                 "Health_Phase_2": 390
             },
@@ -795,7 +799,8 @@
             },
             "Champ 2": { 
                 "Name":  "Burst Wisper",
-                "Recollection_Sprite": "spr_Burst_Wisper",
+                "Recollection_Sprite": "reco_Wisper",
+                "Palette_Index": 3,
                 "Health_Phase_1": 370,
                 "Health_Phase_2": 390
             },
@@ -1177,19 +1182,15 @@
             "Boss_Danger": 2,
             "Bullet_Speed": 2.5,
             "Move_Speed": 2.5,
-            "recollectionDescription": "Sentient pocket dimension, drops bullets across the dreamscape. Can possess inanimate objects and summon more opponents.",
+            "recollectionDescription": "Sentient pocket dimension, drops bullets across the dreamscape. Can traverse space instantly with portals and summon helpers from other dimensions.",
+            "Palette": "spr_pocket_v2_palette",
 
             "Champ 1": {
                 "Name": "Hot Pocket",
-                "Recollection_Sprite": "spr_Hot_Pocket",
+                "Recollection_Sprite": "reco_Pocket",
                 "Health_Phase_1": 330,
-                "Health_Phase_2": 200
-            },
-            "Champ 2": { 
-                "Name":  "Junk Pocket",
-                "Recollection_Sprite": "spr_Junk_Pocket",
-                "Health_Phase_1": 330,
-                "Health_Phase_2": 200
+                "Health_Phase_2": 200,
+                "Palette_Index": 1
             }
         },
 
@@ -1391,13 +1392,13 @@
         },
 
         "Boss 057": {
-            "Name": "Boxer",
+            "Name": "Boxed In",
             "Recollection_Sprite": "reco_boxer",
             "Health_Phase_1": 320,
             "Health_Phase_2": 240,
             "Defense_Phase_1": 0,
             "Defense_Phase_2": 0,
-            "Boss_Danger": 1,
+            "Boss_Danger": 2,
             "Bullet_Speed": 2.4,
             "Move_Speed": 2,
         

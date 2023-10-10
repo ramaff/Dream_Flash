@@ -28,6 +28,15 @@
         }
     }
 	if type = 3 and category = 1 {
+        draw_text(x-256,y-12, string_hash_to_newline("STAT LEVEL UP CAMERA LOCK"));
+        if global.level_up_camera_lock = 1 {
+            draw_text(x,y-12, string_hash_to_newline("YES"));
+        }
+        if global.level_up_camera_lock = 0 {
+            draw_text(x,y-12, string_hash_to_newline("NO"));
+        }
+    }
+	if type = 4 and category = 1 {
         draw_text(x,y-12, string_hash_to_newline("SCREENSHAKE AMOUNT"));
     }
 	

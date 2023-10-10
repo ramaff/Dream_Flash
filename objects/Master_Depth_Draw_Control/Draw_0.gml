@@ -13,9 +13,6 @@ if (ds_grid_height(ds_depthgrid) != inum) {
 
 var yyy = 0;
 with(obj_Depth) {
-	/*if object_get_parent(object_index) = obj_Bullet_Parent || object_index = obj_Bullet_Parent {
-		exit;	
-	} */
 	dgrid[# 0, yyy] = id;
 	dgrid[# 1, yyy] = y - (depth * 8);
 	yyy++;
@@ -28,16 +25,16 @@ ds_grid_sort(dgrid, 1, true);
 
 // Loop + Draw
 
+//gpu_set_blendmode(bm_normal);
+
 with(obj_Soul_Hurt) {
 	if depth > 0 {
-		event_perform(ev_draw,0)	
+		event_perform(ev_draw,0)
 	}
 }
 
 with(obj_Particle_Parent) {
-	//if depth < 0 {
-		event_perform(ev_draw,0)	
-	//}
+	event_perform(ev_draw,0)
 }
 
 var yyy = 0;
@@ -53,7 +50,12 @@ repeat(inum) {
 
 with(obj_Particle_Parent_Front) {
 	event_perform(ev_draw,0)
+}/*
+gpu_set_blendmode(bm_subtract);
+with(obj_Particle_Parent_Front_Mult) {
+	event_perform(ev_draw,0)
 }
+gpu_set_blendmode(bm_normal); */
 with(obj_Beam_Shot) {
 	event_perform(ev_draw,0)	
 }
@@ -62,6 +64,6 @@ with(obj_Laser_Tip) {
 }
 with(obj_Soul_Hurt) {
 	if depth <= 0 {
-		event_perform(ev_draw,0)	
+		event_perform(ev_draw,0)
 	}
 }

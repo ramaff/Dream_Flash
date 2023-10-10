@@ -26,3 +26,6 @@ var cHeart = Soul_Hearts_Control.heart[global.currentheart, 2]
 if cHeart = 17 {
 	scr_H17_Pool();	
 }
+
+scr_U08();
+scr_P08();

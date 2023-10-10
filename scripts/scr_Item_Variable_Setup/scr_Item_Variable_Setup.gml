@@ -53,7 +53,7 @@ function scr_Item_Variable_Setup() {
 	
 	global.SpikeExtra = 0;
 	
-	global.U10count = 0;
+	global.Q3count = 0;
 	global.clarityBomb = 0;
 	
 	global.OC4Debuff = false;
@@ -65,6 +65,9 @@ function scr_Item_Variable_Setup() {
 	
 	global.downwardSpiralBoost = 0;
 	global.Tunnel_Vision_Angle = 0;
+	
+	global.trailing_off = 0;
+	global.no_brainer = 0;
 	
 	var i = 0;
 	for(i = 0; i < 9; i++) {

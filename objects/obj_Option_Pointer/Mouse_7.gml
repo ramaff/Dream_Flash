@@ -36,6 +36,25 @@ if abs(type) = 2 and category = 1 {
     }    
 }
 
+if abs(type) = 3 and category = 1 {
+    move = "right";
+    if type < 0 {
+        move = "left";
+    }
+
+    if move = "right" {
+        global.level_up_camera_lock++;
+    } else if move = "left" {
+        global.level_up_camera_lock--;
+    }
+    
+    if global.level_up_camera_lock < 0 {
+        global.level_up_camera_lock = 1;
+    } else if global.level_up_camera_lock > 1 {
+        global.level_up_camera_lock = 0;
+    }     
+}
+
 if category = 2 {
 	awaitinput = 1;
 	/*

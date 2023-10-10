@@ -63,7 +63,7 @@ function scr_Weapon_Use_List(cWP = global.currentweapon) {
 	}
 	
 	//if senergy >= weapStop + weaponCost || Charge_Hold = 2 { 
-	if senergy >= weaponCost || Charge_Hold = 2 || weapStop != 0 { 
+	if senergy >= weaponCost || Charge_Hold = 2 || weapStop != 0 || senergy >= smaxenergy { 
 	
 		global.soulNoShoot = 0;
 		
@@ -154,7 +154,7 @@ function scr_Weapon_Use_List(cWP = global.currentweapon) {
 			} else {
 				scr_Soul_Spawn();	
 			}
-			scr_U10();
+			scr_Q03();
 		}
 		
 		if Shot_Extra != false {
@@ -175,7 +175,7 @@ function scr_Weapon_Use_List(cWP = global.currentweapon) {
 					} else {
 						scr_Soul_Spawn();	
 					}
-					scr_U10();
+					scr_Q03();
 				}
 			}
 		}

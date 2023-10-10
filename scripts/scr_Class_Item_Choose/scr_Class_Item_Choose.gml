@@ -6,52 +6,52 @@ function scr_Class_Item_Choose() {
 
 	if classform = "Strength Field" {
 	    elementString = "A";
-		itemtype = scr_Pool_Pick(global.AItemPool);
+		itemtype = scr_Pool_Pick(global.a_item_pool);
 	}
 	if classform = "Vitality Field" {
 	    elementString = "B";
-		itemtype = scr_Pool_Pick(global.BItemPool);
+		itemtype = scr_Pool_Pick(global.b_item_pool);
 	}
 	if classform = "Essence Field" {
 	    elementString = "C";
-		itemtype = scr_Pool_Pick(global.CItemPool);
+		itemtype = scr_Pool_Pick(global.c_item_pool);
 	}
 	if classform = "Dexterity Field" {
 	    elementString = "D";
-		itemtype = scr_Pool_Pick(global.DItemPool);
+		itemtype = scr_Pool_Pick(global.d_item_pool);
 	}
 	if classform = "Perception Field" {
 	    elementString = "E";
-		itemtype = scr_Pool_Pick(global.EItemPool);
+		itemtype = scr_Pool_Pick(global.e_item_pool);
 	}
 	if classform = "State Field" {
 	    elementString = "F";
-		itemtype = scr_Pool_Pick(global.FItemPool);
+		itemtype = scr_Pool_Pick(global.f_item_pool);
 	}
 	
 	if classform = "Hope Field" {
 	    elementString = "OA";
-		itemtype = scr_Pool_Pick(global.OAItemPool);
+		itemtype = scr_Pool_Pick(global.oa_item_pool);
 	}
 	if classform = "Bliss Field" {
 	    elementString = "OB";
-		itemtype = scr_Pool_Pick(global.OBItemPool);
+		itemtype = scr_Pool_Pick(global.ob_item_pool);
 	}
 	if classform = "Assurance Field" {
 	    elementString = "OC";
-		itemtype = scr_Pool_Pick(global.OCItemPool);
+		itemtype = scr_Pool_Pick(global.oc_item_pool);
 	}
 	if classform = "Loathing Field" {
 	    elementString = "XA";
-		itemtype = scr_Pool_Pick(global.XAItemPool);
+		itemtype = scr_Pool_Pick(global.xa_item_pool);
 	}
 	if classform = "Paranoia Field" {
 	    elementString = "XB";
-		itemtype = scr_Pool_Pick(global.XBItemPool);
+		itemtype = scr_Pool_Pick(global.xb_item_pool);
 	}
 	if classform = "Despair Field" {
 	    elementString = "XC";
-		itemtype = scr_Pool_Pick(global.XCItemPool);
+		itemtype = scr_Pool_Pick(global.xc_item_pool);
 	}
 
 	/*

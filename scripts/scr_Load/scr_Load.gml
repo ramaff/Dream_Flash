@@ -41,6 +41,7 @@ function scr_Load() {
 			global.recollectionOB[i] = ini_read_real("Recollection","recollectionOB" + string(i),0);
 			global.recollectionOC[i] = ini_read_real("Recollection","recollectionOC" + string(i),0);
 			global.recollectionP[i] = ini_read_real("Recollection","recollectionP" + string(i),0);
+	        global.recollectionQ[i] = ini_read_real("Recollection","recollectionQ" + string(i),0);
 	        global.recollectionR[i] = ini_read_real("Recollection","recollectionR" + string(i),0);
 			global.recollectionS[i] = ini_read_real("Recollection","recollectionS" + string(i),0);
 			global.recollectionT[i] = ini_read_real("Recollection","recollectionT" + string(i),0);

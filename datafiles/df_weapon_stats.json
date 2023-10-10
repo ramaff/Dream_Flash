@@ -425,7 +425,8 @@
         "Weapon_Split_Visible": 1,
         "Weapon_Split_Hit_Again": 0,
         "Shot_Pierce": 10,
-        "Beast_Credit": 0.5
+        "Beast_Credit": 0.5,
+        "Shot_Bullet_Displace": 25
         },
     "52": {
         "Name": "Power Whip",
@@ -451,7 +452,8 @@
         "Shot_Beam_Curve": 0.75,
         "Weapon_Split_Visible": 1,
         "Weapon_Split_Hit_Again": 0,
-        "Beast_Credit": 0.5
+        "Beast_Credit": 0.5,
+        "Shot_Bullet_Displace": 40
     },
     "53": {
         "Name": "Dreamer's Blade",
@@ -914,6 +916,8 @@
                 "Shot_Pierce": 1,
                 "Shot_Size": 0.5,
                 "Shot_Point_Angle": true,
+                "Shot_Form_Show": 0,
+                "Shot_Init_Grow": 0,
                 "Shot_Face_Direction": false
             }
         ],
@@ -2495,7 +2499,8 @@
         "Shot_Power": 0,
         "Shot_Speed": 0,
         "Shot_Size": 0.5,
-        "Shot_Sprite": "spr_Healing_Essence_Art"
+        "Shot_Sprite": "spr_Healing_Essence_Art",
+        "Shot_Lifespan": 0
     },
     "602": {
         "Name": "Healing Barrier",

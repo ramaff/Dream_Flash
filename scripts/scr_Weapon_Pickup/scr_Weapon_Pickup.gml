@@ -4,12 +4,14 @@ function scr_Weapon_Pickup() {
 
 	weapUp = 0;
 
+	// upgrade weapon if its the same as any of them
 	for (i = 0; i < 5; i++) {
 	    if (Soul_Weapons_Control.weapon[i,2] = itemindex) {
 	        weapUp = 1;
 	    }
 	}
 
+	// upgrade weapon if its the same as any of them
 	for (i = 0; i < global.weaponslots; i++) {
 	    if (Soul_Weapons_Control.weapon[i,2] = itemindex) {
 	        scr_Weapon_Stat_Add();
@@ -42,6 +44,7 @@ function scr_Weapon_Pickup() {
 	        }
 	    }
 	}
+	
 
 
 

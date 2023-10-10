@@ -1,4 +1,11 @@
 if soulinvincibility <= 0 {
+	
+	if global.V[5] > 0 {
+		var _evaded = scr_V05();
+		if _evaded {
+			exit;	
+		}
+	}
     
     damageamount = other.bulletpower + ((global.soulloathing + global.soulloathingTemp) / 10);
     defenseamount = (sdefenseadd + sdefensebuffamount) + global.currentheartdefense + scr_Class_Stat_Defense_Increase();

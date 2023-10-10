@@ -65,14 +65,14 @@ function scr_State_Form_Unlock(){
 		}
 		if global.soultransformedstate != "None" and obj_Soul_Parent.stransformedstate = "None" {
 			repeat(6) {
-				ds_list_add(global.IItemPool, "F00");
+				ds_list_add(global.i_item_pool, "F00");
 			}
-			ds_list_add(global.IItemPool, "I31");
-			ds_list_add(global.IItemPool, "I32");
-			ds_list_add(global.IItemPool, "I33");
-			ds_list_add(global.IItemPool, "I34");
-			ds_list_add(global.IItemPool, "I35");
-			ds_list_add(global.IItemPool, "I36");
+			ds_list_add(global.i_item_pool, "I31");
+			ds_list_add(global.i_item_pool, "I32");
+			ds_list_add(global.i_item_pool, "I33");
+			ds_list_add(global.i_item_pool, "I34");
+			ds_list_add(global.i_item_pool, "I35");
+			ds_list_add(global.i_item_pool, "I36");
 		}
 		obj_Soul_Parent.stransformedstate = global.soultransformedstate;
 	}

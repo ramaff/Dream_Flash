@@ -12,15 +12,15 @@ function scr_Emotion_Item_Choose() {
 
 	var wTier = "Basic";
 	
-	if ds_list_empty(global.IItemPool) {
+	if ds_list_empty(global.i_item_pool) {
 		if itemform <= 9 {
 		    itemtype = elementString + "0" + string(itemform);
 		} else {
 		    itemtype = elementString + string(itemform);
 		}
 	} else {
-		ds_list_shuffle(global.IItemPool);
-		itemtype = ds_list_find_value(global.IItemPool, 0);
+		ds_list_shuffle(global.i_item_pool);
+		itemtype = ds_list_find_value(global.i_item_pool, 0);
 	}
 
 	var dItem = 0;
