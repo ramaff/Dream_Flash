@@ -52,7 +52,7 @@ function scr_Charged_Hold() {
 				}
 				
 				if variable_struct_exists(current_weapon_stats, "Shot_Power") {
-					Shot_Charge_Power = current_weapon_stats.Shot_Power * 7;
+					Shot_Charge_Power = current_weapon_stats.Shot_Power * 8.5;
 				} else {
 					Shot_Charge_Power = 0
 				}
@@ -83,16 +83,17 @@ function scr_Charged_Hold() {
 		wdelay = weaponDelay;
 		wenergy = Charge_Essence;
 	    ct = wtt * cUpAmt;
-	    if senergy >= ((ct / wtt) * ((wenergy - senergyconservation) / wtt) / senergyconservationfactor / ((6 + global.Weap[weaponcharge]) / 6))
-	    if Charge_Time < ct {
-	        Charge_Speed += crate * (ct / wtt) * Shot_Charge_Speed / wtt;
-	        Charge_Power += crate * (ct / wtt) * Shot_Charge_Power / wtt;
-			Charge_Lifespan += crate * (ct / wtt) * Shot_Charge_Lifespan / wtt;
-			Charge_Knockback += crate * (ct / wtt) * Shot_Charge_Knockback / wtt;
-	        Charge_Time += crate * ct / wtt;
-	        Charge_Size += crate * (ct / wtt) * Shot_Charge_Size / wtt;
-			on = 1;
-	    }
+	    if senergy >= smaxenergy || senergy >= ((ct / wtt) * ((wenergy - senergyconservation) / wtt) / senergyconservationfactor / ((6 + global.Weap[weaponcharge]) / 6)) {
+		    if Charge_Time < ct {
+		        Charge_Speed += crate * (ct / wtt) * Shot_Charge_Speed / wtt;
+		        Charge_Power += crate * (ct / wtt) * Shot_Charge_Power / wtt;
+				Charge_Lifespan += crate * (ct / wtt) * Shot_Charge_Lifespan / wtt;
+				Charge_Knockback += crate * (ct / wtt) * Shot_Charge_Knockback / wtt;
+		        Charge_Time += crate * ct / wtt;
+		        Charge_Size += crate * (ct / wtt) * Shot_Charge_Size / wtt;
+				on = 1;
+		    }
+		}
 	} 
 
 	var drain = (ct / wtt) * ((wenergy - senergyconservation) / wtt) / senergyconservationfactor / ((6 + global.Weap[weaponcharge]) / 6) / (1 + ((global.soulperception + global.soulperceptionTemp) / 160));

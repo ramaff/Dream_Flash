@@ -63,7 +63,7 @@ function scr_Weapon_Use_List(cWP = global.currentweapon) {
 	}
 	
 	//if senergy >= weapStop + weaponCost || Charge_Hold = 2 { 
-	if senergy >= weaponCost || Charge_Hold = 2 || weapStop != 0 { 
+	if senergy >= weaponCost || Charge_Hold = 2 || weapStop != 0 || senergy >= smaxenergy { 
 	
 		global.soulNoShoot = 0;
 		

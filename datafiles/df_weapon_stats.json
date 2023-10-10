@@ -453,8 +453,7 @@
         "Weapon_Split_Visible": 1,
         "Weapon_Split_Hit_Again": 0,
         "Beast_Credit": 0.5,
-        "Shot_Bullet_Redirect": 1,
-        "Shot_Bullet_Redirect_Chance": 100
+        "Shot_Bullet_Displace": 40
     },
     "53": {
         "Name": "Dreamer's Blade",
@@ -917,6 +916,8 @@
                 "Shot_Pierce": 1,
                 "Shot_Size": 0.5,
                 "Shot_Point_Angle": true,
+                "Shot_Form_Show": 0,
+                "Shot_Init_Grow": 0,
                 "Shot_Face_Direction": false
             }
         ],

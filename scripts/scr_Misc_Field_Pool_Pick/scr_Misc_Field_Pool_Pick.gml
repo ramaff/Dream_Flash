@@ -65,10 +65,9 @@ function scr_Misc_Field_Pool_Pick(){
 		return scr_Pool_Pick(global.v_item_pool);
 	}
 	itemcount += _w_size
-	if _type <= itemcount { /// W
-		return scr_Pool_Pick(global.w_item_pool);
-	}
+	//if _type <= itemcount { /// W
+	return scr_Pool_Pick(global.w_item_pool);
 	
-	return scr_Misc_Field_Pool_Pick()
+	//return scr_Misc_Field_Pool_Pick()
 	
 }
