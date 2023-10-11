@@ -33,10 +33,7 @@
   "physicsStartAwake": true,
   "properties": [],
   "solid": false,
-  "spriteId": {
-    "name": "spr_Recollection_Menu_Cloud",
-    "path": "sprites/spr_Recollection_Menu_Cloud/spr_Recollection_Menu_Cloud.yy",
-  },
+  "spriteId": null,
   "spriteMaskId": null,
   "visible": true,
 }

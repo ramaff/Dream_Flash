@@ -1,7 +1,7 @@
 {
   "resourceType": "GMSprite",
   "resourceVersion": "1.0",
-  "name": "spr_pocket_v2_palette",
+  "name": "spr_new_pocket_palette",
   "bbox_bottom": 5,
   "bbox_left": 0,
   "bbox_right": 2,
@@ -13,14 +13,14 @@
   "edgeFiltering": false,
   "For3D": false,
   "frames": [
-    {"resourceType":"GMSpriteFrame","resourceVersion":"1.1","name":"3f556eb3-3aa4-4ec0-b151-112b2f2e8071",}
+    {"resourceType":"GMSpriteFrame","resourceVersion":"1.1","name":"771f604c-cd41-40aa-a41b-f1a78d881915",},
   ],
   "gridX": 0,
   "gridY": 0,
   "height": 64,
   "HTile": false,
   "layers": [
-    {"resourceType":"GMImageLayer","resourceVersion":"1.0","name":"b74b0e54-e657-4bfc-908f-67668e177e32","blendMode":0,"displayName":"default","isLocked":false,"opacity":100.0,"visible":true,},
+    {"resourceType":"GMImageLayer","resourceVersion":"1.0","name":"70ef8ccb-e967-4f06-8057-0fc94203a5fd","blendMode":0,"displayName":"default","isLocked":false,"opacity":100.0,"visible":true,},
   ],
   "nineSlice": null,
   "origin": 0,
@@ -32,7 +32,7 @@
   "sequence": {
     "resourceType": "GMSequence",
     "resourceVersion": "1.4",
-    "name": "spr_pocket_v2_palette",
+    "name": "spr_new_pocket_palette",
     "autoRecord": true,
     "backdropHeight": 768,
     "backdropImageOpacity": 0.5,
@@ -54,7 +54,7 @@
     "timeUnits": 1,
     "tracks": [
       {"resourceType":"GMSpriteFramesTrack","resourceVersion":"1.0","name":"frames","builtinName":0,"events":[],"inheritsTrackColour":true,"interpolation":1,"isCreationTrack":false,"keyframes":{"resourceType":"KeyframeStore<SpriteFrameKeyframe>","resourceVersion":"1.0","Keyframes":[
-            {"resourceType":"Keyframe<SpriteFrameKeyframe>","resourceVersion":"1.0","Channels":{"0":{"resourceType":"SpriteFrameKeyframe","resourceVersion":"1.0","Id":{"name":"3f556eb3-3aa4-4ec0-b151-112b2f2e8071","path":"sprites/spr_pocket_v2_palette/spr_pocket_v2_palette.yy",},},},"Disabled":false,"id":"bddc2169-f3d1-4c5d-bdc5-7df86b4b2166","IsCreationKey":false,"Key":0.0,"Length":1.0,"Stretch":false,},
+            {"resourceType":"Keyframe<SpriteFrameKeyframe>","resourceVersion":"1.0","Channels":{"0":{"resourceType":"SpriteFrameKeyframe","resourceVersion":"1.0","Id":{"name":"771f604c-cd41-40aa-a41b-f1a78d881915","path":"sprites/spr_new_pocket_palette/spr_new_pocket_palette.yy",},},},"Disabled":false,"id":"f9d048b1-f3bc-4a0c-b70c-40bb562bfa91","IsCreationKey":false,"Key":0.0,"Length":1.0,"Stretch":false,},
           ],},"modifiers":[],"spriteId":null,"trackColour":0,"tracks":[],"traits":0,},
     ],
     "visibleRange": null,

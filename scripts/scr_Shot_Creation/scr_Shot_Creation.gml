@@ -44,15 +44,6 @@ function scr_Shot_Creation() {
 
 	Shot_Count += global.soulshotamountadd + global.soulshotamountaddtemp;
 
-	//Shot_Default_Count = Shot_Count;
-	/*
-	global.D10activate += global.D[10] * 0.3;
-
-	if global.D10activate >= 1 {
-		Shot_Count = Shot_Count * (global.D10activate + 1)
-		global.D10activate -= floor(global.D10activate);
-	}
-	*/
 	scr_D10();
 	
 	scr_XB05_Shot_Mod();
@@ -67,13 +58,6 @@ function scr_Shot_Creation() {
 
 	Shot_Current_Count = 0;
 
-
-	/* if soulshotmouse = 0 {
-		Shot_Mouse = 0;
-		Shot_Direction = soulshotdirection;
-	} */
-	
-	//actual_shot_direction = 0;
 	
 	actual_shot_direction = 0;
 	

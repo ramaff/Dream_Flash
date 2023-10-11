@@ -14,8 +14,6 @@ for (bi = 0; bi < 9; bi++) {
 		
 		scr_setup_weapon_stats()
 		
-		Shot_Repetition[bi]--;
-		
 		if Shot_Repetition_Type[bi] = "Bullet Hell" {
 			//scr_Bullet_Hell_Use_Helper();	
 			//scr_Bullet_Hell_Gun_Use(false);
@@ -40,6 +38,8 @@ for (bi = 0; bi < 9; bi++) {
 			Shot_Count = Shot_Default_Count[bi];
 			scr_Shot_Creation();
 		}
+		
+		Shot_Repetition[bi]--;
 		
 	}
 

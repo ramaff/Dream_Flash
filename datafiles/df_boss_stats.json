@@ -1183,7 +1183,7 @@
             "Bullet_Speed": 2.5,
             "Move_Speed": 2.5,
             "recollectionDescription": "Sentient pocket dimension, drops bullets across the dreamscape. Can traverse space instantly with portals and summon helpers from other dimensions.",
-            "Palette": "spr_pocket_v2_palette",
+            "Palette": "spr_new_pocket_palette",
 
             "Champ 1": {
                 "Name": "Hot Pocket",

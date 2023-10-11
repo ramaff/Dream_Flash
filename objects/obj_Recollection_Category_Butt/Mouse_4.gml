@@ -26,17 +26,17 @@ if cat = 3 {
     numOfButts = 100;
 }
 if global.recollectionStateUnlocked = 1 {
-if cat = 4 {
-    global.recollectCategory = "State";
-    numOfButts = 10;
-}
-if cat = 5 {
-    global.recollectCategory = "Information";
-	numOfButts = 27;
-}
+	if cat = 4 {
+	    global.recollectCategory = "State";
+	    numOfButts = 10;
+	}
+	if cat = 5 {
+	    global.recollectCategory = "Information";
+		numOfButts = 27;
+	}
 } else {
 	if cat = 4 {
-		global.recollectionCategory = "Information";	
+		global.recollectCategory = "Information";	
 		numOfButts = 27;
 	}
 }
