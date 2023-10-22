@@ -60,6 +60,8 @@ function scr_Soul_Utility_Setup() {
 	sBeamAlpha = 0;
 	sBeamFrame = 0;
 	sBeamLife = 0;
+	
+	umbrellaActive = false;
 
 	for(i = 0; i < sBeamNumMax; i++){
 	    bArrBeamAlpha[i] = 0;

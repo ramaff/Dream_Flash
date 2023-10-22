@@ -1646,7 +1646,7 @@
             "Boss_Danger": 4,
             "Bullet_Speed": 3,
             "Move_Speed": 2.7,
-            "recollectionDescription": "Powerful knight. Uses it's axe to deal punishment with quick moves.",
+            "recollectionDescription": "Powerful knight. Uses its axe to deal punishment with quick moves.",
         
             "Champ 1": {
                 "Name": "Dungeon Executioner (Tier 2)",
@@ -1684,7 +1684,7 @@
             "Boss_Danger": 4,
             "Bullet_Speed": 3.1,
             "Move_Speed": 2.55,
-            "recollectionDescription": "Trickey Spellcaster. Uses spells to make the soul fall alseep, and create strange bullet patterns.",
+            "recollectionDescription": "Tricky Spellcaster. Uses spells to make the soul fall asleep, and creates strange bullet patterns.",
         
             "Champ 1": {
                 "Name": "Sleep Caster (Tier 2)",

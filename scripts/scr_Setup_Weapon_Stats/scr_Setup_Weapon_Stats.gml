@@ -550,65 +550,65 @@ function scr_setup_weapon_stats(_current_weapon_stats = current_weapon_stats){
 		for(i = 0; i < array_length(_current_weapon_stats.Shot_Extra_Hits); i++) {
 			Shot_Extra_Hits[i] = _current_weapon_stats.Shot_Extra_Hits[i];
 		}
-	}
-	if variable_struct_exists(_current_weapon_stats, "Shot_Extra_Hits_Sprite") {
-		for(i = 0; i < array_length(_current_weapon_stats.Shot_Extra_Hits); i++) {
-			Shot_Extra_Hits_Sprite[i] = asset_get_index(_current_weapon_stats.Shot_Extra_Hits_Sprite[i]);
+		if variable_struct_exists(_current_weapon_stats, "Shot_Extra_Hits_Sprite") {
+			for(i = 0; i < array_length(_current_weapon_stats.Shot_Extra_Hits); i++) {
+				Shot_Extra_Hits_Sprite[i] = asset_get_index(_current_weapon_stats.Shot_Extra_Hits_Sprite[i]);
+			}
 		}
-	}
-	if variable_struct_exists(_current_weapon_stats, "Shot_Extra_Hit_Frequency") {
-		for(i = 0; i < array_length(_current_weapon_stats.Shot_Extra_Hits); i++) {
-			Shot_Extra_Hit_Frequency[i] = _current_weapon_stats.Shot_Extra_Hit_Frequency[i];
+		if variable_struct_exists(_current_weapon_stats, "Shot_Extra_Hit_Frequency") {
+			for(i = 0; i < array_length(_current_weapon_stats.Shot_Extra_Hits); i++) {
+				Shot_Extra_Hit_Frequency[i] = _current_weapon_stats.Shot_Extra_Hit_Frequency[i];
+			}
 		}
-	}
-	if variable_struct_exists(_current_weapon_stats, "Shot_Extra_Hit_Power") {
-		for(i = 0; i < array_length(_current_weapon_stats.Shot_Extra_Hits); i++) {
-			Shot_Extra_Hit_Power[i] = _current_weapon_stats.Shot_Extra_Hit_Power[i];
+		if variable_struct_exists(_current_weapon_stats, "Shot_Extra_Hit_Power") {
+			for(i = 0; i < array_length(_current_weapon_stats.Shot_Extra_Hits); i++) {
+				Shot_Extra_Hit_Power[i] = _current_weapon_stats.Shot_Extra_Hit_Power[i];
+			}
 		}
-	}
-	if variable_struct_exists(_current_weapon_stats, "Shot_Extra_Hit_Speed") {
-		for(i = 0; i < array_length(_current_weapon_stats.Shot_Extra_Hits); i++) {
-			Shot_Extra_Hit_Speed[i] = _current_weapon_stats.Shot_Extra_Hit_Speed[i];
+		if variable_struct_exists(_current_weapon_stats, "Shot_Extra_Hit_Speed") {
+			for(i = 0; i < array_length(_current_weapon_stats.Shot_Extra_Hits); i++) {
+				Shot_Extra_Hit_Speed[i] = _current_weapon_stats.Shot_Extra_Hit_Speed[i];
+			}
 		}
-	}
-	if variable_struct_exists(_current_weapon_stats, "Shot_Extra_Hit_Lifespan") {
-		for(i = 0; i < array_length(_current_weapon_stats.Shot_Extra_Hits); i++) {
-			Shot_Extra_Hit_Lifespan[i] = _current_weapon_stats.Shot_Extra_Hit_Lifespan[i];
+		if variable_struct_exists(_current_weapon_stats, "Shot_Extra_Hit_Lifespan") {
+			for(i = 0; i < array_length(_current_weapon_stats.Shot_Extra_Hits); i++) {
+				Shot_Extra_Hit_Lifespan[i] = _current_weapon_stats.Shot_Extra_Hit_Lifespan[i];
+			}
 		}
-	}
-	if variable_struct_exists(_current_weapon_stats, "Shot_Extra_Hit_Homing") {
-		for(i = 0; i < array_length(_current_weapon_stats.Shot_Extra_Hits); i++) {
-			Shot_Extra_Hit_Homing[i] = _current_weapon_stats.Shot_Extra_Hit_Homing[i];
+		if variable_struct_exists(_current_weapon_stats, "Shot_Extra_Hit_Homing") {
+			for(i = 0; i < array_length(_current_weapon_stats.Shot_Extra_Hits); i++) {
+				Shot_Extra_Hit_Homing[i] = _current_weapon_stats.Shot_Extra_Hit_Homing[i];
+			}
 		}
-	}
-	if variable_struct_exists(_current_weapon_stats, "Shot_Extra_Hit_Homing_Speed") {
-		for(i = 0; i < array_length(_current_weapon_stats.Shot_Extra_Hits); i++) {
-			Shot_Extra_Hit_Homing_Speed[i] = _current_weapon_stats.Shot_Extra_Hit_Homing_Speed[i];
+		if variable_struct_exists(_current_weapon_stats, "Shot_Extra_Hit_Homing_Speed") {
+			for(i = 0; i < array_length(_current_weapon_stats.Shot_Extra_Hits); i++) {
+				Shot_Extra_Hit_Homing_Speed[i] = _current_weapon_stats.Shot_Extra_Hit_Homing_Speed[i];
+			}
 		}
-	}
-	if variable_struct_exists(_current_weapon_stats, "Shot_Extra_Hit_Pierce") {
-		for(i = 0; i < array_length(_current_weapon_stats.Shot_Extra_Hits); i++) {
-			Shot_Extra_Hit_Pierce[i] = _current_weapon_stats.Shot_Extra_Hit_Pierce[i];
+		if variable_struct_exists(_current_weapon_stats, "Shot_Extra_Hit_Pierce") {
+			for(i = 0; i < array_length(_current_weapon_stats.Shot_Extra_Hits); i++) {
+				Shot_Extra_Hit_Pierce[i] = _current_weapon_stats.Shot_Extra_Hit_Pierce[i];
+			}
 		}
-	}
-	if variable_struct_exists(_current_weapon_stats, "Shot_Extra_Hit_Acceleration") {
-		for(i = 0; i < array_length(_current_weapon_stats.Shot_Extra_Hits); i++) {
-			Shot_Extra_Hit_Acceleration[i] = _current_weapon_stats.Shot_Extra_Hit_Acceleration[i];
+		if variable_struct_exists(_current_weapon_stats, "Shot_Extra_Hit_Acceleration") {
+			for(i = 0; i < array_length(_current_weapon_stats.Shot_Extra_Hits); i++) {
+				Shot_Extra_Hit_Acceleration[i] = _current_weapon_stats.Shot_Extra_Hit_Acceleration[i];
+			}
 		}
-	}
-	if variable_struct_exists(_current_weapon_stats, "Shot_Extra_Hit_Size") {
-		for(i = 0; i < array_length(_current_weapon_stats.Shot_Extra_Hits); i++) {
-			Shot_Extra_Hit_Size[i] = _current_weapon_stats.Shot_Extra_Hit_Size[i];
+		if variable_struct_exists(_current_weapon_stats, "Shot_Extra_Hit_Size") {
+			for(i = 0; i < array_length(_current_weapon_stats.Shot_Extra_Hits); i++) {
+				Shot_Extra_Hit_Size[i] = _current_weapon_stats.Shot_Extra_Hit_Size[i];
+			}
 		}
-	}
-	if variable_struct_exists(_current_weapon_stats, "Shot_Extra_Hit_Shrink") {
-		for(i = 0; i < array_length(_current_weapon_stats.Shot_Extra_Hits); i++) {
-			Shot_Extra_Hit_Shrink[i] = _current_weapon_stats.Shot_Extra_Hit_Shrink[i];
+		if variable_struct_exists(_current_weapon_stats, "Shot_Extra_Hit_Shrink") {
+			for(i = 0; i < array_length(_current_weapon_stats.Shot_Extra_Hits); i++) {
+				Shot_Extra_Hit_Shrink[i] = _current_weapon_stats.Shot_Extra_Hit_Shrink[i];
+			}
 		}
-	}
-	if variable_struct_exists(_current_weapon_stats, "Shot_Extra_Hit_Fade") {
-		for(i = 0; i < array_length(_current_weapon_stats.Shot_Extra_Hits); i++) {
-			Shot_Extra_Hit_Fade[i] = _current_weapon_stats.Shot_Extra_Hit_Fade[i];
+		if variable_struct_exists(_current_weapon_stats, "Shot_Extra_Hit_Fade") {
+			for(i = 0; i < array_length(_current_weapon_stats.Shot_Extra_Hits); i++) {
+				Shot_Extra_Hit_Fade[i] = _current_weapon_stats.Shot_Extra_Hit_Fade[i];
+			}
 		}
 	}
 	

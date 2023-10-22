@@ -6,8 +6,10 @@ if global.mouseheartslot != -1 {
     
         x = mouse_x;
         y = mouse_y;
+		
+		scr_Draw_Heart(global.mousehearttype, hpercent)
         
-	if global.mousehearttype = 1 {
+	/*if global.mousehearttype = 1 {
         //draw_sprite(spr_Lesser_Heart,0,x,y);
         //draw_sprite_part(spr_Lesser_Heart,1,0,32 * (1 - (hpercent / 100)),48,32,x-24,y - 16 + 32 * (1 - (hpercent / 100)));
 		draw_sprite_ext(spr_Lesser_Heart,0,x,y,0.5,0.5,0,c_white,1);
@@ -97,7 +99,7 @@ if global.mouseheartslot != -1 {
         draw_sprite_ext(spr_Body_Bag_Heart,0,x,y,0.5,0.5,0,c_white,1);
         draw_sprite_part_ext(spr_Body_Bag_Heart,1,0,72 * (1 - (hpercent / 100)),78,72,x-19,y - 18 + 36 * (1 - (hpercent / 100)),0.5,0.5,c_white,1);
         //draw_sprite(spr_Body_Bag_Heart,0,x,y);
-    }
+    } */
 		
 		/*
         if global.mousehearttype = 1 {

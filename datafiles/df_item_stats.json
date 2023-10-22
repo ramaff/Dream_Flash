@@ -115,7 +115,7 @@
         "recollectionString": "Fulfillment",
         "recollectionSprite": "spr_Body_Bag_Hearts_Item",
         "recollectionExtraStats": "+Heart Death Airbag",
-        "recollectionDescription": "Your fulfillment provides you with some extra protection. When losing a heart you gain an extra air-filled heart that acts as a normal heart that loses its max hp every time its hit."
+        "recollectionDescription": "Your fulfillment provides you with some extra protection. When losing a heart you gain an extra air-filled heart that acts as a normal heart that loses its max hp every time it is hit."
     },
     "B04": {
         "recollectionString": "Will to Live",
@@ -462,7 +462,7 @@
         "recollectionString": "Spatial Awareness",
         "recollectionSprite": "spr_Spatial_Awareness_Item",
         "recollectionExtraStats": "+Danger Teleport +Essence Regen",
-        "recollectionDescription": "Good spatial Awareness lets your teleport and essence recharge much faster when near bullets.",
+        "recollectionDescription": "Good spatial awareness lets you recharge your teleport and essence much faster when near bullets.",
         "Beast_Credit": 0.5
     },
     "E14": {
@@ -1041,7 +1041,7 @@
         "recollectionSprite": "spr_Wandering_Soul",
         "recollectionSize": 0.375,
         "recollectionExtraStats": "+Ally Soul",
-        "recollectionDescription": "This soul seems a bit lost, luckily it's on your side. Shoots at bosses and loosely follows your soul. More souls wander onto your party the longer the fight goes on.",
+        "recollectionDescription": "This soul seems a bit lost, luckily it's on your side. Shoots at bosses and loosely follows your soul. More souls wander into your party the longer the fight goes on.",
         "Mech_Credit": 0.5
     },
     "M02": {
@@ -1326,7 +1326,7 @@
         "recollectionString": "Ignorance Is Bliss",
         "recollectionSprite": "spr_Ignorance_Is_Bliss_Art",
         "recollectionExtraStats": "+Delayed Soul Damage",
-        "recollectionDescription": "The soul doesn't register that its taken damage. All damage is now recieved over a period of time."
+        "recollectionDescription": "The soul doesn't register that it has taken damage. All damage is now recieved over a period of time."
     },
     "OB06": {
         "recollectionString": "Euphoria",
@@ -1427,7 +1427,7 @@
         "recollectionString": "No Brainer",
         "recollectionSprite": "spr_No_Brainer_Art",
         "recollectionExtraStats": "+Free Thoughts",
-        "recollectionDescription": "Occasionally shot free extra shots that automatically aim at the nearest enemy. Extra damage is a no brainer."
+        "recollectionDescription": "Occasionally shoot free extra shots that automatically aim at the nearest enemy. Extra damage is a no brainer."
     },
     "Q02": {
         "recollectionString": "On Second Thought",
@@ -1541,7 +1541,7 @@
         "recollectionString": "Train of Thought",
         "recollectionSprite": "spr_Train_Of_Thought_Art",
         "recollectionExtraStats": "+Increasing Weapon Firerate and Efficiency",
-        "recollectionDescription": "By keeping up a train of thought, slowly gain upto +100% firerate and -50% essence cost with a weapon as long as you don’t switch weapons, get hit, stop firing, or change shooting angle."
+        "recollectionDescription": "By keeping up a train of thought, slowly gain up to +100% firerate and -50% essence cost with a weapon as long as you do not switch weapons, get hit, stop firing, or change shooting angle."
     },
     "U04": {
         "recollectionString": "Circle of Trust",
@@ -1601,7 +1601,7 @@
         "recollectionString": "Cognitive Dissonance",
         "recollectionSprite": "spr_Cognitive_Dissonance_Art",
         "recollectionExtraStats": "+4 Random Basic Positive Negative Stat per Floor",
-        "recollectionDescription": "A mix of preconcieved notions affect your attributes in random ways permanently every floor. Applies retroactively as well."
+        "recollectionDescription": "A mix of preconceived notions affect your attributes in random ways permanently every floor. Applies retroactively as well."
     },
     "V04": {
         "recollectionString": "Gaping Void",
@@ -1639,7 +1639,7 @@
         "recollectionString": "Warp Strike",
         "recollectionSprite": "spr_Warp_Strike_Art",
         "recollectionExtraStats": "+Teleport Slash",
-        "recollectionDescription": "Deal damage to everything in between you origin and destination when teleporting."
+        "recollectionDescription": "Deal damage to everything in between your origin and destination when teleporting."
     },
     "W02": {
         "recollectionString": "Warp Barrage",
@@ -1725,7 +1725,7 @@
         "recollectionString": "Jittery",
         "recollectionSprite": "spr_Jittery_Art",
         "recollectionExtraStats": "+Jittery Shots/Bullets",
-        "recollectionDescription": "Causes soul shots and boss bullets jitter and change directions."
+        "recollectionDescription": "Causes soul shots and boss bullets to jitter and change directions."
     },
     "XB05": {
         "recollectionString": "Seeing Things",

@@ -13,21 +13,23 @@ function scr_Soul_Spawn() {
 	}
 
 	dir = -(Shot_Spread * (Shot_Count - 1) / 2) + (-(Shot_Accuracy / 2) + random(Shot_Accuracy));
+	
+	var _stats = Shot_Stats
 
 	repeat(Shot_Count) {
 
-	    with instance_create(x,y,Minion_Type) {
+	    with instance_create(x,y,asset_get_index(_stats.Minion_Type)) {
 			followtarget = noone;
 			//followtarget = obj_Soul_Parent//ct;
 			//ct = id;
 			
-	        smovementspeed = other.Minion_Speed;
-	        shealth = other.Minion_Health;
+	        smovementspeed = _stats.Minion_Speed;
+	        shealth = _stats.Minion_Health;
 	        smaxhealth = shealth;
-	        spower = other.Minion_Power
+	        spower = _stats.Minion_Power
 	        //direction = point_direction(x,y,mouse_x,mouse_y);
-	        Shot_Power = other.Shot_Power;
-	        Minion_Lifespan = other.Minion_Lifespan;
+	        Shot_Power = _stats.Shot_Power;
+	        Minion_Lifespan = _stats.Minion_Lifespan;
 	        alarm[1] = Minion_Lifespan;
 	        //direction += other.dir / other.saccuracy;
 	        //speed = smovementspeed;

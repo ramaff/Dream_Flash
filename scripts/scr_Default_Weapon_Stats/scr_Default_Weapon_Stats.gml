@@ -25,6 +25,8 @@ function scr_Default_Weapon_Stats() {
 	Shot_Weapon_Lean = 0;
 	Shot_Angles = -1;
 	Shot_Boss_Aim = false;
+	
+	umbrellaActive = false;
 
 	Shot_Form_Show = 1;
 
