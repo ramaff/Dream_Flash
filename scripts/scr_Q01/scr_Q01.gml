@@ -10,9 +10,9 @@ function scr_Q01() {
 			exit;	
 		}
 		
-		current_weapon_stats = json_parse(json_stringify(variable_struct_get(global.weapon_stats, string(_c_wp))))
-		
 		scr_Default_Weapon_Stats();
+		
+		current_weapon_stats = scr_Setup_Default_Weapon_Stats(_c_wp)
 		
 		var _delay = current_weapon_stats.Delay / scr_Class_Stat_Firerate_Multiplier();
 		
@@ -35,6 +35,10 @@ function scr_Q01() {
 			//current_weapon_stats.Shot_Lobbing_Tilt = -10;
 
 			scr_setup_weapon_stats(current_weapon_stats);
+			
+			barrage = false;
+			minion = false;
+			spawnProjectile = true;
 		
 			scr_Hard_Coded_Weapon_Stats(_c_wp);
 		
@@ -48,7 +52,7 @@ function scr_Q01() {
 			// velocity is backwards
 	        Shot_Stats.Shot_Gravity = ((2 * _dist) / (_time * _time)) + (_vel / _time)
 		
-			scr_Shot_Creation();
+			scr_Weapon_Output(spawnProjectile, minion)
 		}
 		
 	}

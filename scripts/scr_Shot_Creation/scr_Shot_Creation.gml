@@ -236,7 +236,7 @@ function scr_Shot_Creation() {
 		            direction = 270;
 		            direction += shotdirectionaddition;
 		        }
-				if other.Shot_Mouse_Origin = 1 {
+				if other.Shot_Stats.Shot_Mouse_Origin = 1 {
 					x = obj_Astral_Indicator.x;
 		            y = obj_Astral_Indicator.y;
 				}

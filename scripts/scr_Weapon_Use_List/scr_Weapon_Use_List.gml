@@ -20,7 +20,8 @@ function scr_Weapon_Use_List(cWP = global.currentweapon) {
 		}
 	}
 	
-	current_weapon_stats = json_parse(json_stringify(variable_struct_get(global.weapon_stats, string(cWP))))
+	//current_weapon_stats = json_parse(json_stringify(variable_struct_get(global.weapon_stats, string(cWP))))
+	current_weapon_stats = scr_Setup_Default_Weapon_Stats(cWP)
 	
 	weaponCost = current_weapon_stats.Essence;	
 	weaponDelay = current_weapon_stats.Delay;
@@ -67,7 +68,7 @@ function scr_Weapon_Use_List(cWP = global.currentweapon) {
 	
 		global.soulNoShoot = 0;
 		
-		scr_Default_Weapon_Stats();
+		//scr_Default_Weapon_Stats();
 		
 		if Charge_Hold = 2 {
 			scr_Ascending_Soul_Essence_Beam(cWP);	

@@ -2,7 +2,9 @@
 // https://help.yoyogames.com/hc/en-us/articles/360005277377 for more information
 function scr_Setup_Default_Shot_Stats(){
 
-	return {
+	Shot_Stats = {
+		Delay: 20,
+		Essence: 4,
 		Shot_Extra_Stats: false,
 		Shot_Burst_Stats: false,
 		Shot_Air_Burst_Stats: false,
@@ -31,7 +33,9 @@ function scr_Setup_Default_Shot_Stats(){
 		Shot_Zig_Zag: 0,
 		Shot_Chain_Color: [255,255,255],
 		Shot_Init_Grow: 1,
-		Shot_Excess_Essence: 0
+		Shot_Excess_Essence: 0,
+		Shot_Mouse_Origin: 0
 	}
+	return Shot_Stats
 
 }
