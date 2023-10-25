@@ -1866,7 +1866,7 @@
         "Shot_Lifespan": 13,
         "Shot_Mouse_Origin": 1,
         "Shot_Life_Drain": 0.33,
-        "Shot_Extra_Hits": [1],
+        "Shot_Extra_Hits": false,
         "Shot_Extra_Stats": [
             {
                 "Shot_Count": 1,
