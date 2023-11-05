@@ -41,6 +41,8 @@ function scr_Boss_Attack_Setup(_version = 1) {
 	    pattern_direction = 0;
 	    pattern_cooldown = 0;
 	    pattern_cooldown_max = 0;
+		
+		pattern_repetition = 0;
 	}
 
 	setbeamlength = 0;
