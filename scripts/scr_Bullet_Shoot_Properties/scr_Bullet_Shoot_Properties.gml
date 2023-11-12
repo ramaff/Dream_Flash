@@ -1,17 +1,18 @@
 function scr_Bullet_Shoot_Properties() {
 
-	target = other;            
+	target = other.id;
 	bullettarget = other.bullet_target;
 	bulletorigin = other.id;
 	bulletobj = other.object_index;
 			
 	bpart = other.bullet_part;
-		bpartsprite = other.bullet_part_sprite;
-		bpartarea = other.bullet_part_area;
-		bpartfrequency = other.bullet_part_frequency;
-		bpartlife = other.bullet_part_life;
-		bpartcolor1 = other.bullet_part_color1;
-		bpartcolor2 = other.bullet_part_color2;
+	bpartsize = other.bullet_part_size;
+	bpartsprite = other.bullet_part_sprite;
+	bpartarea = other.bullet_part_area;
+	bpartfrequency = other.bullet_part_frequency;
+	bpartlife = other.bullet_part_life;
+	bpartcolor1 = other.bullet_part_color1;
+	bpartcolor2 = other.bullet_part_color2;
 			
 	bulletdepth = other.bullet_depth;
 	depth = bulletdepth;

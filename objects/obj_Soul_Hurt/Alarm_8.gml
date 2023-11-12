@@ -4,10 +4,16 @@
 if global.gameParticles > 0 {
 	if bpart > 0 {
 	
-		var xx = bpartarea / 2 - random(bpartarea);
-		var yy = bpartarea / 2 - random(bpartarea);
+		//var xx = bpartarea / 2 - random(bpartarea);
+		//var yy = bpartarea / 2 - random(bpartarea);
+		
+		var color = bpartcolor1;		
+		var color2 = bpartcolor2;
+		scr_Particle_Burst(obj_Weapon_Trail, bpartsprite, color, color2, 1, 0,
+						   random(360), 0, bpartarea, (bulletsize * 2) * bpartsize + random(0.1),
+						   bpartlife, false)
 	
-		with instance_create(x + xx,y + yy,obj_Weapon_Trail) {
+		/*with instance_create(x + xx,y + yy,obj_Weapon_Trail) {
 		
 			depth = other.depth + 2;
 		
@@ -25,7 +31,7 @@ if global.gameParticles > 0 {
 		
 			alarm[0] = life;
 
-		}
+		} */
 	
 	}
 

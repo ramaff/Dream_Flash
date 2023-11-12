@@ -25,6 +25,7 @@ function scr_Default_Attack_Settings() {
 		bullet_part_life = 30;
 		bullet_part_color1 = c_white;
 		bullet_part_color2 = c_white;
+		bullet_part_size = 0.5;
 		
 		bullet_crowd_direction = 0;
 		bullet_crowd_speed = 0;

@@ -21,9 +21,11 @@ if active_attack_delay <= 0 and active_attack_cooldown <= 0 and active_attack_du
 	// Hop leap attack setup example
 	if active_attack = 1 {
 		// 
-		scr_Boss_Attack_Time_Setup_v2(50, 30, 1, 30, 30, -10);
+		scr_Boss_Attack_Time_Setup_v2(70, 30, 1, 30, 30, -10);
 		
 		scr_Boss_Jump_Setup_v2(0, 7 * bossmovespeed, x, y);
+		
+		dash_direction = scr_Soul_Point() - 45 + random(90);
     }
 }
 
@@ -37,18 +39,45 @@ scr_Default_Attack_Settings();
 if active_attack_delay <= 0 and pattern_cooldown <= 0 and pattern_count > 0 {
 	
 	if active_attack = 1 {
+		if pattern_count = pattern_count_max {
+			
+			var _trail = false
+			var _follow_id = id
+			
+			with(obj_Lingering_Fire_Trail_Bullet) {
+				if target = _follow_id {
+					_trail = true;	
+				}
+			}
+		
+			if _trail = false {
+				/*bullet_part = 1;
+				bullet_part_sprite = spr_Soul_Big_Bit;
+				bullet_part_color1 = make_color_rgb(255,100,50);
+				bullet_part_color2 = make_color_rgb(255,150,50);
+				bullet_part_size = 0.3;
+				bullet_part_area = 30;
+				bullet_part_life = 30;
+				bullet_part_frequency = 5; */
+
+
+				bullet_direction = 0;
+				bullet_speed = 0;
+				bullet_lifespan = 9999;
+				bullet_type = obj_Lingering_Fire_Trail_Bullet;
+		
+				scr_Boss_Shoot();
+			}
+		
+		}
+		
 		scr_Boss_Dash_Movement_v2(4,2);
 		
 		speed = dash_speed;
         direction = dash_direction;
 		
-		scr_Jump_Movement_v2(2);	
+		scr_Jump_Movement_v2(3);	
 		
-		if pattern_count = floor(pattern_count_max) {
-			bullet_direction = scr_Boss_Bullet_Direction_Formula(scr_Soul_Point(), 30)
-		
-			scr_Boss_Shoot();	
-		}
 	}
 	
 	// Maybe I should put this into a script

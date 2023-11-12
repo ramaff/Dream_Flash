@@ -1,4 +1,4 @@
-function scr_Bullet_Replicate_Properties() {
+function scr_Bullet_Replicate_Properties(_keep_part = false) {
 	bulletorigin = other.bulletorigin;
 	bulletobj = other.bulletobj;
 	bulletID = other.bulletID;
@@ -21,12 +21,16 @@ function scr_Bullet_Replicate_Properties() {
 	//baseDepth = other.baseDepth + 0.0035;
 			
 	bpart = 0;
+	if _keep_part = true {
+		bpart = other.bpart	
+	}
 	bpartsprite = other.bpartsprite;
 	bpartarea = other.bpartarea;
 	bpartfrequency = other.bpartfrequency;
 	bpartlife = other.bpartlife;
 	bpartcolor1 = other.bpartcolor1;
 	bpartcolor2 = other.bpartcolor2;
+	bpartsize = other.bpartsize;
 				
 	bulletdepth = other.bulletdepth;
 	depth = bulletdepth;

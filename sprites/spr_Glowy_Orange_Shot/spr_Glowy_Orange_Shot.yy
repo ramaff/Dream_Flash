@@ -57,7 +57,7 @@
             {"resourceType":"Keyframe<SpriteFrameKeyframe>","resourceVersion":"1.0","Channels":{"0":{"resourceType":"SpriteFrameKeyframe","resourceVersion":"1.0","Id":{"name":"3d7cb238-5598-4638-b52f-edda4af70168","path":"sprites/spr_Glowy_Orange_Shot/spr_Glowy_Orange_Shot.yy",},},},"Disabled":false,"id":"137135ce-15cd-4d37-96b0-6cdadd669aaa","IsCreationKey":false,"Key":0.0,"Length":1.0,"Stretch":false,},
           ],},"modifiers":[],"spriteId":null,"trackColour":0,"tracks":[],"traits":0,},
     ],
-    "visibleRange": {"x":0.0,"y":0.0,},
+    "visibleRange": null,
     "volume": 1.0,
     "xorigin": 36,
     "yorigin": 36,
