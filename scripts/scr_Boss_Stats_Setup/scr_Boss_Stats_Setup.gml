@@ -3,6 +3,7 @@ function scr_Boss_Stats_Setup(_version=1) {
 	finalphase = 2;
 	
 	facing_direction = 1;
+	boss_phase_transition = 1;
 	
 	new_boss = true
 	

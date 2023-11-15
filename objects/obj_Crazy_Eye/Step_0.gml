@@ -128,19 +128,19 @@ bossPassiveAttack[2] = 0;
 if bossActiveAttackDelay[1] <= 0 and bossActiveAttackCooldown[1] <= 0 and bossActiveAttackDuration[1] <= 0 {
     if champ = 0 {
         bossActiveAttack[1] = 0;
-        if currentphase = 2 {
+        if currentphase = 2 and boss_phase_transition > 1 {
             bossActiveAttack[1] = 1;
         }
     }
     if champ = 1 {
         bossActiveAttack[1] = 2;
-		if currentphase = 2 {
+		if currentphase = 2 and boss_phase_transition > 1 {
 			bossActiveAttack[1] = 3;
 		}
     }
 	if champ = 8 {
         bossActiveAttack[1] = 4;
-		if currentphase = 2 {
+		if currentphase = 2 and boss_phase_transition > 1 {
 			bossActiveAttack[1] = 5;
 			if bossActiveAttackCooldown[1] > 180 {
 				bossActiveAttackCooldown[1] = 180;	
@@ -427,17 +427,36 @@ scr_Boss_Size_Lerp(0.15);
 
 //show_debug_message("boss attack: " + string(bossActiveAttack[1]) + "attack duration: " + string(bossActiveAttackDuration[1]) + ", frame: " + string(image_index) + string(sprite_get_name(sprite_index)));
 
-if bossActiveAttack[1] != 0/* and (bossActiveAttackDelay[1] > 0)*/ {
-	if currentphase = 1 {
+if bossActiveAttack[1] != 0 {
+	if bossActiveAttack[1] = 2 || bossActiveAttack[1] = 4 {
 		scr_Boss_Attack_Sprite(spr_Crazy_Eye_Blink, 10, 5, 5);
 	}
-	if currentphase = 2 {
+	if bossActiveAttack[1] = 1 || bossActiveAttack[1] = 3 || bossActiveAttack[1] = 2 {
 		scr_Boss_Attack_Sprite(spr_Crazy_Eye_Phase_2_Blink, 40, 6, 6);
 	}
 } else {
-	sprite_index = spr_Crazy_Eye;
+	if currentphase = 1 {
+		sprite_index = spr_Crazy_Eye;
+	}
 	if currentphase = 2 {
-		sprite_index = spr_Crazy_Eye_Phase_2;
+		var _phase_into = 2
+		var _transition_sprite = spr_Crazy_Eye_Phase_2_Fall;
+		var _new_sprite = spr_Crazy_Eye_Phase_2;
+		var _final_frame = 4;
+		
+		if boss_phase_transition < _phase_into {
+			if sprite_index != _transition_sprite {
+				image_index = 0;
+				sprite_index = _transition_sprite
+			}
+			if image_index >= _final_frame {
+				boss_phase_transition = _phase_into;	
+			} else if bossActiveAttackCooldown[1] <= 2 {
+				bossActiveAttackCooldown[1] = 2;
+			}
+		} else {
+			sprite_index = _new_sprite;	
+		}
 	}
 }
 

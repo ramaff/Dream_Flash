@@ -167,8 +167,6 @@ if active_attack_delay <= 0 and pattern_cooldown <= 0 and pattern_count > 0 {
 		
 		bullet_type = obj_Fire_Lob_Bullet;
 		bullet_count = 1;
-		bullet_lob_time = 60 + random(30);
-		bullet_lifespan = bullet_lob_time + 2;
 		
 		bullet_part_size = 0.3;
 		bullet_part_area = 30;
@@ -179,6 +177,9 @@ if active_attack_delay <= 0 and pattern_cooldown <= 0 and pattern_count > 0 {
 			bullet_direction = scr_Boss_Bullet_Direction_Formula(scr_Soul_Point(), 90)
 			bullet_speed = bossbulletspeed * (1 + random(2));
 			bullet_bounce_speed = 3 + random(3);
+			bullet_lob_time = 60 + random(30);
+			bullet_lifespan = bullet_lob_time + 2;
+			
 			scr_Boss_Shoot();
 		}
 	
@@ -234,9 +235,11 @@ if active_attack = 1 {
 		scr_Boss_Wobble("Horizontal", 2, 0.4, 0)	
 	}
 } else {
-	sprite_index = spr_fire_starter_v2;
+	if currentphase = 1 {
+		sprite_index = spr_fire_starter_v2;
+	}
 	if currentphase = 2 {
-		sprite_index = spr_fire_starter_v2_phase_2;	
+		scr_Boss_Phase_Transition_Animation(2, spr_fire_starter_v2_phase_2_into, spr_fire_starter_v2_phase_2, 5)
 	}
 }
 
