@@ -34,7 +34,7 @@ function scr_Default_Attack_Settings() {
 		bullet_bounce_Y = 0;
 		bullet_bounce_speed = 4;
 	    bullet_bounce_direction = 1;
-		bullet_bounce_gravity = 0.2;
+		bullet_bounce_gravity = 0;
 		
 		bullet_charged = false;
 		

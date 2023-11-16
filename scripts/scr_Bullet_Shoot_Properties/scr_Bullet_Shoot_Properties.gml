@@ -53,7 +53,11 @@ function scr_Bullet_Shoot_Properties() {
 	
 	bulletlobtime = other.bullet_lob_time;
 	bounce_speed = other.bullet_bounce_speed;
-	bounce_gravity = 2 * bounce_speed / other.bullet_lob_time;
+	if other.bullet_bounce_gravity = 0 {
+		bounce_gravity = 2 * bounce_speed / other.bullet_lob_time;
+	} else {
+		bounce_gravity = other.bullet_bounce_gravity;	
+	}
 	bullet_bounce_Y = other.bullet_bounce_Y;
 	
 	bulletimagespeed = other.bullet_image_speed;

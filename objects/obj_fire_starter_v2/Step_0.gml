@@ -6,6 +6,10 @@ scr_Boss_Step(2);
 // If boss is floating in air, can make it bob up and down:
 scr_Boss_Height_Bob(30, 1, 0);
 
+if boss_height < 65 {
+	boss_height = 65;
+}
+
 // Make boss shape wobble:
 scr_Boss_Wobble("Horizontal", 0.2, 1, 0);
 
@@ -151,13 +155,34 @@ if active_attack_delay <= 0 and pattern_cooldown <= 0 and pattern_count > 0 {
 	}
 	
 	if active_attack = 3 {
-		minion_count = 1;
+		
+		bullet_type = obj_Fire_Kiss_Spawning_Bullet;
+		bullet_sprite = spr_fire_kiss_bullet;
+		bullet_count = 1;
+		bullet_lob_time = 90;
+		bullet_lifespan = bullet_lob_time + 2;
+		bullet_bounce_speed = 0;
+		bullet_bounce_Y = 90
+		bullet_bounce_gravity = 0.025
+		bullet_direction = scr_Boss_Bullet_Direction_Formula(scr_Soul_Point(), 30)
+
+		boss_yoffset = 20
+		
+		if facing_direction = -1 {
+			boss_xoffset = 20
+		} else {
+			boss_xoffset = -20	
+		}
+		
+		scr_Boss_Shoot()
+		
+		/*minion_count = 1;
 		minion_type = obj_fire_kiss;
 		minion_health = bossmaxhealth / 4;
 		//minion_spawn_animation = spr_pocket_minion_spawn
 		//minion_yy = boss_height;
 
-		scr_Minion_Spawn();
+		scr_Minion_Spawn(); */
 	}
 	
 	if active_attack = 4 {

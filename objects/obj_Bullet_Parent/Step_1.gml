@@ -2,7 +2,6 @@
 if bulletfade = 0 {
 	exit;
 }
-
 	
 if alarm[0] <= 15 {
 	bulletpower = 0;
