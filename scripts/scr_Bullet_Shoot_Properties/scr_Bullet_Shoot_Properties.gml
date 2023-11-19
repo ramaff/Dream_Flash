@@ -70,6 +70,8 @@ function scr_Bullet_Shoot_Properties() {
 	bulletstuntime = other.bullet_stun_time;
 	bulletsleep = other.bullet_sleep;
 	bulletsleeptime = other.bullet_sleep_time;
+	
+	champ = other.bullet_champ;
 			
 	if other.bullet_direction_angle = 1 {
 		image_angle = direction;	

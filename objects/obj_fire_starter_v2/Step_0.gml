@@ -73,20 +73,24 @@ if active_attack_delay <= 0 and active_attack_cooldown <= 0 and active_attack_du
 
 scr_Default_Attack_Settings();
 
-bullet_part = 1;
-bullet_part_sprite = spr_Soul_Big_Bit;
-bullet_part_area = 30;
-bullet_part_life = 15;
-//bullet_part_color1 = make_color_rgb(255,100,50);
-bullet_part_color1 = make_color_rgb(255,131,0);
-//bullet_part_color2 = make_color_rgb(255,150,50);
-bullet_part_color2 = make_color_rgb(255,131,0);
-bullet_part_frequency = 4;
 
 // If its time to attack, attack
 if active_attack_delay <= 0 and pattern_cooldown <= 0 and pattern_count > 0 {
 	
 	bullet_sprite = spr_Glowy_Orange_Shot;
+	bullet_part = 1;
+	bullet_part_sprite = spr_Soul_Big_Bit;
+	bullet_part_area = 30;
+	bullet_part_life = 15;
+	bullet_part_color1 = make_color_rgb(255,131,0);
+	bullet_part_color2 = make_color_rgb(255,131,0);
+	bullet_part_frequency = 4;
+	
+	if champ = 1 {
+		bullet_sprite = spr_Glowy_Dreamy_Shot;
+		bullet_part_color1 = make_color_rgb(96,75,255);
+		bullet_part_color2 = make_color_rgb(96,75,255);
+	}
    
     if active_attack = 1 {
 		scr_Boss_Stretch("Vertical", 1);
@@ -96,12 +100,22 @@ if active_attack_delay <= 0 and pattern_cooldown <= 0 and pattern_count > 0 {
 		
 		if pattern_count = pattern_count_max {
 			bullet_count = 16;
+			
+			if champ = 1 {
+				bullet_count = 30;
+				bullet_speed = bossbulletspeed * 0.5;
+				bullet_lifespan = 300;
+			}
 			bullet_spread = 360 / bullet_count;
 			
 			scr_Boss_Shoot();
 		} else {
 			bullet_spread = 20;
 			bullet_count = 5;
+			if champ = 1 {
+				bullet_count = 7;
+			}
+			
 			boss_xoffset = -50;
 			
 			bullet_speed = bossbulletspeed * 2;
@@ -126,6 +140,15 @@ if active_attack_delay <= 0 and pattern_cooldown <= 0 and pattern_count > 0 {
 		speed = dash_speed;
         direction = dash_direction;
 		
+		if champ = 1 and pattern_count = pattern_count_max {
+			bullet_count = 8;
+			bullet_speed = bossbulletspeed * 1.33;
+			bullet_spread = 360 / bullet_count;
+			
+			scr_Boss_Shoot();	
+			bullet_count = 1;
+		}
+		
 		if pattern_count mod 10 = 0 {
 			boss_xoffset = -30 + random(60);
 			boss_yoffset = -30 + random(60);
@@ -149,6 +172,7 @@ if active_attack_delay <= 0 and pattern_cooldown <= 0 and pattern_count > 0 {
 			image_index = 5;
 		
 			scr_Boss_Dash_Setup_v2(scr_Soul_Point(), 4.5 * bossmovespeed, 7.5 * bossmovespeed);
+			pattern_count += 1;
 			
 			pattern_repetition--;
 		}
@@ -173,6 +197,8 @@ if active_attack_delay <= 0 and pattern_cooldown <= 0 and pattern_count > 0 {
 		} else {
 			boss_xoffset = -20	
 		}
+		
+		bullet_champ = champ
 		
 		scr_Boss_Shoot()
 		

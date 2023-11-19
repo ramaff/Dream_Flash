@@ -1040,6 +1040,7 @@
     {"id":{"name":"obj_pocket_v2","path":"objects/obj_pocket_v2/obj_pocket_v2.yy",},},
     {"id":{"name":"spr_Extrovert_Item","path":"sprites/spr_Extrovert_Item/spr_Extrovert_Item.yy",},},
     {"id":{"name":"spr_Power_Jackhamster","path":"sprites/spr_Power_Jackhamster/spr_Power_Jackhamster.yy",},},
+    {"id":{"name":"spr_fire_starter_v2_palette","path":"sprites/spr_fire_starter_v2_palette/spr_fire_starter_v2_palette.yy",},},
     {"id":{"name":"spr_Invis_Collector","path":"sprites/spr_Invis_Collector/spr_Invis_Collector.yy",},},
     {"id":{"name":"spr_Power_Hamster","path":"sprites/spr_Power_Hamster/spr_Power_Hamster.yy",},},
     {"id":{"name":"obj_Soul_Trail","path":"objects/obj_Soul_Trail/obj_Soul_Trail.yy",},},

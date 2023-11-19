@@ -65,6 +65,10 @@ if active_attack_delay <= 0 and pattern_cooldown <= 0 and pattern_count > 0 {
 				bullet_speed = 0;
 				bullet_lifespan = 9999;
 				bullet_type = obj_Lingering_Fire_Trail_Bullet;
+				
+				if champ = 1 {
+					bullet_sprite = spr_Glowy_Cyan_Shot;	
+				}
 		
 				scr_Boss_Shoot();
 			}
@@ -77,6 +81,33 @@ if active_attack_delay <= 0 and pattern_cooldown <= 0 and pattern_count > 0 {
         direction = dash_direction;
 		
 		scr_Jump_Movement_v2(3);	
+		
+		if pattern_count = 1 {
+			
+			scr_Boss_Stretch("Horizontal", 0.8);
+			
+			bullet_sprite = spr_Glowy_Orange_Shot;
+			bullet_part = 1;
+			bullet_part_sprite = spr_Soul_Big_Bit;
+			bullet_part_area = 30;
+			bullet_part_life = 15;
+			bullet_part_color1 = make_color_rgb(255,131,0);
+			bullet_part_color2 = make_color_rgb(255,131,0);
+			bullet_part_frequency = 4;
+			bullet_speed = bossbulletspeed * 0.5;
+			
+			if champ = 1 {
+				bullet_sprite = spr_Glowy_Dreamy_Shot;
+				bullet_part_color1 = make_color_rgb(96,75,255);
+				bullet_part_color2 = make_color_rgb(96,75,255);
+				bullet_type = obj_Accel_Bullet;
+				bullet_spread = 90
+				bullet_direction = 45;
+				bullet_count = 4;
+			
+				scr_Boss_Shoot();
+			}
+		}
 		
 	}
 	
@@ -96,7 +127,7 @@ if active_attack_duration <= 0 {
 /// Boss Sprite Code
 
 // Go back to normal default size
-scr_Boss_Size_Lerp(0.15);
+scr_Boss_Size_Lerp_Dir(0.15);
 
 // Handles boss attack sprite animation
 if active_attack != 0 {

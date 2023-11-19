@@ -42,6 +42,7 @@
     {"name":"obj_Marble_Bullet","order":4,"path":"objects/obj_Marble_Bullet/obj_Marble_Bullet.yy",},
     {"name":"obj_Tar_Pool","order":4,"path":"objects/obj_Tar_Pool/obj_Tar_Pool.yy",},
     {"name":"obj_pocket_v2","order":6,"path":"objects/obj_pocket_v2/obj_pocket_v2.yy",},
+    {"name":"spr_fire_starter_v2_palette","order":11,"path":"sprites/spr_fire_starter_v2_palette/spr_fire_starter_v2_palette.yy",},
     {"name":"obj_Jello_Minion","order":17,"path":"objects/obj_Jello_Minion/obj_Jello_Minion.yy",},
     {"name":"spr_Crazy_Eye_Phase_2_Fall","order":1,"path":"sprites/spr_Crazy_Eye_Phase_2_Fall/spr_Crazy_Eye_Phase_2_Fall.yy",},
     {"name":"obj_fire_starter_v2","order":9,"path":"objects/obj_fire_starter_v2/obj_fire_starter_v2.yy",},

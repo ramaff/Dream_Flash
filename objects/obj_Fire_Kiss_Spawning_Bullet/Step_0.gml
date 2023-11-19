@@ -7,3 +7,7 @@ scr_Bullet_Lobbing()
 
 image_xscale = sqrt((image_xscale * image_xscale) + 0.005)
 image_yscale = image_xscale;
+
+if hspeed > 0 {
+	image_xscale = -1 * abs(image_xscale);	
+}

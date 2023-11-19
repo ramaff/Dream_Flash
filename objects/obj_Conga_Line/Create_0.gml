@@ -24,22 +24,26 @@ if boost = 2 {
 
 if instance_number(obj_Conga_Line) <= total_num {
 	var ct = id;
-	var opdir = scr_Soul_Point() + 180;
+	var line_angle = scr_Soul_Point() + 180;
+	line_angle = round(line_angle / 90) * 90
 	
-	var xx = 0;
-	var yy = 0;
-	//var xxx = [-50, -50, 0, 50, 50, 50, 0, -50, -100, -100, -100, -100];
-	//var yyy = [0, -50, -50, -50, 0, 50, 50, 50, 50, 0, -50, -100];
-	var distt = 0;
-	var angg = 0;
+	var xx = x;
+	var yy = y;
 
 	for(var i = 0; i < 12; i++) {
-		distt = 120 + (90 * floor(i / 4))
-		angg = -45 + ((i mod 4) * 30)
-		xx = lengthdir_x(distt, opdir + angg) + x;
-		yy = lengthdir_y(distt, opdir + angg) + y;
-		//xx = scr_Round_To_Nearest(xx, 50)
-		//yy = scr_Round_To_Nearest(yy, 50)
+		xx += lengthdir_x(80, line_angle);
+		yy += lengthdir_y(80, line_angle);
+		
+		if scr_Chance(4) {
+			line_angle += 90 * (irandom(2) - 1)	
+		}
+		if scr_Soul_Distance(xx, yy) < 200 {
+			line_angle = scr_Soul_Point() + 180;
+		}
+		if scr_Soul_Distance(xx, yy) > 500 {
+			line_angle = scr_Soul_Point();
+		}
+		line_angle = round(line_angle / 90) * 90
 		with instance_create(xx,yy,obj_Conga_Line) {
 			followtarget = ct;
 		

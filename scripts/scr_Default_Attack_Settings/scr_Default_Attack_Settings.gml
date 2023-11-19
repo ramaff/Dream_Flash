@@ -17,6 +17,8 @@ function scr_Default_Attack_Settings() {
 	    bullet_image_speed = 1;
 		bullet_direction_angle = 1;
 		bullet_depth = 0;
+		
+		bullet_champ = 0;
 	
 		bullet_part = 0;
 		bullet_part_sprite = spr_Essence_Trail_Bit;

@@ -19,8 +19,6 @@
     minion_maxhealth = minion_health;
 	
 	scr_Minion_Shot_Stats();
-	
-	champ = 0;
     
     scr_Minion_Spawn();
 

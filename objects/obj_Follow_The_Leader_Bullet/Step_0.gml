@@ -6,4 +6,8 @@ if instance_exists(target) {
 		direction = point_direction(x, y, target.x, target.y);
 		speed = target.speed;
 	}
+} else {
+	if alarm[0] > 15 {
+		alarm[] = 15;	
+	}
 }
