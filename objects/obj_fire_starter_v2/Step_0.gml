@@ -116,18 +116,40 @@ if active_attack_delay <= 0 and pattern_cooldown <= 0 and pattern_count > 0 {
 				bullet_count = 7;
 			}
 			
-			boss_xoffset = -50;
-			
-			bullet_speed = bossbulletspeed * 2;
-			
-			bullet_direction -= 40;
+			if champ != 2 {
+				boss_xoffset = -50;
+
+				bullet_speed = bossbulletspeed * 2;
+				bullet_direction -= 40;
 		
-			scr_Boss_Shoot();
+				scr_Boss_Shoot();
 			
-			boss_xoffset = 50;
-			bullet_direction += 80;
+				boss_xoffset = 50;
+				bullet_direction += 80;
 		
-			scr_Boss_Shoot();
+				scr_Boss_Shoot();
+			} else {
+				bullet_type = obj_Explosive_Lob_Bullet;
+				bullet_sprite = spr_Glowy_Explosive_Shot;
+				bullet_count = 1;
+				repeat(3) {
+					bullet_direction = scr_Boss_Bullet_Direction_Formula(scr_Soul_Point(), 60)
+					bullet_speed = bossbulletspeed * (1.75 + random(1.25));
+					bullet_bounce_speed = 3 + random(3);
+					bullet_lob_time = 60 + random(30);
+					bullet_lifespan = bullet_lob_time + 2;
+				
+					boss_xoffset = -50;
+					bullet_direction -= 40;
+			
+					scr_Boss_Shoot();
+				
+					boss_xoffset = 50;
+					bullet_direction += 80;
+					
+					scr_Boss_Shoot();
+				}	
+			}
 		}
 	
 		// If you gotta change the pattern aim direction
@@ -140,13 +162,29 @@ if active_attack_delay <= 0 and pattern_cooldown <= 0 and pattern_count > 0 {
 		speed = dash_speed;
         direction = dash_direction;
 		
-		if champ = 1 and pattern_count = pattern_count_max {
-			bullet_count = 8;
-			bullet_speed = bossbulletspeed * 1.33;
-			bullet_spread = 360 / bullet_count;
+		if pattern_count = pattern_count_max {
+			if champ = 1 {
+				bullet_count = 8;
+				bullet_speed = bossbulletspeed * 1.33;
+				bullet_spread = 360 / bullet_count;
 			
-			scr_Boss_Shoot();	
-			bullet_count = 1;
+				scr_Boss_Shoot();	
+				bullet_count = 1;
+			}
+			if champ = 2 {
+				bullet_count = 1;
+				bullet_type = obj_Explosive_Lob_Bullet;
+				bullet_sprite = spr_Glowy_Explosive_Shot;
+				repeat(3) {
+					bullet_direction = scr_Boss_Bullet_Direction_Formula(scr_Soul_Point(), 60)
+					bullet_speed = bossbulletspeed * (1 + random(2));
+					bullet_bounce_speed = 3 + random(3);
+					bullet_lob_time = 60 + random(30);
+					bullet_lifespan = bullet_lob_time + 2;
+					
+					scr_Boss_Shoot()
+				}
+			}
 		}
 		
 		if pattern_count mod 10 = 0 {
@@ -224,14 +262,28 @@ if active_attack_delay <= 0 and pattern_cooldown <= 0 and pattern_count > 0 {
 		bullet_part_life = 30;
 		bullet_part_frequency = 5;
 		
-		repeat(8) {
-			bullet_direction = scr_Boss_Bullet_Direction_Formula(scr_Soul_Point(), 90)
-			bullet_speed = bossbulletspeed * (1 + random(2));
-			bullet_bounce_speed = 3 + random(3);
-			bullet_lob_time = 60 + random(30);
-			bullet_lifespan = bullet_lob_time + 2;
+		if champ = 1 {
+			bullet_type = obj_Accel_Bullet
+			bullet_direction = scr_Boss_Bullet_Direction_Formula(scr_Soul_Point(), 30)
+			bullet_count = 9
+			bullet_speed = bossbulletspeed * (1.35 + irandom(1));
+			bullet_spread = 20;
 			
-			scr_Boss_Shoot();
+			scr_Boss_Shoot()
+		} else {
+			if champ = 2 {
+				bullet_type = obj_Explosive_Lob_Bullet;
+				bullet_sprite = spr_Glowy_Explosive_Shot;
+			}
+			repeat(8) {
+				bullet_direction = scr_Boss_Bullet_Direction_Formula(scr_Soul_Point(), 90)
+				bullet_speed = bossbulletspeed * (1 + random(2));
+				bullet_bounce_speed = 3 + random(3);
+				bullet_lob_time = 60 + random(30);
+				bullet_lifespan = bullet_lob_time + 2;
+			
+				scr_Boss_Shoot();
+			}
 		}
 	
 		// If you gotta change the pattern aim direction

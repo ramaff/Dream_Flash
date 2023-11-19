@@ -65,6 +65,7 @@ if active_attack_delay <= 0 and pattern_cooldown <= 0 and pattern_count > 0 {
 				bullet_speed = 0;
 				bullet_lifespan = 9999;
 				bullet_type = obj_Lingering_Fire_Trail_Bullet;
+				bullet_champ = champ;
 				
 				if champ = 1 {
 					bullet_sprite = spr_Glowy_Cyan_Shot;	

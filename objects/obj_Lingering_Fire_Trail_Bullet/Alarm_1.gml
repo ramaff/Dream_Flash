@@ -3,7 +3,13 @@
 
 var tar = id;
 
-repeat(3) 
+var _count = 3;
+
+if champ = 2 {
+	_count = 2;	
+}
+
+repeat(_count) 
 {
 	with instance_create(x,y,obj_Lingering_Fire_Trail_Follow_Bullet) {
 		scr_Bullet_Replicate_Properties();

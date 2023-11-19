@@ -8,6 +8,6 @@ if instance_exists(target) {
 	}
 } else {
 	if alarm[0] > 15 {
-		alarm[] = 15;	
+		alarm[0] = 15;	
 	}
 }
