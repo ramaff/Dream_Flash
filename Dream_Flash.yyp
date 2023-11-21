@@ -229,6 +229,7 @@
     {"resourceType":"GMFolder","resourceVersion":"1.0","name":"Dormant Shots","folderPath":"folders/Sprites/Boss Bullet Sprites/Dormant Shots.yy",},
     {"resourceType":"GMFolder","resourceVersion":"1.0","name":"Echo","folderPath":"folders/Sprites/Boss Bullet Sprites/Echo.yy",},
     {"resourceType":"GMFolder","resourceVersion":"1.0","name":"Effects","folderPath":"folders/Sprites/Boss Bullet Sprites/Effects.yy",},
+    {"resourceType":"GMFolder","resourceVersion":"1.0","name":"Explosive","folderPath":"folders/Sprites/Boss Bullet Sprites/Explosive.yy",},
     {"resourceType":"GMFolder","resourceVersion":"1.0","name":"Faces","folderPath":"folders/Sprites/Boss Bullet Sprites/Faces.yy",},
     {"resourceType":"GMFolder","resourceVersion":"1.0","name":"Glow","folderPath":"folders/Sprites/Boss Bullet Sprites/Glow.yy",},
     {"resourceType":"GMFolder","resourceVersion":"1.0","name":"Laser Beams","folderPath":"folders/Sprites/Boss Bullet Sprites/Laser Beams.yy",},
@@ -451,7 +452,6 @@
     {"resourceType":"GMFolder","resourceVersion":"1.0","name":"Misc BGs","folderPath":"folders/Tile Sets/Misc BGs.yy",},
     {"resourceType":"GMFolder","resourceVersion":"1.0","name":"Nightmare BGs","folderPath":"folders/Tile Sets/Nightmare BGs.yy",},
     {"resourceType":"GMFolder","resourceVersion":"1.0","name":"Timelines","folderPath":"folders/Timelines.yy",},
-    {"resourceType":"GMFolder","resourceVersion":"1.0","name":"Explosive","folderPath":"folders/Sprites/Boss Bullet Sprites/Explosive.yy",},
   ],
   "IncludedFiles": [
     {"resourceType":"GMIncludedFile","resourceVersion":"1.0","name":"df_boss_stats.json","CopyToMask":-1,"filePath":"datafiles",},

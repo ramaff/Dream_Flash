@@ -42,6 +42,9 @@ if active_attack_delay <= 0 and active_attack_cooldown <= 0 and active_attack_du
     if active_attack = 1 {
 		// Setup how many attacks per boss move, delay, etc
 		scr_Boss_Attack_Time_Setup_v2(2, 60, 60, 120, 30, -10);
+		if champ = 3 {
+			scr_Boss_Attack_Time_Setup_v2(3, 60, 60, 120, 30, -10);
+		}
     }
 	// Sneeze Fire
 	if active_attack = 2 {
@@ -97,6 +100,11 @@ if active_attack_delay <= 0 and pattern_cooldown <= 0 and pattern_count > 0 {
 		
 		bullet_direction = scr_Boss_Bullet_Direction_Formula(scr_Soul_Point(), 30)
 		bullet_type = obj_Accel_Bullet;
+		if champ = 3 {
+			bullet_type = obj_Zig_Zag_Bullet;
+			bullet_sprite = spr_Lightning_Bullet;
+			bullet_part = 0
+		}
 		
 		if pattern_count = pattern_count_max {
 			bullet_count = 16;
@@ -107,6 +115,10 @@ if active_attack_delay <= 0 and pattern_cooldown <= 0 and pattern_count > 0 {
 				bullet_lifespan = 300;
 			}
 			bullet_spread = 360 / bullet_count;
+			
+			if champ = 3 {
+				bullet_speed = bossbulletspeed * 1.9;
+			}
 			
 			scr_Boss_Shoot();
 		} else {
@@ -121,6 +133,10 @@ if active_attack_delay <= 0 and pattern_cooldown <= 0 and pattern_count > 0 {
 
 				bullet_speed = bossbulletspeed * 2;
 				bullet_direction -= 40;
+				
+				if champ = 3 {
+					bullet_speed = bossbulletspeed * 2.75;	
+				}
 		
 				scr_Boss_Shoot();
 			
@@ -163,9 +179,17 @@ if active_attack_delay <= 0 and pattern_cooldown <= 0 and pattern_count > 0 {
         direction = dash_direction;
 		
 		if pattern_count = pattern_count_max {
-			if champ = 1 {
+			if champ = 1 || champ = 3 {
 				bullet_count = 8;
 				bullet_speed = bossbulletspeed * 1.33;
+				
+				if champ = 3 {
+					bullet_count = 12;
+					bullet_speed = bossbulletspeed * 2;
+					bullet_type = obj_Zig_Zag_Bullet;
+					bullet_sprite = spr_Lightning_Bullet;
+					bullet_part = 0
+				}
 				bullet_spread = 360 / bullet_count;
 			
 				scr_Boss_Shoot();	
@@ -187,7 +211,7 @@ if active_attack_delay <= 0 and pattern_cooldown <= 0 and pattern_count > 0 {
 			}
 		}
 		
-		if pattern_count mod 10 = 0 {
+		if pattern_count mod 10 = 0 and champ != 3 {
 			boss_xoffset = -30 + random(60);
 			boss_yoffset = -30 + random(60);
 			
@@ -270,6 +294,18 @@ if active_attack_delay <= 0 and pattern_cooldown <= 0 and pattern_count > 0 {
 			bullet_spread = 20;
 			
 			scr_Boss_Shoot()
+		} else if champ = 3 {
+			bullet_speed = bossbulletspeed * 2;
+			bullet_type = obj_Zig_Zag_Bullet;
+			bullet_sprite = spr_Lightning_Bullet;
+			bullet_part = 0
+					
+			bullet_direction = scr_Boss_Bullet_Direction_Formula(scr_Soul_Point(), 30)
+			bullet_count = 9;
+			bullet_speed = bossbulletspeed * 2.3;
+			bullet_spread = 30;
+			
+			scr_Boss_Shoot()
 		} else {
 			if champ = 2 {
 				bullet_type = obj_Explosive_Lob_Bullet;
@@ -315,7 +351,11 @@ if active_attack = 2 {
 // Handles boss attack sprite animation
 if active_attack = 1 {
 	var _hold_frame = 3;
-	scr_Boss_Attack_Sprite_v2(spr_fire_starter_v2_flame_dance, _hold_frame, 4, 13, 20);
+	if champ = 3 and pattern_count <= pattern_count_max - 1 {
+		scr_Boss_Attack_Sprite_v2(spr_fire_starter_v2_flame_dance, _hold_frame, 11, 11, 20);
+	} else {
+		scr_Boss_Attack_Sprite_v2(spr_fire_starter_v2_flame_dance, _hold_frame, 4, 13, 20);
+	}
 	if image_index = _hold_frame {
 		scr_Boss_Wobble("Horizontal", 2, 0.4, 0)	
 	}

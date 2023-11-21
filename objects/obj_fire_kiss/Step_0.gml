@@ -20,12 +20,21 @@ if active_attack_delay <= 0 and active_attack_cooldown <= 0 and active_attack_du
 	
 	// Hop leap attack setup example
 	if active_attack = 1 {
-		// 
-		scr_Boss_Attack_Time_Setup_v2(70, 30, 1, 30, 30, -10);
+
+		if champ = 3 {
+			scr_Boss_Attack_Time_Setup_v2(40, 20, 1, 10, 0, -10);
 		
-		scr_Boss_Jump_Setup_v2(0, 7 * bossmovespeed, x, y);
+			scr_Boss_Jump_Setup_v2(0, 10 * bossmovespeed, x, y);
 		
-		dash_direction = scr_Soul_Point() - 45 + random(90);
+			dash_direction = scr_Soul_Point() - 45 + (90 * (electric_hop_count mod 2))
+			electric_hop_count++;
+		} else {
+			scr_Boss_Attack_Time_Setup_v2(70, 30, 1, 30, 30, -10);
+		
+			scr_Boss_Jump_Setup_v2(0, 7 * bossmovespeed, x, y);
+		
+			dash_direction = scr_Soul_Point() - 45 + random(90);
+		}
     }
 }
 
@@ -67,7 +76,7 @@ if active_attack_delay <= 0 and pattern_cooldown <= 0 and pattern_count > 0 {
 				bullet_type = obj_Lingering_Fire_Trail_Bullet;
 				bullet_champ = champ;
 				
-				if champ = 1 {
+				if champ = 1 || champ = 3 {
 					bullet_sprite = spr_Glowy_Cyan_Shot;	
 				}
 		
