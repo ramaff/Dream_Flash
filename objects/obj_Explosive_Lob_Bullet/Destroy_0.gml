@@ -7,7 +7,7 @@ with instance_create(x,y,obj_Bullet_Explosion) {
     sprite_index = bulletsprite;
     bulletspeed = 0;
     bulletpower = global.stagedamage;
-    bulletlife = 24;
+    bulletlife = 21;
     alarm[0] = bulletlife;
     bulletsize = 0.8;
     image_xscale = bulletsize;
