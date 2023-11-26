@@ -325,7 +325,7 @@ function scr_Hard_Coded_Weapon_Stats(cWP){
 	     //   scr_Protective_Barrier_Use();
 	        break;
 	    case 603:
-			spawnProjectile = !umbrellaActive;
+			//spawnProjectile = !umbrellaActive;
 	        break;
 	    case 604:
 	       // scr_Bounce_Forcefield_Use();

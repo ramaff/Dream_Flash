@@ -322,7 +322,8 @@ function scr_Boss_Choose(roomNum, exclude, difficultyAdd = 0) {
 
 	if bossform = 18.1 // Fire Starter 
 	{
-	    bosstype = obj_fire_starter_v2;
+	    //bosstype = obj_fire_starter_v2;
+		bosstype = obj_Fire_Starter;
 	    difficulty = 3;
 	    global.champ = 0 + irandom(3);
 		//global.champ = 3;

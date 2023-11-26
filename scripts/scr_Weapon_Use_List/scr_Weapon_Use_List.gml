@@ -10,12 +10,12 @@ function scr_Weapon_Use_List(cWP = global.currentweapon) {
 	
 	//cWP = global.currentweapon;
 	
-	umbrellaActive = false;
+	var _umbrella_active = false;
 	
 	if cWP = 603 and instance_exists(obj_Umbrella_Shot) {
 		with (obj_Umbrella_Shot) {
 			if shotfolloworigin = other.id {
-				other.umbrellaActive = true;
+				_umbrella_active = true;
 			}
 		}
 	}
@@ -27,7 +27,7 @@ function scr_Weapon_Use_List(cWP = global.currentweapon) {
 	weaponDelay = current_weapon_stats.Delay;
 	//show_debug_message("Weapon Cost: " + string(weaponCost) + ", Weapon Delay: " + string(weaponDelay))
 	
-	if cWP = 603 and umbrellaActive {
+	if cWP = 603 and _umbrella_active {
 		weaponCost = weaponCost / 10;
 	}
 	
@@ -79,6 +79,10 @@ function scr_Weapon_Use_List(cWP = global.currentweapon) {
 		barrage = false;
 		minion = false;
 		spawnProjectile = true;
+		
+		if cWP = 603 {
+			spawnProjectile = !_umbrella_active;	
+		}
 		
 		scr_Hard_Coded_Weapon_Stats(cWP);
 		
@@ -162,8 +166,6 @@ function scr_Weapon_Use_List(cWP = global.currentweapon) {
 			
 			var i = 0
 			for(i = 0; i < array_length(Shot_Extra); i++) {
-			
-				//show_debug_message(string(Shot_Extra))
 			
 				current_weapon_stats = Shot_Extra[i]
 			
