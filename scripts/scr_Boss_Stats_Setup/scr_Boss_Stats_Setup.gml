@@ -49,6 +49,10 @@ function scr_Boss_Stats_Setup(_version=1) {
 	bossbulletspeed = 3;
 	patterndir = 0;
 	bosspower = 6;
+	
+	death_sprite = noone;
+	
+	deadknockdirection = 0;
     
 	bossknockbackforce = 10;
 	bosscontactdamage = 5;

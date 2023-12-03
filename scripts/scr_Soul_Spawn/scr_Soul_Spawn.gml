@@ -20,19 +20,15 @@ function scr_Soul_Spawn() {
 
 	    with instance_create(x,y,asset_get_index(_stats.Minion_Type)) {
 			followtarget = noone;
-			//followtarget = obj_Soul_Parent//ct;
-			//ct = id;
 			
 	        smovementspeed = _stats.Minion_Speed;
 	        shealth = _stats.Minion_Health;
 	        smaxhealth = shealth;
-	        spower = _stats.Minion_Power
+	        spower = (_stats.Minion_Power + other.spoweradd) * ((10 + other.spowerfactor + other.sattackfactorbuffamount) / 10) * other.spower / 10 * scr_Class_Stat_Damage_Multiplier();
 	        //direction = point_direction(x,y,mouse_x,mouse_y);
 	        Shot_Power = _stats.Shot_Power;
 	        Minion_Lifespan = _stats.Minion_Lifespan;
 	        alarm[1] = Minion_Lifespan;
-	        //direction += other.dir / other.saccuracy;
-	        //speed = smovementspeed;
 	    }
 
 	}

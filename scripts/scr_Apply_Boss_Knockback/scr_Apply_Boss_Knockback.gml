@@ -8,5 +8,6 @@ function scr_Apply_Boss_Knockback(_target = other.id, _knockback = shotknockback
 		if _target.bossknockback > 200 {
 			_target.bossknockback = 200;	
 		}
+		_target.deadknockdirection = _direction
 	}
 }

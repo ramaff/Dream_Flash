@@ -22,6 +22,17 @@ function scr_Boss_Morph_In(version = 1){
 			alarm[0] = 120;
 			
 			bossd = other.id;
+			
+			fade_out = true;
+			alph = 1;
+			
+			backg = spr_Mental_Background;
+			if global.currentchapter = 2 {
+				backg = spr_Mental_Background_Feel;
+			}
+			if global.currentchapter = 3 {
+				backg = spr_Mental_Background_Dream;
+			}
 		}
 		if version = 1 {
 			var ac = 0;

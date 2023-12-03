@@ -6,10 +6,18 @@
 existt++;
 
 if existt >= 30 {
-	alph -= 1 / 30;
+	if fade_out = true {
+		alph -= 1 / 30;
+	}
+}
+if fade_out = false {
+	alph += 1/20;	
 }
 if alph < 0 {
 	alph = 0;	
+}
+if alph > 1 {
+	alph = 1;
 }
 
 if (!surface_exists(surf)) {
@@ -46,13 +54,6 @@ draw_sprite_ext(sprite_index, image_index, sprite_xoffset, sprite_yoffset, image
 
 gpu_set_colorwriteenable(1, 1, 1, 0);
 
-var backg = spr_Mental_Background;
-if global.currentchapter = 2 {
-	backg = spr_Mental_Background_Feel;
-}
-if global.currentchapter = 3 {
-	backg = spr_Mental_Background_Dream;
-}
 draw_sprite_ext(backg, 0, 0, 0, 1, 1, 0, c_white, 1);
 
 gpu_set_colorwriteenable(1, 1, 1, 1);
@@ -61,20 +62,3 @@ surface_reset_target();
 
 draw_surface_ext(surf, x - (sprite_xoffset), y - (sprite_yoffset),1,1,image_angle,c_white,alph);
 
-//draw_text(x + 60,y, string(surface_get_width(surf)));
-
-//draw_text(x + 60,y + 30, string(surface_get_height(surf)));
-
-/*
-
-draw_text(x,y, string(sprite_get_yoffset(bossSprite) - (sprite_height / 2)));
-
-draw_text(x,y + 30, string(sprite_get_height(bossSprite)));
-
-draw_text(x + 60,y, string(xxadd));
-
-draw_text(x + 60,y + 30, string(yyadd));
-
-//draw_text(x,y, string(sprite_index));
-
-//draw_text(x,y + 30, string(bossSprite));

@@ -1,4 +1,4 @@
-function scr_Soul_Currency_Add() {
+function scr_Soul_Currency_Add(_return_recalls = false) {
 	var giveFac = 1;
 	if global.boost = 2 {
 	    giveFac = giveFac * 0.5;
@@ -8,48 +8,38 @@ function scr_Soul_Currency_Add() {
 	}
 	
 	var recalls = ((global.soulhope + global.soulhopeTemp) / 20) + 1 + global.extrarecalls;
+	var recall_obj = obj_Soul_Flash
 
 	if global.currentchapter = 1 {
-	    repeat(recalls + (difficulty * 2 * giveFac)) {
-	        with instance_create(x,y,obj_Soul_Flash) {
-	            direction = random(360);
-	            speed = 1 + random(4);
-	            friction = 0.1
-	            alarm[0] = 45 + random(10);
-	        }
-	    }
+	    recalls += difficulty * 2 * giveFac
+	    recall_obj = obj_Soul_Flash
 	}
 
 	if global.currentchapter = 2 {
-	    repeat(recalls + (difficulty * 1 * giveFac)) {
-	        with instance_create(x,y,obj_Soul_Feel) {
-	            direction = random(360);
-	            speed = 1 + random(4);
-	            friction = 0.1
-	            alarm[0] = 45 + random(10);
-	        }
-	    }
+	    recalls += difficulty * 1 * giveFac;
+	    recall_obj = obj_Soul_Feel;
 	}
 
 	if global.currentchapter = 3 {
-	    repeat(recalls + (difficulty * 0.5 * giveFac)) {
-	        with instance_create(x,y,obj_Soul_Dream) {
-	            direction = random(360);
-	            speed = 1 + random(4);
-	            friction = 0.1
-	            alarm[0] = 45 + random(10);
-	        }
-	    }
+		recalls += difficulty * 0.5 * giveFac
+	    recall_obj = obj_Soul_Dream;
 	}
 
 	if global.currentchapter = 4 {
-	    repeat(recalls + (difficulty * 0.35 * giveFac)) {
-	        with instance_create(x,y,obj_Soul_Nightmare) {
-	            direction = random(360);
-	            speed = 1 + random(4);
-	            friction = 0.1
-	            alarm[0] = 45 + random(10);
-	        }
+		recalls += difficulty * 0.35 * giveFac
+		recall_obj = obj_Soul_Nightmare;
+	}
+	
+	if _return_recalls == true {
+		return recalls;
+	}	
+	
+	repeat(recalls) {
+	    with instance_create(x,y,recall_obj) {
+	        direction = random(360);
+	        speed = 1 + random(4);
+	        friction = 0.1
+	        alarm[0] = 45 + random(10);
 	    }
 	}
 
