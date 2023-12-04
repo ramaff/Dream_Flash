@@ -40,6 +40,9 @@ function scr_Soul_Currency_Add(_return_recalls = false) {
 	        speed = 1 + random(4);
 	        friction = 0.1
 	        alarm[0] = 45 + random(10);
+			
+			image_xscale = 0.5;
+			image_yscale = 0.5;
 	    }
 	}
 

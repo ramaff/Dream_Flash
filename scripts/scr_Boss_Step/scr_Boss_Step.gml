@@ -30,17 +30,17 @@ function scr_Boss_Step(version = 1) {
 	}
 
 	if boost = 1 {
-	    var _val = irandom(30)
-	    if _val >= 27 {
+	    //var _val = irandom(30)
+	    if scr_Chance(20) {
 			
 			var color = make_color_rgb(255, 155, 0);		
 			var color2 = make_color_rgb(255, 50, 0);
 			scr_Particle_Burst(obj_Fire_Part, spr_Star_Part, color, color2, 1, 2 + random(4), random(360), 0, 120, 0.4 + random(0.2), 40 + random(35), false)
 			
 	    }
-		if _val >= 29 {
+		/*if _val >= 29 {
 			scr_Particle_Burst(obj_Friction_Part, spr_Soul_Big_Bit, c_black, c_black, 1, 4 + random(8), random(360), 0, 120, 0.4 + random(0.2), 20 + random(10), false)
-		}
+		} */
 	}
 	
 	if bossknockback != 0 and bossknockbacktime > 0 /*and inside = 1 */{
