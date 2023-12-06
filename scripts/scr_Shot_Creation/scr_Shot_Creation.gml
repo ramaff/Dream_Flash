@@ -16,7 +16,6 @@ function scr_Shot_Creation() {
 	scr_XB02();
 	scr_XA06();
 	scr_XA06();
-	//scr_OC03();
 	
 	
 	// Note

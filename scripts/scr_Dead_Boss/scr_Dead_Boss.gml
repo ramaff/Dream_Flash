@@ -4,6 +4,8 @@ function scr_Dead_Boss(_diff = difficulty){
 
 	with instance_create(x,y, obj_Dead_Boss) {
 		difficulty = _diff
+		boss_palette = other.boss_palette;
+		boss_palette_index = other.boss_palette_index;
 		image_xscale = other.bossSize;
 		image_yscale = other.bossSize;
 		sprite_index = other.sprite_index;

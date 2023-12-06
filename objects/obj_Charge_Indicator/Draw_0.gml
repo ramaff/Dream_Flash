@@ -29,7 +29,7 @@ if instance_exists(obj_Soul_Parent) {
 		}
 		
 		if global.OC[3] > 0 {
-			cMax = cMax * 2.5;
+			cMax = cMax * 3;
 		}
 	}
 

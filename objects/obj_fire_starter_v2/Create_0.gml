@@ -14,3 +14,5 @@ scr_Boss_Size_Setup(0.5);
 scr_Boss_Height_Setup(80);
 
 death_sprite = spr_fire_starter_v2_ko;
+boss_palette = spr_fire_starter_v2_palette;
+boss_palette_index = champ;

@@ -5,6 +5,9 @@ function scr_Boss_Stats_Setup(_version=1) {
 	facing_direction = 1;
 	boss_phase_transition = 1;
 	
+	boss_palette = noone;
+	boss_palette_index = 0;
+	
 	new_boss = true
 	
 	if _version = 1 {

@@ -11,13 +11,13 @@ function scr_OC03(cWP = global.currentweapon){
 	}
 	if global.OC[3] > 0 {
 		
-		weaponDelay = weaponDelay * 2.5;
-		weaponCost = weaponCost * 2.5;
+		weaponDelay = weaponDelay * 3;
+		weaponCost = weaponCost * 3;
 		
 		var fval = 0;
 		for(bi = 0; bi < 9; bi++) {
 			if Shot_Repetition[bi] <= 0 {
-				Shot_Repetition[bi] = global.OC[3] + 1;
+				Shot_Repetition[bi] = global.OC[3] + 2;
 				Shot_Repetition_Type[bi] = "Stubborn";
 				if Shot_Mouse = 0 {
 					Shot_Repetition_Direction[bi] = Shot_Direction;

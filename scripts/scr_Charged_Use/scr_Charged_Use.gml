@@ -34,8 +34,8 @@ function scr_Charged_Use() {
 			weaponDelay = current_weapon_stats.Delay;
 			
 			if global.OC[3] > 0 {
-				weaponDelay = weaponDelay * 2.5;
-				weaponCost = weaponCost * 2.5;	
+				weaponDelay = weaponDelay * 3;
+				weaponCost = weaponCost * 3;	
 			}
 			
 			scr_Setup_Charge_Stats()

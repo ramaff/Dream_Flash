@@ -24,10 +24,10 @@ function scr_Charged_Hold() {
 	weaponDelay = current_weapon_stats.Delay;
 	
 	if global.OC[3] > 0 {
-		weaponDelay = weaponDelay * 2.5;
-		weaponCost = weaponCost * 2.5;	
-		Charge_Essence = Charge_Essence * 2.5;
-		Charge_Total_Time = Charge_Total_Time * 2.5;
+		weaponDelay = weaponDelay * 3;
+		weaponCost = weaponCost * 3;	
+		Charge_Essence = Charge_Essence * 3;
+		Charge_Total_Time = Charge_Total_Time * 3;
 	}
 	
 	
