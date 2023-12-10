@@ -461,7 +461,7 @@
   "isEcma": false,
   "LibraryEmitters": [],
   "MetaData": {
-    "IDEVersion": "2023.8.2.108",
+    "IDEVersion": "2023.11.0.121",
   },
   "resources": [
     {"id":{"name":"spr_Masked_Bliss_Spirit_Attack","path":"sprites/spr_Masked_Bliss_Spirit_Attack/spr_Masked_Bliss_Spirit_Attack.yy",},},
