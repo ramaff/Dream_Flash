@@ -1,7 +1,7 @@
 {
   "resourceType": "GMSprite",
   "resourceVersion": "1.0",
-  "name": "spr_Spit_Balling_Art",
+  "name": "spr_Spitballing_Art",
   "bbox_bottom": 157,
   "bbox_left": 6,
   "bbox_right": 157,
@@ -25,14 +25,14 @@
   "nineSlice": null,
   "origin": 4,
   "parent": {
-    "name": "(V) Mindset Item Art",
-    "path": "folders/Sprites/Item Sprites/(V) Mindset Item Art.yy",
+    "name": "(D) Dexterity Item Art",
+    "path": "folders/Sprites/Item Sprites/(D) Dexterity Item Art.yy",
   },
   "preMultiplyAlpha": false,
   "sequence": {
     "resourceType": "GMSequence",
     "resourceVersion": "1.4",
-    "name": "spr_Spit_Balling_Art",
+    "name": "spr_Spitballing_Art",
     "autoRecord": true,
     "backdropHeight": 768,
     "backdropImageOpacity": 0.5,
@@ -54,7 +54,7 @@
     "timeUnits": 1,
     "tracks": [
       {"resourceType":"GMSpriteFramesTrack","resourceVersion":"1.0","name":"frames","builtinName":0,"events":[],"inheritsTrackColour":true,"interpolation":1,"isCreationTrack":false,"keyframes":{"resourceType":"KeyframeStore<SpriteFrameKeyframe>","resourceVersion":"1.0","Keyframes":[
-            {"resourceType":"Keyframe<SpriteFrameKeyframe>","resourceVersion":"1.0","Channels":{"0":{"resourceType":"SpriteFrameKeyframe","resourceVersion":"1.0","Id":{"name":"9c5fb0f4-4e7a-4be1-85ca-31c91f1516d1","path":"sprites/spr_Spit_Balling_Art/spr_Spit_Balling_Art.yy",},},},"Disabled":false,"id":"7f332669-ebc5-4eca-aeb8-7774f4e9c7cc","IsCreationKey":false,"Key":0.0,"Length":1.0,"Stretch":false,},
+            {"resourceType":"Keyframe<SpriteFrameKeyframe>","resourceVersion":"1.0","Channels":{"0":{"resourceType":"SpriteFrameKeyframe","resourceVersion":"1.0","Id":{"name":"9c5fb0f4-4e7a-4be1-85ca-31c91f1516d1","path":"sprites/spr_Spitballing_Art/spr_Spitballing_Art.yy",},},},"Disabled":false,"id":"7f332669-ebc5-4eca-aeb8-7774f4e9c7cc","IsCreationKey":false,"Key":0.0,"Length":1.0,"Stretch":false,},
           ],},"modifiers":[],"spriteId":null,"trackColour":0,"tracks":[],"traits":0,},
     ],
     "visibleRange": null,

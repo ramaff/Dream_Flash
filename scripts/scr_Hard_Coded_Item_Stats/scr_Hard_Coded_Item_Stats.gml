@@ -226,10 +226,10 @@ function scr_Hard_Coded_Item_Stats(itemVal, items_to_add = 1, reload = false) {
 	    //global.D[2]++;
 	}
 	if itemVal = "D03" {
-	    global.soulshotspeed += 4;
-	    obj_Soul_Parent.sshotspeed += 4;
-		global.souldelayconservationfactor += 0.1;
-	    obj_Soul_Parent.sdelayconservationfactor += 0.1;
+	    //global.soulshotspeed += 4;
+	    //obj_Soul_Parent.sshotspeed += 4;
+		//global.souldelayconservationfactor += 0.1;
+	    //obj_Soul_Parent.sdelayconservationfactor += 0.1;
 	    //global.D[3]++;
 	}
 	if itemVal = "D04" {

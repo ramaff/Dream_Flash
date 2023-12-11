@@ -5,7 +5,8 @@
 
 function scr_D06(){
 	if global.D[6] > 0 {
-		Shot_Speed_Power_Add += 0.2 * global.D[6];
-		Shot_Acceleration += 0.033 * global.D[6];
+		Shot_Speed_Power_Add += 0.02 * Shot_Power * global.D[6];
+		Shot_Acceleration += 0.05 + (Shot_Speed / 60);
+		Shot_Lifespan = Shot_Lifespan * 0.7;
 	}
 }

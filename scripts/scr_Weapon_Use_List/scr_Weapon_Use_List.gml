@@ -74,6 +74,8 @@ function scr_Weapon_Use_List(cWP = global.currentweapon) {
 			scr_Ascending_Soul_Essence_Beam(cWP);	
 		}
 		
+		scr_D03();
+		
 		scr_setup_weapon_stats(current_weapon_stats);
 		
 		barrage = false;
