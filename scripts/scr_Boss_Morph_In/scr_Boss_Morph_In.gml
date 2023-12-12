@@ -45,8 +45,10 @@ function scr_Boss_Morph_In(version = 1){
 		}
 		state = states.phasing;
 		
-		if object_get_name(id) = obj_Cursed_Clapper {
-			tickdown += 120;
+		if instance_exists(object_index) {
+			if object_get_name(object_index) = obj_Cursed_Clapper {
+				tickdown += 120;
+			}
 		}
 	}
 	

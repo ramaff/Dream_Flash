@@ -218,6 +218,8 @@ function scr_Hard_Coded_Item_Stats(itemVal, items_to_add = 1, reload = false) {
 	if itemVal = "D01" {
 	    global.soulmovementfactor += 3;
 	    obj_Soul_Parent.smovementfactor += 3;
+		global.soulshotspeed += 3;
+	    obj_Soul_Parent.sshotspeed += 3;
 	    //global.D[1]++;
 	}
 	if itemVal = "D02" {
