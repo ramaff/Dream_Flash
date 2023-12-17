@@ -39,7 +39,7 @@ function scr_Beast_Maw_Teleport_Use(dist, ang) {
 
 	current_weapon_stats.Shot_Size = 0.8;
 	
-	scr_setup_weapon_stats(current_weapon_stats);
+	scr_Setup_Weapon_Stats(current_weapon_stats);
 
 	scr_Shot_Creation();
 

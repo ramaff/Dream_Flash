@@ -2,15 +2,16 @@ function scr_Charged_Release() {
 
 	    if Charge_Hold > 0 {
 			
-			scr_Default_Weapon_Stats();
-			scr_setup_weapon_stats()
+			//scr_Default_Weapon_Stats();
+			//scr_Setup_Weapon_Stats()
 			
-			current_weapon_stats = variable_struct_get(global.weapon_stats, string(weaponcharge))
+			current_weapon_stats = scr_Setup_Default_Weapon_Stats(weaponcharge)
+			scr_Modify_Current_Weapon_Stats();
 			scr_Setup_Charge_Stats()
 			
 			//scr_Default_Weapon_Stats();
 		
-			//scr_Setup_Weapon_Stats();
+			scr_Setup_Weapon_Stats();
 			
 			if Charge_Hold = 2 {
 				scr_Ascending_Soul_Essence_Beam(weaponcharge);
@@ -32,6 +33,7 @@ function scr_Charged_Release() {
 				scr_Weapon_Use_List(weaponcharge)
 			}
 			
+			//scr_C11_Shot_Mod(Charge_Essence)
 			
 			if weaponcharge = 10 {
 	            //scr_Charged_Essence_Shot();

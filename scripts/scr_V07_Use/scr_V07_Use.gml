@@ -31,7 +31,7 @@ function scr_V07_Use() {
 		};
 		
 
-		scr_setup_weapon_stats(current_weapon_stats);
+		scr_Setup_Weapon_Stats(current_weapon_stats);
 		scr_Shot_Creation();
 		
 		global.V7mindblow = 0;

@@ -14,6 +14,7 @@ function scr_P08(){
 		}
 		
 		current_weapon_stats = scr_Setup_Default_Weapon_Stats(_c_wp)
+		scr_Modify_Current_Weapon_Stats();
 		
 		//scr_Default_Weapon_Stats();
 		
@@ -32,7 +33,7 @@ function scr_P08(){
 			current_weapon_stats.Shot_Power = current_weapon_stats.Shot_Power * 0.5;
 			current_weapon_stats.Shot_Size = current_weapon_stats.Shot_Size * 0.7;
 			
-			scr_setup_weapon_stats(current_weapon_stats);
+			scr_Setup_Weapon_Stats(current_weapon_stats);
 			
 			barrage = false;
 			minion = false;

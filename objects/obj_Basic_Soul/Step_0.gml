@@ -180,41 +180,19 @@ if scurrentstate = "Powering Up" {
 
 scr_State_Power_Down();
 
-if (global.P[1] = 0 and global.C[9] = 0) || global.C[11] > 0 {
-	if global.bosscount > 0 {
-	    senergy += 0.333 * energyregenfactor * scr_Class_Stat_Essence_Regen_Multiplier();
-	} else {
-	    senergy += 3.33 * energyregenfactor * scr_Class_Stat_Essence_Regen_Multiplier();
-	}
-	var essenceCap = smaxenergy + scr_Class_Stat_Essence_Cap_Increase();
+var essenceCap = smaxenergy + scr_Class_Stat_Essence_Cap_Increase();
+var _surpass_cap = global.P[1] > 0 || global.C[9] > 0
 
-	if senergy > essenceCap {
-		
-		/*if global.C[11] > 0 {
-			scr_C11_Essup(senergy - essenceCap);
-		} */
-		
-	    senergy = essenceCap;
+if (senergy < essenceCap) {
+	if global.bosscount > 0 {
+		senergy += 0.5 * energyregenfactor * scr_Class_Stat_Essence_Regen_Multiplier();
+	} else {
+		senergy += 5 * energyregenfactor * scr_Class_Stat_Essence_Regen_Multiplier();
 	}
-} else {//if global.P[1] > 0 {
-	//scr_P01();
-//} if global.C[9] > 0 {
-	var essenceCap = smaxenergy + scr_Class_Stat_Essence_Cap_Increase();
+}
 	
-	/*if senergy > essenceCap {
-		if global.C[11] > 0 {
-			scr_C11_Essup(senergy - essenceCap);
-			senergy = essenceCap;
-		}
-	} */
-	
-	if senergy < essenceCap {
-		if global.bosscount > 0 {
-		    senergy += 0.5 * energyregenfactor * scr_Class_Stat_Essence_Regen_Multiplier();
-		} else {
-		    senergy += 5 * energyregenfactor * scr_Class_Stat_Essence_Regen_Multiplier();
-		}
-	}
+if senergy > essenceCap and _surpass_cap = false {
+	senergy = essenceCap;
 }
 
 if stransformedstate != "None"{

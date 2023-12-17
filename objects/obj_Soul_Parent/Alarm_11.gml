@@ -12,7 +12,7 @@ for (bi = 0; bi < 9; bi++) {
 		
 		current_weapon_stats = Shot_Repetition_Stats[bi]
 		
-		scr_setup_weapon_stats()
+		scr_Setup_Weapon_Stats()
 		
 		if Shot_Repetition_Type[bi] = "Bullet Hell" {
 			//scr_Bullet_Hell_Use_Helper();	

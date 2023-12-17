@@ -22,6 +22,7 @@ function scr_Weapon_Use_List(cWP = global.currentweapon) {
 	
 	//current_weapon_stats = json_parse(json_stringify(variable_struct_get(global.weapon_stats, string(cWP))))
 	current_weapon_stats = scr_Setup_Default_Weapon_Stats(cWP)
+	scr_Modify_Current_Weapon_Stats();
 	
 	weaponCost = current_weapon_stats.Essence;	
 	weaponDelay = current_weapon_stats.Delay;
@@ -76,7 +77,7 @@ function scr_Weapon_Use_List(cWP = global.currentweapon) {
 		
 		scr_D03();
 		
-		scr_setup_weapon_stats(current_weapon_stats);
+		scr_Setup_Weapon_Stats(current_weapon_stats);
 		
 		barrage = false;
 		minion = false;
@@ -171,7 +172,7 @@ function scr_Weapon_Use_List(cWP = global.currentweapon) {
 			
 				current_weapon_stats = Shot_Extra[i]
 			
-				scr_setup_weapon_stats(current_weapon_stats)
+				scr_Setup_Weapon_Stats(current_weapon_stats)
 				scr_Hard_Coded_Weapon_Stats(cWP);
 		
 				if spawnProjectile {

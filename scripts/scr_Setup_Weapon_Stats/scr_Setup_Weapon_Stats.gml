@@ -1,6 +1,6 @@
 // Script assets have changed for v2.3.0 see
 // https://help.yoyogames.com/hc/en-us/articles/360005277377 for more information
-function scr_setup_weapon_stats(_current_weapon_stats = current_weapon_stats){
+function scr_Setup_Weapon_Stats(_current_weapon_stats = current_weapon_stats) {
 	
 	// Newer System ? idk
 	

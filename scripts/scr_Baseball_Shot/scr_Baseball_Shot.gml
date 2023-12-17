@@ -43,7 +43,7 @@ function scr_Baseball_Shot(xxx,yyy, pow) {
 		current_weapon_stats.Shot_Power = 0;	
 	}
 	
-	scr_setup_weapon_stats(current_weapon_stats);
+	scr_Setup_Weapon_Stats(current_weapon_stats);
 	scr_Shot_Creation();
 	
 	/*

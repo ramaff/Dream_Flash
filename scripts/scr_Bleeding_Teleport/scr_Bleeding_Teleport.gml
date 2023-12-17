@@ -43,7 +43,7 @@ function scr_Bleeding_Teleport() {
 
 		current_weapon_stats.Shot_Size = 0.3 + (sqrt(Shot_Power) / 20);
 
-		scr_setup_weapon_stats(current_weapon_stats);
+		scr_Setup_Weapon_Stats(current_weapon_stats);
 
 		scr_Shot_Creation();
 	

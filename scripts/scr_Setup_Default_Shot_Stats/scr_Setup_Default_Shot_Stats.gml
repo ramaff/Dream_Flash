@@ -28,13 +28,22 @@ function scr_Setup_Default_Shot_Stats(){
 		Shot_Acceleration: 0,
 		Shot_Fade: 0,
 		Shot_Shrink: 0,
+		Shot_After_Images: 0,
 		Shot_Boss_Aim: 0,
 		Shot_Face_Direction: false,
 		Shot_Zig_Zag: 0,
 		Shot_Chain_Color: [255,255,255],
 		Shot_Init_Grow: 1,
 		Shot_Excess_Essence: 0,
-		Shot_Mouse_Origin: 0
+		Shot_Mouse_Origin: 0,
+		Shot_Fire: 0,
+		Shot_Poison: 0,
+		Shot_Bleed: 0,
+		Shot_Knockback: 10,
+		Shot_Charge_Power: 0,
+		Shot_Charge_Size: 0,
+		Charge_Time: 0,
+		Charge_Essence: 0
 	}
 	return Shot_Stats
 

@@ -9,6 +9,10 @@ function scr_Extra_Shot_Stats() {
 	shot_stats = json_parse(json_stringify(other.Shot_Stats));
 	
 	y -= shot_stats.Shot_Height;
+	
+	if shot_stats.Shot_After_Images > 0 {
+		alarm[8] = 10;	
+	}
 
 	var shotaddedpow = ((10 + other.spowerfactor + other.sattackfactorbuffamount) / 10) * other.spower / 10 * scr_Class_Stat_Damage_Multiplier();
 

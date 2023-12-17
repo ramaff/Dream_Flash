@@ -14,31 +14,33 @@ function scr_Charged_Hold() {
 	
 	//scr_Default_Weapon_Stats();
 	
-	current_weapon_stats = variable_struct_get(global.weapon_stats, string(weaponcharge))
+	current_weapon_stats = scr_Setup_Default_Weapon_Stats(weaponcharge)
+	scr_Modify_Current_Weapon_Stats();
+
 	if Charge_Hold = 2 {
 		scr_Ascending_Soul_Essence_Beam(weaponcharge);
 	}
 	scr_Setup_Charge_Stats()
 	
-	weaponCost = current_weapon_stats.Essence;	
-	weaponDelay = current_weapon_stats.Delay;
+	Charge_Total_Time = current_weapon_stats.Charge_Time;
+	
+	var _weapon_cost = current_weapon_stats.Essence;	
+	var _weapon_delay = current_weapon_stats.Delay;
 	
 	if global.OC[3] > 0 {
-		weaponDelay = weaponDelay * 3;
-		weaponCost = weaponCost * 3;	
+		_weapon_delay = _weapon_delay * 3;
+		_weapon_cost = _weapon_cost * 3;	
 		Charge_Essence = Charge_Essence * 3;
 		Charge_Total_Time = Charge_Total_Time * 3;
 	}
 	
 	
-	crate = 1 * sdelayconservationfactor * ((6 + global.Weap[weaponcharge]) / 6);
-	crate = crate * ((160 + global.souldexterity + global.souldexterityTemp) / 160);
+	var _charge_rate = 1 * sdelayconservationfactor * ((6 + global.Weap[weaponcharge]) / 6);
+	_charge_rate = _charge_rate * ((160 + global.souldexterity + global.souldexterityTemp) / 160);
 	
-	wtt = 0;
-	wenergy = 0;
+	//Charge_Total_Time = 0;
+	//Charge_Essence = 0;
 	on = 0;
-	
-	var cUpAmt = ((3 + global.P[5]) / 3);
 	
 	var charged_weap = scr_Charged_Weapon(weaponcharge)
 	
@@ -71,32 +73,32 @@ function scr_Charged_Hold() {
 				
 				Shot_Charge_Lifespan = 0;
 				
-				Charge_Total_Time = 15 + (weaponDelay * 3);
-				Charge_Essence = weaponCost * 4;
+				Charge_Total_Time = 15 + (_weapon_delay * 3);
+				Charge_Essence = _weapon_cost * 4;
 			} else {
 				Shot_Charge_Power = Shot_Charge_Power * 1.15;	
 			}
 		}
 		
+		Print_DF(_charge_rate)
+		Print_DF(Charge_Total_Time)
 		
-		wtt = Charge_Total_Time;
-		wdelay = weaponDelay;
-		wenergy = Charge_Essence;
-	    ct = wtt * cUpAmt;
-	    if senergy >= smaxenergy || senergy >= ((ct / wtt) * ((wenergy - senergyconservation) / wtt) / senergyconservationfactor / ((6 + global.Weap[weaponcharge]) / 6)) {
-		    if Charge_Time < ct {
-		        Charge_Speed += crate * (ct / wtt) * Shot_Charge_Speed / wtt;
-		        Charge_Power += crate * (ct / wtt) * Shot_Charge_Power / wtt;
-				Charge_Lifespan += crate * (ct / wtt) * Shot_Charge_Lifespan / wtt;
-				Charge_Knockback += crate * (ct / wtt) * Shot_Charge_Knockback / wtt;
-		        Charge_Time += crate * ct / wtt;
-		        Charge_Size += crate * (ct / wtt) * Shot_Charge_Size / wtt;
+		var _charge_portion = _charge_rate / Charge_Total_Time
+		
+	    if senergy >= smaxenergy || senergy >= (((Charge_Essence - senergyconservation) / Charge_Total_Time) / senergyconservationfactor / ((6 + global.Weap[weaponcharge]) / 6)) {
+		    if Charge_Time < Charge_Total_Time {
+		        Charge_Speed += _charge_portion * Shot_Charge_Speed;
+		        Charge_Power += _charge_portion * Shot_Charge_Power;
+				Charge_Lifespan += _charge_portion * Shot_Charge_Lifespan;
+				Charge_Knockback += _charge_portion * Shot_Charge_Knockback;
+		        Charge_Time += _charge_rate;
+		        Charge_Size += _charge_portion * Shot_Charge_Size;
 				on = 1;
 		    }
 		}
 	} 
 
-	var drain = (ct / wtt) * ((wenergy - senergyconservation) / wtt) / senergyconservationfactor / ((6 + global.Weap[weaponcharge]) / 6) / (1 + ((global.soulperception + global.soulperceptionTemp) / 160));
+	var drain = ((Charge_Essence - senergyconservation) / Charge_Total_Time) / senergyconservationfactor / ((6 + global.Weap[weaponcharge]) / 6) / (1 + ((global.soulperception + global.soulperceptionTemp) / 160));
 	var slot = Soul_Weapons_Control.weapon[0,1];
 	var eeContain = global.L01essence[slot];
 	
@@ -105,8 +107,10 @@ function scr_Charged_Hold() {
 	if on != 0 and global.L[1] > 0 and eeContain > 0 {
 		global.L01essence[slot] -= drain;
 	} else if on != 0 {
-		sdelay = (wdelay - sdelayconservation) / sdelayconservationfactor / ((6 + global.Weap[weaponcharge]) / 6);
+		sdelay = (_weapon_delay - sdelayconservation) / sdelayconservationfactor / ((6 + global.Weap[weaponcharge]) / 6);
 		senergy -= drain;
+		
+		//Charge_Essence += drain
 	}
 	
 	
