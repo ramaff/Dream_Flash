@@ -1048,16 +1048,16 @@ function scr_Hard_Coded_Item_Stats(itemVal, items_to_add = 1, reload = false) {
 	}
 	if itemVal = "U06" {
 	    //global.U[6]++;
-		global.souldelayconservationfactor += 0.75;
-	    obj_Soul_Parent.sdelayconservationfactor += 0.75;
+		global.souldelayconservationfactor += 1;
+	    obj_Soul_Parent.sdelayconservationfactor += 1;
 	    global.soulaccuracy = global.soulaccuracy * 0.8;
 	    obj_Soul_Parent.saccuracy = obj_Soul_Parent.saccuracy * 0.8;
-		global.soulpowerfactor -= 1.5;
-	    obj_Soul_Parent.spowerfactor -= 1.5;
-		global.soulenergyconservationfactor += 0.15;
-	    obj_Soul_Parent.senergyconservationfactor += 0.15;
-		global.soulshotsizefactor -= 0.1;
-	    obj_Soul_Parent.sshotsizefactor -= 0.1;
+		global.soulpowerfactor -= 2.5;
+	    obj_Soul_Parent.spowerfactor -= 2.5;
+		global.soulenergyconservationfactor += 0.25;
+	    obj_Soul_Parent.senergyconservationfactor += 0.25;
+		global.soulshotsizefactor -= 0.3;
+	    obj_Soul_Parent.sshotsizefactor -= 0.3;
 	}
 	if itemVal = "U07" {
 		//global.U[7]++;	
