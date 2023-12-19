@@ -575,8 +575,8 @@
         "Boss 018": {
             "Name": "Fire Starter",
             "Recollection_Sprite": "reco_Fire_Starter",
-            "Health_Phase_1": 270,
-            "Health_Phase_2": 220,
+            "Health_Phase_1": 360,
+            "Health_Phase_2": 200,
             "Defense_Phase_1": 0,
             "Defense_Phase_2": 0,
             "Boss_Danger": 3,
@@ -587,20 +587,20 @@
             "Champ 1": {
                 "Name": "Magic Starter",
                 "Recollection_Sprite": "spr_Magic_Starter",
-                "Health_Phase_1": 300,
-                "Health_Phase_2": 270
+                "Health_Phase_1": 420,
+                "Health_Phase_2": 230
             },
             "Champ 2": { 
                 "Name":  "Explosion Starter",
                 "Recollection_Sprite": "spr_Explosive_Starter",
-                "Health_Phase_1": 300,
-                "Health_Phase_2": 270
+                "Health_Phase_1": 420,
+                "Health_Phase_2": 230
             },
             "Champ 3": {
                 "Name": "Thunder Starter",
                 "Recollection_Sprite": "spr_Energy_Starter",
-                "Health_Phase_1": 300,
-                "Health_Phase_2": 270
+                "Health_Phase_1": 420,
+                "Health_Phase_2": 230
             }
         },
 

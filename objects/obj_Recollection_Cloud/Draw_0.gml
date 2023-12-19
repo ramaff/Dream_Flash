@@ -146,7 +146,7 @@ if priceString != "" {
     draw_set_alpha(image_alpha);
 	if shop != 3 {
 	    draw_text(x+204,y-128, string_hash_to_newline(priceString));
-	    draw_sprite(recollectionPriceType,0,x+168,y-120)
+	    draw_sprite_ext(recollectionPriceType,0,x+168,y-120, 0.5, 0.5, 0, c_white, 1)
 	} else {
 		draw_text(x+192,y-128, string_hash_to_newline(priceString));
 	}

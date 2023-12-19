@@ -4,7 +4,7 @@
 /// Weapon Use
 
 
-function scr_Q03(){
+function scr_Q03(_minion = false){
 	
    if global.Q[3] > 0 {
 	
@@ -15,7 +15,11 @@ function scr_Q03(){
 			Shot_XX = room_center - (effect_diameter / 2) + random(effect_diameter) - x;
 		    Shot_YY = room_center - (effect_diameter / 2) + random(effect_diameter) - y;
 		
-			scr_Shot_Creation();
+			if !_minion {
+				scr_Shot_Creation();
+			} else {
+				scr_Soul_Spawn();
+			}
 		
 			global.Q3count -= 4;
 		}

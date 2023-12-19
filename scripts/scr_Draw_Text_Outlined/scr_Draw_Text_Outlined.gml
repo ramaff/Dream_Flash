@@ -14,6 +14,9 @@ function scr_Draw_Text_Outlined() {
 	draw_text(xx-1,   yy, string_hash_to_newline(argument[4]));  
 	draw_text(xx-1, yy+1, string_hash_to_newline(argument[4]));  
 	draw_text(xx+1, yy-1, string_hash_to_newline(argument[4]));
+	
+	draw_text(xx,   yy+2, string_hash_to_newline(argument[4]));  
+	draw_text(xx+2,   yy, string_hash_to_newline(argument[4]));  
 	draw_text(xx+2, yy+2, string_hash_to_newline(argument[4]));
 	draw_text(xx+1, yy+2, string_hash_to_newline(argument[4]));
 	draw_text(xx+2, yy+1, string_hash_to_newline(argument[4]));

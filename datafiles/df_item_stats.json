@@ -292,7 +292,7 @@
     "D01": {
         "recollectionString": "Spiritual Swiftness",
         "recollectionSprite": "spr_Spiritual_Swiftness_Item",
-        "recollectionExtraStats": "+30% Movement Speed",
+        "recollectionExtraStats": "+30% Movement/Shot Speed",
         "recollectionDescription": "Make your soul move through the dreamscape much faster."
     },
     "D02": {
@@ -302,11 +302,10 @@
         "recollectionDescription": "Quick thinking lets you think of things to attack with faster."
     },
     "D03": {
-        "recollectionString": "Idea Throwing",
-        "recollectionSprite": "spr_Projectile_Launching_Item",
-        "recollectionExtraStats": "+40% Shot Speed +10% Firerate",
-        "recollectionDescription": "By throwing your ideas out there they move 40% faster",
-        "Snake_Credit": 0.5
+        "recollectionString": "Spitballing",
+        "recollectionSprite": "spr_Spitballing_Art",
+        "recollectionExtraStats": "+Fast Lobbing Shotgun",
+        "recollectionDescription": "Throw your ideas out there faster. Shots lob now, moving faster than before. You also create extra small shots."
     },
     "D04": {
         "recollectionString": "Rehearsed Thoughts",
@@ -322,10 +321,11 @@
         "Snake_Credit": 0.5
     },
     "D06": {
-        "recollectionString": "Momentous Occasion",
+        "recollectionString": "Thoughts Racing",
         "recollectionSprite": "spr_Relief_Item",
-        "recollectionExtraStats": "+Speed Damage",
-        "recollectionDescription": "Once your ideas get out there, they just keep gaining momentum. Projectiles move faster and also will now do more damage based on how fast they are"
+        "recollectionExtraStats": "+Speed is Power",
+        "recollectionDescription": "Projectiles massively accelerate now. All shots do extra damage the faster they are as well. Shot Lifespan cut by 30%.",
+        "Snake_Credit": 0.5
     },
     "D07": {
         "recollectionString": "Mindfulness",
@@ -704,7 +704,7 @@
     "I03": {
         "recollectionString": "Confident",
         "recollectionSprite": "spr_Confident_Art",
-        "recollectionExtraStats": "+4 Strength +4 Vanity",
+        "recollectionExtraStats": "+4 Strength +4 Assurance",
         "recollectionDescription": ""
     },
     "I04": {
@@ -741,7 +741,7 @@
     "I09": {
         "recollectionString": "Secure",
         "recollectionSprite": "spr_Secure_Art",
-        "recollectionExtraStats": "+4 Vitality +4 Vanity",
+        "recollectionExtraStats": "+4 Vitality +4 Assurance",
         "recollectionDescription": ""
     },
     "I10": {
@@ -778,7 +778,7 @@
     "I15": {
         "recollectionString": "Capable",
         "recollectionSprite": "spr_Capable_Art",
-        "recollectionExtraStats": "+4 Essence +4 Vanity",
+        "recollectionExtraStats": "+4 Essence +4 Assurance",
         "recollectionDescription": ""
     },
     "I16": {
@@ -815,7 +815,7 @@
     "I21": {
         "recollectionString": "Hyped",
         "recollectionSprite": "spr_Hyped_Art",
-        "recollectionExtraStats": "+4 Dexterity +4 Vanity",
+        "recollectionExtraStats": "+4 Dexterity +4 Assurance",
         "recollectionDescription": ""
     },
     "I22": {
@@ -852,7 +852,7 @@
     "I27": {
         "recollectionString": "Comfortable",
         "recollectionSprite": "spr_Comfortable_Art",
-        "recollectionExtraStats": "+4 Perception +4 Vanity",
+        "recollectionExtraStats": "+4 Perception +4 Assurance",
         "recollectionDescription": ""
     },
     "I28": {
@@ -888,7 +888,7 @@
     "I33": {
         "recollectionString": "Prideful",
         "recollectionSprite": "spr_Prideful_Art",
-        "recollectionExtraStats": "+4 State +4 Vanity",
+        "recollectionExtraStats": "+4 State +4 Assurance",
         "recollectionDescription": ""
     },
     "I34": {
@@ -1400,8 +1400,8 @@
     "P05": {
         "recollectionString": "Perfectionist",
         "recollectionSprite": "spr_Perfectionist_Art",
-        "recollectionExtraStats": "+Max Charged Shot Power",
-        "recollectionDescription": "Increases the max stats of charged weapons by 40%."
+        "recollectionExtraStats": "+Perfectly Prepared Shots",
+        "recollectionDescription": "All weapons deal twice as much damage, but also cost 80% more and take 80% longer to concieve of."
     },
     "P06": {
         "recollectionString": "Toxic Personality",
@@ -1469,8 +1469,8 @@
     "R04": {
         "recollectionString": "Proud Memory",
         "recollectionSprite": "spr_Proud_Memory_Art",
-        "recollectionExtraStats": "+5 Vanity +20 Recalls",
-        "recollectionDescription": "Remembering fills you with vanity..."
+        "recollectionExtraStats": "+5 Assurance +20 Recalls",
+        "recollectionDescription": "Remembering fills you with Assurance..."
     },
     "R05": {
         "recollectionString": "Peaceful Memory",

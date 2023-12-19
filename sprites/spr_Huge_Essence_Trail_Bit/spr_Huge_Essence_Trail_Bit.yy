@@ -57,7 +57,7 @@
             {"resourceType":"Keyframe<SpriteFrameKeyframe>","resourceVersion":"1.0","Channels":{"0":{"resourceType":"SpriteFrameKeyframe","resourceVersion":"1.0","Id":{"name":"9e2e2a8b-a2a2-4b3d-b1fe-ca22bbd2f37d","path":"sprites/spr_Huge_Essence_Trail_Bit/spr_Huge_Essence_Trail_Bit.yy",},},},"Disabled":false,"id":"831d3466-0c5a-4b67-a52b-6d9910c9fbc9","IsCreationKey":false,"Key":0.0,"Length":1.0,"Stretch":false,},
           ],},"modifiers":[],"spriteId":null,"trackColour":0,"tracks":[],"traits":0,},
     ],
-    "visibleRange": {"x":0.0,"y":0.0,},
+    "visibleRange": null,
     "volume": 1.0,
     "xorigin": 32,
     "yorigin": 32,

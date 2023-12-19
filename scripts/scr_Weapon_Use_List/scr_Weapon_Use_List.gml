@@ -151,14 +151,7 @@ function scr_Weapon_Use_List(cWP = global.currentweapon) {
 		}
 		
 		
-		if spawnProjectile {
-			if !minion {
-				scr_Shot_Creation();
-			} else {
-				scr_Soul_Spawn();	
-			}
-			scr_Q03();
-		}
+		scr_Weapon_Output(spawnProjectile, minion)
 		
 		if Shot_Extra != false {
 			
@@ -170,14 +163,7 @@ function scr_Weapon_Use_List(cWP = global.currentweapon) {
 				scr_Setup_Weapon_Stats(current_weapon_stats)
 				scr_Hard_Coded_Weapon_Stats(cWP);
 		
-				if spawnProjectile {
-					if !minion {
-						scr_Shot_Creation();
-					} else {
-						scr_Soul_Spawn();	
-					}
-					scr_Q03();
-				}
+				scr_Weapon_Output(spawnProjectile, minion)
 			}
 		}
 		

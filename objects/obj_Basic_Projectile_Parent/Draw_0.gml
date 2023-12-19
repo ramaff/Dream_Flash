@@ -1,5 +1,7 @@
 //scr_Weapon_Direction_List();
 
+//Print_DF(sprite_get_name(sprite_index))
+
 if !is_struct(shot_stats) {
 	exit;	
 }
@@ -37,9 +39,9 @@ if shot_stats.Shot_Lobbing = true {
 }
 
 if global.A[14] > 0 and shotorigin = obj_Soul_Parent {
-	var _size = sqrt(sprite_get_width(sprite_index) * sprite_get_height(sprite_index)) * shotsize * 1.5
+	var _size = 10 * sqrt(sqrt(sprite_get_width(sprite_index) * sprite_get_height(sprite_index))) * shotsize
 	_size = _size / 80
-    draw_sprite_ext(spr_Aura_Strike_Aura,0,x,y,_size, _size,0,c_white,1);
+    draw_sprite_ext(spr_Aura_Strike_Aura,0,x,y,_size, _size,0,c_white,ceil(image_alpha));
 }
 
 if shotaura = 1 and image_alpha > 0 {

@@ -24,6 +24,9 @@ if instance_exists(obj_Boss_Parent) {
 	
 	Shot_Pierce += 19;
 	Shot_Size = 0.4;
+	
+	Shot_Shield_Type = 3;
+	Shot_Shield_Power = 4;
     
     scr_Minion_Shot_Creation();
 }
