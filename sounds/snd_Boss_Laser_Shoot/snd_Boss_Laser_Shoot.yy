@@ -10,7 +10,7 @@
   "bitRate": 128,
   "compression": 0,
   "conversionMode": 0,
-  "duration": 0.266224,
+  "duration": 0.261224,
   "parent": {
     "name": "bad custom sound attempts",
     "path": "folders/Sounds/Sound Effects/bad custom sound attempts.yy",

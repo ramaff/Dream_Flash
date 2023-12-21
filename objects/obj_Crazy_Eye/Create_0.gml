@@ -24,4 +24,8 @@ if champ = 8 {
 
 death_sprite = spr_crazy_eye_ko;
 boss_palette = spr_Crazy_Eyes_Palette;
-boss_palette_index = 0;
+boss_palette_index = champ;
+
+if champ = 8 {
+	boss_palette_index = 2;	
+}

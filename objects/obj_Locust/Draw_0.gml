@@ -1,8 +1,6 @@
 scr_Boss_Shadow();
 
-var palindex = champ;
-
-pal_swap_set(spr_Locust_Palette,palindex,false);
+pal_swap_set(boss_palette, boss_palette_index,false);
 draw_self();
 pal_swap_reset();
 

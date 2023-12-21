@@ -1,7 +1,7 @@
 {
   "resourceType": "GMSound",
   "resourceVersion": "1.0",
-  "name": "sd_Bomb_Explode",
+  "name": "snd_Soul_Teleport",
   "audioGroupId": {
     "name": "audiogroup_default",
     "path": "audiogroups/audiogroup_default",
@@ -10,14 +10,14 @@
   "bitRate": 128,
   "compression": 0,
   "conversionMode": 0,
-  "duration": 0.431837,
+  "duration": 1.05,
   "parent": {
-    "name": "old_placeholder_sounds",
-    "path": "folders/Sounds/Sound Effects/old_placeholder_sounds.yy",
+    "name": "Alleged Real Sound Effects",
+    "path": "folders/Sounds/Sound Effects/Alleged Real Sound Effects.yy",
   },
   "preload": false,
   "sampleRate": 44100,
-  "soundFile": "sd_Bomb_Explode",
+  "soundFile": "snd_Soul_Teleport.wav",
   "type": 0,
-  "volume": 0.8,
+  "volume": 1.0,
 }

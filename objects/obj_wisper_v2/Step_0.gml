@@ -140,6 +140,18 @@ if currentphase = finalphase and split = 0 {
 		scr_Boss_Stats_Setup(2);
 		scr_Boss_Height_Setup(80);
 		difficulty = global.floor[global.currentroom,24] / 2;
+		
+		death_sprite = spr_wisper_v2_ko;
+		boss_palette = spr_wisper_v2_palette;
+		boss_palette_index = 1;
+
+		if floor(champ) = 1 {
+			boss_palette_index = 5
+		}
+		if floor(champ) = 2 {
+			boss_palette_index = 7	
+		}
+
     }
 	with instance_create(x,y, obj_relentless_wisper_v2) {
 		difficulty = other.difficulty / 2;
@@ -149,6 +161,17 @@ if currentphase = finalphase and split = 0 {
 		scr_Boss_Stats_Setup(2);
 		scr_Boss_Height_Setup(80);
 		difficulty = global.floor[global.currentroom,24] / 2;
+		death_sprite = spr_wisper_v2_ko;
+		boss_palette = spr_wisper_v2_palette;
+		boss_palette_index = 0;
+
+		if floor(champ) = 1 {
+			boss_palette_index = 2
+		}
+		if floor(champ) = 2 {
+			boss_palette_index = 6	
+		}
+
     }
 	difficulty = 0;
 	instance_destroy();

@@ -15,11 +15,11 @@ scr_Boss_Height_Setup(50);
 
 death_sprite = spr_wisper_v2_ko;
 boss_palette = spr_wisper_v2_palette;
-boss_palette_index = 0;
+boss_palette_index = 1;
 
 if floor(champ) = 1 {
-	boss_palette_index = 2
+	boss_palette_index = 5
 }
 if floor(champ) = 2 {
-	boss_palette_index = 6	
+	boss_palette_index = 7	
 }

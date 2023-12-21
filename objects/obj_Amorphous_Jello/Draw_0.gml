@@ -5,13 +5,8 @@
 scr_Boss_Shadow(undefined, undefined, undefined, 2);
 
 // Palette Color Swap for different boss champs:
-var palindex = champ;
 
-if champ = 8 {
-	palindex = 3;	
-}
-
-pal_swap_set(spr_Amorphous_Jello_Palette,palindex,false);
+pal_swap_set(boss_palette, boss_palette_index,false);
 
 draw_self();
 

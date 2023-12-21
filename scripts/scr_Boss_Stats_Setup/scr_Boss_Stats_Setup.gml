@@ -5,7 +5,7 @@ function scr_Boss_Stats_Setup(_version=1) {
 	facing_direction = 1;
 	boss_phase_transition = 1;
 	
-	boss_palette = noone;
+	boss_palette = undefined;
 	boss_palette_index = 0;
 	
 	new_boss = true
@@ -53,7 +53,7 @@ function scr_Boss_Stats_Setup(_version=1) {
 	patterndir = 0;
 	bosspower = 6;
 	
-	death_sprite = noone;
+	death_sprite = undefined;
 	
 	deadknockdirection = 0;
     

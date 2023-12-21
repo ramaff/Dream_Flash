@@ -2,16 +2,9 @@
 // You can write your code in this editor
 //texture_set_interpolation(0);
 
-var palindex = champ;
-
-if champ = 8 {
-	palindex = 3;
-} 
-
-pal_swap_set(spr_Horror_Stack_Palette,palindex,false);
+pal_swap_set(boss_palette, boss_palette_index,false);
     
 draw_self();
-
 
 pal_swap_reset();
 

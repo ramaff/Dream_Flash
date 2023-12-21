@@ -3,12 +3,6 @@
 
 scr_Boss_Shadow(undefined, undefined, undefined, 2);
 
-var palindex = champ;
-
-if champ = 8 {
-	palindex = 2;	
-}
-
-pal_swap_set(spr_Crazy_Eyes_Palette,palindex,false);
+pal_swap_set(boss_palette, boss_palette_index,false);
 draw_self();
 pal_swap_reset();

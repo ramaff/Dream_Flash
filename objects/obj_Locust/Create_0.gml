@@ -22,4 +22,4 @@ spawnFrame = 0;
 
 death_sprite = spr_locust_ko;
 boss_palette = spr_Locust_Palette;
-boss_palette_index = 0;
+boss_palette_index = champ;

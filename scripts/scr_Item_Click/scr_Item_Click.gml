@@ -20,9 +20,6 @@ function scr_Item_Click(linger = false){
 	if bought = 0 {
 	    exit;
 	}
-	
-	
-	scr_Sound_Effect(snd_Item_Get);
 
 	var sDir = random(360);
 
@@ -49,6 +46,8 @@ function scr_Item_Click(linger = false){
 		}
 		global.orbit[itemOrbit] -= 1;
 	    scr_Weapon_Pickup();
+		
+		scr_Sound_Effect(snd_Pick_Up_Item_Good);
 	}
 
 	var recoGroup = string_letters(itemVal);
@@ -198,6 +197,14 @@ function scr_Item_Click(linger = false){
 	
 	if weapon = 0 {
 		scr_Item_State_Credit_Add(itemVal);
+		
+		if recoGroup = "I" || itemVal = "A00" || itemVal = "B00" || itemVal = "C00" || itemVal = "D00" || itemVal = "E00" || itemVal = "F00" { 
+			scr_Sound_Effect(snd_Pick_Up_Item_Neutral);
+		} else if recoGroup = "XA" or recoGroup = "XB" or recoGroup = "XC" {
+			scr_Sound_Effect(snd_Pick_Up_Item_Bad);
+		} else {
+			scr_Sound_Effect(snd_Pick_Up_Item_Good);
+		}
 	}
 	
 	scr_State_Form_Unlock();
