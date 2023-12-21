@@ -208,6 +208,7 @@
     {"resourceType":"GMFolder","resourceVersion":"1.0","name":"Music","folderPath":"folders/Sounds/Music.yy",},
     {"resourceType":"GMFolder","resourceVersion":"1.0","name":"old","folderPath":"folders/Sounds/Music/old.yy",},
     {"resourceType":"GMFolder","resourceVersion":"1.0","name":"Sound Effects","folderPath":"folders/Sounds/Sound Effects.yy",},
+    {"resourceType":"GMFolder","resourceVersion":"1.0","name":"Alleged Real Sound Effects","folderPath":"folders/Sounds/Sound Effects/Alleged Real Sound Effects.yy",},
     {"resourceType":"GMFolder","resourceVersion":"1.0","name":"bad custom sound attempts","folderPath":"folders/Sounds/Sound Effects/bad custom sound attempts.yy",},
     {"resourceType":"GMFolder","resourceVersion":"1.0","name":"new_placeholder_sounds","folderPath":"folders/Sounds/Sound Effects/new_placeholder_sounds.yy",},
     {"resourceType":"GMFolder","resourceVersion":"1.0","name":"old_placeholder_sounds","folderPath":"folders/Sounds/Sound Effects/old_placeholder_sounds.yy",},
@@ -452,7 +453,6 @@
     {"resourceType":"GMFolder","resourceVersion":"1.0","name":"Misc BGs","folderPath":"folders/Tile Sets/Misc BGs.yy",},
     {"resourceType":"GMFolder","resourceVersion":"1.0","name":"Nightmare BGs","folderPath":"folders/Tile Sets/Nightmare BGs.yy",},
     {"resourceType":"GMFolder","resourceVersion":"1.0","name":"Timelines","folderPath":"folders/Timelines.yy",},
-    {"resourceType":"GMFolder","resourceVersion":"1.0","name":"Alleged Real Sound Effects","folderPath":"folders/Sounds/Sound Effects/Alleged Real Sound Effects.yy",},
   ],
   "IncludedFiles": [
     {"resourceType":"GMIncludedFile","resourceVersion":"1.0","name":"df_boss_stats.json","CopyToMask":-1,"filePath":"datafiles",},

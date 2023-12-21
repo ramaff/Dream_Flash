@@ -431,7 +431,7 @@ if bossActiveAttack[1] != 0 {
 	if bossActiveAttack[1] = 2 || bossActiveAttack[1] = 4 {
 		scr_Boss_Attack_Sprite(spr_Crazy_Eye_Blink, 10, 5, 5);
 	}
-	if bossActiveAttack[1] = 1 || bossActiveAttack[1] = 3 || bossActiveAttack[1] = 2 {
+	if bossActiveAttack[1] = 1 || bossActiveAttack[1] = 3 {
 		scr_Boss_Attack_Sprite(spr_Crazy_Eye_Phase_2_Blink, 40, 6, 6);
 	}
 } else {

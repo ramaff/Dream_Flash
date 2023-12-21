@@ -2,6 +2,7 @@
   "FolderOrderSettings": [
     {"name":"v1","order":8,"path":"folders/Objects/Bosses/Flash Bosses/v1.yy",},
     {"name":"Soul Shots","order":16,"path":"folders/Scripts/Weapon Commands/Soul Shots.yy",},
+    {"name":"Alleged Real Sound Effects","order":1,"path":"folders/Sounds/Sound Effects/Alleged Real Sound Effects.yy",},
     {"name":"Explosive","order":1,"path":"folders/Sprites/Boss Bullet Sprites/Explosive.yy",},
     {"name":"Amorphous Jelly Group","order":1,"path":"folders/Sprites/Boss Sprites/Flash Bosses/Amorphous Jelly Group.yy",},
     {"name":"Applause Group","order":2,"path":"folders/Sprites/Boss Sprites/Flash Bosses/Applause Group.yy",},
@@ -28,7 +29,6 @@
     {"name":"Watcher Boss Group","order":21,"path":"folders/Sprites/Boss Sprites/Flash Bosses/Watcher Boss Group.yy",},
     {"name":"Wisper Group","order":22,"path":"folders/Sprites/Boss Sprites/Flash Bosses/Wisper Group.yy",},
     {"name":"Wisper v2","order":23,"path":"folders/Sprites/Boss Sprites/Flash Bosses/Wisper v2.yy",},
-    {"name":"Alleged Real Sound Effects","order":1,"path":"folders/Sounds/Sound Effects/Alleged Real Sound Effects.yy",},
   ],
   "ResourceOrderSettings": [
     {"name":"spr_Glowy_Explosive_Shot","order":1,"path":"sprites/spr_Glowy_Explosive_Shot/spr_Glowy_Explosive_Shot.yy",},
