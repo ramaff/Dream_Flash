@@ -191,8 +191,8 @@ function scr_Hard_Coded_Item_Stats(itemVal, items_to_add = 1, reload = false) {
 	}
 	if itemVal = "C11" {
 	    //global.C[11]++;
-	    global.soulenergyregenfactor += 1;
-	    obj_Soul_Parent.senergyregenfactor += 1;
+	    //global.soulenergyregenfactor += 1;
+	    //obj_Soul_Parent.senergyregenfactor += 1;
 	}
 	if itemVal = "C12" {
 	    //global.C[12]++;

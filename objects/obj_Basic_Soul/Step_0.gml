@@ -198,15 +198,6 @@ if senergy > essenceCap and _surpass_cap = false {
 if stransformedstate != "None"{
 	var sCap = smaxstate;
 	
-	//var sFac = ((60 + global.soulstate + global.soulstateTemp) / 60);
-	
-	/*
-	if sstatecharge > essenceCap {
-		if global.C[11] > 0 {
-			scr_C11_Essup(0.5 * sstateregenfactor * sFac);
-		}
-	} */
-	
 	if sstatecharge > sCap {
 		sstatecharge = sCap;
 	}
@@ -223,11 +214,6 @@ sdelay -= sdelayregenfactor;
 if sdelay < 0 {
     sdelay = 0;
 }
-/*
-if senergy < 0 {
-    senergy = 0;
-}
-*/
 
 tdelay -= tdelayregenfactor;
 if tdelay < 0 {
@@ -241,32 +227,6 @@ if soulDeathFadeSpeed = 0 {
         alarm[9] = 72;
     }
 }
-
-/*
-//Horizontal collisions
-if place_meeting(x+hspeed,y,obj_The_Border) {
-        while !place_meeting(x+sign(hspeed),y,obj_The_Border) {
-                 x += sign(hspeed);
-        }
-        hspeed = 0;
-}
-x += hspeed;
-
-//Vertical collisions
-if place_meeting(x,y+vspeed,obj_The_Border) {
-        while !place_meeting(x,y+sign(vspeed),obj_The_Border) {
-                 y += sign(vspeed);
-        }
-        vspeed = 0;
-}
-y += vspeed;
-*/
-
-//sprite_index = spr_New_Soul_Swaying;
-//sprite_index = spr_The_Soul_Trail_Sway;
-//image_index = 4;
-
-//sprite_index = spr_Snake_Soul;
 
 if soulsleep = 1 {
 	scr_Soul_Attack_Think();	

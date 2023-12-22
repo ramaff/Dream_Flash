@@ -187,6 +187,14 @@ if bosshealth <= bossmaxhealth / 2 or currentphase = finalphase {
         boost = other.boost;
 		bossValue = other.bossValue;
         global.bosscount += 1;
+		
+		boss_palette = spr_Horror_Stack_Palette;
+		boss_palette_index = champ;
+
+		if champ = 8 {
+			boss_palette_index = 3;
+		} 
+
     }
 }
 if bossStack = 2
@@ -197,6 +205,14 @@ if currentphase = finalphase {
         boost = other.boost;
 		bossValue = other.bossValue;
         global.bosscount += 1;
+		
+		boss_palette = spr_Horror_Stack_Palette;
+		boss_palette_index = champ;
+
+		if champ = 8 {
+			boss_palette_index = 3;
+		} 
+
     }
 }
 
