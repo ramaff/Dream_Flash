@@ -45,6 +45,8 @@ function scr_Default_Weapon_Stats() {
 	Shot_Trail_Color2 = c_white;
 	Shot_Trail_Life = 15;
 	Shot_Trail_Area = 15;
+	Shot_Trail_Speed = 0;
+	Shot_Trail_Direction = 0;
 	Shot_Trail_Frequency = 4;
 	Shot_Trail_Fade = 1;
 	Shot_Trail_Hit_Count = 8;

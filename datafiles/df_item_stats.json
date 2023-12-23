@@ -1706,7 +1706,7 @@
     "XB01": {
         "recollectionString": "Paranoid",
         "recollectionSprite": "spr_Paranoid_Art",
-        "recollectionExtraStats": "+Less Soul/Boss Accuracy +Soul/Boss Firerate +Boss Bullet Speed",
+        "recollectionExtraStats": "-50% Soul/Boss Accuracy +20% Soul/Boss Firerate +40% Bullet Speed",
         "recollectionDescription": "Being paranoid lowers everyone's aim. It also increases the attack rate of everyone while speeding up boss bullets."
     },
     "XB02": {
@@ -1724,7 +1724,7 @@
     "XB04": {
         "recollectionString": "Jittery",
         "recollectionSprite": "spr_Jittery_Art",
-        "recollectionExtraStats": "+Jittery Shots/Bullets",
+        "recollectionExtraStats": "+Jittery Shots/Bullets +30% Shot Speed",
         "recollectionDescription": "Causes soul shots and boss bullets to jitter and change directions."
     },
     "XB05": {

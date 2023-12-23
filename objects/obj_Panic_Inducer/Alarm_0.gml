@@ -1,6 +1,6 @@
 alarm[3] = sfirerate - 10 - random(sfirerate / 3);
 
-alarm[2] = 20;
+alarm[2] = 30;
 
 scr_Soul_Stretch("Vertical", 0.8);
 image_index = 0;

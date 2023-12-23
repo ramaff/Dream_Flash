@@ -5,6 +5,7 @@ function scr_Setup_Default_Shot_Stats(){
 	Shot_Stats = {
 		Delay: 20,
 		Essence: 4,
+		Shot_Accuracy: 15,
 		Shot_Extra_Stats: false,
 		Shot_Burst_Stats: false,
 		Shot_Air_Burst_Stats: false,

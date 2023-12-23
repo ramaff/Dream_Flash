@@ -15,7 +15,7 @@ function scr_Default_Shot_Stats() {
 	shotorigin = noone;
 	shotgem = 0;
 	
-	shotaccuracy = 0;
+	shotaccuracy = 15;
 	shotdamage = true;
 
 	shotmousemaintain = 0;
@@ -38,6 +38,8 @@ function scr_Default_Shot_Stats() {
 	shottrailcolor2 = c_white;
 	shottraillife = 15;
 	shottrailarea = 12;
+	shottrailspeed = 0;
+	shottraildirection = 0;
 	shottrailfrequency = 1;
 	shottrailfade = 1;
 	shottrailhitcount = 7;

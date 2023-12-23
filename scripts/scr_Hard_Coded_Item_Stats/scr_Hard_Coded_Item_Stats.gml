@@ -1167,11 +1167,11 @@ function scr_Hard_Coded_Item_Stats(itemVal, items_to_add = 1, reload = false) {
 	
 	if itemVal = "XB01" {
 		//global.XB[1]++;
-		global.soulaccuracy = global.soulaccuracy * 0.6;
-	    obj_Soul_Parent.saccuracy = obj_Soul_Parent.saccuracy * 0.6;
+		global.soulaccuracy = global.soulaccuracy * 0.5;
+	    obj_Soul_Parent.saccuracy = obj_Soul_Parent.saccuracy * 0.5;
 		global.souldelayconservationfactor += 0.2;
 	    obj_Soul_Parent.sdelayconservationfactor += 0.2;
-		global.bossaccuracyfactor -= 0.4;
+		global.bossaccuracyfactor -= 0.5;
 		global.bossfireratefactor += 0.2;
 	}
 	if itemVal = "XB02" {
