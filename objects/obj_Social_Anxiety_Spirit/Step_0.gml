@@ -14,14 +14,20 @@ if evil = 0 and good = 0 {
 	}
 } else {
 	if souldist < 320 {
-		sprite_index = spr_Paranoia_Crowd_Spirit_Eye_Attack;	
+		sprite_index = spr_Paranoia_Crowd_Spirit_Eye_Attack;
+		if good = 1 {
+			sprite_index = spr_Nice_Crowd_Spirit_Eye_Attack	
+		}
 		image_speed = 1;
 		if image_index >= 3 {
 			image_index = 3;	
 		}
 		image_alpha = 1;
 	} else {
-		sprite_index = spr_Paranoia_Crowd_Spirit_Eye;	
+		sprite_index = spr_Paranoia_Crowd_Spirit_Eye;
+		if good = 1 {
+			sprite_index = spr_Nice_Crowd_Spirit_Eye;	
+		}
 		image_alpha = 0.8
 	}
 }

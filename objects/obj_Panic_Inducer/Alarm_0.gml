@@ -30,8 +30,8 @@ if instance_exists(obj_Boss_Parent) {
 	
 	//Shot_Spread = 30;
     Shot_Accuracy = 15;
-    Shot_Count = 5;
-	Shot_Direction = scr_Soul_Point();
+    Shot_Count = 12;
+	Shot_Direction = 18
 	
 	Shot_Speed += 2;
 	

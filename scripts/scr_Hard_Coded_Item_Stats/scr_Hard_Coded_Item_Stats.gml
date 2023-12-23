@@ -1169,8 +1169,8 @@ function scr_Hard_Coded_Item_Stats(itemVal, items_to_add = 1, reload = false) {
 		//global.XB[1]++;
 		global.soulaccuracy = global.soulaccuracy * 0.6;
 	    obj_Soul_Parent.saccuracy = obj_Soul_Parent.saccuracy * 0.6;
-		global.souldelayconservationfactor += 0.15;
-	    obj_Soul_Parent.sdelayconservationfactor += 0.15;
+		global.souldelayconservationfactor += 0.2;
+	    obj_Soul_Parent.sdelayconservationfactor += 0.2;
 		global.bossaccuracyfactor -= 0.4;
 		global.bossfireratefactor += 0.2;
 	}
@@ -1182,6 +1182,8 @@ function scr_Hard_Coded_Item_Stats(itemVal, items_to_add = 1, reload = false) {
 	}
 	if itemVal = "XB04" {
 	    //global.XB[4]++;
+		global.soulshotspeed += 3;
+	    obj_Soul_Parent.sshotspeed += 3;
 	}
 
 	if itemVal = "XC01" {

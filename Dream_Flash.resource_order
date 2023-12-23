@@ -132,6 +132,7 @@
     {"name":"spr_locust_ko","order":1,"path":"sprites/spr_locust_ko/spr_locust_ko.yy",},
     {"name":"obj_Conga_Line","order":4,"path":"objects/obj_Conga_Line/obj_Conga_Line.yy",},
     {"name":"spr_fire_kiss_hop","order":7,"path":"sprites/spr_fire_kiss_hop/spr_fire_kiss_hop.yy",},
+    {"name":"spr_Nice_Crowd_Spirit_Eye","order":1,"path":"sprites/spr_Nice_Crowd_Spirit_Eye/spr_Nice_Crowd_Spirit_Eye.yy",},
     {"name":"obj_boxer","order":3,"path":"objects/obj_boxer/obj_boxer.yy",},
     {"name":"obj_Jello_Minion_old","order":12,"path":"objects/obj_Jello_Minion_old/obj_Jello_Minion_old.yy",},
     {"name":"obj_Distorted_Ghoul","order":11,"path":"objects/obj_Distorted_Ghoul/obj_Distorted_Ghoul.yy",},
@@ -154,6 +155,7 @@
     {"name":"obj_relentless_wisper_v2","order":1,"path":"objects/obj_relentless_wisper_v2/obj_relentless_wisper_v2.yy",},
     {"name":"obj_Lingering_Fire_Bullet","order":5,"path":"objects/obj_Lingering_Fire_Bullet/obj_Lingering_Fire_Bullet.yy",},
     {"name":"obj_Lingering_Fire_Trail_Bullet","order":6,"path":"objects/obj_Lingering_Fire_Trail_Bullet/obj_Lingering_Fire_Trail_Bullet.yy",},
+    {"name":"spr_Nice_Crowd_Spirit_Eye_Attack","order":2,"path":"sprites/spr_Nice_Crowd_Spirit_Eye_Attack/spr_Nice_Crowd_Spirit_Eye_Attack.yy",},
     {"name":"obj_fire_kiss","order":18,"path":"objects/obj_fire_kiss/obj_fire_kiss.yy",},
   ],
 }

@@ -2,7 +2,7 @@ scr_Default_Figment_Stats();
 
 shealth = 400;
 smaxhealth = 400;
-sfirerate = 360;
+sfirerate = 540;
 spower = 10;
 spoweraddition = 0;
 smovementspeed = 1.2;
