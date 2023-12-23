@@ -8,6 +8,9 @@ if global.gameParticles > 0 {
 	
 		var xx = random(shottrailarea) - (shottrailarea / 2);
 		var yy = random(shottrailarea) - (shottrailarea / 2);
+		
+		var _speed = 0;
+		var _direction = 0;
 	
 		with instance_create(x + xx,y + yy, shottrailtype) {
 		
@@ -24,6 +27,11 @@ if global.gameParticles > 0 {
 		
 			life = other.shottraillife;
 			alarm[0] = life;
+			
+			speed = other.shottrailspeed
+			direction = other.shottraildirection
+			
+			base_direction = direction
 
 		}
 	

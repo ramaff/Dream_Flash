@@ -13,9 +13,9 @@ function scr_XA03_Shot_Mod(){
 		
 		shotfire += 2 * global.XA[3];
 		
-		shotfireticks += 2;
+		shotfireticks += 3;
 		if shotfiretime = 0 {
-			shotfiretime = 60;
+			shotfiretime = 30;
 		}
 		
 		shotwavedirection = (10 * (round(other.sWeaponTicker) mod 2)) - 5

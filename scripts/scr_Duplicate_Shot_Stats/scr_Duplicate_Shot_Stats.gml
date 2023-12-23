@@ -43,6 +43,8 @@ function scr_Duplicate_Shot_Stats() {
 	shottrailcolor2 = other.shottrailcolor2;
 	shottraillife = other.shottraillife;
 	shottrailarea = other.shottrailarea;
+	shottrailspeed = other.shottrailspeed;
+	shottraildirection = other.shottraildirection;
 	shottrailfrequency = other.shottrailfrequency;
 	shottrailfade = other.shottrailfade;
 	shottrailhitcount = other.shottrailhitcount;

@@ -133,7 +133,7 @@
         "Description": "Poisonous thoughts put together into this weapon let it do damage over time. It's stackable too!",
         "Essence": 14,
         "Delay": 28,
-        "Complexity": "Medium",
+        "Complexity": "Low",
         "Shot_Sprite": "spr_Poison_Shot",
         "Shot_Power": 6,
         "Shot_Speed": 6,

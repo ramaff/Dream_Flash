@@ -3,8 +3,6 @@
 function scr_C11_Shot_Mod(excess_essence = 0){
 
 	if global.C[11] >= 1 {
-		Print_DF("senergy: " + string(senergy))
-		Print_DF("smaxenergy: " + string(smaxenergy))
 		if senergy >= (smaxenergy / 2) {
 			Shot_Size = sqrt((Shot_Size * Shot_Size) + (0.15 * global.C[11]));
 			var boost_fac = (1 + (0.3 * global.C[11]))

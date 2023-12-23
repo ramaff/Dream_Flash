@@ -74,6 +74,8 @@ function scr_Extra_Shot_Stats() {
 	shottrailcolor2 = other.Shot_Trail_Color2;
 	shottraillife = other.Shot_Trail_Life;
 	shottrailarea = other.Shot_Trail_Area;
+	shottrailspeed = other.Shot_Trail_Speed;
+	shottraildirection = other.Shot_Trail_Direction;
 	shottrailfrequency = other.Shot_Trail_Frequency;
 	shottrailfade = other.Shot_Trail_Fade;
 	shottrailhitcount = other.Shot_Trail_Hit_Count;

@@ -106,6 +106,12 @@ function scr_Setup_Weapon_Stats(_current_weapon_stats = current_weapon_stats) {
 	if variable_struct_exists(_current_weapon_stats, "Shot_Trail_Life") {
 		Shot_Trail_Life = _current_weapon_stats.Shot_Trail_Life
 	}
+	if variable_struct_exists(_current_weapon_stats, "Shot_Trail_Direction") {
+		Shot_Trail_Direction = _current_weapon_stats.Shot_Trail_Direction
+	}
+	if variable_struct_exists(_current_weapon_stats, "Shot_Trail_Speed") {
+		Shot_Trail_Speed = _current_weapon_stats.Shot_Trail_Speed
+	}
 	if variable_struct_exists(_current_weapon_stats, "Shot_Trail_Area") {
 		Shot_Trail_Area = _current_weapon_stats.Shot_Trail_Area
 	}

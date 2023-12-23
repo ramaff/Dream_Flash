@@ -1,6 +1,7 @@
+var dmg = 50;
+
 with (obj_Main_Boss_Parent) {
     
-	var dmg = 25;
 	bosshealth -= dmg;
             
 	scr_Damage_Indicator(0, dmg, 3);

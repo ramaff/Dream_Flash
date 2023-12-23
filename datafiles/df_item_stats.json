@@ -322,7 +322,7 @@
     },
     "D06": {
         "recollectionString": "Thoughts Racing",
-        "recollectionSprite": "spr_Relief_Item",
+        "recollectionSprite": "spr_Thoughts_Racing_Item",
         "recollectionExtraStats": "+Speed is Power",
         "recollectionDescription": "Projectiles massively accelerate now. All shots do extra damage the faster they are as well. Shot Lifespan cut by 30%.",
         "Snake_Credit": 0.5
@@ -1669,7 +1669,7 @@
     "XA01": {
         "recollectionString": "Loathsome",
         "recollectionSprite": "spr_Loathsome_Art",
-        "recollectionExtraStats": "+10% Soul Damage +20% Boss Damage",
+        "recollectionExtraStats": "+15% Soul Damage +25% Boss Damage",
         "recollectionDescription": "An overall increase in loathing results in 10% more damage being dealt to bosses, but 20% more damage being dealt to the soul. Also lowers shot accuracy."
     },
     "XA02": {
@@ -1688,7 +1688,7 @@
         "recollectionString": "Seethe",
         "recollectionSprite": "spr_Seethe_Art",
         "recollectionExtraStats": "+Seething Heart",
-        "recollectionDescription": "Getting hit has a 1/8 chance to convert the soul's rightmost heart into a seething heart. These hearts lose some of their max HP every room, but let the soul light enemies on fire."
+        "recollectionDescription": "Getting hit has a 1/16 chance to convert the soul's rightmost heart into a seething heart. These hearts lose some of their max HP every room, but let soul shots explode and deal extra damage."
     },
     "XA05": {
         "recollectionString": "Rub It In",

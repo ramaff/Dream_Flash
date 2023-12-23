@@ -1149,9 +1149,9 @@ function scr_Hard_Coded_Item_Stats(itemVal, items_to_add = 1, reload = false) {
 	
 	if itemVal = "XA01" {
 	    //global.XA[1]++;
-		global.soulpowerfactor += 1;
-	    obj_Soul_Parent.spowerfactor += 1;
-		global.bossdamagefactor += 0.2;
+		global.soulpowerfactor += 1.5;
+	    obj_Soul_Parent.spowerfactor += 1.5;
+		global.bossdamagefactor += 0.25;
 		global.soulaccuracy = global.soulaccuracy * 0.7;
 	    obj_Soul_Parent.saccuracy = obj_Soul_Parent.saccuracy * 0.7;
 	}
