@@ -1,6 +1,6 @@
 // Script assets have changed for v2.3.0 see
 // https://help.yoyogames.com/hc/en-us/articles/360005277377 for more information
-function scr_Boss_Soul_Hitbox(arg0){
+function scr_Boss_Soul_Hitbox(_hitbox_sprite = sprite_index, _hitbox_index = image_index){
 	if instance_exists(obj_Boss_Overlay) {
 		with(obj_Boss_Overlay) {
 			if bossd = other.id {
@@ -14,9 +14,10 @@ function scr_Boss_Soul_Hitbox(arg0){
 	}
 	if state = states.normal {
 		with instance_create(x,y,obj_Boss_Soul_Hitbox) {
-			sprite_index = arg0;
+			sprite_index = _hitbox_sprite;
 			image_xscale = other.image_xscale * 0.75;
 			image_yscale = other.image_yscale * 0.75;
+			image_index = _hitbox_index;
 		
 			bossid = other.id;
 			speed = other.speed;
