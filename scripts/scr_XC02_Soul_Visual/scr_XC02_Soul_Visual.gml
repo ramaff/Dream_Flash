@@ -1,30 +1,39 @@
 // Script assets have changed for v2.3.0 see
 // https://help.yoyogames.com/hc/en-us/articles/360005277377 for more information
 function scr_XC02_Soul_Visual(){
-	if global.XC[2] > 0 {
-		var shottrailarea = 120;
-		
-		var xx = random(shottrailarea) - (shottrailarea / 2);
-		var yy = random(shottrailarea) - (shottrailarea / 2);
 	
-		with instance_create(x + xx,y + yy,obj_Weapon_Trail) {
+	if global.XC[2] > 0 {
+		var _void_time = (current_time * 0.001) mod 9
 		
-			sprite_index = spr_Soul_Big_Bit;
+		if _void_time < 4 {
+			var _suck_multiplier = _void_time / 3
+			if _void_time > 3 {
+				_suck_multiplier = 4 - _void_time
+			}
+			
+			var shottrailarea = 100 + (200 * _suck_multiplier);
+		 
+			var xx = random(shottrailarea) - (shottrailarea / 2);
+			var yy = random(shottrailarea) - (shottrailarea / 2);
+	
+			with instance_create(x + xx,y + yy,obj_Black_Hole_Part) {
 		
-			depth = other.depth - 1;
+				sprite_index = spr_Soul_Big_Bit;
 		
-			image_blend = merge_colour(c_purple, c_black, random(1));
+				depth = other.depth - 1;
+		
+				image_blend = merge_colour(make_color_rgb(50, 0, 100), make_color_rgb(50, 0, 250), random(1));
 
-			size = 0.5;
-			image_xscale = size;
-			image_yscale = size;
+				size = 0.1 + 0.6 * _suck_multiplier;
+				image_xscale = size;
+				image_yscale = size;
 		
-			life = 15 + random(10);
-			alarm[0] = life;
-		
-			direction = point_direction(x,y,other.x,other.y);
-			speed = point_distance(x,y,other.x,other.y) / life;
+				life = 15 + random(10);
+				alarm[0] = life;
+				
+				target = other.id;
 
+			}
 		}
 	}
 }

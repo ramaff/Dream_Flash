@@ -21,7 +21,7 @@ function scr_XC06_Step(){
 			//Print_DF(speed)
 			
 			if instance_exists(feartarget) {
-				var _spec_dist = setdist * max(1, speed / 2)
+				var _spec_dist = setdist * max(1, speed / 2.5)
 				var _dis = point_distance(x, y, feartarget.x, feartarget.y)
 				var _dir_from_tar = point_direction(feartarget.x, feartarget.y, x, y);
 				var _x_tar = feartarget.x + lengthdir_x(_spec_dist, _dir_from_tar)

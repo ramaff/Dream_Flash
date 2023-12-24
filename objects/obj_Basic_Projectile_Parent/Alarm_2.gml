@@ -60,8 +60,12 @@ if global.gameParticles > 0 {
 			life = other.shottraillife;
 			alarm[0] = life;
 		
-			direction = point_direction(x,y,other.x,other.y);
-			speed = point_distance(x,y,other.x,other.y) / life;
+			if other.shottrailtype = obj_Black_Hole_Part {
+				target = other.id
+			} else {
+				direction = point_direction(x,y,other.x,other.y);
+				speed = point_distance(x,y,other.x,other.y) / life;
+			}
 
 		}
 	

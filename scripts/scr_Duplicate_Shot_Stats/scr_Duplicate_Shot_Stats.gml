@@ -301,6 +301,7 @@ function scr_Duplicate_Shot_Stats() {
 	shotwishful = other.shotwishful;
 	shotmiracle = other.shotmiracle;
 	
+	shotsucktype = other.shotsucktype
 	shotsuck = other.shotsuck;
 	
 	shotangularvelocity = other.shotangularvelocity;

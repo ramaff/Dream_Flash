@@ -223,6 +223,8 @@ function scr_Default_Shot_Stats() {
 	
 	shotwishful = 0;
 	shotmiracle = 0;
+	
+	shotsucktype = 1;
 	shotsuck = 0;
 	
 	followtarget = noone;

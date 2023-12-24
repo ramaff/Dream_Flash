@@ -1098,12 +1098,9 @@ function scr_Hard_Coded_Item_Stats(itemVal, items_to_add = 1, reload = false) {
 	}
 	if itemVal = "V03" {
 		if !reload {
-		    var tempV03 = global.V[3];
-			global.V[3] = 1;
 			repeat(global.currentchapter) {
 				scr_V03();
 			}
-			global.V[3] = tempV03;
 		}
 		//global.V[3]++;
 	}

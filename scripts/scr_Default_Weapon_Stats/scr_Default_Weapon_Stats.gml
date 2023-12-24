@@ -234,6 +234,8 @@ function scr_Default_Weapon_Stats() {
 	Shot_Wishful = 0;
 	
 	Shot_Angular_Velocity = 0;
+	
+	Shot_Suck_Type = 1;
 	Shot_Suck = 0;
 	
 	Shot_Extra = false;

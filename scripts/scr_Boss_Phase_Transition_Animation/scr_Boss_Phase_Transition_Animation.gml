@@ -8,8 +8,8 @@ function scr_Boss_Phase_Transition_Animation(_phase_into = 2, _transition_sprite
 		}
 		if image_index >= _final_frame {
 			boss_phase_transition = _phase_into;	
-		} else if active_attack_cooldown <= 2 {
-			active_attack_cooldown = 2;
+		} else if active_attack_cooldown <= 10 {
+			active_attack_cooldown = 10;
 		}
 	} else {
 		sprite_index = _new_sprite;	

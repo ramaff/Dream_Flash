@@ -1,22 +1,21 @@
 {
   "resourceType": "GMObject",
   "resourceVersion": "1.0",
-  "name": "obj_Bullet_Explosion",
+  "name": "obj_Black_Hole_Part",
   "eventList": [
     {"resourceType":"GMEvent","resourceVersion":"1.0","name":"","collisionObjectId":null,"eventNum":0,"eventType":2,"isDnD":false,},
-    {"resourceType":"GMEvent","resourceVersion":"1.0","name":"","collisionObjectId":null,"eventNum":1,"eventType":3,"isDnD":false,},
-    {"resourceType":"GMEvent","resourceVersion":"1.0","name":"","collisionObjectId":null,"eventNum":0,"eventType":8,"isDnD":false,},
+    {"resourceType":"GMEvent","resourceVersion":"1.0","name":"","collisionObjectId":null,"eventNum":0,"eventType":3,"isDnD":false,},
     {"resourceType":"GMEvent","resourceVersion":"1.0","name":"","collisionObjectId":null,"eventNum":0,"eventType":0,"isDnD":false,},
   ],
   "managed": true,
   "overriddenProperties": [],
   "parent": {
-    "name": "Parents",
-    "path": "folders/Objects/Boss Bullets/Parents.yy",
+    "name": "Particles",
+    "path": "folders/Objects/Particles.yy",
   },
   "parentObjectId": {
-    "name": "obj_Soul_Hurt",
-    "path": "objects/obj_Soul_Hurt/obj_Soul_Hurt.yy",
+    "name": "obj_Particle_Parent",
+    "path": "objects/obj_Particle_Parent/obj_Particle_Parent.yy",
   },
   "persistent": false,
   "physicsAngularDamping": 0.1,
@@ -33,7 +32,10 @@
   "physicsStartAwake": true,
   "properties": [],
   "solid": false,
-  "spriteId": null,
+  "spriteId": {
+    "name": "spr_Bullet_Conquest",
+    "path": "sprites/spr_Bullet_Conquest/spr_Bullet_Conquest.yy",
+  },
   "spriteMaskId": null,
   "visible": false,
 }

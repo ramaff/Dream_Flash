@@ -262,6 +262,8 @@ function scr_Extra_Shot_Stats() {
 	shotwander = other.Shot_Wander;
 	
 	shotwishful = other.Shot_Wishful;
+	
+	shotsucktype = other.Shot_Suck_Type;
 	shotsuck = other.Shot_Suck;
 	
 	shotangularvelocity = other.Shot_Angular_Velocity;

@@ -14,9 +14,12 @@ scr_Disk_Effect(20, 1.1, color);
 scr_Disk_Effect(40, 1.1, color2);
 
 with (obj_Boss_Parent) {
-	if point_distance(x,y,other.x,other.y) < 150 {
-		bosshealth -= other.damage * 10;
-		scr_Damage_Indicator(0, other.damage * 10, 1);
+	if point_distance(x,y,other.x,other.y) < 200 {
+		bosshealth -= other.damage * 15;
+		scr_Damage_Indicator(0, other.damage * 15, 2);
+		var dir = point_direction(x,y,other.x,other.y) + 180;
+		x += lengthdir_x(bullet_speed * 15, dir);
+		y += lengthdir_y(bullet_speed * 15, dir);
 	}
 }
 with (obj_Soul_Parent) {

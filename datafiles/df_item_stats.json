@@ -1743,7 +1743,7 @@
     "XC01": {
         "recollectionString": "Full Despair",
         "recollectionSprite": "spr_Full_Despair_Art",
-        "recollectionExtraStats": "+Game Difficulty +Boss Power +Darkness",
+        "recollectionExtraStats": "+Game Difficulty +Boss Power +10% Shot Power",
         "recollectionDescription": "The world is full of despair. Increases the difficulty of bosses encountered, while also increasing the amount of damage they deal."
     },
     "XC02": {
@@ -1762,13 +1762,13 @@
         "recollectionString": "Downward Spiral",
         "recollectionSprite": "spr_Downward_Spiral_Art",
         "recollectionExtraStats": "+Ever Growing Pain",
-        "recollectionDescription": "Every time the soul takes damage, all future damage is increased by 2%. Also has a slight boost to the damage the soul deals to bosses."
+        "recollectionDescription": "Every time the soul takes damage, all future damage taken by the soul is increased by 2%, and all damage done by the soul is increased by 1%"
     },
     "XC05": {
         "recollectionString": "Lasting Pain",
         "recollectionSprite": "spr_Lasting_Pain_Art",
         "recollectionExtraStats": "+Pain that Follows",
-        "recollectionDescription": "Every time the soul takes damage, pained spirits will closely follow the soul. These spirits eventually explode dealing extra damage to the soul."
+        "recollectionDescription": "Every time the soul takes damage, pained spirits will closely follow the soul. These spirits eventually explode dealing extra damage to the soul and anything else nearby."
     },
     "XC06": {
         "recollectionString": "Helpless",
