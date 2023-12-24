@@ -45,7 +45,7 @@ function scr_Boss_Damage_Calc() {
 		weakStrong = 1;
 	}
 	
-	var downward_boost = min(global.downwardSpiralBoost / 3, 0.2 * global.XC[4])
+	var downward_boost = global.downwardSpiralBoost / 2
 	
 	shotDamage += shotDamage * downward_boost;
 	shotweaktotal += shotweaktotal * downward_boost;

@@ -4445,6 +4445,7 @@
     {"id":{"name":"obj","path":"objects/obj/obj.yy",},},
     {"id":{"name":"obj_Life_Suck","path":"objects/obj_Life_Suck/obj_Life_Suck.yy",},},
     {"id":{"name":"spr_Muscle_Memory_Item","path":"sprites/spr_Muscle_Memory_Item/spr_Muscle_Memory_Item.yy",},},
+    {"id":{"name":"spr_Lasting_Pain_Fig_Self_Destructing","path":"sprites/spr_Lasting_Pain_Fig_Self_Destructing/spr_Lasting_Pain_Fig_Self_Destructing.yy",},},
     {"id":{"name":"obj_Expanding_Orbit_Bullet","path":"objects/obj_Expanding_Orbit_Bullet/obj_Expanding_Orbit_Bullet.yy",},},
     {"id":{"name":"obj_Bullet_Conquest","path":"objects/obj_Bullet_Conquest/obj_Bullet_Conquest.yy",},},
     {"id":{"name":"obj_Weapon_Trail","path":"objects/obj_Weapon_Trail/obj_Weapon_Trail.yy",},},

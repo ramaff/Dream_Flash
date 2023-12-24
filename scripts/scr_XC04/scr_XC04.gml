@@ -5,6 +5,6 @@
 
 function scr_XC04(){
 	if global.XC[4] > 0 {
-		global.downwardSpiralBoost += 0.02 * (global.XC[4]);	
+		global.downwardSpiralBoost += 0.02 * (global.XC[4]);
 	}
 }

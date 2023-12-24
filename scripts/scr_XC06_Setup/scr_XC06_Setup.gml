@@ -7,7 +7,7 @@ function scr_XC06_Setup(){
 
 	if global.XC[6] >= 1 {
 		//followtarget = other.id;
-		followtarget = noone;
+		feartarget = noone;
 		shotlifespan = shotlifespan * 2;
 		alarm[0] = shotlifespan;
 		shottimer = shotlifespan;

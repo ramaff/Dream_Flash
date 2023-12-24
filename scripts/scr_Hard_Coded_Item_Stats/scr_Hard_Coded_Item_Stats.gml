@@ -1189,9 +1189,11 @@ function scr_Hard_Coded_Item_Stats(itemVal, items_to_add = 1, reload = false) {
 	if itemVal = "XC01" {
 	    //global.XC[1]++;
 		
+		global.soulpowerfactor += 1;
+	    obj_Soul_Parent.spowerfactor += 1;
 		global.bossdamagefactor += 0.2;
 		global.bossdifficultyadd += 2;
-		global.gamedarknessadd+= 0.1;
+		global.gamedarknessadd += 0.1;
 		
 		scr_Spirit_Add_Commands();
 	}

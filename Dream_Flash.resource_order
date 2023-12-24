@@ -154,6 +154,7 @@
     {"name":"obj_Fire_Trail","order":1,"path":"objects/obj_Fire_Trail/obj_Fire_Trail.yy",},
     {"name":"obj_relentless_wisper_v2","order":1,"path":"objects/obj_relentless_wisper_v2/obj_relentless_wisper_v2.yy",},
     {"name":"obj_Lingering_Fire_Bullet","order":5,"path":"objects/obj_Lingering_Fire_Bullet/obj_Lingering_Fire_Bullet.yy",},
+    {"name":"spr_Lasting_Pain_Fig_Self_Destructing","order":3,"path":"sprites/spr_Lasting_Pain_Fig_Self_Destructing/spr_Lasting_Pain_Fig_Self_Destructing.yy",},
     {"name":"obj_Lingering_Fire_Trail_Bullet","order":6,"path":"objects/obj_Lingering_Fire_Trail_Bullet/obj_Lingering_Fire_Trail_Bullet.yy",},
     {"name":"spr_Nice_Crowd_Spirit_Eye_Attack","order":2,"path":"sprites/spr_Nice_Crowd_Spirit_Eye_Attack/spr_Nice_Crowd_Spirit_Eye_Attack.yy",},
     {"name":"obj_fire_kiss","order":18,"path":"objects/obj_fire_kiss/obj_fire_kiss.yy",},
