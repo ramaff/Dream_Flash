@@ -1392,7 +1392,7 @@
         },
 
         "Boss 057": {
-            "Name": "Boxed In",
+            "Name": "Hit Box",
             "Recollection_Sprite": "reco_boxer",
             "Health_Phase_1": 320,
             "Health_Phase_2": 240,

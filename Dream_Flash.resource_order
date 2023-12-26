@@ -113,6 +113,7 @@
     {"name":"scr_Bullet_Homing","order":1,"path":"scripts/scr_Bullet_Homing/scr_Bullet_Homing.yy",},
     {"name":"obj_Tar_Jello","order":14,"path":"objects/obj_Tar_Jello/obj_Tar_Jello.yy",},
     {"name":"spr_fire_starter_v2_flame_dance","order":2,"path":"sprites/spr_fire_starter_v2_flame_dance/spr_fire_starter_v2_flame_dance.yy",},
+    {"name":"scr_Essence_Beam_Step","order":1,"path":"scripts/scr_Essence_Beam_Step/scr_Essence_Beam_Step.yy",},
     {"name":"scr_Enemy_Bullet_Orbit_Suck","order":1,"path":"scripts/scr_Enemy_Bullet_Orbit_Suck/scr_Enemy_Bullet_Orbit_Suck.yy",},
     {"name":"spr_boss_template_ko","order":1,"path":"sprites/spr_boss_template_ko/spr_boss_template_ko.yy",},
     {"name":"spr_fire_starter_v2","order":1,"path":"sprites/spr_fire_starter_v2/spr_fire_starter_v2.yy",},
