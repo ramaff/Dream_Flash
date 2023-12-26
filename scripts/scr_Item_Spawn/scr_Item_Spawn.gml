@@ -134,10 +134,6 @@ function scr_Item_Spawn() {
 		        if other.fieldType = "Weapon Field" {
 		            weapon = 1;
 		        }
-				if iTier = "Special" {
-					shop = 2;
-					flashcost = 15;
-				}
 				
 				if i > 2 {
 					hopeDiamond = true;	

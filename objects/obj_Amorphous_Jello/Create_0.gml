@@ -13,3 +13,10 @@ scr_Boss_Size_Setup(0.5);
 // Needed for bobbing/boss shadows
 scr_Boss_Height_Setup(0);
 
+death_sprite = spr_amorphous_jello_ko;
+boss_palette = spr_Amorphous_Jello_Palette;
+boss_palette_index = champ;
+
+if champ = 8 {
+	boss_palette_index = 3;	
+}

@@ -136,7 +136,7 @@ function scr_Change_Room() {
 
 	}
 	
-	scr_Sound_Effect(sd_Soul_Teleport);
+	scr_Sound_Effect(snd_Soul_Teleport);
 
 
 

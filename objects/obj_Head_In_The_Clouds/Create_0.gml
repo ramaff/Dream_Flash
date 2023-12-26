@@ -13,3 +13,5 @@ scr_Boss_Size_Setup(0.5);
 // Needed for bobbing/boss shadows
 scr_Boss_Height_Setup(130);
 
+boss_palette = spr_Head_In_The_Clouds_Palette
+boss_palette_index = tier;

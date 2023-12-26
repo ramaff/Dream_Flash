@@ -5,10 +5,11 @@ function scr_Weapon_Output(_spawn_projectile = spawnProjectile, _minion = minion
 	if _spawn_projectile {
 		if !_minion {
 			scr_Shot_Creation();
+			scr_Q03(false);
 		} else {
-			scr_Soul_Spawn();	
+			scr_Soul_Spawn();
+			scr_Q03(true);
 		}
-		scr_Q03();
 	}
 
 }

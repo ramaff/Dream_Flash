@@ -21,3 +21,11 @@ scr_Boss_Height_Setup(70);
 if champ = 8 {
 	bossActiveAttackCooldown[1] = 60 + random(180);	
 }
+
+death_sprite = spr_crazy_eye_ko;
+boss_palette = spr_Crazy_Eyes_Palette;
+boss_palette_index = champ;
+
+if champ = 8 {
+	boss_palette_index = 2;	
+}

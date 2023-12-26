@@ -10,18 +10,17 @@ if !(instance_exists(Tutorial_Control)) {
 		_ascending = true
 	}
 	
-	if scr_State_Active_Check("Ascending", reverie) and Charge_Hold = 0 {
-			Charge_Speed = 0;
-			Charge_Power = 0;
-			Charge_Knockback = 0;
-			Charge_Lifespan = 0;
-			Charge_Time = 0;
-			Charge_Hold = 0;
-			Charge_Size = 0;
+	if Charge_Hold = 0 and (scr_Charged_Weapon(global.currentweapon) || _ascending = true) {
+		Charge_Speed = 0;
+		Charge_Power = 0;
+		Charge_Knockback = 0;
+		Charge_Lifespan = 0;
+		Charge_Time = 0;
+		Charge_Hold = 0;
+		Charge_Size = 0;
 
-			scr_Charged_Use();
-	
-	}
+		scr_Charged_Use();
+	}	
 
     if Charge_Hold = 0 and !scr_State_Active_Check("Ascending", reverie) {
         //ds_list_clear(global.gembeam_hits);

@@ -54,7 +54,7 @@ function scr_Soul_Teleport(_evasion = false){
 	scr_Casting_Soul_Teleport();
 	scr_Ascending_Soul_Teleport();
 	
-	scr_Sound_Effect(sd_Soul_Teleport);
+	scr_Sound_Effect(snd_Soul_Teleport);
     
 	scr_E09();
 	scr_E11();
@@ -62,5 +62,5 @@ function scr_Soul_Teleport(_evasion = false){
 	//scr_U03_Off();
     
 	tdelay += (120 - tdelayconservation) / ((40 + global.soulperception + global.soulperceptionTemp) / 40) / (tdelayconservationfactor);
-	senergy -= (20 - tenergyconservation) / ((40 + global.soulperception + global.soulperceptionTemp) / 40) / tenergyconservationfactor;
+	senergy -= (30 - tenergyconservation) / ((40 + global.soulperception + global.soulperceptionTemp) / 40) / tenergyconservationfactor;
 }

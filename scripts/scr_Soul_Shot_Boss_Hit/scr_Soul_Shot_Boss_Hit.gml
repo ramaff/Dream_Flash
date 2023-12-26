@@ -140,6 +140,7 @@ function scr_Soul_Shot_Boss_Hit() {
 	        } else {
 	            if shotknockback > other.bossknockdefense {
 	                other.path_position -= (shotknockback - other.bossknockdefense) / 1000;
+					other.deadknockdirection = direction
 	            }
 	        }
         

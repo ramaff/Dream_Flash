@@ -7,9 +7,7 @@ scr_Boss_Shadow(undefined, undefined, undefined, 2);
 draw_sprite_ext(spr_Cartwheel, image_index, x, y + boss_height - 40, image_xscale, image_yscale, 0, c_white, 1)
 
 // Palette Color Swap for different boss champs:
-var palindex = tier;
-
-pal_swap_set(spr_Head_In_The_Clouds_Palette,palindex,false);
+pal_swap_set(boss_palette,boss_palette_index,false);
 
 draw_self();
 

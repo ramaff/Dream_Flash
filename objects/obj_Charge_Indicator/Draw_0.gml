@@ -6,7 +6,8 @@ if instance_exists(obj_Soul_Parent) {
 	    image_alpha = -0.5;
 	}
 	
-	var cNum = ((3 + global.P[5]) / 3)
+	//var cNum = ((3 + global.P[5]) / 3)
+	var cNum = 1
 
 	var cMax = 120 * cNum;
 
@@ -20,16 +21,17 @@ if instance_exists(obj_Soul_Parent) {
 	var cMax = 150 * cNum;
 	} */
 	if variable_struct_exists(global.weapon_stats, obj_Soul_Parent.weaponcharge) {
-		current_stats = variable_struct_get(global.weapon_stats, obj_Soul_Parent.weaponcharge);
+		current_weapon_stats = scr_Setup_Default_Weapon_Stats(obj_Soul_Parent.weaponcharge)
+		scr_Modify_Current_Weapon_Stats();
 	
 		//show_debug_message("current_stats: " + string(current_stats))
 	
-		if variable_struct_exists(current_stats, "Charge_Time") {
-			cMax = current_stats.Charge_Time * cNum;
+		if variable_struct_exists(current_weapon_stats, "Charge_Time") {
+			cMax = current_weapon_stats.Charge_Time;
 		}
 		
 		if global.OC[3] > 0 {
-			cMax = cMax * 2.5;
+			cMax = cMax * 3;
 		}
 	}
 

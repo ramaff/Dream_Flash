@@ -10,7 +10,7 @@
   "bitRate": 128,
   "compression": 0,
   "conversionMode": 0,
-  "duration": 0.429966,
+  "duration": 0.424966,
   "parent": {
     "name": "old_placeholder_sounds",
     "path": "folders/Sounds/Sound Effects/old_placeholder_sounds.yy",
@@ -19,5 +19,5 @@
   "sampleRate": 44100,
   "soundFile": "sd_Recall_Get_2",
   "type": 0,
-  "volume": 1.0,
+  "volume": 0.8,
 }

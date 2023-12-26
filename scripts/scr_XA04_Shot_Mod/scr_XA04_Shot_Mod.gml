@@ -4,13 +4,21 @@
 // Extra Shot Stats
 
 function scr_XA04_Shot_Mod(){
-	if global.XA[4] > 0 and scr_Chance(4) and Soul_Hearts_Control.heart[global.currentheart, 2] = 53 {
-		shotspeed += 2 * global.XA[4];
-		speed = shotspeed;
+	if sprite_index = spr_Seething_Fire_Shot {
+		exit;	
+	}
+	
+	if global.XA[4] > 0 and Soul_Hearts_Control.heart[global.currentheart, 2] = 53 {
+		if shotspeed != 0 {
+			shotspeed += 2 * global.XA[4];
+			speed = shotspeed;
+		}
 		
-		shotfire += 3 * global.XA[4];
-		shotfireticks = 3;
-		shotfiretime = 90;
+		/*shotfire += 3 * global.XA[4];
+		shotfireticks = 4;
+		shotfiretime = 30; */
+		
+		scr_Shot_Power_Set(1.2);
 		
 		if shotimpacttype = 0 {
             shotimpacttype = 1;

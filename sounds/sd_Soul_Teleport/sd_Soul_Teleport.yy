@@ -10,7 +10,7 @@
   "bitRate": 128,
   "compression": 0,
   "conversionMode": 0,
-  "duration": 0.367109,
+  "duration": 0.362109,
   "parent": {
     "name": "new_placeholder_sounds",
     "path": "folders/Sounds/Sound Effects/new_placeholder_sounds.yy",

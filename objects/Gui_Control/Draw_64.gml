@@ -152,36 +152,36 @@ if !scr_Room_Leavable() {
     
     if rType = "Shop" {
         if global.currentchapter = 1 {
-            draw_sprite(spr_Soul_Flash,0,winx - 64,140);
+            draw_sprite_ext(spr_Soul_Flash,0,winx - 64,140,0.5,0.5,0,c_white,1);
             draw_text(winx - 64,156, string_hash_to_newline(string(global.soulflash)));
         }
         if global.currentchapter = 2 {
-            draw_sprite(spr_Soul_Feel,0,winx - 64,140);
+            draw_sprite_ext(spr_Soul_Feel,0,winx - 64,140,0.5,0.5,0,c_white,1);
             draw_text(winx - 64,156, string_hash_to_newline(string(global.soulflash)));
         }
         if global.currentchapter = 3 {
-            draw_sprite(spr_Soul_Dream,0,winx - 64,140);
+            draw_sprite_ext(spr_Soul_Dream,0,winx - 64,140,0.5,0.5,0,c_white,1);
             draw_text(winx - 64,156, string_hash_to_newline(string(global.soulflash)));
         }
         if global.currentchapter = 4 {
-            draw_sprite(spr_Soul_Nightmare,0,winx - 64,140);
+            draw_sprite_ext(spr_Soul_Nightmare,0,winx - 64,140,0.5,0.5,0,c_white,1);
             draw_text(winx - 64,156, string_hash_to_newline(string(global.soulflash)));
         }
     } else {
         if global.currentchapter = 1 {
-            draw_sprite(spr_Soul_Flash,0,winx - 64,140);
+            draw_sprite_ext(spr_Soul_Flash,0,winx - 64,140,0.5,0.5,0,c_white,1);
             draw_text(winx - 64,156, string_hash_to_newline(string(global.soulflash)));
         }
         if global.currentchapter = 2 {
-            draw_sprite(spr_Soul_Feel,0,winx - 64,140);
+            draw_sprite_ext(spr_Soul_Feel,0,winx - 64,140,0.5,0.5,0,c_white,1);
             draw_text(winx - 64,156, string_hash_to_newline(string(global.soulflash)));
         }
         if global.currentchapter = 3 {
-            draw_sprite(spr_Soul_Dream,0,winx - 64,140);
+            draw_sprite_ext(spr_Soul_Dream,0,winx - 64,140,0.5,0.5,0,c_white,1);
             draw_text(winx - 64,156, string_hash_to_newline(string(global.soulflash)));
         }
 		if global.currentchapter = 4 {
-            draw_sprite(spr_Soul_Nightmare,0,winx - 64,140);
+            draw_sprite_ext(spr_Soul_Nightmare,0,winx - 64,140,0.5,0.5,0,c_white,1);
             draw_text(winx - 64,156, string_hash_to_newline(string(global.soulflash)));
         }
     }

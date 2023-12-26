@@ -16,7 +16,11 @@ if shotmovement = 0 {
 }
 
 if shotsuck > 0 {
-	scr_Enemy_Bullet_Suck(shotsuck);	
+	if shotsucktype = 1 {
+		scr_Enemy_Bullet_Suck(shotsuck);	
+	} else if shotsucktype = 2 {
+		scr_Enemy_Bullet_Orbit_Suck(shotsuck);	
+	}
 }
 
 if shotbounce = 1 and shotairtarget = 0 and shotmelee = 0 {

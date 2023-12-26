@@ -2,7 +2,7 @@ if !(instance_exists(Tutorial_Control)) {
 
 	if !instance_exists(obj_Item_Parent) {
 	   var charge = false
-		if (senergy >= ((20 - tenergyconservation) / tenergyconservationfactor)) and (tdelay <= 0) {
+		if (senergy >= ((30 - tenergyconservation) / tenergyconservationfactor)) and (tdelay <= 0) {
 	        charge = true
 	    }
 		scr_Soul_Right_Click(charge);
@@ -17,7 +17,7 @@ if !(instance_exists(Tutorial_Control)) {
 
 	    if point_distance(obj_Astral_Indicator.x,obj_Astral_Indicator.y,obj_Item_Parent.x,obj_Item_Parent.y) > 50 {
 	        var charge = false
-			if (senergy >= ((20 - tenergyconservation) / tenergyconservationfactor)) and (tdelay <= 0) {
+			if (senergy >= ((30 - tenergyconservation) / tenergyconservationfactor)) and (tdelay <= 0) {
 	            charge = true
 	        }
 			scr_Soul_Right_Click(charge);

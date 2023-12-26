@@ -4,4 +4,5 @@
 alarm[1] = 60;
 alarm[3] = 5;
 
-image_index = 1;
+sprite_index = spr_Lasting_Pain_Fig_Self_Destructing
+image_speed = 1;

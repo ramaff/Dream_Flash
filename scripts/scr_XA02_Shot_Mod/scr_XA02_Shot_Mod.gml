@@ -4,7 +4,7 @@
 // Extra Shot Stats
 
 function scr_XA02_Shot_Mod(){
-	if scr_Chance(30 / global.XA[2]) {
+	if scr_Chance(18 / global.XA[2]) {
 		shotpower += shotpower;
 		shotpowermax += shotpowermax;
 		shotPowerLevel += shotPowerLevel;

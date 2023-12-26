@@ -13,8 +13,8 @@
     "path": "folders/Objects/Boss Bullets/Basic Bullets.yy",
   },
   "parentObjectId": {
-    "name": "obj_Basic_Enemy_Bullet_Parent",
-    "path": "objects/obj_Basic_Enemy_Bullet_Parent/obj_Basic_Enemy_Bullet_Parent.yy",
+    "name": "obj_Bullet_Parent",
+    "path": "objects/obj_Bullet_Parent/obj_Bullet_Parent.yy",
   },
   "persistent": false,
   "physicsAngularDamping": 0.1,

@@ -13,6 +13,7 @@ function scr_Q01() {
 		scr_Default_Weapon_Stats();
 		
 		current_weapon_stats = scr_Setup_Default_Weapon_Stats(_c_wp)
+		scr_Modify_Current_Weapon_Stats();
 		
 		var _delay = current_weapon_stats.Delay / scr_Class_Stat_Firerate_Multiplier();
 		
@@ -34,7 +35,7 @@ function scr_Q01() {
 		
 			//current_weapon_stats.Shot_Lobbing_Tilt = -10;
 
-			scr_setup_weapon_stats(current_weapon_stats);
+			scr_Setup_Weapon_Stats(current_weapon_stats);
 			
 			barrage = false;
 			minion = false;

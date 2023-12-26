@@ -1,17 +1,18 @@
 function scr_Bullet_Shoot_Properties() {
 
-	target = other;            
+	target = other.id;
 	bullettarget = other.bullet_target;
 	bulletorigin = other.id;
 	bulletobj = other.object_index;
 			
 	bpart = other.bullet_part;
-		bpartsprite = other.bullet_part_sprite;
-		bpartarea = other.bullet_part_area;
-		bpartfrequency = other.bullet_part_frequency;
-		bpartlife = other.bullet_part_life;
-		bpartcolor1 = other.bullet_part_color1;
-		bpartcolor2 = other.bullet_part_color2;
+	bpartsize = other.bullet_part_size;
+	bpartsprite = other.bullet_part_sprite;
+	bpartarea = other.bullet_part_area;
+	bpartfrequency = other.bullet_part_frequency;
+	bpartlife = other.bullet_part_life;
+	bpartcolor1 = other.bullet_part_color1;
+	bpartcolor2 = other.bullet_part_color2;
 			
 	bulletdepth = other.bullet_depth;
 	depth = bulletdepth;
@@ -52,7 +53,11 @@ function scr_Bullet_Shoot_Properties() {
 	
 	bulletlobtime = other.bullet_lob_time;
 	bounce_speed = other.bullet_bounce_speed;
-	bounce_gravity = 2 * bounce_speed / other.bullet_lob_time;
+	if other.bullet_bounce_gravity = 0 {
+		bounce_gravity = 2 * bounce_speed / other.bullet_lob_time;
+	} else {
+		bounce_gravity = other.bullet_bounce_gravity;	
+	}
 	bullet_bounce_Y = other.bullet_bounce_Y;
 	
 	bulletimagespeed = other.bullet_image_speed;
@@ -65,6 +70,8 @@ function scr_Bullet_Shoot_Properties() {
 	bulletstuntime = other.bullet_stun_time;
 	bulletsleep = other.bullet_sleep;
 	bulletsleeptime = other.bullet_sleep_time;
+	
+	champ = other.bullet_champ;
 			
 	if other.bullet_direction_angle = 1 {
 		image_angle = direction;	

@@ -22,16 +22,6 @@ if instance_exists(bossd) {
 	
 	depth = bossd.depth - 100;
 	
-	/*
-	if bossSprite = spr_Infatuation_Cloud {
-		y = bossd.y - 10;
-	}
-	
-	if bossSprite = spr_Thought_Cloud {
-		y = bossd.y - 10;
-	}
-	*/
-	
 	if bossSprite = spr_Watcher_Wall {
 		instance_destroy();
 	}

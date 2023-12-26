@@ -22,6 +22,17 @@ function scr_Boss_Morph_In(version = 1){
 			alarm[0] = 120;
 			
 			bossd = other.id;
+			
+			fade_out = true;
+			alph = 1;
+			
+			backg = spr_Mental_Background;
+			if global.currentchapter = 2 {
+				backg = spr_Mental_Background_Feel;
+			}
+			if global.currentchapter = 3 {
+				backg = spr_Mental_Background_Dream;
+			}
 		}
 		if version = 1 {
 			var ac = 0;
@@ -34,8 +45,10 @@ function scr_Boss_Morph_In(version = 1){
 		}
 		state = states.phasing;
 		
-		if object_get_name(id) = obj_Cursed_Clapper {
-			tickdown += 120;
+		if instance_exists(object_index) {
+			if object_get_name(object_index) = obj_Cursed_Clapper {
+				tickdown += 120;
+			}
 		}
 	}
 	

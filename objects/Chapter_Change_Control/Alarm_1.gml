@@ -1,5 +1,7 @@
 scr_H07_Respawn();
-scr_V03();
+repeat(global.V[3]) {
+	scr_V03();
+}
 scr_OA05_Setup();
 
 //scr_Emotion_Field_Spawn_Check()

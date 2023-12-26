@@ -21,3 +21,7 @@ box_size = 200;
 box_xx = center_xx - box_size - 5;
 box_yy = center_yy - box_size - 5;
 box_move_direction = 0;
+
+death_sprite = spr_boxer_ko;
+//boss_palette = spr_boxer_palette;
+//boss_palette_index = champ;

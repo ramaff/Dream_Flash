@@ -9,6 +9,10 @@ function scr_Extra_Shot_Stats() {
 	shot_stats = json_parse(json_stringify(other.Shot_Stats));
 	
 	y -= shot_stats.Shot_Height;
+	
+	if shot_stats.Shot_After_Images > 0 {
+		alarm[8] = 10;	
+	}
 
 	var shotaddedpow = ((10 + other.spowerfactor + other.sattackfactorbuffamount) / 10) * other.spower / 10 * scr_Class_Stat_Damage_Multiplier();
 
@@ -70,6 +74,8 @@ function scr_Extra_Shot_Stats() {
 	shottrailcolor2 = other.Shot_Trail_Color2;
 	shottraillife = other.Shot_Trail_Life;
 	shottrailarea = other.Shot_Trail_Area;
+	shottrailspeed = other.Shot_Trail_Speed;
+	shottraildirection = other.Shot_Trail_Direction;
 	shottrailfrequency = other.Shot_Trail_Frequency;
 	shottrailfade = other.Shot_Trail_Fade;
 	shottrailhitcount = other.Shot_Trail_Hit_Count;
@@ -256,6 +262,8 @@ function scr_Extra_Shot_Stats() {
 	shotwander = other.Shot_Wander;
 	
 	shotwishful = other.Shot_Wishful;
+	
+	shotsucktype = other.Shot_Suck_Type;
 	shotsuck = other.Shot_Suck;
 	
 	shotangularvelocity = other.Shot_Angular_Velocity;

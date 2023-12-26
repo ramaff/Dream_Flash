@@ -3,6 +3,10 @@ function scr_Boss_Stats_Setup(_version=1) {
 	finalphase = 2;
 	
 	facing_direction = 1;
+	boss_phase_transition = 1;
+	
+	boss_palette = undefined;
+	boss_palette_index = 0;
 	
 	new_boss = true
 	
@@ -48,6 +52,10 @@ function scr_Boss_Stats_Setup(_version=1) {
 	bossbulletspeed = 3;
 	patterndir = 0;
 	bosspower = 6;
+	
+	death_sprite = undefined;
+	
+	deadknockdirection = 0;
     
 	bossknockbackforce = 10;
 	bosscontactdamage = 5;

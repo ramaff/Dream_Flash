@@ -44,7 +44,7 @@ function scr_Weapon_Rebound() {
 	        current_weapon_stats.Shot_Speed = 3 + other.bspeed; 
 	    }
 	
-		scr_setup_weapon_stats(current_weapon_stats);
+		scr_Setup_Weapon_Stats(current_weapon_stats);
 		scr_Shot_Creation();
 
 	}

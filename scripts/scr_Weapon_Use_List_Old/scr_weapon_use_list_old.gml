@@ -816,8 +816,7 @@ function scr_Weapon_Use_List_Old() {
 		
 		//scr_Soul_Stretch("Horizontal", 0.2);
 		// set to 0 on weapon Switch
-		
-		scr_Q03();
+
 		
 		scr_Soul_Attack_Think();
 		

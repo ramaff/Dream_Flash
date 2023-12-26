@@ -8,7 +8,7 @@ function scr_Minion_Shot_Stats(){
 	minion_speed = 0;
 	minion_accuracy = 1; 
 	
-	champ = 0;
+	champ = other.champ;
 	
 	bossmaxhealth2 = 0;
 	

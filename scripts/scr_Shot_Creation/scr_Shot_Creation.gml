@@ -9,14 +9,13 @@ function scr_Shot_Creation() {
 	scr_D06();
 	scr_A08();
 	scr_D11();
-	scr_V09_Add_old();
+	//scr_V09_Add_old();
 	
 	scr_OB06();
 	scr_OC06();
 	scr_XB02();
 	scr_XA06();
 	scr_XA06();
-	//scr_OC03();
 	
 	
 	// Note

@@ -3,6 +3,7 @@
 surf = -1;
 
 alph = 1;
+fade_out = true;
 bossd = noone;
 
 existt = 0;
@@ -12,13 +13,4 @@ yyadd = 40;
 
 bossSprite = spr_Wall_Eye;
 
-/*
-difficulty = 0;
-	champ = 0;
-	boost = 0;   
-	bossNum = 0;
-	path_position = 0;
-	
-	bossObj = obj_Thought_Cloud;
-	
-	*/
+backg = spr_Mental_Background;

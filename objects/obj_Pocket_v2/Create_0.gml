@@ -14,3 +14,7 @@ scr_Boss_Size_Setup(0.5);
 scr_Boss_Height_Setup(80);
 
 pocket_spawn = [{}, {}, {}]
+
+death_sprite = spr_pocket_v2_ko;
+boss_palette = spr_new_pocket_palette;
+boss_palette_index = champ;

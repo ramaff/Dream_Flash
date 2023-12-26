@@ -292,7 +292,7 @@
     "D01": {
         "recollectionString": "Spiritual Swiftness",
         "recollectionSprite": "spr_Spiritual_Swiftness_Item",
-        "recollectionExtraStats": "+30% Movement Speed",
+        "recollectionExtraStats": "+30% Movement/Shot Speed",
         "recollectionDescription": "Make your soul move through the dreamscape much faster."
     },
     "D02": {
@@ -302,11 +302,10 @@
         "recollectionDescription": "Quick thinking lets you think of things to attack with faster."
     },
     "D03": {
-        "recollectionString": "Idea Throwing",
-        "recollectionSprite": "spr_Projectile_Launching_Item",
-        "recollectionExtraStats": "+40% Shot Speed +10% Firerate",
-        "recollectionDescription": "By throwing your ideas out there they move 40% faster",
-        "Snake_Credit": 0.5
+        "recollectionString": "Spitballing",
+        "recollectionSprite": "spr_Spitballing_Art",
+        "recollectionExtraStats": "+Fast Lobbing Shotgun",
+        "recollectionDescription": "Throw your ideas out there faster. Shots lob now, moving faster than before. You also create extra small shots."
     },
     "D04": {
         "recollectionString": "Rehearsed Thoughts",
@@ -322,10 +321,11 @@
         "Snake_Credit": 0.5
     },
     "D06": {
-        "recollectionString": "Momentous Occasion",
-        "recollectionSprite": "spr_Relief_Item",
-        "recollectionExtraStats": "+Speed Damage",
-        "recollectionDescription": "Once your ideas get out there, they just keep gaining momentum. Projectiles move faster and also will now do more damage based on how fast they are"
+        "recollectionString": "Thoughts Racing",
+        "recollectionSprite": "spr_Thoughts_Racing_Item",
+        "recollectionExtraStats": "+Speed is Power",
+        "recollectionDescription": "Projectiles massively accelerate now. All shots do extra damage the faster they are as well. Shot Lifespan cut by 30%.",
+        "Snake_Credit": 0.5
     },
     "D07": {
         "recollectionString": "Mindfulness",
@@ -704,7 +704,7 @@
     "I03": {
         "recollectionString": "Confident",
         "recollectionSprite": "spr_Confident_Art",
-        "recollectionExtraStats": "+4 Strength +4 Vanity",
+        "recollectionExtraStats": "+4 Strength +4 Assurance",
         "recollectionDescription": ""
     },
     "I04": {
@@ -741,7 +741,7 @@
     "I09": {
         "recollectionString": "Secure",
         "recollectionSprite": "spr_Secure_Art",
-        "recollectionExtraStats": "+4 Vitality +4 Vanity",
+        "recollectionExtraStats": "+4 Vitality +4 Assurance",
         "recollectionDescription": ""
     },
     "I10": {
@@ -778,7 +778,7 @@
     "I15": {
         "recollectionString": "Capable",
         "recollectionSprite": "spr_Capable_Art",
-        "recollectionExtraStats": "+4 Essence +4 Vanity",
+        "recollectionExtraStats": "+4 Essence +4 Assurance",
         "recollectionDescription": ""
     },
     "I16": {
@@ -815,7 +815,7 @@
     "I21": {
         "recollectionString": "Hyped",
         "recollectionSprite": "spr_Hyped_Art",
-        "recollectionExtraStats": "+4 Dexterity +4 Vanity",
+        "recollectionExtraStats": "+4 Dexterity +4 Assurance",
         "recollectionDescription": ""
     },
     "I22": {
@@ -852,7 +852,7 @@
     "I27": {
         "recollectionString": "Comfortable",
         "recollectionSprite": "spr_Comfortable_Art",
-        "recollectionExtraStats": "+4 Perception +4 Vanity",
+        "recollectionExtraStats": "+4 Perception +4 Assurance",
         "recollectionDescription": ""
     },
     "I28": {
@@ -888,7 +888,7 @@
     "I33": {
         "recollectionString": "Prideful",
         "recollectionSprite": "spr_Prideful_Art",
-        "recollectionExtraStats": "+4 State +4 Vanity",
+        "recollectionExtraStats": "+4 State +4 Assurance",
         "recollectionDescription": ""
     },
     "I34": {
@@ -1400,8 +1400,8 @@
     "P05": {
         "recollectionString": "Perfectionist",
         "recollectionSprite": "spr_Perfectionist_Art",
-        "recollectionExtraStats": "+Max Charged Shot Power",
-        "recollectionDescription": "Increases the max stats of charged weapons by 40%."
+        "recollectionExtraStats": "+Perfectly Prepared Shots",
+        "recollectionDescription": "All weapons deal twice as much damage, but also cost 80% more and take 80% longer to concieve of."
     },
     "P06": {
         "recollectionString": "Toxic Personality",
@@ -1469,8 +1469,8 @@
     "R04": {
         "recollectionString": "Proud Memory",
         "recollectionSprite": "spr_Proud_Memory_Art",
-        "recollectionExtraStats": "+5 Vanity +20 Recalls",
-        "recollectionDescription": "Remembering fills you with vanity..."
+        "recollectionExtraStats": "+5 Assurance +20 Recalls",
+        "recollectionDescription": "Remembering fills you with Assurance..."
     },
     "R05": {
         "recollectionString": "Peaceful Memory",
@@ -1669,7 +1669,7 @@
     "XA01": {
         "recollectionString": "Loathsome",
         "recollectionSprite": "spr_Loathsome_Art",
-        "recollectionExtraStats": "+10% Soul Damage +20% Boss Damage",
+        "recollectionExtraStats": "+15% Soul Damage +25% Boss Damage",
         "recollectionDescription": "An overall increase in loathing results in 10% more damage being dealt to bosses, but 20% more damage being dealt to the soul. Also lowers shot accuracy."
     },
     "XA02": {
@@ -1688,7 +1688,7 @@
         "recollectionString": "Seethe",
         "recollectionSprite": "spr_Seethe_Art",
         "recollectionExtraStats": "+Seething Heart",
-        "recollectionDescription": "Getting hit has a 1/8 chance to convert the soul's rightmost heart into a seething heart. These hearts lose some of their max HP every room, but let the soul light enemies on fire."
+        "recollectionDescription": "Getting hit has a 1/16 chance to convert the soul's rightmost heart into a seething heart. These hearts lose some of their max HP every room, but let soul shots explode and deal extra damage."
     },
     "XA05": {
         "recollectionString": "Rub It In",
@@ -1706,7 +1706,7 @@
     "XB01": {
         "recollectionString": "Paranoid",
         "recollectionSprite": "spr_Paranoid_Art",
-        "recollectionExtraStats": "+Less Soul/Boss Accuracy +Soul/Boss Firerate +Boss Bullet Speed",
+        "recollectionExtraStats": "-50% Soul/Boss Accuracy +20% Soul/Boss Firerate +40% Bullet Speed",
         "recollectionDescription": "Being paranoid lowers everyone's aim. It also increases the attack rate of everyone while speeding up boss bullets."
     },
     "XB02": {
@@ -1724,7 +1724,7 @@
     "XB04": {
         "recollectionString": "Jittery",
         "recollectionSprite": "spr_Jittery_Art",
-        "recollectionExtraStats": "+Jittery Shots/Bullets",
+        "recollectionExtraStats": "+Jittery Shots/Bullets +30% Shot Speed",
         "recollectionDescription": "Causes soul shots and boss bullets to jitter and change directions."
     },
     "XB05": {
@@ -1743,7 +1743,7 @@
     "XC01": {
         "recollectionString": "Full Despair",
         "recollectionSprite": "spr_Full_Despair_Art",
-        "recollectionExtraStats": "+Game Difficulty +Boss Power +Darkness",
+        "recollectionExtraStats": "+Game Difficulty +Boss Power +10% Shot Power",
         "recollectionDescription": "The world is full of despair. Increases the difficulty of bosses encountered, while also increasing the amount of damage they deal."
     },
     "XC02": {
@@ -1762,13 +1762,13 @@
         "recollectionString": "Downward Spiral",
         "recollectionSprite": "spr_Downward_Spiral_Art",
         "recollectionExtraStats": "+Ever Growing Pain",
-        "recollectionDescription": "Every time the soul takes damage, all future damage is increased by 2%. Also has a slight boost to the damage the soul deals to bosses."
+        "recollectionDescription": "Every time the soul takes damage, all future damage taken by the soul is increased by 2%, and all damage done by the soul is increased by 1%"
     },
     "XC05": {
         "recollectionString": "Lasting Pain",
         "recollectionSprite": "spr_Lasting_Pain_Art",
         "recollectionExtraStats": "+Pain that Follows",
-        "recollectionDescription": "Every time the soul takes damage, pained spirits will closely follow the soul. These spirits eventually explode dealing extra damage to the soul."
+        "recollectionDescription": "Every time the soul takes damage, pained spirits will closely follow the soul. These spirits eventually explode dealing extra damage to the soul and anything else nearby."
     },
     "XC06": {
         "recollectionString": "Helpless",

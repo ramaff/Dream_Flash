@@ -29,7 +29,7 @@ function scr_Beast_Maw_Use() {
 	current_weapon_stats.Shot_YY = lengthdir_y(dist, ang - 15 + random(30));
 	current_weapon_stats.Shot_Life_Drain = 0.5;
 		
-	scr_setup_weapon_stats(current_weapon_stats);
+	scr_Setup_Weapon_Stats(current_weapon_stats);
 
 	scr_Shot_Creation();
 	

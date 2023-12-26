@@ -32,8 +32,8 @@ function scr_XB02() {
 		variable_struct_set(Shot_Air_Burst_Stats[burstIndex], "Burst_Size", 0.65); 
 		variable_struct_set(Shot_Air_Burst_Stats[burstIndex], "Burst_Speed", Shot_Speed * 1.2);
 		variable_struct_set(Shot_Air_Burst_Stats[burstIndex], "Air_Burst", true); 
-		variable_struct_set(Shot_Air_Burst_Stats[burstIndex], "Range", 110); 
-		var amount = 4
+		variable_struct_set(Shot_Air_Burst_Stats[burstIndex], "Range", 140); 
+		var amount = 5
 		variable_struct_set(Shot_Air_Burst_Stats[burstIndex], "Amount", amount); 
 		variable_struct_set(Shot_Air_Burst_Stats[burstIndex], "Spread", -(360 / saccuracy));
 		if global.currentweapon = 14 {

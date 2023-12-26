@@ -2,7 +2,7 @@
 function scr_XA04() {
 	
 	if global.XA[4] > 0 {
-		if scr_Chance(max(1,8 / global.XA[4])) {
+		if scr_Chance(max(1,16 / global.XA[4])) {
 			with (Soul_Hearts_Control) {
 				for(i = 23; i >= 0; i--) {
 					var heart_val = heart[i,2] - frac(heart[i,2]);

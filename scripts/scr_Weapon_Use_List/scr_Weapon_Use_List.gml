@@ -10,24 +10,25 @@ function scr_Weapon_Use_List(cWP = global.currentweapon) {
 	
 	//cWP = global.currentweapon;
 	
-	umbrellaActive = false;
+	var _umbrella_active = false;
 	
 	if cWP = 603 and instance_exists(obj_Umbrella_Shot) {
 		with (obj_Umbrella_Shot) {
 			if shotfolloworigin = other.id {
-				other.umbrellaActive = true;
+				_umbrella_active = true;
 			}
 		}
 	}
 	
 	//current_weapon_stats = json_parse(json_stringify(variable_struct_get(global.weapon_stats, string(cWP))))
 	current_weapon_stats = scr_Setup_Default_Weapon_Stats(cWP)
+	scr_Modify_Current_Weapon_Stats();
 	
 	weaponCost = current_weapon_stats.Essence;	
 	weaponDelay = current_weapon_stats.Delay;
 	//show_debug_message("Weapon Cost: " + string(weaponCost) + ", Weapon Delay: " + string(weaponDelay))
 	
-	if cWP = 603 and umbrellaActive {
+	if cWP = 603 and _umbrella_active {
 		weaponCost = weaponCost / 10;
 	}
 	
@@ -74,11 +75,17 @@ function scr_Weapon_Use_List(cWP = global.currentweapon) {
 			scr_Ascending_Soul_Essence_Beam(cWP);	
 		}
 		
-		scr_setup_weapon_stats(current_weapon_stats);
+		scr_D03();
+		
+		scr_Setup_Weapon_Stats(current_weapon_stats);
 		
 		barrage = false;
 		minion = false;
 		spawnProjectile = true;
+		
+		if cWP = 603 {
+			spawnProjectile = !_umbrella_active;	
+		}
 		
 		scr_Hard_Coded_Weapon_Stats(cWP);
 		
@@ -147,37 +154,23 @@ function scr_Weapon_Use_List(cWP = global.currentweapon) {
 		
 		scr_C11_Shot_Mod(realCost)
 		
-		senergy -= realCost;
-		
-		if spawnProjectile {
-			if !minion {
-				scr_Shot_Creation();
-			} else {
-				scr_Soul_Spawn();	
-			}
-			scr_Q03();
+		if obj_Soul_Parent.scurrentstate = "Bleeding" and cWP < 700 {
+			scr_Bleeding_Blade_Use();
 		}
+		
+		scr_Weapon_Output(spawnProjectile, minion)
 		
 		if Shot_Extra != false {
 			
 			var i = 0
 			for(i = 0; i < array_length(Shot_Extra); i++) {
 			
-				//show_debug_message(string(Shot_Extra))
-			
 				current_weapon_stats = Shot_Extra[i]
 			
-				scr_setup_weapon_stats(current_weapon_stats)
+				scr_Setup_Weapon_Stats(current_weapon_stats)
 				scr_Hard_Coded_Weapon_Stats(cWP);
 		
-				if spawnProjectile {
-					if !minion {
-						scr_Shot_Creation();
-					} else {
-						scr_Soul_Spawn();	
-					}
-					scr_Q03();
-				}
+				scr_Weapon_Output(spawnProjectile, minion)
 			}
 		}
 		
@@ -185,9 +178,7 @@ function scr_Weapon_Use_List(cWP = global.currentweapon) {
 			scr_OC03(cWP);
 		}
 		
-		if obj_Soul_Parent.scurrentstate = "Bleeding" and cWP < 700 {
-			scr_Bleeding_Blade_Use();
-		}
+		senergy -= realCost;
     
 	    sdelay += weaponDelay / scr_Class_Stat_Firerate_Multiplier();
 	    sWeaponUseFrame = 1;   

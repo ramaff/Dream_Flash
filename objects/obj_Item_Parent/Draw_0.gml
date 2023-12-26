@@ -108,12 +108,6 @@ if is_string(itemVal) {
     
     draw_sprite_ext(spr_Item_Template,tempNum,x,y,spriteSize,spriteSize,0,c_white,1);
 	image_index = tempNum;
-} else {
-	spriteSize = 0.5;
-    //draw_sprite_ext(spr_Weapon_Template,1,x,y,spriteSize,spriteSize,0,c_white,1);
-	draw_sprite_ext(spr_Soul_Weapon_Border,1,x,y,spriteSize,spriteSize,0,c_white,1);
-	image_index = 1;
-	//sprite_index = spr_Weapon_Template;
 }
 
 image_speed = 0;
@@ -147,7 +141,7 @@ if is_string(itemVal) {
 }
 
 
-if hopeDiamond = true {
+if hopeDiamond = true and weapon = 0 {
 	draw_sprite_ext(spr_Hope_Item_Diamond,0,x,y,spriteSize,spriteSize,0,c_white,1);
 }
 
@@ -162,6 +156,29 @@ if weapon = 1 {
 	} else {
 		exit;	
 	}
+	
+	var _complexity = "Low"
+	
+	if variable_struct_exists(current_weapon_stats, "Complexity") {
+		_complexity = current_weapon_stats.Complexity;	
+	}
+	
+	var _complexity_index = 0;
+	fieldColor = make_color_rgb(255, 0, 9)
+	
+	if _complexity = "Medium" {
+		_complexity_index = 1;
+		fieldColor = make_color_rgb(238, 10, 255)
+		
+	}
+	if _complexity = "High" {
+		_complexity_index = 2;	
+		fieldColor = make_color_rgb(92, 43, 255)
+	}
+	
+	draw_sprite_ext(spr_Soul_Weapon_Border,_complexity_index,x,y,spriteSize,spriteSize,0,c_white,1);
+	image_index = 1;
+	
 	if variable_struct_exists(current_weapon_stats, "Recollection_Sprite") {
 		weapSpr = asset_get_index(current_weapon_stats.Recollection_Sprite)
 		if weapSpr = -1 {

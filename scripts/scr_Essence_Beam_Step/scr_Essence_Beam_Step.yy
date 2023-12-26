@@ -5,7 +5,7 @@
   "isCompatibility": false,
   "isDnD": false,
   "parent": {
-    "name": "Beams and punches",
-    "path": "folders/Scripts/Weapon And Projectile Commands/Imaginary Weapon Use/Beams and punches.yy",
+    "name": "Misc Setup",
+    "path": "folders/Scripts/Weapon And Projectile Commands/Misc Setup.yy",
   },
 }

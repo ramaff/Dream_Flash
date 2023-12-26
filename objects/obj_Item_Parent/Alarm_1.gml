@@ -2,19 +2,6 @@
 // You can write your code in this editor
 alarm[1] = 10 + irandom(20);
 
-/*
-with instance_create(x,y,obj_Item_Diamond) {
-	alarm[0] = 150;
-	speed = 0;
-	image_speed = 0;
-	sprite_index = spr_White_Diamond;
-	image_index = other.image_index;
-	image_xscale = 0.4;
-	image_yscale = 0.4;
-	
-	fieldColor = c_white;
-}
-*/
 
 var shottrailarea = 80;
 

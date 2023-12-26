@@ -29,3 +29,7 @@ shadow_positions = [
 edge_xx = xx_center - room_half_size
 edge_yy = yy_center
 edge_direction = 45;
+
+death_sprite = spr_ninja_spirit_v2_ko;
+boss_palette = spr_ninja_spirit_v2_palette;
+boss_palette_index = champ;

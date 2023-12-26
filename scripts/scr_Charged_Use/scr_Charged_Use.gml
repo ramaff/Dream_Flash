@@ -24,7 +24,8 @@ function scr_Charged_Use() {
 		if sdelay <= 0 { 
 			weaponcharge = global.currentweapon;
 
-			current_weapon_stats = variable_struct_get(global.weapon_stats, string(weaponcharge))
+			current_weapon_stats = scr_Setup_Default_Weapon_Stats(weaponcharge)
+			scr_Modify_Current_Weapon_Stats();
 			
 			if Charge_Hold = 2 {
 				scr_Ascending_Soul_Essence_Beam(weaponcharge);
@@ -34,8 +35,8 @@ function scr_Charged_Use() {
 			weaponDelay = current_weapon_stats.Delay;
 			
 			if global.OC[3] > 0 {
-				weaponDelay = weaponDelay * 2.5;
-				weaponCost = weaponCost * 2.5;	
+				weaponDelay = weaponDelay * 3;
+				weaponCost = weaponCost * 3;	
 			}
 			
 			scr_Setup_Charge_Stats()
@@ -63,6 +64,8 @@ function scr_Charged_Use() {
 			}
 
 			scr_V07_Gain(energyCost / 5);
+			
+			//Charge_Essence += energyCost;
 		}
 
 	}

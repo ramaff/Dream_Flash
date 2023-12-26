@@ -36,7 +36,7 @@ function scr_Bleeding_Blade_Use() {
 
 	current_weapon_stats.Shot_Size = 0.35 + (sqrt(Shot_Power) / 40);
 	
-	scr_setup_weapon_stats(current_weapon_stats);
+	scr_Setup_Weapon_Stats(current_weapon_stats);
 
 	scr_Shot_Creation();
 	

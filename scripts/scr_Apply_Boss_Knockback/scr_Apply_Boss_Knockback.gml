@@ -9,4 +9,5 @@ function scr_Apply_Boss_Knockback(_target = other.id, _knockback = shotknockback
 			_target.bossknockback = 200;	
 		}
 	}
+	_target.deadknockdirection = _direction
 }

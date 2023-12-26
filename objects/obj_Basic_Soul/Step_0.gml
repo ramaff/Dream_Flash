@@ -180,54 +180,23 @@ if scurrentstate = "Powering Up" {
 
 scr_State_Power_Down();
 
-if (global.P[1] = 0 and global.C[9] = 0) || global.C[11] > 0 {
-	if global.bosscount > 0 {
-	    senergy += 0.333 * energyregenfactor * scr_Class_Stat_Essence_Regen_Multiplier();
-	} else {
-	    senergy += 3.33 * energyregenfactor * scr_Class_Stat_Essence_Regen_Multiplier();
-	}
-	var essenceCap = smaxenergy + scr_Class_Stat_Essence_Cap_Increase();
+var essenceCap = smaxenergy + scr_Class_Stat_Essence_Cap_Increase();
+var _surpass_cap = global.P[1] > 0 || global.C[9] > 0
 
-	if senergy > essenceCap {
-		
-		/*if global.C[11] > 0 {
-			scr_C11_Essup(senergy - essenceCap);
-		} */
-		
-	    senergy = essenceCap;
+if (senergy < essenceCap) {
+	if global.bosscount > 0 {
+		senergy += 0.5 * energyregenfactor * scr_Class_Stat_Essence_Regen_Multiplier();
+	} else {
+		senergy += 5 * energyregenfactor * scr_Class_Stat_Essence_Regen_Multiplier();
 	}
-} else {//if global.P[1] > 0 {
-	//scr_P01();
-//} if global.C[9] > 0 {
-	var essenceCap = smaxenergy + scr_Class_Stat_Essence_Cap_Increase();
+}
 	
-	/*if senergy > essenceCap {
-		if global.C[11] > 0 {
-			scr_C11_Essup(senergy - essenceCap);
-			senergy = essenceCap;
-		}
-	} */
-	
-	if senergy < essenceCap {
-		if global.bosscount > 0 {
-		    senergy += 0.5 * energyregenfactor * scr_Class_Stat_Essence_Regen_Multiplier();
-		} else {
-		    senergy += 5 * energyregenfactor * scr_Class_Stat_Essence_Regen_Multiplier();
-		}
-	}
+if senergy > essenceCap and _surpass_cap = false {
+	senergy = essenceCap;
 }
 
 if stransformedstate != "None"{
 	var sCap = smaxstate;
-	
-	//var sFac = ((60 + global.soulstate + global.soulstateTemp) / 60);
-	
-	/*
-	if sstatecharge > essenceCap {
-		if global.C[11] > 0 {
-			scr_C11_Essup(0.5 * sstateregenfactor * sFac);
-		}
-	} */
 	
 	if sstatecharge > sCap {
 		sstatecharge = sCap;
@@ -245,11 +214,6 @@ sdelay -= sdelayregenfactor;
 if sdelay < 0 {
     sdelay = 0;
 }
-/*
-if senergy < 0 {
-    senergy = 0;
-}
-*/
 
 tdelay -= tdelayregenfactor;
 if tdelay < 0 {
@@ -263,32 +227,6 @@ if soulDeathFadeSpeed = 0 {
         alarm[9] = 72;
     }
 }
-
-/*
-//Horizontal collisions
-if place_meeting(x+hspeed,y,obj_The_Border) {
-        while !place_meeting(x+sign(hspeed),y,obj_The_Border) {
-                 x += sign(hspeed);
-        }
-        hspeed = 0;
-}
-x += hspeed;
-
-//Vertical collisions
-if place_meeting(x,y+vspeed,obj_The_Border) {
-        while !place_meeting(x,y+sign(vspeed),obj_The_Border) {
-                 y += sign(vspeed);
-        }
-        vspeed = 0;
-}
-y += vspeed;
-*/
-
-//sprite_index = spr_New_Soul_Swaying;
-//sprite_index = spr_The_Soul_Trail_Sway;
-//image_index = 4;
-
-//sprite_index = spr_Snake_Soul;
 
 if soulsleep = 1 {
 	scr_Soul_Attack_Think();	

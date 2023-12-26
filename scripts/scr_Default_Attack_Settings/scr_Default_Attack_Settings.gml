@@ -17,6 +17,8 @@ function scr_Default_Attack_Settings() {
 	    bullet_image_speed = 1;
 		bullet_direction_angle = 1;
 		bullet_depth = 0;
+		
+		bullet_champ = 0;
 	
 		bullet_part = 0;
 		bullet_part_sprite = spr_Essence_Trail_Bit;
@@ -25,6 +27,7 @@ function scr_Default_Attack_Settings() {
 		bullet_part_life = 30;
 		bullet_part_color1 = c_white;
 		bullet_part_color2 = c_white;
+		bullet_part_size = 0.5;
 		
 		bullet_crowd_direction = 0;
 		bullet_crowd_speed = 0;
@@ -33,7 +36,7 @@ function scr_Default_Attack_Settings() {
 		bullet_bounce_Y = 0;
 		bullet_bounce_speed = 4;
 	    bullet_bounce_direction = 1;
-		bullet_bounce_gravity = 0.2;
+		bullet_bounce_gravity = 0;
 		
 		bullet_charged = false;
 		

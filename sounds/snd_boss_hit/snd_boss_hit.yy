@@ -10,7 +10,7 @@
   "bitRate": 128,
   "compression": 0,
   "conversionMode": 0,
-  "duration": 0.175,
+  "duration": 0.17,
   "parent": {
     "name": "new_placeholder_sounds",
     "path": "folders/Sounds/Sound Effects/new_placeholder_sounds.yy",
@@ -19,5 +19,5 @@
   "sampleRate": 44100,
   "soundFile": "snd_boss_hit.wav",
   "type": 0,
-  "volume": 1.0,
+  "volume": 0.61,
 }

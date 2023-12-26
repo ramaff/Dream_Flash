@@ -16,4 +16,9 @@ if cHeart = 51 {
 
 scr_OC02(cHeart);
 
+if cHeart = 53 {
+	heartReload = 15;
+	scr_H53();
+}
+
 alarm[2] = heartReload;
