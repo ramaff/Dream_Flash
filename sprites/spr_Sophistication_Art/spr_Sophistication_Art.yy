@@ -1,7 +1,7 @@
 {
   "resourceType": "GMSprite",
   "resourceVersion": "1.0",
-  "name": "spr_Juggling_Ideas",
+  "name": "spr_Sophistication_Art",
   "bbox_bottom": 157,
   "bbox_left": 6,
   "bbox_right": 157,
@@ -13,14 +13,14 @@
   "edgeFiltering": false,
   "For3D": false,
   "frames": [
-    {"resourceType":"GMSpriteFrame","resourceVersion":"1.1","name":"72bcaff1-9a1c-4cfc-ba22-07071224dcd2",},
+    {"resourceType":"GMSpriteFrame","resourceVersion":"1.1","name":"cda49b2c-3336-44d3-a12b-f73abc7d3731",},
   ],
   "gridX": 0,
   "gridY": 0,
   "height": 164,
   "HTile": false,
   "layers": [
-    {"resourceType":"GMImageLayer","resourceVersion":"1.0","name":"14affe6c-9b5c-47f8-ae15-b9afd8893f6d","blendMode":0,"displayName":"default","isLocked":false,"opacity":100.0,"visible":true,},
+    {"resourceType":"GMImageLayer","resourceVersion":"1.0","name":"e1b0b20a-3537-4af4-b635-9b57680d655b","blendMode":0,"displayName":"default","isLocked":false,"opacity":100.0,"visible":true,},
   ],
   "nineSlice": null,
   "origin": 4,
@@ -32,7 +32,7 @@
   "sequence": {
     "resourceType": "GMSequence",
     "resourceVersion": "1.4",
-    "name": "spr_Juggling_Ideas",
+    "name": "spr_Sophistication_Art",
     "autoRecord": true,
     "backdropHeight": 768,
     "backdropImageOpacity": 0.5,
@@ -54,7 +54,7 @@
     "timeUnits": 1,
     "tracks": [
       {"resourceType":"GMSpriteFramesTrack","resourceVersion":"1.0","name":"frames","builtinName":0,"events":[],"inheritsTrackColour":true,"interpolation":1,"isCreationTrack":false,"keyframes":{"resourceType":"KeyframeStore<SpriteFrameKeyframe>","resourceVersion":"1.0","Keyframes":[
-            {"resourceType":"Keyframe<SpriteFrameKeyframe>","resourceVersion":"1.0","Channels":{"0":{"resourceType":"SpriteFrameKeyframe","resourceVersion":"1.0","Id":{"name":"72bcaff1-9a1c-4cfc-ba22-07071224dcd2","path":"sprites/spr_Juggling_Ideas/spr_Juggling_Ideas.yy",},},},"Disabled":false,"id":"fcc7dd72-c3e6-4e17-a2c3-cf34e235a302","IsCreationKey":false,"Key":0.0,"Length":1.0,"Stretch":false,},
+            {"resourceType":"Keyframe<SpriteFrameKeyframe>","resourceVersion":"1.0","Channels":{"0":{"resourceType":"SpriteFrameKeyframe","resourceVersion":"1.0","Id":{"name":"cda49b2c-3336-44d3-a12b-f73abc7d3731","path":"sprites/spr_Sophistication_Art/spr_Sophistication_Art.yy",},},},"Disabled":false,"id":"db0feea7-c8cf-4add-bd92-160737442d21","IsCreationKey":false,"Key":0.0,"Length":1.0,"Stretch":false,},
           ],},"modifiers":[],"spriteId":null,"trackColour":0,"tracks":[],"traits":0,},
     ],
     "visibleRange": null,

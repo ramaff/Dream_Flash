@@ -1,6 +1,6 @@
 
 
-function scr_Weapon_Use_List(cWP = global.currentweapon) {
+function scr_Weapon_Use_List(cWP = global.currentweapon, _weap_slot = 0) {
 	weapStop = 0;
 
 	scr_C08();
@@ -63,8 +63,8 @@ function scr_Weapon_Use_List(cWP = global.currentweapon) {
 			weaponDelay = weaponDelay / 1.25;
 		}
 	}
+
 	
-	//if senergy >= weapStop + weaponCost || Charge_Hold = 2 { 
 	if senergy >= weaponCost || Charge_Hold = 2 || weapStop != 0 || senergy >= smaxenergy { 
 	
 		global.soulNoShoot = 0;
@@ -180,9 +180,12 @@ function scr_Weapon_Use_List(cWP = global.currentweapon) {
 		
 		senergy -= realCost;
     
-	    sdelay += weaponDelay / scr_Class_Stat_Firerate_Multiplier();
+		if global.N[5] > 0 {
+			global.WeaponJugglingDelay[_weap_slot] += weaponDelay / scr_Class_Stat_Firerate_Multiplier();
+		} else {
+			sdelay += weaponDelay / scr_Class_Stat_Firerate_Multiplier();
+		}
 	    sWeaponUseFrame = 1;   
-		sWeaponTicker++;
 		global.essencebeamtime++;
 		
 		if weapStop != 0 {

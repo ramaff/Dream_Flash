@@ -753,6 +753,11 @@ function scr_Hard_Coded_Item_Stats(itemVal, items_to_add = 1, reload = false) {
 	    //global.N[4] += 1;
 		//global.mechprogress += 0.5;
 	}
+	if itemVal = "N06" {
+	    if !reload {
+			scr_N06();	
+		}
+	}
 
 	if itemVal = "M01" {
 	    //global.M[1] += 1;
