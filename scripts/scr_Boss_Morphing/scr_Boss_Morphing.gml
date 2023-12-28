@@ -9,8 +9,8 @@ function scr_Boss_Morphing(){
 		}
 	}
 	
-	if state = states.phasing and object_get_name(id) != obj_Cursed_Clapper and object_get_name(id) != obj_Veil_Mask {
-		speed = 0;
+	if state = states.phasing and object_get_name(other.object_index) != obj_Cursed_Clapper and object_get_name(other.object_index) != obj_Veil_Mask {
+		speed = 0;	
 		//path_speed = 0;
 		path_position = init_path_position;
 	}

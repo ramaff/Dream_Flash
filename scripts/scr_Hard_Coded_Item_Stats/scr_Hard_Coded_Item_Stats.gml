@@ -66,11 +66,7 @@ function scr_Hard_Coded_Item_Stats(itemVal, items_to_add = 1, reload = false) {
 	if itemVal = "A12" {
 	    //global.A[12]++;
 	}
-	if itemVal = "A13" {
-	    global.soulpoweradd += 1;
-	    obj_Soul_Parent.spoweradd += 1;
-	    global.soulpowerfactor += 0.75;
-	    obj_Soul_Parent.spowerfactor += 0.75;
+	if itemVal = "A13" { // Ambition
 	    //global.A[13]++;
 	}
 	if itemVal = "A14" {
@@ -612,8 +608,8 @@ function scr_Hard_Coded_Item_Stats(itemVal, items_to_add = 1, reload = false) {
 		if itemVal = "J06" {
 		    Soul_Hearts_Control.heart[global.currentheart + 1, 2] = 1;
 		    global.totalhearts++;
-		    global.soulstate += 3;
-		    obj_Soul_Parent.sstate += 3;
+		    global.soulstate += 4;
+		    obj_Soul_Parent.sstate += 4;
 		    //global.J[6]++;
 		}
 		if itemVal = "J07" {

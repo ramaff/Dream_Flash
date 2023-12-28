@@ -1,6 +1,8 @@
 function scr_Soul_Damage_Calculation() {
 	//Location Soul Hit Events
-
+	
+		isSoulAmbitious = false;
+	
 	//if (damageamount > defenseamount) {
 	    soulinvincibility = 36;
 		

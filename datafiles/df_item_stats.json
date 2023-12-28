@@ -81,10 +81,12 @@
         "recollectionDescription": "The power flowing from your soul overwhelming. The power leaks and does damage to nearby enemies."
     },
     "A13": {
-        "recollectionString": "Good Thinking",
+        "recollectionString": "Ambition",
         "recollectionSprite": "spr_Stronger_Imagination_Item",
-        "recollectionExtraStats": "+1 Shot Power +7.5% Damage",
-        "recollectionDescription": "Overall damage increase to your weapons, balanced strength."
+        "recollectionExtraStats": "+25% Damage Upon Hitless Wins",
+        "recollectionDescription": "Defeating a boss phase hitless rewards you with a +25% damage boost. The boost resets upon room transition."
+        "Beast_Credit": 0.5
+        "Bleeding_Credit": 0.5
     },
     "A14": {
         "recollectionString": "Radiant Ideas",
@@ -393,7 +395,7 @@
     "E02": {
         "recollectionString": "Perspective Change",
         "recollectionSprite": "spr_Phase_Sense_Item",
-        "recollectionExtraStats": "-25% Teleport Cooldown Reduction -10 Teleport Cost",
+        "recollectionExtraStats": "-25% Teleport Cooldown Reduction -10% Teleport Cost",
         "recollectionDescription": "Phase through reality in a less costly matter."
     },
     "E03": {
@@ -945,7 +947,7 @@
     "J06": {
         "recollectionString": "Energy Drink",
         "recollectionSprite": "spr_Energy_Drink_Art",
-        "recollectionExtraStats": "+3 State +1 Heart",
+        "recollectionExtraStats": "+4 State +1 Heart",
         "recollectionDescription": "Memory of some food you ate, gives you state and more health!"
     },
     "J07": {

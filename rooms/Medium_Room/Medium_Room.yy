@@ -2,7 +2,7 @@
   "resourceType": "GMRoom",
   "resourceVersion": "1.0",
   "name": "Medium_Room",
-  "creationCodeFile": "RoomCreationCode.gml",
+  "creationCodeFile": "rooms/Medium_Room/RoomCreationCode.gml",
   "inheritCode": false,
   "inheritCreationOrder": false,
   "inheritLayers": false,

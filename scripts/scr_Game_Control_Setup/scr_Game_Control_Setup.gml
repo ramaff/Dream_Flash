@@ -14,5 +14,5 @@ function scr_Game_Control_Setup() {
 	
 	scr_Setup_Default_Shot_Stats();
 
-	scr_Music_Set();
+	//scr_Music_Set();
 }

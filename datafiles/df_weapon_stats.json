@@ -1418,7 +1418,6 @@
         "Shot_Duplicate_Sprite": "spr_Explosion_Machine_Shot",
         "Shot_Image_Rotation_Speed": 2,
         "Shot_Phasing": 1,
-        "Shot_Extra_Hits": [1],
         "Shot_Extra_Stats": [
             {
                 "Shot_Count": 1,
