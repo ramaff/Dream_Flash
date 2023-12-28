@@ -1,4 +1,4 @@
-function scr_Boss_Choose(roomNum, exclude, difficultyAdd = 0) {
+	function scr_Boss_Choose(roomNum, exclude, difficultyAdd = 0) {
 	var simRoom = (roomNum + difficultyAdd)
 	
 	var stage_base_diff = 1.5 + (4 * (global.currentchapter - 1))
@@ -66,9 +66,9 @@ function scr_Boss_Choose(roomNum, exclude, difficultyAdd = 0) {
 
 	
 	if global.currentchapter = 1 {
-	    bossform = choose(1,3,5,9,12,13,14,16,18,19,20,24,25,37,42,43,44,57,98);
+	    bossform = choose(1,3,5,9,12,13,14,16,18,19,20,/*24,*/25,37,42,43,44,57,98);
 	    if exclude = 1 {
-	        bossform = choose(1,3,5,9,12,14,16,18,19,20,24,25,37,42,43,44,57,98);
+	        bossform = choose(1,3,5,9,12,14,16,18,19,20,/*24,*/25,37,42,43,44,57,98);
 	    }
 		sboss = scr_Chance(34);
 		if sboss = true {
@@ -100,7 +100,7 @@ function scr_Boss_Choose(roomNum, exclude, difficultyAdd = 0) {
 		}
 	}
 	if global.currentchapter >= 4 {
-	    bossform = choose(8,21,29,30,40,46,47,49);
+	    bossform = choose(8,21,29,30,40,46,/*47,*/49);
 		
 		sboss = scr_Chance(5);
 		if sboss = true {

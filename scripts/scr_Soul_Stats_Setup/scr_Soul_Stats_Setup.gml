@@ -1,4 +1,4 @@
-function scr_Soul_Stats_Setup() {
+	function scr_Soul_Stats_Setup() {
 	Charge_Hold = 0;
 	Charge_Time = 0;
 
@@ -115,6 +115,21 @@ function scr_Soul_Stats_Setup() {
 	sheartboost = global.soulheartboost;
 
 	//tboost = global.teleportboost;
+	
+	///////////////// /////////////////// /////////////////
+	///////////////// Deef Demo XXX Stuff /////////////////
+	///////////////// /////////////////// /////////////////
 
-
+	/////////// /////////// //////////
+	/////////// Temp Stats  //////////
+	/////////// /////////// //////////
+	
+	// A13 Ambition Check
+	isSoulAmbitious = true;
+	// This is false upon the soul taking damage and resets to true upon a boss changing phases
+	// A13 Ambition Tracker
+	soulAmbitiousCounter = 0;
+	// This tracks the amount of boss phases that have been defeated hitless. Resets upon room traansition.
+	
+	
 }

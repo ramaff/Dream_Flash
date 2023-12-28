@@ -1,7 +1,8 @@
 function scr_Next_Phase_Check() {
 	if bosshealth <= 0 {
 	    currentphase += 1;
-	    scr_H14();
+	    scr_H14(); // Beast Heart Logic
+		scr_A13(); // Ambition Logic
 	    if currentphase = 2 {
 	        bossmaxhealth = bossmaxhealth2;
 	        bosshealth += bossmaxhealth2;
@@ -19,6 +20,8 @@ function scr_Next_Phase_Check() {
 
 	if currentphase >= finalphase
 	if bosshealth <= 0 {
+	    scr_H14(); // Beast Heart Logic
+		scr_A13(); // Ambition Logic
 	    instance_destroy();
 	}
 

@@ -1,9 +1,11 @@
 function scr_Floor_Generation() {
+	/*
 	global.spiritRoom = choose(7,10,13);
 	//global.spiritRoom = 1;
 	if global.goodSpirits > 0 {
 	    global.evilSpiritRoom = choose(9,12,14);
 	}
+	*/
 
 	var extraRoomStart = global.chapterRooms;
 	
@@ -155,6 +157,7 @@ function scr_Floor_Generation() {
 	            global.floor[i,3] += 12 * global.floor[i,24];
 				global.floor[i,3] += random(8) * global.floor[i,24];
 	        }
+			/*
 	        if i = global.spiritRoom {
 	            global.floor[i,25] = scr_Spirit_Choose("Good");
 	            //global.floor[i,3] += 128;
@@ -163,6 +166,7 @@ function scr_Floor_Generation() {
 	            global.floor[i,26] = scr_Spirit_Choose("Bad");
 	            //global.floor[i,3] += 128;
 	        }
+			*/
 	    }
 	    //global.floor[i,3] = 1216;
 		var hopeDiamond = 0;

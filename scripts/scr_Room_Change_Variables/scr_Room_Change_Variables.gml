@@ -21,7 +21,7 @@ function scr_Room_Change_Variables() {
 
 	global.B11Count = 2 + global.B[11];
 	
-	global.C01Boost = 0;
+	global.C01Boost = 0;	
 
 	global.roomdarkness = 0;
 
@@ -31,6 +31,15 @@ function scr_Room_Change_Variables() {
 	scr_W05_Reload();
 	
 	global.OC4Debuff = 0;
-
+	
+	// Reset Ambitious Buffs
+	if (global.A[13] > 0)
+	{
+		with (obj_Soul_Parent)
+		{
+			spowerfactor -= soulAmbitiousCounter * (2.5 * global.A[13]);	
+			soulAmbitiousCounter = 0;
+		}
+	}
 
 }
