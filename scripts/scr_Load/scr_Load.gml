@@ -2,9 +2,14 @@ function scr_Load() {
 	scr_Load_Options();
 
 	//scr_Steam_Load();
+	
+	var _save_file = "savegame.sav"
+	var _backup_save_file = "savegame_backup.sav"
+	
+	scr_Handle_File_Load(_save_file, _backup_save_file)
 
-	if (file_exists("savegame.sav")) {
-	    ini_open("savegame.sav")
+	if (file_exists(_save_file)) {
+	    ini_open(_save_file)
     
 		global.recollectionWeap[1] = ini_read_real("Recollection","recollectionWeap" + string(1),2);
 	    for(i = 0; i <= 999; i++) {

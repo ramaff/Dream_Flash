@@ -37,11 +37,11 @@ function scr_Boss_Morph_In(version = 1){
 		if version = 1 {
 			var ac = 0;
 			for(ac = 0; ac < 10; ac++) {
-				bossActiveAttackDelay[ac] += 120;
-				bossPassiveAttackDelay[ac] += 120;
+				bossActiveAttackDelay[ac] += 180;
+				bossPassiveAttackDelay[ac] += 180;
 			}
 		} else if version = 2 {
-			active_attack_delay += 120;
+			active_attack_delay += 180;
 		}
 		state = states.phasing;
 		

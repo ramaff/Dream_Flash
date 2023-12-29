@@ -10,10 +10,10 @@ function scr_Heart_Reactions() {
 			Shot_Count: 10,
 			Shot_Sprite: "spr_Spike_Essence_Shot",
 			Shot_Type: "obj_Lesser_Soul_Shot",
-			Shot_Speed: 8,
+			Shot_Speed: 9,
 			Shot_Power: 15 * global.soulheartboost,
 			Shot_Knockback: 10,
-			Shot_Lifespan: 200,
+			Shot_Lifespan: 150,
 			Shot_Point_Angle: 1,
 			Shot_Size: 0.5
 		};

@@ -150,14 +150,6 @@ function scr_Weapon_Use_List(cWP = global.currentweapon, _weap_slot = 0) {
 			scr_V06();
 		}
 		
-		var realCost = weaponCost * scr_U03_Ess_Cost();
-		
-		scr_C11_Shot_Mod(realCost)
-		
-		if obj_Soul_Parent.scurrentstate = "Bleeding" and cWP < 700 {
-			scr_Bleeding_Blade_Use();
-		}
-		
 		scr_Weapon_Output(spawnProjectile, minion)
 		
 		if Shot_Extra != false {
@@ -177,6 +169,15 @@ function scr_Weapon_Use_List(cWP = global.currentweapon, _weap_slot = 0) {
 		if spawnProjectile {
 			scr_OC03(cWP);
 		}
+		
+		var realCost = weaponCost * scr_U03_Ess_Cost();
+		
+		scr_C11_Shot_Mod(realCost)
+		
+		if obj_Soul_Parent.scurrentstate = "Bleeding" and cWP < 700 {
+			scr_Bleeding_Blade_Use();
+		}
+		
 		
 		senergy -= realCost;
     

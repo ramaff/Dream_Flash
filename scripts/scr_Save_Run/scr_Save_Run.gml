@@ -1,8 +1,5 @@
 function scr_Save_Run() {
-	if (file_exists("saverun.sav"))
-	{
-	file_delete("saverun.sav");
-	}
+
 	
 	if global.totalhearts <= 0 {
 		exit;	
@@ -16,17 +13,16 @@ function scr_Save_Run() {
 			exit;	
 		}
 	}
+	
+	var _save_file = "saverun.sav"
+	var _backup_save_file = "saverun_backup.sav"
 
-	ini_open("saverun.sav")
+	scr_Handle_File_Backup(_save_file, _backup_save_file)
+
+	ini_open(_backup_save_file)
 
 	ini_write_real("Run", "currentchapter", global.currentchapter);
 	ini_write_real("Run", "currentroom", global.currentroom);
-	/*ini_write_real("Run", "strFields", global.strFields);
-	ini_write_real("Run", "vitFields", global.vitFields);
-	ini_write_real("Run", "essFields", global.essFields);
-	ini_write_real("Run", "dexFields", global.dexFields);
-	ini_write_real("Run", "perFields", global.perFields);
-	ini_write_real("Run", "staFields", global.staFields); */
 	ini_write_real("Run", "strFieldSpawn", global.strFieldSpawn);
 	ini_write_real("Run", "vitFieldSpawn", global.vitFieldSpawn);
 	ini_write_real("Run", "essFieldSpawn", global.essFieldSpawn);
@@ -223,11 +219,7 @@ function scr_Save_Run() {
 	
 	// Item Variables
 	
-	//ini_write_real("Run", "hopFieldSpawn", global.bossfireratefactor);
-	//ini_write_real("Run", "blsFieldSpawn", global.bossdamagefactor);
-	//ini_write_real("Run", "assFieldSpawn", global.bossaccuracyfactor);
-	//ini_write_real("Run", "loaFieldSpawn", global.bossdifficultyadd);
-	//ini_write_real("Run", "parFieldSpawn", global.gamedarknessadd);
+
 	
 	ini_write_real("Run", "clarityBomb", global.clarityBomb);
 	ini_write_real("Run", "OC4Debuff", global.OC4Debuff);
@@ -235,18 +227,15 @@ function scr_Save_Run() {
 	ini_write_real("Run", "temperActive", global.temperActive);
 	ini_write_real("Run", "downwardSpiralBoost", global.downwardSpiralBoost);
 	ini_write_real("Run", "B06HeartConversions", global.B06HeartConversions);
-	//for(i = 0; i <= 39; i++) {
-	//show_debug_message("saving OA5rooms: " + string(global.OA5rooms))
-	//global.OA5rooms = json_stringify(global.OA5rooms)
-	//global.OA5rooms = string_replace_all(global.OA5rooms, "\"", "\'")
 	
-	//show_debug_message("saving OA5rooms: " + string(string_replace_all(json_stringify(global.OA5rooms), "\"", "\'")))
 	ini_write_string("Run", "OA5rooms", string_replace_all(json_stringify(global.OA5rooms), "\"", "'"));
 	//}
 	
 	
 	
 	ini_close();
+	
+	scr_Copy_Backup_to_Save(_save_file, _backup_save_file)
 
 
 

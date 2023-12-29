@@ -921,20 +921,16 @@ function scr_Hard_Coded_Item_Stats(itemVal, items_to_add = 1, reload = false) {
 		}
 	}
 	if itemVal = "OC03" {
-	    //global.OC[3]++;
 	}
 	if itemVal = "OC04" {
-	    //global.OC[4]++;
 		global.soulpowerfactor += 2.5;
 	    obj_Soul_Parent.spowerfactor += 2.5;
 	}
 
 	if itemVal = "P01" {
-	    //global.P[1]++;
 	}
 
 	if itemVal = "P02" {
-		//global.P[2]++;
 		if !reload {
 			global.soulstrength += 2;
 			global.soulvitality += 2;
@@ -945,31 +941,24 @@ function scr_Hard_Coded_Item_Stats(itemVal, items_to_add = 1, reload = false) {
 		}
 	}
 
-	if itemVal = "P03" {
-		//global.P[3]++;	
+	if itemVal = "P03" {	
 		if !reload {
 			global.soulloathing += 4;
 		}
 	}
 
 	if itemVal = "P04" {
-		//global.P[4]++;
 		if !reload {
 			global.soulparanoia += 4;
 		}
 	}
-	if itemVal = "P05" {
-		//global.P[5]++;	
+	if itemVal = "P05" {	
 	}
 	if itemVal = "P06" {
-		//global.P[6]++;	
-		//global.snakeprogress++;
 	}
 	if itemVal = "P07" {
-		//global.P[7]++;	
 	}
 	if itemVal = "P08" {
-		//global.P[8]++;	
 	}
 
 	if !reload {

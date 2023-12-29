@@ -2,13 +2,13 @@ function scr_Save() {
 	scr_Save_Options();
 
 	scr_Save_Run();
+	
+	var _save_file = "savegame.sav"
+	var _backup_save_file = "savegame_backup.sav"
 
-	if (file_exists("savegame.sav"))
-	{
-	file_delete("savegame.sav");
-	}
+	scr_Handle_File_Backup(_save_file, _backup_save_file)
 
-	ini_open("savegame.sav")
+	ini_open(_backup_save_file)
 
 	for(i = 0; i <= 999; i++) {
 	    ini_write_real("Recollection", "recollectionWeap" + string(i), global.recollectionWeap[i]);
@@ -63,6 +63,10 @@ function scr_Save() {
 	ini_write_real("Recollection", "gameDamageDisplay", global.gameDamageDisplay);
 
 	ini_close();
+	
+	scr_Copy_Backup_to_Save(_save_file, _backup_save_file)
+	
+	//scr_Delete_File_Backup("savegame")
 
 	//scr_Steam_Save();
 

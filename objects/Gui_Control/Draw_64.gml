@@ -19,7 +19,9 @@ if instance_exists(obj_Soul_Parent) {
 	}
 
     var epercent = 100 * (obj_Soul_Parent.senergy / (obj_Soul_Parent.smaxenergy + (1.25 * (global.soulessence + global.soulessenceTemp))));
-    if epercent < 0 {
+    
+	var _debt_percent = clamp(0 - epercent, 0, 100);
+	if epercent < 0 {
         epercent = 0;
     }
 	
@@ -31,6 +33,10 @@ if instance_exists(obj_Soul_Parent) {
 	
 	draw_sprite_ext(spr_Essence_Container,0,winx - 72,winy - 96,0.5,0.5,0,c_white,1);
 	draw_sprite_part_ext(spr_Essence_Container,1,0,172 * (1 - ((epercent1) / 100)),89,172,winx - 72, winy - 96 + (172 / 2) * (1 - ((epercent1) / 100)),0.5,0.5,c_white,1);
+	
+	if _debt_percent > 0 {
+		draw_sprite_part_ext(spr_Essence_Debt_Container,1,0,172 * (1 - (_debt_percent / 100)),89,172,winx - 72, winy - 96 + (172 / 2) * (1 - (_debt_percent / 100)),0.5,0.5,c_white,1);
+	}
 	
 	var epercent2 = epercent;
 	if epercent2 > 300 {

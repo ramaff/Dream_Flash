@@ -20,6 +20,19 @@ function scr_Item_Recollection_Cloud(time = 1, linger) {
 		recollectionExtraStats = other.recollectionExtraStats;
 		shop = other.shop;
 		
+		if global.cloudalpha < 0 {
+			global.cloudalpha = 0;	
+		}
+		if global.cloudalpha > 1 {
+			global.cloudalpha = 1;	
+		}
+
+		image_alpha = global.cloudalpha;
+
+		if global.cloudalpha < 1.2 {
+		    global.cloudalpha += 0.18;
+		}
+		
 		alarm[0] = time;
 		
 		if time > 1 {

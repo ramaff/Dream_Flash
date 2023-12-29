@@ -1,7 +1,13 @@
 function scr_Load_Options() {
-	if (file_exists("options.sav"))
+	
+	var _save_file = "options.sav"
+	var _backup_save_file = "options_backup.sav"
+	
+	scr_Handle_File_Load(_save_file, _backup_save_file)
+	
+	if (file_exists(_save_file))
 	{
-	    ini_open("options.sav")
+	    ini_open(_save_file)
     
 	    //extracting values
     
