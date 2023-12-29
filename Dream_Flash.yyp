@@ -3410,6 +3410,7 @@
     {"id":{"name":"scr_B10","path":"scripts/scr_B10/scr_B10.yy",},},
     {"id":{"name":"scr_B14_Bullet","path":"scripts/scr_B14_Bullet/scr_B14_Bullet.yy",},},
     {"id":{"name":"AnimationCurve1","path":"animcurves/AnimationCurve1/AnimationCurve1.yy",},},
+    {"id":{"name":"obj_ninja_spirit_shadow_clone","path":"objects/obj_ninja_spirit_shadow_clone/obj_ninja_spirit_shadow_clone.yy",},},
     {"id":{"name":"scr_B14_Boss","path":"scripts/scr_B14_Boss/scr_B14_Boss.yy",},},
     {"id":{"name":"scr_C05","path":"scripts/scr_C05/scr_C05.yy",},},
     {"id":{"name":"scr_C06","path":"scripts/scr_C06/scr_C06.yy",},},

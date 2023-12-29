@@ -144,9 +144,9 @@ function scr_Floor_Generation() {
 	        global.floor[i,22] = global.champ; // Boss Champ or Second Item
 	        global.floor[i,23] = global.boost; // Boss Boost or Third Item
 	        global.floor[i,24] = global.difficultyReward;
-			if global.floor[i,0] = "Boss" {
+			/*if global.floor[i,0] = "Boss" {
 				global.floor[i,27] = scr_Hazard_Choose(i,global.floor[i,4]);
-			}
+			} */
 	        if global.floor[i,23] = 2 {
 	            global.floor[i,3] += 256;
 	        }
@@ -315,7 +315,7 @@ function scr_Floor_Generation() {
 	        global.floor[i,22] = global.champ; // Boss Champ or Second Item
 	        global.floor[i,23] = global.boost; // Boss Boost or Third Item
 	        global.floor[i,24] = 0;
-			global.floor[i,27] = scr_Hazard_Choose(i,global.floor[i,4]);
+			//global.floor[i,27] = scr_Hazard_Choose(i,global.floor[i,4]);
 	        if global.floor[i,23] = 2 {
 	            global.floor[i,3] += 256;
 	        }
@@ -350,7 +350,7 @@ function scr_Floor_Generation() {
 	        global.floor[i,22] = 0; // Boss Champ or Second Item
 	        global.floor[i,23] = 0; // Boss Boost or Third Item
 	        global.floor[i,24] = 0;
-			global.floor[i,27] = scr_Hazard_Choose(i,global.floor[i,4]);
+			//global.floor[i,27] = scr_Hazard_Choose(i,global.floor[i,4]);
 	        if global.floor[i,23] = 2 {
 	            global.floor[i,3] += 256;
 	        }
