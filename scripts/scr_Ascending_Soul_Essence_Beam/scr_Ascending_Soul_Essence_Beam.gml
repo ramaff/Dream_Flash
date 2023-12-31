@@ -14,6 +14,8 @@ function scr_Ascending_Soul_Essence_Beam(c_wp = global.currentweapon){
 		Shot_Type: "obj_Beam_Shot",
 		Essence: 13,
         Delay: 28,
+		Charge_Time: 120,
+		Charge_Essence: 90,
         Shot_Phasing: 1,
         Shot_Duplicate_Sprite: "spr_Beam_Shot",
         Shot_Beam: 1,

@@ -12,8 +12,6 @@ function scr_Weapon_Use() {
 	    }
 	}
 	
-	sWeaponTicker++;
-	
 	scr_U03_Step()
 
 	scr_N05();

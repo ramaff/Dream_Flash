@@ -808,7 +808,7 @@ function scr_Weapon_Use_List_Old() {
 	    senergy -= weaponCost / (1 + (global.U03boost / 2000));
 	    sdelay += weaponDelay / ((160 + global.souldexterity + global.souldexterityTemp) / 160);
 	    sWeaponUseFrame = 1;   
-		sWeaponTicker++;
+		//sWeaponTicker++;
 		
 		sWeaponWarmUp += weaponDelay * (2 + (300 / 180));
 		

@@ -154,6 +154,14 @@ function scr_State_Weapon_Mod(){
 			shot_stats.Shot_Extra_Stats[0].Shot_Size = (0.05 + shotsize * 0.5);
 			//shot_stats.Shot_Extra_Stats[0].Shot_Mouse = true;
 			
+			if other.Shot_Type = obj_Melee_Caster_Shot {
+				shot_stats.Shot_Extra_Stats[0].Shot_Type = obj_Lesser_Soul_Shot;
+				shot_stats.Shot_Extra_Stats[0].Shot_Lifespan = 7;
+				shot_stats.Shot_Extra_Stats[0].Shot_Sprite = string(sprite_get_name(other.Shot_Duplicate_Sprite))
+				shot_stats.Shot_Extra_Stats[0].Shot_Size = other.Shot_Size
+				shotspeed = 3;
+			}
+			
 			
 			shotextrahitshrink[4] = 0;
 			shotextrahitfade[4] = 0;
