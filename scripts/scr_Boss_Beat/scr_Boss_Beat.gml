@@ -13,5 +13,7 @@ function scr_Boss_Beat() {
 	scr_N04_Pay();
 
 	scr_XA04_Room_Update();
+	
+	scr_Tutorial_Note_Spawn();
 
 }

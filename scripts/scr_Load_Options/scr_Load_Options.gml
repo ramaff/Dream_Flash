@@ -10,6 +10,9 @@ function scr_Load_Options() {
 	    ini_open(_save_file)
     
 	    //extracting values
+		
+			global.tutorial_progress = ini_read_string("Options", "tutorial_progress",{});
+			global.tutorial_progress = json_parse(global.tutorial_progress);
     
 	        global.gameTutorial = ini_read_real("Options","gameTutorial",0);
 	        global.gameSound = ini_read_real("Options","gameSound",75);

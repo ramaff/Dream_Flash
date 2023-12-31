@@ -5,6 +5,12 @@ function scr_Save_Options() {
 	scr_Handle_File_Backup(_save_file, _backup_save_file)
 
 	ini_open(_backup_save_file)
+	
+	Print_DF(global.tutorial_progress)
+	Print_DF(string_replace_all(json_stringify(global.tutorial_progress), "\"", "'"))
+	
+	
+	ini_write_string("Options", "tutorial_progress", string_replace_all(json_stringify(global.tutorial_progress), "\"", "'"));
 
 	ini_write_real("Options", "gameTutorial", global.gameTutorial);
 	ini_write_real("Options", "gameSound", global.gameSound);
