@@ -186,12 +186,12 @@ function scr_Recollection_Panel_Assign() {
 	        }
 	    }
 		inum += 25;
-		for(i = inum; i <= inum+3; i++) {
+		for(i = inum; i <= inum+5; i++) {
 	        if buttNum = i {
 	            itemVal = "N0" + string(i + 1 - inum);
 	        }
 	    }
-		inum += 4;
+		inum += 6;
 		
 		for(i = inum; i <= inum+5; i++) {
 	        if buttNum = i {

@@ -1260,6 +1260,18 @@
         "recollectionDescription": "Lightbulb that orbits the soul, produces extra recalls if lit at the end of boss fights.",
         "Mech_Credit": 0.5
     },
+    "N05": {
+        "recollectionString": "Juggling Ideas",
+        "recollectionSprite": "spr_Juggling_Ideas_Art",
+        "recollectionExtraStats": "+Multi Weapon Shooting",
+        "recollectionDescription": "Now the soul can shoot all of its weapons at the same time, at half their normal firerate."
+    },
+    "N06": {
+        "recollectionString": "Sophistication",
+        "recollectionSprite": "spr_Sophistication_Art",
+        "recollectionExtraStats": "+Current Weapon Complexity Increase",
+        "recollectionDescription": "Replace all of your current weapons with random weapons that are one tier higher than their current one."
+    },
     
     "OA01": {
         "recollectionString": "Hopeful",

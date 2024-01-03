@@ -14,6 +14,6 @@ function scr_Boss_Beat() {
 
 	scr_XA04_Room_Update();
 	
-	scr_Tutorial_Note_Spawn();
+	//scr_Tutorial_Note_Spawn();
 
 }

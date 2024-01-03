@@ -988,7 +988,7 @@
         "Shot_Power": 18,
         "Shot_Knockback": 10,
         "Shot_Lifespan": 90,
-        "Shot_Pierce": 1,
+        "Shot_Pierce": 2,
         "Shot_Poison": 3,
         "Shot_Poison_Time": 90,
         "Shot_Poison_Ticks": 10,
