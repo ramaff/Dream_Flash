@@ -7,7 +7,7 @@ function scr_Charged_Use() {
 	}
 	
 	var _ascending = false
-	if scr_State_Active_Check("Ascending", reverie) and global.currentweapon != 605 {
+	if scr_State_Active_Check("Ascending", reverie) and global.currentweapon != 605 and (global.currentweapon < 500 || global.currentweapon > 600) {
 		_ascending = true
 	}
 	
