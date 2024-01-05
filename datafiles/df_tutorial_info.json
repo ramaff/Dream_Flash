@@ -1,0 +1,22 @@
+{
+    "base_tutorial": {
+        "tut_sprite": "spr_Tutorial_Stuff",
+        "tut_texts": ["this is placeholder tutorial text", "page 2 placeholder"]
+    },
+    "item_field": {
+        "tut_sprite": "spr_Item_Field_Tutorial",
+        "tut_texts": [
+            "As you explore the dreamscape, you will encounter item fields. You may pick one of the items in the field to influence your soul.",
+            "After defeating a certain number of bosses an emotion item field will appear. This will allow you to pick which of your soul's stats to improve."]
+    },
+    "stat_level_up": {
+        "tut_sprite": "spr_Stat_Level_Up_Tutorial",
+        "tut_texts": [
+            "When one of your stats gets high enough, an additional item field will spawn. This item field will contain items corresponding to the stat that has leveled up.",
+            "Be mindful of which stats you decide to increase. Some stat item field may contain items with negative consequences."]
+    },
+    "shop": {
+        "tut_sprite": "spr_Shop_Tutorial",
+        "tut_texts": ["When defeating bosses they drop recalls. Using these recalls you can access memories in this shop."]
+    }
+}

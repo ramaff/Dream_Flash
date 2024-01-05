@@ -140,12 +140,6 @@ if is_string(itemVal) {
 	}	
 }
 
-
-if hopeDiamond = true and weapon = 0 {
-	draw_sprite_ext(spr_Hope_Item_Diamond,0,x,y,spriteSize,spriteSize,0,c_white,1);
-}
-
-
 if weapon = 1 {
 	var weapSpr = spr_Soul_Shot_Art;
 	

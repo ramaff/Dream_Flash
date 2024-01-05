@@ -26,6 +26,11 @@ if active_attack = 2 {
 	}
 	for(_i = 0; _i < _clone_count; _i++) {
 		var _s_pos = shadow_positions[_i];
+		var _clone = shadow_positions[_i].boss;
+		
+		if !instance_exists(_clone) {
+			continue	
+		}
 		
 		if _s_pos.ex > xx_center and _s_pos.ey > yy_center {
 			edge_direction = 225
@@ -45,21 +50,21 @@ if active_attack = 2 {
 		
 		_s_pos = shadow_positions[_i];
 	
-		shadow_positions[_i].xx = lerp(_s_pos.xx, _s_pos.ex, 0.1)
-		shadow_positions[_i].yy = lerp(_s_pos.yy, _s_pos.ey, 0.1)
+		_clone.x = lerp(_clone.x, _s_pos.ex, 0.1)
+		_clone.y = lerp(_clone.y, _s_pos.ey, 0.1)
 		
 		shadow_positions[_i].dir = edge_direction;
 		
 		if (active_attack_delay - _i) mod 3 = 0 {
-			var _xx = shadow_positions[_i].xx - x;
-			var _yy = shadow_positions[_i].yy - y;
+			var _xx = _clone.x - x;
+			var _yy = _clone.y - y;
 			scr_Particle_Burst(obj_Fire_Part, spr_Soul_Big_Bit, c_black, c_black, 1, 2 + random(4), random(360), 0, 120, 0.4 + random(0.2), 20 + random(20), false, _xx, _yy)	
 		}
 		
 	}
 	
-	x = shadow_positions[0].xx;
-	y = shadow_positions[0].yy;
+	//x = shadow_positions[0].xx;
+	//y = shadow_positions[0].yy;
 	
 	direction = shadow_positions[0].dir
 	speed = 0.1;
@@ -106,7 +111,7 @@ if active_attack_delay <= 0 and active_attack_cooldown <= 0 and active_attack_du
 	// Shadow Clone Jitsu
     if active_attack = 2 {
 		// Setup how many attacks per boss move, delay, etc
-		var _a_space = 90
+		var _a_space = 110
 		var _a_amount = 6
 		if champ = 1 {
 			_a_space = 60
@@ -114,12 +119,25 @@ if active_attack_delay <= 0 and active_attack_cooldown <= 0 and active_attack_du
 		}
 		scr_Boss_Attack_Time_Setup_v2(_a_amount, 50, _a_space, 120, 30, -10);
 		
-		shadow_positions = [
-			{xx: x, yy: y, ex: xx_center - room_half_size, ey: yy_center, dir: direction}, 
-			{xx: x, yy: y, ex: xx_center + room_half_size, ey: yy_center, dir: direction}, 
-			{xx: x, yy: y, ex: xx_center, ey: yy_center - room_half_size, dir: direction}, 
-			{xx: x, yy: y, ex: xx_center, ey: yy_center + room_half_size, dir: direction}
-		];
+		if champ != 1 {
+			var _i = 0;
+			var _ids = []
+			for (_i = 0; _i < 3; _i++) {
+				scr_Default_Attack_Settings();
+				minion_count = 1;
+				minion_type = obj_ninja_spirit_shadow_clone
+				minion_health = bossmaxhealth / 15;
+				_ids = scr_Minion_Spawn();
+				shadow_clone[_i] = _ids[0]
+			}
+		
+			shadow_positions = [
+				{boss: id, ex: xx_center - room_half_size, ey: yy_center, dir: direction}, 
+				{boss: shadow_clone[0], ex: xx_center + room_half_size, ey: yy_center, dir: direction}, 
+				{boss: shadow_clone[1], ex: xx_center, ey: yy_center - room_half_size, dir: direction}, 
+				{boss: shadow_clone[2], ex: xx_center, ey: yy_center + room_half_size, dir: direction}
+			];
+		}
 	
     }
 	// Smoke Bomb Throw Barrage
@@ -169,10 +187,13 @@ if active_attack = 6 {
 	var _clone_count = 3
 	var _i = 0
 	for(_i = 0; _i < _clone_count; _i++) {
-		if active_attack_delay mod 3 = 0 and active_attack_delay <= 20 and active_attack_duration > 0 {
-			var _xx = shadow_positions[_i].xx - x;
-			var _yy = shadow_positions[_i].yy - y;
-			scr_Particle_Burst(obj_Fire_Part, spr_Soul_Big_Bit, c_black, c_black, 1, 2 + random(4), random(360), 0, 160, 0.4 + random(0.2), 40 + random(20), false, _xx, _yy)	
+		var _clone = shadow_positions[_i].boss;
+		if instance_exists(_clone) {
+			if active_attack_delay mod 3 = 0 and active_attack_delay <= 20 and active_attack_duration > 0 {
+				var _xx = _clone.x - x;
+				var _yy = _clone.y - y;
+				scr_Particle_Burst(obj_Fire_Part, spr_Soul_Big_Bit, c_black, c_black, 1, 2 + random(4), random(360), 0, 160, 0.4 + random(0.2), 40 + random(20), false, _xx, _yy)	
+			}
 		}
 	}
 
@@ -231,10 +252,13 @@ if active_attack_delay <= 0 and pattern_cooldown <= 0 and pattern_count > 0 {
 		bullet_direction = scr_Boss_Bullet_Direction_Formula(scr_Soul_Point(), 15)
 		bullet_speed = bossbulletspeed * 2;
 		
+		bullet_count = 2;
+		bullet_spread = 15;
+		
 		if champ = 1 {
 			bullet_count = 5
 			bullet_spread = 20
-		}
+		} 
 		if champ = 2 {
 			//bullet_count = 2
 			bullet_speed = bossbulletspeed * 1.8;
@@ -242,20 +266,26 @@ if active_attack_delay <= 0 and pattern_cooldown <= 0 and pattern_count > 0 {
 		
 		scr_Boss_Shoot();
 		
+		bullet_count = 1;
+		
 		if champ != 1 {
 			
 			var _i = 1
 			repeat(3) {
 				
-				boss_xoffset = shadow_positions[_i].xx - x;
-				boss_yoffset = shadow_positions[_i].yy - y
-				bullet_direction = scr_Boss_Bullet_Direction_Formula(scr_Soul_Point(boss_xoffset + x, boss_yoffset + y), 5)
+				var _clone = shadow_positions[_i].boss
+				if instance_exists(_clone) {
 				
-				if champ = 2 {
-					bullet_direction -= 12.5;	
-				}
+					boss_xoffset = _clone.x - x;
+					boss_yoffset = _clone.y - y
+					bullet_direction = scr_Boss_Bullet_Direction_Formula(scr_Soul_Point(boss_xoffset + x, boss_yoffset + y), 5)
+				
+					if champ = 2 {
+						bullet_direction -= 12.5;	
+					}
 		
-				scr_Boss_Shoot();
+					scr_Boss_Shoot();
+				}
 		
 				_i++;
 			}
@@ -268,13 +298,24 @@ if active_attack_delay <= 0 and pattern_cooldown <= 0 and pattern_count > 0 {
 			var _i = 0
 			repeat(4) {
 				
-				boss_xoffset = shadow_positions[_i].xx - x;
-				boss_yoffset = shadow_positions[_i].yy - y
-				bullet_direction = scr_Boss_Bullet_Direction_Formula(scr_Soul_Point(boss_xoffset + x, boss_yoffset + y), 5)
+				var _clone = shadow_positions[_i].boss
+				if instance_exists(_clone) {
+				
+					boss_xoffset = _clone.x - x;
+					boss_yoffset = _clone.y - y
+					bullet_direction = scr_Boss_Bullet_Direction_Formula(scr_Soul_Point(boss_xoffset + x, boss_yoffset + y), 5)
 		
-				bullet_direction += 12.5;
+					bullet_direction += 12.5;
+					
+					if _i = 0 {
+						bullet_count = 2;
+						bullet_spread = 15;
+					} else {
+						bullet_count = 1;	
+					}
 		
-				scr_Boss_Shoot();
+					scr_Boss_Shoot();
+				}
 		
 				_i++;
 			}
@@ -375,21 +416,25 @@ if active_attack_delay <= 0 and pattern_cooldown <= 0 and pattern_count > 0 {
 		bullet_direction = scr_Boss_Bullet_Direction_Formula(scr_Soul_Point(), 15)
 		bullet_speed = bossbulletspeed * 2;
 		bullet_count = 3
-		bullet_spread = 30
+		bullet_spread = 15
 		
 		scr_Boss_Shoot();
 		
-		boss_xoffset = shadow_positions[1].xx - x;
-		boss_yoffset = shadow_positions[1].yy - y
-		bullet_direction = scr_Boss_Bullet_Direction_Formula(scr_Soul_Point(boss_xoffset + x, boss_yoffset + y), 15)
+		if instance_exists(shadow_positions[1].boss) {
+			boss_xoffset = shadow_positions[1].boss.x - x;
+			boss_yoffset = shadow_positions[1].boss.y - y
+			bullet_direction = scr_Boss_Bullet_Direction_Formula(scr_Soul_Point(boss_xoffset + x, boss_yoffset + y), 15)
 		
-		scr_Boss_Shoot();
+			scr_Boss_Shoot();
+		}
 		
-		boss_xoffset = shadow_positions[2].xx - x;
-		boss_yoffset = shadow_positions[2].yy - y
-		bullet_direction = scr_Boss_Bullet_Direction_Formula(scr_Soul_Point(boss_xoffset + x, boss_yoffset + y), 15)
+		if instance_exists(shadow_positions[2].boss) {
+			boss_xoffset = shadow_positions[2].boss.x - x;
+			boss_yoffset = shadow_positions[2].boss.y - y
+			bullet_direction = scr_Boss_Bullet_Direction_Formula(scr_Soul_Point(boss_xoffset + x, boss_yoffset + y), 15)
 		
-		scr_Boss_Shoot();
+			scr_Boss_Shoot();
+		}
 	}
 	
 	// Maybe I should put this into a script
@@ -402,6 +447,19 @@ if active_attack_delay <= 0 and pattern_cooldown <= 0 and pattern_count > 0 {
 //////////////////////////////////////////////////////////////////////////////////////////
 
 if active_attack_duration <= 0 { 
+	if active_attack = 2 || active_attack = 6 {
+		var _i = 0;
+		var _clone_count = 4;
+		if active_attack = 6 {
+			_clone_count = 3;
+		}
+		for(_i = 0; _i < _clone_count; _i++) {
+			var _clone = shadow_positions[_i].boss
+			if _clone != id and instance_exists(_clone) {
+				instance_destroy(_clone)	
+			}
+		}
+	}
     active_attack = 0;
 }
 
@@ -421,7 +479,7 @@ if active_attack = 1 {
 } else if active_attack = 2 {
 	var _hold_frame = 2;
 	if champ != 1 {
-		scr_Boss_Attack_Sprite_v2(spr_ninja_spirit_v2_shuffle_throw, _hold_frame, 3, 11, 20, 10);
+		scr_Boss_Attack_Sprite_v2(spr_ninja_spirit_v2_shuffle_throw, _hold_frame, 3, 13, 20, 10);
 	} else {
 		scr_Boss_Attack_Sprite_v2(spr_ninja_spirit_v2_shuffle_throw, _hold_frame, 3, 8, 20, 10);	
 	}
@@ -437,18 +495,29 @@ if active_attack = 1 {
 			if active_attack != 6 {
 				scr_Boss_Teleport_From_Boss(330, -64)
 			} else {
-				for(var _i = 0; _i < 3; _i++) {
-					var _pos = scr_Boss_Teleport_v2_Return(-256)
-			
-					shadow_positions[_i].xx = _pos[0];
-					shadow_positions[_i].yy = _pos[1];
-			        shadow_positions[_i].ex = _pos[0];
-			        shadow_positions[_i].ey = _pos[1];
-					shadow_positions[_i].dir = direction;
-				}
 				
-				x = shadow_positions[0].xx;
-				y = shadow_positions[0].yy;
+				var _i = 0;
+				var _ids = []
+				for (_i = 0; _i < 2; _i++) {
+					scr_Default_Attack_Settings();
+					minion_count = 1;
+					minion_type = obj_ninja_spirit_shadow_clone
+					minion_health = bossmaxhealth / 15;
+					_ids = scr_Minion_Spawn();
+					shadow_positions[_i + 1].boss = _ids[0]
+				}
+				shadow_positions[0].boss = id;
+		
+				for(_i = 0; _i < 3; _i++) {
+					var _pos = scr_Boss_Teleport_v2_Return(-256)
+					var _clone = shadow_positions[_i].boss;
+			
+					_clone.x = _pos[0];
+					_clone.y = _pos[1];
+			        _clone.ex = _pos[0];
+			        _clone.ey = _pos[1];
+					_clone.dir = direction;
+				}
 	
 				direction = shadow_positions[0].dir
 				

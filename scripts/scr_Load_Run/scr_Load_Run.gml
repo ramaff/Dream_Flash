@@ -1,11 +1,17 @@
 function scr_Load_Run() {
-	if (file_exists("saverun.sav"))
+	
+	var _save_file = "saverun.sav"
+	var _backup_save_file = "saverun_backup.sav"
+	
+	scr_Handle_File_Load(_save_file, _backup_save_file)
+	
+	if (file_exists(_save_file))
 	{
 		
 		var i = 0;
 		var j = 0;
 
-		ini_open("saverun.sav")
+		ini_open(_save_file)
 		for(i = 0; i <= 39; i++) {
 			flo = asset_get_index(ini_read_string("Run", "floor" + string(i) + "-" + string(4),0));
 	

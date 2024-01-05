@@ -144,9 +144,9 @@ function scr_Floor_Generation() {
 	        global.floor[i,22] = global.champ; // Boss Champ or Second Item
 	        global.floor[i,23] = global.boost; // Boss Boost or Third Item
 	        global.floor[i,24] = global.difficultyReward;
-			if global.floor[i,0] = "Boss" {
+			/*if global.floor[i,0] = "Boss" {
 				global.floor[i,27] = scr_Hazard_Choose(i,global.floor[i,4]);
-			}
+			} */
 	        if global.floor[i,23] = 2 {
 	            global.floor[i,3] += 256;
 	        }
@@ -202,11 +202,6 @@ function scr_Floor_Generation() {
 			
 	        itemNumPick = 1;
 	        for(j = 1; j <= itemNumChoice; j++) {
-				if j <= 2 {
-					hopeDiamond = 0;
-				} else {
-					hopeDiamond = 1;	
-				}
 				
 	            global.floor[i,j+6] = scr_Misc_Field_Pool_Pick()
 	        }
@@ -235,11 +230,6 @@ function scr_Floor_Generation() {
 		
 			//itemNumChoice = 4;
 	        for(j = 1; j <= itemNumChoice; j++) {
-				if j <= 2 {
-					hopeDiamond = 0;
-				} else {
-					hopeDiamond = 1;	
-				}
 				
 	            global.floor[i,j+6] = scr_Weapon_Item_Choose();
 	        }
@@ -252,27 +242,30 @@ function scr_Floor_Generation() {
 	        global.floor[i,8] = scr_Pool_Pick(global.h_item_pool);
 	        global.floor[i,9] = scr_Weapon_Item_Choose();
 	        global.floor[i,10] = scr_Weapon_Item_Choose();
-	        miscChoose = choose(1,2,3,4)
+	        var miscChoose = choose(1,2,3)
+			var _first_misc = ""
 	        if miscChoose = 1 {
-	            global.floor[i,11] = scr_Pool_Pick(global.m_item_pool);
+	            global.floor[i,11] = scr_Pool_Pick(global.n_item_pool);
 	        } if miscChoose = 2 {
 	            global.floor[i,11] = scr_Pool_Pick(global.k_item_pool);
 	        } if miscChoose = 3 {
 	            global.floor[i,11] = scr_Pool_Pick(global.l_item_pool);
-	        } if miscChoose = 4 {
-	            global.floor[i,11] = scr_Pool_Pick(global.n_item_pool);
 	        }
-			miscChoose = choose(1,2,3,4)
-	        if miscChoose = 1 {
-	            global.floor[i,12] = scr_Pool_Pick(global.m_item_pool);
-	        } if miscChoose = 2 {
-	            global.floor[i,12] = scr_Pool_Pick(global.k_item_pool);
-	        } if miscChoose = 3 {
-	            global.floor[i,12] = scr_Pool_Pick(global.l_item_pool);
-	        } if miscChoose = 4 {
-	            global.floor[i,12] = scr_Pool_Pick(global.n_item_pool);
-	        }
-			miscChoose = choose(1,2,3,4,5,6,7,8,8,8,8);
+			_first_misc = string_letters(global.floor[i,11])
+			var _second_misc = _first_misc
+			while(_second_misc = _first_misc) {
+				miscChoose = choose(1,2,3)
+		        if miscChoose = 1 {
+		            global.floor[i,12] = scr_Pool_Pick(global.n_item_pool);
+		        } if miscChoose = 2 {
+		            global.floor[i,12] = scr_Pool_Pick(global.k_item_pool);
+		        } if miscChoose = 3 {
+		            global.floor[i,12] = scr_Pool_Pick(global.l_item_pool);
+		        } 
+				_second_misc = string_letters(global.floor[i,12])
+			}
+			
+			miscChoose = choose(1,2,3,4,5,6,7,8,8,8,9);
 			//miscChoose = 6;
 	        if miscChoose = 1 {
 	            global.floor[i,13] = scr_Pool_Pick(global.u_item_pool);
@@ -289,8 +282,10 @@ function scr_Floor_Generation() {
 	        } if miscChoose = 7 {
 	            global.floor[i,13] = scr_Pool_Pick(global.t_item_pool);
 	        } if miscChoose = 8 {
-				global.floor[i,13] = scr_Pool_Pick(global.j_item_pool);
-			}	
+				global.floor[i,13] = scr_Pool_Pick(global.m_item_pool);
+			} if miscChoose = 9 {
+	            global.floor[i,13] = scr_Pool_Pick(global.q_item_pool);
+	        }
 	    }
 		
 		if global.floor[i,0] = "Chamber" {
@@ -310,11 +305,6 @@ function scr_Floor_Generation() {
 			
 	        itemNumPick = 1;
 	        for(j = 1; j <= itemNumChoice; j++) {
-				if j <= 2 {
-					hopeDiamond = 0;
-				} else {
-					hopeDiamond = 1;	
-				}
 				
 	            global.floor[i,j+6] = scr_Misc_Field_Pool_Pick();
 	        }
@@ -325,7 +315,7 @@ function scr_Floor_Generation() {
 	        global.floor[i,22] = global.champ; // Boss Champ or Second Item
 	        global.floor[i,23] = global.boost; // Boss Boost or Third Item
 	        global.floor[i,24] = 0;
-			global.floor[i,27] = scr_Hazard_Choose(i,global.floor[i,4]);
+			//global.floor[i,27] = scr_Hazard_Choose(i,global.floor[i,4]);
 	        if global.floor[i,23] = 2 {
 	            global.floor[i,3] += 256;
 	        }
@@ -360,7 +350,7 @@ function scr_Floor_Generation() {
 	        global.floor[i,22] = 0; // Boss Champ or Second Item
 	        global.floor[i,23] = 0; // Boss Boost or Third Item
 	        global.floor[i,24] = 0;
-			global.floor[i,27] = scr_Hazard_Choose(i,global.floor[i,4]);
+			//global.floor[i,27] = scr_Hazard_Choose(i,global.floor[i,4]);
 	        if global.floor[i,23] = 2 {
 	            global.floor[i,3] += 256;
 	        }

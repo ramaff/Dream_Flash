@@ -5,11 +5,6 @@ function scr_Room_Leavable(){
 		return false
 	}
 	
-	/*Print_DF("/n" + string(global.floor[0]))
-	Print_DF(string(global.floor[1]))
-	Print_DF(string(global.floor[2]))
-	Print_DF(string(global.floor[3 */
-	
 	if global.floor[global.currentroom,0] == "Normal" {
 		return true	
 	}

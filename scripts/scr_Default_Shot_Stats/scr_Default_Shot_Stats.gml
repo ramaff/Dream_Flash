@@ -29,6 +29,8 @@ function scr_Default_Shot_Stats() {
 	shotlight = 0;
 	shotlightsize = 0;
 	shotfolloworigin = 0
+	
+	feartarget = noone;
 
 	shottrail = 0;
 	shottrailtype = obj_Weapon_Trail;

@@ -10,8 +10,8 @@
   "managed": true,
   "overriddenProperties": [],
   "parent": {
-    "name": "Visual",
-    "path": "folders/Objects/Controllers/Visual.yy",
+    "name": "Game UI",
+    "path": "folders/Objects/Game UI.yy",
   },
   "parentObjectId": null,
   "persistent": false,

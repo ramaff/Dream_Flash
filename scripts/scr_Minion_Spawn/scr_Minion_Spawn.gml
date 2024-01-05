@@ -1,5 +1,8 @@
 function scr_Minion_Spawn() {
 
+		var _minion_ids = [];
+		var _index = 0
+
 	    repeat(minion_count) {
 	        with instance_create(x + minion_xx,y + minion_yy, minion_type) {
 	                scr_Boss_Status_Setup();
@@ -38,9 +41,12 @@ function scr_Minion_Spawn() {
 					direction = miniondir;
 					speed = other.minion_speed
 					orbitangle = direction;
+					
+					_minion_ids[_index] = id
 	        }
+			_index += 1;
 	    }
-
+	return _minion_ids
 
 
 }

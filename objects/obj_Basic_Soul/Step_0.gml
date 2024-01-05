@@ -214,6 +214,7 @@ sdelay -= sdelayregenfactor;
 if sdelay < 0 {
     sdelay = 0;
 }
+scr_N05_Step(sdelayregenfactor);
 
 tdelay -= tdelayregenfactor;
 if tdelay < 0 {

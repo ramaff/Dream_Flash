@@ -308,6 +308,7 @@ function scr_Duplicate_Shot_Stats() {
 	
 	shotA07 = other.shotA07;
 	followtarget = other.followtarget;
+	feartarget = other.feartarget;
 	
 	/*
 	if other.shotextrahits = 2 {

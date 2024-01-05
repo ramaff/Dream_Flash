@@ -20,6 +20,11 @@ function scr_Item_Variable_Setup() {
 		global.OA5rooms[i] = [];
 	}
 	
+	global.WeaponJugglingDelay = [];
+	for(var i = 0; i < 10; i++) {
+		global.WeaponJugglingDelay[i] = 0;
+	}
+	
 	global.gembeam_hits = ds_list_create();
 	
 	global.H5timer = 0;

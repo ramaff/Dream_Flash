@@ -1,11 +1,25 @@
 function scr_Soul_Spawn() {
-	sadd = global.soulshotamountaddchance + irandom(99);
+	
+	repeat(Shot_Count) {
+		sadd = global.soulshotamountaddchance + irandom(99);
 
-	if sadd >= 100 {
-	    Shot_Count += 1;
+		if sadd >= 100 {
+		    Shot_Count += 1;
+		}
 	}
+
 	Shot_Count += global.soulshotamountadd + global.soulshotamountaddtemp;
 
+	scr_D10();
+	
+	scr_XB05_Shot_Mod();
+
+	if Shot_Count > 1 {
+	    if Shot_Spread < 10 and Shot_Spread >= 0 {
+	        Shot_Spread = 10;
+	    }
+	}
+	
 	if Shot_Count > 1 {
 	    if Shot_Spread < 1 {
 	        Shot_Spread = 10;

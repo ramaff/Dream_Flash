@@ -1,9 +1,18 @@
 function scr_Load_Options() {
-	if (file_exists("options.sav"))
+	
+	var _save_file = "options.sav"
+	var _backup_save_file = "options_backup.sav"
+	
+	scr_Handle_File_Load(_save_file, _backup_save_file)
+	
+	if (file_exists(_save_file))
 	{
-	    ini_open("options.sav")
+	    ini_open(_save_file)
     
 	    //extracting values
+		
+			global.tutorial_progress = ini_read_string("Options", "tutorial_progress",{});
+			global.tutorial_progress = json_parse(global.tutorial_progress);
     
 	        global.gameTutorial = ini_read_real("Options","gameTutorial",0);
 	        global.gameSound = ini_read_real("Options","gameSound",75);
