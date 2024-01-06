@@ -2565,6 +2565,7 @@
     {"id":{"name":"spr_Anvil_Fig","path":"sprites/spr_Anvil_Fig/spr_Anvil_Fig.yy",},},
     {"id":{"name":"spr_Soul_Menu_Butt","path":"sprites/spr_Soul_Menu_Butt/spr_Soul_Menu_Butt.yy",},},
     {"id":{"name":"scr_OB06","path":"scripts/scr_OB06/scr_OB06.yy",},},
+    {"id":{"name":"scr_Baseball_Shot","path":"scripts/scr_Baseball_Shot/scr_Baseball_Shot.yy",},},
     {"id":{"name":"spr_Settings_Menu_Butt","path":"sprites/spr_Settings_Menu_Butt/spr_Settings_Menu_Butt.yy",},},
     {"id":{"name":"spr_Settings_Butts","path":"sprites/spr_Settings_Butts/spr_Settings_Butts.yy",},},
     {"id":{"name":"spr_Recollection_Menu_Butt","path":"sprites/spr_Recollection_Menu_Butt/spr_Recollection_Menu_Butt.yy",},},

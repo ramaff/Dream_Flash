@@ -80,9 +80,6 @@ function scr_Charged_Hold() {
 			}
 		}
 		
-		Print_DF(_charge_rate)
-		Print_DF(Charge_Total_Time)
-		
 		var _charge_portion = _charge_rate / Charge_Total_Time
 		
 	    if senergy >= smaxenergy || senergy >= (((Charge_Essence - senergyconservation) / Charge_Total_Time) / senergyconservationfactor / ((6 + global.Weap[weaponcharge]) / 6)) {

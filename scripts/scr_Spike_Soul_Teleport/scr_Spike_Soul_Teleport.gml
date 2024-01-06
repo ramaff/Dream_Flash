@@ -1,11 +1,11 @@
-function scr_Spike_Soul_Teleport() {
+function scr_Spike_Soul_Teleport(_xstar, _ystar) {
 	// Location Soul Teleport
 
 	if obj_Soul_Parent.scurrentstate = "Spike" {
 		
 		var dur = 10;
 		var dis = 900;
-		var ang = point_direction(xstar,ystar, mouse_x, mouse_y);
+		var ang = point_direction(_xstar,_ystar, mouse_x, mouse_y);
 		
 		var angadd = 0
 		

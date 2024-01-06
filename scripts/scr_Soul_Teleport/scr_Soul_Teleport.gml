@@ -22,6 +22,9 @@ function scr_Soul_Teleport(_evasion = false){
 	perX = x
 	perY = y;
 	
+	var _xstar = x;
+	var _ystar = y;
+	
 	TPCooldown = 30 + (30 * global.E[11]);
 	
 	var _xx = mouse_x;
@@ -50,7 +53,7 @@ function scr_Soul_Teleport(_evasion = false){
 	scr_W02(dir);
 	scr_W03();
 		
-	scr_Spike_Soul_Teleport();
+	scr_Spike_Soul_Teleport(_xstar, _ystar);
 	scr_Casting_Soul_Teleport();
 	scr_Ascending_Soul_Teleport();
 	

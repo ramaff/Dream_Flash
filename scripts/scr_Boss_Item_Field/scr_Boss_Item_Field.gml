@@ -7,7 +7,7 @@ function scr_Boss_Item_Field(roomType){
 	
 	//Print_DF(global.emoteFieldSpawn)
 	
-	if instance_exists(Chapter_Change_Control) {
+	if roomType = "Super Boss" {
 		exit;	
 	}
 	
