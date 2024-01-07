@@ -1,5 +1,4 @@
 function scr_Room_End() {
-	//scr_Soul_Stat_Store();
 
 	global.bosscount = 0;
 

@@ -7,7 +7,7 @@
 // Inherit the parent event
 event_inherited();
 
-shotpower -= 50;
+shotpower -= 25;
 if shotpower < 0 {
 	instance_destroy();	
 }

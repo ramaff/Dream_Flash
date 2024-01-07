@@ -132,51 +132,29 @@ function scr_Pool_Refill(pool){
 
 	if letter != "Weapon" {
 		for(i = totalitems; i >= minitems; i--) {
-			//var index = 0;
 			if i > 9 {
 				ds_list_add(pool, letter + string(i));
-				//var index = letter + string(i)
-				//pool[i] = letter + string(i);
 			} else {
 				ds_list_add(pool, letter + "0" + string(i));
-				// index = letter + "0" + string(i);
-				//pool[i] = letter + "0" + string(i);
 			}
-			//pool[index] = index;
-			//variable_struct_set(pool, index, index)
 		}
 	} else {
 		var weaponList = [];
 		if pool = global.simpleWeaponPool {
-			weaponList = [1,2,3,4,5,6,7,10,12,51,101,102,103,104,105,110,151,152,201,202,203,210,301,302,303,309,401,402,403,409,414,501,502,601,602,603]
+			weaponList = [1,2,3,4,5,6,7,10,11,12,51,101,102,103,107,110,151,152,201,202,203,210,301,302,303,309,401,402,406,409,414,501,502,601,603]
 		}
 		if pool = global.complexWeaponPool {
-			weaponList = [8,9,11,12,15,16,52,54,107,108,109,111,112,114,115,116,204,205,207,209,211,212,213,304,306,307,308,310,311,312,313,314,404,405,406,407,408,410,411,503,504,505,604,605]
+			weaponList = [8,9,15,16,52,54,104,105,108,109,111,112,114,116,204,205,207,209,211,212,213,304,306,307,308,310,311,313,314,403,405,407,408,410,411,503,504,505,604,605]
 		}
 		if pool = global.masterfulWeaponPool {
-			weaponList = [13,14,53,113,153,206,412,413]
+			weaponList = [13,14,53,113,115,153,206,312,404,412,413]
 		}
 		for(i = array_length(weaponList) - 1; i >= 0; i--) {
 			ds_list_add(pool, weaponList[i]);
-			//pool[weaponList[i]] = weaponList[i];
-			//variable_struct_set(pool, weaponList[i], weaponList[i])
-			//pool[i] = weaponList[i]
 		}
 	}
 	
-	//ds_list_delete(global.p_item_pool, ds_list_find_index(global.p_item_pool, "P08"));
-	//ds_list_delete(global.v_item_pool, ds_list_find_index(global.v_item_pool, "V05"));
-	
-	//variable_struct_remove(global.P_item_pool, "P08")
-	//variable_struct_remove(global.V_item_pool, "V05")
-	
-	/*if pool = global.P_item_pool {
-		array_delete(global.P_item_pool, 7, 1)
-	}
-	if pool = global.V_item_pool {
-		array_delete(global.V_item_pool, 4, 1)
-	} */
-	
+
 	if letter = "I" {
 		repeat(6) {
 			ds_list_add(global.i_item_pool, "A00");
@@ -184,28 +162,13 @@ function scr_Pool_Refill(pool){
 			ds_list_add(global.i_item_pool, "C00");
 			ds_list_add(global.i_item_pool, "D00");
 			ds_list_add(global.i_item_pool, "E00");
-			//pool[global.I_item_pool] = "A00";
-			//pool[global.I_item_pool] = "B00";
-			//pool[global.I_item_pool] = "C00";
-			//pool[global.I_item_pool] = "D00";
-			//pool[global.I_item_pool] = "E00";
-			//variable_struct_set(global.I_item_pool, "A00", "A00")
-			//variable_struct_set(global.I_item_pool, "B00", "B00")
-			//variable_struct_set(global.I_item_pool, "C00", "C00")
-			//variable_struct_set(global.I_item_pool, "D00", "D00")
-			//variable_struct_set(global.I_item_pool, "E00", "E00")
-			//array_push(global.I_item_pool, "A00", "B00", "C00", "D00", "E00")
 			if instance_exists(obj_Soul_Parent) {
 				if global.soultransformedstate != "None" {
 					ds_list_add(global.i_item_pool, "F00");
-					//pool[global.I_item_pool] = "F00";
-					//variable_struct_set(global.I_item_pool, "F00", "F00")
-					//array_push(global.I_item_pool, "F00")
 				}
 			}
 		}
 	}
 	
-	//show_debug_message(pool)
 
 }

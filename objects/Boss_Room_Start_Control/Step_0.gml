@@ -13,25 +13,23 @@ if ((global.bosscount <= 0) and (global.spiritRoom != global.currentroom) and (g
 		
 		var initAmount = 0;
 		var giveFac = 1;
-		if global.boost = 2 {
-		    //giveFac = giveFac * 2;
-		}
-		if (global.bossval - frac(global.bossval) = 13) || (global.bossval - frac(global.bossval) = 27) {
-		    //giveFac = giveFac * 2;
-		}
+
 		initAmount = ((global.soulhope + global.soulhopeTemp) / 10) + 1 + (difficulty * giveFac);
 		if global.currentchapter = 1 {
 			initAmount = initAmount * giveFac * 2;
 			global.soulflash += floor(initAmount);
 		}
+		
 		if global.currentchapter = 2 {
 			initAmount = initAmount * giveFac;
 			global.soulfeel += floor(initAmount);
 		}
+		
 		if global.currentchapter = 3 {
 			initAmount = initAmount * giveFac * (2/3);
 			global.souldream += floor(initAmount);
 		}
+		
 		if instance_exists(obj_Soul_Spiritual) {
 			with(obj_Soul_Spiritual) {
 				if spirit = "Hope" {
@@ -87,7 +85,7 @@ if ((global.bosscount <= 0) and (global.spiritRoom != global.currentroom) and (g
 			global.soulfeel -= floor(initAmount);
 		}
 		if global.currentchapter = 3 {
-			global.souldream -= floor(initAmount);;
+			global.souldream -= floor(initAmount);
 		}
         
     } else {
