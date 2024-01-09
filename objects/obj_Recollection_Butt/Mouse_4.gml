@@ -19,6 +19,7 @@ if image_alpha != 0 {
         recollectionDescription = other.recollectionDescription;
         recollectionCount = other.recollectionCount;
 		recollectionPalette = other.recollectionPalette;
+		recollectionComplexity = other.recollectionComplexity;
         
 		for(u = 0; u < 10; u++) {
 			recollectionBSprite[u] = other.recollectionBSprite[u];

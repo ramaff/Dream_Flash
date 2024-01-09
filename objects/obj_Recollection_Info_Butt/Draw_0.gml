@@ -7,10 +7,22 @@ image_index = 0;
 
 if global.recollectCategory = "Weapons" {
     draw_text(x+48,y-176, string_hash_to_newline(string(itemVal) + " - " + recollectionString));
-    draw_sprite(spr_Recollection_Diagonal,0,x-208,y-120)
+	
+	var _icon_index = 0
+	if recollectionComplexity = "Medium" {
+		_icon_index = 1;	
+	}
+	if recollectionComplexity = "High" {
+		_icon_index = 2;
+	}
+	
+    draw_sprite(spr_Weapon_Recollection_Diagonal,_icon_index,x-208,y-120)
     draw_sprite_ext(recollectionSprite,0,x-208,y-120, 0.75, 0.75, 0, c_white,1);
     draw_sprite(spr_Recollection_See_Icon,0,x-208,y-44)
     draw_text(x-208,y-20, string_hash_to_newline(recollectionCount));
+	
+	draw_text(x+48,y-24, string_hash_to_newline(recollectionComplexity) + " Complexity");
+	
     draw_sprite(spr_Recollection_Power_Icon,0,x-80,y-120);
     if recollectionPower != -999 {
         draw_text(x-80,y-96, string_hash_to_newline(recollectionPower));
@@ -45,7 +57,7 @@ if global.recollectCategory = "Weapons" {
         draw_text(x+48,y-72, string_hash_to_newline(recollectionExtraStats));
     }
     if recollectionDescription != "????" {
-        draw_text_ext(x+48,y-16, string_hash_to_newline(recollectionDescription),40,440);
+        draw_text_ext(x+48,y+24, string_hash_to_newline(recollectionDescription),40,440);
     }
     //draw_sprite(spr_Recollection_Recharge_Icon,0,x+160,y-120);
 }
