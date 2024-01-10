@@ -11,8 +11,8 @@
   "managed": true,
   "overriddenProperties": [],
   "parent": {
-    "name": "Feel Bosses",
-    "path": "folders/Objects/Bosses/Feel Bosses.yy",
+    "name": "v1",
+    "path": "folders/Objects/Bosses/Feel Bosses/v1.yy",
   },
   "parentObjectId": {
     "name": "obj_Main_Boss_Parent",
