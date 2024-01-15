@@ -13,10 +13,30 @@ if active_attack > 0 and active_attack_delay <= 0 {
 // Make boss shape wobble:
 scr_Boss_Wobble("Horizontal", 0.15, 1, 0);
 
-direction = scr_Soul_Point()
-speed = bossmovespeed;
-if active_attack != 0 {
-	speed = bossmovespeed * 0.2;	
+if champ = 3 {
+	if active_attack = 1 {
+		direction = scr_Angle_Converge(direction, scr_Soul_Point(), 1.5)
+	} else if active_attack = 2 {
+		direction += 1.5
+		var _center_dir = point_direction(x,y,room_width/2,room_height/2)
+		x += lengthdir_x(1, _center_dir)
+		y += lengthdir_y(1, _center_dir)
+	}
+	if active_attack != 0 and active_attack_delay < 0 {
+		var _move_fac = 1.5;
+		if active_attack = 1 {
+			_move_fac = 2.5	
+		}
+		speed = scr_Converge(speed, bossmovespeed * _move_fac, 0.05)
+	} else {
+		speed = scr_Converge(speed, bossmovespeed * 0.75, 0.05)
+	}
+} else {
+	direction = scr_Soul_Point()
+	speed = bossmovespeed;
+	if active_attack != 0 {
+		speed = bossmovespeed * 0.2;
+	}
 }
 
 if champ = 2 {
@@ -40,7 +60,11 @@ if active_attack_delay <= 0 and active_attack_cooldown <= 0 and active_attack_du
 	
     if active_attack = 1 {
 		// Setup how many attacks per boss move, delay, etc
-		scr_Boss_Attack_Time_Setup_v2(18, 50, 10, 120, 30, 10);
+		var _attack_count = 18;
+		if champ = 3 {
+			_attack_count = 54;
+		}
+		scr_Boss_Attack_Time_Setup_v2(_attack_count, 50, 10, 120, 30, 10);
 		
 		// Can set up the initial pattern direction
 		pattern_direction = scr_Boss_Bullet_Direction_Formula(scr_Soul_Point(), 30)
@@ -48,7 +72,11 @@ if active_attack_delay <= 0 and active_attack_cooldown <= 0 and active_attack_du
 	
 	if active_attack = 2 {
 		// Setup how many attacks per boss move, delay, etc
-		scr_Boss_Attack_Time_Setup_v2(15, 50, 10, 120, 30, 10);
+		var _attack_count = 15;
+		if champ = 3 {
+			_attack_count = 45;
+		}
+		scr_Boss_Attack_Time_Setup_v2(_attack_count, 50, 10, 120, 30, 10);
 		
 		// Can set up the initial pattern direction
 		pattern_direction = random(360);
@@ -80,6 +108,10 @@ bullet_sprite = spr_Tear_Drop_Bullet;
 bullet_speed = bossbulletspeed * (1 + random(0.75));
 bullet_power = bosspower;
 
+if champ = 3 {
+	bullet_sprite = spr_Blood_Tear;	
+}
+
 // If its time to attack, attack
 if active_attack_delay <= 0 and pattern_cooldown <= 0 and pattern_count > 0 {
    
@@ -88,6 +120,10 @@ if active_attack_delay <= 0 and pattern_cooldown <= 0 and pattern_count > 0 {
 		
 		bullet_direction = scr_Boss_Bullet_Direction_Formula(pattern_direction, 45)
 		pattern_direction = scr_Angle_Converge(pattern_direction, scr_Soul_Point(), 10);
+		
+		if champ = 3 {
+			bullet_direction = direction + 180;
+		}
 		
 		scr_Boss_Shoot();
 		

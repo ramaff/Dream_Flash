@@ -13,6 +13,25 @@ if active_attack > 0 and active_attack_delay <= 0 {
 // Make boss shape wobble:
 scr_Boss_Wobble("Horizontal", 0.15, 1, 0);
 
+if currentphase = 2 {
+	if active_attack_delay < 0 and active_attack = 3 {
+		var _move_fac = 6.5
+		speed = scr_Converge(speed, bossmovespeed * _move_fac, 0.05)
+	
+		direction = scr_Angle_Converge(direction, scr_Soul_Point() + scr_Wave(-90, 90, 4, 0), 2.5)
+	} else {
+		direction = scr_Soul_Point()
+		speed = scr_Converge(speed, bossmovespeed * 0.5, 0.1)
+	}
+	
+} else {
+	direction = scr_Soul_Point()
+	speed = bossmovespeed;
+	if active_attack != 0 {
+		speed = bossmovespeed * 0.2;
+	}
+}
+
 //////////////////////////////////////////////////////////////////////////////////////////
 /////////////// Active Attack Prep
 //////////////////////////////////////////////////////////////////////////////////////////
@@ -43,7 +62,7 @@ if active_attack_delay <= 0 and active_attack_cooldown <= 0 and active_attack_du
 	
 	if active_attack = 3 {
 		// Setup how many attacks per boss move, delay, etc
-		scr_Boss_Attack_Time_Setup_v2(42, 50, 10, 120, 30, 10);
+		scr_Boss_Attack_Time_Setup_v2(56, 50, 10, 120, 30, 10);
 		
 		// Can set up the initial pattern direction
 		pattern_direction = scr_Boss_Bullet_Direction_Formula(scr_Soul_Point(), 30)
