@@ -13,8 +13,8 @@
   "managed": true,
   "overriddenProperties": [],
   "parent": {
-    "name": "Basic Bullets",
-    "path": "folders/Objects/Boss Bullets/Basic Bullets.yy",
+    "name": "Lobbing Group",
+    "path": "folders/Objects/Boss Bullets/Lobbing Group.yy",
   },
   "parentObjectId": {
     "name": "obj_Bounce_Bullet_Parent",

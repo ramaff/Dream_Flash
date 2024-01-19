@@ -1012,6 +1012,7 @@
     {"id":{"name":"spr_Wisper_P2_Green","path":"sprites/spr_Wisper_P2_Green/spr_Wisper_P2_Green.yy",},},
     {"id":{"name":"spr_Wisper_P2_Purple","path":"sprites/spr_Wisper_P2_Purple/spr_Wisper_P2_Purple.yy",},},
     {"id":{"name":"scr_Ascending_Soul_Essence_Beam","path":"scripts/scr_Ascending_Soul_Essence_Beam/scr_Ascending_Soul_Essence_Beam.yy",},},
+    {"id":{"name":"obj_Lob_Home_Bullet","path":"objects/obj_Lob_Home_Bullet/obj_Lob_Home_Bullet.yy",},},
     {"id":{"name":"spr_Wisper_Blink","path":"sprites/spr_Wisper_Blink/spr_Wisper_Blink.yy",},},
     {"id":{"name":"spr_Wisper_Palette","path":"sprites/spr_Wisper_Palette/spr_Wisper_Palette.yy",},},
     {"id":{"name":"spr_Gutsy","path":"sprites/spr_Gutsy/spr_Gutsy.yy",},},
