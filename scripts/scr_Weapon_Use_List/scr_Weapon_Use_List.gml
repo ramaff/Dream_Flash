@@ -100,12 +100,15 @@ function scr_Weapon_Use_List(cWP = global.currentweapon, _weap_slot = 0) {
 			for(bi = 0; bi < 9; bi++) {
 				if Shot_Repetition[bi] <= 0 {
 					
-					if Charge_Hold = 2 {
+					//if Charge_Hold = 2 {
 						Shot_Repetition_Stats[bi] = current_weapon_stats
-					}
+					//}
 					
 					if variable_struct_exists(current_weapon_stats, "Shot_Repetition") {
 						Shot_Repetition[bi] = current_weapon_stats.Shot_Repetition
+						if global.OC[3] > 0 {
+							Shot_Repetition[bi] += global.OC[3];	
+						}
 					}
 					if variable_struct_exists(current_weapon_stats, "Shot_Repetition_Type") {
 						Shot_Repetition_Type[bi] = current_weapon_stats.Shot_Repetition_Type

@@ -28,18 +28,10 @@ function scr_OC03(cWP = global.currentweapon){
 				Shot_Barrage_Speed[bi] = (7 + (weaponDelay / 4)) / 2;
 				alarm[11] = (Shot_Barrage_Speed[bi]);
 
-				if global.D[10] > 0 {
-					Shot_Count = Shot_Count / 2;
-					Shot_Count -= global.D[10] - 1;
-				}
-				
 				Shot_Repetition_Stats[bi] = current_weapon_stats
 				
 				Shot_Repetition_Forward_Interval[bi] = 0;
 				Shot_Default_Count[bi] = Shot_Count;
-				
-				//show_debug_message("OC3 Shot Count: " + string(Shot_Count))
-				//show_debug_message("OC3 Shot Repetition: " + string(Shot_Repetition[bi]))
 		
 				fval = bi;
 				break;

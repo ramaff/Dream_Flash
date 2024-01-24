@@ -118,7 +118,7 @@ function scr_Shot_Creation() {
 	   // if Shot_Forward = 1 {
 			var forward = 16;
 			//if Shot_Forward_Amount = 0 {
-				forward = Shot_Forward_Amount;	
+			forward = Shot_Forward_Amount;	
 			//}
 	        xx = lengthdir_x(forward,actual_shot_direction);
 	        yy = lengthdir_y(forward,actual_shot_direction);
@@ -128,6 +128,9 @@ function scr_Shot_Creation() {
 		        yy = lengthdir_y(50,actual_shot_direction);
 			}
 	    //} 
+		
+		Print_DF("shot_xx: " + string(Shot_XX))
+		Print_DF("shot_yy: " + string(Shot_YY))
 		
 	    if Shot_XX != 0 || Shot_YY != 0 {
 	        xx = Shot_XX;

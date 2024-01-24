@@ -47,7 +47,12 @@ function scr_Setup_Default_Shot_Stats(){
 		Charge_Essence: 0,
 		Shot_Trail: 0,
 		Shot_Trail_Direction: 0,
-		Shot_Trail_Speed: 0
+		Shot_Trail_Speed: 0,
+		Shot_Impact_Type: 0,
+		Shot_Impact_Power: 0,
+		Shot_Impact_Size: 0,
+		Shot_Forward: 0,
+		Shot_Forward_Amount: 16,
 	}
 	return Shot_Stats
 
