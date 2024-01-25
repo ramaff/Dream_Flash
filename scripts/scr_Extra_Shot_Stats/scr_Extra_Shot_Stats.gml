@@ -289,8 +289,6 @@ function scr_Extra_Shot_Stats() {
 		scr_Q02();
 		scr_U09();
 		
-		scr_D10_Shot_Mod();
-		
 		scr_OA04();
 		scr_OA06();
 		

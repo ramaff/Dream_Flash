@@ -76,6 +76,7 @@ function scr_Weapon_Use_List(cWP = global.currentweapon, _weap_slot = 0) {
 		}
 		
 		scr_D03();
+		scr_D10_Shot_Mod();
 		
 		scr_Setup_Weapon_Stats(current_weapon_stats);
 		

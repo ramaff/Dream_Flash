@@ -31,6 +31,7 @@ function scr_XB02() {
 		variable_struct_set(Shot_Air_Burst_Stats[burstIndex], "Burst_Power", 0.4); 
 		variable_struct_set(Shot_Air_Burst_Stats[burstIndex], "Burst_Size", 0.65); 
 		variable_struct_set(Shot_Air_Burst_Stats[burstIndex], "Burst_Speed", Shot_Speed * 1.2);
+		variable_struct_set(Shot_Air_Burst_Stats[burstIndex], "Shot_Lifespan", 0.6 * current_weapon_stats.Shot_Lifespan); 
 		variable_struct_set(Shot_Air_Burst_Stats[burstIndex], "Air_Burst", true); 
 		variable_struct_set(Shot_Air_Burst_Stats[burstIndex], "Range", 140); 
 		var amount = 5

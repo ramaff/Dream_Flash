@@ -27,7 +27,8 @@ function scr_OC06(){
         Weapon_Split_Hit_Again = 1;
 		var burstIndex = array_length(Shot_Air_Burst_Stats) - 1;
 		variable_struct_set(Shot_Air_Burst_Stats[burstIndex], "Burst_Power", 0.8);
-		variable_struct_set(Shot_Air_Burst_Stats[burstIndex], "Burst_Size", 0.75); 
+		variable_struct_set(Shot_Air_Burst_Stats[burstIndex], "Burst_Size", 0.75);
+		variable_struct_set(Shot_Air_Burst_Stats[burstIndex], "Shot_Lifespan", 0.7 * current_weapon_stats.Shot_Lifespan); 
 		variable_struct_set(Shot_Air_Burst_Stats[burstIndex], "Air_Burst", true); 
 		variable_struct_set(Shot_Air_Burst_Stats[burstIndex], "Range", 130); 
 		variable_struct_set(Shot_Air_Burst_Stats[burstIndex], "Amount", 1 + global.OC[6]); 
