@@ -100,23 +100,6 @@ function scr_Duplicate_Shot_Stats() {
 	
 	shotbeam = other.shotbeam
 	
-	/*
-	var oshotburststats = other.shotburststats
-	
-	if oshotburststats = false {
-		shotpower = other.shotburstpower;
-	} else {
-		shotpower = other.shotpower;	
-		shotsize = other.shotsize;
-		if variable_struct_exists(oshotburststats, "Burst_Power") {
-			shotpower = oshotburststats.Burst_Power;
-		}
-		if variable_struct_exists(oshotburststats, "Burst_Size") {
-			shotsize = oshotburststats.Burst_Size;
-		}
-	}
-	*/
-	
 	image_xscale = shotsize;
 	image_yscale = shotsize;
 	shotsizemax = other.shotsizemax;

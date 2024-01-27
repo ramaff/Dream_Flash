@@ -100,16 +100,10 @@ function scr_Beam_Create(shxx, shyy, beamseg, beamdir, curvedir, beamstop, beamx
 						}
 						
 						with instance_create(shxx + beamxx,shyy + beamyy,obj_Beam_Shot) {
-						//with instance_create(shxx, shyy,obj_Beam_Shot) {
-							
-							//Print_DF("hitagain: " + string(other.shothitagain))
-
 							scr_Duplicate_Shot_Stats();
 							
 							var vshotairburststats = other.shotairburststats[burstIndex]
-							//Print_DF("vshotburststats: " + string(vshotairburststats))
 							scr_Shot_Burst_Stats(vshotairburststats);
-							//Print_DF("shotpower: " + string(shotpower))
 							shotburststats = other.shotburststats;
 							shotextrastats = other.shotextrastats;
 							if burstIndex > 0 {
@@ -132,9 +126,7 @@ function scr_Beam_Create(shxx, shyy, beamseg, beamdir, curvedir, beamstop, beamx
 							
 					    dir += shotairburststats[burstIndex].Spread;
 					}
-					//scr_Create_Beam_Tip(shxx, shyy, beamxx, beamyy, beamsize, beamdir);
 					scr_Create_Beam_Tip(shxx, shyy, beamxx, beamyy, beamsize, beamdir);
-					//instance_destroy();
 					exit;
 				}
 			}	
@@ -144,6 +136,8 @@ function scr_Beam_Create(shxx, shyy, beamseg, beamdir, curvedir, beamstop, beamx
 			with instance_create(shxx + beamxx,shyy + beamyy,obj_Beam_Shot) {
 
 				scr_Duplicate_Shot_Stats();
+				
+				shotpower = shot_stats.Shot_Power;
 				
 				image_angle = beamdir - dirChange;
 				image_xscale = beamsize;

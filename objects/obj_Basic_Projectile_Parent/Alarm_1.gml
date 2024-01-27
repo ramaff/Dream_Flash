@@ -20,10 +20,8 @@ for(i = 0; i < extra_shot_amount; i++) {
 	    shothitagain = 1;
 		if variable_struct_exists(current_extra_stats, "Burst_Power") {
 			shotburstpower = shotpower * current_extra_stats.Burst_Power;
-			//shotaurapower = shotaurapower * current_extra_stats.Burst_Power;
-			//shotpowermax = shotpower;
 		} else {
-			shotburstpower = current_extra_stats.Shot_Power;
+			shotburstpower = shot_stats.Shot_Power;
 		}
 	    shotimpacttype = 0;
 	    shotimpactpower = 0;

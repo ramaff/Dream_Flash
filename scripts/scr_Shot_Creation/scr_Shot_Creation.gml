@@ -129,9 +129,6 @@ function scr_Shot_Creation() {
 			}
 	    //} 
 		
-		Print_DF("shot_xx: " + string(Shot_XX))
-		Print_DF("shot_yy: " + string(Shot_YY))
-		
 	    if Shot_XX != 0 || Shot_YY != 0 {
 	        xx = Shot_XX;
 	        yy = Shot_YY;
@@ -184,9 +181,6 @@ function scr_Shot_Creation() {
 		scr_E14_Shot_Mod();
 		
 		scr_XB05_Shot_Stats();
-		
-		//show_debug_message("x: " + string(shxx) + "y: " + string(shyy))
-		//show_debug_message("x: " + string(obj_Soul_Parent.x) + "y: " + string(obj_Soul_Parent.y))
 		
 		repeat(mechFac) {
 			

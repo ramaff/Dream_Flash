@@ -6,7 +6,7 @@
 // hardcoded stat adjustment in charged use/hold, and in obj_Charge_Indicator
 
 function scr_OC03(cWP = global.currentweapon){
-	if cWP = 13 || cWP = 403 || cWP = 14 {
+	if cWP = 13 || cWP = 403 || cWP = 211 || cWP = 14 {
 		exit;	
 	}
 	if global.OC[3] > 0 {
