@@ -66,7 +66,7 @@ function scr_Charged_Hold() {
 				}
 				
 				if variable_struct_exists(current_weapon_stats, "Shot_Size") {
-					Shot_Charge_Size = current_weapon_stats.Shot_Size * 1.5;
+					Shot_Charge_Size = current_weapon_stats.Shot_Size * 1.6;
 				} else {
 					Shot_Charge_Size = 0
 				}

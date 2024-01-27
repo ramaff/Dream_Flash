@@ -6,8 +6,11 @@ if !(instance_exists(Tutorial_Control)) {
 	}
 	
 	var _ascending = false
-	if scr_State_Active_Check("Ascending", reverie) and global.currentweapon != 605 {
+	if scr_State_Active_Check("Ascending", reverie) and global.currentweapon != 605 and (global.currentweapon < 500 || global.currentweapon > 600) {
 		_ascending = true
+	}
+	if (global.currentweapon >= 500 || global.currentweapon < 600) {
+		Charge_Hold = 0;	
 	}
 	
 	if Charge_Hold = 0 and (scr_Charged_Weapon(global.currentweapon) || _ascending = true) {
@@ -22,7 +25,7 @@ if !(instance_exists(Tutorial_Control)) {
 		scr_Charged_Use();
 	}	
 
-    if Charge_Hold = 0 and !scr_State_Active_Check("Ascending", reverie) {
+    if Charge_Hold = 0 and !_ascending {
         //ds_list_clear(global.gembeam_hits);
 		soulshotmouse = 1;
 		soulshotdirection = 0;
