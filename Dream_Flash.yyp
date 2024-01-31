@@ -2594,6 +2594,7 @@
     {"id":{"name":"spr_Recollection_Unknown_Weapon_Icon","path":"sprites/spr_Recollection_Unknown_Weapon_Icon/spr_Recollection_Unknown_Weapon_Icon.yy",},},
     {"id":{"name":"spr_State_Item_Field","path":"sprites/spr_State_Item_Field/spr_State_Item_Field.yy",},},
     {"id":{"name":"spr_Recollection_Soul_Icon","path":"sprites/spr_Recollection_Soul_Icon/spr_Recollection_Soul_Icon.yy",},},
+    {"id":{"name":"obj_Lob_Heart_Spawn_Bullet","path":"objects/obj_Lob_Heart_Spawn_Bullet/obj_Lob_Heart_Spawn_Bullet.yy",},},
     {"id":{"name":"spr_Recollection_See_Icon","path":"sprites/spr_Recollection_See_Icon/spr_Recollection_See_Icon.yy",},},
     {"id":{"name":"obj_Soul_Collection_Small","path":"objects/obj_Soul_Collection_Small/obj_Soul_Collection_Small.yy",},},
     {"id":{"name":"scr_Masked_Spirit_Sprite","path":"scripts/scr_Masked_Spirit_Sprite/scr_Masked_Spirit_Sprite.yy",},},
