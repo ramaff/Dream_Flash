@@ -14,7 +14,7 @@ scr_Boss_Size_Setup(0.45);
 scr_Boss_Height_Setup(70);
 
 death_sprite = spr_thought_cloud_v2_ko;
-boss_palette = spr_boss_template_palette;
+boss_palette = spr_infatuation_cloud_v2_palette;
 boss_palette_index = champ;
 
 cry_dir = random(360);
