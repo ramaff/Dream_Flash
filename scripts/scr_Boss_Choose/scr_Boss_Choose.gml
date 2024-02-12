@@ -66,9 +66,9 @@ function scr_Boss_Choose(roomNum, exclude, difficultyAdd = 0) {
 
 	
 	if global.currentchapter = 1 {
-	    bossform = choose(1,3,5,9,12,13,14,16,18,19,20,24,25,37,42,43,44,57,98);
+	    bossform = choose(1,3,5,9,12,13,14,16,18,19,20,24,25,37,42,43,44,57,58,98);
 	    if exclude = 1 {
-	        bossform = choose(1,3,5,9,12,14,16,18,19,20,24,25,37,42,43,44,57,98);
+	        bossform = choose(1,3,5,9,12,14,16,18,19,20,24,25,37,42,43,44,57,58,98);
 	    }
 		sboss = scr_Chance(34);
 		if sboss = true {
@@ -225,7 +225,7 @@ function scr_Boss_Choose(roomNum, exclude, difficultyAdd = 0) {
 
 	if bossform = 5.1 // Thought Cloud
 	{
-	    bosstype = obj_Thought_Cloud;
+	    bosstype = obj_thought_cloud_v2;
 	    difficulty = 1;
 	    global.champ = choose(0,1,2,3,8);
 		//global.champ = 0;
@@ -233,7 +233,7 @@ function scr_Boss_Choose(roomNum, exclude, difficultyAdd = 0) {
 
 	if bossform = 6.1 // Infatuation Cloud
 	{
-	    bosstype = obj_Infatuation_Cloud;
+	    bosstype = obj_infatuation_cloud_v2;
 	    difficulty = 4;
 	    global.champ = 0 + irandom(2);
 	}
@@ -561,6 +561,12 @@ function scr_Boss_Choose(roomNum, exclude, difficultyAdd = 0) {
 	{
 	    bosstype = obj_boxer;
 	    difficulty = 2;
+	    global.champ = choose(0);
+	}
+	if bossform = 58.1
+	{
+	    bosstype = obj_sleep_walker;
+	    difficulty = 1;
 	    global.champ = choose(0);
 	}
 	if bossform = 64.1 // Puck

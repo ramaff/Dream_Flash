@@ -27,8 +27,8 @@ weight = 20;
 target_weight = 2;
 
 for(var i = 0; i < 10; i++) {
-	_xx += lengthdir_x(i * 5, 0);
-	_yy += lengthdir_y(i * 5, 0);
+	_xx += lengthdir_x(i * 3, 0);
+	_yy += lengthdir_y(i * 3, 0);
 		
 	with instance_create(_xx,_yy,obj_thought_chain) {
 		target = _ct;
@@ -51,6 +51,7 @@ with instance_create(_xx,_yy,obj_sleep_hound) {
 	_ct = id;
 	
 	boss_value = 58
+	champ = 0.1;
 	scr_Boss_Stats_Setup(2);
 			
 	champ = other.champ;

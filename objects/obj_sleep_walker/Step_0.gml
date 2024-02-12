@@ -16,6 +16,9 @@ if instance_exists(target) {
 	}
 }
 if instance_exists(hound) {
+	if currentphase = 2 {
+		hound.currentphase = 2;	
+	}
 	if hound.currentphase = 2 {
 		weight = 1;
 		target.target_weight = 1;
@@ -52,7 +55,7 @@ if active_attack_delay <= 0 and active_attack_cooldown <= 0 and active_attack_du
 	// Being Yanked
 	if active_attack = 2 {
 		// 
-		scr_Boss_Attack_Time_Setup_v2(40, 0, 1, 0, 0, 0);
+		scr_Boss_Attack_Time_Setup_v2(40, 0, 1, 0, 0, 10);
 		
 		scr_Boss_Dash_Setup_v2(scr_Soul_Point(), 0, 1.5 * bossmovespeed);
     }
@@ -78,7 +81,15 @@ if active_attack_delay <= 0 and pattern_cooldown <= 0 and pattern_count > 0 {
 	}
 	
 	if active_attack = 2 {
-		scr_Jump_Movement_v2(2)	
+		scr_Jump_Movement_v2(3)	
+		
+		if pattern_count = 1 {
+			bosshealth -= 10;
+			scr_Damage_Indicator(0, 10, 2);
+			image_index = 3;
+			
+			scr_Boss_Stretch("Horizontal", 0.4)
+		}
 	}
 	
 	// Maybe I should put this into a script
@@ -96,8 +107,10 @@ if active_attack_duration <= 0 {
 
 /// Boss Sprite Code
 
-// Go back to normal default size
-scr_Boss_Size_Lerp(0.15);
+if instance_exists(hound) {
+	direction = point_direction(x, y, hound.x, hound.y)
+	speed = 0.01
+}
 
 // Handles boss attack sprite animation
 if active_attack = 1 {
@@ -107,8 +120,31 @@ if active_attack = 1 {
 		scr_Boss_Wobble("Horizontal", 2, 0.4, 0)	
 	}
 } else {
-	sprite_index = spr_walker;
+	if instance_exists(hound) {
+		if hound.currentphase = 2 {
+			if hound.speed > 0.25 {
+				sprite_index = spr_walker_not_in_control
+			} else {
+				image_index = 0;	
+			}
+		} else {
+			sprite_index = spr_walker_handling;
+			image_index = 0;
+	
+			//if point_distance(x, y, hound.x, hound.y) > 200 {
+			if hound.speed > 1 {
+				image_index = 1;
+			}
+		}
+	} else {
+		sprite_index = spr_walker_handling;
+	
+		image_index = 0;
+	}
 }
+
+// Go back to normal default size
+scr_Boss_Size_Lerp_Dir(0.15, true);
 
 // So that the boss hurts soul on collision
 // Smaller than the actual boss hitbox
