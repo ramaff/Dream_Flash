@@ -59,7 +59,7 @@ if active_attack_delay <= 0 and active_attack_cooldown <= 0 and active_attack_du
 	
 	if active_attack = 3 {
 		// 
-		scr_Boss_Attack_Time_Setup_v2(60, 10, 1, 10, 0, 40);
+		scr_Boss_Attack_Time_Setup_v2(60, 0, 1, 10, 0, 40);
 		
 		attack_counts = 2;
 		
