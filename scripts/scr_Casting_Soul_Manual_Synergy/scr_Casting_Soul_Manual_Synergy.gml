@@ -8,7 +8,7 @@ function scr_Casting_Soul_Manual_Synergy(){
 	}
 	
 	if global.currentweapon < 700 {
-		if Weapon_Melee > 0 and (obj_Soul_Parent.scurrentstate = "Casting" || (obj_Soul_Parent.stransformedstate == "Scrub" and reverie == true)) {
+		if Weapon_Melee > 0 and scr_State_Active_Check("Casting", reverie) {
 		
 			Shot_Type = obj_Melee_Caster_Shot;
 			Shot_Lifespan = 180;
@@ -19,7 +19,7 @@ function scr_Casting_Soul_Manual_Synergy(){
 		
 			//Shot_Off_State = 1;
 		}
-		if Shot_Beam > 0 and (obj_Soul_Parent.scurrentstate = "Casting" || (obj_Soul_Parent.stransformedstate == "Scrub" and reverie == true)) {
+		if Shot_Beam > 0 and scr_State_Active_Check("Casting", reverie) {
 		
 			Shot_Type = obj_Beam_Caster_Shot;
 			Shot_Lifespan = 180;
