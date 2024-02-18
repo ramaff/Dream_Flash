@@ -24,9 +24,11 @@ function scr_Bleeding_Teleport() {
 		current_weapon_stats.Shot_Speed = 0;
 		current_weapon_stats.Shot_Power = 40;
 		current_weapon_stats.Shot_Knockback = 10 + sqrt(Shot_Power);
-		current_weapon_stats.Shot_Lifespan = 20;
+		current_weapon_stats.Shot_Lifespan = 60;
 		current_weapon_stats.Shot_Angle = 90 + point_direction(x,y,mouse_x,mouse_y);
-		current_weapon_stats.Shot_Image_Rotation_Speed = -30;
+		current_weapon_stats.Shot_Image_Rotation_Speed = -15;
+		
+		current_weapon_stats.Shot_After_Images = 1;
 
 		current_weapon_stats.Shot_Pierce = 20;
 
@@ -43,6 +45,12 @@ function scr_Bleeding_Teleport() {
 
 		current_weapon_stats.Shot_Size = 0.3 + (sqrt(Shot_Power) / 20);
 
+		scr_Setup_Weapon_Stats(current_weapon_stats);
+
+		scr_Shot_Creation();
+		
+		current_weapon_stats.Shot_Angle = current_weapon_stats.Shot_Angle + 180;
+		
 		scr_Setup_Weapon_Stats(current_weapon_stats);
 
 		scr_Shot_Creation();

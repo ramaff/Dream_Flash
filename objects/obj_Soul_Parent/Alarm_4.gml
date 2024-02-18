@@ -7,12 +7,7 @@ if global.currentheart < 0 {
 	global.currentheart = 0;	
 }
 
-var reverie = false;
-if global.F[5] >= 1 {
-	reverie = scr_Chance(10 / global.F[5]);
-}
-
-if scurrentstate = "Beast" || (obj_Soul_Parent.stransformedstate == "Beast" and reverie == true) {
+if scr_State_Active_Check("Beast") {
 	scr_Beast_Maw_Use();
 }
 
@@ -29,3 +24,7 @@ if cHeart = 17 {
 
 scr_U08();
 scr_P08();
+
+if scr_State_Active_Check("Bleeding") and speed > 4 {
+	scr_After_Image(20, false, true)	
+}

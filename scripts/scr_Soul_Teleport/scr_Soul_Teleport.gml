@@ -47,8 +47,16 @@ function scr_Soul_Teleport(_evasion = false){
 	scr_W04();
 	scr_W05();
     
-	x = _xx;
-	y = _yy;
+	if scr_State_Active_Check("Bleeding") {
+		speed = 30;
+		direction = dir;
+		friction = speed / 45;
+		soulinvincibility += 60;
+		
+	} else {
+		x = _xx;
+		y = _yy;
+	}
 	
 	scr_W02(dir);
 	scr_W03();

@@ -55,9 +55,12 @@ if active_attack = 0 {
 if active_attack_delay <= 0 and active_attack_cooldown <= 0 and active_attack_duration <= 0 {
     
 	// Pick a random attack to do
-	active_attack = choose(1, 2);
+	active_attack = choose(1, 2, 3);
+	if scr_Minion_Count() {
+		active_attack = choose(1, 2);
+	}
 	if currentphase = 2 {
-		active_attack = 3;	
+		active_attack = 4;
 	}
 	
 	// Hammer Attack
@@ -74,8 +77,12 @@ if active_attack_delay <= 0 and active_attack_cooldown <= 0 and active_attack_du
 		// 
 		scr_Boss_Attack_Time_Setup_v2(25, 70, 15, 120, 30, 0);
     }
-	// Spill
+	// Decoy Spawn In
 	if active_attack = 3 {
+		scr_Boss_Attack_Time_Setup_v2(1, 60, 0, 180, 30, 30);
+    }
+	// Spill
+	if active_attack = 4 {
 		// Setup how many attacks per boss move, delay, etc
 		scr_Boss_Attack_Time_Setup_v2(360, 30, 3, 120, 30, 10);
 		
@@ -108,12 +115,12 @@ if active_attack_delay <= 0 and pattern_cooldown <= 0 and pattern_count > 0 {
 		bullet_spread = 90;
 		bullet_speed = bossbulletspeed * 2;
 		
-		boss_xoffset = 60;
-		boss_yoffset = 40;
+		boss_xoffset = 100;
+		boss_yoffset = 50;
 		bullet_direction = 0;
 		if pattern_count mod 2 = 0 {
-			boss_xoffset = -60;
-			boss_yoffset = 40;
+			boss_xoffset = -100;
+			boss_yoffset = 50;
 			bullet_direction = 45;
 		}
 		
@@ -144,6 +151,28 @@ if active_attack_delay <= 0 and pattern_cooldown <= 0 and pattern_count > 0 {
 	}
 	
 	if active_attack = 3 {
+		scr_Boss_Stretch("Vertical", 0.2);
+		
+		boss_xoffset = 0;
+		boss_yoffset = -40;
+		
+		bullet_type = obj_Hit_Box_Spawning_Bullet;
+		bullet_count = 1;
+		bullet_lob_time = 45 + random(30);
+		bullet_lifespan = bullet_lob_time + 2;
+		bullet_bounce_speed = 3 + random(2);
+		bullet_sprite = spr_hit_box_box;
+		
+		repeat(3) {
+			bullet_direction = random(360);
+			scr_Boss_Shoot();
+		}
+	
+		// If you gotta change the pattern aim direction
+	    // pattern_direction += 0;
+	}
+	
+	if active_attack = 4 {
 		
 		scr_Boss_Dash_Movement_v2(30,30);
 		
@@ -198,7 +227,7 @@ scr_Boss_Size_Lerp(0.15);
 // Handles boss attack sprite animation
 if active_attack = 1 {
 	var _hold_frame = 2;
-	scr_Boss_Attack_Sprite_v2(spr_boxer_hammers, _hold_frame, 3, 6, 20);
+	scr_Boss_Attack_Sprite_v2(spr_boxer_slamming, _hold_frame, 3, 6, 20);
 	if image_index = floor(_hold_frame) {
 		scr_Boss_Wobble("Horizontal", 4, 0.4, 0)
 	}
@@ -209,6 +238,12 @@ if active_attack = 1 {
 		scr_Boss_Wobble("Horizontal", 2, 0.4, 0)
 	}
 } else if active_attack = 3 {
+	var _hold_frame = 5;
+	scr_Boss_Attack_Sprite_v2(spr_boxer_decoy_shoot_out, _hold_frame, 6, 10, 30);
+	if image_index = floor(_hold_frame) {
+		scr_Boss_Wobble("Horizontal", 2, 0.4, 0)
+	}
+} else if active_attack = 4 {
 	var _hold_frame = 3;
 	scr_Boss_Attack_Sprite_v2(spr_boxer_spill, _hold_frame, 3, 3, 20);
 	//if image_index = _hold_frame {

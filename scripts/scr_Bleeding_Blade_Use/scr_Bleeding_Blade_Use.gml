@@ -25,10 +25,10 @@ function scr_Bleeding_Blade_Use() {
 	//current_weapon_stats.Shot_Angle = 90 + point_direction(x,y,mouse_x,mouse_y);
 	//current_weapon_stats.Shot_Image_Rotation_Speed = -30;
 	current_weapon_stats.Shot_Pierce = 20;
-	current_weapon_stats.Shot_Shield_Type = 3;
-	current_weapon_stats.Shot_Shield_Power = Shot_Power / 5;
+	//current_weapon_stats.Shot_Shield_Type = 3;
+	//current_weapon_stats.Shot_Shield_Power = Shot_Power / 5;
 	current_weapon_stats.Shot_Redirect = 1;
-	current_weapon_stats.Shot_Redirect_Chance = 50;
+	current_weapon_stats.Shot_Redirect_Chance = 100;
 	current_weapon_stats.Shot_Bleed = 1 + floor(Shot_Power / 10);
 	current_weapon_stats.Shot_Bleed_Time = 60;
 	current_weapon_stats.Shot_Bleed_Ticks = 3;

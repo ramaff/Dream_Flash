@@ -25,6 +25,7 @@ function scr_Setup_Default_Shot_Stats(){
         Shot_Pierce: 1,
         Shot_Size: 0.5,
         Shot_Point_Angle: false,
+		Shot_Direction: 0,
 		Shot_Extra_Hit_Frequency: 0,
 		Shot_Acceleration: 0,
 		Shot_Fade: 0,
@@ -37,6 +38,7 @@ function scr_Setup_Default_Shot_Stats(){
 		Shot_Init_Grow: 1,
 		Shot_Excess_Essence: 0,
 		Shot_Mouse_Origin: 0,
+		Shot_Mouse: true,
 		Shot_Fire: 0,
 		Shot_Poison: 0,
 		Shot_Bleed: 0,
@@ -53,6 +55,10 @@ function scr_Setup_Default_Shot_Stats(){
 		Shot_Impact_Size: 0,
 		Shot_Forward: 0,
 		Shot_Forward_Amount: 16,
+		Shot_Shield_Type: 0,
+		Shot_Shield_Power: 0,
+		Shot_Redirect: 0,
+		Shot_Redirect_Chance: 0
 	}
 	return Shot_Stats
 
