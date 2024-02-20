@@ -7,7 +7,7 @@
     minion_attackspeed = 1;
     minion_accuracy = 0;    
     minion_defense = 0;
-    minion_bulletspeed = bulletspeed;
+    //minion_bulletspeed = bulletspeed;
     minion_knockbackforce = 0;
     minion_contactdamage = 7;
     

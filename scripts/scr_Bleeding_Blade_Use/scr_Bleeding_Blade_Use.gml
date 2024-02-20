@@ -14,13 +14,15 @@ function scr_Bleeding_Blade_Use() {
 	//scr_Setup_Weapon_Stats(current_weapon_stats);
 
 	current_weapon_stats.Shot_Phasing = 1;
-	current_weapon_stats.Weapon_Soul_Maintain = 1;
+	current_weapon_stats.Shot_Height = 0;
+	//current_weapon_stats.Weapon_Soul_Maintain = 1;
 	//current_weapon_stats.Shot_Mouse = 1;
 	current_weapon_stats.Weapon_Melee = 1;
-	current_weapon_stats.Shot_Speed = 0;
+	current_weapon_stats.Shot_Speed = 26;
+	current_weapon_stats.Shot_Acceleration = -2
 	current_weapon_stats.Shot_Power = 8 + (weaponCost * 2);
 	current_weapon_stats.Shot_Knockback = 10 + sqrt(Shot_Power);
-	current_weapon_stats.Shot_Lifespan = 7;
+	current_weapon_stats.Shot_Lifespan = 15;
 	current_weapon_stats.Shot_Angle = point_direction(x,y,mouse_x,mouse_y);
 	//current_weapon_stats.Shot_Angle = 90 + point_direction(x,y,mouse_x,mouse_y);
 	//current_weapon_stats.Shot_Image_Rotation_Speed = -30;
@@ -33,6 +35,7 @@ function scr_Bleeding_Blade_Use() {
 	current_weapon_stats.Shot_Bleed_Time = 60;
 	current_weapon_stats.Shot_Bleed_Ticks = 3;
 	current_weapon_stats.Shot_Point_Angle = 0;
+	current_weapon_stats.Shot_Orbital_Type = 0;
 
 	speed = 8;
 	friction = 1;

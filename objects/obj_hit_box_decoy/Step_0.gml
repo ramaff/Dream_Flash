@@ -3,8 +3,13 @@
 // Mandatory:
 scr_Boss_Step(2);
 
+scr_Boss_Height_Bob(40, 1, 0);
+
 // Make boss shape wobble:
-scr_Boss_Wobble("Horizontal", 0.3, 1, 0);
+scr_Boss_Wobble("Horizontal", 0.4, 1, 0);
+
+speed = bossmovespeed * 0.75;
+	direction = scr_Soul_Point();
 
 
 //////////////////////////////////////////////////////////////////////////////////////////

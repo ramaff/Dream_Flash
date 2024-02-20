@@ -6,9 +6,12 @@ scr_Boss_Minion_Stat_Setup();
 scr_Boss_Attack_Setup(2);
 
 // Required, usually set to 0.5
-scr_Boss_Size_Setup(0.5);
+scr_Boss_Size_Setup(0.475);
 
 // If boss is visually 'floating' setup boss height
 // Needed for bobbing/boss shadows
-scr_Boss_Height_Setup(40);
+scr_Boss_Height_Setup(90);
 
+death_sprite = spr_boxer_ko;
+boss_palette = spr_hit_box_palette;
+boss_palette_index = champ;

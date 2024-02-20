@@ -43,7 +43,7 @@ if active_attack = 0 {
 	
 	speed = min(bossmovespeed * _attack_speed_curr, point_distance(x, y, box_xx, box_yy))
 	direction = point_direction(x, y, box_xx, box_yy)
-} else if active_attack != 3 {
+} else if active_attack != 4 {
 	speed = bossmovespeed * 0.375;
 	direction = scr_Soul_Point();
 }
@@ -56,11 +56,20 @@ if active_attack_delay <= 0 and active_attack_cooldown <= 0 and active_attack_du
     
 	// Pick a random attack to do
 	active_attack = choose(1, 2, 3);
-	if scr_Minion_Count() {
+	if scr_Minion_Count() || champ = 1 {
 		active_attack = choose(1, 2);
+	}
+	if champ = 2 {
+		active_attack = choose(1, 3);
+		if scr_Minion_Count() {
+			active_attack = 1;	
+		}
 	}
 	if currentphase = 2 {
 		active_attack = 4;
+		if champ = 2 {
+			active_attack = 5;	
+		}
 	}
 	
 	// Hammer Attack
@@ -79,14 +88,15 @@ if active_attack_delay <= 0 and active_attack_cooldown <= 0 and active_attack_du
     }
 	// Decoy Spawn In
 	if active_attack = 3 {
-		scr_Boss_Attack_Time_Setup_v2(1, 60, 0, 180, 30, 30);
+		image_index = 0;
+		scr_Boss_Attack_Time_Setup_v2(1, 70, 0, 180, 20, 30);
     }
 	// Spill
 	if active_attack = 4 {
 		// Setup how many attacks per boss move, delay, etc
 		scr_Boss_Attack_Time_Setup_v2(360, 30, 3, 120, 30, 10);
 		
-		scr_Boss_Dash_Setup_v2(scr_Soul_Point(), bossmovespeed * 0.75, bossmovespeed * 2)
+		scr_Boss_Dash_Setup_v2(scr_Soul_Point(), bossmovespeed * 0.75, bossmovespeed * 2.5)
 		
 		//dash_direction = (round(random(4)) + 0.5) * 90
 		direction = dash_direction - 60 + random(120)
@@ -96,6 +106,11 @@ if active_attack_delay <= 0 and active_attack_cooldown <= 0 and active_attack_du
 		// Can set up the initial pattern direction
 		// patternDirection = scr_Soul_Point();
 		// patternDirection = random(360;
+    }
+	// Decoy Spawn In
+	if active_attack = 5 {
+		image_index = 0;
+		scr_Boss_Attack_Time_Setup_v2(1, 70, 0, 60, 30, 30);
     }
 }
 
@@ -115,18 +130,41 @@ if active_attack_delay <= 0 and pattern_cooldown <= 0 and pattern_count > 0 {
 		bullet_spread = 90;
 		bullet_speed = bossbulletspeed * 2;
 		
-		boss_xoffset = 100;
-		boss_yoffset = 50;
+		boss_xoffset = 130;
+		boss_yoffset = 45;
 		bullet_direction = 0;
 		if pattern_count mod 2 = 0 {
-			boss_xoffset = -100;
-			boss_yoffset = 50;
+			boss_xoffset = -1 * boss_xoffset;
 			bullet_direction = 45;
+		}
+		
+		if champ = 2 {
+			bullet_count = 6;
+			bullet_spread = 60;
+			if bullet_direction = 45 {
+				bullet_direction = 30
+			}
 		}
 		
 		bullet_direction = scr_Boss_Bullet_Direction_Formula(bullet_direction, 10)
 		
-		scr_Boss_Shoot();
+		if champ = 1 {
+			bullet_count = 1;
+			repeat(4) {
+				bullet_sprite = choose(spr_Glowy_Enemy_Shot, spr_Glowy_Blue_Shot, spr_Glowy_Green_Shot, spr_Glowy_Yellow_Shot, spr_Glowy_Pink_Shot)
+		
+				bullet_direction = scr_Boss_Bullet_Direction_Formula(scr_Soul_Point(), 360)
+				bullet_type = obj_Marble_Bullet;
+				bullet_lob_time = 45 + random(30);
+				bullet_lifespan = (bullet_lob_time + 2) * 4;
+				bullet_bounce_speed = 3 + random(2);
+				bullet_speed = bossbulletspeed * (1 + random(0.75))
+		
+				scr_Boss_Shoot();
+			}
+		} else {
+			scr_Boss_Shoot();
+		}
 	
 		// If you gotta change the pattern aim direction
 	    // pattern_direction += 0;
@@ -142,7 +180,12 @@ if active_attack_delay <= 0 and pattern_cooldown <= 0 and pattern_count > 0 {
 		bullet_lob_time = 45 + random(30);
 		bullet_lifespan = (bullet_lob_time + 2) * 4;
 		bullet_bounce_speed = 3 + random(2);
-		bullet_speed = bossbulletspeed * (0.5 + random(0.6))
+		bullet_speed = bossbulletspeed * (0.6 + random(0.75))
+		
+		if champ = 1 {
+			bullet_sprite = spr_Boss_Red_Bomb;
+			bullet_type = obj_Marble_Bomb_Bullet;
+		}
 		
 		scr_Boss_Shoot();
 	
@@ -158,18 +201,16 @@ if active_attack_delay <= 0 and pattern_cooldown <= 0 and pattern_count > 0 {
 		
 		bullet_type = obj_Hit_Box_Spawning_Bullet;
 		bullet_count = 1;
-		bullet_lob_time = 45 + random(30);
+		bullet_lob_time = 30 + random(15);
 		bullet_lifespan = bullet_lob_time + 2;
 		bullet_bounce_speed = 3 + random(2);
 		bullet_sprite = spr_hit_box_box;
+		bullet_speed = bossbulletspeed * (2 + random(2))
 		
 		repeat(3) {
 			bullet_direction = random(360);
 			scr_Boss_Shoot();
 		}
-	
-		// If you gotta change the pattern aim direction
-	    // pattern_direction += 0;
 	}
 	
 	if active_attack = 4 {
@@ -178,16 +219,41 @@ if active_attack_delay <= 0 and pattern_cooldown <= 0 and pattern_count > 0 {
 		
 		speed = dash_speed;
 		
-		bullet_type = obj_Poison_Pool;
-	    bullet_sprite = spr_Poison_Pool
-	    bullet_speed = bossbulletspeed * 0;
-	    bullet_power = bosspower * 0.15;
-	    bullet_lifespan = 180 + irandom(15);
-	    bullet_size = 0.65 + random(0.15);
-		bullet_depth = 20;
+		if champ = 1 {
+			if pattern_count mod 10 = 0 {
+				bullet_sprite = choose(spr_Glowy_Enemy_Shot, spr_Glowy_Blue_Shot, spr_Glowy_Green_Shot, spr_Glowy_Yellow_Shot, spr_Glowy_Pink_Shot)
+			    bullet_type = obj_Marble_Bullet;
+			    bullet_speed = bossbulletspeed * (0.4 + random(0.6));
+				bullet_direction = random(360);
+			    bullet_lifespan = 180 + irandom(60);
 
-		boss_yoffset = boss_height;
-	    scr_Just_Shoot();
+				boss_yoffset = boss_height;
+			    scr_Just_Shoot();
+			}
+			
+			if pattern_count mod 25 = 0 {
+				bullet_sprite = spr_Boss_Red_Bomb;
+				bullet_type = obj_Marble_Bomb_Bullet;
+			    bullet_speed = bossbulletspeed * (0.4 + random(0.6));
+				bullet_direction = random(360);
+			    bullet_lifespan = 180 + irandom(60);
+
+				boss_yoffset = boss_height;
+			    scr_Just_Shoot();
+			}
+			
+		} else {
+			bullet_type = obj_Poison_Pool;
+		    bullet_sprite = spr_Poison_Pool
+		    bullet_speed = bossbulletspeed * 0;
+		    bullet_power = bosspower * 0.15;
+		    bullet_lifespan = 180 + irandom(15);
+		    bullet_size = 0.65 + random(0.15);
+			bullet_depth = 20;
+
+			boss_yoffset = boss_height;
+		    scr_Just_Shoot();
+		}
 		
 		if !scr_Minion_Count(2) {
 			if pattern_count mod 80 = 40 {
@@ -206,6 +272,30 @@ if active_attack_delay <= 0 and pattern_cooldown <= 0 and pattern_count > 0 {
 		scr_Wall_Bounce();
 	}
 	
+	if active_attack = 5 {
+		
+		scr_Boss_Stretch("Vertical", 0.2);
+		
+		if !scr_Minion_Count(2) {
+		
+			boss_xoffset = 0;
+			boss_yoffset = -40;
+		
+			bullet_type = obj_Hit_Box_Soul_Spawning_Bullet;
+			bullet_count = 1;
+			bullet_lob_time = 30 + random(15);
+			bullet_lifespan = bullet_lob_time + 2;
+			bullet_bounce_speed = 3 + random(2);
+			bullet_sprite = spr_hit_box_box;
+			bullet_speed = bossbulletspeed * (2 + random(2))
+		
+			repeat(3) {
+				bullet_direction = random(360);
+				scr_Boss_Shoot();
+			}
+		}
+	}
+	
 	// Maybe I should put this into a script
     pattern_count -= 1;
     pattern_cooldown += pattern_cooldown_max;
@@ -217,6 +307,12 @@ if active_attack_delay <= 0 and pattern_cooldown <= 0 and pattern_count > 0 {
 
 if active_attack_duration <= 0 { 
     active_attack = 0;
+	with (obj_hit_box_decoy) {
+		sprite_index = spr_boxer;
+	}
+	with (obj_hit_box_soul_decoy) {
+		sprite_index = spr_hit_box_soul;
+	}
 }
 
 /// Boss Sprite Code
@@ -237,12 +333,46 @@ if active_attack = 1 {
 	if image_index = floor(_hold_frame) {
 		scr_Boss_Wobble("Horizontal", 2, 0.4, 0)
 	}
-} else if active_attack = 3 {
-	var _hold_frame = 5;
-	scr_Boss_Attack_Sprite_v2(spr_boxer_decoy_shoot_out, _hold_frame, 6, 10, 30);
+} else if active_attack = 3 || active_attack = 5 {
+	//sprite_index = spr_boxer_decoy_shoot_out;
+	var _hold_frame = 7;
+	scr_Boss_Attack_Sprite_v2(spr_boxer_decoy_shoot_out, _hold_frame, 8, 8, 40);
+	var _xx = x;
+	var _yy = y
+	var _i = 99;
+	if active_attack_duration = 30 {
+		_i = ceil(random(instance_number(obj_hit_box_decoy)))
+	}
+	with (obj_hit_box_decoy) {
+		sprite_index = other.sprite_index;
+		image_index = other.image_index;
+		_i--;
+		if _i = 0 {
+			other.x = x;
+			other.y = y;
+			x = _xx;
+			y = _yy;
+		}
+	}
+	if active_attack_duration = 30 {
+		_i = ceil(random(instance_number(obj_hit_box_soul_decoy)))
+	}
+	with (obj_hit_box_soul_decoy) {
+		sprite_index = spr_hit_box_soul_spawn_in;
+		image_index = other.image_index;
+		_i--;
+		if _i = 0 {
+			other.x = x;
+			other.y = y;
+			x = _xx;
+			y = _yy;
+		}
+	}
+	
 	if image_index = floor(_hold_frame) {
 		scr_Boss_Wobble("Horizontal", 2, 0.4, 0)
 	}
+	
 } else if active_attack = 4 {
 	var _hold_frame = 3;
 	scr_Boss_Attack_Sprite_v2(spr_boxer_spill, _hold_frame, 3, 3, 20);

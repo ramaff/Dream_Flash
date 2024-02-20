@@ -9,6 +9,8 @@ function scr_Minion_Shot_Stats(){
 	minion_accuracy = 1; 
 	
 	champ = other.champ;
+	boss_palette = other.boss_palette;
+	boss_palette_index = other.boss_palette_index;
 	
 	bossmaxhealth2 = 0;
 	

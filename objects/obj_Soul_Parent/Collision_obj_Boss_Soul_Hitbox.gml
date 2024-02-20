@@ -1,14 +1,6 @@
 //if other.bossid.state = states.normal {
 if instance_exists(other.bossid) {
 	
-	if scr_State_Active_Check("Bleeding") {
-		if(place_meeting(x + hspeed, y, other))
-			direction = -direction + 180;
-
-		if(place_meeting(x, y + vspeed, other))
-			direction = -direction;	
-	}
-	
 	if global.V[5] > 0 {
 		var _evaded = scr_V05();
 		if _evaded {
@@ -17,6 +9,7 @@ if instance_exists(other.bossid) {
 	}
 
 	if soulinvincibility <= 0 {
+		
 	    if (scontactdamage + scontactdamageadd) > 0 {
 			
 			var cdam = scontactdamage + scontactdamageadd
@@ -60,6 +53,10 @@ if instance_exists(other.bossid) {
 	    }
 	    }
 
+	}
+	
+	if scr_State_Active_Check("Bleeding") and speed > 2 and soulinvincibility > 0 {
+		exit;	
 	}
 	
 	var i;

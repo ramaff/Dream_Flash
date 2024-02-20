@@ -561,7 +561,7 @@ function scr_Boss_Choose(roomNum, exclude, difficultyAdd = 0) {
 	{
 	    bosstype = obj_boxer;
 	    difficulty = 2;
-	    global.champ = choose(0);
+	    global.champ = choose(0, 1, 2);
 	}
 	if bossform = 58.1
 	{

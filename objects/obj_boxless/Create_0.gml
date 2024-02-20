@@ -13,3 +13,7 @@ scr_Boss_Size_Setup(0.5);
 scr_Boss_Height_Setup(0);
 
 alarm[1] = 30;
+
+death_sprite = spr_boxer_ko;
+boss_palette = spr_hit_box_palette;
+boss_palette_index = champ;
