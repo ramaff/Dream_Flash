@@ -1,9 +1,9 @@
 function scr_Boss_Choose(roomNum, exclude, difficultyAdd = 0) {
 	var simRoom = (roomNum + difficultyAdd)
 	
-	var stage_base_diff = 1.5 + (4 * (global.currentchapter - 1))
+	var stage_base_diff = 1.5 + (3.5 * (global.currentchapter - 1))
 	if global.currentchapter = 3 {
-		stage_base_diff += 0.75;
+		stage_base_diff += 1;
 	}
 	if global.currentchapter >= 4 {
 		stage_base_diff += 2;
@@ -567,7 +567,7 @@ function scr_Boss_Choose(roomNum, exclude, difficultyAdd = 0) {
 	{
 	    bosstype = obj_sleep_walker;
 	    difficulty = 1;
-	    global.champ = choose(0);
+	    global.champ = choose(0, 1);
 	}
 	if bossform = 64.1 // Puck
 	{

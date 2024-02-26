@@ -15,6 +15,14 @@ if shotmovement = 0 {
 	speed = 0;	
 }
 
+if shot_stats.Shot_Ground = true {
+	shot_stats.Shot_Lobbing = false;
+	shot_stats.Shot_Height = 0;
+	shot_stats.Shot_Fall_Speed = 0;
+	shot_stats.Shot_Gravity = 0;
+	shotlobbing = 0;
+}
+
 if shotsuck > 0 {
 	if shotsucktype = 1 {
 		scr_Enemy_Bullet_Suck(shotsuck);	

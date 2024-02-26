@@ -2,6 +2,8 @@ function scr_Boss_Status_Setup(version=1) {
 	projectile_hit_id = noone;
 	//projectile_hits = ds_list_create();
 	projectile_hits = {};
+	
+	boss_height = 0;
 
 	bossID = id;
 

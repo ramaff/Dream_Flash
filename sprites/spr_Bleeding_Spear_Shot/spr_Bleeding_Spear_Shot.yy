@@ -13,14 +13,14 @@
   "edgeFiltering": false,
   "For3D": false,
   "frames": [
-    {"resourceType":"GMSpriteFrame","resourceVersion":"1.1","name":"43c0d6ac-69e4-46d6-a3fe-ad6066d3f9e3",},
+    {"resourceType":"GMSpriteFrame","resourceVersion":"1.1","name":"4da676dc-e3b0-4549-9131-44a5d3d5ebeb",},
   ],
   "gridX": 0,
   "gridY": 0,
   "height": 270,
   "HTile": false,
   "layers": [
-    {"resourceType":"GMImageLayer","resourceVersion":"1.0","name":"1cafb58c-8d3f-4c99-bec1-e0059a8ccbce","blendMode":0,"displayName":"default","isLocked":false,"opacity":100.0,"visible":true,},
+    {"resourceType":"GMImageLayer","resourceVersion":"1.0","name":"a56ed106-a55a-4106-a7bc-320953cd3228","blendMode":0,"displayName":"default","isLocked":false,"opacity":100.0,"visible":true,},
   ],
   "nineSlice": null,
   "origin": 9,
@@ -54,12 +54,12 @@
     "timeUnits": 1,
     "tracks": [
       {"resourceType":"GMSpriteFramesTrack","resourceVersion":"1.0","name":"frames","builtinName":0,"events":[],"inheritsTrackColour":true,"interpolation":1,"isCreationTrack":false,"keyframes":{"resourceType":"KeyframeStore<SpriteFrameKeyframe>","resourceVersion":"1.0","Keyframes":[
-            {"resourceType":"Keyframe<SpriteFrameKeyframe>","resourceVersion":"1.0","Channels":{"0":{"resourceType":"SpriteFrameKeyframe","resourceVersion":"1.0","Id":{"name":"43c0d6ac-69e4-46d6-a3fe-ad6066d3f9e3","path":"sprites/spr_Bleeding_Spear_Shot/spr_Bleeding_Spear_Shot.yy",},},},"Disabled":false,"id":"06351445-e5fb-45df-8a82-78dce24d0631","IsCreationKey":false,"Key":0.0,"Length":1.0,"Stretch":false,},
+            {"resourceType":"Keyframe<SpriteFrameKeyframe>","resourceVersion":"1.0","Channels":{"0":{"resourceType":"SpriteFrameKeyframe","resourceVersion":"1.0","Id":{"name":"4da676dc-e3b0-4549-9131-44a5d3d5ebeb","path":"sprites/spr_Bleeding_Spear_Shot/spr_Bleeding_Spear_Shot.yy",},},},"Disabled":false,"id":"5b385539-bb40-4015-8ff8-716d524327c6","IsCreationKey":false,"Key":0.0,"Length":1.0,"Stretch":false,},
           ],},"modifiers":[],"spriteId":null,"trackColour":0,"tracks":[],"traits":0,},
     ],
     "visibleRange": null,
     "volume": 1.0,
-    "xorigin": 90,
+    "xorigin": 95,
     "yorigin": 135,
   },
   "swatchColours": null,
@@ -70,5 +70,5 @@
   },
   "type": 0,
   "VTile": false,
-  "width": 510,
+  "width": 540,
 }

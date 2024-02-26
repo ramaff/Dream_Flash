@@ -12,7 +12,7 @@ repeat(5) {
 	bullet_lob_time = 45 + random(30);
 	bullet_lifespan = (bullet_lob_time + 2) * 4;
 	bullet_bounce_speed = 3 + random(2);
-	bullet_speed = bossbulletspeed * (0.4 + random(0.4))
+	bullet_speed = bossbulletspeed * (1 + random(1))
 		
 	scr_Boss_Shoot();
 

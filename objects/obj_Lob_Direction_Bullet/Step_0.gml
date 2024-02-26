@@ -5,7 +5,7 @@ if bounce_speed < 0 {
 	_z_dir = 90;	
 }
 image_angle = direction;
-image_angle = scr_Angle_Converge(direction, _z_dir, bounce_speed * 5)
+image_angle = scr_Angle_Converge(direction, _z_dir, bounce_speed * 10)
 
 //scr_Wall_Bounce()
 

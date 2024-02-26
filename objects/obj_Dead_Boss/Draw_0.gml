@@ -1,7 +1,7 @@
 /// @description Insert description here
 // You can write your code in this editor
 
-image_speed = 0;
+//image_speed = 0;
 
 if boss_palette != noone {
 	pal_swap_set(boss_palette, boss_palette_index, false);

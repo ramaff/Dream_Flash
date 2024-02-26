@@ -28,7 +28,7 @@ function scr_OC03(cWP = global.currentweapon){
 				Shot_Barrage_Speed[bi] = (7 + (weaponDelay / 4)) / 2;
 				alarm[11] = (Shot_Barrage_Speed[bi]);
 
-				Shot_Repetition_Stats[bi] = current_weapon_stats
+				Shot_Repetition_Stats[bi] = current_weapon_stats;
 				
 				Shot_Repetition_Forward_Interval[bi] = 0;
 				Shot_Default_Count[bi] = Shot_Count;

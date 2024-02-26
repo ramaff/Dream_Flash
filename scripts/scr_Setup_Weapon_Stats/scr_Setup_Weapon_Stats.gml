@@ -5,6 +5,9 @@ function scr_Setup_Weapon_Stats(_current_weapon_stats = current_weapon_stats) {
 	// Newer System ? idk
 	
 	//Shot_Stats = _current_weapon_stats;
+	if variable_struct_exists(_current_weapon_stats, "Weapon_Number") {
+		Shot_Stats.Weapon_Number = _current_weapon_stats.Weapon_Number;
+	}
 	if variable_struct_exists(_current_weapon_stats, "Shot_Lobbing") {
 		Shot_Stats.Shot_Lobbing = _current_weapon_stats.Shot_Lobbing;
 	}
@@ -32,7 +35,7 @@ function scr_Setup_Weapon_Stats(_current_weapon_stats = current_weapon_stats) {
 	if variable_struct_exists(_current_weapon_stats, "Shot_Init_Grow") {
 		Shot_Stats.Shot_Init_Grow = _current_weapon_stats.Shot_Init_Grow;
 	}
-	if variable_struct_exists(_current_weapon_stats, "Shot_Extra_Stats") {
+	//if variable_struct_exists(_current_weapon_stats, "Shot_Extra_Stats") {
 		/*if _current_weapon_stats.Shot_Extra_Stats != false {
 			show_debug_message("_current_weapon_stats.Shot_Extra_Stats: " + string(_current_weapon_stats.Shot_Extra_Stats))
 			Shot_Stats.Shot_Extra_Stats = json_parse(json_stringify(global.DEFAULT_SHOT_STATS));
@@ -41,8 +44,8 @@ function scr_Setup_Weapon_Stats(_current_weapon_stats = current_weapon_stats) {
 	            variable_struct_set(Shot_Stats.Shot_Extra_Stats, _PropertyNames[i], variable_struct_get(_current_weapon_stats.Shot_Extra_Stats, _PropertyNames[i]));
 	        }
 		} */
-		Shot_Stats.Shot_Extra_Stats = _current_weapon_stats.Shot_Extra_Stats;
-	}
+		//Shot_Stats.Shot_Extra_Stats = _current_weapon_stats.Shot_Extra_Stats;
+	//}
 	
 	// Older System
 	

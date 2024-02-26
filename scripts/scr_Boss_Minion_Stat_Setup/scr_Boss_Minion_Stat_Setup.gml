@@ -3,6 +3,8 @@
 function scr_Boss_Minion_Stat_Setup(){
 	bossmaxhealth = 25;
 	bossmaxhealth2 = 0;
+	bosstotalhealth = 25;
+	boss_phase_threshold = 0;
 	bossdefense = 0;
 	bossdefense2 = 0;
 	bosshealth = 25;
@@ -12,4 +14,5 @@ function scr_Boss_Minion_Stat_Setup(){
 	bossattackspeed = 1;
 	bossaccuracy = 1;
 	facing_direction = 1;
+	boss_height = 0;
 }

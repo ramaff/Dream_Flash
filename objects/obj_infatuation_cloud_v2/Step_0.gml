@@ -4,18 +4,36 @@
 scr_Boss_Step(2);
 
 // If boss is floating in air, can make it bob up and down:
-if active_attack > 0 and active_attack_delay <= 0 {
+
+var _min_height = 60;
+if champ = 1 {
+	_min_height = 60;
+	if currentphase = 2 {
+		_min_height = 60;	
+	}
+}
+if boss_height < _min_height {
+	boss_height = _min_height;	
+}
+	
+if currentphase = 2 and champ = 1 {
+	scr_Boss_Height_Bob(160, 2, 0);
+} else if active_attack > 0 and active_attack_delay <= 0 {
 	scr_Boss_Height_Bob(60, 0.5, 0);
 } else {
-	scr_Boss_Height_Bob(30, 1, 0);	
+	scr_Boss_Height_Bob(30, 1, 0);
 }
+
 
 // Make boss shape wobble:
 scr_Boss_Wobble("Horizontal", 0.15, 1, 0);
 
 if currentphase = 2 {
-	if active_attack_delay < 0 and active_attack = 3 {
-		var _move_fac = 9.5
+	if active_attack_delay < 0 and active_attack = 9 {
+		var _move_fac = 2.3
+		speed = scr_Converge(speed, bossmovespeed * _move_fac, 0.03)
+	} else if active_attack_delay < 0 and active_attack = 3 {
+		var _move_fac = 6.5
 		speed = scr_Converge(speed, bossmovespeed * _move_fac, 0.015)
 		
 		if point_distance(x, y, room_width / 2, room_height / 2) > (global.roomSizeX / 2) {
@@ -24,17 +42,19 @@ if currentphase = 2 {
 		
 		direction = scr_Angle_Converge(direction, cry_dir, 3)
 	} else if active_attack_delay < 0 and active_attack = 6 {
-		var _move_fac = 12
+		var _move_fac = 7.5
 		speed = scr_Converge(speed, bossmovespeed * _move_fac, 0.015)
 		
 		if point_distance(x, y, room_width / 2, room_height / 2) > (global.roomSizeX / 2) {
-			direction = point_direction(x, y, room_width / 2, room_height / 2) - 30 + random(60);
+			cry_dir = point_direction(x, y, room_width / 2, obj_Soul_Parent.perY) - 30 + random(60);
+		} else {
+			direction = scr_Keep_Horizontal(direction, 6)
 		}
 		
-		direction = scr_Keep_Horizontal(direction, 30)
+		direction = scr_Angle_Converge(direction, cry_dir, 3)
 	} else {
-		direction = scr_Soul_Point()
-		speed = scr_Converge(speed, bossmovespeed * 0.5, 0.1)
+		direction = scr_Angle_Converge(direction, scr_Soul_Point(), 3)
+		speed = lerp(speed, bossmovespeed * 0.5, 0.1)
 	}
 	
 } else {
@@ -60,6 +80,12 @@ if active_attack_delay <= 0 and active_attack_cooldown <= 0 and active_attack_du
 		active_attack = choose(4, 5);
 		if currentphase = 2 {
 			active_attack = 6;
+		}	
+	}
+	if champ = 2 {
+		active_attack = choose(7, 8);
+		if currentphase = 2 {
+			active_attack = 9;
 		}	
 	}
 	
@@ -90,7 +116,7 @@ if active_attack_delay <= 0 and active_attack_cooldown <= 0 and active_attack_du
 	
 	if active_attack = 4 {
 		// Setup how many attacks per boss move, delay, etc
-		scr_Boss_Attack_Time_Setup_v2(40, 50, 9, 150, 30, 10);
+		scr_Boss_Attack_Time_Setup_v2(55, 50, 5, 150, 30, 10);
 		
 		// Can set up the initial pattern direction
 		pattern_direction = random(360);
@@ -98,19 +124,47 @@ if active_attack_delay <= 0 and active_attack_cooldown <= 0 and active_attack_du
 	
 	if active_attack = 5 {
 		// Setup how many attacks per boss move, delay, etc
-		scr_Boss_Attack_Time_Setup_v2(21, 50, 10, 240, 30, 10);
+		scr_Boss_Attack_Time_Setup_v2(18, 50, 10, 180, 30, 10);
+		
+		top_rain_start_x = (room_width / 2) - (field_width / 2) - (field_width / 10) - 100 + random(200)
 		
 		// Can set up the initial pattern direction
-		pattern_direction = 255 + random(30);
+		//pattern_direction = 255 + random(30);
     }
 	
 	if active_attack = 6 {
 		// Setup how many attacks per boss move, delay, etc
-		scr_Boss_Attack_Time_Setup_v2(30, 50, 20, 120, 30, 10);
+		scr_Boss_Attack_Time_Setup_v2(60, 50, 10, 120, 30, 10);
 		
 		// Can set up the initial pattern direction
 		pattern_direction = scr_Boss_Bullet_Direction_Formula(scr_Soul_Point() + 180, 30)
 		direction = pattern_direction + 180;
+    }
+	
+	if active_attack = 7 {
+		// Setup how many attacks per boss move, delay, etc
+		scr_Boss_Attack_Time_Setup_v2(63, 50, 8, 150, 30, 10);
+		
+		// Can set up the initial pattern direction
+		pattern_direction = random(360);
+    }
+	
+	if active_attack = 8 {
+		// Setup how many attacks per boss move, delay, etc
+		scr_Boss_Attack_Time_Setup_v2(10, 50, 30, 175, 30, 10);
+		
+		// Can set up the initial pattern direction
+		pattern_direction = scr_Boss_Bullet_Direction_Formula(scr_Soul_Point(), 30) - 100
+    }
+	
+	if active_attack = 9 {
+		// Setup how many attacks per boss move, delay, etc
+		scr_Boss_Attack_Time_Setup_v2(56, 50, 15, 90, 30, 10);
+		
+		// Can set up the initial pattern direction
+		pattern_direction = scr_Boss_Bullet_Direction_Formula(scr_Soul_Point() + 180, 30)
+		direction = pattern_direction + 180;
+		direction += max(0, 30 - sqrt(scr_Soul_Distance()));
     }
 	
 }
@@ -209,7 +263,7 @@ if active_attack_delay <= 0 and pattern_cooldown <= 0 and pattern_count > 0 {
 		
 		scr_Boss_Shoot();
 		
-		speed += ((bossmovespeed * 9.5) - speed) / 15
+		speed += ((bossmovespeed * 6.5) - speed) / 15
 		//direction = pattern_direction + 180;
 	
 		// If you gotta change the pattern aim direction
@@ -221,11 +275,11 @@ if active_attack_delay <= 0 and pattern_cooldown <= 0 and pattern_count > 0 {
 		
 		bullet_type = obj_Lob_Direction_Bullet;
 		
-		bullet_count = 3;
-		bullet_spread = 120;
+		bullet_count = 2;
+		bullet_spread = 180;
 		
-		bullet_lifespan = 60 + random(30) + (1 * (pattern_count_max - pattern_count));
-		bullet_speed = bossbulletspeed * (1 + ((pattern_count_max - pattern_count) / 15) + random(0.35));
+		bullet_lifespan = 60 + random(15) + (1 * (pattern_count_max - pattern_count));
+		bullet_speed = bossbulletspeed * (1 + ((pattern_count_max - pattern_count) / 20) + random(0.35));
 		
 		bullet_direction = scr_Boss_Bullet_Direction_Formula(pattern_direction, 10)
 		pattern_direction += 15;
@@ -234,16 +288,37 @@ if active_attack_delay <= 0 and pattern_cooldown <= 0 and pattern_count > 0 {
 		bullet_lob_time = bullet_lifespan - 2;
 		
 		scr_Boss_Shoot();
-	
-		// If you gotta change the pattern aim direction
-	    // pattern_direction += 0;
 	}
 	
 	if active_attack = 5 {
 		scr_Boss_Stretch("Vertical", 0.15);
 		
-		bullet_type = obj_Lob_Direction_Bullet;
+		bullet_part = 2;
+		bullet_part_sprite = spr_Bullet_Tear_Part;
+		bullet_part_area = 25;
+		bullet_part_life = 20;
+		bullet_part_color1 = make_color_rgb(0,106,255);
+		bullet_part_color2 = c_white;
 		
+		bullet_type = obj_Rain_Drop_Bullet
+		
+		boss_yoffset = (room_height / 2) - (field_width / 2) - 300 - y
+		boss_xoffset = top_rain_start_x - x - 50 + random(100);
+		
+		bullet_direction = 270
+		bullet_speed = bossbulletspeed * (1.5 + random(1.25));
+		bullet_power = bosspower;
+		bullet_lifespan = 360;
+		
+		repeat(6) {
+			
+			boss_xoffset += field_width / 5;
+			
+			scr_Boss_Shoot();
+		}
+		
+		
+		/*
 		bullet_count = 6;
 		bullet_spread = 36;
 		bullet_direction = pattern_direction;
@@ -252,9 +327,7 @@ if active_attack_delay <= 0 and pattern_cooldown <= 0 and pattern_count > 0 {
 		bullet_speed = bossbulletspeed * (0.5 + random(0.25));
 	
 		bullet_bounce_speed = 5 + ((pattern_count_max - pattern_count) / 5) + random(2);
-		bullet_lob_time = bullet_lifespan - 2;
-		
-		scr_Boss_Shoot();
+		bullet_lob_time = bullet_lifespan - 2;*/
 	
 		// If you gotta change the pattern aim direction
 	    // pattern_direction += 0;
@@ -265,14 +338,18 @@ if active_attack_delay <= 0 and pattern_cooldown <= 0 and pattern_count > 0 {
 		
 		bullet_type = obj_Lob_Direction_Bullet;
 		
-		bullet_size = 1.2;
-		bullet_lifespan = 210 + random(30);
+		bullet_lifespan = 90 + random(30);
 		
-		bullet_bounce_speed = 3 + random(2);
-		bullet_lob_time = bullet_lifespan - 2;
+		bullet_bounce_speed = 4 + random(2);
+		bullet_lob_time = bullet_lifespan - 12;
+		bullet_bounce_Y = bullet_bounce_speed * 10;
 		
-		bullet_direction = scr_Boss_Bullet_Direction_Formula(270, 30)
-		bullet_speed = bossbulletspeed * (1.2 + random(0.25));
+		bullet_direction = scr_Boss_Bullet_Direction_Formula(pattern_direction, 45)
+		pattern_direction = direction + 180;
+		//bullet_direction = scr_Angle_Converge(bullet_direction, 90, 45)
+		
+		//bullet_direction = scr_Boss_Bullet_Direction_Formula(270, 30)
+		bullet_speed = bossbulletspeed * (0.75 + random(0.25));
 		
 		scr_Boss_Shoot();
 		
@@ -287,16 +364,14 @@ if active_attack_delay <= 0 and pattern_cooldown <= 0 and pattern_count > 0 {
 		
 		scr_Boss_Shoot();
 		
-		speed += ((bossmovespeed * 9.5) - speed) / 15
+		speed += ((bossmovespeed * 7) - speed) / 15
 	}
 	
-	if active_attack = 7 {
+	if active_attack = 99 {
 		scr_Boss_Stretch("Vertical", 0.15);
 		
 		bullet_type = obj_Lob_Home_Bullet;
 		bullet_sprite = spr_Blood_Tear;
-		
-		
 		
 		bullet_speed = bossbulletspeed * (1.75 + random(0.75));
 		
@@ -311,6 +386,68 @@ if active_attack_delay <= 0 and pattern_cooldown <= 0 and pattern_count > 0 {
 	
 		// If you gotta change the pattern aim direction
 	    // pattern_direction += 0;
+	}
+	
+	if active_attack = 7 {
+		scr_Boss_Stretch("Vertical", 0.15);
+		
+		bullet_count = 3;
+		bullet_spread = 120;
+		
+		bullet_speed = bossbulletspeed * 1.3
+		
+		bullet_direction = scr_Boss_Bullet_Direction_Formula(pattern_direction, 1)
+		pattern_direction += 13;
+		if pattern_count mod 21 < 7 {
+			pattern_direction -= 26;
+		}
+		
+		scr_Boss_Shoot();
+	}
+	
+	if active_attack = 8 {
+		scr_Boss_Stretch("Vertical", 0.3);
+		
+		bullet_type = obj_Zig_Zag_Seeker_Bullet;
+		bullet_sprite = spr_Yellow_Heart_Bullet
+		bullet_speed = bossbulletspeed * (1.2 + random(0.6))
+		bullet_lifespan = 300 + random(60);
+		
+		bullet_direction = scr_Boss_Bullet_Direction_Formula(scr_Soul_Point(), 270)
+		
+		scr_Boss_Shoot();
+	}
+	
+	if active_attack = 9 {
+		scr_Boss_Stretch("Vertical", 0.15);
+		
+		bullet_direction = scr_Boss_Bullet_Direction_Formula(pattern_direction, 45)
+		pattern_direction = direction + 180;
+		
+		bullet_speed = bossbulletspeed * 0.9;
+		
+		bullet_type = obj_Zig_Zag_Bullet;
+		bullet_sprite = spr_Lightning_Bullet;
+		
+		if pattern_count mod 16 = 0 {
+			bullet_speed = bossbulletspeed * 1.95;
+			bullet_count = 13;
+			bullet_spread = 23;
+			speed += ((bossmovespeed * 5.5) - speed);
+			direction = scr_Soul_Point() + max(0, 45 - sqrt(scr_Soul_Distance()))
+		} else if pattern_count mod 16 = 8 {
+			bullet_speed = bossbulletspeed * 1.95;
+			bullet_count = 13;
+			bullet_spread = 23;
+			speed += ((bossmovespeed * 5.5) - speed);
+			direction = scr_Soul_Point() - max(0, 45 - sqrt(scr_Soul_Distance()))
+		} else {
+			bullet_type = obj_Rain_Drop_Bullet;
+			bullet_sprite = spr_Tear_Drop_Bullet;
+		}
+		
+		scr_Boss_Shoot();
+		
 	}
 	
 	// Maybe I should put this into a script
@@ -332,13 +469,13 @@ if active_attack_duration <= 0 {
 scr_Boss_Size_Lerp(0.15);
 
 // Handles boss attack sprite animation
-if active_attack = 1 || active_attack = 2 || active_attack = 4 || active_attack = 5 {
+if active_attack = 1 || active_attack = 2 || active_attack = 4 || active_attack = 5 || active_attack = 7 || active_attack = 8 {
 	var _hold_frame = 2;
 	scr_Boss_Attack_Sprite_v2(spr_infatuation_cloud_v2_cry, _hold_frame, 3, 3, 10);
 	if image_index = _hold_frame {
 		scr_Boss_Wobble("Horizontal", 2, 0.4, 0)
 	}
-} else if active_attack = 3 || active_attack = 6 {
+} else if active_attack = 3 || active_attack = 6 || active_attack = 9 {
 	var _hold_frame = 2;
 	scr_Boss_Attack_Sprite_v2(spr_infatuation_cloud_v2_p2_cry, _hold_frame, 3, 3, 10);
 	if image_index = _hold_frame {

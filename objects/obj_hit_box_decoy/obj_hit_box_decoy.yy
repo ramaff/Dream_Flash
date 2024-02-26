@@ -34,8 +34,8 @@
   "properties": [],
   "solid": false,
   "spriteId": {
-    "name": "spr_boxer",
-    "path": "sprites/spr_boxer/spr_boxer.yy",
+    "name": "spr_hit_box_decoy_idle",
+    "path": "sprites/spr_hit_box_decoy_idle/spr_hit_box_decoy_idle.yy",
   },
   "spriteMaskId": null,
   "visible": false,

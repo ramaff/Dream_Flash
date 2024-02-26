@@ -78,7 +78,10 @@ function scr_Weapon_Use_List(cWP = global.currentweapon, _weap_slot = 0) {
 		scr_D03();
 		scr_D10_Shot_Mod();
 		
-		scr_Bleeding_Soul_Mod()
+		if obj_Soul_Parent.scurrentstate = "Bleeding" and cWP < 700 {
+			scr_Bleeding_Soul_Mod();
+			scr_Bleeding_Blade_Use();
+		}
 		
 		scr_Setup_Weapon_Stats(current_weapon_stats);
 		
@@ -104,7 +107,7 @@ function scr_Weapon_Use_List(cWP = global.currentweapon, _weap_slot = 0) {
 				if Shot_Repetition[bi] <= 0 {
 					
 					//if Charge_Hold = 2 {
-						Shot_Repetition_Stats[bi] = current_weapon_stats
+					Shot_Repetition_Stats[bi] = current_weapon_stats
 					//}
 					
 					if variable_struct_exists(current_weapon_stats, "Shot_Repetition") {
@@ -166,7 +169,7 @@ function scr_Weapon_Use_List(cWP = global.currentweapon, _weap_slot = 0) {
 		
 		scr_Weapon_Output(spawnProjectile, minion)
 		
-		if Shot_Extra != false {
+		/*if Shot_Extra != false {
 			
 			var i = 0
 			for(i = 0; i < array_length(Shot_Extra); i++) {
@@ -178,12 +181,12 @@ function scr_Weapon_Use_List(cWP = global.currentweapon, _weap_slot = 0) {
 		
 				scr_Weapon_Output(spawnProjectile, minion)
 			}
-		}
+		} */
 		
 		
-		if obj_Soul_Parent.scurrentstate = "Bleeding" and cWP < 700 {
-			scr_Bleeding_Blade_Use();
-		}
+		//if obj_Soul_Parent.scurrentstate = "Bleeding" and cWP < 700 {
+		//	scr_Bleeding_Blade_Use();
+		//}
 		
 		senergy -= realCost;
 		sWeaponTicker++;

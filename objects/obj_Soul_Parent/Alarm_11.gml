@@ -14,30 +14,18 @@ for (bi = 0; bi < 9; bi++) {
 		current_weapon_stats = Shot_Repetition_Stats[bi]
 		
 		scr_Setup_Weapon_Stats()
-		
-		/*if Shot_Repetition_Type[bi] = "Bullet Hell" {
-			//scr_Bullet_Hell_Use_Helper();	
-			//scr_Bullet_Hell_Gun_Use(false);
-			scr_Barrage_Weapon_Use(211);
-		}
-		if Shot_Repetition_Type[bi] = "Hyper Essence" {
-			//scr_Hyper_Essence_Shot(false);
-			scr_Barrage_Weapon_Use(13);
-		}
-		if Shot_Repetition_Type[bi] = "Laser Barrage" {
-			//scr_Laser_Barrage_Use(false);
-			scr_Barrage_Weapon_Use(403);
-		}
-		if Shot_Repetition_Type[bi] = "Rising Spikes" {
-			//scr_Rising_Spikes_Use(false);
-			scr_Barrage_Weapon_Use(16);
-		} */
+	
 		if Shot_Repetition_Type[bi] = "Stubborn" {
-			//current_weapon_stats = Shot_Repetition_Stats[bi]
 			
 			Shot_Mouse = 0;
 			Shot_Count = Shot_Default_Count[bi];
-			scr_Shot_Creation();
+			
+			var _minion = false
+			if scr_Minion_Weapon(current_weapon_stats.Weapon_Number) {
+				_minion = true;	
+			}
+			
+			scr_Weapon_Output(true, _minion)
 		} else {
 			Shot_Count = Shot_Default_Count[bi];
 			
@@ -73,8 +61,8 @@ for (bi = 0; bi < 9; bi++) {
 				}	
 			}
 			
-			
-			scr_Shot_Creation();
+			scr_Weapon_Output(true, false)
+			//scr_Shot_Creation();
 		}
 		
 		Shot_Repetition[bi]--;

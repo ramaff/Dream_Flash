@@ -19,10 +19,12 @@ if instance_exists(hound) {
 	if currentphase = 2 {
 		hound.currentphase = 2;	
 	}
-	if hound.currentphase = 2 {
+	if hound.currentphase = 2 and speed > 1 {
 		weight = 1;
 		target.target_weight = 1;
 	}
+} else {
+	instance_destroy()	
 }
 
 scr_Chain_Pull(target, 15, weight, target_weight);
@@ -55,7 +57,11 @@ if active_attack_delay <= 0 and active_attack_cooldown <= 0 and active_attack_du
 	// Being Yanked
 	if active_attack = 2 {
 		// 
-		scr_Boss_Attack_Time_Setup_v2(40, 0, 1, 0, 0, 10);
+		var _hop_duration = 40;
+		if champ = 1 {
+			_hop_duration = 80;	
+		}
+		scr_Boss_Attack_Time_Setup_v2(_hop_duration, 0, 1, 0, 0, 10);
 		
 		scr_Boss_Dash_Setup_v2(scr_Soul_Point(), 0, 1.5 * bossmovespeed);
     }
@@ -86,9 +92,19 @@ if active_attack_delay <= 0 and pattern_cooldown <= 0 and pattern_count > 0 {
 		if pattern_count = 1 {
 			bosshealth -= 10;
 			scr_Damage_Indicator(0, 10, 2);
-			image_index = 3;
+			image_index = 4;
 			
 			scr_Boss_Stretch("Horizontal", 0.4)
+			
+			if champ = 1 {
+				
+				bullet_direction = 45;
+				bullet_spread = 90;
+				bullet_count = 4;
+				bullet_sprite = spr_Glowy_Purple_Shot;
+				
+				scr_Boss_Shoot()
+			}
 		}
 	}
 	
@@ -122,7 +138,10 @@ if active_attack = 1 {
 } else {
 	if instance_exists(hound) {
 		if hound.currentphase = 2 {
-			if hound.speed > 0.25 {
+			if champ = 1 {
+				image_speed = 0.5;	
+			}
+			if hound.speed > 1 {
 				sprite_index = spr_walker_not_in_control
 			} else {
 				image_index = 0;	

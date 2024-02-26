@@ -5,6 +5,7 @@ function scr_Setup_Default_Shot_Stats(){
 	Shot_Stats = {
 		Delay: 20,
 		Essence: 4,
+		Weapon_Number: 0,
 		Shot_Accuracy: 15,
 		Shot_Extra_Stats: false,
 		Shot_Burst_Stats: false,
@@ -57,8 +58,10 @@ function scr_Setup_Default_Shot_Stats(){
 		Shot_Forward_Amount: 16,
 		Shot_Shield_Type: 0,
 		Shot_Shield_Power: 0,
-		Shot_Redirect: 0,
-		Shot_Redirect_Chance: 0
+		Shot_Bullet_Redirect: 0,
+		Shot_Bullet_Redirect_Chance: 0,
+		Shot_Repetition: 0,
+		Shot_Ground: false
 	}
 	return Shot_Stats
 

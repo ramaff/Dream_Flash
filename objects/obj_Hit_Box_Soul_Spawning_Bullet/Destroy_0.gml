@@ -15,7 +15,7 @@
     
     minion_count = 1;
     minion_type = obj_hit_box_soul_decoy;
-    minion_health = 30;
+    minion_health = 100;
     minion_maxhealth = minion_health;
 	
 	minion_spawn_animation = spr_hit_box_soul_spawn_in;

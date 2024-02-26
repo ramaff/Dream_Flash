@@ -49,7 +49,14 @@ for(i = 0; i < extra_shot_amount; i++) {
 				shotpierce = shot_stats.Shot_Pierce;
 				shotacceleration = shot_stats.Shot_Acceleration;
 		
-				shotsize = shot_stats.Shot_Size;
+				if variable_struct_exists(shot_stats, "Burst_Size") {
+					shotsize = shotsize * shot_stats.Burst_Size
+					image_xscale = shotsize;
+					image_yscale = shotsize;
+					shotsizemax = other.shotsizemax;
+				} else {
+					shotsize = shot_stats.Shot_Size;
+				}
 				shotshrink = shot_stats.Shot_Shrink;
 				shotfade = shot_stats.Shot_Fade;
 				
@@ -74,7 +81,7 @@ for(i = 0; i < extra_shot_amount; i++) {
 				shotOrbit = 0;
 				shotsizemax = shotsize;
 				shotSizeRelation = 1;
-		
+				
 				scr_Shot_Particle_Setup();
 	
 				if instance_exists(obj_Boss_Parent) {

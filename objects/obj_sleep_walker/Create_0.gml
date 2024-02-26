@@ -13,8 +13,8 @@ scr_Boss_Size_Setup(0.5);
 // Needed for bobbing/boss shadows
 scr_Boss_Height_Setup(0);
 
-death_sprite = spr_boss_template_ko;
-boss_palette = spr_boss_template_palette;
+death_sprite = spr_sleep_walker_ko;
+boss_palette = spr_sleep_walker_palette;
 boss_palette_index = champ;
 
 active_attack_cooldown = 240;

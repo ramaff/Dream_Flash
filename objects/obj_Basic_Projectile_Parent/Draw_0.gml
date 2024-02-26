@@ -10,6 +10,14 @@ if shotorbitaltype = 1 {
     image_angle = shotAngle + 90;
 }
 
+if shot_stats.Shot_Ground = true {
+	shot_stats.Shot_Lobbing = false;
+	shot_stats.Shot_Height = 0;
+	shot_stats.Shot_Fall_Speed = 0;
+	shot_stats.Shot_Gravity = 0;
+	shotlobbing = 0;
+}
+
 var height = shot_stats.Shot_Height;
 var fall_speed = shot_stats.Shot_Fall_Speed;
 
@@ -87,5 +95,3 @@ if shotmiracle > 0 {
 	draw_sprite_ext(spr_Miracle_Aura,0,x,y,0.8,0.8,0,c_white,1);
 }
 
-//show_debug_message("string: " + string(sprite_get_name(sprite_index)))
-//show_debug_message("alpha: " + string(image_alpha))

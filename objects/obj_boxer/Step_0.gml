@@ -31,11 +31,11 @@ if active_attack = 0 {
 	//Print_DF("box_xx: " + string(box_xx) + ", box_yy: " + string(box_yy))
 	//Print_DF("box_move_direction: " + string(box_move_direction))
 	
-	var _attack_speed_curr = 0.75 + ((65 - active_attack_delay) / 100)
+	var _attack_speed_curr = 0.75 + ((65 - active_attack_delay) / 140)
 	if active_attack_delay < 0 {
-		_attack_speed_curr = 0.75 + (sqrt((pattern_count_max - pattern_count)));
+		_attack_speed_curr = 0.75 + (sqrt((pattern_count_max - pattern_count)) * 0.8);
 	} if pattern_count <= 0 {
-		_attack_speed_curr = 0.75 + ((active_attack_duration) / 20)
+		_attack_speed_curr = 0.75 + ((active_attack_duration) / 25)
 	}
 	
 	box_xx += lengthdir_x(bossmovespeed * _attack_speed_curr, box_move_direction)
@@ -84,7 +84,11 @@ if active_attack_delay <= 0 and active_attack_cooldown <= 0 and active_attack_du
 	// Marble Dump
 	if active_attack = 2 {
 		// 
-		scr_Boss_Attack_Time_Setup_v2(25, 70, 15, 120, 30, 0);
+		var _a_spacing = 15;
+		if champ = 1 {
+			_a_spacing = 20;	
+		}
+		scr_Boss_Attack_Time_Setup_v2(25, 70, _a_spacing, 120, 30, 0);
     }
 	// Decoy Spawn In
 	if active_attack = 3 {
@@ -158,7 +162,7 @@ if active_attack_delay <= 0 and pattern_cooldown <= 0 and pattern_count > 0 {
 				bullet_lob_time = 45 + random(30);
 				bullet_lifespan = (bullet_lob_time + 2) * 4;
 				bullet_bounce_speed = 3 + random(2);
-				bullet_speed = bossbulletspeed * (1 + random(0.75))
+				bullet_speed = bossbulletspeed * (1.5 + random(1))
 		
 				scr_Boss_Shoot();
 			}
@@ -223,22 +227,28 @@ if active_attack_delay <= 0 and pattern_cooldown <= 0 and pattern_count > 0 {
 			if pattern_count mod 10 = 0 {
 				bullet_sprite = choose(spr_Glowy_Enemy_Shot, spr_Glowy_Blue_Shot, spr_Glowy_Green_Shot, spr_Glowy_Yellow_Shot, spr_Glowy_Pink_Shot)
 			    bullet_type = obj_Marble_Bullet;
-			    bullet_speed = bossbulletspeed * (0.4 + random(0.6));
+			    bullet_speed = bossbulletspeed * (1 + random(0.75));
 				bullet_direction = random(360);
 			    bullet_lifespan = 180 + irandom(60);
 
-				boss_yoffset = boss_height;
+				boss_yoffset = boss_height - 40;
+				bullet_bounce_Y = 40;
+				bullet_bounce_speed = 1;
+				//bullet_bounce_gravity = 0.05;
 			    scr_Just_Shoot();
 			}
 			
 			if pattern_count mod 25 = 0 {
 				bullet_sprite = spr_Boss_Red_Bomb;
 				bullet_type = obj_Marble_Bomb_Bullet;
-			    bullet_speed = bossbulletspeed * (0.4 + random(0.6));
+			    bullet_speed = bossbulletspeed * (1 + random(0.75));
 				bullet_direction = random(360);
 			    bullet_lifespan = 180 + irandom(60);
 
-				boss_yoffset = boss_height;
+				boss_yoffset = boss_height - 40;
+				bullet_bounce_Y = 40;
+				bullet_bounce_speed = 1;
+				//bullet_bounce_gravity = 0.05;
 			    scr_Just_Shoot();
 			}
 			
@@ -308,7 +318,7 @@ if active_attack_delay <= 0 and pattern_cooldown <= 0 and pattern_count > 0 {
 if active_attack_duration <= 0 { 
     active_attack = 0;
 	with (obj_hit_box_decoy) {
-		sprite_index = spr_boxer;
+		sprite_index = spr_hit_box_decoy_idle;
 	}
 	with (obj_hit_box_soul_decoy) {
 		sprite_index = spr_hit_box_soul;
@@ -344,7 +354,7 @@ if active_attack = 1 {
 		_i = ceil(random(instance_number(obj_hit_box_decoy)))
 	}
 	with (obj_hit_box_decoy) {
-		sprite_index = other.sprite_index;
+		sprite_index = spr_hit_box_decoy_spawn_in;
 		image_index = other.image_index;
 		_i--;
 		if _i = 0 {

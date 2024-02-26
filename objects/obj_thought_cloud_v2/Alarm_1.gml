@@ -12,6 +12,13 @@ if champ = 1 {
 	bullet_power = bosspower;
 	bullet_lifespan = 360;
 	
+	bullet_part = 2;
+	bullet_part_sprite = spr_Bullet_Tear_Part;
+	bullet_part_area = 25;
+	bullet_part_life = 20;
+	bullet_part_color1 = make_color_rgb(0,106,255);
+	bullet_part_color2 = c_white;
+	
 	bullet_direction = 270;
 	
 	boss_yoffset = (room_height / 2) - (field_width / 2) - 300 - y

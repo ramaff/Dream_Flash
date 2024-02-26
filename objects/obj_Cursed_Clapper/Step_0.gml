@@ -290,18 +290,21 @@ if currentphase = 2 || tickdown > 0 {
     //image_index++;
 }
 
-if instance_number(obj_Cursed_Clapper) = 2
-if currentphase = finalphase {
-    instance_destroy();
-    with(obj_Cursed_Clapper) {
-        bosshealth = 0;
-        bossActiveAttack[1] = 2;
-        bossActiveAttackCooldown[1] = 1;
-        bossActiveAttackDelay[1] = 1;
+if instance_number(obj_Cursed_Clapper) = 2 {
+	if currentphase = finalphase {
+	    instance_destroy();
+	    with(obj_Cursed_Clapper) {
+	        //bosshealth = 0;
+			//bosshealth = bossmaxhealth2
+			currentphase = 2;
+	        bossActiveAttack[1] = 2;
+	        bossActiveAttackCooldown[1] = 1;
+	        bossActiveAttackDelay[1] = 1;
     
-        bossAngle = scr_Soul_Point
-        rspeed = 1.66;
-    }
+	        bossAngle = scr_Soul_Point
+	        rspeed = 1.66;
+	    }
+	}
 }
 
 scr_Boss_Soul_Hitbox(sprite_index);

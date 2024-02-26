@@ -18,10 +18,15 @@ if currentphase = 2 {
 	if active_attack = 3 {
 		speed = scr_Converge(speed, _target_speed, 0.2)
 	} else {
-		active_attack = 0;	
-		if active_attack_cooldown < 0 {
-			active_attack_cooldown = 30;	
+		if active_attack = 1 || active_attack = 2 {
+			speed = 0;
 		}
+		active_attack_cooldown = min(30, active_attack_cooldown);
+		active_attack = 0;
+
+		/*if active_attack_cooldown < 0 {
+			active_attack_cooldown = 30;	
+		} */
 	}
 	direction = scr_Angle_Converge(direction, scr_Soul_Point(), 1.5)
 } else {
@@ -123,6 +128,8 @@ if active_attack_delay <= 0 and pattern_cooldown <= 0 and pattern_count > 0 {
 		if pattern_count = 1 {
 			
 			scr_Boss_Stretch("Horizontal", 0.4);
+			
+			
 			
 			bullet_type = obj_Accel_Accel_Bullet;
 			bullet_speed = bossbulletspeed * 0.5
