@@ -84,16 +84,11 @@ function scr_Soul_Shot_Bullet_Hit(){
 				if shotshieldpower >= (other.bulletpower) {
 				    instance_destroy(other);
 				} else {
-				    other.bulletpower -= (shotshieldpower);
-					if ((other.bulletpower > 0) and (other.bulletpowermax > 0)) {
-						other.bulletsize = 0.1 + 0.4 * sqrt(other.bulletpower / other.bulletpowermax);
-					} else {
-						other.bulletsize = 0.1;
+					
+					var _shield = shotshieldpower
+					with(other) {
+						scr_Bullet_Dampen(_shield);
 					}
-					other.bulletspeed = other.bulletspeed / 2;
-					other.speed = other.bulletspeed;
-					other.image_xscale = other.bulletsize;
-					other.image_yscale = other.bulletsize;
 				}
 				if shotessencedrain > 0 {
 					scr_Refresh_Soul(shotshieldpower * shotessencedrain);

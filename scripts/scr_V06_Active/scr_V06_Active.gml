@@ -2,21 +2,24 @@
 // https://help.yoyogames.com/hc/en-us/articles/360005277377 for more information
 function scr_V06_Active(){
 	
-	var active = false;
+	var _procs = 0;
 	if global.V[6] >= 1 {
+		
+		_procs += floor(global.V[6] / 8);
+		var _proc_mod = global.V[6] mod 8;
 
-		global.V06Overwhelm += global.V[6];
+		global.V06Overwhelm += _proc_mod
 	
 		if global.currentweapon = 14 {
-			if global.V06Overwhelm > ((8 - global.V[6]) * 15) {
-				active = true	
+			if global.V06Overwhelm > ((8 - _proc_mod) * 15) {
+				_procs += 1	
 			}
 			if global.V06Overwhelm > 119 {
 				global.V06Overwhelm = 0;	
 			}
 		} else {
-			if global.V06Overwhelm > (8 - global.V[6]) {
-				active = true	
+			if global.V06Overwhelm > (8 - _proc_mod) {
+				_procs += 1	
 			}
 			if global.V06Overwhelm > 7 {
 				global.V06Overwhelm = 0;	
@@ -25,7 +28,7 @@ function scr_V06_Active(){
 		
 	}
 	
-	return active
+	return _procs
 	
 	
 }

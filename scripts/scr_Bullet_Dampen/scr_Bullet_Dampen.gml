@@ -7,11 +7,16 @@ function scr_Bullet_Dampen(dampen = 5){
 		instance_destroy();	
 	}
 	
-	bulletsize = bulletsizemax * (bulletpower / bulletpowermax);
-	image_xscale = bulletsize;
-	image_yscale = bulletsize;
-				
+	bulletsize = bulletsizemax * sqrt(bulletpower / bulletpowermax);
+	
 	if bulletsize < 0.1 {
 		bulletsize = 0.1;
 	}
+	if bulletsize > bulletsizemax {
+		bulletsize = bulletsizemax	
+	}
+	
+	image_xscale = bulletsize;
+	image_yscale = bulletsize;
+				
 }

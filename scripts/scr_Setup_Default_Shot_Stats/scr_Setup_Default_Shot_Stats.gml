@@ -18,6 +18,7 @@ function scr_Setup_Default_Shot_Stats(){
 		Shot_Gravity: 0,
 		Shot_Count: 1,
         Shot_Sprite: spr_Soul_Shot,
+		Shot_Beam: 0,
         Shot_Power: 10,
         Shot_Speed: 0,
         Shot_Lifespan: 60,

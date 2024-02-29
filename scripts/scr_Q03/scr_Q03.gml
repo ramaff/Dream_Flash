@@ -20,9 +20,14 @@ function scr_Q03(_minion = false){
 			} else {
 				scr_Soul_Spawn();
 			}
+			//scr_Weapon_Output(true, _minion)
 		
 			global.Q3count -= 4;
 		}
-		global.Q3count += global.Q[3];
+		if Shot_Beam = 2 {
+			global.Q3count += global.Q[3] / 3;
+		} else {
+			global.Q3count += global.Q[3];
+		}
    }
 }

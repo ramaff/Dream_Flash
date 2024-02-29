@@ -21,6 +21,8 @@ function scr_Beam_Create(shxx, shyy, beamseg, beamdir, curvedir, beamstop, beamx
 		beamsize = shotsize + scr_Wave(0,0.05,0.25,0);
 		
 		splitsize = splitsize * (beamsize / og_beamsize)
+		
+		beamsize = clamp(beamsize, 0.1, 2)
 			
 		image_xscale = beamsize;
 		image_yscale = beamsize;
@@ -59,11 +61,10 @@ function scr_Beam_Create(shxx, shyy, beamseg, beamdir, curvedir, beamstop, beamx
 				beamdir += dirChange
 			} 
 		} 
-		
-			
+
 		beamxx += lengthdir_x(splitsize, oldbeamdir)
 		beamyy += lengthdir_y(splitsize, oldbeamdir)
-		
+
 		if shotwander > 0 and beamseg > 8 {
 			scr_Create_Beam_Tip(shxx, shyy, beamxx, beamyy, beamsize, beamdir);
 			
@@ -103,6 +104,11 @@ function scr_Beam_Create(shxx, shyy, beamseg, beamdir, curvedir, beamstop, beamx
 							scr_Duplicate_Shot_Stats();
 							
 							var vshotairburststats = other.shotairburststats[burstIndex]
+							
+							if variable_struct_exists(vshotairburststats, "Shot_Lifespan") {
+								vshotairburststats.Shot_Lifespan = other.shotlifespan
+							}
+							
 							scr_Shot_Burst_Stats(vshotairburststats);
 							shotburststats = other.shotburststats;
 							shotextrastats = other.shotextrastats;

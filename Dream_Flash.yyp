@@ -868,6 +868,7 @@
     {"id":{"name":"spr_infatuation_cloud_v2_palette","path":"sprites/spr_infatuation_cloud_v2_palette/spr_infatuation_cloud_v2_palette.yy",},},
     {"id":{"name":"spr_Secure_Heart","path":"sprites/spr_Secure_Heart/spr_Secure_Heart.yy",},},
     {"id":{"name":"spr_Fire_Starter_Palette","path":"sprites/spr_Fire_Starter_Palette/spr_Fire_Starter_Palette.yy",},},
+    {"id":{"name":"scr_Beam_Weapon","path":"scripts/scr_Beam_Weapon/scr_Beam_Weapon.yy",},},
     {"id":{"name":"spr_Horror_Stack","path":"sprites/spr_Horror_Stack/spr_Horror_Stack.yy",},},
     {"id":{"name":"spr_Horror_Stack_Champ","path":"sprites/spr_Horror_Stack_Champ/spr_Horror_Stack_Champ.yy",},},
     {"id":{"name":"spr_Conga_Line_v2_Dope","path":"sprites/spr_Conga_Line_v2_Dope/spr_Conga_Line_v2_Dope.yy",},},

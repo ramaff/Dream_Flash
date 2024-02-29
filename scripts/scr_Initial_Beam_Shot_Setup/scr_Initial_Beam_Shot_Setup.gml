@@ -2,14 +2,6 @@
 // https://help.yoyogames.com/hc/en-us/articles/360005277377 for more information
 function scr_Initial_Beam_Shot_Setup(shxx = x, shyy = y){
 
-	if other.Shot_Beam = 2 {
-		shotdamage = false;
-		if other.sWeaponTicker mod 3 = 0 { 
-			shotdamage = true;	
-		} else {
-			other.Shot_Power = 0;
-		}
-	}	
 	if other.Shot_Type = obj_Beam_Shot {
 		
 		var beamseg = 1;

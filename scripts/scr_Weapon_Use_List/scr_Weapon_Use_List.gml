@@ -154,9 +154,10 @@ function scr_Weapon_Use_List(cWP = global.currentweapon, _weap_slot = 0) {
 		
 		scr_XA03_Cost_Adjustment();
 		
-		if scr_V06_Active() {
-			weaponCost += weaponCost;
-			scr_V06();
+		var _v6_procs = scr_V06_Active() 
+		if _v6_procs > 0 {
+			weaponCost += weaponCost * _v6_procs;
+			scr_V06(_v6_procs);
 		}
 		
 		if spawnProjectile {
@@ -167,22 +168,16 @@ function scr_Weapon_Use_List(cWP = global.currentweapon, _weap_slot = 0) {
 		
 		scr_C11_Shot_Mod(realCost)
 		
-		scr_Weapon_Output(spawnProjectile, minion)
-		
-		/*if Shot_Extra != false {
-			
-			var i = 0
-			for(i = 0; i < array_length(Shot_Extra); i++) {
-			
-				current_weapon_stats = Shot_Extra[i]
-			
-				scr_Setup_Weapon_Stats(current_weapon_stats)
-				scr_Hard_Coded_Weapon_Stats(cWP);
-		
-				scr_Weapon_Output(spawnProjectile, minion)
+		if Shot_Beam = 2 {
+			Shot_Damage = false;
+			if sWeaponTicker mod 3 = 0 { 
+				Shot_Damage = true;	
+			} else {
+				Shot_Power = 0;
 			}
-		} */
+		}	
 		
+		scr_Weapon_Output(spawnProjectile, minion)
 		
 		//if obj_Soul_Parent.scurrentstate = "Bleeding" and cWP < 700 {
 		//	scr_Bleeding_Blade_Use();

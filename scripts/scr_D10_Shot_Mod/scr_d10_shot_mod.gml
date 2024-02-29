@@ -10,7 +10,7 @@ function scr_D10_Shot_Mod() {
 		image_xscale = shotsize;
 		image_yscale = shotsize; */
 		current_weapon_stats.Shot_Power = current_weapon_stats.Shot_Power * 0.6;
-		current_weapon_stats.Shot_Size = current_weapon_stats.Shot_Size * 0.75;
+		current_weapon_stats.Shot_Size = current_weapon_stats.Shot_Size * 0.85;
 	}
 
 

@@ -8,7 +8,7 @@ function scr_Bleeding_Soul_Mod(){
 		var _shot_speed = current_weapon_stats.Shot_Speed * 3
 		var _shot_lifespan = current_weapon_stats.Shot_Lifespan * 0.7;
 		var _shot_power = current_weapon_stats.Shot_Power * 0.6;
-		var _shot_size = current_weapon_stats.Shot_Size * 0.75;
+		var _shot_size = current_weapon_stats.Shot_Size * 0.85;
 		
 		current_weapon_stats.Shot_Lobbing = true
 		current_weapon_stats.Shot_Speed = _shot_speed;
