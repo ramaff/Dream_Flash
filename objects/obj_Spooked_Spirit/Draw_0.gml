@@ -22,7 +22,7 @@ pal_swap_set(spr_Spooky_Spirit_Palette,palindex,false);
 
 if bossActiveAttack[1] != 2 and bossActiveAttack[1] != 6 {
 	//if bossActiveAttackDelay[1] >= 0 || bossActiveAttackDuration[1] > 0 {
-		draw_sprite_ext(spr_Spooky_Trail, trailindex, x, y, image_xscale, image_yscale, 0, c_white, image_alpha);
+		draw_sprite_ext(spr_Spooky_Trail, trailindex, x, y, image_xscale, image_yscale, 0, image_blend, image_alpha);
 	//}
 }
 draw_self();

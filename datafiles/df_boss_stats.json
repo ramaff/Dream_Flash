@@ -1443,7 +1443,7 @@
                 "Health_Phase_1": 200,
                 "Health_Phase_2": 200,
                 "Defense_Phase_1": 0,
-                "Defense_Phase_2": 10
+                "Defense_Phase_2": 20
             },
             "Champ 1": {
                 "Name": "Violent Slam Walker",
@@ -1451,6 +1451,12 @@
                 "Health_Phase_1": 210,
                 "Health_Phase_2": 300,
                 "Palette_Index": 1
+            },
+            "Champ 1.1": {
+                "Health_Phase_1": 210,
+                "Health_Phase_2": 300,
+                "Defense_Phase_1": 0,
+                "Defense_Phase_2": 20
             },
         
             "recollectionDescription": "Pet owners are really irresponsible these days."

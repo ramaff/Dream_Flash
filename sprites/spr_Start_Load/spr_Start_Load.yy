@@ -25,8 +25,8 @@
   "nineSlice": null,
   "origin": 0,
   "parent": {
-    "name": "Dream_Flash",
-    "path": "Dream_Flash.yyp",
+    "name": "Dream_Flash_d22_1",
+    "path": "Dream_Flash_d22_1.yyp",
   },
   "preMultiplyAlpha": false,
   "sequence": {

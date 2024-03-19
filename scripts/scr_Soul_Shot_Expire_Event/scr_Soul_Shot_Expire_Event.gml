@@ -2,12 +2,6 @@
 // https://help.yoyogames.com/hc/en-us/articles/360005277377 for more information
 function scr_Soul_Shot_Expire_Event(){
 	
-	/*if ds_exists(bullet_hits, ds_type_list) {
-		if ds_list_empty(bullet_hits) and shotorigin = obj_Soul_Parent {
-			scr_A07_Reset();	
-		}
-	} */
-	
 	if variable_struct_names_count(bullet_hits) == 0 and shotorigin = obj_Soul_Parent {
 		scr_A07_Reset();	
 	}
@@ -96,14 +90,6 @@ function scr_Soul_Shot_Expire_Event(){
 		        }
 		    }
 	    }
-		/*
-	    with instance_create(x,y,obj_Essence_Impact_Show) {
-	        sprite_index = spr_Explosion_Effect;
-	        size = other.shotimpactsize / 150;
-	        image_xscale = size;
-	        image_yscale = size;
-	    }
-		*/
 		if shotimpactexplode > 0 {
 			scr_Boss_Hit_Explosion();
 		}
