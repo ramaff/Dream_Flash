@@ -5,6 +5,7 @@ function scr_Default_Weapon_Stats() {
 	//Shot_Default_Count = 1;
 	
 	Shot_Stats = scr_Setup_Default_Shot_Stats()
+	Weapon_Number = 0;
 
 	Shot_Beam = 0;
 	Shot_Beam_Count = 40;

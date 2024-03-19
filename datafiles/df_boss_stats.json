@@ -152,78 +152,84 @@
             "Name": "Thought Cloud",
             "Recollection_Sprite": "reco_Thought_Cloud",
             "Health_Phase_1": 200,
-            "Health_Phase_2": 180,
+            "Health_Phase_2": 240,
             "Defense_Phase_1": 0,
             "Defense_Phase_2": 0,
             "Boss_Danger": 1,
             "recollectionDescription": "Your thoughts and dreams in the form of a crying rain cloud.",
             "Bullet_Speed": 2.1,
-            "Move_Speed": 0.25,
-            "Palette": "spr_Thought_Cloud_Palette",
+            "Move_Speed": 0.75,
+            "Palette": "spr_thought_cloud_v2_palette",
+            "Palette_Index": 1,
 
             "Champ 1": {
                 "Name": "Rainy Cloud",
-                "Recollection_Sprite": "reco_Thought_Cloud_Champ",
+                "Recollection_Sprite": "reco_Thought_Cloud",
                 "Health_Phase_1": 250,
-                "Health_Phase_2": 210,
+                "Health_Phase_2": 290,
                 "Bullet_Speed": 2.4,
                 "Palette_Index": 2
             },
             "Champ 2": { 
-                "Name":  "Cloudy Cloud",
-                "Recollection_Sprite": "reco_Thought_Cloud_Champ",
+                "Name":  "Stormy Cloud",
+                "Recollection_Sprite": "reco_Thought_Cloud",
                 "Health_Phase_1": 250,
-                "Health_Phase_2": 210,
+                "Health_Phase_2": 290,
                 "Bullet_Speed": 2.6,
-                "Move_Speed": 0.6,
+                "Move_Speed": 2.3,
                 "Palette_Index": 3
             },
             "Champ 3": {
                 "Name": "Crush Cloud",
-                "Recollection_Sprite": "reco_Thought_Cloud_Champ",
+                "Recollection_Sprite": "reco_Thought_Cloud",
                 "Health_Phase_1": 250,
-                "Health_Phase_2": 210,
+                "Health_Phase_2": 290,
                 "Bullet_Speed": 2.9,
-                "Move_Speed": 1,
-                "Palette_Index": 0
+                "Move_Speed": 2.6,
+                "Palette_Index": 4
             },
             "Champ 8": {
                 "Name": "Rainbow Cloud",
-                "Recollection_Sprite": "reco_Thought_Cloud_Champ",
+                "Recollection_Sprite": "spr_thought_cloud_v2_rainbow",
                 "Health_Phase_1": 300,
-                "Health_Phase_2": 240,
+                "Health_Phase_2": 340,
                 "Bullet_Speed": 2.5,
-                "Palette_Index": 4
+                "Move_Speed": 2.1,
+                "Palette_Index": 0
             }
         },
 
         "Boss 006": {
             "Name": "Infatuation Cloud",
             "Recollection_Sprite": "reco_Infatuation_Cloud",
-            "Health_Phase_1": 340,
-            "Health_Phase_2": 310,
+            "Health_Phase_1": 360,
+            "Health_Phase_2": 380,
             "Defense_Phase_1": 0,
             "Defense_Phase_2": 0,
             "Boss_Danger": 4,
             "Bullet_Speed": 2.2,
-            "Move_Speed": 0.3,
+            "Move_Speed": 1.25,
+            "Palette": "spr_infatuation_cloud_v2_palette",
+            "Palette_Index": 1,
 
             "recollectionDescription": "Thoughts of lust forming together to make strange weather patterns.",
 
             "Champ 1": {
-                "Name": "Fluffy Cloud",
-                "Recollection_Sprite": "spr_Fluffy_Cloud",
-                "Health_Phase_1": 390,
-                "Health_Phase_2": 360,
-                "Move_Speed": 2.5
+                "Name": "Heavy Rain Cloud",
+                "Recollection_Sprite": "reco_Infatuation_Cloud",
+                "Health_Phase_1": 420,
+                "Health_Phase_2": 450,
+                "Move_Speed": 1.4,
+                "Palette_Index": 2
             },
             "Champ 2": { 
-                "Name":  "Sprinkler Cloud",
-                "Recollection_Sprite": "spr_Sprinkler_Cloud",
-                "Health_Phase_1": 390,
-                "Health_Phase_2": 360,
-                "Move_Speed": 0.7,
-                "Bullet_Speed": 3.5
+                "Name":  "Thunder Storm Cloud",
+                "Recollection_Sprite": "reco_Infatuation_Cloud",
+                "Health_Phase_1": 420,
+                "Health_Phase_2": 450,
+                "Bullet_Speed": 3.3,
+                "Move_Speed": 1.75,
+                "Palette_Index": 3
             }
         },
 
@@ -1394,15 +1400,60 @@
         "Boss 057": {
             "Name": "Hit Box",
             "Recollection_Sprite": "reco_boxer",
-            "Health_Phase_1": 320,
-            "Health_Phase_2": 240,
+            "Health_Phase_1": 360,
+            "Health_Phase_2": 200,
             "Defense_Phase_1": 0,
             "Defense_Phase_2": 0,
             "Boss_Danger": 2,
             "Bullet_Speed": 2.4,
             "Move_Speed": 2,
         
-            "recollectionDescription": "Dreamscape resident puppet. Attacks with a wacky box of tricks."
+            "recollectionDescription": "Dreamscape resident puppet. Attacks with a wacky box of tricks.",
+
+            "Palette": "spr_hit_box_palette",
+            "Champ 1": {
+                "Name": "Bomb Hit Box",
+                "Recollection_Sprite": "reco_boxer",
+                "Health_Phase_1": 380,
+                "Health_Phase_2": 300,
+                "Palette_Index": 1
+            },
+            "Champ 2": {
+                "Name": "Decoy Hit Box",
+                "Recollection_Sprite": "reco_boxer",
+                "Health_Phase_1": 360,
+                "Health_Phase_2": 330,
+                "Palette_Index": 2
+            }
+        },
+
+        "Boss 058": {
+            "Name": "Sleep Walker",
+            "Recollection_Sprite": "reco_sleep_walker",
+            "Health_Phase_1": 150,
+            "Health_Phase_2": 250,
+            "Defense_Phase_1": 0,
+            "Defense_Phase_2": 0,
+            "Boss_Danger": 1,
+            "Bullet_Speed": 2.5,
+            "Move_Speed": 2.5,
+            "Palette": "spr_sleep_walker_palette",
+
+            "Champ 0.1": {
+                "Health_Phase_1": 200,
+                "Health_Phase_2": 200,
+                "Defense_Phase_1": 0,
+                "Defense_Phase_2": 10
+            },
+            "Champ 1": {
+                "Name": "Violent Slam Walker",
+                "Recollection_Sprite": "reco_sleep_walker",
+                "Health_Phase_1": 210,
+                "Health_Phase_2": 300,
+                "Palette_Index": 1
+            },
+        
+            "recollectionDescription": "Pet owners are really irresponsible these days."
         },
 
         "Boss 064": {

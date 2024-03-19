@@ -54,6 +54,9 @@ function scr_Weapon_Memory(displayItemSprite = true) {
 		if variable_struct_exists(current_weapon_stats, "Description") {
 			recollectionDescription = current_weapon_stats.Description
 		}
+		if variable_struct_exists(current_weapon_stats, "Complexity") {
+			recollectionComplexity = current_weapon_stats.Complexity
+		}
 		/*if variable_struct_exists(current_weapon_stats, "State_Extra_Stats") {
 			if recollectionExtraStats != "No Special Properties" {
 				recollectionExtraStats += " " + current_weapon_stats.State_Extra_Stats

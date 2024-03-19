@@ -85,7 +85,7 @@
             {"resourceType":"Keyframe<SpriteFrameKeyframe>","resourceVersion":"1.0","Channels":{"0":{"resourceType":"SpriteFrameKeyframe","resourceVersion":"1.0","Id":{"name":"ba7e8646-8f3c-41bb-bee8-8213d10f801f","path":"sprites/spr_Rising_Spike_Shot/spr_Rising_Spike_Shot.yy",},},},"Disabled":false,"id":"c33f667e-3de4-4083-b55c-b05860d6cd6a","IsCreationKey":false,"Key":14.0,"Length":1.0,"Stretch":false,},
           ],},"modifiers":[],"spriteId":null,"trackColour":0,"tracks":[],"traits":0,},
     ],
-    "visibleRange": {"x":0.0,"y":0.0,},
+    "visibleRange": null,
     "volume": 1.0,
     "xorigin": 46,
     "yorigin": 65,

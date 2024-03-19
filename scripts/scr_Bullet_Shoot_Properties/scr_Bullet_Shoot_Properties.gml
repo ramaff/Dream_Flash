@@ -72,6 +72,9 @@ function scr_Bullet_Shoot_Properties() {
 	bulletsleeptime = other.bullet_sleep_time;
 	
 	champ = other.bullet_champ;
+	boss_palette = other.boss_palette;
+	boss_palette_index = other.boss_palette_index;
+	minion_bulletspeed = other.bossbulletspeed;
 			
 	if other.bullet_direction_angle = 1 {
 		image_angle = direction;	

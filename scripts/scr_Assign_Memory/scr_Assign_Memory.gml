@@ -12,6 +12,7 @@ function scr_Assign_Memory(){
 	recollectionExtraStats = "????";
 	recollectionDescription = "????"
 	recollectionCount = 0;
+	recollectionComplexity = "Low";
 
 	recollectionChamp = 0;
 	recollectionPalette = spr_Wall_Watcher_Palette;

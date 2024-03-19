@@ -70,6 +70,7 @@ function scr_Boss_Stats_Setup(_version=1) {
 	bosstotalhealth = 0;
 	bossmaxhealth = 0;
 	bossmaxhealth2 = 0;
+	boss_phase_threshold = 0;
 		
 	if _boss_num > 110 and _boss_num <= 116 {
 		champval = global.currentchapter - 1;	
@@ -271,9 +272,21 @@ function scr_Boss_Stats_Setup(_version=1) {
 			//}
 		}
 	
-		bosshealth = bossmaxhealth;
+	bosshealth = bossmaxhealth + bossmaxhealth2 + bossmaxhealth3;
 
 	bosstotalhealth = bossmaxhealth + bossmaxhealth2 + bossmaxhealth3;
+	
+	boss_phase_threshold = bosstotalhealth - bossmaxhealth
+	
+	/*
+	if finalphase = 3 {
+		boss_phase_threshold = bosstotalhealth - bossmaxhealth3
+	} else if finalphase = 2 {
+		boss_phase_threshold = bosstotalhealth - bossmaxhealth2	
+	} else if finalphase = 1 {
+		boss_phase_threshold = bosstotalhealth - bossmaxhealth
+	} */
+	//bossmaxhealth = bosshealth
 	
 	scr_B12();
 

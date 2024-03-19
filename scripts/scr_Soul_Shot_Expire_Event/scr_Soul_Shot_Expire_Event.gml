@@ -34,17 +34,38 @@ function scr_Soul_Shot_Expire_Event(){
 	
 	    image = 1;
 	    shothitagain = 1;
-	    with instance_create(obj_Soul_Parent.x,obj_Soul_Parent.y,obj_Lesser_Soul_Shot) {
-	        scr_Duplicate_Shot_Stats();
-			shottimer = shotlifespan;
-			image_alpha = 1;
-			//shotformshow = 0;
-			shotSizeRelation = 1;
-			shottimer = shotlifespan;
-			shotsizemax = shotsize;
-			sprite_index = other.sprite_index;
-			direction = point_direction(obj_Soul_Parent.x,obj_Soul_Parent.y,mouse_x, mouse_y) - (shotaccuracy / 2) + random(shotaccuracy);
-	    } 
+		if shotbeam = 0 {
+		    with instance_create(obj_Soul_Parent.x,obj_Soul_Parent.y, object_index) {
+		        scr_Duplicate_Shot_Stats();
+				shottimer = shotlifespan;
+				image_alpha = 1;
+				//shotformshow = 0;
+				shotSizeRelation = 1;
+				shottimer = shotlifespan;
+				shotsizemax = shotsize;
+				sprite_index = other.sprite_index;
+				direction = point_direction(obj_Soul_Parent.x,obj_Soul_Parent.y,mouse_x, mouse_y) - (shotaccuracy / 2) + random(shotaccuracy);
+		    } 
+		} else if scr_Chance(15) {
+			var beamseg = 1;
+			var beamdir = point_direction(obj_Soul_Parent.x,obj_Soul_Parent.y,mouse_x, mouse_y) - (shotaccuracy / 2) + random(shotaccuracy);
+			var curvedir = (-1 + random(2))
+			var beamstop = shotmelee
+			var beamxx = lengthdir_x(-6, beamdir)
+			var beamyy = lengthdir_y(-6, beamdir)
+			//var oldbeamdir = beamdir
+			var beamtype = shotbeam
+			var beamtotalsegs = 15;
+			var beamspriteindex = 0;
+			var beamsize = shotsize;
+			var dirChange = 0;
+			var boss_hits = {};
+			var homespeed = shothomingspeed * 3;
+			var hit_again = -1;
+			var splitsize = 128 * shotsize;
+		
+			scr_Beam_Create(x, y, beamseg, beamdir, curvedir, beamstop, beamxx, beamyy, beamtype, beamtotalsegs, beamspriteindex, beamsize, dirChange, homespeed, splitsize)	
+		}
 	} else if shotwander > 0 and shotbeam = 0 {
 		shotwander--;
 		direction = random(360);

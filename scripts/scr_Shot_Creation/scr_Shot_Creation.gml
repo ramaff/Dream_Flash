@@ -118,7 +118,7 @@ function scr_Shot_Creation() {
 	   // if Shot_Forward = 1 {
 			var forward = 16;
 			//if Shot_Forward_Amount = 0 {
-				forward = Shot_Forward_Amount;	
+			forward = Shot_Forward_Amount;	
 			//}
 	        xx = lengthdir_x(forward,actual_shot_direction);
 	        yy = lengthdir_y(forward,actual_shot_direction);
@@ -181,9 +181,6 @@ function scr_Shot_Creation() {
 		scr_E14_Shot_Mod();
 		
 		scr_XB05_Shot_Stats();
-		
-		//show_debug_message("x: " + string(shxx) + "y: " + string(shyy))
-		//show_debug_message("x: " + string(obj_Soul_Parent.x) + "y: " + string(obj_Soul_Parent.y))
 		
 		repeat(mechFac) {
 			

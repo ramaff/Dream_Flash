@@ -7,7 +7,7 @@ function scr_E14_Shot_Mod(){
 
 	if object_index = obj_Dream_Glitch {
 		Shot_Power = Shot_Power * 0.6;
-		Shot_Size = Shot_Size * 0.8;
+		Shot_Alpha = Shot_Alpha * 0.8;
 	}
 
 }

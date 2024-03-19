@@ -11,6 +11,10 @@ function scr_Shot_Burst_Stats(vshotburststats){
 		shotpower = shotpower * vshotburststats.Burst_Power;
 		shotaurapower = shotaurapower * vshotburststats.Burst_Power;
 		shotpowermax = shotpower;
+	} else {
+		shotpower = vshotburststats.Shot_Power;
+		shotaurapower = vshotburststats.Shot_Power;
+		shotpowermax = shotpower;	
 	}
 	if variable_struct_exists(vshotburststats, "Burst_Soul_Shot_Damage") {
 		shotsouldamage = vshotburststats.Burst_Soul_Shot_Damage;

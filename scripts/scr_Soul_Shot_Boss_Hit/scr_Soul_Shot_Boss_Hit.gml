@@ -155,10 +155,10 @@ function scr_Soul_Shot_Boss_Hit() {
 					dir = -shotburststats[burstIndex].Spread / 2;
 					shotlifespan = shotlifespan * 0.6;
 					image = 1
+					var vshotburststats = shotburststats[burstIndex]
 					repeat(shotburststats[burstIndex].Amount) {
-					    with instance_create(x,y,object_index) {
+					    with instance_create(x,y, asset_get_index(vshotburststats.Shot_Type)) {
 					        scr_Duplicate_Shot_Stats();
-							var vshotburststats = other.shotburststats[burstIndex]
 					
 							scr_Shot_Burst_Stats(vshotburststats);
 					

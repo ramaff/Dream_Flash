@@ -19,8 +19,11 @@ function scr_P08(){
 		//scr_Default_Weapon_Stats();
 		
 		var _delay = current_weapon_stats.Delay / scr_Class_Stat_Firerate_Multiplier();
+		if current_weapon_stats.Shot_Beam = 2 {
+			_delay = _delay * 3;	
+		}
 		
-		global.trailing_off += global.P[8] * 4 / _delay
+		global.trailing_off += (global.P[8] * 2) / _delay
 		
 		while global.trailing_off >= 1 {
 			
@@ -28,10 +31,20 @@ function scr_P08(){
 		
 			current_weapon_stats.Shot_Speed = 0
 			current_weapon_stats.Shot_Forward = 0;
-			current_weapon_stats.Shot_Lifespan = current_weapon_stats.Shot_Lifespan * 2
-			current_weapon_stats.Shot_Lobbing = true
-			current_weapon_stats.Shot_Power = current_weapon_stats.Shot_Power * 0.5;
-			current_weapon_stats.Shot_Size = current_weapon_stats.Shot_Size * 0.7;
+			
+			if current_weapon_stats.Shot_Beam = 0 {
+				current_weapon_stats.Shot_Lifespan = current_weapon_stats.Shot_Lifespan * 2
+				current_weapon_stats.Shot_Lobbing = true
+			} else {
+				current_weapon_stats.Shot_Direction = scr_Wave(0, 360, 2, 0);
+				current_weapon_stats.Shot_Size = current_weapon_stats.Shot_Size * 0.5;
+				current_weapon_stats.Shot_Mouse = 0;
+			}
+			if current_weapon_stats.Shot_Beam = 2 {
+				current_weapon_stats.Shot_Frame = global.essencebeamtime / 5
+				current_weapon_stats.Shot_Frame = clamp(current_weapon_stats.Shot_Frame, 0, 3);	
+				current_weapon_stats.Shot_Lifespan = 5;
+			}
 			
 			scr_Setup_Weapon_Stats(current_weapon_stats);
 			
@@ -41,15 +54,17 @@ function scr_P08(){
 		
 			scr_Hard_Coded_Weapon_Stats(_c_wp);
 		
-			Shot_Stats.Shot_Height += 20
-			Shot_Stats.Shot_Fall_Speed = -0.2
+			if current_weapon_stats.Shot_Beam = 0 {
+				Shot_Stats.Shot_Height += 20
+				Shot_Stats.Shot_Fall_Speed = -0.2
 			
-			var _dist = Shot_Stats.Shot_Height;
-			var _time = Shot_Stats.Shot_Lifespan;
-			var _vel = Shot_Stats.Shot_Fall_Speed;
+				var _dist = Shot_Stats.Shot_Height;
+				var _time = Shot_Stats.Shot_Lifespan;
+				var _vel = Shot_Stats.Shot_Fall_Speed;
 			
-			// velocity is backwards
-	        Shot_Stats.Shot_Gravity = ((2 * _dist) / (_time * _time)) + (_vel / _time)
+				// velocity is backwards
+		        Shot_Stats.Shot_Gravity = ((2 * _dist) / (_time * _time)) + (_vel / _time)
+			}
 			
 			scr_Weapon_Output(spawnProjectile, minion)
 		

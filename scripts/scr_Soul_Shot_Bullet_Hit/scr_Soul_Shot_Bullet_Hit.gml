@@ -32,87 +32,63 @@ function scr_Soul_Shot_Bullet_Hit(){
 		}
 
 		//////// Check the bullet's list for this object's id
-		//if ds_exists(other.projectile_hits, ds_type_list) {
-			var hit_again = variable_struct_exists(bullet_hits, other.id)
-			if !hit_again and shotpierce >= 0 {
-				//ds_list_add(other.projectile_hits, shot_boss_id);
-				//other.projectile_hits[shot_boss_id] = shot_boss_id
-				variable_struct_set(bullet_hits, other.id, other.id)
+		var hit_again = variable_struct_exists(bullet_hits, other.id)
+		if !hit_again and shotpierce >= 0 {
+			//ds_list_add(other.projectile_hits, shot_boss_id);
+			//other.projectile_hits[shot_boss_id] = shot_boss_id
+			variable_struct_set(bullet_hits, other.id, other.id)
 	
-				if shotreboundtype = 1 {
-				    scr_Weapon_Rebound_Mouse();
+			if shotreboundtype = 1 {
+				scr_Weapon_Rebound_Mouse();
     
-				    shotpierce--;
-				    if shotpierce <= 0 {
-				        instance_destroy();
-				    }
-					exit;
-				}
-	
-				if shotreboundtype = 2 {
-				    scr_Weapon_Rebound();
-					
-					scr_Soul_Shot_Rebound_Parts();
-    
-				    shotpierce--;
-				    if shotpierce <= 0 {
-				        instance_destroy();
-				    }
-				    exit;
-				}
-	
-				if other.soulshotblock = 1 {
-				    other.bulletpower -= (shotpower / 10);
-				    if other.bulletpower <= 0 {
-				    instance_destroy(other);
-				    }
-				    shotpierce--;
-					
-					if ((other.bulletpower > 0) and (other.bulletpowermax > 0)) {
-						other.bulletsize = 0.1 + 0.4 * sqrt(other.bulletpower / other.bulletpowermax);
-					} else {
-						other.bulletsize = 0.1;
-					}
-					other.image_xscale = other.bulletsize;
-					other.image_yscale = other.bulletsize;
-					
-				    if shotpierce <= 0 {
+				shotpierce--;
+				if shotpierce <= 0 {
 				    instance_destroy();
-				    }
 				}
-			//}
-		//}
-
-		// Check this object's list for the bullets id
-		/*var hit_again = 0;
-		if ds_exists(bullet_hits, ds_type_list) {
-			hit_again = ds_list_find_index(bullet_hits, other.id);
-		} else {
-			bullet_hits = ds_list_create();	
-		} */
+				exit;
+			}
 	
-		//var hit_again = variable_struct_exists(bullet_hits, other.id)
-		//show_debug_message(bullet_hits)
-		//show_debug_message(other.id)
+			if shotreboundtype = 2 {
+				scr_Weapon_Rebound();
+					
+				scr_Soul_Shot_Rebound_Parts();
+    
+				shotpierce--;
+				if shotpierce <= 0 {
+				    instance_destroy();
+				}
+				exit;
+			}
 	
-		//if !hit_again and shotpierce >= 0 {
-			//ds_list_add(bullet_hits, other.id);
-			//variable_struct_set(bullet_hits, other.id, other.id)
+			if other.soulshotblock = 1 {
+				other.bulletpower -= (shotpower / 10);
+				if other.bulletpower <= 0 {
+				instance_destroy(other);
+				}
+				shotpierce--;
+					
+				if ((other.bulletpower > 0) and (other.bulletpowermax > 0)) {
+					other.bulletsize = 0.1 + 0.4 * sqrt(other.bulletpower / other.bulletpowermax);
+				} else {
+					other.bulletsize = 0.1;
+				}
+				other.image_xscale = other.bulletsize;
+				other.image_yscale = other.bulletsize;
+					
+				if shotpierce <= 0 {
+				instance_destroy();
+				}
+			}
 		
 			if shotshieldtype = 3 {
 				if shotshieldpower >= (other.bulletpower) {
 				    instance_destroy(other);
 				} else {
-				    other.bulletpower -= (shotshieldpower);
-					if ((other.bulletpower > 0) and (other.bulletpowermax > 0)) {
-						other.bulletsize = 0.1 + 0.4 * sqrt(other.bulletpower / other.bulletpowermax);
-					} else {
-						other.bulletsize = 0.1;
+					
+					var _shield = shotshieldpower
+					with(other) {
+						scr_Bullet_Dampen(_shield);
 					}
-					other.bulletspeed = other.bulletspeed / 2;
-					other.speed = other.bulletspeed;
-					other.image_xscale = other.bulletsize;
-					other.image_yscale = other.bulletsize;
 				}
 				if shotessencedrain > 0 {
 					scr_Refresh_Soul(shotshieldpower * shotessencedrain);

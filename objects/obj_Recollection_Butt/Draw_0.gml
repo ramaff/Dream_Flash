@@ -23,107 +23,17 @@ if (y < ybott) {
 if (y > ytop) {
     image_alpha = 0;
 }
-/*
-recollectionString = "You cannot remember";
-recollectionSprite = spr_Recollection_Unknown_Weapon_Icon;
-recollectionPower = -999;
-recollectionEssence = -999;
-recollectionRecharge = -999;
-recollectionSpeed = -999;
-recollectionLifespan = -999;
-recollectionAccuracy = -999;
-recollectionExtraStats = "????";
-recollectionDescription = "????"
-recollectionCount = 0;
 
-recollectionChamp = 0;
-
-for(v = 0; v < 10; v++) {
-	recollectionBSprite[v] = spr_Recollection_Unknown_Boss_Icon;
-	recollectionBString[v] = "You cannot remember";
-	recollectionHealth1[v] = -999;
-	recollectionHealth2[v] = -999;
-	recollectionDefense1[v] = -999;
-	recollectionDefense2[v] = -999;
-	recollectionDanger[v] = -999;
-	recollectionImaginaryResist[v] = -999;
-	recollectionSharpResist[v] = -999;
-	recollectionExplosiveResist[v] = -999;
-	recollectionMagicResist[v] = -999;
-	recollectionEnergyResist[v] = -999;
-}
-
-if global.recollectCategory = "Items" {
-recollectionSprite = spr_Recollection_Unknown_Weapon_Icon;
-}
-if global.recollectCategory = "Bosses" {
-recollectionSprite = spr_Recollection_Unknown_Boss_Icon;
-}
-if global.recollectCategory = "State" {
-recollectionSprite = spr_Recollection_State_Icon;
-}
-scr_Memory_Info_Bank();
-//draw_text(x,y, recollectionString);
-
-if is_string(itemVal) {
-    itemNum = string_digits(itemVal);
-    itemGroup = string_letters(itemVal);
-    tempNum = 0;
-    
-    if itemGroup = "A" {
-        tempNum = 1;
-    }
-    if itemGroup = "B" {
-        tempNum = 2;
-    }
-    if itemGroup = "C" {
-        tempNum = 3;
-    }
-    if itemGroup = "D" {
-        tempNum = 4;
-    }
-    if itemGroup = "E" {
-        tempNum = 5;
-    }
-    if itemGroup = "F" {
-        tempNum = 6;
-    }
-    if itemGroup = "G" {
-        tempNum = 7;
-    }
-    if itemGroup = "H" {
-        tempNum = 8;
-    }
-    if itemGroup = "J" {
-        tempNum = 9;
-    }
-    if itemGroup = "K" {
-        tempNum = 10;
-    }
-    if itemGroup = "M" {
-        tempNum = 11;
-    }
-    if itemGroup = "R" {
-        tempNum = 12;
-    }
-    
-	image_index = tempNum;
-} else {
-}
-
-if global.recollectCategory = "State" {
-		recoNum = string_digits(itemVal);
-		recollectionCount = global.recollectionState[recoNum];
+if global.recollectCategory = "Weapons" {
+	sprite_index = spr_Default_Weapon_Border
+	image_index = 0
+	if recollectionComplexity = "Medium" {
+		image_index = 1;	
 	}
-	
-	if global.recollectCategory = "Information" {
-		recoNum = string_digits(itemVal);
-		if recoNum > 6 {
-			recoNum = recoNum - 6;	
-		}
-	}
-	*/
-
+	if recollectionComplexity = "High" {
+		image_index = 2;
+	}	
+}
 
 if image_alpha = 1 {
 	if global.recollectCategory != "Bosses" and global.recollectCategory != "State" and global.recollectCategory != "Information" {

@@ -28,14 +28,6 @@ function scr_D03(){
 			Shot_Extra[_extra_index].Shot_Power = current_weapon_stats.Shot_Power * 0.2;
 			Shot_Extra[_extra_index].Shot_Size = current_weapon_stats.Shot_Size * 0.6;
 			Shot_Extra[_extra_index].Shot_Speed = current_weapon_stats.Shot_Speed * (0.6 + random(0.6));
-			
-			/*variable_struct_set(Shot_Extra[_extra_index], "Burst_Power", 0.7); 
-			variable_struct_set(Shot_Extra[_extra_index], "Burst_Size", 0.8); 
-			variable_struct_set(Shot_Extra[_extra_index], "Air_Burst", true); 
-			variable_struct_set(Shot_Extra[_extra_index], "Range", 100); 
-			var amount = 2 + (global.OB[6] * 2)
-			variable_struct_set(Shot_Extra[_extra_index], "Amount", amount); 
-			variable_struct_set(Shot_Extra[_extra_index], "Spread", 360 / amount);*/
 		
 		}
 		

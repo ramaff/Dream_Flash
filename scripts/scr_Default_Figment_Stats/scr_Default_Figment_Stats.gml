@@ -6,6 +6,9 @@ function scr_Default_Figment_Stats() {
 	global.gembeam_hits = {}
 	
 	scurrentstate = "None"
+	
+	boss_palette = noone;
+	boss_palette_index = noone;
 
 	scr_Soul_Particles();
 

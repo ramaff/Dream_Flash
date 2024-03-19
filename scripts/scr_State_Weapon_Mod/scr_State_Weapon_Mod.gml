@@ -1,31 +1,14 @@
 // Script assets have changed for v2.3.0 see
 // https://help.yoyogames.com/hc/en-us/articles/360005277377 for more information
 function scr_State_Weapon_Mod(){
-	var reverie = false;
-	if global.F[5] >= 1 {
-		reverie = scr_Chance(10 / global.F[5]);
-	}
 	
 	if other.Shot_Off_State = 0 and shotorigin = obj_Soul_Parent {
-		if scr_State_Active_Check("Snake", reverie) and other.Shot_Beam = 0 {
+		if scr_State_Active_Check("Snake") and other.Shot_Beam = 0 {
 			shotsnakemove = 2;
 			shottargetX = mouse_x;
 			shottargetY = mouse_y;
 		
 			shotduplicatesprite = sprite_index;
-		
-			/*
-			shotextrahits[3] = 1;
-			shotextrahitssprite[3] = shotduplicatesprite;
-			shotextrahitfrequency[3] = 7;
-			shotextrahitpower[3] = shotpower * global.soulstateformboost / 5;
-			shotextrahitspeed[3] = 0;
-			shotextrahitlifespan[3] = 13;
-			shotextrahitpierce[3] = 2;
-			shotextrahitsize[3] = shotsize * 1;
-			shotextrahitfade[3] = 1;
-			*/
-			//shotpierce += 1;
 		
 			image = 1;
 			
@@ -61,7 +44,7 @@ function scr_State_Weapon_Mod(){
 			shotspeed = shotspeed * 1.75;
 			speed = shotspeed;
 		}
-		if (obj_Soul_Parent.scurrentstate == "Beast" || (obj_Soul_Parent.stransformedstate == "Beast" and reverie == true)) {
+		if scr_State_Active_Check("Beast") {
 		
 			image = 1;
 		
@@ -77,7 +60,7 @@ function scr_State_Weapon_Mod(){
 		    shotpower = shotpowermax;
 		    shotPowerLevel = shotPowerLevel * (1.5 * global.soulstateformboost);
 		}
-		if (obj_Soul_Parent.scurrentstate == "Scrub" || (obj_Soul_Parent.stransformedstate == "Scrub" and reverie == true)) {
+		if scr_State_Active_Check("Scrub") {
 		
 			image = 1;
 			shotduplicatesprite = sprite_index;
@@ -117,7 +100,7 @@ function scr_State_Weapon_Mod(){
 				shothomingspeed += 5;	
 			}
 		}
-		if (obj_Soul_Parent.scurrentstate == "Spike" || (obj_Soul_Parent.stransformedstate == "Spike" and reverie == true)) {
+		if scr_State_Active_Check("Spike") {
 		
 			shotspeed = shotspeed * (1.25 * global.soulstateformboost);
 			shotpierce += 1;
@@ -134,7 +117,7 @@ function scr_State_Weapon_Mod(){
 			}
 		
 		}
-		if scr_State_Active_Check("Casting", reverie) and other.Shot_Beam = 0 {
+		if scr_State_Active_Check("Casting") and other.Shot_Beam = 0 {
 			
 			//Shot_Extra_Hits = false
 			shotsize += 0.2;
@@ -192,23 +175,8 @@ function scr_State_Weapon_Mod(){
 			image_xscale = shotsize;
 			image_yscale = shotsize;
 			
-			//shotduplicatesprite = sprite_index;
 			
-			/*shotextrahits[4] = 1;
-			shotextrahitssprite[4] = shotduplicatesprite;
-			shotextrahitfrequency[4] = 15 + (shotlifespan / 10);
-			shotextrahitpower[4] = shotpower * global.soulstateformboost / 2.5;
-			shotextrahitspeed[4] = shotspeed * 1.5;
-			shotextrahitlifespan[4] = shotlifespan / 2;
-			shotextrahitpierce[4] = shotpierce;
-			shotextrahitsize[4] = shotsize * 0.5;
-			//shotextrahitfade = 1;
-			
-			shotextrahitshrink[4] = 0;
-			shotextrahitfade[4] = 0;
-			*/
-			
-			if other.Weapon_Melee > 0 and obj_Soul_Parent.scurrentstate = "Casting" {
+			if other.Weapon_Melee > 0 {
 		
 				shotextrahitlifespan[4] = 10;
 				shotextrahitsize[4] = other.Shot_Size * 2;
@@ -221,10 +189,10 @@ function scr_State_Weapon_Mod(){
 			otarget = other.id;
 		}
 	
-		if other.Charge_Hold = 2 || scr_State_Active_Check("Ascending", reverie) {
+		if other.Charge_Hold = 2 || scr_State_Active_Check("Ascending") {
 			
-			shotsize += 0.25;
-			shotsizemax += 0.25;
+			shotsize += 0.3;
+			shotsizemax += 0.3;
 			image_xscale = shotsize;
 			image_yscale = shotsize;
 			

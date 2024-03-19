@@ -74,12 +74,13 @@ if !scr_Room_Leavable() {
     }
     with(obj_Main_Boss_Parent) {
 		if object_index != obj_Sandman_Thought and object_index != obj_Veil_Mask and object_index != obj_Soul_Collector and object_index != obj_Dream_Crawler_Part {
-			if currentphase = finalphase {
+			/*if currentphase = finalphase {
 				other.bosshealth[cboss] = bosshealth;
 			} else {
 				other.bosshealth[cboss] = bosshealth + bossmaxhealth2;
-			}
+			} */
 		
+			/*
 			if finalphase = 3 {
 				if currentphase = 1 {
 					other.bosshealth[cboss] = bosshealth + bossmaxhealth2 + bossmaxhealth3;
@@ -88,7 +89,9 @@ if !scr_Room_Leavable() {
 				} else if currentphase = 3 {
 					other.bosshealth[cboss] = bosshealth;
 				}
-			} 
+			} */
+			
+			other.bosshealth[cboss] = bosshealth;
 			
 	        other.bossmaxhealth[cboss] = bosstotalhealth;
 			other.bossphase[cboss] = currentphase

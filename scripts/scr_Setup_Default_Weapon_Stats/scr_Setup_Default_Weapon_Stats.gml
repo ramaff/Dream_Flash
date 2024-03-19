@@ -9,6 +9,8 @@ function scr_Setup_Default_Weapon_Stats(_weapon){
 	
 	var _weapon_struct = scr_Struct_Merge(_base_stats, _weapon_stats, false)
 	
+	_weapon_struct.Weapon_Number = _weapon
+	
 	return _weapon_struct
 
 }

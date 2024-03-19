@@ -5,6 +5,7 @@ function scr_Setup_Default_Shot_Stats(){
 	Shot_Stats = {
 		Delay: 20,
 		Essence: 4,
+		Weapon_Number: 0,
 		Shot_Accuracy: 15,
 		Shot_Extra_Stats: false,
 		Shot_Burst_Stats: false,
@@ -17,6 +18,7 @@ function scr_Setup_Default_Shot_Stats(){
 		Shot_Gravity: 0,
 		Shot_Count: 1,
         Shot_Sprite: spr_Soul_Shot,
+		Shot_Beam: 0,
         Shot_Power: 10,
         Shot_Speed: 0,
         Shot_Lifespan: 60,
@@ -25,6 +27,7 @@ function scr_Setup_Default_Shot_Stats(){
         Shot_Pierce: 1,
         Shot_Size: 0.5,
         Shot_Point_Angle: false,
+		Shot_Direction: 0,
 		Shot_Extra_Hit_Frequency: 0,
 		Shot_Acceleration: 0,
 		Shot_Fade: 0,
@@ -37,6 +40,7 @@ function scr_Setup_Default_Shot_Stats(){
 		Shot_Init_Grow: 1,
 		Shot_Excess_Essence: 0,
 		Shot_Mouse_Origin: 0,
+		Shot_Mouse: true,
 		Shot_Fire: 0,
 		Shot_Poison: 0,
 		Shot_Bleed: 0,
@@ -47,7 +51,18 @@ function scr_Setup_Default_Shot_Stats(){
 		Charge_Essence: 0,
 		Shot_Trail: 0,
 		Shot_Trail_Direction: 0,
-		Shot_Trail_Speed: 0
+		Shot_Trail_Speed: 0,
+		Shot_Impact_Type: 0,
+		Shot_Impact_Power: 0,
+		Shot_Impact_Size: 0,
+		Shot_Forward: 0,
+		Shot_Forward_Amount: 16,
+		Shot_Shield_Type: 0,
+		Shot_Shield_Power: 0,
+		Shot_Bullet_Redirect: 0,
+		Shot_Bullet_Redirect_Chance: 0,
+		Shot_Repetition: 0,
+		Shot_Ground: false
 	}
 	return Shot_Stats
 

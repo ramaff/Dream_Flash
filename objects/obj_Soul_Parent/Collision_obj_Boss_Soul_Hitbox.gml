@@ -9,6 +9,7 @@ if instance_exists(other.bossid) {
 	}
 
 	if soulinvincibility <= 0 {
+		
 	    if (scontactdamage + scontactdamageadd) > 0 {
 			
 			var cdam = scontactdamage + scontactdamageadd
@@ -52,6 +53,10 @@ if instance_exists(other.bossid) {
 	    }
 	    }
 
+	}
+	
+	if scr_State_Active_Check("Bleeding") and speed > 2 and soulinvincibility > 0 {
+		exit;	
 	}
 	
 	var i;

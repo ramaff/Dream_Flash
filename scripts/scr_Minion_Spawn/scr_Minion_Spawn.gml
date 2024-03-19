@@ -20,6 +20,8 @@ function scr_Minion_Spawn() {
 					
 				
 					champ = other.champ;
+					boss_palette = other.boss_palette;
+					boss_palette_index = other.boss_palette_index;
                 
 	                currentphase = 1;
 	                finalphase = 1;

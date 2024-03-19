@@ -1,14 +1,12 @@
 function scr_Charged_Use() {
 	var cw = global.currentweapon;
 	
-	var reverie = false;
-	if global.F[5] >= 1 {
-		reverie = scr_Chance(10 / global.F[5]);
-	}
-	
-	var _ascending = false
-	if scr_State_Active_Check("Ascending", reverie) and global.currentweapon != 605 and (global.currentweapon < 500 || global.currentweapon > 600) {
+
+	var _ascending = scr_State_Active_Check("Ascending")
+	if _ascending and global.currentweapon != 605 and (global.currentweapon < 500 || global.currentweapon > 600) {
 		_ascending = true
+	} else {
+		_ascending = false	
 	}
 	
 	if _ascending || scr_Charged_Weapon(cw) {

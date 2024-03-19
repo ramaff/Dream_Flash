@@ -1363,7 +1363,7 @@
         "recollectionString": "Stubborn",
         "recollectionSprite": "spr_Stubborn_Art",
         "recollectionExtraStats": "+Unyielding Thoughts",
-        "recollectionDescription": "Being stubborn turns your firing pattern into bursts of rapid shooting. All weapons are now 4x barrages that stick to their initial firing angle. Barrages use up 3x essence and 3x reload time."
+        "recollectionDescription": "Being stubborn turns your firing pattern into bursts of rapid shooting. All weapons are now 4x barrages that stick to their initial firing angle. Barrages use up 3x essence and 3x reload time. Weapons that already shoot in a barrage shoot an additional projectile."
     },
     "OC04": {
         "recollectionString": "Delusions of Grandeur",

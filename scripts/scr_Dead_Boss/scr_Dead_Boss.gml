@@ -20,7 +20,7 @@ function scr_Dead_Boss(_diff = difficulty){
 			image_xscale = other.bossSize;
 			image_yscale = other.bossSize;
 			sprite_index = other.sprite_index;
-			image_index = other.image_index;
+			image_index = 0;
 	
 			sprite_index = other.death_sprite	
 			alarm[0] = 30;
