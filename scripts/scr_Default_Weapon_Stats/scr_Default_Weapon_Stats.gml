@@ -1,13 +1,15 @@
 function scr_Default_Weapon_Stats() {
-	Shot_Spread = 0;
-	Shot_Accuracy = 15;
-	Shot_Count = 1;
+	//Shot_Spread = 0;
+	//Shot_Accuracy = 15;
+	//Shot_Count = 1;
 	//Shot_Default_Count = 1;
 	
 	Shot_Stats = scr_Setup_Default_Shot_Stats()
-	Weapon_Number = 0;
+	//Weapon_Number = 0;
+	
+	umbrellaActive = false;
 
-	Shot_Beam = 0;
+	/*Shot_Beam = 0;
 	Shot_Beam_Count = 40;
 	Shot_Beam_Curve = 0;
 	
@@ -25,11 +27,9 @@ function scr_Default_Weapon_Stats() {
 	Shot_Forward_Amount = 16;
 	Shot_Weapon_Lean = 0;
 	Shot_Angles = -1;
-	Shot_Boss_Aim = false;
-	
-	umbrellaActive = false;
+	Shot_Boss_Aim = false; */
 
-	Shot_Form_Show = 1;
+	/*Shot_Form_Show = 1;
 
 	Shot_XX = 0;
 	Shot_YY = 0;
@@ -243,6 +243,7 @@ function scr_Default_Weapon_Stats() {
 	Shot_Burst_Stats = false;
 	Shot_Air_Burst_Stats = false;
 	Shot_Extra_Stats = false;
-	Shot_Angle_Relative = 0;
+	Shot_Angle_Relative = 0; 
+	*/
 
 }

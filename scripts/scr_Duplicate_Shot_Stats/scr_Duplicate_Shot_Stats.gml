@@ -11,13 +11,11 @@ function scr_Duplicate_Shot_Stats() {
 	}
 	
 	shot_stats = json_parse(json_stringify(other.shot_stats));
-	
-	//ptype = other.ptype;
 
+	/*
 	target = other.target;
 	otarget = other.otarget;
 	shotgem = other.shotgem;
-	
 	otarget = noone;
 	
 	shotaccuracy = other.shotaccuracy
@@ -61,6 +59,9 @@ function scr_Duplicate_Shot_Stats() {
 
 	shotorigin = other.shotorigin;
 
+	*/
+	
+	/*
 	shotduplicatesprite = other.shotduplicatesprite;
 	sprite_index = other.shotduplicatesprite;
 	image_angle = shotangle;
@@ -72,7 +73,9 @@ function scr_Duplicate_Shot_Stats() {
 	shotkeepdirection = other.shotkeepdirection;
 	if shotkeepdirection = 1 {
 		shotpointangle = 1;	
-	}
+	}*/
+	
+	/*
 
 	im = direction;
 
@@ -99,9 +102,12 @@ function scr_Duplicate_Shot_Stats() {
 	}
 	
 	shotbeam = other.shotbeam
+	*/
 	
 	image_xscale = shotsize;
 	image_yscale = shotsize;
+	
+	/*
 	shotsizemax = other.shotsizemax;
 	shotpowermax = shotpower;
 	
@@ -292,6 +298,7 @@ function scr_Duplicate_Shot_Stats() {
 	shotA07 = other.shotA07;
 	followtarget = other.followtarget;
 	feartarget = other.feartarget;
+	*/
 	
 	/*
 	if other.shotextrahits = 2 {
@@ -299,12 +306,13 @@ function scr_Duplicate_Shot_Stats() {
 	}
 	*/
 
-	direction = other.direction + other.dir;
+	/*direction = other.direction + other.dir;
 	speed = shotspeed;
 	alarm[0] = shotlifespan;
 	alarm[2] = 1;
 	alarm[3] = 15;
 
 	scr_Shot_Particle_Setup();
+	*/
 
 }

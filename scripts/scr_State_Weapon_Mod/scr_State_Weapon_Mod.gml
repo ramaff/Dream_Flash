@@ -120,10 +120,10 @@ function scr_State_Weapon_Mod(){
 		if scr_State_Active_Check("Casting") and other.Shot_Beam = 0 {
 			
 			//Shot_Extra_Hits = false
-			shotsize += 0.2;
-			shotsizemax += 0.2;
-			image_xscale = shotsize;
-			image_yscale = shotsize;
+			shot_stats.Shot_Size += 0.2;
+			shot_stats.Shot_Size_Max += 0.2;
+			image_xscale = shot_stats.Shot_Size;
+			image_yscale = shot_stats.Shot_Size;
 			
 			shot_stats.Shot_Extra_Stats = [other.Shot_Stats];
 			
@@ -134,7 +134,7 @@ function scr_State_Weapon_Mod(){
 			shot_stats.Shot_Extra_Stats[0].Shot_Speed = shotspeed * 1.5;
 			shot_stats.Shot_Extra_Stats[0].Shot_Lifespan = shotlifespan / 2;
 			shot_stats.Shot_Extra_Stats[0].Shot_Pierce = shotpierce;
-			shot_stats.Shot_Extra_Stats[0].Shot_Size = (0.05 + shotsize * 0.5);
+			shot_stats.Shot_Extra_Stats[0].Shot_Size = (0.05 + shot_stats.Shot_Size * 0.5);
 			//shot_stats.Shot_Extra_Stats[0].Shot_Mouse = true;
 			
 			if other.Shot_Type = obj_Melee_Caster_Shot {
@@ -172,11 +172,11 @@ function scr_State_Weapon_Mod(){
 	        shotCenterY = other.y;
 			speed = 0;
 			
-			image_xscale = shotsize;
-			image_yscale = shotsize;
+			image_xscale = shot_stats.Shot_Size;
+			image_yscale = shot_stats.Shot_Size;
 			
 			
-			if other.Weapon_Melee > 0 {
+			if shot_stats.Weapon_Melee > 0 {
 		
 				shotextrahitlifespan[4] = 10;
 				shotextrahitsize[4] = other.Shot_Size * 2;
@@ -191,10 +191,10 @@ function scr_State_Weapon_Mod(){
 	
 		if other.Charge_Hold = 2 || scr_State_Active_Check("Ascending") {
 			
-			shotsize += 0.3;
-			shotsizemax += 0.3;
-			image_xscale = shotsize;
-			image_yscale = shotsize;
+			shot_stats.Shot_Size += 0.3;
+			shot_stats.Shot_Size_Max += 0.3;
+			image_xscale = shot_stats.Shot_Size;
+			image_yscale = shot_stats.Shot_Size;
 			
 			shot_stats.Shot_Lobbing = true;
 			shot_stats.Shot_Height = 50;

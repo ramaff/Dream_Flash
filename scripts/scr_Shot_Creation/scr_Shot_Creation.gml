@@ -29,48 +29,50 @@ function scr_Shot_Creation() {
 	//show_debug_message(string(Shot_Count))
 	//show_debug_message(string(Shot_Repetition[bi]))
 	
+	var _cw = current_weapon_stats;
+	
 	if Shot_Repetition[bi] >= 1 {
-		Shot_Count = Shot_Default_Count[bi];
+		_cw.Shot_Count = _cw.Shot_Default_Count[bi];
 	}
 
-	repeat(Shot_Count) {
+	repeat(_cw.Shot_Count) {
 		sadd = global.soulshotamountaddchance + irandom(99);
 
 		if sadd >= 100 {
-		    Shot_Count += 1;
+		    _cw.Shot_Count += 1;
 		}
 	}
 
-	Shot_Count += global.soulshotamountadd + global.soulshotamountaddtemp;
+	_cw.Shot_Count += global.soulshotamountadd + global.soulshotamountaddtemp;
 
 	scr_D10();
 	
 	scr_XB05_Shot_Mod();
 
-	if Shot_Count > 1 {
-	    if Shot_Spread < 10 and Shot_Spread >= 0 {
-	        Shot_Spread = 10;
+	if _cw.Shot_Count > 1 {
+	    if _cw.Shot_Spread < 10 and _cw.Shot_Spread >= 0 {
+	        _cw.Shot_Spread = 10;
 	    }
 	}
 
-	dir = -(Shot_Spread * (Shot_Count - 1) / 2) + (-(Shot_Accuracy / 2) + random(Shot_Accuracy)) + Shot_Direction_Offset;
+	dir = -(_cw.Shot_Spread * (_cw.Shot_Count - 1) / 2) + (-(_cw.Shot_Accuracy / 2) + random(_cw.Shot_Accuracy)) + _cw.Shot_Direction_Offset;
 
 	Shot_Current_Count = 0;
 
 	
 	actual_shot_direction = 0;
 	
-	if Shot_Mouse {
+	if _cw.Shot_Mouse {
 		actual_shot_direction = point_direction(x, y, mouse_x, mouse_y);
-		if Shot_XX != 0 || Shot_YY != 0 {
-			actual_shot_direction = point_direction(x + Shot_XX, y + Shot_YY, mouse_x ,mouse_y);
+		if _cw.Shot_XX != 0 || _cw.Shot_YY != 0 {
+			actual_shot_direction = point_direction(x + _cw.Shot_XX, y + _cw.Shot_YY, mouse_x ,mouse_y);
 		}
-	} else if !Shot_Mouse {
-		actual_shot_direction = Shot_Direction;
+	} else if !_cw.Shot_Mouse {
+		actual_shot_direction = _cw.Shot_Direction;
 	} else if soulshotmouse = 0 {
 		actual_shot_direction = soulshotdirection;
 	}
-	if Shot_Boss_Aim {
+	if _cw.Shot_Boss_Aim {
 		if instance_exists(obj_Boss_Parent) {
 			actual_shot_direction = point_direction(x,y,instance_nearest(x,y,obj_Boss_Parent).x,instance_nearest(x,y,obj_Boss_Parent).y);
 		}
@@ -82,35 +84,35 @@ function scr_Shot_Creation() {
 	}
 	
 	if Shot_Repetition[bi] >= 1 {
-		Shot_Direction = Shot_Repetition_Direction[bi];
+		_cw.Shot_Direction = Shot_Repetition_Direction[bi];
 	}
 
-	repeat(Shot_Count) {
+	repeat(_cw.Shot_Count) {
 	    if Weapon_Vomit = 1 {
-	        dir = (-(Shot_Accuracy / 2) + random(Shot_Accuracy));
+	        dir = (-(_cw.Shot_Accuracy / 2) + random(_cw.Shot_Accuracy));
 	    }
 		actual_shot_direction = 0;
 	    xx = 0;
 	    yy = 0;
 		
-		if Shot_Mouse {
+		if _cw.Shot_Mouse {
 			actual_shot_direction = point_direction(x, y, mouse_x, mouse_y);
-			if Shot_XX != 0 || Shot_YY != 0 {
-				actual_shot_direction = point_direction(x + Shot_XX, y + Shot_YY, mouse_x ,mouse_y);
+			if _cw.Shot_XX != 0 || _cw.Shot_YY != 0 {
+				actual_shot_direction = point_direction(x + _cw.Shot_XX, y + _cw.Shot_YY, mouse_x ,mouse_y);
 			}
-		} else if !Shot_Mouse {
-		    actual_shot_direction = Shot_Direction;
+		} else if !_cw.Shot_Mouse {
+		    actual_shot_direction = _cw.Shot_Direction;
 		} else if soulshotmouse = 0 {
 			actual_shot_direction = soulshotdirection;
 		}
 
-		if Shot_Boss_Aim {
+		if _cw.Shot_Boss_Aim {
 			if instance_exists(obj_Boss_Parent) {
 				actual_shot_direction = point_direction(x,y,instance_nearest(x,y,obj_Boss_Parent).x,instance_nearest(x,y,obj_Boss_Parent).y);
 		 	}
 		}
 		var shotdirectionaddition = dir * ((40 + random(global.soulparanoia)) / 40) / saccuracy;
-		actual_shot_direction += shotdirectionaddition + Shot_Angle_Relative;
+		actual_shot_direction += shotdirectionaddition + _cw.Shot_Angle_Relative;
 		
 		actual_shot_direction += scr_XA03_Weapon_Mod();
 		
@@ -118,7 +120,7 @@ function scr_Shot_Creation() {
 	   // if Shot_Forward = 1 {
 			var forward = 16;
 			//if Shot_Forward_Amount = 0 {
-			forward = Shot_Forward_Amount;	
+			forward = _cw.Shot_Forward_Amount;	
 			//}
 	        xx = lengthdir_x(forward,actual_shot_direction);
 	        yy = lengthdir_y(forward,actual_shot_direction);
@@ -129,16 +131,16 @@ function scr_Shot_Creation() {
 			}
 	    //} 
 		
-	    if Shot_XX != 0 || Shot_YY != 0 {
-	        xx = Shot_XX;
-	        yy = Shot_YY;
+	    if _cw.Shot_XX != 0 || _cw.Shot_YY != 0 {
+	        xx = _cw.Shot_XX;
+	        yy = _cw.Shot_YY;
 	    }
 	    if Weapon_Soul_Maintain = 1 {
 	        Weapon_X_Maintain = xx;
 	        Weapon_Y_Maintain = yy;
 	    }
 	
-		if Shot_Ground = 1 {
+		if _cw.Shot_Ground = 1 {
 			inscheck = 1
 			scr_Check_Shot_Ground();	
 		
@@ -151,25 +153,25 @@ function scr_Shot_Creation() {
 		
 		var mechFac = 1 + scr_Mechanical_Shot_Add();
 		var speedFac = 1;
-		if mechFac > 1 and Shot_XX = 0 and Shot_YY = 0 {
-			Shot_Direction = point_direction(x,y,mouse_x,mouse_y) 
-			if Shot_Direction < 90 || Shot_Direction > 270 {
+		if mechFac > 1 and _cw.Shot_XX = 0 and _cw.Shot_YY = 0 {
+			_cw.Shot_Direction = point_direction(x,y,mouse_x,mouse_y) 
+			if _cw.Shot_Direction < 90 || _cw.Shot_Direction > 270 {
 				xx = 50;	
 				yy = 3;
-				if Shot_Direction > 60 and Shot_Direction < 90 {
-					Shot_Direction = 60;	
+				if _cw.Shot_Direction > 60 and _cw.Shot_Direction < 90 {
+					_cw.Shot_Direction = 60;	
 				}
-				if Shot_Direction < 300 and Shot_Direction > 270 {
-					Shot_Direction = 300;	
+				if _cw.Shot_Direction < 300 and _cw.Shot_Direction > 270 {
+					_cw.Shot_Direction = 300;	
 				}
 			} else {
 				xx = -50;
 				yy = 6;
-				if Shot_Direction > 240 {
-					Shot_Direction = 240;	
+				if _cw.Shot_Direction > 240 {
+					_cw.Shot_Direction = 240;	
 				}
-				if Shot_Direction < 120 {
-					Shot_Direction = 120;	
+				if _cw.Shot_Direction < 120 {
+					_cw.Shot_Direction = 120;	
 				}
 			}
 		}
@@ -184,7 +186,7 @@ function scr_Shot_Creation() {
 		
 		repeat(mechFac) {
 			
-		    with instance_create(shxx,shyy,Shot_Type) {
+		    with instance_create(shxx,shyy,_cw.Shot_Type) {
 		        scr_Default_Shot_Stats();
         
 				shotorigin = obj_Soul_Parent;
@@ -274,15 +276,15 @@ function scr_Shot_Creation() {
 			speedFac += 0.4;
 		}
     
-	    dir += Shot_Spread;
+	    dir += _cw.Shot_Spread;
 	    Shot_Current_Count++;
 	}
 
-	if Shot_Power > 0 {
-		scr_Soul_Stretch("Horizontal", sqrt(Shot_Power) / 20);
+	if _cw.Shot_Power > 0 {
+		scr_Soul_Stretch("Horizontal", sqrt(_cw.Shot_Power) / 20);
 	}
-	if Shot_Weapon_Lean != 0 {
-		speed = Shot_Weapon_Lean;
+	if _cw.Shot_Weapon_Lean != 0 {
+		speed = _cw.Shot_Weapon_Lean;
 		friction = 1;
 		direction = point_direction(x,y,mouse_x,mouse_y);
 	}

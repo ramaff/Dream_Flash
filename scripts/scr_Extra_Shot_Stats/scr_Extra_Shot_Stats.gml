@@ -14,6 +14,7 @@ function scr_Extra_Shot_Stats() {
 		alarm[8] = 10;	
 	}
 
+	/*
 	var shotaddedpow = ((10 + other.spowerfactor + other.sattackfactorbuffamount) / 10) * other.spower / 10 * scr_Class_Stat_Damage_Multiplier();
 
 	image_rotation_speed = other.Shot_Image_Rotation_Speed;
@@ -32,9 +33,11 @@ function scr_Extra_Shot_Stats() {
 	//Print_DF("Shot_Extra_Stats: " + string(other.Shot_Extra_Stats))
 	
 
+
 	if other.Shot_Sprite = spr_Marble_Shot {
 	    shotframe = 1 + irandom(8);
 	}
+	*/
 
 	image_angle = shotangle;
 	image_index = shotframe;
@@ -50,6 +53,7 @@ function scr_Extra_Shot_Stats() {
 		shotpointangle = other.Shot_Point_Angle;
 	}
 
+	/*
 	shot_id = id;
 
 	if other.Shot_ID != -1 {
@@ -148,6 +152,8 @@ function scr_Extra_Shot_Stats() {
 
 	shotorbitaltype = other.Shot_Orbital_Type;
 	shotOrbit = other.Shot_Orbital_Range;
+	
+	*/
 
 	target = noone;
 	otarget = noone;
@@ -163,6 +169,8 @@ function scr_Extra_Shot_Stats() {
 		shotCenterY = other.y;
 		speed = 0;
 	}
+	
+	/*
 
 	shotcontinue = other.Shot_Continue;
 
@@ -267,6 +275,8 @@ function scr_Extra_Shot_Stats() {
 	shotsuck = other.Shot_Suck;
 	
 	shotangularvelocity = other.Shot_Angular_Velocity;
+	
+	*/
 
 	scr_State_Weapon_Mod();
 	
@@ -308,7 +318,7 @@ function scr_Extra_Shot_Stats() {
 	
 	scr_XC06_Setup();
 	
-	shotsizemax = shotsize;
+	//shotsizemax = shotsize;
 	
 
 }

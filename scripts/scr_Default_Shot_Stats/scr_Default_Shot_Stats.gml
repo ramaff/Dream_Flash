@@ -1,5 +1,7 @@
 function scr_Default_Shot_Stats() {
 	//global.instanceidincrementer = 1;
+	
+	/*
 	shot_id = global.instanceidincrementer - 1;
 	shot_boss_id = shot_id;
 	
@@ -76,10 +78,15 @@ function scr_Default_Shot_Stats() {
 	shotinitspeed = shotspeed;
 
 	shotduplicatesprite = spr_Soul_Shot;
+	
+	*/
 
+	/*
 	move_towards_point(mouse_x,mouse_y, shotspeed);
 	direction += (-2.5 + random(5)) / other.saccuracy;
 	alarm[0] = shotlifespan;
+	
+	/*
 	baseDepth = 0;
 
 	shotimaginary = 1;
@@ -230,6 +237,7 @@ function scr_Default_Shot_Stats() {
 	shotsuck = 0;
 	
 	followtarget = noone;
+	*/
 	
 	scr_A07_Setup();
 
