@@ -13,7 +13,7 @@ function scr_Soul_Shot_Expire_Event(){
 	    shothitagain = 1;
 	    with instance_create(x,y,obj_Lesser_Soul_Shot) {
 	        scr_Duplicate_Shot_Stats();
-			shottimer = shotlifespan;
+			shot_stats.Shot_Timer = shot_stats.Shot_Life_Span;
 			image_alpha = 1;
 	    }
 	}
@@ -22,7 +22,7 @@ function scr_Soul_Shot_Expire_Event(){
 	    shotrecycle--;
 	
 		dir = 0;
-		shotburstpower = shotpower;
+		shotburstpower = shot_stats.Shot_Power;
 		shotduplicatesprite = other.shotduplicatesprite;
 
 	
@@ -31,12 +31,12 @@ function scr_Soul_Shot_Expire_Event(){
 		if shotbeam = 0 {
 		    with instance_create(obj_Soul_Parent.x,obj_Soul_Parent.y, object_index) {
 		        scr_Duplicate_Shot_Stats();
-				shottimer = shotlifespan;
+				shot_stats.Shot_Timer = shot_stats.Shot_Life_Span;
 				image_alpha = 1;
 				//shotformshow = 0;
 				shotSizeRelation = 1;
-				shottimer = shotlifespan;
-				shotsizemax = shotsize;
+				shot_stats.Shot_Timer = shot_stats.Shot_Life_Span;
+				shot_stats.Shot_Size_Max = shot_stats.Shot_Size;
 				sprite_index = other.sprite_index;
 				direction = point_direction(obj_Soul_Parent.x,obj_Soul_Parent.y,mouse_x, mouse_y) - (shotaccuracy / 2) + random(shotaccuracy);
 		    } 
@@ -51,12 +51,12 @@ function scr_Soul_Shot_Expire_Event(){
 			var beamtype = shotbeam
 			var beamtotalsegs = 15;
 			var beamspriteindex = 0;
-			var beamsize = shotsize;
+			var beamsize = shot_stats.Shot_Size;
 			var dirChange = 0;
 			var boss_hits = {};
 			var homespeed = shothomingspeed * 3;
 			var hit_again = -1;
-			var splitsize = 128 * shotsize;
+			var splitsize = 128 * shot_stats.Shot_Size;
 		
 			scr_Beam_Create(x, y, beamseg, beamdir, curvedir, beamstop, beamxx, beamyy, beamtype, beamtotalsegs, beamspriteindex, beamsize, dirChange, homespeed, splitsize)	
 		}
@@ -64,19 +64,19 @@ function scr_Soul_Shot_Expire_Event(){
 		shotwander--;
 		direction = random(360);
 		var fac = (1 + random(1))
-		shotspeed = shotspeed * fac;
+		shot_stats.Shot_Speed = shot_stats.Shot_Speed * fac;
 		speed = speed * fac;
 		dir = random(360);
-		shotburstpower = shotpower;
+		shotburstpower = shot_stats.Shot_Power;
 		
 		with instance_create(x,y,object_index) {
 	        scr_Duplicate_Shot_Stats();
-			shottimer = shotlifespan;
+			shot_stats.Shot_Timer = shot_stats.Shot_Life_Span;
 			image_alpha = 1;
 			//shotformshow = 0;
 			shotSizeRelation = 1;
-			shottimer = shotlifespan;
-			shotsizemax = shotsize;
+			shot_stats.Shot_Timer = shot_stats.Shot_Life_Span;
+			shot_stats.Shot_Size_Max = shot_stats.Shot_Size;
 			sprite_index = other.sprite_index;
 	    } 
 	}

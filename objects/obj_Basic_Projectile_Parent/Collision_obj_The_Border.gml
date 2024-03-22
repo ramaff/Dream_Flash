@@ -5,7 +5,7 @@
             dir = 90
             repeat(shotburstamount) {
                 with instance_create(x,y,obj_Lesser_Soul_Shot) {
-					shotlifespan = other.shotlifespan / 2;
+					shot_stats.Shot_Life_Span = other.shot_stats.Shot_Life_Span / 2;
                     scr_Duplicate_Shot_Stats();
                 }
                 dir += 360 / shotburstamount;
@@ -24,8 +24,8 @@
 	            with (obj_Boss_Parent) {
 	                if distance_to_object(other) < other.shotimpactsize {
 	                    bosshealth -= other.shotimpactpower - bossdefense;
-	                    //bosspoison += other.shotpoison * (other.shotimpactpower / other.shotpower);
-	                    //bosspoisondown += other.shotpoisondown * (other.shotimpactpower / other.shotpower);
+	                    //bosspoison += other.shotpoison * (other.shotimpactpower / other.shot_stats.Shot_Power);
+	                    //bosspoisondown += other.shotpoisondown * (other.shotimpactpower / other.shot_stats.Shot_Power);
 	                }
             
 	            }
@@ -40,7 +40,7 @@
 		}
 
         
-if shotphasing = 0 and shotbounce = 0 and shotlooping = 0 and shotchain = 0 and shottimer > 1 {
+if shotphasing = 0 and shotbounce = 0 and shotlooping = 0 and shotchain = 0 and shot_stats.Shot_Timer > 1 {
     instance_destroy();
 }
 
@@ -65,7 +65,7 @@ if shotbounce >= 1 and shotairtarget = 0 and shotmelee = 0 {
 	    direction = -direction;
     }
 	
-	if shotspeed != 0 and speed != 0 {
+	if shot_stats.Shot_Speed != 0 and speed != 0 {
 		//shot_boss_id += instance_id_get( instance_count ) + global.instanceidincrementer;
 		shot_boss_id = shot_boss_id + global.instanceidincrementer;
 	

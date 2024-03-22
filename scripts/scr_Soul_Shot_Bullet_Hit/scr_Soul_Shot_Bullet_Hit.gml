@@ -4,11 +4,11 @@ function scr_Soul_Shot_Bullet_Hit(){
 
 	if shotdamage {
 		if shotshieldtype = 1 || (shotcontinue = 1 and other.soulshotblock = 1) {
-		    if shotpower >= (other.bulletpower / 2) {
-		        shotpower -= (other.bulletpower / 2);
+		    if shot_stats.Shot_Power >= (other.bulletpower / 2) {
+		        shot_stats.Shot_Power -= (other.bulletpower / 2);
 		        instance_destroy(other);
 		    } else {
-		        other.bulletpower -= (shotpower * 2);
+		        other.bulletpower -= (shot_stats.Shot_Power * 2);
 		        instance_destroy();
 		    }
 			if shotessencedrain > 0 {
@@ -61,7 +61,7 @@ function scr_Soul_Shot_Bullet_Hit(){
 			}
 	
 			if other.soulshotblock = 1 {
-				other.bulletpower -= (shotpower / 10);
+				other.bulletpower -= (shot_stats.Shot_Power / 10);
 				if other.bulletpower <= 0 {
 				instance_destroy(other);
 				}

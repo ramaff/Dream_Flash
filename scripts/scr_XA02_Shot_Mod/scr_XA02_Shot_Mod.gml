@@ -5,15 +5,15 @@
 
 function scr_XA02_Shot_Mod(){
 	if scr_Chance(18 / global.XA[2]) {
-		shotpower += shotpower;
-		shotpowermax += shotpowermax;
+		shot_stats.Shot_Power += shot_stats.Shot_Power;
+		shot_stats.Shot_Powermax += shot_stats.Shot_Powermax;
 		shotPowerLevel += shotPowerLevel;
-		shotspeed += shotspeed * 0.33;
-		speed = shotspeed;
-		shotsize += 0.2;
-		shotsizemax += 0.2;
-		image_xscale = shotsize;
-		image_yscale = shotsize;
+		shot_stats.Shot_Speed += shot_stats.Shot_Speed * 0.33;
+		speed = shot_stats.Shot_Speed;
+		shot_stats.Shot_Size += 0.2;
+		shot_stats.Shot_Size_Max += 0.2;
+		image_xscale = shot_stats.Shot_Size;
+		image_yscale = shot_stats.Shot_Size;
 		
 		//if shottrail = 0 {
 			shottrail = 2;

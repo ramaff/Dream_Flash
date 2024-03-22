@@ -71,7 +71,7 @@ function scr_Soul_Shot_Boss_Hit() {
 				}
 			}
 			
-			//Print_DF("shot power: " + string(shotpower))
+			//Print_DF("shot power: " + string(shot_stats.Shot_Power))
 		
 	        scr_Boss_Damage_Calc();
 		
@@ -83,17 +83,17 @@ function scr_Soul_Shot_Boss_Hit() {
 			if shotDamage > 0 {
 				//scr_Boss_Hit_Part_Splash_Juice();
 				
-				//scr_Particle_Burst(shottrailhittype, shottrailhitsprite, shottrailcolor1, shottrailcolor2, shottrailhitcount, shottrailhitspeed, 0, 360 / shottrailhitcount, shottrailarea, shotsize, shottrailhitlife, true)
-				//scr_Particle_Burst(shottrailhittype, shottrailhitsprite, shottrailcolor1, shottrailcolor2, shottrailhitcount / 2, shottrailhitspeed * 2, 0, 720 / shottrailhitcount, shottrailarea, shotsize, shottrailhitlife, true)
+				//scr_Particle_Burst(shottrailhittype, shottrailhitsprite, shottrailcolor1, shottrailcolor2, shottrailhitcount, shottrailhitspeed, 0, 360 / shottrailhitcount, shottrailarea, shot_stats.Shot_Size, shottrailhitlife, true)
+				//scr_Particle_Burst(shottrailhittype, shottrailhitsprite, shottrailcolor1, shottrailcolor2, shottrailhitcount / 2, shottrailhitspeed * 2, 0, 720 / shottrailhitcount, shottrailarea, shot_stats.Shot_Size, shottrailhitlife, true)
 				
 				repeat(shottrailhitcount) {
 					var ddir = direction - 90 + random(180);
-					scr_Particle_Burst(shottrailhittype, shottrailhitsprite, shottrailcolor1, shottrailcolor2, 1, 12 + random(8), ddir, 0, 0, shotsize + random(0.2), 15 + random(10))
-					//scr_Particle_Burst(obj_Friction_Part, spr_Soul_Bit, c_white, c_white, 1, 12 + random(8), ddir, 0, 0, shotsize + random(0.2), 15 + random(10))
+					scr_Particle_Burst(shottrailhittype, shottrailhitsprite, shottrailcolor1, shottrailcolor2, 1, 12 + random(8), ddir, 0, 0, shot_stats.Shot_Size + random(0.2), 15 + random(10))
+					//scr_Particle_Burst(obj_Friction_Part, spr_Soul_Bit, c_white, c_white, 1, 12 + random(8), ddir, 0, 0, shot_stats.Shot_Size + random(0.2), 15 + random(10))
 				}
 				
 				if shotessencedrain > 0 {
-					obj_Soul_Parent.senergy += shotpower * shotessencedrain;
+					obj_Soul_Parent.senergy += shot_stats.Shot_Power * shotessencedrain;
 				}
 			}
 		
@@ -153,7 +153,7 @@ function scr_Soul_Shot_Boss_Hit() {
 				var burstIndex = array_length(shotburststats) - 1;
 				if instance_exists(obj_Boss_Parent) and burstIndex >= 0 {
 					dir = -shotburststats[burstIndex].Spread / 2;
-					shotlifespan = shotlifespan * 0.6;
+					shot_stats.Shot_Life_Span = shot_stats.Shot_Life_Span * 0.6;
 					image = 1
 					var vshotburststats = shotburststats[burstIndex]
 					repeat(shotburststats[burstIndex].Amount) {
@@ -178,12 +178,12 @@ function scr_Soul_Shot_Boss_Hit() {
 			} else if shotbursttype >= 1 {
 	            dir = 90
 	            repeat(shotburstamount) {
-					shotlifespan = shotlifespan * 0.6;
+					shot_stats.Shot_Life_Span = shot_stats.Shot_Life_Span * 0.6;
 	                with instance_create(x,y,obj_Lesser_Soul_Shot) {
-						//shotlifespan = other.shotlifespan / 2;
+						//shot_stats.Shot_Life_Span = other.shot_stats.Shot_Life_Span / 2;
 	                    scr_Duplicate_Shot_Stats();
-	                    //shotlifespan = shotlifespan / 2;
-	                    //alarm[0] = shotlifespan;
+	                    //shot_stats.Shot_Life_Span = shot_stats.Shot_Life_Span / 2;
+	                    //alarm[0] = shot_stats.Shot_Life_Span;
 	                }
 	                dir += 360 / shotburstamount;
 	            }
@@ -215,8 +215,8 @@ function scr_Soul_Shot_Boss_Hit() {
 		            instance_destroy();
 		        }
 			} else {
-				if shotpower >= (other.bosshealth + shotpower) {
-				    shotpower -= (other.bosshealth + shotpower);
+				if shot_stats.Shot_Power >= (other.bosshealth + shot_stats.Shot_Power) {
+				    shot_stats.Shot_Power -= (other.bosshealth + shot_stats.Shot_Power);
 				} else {
 				    instance_destroy();
 				}

@@ -231,7 +231,7 @@ function scr_Load_Item_Stats() {
 	if global.A[06] > 0 {
 	    global.soulshotknockback += 5 * global.A[06];
 	    obj_Soul_Parent.sshotknockback += 5 * global.A[06];
-	    global.soulshotspeed += 2 * global.A[06];
+	    global.soulshot_stats.Shot_Speed += 2 * global.A[06];
 	    obj_Soul_Parent.sshotspeed += 2 * global.A[06];
 	}
 	if global.A[07] > 0 {
@@ -240,7 +240,7 @@ function scr_Load_Item_Stats() {
 	    obj_Soul_Parent.spowerfactor += 1.5 * global.A[07];
 	    global.soulenergyconservationfactor -= 0.1 * global.A[07];
 	    obj_Soul_Parent.senergyconservationfactor -= 0.1 * global.A[07];
-	    global.soulshotspeed += 1 * global.A[07];
+	    global.soulshot_stats.Shot_Speed += 1 * global.A[07];
 	    obj_Soul_Parent.sshotspeed += 1 * global.A[07];
 		*/
 	}
@@ -249,11 +249,11 @@ function scr_Load_Item_Stats() {
 	    obj_Soul_Parent.spowerfactor += 1.5 * global.A[08];
 	    global.soulshotlifefactor -= 2 * global.A[8];
 	    obj_Soul_Parent.sshotlifefactor -= 2 * global.A[8];
-	    global.soulshotspeed += 1 * global.A[08];
+	    global.soulshot_stats.Shot_Speed += 1 * global.A[08];
 	    obj_Soul_Parent.sshotspeed += 1 * global.A[08];
 	}
 	if global.A[09] > 0 {
-	    global.soulshotsizefactor += 0.25 * global.A[09];
+	    global.soulshot_stats.Shot_Sizefactor += 0.25 * global.A[09];
 	    obj_Soul_Parent.sshotsizefactor += 0.25 * global.A[09];
 	    global.soulpowerfactor += 0.5 * global.A[09];
 	    obj_Soul_Parent.spowerfactor += 0.5 * global.A[09];
@@ -378,7 +378,7 @@ function scr_Load_Item_Stats() {
 	    obj_Soul_Parent.sdelayconservationfactor += 0.15 * global.D[2];
 	}
 	if global.D[03] > 0 {
-	    global.soulshotspeed += 4 * global.D[3];
+	    global.soulshot_stats.Shot_Speed += 4 * global.D[3];
 	    obj_Soul_Parent.sshotspeed += 4 * global.D[3];
 	}
 	if global.D[04] > 0 {
@@ -647,7 +647,7 @@ function scr_Load_Item_Stats() {
 	if global.OB[4] > 0 {
 		global.soulshotlifefactor += 2 * global.OB[4];
 	    obj_Soul_Parent.sshotlifefactor += 2 * global.OB[4];
-		global.soulshotspeed -= 1.5 * global.OB[4];
+		global.soulshot_stats.Shot_Speed -= 1.5 * global.OB[4];
 	    obj_Soul_Parent.sshotspeed -= 1.5 * global.OB[4];
 	}
 	
@@ -676,7 +676,7 @@ function scr_Load_Item_Stats() {
 	    obj_Soul_Parent.spowerfactor -= 1.5 * global.U[6];
 		global.soulenergyconservationfactor += 0.15 * global.U[6];
 	    obj_Soul_Parent.senergyconservationfactor += 0.15 * global.U[6];	
-		global.soulshotsizefactor -= 0.1 * global.U[6];
+		global.soulshot_stats.Shot_Sizefactor -= 0.1 * global.U[6];
 	    obj_Soul_Parent.sshotsizefactor -= 0.1 * global.U[6];
 	}
 	

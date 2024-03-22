@@ -13,8 +13,8 @@ if !hit_again {
 	            sprite_index = spr_Poison_Essence_Shot;
 	            image_angle = direction;
 	        }
-			if shotsize < 1 {
-				shotsize += 0.05;
+			if shot_stats.Shot_Size < 1 {
+				shot_stats.Shot_Size += 0.05;
 				image_xscale += 0.05;
 				image_yscale += 0.05;
 			}

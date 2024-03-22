@@ -48,29 +48,29 @@ if shotlobbing >= 1 {
 	scr_Shot_Lobbing();
 }
 
-shottimer--;
+shot_stats.Shot_Timer--;
 
-/*if alarm[0] <= shotlifespan / 2 and shotwander > 0 {
+/*if alarm[0] <= shot_stats.Shot_Life_Span / 2 and shotwander > 0 {
 	shotwander--;
 	direction = random(360);
 	var fac = (1 + random(1))
-	shotspeed = shotspeed * fac;
+	shot_stats.Shot_Speed = shot_stats.Shot_Speed * fac;
 	speed = speed * fac;
 } */
 
 
 if shotshrink = 1 {
-	shotsize -= shotsizemax / shotlifespan;
-	image_xscale = shotsize;
-	image_yscale = shotsize;
+	shot_stats.Shot_Size -= shot_stats.Shot_Size_Max / shot_stats.Shot_Life_Span;
+	image_xscale = shot_stats.Shot_Size;
+	image_yscale = shot_stats.Shot_Size;
 } else {
-	if (shottimer <= (shotlifespan / 10)) and shotcomeback = 0 and shotlobbing = 0 {
-	  shotSizeRelation = ((shottimer * 10) / shotlifespan);
+	if (shot_stats.Shot_Timer <= (shot_stats.Shot_Life_Span / 10)) and shotcomeback = 0 and shotlobbing = 0 {
+	  shotSizeRelation = ((shot_stats.Shot_Timer * 10) / shot_stats.Shot_Life_Span);
 	}
 }
 
 if shotfade = 1 {
-	image_alpha -= 1 / shotlifespan;	
+	image_alpha -= 1 / shot_stats.Shot_Life_Span;	
 }
 
 image_angle += image_rotation_speed;
@@ -78,14 +78,14 @@ image_angle += image_rotation_speed;
 //direction += shotwavedirection;
 shotwavedirection -= shotwaveacceleration;
 
-shotspeed -= shotfriction;
+shot_stats.Shot_Speed -= shotfriction;
 speed -= shotfriction;
 
-shotspeed += shotacceleration;
+shot_stats.Shot_Speed += shotacceleration;
 speed += shotacceleration;
 
-if shotspeed < shotminspeed {
-    shotspeed = shotminspeed;
+if shot_stats.Shot_Speed < shotminspeed {
+    shot_stats.Shot_Speed = shotminspeed;
     speed = shotminspeed;
 }
 
@@ -115,7 +115,7 @@ if shotsoulmaintain = 1 {
 if shot_stats.Shot_Excess_Essence > 0 {
 	if scr_Chance(5) {
 		var color = make_color_rgb(0, 170, 255)
-		scr_Particle_Burst(obj_Friction_Part, spr_Soul_Big_Bit, color, color, 1, 4 + random(4), random(360), 0, 0, shotsize, 10 + random(5))
+		scr_Particle_Burst(obj_Friction_Part, spr_Soul_Big_Bit, color, color, 1, 4 + random(4), random(360), 0, 0, shot_stats.Shot_Size, 10 + random(5))
 	}
 	var fac = speed / 2;
 	x += (random(1) - 0.5) * fac;
@@ -123,12 +123,12 @@ if shot_stats.Shot_Excess_Essence > 0 {
 }
 
 if shotgrow > 0 {
-    image_xscale += (shotsizemax - shotgrowsize) / shotgrowtime;
-    image_yscale += (shotsizemax - shotgrowsize) / shotgrowtime;
+    image_xscale += (shot_stats.Shot_Size_Max - shotgrowsize) / shotgrowtime;
+    image_yscale += (shot_stats.Shot_Size_Max - shotgrowsize) / shotgrowtime;
 }
-if image_xscale > shotsizemax {
-    image_xscale = shotsizemax;
-    image_yscale = shotsizemax;
+if image_xscale > shot_stats.Shot_Size_Max {
+    image_xscale = shot_stats.Shot_Size_Max;
+    image_yscale = shot_stats.Shot_Size_Max;
 }
 
 if !instance_exists(target) {
@@ -145,7 +145,7 @@ if shotairburststats != false {
 		var sprd = shotairburststats[burstIndex].Spread
 		if distance_to_object(near_boss) <= shotairburststats[burstIndex].Range {
 			dir = -sprd / 2;
-			shotlifespan = shotlifespan * 0.6;
+			shot_stats.Shot_Life_Span = shot_stats.Shot_Life_Span * 0.6;
 		    repeat(shotairburststats[burstIndex].Amount) {
 				
 				if sprd < 0 {
@@ -183,13 +183,13 @@ if shotairburststats != false {
 		if instance_exists(obj_Boss_Parent) {
 			if distance_to_object(obj_Boss_Parent) <= shotburstrange {
 				dir = -shotburstspread / 2;
-				shotlifespan = shotlifespan * 0.6;
+				shot_stats.Shot_Life_Span = shot_stats.Shot_Life_Span * 0.6;
 		        repeat(shotburstamount) {
 		            with instance_create(x,y,obj_Lesser_Soul_Shot) {
-						//shotlifespan = other.shotlifespan / 2;
+						//shot_stats.Shot_Life_Span = other.shot_stats.Shot_Life_Span / 2;
 		                scr_Duplicate_Shot_Stats();
-		                //shotlifespan = shotlifespan / 2;
-		                //alarm[0] = shotlifespan;
+		                //shot_stats.Shot_Life_Span = shot_stats.Shot_Life_Span / 2;
+		                //alarm[0] = shot_stats.Shot_Life_Span;
 		            }
 		            dir += shotburstspread / shotburstamount;
 		        }
@@ -210,16 +210,16 @@ if shotairburststats != false {
 		        repeat(shotburstamount) {
 					dir = -shotburstspread / 2 + random(shotburstspread);
 		            with instance_create(x,y,obj_Lesser_Soul_Shot) {
-						shotlifespan = other.shotlifespan / 2;
+						shot_stats.Shot_Life_Span = other.shot_stats.Shot_Life_Span / 2;
 		                scr_Duplicate_Shot_Stats();
-						shotsize = other.shotsize - 0.25;
-						image_xscale = shotsize;
-						image_yscale = shotsize;
-						shotspeed = other.shotburstspeed / 2 + random(other.shotburstspeed / 2);
+						shot_stats.Shot_Size = other.shot_stats.Shot_Size - 0.25;
+						image_xscale = shot_stats.Shot_Size;
+						image_yscale = shot_stats.Shot_Size;
+						shot_stats.Shot_Speed = other.shotburstspeed / 2 + random(other.shotburstspeed / 2);
 				
-						speed = shotspeed;
-		                //shotlifespan = shotlifespan / 2;
-		                //alarm[0] = shotlifespan;
+						speed = shot_stats.Shot_Speed;
+		                //shot_stats.Shot_Life_Span = shot_stats.Shot_Life_Span / 2;
+		                //alarm[0] = shot_stats.Shot_Life_Span;
 		            }
 		        }
 				shotbursttype = 0;
@@ -235,7 +235,7 @@ if shotorbitaltype > 0 {
 	    shotCenterX = otarget.x;
 	    shotCenterY = otarget.y;
     
-	    shotAngle += shotspeed;
+	    shotAngle += shot_stats.Shot_Speed;
     
 	    image_angle = shotAngle + 90;
     
@@ -251,13 +251,13 @@ if shotorbitaltype > 0 {
 	    image_angle = shotAngle + 90;
 	} else {
 		direction = shotAngle + 90;
-		speed = shotspeed
+		speed = shot_stats.Shot_Speed
 	}
     
 }
 
 if shotshieldtype = 1 || shotcontinue = 1 { 
-    var size = shotsize * (shotpower / shotpowermax);
+    var size = shot_stats.Shot_Size * (shot_stats.Shot_Power / shot_stats.Shot_Powermax);
     image_xscale = size;
     image_yscale = size;
 }
@@ -273,14 +273,14 @@ if shotaura = 1 {
 	}
 }
 
-if shothomingtype = 1 {
+if shot_stats.Shot_Homing_Type = 1 {
     target = noone
 
 	if instance_exists(obj_Boss_Parent) {
 	    with(obj_Boss_Parent) {
 	        var dis = distance_to_object(other);
 		    var hit_again = variable_struct_exists(projectile_hits, id)
-			if !hit_again and dis < other.shothomingrange {
+			if !hit_again and dis < other.shot_stats.Shot_Homing_Range {
 				other.target = id;
 			}
 	    }
@@ -289,32 +289,32 @@ if shothomingtype = 1 {
     
         im = direction;
 
-        speed = min(speed + 0.5,shotspeed);
+        speed = min(speed + 0.5,shot_stats.Shot_Speed);
         
         var pointDir = point_direction(x,y,target.x,target.y);
         im += sin(degtorad(pointDir - im)) * shothomingspeed;
         direction = im;
     
-        //move_towards_point(target.x,target.y,shotspeed);
+        //move_towards_point(target.x,target.y,shot_stats.Shot_Speed);
     }
 
 }
 
-if shothomingtype = 2 {
+if shot_stats.Shot_Homing_Type = 2 {
     target = noone
 	if instance_exists(obj_Boss_Parent) {
 	    with obj_Boss_Parent {
 	        var dis = distance_to_object(other);
 		    var hit_again = variable_struct_exists(projectile_hits, id)
-			if !hit_again and dis < other.shothomingrange {
+			if !hit_again and dis < other.shot_stats.Shot_Homing_Range {
 				other.target = id;
 			}
 	    }
 	}
     if target != noone {
 		var dist = point_distance(target.x, target.y, x, y);
-		if dist > shotspeed {
-			move_towards_point(target.x,target.y,shotspeed);
+		if dist > shot_stats.Shot_Speed {
+			move_towards_point(target.x,target.y,shot_stats.Shot_Speed);
 		} else {
 			move_towards_point(target.x,target.y,dist);
 		}
@@ -362,11 +362,11 @@ if shotsnakemove > 0 {
 }
 
 if instance_exists(followtarget) {
-	var setdist = shotspeed * 5;
+	var setdist = shot_stats.Shot_Speed * 5;
 	var dis = point_distance(x, y, followtarget.x, followtarget.y)
 	var follow_dir = point_direction(x, y, followtarget.x, followtarget.y)
 	if dis > setdist {
-		speed = min(dis - setdist, shotspeed * 2);
+		speed = min(dis - setdist, shot_stats.Shot_Speed * 2);
 		direction = follow_dir;
 		//x = lerp(x, followtarget.x, 0.05);
 		//y = lerp(y, followtarget.y, 0.05);

@@ -24,7 +24,7 @@ function scr_Create_Beam_Tip(shxx, shyy, beamxx, beamyy, beamsize, beamdir){
 			depth = -55;
 		}
 		size = beamsize;
-		alarm[0] = other.shotlifespan;
+		alarm[0] = other.shot_stats.Shot_Life_Span;
 		alarm[0] = clamp(alarm[0], 1, 30)
 	}	
 

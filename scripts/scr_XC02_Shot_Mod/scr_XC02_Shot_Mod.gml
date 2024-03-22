@@ -9,22 +9,22 @@ function scr_XC02_Shot_Mod(){
 		shotsuck += 0.5 + 1 * global.XC[2];
 		shotsucktype = 2;
 		
-		shotspeed -= shotspeed * 0.4;
-		speed = shotspeed;
-		shotsize += 0.2;
-		shotsizemax += 0.2;
-		image_xscale = shotsize;
-		image_yscale = shotsize;
+		shot_stats.Shot_Speed -= shot_stats.Shot_Speed * 0.4;
+		speed = shot_stats.Shot_Speed;
+		shot_stats.Shot_Size += 0.2;
+		shot_stats.Shot_Size_Max += 0.2;
+		image_xscale = shot_stats.Shot_Size;
+		image_yscale = shot_stats.Shot_Size;
 		
-		shotlifespan += shotlifespan * 1;
-		alarm[0] = shotlifespan;
+		shot_stats.Shot_Life_Span += shot_stats.Shot_Life_Span * 1;
+		alarm[0] = shot_stats.Shot_Life_Span;
 		
-		shothomingtype = 1;
-		shothomingrange = max(150, shothomingrange + 150);
+		shot_stats.Shot_Homing_Type = 1;
+		shot_stats.Shot_Homing_Range = max(150, shot_stats.Shot_Homing_Range + 150);
 		shothomingspeed = max(3, shothomingspeed + 2);
 		
 		/* shotaura = 1;
-		shotaurapower = shotpower;
+		shotaurapower = shot_stats.Shot_Power;
 		shotaurarange = 100; */
 		
 		shotpierce += 1;

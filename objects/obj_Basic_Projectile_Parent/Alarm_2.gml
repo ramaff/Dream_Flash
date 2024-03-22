@@ -21,7 +21,7 @@ if global.gameParticles > 0 {
 		
 			image_blend = merge_colour(other.shottrailcolor1, other.shottrailcolor2, random(1));
 
-			size = other.shotsize;
+			size = other.shot_stats.Shot_Size;
 			image_xscale = size;
 			image_yscale = size;
 		
@@ -53,7 +53,7 @@ if global.gameParticles > 0 {
 		
 			image_blend = merge_colour(other.shottrailcolor1, other.shottrailcolor2, random(1));
 
-			size = other.shotsize;
+			size = other.shot_stats.Shot_Size;
 			image_xscale = size;
 			image_yscale = size;
 		

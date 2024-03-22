@@ -26,14 +26,14 @@ wobble = scr_Wave(-wobble, wobble, 2, 0);
 
 if shot_stats.Shot_Lobbing = true {
 	
-	var shadow_size = shotsize * 1.5 * (1.2 - (height / 200));
+	var shadow_size = shot_stats.Shot_Size * 1.5 * (1.2 - (height / 200));
 	shot_stats.Shot_Height -= fall_speed + wobble
 	shot_stats.Shot_Fall_Speed += shot_stats.Shot_Gravity
 	
 	y += fall_speed;
 	
 	/*if scr_Chance(15) {
-		show_debug_message("shadow_size: " + string(shadow_size) + ", " + sprite_get_name(sprite_index) + ", height: " + string(height) + ", shotsize" + string(shotsize));
+		show_debug_message("shadow_size: " + string(shadow_size) + ", " + sprite_get_name(sprite_index) + ", height: " + string(height) + ", shot_stats.Shot_Size" + string(shot_stats.Shot_Size));
 		show_debug_message("xsize: " + string(image_xscale))
 	} */
 	
@@ -43,11 +43,11 @@ if shot_stats.Shot_Lobbing = true {
 	//var shadow_transparency = 0.5;
 	draw_sprite_ext(spr_Bullet_Shadow,0,x,y+height,shadow_size,shadow_size,0,c_white,0.5);
 } else if shotlobbing >= 1 {
-	draw_sprite_ext(spr_Bullet_Shadow,0,x,y+shotbounceY,shotsize * 1.5 * (1.2 - (shotbounceY / 200)),shotsize * 1.5 * (1.2 - (shotbounceY / 200)),0,c_white,image_alpha * (0.5 - (shotbounceY/150)));
+	draw_sprite_ext(spr_Bullet_Shadow,0,x,y+shotbounceY,shot_stats.Shot_Size * 1.5 * (1.2 - (shotbounceY / 200)),shot_stats.Shot_Size * 1.5 * (1.2 - (shotbounceY / 200)),0,c_white,image_alpha * (0.5 - (shotbounceY/150)));
 }
 
 if global.A[14] > 0 and shotorigin = obj_Soul_Parent {
-	var _size = 10 * sqrt(sqrt(sprite_get_width(sprite_index) * sprite_get_height(sprite_index))) * shotsize
+	var _size = 10 * sqrt(sqrt(sprite_get_width(sprite_index) * sprite_get_height(sprite_index))) * shot_stats.Shot_Size
 	_size = _size / 80
     draw_sprite_ext(spr_Aura_Strike_Aura,0,x,y,_size, _size,0,c_white,ceil(image_alpha));
 }
@@ -58,7 +58,7 @@ if shotaura = 1 and image_alpha > 0 {
 
 var fdist = 50;
 var tdist = 50 / shotinitspeed;
-var etime = shotlifespan - shottimer;
+var etime = shot_stats.Shot_Life_Span - shot_stats.Shot_Timer;
 var edist = shotinitspeed * etime;
 
 var sSize = 1 - ((fdist - edist) / fdist);
@@ -84,13 +84,13 @@ if shot_stats.Shot_Init_Grow = 0 {
 	sSize = 1;
 } 
 
-if ((shotlifespan - shottimer) <= (tdist)) and (shotlifespan > (tdist)) and (shotformshow = 1) {
+if ((shot_stats.Shot_Life_Span - shot_stats.Shot_Timer) <= (tdist)) and (shot_stats.Shot_Life_Span > (tdist)) and (shotformshow = 1) {
     draw_sprite_ext(sprite_index,image_index,x,y,image_xscale * sSize,image_yscale * sSize,angle,c_white,image_alpha/* * sSize*/);
 } else {
     draw_sprite_ext(sprite_index,image_index,x,y,image_xscale * shotSizeRelation,image_yscale * shotSizeRelation,angle,c_white,image_alpha);
 }
 
-if shotmiracle > 0 {
+if shot_stats.Shot_Miracle > 0 {
 	draw_sprite_ext(spr_Heart_Halo,image_index,x,y - (24 * image_yscale),image_xscale * shotSizeRelation,image_yscale * shotSizeRelation,image_angle,c_white,image_alpha);	
 	draw_sprite_ext(spr_Miracle_Aura,0,x,y,0.8,0.8,0,c_white,1);
 }

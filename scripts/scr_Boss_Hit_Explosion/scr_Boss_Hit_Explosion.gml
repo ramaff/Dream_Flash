@@ -4,7 +4,7 @@ function scr_Boss_Hit_Explosion(){
 	
 	var excount = floor(shotimpactsize / 10)
 	
-	scr_Particle_Burst(obj_Explosion_Particle, shotexplosionsprite, shottrailcolor1, shottrailcolor2, excount, shottrailhitspeed * 1.5, 0, 360 / excount, shottrailarea, shotsize * 1.5, shottrailhitlife, true)
+	scr_Particle_Burst(obj_Explosion_Particle, shotexplosionsprite, shottrailcolor1, shottrailcolor2, excount, shottrailhitspeed * 1.5, 0, 360 / excount, shottrailarea, shot_stats.Shot_Size * 1.5, shottrailhitlife, true)
 	
 	//part_type_sprite(ptype,spr_Soul_Bit,0,0,0);
 	//part_type_color_mix(ptype, make_color_rgb(150,255,150),make_color_rgb(50,255,50));

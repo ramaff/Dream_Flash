@@ -1,8 +1,8 @@
 function scr_Boss_Damage_Calc() {
 	bossweak = 0;
 	
-	var speeddmg = shotspeedpoweradd * speed;
-	var exist = (shotlifespan - shottimer);
+	var speeddmg = shot_stats.Shot_Speedpoweradd * speed;
+	var exist = (shot_stats.Shot_Life_Span - shot_stats.Shot_Timer);
 	if exist < 30 and global.D[11] > 0 {
 		speeddmg += 1 * ceil((30 - exist) / 7.5 * global.D[11]);
 	}
@@ -15,7 +15,7 @@ function scr_Boss_Damage_Calc() {
 	    other.bossReaction++;
 	}
 
-	shotDamageMult = shotpower / shotPowerLevel;
+	shotDamageMult = shot_stats.Shot_Power / shotPowerLevel;
 	crit = shotcritchance + irandom(99);
 
 	if crit >= 100 {

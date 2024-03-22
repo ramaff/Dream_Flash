@@ -21,7 +21,7 @@ function old_Beam_Create(shxx,shyy){
 		dir = beamdir;
 		image_angle = beamdir;
 		speed = 0;
-		shotspeed = 0;
+		shot_stats.Shot_Speed = 0;
 		
 		var beamtype = other.Shot_Beam;
 		var splitsize = 40;
@@ -33,7 +33,7 @@ function old_Beam_Create(shxx,shyy){
 			
 			beamdir += beamseg * curvedir;
 			
-			if shothomingtype > 0 {
+			if shot_stats.Shot_Homing_Type > 0 {
 				var target = noone
 				if instance_exists(obj_Boss_Parent) {
 				    with(obj_Boss_Parent) {
@@ -100,9 +100,9 @@ function old_Beam_Create(shxx,shyy){
 						} else {
 							sprite_index = spr_Laser_Tip;
 						}
-						shotsize = other.shotsize;
-						image_xscale = other.shotsize;
-						image_yscale = other.shotsize;
+						shot_stats.Shot_Size = other.shot_stats.Shot_Size;
+						image_xscale = other.shot_stats.Shot_Size;
+						image_yscale = other.shot_stats.Shot_Size;
 						depth = other.depth - 2;
 					}
 				
@@ -110,8 +110,8 @@ function old_Beam_Create(shxx,shyy){
 			} else if other.Shot_Beam != 3 {
 				with instance_create(shxx + beamxx,shyy + beamyy,obj_Laser_Trail) {
 					
-					image_xscale = other.shotsize;
-					image_yscale = other.shotsize;
+					image_xscale = other.shot_stats.Shot_Size;
+					image_yscale = other.shot_stats.Shot_Size;
 					
 					//// All Laser beam segments must have a sprite in the format of beam_Start, and beam_Tip
 					
@@ -129,7 +129,7 @@ function old_Beam_Create(shxx,shyy){
 						sprite_index = spr_Laser_Tip;
 						depth = -55;
 					}
-					size = other.shotsize;
+					size = other.shot_stats.Shot_Size;
 					alarm[0] = 10;
 				}	
 			}

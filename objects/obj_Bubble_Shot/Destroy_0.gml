@@ -3,23 +3,23 @@
 dir = -shotburstspread / 2;
 repeat(shotburstamount) {
 	with instance_create(x,y,obj_Lesser_Soul_Shot) {
-		shotlifespan = other.shotlifespan / 2;
+		shot_stats.Shot_Life_Span = other.shot_stats.Shot_Life_Span / 2;
 				
 		scr_Duplicate_Shot_Stats();
-		shotsize = other.shotsizemax;
-		image_xscale = shotsize;
-		image_yscale = shotsize;
+		shot_stats.Shot_Size = other.shot_stats.Shot_Size_Max;
+		image_xscale = shot_stats.Shot_Size;
+		image_yscale = shot_stats.Shot_Size;
 		sprite_index = other.shotduplicatesprite;
 		shotformshow = 0;
 		image_alpha = 1;
-		shothomingtype = 0;
-		shotspeed = other.shotminspeed * 7;
-		speed = shotspeed;
-		shotlifespan = other.shotlifespan / 2;
-		alarm[0] = shotlifespan;
-		shottimer = shotlifespan;
+		shot_stats.Shot_Homing_Type = 0;
+		shot_stats.Shot_Speed = other.shotminspeed * 7;
+		speed = shot_stats.Shot_Speed;
+		shot_stats.Shot_Life_Span = other.shot_stats.Shot_Life_Span / 2;
+		alarm[0] = shot_stats.Shot_Life_Span;
+		shot_stats.Shot_Timer = shot_stats.Shot_Life_Span;
 		
-		shotsizemax = shotsize;
+		shot_stats.Shot_Size_Max = shot_stats.Shot_Size;
 		
 		shotSizeRelation = 1;
 		if instance_exists(obj_Boss_Parent) {

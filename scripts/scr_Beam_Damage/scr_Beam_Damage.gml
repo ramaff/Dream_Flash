@@ -105,8 +105,8 @@ function scr_Beam_Damage() {
 	    finx = xx + lengthdir_x(length,angle);
 	    finy = yy + lengthdir_y(length,angle);
     
-	    shotpowermax = (Shot_Power + spoweradd) * ((10 + spowerfactor + sattackfactorbuffamount) / 10) * spower / 10 * ((100 + global.soulstrength + global.soulstrengthTemp) / 100);
-	    shotpower = shotpowermax;
+	    shot_stats.Shot_Powermax = (Shot_Power + spoweradd) * ((10 + spowerfactor + sattackfactorbuffamount) / 10) * spower / 10 * ((100 + global.soulstrength + global.soulstrengthTemp) / 100);
+	    shot_stats.Shot_Power = shot_stats.Shot_Powermax;
 	    shotPowerLevel = Shot_Power;
 	    shotarmourpierce = Shot_Armour_Pierce + sarmourpierce;
     

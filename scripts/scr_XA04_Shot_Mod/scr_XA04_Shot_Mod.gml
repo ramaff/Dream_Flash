@@ -9,9 +9,9 @@ function scr_XA04_Shot_Mod(){
 	}
 	
 	if global.XA[4] > 0 and Soul_Hearts_Control.heart[global.currentheart, 2] = 53 {
-		if shotspeed != 0 {
-			shotspeed += 2 * global.XA[4];
-			speed = shotspeed;
+		if shot_stats.Shot_Speed != 0 {
+			shot_stats.Shot_Speed += 2 * global.XA[4];
+			speed = shot_stats.Shot_Speed;
 		}
 		
 		/*shotfire += 3 * global.XA[4];

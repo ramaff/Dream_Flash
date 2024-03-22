@@ -24,7 +24,7 @@ function scr_State_Weapon_Mod(){
 				}
 			}
 			
-			shotburstpower = shotpower
+			shotburstpower = shot_stats.Shot_Power
 			
 			repeat(count) {
 				with instance_create(x,y, object_index) {
@@ -41,23 +41,23 @@ function scr_State_Weapon_Mod(){
 				}
 			}
 			
-			shotspeed = shotspeed * 1.75;
-			speed = shotspeed;
+			shot_stats.Shot_Speed = shot_stats.Shot_Speed * 1.75;
+			speed = shot_stats.Shot_Speed;
 		}
 		if scr_State_Active_Check("Beast") {
 		
 			image = 1;
 		
-			shotspeed = shotspeed * (1.5 * global.soulstateformboost);
-			if shotlifespan > 20 {
-				shotlifespan = 20 + ((shotlifespan - 20) / 3);
+			shot_stats.Shot_Speed = shot_stats.Shot_Speed * (1.5 * global.soulstateformboost);
+			if shot_stats.Shot_Life_Span > 20 {
+				shot_stats.Shot_Life_Span = 20 + ((shot_stats.Shot_Life_Span - 20) / 3);
 			}
-			alarm[0] = shotlifespan;
-		    shottimer = shotlifespan;
-			speed = shotspeed;
+			alarm[0] = shot_stats.Shot_Life_Span;
+		    shot_stats.Shot_Timer = shot_stats.Shot_Life_Span;
+			speed = shot_stats.Shot_Speed;
 		
-			shotpowermax = shotpowermax * (1.5 * global.soulstateformboost);
-		    shotpower = shotpowermax;
+			shot_stats.Shot_Powermax = shot_stats.Shot_Powermax * (1.5 * global.soulstateformboost);
+		    shot_stats.Shot_Power = shot_stats.Shot_Powermax;
 		    shotPowerLevel = shotPowerLevel * (1.5 * global.soulstateformboost);
 		}
 		if scr_State_Active_Check("Scrub") {
@@ -74,25 +74,25 @@ function scr_State_Weapon_Mod(){
 				sprite_index = spr_Shot_Bubble_Large;	
 			}
 		
-			shotspeed = shotspeed;
-			shotfriction = shotspeed / shotlifespan;
-			shotminspeed = shotspeed * 0.2;
-			shotlifespan = shotlifespan * 2;
-			alarm[0] = shotlifespan;
-		    shottimer = shotlifespan;
-			speed = shotspeed;
+			shot_stats.Shot_Speed = shot_stats.Shot_Speed;
+			shotfriction = shot_stats.Shot_Speed / shot_stats.Shot_Life_Span;
+			shotminspeed = shot_stats.Shot_Speed * 0.2;
+			shot_stats.Shot_Life_Span = shot_stats.Shot_Life_Span * 2;
+			alarm[0] = shot_stats.Shot_Life_Span;
+		    shot_stats.Shot_Timer = shot_stats.Shot_Life_Span;
+			speed = shot_stats.Shot_Speed;
 			
 			shotbursttype = 3;
-			shotburstpower = shotpower;
-			shotburstspeed = shotspeed;
+			shotburstpower = shot_stats.Shot_Power;
+			shotburstspeed = shot_stats.Shot_Speed;
 			shotburstamount = 1;
 			shotburstrange = 80;
 			
-			shothomingtype = 1;
-			if shothomingrange < 250 {
-				shothomingrange = 300;
+			shot_stats.Shot_Homing_Type = 1;
+			if shot_stats.Shot_Homing_Range < 250 {
+				shot_stats.Shot_Homing_Range = 300;
 			} else {
-				shothomingrange += 50;	
+				shot_stats.Shot_Homing_Range += 50;	
 			}
 			if shothomingspeed < 0 {
 				shothomingspeed = 5;	
@@ -102,13 +102,13 @@ function scr_State_Weapon_Mod(){
 		}
 		if scr_State_Active_Check("Spike") {
 		
-			shotspeed = shotspeed * (1.25 * global.soulstateformboost);
+			shot_stats.Shot_Speed = shot_stats.Shot_Speed * (1.25 * global.soulstateformboost);
 			shotpierce += 1;
 		
-			speed = shotspeed;
+			speed = shot_stats.Shot_Speed;
 		
-			shotpowermax = shotpowermax * (1.15 * global.soulstateformboost);
-		    shotpower = shotpowermax;
+			shot_stats.Shot_Powermax = shot_stats.Shot_Powermax * (1.15 * global.soulstateformboost);
+		    shot_stats.Shot_Power = shot_stats.Shot_Powermax;
 		    shotPowerLevel = shotPowerLevel * (1.15 * global.soulstateformboost);
 		
 			if sprite_get_height(sprite_index) < 80 and shotmelee == 0 {
@@ -129,10 +129,10 @@ function scr_State_Weapon_Mod(){
 			
 			shot_stats.Shot_Extra_Stats[0].Shot_Count = 1;
 			shot_stats.Shot_Extra_Stats[0].Shot_Sprite = string(sprite_get_name(sprite_index));
-			shot_stats.Shot_Extra_Stats[0].Shot_Extra_Hit_Frequency = 15 + (shotlifespan / 10);
-			shot_stats.Shot_Extra_Stats[0].Shot_Power = shotpower * global.soulstateformboost / 2.5;
-			shot_stats.Shot_Extra_Stats[0].Shot_Speed = shotspeed * 1.5;
-			shot_stats.Shot_Extra_Stats[0].Shot_Lifespan = shotlifespan / 2;
+			shot_stats.Shot_Extra_Stats[0].Shot_Extra_Hit_Frequency = 15 + (shot_stats.Shot_Life_Span / 10);
+			shot_stats.Shot_Extra_Stats[0].Shot_Power = shot_stats.Shot_Power * global.soulstateformboost / 2.5;
+			shot_stats.Shot_Extra_Stats[0].Shot_Speed = shot_stats.Shot_Speed * 1.5;
+			shot_stats.Shot_Extra_Stats[0].Shot_Lifespan = shot_stats.Shot_Life_Span / 2;
 			shot_stats.Shot_Extra_Stats[0].Shot_Pierce = shotpierce;
 			shot_stats.Shot_Extra_Stats[0].Shot_Size = (0.05 + shot_stats.Shot_Size * 0.5);
 			//shot_stats.Shot_Extra_Stats[0].Shot_Mouse = true;
@@ -142,7 +142,7 @@ function scr_State_Weapon_Mod(){
 				shot_stats.Shot_Extra_Stats[0].Shot_Lifespan = 7;
 				shot_stats.Shot_Extra_Stats[0].Shot_Sprite = string(sprite_get_name(other.Shot_Duplicate_Sprite))
 				shot_stats.Shot_Extra_Stats[0].Shot_Size = other.Shot_Size
-				shotspeed = 3;
+				shot_stats.Shot_Speed = 3;
 			}
 			
 			
@@ -153,14 +153,14 @@ function scr_State_Weapon_Mod(){
 		
 			image = 1;
 		
-			//shotspeed = shotspeed * 1.5;
-			shotlifespan = shotlifespan * 2;
-			alarm[0] = shotlifespan;
-		    shottimer = shotlifespan;
-			//speed = shotspeed;
+			//shot_stats.Shot_Speed = shot_stats.Shot_Speed * 1.5;
+			shot_stats.Shot_Life_Span = shot_stats.Shot_Life_Span * 2;
+			alarm[0] = shot_stats.Shot_Life_Span;
+		    shot_stats.Shot_Timer = shot_stats.Shot_Life_Span;
+			//speed = shot_stats.Shot_Speed;
 			
-			shotspeed = shotspeed * 0.75;
-			speed = shotspeed;
+			shot_stats.Shot_Speed = shot_stats.Shot_Speed * 0.75;
+			speed = shot_stats.Shot_Speed;
 			
 			shotphasing = 1;
 			
@@ -199,13 +199,13 @@ function scr_State_Weapon_Mod(){
 			shot_stats.Shot_Lobbing = true;
 			shot_stats.Shot_Height = 50;
 			shot_stats.Shot_Fall_Speed = -0.5;
-			var grav = (100 / (shotlifespan * shotlifespan)) - (-1 / shotlifespan) 
+			var grav = (100 / (shot_stats.Shot_Life_Span * shot_stats.Shot_Life_Span)) - (-1 / shot_stats.Shot_Life_Span) 
 			shot_stats.Shot_Gravity = grav + 0.01
 			y -= shot_stats.Shot_Height;
 			
 			shotchain = 4;
 			shotchaintype = 2;
-			shotchainpower = shotpower / 4;
+			shotchainpower = shot_stats.Shot_Power / 4;
 			shotchainrange = 500
 		}
 	}

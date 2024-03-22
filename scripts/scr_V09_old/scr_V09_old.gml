@@ -8,17 +8,17 @@ function scr_V09_old() {
 	    //shotbouncespeed = 10;
 	    //shotbouncedirection = 1;	
 		
-		shotpowermax = shotpowermax * (0.5);
-		shotpower = shotpowermax;
+		shot_stats.Shot_Powermax = shot_stats.Shot_Powermax * (0.5);
+		shot_stats.Shot_Power = shot_stats.Shot_Powermax;
 		shotPowerLevel = shotPowerLevel * (0.5);
 		
-		shotsize = shotsize * 0.7;
-		image_xscale = shotsize;
-		image_yscale = shotsize;
+		shot_stats.Shot_Size = shot_stats.Shot_Size * 0.7;
+		image_xscale = shot_stats.Shot_Size;
+		image_yscale = shot_stats.Shot_Size;
 		
-		shotlifespan = shotlifespan * 0.5;
-		alarm[0] = shotlifespan;
-		shotspeed = shotspeed * 1.25;
+		shot_stats.Shot_Life_Span = shot_stats.Shot_Life_Span * 0.5;
+		alarm[0] = shot_stats.Shot_Life_Span;
+		shot_stats.Shot_Speed = shot_stats.Shot_Speed * 1.25;
 		speed = speed * 1.25;
 	}
 

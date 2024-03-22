@@ -74,7 +74,7 @@ function scr_Soul_Stat_Store() {
 
 	global.soulshotpierce = obj_Soul_Parent.sshotpierce;
 
-	global.soulshotsizefactor = obj_Soul_Parent.sshotsizefactor;
+	global.soulshotspeedfactor = obj_Soul_Parent.sshotspeedfactor;
 	global.soulcritadd = obj_Soul_Parent.scritadd;
 	global.soulcritaddchance = obj_Soul_Parent.scritaddchance;
 	global.soulcontactdefenseadd = obj_Soul_Parent.scontactdefenseadd;

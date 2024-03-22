@@ -14,28 +14,28 @@ if !hit_again and other.shotmelee = 0 {
 		}
         shotphasing = 1;
 		shotgem++;
-        speed = shotspeed;
-        shotspeed += 1.5;
+        speed = shot_stats.Shot_Speed;
+        shot_stats.Shot_Speed += 1.5;
         speed += 1.5;
         /*
-        if shothomingtype = 0 {
-            shothomingtype = 1;
+        if shot_stats.Shot_Homing_Type = 0 {
+            shot_stats.Shot_Homing_Type = 1;
         }
-        if shothomingrange < 60 {
-            shothomingrange = 60;
+        if shot_stats.Shot_Homing_Range < 60 {
+            shot_stats.Shot_Homing_Range = 60;
         } */
         if speed < 10 {
-            shotspeed = 10;
+            shot_stats.Shot_Speed = 10;
             speed = 10;
         }
-		if shotsize > 1 {
-			shotsize = 1;
-			image_xscale = shotsize;
-			image_yscale = shotsize;
+		if shot_stats.Shot_Size > 1 {
+			shot_stats.Shot_Size = 1;
+			image_xscale = shot_stats.Shot_Size;
+			image_yscale = shot_stats.Shot_Size;
 		}
         sprite_index = spr_Pink_Gem_Shot;
         if instance_exists(obj_Boss_Parent) {    
-            move_towards_point(instance_nearest(x,y,obj_Boss_Parent).x,instance_nearest(x,y,obj_Boss_Parent).y,shotspeed)
+            move_towards_point(instance_nearest(x,y,obj_Boss_Parent).x,instance_nearest(x,y,obj_Boss_Parent).y,shot_stats.Shot_Speed)
         }
         var target = noone;
 		var dis = 9999;
@@ -50,11 +50,11 @@ if !hit_again and other.shotmelee = 0 {
 				}
 	        }
             if target != noone {
-                move_towards_point(target.x,target.y,shotspeed);
+                move_towards_point(target.x,target.y,shot_stats.Shot_Speed);
                 if object_get_parent(target.object_index) = obj_Gem_Parent {
-                    speed = shotspeed * 2;
+                    speed = shot_stats.Shot_Speed * 2;
                 } else {
-                    speed = shotspeed;
+                    speed = shot_stats.Shot_Speed;
                 }
             }
         }
@@ -68,17 +68,17 @@ if !hit_again and other.shotmelee = 0 {
             shothitagain = 1;
             //image = 1;
             scr_Duplicate_Shot_Stats();
-			shotsize = other.shotsize;
-			image_xscale = shotsize;
-			image_yscale = shotsize;
-			if shotsize > 1 {
-				shotsize = 1;
-				image_xscale = shotsize;
-				image_yscale = shotsize;
+			shot_stats.Shot_Size = other.shot_stats.Shot_Size;
+			image_xscale = shot_stats.Shot_Size;
+			image_yscale = shot_stats.Shot_Size;
+			if shot_stats.Shot_Size > 1 {
+				shot_stats.Shot_Size = 1;
+				image_xscale = shot_stats.Shot_Size;
+				image_yscale = shot_stats.Shot_Size;
 			}
             shothitagain = 0;
             direction += 7.5;
-            shotpower = other.shotpower;
+            shot_stats.Shot_Power = other.shot_stats.Shot_Power;
             shotPowelLevel = other.shotPowerLevel;
             sprite_index = other.sprite_index;
             image_alpha = other.image_alpha;

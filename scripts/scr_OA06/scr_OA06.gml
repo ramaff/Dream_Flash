@@ -7,26 +7,26 @@ function scr_OA06(){
 	    //if obj_Soul_Parent.senergy >= 50 {
 		var chance = 30 / (1 + global.OA[6]);
 		if scr_Chance(chance) {
-			shotmiracle += 1;
+			shot_stats.Shot_Miracle += 1;
 			
-			shotlifespan = shotlifespan * 2;
-			alarm[0] = shotlifespan;
-		    shottimer = shotlifespan;
-			//speed = shotspeed;
+			shot_stats.Shot_Life_Span = shot_stats.Shot_Life_Span * 2;
+			alarm[0] = shot_stats.Shot_Life_Span;
+		    shot_stats.Shot_Timer = shot_stats.Shot_Life_Span;
+			//speed = shot_stats.Shot_Speed;
 			
-			shotspeed = shotspeed * 0.55;
-			speed = shotspeed;
+			shot_stats.Shot_Speed = shot_stats.Shot_Speed * 0.55;
+			speed = shot_stats.Shot_Speed;
 			
-			if shothomingtype = 0 {
-		        shothomingtype = 1;
+			if shot_stats.Shot_Homing_Type = 0 {
+		        shot_stats.Shot_Homing_Type = 1;
 			}
-	        if shothomingrange < 300 {
-	            shothomingrange = 300
+	        if shot_stats.Shot_Homing_Range < 300 {
+	            shot_stats.Shot_Homing_Range = 300
 	        } 
 			
-			shotsize += 0.1;
-			image_xscale = shotsize;
-			image_yscale = shotsize;
+			shot_stats.Shot_Size += 0.1;
+			image_xscale = shot_stats.Shot_Size;
+			image_yscale = shot_stats.Shot_Size;
 			
 		}
 	}

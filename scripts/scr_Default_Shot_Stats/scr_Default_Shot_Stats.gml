@@ -62,29 +62,29 @@ function scr_Default_Shot_Stats() {
 	target = noone;
 	otarget = noone;
 
-	shotspeed = 0.4 * other.sshotspeed;
-	shotpower = 1 * other.spower * ((40 + global.soulstrength) / 40);
-	shotpowermax = shotpower;
+	shot_stats.Shot_Speed = 0.4 * other.sshotspeed;
+	shot_stats.Shot_Power = 1 * other.spower * ((40 + global.soulstrength) / 40);
+	shot_stats.Shot_Powermax = shot_stats.Shot_Power;
 	shotknockback = 1 * other.sshotknockback;
-	shotlifespan = 100;
-	shotsize = 1;
-	shotsizemax = 1;
+	shot_stats.Shot_Life_Span = 100;
+	shot_stats.Shot_Size = 1;
+	shot_stats.Shot_Size_Max = 1;
 	shotsouldamage = 0;
 	shotmelee = 0;
 	shotpointangle = 0;
 	shotkeepdirection = 0;
 	shotSizeRelation = 1;
 
-	shotinitspeed = shotspeed;
+	shotinitspeed = shot_stats.Shot_Speed;
 
 	shotduplicatesprite = spr_Soul_Shot;
 	
 	*/
 
 	/*
-	move_towards_point(mouse_x,mouse_y, shotspeed);
+	move_towards_point(mouse_x,mouse_y, shot_stats.Shot_Speed);
 	direction += (-2.5 + random(5)) / other.saccuracy;
-	alarm[0] = shotlifespan;
+	alarm[0] = shot_stats.Shot_Life_Span;
 	
 	/*
 	baseDepth = 0;
@@ -155,8 +155,8 @@ function scr_Default_Shot_Stats() {
 	shotchaintype = 0;
 	shotchainrange = 0;
 	shotchainspeed = 0;
-	shothomingtype = 0;
-	shothomingrange = 0;
+	shot_stats.Shot_Homing_Type = 0;
+	shot_stats.Shot_Homing_Range = 0;
 	shothomingspeed = 0;
 	shotcontinue = 0;
 	shothealing = 0;
@@ -221,7 +221,7 @@ function scr_Default_Shot_Stats() {
 	shottargetX = 0;
 	shottargetY = 0;
 
-	shotspeedpoweradd = 0;
+	shot_stats.Shot_Speedpoweradd = 0;
 	shotbulletredirect = 0;
 	shotbulletredirectchance = 0;
 	shotbulletdisplace = 0;
@@ -231,7 +231,7 @@ function scr_Default_Shot_Stats() {
 	shotangularvelocity = 0;
 	
 	shotwishful = 0;
-	shotmiracle = 0;
+	shot_stats.Shot_Miracle = 0;
 	
 	shotsucktype = 1;
 	shotsuck = 0;

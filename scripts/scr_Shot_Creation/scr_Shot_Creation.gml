@@ -186,65 +186,67 @@ function scr_Shot_Creation() {
 		
 		repeat(mechFac) {
 			
-		    with instance_create(shxx,shyy,_cw.Shot_Type) {
+		    with instance_create(shxx, shyy, _cw.Shot_Type) {
 		        scr_Default_Shot_Stats();
+				
+				shot_stats = json_parse(json_stringify(other.Shot_Stats));
         
 				shotorigin = obj_Soul_Parent;
 		        target = noone;
-		        sprite_index = other.Shot_Sprite;
-		        shotsize = other.Shot_Size * ((1 + other.sshotsizefactor) / 1);
-		        image_xscale = shotsize;
-		        image_yscale = shotsize;
-		        shotspeed = (other.Shot_Speed + other.sshotspeedaddition) * (other.Weapon_Vomit_Min_Speed + random(other.Weapon_Vomit_Max_Speed - other.Weapon_Vomit_Min_Speed)) * other.sshotspeed / 10;
-		        shotpowermax = (other.Shot_Power + other.spoweradd) * ((10 + other.spowerfactor + other.sattackfactorbuffamount) / 10) * other.spower / 10 * scr_Class_Stat_Damage_Multiplier();
-		        shotpower = shotpowermax;
-		        shotPowerLevel = other.Shot_Power;
-		        shotknockback = other.Shot_Knockback * other.sshotknockback / 10;
-		        shotarmourpierce = other.Shot_Armour_Pierce + other.sarmourpierce;
+		        sprite_index = asset_get_index(shot_stats.Shot_Sprite);
+		        shot_stats.Shot_Size = shot_stats.Shot_Size * ((1 + other.sshotsizefactor) / 1);
+		        image_xscale = shot_stats.Shot_Size;
+		        image_yscale = shot_stats.Shot_Size;
+		        shot_stats.Shot_Speed = (shot_stats.Shot_Speed + other.sshotspeedaddition) * (shot_stats.Weapon_Vomit_Min_Speed + random(shot_stats.Weapon_Vomit_Max_Speed - shot_stats.Weapon_Vomit_Min_Speed)) * other.sshotspeed / 10;
+		        shot_stats.Shot_Powermax = (shot_stats.Shot_Power + other.spoweradd) * ((10 + other.spowerfactor + other.sattackfactorbuffamount) / 10) * other.spower / 10 * scr_Class_Stat_Damage_Multiplier();
+		        shot_stats.Shot_Power = shot_stats.Shot_Powermax;
+		        shotPowerLevel = shot_stats.Shot_Power;
+		        shotknockback = shot_stats.Shot_Knockback * other.sshotknockback / 10;
+		        shotarmourpierce = shot_stats.Shot_Armour_Pierce + other.sarmourpierce;
 				direction = other.actual_shot_direction;
 		        //
 				
 		        if mechFac > 1 {
-					shotspeed = shotspeed * speedFac;
-					direction = other.Shot_Direction;
+					shot_stats.Shot_Speed = shot_stats.Shot_Speed * speedFac;
+					direction = shot_stats.Shot_Direction;
 				}
-				speed = shotspeed;
-		        shotlifespan = other.Shot_Lifespan * (other.Weapon_Vomit_Min_Life + random(other.Weapon_Vomit_Max_Life - other.Weapon_Vomit_Min_Life)) * ((10 + other.sshotlifefactor) / 10);
-				if shotlifespan < 1 {
-					shotlifespan = 1;	
+				speed = shot_stats.Shot_Speed;
+		        shot_stats.Shot_Life_Span = shot_stats.Shot_Lifespan * (shot_stats.Weapon_Vomit_Min_Life + random(shot_stats.Weapon_Vomit_Max_Life - shot_stats.Weapon_Vomit_Min_Life)) * ((10 + other.sshotlifefactor) / 10);
+				if shot_stats.Shot_Life_Span < 1 {
+					shot_stats.Shot_Life_Span = 1;	
 				}
-		        alarm[0] = shotlifespan;
+		        alarm[0] = shot_stats.Shot_Life_Span;
 		        scr_Extra_Shot_Stats();
 		        scr_Weapon_Direction_List();
 			
-				shottimer = shotlifespan;
+				shot_stats.Shot_Timer = shot_stats.Shot_Life_Span;
 			
-		        shotmelee = other.Weapon_Melee;
-		        if shotwavetime > 0 {
-		            alarm[9] = shotwavetime;
+		        shotmelee = shot_stats.Weapon_Melee;
+		        if shot_stats.Shot_Wave_Time > 0 {
+		            alarm[9] = shot_stats.Shot_Wave_Time;
 		        }
-		        shotsizemax = shotsize;
-		        if shotgrow > 0 {
-		            image_xscale = shotgrowsize;
-		            image_yscale = shotgrowsize;
+		        shot_stats.Shot_Size_Max = shot_stats.Shot_Size;
+		        if shot_stats.Shot_Grow > 0 {
+		            image_xscale = shot_stats.Shot_Grow_Size;
+		            image_yscale = shot_stats.Shot_Grow_Size;
 		        }
-		        if shotairtarget = 1 {
+		        if shot_stats.Shot_Air_Target = 1 {
 		            x = obj_Astral_Indicator.x;
-		            y = obj_Astral_Indicator.y + 8 - (shotspeed * 45);
+		            y = obj_Astral_Indicator.y + 8 - (shot_stats.Shot_Speed * 45);
 		            direction = 270;
 		            direction += shotdirectionaddition;
 		        }
-				if other.Shot_Stats.Shot_Mouse_Origin = 1 {
+				if shot_stats.Shot_Mouse_Origin = 1 {
 					x = obj_Astral_Indicator.x;
 		            y = obj_Astral_Indicator.y;
 				}
-				if shotmovement = 0 {
+				if shot_stats.Shot_Movement = 0 {
 					speed = 0;	
 				}
-				if shotlight = 1 {
+				if shot_stats.Shot_Light = 1 {
 					with instance_create(x,y,obj_LightS) {
 						target = other.id;
-						lightsize = other.shotlightsize;
+						lightsize = other.shot_stats.Shot_Light_Size;
 						//lightsize = 1;
 					}
 				}
@@ -260,16 +262,16 @@ function scr_Shot_Creation() {
 				//scr_Beam_Create(shxx,shyy);
 				scr_Initial_Beam_Shot_Setup(x,y);
 				
-				if other.Shot_Point_Angle {
+				if shot_stats.Shot_Point_Angle {
 					image_angle = direction;
 				}
 				
-				if other.Shot_Angle_Relative != 0 {
-					image_angle = point_direction(x,y,mouse_x,mouse_y) + other.Shot_Angle_Relative;	
+				if shot_stats.Shot_Angle_Relative != 0 {
+					image_angle = point_direction(x,y,mouse_x,mouse_y) + shot_stats.Shot_Angle_Relative;	
 				}
 				
-				if other.Shot_Image_Direction != -1 {
-					image_angle = other.Shot_Image_Direction;
+				if shot_stats.Shot_Image_Direction != -1 {
+					image_angle = shot_stats.Shot_Image_Direction;
 				}
 				
 		    }

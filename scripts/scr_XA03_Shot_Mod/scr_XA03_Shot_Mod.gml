@@ -4,12 +4,12 @@ function scr_XA03_Shot_Mod(){
 	if global.temperActive = true {
 		
 		repeat(global.XA[3]) {
-			shotlifespan = shotlifespan * 0.6;
-			shotspeed += shotspeed * 0.33;
+			shot_stats.Shot_Life_Span = shot_stats.Shot_Life_Span * 0.6;
+			shot_stats.Shot_Speed += shot_stats.Shot_Speed * 0.33;
 		}
-		speed = shotspeed;
-		alarm[0] = shotlifespan;
-		shottimer = shotlifespan;
+		speed = shot_stats.Shot_Speed;
+		alarm[0] = shot_stats.Shot_Life_Span;
+		shot_stats.Shot_Timer = shot_stats.Shot_Life_Span;
 		
 		shotfire += 2 * global.XA[3];
 		

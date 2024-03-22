@@ -5,7 +5,7 @@
 /*
 if beamty = 1 {
 	if alarm[0] > 3 {
-		image_yscale = lerp(image_yscale, shotsize, 0.3);
+		image_yscale = lerp(image_yscale, shot_stats.Shot_Size, 0.3);
 	} else {
 		image_yscale = lerp(image_yscale, 0, 0.3);
 	}

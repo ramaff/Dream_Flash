@@ -5,7 +5,7 @@ if shotorbitaltype = 1 {
 }
 
 if shotlobbing >= 1 {
-	draw_sprite_ext(spr_Bullet_Shadow,0,x,y+shotbounceY,shotsize * 1.5 * (1.2 - (shotbounceY / 200)),shotsize * 1.5 * (1.2 - (shotbounceY / 200)),0,c_white,image_alpha * (0.5 - (shotbounceY/150)));
+	draw_sprite_ext(spr_Bullet_Shadow,0,x,y+shotbounceY,shot_stats.Shot_Size * 1.5 * (1.2 - (shotbounceY / 200)),shot_stats.Shot_Size * 1.5 * (1.2 - (shotbounceY / 200)),0,c_white,image_alpha * (0.5 - (shotbounceY/150)));
 }
 
 if global.A[14] > 0 and shotorigin = obj_Soul_Parent {
@@ -18,7 +18,7 @@ if shotaura = 1 and image_alpha > 0 {
 
 var fdist = 50;
 var tdist = 50 / shotinitspeed;
-var etime = shotlifespan - shottimer;
+var etime = shot_stats.Shot_Life_Span - shot_stats.Shot_Timer;
 var edist = shotinitspeed * etime;
 
 var sSize = 1 - ((fdist - edist) / fdist);
@@ -31,7 +31,7 @@ if sSize < 0 {
 	sSize = 0;	
 }
 
-if ((shotlifespan - shottimer) <= (tdist)) and (shotlifespan > (tdist)) and (shotformshow = 1) {
+if ((shot_stats.Shot_Life_Span - shot_stats.Shot_Timer) <= (tdist)) and (shot_stats.Shot_Life_Span > (tdist)) and (shotformshow = 1) {
     //d3d_set_fog(true,c_white,0,0);
     //draw_sprite_ext(sprite_index,image_index,x,y,image_xscale * sSize,image_yscale * sSize,image_angle,c_white,image_alpha);
     //d3d_set_fog(false,c_black,0,0);

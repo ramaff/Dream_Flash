@@ -9,7 +9,7 @@ function scr_Boss_Self_Damage_Calc() {
 	    bossReaction++;
 	}
 
-	shotDamageMult = other.shotpower / other.shotPowerLevel;
+	shotDamageMult = other.shot_stats.Shot_Power / other.shotPowerLevel;
 	crit = other.shotcritchance + irandom(99);
 
 	if crit >= 100 {

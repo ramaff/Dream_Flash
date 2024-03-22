@@ -30,7 +30,7 @@ with(other) {
 	if bulletpower <= poww {
 		var xxx = x;
 		var yyy = y;
-		//var shpower = other.shotpower
+		//var shpower = other.shot_stats.Shot_Power
 		with (obj_Soul_Parent) {
 			scr_Bleeding_Shot(xxx,yyy,shpower);
 		}

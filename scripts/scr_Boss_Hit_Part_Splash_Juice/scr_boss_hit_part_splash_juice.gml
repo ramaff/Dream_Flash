@@ -18,7 +18,7 @@ function scr_Boss_Hit_Part_Splash_Juice(){
 		//part_type_speed()
 				
 		repeat(shottrailhitcount) {
-			var psize = (0.1 + (shotsize)) * 1.5;
+			var psize = (0.1 + (shot_stats.Shot_Size)) * 1.5;
 			psize = (3 * psize / 4) + random(psize / 4);
 			part_type_size(obj_Particle_Control.pshothittype,psize,0,-(psize/shottrailhitlife),0);
 		

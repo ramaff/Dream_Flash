@@ -21,7 +21,7 @@ function scr_OC05(){
 		
 		with (obj_Projectile_Parent) {
 			if shotmelee == 0 {
-				var dist = shotspeed * (shotexisttime);
+				var dist = shot_stats.Shot_Speed * (shotexisttime);
 				var tarPositionX = xx + lengthdir_x(dist, tangle)
 				var tarPositionY = yy + lengthdir_y(dist, tangle)
 				

@@ -3,52 +3,52 @@
 function scr_Shot_Burst_Stats(vshotburststats){
 	
 	/*if variable_struct_exists(vshotburststats, "Shot_Power") {
-		shotpower = vshotburststats.Shot_Power
-		//show_debug_message(shotpower)
-		shotpowermax = shotpower;
+		shot_stats.Shot_Power = vshotburststats.Shot_Power
+		//show_debug_message(shot_stats.Shot_Power)
+		shot_stats.Shot_Powermax = shot_stats.Shot_Power;
 	} */
 	if variable_struct_exists(vshotburststats, "Burst_Power") {
-		shotpower = shotpower * vshotburststats.Burst_Power;
+		shot_stats.Shot_Power = shot_stats.Shot_Power * vshotburststats.Burst_Power;
 		shotaurapower = shotaurapower * vshotburststats.Burst_Power;
-		shotpowermax = shotpower;
+		shot_stats.Shot_Powermax = shot_stats.Shot_Power;
 	} else {
-		shotpower = vshotburststats.Shot_Power;
+		shot_stats.Shot_Power = vshotburststats.Shot_Power;
 		shotaurapower = vshotburststats.Shot_Power;
-		shotpowermax = shotpower;	
+		shot_stats.Shot_Powermax = shot_stats.Shot_Power;	
 	}
 	if variable_struct_exists(vshotburststats, "Burst_Soul_Shot_Damage") {
 		shotsouldamage = vshotburststats.Burst_Soul_Shot_Damage;
-		shotspeed = sqrt(shotspeed) + 3;
-		speed = shotspeed;
-		shotlifespan = shotlifespan + 60;
-	    alarm[0] = shotlifespan;
-		shottimer = shotlifespan;
+		shot_stats.Shot_Speed = sqrt(shot_stats.Shot_Speed) + 3;
+		speed = shot_stats.Shot_Speed;
+		shot_stats.Shot_Life_Span = shot_stats.Shot_Life_Span + 60;
+	    alarm[0] = shot_stats.Shot_Life_Span;
+		shot_stats.Shot_Timer = shot_stats.Shot_Life_Span;
 	}
 	if variable_struct_exists(vshotburststats, "Burst_Size") {
-		shotsize = shotsize * vshotburststats.Burst_Size
-		image_xscale = shotsize;
-		image_yscale = shotsize;
-		shotsizemax = other.shotsizemax;
+		shot_stats.Shot_Size = shot_stats.Shot_Size * vshotburststats.Burst_Size
+		image_xscale = shot_stats.Shot_Size;
+		image_yscale = shot_stats.Shot_Size;
+		shot_stats.Shot_Size_Max = other.shot_stats.Shot_Size_Max;
 	}
 	if variable_struct_exists(vshotburststats, "Shot_Sprite") {
 		//show_debug_message(vshotburststats.Shot_Sprite)
 		sprite_index = asset_get_index(vshotburststats.Shot_Sprite)
 	}
 	if variable_struct_exists(vshotburststats, "Shot_Lifespan") {
-		shotlifespan = vshotburststats.Shot_Lifespan
-		alarm[0] = shotlifespan;
-		shottimer = shotlifespan;
+		shot_stats.Shot_Life_Span = vshotburststats.Shot_Lifespan
+		alarm[0] = shot_stats.Shot_Life_Span;
+		shot_stats.Shot_Timer = shot_stats.Shot_Life_Span;
 	}
 	if variable_struct_exists(vshotburststats, "Shot_Pierce") {
 		shotpierce = vshotburststats.Shot_Pierce
 	}
 	if variable_struct_exists(vshotburststats, "Shot_Speed") {
-		shotspeed = vshotburststats.Shot_Speed
-		speed = shotspeed;
+		shot_stats.Shot_Speed = vshotburststats.Shot_Speed
+		speed = shot_stats.Shot_Speed;
 	}
 	if variable_struct_exists(vshotburststats, "Burst_Speed") {
-		shotspeed = vshotburststats.Burst_Speed
-		speed = shotspeed;
+		shot_stats.Shot_Speed = vshotburststats.Burst_Speed
+		speed = shot_stats.Shot_Speed;
 	}
 	if variable_struct_exists(vshotburststats, "Shot_Point_Angle") {
 		shotpointangle = vshotburststats.Shot_Point_Angle

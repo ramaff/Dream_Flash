@@ -5,7 +5,7 @@ function scr_P07() {
 
 	if global.P[7] >= 1 and prob = true {
 		shotfire += 2 * global.P[7];
-		shotspeed += 3 * global.P[7];
+		shot_stats.Shot_Speed += 3 * global.P[7];
 		speed += 3 * global.P[7];
 		
 		shotpierce += 1;

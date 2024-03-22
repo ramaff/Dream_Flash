@@ -11,7 +11,7 @@ var extra_shot_amount = array_length(extra_stats);
 var i = 0;
 for(i = 0; i < extra_shot_amount; i++) {
 	
-	if (shottimer mod extra_stats[i].Shot_Extra_Hit_Frequency = 0) {
+	if (shot_stats.Shot_Timer mod extra_stats[i].Shot_Extra_Hit_Frequency = 0) {
 	
 		var current_extra_stats = extra_stats[i]
 		//show_debug_message("current_extra_stats: " + string(current_extra_stats))
@@ -19,7 +19,7 @@ for(i = 0; i < extra_shot_amount; i++) {
 	    //image = 1;
 	    shothitagain = 1;
 		if variable_struct_exists(current_extra_stats, "Burst_Power") {
-			shotburstpower = shotpower * current_extra_stats.Burst_Power;
+			shotburstpower = shot_stats.Shot_Power * current_extra_stats.Burst_Power;
 		} else {
 			shotburstpower = shot_stats.Shot_Power;
 		}
@@ -39,23 +39,23 @@ for(i = 0; i < extra_shot_amount; i++) {
 		            variable_struct_set(shot_stats, _PropertyNames[i], variable_struct_get(current_extra_stats, _PropertyNames[i]));
 		        }
 			
-				shotspeed =	shot_stats.Shot_Speed;
-				shotlifespan = shot_stats.Shot_Lifespan;
-				shottimer = shotlifespan;
+				shot_stats.Shot_Speed =	shot_stats.Shot_Speed;
+				shot_stats.Shot_Life_Span = shot_stats.Shot_Lifespan;
+				shot_stats.Shot_Timer = shot_stats.Shot_Life_Span;
 		
-				speed = shotspeed;
-				shothomingtype = shot_stats.Shot_Homing_Type;
+				speed = shot_stats.Shot_Speed;
+				shot_stats.Shot_Homing_Type = shot_stats.Shot_Homing_Type;
 				shothomingspeed = shot_stats.Shot_Homing_Speed;
 				shotpierce = shot_stats.Shot_Pierce;
 				shotacceleration = shot_stats.Shot_Acceleration;
 		
 				if variable_struct_exists(shot_stats, "Burst_Size") {
-					shotsize = shotsize * shot_stats.Burst_Size
-					image_xscale = shotsize;
-					image_yscale = shotsize;
-					shotsizemax = other.shotsizemax;
+					shot_stats.Shot_Size = shot_stats.Shot_Size * shot_stats.Burst_Size
+					image_xscale = shot_stats.Shot_Size;
+					image_yscale = shot_stats.Shot_Size;
+					shot_stats.Shot_Size_Max = other.shot_stats.Shot_Size_Max;
 				} else {
-					shotsize = shot_stats.Shot_Size;
+					shot_stats.Shot_Size = shot_stats.Shot_Size;
 				}
 				shotshrink = shot_stats.Shot_Shrink;
 				shotfade = shot_stats.Shot_Fade;
@@ -79,7 +79,7 @@ for(i = 0; i < extra_shot_amount; i++) {
 		
 				shotorbitaltype = 0;
 				shotOrbit = 0;
-				shotsizemax = shotsize;
+				shot_stats.Shot_Size_Max = shot_stats.Shot_Size;
 				shotSizeRelation = 1;
 				
 				scr_Shot_Particle_Setup();
@@ -91,7 +91,7 @@ for(i = 0; i < extra_shot_amount; i++) {
 					}
 				}
 				
-		        alarm[0] = shotlifespan;
+		        alarm[0] = shot_stats.Shot_Life_Span;
 		    }
 			dir += 360 / ramt;
 		}

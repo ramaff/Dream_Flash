@@ -4,9 +4,9 @@ if !hit_again {
     //ds_list_add(projectile_hits, other.id);
     with(other) {
         shotpierce += 1;
-        shotpower += 4;
+        shot_stats.Shot_Power += 4;
         shotPowerLevel += 4;
-        shotspeed += 1.5;
+        shot_stats.Shot_Speed += 1.5;
         speed += 1.5;
     }
 	scr_Particle_Burst(obj_Pointy_Part, spr_Pointy_Part, c_white, c_white, 4, 12, 0, 360, 20, other.image_xscale + 0.1, 15, false);

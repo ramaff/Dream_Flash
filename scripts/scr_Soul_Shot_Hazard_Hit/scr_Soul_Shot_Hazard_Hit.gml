@@ -9,7 +9,7 @@ function scr_Soul_Shot_Hazard_Hit(){
 			if !hit_again and shotpierce >= 0 {
 		         //ds_list_add(other.projectile_hits, shot_id);
 				 variable_struct_set(other.projectile_hits, shot_id, shot_id)
-		         other.bulletpower -= (shotpower / 10);
+		         other.bulletpower -= (shot_stats.Shot_Power / 10);
 		         if other.bulletpower <= 0 {
 		            instance_destroy(other);
 		         }

@@ -7,7 +7,7 @@
 // Inherit the parent event
 event_inherited();
 
-shotpower -= 25;
-if shotpower < 0 {
+shot_stats.Shot_Power -= 25;
+if shot_stats.Shot_Power < 0 {
 	instance_destroy();	
 }

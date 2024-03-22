@@ -9,7 +9,7 @@ function scr_U08(){
 			if scr_Chance(90 / global.U[8]) {
 				var _xx = x;
 				var _yy = y;
-				var _pow = shotpower * global.U[8];
+				var _pow = shot_stats.Shot_Power * global.U[8];
 				var _poison_pow = round(_pow / 6)
 				var _poison_size = sqrt(max(0, image_xscale * (100 + _pow))) * 35
 				var _poison_sprite_size = _poison_size / 400

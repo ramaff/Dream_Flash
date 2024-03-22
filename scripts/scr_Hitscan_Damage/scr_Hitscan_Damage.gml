@@ -62,8 +62,8 @@ function scr_Hitscan_Damage(argument0, argument1) {
 	    //blength[Shot_Current_Count] = length;
 	    //bArrlength[Shot_Current_Count] = length;
     
-	    shotpowermax = (Shot_Power + spoweradd) * ((10 + spowerfactor + sattackfactorbuffamount) / 10) * spower / 10 * ((100 + global.soulstrength + global.soulstrengthTemp) / 100);
-	    shotpower = shotpowermax;
+	    shot_stats.Shot_Powermax = (Shot_Power + spoweradd) * ((10 + spowerfactor + sattackfactorbuffamount) / 10) * spower / 10 * ((100 + global.soulstrength + global.soulstrengthTemp) / 100);
+	    shot_stats.Shot_Power = shot_stats.Shot_Powermax;
 	    shotPowerLevel = Shot_Power;
 	    shotarmourpierce = Shot_Armour_Pierce + sarmourpierce;
     

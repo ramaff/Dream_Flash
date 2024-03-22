@@ -6,7 +6,7 @@ function scr_Extra_Shot_Stats() {
 	}
 	shotimagespeed = other.Shot_Image_Speed;
 	
-	shot_stats = json_parse(json_stringify(other.Shot_Stats));
+	//shot_stats = json_parse(json_stringify(other.Shot_Stats));
 	
 	y -= shot_stats.Shot_Height;
 	
@@ -158,13 +158,13 @@ function scr_Extra_Shot_Stats() {
 	target = noone;
 	otarget = noone;
 
-	if shotorbitaltype > 0 {
+	if shot_stats.Shot_Orbital_Type > 0 {
 	    target = other;
 		otarget = other.id;
 		
-		shotOrbit = other.Shot_Orbital_Range;
+		shotOrbit = shot_stats.Shot_Orbital_Range;
 		shotAngle = point_direction(x,y,mouse_x,mouse_y);
-		shotAngle += other.Shot_Current_Count * (360 / other.Shot_Count)
+		shotAngle += shot_stats.Shot_Current_Count * (360 / shot_stats.Shot_Count)
 		shotCenterX = other.x;
 		shotCenterY = other.y;
 		speed = 0;
@@ -190,8 +190,8 @@ function scr_Extra_Shot_Stats() {
 	shotchainpower = (other.Shot_Chain_Power + other.spoweradd) * shotaddedpow;
 	shotchainrange = other.Shot_Chain_Range;
 	shotchainspeed = other.Shot_Chain_Speed;
-	shothomingtype = other.Shot_Homing_Type;
-	shothomingrange = other.Shot_Homing_Range;
+	shot_stats.Shot_Homing_Type = other.Shot_Homing_Type;
+	shot_stats.Shot_Homing_Range = other.Shot_Homing_Range;
 	shothomingspeed = other.Shot_Homing_Speed;
 	shotimpactpower = (other.Shot_Impact_Power + other.spoweradd) * shotaddedpow;
 	shotImpactPowerLevel = other.Shot_Impact_Power;
@@ -252,9 +252,9 @@ function scr_Extra_Shot_Stats() {
 	shotlifedrain = other.Shot_Life_Drain;
 	shotessencedrain = other.Shot_Essence_Drain;
 
-	shotinitspeed = shotspeed;
+	shotinitspeed = shot_stats.Shot_Speed;
 	
-	shotspeedpoweradd = other.Shot_Speed_Power_Add;
+	shot_stats.Shot_Speedpoweradd = other.Shot_Speed_Power_Add;
 	shotbulletredirect = other.Shot_Bullet_Redirect;
 	shotbulletredirectchance = other.Shot_Bullet_Redirect_Chance;
 	shotbulletdisplace = other.Shot_Bullet_Displace;
@@ -318,7 +318,7 @@ function scr_Extra_Shot_Stats() {
 	
 	scr_XC06_Setup();
 	
-	//shotsizemax = shotsize;
+	//shot_stats.Shot_Size_Max = shot_stats.Shot_Size;
 	
 
 }
