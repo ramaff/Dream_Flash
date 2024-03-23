@@ -3,10 +3,10 @@
 alarm[1] = 10 + irandom(20);
 
 
-var shottrailarea = 80;
+var _shot_trail_area = 80;
 
-var xx = random(shottrailarea) - (shottrailarea / 2);
-var yy = random(shottrailarea) - (shottrailarea / 2);
+var xx = random(shot_stats.Shot_Trail_Area) - (shot_stats.Shot_Trail_Area / 2);
+var yy = random(shot_stats.Shot_Trail_Area) - (shot_stats.Shot_Trail_Area / 2);
 
 with instance_create(x + xx,y + yy,obj_Field_Trail) {
 		

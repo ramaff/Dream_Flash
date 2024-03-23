@@ -65,13 +65,13 @@ function scr_Beam_Create(shxx, shyy, beamseg, beamdir, curvedir, beamstop, beamx
 		beamxx += lengthdir_x(splitsize, oldbeamdir)
 		beamyy += lengthdir_y(splitsize, oldbeamdir)
 
-		if shotwander > 0 and beamseg > 8 {
+		if shot_stats.Shot_Wander > 0 and beamseg > 8 {
 			scr_Create_Beam_Tip(shxx, shyy, beamxx, beamyy, beamsize, beamdir);
 			
 			beamdir = beamdir + scr_Wave(0, 360, 2, 0);
 			beamseg -= 8;
 			
-			shotwander--;
+			shot_stats.Shot_Wander--;
 		}
 		
 		oldbeamdir = beamdir
@@ -80,21 +80,21 @@ function scr_Beam_Create(shxx, shyy, beamseg, beamdir, curvedir, beamstop, beamx
 		
 		// Could probably also include burst in here if we are being honest O.o
 			
-		if shotairburststats != false {
-			var burstIndex = array_length(shotairburststats) - 1;
+		if shot_stats.Shot_Air_Burst_Stats != false {
+			var burstIndex = array_length(shot_stats.Shot_Air_Burst_Stats) - 1;
 			var near_boss = noone;
 			if instance_exists(obj_Boss_Parent) {
 				near_boss = instance_nearest(shxx + beamxx,shyy + beamyy, obj_Boss_Parent).id
 			}
-			if instance_exists(near_boss) and burstIndex >= 0 and shotairburststats[burstIndex] != false {
+			if instance_exists(near_boss) and burstIndex >= 0 and shot_stats.Shot_Air_Burst_Stats[burstIndex] != false {
 				var near_dist = point_distance(shxx + beamxx,shyy + beamyy,near_boss.x,near_boss.y) - 50
-				var sprd = shotairburststats[burstIndex].Spread
-				if near_dist <= shotairburststats[burstIndex].Range {
+				var sprd = shot_stats.Shot_Air_Burst_Stats[burstIndex].Spread
+				if near_dist <= shot_stats.Shot_Air_Burst_Stats[burstIndex].Range {
 					dir = -sprd / 2;
 					//shot_stats.Shot_Life_Span = shot_stats.Shot_Life_Span * 0.6;
 					shothitagain = 1
 					
-					repeat(shotairburststats[burstIndex].Amount) {
+					repeat(shot_stats.Shot_Air_Burst_Stats[burstIndex].Amount) {
 						
 						if sprd < 0 {
 							dir = random(sprd) - (sprd / 2)
@@ -103,22 +103,22 @@ function scr_Beam_Create(shxx, shyy, beamseg, beamdir, curvedir, beamstop, beamx
 						with instance_create(shxx + beamxx,shyy + beamyy,obj_Beam_Shot) {
 							scr_Duplicate_Shot_Stats();
 							
-							var vshotairburststats = other.shotairburststats[burstIndex]
+							var _v_shot_air_burst_stats = other.shot_stats.Shot_Air_Burst_Stats[burstIndex]
 							
-							if variable_struct_exists(vshotairburststats, "Shot_Lifespan") {
-								vshotairburststats.Shot_Lifespan = other.shot_stats.Shot_Life_Span
+							if variable_struct_exists(_v_shot_air_burst_stats, "Shot_Lifespan") {
+								_v_shot_air_burst_stats.Shot_Lifespan = other.shot_stats.Shot_Life_Span
 							}
 							
-							scr_Shot_Burst_Stats(vshotairburststats);
+							scr_Shot_Burst_Stats(_v_shot_air_burst_stats);
 							shotburststats = other.shotburststats;
 							shotextrastats = other.shotextrastats;
 							if burstIndex > 0 {
-								shotairburststats = [];
+								shot_stats.Shot_Air_Burst_Stats = [];
 								for(var i = 0; i <= burstIndex-1; i++) {
-									array_insert(shotairburststats,i,other.shotairburststats[i])
+									array_insert(shot_stats.Shot_Air_Burst_Stats,i,other.shot_stats.Shot_Air_Burst_Stats[i])
 								}
 							} else {
-								shotairburststats = false;	
+								shot_stats.Shot_Air_Burst_Stats = false;	
 							}
 							
 							shothitagain = 0;
@@ -130,7 +130,7 @@ function scr_Beam_Create(shxx, shyy, beamseg, beamdir, curvedir, beamstop, beamx
 							scr_Beam_Create(shxx, shyy, beamseg, beamdir + other.dir, curvedir, beamstop, beamxx, beamyy, beamtype, beamtotalsegs, beamspriteindex, beamsize, dirChange, homespeed, splitsize)
 						}
 							
-					    dir += shotairburststats[burstIndex].Spread;
+					    dir += shot_stats.Shot_Air_Burst_Stats[burstIndex].Spread;
 					}
 					scr_Create_Beam_Tip(shxx, shyy, beamxx, beamyy, beamsize, beamdir);
 					exit;

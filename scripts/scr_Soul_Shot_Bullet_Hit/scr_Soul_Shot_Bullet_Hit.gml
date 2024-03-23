@@ -2,8 +2,8 @@
 // https://help.yoyogames.com/hc/en-us/articles/360005277377 for more information
 function scr_Soul_Shot_Bullet_Hit(){
 
-	if shotdamage {
-		if shotshieldtype = 1 || (shotcontinue = 1 and other.soulshotblock = 1) {
+	if shot_stats.Shot_Damage {
+		if shot_stats.Shot_Shield_Type = 1 || (shot_stats.Shot_Continue = 1 and other.soulshotblock = 1) {
 		    if shot_stats.Shot_Power >= (other.bulletpower / 2) {
 		        shot_stats.Shot_Power -= (other.bulletpower / 2);
 		        instance_destroy(other);
@@ -12,21 +12,21 @@ function scr_Soul_Shot_Bullet_Hit(){
 		        instance_destroy();
 		    }
 			if shotessencedrain > 0 {
-				scr_Refresh_Soul(shotshieldpower * shotessencedrain);
+				scr_Refresh_Soul(shot_stats.Shot_Shield_Power * shotessencedrain);
 			}
 		    exit;
 		}
 
-		if shotshieldtype = 2 {
-		    if shotshieldpower >= (other.bulletpower / 2) {
-		        shotshieldpower -= (other.bulletpower / 2);
+		if shot_stats.Shot_Shield_Type = 2 {
+		    if shot_stats.Shot_Shield_Power >= (other.bulletpower / 2) {
+		        shot_stats.Shot_Shield_Power -= (other.bulletpower / 2);
 		        instance_destroy(other);
 		    } else {
-		        other.bulletpower -= (shotshieldpower * 2);
+		        other.bulletpower -= (shot_stats.Shot_Shield_Power * 2);
 		        instance_destroy();
 		    }
 			if shotessencedrain > 0 {
-				scr_Refresh_Soul(shotshieldpower * shotessencedrain);
+				scr_Refresh_Soul(shot_stats.Shot_Shield_Power * shotessencedrain);
 			}
 		    exit;
 		}
@@ -80,18 +80,18 @@ function scr_Soul_Shot_Bullet_Hit(){
 				}
 			}
 		
-			if shotshieldtype = 3 {
-				if shotshieldpower >= (other.bulletpower) {
+			if shot_stats.Shot_Shield_Type = 3 {
+				if shot_stats.Shot_Shield_Power >= (other.bulletpower) {
 				    instance_destroy(other);
 				} else {
 					
-					var _shield = shotshieldpower
+					var _shield = shot_stats.Shot_Shield_Power
 					with(other) {
 						scr_Bullet_Dampen(_shield);
 					}
 				}
 				if shotessencedrain > 0 {
-					scr_Refresh_Soul(shotshieldpower * shotessencedrain);
+					scr_Refresh_Soul(shot_stats.Shot_Shield_Power * shotessencedrain);
 				}
 				//exit;
 			}
@@ -129,23 +129,23 @@ function scr_Soul_Shot_Bullet_Hit(){
 		}
 
 
-		if (shotshieldtype = 4 || (shotcontinue = 1 and other.soulshotblock = 1)) and other.speed > 0 {
-		    if shotshieldpower >= (other.bulletpower) {
+		if (shot_stats.Shot_Shield_Type = 4 || (shot_stats.Shot_Continue = 1 and other.soulshotblock = 1)) and other.speed > 0 {
+		    if shot_stats.Shot_Shield_Power >= (other.bulletpower) {
 		        other.speed = 0;
 				other.bulletspeed = 0;
 		        //instance_destroy();
 		    } else {
-				other.bulletpower -= shotshieldpower;
+				other.bulletpower -= shot_stats.Shot_Shield_Power;
 		        other.speed -= other.speed * (other.bulletpower / other.bulletpowermax);
 				other.bulletspeed = other.bulletspeed * (other.bulletspeed / other.bulletpowermax);
 		        //instance_destroy();
 		    }
 			if shotessencedrain > 0 {
-				scr_Refresh_Soul(shotshieldpower * shotessencedrain);
+				scr_Refresh_Soul(shot_stats.Shot_Shield_Power * shotessencedrain);
 			}
-			shotshieldtype = 0;
+			shot_stats.Shot_Shield_Type = 0;
 			speed = 0;
-			shotacceleration = 1;
+			shot_stats.Shot_Acceleration = 1;
 			x = other.x;
 			y = other.y - (7.5 * 15);
 			direction = 270;

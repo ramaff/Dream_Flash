@@ -1,11 +1,15 @@
 function scr_Default_Shot_Stats() {
 	//global.instanceidincrementer = 1;
 	
+	bullet_hits = {}
+	
+	shot_stats = {};
+	
 	/*
 	shot_id = global.instanceidincrementer - 1;
 	shot_boss_id = shot_id;
 	
-	shotexisttime = 0;
+	shot_stats.Shot_Exist_Time = 0;
 
 	bullet_hits = {}
 	
@@ -18,15 +22,15 @@ function scr_Default_Shot_Stats() {
 	shotgem = 0;
 	
 	shotaccuracy = 15;
-	shotdamage = true;
+	shot_stats.Shot_Damage = true;
 
-	shotmousemaintain = 0;
-	shotsoulmaintain = 0;
+	shot_stats.Shot_Mouse_Maintain = 0;
+	shot_stats.Shot_Soul_Maintain = 0;
 	shotxmaintain = 0;
 	shotymaintain = 0;
 	shotdirectionaddition = 0;
-	shotformshow = 1;
-	shotmovement = 1;
+	shot_stats.Shot_Form_Show = 1;
+	shot_stats.Shot_Movement = 1;
 	shothealemit = 0;
 	shotlight = 0;
 	shotlightsize = 0;
@@ -34,24 +38,24 @@ function scr_Default_Shot_Stats() {
 	
 	feartarget = noone;
 
-	shottrail = 0;
-	shottrailtype = obj_Weapon_Trail;
-	shottrailhittype = obj_Friction_Part;
-	shottrailsprite = spr_Essence_Trail_Bit;
-	shottrailcolor1 = c_white;
-	shottrailcolor2 = c_white;
-	shottraillife = 15;
-	shottrailarea = 12;
-	shottrailspeed = 0;
-	shottraildirection = 0;
-	shottrailfrequency = 1;
-	shottrailfade = 1;
-	shottrailhitcount = 7;
-	shottrailhitspeed = 10;
-	shottrailhitlife = 7;
-	shottrailhitsprite = spr_Soul_Bit;
+	shot_stats.Shot_Trail = 0;
+	shot_stats.Shot_Trail_Type = obj_Weapon_Trail;
+	shot_stats.Shot_Trail_Hit_Type = obj_Friction_Part;
+	shot_stats.Shot_Trail_Sprite = spr_Essence_Trail_Bit;
+	shot_stats.Shot_Trail_Color1 = c_white;
+	shot_stats.Shot_Trail_Color2 = c_white;
+	shot_stats.Shot_Trail_Life = 15;
+	shot_stats.Shot_Trail_Area = 12;
+	shot_stats.Shot_Trail_Speed = 0;
+	shot_stats.Shot_Trail_Direction = 0;
+	shot_stats.Shot_Trail_Frequency = 1;
+	shot_stats.Shot_Trail_Fade = 1;
+	shot_stats.Shot_Trail_Hit_Count = 7;
+	shot_stats.Shot_Trail_Hit_Speed = 10;
+	shot_stats.Shot_Trail_Hit_Life = 7;
+	shot_stats.Shot_Trail_Hit_Speed = spr_Soul_Bit;
 	
-	shotbeam = 0;
+	shot_stats.Shot_Beam = 0;
 	
 	shotexplosionsprite = spr_Explosion_Part;
 	shotexplosionpart = spr_Explosion_Part;
@@ -69,13 +73,13 @@ function scr_Default_Shot_Stats() {
 	shot_stats.Shot_Life_Span = 100;
 	shot_stats.Shot_Size = 1;
 	shot_stats.Shot_Size_Max = 1;
-	shotsouldamage = 0;
-	shotmelee = 0;
-	shotpointangle = 0;
+	shot_stats.Shot_Soul_Damage = 0;
+	shot_stats.Shot_Melee = 0;
+	shot_stats.Shot_Point_Angle = 0;
 	shotkeepdirection = 0;
-	shotSizeRelation = 1;
+	shot_stats.Shot_Size_Relation = 1;
 
-	shotinitspeed = shot_stats.Shot_Speed;
+	shot_stats.Shot_Init_Speed = shot_stats.Shot_Speed;
 
 	shotduplicatesprite = spr_Soul_Shot;
 	
@@ -95,16 +99,16 @@ function scr_Default_Shot_Stats() {
 	shotmagical = 0;
 	shotenergy = 0;
 
-	shotgrow = 0;
-	shotgrowtime = 0;
-	shotgrowsize = 0;
+	shot_stats.Shot_Grow = 0;
+	shot_stats.Shot_Grow_Time = 0;
+	shot_stats.Shot_Grow_Size = 0;
 
-	shotwavedirection = 0;
-	shotwaveacceleration = 0;
-	shotwavetime = 0;
+	shot_stats.Shot_Wave_Direction = 0;
+	shot_stats.Shot_Wave_Acceleration = 0;
+	shot_stats.Shot_Wave_Time = 0;
 
-	shotlobbing = 0;
-	shotfacedirection = 0;
+	shot_stats.Shot_Lobbing = 0;
+	shot_stats.Shot_Face_Direction = 0;
 	
 	shotscreenshake = 0;
 
@@ -127,27 +131,27 @@ function scr_Default_Shot_Stats() {
 	shotextrahitxx = 0;
 	shotextrahityy = 0;
 	
-	shotshrink = 0;
-	shotfade = 0;
+	shot_stats.Shot_Shrink = 0;
+	shot_stats.Shot_Fade = 0;
 
-	shotacceleration = 0;
-	shotfriction = 0;
-	shotminspeed = 0;
+	shot_stats.Shot_Acceleration = 0;
+	shot_stats.Shot_Friction = 0;
+	shot_stats.Shot_Min_Speed = 0;
 
 	shotcritchance = 0;
 	shotcritmultiple = 1;
 
-	shotorbitaltype = 0;
+	shot_stats.Shot_Orbital_Type = 0;
 	shotOrbit = 0;
-	shotAngle = 0;
+	shot_stats.Shot_Orbit_Angle = 0;
 
-	shotmelee = 0;
-	shotairtarget = 0;
+	shot_stats.Shot_Melee = 0;
+	shot_stats.Shot_Air_Target = 0;
 	shotphasing = 0;
-	shotlooping = 0;
-	shotcomeback = 0;
+	shot_stats.Shot_Looping = 0;
+	shot_stats.Shot_Comeback = 0;
 	shotpierce = 1;
-	shotbounce = 0;
+	shot_stats.Shot_Bounce = 0;
 	shotarmourpierce = 0;
 	shotarmourtear = 0;
 	shotchain = 0;
@@ -158,15 +162,15 @@ function scr_Default_Shot_Stats() {
 	shot_stats.Shot_Homing_Type = 0;
 	shot_stats.Shot_Homing_Range = 0;
 	shothomingspeed = 0;
-	shotcontinue = 0;
+	shot_stats.Shot_Continue = 0;
 	shothealing = 0;
 
-	shotImpactPowerLevel = 0;
+	shot_stats.Shot_Impact_Power_Level = 0;
 
-	shotimpactpower = 0;
-	shotimpacttype = 0;
-	shotimpactsize = 0;
-	shotimpactexplode = 1;
+	shot_stats.Shot_Impact_Power = 0;
+	shot_stats.Shot_Impact_Type = 0;
+	shot_stats.Shot_Impact_Size = 0;
+	shot_stats.Shot_Impact_Explode = 1;
 	
 	shotbursttype = 0;
 	shotburstamount = 0;
@@ -186,18 +190,18 @@ function scr_Default_Shot_Stats() {
 	shotburstimpact = 0;
 	
 	shotburststats = false;
-	shotairburststats = false;
+	shot_stats.Shot_Air_Burst_Stats = false;
 	shotextrastats = false;
 	
-	shotaura = 0;
-	shotaurapower = 0;
-	shotaurarange = 0;
-	shotaurasprite = 0;
+	shot_stats.Shot_Aura = 0;
+	shot_stats.Shot_Aura_Power = 0;
+	shot_stats.Shot_Aura_Range = 0;
+	shot_stats.Shot_Aura_Sprite = 0;
 	
-	shotrecycle = 0;
+	shot_stats.Shot_Recycle = 0;
 	
-	shotshieldtype = 0;
-	shotshieldpower = 0;
+	shot_stats.Shot_Shield_Type = 0;
+	shot_stats.Shot_Shield_Power = 0;
 	shotreboundtype = 0;
 	shotreboundpower = 0;
 	shotweaken = 0;
@@ -217,7 +221,7 @@ function scr_Default_Shot_Stats() {
 	shotlifedrain = 0;
 	shotessencedrain = 0;
 	
-	shotsnakemove = 0;
+	shot_stats.Shot_Snake_Move = 0;
 	shottargetX = 0;
 	shottargetY = 0;
 
@@ -226,18 +230,19 @@ function scr_Default_Shot_Stats() {
 	shotbulletredirectchance = 0;
 	shotbulletdisplace = 0;
 	
-	shotwander = 0;
+	shot_stats.Shot_Wander = 0;
 	
-	shotangularvelocity = 0;
+	shot_stats.Shot_Angular_Velocity = 0;
 	
-	shotwishful = 0;
+	shot_stats.Shot_Wishful = 0;
 	shot_stats.Shot_Miracle = 0;
 	
-	shotsucktype = 1;
-	shotsuck = 0;
+	shot_stats.Shot_Suck_Type = 1;
+	shot_stats.Shot_Suck = 0;
 	
-	followtarget = noone;
 	*/
+	//shot_stats.Shot_Init_Speed = shot_stats.Shot_Speed;
+	followtarget = noone;
 	
 	scr_A07_Setup();
 

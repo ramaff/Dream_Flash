@@ -19,43 +19,43 @@ function scr_Duplicate_Shot_Stats() {
 	otarget = noone;
 	
 	shotaccuracy = other.shotaccuracy
-	shotdamage = other.shotdamage
+	shot_stats.Shot_Damage = other.shot_stats.Shot_Damage
 
 	shotangle = other.shotangle;
 	shotframe = other.shotframe;
 	shotimagespeed = other.shotimagespeed;
-	shotmelee = other.shotmelee;
-	shotformshow = other.shotformshow;
+	shot_stats.Shot_Melee = other.shot_stats.Shot_Melee;
+	shot_stats.Shot_Form_Show = other.shot_stats.Shot_Form_Show;
 	shothealing = other.shothealing;
 	shothealemit = other.shothealemit;
-	shotmovement = other.shotmovement;
+	shot_stats.Shot_Movement = other.shot_stats.Shot_Movement;
 	shotfolloworigin = other.shotfolloworigin;
 	shotxmaintain = other.shotxmaintain;
 	shotymaintain = other.shotymaintain;
-	shotSizeRelation = other.shotSizeRelation;
+	shot_stats.Shot_Size_Relation = other.shot_stats.Shot_Size_Relation;
 
-	shottrail = other.shottrail;
-	shottrailtype = other.shottrailtype;
-	shottrailsprite = other.shottrailsprite;
-	shottrailcolor1 = other.shottrailcolor1;
-	shottrailcolor2 = other.shottrailcolor2;
-	shottraillife = other.shottraillife;
-	shottrailarea = other.shottrailarea;
-	shottrailspeed = other.shottrailspeed;
-	shottraildirection = other.shottraildirection;
-	shottrailfrequency = other.shottrailfrequency;
-	shottrailfade = other.shottrailfade;
-	shottrailhitcount = other.shottrailhitcount;
-	shottrailhitspeed = other.shottrailhitspeed;
-	shottrailhitlife = other.shottrailhitlife;
-	shottrailhitsprite = other.shottrailhitsprite;	
-	shottrailhittype = other.shottrailhittype;
+	shot_stats.Shot_Trail = other.shot_stats.Shot_Trail;
+	shot_stats.Shot_Trail_Type = other.shot_stats.Shot_Trail_Type;
+	shot_stats.Shot_Trail_Sprite = other.shot_stats.Shot_Trail_Sprite;
+	shot_stats.Shot_Trail_Color1 = other.shot_stats.Shot_Trail_Color1;
+	shot_stats.Shot_Trail_Color2 = other.shot_stats.Shot_Trail_Color2;
+	shot_stats.Shot_Trail_Life = other.shot_stats.Shot_Trail_Life;
+	shot_stats.Shot_Trail_Area = other.shot_stats.Shot_Trail_Area;
+	shot_stats.Shot_Trail_Speed = other.shot_stats.Shot_Trail_Speed;
+	shot_stats.Shot_Trail_Direction = other.shot_stats.Shot_Trail_Direction;
+	shot_stats.Shot_Trail_Frequency = other.shot_stats.Shot_Trail_Frequency;
+	shot_stats.Shot_Trail_Fade = other.shot_stats.Shot_Trail_Fade;
+	shot_stats.Shot_Trail_Hit_Count = other.shot_stats.Shot_Trail_Hit_Count;
+	shot_stats.Shot_Trail_Hit_Speed = other.shot_stats.Shot_Trail_Hit_Speed;
+	shot_stats.Shot_Trail_Hit_Life = other.shot_stats.Shot_Trail_Hit_Life;
+	shot_stats.Shot_Trail_Hit_Speed = other.shot_stats.Shot_Trail_Hit_Speed;	
+	shot_stats.Shot_Trail_Hit_Type = other.shot_stats.Shot_Trail_Hit_Type;
 	
 	shotexplosionsprite = other.shotexplosionsprite;
 	shotexplosionpart = other.shotexplosionpart;
 	shotexplosionsmoke = other.shotexplosionsmoke;
 
-	image_rotation_speed = other.image_rotation_speed;
+	shot_stats.Image_Rotation_Speed = other.shot_stats.Image_Rotation_Speed;
 
 	shotorigin = other.shotorigin;
 
@@ -69,10 +69,10 @@ function scr_Duplicate_Shot_Stats() {
 	image_speed = shotimagespeed;
 	image = other.image
 	image_alpha = other.image;
-	shotpointangle = other.shotpointangle;
+	shot_stats.Shot_Point_Angle = other.shot_stats.Shot_Point_Angle;
 	shotkeepdirection = other.shotkeepdirection;
 	if shotkeepdirection = 1 {
-		shotpointangle = 1;	
+		shot_stats.Shot_Point_Angle = 1;	
 	}*/
 	
 	/*
@@ -80,15 +80,15 @@ function scr_Duplicate_Shot_Stats() {
 	im = direction;
 
 	shotPowerLevel = other.shotPowerLevel;
-	shotImpactPowerLevel = other.shotImpactPowerLevel;
+	shot_stats.Shot_Impact_Power_Level = other.shot_stats.Shot_Impact_Power_Level;
 	shot_stats.Shot_Speed = other.shot_stats.Shot_Speed;
 	shotknockback = other.shotknockback;
 	shot_stats.Shot_Life_Span = other.shot_stats.Shot_Life_Span;
 	shot_stats.Shot_Timer = shot_stats.Shot_Life_Span;
 	
-	shotexisttime = other.shotexisttime;
+	shot_stats.Shot_Exist_Time = other.shot_stats.Shot_Exist_Time;
 
-	shotinitspeed = shot_stats.Shot_Speed;
+	shot_stats.Shot_Init_Speed = shot_stats.Shot_Speed;
 
 	shot_stats.Shot_Size = other.shot_stats.Shot_Size;
 	if other.shotburststats = false {
@@ -97,11 +97,11 @@ function scr_Duplicate_Shot_Stats() {
 		shot_stats.Shot_Power = other.shot_stats.Shot_Power;	
 	}
 	
-	if other.shotairburststats != false {
+	if other.shot_stats.Shot_Air_Burst_Stats != false {
 		shot_stats.Shot_Power = other.shot_stats.Shot_Power;
 	}
 	
-	shotbeam = other.shotbeam
+	shot_stats.Shot_Beam = other.shot_stats.Shot_Beam
 	*/
 	
 	image_xscale = shot_stats.Shot_Size;
@@ -113,33 +113,33 @@ function scr_Duplicate_Shot_Stats() {
 	
 	shotscreenshake = other.shotscreenshake - 5;
 
-	shotsouldamage = other.shotsouldamage * other.shotburstpower / 10;
+	shot_stats.Shot_Soul_Damage = other.shot_stats.Shot_Soul_Damage * other.shotburstpower / 10;
 
-	shotmousemaintain = other.shotmousemaintain;
-	shotsoulmaintain = other.shotsoulmaintain;
+	shot_stats.Shot_Mouse_Maintain = other.shot_stats.Shot_Mouse_Maintain;
+	shot_stats.Shot_Soul_Maintain = other.shot_stats.Shot_Soul_Maintain;
 	shotdirectionaddition = other.shotdirectionaddition;
 
-	shotgrow = other.shotgrow;
-	shotgrowtime = other.shotgrowtime;
-	shotgrowsize = other.shotgrowsize;
+	shot_stats.Shot_Grow = other.shot_stats.Shot_Grow;
+	shot_stats.Shot_Grow_Time = other.shot_stats.Shot_Grow_Time;
+	shot_stats.Shot_Grow_Size = other.shot_stats.Shot_Grow_Size;
 
-	shotlobbing = other.shotlobbing;
-	shotfacedirection = other.shotfacedirection;
-	shotbounceY = 0;
-	shotbouncespeed = 10;
-	shotbouncedirection = 1;
+	shot_stats.Shot_Lobbing = other.shot_stats.Shot_Lobbing;
+	shot_stats.Shot_Face_Direction = other.shot_stats.Shot_Face_Direction;
+	shot_stats.Shot_Bounce_Y = 0;
+	shot_stats.Shot_Bounce_Speed = 10;
+	shot_stats.Shot_Bounce_Direction = 1;
 
-	if shotlobbing = 1 {
-		shotbounceY = 0;
-	    shotbouncespeed = 10;
-	    shotbouncedirection = 1;	
+	if shot_stats.Shot_Lobbing = 1 {
+		shot_stats.Shot_Bounce_Y = 0;
+	    shot_stats.Shot_Bounce_Speed = 10;
+	    shot_stats.Shot_Bounce_Direction = 1;	
 	}
 
-	shotwavedirection = other.shotwavedirection;
-	shotwaveacceleration = other.shotwaveacceleration;
-	shotwavetime = other.shotwavetime;
+	shot_stats.Shot_Wave_Direction = other.shot_stats.Shot_Wave_Direction;
+	shot_stats.Shot_Wave_Acceleration = other.shot_stats.Shot_Wave_Acceleration;
+	shot_stats.Shot_Wave_Time = other.shot_stats.Shot_Wave_Time;
 	
-	shotacceleration = other.shotacceleration
+	shot_stats.Shot_Acceleration = other.shot_stats.Shot_Acceleration
 
 	var i = 0;
 	for(i = 0; i < 5; i++) {
@@ -162,13 +162,13 @@ function scr_Duplicate_Shot_Stats() {
 	shotextrahitxx = other.shotextrahitxx;
 	shotextrahityy = other.shotextrahityy;
 	
-	shotshrink = other.shotshrink;
-	shotfade = other.shotfade;
+	shot_stats.Shot_Shrink = other.shot_stats.Shot_Shrink;
+	shot_stats.Shot_Fade = other.shot_stats.Shot_Fade;
 	
 	baseDepth = other.baseDepth;
 
-	shotfriction = 0;
-	shotminspeed = 0;
+	shot_stats.Shot_Friction = 0;
+	shot_stats.Shot_Min_Speed = 0;
 
 	shotimaginary = other.shotimaginary;
 	shotsharpandsolid = other.shotsharpandsolid;
@@ -176,20 +176,20 @@ function scr_Duplicate_Shot_Stats() {
 	shotmagical = other.shotmagical;
 	shotenergy = other.shotenergy;
 
-	shotorbitaltype = other.shotorbitaltype;
+	shot_stats.Shot_Orbital_Type = other.shot_stats.Shot_Orbital_Type;
 	shotOrbit = other.shotOrbit;
 
-	shotcontinue = other.shotcontinue;
+	shot_stats.Shot_Continue = other.shot_stats.Shot_Continue;
 
 	shotcritchance = other.shotcritchance;
 	shotcritmultiple = other.shotcritmultiple;
-	shotmelee = other.shotmelee;
-	shotairtarget = other.shotairtarget;
+	shot_stats.Shot_Melee = other.shot_stats.Shot_Melee;
+	shot_stats.Shot_Air_Target = other.shot_stats.Shot_Air_Target;
 	shotphasing = other.shotphasing;
-	shotlooping = other.shotlooping;
-	shotcomeback = other.shotcomeback;
+	shot_stats.Shot_Looping = other.shot_stats.Shot_Looping;
+	shot_stats.Shot_Comeback = other.shot_stats.Shot_Comeback;
 	shotpierce = other.shotpierce;
-	shotbounce = other.shotbounce;
+	shot_stats.Shot_Bounce = other.shot_stats.Shot_Bounce;
 	shotarmourpierce = other.shotarmourpierce;
 	shotarmourtear = other.shotarmourtear;
 	shotchain = other.shotchain;
@@ -200,10 +200,10 @@ function scr_Duplicate_Shot_Stats() {
 	shot_stats.Shot_Homing_Type = other.shot_stats.Shot_Homing_Type;
 	shot_stats.Shot_Homing_Range = other.shot_stats.Shot_Homing_Range;
 	shothomingspeed = other.shothomingspeed;
-	shotimpactpower = other.shotimpactpower;
-	shotimpactexplode = other.shotimpactexplode;
-	shotimpacttype = other.shotimpacttype;
-	shotimpactsize = other.shotimpactsize;
+	shot_stats.Shot_Impact_Power = other.shot_stats.Shot_Impact_Power;
+	shot_stats.Shot_Impact_Explode = other.shot_stats.Shot_Impact_Explode;
+	shot_stats.Shot_Impact_Type = other.shot_stats.Shot_Impact_Type;
+	shot_stats.Shot_Impact_Size = other.shot_stats.Shot_Impact_Size;
 	
 	
 	if other.shotbursttype = 2 {
@@ -215,12 +215,12 @@ function scr_Duplicate_Shot_Stats() {
 		shotextrahitfrequency[i] = other.shotburstextrahitfrequency;
 		shotextrahitpower[i] = other.shotburstextrahitpower;
 		shotbulletdisplace = other.shotburstbulletdisplacement;
-		shotpointangle = other.shotburstpointangle;
-		shotimpacttype = other.shotburstimpact;
+		shot_stats.Shot_Point_Angle = other.shotburstpointangle;
+		shot_stats.Shot_Impact_Type = other.shotburstimpact;
 	}
 
 	shotburststats = false;
-	shotairburststats = false;
+	shot_stats.Shot_Air_Burst_Stats = false;
 	shotextrastats = other.shotextrastats;
 	
 	shotbursttype = -1;
@@ -234,15 +234,15 @@ function scr_Duplicate_Shot_Stats() {
 	shotburstrange = 0;
 	shotburstspread = 0;
 	
-	shotaura = other.shotaura;
-	shotaurapower = other.shotaurapower;
-	shotaurarange = other.shotaurarange;
-	shotaurasprite = other.shotaurasprite;
+	shot_stats.Shot_Aura = other.shot_stats.Shot_Aura;
+	shot_stats.Shot_Aura_Power = other.shot_stats.Shot_Aura_Power;
+	shot_stats.Shot_Aura_Range = other.shot_stats.Shot_Aura_Range;
+	shot_stats.Shot_Aura_Sprite = other.shot_stats.Shot_Aura_Sprite;
 	
-	shotrecycle = other.shotrecycle;
+	shot_stats.Shot_Recycle = other.shot_stats.Shot_Recycle;
 	
-	shotshieldtype = other.shotshieldtype;
-	shotshieldpower = 0;
+	shot_stats.Shot_Shield_Type = other.shot_stats.Shot_Shield_Type;
+	shot_stats.Shot_Shield_Power = 0;
 	shotreboundtype = other.shotreboundtype;
 	shotreboundpower = other.shotreboundpower;
 	shotweaken = other.shotweaken;
@@ -269,13 +269,13 @@ function scr_Duplicate_Shot_Stats() {
 	shottargetX = other.shottargetX;
 	shottargetY = other.shottargetY;
 	
-	shotsnakemove = 0;
+	shot_stats.Shot_Snake_Move = 0;
 	
-	if shotorbitaltype > 0 {
+	if shot_stats.Shot_Orbital_Type > 0 {
 		shotOrbit = other.shotOrbit;
-		shotAngle = other.shotAngle;
-		shotCenterX = other.shotCenterX;
-		shotCenterY = other.shotCenterY;
+		shot_stats.Shot_Orbit_Angle = other.shot_stats.Shot_Orbit_Angle;
+		shot_stats.Shot_Center_X = other.shot_stats.Shot_Center_X;
+		shot_stats.Shot_Center_Y = other.shot_stats.Shot_Center_Y;
 	}
 	
 	shotbulletredirect = other.shotbulletredirect;
@@ -285,15 +285,15 @@ function scr_Duplicate_Shot_Stats() {
 		shotbulletdisplace = other.shotbulletdisplace;
 	}
 	
-	shotwander = other.shotwander;
+	shot_stats.Shot_Wander = other.shot_stats.Shot_Wander;
 	
-	shotwishful = other.shotwishful;
+	shot_stats.Shot_Wishful = other.shot_stats.Shot_Wishful;
 	shot_stats.Shot_Miracle = other.shot_stats.Shot_Miracle;
 	
-	shotsucktype = other.shotsucktype
-	shotsuck = other.shotsuck;
+	shot_stats.Shot_Suck_Type = other.shot_stats.Shot_Suck_Type
+	shot_stats.Shot_Suck = other.shot_stats.Shot_Suck;
 	
-	shotangularvelocity = other.shotangularvelocity;
+	shot_stats.Shot_Angular_Velocity = other.shot_stats.Shot_Angular_Velocity;
 	
 	shotA07 = other.shotA07;
 	followtarget = other.followtarget;
@@ -314,5 +314,8 @@ function scr_Duplicate_Shot_Stats() {
 
 	scr_Shot_Particle_Setup();
 	*/
+	shotA07 = other.shotA07;
+	followtarget = other.followtarget;
+	feartarget = other.feartarget;
 
 }

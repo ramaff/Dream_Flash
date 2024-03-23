@@ -9,15 +9,15 @@ function scr_Shot_Burst_Stats(vshotburststats){
 	} */
 	if variable_struct_exists(vshotburststats, "Burst_Power") {
 		shot_stats.Shot_Power = shot_stats.Shot_Power * vshotburststats.Burst_Power;
-		shotaurapower = shotaurapower * vshotburststats.Burst_Power;
+		shot_stats.Shot_Aura_Power = shot_stats.Shot_Aura_Power * vshotburststats.Burst_Power;
 		shot_stats.Shot_Powermax = shot_stats.Shot_Power;
 	} else {
 		shot_stats.Shot_Power = vshotburststats.Shot_Power;
-		shotaurapower = vshotburststats.Shot_Power;
+		shot_stats.Shot_Aura_Power = vshotburststats.Shot_Power;
 		shot_stats.Shot_Powermax = shot_stats.Shot_Power;	
 	}
 	if variable_struct_exists(vshotburststats, "Burst_Soul_Shot_Damage") {
-		shotsouldamage = vshotburststats.Burst_Soul_Shot_Damage;
+		shot_stats.Shot_Soul_Damage = vshotburststats.Burst_Soul_Shot_Damage;
 		shot_stats.Shot_Speed = sqrt(shot_stats.Shot_Speed) + 3;
 		speed = shot_stats.Shot_Speed;
 		shot_stats.Shot_Life_Span = shot_stats.Shot_Life_Span + 60;
@@ -51,10 +51,10 @@ function scr_Shot_Burst_Stats(vshotburststats){
 		speed = shot_stats.Shot_Speed;
 	}
 	if variable_struct_exists(vshotburststats, "Shot_Point_Angle") {
-		shotpointangle = vshotburststats.Shot_Point_Angle
+		shot_stats.Shot_Point_Angle = vshotburststats.Shot_Point_Angle
 	}
 	if variable_struct_exists(vshotburststats, "Shot_Impact_Type") {
-		shotimpacttype = vshotburststats.Shot_Impact_Type
+		shot_stats.Shot_Impact_Type = vshotburststats.Shot_Impact_Type
 	}
 
 }

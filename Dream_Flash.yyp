@@ -2982,7 +2982,6 @@
     {"id":{"name":"spr_Blind_Hunger_Gust","path":"sprites/spr_Blind_Hunger_Gust/spr_Blind_Hunger_Gust.yy",},},
     {"id":{"name":"sd_Small_Boss_Shoot","path":"sounds/sd_Small_Boss_Shoot/sd_Small_Boss_Shoot.yy",},},
     {"id":{"name":"spr_Sandman_Phase_2_Send","path":"sprites/spr_Sandman_Phase_2_Send/spr_Sandman_Phase_2_Send.yy",},},
-    {"id":{"name":"scr_Soul_Shot_Cleanup","path":"scripts/scr_Soul_Shot_Cleanup/scr_Soul_Shot_Cleanup.yy",},},
     {"id":{"name":"spr_The_Soul","path":"sprites/spr_The_Soul/spr_The_Soul.yy",},},
     {"id":{"name":"spr_Explosion_Part","path":"sprites/spr_Explosion_Part/spr_Explosion_Part.yy",},},
     {"id":{"name":"obj_Big_Snake_Bullet","path":"objects/obj_Big_Snake_Bullet/obj_Big_Snake_Bullet.yy",},},

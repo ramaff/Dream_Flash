@@ -3,10 +3,10 @@
 function scr_V09_old() {
 
 	if global.V[9] >= 1 {
-		//shotlobbing = 1;
-		//shotbounceY = 0;
-	    //shotbouncespeed = 10;
-	    //shotbouncedirection = 1;	
+		//shot_stats.Shot_Lobbing = 1;
+		//shot_stats.Shot_Bounce_Y = 0;
+	    //shot_stats.Shot_Bounce_Speed = 10;
+	    //shot_stats.Shot_Bounce_Direction = 1;	
 		
 		shot_stats.Shot_Powermax = shot_stats.Shot_Powermax * (0.5);
 		shot_stats.Shot_Power = shot_stats.Shot_Powermax;

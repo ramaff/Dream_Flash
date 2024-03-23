@@ -3,7 +3,7 @@
 function scr_Explosion_Splash(){
 	
 	/*
-	var dist = shotimpactsize * 0.75;
+	var dist = shot_stats.Shot_Impact_Size * 0.75;
 	
 	if dist < 32 {
 		dist = 32	

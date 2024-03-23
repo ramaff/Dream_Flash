@@ -9,7 +9,7 @@ function scr_Boss_Splash_Damage_Calc() {
 	    bossReaction++;
 	}
 
-	shotDamageMult = other.shotimpactpower / other.shotImpactPowerLevel;
+	shotDamageMult = other.shot_stats.Shot_Impact_Power / other.shot_stats.Shot_Impact_Power_Level;
 	crit = other.shotcritchance + irandom(99);
 	if crit >= 100 {
 	    shotDamageMult = shotDamageMult * other.shotcritmultiple;

@@ -15,7 +15,7 @@ if instance_exists(obj_Boss_Parent) {
     Shot_Knockback = 11;
     Shot_Lifespan = 7;
 	Shot_Angle = -90 + point_direction(x,y,instance_nearest(x,y,obj_Boss_Parent).x,instance_nearest(x,y,obj_Boss_Parent).y);
-	Shot_Image_Rotation_Speed = 30;
+	Image_Rotation_Speed = 30;
 	Shot_Phasing = 1;
 	
 	speed = 9;

@@ -2,7 +2,7 @@
 // https://help.yoyogames.com/hc/en-us/articles/360005277377 for more information
 function scr_Soul_Shot_Hazard_Hit(){
 
-	if shotdamage {
+	if shot_stats.Shot_Damage {
 
 		if other.soulshotblock = 1 {
 		    var hit_again = variable_struct_exists(other.projectile_hits, shot_id)

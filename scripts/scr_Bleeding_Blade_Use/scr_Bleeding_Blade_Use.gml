@@ -41,7 +41,7 @@ function scr_Bleeding_Blade_Use() {
 	current_weapon_stats.Shot_Lifespan = 15;
 	current_weapon_stats.Shot_Angle = point_direction(x,y,mouse_x,mouse_y);
 	//current_weapon_stats.Shot_Angle = 90 + point_direction(x,y,mouse_x,mouse_y);
-	//current_weapon_stats.Shot_Image_Rotation_Speed = -30;
+	//current_weapon_stats.Image_Rotation_Speed = -30;
 	current_weapon_stats.Shot_Pierce = 20;
 	//current_weapon_stats.Shot_Shield_Type = 3;
 	//current_weapon_stats.Shot_Shield_Power = Shot_Power / 5;

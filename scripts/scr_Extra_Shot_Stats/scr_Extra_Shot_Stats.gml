@@ -17,17 +17,17 @@ function scr_Extra_Shot_Stats() {
 	/*
 	var shotaddedpow = ((10 + other.spowerfactor + other.sattackfactorbuffamount) / 10) * other.spower / 10 * scr_Class_Stat_Damage_Multiplier();
 
-	image_rotation_speed = other.Shot_Image_Rotation_Speed;
+	shot_stats.Image_Rotation_Speed = other.Image_Rotation_Speed;
 
 	image = other.Weapon_Split_Visible;
 	shothitagain = other.Weapon_Split_Hit_Again;
-	shotmelee = other.Weapon_Melee;
+	shot_stats.Shot_Melee = other.Weapon_Melee;
 	
 	shotburststats = other.Shot_Burst_Stats;
-	shotairburststats = other.Shot_Air_Burst_Stats;
+	shot_stats.Shot_Air_Burst_Stats = other.Shot_Air_Burst_Stats;
 	shotextrastats = other.Shot_Extra_Stats;
 	
-	shotbeam = other.Shot_Beam;
+	shot_stats.Shot_Beam = other.Shot_Beam;
 	
 	//Print_DF("shotextrastats: " + string(shotextrastats))
 	//Print_DF("Shot_Extra_Stats: " + string(other.Shot_Extra_Stats))
@@ -50,7 +50,13 @@ function scr_Extra_Shot_Stats() {
 
 	if other.Shot_Point_Angle = 1 {
 		image_angle = direction;	
-		shotpointangle = other.Shot_Point_Angle;
+		shot_stats.Shot_Point_Angle = other.Shot_Point_Angle;
+	}
+	
+	if shot_stats.Shot_Lobbing >= 1 {
+		shot_stats.Shot_Bounce_Y = 0;
+	    shot_stats.Shot_Bounce_Speed = 10;
+	    shot_stats.Shot_Bounce_Direction = 1;	
 	}
 
 	/*
@@ -62,31 +68,31 @@ function scr_Extra_Shot_Stats() {
 
 	shot_boss_id = real(shot_id);
 
-	shotmousemaintain = other.Weapon_Mouse_Maintain;
-	shotsoulmaintain = other.Weapon_Soul_Maintain;
+	shot_stats.Shot_Mouse_Maintain = other.Weapon_Mouse_Maintain;
+	shot_stats.Shot_Soul_Maintain = other.Weapon_Soul_Maintain;
 	shotxmaintain = other.Weapon_X_Maintain;
 	shotymaintain = other.Weapon_Y_Maintain;
 	shotfolloworigin = other.id;
-	shotmovement = other.Shot_Movement;
+	shot_stats.Shot_Movement = other.Shot_Movement;
 	shotkeepdirection = other.Shot_Keep_Direction;
-	shotdamage = other.Shot_Damage;
+	shot_stats.Shot_Damage = other.Shot_Damage;
 
-	shottrail = other.Shot_Trail;
-	shottrailtype = other.Shot_Trail_Type;
-	shottrailsprite = other.Shot_Trail_Sprite;
-	shottrailcolor1 = other.Shot_Trail_Color1;
-	shottrailcolor2 = other.Shot_Trail_Color2;
-	shottraillife = other.Shot_Trail_Life;
-	shottrailarea = other.Shot_Trail_Area;
-	shottrailspeed = other.Shot_Trail_Speed;
-	shottraildirection = other.Shot_Trail_Direction;
-	shottrailfrequency = other.Shot_Trail_Frequency;
-	shottrailfade = other.Shot_Trail_Fade;
-	shottrailhitcount = other.Shot_Trail_Hit_Count;
-	shottrailhitspeed = other.Shot_Trail_Hit_Speed;
-	shottrailhitlife = other.Shot_Trail_Hit_Life;
-	shottrailhitsprite = other.Shot_Trail_Hit_Sprite;
-	shottrailhittype = other.Shot_Trail_Hit_Type;
+	shot_stats.Shot_Trail = other.Shot_Trail;
+	shot_stats.Shot_Trail_Type = other.Shot_Trail_Type;
+	shot_stats.Shot_Trail_Sprite = other.Shot_Trail_Sprite;
+	shot_stats.Shot_Trail_Color1 = other.Shot_Trail_Color1;
+	shot_stats.Shot_Trail_Color2 = other.Shot_Trail_Color2;
+	shot_stats.Shot_Trail_Life = other.Shot_Trail_Life;
+	shot_stats.Shot_Trail_Area = other.Shot_Trail_Area;
+	shot_stats.Shot_Trail_Speed = other.Shot_Trail_Speed;
+	shot_stats.Shot_Trail_Direction = other.Shot_Trail_Direction;
+	shot_stats.Shot_Trail_Frequency = other.Shot_Trail_Frequency;
+	shot_stats.Shot_Trail_Fade = other.Shot_Trail_Fade;
+	shot_stats.Shot_Trail_Hit_Count = other.Shot_Trail_Hit_Count;
+	shot_stats.Shot_Trail_Hit_Speed = other.Shot_Trail_Hit_Speed;
+	shot_stats.Shot_Trail_Hit_Life = other.Shot_Trail_Hit_Life;
+	shot_stats.Shot_Trail_Hit_Speed = other.Shot_Trail_Hit_Sprite;
+	shot_stats.Shot_Trail_Hit_Type = other.Shot_Trail_Hit_Type;
 	
 	shotexplosionsprite = other.Shot_Explosion_Sprite;
 	shotexplosionpart = other.Shot_Explosion_Part;
@@ -97,7 +103,7 @@ function scr_Extra_Shot_Stats() {
 
 	shotduplicatesprite = other.Shot_Duplicate_Sprite;
 
-	shotsouldamage = other.Shot_Soul_Damage;
+	shot_stats.Shot_Soul_Damage = other.Shot_Soul_Damage;
 
 	shotimaginary = other.Shot_Imaginary;
 	shotsharpandsolid = other.Shot_Sharp_And_Solid;
@@ -105,23 +111,23 @@ function scr_Extra_Shot_Stats() {
 	shotmagical = other.Shot_Magical;
 	shotenergy = other.Shot_Energy;
 
-	shotgrow = other.Shot_Grow;
-	shotgrowtime = other.Shot_Grow_Time;
-	shotgrowsize = other.Shot_Grow_Size;
-	shotformshow = other.Shot_Form_Show;
+	shot_stats.Shot_Grow = other.Shot_Grow;
+	shot_stats.Shot_Grow_Time = other.Shot_Grow_Time;
+	shot_stats.Shot_Grow_Size = other.Shot_Grow_Size;
+	shot_stats.Shot_Form_Show = other.Shot_Form_Show;
 
-	shotlobbing = other.Shot_Lobbing;
-	shotfacedirection = other.Shot_Face_Direction;
+	shot_stats.Shot_Lobbing = other.Shot_Lobbing;
+	shot_stats.Shot_Face_Direction = other.Shot_Face_Direction;
 
-	if shotlobbing >= 1 {
-		shotbounceY = 0;
-	    shotbouncespeed = 10;
-	    shotbouncedirection = 1;	
+	if shot_stats.Shot_Lobbing >= 1 {
+		shot_stats.Shot_Bounce_Y = 0;
+	    shot_stats.Shot_Bounce_Speed = 10;
+	    shot_stats.Shot_Bounce_Direction = 1;	
 	}
 
-	shotwavedirection = other.Shot_Wave_Direction;
-	shotwaveacceleration = other.Shot_Wave_Acceleration;
-	shotwavetime = other.Shot_Wave_Time;
+	shot_stats.Shot_Wave_Direction = other.Shot_Wave_Direction;
+	shot_stats.Shot_Wave_Acceleration = other.Shot_Wave_Acceleration;
+	shot_stats.Shot_Wave_Time = other.Shot_Wave_Time;
 	
 	shotscreenshake = other.Shot_Screen_Shake;
 
@@ -146,11 +152,11 @@ function scr_Extra_Shot_Stats() {
 	shotextrahitxx = other.Shot_Extra_Hit_XX;
 	shotextrahityy = other.Shot_Extra_Hit_YY;
 
-	shotacceleration = other.Shot_Acceleration;
-	shotfriction = other.Shot_Friction;
-	shotminspeed = other.Shot_Min_Speed;
+	shot_stats.Shot_Acceleration = other.Shot_Acceleration;
+	shot_stats.Shot_Friction = other.Shot_Friction;
+	shot_stats.Shot_Min_Speed = other.Shot_Min_Speed;
 
-	shotorbitaltype = other.Shot_Orbital_Type;
+	shot_stats.Shot_Orbital_Type = other.Shot_Orbital_Type;
 	shotOrbit = other.Shot_Orbital_Range;
 	
 	*/
@@ -163,28 +169,28 @@ function scr_Extra_Shot_Stats() {
 		otarget = other.id;
 		
 		shotOrbit = shot_stats.Shot_Orbital_Range;
-		shotAngle = point_direction(x,y,mouse_x,mouse_y);
-		shotAngle += shot_stats.Shot_Current_Count * (360 / shot_stats.Shot_Count)
-		shotCenterX = other.x;
-		shotCenterY = other.y;
+		shot_stats.Shot_Orbit_Angle = point_direction(x,y,mouse_x,mouse_y);
+		shot_stats.Shot_Orbit_Angle += shot_stats.Shot_Current_Count * (360 / shot_stats.Shot_Count)
+		shot_stats.Shot_Center_X = other.x;
+		shot_stats.Shot_Center_Y = other.y;
 		speed = 0;
 	}
 	
 	/*
 
-	shotcontinue = other.Shot_Continue;
+	shot_stats.Shot_Continue = other.Shot_Continue;
 
 	shotcritchance = other.Shot_Crit_Chance + other.scritaddchance;
 	shotcritmultiple = other.Shot_Crit_Multiple + other.scritadd;
-	shotmelee = other.Shot_Melee;
-	shotairtarget = other.Shot_Air_Target;
+	shot_stats.Shot_Melee = other.Shot_Melee;
+	shot_stats.Shot_Air_Target = other.Shot_Air_Target;
 	shotphasing = other.Shot_Phasing;
-	shotlooping = other.Shot_Looping;
-	shotcomeback = other.Shot_Comeback;
+	shot_stats.Shot_Looping = other.Shot_Looping;
+	shot_stats.Shot_Comeback = other.Shot_Comeback;
 	shotpierce = other.Shot_Pierce + other.sshotpierce;
 	shotarmourpierce = other.Shot_Armour_Pierce + other.sarmourpierce;
 	shotarmourtear = other.Shot_Armour_Tear;
-	shotbounce = other.Shot_Bounce;
+	shot_stats.Shot_Bounce = other.Shot_Bounce;
 	shotchain = other.Shot_Chain;
 	shotchaintype = other.Shot_Chain_Type;
 	shotchainpower = (other.Shot_Chain_Power + other.spoweradd) * shotaddedpow;
@@ -193,11 +199,11 @@ function scr_Extra_Shot_Stats() {
 	shot_stats.Shot_Homing_Type = other.Shot_Homing_Type;
 	shot_stats.Shot_Homing_Range = other.Shot_Homing_Range;
 	shothomingspeed = other.Shot_Homing_Speed;
-	shotimpactpower = (other.Shot_Impact_Power + other.spoweradd) * shotaddedpow;
-	shotImpactPowerLevel = other.Shot_Impact_Power;
-	shotimpacttype = other.Shot_Impact_Type;
-	shotimpactsize = other.Shot_Impact_Size;
-	shotimpactexplode = other.Shot_Impact_Explode;
+	shot_stats.Shot_Impact_Power = (other.Shot_Impact_Power + other.spoweradd) * shotaddedpow;
+	shot_stats.Shot_Impact_Power_Level = other.Shot_Impact_Power;
+	shot_stats.Shot_Impact_Type = other.Shot_Impact_Type;
+	shot_stats.Shot_Impact_Size = other.Shot_Impact_Size;
+	shot_stats.Shot_Impact_Explode = other.Shot_Impact_Explode;
 	
 	shotbursttype = other.Shot_Burst_Type;
 	shotburstamount = other.Shot_Burst_Amount;
@@ -216,13 +222,13 @@ function scr_Extra_Shot_Stats() {
 	shotburstpointangle = other.Shot_Burst_Point_Angle;
 	shotburstimpact = other.Shot_Burst_Impact;
 	
-	shotaura = other.Shot_Aura;
-	shotaurapower = other.Shot_Aura_Power;
-	shotaurarange = other.Shot_Aura_Range;
-	shotaurasprite = other.Shot_Aura_Sprite;
+	shot_stats.Shot_Aura = other.Shot_Aura;
+	shot_stats.Shot_Aura_Power = other.Shot_Aura_Power;
+	shot_stats.Shot_Aura_Range = other.Shot_Aura_Range;
+	shot_stats.Shot_Aura_Sprite = other.Shot_Aura_Sprite;
 	
-	shotshieldtype = other.Shot_Shield_Type;
-	shotshieldpower = (other.Shot_Shield_Power + other.spoweradd) * shotaddedpow;
+	shot_stats.Shot_Shield_Type = other.Shot_Shield_Type;
+	shot_stats.Shot_Shield_Power = (other.Shot_Shield_Power + other.spoweradd) * shotaddedpow;
 	shotreboundtype = other.Shot_Rebound_Type;
 	shotreboundpower = (other.Shot_Rebound_Power + other.spoweradd) * shotaddedpow;
 	shotweaken = other.Shot_Weaken;
@@ -252,14 +258,14 @@ function scr_Extra_Shot_Stats() {
 	shotlifedrain = other.Shot_Life_Drain;
 	shotessencedrain = other.Shot_Essence_Drain;
 
-	shotinitspeed = shot_stats.Shot_Speed;
+	shot_stats.Shot_Init_Speed = shot_stats.Shot_Speed;
 	
 	shot_stats.Shot_Speedpoweradd = other.Shot_Speed_Power_Add;
 	shotbulletredirect = other.Shot_Bullet_Redirect;
 	shotbulletredirectchance = other.Shot_Bullet_Redirect_Chance;
 	shotbulletdisplace = other.Shot_Bullet_Displace;
 	
-	shotsnakemove = other.Shot_Snake_Move;
+	shot_stats.Shot_Snake_Move = other.Shot_Snake_Move;
 	
 	shottargetX = other.Shot_Target_X;
 	shottargetY = other.Shot_Target_Y;
@@ -267,16 +273,23 @@ function scr_Extra_Shot_Stats() {
 	shotrecyle = other.Shot_Recycle;
 	shotaccuracy = other.Shot_Accuracy / global.soulaccuracy;
 	
-	shotwander = other.Shot_Wander;
+	shot_stats.Shot_Wander = other.Shot_Wander;
 	
-	shotwishful = other.Shot_Wishful;
+	shot_stats.Shot_Wishful = other.Shot_Wishful;
 	
-	shotsucktype = other.Shot_Suck_Type;
-	shotsuck = other.Shot_Suck;
+	shot_stats.Shot_Suck_Type = other.Shot_Suck_Type;
+	shot_stats.Shot_Suck = other.Shot_Suck;
 	
-	shotangularvelocity = other.Shot_Angular_Velocity;
+	shot_stats.Shot_Angular_Velocity = other.Shot_Angular_Velocity;
 	
 	*/
+	shot_stats.Shot_Init_Speed = shot_stats.Shot_Speed;
+	
+	var _crray = shot_stats.Shot_Trail_Color1;
+	shot_stats.Shot_Trail_Color1 = make_color_rgb(_crray[0], _crray[1], _crray[2])
+	
+	_crray = shot_stats.Shot_Trail_Color2;
+	shot_stats.Shot_Trail_Color2 = make_color_rgb(_crray[0], _crray[1], _crray[2])
 
 	scr_State_Weapon_Mod();
 	

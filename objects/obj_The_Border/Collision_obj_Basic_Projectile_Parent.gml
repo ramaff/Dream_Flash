@@ -1,4 +1,4 @@
-if orientation != 0 and other.shotbounce > 0 {
+if orientation != 0 and other.shot_stats.Shot_Bounce > 0 {
     
     bdir = orientation;
     

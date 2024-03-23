@@ -2,9 +2,9 @@
 // https://help.yoyogames.com/hc/en-us/articles/360005277377 for more information
 function old_Beam_Create(shxx,shyy){
 	if other.Shot_Beam = 2 {
-		shotdamage = false;
+		shot_stats.Shot_Damage = false;
 		if other.sWeaponTicker mod 3 = 0 { 
-			shotdamage = true;	
+			shot_stats.Shot_Damage = true;	
 		}
 	}	
 	if other.Shot_Type = obj_Beam_Shot {

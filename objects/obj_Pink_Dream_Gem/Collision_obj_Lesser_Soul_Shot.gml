@@ -1,16 +1,16 @@
-if other.shotsouldamage > 0 {
+if other.shot_stats.Shot_Soul_Damage > 0 {
 	exit;	
 }
 
 var hit_again = variable_struct_exists(projectile_hits, other.shot_id)
-if !hit_again and other.shotmelee = 0 {
+if !hit_again and other.shot_stats.Shot_Melee = 0 {
 	variable_struct_set(projectile_hits, other.shot_id, other.shot_id)
     
     with(other) {
         x = other.x;
         y = other.y;
-        if shotorbitaltype = 1 {
-			shotorbitaltype = 0;
+        if shot_stats.Shot_Orbital_Type = 1 {
+			shot_stats.Shot_Orbital_Type = 0;
 		}
         shotphasing = 1;
 		shotgem++;
@@ -58,7 +58,7 @@ if !hit_again and other.shotmelee = 0 {
                 }
             }
         }
-        shotfriction = 0;
+        shot_stats.Shot_Friction = 0;
         duplicate = irandom(7);
         
         dir = 0;
@@ -83,7 +83,7 @@ if !hit_again and other.shotmelee = 0 {
             sprite_index = other.sprite_index;
             image_alpha = other.image_alpha;
             oshotid = shot_id;
-			shotfriction = 0;
+			shot_stats.Shot_Friction = 0;
         }
 		variable_struct_set(other.projectile_hits, oshotid, oshotid)
         //ds_list_add(other.projectile_hits, oshotid);  

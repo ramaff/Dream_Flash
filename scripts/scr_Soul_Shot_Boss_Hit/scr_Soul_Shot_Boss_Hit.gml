@@ -3,9 +3,9 @@
 function scr_Soul_Shot_Boss_Hit() {
 
 	var hit_again = variable_struct_exists(other.projectile_hits, shot_boss_id)
-	if !hit_again and shotdamage {
+	if !hit_again and shot_stats.Shot_Damage {
     
-	    if shotpierce > 0 || shotcontinue = 1 {
+	    if shotpierce > 0 || shot_stats.Shot_Continue = 1 {
 			
 			if shot_stats.Shot_Excess_Essence > 0 {
 				var ex_ess = shot_stats.Shot_Excess_Essence;
@@ -42,7 +42,7 @@ function scr_Soul_Shot_Boss_Hit() {
 				
 			}
 		
-			if shotpierce = 1 and shotimpacttype = 2 {
+			if shotpierce = 1 and shot_stats.Shot_Impact_Type = 2 {
 				scr_Screen_Shake(20, 14);
 				//scr_Screen_Flash(7);
 				scr_Disk_Effect(20, 1, c_white)
@@ -50,7 +50,7 @@ function scr_Soul_Shot_Boss_Hit() {
 				scr_Disk_Effect(30, 1.5, c_white)
 		
 				with (obj_Boss_Parent) {
-				    dmg = other.shotimpactpower;
+				    dmg = other.shot_stats.Shot_Impact_Power;
 				    bosshealth -= dmg;
 				    scr_Damage_Indicator(0, dmg, 2);
 				}
@@ -59,7 +59,7 @@ function scr_Soul_Shot_Boss_Hit() {
 				    bulletspeed = bulletspeed / 3;
 				    speed = speed / 3;
 				
-					bulletpower -= other.shotimpactpower / 2;
+					bulletpower -= other.shot_stats.Shot_Impact_Power / 2;
 					bulletsize = (bulletpower / bulletpowermax);
 				
 					if bulletsize < 0.05 {
@@ -83,12 +83,12 @@ function scr_Soul_Shot_Boss_Hit() {
 			if shotDamage > 0 {
 				//scr_Boss_Hit_Part_Splash_Juice();
 				
-				//scr_Particle_Burst(shottrailhittype, shottrailhitsprite, shottrailcolor1, shottrailcolor2, shottrailhitcount, shottrailhitspeed, 0, 360 / shottrailhitcount, shottrailarea, shot_stats.Shot_Size, shottrailhitlife, true)
-				//scr_Particle_Burst(shottrailhittype, shottrailhitsprite, shottrailcolor1, shottrailcolor2, shottrailhitcount / 2, shottrailhitspeed * 2, 0, 720 / shottrailhitcount, shottrailarea, shot_stats.Shot_Size, shottrailhitlife, true)
+				//scr_Particle_Burst(shot_stats.Shot_Trail_Hit_Type, shot_stats.Shot_Trail_Hit_Speed, shot_stats.Shot_Trail_Color1, shot_stats.Shot_Trail_Color2, shot_stats.Shot_Trail_Hit_Count, shot_stats.Shot_Trail_Hit_Speed, 0, 360 / shot_stats.Shot_Trail_Hit_Count, shot_stats.Shot_Trail_Area, shot_stats.Shot_Size, shot_stats.Shot_Trail_Hit_Life, true)
+				//scr_Particle_Burst(shot_stats.Shot_Trail_Hit_Type, shot_stats.Shot_Trail_Hit_Speed, shot_stats.Shot_Trail_Color1, shot_stats.Shot_Trail_Color2, shot_stats.Shot_Trail_Hit_Count / 2, shot_stats.Shot_Trail_Hit_Speed * 2, 0, 720 / shot_stats.Shot_Trail_Hit_Count, shot_stats.Shot_Trail_Area, shot_stats.Shot_Size, shot_stats.Shot_Trail_Hit_Life, true)
 				
-				repeat(shottrailhitcount) {
+				repeat(shot_stats.Shot_Trail_Hit_Count) {
 					var ddir = direction - 90 + random(180);
-					scr_Particle_Burst(shottrailhittype, shottrailhitsprite, shottrailcolor1, shottrailcolor2, 1, 12 + random(8), ddir, 0, 0, shot_stats.Shot_Size + random(0.2), 15 + random(10))
+					scr_Particle_Burst(shot_stats.Shot_Trail_Hit_Type, shot_stats.Shot_Trail_Hit_Speed, shot_stats.Shot_Trail_Color1, shot_stats.Shot_Trail_Color2, 1, 12 + random(8), ddir, 0, 0, shot_stats.Shot_Size + random(0.2), 15 + random(10))
 					//scr_Particle_Burst(obj_Friction_Part, spr_Soul_Bit, c_white, c_white, 1, 12 + random(8), ddir, 0, 0, shot_stats.Shot_Size + random(0.2), 15 + random(10))
 				}
 				
@@ -189,27 +189,27 @@ function scr_Soul_Shot_Boss_Hit() {
 	            }
 	        }
         
-	        if shotimpacttype = 1 {
+	        if shot_stats.Shot_Impact_Type = 1 {
 	            with (obj_Boss_Parent) {
 	                var hit_again = variable_struct_exists(projectile_hits, other.shot_boss_id)
 					if !hit_again {
-	                    if distance_to_object(other) < other.shotimpactsize {
+	                    if distance_to_object(other) < other.shot_stats.Shot_Impact_Size {
 	                        scr_Boss_Splash_Damage_Calc();
 	                    }
 	                }
 	            }
 
-				if shotimpactexplode = 1 {
+				if shot_stats.Shot_Impact_Explode = 1 {
 					scr_Boss_Hit_Explosion();
 				}
 	        }
 		
-			if shotbounce = 2 {
+			if shot_stats.Shot_Bounce = 2 {
 				direction = random(360);	
 			}
         
-	       // if shotmelee = 1 { 
-			if shotcontinue = 0 {
+	       // if shot_stats.Shot_Melee = 1 { 
+			if shot_stats.Shot_Continue = 0 {
 		        shotpierce--;
 		        if shotpierce <= 0 {
 		            instance_destroy();

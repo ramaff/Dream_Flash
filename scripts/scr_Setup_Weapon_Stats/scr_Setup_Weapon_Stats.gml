@@ -190,8 +190,8 @@ function scr_Setup_Weapon_Stats(_current_weapon_stats = current_weapon_stats) {
 	if variable_struct_exists(_current_weapon_stats, "Shot_Image_Speed") {
 		Shot_Image_Speed = _current_weapon_stats.Shot_Image_Speed
 	}
-	if variable_struct_exists(_current_weapon_stats, "Shot_Image_Rotation_Speed") {
-		Shot_Image_Rotation_Speed = _current_weapon_stats.Shot_Image_Rotation_Speed
+	if variable_struct_exists(_current_weapon_stats, "Image_Rotation_Speed") {
+		Image_Rotation_Speed = _current_weapon_stats.Image_Rotation_Speed
 	}
 	if variable_struct_exists(_current_weapon_stats, "Shot_Image_Direction") {
 		Shot_Image_Direction = _current_weapon_stats.Shot_Image_Direction

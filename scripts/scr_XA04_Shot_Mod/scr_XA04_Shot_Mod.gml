@@ -20,28 +20,28 @@ function scr_XA04_Shot_Mod(){
 		
 		scr_Shot_Power_Set(1.2);
 		
-		if shotimpacttype = 0 {
-            shotimpacttype = 1;
+		if shot_stats.Shot_Impact_Type = 0 {
+            shot_stats.Shot_Impact_Type = 1;
         }
 		
-		shotimpactpower += 4 * global.XA[4];
-        shotimpactsize += 40;
-		if shotimpactsize <= 80 {
-			shotimpactsize = 80;
+		shot_stats.Shot_Impact_Power += 4 * global.XA[4];
+        shot_stats.Shot_Impact_Size += 40;
+		if shot_stats.Shot_Impact_Size <= 80 {
+			shot_stats.Shot_Impact_Size = 80;
 		}
-		if shotimpactpower <= 8 {
-			shotimpactpower = 8;	
+		if shot_stats.Shot_Impact_Power <= 8 {
+			shot_stats.Shot_Impact_Power = 8;	
 		}
-		shotImpactPowerLevel = shotimpactpower;
+		shot_stats.Shot_Impact_Power_Level = shot_stats.Shot_Impact_Power;
 		
-		//if shottrail < 2 {
-			shottrail = 2;
-			shottrailsprite = spr_Soul_Big_Bit;
-			shottrailcolor1 = c_red;
-			shottrailcolor2 = c_yellow;
-			shottraillife = 10;
-			shottrailarea = 20;
-			shottrailfrequency = 2;
+		//if shot_stats.Shot_Trail < 2 {
+			shot_stats.Shot_Trail = 2;
+			shot_stats.Shot_Trail_Sprite = spr_Soul_Big_Bit;
+			shot_stats.Shot_Trail_Color1 = c_red;
+			shot_stats.Shot_Trail_Color2 = c_yellow;
+			shot_stats.Shot_Trail_Life = 10;
+			shot_stats.Shot_Trail_Area = 20;
+			shot_stats.Shot_Trail_Frequency = 2;
 		//}
 	}
 }

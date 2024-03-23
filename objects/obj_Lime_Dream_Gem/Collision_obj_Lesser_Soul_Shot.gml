@@ -1,16 +1,16 @@
-if other.shotsouldamage > 0 {
+if other.shot_stats.Shot_Soul_Damage > 0 {
 	exit;	
 }
 
 var hit_again = variable_struct_exists(projectile_hits, other.shot_id)
-if !hit_again and other.shotmelee = 0 {
+if !hit_again and other.shot_stats.Shot_Melee = 0 {
 	variable_struct_set(projectile_hits, other.shot_id, other.shot_id)
     
     with(other) {
         x = other.x;
         y = other.y;
-		if shotorbitaltype = 1 {
-			shotorbitaltype = 0;
+		if shot_stats.Shot_Orbital_Type = 1 {
+			shot_stats.Shot_Orbital_Type = 0;
 		}
         shotphasing = 1;
 		shotgem++;

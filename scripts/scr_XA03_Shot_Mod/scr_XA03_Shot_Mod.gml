@@ -18,16 +18,16 @@ function scr_XA03_Shot_Mod(){
 			shotfiretime = 30;
 		}
 		
-		shotwavedirection = (10 * (round(other.sWeaponTicker) mod 2)) - 5
-		shotwaveacceleration = (2.5 * (round(other.sWeaponTicker) mod 2)) - 1.25;
-		shotwavetime = 8;
+		shot_stats.Shot_Wave_Direction = (10 * (round(other.sWeaponTicker) mod 2)) - 5
+		shot_stats.Shot_Wave_Acceleration = (2.5 * (round(other.sWeaponTicker) mod 2)) - 1.25;
+		shot_stats.Shot_Wave_Time = 8;
 		
-		shottrail = 2;
-		shottrailsprite = spr_Soul_Big_Bit;
-		shottrailcolor1 = c_red;
-		shottrailcolor2 = c_yellow
-		shottraillife = 15;
-		shottrailarea = 45;
-		shottrailfrequency = 2;
+		shot_stats.Shot_Trail = 2;
+		shot_stats.Shot_Trail_Sprite = spr_Soul_Big_Bit;
+		shot_stats.Shot_Trail_Color1 = c_red;
+		shot_stats.Shot_Trail_Color2 = c_yellow
+		shot_stats.Shot_Trail_Life = 15;
+		shot_stats.Shot_Trail_Area = 45;
+		shot_stats.Shot_Trail_Frequency = 2;
 	}
 }

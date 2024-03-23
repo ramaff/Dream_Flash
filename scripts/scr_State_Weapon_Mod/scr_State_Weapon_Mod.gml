@@ -4,7 +4,7 @@ function scr_State_Weapon_Mod(){
 	
 	if other.Shot_Off_State = 0 and shotorigin = obj_Soul_Parent {
 		if scr_State_Active_Check("Snake") and other.Shot_Beam = 0 {
-			shotsnakemove = 2;
+			shot_stats.Shot_Snake_Move = 2;
 			shottargetX = mouse_x;
 			shottargetY = mouse_y;
 		
@@ -33,7 +33,7 @@ function scr_State_Weapon_Mod(){
 					followtarget = followtar;
 					followtar = id;	
 					
-					shotsnakemove = 1;
+					shot_stats.Shot_Snake_Move = 1;
 					
 					scr_Shot_Power_Set(0.15)
 					scr_Shot_Size_Set(0.7)
@@ -75,18 +75,18 @@ function scr_State_Weapon_Mod(){
 			}
 		
 			shot_stats.Shot_Speed = shot_stats.Shot_Speed;
-			shotfriction = shot_stats.Shot_Speed / shot_stats.Shot_Life_Span;
-			shotminspeed = shot_stats.Shot_Speed * 0.2;
+			shot_stats.Shot_Friction = shot_stats.Shot_Speed / shot_stats.Shot_Life_Span;
+			shot_stats.Shot_Min_Speed = shot_stats.Shot_Speed * 0.2;
 			shot_stats.Shot_Life_Span = shot_stats.Shot_Life_Span * 2;
 			alarm[0] = shot_stats.Shot_Life_Span;
 		    shot_stats.Shot_Timer = shot_stats.Shot_Life_Span;
 			speed = shot_stats.Shot_Speed;
 			
-			shotbursttype = 3;
+			/*shotbursttype = 3;
 			shotburstpower = shot_stats.Shot_Power;
 			shotburstspeed = shot_stats.Shot_Speed;
 			shotburstamount = 1;
-			shotburstrange = 80;
+			shotburstrange = 80; */
 			
 			shot_stats.Shot_Homing_Type = 1;
 			if shot_stats.Shot_Homing_Range < 250 {
@@ -111,9 +111,9 @@ function scr_State_Weapon_Mod(){
 		    shot_stats.Shot_Power = shot_stats.Shot_Powermax;
 		    shotPowerLevel = shotPowerLevel * (1.15 * global.soulstateformboost);
 		
-			if sprite_get_height(sprite_index) < 80 and shotmelee == 0 {
+			if sprite_get_height(sprite_index) < 80 and shot_stats.Shot_Melee == 0 {
 				sprite_index = spr_Spike_Essence_Shot;
-				shotpointangle = 1;
+				shot_stats.Shot_Point_Angle = 1;
 			}
 		
 		}
@@ -164,12 +164,12 @@ function scr_State_Weapon_Mod(){
 			
 			shotphasing = 1;
 			
-			shotorbitaltype = 1;
+			shot_stats.Shot_Orbital_Type = 1;
 			shotOrbit = 75;
-	        shotAngle = point_direction(x,y,mouse_x,mouse_y);
-	        //shotAngle += other.Shot_Current_Count * (360 / other.Shot_Count)
-	        shotCenterX = other.x;
-	        shotCenterY = other.y;
+	        shot_stats.Shot_Orbit_Angle = point_direction(x,y,mouse_x,mouse_y);
+	        //shot_stats.Shot_Orbit_Angle += other.Shot_Current_Count * (360 / other.Shot_Count)
+	        shot_stats.Shot_Center_X = other.x;
+	        shot_stats.Shot_Center_Y = other.y;
 			speed = 0;
 			
 			image_xscale = shot_stats.Shot_Size;

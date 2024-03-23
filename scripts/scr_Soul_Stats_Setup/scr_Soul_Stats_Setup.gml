@@ -76,6 +76,7 @@ function scr_Soul_Stats_Setup() {
 	smovementfactor = global.soulmovementfactor;
 	sshotspeed = global.soulshotspeed;
 	sshotspeedaddition = global.soulshotspeedaddition;
+	sshotspeedfactor = global.soulshotspeedfactor;
 	sshotknockback = global.soulshotknockback;
 	sshotknockbackaddition = global.soulshotknockbackaddition;
 	sshotlifefactor = global.soulshotlifefactor;

@@ -23,8 +23,8 @@ for(i = 0; i < extra_shot_amount; i++) {
 		} else {
 			shotburstpower = shot_stats.Shot_Power;
 		}
-	    shotimpacttype = 0;
-	    shotimpactpower = 0;
+	    shot_stats.Shot_Impact_Type = 0;
+	    shot_stats.Shot_Impact_Power = 0;
 	
 		var ramt = current_extra_stats.Shot_Count;
 		shotduplicatesprite = asset_get_index(current_extra_stats.Shot_Sprite);
@@ -47,7 +47,7 @@ for(i = 0; i < extra_shot_amount; i++) {
 				shot_stats.Shot_Homing_Type = shot_stats.Shot_Homing_Type;
 				shothomingspeed = shot_stats.Shot_Homing_Speed;
 				shotpierce = shot_stats.Shot_Pierce;
-				shotacceleration = shot_stats.Shot_Acceleration;
+				shot_stats.Shot_Acceleration = shot_stats.Shot_Acceleration;
 		
 				if variable_struct_exists(shot_stats, "Burst_Size") {
 					shot_stats.Shot_Size = shot_stats.Shot_Size * shot_stats.Burst_Size
@@ -57,30 +57,30 @@ for(i = 0; i < extra_shot_amount; i++) {
 				} else {
 					shot_stats.Shot_Size = shot_stats.Shot_Size;
 				}
-				shotshrink = shot_stats.Shot_Shrink;
-				shotfade = shot_stats.Shot_Fade;
+				shot_stats.Shot_Shrink = shot_stats.Shot_Shrink;
+				shot_stats.Shot_Fade = shot_stats.Shot_Fade;
 				
-				shotfacedirection = shot_stats.Shot_Face_Direction;
+				shot_stats.Shot_Face_Direction = shot_stats.Shot_Face_Direction;
 				
 				sprite_index = asset_get_index(shot_stats.Shot_Sprite);
 
-				shotpointangle = shot_stats.Shot_Point_Angle;
+				shot_stats.Shot_Point_Angle = shot_stats.Shot_Point_Angle;
 
-				if shotpointangle = 1 {
+				if shot_stats.Shot_Point_Angle = 1 {
 
 					image_angle = direction;				
 				}
 		
-				//shotformshow = 0;
+				//shot_stats.Shot_Form_Show = 0;
 		
-				if shotshrink = 1 {
-					shotformshow = 0;	
+				if shot_stats.Shot_Shrink = 1 {
+					shot_stats.Shot_Form_Show = 0;	
 				}
 		
-				shotorbitaltype = 0;
+				shot_stats.Shot_Orbital_Type = 0;
 				shotOrbit = 0;
 				shot_stats.Shot_Size_Max = shot_stats.Shot_Size;
-				shotSizeRelation = 1;
+				shot_stats.Shot_Size_Relation = 1;
 				
 				scr_Shot_Particle_Setup();
 	

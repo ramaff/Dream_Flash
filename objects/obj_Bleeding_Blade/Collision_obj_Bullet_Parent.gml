@@ -26,7 +26,7 @@ with(other) {
 		ddir += 45;
 	} */
 	scr_Soul_Shot_Rebound_Parts();
-	var poww = other.shotshieldpower;
+	var poww = other.shot_stats.Shot_Shield_Power;
 	if bulletpower <= poww {
 		var xxx = x;
 		var yyy = y;

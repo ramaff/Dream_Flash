@@ -10,10 +10,10 @@ repeat(shotburstamount) {
 		image_xscale = shot_stats.Shot_Size;
 		image_yscale = shot_stats.Shot_Size;
 		sprite_index = other.shotduplicatesprite;
-		shotformshow = 0;
+		shot_stats.Shot_Form_Show = 0;
 		image_alpha = 1;
 		shot_stats.Shot_Homing_Type = 0;
-		shot_stats.Shot_Speed = other.shotminspeed * 7;
+		shot_stats.Shot_Speed = other.shot_stats.Shot_Min_Speed * 7;
 		speed = shot_stats.Shot_Speed;
 		shot_stats.Shot_Life_Span = other.shot_stats.Shot_Life_Span / 2;
 		alarm[0] = shot_stats.Shot_Life_Span;
@@ -21,7 +21,7 @@ repeat(shotburstamount) {
 		
 		shot_stats.Shot_Size_Max = shot_stats.Shot_Size;
 		
-		shotSizeRelation = 1;
+		shot_stats.Shot_Size_Relation = 1;
 		if instance_exists(obj_Boss_Parent) {
 			direction = point_direction(x,y,instance_nearest(x,y,obj_Boss_Parent).x, instance_nearest(x,y,obj_Boss_Parent).y);	
 		}

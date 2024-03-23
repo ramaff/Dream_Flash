@@ -221,7 +221,7 @@ function scr_Shot_Creation() {
 			
 				shot_stats.Shot_Timer = shot_stats.Shot_Life_Span;
 			
-		        shotmelee = shot_stats.Weapon_Melee;
+		        shot_stats.Shot_Melee = shot_stats.Weapon_Melee;
 		        if shot_stats.Shot_Wave_Time > 0 {
 		            alarm[9] = shot_stats.Shot_Wave_Time;
 		        }

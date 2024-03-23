@@ -8,11 +8,11 @@ function scr_Q02(){
 	if global.Q[2] > 0 {
 		var amt = global.Q[2] / 4;
 		while amt > 1 {
-			shotrecycle += 1;	
+			shot_stats.Shot_Recycle += 1;	
 		}
 		if amt > 0 {
 			if scr_Chance(1 / amt) {
-				shotrecycle += 1;	
+				shot_stats.Shot_Recycle += 1;	
 			}
 		}
 	}

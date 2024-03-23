@@ -9,20 +9,20 @@ function scr_Boss_Hit_Part_Splash_Juice(){
 	/*
 	if part_type_exists(obj_Particle_Control.pshothittype) {
 	
-		part_type_life(obj_Particle_Control.pshothittype,shottrailhitlife/2,shottrailhitlife);
-		part_type_sprite(obj_Particle_Control.pshothittype,shottrailhitsprite,0,0,1);
+		part_type_life(obj_Particle_Control.pshothittype,shot_stats.Shot_Trail_Hit_Life/2,shot_stats.Shot_Trail_Hit_Life);
+		part_type_sprite(obj_Particle_Control.pshothittype,shot_stats.Shot_Trail_Hit_Speed,0,0,1);
 		part_type_alpha2(obj_Particle_Control.pshothittype,1,1);
 		
-		part_type_color_mix(obj_Particle_Control.pshothittype, shottrailcolor1, shottrailcolor2);
+		part_type_color_mix(obj_Particle_Control.pshothittype, shot_stats.Shot_Trail_Color1, shot_stats.Shot_Trail_Color2);
 		
 		//part_type_speed()
 				
-		repeat(shottrailhitcount) {
+		repeat(shot_stats.Shot_Trail_Hit_Count) {
 			var psize = (0.1 + (shot_stats.Shot_Size)) * 1.5;
 			psize = (3 * psize / 4) + random(psize / 4);
-			part_type_size(obj_Particle_Control.pshothittype,psize,0,-(psize/shottrailhitlife),0);
+			part_type_size(obj_Particle_Control.pshothittype,psize,0,-(psize/shot_stats.Shot_Trail_Hit_Life),0);
 		
-			scr_Soul_Part_Summon_Burst(shottrailhitspeed + random(shottrailhitspeed));
+			scr_Soul_Part_Summon_Burst(shot_stats.Shot_Trail_Hit_Speed + random(shot_stats.Shot_Trail_Hit_Speed));
 		}
 	} */
 }

@@ -1,17 +1,17 @@
 //scr_Room_Depth(0);
 
 /*
-if shotairtarget = 0 and shotmelee = 0 {
+if shot_stats.Shot_Air_Target = 0 and shot_stats.Shot_Melee = 0 {
 	//scr_Projectile_Border();
 }*/
 
 scr_A14();
 scr_OA06_Damage();
 
-shotexisttime++;
+shot_stats.Shot_Exist_Time++;
 
-//shotmelee = 1;
-if shotmovement = 0 {
+//shot_stats.Shot_Melee = 1;
+if shot_stats.Shot_Movement = 0 {
 	speed = 0;	
 }
 
@@ -20,38 +20,38 @@ if shot_stats.Shot_Ground = true {
 	shot_stats.Shot_Height = 0;
 	shot_stats.Shot_Fall_Speed = 0;
 	shot_stats.Shot_Gravity = 0;
-	shotlobbing = 0;
+	shot_stats.Shot_Lobbing = 0;
 }
 
-if shotsuck > 0 {
-	if shotsucktype = 1 {
-		scr_Enemy_Bullet_Suck(shotsuck);	
-	} else if shotsucktype = 2 {
-		scr_Enemy_Bullet_Orbit_Suck(shotsuck);	
+if shot_stats.Shot_Suck > 0 {
+	if shot_stats.Shot_Suck_Type = 1 {
+		scr_Enemy_Bullet_Suck(shot_stats.Shot_Suck);	
+	} else if shot_stats.Shot_Suck_Type = 2 {
+		scr_Enemy_Bullet_Orbit_Suck(shot_stats.Shot_Suck);	
 	}
 }
 
-if shotbounce = 1 and shotairtarget = 0 and shotmelee = 0 {
+if shot_stats.Shot_Bounce = 1 and shot_stats.Shot_Air_Target = 0 and shot_stats.Shot_Melee = 0 {
     scr_Wall_Bounce_Ext();
 }
 
 //scr_Weapon_Direction_List();
-if shotpointangle = 1 {
+if shot_stats.Shot_Point_Angle = 1 {
 	image_angle = direction;	
 }
 
-if shotfacedirection = 1 {
+if shot_stats.Shot_Face_Direction = 1 {
 	scr_Shot_Two_Face_Direction();	
 }
 
-if shotlobbing >= 1 {
+if shot_stats.Shot_Lobbing >= 1 {
 	scr_Shot_Lobbing();
 }
 
 shot_stats.Shot_Timer--;
 
-/*if alarm[0] <= shot_stats.Shot_Life_Span / 2 and shotwander > 0 {
-	shotwander--;
+/*if alarm[0] <= shot_stats.Shot_Life_Span / 2 and shot_stats.Shot_Wander > 0 {
+	shot_stats.Shot_Wander--;
 	direction = random(360);
 	var fac = (1 + random(1))
 	shot_stats.Shot_Speed = shot_stats.Shot_Speed * fac;
@@ -59,53 +59,53 @@ shot_stats.Shot_Timer--;
 } */
 
 
-if shotshrink = 1 {
+if shot_stats.Shot_Shrink = 1 {
 	shot_stats.Shot_Size -= shot_stats.Shot_Size_Max / shot_stats.Shot_Life_Span;
 	image_xscale = shot_stats.Shot_Size;
 	image_yscale = shot_stats.Shot_Size;
 } else {
-	if (shot_stats.Shot_Timer <= (shot_stats.Shot_Life_Span / 10)) and shotcomeback = 0 and shotlobbing = 0 {
-	  shotSizeRelation = ((shot_stats.Shot_Timer * 10) / shot_stats.Shot_Life_Span);
+	if (shot_stats.Shot_Timer <= (shot_stats.Shot_Life_Span / 10)) and shot_stats.Shot_Comeback = 0 and shot_stats.Shot_Lobbing = 0 {
+	  shot_stats.Shot_Size_Relation = ((shot_stats.Shot_Timer * 10) / shot_stats.Shot_Life_Span);
 	}
 }
 
-if shotfade = 1 {
+if shot_stats.Shot_Fade = 1 {
 	image_alpha -= 1 / shot_stats.Shot_Life_Span;	
 }
 
-image_angle += image_rotation_speed;
+image_angle += shot_stats.Image_Rotation_Speed;
 
-//direction += shotwavedirection;
-shotwavedirection -= shotwaveacceleration;
+//direction += shot_stats.Shot_Wave_Direction;
+shot_stats.Shot_Wave_Direction -= shot_stats.Shot_Wave_Acceleration;
 
-shot_stats.Shot_Speed -= shotfriction;
-speed -= shotfriction;
+shot_stats.Shot_Speed -= shot_stats.Shot_Friction;
+speed -= shot_stats.Shot_Friction;
 
-shot_stats.Shot_Speed += shotacceleration;
-speed += shotacceleration;
+shot_stats.Shot_Speed += shot_stats.Shot_Acceleration;
+speed += shot_stats.Shot_Acceleration;
 
-if shot_stats.Shot_Speed < shotminspeed {
-    shot_stats.Shot_Speed = shotminspeed;
-    speed = shotminspeed;
+if shot_stats.Shot_Speed < shot_stats.Shot_Min_Speed {
+    shot_stats.Shot_Speed = shot_stats.Shot_Min_Speed;
+    speed = shot_stats.Shot_Min_Speed;
 }
 
 var oang = 90;
-if shotwavedirection < 0 {
+if shot_stats.Shot_Wave_Direction < 0 {
 	oang = 270;	
 }
 {
-	x += lengthdir_x(shotwavedirection,direction + 90);
-	y += lengthdir_y(shotwavedirection,direction + 90);
+	x += lengthdir_x(shot_stats.Shot_Wave_Direction,direction + 90);
+	y += lengthdir_y(shot_stats.Shot_Wave_Direction,direction + 90);
 }
 
-if shotmousemaintain = 1 {
+if shot_stats.Shot_Mouse_Maintain = 1 {
     var targetdirection = point_direction(x,y,mouse_x,mouse_y) + shotdirectionaddition;
 	
 	direction = scr_Angle_Converge(direction, targetdirection, speed + 2);
 	image_angle = direction
 	
 }
-if shotsoulmaintain = 1 {
+if shot_stats.Shot_Soul_Maintain = 1 {
 	if instance_exists(shotfolloworigin) {
 	    x = shotfolloworigin.x + shotxmaintain;
 	    y = shotfolloworigin.y + shotymaintain;
@@ -122,9 +122,9 @@ if shot_stats.Shot_Excess_Essence > 0 {
 	y += (random(1) - 0.5) * fac;
 }
 
-if shotgrow > 0 {
-    image_xscale += (shot_stats.Shot_Size_Max - shotgrowsize) / shotgrowtime;
-    image_yscale += (shot_stats.Shot_Size_Max - shotgrowsize) / shotgrowtime;
+if shot_stats.Shot_Grow > 0 {
+    image_xscale += (shot_stats.Shot_Size_Max - shot_stats.Shot_Grow_Size) / shot_stats.Shot_Grow_Time;
+    image_yscale += (shot_stats.Shot_Size_Max - shot_stats.Shot_Grow_Size) / shot_stats.Shot_Grow_Time;
 }
 if image_xscale > shot_stats.Shot_Size_Max {
     image_xscale = shot_stats.Shot_Size_Max;
@@ -135,18 +135,18 @@ if !instance_exists(target) {
     target = obj_Soul_Parent;
 }
 
-if shotairburststats != false {
-	var burstIndex = array_length(shotairburststats) - 1;
+if shot_stats.Shot_Air_Burst_Stats != false {
+	var burstIndex = array_length(shot_stats.Shot_Air_Burst_Stats) - 1;
 	var near_boss = noone;
 	if instance_exists(obj_Boss_Parent) {
 		near_boss = instance_nearest(x,y, obj_Boss_Parent).id
 	}
-	if instance_exists(near_boss) and burstIndex >= 0 and shotairburststats[burstIndex] != false {
-		var sprd = shotairburststats[burstIndex].Spread
-		if distance_to_object(near_boss) <= shotairburststats[burstIndex].Range {
+	if instance_exists(near_boss) and burstIndex >= 0 and shot_stats.Shot_Air_Burst_Stats[burstIndex] != false {
+		var sprd = shot_stats.Shot_Air_Burst_Stats[burstIndex].Spread
+		if distance_to_object(near_boss) <= shot_stats.Shot_Air_Burst_Stats[burstIndex].Range {
 			dir = -sprd / 2;
 			shot_stats.Shot_Life_Span = shot_stats.Shot_Life_Span * 0.6;
-		    repeat(shotairburststats[burstIndex].Amount) {
+		    repeat(shot_stats.Shot_Air_Burst_Stats[burstIndex].Amount) {
 				
 				if sprd < 0 {
 					dir = random(sprd) - (sprd / 2)
@@ -155,30 +155,31 @@ if shotairburststats != false {
 		        with instance_create(x,y,object_index) {
 		            scr_Duplicate_Shot_Stats();
 						
-					var vshotairburststats = other.shotairburststats[burstIndex]
+					var _v_shot_air_burst_stats = other.shot_stats.Shot_Air_Burst_Stats[burstIndex]
 					
-					scr_Shot_Burst_Stats(vshotairburststats);
+					scr_Shot_Burst_Stats(_v_shot_air_burst_stats);
 					
 					shotburststats = other.shotburststats;
 					shotextrastats = other.shotextrastats;
 					
 					if burstIndex > 0 {
-						shotairburststats = [];
+						shot_stats.Shot_Air_Burst_Stats = [];
 						for(var i = 0; i <= burstIndex-1; i++) {
-							array_insert(shotairburststats,i,other.shotairburststats[i])
+							array_insert(shot_stats.Shot_Air_Burst_Stats,i,other.shot_stats.Shot_Air_Burst_Stats[i])
 						}
 					} else {
-						shotairburststats = false;	
+						shot_stats.Shot_Air_Burst_Stats = false;	
 					}
-					//array_delete(shotairburststats,burstIndex,1);
+					//array_delete(shot_stats.Shot_Air_Burst_Stats,burstIndex,1);
 		        }
-		        dir += shotairburststats[burstIndex].Spread;
+		        dir += shot_stats.Shot_Air_Burst_Stats[burstIndex].Spread;
 		    }
 			instance_destroy();
 		}
 	}	
 } else {
 
+	/*
 	if shotbursttype = 3 {
 		if instance_exists(obj_Boss_Parent) {
 			if distance_to_object(obj_Boss_Parent) <= shotburstrange {
@@ -198,6 +199,7 @@ if shotairburststats != false {
 			}
 		}
 	}
+	
 
 	if shotbursttype = 4 {
 	
@@ -227,46 +229,47 @@ if shotairburststats != false {
 			}
 		}
 	}
+	*/
 }
 
-if shotorbitaltype > 0 {
+if shot_stats.Shot_Orbital_Type > 0 {
 	if instance_exists(otarget) {
 
-	    shotCenterX = otarget.x;
-	    shotCenterY = otarget.y;
+	    shot_stats.Shot_Center_X = otarget.x;
+	    shot_stats.Shot_Center_Y = otarget.y;
     
-	    shotAngle += shot_stats.Shot_Speed;
+	    shot_stats.Shot_Orbit_Angle += shot_stats.Shot_Speed;
     
-	    image_angle = shotAngle + 90;
+	    image_angle = shot_stats.Shot_Orbit_Angle + 90;
     
-	    if (shotAngle >= 360) {
-	        shotAngle -= 360;
+	    if (shot_stats.Shot_Orbit_Angle >= 360) {
+	        shot_stats.Shot_Orbit_Angle -= 360;
 	    }
 	
 		shotOrbit = 75;
 
-	    x = lengthdir_x(shotOrbit, shotAngle) + shotCenterX;
-	    y = lengthdir_y(shotOrbit, shotAngle) + shotCenterY;
+	    x = lengthdir_x(shotOrbit, shot_stats.Shot_Orbit_Angle) + shot_stats.Shot_Center_X;
+	    y = lengthdir_y(shotOrbit, shot_stats.Shot_Orbit_Angle) + shot_stats.Shot_Center_Y;
     
-	    image_angle = shotAngle + 90;
+	    image_angle = shot_stats.Shot_Orbit_Angle + 90;
 	} else {
-		direction = shotAngle + 90;
+		direction = shot_stats.Shot_Orbit_Angle + 90;
 		speed = shot_stats.Shot_Speed
 	}
     
 }
 
-if shotshieldtype = 1 || shotcontinue = 1 { 
+if shot_stats.Shot_Shield_Type = 1 || shot_stats.Shot_Continue = 1 { 
     var size = shot_stats.Shot_Size * (shot_stats.Shot_Power / shot_stats.Shot_Powermax);
     image_xscale = size;
     image_yscale = size;
 }
 
-if shotaura = 1 {
+if shot_stats.Shot_Aura = 1 {
 	if instance_exists(obj_Boss_Parent) {
 		with(obj_Boss_Parent) {
-			if distance_to_object(other) <= other.shotaurarange {
-			    dmg = other.shotaurapower / 60;
+			if distance_to_object(other) <= other.shot_stats.Shot_Aura_Range {
+			    dmg = other.shot_stats.Shot_Aura_Power / 60;
 			    bosshealth -= dmg;
 			}
 		}
@@ -322,7 +325,7 @@ if shot_stats.Shot_Homing_Type = 2 {
 
 }
 
-if shotsnakemove = 2 {
+if shot_stats.Shot_Snake_Move = 2 {
 	target = noone
 	if instance_exists(obj_Boss_Parent) {
 		var mdist = 10000;
@@ -343,21 +346,21 @@ if shotsnakemove = 2 {
 			direction = point_direction(x,y,target.x, target.y);
 		}
 		if distance_to_point(target.x, target.y) < 50 {
-			shotsnakemove = 1;	
+			shot_stats.Shot_Snake_Move = 1;	
 		}
 	} else {
 		if (abs(x - shottargetX) < 20) || (abs(y - shottargetY) < 20){
 			direction = point_direction(x,y,shottargetX, shottargetY);
 		}
 		if distance_to_point(shottargetX, shottargetY) < 50 {
-			shotsnakemove = 1;	
+			shot_stats.Shot_Snake_Move = 1;	
 		}
 	}
 	//direction = point_direction(x,y,shottargetX, shottargetY);
 	
 }
 
-if shotsnakemove > 0 {
+if shot_stats.Shot_Snake_Move > 0 {
 	direction = round(direction / 90) * 90;
 }
 
@@ -373,15 +376,15 @@ if instance_exists(followtarget) {
 	} 
 } 
 
-if shotangularvelocity != 0 {
-	direction += shotangularvelocity;
+if shot_stats.Shot_Angular_Velocity != 0 {
+	direction += shot_stats.Shot_Angular_Velocity;
 }
 
 scr_OB02();
 
-image_angle += shotwavedirection;
+image_angle += shot_stats.Shot_Wave_Direction;
 
-if shotlooping > 0 and shotairtarget = 0 and shotmelee = 0 {
+if shot_stats.Shot_Looping > 0 and shot_stats.Shot_Air_Target = 0 and shot_stats.Shot_Melee = 0 {
     scr_Room_Loop_Everywhere_Ext();
 }
 

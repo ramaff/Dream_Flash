@@ -1,6 +1,6 @@
  
  /*
-	if shotlooping = 0 {
+	if shot_stats.Shot_Looping = 0 {
         if shotbursttype != 0 {
             dir = 90
             repeat(shotburstamount) {
@@ -18,20 +18,20 @@
 			scr_A07_Reset();	
 		}
         
-        if shotlooping = 0 {
-        if shotphasing = 0 and shotbounce = 0 {
-	        if shotimpacttype = 1 {
+        if shot_stats.Shot_Looping = 0 {
+        if shotphasing = 0 and shot_stats.Shot_Bounce = 0 {
+	        if shot_stats.Shot_Impact_Type = 1 {
 	            with (obj_Boss_Parent) {
-	                if distance_to_object(other) < other.shotimpactsize {
-	                    bosshealth -= other.shotimpactpower - bossdefense;
-	                    //bosspoison += other.shotpoison * (other.shotimpactpower / other.shot_stats.Shot_Power);
-	                    //bosspoisondown += other.shotpoisondown * (other.shotimpactpower / other.shot_stats.Shot_Power);
+	                if distance_to_object(other) < other.shot_stats.Shot_Impact_Size {
+	                    bosshealth -= other.shot_stats.Shot_Impact_Power - bossdefense;
+	                    //bosspoison += other.shotpoison * (other.shot_stats.Shot_Impact_Power / other.shot_stats.Shot_Power);
+	                    //bosspoisondown += other.shotpoisondown * (other.shot_stats.Shot_Impact_Power / other.shot_stats.Shot_Power);
 	                }
             
 	            }
 	            with instance_create(x,y,obj_Essence_Impact_Show) {
 					sprite_index = spr_Explosion_Effect;
-	                size = other.shotimpactsize / 150;
+	                size = other.shot_stats.Shot_Impact_Size / 150;
 	                image_xscale = size;
 	                image_yscale = size;
 	            }
@@ -40,12 +40,12 @@
 		}
 
         
-if shotphasing = 0 and shotbounce = 0 and shotlooping = 0 and shotchain = 0 and shot_stats.Shot_Timer > 1 {
+if shotphasing = 0 and shot_stats.Shot_Bounce = 0 and shot_stats.Shot_Looping = 0 and shotchain = 0 and shot_stats.Shot_Timer > 1 {
     instance_destroy();
 }
 
 */
-if shotbounce >= 1 and shotairtarget = 0 and shotmelee = 0 {
+if shot_stats.Shot_Bounce >= 1 and shot_stats.Shot_Air_Target = 0 and shot_stats.Shot_Melee = 0 {
     
     backSpeed = speed;
 
@@ -72,13 +72,13 @@ if shotbounce >= 1 and shotairtarget = 0 and shotmelee = 0 {
 		global.instanceidincrementer++;
 	}
 	
-	if shotlooping = 0 {
+	if shot_stats.Shot_Looping = 0 {
 		scr_Soul_Outside_Check();
 	}
-	shotbounce--;
+	shot_stats.Shot_Bounce--;
 }
 /*
-if shotchain >= 1 and shotbounce = 0 and shotmelee = 0 {
+if shotchain >= 1 and shot_stats.Shot_Bounce = 0 and shot_stats.Shot_Melee = 0 {
     shotchain--;
     target = noone
     x = other.x;
