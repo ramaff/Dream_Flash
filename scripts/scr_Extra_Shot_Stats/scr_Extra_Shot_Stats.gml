@@ -13,6 +13,10 @@ function scr_Extra_Shot_Stats() {
 	if shot_stats.Shot_After_Images > 0 {
 		alarm[8] = 10;	
 	}
+	
+	scr_Setup_Shot_Stats_Asset(shot_stats);
+	
+	Print_DF(shot_stats)
 
 	/*
 	var shotaddedpow = ((10 + other.spowerfactor + other.sattackfactorbuffamount) / 10) * other.spower / 10 * scr_Class_Stat_Damage_Multiplier();
@@ -23,13 +27,13 @@ function scr_Extra_Shot_Stats() {
 	shothitagain = other.Weapon_Split_Hit_Again;
 	shot_stats.Shot_Melee = other.Weapon_Melee;
 	
-	shotburststats = other.Shot_Burst_Stats;
+	shot_stats.Shot_Burst_Stats = other.Shot_Burst_Stats;
 	shot_stats.Shot_Air_Burst_Stats = other.Shot_Air_Burst_Stats;
-	shotextrastats = other.Shot_Extra_Stats;
+	shot_stats.Shot_Extra_Stats = other.Shot_Extra_Stats;
 	
 	shot_stats.Shot_Beam = other.Shot_Beam;
 	
-	//Print_DF("shotextrastats: " + string(shotextrastats))
+	//Print_DF("shot_stats.Shot_Extra_Stats: " + string(shot_stats.Shot_Extra_Stats))
 	//Print_DF("Shot_Extra_Stats: " + string(other.Shot_Extra_Stats))
 	
 
@@ -189,7 +193,7 @@ function scr_Extra_Shot_Stats() {
 	shot_stats.Shot_Comeback = other.Shot_Comeback;
 	shot_stats.Shot_Pierce = other.Shot_Pierce + other.sshotpierce;
 	shotarmourpierce = other.Shot_Armour_Pierce + other.sarmourpierce;
-	shotarmourtear = other.Shot_Armour_Tear;
+	shot_stats.Shot_Armour_Tear = other.Shot_Armour_Tear;
 	shot_stats.Shot_Bounce = other.Shot_Bounce;
 	shot_stats.Shot_Chain = other.Shot_Chain;
 	shot_stats.Shot_Chain_Type = other.Shot_Chain_Type;

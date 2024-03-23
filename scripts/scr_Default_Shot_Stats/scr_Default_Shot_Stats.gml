@@ -156,7 +156,7 @@ function scr_Default_Shot_Stats() {
 	shot_stats.Shot_Pierce = 1;
 	shot_stats.Shot_Bounce = 0;
 	shotarmourpierce = 0;
-	shotarmourtear = 0;
+	shot_stats.Shot_Armour_Tear = 0;
 	shot_stats.Shot_Chain = 0;
 	shot_stats.Shot_Chain_Power = 0;
 	shot_stats.Shot_Chain_Type = 0;
@@ -192,9 +192,9 @@ function scr_Default_Shot_Stats() {
 	shotburstpointangle = 0;
 	shotburstimpact = 0;
 	
-	shotburststats = false;
+	shot_stats.Shot_Burst_Stats = false;
 	shot_stats.Shot_Air_Burst_Stats = false;
-	shotextrastats = false;
+	shot_stats.Shot_Extra_Stats = false;
 	
 	shot_stats.Shot_Aura = 0;
 	shot_stats.Shot_Aura_Power = 0;

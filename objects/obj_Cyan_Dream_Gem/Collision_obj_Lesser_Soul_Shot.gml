@@ -52,14 +52,14 @@ if !hit_again and other.shot_stats.Shot_Melee = 0 {
 	            shotburstpower = 3;
 	        }
 			} */
-			if shotburststats != false {
-				var burstIndex = max(0, array_length(shotburststats));
+			if shot_stats.Shot_Burst_Stats != false {
+				var burstIndex = max(0, array_length(shot_stats.Shot_Burst_Stats));
 			} else {
-				shotburststats = [];
+				shot_stats.Shot_Burst_Stats = [];
 				var burstIndex = 0;
 			}
 
-			shotburststats[burstIndex] = {
+			shot_stats.Shot_Burst_Stats[burstIndex] = {
 				Shot_Count: 1,
                 Shot_Sprite: string(sprite_get_name(sprite_index)),
                 Shot_Type: "obj_Lesser_Soul_Shot",

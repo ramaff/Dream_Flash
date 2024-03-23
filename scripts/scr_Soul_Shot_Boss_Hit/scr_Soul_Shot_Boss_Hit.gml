@@ -126,9 +126,9 @@ function scr_Soul_Shot_Boss_Hit() {
 	            }
 	        }
 		
-			if shotarmourtear != 0 {
+			if shot_stats.Shot_Armour_Tear != 0 {
 				if other.bossdefense > 0 {
-					other.bossdefense -= shotarmourtear;
+					other.bossdefense -= shot_stats.Shot_Armour_Tear;
 					if other.bossdefense < 0 {
 						other.bossdefense = 0;	
 					}
@@ -147,35 +147,35 @@ function scr_Soul_Shot_Boss_Hit() {
 	        //ds_list_add(other.projectile_hits, shot_boss_id);
 			variable_struct_set(other.projectile_hits, shot_boss_id, shot_boss_id)
 			
-			//show_debug_message("scr_Soul_Shot_Boss_Hit: " + string(shotburststats))
+			//show_debug_message("scr_Soul_Shot_Boss_Hit: " + string(shot_stats.Shot_Burst_Stats))
 			
-			if shotburststats != false {
-				var burstIndex = array_length(shotburststats) - 1;
+			if shot_stats.Shot_Burst_Stats != false {
+				var burstIndex = array_length(shot_stats.Shot_Burst_Stats) - 1;
 				if instance_exists(obj_Boss_Parent) and burstIndex >= 0 {
-					dir = -shotburststats[burstIndex].Spread / 2;
+					dir = -shot_stats.Shot_Burst_Stats[burstIndex].Spread / 2;
 					shot_stats.Shot_Life_Span = shot_stats.Shot_Life_Span * 0.6;
 					image = 1
-					var vshotburststats = shotburststats[burstIndex]
-					repeat(shotburststats[burstIndex].Amount) {
-					    with instance_create(x,y, asset_get_index(vshotburststats.Shot_Type)) {
+					var _v_burst_stats = shot_stats.Shot_Burst_Stats[burstIndex]
+					repeat(shot_stats.Shot_Burst_Stats[burstIndex].Amount) {
+					    with instance_create(x,y, asset_get_index(_v_burst_stats.Shot_Type)) {
 					        scr_Duplicate_Shot_Stats();
 					
-							scr_Shot_Burst_Stats(vshotburststats);
+							scr_Shot_Burst_Stats(_v_burst_stats);
 					
 							if burstIndex > 0 {
-								shotburststats = [];
+								shot_stats.Shot_Burst_Stats = [];
 								for(var i = 0; i <= burstIndex-1; i++) {
-									array_insert(shotburststats,i,other.shotburststats[i])
+									array_insert(shot_stats.Shot_Burst_Stats,i,other.shot_stats.Shot_Burst_Stats[i])
 								}
 							} else {
-								shotburststats = false;	
+								shot_stats.Shot_Burst_Stats = false;	
 							}
 					    }
-					    dir += shotburststats[burstIndex].Spread;
+					    dir += shot_stats.Shot_Burst_Stats[burstIndex].Spread;
 					}
 					instance_destroy();
 				}	
-			} else if shotbursttype >= 1 {
+			} /*else if shotbursttype >= 1 {
 	            dir = 90
 	            repeat(shotburstamount) {
 					shot_stats.Shot_Life_Span = shot_stats.Shot_Life_Span * 0.6;
@@ -187,7 +187,7 @@ function scr_Soul_Shot_Boss_Hit() {
 	                }
 	                dir += 360 / shotburstamount;
 	            }
-	        }
+	        } */
         
 	        if shot_stats.Shot_Impact_Type = 1 {
 	            with (obj_Boss_Parent) {

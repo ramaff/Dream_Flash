@@ -11,6 +11,10 @@ function scr_Duplicate_Shot_Stats() {
 	}
 	
 	shot_stats = json_parse(json_stringify(other.shot_stats));
+	
+	Print_DF(shot_stats)
+	
+	//scr_Setup_Shot_Stats_Asset(shot_stats);
 
 	/*
 	target = other.target;
@@ -91,7 +95,7 @@ function scr_Duplicate_Shot_Stats() {
 	shot_stats.Shot_Init_Speed = shot_stats.Shot_Speed;
 
 	shot_stats.Shot_Size = other.shot_stats.Shot_Size;
-	if other.shotburststats = false {
+	if other.shot_stats.Shot_Burst_Stats = false {
 		shot_stats.Shot_Power = other.shotburstpower;
 	} else {
 		shot_stats.Shot_Power = other.shot_stats.Shot_Power;	
@@ -191,7 +195,7 @@ function scr_Duplicate_Shot_Stats() {
 	shot_stats.Shot_Pierce = other.shot_stats.Shot_Pierce;
 	shot_stats.Shot_Bounce = other.shot_stats.Shot_Bounce;
 	shotarmourpierce = other.shotarmourpierce;
-	shotarmourtear = other.shotarmourtear;
+	shot_stats.Shot_Armour_Tear = other.shot_stats.Shot_Armour_Tear;
 	shot_stats.Shot_Chain = other.shot_stats.Shot_Chain;
 	shot_stats.Shot_Chain_Type = other.shot_stats.Shot_Chain_Type;
 	shot_stats.Shot_Chain_Power = other.shot_stats.Shot_Chain_Power;
@@ -219,9 +223,9 @@ function scr_Duplicate_Shot_Stats() {
 		shot_stats.Shot_Impact_Type = other.shotburstimpact;
 	}
 
-	shotburststats = false;
+	shot_stats.Shot_Burst_Stats = false;
 	shot_stats.Shot_Air_Burst_Stats = false;
-	shotextrastats = other.shotextrastats;
+	shot_stats.Shot_Extra_Stats = other.shot_stats.Shot_Extra_Stats;
 	
 	shotbursttype = -1;
 	shotburstamount = 0;

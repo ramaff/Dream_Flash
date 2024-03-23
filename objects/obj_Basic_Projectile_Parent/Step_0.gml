@@ -159,8 +159,8 @@ if shot_stats.Shot_Air_Burst_Stats != false {
 					
 					scr_Shot_Burst_Stats(_v_shot_air_burst_stats);
 					
-					shotburststats = other.shotburststats;
-					shotextrastats = other.shotextrastats;
+					shot_stats.Shot_Burst_Stats = other.shot_stats.Shot_Burst_Stats;
+					shot_stats.Shot_Extra_Stats = other.shot_stats.Shot_Extra_Stats;
 					
 					if burstIndex > 0 {
 						shot_stats.Shot_Air_Burst_Stats = [];

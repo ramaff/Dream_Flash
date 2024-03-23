@@ -3534,6 +3534,7 @@
     {"id":{"name":"scr_U03","path":"scripts/scr_U03/scr_U03.yy",},},
     {"id":{"name":"scr_U03_Off","path":"scripts/scr_U03_Off/scr_U03_Off.yy",},},
     {"id":{"name":"spr_Mechanical_Powering_Up","path":"sprites/spr_Mechanical_Powering_Up/spr_Mechanical_Powering_Up.yy",},},
+    {"id":{"name":"scr_Setup_Shot_Stats_Asset","path":"scripts/scr_Setup_Shot_Stats_Asset/scr_Setup_Shot_Stats_Asset.yy",},},
     {"id":{"name":"scr_U04","path":"scripts/scr_U04/scr_U04.yy",},},
     {"id":{"name":"scr_U05","path":"scripts/scr_U05/scr_U05.yy",},},
     {"id":{"name":"scr_W01","path":"scripts/scr_W01/scr_W01.yy",},},
