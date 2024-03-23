@@ -40,7 +40,7 @@ function scr_Shot_Burst_Stats(vshotburststats){
 		shot_stats.Shot_Timer = shot_stats.Shot_Life_Span;
 	}
 	if variable_struct_exists(vshotburststats, "Shot_Pierce") {
-		shotpierce = vshotburststats.Shot_Pierce
+		shot_stats.Shot_Pierce = vshotburststats.Shot_Pierce
 	}
 	if variable_struct_exists(vshotburststats, "Shot_Speed") {
 		shot_stats.Shot_Speed = vshotburststats.Shot_Speed

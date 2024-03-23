@@ -10,7 +10,7 @@ function scr_Boss_Splash_Damage_Calc() {
 	}
 
 	shotDamageMult = other.shot_stats.Shot_Impact_Power / other.shot_stats.Shot_Impact_Power_Level;
-	crit = other.shotcritchance + irandom(99);
+	crit = other.shot_stats.Shot_Crit_Chance + irandom(99);
 	if crit >= 100 {
 	    shotDamageMult = shotDamageMult * other.shotcritmultiple;
 	}
@@ -32,14 +32,6 @@ function scr_Boss_Splash_Damage_Calc() {
 	if shotDamage < 0 {
 	shotDamage = 0;
 	}
-
-	shotimaginary = other.shotimaginary;
-	shotsharpandsolid = other.shotsharpandsolid;
-	shotmagical = other.shotmagical;
-	shotexplosive = other.shotexplosive;
-	shotenergy = other.shotenergy;
-
-	weakStrong = 0;
 
 	scr_Boss_Damage_Display();
 

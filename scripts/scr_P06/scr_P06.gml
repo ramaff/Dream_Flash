@@ -4,12 +4,12 @@ function scr_P06() {
 	var prob = scr_Chance(4);
 
 	if global.P[6] >= 1 and prob = true {
-		shotpoison += 2 * global.P[6];
-		if shotpoisonticks < 4 {
-			shotpoisonticks = 4;
+		shot_stats.Shot_Poison += 2 * global.P[6];
+		if shot_stats.Shot_Poison_Ticks < 4 {
+			shot_stats.Shot_Poison_Ticks = 4;
 		}
-		if shotpoisontime = 0 {
-			shotpoisontime = 90;
+		if shot_stats.Shot_Poison_Time = 0 {
+			shot_stats.Shot_Poison_Time = 90;
 		}
 	}
 

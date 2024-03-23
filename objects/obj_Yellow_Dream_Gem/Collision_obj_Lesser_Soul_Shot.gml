@@ -28,8 +28,8 @@ if !hit_again and other.shot_stats.Shot_Melee = 0 {
             shot_stats.Shot_Speed = 10;
             speed = 10;
         }
-        if shotcritchance < 10 {
-            shotcritchance = 10;
+        if shot_stats.Shot_Crit_Chance < 10 {
+            shot_stats.Shot_Crit_Chance = 10;
         }
         if shotcritmultiple < 2.5 {
             shotcritmultiple = 2.5;

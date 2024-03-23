@@ -11,8 +11,8 @@ function scr_Soul_Shot_Bullet_Hit(){
 		        other.bulletpower -= (shot_stats.Shot_Power * 2);
 		        instance_destroy();
 		    }
-			if shotessencedrain > 0 {
-				scr_Refresh_Soul(shot_stats.Shot_Shield_Power * shotessencedrain);
+			if shot_stats.Shot_Essence_Drain > 0 {
+				scr_Refresh_Soul(shot_stats.Shot_Shield_Power * shot_stats.Shot_Essence_Drain);
 			}
 		    exit;
 		}
@@ -25,15 +25,15 @@ function scr_Soul_Shot_Bullet_Hit(){
 		        other.bulletpower -= (shot_stats.Shot_Shield_Power * 2);
 		        instance_destroy();
 		    }
-			if shotessencedrain > 0 {
-				scr_Refresh_Soul(shot_stats.Shot_Shield_Power * shotessencedrain);
+			if shot_stats.Shot_Essence_Drain > 0 {
+				scr_Refresh_Soul(shot_stats.Shot_Shield_Power * shot_stats.Shot_Essence_Drain);
 			}
 		    exit;
 		}
 
 		//////// Check the bullet's list for this object's id
 		var hit_again = variable_struct_exists(bullet_hits, other.id)
-		if !hit_again and shotpierce >= 0 {
+		if !hit_again and shot_stats.Shot_Pierce >= 0 {
 			//ds_list_add(other.projectile_hits, shot_boss_id);
 			//other.projectile_hits[shot_boss_id] = shot_boss_id
 			variable_struct_set(bullet_hits, other.id, other.id)
@@ -41,8 +41,8 @@ function scr_Soul_Shot_Bullet_Hit(){
 			if shotreboundtype = 1 {
 				scr_Weapon_Rebound_Mouse();
     
-				shotpierce--;
-				if shotpierce <= 0 {
+				shot_stats.Shot_Pierce--;
+				if shot_stats.Shot_Pierce <= 0 {
 				    instance_destroy();
 				}
 				exit;
@@ -53,8 +53,8 @@ function scr_Soul_Shot_Bullet_Hit(){
 					
 				scr_Soul_Shot_Rebound_Parts();
     
-				shotpierce--;
-				if shotpierce <= 0 {
+				shot_stats.Shot_Pierce--;
+				if shot_stats.Shot_Pierce <= 0 {
 				    instance_destroy();
 				}
 				exit;
@@ -65,7 +65,7 @@ function scr_Soul_Shot_Bullet_Hit(){
 				if other.bulletpower <= 0 {
 				instance_destroy(other);
 				}
-				shotpierce--;
+				shot_stats.Shot_Pierce--;
 					
 				if ((other.bulletpower > 0) and (other.bulletpowermax > 0)) {
 					other.bulletsize = 0.1 + 0.4 * sqrt(other.bulletpower / other.bulletpowermax);
@@ -75,7 +75,7 @@ function scr_Soul_Shot_Bullet_Hit(){
 				other.image_xscale = other.bulletsize;
 				other.image_yscale = other.bulletsize;
 					
-				if shotpierce <= 0 {
+				if shot_stats.Shot_Pierce <= 0 {
 				instance_destroy();
 				}
 			}
@@ -90,8 +90,8 @@ function scr_Soul_Shot_Bullet_Hit(){
 						scr_Bullet_Dampen(_shield);
 					}
 				}
-				if shotessencedrain > 0 {
-					scr_Refresh_Soul(shot_stats.Shot_Shield_Power * shotessencedrain);
+				if shot_stats.Shot_Essence_Drain > 0 {
+					scr_Refresh_Soul(shot_stats.Shot_Shield_Power * shot_stats.Shot_Essence_Drain);
 				}
 				//exit;
 			}
@@ -109,7 +109,7 @@ function scr_Soul_Shot_Bullet_Hit(){
 				}
 			}
 	
-			if shotfreezetype > 0 and scr_Chance(1 / shotfreezetype) and other.bulletspeed != 0 {
+			if shot_stats.Shot_Freeze_Type > 0 and scr_Chance(1 / shot_stats.Shot_Freeze_Type) and other.bulletspeed != 0 {
 				other.bulletspeed = 0;
 				other.speed = 0;
 		
@@ -140,8 +140,8 @@ function scr_Soul_Shot_Bullet_Hit(){
 				other.bulletspeed = other.bulletspeed * (other.bulletspeed / other.bulletpowermax);
 		        //instance_destroy();
 		    }
-			if shotessencedrain > 0 {
-				scr_Refresh_Soul(shot_stats.Shot_Shield_Power * shotessencedrain);
+			if shot_stats.Shot_Essence_Drain > 0 {
+				scr_Refresh_Soul(shot_stats.Shot_Shield_Power * shot_stats.Shot_Essence_Drain);
 			}
 			shot_stats.Shot_Shield_Type = 0;
 			speed = 0;

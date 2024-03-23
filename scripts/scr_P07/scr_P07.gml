@@ -4,17 +4,17 @@ function scr_P07() {
 	var prob = scr_Chance(4);
 
 	if global.P[7] >= 1 and prob = true {
-		shotfire += 2 * global.P[7];
+		shot_stats.Shot_Fire += 2 * global.P[7];
 		shot_stats.Shot_Speed += 3 * global.P[7];
 		speed += 3 * global.P[7];
 		
-		shotpierce += 1;
+		shot_stats.Shot_Pierce += 1;
 		
-		if shotfireticks < 3 {
-			shotfireticks = 3;
+		if shot_stats.Shot_Fire_Ticks < 3 {
+			shot_stats.Shot_Fire_Ticks = 3;
 		}
-		if shotfiretime = 0 {
-			shotfiretime = 90;
+		if shot_stats.Shot_Fire_Time = 0 {
+			shot_stats.Shot_Fire_Time = 90;
 		}
 		
 		shotTrail = 1;

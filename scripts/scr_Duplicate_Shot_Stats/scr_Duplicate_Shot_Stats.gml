@@ -26,7 +26,7 @@ function scr_Duplicate_Shot_Stats() {
 	shotimagespeed = other.shotimagespeed;
 	shot_stats.Shot_Melee = other.shot_stats.Shot_Melee;
 	shot_stats.Shot_Form_Show = other.shot_stats.Shot_Form_Show;
-	shothealing = other.shothealing;
+	shot_stats.Shot_Healing = other.shot_stats.Shot_Healing;
 	shothealemit = other.shothealemit;
 	shot_stats.Shot_Movement = other.shot_stats.Shot_Movement;
 	shotfolloworigin = other.shotfolloworigin;
@@ -111,7 +111,7 @@ function scr_Duplicate_Shot_Stats() {
 	shot_stats.Shot_Size_Max = other.shot_stats.Shot_Size_Max;
 	shot_stats.Shot_Powermax = shot_stats.Shot_Power;
 	
-	shotscreenshake = other.shotscreenshake - 5;
+	shot_stats.Shot_Screen_Shake = other.shot_stats.Shot_Screen_Shake - 5;
 
 	shot_stats.Shot_Soul_Damage = other.shot_stats.Shot_Soul_Damage * other.shotburstpower / 10;
 
@@ -181,22 +181,22 @@ function scr_Duplicate_Shot_Stats() {
 
 	shot_stats.Shot_Continue = other.shot_stats.Shot_Continue;
 
-	shotcritchance = other.shotcritchance;
+	shot_stats.Shot_Crit_Chance = other.shot_stats.Shot_Crit_Chance;
 	shotcritmultiple = other.shotcritmultiple;
 	shot_stats.Shot_Melee = other.shot_stats.Shot_Melee;
 	shot_stats.Shot_Air_Target = other.shot_stats.Shot_Air_Target;
 	shotphasing = other.shotphasing;
 	shot_stats.Shot_Looping = other.shot_stats.Shot_Looping;
 	shot_stats.Shot_Comeback = other.shot_stats.Shot_Comeback;
-	shotpierce = other.shotpierce;
+	shot_stats.Shot_Pierce = other.shot_stats.Shot_Pierce;
 	shot_stats.Shot_Bounce = other.shot_stats.Shot_Bounce;
 	shotarmourpierce = other.shotarmourpierce;
 	shotarmourtear = other.shotarmourtear;
-	shotchain = other.shotchain;
-	shotchaintype = other.shotchaintype;
-	shotchainpower = other.shotchainpower;
-	shotchainrange = other.shotchainrange;
-	shotchainspeed = other.shotchainspeed;
+	shot_stats.Shot_Chain = other.shot_stats.Shot_Chain;
+	shot_stats.Shot_Chain_Type = other.shot_stats.Shot_Chain_Type;
+	shot_stats.Shot_Chain_Power = other.shot_stats.Shot_Chain_Power;
+	shot_stats.Shot_Chain_Range = other.shot_stats.Shot_Chain_Range;
+	shot_stats.Shot_Chain_Speed = other.shot_stats.Shot_Chain_Speed;
 	shot_stats.Shot_Homing_Type = other.shot_stats.Shot_Homing_Type;
 	shot_stats.Shot_Homing_Range = other.shot_stats.Shot_Homing_Range;
 	shothomingspeed = other.shothomingspeed;
@@ -209,7 +209,7 @@ function scr_Duplicate_Shot_Stats() {
 	if other.shotbursttype = 2 {
 		shot_stats.Shot_Speed = other.shotburstspeed;	
 		shot_stats.Shot_Life_Span = other.shotburstlifespan;
-		shotpierce = other.shotburstpierce;
+		shot_stats.Shot_Pierce = other.shotburstpierce;
 		i = 0;
 		shotextrahits[i] = other.shotburstextrahits;
 		shotextrahitfrequency[i] = other.shotburstextrahitfrequency;
@@ -245,26 +245,26 @@ function scr_Duplicate_Shot_Stats() {
 	shot_stats.Shot_Shield_Power = 0;
 	shotreboundtype = other.shotreboundtype;
 	shotreboundpower = other.shotreboundpower;
-	shotweaken = other.shotweaken;
-	shotweakentime = other.shotweakentime;
-	shotpoison = other.shotpoison;
-	shotpoisontime = other.shotpoisontime;
-	shotpoisonticks = other.shotpoisonticks;
-	shotbleed = other.shotbleed;
-	shotbleedtime = other.shotbleedtime;
-	shotbleedticks = other.shotbleedticks;
-	shotfire = other.shotfire;
-	shotfiretime = other.shotfiretime;
-	shotfireticks = other.shotfireticks;
-	shotfreezetype = other.shotfreezetype;
-	shotfreeze = other.shotfreeze;
-	shotfreezetime = other.shotfreezetime;
+	shot_stats.Shot_Weaken = other.shot_stats.Shot_Weaken;
+	shot_stats.Shot_Weaken_Time = other.shot_stats.Shot_Weaken_Time;
+	shot_stats.Shot_Poison = other.shot_stats.Shot_Poison;
+	shot_stats.Shot_Poison_Time = other.shot_stats.Shot_Poison_Time;
+	shot_stats.Shot_Poison_Ticks = other.shot_stats.Shot_Poison_Ticks;
+	shot_stats.Shot_Bleed = other.shot_stats.Shot_Bleed;
+	shot_stats.Shot_Bleed_Time = other.shot_stats.Shot_Bleed_Time;
+	shot_stats.Shot_Bleed_Ticks = other.shot_stats.Shot_Bleed_Ticks;
+	shot_stats.Shot_Fire = other.shot_stats.Shot_Fire;
+	shot_stats.Shot_Fire_Time = other.shot_stats.Shot_Fire_Time;
+	shot_stats.Shot_Fire_Ticks = other.shot_stats.Shot_Fire_Ticks;
+	shot_stats.Shot_Freeze_Type = other.shot_stats.Shot_Freeze_Type;
+	shot_stats.Shot_Freeze = other.shot_stats.Shot_Freeze;
+	shot_stats.Shot_Freeze_Time = other.shot_stats.Shot_Freeze_Time;
 	shotlight = other.shotlight;
 	shotlightsize = other.shotlightsize;
-	shotlifedrain = other.shotlifedrain;
-	shotessencedrain = other.shotessencedrain;
+	shot_stats.Shot_Life_Drain = other.shot_stats.Shot_Life_Drain;
+	shot_stats.Shot_Essence_Drain = other.shot_stats.Shot_Essence_Drain;
 	
-	shot_stats.Shot_Speedpoweradd = other.shot_stats.Shot_Speedpoweradd;
+	shot_stats.Shot_Speed_Power_Add = other.shot_stats.Shot_Speed_Power_Add;
 	
 	shottargetX = other.shottargetX;
 	shottargetY = other.shottargetY;

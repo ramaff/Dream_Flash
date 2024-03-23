@@ -14,9 +14,9 @@ function scr_XA04_Shot_Mod(){
 			speed = shot_stats.Shot_Speed;
 		}
 		
-		/*shotfire += 3 * global.XA[4];
-		shotfireticks = 4;
-		shotfiretime = 30; */
+		/*shot_stats.Shot_Fire += 3 * global.XA[4];
+		shot_stats.Shot_Fire_Ticks = 4;
+		shot_stats.Shot_Fire_Time = 30; */
 		
 		scr_Shot_Power_Set(1.2);
 		

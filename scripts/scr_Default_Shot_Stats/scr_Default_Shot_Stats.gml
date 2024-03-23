@@ -5,6 +5,9 @@ function scr_Default_Shot_Stats() {
 	
 	shot_stats = {};
 	
+	shot_id = global.instanceidincrementer - 1;
+	shot_boss_id = shot_id;
+	
 	/*
 	shot_id = global.instanceidincrementer - 1;
 	shot_boss_id = shot_id;
@@ -110,7 +113,7 @@ function scr_Default_Shot_Stats() {
 	shot_stats.Shot_Lobbing = 0;
 	shot_stats.Shot_Face_Direction = 0;
 	
-	shotscreenshake = 0;
+	shot_stats.Shot_Screen_Shake = 0;
 
 	var i = 0;
 	for(i = 0; i < 5; i++) {
@@ -138,7 +141,7 @@ function scr_Default_Shot_Stats() {
 	shot_stats.Shot_Friction = 0;
 	shot_stats.Shot_Min_Speed = 0;
 
-	shotcritchance = 0;
+	shot_stats.Shot_Crit_Chance = 0;
 	shotcritmultiple = 1;
 
 	shot_stats.Shot_Orbital_Type = 0;
@@ -150,20 +153,20 @@ function scr_Default_Shot_Stats() {
 	shotphasing = 0;
 	shot_stats.Shot_Looping = 0;
 	shot_stats.Shot_Comeback = 0;
-	shotpierce = 1;
+	shot_stats.Shot_Pierce = 1;
 	shot_stats.Shot_Bounce = 0;
 	shotarmourpierce = 0;
 	shotarmourtear = 0;
-	shotchain = 0;
-	shotchainpower = 0;
-	shotchaintype = 0;
-	shotchainrange = 0;
-	shotchainspeed = 0;
+	shot_stats.Shot_Chain = 0;
+	shot_stats.Shot_Chain_Power = 0;
+	shot_stats.Shot_Chain_Type = 0;
+	shot_stats.Shot_Chain_Range = 0;
+	shot_stats.Shot_Chain_Speed = 0;
 	shot_stats.Shot_Homing_Type = 0;
 	shot_stats.Shot_Homing_Range = 0;
 	shothomingspeed = 0;
 	shot_stats.Shot_Continue = 0;
-	shothealing = 0;
+	shot_stats.Shot_Healing = 0;
 
 	shot_stats.Shot_Impact_Power_Level = 0;
 
@@ -204,28 +207,28 @@ function scr_Default_Shot_Stats() {
 	shot_stats.Shot_Shield_Power = 0;
 	shotreboundtype = 0;
 	shotreboundpower = 0;
-	shotweaken = 0;
-	shotweakentime = 0;
-	shotpoison = 0;
-	shotpoisontime = 0;
-	shotpoisonticks = 0;
-	shotbleed = 0;
-	shotbleedtime = 0;
-	shotbleedticks = 0;
-	shotfire = 0;
-	shotfiretime = 0;
-	shotfireticks = 0;
-	shotfreezetype = 0;
-	shotfreeze = 0;
-	shotfreezetime = 0;
-	shotlifedrain = 0;
-	shotessencedrain = 0;
+	shot_stats.Shot_Weaken = 0;
+	shot_stats.Shot_Weaken_Time = 0;
+	shot_stats.Shot_Poison = 0;
+	shot_stats.Shot_Poison_Time = 0;
+	shot_stats.Shot_Poison_Ticks = 0;
+	shot_stats.Shot_Bleed = 0;
+	shot_stats.Shot_Bleed_Time = 0;
+	shot_stats.Shot_Bleed_Ticks = 0;
+	shot_stats.Shot_Fire = 0;
+	shot_stats.Shot_Fire_Time = 0;
+	shot_stats.Shot_Fire_Ticks = 0;
+	shot_stats.Shot_Freeze_Type = 0;
+	shot_stats.Shot_Freeze = 0;
+	shot_stats.Shot_Freeze_Time = 0;
+	shot_stats.Shot_Life_Drain = 0;
+	shot_stats.Shot_Essence_Drain = 0;
 	
 	shot_stats.Shot_Snake_Move = 0;
 	shottargetX = 0;
 	shottargetY = 0;
 
-	shot_stats.Shot_Speedpoweradd = 0;
+	shot_stats.Shot_Speed_Power_Add = 0;
 	shotbulletredirect = 0;
 	shotbulletredirectchance = 0;
 	shotbulletdisplace = 0;

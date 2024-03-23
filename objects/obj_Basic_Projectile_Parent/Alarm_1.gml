@@ -46,7 +46,7 @@ for(i = 0; i < extra_shot_amount; i++) {
 				speed = shot_stats.Shot_Speed;
 				shot_stats.Shot_Homing_Type = shot_stats.Shot_Homing_Type;
 				shothomingspeed = shot_stats.Shot_Homing_Speed;
-				shotpierce = shot_stats.Shot_Pierce;
+				shot_stats.Shot_Pierce = shot_stats.Shot_Pierce;
 				shot_stats.Shot_Acceleration = shot_stats.Shot_Acceleration;
 		
 				if variable_struct_exists(shot_stats, "Burst_Size") {

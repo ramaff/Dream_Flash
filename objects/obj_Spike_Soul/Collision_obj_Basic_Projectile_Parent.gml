@@ -3,7 +3,7 @@ if !hit_again {
 	variable_struct_set(projectile_hits, other.id, other.id)
     //ds_list_add(projectile_hits, other.id);
     with(other) {
-        shotpierce += 1;
+        shot_stats.Shot_Pierce += 1;
         shot_stats.Shot_Power += 4;
         shotPowerLevel += 4;
         shot_stats.Shot_Speed += 1.5;

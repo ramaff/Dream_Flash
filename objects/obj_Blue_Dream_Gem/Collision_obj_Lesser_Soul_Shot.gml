@@ -29,14 +29,14 @@ if !hit_again and other.shot_stats.Shot_Melee = 0 {
             shot_stats.Shot_Speed = 10;
             speed = 10;
         }
-        if shotfreezetype <= 0.5 {
-            shotfreezetype = 0.5;
+        if shot_stats.Shot_Freeze_Type <= 0.5 {
+            shot_stats.Shot_Freeze_Type = 0.5;
         }
-        if shotfreeze < 2 {
-            shotfreeze = 2;
+        if shot_stats.Shot_Freeze < 2 {
+            shot_stats.Shot_Freeze = 2;
         }
-        if shotfreezetime < 60 {
-            shotfreezetime = 60;
+        if shot_stats.Shot_Freeze_Time < 60 {
+            shot_stats.Shot_Freeze_Time = 60;
         }
 		if shot_stats.Shot_Size > 1 {
 			shot_stats.Shot_Size = 1;

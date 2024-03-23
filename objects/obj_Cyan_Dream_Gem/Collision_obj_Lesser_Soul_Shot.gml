@@ -67,7 +67,7 @@ if !hit_again and other.shot_stats.Shot_Melee = 0 {
                 Shot_Lifespan: 30,
                 Burst_Size: 0.7,
                 Shot_Size: 1,
-                Shot_Pierce: shotpierce,
+                Shot_Pierce: shot_stats.Shot_Pierce,
                 Weapon_Split_Visible: 1,
                 Weapon_Split_Hit_Again: 1,
                 Spread: 180,

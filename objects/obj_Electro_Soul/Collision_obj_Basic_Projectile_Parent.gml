@@ -2,13 +2,13 @@ var hit_again = variable_struct_exists(projectile_hits, other.id)
 if !hit_again {
 	variable_struct_set(projectile_hits, other.id, other.id)
     with(other) {
-        shotchain += 1
-        shotchaintype = 1;
-        shotchainpower = 10;
-		if shotchainrange <= 150 {
-			shotchainrange = 150;
+        shot_stats.Shot_Chain += 1
+        shot_stats.Shot_Chain_Type = 1;
+        shot_stats.Shot_Chain_Power = 10;
+		if shot_stats.Shot_Chain_Range <= 150 {
+			shot_stats.Shot_Chain_Range = 150;
 		}
-        shotchainspeed = 12;
+        shot_stats.Shot_Chain_Speed = 12;
 		
 		shot_stats.Shot_Speed += 2.5;
         speed += 2.5;

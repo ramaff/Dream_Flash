@@ -93,8 +93,8 @@ function scr_Soul_Shot_Expire_Event(){
 		if shot_stats.Shot_Impact_Explode > 0 {
 			scr_Boss_Hit_Explosion();
 		}
-		if shotscreenshake > 2 {
-			scr_Screen_Shake(shotscreenshake, shotscreenshake - 2);
+		if shot_stats.Shot_Screen_Shake > 2 {
+			scr_Screen_Shake(shot_stats.Shot_Screen_Shake, shot_stats.Shot_Screen_Shake - 2);
 		}
 	}
 

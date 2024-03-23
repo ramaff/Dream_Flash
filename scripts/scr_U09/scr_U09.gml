@@ -6,14 +6,14 @@
 
 function scr_U09(){
 	if global.U[9] > 0 {
-		if shotfreezetype <= 1 {
-            shotfreezetype += 0.1 * global.U[9];
+		if shot_stats.Shot_Freeze_Type <= 1 {
+            shot_stats.Shot_Freeze_Type += 0.1 * global.U[9];
         }
-        if shotfreeze < 2 {
-            shotfreeze = 2;
+        if shot_stats.Shot_Freeze < 2 {
+            shot_stats.Shot_Freeze = 2;
         }
-        if shotfreezetime < 60 {
-            shotfreezetime = 60;
+        if shot_stats.Shot_Freeze_Time < 60 {
+            shot_stats.Shot_Freeze_Time = 60;
         }
 	}
 }

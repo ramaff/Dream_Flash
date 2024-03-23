@@ -1,7 +1,7 @@
 function scr_Boss_Damage_Calc() {
 	bossweak = 0;
 	
-	var speeddmg = shot_stats.Shot_Speedpoweradd * speed;
+	var speeddmg = shot_stats.Shot_Speed_Power_Add * speed;
 	var exist = (shot_stats.Shot_Life_Span - shot_stats.Shot_Timer);
 	if exist < 30 and global.D[11] > 0 {
 		speeddmg += 1 * ceil((30 - exist) / 7.5 * global.D[11]);
@@ -16,7 +16,7 @@ function scr_Boss_Damage_Calc() {
 	}
 
 	shotDamageMult = shot_stats.Shot_Power / shotPowerLevel;
-	crit = shotcritchance + irandom(99);
+	crit = shot_stats.Shot_Crit_Chance + irandom(99);
 
 	if crit >= 100 {
 	    shotDamageMult = shotDamageMult * shotcritmultiple;
@@ -37,13 +37,6 @@ function scr_Boss_Damage_Calc() {
 	if shotDamage < 0 {
 		shotDamage = 0;
 	}
-
-	weakStrong = 0;
-	if shotDamageBase < ((shotimaginary + shotsharpandsolid + shotmagical + shotexplosive + shotenergy) * shotPowerLevel) {
-		weakStrong = -1;	
-	} else if shotDamageBase > ((shotimaginary + shotsharpandsolid + shotmagical + shotexplosive + shotenergy) * shotPowerLevel) {
-		weakStrong = 1;
-	}
 	
 	var downward_boost = global.downwardSpiralBoost / 2
 	
@@ -53,8 +46,8 @@ function scr_Boss_Damage_Calc() {
 	scr_Boss_Damage_Display(shotweaktotal);
 
 	//Adding Poison
-	if shotpoison != 0 {
-		scr_Apply_Boss_Poison(other.id, shotpoison, shotpoisontime, shotpoisonticks);
+	if shot_stats.Shot_Poison != 0 {
+		scr_Apply_Boss_Poison(other.id, shot_stats.Shot_Poison, shot_stats.Shot_Poison_Time, shot_stats.Shot_Poison_Ticks);
 	}
 
 	if shotDamage > 0 {
@@ -67,40 +60,40 @@ function scr_Boss_Damage_Calc() {
 		scr_Sound_Effect(sd_Small_Damage_To_Boss);
     
 	    //Adding Bleed
-	    if shotbleed != 0 {
+	    if shot_stats.Shot_Bleed != 0 {
 	        for(i = 0; i <= 49; i++) {
 	            if other.bossbleed[i] = 0 {
-	                other.bossbleed[i] = shotbleed;
-	                other.bossbleedtime[i] = shotbleedtime;
-	                other.bossbleedmaxtime[i] = shotbleedtime;
-	                other.bossbleedticks[i] = shotbleedticks;
+	                other.bossbleed[i] = shot_stats.Shot_Bleed;
+	                other.bossbleedtime[i] = shot_stats.Shot_Bleed_Time;
+	                other.bossbleedmaxtime[i] = shot_stats.Shot_Bleed_Time;
+	                other.bossbleedticks[i] = shot_stats.Shot_Bleed_Ticks;
 	                break;
 	            }
 	        }
 	    }
     
 	    //Adding Fire
-	    if shotfire != 0 {
+	    if shot_stats.Shot_Fire != 0 {
 	        for(i = 0; i <= 49; i++) {
 	            if other.bossfire[i] = 0 {
-	                other.bossfire[i] = shotfire;
-	                other.bossfiretime[i] = shotfiretime;
-	                other.bossfiremaxtime[i] = shotfiretime;
-	                other.bossfireticks[i] = shotfireticks;
+	                other.bossfire[i] = shot_stats.Shot_Fire;
+	                other.bossfiretime[i] = shot_stats.Shot_Fire_Time;
+	                other.bossfiremaxtime[i] = shot_stats.Shot_Fire_Time;
+	                other.bossfireticks[i] = shot_stats.Shot_Fire_Ticks;
 	                break;
 	            }
 	        }
 	    }
     
 	    //Adding Freeze
-	    if shotfreezetype >= other.bossfreezetype and shotfreezetype > 0 and scr_Chance(1 / max(shotfreezetype, 0.01)) {
+	    if shot_stats.Shot_Freeze_Type >= other.bossfreezetype and shot_stats.Shot_Freeze_Type > 0 and scr_Chance(1 / max(shot_stats.Shot_Freeze_Type, 0.01)) {
 	        var wasFrozen = 1;
 	        if other.bossfreezetype = 0 {
 	            wasFrozen = 0;
 	        }
 	        other.bossfreezetype = 0.5;
-	        other.bossfreeze = shotfreeze;
-	        other.bossfreezetime = shotfreezetime;
+	        other.bossfreeze = shot_stats.Shot_Freeze;
+	        other.bossfreezetime = shot_stats.Shot_Freeze_Time;
 	        if wasFrozen = 0 {
 	            other.bossattackspeed = other.bossattackspeed * 0.5;//(1 - other.bossfreezetype);
 	            other.bossmovespeed = other.bossmovespeed * 0.5; //(1 - other.bossfreezetype);

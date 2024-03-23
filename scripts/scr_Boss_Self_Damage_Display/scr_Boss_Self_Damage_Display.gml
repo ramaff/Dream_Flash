@@ -3,18 +3,6 @@ function scr_Boss_Self_Damage_Display() {
 	yy = y - 23 + random(6);
 
 	primaryElement = 0;
-	if other.shotsharpandsolid >= 1 {
-	    primaryElement = 1;
-	}
-	if other.shotexplosive >= 1 {
-	    primaryElement = 2;
-	}
-	if other.shotmagical >= 1 {
-	    primaryElement = 3;
-	}
-	if other.shotenergy >= 1 {
-	    primaryElement = 4;
-	}
 
 	textSize = 1;
 	if crit >= 100 {

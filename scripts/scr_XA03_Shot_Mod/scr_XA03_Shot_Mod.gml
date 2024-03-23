@@ -11,11 +11,11 @@ function scr_XA03_Shot_Mod(){
 		alarm[0] = shot_stats.Shot_Life_Span;
 		shot_stats.Shot_Timer = shot_stats.Shot_Life_Span;
 		
-		shotfire += 2 * global.XA[3];
+		shot_stats.Shot_Fire += 2 * global.XA[3];
 		
-		shotfireticks += 3;
-		if shotfiretime = 0 {
-			shotfiretime = 30;
+		shot_stats.Shot_Fire_Ticks += 3;
+		if shot_stats.Shot_Fire_Time = 0 {
+			shot_stats.Shot_Fire_Time = 30;
 		}
 		
 		shot_stats.Shot_Wave_Direction = (10 * (round(other.sWeaponTicker) mod 2)) - 5

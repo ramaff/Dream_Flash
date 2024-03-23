@@ -110,7 +110,7 @@ function scr_Beam_Damage() {
 	    shotPowerLevel = Shot_Power;
 	    shotarmourpierce = Shot_Armour_Pierce + sarmourpierce;
     
-	    shotcritchance = Shot_Crit_Chance + scritaddchance;
+	    shot_stats.Shot_Crit_Chance = Shot_Crit_Chance + scritaddchance;
 	    shotcritmultiple = Shot_Crit_Multiple + scritadd;
     
 	    shotimaginary = Shot_Imaginary;
@@ -119,20 +119,20 @@ function scr_Beam_Damage() {
 	    shotmagical = Shot_Magical;
 	    shotenergy = Shot_Energy;
     
-	    shotweaken = Shot_Weaken;
-	    shotweakentime = Shot_Weaken_Time;
-	    shotpoison = Shot_Poison / 10 * spower * ((100 + global.soulstrength + global.soulstrengthTemp) / 100);
-	    shotpoisontime = Shot_Poison_Time;
-	    shotpoisonticks = Shot_Poison_Ticks;
-	    shotbleed = Shot_Bleed / 10 * spower * ((100 + global.soulstrength + global.soulstrengthTemp) / 100);
-	    shotbleedtime = Shot_Bleed_Time;
-	    shotbleedticks = Shot_Bleed_Ticks;
-	    shotfire = Shot_Fire / 10 * spower * ((100 + global.soulstrength + global.soulstrengthTemp) / 100);
-	    shotfiretime = Shot_Fire_Time;
-	    shotfireticks = Shot_Fire_Ticks;
-	    shotfreezetype = Shot_Freeze_Type;
-	    shotfreeze = Shot_Freeze;
-	    shotfreezetime = Shot_Freeze_Time;
+	    shot_stats.Shot_Weaken = Shot_Weaken;
+	    shot_stats.Shot_Weaken_Time = Shot_Weaken_Time;
+	    shot_stats.Shot_Poison = Shot_Poison / 10 * spower * ((100 + global.soulstrength + global.soulstrengthTemp) / 100);
+	    shot_stats.Shot_Poison_Time = Shot_Poison_Time;
+	    shot_stats.Shot_Poison_Ticks = Shot_Poison_Ticks;
+	    shot_stats.Shot_Bleed = Shot_Bleed / 10 * spower * ((100 + global.soulstrength + global.soulstrengthTemp) / 100);
+	    shot_stats.Shot_Bleed_Time = Shot_Bleed_Time;
+	    shot_stats.Shot_Bleed_Ticks = Shot_Bleed_Ticks;
+	    shot_stats.Shot_Fire = Shot_Fire / 10 * spower * ((100 + global.soulstrength + global.soulstrengthTemp) / 100);
+	    shot_stats.Shot_Fire_Time = Shot_Fire_Time;
+	    shot_stats.Shot_Fire_Ticks = Shot_Fire_Ticks;
+	    shot_stats.Shot_Freeze_Type = Shot_Freeze_Type;
+	    shot_stats.Shot_Freeze = Shot_Freeze;
+	    shot_stats.Shot_Freeze_Time = Shot_Freeze_Time;
     
 	    with (obj_Boss_Parent) {
     

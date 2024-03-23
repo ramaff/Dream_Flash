@@ -129,7 +129,7 @@ function scr_Extra_Shot_Stats() {
 	shot_stats.Shot_Wave_Acceleration = other.Shot_Wave_Acceleration;
 	shot_stats.Shot_Wave_Time = other.Shot_Wave_Time;
 	
-	shotscreenshake = other.Shot_Screen_Shake;
+	shot_stats.Shot_Screen_Shake = other.Shot_Screen_Shake;
 
 	var i = 0;
 	for(i = 0; i < 5; i++) {
@@ -180,22 +180,22 @@ function scr_Extra_Shot_Stats() {
 
 	shot_stats.Shot_Continue = other.Shot_Continue;
 
-	shotcritchance = other.Shot_Crit_Chance + other.scritaddchance;
+	shot_stats.Shot_Crit_Chance = other.Shot_Crit_Chance + other.scritaddchance;
 	shotcritmultiple = other.Shot_Crit_Multiple + other.scritadd;
 	shot_stats.Shot_Melee = other.Shot_Melee;
 	shot_stats.Shot_Air_Target = other.Shot_Air_Target;
 	shotphasing = other.Shot_Phasing;
 	shot_stats.Shot_Looping = other.Shot_Looping;
 	shot_stats.Shot_Comeback = other.Shot_Comeback;
-	shotpierce = other.Shot_Pierce + other.sshotpierce;
+	shot_stats.Shot_Pierce = other.Shot_Pierce + other.sshotpierce;
 	shotarmourpierce = other.Shot_Armour_Pierce + other.sarmourpierce;
 	shotarmourtear = other.Shot_Armour_Tear;
 	shot_stats.Shot_Bounce = other.Shot_Bounce;
-	shotchain = other.Shot_Chain;
-	shotchaintype = other.Shot_Chain_Type;
-	shotchainpower = (other.Shot_Chain_Power + other.spoweradd) * shotaddedpow;
-	shotchainrange = other.Shot_Chain_Range;
-	shotchainspeed = other.Shot_Chain_Speed;
+	shot_stats.Shot_Chain = other.Shot_Chain;
+	shot_stats.Shot_Chain_Type = other.Shot_Chain_Type;
+	shot_stats.Shot_Chain_Power = (other.Shot_Chain_Power + other.spoweradd) * shotaddedpow;
+	shot_stats.Shot_Chain_Range = other.Shot_Chain_Range;
+	shot_stats.Shot_Chain_Speed = other.Shot_Chain_Speed;
 	shot_stats.Shot_Homing_Type = other.Shot_Homing_Type;
 	shot_stats.Shot_Homing_Range = other.Shot_Homing_Range;
 	shothomingspeed = other.Shot_Homing_Speed;
@@ -231,36 +231,36 @@ function scr_Extra_Shot_Stats() {
 	shot_stats.Shot_Shield_Power = (other.Shot_Shield_Power + other.spoweradd) * shotaddedpow;
 	shotreboundtype = other.Shot_Rebound_Type;
 	shotreboundpower = (other.Shot_Rebound_Power + other.spoweradd) * shotaddedpow;
-	shotweaken = other.Shot_Weaken;
-	shotweakentime = other.Shot_Weaken_Time;
-	shotpoison = other.Shot_Poison * shotaddedpow;
-	shotpoisontime = other.Shot_Poison_Time;
-	shotpoisonticks = other.Shot_Poison_Ticks;
+	shot_stats.Shot_Weaken = other.Shot_Weaken;
+	shot_stats.Shot_Weaken_Time = other.Shot_Weaken_Time;
+	shot_stats.Shot_Poison = other.Shot_Poison * shotaddedpow;
+	shot_stats.Shot_Poison_Time = other.Shot_Poison_Time;
+	shot_stats.Shot_Poison_Ticks = other.Shot_Poison_Ticks;
 	
 
 	if scr_Chance(1 / other.Shot_Bleed_Chance) {
-		shotbleed = other.Shot_Bleed * shotaddedpow;
-		shotbleedtime = other.Shot_Bleed_Time;
-		shotbleedticks = other.Shot_Bleed_Ticks;
+		shot_stats.Shot_Bleed = other.Shot_Bleed * shotaddedpow;
+		shot_stats.Shot_Bleed_Time = other.Shot_Bleed_Time;
+		shot_stats.Shot_Bleed_Ticks = other.Shot_Bleed_Ticks;
 	}
-	shotfire = other.Shot_Fire * shotaddedpow;
-	shotfiretime = other.Shot_Fire_Time;
-	shotfireticks = other.Shot_Fire_Ticks;
+	shot_stats.Shot_Fire = other.Shot_Fire * shotaddedpow;
+	shot_stats.Shot_Fire_Time = other.Shot_Fire_Time;
+	shot_stats.Shot_Fire_Ticks = other.Shot_Fire_Ticks;
 	if scr_Chance(1 / other.Shot_Freeze_Chance) {
-		shotfreezetype = other.Shot_Freeze_Type;
-		shotfreeze = other.Shot_Freeze;
-		shotfreezetime = other.Shot_Freeze_Time;
+		shot_stats.Shot_Freeze_Type = other.Shot_Freeze_Type;
+		shot_stats.Shot_Freeze = other.Shot_Freeze;
+		shot_stats.Shot_Freeze_Time = other.Shot_Freeze_Time;
 	}
 	shotlight = other.Shot_Light;
 	shotlightsize = other.Shot_Light_Size;
 
-	shothealing = other.Shot_Healing;
-	shotlifedrain = other.Shot_Life_Drain;
-	shotessencedrain = other.Shot_Essence_Drain;
+	shot_stats.Shot_Healing = other.Shot_Healing;
+	shot_stats.Shot_Life_Drain = other.Shot_Life_Drain;
+	shot_stats.Shot_Essence_Drain = other.Shot_Essence_Drain;
 
 	shot_stats.Shot_Init_Speed = shot_stats.Shot_Speed;
 	
-	shot_stats.Shot_Speedpoweradd = other.Shot_Speed_Power_Add;
+	shot_stats.Shot_Speed_Power_Add = other.Shot_Speed_Power_Add;
 	shotbulletredirect = other.Shot_Bullet_Redirect;
 	shotbulletredirectchance = other.Shot_Bullet_Redirect_Chance;
 	shotbulletdisplace = other.Shot_Bullet_Displace;

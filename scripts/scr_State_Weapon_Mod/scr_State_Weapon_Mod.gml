@@ -103,7 +103,7 @@ function scr_State_Weapon_Mod(){
 		if scr_State_Active_Check("Spike") {
 		
 			shot_stats.Shot_Speed = shot_stats.Shot_Speed * (1.25 * global.soulstateformboost);
-			shotpierce += 1;
+			shot_stats.Shot_Pierce += 1;
 		
 			speed = shot_stats.Shot_Speed;
 		
@@ -133,7 +133,7 @@ function scr_State_Weapon_Mod(){
 			shot_stats.Shot_Extra_Stats[0].Shot_Power = shot_stats.Shot_Power * global.soulstateformboost / 2.5;
 			shot_stats.Shot_Extra_Stats[0].Shot_Speed = shot_stats.Shot_Speed * 1.5;
 			shot_stats.Shot_Extra_Stats[0].Shot_Lifespan = shot_stats.Shot_Life_Span / 2;
-			shot_stats.Shot_Extra_Stats[0].Shot_Pierce = shotpierce;
+			shot_stats.Shot_Extra_Stats[0].Shot_Pierce = shot_stats.Shot_Pierce;
 			shot_stats.Shot_Extra_Stats[0].Shot_Size = (0.05 + shot_stats.Shot_Size * 0.5);
 			//shot_stats.Shot_Extra_Stats[0].Shot_Mouse = true;
 			
@@ -203,10 +203,10 @@ function scr_State_Weapon_Mod(){
 			shot_stats.Shot_Gravity = grav + 0.01
 			y -= shot_stats.Shot_Height;
 			
-			shotchain = 4;
-			shotchaintype = 2;
-			shotchainpower = shot_stats.Shot_Power / 4;
-			shotchainrange = 500
+			shot_stats.Shot_Chain = 4;
+			shot_stats.Shot_Chain_Type = 2;
+			shot_stats.Shot_Chain_Power = shot_stats.Shot_Power / 4;
+			shot_stats.Shot_Chain_Range = 500
 		}
 	}
 }

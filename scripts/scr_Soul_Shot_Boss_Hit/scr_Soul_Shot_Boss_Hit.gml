@@ -5,7 +5,7 @@ function scr_Soul_Shot_Boss_Hit() {
 	var hit_again = variable_struct_exists(other.projectile_hits, shot_boss_id)
 	if !hit_again and shot_stats.Shot_Damage {
     
-	    if shotpierce > 0 || shot_stats.Shot_Continue = 1 {
+	    if shot_stats.Shot_Pierce > 0 || shot_stats.Shot_Continue = 1 {
 			
 			if shot_stats.Shot_Excess_Essence > 0 {
 				var ex_ess = shot_stats.Shot_Excess_Essence;
@@ -25,24 +25,24 @@ function scr_Soul_Shot_Boss_Hit() {
 				shot_stats.Shot_Excess_Essence = 0;
 			}
 			
-			if shotchain > 0 {
+			if shot_stats.Shot_Chain > 0 {
 				
 				var max_streaks = 30;
 				var xst = x;
 				var yst = y;
 				var streak_length = 64;
 				var streak_target = other.id;
-				var chain_damage = shotchainpower;
+				var chain_damage = shot_stats.Shot_Chain_Power;
 				var streak_color = shot_stats.Shot_Chain_Color;
 				streak_color = make_color_rgb(streak_color[0], streak_color[1], streak_color[2])
-				var chains = shotchain;
-				var chain_range = shotchainrange;
+				var chains = shot_stats.Shot_Chain;
+				var chain_range = shot_stats.Shot_Chain_Range;
 	
 				scr_Shot_Lightning_Chain(max_streaks, streak_target, chains, xst, yst, streak_length, chain_damage, streak_color, chain_range)
 				
 			}
 		
-			if shotpierce = 1 and shot_stats.Shot_Impact_Type = 2 {
+			if shot_stats.Shot_Pierce = 1 and shot_stats.Shot_Impact_Type = 2 {
 				scr_Screen_Shake(20, 14);
 				//scr_Screen_Flash(7);
 				scr_Disk_Effect(20, 1, c_white)
@@ -75,9 +75,9 @@ function scr_Soul_Shot_Boss_Hit() {
 		
 	        scr_Boss_Damage_Calc();
 		
-			if shotscreenshake > 2 {
-				scr_Screen_Shake(shotscreenshake, shotscreenshake - 2);
-				shotscreenshake = 0;
+			if shot_stats.Shot_Screen_Shake > 2 {
+				scr_Screen_Shake(shot_stats.Shot_Screen_Shake, shot_stats.Shot_Screen_Shake - 2);
+				shot_stats.Shot_Screen_Shake = 0;
 			}
 		
 			if shotDamage > 0 {
@@ -92,13 +92,13 @@ function scr_Soul_Shot_Boss_Hit() {
 					//scr_Particle_Burst(obj_Friction_Part, spr_Soul_Bit, c_white, c_white, 1, 12 + random(8), ddir, 0, 0, shot_stats.Shot_Size + random(0.2), 15 + random(10))
 				}
 				
-				if shotessencedrain > 0 {
-					obj_Soul_Parent.senergy += shot_stats.Shot_Power * shotessencedrain;
+				if shot_stats.Shot_Essence_Drain > 0 {
+					obj_Soul_Parent.senergy += shot_stats.Shot_Power * shot_stats.Shot_Essence_Drain;
 				}
 			}
 		
-			if shotlifedrain > 0 {
-				var valdis = (shotDamage / 10) * shotlifedrain;
+			if shot_stats.Shot_Life_Drain > 0 {
+				var valdis = (shotDamage / 10) * shot_stats.Shot_Life_Drain;
 				scr_Heal_Soul(valdis);
 
 				with instance_create(obj_Soul_Parent.x,obj_Soul_Parent.y,obj_Damage_Indicator) {
@@ -116,11 +116,11 @@ function scr_Soul_Shot_Boss_Hit() {
 				scr_A07();	
 			}
         
-	        if shotweaken != 0 {
+	        if shot_stats.Shot_Weaken != 0 {
 	            for(i = 0; i <= 49; i++) {
 	                if other.bossweaken[i] = 0 {
-	                    other.bossweaken[i] = shotweaken;
-	                    other.bossweakentime[i] = shotweakentime;
+	                    other.bossweaken[i] = shot_stats.Shot_Weaken;
+	                    other.bossweakentime[i] = shot_stats.Shot_Weaken_Time;
 	                    break;
 	                }
 	            }
@@ -210,8 +210,8 @@ function scr_Soul_Shot_Boss_Hit() {
         
 	       // if shot_stats.Shot_Melee = 1 { 
 			if shot_stats.Shot_Continue = 0 {
-		        shotpierce--;
-		        if shotpierce <= 0 {
+		        shot_stats.Shot_Pierce--;
+		        if shot_stats.Shot_Pierce <= 0 {
 		            instance_destroy();
 		        }
 			} else {

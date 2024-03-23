@@ -3,7 +3,7 @@
 function scr_Soul_Shot_Soul_Hit(){
 
 	if shot_stats.Shot_Damage {
-		if shothealing = 1 {
+		if shot_stats.Shot_Healing = 1 {
 			other.shealth += shot_stats.Shot_Power / 60;
 
 			if shothealemit = 0 {

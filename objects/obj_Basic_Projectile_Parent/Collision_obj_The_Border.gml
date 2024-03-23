@@ -24,8 +24,8 @@
 	            with (obj_Boss_Parent) {
 	                if distance_to_object(other) < other.shot_stats.Shot_Impact_Size {
 	                    bosshealth -= other.shot_stats.Shot_Impact_Power - bossdefense;
-	                    //bosspoison += other.shotpoison * (other.shot_stats.Shot_Impact_Power / other.shot_stats.Shot_Power);
-	                    //bosspoisondown += other.shotpoisondown * (other.shot_stats.Shot_Impact_Power / other.shot_stats.Shot_Power);
+	                    //bosspoison += other.shot_stats.Shot_Poison * (other.shot_stats.Shot_Impact_Power / other.shot_stats.Shot_Power);
+	                    //bosspoisondown += other.shot_stats.Shot_Poisondown * (other.shot_stats.Shot_Impact_Power / other.shot_stats.Shot_Power);
 	                }
             
 	            }
@@ -40,7 +40,7 @@
 		}
 
         
-if shotphasing = 0 and shot_stats.Shot_Bounce = 0 and shot_stats.Shot_Looping = 0 and shotchain = 0 and shot_stats.Shot_Timer > 1 {
+if shotphasing = 0 and shot_stats.Shot_Bounce = 0 and shot_stats.Shot_Looping = 0 and shot_stats.Shot_Chain = 0 and shot_stats.Shot_Timer > 1 {
     instance_destroy();
 }
 
@@ -78,8 +78,8 @@ if shot_stats.Shot_Bounce >= 1 and shot_stats.Shot_Air_Target = 0 and shot_stats
 	shot_stats.Shot_Bounce--;
 }
 /*
-if shotchain >= 1 and shot_stats.Shot_Bounce = 0 and shot_stats.Shot_Melee = 0 {
-    shotchain--;
+if shot_stats.Shot_Chain >= 1 and shot_stats.Shot_Bounce = 0 and shot_stats.Shot_Melee = 0 {
+    shot_stats.Shot_Chain--;
     target = noone
     x = other.x;
     y = other.y;
@@ -88,11 +88,11 @@ if shotchain >= 1 and shot_stats.Shot_Bounce = 0 and shot_stats.Shot_Melee = 0 {
         var hit_again = ds_list_find_index(projectile_hits, other.shot_id);
         if hit_again = -1
         if other.target == noone || dis < other.target.dis
-        if collision_circle(other.x, other.y, other.shotchainrange, id, true, false)
+        if collision_circle(other.x, other.y, other.shot_stats.Shot_Chain_Range, id, true, false)
         other.target = id;
     }
     if target != noone {
-        move_towards_point(target.x,target.y,shotchainspeed);
+        move_towards_point(target.x,target.y,shot_stats.Shot_Chain_Speed);
     } else {
         instance_destroy();
     }

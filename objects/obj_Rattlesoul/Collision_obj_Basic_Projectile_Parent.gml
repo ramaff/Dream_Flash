@@ -3,9 +3,9 @@ if !hit_again {
 	variable_struct_set(projectile_hits, other.id, other.id)
     with(other) {
 		if scr_Chance(4) {
-	        shotweaken += 2;
-	        if shotweakentime <= 120 {
-	            shotweakentime = 120;
+	        shot_stats.Shot_Weaken += 2;
+	        if shot_stats.Shot_Weaken_Time <= 120 {
+	            shot_stats.Shot_Weaken_Time = 120;
 	        }
 		}
     }

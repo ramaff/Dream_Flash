@@ -4,9 +4,9 @@ if !hit_again {
     with(other) {
 		var chance = irandom(4);
 		if chance = 1 {
-	        shotweaken += 1;
-	        if shotweakentime <= 120 {
-	            shotweakentime = 120;
+	        shot_stats.Shot_Weaken += 1;
+	        if shot_stats.Shot_Weaken_Time <= 120 {
+	            shot_stats.Shot_Weaken_Time = 120;
 	        }
 		}
     }

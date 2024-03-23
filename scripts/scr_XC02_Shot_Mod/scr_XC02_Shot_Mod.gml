@@ -27,7 +27,7 @@ function scr_XC02_Shot_Mod(){
 		shot_stats.Shot_Aura_Power = shot_stats.Shot_Power;
 		shot_stats.Shot_Aura_Range = 100; */
 		
-		shotpierce += 1;
+		shot_stats.Shot_Pierce += 1;
 		
 		//if shot_stats.Shot_Trail = 0 {
 			shot_stats.Shot_Trail = 3;
