@@ -25,9 +25,9 @@ function scr_Duplicate_Shot_Stats() {
 	shotaccuracy = other.shotaccuracy
 	shot_stats.Shot_Damage = other.shot_stats.Shot_Damage
 
-	shotangle = other.shotangle;
-	shotframe = other.shotframe;
-	shotimagespeed = other.shotimagespeed;
+	shot_stats.Shot_Angle = other.shot_stats.Shot_Angle;
+	shot_stats.Shot_Frame = other.shot_stats.Shot_Frame;
+	shot_stats.Shot_Image_Speed = other.shot_stats.Shot_Image_Speed;
 	shot_stats.Shot_Melee = other.shot_stats.Shot_Melee;
 	shot_stats.Shot_Form_Show = other.shot_stats.Shot_Form_Show;
 	shot_stats.Shot_Healing = other.shot_stats.Shot_Healing;
@@ -55,22 +55,22 @@ function scr_Duplicate_Shot_Stats() {
 	shot_stats.Shot_Trail_Hit_Speed = other.shot_stats.Shot_Trail_Hit_Speed;	
 	shot_stats.Shot_Trail_Hit_Type = other.shot_stats.Shot_Trail_Hit_Type;
 	
-	shotexplosionsprite = other.shotexplosionsprite;
+	shot_stats.Shot_Explosion_Sprite = other.shot_stats.Shot_Explosion_Sprite;
 	shotexplosionpart = other.shotexplosionpart;
 	shotexplosionsmoke = other.shotexplosionsmoke;
 
 	shot_stats.Image_Rotation_Speed = other.shot_stats.Image_Rotation_Speed;
 
-	shotorigin = other.shotorigin;
+	shot_stats.Shot_Origin = other.shot_stats.Shot_Origin;
 
 	*/
 	
 	/*
 	shotduplicatesprite = other.shotduplicatesprite;
 	sprite_index = other.shotduplicatesprite;
-	image_angle = shotangle;
-	image_index = shotframe;
-	image_speed = shotimagespeed;
+	image_angle = shot_stats.Shot_Angle;
+	image_index = shot_stats.Shot_Frame;
+	image_speed = shot_stats.Shot_Image_Speed;
 	image = other.image
 	image_alpha = other.image;
 	shot_stats.Shot_Point_Angle = other.shot_stats.Shot_Point_Angle;
@@ -203,7 +203,7 @@ function scr_Duplicate_Shot_Stats() {
 	shot_stats.Shot_Chain_Speed = other.shot_stats.Shot_Chain_Speed;
 	shot_stats.Shot_Homing_Type = other.shot_stats.Shot_Homing_Type;
 	shot_stats.Shot_Homing_Range = other.shot_stats.Shot_Homing_Range;
-	shothomingspeed = other.shothomingspeed;
+	shot_stats.Shot_Homing_Speed = other.shot_stats.Shot_Homing_Speed;
 	shot_stats.Shot_Impact_Power = other.shot_stats.Shot_Impact_Power;
 	shot_stats.Shot_Impact_Explode = other.shot_stats.Shot_Impact_Explode;
 	shot_stats.Shot_Impact_Type = other.shot_stats.Shot_Impact_Type;

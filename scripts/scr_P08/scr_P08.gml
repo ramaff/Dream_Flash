@@ -46,7 +46,7 @@ function scr_P08(){
 				current_weapon_stats.Shot_Lifespan = 5;
 			}
 			
-			scr_Setup_Weapon_Stats(current_weapon_stats);
+			current_weapon_stats = scr_Setup_Weapon_Stats(current_weapon_stats);
 			
 			barrage = false;
 			minion = false;

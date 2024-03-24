@@ -12,9 +12,6 @@ function scr_Bleeding_Teleport() {
 			Shot_Sprite: "spr_Bleeding_Blade_Shot",
 			Shot_Type: "obj_Lesser_Soul_Shot"
 		};
-	
-		//scr_Setup_Weapon_Stats(current_weapon_stats);
-		//current_weapon_stats.
 
 		current_weapon_stats.Shot_Phasing = 1;
 		current_weapon_stats.Weapon_Soul_Maintain = 1;
@@ -45,13 +42,13 @@ function scr_Bleeding_Teleport() {
 
 		current_weapon_stats.Shot_Size = 0.3 + (sqrt(Shot_Power) / 20);
 
-		scr_Setup_Weapon_Stats(current_weapon_stats);
+		current_weapon_stats = scr_Setup_Weapon_Stats(current_weapon_stats);
 
 		scr_Shot_Creation();
 		
 		current_weapon_stats.Shot_Angle = current_weapon_stats.Shot_Angle + 180;
 		
-		scr_Setup_Weapon_Stats(current_weapon_stats);
+		current_weapon_stats = scr_Setup_Weapon_Stats(current_weapon_stats);
 
 		scr_Shot_Creation();
 	

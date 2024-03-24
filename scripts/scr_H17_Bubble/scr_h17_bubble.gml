@@ -31,7 +31,7 @@ function scr_H17_Bubble(){
 		};
 
 		
-		scr_Setup_Weapon_Stats(current_weapon_stats);
+		current_weapon_stats = scr_Setup_Weapon_Stats(current_weapon_stats);
 		scr_Shot_Creation();
 		
 		/*

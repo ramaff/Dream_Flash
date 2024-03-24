@@ -12,10 +12,10 @@ function scr_E06() {
 	        shot_stats.Shot_Homing_Range += 100 * global.E[6];
 	    }
 		
-		if shothomingspeed < 1 + (1.5 * global.E[6]) {
-			shothomingspeed = 1 + (1.5 * global.E[6]);	
+		if shot_stats.Shot_Homing_Speed < 1 + (1.5 * global.E[6]) {
+			shot_stats.Shot_Homing_Speed = 1 + (1.5 * global.E[6]);	
 		} else {
-			shothomingspeed += 1.5 * global.E[6]	
+			shot_stats.Shot_Homing_Speed += 1.5 * global.E[6]	
 		}
 	    //}
 	}

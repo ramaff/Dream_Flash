@@ -253,7 +253,7 @@ function scr_Load_Item_Stats() {
 	    obj_Soul_Parent.sshotspeed += 1 * global.A[08];
 	}
 	if global.A[09] > 0 {
-	    global.soulshot_stats.Shot_Sizefactor += 0.25 * global.A[09];
+	    global.soulshotsizefactor += 0.25 * global.A[09];
 	    obj_Soul_Parent.sshotsizefactor += 0.25 * global.A[09];
 	    global.soulpowerfactor += 0.5 * global.A[09];
 	    obj_Soul_Parent.spowerfactor += 0.5 * global.A[09];
@@ -676,7 +676,7 @@ function scr_Load_Item_Stats() {
 	    obj_Soul_Parent.spowerfactor -= 1.5 * global.U[6];
 		global.soulenergyconservationfactor += 0.15 * global.U[6];
 	    obj_Soul_Parent.senergyconservationfactor += 0.15 * global.U[6];	
-		global.soulshot_stats.Shot_Sizefactor -= 0.1 * global.U[6];
+		global.soulshotsizefactor -= 0.1 * global.U[6];
 	    obj_Soul_Parent.sshotsizefactor -= 0.1 * global.U[6];
 	}
 	

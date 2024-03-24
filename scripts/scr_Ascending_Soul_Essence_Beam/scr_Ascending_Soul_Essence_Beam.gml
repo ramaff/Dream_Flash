@@ -30,6 +30,6 @@ function scr_Ascending_Soul_Essence_Beam(c_wp = global.currentweapon){
         Shot_Pierce: 100
 	};
 	
-	//scr_Setup_Weapon_Stats(current_weapon_stats);
+	current_weapon_stats = scr_Setup_Weapon_Stats(current_weapon_stats);
 
 }

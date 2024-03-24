@@ -33,14 +33,14 @@ function scr_H51(){
 		Shot_Trail_Color2: [133,76,255]
 	};
 	
-	scr_Setup_Weapon_Stats(current_weapon_stats);
+	current_weapon_stats = scr_Setup_Weapon_Stats(current_weapon_stats);
 	//if instance_exists(obj_Boss_Parent) {
 		//Shot_Direction = point_direction(x,y,instance_nearest(x,y,obj_Boss_Parent).x,instance_nearest(x,y,obj_Boss_Parent).y);
 	scr_Shot_Creation();
 		
 	current_weapon_stats.Shot_Direction = 180;
 	current_weapon_stats.Shot_Lobbing_Tilt = -10;
-	scr_Setup_Weapon_Stats(current_weapon_stats);
+	current_weapon_stats = scr_Setup_Weapon_Stats(current_weapon_stats);
 	scr_Shot_Creation();
 		//scr_Shot_Creation();
 	//}

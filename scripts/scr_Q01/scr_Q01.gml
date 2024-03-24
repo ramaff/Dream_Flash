@@ -45,7 +45,7 @@ function scr_Q01() {
 		
 			//current_weapon_stats.Shot_Lobbing_Tilt = -10;
 
-			scr_Setup_Weapon_Stats(current_weapon_stats);
+			current_weapon_stats = scr_Setup_Weapon_Stats(current_weapon_stats);
 			
 			barrage = false;
 			minion = false;

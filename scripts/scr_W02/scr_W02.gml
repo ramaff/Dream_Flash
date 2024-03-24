@@ -34,14 +34,13 @@ function scr_W02(teleport_dir = point_direction(x,y,mouse_x,mouse_y)) {
 		
 		
 		
-		scr_Setup_Weapon_Stats(current_weapon_stats);
+		current_weapon_stats = scr_Setup_Weapon_Stats(current_weapon_stats);
 		scr_Shot_Creation();
 		
 		current_weapon_stats.Shot_Count = 5
 		current_weapon_stats.Shot_Speed = 7.5
 		current_weapon_stats.Shot_Spread = 30
-		
-		scr_Setup_Weapon_Stats(current_weapon_stats);
+
 		scr_Shot_Creation();
 		
 

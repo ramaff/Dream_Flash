@@ -2,9 +2,16 @@
 // https://help.yoyogames.com/hc/en-us/articles/360005277377 for more information
 function scr_Setup_Weapon_Stats(_current_weapon_stats = current_weapon_stats) {
 	
+	var _base_stats = scr_Setup_Default_Shot_Stats()
+	
+	_current_weapon_stats = scr_Struct_Merge(_base_stats, _current_weapon_stats, false)
+	
+	return _current_weapon_stats
+	
 	// Newer System ? idk
 	
 	//Shot_Stats = _current_weapon_stats;
+	/*
 	if variable_struct_exists(_current_weapon_stats, "Weapon_Number") {
 		Shot_Stats.Weapon_Number = _current_weapon_stats.Weapon_Number;
 	}
@@ -35,6 +42,7 @@ function scr_Setup_Weapon_Stats(_current_weapon_stats = current_weapon_stats) {
 	if variable_struct_exists(_current_weapon_stats, "Shot_Init_Grow") {
 		Shot_Stats.Shot_Init_Grow = _current_weapon_stats.Shot_Init_Grow;
 	}
+	*/
 	//if variable_struct_exists(_current_weapon_stats, "Shot_Extra_Stats") {
 		/*if _current_weapon_stats.Shot_Extra_Stats != false {
 			show_debug_message("_current_weapon_stats.Shot_Extra_Stats: " + string(_current_weapon_stats.Shot_Extra_Stats))
@@ -48,7 +56,7 @@ function scr_Setup_Weapon_Stats(_current_weapon_stats = current_weapon_stats) {
 	//}
 	
 	// Older System
-	
+	/*
 	if variable_struct_exists(_current_weapon_stats, "Shot_Extra_Stats") {
 		Shot_Extra_Stats = _current_weapon_stats.Shot_Extra_Stats
 	}
@@ -643,6 +651,7 @@ function scr_Setup_Weapon_Stats(_current_weapon_stats = current_weapon_stats) {
 	if variable_struct_exists(_current_weapon_stats, "Minion_Lifespan") {
 		Minion_Lifespan = _current_weapon_stats.Minion_Lifespan;
 	}
+	*/
 		
 	/*if variable_struct_exists(_current_weapon_stats, "Shot") {
 		Shot = _current_weapon_stats.Shot

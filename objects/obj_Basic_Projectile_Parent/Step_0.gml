@@ -295,7 +295,7 @@ if shot_stats.Shot_Homing_Type = 1 {
         speed = min(speed + 0.5,shot_stats.Shot_Speed);
         
         var pointDir = point_direction(x,y,target.x,target.y);
-        im += sin(degtorad(pointDir - im)) * shothomingspeed;
+        im += sin(degtorad(pointDir - im)) * shot_stats.Shot_Homing_Speed;
         direction = im;
     
         //move_towards_point(target.x,target.y,shot_stats.Shot_Speed);

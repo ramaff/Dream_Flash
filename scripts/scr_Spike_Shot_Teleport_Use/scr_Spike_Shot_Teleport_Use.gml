@@ -8,9 +8,6 @@ function scr_Spike_Shot_Teleport_Use(dist, ang) {
 		Shot_Sprite: "spr_Rising_Spike_Shot",
 		Shot_Type: "obj_Lesser_Soul_Shot"
 	};
-	
-	//scr_Setup_Weapon_Stats(current_weapon_stats);
-	//current_weapon_stats.
 
 	current_weapon_stats.Shot_Duplicate_Sprite = spr_Phase_Magic_Shot;
 	current_weapon_stats.Shot_Speed = 0;
@@ -27,7 +24,7 @@ function scr_Spike_Shot_Teleport_Use(dist, ang) {
 	current_weapon_stats.Shot_Pierce = 99;
 	current_weapon_stats.Shot_Size = 0.5;
 
-	scr_Setup_Weapon_Stats(current_weapon_stats);
+	current_weapon_stats = scr_Setup_Weapon_Stats(current_weapon_stats);
 	scr_Shot_Creation();
 
 }

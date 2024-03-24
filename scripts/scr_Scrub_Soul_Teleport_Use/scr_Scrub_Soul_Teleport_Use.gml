@@ -8,9 +8,6 @@ function scr_Scrub_Soul_Teleport_Use(dist, ang) {
 		Shot_Sprite: "spr_Shot_Bubble_Medium",
 		Shot_Type: "obj_Lesser_Soul_Shot"
 	};
-	
-	//scr_Setup_Weapon_Stats(current_weapon_stats);
-	//current_weapon_stats.
 
 	current_weapon_stats.Shot_Size = 0.325 + random(0.125);
 	current_weapon_stats.Shot_Power = 6 * global.soulstateformboost * (1 + global.teleportboost);
@@ -29,7 +26,7 @@ function scr_Scrub_Soul_Teleport_Use(dist, ang) {
 	current_weapon_stats.Shot_XX = lengthdir_x(dist, ang) - 75 + random(150);
 	current_weapon_stats.Shot_YY = lengthdir_y(dist, ang) - 75 + random(150);
 	
-	scr_Setup_Weapon_Stats(current_weapon_stats);
+	current_weapon_stats = scr_Setup_Weapon_Stats(current_weapon_stats);
 	
 	scr_Shot_Creation();
 

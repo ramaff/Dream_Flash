@@ -23,7 +23,7 @@ function scr_Default_Shot_Stats() {
 	image = 0;
 	shothitagain = 0;
 
-	shotorigin = noone;
+	shot_stats.Shot_Origin = noone;
 	shotgem = 0;
 	
 	shotaccuracy = 15;
@@ -62,7 +62,7 @@ function scr_Default_Shot_Stats() {
 	
 	shot_stats.Shot_Beam = 0;
 	
-	shotexplosionsprite = spr_Explosion_Part;
+	shot_stats.Shot_Explosion_Sprite = spr_Explosion_Part;
 	shotexplosionpart = spr_Explosion_Part;
 	shotexplosionsmoke = spr_Essence_Trail_Bit;
 
@@ -166,7 +166,7 @@ function scr_Default_Shot_Stats() {
 	shot_stats.Shot_Chain_Speed = 0;
 	shot_stats.Shot_Homing_Type = 0;
 	shot_stats.Shot_Homing_Range = 0;
-	shothomingspeed = 0;
+	shot_stats.Shot_Homing_Speed = 0;
 	shot_stats.Shot_Continue = 0;
 	shot_stats.Shot_Healing = 0;
 

@@ -21,7 +21,7 @@ function scr_XC02_Shot_Mod(){
 		
 		shot_stats.Shot_Homing_Type = 1;
 		shot_stats.Shot_Homing_Range = max(150, shot_stats.Shot_Homing_Range + 150);
-		shothomingspeed = max(3, shothomingspeed + 2);
+		shot_stats.Shot_Homing_Speed = max(3, shot_stats.Shot_Homing_Speed + 2);
 		
 		/* shot_stats.Shot_Aura = 1;
 		shot_stats.Shot_Aura_Power = shot_stats.Shot_Power;

@@ -11,14 +11,14 @@ shot_stats.Shot_Soul_Maintain = 0;
 
 //shot_stats.Shot_Point_Angle = 1;
 
-shotangle = dir - 90;
+shot_stats.Shot_Angle = dir - 90;
 
 if shotextrahitssprite[4] = spr_Safety_Scissors_Shot {
-	shotangle = dir;	
+	shot_stats.Shot_Angle = dir;	
 }
 
 event_inherited();
 
 //shot_stats.Shot_Point_Angle = 0;
 
-shotangle = 0;
+shot_stats.Shot_Angle = 0;

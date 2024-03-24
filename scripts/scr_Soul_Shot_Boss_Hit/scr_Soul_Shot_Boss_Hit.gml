@@ -4,6 +4,8 @@ function scr_Soul_Shot_Boss_Hit() {
 
 	var hit_again = variable_struct_exists(other.projectile_hits, shot_boss_id)
 	if !hit_again and shot_stats.Shot_Damage {
+		
+		scr_Sound_Effect(asset_get_index(shot_stats.Shot_Hit_SFX));
     
 	    if shot_stats.Shot_Pierce > 0 || shot_stats.Shot_Continue = 1 {
 			
@@ -107,7 +109,7 @@ function scr_Soul_Shot_Boss_Hit() {
 				}
 			}
 		
-			if global.A[7] > 0 and shotorigin = obj_Soul_Parent {
+			if global.A[7] > 0 and shot_stats.Shot_Origin = obj_Soul_Parent {
 				scr_A07();	
 			}
         

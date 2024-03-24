@@ -11,6 +11,14 @@ function scr_Setup_Shot_Stats_Asset(_shot_stats){
 		shot_stats.Shot_Sprite = asset_get_index(_shot_stats.Shot_Sprite)	
 	}
 	
+	if variable_struct_exists(_shot_stats, "Shot_Explosion_Sprite") {
+		shot_stats.Shot_Explosion_Sprite = asset_get_index(_shot_stats.Shot_Explosion_Sprite)	
+	}
+	
+	if variable_struct_exists(_shot_stats, "Shot_Boss_Hit_Sound_Effect") {
+		shot_stats.Shot_Boss_Hit_Sound_Effect = asset_get_index(_shot_stats.Shot_Boss_Hit_Sound_Effect)	
+	}
+	
 	if variable_struct_exists(_shot_stats, "Shot_Trail_Type") {
 		shot_stats.Shot_Trail_Type = asset_get_index(_shot_stats.Shot_Trail_Type)	
 	}

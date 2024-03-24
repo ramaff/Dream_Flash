@@ -7,7 +7,7 @@ function scr_Minion_Shot_Creation() {
 	    with instance_create(x,y,Shot_Type) {
 	        scr_Default_Shot_Stats();
 		
-			shotorigin = other.id;
+			shot_stats.Shot_Origin = other.id;
 	        sprite_index = other.Shot_Sprite;
 	        shot_stats.Shot_Size = other.Shot_Size;
 	        image_xscale = shot_stats.Shot_Size;

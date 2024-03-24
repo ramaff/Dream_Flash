@@ -8,9 +8,6 @@ function scr_Bleeding_Shot(xxx,yyy, power) {
 		Shot_Sprite: string(sprite_get_name(other.sprite_index)),
 		Shot_Type: "obj_Lesser_Soul_Shot"
 	};
-	
-	//scr_Setup_Weapon_Stats(current_weapon_stats);
-	//current_weapon_stats.
 
 	current_weapon_stats.Shot_Mouse = 0;
 	current_weapon_stats.Shot_Direction = other.direction - 180;
@@ -39,7 +36,7 @@ function scr_Bleeding_Shot(xxx,yyy, power) {
 	current_weapon_stats.Shot_Trail_Hit_Count = 13;
 	current_weapon_stats.Shot_Trail_Hit_Life = 10;
 	
-	scr_Setup_Weapon_Stats(current_weapon_stats);
+	current_weapon_stats = scr_Setup_Weapon_Stats(current_weapon_stats);
 	
 	scr_Shot_Creation();
 

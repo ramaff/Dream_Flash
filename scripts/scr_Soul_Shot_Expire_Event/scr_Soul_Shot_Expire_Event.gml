@@ -2,7 +2,7 @@
 // https://help.yoyogames.com/hc/en-us/articles/360005277377 for more information
 function scr_Soul_Shot_Expire_Event(){
 	
-	if variable_struct_names_count(bullet_hits) == 0 and shotorigin = obj_Soul_Parent {
+	if variable_struct_names_count(bullet_hits) == 0 and shot_stats.Shot_Origin = obj_Soul_Parent {
 		scr_A07_Reset();	
 	}
 
@@ -54,7 +54,7 @@ function scr_Soul_Shot_Expire_Event(){
 			var beamsize = shot_stats.Shot_Size;
 			var dirChange = 0;
 			var boss_hits = {};
-			var homespeed = shothomingspeed * 3;
+			var homespeed = shot_stats.Shot_Homing_Speed * 3;
 			var hit_again = -1;
 			var splitsize = 128 * shot_stats.Shot_Size;
 		

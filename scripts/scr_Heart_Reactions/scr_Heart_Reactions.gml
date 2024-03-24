@@ -24,7 +24,7 @@ function scr_Heart_Reactions() {
 			current_weapon_stats.Shot_Direction = point_direction(x,y,instance_nearest(x,y,obj_Boss_Parent).x,instance_nearest(x,y,obj_Boss_Parent).y);
 		}
 		
-		scr_Setup_Weapon_Stats(current_weapon_stats);
+		current_weapon_stats = scr_Setup_Weapon_Stats(current_weapon_stats);
 
 	    scr_Shot_Creation();
 
@@ -56,7 +56,7 @@ function scr_Heart_Reactions() {
 			current_weapon_stats.Shot_Count = 5;
 		}
 		
-		scr_Setup_Weapon_Stats(current_weapon_stats);
+		current_weapon_stats = scr_Setup_Weapon_Stats(current_weapon_stats);
     
 	    scr_Shot_Creation();
 
@@ -91,7 +91,7 @@ function scr_Heart_Reactions() {
 			current_weapon_stats.Shot_Count = 4;
 		}
     
-		scr_Setup_Weapon_Stats(current_weapon_stats);
+		current_weapon_stats = scr_Setup_Weapon_Stats(current_weapon_stats);
 	    scr_Shot_Creation();
 
 	}
@@ -122,7 +122,7 @@ function scr_Heart_Reactions() {
 			Shot_Size: 0.5,
 		}
     
-		scr_Setup_Weapon_Stats(current_weapon_stats);
+		current_weapon_stats = scr_Setup_Weapon_Stats(current_weapon_stats);
 	    scr_Shot_Creation();
 
 	}
@@ -149,7 +149,7 @@ function scr_Heart_Reactions() {
 			Shot_Size: 0.5,
 		}
     
-		scr_Setup_Weapon_Stats(current_weapon_stats);
+		current_weapon_stats = scr_Setup_Weapon_Stats(current_weapon_stats);
 	    scr_Shot_Creation();
 
 	}

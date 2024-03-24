@@ -30,6 +30,6 @@ if global.soulflash >= price {
 	
 	global.soulflash -= price;
 	
-	//instance_destroy();
+	instance_destroy();
 	
 }

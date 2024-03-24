@@ -28,7 +28,7 @@ function scr_Rubber_Soul_Rebound_Shot() {
 		current_weapon_stats.Shot_Power = 5;	
 	}
 	
-	scr_Setup_Weapon_Stats(current_weapon_stats);
+	current_weapon_stats = scr_Setup_Weapon_Stats(current_weapon_stats);
 	scr_Shot_Creation();
 	
 	with(other) {

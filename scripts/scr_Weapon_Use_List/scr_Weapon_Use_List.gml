@@ -83,7 +83,7 @@ function scr_Weapon_Use_List(cWP = global.currentweapon, _weap_slot = 0) {
 			scr_Bleeding_Blade_Use();
 		}
 		
-		scr_Setup_Weapon_Stats(current_weapon_stats);
+		current_weapon_stats = scr_Setup_Weapon_Stats(current_weapon_stats);
 		
 		barrage = false;
 		minion = false;
@@ -168,12 +168,12 @@ function scr_Weapon_Use_List(cWP = global.currentweapon, _weap_slot = 0) {
 		
 		scr_C11_Shot_Mod(realCost)
 		
-		if Shot_Beam = 2 {
-			Shot_Damage = false;
+		if current_weapon_stats.Shot_Beam = 2 {
+			current_weapon_stats.Shot_Damage = false;
 			if sWeaponTicker mod 3 = 0 { 
-				Shot_Damage = true;	
+				current_weapon_stats.Shot_Damage = true;	
 			} else {
-				Shot_Power = 0;
+				current_weapon_stats.Shot_Power = 0;
 			}
 		}	
 		

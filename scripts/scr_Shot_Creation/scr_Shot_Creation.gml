@@ -88,7 +88,7 @@ function scr_Shot_Creation() {
 	}
 
 	repeat(_cw.Shot_Count) {
-	    if Weapon_Vomit = 1 {
+	    if _cw.Weapon_Vomit = 1 {
 	        dir = (-(_cw.Shot_Accuracy / 2) + random(_cw.Shot_Accuracy));
 	    }
 		actual_shot_direction = 0;
@@ -135,9 +135,9 @@ function scr_Shot_Creation() {
 	        xx = _cw.Shot_XX;
 	        yy = _cw.Shot_YY;
 	    }
-	    if Weapon_Soul_Maintain = 1 {
-	        Weapon_X_Maintain = xx;
-	        Weapon_Y_Maintain = yy;
+	    if _cw.Weapon_Soul_Maintain = 1 {
+	        _cw.Weapon_X_Maintain = xx;
+	        _cw.Weapon_Y_Maintain = yy;
 	    }
 	
 		if _cw.Shot_Ground = 1 {
@@ -186,12 +186,12 @@ function scr_Shot_Creation() {
 		
 		repeat(mechFac) {
 			
-		    with instance_create(shxx, shyy, _cw.Shot_Type) {
+		    with instance_create(shxx, shyy, asset_get_index(_cw.Shot_Type)) {
 		        scr_Default_Shot_Stats();
 				
 				shot_stats = json_parse(json_stringify(other.Shot_Stats));
         
-				shotorigin = obj_Soul_Parent;
+				shot_stats.Shot_Origin = obj_Soul_Parent;
 		        target = noone;
 		        sprite_index = asset_get_index(shot_stats.Shot_Sprite);
 		        shot_stats.Shot_Size = shot_stats.Shot_Size * ((1 + other.sshotsizefactor) / 1);

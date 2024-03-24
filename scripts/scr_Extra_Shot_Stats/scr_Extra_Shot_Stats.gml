@@ -1,10 +1,10 @@
 function scr_Extra_Shot_Stats() {
-	shotangle = other.Shot_Angle;
-	shotframe = other.Shot_Frame;
-	if other.Shot_Frames > 0 {
-		shotframe = irandom(other.Shot_Frames)	
+	//shot_stats.Shot_Angle = other.Shot_Angle;
+	//shot_stats.Shot_Frame = other.Shot_Frame;
+	if shot_stats.Shot_Frames > 0 {
+		shot_stats.Shot_Frame = irandom(shot_stats.Shot_Frames)	
 	}
-	shotimagespeed = other.Shot_Image_Speed;
+	//shot_stats.Shot_Image_Speed = other.Shot_Image_Speed;
 	
 	//shot_stats = json_parse(json_stringify(other.Shot_Stats));
 	
@@ -39,22 +39,21 @@ function scr_Extra_Shot_Stats() {
 
 
 	if other.Shot_Sprite = spr_Marble_Shot {
-	    shotframe = 1 + irandom(8);
+	    shot_stats.Shot_Frame = 1 + irandom(8);
 	}
 	*/
 
-	image_angle = shotangle;
-	image_index = shotframe;
-	image_speed = shotimagespeed;
-	image_alpha = other.Shot_Alpha;
+	image_angle = shot_stats.Shot_Angle;
+	image_index = shot_stats.Shot_Frame;
+	image_speed = shot_stats.Shot_Image_Speed;
+	image_alpha = shot_stats.Shot_Alpha;
 	
-	if other.Shot_Angles > -1 {
-		image_angle = random(other.Shot_Angles)	
+	if shot_stats.Shot_Angles > -1 {
+		image_angle = random(shot_stats.Shot_Angles)	
 	}
 
-	if other.Shot_Point_Angle = 1 {
-		image_angle = direction;	
-		shot_stats.Shot_Point_Angle = other.Shot_Point_Angle;
+	if shot_stats.Shot_Point_Angle = 1 {
+		image_angle = direction;
 	}
 	
 	if shot_stats.Shot_Lobbing >= 1 {
@@ -98,7 +97,7 @@ function scr_Extra_Shot_Stats() {
 	shot_stats.Shot_Trail_Hit_Speed = other.Shot_Trail_Hit_Sprite;
 	shot_stats.Shot_Trail_Hit_Type = other.Shot_Trail_Hit_Type;
 	
-	shotexplosionsprite = other.Shot_Explosion_Sprite;
+	shot_stats.Shot_Explosion_Sprite = other.Shot_Explosion_Sprite;
 	shotexplosionpart = other.Shot_Explosion_Part;
 	shotexplosionsmoke = other.Shot_Explosion_Smoke;
 
@@ -180,6 +179,8 @@ function scr_Extra_Shot_Stats() {
 		speed = 0;
 	}
 	
+	shot_stats.Shot_Impact_Power_Level = shot_stats.Shot_Impact_Power;
+	
 	/*
 
 	shot_stats.Shot_Continue = other.Shot_Continue;
@@ -202,7 +203,7 @@ function scr_Extra_Shot_Stats() {
 	shot_stats.Shot_Chain_Speed = other.Shot_Chain_Speed;
 	shot_stats.Shot_Homing_Type = other.Shot_Homing_Type;
 	shot_stats.Shot_Homing_Range = other.Shot_Homing_Range;
-	shothomingspeed = other.Shot_Homing_Speed;
+	shot_stats.Shot_Homing_Speed = other.Shot_Homing_Speed;
 	shot_stats.Shot_Impact_Power = (other.Shot_Impact_Power + other.spoweradd) * shotaddedpow;
 	shot_stats.Shot_Impact_Power_Level = other.Shot_Impact_Power;
 	shot_stats.Shot_Impact_Type = other.Shot_Impact_Type;
@@ -297,7 +298,7 @@ function scr_Extra_Shot_Stats() {
 
 	scr_State_Weapon_Mod();
 	
-	if shotorigin = obj_Soul_Parent {
+	if shot_stats.Shot_Origin = obj_Soul_Parent {
 		scr_A06();
 		
 		scr_E06();

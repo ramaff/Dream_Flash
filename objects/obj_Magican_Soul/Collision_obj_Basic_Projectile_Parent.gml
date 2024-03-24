@@ -10,7 +10,7 @@ if !hit_again {
         } else {
             shot_stats.Shot_Homing_Range += 60;
         }
-		shothomingspeed += 2	
+		shot_stats.Shot_Homing_Speed += 2	
         shot_stats.Shot_Speed += 1.5;
         speed += 1.5;
 		

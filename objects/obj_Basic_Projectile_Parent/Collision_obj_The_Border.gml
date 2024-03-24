@@ -14,7 +14,7 @@
         }
         }
 		
-		if global.A[7] > 0 and shotorigin = obj_Soul_Parent {
+		if global.A[7] > 0 and shot_stats.Shot_Origin = obj_Soul_Parent {
 			scr_A07_Reset();	
 		}
         

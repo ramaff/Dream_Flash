@@ -2,7 +2,7 @@
 // https://help.yoyogames.com/hc/en-us/articles/360005277377 for more information
 function scr_State_Weapon_Mod(){
 	
-	if other.Shot_Off_State = 0 and shotorigin = obj_Soul_Parent {
+	if shot_stats.Shot_Off_State = 0 and shot_stats.Shot_Origin = obj_Soul_Parent {
 		if scr_State_Active_Check("Snake") and other.Shot_Beam = 0 {
 			shot_stats.Shot_Snake_Move = 2;
 			shottargetX = mouse_x;
@@ -94,10 +94,10 @@ function scr_State_Weapon_Mod(){
 			} else {
 				shot_stats.Shot_Homing_Range += 50;	
 			}
-			if shothomingspeed < 0 {
-				shothomingspeed = 5;	
+			if shot_stats.Shot_Homing_Speed < 0 {
+				shot_stats.Shot_Homing_Speed = 5;	
 			} else {
-				shothomingspeed += 5;	
+				shot_stats.Shot_Homing_Speed += 5;	
 			}
 		}
 		if scr_State_Active_Check("Spike") {
@@ -137,7 +137,7 @@ function scr_State_Weapon_Mod(){
 			shot_stats.Shot_Extra_Stats[0].Shot_Size = (0.05 + shot_stats.Shot_Size * 0.5);
 			//shot_stats.Shot_Extra_Stats[0].Shot_Mouse = true;
 			
-			if other.Shot_Type = obj_Melee_Caster_Shot {
+			if shot_stats.Shot_Type = obj_Melee_Caster_Shot {
 				shot_stats.Shot_Extra_Stats[0].Shot_Type = obj_Lesser_Soul_Shot;
 				shot_stats.Shot_Extra_Stats[0].Shot_Lifespan = 7;
 				shot_stats.Shot_Extra_Stats[0].Shot_Sprite = string(sprite_get_name(other.Shot_Duplicate_Sprite))

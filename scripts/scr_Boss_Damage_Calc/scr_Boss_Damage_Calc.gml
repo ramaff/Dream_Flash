@@ -57,7 +57,7 @@ function scr_Boss_Damage_Calc() {
 		
 		scr_State_Gain(shotDamage);
 	
-		scr_Sound_Effect(sd_Small_Damage_To_Boss);
+		//scr_Sound_Effect(sd_Small_Damage_To_Boss);
     
 	    //Adding Bleed
 	    if shot_stats.Shot_Bleed != 0 {

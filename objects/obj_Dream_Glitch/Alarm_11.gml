@@ -13,7 +13,7 @@ for (bi = 0; bi < 9; bi++) {
 		
 		current_weapon_stats = Shot_Repetition_Stats[bi]
 		
-		scr_Setup_Weapon_Stats()
+		current_weapon_stats = scr_Setup_Weapon_Stats()
 	
 		if Shot_Repetition_Type[bi] = "Stubborn" {
 			

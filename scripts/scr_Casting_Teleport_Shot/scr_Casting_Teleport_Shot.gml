@@ -8,9 +8,6 @@ function scr_Casting_Teleport_Shot(xxx,yyy) {
 		Shot_Sprite: "spr_Pure_Magic_Shot",
 		Shot_Type: "obj_Lesser_Soul_Shot"
 	};
-	
-	//scr_Setup_Weapon_Stats(current_weapon_stats);
-	//current_weapon_stats.
 
 	current_weapon_stats.Shot_Mouse = 0;
 	current_weapon_stats.Shot_Direction = other.direction + 180;
@@ -36,7 +33,7 @@ function scr_Casting_Teleport_Shot(xxx,yyy) {
 	current_weapon_stats.Shot_Knockback = 10;
 	current_weapon_stats.Shot_Lifespan = 60;
 	
-	scr_Setup_Weapon_Stats(current_weapon_stats);
+	current_weapon_stats = scr_Setup_Weapon_Stats(current_weapon_stats);
 
 	scr_Shot_Creation();
 
