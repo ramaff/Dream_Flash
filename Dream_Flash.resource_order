@@ -112,7 +112,6 @@
     {"name":"scr_Weapon_Warmup_Step","order":15,"path":"scripts/scr_Weapon_Warmup_Step/scr_Weapon_Warmup_Step.yy",},
     {"name":"spr_infatuation_cloud_v2_palette","order":5,"path":"sprites/spr_infatuation_cloud_v2_palette/spr_infatuation_cloud_v2_palette.yy",},
     {"name":"scr_Beam_Weapon","order":19,"path":"scripts/scr_Beam_Weapon/scr_Beam_Weapon.yy",},
-    {"name":"scr_Boss_Hit_Part_Splash_Juice","order":14,"path":"scripts/scr_Boss_Hit_Part_Splash_Juice/scr_Boss_Hit_Part_Splash_Juice.yy",},
     {"name":"obj_Fire_Lob_Bullet","order":7,"path":"objects/obj_Fire_Lob_Bullet/obj_Fire_Lob_Bullet.yy",},
     {"name":"scr_Non_Projectile_Weapon","order":13,"path":"scripts/scr_Non_Projectile_Weapon/scr_Non_Projectile_Weapon.yy",},
     {"name":"spr_Essence_Debt_Container","order":1,"path":"sprites/spr_Essence_Debt_Container/spr_Essence_Debt_Container.yy",},

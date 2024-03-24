@@ -38,7 +38,7 @@ function scr_Soul_Shot_Bullet_Hit(){
 			//other.projectile_hits[shot_boss_id] = shot_boss_id
 			variable_struct_set(bullet_hits, other.id, other.id)
 	
-			if shotreboundtype = 1 {
+			if shot_stats.Shot_Rebound_Type = 1 {
 				scr_Weapon_Rebound_Mouse();
     
 				shot_stats.Shot_Pierce--;
@@ -48,7 +48,7 @@ function scr_Soul_Shot_Bullet_Hit(){
 				exit;
 			}
 	
-			if shotreboundtype = 2 {
+			if shot_stats.Shot_Rebound_Type = 2 {
 				scr_Weapon_Rebound();
 					
 				scr_Soul_Shot_Rebound_Parts();
@@ -96,8 +96,8 @@ function scr_Soul_Shot_Bullet_Hit(){
 				//exit;
 			}
 	
-			if shotbulletredirect = 1 {
-				var rchance = shotbulletredirectchance + irandom(99);
+			if shot_stats.Shot_Bullet_Redirect = 1 {
+				var rchance = shot_stats.Shot_Bullet_Redirect_Chance + irandom(99);
 				if rchance >= 100 {
 					
 					repeat(4) {
@@ -154,11 +154,11 @@ function scr_Soul_Shot_Bullet_Hit(){
 		    exit;
 		}
 
-		if shotbulletdisplace >= 1 {
+		if shot_stats.Shot_Bullet_Displace >= 1 {
 			//backSpeed = speed + 1.6 * smovementspeed * ((10 + smovementfactorbuffamount) / 10) * ((10 + smovementfactor) / 10) * ((40 + global.souldexterity) / 40);
 
 			var point_dir = point_direction(x, y, other.x, other.y)
-			var magnitude = shotbulletdisplace * 0.5 * (1 + speed)
+			var magnitude = shot_stats.Shot_Bullet_Displace * 0.5 * (1 + speed)
 			other.x += lengthdir_x(magnitude, direction);
 			other.y += lengthdir_y(magnitude, direction);
 			other.x += lengthdir_x(magnitude, point_dir);

@@ -5,8 +5,10 @@ function scr_Default_Shot_Stats() {
 	
 	shot_stats = {};
 	
-	shot_id = global.instanceidincrementer - 1;
-	shot_boss_id = shot_id;
+	//shot_id = global.instanceidincrementer - 1;
+	//shot_boss_id = shot_id;
+	shot_id = id;
+	shot_boss_id = id;
 	
 	/*
 	shot_id = global.instanceidincrementer - 1;
@@ -205,8 +207,8 @@ function scr_Default_Shot_Stats() {
 	
 	shot_stats.Shot_Shield_Type = 0;
 	shot_stats.Shot_Shield_Power = 0;
-	shotreboundtype = 0;
-	shotreboundpower = 0;
+	shot_stats.Shot_Rebound_Type = 0;
+	shot_stats.Shot_Rebound_Power = 0;
 	shot_stats.Shot_Weaken = 0;
 	shot_stats.Shot_Weaken_Time = 0;
 	shot_stats.Shot_Poison = 0;
@@ -229,9 +231,9 @@ function scr_Default_Shot_Stats() {
 	shottargetY = 0;
 
 	shot_stats.Shot_Speed_Power_Add = 0;
-	shotbulletredirect = 0;
-	shotbulletredirectchance = 0;
-	shotbulletdisplace = 0;
+	shot_stats.Shot_Bullet_Redirect = 0;
+	shot_stats.Shot_Bullet_Redirect_Chance = 0;
+	shot_stats.Shot_Bullet_Displace = 0;
 	
 	shot_stats.Shot_Wander = 0;
 	

@@ -178,6 +178,8 @@ function scr_Setup_Default_Shot_Stats(){
 		Shot_Essence_Drain: 0,
 		Shot_Weaken: 0,
 		Shot_Weaken_Time: 0,
+		Shot_Rebound_Type: 0,
+		Shot_Rebound_Power: 0,
 	}
 	return Shot_Stats
 

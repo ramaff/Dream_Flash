@@ -11,7 +11,7 @@ function scr_Weapon_Rebound() {
 		exit;	
 	}
 	
-	var pow = max(1, shotreboundpower)
+	var pow = max(1, shot_stats.Shot_Rebound_Power)
 	//var bspeed = 
 
 	with(obj_Soul_Parent) {

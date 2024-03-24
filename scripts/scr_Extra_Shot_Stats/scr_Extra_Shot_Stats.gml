@@ -14,9 +14,9 @@ function scr_Extra_Shot_Stats() {
 		alarm[8] = 10;	
 	}
 	
-	scr_Setup_Shot_Stats_Asset(shot_stats);
+	scr_Setup_Shot_Stats_Asset(other.Shot_Stats);
 	
-	Print_DF(shot_stats)
+	//Print_DF(shot_stats)
 
 	/*
 	var shotaddedpow = ((10 + other.spowerfactor + other.sattackfactorbuffamount) / 10) * other.spower / 10 * scr_Class_Stat_Damage_Multiplier();
@@ -233,8 +233,8 @@ function scr_Extra_Shot_Stats() {
 	
 	shot_stats.Shot_Shield_Type = other.Shot_Shield_Type;
 	shot_stats.Shot_Shield_Power = (other.Shot_Shield_Power + other.spoweradd) * shotaddedpow;
-	shotreboundtype = other.Shot_Rebound_Type;
-	shotreboundpower = (other.Shot_Rebound_Power + other.spoweradd) * shotaddedpow;
+	shot_stats.Shot_Rebound_Type = other.Shot_Rebound_Type;
+	shot_stats.Shot_Rebound_Power = (other.Shot_Rebound_Power + other.spoweradd) * shotaddedpow;
 	shot_stats.Shot_Weaken = other.Shot_Weaken;
 	shot_stats.Shot_Weaken_Time = other.Shot_Weaken_Time;
 	shot_stats.Shot_Poison = other.Shot_Poison * shotaddedpow;
@@ -265,9 +265,9 @@ function scr_Extra_Shot_Stats() {
 	shot_stats.Shot_Init_Speed = shot_stats.Shot_Speed;
 	
 	shot_stats.Shot_Speed_Power_Add = other.Shot_Speed_Power_Add;
-	shotbulletredirect = other.Shot_Bullet_Redirect;
-	shotbulletredirectchance = other.Shot_Bullet_Redirect_Chance;
-	shotbulletdisplace = other.Shot_Bullet_Displace;
+	shot_stats.Shot_Bullet_Redirect = other.Shot_Bullet_Redirect;
+	shot_stats.Shot_Bullet_Redirect_Chance = other.Shot_Bullet_Redirect_Chance;
+	shot_stats.Shot_Bullet_Displace = other.Shot_Bullet_Displace;
 	
 	shot_stats.Shot_Snake_Move = other.Shot_Snake_Move;
 	

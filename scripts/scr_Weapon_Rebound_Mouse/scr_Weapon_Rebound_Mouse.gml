@@ -10,7 +10,7 @@ function scr_Weapon_Rebound_Mouse() {
 		exit;	
 	}
 	
-	var pow = max(1, shotreboundpower)
+	var pow = max(1, shot_stats.Shot_Rebound_Power)
 
 	with(obj_Soul_Parent) {
 		scr_Default_Weapon_Stats();

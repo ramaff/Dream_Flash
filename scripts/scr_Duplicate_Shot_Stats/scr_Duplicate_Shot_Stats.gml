@@ -12,9 +12,9 @@ function scr_Duplicate_Shot_Stats() {
 	
 	shot_stats = json_parse(json_stringify(other.shot_stats));
 	
-	Print_DF(shot_stats)
+	//Print_DF(shot_stats)
 	
-	//scr_Setup_Shot_Stats_Asset(shot_stats);
+	scr_Setup_Shot_Stats_Asset(other.shot_stats);
 
 	/*
 	target = other.target;
@@ -218,7 +218,7 @@ function scr_Duplicate_Shot_Stats() {
 		shotextrahits[i] = other.shotburstextrahits;
 		shotextrahitfrequency[i] = other.shotburstextrahitfrequency;
 		shotextrahitpower[i] = other.shotburstextrahitpower;
-		shotbulletdisplace = other.shotburstbulletdisplacement;
+		shot_stats.Shot_Bullet_Displace = other.shotburstbulletdisplacement;
 		shot_stats.Shot_Point_Angle = other.shotburstpointangle;
 		shot_stats.Shot_Impact_Type = other.shotburstimpact;
 	}
@@ -247,8 +247,8 @@ function scr_Duplicate_Shot_Stats() {
 	
 	shot_stats.Shot_Shield_Type = other.shot_stats.Shot_Shield_Type;
 	shot_stats.Shot_Shield_Power = 0;
-	shotreboundtype = other.shotreboundtype;
-	shotreboundpower = other.shotreboundpower;
+	shot_stats.Shot_Rebound_Type = other.shot_stats.Shot_Rebound_Type;
+	shot_stats.Shot_Rebound_Power = other.shot_stats.Shot_Rebound_Power;
 	shot_stats.Shot_Weaken = other.shot_stats.Shot_Weaken;
 	shot_stats.Shot_Weaken_Time = other.shot_stats.Shot_Weaken_Time;
 	shot_stats.Shot_Poison = other.shot_stats.Shot_Poison;
@@ -282,11 +282,11 @@ function scr_Duplicate_Shot_Stats() {
 		shot_stats.Shot_Center_Y = other.shot_stats.Shot_Center_Y;
 	}
 	
-	shotbulletredirect = other.shotbulletredirect;
-	shotbulletredirectchance = other.shotbulletredirectchance;
+	shot_stats.Shot_Bullet_Redirect = other.shot_stats.Shot_Bullet_Redirect;
+	shot_stats.Shot_Bullet_Redirect_Chance = other.shot_stats.Shot_Bullet_Redirect_Chance;
 	
 	if other.shotbursttype != 2 {
-		shotbulletdisplace = other.shotbulletdisplace;
+		shot_stats.Shot_Bullet_Displace = other.shot_stats.Shot_Bullet_Displace;
 	}
 	
 	shot_stats.Shot_Wander = other.shot_stats.Shot_Wander;

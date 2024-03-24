@@ -81,15 +81,10 @@ function scr_Soul_Shot_Boss_Hit() {
 			}
 		
 			if shotDamage > 0 {
-				//scr_Boss_Hit_Part_Splash_Juice();
-				
-				//scr_Particle_Burst(shot_stats.Shot_Trail_Hit_Type, shot_stats.Shot_Trail_Hit_Speed, shot_stats.Shot_Trail_Color1, shot_stats.Shot_Trail_Color2, shot_stats.Shot_Trail_Hit_Count, shot_stats.Shot_Trail_Hit_Speed, 0, 360 / shot_stats.Shot_Trail_Hit_Count, shot_stats.Shot_Trail_Area, shot_stats.Shot_Size, shot_stats.Shot_Trail_Hit_Life, true)
-				//scr_Particle_Burst(shot_stats.Shot_Trail_Hit_Type, shot_stats.Shot_Trail_Hit_Speed, shot_stats.Shot_Trail_Color1, shot_stats.Shot_Trail_Color2, shot_stats.Shot_Trail_Hit_Count / 2, shot_stats.Shot_Trail_Hit_Speed * 2, 0, 720 / shot_stats.Shot_Trail_Hit_Count, shot_stats.Shot_Trail_Area, shot_stats.Shot_Size, shot_stats.Shot_Trail_Hit_Life, true)
 				
 				repeat(shot_stats.Shot_Trail_Hit_Count) {
 					var ddir = direction - 90 + random(180);
-					scr_Particle_Burst(shot_stats.Shot_Trail_Hit_Type, shot_stats.Shot_Trail_Hit_Speed, shot_stats.Shot_Trail_Color1, shot_stats.Shot_Trail_Color2, 1, 12 + random(8), ddir, 0, 0, shot_stats.Shot_Size + random(0.2), 15 + random(10))
-					//scr_Particle_Burst(obj_Friction_Part, spr_Soul_Bit, c_white, c_white, 1, 12 + random(8), ddir, 0, 0, shot_stats.Shot_Size + random(0.2), 15 + random(10))
+					scr_Particle_Burst(shot_stats.Shot_Trail_Hit_Type, shot_stats.Shot_Trail_Hit_Sprite, shot_stats.Shot_Trail_Color1, shot_stats.Shot_Trail_Color2, 1, 12 + random(8), ddir, 0, 0, shot_stats.Shot_Size + random(0.2), 15 + random(10))
 				}
 				
 				if shot_stats.Shot_Essence_Drain > 0 {
