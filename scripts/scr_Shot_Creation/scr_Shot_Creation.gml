@@ -200,9 +200,9 @@ function scr_Shot_Creation() {
 		        shot_stats.Shot_Speed = (shot_stats.Shot_Speed + other.sshotspeedaddition) * (shot_stats.Weapon_Vomit_Min_Speed + random(shot_stats.Weapon_Vomit_Max_Speed - shot_stats.Weapon_Vomit_Min_Speed)) * other.sshotspeed / 10;
 		        shot_stats.Shot_Powermax = (shot_stats.Shot_Power + other.spoweradd) * ((10 + other.spowerfactor + other.sattackfactorbuffamount) / 10) * other.spower / 10 * scr_Class_Stat_Damage_Multiplier();
 		        shot_stats.Shot_Power = shot_stats.Shot_Powermax;
-		        shotPowerLevel = shot_stats.Shot_Power;
+		        shot_stats.Shot_Power_Level = shot_stats.Shot_Power;
 		        shotknockback = shot_stats.Shot_Knockback * other.sshotknockback / 10;
-		        shotarmourpierce = shot_stats.Shot_Armour_Pierce + other.sarmourpierce;
+		        shot_stats.Shot_Armour_Pierce = shot_stats.Shot_Armour_Pierce + other.sarmourpierce;
 				direction = other.actual_shot_direction;
 		        //
 				

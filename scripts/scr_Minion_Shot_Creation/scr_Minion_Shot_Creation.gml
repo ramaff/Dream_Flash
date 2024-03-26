@@ -15,7 +15,7 @@ function scr_Minion_Shot_Creation() {
 	        shot_stats.Shot_Speed = other.Shot_Speed * other.sshotspeed / 10 * (other.Weapon_Vomit_Min_Speed + random(other.Weapon_Vomit_Max_Speed - other.Weapon_Vomit_Min_Speed));
 	        shot_stats.Shot_Powermax = other.Shot_Power * other.spower / 10;
 	        shot_stats.Shot_Power = shot_stats.Shot_Powermax;
-	        shotPowerLevel = other.Shot_Power;
+	        shot_stats.Shot_Power_Level = other.Shot_Power;
 	        shotknockback = other.Shot_Knockback * other.sshotknockback / 10;
 	        if other.Shot_Mouse = 1 {
 				if instance_exists(instance_nearest(x,y,obj_Boss_Parent)) {

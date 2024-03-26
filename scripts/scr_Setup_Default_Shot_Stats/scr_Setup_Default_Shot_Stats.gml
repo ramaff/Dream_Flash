@@ -184,6 +184,10 @@ function scr_Setup_Default_Shot_Stats(){
 		Shot_Weaken_Time: 0,
 		Shot_Rebound_Type: 0,
 		Shot_Rebound_Power: 0,
+		Shot_Hit_Again: 0,
+		Shot_Target: noone,
+		Shot_Fear_Target: noone,
+		Shot_Follow_Target: noone,
 	}
 	return Shot_Stats
 

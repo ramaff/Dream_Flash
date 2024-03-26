@@ -33,7 +33,7 @@ if !hit_again and other.shot_stats.Shot_Melee = 0 {
 		}
         /*if shotbursttype = 0 {
             shotbursttype = 1;
-            shothitagain = 0;
+            shot_stats.Shot_Hit_Again = 0;
             image = 1;
             shotduplicatesprite = sprite_index;
 			if shotburstamount < 3 {

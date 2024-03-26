@@ -15,22 +15,22 @@ function scr_Boss_Damage_Calc() {
 	    other.bossReaction++;
 	}
 
-	shotDamageMult = shot_stats.Shot_Power / shotPowerLevel;
+	shotDamageMult = shot_stats.Shot_Power / shot_stats.Shot_Power_Level;
 	crit = shot_stats.Shot_Crit_Chance + irandom(99);
 
 	if crit >= 100 {
 	    shotDamageMult = shotDamageMult * shotcritmultiple;
 	}
 	shotDamageBase = 0;
-	shotDamageBase += shotPowerLevel;
+	shotDamageBase += shot_stats.Shot_Power_Level;
 	
 	var shotweaktotal = 0;
 
-	if shotarmourpierce > other.bossdefense {
+	if shot_stats.Shot_Armour_Pierce > other.bossdefense {
 	    shotDamage = shotDamageMult * (shotDamageBase + bossweak + speeddmg);
 		shotweaktotal = shotDamageMult * bossweak;
 	} else {
-	    shotDamage = shotDamageMult * ((shotDamageBase + bossweak + speeddmg) - (other.bossdefense - shotarmourpierce));
+	    shotDamage = shotDamageMult * ((shotDamageBase + bossweak + speeddmg) - (other.bossdefense - shot_stats.Shot_Armour_Pierce));
 		shotweaktotal = shotDamageMult * bossweak;
 	}
 	scr_A07_Boss_Damage();

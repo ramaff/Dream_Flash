@@ -5,7 +5,7 @@ if !hit_again {
     with(other) {
         shot_stats.Shot_Pierce += 1;
         shot_stats.Shot_Power += 4;
-        shotPowerLevel += 4;
+        shot_stats.Shot_Power_Level += 4;
         shot_stats.Shot_Speed += 1.5;
         speed += 1.5;
     }

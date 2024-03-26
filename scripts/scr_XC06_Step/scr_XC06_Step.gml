@@ -9,10 +9,10 @@ function scr_XC06_Step(){
 		
 		with (obj_Projectile_Parent) {
 		
-			if !instance_exists(feartarget) || feartarget = noone {
+			if !instance_exists(shot_stats.Shot_Fear_Target) || shot_stats.Shot_Fear_Target = noone {
 				var followtar = obj_Soul_Parent.id
 				with (obj_Projectile_Parent) {
-					feartarget = followtar
+					shot_stats.Shot_Fear_Target = followtar
 					followtar = id
 				}
 			}
@@ -20,12 +20,12 @@ function scr_XC06_Step(){
 			speed = speed * 0.95;
 			//Print_DF(speed)
 			
-			if instance_exists(feartarget) {
+			if instance_exists(shot_stats.Shot_Fear_Target) {
 				var _spec_dist = setdist * max(1, speed / 2.5)
-				var _dis = point_distance(x, y, feartarget.x, feartarget.y)
-				var _dir_from_tar = point_direction(feartarget.x, feartarget.y, x, y);
-				var _x_tar = feartarget.x + lengthdir_x(_spec_dist, _dir_from_tar)
-				var _y_tar = feartarget.y + lengthdir_y(_spec_dist, _dir_from_tar)
+				var _dis = point_distance(x, y, shot_stats.Shot_Fear_Target.x, shot_stats.Shot_Fear_Target.y)
+				var _dir_from_tar = point_direction(shot_stats.Shot_Fear_Target.x, shot_stats.Shot_Fear_Target.y, x, y);
+				var _x_tar = shot_stats.Shot_Fear_Target.x + lengthdir_x(_spec_dist, _dir_from_tar)
+				var _y_tar = shot_stats.Shot_Fear_Target.y + lengthdir_y(_spec_dist, _dir_from_tar)
 
 				if _dis > _spec_dist {
 					x = lerp(x, _x_tar, 0.05);

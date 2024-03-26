@@ -1,6 +1,8 @@
 function scr_Duplicate_Shot_Stats() {
-	shothitagain = other.shothitagain;
-	if shothitagain = 0 {
+	
+	shot_stats = json_parse(json_stringify(other.shot_stats));
+	
+	if shot_stats.Shot_Hit_Again = 0 {
 	    shot_id = other.shot_id;
 		shot_boss_id = other.shot_boss_id;
 		bullet_hits = other.bullet_hits;
@@ -9,8 +11,6 @@ function scr_Duplicate_Shot_Stats() {
 		shot_boss_id = real(shot_id);
 		bullet_hits = {};
 	}
-	
-	shot_stats = json_parse(json_stringify(other.shot_stats));
 	
 	//Print_DF(shot_stats)
 	
@@ -83,7 +83,7 @@ function scr_Duplicate_Shot_Stats() {
 
 	im = direction;
 
-	shotPowerLevel = other.shotPowerLevel;
+	shot_stats.Shot_Power_Level = other.shot_stats.Shot_Power_Level;
 	shot_stats.Shot_Impact_Power_Level = other.shot_stats.Shot_Impact_Power_Level;
 	shot_stats.Shot_Speed = other.shot_stats.Shot_Speed;
 	shotknockback = other.shotknockback;
@@ -194,7 +194,7 @@ function scr_Duplicate_Shot_Stats() {
 	shot_stats.Shot_Comeback = other.shot_stats.Shot_Comeback;
 	shot_stats.Shot_Pierce = other.shot_stats.Shot_Pierce;
 	shot_stats.Shot_Bounce = other.shot_stats.Shot_Bounce;
-	shotarmourpierce = other.shotarmourpierce;
+	shot_stats.Shot_Armour_Pierce = other.shot_stats.Shot_Armour_Pierce;
 	shot_stats.Shot_Armour_Tear = other.shot_stats.Shot_Armour_Tear;
 	shot_stats.Shot_Chain = other.shot_stats.Shot_Chain;
 	shot_stats.Shot_Chain_Type = other.shot_stats.Shot_Chain_Type;
@@ -301,7 +301,7 @@ function scr_Duplicate_Shot_Stats() {
 	
 	shotA07 = other.shotA07;
 	followtarget = other.followtarget;
-	feartarget = other.feartarget;
+	shot_stats.Shot_Fear_Target = other.shot_stats.Shot_Fear_Target;
 	*/
 	
 	/*
@@ -319,7 +319,7 @@ function scr_Duplicate_Shot_Stats() {
 	scr_Shot_Particle_Setup();
 	*/
 	shotA07 = other.shotA07;
-	followtarget = other.followtarget;
-	feartarget = other.feartarget;
+	//shot_stats.Shot_Follow_Target = other.shot_stats.Shot_Follow_Target;
+	//shot_stats.Shot_Fear_Target = other.shot_stats.Shot_Fear_Target;
 
 }

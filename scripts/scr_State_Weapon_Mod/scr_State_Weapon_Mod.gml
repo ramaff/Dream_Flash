@@ -58,7 +58,7 @@ function scr_State_Weapon_Mod(){
 		
 			shot_stats.Shot_Powermax = shot_stats.Shot_Powermax * (1.5 * global.soulstateformboost);
 		    shot_stats.Shot_Power = shot_stats.Shot_Powermax;
-		    shotPowerLevel = shotPowerLevel * (1.5 * global.soulstateformboost);
+		    shot_stats.Shot_Power_Level = shot_stats.Shot_Power_Level * (1.5 * global.soulstateformboost);
 		}
 		if scr_State_Active_Check("Scrub") {
 		
@@ -109,7 +109,7 @@ function scr_State_Weapon_Mod(){
 		
 			shot_stats.Shot_Powermax = shot_stats.Shot_Powermax * (1.15 * global.soulstateformboost);
 		    shot_stats.Shot_Power = shot_stats.Shot_Powermax;
-		    shotPowerLevel = shotPowerLevel * (1.15 * global.soulstateformboost);
+		    shot_stats.Shot_Power_Level = shot_stats.Shot_Power_Level * (1.15 * global.soulstateformboost);
 		
 			if sprite_get_height(sprite_index) < 80 and shot_stats.Shot_Melee == 0 {
 				sprite_index = spr_Spike_Essence_Shot;

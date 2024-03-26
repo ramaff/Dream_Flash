@@ -17,24 +17,24 @@ function scr_OB06(){
 
 	if _procs >= 1 {
 		
-		Shot_Size = sqrt((Shot_Size * Shot_Size) + (0.1 * _procs));
+		current_weapon_stats.Shot_Size = sqrt((current_weapon_stats.Shot_Size * current_weapon_stats.Shot_Size) + (0.1 * _procs));
 		
-		if Shot_Air_Burst_Stats = false {
-			Shot_Air_Burst_Stats = [json_parse(json_stringify(current_weapon_stats))]
+		if current_weapon_stats.Shot_Air_Burst_Stats = false {
+			current_weapon_stats.Shot_Air_Burst_Stats = [json_parse(json_stringify(current_weapon_stats))]
 		} else {
-			array_push(Shot_Air_Burst_Stats, json_parse(json_stringify(current_weapon_stats)))	
+			array_push(current_weapon_stats.Shot_Air_Burst_Stats, json_parse(json_stringify(current_weapon_stats)))	
 		}
-		Weapon_Split_Visible = 1;
-        Weapon_Split_Hit_Again = 1;
-		var burstIndex = array_length(Shot_Air_Burst_Stats) - 1;
-		variable_struct_set(Shot_Air_Burst_Stats[burstIndex], "Burst_Power", 1); 
-		variable_struct_set(Shot_Air_Burst_Stats[burstIndex], "Burst_Size", 0.9); 
-		variable_struct_set(Shot_Air_Burst_Stats[burstIndex], "Shot_Lifespan", 0.6 * current_weapon_stats.Shot_Lifespan); 
-		variable_struct_set(Shot_Air_Burst_Stats[burstIndex], "Air_Burst", true); 
-		variable_struct_set(Shot_Air_Burst_Stats[burstIndex], "Range", 100); 
+		current_weapon_stats.Weapon_Split_Visible = 1;
+        current_weapon_stats.Weapon_Split_Hit_Again = 1;
+		var burstIndex = array_length(current_weapon_stats.Shot_Air_Burst_Stats) - 1;
+		variable_struct_set(current_weapon_stats.Shot_Air_Burst_Stats[burstIndex], "Burst_Power", 1); 
+		variable_struct_set(current_weapon_stats.Shot_Air_Burst_Stats[burstIndex], "Burst_Size", 0.9); 
+		variable_struct_set(current_weapon_stats.Shot_Air_Burst_Stats[burstIndex], "Shot_Lifespan", 0.6 * current_weapon_stats.Shot_Lifespan); 
+		variable_struct_set(current_weapon_stats.Shot_Air_Burst_Stats[burstIndex], "Air_Burst", true); 
+		variable_struct_set(current_weapon_stats.Shot_Air_Burst_Stats[burstIndex], "Range", 100); 
 		var amount = 2 + (_procs * 2)
-		variable_struct_set(Shot_Air_Burst_Stats[burstIndex], "Amount", amount); 
-		variable_struct_set(Shot_Air_Burst_Stats[burstIndex], "Spread", 360 / amount);
+		variable_struct_set(current_weapon_stats.Shot_Air_Burst_Stats[burstIndex], "Amount", amount); 
+		variable_struct_set(current_weapon_stats.Shot_Air_Burst_Stats[burstIndex], "Spread", 360 / amount);
 		
 		
 	}

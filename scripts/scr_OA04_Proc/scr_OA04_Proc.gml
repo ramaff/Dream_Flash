@@ -3,7 +3,7 @@
 function scr_OA04_Proc(){
 	if shot_stats.Shot_Wishful > 0 {
 		shot_stats.Shot_Power += 0.2 + (shot_stats.Shot_Power * 0.02 * shot_stats.Shot_Wishful);
-		shotPowerLevel += 0.2 + (shotPowerLevel * 0.02 * shot_stats.Shot_Wishful);
+		shot_stats.Shot_Power_Level += 0.2 + (shot_stats.Shot_Power_Level * 0.02 * shot_stats.Shot_Wishful);
 		//scr_Shot_Power_Set(1 + 0.025 * shot_stats.Shot_Wishful)
 		
 		shot_stats.Shot_Size_Max = sqrt((shot_stats.Shot_Size_Max * shot_stats.Shot_Size_Max) + (0.05 * shot_stats.Shot_Wishful));

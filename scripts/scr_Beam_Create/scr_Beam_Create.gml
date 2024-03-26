@@ -92,7 +92,7 @@ function scr_Beam_Create(shxx, shyy, beamseg, beamdir, curvedir, beamstop, beamx
 				if near_dist <= shot_stats.Shot_Air_Burst_Stats[burstIndex].Range {
 					dir = -sprd / 2;
 					//shot_stats.Shot_Life_Span = shot_stats.Shot_Life_Span * 0.6;
-					shothitagain = 1
+					shot_stats.Shot_Hit_Again = 1
 					
 					repeat(shot_stats.Shot_Air_Burst_Stats[burstIndex].Amount) {
 						
@@ -121,7 +121,7 @@ function scr_Beam_Create(shxx, shyy, beamseg, beamdir, curvedir, beamstop, beamx
 								shot_stats.Shot_Air_Burst_Stats = false;	
 							}
 							
-							shothitagain = 0;
+							shot_stats.Shot_Hit_Again = 0;
 							shotburstpower = shot_stats.Shot_Power
 							
 							splitsize = 128 * shot_stats.Shot_Size;

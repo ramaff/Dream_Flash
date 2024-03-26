@@ -4,7 +4,7 @@ function scr_D10_Shot_Mod() {
 	if global.D[10] >= 1 {
 	    /*shot_stats.Shot_Powermax = shot_stats.Shot_Powermax * (0.6);
 		shot_stats.Shot_Power = shot_stats.Shot_Powermax;
-		shotPowerLevel = shotPowerLevel * (0.6);
+		shot_stats.Shot_Power_Level = shot_stats.Shot_Power_Level * (0.6);
 		
 		shot_stats.Shot_Size = shot_stats.Shot_Size * 0.75;
 		image_xscale = shot_stats.Shot_Size;

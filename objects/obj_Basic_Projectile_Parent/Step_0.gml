@@ -131,8 +131,8 @@ if image_xscale > shot_stats.Shot_Size_Max {
     image_yscale = shot_stats.Shot_Size_Max;
 }
 
-if !instance_exists(target) {
-    target = obj_Soul_Parent;
+if !instance_exists(shot_stats.Shot_Target) {
+    shot_stats.Shot_Target = obj_Soul_Parent;
 }
 
 if shot_stats.Shot_Air_Burst_Stats != false {
@@ -277,75 +277,73 @@ if shot_stats.Shot_Aura = 1 {
 }
 
 if shot_stats.Shot_Homing_Type = 1 {
-    target = noone
+    var _target = noone
 
 	if instance_exists(obj_Boss_Parent) {
 	    with(obj_Boss_Parent) {
 	        var dis = distance_to_object(other);
 		    var hit_again = variable_struct_exists(projectile_hits, id)
 			if !hit_again and dis < other.shot_stats.Shot_Homing_Range {
-				other.target = id;
+				_target = id;
 			}
 	    }
 	}
-    if target != noone {
+    if _target != noone {
     
         im = direction;
 
         speed = min(speed + 0.5,shot_stats.Shot_Speed);
         
-        var pointDir = point_direction(x,y,target.x,target.y);
+        var pointDir = point_direction(x,y,_target.x,_target.y);
         im += sin(degtorad(pointDir - im)) * shot_stats.Shot_Homing_Speed;
         direction = im;
-    
-        //move_towards_point(target.x,target.y,shot_stats.Shot_Speed);
     }
 
 }
 
 if shot_stats.Shot_Homing_Type = 2 {
-    target = noone
+    var _target = noone
 	if instance_exists(obj_Boss_Parent) {
 	    with obj_Boss_Parent {
 	        var dis = distance_to_object(other);
 		    var hit_again = variable_struct_exists(projectile_hits, id)
 			if !hit_again and dis < other.shot_stats.Shot_Homing_Range {
-				other.target = id;
+				other._target = id;
 			}
 	    }
 	}
-    if target != noone {
-		var dist = point_distance(target.x, target.y, x, y);
+    if _target != noone {
+		var dist = point_distance(_target.x, _target.y, x, y);
 		if dist > shot_stats.Shot_Speed {
-			move_towards_point(target.x,target.y,shot_stats.Shot_Speed);
+			move_towards_point(_target.x,_target.y,shot_stats.Shot_Speed);
 		} else {
-			move_towards_point(target.x,target.y,dist);
+			move_towards_point(_target.x,_target.y,dist);
 		}
     }
 
 }
 
 if shot_stats.Shot_Snake_Move = 2 {
-	target = noone
+	var _target = noone
 	if instance_exists(obj_Boss_Parent) {
 		var mdist = 10000;
 		var dis = 0;
 	    with obj_Boss_Parent {
 	        dis = distance_to_object(other);
-	        if other.target == noone || dis < mdist {
+	        if _target == noone || dis < mdist {
 				if collision_circle(other.x, other.y, 10000, id, true, false) {
-					other.target = id;
+					_target = id;
 					mdist = dis;
 				}
 			}
 	    }
 	}
 	
-	if target != noone {
-		if (abs(x - target.x) < 20) || (abs(y - target.y) < 20){
-			direction = point_direction(x,y,target.x, target.y);
+	if _target != noone {
+		if (abs(x - _target.x) < 20) || (abs(y - _target.y) < 20){
+			direction = point_direction(x,y,_target.x, _target.y);
 		}
-		if distance_to_point(target.x, target.y) < 50 {
+		if distance_to_point(_target.x, _target.y) < 50 {
 			shot_stats.Shot_Snake_Move = 1;	
 		}
 	} else {
@@ -356,7 +354,6 @@ if shot_stats.Shot_Snake_Move = 2 {
 			shot_stats.Shot_Snake_Move = 1;	
 		}
 	}
-	//direction = point_direction(x,y,shottargetX, shottargetY);
 	
 }
 
@@ -364,15 +361,13 @@ if shot_stats.Shot_Snake_Move > 0 {
 	direction = round(direction / 90) * 90;
 }
 
-if instance_exists(followtarget) {
+if instance_exists(shot_stats.Shot_Follow_Target) {
 	var setdist = shot_stats.Shot_Speed * 5;
-	var dis = point_distance(x, y, followtarget.x, followtarget.y)
-	var follow_dir = point_direction(x, y, followtarget.x, followtarget.y)
+	var dis = point_distance(x, y, shot_stats.Shot_Follow_Target.x, shot_stats.Shot_Follow_Target.y)
+	var follow_dir = point_direction(x, y, shot_stats.Shot_Follow_Target.x, shot_stats.Shot_Follow_Target.y)
 	if dis > setdist {
 		speed = min(dis - setdist, shot_stats.Shot_Speed * 2);
 		direction = follow_dir;
-		//x = lerp(x, followtarget.x, 0.05);
-		//y = lerp(y, followtarget.y, 0.05);
 	} 
 } 
 

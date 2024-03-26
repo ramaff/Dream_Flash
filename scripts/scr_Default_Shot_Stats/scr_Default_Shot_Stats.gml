@@ -21,7 +21,7 @@ function scr_Default_Shot_Stats() {
 	shot_stats = {};
 
 	image = 0;
-	shothitagain = 0;
+	shot_stats.Shot_Hit_Again = 0;
 
 	shot_stats.Shot_Origin = noone;
 	shotgem = 0;
@@ -41,7 +41,7 @@ function scr_Default_Shot_Stats() {
 	shotlightsize = 0;
 	shotfolloworigin = 0
 	
-	feartarget = noone;
+	shot_stats.Shot_Fear_Target = noone;
 
 	shot_stats.Shot_Trail = 0;
 	shot_stats.Shot_Trail_Type = obj_Weapon_Trail;
@@ -66,7 +66,7 @@ function scr_Default_Shot_Stats() {
 	shotexplosionpart = spr_Explosion_Part;
 	shotexplosionsmoke = spr_Essence_Trail_Bit;
 
-	shotPowerLevel = 0;
+	shot_stats.Shot_Power_Level = 0;
 
 	target = noone;
 	otarget = noone;
@@ -157,7 +157,7 @@ function scr_Default_Shot_Stats() {
 	shot_stats.Shot_Comeback = 0;
 	shot_stats.Shot_Pierce = 1;
 	shot_stats.Shot_Bounce = 0;
-	shotarmourpierce = 0;
+	shot_stats.Shot_Armour_Pierce = 0;
 	shot_stats.Shot_Armour_Tear = 0;
 	shot_stats.Shot_Chain = 0;
 	shot_stats.Shot_Chain_Power = 0;

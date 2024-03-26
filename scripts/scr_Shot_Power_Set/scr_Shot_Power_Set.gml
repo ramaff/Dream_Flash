@@ -5,5 +5,5 @@ function scr_Shot_Power_Set(factor = 1){
 	shot_stats.Shot_Aura_Power = shot_stats.Shot_Aura_Power * factor;
 	shot_stats.Shot_Powermax = shot_stats.Shot_Power;
 	
-	shotPowelLevel = shotPowerLevel * factor;
+	shotPowelLevel = shot_stats.Shot_Power_Level * factor;
 }

@@ -32,7 +32,7 @@ if !hit_again and other.shot_stats.Shot_Melee = 0 {
         if shot_stats.Shot_Impact_Type < 100 {
             shot_stats.Shot_Impact_Type = 1;
             shot_stats.Shot_Impact_Size = 100;
-            shot_stats.Shot_Impact_Power_Level = shotPowerLevel * 0.5;
+            shot_stats.Shot_Impact_Power_Level = shot_stats.Shot_Power_Level * 0.5;
             shot_stats.Shot_Impact_Power = shot_stats.Shot_Power * 0.5;
         }
 		if shot_stats.Shot_Size > 1 {

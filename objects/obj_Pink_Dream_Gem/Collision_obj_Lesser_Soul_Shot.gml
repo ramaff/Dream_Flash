@@ -65,7 +65,7 @@ if !hit_again and other.shot_stats.Shot_Melee = 0 {
         var oshotid = shot_id;
         if duplicate = 7 {
         with instance_create(x,y,obj_Lesser_Soul_Shot) {
-            shothitagain = 1;
+            shot_stats.Shot_Hit_Again = 1;
             //image = 1;
             scr_Duplicate_Shot_Stats();
 			shot_stats.Shot_Size = other.shot_stats.Shot_Size;
@@ -76,10 +76,10 @@ if !hit_again and other.shot_stats.Shot_Melee = 0 {
 				image_xscale = shot_stats.Shot_Size;
 				image_yscale = shot_stats.Shot_Size;
 			}
-            shothitagain = 0;
+            shot_stats.Shot_Hit_Again = 0;
             direction += 7.5;
             shot_stats.Shot_Power = other.shot_stats.Shot_Power;
-            shotPowelLevel = other.shotPowerLevel;
+            shotPowelLevel = other.shot_stats.Shot_Power_Level;
             sprite_index = other.sprite_index;
             image_alpha = other.image_alpha;
             oshotid = shot_id;

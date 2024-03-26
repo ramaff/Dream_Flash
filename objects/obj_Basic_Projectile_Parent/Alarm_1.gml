@@ -17,7 +17,7 @@ for(i = 0; i < extra_shot_amount; i++) {
 		//show_debug_message("current_extra_stats: " + string(current_extra_stats))
 	    dir = 0;
 	    //image = 1;
-	    shothitagain = 1;
+	    shot_stats.Shot_Hit_Again = 1;
 		if variable_struct_exists(current_extra_stats, "Burst_Power") {
 			shotburstpower = shot_stats.Shot_Power * current_extra_stats.Burst_Power;
 		} else {

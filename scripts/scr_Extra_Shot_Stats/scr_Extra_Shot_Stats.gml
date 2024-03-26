@@ -24,7 +24,7 @@ function scr_Extra_Shot_Stats() {
 	shot_stats.Image_Rotation_Speed = other.Image_Rotation_Speed;
 
 	image = other.Weapon_Split_Visible;
-	shothitagain = other.Weapon_Split_Hit_Again;
+	shot_stats.Shot_Hit_Again = other.Weapon_Split_Hit_Again;
 	shot_stats.Shot_Melee = other.Weapon_Melee;
 	
 	shot_stats.Shot_Burst_Stats = other.Shot_Burst_Stats;
@@ -193,7 +193,7 @@ function scr_Extra_Shot_Stats() {
 	shot_stats.Shot_Looping = other.Shot_Looping;
 	shot_stats.Shot_Comeback = other.Shot_Comeback;
 	shot_stats.Shot_Pierce = other.Shot_Pierce + other.sshotpierce;
-	shotarmourpierce = other.Shot_Armour_Pierce + other.sarmourpierce;
+	shot_stats.Shot_Armour_Pierce = other.Shot_Armour_Pierce + other.sarmourpierce;
 	shot_stats.Shot_Armour_Tear = other.Shot_Armour_Tear;
 	shot_stats.Shot_Bounce = other.Shot_Bounce;
 	shot_stats.Shot_Chain = other.Shot_Chain;
