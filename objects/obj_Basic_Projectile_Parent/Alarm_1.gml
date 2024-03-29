@@ -31,16 +31,17 @@ for(i = 0; i < extra_shot_amount; i++) {
 	
 	    repeat(ramt) {
 		    with instance_create(x + shotextrahitxx,y + shotextrahityy,obj_Lesser_Soul_Shot) {
-		        scr_Duplicate_Shot_Stats();
+		        //scr_Duplicate_Shot_Stats();
 				
 				shot_stats = scr_Setup_Default_Shot_Stats();
 				var _PropertyNames = variable_struct_get_names(current_extra_stats);
 		        for (var i = 0; i < array_length(_PropertyNames); i++) {
 		            variable_struct_set(shot_stats, _PropertyNames[i], variable_struct_get(current_extra_stats, _PropertyNames[i]));
 		        }
+				scr_Setup_Shot_Stats_Asset(shot_stats);
 			
 				shot_stats.Shot_Speed =	shot_stats.Shot_Speed;
-				shot_stats.Shot_Life_Span = shot_stats.Shot_Lifespan;
+				shot_stats.Shot_Life_Span = shot_stats.Shot_Life_Span;
 				shot_stats.Shot_Timer = shot_stats.Shot_Life_Span;
 		
 				speed = shot_stats.Shot_Speed;

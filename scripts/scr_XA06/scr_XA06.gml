@@ -16,7 +16,7 @@ function scr_XA06(){
 		var burstIndex = array_length(Shot_Burst_Stats) - 1;
 		variable_struct_set(Shot_Burst_Stats[burstIndex], "Shot_Type", "obj_Lesser_Soul_Shot");
 		variable_struct_set(Shot_Burst_Stats[burstIndex], "Shot_Power", 4);
-		variable_struct_set(Shot_Burst_Stats[burstIndex], "Shot_Lifespan", 120 + (Shot_Lifespan / 3));
+		variable_struct_set(Shot_Burst_Stats[burstIndex], "Shot_Life_Span", 120 + (Shot_Life_Span / 3));
 		variable_struct_set(Shot_Burst_Stats[burstIndex], "Burst_Speed", 6 + (Shot_Speed / 3));
 		variable_struct_set(Shot_Burst_Stats[burstIndex], "Burst_Soul_Shot_Damage", 10);
 		variable_struct_set(Shot_Burst_Stats[burstIndex], "Shot_Size", 1);

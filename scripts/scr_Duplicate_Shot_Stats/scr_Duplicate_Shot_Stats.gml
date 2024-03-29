@@ -14,12 +14,12 @@ function scr_Duplicate_Shot_Stats() {
 	
 	//Print_DF(shot_stats)
 	
-	scr_Setup_Shot_Stats_Asset(other.shot_stats);
+	shot_stats = scr_Setup_Shot_Stats_Asset(shot_stats);
 
 	/*
 	target = other.target;
 	otarget = other.otarget;
-	shotgem = other.shotgem;
+	shot_stats.Shot_Gem = other.shot_stats.Shot_Gem;
 	otarget = noone;
 	
 	shotaccuracy = other.shotaccuracy
@@ -86,7 +86,7 @@ function scr_Duplicate_Shot_Stats() {
 	shot_stats.Shot_Power_Level = other.shot_stats.Shot_Power_Level;
 	shot_stats.Shot_Impact_Power_Level = other.shot_stats.Shot_Impact_Power_Level;
 	shot_stats.Shot_Speed = other.shot_stats.Shot_Speed;
-	shotknockback = other.shotknockback;
+	shot_stats.Shot_Knock_Back = other.shot_stats.Shot_Knock_Back;
 	shot_stats.Shot_Life_Span = other.shot_stats.Shot_Life_Span;
 	shot_stats.Shot_Timer = shot_stats.Shot_Life_Span;
 	
@@ -113,7 +113,7 @@ function scr_Duplicate_Shot_Stats() {
 	
 	/*
 	shot_stats.Shot_Size_Max = other.shot_stats.Shot_Size_Max;
-	shot_stats.Shot_Powermax = shot_stats.Shot_Power;
+	shot_stats.Shot_Power_Max = shot_stats.Shot_Power;
 	
 	shot_stats.Shot_Screen_Shake = other.shot_stats.Shot_Screen_Shake - 5;
 
@@ -310,14 +310,14 @@ function scr_Duplicate_Shot_Stats() {
 	}
 	*/
 
-	/*direction = other.direction + other.dir;
+	direction = other.direction + other.dir;
 	speed = shot_stats.Shot_Speed;
 	alarm[0] = shot_stats.Shot_Life_Span;
 	alarm[2] = 1;
 	alarm[3] = 15;
 
-	scr_Shot_Particle_Setup();
-	*/
+	//scr_Shot_Particle_Setup();
+	
 	shotA07 = other.shotA07;
 	//shot_stats.Shot_Follow_Target = other.shot_stats.Shot_Follow_Target;
 	//shot_stats.Shot_Fear_Target = other.shot_stats.Shot_Fear_Target;

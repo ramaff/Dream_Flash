@@ -14,7 +14,7 @@ function scr_Extra_Shot_Stats() {
 		alarm[8] = 10;	
 	}
 	
-	scr_Setup_Shot_Stats_Asset(other.Shot_Stats);
+	shot_stats = scr_Setup_Shot_Stats_Asset(shot_stats);
 	
 	//Print_DF(shot_stats)
 
@@ -336,7 +336,7 @@ function scr_Extra_Shot_Stats() {
 	
 	scr_XC06_Setup();
 	
-	//shot_stats.Shot_Size_Max = shot_stats.Shot_Size;
+	shot_stats.Shot_Size_Max = shot_stats.Shot_Size;
 	
 
 }

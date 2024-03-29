@@ -17,7 +17,7 @@ if corporealHit > 0 {
         Shot_Speed = 5.5;
         Shot_Power = 9;
         Shot_Knockback = 10;
-        Shot_Lifespan = 100;
+        Shot_Life_Span = 100;
 		Shot_Size = 0.5;
 		
 		Shot_Point_Angle = 1;

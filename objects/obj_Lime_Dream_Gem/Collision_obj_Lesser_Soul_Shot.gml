@@ -13,7 +13,7 @@ if !hit_again and other.shot_stats.Shot_Melee = 0 {
 			shot_stats.Shot_Orbital_Type = 0;
 		}
         shotphasing = 1;
-		shotgem++;
+		shot_stats.Shot_Gem++;
         /*
         if shot_stats.Shot_Homing_Type = 0 {
             shot_stats.Shot_Homing_Type = 1;
@@ -35,7 +35,7 @@ if !hit_again and other.shot_stats.Shot_Melee = 0 {
 		}
         shot_stats.Shot_Power_Level = shot_stats.Shot_Power * 1.05;
         shot_stats.Shot_Power = shot_stats.Shot_Power * 1.05;
-        shotknockback += 10;
+        shot_stats.Shot_Knock_Back += 10;
         sprite_index = spr_Lime_Gem_Shot;
         if instance_exists(obj_Boss_Parent) {    
             move_towards_point(instance_nearest(x,y,obj_Boss_Parent).x,instance_nearest(x,y,obj_Boss_Parent).y,shot_stats.Shot_Speed)

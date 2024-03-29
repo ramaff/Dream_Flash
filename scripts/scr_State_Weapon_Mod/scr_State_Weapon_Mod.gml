@@ -56,8 +56,8 @@ function scr_State_Weapon_Mod(){
 		    shot_stats.Shot_Timer = shot_stats.Shot_Life_Span;
 			speed = shot_stats.Shot_Speed;
 		
-			shot_stats.Shot_Powermax = shot_stats.Shot_Powermax * (1.5 * global.soulstateformboost);
-		    shot_stats.Shot_Power = shot_stats.Shot_Powermax;
+			shot_stats.Shot_Power_Max = shot_stats.Shot_Power_Max * (1.5 * global.soulstateformboost);
+		    shot_stats.Shot_Power = shot_stats.Shot_Power_Max;
 		    shot_stats.Shot_Power_Level = shot_stats.Shot_Power_Level * (1.5 * global.soulstateformboost);
 		}
 		if scr_State_Active_Check("Scrub") {
@@ -107,8 +107,8 @@ function scr_State_Weapon_Mod(){
 		
 			speed = shot_stats.Shot_Speed;
 		
-			shot_stats.Shot_Powermax = shot_stats.Shot_Powermax * (1.15 * global.soulstateformboost);
-		    shot_stats.Shot_Power = shot_stats.Shot_Powermax;
+			shot_stats.Shot_Power_Max = shot_stats.Shot_Power_Max * (1.15 * global.soulstateformboost);
+		    shot_stats.Shot_Power = shot_stats.Shot_Power_Max;
 		    shot_stats.Shot_Power_Level = shot_stats.Shot_Power_Level * (1.15 * global.soulstateformboost);
 		
 			if sprite_get_height(sprite_index) < 80 and shot_stats.Shot_Melee == 0 {
@@ -132,14 +132,14 @@ function scr_State_Weapon_Mod(){
 			shot_stats.Shot_Extra_Stats[0].Shot_Extra_Hit_Frequency = 15 + (shot_stats.Shot_Life_Span / 10);
 			shot_stats.Shot_Extra_Stats[0].Shot_Power = shot_stats.Shot_Power * global.soulstateformboost / 2.5;
 			shot_stats.Shot_Extra_Stats[0].Shot_Speed = shot_stats.Shot_Speed * 1.5;
-			shot_stats.Shot_Extra_Stats[0].Shot_Lifespan = shot_stats.Shot_Life_Span / 2;
+			shot_stats.Shot_Extra_Stats[0].Shot_Life_Span = shot_stats.Shot_Life_Span / 2;
 			shot_stats.Shot_Extra_Stats[0].Shot_Pierce = shot_stats.Shot_Pierce;
 			shot_stats.Shot_Extra_Stats[0].Shot_Size = (0.05 + shot_stats.Shot_Size * 0.5);
 			//shot_stats.Shot_Extra_Stats[0].Shot_Mouse = true;
 			
 			if shot_stats.Shot_Type = obj_Melee_Caster_Shot {
 				shot_stats.Shot_Extra_Stats[0].Shot_Type = obj_Lesser_Soul_Shot;
-				shot_stats.Shot_Extra_Stats[0].Shot_Lifespan = 7;
+				shot_stats.Shot_Extra_Stats[0].Shot_Life_Span = 7;
 				shot_stats.Shot_Extra_Stats[0].Shot_Sprite = string(sprite_get_name(other.Shot_Duplicate_Sprite))
 				shot_stats.Shot_Extra_Stats[0].Shot_Size = other.Shot_Size
 				shot_stats.Shot_Speed = 3;

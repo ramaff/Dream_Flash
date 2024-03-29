@@ -2,8 +2,8 @@ function scr_D10_Shot_Mod() {
 	// Location: Extra Shot Stats
 
 	if global.D[10] >= 1 {
-	    /*shot_stats.Shot_Powermax = shot_stats.Shot_Powermax * (0.6);
-		shot_stats.Shot_Power = shot_stats.Shot_Powermax;
+	    /*shot_stats.Shot_Power_Max = shot_stats.Shot_Power_Max * (0.6);
+		shot_stats.Shot_Power = shot_stats.Shot_Power_Max;
 		shot_stats.Shot_Power_Level = shot_stats.Shot_Power_Level * (0.6);
 		
 		shot_stats.Shot_Size = shot_stats.Shot_Size * 0.75;

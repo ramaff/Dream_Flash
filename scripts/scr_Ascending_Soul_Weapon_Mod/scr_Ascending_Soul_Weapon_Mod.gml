@@ -15,8 +15,8 @@ function scr_Ascending_Soul_Weapon_Mod(){
 	Shot_Knockback += Charge_Knockback;
 	current_weapon_stats.Shot_Knockback = Shot_Knockback
 	
-	Shot_Lifespan += Charge_Lifespan;
-	current_weapon_stats.Shot_Lifespan = Shot_Lifespan
+	Shot_Life_Span += Charge_Lifespan;
+	current_weapon_stats.Shot_Life_Span = Shot_Life_Span
 	
 	Shot_Size = Charge_Size;
 	current_weapon_stats.Shot_Size = Shot_Size

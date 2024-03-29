@@ -105,8 +105,8 @@ function scr_Beam_Create(shxx, shyy, beamseg, beamdir, curvedir, beamstop, beamx
 							
 							var _v_shot_air_burst_stats = other.shot_stats.Shot_Air_Burst_Stats[burstIndex]
 							
-							if variable_struct_exists(_v_shot_air_burst_stats, "Shot_Lifespan") {
-								_v_shot_air_burst_stats.Shot_Lifespan = other.shot_stats.Shot_Life_Span
+							if variable_struct_exists(_v_shot_air_burst_stats, "Shot_Life_Span") {
+								_v_shot_air_burst_stats.Shot_Life_Span = other.shot_stats.Shot_Life_Span
 							}
 							
 							scr_Shot_Burst_Stats(_v_shot_air_burst_stats);

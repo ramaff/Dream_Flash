@@ -30,7 +30,7 @@ function scr_Hard_Coded_Item_Stats(itemVal, items_to_add = 1, reload = false) {
 	if itemVal = "A06" {
 	    global.soulshotknockback += 5;
 	    obj_Soul_Parent.sshotknockback += 5;
-	    global.soulshot_stats.Shot_Speed += 2;
+	    global.soulshotspeed += 2;
 	    obj_Soul_Parent.sshotspeed += 2;
 	}
 	if itemVal = "A07" {
@@ -40,7 +40,7 @@ function scr_Hard_Coded_Item_Stats(itemVal, items_to_add = 1, reload = false) {
 	    obj_Soul_Parent.spowerfactor += 2.5;
 	    global.soulshotlifefactor = ((global.soulshotlifefactor + 10) / 1.25) - 10;
 	    obj_Soul_Parent.sshotlifefactor = ((obj_Soul_Parent.sshotlifefactor + 10) / 1.25) - 10;
-	    //global.soulshot_stats.Shot_Speed += 1;
+	    //global.soulshotspeed += 1;
 	    //obj_Soul_Parent.sshotspeed += 1;
 	    //global.A[8]++;
 	}
@@ -218,7 +218,7 @@ function scr_Hard_Coded_Item_Stats(itemVal, items_to_add = 1, reload = false) {
 	if itemVal = "D01" {
 	    global.soulmovementfactor += 3;
 	    obj_Soul_Parent.smovementfactor += 3;
-		global.soulshot_stats.Shot_Speed += 3;
+		global.soulshotspeed += 3;
 	    obj_Soul_Parent.sshotspeed += 3;
 	    //global.D[1]++;
 	}
@@ -228,7 +228,7 @@ function scr_Hard_Coded_Item_Stats(itemVal, items_to_add = 1, reload = false) {
 	    //global.D[2]++;
 	}
 	if itemVal = "D03" {
-	    //global.soulshot_stats.Shot_Speed += 4;
+	    //global.soulshotspeed += 4;
 	    //obj_Soul_Parent.sshotspeed += 4;
 		//global.souldelayconservationfactor += 0.1;
 	    //obj_Soul_Parent.sdelayconservationfactor += 0.1;
@@ -898,7 +898,7 @@ function scr_Hard_Coded_Item_Stats(itemVal, items_to_add = 1, reload = false) {
 	    //global.OB[4]++;
 		global.soulshotlifefactor += 2;
 	    obj_Soul_Parent.sshotlifefactor += 2;
-		global.soulshot_stats.Shot_Speed -= 1.5;
+		global.soulshotspeed -= 1.5;
 	    obj_Soul_Parent.sshotspeed -= 1.5;
 	}
 	if itemVal = "OC01" {
@@ -910,7 +910,7 @@ function scr_Hard_Coded_Item_Stats(itemVal, items_to_add = 1, reload = false) {
 		global.bossfireratefactor += 0.1;
 		global.soulshotlifefactor -= 2.5;
 	    obj_Soul_Parent.sshotlifefactor -= 2.5;
-	    global.soulshot_stats.Shot_Speed += 1;
+	    global.soulshotspeed += 1;
 	    obj_Soul_Parent.sshotspeed += 1;
 	}
 	if itemVal = "OC02" {
@@ -1173,7 +1173,7 @@ function scr_Hard_Coded_Item_Stats(itemVal, items_to_add = 1, reload = false) {
 	}
 	if itemVal = "XB04" {
 	    //global.XB[4]++;
-		global.soulshot_stats.Shot_Speed += 3;
+		global.soulshotspeed += 3;
 	    obj_Soul_Parent.sshotspeed += 3;
 	}
 

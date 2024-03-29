@@ -13,7 +13,7 @@ function scr_Rubber_Soul_Rebound_Shot() {
 		Shot_Direction: other.direction + 180,
 		Shot_Power: max(1, other.bulletpower) * 3 * global.B[5],
 		Shot_Knockback: 10,
-		Shot_Lifespan: 100,
+		Shot_Life_Span: 100,
 		Shot_Pierce: 1,
 		Shot_Size: other.image_xscale,
 		Shot_Forward: 0,

@@ -16,7 +16,7 @@ function scr_W04() {
 			Shot_Speed: 1,
 			Shot_Power: poww,
 			Shot_Knockback: 10,
-			Shot_Lifespan: 60,
+			Shot_Life_Span: 60,
 			Shot_Pierce: 1,
 			Shot_Point_Angle: 0,
 			Shot_Size: 0.5,

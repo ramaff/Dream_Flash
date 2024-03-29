@@ -17,7 +17,7 @@ function scr_V07_Use() {
 			Shot_Power: 100,
 			Shot_Knockback: 20,
 			Shot_Friction: 0.11,
-			Shot_Lifespan: 90,
+			Shot_Life_Span: 90,
 			Shot_Pierce: 1,
 			Shot_Impact_Type: 2,
 			Shot_Impact_Power: 50,

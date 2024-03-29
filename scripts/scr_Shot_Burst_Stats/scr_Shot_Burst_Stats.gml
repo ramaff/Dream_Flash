@@ -5,16 +5,16 @@ function scr_Shot_Burst_Stats(_v_burst_stats){
 	/*if variable_struct_exists(_v_burst_stats, "Shot_Power") {
 		shot_stats.Shot_Power = _v_burst_stats.Shot_Power
 		//show_debug_message(shot_stats.Shot_Power)
-		shot_stats.Shot_Powermax = shot_stats.Shot_Power;
+		shot_stats.Shot_Power_Max = shot_stats.Shot_Power;
 	} */
 	if variable_struct_exists(_v_burst_stats, "Burst_Power") {
 		shot_stats.Shot_Power = shot_stats.Shot_Power * _v_burst_stats.Burst_Power;
 		shot_stats.Shot_Aura_Power = shot_stats.Shot_Aura_Power * _v_burst_stats.Burst_Power;
-		shot_stats.Shot_Powermax = shot_stats.Shot_Power;
+		shot_stats.Shot_Power_Max = shot_stats.Shot_Power;
 	} else {
 		shot_stats.Shot_Power = _v_burst_stats.Shot_Power;
 		shot_stats.Shot_Aura_Power = _v_burst_stats.Shot_Power;
-		shot_stats.Shot_Powermax = shot_stats.Shot_Power;	
+		shot_stats.Shot_Power_Max = shot_stats.Shot_Power;	
 	}
 	if variable_struct_exists(_v_burst_stats, "Burst_Soul_Shot_Damage") {
 		shot_stats.Shot_Soul_Damage = _v_burst_stats.Burst_Soul_Shot_Damage;
@@ -34,8 +34,8 @@ function scr_Shot_Burst_Stats(_v_burst_stats){
 		//show_debug_message(_v_burst_stats.Shot_Sprite)
 		sprite_index = asset_get_index(_v_burst_stats.Shot_Sprite)
 	}
-	if variable_struct_exists(_v_burst_stats, "Shot_Lifespan") {
-		shot_stats.Shot_Life_Span = _v_burst_stats.Shot_Lifespan
+	if variable_struct_exists(_v_burst_stats, "Shot_Life_Span") {
+		shot_stats.Shot_Life_Span = _v_burst_stats.Shot_Life_Span
 		alarm[0] = shot_stats.Shot_Life_Span;
 		shot_stats.Shot_Timer = shot_stats.Shot_Life_Span;
 	}

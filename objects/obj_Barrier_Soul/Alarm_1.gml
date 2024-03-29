@@ -14,7 +14,7 @@ if instance_exists(obj_Bullet_Parent) and instance_exists(obj_Boss_Parent) {
         Shot_Speed = 15;
         Shot_Power = 10;
         Shot_Knockback = 10;
-        Shot_Lifespan = 50;
+        Shot_Life_Span = 50;
 		Shot_Size = 0.4;
         
         Shot_Phasing = 1;

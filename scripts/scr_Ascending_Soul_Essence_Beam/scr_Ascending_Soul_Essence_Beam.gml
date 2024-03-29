@@ -22,7 +22,7 @@ function scr_Ascending_Soul_Essence_Beam(c_wp = global.currentweapon){
         Shot_Speed: 0,
         Shot_Power: 27,
         Shot_Knockback: 0,
-        Shot_Lifespan: 19,
+        Shot_Life_Span: 19,
         Shot_Burst_Power: 27,
         Shot_Size: 0.5,
         Weapon_Split_Visible: 1,

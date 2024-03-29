@@ -23,7 +23,7 @@ function scr_Baseball_Shot(xxx,yyy, pow) {
 		Shot_Speed: (8 + other.speed) * (pow / 100),
 		Shot_Power: (5 + other.bulletpower / 3) * (pow / 100),
 		Shot_Knockback: 10,
-		Shot_Lifespan: 30,
+		Shot_Life_Span: 30,
 		Shot_Trail: 1,
 		Shot_Trail_Sprite: "spr_Big_Essence_Trail_Bit",
 		Shot_Trail_Area: 15,

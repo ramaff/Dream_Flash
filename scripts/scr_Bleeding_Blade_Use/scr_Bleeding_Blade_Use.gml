@@ -22,7 +22,7 @@ function scr_Bleeding_Blade_Use() {
 	}
 	
 	current_weapon_stats.Shot_Knockback = 10 + sqrt(current_weapon_stats.Shot_Power);
-	current_weapon_stats.Shot_Lifespan = 15;
+	current_weapon_stats.Shot_Life_Span = 15;
 	current_weapon_stats.Shot_Angle = point_direction(x,y,mouse_x,mouse_y);
 	current_weapon_stats.Shot_Pierce = 20;
 	current_weapon_stats.Shot_Bullet_Redirect = 1;

@@ -146,13 +146,18 @@ if shot_stats.Shot_Air_Burst_Stats != false {
 		if distance_to_object(near_boss) <= shot_stats.Shot_Air_Burst_Stats[burstIndex].Range {
 			dir = -sprd / 2;
 			shot_stats.Shot_Life_Span = shot_stats.Shot_Life_Span * 0.6;
+			
+			shot_stats.Shot_Air_Burst_Stats[burstIndex] = scr_Setup_Shot_Stats_Asset(shot_stats.Shot_Air_Burst_Stats[burstIndex]);
+			
+			var _obj = asset_get_index(shot_stats.Shot_Air_Burst_Stats[burstIndex].Shot_Type)
+			
 		    repeat(shot_stats.Shot_Air_Burst_Stats[burstIndex].Amount) {
 				
 				if sprd < 0 {
 					dir = random(sprd) - (sprd / 2)
 				}
 				
-		        with instance_create(x,y,object_index) {
+		        with instance_create(x,y,_obj) {
 		            scr_Duplicate_Shot_Stats();
 						
 					var _v_shot_air_burst_stats = other.shot_stats.Shot_Air_Burst_Stats[burstIndex]
@@ -260,7 +265,7 @@ if shot_stats.Shot_Orbital_Type > 0 {
 }
 
 if shot_stats.Shot_Shield_Type = 1 || shot_stats.Shot_Continue = 1 { 
-    var size = shot_stats.Shot_Size * (shot_stats.Shot_Power / shot_stats.Shot_Powermax);
+    var size = shot_stats.Shot_Size * (shot_stats.Shot_Power / shot_stats.Shot_Power_Max);
     image_xscale = size;
     image_yscale = size;
 }

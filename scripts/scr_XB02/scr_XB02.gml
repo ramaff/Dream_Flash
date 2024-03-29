@@ -21,7 +21,7 @@ function scr_XB02() {
 		
 		var _burst_pow = 0.4;
 		var _burst_size = 0.7;
-		var _burst_life = 0.5 * current_weapon_stats.Shot_Lifespan
+		var _burst_life = 0.5 * current_weapon_stats.Shot_Life_Span
 		var _burst_speed = Shot_Speed * 1.2
 		var _burst_amount = 5
 		repeat(_procs - 1) {
@@ -45,7 +45,7 @@ function scr_XB02() {
 		variable_struct_set(Shot_Air_Burst_Stats[burstIndex], "Burst_Power", _burst_pow); 
 		variable_struct_set(Shot_Air_Burst_Stats[burstIndex], "Burst_Size", _burst_size); 
 		variable_struct_set(Shot_Air_Burst_Stats[burstIndex], "Burst_Speed", _burst_speed);
-		variable_struct_set(Shot_Air_Burst_Stats[burstIndex], "Shot_Lifespan", _burst_life); 
+		variable_struct_set(Shot_Air_Burst_Stats[burstIndex], "Shot_Life_Span", _burst_life); 
 		variable_struct_set(Shot_Air_Burst_Stats[burstIndex], "Air_Burst", true); 
 		variable_struct_set(Shot_Air_Burst_Stats[burstIndex], "Range", 140); 
 		variable_struct_set(Shot_Air_Burst_Stats[burstIndex], "Amount", _burst_amount); 

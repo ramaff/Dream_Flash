@@ -9,10 +9,10 @@ function scr_D03(){
 		
 		current_weapon_stats.Shot_Lobbing = true
 		current_weapon_stats.Shot_Speed = current_weapon_stats.Shot_Speed * 1.4;
-		current_weapon_stats.Shot_Lifespan = current_weapon_stats.Shot_Lifespan * 0.7;
+		current_weapon_stats.Shot_Life_Span = current_weapon_stats.Shot_Life_Span * 0.7;
 		current_weapon_stats.Shot_Height = 0;
 		current_weapon_stats.Shot_Fall_Speed = -4;
-		current_weapon_stats.Shot_Gravity = 8 / current_weapon_stats.Shot_Lifespan;
+		current_weapon_stats.Shot_Gravity = 8 / current_weapon_stats.Shot_Life_Span;
 		
 		
 		repeat(global.D[3]) {

@@ -53,7 +53,7 @@ if global.A[14] > 0 and shot_stats.Shot_Origin = obj_Soul_Parent {
 }
 
 if shot_stats.Shot_Aura = 1 and image_alpha > 0 {
-    draw_sprite_ext(shot_stats.Shot_Aura_Sprite,0,x,y,1,1,0,c_white,1);
+    draw_sprite_ext(asset_get_index(shot_stats.Shot_Aura_Sprite),0,x,y,1,1,0,c_white,1);
 }
 
 var fdist = 50;

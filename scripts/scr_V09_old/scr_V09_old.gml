@@ -8,8 +8,8 @@ function scr_V09_old() {
 	    //shot_stats.Shot_Bounce_Speed = 10;
 	    //shot_stats.Shot_Bounce_Direction = 1;	
 		
-		shot_stats.Shot_Powermax = shot_stats.Shot_Powermax * (0.5);
-		shot_stats.Shot_Power = shot_stats.Shot_Powermax;
+		shot_stats.Shot_Power_Max = shot_stats.Shot_Power_Max * (0.5);
+		shot_stats.Shot_Power = shot_stats.Shot_Power_Max;
 		shot_stats.Shot_Power_Level = shot_stats.Shot_Power_Level * (0.5);
 		
 		shot_stats.Shot_Size = shot_stats.Shot_Size * 0.7;

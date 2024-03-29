@@ -14,7 +14,7 @@ function scr_Brainstorm_Umbrella_Use() {
 	Shot_Speed = 1;
 	Shot_Power = 10;
 	Shot_Knockback = 0;
-	Shot_Lifespan = 51;
+	Shot_Life_Span = 51;
 
 	Shot_Rebound_Type = 1;
 	Shot_Rebound_Power = 10;

@@ -86,7 +86,9 @@ function scr_Soul_Shot_Boss_Hit() {
 				
 				repeat(shot_stats.Shot_Trail_Hit_Count) {
 					var ddir = direction - 90 + random(180);
-					scr_Particle_Burst(shot_stats.Shot_Trail_Hit_Type, shot_stats.Shot_Trail_Hit_Sprite, shot_stats.Shot_Trail_Color1, shot_stats.Shot_Trail_Color2, 1, 12 + random(8), ddir, 0, 0, shot_stats.Shot_Size + random(0.2), 15 + random(10))
+					scr_Particle_Burst(asset_get_index(shot_stats.Shot_Trail_Hit_Type), asset_get_index(shot_stats.Shot_Trail_Hit_Sprite), 
+									   shot_stats.Shot_Trail_Color1, shot_stats.Shot_Trail_Color2, 1, 12 + random(8), ddir,
+									   0, 0, shot_stats.Shot_Size + random(0.2), 15 + random(10))
 				}
 				
 				if shot_stats.Shot_Essence_Drain > 0 {
@@ -133,10 +135,10 @@ function scr_Soul_Shot_Boss_Hit() {
 			}
         
 	        if other.pathBoss = 0 {
-	            scr_Apply_Boss_Knockback(other.id, shotknockback, 5, direction)
+	            scr_Apply_Boss_Knockback(other.id, shot_stats.Shot_Knock_Back, 5, direction)
 	        } else {
-	            if shotknockback > other.bossknockdefense {
-	                other.path_position -= (shotknockback - other.bossknockdefense) / 1000;
+	            if shot_stats.Shot_Knock_Back > other.bossknockdefense {
+	                other.path_position -= (shot_stats.Shot_Knock_Back - other.bossknockdefense) / 1000;
 					other.deadknockdirection = direction
 	            }
 	        }

@@ -13,7 +13,7 @@ if !hit_again and other.shot_stats.Shot_Melee = 0 {
 			shot_stats.Shot_Orbital_Type = 0;
 		}
         shotphasing = 1;
-		shotgem++;
+		shot_stats.Shot_Gem++;
         speed = shot_stats.Shot_Speed;
         shot_stats.Shot_Speed += 1.5;
         speed += 1.5;

@@ -7,7 +7,7 @@ function scr_H53(){
 		
 		current_weapon_stats.Shot_Speed = 0;
 		current_weapon_stats.Shot_Forward = 0;
-		current_weapon_stats.Shot_Lifespan = 105 + random(30);
+		current_weapon_stats.Shot_Life_Span = 105 + random(30);
 		current_weapon_stats.Shot_Power = 3;
 		current_weapon_stats.Shot_Size = 0.35 + random(0.1);
 		current_weapon_stats.Shot_Sprite = "spr_Seething_Fire_Shot";
@@ -37,7 +37,7 @@ function scr_H53(){
                 Shot_Type: obj_Lesser_Soul_Shot,
                 Shot_Extra_Hit_Frequency: 15,
                 Shot_Power: 1,
-                Shot_Lifespan: 1,
+                Shot_Life_Span: 1,
                 Shot_Alpha: 0
             }
         ]

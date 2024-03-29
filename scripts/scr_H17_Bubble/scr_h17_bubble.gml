@@ -13,7 +13,7 @@ function scr_H17_Bubble(){
 			Shot_Speed: 2.5,
 			Shot_Power: pow,
 			Shot_Knockback: 0,
-			Shot_Lifespan: 180,
+			Shot_Life_Span: 180,
 			Shot_Pierce: 2,
 			Shot_Point_Angle: 1,
 			Shot_Size: 0.4,
@@ -63,7 +63,7 @@ function scr_H17_Bubble(){
 	Shot_Speed = 2;
 	Shot_Power = 5 * global.soulheartboost;
 	Shot_Knockback = 0;
-	Shot_Lifespan = 180;
+	Shot_Life_Span = 180;
 
 	Shot_Shield_Type = 1;
 	Shot_Shield_Power = 9;

@@ -9,7 +9,7 @@ function scr_Casting_Soul_Manual_Synergy(){
 		if current_weapon_stats.Weapon_Melee > 0 and _casting {
 		
 			current_weapon_stats.Shot_Type = obj_Melee_Caster_Shot;
-			current_weapon_stats.Shot_Lifespan = 180;
+			current_weapon_stats.Shot_Life_Span = 180;
 			current_weapon_stats.Shot_Size = Shot_Size / 2;
 			current_weapon_stats.Shot_Duplicate_Sprite = Shot_Sprite;
 			current_weapon_stats.Shot_Sprite = spr_Casting_Sword_Orbital;
@@ -20,7 +20,7 @@ function scr_Casting_Soul_Manual_Synergy(){
 		if current_weapon_stats.Shot_Beam > 0 and _casting {
 		
 			current_weapon_stats.Shot_Type = obj_Beam_Caster_Shot;
-			current_weapon_stats.Shot_Lifespan = 180;
+			current_weapon_stats.Shot_Life_Span = 180;
 			current_weapon_stats.Shot_Size = Shot_Size / 2;
 			current_weapon_stats.Shot_Duplicate_Sprite = current_weapon_stats.Shot_Sprite;
 			current_weapon_stats.Shot_Sprite = spr_Casting_Beam_Orbital;

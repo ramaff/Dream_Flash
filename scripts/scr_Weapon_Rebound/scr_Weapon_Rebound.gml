@@ -31,7 +31,7 @@ function scr_Weapon_Rebound() {
 			Shot_Direction: other.bmoveangle + 180,
 			Shot_Power: pow,
 			Shot_Knockback: 10,
-			Shot_Lifespan: 100,
+			Shot_Life_Span: 100,
 			Shot_Pierce: 1,
 			Shot_Size: other.bsize,
 			Shot_Forward: 0,

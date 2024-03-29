@@ -21,7 +21,7 @@ function scr_Bleeding_Teleport() {
 		current_weapon_stats.Shot_Speed = 0;
 		current_weapon_stats.Shot_Power = 40;
 		current_weapon_stats.Shot_Knockback = 10 + sqrt(Shot_Power);
-		current_weapon_stats.Shot_Lifespan = 60;
+		current_weapon_stats.Shot_Life_Span = 60;
 		current_weapon_stats.Shot_Angle = 90 + point_direction(x,y,mouse_x,mouse_y);
 		current_weapon_stats.Image_Rotation_Speed = -15;
 		

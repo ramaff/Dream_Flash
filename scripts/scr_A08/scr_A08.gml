@@ -4,11 +4,11 @@
 function scr_A08(){
 
 	if global.A[8] > 0 {
-		Shot_Friction += (Shot_Speed / Shot_Lifespan) * global.A[8];
-		if Shot_Min_Speed <= 1 {
-			Shot_Min_Speed = Shot_Speed * 0.75;
+		shot_stats.Shot_Friction += (shot_stats.Shot_Speed / shot_stats.Shot_Life_Span) * global.A[8];
+		if shot_stats.Shot_Min_Speed <= 1 {
+			shot_stats.Shot_Min_Speed = shot_stats.Shot_Speed * 0.75;
 		}
-		Shot_Speed += (0.25 * Shot_Speed) * global.A[8];
+		shot_stats.Shot_Speed += (0.25 * shot_stats.Shot_Speed) * global.A[8];
 	}
 
 }

@@ -21,7 +21,7 @@ if instance_exists(obj_Boss_Parent) {
     Shot_Stats.Shot_Power = 15;
     Shot_Stats.Shot_Soul_Damage = 10;
     Shot_Stats.Shot_Knockback = 10;
-    Shot_Stats.Shot_Lifespan = 120;
+    Shot_Stats.Shot_Life_Span = 120;
 	Shot_Stats.Shot_Size = 0.55;
 	
 	Shot_Stats.Shot_Pierce += 1;

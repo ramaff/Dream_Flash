@@ -15,7 +15,7 @@ function scr_T03() {
 			Shot_Speed: 3.5,
 			Shot_Power: pow,
 			Shot_Knockback: 0,
-			Shot_Lifespan: 230,
+			Shot_Life_Span: 230,
 			Shot_Pierce: 2,
 			Shot_Point_Angle: 1,
 			Shot_Size: 0.4,

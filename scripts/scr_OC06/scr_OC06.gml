@@ -29,7 +29,7 @@ function scr_OC06(){
 		var burstIndex = array_length(Shot_Air_Burst_Stats) - 1;
 		variable_struct_set(Shot_Air_Burst_Stats[burstIndex], "Burst_Power", 1);
 		variable_struct_set(Shot_Air_Burst_Stats[burstIndex], "Burst_Size", 0.9);
-		variable_struct_set(Shot_Air_Burst_Stats[burstIndex], "Shot_Lifespan", 0.7 * current_weapon_stats.Shot_Lifespan); 
+		variable_struct_set(Shot_Air_Burst_Stats[burstIndex], "Shot_Life_Span", 0.7 * current_weapon_stats.Shot_Life_Span); 
 		variable_struct_set(Shot_Air_Burst_Stats[burstIndex], "Air_Burst", true); 
 		variable_struct_set(Shot_Air_Burst_Stats[burstIndex], "Range", 100 + random(40));
 		variable_struct_set(Shot_Air_Burst_Stats[burstIndex], "Amount", 1 + _procs); 

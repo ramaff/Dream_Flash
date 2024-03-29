@@ -17,7 +17,7 @@ if instance_exists(obj_Boss_Parent) {
     Shot_Speed = 5;
     Shot_Power = 12;
     Shot_Knockback = 10;
-    Shot_Lifespan = 100;
+    Shot_Life_Span = 100;
     
     Shot_Impact_Power = 8;
     Shot_Impact_Type = 1;

@@ -35,7 +35,7 @@ if shealth <= 0 {
         Shot_Power = 15;
         Shot_Soul_Damage = 10;
         Shot_Knockback = 10;
-        Shot_Lifespan = 120;
+        Shot_Life_Span = 120;
 		Shot_Size = 0.55;
 		Shot_Pierce += 1;
 		
@@ -54,10 +54,10 @@ if shealth <= 0 {
                 image_xscale = shot_stats.Shot_Size;
                 image_yscale = shot_stats.Shot_Size;
                 shot_stats.Shot_Speed = other.Shot_Speed * other.sshotspeed / 10;
-                shot_stats.Shot_Powermax = other.Shot_Power * other.spower / 10;
-                shot_stats.Shot_Power = shot_stats.Shot_Powermax;
+                shot_stats.Shot_Power_Max = other.Shot_Power * other.spower / 10;
+                shot_stats.Shot_Power = shot_stats.Shot_Power_Max;
                 shot_stats.Shot_Power_Level = other.Shot_Power;
-                shotknockback = other.Shot_Knockback * other.sshotknockback / 10;
+                shot_stats.Shot_Knock_Back = other.Shot_Knockback * other.sshotknockback / 10;
                 move_towards_point(instance_nearest(x,y,obj_Troubling_Thingo).x,instance_nearest(x,y,obj_Troubling_Thingo).y, shot_stats.Shot_Speed);
                 shot_stats.Shot_Life_Span = 60 + distance_to_object(instance_nearest(x,y,obj_Troubling_Thingo)) / shot_stats.Shot_Speed;
                 alarm[0] = shot_stats.Shot_Life_Span;

@@ -13,7 +13,7 @@ if !hit_again and other.shot_stats.Shot_Melee = 0 {
 			shot_stats.Shot_Orbital_Type = 0;
 		}
         shotphasing = 1;
-		shotgem++;
+		shot_stats.Shot_Gem++;
         /*
         if shot_stats.Shot_Homing_Type = 0 {
             shot_stats.Shot_Homing_Type = 1;

@@ -14,7 +14,7 @@ function scr_Essence_Attack_Field() {
 		Shot_Speed: 1,
 		Shot_Power: 10,
 		Shot_Knockback: 0,
-		Shot_Lifespan: 12,
+		Shot_Life_Span: 12,
 		Shot_Pierce: 30,
 		Shot_Armour_Pierce: 10,
 		Shot_Size: 0.5,

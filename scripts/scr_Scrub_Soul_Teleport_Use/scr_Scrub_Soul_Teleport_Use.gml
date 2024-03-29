@@ -17,7 +17,7 @@ function scr_Scrub_Soul_Teleport_Use(dist, ang) {
 	current_weapon_stats.Shot_Homing_Range = 120;
 	current_weapon_stats.Shot_Speed = 3;
 	current_weapon_stats.Shot_Knockback = 0;
-	current_weapon_stats.Shot_Lifespan = 120;
+	current_weapon_stats.Shot_Life_Span = 120;
 	current_weapon_stats.Shot_Mouse = 0;
 	current_weapon_stats.Shot_Shield_Type = 1;
 	current_weapon_stats.Shot_Shield_Power = Shot_Power * 2;

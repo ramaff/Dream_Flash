@@ -26,11 +26,12 @@ function scr_Setup_Default_Shot_Stats(){
 		Shot_Beam: 0,
         Shot_Power: 10,
         Shot_Speed: 0,
-        Shot_Lifespan: 60,
+        Shot_Life_Span: 60,
         Shot_Homing_Type: 0,
         Shot_Homing_Speed: 0,
         Shot_Pierce: 1,
         Shot_Size: 0.5,
+		Shot_Size_Max: 0.5,
         Shot_Point_Angle: false,
 		Shot_Direction: 0,
 		Shot_Direction_Offset: 0,
@@ -143,7 +144,7 @@ function scr_Setup_Default_Shot_Stats(){
 		Shot_Aura: 0,
 		Shot_Aura_Power: 0,
 		Shot_Aura_Range: 0,
-		Shot_Aura_Sprite: 0,
+		Shot_Aura_Sprite: "spr_Aura_Strike_Aura",
 		Shot_Snake_Move: 0,
 		Shot_Angular_Velocity: 0,
 		Shot_Damage: true,
@@ -188,6 +189,7 @@ function scr_Setup_Default_Shot_Stats(){
 		Shot_Target: noone,
 		Shot_Fear_Target: noone,
 		Shot_Follow_Target: noone,
+		Shot_Gem: 0,
 	}
 	return Shot_Stats
 

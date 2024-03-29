@@ -15,7 +15,7 @@ function scr_Charged_Release() {
 			Shot_Speed += Charge_Speed;
 			Shot_Power += Charge_Power;
 			Shot_Knockback += Charge_Knockback;
-			Shot_Lifespan += Charge_Lifespan;
+			Shot_Life_Span += Charge_Lifespan;
 			Shot_Size += Charge_Size;
 			
 			if Charge_Hold = 2 {
@@ -48,7 +48,7 @@ function scr_Charged_Release() {
 			            Shot_Power: Shot_Power / 8,
 			            Shot_Speed: 1,
 			            Shot_Acceleration: 0.6,
-			            Shot_Lifespan: 60,
+			            Shot_Life_Span: 60,
 			            Shot_Homing_Type: 1,
 			            Shot_Homing_Speed: 10,
 			            Shot_Pierce: 1,

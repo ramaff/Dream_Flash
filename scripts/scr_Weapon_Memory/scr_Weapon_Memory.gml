@@ -42,8 +42,8 @@ function scr_Weapon_Memory(displayItemSprite = true) {
 		if variable_struct_exists(current_weapon_stats, "Shot_Speed") {
 			recollectionSpeed = current_weapon_stats.Shot_Speed
 		}
-		if variable_struct_exists(current_weapon_stats, "Shot_Lifespan") {
-			recollectionLifespan = current_weapon_stats.Shot_Lifespan
+		if variable_struct_exists(current_weapon_stats, "Shot_Life_Span") {
+			recollectionLifespan = current_weapon_stats.Shot_Life_Span
 		}
 		if variable_struct_exists(current_weapon_stats, "Shot_Accuracy") {
 			recollectionAccuracy = current_weapon_stats.Shot_Accuracy

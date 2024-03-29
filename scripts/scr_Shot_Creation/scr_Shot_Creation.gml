@@ -198,10 +198,10 @@ function scr_Shot_Creation() {
 		        image_xscale = shot_stats.Shot_Size;
 		        image_yscale = shot_stats.Shot_Size;
 		        shot_stats.Shot_Speed = (shot_stats.Shot_Speed + other.sshotspeedaddition) * (shot_stats.Weapon_Vomit_Min_Speed + random(shot_stats.Weapon_Vomit_Max_Speed - shot_stats.Weapon_Vomit_Min_Speed)) * other.sshotspeed / 10;
-		        shot_stats.Shot_Powermax = (shot_stats.Shot_Power + other.spoweradd) * ((10 + other.spowerfactor + other.sattackfactorbuffamount) / 10) * other.spower / 10 * scr_Class_Stat_Damage_Multiplier();
-		        shot_stats.Shot_Power = shot_stats.Shot_Powermax;
+		        shot_stats.Shot_Power_Max = (shot_stats.Shot_Power + other.spoweradd) * ((10 + other.spowerfactor + other.sattackfactorbuffamount) / 10) * other.spower / 10 * scr_Class_Stat_Damage_Multiplier();
+		        shot_stats.Shot_Power = shot_stats.Shot_Power_Max;
 		        shot_stats.Shot_Power_Level = shot_stats.Shot_Power;
-		        shotknockback = shot_stats.Shot_Knockback * other.sshotknockback / 10;
+		        shot_stats.Shot_Knock_Back = shot_stats.Shot_Knockback * other.sshotknockback / 10;
 		        shot_stats.Shot_Armour_Pierce = shot_stats.Shot_Armour_Pierce + other.sarmourpierce;
 				direction = other.actual_shot_direction;
 		        //
@@ -211,7 +211,7 @@ function scr_Shot_Creation() {
 					direction = shot_stats.Shot_Direction;
 				}
 				speed = shot_stats.Shot_Speed;
-		        shot_stats.Shot_Life_Span = shot_stats.Shot_Lifespan * (shot_stats.Weapon_Vomit_Min_Life + random(shot_stats.Weapon_Vomit_Max_Life - shot_stats.Weapon_Vomit_Min_Life)) * ((10 + other.sshotlifefactor) / 10);
+		        shot_stats.Shot_Life_Span = shot_stats.Shot_Life_Span * (shot_stats.Weapon_Vomit_Min_Life + random(shot_stats.Weapon_Vomit_Max_Life - shot_stats.Weapon_Vomit_Min_Life)) * ((10 + other.sshotlifefactor) / 10);
 				if shot_stats.Shot_Life_Span < 1 {
 					shot_stats.Shot_Life_Span = 1;	
 				}

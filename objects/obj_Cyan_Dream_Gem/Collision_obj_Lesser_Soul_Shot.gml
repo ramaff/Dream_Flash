@@ -13,7 +13,7 @@ if !hit_again and other.shot_stats.Shot_Melee = 0 {
 			shot_stats.Shot_Orbital_Type = 0;
 		}
         shotphasing = 1;
-		shotgem++;
+		shot_stats.Shot_Gem++;
         /*
         if shot_stats.Shot_Homing_Type = 0 {
             shot_stats.Shot_Homing_Type = 1;
@@ -64,7 +64,7 @@ if !hit_again and other.shot_stats.Shot_Melee = 0 {
                 Shot_Sprite: string(sprite_get_name(sprite_index)),
                 Shot_Type: "obj_Lesser_Soul_Shot",
                 Burst_Power: 0.25,
-                Shot_Lifespan: 30,
+                Shot_Life_Span: 30,
                 Burst_Size: 0.7,
                 Shot_Size: 1,
                 Shot_Pierce: shot_stats.Shot_Pierce,

@@ -24,7 +24,7 @@ function scr_Default_Shot_Stats() {
 	shot_stats.Shot_Hit_Again = 0;
 
 	shot_stats.Shot_Origin = noone;
-	shotgem = 0;
+	shot_stats.Shot_Gem = 0;
 	
 	shotaccuracy = 15;
 	shot_stats.Shot_Damage = true;
@@ -73,8 +73,8 @@ function scr_Default_Shot_Stats() {
 
 	shot_stats.Shot_Speed = 0.4 * other.sshotspeed;
 	shot_stats.Shot_Power = 1 * other.spower * ((40 + global.soulstrength) / 40);
-	shot_stats.Shot_Powermax = shot_stats.Shot_Power;
-	shotknockback = 1 * other.sshotknockback;
+	shot_stats.Shot_Power_Max = shot_stats.Shot_Power;
+	shot_stats.Shot_Knock_Back = 1 * other.sshotknockback;
 	shot_stats.Shot_Life_Span = 100;
 	shot_stats.Shot_Size = 1;
 	shot_stats.Shot_Size_Max = 1;
