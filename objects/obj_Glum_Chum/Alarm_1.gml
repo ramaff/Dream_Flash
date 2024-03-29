@@ -7,26 +7,26 @@ if corporealHit > 0 {
     repeat(scount) {
         scr_Default_Weapon_Stats();
         
-        Shot_Accuracy += 360;
-        Shot_Count += 0;
-        Shot_Spread = 360 / Shot_Count;
+        Shot_Stats.Shot_Accuracy += 360;
+        Shot_Stats.Shot_Count += 0;
+        Shot_Stats.Shot_Spread = 360 / Shot_Stats.Shot_Count;
         
-        Shot_Mouse = 0;
-        Shot_Direction = random(360);
+        Shot_Stats.Shot_Mouse = 0;
+        Shot_Stats.Shot_Direction = random(360);
         
-        Shot_Sprite = spr_Rain_Shot;
-        Shot_Type = obj_Lesser_Soul_Shot;
+        Shot_Stats.Shot_Sprite = spr_Rain_Shot;
+        Shot_Stats.Shot_Type = obj_Lesser_Soul_Shot;
         
-        Shot_Speed = 7.5;
-        Shot_Power = 10;
-        Shot_Knockback = 10;
-        Shot_Life_Span = 200;
+        Shot_Stats.Shot_Speed = 7.5;
+        Shot_Stats.Shot_Power = 10;
+        Shot_Stats.Shot_Knockback = 10;
+        Shot_Stats.Shot_Life_Span = 200;
 		
-		Shot_Size = 0.45;
+		Shot_Stats.Shot_Size = 0.45;
         
-        Shot_Looping += 1;
+        Shot_Stats.Shot_Looping += 1;
 		
-		Shot_Point_Angle = 1;
+		Shot_Stats.Shot_Point_Angle = 1;
         
         Shot_ID = instance_id_get( instance_count ) + glumcount;
     

@@ -17,17 +17,17 @@ function scr_D03(){
 		
 		repeat(global.D[3]) {
 		
-			if Shot_Extra = false {
-				Shot_Extra = [json_parse(json_stringify(current_weapon_stats))]
+			if current_weapon_stats.Shot_Extra = false {
+				current_weapon_stats.Shot_Extra = [json_parse(json_stringify(current_weapon_stats))]
 			} else {
-				array_push(Shot_Extra, json_parse(json_stringify(current_weapon_stats)))
+				array_push(current_weapon_stats.Shot_Extra, json_parse(json_stringify(current_weapon_stats)))
 			}
 	
-			var _extra_index = array_length(Shot_Extra) - 1;
+			var _extra_index = array_length(current_weapon_stats.Shot_Extra) - 1;
 			
-			Shot_Extra[_extra_index].Shot_Power = current_weapon_stats.Shot_Power * 0.2;
-			Shot_Extra[_extra_index].Shot_Size = current_weapon_stats.Shot_Size * 0.6;
-			Shot_Extra[_extra_index].Shot_Speed = current_weapon_stats.Shot_Speed * (0.6 + random(0.6));
+			current_weapon_stats.Shot_Extra[_extra_index].Shot_Power = current_weapon_stats.Shot_Power * 0.2;
+			current_weapon_stats.Shot_Extra[_extra_index].Shot_Size = current_weapon_stats.Shot_Size * 0.6;
+			current_weapon_stats.Shot_Extra[_extra_index].Shot_Speed = current_weapon_stats.Shot_Speed * (0.6 + random(0.6));
 		
 		}
 		

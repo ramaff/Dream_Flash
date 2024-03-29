@@ -4,6 +4,13 @@ function scr_Minion_Shot_Creation() {
 		if Shot_Stats.Weapon_Vomit = 1 {
 	        dir = (-(Shot_Stats.Shot_Accuracy / 2) + random(Shot_Stats.Shot_Accuracy));
 	    }
+		if !is_string(Shot_Stats.Shot_Type) {
+			Shot_Stats.Shot_Type = object_get_name(Shot_Stats.Shot_Type)
+		}
+		if !is_string(Shot_Stats.Shot_Sprite) {
+			Shot_Stats.Shot_Sprite = sprite_get_name(Shot_Stats.Shot_Sprite)
+		}
+		
 	    with instance_create(x,y,asset_get_index(Shot_Stats.Shot_Type)) {
 	        scr_Default_Shot_Stats();
 			shot_stats = json_parse(json_stringify(other.Shot_Stats));
