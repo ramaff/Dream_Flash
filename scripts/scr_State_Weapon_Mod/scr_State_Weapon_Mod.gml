@@ -8,7 +8,7 @@ function scr_State_Weapon_Mod(){
 			shottargetX = mouse_x;
 			shottargetY = mouse_y;
 		
-			shotduplicatesprite = sprite_index;
+			//shotduplicatesprite = sprite_index;
 		
 			image = 1;
 			
@@ -63,7 +63,7 @@ function scr_State_Weapon_Mod(){
 		if scr_State_Active_Check("Scrub") {
 		
 			image = 1;
-			shotduplicatesprite = sprite_index;
+			//shotduplicatesprite = sprite_index;
 			
 			var size = 1;
 			if sprite_get_height(sprite_index) > 100 {
@@ -162,7 +162,7 @@ function scr_State_Weapon_Mod(){
 			shot_stats.Shot_Speed = shot_stats.Shot_Speed * 0.75;
 			speed = shot_stats.Shot_Speed;
 			
-			shotphasing = 1;
+			shot_stats.Shot_Phasing = 1;
 			
 			shot_stats.Shot_Orbital_Type = 1;
 			shotOrbit = 75;

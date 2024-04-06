@@ -9,7 +9,7 @@ repeat(shotburstamount) {
 		shot_stats.Shot_Size = other.shot_stats.Shot_Size_Max;
 		image_xscale = shot_stats.Shot_Size;
 		image_yscale = shot_stats.Shot_Size;
-		sprite_index = other.shotduplicatesprite;
+		//sprite_index = other.shotduplicatesprite;
 		shot_stats.Shot_Form_Show = 0;
 		image_alpha = 1;
 		shot_stats.Shot_Homing_Type = 0;

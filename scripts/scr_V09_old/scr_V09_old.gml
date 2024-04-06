@@ -4,7 +4,7 @@ function scr_V09_old() {
 
 	if global.V[9] >= 1 {
 		//shot_stats.Shot_Lobbing = 1;
-		//shot_stats.Shot_Bounce_Y = 0;
+		//shot_stats.Shot_Height = 0;
 	    //shot_stats.Shot_Bounce_Speed = 10;
 	    //shot_stats.Shot_Bounce_Direction = 1;	
 		

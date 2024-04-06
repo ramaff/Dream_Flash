@@ -18,7 +18,7 @@ for (bi = 0; bi < 9; bi++) {
 		if Shot_Repetition_Type[bi] = "Stubborn" {
 			
 			Shot_Mouse = 0;
-			Shot_Count = Shot_Default_Count[bi];
+			//Shot_Count = Shot_Default_Count[bi];
 			
 			var _minion = false
 			if scr_Minion_Weapon(current_weapon_stats.Weapon_Number) {
@@ -27,7 +27,7 @@ for (bi = 0; bi < 9; bi++) {
 			
 			scr_Weapon_Output(true, _minion)
 		} else {
-			Shot_Count = Shot_Default_Count[bi];
+			//Shot_Count = Shot_Default_Count[bi];
 			
 			if Shot_Repetition[bi] >= 1 {
 				Shot_Direction = Shot_Repetition_Direction[bi];
@@ -46,7 +46,7 @@ for (bi = 0; bi < 9; bi++) {
 			}
 			if Shot_Repetition_Type[bi] = "Bullet Hell" {
 				if Shot_Repetition[bi] = 1 {
-					Shot_Default_Count[bi] = 1;
+					//Shot_Default_Count[bi] = 1;
 					Shot_Power = Shot_Power * 1.5;
 		
 					Shot_Burst_Type = 1;

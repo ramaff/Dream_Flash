@@ -19,7 +19,7 @@ function scr_Barrage_Weapon_Use(cWP) {
 	}
 	if cWP = 211 {
 		if Shot_Repetition[bi] = 1 {
-			Shot_Default_Count[bi] = 1;
+			//Shot_Default_Count[bi] = 1;
 			Shot_Power = Shot_Power * 1.5;
 		
 			Shot_Burst_Type = 1;

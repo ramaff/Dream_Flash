@@ -26,7 +26,7 @@ function scr_Default_Shot_Stats() {
 	shot_stats.Shot_Origin = noone;
 	shot_stats.Shot_Gem = 0;
 	
-	shotaccuracy = 15;
+	shot_stats.Shot_Accuracy = 15;
 	shot_stats.Shot_Damage = true;
 
 	shot_stats.Shot_Mouse_Maintain = 0;
@@ -144,7 +144,7 @@ function scr_Default_Shot_Stats() {
 	shot_stats.Shot_Min_Speed = 0;
 
 	shot_stats.Shot_Crit_Chance = 0;
-	shotcritmultiple = 1;
+	shot_stats.Shot_Crit_Multiple = 1;
 
 	shot_stats.Shot_Orbital_Type = 0;
 	shotOrbit = 0;
@@ -152,7 +152,7 @@ function scr_Default_Shot_Stats() {
 
 	shot_stats.Shot_Melee = 0;
 	shot_stats.Shot_Air_Target = 0;
-	shotphasing = 0;
+	shot_stats.Shot_Phasing = 0;
 	shot_stats.Shot_Looping = 0;
 	shot_stats.Shot_Comeback = 0;
 	shot_stats.Shot_Pierce = 1;

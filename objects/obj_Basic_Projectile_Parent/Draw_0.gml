@@ -15,7 +15,7 @@ if shot_stats.Shot_Ground = true {
 	shot_stats.Shot_Height = 0;
 	shot_stats.Shot_Fall_Speed = 0;
 	shot_stats.Shot_Gravity = 0;
-	shot_stats.Shot_Lobbing = 0;
+	shot_stats.Shot_Lobbing = false;
 }
 
 var height = shot_stats.Shot_Height;
@@ -30,20 +30,14 @@ if shot_stats.Shot_Lobbing = true {
 	shot_stats.Shot_Height -= fall_speed + wobble
 	shot_stats.Shot_Fall_Speed += shot_stats.Shot_Gravity
 	
-	y += fall_speed;
-	
-	/*if scr_Chance(15) {
-		show_debug_message("shadow_size: " + string(shadow_size) + ", " + sprite_get_name(sprite_index) + ", height: " + string(height) + ", shot_stats.Shot_Size" + string(shot_stats.Shot_Size));
-		show_debug_message("xsize: " + string(image_xscale))
-	} */
+	y += fall_speed
 	
 	if height - fall_speed < 0 {
 		shot_stats.Shot_Fall_Speed = -1 * fall_speed;	
 	}
-	//var shadow_transparency = 0.5;
 	draw_sprite_ext(spr_Bullet_Shadow,0,x,y+height,shadow_size,shadow_size,0,c_white,0.5);
 } else if shot_stats.Shot_Lobbing >= 1 {
-	draw_sprite_ext(spr_Bullet_Shadow,0,x,y+shot_stats.Shot_Bounce_Y,shot_stats.Shot_Size * 1.5 * (1.2 - (shot_stats.Shot_Bounce_Y / 200)),shot_stats.Shot_Size * 1.5 * (1.2 - (shot_stats.Shot_Bounce_Y / 200)),0,c_white,image_alpha * (0.5 - (shot_stats.Shot_Bounce_Y/150)));
+	draw_sprite_ext(spr_Bullet_Shadow,0,x,y+shot_stats.Shot_Height,shot_stats.Shot_Size * 1.5 * (1.2 - (shot_stats.Shot_Height / 200)),shot_stats.Shot_Size * 1.5 * (1.2 - (shot_stats.Shot_Height / 200)),0,c_white,image_alpha * (0.5 - (shot_stats.Shot_Height/150)));
 }
 
 if global.A[14] > 0 and shot_stats.Shot_Origin = obj_Soul_Parent {

@@ -12,7 +12,7 @@ if !hit_again and other.shot_stats.Shot_Melee = 0 {
         if shot_stats.Shot_Orbital_Type = 1 {
 			shot_stats.Shot_Orbital_Type = 0;
 		}
-        shotphasing = 1;
+        shot_stats.Shot_Phasing = 1;
 		shot_stats.Shot_Gem++;
         speed = shot_stats.Shot_Speed;
         shot_stats.Shot_Speed += 1.5;
@@ -65,9 +65,9 @@ if !hit_again and other.shot_stats.Shot_Melee = 0 {
         var oshotid = shot_id;
         if duplicate = 7 {
         with instance_create(x,y,obj_Lesser_Soul_Shot) {
-            shot_stats.Shot_Hit_Again = 1;
             //image = 1;
             scr_Duplicate_Shot_Stats();
+			shot_stats.Shot_Hit_Again = 1;
 			shot_stats.Shot_Size = other.shot_stats.Shot_Size;
 			image_xscale = shot_stats.Shot_Size;
 			image_yscale = shot_stats.Shot_Size;

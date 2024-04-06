@@ -20,7 +20,7 @@ if instance_exists(obj_Boss_Parent) {
     Shot_Stats.Shot_Life_Span = 100;
 	
 	Shot_Stats.Shot_Face_Direction = 1;
-	Shot_Stats.Shot_Lobbing = 1;
+	Shot_Stats.Shot_Lobbing = true;
 	Shot_Stats.Shot_Size = 0.5;
     
     scr_Minion_Shot_Creation();

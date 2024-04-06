@@ -111,7 +111,7 @@ function scr_Beam_Damage() {
 	    shot_stats.Shot_Armour_Pierce = Shot_Armour_Pierce + sarmourpierce;
     
 	    shot_stats.Shot_Crit_Chance = Shot_Crit_Chance + scritaddchance;
-	    shotcritmultiple = Shot_Crit_Multiple + scritadd;
+	    shot_stats.Shot_Crit_Multiple = Shot_Crit_Multiple + scritadd;
     
 	    shotimaginary = Shot_Imaginary;
 	    shotsharpandsolid = Shot_Sharp_And_Solid;

@@ -4,11 +4,11 @@
 function scr_A08(){
 
 	if global.A[8] > 0 {
-		shot_stats.Shot_Friction += (shot_stats.Shot_Speed / shot_stats.Shot_Life_Span) * global.A[8];
-		if shot_stats.Shot_Min_Speed <= 1 {
-			shot_stats.Shot_Min_Speed = shot_stats.Shot_Speed * 0.75;
+		current_weapon_stats.Shot_Friction += (current_weapon_stats.Shot_Speed / current_weapon_stats.Shot_Life_Span) * global.A[8];
+		if current_weapon_stats.Shot_Min_Speed <= 1 {
+			current_weapon_stats.Shot_Min_Speed = current_weapon_stats.Shot_Speed * 0.75;
 		}
-		shot_stats.Shot_Speed += (0.25 * shot_stats.Shot_Speed) * global.A[8];
+		current_weapon_stats.Shot_Speed += (0.25 * current_weapon_stats.Shot_Speed) * global.A[8];
 	}
 
 }

@@ -56,10 +56,10 @@ function scr_Extra_Shot_Stats() {
 		image_angle = direction;
 	}
 	
-	if shot_stats.Shot_Lobbing >= 1 {
-		shot_stats.Shot_Bounce_Y = 0;
-	    shot_stats.Shot_Bounce_Speed = 10;
-	    shot_stats.Shot_Bounce_Direction = 1;	
+	if shot_stats.Shot_Lobbing = true {
+		shot_stats.Shot_Height = 0;
+	    //shot_stats.Shot_Bounce_Speed = 10;
+	    //shot_stats.Shot_Bounce_Direction = 1;	
 	}
 
 	/*
@@ -123,7 +123,7 @@ function scr_Extra_Shot_Stats() {
 	shot_stats.Shot_Face_Direction = other.Shot_Face_Direction;
 
 	if shot_stats.Shot_Lobbing >= 1 {
-		shot_stats.Shot_Bounce_Y = 0;
+		shot_stats.Shot_Height = 0;
 	    shot_stats.Shot_Bounce_Speed = 10;
 	    shot_stats.Shot_Bounce_Direction = 1;	
 	}
@@ -173,7 +173,7 @@ function scr_Extra_Shot_Stats() {
 		
 		shotOrbit = shot_stats.Shot_Orbital_Range;
 		shot_stats.Shot_Orbit_Angle = point_direction(x,y,mouse_x,mouse_y);
-		shot_stats.Shot_Orbit_Angle += shot_stats.Shot_Current_Count * (360 / shot_stats.Shot_Count)
+		shot_stats.Shot_Orbit_Angle += other.Shot_Current_Count * (360 / shot_stats.Shot_Count)
 		shot_stats.Shot_Center_X = other.x;
 		shot_stats.Shot_Center_Y = other.y;
 		speed = 0;
@@ -186,10 +186,10 @@ function scr_Extra_Shot_Stats() {
 	shot_stats.Shot_Continue = other.Shot_Continue;
 
 	shot_stats.Shot_Crit_Chance = other.Shot_Crit_Chance + other.scritaddchance;
-	shotcritmultiple = other.Shot_Crit_Multiple + other.scritadd;
+	shot_stats.Shot_Crit_Multiple = other.Shot_Crit_Multiple + other.scritadd;
 	shot_stats.Shot_Melee = other.Shot_Melee;
 	shot_stats.Shot_Air_Target = other.Shot_Air_Target;
-	shotphasing = other.Shot_Phasing;
+	shot_stats.Shot_Phasing = other.Shot_Phasing;
 	shot_stats.Shot_Looping = other.Shot_Looping;
 	shot_stats.Shot_Comeback = other.Shot_Comeback;
 	shot_stats.Shot_Pierce = other.Shot_Pierce + other.sshotpierce;
@@ -276,7 +276,7 @@ function scr_Extra_Shot_Stats() {
 	shottargetY = other.Shot_Target_Y;
 	
 	shotrecyle = other.Shot_Recycle;
-	shotaccuracy = other.Shot_Accuracy / global.soulaccuracy;
+	shot_stats.Shot_Accuracy = other.Shot_Accuracy / global.soulaccuracy;
 	
 	shot_stats.Shot_Wander = other.Shot_Wander;
 	

@@ -27,7 +27,7 @@ for(i = 0; i < extra_shot_amount; i++) {
 	    shot_stats.Shot_Impact_Power = 0;
 	
 		var ramt = current_extra_stats.Shot_Count;
-		shotduplicatesprite = asset_get_index(current_extra_stats.Shot_Sprite);
+		//shotduplicatesprite = asset_get_index(current_extra_stats.Shot_Sprite);
 	
 	    repeat(ramt) {
 		    with instance_create(x + shotextrahitxx,y + shotextrahityy,obj_Lesser_Soul_Shot) {

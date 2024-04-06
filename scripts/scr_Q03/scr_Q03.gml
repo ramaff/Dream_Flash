@@ -12,8 +12,8 @@ function scr_Q03(_minion = false){
 		var effect_diameter = global.roomSizeX + 256;
 	
 		while (global.Q3count >= 3) and global.currentweapon < 700 and global.currentweapon > 0 {
-			Shot_XX = room_center - (effect_diameter / 2) + random(effect_diameter) - x;
-		    Shot_YY = room_center - (effect_diameter / 2) + random(effect_diameter) - y;
+			current_weapon_stats.Shot_XX = room_center - (effect_diameter / 2) + random(effect_diameter) - x;
+		    current_weapon_stats.Shot_YY = room_center - (effect_diameter / 2) + random(effect_diameter) - y;
 		
 			if !_minion {
 				scr_Shot_Creation();
@@ -24,7 +24,7 @@ function scr_Q03(_minion = false){
 		
 			global.Q3count -= 4;
 		}
-		if Shot_Beam = 2 {
+		if current_weapon_stats.Shot_Beam = 2 {
 			global.Q3count += global.Q[3] / 3;
 		} else {
 			global.Q3count += global.Q[3];

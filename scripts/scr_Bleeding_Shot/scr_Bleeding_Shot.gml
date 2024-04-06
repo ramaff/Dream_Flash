@@ -27,7 +27,7 @@ function scr_Bleeding_Shot(xxx,yyy, power) {
 	current_weapon_stats.Shot_Life_Span = 40;
 	
 	current_weapon_stats.Shot_Trail = 1;
-	current_weapon_stats.Shot_Trail_Sprite = spr_Big_Essence_Trail_Bit;
+	current_weapon_stats.Shot_Trail_Sprite = "spr_Big_Essence_Trail_Bit";
 	current_weapon_stats.Shot_Trail_Area = 15;
 	current_weapon_stats.Shot_Trail_Life = 20;
 	current_weapon_stats.Shot_Trail_Fade = 0;

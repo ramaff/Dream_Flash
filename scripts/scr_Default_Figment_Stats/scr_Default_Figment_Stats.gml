@@ -77,7 +77,7 @@ function scr_Default_Figment_Stats() {
 		Shot_Repetition_Direction[bi] = 0;
 		alarm[11] = 1;
 		Shot_Repetition_Forward_Interval[bi] = 0;
-		Shot_Default_Count[bi] = 0;
+		//Shot_Default_Count[bi] = 0;
 	}
 	bi = 0;
 	

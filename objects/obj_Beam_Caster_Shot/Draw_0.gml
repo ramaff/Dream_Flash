@@ -4,8 +4,8 @@ if shot_stats.Shot_Orbital_Type = 1 {
     image_angle = 0;
 }
 
-if shot_stats.Shot_Lobbing >= 1 {
-	draw_sprite_ext(spr_Bullet_Shadow,0,x,y+shot_stats.Shot_Bounce_Y,shot_stats.Shot_Size * 1.5 * (1.2 - (shot_stats.Shot_Bounce_Y / 200)),shot_stats.Shot_Size * 1.5 * (1.2 - (shot_stats.Shot_Bounce_Y / 200)),0,c_white,image_alpha * (0.5 - (shot_stats.Shot_Bounce_Y/150)));
+if shot_stats.Shot_Lobbing = true {
+	draw_sprite_ext(spr_Bullet_Shadow,0,x,y+shot_stats.Shot_Height,shot_stats.Shot_Size * 1.5 * (1.2 - (shot_stats.Shot_Height / 200)),shot_stats.Shot_Size * 1.5 * (1.2 - (shot_stats.Shot_Height / 200)),0,c_white,image_alpha * (0.5 - (shot_stats.Shot_Height/150)));
 }
 
 if global.A[14] > 0 and shot_stats.Shot_Origin = obj_Soul_Parent {

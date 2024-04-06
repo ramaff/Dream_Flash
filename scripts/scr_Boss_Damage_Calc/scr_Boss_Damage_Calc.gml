@@ -19,7 +19,7 @@ function scr_Boss_Damage_Calc() {
 	crit = shot_stats.Shot_Crit_Chance + irandom(99);
 
 	if crit >= 100 {
-	    shotDamageMult = shotDamageMult * shotcritmultiple;
+	    shotDamageMult = shotDamageMult * shot_stats.Shot_Crit_Multiple;
 	}
 	shotDamageBase = 0;
 	shotDamageBase += shot_stats.Shot_Power_Level;

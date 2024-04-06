@@ -23,7 +23,7 @@ function scr_XA03_Shot_Mod(){
 		shot_stats.Shot_Wave_Time = 8;
 		
 		shot_stats.Shot_Trail = 2;
-		shot_stats.Shot_Trail_Sprite = spr_Soul_Big_Bit;
+		shot_stats.Shot_Trail_Sprite = "spr_Soul_Big_Bit";
 		shot_stats.Shot_Trail_Color1 = c_red;
 		shot_stats.Shot_Trail_Color2 = c_yellow
 		shot_stats.Shot_Trail_Life = 15;

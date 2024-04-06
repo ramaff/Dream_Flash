@@ -12,7 +12,7 @@ function scr_Boss_Splash_Damage_Calc() {
 	shotDamageMult = other.shot_stats.Shot_Impact_Power / other.shot_stats.Shot_Impact_Power_Level;
 	crit = other.shot_stats.Shot_Crit_Chance + irandom(99);
 	if crit >= 100 {
-	    shotDamageMult = shotDamageMult * other.shotcritmultiple;
+	    shotDamageMult = shotDamageMult * other.shot_stats.Shot_Crit_Multiple;
 	}
 
 	shotDamageBase = 0;

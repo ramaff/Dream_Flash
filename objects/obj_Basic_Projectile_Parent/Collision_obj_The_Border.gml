@@ -19,7 +19,7 @@
 		}
         
         if shot_stats.Shot_Looping = 0 {
-        if shotphasing = 0 and shot_stats.Shot_Bounce = 0 {
+        if shot_stats.Shot_Phasing = 0 and shot_stats.Shot_Bounce = 0 {
 	        if shot_stats.Shot_Impact_Type = 1 {
 	            with (obj_Boss_Parent) {
 	                if distance_to_object(other) < other.shot_stats.Shot_Impact_Size {
@@ -40,7 +40,7 @@
 		}
 
         
-if shotphasing = 0 and shot_stats.Shot_Bounce = 0 and shot_stats.Shot_Looping = 0 and shot_stats.Shot_Chain = 0 and shot_stats.Shot_Timer > 1 {
+if shot_stats.Shot_Phasing = 0 and shot_stats.Shot_Bounce = 0 and shot_stats.Shot_Looping = 0 and shot_stats.Shot_Chain = 0 and shot_stats.Shot_Timer > 1 {
     instance_destroy();
 }
 
@@ -66,10 +66,11 @@ if shot_stats.Shot_Bounce >= 1 and shot_stats.Shot_Air_Target = 0 and shot_stats
     }
 	
 	if shot_stats.Shot_Speed != 0 and speed != 0 {
+		//bullet_hits = {}
 		//shot_boss_id += instance_id_get( instance_count ) + global.instanceidincrementer;
-		shot_boss_id = shot_boss_id + global.instanceidincrementer;
+		//shot_boss_id = shot_boss_id + global.instanceidincrementer;
 	
-		global.instanceidincrementer++;
+		//global.instanceidincrementer++;
 	}
 	
 	if shot_stats.Shot_Looping = 0 {

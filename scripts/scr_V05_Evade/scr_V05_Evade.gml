@@ -22,8 +22,6 @@ function scr_V05_Evade(_og_x = x, _og_y = y){
 		break
 	}
 	
-	Print_DF("new x: " + string(_new_xx) + ", new y: " + string(_new_yy))
-	
 	return [_new_xx, _new_yy]
 
 }

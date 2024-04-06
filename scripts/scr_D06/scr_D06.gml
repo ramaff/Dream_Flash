@@ -5,11 +5,11 @@
 
 function scr_D06(){
 	if global.D[6] > 0 {
-		Shot_Speed_Power_Add += 0.02 * Shot_Power * global.D[6];
-		Shot_Acceleration += 0.05 + (Shot_Speed / 60);
-		Shot_Life_Span = Shot_Life_Span * 0.7;
-		if Shot_Stats.Shot_After_Images < 1 {
-			Shot_Stats.Shot_After_Images = 1;
+		current_weapon_stats.Shot_Speed_Power_Add += 0.02 * current_weapon_stats.Shot_Power * global.D[6];
+		current_weapon_stats.Shot_Acceleration += 0.05 + (current_weapon_stats.Shot_Speed / 60);
+		current_weapon_stats.Shot_Life_Span = current_weapon_stats.Shot_Life_Span * 0.7;
+		if current_weapon_stats.Shot_After_Images < 1 {
+			current_weapon_stats.Shot_After_Images = 1;
 		}
 	}
 }

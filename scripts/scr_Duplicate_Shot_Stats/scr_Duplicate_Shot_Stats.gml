@@ -16,13 +16,13 @@ function scr_Duplicate_Shot_Stats() {
 	
 	shot_stats = scr_Setup_Shot_Stats_Asset(shot_stats);
 
-	/*
 	target = other.target;
 	otarget = other.otarget;
+	/*
 	shot_stats.Shot_Gem = other.shot_stats.Shot_Gem;
 	otarget = noone;
 	
-	shotaccuracy = other.shotaccuracy
+	shot_stats.Shot_Accuracy = other.shot_stats.Shot_Accuracy
 	shot_stats.Shot_Damage = other.shot_stats.Shot_Damage
 
 	shot_stats.Shot_Angle = other.shot_stats.Shot_Angle;
@@ -129,12 +129,12 @@ function scr_Duplicate_Shot_Stats() {
 
 	shot_stats.Shot_Lobbing = other.shot_stats.Shot_Lobbing;
 	shot_stats.Shot_Face_Direction = other.shot_stats.Shot_Face_Direction;
-	shot_stats.Shot_Bounce_Y = 0;
+	shot_stats.Shot_Height = 0;
 	shot_stats.Shot_Bounce_Speed = 10;
 	shot_stats.Shot_Bounce_Direction = 1;
 
 	if shot_stats.Shot_Lobbing = 1 {
-		shot_stats.Shot_Bounce_Y = 0;
+		shot_stats.Shot_Height = 0;
 	    shot_stats.Shot_Bounce_Speed = 10;
 	    shot_stats.Shot_Bounce_Direction = 1;	
 	}
@@ -186,10 +186,10 @@ function scr_Duplicate_Shot_Stats() {
 	shot_stats.Shot_Continue = other.shot_stats.Shot_Continue;
 
 	shot_stats.Shot_Crit_Chance = other.shot_stats.Shot_Crit_Chance;
-	shotcritmultiple = other.shotcritmultiple;
+	shot_stats.Shot_Crit_Multiple = other.shot_stats.Shot_Crit_Multiple;
 	shot_stats.Shot_Melee = other.shot_stats.Shot_Melee;
 	shot_stats.Shot_Air_Target = other.shot_stats.Shot_Air_Target;
-	shotphasing = other.shotphasing;
+	shot_stats.Shot_Phasing = other.shot_stats.Shot_Phasing;
 	shot_stats.Shot_Looping = other.shot_stats.Shot_Looping;
 	shot_stats.Shot_Comeback = other.shot_stats.Shot_Comeback;
 	shot_stats.Shot_Pierce = other.shot_stats.Shot_Pierce;

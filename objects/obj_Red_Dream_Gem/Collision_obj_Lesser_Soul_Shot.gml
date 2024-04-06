@@ -10,7 +10,7 @@ if !hit_again and other.shot_stats.Shot_Melee = 0 {
     with(other) {
         x = other.x;
         y = other.y;
-        shotphasing = 1;
+        shot_stats.Shot_Phasing = 1;
         if shot_stats.Shot_Orbital_Type = 1 {
 			shot_stats.Shot_Orbital_Type = 0;
 		}

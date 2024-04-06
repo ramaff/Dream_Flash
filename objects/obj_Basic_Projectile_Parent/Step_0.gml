@@ -20,7 +20,7 @@ if shot_stats.Shot_Ground = true {
 	shot_stats.Shot_Height = 0;
 	shot_stats.Shot_Fall_Speed = 0;
 	shot_stats.Shot_Gravity = 0;
-	shot_stats.Shot_Lobbing = 0;
+	shot_stats.Shot_Lobbing = false;
 }
 
 if shot_stats.Shot_Suck > 0 {
@@ -44,9 +44,9 @@ if shot_stats.Shot_Face_Direction = 1 {
 	scr_Shot_Two_Face_Direction();	
 }
 
-if shot_stats.Shot_Lobbing >= 1 {
-	scr_Shot_Lobbing();
-}
+//if shot_stats.Shot_Lobbing = true {
+//	scr_Shot_Lobbing();
+//}
 
 shot_stats.Shot_Timer--;
 
@@ -253,8 +253,15 @@ if shot_stats.Shot_Orbital_Type > 0 {
 	
 		shotOrbit = 75;
 
-	    x = lengthdir_x(shotOrbit, shot_stats.Shot_Orbit_Angle) + shot_stats.Shot_Center_X;
-	    y = lengthdir_y(shotOrbit, shot_stats.Shot_Orbit_Angle) + shot_stats.Shot_Center_Y;
+	    var _xx = lengthdir_x(shotOrbit, shot_stats.Shot_Orbit_Angle) + shot_stats.Shot_Center_X;
+	    var _yy = lengthdir_y(shotOrbit, shot_stats.Shot_Orbit_Angle) + shot_stats.Shot_Center_Y;
+		
+		direction = point_direction(x, y, _xx, _yy)
+		var _dist = point_distance(x, y, _xx, _yy)
+
+		speed = min(_dist / 5, shot_stats.Shot_Speed * 4)
+		//x = lerp(x, _xx, 0.5);
+		//y = lerp(y, _yy, 0.5);
     
 	    image_angle = shot_stats.Shot_Orbit_Angle + 90;
 	} else {

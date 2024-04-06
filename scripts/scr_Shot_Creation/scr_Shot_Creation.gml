@@ -31,9 +31,9 @@ function scr_Shot_Creation() {
 	
 	var _cw = current_weapon_stats;
 	
-	if Shot_Repetition[bi] >= 1 {
-		_cw.Shot_Count = _cw.Shot_Default_Count[bi];
-	}
+	//if Shot_Repetition[bi] >= 1 {
+		//_cw.Shot_Count = _cw.Shot_Default_Count[bi];
+	//}
 
 	repeat(_cw.Shot_Count) {
 		sadd = global.soulshotamountaddchance + irandom(99);

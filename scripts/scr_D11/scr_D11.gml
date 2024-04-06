@@ -2,11 +2,11 @@ function scr_D11() {
 	// Soul Shot Creation
 	
 	if global.D[11] > 0 {
-		Shot_Friction += (3 / 30) * global.D[11];
-		if Shot_Min_Speed = 1 {
-			Shot_Min_Speed = Shot_Speed;
+		current_weapon_stats.Shot_Friction += (3 / 30) * global.D[11];
+		if current_weapon_stats.Shot_Min_Speed = 1 {
+			current_weapon_stats.Shot_Min_Speed = current_weapon_stats.Shot_Speed;
 		}
-		Shot_Speed += 3 * global.D[11];
+		current_weapon_stats.Shot_Speed += 3 * global.D[11];
 	}
 
 	/*

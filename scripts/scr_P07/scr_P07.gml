@@ -18,7 +18,7 @@ function scr_P07() {
 		}
 		
 		shotTrail = 1;
-		shot_stats.Shot_Trail_Sprite = spr_Big_Essence_Trail_Bit;
+		shot_stats.Shot_Trail_Sprite = "spr_Big_Essence_Trail_Bit";
 		shot_stats.Shot_Trail_Area = 15;
 		shot_stats.Shot_Trail_Life = 20;
 		shot_stats.Shot_Trail_Fade = 0;

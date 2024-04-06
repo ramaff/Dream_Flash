@@ -12,11 +12,11 @@ function scr_Charged_Release() {
 				scr_Ascending_Soul_Essence_Beam(weaponcharge);
 			}
 			
-			Shot_Speed += Charge_Speed;
-			Shot_Power += Charge_Power;
-			Shot_Knockback += Charge_Knockback;
-			Shot_Life_Span += Charge_Lifespan;
-			Shot_Size += Charge_Size;
+			current_weapon_stats.Shot_Speed += Charge_Speed;
+			current_weapon_stats.Shot_Power += Charge_Power;
+			current_weapon_stats.Shot_Knockback += Charge_Knockback;
+			current_weapon_stats.Shot_Life_Span += Charge_Lifespan;
+			current_weapon_stats.Shot_Size += Charge_Size;
 			
 			if Charge_Hold = 2 {
 				scr_Weapon_Use_List(weaponcharge)
@@ -27,20 +27,20 @@ function scr_Charged_Release() {
 			if weaponcharge = 56 {
 	        }
 	        if weaponcharge = 110 {
-	           Shot_Crit_Chance = (Shot_Power - 4) / 4;
+	           current_weapon_stats.Shot_Crit_Chance = (current_weapon_stats.Shot_Power - 4) / 4;
 	        }
 	        if weaponcharge = 111 {
 	        }
 			if weaponcharge = 153 {
-				Shot_Shield_Power += Shot_Power / 10;
+				current_weapon_stats.Shot_Shield_Power += current_weapon_stats.Shot_Power / 10;
 	        }
 			if weaponcharge = 212 {
-				if Shot_Power > 80 {
-					Shot_Screen_Shake = 7;	
+				if current_weapon_stats.Shot_Power > 80 {
+					current_weapon_stats.Shot_Screen_Shake = 7;	
 				}
 	        }
 	        if weaponcharge = 312 {
-				if Shot_Power > 50 {
+				if current_weapon_stats.Shot_Power > 50 {
 			        Shot_Stats.Shot_Extra_Stats[0] = {
 			            Shot_Count: 1,
 			            Shot_Extra_Hit_Frequency: 15,
@@ -57,23 +57,23 @@ function scr_Charged_Release() {
 			        
 				}
 		
-				Weapon_Split_Visible = 1;
+				current_weapon_stats.Weapon_Split_Visible = 1;
 	        }
 	        if weaponcharge = 405 {
 	            //scr_Power_Gun_Use();
-				if Shot_Power > 100 {
-					Shot_Screen_Shake = 7;	
+				if current_weapon_stats.Shot_Power > 100 {
+					current_weapon_stats.Shot_Screen_Shake = 7;	
 				}
 	        }
 	        if weaponcharge = 411 {
 	            //scr_Forcefield_Charger_Use();
-				if Shot_Power > 100 {
-					Shot_Screen_Shake = 7;	
+				if current_weapon_stats.Shot_Power > 100 {
+					current_weapon_stats.Shot_Screen_Shake = 7;	
 				}
 	        }
 	        if weaponcharge = 412 {
 	            //scr_Energy_Bomb_Cannon_Use();
-				Shot_Burst_Power = Shot_Power / 10;
+				current_weapon_stats.Shot_Burst_Power = current_weapon_stats.Shot_Power / 10;
 	        }
 			
 			if Charge_Hold = 2 {

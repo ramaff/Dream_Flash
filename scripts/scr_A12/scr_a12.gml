@@ -14,7 +14,7 @@ function scr_A12() {
 		*/
 		scr_Disk_Effect(10, 0.75, c_red);
 		
-		var dmg = ((1 + global.A[12])/2) * Shot_Power / 4;
+		var dmg = ((1 + global.A[12])/2) * current_weapon_stats.Shot_Power / 4;
 	    with(obj_Boss_Parent) {
 	        if distance_to_object(other) <= (150 + 10 * global.A[12]) {
 	            bosshealth -= dmg;
