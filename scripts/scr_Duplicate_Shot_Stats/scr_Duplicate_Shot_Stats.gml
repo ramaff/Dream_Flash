@@ -1,6 +1,9 @@
 function scr_Duplicate_Shot_Stats() {
 	
+	var _base_stats = scr_Setup_Default_Shot_Stats()
 	shot_stats = json_parse(json_stringify(other.shot_stats));
+	
+	shot_stats = scr_Struct_Merge(_base_stats, shot_stats, false)
 	
 	if shot_stats.Shot_Hit_Again = 0 {
 	    shot_id = other.shot_id;
@@ -14,6 +17,10 @@ function scr_Duplicate_Shot_Stats() {
 	
 	alarm[1] = 1;
 	
+	if shot_stats.Shot_Frames > 0 {
+		shot_stats.Shot_Frame = irandom(shot_stats.Shot_Frames)	
+	}
+	
 	//Print_DF(shot_stats)
 	
 	shot_stats = scr_Setup_Shot_Stats_Asset(shot_stats);
@@ -22,6 +29,11 @@ function scr_Duplicate_Shot_Stats() {
 	otarget = other.otarget;
 	
 	shot_stats.Shot_Init_Speed = shot_stats.Shot_Speed;
+
+	image_angle = shot_stats.Shot_Angle;
+	image_index = shot_stats.Shot_Frame;
+	image_speed = shot_stats.Shot_Image_Speed;
+	image_alpha = shot_stats.Shot_Alpha;
 
 	/*
 	shot_stats.Shot_Gem = other.shot_stats.Shot_Gem;
@@ -186,7 +198,7 @@ function scr_Duplicate_Shot_Stats() {
 	shotenergy = other.shotenergy;
 
 	shot_stats.Shot_Orbital_Type = other.shot_stats.Shot_Orbital_Type;
-	shotOrbit = other.shotOrbit;
+	shot_stats.Shot_Orbital_Range = other.shot_stats.Shot_Orbital_Range;
 
 	shot_stats.Shot_Continue = other.shot_stats.Shot_Continue;
 
@@ -281,7 +293,7 @@ function scr_Duplicate_Shot_Stats() {
 	shot_stats.Shot_Snake_Move = 0;
 	
 	if shot_stats.Shot_Orbital_Type > 0 {
-		shotOrbit = other.shotOrbit;
+		shot_stats.Shot_Orbital_Range = other.shot_stats.Shot_Orbital_Range;
 		shot_stats.Shot_Orbit_Angle = other.shot_stats.Shot_Orbit_Angle;
 		shot_stats.Shot_Center_X = other.shot_stats.Shot_Center_X;
 		shot_stats.Shot_Center_Y = other.shot_stats.Shot_Center_Y;

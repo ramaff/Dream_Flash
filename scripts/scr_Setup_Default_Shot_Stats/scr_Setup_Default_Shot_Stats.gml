@@ -38,7 +38,7 @@ function scr_Setup_Default_Shot_Stats(){
 		Shot_Direction_Offset: 0,
 		Shot_XX: 0,
 		Shot_YY: 0,
-		Shot_Extra_Hit_Frequency: 0,
+		Shot_Extra_Hit_Frequency: 30,
 		Shot_Acceleration: 0,
 		Shot_Fade: 0,
 		Shot_Shrink: 0,

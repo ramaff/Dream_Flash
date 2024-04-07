@@ -17,7 +17,7 @@ function scr_Damage_Indicator(primaryElement, damageInd, baseSize, additive = 0)
 			additiveIndication = additive
 	        textSize = baseSize;
 	        direction = 90;
-	        speed = 2 + sqrt(damageIndication / 10) + random(1);
+	        speed = 2 + sqrt(max(0, damageIndication / 10)) + random(1);
 			friction = ((0.9 + speed) / 150);
 			alarm[0] = 30 + irandom(6) + (textSize * 5);
 	}

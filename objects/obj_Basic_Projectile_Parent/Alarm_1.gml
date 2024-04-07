@@ -13,9 +13,7 @@ for(i = 0; i < extra_shots_amount; i++) {
 	if (shot_stats.Shot_Timer mod extra_stats[i].Shot_Extra_Hit_Frequency = 0) {
 	
 		var current_extra_stats = extra_stats[i]
-		//show_debug_message("current_extra_stats: " + string(current_extra_stats))
 	    dir = 0;
-	    //image = 1;
 	    shot_stats.Shot_Hit_Again = 1;
 		if variable_struct_exists(current_extra_stats, "Burst_Power") {
 			shotburstpower = shot_stats.Shot_Power * current_extra_stats.Burst_Power;
@@ -26,10 +24,19 @@ for(i = 0; i < extra_shots_amount; i++) {
 	    shot_stats.Shot_Impact_Power = 0;
 	
 		var ramt = current_extra_stats.Shot_Count;
-		//shotduplicatesprite = asset_get_index(current_extra_stats.Shot_Sprite);
+		
+		var _xx = 0;
+		var _yy = 0;
+		
+		if variable_struct_exists(current_extra_stats, "Shot_XX") {
+			_xx = current_extra_stats.Shot_XX
+		}
+		if variable_struct_exists(current_extra_stats, "Shot_YY") {
+			_yy = current_extra_stats.Shot_YY
+		}
 	
 	    repeat(ramt) {
-		    with instance_create(x + extra_stats[i].Shot_XX,y + extra_stats[i].Shot_YY,obj_Lesser_Soul_Shot) {
+		    with instance_create(x + _xx,y + _yy,obj_Lesser_Soul_Shot) {
 		        scr_Duplicate_Shot_Stats();
 				
 				//shot_stats = scr_Setup_Default_Shot_Stats();
@@ -78,7 +85,7 @@ for(i = 0; i < extra_shots_amount; i++) {
 				}
 		
 				shot_stats.Shot_Orbital_Type = 0;
-				shotOrbit = 0;
+				shot_stats.Shot_Orbit_Distance = 0;
 				shot_stats.Shot_Size_Max = shot_stats.Shot_Size;
 				shot_stats.Shot_Size_Relation = 1;
 				

@@ -160,7 +160,7 @@ function scr_Extra_Shot_Stats() {
 	shot_stats.Shot_Min_Speed = other.Shot_Min_Speed;
 
 	shot_stats.Shot_Orbital_Type = other.Shot_Orbital_Type;
-	shotOrbit = other.Shot_Orbital_Range;
+	shot_stats.Shot_Orbital_Range = other.Shot_Orbital_Range;
 	
 	*/
 
@@ -171,7 +171,7 @@ function scr_Extra_Shot_Stats() {
 	    target = other;
 		otarget = other.id;
 		
-		shotOrbit = shot_stats.Shot_Orbital_Range;
+		shot_stats.Shot_Orbital_Range = shot_stats.Shot_Orbital_Range;
 		shot_stats.Shot_Orbit_Angle = point_direction(x,y,mouse_x,mouse_y);
 		shot_stats.Shot_Orbit_Angle += other.Shot_Current_Count * (360 / shot_stats.Shot_Count)
 		shot_stats.Shot_Center_X = other.x;

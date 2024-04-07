@@ -13,7 +13,7 @@ shot_stats.Shot_Soul_Maintain = 0;
 
 shot_stats.Shot_Angle = dir - 90;
 
-if shotextrahitssprite[4] = spr_Safety_Scissors_Shot {
+if shot_stats.Shot_Extra_Stats[0].Shot_Sprite = "spr_Safety_Scissors_Shot" {
 	shot_stats.Shot_Angle = dir;	
 }
 

@@ -119,78 +119,73 @@ function scr_State_Weapon_Mod(){
 		}
 		if scr_State_Active_Check("Casting") and other.current_weapon_stats.Shot_Beam = 0 {
 			
-			//Shot_Extra_Hits = false
-			shot_stats.Shot_Size += 0.2;
-			shot_stats.Shot_Size_Max += 0.2;
+
+			shot_stats.Shot_Size = shot_stats.Shot_Size * 1.25;
+			shot_stats.Shot_Size_Max = shot_stats.Shot_Size;
+			shot_stats.Shot_Power = shot_stats.Shot_Power * 1.4;
+			shot_stats.Shot_Power_Max = shot_stats.Shot_Power;
+			shot_stats.Shot_Speed = shot_stats.Shot_Speed * 0.8;
+			
 			image_xscale = shot_stats.Shot_Size;
 			image_yscale = shot_stats.Shot_Size;
 			
-			/*shot_stats.Shot_Homing_Type = 3;
-			shot_stats.Shot_Homing_Speed = 3;
-			shot_stats.Shot_Homing_Range = 500; */
-			
-			shot_stats.Shot_Extra_Stats = [other.Shot_Stats];
+			speed = shot_stats.Shot_Speed;
+
+			if shot_stats.Weapon_Melee > 0 {
+				shot_stats.Shot_Extra_Stats = [scr_Dupe_Struct(shot_stats)];
+			}
 			
 			shot_stats.Shot_Extra_Stats[0].Shot_Count = 1;
-			//shot_stats.Shot_Extra_Stats[0].Shot_Sprite = string(sprite_get_name(sprite_index));
+
 			shot_stats.Shot_Extra_Stats[0].Shot_Extra_Hit_Frequency = 15 + (shot_stats.Shot_Life_Span / 10);
 			shot_stats.Shot_Extra_Stats[0].Shot_Power = shot_stats.Shot_Power * global.soulstateformboost / 2.5;
 			shot_stats.Shot_Extra_Stats[0].Shot_Speed = shot_stats.Shot_Speed * 1.5;
-			//shot_stats.Shot_Extra_Stats[0].Shot_Life_Span = shot_stats.Shot_Life_Span / 2;
+
 			shot_stats.Shot_Extra_Stats[0].Shot_Pierce = shot_stats.Shot_Pierce;
 			shot_stats.Shot_Extra_Stats[0].Shot_Size = (0.05 + shot_stats.Shot_Size * 0.5);
 			shot_stats.Shot_Extra_Stats[0].Shot_Mouse = true;
 			shot_stats.Shot_Extra_Stats[0].Shot_Homing_Type = 0;
-			
-			//shot_stats.Shot_Extra_Stats[0].Shot_Mouse = true;
-			
-			if shot_stats.Shot_Type = obj_Melee_Caster_Shot {
-				shot_stats.Shot_Extra_Stats[0].Shot_Type = obj_Lesser_Soul_Shot;
-				shot_stats.Shot_Extra_Stats[0].Shot_Life_Span = 7;
-				shot_stats.Shot_Extra_Stats[0].Shot_Sprite = string(sprite_get_name(other.Shot_Duplicate_Sprite))
-				shot_stats.Shot_Extra_Stats[0].Shot_Size = other.Shot_Size
-				shot_stats.Shot_Speed = 3;
+
+			if shot_stats.Weapon_Melee > 0 {
+		
+				//shot_stats.Shot_Type = "obj_Melee_Caster_Shot";
+				//shot_stats.Shot_Life_Span = 180;
+				//shot_stats.Shot_Size = shot_stats.Shot_Size / 2;
+				//shot_stats.Shot_Extra_Stats[0].Shot_Type = "obj_Lesser_Soul_Shot";
+				//shot_stats.Shot_Extra_Stats[0].Shot_Life_Span = 7;
+				//shot_stats.Shot_Sprite = "spr_Casting_Sword_Orbital";
+				//shot_stats.Shot_Point_Angle = 0;
+				//shot_stats.Shot_Speed = 3;
+		
+				shot_stats.Shot_Extra_Stats[0].Shot_Off_State = 1;
 			}
 			
-			
-			shotextrahitshrink[4] = 0;
-			shotextrahitfade[4] = 0;
-			
-			//Print_DF("init init: " + string(shot_stats.Shot_Extra_Stats))
+			//shotextrahitshrink[4] = 0;
+			//shotextrahitfade[4] = 0;
 		
 			image = 1;
-		
-			//shot_stats.Shot_Speed = shot_stats.Shot_Speed * 1.5;
+
 			shot_stats.Shot_Life_Span = shot_stats.Shot_Life_Span * 2;
 			alarm[0] = shot_stats.Shot_Life_Span;
 		    shot_stats.Shot_Timer = shot_stats.Shot_Life_Span;
-			//speed = shot_stats.Shot_Speed;
-			
-			shot_stats.Shot_Speed = shot_stats.Shot_Speed * 0.75;
-			speed = shot_stats.Shot_Speed;
 			
 			shot_stats.Shot_Phasing = 1;
 			
 			shot_stats.Shot_Orbital_Type = 1;
-			shotOrbit = 75;
+			shot_stats.Shot_Orbital_Range = 75;
 	        shot_stats.Shot_Orbit_Angle = point_direction(x,y,mouse_x,mouse_y);
-	        //shot_stats.Shot_Orbit_Angle += other.Shot_Current_Count * (360 / other.Shot_Count)
+
 	        shot_stats.Shot_Center_X = other.x;
 	        shot_stats.Shot_Center_Y = other.y;
 			speed = 0;
-			
-			image_xscale = shot_stats.Shot_Size;
-			image_yscale = shot_stats.Shot_Size;
-			
-			
-			if shot_stats.Weapon_Melee > 0 {
+
+			/*if shot_stats.Weapon_Melee > 0 {
 		
 				shotextrahitlifespan[4] = 10;
 				shotextrahitsize[4] = other.Shot_Size * 2;
 				shotextrahitssprite[4] = other.Shot_Duplicate_Sprite;
-		
-				//Shot_Off_State = 1;
-			}
+
+			} */
 				
 			target = other;
 			otarget = other.id;

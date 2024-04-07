@@ -117,6 +117,7 @@
     {"name":"spr_Essence_Debt_Container","order":1,"path":"sprites/spr_Essence_Debt_Container/spr_Essence_Debt_Container.yy",},
     {"name":"scr_P05","order":1,"path":"scripts/scr_P05/scr_P05.yy",},
     {"name":"obj_Tar_Ball_Bullet","order":5,"path":"objects/obj_Tar_Ball_Bullet/obj_Tar_Ball_Bullet.yy",},
+    {"name":"scr_Dupe_Struct","order":1,"path":"scripts/scr_Dupe_Struct/scr_Dupe_Struct.yy",},
     {"name":"obj_Marble_Bullet","order":4,"path":"objects/obj_Marble_Bullet/obj_Marble_Bullet.yy",},
     {"name":"scr_Ascending_Soul_Essence_Beam","order":20,"path":"scripts/scr_Ascending_Soul_Essence_Beam/scr_Ascending_Soul_Essence_Beam.yy",},
     {"name":"obj_Lob_Home_Bullet","order":11,"path":"objects/obj_Lob_Home_Bullet/obj_Lob_Home_Bullet.yy",},

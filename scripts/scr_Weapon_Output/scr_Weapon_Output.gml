@@ -18,6 +18,8 @@ function scr_Weapon_Output(_spawn_projectile = spawnProjectile, _minion = minion
 			for(i = 0; i < array_length(_cw_stats.Shot_Extra); i++) {
 			
 				//current_weapon_stats = Shot_Extra[i]
+				
+				_cw_stats.Shot_Extra[i] = scr_Struct_Merge(_cw_stats, _cw_stats.Shot_Extra[i], false)
 			
 				current_weapon_stats = scr_Setup_Weapon_Stats(_cw_stats.Shot_Extra[i])
 				scr_Hard_Coded_Weapon_Stats(current_weapon_stats.Weapon_Number);

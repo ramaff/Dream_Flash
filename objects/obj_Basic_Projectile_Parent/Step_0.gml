@@ -243,25 +243,21 @@ if shot_stats.Shot_Orbital_Type > 0 {
 	    shot_stats.Shot_Center_X = otarget.x;
 	    shot_stats.Shot_Center_Y = otarget.y;
     
-	    shot_stats.Shot_Orbit_Angle += shot_stats.Shot_Speed;
+	    shot_stats.Shot_Orbit_Angle += 1 + shot_stats.Shot_Speed;
     
 	    image_angle = shot_stats.Shot_Orbit_Angle + 90;
     
 	    if (shot_stats.Shot_Orbit_Angle >= 360) {
 	        shot_stats.Shot_Orbit_Angle -= 360;
 	    }
-	
-		shotOrbit = 75;
 
-	    var _xx = lengthdir_x(shotOrbit, shot_stats.Shot_Orbit_Angle) + shot_stats.Shot_Center_X;
-	    var _yy = lengthdir_y(shotOrbit, shot_stats.Shot_Orbit_Angle) + shot_stats.Shot_Center_Y;
+	    var _xx = lengthdir_x(shot_stats.Shot_Orbital_Range, shot_stats.Shot_Orbit_Angle) + shot_stats.Shot_Center_X;
+	    var _yy = lengthdir_y(shot_stats.Shot_Orbital_Range, shot_stats.Shot_Orbit_Angle) + shot_stats.Shot_Center_Y;
 		
 		direction = point_direction(x, y, _xx, _yy)
 		var _dist = point_distance(x, y, _xx, _yy)
 
-		speed = min(_dist / 5, shot_stats.Shot_Speed * 4)
-		//x = lerp(x, _xx, 0.5);
-		//y = lerp(y, _yy, 0.5);
+		speed = min(_dist / 5, 4 + shot_stats.Shot_Speed * 4)
     
 	    image_angle = shot_stats.Shot_Orbit_Angle + 90;
 	} else {
