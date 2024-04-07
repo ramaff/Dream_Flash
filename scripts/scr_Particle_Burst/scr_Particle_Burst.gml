@@ -36,7 +36,7 @@ function scr_Particle_Burst(particletype = obj_Weapon_Trail, particlesprite = sp
 				
 				depth = other.depth + 5;
 		
-				image_blend = merge_colour(particlecolor1, particlecolor2, random(1));
+				image_blend = scr_Mix_Two_Color_Arrays(particlecolor1, particlecolor2)
 
 				size = partSize;
 				image_xscale = size;

@@ -12,12 +12,17 @@ function scr_Duplicate_Shot_Stats() {
 		bullet_hits = {};
 	}
 	
+	alarm[1] = 1;
+	
 	//Print_DF(shot_stats)
 	
 	shot_stats = scr_Setup_Shot_Stats_Asset(shot_stats);
 
 	target = other.target;
 	otarget = other.otarget;
+	
+	shot_stats.Shot_Init_Speed = shot_stats.Shot_Speed;
+
 	/*
 	shot_stats.Shot_Gem = other.shot_stats.Shot_Gem;
 	otarget = noone;
@@ -163,8 +168,8 @@ function scr_Duplicate_Shot_Stats() {
 		shotextrahitshrink[i] = other.shotextrahitshrink[i];
 		shotextrahitfade[i] = other.shotextrahitfade[i];
 	}
-	shotextrahitxx = other.shotextrahitxx;
-	shotextrahityy = other.shotextrahityy;
+	shot_stats.Shot_Extra_Hit_XX = other.shot_stats.Shot_Extra_Hit_XX;
+	shot_stats.Shot_Extra_Hit_YY = other.shot_stats.Shot_Extra_Hit_YY;
 	
 	shot_stats.Shot_Shrink = other.shot_stats.Shot_Shrink;
 	shot_stats.Shot_Fade = other.shot_stats.Shot_Fade;
@@ -316,7 +321,6 @@ function scr_Duplicate_Shot_Stats() {
 	alarm[2] = 1;
 	alarm[3] = 15;
 
-	//scr_Shot_Particle_Setup();
 	
 	shotA07 = other.shotA07;
 	//shot_stats.Shot_Follow_Target = other.shot_stats.Shot_Follow_Target;

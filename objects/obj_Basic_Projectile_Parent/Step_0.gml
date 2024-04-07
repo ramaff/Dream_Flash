@@ -320,7 +320,7 @@ if shot_stats.Shot_Homing_Type = 2 {
 	        var dis = distance_to_object(other);
 		    var hit_again = variable_struct_exists(projectile_hits, id)
 			if !hit_again and dis < other.shot_stats.Shot_Homing_Range {
-				other._target = id;
+				_target = id;
 			}
 	    }
 	}
@@ -331,6 +331,27 @@ if shot_stats.Shot_Homing_Type = 2 {
 		} else {
 			move_towards_point(_target.x,_target.y,dist);
 		}
+    }
+
+}
+
+if shot_stats.Shot_Homing_Type = 3 {
+    var _target = noone
+	if instance_exists(obj_Boss_Parent) {
+	    with obj_Boss_Parent {
+	        var dis = distance_to_object(other);
+		    var hit_again = variable_struct_exists(projectile_hits, id)
+			if !hit_again and dis < other.shot_stats.Shot_Homing_Range {
+				_target = id;
+			}
+	    }
+	}
+    if _target != noone {
+		direction = point_direction(x, y, _target.x,_target.y);
+		speed = min(speed, shot_stats.Shot_Speed / 2)
+		
+		x += lengthdir_x(speed * 2, direction + 90);
+		y += lengthdir_y(speed * 2, direction + 90);
     }
 
 }

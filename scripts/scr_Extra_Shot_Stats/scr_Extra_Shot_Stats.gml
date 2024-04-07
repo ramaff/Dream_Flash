@@ -152,8 +152,8 @@ function scr_Extra_Shot_Stats() {
 		shotextrahitshrink[i] = other.Shot_Extra_Hit_Shrink[i];
 		shotextrahitfade[i] = other.Shot_Extra_Hit_Fade[i];
 	}
-	shotextrahitxx = other.Shot_Extra_Hit_XX;
-	shotextrahityy = other.Shot_Extra_Hit_YY;
+	shot_stats.Shot_Extra_Hit_XX = other.Shot_Extra_Hit_XX;
+	shot_stats.Shot_Extra_Hit_YY = other.Shot_Extra_Hit_YY;
 
 	shot_stats.Shot_Acceleration = other.Shot_Acceleration;
 	shot_stats.Shot_Friction = other.Shot_Friction;
@@ -262,8 +262,6 @@ function scr_Extra_Shot_Stats() {
 	shot_stats.Shot_Healing = other.Shot_Healing;
 	shot_stats.Shot_Life_Drain = other.Shot_Life_Drain;
 	shot_stats.Shot_Essence_Drain = other.Shot_Essence_Drain;
-
-	shot_stats.Shot_Init_Speed = shot_stats.Shot_Speed;
 	
 	shot_stats.Shot_Speed_Power_Add = other.Shot_Speed_Power_Add;
 	shot_stats.Shot_Bullet_Redirect = other.Shot_Bullet_Redirect;
@@ -289,12 +287,6 @@ function scr_Extra_Shot_Stats() {
 	
 	*/
 	shot_stats.Shot_Init_Speed = shot_stats.Shot_Speed;
-	
-	var _crray = shot_stats.Shot_Trail_Color1;
-	shot_stats.Shot_Trail_Color1 = make_color_rgb(_crray[0], _crray[1], _crray[2])
-	
-	_crray = shot_stats.Shot_Trail_Color2;
-	shot_stats.Shot_Trail_Color2 = make_color_rgb(_crray[0], _crray[1], _crray[2])
 
 	scr_State_Weapon_Mod();
 	

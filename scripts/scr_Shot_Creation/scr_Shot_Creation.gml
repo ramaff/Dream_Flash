@@ -216,6 +216,7 @@ function scr_Shot_Creation() {
 					shot_stats.Shot_Life_Span = 1;	
 				}
 		        alarm[0] = shot_stats.Shot_Life_Span;
+				alarm[1] = 1;
 		        scr_Extra_Shot_Stats();
 		        scr_Weapon_Direction_List();
 			
@@ -250,8 +251,6 @@ function scr_Shot_Creation() {
 						//lightsize = 1;
 					}
 				}
-			
-				//scr_Shot_Particle_Setup();
 		
 				alarm[2] = 1;
 				if alarm[0] < 1 {

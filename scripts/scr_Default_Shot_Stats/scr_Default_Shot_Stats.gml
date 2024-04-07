@@ -133,8 +133,8 @@ function scr_Default_Shot_Stats() {
 		shotextrahitshrink[i] = 0;
 		shotextrahitfade[i] = 0;
 	}
-	shotextrahitxx = 0;
-	shotextrahityy = 0;
+	shot_stats.Shot_Extra_Hit_XX = 0;
+	shot_stats.Shot_Extra_Hit_YY = 0;
 	
 	shot_stats.Shot_Shrink = 0;
 	shot_stats.Shot_Fade = 0;

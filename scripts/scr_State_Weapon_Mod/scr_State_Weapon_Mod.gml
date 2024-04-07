@@ -3,7 +3,7 @@
 function scr_State_Weapon_Mod(){
 	
 	if shot_stats.Shot_Off_State = 0 and shot_stats.Shot_Origin = obj_Soul_Parent {
-		if scr_State_Active_Check("Snake") and other.Shot_Beam = 0 {
+		if scr_State_Active_Check("Snake") and other.current_weapon_stats.Shot_Beam = 0 {
 			shot_stats.Shot_Snake_Move = 2;
 			shottargetX = mouse_x;
 			shottargetY = mouse_y;
@@ -117,7 +117,7 @@ function scr_State_Weapon_Mod(){
 			}
 		
 		}
-		if scr_State_Active_Check("Casting") and other.Shot_Beam = 0 {
+		if scr_State_Active_Check("Casting") and other.current_weapon_stats.Shot_Beam = 0 {
 			
 			//Shot_Extra_Hits = false
 			shot_stats.Shot_Size += 0.2;
@@ -125,16 +125,23 @@ function scr_State_Weapon_Mod(){
 			image_xscale = shot_stats.Shot_Size;
 			image_yscale = shot_stats.Shot_Size;
 			
+			/*shot_stats.Shot_Homing_Type = 3;
+			shot_stats.Shot_Homing_Speed = 3;
+			shot_stats.Shot_Homing_Range = 500; */
+			
 			shot_stats.Shot_Extra_Stats = [other.Shot_Stats];
 			
 			shot_stats.Shot_Extra_Stats[0].Shot_Count = 1;
-			shot_stats.Shot_Extra_Stats[0].Shot_Sprite = string(sprite_get_name(sprite_index));
+			//shot_stats.Shot_Extra_Stats[0].Shot_Sprite = string(sprite_get_name(sprite_index));
 			shot_stats.Shot_Extra_Stats[0].Shot_Extra_Hit_Frequency = 15 + (shot_stats.Shot_Life_Span / 10);
 			shot_stats.Shot_Extra_Stats[0].Shot_Power = shot_stats.Shot_Power * global.soulstateformboost / 2.5;
 			shot_stats.Shot_Extra_Stats[0].Shot_Speed = shot_stats.Shot_Speed * 1.5;
-			shot_stats.Shot_Extra_Stats[0].Shot_Life_Span = shot_stats.Shot_Life_Span / 2;
+			//shot_stats.Shot_Extra_Stats[0].Shot_Life_Span = shot_stats.Shot_Life_Span / 2;
 			shot_stats.Shot_Extra_Stats[0].Shot_Pierce = shot_stats.Shot_Pierce;
 			shot_stats.Shot_Extra_Stats[0].Shot_Size = (0.05 + shot_stats.Shot_Size * 0.5);
+			shot_stats.Shot_Extra_Stats[0].Shot_Mouse = true;
+			shot_stats.Shot_Extra_Stats[0].Shot_Homing_Type = 0;
+			
 			//shot_stats.Shot_Extra_Stats[0].Shot_Mouse = true;
 			
 			if shot_stats.Shot_Type = obj_Melee_Caster_Shot {

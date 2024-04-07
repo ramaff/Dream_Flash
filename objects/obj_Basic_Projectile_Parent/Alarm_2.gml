@@ -13,13 +13,13 @@ if global.gameParticles > 0 {
 		var _direction = 0;
 	
 		with instance_create(x + xx,y + yy, asset_get_index(shot_stats.Shot_Trail_Type)) {
-		
+
 			sprite_index = asset_get_index(other.shot_stats.Shot_Trail_Sprite);
-		
+
 			image_angle = other.image_angle;
 			depth = other.depth - 1;
 		
-			image_blend = merge_colour(other.shot_stats.Shot_Trail_Color1, other.shot_stats.Shot_Trail_Color2, random(1));
+			image_blend = scr_Mix_Two_Color_Arrays(other.shot_stats.Shot_Trail_Color1, other.shot_stats.Shot_Trail_Color2)
 
 			size = other.shot_stats.Shot_Size;
 			image_xscale = size;
@@ -50,8 +50,8 @@ if global.gameParticles > 0 {
 		
 			image_angle = other.image_angle;
 			depth = other.depth - 1;
-		
-			image_blend = merge_colour(other.shot_stats.Shot_Trail_Color1, other.shot_stats.Shot_Trail_Color2, random(1));
+			
+			image_blend = scr_Mix_Two_Color_Arrays(other.shot_stats.Shot_Trail_Color_1, other.shot_stats.Shot_Trail_Color_2)
 
 			size = other.shot_stats.Shot_Size;
 			image_xscale = size;

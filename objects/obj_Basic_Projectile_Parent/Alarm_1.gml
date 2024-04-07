@@ -1,15 +1,14 @@
-var extra_stats = shot_stats.Shot_Extra_Stats
 
-//Print_DF(string(extra_stats))
+var extra_stats = shot_stats.Shot_Extra_Stats
 
 if extra_stats = false {
 	exit;	
 }
 
-var extra_shot_amount = array_length(extra_stats);
+var extra_shots_amount = array_length(extra_stats);
 
 var i = 0;
-for(i = 0; i < extra_shot_amount; i++) {
+for(i = 0; i < extra_shots_amount; i++) {
 	
 	if (shot_stats.Shot_Timer mod extra_stats[i].Shot_Extra_Hit_Frequency = 0) {
 	
@@ -30,10 +29,10 @@ for(i = 0; i < extra_shot_amount; i++) {
 		//shotduplicatesprite = asset_get_index(current_extra_stats.Shot_Sprite);
 	
 	    repeat(ramt) {
-		    with instance_create(x + shotextrahitxx,y + shotextrahityy,obj_Lesser_Soul_Shot) {
-		        //scr_Duplicate_Shot_Stats();
+		    with instance_create(x + extra_stats[i].Shot_XX,y + extra_stats[i].Shot_YY,obj_Lesser_Soul_Shot) {
+		        scr_Duplicate_Shot_Stats();
 				
-				shot_stats = scr_Setup_Default_Shot_Stats();
+				//shot_stats = scr_Setup_Default_Shot_Stats();
 				var _PropertyNames = variable_struct_get_names(current_extra_stats);
 		        for (var i = 0; i < array_length(_PropertyNames); i++) {
 		            variable_struct_set(shot_stats, _PropertyNames[i], variable_struct_get(current_extra_stats, _PropertyNames[i]));
@@ -83,7 +82,13 @@ for(i = 0; i < extra_shot_amount; i++) {
 				shot_stats.Shot_Size_Max = shot_stats.Shot_Size;
 				shot_stats.Shot_Size_Relation = 1;
 				
-				scr_Shot_Particle_Setup();
+				if shot_stats.Shot_Mouse {
+					if instance_exists(other.otarget) {
+						direction = point_direction(other.otarget.x, other.otarget.y,mouse_x, mouse_y);
+					} else {
+						direction = point_direction(x,y,mouse_x, mouse_y);
+					}
+				}
 	
 				if instance_exists(obj_Boss_Parent) {
 					if shot_stats.Shot_Boss_Aim {
