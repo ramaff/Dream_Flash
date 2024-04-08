@@ -25,6 +25,7 @@ function scr_Casting_Teleport_Shot(xxx, yyy, distance) {
 	current_weapon_stats.Shot_Homing_Type = 3;
 	current_weapon_stats.Shot_Homing_Range = 500;
 	current_weapon_stats.Shot_Homing_Speed = 5;
+	current_weapon_stats.Shot_Point_Angle = true;
 	//current_weapon_stats.Shot_Orbital_Type = 2;
 	//current_weapon_stats.Shot_Orbital_Range = distance;
 	//current_weapon_stats.Shot_Orbit_Angle = point_direction(x,y,mouse_x,mouse_y);

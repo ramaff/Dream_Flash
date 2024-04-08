@@ -344,10 +344,14 @@ if shot_stats.Shot_Homing_Type = 3 {
 	}
     if _target != noone {
 		direction = point_direction(x, y, _target.x,_target.y);
-		speed = min(speed, shot_stats.Shot_Speed / 2)
+		speed = min(speed, shot_stats.Shot_Speed / 4)
 		
-		x += lengthdir_x(speed * 2, direction + 90);
-		y += lengthdir_y(speed * 2, direction + 90);
+		x += lengthdir_x(speed * 3, direction + 90);
+		y += lengthdir_y(speed * 3, direction + 90);
+		
+		if shot_stats.Shot_Point_Angle = 1 {
+			image_angle = direction + 67.5;
+		}
     }
 
 }

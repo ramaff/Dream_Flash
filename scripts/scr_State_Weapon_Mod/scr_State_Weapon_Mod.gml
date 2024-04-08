@@ -131,7 +131,7 @@ function scr_State_Weapon_Mod(){
 			
 			speed = shot_stats.Shot_Speed;
 
-			if shot_stats.Weapon_Melee > 0 {
+			if shot_stats.Weapon_Melee = 0 {
 				shot_stats.Shot_Extra_Stats = [scr_Dupe_Struct(shot_stats)];
 			}
 			
