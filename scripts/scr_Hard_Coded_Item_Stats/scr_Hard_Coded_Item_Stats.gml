@@ -960,6 +960,16 @@ function scr_Hard_Coded_Item_Stats(itemVal, items_to_add = 1, reload = false) {
 	}
 	if itemVal = "P08" {
 	}
+	if itemVal = "P09" {
+		if !reload {
+			global.soulloathing += 4;
+		}
+	}
+	
+	if itemVal = "Q04" {
+		global.soulshotlifefactor += 10;
+	    obj_Soul_Parent.sshotlifefactor += 10;
+	}
 
 	if !reload {
 		if itemVal = "R01" {

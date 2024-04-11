@@ -18,18 +18,18 @@ function scr_Casting_Teleport_Shot(xxx, yyy, distance) {
 
 	current_weapon_stats.Shot_Size = 0.4;
 	current_weapon_stats.Shot_Forward = 0;
-	current_weapon_stats.Shot_Point_Angle = 1;
+	//current_weapon_stats.Shot_Point_Angle = 1;
 	current_weapon_stats.Shot_Off_State = 1;
 	current_weapon_stats.Shot_XX = xxx - x;
 	current_weapon_stats.Shot_YY = yyy - y;
-	current_weapon_stats.Shot_Homing_Type = 3;
+	/*current_weapon_stats.Shot_Homing_Type = 3;
 	current_weapon_stats.Shot_Homing_Range = 500;
-	current_weapon_stats.Shot_Homing_Speed = 5;
-	current_weapon_stats.Shot_Point_Angle = true;
-	//current_weapon_stats.Shot_Orbital_Type = 2;
-	//current_weapon_stats.Shot_Orbital_Range = distance;
-	//current_weapon_stats.Shot_Orbit_Angle = point_direction(x,y,mouse_x,mouse_y);
-	current_weapon_stats.Shot_Speed = 10; 
+	current_weapon_stats.Shot_Homing_Speed = 5; */
+	//current_weapon_stats.Shot_Point_Angle = true;
+	current_weapon_stats.Shot_Orbital_Type = 2;
+	current_weapon_stats.Shot_Orbital_Range = distance;
+	current_weapon_stats.Shot_Orbit_Angle = point_direction(x,y,xxx,yyy);
+	current_weapon_stats.Shot_Speed = 4;
 	current_weapon_stats.Shot_Power = (5 + other.bulletpower / 4) * global.soulstateformboost * (1 + global.teleportboost);
 	if current_weapon_stats.Shot_Speed < 0 {
 		current_weapon_stats.Shot_Speed = 0;	

@@ -177,7 +177,7 @@ function scr_State_Weapon_Mod(){
 
 	        shot_stats.Shot_Center_X = other.x;
 	        shot_stats.Shot_Center_Y = other.y;
-			speed = 0;
+			//speed = 0;
 
 			/*if shot_stats.Weapon_Melee > 0 {
 		

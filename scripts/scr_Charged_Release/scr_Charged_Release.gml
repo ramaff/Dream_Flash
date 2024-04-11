@@ -4,9 +4,9 @@ function scr_Charged_Release() {
 			
 			current_weapon_stats = scr_Setup_Default_Weapon_Stats(weaponcharge)
 			scr_Modify_Current_Weapon_Stats();
-			scr_Setup_Charge_Stats()
+			//scr_Setup_Charge_Stats()
 		
-			scr_Setup_Weapon_Stats();
+			//scr_Setup_Weapon_Stats();
 			
 			if Charge_Hold = 2 {
 				scr_Ascending_Soul_Essence_Beam(weaponcharge);
@@ -16,6 +16,9 @@ function scr_Charged_Release() {
 			current_weapon_stats.Shot_Power += Charge_Power;
 			current_weapon_stats.Shot_Knockback += Charge_Knockback;
 			current_weapon_stats.Shot_Life_Span += Charge_Lifespan;
+			
+			current_weapon_stats.Shot_Trail_Area = current_weapon_stats.Shot_Trail_Area * (current_weapon_stats.Shot_Size + Charge_Size) / current_weapon_stats.Shot_Size;
+			
 			current_weapon_stats.Shot_Size += Charge_Size;
 			
 			if Charge_Hold = 2 {
@@ -84,6 +87,8 @@ function scr_Charged_Release() {
 			scr_OC03(weaponcharge);
 		
 			scr_Shot_Creation();
+			
+			sWeaponTicker++;
 
 			//weaponcharge = 0;
 	    }

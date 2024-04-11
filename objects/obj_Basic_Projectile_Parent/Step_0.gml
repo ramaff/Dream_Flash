@@ -245,8 +245,6 @@ if shot_stats.Shot_Orbital_Type > 0 {
     
 	    shot_stats.Shot_Orbit_Angle += 1 + shot_stats.Shot_Speed;
     
-	    image_angle = shot_stats.Shot_Orbit_Angle + 90;
-    
 	    if (shot_stats.Shot_Orbit_Angle >= 360) {
 	        shot_stats.Shot_Orbit_Angle -= 360;
 	    }
@@ -260,6 +258,14 @@ if shot_stats.Shot_Orbital_Type > 0 {
 		speed = min(_dist / 5, 4 + shot_stats.Shot_Speed * 4)
     
 	    image_angle = shot_stats.Shot_Orbit_Angle + 90;
+		
+		if shot_stats.Shot_Orbital_Type = 2 {
+			var _range = shot_stats.Shot_Orbital_Range;
+			
+			shot_stats.Shot_Orbital_Range += 100 / max(1, shot_stats.Shot_Orbital_Range)
+			
+			//shot_stats.Shot_Orbital_Range = sqrt((_range * _range) + (shot_stats.Shot_Speed * 5))
+		}
 	} else {
 		direction = shot_stats.Shot_Orbit_Angle + 90;
 		speed = shot_stats.Shot_Speed
@@ -343,15 +349,8 @@ if shot_stats.Shot_Homing_Type = 3 {
 	    }
 	}
     if _target != noone {
-		direction = point_direction(x, y, _target.x,_target.y);
-		speed = min(speed, shot_stats.Shot_Speed / 4)
-		
-		x += lengthdir_x(speed * 3, direction + 90);
-		y += lengthdir_y(speed * 3, direction + 90);
-		
-		if shot_stats.Shot_Point_Angle = 1 {
-			image_angle = direction + 67.5;
-		}
+		var _tdir = point_direction(x, y, _target.x,_target.y) + 67.5;
+		direction = scr_Angle_Converge(direction, _tdir, shot_stats.Shot_Homing_Speed)
     }
 
 }

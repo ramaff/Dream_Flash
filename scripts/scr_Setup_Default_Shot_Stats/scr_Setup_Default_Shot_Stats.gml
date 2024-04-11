@@ -123,7 +123,7 @@ function scr_Setup_Default_Shot_Stats(){
 		Shot_Orbital_Target: noone,
 		Shot_Orbital_Type: 0,
 		Shot_Orbital_Range: 0,
-		Shot_Orbital_Angle: 0,
+		Shot_Orbital_Angle: -1,
 		Shot_Wave_Direction: 0,
 		Shot_Wave_Acceleration: 0,
 		Shot_Wave_Time: 0,
