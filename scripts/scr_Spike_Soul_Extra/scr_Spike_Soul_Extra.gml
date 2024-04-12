@@ -8,7 +8,7 @@ function scr_Spike_Soul_Extra(){
             "Shot_Count": 1,
             "Shot_Sprite": "spr_Rising_Spike",
             "Shot_Type": "obj_Lesser_Soul_Shot",
-            "Shot_Extra_Hit_Frequency": 3,
+            "Shot_Extra_Hit_Frequency": 10,
             "Shot_Speed": 0,
             "Shot_Alpha": 1,
             "Shot_Movement": 0,
@@ -26,6 +26,7 @@ function scr_Spike_Soul_Extra(){
             "Shot_Image_Speed": 1,
             "Weapon_Split_Hit_Again": 1,
             "Weapon_Split_Visible": 1,
+			"Shot_Off_State": 1,
         }
 		
 		var _base_stats = scr_Setup_Default_Shot_Stats()

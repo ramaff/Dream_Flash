@@ -220,7 +220,20 @@ function scr_Soul_Shot_Boss_Hit() {
 				    instance_destroy();
 				}
 			}
-
+			
+			if shot_stats.Shot_Spike_Aura = true {
+				with instance_create(x, y, obj_Spike_Aura) {
+					damage = other.shot_stats.Shot_Power * 1.35 * global.soulstateformboost / 60;
+					direction = other.direction;
+					image_angle = direction;
+					image_xscale = 0.35 + sqrt(damage / 500)
+					//other.image_xscale * (1 + (sqrt(other.shot_stats.Shot_Power) / 20));
+					image_yscale = image_xscale;
+					
+					alarm[0] = 30;
+				}
+			}
+			
         
 	        if other.currentphase >= other.finalphase
 	        if other.bosshealth <= 0 {

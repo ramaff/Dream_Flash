@@ -200,6 +200,7 @@ function scr_Setup_Default_Shot_Stats(){
 		Shot_Follow_Target: noone,
 		Shot_Gem: 0,
 		Shot_Burst_Power: 0,
+		Shot_Spike_Aura: false,
 	}
 	return _shot_stats
 

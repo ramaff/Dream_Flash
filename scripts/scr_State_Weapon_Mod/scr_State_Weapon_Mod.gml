@@ -103,18 +103,18 @@ function scr_State_Weapon_Mod(){
 		if scr_State_Active_Check("Spike") {
 		
 			shot_stats.Shot_Speed = shot_stats.Shot_Speed * (1.25 * global.soulstateformboost);
-			shot_stats.Shot_Pierce += 1;
+			//shot_stats.Shot_Pierce += 1;
 		
 			speed = shot_stats.Shot_Speed;
 		
-			shot_stats.Shot_Power_Max = shot_stats.Shot_Power_Max * (1.15 * global.soulstateformboost);
+			/*shot_stats.Shot_Power_Max = shot_stats.Shot_Power_Max * (1.15 * global.soulstateformboost);
 		    shot_stats.Shot_Power = shot_stats.Shot_Power_Max;
 		    shot_stats.Shot_Power_Level = shot_stats.Shot_Power_Level * (1.15 * global.soulstateformboost);
 		
 			if sprite_get_height(sprite_index) < 80 and shot_stats.Shot_Melee == 0 {
 				sprite_index = spr_Spike_Essence_Shot;
 				shot_stats.Shot_Point_Angle = 1;
-			}
+			} */
 		
 		}
 		if scr_State_Active_Check("Casting") and other.current_weapon_stats.Shot_Beam = 0 {
