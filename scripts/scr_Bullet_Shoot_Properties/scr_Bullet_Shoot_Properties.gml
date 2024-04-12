@@ -89,7 +89,7 @@ function scr_Bullet_Shoot_Properties() {
 	
 	with instance_create(x,y,obj_LightS) {
 		target = other.id;
-		//lightsize = other.shotlightsize;
+		//lightsize = other.shot_stats.Shot_Light_Size;
 				
 		//sprite_index = spr_Bullet_Glow;
 		lightsize = other.bulletsize;

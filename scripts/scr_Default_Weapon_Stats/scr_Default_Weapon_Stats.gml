@@ -4,7 +4,7 @@ function scr_Default_Weapon_Stats() {
 	//Shot_Count = 1;
 	//Shot_Default_Count = 1;
 	
-	Shot_Stats = scr_Setup_Default_Shot_Stats()
+	current_weapon_stats = scr_Setup_Default_Shot_Stats()
 	//Weapon_Number = 0;
 	
 	umbrellaActive = false;

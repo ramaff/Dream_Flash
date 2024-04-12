@@ -5,8 +5,8 @@ function scr_State_Weapon_Mod(){
 	if shot_stats.Shot_Off_State = 0 and shot_stats.Shot_Origin = obj_Soul_Parent {
 		if scr_State_Active_Check("Snake") and other.current_weapon_stats.Shot_Beam = 0 {
 			shot_stats.Shot_Snake_Move = 2;
-			shottargetX = mouse_x;
-			shottargetY = mouse_y;
+			shot_stats.Shot_Target_X = mouse_x;
+			shot_stats.Shot_Target_Y = mouse_y;
 		
 			//shotduplicatesprite = sprite_index;
 		

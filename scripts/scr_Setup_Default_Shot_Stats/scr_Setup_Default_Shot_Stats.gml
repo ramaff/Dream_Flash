@@ -2,7 +2,7 @@
 // https://help.yoyogames.com/hc/en-us/articles/360005277377 for more information
 function scr_Setup_Default_Shot_Stats(){
 
-	Shot_Stats = {
+	var _shot_stats = {
 		Delay: 20,
 		Essence: 4,
 		Weapon_Number: 0,
@@ -59,6 +59,7 @@ function scr_Setup_Default_Shot_Stats(){
 		Shot_Poison_Time: 0,
 		Shot_Poison_Ticks: 0,
 		Shot_Bleed: 0,
+		Shot_Bleed_Chance: 0,
 		Shot_Bleed_Time: 0,
 		Shot_Bleed_Ticks: 0,
 		Shot_Knockback: 10,
@@ -200,6 +201,6 @@ function scr_Setup_Default_Shot_Stats(){
 		Shot_Gem: 0,
 		Shot_Burst_Power: 0,
 	}
-	return Shot_Stats
+	return _shot_stats
 
 }

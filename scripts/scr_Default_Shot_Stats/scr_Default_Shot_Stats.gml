@@ -37,8 +37,8 @@ function scr_Default_Shot_Stats() {
 	shot_stats.Shot_Form_Show = 1;
 	shot_stats.Shot_Movement = 1;
 	shothealemit = 0;
-	shotlight = 0;
-	shotlightsize = 0;
+	shot_stats.Shot_Light = 0;
+	shot_stats.Shot_Light_Size = 0;
 	shotfolloworigin = 0
 	
 	shot_stats.Shot_Fear_Target = noone;
@@ -227,8 +227,8 @@ function scr_Default_Shot_Stats() {
 	shot_stats.Shot_Essence_Drain = 0;
 	
 	shot_stats.Shot_Snake_Move = 0;
-	shottargetX = 0;
-	shottargetY = 0;
+	shot_stats.Shot_Target_X = 0;
+	shot_stats.Shot_Target_Y = 0;
 
 	shot_stats.Shot_Speed_Power_Add = 0;
 	shot_stats.Shot_Bullet_Redirect = 0;

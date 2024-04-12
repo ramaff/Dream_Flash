@@ -280,15 +280,15 @@ function scr_Duplicate_Shot_Stats() {
 	shot_stats.Shot_Freeze_Type = other.shot_stats.Shot_Freeze_Type;
 	shot_stats.Shot_Freeze = other.shot_stats.Shot_Freeze;
 	shot_stats.Shot_Freeze_Time = other.shot_stats.Shot_Freeze_Time;
-	shotlight = other.shotlight;
-	shotlightsize = other.shotlightsize;
+	shot_stats.Shot_Light = other.shot_stats.Shot_Light;
+	shot_stats.Shot_Light_Size = other.shot_stats.Shot_Light_Size;
 	shot_stats.Shot_Life_Drain = other.shot_stats.Shot_Life_Drain;
 	shot_stats.Shot_Essence_Drain = other.shot_stats.Shot_Essence_Drain;
 	
 	shot_stats.Shot_Speed_Power_Add = other.shot_stats.Shot_Speed_Power_Add;
 	
-	shottargetX = other.shottargetX;
-	shottargetY = other.shottargetY;
+	shot_stats.Shot_Target_X = other.shot_stats.Shot_Target_X;
+	shot_stats.Shot_Target_Y = other.shot_stats.Shot_Target_Y;
 	
 	shot_stats.Shot_Snake_Move = 0;
 	

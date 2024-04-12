@@ -18,8 +18,9 @@ function scr_Extra_Shot_Stats() {
 	
 	//Print_DF(shot_stats)
 
-	/*
 	var shotaddedpow = ((10 + other.spowerfactor + other.sattackfactorbuffamount) / 10) * other.spower / 10 * scr_Class_Stat_Damage_Multiplier();
+	
+	/*
 
 	shot_stats.Image_Rotation_Speed = other.Image_Rotation_Speed;
 
@@ -180,7 +181,29 @@ function scr_Extra_Shot_Stats() {
 		//speed = 0;
 	}
 	
+	shot_stats.Shot_Crit_Chance += other.scritaddchance;
+	shot_stats.Shot_Crit_Multiple += other.scritadd;
+	
 	shot_stats.Shot_Impact_Power_Level = shot_stats.Shot_Impact_Power;
+	shot_stats.Shot_Pierce += other.sshotpierce;
+	shot_stats.Shot_Armour_Pierce += other.sarmourpierce;
+	shot_stats.Shot_Chain_Power = (shot_stats.Shot_Chain_Power + other.spoweradd) * shotaddedpow;
+	shot_stats.Shot_Impact_Power = (shot_stats.Shot_Impact_Power + other.spoweradd) * shotaddedpow;
+	
+	shot_stats.Shot_Shield_Power = (shot_stats.Shot_Shield_Power + other.spoweradd) * shotaddedpow;
+	shot_stats.Shot_Rebound_Power = (shot_stats.Shot_Rebound_Power + other.spoweradd) * shotaddedpow;
+	shot_stats.Shot_Poison = shot_stats.Shot_Poison * shotaddedpow;
+
+	if scr_Chance(1 / shot_stats.Shot_Bleed_Chance) {
+		shot_stats.Shot_Bleed = shot_stats.Shot_Bleed * shotaddedpow;
+	}
+	
+	shot_stats.Shot_Fire = shot_stats.Shot_Fire * shotaddedpow;
+	if scr_Chance(1 / shot_stats.Shot_Freeze_Chance) {
+		shot_stats.Shot_Freeze_Type = shot_stats.Shot_Freeze_Type;
+	}
+	
+	shot_stats.Shot_Accuracy = shot_stats.Shot_Accuracy / global.soulaccuracy;
 	
 	/*
 
@@ -257,8 +280,8 @@ function scr_Extra_Shot_Stats() {
 		shot_stats.Shot_Freeze = other.Shot_Freeze;
 		shot_stats.Shot_Freeze_Time = other.Shot_Freeze_Time;
 	}
-	shotlight = other.Shot_Light;
-	shotlightsize = other.Shot_Light_Size;
+	shot_stats.Shot_Light = other.Shot_Light;
+	shot_stats.Shot_Light_Size = other.Shot_Light_Size;
 
 	shot_stats.Shot_Healing = other.Shot_Healing;
 	shot_stats.Shot_Life_Drain = other.Shot_Life_Drain;
@@ -271,8 +294,8 @@ function scr_Extra_Shot_Stats() {
 	
 	shot_stats.Shot_Snake_Move = other.Shot_Snake_Move;
 	
-	shottargetX = other.Shot_Target_X;
-	shottargetY = other.Shot_Target_Y;
+	shot_stats.Shot_Target_X = other.Shot_Target_X;
+	shot_stats.Shot_Target_Y = other.Shot_Target_Y;
 	
 	shotrecyle = other.Shot_Recycle;
 	shot_stats.Shot_Accuracy = other.Shot_Accuracy / global.soulaccuracy;
