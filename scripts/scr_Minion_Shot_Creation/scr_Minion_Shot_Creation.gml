@@ -1,17 +1,17 @@
 function scr_Minion_Shot_Creation() {
-	dir = -(Shot_Stats.Shot_Spread * (Shot_Stats.Shot_Count - 1) / 2) + (-(Shot_Stats.Shot_Accuracy / 2) + random(Shot_Stats.Shot_Accuracy)) / saccuracy;
-	repeat(Shot_Stats.Shot_Count) {
-		if Shot_Stats.Weapon_Vomit = 1 {
-	        dir = (-(Shot_Stats.Shot_Accuracy / 2) + random(Shot_Stats.Shot_Accuracy));
+	dir = -(current_weapon_stats.Shot_Spread * (current_weapon_stats.Shot_Count - 1) / 2) + (-(current_weapon_stats.Shot_Accuracy / 2) + random(current_weapon_stats.Shot_Accuracy)) / saccuracy;
+	repeat(current_weapon_stats.Shot_Count) {
+		if current_weapon_stats.Weapon_Vomit = 1 {
+	        dir = (-(current_weapon_stats.Shot_Accuracy / 2) + random(current_weapon_stats.Shot_Accuracy));
 	    }
-		if !is_string(Shot_Stats.Shot_Type) {
-			Shot_Stats.Shot_Type = object_get_name(Shot_Stats.Shot_Type)
+		if !is_string(current_weapon_stats.Shot_Type) {
+			current_weapon_stats.Shot_Type = object_get_name(current_weapon_stats.Shot_Type)
 		}
-		if !is_string(Shot_Stats.Shot_Sprite) {
-			Shot_Stats.Shot_Sprite = sprite_get_name(Shot_Stats.Shot_Sprite)
+		if !is_string(current_weapon_stats.Shot_Sprite) {
+			current_weapon_stats.Shot_Sprite = sprite_get_name(current_weapon_stats.Shot_Sprite)
 		}
 		
-	    with instance_create(x,y,asset_get_index(Shot_Stats.Shot_Type)) {
+	    with instance_create(x,y,asset_get_index(current_weapon_stats.Shot_Type)) {
 	        scr_Default_Shot_Stats();
 			shot_stats = json_parse(json_stringify(other.Shot_Stats));
 		
@@ -39,7 +39,7 @@ function scr_Minion_Shot_Creation() {
 			shot_stats.Shot_Timer = shot_stats.Shot_Life_Span;
 			
 	    }
-	    dir += Shot_Stats.Shot_Spread;
+	    dir += current_weapon_stats.Shot_Spread;
 	}
    
 

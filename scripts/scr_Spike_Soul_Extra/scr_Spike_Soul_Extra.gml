@@ -21,7 +21,7 @@ function scr_Spike_Soul_Extra(){
             "Shot_Pierce": 99,
             "Shot_Ground": true,
             "Shot_Forward": 1,
-            "Shot_Size": 0.15 + random(0.1),
+            "Shot_Size": 0.15 + random(0.1) + sqrt(current_waeapon_stats.Shot_Power / 350),
 			"Shot_Angle": -30 + random(60),
             "Shot_Image_Speed": 1,
             "Weapon_Split_Hit_Again": 1,
@@ -38,13 +38,6 @@ function scr_Spike_Soul_Extra(){
 		]
 		
 		current_weapon_stats.Shot_Spike_Aura = true
-		/*
-		if global.SpikeExtra > 5 {
-			Shot_Count = round(Shot_Count * (5 * global.soulstateformboost));
-			
-			Shot_Spread += 360 / Shot_Count;
-			global.SpikeExtra = 0;
-		}
-		global.SpikeExtra++; */
+
 	}
 }

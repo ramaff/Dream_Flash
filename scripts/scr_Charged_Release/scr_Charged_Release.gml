@@ -44,7 +44,7 @@ function scr_Charged_Release() {
 	        }
 	        if weaponcharge = 312 {
 				if current_weapon_stats.Shot_Power > 50 {
-			        Shot_Stats.Shot_Extra_Stats[0] = {
+			        current_weapon_stats.Shot_Extra_Stats[0] = {
 			            Shot_Count: 1,
 			            Shot_Extra_Hit_Frequency: 15,
 			            Shot_Sprite: "spr_Adept_Bolt_Shot",

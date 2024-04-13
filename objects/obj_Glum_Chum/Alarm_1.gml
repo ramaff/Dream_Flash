@@ -7,26 +7,26 @@ if corporealHit > 0 {
     repeat(scount) {
         scr_Default_Weapon_Stats();
         
-        Shot_Stats.Shot_Accuracy += 360;
-        Shot_Stats.Shot_Count += 0;
-        Shot_Stats.Shot_Spread = 360 / Shot_Stats.Shot_Count;
+        current_weapon_stats.Shot_Accuracy += 360;
+        current_weapon_stats.Shot_Count += 0;
+        current_weapon_stats.Shot_Spread = 360 / current_weapon_stats.Shot_Count;
         
-        Shot_Stats.Shot_Mouse = 0;
-        Shot_Stats.Shot_Direction = random(360);
+        current_weapon_stats.Shot_Mouse = 0;
+        current_weapon_stats.Shot_Direction = random(360);
         
-        Shot_Stats.Shot_Sprite = spr_Rain_Shot;
-        Shot_Stats.Shot_Type = obj_Lesser_Soul_Shot;
+        current_weapon_stats.Shot_Sprite = spr_Rain_Shot;
+        current_weapon_stats.Shot_Type = obj_Lesser_Soul_Shot;
         
-        Shot_Stats.Shot_Speed = 7.5;
-        Shot_Stats.Shot_Power = 10;
-        Shot_Stats.Shot_Knockback = 10;
-        Shot_Stats.Shot_Life_Span = 200;
+        current_weapon_stats.Shot_Speed = 7.5;
+        current_weapon_stats.Shot_Power = 10;
+        current_weapon_stats.Shot_Knockback = 10;
+        current_weapon_stats.Shot_Life_Span = 200;
 		
-		Shot_Stats.Shot_Size = 0.45;
+		current_weapon_stats.Shot_Size = 0.45;
         
-        Shot_Stats.Shot_Looping += 1;
+        current_weapon_stats.Shot_Looping += 1;
 		
-		Shot_Stats.Shot_Point_Angle = 1;
+		current_weapon_stats.Shot_Point_Angle = 1;
         
         Shot_ID = instance_id_get( instance_count ) + glumcount;
     

@@ -13,46 +13,46 @@ function scr_Setup_Weapon_Stats(_current_weapon_stats = current_weapon_stats) {
 	//Shot_Stats = _current_weapon_stats;
 	/*
 	if variable_struct_exists(_current_weapon_stats, "Weapon_Number") {
-		Shot_Stats.Weapon_Number = _current_weapon_stats.Weapon_Number;
+		current_weapon_stats.Weapon_Number = _current_weapon_stats.Weapon_Number;
 	}
 	if variable_struct_exists(_current_weapon_stats, "Shot_Lobbing") {
-		Shot_Stats.Shot_Lobbing = _current_weapon_stats.Shot_Lobbing;
+		current_weapon_stats.Shot_Lobbing = _current_weapon_stats.Shot_Lobbing;
 	}
 	if variable_struct_exists(_current_weapon_stats, "Shot_Lobbing_Tilt") {
-		Shot_Stats.Shot_Lobbing_Tilt = _current_weapon_stats.Shot_Lobbing_Tilt;
+		current_weapon_stats.Shot_Lobbing_Tilt = _current_weapon_stats.Shot_Lobbing_Tilt;
 	}
 	if variable_struct_exists(_current_weapon_stats, "Shot_Lobbing_Wobble") {
-		Shot_Stats.Shot_Lobbing_Wobble = _current_weapon_stats.Shot_Lobbing_Wobble;
+		current_weapon_stats.Shot_Lobbing_Wobble = _current_weapon_stats.Shot_Lobbing_Wobble;
 	}
 	if variable_struct_exists(_current_weapon_stats, "Shot_Height") {
-		Shot_Stats.Shot_Height = _current_weapon_stats.Shot_Height;
+		current_weapon_stats.Shot_Height = _current_weapon_stats.Shot_Height;
 	}
 	if variable_struct_exists(_current_weapon_stats, "Shot_Fall_Speed") {
-		Shot_Stats.Shot_Fall_Speed = _current_weapon_stats.Shot_Fall_Speed;
+		current_weapon_stats.Shot_Fall_Speed = _current_weapon_stats.Shot_Fall_Speed;
 	}
 	if variable_struct_exists(_current_weapon_stats, "Shot_Gravity") {
-		Shot_Stats.Shot_Gravity = _current_weapon_stats.Shot_Gravity;
+		current_weapon_stats.Shot_Gravity = _current_weapon_stats.Shot_Gravity;
 	}
 	if variable_struct_exists(_current_weapon_stats, "Shot_Chain_Color") {
-		Shot_Stats.Shot_Chain_Color = _current_weapon_stats.Shot_Chain_Color;
+		current_weapon_stats.Shot_Chain_Color = _current_weapon_stats.Shot_Chain_Color;
 	}
 	if variable_struct_exists(_current_weapon_stats, "Shot_Zig_Zag") {
-		Shot_Stats.Shot_Zig_Zag = _current_weapon_stats.Shot_Zig_Zag;
+		current_weapon_stats.Shot_Zig_Zag = _current_weapon_stats.Shot_Zig_Zag;
 	}
 	if variable_struct_exists(_current_weapon_stats, "Shot_Init_Grow") {
-		Shot_Stats.Shot_Init_Grow = _current_weapon_stats.Shot_Init_Grow;
+		current_weapon_stats.Shot_Init_Grow = _current_weapon_stats.Shot_Init_Grow;
 	}
 	*/
 	//if variable_struct_exists(_current_weapon_stats, "Shot_Extra_Stats") {
 		/*if _current_weapon_stats.Shot_Extra_Stats != false {
 			show_debug_message("_current_weapon_stats.Shot_Extra_Stats: " + string(_current_weapon_stats.Shot_Extra_Stats))
-			Shot_Stats.Shot_Extra_Stats = json_parse(json_stringify(global.DEFAULT_SHOT_STATS));
+			current_weapon_stats.Shot_Extra_Stats = json_parse(json_stringify(global.DEFAULT_SHOT_STATS));
 			var _PropertyNames = variable_struct_get_names(_current_weapon_stats.Shot_Extra_Stats);
 	        for (var i = 0; i < array_length(_PropertyNames); i++) {
-	            variable_struct_set(Shot_Stats.Shot_Extra_Stats, _PropertyNames[i], variable_struct_get(_current_weapon_stats.Shot_Extra_Stats, _PropertyNames[i]));
+	            variable_struct_set(current_weapon_stats.Shot_Extra_Stats, _PropertyNames[i], variable_struct_get(_current_weapon_stats.Shot_Extra_Stats, _PropertyNames[i]));
 	        }
 		} */
-		//Shot_Stats.Shot_Extra_Stats = _current_weapon_stats.Shot_Extra_Stats;
+		//current_weapon_stats.Shot_Extra_Stats = _current_weapon_stats.Shot_Extra_Stats;
 	//}
 	
 	// Older System

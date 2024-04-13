@@ -3,6 +3,6 @@
 
 
 other.bosshealth -= damage;
-if alarm[0] mod 15 = 5 {
-	scr_Damage_Indicator(0, damage * 15, 2);
+if alarm[0] mod 10 = 5 {
+	scr_Damage_Indicator(0, damage * 10, 1, undefined, other.x, other.y);
 }

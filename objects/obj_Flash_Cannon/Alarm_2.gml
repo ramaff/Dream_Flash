@@ -5,25 +5,25 @@ image_index = 0;
 if instance_exists(obj_Boss_Parent) {
     scr_Default_Weapon_Stats();
     
-    Shot_Stats.Shot_Spread += 0;
-    Shot_Stats.Shot_Accuracy += 5;
-    Shot_Stats.Shot_Count += 0;
+    current_weapon_stats.Shot_Spread += 0;
+    current_weapon_stats.Shot_Accuracy += 5;
+    current_weapon_stats.Shot_Count += 0;
     
-    Shot_Stats.Shot_Sprite = spr_Flash_Bomb;
-    Shot_Stats.Shot_Type = obj_Lesser_Soul_Shot;
+    current_weapon_stats.Shot_Sprite = spr_Flash_Bomb;
+    current_weapon_stats.Shot_Type = obj_Lesser_Soul_Shot;
     
-    Shot_Stats.Shot_Speed = 7.5;
-    Shot_Stats.Shot_Power = 35;
-    Shot_Stats.Shot_Impact_Type = 1;
-    Shot_Stats.Shot_Impact_Size = 100;
-    Shot_Stats.Shot_Impact_Power = 20;
+    current_weapon_stats.Shot_Speed = 7.5;
+    current_weapon_stats.Shot_Power = 35;
+    current_weapon_stats.Shot_Impact_Type = 1;
+    current_weapon_stats.Shot_Impact_Size = 100;
+    current_weapon_stats.Shot_Impact_Power = 20;
     
-    Shot_Stats.Shot_Knockback = 10;
-    Shot_Stats.Shot_Life_Span = 100;
+    current_weapon_stats.Shot_Knockback = 10;
+    current_weapon_stats.Shot_Life_Span = 100;
 	
-	Shot_Stats.Shot_Face_Direction = 1;
-	Shot_Stats.Shot_Lobbing = true;
-	Shot_Stats.Shot_Size = 0.475;
+	current_weapon_stats.Shot_Face_Direction = 1;
+	current_weapon_stats.Shot_Lobbing = true;
+	current_weapon_stats.Shot_Size = 0.475;
     
     scr_Minion_Shot_Creation();
 }

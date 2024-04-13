@@ -54,15 +54,15 @@ function scr_Q01() {
 			scr_Hard_Coded_Weapon_Stats(_c_wp);
 		
 			if current_weapon_stats.Shot_Beam = 0 {
-				Shot_Stats.Shot_Height += 20
-				Shot_Stats.Shot_Fall_Speed = -0.2
+				current_weapon_stats.Shot_Height += 20
+				current_weapon_stats.Shot_Fall_Speed = -0.2
 			
-				var _dist = Shot_Stats.Shot_Height;
-				var _time = Shot_Stats.Shot_Life_Span;
-				var _vel = Shot_Stats.Shot_Fall_Speed;
+				var _dist = current_weapon_stats.Shot_Height;
+				var _time = current_weapon_stats.Shot_Life_Span;
+				var _vel = current_weapon_stats.Shot_Fall_Speed;
 			
 				// velocity is backwards
-		        Shot_Stats.Shot_Gravity = ((2 * _dist) / (_time * _time)) + (_vel / _time)
+		        current_weapon_stats.Shot_Gravity = ((2 * _dist) / (_time * _time)) + (_vel / _time)
 			
 			}
 		
