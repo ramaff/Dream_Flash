@@ -7,6 +7,18 @@ if soulDeathFadeSpeed > 0 {
 
 scr_State_Form();
 
+if alarm[7] > 0 {
+	var _dir = point_direction(x, y, mouse_x, mouse_y)
+	var _dis = point_distance(x, y, mouse_x, mouse_y) / alarm[7]
+	
+	x += lengthdir_x(_dis, _dir)
+	y += lengthdir_y(_dis, _dir)
+	
+	if alarm[7] mod 3 = 0 {
+		scr_Spike_Shot_Teleport_Use(0, 0);
+	}
+}
+
 scr_Basic_Soul_Hitboxes();
 //// >>>>>> >> >> >>>>>> >> > > > > > > >
 

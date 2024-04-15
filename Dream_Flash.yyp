@@ -2783,6 +2783,7 @@
     {"id":{"name":"spr_Glowy_Blue_Spike_Bullet","path":"sprites/spr_Glowy_Blue_Spike_Bullet/spr_Glowy_Blue_Spike_Bullet.yy",},},
     {"id":{"name":"shd_dream_light","path":"shaders/shd_dream_light/shd_dream_light.yy",},},
     {"id":{"name":"spr_thought_cloud_v2_rainbow_ko","path":"sprites/spr_thought_cloud_v2_rainbow_ko/spr_thought_cloud_v2_rainbow_ko.yy",},},
+    {"id":{"name":"spr_Rising_Spike_Blue","path":"sprites/spr_Rising_Spike_Blue/spr_Rising_Spike_Blue.yy",},},
     {"id":{"name":"spr_Giant_Wall","path":"sprites/spr_Giant_Wall/spr_Giant_Wall.yy",},},
     {"id":{"name":"spr_Header_Capsule","path":"sprites/spr_Header_Capsule/spr_Header_Capsule.yy",},},
     {"id":{"name":"spr_Large_Header_Capsule","path":"sprites/spr_Large_Header_Capsule/spr_Large_Header_Capsule.yy",},},
