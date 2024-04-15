@@ -19,7 +19,7 @@ if corporealHit > 0 {
         
         current_weapon_stats.Shot_Speed = 7.5;
         current_weapon_stats.Shot_Power = 10;
-        current_weapon_stats.Shot_Knockback = 10;
+        current_weapon_stats.Shot_Knock_Back = 10;
         current_weapon_stats.Shot_Life_Span = 200;
 		
 		current_weapon_stats.Shot_Size = 0.45;

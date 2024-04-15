@@ -23,7 +23,7 @@ function scr_Bleeding_Shot(xxx,yyy, power) {
 	current_weapon_stats.Shot_Speed = (15 + other.speed);
 	
 	current_weapon_stats.Shot_Power = 10;
-	current_weapon_stats.Shot_Knockback = 10;
+	current_weapon_stats.Shot_Knock_Back = 10;
 	current_weapon_stats.Shot_Life_Span = 40;
 	
 	current_weapon_stats.Shot_Trail = 1;

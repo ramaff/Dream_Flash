@@ -24,7 +24,7 @@ if souldist < 320 {
         
 		    Shot_Speed = 10;
 		    Shot_Power = 10;
-		    Shot_Knockback = 10;
+		    Shot_Knock_Back = 10;
 		    Shot_Life_Span = 90;
 			Shot_Size = 0.4;
         

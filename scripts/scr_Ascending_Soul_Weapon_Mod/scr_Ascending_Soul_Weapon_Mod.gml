@@ -9,7 +9,7 @@ function scr_Ascending_Soul_Weapon_Mod(){
 	
 	current_weapon_stats.Shot_Burst_Power = increase_fact * current_weapon_stats.Shot_Burst_Power;
 	
-	current_weapon_stats.Shot_Knockback += Charge_Knockback;
+	current_weapon_stats.Shot_Knock_Back += Charge_Knockback;
 	
 	current_weapon_stats.Shot_Life_Span += Charge_Lifespan;
 	

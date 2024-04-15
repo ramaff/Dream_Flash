@@ -13,7 +13,7 @@ function scr_Essence_Defense_Field() {
 		Shot_Image_Speed: 1,
 		Shot_Speed: 1,
 		Shot_Power: 10,
-		Shot_Knockback: 0,
+		Shot_Knock_Back: 0,
 		Shot_Life_Span: 12,
 		Shot_Pierce: 30,
 		Shot_Size: 0.45,
@@ -49,7 +49,7 @@ function scr_Essence_Defense_Field() {
 
 	Shot_Speed = 1;
 	Shot_Power = 10;
-	Shot_Knockback = 0;
+	Shot_Knock_Back = 0;
 	Shot_Life_Span = 12;
 	Shot_Forward = 0;
 

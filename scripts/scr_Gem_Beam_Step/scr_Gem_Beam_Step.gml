@@ -47,7 +47,7 @@ function scr_Gem_Beam_Step() {
     
 	    Shot_Speed = 0;
 	    Shot_Power = 1 + (12 * sBeamAlpha);
-	    Shot_Knockback = 0;
+	    Shot_Knock_Back = 0;
 	    Shot_Life_Span = 2;
     
 	    Shot_Armour_Pierce += 10;
@@ -107,7 +107,7 @@ function scr_Gem_Beam_Step() {
     
 	    Shot_Speed = 0;
 	    Shot_Power = 16;
-	    Shot_Knockback = 0;
+	    Shot_Knock_Back = 0;
 	    Shot_Life_Span = 2;
     
 	    Shot_Armour_Pierce += 10;

@@ -12,7 +12,7 @@ function scr_Anvil_Rod_Use() {
 	Minion_Health = 80;
 	Shot_Power = 12;
 	Minion_Power = (Shot_Power + spoweradd) * ((10 + spowerfactor + sattackfactorbuffamount) / 10) * spower / 10 * ((160 + global.soulstrength) / 160);
-	Shot_Knockback = 10;
+	Shot_Knock_Back = 10;
 	Minion_Lifespan = 750;
 
 	scr_Soul_Spawn();

@@ -102,6 +102,7 @@ function scr_State_Weapon_Mod(){
 		}
 		if scr_State_Active_Check("Spike") {
 		
+			shot_stats.Shot_Spike_Aura = true
 			shot_stats.Shot_Speed = shot_stats.Shot_Speed * (1.25 * global.soulstateformboost);
 			//shot_stats.Shot_Pierce += 1;
 		

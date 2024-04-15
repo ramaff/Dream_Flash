@@ -12,7 +12,7 @@ function scr_H17_Bubble(){
 			Shot_Type: "obj_Lesser_Soul_Shot",
 			Shot_Speed: 2.5,
 			Shot_Power: pow,
-			Shot_Knockback: 0,
+			Shot_Knock_Back: 0,
 			Shot_Life_Span: 180,
 			Shot_Pierce: 2,
 			Shot_Point_Angle: 1,
@@ -62,7 +62,7 @@ function scr_H17_Bubble(){
 
 	Shot_Speed = 2;
 	Shot_Power = 5 * global.soulheartboost;
-	Shot_Knockback = 0;
+	Shot_Knock_Back = 0;
 	Shot_Life_Span = 180;
 
 	Shot_Shield_Type = 1;

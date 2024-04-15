@@ -15,7 +15,7 @@ if instance_exists(obj_Boss_Parent) {
     
     current_weapon_stats.Shot_Speed = 7.5;
     current_weapon_stats.Shot_Power = other.current_weapon_stats.Shot_Power;
-    current_weapon_stats.Shot_Knockback = 10;
+    current_weapon_stats.Shot_Knock_Back = 10;
     current_weapon_stats.Shot_Life_Span = 60;
     
     scr_Minion_Shot_Creation();

@@ -15,7 +15,7 @@ function scr_W04() {
 			Shot_Type: "obj_Lesser_Soul_Shot",
 			Shot_Speed: 1,
 			Shot_Power: poww,
-			Shot_Knockback: 10,
+			Shot_Knock_Back: 10,
 			Shot_Life_Span: 60,
 			Shot_Pierce: 1,
 			Shot_Point_Angle: 0,

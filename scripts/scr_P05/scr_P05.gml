@@ -14,7 +14,7 @@ function scr_P05(){
 		current_weapon_stats.Shot_Poison = current_weapon_stats.Shot_Poison * _pow_boost;
 		current_weapon_stats.Shot_Bleed = current_weapon_stats.Shot_Bleed * _pow_boost;
 		
-		current_weapon_stats.Shot_Knockback += 3;
+		current_weapon_stats.Shot_Knock_Back += 3;
 		current_weapon_stats.Shot_Life_Span = current_weapon_stats.Shot_Life_Span * 1.2
 
 		current_weapon_stats.Shot_Size = current_weapon_stats.Shot_Size * _size_boost;

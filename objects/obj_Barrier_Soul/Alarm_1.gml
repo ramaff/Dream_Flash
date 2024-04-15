@@ -13,7 +13,7 @@ if instance_exists(obj_Bullet_Parent) and instance_exists(obj_Boss_Parent) {
         
         current_weapon_stats.Shot_Speed = 15;
         current_weapon_stats.Shot_Power = 10;
-        current_weapon_stats.Shot_Knockback = 10;
+        current_weapon_stats.Shot_Knock_Back = 10;
         current_weapon_stats.Shot_Life_Span = 50;
 		Shot_Size = 0.4;
         

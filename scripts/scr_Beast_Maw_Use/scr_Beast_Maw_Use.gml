@@ -10,7 +10,7 @@ function scr_Beast_Maw_Use() {
 		Shot_Speed: 0,
 		Shot_Movement: 0,
 		Shot_Power: 14 * global.soulstateformboost,
-		Shot_Knockback: 10,
+		Shot_Knock_Back: 10,
 		Shot_Life_Span: 23,
 		Shot_Screen_Shake: 5,
 		Shot_Size: 0.8,
@@ -56,7 +56,7 @@ function scr_Beast_Maw_Use() {
 	Shot_Speed = 0;
 	Shot_Movement = 0;
 	Shot_Power = 14 * global.soulstateformboost;
-	Shot_Knockback = 10;
+	Shot_Knock_Back = 10;
 	Shot_Life_Span = 23;
 	
 	Shot_Screen_Shake = 5;

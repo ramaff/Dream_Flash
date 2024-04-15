@@ -14,7 +14,7 @@ function scr_Protective_Barrier_Use() {
 	Shot_Speed = 0;
 	Shot_Movement = 0;
 	Shot_Power = 3;
-	Shot_Knockback = 0;
+	Shot_Knock_Back = 0;
 	Shot_Life_Span = 45;
 	Shot_Healing = 1;
 

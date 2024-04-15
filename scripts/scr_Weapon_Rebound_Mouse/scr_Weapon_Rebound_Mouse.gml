@@ -28,7 +28,7 @@ function scr_Weapon_Rebound_Mouse() {
 			Shot_Speed: 4,
 			Shot_Direction: other.image_angle, //point_direction(obj_Soul_Parent.x,obj_Soul_Parent.y,mouse_x,mouse_y),
 			Shot_Power: pow,
-			Shot_Knockback: 10,
+			Shot_Knock_Back: 10,
 			Shot_Life_Span: 100,
 			Shot_Pierce: 1,
 			Shot_Size: other.bsize,

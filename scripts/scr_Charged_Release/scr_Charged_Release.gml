@@ -14,7 +14,7 @@ function scr_Charged_Release() {
 			
 			current_weapon_stats.Shot_Speed += Charge_Speed;
 			current_weapon_stats.Shot_Power += Charge_Power;
-			current_weapon_stats.Shot_Knockback += Charge_Knockback;
+			current_weapon_stats.Shot_Knock_Back += Charge_Knockback;
 			current_weapon_stats.Shot_Life_Span += Charge_Lifespan;
 			
 			current_weapon_stats.Shot_Trail_Area = current_weapon_stats.Shot_Trail_Area * (current_weapon_stats.Shot_Size + Charge_Size) / current_weapon_stats.Shot_Size;

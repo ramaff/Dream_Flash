@@ -37,7 +37,7 @@ function scr_Casting_Teleport_Shot(xxx, yyy, distance) {
 	if current_weapon_stats.Shot_Power < 0 {
 		current_weapon_stats.Shot_Power = 0;	
 	}
-	current_weapon_stats.Shot_Knockback = 10;
+	current_weapon_stats.Shot_Knock_Back = 10;
 	current_weapon_stats.Shot_Life_Span = 240;
 	
 	current_weapon_stats = scr_Setup_Weapon_Stats(current_weapon_stats);

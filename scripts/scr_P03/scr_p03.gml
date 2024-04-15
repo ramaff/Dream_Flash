@@ -17,7 +17,7 @@ function scr_P03() {
 			Shot_Image_Speed: 1,
 			Shot_Speed: 3.5,
 			Shot_Power: pow,
-			Shot_Knockback: 0,
+			Shot_Knock_Back: 0,
 			Shot_Life_Span: 230,
 			Shot_Pierce: 4,
 			Shot_Life_Drain: 0.3,

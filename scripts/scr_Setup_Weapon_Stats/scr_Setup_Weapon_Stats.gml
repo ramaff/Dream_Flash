@@ -85,8 +85,8 @@ function scr_Setup_Weapon_Stats(_current_weapon_stats = current_weapon_stats) {
 	if variable_struct_exists(_current_weapon_stats, "Shot_Life_Span") {
 		Shot_Life_Span = _current_weapon_stats.Shot_Life_Span
 	}
-	if variable_struct_exists(_current_weapon_stats, "Shot_Knockback") {
-		Shot_Knockback = _current_weapon_stats.Shot_Knockback
+	if variable_struct_exists(_current_weapon_stats, "Shot_Knock_Back") {
+		Shot_Knock_Back = _current_weapon_stats.Shot_Knock_Back
 	}
 	if variable_struct_exists(_current_weapon_stats, "Shot_Size") {
 		Shot_Size = _current_weapon_stats.Shot_Size

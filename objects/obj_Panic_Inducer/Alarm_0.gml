@@ -20,7 +20,7 @@ if instance_exists(obj_Boss_Parent) {
     current_weapon_stats.Shot_Speed = 4.5 + random(2);
     current_weapon_stats.Shot_Power = 15;
     current_weapon_stats.Shot_Soul_Damage = 10;
-    current_weapon_stats.Shot_Knockback = 10;
+    current_weapon_stats.Shot_Knock_Back = 10;
     current_weapon_stats.Shot_Life_Span = 120;
 	current_weapon_stats.Shot_Size = 0.55;
 	

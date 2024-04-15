@@ -15,7 +15,7 @@ function scr_V07_Use() {
 			Shot_Phasing: 1,
 			Shot_Speed: 12,
 			Shot_Power: 100,
-			Shot_Knockback: 20,
+			Shot_Knock_Back: 20,
 			Shot_Friction: 0.11,
 			Shot_Life_Span: 90,
 			Shot_Pierce: 1,

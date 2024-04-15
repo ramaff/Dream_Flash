@@ -13,7 +13,7 @@ function scr_Minion_Shot_Creation() {
 		
 	    with instance_create(x,y,asset_get_index(current_weapon_stats.Shot_Type)) {
 	        scr_Default_Shot_Stats();
-			shot_stats = json_parse(json_stringify(other.Shot_Stats));
+			shot_stats = json_parse(json_stringify(other.current_weapon_stats));
 		
 			shot_stats.Shot_Origin = other.id;
 	        sprite_index = asset_get_index(shot_stats.Shot_Sprite);
@@ -24,7 +24,7 @@ function scr_Minion_Shot_Creation() {
 	        shot_stats.Shot_Power_Max = shot_stats.Shot_Power * other.spower / 10;
 	        shot_stats.Shot_Power = shot_stats.Shot_Power_Max;
 	        shot_stats.Shot_Power_Level = shot_stats.Shot_Power;
-	        shot_stats.Shot_Knock_Back = shot_stats.Shot_Knockback * other.sshotknockback / 10;
+	        shot_stats.Shot_Knock_Back = shot_stats.Shot_Knock_Back * other.sshotknockback / 10;
 	        if shot_stats.Shot_Mouse = 1 {
 				if instance_exists(instance_nearest(x,y,obj_Boss_Parent)) {
 					move_towards_point(instance_nearest(x,y,obj_Boss_Parent).x,instance_nearest(x,y,obj_Boss_Parent).y, shot_stats.Shot_Speed);

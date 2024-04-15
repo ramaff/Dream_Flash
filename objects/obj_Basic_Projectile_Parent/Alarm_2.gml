@@ -3,6 +3,8 @@
 if global.gameParticles > 0 {
 
 	alarm[2] = shot_stats.Shot_Trail_Frequency / global.gameParticles;
+	
+	scr_Spike_Shot_Particles();
 
 	if shot_stats.Shot_Trail > 0 and shot_stats.Shot_Trail < 3 {
 	

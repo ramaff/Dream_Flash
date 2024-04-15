@@ -21,7 +21,7 @@ for (bi = 0; bi < 9; bi++) {
 			//Shot_Count = Shot_Default_Count[bi];
 			
 			var _minion = false
-			if scr_Minion_Weapon(current_weapon_stats.Weapon_Number) {
+			if scr_Minion_Weapon(shot_stats.Weapon_Number) {
 				_minion = true;	
 			}
 			

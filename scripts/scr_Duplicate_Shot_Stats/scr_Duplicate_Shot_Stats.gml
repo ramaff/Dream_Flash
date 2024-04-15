@@ -1,9 +1,15 @@
-function scr_Duplicate_Shot_Stats() {
+function scr_Duplicate_Shot_Stats(_new_shot_stats = other.shot_stats) {
 	
-	var _base_stats = scr_Setup_Default_Shot_Stats()
+	//var _base_stats = scr_Setup_Default_Shot_Stats()
 	shot_stats = json_parse(json_stringify(other.shot_stats));
 	
-	shot_stats = scr_Struct_Merge(_base_stats, shot_stats, false)
+	var _pow_ratio = other.shot_stats.Shot_Power / other.shot_stats.Shot_Power_Level;
+
+	if _new_shot_stats != other.shot_stats {
+		shot_stats = scr_Struct_Merge(shot_stats, _new_shot_stats, false)
+	}
+	
+	shot_stats.Shot_Power_Level = shot_stats.Shot_Power / _pow_ratio
 	
 	if shot_stats.Shot_Hit_Again = 0 {
 	    shot_id = other.shot_id;
@@ -23,7 +29,7 @@ function scr_Duplicate_Shot_Stats() {
 	
 	//Print_DF(shot_stats)
 	
-	shot_stats = scr_Setup_Shot_Stats_Asset(shot_stats);
+	//shot_stats = scr_Setup_Shot_Stats_Asset(shot_stats);
 
 	target = other.target;
 	otarget = other.otarget;
@@ -34,6 +40,8 @@ function scr_Duplicate_Shot_Stats() {
 	image_index = shot_stats.Shot_Frame;
 	image_speed = shot_stats.Shot_Image_Speed;
 	image_alpha = shot_stats.Shot_Alpha;
+	
+	shot_stats.Shot_Origin = other.shot_stats.Shot_Origin;
 
 	/*
 	shot_stats.Shot_Gem = other.shot_stats.Shot_Gem;

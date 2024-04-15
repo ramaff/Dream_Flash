@@ -23,7 +23,7 @@ function scr_Beast_Maw_Teleport_Use(dist, ang) {
 	current_weapon_stats.Shot_Speed = 0;
 	current_weapon_stats.Shot_Movement = 0;
 	current_weapon_stats.Shot_Power = 30 * global.soulstateformboost * (1 + global.teleportboost);
-	current_weapon_stats.Shot_Knockback = 10;
+	current_weapon_stats.Shot_Knock_Back = 10;
 	current_weapon_stats.Shot_Life_Span = 23;
 	
 	current_weapon_stats.Shot_Screen_Shake = 6;

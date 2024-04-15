@@ -224,10 +224,9 @@ function scr_Soul_Shot_Boss_Hit() {
 			if shot_stats.Shot_Spike_Aura = true {
 				with instance_create(x, y, obj_Spike_Aura) {
 					damage = other.shot_stats.Shot_Power * 1.35 * global.soulstateformboost / 40;
-					direction = other.direction - 20 + random(40);
+					direction = other.direction - 45 + random(90);
 					image_angle = direction;
-					image_xscale = 0.3 + sqrt(damage / 350)
-					//other.image_xscale * (1 + (sqrt(other.shot_stats.Shot_Power) / 20));
+					image_xscale = 0.2 + sqrt(damage / 9);
 					image_yscale = image_xscale;
 					
 					alarm[0] = 20;

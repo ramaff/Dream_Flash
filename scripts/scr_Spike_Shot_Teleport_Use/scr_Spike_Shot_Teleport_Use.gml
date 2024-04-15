@@ -13,7 +13,7 @@ function scr_Spike_Shot_Teleport_Use(dist, ang) {
 	current_weapon_stats.Shot_Speed = 0;
 	current_weapon_stats.Shot_Movement = 0;
 	current_weapon_stats.Shot_Power = 20 * global.soulstateformboost * (1 + global.teleportboost);
-	current_weapon_stats.Shot_Knockback = 10;
+	current_weapon_stats.Shot_Knock_Back = 10;
 	current_weapon_stats.Shot_Life_Span = 15;
 	current_weapon_stats.Shot_Off_State = 1;
 	current_weapon_stats.Shot_XX = lengthdir_x(dist, ang);

@@ -13,7 +13,7 @@ function scr_W02(teleport_dir = point_direction(x,y,mouse_x,mouse_y)) {
 			Shot_Type: "obj_Lesser_Soul_Shot",
 			Shot_Speed: 5.5,
 			Shot_Power: (4 + 8 * global.W[02]) * (1 + global.teleportboost),
-			Shot_Knockback: 10,
+			Shot_Knock_Back: 10,
 			Shot_Life_Span: 60,
 			Shot_Pierce: 1,
 			Shot_Point_Angle: 1,

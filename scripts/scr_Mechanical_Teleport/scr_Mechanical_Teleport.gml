@@ -15,7 +15,7 @@ function scr_Mechanical_Teleport() {
 
 		current_weapon_stats.Shot_Speed = 1.75;
 		current_weapon_stats.Shot_Power = 10 * global.soulstateformboost * (1 + global.teleportboost);
-		current_weapon_stats.Shot_Knockback = 10;
+		current_weapon_stats.Shot_Knock_Back = 10;
 		current_weapon_stats.Shot_Life_Span = 180;
 
 		current_weapon_stats.Shot_Shield_Type = 1;

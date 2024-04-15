@@ -133,7 +133,7 @@ function scr_Weapon_Use_List(cWP = global.currentweapon, _weap_slot = 0) {
 					}
 					
 					if Shot_Repetition_Direction[bi] > -1 {
-						Shot_Repetition_Direction[bi] = Shot_Direction	
+						Shot_Repetition_Direction[bi] = current_weapon_stats.Shot_Direction	
 					}
 					
 					alarm[11] = (Shot_Barrage_Speed[bi]);

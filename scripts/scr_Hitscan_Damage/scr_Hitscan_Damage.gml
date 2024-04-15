@@ -91,7 +91,7 @@ function scr_Hitscan_Damage(argument0, argument1) {
 	    shot_stats.Shot_Freeze = Shot_Freeze;
 	    shot_stats.Shot_Freeze_Time = Shot_Freeze_Time;
 	
-		shot_stats.Shot_Knock_Back = other.Shot_Knockback * other.sshotknockback / 10;
+		shot_stats.Shot_Knock_Back = other.Shot_Knock_Back * other.sshotknockback / 10;
 	
 		var bdir = angle;
 	
@@ -204,7 +204,7 @@ function scr_Hitscan_Damage(argument0, argument1) {
     
 			Shot_Speed = Shot_Speed;
 			Shot_Power = Shot_Burst_Power;
-			Shot_Knockback = 0;
+			Shot_Knock_Back = 0;
 			Shot_Life_Span = Shot_Life_Span;
 	
 			Shot_Size = 0.5;

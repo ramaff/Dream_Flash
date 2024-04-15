@@ -13,7 +13,7 @@ function scr_Optimism_Shot(xxx,yyy) {
 		Shot_Direction: other.direction,
 		Shot_Acceleration: 0.05,
 		Shot_Power: (5 + other.bulletpower / 4),
-		Shot_Knockback: 10,
+		Shot_Knock_Back: 10,
 		Shot_Life_Span: 180,
 		Shot_Pierce: 1,
 		Shot_Size: 0.4 + random(0.1),
@@ -75,7 +75,7 @@ function scr_Optimism_Shot(xxx,yyy) {
 	if Shot_Power < 0 {
 		Shot_Power = 0;	
 	}
-	Shot_Knockback = 10;
+	Shot_Knock_Back = 10;
 	Shot_Life_Span = 180;
 	
 	Shot_Homing_Type = 1;

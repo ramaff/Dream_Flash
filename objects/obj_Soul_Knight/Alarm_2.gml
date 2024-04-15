@@ -12,7 +12,7 @@ if instance_exists(obj_Boss_Parent) {
     
     current_weapon_stats.Shot_Speed = 0.5;
     current_weapon_stats.Shot_Power = 15;
-    current_weapon_stats.Shot_Knockback = 11;
+    current_weapon_stats.Shot_Knock_Back = 11;
     current_weapon_stats.Shot_Life_Span = 7;
 	current_weapon_stats.Shot_Angle = -90 + point_direction(x,y,instance_nearest(x,y,obj_Boss_Parent).x,instance_nearest(x,y,obj_Boss_Parent).y);
 	Image_Rotation_Speed = 30;

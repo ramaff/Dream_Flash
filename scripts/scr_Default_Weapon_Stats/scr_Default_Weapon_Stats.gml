@@ -92,7 +92,7 @@ function scr_Default_Weapon_Stats() {
 
 	Shot_Speed = 4;
 	Shot_Power = 10;
-	Shot_Knockback = 10;
+	Shot_Knock_Back = 10;
 	Shot_Life_Span = 100;
 
 	Shot_Soul_Damage = 0;

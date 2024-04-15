@@ -24,7 +24,7 @@ function scr_B14_Heart(truedam){
 				Shot_Speed: 0.6 + random(0.8),
 				Shot_Acceleration: 0.02,
 				Shot_Power: dam,
-				Shot_Knockback: 10,
+				Shot_Knock_Back: 10,
 				Shot_Life_Span: 360,
 				Shot_Pierce: 1,
 				Shot_Homing_Type: 1,

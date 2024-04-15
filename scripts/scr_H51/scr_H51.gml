@@ -15,7 +15,7 @@ function scr_H51(){
 		Shot_Power: 12 * global.soulheartboost,
 		Shot_Mouse: 0,
 		Shot_Direction: 0,
-		Shot_Knockback: 10,
+		Shot_Knock_Back: 10,
 		Shot_Life_Span: 60,
 		Shot_Lobbing: true,
 		Shot_Lobbing_Tilt: 10,
@@ -55,7 +55,7 @@ function scr_H51(){
     
 	Shot_Speed = 8;
 	Shot_Power = 12 * global.soulheartboost;
-	Shot_Knockback = 10;
+	Shot_Knock_Back = 10;
 	Shot_Life_Span = 90;
 		
 	Shot_Point_Angle = 1;
