@@ -431,7 +431,7 @@
     {"name":"obj_Poison_Pool","order":2,"path":"objects/obj_Poison_Pool/obj_Poison_Pool.yy",},
     {"name":"obj_Fire_Trail","order":1,"path":"objects/obj_Fire_Trail/obj_Fire_Trail.yy",},
     {"name":"scr_Mechanical_Turret_Spawns","order":3,"path":"scripts/scr_Mechanical_Turret_Spawns/scr_Mechanical_Turret_Spawns.yy",},
-    {"name":"spr_Spike_Tall_Shot","order":12,"path":"sprites/spr_Spike_Tall_Shot/spr_Spike_Tall_Shot.yy",},
+    {"name":"spr_Rising_Spike_Tall","order":12,"path":"sprites/spr_Rising_Spike_Tall/spr_Rising_Spike_Tall.yy",},
     {"name":"obj_relentless_wisper_v2","order":1,"path":"objects/obj_relentless_wisper_v2/obj_relentless_wisper_v2.yy",},
     {"name":"scr_Beast_Maw_Use","order":2,"path":"scripts/scr_Beast_Maw_Use/scr_Beast_Maw_Use.yy",},
     {"name":"spr_Soul_Menu_Heart2047","order":1,"path":"sprites/spr_Soul_Menu_Heart2047/spr_Soul_Menu_Heart2047.yy",},

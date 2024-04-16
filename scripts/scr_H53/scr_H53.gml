@@ -27,8 +27,8 @@ function scr_H53(){
         current_weapon_stats.Shot_Trail_Fade = 0
 		current_weapon_stats.Shot_Trail_Direction = 45 + random(90);
 		current_weapon_stats.Shot_Trail_Speed = 1 + random(3);
-        current_weapon_stats.Shot_Trail_Color1 = [255,42,0]
-        current_weapon_stats.Shot_Trail_Color2 = [255,42,0]
+        current_weapon_stats.Shot_Trail_Color_1 = [255,42,0]
+        current_weapon_stats.Shot_Trail_Color_2 = [255,42,0]
 		
 		current_weapon_stats.Shot_Extra_Stats = [
             {

@@ -4291,7 +4291,7 @@
     {"id":{"name":"obj_Flash_Overlay","path":"objects/obj_Flash_Overlay/obj_Flash_Overlay.yy",},},
     {"id":{"name":"obj_Vortex_Tornado","path":"objects/obj_Vortex_Tornado/obj_Vortex_Tornado.yy",},},
     {"id":{"name":"obj_Increasing_Orbital_Bullet","path":"objects/obj_Increasing_Orbital_Bullet/obj_Increasing_Orbital_Bullet.yy",},},
-    {"id":{"name":"spr_Spike_Tall_Shot","path":"sprites/spr_Spike_Tall_Shot/spr_Spike_Tall_Shot.yy",},},
+    {"id":{"name":"spr_Rising_Spike_Tall","path":"sprites/spr_Rising_Spike_Tall/spr_Rising_Spike_Tall.yy",},},
     {"id":{"name":"obj_Increasing_Orbital_Mace_Bullet","path":"objects/obj_Increasing_Orbital_Mace_Bullet/obj_Increasing_Orbital_Mace_Bullet.yy",},},
     {"id":{"name":"spr_Villain_Slam","path":"sprites/spr_Villain_Slam/spr_Villain_Slam.yy",},},
     {"id":{"name":"scr_XA03_Shot_Mod","path":"scripts/scr_XA03_Shot_Mod/scr_XA03_Shot_Mod.yy",},},

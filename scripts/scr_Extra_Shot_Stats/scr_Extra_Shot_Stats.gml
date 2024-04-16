@@ -84,8 +84,8 @@ function scr_Extra_Shot_Stats() {
 	shot_stats.Shot_Trail = other.Shot_Trail;
 	shot_stats.Shot_Trail_Type = other.Shot_Trail_Type;
 	shot_stats.Shot_Trail_Sprite = other.Shot_Trail_Sprite;
-	shot_stats.Shot_Trail_Color1 = other.Shot_Trail_Color1;
-	shot_stats.Shot_Trail_Color2 = other.Shot_Trail_Color2;
+	shot_stats.Shot_Trail_Color_1 = other.Shot_Trail_Color_1;
+	shot_stats.Shot_Trail_Color_2 = other.Shot_Trail_Color_2;
 	shot_stats.Shot_Trail_Life = other.Shot_Trail_Life;
 	shot_stats.Shot_Trail_Area = other.Shot_Trail_Area;
 	shot_stats.Shot_Trail_Speed = other.Shot_Trail_Speed;

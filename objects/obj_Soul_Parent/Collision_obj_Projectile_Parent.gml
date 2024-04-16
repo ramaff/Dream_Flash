@@ -1,4 +1,4 @@
-if other.shot_stats.Shot_Soul_Damage > 0 {
+if other.shot_stats.Shot_Soul_Damage > 0 and soul_underground <= 0 {
     if soulinvincibility <= 0 {
 		
 		if global.V[5] > 0 {

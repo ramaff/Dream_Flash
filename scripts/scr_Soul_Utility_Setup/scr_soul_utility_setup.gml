@@ -4,6 +4,8 @@ function scr_Soul_Utility_Setup() {
 	soulDeathFadeSpeed = 0;
 	baseDepth = -0.01;
 	soulSpiritHits = 0;
+	
+	soul_underground = -1;
 
 	soulshotmouse = 1;
 	soulshotdirection = 0;

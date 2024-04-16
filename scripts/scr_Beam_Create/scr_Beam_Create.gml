@@ -137,8 +137,6 @@ function scr_Beam_Create(shxx, shyy, beamseg, beamdir, curvedir, beamstop, beamx
 				}
 			}	
 		}
-		//Print_DF("beam shot pre duplicate stats: " + string(shot_stats))
-		//Print_DF("shot pow pre: " + string(shot_stats.Shot_Power))
 		
 		var _par_power = shot_stats.Shot_Power;
 		
@@ -147,8 +145,6 @@ function scr_Beam_Create(shxx, shyy, beamseg, beamdir, curvedir, beamstop, beamx
 
 				scr_Duplicate_Shot_Stats();
 				
-				//Print_DF("beam shot duplicate stats: " + string(shot_stats))
-				//Print_DF("shot pow post: " + string(shot_stats.Shot_Power))
 				shot_stats.Shot_Power = _par_power
 				
 				image_angle = beamdir - dirChange;
@@ -162,12 +158,15 @@ function scr_Beam_Create(shxx, shyy, beamseg, beamdir, curvedir, beamstop, beamx
 				if alarm[0] < 1 {
 					alarm[0] = 1;
 				}
+				
 					
-				var sstr = sprite_get_name(other.sprite_index)
+				//var sstr = sprite_get_name(other.sprite_index)
+				var sstr = shot_stats.Shot_Sprite
 				var ssstr = string_delete(sstr,string_length(sstr) - 4, 5)
 				var pspr = ""
-					
-				//sprite_index = spr_Straight_Beam;
+
+				sprite_index = asset_get_index(ssstr + "Shot")
+
 				if dirChange != 0 {
 					var absChange = abs(dirChange);
 						

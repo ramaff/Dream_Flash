@@ -106,13 +106,13 @@ function scr_Setup_Weapon_Stats(_current_weapon_stats = current_weapon_stats) {
 	if variable_struct_exists(_current_weapon_stats, "Shot_Trail_Sprite") {
 		Shot_Trail_Sprite = asset_get_index(_current_weapon_stats.Shot_Trail_Sprite)
 	}
-	if variable_struct_exists(_current_weapon_stats, "Shot_Trail_Color1") {
-		var cray = _current_weapon_stats.Shot_Trail_Color1
-		Shot_Trail_Color1 = make_color_rgb(cray[0],cray[1],cray[2]);
+	if variable_struct_exists(_current_weapon_stats, "Shot_Trail_Color_1") {
+		var cray = _current_weapon_stats.Shot_Trail_Color_1
+		Shot_Trail_Color_1 = make_color_rgb(cray[0],cray[1],cray[2]);
 	}
-	if variable_struct_exists(_current_weapon_stats, "Shot_Trail_Color2") {
-		var cray = _current_weapon_stats.Shot_Trail_Color2
-		Shot_Trail_Color2 = make_color_rgb(cray[0],cray[1],cray[2]);
+	if variable_struct_exists(_current_weapon_stats, "Shot_Trail_Color_2") {
+		var cray = _current_weapon_stats.Shot_Trail_Color_2
+		Shot_Trail_Color_2 = make_color_rgb(cray[0],cray[1],cray[2]);
 	}
 	if variable_struct_exists(_current_weapon_stats, "Shot_Trail_Life") {
 		Shot_Trail_Life = _current_weapon_stats.Shot_Trail_Life

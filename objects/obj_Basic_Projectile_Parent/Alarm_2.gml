@@ -21,7 +21,7 @@ if global.gameParticles > 0 {
 			image_angle = other.image_angle;
 			depth = other.depth - 1;
 		
-			image_blend = scr_Mix_Two_Color_Arrays(other.shot_stats.Shot_Trail_Color1, other.shot_stats.Shot_Trail_Color2)
+			image_blend = scr_Mix_Two_Color_Arrays(other.shot_stats.Shot_Trail_Color_1, other.shot_stats.Shot_Trail_Color_2)
 
 			size = other.shot_stats.Shot_Size;
 			image_xscale = size;

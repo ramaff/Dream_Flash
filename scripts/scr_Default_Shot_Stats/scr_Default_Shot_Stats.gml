@@ -47,8 +47,8 @@ function scr_Default_Shot_Stats() {
 	shot_stats.Shot_Trail_Type = obj_Weapon_Trail;
 	shot_stats.Shot_Trail_Hit_Type = obj_Friction_Part;
 	shot_stats.Shot_Trail_Sprite = spr_Essence_Trail_Bit;
-	shot_stats.Shot_Trail_Color1 = c_white;
-	shot_stats.Shot_Trail_Color2 = c_white;
+	shot_stats.Shot_Trail_Color_1 = c_white;
+	shot_stats.Shot_Trail_Color_2 = c_white;
 	shot_stats.Shot_Trail_Life = 15;
 	shot_stats.Shot_Trail_Area = 12;
 	shot_stats.Shot_Trail_Speed = 0;

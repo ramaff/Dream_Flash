@@ -31,8 +31,8 @@ function scr_Bleeding_Shot(xxx,yyy, power) {
 	current_weapon_stats.Shot_Trail_Area = 15;
 	current_weapon_stats.Shot_Trail_Life = 20;
 	current_weapon_stats.Shot_Trail_Fade = 0;
-	current_weapon_stats.Shot_Trail_Color1 = [255,0,0];
-	current_weapon_stats.Shot_Trail_Color2 = [200,0,0];
+	current_weapon_stats.Shot_Trail_Color_1 = [255,0,0];
+	current_weapon_stats.Shot_Trail_Color_2 = [200,0,0];
 	current_weapon_stats.Shot_Trail_Hit_Count = 13;
 	current_weapon_stats.Shot_Trail_Hit_Life = 10;
 	

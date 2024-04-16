@@ -87,7 +87,7 @@ function scr_Soul_Shot_Boss_Hit() {
 				repeat(shot_stats.Shot_Trail_Hit_Count) {
 					var ddir = direction - 90 + random(180);
 					scr_Particle_Burst(asset_get_index(shot_stats.Shot_Trail_Hit_Type), asset_get_index(shot_stats.Shot_Trail_Hit_Sprite), 
-									   shot_stats.Shot_Trail_Color1, shot_stats.Shot_Trail_Color2, 1, 12 + random(8), ddir,
+									   shot_stats.Shot_Trail_Color_1, shot_stats.Shot_Trail_Color_2, 1, 12 + random(8), ddir,
 									   0, 0, shot_stats.Shot_Size + random(0.2), 15 + random(10))
 				}
 				

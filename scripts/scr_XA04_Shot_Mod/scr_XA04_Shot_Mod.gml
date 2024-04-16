@@ -37,8 +37,8 @@ function scr_XA04_Shot_Mod(){
 		//if shot_stats.Shot_Trail < 2 {
 			shot_stats.Shot_Trail = 2;
 			shot_stats.Shot_Trail_Sprite = "spr_Soul_Big_Bit";
-			shot_stats.Shot_Trail_Color1 = c_red;
-			shot_stats.Shot_Trail_Color2 = c_yellow;
+			shot_stats.Shot_Trail_Color_1 = c_red;
+			shot_stats.Shot_Trail_Color_2 = c_yellow;
 			shot_stats.Shot_Trail_Life = 10;
 			shot_stats.Shot_Trail_Area = 20;
 			shot_stats.Shot_Trail_Frequency = 2;

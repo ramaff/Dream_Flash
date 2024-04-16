@@ -2,7 +2,7 @@
 // https://help.yoyogames.com/hc/en-us/articles/360005277377 for more information
 function scr_Initial_Beam_Shot_Setup(shxx = x, shyy = y){
 
-	if shot_stats.Shot_Type = obj_Beam_Shot {
+	if shot_stats.Shot_Type = "obj_Beam_Shot" {
 		
 		var beamseg = 1;
 		var beamdir = direction;

@@ -22,8 +22,8 @@ function scr_P07() {
 		shot_stats.Shot_Trail_Area = 15;
 		shot_stats.Shot_Trail_Life = 20;
 		shot_stats.Shot_Trail_Fade = 0;
-		shot_stats.Shot_Trail_Color1 = make_color_rgb(255,246,0);
-		shot_stats.Shot_Trail_Color2 = make_color_rgb(255,119,0);
+		shot_stats.Shot_Trail_Color_1 = make_color_rgb(255,246,0);
+		shot_stats.Shot_Trail_Color_2 = make_color_rgb(255,119,0);
 		shot_stats.Shot_Trail_Hit_Count = 13;
 		shot_stats.Shot_Trail_Hit_Life = 10;
 	}

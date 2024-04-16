@@ -21,7 +21,7 @@ if soulinvincibility <= 0 {
 }
 */
 
-if soulinvincibility <= 0 {
+if soulinvincibility <= 0 and soul_underground <= 0 {
 	
 	if global.V[5] > 0 {
 		var _evaded = scr_V05();

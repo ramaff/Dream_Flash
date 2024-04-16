@@ -26,8 +26,8 @@ function scr_V07_Use() {
 			Shot_Trail_Sprite: "spr_Huge_Essence_Trail_Bit",
 			Shot_Trail_Area: 40,
 			Shot_Trail_Fade: 0,
-			Shot_Trail_Color1: [50,50,200],
-			Shot_Trail_Color2: [0,20,150]
+			Shot_Trail_Color_1: [50,50,200],
+			Shot_Trail_Color_2: [0,20,150]
 		};
 		
 

@@ -33,8 +33,8 @@ function scr_XC02_Shot_Mod(){
 			shot_stats.Shot_Trail = 3;
 			shot_stats.Shot_Trail_Type = "obj_Black_Hole_Part"
 			shot_stats.Shot_Trail_Sprite = "spr_Soul_Big_Bit";
-			shot_stats.Shot_Trail_Color1 = make_color_rgb(50, 0, 100)
-			shot_stats.Shot_Trail_Color2 = make_color_rgb(50, 0, 250)
+			shot_stats.Shot_Trail_Color_1 = make_color_rgb(50, 0, 100)
+			shot_stats.Shot_Trail_Color_2 = make_color_rgb(50, 0, 250)
 			shot_stats.Shot_Trail_Life = 15;
 			shot_stats.Shot_Trail_Area = 150;
 			shot_stats.Shot_Trail_Frequency = 4;

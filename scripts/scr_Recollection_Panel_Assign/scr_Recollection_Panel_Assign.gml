@@ -212,18 +212,18 @@ function scr_Recollection_Panel_Assign() {
 	    }
 		inum += 6;
 		
-		for(i = inum; i <= inum+7; i++) {
+		for(i = inum; i <= inum+8; i++) {
 	        if buttNum = i {
 	            itemVal = "P0" + string(i + 1 - inum);
 	        }
 	    }
-		inum += 8;
-	    for(i = inum; i <= inum+2; i++) {
+		inum += 9;
+	    for(i = inum; i <= inum+3; i++) {
 	        if buttNum = i {
 	            itemVal = "Q0" + string(i + 1 - inum);
 	        }
 	    }
-		inum += 3;
+		inum += 4;
 	    for(i = inum; i <= inum+5; i++) {
 	        if buttNum = i {
 	            itemVal = "R0" + string(i + 1 - inum);

@@ -52,9 +52,10 @@ function scr_Soul_Teleport(_evasion = false){
     
 	if scr_State_Active_Check("Spike") {
 		alarm[7] = 90;
-		image_xscale = 0;
-		image_yscale = 0;
-		size = 0;
+		//image_xscale = 0;
+		//image_yscale = 0;
+		//size = 0;
+		soul_underground = 90;
 		soulinvincibility += 90;
 		_base_tele_delay += 90
 	} else if scr_State_Active_Check("Bleeding") {

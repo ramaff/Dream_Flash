@@ -29,8 +29,8 @@ function scr_H51(){
 		Shot_Trail_Sprite: "spr_Soul_Big_Bit",
 		Shot_Trail_Area: 15,
 		Shot_Trail_Life: 25,
-		Shot_Trail_Color1: [149,50,255],
-		Shot_Trail_Color2: [133,76,255]
+		Shot_Trail_Color_1: [149,50,255],
+		Shot_Trail_Color_2: [133,76,255]
 	};
 	
 	current_weapon_stats = scr_Setup_Weapon_Stats(current_weapon_stats);
@@ -66,8 +66,8 @@ function scr_H51(){
 	Shot_Trail = 1;
 	Shot_Trail_Sprite = spr_Essence_Trail_Bit;
 	Shot_Trail_Area = 15;
-	Shot_Trail_Color1 = make_color_rgb(149,50,255);
-	Shot_Trail_Color2 = make_color_rgb(133,76,255);
+	Shot_Trail_Color_1 = make_color_rgb(149,50,255);
+	Shot_Trail_Color_2 = make_color_rgb(133,76,255);
     
 	if instance_exists(obj_Boss_Parent) {
 		Shot_Direction = point_direction(x,y,instance_nearest(x,y,obj_Boss_Parent).x,instance_nearest(x,y,obj_Boss_Parent).y);
