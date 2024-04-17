@@ -1,23 +1,23 @@
-function scr_Shot_Creation() {
+function scr_Shot_Creation(_cw = current_weapon_stats) {
 	
 	scr_Spike_Soul_Extra();
-	scr_Casting_Soul_Manual_Synergy();
-	scr_Scrub_Soul_Weapon_Mod();
+	scr_Casting_Soul_Manual_Synergy(_cw);
+	scr_Scrub_Soul_Weapon_Mod(_cw);
 	
-	scr_E10();
-	scr_A12();
-	scr_D06();
-	scr_A08();
-	scr_D11();
+	scr_E10(_cw);
+	scr_A12(_cw);
+	scr_D06(_cw);
+	scr_A08(_cw);
+	scr_D11(_cw);
 	//scr_V09_Add_old();
 	
-	scr_P09();
+	scr_P09(_cw);
 	
-	scr_OB06();
-	scr_OC06();
-	scr_XB02();
-	scr_XA06();
-	scr_XA06();
+	scr_OB06(_cw);
+	scr_OC06(_cw);
+	scr_XB02(_cw);
+	scr_XA06(_cw);
+	//scr_XA06(_cw);
 	
 	
 	// Note
@@ -31,7 +31,7 @@ function scr_Shot_Creation() {
 	//show_debug_message(string(Shot_Count))
 	//show_debug_message(string(Shot_Repetition[bi]))
 	
-	var _cw = current_weapon_stats;
+	//var _cw = current_weapon_stats;
 	
 	//if Shot_Repetition[bi] >= 1 {
 		//_cw.Shot_Count = _cw.Shot_Default_Count[bi];
@@ -47,9 +47,9 @@ function scr_Shot_Creation() {
 
 	_cw.Shot_Count += global.soulshotamountadd + global.soulshotamountaddtemp;
 
-	scr_D10();
+	scr_D10(_cw);
 	
-	scr_XB05_Shot_Mod();
+	scr_XB05_Shot_Mod(_cw);
 
 	if _cw.Shot_Count > 1 {
 	    if _cw.Shot_Spread < 10 and _cw.Shot_Spread >= 0 {
@@ -80,10 +80,10 @@ function scr_Shot_Creation() {
 		}
 	}
 	
-	if Shot_Repetition[bi] == Shot_Repetition_Max[bi] {
-		Shot_Repetition_Stats[bi] = current_weapon_stats
+	/*if Shot_Repetition[bi] == Shot_Repetition_Max[bi] {
+		Shot_Repetition_Stats[bi] = scr_Dupe_Struct(_cw)
 		Shot_Repetition_Direction[bi] = actual_shot_direction
-	}
+	} */
 	
 	if Shot_Repetition[bi] >= 1 {
 		_cw.Shot_Direction = Shot_Repetition_Direction[bi];
@@ -153,7 +153,7 @@ function scr_Shot_Creation() {
 	
 		scr_Weapon_Part_Create();
 		
-		var mechFac = 1 + scr_Mechanical_Shot_Add();
+		var mechFac = 1 + scr_Mechanical_Shot_Add(_cw);
 		var speedFac = 1;
 		if mechFac > 1 and _cw.Shot_XX = 0 and _cw.Shot_YY = 0 {
 			_cw.Shot_Direction = point_direction(x,y,mouse_x,mouse_y) 
@@ -182,16 +182,16 @@ function scr_Shot_Creation() {
 		var shxx = x + xx;
 		var shyy = y + yy;
 		
-		scr_E14_Shot_Mod();
+		scr_E14_Shot_Mod(_cw);
 		
-		scr_XB05_Shot_Stats();
+		scr_XB05_Shot_Stats(_cw);
 		
 		repeat(mechFac) {
 			
 		    with instance_create(shxx, shyy, asset_get_index(_cw.Shot_Type)) {
 		        scr_Default_Shot_Stats();
 				
-				shot_stats = json_parse(json_stringify(other.current_weapon_stats));
+				shot_stats = json_parse(json_stringify(_cw));
         
 				shot_stats.Shot_Origin = obj_Soul_Parent;
 		        target = noone;

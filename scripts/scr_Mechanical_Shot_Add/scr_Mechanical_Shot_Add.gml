@@ -1,8 +1,8 @@
 // Script assets have changed for v2.3.0 see
 // https://help.yoyogames.com/hc/en-us/articles/360005277377 for more information
-function scr_Mechanical_Shot_Add(){
+function scr_Mechanical_Shot_Add(_cw){
 	
-	if current_weapon_stats.Shot_Off_State = 1 {
+	if _cw.Shot_Off_State = 1 {
 		return 0;
 	}
 

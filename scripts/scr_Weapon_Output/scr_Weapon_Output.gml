@@ -5,7 +5,7 @@ function scr_Weapon_Output(_spawn_projectile = spawnProjectile, _minion = minion
 	if _spawn_projectile {
 		
 		if !_minion {
-			scr_Shot_Creation();
+			scr_Shot_Creation(_cw_stats);
 			scr_Q03(false);
 		} else {
 			scr_Soul_Spawn();
@@ -19,17 +19,20 @@ function scr_Weapon_Output(_spawn_projectile = spawnProjectile, _minion = minion
 			
 				//current_weapon_stats = Shot_Extra[i]
 				
-				_cw_stats.Shot_Extra[i] = scr_Struct_Merge(_cw_stats, _cw_stats.Shot_Extra[i], false)
+				if is_struct(_cw_stats.Shot_Extra[i]) {
+				
+					_cw_stats.Shot_Extra[i] = scr_Struct_Merge(_cw_stats, _cw_stats.Shot_Extra[i], false)
 			
-				current_weapon_stats = scr_Setup_Weapon_Stats(_cw_stats.Shot_Extra[i])
-				scr_Hard_Coded_Weapon_Stats(current_weapon_stats.Weapon_Number);
+					_cw_stats = scr_Setup_Weapon_Stats(_cw_stats.Shot_Extra[i])
+					scr_Hard_Coded_Weapon_Stats(_cw_stats.Weapon_Number);
 		
-				if !_minion {
-					scr_Shot_Creation();
-					scr_Q03(false);
-				} else {
-					scr_Soul_Spawn();
-					scr_Q03(true);
+					if !_minion {
+						scr_Shot_Creation(_cw_stats);
+						scr_Q03(false);
+					} else {
+						scr_Soul_Spawn();
+						scr_Q03(true);
+					}
 				}
 			}
 		}

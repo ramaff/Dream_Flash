@@ -1,6 +1,6 @@
 // Script assets have changed for v2.3.0 see
 // https://help.yoyogames.com/hc/en-us/articles/360005277377 for more information
-function scr_OC06(){
+function scr_OC06(_cw){
 
 	var _procs = floor(global.OC[6] / 3);
 	var _proc_mod = global.OC[6] mod 3;
@@ -17,23 +17,23 @@ function scr_OC06(){
  
 	if _procs >= 1 {
 		
-		current_weapon_stats.Shot_Size = sqrt((current_weapon_stats.Shot_Size * current_weapon_stats.Shot_Size) + (0.1 * _procs));
+		_cw.Shot_Size = sqrt((_cw.Shot_Size * _cw.Shot_Size) + (0.1 * _procs));
 		
-		if current_weapon_stats.Shot_Air_Burst_Stats = false {
-			current_weapon_stats.Shot_Air_Burst_Stats = [json_parse(json_stringify(current_weapon_stats))]
+		if _cw.Shot_Air_Burst_Stats = false {
+			_cw.Shot_Air_Burst_Stats = [json_parse(json_stringify(_cw))]
 		} else {
-			array_push(current_weapon_stats.Shot_Air_Burst_Stats, json_parse(json_stringify(current_weapon_stats)))	
+			array_push(_cw.Shot_Air_Burst_Stats, json_parse(json_stringify(_cw)))	
 		}
-		current_weapon_stats.Weapon_Split_Visible = 1;
-        current_weapon_stats.Weapon_Split_Hit_Again = 1;
-		var burstIndex = array_length(current_weapon_stats.Shot_Air_Burst_Stats) - 1;
-		variable_struct_set(current_weapon_stats.Shot_Air_Burst_Stats[burstIndex], "Burst_Power", 1);
-		variable_struct_set(current_weapon_stats.Shot_Air_Burst_Stats[burstIndex], "Burst_Size", 0.9);
-		variable_struct_set(current_weapon_stats.Shot_Air_Burst_Stats[burstIndex], "Shot_Life_Span", 0.7 * current_weapon_stats.Shot_Life_Span); 
-		variable_struct_set(current_weapon_stats.Shot_Air_Burst_Stats[burstIndex], "Air_Burst", true); 
-		variable_struct_set(current_weapon_stats.Shot_Air_Burst_Stats[burstIndex], "Range", 100 + random(40));
-		variable_struct_set(current_weapon_stats.Shot_Air_Burst_Stats[burstIndex], "Amount", 1 + _procs); 
-		variable_struct_set(current_weapon_stats.Shot_Air_Burst_Stats[burstIndex], "Spread", 70);
+		_cw.Weapon_Split_Visible = 1;
+        _cw.Weapon_Split_Hit_Again = 1;
+		var burstIndex = array_length(_cw.Shot_Air_Burst_Stats) - 1;
+		variable_struct_set(_cw.Shot_Air_Burst_Stats[burstIndex], "Burst_Power", 1);
+		variable_struct_set(_cw.Shot_Air_Burst_Stats[burstIndex], "Burst_Size", 0.9);
+		variable_struct_set(_cw.Shot_Air_Burst_Stats[burstIndex], "Shot_Life_Span", 0.7 * _cw.Shot_Life_Span); 
+		variable_struct_set(_cw.Shot_Air_Burst_Stats[burstIndex], "Air_Burst", true); 
+		variable_struct_set(_cw.Shot_Air_Burst_Stats[burstIndex], "Range", 100 + random(40));
+		variable_struct_set(_cw.Shot_Air_Burst_Stats[burstIndex], "Amount", 1 + _procs); 
+		variable_struct_set(_cw.Shot_Air_Burst_Stats[burstIndex], "Spread", 70);
 		
 	}
 
