@@ -99,16 +99,16 @@ if shot_stats.Shot_Wave_Direction < 0 {
 }
 
 if shot_stats.Shot_Mouse_Maintain = 1 {
-    var targetdirection = point_direction(x,y,mouse_x,mouse_y) + shotdirectionaddition;
+    var targetdirection = point_direction(x,y,mouse_x,mouse_y) + shot_stats.Shot_Direction_Addition;
 	
 	direction = scr_Angle_Converge(direction, targetdirection, speed + 2);
 	image_angle = direction
 	
 }
 if shot_stats.Shot_Soul_Maintain = 1 {
-	if instance_exists(shotfolloworigin) {
-	    x = shotfolloworigin.x + shotxmaintain;
-	    y = shotfolloworigin.y + shotymaintain;
+	if instance_exists(shot_stats.Shot_Follow_Origin) {
+	    x = shot_stats.Shot_Follow_Origin.x + shot_stats.Shot_X_Maintain;
+	    y = shot_stats.Shot_Follow_Origin.y + shot_stats.Shot_Y_Maintain;
 	}
 }
 

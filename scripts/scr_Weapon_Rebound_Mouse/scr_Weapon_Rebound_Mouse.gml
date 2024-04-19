@@ -15,9 +15,6 @@ function scr_Weapon_Rebound_Mouse() {
 	with(obj_Soul_Parent) {
 		scr_Default_Weapon_Stats();
 		
-		Shot_XX = other.xrelation;
-		Shot_YY = other.yrelation;
-		
 		current_weapon_stats = {
 			Shot_Spread: 0,
 			Shot_Accuracy: 5,
@@ -37,6 +34,9 @@ function scr_Weapon_Rebound_Mouse() {
 			Shot_Angle: other.image_angle, //point_direction(obj_Soul_Parent.x,obj_Soul_Parent.y,mouse_x,mouse_y)
 			Shot_Init_Grow: 0
 		};
+		
+		current_weapon_stats.Shot_XX = other.xrelation;
+		current_weapon_stats.Shot_YY = other.yrelation;
 	
 		if other.bspeed > 0 {
 	        current_weapon_stats.Shot_Speed = 3 + other.bspeed; 

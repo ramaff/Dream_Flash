@@ -113,8 +113,8 @@ function scr_Shot_Creation(_cw = current_weapon_stats) {
 				actual_shot_direction = point_direction(x,y,instance_nearest(x,y,obj_Boss_Parent).x,instance_nearest(x,y,obj_Boss_Parent).y);
 		 	}
 		}
-		var shotdirectionaddition = dir * ((40 + random(global.soulparanoia)) / 40) / saccuracy;
-		actual_shot_direction += shotdirectionaddition + _cw.Shot_Angle_Relative;
+		var _shot_direction_add = dir * ((40 + random(global.soulparanoia)) / 40) / saccuracy;
+		actual_shot_direction += _shot_direction_add + _cw.Shot_Angle_Relative;
 		
 		actual_shot_direction += scr_XA03_Weapon_Mod();
 		
@@ -127,7 +127,7 @@ function scr_Shot_Creation(_cw = current_weapon_stats) {
 	        xx = lengthdir_x(forward,actual_shot_direction);
 	        yy = lengthdir_y(forward,actual_shot_direction);
 			
-			if (obj_Soul_Parent.scurrentstate = "Bleeding" and Weapon_Melee = 0) {
+			if (obj_Soul_Parent.scurrentstate = "Bleeding" and _cw.Weapon_Melee = 0) {
 		        xx = lengthdir_x(50,actual_shot_direction);
 		        yy = lengthdir_y(50,actual_shot_direction);
 			}
@@ -137,9 +137,9 @@ function scr_Shot_Creation(_cw = current_weapon_stats) {
 	        xx = _cw.Shot_XX;
 	        yy = _cw.Shot_YY;
 	    }
-	    if _cw.Weapon_Soul_Maintain = 1 {
-	        _cw.Weapon_X_Maintain = xx;
-	        _cw.Weapon_Y_Maintain = yy;
+	    if _cw.Shot_Soul_Maintain = 1 {
+	        _cw.Shot_X_Maintain = xx;
+	        _cw.Shot_Y_Maintain = yy;
 	    }
 	
 		if _cw.Shot_Ground = 1 {
@@ -237,7 +237,7 @@ function scr_Shot_Creation(_cw = current_weapon_stats) {
 		            x = obj_Astral_Indicator.x;
 		            y = obj_Astral_Indicator.y + 8 - (shot_stats.Shot_Speed * 45);
 		            direction = 270;
-		            direction += shotdirectionaddition;
+		            direction += shot_stats.Shot_Direction_Addition;
 		        }
 				if shot_stats.Shot_Mouse_Origin = 1 {
 					x = obj_Astral_Indicator.x;

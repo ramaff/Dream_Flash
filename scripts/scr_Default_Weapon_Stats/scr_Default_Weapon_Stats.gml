@@ -18,10 +18,10 @@ function scr_Default_Weapon_Stats() {
 	Shot_Direction = 0;
 	Shot_Forward = 1;
 	Shot_ID = -1;
-	Weapon_Mouse_Maintain = 0;
-	Weapon_Soul_Maintain = 0;
-	Weapon_X_Maintain = 0;
-	Weapon_Y_Maintain = 0;
+	Shot_Mouse_Maintain = 0;
+	Shot_Soul_Maintain = 0;
+	Shot_X_Maintain = 0;
+	Shot_Y_Maintain = 0;
 	Shot_Movement = 1;
 	Shot_Mouse_Origin = 0;
 	Shot_Forward_Amount = 16;

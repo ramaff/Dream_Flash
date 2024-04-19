@@ -11,7 +11,7 @@ for (bi = 0; bi < 9; bi++) {
 			Shot_Forward_Amount = len;
 		}
 		
-		Shot_Stats = scr_Dupe_Struct(Shot_Repetition_Stats[bi])
+		Shot_Stats = Shot_Repetition_Stats[bi]
 		
 		Shot_Stats = scr_Setup_Weapon_Stats(Shot_Stats)
 		
@@ -23,7 +23,7 @@ for (bi = 0; bi < 9; bi++) {
 			//Shot_Count = Shot_Default_Count[bi];
 			
 			var _minion = false
-			if scr_Minion_Weapon(shot_stats.Weapon_Number) {
+			if scr_Minion_Weapon(Shot_Stats.Weapon_Number) {
 				_minion = true;	
 			}
 			
@@ -38,10 +38,6 @@ for (bi = 0; bi < 9; bi++) {
 				var len = (Shot_Repetition_Max[bi] - Shot_Repetition[bi]) * Shot_Repetition_Forward_Interval[bi];
 				
 				Shot_Stats.Shot_Forward_Amount = len;
-				//Shot_Forward = true;
-				//var _dir = Shot_Direction;
-				//Shot_XX = lengthdir_x(len,_dir);
-				//Shot_YY = lengthdir_y(len,_dir);
 			}
 			if Shot_Repetition_Type[bi] = "Laser Barrage" {
 				Shot_Stats.Shot_Spread += Shot_Stats.Shot_Spread * (Shot_Repetition_Max[bi] - Shot_Repetition[bi]);

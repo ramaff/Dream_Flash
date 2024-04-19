@@ -14,7 +14,7 @@ function scr_Weapon_Use_List(cWP = global.currentweapon, _weap_slot = 0) {
 	
 	if cWP = 603 and instance_exists(obj_Umbrella_Shot) {
 		with (obj_Umbrella_Shot) {
-			if shotfolloworigin = other.id {
+			if shot_stats.Shot_Follow_Origin = other.id {
 				_umbrella_active = true;
 			}
 		}
@@ -79,8 +79,8 @@ function scr_Weapon_Use_List(cWP = global.currentweapon, _weap_slot = 0) {
 		scr_D10_Shot_Mod();
 		
 		if obj_Soul_Parent.scurrentstate = "Bleeding" and cWP < 700 {
-			scr_Bleeding_Soul_Mod();
-			scr_Bleeding_Blade_Use();
+			scr_Bleeding_Soul_Mod(current_weapon_stats);
+			scr_Bleeding_Blade_Use(current_weapon_stats);
 		}
 		
 		current_weapon_stats = scr_Setup_Weapon_Stats(current_weapon_stats);
@@ -177,7 +177,7 @@ function scr_Weapon_Use_List(cWP = global.currentweapon, _weap_slot = 0) {
 			}
 		}	
 		
-		scr_Weapon_Output(spawnProjectile, minion)
+		scr_Weapon_Output(spawnProjectile, minion, current_weapon_stats)
 		
 		//if obj_Soul_Parent.scurrentstate = "Bleeding" and cWP < 700 {
 		//	scr_Bleeding_Blade_Use();

@@ -42,6 +42,8 @@ function scr_Duplicate_Shot_Stats(_new_shot_stats = other.shot_stats) {
 	image_alpha = shot_stats.Shot_Alpha;
 	
 	shot_stats.Shot_Origin = other.shot_stats.Shot_Origin;
+	
+	shot_stats.Shot_Follow_Origin = other.shot_stats.Shot_Follow_Origin;
 
 	/*
 	shot_stats.Shot_Gem = other.shot_stats.Shot_Gem;
@@ -58,9 +60,9 @@ function scr_Duplicate_Shot_Stats(_new_shot_stats = other.shot_stats) {
 	shot_stats.Shot_Healing = other.shot_stats.Shot_Healing;
 	shothealemit = other.shothealemit;
 	shot_stats.Shot_Movement = other.shot_stats.Shot_Movement;
-	shotfolloworigin = other.shotfolloworigin;
-	shotxmaintain = other.shotxmaintain;
-	shotymaintain = other.shotymaintain;
+	shot_stats.Shot_Follow_Origin = other.shot_stats.Shot_Follow_Origin;
+	shot_stats.Shot_X_Maintain = other.shot_stats.Shot_X_Maintain;
+	shot_stats.Shot_Y_Maintain = other.shot_stats.Shot_Y_Maintain;
 	shot_stats.Shot_Size_Relation = other.shot_stats.Shot_Size_Relation;
 
 	shot_stats.Shot_Trail = other.shot_stats.Shot_Trail;
@@ -146,7 +148,7 @@ function scr_Duplicate_Shot_Stats(_new_shot_stats = other.shot_stats) {
 
 	shot_stats.Shot_Mouse_Maintain = other.shot_stats.Shot_Mouse_Maintain;
 	shot_stats.Shot_Soul_Maintain = other.shot_stats.Shot_Soul_Maintain;
-	shotdirectionaddition = other.shotdirectionaddition;
+	shot_stats.Shot_Direction_Addition = other.shot_stats.Shot_Direction_Addition;
 
 	shot_stats.Shot_Grow = other.shot_stats.Shot_Grow;
 	shot_stats.Shot_Grow_Time = other.shot_stats.Shot_Grow_Time;

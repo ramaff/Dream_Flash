@@ -534,17 +534,17 @@ function scr_Setup_Weapon_Stats(_current_weapon_stats = current_weapon_stats) {
 	if variable_struct_exists(_current_weapon_stats, "Shot_Angles") {
 		Shot_Angles = _current_weapon_stats.Shot_Angles
 	}
-	if variable_struct_exists(_current_weapon_stats, "Weapon_Mouse_Maintain") {
-		Weapon_Mouse_Maintain = _current_weapon_stats.Weapon_Mouse_Maintain
+	if variable_struct_exists(_current_weapon_stats, "Shot_Mouse_Maintain") {
+		Shot_Mouse_Maintain = _current_weapon_stats.Shot_Mouse_Maintain
 	}
-	if variable_struct_exists(_current_weapon_stats, "Weapon_Soul_Maintain") {
-		Weapon_Soul_Maintain = _current_weapon_stats.Weapon_Soul_Maintain
+	if variable_struct_exists(_current_weapon_stats, "Shot_Soul_Maintain") {
+		Shot_Soul_Maintain = _current_weapon_stats.Shot_Soul_Maintain
 	}
-	if variable_struct_exists(_current_weapon_stats, "Weapon_X_Maintain") {
-		Weapon_X_Maintain = _current_weapon_stats.Weapon_X_Maintain
+	if variable_struct_exists(_current_weapon_stats, "Shot_X_Maintain") {
+		Shot_X_Maintain = _current_weapon_stats.Shot_X_Maintain
 	}
-	if variable_struct_exists(_current_weapon_stats, "Weapon_Y_Maintain") {
-		Weapon_Y_Maintain = _current_weapon_stats.Weapon_Y_Maintain
+	if variable_struct_exists(_current_weapon_stats, "Shot_Y_Maintain") {
+		Shot_Y_Maintain = _current_weapon_stats.Shot_Y_Maintain
 	}
 	if variable_struct_exists(_current_weapon_stats, "Shot_Mouse") {
 		Shot_Mouse = _current_weapon_stats.Shot_Mouse

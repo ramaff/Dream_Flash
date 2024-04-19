@@ -20,6 +20,8 @@ function scr_Extra_Shot_Stats() {
 
 	var shotaddedpow = ((10 + other.spowerfactor + other.sattackfactorbuffamount) / 10) * other.spower / 10 * scr_Class_Stat_Damage_Multiplier();
 	
+	shot_stats.Shot_Follow_Origin = other.id;
+	
 	/*
 
 	shot_stats.Image_Rotation_Speed = other.Image_Rotation_Speed;
@@ -72,11 +74,11 @@ function scr_Extra_Shot_Stats() {
 
 	shot_boss_id = real(shot_id);
 
-	shot_stats.Shot_Mouse_Maintain = other.Weapon_Mouse_Maintain;
-	shot_stats.Shot_Soul_Maintain = other.Weapon_Soul_Maintain;
-	shotxmaintain = other.Weapon_X_Maintain;
-	shotymaintain = other.Weapon_Y_Maintain;
-	shotfolloworigin = other.id;
+	shot_stats.Shot_Mouse_Maintain = other.Shot_Mouse_Maintain;
+	shot_stats.Shot_Soul_Maintain = other.Shot_Soul_Maintain;
+	shot_stats.Shot_X_Maintain = other.Shot_X_Maintain;
+	shot_stats.Shot_Y_Maintain = other.Shot_Y_Maintain;
+	shot_stats.Shot_Follow_Origin = other.id;
 	shot_stats.Shot_Movement = other.Shot_Movement;
 	shotkeepdirection = other.Shot_Keep_Direction;
 	shot_stats.Shot_Damage = other.Shot_Damage;

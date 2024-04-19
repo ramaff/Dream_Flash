@@ -174,19 +174,7 @@ function scr_Soul_Shot_Boss_Hit() {
 					}
 					instance_destroy();
 				}	
-			} /*else if shotbursttype >= 1 {
-	            dir = 90
-	            repeat(shotburstamount) {
-					shot_stats.Shot_Life_Span = shot_stats.Shot_Life_Span * 0.6;
-	                with instance_create(x,y,obj_Lesser_Soul_Shot) {
-						//shot_stats.Shot_Life_Span = other.shot_stats.Shot_Life_Span / 2;
-	                    scr_Duplicate_Shot_Stats();
-	                    //shot_stats.Shot_Life_Span = shot_stats.Shot_Life_Span / 2;
-	                    //alarm[0] = shot_stats.Shot_Life_Span;
-	                }
-	                dir += 360 / shotburstamount;
-	            }
-	        } */
+			} 
         
 	        if shot_stats.Shot_Impact_Type = 1 {
 	            with (obj_Boss_Parent) {

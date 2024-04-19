@@ -6,7 +6,7 @@ function scr_Bounce_Forcefield_Use() {
 	Shot_Count += 0;
 
 	Shot_Forward = 0;
-	Weapon_Soul_Maintain = 1;
+	Shot_Soul_Maintain = 1;
 
 	Shot_Sprite = spr_Bounce_Forcefield;
 	Shot_Type = obj_Defense_Soul_Shot;

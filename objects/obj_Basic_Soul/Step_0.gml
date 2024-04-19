@@ -14,7 +14,7 @@ if soul_underground > 0 {
 	x += lengthdir_x(_dis, _dir)
 	y += lengthdir_y(_dis, _dir)
 	
-	if soul_underground mod 2 = 0 {
+	if soul_underground mod 3 = 0 {
 		scr_Spike_Shot_Teleport_Use(0, 0);
 	}
 	
@@ -36,7 +36,7 @@ if soul_underground > 0 {
 
 		current_weapon_stats.Shot_Speed = 0;
 		current_weapon_stats.Shot_Movement = 0;
-		current_weapon_stats.Shot_Power = 30 * global.soulstateformboost * (1 + global.teleportboost);
+		current_weapon_stats.Shot_Power = 25 * global.soulstateformboost * (1 + global.teleportboost);
 		current_weapon_stats.Shot_Knock_Back = 10;
 		current_weapon_stats.Shot_Life_Span = 45;
 		current_weapon_stats.Shot_Off_State = 1;

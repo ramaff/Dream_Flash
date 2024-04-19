@@ -9,6 +9,7 @@ function scr_Default_Shot_Stats() {
 	//shot_boss_id = shot_id;
 	shot_id = id;
 	shot_boss_id = id;
+	shot_stats.Shot_Follow_Origin = noone
 	
 	/*
 	shot_id = global.instanceidincrementer - 1;
@@ -31,15 +32,15 @@ function scr_Default_Shot_Stats() {
 
 	shot_stats.Shot_Mouse_Maintain = 0;
 	shot_stats.Shot_Soul_Maintain = 0;
-	shotxmaintain = 0;
-	shotymaintain = 0;
-	shotdirectionaddition = 0;
+	shot_stats.Shot_X_Maintain = 0;
+	shot_stats.Shot_Y_Maintain = 0;
+	shot_stats.Shot_Direction_Addition = 0;
 	shot_stats.Shot_Form_Show = 1;
 	shot_stats.Shot_Movement = 1;
 	shothealemit = 0;
 	shot_stats.Shot_Light = 0;
 	shot_stats.Shot_Light_Size = 0;
-	shotfolloworigin = 0
+	shot_stats.Shot_Follow_Origin = 0
 	
 	shot_stats.Shot_Fear_Target = noone;
 

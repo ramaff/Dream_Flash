@@ -10,5 +10,6 @@ function scr_After_Image(lifespan = 10, shrink = true, fade = false){
 		image_xscale = other.image_xscale;
 		image_yscale = other.image_yscale;
 		image_blend = other.image_blend;
+		image_angle = other.image_angle;
 	}
 }

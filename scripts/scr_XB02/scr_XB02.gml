@@ -39,7 +39,7 @@ function scr_XB02(_cw) {
 			array_push(_cw.Shot_Air_Burst_Stats, json_parse(json_stringify(_cw)))	
 		}
 		_cw.Weapon_Split_Visible = 1;
-	   _cw. Weapon_Split_Hit_Again = 1;
+	    _cw.Weapon_Split_Hit_Again = 1;
 		var burstIndex = array_length(_cw.Shot_Air_Burst_Stats) - 1;
 		variable_struct_set(_cw.Shot_Air_Burst_Stats[burstIndex], "Burst_Power", _burst_pow); 
 		variable_struct_set(_cw.Shot_Air_Burst_Stats[burstIndex], "Burst_Size", _burst_size); 

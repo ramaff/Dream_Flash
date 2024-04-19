@@ -14,20 +14,19 @@ function scr_Weapon_Output(_spawn_projectile = spawnProjectile, _minion = minion
 		
 		if _cw_stats.Shot_Extra != false {
 			
-			var i = 0
-			for(i = 0; i < array_length(_cw_stats.Shot_Extra); i++) {
+			var _og_stats = scr_Dupe_Struct(_cw_stats)
+			var _size = array_length(_cw_stats.Shot_Extra)
 			
-				//current_weapon_stats = Shot_Extra[i]
+			for(var _i = 0; _i < _size; _i++) {
 				
-				if is_struct(_cw_stats.Shot_Extra[i]) {
+				if is_struct(_cw_stats.Shot_Extra[_i]) {
 				
-					_cw_stats.Shot_Extra[i] = scr_Struct_Merge(_cw_stats, _cw_stats.Shot_Extra[i], false)
-			
-					_cw_stats = scr_Setup_Weapon_Stats(_cw_stats.Shot_Extra[i])
-					scr_Hard_Coded_Weapon_Stats(_cw_stats.Weapon_Number);
+					var _ex_stats = scr_Struct_Merge(_og_stats, _cw_stats.Shot_Extra[_i], false)
+
+					scr_Hard_Coded_Weapon_Stats(_ex_stats.Weapon_Number);
 		
 					if !_minion {
-						scr_Shot_Creation(_cw_stats);
+						scr_Shot_Creation(_ex_stats);
 						scr_Q03(false);
 					} else {
 						scr_Soul_Spawn();
