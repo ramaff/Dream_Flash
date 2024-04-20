@@ -15,6 +15,9 @@ function scr_State_Stats(){
 	
 	
 	if obj_Soul_Parent.scurrentstate = "Snake" {
+		obj_Soul_Parent.sstatefirerate = 1 - (0.3);
+		global.soulstatefirerate = 1 - (0.3);
+		
 		obj_Soul_Parent.smovementspeed = 5 + (2.5 * global.soulstateformboost);
 		global.soulmovementspeed = 5 + (2.5 * global.soulstateformboost);
 	}

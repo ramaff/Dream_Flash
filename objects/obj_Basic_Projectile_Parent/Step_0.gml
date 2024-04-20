@@ -48,7 +48,7 @@ if shot_stats.Shot_Face_Direction = 1 {
 //	scr_Shot_Lobbing();
 //}
 
-shot_stats.Shot_Timer--;
+//shot_stats.Shot_Timer--;
 
 /*if alarm[0] <= shot_stats.Shot_Life_Span / 2 and shot_stats.Shot_Wander > 0 {
 	shot_stats.Shot_Wander--;
@@ -64,8 +64,8 @@ if shot_stats.Shot_Shrink = 1 {
 	image_xscale = shot_stats.Shot_Size;
 	image_yscale = shot_stats.Shot_Size;
 } else {
-	if (shot_stats.Shot_Timer <= (shot_stats.Shot_Life_Span / 10)) and shot_stats.Shot_Comeback = 0 and shot_stats.Shot_Lobbing = 0 {
-	  shot_stats.Shot_Size_Relation = ((shot_stats.Shot_Timer * 10) / shot_stats.Shot_Life_Span);
+	if (alarm[0] <= (shot_stats.Shot_Life_Span / 10)) and shot_stats.Shot_Comeback = 0 and shot_stats.Shot_Lobbing = 0 {
+	  shot_stats.Shot_Size_Relation = ((alarm[0] * 10) / shot_stats.Shot_Life_Span);
 	}
 }
 
@@ -339,13 +339,13 @@ if shot_stats.Shot_Snake_Move = 2 {
 }
 
 if shot_stats.Shot_Snake_Move > 0 {
-	direction = round(direction / 90) * 90;
+	direction = scr_Angle_Converge(direction, round(direction / 90) * 90, 10)
 }
 
-if instance_exists(shot_stats.Shot_Follow_Target) {
+if instance_exists(followtarget) {
 	var setdist = shot_stats.Shot_Speed * 5;
-	var dis = point_distance(x, y, shot_stats.Shot_Follow_Target.x, shot_stats.Shot_Follow_Target.y)
-	var follow_dir = point_direction(x, y, shot_stats.Shot_Follow_Target.x, shot_stats.Shot_Follow_Target.y)
+	var dis = point_distance(x, y, followtarget.x, followtarget.y)
+	var follow_dir = point_direction(x, y, followtarget.x, followtarget.y)
 	if dis > setdist {
 		speed = min(dis - setdist, shot_stats.Shot_Speed * 2);
 		direction = follow_dir;

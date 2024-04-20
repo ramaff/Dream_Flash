@@ -18,7 +18,7 @@ if shot_stats.Shot_Aura = 1 and image_alpha > 0 {
 
 var fdist = 50;
 var tdist = 50 / shot_stats.Shot_Init_Speed;
-var etime = shot_stats.Shot_Life_Span - shot_stats.Shot_Timer;
+var etime = shot_stats.Shot_Life_Span - alarm[0];
 var edist = shot_stats.Shot_Init_Speed * etime;
 
 var sSize = 1 - ((fdist - edist) / fdist);
@@ -31,7 +31,7 @@ if sSize < 0 {
 	sSize = 0;	
 }
 
-if ((shot_stats.Shot_Life_Span - shot_stats.Shot_Timer) <= (tdist)) and (shot_stats.Shot_Life_Span > (tdist)) and (shot_stats.Shot_Form_Show = 1) {
+if ((shot_stats.Shot_Life_Span - alarm[0]) <= (tdist)) and (shot_stats.Shot_Life_Span > (tdist)) and (shot_stats.Shot_Form_Show = 1) {
     //d3d_set_fog(true,c_white,0,0);
     //draw_sprite_ext(sprite_index,image_index,x,y,image_xscale * sSize,image_yscale * sSize,image_angle,c_white,image_alpha);
     //d3d_set_fog(false,c_black,0,0);

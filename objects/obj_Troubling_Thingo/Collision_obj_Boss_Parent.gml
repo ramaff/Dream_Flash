@@ -61,7 +61,7 @@ if shealth <= 0 {
                 move_towards_point(instance_nearest(x,y,obj_Troubling_Thingo).x,instance_nearest(x,y,obj_Troubling_Thingo).y, shot_stats.Shot_Speed);
                 shot_stats.Shot_Life_Span = 60 + distance_to_object(instance_nearest(x,y,obj_Troubling_Thingo)) / shot_stats.Shot_Speed;
                 alarm[0] = shot_stats.Shot_Life_Span;
-                shot_stats.Shot_Timer = shot_stats.Shot_Life_Span;
+                //shot_stats.Shot_Timer = shot_stats.Shot_Life_Span;
                 scr_Extra_Shot_Stats();
             }
         }

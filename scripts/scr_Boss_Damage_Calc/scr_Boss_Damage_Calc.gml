@@ -2,7 +2,7 @@ function scr_Boss_Damage_Calc() {
 	bossweak = 0;
 	
 	var speeddmg = shot_stats.Shot_Speed_Power_Add * speed;
-	var exist = (shot_stats.Shot_Life_Span - shot_stats.Shot_Timer);
+	var exist = (shot_stats.Shot_Life_Span - alarm[0]);
 	if exist < 30 and global.D[11] > 0 {
 		speeddmg += 1 * ceil((30 - exist) / 7.5 * global.D[11]);
 	}

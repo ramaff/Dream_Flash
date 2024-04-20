@@ -13,7 +13,7 @@ function scr_Soul_Shot_Expire_Event(){
 	    shot_stats.Shot_Hit_Again = 1;
 	    with instance_create(x,y,obj_Lesser_Soul_Shot) {
 	        scr_Duplicate_Shot_Stats();
-			shot_stats.Shot_Timer = shot_stats.Shot_Life_Span;
+			//shot_stats.Shot_Timer = shot_stats.Shot_Life_Span;
 			image_alpha = 1;
 	    }
 	}
@@ -31,11 +31,11 @@ function scr_Soul_Shot_Expire_Event(){
 		if shot_stats.Shot_Beam = 0 {
 		    with instance_create(obj_Soul_Parent.x,obj_Soul_Parent.y, object_index) {
 		        scr_Duplicate_Shot_Stats();
-				shot_stats.Shot_Timer = shot_stats.Shot_Life_Span;
+				//shot_stats.Shot_Timer = shot_stats.Shot_Life_Span;
 				image_alpha = 1;
 				//shot_stats.Shot_Form_Show = 0;
 				shot_stats.Shot_Size_Relation = 1;
-				shot_stats.Shot_Timer = shot_stats.Shot_Life_Span;
+				//shot_stats.Shot_Timer = shot_stats.Shot_Life_Span;
 				shot_stats.Shot_Size_Max = shot_stats.Shot_Size;
 				sprite_index = other.sprite_index;
 				direction = point_direction(obj_Soul_Parent.x,obj_Soul_Parent.y,mouse_x, mouse_y) - (shot_stats.Shot_Accuracy / 2) + random(shot_stats.Shot_Accuracy);
@@ -71,11 +71,11 @@ function scr_Soul_Shot_Expire_Event(){
 		
 		with instance_create(x,y,object_index) {
 	        scr_Duplicate_Shot_Stats();
-			shot_stats.Shot_Timer = shot_stats.Shot_Life_Span;
+			//shot_stats.Shot_Timer = shot_stats.Shot_Life_Span;
 			image_alpha = 1;
 			//shot_stats.Shot_Form_Show = 0;
 			shot_stats.Shot_Size_Relation = 1;
-			shot_stats.Shot_Timer = shot_stats.Shot_Life_Span;
+			//shot_stats.Shot_Timer = shot_stats.Shot_Life_Span;
 			shot_stats.Shot_Size_Max = shot_stats.Shot_Size;
 			sprite_index = other.sprite_index;
 	    } 

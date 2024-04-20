@@ -183,6 +183,7 @@ function scr_Shot_Creation(_cw = current_weapon_stats) {
 		var shyy = y + yy;
 		
 		scr_E14_Shot_Mod(_cw);
+		//scr_Snake_Glitch_Mod(_cw);
 		
 		scr_XB05_Shot_Stats(_cw);
 		
@@ -222,7 +223,7 @@ function scr_Shot_Creation(_cw = current_weapon_stats) {
 		        scr_Extra_Shot_Stats();
 		        scr_Weapon_Direction_List();
 			
-				shot_stats.Shot_Timer = shot_stats.Shot_Life_Span;
+				////shot_stats.Shot_Timer = shot_stats.Shot_Life_Span;
 			
 		        shot_stats.Shot_Melee = shot_stats.Weapon_Melee;
 		        if shot_stats.Shot_Wave_Time > 0 {

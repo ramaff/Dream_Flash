@@ -3,7 +3,7 @@
 function scr_State_Weapon_Mod(){
 	
 	if shot_stats.Shot_Off_State = 0 and shot_stats.Shot_Origin = obj_Soul_Parent {
-		if scr_State_Active_Check("Snake") and other.current_weapon_stats.Shot_Beam = 0 {
+		if scr_State_Active_Check("Snake") and shot_stats.Shot_Beam = 0 {
 			shot_stats.Shot_Snake_Move = 2;
 			shot_stats.Shot_Target_X = mouse_x;
 			shot_stats.Shot_Target_Y = mouse_y;
@@ -28,14 +28,16 @@ function scr_State_Weapon_Mod(){
 			
 			repeat(count) {
 				with instance_create(x,y, object_index) {
-					scr_Duplicate_Shot_Stats();
+					scr_Duplicate_Shot_Stats(other.shot_stats);
+					
+					sprite_index = other.sprite_index;
 				
 					followtarget = followtar;
 					followtar = id;	
 					
 					shot_stats.Shot_Snake_Move = 1;
 					
-					scr_Shot_Power_Set(0.15)
+					scr_Shot_Power_Set(0.5)
 					scr_Shot_Size_Set(0.7)
 					
 				}
@@ -53,7 +55,7 @@ function scr_State_Weapon_Mod(){
 				shot_stats.Shot_Life_Span = 20 + ((shot_stats.Shot_Life_Span - 20) / 3);
 			}
 			alarm[0] = shot_stats.Shot_Life_Span;
-		    shot_stats.Shot_Timer = shot_stats.Shot_Life_Span;
+		    ////shot_stats.Shot_Timer = shot_stats.Shot_Life_Span;
 			speed = shot_stats.Shot_Speed;
 		
 			shot_stats.Shot_Power_Max = shot_stats.Shot_Power_Max * (1.5 * global.soulstateformboost);
@@ -79,7 +81,7 @@ function scr_State_Weapon_Mod(){
 			shot_stats.Shot_Min_Speed = shot_stats.Shot_Speed * 0.2;
 			shot_stats.Shot_Life_Span = shot_stats.Shot_Life_Span * 2;
 			alarm[0] = shot_stats.Shot_Life_Span;
-		    shot_stats.Shot_Timer = shot_stats.Shot_Life_Span;
+		    ////shot_stats.Shot_Timer = shot_stats.Shot_Life_Span;
 			speed = shot_stats.Shot_Speed;
 			
 			/*shotbursttype = 3;
@@ -118,7 +120,7 @@ function scr_State_Weapon_Mod(){
 			} */
 		
 		}
-		if scr_State_Active_Check("Casting") and other.current_weapon_stats.Shot_Beam = 0 {
+		if scr_State_Active_Check("Casting") and shot_stats.Shot_Beam = 0 {
 			
 
 			shot_stats.Shot_Size = shot_stats.Shot_Size * 1.25;
@@ -168,7 +170,7 @@ function scr_State_Weapon_Mod(){
 
 			shot_stats.Shot_Life_Span = shot_stats.Shot_Life_Span * 2;
 			alarm[0] = shot_stats.Shot_Life_Span;
-		    shot_stats.Shot_Timer = shot_stats.Shot_Life_Span;
+		    ////shot_stats.Shot_Timer = shot_stats.Shot_Life_Span;
 			
 			shot_stats.Shot_Phasing = 1;
 			

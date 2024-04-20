@@ -36,7 +36,7 @@ function scr_Minion_Shot_Creation() {
 	        alarm[0] = shot_stats.Shot_Life_Span;
 	        scr_Extra_Shot_Stats();
 			
-			shot_stats.Shot_Timer = shot_stats.Shot_Life_Span;
+			//shot_stats.Shot_Timer = shot_stats.Shot_Life_Span;
 			
 	    }
 	    dir += current_weapon_stats.Shot_Spread;

@@ -44,6 +44,8 @@ function scr_Duplicate_Shot_Stats(_new_shot_stats = other.shot_stats) {
 	shot_stats.Shot_Origin = other.shot_stats.Shot_Origin;
 	
 	shot_stats.Shot_Follow_Origin = other.shot_stats.Shot_Follow_Origin;
+	
+	//shot_stats.Shot_Timer = shot_stats.Shot_Life_Span;
 
 	/*
 	shot_stats.Shot_Gem = other.shot_stats.Shot_Gem;
@@ -115,7 +117,7 @@ function scr_Duplicate_Shot_Stats(_new_shot_stats = other.shot_stats) {
 	shot_stats.Shot_Speed = other.shot_stats.Shot_Speed;
 	shot_stats.Shot_Knock_Back = other.shot_stats.Shot_Knock_Back;
 	shot_stats.Shot_Life_Span = other.shot_stats.Shot_Life_Span;
-	shot_stats.Shot_Timer = shot_stats.Shot_Life_Span;
+	//shot_stats.Shot_Timer = shot_stats.Shot_Life_Span;
 	
 	shot_stats.Shot_Exist_Time = other.shot_stats.Shot_Exist_Time;
 
@@ -345,7 +347,7 @@ function scr_Duplicate_Shot_Stats(_new_shot_stats = other.shot_stats) {
 
 	
 	shotA07 = other.shotA07;
-	//shot_stats.Shot_Follow_Target = other.shot_stats.Shot_Follow_Target;
-	//shot_stats.Shot_Fear_Target = other.shot_stats.Shot_Fear_Target;
+	followtarget = other.followtarget
+	shot_stats.Shot_Fear_Target = other.shot_stats.Shot_Fear_Target;
 
 }

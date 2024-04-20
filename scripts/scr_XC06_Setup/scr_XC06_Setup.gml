@@ -10,7 +10,7 @@ function scr_XC06_Setup(){
 		shot_stats.Shot_Fear_Target = noone;
 		shot_stats.Shot_Life_Span = shot_stats.Shot_Life_Span * 2;
 		alarm[0] = shot_stats.Shot_Life_Span;
-		shot_stats.Shot_Timer = shot_stats.Shot_Life_Span;
+		//shot_stats.Shot_Timer = shot_stats.Shot_Life_Span;
 	}
 
 }

@@ -10,7 +10,7 @@ var extra_shots_amount = array_length(extra_stats);
 var i = 0;
 for(i = 0; i < extra_shots_amount; i++) {
 	
-	if (shot_stats.Shot_Timer mod extra_stats[i].Shot_Extra_Hit_Frequency = 0) {
+	if (alarm[0] mod extra_stats[i].Shot_Extra_Hit_Frequency = 0) {
 	
 		var current_extra_stats = extra_stats[i]
 	    dir = 0;
@@ -58,7 +58,7 @@ for(i = 0; i < extra_shots_amount; i++) {
 			
 				shot_stats.Shot_Speed =	shot_stats.Shot_Speed;
 				shot_stats.Shot_Life_Span = shot_stats.Shot_Life_Span;
-				shot_stats.Shot_Timer = shot_stats.Shot_Life_Span;
+				////shot_stats.Shot_Timer = shot_stats.Shot_Life_Span;
 		
 				speed = shot_stats.Shot_Speed;
 				shot_stats.Shot_Homing_Type = shot_stats.Shot_Homing_Type;

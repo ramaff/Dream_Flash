@@ -17,7 +17,7 @@ repeat(shotburstamount) {
 		speed = shot_stats.Shot_Speed;
 		shot_stats.Shot_Life_Span = other.shot_stats.Shot_Life_Span / 2;
 		alarm[0] = shot_stats.Shot_Life_Span;
-		shot_stats.Shot_Timer = shot_stats.Shot_Life_Span;
+		//shot_stats.Shot_Timer = shot_stats.Shot_Life_Span;
 		
 		shot_stats.Shot_Size_Max = shot_stats.Shot_Size;
 		

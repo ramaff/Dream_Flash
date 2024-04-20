@@ -353,6 +353,7 @@
     {"name":"obj_Bubble_Jello","order":13,"path":"objects/obj_Bubble_Jello/obj_Bubble_Jello.yy",},
     {"name":"spr_infatuation_cloud_v2_cry","order":4,"path":"sprites/spr_infatuation_cloud_v2_cry/spr_infatuation_cloud_v2_cry.yy",},
     {"name":"snd_Standard_Explosion","order":4,"path":"sounds/snd_Standard_Explosion/snd_Standard_Explosion.yy",},
+    {"name":"obj_Snake_Glitch","order":1,"path":"objects/obj_Snake_Glitch/obj_Snake_Glitch.yy",},
     {"name":"obj_thought_cloud_v2","order":11,"path":"objects/obj_thought_cloud_v2/obj_thought_cloud_v2.yy",},
     {"name":"scr_Weapon_Status_Store","order":11,"path":"scripts/scr_Weapon_Status_Store/scr_Weapon_Status_Store.yy",},
     {"name":"spr_Recollection_Hover_Cloud_Leave","order":2,"path":"sprites/spr_Recollection_Hover_Cloud_Leave/spr_Recollection_Hover_Cloud_Leave.yy",},

@@ -22,7 +22,7 @@ function scr_Shot_Burst_Stats(_v_burst_stats){
 		speed = shot_stats.Shot_Speed;
 		shot_stats.Shot_Life_Span = shot_stats.Shot_Life_Span + 60;
 	    alarm[0] = shot_stats.Shot_Life_Span;
-		shot_stats.Shot_Timer = shot_stats.Shot_Life_Span;
+		//shot_stats.Shot_Timer = shot_stats.Shot_Life_Span;
 	}
 	if variable_struct_exists(_v_burst_stats, "Burst_Size") {
 		shot_stats.Shot_Size = shot_stats.Shot_Size * _v_burst_stats.Burst_Size
@@ -37,7 +37,7 @@ function scr_Shot_Burst_Stats(_v_burst_stats){
 	if variable_struct_exists(_v_burst_stats, "Shot_Life_Span") {
 		shot_stats.Shot_Life_Span = _v_burst_stats.Shot_Life_Span
 		alarm[0] = shot_stats.Shot_Life_Span;
-		shot_stats.Shot_Timer = shot_stats.Shot_Life_Span;
+		//shot_stats.Shot_Timer = shot_stats.Shot_Life_Span;
 	}
 	if variable_struct_exists(_v_burst_stats, "Shot_Pierce") {
 		shot_stats.Shot_Pierce = _v_burst_stats.Shot_Pierce

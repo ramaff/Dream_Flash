@@ -3640,6 +3640,7 @@
     {"id":{"name":"scr_Memory_Info_Bank","path":"scripts/scr_Memory_Info_Bank/scr_Memory_Info_Bank.yy",},},
     {"id":{"name":"scr_Weapon_Memory","path":"scripts/scr_Weapon_Memory/scr_Weapon_Memory.yy",},},
     {"id":{"name":"spr_Pink_Bubble_Bullet","path":"sprites/spr_Pink_Bubble_Bullet/spr_Pink_Bubble_Bullet.yy",},},
+    {"id":{"name":"obj_Snake_Glitch","path":"objects/obj_Snake_Glitch/obj_Snake_Glitch.yy",},},
     {"id":{"name":"scr_Item_Memory","path":"scripts/scr_Item_Memory/scr_Item_Memory.yy",},},
     {"id":{"name":"scr_Boss_Memory","path":"scripts/scr_Boss_Memory/scr_Boss_Memory.yy",},},
     {"id":{"name":"scr_Soul_Item_Assign","path":"scripts/scr_Soul_Item_Assign/scr_Soul_Item_Assign.yy",},},

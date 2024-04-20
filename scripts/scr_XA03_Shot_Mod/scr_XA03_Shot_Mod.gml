@@ -9,7 +9,7 @@ function scr_XA03_Shot_Mod(){
 		}
 		speed = shot_stats.Shot_Speed;
 		alarm[0] = shot_stats.Shot_Life_Span;
-		shot_stats.Shot_Timer = shot_stats.Shot_Life_Span;
+		////shot_stats.Shot_Timer = shot_stats.Shot_Life_Span;
 		
 		shot_stats.Shot_Fire += 2 * global.XA[3];
 		
