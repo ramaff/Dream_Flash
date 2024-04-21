@@ -5,13 +5,11 @@ function scr_Mechanical_Teleport() {
 		
 		scr_Default_Weapon_Stats();
 		
-		current_weapon_stats = {
-			Shot_Spread: 0,
-			Shot_Accuracy: 10,
-			Shot_Count: 3,
-			Shot_Sprite: "spr_Gear_Shield_Shot",
-			Shot_Type: "obj_Defense_Soul_Shot"
-		};
+		current_weapon_stats.Shot_Spread = 0;
+		current_weapon_stats.Shot_Accuracy = 10;
+		current_weapon_stats.Shot_Count = 3;
+		current_weapon_stats.Shot_Sprite = "spr_Gear_Shield_Shot";
+		current_weapon_stats.Shot_Type = "obj_Defense_Soul_Shot";
 
 		current_weapon_stats.Shot_Speed = 1.75;
 		current_weapon_stats.Shot_Power = 10 * global.soulstateformboost * (1 + global.teleportboost);
@@ -19,7 +17,7 @@ function scr_Mechanical_Teleport() {
 		current_weapon_stats.Shot_Life_Span = 180;
 
 		current_weapon_stats.Shot_Shield_Type = 1;
-		current_weapon_stats.Shot_Shield_Power = Shot_Power * 2;
+		current_weapon_stats.Shot_Shield_Power = current_weapon_stats.Shot_Power * 2;
 
 		current_weapon_stats.Shot_Size = 0.5;
 		current_weapon_stats.Shot_Orbital_Type = 2;

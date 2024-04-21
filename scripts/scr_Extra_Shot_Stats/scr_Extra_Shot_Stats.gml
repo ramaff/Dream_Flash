@@ -174,9 +174,9 @@ function scr_Extra_Shot_Stats() {
 	    target = other;
 		otarget = other.id;
 		
-		if shot_stats.Shot_Orbit_Angle = -1 {
-			shot_stats.Shot_Orbit_Angle = point_direction(x,y,mouse_x,mouse_y);
-			shot_stats.Shot_Orbit_Angle += other.Shot_Current_Count * (360 / shot_stats.Shot_Count)
+		if shot_stats.Shot_Orbital_Angle = -1 {
+			shot_stats.Shot_Orbital_Angle = point_direction(x,y,mouse_x,mouse_y);
+			shot_stats.Shot_Orbital_Angle += other.Shot_Current_Count * (360 / shot_stats.Shot_Count)
 		}
 		shot_stats.Shot_Center_X = other.x;
 		shot_stats.Shot_Center_Y = other.y;

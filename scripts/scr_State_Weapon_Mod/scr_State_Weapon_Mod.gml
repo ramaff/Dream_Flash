@@ -66,6 +66,10 @@ function scr_State_Weapon_Mod(){
 		
 			image = 1;
 			//shotduplicatesprite = sprite_index;
+			shot_stats.Shot_Air_Burst_Stats = scr_Dupe_Struct(shot_stats);
+			
+			shot_stats.Shot_Air_Burst_Stats.Range = 80
+			shot_stats.Shot_Air_Burst_Stats.Shot_Count = 1;
 			
 			var size = 1;
 			if sprite_get_height(sprite_index) > 100 {
@@ -176,7 +180,7 @@ function scr_State_Weapon_Mod(){
 			
 			shot_stats.Shot_Orbital_Type = 1;
 			shot_stats.Shot_Orbital_Range = 75;
-	        shot_stats.Shot_Orbit_Angle = point_direction(x,y,mouse_x,mouse_y);
+	        shot_stats.Shot_Orbital_Angle = point_direction(x,y,mouse_x,mouse_y);
 
 	        shot_stats.Shot_Center_X = other.x;
 	        shot_stats.Shot_Center_Y = other.y;

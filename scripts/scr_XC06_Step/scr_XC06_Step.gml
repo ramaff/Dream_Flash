@@ -28,8 +28,9 @@ function scr_XC06_Step(){
 				var _y_tar = shot_stats.Shot_Fear_Target.y + lengthdir_y(_spec_dist, _dir_from_tar)
 
 				if _dis > _spec_dist {
-					x = lerp(x, _x_tar, 0.05);
-					y = lerp(y, _y_tar, 0.05);
+					var _lerp_amt = 0.05 + (0.05 * global.XC[6])
+					x = lerp(x, _x_tar, _lerp_amt);
+					y = lerp(y, _y_tar, _lerp_amt);
 				} 
 			} else {
 				//speed = lerp(speed, 0, 0.3);

@@ -306,7 +306,7 @@ function scr_Duplicate_Shot_Stats(_new_shot_stats = other.shot_stats) {
 	
 	if shot_stats.Shot_Orbital_Type > 0 {
 		shot_stats.Shot_Orbital_Range = other.shot_stats.Shot_Orbital_Range;
-		shot_stats.Shot_Orbit_Angle = other.shot_stats.Shot_Orbit_Angle;
+		shot_stats.Shot_Orbital_Angle = other.shot_stats.Shot_Orbital_Angle;
 		shot_stats.Shot_Center_X = other.shot_stats.Shot_Center_X;
 		shot_stats.Shot_Center_Y = other.shot_stats.Shot_Center_Y;
 	}
@@ -338,6 +338,13 @@ function scr_Duplicate_Shot_Stats(_new_shot_stats = other.shot_stats) {
 		shot_stats.Shot_Life_Span = other.shotextrahitlifespan;	
 	}
 	*/
+	
+	if shot_stats.Shot_Orbital_Type > 0 {
+		shot_stats.Shot_Orbital_Range = other.shot_stats.Shot_Orbital_Range;
+		shot_stats.Shot_Orbital_Angle = other.shot_stats.Shot_Orbital_Angle;
+		shot_stats.Shot_Center_X = other.shot_stats.Shot_Center_X;
+		shot_stats.Shot_Center_Y = other.shot_stats.Shot_Center_Y;
+	}
 
 	direction = other.direction + other.dir;
 	speed = shot_stats.Shot_Speed;

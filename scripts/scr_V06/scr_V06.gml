@@ -1,6 +1,6 @@
 function scr_V06(_procs = 0) {
 	
-
+	var _og_stats = scr_Dupe_Struct(current_weapon_stats)
 	{
 		
 		current_weapon_stats.Shot_Size = current_weapon_stats.Shot_Size * 1.4;
@@ -8,9 +8,9 @@ function scr_V06(_procs = 0) {
 		current_weapon_stats.Shot_Power = current_weapon_stats.Shot_Power * 2;
 		
 		if current_weapon_stats.Shot_Air_Burst_Stats = false {
-			current_weapon_stats.Shot_Air_Burst_Stats = [json_parse(json_stringify(current_weapon_stats))]
+			current_weapon_stats.Shot_Air_Burst_Stats = [scr_Dupe_Struct(_og_stats)]
 		} else {
-			array_push(current_weapon_stats.Shot_Air_Burst_Stats, json_parse(json_stringify(current_weapon_stats)))	
+			array_push(current_weapon_stats.Shot_Air_Burst_Stats, scr_Dupe_Struct(_og_stats))	
 		}
 		Weapon_Split_Visible = 1;
         Weapon_Split_Hit_Again = 1;

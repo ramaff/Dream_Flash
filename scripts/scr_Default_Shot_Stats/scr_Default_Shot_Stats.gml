@@ -149,7 +149,7 @@ function scr_Default_Shot_Stats() {
 
 	shot_stats.Shot_Orbital_Type = 0;
 	shot_stats.Shot_Orbital_Range = 0;
-	shot_stats.Shot_Orbit_Angle = 0;
+	shot_stats.Shot_Orbital_Angle = 0;
 
 	shot_stats.Shot_Melee = 0;
 	shot_stats.Shot_Air_Target = 0;

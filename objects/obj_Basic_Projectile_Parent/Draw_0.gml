@@ -7,7 +7,7 @@ if !is_struct(shot_stats) {
 }
 
 if shot_stats.Shot_Orbital_Type = 1 {
-    image_angle = shot_stats.Shot_Orbit_Angle + 90;
+    image_angle = shot_stats.Shot_Orbital_Angle + 90;
 }
 
 if shot_stats.Shot_Ground = true {
