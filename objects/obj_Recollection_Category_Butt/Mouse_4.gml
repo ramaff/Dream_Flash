@@ -19,7 +19,7 @@ if cat = 1 {
 }
 if cat = 2 {
     global.recollectCategory = "Items";
-    numOfButts = 276;
+    numOfButts = 277; // Technically there is 1 additional item than this number
 }
 if cat = 3 {
     global.recollectCategory = "Bosses";
@@ -47,6 +47,7 @@ if global.recollectCategory = "Weapons" {
     for(i = 1; i <= (numOfButts / 3); i++) {
         for(j = 0; j < 3; j++) {
             buttNum++
+			
             with instance_create(camera_get_view_x(view) + 144 + 90 * j,camera_get_view_y(view) + 112 + 96 * i,obj_Recollection_Butt) {
                 buttNum = other.buttNum;
                 scr_Recollection_Panel_Assign();
@@ -60,14 +61,16 @@ if global.recollectCategory = "Weapons" {
 }
 
 if global.recollectCategory = "Items" {
-    for(i = 1; i <= (numOfButts / 3); i++) {
+    for(i = 1; i < ((numOfButts / 3) + 1); i++) {
         for(j = 0; j < 3; j++) {
-            with instance_create(camera_get_view_x(view) + 144 + 90 * j,camera_get_view_y(view) + 112 + 96 * i,obj_Recollection_Butt) {
-                buttNum = other.buttNum;
-                scr_Recollection_Panel_Assign();
-				scr_Assign_Memory();
-            }
-            buttNum++;
+			if buttNum <= numOfButts {
+	            with instance_create(camera_get_view_x(view) + 144 + 90 * j,camera_get_view_y(view) + 112 + 96 * i,obj_Recollection_Butt) {
+	                buttNum = other.buttNum;
+	                scr_Recollection_Panel_Assign();
+					scr_Assign_Memory();
+	            }
+	            buttNum++;
+			}
         }
     }
 	if cat = 2 {

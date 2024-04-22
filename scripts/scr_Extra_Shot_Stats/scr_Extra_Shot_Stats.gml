@@ -24,7 +24,7 @@ function scr_Extra_Shot_Stats() {
 	
 	/*
 
-	shot_stats.Image_Rotation_Speed = other.Image_Rotation_Speed;
+	shot_stats.Shot_Image_Rotation_Speed = other.Shot_Image_Rotation_Speed;
 
 	image = other.Weapon_Split_Visible;
 	shot_stats.Shot_Hit_Again = other.Weapon_Split_Hit_Again;

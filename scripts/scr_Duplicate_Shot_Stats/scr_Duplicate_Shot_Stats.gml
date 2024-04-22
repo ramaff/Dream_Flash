@@ -41,6 +41,8 @@ function scr_Duplicate_Shot_Stats(_new_shot_stats = other.shot_stats) {
 	image_speed = shot_stats.Shot_Image_Speed;
 	image_alpha = shot_stats.Shot_Alpha;
 	
+	sprite_index = asset_get_index(shot_stats.Shot_Sprite)
+	
 	shot_stats.Shot_Origin = other.shot_stats.Shot_Origin;
 	
 	shot_stats.Shot_Follow_Origin = other.shot_stats.Shot_Follow_Origin;
@@ -88,7 +90,7 @@ function scr_Duplicate_Shot_Stats(_new_shot_stats = other.shot_stats) {
 	shotexplosionpart = other.shotexplosionpart;
 	shotexplosionsmoke = other.shotexplosionsmoke;
 
-	shot_stats.Image_Rotation_Speed = other.shot_stats.Image_Rotation_Speed;
+	shot_stats.Shot_Image_Rotation_Speed = other.shot_stats.Shot_Image_Rotation_Speed;
 
 	shot_stats.Shot_Origin = other.shot_stats.Shot_Origin;
 

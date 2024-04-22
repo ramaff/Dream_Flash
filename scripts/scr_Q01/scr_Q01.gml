@@ -51,7 +51,7 @@ function scr_Q01() {
 			minion = false;
 			spawnProjectile = true;
 		
-			scr_Hard_Coded_Weapon_Stats(_c_wp);
+			scr_Hard_Coded_Weapon_Stats(current_weapon_stats);
 		
 			if current_weapon_stats.Shot_Beam = 0 {
 				current_weapon_stats.Shot_Height += 20

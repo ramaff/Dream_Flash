@@ -83,7 +83,7 @@ function scr_Default_Weapon_Stats() {
 	Shot_Frame = 0;
 	Shot_Frames = 0;
 	Shot_Image_Speed = 1;
-	Image_Rotation_Speed = 0;
+	Shot_Image_Rotation_Speed = 0;
 	Shot_Image_Direction = -1;
 	Shot_Depth = 0;
 	Shot_Keep_Direction = 0;

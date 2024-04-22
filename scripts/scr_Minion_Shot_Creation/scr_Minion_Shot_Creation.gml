@@ -35,6 +35,7 @@ function scr_Minion_Shot_Creation() {
 	        direction += other.dir;
 	        alarm[0] = shot_stats.Shot_Life_Span;
 	        scr_Extra_Shot_Stats();
+			speed = shot_stats.Shot_Speed;
 			
 			//shot_stats.Shot_Timer = shot_stats.Shot_Life_Span;
 			

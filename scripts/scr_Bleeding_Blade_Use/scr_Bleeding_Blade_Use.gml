@@ -12,7 +12,7 @@ function scr_Bleeding_Blade_Use(_cw = current_weapon_stats) {
 	_cw.Shot_Height = 0;
 	
 	_cw.Shot_Alpha = 1;
-	_cw.Weapon_Melee = 1;
+	_cw.Weapon_Melee = true;
 	_cw.Shot_Speed = 24;
 	_cw.Shot_Acceleration = -2
 	_cw.Shot_Power = 4 + (weaponCost * 2);

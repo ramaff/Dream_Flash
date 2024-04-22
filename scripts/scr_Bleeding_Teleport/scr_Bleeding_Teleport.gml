@@ -14,14 +14,14 @@ function scr_Bleeding_Teleport() {
 		current_weapon_stats.Shot_Phasing = 1;
 		current_weapon_stats.Shot_Soul_Maintain = 1;
 
-		current_weapon_stats.Weapon_Melee = 1;
+		current_weapon_stats.Weapon_Melee = true;
 
 		current_weapon_stats.Shot_Speed = 0;
 		current_weapon_stats.Shot_Power = 40;
 		current_weapon_stats.Shot_Knock_Back = 10 + sqrt(current_weapon_stats.Shot_Power);
 		current_weapon_stats.Shot_Life_Span = 60;
 		current_weapon_stats.Shot_Angle = 90 + point_direction(x,y,mouse_x,mouse_y);
-		current_weapon_stats.Image_Rotation_Speed = -15;
+		current_weapon_stats.Shot_Image_Rotation_Speed = -15;
 		
 		current_weapon_stats.Shot_After_Images = 1;
 

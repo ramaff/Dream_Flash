@@ -66,10 +66,8 @@ function scr_State_Weapon_Mod(){
 		
 			image = 1;
 			//shotduplicatesprite = sprite_index;
-			shot_stats.Shot_Air_Burst_Stats = scr_Dupe_Struct(shot_stats);
-			
-			shot_stats.Shot_Air_Burst_Stats.Range = 80
-			shot_stats.Shot_Air_Burst_Stats.Shot_Count = 1;
+			//shot_stats.Shot_Air_Burst_Stats = scr_Dupe_Struct(shot_stats);
+
 			
 			var size = 1;
 			if sprite_get_height(sprite_index) > 100 {
@@ -100,10 +98,10 @@ function scr_State_Weapon_Mod(){
 			} else {
 				shot_stats.Shot_Homing_Range += 50;	
 			}
-			if shot_stats.Shot_Homing_Speed < 0 {
-				shot_stats.Shot_Homing_Speed = 5;	
+			if shot_stats.Shot_Homing_Speed <= 0 {
+				shot_stats.Shot_Homing_Speed = 3;
 			} else {
-				shot_stats.Shot_Homing_Speed += 5;	
+				shot_stats.Shot_Homing_Speed += 3;	
 			}
 		}
 		if scr_State_Active_Check("Spike") {
@@ -130,6 +128,7 @@ function scr_State_Weapon_Mod(){
 			shot_stats.Shot_Size = shot_stats.Shot_Size * 1.25;
 			shot_stats.Shot_Size_Max = shot_stats.Shot_Size;
 			shot_stats.Shot_Power = shot_stats.Shot_Power * 1.4;
+			shot_stats.Shot_Power_Level = shot_stats.Shot_Power_Level * 1.4;
 			shot_stats.Shot_Power_Max = shot_stats.Shot_Power;
 			shot_stats.Shot_Speed = shot_stats.Shot_Speed * 0.8;
 			
@@ -138,14 +137,16 @@ function scr_State_Weapon_Mod(){
 			
 			speed = shot_stats.Shot_Speed;
 
-			if shot_stats.Weapon_Melee = 0 {
+			if shot_stats.Weapon_Melee = false {
 				shot_stats.Shot_Extra_Stats = [scr_Dupe_Struct(shot_stats)];
 			}
 			
 			shot_stats.Shot_Extra_Stats[0].Shot_Count = 1;
 
 			shot_stats.Shot_Extra_Stats[0].Shot_Extra_Hit_Frequency = 15 + (shot_stats.Shot_Life_Span / 10);
-			shot_stats.Shot_Extra_Stats[0].Shot_Power = shot_stats.Shot_Power * global.soulstateformboost / 2.5;
+			shot_stats.Shot_Extra_Stats[0].Burst_Power = global.soulstateformboost / 2.5;
+			//shot_stats.Shot_Extra_Stats[0].Shot_Power = shot_stats.Shot_Power * global.soulstateformboost / 2.5;
+			//shot_stats.Shot_Extra_Stats[0].Shot_Power_Level = shot_stats.Shot_Power_Level * global.soulstateformboost / 2.5;
 			shot_stats.Shot_Extra_Stats[0].Shot_Speed = shot_stats.Shot_Speed * 1.5;
 
 			shot_stats.Shot_Extra_Stats[0].Shot_Pierce = shot_stats.Shot_Pierce;
@@ -153,7 +154,7 @@ function scr_State_Weapon_Mod(){
 			shot_stats.Shot_Extra_Stats[0].Shot_Mouse = true;
 			shot_stats.Shot_Extra_Stats[0].Shot_Homing_Type = 0;
 
-			if shot_stats.Weapon_Melee > 0 {
+			if shot_stats.Weapon_Melee = true {
 		
 				//shot_stats.Shot_Type = "obj_Melee_Caster_Shot";
 				//shot_stats.Shot_Life_Span = 180;

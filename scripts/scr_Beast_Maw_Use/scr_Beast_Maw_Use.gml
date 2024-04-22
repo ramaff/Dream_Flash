@@ -15,7 +15,7 @@ function scr_Beast_Maw_Use() {
 		Shot_Screen_Shake: 5,
 		Shot_Size: 0.8,
 		Shot_Phasing: 1,
-		Weapon_Melee: 1,
+		Weapon_Melee: true,
 		Shot_Pierce: 100
 	};
 	

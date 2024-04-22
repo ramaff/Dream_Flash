@@ -135,7 +135,7 @@ function scr_Setup_Default_Shot_Stats(){
 		Shot_Grow_Size: 0,
 		Shot_Movement: 1,
 		Shot_Image_Speed: 1,
-		Image_Rotation_Speed: 0,
+		Shot_Image_Rotation_Speed: 0,
 		Shot_Image_Direction: -1,
 		Shot_Depth: 0,
 		Shot_Keep_Direction: 0,

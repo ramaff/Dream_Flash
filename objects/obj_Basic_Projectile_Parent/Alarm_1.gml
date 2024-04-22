@@ -41,7 +41,7 @@ for(i = 0; i < extra_shots_amount; i++) {
 				//shot_stats = scr_Struct_Merge(shot_stats, scr_Dupe_Struct(current_extra_stats), false);
 		        scr_Duplicate_Shot_Stats(current_extra_stats);
 				
-				scr_Shot_Burst_Stats(other.shot_stats)
+				scr_Shot_Burst_Stats(current_extra_stats)
 				
 				if variable_struct_exists(current_extra_stats, "Shot_Extra_Stats") {
 					shot_stats.Shot_Extra_Stats = current_extra_stats.Shot_Extra_Stats

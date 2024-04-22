@@ -1,6 +1,8 @@
 // Script assets have changed for v2.3.0 see
 // https://help.yoyogames.com/hc/en-us/articles/360005277377 for more information
-function scr_Hard_Coded_Weapon_Stats(cWP){
+function scr_Hard_Coded_Weapon_Stats(_cw_stats){
+	
+	var cWP = _cw_stats.Weapon_Number
 	
 	switch(cWP) {
 	
@@ -47,7 +49,7 @@ function scr_Hard_Coded_Weapon_Stats(cWP){
 	        break;
 	    case 15:
 	        //scr_Rain_Maker_Use();
-			Shot_Speed += random(1);
+			_cw_stats.Shot_Speed += random(1);
 	        break;
 		case 16:
 	        //scr_Rising_Spikes_Use(true);
@@ -55,13 +57,13 @@ function scr_Hard_Coded_Weapon_Stats(cWP){
 	        break;
 	    case 51:
 			if sWeaponTicker mod 2 = 1 {
-				Shot_Sprite = spr_New_Soul_Punch_Alt;
+				_cw_stats.Shot_Sprite = "spr_New_Soul_Punch_Alt";
 			}
 	        //scr_Soul_Punch_Use();
 	        break;
 	    case 52:
 			if sWeaponTicker mod 2 = 1 {
-				Shot_Sprite = spr_New_Power_Whip_Alt;
+				_cw_stats.Shot_Sprite = "spr_New_Power_Whip_Alt";
 			}
 	       // scr_Power_Whip_Shot();
 	        break;
@@ -70,7 +72,7 @@ function scr_Hard_Coded_Weapon_Stats(cWP){
 	        break;
 	    case 54:
 			if sWeaponTicker mod 2 = 1 {
-				Shot_Sprite = spr_New_Soul_Strike_Alt;
+				_cw_stats.Shot_Sprite = "spr_New_Soul_Strike_Alt";
 			}
 	        //scr_Soul_Strike_Use();
 	        break;
@@ -222,7 +224,7 @@ function scr_Hard_Coded_Weapon_Stats(cWP){
 	     //   scr_Magic_Twister_Use();
 	        break;
 	    case 307:
-			Shot_Size += random(0.125);
+			_cw_stats.Shot_Size += random(0.125);
 	      //  scr_Magic_Bubbles_Use();
 	        break;
 	    case 308:
@@ -318,7 +320,7 @@ function scr_Hard_Coded_Weapon_Stats(cWP){
 	        break;
     
 	    case 601:
-	        scr_Healing_Essence_Use();
+	        scr_Healing_Essence_Use(_cw_stats);
 			spawnProjectile = false;
 	        break;
 		case 602:

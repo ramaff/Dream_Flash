@@ -15,7 +15,8 @@ function scr_XA06(_cw){
         _cw.Weapon_Split_Hit_Again = 1;
 		var burstIndex = array_length(_cw.Shot_Burst_Stats) - 1;
 		variable_struct_set(_cw.Shot_Burst_Stats[burstIndex], "Shot_Type", "obj_Lesser_Soul_Shot");
-		variable_struct_set(_cw.Shot_Burst_Stats[burstIndex], "Shot_Power", 4);
+		variable_struct_set(_cw.Shot_Burst_Stats[burstIndex], "Shot_Power", 6);
+		variable_struct_set(_cw.Shot_Burst_Stats[burstIndex], "Shot_Power_Level", 6);
 		variable_struct_set(_cw.Shot_Burst_Stats[burstIndex], "Shot_Life_Span", 120 + (_cw.Shot_Life_Span / 3));
 		variable_struct_set(_cw.Shot_Burst_Stats[burstIndex], "Burst_Speed", 6 + (_cw.Shot_Speed / 3));
 		variable_struct_set(_cw.Shot_Burst_Stats[burstIndex], "Burst_Soul_Shot_Damage", 10);

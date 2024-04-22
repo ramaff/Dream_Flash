@@ -33,7 +33,7 @@ function scr_Beast_Maw_Teleport_Use(dist, ang) {
 	current_weapon_stats.Shot_Life_Drain = 0.5;
 
 	current_weapon_stats.Shot_Phasing = 1;
-	current_weapon_stats.Weapon_Melee = 1;
+	current_weapon_stats.Weapon_Melee = true;
 
 	current_weapon_stats.Shot_Pierce = 100;
 

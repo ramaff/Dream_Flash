@@ -16,9 +16,9 @@ function scr_Q03(_minion = false){
 		    current_weapon_stats.Shot_YY = room_center - (effect_diameter / 2) + random(effect_diameter) - y;
 		
 			if !_minion {
-				scr_Shot_Creation();
+				scr_Shot_Creation(current_weapon_stats);
 			} else {
-				scr_Soul_Spawn();
+				scr_Soul_Spawn(current_weapon_stats);
 			}
 			//scr_Weapon_Output(true, _minion)
 		

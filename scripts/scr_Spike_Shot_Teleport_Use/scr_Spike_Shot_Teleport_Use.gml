@@ -18,7 +18,7 @@ function scr_Spike_Shot_Teleport_Use(dist, ang) {
 	current_weapon_stats.Shot_YY = lengthdir_y(dist, ang);
 	current_weapon_stats.Shot_Phasing = 1;
 	current_weapon_stats.Shot_Ground = 1;
-	current_weapon_stats.Weapon_Melee = 1;
+	current_weapon_stats.Weapon_Melee = true;
 	current_weapon_stats.Shot_Pierce = 99;
 	current_weapon_stats.Shot_Size = 0.45 + random(0.15);
 	current_weapon_stats.Shot_Off_State = true;

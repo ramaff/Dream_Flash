@@ -23,9 +23,9 @@ if champ = 3 {
 		y += lengthdir_y(1, _center_dir)
 	}
 	if active_attack != 0 and active_attack_delay < 0 {
-		var _move_fac = 1.5;
+		var _move_fac = 1.1;
 		if active_attack = 1 {
-			_move_fac = 2.5	
+			_move_fac = 1.9
 		}
 		speed = scr_Converge(speed, bossmovespeed * _move_fac, 0.05)
 	} else {

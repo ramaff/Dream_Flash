@@ -73,7 +73,7 @@ if shot_stats.Shot_Fade = 1 {
 	image_alpha -= 1 / shot_stats.Shot_Life_Span;	
 }
 
-image_angle += shot_stats.Image_Rotation_Speed;
+image_angle += shot_stats.Shot_Image_Rotation_Speed;
 
 //direction += shot_stats.Shot_Wave_Direction;
 shot_stats.Shot_Wave_Direction -= shot_stats.Shot_Wave_Acceleration;

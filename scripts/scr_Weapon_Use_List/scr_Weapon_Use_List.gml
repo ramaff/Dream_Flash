@@ -93,7 +93,7 @@ function scr_Weapon_Use_List(cWP = global.currentweapon, _weap_slot = 0) {
 			spawnProjectile = !_umbrella_active;	
 		}
 		
-		scr_Hard_Coded_Weapon_Stats(cWP);
+		scr_Hard_Coded_Weapon_Stats(current_weapon_stats);
 		
 		if Charge_Hold = 2 {
 			scr_Ascending_Soul_Weapon_Mod();
