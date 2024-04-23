@@ -35,7 +35,7 @@ function scr_State_Weapon_Mod(){
 					followtarget = followtar;
 					followtar = id;	
 					
-					shot_stats.Shot_Snake_Move = 1;
+					shot_stats.Shot_Snake_Move = 2;
 					
 					scr_Shot_Power_Set(0.5)
 					scr_Shot_Size_Set(0.7)

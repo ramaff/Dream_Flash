@@ -343,11 +343,11 @@ if shot_stats.Shot_Snake_Move > 0 {
 }
 
 if instance_exists(followtarget) {
-	var setdist = shot_stats.Shot_Speed * 5;
+	var setdist = 5 + shot_stats.Shot_Speed * 5;
 	var dis = point_distance(x, y, followtarget.x, followtarget.y)
 	var follow_dir = point_direction(x, y, followtarget.x, followtarget.y)
 	if dis > setdist {
-		speed = min(dis - setdist, shot_stats.Shot_Speed * 2);
+		speed = min(dis - setdist, 2 + shot_stats.Shot_Speed * 2);
 		direction = follow_dir;
 	} 
 } 

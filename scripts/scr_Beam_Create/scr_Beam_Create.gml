@@ -139,6 +139,7 @@ function scr_Beam_Create(shxx, shyy, beamseg, beamdir, curvedir, beamstop, beamx
 		}
 		
 		var _par_power = shot_stats.Shot_Power;
+		shot_stats.Shot_Hit_Again = 0;
 		
 		if (beamseg != beamtotalsegs || beamtype = 3) {
 			with instance_create(shxx + beamxx,shyy + beamyy,obj_Beam_Shot) {
