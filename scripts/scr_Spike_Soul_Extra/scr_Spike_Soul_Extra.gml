@@ -17,7 +17,7 @@ function scr_Spike_Soul_Extra(){
             "Shot_Life_Span": 15,
             "Shot_Point_Angle": false,
             "Shot_Phasing": 1,
-            "Weapon_Melee": 1,
+            "Shot_Melee": 1,
             "Shot_Pierce": 99,
             "Shot_Ground": true,
             "Shot_Forward": 1,

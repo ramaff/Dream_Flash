@@ -168,8 +168,8 @@ function scr_Setup_Weapon_Stats(_current_weapon_stats = current_weapon_stats) {
 	if variable_struct_exists(_current_weapon_stats, "Shot_Direction_Offset") {
 		Shot_Direction_Offset = _current_weapon_stats.Shot_Direction_Offset
 	}
-	if variable_struct_exists(_current_weapon_stats, "Weapon_Melee") {
-		Weapon_Melee = _current_weapon_stats.Weapon_Melee
+	if variable_struct_exists(_current_weapon_stats, "Shot_Melee") {
+		Shot_Melee = _current_weapon_stats.Shot_Melee
 	}
 	if variable_struct_exists(_current_weapon_stats, "Shot_Screen_Shake") {
 		Shot_Screen_Shake = _current_weapon_stats.Shot_Screen_Shake

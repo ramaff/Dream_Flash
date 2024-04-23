@@ -6,7 +6,7 @@ function scr_Casting_Soul_Manual_Synergy(_cw){
 	if global.currentweapon < 700 {
 		var _casting = scr_State_Active_Check("Casting")
 		
-		if _cw.Weapon_Melee = true and _casting {
+		if _cw.Shot_Melee = true and _casting {
 			
 			_cw.Shot_Extra_Stats = [scr_Dupe_Struct(_cw)];
 		

@@ -14,7 +14,7 @@ function scr_Bleeding_Teleport() {
 		current_weapon_stats.Shot_Phasing = 1;
 		current_weapon_stats.Shot_Soul_Maintain = 1;
 
-		current_weapon_stats.Weapon_Melee = true;
+		current_weapon_stats.Shot_Melee = true;
 
 		current_weapon_stats.Shot_Speed = 0;
 		current_weapon_stats.Shot_Power = 40;

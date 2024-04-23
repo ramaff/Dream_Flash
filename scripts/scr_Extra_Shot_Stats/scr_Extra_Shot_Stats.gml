@@ -28,7 +28,7 @@ function scr_Extra_Shot_Stats() {
 
 	image = other.Weapon_Split_Visible;
 	shot_stats.Shot_Hit_Again = other.Weapon_Split_Hit_Again;
-	shot_stats.Shot_Melee = other.Weapon_Melee;
+	shot_stats.Shot_Melee = other.Shot_Melee;
 	
 	shot_stats.Shot_Burst_Stats = other.Shot_Burst_Stats;
 	shot_stats.Shot_Air_Burst_Stats = other.Shot_Air_Burst_Stats;

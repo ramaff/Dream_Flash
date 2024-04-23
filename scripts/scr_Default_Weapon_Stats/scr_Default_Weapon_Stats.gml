@@ -37,7 +37,7 @@ function scr_Default_Weapon_Stats() {
 	Weapon_Split_Visible = false;
 	Weapon_Split_Hit_Again = true;
 	Shot_Point_Angle = 0;
-	Weapon_Melee = 0;
+	Shot_Melee = 0;
 
 	Shot_Trail = 0;
 	Shot_Trail_Type = obj_Weapon_Trail;
@@ -71,7 +71,7 @@ function scr_Default_Weapon_Stats() {
 
 	Shot_Direction_Offset = 0;
 
-	Weapon_Melee = 0;
+	Shot_Melee = 0;
 	
 	Shot_Screen_Shake = 0;
 

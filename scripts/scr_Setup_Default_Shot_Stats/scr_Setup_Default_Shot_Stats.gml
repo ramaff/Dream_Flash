@@ -87,7 +87,7 @@ function scr_Setup_Default_Shot_Stats(){
 		Shot_Bullet_Displace: 0,
 		Shot_Repetition: 0,
 		Shot_Ground: false,
-		Weapon_Melee: false,
+		Shot_Melee: false,
 		Shot_Off_State: 0,
 		Weapon_Vomit: 0,
 		Weapon_Vomit_Min_Speed: 1,
