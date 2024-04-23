@@ -2,23 +2,23 @@ var hit_again = variable_struct_exists(projectile_hits, other.id)
 if !hit_again {
 	variable_struct_set(projectile_hits, other.id, other.id)
     with(other) {
-        shotchain += 1
-        shotchaintype = 1;
-        shotchainpower = 10;
-		if shotchainrange <= 150 {
-			shotchainrange = 150;
+        shot_stats.Shot_Chain += 1
+        shot_stats.Shot_Chain_Type = 1;
+        shot_stats.Shot_Chain_Power = 10;
+		if shot_stats.Shot_Chain_Range <= 150 {
+			shot_stats.Shot_Chain_Range = 150;
 		}
-        shotchainspeed = 12;
+        shot_stats.Shot_Chain_Speed = 12;
 		
-		shotspeed += 2.5;
+		shot_stats.Shot_Speed += 2.5;
         speed += 2.5;
 		
 		if (sprite_get_width(sprite_index) <= 69)  and object_index != obj_Beam_Shot {
             sprite_index = spr_Lightning_Bolt_Shot;
             image_angle = direction;
         }
-		if shotsize < 1 {
-				shotsize += 0.05;
+		if shot_stats.Shot_Size < 1 {
+				shot_stats.Shot_Size += 0.05;
 				image_xscale += 0.05;
 				image_yscale += 0.05;
 			}

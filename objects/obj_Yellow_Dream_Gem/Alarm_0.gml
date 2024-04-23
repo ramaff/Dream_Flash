@@ -12,8 +12,8 @@ if instance_exists(obj_Boss_Parent) {
     
     Shot_Speed = 10;
     Shot_Power = 10;
-    Shot_Knockback = 10;
-    Shot_Lifespan = 150;
+    Shot_Knock_Back = 10;
+    Shot_Life_Span = 150;
     
     Shot_ID = instance_id_get( instance_count ) + glumcount;
     

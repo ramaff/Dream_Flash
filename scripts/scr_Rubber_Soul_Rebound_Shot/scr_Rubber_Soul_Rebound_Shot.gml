@@ -12,8 +12,8 @@ function scr_Rubber_Soul_Rebound_Shot() {
 		Shot_Speed: 6 + other.bulletspeed,
 		Shot_Direction: other.direction + 180,
 		Shot_Power: max(1, other.bulletpower) * 3 * global.B[5],
-		Shot_Knockback: 10,
-		Shot_Lifespan: 100,
+		Shot_Knock_Back: 10,
+		Shot_Life_Span: 100,
 		Shot_Pierce: 1,
 		Shot_Size: other.image_xscale,
 		Shot_Forward: 0,
@@ -28,7 +28,7 @@ function scr_Rubber_Soul_Rebound_Shot() {
 		current_weapon_stats.Shot_Power = 5;	
 	}
 	
-	scr_Setup_Weapon_Stats(current_weapon_stats);
+	current_weapon_stats = scr_Setup_Weapon_Stats(current_weapon_stats);
 	scr_Shot_Creation();
 	
 	with(other) {

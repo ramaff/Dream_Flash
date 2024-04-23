@@ -82,11 +82,11 @@ function scr_Pool_Refill(pool){
 	}
 	if pool = global.p_item_pool {
 		letter = "P"
-		totalitems = 8;
+		totalitems = 9;
 	}
 	if pool = global.q_item_pool {
 		letter = "Q"
-		totalitems = 3;
+		totalitems = 4;
 	}
 	if pool = global.r_item_pool {
 		letter = "R"

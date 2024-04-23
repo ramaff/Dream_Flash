@@ -63,7 +63,7 @@ function scr_Room_Loop_Everywhere_Ext() {
 		bnc = 1;
 	}
 
-	if shotspeed = 0 || speed = 0 {
+	if shot_stats.Shot_Speed = 0 || speed = 0 {
 		bnc = 0;
 	}
 

@@ -59,8 +59,8 @@ function scr_Charged_Hold() {
 					Shot_Charge_Power = 0
 				}
 				
-				if variable_struct_exists(current_weapon_stats, "Shot_Knockback") {
-					Shot_Charge_Knockback = current_weapon_stats.Shot_Knockback * 1;
+				if variable_struct_exists(current_weapon_stats, "Shot_Knock_Back") {
+					Shot_Charge_Knockback = current_weapon_stats.Shot_Knock_Back * 1;
 				} else {
 					Shot_Charge_Knockback = 0;
 				}

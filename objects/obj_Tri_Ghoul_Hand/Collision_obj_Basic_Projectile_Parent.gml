@@ -1,9 +1,9 @@
 exit;
-if bulletpower >= (other.shotpower / 10) {
-    bulletpower -= (other.shotpower / 10);
+if bulletpower >= (other.shot_stats.Shot_Power / 10) {
+    bulletpower -= (other.shot_stats.Shot_Power / 10);
     instance_destroy(other);
 } else {
-    other.shotpower -= bulletpower * 10
+    other.shot_stats.Shot_Power -= bulletpower * 10
     instance_destroy();
 }
 

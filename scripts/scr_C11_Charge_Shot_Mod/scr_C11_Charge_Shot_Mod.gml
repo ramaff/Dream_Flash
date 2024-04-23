@@ -8,9 +8,9 @@ function scr_C11_Charge_Shot_Mod(excess_essence = 0){
 			var boost_fac = (1 + (0.3 * global.C[11]))
 			Shot_Power = Shot_Power * boost_fac;
 			Shot_Burst_Power = Shot_Burst_Power * boost_fac
-			Shot_Stats.Shot_Excess_Essence += excess_essence * global.C[11];
+			current_weapon_stats.Shot_Excess_Essence += excess_essence * global.C[11];
 			if global.currentweapon = 14 {
-				Shot_Stats.Shot_Excess_Essence += excess_essence * global.C[11] * 2;
+				current_weapon_stats.Shot_Excess_Essence += excess_essence * global.C[11] * 2;
 			}
 			senergy -= excess_essence * global.C[11];
 		}

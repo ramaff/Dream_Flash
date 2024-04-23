@@ -10,5 +10,5 @@ size = 0;
 image_xscale = size;
 image_yscale = size;
 
-shotweaken = 4;
-shotweakentime = 120;
+shot_stats.Shot_Weaken = 4;
+shot_stats.Shot_Weaken_Time = 120;

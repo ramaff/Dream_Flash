@@ -1,13 +1,15 @@
 function scr_Default_Weapon_Stats() {
-	Shot_Spread = 0;
-	Shot_Accuracy = 15;
-	Shot_Count = 1;
+	//Shot_Spread = 0;
+	//Shot_Accuracy = 15;
+	//Shot_Count = 1;
 	//Shot_Default_Count = 1;
 	
-	Shot_Stats = scr_Setup_Default_Shot_Stats()
-	Weapon_Number = 0;
+	current_weapon_stats = scr_Setup_Default_Shot_Stats()
+	//Weapon_Number = 0;
+	
+	umbrellaActive = false;
 
-	Shot_Beam = 0;
+	/*Shot_Beam = 0;
 	Shot_Beam_Count = 40;
 	Shot_Beam_Curve = 0;
 	
@@ -16,20 +18,18 @@ function scr_Default_Weapon_Stats() {
 	Shot_Direction = 0;
 	Shot_Forward = 1;
 	Shot_ID = -1;
-	Weapon_Mouse_Maintain = 0;
-	Weapon_Soul_Maintain = 0;
-	Weapon_X_Maintain = 0;
-	Weapon_Y_Maintain = 0;
+	Shot_Mouse_Maintain = 0;
+	Shot_Soul_Maintain = 0;
+	Shot_X_Maintain = 0;
+	Shot_Y_Maintain = 0;
 	Shot_Movement = 1;
 	Shot_Mouse_Origin = 0;
 	Shot_Forward_Amount = 16;
 	Shot_Weapon_Lean = 0;
 	Shot_Angles = -1;
-	Shot_Boss_Aim = false;
-	
-	umbrellaActive = false;
+	Shot_Boss_Aim = false; */
 
-	Shot_Form_Show = 1;
+	/*Shot_Form_Show = 1;
 
 	Shot_XX = 0;
 	Shot_YY = 0;
@@ -42,8 +42,8 @@ function scr_Default_Weapon_Stats() {
 	Shot_Trail = 0;
 	Shot_Trail_Type = obj_Weapon_Trail;
 	Shot_Trail_Sprite = spr_Essence_Trail_Bit;
-	Shot_Trail_Color1 = c_white;
-	Shot_Trail_Color2 = c_white;
+	Shot_Trail_Color_1 = c_white;
+	Shot_Trail_Color_2 = c_white;
 	Shot_Trail_Life = 15;
 	Shot_Trail_Area = 15;
 	Shot_Trail_Speed = 0;
@@ -92,8 +92,8 @@ function scr_Default_Weapon_Stats() {
 
 	Shot_Speed = 4;
 	Shot_Power = 10;
-	Shot_Knockback = 10;
-	Shot_Lifespan = 100;
+	Shot_Knock_Back = 10;
+	Shot_Life_Span = 100;
 
 	Shot_Soul_Damage = 0;
 
@@ -243,6 +243,7 @@ function scr_Default_Weapon_Stats() {
 	Shot_Burst_Stats = false;
 	Shot_Air_Burst_Stats = false;
 	Shot_Extra_Stats = false;
-	Shot_Angle_Relative = 0;
+	Shot_Angle_Relative = 0; 
+	*/
 
 }

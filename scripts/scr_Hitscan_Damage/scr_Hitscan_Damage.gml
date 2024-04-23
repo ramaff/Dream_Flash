@@ -62,13 +62,13 @@ function scr_Hitscan_Damage(argument0, argument1) {
 	    //blength[Shot_Current_Count] = length;
 	    //bArrlength[Shot_Current_Count] = length;
     
-	    shotpowermax = (Shot_Power + spoweradd) * ((10 + spowerfactor + sattackfactorbuffamount) / 10) * spower / 10 * ((100 + global.soulstrength + global.soulstrengthTemp) / 100);
-	    shotpower = shotpowermax;
-	    shotPowerLevel = Shot_Power;
-	    shotarmourpierce = Shot_Armour_Pierce + sarmourpierce;
+	    shot_stats.Shot_Power_Max = (Shot_Power + spoweradd) * ((10 + spowerfactor + sattackfactorbuffamount) / 10) * spower / 10 * ((100 + global.soulstrength + global.soulstrengthTemp) / 100);
+	    shot_stats.Shot_Power = shot_stats.Shot_Power_Max;
+	    shot_stats.Shot_Power_Level = Shot_Power;
+	    shot_stats.Shot_Armour_Pierce = Shot_Armour_Pierce + sarmourpierce;
     
-	    shotcritchance = Shot_Crit_Chance + scritaddchance;
-	    shotcritmultiple = Shot_Crit_Multiple + scritadd;
+	    shot_stats.Shot_Crit_Chance = Shot_Crit_Chance + scritaddchance;
+	    shot_stats.Shot_Crit_Multiple = Shot_Crit_Multiple + scritadd;
     
 	    shotimaginary = Shot_Imaginary;
 	    shotsharpandsolid = Shot_Sharp_And_Solid;
@@ -76,22 +76,22 @@ function scr_Hitscan_Damage(argument0, argument1) {
 	    shotmagical = Shot_Magical;
 	    shotenergy = Shot_Energy;
     
-	    shotweaken = Shot_Weaken;
-	    shotweakentime = Shot_Weaken_Time;
-	    shotpoison = Shot_Poison / 10 * spower * ((100 + global.soulstrength + global.soulstrengthTemp) / 100);
-	    shotpoisontime = Shot_Poison_Time;
-	    shotpoisonticks = Shot_Poison_Ticks;
-	    shotbleed = Shot_Bleed / 10 * spower * ((100 + global.soulstrength + global.soulstrengthTemp) / 100);
-	    shotbleedtime = Shot_Bleed_Time;
-	    shotbleedticks = Shot_Bleed_Ticks;
-	    shotfire = Shot_Fire / 10 * spower * ((100 + global.soulstrength + global.soulstrengthTemp) / 100);
-	    shotfiretime = Shot_Fire_Time;
-	    shotfireticks = Shot_Fire_Ticks;
-	    shotfreezetype = Shot_Freeze_Type;
-	    shotfreeze = Shot_Freeze;
-	    shotfreezetime = Shot_Freeze_Time;
+	    shot_stats.Shot_Weaken = Shot_Weaken;
+	    shot_stats.Shot_Weaken_Time = Shot_Weaken_Time;
+	    shot_stats.Shot_Poison = Shot_Poison / 10 * spower * ((100 + global.soulstrength + global.soulstrengthTemp) / 100);
+	    shot_stats.Shot_Poison_Time = Shot_Poison_Time;
+	    shot_stats.Shot_Poison_Ticks = Shot_Poison_Ticks;
+	    shot_stats.Shot_Bleed = Shot_Bleed / 10 * spower * ((100 + global.soulstrength + global.soulstrengthTemp) / 100);
+	    shot_stats.Shot_Bleed_Time = Shot_Bleed_Time;
+	    shot_stats.Shot_Bleed_Ticks = Shot_Bleed_Ticks;
+	    shot_stats.Shot_Fire = Shot_Fire / 10 * spower * ((100 + global.soulstrength + global.soulstrengthTemp) / 100);
+	    shot_stats.Shot_Fire_Time = Shot_Fire_Time;
+	    shot_stats.Shot_Fire_Ticks = Shot_Fire_Ticks;
+	    shot_stats.Shot_Freeze_Type = Shot_Freeze_Type;
+	    shot_stats.Shot_Freeze = Shot_Freeze;
+	    shot_stats.Shot_Freeze_Time = Shot_Freeze_Time;
 	
-		shotknockback = other.Shot_Knockback * other.sshotknockback / 10;
+		shot_stats.Shot_Knock_Back = other.Shot_Knock_Back * other.sshotknockback / 10;
 	
 		var bdir = angle;
 	
@@ -128,9 +128,9 @@ function scr_Hitscan_Damage(argument0, argument1) {
 			if collision_line(other.x,other.y,other.x + lengthdir_x(length,bdir),other.y + lengthdir_y(length,bdir),self,false,false) || collision_line(other.x + lengthdir_x(10, bdir + 90),other.y + lengthdir_x(10, bdir + 90),other.x + lengthdir_x(length,bdir),other.y + lengthdir_y(length,bdir),self,false,false) || collision_line(other.x + lengthdir_x(10, bdir - 90),other.y + lengthdir_x(10, bdir - 90),other.x + lengthdir_x(length,bdir),other.y + lengthdir_y(length,bdir),self,false,false) {
 		        scr_Boss_Self_Damage_Calc();
 			
-				if other.shotknockback >= bossknockdefense {
+				if other.shot_stats.Shot_Knock_Back >= bossknockdefense {
 	                bossknockbackdirection = bdir;
-	                bossknockback = (other.shotknockback - bossknockdefense);
+	                bossknockback = (other.shot_stats.Shot_Knock_Back - bossknockdefense);
 	                bossknockbacktime = 5;
 	            }	
 			
@@ -204,8 +204,8 @@ function scr_Hitscan_Damage(argument0, argument1) {
     
 			Shot_Speed = Shot_Speed;
 			Shot_Power = Shot_Burst_Power;
-			Shot_Knockback = 0;
-			Shot_Lifespan = Shot_Lifespan;
+			Shot_Knock_Back = 0;
+			Shot_Life_Span = Shot_Life_Span;
 	
 			Shot_Size = 0.5;
 		

@@ -6,8 +6,8 @@ if !is_struct(shot_stats) {
 	exit;	
 }
 
-if shotorbitaltype = 1 {
-    image_angle = shotAngle + 90;
+if shot_stats.Shot_Orbital_Type = 1 {
+    image_angle = shot_stats.Shot_Orbital_Angle + 90;
 }
 
 if shot_stats.Shot_Ground = true {
@@ -15,7 +15,7 @@ if shot_stats.Shot_Ground = true {
 	shot_stats.Shot_Height = 0;
 	shot_stats.Shot_Fall_Speed = 0;
 	shot_stats.Shot_Gravity = 0;
-	shotlobbing = 0;
+	shot_stats.Shot_Lobbing = false;
 }
 
 var height = shot_stats.Shot_Height;
@@ -26,40 +26,34 @@ wobble = scr_Wave(-wobble, wobble, 2, 0);
 
 if shot_stats.Shot_Lobbing = true {
 	
-	var shadow_size = shotsize * 1.5 * (1.2 - (height / 200));
+	var shadow_size = shot_stats.Shot_Size * 1.5 * (1.2 - (height / 200));
 	shot_stats.Shot_Height -= fall_speed + wobble
 	shot_stats.Shot_Fall_Speed += shot_stats.Shot_Gravity
 	
-	y += fall_speed;
-	
-	/*if scr_Chance(15) {
-		show_debug_message("shadow_size: " + string(shadow_size) + ", " + sprite_get_name(sprite_index) + ", height: " + string(height) + ", shotsize" + string(shotsize));
-		show_debug_message("xsize: " + string(image_xscale))
-	} */
+	y += fall_speed
 	
 	if height - fall_speed < 0 {
 		shot_stats.Shot_Fall_Speed = -1 * fall_speed;	
 	}
-	//var shadow_transparency = 0.5;
 	draw_sprite_ext(spr_Bullet_Shadow,0,x,y+height,shadow_size,shadow_size,0,c_white,0.5);
-} else if shotlobbing >= 1 {
-	draw_sprite_ext(spr_Bullet_Shadow,0,x,y+shotbounceY,shotsize * 1.5 * (1.2 - (shotbounceY / 200)),shotsize * 1.5 * (1.2 - (shotbounceY / 200)),0,c_white,image_alpha * (0.5 - (shotbounceY/150)));
+} else if shot_stats.Shot_Lobbing >= 1 {
+	draw_sprite_ext(spr_Bullet_Shadow,0,x,y+shot_stats.Shot_Height,shot_stats.Shot_Size * 1.5 * (1.2 - (shot_stats.Shot_Height / 200)),shot_stats.Shot_Size * 1.5 * (1.2 - (shot_stats.Shot_Height / 200)),0,c_white,image_alpha * (0.5 - (shot_stats.Shot_Height/150)));
 }
 
-if global.A[14] > 0 and shotorigin = obj_Soul_Parent {
-	var _size = 10 * sqrt(sqrt(sprite_get_width(sprite_index) * sprite_get_height(sprite_index))) * shotsize
+if global.A[14] > 0 and shot_stats.Shot_Origin = obj_Soul_Parent {
+	var _size = 10 * sqrt(sqrt(sprite_get_width(sprite_index) * sprite_get_height(sprite_index))) * shot_stats.Shot_Size
 	_size = _size / 80
     draw_sprite_ext(spr_Aura_Strike_Aura,0,x,y,_size, _size,0,c_white,ceil(image_alpha));
 }
 
-if shotaura = 1 and image_alpha > 0 {
-    draw_sprite_ext(shotaurasprite,0,x,y,1,1,0,c_white,1);
+if shot_stats.Shot_Aura = 1 and image_alpha > 0 {
+    draw_sprite_ext(asset_get_index(shot_stats.Shot_Aura_Sprite),0,x,y,1,1,0,c_white,1);
 }
 
 var fdist = 50;
-var tdist = 50 / shotinitspeed;
-var etime = shotlifespan - shottimer;
-var edist = shotinitspeed * etime;
+var tdist = 50 / shot_stats.Shot_Init_Speed;
+var etime = shot_stats.Shot_Life_Span - alarm[0];
+var edist = shot_stats.Shot_Init_Speed * etime;
 
 var sSize = 1 - ((fdist - edist) / fdist);
 
@@ -80,18 +74,18 @@ if shot_stats.Shot_Lobbing_Tilt != 0 {
 //Print_DF(shot_stats.Shot_Init_Grow)
 
 if shot_stats.Shot_Init_Grow = 0 {
-	shotSizeRelation = 1;
+	shot_stats.Shot_Size_Relation = 1;
 	sSize = 1;
 } 
 
-if ((shotlifespan - shottimer) <= (tdist)) and (shotlifespan > (tdist)) and (shotformshow = 1) {
+if ((shot_stats.Shot_Life_Span - alarm[0]) <= (tdist)) and (shot_stats.Shot_Life_Span > (tdist)) and (shot_stats.Shot_Form_Show = 1) {
     draw_sprite_ext(sprite_index,image_index,x,y,image_xscale * sSize,image_yscale * sSize,angle,c_white,image_alpha/* * sSize*/);
 } else {
-    draw_sprite_ext(sprite_index,image_index,x,y,image_xscale * shotSizeRelation,image_yscale * shotSizeRelation,angle,c_white,image_alpha);
+    draw_sprite_ext(sprite_index,image_index,x,y,image_xscale * shot_stats.Shot_Size_Relation,image_yscale * shot_stats.Shot_Size_Relation,angle,c_white,image_alpha);
 }
 
-if shotmiracle > 0 {
-	draw_sprite_ext(spr_Heart_Halo,image_index,x,y - (24 * image_yscale),image_xscale * shotSizeRelation,image_yscale * shotSizeRelation,image_angle,c_white,image_alpha);	
+if shot_stats.Shot_Miracle > 0 {
+	draw_sprite_ext(spr_Heart_Halo,image_index,x,y - (24 * image_yscale),image_xscale * shot_stats.Shot_Size_Relation,image_yscale * shot_stats.Shot_Size_Relation,image_angle,c_white,image_alpha);	
 	draw_sprite_ext(spr_Miracle_Aura,0,x,y,0.8,0.8,0,c_white,1);
 }
 

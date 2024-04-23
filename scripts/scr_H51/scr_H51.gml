@@ -15,8 +15,8 @@ function scr_H51(){
 		Shot_Power: 12 * global.soulheartboost,
 		Shot_Mouse: 0,
 		Shot_Direction: 0,
-		Shot_Knockback: 10,
-		Shot_Lifespan: 60,
+		Shot_Knock_Back: 10,
+		Shot_Life_Span: 60,
 		Shot_Lobbing: true,
 		Shot_Lobbing_Tilt: 10,
         Shot_Height: 30,
@@ -29,18 +29,18 @@ function scr_H51(){
 		Shot_Trail_Sprite: "spr_Soul_Big_Bit",
 		Shot_Trail_Area: 15,
 		Shot_Trail_Life: 25,
-		Shot_Trail_Color1: [149,50,255],
-		Shot_Trail_Color2: [133,76,255]
+		Shot_Trail_Color_1: [149,50,255],
+		Shot_Trail_Color_2: [133,76,255]
 	};
 	
-	scr_Setup_Weapon_Stats(current_weapon_stats);
+	current_weapon_stats = scr_Setup_Weapon_Stats(current_weapon_stats);
 	//if instance_exists(obj_Boss_Parent) {
 		//Shot_Direction = point_direction(x,y,instance_nearest(x,y,obj_Boss_Parent).x,instance_nearest(x,y,obj_Boss_Parent).y);
 	scr_Shot_Creation();
 		
 	current_weapon_stats.Shot_Direction = 180;
 	current_weapon_stats.Shot_Lobbing_Tilt = -10;
-	scr_Setup_Weapon_Stats(current_weapon_stats);
+	current_weapon_stats = scr_Setup_Weapon_Stats(current_weapon_stats);
 	scr_Shot_Creation();
 		//scr_Shot_Creation();
 	//}
@@ -55,8 +55,8 @@ function scr_H51(){
     
 	Shot_Speed = 8;
 	Shot_Power = 12 * global.soulheartboost;
-	Shot_Knockback = 10;
-	Shot_Lifespan = 90;
+	Shot_Knock_Back = 10;
+	Shot_Life_Span = 90;
 		
 	Shot_Point_Angle = 1;
 	
@@ -66,8 +66,8 @@ function scr_H51(){
 	Shot_Trail = 1;
 	Shot_Trail_Sprite = spr_Essence_Trail_Bit;
 	Shot_Trail_Area = 15;
-	Shot_Trail_Color1 = make_color_rgb(149,50,255);
-	Shot_Trail_Color2 = make_color_rgb(133,76,255);
+	Shot_Trail_Color_1 = make_color_rgb(149,50,255);
+	Shot_Trail_Color_2 = make_color_rgb(133,76,255);
     
 	if instance_exists(obj_Boss_Parent) {
 		Shot_Direction = point_direction(x,y,instance_nearest(x,y,obj_Boss_Parent).x,instance_nearest(x,y,obj_Boss_Parent).y);

@@ -3,13 +3,13 @@
 
 // Location: Shot Creation
 
-function scr_D06(){
+function scr_D06(_cw){
 	if global.D[6] > 0 {
-		Shot_Speed_Power_Add += 0.02 * Shot_Power * global.D[6];
-		Shot_Acceleration += 0.05 + (Shot_Speed / 60);
-		Shot_Lifespan = Shot_Lifespan * 0.7;
-		if Shot_Stats.Shot_After_Images < 1 {
-			Shot_Stats.Shot_After_Images = 1;
+		_cw.Shot_Speed_Power_Add += 0.02 * _cw.Shot_Power * global.D[6];
+		_cw.Shot_Acceleration += 0.05 + (_cw.Shot_Speed / 60);
+		_cw.Shot_Life_Span = _cw.Shot_Life_Span * 0.7;
+		if _cw.Shot_After_Images < 1 {
+			_cw.Shot_After_Images = 1;
 		}
 	}
 }

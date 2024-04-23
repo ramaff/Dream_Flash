@@ -1,4 +1,4 @@
-if other.shotsouldamage > 0 {
+if other.shot_stats.Shot_Soul_Damage > 0 and soul_underground <= 0 {
     if soulinvincibility <= 0 {
 		
 		if global.V[5] > 0 {
@@ -10,7 +10,7 @@ if other.shotsouldamage > 0 {
 		
 		hitType = "Nonboss";
 		
-        damageamount = other.shotsouldamage;
+        damageamount = other.shot_stats.Shot_Soul_Damage;
         defenseamount = (sdefenseadd + sdefensebuffamount) + global.currentheartdefense + scr_Class_Stat_Defense_Increase();
         scr_Soul_Damage_Calculation();
         

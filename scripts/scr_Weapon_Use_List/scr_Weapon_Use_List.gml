@@ -14,7 +14,7 @@ function scr_Weapon_Use_List(cWP = global.currentweapon, _weap_slot = 0) {
 	
 	if cWP = 603 and instance_exists(obj_Umbrella_Shot) {
 		with (obj_Umbrella_Shot) {
-			if shotfolloworigin = other.id {
+			if shot_stats.Shot_Follow_Origin = other.id {
 				_umbrella_active = true;
 			}
 		}
@@ -79,11 +79,11 @@ function scr_Weapon_Use_List(cWP = global.currentweapon, _weap_slot = 0) {
 		scr_D10_Shot_Mod();
 		
 		if obj_Soul_Parent.scurrentstate = "Bleeding" and cWP < 700 {
-			scr_Bleeding_Soul_Mod();
-			scr_Bleeding_Blade_Use();
+			scr_Bleeding_Soul_Mod(current_weapon_stats);
+			scr_Bleeding_Blade_Use(current_weapon_stats);
 		}
 		
-		scr_Setup_Weapon_Stats(current_weapon_stats);
+		current_weapon_stats = scr_Setup_Weapon_Stats(current_weapon_stats);
 		
 		barrage = false;
 		minion = false;
@@ -93,7 +93,7 @@ function scr_Weapon_Use_List(cWP = global.currentweapon, _weap_slot = 0) {
 			spawnProjectile = !_umbrella_active;	
 		}
 		
-		scr_Hard_Coded_Weapon_Stats(cWP);
+		scr_Hard_Coded_Weapon_Stats(current_weapon_stats);
 		
 		if Charge_Hold = 2 {
 			scr_Ascending_Soul_Weapon_Mod();
@@ -133,7 +133,7 @@ function scr_Weapon_Use_List(cWP = global.currentweapon, _weap_slot = 0) {
 					}
 					
 					if Shot_Repetition_Direction[bi] > -1 {
-						Shot_Repetition_Direction[bi] = Shot_Direction	
+						Shot_Repetition_Direction[bi] = current_weapon_stats.Shot_Direction	
 					}
 					
 					alarm[11] = (Shot_Barrage_Speed[bi]);
@@ -168,16 +168,16 @@ function scr_Weapon_Use_List(cWP = global.currentweapon, _weap_slot = 0) {
 		
 		scr_C11_Shot_Mod(realCost)
 		
-		if Shot_Beam = 2 {
-			Shot_Damage = false;
+		if current_weapon_stats.Shot_Beam = 2 {
+			current_weapon_stats.Shot_Damage = false;
 			if sWeaponTicker mod 3 = 0 { 
-				Shot_Damage = true;	
+				current_weapon_stats.Shot_Damage = true;	
 			} else {
-				Shot_Power = 0;
+				current_weapon_stats.Shot_Power = 0;
 			}
 		}	
 		
-		scr_Weapon_Output(spawnProjectile, minion)
+		scr_Weapon_Output(spawnProjectile, minion, current_weapon_stats)
 		
 		//if obj_Soul_Parent.scurrentstate = "Bleeding" and cWP < 700 {
 		//	scr_Bleeding_Blade_Use();

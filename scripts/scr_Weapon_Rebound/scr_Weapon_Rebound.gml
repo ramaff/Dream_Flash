@@ -11,7 +11,7 @@ function scr_Weapon_Rebound() {
 		exit;	
 	}
 	
-	var pow = max(1, shotreboundpower)
+	var pow = max(1, shot_stats.Shot_Rebound_Power)
 	//var bspeed = 
 
 	with(obj_Soul_Parent) {
@@ -30,8 +30,8 @@ function scr_Weapon_Rebound() {
 			Shot_Speed: 6 + other.bspeed,
 			Shot_Direction: other.bmoveangle + 180,
 			Shot_Power: pow,
-			Shot_Knockback: 10,
-			Shot_Lifespan: 100,
+			Shot_Knock_Back: 10,
+			Shot_Life_Span: 100,
 			Shot_Pierce: 1,
 			Shot_Size: other.bsize,
 			Shot_Forward: 0,

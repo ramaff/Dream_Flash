@@ -20,8 +20,8 @@ function scr_OC05(){
 		var convergeLerpSpeed = convergeSpeed * 0.0125
 		
 		with (obj_Projectile_Parent) {
-			if shotmelee == 0 {
-				var dist = shotspeed * (shotexisttime);
+			if shot_stats.Shot_Melee == 0 {
+				var dist = shot_stats.Shot_Speed * (shot_stats.Shot_Exist_Time);
 				var tarPositionX = xx + lengthdir_x(dist, tangle)
 				var tarPositionY = yy + lengthdir_y(dist, tangle)
 				

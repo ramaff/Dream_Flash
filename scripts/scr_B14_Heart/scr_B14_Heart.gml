@@ -24,8 +24,8 @@ function scr_B14_Heart(truedam){
 				Shot_Speed: 0.6 + random(0.8),
 				Shot_Acceleration: 0.02,
 				Shot_Power: dam,
-				Shot_Knockback: 10,
-				Shot_Lifespan: 360,
+				Shot_Knock_Back: 10,
+				Shot_Life_Span: 360,
 				Shot_Pierce: 1,
 				Shot_Homing_Type: 1,
 				Shot_Homing_Speed: 5,
@@ -34,7 +34,7 @@ function scr_B14_Heart(truedam){
 				Shot_Init_Grow: 0
 			};
 		
-			scr_Setup_Weapon_Stats(current_weapon_stats);
+			current_weapon_stats = scr_Setup_Weapon_Stats(current_weapon_stats);
 			scr_Shot_Creation();
 		}
 	}

@@ -2,13 +2,13 @@
 // https://help.yoyogames.com/hc/en-us/articles/360005277377 for more information
 function scr_State_Weapon_Mod(){
 	
-	if other.Shot_Off_State = 0 and shotorigin = obj_Soul_Parent {
-		if scr_State_Active_Check("Snake") and other.Shot_Beam = 0 {
-			shotsnakemove = 2;
-			shottargetX = mouse_x;
-			shottargetY = mouse_y;
+	if shot_stats.Shot_Off_State = 0 and shot_stats.Shot_Origin = obj_Soul_Parent {
+		if scr_State_Active_Check("Snake") and shot_stats.Shot_Beam = 0 {
+			shot_stats.Shot_Snake_Move = 2;
+			shot_stats.Shot_Target_X = mouse_x;
+			shot_stats.Shot_Target_Y = mouse_y;
 		
-			shotduplicatesprite = sprite_index;
+			//shotduplicatesprite = sprite_index;
 		
 			image = 1;
 			
@@ -24,46 +24,50 @@ function scr_State_Weapon_Mod(){
 				}
 			}
 			
-			shotburstpower = shotpower
+			shotburstpower = shot_stats.Shot_Power
 			
 			repeat(count) {
 				with instance_create(x,y, object_index) {
-					scr_Duplicate_Shot_Stats();
+					scr_Duplicate_Shot_Stats(other.shot_stats);
+					
+					sprite_index = other.sprite_index;
 				
 					followtarget = followtar;
 					followtar = id;	
 					
-					shotsnakemove = 1;
+					shot_stats.Shot_Snake_Move = 2;
 					
-					scr_Shot_Power_Set(0.15)
+					scr_Shot_Power_Set(0.5)
 					scr_Shot_Size_Set(0.7)
 					
 				}
 			}
 			
-			shotspeed = shotspeed * 1.75;
-			speed = shotspeed;
+			shot_stats.Shot_Speed = shot_stats.Shot_Speed * 1.75;
+			speed = shot_stats.Shot_Speed;
 		}
 		if scr_State_Active_Check("Beast") {
 		
 			image = 1;
 		
-			shotspeed = shotspeed * (1.5 * global.soulstateformboost);
-			if shotlifespan > 20 {
-				shotlifespan = 20 + ((shotlifespan - 20) / 3);
+			shot_stats.Shot_Speed = shot_stats.Shot_Speed * (1.5 * global.soulstateformboost);
+			if shot_stats.Shot_Life_Span > 20 {
+				shot_stats.Shot_Life_Span = 20 + ((shot_stats.Shot_Life_Span - 20) / 3);
 			}
-			alarm[0] = shotlifespan;
-		    shottimer = shotlifespan;
-			speed = shotspeed;
+			alarm[0] = shot_stats.Shot_Life_Span;
+		    ////shot_stats.Shot_Timer = shot_stats.Shot_Life_Span;
+			speed = shot_stats.Shot_Speed;
 		
-			shotpowermax = shotpowermax * (1.5 * global.soulstateformboost);
-		    shotpower = shotpowermax;
-		    shotPowerLevel = shotPowerLevel * (1.5 * global.soulstateformboost);
+			shot_stats.Shot_Power_Max = shot_stats.Shot_Power_Max * (1.5 * global.soulstateformboost);
+		    shot_stats.Shot_Power = shot_stats.Shot_Power_Max;
+		    shot_stats.Shot_Power_Level = shot_stats.Shot_Power_Level * (1.5 * global.soulstateformboost);
 		}
 		if scr_State_Active_Check("Scrub") {
 		
 			image = 1;
-			shotduplicatesprite = sprite_index;
+			//shotduplicatesprite = sprite_index;
+			//shot_stats.Shot_Air_Burst_Stats = scr_Dupe_Struct(shot_stats);
+
 			
 			var size = 1;
 			if sprite_get_height(sprite_index) > 100 {
@@ -74,116 +78,122 @@ function scr_State_Weapon_Mod(){
 				sprite_index = spr_Shot_Bubble_Large;	
 			}
 		
-			shotspeed = shotspeed;
-			shotfriction = shotspeed / shotlifespan;
-			shotminspeed = shotspeed * 0.2;
-			shotlifespan = shotlifespan * 2;
-			alarm[0] = shotlifespan;
-		    shottimer = shotlifespan;
-			speed = shotspeed;
+			shot_stats.Shot_Speed = shot_stats.Shot_Speed;
+			shot_stats.Shot_Friction = shot_stats.Shot_Speed / shot_stats.Shot_Life_Span;
+			shot_stats.Shot_Min_Speed = shot_stats.Shot_Speed * 0.2;
+			shot_stats.Shot_Life_Span = shot_stats.Shot_Life_Span * 2;
+			alarm[0] = shot_stats.Shot_Life_Span;
+		    ////shot_stats.Shot_Timer = shot_stats.Shot_Life_Span;
+			speed = shot_stats.Shot_Speed;
 			
-			shotbursttype = 3;
-			shotburstpower = shotpower;
-			shotburstspeed = shotspeed;
+			/*shotbursttype = 3;
+			shotburstpower = shot_stats.Shot_Power;
+			shotburstspeed = shot_stats.Shot_Speed;
 			shotburstamount = 1;
-			shotburstrange = 80;
+			shotburstrange = 80; */
 			
-			shothomingtype = 1;
-			if shothomingrange < 250 {
-				shothomingrange = 300;
+			shot_stats.Shot_Homing_Type = 1;
+			if shot_stats.Shot_Homing_Range < 250 {
+				shot_stats.Shot_Homing_Range = 300;
 			} else {
-				shothomingrange += 50;	
+				shot_stats.Shot_Homing_Range += 50;	
 			}
-			if shothomingspeed < 0 {
-				shothomingspeed = 5;	
+			if shot_stats.Shot_Homing_Speed <= 0 {
+				shot_stats.Shot_Homing_Speed = 3;
 			} else {
-				shothomingspeed += 5;	
+				shot_stats.Shot_Homing_Speed += 3;	
 			}
 		}
 		if scr_State_Active_Check("Spike") {
 		
-			shotspeed = shotspeed * (1.25 * global.soulstateformboost);
-			shotpierce += 1;
+			shot_stats.Shot_Spike_Aura = true
+			shot_stats.Shot_Speed = shot_stats.Shot_Speed * (1.25 * global.soulstateformboost);
+			//shot_stats.Shot_Pierce += 1;
 		
-			speed = shotspeed;
+			speed = shot_stats.Shot_Speed;
 		
-			shotpowermax = shotpowermax * (1.15 * global.soulstateformboost);
-		    shotpower = shotpowermax;
-		    shotPowerLevel = shotPowerLevel * (1.15 * global.soulstateformboost);
+			/*shot_stats.Shot_Power_Max = shot_stats.Shot_Power_Max * (1.15 * global.soulstateformboost);
+		    shot_stats.Shot_Power = shot_stats.Shot_Power_Max;
+		    shot_stats.Shot_Power_Level = shot_stats.Shot_Power_Level * (1.15 * global.soulstateformboost);
 		
-			if sprite_get_height(sprite_index) < 80 and shotmelee == 0 {
+			if sprite_get_height(sprite_index) < 80 and shot_stats.Shot_Melee == 0 {
 				sprite_index = spr_Spike_Essence_Shot;
-				shotpointangle = 1;
-			}
+				shot_stats.Shot_Point_Angle = 1;
+			} */
 		
 		}
-		if scr_State_Active_Check("Casting") and other.Shot_Beam = 0 {
+		if scr_State_Active_Check("Casting") and shot_stats.Shot_Beam = 0 {
 			
-			//Shot_Extra_Hits = false
-			shotsize += 0.2;
-			shotsizemax += 0.2;
-			image_xscale = shotsize;
-			image_yscale = shotsize;
+
+			shot_stats.Shot_Size = shot_stats.Shot_Size * 1.25;
+			shot_stats.Shot_Size_Max = shot_stats.Shot_Size;
+			shot_stats.Shot_Power = shot_stats.Shot_Power * 1.4;
+			shot_stats.Shot_Power_Level = shot_stats.Shot_Power_Level * 1.4;
+			shot_stats.Shot_Power_Max = shot_stats.Shot_Power;
+			shot_stats.Shot_Speed = shot_stats.Shot_Speed * 0.8;
 			
-			shot_stats.Shot_Extra_Stats = [other.Shot_Stats];
+			image_xscale = shot_stats.Shot_Size;
+			image_yscale = shot_stats.Shot_Size;
 			
-			shot_stats.Shot_Extra_Stats[0].Shot_Count = 1;
-			shot_stats.Shot_Extra_Stats[0].Shot_Sprite = string(sprite_get_name(sprite_index));
-			shot_stats.Shot_Extra_Stats[0].Shot_Extra_Hit_Frequency = 15 + (shotlifespan / 10);
-			shot_stats.Shot_Extra_Stats[0].Shot_Power = shotpower * global.soulstateformboost / 2.5;
-			shot_stats.Shot_Extra_Stats[0].Shot_Speed = shotspeed * 1.5;
-			shot_stats.Shot_Extra_Stats[0].Shot_Lifespan = shotlifespan / 2;
-			shot_stats.Shot_Extra_Stats[0].Shot_Pierce = shotpierce;
-			shot_stats.Shot_Extra_Stats[0].Shot_Size = (0.05 + shotsize * 0.5);
-			//shot_stats.Shot_Extra_Stats[0].Shot_Mouse = true;
-			
-			if other.Shot_Type = obj_Melee_Caster_Shot {
-				shot_stats.Shot_Extra_Stats[0].Shot_Type = obj_Lesser_Soul_Shot;
-				shot_stats.Shot_Extra_Stats[0].Shot_Lifespan = 7;
-				shot_stats.Shot_Extra_Stats[0].Shot_Sprite = string(sprite_get_name(other.Shot_Duplicate_Sprite))
-				shot_stats.Shot_Extra_Stats[0].Shot_Size = other.Shot_Size
-				shotspeed = 3;
+			speed = shot_stats.Shot_Speed;
+
+			if shot_stats.Weapon_Melee = false {
+				shot_stats.Shot_Extra_Stats = [scr_Dupe_Struct(shot_stats)];
 			}
 			
+			shot_stats.Shot_Extra_Stats[0].Shot_Count = 1;
+
+			shot_stats.Shot_Extra_Stats[0].Shot_Extra_Hit_Frequency = 15 + (shot_stats.Shot_Life_Span / 10);
+			shot_stats.Shot_Extra_Stats[0].Burst_Power = global.soulstateformboost / 2.5;
+			//shot_stats.Shot_Extra_Stats[0].Shot_Power = shot_stats.Shot_Power * global.soulstateformboost / 2.5;
+			//shot_stats.Shot_Extra_Stats[0].Shot_Power_Level = shot_stats.Shot_Power_Level * global.soulstateformboost / 2.5;
+			shot_stats.Shot_Extra_Stats[0].Shot_Speed = shot_stats.Shot_Speed * 1.5;
+
+			shot_stats.Shot_Extra_Stats[0].Shot_Pierce = shot_stats.Shot_Pierce;
+			shot_stats.Shot_Extra_Stats[0].Shot_Size = (0.05 + shot_stats.Shot_Size * 0.5);
+			shot_stats.Shot_Extra_Stats[0].Shot_Mouse = true;
+			shot_stats.Shot_Extra_Stats[0].Shot_Homing_Type = 0;
+
+			if shot_stats.Weapon_Melee = true {
+		
+				//shot_stats.Shot_Type = "obj_Melee_Caster_Shot";
+				//shot_stats.Shot_Life_Span = 180;
+				//shot_stats.Shot_Size = shot_stats.Shot_Size / 2;
+				//shot_stats.Shot_Extra_Stats[0].Shot_Type = "obj_Lesser_Soul_Shot";
+				//shot_stats.Shot_Extra_Stats[0].Shot_Life_Span = 7;
+				//shot_stats.Shot_Sprite = "spr_Casting_Sword_Orbital";
+				//shot_stats.Shot_Point_Angle = 0;
+				//shot_stats.Shot_Speed = 3;
+		
+				shot_stats.Shot_Extra_Stats[0].Shot_Off_State = 1;
+			}
 			
-			shotextrahitshrink[4] = 0;
-			shotextrahitfade[4] = 0;
-			
-			//Print_DF("init init: " + string(shot_stats.Shot_Extra_Stats))
+			//shotextrahitshrink[4] = 0;
+			//shotextrahitfade[4] = 0;
 		
 			image = 1;
-		
-			//shotspeed = shotspeed * 1.5;
-			shotlifespan = shotlifespan * 2;
-			alarm[0] = shotlifespan;
-		    shottimer = shotlifespan;
-			//speed = shotspeed;
+
+			shot_stats.Shot_Life_Span = shot_stats.Shot_Life_Span * 2;
+			alarm[0] = shot_stats.Shot_Life_Span;
+		    ////shot_stats.Shot_Timer = shot_stats.Shot_Life_Span;
 			
-			shotspeed = shotspeed * 0.75;
-			speed = shotspeed;
+			shot_stats.Shot_Phasing = 1;
 			
-			shotphasing = 1;
-			
-			shotorbitaltype = 1;
-			shotOrbit = 75;
-	        shotAngle = point_direction(x,y,mouse_x,mouse_y);
-	        //shotAngle += other.Shot_Current_Count * (360 / other.Shot_Count)
-	        shotCenterX = other.x;
-	        shotCenterY = other.y;
-			speed = 0;
-			
-			image_xscale = shotsize;
-			image_yscale = shotsize;
-			
-			
-			if other.Weapon_Melee > 0 {
+			shot_stats.Shot_Orbital_Type = 1;
+			shot_stats.Shot_Orbital_Range = 75;
+	        shot_stats.Shot_Orbital_Angle = point_direction(x,y,mouse_x,mouse_y);
+
+	        shot_stats.Shot_Center_X = other.x;
+	        shot_stats.Shot_Center_Y = other.y;
+			//speed = 0;
+
+			/*if shot_stats.Weapon_Melee > 0 {
 		
 				shotextrahitlifespan[4] = 10;
 				shotextrahitsize[4] = other.Shot_Size * 2;
 				shotextrahitssprite[4] = other.Shot_Duplicate_Sprite;
-		
-				//Shot_Off_State = 1;
-			}
+
+			} */
 				
 			target = other;
 			otarget = other.id;
@@ -191,22 +201,22 @@ function scr_State_Weapon_Mod(){
 	
 		if other.Charge_Hold = 2 || scr_State_Active_Check("Ascending") {
 			
-			shotsize += 0.3;
-			shotsizemax += 0.3;
-			image_xscale = shotsize;
-			image_yscale = shotsize;
+			shot_stats.Shot_Size += 0.3;
+			shot_stats.Shot_Size_Max += 0.3;
+			image_xscale = shot_stats.Shot_Size;
+			image_yscale = shot_stats.Shot_Size;
 			
 			shot_stats.Shot_Lobbing = true;
 			shot_stats.Shot_Height = 50;
 			shot_stats.Shot_Fall_Speed = -0.5;
-			var grav = (100 / (shotlifespan * shotlifespan)) - (-1 / shotlifespan) 
+			var grav = (100 / (shot_stats.Shot_Life_Span * shot_stats.Shot_Life_Span)) - (-1 / shot_stats.Shot_Life_Span) 
 			shot_stats.Shot_Gravity = grav + 0.01
 			y -= shot_stats.Shot_Height;
 			
-			shotchain = 4;
-			shotchaintype = 2;
-			shotchainpower = shotpower / 4;
-			shotchainrange = 500
+			shot_stats.Shot_Chain = 4;
+			shot_stats.Shot_Chain_Type = 2;
+			shot_stats.Shot_Chain_Power = shot_stats.Shot_Power / 4;
+			shot_stats.Shot_Chain_Range = 500
 		}
 	}
 }

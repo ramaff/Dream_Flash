@@ -960,6 +960,16 @@ function scr_Hard_Coded_Item_Stats(itemVal, items_to_add = 1, reload = false) {
 	}
 	if itemVal = "P08" {
 	}
+	if itemVal = "P09" {
+		if !reload {
+			global.soulloathing += 4;
+		}
+	}
+	
+	if itemVal = "Q04" {
+		global.soulshotlifefactor += 10;
+	    obj_Soul_Parent.sshotlifefactor += 10;
+	}
 
 	if !reload {
 		if itemVal = "R01" {
@@ -1050,8 +1060,8 @@ function scr_Hard_Coded_Item_Stats(itemVal, items_to_add = 1, reload = false) {
 	    obj_Soul_Parent.spowerfactor -= 2.5;
 		global.soulenergyconservationfactor += 0.25;
 	    obj_Soul_Parent.senergyconservationfactor += 0.25;
-		global.soulshotsizefactor -= 0.3;
-	    obj_Soul_Parent.sshotsizefactor -= 0.3;
+		global.soulshotsizefactor -= 0.125;
+	    obj_Soul_Parent.sshotsizefactor -= 0.125;
 	}
 	if itemVal = "U07" {
 		//global.U[7]++;	

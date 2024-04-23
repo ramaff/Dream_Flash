@@ -13,8 +13,8 @@ function scr_S01() {
 			Shot_Type: "obj_Lesser_Soul_Shot",
 			Shot_Speed: 8.5,
 			Shot_Power: 5 + ((20 + global.soulparanoia + global.soulparanoiaTemp) / 2 * global.S[1]),
-			Shot_Knockback: 15,
-			Shot_Lifespan: 100,
+			Shot_Knock_Back: 15,
+			Shot_Life_Span: 100,
 			Shot_Pierce: 2,
 			Shot_Point_Angle: 1,
 			Shot_Size: 0.5
@@ -26,7 +26,7 @@ function scr_S01() {
 			current_weapon_stats.Shot_Direction = point_direction(x,y,instance_nearest(x,y,obj_Boss_Parent).x,instance_nearest(x,y,obj_Boss_Parent).y);
 		}
 		
-		scr_Setup_Weapon_Stats(current_weapon_stats);
+		current_weapon_stats = scr_Setup_Weapon_Stats(current_weapon_stats);
 		scr_Shot_Creation();
 
 	}

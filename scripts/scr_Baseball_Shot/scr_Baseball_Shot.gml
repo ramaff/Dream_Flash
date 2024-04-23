@@ -22,15 +22,15 @@ function scr_Baseball_Shot(xxx,yyy, pow) {
 		//Shot_Form_Show: 0,
 		Shot_Speed: (8 + other.speed) * (pow / 100),
 		Shot_Power: (5 + other.bulletpower / 3) * (pow / 100),
-		Shot_Knockback: 10,
-		Shot_Lifespan: 30,
+		Shot_Knock_Back: 10,
+		Shot_Life_Span: 30,
 		Shot_Trail: 1,
 		Shot_Trail_Sprite: "spr_Big_Essence_Trail_Bit",
 		Shot_Trail_Area: 15,
 		Shot_Trail_Life: 20,
 		Shot_Trail_Fade: 0,
-		Shot_Trail_Color1: [255,246,0],
-		Shot_Trail_Color2: [255,119,0],
+		Shot_Trail_Color_1: [255,246,0],
+		Shot_Trail_Color_2: [255,119,0],
 		Shot_Trail_Hit_Count: 13,
 		Shot_Trail_Hit_Life: 10,
 		Shot_Fire: 3,
@@ -45,7 +45,7 @@ function scr_Baseball_Shot(xxx,yyy, pow) {
 		current_weapon_stats.Shot_Power = 0;	
 	}
 
-	scr_Setup_Weapon_Stats(current_weapon_stats);
+	current_weapon_stats = scr_Setup_Weapon_Stats(current_weapon_stats);
 	scr_Shot_Creation();
 
 }

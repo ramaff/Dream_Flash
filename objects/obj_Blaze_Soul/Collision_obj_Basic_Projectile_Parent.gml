@@ -2,17 +2,17 @@ var hit_again = variable_struct_exists(projectile_hits, other.id)
 if !hit_again {
 	variable_struct_set(projectile_hits, other.id, other.id)
     with(other) {
-        shotspeed += 2.5;
+        shot_stats.Shot_Speed += 2.5;
         speed += 2.5;
-        shotfire += 3;
-        if shotfireticks <= 3 {
-            shotfiretime = 60;
-            shotfireticks = 2;
+        shot_stats.Shot_Fire += 3;
+        if shot_stats.Shot_Fire_Ticks <= 3 {
+            shot_stats.Shot_Fire_Time = 60;
+            shot_stats.Shot_Fire_Ticks = 2;
         }
         if (sprite_get_width(sprite_index) <= 100) and object_index != obj_Beam_Shot {
             sprite_index = spr_Fire_Essence_Shot;
-			if shotsize < 1 {
-				shotsize += 0.05;
+			if shot_stats.Shot_Size < 1 {
+				shot_stats.Shot_Size += 0.05;
 				image_xscale += 0.05;
 				image_yscale += 0.05;
 			}

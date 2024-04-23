@@ -5,7 +5,7 @@ function scr_Shot_Lightning_Chain(max_streaks = 30, streak_target = noone, chain
 	var bosses_struck = {};
 	variable_struct_set(bosses_struck, other.id, other.id)
 	
-	if shotchaintype = 1 {
+	if shot_stats.Shot_Chain_Type = 1 {
 		while instance_exists(streak_target) and chains > 0 {
 			streak_target = noone
 			var streak_dis = 99999
@@ -64,7 +64,7 @@ function scr_Shot_Lightning_Chain(max_streaks = 30, streak_target = noone, chain
 		}
 	}
 	
-	if shotchaintype = 2 {
+	if shot_stats.Shot_Chain_Type = 2 {
 		
 		while(chains > 0) {
 			streak_target = noone

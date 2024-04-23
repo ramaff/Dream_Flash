@@ -1,33 +1,37 @@
 // Script assets have changed for v2.3.0 see
 // https://help.yoyogames.com/hc/en-us/articles/360005277377 for more information
-function scr_Weapon_Output(_spawn_projectile = spawnProjectile, _minion = minion) {
+function scr_Weapon_Output(_spawn_projectile = spawnProjectile, _minion = minion, _cw_stats = current_weapon_stats) {
 
 	if _spawn_projectile {
 		
 		if !_minion {
-			scr_Shot_Creation();
+			scr_Shot_Creation(_cw_stats);
 			scr_Q03(false);
 		} else {
-			scr_Soul_Spawn();
+			scr_Soul_Spawn(_cw_stats);
 			scr_Q03(true);
 		}
 		
-		if Shot_Extra != false {
+		if _cw_stats.Shot_Extra != false {
 			
-			var i = 0
-			for(i = 0; i < array_length(Shot_Extra); i++) {
+			var _og_stats = scr_Dupe_Struct(_cw_stats)
+			var _size = array_length(_cw_stats.Shot_Extra)
 			
-				//current_weapon_stats = Shot_Extra[i]
-			
-				scr_Setup_Weapon_Stats(Shot_Extra[i])
-				scr_Hard_Coded_Weapon_Stats(current_weapon_stats.Weapon_Number);
+			for(var _i = 0; _i < _size; _i++) {
+				
+				if is_struct(_cw_stats.Shot_Extra[_i]) {
+				
+					var _ex_stats = scr_Struct_Merge(_og_stats, _cw_stats.Shot_Extra[_i], false)
+
+					scr_Hard_Coded_Weapon_Stats(_ex_stats);
 		
-				if !_minion {
-					scr_Shot_Creation();
-					scr_Q03(false);
-				} else {
-					scr_Soul_Spawn();
-					scr_Q03(true);
+					if !_minion {
+						scr_Shot_Creation(_ex_stats);
+						scr_Q03(false);
+					} else {
+						scr_Soul_Spawn(_cw_stats);
+						scr_Q03(true);
+					}
 				}
 			}
 		}

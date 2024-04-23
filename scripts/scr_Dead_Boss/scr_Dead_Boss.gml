@@ -1,6 +1,6 @@
 // Script assets have changed for v2.3.0 see
 // https://help.yoyogames.com/hc/en-us/articles/360005277377 for more information
-function scr_Dead_Boss(_diff = difficulty){
+function scr_Dead_Boss(_diff = difficulty, _ko_time = 30){
 
 	//Print_DF(sprite_get_name(death_sprite))
 	//Print_DF(sprite_get_name(boss_palette))
@@ -23,7 +23,7 @@ function scr_Dead_Boss(_diff = difficulty){
 			image_index = 0;
 	
 			sprite_index = other.death_sprite	
-			alarm[0] = 30;
+			alarm[0] = _ko_time;
 			speed = 15;
 			direction = other.deadknockdirection;
 		

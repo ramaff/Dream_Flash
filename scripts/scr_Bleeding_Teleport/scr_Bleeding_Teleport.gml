@@ -3,28 +3,23 @@ function scr_Bleeding_Teleport() {
 
 	if obj_Soul_Parent.scurrentstate = "Bleeding" {
 		
-		scr_Default_Weapon_Stats();
+		current_weapon_stats = scr_Setup_Default_Shot_Stats()
 		
-		current_weapon_stats = {
-			Shot_Spread: 0,
-			Shot_Accuracy: 10,
-			Shot_Count: 1,
-			Shot_Sprite: "spr_Bleeding_Blade_Shot",
-			Shot_Type: "obj_Lesser_Soul_Shot"
-		};
-	
-		//scr_Setup_Weapon_Stats(current_weapon_stats);
-		//current_weapon_stats.
+		current_weapon_stats.Shot_Spread = 0;
+		current_weapon_stats.Shot_Accuracy = 10;
+		current_weapon_stats.Shot_Count = 1;
+		current_weapon_stats.Shot_Sprite = "spr_Bleeding_Blade_Shot"
+		current_weapon_stats.Shot_Type = "obj_Lesser_Soul_Shot"
 
 		current_weapon_stats.Shot_Phasing = 1;
-		current_weapon_stats.Weapon_Soul_Maintain = 1;
+		current_weapon_stats.Shot_Soul_Maintain = 1;
 
-		current_weapon_stats.Weapon_Melee = 1;
+		current_weapon_stats.Weapon_Melee = true;
 
 		current_weapon_stats.Shot_Speed = 0;
 		current_weapon_stats.Shot_Power = 40;
-		current_weapon_stats.Shot_Knockback = 10 + sqrt(Shot_Power);
-		current_weapon_stats.Shot_Lifespan = 60;
+		current_weapon_stats.Shot_Knock_Back = 10 + sqrt(current_weapon_stats.Shot_Power);
+		current_weapon_stats.Shot_Life_Span = 60;
 		current_weapon_stats.Shot_Angle = 90 + point_direction(x,y,mouse_x,mouse_y);
 		current_weapon_stats.Shot_Image_Rotation_Speed = -15;
 		
@@ -43,17 +38,17 @@ function scr_Bleeding_Teleport() {
 		friction = 1;
 		direction = point_direction(x,y,mouse_x,mouse_y);
 
-		current_weapon_stats.Shot_Size = 0.3 + (sqrt(Shot_Power) / 20);
+		current_weapon_stats.Shot_Size = 0.15 + (sqrt(current_weapon_stats.Shot_Power) / 50);
 
-		scr_Setup_Weapon_Stats(current_weapon_stats);
+		//current_weapon_stats = scr_Setup_Weapon_Stats(current_weapon_stats);
 
-		scr_Shot_Creation();
+		scr_Shot_Creation(current_weapon_stats);
 		
 		current_weapon_stats.Shot_Angle = current_weapon_stats.Shot_Angle + 180;
 		
-		scr_Setup_Weapon_Stats(current_weapon_stats);
+		//current_weapon_stats = scr_Setup_Weapon_Stats(current_weapon_stats);
 
-		scr_Shot_Creation();
+		scr_Shot_Creation(current_weapon_stats);
 	
 		scr_Sound_Effect(sd_Sword_Slash);
 		

@@ -19,8 +19,8 @@ if instance_exists(obj_Boss_Parent) {
     
     Shot_Speed = 9.5;
     Shot_Power = 10;
-    Shot_Knockback = 10;
-    Shot_Lifespan = 90;
+    Shot_Knock_Back = 10;
+    Shot_Life_Span = 90;
     
     scr_Minion_Shot_Creation();
 	

@@ -1,15 +1,10 @@
 function scr_Barrage_Weapon_Use(cWP) {
-
-	//current_weapon_stats = variable_struct_get(global.weapon_stats, string(cWP))
-	//scr_Default_Weapon_Stats();
-	
-	//Print_DF(string(Shot_Repetition_Stats[bi]))
 	
 	if Shot_Repetition_Stats[bi] != false {
 		current_weapon_stats = Shot_Repetition_Stats[bi]
 	}
 	
-	scr_Setup_Weapon_Stats();
+	current_weapon_stats = scr_Setup_Weapon_Stats(current_weapon_stats);
 	
 	if Shot_Repetition[bi] >= 1 {
 		Shot_Direction = Shot_Repetition_Direction[bi];
@@ -24,7 +19,7 @@ function scr_Barrage_Weapon_Use(cWP) {
 	}
 	if cWP = 211 {
 		if Shot_Repetition[bi] = 1 {
-			Shot_Default_Count[bi] = 1;
+			//Shot_Default_Count[bi] = 1;
 			Shot_Power = Shot_Power * 1.5;
 		
 			Shot_Burst_Type = 1;

@@ -1,5 +1,5 @@
 //if other.bossid.state = states.normal {
-if instance_exists(other.bossid) {
+if instance_exists(other.bossid) and soul_underground <= 0 {
 	
 	if global.V[5] > 0 {
 		var _evaded = scr_V05();

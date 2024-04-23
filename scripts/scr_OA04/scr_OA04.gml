@@ -5,6 +5,6 @@ function scr_OA04(){
 
 	if global.OA[4] >= 1 {
 	    //if obj_Soul_Parent.senergy >= 50 {
-		shotwishful += global.OA[4];
+		shot_stats.Shot_Wishful += global.OA[4];
 	}
 }

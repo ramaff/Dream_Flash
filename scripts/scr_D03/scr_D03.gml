@@ -9,25 +9,25 @@ function scr_D03(){
 		
 		current_weapon_stats.Shot_Lobbing = true
 		current_weapon_stats.Shot_Speed = current_weapon_stats.Shot_Speed * 1.4;
-		current_weapon_stats.Shot_Lifespan = current_weapon_stats.Shot_Lifespan * 0.7;
+		current_weapon_stats.Shot_Life_Span = current_weapon_stats.Shot_Life_Span * 0.7;
 		current_weapon_stats.Shot_Height = 0;
 		current_weapon_stats.Shot_Fall_Speed = -4;
-		current_weapon_stats.Shot_Gravity = 8 / current_weapon_stats.Shot_Lifespan;
+		current_weapon_stats.Shot_Gravity = 8 / current_weapon_stats.Shot_Life_Span;
 		
-		
+		var _og_stats = scr_Dupe_Struct(current_weapon_stats)
 		repeat(global.D[3]) {
 		
-			if Shot_Extra = false {
-				Shot_Extra = [json_parse(json_stringify(current_weapon_stats))]
+			if current_weapon_stats.Shot_Extra = false {
+				current_weapon_stats.Shot_Extra = [scr_Dupe_Struct(_og_stats)]
 			} else {
-				array_push(Shot_Extra, json_parse(json_stringify(current_weapon_stats)))
+				array_push(current_weapon_stats.Shot_Extra, scr_Dupe_Struct(_og_stats))
 			}
 	
-			var _extra_index = array_length(Shot_Extra) - 1;
+			var _extra_index = array_length(current_weapon_stats.Shot_Extra) - 1;
 			
-			Shot_Extra[_extra_index].Shot_Power = current_weapon_stats.Shot_Power * 0.2;
-			Shot_Extra[_extra_index].Shot_Size = current_weapon_stats.Shot_Size * 0.6;
-			Shot_Extra[_extra_index].Shot_Speed = current_weapon_stats.Shot_Speed * (0.6 + random(0.6));
+			current_weapon_stats.Shot_Extra[_extra_index].Shot_Power = current_weapon_stats.Shot_Power * 0.2;
+			current_weapon_stats.Shot_Extra[_extra_index].Shot_Size = current_weapon_stats.Shot_Size * 0.6;
+			current_weapon_stats.Shot_Extra[_extra_index].Shot_Speed = current_weapon_stats.Shot_Speed * (0.6 + random(0.6));
 		
 		}
 		

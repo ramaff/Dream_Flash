@@ -2,34 +2,36 @@
 // You can write your code in this editor
 if global.gameParticles > 0 {
 
-	alarm[2] = shottrailfrequency / global.gameParticles;
-
-	if shottrail > 0 and shottrail < 3 {
+	alarm[2] = shot_stats.Shot_Trail_Frequency / global.gameParticles;
 	
-		var xx = random(shottrailarea) - (shottrailarea / 2);
-		var yy = random(shottrailarea) - (shottrailarea / 2);
+	scr_Spike_Shot_Particles();
+
+	if shot_stats.Shot_Trail > 0 and shot_stats.Shot_Trail < 3 {
+	
+		var xx = random(shot_stats.Shot_Trail_Area) - (shot_stats.Shot_Trail_Area / 2);
+		var yy = random(shot_stats.Shot_Trail_Area) - (shot_stats.Shot_Trail_Area / 2);
 		
 		var _speed = 0;
 		var _direction = 0;
 	
-		with instance_create(x + xx,y + yy, shottrailtype) {
-		
-			sprite_index = other.shottrailsprite;
-		
+		with instance_create(x + xx,y + yy, asset_get_index(shot_stats.Shot_Trail_Type)) {
+
+			sprite_index = asset_get_index(other.shot_stats.Shot_Trail_Sprite);
+
 			image_angle = other.image_angle;
 			depth = other.depth - 1;
 		
-			image_blend = merge_colour(other.shottrailcolor1, other.shottrailcolor2, random(1));
+			image_blend = scr_Mix_Two_Color_Arrays(other.shot_stats.Shot_Trail_Color_1, other.shot_stats.Shot_Trail_Color_2)
 
-			size = other.shotsize;
+			size = other.shot_stats.Shot_Size;
 			image_xscale = size;
 			image_yscale = size;
 		
-			life = other.shottraillife;
+			life = other.shot_stats.Shot_Trail_Life;
 			alarm[0] = life;
 			
-			speed = other.shottrailspeed
-			direction = other.shottraildirection
+			speed = other.shot_stats.Shot_Trail_Speed
+			direction = other.shot_stats.Shot_Trail_Direction
 			
 			base_direction = direction
 
@@ -39,28 +41,28 @@ if global.gameParticles > 0 {
 	
 	scr_A07_Particles();
 
-	if shottrail = 3 {
+	if shot_stats.Shot_Trail = 3 {
 	
-		var xx = random(shottrailarea) - (shottrailarea / 2);
-		var yy = random(shottrailarea) - (shottrailarea / 2);
+		var xx = random(shot_stats.Shot_Trail_Area) - (shot_stats.Shot_Trail_Area / 2);
+		var yy = random(shot_stats.Shot_Trail_Area) - (shot_stats.Shot_Trail_Area / 2);
 	
-		with instance_create(x + xx,y + yy, shottrailtype) {
+		with instance_create(x + xx,y + yy, asset_get_index(shot_stats.Shot_Trail_Type)) {
 		
-			sprite_index = other.shottrailsprite;
+			sprite_index = asset_get_index(other.shot_stats.Shot_Trail_Sprite);
 		
 			image_angle = other.image_angle;
 			depth = other.depth - 1;
-		
-			image_blend = merge_colour(other.shottrailcolor1, other.shottrailcolor2, random(1));
+			
+			image_blend = scr_Mix_Two_Color_Arrays(other.shot_stats.Shot_Trail_Color_1, other.shot_stats.Shot_Trail_Color_2)
 
-			size = other.shotsize;
+			size = other.shot_stats.Shot_Size;
 			image_xscale = size;
 			image_yscale = size;
 		
-			life = other.shottraillife;
+			life = other.shot_stats.Shot_Trail_Life;
 			alarm[0] = life;
 		
-			if other.shottrailtype = obj_Black_Hole_Part {
+			if other.shot_stats.Shot_Trail_Type = obj_Black_Hole_Part {
 				target = other.id
 			} else {
 				direction = point_direction(x,y,other.x,other.y);

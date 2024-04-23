@@ -4,9 +4,11 @@
 // Inherit the parent event
 
 if instance_exists(obj_Boss_Parent) {
-	if distance_to_object(obj_Boss_Parent) <= shotburstrange {
-		instance_destroy();
-		exit;
+	if is_array(shot_stats.Shot_Air_Burst_Stats) {
+		if distance_to_object(obj_Boss_Parent) <= shot_stats.Shot_Air_Burst_Stats[0].Range {
+			instance_destroy();
+			exit;
+		}
 	}
 }
 

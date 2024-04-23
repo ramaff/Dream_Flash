@@ -18,7 +18,7 @@ function scr_Game_Control_Setup() {
 		"base_tutorial": 0
 	}
 	
-	scr_Setup_Default_Shot_Stats();
+	//scr_Setup_Default_Shot_Stats();
 
 	scr_Music_Set();
 }

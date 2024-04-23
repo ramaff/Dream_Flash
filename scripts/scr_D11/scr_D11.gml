@@ -1,12 +1,12 @@
-function scr_D11() {
+function scr_D11(_cw) {
 	// Soul Shot Creation
 	
 	if global.D[11] > 0 {
-		Shot_Friction += (3 / 30) * global.D[11];
-		if Shot_Min_Speed = 1 {
-			Shot_Min_Speed = Shot_Speed;
+		_cw.Shot_Friction += (3 / 30) * global.D[11];
+		if _cw.Shot_Min_Speed = 1 {
+			_cw.Shot_Min_Speed = _cw.Shot_Speed;
 		}
-		Shot_Speed += 3 * global.D[11];
+		_cw.Shot_Speed += 3 * global.D[11];
 	}
 
 	/*

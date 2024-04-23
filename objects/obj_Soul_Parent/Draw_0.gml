@@ -8,7 +8,9 @@ draw_sprite_ext(spr_Soul_Glow,0,x,y,flk,flk,0,c_white,0.15);
 
 //shader_set(shd_Bloom_Pot);
 //show_debug_message(sprite_get_name(sprite_index))
+if soul_underground <= 0 {
     draw_self();
+}
 //shader_reset();
 
 current_weapon_stats = variable_struct_get(global.weapon_stats, string(weaponcharge))

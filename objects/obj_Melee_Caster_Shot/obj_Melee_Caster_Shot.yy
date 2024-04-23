@@ -35,8 +35,8 @@
   "properties": [],
   "solid": false,
   "spriteId": {
-    "name": "spr_Soul_Shot",
-    "path": "sprites/spr_Soul_Shot/spr_Soul_Shot.yy",
+    "name": "spr_Casting_Sword_Orbital",
+    "path": "sprites/spr_Casting_Sword_Orbital/spr_Casting_Sword_Orbital.yy",
   },
   "spriteMaskId": null,
   "visible": false,

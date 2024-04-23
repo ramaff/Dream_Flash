@@ -130,6 +130,7 @@ global.souldefensefactor = 0;
 global.soulshotpierce = 0;
 
 global.soulshotsizefactor = 0;
+global.soulshotspeedfactor = 0;
 global.soulcritadd = 0;
 global.soulcritaddchance = 0;
 global.soulcontactdefenseadd = 0;

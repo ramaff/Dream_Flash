@@ -9,8 +9,8 @@ if image_index >= 1 {
 }
 
 if global.currentweapon != 603 {
-	shotpierce -= 0.2;
-	if shotpierce < 1 {
+	shot_stats.Shot_Pierce -= 0.2;
+	if shot_stats.Shot_Pierce < 1 {
 		instance_destroy()	
 	}
 }

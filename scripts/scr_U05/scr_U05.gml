@@ -3,29 +3,29 @@ function scr_U05() {
 
 	if global.U[5] >= 1 {
 	    //if obj_Soul_Parent.senergy >= 50 {
-		if shotchaintype = 0 {
-	        shotchaintype = 1;
+		if shot_stats.Shot_Chain_Type = 0 {
+	        shot_stats.Shot_Chain_Type = 1;
 		}
 	
-		if shotchainpower < 10 {
-			shotchainpower += 5 * global.U[5];
-			if shotchainpower > 10 {
-				shotchainpower = 10;
+		if shot_stats.Shot_Chain_Power < 10 {
+			shot_stats.Shot_Chain_Power += 5 * global.U[5];
+			if shot_stats.Shot_Chain_Power > 10 {
+				shot_stats.Shot_Chain_Power = 10;
 			}
 		}
 	
-		if shotchainspeed < 8 {
-	        shotchainspeed = 4 + 4 * global.U[5];
+		if shot_stats.Shot_Chain_Speed < 8 {
+	        shot_stats.Shot_Chain_Speed = 4 + 4 * global.U[5];
 	    } else {
-	        shotchainspeed += 4 * global.U[5];
+	        shot_stats.Shot_Chain_Speed += 4 * global.U[5];
 	    }
 	
-		shotchain++;
+		shot_stats.Shot_Chain++;
     
-		if shotchainrange < 150 {
-	        shotchainrange = 100 + 100 * global.U[5];
+		if shot_stats.Shot_Chain_Range < 150 {
+	        shot_stats.Shot_Chain_Range = 100 + 100 * global.U[5];
 	    } else {
-	        shotchainrange += 100 * global.U[5];
+	        shot_stats.Shot_Chain_Range += 100 * global.U[5];
 	    }
 	//}
 	}

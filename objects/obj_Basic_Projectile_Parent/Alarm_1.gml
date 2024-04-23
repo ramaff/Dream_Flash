@@ -1,88 +1,111 @@
-var extra_stats = shot_stats.Shot_Extra_Stats
 
-//Print_DF(string(extra_stats))
+var extra_stats = shot_stats.Shot_Extra_Stats
 
 if extra_stats = false {
 	exit;	
 }
 
-var extra_shot_amount = array_length(extra_stats);
+var extra_shots_amount = array_length(extra_stats);
 
 var i = 0;
-for(i = 0; i < extra_shot_amount; i++) {
+for(i = 0; i < extra_shots_amount; i++) {
 	
-	if (shottimer mod extra_stats[i].Shot_Extra_Hit_Frequency = 0) {
+	if (alarm[0] mod extra_stats[i].Shot_Extra_Hit_Frequency = 0) {
 	
 		var current_extra_stats = extra_stats[i]
-		//show_debug_message("current_extra_stats: " + string(current_extra_stats))
 	    dir = 0;
-	    //image = 1;
-	    shothitagain = 1;
+	    shot_stats.Shot_Hit_Again = 1;
 		if variable_struct_exists(current_extra_stats, "Burst_Power") {
-			shotburstpower = shotpower * current_extra_stats.Burst_Power;
+			shotburstpower = shot_stats.Shot_Power * current_extra_stats.Burst_Power;
 		} else {
 			shotburstpower = shot_stats.Shot_Power;
 		}
-	    shotimpacttype = 0;
-	    shotimpactpower = 0;
+	    shot_stats.Shot_Impact_Type = 0;
+	    shot_stats.Shot_Impact_Power = 0;
 	
 		var ramt = current_extra_stats.Shot_Count;
-		shotduplicatesprite = asset_get_index(current_extra_stats.Shot_Sprite);
+		
+		var _xx = 0;
+		var _yy = 0;
+		
+		if variable_struct_exists(current_extra_stats, "Shot_XX") {
+			_xx = current_extra_stats.Shot_XX
+		}
+		if variable_struct_exists(current_extra_stats, "Shot_YY") {
+			_yy = current_extra_stats.Shot_YY
+		}
 	
 	    repeat(ramt) {
-		    with instance_create(x + shotextrahitxx,y + shotextrahityy,obj_Lesser_Soul_Shot) {
-		        scr_Duplicate_Shot_Stats();
+		    with instance_create(x + _xx,y + _yy,obj_Lesser_Soul_Shot) {
+				//shot_stats = scr_Setup_Default_Shot_Stats()
+				//shot_stats = scr_Struct_Merge(shot_stats, scr_Dupe_Struct(current_extra_stats), false);
+		        scr_Duplicate_Shot_Stats(current_extra_stats);
 				
-				shot_stats = scr_Setup_Default_Shot_Stats();
-				var _PropertyNames = variable_struct_get_names(current_extra_stats);
-		        for (var i = 0; i < array_length(_PropertyNames); i++) {
-		            variable_struct_set(shot_stats, _PropertyNames[i], variable_struct_get(current_extra_stats, _PropertyNames[i]));
-		        }
+				scr_Shot_Burst_Stats(current_extra_stats)
+				
+				if variable_struct_exists(current_extra_stats, "Shot_Extra_Stats") {
+					shot_stats.Shot_Extra_Stats = current_extra_stats.Shot_Extra_Stats
+				} else {
+					shot_stats.Shot_Extra_Stats = false	
+				}
+				
+				//shot_stats = scr_Setup_Default_Shot_Stats();
+				//var _PropertyNames = variable_struct_get_names(current_extra_stats);
+		        //for (var i = 0; i < array_length(_PropertyNames); i++) {
+		        //    variable_struct_set(shot_stats, _PropertyNames[i], variable_struct_get(current_extra_stats, _PropertyNames[i]));
+		        //}
+				scr_Setup_Shot_Stats_Asset(shot_stats);
 			
-				shotspeed =	shot_stats.Shot_Speed;
-				shotlifespan = shot_stats.Shot_Lifespan;
-				shottimer = shotlifespan;
+				shot_stats.Shot_Speed =	shot_stats.Shot_Speed;
+				shot_stats.Shot_Life_Span = shot_stats.Shot_Life_Span;
+				////shot_stats.Shot_Timer = shot_stats.Shot_Life_Span;
 		
-				speed = shotspeed;
-				shothomingtype = shot_stats.Shot_Homing_Type;
-				shothomingspeed = shot_stats.Shot_Homing_Speed;
-				shotpierce = shot_stats.Shot_Pierce;
-				shotacceleration = shot_stats.Shot_Acceleration;
+				speed = shot_stats.Shot_Speed;
+				shot_stats.Shot_Homing_Type = shot_stats.Shot_Homing_Type;
+				shot_stats.Shot_Homing_Speed = shot_stats.Shot_Homing_Speed;
+				shot_stats.Shot_Pierce = shot_stats.Shot_Pierce;
+				shot_stats.Shot_Acceleration = shot_stats.Shot_Acceleration;
 		
 				if variable_struct_exists(shot_stats, "Burst_Size") {
-					shotsize = shotsize * shot_stats.Burst_Size
-					image_xscale = shotsize;
-					image_yscale = shotsize;
-					shotsizemax = other.shotsizemax;
+					shot_stats.Shot_Size = shot_stats.Shot_Size * shot_stats.Burst_Size
+					image_xscale = shot_stats.Shot_Size;
+					image_yscale = shot_stats.Shot_Size;
+					shot_stats.Shot_Size_Max = other.shot_stats.Shot_Size_Max;
 				} else {
-					shotsize = shot_stats.Shot_Size;
+					shot_stats.Shot_Size = shot_stats.Shot_Size;
 				}
-				shotshrink = shot_stats.Shot_Shrink;
-				shotfade = shot_stats.Shot_Fade;
+				shot_stats.Shot_Shrink = shot_stats.Shot_Shrink;
+				shot_stats.Shot_Fade = shot_stats.Shot_Fade;
 				
-				shotfacedirection = shot_stats.Shot_Face_Direction;
+				shot_stats.Shot_Face_Direction = shot_stats.Shot_Face_Direction;
 				
 				sprite_index = asset_get_index(shot_stats.Shot_Sprite);
 
-				shotpointangle = shot_stats.Shot_Point_Angle;
+				shot_stats.Shot_Point_Angle = shot_stats.Shot_Point_Angle;
 
-				if shotpointangle = 1 {
+				if shot_stats.Shot_Point_Angle = 1 {
 
 					image_angle = direction;				
 				}
 		
-				//shotformshow = 0;
+				//shot_stats.Shot_Form_Show = 0;
 		
-				if shotshrink = 1 {
-					shotformshow = 0;	
+				if shot_stats.Shot_Shrink = 1 {
+					shot_stats.Shot_Form_Show = 0;	
 				}
 		
-				shotorbitaltype = 0;
-				shotOrbit = 0;
-				shotsizemax = shotsize;
-				shotSizeRelation = 1;
+				shot_stats.Shot_Orbital_Type = 0;
+				shot_stats.Shot_Orbit_Distance = 0;
+				shot_stats.Shot_Size_Max = shot_stats.Shot_Size;
+				shot_stats.Shot_Size_Relation = 1;
 				
-				scr_Shot_Particle_Setup();
+				if shot_stats.Shot_Mouse {
+					if instance_exists(other.otarget) {
+						direction = point_direction(other.otarget.x, other.otarget.y,mouse_x, mouse_y);
+					} else {
+						direction = point_direction(x,y,mouse_x, mouse_y);
+					}
+				}
 	
 				if instance_exists(obj_Boss_Parent) {
 					if shot_stats.Shot_Boss_Aim {
@@ -91,7 +114,7 @@ for(i = 0; i < extra_shot_amount; i++) {
 					}
 				}
 				
-		        alarm[0] = shotlifespan;
+		        alarm[0] = shot_stats.Shot_Life_Span;
 		    }
 			dir += 360 / ramt;
 		}

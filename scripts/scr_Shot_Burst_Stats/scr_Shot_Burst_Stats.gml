@@ -1,60 +1,62 @@
 // Script assets have changed for v2.3.0 see
 // https://help.yoyogames.com/hc/en-us/articles/360005277377 for more information
-function scr_Shot_Burst_Stats(vshotburststats){
+function scr_Shot_Burst_Stats(_v_burst_stats){
 	
-	/*if variable_struct_exists(vshotburststats, "Shot_Power") {
-		shotpower = vshotburststats.Shot_Power
-		//show_debug_message(shotpower)
-		shotpowermax = shotpower;
+	/*if variable_struct_exists(_v_burst_stats, "Shot_Power") {
+		shot_stats.Shot_Power = _v_burst_stats.Shot_Power
+		//show_debug_message(shot_stats.Shot_Power)
+		shot_stats.Shot_Power_Max = shot_stats.Shot_Power;
 	} */
-	if variable_struct_exists(vshotburststats, "Burst_Power") {
-		shotpower = shotpower * vshotburststats.Burst_Power;
-		shotaurapower = shotaurapower * vshotburststats.Burst_Power;
-		shotpowermax = shotpower;
+	if variable_struct_exists(_v_burst_stats, "Burst_Power") {
+		shot_stats.Shot_Power = shot_stats.Shot_Power * _v_burst_stats.Burst_Power;
+		shot_stats.Shot_Power_Level = shot_stats.Shot_Power_Level * _v_burst_stats.Burst_Power;
+		shot_stats.Shot_Aura_Power = shot_stats.Shot_Aura_Power * _v_burst_stats.Burst_Power;
+		shot_stats.Shot_Power_Max = shot_stats.Shot_Power;
 	} else {
-		shotpower = vshotburststats.Shot_Power;
-		shotaurapower = vshotburststats.Shot_Power;
-		shotpowermax = shotpower;	
+		shot_stats.Shot_Power = _v_burst_stats.Shot_Power;
+		shot_stats.Shot_Power_Level = _v_burst_stats.Shot_Power_Level;
+		shot_stats.Shot_Aura_Power = _v_burst_stats.Shot_Power;
+		shot_stats.Shot_Power_Max = shot_stats.Shot_Power;	
 	}
-	if variable_struct_exists(vshotburststats, "Burst_Soul_Shot_Damage") {
-		shotsouldamage = vshotburststats.Burst_Soul_Shot_Damage;
-		shotspeed = sqrt(shotspeed) + 3;
-		speed = shotspeed;
-		shotlifespan = shotlifespan + 60;
-	    alarm[0] = shotlifespan;
-		shottimer = shotlifespan;
+	if variable_struct_exists(_v_burst_stats, "Burst_Soul_Shot_Damage") {
+		shot_stats.Shot_Soul_Damage = _v_burst_stats.Burst_Soul_Shot_Damage;
+		shot_stats.Shot_Speed = sqrt(shot_stats.Shot_Speed) + 3;
+		speed = shot_stats.Shot_Speed;
+		shot_stats.Shot_Life_Span = shot_stats.Shot_Life_Span + 60;
+	    alarm[0] = shot_stats.Shot_Life_Span;
+		//shot_stats.Shot_Timer = shot_stats.Shot_Life_Span;
 	}
-	if variable_struct_exists(vshotburststats, "Burst_Size") {
-		shotsize = shotsize * vshotburststats.Burst_Size
-		image_xscale = shotsize;
-		image_yscale = shotsize;
-		shotsizemax = other.shotsizemax;
+	if variable_struct_exists(_v_burst_stats, "Burst_Size") {
+		shot_stats.Shot_Size = shot_stats.Shot_Size * _v_burst_stats.Burst_Size
+		image_xscale = shot_stats.Shot_Size;
+		image_yscale = shot_stats.Shot_Size;
+		shot_stats.Shot_Size_Max = other.shot_stats.Shot_Size_Max;
 	}
-	if variable_struct_exists(vshotburststats, "Shot_Sprite") {
-		//show_debug_message(vshotburststats.Shot_Sprite)
-		sprite_index = asset_get_index(vshotburststats.Shot_Sprite)
+	if variable_struct_exists(_v_burst_stats, "Shot_Sprite") {
+		//show_debug_message(_v_burst_stats.Shot_Sprite)
+		sprite_index = asset_get_index(_v_burst_stats.Shot_Sprite)
 	}
-	if variable_struct_exists(vshotburststats, "Shot_Lifespan") {
-		shotlifespan = vshotburststats.Shot_Lifespan
-		alarm[0] = shotlifespan;
-		shottimer = shotlifespan;
+	if variable_struct_exists(_v_burst_stats, "Shot_Life_Span") {
+		shot_stats.Shot_Life_Span = _v_burst_stats.Shot_Life_Span
+		alarm[0] = shot_stats.Shot_Life_Span;
+		//shot_stats.Shot_Timer = shot_stats.Shot_Life_Span;
 	}
-	if variable_struct_exists(vshotburststats, "Shot_Pierce") {
-		shotpierce = vshotburststats.Shot_Pierce
+	if variable_struct_exists(_v_burst_stats, "Shot_Pierce") {
+		shot_stats.Shot_Pierce = _v_burst_stats.Shot_Pierce
 	}
-	if variable_struct_exists(vshotburststats, "Shot_Speed") {
-		shotspeed = vshotburststats.Shot_Speed
-		speed = shotspeed;
+	if variable_struct_exists(_v_burst_stats, "Shot_Speed") {
+		shot_stats.Shot_Speed = _v_burst_stats.Shot_Speed
+		speed = shot_stats.Shot_Speed;
 	}
-	if variable_struct_exists(vshotburststats, "Burst_Speed") {
-		shotspeed = vshotburststats.Burst_Speed
-		speed = shotspeed;
+	if variable_struct_exists(_v_burst_stats, "Burst_Speed") {
+		shot_stats.Shot_Speed = _v_burst_stats.Burst_Speed
+		speed = shot_stats.Shot_Speed;
 	}
-	if variable_struct_exists(vshotburststats, "Shot_Point_Angle") {
-		shotpointangle = vshotburststats.Shot_Point_Angle
+	if variable_struct_exists(_v_burst_stats, "Shot_Point_Angle") {
+		shot_stats.Shot_Point_Angle = _v_burst_stats.Shot_Point_Angle
 	}
-	if variable_struct_exists(vshotburststats, "Shot_Impact_Type") {
-		shotimpacttype = vshotburststats.Shot_Impact_Type
+	if variable_struct_exists(_v_burst_stats, "Shot_Impact_Type") {
+		shot_stats.Shot_Impact_Type = _v_burst_stats.Shot_Impact_Type
 	}
 
 }

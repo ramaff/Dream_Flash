@@ -15,9 +15,9 @@ function scr_V07_Use() {
 			Shot_Phasing: 1,
 			Shot_Speed: 12,
 			Shot_Power: 100,
-			Shot_Knockback: 20,
+			Shot_Knock_Back: 20,
 			Shot_Friction: 0.11,
-			Shot_Lifespan: 90,
+			Shot_Life_Span: 90,
 			Shot_Pierce: 1,
 			Shot_Impact_Type: 2,
 			Shot_Impact_Power: 50,
@@ -26,12 +26,12 @@ function scr_V07_Use() {
 			Shot_Trail_Sprite: "spr_Huge_Essence_Trail_Bit",
 			Shot_Trail_Area: 40,
 			Shot_Trail_Fade: 0,
-			Shot_Trail_Color1: [50,50,200],
-			Shot_Trail_Color2: [0,20,150]
+			Shot_Trail_Color_1: [50,50,200],
+			Shot_Trail_Color_2: [0,20,150]
 		};
 		
 
-		scr_Setup_Weapon_Stats(current_weapon_stats);
+		current_weapon_stats = scr_Setup_Weapon_Stats(current_weapon_stats);
 		scr_Shot_Creation();
 		
 		global.V7mindblow = 0;

@@ -2,53 +2,61 @@
 // https://help.yoyogames.com/hc/en-us/articles/360005277377 for more information
 function scr_Setup_Weapon_Stats(_current_weapon_stats = current_weapon_stats) {
 	
+	var _base_stats = scr_Setup_Default_Shot_Stats()
+	
+	_current_weapon_stats = scr_Struct_Merge(_base_stats, _current_weapon_stats, false)
+	
+	return _current_weapon_stats
+	
 	// Newer System ? idk
 	
 	//Shot_Stats = _current_weapon_stats;
+	/*
 	if variable_struct_exists(_current_weapon_stats, "Weapon_Number") {
-		Shot_Stats.Weapon_Number = _current_weapon_stats.Weapon_Number;
+		current_weapon_stats.Weapon_Number = _current_weapon_stats.Weapon_Number;
 	}
 	if variable_struct_exists(_current_weapon_stats, "Shot_Lobbing") {
-		Shot_Stats.Shot_Lobbing = _current_weapon_stats.Shot_Lobbing;
+		current_weapon_stats.Shot_Lobbing = _current_weapon_stats.Shot_Lobbing;
 	}
 	if variable_struct_exists(_current_weapon_stats, "Shot_Lobbing_Tilt") {
-		Shot_Stats.Shot_Lobbing_Tilt = _current_weapon_stats.Shot_Lobbing_Tilt;
+		current_weapon_stats.Shot_Lobbing_Tilt = _current_weapon_stats.Shot_Lobbing_Tilt;
 	}
 	if variable_struct_exists(_current_weapon_stats, "Shot_Lobbing_Wobble") {
-		Shot_Stats.Shot_Lobbing_Wobble = _current_weapon_stats.Shot_Lobbing_Wobble;
+		current_weapon_stats.Shot_Lobbing_Wobble = _current_weapon_stats.Shot_Lobbing_Wobble;
 	}
 	if variable_struct_exists(_current_weapon_stats, "Shot_Height") {
-		Shot_Stats.Shot_Height = _current_weapon_stats.Shot_Height;
+		current_weapon_stats.Shot_Height = _current_weapon_stats.Shot_Height;
 	}
 	if variable_struct_exists(_current_weapon_stats, "Shot_Fall_Speed") {
-		Shot_Stats.Shot_Fall_Speed = _current_weapon_stats.Shot_Fall_Speed;
+		current_weapon_stats.Shot_Fall_Speed = _current_weapon_stats.Shot_Fall_Speed;
 	}
 	if variable_struct_exists(_current_weapon_stats, "Shot_Gravity") {
-		Shot_Stats.Shot_Gravity = _current_weapon_stats.Shot_Gravity;
+		current_weapon_stats.Shot_Gravity = _current_weapon_stats.Shot_Gravity;
 	}
 	if variable_struct_exists(_current_weapon_stats, "Shot_Chain_Color") {
-		Shot_Stats.Shot_Chain_Color = _current_weapon_stats.Shot_Chain_Color;
+		current_weapon_stats.Shot_Chain_Color = _current_weapon_stats.Shot_Chain_Color;
 	}
 	if variable_struct_exists(_current_weapon_stats, "Shot_Zig_Zag") {
-		Shot_Stats.Shot_Zig_Zag = _current_weapon_stats.Shot_Zig_Zag;
+		current_weapon_stats.Shot_Zig_Zag = _current_weapon_stats.Shot_Zig_Zag;
 	}
 	if variable_struct_exists(_current_weapon_stats, "Shot_Init_Grow") {
-		Shot_Stats.Shot_Init_Grow = _current_weapon_stats.Shot_Init_Grow;
+		current_weapon_stats.Shot_Init_Grow = _current_weapon_stats.Shot_Init_Grow;
 	}
+	*/
 	//if variable_struct_exists(_current_weapon_stats, "Shot_Extra_Stats") {
 		/*if _current_weapon_stats.Shot_Extra_Stats != false {
 			show_debug_message("_current_weapon_stats.Shot_Extra_Stats: " + string(_current_weapon_stats.Shot_Extra_Stats))
-			Shot_Stats.Shot_Extra_Stats = json_parse(json_stringify(global.DEFAULT_SHOT_STATS));
+			current_weapon_stats.Shot_Extra_Stats = json_parse(json_stringify(global.DEFAULT_SHOT_STATS));
 			var _PropertyNames = variable_struct_get_names(_current_weapon_stats.Shot_Extra_Stats);
 	        for (var i = 0; i < array_length(_PropertyNames); i++) {
-	            variable_struct_set(Shot_Stats.Shot_Extra_Stats, _PropertyNames[i], variable_struct_get(_current_weapon_stats.Shot_Extra_Stats, _PropertyNames[i]));
+	            variable_struct_set(current_weapon_stats.Shot_Extra_Stats, _PropertyNames[i], variable_struct_get(_current_weapon_stats.Shot_Extra_Stats, _PropertyNames[i]));
 	        }
 		} */
-		//Shot_Stats.Shot_Extra_Stats = _current_weapon_stats.Shot_Extra_Stats;
+		//current_weapon_stats.Shot_Extra_Stats = _current_weapon_stats.Shot_Extra_Stats;
 	//}
 	
 	// Older System
-	
+	/*
 	if variable_struct_exists(_current_weapon_stats, "Shot_Extra_Stats") {
 		Shot_Extra_Stats = _current_weapon_stats.Shot_Extra_Stats
 	}
@@ -74,11 +82,11 @@ function scr_Setup_Weapon_Stats(_current_weapon_stats = current_weapon_stats) {
 	if variable_struct_exists(_current_weapon_stats, "Shot_Speed") {
 		Shot_Speed = _current_weapon_stats.Shot_Speed
 	}
-	if variable_struct_exists(_current_weapon_stats, "Shot_Lifespan") {
-		Shot_Lifespan = _current_weapon_stats.Shot_Lifespan
+	if variable_struct_exists(_current_weapon_stats, "Shot_Life_Span") {
+		Shot_Life_Span = _current_weapon_stats.Shot_Life_Span
 	}
-	if variable_struct_exists(_current_weapon_stats, "Shot_Knockback") {
-		Shot_Knockback = _current_weapon_stats.Shot_Knockback
+	if variable_struct_exists(_current_weapon_stats, "Shot_Knock_Back") {
+		Shot_Knock_Back = _current_weapon_stats.Shot_Knock_Back
 	}
 	if variable_struct_exists(_current_weapon_stats, "Shot_Size") {
 		Shot_Size = _current_weapon_stats.Shot_Size
@@ -98,13 +106,13 @@ function scr_Setup_Weapon_Stats(_current_weapon_stats = current_weapon_stats) {
 	if variable_struct_exists(_current_weapon_stats, "Shot_Trail_Sprite") {
 		Shot_Trail_Sprite = asset_get_index(_current_weapon_stats.Shot_Trail_Sprite)
 	}
-	if variable_struct_exists(_current_weapon_stats, "Shot_Trail_Color1") {
-		var cray = _current_weapon_stats.Shot_Trail_Color1
-		Shot_Trail_Color1 = make_color_rgb(cray[0],cray[1],cray[2]);
+	if variable_struct_exists(_current_weapon_stats, "Shot_Trail_Color_1") {
+		var cray = _current_weapon_stats.Shot_Trail_Color_1
+		Shot_Trail_Color_1 = make_color_rgb(cray[0],cray[1],cray[2]);
 	}
-	if variable_struct_exists(_current_weapon_stats, "Shot_Trail_Color2") {
-		var cray = _current_weapon_stats.Shot_Trail_Color2
-		Shot_Trail_Color2 = make_color_rgb(cray[0],cray[1],cray[2]);
+	if variable_struct_exists(_current_weapon_stats, "Shot_Trail_Color_2") {
+		var cray = _current_weapon_stats.Shot_Trail_Color_2
+		Shot_Trail_Color_2 = make_color_rgb(cray[0],cray[1],cray[2]);
 	}
 	if variable_struct_exists(_current_weapon_stats, "Shot_Trail_Life") {
 		Shot_Trail_Life = _current_weapon_stats.Shot_Trail_Life
@@ -526,17 +534,17 @@ function scr_Setup_Weapon_Stats(_current_weapon_stats = current_weapon_stats) {
 	if variable_struct_exists(_current_weapon_stats, "Shot_Angles") {
 		Shot_Angles = _current_weapon_stats.Shot_Angles
 	}
-	if variable_struct_exists(_current_weapon_stats, "Weapon_Mouse_Maintain") {
-		Weapon_Mouse_Maintain = _current_weapon_stats.Weapon_Mouse_Maintain
+	if variable_struct_exists(_current_weapon_stats, "Shot_Mouse_Maintain") {
+		Shot_Mouse_Maintain = _current_weapon_stats.Shot_Mouse_Maintain
 	}
-	if variable_struct_exists(_current_weapon_stats, "Weapon_Soul_Maintain") {
-		Weapon_Soul_Maintain = _current_weapon_stats.Weapon_Soul_Maintain
+	if variable_struct_exists(_current_weapon_stats, "Shot_Soul_Maintain") {
+		Shot_Soul_Maintain = _current_weapon_stats.Shot_Soul_Maintain
 	}
-	if variable_struct_exists(_current_weapon_stats, "Weapon_X_Maintain") {
-		Weapon_X_Maintain = _current_weapon_stats.Weapon_X_Maintain
+	if variable_struct_exists(_current_weapon_stats, "Shot_X_Maintain") {
+		Shot_X_Maintain = _current_weapon_stats.Shot_X_Maintain
 	}
-	if variable_struct_exists(_current_weapon_stats, "Weapon_Y_Maintain") {
-		Weapon_Y_Maintain = _current_weapon_stats.Weapon_Y_Maintain
+	if variable_struct_exists(_current_weapon_stats, "Shot_Y_Maintain") {
+		Shot_Y_Maintain = _current_weapon_stats.Shot_Y_Maintain
 	}
 	if variable_struct_exists(_current_weapon_stats, "Shot_Mouse") {
 		Shot_Mouse = _current_weapon_stats.Shot_Mouse
@@ -643,6 +651,7 @@ function scr_Setup_Weapon_Stats(_current_weapon_stats = current_weapon_stats) {
 	if variable_struct_exists(_current_weapon_stats, "Minion_Lifespan") {
 		Minion_Lifespan = _current_weapon_stats.Minion_Lifespan;
 	}
+	*/
 		
 	/*if variable_struct_exists(_current_weapon_stats, "Shot") {
 		Shot = _current_weapon_stats.Shot

@@ -11,10 +11,10 @@ function scr_XC02_Soul_Visual(){
 				_suck_multiplier = 4 - _void_time
 			}
 			
-			var shottrailarea = 100 + (200 * _suck_multiplier);
+			var _shot_trail_area = 100 + (200 * _suck_multiplier);
 		 
-			var xx = random(shottrailarea) - (shottrailarea / 2);
-			var yy = random(shottrailarea) - (shottrailarea / 2);
+			var xx = random(_shot_trail_area) - (_shot_trail_area / 2);
+			var yy = random(_shot_trail_area) - (_shot_trail_area / 2);
 	
 			with instance_create(x + xx,y + yy,obj_Black_Hole_Part) {
 		

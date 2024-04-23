@@ -15,8 +15,8 @@ function scr_W04() {
 			Shot_Type: "obj_Lesser_Soul_Shot",
 			Shot_Speed: 1,
 			Shot_Power: poww,
-			Shot_Knockback: 10,
-			Shot_Lifespan: 60,
+			Shot_Knock_Back: 10,
+			Shot_Life_Span: 60,
 			Shot_Pierce: 1,
 			Shot_Point_Angle: 0,
 			Shot_Size: 0.5,
@@ -33,7 +33,7 @@ function scr_W04() {
 			current_weapon_stats.Shot_Direction = point_direction(x,y,instance_nearest(x,y,obj_Boss_Parent).x,instance_nearest(x,y,obj_Boss_Parent).y);
 		}
 		
-		scr_Setup_Weapon_Stats(current_weapon_stats);
+		current_weapon_stats = scr_Setup_Weapon_Stats(current_weapon_stats);
 		scr_Shot_Creation();
 
 	}

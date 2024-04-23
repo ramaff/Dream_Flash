@@ -30,13 +30,13 @@ function scr_Q01() {
 			current_weapon_stats.Shot_Direction = random(360);
 			//current_weapon_stats.Shot_Forward = 0;
 			if current_weapon_stats.Shot_Beam = 0 {
-				current_weapon_stats.Shot_Lifespan = current_weapon_stats.Shot_Lifespan * 2.5
+				current_weapon_stats.Shot_Life_Span = current_weapon_stats.Shot_Life_Span * 2.5
 				current_weapon_stats.Shot_Lobbing = true
 			}
 			if current_weapon_stats.Shot_Beam = 2 {
 				current_weapon_stats.Shot_Frame = global.essencebeamtime / 5
 				current_weapon_stats.Shot_Frame = clamp(current_weapon_stats.Shot_Frame, 0, 3);	
-				current_weapon_stats.Shot_Lifespan = 5;
+				current_weapon_stats.Shot_Life_Span = 5;
 			}
 			current_weapon_stats.Shot_Speed = current_weapon_stats.Shot_Speed / (1.75 + random(0.75))
 			current_weapon_stats.Shot_Homing_Type = 1;
@@ -45,24 +45,24 @@ function scr_Q01() {
 		
 			//current_weapon_stats.Shot_Lobbing_Tilt = -10;
 
-			scr_Setup_Weapon_Stats(current_weapon_stats);
+			current_weapon_stats = scr_Setup_Weapon_Stats(current_weapon_stats);
 			
 			barrage = false;
 			minion = false;
 			spawnProjectile = true;
 		
-			scr_Hard_Coded_Weapon_Stats(_c_wp);
+			scr_Hard_Coded_Weapon_Stats(current_weapon_stats);
 		
 			if current_weapon_stats.Shot_Beam = 0 {
-				Shot_Stats.Shot_Height += 20
-				Shot_Stats.Shot_Fall_Speed = -0.2
+				current_weapon_stats.Shot_Height += 20
+				current_weapon_stats.Shot_Fall_Speed = -0.2
 			
-				var _dist = Shot_Stats.Shot_Height;
-				var _time = Shot_Stats.Shot_Lifespan;
-				var _vel = Shot_Stats.Shot_Fall_Speed;
+				var _dist = current_weapon_stats.Shot_Height;
+				var _time = current_weapon_stats.Shot_Life_Span;
+				var _vel = current_weapon_stats.Shot_Fall_Speed;
 			
 				// velocity is backwards
-		        Shot_Stats.Shot_Gravity = ((2 * _dist) / (_time * _time)) + (_vel / _time)
+		        current_weapon_stats.Shot_Gravity = ((2 * _dist) / (_time * _time)) + (_vel / _time)
 			
 			}
 		

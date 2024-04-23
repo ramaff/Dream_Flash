@@ -4,10 +4,10 @@ if !hit_again {
     with(other) {
 		var chance = irandom(4);
 		if chance = 1 {
-	        shotbleed += 2;
-	        shotbleedticks += 3;
-	        if shotbleedtime <= 120 {
-	            shotbleedtime = 120;
+	        shot_stats.Shot_Bleed += 2;
+	        shot_stats.Shot_Bleed_Ticks += 3;
+	        if shot_stats.Shot_Bleed_Time <= 120 {
+	            shot_stats.Shot_Bleed_Time = 120;
 	        }
         
 	        shotimaginary = 0;

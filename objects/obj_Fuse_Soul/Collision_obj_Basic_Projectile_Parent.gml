@@ -2,13 +2,13 @@ var hit_again = variable_struct_exists(projectile_hits, other.id)
 if !hit_again {
 	variable_struct_set(projectile_hits, other.id, other.id)
     with(other) {
-        shotimpactpower += 4;
-        shotimpactsize += 40;
-		if shotimpactsize <= 80 {
-			shotimpactsize = 80;
+        shot_stats.Shot_Impact_Power += 4;
+        shot_stats.Shot_Impact_Size += 40;
+		if shot_stats.Shot_Impact_Size <= 80 {
+			shot_stats.Shot_Impact_Size = 80;
 		}
-		if shotimpactpower <= 8 {
-			shotimpactpower = 8;	
+		if shot_stats.Shot_Impact_Power <= 8 {
+			shot_stats.Shot_Impact_Power = 8;	
 		}
         shotimaginary = 0;
         shotsharpandsolid = 0;
@@ -16,13 +16,13 @@ if !hit_again {
         shotexplosive = 0;
         shotenergy = 0;
         shotexplosive += 1;
-		shotImpactPowerLevel = shotimpactpower;
+		shot_stats.Shot_Impact_Power_Level = shot_stats.Shot_Impact_Power;
         
-        if shotimpacttype = 0 {
-            shotimpacttype = 1;
-            shotimpactsize = 80;
-            shotImpactPowerLevel = 8;
-            shotimpactpower = 8;
+        if shot_stats.Shot_Impact_Type = 0 {
+            shot_stats.Shot_Impact_Type = 1;
+            shot_stats.Shot_Impact_Size = 80;
+            shot_stats.Shot_Impact_Power_Level = 8;
+            shot_stats.Shot_Impact_Power = 8;
         }
     }
 	

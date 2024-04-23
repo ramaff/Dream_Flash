@@ -10,12 +10,12 @@ function scr_Beast_Maw_Use() {
 		Shot_Speed: 0,
 		Shot_Movement: 0,
 		Shot_Power: 14 * global.soulstateformboost,
-		Shot_Knockback: 10,
-		Shot_Lifespan: 23,
+		Shot_Knock_Back: 10,
+		Shot_Life_Span: 23,
 		Shot_Screen_Shake: 5,
 		Shot_Size: 0.8,
 		Shot_Phasing: 1,
-		Weapon_Melee: 1,
+		Weapon_Melee: true,
 		Shot_Pierce: 100
 	};
 	
@@ -29,7 +29,7 @@ function scr_Beast_Maw_Use() {
 	current_weapon_stats.Shot_YY = lengthdir_y(dist, ang - 15 + random(30));
 	current_weapon_stats.Shot_Life_Drain = 0.5;
 		
-	scr_Setup_Weapon_Stats(current_weapon_stats);
+	current_weapon_stats = scr_Setup_Weapon_Stats(current_weapon_stats);
 
 	scr_Shot_Creation();
 	
@@ -56,8 +56,8 @@ function scr_Beast_Maw_Use() {
 	Shot_Speed = 0;
 	Shot_Movement = 0;
 	Shot_Power = 14 * global.soulstateformboost;
-	Shot_Knockback = 10;
-	Shot_Lifespan = 23;
+	Shot_Knock_Back = 10;
+	Shot_Life_Span = 23;
 	
 	Shot_Screen_Shake = 5;
 	

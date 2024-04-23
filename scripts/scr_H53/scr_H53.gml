@@ -7,7 +7,7 @@ function scr_H53(){
 		
 		current_weapon_stats.Shot_Speed = 0;
 		current_weapon_stats.Shot_Forward = 0;
-		current_weapon_stats.Shot_Lifespan = 105 + random(30);
+		current_weapon_stats.Shot_Life_Span = 105 + random(30);
 		current_weapon_stats.Shot_Power = 3;
 		current_weapon_stats.Shot_Size = 0.35 + random(0.1);
 		current_weapon_stats.Shot_Sprite = "spr_Seething_Fire_Shot";
@@ -27,8 +27,8 @@ function scr_H53(){
         current_weapon_stats.Shot_Trail_Fade = 0
 		current_weapon_stats.Shot_Trail_Direction = 45 + random(90);
 		current_weapon_stats.Shot_Trail_Speed = 1 + random(3);
-        current_weapon_stats.Shot_Trail_Color1 = [255,42,0]
-        current_weapon_stats.Shot_Trail_Color2 = [255,42,0]
+        current_weapon_stats.Shot_Trail_Color_1 = [255,42,0]
+        current_weapon_stats.Shot_Trail_Color_2 = [255,42,0]
 		
 		current_weapon_stats.Shot_Extra_Stats = [
             {
@@ -37,12 +37,12 @@ function scr_H53(){
                 Shot_Type: obj_Lesser_Soul_Shot,
                 Shot_Extra_Hit_Frequency: 15,
                 Shot_Power: 1,
-                Shot_Lifespan: 1,
+                Shot_Life_Span: 1,
                 Shot_Alpha: 0
             }
         ]
 			
-		scr_Setup_Weapon_Stats(current_weapon_stats);
+		current_weapon_stats = scr_Setup_Weapon_Stats(current_weapon_stats);
 			
 		barrage = false;
 		minion = false;

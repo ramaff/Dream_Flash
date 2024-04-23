@@ -13,8 +13,8 @@ function scr_Essence_Attack_Field() {
 		Shot_Image_Speed: 1,
 		Shot_Speed: 1,
 		Shot_Power: 10,
-		Shot_Knockback: 0,
-		Shot_Lifespan: 12,
+		Shot_Knock_Back: 0,
+		Shot_Life_Span: 12,
 		Shot_Pierce: 30,
 		Shot_Armour_Pierce: 10,
 		Shot_Size: 0.5,
@@ -26,46 +26,10 @@ function scr_Essence_Attack_Field() {
 	if instance_exists(obj_Boss_Parent) {
 		current_weapon_stats.Shot_Mouse = 0;
 		current_weapon_stats.Shot_Direction = point_direction(x,y,instance_nearest(x,y,obj_Boss_Parent).x,instance_nearest(x,y,obj_Boss_Parent).y);
-		scr_Setup_Weapon_Stats(current_weapon_stats);
+		current_weapon_stats = scr_Setup_Weapon_Stats(current_weapon_stats);
 		scr_Shot_Creation();
 	}
-		
-	//scr_Setup_Weapon_Stats(current_weapon_stats);
-	//scr_Shot_Creation();
-
-	/*
-	Shot_Spread += 0;
-	Shot_Accuracy += 5;
-	Shot_Count += 0;
-
-	Shot_Mouse = 0;
-	if instance_exists(instance_nearest(x,y,obj_Boss_Parent)) {
-		Shot_Direction = point_direction(x,y,instance_nearest(x,y,obj_Boss_Parent).x,instance_nearest(x,y,obj_Boss_Parent).y);
-	} else {
-		exit;	
-	}
 	
-	Shot_Sprite = spr_Essence_Attack_Field;
-	Shot_Type = obj_Lesser_Soul_Shot;
-
-	Shot_Speed = 1;
-	Shot_Power = 10;
-	Shot_Knockback = 0;
-	Shot_Lifespan = 12;
-	Shot_Forward = 0;
-
-	Shot_Armour_Pierce += 10;
-	Shot_Pierce += 30;
-	Shot_Phasing = 1;
-	
-	Shot_Point_Angle = 1;
-	
-	Shot_Essence_Drain = 1;
-
-	Shot_Size = 0.5;
-
-	scr_Shot_Creation();
-	*/
 
 
 }

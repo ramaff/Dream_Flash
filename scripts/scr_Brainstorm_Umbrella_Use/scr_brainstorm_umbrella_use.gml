@@ -7,14 +7,14 @@ function scr_Brainstorm_Umbrella_Use() {
 
 	Shot_Sprite = spr_Brainstorm_Umbrella;
 	Shot_Type = obj_Umbrella_Shot;
-	Weapon_Melee = 1;
-	Weapon_Mouse_Maintain = 1;
-	Weapon_Soul_Maintain = 1;
+	Weapon_Melee = true;
+	Shot_Mouse_Maintain = 1;
+	Shot_Soul_Maintain = 1;
 
 	Shot_Speed = 1;
 	Shot_Power = 10;
-	Shot_Knockback = 0;
-	Shot_Lifespan = 51;
+	Shot_Knock_Back = 0;
+	Shot_Life_Span = 51;
 
 	Shot_Rebound_Type = 1;
 	Shot_Rebound_Power = 10;

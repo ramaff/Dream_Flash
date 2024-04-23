@@ -4,28 +4,28 @@ function scr_P07() {
 	var prob = scr_Chance(4);
 
 	if global.P[7] >= 1 and prob = true {
-		shotfire += 2 * global.P[7];
-		shotspeed += 3 * global.P[7];
+		shot_stats.Shot_Fire += 2 * global.P[7];
+		shot_stats.Shot_Speed += 3 * global.P[7];
 		speed += 3 * global.P[7];
 		
-		shotpierce += 1;
+		shot_stats.Shot_Pierce += 1;
 		
-		if shotfireticks < 3 {
-			shotfireticks = 3;
+		if shot_stats.Shot_Fire_Ticks < 3 {
+			shot_stats.Shot_Fire_Ticks = 3;
 		}
-		if shotfiretime = 0 {
-			shotfiretime = 90;
+		if shot_stats.Shot_Fire_Time = 0 {
+			shot_stats.Shot_Fire_Time = 90;
 		}
 		
 		shotTrail = 1;
-		shottrailsprite = spr_Big_Essence_Trail_Bit;
-		shottrailarea = 15;
-		shottraillife = 20;
-		shottrailfade = 0;
-		shottrailcolor1 = make_color_rgb(255,246,0);
-		shottrailcolor2 = make_color_rgb(255,119,0);
-		shottrailhitcount = 13;
-		shottrailhitlife = 10;
+		shot_stats.Shot_Trail_Sprite = "spr_Big_Essence_Trail_Bit";
+		shot_stats.Shot_Trail_Area = 15;
+		shot_stats.Shot_Trail_Life = 20;
+		shot_stats.Shot_Trail_Fade = 0;
+		shot_stats.Shot_Trail_Color_1 = make_color_rgb(255,246,0);
+		shot_stats.Shot_Trail_Color_2 = make_color_rgb(255,119,0);
+		shot_stats.Shot_Trail_Hit_Count = 13;
+		shot_stats.Shot_Trail_Hit_Life = 10;
 	}
 
 

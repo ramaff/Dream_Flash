@@ -1,38 +1,46 @@
 function scr_Minion_Shot_Creation() {
-	dir = -(Shot_Spread * (Shot_Count - 1) / 2) + (-(Shot_Accuracy / 2) + random(Shot_Accuracy)) / saccuracy;
-	repeat(Shot_Count) {
-		if Weapon_Vomit = 1 {
-	        dir = (-(Shot_Accuracy / 2) + random(Shot_Accuracy));
+	dir = -(current_weapon_stats.Shot_Spread * (current_weapon_stats.Shot_Count - 1) / 2) + (-(current_weapon_stats.Shot_Accuracy / 2) + random(current_weapon_stats.Shot_Accuracy)) / saccuracy;
+	repeat(current_weapon_stats.Shot_Count) {
+		if current_weapon_stats.Weapon_Vomit = 1 {
+	        dir = (-(current_weapon_stats.Shot_Accuracy / 2) + random(current_weapon_stats.Shot_Accuracy));
 	    }
-	    with instance_create(x,y,Shot_Type) {
-	        scr_Default_Shot_Stats();
+		if !is_string(current_weapon_stats.Shot_Type) {
+			current_weapon_stats.Shot_Type = object_get_name(current_weapon_stats.Shot_Type)
+		}
+		if !is_string(current_weapon_stats.Shot_Sprite) {
+			current_weapon_stats.Shot_Sprite = sprite_get_name(current_weapon_stats.Shot_Sprite)
+		}
 		
-			shotorigin = other.id;
-	        sprite_index = other.Shot_Sprite;
-	        shotsize = other.Shot_Size;
-	        image_xscale = shotsize;
-	        image_yscale = shotsize;
-	        shotspeed = other.Shot_Speed * other.sshotspeed / 10 * (other.Weapon_Vomit_Min_Speed + random(other.Weapon_Vomit_Max_Speed - other.Weapon_Vomit_Min_Speed));
-	        shotpowermax = other.Shot_Power * other.spower / 10;
-	        shotpower = shotpowermax;
-	        shotPowerLevel = other.Shot_Power;
-	        shotknockback = other.Shot_Knockback * other.sshotknockback / 10;
-	        if other.Shot_Mouse = 1 {
+	    with instance_create(x,y,asset_get_index(current_weapon_stats.Shot_Type)) {
+	        scr_Default_Shot_Stats();
+			shot_stats = json_parse(json_stringify(other.current_weapon_stats));
+		
+			shot_stats.Shot_Origin = other.id;
+	        sprite_index = asset_get_index(shot_stats.Shot_Sprite);
+	        //shot_stats.Shot_Size = other.Shot_Size;
+	        image_xscale = shot_stats.Shot_Size;
+	        image_yscale = shot_stats.Shot_Size;
+	        shot_stats.Shot_Speed = shot_stats.Shot_Speed * other.sshotspeed / 10 * (shot_stats.Weapon_Vomit_Min_Speed + random(shot_stats.Weapon_Vomit_Max_Speed - shot_stats.Weapon_Vomit_Min_Speed));
+	        shot_stats.Shot_Power_Max = shot_stats.Shot_Power * other.spower / 10;
+	        shot_stats.Shot_Power = shot_stats.Shot_Power_Max;
+	        shot_stats.Shot_Power_Level = shot_stats.Shot_Power;
+	        shot_stats.Shot_Knock_Back = shot_stats.Shot_Knock_Back * other.sshotknockback / 10;
+	        if shot_stats.Shot_Mouse = 1 {
 				if instance_exists(instance_nearest(x,y,obj_Boss_Parent)) {
-					move_towards_point(instance_nearest(x,y,obj_Boss_Parent).x,instance_nearest(x,y,obj_Boss_Parent).y, shotspeed);
+					move_towards_point(instance_nearest(x,y,obj_Boss_Parent).x,instance_nearest(x,y,obj_Boss_Parent).y, shot_stats.Shot_Speed);
 				}
 			} else {
-	            direction = other.Shot_Direction;
+	            direction = shot_stats.Shot_Direction;
 	        }
 	        direction += other.dir;
-	        shotlifespan = other.Shot_Lifespan;
-	        alarm[0] = shotlifespan;
+	        alarm[0] = shot_stats.Shot_Life_Span;
 	        scr_Extra_Shot_Stats();
+			speed = shot_stats.Shot_Speed;
 			
-			shottimer = shotlifespan;
+			//shot_stats.Shot_Timer = shot_stats.Shot_Life_Span;
 			
 	    }
-	    dir += Shot_Spread;
+	    dir += current_weapon_stats.Shot_Spread;
 	}
    
 

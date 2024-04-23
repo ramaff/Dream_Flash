@@ -2,12 +2,12 @@
 // https://help.yoyogames.com/hc/en-us/articles/360005277377 for more information
 function scr_Soul_Shot_Soul_Hit(){
 
-	if shotdamage {
-		if shothealing = 1 {
-			other.shealth += shotpower / 60;
+	if shot_stats.Shot_Damage {
+		if shot_stats.Shot_Healing = 1 {
+			other.shealth += shot_stats.Shot_Power / 60;
 
 			if shothealemit = 0 {
-				var valdis = shotpower * shotlifespan / 60;
+				var valdis = shot_stats.Shot_Power * shot_stats.Shot_Life_Span / 60;
 
 				with instance_create(other.x,other.y,obj_Damage_Indicator) {
 				    element = 6;

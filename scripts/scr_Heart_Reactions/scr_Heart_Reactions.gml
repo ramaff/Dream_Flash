@@ -12,8 +12,8 @@ function scr_Heart_Reactions() {
 			Shot_Type: "obj_Lesser_Soul_Shot",
 			Shot_Speed: 9,
 			Shot_Power: 15 * global.soulheartboost,
-			Shot_Knockback: 10,
-			Shot_Lifespan: 150,
+			Shot_Knock_Back: 10,
+			Shot_Life_Span: 150,
 			Shot_Point_Angle: 1,
 			Shot_Size: 0.5
 		};
@@ -24,7 +24,7 @@ function scr_Heart_Reactions() {
 			current_weapon_stats.Shot_Direction = point_direction(x,y,instance_nearest(x,y,obj_Boss_Parent).x,instance_nearest(x,y,obj_Boss_Parent).y);
 		}
 		
-		scr_Setup_Weapon_Stats(current_weapon_stats);
+		current_weapon_stats = scr_Setup_Weapon_Stats(current_weapon_stats);
 
 	    scr_Shot_Creation();
 
@@ -45,8 +45,8 @@ function scr_Heart_Reactions() {
 		    Weapon_Vomit_Max_Speed: 1,
 			Shot_Speed: 11,
 			Shot_Power: 14 * global.soulheartboost,
-			Shot_Knockback: 10,
-			Shot_Lifespan: 60,
+			Shot_Knock_Back: 10,
+			Shot_Life_Span: 60,
 			Shot_Bleed: 4,
 			Shot_Point_Angle: 1,
 			Shot_Size: 0.5
@@ -56,7 +56,7 @@ function scr_Heart_Reactions() {
 			current_weapon_stats.Shot_Count = 5;
 		}
 		
-		scr_Setup_Weapon_Stats(current_weapon_stats);
+		current_weapon_stats = scr_Setup_Weapon_Stats(current_weapon_stats);
     
 	    scr_Shot_Creation();
 
@@ -77,8 +77,8 @@ function scr_Heart_Reactions() {
 		    Weapon_Vomit_Max_Speed: 1,
 		    Shot_Speed: 8.25,
 		    Shot_Power: 17.5 * global.soulheartboost,
-		    Shot_Knockback: 10,
-		    Shot_Lifespan: 150,
+		    Shot_Knock_Back: 10,
+		    Shot_Life_Span: 150,
 			Shot_Size: 0.5,
 		    Shot_Homing_Type: 1,
 		    Shot_Homing_Range: 200,
@@ -91,7 +91,7 @@ function scr_Heart_Reactions() {
 			current_weapon_stats.Shot_Count = 4;
 		}
     
-		scr_Setup_Weapon_Stats(current_weapon_stats);
+		current_weapon_stats = scr_Setup_Weapon_Stats(current_weapon_stats);
 	    scr_Shot_Creation();
 
 	}
@@ -111,8 +111,8 @@ function scr_Heart_Reactions() {
 		    Weapon_Vomit_Max_Speed: 1,
 		    Shot_Speed: 18,
 		    Shot_Power: 21 * global.soulheartboost,
-		    Shot_Knockback: 10,
-		    Shot_Lifespan: 34,
+		    Shot_Knock_Back: 10,
+		    Shot_Life_Span: 34,
 		    Shot_Phasing: 1,
 		    Shot_Air_Target: 1,
 		    Shot_Impact_Type: 1,
@@ -122,7 +122,7 @@ function scr_Heart_Reactions() {
 			Shot_Size: 0.5,
 		}
     
-		scr_Setup_Weapon_Stats(current_weapon_stats);
+		current_weapon_stats = scr_Setup_Weapon_Stats(current_weapon_stats);
 	    scr_Shot_Creation();
 
 	}
@@ -142,14 +142,14 @@ function scr_Heart_Reactions() {
 		    Weapon_Vomit_Max_Speed: 1,
 		    Shot_Speed: 17,
 		    Shot_Power: 11.5 * global.soulheartboost,
-		    Shot_Knockback: 10,
-		    Shot_Lifespan: 150,
+		    Shot_Knock_Back: 10,
+		    Shot_Life_Span: 150,
 		    Shot_Phasing: 1,
 		    Shot_Air_Target: 1,
 			Shot_Size: 0.5,
 		}
     
-		scr_Setup_Weapon_Stats(current_weapon_stats);
+		current_weapon_stats = scr_Setup_Weapon_Stats(current_weapon_stats);
 	    scr_Shot_Creation();
 
 	}

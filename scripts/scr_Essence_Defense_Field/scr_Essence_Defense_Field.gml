@@ -13,8 +13,8 @@ function scr_Essence_Defense_Field() {
 		Shot_Image_Speed: 1,
 		Shot_Speed: 1,
 		Shot_Power: 10,
-		Shot_Knockback: 0,
-		Shot_Lifespan: 12,
+		Shot_Knock_Back: 0,
+		Shot_Life_Span: 12,
 		Shot_Pierce: 30,
 		Shot_Size: 0.45,
 		Shot_Point_Angle: 1,
@@ -27,7 +27,7 @@ function scr_Essence_Defense_Field() {
 	if instance_exists(obj_Boss_Parent) {
 		current_weapon_stats.Shot_Mouse = 0;
 		current_weapon_stats.Shot_Direction = point_direction(x,y,instance_nearest(x,y,obj_Boss_Parent).x,instance_nearest(x,y,obj_Boss_Parent).y);
-		scr_Setup_Weapon_Stats(current_weapon_stats);
+		current_weapon_stats = scr_Setup_Weapon_Stats(current_weapon_stats);
 		scr_Shot_Creation();
 	}
 	
@@ -49,8 +49,8 @@ function scr_Essence_Defense_Field() {
 
 	Shot_Speed = 1;
 	Shot_Power = 10;
-	Shot_Knockback = 0;
-	Shot_Lifespan = 12;
+	Shot_Knock_Back = 0;
+	Shot_Life_Span = 12;
 	Shot_Forward = 0;
 
 	Shot_Shield_Type = 2;

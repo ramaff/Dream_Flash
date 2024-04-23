@@ -2,6 +2,9 @@
 // https://help.yoyogames.com/hc/en-us/articles/360005277377 for more information
 
 function scr_Soul_Teleport(_evasion = false){
+	
+	var _base_tele_delay = 120;
+	
 	soulfade = 15;
 	with instance_create(obj_Soul_Parent.x,obj_Soul_Parent.y,obj_Soul_Linger) {
 	    if other.image_index = 1 {
@@ -47,7 +50,15 @@ function scr_Soul_Teleport(_evasion = false){
 	scr_W04();
 	scr_W05();
     
-	if scr_State_Active_Check("Bleeding") {
+	if scr_State_Active_Check("Spike") {
+		alarm[7] = 90;
+		//image_xscale = 0;
+		//image_yscale = 0;
+		//size = 0;
+		soul_underground = 90;
+		soulinvincibility += 90;
+		_base_tele_delay += 90
+	} else if scr_State_Active_Check("Bleeding") {
 		speed = 40;
 		direction = dir;
 		friction = speed / 45;
@@ -61,7 +72,7 @@ function scr_Soul_Teleport(_evasion = false){
 	scr_W02(dir);
 	scr_W03();
 		
-	scr_Spike_Soul_Teleport(_xstar, _ystar);
+	//scr_Spike_Soul_Teleport(_xstar, _ystar);
 	scr_Casting_Soul_Teleport();
 	scr_Ascending_Soul_Teleport();
 	
@@ -72,6 +83,6 @@ function scr_Soul_Teleport(_evasion = false){
 	scr_D12_Activate();
 	//scr_U03_Off();
     
-	tdelay += (120 - tdelayconservation) / ((40 + global.soulperception + global.soulperceptionTemp) / 40) / (tdelayconservationfactor);
+	tdelay += (_base_tele_delay - tdelayconservation) / ((40 + global.soulperception + global.soulperceptionTemp) / 40) / (tdelayconservationfactor);
 	senergy -= (30 - tenergyconservation) / ((40 + global.soulperception + global.soulperceptionTemp) / 40) / tenergyconservationfactor;
 }

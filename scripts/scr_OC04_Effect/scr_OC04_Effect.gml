@@ -5,12 +5,12 @@
 
 function scr_OC04_Effect(){
 	if global.OC4Debuff = true {
-		var shottrailarea = 120;
+		var _shot_trail_area = 120;
 		
 		repeat(6) {
 		
-			var xx = random(shottrailarea) - (shottrailarea / 2);
-			var yy = random(shottrailarea) - (shottrailarea / 2);
+			var xx = random(_shot_trail_area) - (_shot_trail_area / 2);
+			var yy = random(_shot_trail_area) - (_shot_trail_area / 2);
 	
 			with instance_create(x + xx,y + yy,obj_Weapon_Trail) {
 		
