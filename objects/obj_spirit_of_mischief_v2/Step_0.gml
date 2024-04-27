@@ -36,10 +36,14 @@ if active_attack_delay <= 0 and active_attack_cooldown <= 0 and active_attack_du
 	if currentphase = 1 {
 		active_attack = choose(1, 2);
 	}
-	if currentphase = 2 and active_attack = 0 {
-		active_attack = 3;	
+	if champ = 0 || champ = 2 {
+		if currentphase = 2 and active_attack = 0 {
+			active_attack = 3;	
+		}
 	}
-	//active_attack = 1;
+	if champ = 1 || champ = 3 {
+		active_attack = 5;
+	}
 	
     if active_attack = 1 {
 		// Setup how many attacks per boss move, delay, etc
@@ -66,6 +70,10 @@ if active_attack_delay <= 0 and active_attack_cooldown <= 0 and active_attack_du
 		//scr_Boss_Attack_Time_Setup_v2(90, 30, 1, 30, 30, 40);
 		
 		//scr_Boss_Dash_Setup_v2(scr_Soul_Point(), 0, 7 * bossmovespeed);	
+	}
+	if active_attack = 5 {
+		scr_Boss_Attack_Time_Setup_v2(720, 50, 1, 30, 20, 50);
+		//scr_Boss_Dash_Setup_v2(scr_Soul_Point(), 0, 7 * bossmovespeed);			
 	}
 }
 
@@ -164,6 +172,46 @@ if active_attack_delay <= 0 and pattern_cooldown <= 0 and pattern_count > 0 {
 		}
 	}
 	
+	if active_attack = 5 {
+		if pattern_count == pattern_count_max {
+			var _ang = random(360);
+			minion_xx = ((room_width / 2) + lengthdir_x(750, _ang + 180)) - x
+			minion_yy = ((room_height / 2) + lengthdir_y(750, _ang + 180)) - y
+			
+			// Create Minion and set size to 0.4
+			minion_count = 1;
+			minion_type = obj_mischief_clone;
+			minion_health = bossmaxhealth;
+			minion_movespeed = bossmovespeed;
+			
+			bossSize = bossSize * 0.8;
+
+			scr_Minion_Spawn()
+			
+			x = (room_width / 2) + lengthdir_x(750, _ang)
+			y = (room_height / 2) + lengthdir_y(750, _ang)
+		} else if pattern_count > (pattern_count_max / 2) {
+			
+		} else if pattern_count mod 10 = 0 {
+			bullet_direction = pattern_direction
+			bullet_sprite = spr_Glowy_Pink_Shot;
+			bullet_type = obj_Accel_Bullet;
+			bullet_count = 4;
+			bullet_spread = 90;
+			bullet_speed = bossbulletspeed * 1;
+			
+			boss_xoffset = 80;
+		
+			scr_Boss_Shoot();
+			
+			pattern_direction += 10;
+		}
+		
+		speed = min(bossmovespeed * 5, point_distance(x, y, (room_width / 2) - 80, room_height / 2) / 30)
+		direction = point_direction(x, y, (room_width / 2) - 80, room_height / 2)
+		direction += 67.5
+	}
+	
 	// Maybe I should put this into a script
     pattern_count -= 1;
     pattern_cooldown += pattern_cooldown_max;
@@ -209,6 +257,14 @@ if active_attack = 1 {
 	scr_Boss_Attack_Sprite_v2(spr_spirit_of_mischief_v2_chomp, _hold_frame, 3, 3, 70);
 	if image_index = _hold_frame {
 		scr_Boss_Wobble("Horizontal", 2, 0.4, 0)
+	}
+} else if active_attack = 5 {
+	if pattern_count = pattern_count_max {
+		scr_Boss_Attack_Sprite_v2(spr_spirit_of_mischief_v2_teleport, -1, 4, 4, 10000);
+	} else if pattern_count > (pattern_count_max / 2) {
+		scr_Boss_Attack_Sprite_v2(spr_spirit_of_mischief_v2_bullet_dance, 2, 1, 9, 20);
+	} else {
+		scr_Boss_Attack_Sprite_v2(spr_spirit_of_mischief_v2_twin_maelstrom, -1, 0, 0, 20);
 	}
 } else {
 	sprite_index = spr_spirit_of_mischief_v2;

@@ -26,6 +26,7 @@ function scr_Minion_Spawn() {
 	                currentphase = 1;
 	                finalphase = 1;
 	                bossmaxhealth = other.minion_health;
+					boss_stored_health = other.minion_health;
 	                bosshealth = bossmaxhealth;
 	                bosspower = other.minion_power;
 	                bossdefense = other.minion_defense;
