@@ -4,7 +4,7 @@
 /// Weapon Use
 
 
-function scr_Q03(_minion = false){
+function scr_Q03(_minion = false, _cw = current_weapon_stats){
 	
    if global.Q[3] > 0 {
 	
@@ -12,19 +12,19 @@ function scr_Q03(_minion = false){
 		var effect_diameter = global.roomSizeX + 256;
 	
 		while (global.Q3count >= 3) and global.currentweapon < 700 and global.currentweapon > 0 {
-			current_weapon_stats.Shot_XX = room_center - (effect_diameter / 2) + random(effect_diameter) - x;
-		    current_weapon_stats.Shot_YY = room_center - (effect_diameter / 2) + random(effect_diameter) - y;
+			_cw.Shot_XX = room_center - (effect_diameter / 2) + random(effect_diameter) - x;
+		    _cw.Shot_YY = room_center - (effect_diameter / 2) + random(effect_diameter) - y;
 		
 			if !_minion {
-				scr_Shot_Creation(current_weapon_stats);
+				scr_Shot_Creation(_cw);
 			} else {
-				scr_Soul_Spawn(current_weapon_stats);
+				scr_Soul_Spawn(_cw);
 			}
 			//scr_Weapon_Output(true, _minion)
 		
 			global.Q3count -= 4;
 		}
-		if current_weapon_stats.Shot_Beam = 2 {
+		if _cw.Shot_Beam = 2 {
 			global.Q3count += global.Q[3] / 3;
 		} else {
 			global.Q3count += global.Q[3];

@@ -135,7 +135,7 @@ if active_attack_delay <= 0 and pattern_cooldown <= 0 and pattern_count > 0 {
 		if pattern_count = 1 {
 			active_attack = 4;	
 			
-			scr_Boss_Attack_Time_Setup_v2(80, 50, 1, 60, 30, 50);
+			scr_Boss_Attack_Time_Setup_v2(80, 50, 1, 30, 20, 50);
 			scr_Boss_Dash_Setup_v2(scr_Soul_Point(), 0, 7 * bossmovespeed);		
 		}
 	
