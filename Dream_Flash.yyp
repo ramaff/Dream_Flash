@@ -3990,6 +3990,7 @@
     {"id":{"name":"obj_Jello_Minion_old","path":"objects/obj_Jello_Minion_old/obj_Jello_Minion_old.yy",},},
     {"id":{"name":"obj_Distorted_Ghoul","path":"objects/obj_Distorted_Ghoul/obj_Distorted_Ghoul.yy",},},
     {"id":{"name":"spr_Pins_Art","path":"sprites/spr_Pins_Art/spr_Pins_Art.yy",},},
+    {"id":{"name":"spr_spirit_of_mischief_v2_ko","path":"sprites/spr_spirit_of_mischief_v2_ko/spr_spirit_of_mischief_v2_ko.yy",},},
     {"id":{"name":"spr_Soul_Collection_Small","path":"sprites/spr_Soul_Collection_Small/spr_Soul_Collection_Small.yy",},},
     {"id":{"name":"obj_Spooked_Ghoul","path":"objects/obj_Spooked_Ghoul/obj_Spooked_Ghoul.yy",},},
     {"id":{"name":"obj_Gesture_Hand","path":"objects/obj_Gesture_Hand/obj_Gesture_Hand.yy",},},

@@ -23,7 +23,7 @@ if active_attack_delay <= 0 and active_attack_cooldown <= 0 and active_attack_du
 	
     if active_attack = 1 {
 		// Setup how many attacks per boss move, delay, etc
-		scr_Boss_Attack_Time_Setup_v2(1, 50, 1, 120, 30, 10);
+		scr_Boss_Attack_Time_Setup_v2(1, 50, 1, 100, 30, 40);
 		
 		// Can set up the initial pattern direction
 		// patternDirection = scr_Soul_Point();
@@ -32,12 +32,12 @@ if active_attack_delay <= 0 and active_attack_cooldown <= 0 and active_attack_du
 	// 
 	if active_attack = 2 {
 		// Setup how many attacks per boss move, delay, etc
-		scr_Boss_Attack_Time_Setup_v2(1, 50, 1, 180, 30, 10);
+		scr_Boss_Attack_Time_Setup_v2(1, 50, 1, 160, 30, 40);
     }
 	
 	if active_attack = 3 {
 		// Setup how many attacks per boss move, delay, etc
-		scr_Boss_Attack_Time_Setup_v2(1, 50, 1, 180, 30, 10);
+		scr_Boss_Attack_Time_Setup_v2(1, 50, 1, 160, 30, 40);
     }
 }
 

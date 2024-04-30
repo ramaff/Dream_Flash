@@ -46,16 +46,31 @@ for (bi = 0; bi < 9; bi++) {
 				if Shot_Repetition[bi] = 1 {
 					//Shot_Default_Count[bi] = 1;
 					Shot_Stats.Shot_Power = Shot_Stats.Shot_Power * 1.5;
+					
+					if Shot_Stats.Shot_Burst_Stats = false {
+						Shot_Stats.Shot_Burst_Stats = [json_parse(json_stringify(Shot_Stats))]
+					} else {
+						array_push(Shot_Stats.Shot_Burst_Stats, json_parse(json_stringify(Shot_Stats)))	
+					}
 		
-					Shot_Stats.Shot_Burst_Type = 1;
-					Shot_Stats.Shot_Burst_Amount = 6;
-					Shot_Stats.Shot_Burst_Power = Shot_Stats.Shot_Power * 0.5;
+					//Shot_Stats.Shot_Burst_Type = 1;
+					//Shot_Stats.Shot_Burst_Amount = 6;
+					//Shot_Stats.Shot_Burst_Power = Shot_Stats.Shot_Power * 0.5;
+					
+					var burstIndex = array_length(Shot_Stats.Shot_Burst_Stats) - 1;
+					variable_struct_set(Shot_Stats.Shot_Burst_Stats[burstIndex], "Burst_Power", 0.5); 
+					variable_struct_set(Shot_Stats.Shot_Burst_Stats[burstIndex], "Shot_Size", 0.45); 
+					variable_struct_set(Shot_Stats.Shot_Burst_Stats[burstIndex], "Burst_Size", 0.05);
+					variable_struct_set(Shot_Stats.Shot_Burst_Stats[burstIndex], "Burst_Speed", 1);
+					variable_struct_set(Shot_Stats.Shot_Burst_Stats[burstIndex], "Shot_Life_Span", 0.5);
+					variable_struct_set(Shot_Stats.Shot_Burst_Stats[burstIndex], "Amount", 6); 
+					variable_struct_set(Shot_Stats.Shot_Burst_Stats[burstIndex], "Spread", 60);
 		
 					Shot_Stats.Weapon_Split_Visible = 1;
 					Shot_Stats.Weapon_Split_Hit_Again = 1;
 		
 					Shot_Stats.Shot_Sprite = "spr_Bullet_Hell_Big_Shot";
-					Shot_Stats.Shot_Duplicate_Sprite = "spr_Bullet_Hell_Shot";
+					Shot_Stats.Shot_Burst_Stats[burstIndex].Shot_Sprite = "spr_Bullet_Hell_Shot";
 				}	
 			}
 			

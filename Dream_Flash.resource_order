@@ -399,6 +399,7 @@
     {"name":"obj_boxer","order":3,"path":"objects/obj_boxer/obj_boxer.yy",},
     {"name":"obj_Jello_Minion_old","order":12,"path":"objects/obj_Jello_Minion_old/obj_Jello_Minion_old.yy",},
     {"name":"obj_Distorted_Ghoul","order":11,"path":"objects/obj_Distorted_Ghoul/obj_Distorted_Ghoul.yy",},
+    {"name":"spr_spirit_of_mischief_v2_ko","order":9,"path":"sprites/spr_spirit_of_mischief_v2_ko/spr_spirit_of_mischief_v2_ko.yy",},
     {"name":"obj_Spooked_Ghoul","order":10,"path":"objects/obj_Spooked_Ghoul/obj_Spooked_Ghoul.yy",},
     {"name":"obj_Gesture_Hand","order":9,"path":"objects/obj_Gesture_Hand/obj_Gesture_Hand.yy",},
     {"name":"obj_Pin","order":8,"path":"objects/obj_Pin/obj_Pin.yy",},

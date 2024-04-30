@@ -164,11 +164,14 @@ if active_attack_delay <= 0 and pattern_cooldown <= 0 and pattern_count > 0 {
 			bullet_count = 10;
 			bullet_spread = 360 / bullet_count;
 			
-			bullet_type = obj_Basic_Bullet;
+			bullet_type = obj_Wave_Bullet;
 			bullet_sprite = spr_Glowy_Pink_Shot;
 			bullet_speed = bossbulletspeed * 2.25;
 		
-			scr_Boss_Shoot();	
+			repeat(2) {
+				scr_Boss_Shoot();
+				bullet_speed += bossbulletspeed * 0.5;
+			}
 		}
 	}
 	

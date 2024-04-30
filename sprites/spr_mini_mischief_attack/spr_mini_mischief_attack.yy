@@ -27,7 +27,7 @@
     {"resourceType":"GMImageLayer","resourceVersion":"1.0","name":"58a67e46-067e-4f8b-98d5-5e3247c5e5fd","blendMode":0,"displayName":"default","isLocked":false,"opacity":100.0,"visible":true,},
   ],
   "nineSlice": null,
-  "origin": 4,
+  "origin": 9,
   "parent": {
     "name": "Spirit of Mischief v2",
     "path": "folders/Sprites/Boss Sprites/Flash Bosses/Spirit of Mischief v2.yy",
@@ -68,7 +68,7 @@
     "visibleRange": null,
     "volume": 1.0,
     "xorigin": 150,
-    "yorigin": 150,
+    "yorigin": 180,
   },
   "swatchColours": null,
   "swfPrecision": 2.525,

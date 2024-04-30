@@ -647,9 +647,9 @@ function scr_Boss_Choose(roomNum, exclude, difficultyAdd = 0) {
 
 	if bossform = 98.1 // Spirit of Mischief 
 	{
-	    bosstype = obj_Spirit_of_Mischief;
+	    bosstype = obj_spirit_of_mischief_v2;
 	    difficulty = 2;
-	    global.champ = choose(0,1,2,8);
+	    global.champ = choose(0);
 		//global.champ = choose(1,2,8);
 		/*
 		if roomNum = 2 {

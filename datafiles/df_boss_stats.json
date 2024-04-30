@@ -1805,8 +1805,8 @@
         "Boss 098": {
             "Name": "Spirit of Mischief",
             "Recollection_Sprite": "reco_Spirit_of_Mischief",
-            "Health_Phase_1": 190,
-            "Health_Phase_2": 130,
+            "Health_Phase_1": 230,
+            "Health_Phase_2": 180,
             "Defense_Phase_1": 0,
             "Defense_Phase_2": 0,
             "Boss_Danger": 2,
@@ -1818,20 +1818,20 @@
             "Champ 1": {
                 "Name": "Spirit of Maelstrom",
                 "Recollection_Sprite": "spr_Maelstrom_Spirit",
-                "Health_Phase_1": 220,
-                "Health_Phase_2": 160
+                "Health_Phase_1": 280,
+                "Health_Phase_2": 280
             },
             "Champ 2": { 
                 "Name":  "Spirit of Warping",
                 "Recollection_Sprite": "spr_Warping_Spirit",
-                "Health_Phase_1": 220,
-                "Health_Phase_2": 160
+                "Health_Phase_1": 280,
+                "Health_Phase_2": 220
             },
             "Champ 8": {
                 "Name": "Spirit of Chaos",
                 "Recollection_Sprite": "spr_Chaos_Spirit",
-                "Health_Phase_1": 250,
-                "Health_Phase_2": 190,
+                "Health_Phase_1": 330,
+                "Health_Phase_2": 330,
                 "Bullet_Speed": 2.15,
                 "Move_Speed": 1.8
             }
