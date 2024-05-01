@@ -14,5 +14,8 @@ scr_Boss_Size_Setup(0.5);
 scr_Boss_Height_Setup(50);
 
 death_sprite = spr_spirit_of_mischief_v2_ko;
-boss_palette = spr_boss_template_palette;
+boss_palette = spr_spirit_of_mischief_v2_palette;
 boss_palette_index = champ;
+if champ = 8 {
+	boss_palette_index = 3
+}

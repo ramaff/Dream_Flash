@@ -60,7 +60,7 @@ function scr_Extra_Shot_Stats() {
 	}
 	
 	if shot_stats.Shot_Lobbing = true {
-		shot_stats.Shot_Height = 0;
+		//shot_stats.Shot_Height = 0;
 	    //shot_stats.Shot_Bounce_Speed = 10;
 	    //shot_stats.Shot_Bounce_Direction = 1;	
 	}

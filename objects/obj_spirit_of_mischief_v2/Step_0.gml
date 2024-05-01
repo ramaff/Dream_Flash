@@ -9,7 +9,7 @@ scr_Boss_Height_Bob(30, 1, 0);
 // Make boss shape wobble:
 scr_Boss_Wobble("Horizontal", 0.4, 1, 0);
 
-if active_attack = 2 {
+if active_attack = 2 || active_attack = 6 {
 	direction += 4;
 	var _ang_diff = abs(angle_difference(direction, scr_Soul_Point()))
 	speed = bossmovespeed * (240 - _ang_diff) / 40;
@@ -35,19 +35,24 @@ if active_attack_delay <= 0 and active_attack_cooldown <= 0 and active_attack_du
 	// Pick a random attack to do
 	if currentphase = 1 {
 		active_attack = choose(1, 2);
+		if champ = 1 {
+			active_attack = choose(6, 3)	
+		}
 	}
 	if champ = 0 || champ = 2 {
 		if currentphase = 2 and active_attack = 0 {
 			active_attack = 3;	
 		}
 	}
-	if champ = 1 || champ = 3 {
-		active_attack = 5;
+	if currentphase = 2 {
+		if champ = 1 || champ = 3 {
+			active_attack = 5;
+		}
 	}
 	
     if active_attack = 1 {
 		// Setup how many attacks per boss move, delay, etc
-		scr_Boss_Attack_Time_Setup_v2(1, 60, 1, 90, 30, 240);
+		scr_Boss_Attack_Time_Setup_v2(1, 60, 1, 90, 30, 270);
 		
 		// Can set up the initial pattern direction
 		// patternDirection = scr_Soul_Point();
@@ -55,8 +60,7 @@ if active_attack_delay <= 0 and active_attack_cooldown <= 0 and active_attack_du
     }
 	if active_attack = 2 {
 		// 
-		scr_Boss_Attack_Time_Setup_v2(8, 40, 40, 120, 30, -10);
-		
+		scr_Boss_Attack_Time_Setup_v2(8, 40, 40, 120, 30, 10);
     }
 	if active_attack = 3 {
 		// Setup how many attacks per boss move, delay, etc
@@ -75,6 +79,10 @@ if active_attack_delay <= 0 and active_attack_cooldown <= 0 and active_attack_du
 		scr_Boss_Attack_Time_Setup_v2(720, 50, 1, 30, 20, 50);
 		//scr_Boss_Dash_Setup_v2(scr_Soul_Point(), 0, 7 * bossmovespeed);			
 	}
+	if active_attack = 6 {
+		// 
+		scr_Boss_Attack_Time_Setup_v2(30, 40, 10, 120, 30, 10);
+    }
 }
 
 //////////////////////////////////////////////////////////////////////////////////////////
@@ -141,10 +149,18 @@ if active_attack_delay <= 0 and pattern_cooldown <= 0 and pattern_count > 0 {
 		y = _new_pos[1]
 		
 		if pattern_count = 1 {
-			active_attack = 4;	
+			if champ = 0 {
+				active_attack = 4;
 			
-			scr_Boss_Attack_Time_Setup_v2(80, 50, 1, 30, 20, 50);
-			scr_Boss_Dash_Setup_v2(scr_Soul_Point(), 0, 7 * bossmovespeed);		
+				scr_Boss_Attack_Time_Setup_v2(80, 50, 1, 30, 20, 50);
+				scr_Boss_Dash_Setup_v2(scr_Soul_Point(), 0, 7 * bossmovespeed);	
+			}
+			if champ = 1 {
+				active_attack = 7;
+			
+				scr_Boss_Attack_Time_Setup_v2(40, 40, 3, 150, 20, 10);
+				scr_Boss_Dash_Setup_v2(scr_Soul_Point(), 0, 7 * bossmovespeed);	
+			}
 		}
 	
 	}
@@ -186,6 +202,7 @@ if active_attack_delay <= 0 and pattern_cooldown <= 0 and pattern_count > 0 {
 			minion_type = obj_mischief_clone;
 			minion_health = bossmaxhealth;
 			minion_movespeed = bossmovespeed;
+			minion_knockdefense = bossknockdefense;
 			
 			bossSize = bossSize * 0.8;
 
@@ -204,6 +221,7 @@ if active_attack_delay <= 0 and pattern_cooldown <= 0 and pattern_count > 0 {
 			bullet_speed = bossbulletspeed * 1;
 			
 			boss_xoffset = 80;
+			boss_yoffset = 30;
 		
 			scr_Boss_Shoot();
 			
@@ -213,6 +231,37 @@ if active_attack_delay <= 0 and pattern_cooldown <= 0 and pattern_count > 0 {
 		speed = min(bossmovespeed * 5, point_distance(x, y, (room_width / 2) - 80, room_height / 2) / 30)
 		direction = point_direction(x, y, (room_width / 2) - 80, room_height / 2)
 		direction += 67.5
+	}
+	
+	if active_attack = 6 {
+		
+		scr_Boss_Stretch("Vertical", 0.1);
+		
+		bullet_direction = pattern_direction
+		bullet_sprite = spr_Glowy_Pink_Shot;
+		bullet_type = obj_Accel_Bullet;
+		bullet_speed = bossbulletspeed * (1);
+		bullet_spread = 120;
+		bullet_count = 3;
+		
+		scr_Boss_Shoot();
+		
+		pattern_direction += 5;
+	}
+	
+	if active_attack = 7 {
+		scr_Boss_Stretch("Vertical", 0.15);
+		
+		bullet_direction = pattern_direction
+		bullet_sprite = spr_Glowy_Pink_Shot;
+		bullet_type = obj_Accel_Bullet;
+		bullet_speed = bossbulletspeed * (1.6);
+		bullet_spread = 180;
+		bullet_count = 2;
+		
+		scr_Boss_Shoot();
+		
+		pattern_direction += 12;
 	}
 	
 	// Maybe I should put this into a script
@@ -243,7 +292,7 @@ if active_attack = 1 {
 	if image_index >= 1 and image_index < 3 {
 		scr_Boss_Wobble("Horizontal", 2, 0.4, 0)	
 	}
-} else if active_attack = 2 {
+} else if active_attack = 2 || active_attack = 6 {
 	var _hold_frame = 2;
 	scr_Boss_Attack_Sprite_v2(spr_spirit_of_mischief_v2_bullet_dance, _hold_frame, 1, 9, 20);
 	if image_index = _hold_frame {
@@ -267,7 +316,14 @@ if active_attack = 1 {
 	} else if pattern_count > (pattern_count_max / 2) {
 		scr_Boss_Attack_Sprite_v2(spr_spirit_of_mischief_v2_bullet_dance, 2, 1, 9, 20);
 	} else {
+		image_xscale = -1 * abs(image_xscale)
 		scr_Boss_Attack_Sprite_v2(spr_spirit_of_mischief_v2_twin_maelstrom, -1, 0, 0, 20);
+	}
+} else if active_attack = 7 {
+	var _hold_frame = 2;
+	scr_Boss_Attack_Sprite_v2(spr_spirit_of_mischief_v2_fast_dance, _hold_frame, 3, 9, 20);
+	if image_index = _hold_frame {
+		scr_Boss_Wobble("Horizontal", 2, 0.4, 0)	
 	}
 } else {
 	sprite_index = spr_spirit_of_mischief_v2;

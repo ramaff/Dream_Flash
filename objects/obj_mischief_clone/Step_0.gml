@@ -28,10 +28,13 @@ scr_Boss_Share_Damage(minionbossparent, boss_stored_health, bosshealth);
 // Go back to normal default size
 scr_Boss_Size_Lerp(0.15);
 
-image_xscale = -1 * abs(image_xscale)
+//image_xscale = -1 * abs(image_xscale)
 
 if instance_exists(minionbossparent) {
 	sprite_index = minionbossparent.sprite_index
+	if sprite_index = spr_spirit_of_mischief_v2_twin_maelstrom {
+		sprite_index = spr_spirit_of_mischief_v2_twin_maelstrom_mirror	
+	}
 	image_index = minionbossparent.image_index
 } else {
 	instance_destroy()	
