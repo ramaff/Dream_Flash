@@ -6,6 +6,6 @@ function scr_Boss_Hit_Explosion(){
 	
 	scr_Particle_Burst(obj_Explosion_Particle, asset_get_index(shot_stats.Shot_Explosion_Sprite),
 					   shot_stats.Shot_Trail_Color_1, shot_stats.Shot_Trail_Color_2, 
-					   1, 0, 0, 0, 0, sqrt(shot_stats.Shot_Impact_Size) / 20, 30, true)
+					   1, 0, 0, 0, 0, sqrt(shot_stats.Shot_Impact_Size) / 20, 30, true, undefined, undefined, 0)
 
 }

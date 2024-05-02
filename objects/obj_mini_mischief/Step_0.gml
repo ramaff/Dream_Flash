@@ -54,7 +54,7 @@ if active_attack_delay <= 0 and pattern_cooldown <= 0 and pattern_count > 0 {
 	
 		bullet_direction = scr_Boss_Bullet_Direction_Formula(scr_Soul_Point(), 30)
 		bullet_sprite = spr_Glowy_Pink_Shot;
-		bullet_speed = (bossbulletspeed) + speed;
+		bullet_speed = (bossbulletspeed) + (speed / 2);
 		
 		scr_Boss_Shoot();	
 	}

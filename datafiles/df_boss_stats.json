@@ -1812,6 +1812,7 @@
             "Boss_Danger": 2,
             "Bullet_Speed": 2,
             "Move_Speed": 1.4,
+            "Palette": "spr_spirit_of_mischief_v2_palette",
         
             "recollectionDescription": "Covers the screen in mischief.",
         
@@ -1819,13 +1820,15 @@
                 "Name": "Spirit of Maelstrom",
                 "Recollection_Sprite": "spr_Maelstrom_Spirit",
                 "Health_Phase_1": 280,
-                "Health_Phase_2": 280
+                "Health_Phase_2": 280,
+                "Palette_Index": 1
             },
             "Champ 2": { 
                 "Name":  "Spirit of Warping",
                 "Recollection_Sprite": "spr_Warping_Spirit",
                 "Health_Phase_1": 280,
-                "Health_Phase_2": 220
+                "Health_Phase_2": 220,
+                "Palette_Index": 2
             },
             "Champ 8": {
                 "Name": "Spirit of Chaos",
@@ -1833,7 +1836,8 @@
                 "Health_Phase_1": 330,
                 "Health_Phase_2": 330,
                 "Bullet_Speed": 2.15,
-                "Move_Speed": 1.8
+                "Move_Speed": 1.8,
+                "Palette_Index": 3
             }
         },
         "Boss 111": {

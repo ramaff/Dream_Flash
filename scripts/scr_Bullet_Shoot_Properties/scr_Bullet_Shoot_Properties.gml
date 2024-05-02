@@ -1,6 +1,6 @@
 function scr_Bullet_Shoot_Properties() {
 
-	target = other.id;
+	target = other.bullet_target;
 	bullettarget = other.bullet_target;
 	bulletorigin = other.id;
 	bulletobj = other.object_index;

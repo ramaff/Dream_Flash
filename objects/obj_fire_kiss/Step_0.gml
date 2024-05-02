@@ -60,15 +60,6 @@ if active_attack_delay <= 0 and pattern_cooldown <= 0 and pattern_count > 0 {
 			}
 		
 			if _trail = false {
-				/*bullet_part = 1;
-				bullet_part_sprite = spr_Soul_Big_Bit;
-				bullet_part_color1 = make_color_rgb(255,100,50);
-				bullet_part_color2 = make_color_rgb(255,150,50);
-				bullet_part_size = 0.3;
-				bullet_part_area = 30;
-				bullet_part_life = 30;
-				bullet_part_frequency = 5; */
-
 
 				bullet_direction = 0;
 				bullet_speed = 0;
