@@ -253,7 +253,7 @@ function scr_Boss_Choose(roomNum, exclude, difficultyAdd = 0) {
 
 	if bossform = 9.1 // Amorphous Jello
 	{
-	    bosstype = obj_Amorphous_Jello;
+	    bosstype = obj_amorphous_jello;
 	    difficulty = 1;
 	    global.champ = choose(0,1,2,8);
 		//global.champ = 0;
@@ -511,7 +511,7 @@ function scr_Boss_Choose(roomNum, exclude, difficultyAdd = 0) {
 	}
 	if bossform = 44.1 // Congaline
 	{
-	    bosstype = obj_Conga_Line;
+	    bosstype = obj_conga_line;
 	    difficulty = 2;
 	    global.champ = choose(0);
 	}

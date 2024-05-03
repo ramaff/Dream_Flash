@@ -22,7 +22,7 @@ if boost = 2 {
 	total_num = 2;	
 }
 
-if instance_number(obj_Conga_Line) <= total_num {
+if instance_number(obj_conga_line) <= total_num {
 	var ct = id;
 	var line_angle = scr_Soul_Point() + 180;
 	line_angle = round(line_angle / 90) * 90
@@ -44,7 +44,7 @@ if instance_number(obj_Conga_Line) <= total_num {
 			line_angle = scr_Soul_Point();
 		}
 		line_angle = round(line_angle / 90) * 90
-		with instance_create(xx,yy,obj_Conga_Line) {
+		with instance_create(xx,yy,obj_conga_line) {
 			followtarget = ct;
 		
 			ct = id;

@@ -21,7 +21,7 @@ if currentphase = 1 {
 	}
 } else {
 	var original_target = followtarget
-	with obj_Conga_Line {
+	with obj_conga_line {
 		if followtarget == other.id {
 			followtarget = original_target;	
 		}

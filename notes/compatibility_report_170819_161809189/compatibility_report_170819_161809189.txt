@@ -152,7 +152,7 @@ Converted description /// @description  Boss Step Event
 Converting GML script: ${project_dir}/objects/obj_Thought_Cloud/Step_0.gml
 Converted description /// @description  Boss Step Event
 
-Converting GML script: ${project_dir}/objects/obj_Amorphous_Jello/Step_0.gml
+Converting GML script: ${project_dir}/objects/obj_amorphous_jello/Step_0.gml
 Converted description /// @description  Boss Step Event
 
 Converting GML script: ${project_dir}/objects/obj_Hand_of_the_Accuser/Step_0.gml

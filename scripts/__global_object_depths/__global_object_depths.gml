@@ -119,7 +119,7 @@ function __global_object_depths() {
 	global.__objectDepths[111] = 0; // obj_Wall_Watcher
 	global.__objectDepths[112] = 0; // obj_Growing_Sorrows
 	global.__objectDepths[113] = 0; // obj_Thought_Cloud
-	global.__objectDepths[114] = 0; // obj_Amorphous_Jello
+	global.__objectDepths[114] = 0; // obj_amorphous_jello
 	global.__objectDepths[115] = 0; // obj_Hand_of_the_Accuser
 	global.__objectDepths[116] = 0; // obj_Cursed_Clapper
 	global.__objectDepths[117] = 0; // obj_Spooked_Spirit
@@ -465,7 +465,7 @@ function __global_object_depths() {
 	global.__objectNames[111] = "obj_Wall_Watcher";
 	global.__objectNames[112] = "obj_Growing_Sorrows";
 	global.__objectNames[113] = "obj_Thought_Cloud";
-	global.__objectNames[114] = "obj_Amorphous_Jello";
+	global.__objectNames[114] = "obj_amorphous_jello";
 	global.__objectNames[115] = "obj_Hand_of_the_Accuser";
 	global.__objectNames[116] = "obj_Cursed_Clapper";
 	global.__objectNames[117] = "obj_Spooked_Spirit";

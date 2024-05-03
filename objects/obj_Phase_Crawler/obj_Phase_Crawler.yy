@@ -10,8 +10,8 @@
   "managed": true,
   "overriddenProperties": [],
   "parent": {
-    "name": "Dream Bosses",
-    "path": "folders/Objects/Bosses/Dream Bosses.yy",
+    "name": "v1",
+    "path": "folders/Objects/Bosses/Dream Bosses/v1.yy",
   },
   "parentObjectId": {
     "name": "obj_Wall_Stop_Boss_Parent",

@@ -28,7 +28,7 @@ function scr_Boss_Spawn() {
 	}
 
 	if bossform = 9.1 {
-	    bosstype = obj_Amorphous_Jello;
+	    bosstype = obj_amorphous_jello;
 	}
 
 	if bossform = 10.1 {
