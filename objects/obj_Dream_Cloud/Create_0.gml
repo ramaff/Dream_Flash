@@ -1,11 +1,13 @@
-size = 0.5 + random(0.4);
-speed = 0.1 + random(0.5);
-direction = 0;
+boost = 0;
+champ = 0;
 
-image_xscale = size;
-image_yscale = size;
+scr_Boss_Minion_Stat_Setup();
 
-image_speed = 0;
+scr_Boss_Attack_Setup(2);
 
-image_alpha = 0.4 + random(0.6);
+// Required, usually set to 0.5
+scr_Boss_Size_Setup(0.5);
 
+// If boss is visually 'floating' setup boss height
+// Needed for bobbing/boss shadows
+scr_Boss_Height_Setup(50);

@@ -1,23 +1,18 @@
 {
   "resourceType": "GMObject",
   "resourceVersion": "1.0",
-  "name": "obj_Wall_Of_Thoughts",
+  "name": "obj_Dream_BG_Cloud",
   "eventList": [
     {"resourceType":"GMEvent","resourceVersion":"1.0","name":"","collisionObjectId":null,"eventNum":0,"eventType":0,"isDnD":false,},
     {"resourceType":"GMEvent","resourceVersion":"1.0","name":"","collisionObjectId":null,"eventNum":0,"eventType":3,"isDnD":false,},
-    {"resourceType":"GMEvent","resourceVersion":"1.0","name":"","collisionObjectId":{"name":"obj_Main_Boss_Parent","path":"objects/obj_Main_Boss_Parent/obj_Main_Boss_Parent.yy",},"eventNum":0,"eventType":4,"isDnD":false,},
-    {"resourceType":"GMEvent","resourceVersion":"1.0","name":"","collisionObjectId":null,"eventNum":0,"eventType":8,"isDnD":false,},
   ],
   "managed": true,
   "overriddenProperties": [],
   "parent": {
-    "name": "v1",
-    "path": "folders/Objects/Bosses/Dream Bosses/v1.yy",
+    "name": "Room Stuff",
+    "path": "folders/Objects/Room Stuff.yy",
   },
-  "parentObjectId": {
-    "name": "obj_Wall_Boss_Parent",
-    "path": "objects/obj_Wall_Boss_Parent/obj_Wall_Boss_Parent.yy",
-  },
+  "parentObjectId": null,
   "persistent": false,
   "physicsAngularDamping": 0.1,
   "physicsDensity": 0.5,
@@ -34,9 +29,9 @@
   "properties": [],
   "solid": false,
   "spriteId": {
-    "name": "spr_Wall_Of_Thoughts",
-    "path": "sprites/spr_Wall_Of_Thoughts/spr_Wall_Of_Thoughts.yy",
+    "name": "spr_Dream_BG_Cloud",
+    "path": "sprites/spr_Dream_BG_Cloud/spr_Dream_BG_Cloud.yy",
   },
   "spriteMaskId": null,
-  "visible": false,
+  "visible": true,
 }

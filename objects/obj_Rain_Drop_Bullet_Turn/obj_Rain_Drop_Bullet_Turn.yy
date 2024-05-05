@@ -1,21 +1,20 @@
 {
   "resourceType": "GMObject",
   "resourceVersion": "1.0",
-  "name": "obj_Splash_Bounce_Bullet",
+  "name": "obj_Rain_Drop_Bullet_Turn",
   "eventList": [
-    {"resourceType":"GMEvent","resourceVersion":"1.0","name":"","collisionObjectId":null,"eventNum":0,"eventType":0,"isDnD":false,},
-    {"resourceType":"GMEvent","resourceVersion":"1.0","name":"","collisionObjectId":{"name":"obj_The_Border","path":"objects/obj_The_Border/obj_The_Border.yy",},"eventNum":0,"eventType":4,"isDnD":false,},
     {"resourceType":"GMEvent","resourceVersion":"1.0","name":"","collisionObjectId":null,"eventNum":0,"eventType":3,"isDnD":false,},
+    {"resourceType":"GMEvent","resourceVersion":"1.0","name":"","collisionObjectId":null,"eventNum":0,"eventType":0,"isDnD":false,},
   ],
   "managed": true,
   "overriddenProperties": [],
   "parent": {
-    "name": "Splash",
-    "path": "folders/Objects/Boss Bullets/Splash.yy",
+    "name": "Water Drops",
+    "path": "folders/Objects/Boss Bullets/Water Drops.yy",
   },
   "parentObjectId": {
-    "name": "obj_Lob_Bullet",
-    "path": "objects/obj_Lob_Bullet/obj_Lob_Bullet.yy",
+    "name": "obj_Basic_Enemy_Bullet_Parent",
+    "path": "objects/obj_Basic_Enemy_Bullet_Parent/obj_Basic_Enemy_Bullet_Parent.yy",
   },
   "persistent": false,
   "physicsAngularDamping": 0.1,
@@ -33,8 +32,8 @@
   "properties": [],
   "solid": false,
   "spriteId": {
-    "name": "fire_ref_spr",
-    "path": "sprites/fire_ref_spr/fire_ref_spr.yy",
+    "name": "spr_Tear_Drop_Bullet",
+    "path": "sprites/spr_Tear_Drop_Bullet/spr_Tear_Drop_Bullet.yy",
   },
   "spriteMaskId": null,
   "visible": false,

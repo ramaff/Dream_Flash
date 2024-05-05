@@ -7,7 +7,7 @@ scr_Boss_Step(2);
 scr_Boss_Height_Bob(30, 1, 0);
 
 // Make boss shape wobble:
-scr_Boss_Wobble("Horizontal", 0.4, 1, 0);
+scr_Boss_Wobble("Horizontal", 0.3, 1, 0);
 
 var _soul_dir = scr_Soul_Point() 
 if _soul_dir > 90 and _soul_dir < 270 {
@@ -25,31 +25,31 @@ speed = clamp(speed, -bossmovespeed, bossmovespeed)
 if active_attack_delay <= 0 and active_attack_cooldown <= 0 and active_attack_duration <= 0 {
     
 	// Pick a random attack to do
-	active_attack = choose(1, 2);
+	active_attack = choose(1, 2, 3);
+	if scr_Minion_Count(1) {
+		active_attack = choose(1, 2);	
+	}
 	
     if active_attack = 1 {
 		// Setup how many attacks per boss move, delay, etc
-		scr_Boss_Attack_Time_Setup_v2(30, 50, 5, 120, 30, 10);
-		
-		// Can set up the initial pattern direction
-		// patternDirection = scr_Soul_Point();
-		// patternDirection = random(360;
+		scr_Boss_Attack_Time_Setup_v2(20, 50, 10, 120, 30, 10);
     }
 	// Hop leap attack setup example
 	if active_attack = 2 {
 		// 
-		scr_Boss_Attack_Time_Setup_v2(30, 50, 5, 120, 30, 10);
+		scr_Boss_Attack_Time_Setup_v2(10, 90, 20, 120, 30, 10);
 		
 		//scr_Boss_Dash_Setup_v2(scr_Soul_Point(), 0, 7 * bossmovespeed);
     }
 	// Minion Spawn Example
 	if active_attack = 3 {
 		// Setup how many attacks per boss move, delay, etc
-		scr_Boss_Attack_Time_Setup_v2(1, 50, 1, 120, 30, 10);
+		scr_Boss_Attack_Time_Setup_v2(1, 90, 1, 120, 30, 40);
 		
-		// Can set up the initial pattern direction
-		// patternDirection = scr_Soul_Point();
-		// patternDirection = random(360;
+    }
+	if active_attack = 4 {
+		// Setup how many attacks per boss move, delay, etc
+		scr_Boss_Attack_Time_Setup_v2(30, 50, 5, 120, 30, 10);
     }
 }
 
@@ -59,18 +59,29 @@ if active_attack_delay <= 0 and active_attack_cooldown <= 0 and active_attack_du
 
 scr_Default_Attack_Settings();
 
+bullet_type = obj_Rain_Drop_Bullet;
+bullet_sprite = spr_Tear_Drop_Bullet;
+bullet_speed = bossbulletspeed * (1.5 + random(0.75));
+bullet_power = bosspower;
+
 // If its time to attack, attack
 if active_attack_delay <= 0 and pattern_cooldown <= 0 and pattern_count > 0 {
    
     if active_attack = 1 {
-		scr_Boss_Stretch("Vertical", 0.1);
+		if pattern_count mod 2 = 0 {
+			scr_Boss_Stretch("Vertical", 0.1);
+		}
 		
-		bullet_direction = scr_Boss_Bullet_Direction_Formula(scr_Soul_Point(), 30)
+		bullet_type = obj_Rain_Drop_Bullet;
+		bullet_count = 4;
+		bullet_spread = 30;
 		
+		bullet_direction = 237 + random(6) + scr_Wave(-30, 30, 8, 0);
 		boss_xoffset = -100;
 		
 		scr_Boss_Shoot();
 		
+		bullet_direction = 297 + random(6) + scr_Wave(-30, 30, 8, 0);
 		boss_xoffset = 100;
 		
 		scr_Boss_Shoot();
@@ -82,13 +93,14 @@ if active_attack_delay <= 0 and pattern_cooldown <= 0 and pattern_count > 0 {
 	if active_attack = 2 {
 		scr_Boss_Stretch("Vertical", 0.1);
 		
-		bullet_direction = scr_Boss_Bullet_Direction_Formula(scr_Soul_Point(), 30)
+		bullet_type = obj_Splash_Bounce_Bullet;
+        bullet_sprite = spr_Big_Glowy_Blue_Shot;
+        bullet_speed = bossbulletspeed * (0.7 + random(1.6));
+        bullet_power = bosspower * 2;
 		
-		boss_xoffset = -100;
+		boss_yoffset = 100;
 		
-		scr_Boss_Shoot();
-		
-		boss_xoffset = 100;
+		bullet_direction = 240 + random(60);
 		
 		scr_Boss_Shoot();
 	}
@@ -96,13 +108,36 @@ if active_attack_delay <= 0 and pattern_cooldown <= 0 and pattern_count > 0 {
 	if active_attack = 3 {
 	
 		minion_count = 1;
-		minion_type = obj_Minion_Template;
-		minion_health = bossmaxhealth / 10;
-		//minion_spawn_animation = spr_pocket_minion_spawn
-		//minion_yy = boss_height;
+		minion_type = obj_dream_cloud;
+		minion_health = bossmaxhealth / 5;
+		minion_dir = 270
+		minion_speed = bossbulletspeed * (1.5 + random(0.5))
+		minion_yy = 100;
 
 		scr_Minion_Spawn();
 	
+	}
+	
+	if active_attack = 4 {
+		if pattern_count mod 2 = 0 {
+			scr_Boss_Stretch("Vertical", 0.1);
+		}
+		bullet_speed = bossbulletspeed * (0.5 + (pattern_count / 10) + random(0.5))
+		
+		bullet_type = obj_Rain_Drop_Bullet_Turn;
+		
+		bullet_direction = 225 + random(30);
+		boss_xoffset = -100;
+		
+		scr_Boss_Shoot();
+		
+		bullet_direction = 285 + random(30);
+		boss_xoffset = 100;
+		
+		scr_Boss_Shoot();
+	
+		// If you gotta change the pattern aim direction
+	    // pattern_direction += 0;	
 	}
 	
 	// Maybe I should put this into a script
@@ -130,9 +165,12 @@ if active_attack = 1 {
 	if image_index = _hold_frame {
 		scr_Boss_Wobble("Horizontal", 2, 0.4, 0)	
 	}
-} else if active_attack = 2 {
-	var _hold_frame = 4;
-	scr_Boss_Attack_Sprite_v2(spr_wall_of_thoughts_v2_suck_shoot, _hold_frame, 5, 5, 10);
+} else if active_attack = 2 || active_attack = 3 {
+	if image_index >= 2 and image_index < 7 {
+		scr_Soul_Push_Pull(1 + (image_index / 4))
+	}
+	var _hold_frame = 7;
+	scr_Boss_Attack_Sprite_v2(spr_wall_of_thoughts_v2_suck_shoot, _hold_frame, 8, 8, 10);
 	if image_index = _hold_frame {
 		scr_Boss_Wobble("Horizontal", 2, 0.4, 0)	
 	}
