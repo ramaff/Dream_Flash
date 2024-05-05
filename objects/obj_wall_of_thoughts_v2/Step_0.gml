@@ -25,7 +25,7 @@ speed = clamp(speed, -bossmovespeed, bossmovespeed)
 if active_attack_delay <= 0 and active_attack_cooldown <= 0 and active_attack_duration <= 0 {
     
 	// Pick a random attack to do
-	active_attack = choose(1);
+	active_attack = choose(1, 2);
 	
     if active_attack = 1 {
 		// Setup how many attacks per boss move, delay, etc
@@ -38,9 +38,8 @@ if active_attack_delay <= 0 and active_attack_cooldown <= 0 and active_attack_du
 	// Hop leap attack setup example
 	if active_attack = 2 {
 		// 
-		scr_Boss_Attack_Time_Setup_v2(50, 30, 1, 30, 30, 10);
+		scr_Boss_Attack_Time_Setup_v2(30, 50, 5, 120, 30, 10);
 		
-		scr_Boss_Jump_Setup_v2(0, 7 * bossmovespeed, x, y);
 		//scr_Boss_Dash_Setup_v2(scr_Soul_Point(), 0, 7 * bossmovespeed);
     }
 	// Minion Spawn Example
@@ -64,7 +63,7 @@ scr_Default_Attack_Settings();
 if active_attack_delay <= 0 and pattern_cooldown <= 0 and pattern_count > 0 {
    
     if active_attack = 1 {
-		scr_Boss_Stretch("Vertical", 1);
+		scr_Boss_Stretch("Vertical", 0.1);
 		
 		bullet_direction = scr_Boss_Bullet_Direction_Formula(scr_Soul_Point(), 30)
 		
@@ -81,18 +80,17 @@ if active_attack_delay <= 0 and pattern_cooldown <= 0 and pattern_count > 0 {
 	}
 	
 	if active_attack = 2 {
-		scr_Boss_Dash_Movement_v2(4,2);
+		scr_Boss_Stretch("Vertical", 0.1);
 		
-		speed = dash_speed;
-        direction = dash_direction;
+		bullet_direction = scr_Boss_Bullet_Direction_Formula(scr_Soul_Point(), 30)
 		
-		scr_Jump_Movement_v2(2);	
+		boss_xoffset = -100;
 		
-		if pattern_count = floor(pattern_count_max) {
-			bullet_direction = scr_Boss_Bullet_Direction_Formula(scr_Soul_Point(), 30)
+		scr_Boss_Shoot();
 		
-			scr_Boss_Shoot();	
-		}
+		boss_xoffset = 100;
+		
+		scr_Boss_Shoot();
 	}
 	
 	if active_attack = 3 {
@@ -126,9 +124,15 @@ if active_attack_duration <= 0 {
 scr_Boss_Size_Lerp(0.15);
 
 // Handles boss attack sprite animation
-if active_attack != 0 {
-	var _hold_frame = 1;
-	scr_Boss_Attack_Sprite_v2(spr_wall_of_thoughts_v2_cry_stream, _hold_frame, 1, 1, 10);
+if active_attack = 1 {
+	var _hold_frame = 3;
+	scr_Boss_Attack_Sprite_v2(spr_wall_of_thoughts_v2_cry_stream, _hold_frame, 4, 4, 20);
+	if image_index = _hold_frame {
+		scr_Boss_Wobble("Horizontal", 2, 0.4, 0)	
+	}
+} else if active_attack = 2 {
+	var _hold_frame = 4;
+	scr_Boss_Attack_Sprite_v2(spr_wall_of_thoughts_v2_suck_shoot, _hold_frame, 5, 5, 10);
 	if image_index = _hold_frame {
 		scr_Boss_Wobble("Horizontal", 2, 0.4, 0)	
 	}
