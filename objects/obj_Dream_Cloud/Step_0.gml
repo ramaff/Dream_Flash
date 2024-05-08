@@ -9,7 +9,7 @@ scr_Boss_Height_Bob(30, 1, 0);
 // Make boss shape wobble:
 scr_Boss_Wobble("Horizontal", 0.3, 1, 0);
 
-speed = speed * 0.99
+speed = speed * 0.98
 
 //////////////////////////////////////////////////////////////////////////////////////////
 /////////////// Active Attack Prep
@@ -22,21 +22,17 @@ if active_attack_delay <= 0 and active_attack_cooldown <= 0 and active_attack_du
 	
     if active_attack = 1 {
 		// Setup how many attacks per boss move, delay, etc
-		scr_Boss_Attack_Time_Setup_v2(300, 30, 1, 120, 30, 30);
-		direction = 45 + (irandom(4) * 90)
+		scr_Boss_Attack_Time_Setup_v2(25, 30, 10, 120, 120, 30);
+		//pattern_direction = 45 + (irandom(4) * 90)
+		direction = scr_Soul_Point();
+		speed = bossmovespeed * 0.5;
+		pattern_direction = direction + 180;
 		
 		// Can set up the initial pattern direction
 		// patternDirection = scr_Soul_Point();
 		// patternDirection = random(360;
     }
 	
-	// Hop leap attack setup example
-	if active_attack = 2 {
-		// 
-		scr_Boss_Attack_Time_Setup_v2(50, 30, 1, 30, 30, 10);
-		
-		scr_Boss_Jump_Setup_v2(0, 7 * bossmovespeed, x, y);
-    }
 }
 
 //////////////////////////////////////////////////////////////////////////////////////////
@@ -47,19 +43,21 @@ scr_Default_Attack_Settings();
 
 bullet_type = obj_Rain_Drop_Bullet;
 bullet_sprite = spr_Tear_Drop_Bullet;
-bullet_speed = bossbulletspeed * (1.5 + random(0.75));
+bullet_speed = bossbulletspeed * (0.75 + random(0.5));
 bullet_power = bosspower;
 
 // If its time to attack, attack
 if active_attack_delay <= 0 and pattern_cooldown <= 0 and pattern_count > 0 {
    
     if active_attack = 1 {
-		if pattern_count mod 10 = 0 {
-			scr_Boss_Bullet_Direction_Formula(direction + 180, 30)
-			scr_Boss_Shoot()
-		}
+		scr_Boss_Stretch("Vertical", 0.1)
 		
-		speed += 0.6 * bossmovespeed;
+		bullet_direction = scr_Boss_Bullet_Direction_Formula(pattern_direction, 30)
+		scr_Boss_Shoot()
+		speed += 1.25 * bossmovespeed;
+		direction = scr_Angle_Converge(direction, scr_Soul_Point(), 5)
+		pattern_direction = direction + 180;
+		
 	}
 	
 	// Maybe I should put this into a script
@@ -78,7 +76,11 @@ if active_attack_duration <= 0 {
 /// Boss Sprite Code
 
 // Go back to normal default size
-scr_Boss_Size_Lerp(0.15);
+if active_attack != 0 and image_index >= 3 and image_index < 5 {
+	scr_Boss_Size_Lerp_Dir(0.15, false);
+} else {
+	scr_Boss_Size_Lerp(0.15);
+}
 
 // Handles boss attack sprite animation
 if active_attack != 0 {

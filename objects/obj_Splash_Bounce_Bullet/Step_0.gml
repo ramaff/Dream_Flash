@@ -1,7 +1,7 @@
 /// @description Insert description here
 // You can write your code in this editor
 
-scr_Wall_Bounce()
+//scr_Wall_Bounce()
 
 bulletbounceY += bounce_speed
 bounce_speed -= bounce_gravity

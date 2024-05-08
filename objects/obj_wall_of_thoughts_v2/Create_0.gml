@@ -3,7 +3,7 @@ boost = global.boost;
 champ = global.champ;
 
 // Boss # id
-boss_value = 50;
+boss_value = 7;
 scr_Boss_Stats_Setup(2);
 
 // Required, usually set to 0.5
