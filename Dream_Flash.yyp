@@ -881,6 +881,7 @@
     {"id":{"name":"spr_Conga_Line_v2_Dope","path":"sprites/spr_Conga_Line_v2_Dope/spr_Conga_Line_v2_Dope.yy",},},
     {"id":{"name":"spr_Horror_Stack_Two","path":"sprites/spr_Horror_Stack_Two/spr_Horror_Stack_Two.yy",},},
     {"id":{"name":"obj_Nightmare_Missile","path":"objects/obj_Nightmare_Missile/obj_Nightmare_Missile.yy",},},
+    {"id":{"name":"spr_wall_of_thoughts_v2_ko","path":"sprites/spr_wall_of_thoughts_v2_ko/spr_wall_of_thoughts_v2_ko.yy",},},
     {"id":{"name":"lighting_post_composite","path":"scripts/lighting_post_composite/lighting_post_composite.yy",},},
     {"id":{"name":"spr_Horror_Stack_Champ_Two","path":"sprites/spr_Horror_Stack_Champ_Two/spr_Horror_Stack_Champ_Two.yy",},},
     {"id":{"name":"spr_Hold_That_Thought_Art","path":"sprites/spr_Hold_That_Thought_Art/spr_Hold_That_Thought_Art.yy",},},

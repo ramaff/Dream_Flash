@@ -11,9 +11,9 @@ scr_Boss_Wobble("Horizontal", 0.3, 1, 0);
 
 var _soul_dir = scr_Soul_Point() 
 if _soul_dir > 90 and _soul_dir < 270 {
-	hspeed -= 0.01 * bossmovespeed
+	hspeed -= 0.025 * bossmovespeed
 } else {
-	hspeed += 0.01 * bossmovespeed	
+	hspeed += 0.025 * bossmovespeed	
 }
 
 speed = clamp(speed, -bossmovespeed, bossmovespeed)
