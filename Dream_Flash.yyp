@@ -509,6 +509,7 @@
     {"id":{"name":"spr_Border_Impact_Corner2","path":"sprites/spr_Border_Impact_Corner2/spr_Border_Impact_Corner2.yy",},},
     {"id":{"name":"spr_Border_Impact1","path":"sprites/spr_Border_Impact1/spr_Border_Impact1.yy",},},
     {"id":{"name":"spr_pocket_minion","path":"sprites/spr_pocket_minion/spr_pocket_minion.yy",},},
+    {"id":{"name":"spr_wall_of_thoughts_v2_palette","path":"sprites/spr_wall_of_thoughts_v2_palette/spr_wall_of_thoughts_v2_palette.yy",},},
     {"id":{"name":"spr_Flash_Sparkle","path":"sprites/spr_Flash_Sparkle/spr_Flash_Sparkle.yy",},},
     {"id":{"name":"spr_Explosion_Effect","path":"sprites/spr_Explosion_Effect/spr_Explosion_Effect.yy",},},
     {"id":{"name":"spr_Boss_Bullet_Explosion","path":"sprites/spr_Boss_Bullet_Explosion/spr_Boss_Bullet_Explosion.yy",},},

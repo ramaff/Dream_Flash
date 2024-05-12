@@ -14,10 +14,10 @@ scr_Boss_Size_Setup(0.55);
 scr_Boss_Height_Setup(50);
 
 death_sprite = spr_wall_of_thoughts_v2_ko;
-boss_palette = spr_boss_template_palette;
+boss_palette = spr_wall_of_thoughts_v2_palette;
 boss_palette_index = champ;
 
-y -= 300;
+y -= (global.roomSizeY / 3);
 
 with(obj_Soul_Parent) {
 	y += 200;	

@@ -27,12 +27,22 @@ if active_attack_delay <= 0 and active_attack_cooldown <= 0 and active_attack_du
 	// Pick a random attack to do
 	active_attack = choose(1, 2, 4, 3, 3, 3);
 	if scr_Minion_Count(currentphase) {
-		active_attack = choose(1, 2, 4);	
+		active_attack = choose(1, 2, 4);
+	}
+	
+	if champ = 1 {
+		if active_attack = 2 {
+			active_attack = 5;	
+		}
 	}
 	
     if active_attack = 1 {
 		// Setup how many attacks per boss move, delay, etc
-		scr_Boss_Attack_Time_Setup_v2(15, 50, 15, 150, 30, 10);
+		var _attack_count = 15;
+		if champ = 1 {
+			_attack_count = 20;
+		}
+		scr_Boss_Attack_Time_Setup_v2(_attack_count, 50, 15, 150, 30, 10);
     }
 	// Hop leap attack setup example
 	if active_attack = 2 {
@@ -49,7 +59,16 @@ if active_attack_delay <= 0 and active_attack_cooldown <= 0 and active_attack_du
     }
 	if active_attack = 4 {
 		// Setup how many attacks per boss move, delay, etc
-		scr_Boss_Attack_Time_Setup_v2(45, 50, 4, 150, 30, 10);
+		var _attack_count = 45;
+		if champ = 1 {
+			_attack_count = 90;
+		}
+		scr_Boss_Attack_Time_Setup_v2(_attack_count, 50, 4, 150, 30, 10);
+    }
+	if active_attack = 5 {
+		// Setup how many attacks per boss move, delay, etc
+		scr_Boss_Attack_Time_Setup_v2(3, 90, 40, 150, 30, 10);
+		pattern_direction = 210;
     }
 }
 
@@ -76,17 +95,34 @@ if active_attack_delay <= 0 and pattern_cooldown <= 0 and pattern_count > 0 {
 		bullet_count = 4;
 		bullet_spread = 30;
 		boss_yoffset = 50;
-		bullet_speed = bossbulletspeed * (1.75 + random(0.25));
+		bullet_speed = bossbulletspeed * (1.9 + random(0.25));
 		
-		bullet_direction = 238 + random(4) + scr_Wave(-30, 30, 8, 0);
+		bullet_direction = 238 + random(4) + scr_Wave(-40, 40, 6, 0);
 		boss_xoffset = -100;
 		
 		scr_Boss_Shoot();
 		
-		bullet_direction = 298 + random(4) + scr_Wave(-30, 30, 8, 0);
+		bullet_direction = 298 + random(4) + scr_Wave(-40, 40, 6, 0);
 		boss_xoffset = 100;
 		
 		scr_Boss_Shoot();
+		
+		if champ = 1 and pattern_count mod 10 = 2 {
+			
+			bullet_count = 15;
+			bullet_spread = 15;
+			bullet_type = obj_Lob_Direction_Bullet;
+			
+			bullet_direction = 238 + random(4) + scr_Wave(-40, 40, 6, 0);
+			boss_xoffset = -100;
+		
+			scr_Boss_Shoot();
+		
+			bullet_direction = 298 + random(4) + scr_Wave(-40, 40, 6, 0);
+			boss_xoffset = 100;
+		
+			scr_Boss_Shoot();
+		}
 	
 		// If you gotta change the pattern aim direction
 	    // pattern_direction += 0;
@@ -134,23 +170,54 @@ if active_attack_delay <= 0 and pattern_cooldown <= 0 and pattern_count > 0 {
 		bullet_speed += bossmovespeed * 0.75;
 		boss_yoffset = 50;
 		
-		if champ = 1 {
-			bullet_speed = bossbulletspeed * (0.5 + (pattern_count / 10) + random(0.5))
-			bullet_type = obj_Rain_Drop_Bullet_Turn;
-		}
-		
 		bullet_direction = 225 + random(30) + scr_Wave(-90, 90, 4, 0);
 		boss_xoffset = -100;
 		
+		if champ = 1 {
+			bullet_direction = 230 + random(20);
+			bullet_speed = bossbulletspeed * (5.5 - (pattern_count / 20) + random(1))
+			bullet_type = obj_Rain_Drop_Bullet_Turn;
+		}
+		
 		scr_Boss_Shoot();
 		
-		bullet_direction = 285 + random(30) + scr_Wave(-90, 90, 4, 0);
+		bullet_direction += 60;
 		boss_xoffset = 100;
 		
 		scr_Boss_Shoot();
 	
 		// If you gotta change the pattern aim direction
 	    // pattern_direction += 0;	
+	}
+	if active_attack = 5 {
+		scr_Boss_Stretch("Vertical", 0.3);
+		
+		bullet_type = obj_Splash_Bullet;
+        bullet_sprite = spr_Rain_Ball;
+        bullet_speed = bossbulletspeed * (2.75 - (pattern_count / 3))
+        bullet_power = bosspower * 2;
+		
+		boss_yoffset = 150;
+		boss_xoffset = 10;
+		
+		bullet_bounce_Y = 82;
+		
+		bullet_direction = pattern_direction
+		
+		bullet_lifespan = 120;
+		
+		bullet_bounce_speed = 0;
+		bullet_bounce_gravity = 0.1;
+		bullet_lifespan = sqrt((2 * (150)) / bullet_bounce_gravity);
+		bullet_lob_time = bullet_lifespan - 2;
+		bullet_bounce_Y = 150;
+		
+		scr_Boss_Shoot();
+		
+		pattern_direction += 60;
+	
+		// If you gotta change the pattern aim direction
+	    // pattern_direction += 0;
 	}
 	
 	// Maybe I should put this into a script
@@ -178,7 +245,7 @@ if active_attack = 1 || active_attack = 4 {
 	if image_index = _hold_frame {
 		scr_Boss_Wobble("Horizontal", 2, 0.4, 0)	
 	}
-} else if active_attack = 2 || active_attack = 3 {
+} else if active_attack = 2 || active_attack = 3 || active_attack = 5 {
 	if image_index >= 2 and image_index < 7 {
 		scr_Soul_Push_Pull(1 + (image_index / 4))
 	}

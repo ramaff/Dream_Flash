@@ -3,6 +3,16 @@
 // Mandatory:
 scr_Boss_Step(2);
 
+boss_height = max(50, boss_height)
+
+if active_attack = 2 {
+	boss_height += 2;
+	y -= 2;
+}
+
+boss_height = lerp(boss_height, 60, 0.02)
+
+
 // If boss is floating in air, can make it bob up and down:
 scr_Boss_Height_Bob(30, 1, 0);
 
@@ -20,13 +30,30 @@ if active_attack_delay <= 0 and active_attack_cooldown <= 0 and active_attack_du
 	// Pick a random attack to do
 	active_attack = choose(1);
 	
+	if champ = 1 {
+		active_attack = 2	
+	}
+	
     if active_attack = 1 {
 		// Setup how many attacks per boss move, delay, etc
-		scr_Boss_Attack_Time_Setup_v2(25, 30, 10, 120, 120, 30);
+		scr_Boss_Attack_Time_Setup_v2(18, 30, 10, 120, 120, 30);
 		//pattern_direction = 45 + (irandom(4) * 90)
 		direction = scr_Soul_Point();
 		speed = bossmovespeed * 0.5;
 		pattern_direction = direction + 180;
+		
+		// Can set up the initial pattern direction
+		// patternDirection = scr_Soul_Point();
+		// patternDirection = random(360;
+    }
+	
+	if active_attack = 2 {
+		// Setup how many attacks per boss move, delay, etc
+		scr_Boss_Attack_Time_Setup_v2(20, 30, 10, 90, 90, 30);
+		//pattern_direction = 45 + (irandom(4) * 90)
+		direction = scr_Soul_Point(x, y - 50);
+		speed = bossmovespeed * 0.5;
+		pattern_direction = 270;
 		
 		// Can set up the initial pattern direction
 		// patternDirection = scr_Soul_Point();
@@ -57,6 +84,25 @@ if active_attack_delay <= 0 and pattern_cooldown <= 0 and pattern_count > 0 {
 		speed += 1.25 * bossmovespeed;
 		direction = scr_Angle_Converge(direction, scr_Soul_Point(), 5)
 		pattern_direction = direction + 180;
+		
+	}
+	
+	if active_attack = 2 {
+		scr_Boss_Stretch("Vertical", 0.1)
+		
+		bullet_direction = scr_Boss_Bullet_Direction_Formula(pattern_direction, 30)
+		bullet_type = obj_Lob_Direction_Bullet
+		bullet_speed = 0.01;
+		
+		bullet_bounce_speed = 0;
+		bullet_bounce_gravity = 0.1;
+		bullet_lifespan = sqrt((2 * (boss_height + 150)) / bullet_bounce_gravity);
+		bullet_lob_time = bullet_lifespan - 2;
+		bullet_bounce_Y = boss_height + 150;
+		
+		scr_Boss_Shoot()
+		speed += 1.25 * bossmovespeed;
+		direction = scr_Angle_Converge(direction, scr_Soul_Point(x, y - 50), 15)
 		
 	}
 	

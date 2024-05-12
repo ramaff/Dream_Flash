@@ -13,11 +13,11 @@
   "edgeFiltering": false,
   "For3D": false,
   "frames": [
-    {"resourceType":"GMSpriteFrame","resourceVersion":"1.1","name":"c0f8a88d-6fd1-49b3-9ca7-0fb8fe84c493",},
+    {"resourceType":"GMSpriteFrame","resourceVersion":"1.1","name":"5d754cc4-574d-481c-8629-1a04a9c61da8",},
   ],
   "gridX": 0,
   "gridY": 0,
-  "height": 114,
+  "height": 144,
   "HTile": false,
   "layers": [
     {"resourceType":"GMImageLayer","resourceVersion":"1.0","name":"329511f5-dde4-42dd-8a72-1c030292aede","blendMode":0,"displayName":"default","isLocked":false,"opacity":100.0,"visible":true,},
@@ -54,13 +54,13 @@
     "timeUnits": 1,
     "tracks": [
       {"resourceType":"GMSpriteFramesTrack","resourceVersion":"1.0","name":"frames","builtinName":0,"events":[],"inheritsTrackColour":true,"interpolation":1,"isCreationTrack":false,"keyframes":{"resourceType":"KeyframeStore<SpriteFrameKeyframe>","resourceVersion":"1.0","Keyframes":[
-            {"resourceType":"Keyframe<SpriteFrameKeyframe>","resourceVersion":"1.0","Channels":{"0":{"resourceType":"SpriteFrameKeyframe","resourceVersion":"1.0","Id":{"name":"c0f8a88d-6fd1-49b3-9ca7-0fb8fe84c493","path":"sprites/spr_Rain_Ball/spr_Rain_Ball.yy",},},},"Disabled":false,"id":"b4bbbb51-d06d-46d2-9c85-2dd44b725b08","IsCreationKey":false,"Key":0.0,"Length":1.0,"Stretch":false,},
+            {"resourceType":"Keyframe<SpriteFrameKeyframe>","resourceVersion":"1.0","Channels":{"0":{"resourceType":"SpriteFrameKeyframe","resourceVersion":"1.0","Id":{"name":"5d754cc4-574d-481c-8629-1a04a9c61da8","path":"sprites/spr_Rain_Ball/spr_Rain_Ball.yy",},},},"Disabled":false,"id":"95a28ef5-939a-473b-81e4-d371e34eef08","IsCreationKey":false,"Key":0.0,"Length":1.0,"Stretch":false,},
           ],},"modifiers":[],"spriteId":null,"trackColour":0,"tracks":[],"traits":0,},
     ],
-    "visibleRange": {"x":0.0,"y":0.0,},
+    "visibleRange": null,
     "volume": 1.0,
-    "xorigin": 57,
-    "yorigin": 57,
+    "xorigin": 72,
+    "yorigin": 72,
   },
   "swatchColours": null,
   "swfPrecision": 2.525,
@@ -70,5 +70,5 @@
   },
   "type": 0,
   "VTile": false,
-  "width": 114,
+  "width": 144,
 }
