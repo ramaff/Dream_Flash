@@ -1,7 +1,7 @@
 {
   "resourceType": "GMObject",
   "resourceVersion": "1.0",
-  "name": "obj_Beam_Bullet",
+  "name": "obj_Lightning_Zig_Zag_Bullet",
   "eventList": [
     {"resourceType":"GMEvent","resourceVersion":"1.0","name":"","collisionObjectId":null,"eventNum":0,"eventType":3,"isDnD":false,},
     {"resourceType":"GMEvent","resourceVersion":"1.0","name":"","collisionObjectId":null,"eventNum":1,"eventType":3,"isDnD":false,},
@@ -35,8 +35,8 @@
   "properties": [],
   "solid": false,
   "spriteId": {
-    "name": "spr_Lightning_Beam_Segment",
-    "path": "sprites/spr_Lightning_Beam_Segment/spr_Lightning_Beam_Segment.yy",
+    "name": "spr_Glowy_Enemy_Shot",
+    "path": "sprites/spr_Glowy_Enemy_Shot/spr_Glowy_Enemy_Shot.yy",
   },
   "spriteMaskId": null,
   "visible": false,

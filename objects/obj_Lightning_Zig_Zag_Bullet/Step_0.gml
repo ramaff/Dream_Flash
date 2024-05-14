@@ -3,8 +3,3 @@
 	//if bulletblend != 0 {
 	//	scr_Bullet_Blend(bulletblend);	
 	//}
-	
-if alarm[0] > 10 and image_index >= 7 {
-	image_index = 7	
-}
-	

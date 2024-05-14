@@ -36,6 +36,13 @@ if active_attack_delay <= 0 and active_attack_cooldown <= 0 and active_attack_du
 		}
 	}
 	
+	if champ = 2 {
+		if active_attack = 4 {
+			active_attack = 6;	
+		}
+	}
+	active_attack = 6;
+	
     if active_attack = 1 {
 		// Setup how many attacks per boss move, delay, etc
 		var _attack_count = 15;
@@ -69,6 +76,10 @@ if active_attack_delay <= 0 and active_attack_cooldown <= 0 and active_attack_du
 		// Setup how many attacks per boss move, delay, etc
 		scr_Boss_Attack_Time_Setup_v2(3, 90, 40, 150, 30, 10);
 		pattern_direction = 210;
+    }
+	if active_attack = 6 {
+		// Setup how many attacks per boss move, delay, etc
+		scr_Boss_Attack_Time_Setup_v2(240, 50, 1, 150, 30, 10);
     }
 }
 
@@ -112,6 +123,24 @@ if active_attack_delay <= 0 and pattern_cooldown <= 0 and pattern_count > 0 {
 			bullet_count = 15;
 			bullet_spread = 15;
 			bullet_type = obj_Lob_Direction_Bullet;
+			
+			bullet_direction = 238 + random(4) + scr_Wave(-40, 40, 6, 0);
+			boss_xoffset = -100;
+		
+			scr_Boss_Shoot();
+		
+			bullet_direction = 298 + random(4) + scr_Wave(-40, 40, 6, 0);
+			boss_xoffset = 100;
+		
+			scr_Boss_Shoot();
+		}
+		
+		if champ = 2 and pattern_count mod 10 = 2 {
+			
+			bullet_count = 10;
+			bullet_spread = 22.5;
+			bullet_type = obj_Zig_Zag_Bullet;
+			bullet_sprite = spr_Lightning_Bullet;
 			
 			bullet_direction = 238 + random(4) + scr_Wave(-40, 40, 6, 0);
 			boss_xoffset = -100;
@@ -220,6 +249,79 @@ if active_attack_delay <= 0 and pattern_cooldown <= 0 and pattern_count > 0 {
 	    // pattern_direction += 0;
 	}
 	
+	if active_attack = 6 {
+	
+		scr_Default_Attack_Settings();
+	        bullet_type = obj_Beam_Bullet
+	        bullet_sprite = spr_Lightning_Beam;
+	        bullet_speed = 0;
+	        bullet_size = 1.5;
+	        bullet_count = 4;
+	        bullet_spread = 90;
+	        boss_radius = 0;
+	        bullet_sprite = spr_Lightning_Beam_Segment;
+			
+			if pattern_count = pattern_count_max {
+				
+				scr_Spirit_Boss_BullFX_Pre();
+	
+				var dir = -(bullet_spread * (bullet_count - 1) / 2);
+		
+				var bull = bullet_type;
+				var _seg_size = 72;
+				
+				boss_xoffset = -100;
+				var _streak_count = 0;
+				
+				repeat(bullet_count) {
+					
+					if _streak_count >= 2 {
+						boss_xoffset = 100;	
+					}
+					
+					var xx = x + boss_xoffset;
+					var yy = y + boss_yoffset;
+					
+					_streak_count += 1;
+					
+					var _zag = -0.5 + irandom(1);
+					var _count = 20
+					repeat(20) {
+						_count -= 1;
+						bullet_direction = 270 + (90 * _zag)
+					    with instance_create(xx, yy, bull) {
+					        scr_Bullet_Shoot_Properties();
+							if _count mod 2 = 0 and scr_Chance(2) {
+								if _zag = -0.5 {
+									_zag = 0.5;
+									image_yscale = -image_yscale;
+									_seg_size = 51;
+								} else if _zag = 0.5 {
+									_zag = -0.5;
+									_seg_size = 51;
+								}
+								sprite_index = spr_Lightning_Beam_Turn;
+							}
+					        //direction = other.bullet_direction + (other.dir) * ((40 + random(global.soulparanoia)) / 40);
+							direction = other.bullet_direction;
+							image_angle = direction;
+							scr_Spiritual_Stats_Boss_Bullet_Effects();
+					    }
+						xx += lengthdir_x(_seg_size, bullet_direction)
+						yy += lengthdir_y(_seg_size, bullet_direction)
+					}
+					
+				    dir += bullet_spread;
+				}
+				
+			}
+			
+			//var beamstart = bossPatternCountMax - bossPatternCount;
+			
+			//scr_Easy_Boss_Beam_Shoot(bossPatternCountMax, 18);
+	
+	}
+	
 	// Maybe I should put this into a script
     pattern_count -= 1;
     pattern_cooldown += pattern_cooldown_max;
@@ -239,7 +341,7 @@ if active_attack_duration <= 0 {
 scr_Boss_Size_Lerp(0.15);
 
 // Handles boss attack sprite animation
-if active_attack = 1 || active_attack = 4 {
+if active_attack = 1 || active_attack = 4 || active_attack = 6 {
 	var _hold_frame = 3;
 	scr_Boss_Attack_Sprite_v2(spr_wall_of_thoughts_v2_cry_stream, _hold_frame, 4, 4, 20);
 	if image_index = _hold_frame {
