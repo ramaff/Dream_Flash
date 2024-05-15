@@ -658,6 +658,7 @@
     {"id":{"name":"reco_Pocket","path":"sprites/reco_Pocket/reco_Pocket.yy",},},
     {"id":{"name":"spr_Circle_Effect","path":"sprites/spr_Circle_Effect/spr_Circle_Effect.yy",},},
     {"id":{"name":"reco_Flash_Knight","path":"sprites/reco_Flash_Knight/reco_Flash_Knight.yy",},},
+    {"id":{"name":"obj_Beam_Bullet_v2","path":"objects/obj_Beam_Bullet_v2/obj_Beam_Bullet_v2.yy",},},
     {"id":{"name":"reco_Puck_Man","path":"sprites/reco_Puck_Man/reco_Puck_Man.yy",},},
     {"id":{"name":"spr_Snake_Eyes_Shoot","path":"sprites/spr_Snake_Eyes_Shoot/spr_Snake_Eyes_Shoot.yy",},},
     {"id":{"name":"reco_Agony_Amorphous","path":"sprites/reco_Agony_Amorphous/reco_Agony_Amorphous.yy",},},

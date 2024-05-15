@@ -80,6 +80,7 @@
     {"name":"reco_Jackhamster","order":47,"path":"sprites/reco_Jackhamster/reco_Jackhamster.yy",},
     {"name":"reco_Pocket","order":46,"path":"sprites/reco_Pocket/reco_Pocket.yy",},
     {"name":"reco_Flash_Knight","order":45,"path":"sprites/reco_Flash_Knight/reco_Flash_Knight.yy",},
+    {"name":"obj_Beam_Bullet_v2","order":2,"path":"objects/obj_Beam_Bullet_v2/obj_Beam_Bullet_v2.yy",},
     {"name":"reco_Puck_Man","order":44,"path":"sprites/reco_Puck_Man/reco_Puck_Man.yy",},
     {"name":"reco_Agony_Amorphous","order":43,"path":"sprites/reco_Agony_Amorphous/reco_Agony_Amorphous.yy",},
     {"name":"reco_Infatuation_Cloud","order":42,"path":"sprites/reco_Infatuation_Cloud/reco_Infatuation_Cloud.yy",},
