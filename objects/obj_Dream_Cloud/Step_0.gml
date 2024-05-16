@@ -36,7 +36,12 @@ if active_attack_delay <= 0 and active_attack_cooldown <= 0 and active_attack_du
 	
     if active_attack = 1 {
 		// Setup how many attacks per boss move, delay, etc
-		scr_Boss_Attack_Time_Setup_v2(18, 30, 10, 120, 120, 30);
+		var _attack_count = 18;
+		var _attack_space = 10
+		if champ = 2 {
+			_attack_space = 20;	
+		}
+		scr_Boss_Attack_Time_Setup_v2(_attack_count, 30, _attack_space, 120, 120, 30);
 		//pattern_direction = 45 + (irandom(4) * 90)
 		direction = scr_Soul_Point();
 		speed = bossmovespeed * 0.5;
@@ -62,6 +67,7 @@ if active_attack_delay <= 0 and active_attack_cooldown <= 0 and active_attack_du
 	
 }
 
+
 //////////////////////////////////////////////////////////////////////////////////////////
 /// Active Attack Pattern Code
 //////////////////////////////////////////////////////////////////////////////////////////    
@@ -73,6 +79,12 @@ bullet_sprite = spr_Tear_Drop_Bullet;
 bullet_speed = bossbulletspeed * (0.75 + random(0.5));
 bullet_power = bosspower;
 
+if champ = 2 {
+	bullet_type = obj_Zig_Zag_Bullet;
+	bullet_sprite = spr_Lightning_Bullet;
+	bullet_speed -= bossbulletspeed * 0.5;
+}
+
 // If its time to attack, attack
 if active_attack_delay <= 0 and pattern_cooldown <= 0 and pattern_count > 0 {
    
@@ -83,6 +95,16 @@ if active_attack_delay <= 0 and pattern_cooldown <= 0 and pattern_count > 0 {
 		scr_Boss_Shoot()
 		speed += 1.25 * bossmovespeed;
 		direction = scr_Angle_Converge(direction, scr_Soul_Point(), 5)
+		
+		if champ = 2 {
+			if pattern_count mod 6 = 0 {
+				direction += 45
+			}
+			if pattern_count mod 6 = 3 {
+				direction -= 45
+			}
+			speed += 2 * bossmovespeed;
+		}
 		pattern_direction = direction + 180;
 		
 	}

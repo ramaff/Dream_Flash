@@ -63,6 +63,7 @@
     {"name":"reco_Thought_Cloud","order":60,"path":"sprites/reco_Thought_Cloud/reco_Thought_Cloud.yy",},
     {"name":"reco_Thought_Cloud1","order":62,"path":"sprites/reco_Thought_Cloud1/reco_Thought_Cloud1.yy",},
     {"name":"reco_Jello_Amorphous","order":59,"path":"sprites/reco_Jello_Amorphous/reco_Jello_Amorphous.yy",},
+    {"name":"obj_Thunder_Bullet_v2","order":1,"path":"objects/obj_Thunder_Bullet_v2/obj_Thunder_Bullet_v2.yy",},
     {"name":"reco_Growing_Sorrows","order":61,"path":"sprites/reco_Growing_Sorrows/reco_Growing_Sorrows.yy",},
     {"name":"reco_Hand_of_the_Accuser","order":57,"path":"sprites/reco_Hand_of_the_Accuser/reco_Hand_of_the_Accuser.yy",},
     {"name":"reco_Spooky_Spirit","order":58,"path":"sprites/reco_Spooky_Spirit/reco_Spooky_Spirit.yy",},

@@ -630,6 +630,7 @@
     {"id":{"name":"reco_Jello_Amorphous","path":"sprites/reco_Jello_Amorphous/reco_Jello_Amorphous.yy",},},
     {"id":{"name":"light_update","path":"scripts/light_update/light_update.yy",},},
     {"id":{"name":"spr_Dungeon_Master_Leap2020","path":"sprites/spr_Dungeon_Master_Leap2020/spr_Dungeon_Master_Leap2020.yy",},},
+    {"id":{"name":"obj_Thunder_Bullet_v2","path":"objects/obj_Thunder_Bullet_v2/obj_Thunder_Bullet_v2.yy",},},
     {"id":{"name":"reco_Growing_Sorrows","path":"sprites/reco_Growing_Sorrows/reco_Growing_Sorrows.yy",},},
     {"id":{"name":"reco_Hand_of_the_Accuser","path":"sprites/reco_Hand_of_the_Accuser/reco_Hand_of_the_Accuser.yy",},},
     {"id":{"name":"reco_Spooky_Spirit","path":"sprites/reco_Spooky_Spirit/reco_Spooky_Spirit.yy",},},

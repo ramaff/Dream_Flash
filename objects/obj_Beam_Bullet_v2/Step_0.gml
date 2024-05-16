@@ -4,12 +4,12 @@
 	//	scr_Bullet_Blend(bulletblend);	
 	//}
 
-if image_index < 5 || image_index >= 8 {
+if image_index < 8 || image_index >= 11 {
 	bulletpower = 0;	
 } else {
 	bulletpower = global.stagedamage;	
 }
 
-if alarm[0] > 10 and image_index >= 7 {
-	image_index = 7	
+if alarm[0] > 10 and image_index >= 10 {
+	image_index = 10
 }
