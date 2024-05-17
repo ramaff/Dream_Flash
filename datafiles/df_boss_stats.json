@@ -234,30 +234,29 @@
         },
 
         "Boss 007": {
-            "Name": "Storm Cloud",
-            "Recollection_Sprite": "reco_Storm_Cloud",
-            "Health_Phase_1": 510,
-            "Health_Phase_2": 490,
-            "Defense_Phase_1": 1,
+            "Name": "Wall of Thoughts",
+            "Recollection_Sprite": "reco_Wall_Of_Thoughts",
+            "Health_Phase_1": 600,
+            "Health_Phase_2": 750,
+            "Defense_Phase_1": 0,
             "Defense_Phase_2": 0,
             "Boss_Danger": 8,
             "Bullet_Speed": 2.3,
             "Move_Speed": 0.75,
         
-            "recollectionDescription": "These dark thoughts start to cloud your judgement.",
+            "recollectionDescription": "Huge formation of thoughts that attacks the soul with painful memories.",
         
             "Champ 1": {
                 "Name": "Flood Cloud",
                 "Recollection_Sprite": "spr_Flood_Cloud",
-                "Health_Phase_1": 585,
-                "Health_Phase_2": 560,
-                "Bullet_Speed": 2.8
+                "Health_Phase_1": 690,
+                "Health_Phase_2": 850
             },
             "Champ 2": { 
                 "Name":  "Thunder Cloud",
                 "Recollection_Sprite": "spr_Thunder_Cloud",
-                "Health_Phase_1": 585,
-                "Health_Phase_2": 560
+                "Health_Phase_1": 690,
+                "Health_Phase_2": 850
             }
         },
 
@@ -272,7 +271,7 @@
             "Bullet_Speed": 2.4,
             "Move_Speed": 1,
         
-            "recollectionDescription": "Storm of evil, uses immensely powerful rain attacks and can spawn more nightmare clouds."
+            "recollectionDescription": "These dark thoughts start to cloud your judgement."
         
         },
 
@@ -1315,7 +1314,7 @@
         },
         
         "Boss 050": {
-            "Name": "Wall of Thoughts",
+            "Name": "The boss formerly known as Wall of Thoughts",
             "Recollection_Sprite": "reco_Wall_Of_Thoughts",
             "Health_Phase_1": 650,
             "Health_Phase_2": 650,
@@ -1804,7 +1803,7 @@
 
         "Boss 098": {
             "Name": "Spirit of Mischief",
-            "Recollection_Sprite": "reco_Spirit_of_Mischief",
+            "Recollection_Sprite": "reco_spirit_of_mischief_v2",
             "Health_Phase_1": 230,
             "Health_Phase_2": 180,
             "Defense_Phase_1": 0,
@@ -1818,21 +1817,21 @@
         
             "Champ 1": {
                 "Name": "Spirit of Maelstrom",
-                "Recollection_Sprite": "spr_Maelstrom_Spirit",
+                "Recollection_Sprite": "reco_spirit_of_mischief_v2",
                 "Health_Phase_1": 280,
                 "Health_Phase_2": 280,
                 "Palette_Index": 1
             },
             "Champ 2": { 
                 "Name":  "Spirit of Warping",
-                "Recollection_Sprite": "spr_Warping_Spirit",
+                "Recollection_Sprite": "reco_spirit_of_mischief_v2",
                 "Health_Phase_1": 280,
                 "Health_Phase_2": 220,
                 "Palette_Index": 2
             },
             "Champ 8": {
                 "Name": "Spirit of Chaos",
-                "Recollection_Sprite": "spr_Chaos_Spirit",
+                "Recollection_Sprite": "reco_spirit_of_mischief_v2",
                 "Health_Phase_1": 330,
                 "Health_Phase_2": 330,
                 "Bullet_Speed": 2.15,

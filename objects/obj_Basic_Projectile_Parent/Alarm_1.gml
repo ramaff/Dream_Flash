@@ -1,7 +1,10 @@
+//Print_DF(shot_stats)
 
 var extra_stats = shot_stats.Shot_Extra_Stats
 
-if extra_stats = false {
+//Print_DF(extra_stats)
+
+if array_length(extra_stats) <= 0 {
 	exit;	
 }
 
@@ -15,11 +18,11 @@ for(i = 0; i < extra_shots_amount; i++) {
 		var current_extra_stats = extra_stats[i]
 	    dir = 0;
 	    shot_stats.Shot_Hit_Again = 1;
-		if variable_struct_exists(current_extra_stats, "Burst_Power") {
+		/*if variable_struct_exists(current_extra_stats, "Burst_Power") {
 			shotburstpower = shot_stats.Shot_Power * current_extra_stats.Burst_Power;
 		} else {
 			shotburstpower = shot_stats.Shot_Power;
-		}
+		} */
 	    shot_stats.Shot_Impact_Type = 0;
 	    shot_stats.Shot_Impact_Power = 0;
 	
@@ -37,6 +40,7 @@ for(i = 0; i < extra_shots_amount; i++) {
 	
 	    repeat(ramt) {
 		    with instance_create(x + _xx,y + _yy,obj_Lesser_Soul_Shot) {
+				//Print_DF(current_extra_stats)
 				//shot_stats = scr_Setup_Default_Shot_Stats()
 				//shot_stats = scr_Struct_Merge(shot_stats, scr_Dupe_Struct(current_extra_stats), false);
 		        scr_Duplicate_Shot_Stats(current_extra_stats);
@@ -46,7 +50,7 @@ for(i = 0; i < extra_shots_amount; i++) {
 				if variable_struct_exists(current_extra_stats, "Shot_Extra_Stats") {
 					shot_stats.Shot_Extra_Stats = current_extra_stats.Shot_Extra_Stats
 				} else {
-					shot_stats.Shot_Extra_Stats = false	
+					shot_stats.Shot_Extra_Stats = []	
 				}
 				
 				//shot_stats = scr_Setup_Default_Shot_Stats();

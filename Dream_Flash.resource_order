@@ -164,6 +164,7 @@
     {"name":"spr_White_Background","order":1,"path":"sprites/spr_White_Background/spr_White_Background.yy",},
     {"name":"spr_Tomato_Shot","order":37,"path":"sprites/spr_Tomato_Shot/spr_Tomato_Shot.yy",},
     {"name":"scr_Modify_Current_Weapon_Stats","order":2,"path":"scripts/scr_Modify_Current_Weapon_Stats/scr_Modify_Current_Weapon_Stats.yy",},
+    {"name":"spr_Lightning_Beam_Start","order":4,"path":"sprites/spr_Lightning_Beam_Start/spr_Lightning_Beam_Start.yy",},
     {"name":"reco_The_Veil","order":18,"path":"sprites/reco_The_Veil/reco_The_Veil.yy",},
     {"name":"obj_Soap_Pool","order":3,"path":"objects/obj_Soap_Pool/obj_Soap_Pool.yy",},
     {"name":"scr_D03","order":1,"path":"scripts/scr_D03/scr_D03.yy",},

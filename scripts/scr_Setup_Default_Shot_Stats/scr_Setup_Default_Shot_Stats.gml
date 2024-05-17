@@ -8,7 +8,7 @@ function scr_Setup_Default_Shot_Stats(){
 		Weapon_Number: 0,
 		Shot_Accuracy: 15,
 		Shot_Spread: 0,
-		Shot_Extra_Stats: false,
+		Shot_Extra_Stats: [],
 		Shot_Burst_Stats: false,
 		Shot_Air_Burst_Stats: false,
 		Shot_Lobbing: false,

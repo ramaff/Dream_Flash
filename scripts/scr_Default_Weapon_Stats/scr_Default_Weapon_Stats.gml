@@ -242,7 +242,7 @@ function scr_Default_Weapon_Stats() {
 	Shot_Extra = false;
 	Shot_Burst_Stats = false;
 	Shot_Air_Burst_Stats = false;
-	Shot_Extra_Stats = false;
+	Shot_Extra_Stats = [];
 	Shot_Angle_Relative = 0; 
 	*/
 

@@ -315,7 +315,7 @@ if active_attack_delay <= 0 and pattern_cooldown <= 0 and pattern_count > 0 {
 						bulletpower = 0;
 							
 						if _count = 0 {
-							sprite_index = spr_Lightning_Beam_Start
+							sprite_index = spr_Lightning_Beam_Start;
 						}
 						if _count = 16 {
 							sprite_index = spr_Lightning_Beam_Tail	
