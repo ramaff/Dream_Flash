@@ -240,7 +240,7 @@ function scr_Boss_Choose(roomNum, exclude, difficultyAdd = 0) {
 
 	if bossform = 7.1 // Storm Cloud
 	{
-	    bosstype = obj_Storm_Cloud;
+	    bosstype = obj_wall_of_thoughts_v2;
 	    difficulty = 8;
 	    global.champ = choose(0,1,2);
 	}
@@ -547,7 +547,7 @@ function scr_Boss_Choose(roomNum, exclude, difficultyAdd = 0) {
 	}
 	if bossform = 50.1 // Wall of Thoughts
 	{
-	    bosstype = obj_Wall_Of_Thoughts;
+	    bosstype = obj_wall_of_thoughts_v2;
 	    difficulty = 8;
 	    global.champ = choose(0);
 	}
