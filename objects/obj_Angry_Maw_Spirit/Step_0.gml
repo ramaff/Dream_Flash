@@ -9,6 +9,8 @@ scr_Boss_Height_Bob(30, 1, 0);
 // Make boss shape wobble:
 scr_Boss_Wobble("Horizontal", 0.3, 1, 0);
 
+//speed = speed * 0.99;
+
 //////////////////////////////////////////////////////////////////////////////////////////
 /////////////// Active Attack Prep
 //////////////////////////////////////////////////////////////////////////////////////////
@@ -19,12 +21,9 @@ if active_attack_delay <= 0 and active_attack_cooldown <= 0 and active_attack_du
 	active_attack = choose(1);
 	
     if active_attack = 1 {
-		// Setup how many attacks per boss move, delay, etc
-		scr_Boss_Attack_Time_Setup_v2(1, 40, 1, 180, 180, 30);
+		scr_Boss_Attack_Time_Setup_v2(90, 30, 1, 30, 30, 10);
 		
-		// Can set up the initial pattern direction
-		// patternDirection = scr_Soul_Point();
-		// patternDirection = random(360;
+		scr_Boss_Dash_Setup_v2(scr_Soul_Point() - 90 + random(180), 0, 1.75 * bossmovespeed);
     }
 }
 
@@ -38,17 +37,19 @@ scr_Default_Attack_Settings();
 if active_attack_delay <= 0 and pattern_cooldown <= 0 and pattern_count > 0 {
    
     if active_attack = 1 {
-		scr_Boss_Stretch("Vertical", 0.6)
-
-		bullet_direction = scr_Boss_Bullet_Direction_Formula(scr_Soul_Point(), 90)
-		bullet_speed = bossbulletspeed * 1.75;
-		bullet_count = 5;
-		bullet_spread = 15;
+		scr_Boss_Dash_Movement_v2(20, 20);
 		
-		scr_Boss_Shoot();	
-	
-		// If you gotta change the pattern aim direction
-	    // bossPatternDirection += 0;
+		speed = dash_speed;
+        direction = dash_direction;
+		
+		if pattern_count = 1 {
+			bullet_direction = scr_Boss_Bullet_Direction_Formula(direction, 10)
+			bullet_count = 2;
+			bullet_spread = 180;
+		
+			scr_Boss_Shoot();	
+		}
+		
 	}
 	
 	// Maybe I should put this into a script
@@ -67,17 +68,17 @@ if active_attack_duration <= 0 {
 /// Boss Sprite Code
 
 // Go back to normal default size
-scr_Boss_Size_Lerp(0.15);
+scr_Boss_Size_Lerp_Dir(0.15, true);
 
 // Handles boss attack sprite animation
 if active_attack != 0 {
 	var _hold_frame = 1;
-	scr_Boss_Attack_Sprite_v2(spr_green_spirit_shoot, _hold_frame, 2, 2, 10);
+	scr_Boss_Attack_Sprite_v2(spr_red_spirit_chomp, _hold_frame, 2, 2, 10);
 	if image_index = _hold_frame {
 		scr_Boss_Wobble("Horizontal", 2, 0.25, 0)	
 	}
 } else {
-	sprite_index = spr_green_spirit;
+	sprite_index = spr_red_spirit;
 }
 
 // So that the boss hurts soul on collision
