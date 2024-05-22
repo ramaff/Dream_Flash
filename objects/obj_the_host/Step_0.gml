@@ -35,8 +35,8 @@ if instance_exists(obj_Chasing_Circle_Spirit) {
 		chasing_circle_y = other.chasing_circle_y
 		var _xx = chasing_circle_x + lengthdir_x(_circle_size, other.chasing_circle_angle)
 		var _yy = chasing_circle_y + lengthdir_y(_circle_size, other.chasing_circle_angle)
-		x = lerp(x, _xx, 0.03)
-		y = lerp(y, _yy, 0.03)
+		x = lerp(x, _xx, 0.015)
+		y = lerp(y, _yy, 0.015)
 		other.chasing_circle_angle += 360 / _circle_count;
 	}
 } else {
@@ -65,7 +65,13 @@ if instance_exists(obj_Guardian_Circle_Spirit) {
 if active_attack_delay <= 0 and active_attack_cooldown <= 0 and active_attack_duration <= 0 {
     
 	// Pick a random attack to do
-	active_attack = choose(2, 3, 4);
+	active_attack = choose(2, 4);
+	if champ = 1 {
+		active_attack = choose(3, 5);	
+	}
+	if champ = 2 {
+		active_attack = choose(6, 7);
+	}
 	if scr_Minion_Count(16) {
 		active_attack = 1;	
 	}
@@ -78,32 +84,59 @@ if active_attack_delay <= 0 and active_attack_cooldown <= 0 and active_attack_du
 		scr_Boss_Jump_Setup_v2(0, 6 * bossmovespeed, x, y);
 		//scr_Boss_Dash_Setup_v2(scr_Soul_Point(), 0, 7 * bossmovespeed);
     }
-	// Minion Spawn Example
+	// Dark Blue Circle
 	if active_attack = 2 {
 		// Setup how many attacks per boss move, delay, etc
-		scr_Boss_Attack_Time_Setup_v2(8, 50, 5, 150, 60, 10);
+		scr_Boss_Attack_Time_Setup_v2(8, 60, 10, 150, 60, 10);
 		
 		// Can set up the initial pattern direction
 		// patternDirection = scr_Soul_Point();
 		// patternDirection = random(360;
     }
-	// Minion Spawn Example
+	// Green Guardian Circle
 	if active_attack = 3 {
 		// Setup how many attacks per boss move, delay, etc
-		scr_Boss_Attack_Time_Setup_v2(5, 50, 5, 150, 60, 10);
+		scr_Boss_Attack_Time_Setup_v2(5, 60, 10, 150, 60, 10);
 		
 		// Can set up the initial pattern direction
 		// patternDirection = scr_Soul_Point();
 		// patternDirection = random(360;
     }
-	// Minion Spawn Example
+	// Spirit Maelstrom
 	if active_attack = 4 {
 		// Setup how many attacks per boss move, delay, etc
-		scr_Boss_Attack_Time_Setup_v2(9, 50, 10, 240, 60, 10);
+		scr_Boss_Attack_Time_Setup_v2(9, 60, 10, 240, 60, 10);
 		
 		// Can set up the initial pattern direction
 		// patternDirection = scr_Soul_Point();
 		patternDirection = random(360);
+    }
+	// Pink Range Dashers
+	if active_attack = 5 {
+		// Setup how many attacks per boss move, delay, etc
+		scr_Boss_Attack_Time_Setup_v2(8, 60, 10, 150, 60, 10);
+		
+		// Can set up the initial pattern direction
+		// patternDirection = scr_Soul_Point();
+		// patternDirection = random(360;
+    }
+	// Purple Warpers
+	if active_attack = 6 {
+		// Setup how many attacks per boss move, delay, etc
+		scr_Boss_Attack_Time_Setup_v2(8, 60, 10, 150, 60, 10);
+		
+		// Can set up the initial pattern direction
+		// patternDirection = scr_Soul_Point();
+		// patternDirection = random(360;
+    }
+	// Orange Sweepers
+	if active_attack = 7 {
+		// Setup how many attacks per boss move, delay, etc
+		scr_Boss_Attack_Time_Setup_v2(8, 60, 10, 150, 60, 10);
+		
+		// Can set up the initial pattern direction
+		// patternDirection = scr_Soul_Point();
+		// patternDirection = random(360;
     }
 }
 
@@ -116,6 +149,7 @@ scr_Default_Attack_Settings();
 // If its time to attack, attack
 if active_attack_delay <= 0 and pattern_cooldown <= 0 and pattern_count > 0 {
    
+	minion_yy = -50;
 	
 	if active_attack = 1 {
 		scr_Boss_Dash_Movement_v2(30,30);
@@ -126,9 +160,12 @@ if active_attack_delay <= 0 and pattern_cooldown <= 0 and pattern_count > 0 {
 	
 	if active_attack = 2 {
 	
+		scr_Boss_Stretch("Vertical", 0.5)
+	
 		minion_count = 1;
 		minion_type = obj_Chasing_Circle_Spirit;
 		minion_health = bossmaxhealth / 15;
+		
 		//minion_spawn_animation = spr_pocket_minion_spawn
 		//minion_yy = boss_height;
 
@@ -137,7 +174,8 @@ if active_attack_delay <= 0 and pattern_cooldown <= 0 and pattern_count > 0 {
 	}
 	
 	if active_attack = 3 {
-	
+		scr_Boss_Stretch("Vertical", 0.5)
+		
 		minion_count = 1;
 		minion_type = obj_Guardian_Circle_Spirit;
 		minion_health = bossmaxhealth / 8;
@@ -149,6 +187,7 @@ if active_attack_delay <= 0 and pattern_cooldown <= 0 and pattern_count > 0 {
 	}
 	
 	if active_attack = 4 {
+		scr_Boss_Stretch("Vertical", 0.25)
 	
 		minion_count = 1;
 		minion_type = obj_Mael_Maw_Spirit;
@@ -194,8 +233,8 @@ if active_attack = 1 {
 		scr_Boss_Wobble("Horizontal", 2, 0.4, 0)	
 	}
 } else if active_attack != 0 {
-	var _hold_frame = 1;
-	scr_Boss_Attack_Sprite_v2(spr_the_host, _hold_frame, 2, 2, 20);
+	var _hold_frame = 3;
+	scr_Boss_Attack_Sprite_v2(spr_the_host_spawn, _hold_frame, 4, 4, 20);
 	if image_index = _hold_frame {
 		scr_Boss_Wobble("Horizontal", 2, 0.4, 0)	
 	}

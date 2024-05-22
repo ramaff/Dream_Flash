@@ -21,9 +21,9 @@ if active_attack_delay <= 0 and active_attack_cooldown <= 0 and active_attack_du
 	active_attack = choose(1);
 	
     if active_attack = 1 {
-		scr_Boss_Attack_Time_Setup_v2(90, 30, 1, 30, 30, 10);
+		scr_Boss_Attack_Time_Setup_v2(120, 30, 1, 30, 30, 10);
 		
-		scr_Boss_Dash_Setup_v2(scr_Soul_Point() - 90 + random(180), 0, 1.75 * bossmovespeed);
+		scr_Boss_Dash_Setup_v2(scr_Soul_Point() - 10 + random(20), 0, 1.75 * bossmovespeed);
     }
 }
 
@@ -44,8 +44,8 @@ if active_attack_delay <= 0 and pattern_cooldown <= 0 and pattern_count > 0 {
 		
 		if pattern_count = 1 {
 			bullet_direction = scr_Boss_Bullet_Direction_Formula(direction, 10)
-			bullet_count = 2;
-			bullet_spread = 180;
+			bullet_count = 4;
+			bullet_spread = 90;
 		
 			scr_Boss_Shoot();	
 		}
