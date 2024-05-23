@@ -88,11 +88,7 @@ function scr_Boss_Choose(roomNum, exclude, difficultyAdd = 0) {
 		}
 	}
 	if global.currentchapter = 3 {
-	    bossform = choose(2,4,7,11,15,22,26,28,29,30,31,33,39,41,45,56,65);
-		
-		if bossform = 50 and scr_Chance(2) {
-			bossform = choose(2,4,7,11,15,22,26,28,29,30,31,33,39,41,45,56,65);
-		}
+	    bossform = choose(2,4,7,11,15,22,26,28,29,30,31,33,39,41,45,50,56,65);
 		
 		sboss = scr_Chance(15);
 		if sboss = true {
@@ -238,7 +234,7 @@ function scr_Boss_Choose(roomNum, exclude, difficultyAdd = 0) {
 	    global.champ = 0 + irandom(2);
 	}
 
-	if bossform = 7.1 // Storm Cloud
+	if bossform = 7.1 // Wall of Thoughts
 	{
 	    bosstype = obj_wall_of_thoughts_v2;
 	    difficulty = 8;
@@ -545,11 +541,11 @@ function scr_Boss_Choose(roomNum, exclude, difficultyAdd = 0) {
 	    difficulty = 16;
 	    global.champ = choose(0);
 	}
-	if bossform = 50.1 // Wall of Thoughts
+	if bossform = 50.1 // The Host
 	{
-	    bosstype = obj_wall_of_thoughts_v2;
-	    difficulty = 8;
-	    global.champ = choose(0);
+	    bosstype = obj_the_host;
+	    difficulty = 9;
+	    global.champ = choose(1);
 	}
 	if bossform = 56.1 // Dream Crawler
 	{

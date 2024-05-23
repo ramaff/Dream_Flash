@@ -52,8 +52,8 @@ if instance_exists(obj_Guardian_Circle_Spirit) {
 	with(obj_Guardian_Circle_Spirit) {
 		var _xx = other.x + lengthdir_x(_circle_size, _guardian_circle_angle)
 		var _yy = other.y + lengthdir_y(_circle_size, _guardian_circle_angle)
-		x = lerp(x, _xx, 0.03)
-		y = lerp(y, _yy, 0.03)
+		x = lerp(x, _xx, 0.02)
+		y = lerp(y, _yy, 0.02)
 		_guardian_circle_angle += 15
 	}
 }
@@ -65,14 +65,11 @@ if instance_exists(obj_Guardian_Circle_Spirit) {
 if active_attack_delay <= 0 and active_attack_cooldown <= 0 and active_attack_duration <= 0 {
     
 	// Pick a random attack to do
-	active_attack = choose(2, 4);
+	active_attack = choose(2, 4, 5);
 	if champ = 1 {
-		active_attack = choose(3, 5);	
+		active_attack = choose(3, 4, 6);	
 	}
-	if champ = 2 {
-		active_attack = choose(6, 7);
-	}
-	if scr_Minion_Count(16) {
+	if scr_Minion_Count(12) {
 		active_attack = 1;	
 	}
 	
@@ -114,7 +111,7 @@ if active_attack_delay <= 0 and active_attack_cooldown <= 0 and active_attack_du
 	// Pink Range Dashers
 	if active_attack = 5 {
 		// Setup how many attacks per boss move, delay, etc
-		scr_Boss_Attack_Time_Setup_v2(8, 60, 10, 150, 60, 10);
+		scr_Boss_Attack_Time_Setup_v2(6, 60, 10, 150, 60, 10);
 		
 		// Can set up the initial pattern direction
 		// patternDirection = scr_Soul_Point();
@@ -123,7 +120,7 @@ if active_attack_delay <= 0 and active_attack_cooldown <= 0 and active_attack_du
 	// Purple Warpers
 	if active_attack = 6 {
 		// Setup how many attacks per boss move, delay, etc
-		scr_Boss_Attack_Time_Setup_v2(8, 60, 10, 150, 60, 10);
+		scr_Boss_Attack_Time_Setup_v2(5, 60, 10, 150, 60, 10);
 		
 		// Can set up the initial pattern direction
 		// patternDirection = scr_Soul_Point();
@@ -165,9 +162,6 @@ if active_attack_delay <= 0 and pattern_cooldown <= 0 and pattern_count > 0 {
 		minion_count = 1;
 		minion_type = obj_Chasing_Circle_Spirit;
 		minion_health = bossmaxhealth / 15;
-		
-		//minion_spawn_animation = spr_pocket_minion_spawn
-		//minion_yy = boss_height;
 
 		scr_Minion_Spawn();
 	
@@ -179,8 +173,6 @@ if active_attack_delay <= 0 and pattern_cooldown <= 0 and pattern_count > 0 {
 		minion_count = 1;
 		minion_type = obj_Guardian_Circle_Spirit;
 		minion_health = bossmaxhealth / 8;
-		//minion_spawn_animation = spr_pocket_minion_spawn
-		//minion_yy = boss_height;
 
 		scr_Minion_Spawn();
 	
@@ -204,6 +196,32 @@ if active_attack_delay <= 0 and pattern_cooldown <= 0 and pattern_count > 0 {
 		scr_Minion_Spawn()
 		
 		pattern_direction += 20;
+	
+	}
+	
+	if active_attack = 5 {
+	
+		scr_Boss_Stretch("Vertical", 0.5)
+	
+		minion_count = 1;
+		minion_type = obj_Wave_Dashing_Spirit;
+		minion_health = bossmaxhealth / 12;
+
+		scr_Minion_Spawn();
+	
+	}
+	
+	if active_attack = 6 {
+		scr_Boss_Stretch("Vertical", 0.5)
+		
+		minion_count = 1;
+		minion_type = obj_Warping_Spirit;
+		minion_health = bossmaxhealth / 12;
+		
+		minion_speed = bossmovespeed * (0.5 + random(1));
+		minion_dir = random(360);
+
+		scr_Minion_Spawn();
 	
 	}
 	
