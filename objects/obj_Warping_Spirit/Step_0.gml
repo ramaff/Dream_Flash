@@ -3,6 +3,8 @@
 // Mandatory:
 scr_Boss_Step(2);
 
+boss_height = max(40, boss_height);
+
 // If boss is floating in air, can make it bob up and down:
 scr_Boss_Height_Bob(30, 1, 0);
 
@@ -44,15 +46,11 @@ if active_attack_delay <= 0 and pattern_cooldown <= 0 and pattern_count > 0 {
 		scr_Boss_Stretch("Vertical", 0.6)
 		
 		bullet_direction = scr_Boss_Bullet_Direction_Formula(scr_Soul_Point(chasing_circle_x, chasing_circle_y), 30)
-		bullet_speed = bossbulletspeed * 1.75;
+		bullet_speed = bossbulletspeed * 1.5;
 		bullet_type = obj_Spin_Quick_Bullet;
 		
 		bullet_count = 4;
 		bullet_spread = 90;
-		
-		scr_Boss_Shoot();
-		
-		bullet_speed -= bossbulletspeed * 0.5;
 		
 		scr_Boss_Shoot();
 	

@@ -3,7 +3,7 @@
 // Mandatory:
 scr_Boss_Step(2);
 
-if stored_hp > bosshealth + 50 {
+if stored_hp > bosshealth + 60 {
 	if currentphase = 2 {
 		
 		scr_Default_Attack_Settings();
@@ -69,31 +69,26 @@ if active_attack_delay <= 0 and active_attack_cooldown <= 0 and active_attack_du
 	if champ = 1 {
 		active_attack = choose(3, 4, 6);	
 	}
-	if scr_Minion_Count(12) {
+	if scr_Minion_Count(10) {
 		active_attack = 1;	
 	}
 	
 	// Hop leap attack setup example
 	if active_attack = 1 {
 		// 
-		scr_Boss_Attack_Time_Setup_v2(120, 50, 1, 30, 30, 50);
+		scr_Boss_Attack_Time_Setup_v2(80, 50, 1, 30, 30, 50);
 		
-		scr_Boss_Jump_Setup_v2(0, 6 * bossmovespeed, x, y);
-		//scr_Boss_Dash_Setup_v2(scr_Soul_Point(), 0, 7 * bossmovespeed);
+		scr_Boss_Dash_Setup_v2(scr_Soul_Point() - 270 + random(180), 0, 2 * bossmovespeed);
     }
 	// Dark Blue Circle
 	if active_attack = 2 {
 		// Setup how many attacks per boss move, delay, etc
-		scr_Boss_Attack_Time_Setup_v2(8, 60, 10, 150, 60, 10);
-		
-		// Can set up the initial pattern direction
-		// patternDirection = scr_Soul_Point();
-		// patternDirection = random(360;
+		scr_Boss_Attack_Time_Setup_v2(6, 60, 10, 180, 60, 10);
     }
 	// Green Guardian Circle
 	if active_attack = 3 {
 		// Setup how many attacks per boss move, delay, etc
-		scr_Boss_Attack_Time_Setup_v2(5, 60, 10, 150, 60, 10);
+		scr_Boss_Attack_Time_Setup_v2(4, 60, 10, 150, 60, 10);
 		
 		// Can set up the initial pattern direction
 		// patternDirection = scr_Soul_Point();
@@ -111,7 +106,7 @@ if active_attack_delay <= 0 and active_attack_cooldown <= 0 and active_attack_du
 	// Pink Range Dashers
 	if active_attack = 5 {
 		// Setup how many attacks per boss move, delay, etc
-		scr_Boss_Attack_Time_Setup_v2(6, 60, 10, 150, 60, 10);
+		scr_Boss_Attack_Time_Setup_v2(4, 60, 10, 150, 60, 10);
 		
 		// Can set up the initial pattern direction
 		// patternDirection = scr_Soul_Point();
@@ -120,7 +115,7 @@ if active_attack_delay <= 0 and active_attack_cooldown <= 0 and active_attack_du
 	// Purple Warpers
 	if active_attack = 6 {
 		// Setup how many attacks per boss move, delay, etc
-		scr_Boss_Attack_Time_Setup_v2(5, 60, 10, 150, 60, 10);
+		scr_Boss_Attack_Time_Setup_v2(4, 60, 10, 150, 60, 10);
 		
 		// Can set up the initial pattern direction
 		// patternDirection = scr_Soul_Point();
@@ -151,6 +146,10 @@ if active_attack_delay <= 0 and pattern_cooldown <= 0 and pattern_count > 0 {
 	if active_attack = 1 {
 		scr_Boss_Dash_Movement_v2(30,30);
 		
+		if point_distance(x, y, room_width / 2, room_height / 2) > 300 {
+			dash_direction = scr_Angle_Converge(dash_direction, point_direction(x, y, room_width / 2, room_height / 2), 5);
+		}
+		
 		speed = dash_speed;
         direction = dash_direction;
 	}
@@ -161,7 +160,7 @@ if active_attack_delay <= 0 and pattern_cooldown <= 0 and pattern_count > 0 {
 	
 		minion_count = 1;
 		minion_type = obj_Chasing_Circle_Spirit;
-		minion_health = bossmaxhealth / 15;
+		minion_health = bossmaxhealth / 10;
 
 		scr_Minion_Spawn();
 	
@@ -172,7 +171,7 @@ if active_attack_delay <= 0 and pattern_cooldown <= 0 and pattern_count > 0 {
 		
 		minion_count = 1;
 		minion_type = obj_Guardian_Circle_Spirit;
-		minion_health = bossmaxhealth / 8;
+		minion_health = bossmaxhealth / 7;
 
 		scr_Minion_Spawn();
 	
@@ -205,7 +204,7 @@ if active_attack_delay <= 0 and pattern_cooldown <= 0 and pattern_count > 0 {
 	
 		minion_count = 1;
 		minion_type = obj_Wave_Dashing_Spirit;
-		minion_health = bossmaxhealth / 12;
+		minion_health = bossmaxhealth / 10;
 
 		scr_Minion_Spawn();
 	
@@ -216,7 +215,7 @@ if active_attack_delay <= 0 and pattern_cooldown <= 0 and pattern_count > 0 {
 		
 		minion_count = 1;
 		minion_type = obj_Warping_Spirit;
-		minion_health = bossmaxhealth / 12;
+		minion_health = bossmaxhealth / 10;
 		
 		minion_speed = bossmovespeed * (0.5 + random(1));
 		minion_dir = random(360);
@@ -241,7 +240,7 @@ if active_attack_duration <= 0 {
 /// Boss Sprite Code
 
 // Go back to normal default size
-scr_Boss_Size_Lerp_Dir(0.15, true);
+scr_Boss_Size_Lerp_Dir(0.15, false);
 
 // Handles boss attack sprite animation
 if active_attack = 1 {

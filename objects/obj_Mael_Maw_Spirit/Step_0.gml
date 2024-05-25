@@ -3,6 +3,8 @@
 // Mandatory:
 scr_Boss_Step(2);
 
+boss_height = max(40, boss_height);
+
 // If boss is floating in air, can make it bob up and down:
 scr_Boss_Height_Bob(30, 1, 0);
 
@@ -21,7 +23,7 @@ if active_attack_delay <= 0 and active_attack_cooldown <= 0 and active_attack_du
 	active_attack = choose(1);
 	
     if active_attack = 1 {
-		scr_Boss_Attack_Time_Setup_v2(80, 30, 1, 30, 30, 10);
+		scr_Boss_Attack_Time_Setup_v2(80, 30, 1, 30, 30, 30);
 		
 		scr_Boss_Dash_Setup_v2(scr_Soul_Point() - 45 + random(90), 0, 1.75 * bossmovespeed);
     }

@@ -243,6 +243,7 @@
             "Boss_Danger": 8,
             "Bullet_Speed": 2.3,
             "Move_Speed": 0.75,
+            "Knock_Defense": 50,
         
             "recollectionDescription": "Huge formation of thoughts that attacks the soul with painful memories.",
         
@@ -1314,17 +1315,24 @@
         },
         
         "Boss 050": {
-            "Name": "The boss formerly known as Wall of Thoughts",
-            "Recollection_Sprite": "reco_Wall_Of_Thoughts",
-            "Health_Phase_1": 650,
+            "Name": "The Host",
+            "Recollection_Sprite": "reco_the_host",
+            "Health_Phase_1": 500,
             "Health_Phase_2": 650,
-            "Defense_Phase_1": 0,
-            "Defense_Phase_2": 0,
-            "Boss_Danger": 8,
+            "Defense_Phase_1": 1,
+            "Defense_Phase_2": 1,
+            "Boss_Danger": 9,
             "Bullet_Speed": 3,
-            "Move_Speed": 0,
-            "Knock_Defense": 999,
-            "recollectionDescription": "Huge formation of thoughts that attacks the soul with painful rain memories."
+            "Move_Speed": 4,
+            "recollectionDescription": "Head possessed with an overwhelming number of spirits.",
+            "Palette": "spr_the_host_palette",
+            "Palette_Index": 0,
+            "Champ 1": {
+                "Name": "Guardian Circle Host",
+                "Recollection_Sprite": "reco_the_host",
+                "Health_Phase_1": 590,
+                "Health_Phase_2": 750
+            }
         },
 
         "Boss 051": {

@@ -545,7 +545,7 @@ function scr_Boss_Choose(roomNum, exclude, difficultyAdd = 0) {
 	{
 	    bosstype = obj_the_host;
 	    difficulty = 9;
-	    global.champ = choose(1);
+	    global.champ = choose(0, 1);
 	}
 	if bossform = 56.1 // Dream Crawler
 	{

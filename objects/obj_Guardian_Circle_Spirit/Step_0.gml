@@ -3,6 +3,8 @@
 // Mandatory:
 scr_Boss_Step(2);
 
+boss_height = max(40, boss_height);
+
 // If boss is floating in air, can make it bob up and down:
 scr_Boss_Height_Bob(30, 1, 0);
 
