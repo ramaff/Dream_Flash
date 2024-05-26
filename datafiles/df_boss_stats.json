@@ -223,7 +223,7 @@
                 "Palette_Index": 2
             },
             "Champ 2": { 
-                "Name":  "Thunder Storm Cloud",
+                "Name":  "Thunder Cloud",
                 "Recollection_Sprite": "reco_Infatuation_Cloud",
                 "Health_Phase_1": 420,
                 "Health_Phase_2": 450,
@@ -235,7 +235,7 @@
 
         "Boss 007": {
             "Name": "Wall of Thoughts",
-            "Recollection_Sprite": "reco_Wall_Of_Thoughts",
+            "Recollection_Sprite": "reco_wall_of_thoughts_v2",
             "Health_Phase_1": 600,
             "Health_Phase_2": 750,
             "Defense_Phase_1": 0,
@@ -244,20 +244,23 @@
             "Bullet_Speed": 2.3,
             "Move_Speed": 0.75,
             "Knock_Defense": 50,
+            "Palette": "spr_wall_of_thoughts_v2_palette",
         
             "recollectionDescription": "Huge formation of thoughts that attacks the soul with painful memories.",
         
             "Champ 1": {
-                "Name": "Flood Cloud",
-                "Recollection_Sprite": "spr_Flood_Cloud",
+                "Name": "Flood Wall",
+                "Recollection_Sprite": "reco_wall_of_thoughts_v2",
                 "Health_Phase_1": 690,
-                "Health_Phase_2": 850
+                "Health_Phase_2": 850,
+                "Palette_Index": 1
             },
             "Champ 2": { 
-                "Name":  "Thunder Cloud",
-                "Recollection_Sprite": "spr_Thunder_Cloud",
+                "Name":  "Thunder Storm Wall",
+                "Recollection_Sprite": "reco_wall_of_thoughts_v2",
                 "Health_Phase_1": 690,
-                "Health_Phase_2": 850
+                "Health_Phase_2": 850,
+                "Palette_Index": 2
             }
         },
 
@@ -1437,7 +1440,7 @@
         "Boss 058": {
             "Name": "Sleep Walker",
             "Recollection_Sprite": "reco_sleep_walker",
-            "Health_Phase_1": 150,
+            "Health_Phase_1": 200,
             "Health_Phase_2": 250,
             "Defense_Phase_1": 0,
             "Defense_Phase_2": 0,

@@ -3547,6 +3547,7 @@
     {"id":{"name":"scr_Boss_Item_Field","path":"scripts/scr_Boss_Item_Field/scr_Boss_Item_Field.yy",},},
     {"id":{"name":"scr_D11","path":"scripts/scr_D11/scr_D11.yy",},},
     {"id":{"name":"spr_sleep_hound_p2_bark","path":"sprites/spr_sleep_hound_p2_bark/spr_sleep_hound_p2_bark.yy",},},
+    {"id":{"name":"reco_wall_of_thoughts_v2","path":"sprites/reco_wall_of_thoughts_v2/reco_wall_of_thoughts_v2.yy",},},
     {"id":{"name":"scr_D12_Gust","path":"scripts/scr_D12_Gust/scr_D12_Gust.yy",},},
     {"id":{"name":"scr_Boss_Phase_Transition_Animation","path":"scripts/scr_Boss_Phase_Transition_Animation/scr_Boss_Phase_Transition_Animation.yy",},},
     {"id":{"name":"spr_Wrap_My_Head_Around_Art","path":"sprites/spr_Wrap_My_Head_Around_Art/spr_Wrap_My_Head_Around_Art.yy",},},

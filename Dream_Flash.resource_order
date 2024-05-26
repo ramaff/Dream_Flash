@@ -415,6 +415,7 @@
     {"name":"spr_Weapon_Recollection_Diagonal_XL","order":33,"path":"sprites/spr_Weapon_Recollection_Diagonal_XL/spr_Weapon_Recollection_Diagonal_XL.yy",},
     {"name":"obj_Wave_Homing_Bullet","order":1,"path":"objects/obj_Wave_Homing_Bullet/obj_Wave_Homing_Bullet.yy",},
     {"name":"spr_sleep_hound_p2_bark","order":4,"path":"sprites/spr_sleep_hound_p2_bark/spr_sleep_hound_p2_bark.yy",},
+    {"name":"reco_wall_of_thoughts_v2","order":71,"path":"sprites/reco_wall_of_thoughts_v2/reco_wall_of_thoughts_v2.yy",},
     {"name":"scr_Boss_Phase_Transition_Animation","order":1,"path":"scripts/scr_Boss_Phase_Transition_Animation/scr_Boss_Phase_Transition_Animation.yy",},
     {"name":"spr_Wrap_My_Head_Around_Art","order":1,"path":"sprites/spr_Wrap_My_Head_Around_Art/spr_Wrap_My_Head_Around_Art.yy",},
     {"name":"obj_mini_mischief_trail","order":24,"path":"objects/obj_mini_mischief_trail/obj_mini_mischief_trail.yy",},

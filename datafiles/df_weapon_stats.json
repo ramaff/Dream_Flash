@@ -482,7 +482,6 @@
         "Shot_Phasing": 1,
         "Shot_Sprite": "spr_New_Power_Whip",
         "Shot_Duplicate_Sprite": "spr_New_Power_Whip",
-        "Shot_Beam": 3,
         "Shot_Speed": 0,
         "Shot_Power": 27,
         "Shot_Knockback": 11,
