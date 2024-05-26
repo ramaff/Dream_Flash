@@ -84,7 +84,7 @@ if active_attack != 0 {
 		scr_Boss_Wobble("Horizontal", 2, 0.25, 0)	
 	}
 	if image_index = 5 {
-		var _coordinates = scr_Boss_Teleport_v2_Return(-128, 100)
+		var _coordinates = scr_Boss_Teleport_v2_Return(-128, 150)
 		x = _coordinates[0];
 		y = _coordinates[1];
 	}

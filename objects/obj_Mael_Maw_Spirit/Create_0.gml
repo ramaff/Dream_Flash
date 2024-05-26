@@ -15,6 +15,6 @@ scr_Boss_Height_Setup(50);
 chasing_circle_x = x;
 chasing_circle_y = y;
 
-alarm[0] = 330 + random(240);
+alarm[0] = 360 + random(300);
 
 active_attack_delay = 180;

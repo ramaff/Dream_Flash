@@ -17,7 +17,8 @@ if instance_exists(target) {
 }
 if instance_exists(hound) {
 	if currentphase = 2 {
-		hound.currentphase = 2;	
+		hound.currentphase = 2;
+		hound.bossdefense = hound.bossdefense2;
 	}
 	if hound.currentphase = 2 and speed > 1 {
 		weight = 1;

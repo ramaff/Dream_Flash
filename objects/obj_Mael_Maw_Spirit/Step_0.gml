@@ -70,6 +70,8 @@ if active_attack_duration <= 0 {
 
 /// Boss Sprite Code
 
+bossSize = scr_Expand_Then_Contract(alarm[0], bossSize)
+
 // Go back to normal default size
 scr_Boss_Size_Lerp_Dir(0.15, true);
 

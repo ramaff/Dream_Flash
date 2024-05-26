@@ -10,7 +10,7 @@ if stored_hp > bosshealth + 60 {
 	
 		minion_count = 1;
 		minion_type = obj_Angry_Maw_Spirit;
-		minion_health = bossmaxhealth / 8;
+		minion_health = bossmaxhealth / 15;
 		minion_dir = random(360);
 		minion_speed = bossbulletspeed * 1.25;
 

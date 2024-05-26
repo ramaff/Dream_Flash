@@ -14,7 +14,7 @@
   "For3D": false,
   "frames": [
     {"resourceType":"GMSpriteFrame","resourceVersion":"1.1","name":"66c9cc2d-040a-4bc2-8e0e-c364d021d3d3",},
-    {"resourceType":"GMSpriteFrame","resourceVersion":"1.1","name":"c3605600-113f-4c18-8a4f-f9bcf3b3de5f",},
+    {"resourceType":"GMSpriteFrame","resourceVersion":"1.1","name":"7b8bc242-a33c-4517-8287-7024712b0427",},
     {"resourceType":"GMSpriteFrame","resourceVersion":"1.1","name":"53d42f38-7da8-48d7-94e2-4f25ac32b3da",},
   ],
   "gridX": 0,
@@ -57,7 +57,7 @@
     "tracks": [
       {"resourceType":"GMSpriteFramesTrack","resourceVersion":"1.0","name":"frames","builtinName":0,"events":[],"inheritsTrackColour":true,"interpolation":1,"isCreationTrack":false,"keyframes":{"resourceType":"KeyframeStore<SpriteFrameKeyframe>","resourceVersion":"1.0","Keyframes":[
             {"resourceType":"Keyframe<SpriteFrameKeyframe>","resourceVersion":"1.0","Channels":{"0":{"resourceType":"SpriteFrameKeyframe","resourceVersion":"1.0","Id":{"name":"66c9cc2d-040a-4bc2-8e0e-c364d021d3d3","path":"sprites/spr_sleep_hound_p2_bark/spr_sleep_hound_p2_bark.yy",},},},"Disabled":false,"id":"20463cc0-5ea1-45aa-823c-b4b56268595c","IsCreationKey":false,"Key":0.0,"Length":1.0,"Stretch":false,},
-            {"resourceType":"Keyframe<SpriteFrameKeyframe>","resourceVersion":"1.0","Channels":{"0":{"resourceType":"SpriteFrameKeyframe","resourceVersion":"1.0","Id":{"name":"c3605600-113f-4c18-8a4f-f9bcf3b3de5f","path":"sprites/spr_sleep_hound_p2_bark/spr_sleep_hound_p2_bark.yy",},},},"Disabled":false,"id":"f5e78371-49d9-4ae1-bde8-e8961361b427","IsCreationKey":false,"Key":1.0,"Length":1.0,"Stretch":false,},
+            {"resourceType":"Keyframe<SpriteFrameKeyframe>","resourceVersion":"1.0","Channels":{"0":{"resourceType":"SpriteFrameKeyframe","resourceVersion":"1.0","Id":{"name":"7b8bc242-a33c-4517-8287-7024712b0427","path":"sprites/spr_sleep_hound_p2_bark/spr_sleep_hound_p2_bark.yy",},},},"Disabled":false,"id":"edbcdd88-e43f-4e60-88fd-fdbbe7533e18","IsCreationKey":false,"Key":1.0,"Length":1.0,"Stretch":false,},
             {"resourceType":"Keyframe<SpriteFrameKeyframe>","resourceVersion":"1.0","Channels":{"0":{"resourceType":"SpriteFrameKeyframe","resourceVersion":"1.0","Id":{"name":"53d42f38-7da8-48d7-94e2-4f25ac32b3da","path":"sprites/spr_sleep_hound_p2_bark/spr_sleep_hound_p2_bark.yy",},},},"Disabled":false,"id":"e6fd762a-c651-4fb8-b94b-89b2053d1af3","IsCreationKey":false,"Key":2.0,"Length":1.0,"Stretch":false,},
           ],},"modifiers":[],"spriteId":null,"trackColour":0,"tracks":[],"traits":0,},
     ],

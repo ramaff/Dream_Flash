@@ -1204,6 +1204,7 @@
     {"id":{"name":"old_Bounce_Eye","path":"sprites/old_Bounce_Eye/old_Bounce_Eye.yy",},},
     {"id":{"name":"spr_Crazy_Eyes_Palette","path":"sprites/spr_Crazy_Eyes_Palette/spr_Crazy_Eyes_Palette.yy",},},
     {"id":{"name":"spr_Reanimated","path":"sprites/spr_Reanimated/spr_Reanimated.yy",},},
+    {"id":{"name":"scr_Expand_Then_Contract","path":"scripts/scr_Expand_Then_Contract/scr_Expand_Then_Contract.yy",},},
     {"id":{"name":"obj_State_Trail_Front","path":"objects/obj_State_Trail_Front/obj_State_Trail_Front.yy",},},
     {"id":{"name":"scr_Boss_Bullet_Pull","path":"scripts/scr_Boss_Bullet_Pull/scr_Boss_Bullet_Pull.yy",},},
     {"id":{"name":"spr_Evil_Head","path":"sprites/spr_Evil_Head/spr_Evil_Head.yy",},},

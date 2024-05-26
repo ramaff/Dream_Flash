@@ -63,7 +63,7 @@ if active_attack_delay <= 0 and pattern_cooldown <= 0 and pattern_count > 0 {
 		
 		scr_Boss_Stretch("Vertical", 0.6)
 		
-		bullet_direction = scr_Boss_Bullet_Direction_Formula(scr_Soul_Point(chasing_circle_x, chasing_circle_y), 1)
+		bullet_direction = scr_Boss_Bullet_Direction_Formula(scr_Soul_Point(), 1)
 		bullet_speed = bossbulletspeed * 1.75;
 		bullet_type = obj_Wave_Bullet;
 		
