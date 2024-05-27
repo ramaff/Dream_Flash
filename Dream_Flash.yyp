@@ -1785,6 +1785,7 @@
     {"id":{"name":"spr_Dimensional_Puck","path":"sprites/spr_Dimensional_Puck/spr_Dimensional_Puck.yy",},},
     {"id":{"name":"spr_Knowledge_Ball","path":"sprites/spr_Knowledge_Ball/spr_Knowledge_Ball.yy",},},
     {"id":{"name":"spr_Echolocation_Shot","path":"sprites/spr_Echolocation_Shot/spr_Echolocation_Shot.yy",},},
+    {"id":{"name":"Medium_Flash_Boss_Room_Effects_Reference","path":"rooms/Medium_Flash_Boss_Room_Effects_Reference/Medium_Flash_Boss_Room_Effects_Reference.yy",},},
     {"id":{"name":"spr_Soaring_Echo","path":"sprites/spr_Soaring_Echo/spr_Soaring_Echo.yy",},},
     {"id":{"name":"spr_Arcane_Echo","path":"sprites/spr_Arcane_Echo/spr_Arcane_Echo.yy",},},
     {"id":{"name":"spr_Satellite_Bullet","path":"sprites/spr_Satellite_Bullet/spr_Satellite_Bullet.yy",},},
@@ -4682,6 +4683,7 @@
     {"roomId":{"name":"Small_Room","path":"rooms/Small_Room/Small_Room.yy",},},
     {"roomId":{"name":"Chamber_Room","path":"rooms/Chamber_Room/Chamber_Room.yy",},},
     {"roomId":{"name":"State_Room","path":"rooms/State_Room/State_Room.yy",},},
+    {"roomId":{"name":"Medium_Flash_Boss_Room_Effects_Reference","path":"rooms/Medium_Flash_Boss_Room_Effects_Reference/Medium_Flash_Boss_Room_Effects_Reference.yy",},},
   ],
   "templateType": null,
   "TextureGroups": [

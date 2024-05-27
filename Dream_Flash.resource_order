@@ -200,6 +200,7 @@
     {"name":"snd_Pick_Up_Item_Bad","order":3,"path":"sounds/snd_Pick_Up_Item_Bad/snd_Pick_Up_Item_Bad.yy",},
     {"name":"spr_Seething_Fire_Shot","order":39,"path":"sprites/spr_Seething_Fire_Shot/spr_Seething_Fire_Shot.yy",},
     {"name":"obj_Nightmare_Soul","order":8,"path":"objects/obj_Nightmare_Soul/obj_Nightmare_Soul.yy",},
+    {"name":"Medium_Flash_Boss_Room_Effects_Reference","order":1,"path":"rooms/Medium_Flash_Boss_Room_Effects_Reference/Medium_Flash_Boss_Room_Effects_Reference.yy",},
     {"name":"spr_walker_handling","order":6,"path":"sprites/spr_walker_handling/spr_walker_handling.yy",},
     {"name":"reco_Behemoth","order":17,"path":"sprites/reco_Behemoth/reco_Behemoth.yy",},
     {"name":"scr_Create_Lightning_Streak","order":14,"path":"scripts/scr_Create_Lightning_Streak/scr_Create_Lightning_Streak.yy",},

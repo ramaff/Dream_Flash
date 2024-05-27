@@ -144,6 +144,9 @@ if active_attack = 1 {
 			}
 			if hound.speed > 1 {
 				sprite_index = spr_walker_not_in_control
+				if image_index = 4 {
+					scr_Boss_Stretch("Horizontal", 0.4);
+				}
 			} else {
 				image_index = 0;	
 			}
