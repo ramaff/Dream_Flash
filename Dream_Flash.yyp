@@ -3337,6 +3337,7 @@
     {"id":{"name":"spr_High_Loathing_Spirit_Attack","path":"sprites/spr_High_Loathing_Spirit_Attack/spr_High_Loathing_Spirit_Attack.yy",},},
     {"id":{"name":"scr_Wall_Sweep_Path_Setup","path":"scripts/scr_Wall_Sweep_Path_Setup/scr_Wall_Sweep_Path_Setup.yy",},},
     {"id":{"name":"spr_Sandman_Phase_3_Shoot","path":"sprites/spr_Sandman_Phase_3_Shoot/spr_Sandman_Phase_3_Shoot.yy",},},
+    {"id":{"name":"spr_the_host_ko","path":"sprites/spr_the_host_ko/spr_the_host_ko.yy",},},
     {"id":{"name":"scr_Wall_Phase_Sometimes","path":"scripts/scr_Wall_Phase_Sometimes/scr_Wall_Phase_Sometimes.yy",},},
     {"id":{"name":"scr_Soul_Push_Pull","path":"scripts/scr_Soul_Push_Pull/scr_Soul_Push_Pull.yy",},},
     {"id":{"name":"scr_Soul_Push_Pull_Offset","path":"scripts/scr_Soul_Push_Pull_Offset/scr_Soul_Push_Pull_Offset.yy",},},
