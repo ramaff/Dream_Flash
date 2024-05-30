@@ -57,7 +57,7 @@
             {"resourceType":"Keyframe<SpriteFrameKeyframe>","resourceVersion":"1.0","Channels":{"0":{"resourceType":"SpriteFrameKeyframe","resourceVersion":"1.0","Id":{"name":"dbd56239-3e93-4df1-91f5-aacee8865894","path":"sprites/spr_Big_Lightning_Ball/spr_Big_Lightning_Ball.yy",},},},"Disabled":false,"id":"c0c5ccc0-8f99-425f-b94a-95706092f15f","IsCreationKey":false,"Key":0.0,"Length":1.0,"Stretch":false,},
           ],},"modifiers":[],"spriteId":null,"trackColour":0,"tracks":[],"traits":0,},
     ],
-    "visibleRange": {"x":0.0,"y":0.0,},
+    "visibleRange": null,
     "volume": 1.0,
     "xorigin": 57,
     "yorigin": 57,

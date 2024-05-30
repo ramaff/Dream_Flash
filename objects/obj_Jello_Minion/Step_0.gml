@@ -20,7 +20,7 @@ if active_attack_delay <= 0 and active_attack_cooldown <= 0 and active_attack_du
 	
     if active_attack = 1 {
 		// Setup how many attacks per boss move, delay, etc
-		scr_Boss_Attack_Time_Setup_v2(50, 30, 1, 30, 30, -10);
+		scr_Boss_Attack_Time_Setup_v2(50, 30, 1, 30, 30, 10);
 		
 		scr_Boss_Jump_Setup_v2(0, 7 * bossmovespeed, x, y);
 		
@@ -73,7 +73,7 @@ scr_Boss_Size_Lerp(0.15);
 // Handles boss attack sprite animation
 if active_attack != 0 {
 	var holdFrame = 1;
-	scr_Boss_Attack_Sprite_v2(spr_Slime_Minion_Hop, holdFrame, 2, 2, 20);
+	scr_Boss_Attack_Sprite_v2(spr_Slime_Minion_Hop, holdFrame, 2, 2, 10);
 	if image_index = holdFrame {
 		scr_Boss_Wobble("Horizontal", 2, 0.25, 0)	
 	}

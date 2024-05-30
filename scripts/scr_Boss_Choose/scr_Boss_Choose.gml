@@ -90,10 +90,6 @@ function scr_Boss_Choose(roomNum, exclude, difficultyAdd = 0) {
 	if global.currentchapter = 3 {
 	    bossform = choose(2,4,7,11,15,22,26,28,29,30,31,33,39,41,45,50,56,65);
 		
-		if bossform = 50 and scr_Chance(2) {
-			bossform = choose(2,4,7,11,15,22,26,28,29,30,31,33,39,41,45,56,65);
-		}
-		
 		sboss = scr_Chance(15);
 		if sboss = true {
 			bossform = choose(81,82,83,84,86,87,89,90);
@@ -238,9 +234,9 @@ function scr_Boss_Choose(roomNum, exclude, difficultyAdd = 0) {
 	    global.champ = 0 + irandom(2);
 	}
 
-	if bossform = 7.1 // Storm Cloud
+	if bossform = 7.1 // Wall of Thoughts
 	{
-	    bosstype = obj_Storm_Cloud;
+	    bosstype = obj_wall_of_thoughts_v2;
 	    difficulty = 8;
 	    global.champ = choose(0,1,2);
 	}
@@ -253,7 +249,7 @@ function scr_Boss_Choose(roomNum, exclude, difficultyAdd = 0) {
 
 	if bossform = 9.1 // Amorphous Jello
 	{
-	    bosstype = obj_Amorphous_Jello;
+	    bosstype = obj_amorphous_jello;
 	    difficulty = 1;
 	    global.champ = choose(0,1,2,8);
 		//global.champ = 0;
@@ -511,7 +507,7 @@ function scr_Boss_Choose(roomNum, exclude, difficultyAdd = 0) {
 	}
 	if bossform = 44.1 // Congaline
 	{
-	    bosstype = obj_Conga_Line;
+	    bosstype = obj_conga_line;
 	    difficulty = 2;
 	    global.champ = choose(0);
 	}
@@ -545,11 +541,11 @@ function scr_Boss_Choose(roomNum, exclude, difficultyAdd = 0) {
 	    difficulty = 16;
 	    global.champ = choose(0);
 	}
-	if bossform = 50.1 // Wall of Thoughts
+	if bossform = 50.1 // The Host
 	{
-	    bosstype = obj_Wall_Of_Thoughts;
-	    difficulty = 8;
-	    global.champ = choose(0);
+	    bosstype = obj_the_host;
+	    difficulty = 9;
+	    global.champ = choose(0, 1);
 	}
 	if bossform = 56.1 // Dream Crawler
 	{
@@ -647,10 +643,9 @@ function scr_Boss_Choose(roomNum, exclude, difficultyAdd = 0) {
 
 	if bossform = 98.1 // Spirit of Mischief 
 	{
-	    bosstype = obj_Spirit_of_Mischief;
+	    bosstype = obj_spirit_of_mischief_v2;
 	    difficulty = 2;
-	    global.champ = choose(0,1,2,8);
-		//global.champ = choose(1,2,8);
+		global.champ = choose(1,2,8);
 		/*
 		if roomNum = 2 {
 			global.champ = 1;	

@@ -41,15 +41,15 @@ if active_attack_delay <= 0 and active_attack_cooldown <= 0 and active_attack_du
 	// Flame Dance
     if active_attack = 1 {
 		// Setup how many attacks per boss move, delay, etc
-		scr_Boss_Attack_Time_Setup_v2(2, 60, 60, 120, 30, -10);
+		scr_Boss_Attack_Time_Setup_v2(2, 60, 60, 120, 30, 0);
 		if champ = 3 {
-			scr_Boss_Attack_Time_Setup_v2(3, 60, 60, 120, 30, -10);
+			scr_Boss_Attack_Time_Setup_v2(3, 60, 60, 120, 30, 0);
 		}
     }
 	// Sneeze Fire
 	if active_attack = 2 {
 		// 
-		scr_Boss_Attack_Time_Setup_v2(60, 70, 1, 30, 30, -10);
+		scr_Boss_Attack_Time_Setup_v2(60, 70, 1, 30, 30, 0);
 		
 		scr_Boss_Dash_Setup_v2(scr_Soul_Point(), 4.5 * bossmovespeed, 7.5 * bossmovespeed);
 		
@@ -230,7 +230,7 @@ if active_attack_delay <= 0 and pattern_cooldown <= 0 and pattern_count > 0 {
 		}
 		
 		if pattern_count <= 1 and pattern_repetition > 0 {
-			scr_Boss_Attack_Time_Setup_v2(60, 40, 1, 30, 30, -10);
+			scr_Boss_Attack_Time_Setup_v2(60, 40, 1, 30, 30, 10);
 			image_index = 5;
 		
 			scr_Boss_Dash_Setup_v2(scr_Soul_Point(), 4.5 * bossmovespeed, 7.5 * bossmovespeed);

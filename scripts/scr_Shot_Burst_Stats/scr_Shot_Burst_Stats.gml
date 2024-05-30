@@ -30,7 +30,7 @@ function scr_Shot_Burst_Stats(_v_burst_stats){
 		shot_stats.Shot_Size = shot_stats.Shot_Size * _v_burst_stats.Burst_Size
 		image_xscale = shot_stats.Shot_Size;
 		image_yscale = shot_stats.Shot_Size;
-		shot_stats.Shot_Size_Max = other.shot_stats.Shot_Size_Max;
+		shot_stats.Shot_Size_Max = shot_stats.Shot_Size_Max * _v_burst_stats.Burst_Size
 	}
 	if variable_struct_exists(_v_burst_stats, "Shot_Sprite") {
 		//show_debug_message(_v_burst_stats.Shot_Sprite)

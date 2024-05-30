@@ -7,7 +7,7 @@ function scr_Brainstorm_Umbrella_Use() {
 
 	Shot_Sprite = spr_Brainstorm_Umbrella;
 	Shot_Type = obj_Umbrella_Shot;
-	Weapon_Melee = true;
+	Shot_Melee = true;
 	Shot_Mouse_Maintain = 1;
 	Shot_Soul_Maintain = 1;
 

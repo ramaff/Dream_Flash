@@ -21,7 +21,7 @@ if currentphase = 1 {
 	}
 } else {
 	var original_target = followtarget
-	with obj_Conga_Line {
+	with obj_conga_line {
 		if followtarget == other.id {
 			followtarget = original_target;	
 		}
@@ -65,7 +65,7 @@ if active_attack_delay <= 0 and active_attack_cooldown <= 0 and active_attack_du
 	
     if active_attack = 1 {
 		// Setup how many attacks per boss move, delay, etc
-		scr_Boss_Attack_Time_Setup_v2(120, 40, 1, 240, 60, 20);
+		scr_Boss_Attack_Time_Setup_v2(120, 40, 1, 240, 60, 50);
 		scr_Boss_Jump_Setup_v2(0, 0 * bossmovespeed, x, y);
 		
 		// Can set up the initial pattern direction

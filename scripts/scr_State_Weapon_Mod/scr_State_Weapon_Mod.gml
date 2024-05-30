@@ -137,7 +137,7 @@ function scr_State_Weapon_Mod(){
 			
 			speed = shot_stats.Shot_Speed;
 
-			if shot_stats.Weapon_Melee = false {
+			if shot_stats.Shot_Melee = false {
 				shot_stats.Shot_Extra_Stats = [scr_Dupe_Struct(shot_stats)];
 			}
 			
@@ -154,7 +154,7 @@ function scr_State_Weapon_Mod(){
 			shot_stats.Shot_Extra_Stats[0].Shot_Mouse = true;
 			shot_stats.Shot_Extra_Stats[0].Shot_Homing_Type = 0;
 
-			if shot_stats.Weapon_Melee = true {
+			if shot_stats.Shot_Melee = true {
 		
 				//shot_stats.Shot_Type = "obj_Melee_Caster_Shot";
 				//shot_stats.Shot_Life_Span = 180;
@@ -187,7 +187,7 @@ function scr_State_Weapon_Mod(){
 	        shot_stats.Shot_Center_Y = other.y;
 			//speed = 0;
 
-			/*if shot_stats.Weapon_Melee > 0 {
+			/*if shot_stats.Shot_Melee > 0 {
 		
 				shotextrahitlifespan[4] = 10;
 				shotextrahitsize[4] = other.Shot_Size * 2;

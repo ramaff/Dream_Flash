@@ -393,7 +393,7 @@
     "E02": {
         "recollectionString": "Perspective Change",
         "recollectionSprite": "spr_Phase_Sense_Item",
-        "recollectionExtraStats": "-25% Teleport Cooldown Reduction -10 Teleport Cost",
+        "recollectionExtraStats": "-50% Teleport Cost",
         "recollectionDescription": "Phase through reality in a less costly matter."
     },
     "E03": {
@@ -1434,6 +1434,13 @@
         "recollectionExtraStats": "+Shot Trail",
         "recollectionDescription": "Constantly create shots that passively float around for a while."
     },
+    "P09": {
+        "recollectionString": "Outburst",
+        "recollectionSprite": "spr_Outburst_Art",
+        "recollectionExtraStats": "+5 Way Shots +4 Loathing",
+        "recollectionDescription": "Every 6th time you use your weapon you shoot in 5 different directions at once.",
+        "Spike_Credit": 1
+    },
 
     "Q01": {
         "recollectionString": "No Brainer",
@@ -1454,6 +1461,13 @@
         "recollectionDescription": "Shot Projectiles spawn away from soul and then travel back to the soul."
     },
     "Q04": {
+        "recollectionString": "Wrap My Head Around",
+        "recollectionSprite": "spr_Wrap_My_Head_Around_Art",
+        "recollectionExtraStats": "+Spiral Homing +100% Shot Lifespan",
+        "recollectionDescription": "Your shots will now spiral around toward the nearest enemy.",
+        "Casting_Credit": 0.5
+    },
+    "Q05": {
         "recollectionString": "Slipped My Mind",
         "recollectionSprite": "spr_Thinking_Outside_The_Box_Art",
         "recollectionExtraStats": "+Thought Redirection",

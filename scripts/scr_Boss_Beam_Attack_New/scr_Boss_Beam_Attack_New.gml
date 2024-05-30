@@ -40,7 +40,7 @@ function scr_Boss_Beam_Attack_New(beamActive, beamOffest, beamFrame) {
 
 	if beam_sprite = spr_Lightning_Beam {
 		beamSpr = spr_Lightning_Beam;
-		startSpr = spr_Lightning_Beam_Start;
+		startSpr = spr_Lightning_Beam_Start_old;
 		tipSpr = spr_Lightning_Beam_Tail;
 			
 		beamPartColor = make_color_rgb(255,212,0);

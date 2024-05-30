@@ -18,7 +18,7 @@ function scr_Bleeding_Soul_Mod(_cw = current_weapon_stats){
 
 		_cw.Shot_Height = min(30, _cw.Shot_Height + 30);
 		_cw.Shot_Fall_Speed = 0;
-		_cw.Shot_Gravity = 60 / (_cw.Shot_Life_Span * _cw.Shot_Life_Span);
+		_cw.Shot_Gravity = ((2 * _cw.Shot_Height) / (_shot_lifespan * _shot_lifespan))
 		
 		var _bleed_count = 1 + floor(1 * global.soulstateformboost);
 		//_bleed_count -= 1;

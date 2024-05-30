@@ -127,7 +127,7 @@ function scr_Shot_Creation(_cw = current_weapon_stats) {
 	        xx = lengthdir_x(forward,actual_shot_direction);
 	        yy = lengthdir_y(forward,actual_shot_direction);
 			
-			if (obj_Soul_Parent.scurrentstate = "Bleeding" and _cw.Weapon_Melee = 0) {
+			if (obj_Soul_Parent.scurrentstate = "Bleeding" and _cw.Shot_Melee = 0) {
 		        xx = lengthdir_x(50,actual_shot_direction);
 		        yy = lengthdir_y(50,actual_shot_direction);
 			}
@@ -225,7 +225,7 @@ function scr_Shot_Creation(_cw = current_weapon_stats) {
 			
 				////shot_stats.Shot_Timer = shot_stats.Shot_Life_Span;
 			
-		        shot_stats.Shot_Melee = shot_stats.Weapon_Melee;
+		        shot_stats.Shot_Melee = shot_stats.Shot_Melee;
 		        if shot_stats.Shot_Wave_Time > 0 {
 		            alarm[9] = shot_stats.Shot_Wave_Time;
 		        }

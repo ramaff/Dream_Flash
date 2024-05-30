@@ -197,7 +197,7 @@ function scr_Default_Shot_Stats() {
 	
 	shot_stats.Shot_Burst_Stats = false;
 	shot_stats.Shot_Air_Burst_Stats = false;
-	shot_stats.Shot_Extra_Stats = false;
+	shot_stats.Shot_Extra_Stats = [];
 	
 	shot_stats.Shot_Aura = 0;
 	shot_stats.Shot_Aura_Power = 0;

@@ -36,6 +36,17 @@ if currentphase = 2 {
 
 scr_Chain_Pull(target, 10, weight, target_weight);
 
+if currentphase = 2 {
+	if active_attack_cooldown > 20 {
+		active_attack_cooldown = 20;
+	}
+	if active_attack != 3 {
+		active_attack = 0;
+		active_attack_delay = 0;
+		active_attack_duration = 0;
+	}
+}
+
 //////////////////////////////////////////////////////////////////////////////////////////
 /////////////// Active Attack Prep
 //////////////////////////////////////////////////////////////////////////////////////////
@@ -170,7 +181,7 @@ scr_Boss_Size_Lerp_Dir(0.15);
 if active_attack = 1 {
 	var _hold_frame = 2;
 	scr_Boss_Attack_Sprite_v2(spr_sleep_hound_bark, _hold_frame, 2, 4, 20);
-	if image_index = 3 {
+	if image_index = 4 {
 		scr_Boss_Stretch("Horizontal", 0.4);	
 	}
 	if image_index = _hold_frame {
@@ -187,6 +198,9 @@ if active_attack = 1 {
 		sprite_index = spr_sleep_hound;
 	} else if currentphase = 2 {
 		scr_Boss_Phase_Transition_Animation(2, spr_sleep_hound_p2_transition, spr_sleep_hound_p2_bark, 4)
+		if image_index = 0 and sprite_index = spr_sleep_hound_p2_bark {
+			scr_Boss_Stretch("Horizontal", 0.4);	
+		}
 	}
 }
 

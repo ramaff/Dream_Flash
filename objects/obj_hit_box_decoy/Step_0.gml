@@ -45,7 +45,7 @@ if active_attack_duration <= 0 {
 /// Boss Sprite Code
 
 // Go back to normal default size
-scr_Boss_Size_Lerp_Dir(0.15, true);
+scr_Boss_Size_Lerp(0.15);
 
 // Handles boss attack sprite animation
 

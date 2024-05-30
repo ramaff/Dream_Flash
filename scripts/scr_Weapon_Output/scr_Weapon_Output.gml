@@ -6,10 +6,10 @@ function scr_Weapon_Output(_spawn_projectile = spawnProjectile, _minion = minion
 		
 		if !_minion {
 			scr_Shot_Creation(_cw_stats);
-			scr_Q03(false);
+			scr_Q03(false, _cw_stats);
 		} else {
 			scr_Soul_Spawn(_cw_stats);
-			scr_Q03(true);
+			scr_Q03(true, _cw_stats);
 		}
 		
 		if _cw_stats.Shot_Extra != false {
@@ -27,10 +27,10 @@ function scr_Weapon_Output(_spawn_projectile = spawnProjectile, _minion = minion
 		
 					if !_minion {
 						scr_Shot_Creation(_ex_stats);
-						scr_Q03(false);
+						scr_Q03(false, _cw_stats);
 					} else {
 						scr_Soul_Spawn(_cw_stats);
-						scr_Q03(true);
+						scr_Q03(true, _cw_stats);
 					}
 				}
 			}

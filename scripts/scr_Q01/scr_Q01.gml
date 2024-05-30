@@ -44,8 +44,6 @@ function scr_Q01() {
 			current_weapon_stats.Shot_Homing_Speed = 1.5;
 		
 			//current_weapon_stats.Shot_Lobbing_Tilt = -10;
-
-			current_weapon_stats = scr_Setup_Weapon_Stats(current_weapon_stats);
 			
 			barrage = false;
 			minion = false;
@@ -54,15 +52,16 @@ function scr_Q01() {
 			scr_Hard_Coded_Weapon_Stats(current_weapon_stats);
 		
 			if current_weapon_stats.Shot_Beam = 0 {
+				current_weapon_stats.Shot_Lobbing = true;
 				current_weapon_stats.Shot_Height += 20
-				current_weapon_stats.Shot_Fall_Speed = -0.2
+				current_weapon_stats.Shot_Fall_Speed = -0.4
 			
 				var _dist = current_weapon_stats.Shot_Height;
 				var _time = current_weapon_stats.Shot_Life_Span;
 				var _vel = current_weapon_stats.Shot_Fall_Speed;
 			
 				// velocity is backwards
-		        current_weapon_stats.Shot_Gravity = ((2 * _dist) / (_time * _time)) + (_vel / _time)
+		        current_weapon_stats.Shot_Gravity = ((2 * _dist) / (_time * _time)) - ((2 * _vel) / _time)
 			
 			}
 		

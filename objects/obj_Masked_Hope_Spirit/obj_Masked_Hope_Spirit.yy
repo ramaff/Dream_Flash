@@ -13,7 +13,7 @@
   "overriddenProperties": [],
   "parent": {
     "name": "Masked Spirit Bosses",
-    "path": "folders/Objects/Bosses/Masked Spirit Bosses.yy",
+    "path": "folders/Objects/Bosses/Feel Bosses/Masked Spirit Bosses.yy",
   },
   "parentObjectId": {
     "name": "obj_Main_Boss_Parent",

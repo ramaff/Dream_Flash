@@ -17,7 +17,8 @@ if instance_exists(target) {
 }
 if instance_exists(hound) {
 	if currentphase = 2 {
-		hound.currentphase = 2;	
+		hound.currentphase = 2;
+		hound.bossdefense = hound.bossdefense2;
 	}
 	if hound.currentphase = 2 and speed > 1 {
 		weight = 1;
@@ -143,6 +144,9 @@ if active_attack = 1 {
 			}
 			if hound.speed > 1 {
 				sprite_index = spr_walker_not_in_control
+				if image_index = 4 {
+					scr_Boss_Stretch("Horizontal", 0.4);
+				}
 			} else {
 				image_index = 0;	
 			}

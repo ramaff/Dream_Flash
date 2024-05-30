@@ -3,7 +3,7 @@
 
     dir = random(360);
 	ddir = 0;
-	bulletlife = bulletlife * 2;
+	bulletlife = 180;
 	repeat(3) {
         with instance_create(x,y,obj_Direction_Bullet) {
             scr_Bullet_Replicate_Properties();

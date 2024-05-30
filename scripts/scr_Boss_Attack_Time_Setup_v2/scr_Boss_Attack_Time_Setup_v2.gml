@@ -10,6 +10,7 @@ function scr_Boss_Attack_Time_Setup_v2(_pattern_count = 1, _delay = 15, _attack_
 	pattern_count_max = pattern_count;
 		
 	active_attack_cooldown = _cooldown_time + random(_cooldown_variance);
-	active_attack_duration = _added_duration_time - (_attack_spacing - _delay) + (pattern_cooldown_max * pattern_count);
+	//active_attack_duration = _added_duration_time - (_attack_spacing - _delay) + (pattern_cooldown_max * pattern_count);
+	active_attack_duration = _added_duration_time + (pattern_cooldown_max * pattern_count);
 
 }

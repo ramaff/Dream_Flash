@@ -1,18 +1,23 @@
 {
   "resourceType": "GMObject",
   "resourceVersion": "1.0",
-  "name": "obj_Dream_Cloud",
+  "name": "obj_dream_cloud",
   "eventList": [
     {"resourceType":"GMEvent","resourceVersion":"1.0","name":"","collisionObjectId":null,"eventNum":0,"eventType":0,"isDnD":false,},
     {"resourceType":"GMEvent","resourceVersion":"1.0","name":"","collisionObjectId":null,"eventNum":0,"eventType":3,"isDnD":false,},
+    {"resourceType":"GMEvent","resourceVersion":"1.0","name":"","collisionObjectId":null,"eventNum":0,"eventType":8,"isDnD":false,},
+    {"resourceType":"GMEvent","resourceVersion":"1.0","name":"","collisionObjectId":{"name":"obj_The_Border","path":"objects/obj_The_Border/obj_The_Border.yy",},"eventNum":0,"eventType":4,"isDnD":false,},
   ],
   "managed": true,
   "overriddenProperties": [],
   "parent": {
-    "name": "Room Stuff",
-    "path": "folders/Objects/Room Stuff.yy",
+    "name": "Dream Minions",
+    "path": "folders/Objects/Bosses/Minions/Dream Minions.yy",
   },
-  "parentObjectId": null,
+  "parentObjectId": {
+    "name": "obj_Minion_Parent",
+    "path": "objects/obj_Minion_Parent/obj_Minion_Parent.yy",
+  },
   "persistent": false,
   "physicsAngularDamping": 0.1,
   "physicsDensity": 0.5,
@@ -29,9 +34,9 @@
   "properties": [],
   "solid": false,
   "spriteId": {
-    "name": "spr_Dream_Cloud",
-    "path": "sprites/spr_Dream_Cloud/spr_Dream_Cloud.yy",
+    "name": "spr_dream_cloud",
+    "path": "sprites/spr_dream_cloud/spr_dream_cloud.yy",
   },
   "spriteMaskId": null,
-  "visible": true,
+  "visible": false,
 }

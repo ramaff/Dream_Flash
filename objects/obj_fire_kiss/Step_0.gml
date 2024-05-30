@@ -22,14 +22,14 @@ if active_attack_delay <= 0 and active_attack_cooldown <= 0 and active_attack_du
 	if active_attack = 1 {
 
 		if champ = 3 {
-			scr_Boss_Attack_Time_Setup_v2(40, 20, 1, 10, 0, -10);
+			scr_Boss_Attack_Time_Setup_v2(40, 20, 1, 10, 0, 0);
 		
 			scr_Boss_Jump_Setup_v2(0, 10 * bossmovespeed, x, y);
 		
 			dash_direction = scr_Soul_Point() - 45 + (90 * (electric_hop_count mod 2))
 			electric_hop_count++;
 		} else {
-			scr_Boss_Attack_Time_Setup_v2(70, 30, 1, 30, 30, -10);
+			scr_Boss_Attack_Time_Setup_v2(70, 30, 1, 30, 30, 0);
 		
 			scr_Boss_Jump_Setup_v2(0, 7 * bossmovespeed, x, y);
 		
@@ -60,15 +60,6 @@ if active_attack_delay <= 0 and pattern_cooldown <= 0 and pattern_count > 0 {
 			}
 		
 			if _trail = false {
-				/*bullet_part = 1;
-				bullet_part_sprite = spr_Soul_Big_Bit;
-				bullet_part_color1 = make_color_rgb(255,100,50);
-				bullet_part_color2 = make_color_rgb(255,150,50);
-				bullet_part_size = 0.3;
-				bullet_part_area = 30;
-				bullet_part_life = 30;
-				bullet_part_frequency = 5; */
-
 
 				bullet_direction = 0;
 				bullet_speed = 0;

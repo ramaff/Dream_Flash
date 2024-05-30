@@ -57,7 +57,7 @@
             {"resourceType":"Keyframe<SpriteFrameKeyframe>","resourceVersion":"1.0","Channels":{"0":{"resourceType":"SpriteFrameKeyframe","resourceVersion":"1.0","Id":{"name":"cfff6bec-743f-4986-95fd-1482ae2b0017","path":"sprites/reco_Spirit_of_Mischief/reco_Spirit_of_Mischief.yy",},},},"Disabled":false,"id":"68270452-37ae-476b-a9ee-b7f92e0c4d9e","IsCreationKey":false,"Key":0.0,"Length":1.0,"Stretch":false,},
           ],},"modifiers":[],"spriteId":null,"trackColour":0,"tracks":[],"traits":0,},
     ],
-    "visibleRange": {"x":0.0,"y":0.0,},
+    "visibleRange": null,
     "volume": 1.0,
     "xorigin": 168,
     "yorigin": 168,

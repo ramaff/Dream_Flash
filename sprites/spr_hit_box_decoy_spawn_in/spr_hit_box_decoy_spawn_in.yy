@@ -3,9 +3,9 @@
   "resourceVersion": "1.0",
   "name": "spr_hit_box_decoy_spawn_in",
   "bbox_bottom": 479,
-  "bbox_left": 134,
+  "bbox_left": 0,
   "bbox_right": 475,
-  "bbox_top": 111,
+  "bbox_top": 0,
   "bboxMode": 0,
   "collisionKind": 4,
   "collisionTolerance": 0,
@@ -13,8 +13,8 @@
   "edgeFiltering": false,
   "For3D": false,
   "frames": [
-    {"resourceType":"GMSpriteFrame","resourceVersion":"1.1","name":"d90205e0-a4a7-460e-8eb2-944cd1d63b0f",},
-    {"resourceType":"GMSpriteFrame","resourceVersion":"1.1","name":"bbc62b5e-1479-4886-8523-27edfdc44fa5",},
+    {"resourceType":"GMSpriteFrame","resourceVersion":"1.1","name":"66252fa4-eb3b-441c-8796-0c412ec74b7f",},
+    {"resourceType":"GMSpriteFrame","resourceVersion":"1.1","name":"5c48d2f5-e5e6-49a6-9d8e-d36ba9b7a895",},
     {"resourceType":"GMSpriteFrame","resourceVersion":"1.1","name":"0e9d5bb9-3a41-47c2-8655-5b492c4a399a",},
     {"resourceType":"GMSpriteFrame","resourceVersion":"1.1","name":"70d9b9e9-53e5-49b1-8b63-1a9abb1eb8bc",},
     {"resourceType":"GMSpriteFrame","resourceVersion":"1.1","name":"6b37c636-4fba-4d8a-92c5-6521acb3f080",},
@@ -66,8 +66,8 @@
     "timeUnits": 1,
     "tracks": [
       {"resourceType":"GMSpriteFramesTrack","resourceVersion":"1.0","name":"frames","builtinName":0,"events":[],"inheritsTrackColour":true,"interpolation":1,"isCreationTrack":false,"keyframes":{"resourceType":"KeyframeStore<SpriteFrameKeyframe>","resourceVersion":"1.0","Keyframes":[
-            {"resourceType":"Keyframe<SpriteFrameKeyframe>","resourceVersion":"1.0","Channels":{"0":{"resourceType":"SpriteFrameKeyframe","resourceVersion":"1.0","Id":{"name":"d90205e0-a4a7-460e-8eb2-944cd1d63b0f","path":"sprites/spr_hit_box_decoy_spawn_in/spr_hit_box_decoy_spawn_in.yy",},},},"Disabled":false,"id":"e9a7583b-2487-4984-af78-05f637a5b34c","IsCreationKey":false,"Key":0.0,"Length":1.0,"Stretch":false,},
-            {"resourceType":"Keyframe<SpriteFrameKeyframe>","resourceVersion":"1.0","Channels":{"0":{"resourceType":"SpriteFrameKeyframe","resourceVersion":"1.0","Id":{"name":"bbc62b5e-1479-4886-8523-27edfdc44fa5","path":"sprites/spr_hit_box_decoy_spawn_in/spr_hit_box_decoy_spawn_in.yy",},},},"Disabled":false,"id":"638cd5d9-99b5-4616-b578-742d43f4660c","IsCreationKey":false,"Key":1.0,"Length":1.0,"Stretch":false,},
+            {"resourceType":"Keyframe<SpriteFrameKeyframe>","resourceVersion":"1.0","Channels":{"0":{"resourceType":"SpriteFrameKeyframe","resourceVersion":"1.0","Id":{"name":"66252fa4-eb3b-441c-8796-0c412ec74b7f","path":"sprites/spr_hit_box_decoy_spawn_in/spr_hit_box_decoy_spawn_in.yy",},},},"Disabled":false,"id":"203da3eb-cf34-46e7-9681-dc415ea22c41","IsCreationKey":false,"Key":0.0,"Length":1.0,"Stretch":false,},
+            {"resourceType":"Keyframe<SpriteFrameKeyframe>","resourceVersion":"1.0","Channels":{"0":{"resourceType":"SpriteFrameKeyframe","resourceVersion":"1.0","Id":{"name":"5c48d2f5-e5e6-49a6-9d8e-d36ba9b7a895","path":"sprites/spr_hit_box_decoy_spawn_in/spr_hit_box_decoy_spawn_in.yy",},},},"Disabled":false,"id":"64428f1e-e3e2-48e9-a305-88029a872a7c","IsCreationKey":false,"Key":1.0,"Length":1.0,"Stretch":false,},
             {"resourceType":"Keyframe<SpriteFrameKeyframe>","resourceVersion":"1.0","Channels":{"0":{"resourceType":"SpriteFrameKeyframe","resourceVersion":"1.0","Id":{"name":"0e9d5bb9-3a41-47c2-8655-5b492c4a399a","path":"sprites/spr_hit_box_decoy_spawn_in/spr_hit_box_decoy_spawn_in.yy",},},},"Disabled":false,"id":"607ca420-22c2-43c3-ba82-56912f1fd071","IsCreationKey":false,"Key":2.0,"Length":1.0,"Stretch":false,},
             {"resourceType":"Keyframe<SpriteFrameKeyframe>","resourceVersion":"1.0","Channels":{"0":{"resourceType":"SpriteFrameKeyframe","resourceVersion":"1.0","Id":{"name":"70d9b9e9-53e5-49b1-8b63-1a9abb1eb8bc","path":"sprites/spr_hit_box_decoy_spawn_in/spr_hit_box_decoy_spawn_in.yy",},},},"Disabled":false,"id":"ed35c83c-932e-417a-8599-9d7724d4742d","IsCreationKey":false,"Key":3.0,"Length":1.0,"Stretch":false,},
             {"resourceType":"Keyframe<SpriteFrameKeyframe>","resourceVersion":"1.0","Channels":{"0":{"resourceType":"SpriteFrameKeyframe","resourceVersion":"1.0","Id":{"name":"6b37c636-4fba-4d8a-92c5-6521acb3f080","path":"sprites/spr_hit_box_decoy_spawn_in/spr_hit_box_decoy_spawn_in.yy",},},},"Disabled":false,"id":"56ceaa84-76ee-4e41-b8c3-dbdec5e62f17","IsCreationKey":false,"Key":4.0,"Length":1.0,"Stretch":false,},

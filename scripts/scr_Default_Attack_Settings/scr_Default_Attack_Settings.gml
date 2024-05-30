@@ -93,7 +93,7 @@ function scr_Default_Attack_Settings() {
 		minion_xx = 0;
 		minion_yy = 0;
 		
-		bullet_target = 0;
+		bullet_target = id;
 
 
 }

@@ -24,39 +24,47 @@ if soul_underground > 0 {
 	var dist = 100;
 	var ang = 0
 
-	for(var _i = 0; _i < 8; _i++) {
+	for(var _i = 0; _i < 5; _i++) {
 		scr_Default_Weapon_Stats();
 
 		current_weapon_stats.Shot_Spread = 0;
 		current_weapon_stats.Shot_Accuracy = 10;
 		current_weapon_stats.Shot_Count = 1;
-		current_weapon_stats.Shot_Sprite = "spr_Rising_Spike_Tall";
+		current_weapon_stats.Shot_Sprite = "spr_Rising_Spike_Blue";
 		current_weapon_stats.Shot_Type = "obj_Lesser_Soul_Shot";
-
 
 		current_weapon_stats.Shot_Speed = 0;
 		current_weapon_stats.Shot_Movement = 0;
-		current_weapon_stats.Shot_Power = 25 * global.soulstateformboost * (1 + global.teleportboost);
+		current_weapon_stats.Shot_Power = 10 * global.soulstateformboost * (1 + global.teleportboost);
 		current_weapon_stats.Shot_Knock_Back = 10;
 		current_weapon_stats.Shot_Life_Span = 45;
 		current_weapon_stats.Shot_Off_State = 1;
 		current_weapon_stats.Shot_Phasing = 1;
 		current_weapon_stats.Shot_Ground = 1;
-		current_weapon_stats.Weapon_Melee = true;
+		current_weapon_stats.Shot_Melee = true;
 		current_weapon_stats.Shot_Pierce = 99;
 		current_weapon_stats.Shot_Size = 0.5;
 		current_weapon_stats.Shot_Off_State = true;
-		current_weapon_stats.Shot_Bullet_Redirect = 1;
-		current_weapon_stats.Shot_Bullet_Redirect_Chance = 100;
-		current_weapon_stats.Shot_Bullet_Displace = true;
+
+		if _i = 4 {
+			current_weapon_stats.Shot_Sprite = "spr_Rising_Spike_Tall";
+			current_weapon_stats.Shot_Bullet_Redirect = 1;
+			current_weapon_stats.Shot_Bullet_Redirect_Chance = 100;
+			current_weapon_stats.Shot_Bullet_Displace = true;
+			current_weapon_stats.Shot_Power = current_weapon_stats.Shot_Power * 2.5;
+		}
+		
+		
+		for(var _j = 0; _j < 5; _j++) {
 	
-	
-		dist = 70 + ((_i mod 2) * 50)
-		current_weapon_stats.Shot_Size = 0.5 + ((_i mod 2) * 0.15);
-		ang += 45
-		current_weapon_stats.Shot_XX = lengthdir_x(dist, ang);
-		current_weapon_stats.Shot_YY = lengthdir_y(dist, ang);
-		scr_Shot_Creation();
+			dist = sqrt(2500 + (4000 * _i));
+			ang += 72
+			current_weapon_stats.Shot_XX = lengthdir_x(dist, ang);
+			current_weapon_stats.Shot_YY = lengthdir_y(dist, ang);
+			scr_Shot_Creation();
+		}
+		
+		ang += 15;
 	}
 	
 	soul_underground--;	

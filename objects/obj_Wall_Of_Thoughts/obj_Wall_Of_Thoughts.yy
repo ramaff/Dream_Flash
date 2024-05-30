@@ -12,7 +12,7 @@
   "overriddenProperties": [],
   "parent": {
     "name": "v1",
-    "path": "folders/Objects/Bosses/Feel Bosses/v1.yy",
+    "path": "folders/Objects/Bosses/Dream Bosses/v1.yy",
   },
   "parentObjectId": {
     "name": "obj_Wall_Boss_Parent",

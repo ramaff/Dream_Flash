@@ -37,7 +37,7 @@ if active_attack_delay <= 0 and active_attack_cooldown <= 0 and active_attack_du
     }
 	if active_attack = 2 {
 		// Setup how many attacks per boss move, delay, etc
-		scr_Boss_Attack_Time_Setup_v2(80, 40, 1, 120, 30, 0);
+		scr_Boss_Attack_Time_Setup_v2(80, 40, 1, 120, 30, 40);
 		
 		scr_Boss_Jump_Setup_v2(0, 12.5 * bossmovespeed, x, y);
 		
@@ -47,7 +47,7 @@ if active_attack_delay <= 0 and active_attack_cooldown <= 0 and active_attack_du
     }
 	if active_attack = 3 {
 		// Setup how many attacks per boss move, delay, etc
-		scr_Boss_Attack_Time_Setup_v2(1, 40, 1, 120, 30, 10);
+		scr_Boss_Attack_Time_Setup_v2(1, 40, 1, 120, 30, 40);
 		
 		// Can set up the initial pattern direction
 		// patternDirection = scr_Soul_Point();
@@ -55,7 +55,7 @@ if active_attack_delay <= 0 and active_attack_cooldown <= 0 and active_attack_du
     }
 	if active_attack = 4 {
 		// Setup how many attacks per boss move, delay, etc
-		scr_Boss_Attack_Time_Setup_v2(80, 40, 1, 30, 30, 0);
+		scr_Boss_Attack_Time_Setup_v2(80, 40, 1, 30, 30, 30);
 		
 		scr_Boss_Jump_Setup_v2(0, 7 * bossmovespeed, x, y);
 		
@@ -325,6 +325,8 @@ scr_Boss_Size_Lerp_Dir(0.15, false);
 
 // Handles boss attack sprite animation
 if active_attack = 1 {
+	direction = scr_Soul_Point();
+	speed = 0.01;
 	var holdFrame = 2;
 	scr_Boss_Attack_Sprite_v2(spr_Amorphous_Jello_Shoot, holdFrame, 3, 5, 40);
 	if image_index = holdFrame {
@@ -338,7 +340,7 @@ if active_attack = 1 {
 	}
 } else if active_attack = 3 {
 	var holdFrame = 2;
-	scr_Boss_Attack_Sprite_v2(spr_Amorphous_Jello_Summon, holdFrame, 3, 3, 20);
+	scr_Boss_Attack_Sprite_v2(spr_Amorphous_Jello_Summon, holdFrame, 3, 3, 30);
 	if image_index = holdFrame {
 		scr_Boss_Wobble("Horizontal", 2, 0.25, 0)	
 	}

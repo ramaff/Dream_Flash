@@ -12,8 +12,8 @@
   "managed": true,
   "overriddenProperties": [],
   "parent": {
-    "name": "Basic Bullets",
-    "path": "folders/Objects/Boss Bullets/Basic Bullets.yy",
+    "name": "Beam Bullets",
+    "path": "folders/Objects/Boss Bullets/Beam Bullets.yy",
   },
   "parentObjectId": {
     "name": "obj_Soul_Hurt",
@@ -35,8 +35,8 @@
   "properties": [],
   "solid": false,
   "spriteId": {
-    "name": "spr_Glowy_Enemy_Shot",
-    "path": "sprites/spr_Glowy_Enemy_Shot/spr_Glowy_Enemy_Shot.yy",
+    "name": "spr_Lightning_Beam_Segment",
+    "path": "sprites/spr_Lightning_Beam_Segment/spr_Lightning_Beam_Segment.yy",
   },
   "spriteMaskId": null,
   "visible": false,
