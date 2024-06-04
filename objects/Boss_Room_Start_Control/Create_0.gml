@@ -9,6 +9,7 @@ scr_Wall_Form();
 
 fieldSpawn = 0;
 
+//scr_Room_Effect_Setup()
 
 //instance_create(0,0, obj_Medium_Room_Wall);
 

@@ -1,3 +1,5 @@
+//scr_Room_Effect_Step();
+
 if ((global.bosscount <= 0) and (global.spiritRoom != global.currentroom) and (global.evilSpiritRoom != global.currentroom)) and instance_number(obj_Boss_Parent) = 0 {
     
     scr_Room_End();

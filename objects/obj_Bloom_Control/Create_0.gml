@@ -1,7 +1,17 @@
 /// @description Insert description here
 // You can write your code in this editor
 
+scr_Room_Effect_Setup()
 
+/*
+fx_set_parameter(_fxglow, "g_GlowRadius", 8);
+fx_set_parameter(_fxglow, "g_GlowQuality", 3);
+fx_set_parameter(_fxglow, "g_GlowIntensity", 0.1);
+fx_set_parameter(_fxglow, "g_GlowGamma", 2);
+fx_set_parameter(_fxglow, "g_GlowAlpha", 1);
+*/
+
+/*
 	
 shader_bloom_lum		= shd_bloom_filter_luminance;
 u_bloom_threshold		= shader_get_uniform(shader_bloom_lum, "bloom_threshold");

@@ -64,7 +64,7 @@ instance_create(x,y, Floor_Layout_Control);
 //instance_create(x,y, Music_Control);
 instance_create(x,y, obj_Light_Control);
 instance_create(x,y, obj_Particle_Control);
-instance_create(x,y, obj_Bloom_Control);
+//instance_create(x,y, obj_Bloom_Control);
 
 //instance_create(x,y,obj_Dream_Light_Setup);
 
