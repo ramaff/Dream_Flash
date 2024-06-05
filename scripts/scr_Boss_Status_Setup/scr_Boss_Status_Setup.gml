@@ -3,7 +3,7 @@ function scr_Boss_Status_Setup(version=1) {
 	//projectile_hits = ds_list_create();
 	projectile_hits = {};
 	
-	boss_height = 0;
+	//boss_height = 0;
 
 	bossID = id;
 

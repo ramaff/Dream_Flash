@@ -2,7 +2,7 @@
   "resourceType": "GMSprite",
   "resourceVersion": "1.0",
   "name": "spr_thought_cloud_v2_palette",
-  "bbox_bottom": 7,
+  "bbox_bottom": 8,
   "bbox_left": 0,
   "bbox_right": 4,
   "bbox_top": 0,
