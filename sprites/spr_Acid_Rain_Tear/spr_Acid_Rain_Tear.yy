@@ -1,7 +1,7 @@
 {
   "resourceType": "GMSprite",
   "resourceVersion": "1.0",
-  "name": "spr_Water_Drop_Bullet",
+  "name": "spr_Acid_Rain_Tear",
   "bbox_bottom": 49,
   "bbox_left": 41,
   "bbox_right": 49,
@@ -13,14 +13,14 @@
   "edgeFiltering": false,
   "For3D": false,
   "frames": [
-    {"resourceType":"GMSpriteFrame","resourceVersion":"1.1","name":"bcc64126-44b1-49f4-b9ab-8b576df9ed32",},
+    {"resourceType":"GMSpriteFrame","resourceVersion":"1.1","name":"8b96afed-895d-4406-a5c7-ea0de4e92de3",},
   ],
   "gridX": 0,
   "gridY": 0,
   "height": 90,
   "HTile": false,
   "layers": [
-    {"resourceType":"GMImageLayer","resourceVersion":"1.0","name":"1655f185-541c-4c5e-976b-b68c16f0671d","blendMode":0,"displayName":"default","isLocked":false,"opacity":100.0,"visible":true,},
+    {"resourceType":"GMImageLayer","resourceVersion":"1.0","name":"85b04b9b-d5b3-463d-bd0d-633122bc1e20","blendMode":0,"displayName":"default","isLocked":false,"opacity":100.0,"visible":true,},
   ],
   "nineSlice": null,
   "origin": 4,
@@ -32,7 +32,7 @@
   "sequence": {
     "resourceType": "GMSequence",
     "resourceVersion": "1.4",
-    "name": "",
+    "name": "spr_Acid_Rain_Tear",
     "autoRecord": true,
     "backdropHeight": 1080,
     "backdropImageOpacity": 0.5,
@@ -54,7 +54,7 @@
     "timeUnits": 1,
     "tracks": [
       {"resourceType":"GMSpriteFramesTrack","resourceVersion":"1.0","name":"frames","builtinName":0,"events":[],"inheritsTrackColour":true,"interpolation":1,"isCreationTrack":false,"keyframes":{"resourceType":"KeyframeStore<SpriteFrameKeyframe>","resourceVersion":"1.0","Keyframes":[
-            {"resourceType":"Keyframe<SpriteFrameKeyframe>","resourceVersion":"1.0","Channels":{"0":{"resourceType":"SpriteFrameKeyframe","resourceVersion":"1.0","Id":{"name":"bcc64126-44b1-49f4-b9ab-8b576df9ed32","path":"sprites/spr_Water_Drop_Bullet/spr_Water_Drop_Bullet.yy",},},},"Disabled":false,"id":"228212ea-2995-4b04-871b-990721e46524","IsCreationKey":false,"Key":0.0,"Length":1.0,"Stretch":false,},
+            {"resourceType":"Keyframe<SpriteFrameKeyframe>","resourceVersion":"1.0","Channels":{"0":{"resourceType":"SpriteFrameKeyframe","resourceVersion":"1.0","Id":{"name":"8b96afed-895d-4406-a5c7-ea0de4e92de3","path":"sprites/spr_Acid_Rain_Tear/spr_Acid_Rain_Tear.yy",},},},"Disabled":false,"id":"21dccc4a-27ea-4f2b-9dc1-cd7c82d9aad9","IsCreationKey":false,"Key":0.0,"Length":1.0,"Stretch":false,},
           ],},"modifiers":[],"spriteId":null,"trackColour":0,"tracks":[],"traits":0,},
     ],
     "visibleRange": null,

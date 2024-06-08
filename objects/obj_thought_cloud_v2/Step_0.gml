@@ -110,8 +110,8 @@ if active_attack_delay <= 0 and active_attack_cooldown <= 0 and active_attack_du
     }
 	 if active_attack = 5 {
 		// Setup how many attacks per boss move, delay, etc
-		var _attack_count = 16;
-		scr_Boss_Attack_Time_Setup_v2(_attack_count, 50, 30, 120, 30, 10);
+		var _attack_count = 12;
+		scr_Boss_Attack_Time_Setup_v2(_attack_count, 50, 20, 120, 30, 10);
 		
 		// Can set up the initial pattern direction
 		pattern_direction = scr_Boss_Bullet_Direction_Formula(scr_Soul_Point(x, y + 100), 30)
@@ -255,8 +255,13 @@ if active_attack_delay <= 0 and pattern_cooldown <= 0 and pattern_count > 0 {
 		bullet_lifespan = bullet_lob_time + 2;
 		bullet_bounce_speed = 2;
 		
+		var _tear_sprites = [spr_Rainbow_Tear, spr_Blood_Tear, spr_Golden_Shower_Tear, spr_Acid_Rain_Tear, spr_Water_Drop_Bullet]
+		var _i = 0;
 		
 		repeat(5) {
+			
+			bullet_sprite = _tear_sprites[_i]
+			_i += 1;
 			
 			bullet_bounce_speed += 1.5;
 			bullet_speed = bossbulletspeed * (1.45 + random(0.25));
