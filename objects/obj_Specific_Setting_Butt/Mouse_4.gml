@@ -76,7 +76,29 @@ if global.layerdeep = 2 {
     }
     if category = 4 {
         for(i = 11; i <= 15; i++) {
-			if i != 15 {
+			if i = 13 {
+				with instance_create(camera_get_view_x(view) + camera_get_view_width(view) / 2 - 252,camera_get_view_y(view) + 96 * (i - 10),obj_Option_Button) {
+	                type = other.i;
+	                category = other.category;
+					percent = global.gameBloomShader * 100;
+	            }
+				with instance_create(camera_get_view_x(view) + camera_get_view_width(view) / 2 - 32,camera_get_view_y(view) + 96 * (i - 10),obj_Option_Slider) {
+	                type = other.i;
+	                category = other.category;
+	                percent = global.gameBloomShader * 100;
+	            }
+			} else if i = 15 {
+				with instance_create(camera_get_view_x(view) + camera_get_view_width(view) / 2 - 252,camera_get_view_y(view) + 96 * (i - 10),obj_Option_Button) {
+	                type = other.i;
+	                category = other.category;
+					percent = global.gameParticles * 100;
+	            }
+				with instance_create(camera_get_view_x(view) + camera_get_view_width(view) / 2 - 32,camera_get_view_y(view) + 96 * (i - 10),obj_Option_Slider) {
+	                type = other.i;
+	                category = other.category;
+	                percent = global.gameParticles * 100;
+	            }
+			} else {
 				with instance_create(camera_get_view_x(view) + camera_get_view_width(view) / 2 - 252,camera_get_view_y(view) + 96 * (i - 10),obj_Option_Button) {
 	                type = other.i;
 	                category = other.category;
@@ -88,17 +110,6 @@ if global.layerdeep = 2 {
 	            with instance_create(camera_get_view_x(view) + camera_get_view_width(view) / 2 - 128,camera_get_view_y(view) + 96 * (i - 10),obj_Option_Pointer) {
 	                type = -other.i;
 	                category = other.category;
-	            }
-			} else {
-				with instance_create(camera_get_view_x(view) + camera_get_view_width(view) / 2 - 252,camera_get_view_y(view) + 96 * (i - 10),obj_Option_Button) {
-	                type = other.i;
-	                category = other.category;
-					percent = global.gameParticles * 100;
-	            }
-				with instance_create(camera_get_view_x(view) + camera_get_view_width(view) / 2 - 32,camera_get_view_y(view) + 96 * (i - 10),obj_Option_Slider) {
-	                type = other.i;
-	                category = other.category;
-	                percent = global.gameParticles * 100;
 	            }
 			}
         }
