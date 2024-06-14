@@ -41,12 +41,12 @@
     {"name":"watcher v2 group","order":30,"path":"folders/Sprites/Boss Sprites/Flash Bosses/watcher v2 group.yy",},
     {"name":"Wisper Group","order":22,"path":"folders/Sprites/Boss Sprites/Flash Bosses/Wisper Group.yy",},
     {"name":"Wisper v2","order":23,"path":"folders/Sprites/Boss Sprites/Flash Bosses/Wisper v2.yy",},
+    {"name":"Dark Storm Group","order":1,"path":"folders/Sprites/Boss Sprites/Nightmare Bosses/Dark Storm Group.yy",},
     {"name":"Icons","order":28,"path":"folders/Sprites/Recollection/Icons.yy",},
     {"name":"New Reco Clouds","order":29,"path":"folders/Sprites/Recollection/New Reco Clouds.yy",},
     {"name":"State Reco Icons","order":30,"path":"folders/Sprites/Recollection/State Reco Icons.yy",},
     {"name":"Tutorial Stuff","order":31,"path":"folders/Sprites/Recollection/Tutorial Stuff.yy",},
     {"name":"beam_punches","order":38,"path":"folders/Sprites/Soul Shot Sprites/Imaginary Shots/beam_punches.yy",},
-    {"name":"Dark Storm Group","order":1,"path":"folders/Sprites/Boss Sprites/Nightmare Bosses/Dark Storm Group.yy",},
   ],
   "ResourceOrderSettings": [
     {"name":"reco_Demonic_Villainy","order":66,"path":"sprites/reco_Demonic_Villainy/reco_Demonic_Villainy.yy",},

@@ -56,7 +56,8 @@ if active_attack_delay <= 0 and pattern_cooldown <= 0 and pattern_count > 0 {
    
     if active_attack = 1 {
 		
-		bullet_direction = pattern_direction + (20 * (pattern_count mod 2)) - 10
+		bullet_direction = pattern_direction + (4 * (pattern_count mod 2)) - 2
+		bullet_direction += 2 - random(4);
 		
 		scr_Boss_Shoot();	
 
@@ -64,7 +65,8 @@ if active_attack_delay <= 0 and pattern_cooldown <= 0 and pattern_count > 0 {
 	
 	if active_attack = 3 {
 		
-		bullet_direction = pattern_direction + (20 * (pattern_count mod 2)) - 10
+		bullet_direction = pattern_direction + (4 * (pattern_count mod 2)) - 2
+		bullet_direction += 1 - random(2);
 		
 		bullet_spread = 90;
 		bullet_count = 4
@@ -81,7 +83,7 @@ if active_attack_delay <= 0 and pattern_cooldown <= 0 and pattern_count > 0 {
 		
 		if pattern_count = 1 {
 			active_attack = 3
-			scr_Boss_Attack_Time_Setup_v2(8, 10, 10, 120, 120, 10);
+			scr_Boss_Attack_Time_Setup_v2(12, 10, 10, 120, 120, 10);
 			pattern_direction = random(360);
 		}
 	}
@@ -102,7 +104,11 @@ if active_attack_duration <= 0 {
 /// Boss Sprite Code
 
 // Go back to normal default size
-scr_Boss_Size_Lerp(0.15);
+if sprite_index = spr_storm_cloud_minion_mouth_mood {
+	scr_Boss_Size_Lerp_Dir(0.15, true);
+} else {
+	scr_Boss_Size_Lerp(0.15)
+}
 
 // Handles boss attack sprite animation
 if active_attack = 1 || active_attack = 3 {

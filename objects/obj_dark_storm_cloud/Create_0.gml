@@ -16,3 +16,7 @@ scr_Boss_Height_Setup(50);
 death_sprite = spr_boss_template_ko;
 boss_palette = spr_boss_template_palette;
 boss_palette_index = champ;
+
+stored_x = x;
+stored_y = y;
+
