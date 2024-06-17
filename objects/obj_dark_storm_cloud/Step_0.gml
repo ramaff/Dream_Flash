@@ -9,13 +9,19 @@ scr_Boss_Height_Bob(30, 1, 0);
 // Make boss shape wobble:
 scr_Boss_Wobble("Horizontal", 0.4, 1, 0);
 
+direction = scr_Soul_Point()
+
 if active_attack = 0 {
 	speed = lerp(speed, bossmovespeed, 0.1)
+} else if active_attack = 4 and pattern_count < pattern_count_max {
+	speed = lerp(speed, -bossmovespeed * 1.5, 0.1)	
+	direction = pattern_direction;
+} else if active_attack = 5 and active_attack_delay > 0 {
+	speed = lerp(speed, -bossmovespeed * 2, 0.1)	
+	direction = dash_direction
 } else {
 	speed = lerp(speed, bossmovespeed * 0.2, 0.1)
 }
-
-direction = scr_Soul_Point()
 
 //////////////////////////////////////////////////////////////////////////////////////////
 /////////////// Active Attack Prep
@@ -65,7 +71,7 @@ if active_attack_delay <= 0 and active_attack_cooldown <= 0 and active_attack_du
 	// Dash into mega lightning
 	if active_attack = 5 {
 		// 
-		scr_Boss_Attack_Time_Setup_v2(120, 30, 1, 30, 30, 10);
+		scr_Boss_Attack_Time_Setup_v2(120, 50, 1, 30, 30, 10);
 		
 		//scr_Boss_Jump_Setup_v2(0, 7 * bossmovespeed, x, y);
 		scr_Boss_Dash_Setup_v2(scr_Soul_Point(), 0, 7 * bossmovespeed);
@@ -144,8 +150,8 @@ if active_attack_delay <= 0 and pattern_cooldown <= 0 and pattern_count > 0 {
 		
 		scr_Boss_Shoot();	
 		
-		x -= lengthdir_x(20, bullet_direction)
-		y -= lengthdir_y(20, bullet_direction)
+		//x -= lengthdir_x(20, bullet_direction)
+		//y -= lengthdir_y(20, bullet_direction)
 	}
 	
 	if active_attack = 6 {
@@ -168,7 +174,7 @@ if active_attack_delay <= 0 and pattern_cooldown <= 0 and pattern_count > 0 {
 				
 			scr_Spirit_Boss_BullFX_Pre();
 	
-			var dir = -(bullet_spread * (bullet_count - 1) / 2);
+			var dir = 45 - (bullet_spread * (bullet_count - 1) / 2);
 		
 			var bull = bullet_type;
 			var _seg_size = 80;
@@ -184,7 +190,7 @@ if active_attack_delay <= 0 and pattern_cooldown <= 0 and pattern_count > 0 {
 					
 				var _zag = -0.5 + irandom(1);
 					
-				bullet_direction = dir
+				bullet_direction = dir + (90 * _zag)
 					
 				for(var _count = 0; _count < 17; _count++) {
 					_seg_size = 80;
@@ -196,9 +202,10 @@ if active_attack_delay <= 0 and pattern_cooldown <= 0 and pattern_count > 0 {
 							sprite_index = spr_Lightning_Beam_Start;
 						}
 						if _count = 16 {
-							sprite_index = spr_Lightning_Beam_Tail	
+							sprite_index = spr_Lightning_Beam_Tail;
+							depth -= 1;
 						}
-						if (_count mod 3 = 2) and scr_Chance(2) {
+						if scr_Chance(3) {
 							if _zag = -0.5 {
 								_zag = 0.5;
 								image_yscale = -image_yscale;
@@ -206,7 +213,7 @@ if active_attack_delay <= 0 and pattern_cooldown <= 0 and pattern_count > 0 {
 								_zag = -0.5;
 							}
 							x += lengthdir_x(_seg_size / 2, other.bullet_direction)
-								y += lengthdir_y(_seg_size / 2, other.bullet_direction)
+							y += lengthdir_y(_seg_size / 2, other.bullet_direction)
 							xx = x;
 							yy = y;
 							sprite_index = spr_Lightning_Beam_Turn;
