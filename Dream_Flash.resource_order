@@ -60,6 +60,7 @@
     {"name":"spr_the_host_spawn","order":13,"path":"sprites/spr_the_host_spawn/spr_the_host_spawn.yy",},
     {"name":"obj_Class_Level_Up_Indicator","order":1,"path":"objects/obj_Class_Level_Up_Indicator/obj_Class_Level_Up_Indicator.yy",},
     {"name":"scr_Particle_Suck_In","order":19,"path":"scripts/scr_Particle_Suck_In/scr_Particle_Suck_In.yy",},
+    {"name":"spr_dark_storm_cloud_mouth_into_eye_mood","order":8,"path":"sprites/spr_dark_storm_cloud_mouth_into_eye_mood/spr_dark_storm_cloud_mouth_into_eye_mood.yy",},
     {"name":"spr_mini_mischief","order":6,"path":"sprites/spr_mini_mischief/spr_mini_mischief.yy",},
     {"name":"reco_boxer","order":65,"path":"sprites/reco_boxer/reco_boxer.yy",},
     {"name":"obj_Explosive_Lob_Bullet","order":8,"path":"objects/obj_Explosive_Lob_Bullet/obj_Explosive_Lob_Bullet.yy",},

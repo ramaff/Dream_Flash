@@ -242,7 +242,7 @@ function scr_Boss_Choose(roomNum, exclude, difficultyAdd = 0) {
 	}
 	if bossform = 8.1 // Nightmare Cloud
 	{
-	    bosstype = obj_Nightmare_Cloud;
+	    bosstype = obj_dark_storm_cloud;
 	    difficulty = 13;
 	    global.champ = choose(0);
 	}

@@ -12,15 +12,15 @@ scr_Boss_Wobble("Horizontal", 0.4, 1, 0);
 direction = scr_Soul_Point()
 
 if active_attack = 0 {
-	speed = lerp(speed, bossmovespeed, 0.1)
+	speed = lerp(speed, bossmovespeed * 1.75, 0.1)
 } else if active_attack = 4 and pattern_count < pattern_count_max {
-	speed = lerp(speed, -bossmovespeed * 1.5, 0.1)	
+	speed = lerp(speed, -bossmovespeed * 3, 0.02)	
 	direction = pattern_direction;
 } else if active_attack = 5 and active_attack_delay > 0 {
 	speed = lerp(speed, -bossmovespeed * 2, 0.1)	
 	direction = dash_direction
 } else {
-	speed = lerp(speed, bossmovespeed * 0.2, 0.1)
+	speed = lerp(speed, bossmovespeed * 0.75, 0.1)
 }
 
 //////////////////////////////////////////////////////////////////////////////////////////
@@ -71,10 +71,10 @@ if active_attack_delay <= 0 and active_attack_cooldown <= 0 and active_attack_du
 	// Dash into mega lightning
 	if active_attack = 5 {
 		// 
-		scr_Boss_Attack_Time_Setup_v2(120, 50, 1, 30, 30, 10);
+		scr_Boss_Attack_Time_Setup_v2(80, 70, 1, 30, 30, 10);
 		
 		//scr_Boss_Jump_Setup_v2(0, 7 * bossmovespeed, x, y);
-		scr_Boss_Dash_Setup_v2(scr_Soul_Point(), 0, 7 * bossmovespeed);
+		scr_Boss_Dash_Setup_v2(scr_Soul_Point(), 0, 8.5 * bossmovespeed);
     }
 }
 
@@ -130,21 +130,33 @@ if active_attack_delay <= 0 and pattern_cooldown <= 0 and pattern_count > 0 {
 	}
 	
 	if active_attack = 3 {
+		
+		scr_Boss_Stretch("Vertical", 0.35);
 	
 		minion_count = 1;
 		minion_type = obj_dark_storm_minion;
 		minion_health = bossmaxhealth / 9;
+		
+		minion_xx = 100;
+		minion_yy = 50;
+		
+		if hspeed < 0 {
+			minion_xx = -100;	
+		}
 
 		scr_Minion_Spawn();
 	
 	}
 	
 	if active_attack = 4 {
+		scr_Boss_Stretch("Vertical", 0.15);
+		
 		bullet_type = obj_Wave_Bullet;
         bullet_sprite = spr_Water_Drop_Bullet;
         bullet_speed = bossbulletspeed * 2.5;
         bullet_count = 8;
         bullet_spread = 225 / bullet_count;
+		
 		
 		bullet_direction = scr_Boss_Bullet_Direction_Formula(pattern_direction, 0.5)
 		
@@ -182,15 +194,18 @@ if active_attack_delay <= 0 and pattern_cooldown <= 0 and pattern_count > 0 {
 			var _streak_count = 0;
 				
 			repeat(bullet_count) {
+				
+				var _zag = 0.5;
+					
+				bullet_direction = dir + (90 * _zag)
+				
+				boss_xoffset = lengthdir_x(50, bullet_direction)
+				boss_yoffset = lengthdir_y(50, bullet_direction)
 					
 				var xx = x + boss_xoffset;
 				var yy = y + boss_yoffset;
 					
 				_streak_count += 1;
-					
-				var _zag = -0.5 + irandom(1);
-					
-				bullet_direction = dir + (90 * _zag)
 					
 				for(var _count = 0; _count < 17; _count++) {
 					_seg_size = 80;
@@ -203,9 +218,9 @@ if active_attack_delay <= 0 and pattern_cooldown <= 0 and pattern_count > 0 {
 						}
 						if _count = 16 {
 							sprite_index = spr_Lightning_Beam_Tail;
-							depth -= 1;
+							depth -= 5;
 						}
-						if scr_Chance(3) {
+						if scr_Chance(3) and _count > 0 {
 							if _zag = -0.5 {
 								_zag = 0.5;
 								image_yscale = -image_yscale;
@@ -246,11 +261,16 @@ if active_attack_delay <= 0 and pattern_cooldown <= 0 and pattern_count > 0 {
 		}
 			
 		if pattern_count mod 30 = 0 {
+			scr_Boss_Stretch("Vertical", 0.25);
+			
 			bullet_count = 8;
 			bullet_spread = 45;
 			bullet_direction = 0;
-			if pattern_count mod 60 = 0 {
-				bullet_direction += 22.5;	
+			if pattern_count mod 90 = 0 {
+				bullet_direction += 15;	
+			}
+			if pattern_count mod 90 = 30 {
+				bullet_direction += 30;	
 			}
 			bullet_type = obj_Zig_Zag_Bullet;
 			bullet_sprite = spr_Lightning_Bullet;
@@ -269,12 +289,23 @@ if active_attack_delay <= 0 and pattern_cooldown <= 0 and pattern_count > 0 {
         direction = dash_direction;
 		
 		if pattern_count = 1 {
-			active_attack = 6
-			scr_Boss_Attack_Time_Setup_v2(240, 30, 1, 120, 120, 10);
-			pattern_direction = random(360);
 			
-			stored_x = x;
-			stored_y = y;
+			scr_Boss_Stretch("Horizontal", 0.75);
+			
+			bullet_count = 8;
+			bullet_spread = 45;
+			bullet_direction = 0;
+			bullet_type = obj_Zig_Zag_Bullet;
+			bullet_sprite = spr_Lightning_Bullet;
+
+			bullet_lifespan = 240;
+			bullet_speed = bossbulletspeed * 2.5;
+		
+			repeat(3) {
+				bullet_direction += 22.5;
+				scr_Boss_Shoot();
+				bullet_speed += bossbulletspeed * 0.7;
+			}
 		}
 	}
 	
@@ -288,7 +319,16 @@ if active_attack_delay <= 0 and pattern_cooldown <= 0 and pattern_count > 0 {
 //////////////////////////////////////////////////////////////////////////////////////////
 
 if active_attack_duration <= 0 { 
-    active_attack = 0;
+	if active_attack = 5 {
+		active_attack = 6
+		scr_Boss_Attack_Time_Setup_v2(240, 40, 1, 120, 120, 10);
+		pattern_direction = random(360);
+			
+		stored_x = x;
+		stored_y = y;
+	} else {
+		active_attack = 0;
+	}
 }
 
 /// Boss Sprite Code
@@ -296,11 +336,13 @@ if active_attack_duration <= 0 {
 image_angle = scr_Wave(-10, 10, 3, 0)
 
 // Go back to normal default size
-if sprite_index = spr_dark_storm_cloud_mouth_mood {
+if sprite_index = spr_dark_storm_cloud_mouth_mood || sprite_index = spr_dark_storm_cloud_mouth_into_eye_mood {
 	scr_Boss_Size_Lerp_Dir(0.15, true);
 } else {
 	scr_Boss_Size_Lerp(0.15)
 }
+
+
 
 // Handles boss attack sprite animation
 if active_attack = 3 || active_attack = 5 {
@@ -312,6 +354,12 @@ if active_attack = 3 || active_attack = 5 {
 } else if active_attack = 1 || active_attack = 2 || active_attack = 4 {
 	var _hold_frame = 2;
 	scr_Boss_Attack_Sprite_v2(spr_dark_storm_cloud_eye_mood, _hold_frame, 3, 3, 20);
+	if image_index = _hold_frame {
+		scr_Boss_Wobble("Horizontal", 2, 0.4, 0)	
+	}
+} else if active_attack = 6 {
+	var _hold_frame = 0;
+	scr_Boss_Attack_Sprite_v2(spr_dark_storm_cloud_mouth_into_eye_mood, _hold_frame, 2, 2, 20);
 	if image_index = _hold_frame {
 		scr_Boss_Wobble("Horizontal", 2, 0.4, 0)	
 	}

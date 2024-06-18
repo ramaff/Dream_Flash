@@ -105,7 +105,7 @@ if active_attack_duration <= 0 {
 
 // Go back to normal default size
 if sprite_index = spr_storm_cloud_minion_mouth_mood {
-	scr_Boss_Size_Lerp_Dir(0.15, true);
+	scr_Boss_Size_Lerp_Dir(0.15, false);
 } else {
 	scr_Boss_Size_Lerp(0.15)
 }
