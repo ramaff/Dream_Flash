@@ -347,7 +347,11 @@ if sprite_index = spr_dark_storm_cloud_mouth_mood || sprite_index = spr_dark_sto
 // Handles boss attack sprite animation
 if active_attack = 3 || active_attack = 5 {
 	var _hold_frame = 2;
-	scr_Boss_Attack_Sprite_v2(spr_dark_storm_cloud_mouth_mood, _hold_frame, 3, 3, 20);
+	var _end_time = 20;
+	if active_attack = 5 {
+		_end_time = 10;	
+	}
+	scr_Boss_Attack_Sprite_v2(spr_dark_storm_cloud_mouth_mood, _hold_frame, 3, 3, _end_time);
 	if image_index = _hold_frame {
 		scr_Boss_Wobble("Horizontal", 2, 0.4, 0)	
 	}
@@ -359,7 +363,7 @@ if active_attack = 3 || active_attack = 5 {
 	}
 } else if active_attack = 6 {
 	var _hold_frame = 0;
-	scr_Boss_Attack_Sprite_v2(spr_dark_storm_cloud_mouth_into_eye_mood, _hold_frame, 2, 2, 20);
+	scr_Boss_Attack_Sprite_v2(spr_dark_storm_cloud_mouth_into_eye_mood, _hold_frame, 3, 3, 20);
 	if image_index = _hold_frame {
 		scr_Boss_Wobble("Horizontal", 2, 0.4, 0)	
 	}

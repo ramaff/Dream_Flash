@@ -29,7 +29,7 @@ if Charge_Hold = 2 {
 		sspr = "spr_Crystal_Laser_Charge_Ball"
 	}
 	
-	draw_sprite_ext(asset_get_index(sspr), 0, x, y - 50, size, size, 0, c_white, 1)
+	draw_sprite_ext(asset_get_index(sspr), 0, x, y - 50 - scr_Wave(0, 30, 3, 0), size, size, 0, c_white, 1)
 }
 
 /*
