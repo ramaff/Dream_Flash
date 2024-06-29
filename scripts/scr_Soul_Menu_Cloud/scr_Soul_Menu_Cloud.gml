@@ -57,7 +57,7 @@ function scr_Soul_Menu_Cloud() {
 	
 	//show_debug_message(string(recollectionMirror))
 
-	with instance_create(x,y,obj_Recollection_Cloud) {
+	with instance_create(x,y,obj_In_Game_Recollection_Cloud) {
 		depth -= 1;
 	    recollectionMirror = other.recollectionMirror;
 	    recollectionString = other.recollectionString;

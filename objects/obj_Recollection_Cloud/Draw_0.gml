@@ -11,6 +11,9 @@ repeat(recollectionUpgrade) {
 
 recollectionIndex = 0;
 
+image_xscale = 0.5;
+image_yscale = 0.5; 
+
 if image_alpha >= 0.25 {
     recollectionIndex = 1;
 }
@@ -57,7 +60,7 @@ if leave = 1 {
 
 if shop = 0 {
 if recollectionMirror = 0 {
-    draw_sprite_ext(cloudS,recollectionIndex,x,y,1,1,0,c_white,image_alpha);
+    draw_sprite_ext(cloudS,recollectionIndex,x,y,image_xscale,image_yscale,0,c_white,image_alpha);
     if image_alpha >= 0.5 {
     draw_set_alpha(image_alpha);
     draw_text(x+_text_xoffset,y-_text_yoffset_minus, string_hash_to_newline(recollectionString + recollectionUpgradeString));
@@ -67,7 +70,7 @@ if recollectionMirror = 0 {
     draw_set_alpha(1);
     }
 } else if recollectionMirror = 1 {
-    draw_sprite_ext(cloudS,recollectionIndex,x,y,-1,1,0,c_white,image_alpha);
+    draw_sprite_ext(cloudS,recollectionIndex,x,y,-image_xscale,image_yscale,0,c_white,image_alpha);
     if image_alpha >= 0.5 {
     draw_set_alpha(image_alpha);
     draw_text(x-_text_xoffset_minus,y-_text_yoffset_minus, string_hash_to_newline(recollectionString + recollectionUpgradeString));
@@ -77,7 +80,7 @@ if recollectionMirror = 0 {
 	draw_set_alpha(1);
     }
 } else if recollectionMirror = 2 {
-    draw_sprite_ext(cloudS,recollectionIndex,x,y,1,-1,0,c_white,image_alpha);
+    draw_sprite_ext(cloudS,recollectionIndex,x,y,image_xscale,-image_yscale,0,c_white,image_alpha);
     if image_alpha >= 0.5 {
     draw_set_alpha(image_alpha);
     draw_text(x+_text_xoffset,y+_text_yoffset, string_hash_to_newline(recollectionString + recollectionUpgradeString));
@@ -87,7 +90,7 @@ if recollectionMirror = 0 {
 	draw_set_alpha(1);
     }
 } else if recollectionMirror = 3 {
-    draw_sprite_ext(cloudS,recollectionIndex,x,y,-1,-1,0,c_white,image_alpha);
+    draw_sprite_ext(cloudS,recollectionIndex,x,y,-image_xscale,-image_yscale,0,c_white,image_alpha);
     if image_alpha >= 0.5 {
     draw_set_alpha(image_alpha);
     draw_text(x-_text_xoffset_minus,y+_text_yoffset, string_hash_to_newline(recollectionString + recollectionUpgradeString));
@@ -101,7 +104,7 @@ if recollectionMirror = 0 {
 
 if shop > 0 {
 	if recollectionMirror = 0 {
-	    draw_sprite_ext(cloudS,recollectionIndex,x,y,1,1,0,c_white,image_alpha);
+	    draw_sprite_ext(cloudS,recollectionIndex,x,y,image_xscale,image_yscale,0,c_white,image_alpha);
 	    if image_alpha >= 0.5 {
 	    draw_set_alpha(image_alpha);
 	    draw_text(x+188,y-224, string_hash_to_newline(recollectionString + recollectionUpgradeString));
@@ -129,7 +132,7 @@ if shop > 0 {
 		}
 	}
 	if recollectionMirror = 1 {
-	    draw_sprite_ext(cloudS,recollectionIndex,x,y,-1,1,0,c_white,image_alpha);
+	    draw_sprite_ext(cloudS,recollectionIndex,x,y,-image_xscale,image_yscale,0,c_white,image_alpha);
 	    if image_alpha >= 0.5 {
 	    draw_set_alpha(image_alpha);
 	    draw_text(x-188,y-224, string_hash_to_newline(recollectionString + recollectionUpgradeString));

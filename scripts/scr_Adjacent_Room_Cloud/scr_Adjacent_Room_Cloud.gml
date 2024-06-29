@@ -103,7 +103,7 @@ function scr_Adjacent_Room_Cloud() {
 	//recollectionString = "?";
 	
 	if recollectionString != "?" {
-		with instance_create(obj_Soul_Parent.x,obj_Soul_Parent.y,obj_Recollection_Cloud) {
+		with instance_create(obj_Soul_Parent.x,obj_Soul_Parent.y,obj_In_Game_Recollection_Cloud) {
 		    recollectionString = other.recollectionString;
 		    priceString = other.priceString;
 		}

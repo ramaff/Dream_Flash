@@ -1,4 +1,4 @@
-function scr_Item_Recollection_Cloud(time = 1, linger) {
+function scr_Item_Recollection_Cloud(time = 1) {
 
 	if global.recoalpha < 1 {
 	    global.recoalpha += 0.15;
@@ -10,9 +10,9 @@ function scr_Item_Recollection_Cloud(time = 1, linger) {
 		global.recoalpha = 0.05;
 	}
 
-	draw_sprite_ext(spr_Recollection_Hover_Cloud,0,x,y,1,1,0,c_white,global.recoalpha);
+	//draw_sprite_ext(spr_Recollection_Hover_Cloud,0,x,y,1,1,0,c_white,global.recoalpha);
 	
-	with instance_create(obj_Soul_Parent.x,obj_Soul_Parent.y,obj_Recollection_Cloud) {
+	with instance_create(obj_Soul_Parent.x,obj_Soul_Parent.y,obj_In_Game_Recollection_Cloud) {
 		recollectionPriceType = other.recollectionPriceType;
 		recollectionString = other.recollectionString;
 		priceString = other.priceString;
