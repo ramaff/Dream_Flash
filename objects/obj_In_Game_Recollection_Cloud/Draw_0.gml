@@ -9,40 +9,29 @@ repeat(recollectionUpgrade) {
     recollectionUpgradeString += "+";
 }
 
-recollectionIndex = 0;
-
 image_xscale = 0.5;
-image_yscale = 0.5; 
-
-if image_alpha >= 0.25 {
-    recollectionIndex = 1;
-}
-if image_alpha >= 0.5 {
-    recollectionIndex = 2;
-}
-if image_alpha >= 0.75 {
-    recollectionIndex = 3;
-}
+image_yscale = 0.5;
 
 var _y_offset = -50;
 
 if shop > 0 || (string_length(recollectionExtraStats) > 50) {
 	
-	var _y_offset = -70;
+	var _y_offset = -60;
 }
 
 if leave = 1 {
-	recollectionIndex = image_index;	
 	image_alpha = 1;
 }
 
-draw_sprite_ext(sprite_index,recollectionIndex,x,y,image_xscale,image_yscale,0,c_white,image_alpha);
+draw_sprite_ext(sprite_index,image_index,x,y,image_xscale,image_yscale,0,c_white,image_alpha);
 if image_alpha >= 0.5 {
 	draw_set_alpha(image_alpha);
-	draw_text(x,y+_y_offset, string_hash_to_newline(recollectionString + recollectionUpgradeString));
 	if recollectionExtraStats != 0 {
 		draw_text_ext(x,y+_y_offset+32, string_hash_to_newline(recollectionExtraStats),24,200);
+	} else {
+		_y_offset += 30;	
 	}
+	draw_text(x,y+_y_offset, string_hash_to_newline(recollectionString + recollectionUpgradeString));
 	draw_set_alpha(1);
 }
 

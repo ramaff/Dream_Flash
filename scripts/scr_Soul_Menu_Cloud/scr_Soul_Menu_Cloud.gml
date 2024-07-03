@@ -58,7 +58,12 @@ function scr_Soul_Menu_Cloud() {
 	//show_debug_message(string(recollectionMirror))
 
 	with instance_create(x,y,obj_In_Game_Recollection_Cloud) {
-		depth -= 1;
+		depth -= 100;
+		target = other.id;
+		xx_offset = -200;
+		yy_offset = 125;
+		
+		event_user(0)
 	    recollectionMirror = other.recollectionMirror;
 	    recollectionString = other.recollectionString;
 	    priceString = other.priceString;

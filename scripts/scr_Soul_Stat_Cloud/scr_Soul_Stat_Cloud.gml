@@ -1,6 +1,6 @@
 function scr_Soul_Stat_Cloud() {
 	//draw_self();
-	draw_sprite(spr_Recollection_Hover_Cloud,0,x,y);
+	//draw_sprite(spr_Recollection_Hover_Cloud,0,x,y);
 
 	if stat = 1 {
 	    recollectionString = "STRENGTH";
@@ -44,7 +44,13 @@ function scr_Soul_Stat_Cloud() {
 	    priceString = "";
 	    recollectionMirror = 2;
 
-	with instance_create(x,y,obj_Recollection_Cloud) {
+	with instance_create(x,y,obj_In_Game_Recollection_Cloud) {
+		depth = other.depth - 1;
+		target = other.id
+		xx_offset = 200;
+		yy_offset = 125;
+		event_user(0)
+
 	    recollectionMirror = other.recollectionMirror;
 	    recollectionString = other.recollectionString;
 	    priceString = other.priceString;
