@@ -13,8 +13,8 @@ direction = scr_Soul_Point()
 
 if active_attack = 0 {
 	speed = lerp(speed, bossmovespeed * 1.75, 0.1)
-} else if active_attack = 4 and pattern_count < pattern_count_max {
-	speed = lerp(speed, -bossmovespeed * 3, 0.02)	
+} else if (active_attack = 4 || active_attack = 8) and pattern_count < pattern_count_max {
+	speed = lerp(speed, -bossmovespeed * 3, 0.03)	
 	direction = pattern_direction;
 } else if active_attack = 5 and active_attack_delay > 0 {
 	speed = lerp(speed, -bossmovespeed * 2, 0.1)	
@@ -46,11 +46,17 @@ if active_attack_delay <= 0 and active_attack_cooldown <= 0 and active_attack_du
 	if champ = 1 and active_attack = 1 {
 		active_attack = 7;
 	}
+	if champ = 2 and active_attack = 4 {
+		active_attack = 8;	
+	}
 	
     if active_attack = 1 {
 		// Setup how many attacks per boss move, delay, etc
 		var _attack_count = 4;
 		var _attack_spacing = 30;
+		if champ = 2 {
+			_attack_spacing = 45;	
+		}
 		scr_Boss_Attack_Time_Setup_v2(_attack_count, 50, _attack_spacing, 180, 30, 20);
 		
 		pattern_direction = random(360);
@@ -63,6 +69,7 @@ if active_attack_delay <= 0 and active_attack_cooldown <= 0 and active_attack_du
 			_attack_count = 15;	
 		}
 		if champ = 2 {
+			var _attack_count = 12;
 			_attack_spacing = 20;	
 		}
 		if champ = 3 {
@@ -82,8 +89,13 @@ if active_attack_delay <= 0 and active_attack_cooldown <= 0 and active_attack_du
     }
 	// Targeted wave shots
 	if active_attack = 4 {
+		var _attack_count = 13;
+		var _attack_spacing = 10;
+		if champ = 1 {
+			_attack_count = 25;	
+		}
 		// Setup how many attacks per boss move, delay, etc
-		scr_Boss_Attack_Time_Setup_v2(12, 50, 10, 180, 30, 20);
+		scr_Boss_Attack_Time_Setup_v2(_attack_count, 50, _attack_spacing, 180, 30, 20);
 		
 		pattern_direction = scr_Soul_Point()
     }
@@ -99,10 +111,19 @@ if active_attack_delay <= 0 and active_attack_cooldown <= 0 and active_attack_du
 	if active_attack = 7 {
 		// Setup how many attacks per boss move, delay, etc
 		var _attack_count = 30;
-		var _attack_spacing = 20;
+		var _attack_spacing = 15;
 		scr_Boss_Attack_Time_Setup_v2(_attack_count, 50, _attack_spacing, 180, 30, 20);
 		
 		pattern_direction = random(360);
+    }
+	// Targeted wave shots
+	if active_attack = 8 {
+		var _attack_count = 6;
+		var _attack_spacing = 50;
+		// Setup how many attacks per boss move, delay, etc
+		scr_Boss_Attack_Time_Setup_v2(_attack_count, 50, _attack_spacing, 180, 30, 20);
+		
+		pattern_direction = scr_Soul_Point()
     }
 }
 
@@ -161,6 +182,39 @@ if active_attack_delay <= 0 and pattern_cooldown <= 0 and pattern_count > 0 {
 			bullet_type = obj_Phase_Spin_Bullet_Alt
 			scr_Boss_Shoot();
 		}
+		
+		if champ = 2 and pattern_count = pattern_count_max {
+				
+			bullet_type = obj_Beam_Bullet_v2
+		    bullet_sprite = spr_Lightning_Beam;
+		    bullet_speed = 0;
+		    bullet_size = 1.25 / 2;
+		    bullet_count = 4;
+		    bullet_spread = 90;
+		    boss_radius = 0;
+			bullet_power = 0
+			bullet_lifespan = 240;
+		    bullet_sprite = spr_Lightning_Beam_Segment;
+			if image_index > 3 and pattern_count_max - pattern_count < 30 {
+				image_index = 3;	
+			}
+				
+			scr_Spirit_Boss_BullFX_Pre();
+	
+			dir = 45 - (bullet_spread * (bullet_count - 1) / 2);
+				
+			repeat(bullet_count) {
+					
+				bullet_direction = dir + 45
+				
+				boss_xoffset = lengthdir_x(50, bullet_direction)
+				boss_yoffset = lengthdir_y(50, bullet_direction)
+					
+				event_user(0)
+					
+				dir += bullet_spread;
+			}	
+		}
 	
 		// If you gotta change the pattern aim direction
 	    // pattern_direction += 0;
@@ -192,12 +246,23 @@ if active_attack_delay <= 0 and pattern_cooldown <= 0 and pattern_count > 0 {
         bullet_sprite = spr_Water_Drop_Bullet;
         bullet_speed = bossbulletspeed * 2.5;
         bullet_count = 8;
-        bullet_spread = 225 / bullet_count;
-		
+        bullet_spread = 255 / bullet_count;
 		
 		bullet_direction = scr_Boss_Bullet_Direction_Formula(pattern_direction, 0.5)
 		
 		scr_Boss_Shoot();	
+		
+		if champ = 1 and pattern_count mod 2 = 0 {
+			bullet_count = 1;
+			bullet_type = obj_Splash_Bounce_Bullet;
+	        bullet_sprite = spr_Big_Glowy_Blue_Shot;
+	        bullet_speed = bossbulletspeed * (1.75 + random(0.85));
+	        bullet_power = bosspower * 2;
+		
+			bullet_direction = scr_Boss_Bullet_Direction_Formula(pattern_direction, 60)
+		
+			scr_Boss_Shoot();
+		}
 		
 		//x -= lengthdir_x(20, bullet_direction)
 		//y -= lengthdir_y(20, bullet_direction)
@@ -223,62 +288,16 @@ if active_attack_delay <= 0 and pattern_cooldown <= 0 and pattern_count > 0 {
 				
 			scr_Spirit_Boss_BullFX_Pre();
 	
-			var dir = 45 - (bullet_spread * (bullet_count - 1) / 2);
-		
-			var bull = bullet_type;
-			var _seg_size = 80;
-
-			var _streak_count = 0;
+			dir = 45 - (bullet_spread * (bullet_count - 1) / 2);
 				
 			repeat(bullet_count) {
-				
-				var _zag = 0.5;
 					
-				bullet_direction = dir + (90 * _zag)
+				bullet_direction = dir + 45
 				
 				boss_xoffset = lengthdir_x(50, bullet_direction)
 				boss_yoffset = lengthdir_y(50, bullet_direction)
 					
-				var xx = x + boss_xoffset;
-				var yy = y + boss_yoffset;
-					
-				_streak_count += 1;
-					
-				for(var _count = 0; _count < 17; _count++) {
-					_seg_size = 80;
-					with instance_create(xx, yy, bull) {
-					    scr_Bullet_Shoot_Properties();
-						bulletpower = 0;
-							
-						if _count = 0 {
-							sprite_index = spr_Lightning_Beam_Start;
-						}
-						if _count = 16 {
-							sprite_index = spr_Lightning_Beam_Tail;
-							depth -= 5;
-						}
-						if scr_Chance(3) and _count > 0 {
-							if _zag = -0.5 {
-								_zag = 0.5;
-								image_yscale = -image_yscale;
-							} else if _zag = 0.5 {
-								_zag = -0.5;
-							}
-							x += lengthdir_x(_seg_size / 2, other.bullet_direction)
-							y += lengthdir_y(_seg_size / 2, other.bullet_direction)
-							xx = x;
-							yy = y;
-							sprite_index = spr_Lightning_Beam_Turn;
-						}
-					    //direction = other.bullet_direction + (other.dir) * ((40 + random(global.soulparanoia)) / 40);
-						direction = other.bullet_direction;
-						image_angle = direction;
-						scr_Spiritual_Stats_Boss_Bullet_Effects();
-					}
-					bullet_direction = dir + (90 * _zag)
-					xx += lengthdir_x(_seg_size, bullet_direction)
-					yy += lengthdir_y(_seg_size, bullet_direction)
-				}
+				event_user(0)
 					
 				dir += bullet_spread;
 			}
@@ -300,21 +319,70 @@ if active_attack_delay <= 0 and pattern_cooldown <= 0 and pattern_count > 0 {
 		if pattern_count mod 30 = 0 {
 			scr_Boss_Stretch("Vertical", 0.25);
 			
-			bullet_count = 8;
-			bullet_spread = 45;
-			bullet_direction = 0;
-			if pattern_count mod 90 = 0 {
-				bullet_direction += 15;	
-			}
-			if pattern_count mod 90 = 30 {
-				bullet_direction += 30;	
-			}
-			bullet_type = obj_Zig_Zag_Bullet;
-			bullet_sprite = spr_Lightning_Bullet;
-			bullet_lifespan = 240;
-			bullet_speed = bossbulletspeed * 2.9;
+			if champ = 1 {
+				bullet_type = obj_Splash_Bounce_Bullet;
+		        bullet_sprite = spr_Big_Glowy_Blue_Shot;
+		        bullet_speed = bossbulletspeed * (1.75 + random(0.85));
+		        bullet_power = bosspower * 2;
+				bullet_count = 2;
+				bullet_spread = 180;
 		
-			scr_Boss_Shoot();
+				bullet_direction = random(360);
+		
+				scr_Boss_Shoot();
+			} else {
+				bullet_count = 8;
+				bullet_spread = 45;
+				if champ = 2 {
+					bullet_count = 6;
+					bullet_spread = 60;
+				}
+				bullet_direction = 0;
+				if pattern_count mod 90 = 0 {
+					bullet_direction += (bullet_spread / 3);	
+				}
+				if pattern_count mod 90 = 30 {
+					bullet_direction -= (bullet_spread / 3)	
+				}
+				bullet_type = obj_Zig_Zag_Bullet;
+				bullet_sprite = spr_Lightning_Bullet;
+				bullet_lifespan = 240;
+				bullet_speed = bossbulletspeed * 2.9;
+		
+				scr_Boss_Shoot();
+			}
+			
+			if champ = 2 {
+				bullet_type = obj_Beam_Bullet_v2
+			    bullet_sprite = spr_Lightning_Beam;
+			    bullet_speed = 0;
+			    bullet_size = 1.25 / 2;
+			    bullet_count = 2;
+			    bullet_spread = 180;
+			    boss_radius = 0;
+				bullet_power = 0
+				bullet_lifespan = 120;
+			    bullet_sprite = spr_Lightning_Beam_Segment;
+				if image_index > 3 and pattern_count_max - pattern_count < 30 {
+					image_index = 3;	
+				}
+				
+				scr_Spirit_Boss_BullFX_Pre();
+	
+				dir = random(360) - (bullet_spread * (bullet_count - 1) / 2);
+				
+				repeat(bullet_count) {
+					
+					bullet_direction = dir + 45
+				
+					boss_xoffset = lengthdir_x(50, bullet_direction)
+					boss_yoffset = lengthdir_y(50, bullet_direction)
+					
+					event_user(0)
+					
+					dir += bullet_spread;
+				}
+			}
 		}
 	
 	}
@@ -329,19 +397,35 @@ if active_attack_delay <= 0 and pattern_cooldown <= 0 and pattern_count > 0 {
 			
 			scr_Boss_Stretch("Horizontal", 0.75);
 			
-			bullet_count = 8;
-			bullet_spread = 45;
-			bullet_direction = 0;
-			bullet_type = obj_Zig_Zag_Bullet;
-			bullet_sprite = spr_Lightning_Bullet;
+			if champ = 1 {
+				bullet_count = 6;
+				bullet_spread = 60;
+				bullet_type = obj_Splash_Bounce_Bullet;
+		        bullet_sprite = spr_Big_Glowy_Blue_Shot;
+		        bullet_speed = bossbulletspeed * (2.15);
+		        bullet_power = bosspower * 2;
+				
+				repeat(2) {
+					bullet_direction += 30;
+					scr_Boss_Shoot();
+					bullet_speed += bossbulletspeed * 0.95;
+				}
+			} else {
+			
+				bullet_count = 8;
+				bullet_spread = 45;
+				bullet_direction = 0;
+				bullet_type = obj_Zig_Zag_Bullet;
+				bullet_sprite = spr_Lightning_Bullet;
 
-			bullet_lifespan = 240;
-			bullet_speed = bossbulletspeed * 2.5;
+				bullet_lifespan = 240;
+				bullet_speed = bossbulletspeed * 2.5;
 		
-			repeat(3) {
-				bullet_direction += 22.5;
-				scr_Boss_Shoot();
-				bullet_speed += bossbulletspeed * 0.7;
+				repeat(3) {
+					bullet_direction += 22.5;
+					scr_Boss_Shoot();
+					bullet_speed += bossbulletspeed * 0.7;
+				}
 			}
 		}
 	}
@@ -360,7 +444,7 @@ if active_attack_delay <= 0 and pattern_cooldown <= 0 and pattern_count > 0 {
 		repeat(2) {
 			scr_Boss_Shoot();
 			bullet_speed = bossbulletspeed * 1.15;
-			bullet_direction += 7.5;
+			bullet_direction += 9;
 		
 		}
 		
@@ -377,7 +461,58 @@ if active_attack_delay <= 0 and pattern_cooldown <= 0 and pattern_count > 0 {
 			scr_Boss_Shoot();
 		}
 		
-		pattern_direction += 15;
+		pattern_direction += 18;
+	}
+	
+	if active_attack = 8 {
+		scr_Boss_Stretch("Vertical", 0.15);
+		
+		bullet_type = obj_Wave_Bullet;
+        bullet_sprite = spr_Water_Drop_Bullet;
+        bullet_speed = bossbulletspeed * 2.5;
+        bullet_count = 16;
+        bullet_spread = 270 / bullet_count;
+		
+		bullet_direction = scr_Boss_Bullet_Direction_Formula(pattern_direction, 0.5)
+		
+		scr_Boss_Shoot();
+		
+		if pattern_count = pattern_count_max {
+				
+			bullet_type = obj_Beam_Bullet_v2
+		    bullet_sprite = spr_Lightning_Beam;
+		    bullet_speed = 0;
+		    bullet_size = 1.25 / 2;
+		    bullet_count = 4;
+		    bullet_spread = 60;
+		    boss_radius = 0;
+			bullet_power = 0
+			bullet_lifespan = 240;
+		    bullet_sprite = spr_Lightning_Beam_Segment;
+			if image_index > 3 and pattern_count_max - pattern_count < 30 {
+				image_index = 3;	
+			}
+				
+			scr_Spirit_Boss_BullFX_Pre();
+	
+			dir = scr_Boss_Bullet_Direction_Formula(pattern_direction, 0.5) - (bullet_spread * (bullet_count - 1) / 2);
+				
+			repeat(bullet_count) {
+					
+				bullet_direction = dir + 45
+				
+				boss_xoffset = lengthdir_x(50, bullet_direction)
+				boss_yoffset = lengthdir_y(50, bullet_direction)
+					
+				event_user(0)
+					
+				dir += bullet_spread;
+			}
+				
+		}
+		
+		//x -= lengthdir_x(20, bullet_direction)
+		//y -= lengthdir_y(20, bullet_direction)
 	}
 	
 	// Maybe I should put this into a script
@@ -389,10 +524,26 @@ if active_attack_delay <= 0 and pattern_cooldown <= 0 and pattern_count > 0 {
 /// Active Attack Post
 //////////////////////////////////////////////////////////////////////////////////////////
 
+if active_attack = 8 || (active_attack = 2 and champ = 2) {
+	with obj_Beam_Bullet_v2 {
+		if bulletorigin = other.id {
+			x += other.x - other.stored_x;
+			y += other.y - other.stored_y;
+		}
+	}
+				
+	stored_x = x;
+	stored_y = y;	
+}
+
 if active_attack_duration <= 0 { 
 	if active_attack = 5 {
 		active_attack = 6
-		scr_Boss_Attack_Time_Setup_v2(240, 40, 1, 120, 120, 10);
+		var _attack_count = 240;
+		if champ = 2 {
+			_attack_count = 480;			
+		}
+		scr_Boss_Attack_Time_Setup_v2(_attack_count, 40, 1, 120, 120, 10);
 		pattern_direction = random(360);
 			
 		stored_x = x;
@@ -426,7 +577,7 @@ if active_attack = 3 || active_attack = 5 {
 	if image_index = _hold_frame {
 		scr_Boss_Wobble("Horizontal", 2, 0.4, 0)	
 	}
-} else if active_attack = 1 || active_attack = 2 || active_attack = 4 || active_attack = 7 {
+} else if active_attack = 1 || active_attack = 2 || active_attack = 4 || active_attack = 8 || active_attack = 7 {
 	var _hold_frame = 2;
 	scr_Boss_Attack_Sprite_v2(spr_dark_storm_cloud_eye_mood, _hold_frame, 3, 3, 20);
 	if image_index = _hold_frame {
