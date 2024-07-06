@@ -8,6 +8,7 @@ function scr_C11_Shot_Mod(excess_essence = 0){
 		current_weapon_stats.Shot_Power = current_weapon_stats.Shot_Power * boost_fac;
 		current_weapon_stats.Shot_Burst_Power = current_weapon_stats.Shot_Burst_Power * boost_fac
 		current_weapon_stats.Shot_Excess_Essence += excess_essence * global.C[11];
+		current_weapon_stats.Shot_Instability += current_weapon_stats.Shot_Speed / 2;
 		if global.currentweapon = 14 {
 			current_weapon_stats.Shot_Excess_Essence += excess_essence * global.C[11] * 2;
 		}

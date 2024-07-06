@@ -258,6 +258,7 @@ function scr_Shot_Creation(_cw = current_weapon_stats) {
 				}
 		
 				alarm[2] = 1;
+				alarm[4] = 1;
 				if alarm[0] < 1 {
 					alarm[0] = 1;	
 				}

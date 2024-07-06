@@ -1,11 +1,14 @@
-function scr_Duplicate_Shot_Stats(_new_shot_stats = other.shot_stats) {
+function scr_Duplicate_Shot_Stats(_new_shot_stats = other.shot_stats, _existing_shot_stats = other.shot_stats) {
 	
 	//var _base_stats = scr_Setup_Default_Shot_Stats()
-	shot_stats = json_parse(json_stringify(other.shot_stats));
+	if _existing_shot_stats != {} {
+		//shot_stats = json_parse(json_stringify(other.shot_stats));
+		shot_stats = json_parse(json_stringify(_existing_shot_stats));
+	}
 	
 	var _pow_ratio = other.shot_stats.Shot_Power / other.shot_stats.Shot_Power_Level;
 
-	if _new_shot_stats != other.shot_stats {
+	if _new_shot_stats != _existing_shot_stats {
 		shot_stats = scr_Struct_Merge(shot_stats, _new_shot_stats, false)
 	}
 	
@@ -26,10 +29,6 @@ function scr_Duplicate_Shot_Stats(_new_shot_stats = other.shot_stats) {
 	if shot_stats.Shot_Frames > 0 {
 		shot_stats.Shot_Frame = irandom(shot_stats.Shot_Frames)	
 	}
-	
-	//Print_DF(shot_stats)
-	
-	//shot_stats = scr_Setup_Shot_Stats_Asset(shot_stats);
 
 	target = other.target;
 	otarget = other.otarget;
@@ -47,8 +46,6 @@ function scr_Duplicate_Shot_Stats(_new_shot_stats = other.shot_stats) {
 	
 	shot_stats.Shot_Follow_Origin = other.shot_stats.Shot_Follow_Origin;
 	
-	//shot_stats.Shot_Timer = shot_stats.Shot_Life_Span;
-	
 	image_xscale = shot_stats.Shot_Size;
 	image_yscale = shot_stats.Shot_Size;
 	
@@ -64,6 +61,7 @@ function scr_Duplicate_Shot_Stats(_new_shot_stats = other.shot_stats) {
 	speed = shot_stats.Shot_Speed;
 	alarm[0] = shot_stats.Shot_Life_Span;
 	alarm[2] = 1;
+	alarm[4] = 1;
 	alarm[3] = 15;
 
 	followtarget = other.followtarget

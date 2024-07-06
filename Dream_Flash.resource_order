@@ -352,6 +352,7 @@
     {"name":"scr_Copy_Backup_to_Save","order":3,"path":"scripts/scr_Copy_Backup_to_Save/scr_Copy_Backup_to_Save.yy",},
     {"name":"spr_the_host_skitter","order":7,"path":"sprites/spr_the_host_skitter/spr_the_host_skitter.yy",},
     {"name":"obj_Corruption_Spire","order":4,"path":"objects/obj_Corruption_Spire/obj_Corruption_Spire.yy",},
+    {"name":"spr_Thicker_Lightning_Streak","order":1,"path":"sprites/spr_Thicker_Lightning_Streak/spr_Thicker_Lightning_Streak.yy",},
     {"name":"obj_Marble_Bomb_Bullet","order":13,"path":"objects/obj_Marble_Bomb_Bullet/obj_Marble_Bomb_Bullet.yy",},
     {"name":"obj_Mind_Corruptor","order":3,"path":"objects/obj_Mind_Corruptor/obj_Mind_Corruptor.yy",},
     {"name":"spr_boxer_slamming","order":2,"path":"sprites/spr_boxer_slamming/spr_boxer_slamming.yy",},

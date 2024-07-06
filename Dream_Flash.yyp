@@ -2591,6 +2591,7 @@
     {"id":{"name":"spr_Thought_Spawn","path":"sprites/spr_Thought_Spawn/spr_Thought_Spawn.yy",},},
     {"id":{"name":"spr_Fuse_Soul_Shot","path":"sprites/spr_Fuse_Soul_Shot/spr_Fuse_Soul_Shot.yy",},},
     {"id":{"name":"spr_Spike_Soul","path":"sprites/spr_Spike_Soul/spr_Spike_Soul.yy",},},
+    {"id":{"name":"spr_Thicker_Lightning_Streak","path":"sprites/spr_Thicker_Lightning_Streak/spr_Thicker_Lightning_Streak.yy",},},
     {"id":{"name":"spr_Knife_Soul","path":"sprites/spr_Knife_Soul/spr_Knife_Soul.yy",},},
     {"id":{"name":"obj_Marble_Bomb_Bullet","path":"objects/obj_Marble_Bomb_Bullet/obj_Marble_Bomb_Bullet.yy",},},
     {"id":{"name":"spr_Copy_Cat_Soul","path":"sprites/spr_Copy_Cat_Soul/spr_Copy_Cat_Soul.yy",},},

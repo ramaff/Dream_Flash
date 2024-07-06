@@ -44,20 +44,6 @@ if shot_stats.Shot_Face_Direction = 1 {
 	scr_Shot_Two_Face_Direction();	
 }
 
-//if shot_stats.Shot_Lobbing = true {
-//	scr_Shot_Lobbing();
-//}
-
-//shot_stats.Shot_Timer--;
-
-/*if alarm[0] <= shot_stats.Shot_Life_Span / 2 and shot_stats.Shot_Wander > 0 {
-	shot_stats.Shot_Wander--;
-	direction = random(360);
-	var fac = (1 + random(1))
-	shot_stats.Shot_Speed = shot_stats.Shot_Speed * fac;
-	speed = speed * fac;
-} */
-
 
 if shot_stats.Shot_Shrink = 1 {
 	shot_stats.Shot_Size -= shot_stats.Shot_Size_Max / shot_stats.Shot_Life_Span;
@@ -75,7 +61,6 @@ if shot_stats.Shot_Fade = 1 {
 
 image_angle += shot_stats.Shot_Image_Rotation_Speed;
 
-//direction += shot_stats.Shot_Wave_Direction;
 shot_stats.Shot_Wave_Direction -= shot_stats.Shot_Wave_Acceleration;
 
 shot_stats.Shot_Speed -= shot_stats.Shot_Friction;
@@ -112,14 +97,16 @@ if shot_stats.Shot_Soul_Maintain = 1 {
 	}
 }
 
+if shot_stats.Shot_Instability > 0 {
+	x += (random(1) - 0.5) * shot_stats.Shot_Instability;
+	y += (random(1) - 0.5) * shot_stats.Shot_Instability;	
+}
+
 if shot_stats.Shot_Excess_Essence > 0 {
 	if alarm[0] mod 9 = 0 {
 		var color = make_color_rgb(0, 170, 255)
 		scr_Particle_Burst(obj_Friction_Part, spr_Soul_Big_Bit, color, color, 1, 4 + random(4), random(360), 0, 0, shot_stats.Shot_Size - 0.1, 10 + random(5))
 	}
-	var fac = speed / 2;
-	x += (random(1) - 0.5) * fac;
-	y += (random(1) - 0.5) * fac;
 }
 
 if shot_stats.Shot_Grow > 0 {
@@ -160,9 +147,9 @@ if shot_stats.Shot_Air_Burst_Stats != false {
 				}
 				
 		        with instance_create(x,y,_obj) {
-		            scr_Duplicate_Shot_Stats();
-						
 					var _v_shot_air_burst_stats = other.shot_stats.Shot_Air_Burst_Stats[burstIndex]
+					
+					scr_Duplicate_Shot_Stats(_v_shot_air_burst_stats, {});
 					
 					scr_Shot_Burst_Stats(_v_shot_air_burst_stats);
 					
