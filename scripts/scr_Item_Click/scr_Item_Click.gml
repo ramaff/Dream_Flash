@@ -204,6 +204,9 @@ function scr_Item_Click(linger = false){
 			scr_Sound_Effect(snd_Pick_Up_Item_Bad);
 		} else {
 			scr_Sound_Effect(snd_Pick_Up_Item_Good);
+			if recoGroup = "A" || recoGroup = "B" || recoGroup = "C" || recoGroup = "D" || recoGroup = "E" || recoGroup = "F" {
+				scr_Tutorial_Note_Spawn("stat_level_up")	
+			}
 		}
 	}
 	
@@ -222,4 +225,6 @@ function scr_Item_Click(linger = false){
 	if linger = true || recollectionCount <= 1 {
 		scr_Item_Recollection_Cloud(120);
 	}
+	
+	scr_Tutorial_Note_Spawn("item_field")
 }

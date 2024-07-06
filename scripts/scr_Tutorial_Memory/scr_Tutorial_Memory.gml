@@ -100,11 +100,11 @@ function scr_Information_Memory() {
 		recollectionDescription = "Despair\n+5 Boss Difficulty at max despair(40)\n-2 Soul Defense at max despair(40)\n+20% Boss Attack Speed at max despair(40)\n+100% Field Darkness at max despair(40)";
 	}
 	if itemVal = "Tutorial 26" and global.spiritTutorial >= 1 {
-	    recollectionSprite = spr_Misc_Tutorial_Stuff;
+	    recollectionSprite = spr_spirit_tutorial;
 		recollectionDescription = "You've encountered a wandering Masked Spirit. These spirits wander the dreamscape, leaving if unprovoked.";
 	}
 	if itemVal = "Tutorial 27" and global.spiritTutorial >= 1 {
-	    recollectionSprite = spr_Misc_Tutorial_Stuff;
+	    recollectionSprite = spr_spirit_tutorial;
 		recollectionDescription = "Killing a masked spirit allows you to increase your emotional stats. Be careful, though, as provoking a spirit will cause more dangerous ones to appear later on.";
 	}
 	//recollectionSprite = spr_Tutorial_Stuff;

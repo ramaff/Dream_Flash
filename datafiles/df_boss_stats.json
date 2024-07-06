@@ -265,17 +265,39 @@
         },
 
         "Boss 008": {
-            "Name": "Nightmare Cloud",
-            "Recollection_Sprite": "reco_Nightmare_Cloud",
-            "Health_Phase_1": 750,
-            "Health_Phase_2": 730,
+            "Name": "Dark Storm Cloud",
+            "Recollection_Sprite": "reco_dark_storm_cloud",
+            "Health_Phase_1": 850,
+            "Health_Phase_2": 830,
             "Defense_Phase_1": 1,
             "Defense_Phase_2": 1,
             "Boss_Danger": 13,
             "Bullet_Speed": 2.4,
             "Move_Speed": 1,
         
-            "recollectionDescription": "These dark thoughts start to cloud your judgement."
+            "recollectionDescription": "These dark thoughts start to cloud your judgement.",
+
+            "Champ 1": {
+                "Name": "Hurricane Cloud",
+                "Recollection_Sprite": "reco_dark_storm_cloud",
+                "Health_Phase_1": 960,
+                "Health_Phase_2": 950,
+                "Palette_Index": 1
+            },
+            "Champ 2": { 
+                "Name":  "Severe Thunder Storm Cloud",
+                "Recollection_Sprite": "reco_dark_storm_cloud",
+                "Health_Phase_1": 960,
+                "Health_Phase_2": 950,
+                "Palette_Index": 2
+            },
+            "Champ 3": { 
+                "Name":  "Vortex Cloud",
+                "Recollection_Sprite": "reco_dark_storm_cloud",
+                "Health_Phase_1": 960,
+                "Health_Phase_2": 950,
+                "Palette_Index": 3
+            }
         
         },
 

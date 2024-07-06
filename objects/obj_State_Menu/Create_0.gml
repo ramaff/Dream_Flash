@@ -21,3 +21,5 @@ with instance_create(camX - 352,camY + 240,obj_Back_To_Soul_Menu_Button) {
 with instance_create(camX - 256,camY + 240,obj_State_Menu_Button) {
 	depth = -1000000;	
 }
+
+scr_Tutorial_Note_Spawn("state_menu_tutorial")

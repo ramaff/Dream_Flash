@@ -11,8 +11,8 @@
   "managed": true,
   "overriddenProperties": [],
   "parent": {
-    "name": "Notes",
-    "path": "folders/Objects/Controllers/Notes.yy",
+    "name": "Tutorial Notes",
+    "path": "folders/Objects/Tutorial Notes.yy",
   },
   "parentObjectId": {
     "name": "Tutorial_Control",
