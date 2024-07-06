@@ -33,7 +33,7 @@ function scr_Boss_Damage_Calc() {
 	    shotDamage = shotDamageMult * ((shotDamageBase + bossweak + speeddmg) - (other.bossdefense - shot_stats.Shot_Armour_Pierce));
 		shotweaktotal = shotDamageMult * bossweak;
 	}
-	scr_A07_Boss_Damage();
+	//scr_A07_Boss_Damage();
 	if shotDamage < 0 {
 		shotDamage = 0;
 	}

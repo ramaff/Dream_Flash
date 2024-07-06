@@ -88,6 +88,8 @@ function scr_Shot_Creation(_cw = current_weapon_stats) {
 	if Shot_Repetition[bi] >= 1 {
 		_cw.Shot_Direction = Shot_Repetition_Direction[bi];
 	}
+	
+	_cw.Shot_Excess_Essence = _cw.Shot_Excess_Essence / _cw.Shot_Count
 
 	repeat(_cw.Shot_Count) {
 	    if _cw.Weapon_Vomit = 1 {

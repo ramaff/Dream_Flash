@@ -352,6 +352,8 @@ function scr_Extra_Shot_Stats() {
 			scr_XC02_Shot_Mod();
 		}
 		
+		scr_A07_Setup();
+		
 	}
 	
 	scr_XC06_Setup();

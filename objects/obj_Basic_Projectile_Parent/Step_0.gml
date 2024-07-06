@@ -113,9 +113,9 @@ if shot_stats.Shot_Soul_Maintain = 1 {
 }
 
 if shot_stats.Shot_Excess_Essence > 0 {
-	if scr_Chance(5) {
+	if alarm[0] mod 9 = 0 {
 		var color = make_color_rgb(0, 170, 255)
-		scr_Particle_Burst(obj_Friction_Part, spr_Soul_Big_Bit, color, color, 1, 4 + random(4), random(360), 0, 0, shot_stats.Shot_Size, 10 + random(5))
+		scr_Particle_Burst(obj_Friction_Part, spr_Soul_Big_Bit, color, color, 1, 4 + random(4), random(360), 0, 0, shot_stats.Shot_Size - 0.1, 10 + random(5))
 	}
 	var fac = speed / 2;
 	x += (random(1) - 0.5) * fac;
@@ -147,9 +147,11 @@ if shot_stats.Shot_Air_Burst_Stats != false {
 			dir = -sprd / 2;
 			shot_stats.Shot_Life_Span = shot_stats.Shot_Life_Span * 0.6;
 			
-			shot_stats.Shot_Air_Burst_Stats[burstIndex] = scr_Setup_Shot_Stats_Asset(shot_stats.Shot_Air_Burst_Stats[burstIndex]);
+			//shot_stats.Shot_Air_Burst_Stats[burstIndex] = scr_Setup_Shot_Stats_Asset(shot_stats.Shot_Air_Burst_Stats[burstIndex]);
 			
 			var _obj = asset_get_index(shot_stats.Shot_Air_Burst_Stats[burstIndex].Shot_Type)
+			
+			shot_stats.Shot_Excess_Essence = shot_stats.Shot_Excess_Essence / shot_stats.Shot_Air_Burst_Stats[burstIndex].Amount
 			
 		    repeat(shot_stats.Shot_Air_Burst_Stats[burstIndex].Amount) {
 				
