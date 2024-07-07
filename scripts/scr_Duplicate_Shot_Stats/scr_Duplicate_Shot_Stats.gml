@@ -1,18 +1,22 @@
 function scr_Duplicate_Shot_Stats(_new_shot_stats = other.shot_stats, _existing_shot_stats = other.shot_stats) {
 	
 	//var _base_stats = scr_Setup_Default_Shot_Stats()
-	if _existing_shot_stats != {} {
+	if is_struct(_existing_shot_stats) {
 		//shot_stats = json_parse(json_stringify(other.shot_stats));
-		shot_stats = json_parse(json_stringify(_existing_shot_stats));
+		//shot_stats = scr_Dupe_Struct(_existing_shot_stats);
+		shot_stats = _existing_shot_stats
+	} else {
+		shot_stats = scr_Dupe_Struct(other.shot_stats)
 	}
 	
-	var _pow_ratio = other.shot_stats.Shot_Power / other.shot_stats.Shot_Power_Level;
+	//var _pow_ratio = other.shot_stats.Shot_Power / other.shot_stats.Shot_Power_Level;
 
 	if _new_shot_stats != _existing_shot_stats {
+		//Print_DF("stats are being merged")
 		shot_stats = scr_Struct_Merge(shot_stats, _new_shot_stats, false)
 	}
 	
-	shot_stats.Shot_Power_Level = shot_stats.Shot_Power / _pow_ratio
+	//shot_stats.Shot_Power_Level = shot_stats.Shot_Power / _pow_ratio
 	
 	if shot_stats.Shot_Hit_Again = 0 {
 	    shot_id = other.shot_id;

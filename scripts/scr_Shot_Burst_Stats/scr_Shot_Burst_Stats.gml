@@ -8,9 +8,9 @@ function scr_Shot_Burst_Stats(_v_burst_stats){
 		shot_stats.Shot_Power_Max = shot_stats.Shot_Power;
 	} */
 	if variable_struct_exists(_v_burst_stats, "Burst_Power") {
-		shot_stats.Shot_Power = other.shot_stats.Shot_Power * _v_burst_stats.Burst_Power;
-		shot_stats.Shot_Power_Level = other.shot_stats.Shot_Power_Level * _v_burst_stats.Burst_Power;
-		shot_stats.Shot_Aura_Power = other.shot_stats.Shot_Aura_Power * _v_burst_stats.Burst_Power;
+		shot_stats.Shot_Power = shot_stats.Shot_Power * _v_burst_stats.Burst_Power;
+		shot_stats.Shot_Power_Level = shot_stats.Shot_Power_Level * _v_burst_stats.Burst_Power;
+		shot_stats.Shot_Aura_Power = shot_stats.Shot_Aura_Power * _v_burst_stats.Burst_Power;
 		shot_stats.Shot_Power_Max = shot_stats.Shot_Power;
 	} else {
 		shot_stats.Shot_Power = _v_burst_stats.Shot_Power;
@@ -27,29 +27,27 @@ function scr_Shot_Burst_Stats(_v_burst_stats){
 		//shot_stats.Shot_Timer = shot_stats.Shot_Life_Span;
 	}
 	if variable_struct_exists(_v_burst_stats, "Burst_Size") {
-		shot_stats.Shot_Size = other.shot_stats.Shot_Size * _v_burst_stats.Burst_Size
+		shot_stats.Shot_Size = shot_stats.Shot_Size * _v_burst_stats.Burst_Size
 		image_xscale = shot_stats.Shot_Size;
 		image_yscale = shot_stats.Shot_Size;
-		shot_stats.Shot_Size_Max = other.shot_stats.Shot_Size_Max * _v_burst_stats.Burst_Size
+		shot_stats.Shot_Size_Max = shot_stats.Shot_Size_Max * _v_burst_stats.Burst_Size
 	}
 	if variable_struct_exists(_v_burst_stats, "Shot_Sprite") {
 		//show_debug_message(_v_burst_stats.Shot_Sprite)
 		sprite_index = asset_get_index(_v_burst_stats.Shot_Sprite)
 	}
-	if variable_struct_exists(_v_burst_stats, "Shot_Life_Span") {
-		shot_stats.Shot_Life_Span = _v_burst_stats.Shot_Life_Span
+	if variable_struct_exists(_v_burst_stats, "Burst_Life_Span") {
+		shot_stats.Shot_Life_Span = shot_stats.Shot_Life_Span * _v_burst_stats.Burst_Life_Span
 		alarm[0] = shot_stats.Shot_Life_Span;
-		//shot_stats.Shot_Timer = shot_stats.Shot_Life_Span;
+	} else if variable_struct_exists(_v_burst_stats, "Shot_Life_Span") {
+		//shot_stats.Shot_Life_Span = _v_burst_stats.Shot_Life_Span
+		//alarm[0] = shot_stats.Shot_Life_Span;
 	}
 	if variable_struct_exists(_v_burst_stats, "Shot_Pierce") {
 		shot_stats.Shot_Pierce = _v_burst_stats.Shot_Pierce
 	}
-	if variable_struct_exists(_v_burst_stats, "Shot_Speed") {
-		shot_stats.Shot_Speed = _v_burst_stats.Shot_Speed
-		speed = shot_stats.Shot_Speed;
-	}
 	if variable_struct_exists(_v_burst_stats, "Burst_Speed") {
-		shot_stats.Shot_Speed = _v_burst_stats.Burst_Speed
+		shot_stats.Shot_Speed = shot_stats.Shot_Speed * _v_burst_stats.Burst_Speed
 		speed = shot_stats.Shot_Speed;
 	}
 	if variable_struct_exists(_v_burst_stats, "Shot_Point_Angle") {

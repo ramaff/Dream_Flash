@@ -62,7 +62,7 @@ for (bi = 0; bi < 9; bi++) {
 					variable_struct_set(Shot_Stats.Shot_Burst_Stats[burstIndex], "Shot_Size", 0.45); 
 					variable_struct_set(Shot_Stats.Shot_Burst_Stats[burstIndex], "Burst_Size", 0.05);
 					variable_struct_set(Shot_Stats.Shot_Burst_Stats[burstIndex], "Burst_Speed", 1);
-					variable_struct_set(Shot_Stats.Shot_Burst_Stats[burstIndex], "Shot_Life_Span", 0.5);
+					variable_struct_set(Shot_Stats.Shot_Burst_Stats[burstIndex], "Burst_Life_Span", 0.5);
 					variable_struct_set(Shot_Stats.Shot_Burst_Stats[burstIndex], "Amount", 6); 
 					variable_struct_set(Shot_Stats.Shot_Burst_Stats[burstIndex], "Spread", 60);
 		

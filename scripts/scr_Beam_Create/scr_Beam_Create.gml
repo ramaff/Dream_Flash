@@ -92,7 +92,7 @@ function scr_Beam_Create(shxx, shyy, beamseg, beamdir, curvedir, beamstop, beamx
 				if near_dist <= shot_stats.Shot_Air_Burst_Stats[burstIndex].Range {
 					dir = -sprd / 2;
 					//shot_stats.Shot_Life_Span = shot_stats.Shot_Life_Span * 0.6;
-					shot_stats.Shot_Hit_Again = 1
+					//shot_stats.Shot_Hit_Again = 1
 					
 					repeat(shot_stats.Shot_Air_Burst_Stats[burstIndex].Amount) {
 						
@@ -100,10 +100,12 @@ function scr_Beam_Create(shxx, shyy, beamseg, beamdir, curvedir, beamstop, beamx
 							dir = random(sprd) - (sprd / 2)
 						}
 						
+						shot_stats.Shot_Air_Burst_Stats[burstIndex].Shot_Hit_Again = 1
+						
 						with instance_create(shxx + beamxx,shyy + beamyy,obj_Beam_Shot) {
-							scr_Duplicate_Shot_Stats();
-							
 							var _v_shot_air_burst_stats = other.shot_stats.Shot_Air_Burst_Stats[burstIndex]
+					
+							scr_Duplicate_Shot_Stats(_v_shot_air_burst_stats, scr_Dupe_Struct(other.shot_stats));
 							
 							if variable_struct_exists(_v_shot_air_burst_stats, "Shot_Life_Span") {
 								_v_shot_air_burst_stats.Shot_Life_Span = other.shot_stats.Shot_Life_Span
@@ -122,7 +124,7 @@ function scr_Beam_Create(shxx, shyy, beamseg, beamdir, curvedir, beamstop, beamx
 							}
 							
 							shot_stats.Shot_Hit_Again = 0;
-							shotburstpower = shot_stats.Shot_Power
+							//shotburstpower = shot_stats.Shot_Power
 							
 							splitsize = 128 * shot_stats.Shot_Size;
 							beamsize = shot_stats.Shot_Size;
@@ -138,7 +140,7 @@ function scr_Beam_Create(shxx, shyy, beamseg, beamdir, curvedir, beamstop, beamx
 			}	
 		}
 		
-		var _par_power = shot_stats.Shot_Power;
+		//var _par_power = shot_stats.Shot_Power;
 		shot_stats.Shot_Hit_Again = 0;
 		
 		if (beamseg != beamtotalsegs || beamtype = 3) {
@@ -146,7 +148,7 @@ function scr_Beam_Create(shxx, shyy, beamseg, beamdir, curvedir, beamstop, beamx
 
 				scr_Duplicate_Shot_Stats();
 				
-				shot_stats.Shot_Power = _par_power
+				//shot_stats.Shot_Power = _par_power
 				
 				image_angle = beamdir - dirChange;
 				image_xscale = beamsize;

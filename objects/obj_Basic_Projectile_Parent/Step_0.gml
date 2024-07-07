@@ -1,9 +1,3 @@
-//scr_Room_Depth(0);
-
-/*
-if shot_stats.Shot_Air_Target = 0 and shot_stats.Shot_Melee = 0 {
-	//scr_Projectile_Border();
-}*/
 
 scr_A14();
 scr_OA06_Damage();
@@ -35,7 +29,6 @@ if shot_stats.Shot_Bounce = 1 and shot_stats.Shot_Air_Target = 0 and shot_stats.
     scr_Wall_Bounce_Ext();
 }
 
-//scr_Weapon_Direction_List();
 if shot_stats.Shot_Point_Angle = 1 {
 	image_angle = direction;	
 }
@@ -132,10 +125,11 @@ if shot_stats.Shot_Air_Burst_Stats != false {
 		var sprd = shot_stats.Shot_Air_Burst_Stats[burstIndex].Spread
 		if distance_to_object(near_boss) <= shot_stats.Shot_Air_Burst_Stats[burstIndex].Range {
 			dir = -sprd / 2;
-			shot_stats.Shot_Life_Span = shot_stats.Shot_Life_Span * 0.6;
+			//shot_stats.Shot_Life_Span = shot_stats.Shot_Life_Span * 0.6;
 			
 			//shot_stats.Shot_Air_Burst_Stats[burstIndex] = scr_Setup_Shot_Stats_Asset(shot_stats.Shot_Air_Burst_Stats[burstIndex]);
 			
+			var _stats = shot_stats
 			var _obj = asset_get_index(shot_stats.Shot_Air_Burst_Stats[burstIndex].Shot_Type)
 			
 			shot_stats.Shot_Excess_Essence = shot_stats.Shot_Excess_Essence / shot_stats.Shot_Air_Burst_Stats[burstIndex].Amount
@@ -145,11 +139,10 @@ if shot_stats.Shot_Air_Burst_Stats != false {
 				if sprd < 0 {
 					dir = random(sprd) - (sprd / 2)
 				}
-				
 		        with instance_create(x,y,_obj) {
 					var _v_shot_air_burst_stats = other.shot_stats.Shot_Air_Burst_Stats[burstIndex]
-					
-					scr_Duplicate_Shot_Stats(_v_shot_air_burst_stats, {});
+				
+					scr_Duplicate_Shot_Stats(_v_shot_air_burst_stats, scr_Dupe_Struct(_stats));
 					
 					scr_Shot_Burst_Stats(_v_shot_air_burst_stats);
 					
@@ -164,7 +157,6 @@ if shot_stats.Shot_Air_Burst_Stats != false {
 					} else {
 						shot_stats.Shot_Air_Burst_Stats = false;	
 					}
-					//array_delete(shot_stats.Shot_Air_Burst_Stats,burstIndex,1);
 		        }
 		        dir += shot_stats.Shot_Air_Burst_Stats[burstIndex].Spread;
 		    }

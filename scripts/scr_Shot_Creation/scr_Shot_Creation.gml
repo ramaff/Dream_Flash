@@ -200,8 +200,6 @@ function scr_Shot_Creation(_cw = current_weapon_stats) {
 		        target = noone;
 		        sprite_index = asset_get_index(shot_stats.Shot_Sprite);
 		        shot_stats.Shot_Size = shot_stats.Shot_Size * ((1 + other.sshotsizefactor) / 1);
-		        image_xscale = shot_stats.Shot_Size;
-		        image_yscale = shot_stats.Shot_Size;
 		        shot_stats.Shot_Speed = (shot_stats.Shot_Speed + other.sshotspeedaddition) * (shot_stats.Weapon_Vomit_Min_Speed + random(shot_stats.Weapon_Vomit_Max_Speed - shot_stats.Weapon_Vomit_Min_Speed)) * other.sshotspeed / 10;
 		        shot_stats.Shot_Power_Max = (shot_stats.Shot_Power + other.spoweradd) * ((10 + other.spowerfactor + other.sattackfactorbuffamount) / 10) * other.spower / 10 * scr_Class_Stat_Damage_Multiplier();
 		        shot_stats.Shot_Power = shot_stats.Shot_Power_Max;
@@ -231,6 +229,9 @@ function scr_Shot_Creation(_cw = current_weapon_stats) {
 		        if shot_stats.Shot_Wave_Time > 0 {
 		            alarm[9] = shot_stats.Shot_Wave_Time;
 		        }
+				shot_stats.Shot_Size = clamp(shot_stats.Shot_Size, 0.01, 4);
+				image_xscale = shot_stats.Shot_Size;
+		        image_yscale = shot_stats.Shot_Size;
 		        shot_stats.Shot_Size_Max = shot_stats.Shot_Size;
 		        if shot_stats.Shot_Grow > 0 {
 		            image_xscale = shot_stats.Shot_Grow_Size;

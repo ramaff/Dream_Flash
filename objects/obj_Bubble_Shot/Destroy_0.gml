@@ -7,7 +7,7 @@ if is_array(shot_stats.Shot_Air_Burst_Stats) {
 		with instance_create(x,y,asset_get_index(_pop_stats.Shot_Type)) {
 			//shot_stats.Shot_Life_Span = other.shot_stats.Shot_Life_Span / 2;
 				
-			scr_Duplicate_Shot_Stats(_pop_stats);
+			scr_Duplicate_Shot_Stats(_pop_stats, scr_Dupe_Struct(other.shot_stats));
 			/*shot_stats.Shot_Size = other.shot_stats.Shot_Size_Max;
 			image_xscale = shot_stats.Shot_Size;
 			image_yscale = shot_stats.Shot_Size;

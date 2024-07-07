@@ -43,7 +43,8 @@ for(i = 0; i < extra_shots_amount; i++) {
 				//Print_DF(current_extra_stats)
 				//shot_stats = scr_Setup_Default_Shot_Stats()
 				//shot_stats = scr_Struct_Merge(shot_stats, scr_Dupe_Struct(current_extra_stats), false);
-		        scr_Duplicate_Shot_Stats(current_extra_stats);
+				//var _dupe_stats = scr_Dupe_Struct(other.shot_stats)
+		        scr_Duplicate_Shot_Stats(current_extra_stats, scr_Dupe_Struct(other.shot_stats));
 				
 				scr_Shot_Burst_Stats(current_extra_stats)
 				
@@ -53,11 +54,6 @@ for(i = 0; i < extra_shots_amount; i++) {
 					shot_stats.Shot_Extra_Stats = []	
 				}
 				
-				//shot_stats = scr_Setup_Default_Shot_Stats();
-				//var _PropertyNames = variable_struct_get_names(current_extra_stats);
-		        //for (var i = 0; i < array_length(_PropertyNames); i++) {
-		        //    variable_struct_set(shot_stats, _PropertyNames[i], variable_struct_get(current_extra_stats, _PropertyNames[i]));
-		        //}
 				scr_Setup_Shot_Stats_Asset(shot_stats);
 			
 				shot_stats.Shot_Speed =	shot_stats.Shot_Speed;
