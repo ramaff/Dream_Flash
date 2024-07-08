@@ -110,6 +110,9 @@ function scr_Beam_Create(shxx, shyy, beamseg, beamdir, curvedir, beamstop, beamx
 							if variable_struct_exists(_v_shot_air_burst_stats, "Shot_Life_Span") {
 								_v_shot_air_burst_stats.Shot_Life_Span = other.shot_stats.Shot_Life_Span
 							}
+							if variable_struct_exists(_v_shot_air_burst_stats, "Burst_Life_Span") {
+								_v_shot_air_burst_stats.Burst_Life_Span = 1;
+							}
 							
 							scr_Shot_Burst_Stats(_v_shot_air_burst_stats);
 							shot_stats.Shot_Burst_Stats = other.shot_stats.Shot_Burst_Stats;
