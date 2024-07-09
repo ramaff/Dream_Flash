@@ -39,12 +39,8 @@ if image_alpha >= 0.5 {
 if priceString != "" {
     if image_alpha >= 0.5 {
 	    draw_set_alpha(image_alpha);
-		if shop != 3 {
-		    draw_text(x+204,y-128, string_hash_to_newline(priceString));
-		    draw_sprite_ext(recollectionPriceType,0,x,y+_y_offset, 0.5, 0.5, 0, c_white, 1)
-		} else {
-			draw_text(x+192,y-128, string_hash_to_newline(priceString));
-		}
+		draw_text(x+24,y+_y_offset+104, string_hash_to_newline(priceString));
+		draw_sprite_ext(recollectionPriceType,0,x,y+_y_offset+108, 0.5, 0.5, 0, c_white, 1)
 	    draw_set_alpha(1);
     }
 }

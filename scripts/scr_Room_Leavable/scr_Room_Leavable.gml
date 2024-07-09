@@ -5,9 +5,9 @@ function scr_Room_Leavable(){
 		return false
 	}
 	
-	if global.floor[global.currentroom,0] == "Normal" {
+	if global.floor[global.currentroom,0] == "Normal" || global.floor[global.currentroom,0] == "Shop" {
 		return true	
 	}
 	
-	return (global.bosscount <= 0 and instance_number(obj_Main_Boss_Parent) <= 0 and (((global.spiritRoom != global.currentroom) and (global.evilSpiritRoom != global.currentroom)) || global.currentroom = 0) and scr_Negative_Room_Check())
+	return (instance_number(obj_Main_Boss_Parent) <= 0 and (((global.spiritRoom != global.currentroom) and (global.evilSpiritRoom != global.currentroom)) || global.currentroom = 0) and scr_Negative_Room_Check())
 }
