@@ -442,6 +442,7 @@
     {"name":"obj_Tar_Jello","order":14,"path":"objects/obj_Tar_Jello/obj_Tar_Jello.yy",},
     {"name":"spr_pink_spirit_shoot","order":17,"path":"sprites/spr_pink_spirit_shoot/spr_pink_spirit_shoot.yy",},
     {"name":"reco_Conga_Line","order":7,"path":"sprites/reco_Conga_Line/reco_Conga_Line.yy",},
+    {"name":"scr_State_Recollection_Unlocked","order":1,"path":"scripts/scr_State_Recollection_Unlocked/scr_State_Recollection_Unlocked.yy",},
     {"name":"spr_fire_starter_v2_flame_dance","order":2,"path":"sprites/spr_fire_starter_v2_flame_dance/spr_fire_starter_v2_flame_dance.yy",},
     {"name":"obj_Phase_Spin_Bullet_Alt","order":1,"path":"objects/obj_Phase_Spin_Bullet_Alt/obj_Phase_Spin_Bullet_Alt.yy",},
     {"name":"spr_the_host_minions_sprite_dump","order":6,"path":"sprites/spr_the_host_minions_sprite_dump/spr_the_host_minions_sprite_dump.yy",},

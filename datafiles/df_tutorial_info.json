@@ -46,7 +46,7 @@
             "Sources of state credits could be items you pick up, bosses defeated in channeling rooms, or having high enough stats in a certain attribute."]
     },
     "channel_tutorial": {
-        "tut_sprite": "spr_State_Tutorial_Recos",
+        "tut_sprite": "spr_channel_tutorial",
         "tut_texts": [
             "In channeling rooms you fight state related bosses and gain a state credit when defeating them.",
             "If you have two or more of a state credit, then a channel is guaranteed to have a boss related to that state.",

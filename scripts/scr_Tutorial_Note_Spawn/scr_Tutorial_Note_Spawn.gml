@@ -9,6 +9,10 @@ function scr_Tutorial_Note_Spawn(_tutorial_keyword = "base_tutorial"){
 		exit;	
 	}
 	
+	if instance_number(obj_tutorial_note) >= 1 {
+		exit;	
+	}
+	
 	with instance_create(room_width / 2,room_height / 2, obj_tutorial_note) {
 		tutorial_keyword = _tutorial_keyword
 		tutorial_info = _tutorial_info

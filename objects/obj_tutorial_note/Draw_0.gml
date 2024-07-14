@@ -3,7 +3,7 @@
 
 draw_set_font(Dream_Flash_Font)
 
-draw_sprite_ext(spr_Menu_Big_Cloud,0,x,y,1,1,0,c_white,note_alpha);
+draw_sprite_ext(spr_Menu_Big_Cloud,0,x,y,0.5,0.5,0,c_white,note_alpha);
 
 draw_text_ext_color(x-256,y+144,string_hash_to_newline("Page " + string(current_page) + "/" + string(final_page)),40,400,c_black,c_black,c_black,c_black,note_alpha);
 

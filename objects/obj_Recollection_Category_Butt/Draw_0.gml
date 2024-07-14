@@ -33,7 +33,7 @@ if cat = 3 {
     //draw_sprite_ext(spr_Wall_Eye,0,x,y,0.5,0.5,0,c_white,1);
 	catText = "Bosses";
 }
-if global.recollectionStateUnlocked = 1 {
+if scr_State_Recollection_Unlocked() {
 	if cat = 4 {
 	    //draw_sprite_ext(spr_State_Up_Item,0,x,y,0.5,0.5,0,c_white,1);
 		catText = "States";

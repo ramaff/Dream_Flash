@@ -4,7 +4,7 @@ var winy = camcon.window_scale * camcon.view_zoom * camera_get_view_height(view)
 draw_set_color(c_white);
 if instance_exists(obj_Soul_Parent) {
 
-	if global.soultransformedstate != "None" and global.stateTutorial > 0 {
+	if global.soultransformedstate != "None" and scr_State_Recollection_Unlocked() {
 		var spercent = 100 * (obj_Soul_Parent.sstatecharge / (obj_Soul_Parent.smaxstate));
 	    if spercent < 0 {
 	        spercent = 0;

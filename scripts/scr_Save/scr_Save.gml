@@ -19,9 +19,6 @@ function scr_Save() {
 	for(i = 0; i <= 19; i++) {
 	    ini_write_real("Recollection", "recollectionState" + string(i), global.recollectionState[i]);
 	}
-	ini_write_real("Recollection", "recollectionStateUnlocked", global.recollectionStateUnlocked);
-	ini_write_real("Recollection", "stateTutorial", global.stateTutorial);
-	ini_write_real("Recollection", "spiritTutorial", global.spiritTutorial);
 	
 	for(i = 0; i <= 49; i++) {
 	    ini_write_real("Recollection", "recollectionA" + string(i), global.recollectionA[i]);

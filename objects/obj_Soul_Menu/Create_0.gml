@@ -54,7 +54,7 @@ with instance_create(camX - 240,camY - 160,obj_Soul_Stat_Calc_Icon) {
     statVal = "Perception";
 }
 
-if global.recollectionStateUnlocked = 1 {
+if scr_State_Recollection_Unlocked() {
 	with instance_create(camX - 352,camY + 240,obj_Back_To_Soul_Menu_Button) {
 	}
 	with instance_create(camX - 256,camY + 240,obj_State_Menu_Button) {

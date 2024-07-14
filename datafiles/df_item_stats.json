@@ -47,7 +47,7 @@
         "recollectionString": "Muscle Memory",
         "recollectionSprite": "spr_Muscle_Memory_Item",
         "recollectionExtraStats": "+Strength from consistency",
-        "recollectionDescription": "Every time you hit a boss gain +6% damage, can increase to a max of +30%. If a projectile misses then the boost resets"
+        "recollectionDescription": "Every time you hit a boss gain additional power to your shots. This effect resets when missing a shot."
     },
     "A08": {
         "recollectionString": "Intense Thoughts",

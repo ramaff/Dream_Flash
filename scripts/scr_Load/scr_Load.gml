@@ -23,9 +23,6 @@ function scr_Load() {
 		for(i = 0; i <= 19; i++) {
 	        global.recollectionState[i] = ini_read_real("Recollection","recollectionState" + string(i),0);
 	    }
-		global.recollectionStateUnlocked = ini_read_real("Recollection","recollectionStateUnlocked", 0);
-		global.stateTutorial = ini_read_real("Recollection","stateTutorial", 0);
-		global.spiritTutorial = ini_read_real("Recollection","spiritTutorial", 0);
 		
 	    for(i = 0; i <= 49; i++) {
 	        global.recollectionA[i] = ini_read_real("Recollection","recollectionA" + string(i),0);

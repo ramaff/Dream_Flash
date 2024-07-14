@@ -26,42 +26,34 @@ function scr_State_Form_Unlock(){
 		if global.snakeprogress >= (3 - snakedis) {
 			global.soultransformedstate = "Snake";
 			global.recollectionState[1]++;
-			global.recollectionStateUnlocked = 1;
 		}
 		if global.beastprogress >= (3 - beastdis) {
 			global.soultransformedstate = "Beast";
 			global.recollectionState[2]++;
-			global.recollectionStateUnlocked = 1;
 		}
 		if global.mechprogress >= (3 - mechdis) {
 			global.soultransformedstate = "Mechanical";
 			global.recollectionState[3]++;
-			global.recollectionStateUnlocked = 1;
 		}
 		if global.scrubprogress >= (3 - scrubdis) {
 			global.soultransformedstate = "Scrub";
 			global.recollectionState[4]++;
-			global.recollectionStateUnlocked = 1;
 		}
 		if global.spikeprogress >= (3 - spikedis) {
 			global.soultransformedstate = "Spike";
 			global.recollectionState[6]++;
-			global.recollectionStateUnlocked = 1;
 		}
 		if global.bleedingprogress >= (3 - bleedingdis) {
 			global.soultransformedstate = "Bleeding";
 			global.recollectionState[7]++;
-			global.recollectionStateUnlocked = 1;
 		}
 		if global.castingprogress >= (3 - castingdis) {
 			global.soultransformedstate = "Casting";
 			global.recollectionState[9]++;
-			global.recollectionStateUnlocked = 1;
 		}
 		if global.ascendingprogress >= (3 - ascendingdis) {
 			global.soultransformedstate = "Ascending";
 			global.recollectionState[10]++;
-			global.recollectionStateUnlocked = 1;
 		}
 		if global.soultransformedstate != "None" and obj_Soul_Parent.stransformedstate = "None" {
 			repeat(6) {

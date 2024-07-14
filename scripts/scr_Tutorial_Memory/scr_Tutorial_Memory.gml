@@ -23,31 +23,31 @@ function scr_Information_Memory() {
 	    recollectionSprite = spr_Tutorial_Stuff;
 		recollectionDescription = "Congratulations on making it this far. This is where the final boss of the game is going to be when I add it for the non-early access version of the game. Thanks for playing! \n \nCheck in often cause this game gets updated on a semi regular basis, also tell all your friends about it.";
 	}
-	if itemVal = "Tutorial 07" and global.stateTutorial >= 1 {
+	if itemVal = "Tutorial 07" and scr_State_Recollection_Unlocked() {
 	    recollectionSprite = spr_state_tutorial;
 		recollectionDescription = "Your soul has reached a higher state of being!";
 	}
-	if itemVal = "Tutorial 08" and global.stateTutorial >= 1 {
+	if itemVal = "Tutorial 08" and scr_State_Recollection_Unlocked() {
 	    recollectionSprite = spr_state_tutorial;
 		recollectionDescription = "You can now temporarily activate a state transformation. There are various state transformations and each one is significantly more powerful than the base soul.";
 	}
-	if itemVal = "Tutorial 09" and global.stateTutorial >= 1 {
+	if itemVal = "Tutorial 09" and scr_State_Recollection_Unlocked() {
 	    recollectionSprite = spr_state_tutorial;
 		recollectionDescription = "State transformations can be activated when the state bar is full. You trigger the transformation by performing a teleport on the position of the soul.";
 	}
-	if itemVal = "Tutorial 10" and global.stateTutorial >= 1 {
+	if itemVal = "Tutorial 10" and scr_State_Recollection_Unlocked() {
 	    recollectionSprite = spr_state_tutorial;
 		recollectionDescription = "Different states have different rates of state charge usage. When you run out of state charge you revert back into the base soul.";
 	}
-	if itemVal = "Tutorial 11" and global.stateTutorial >= 1 {
+	if itemVal = "Tutorial 11" and scr_State_Recollection_Unlocked() {
 	    recollectionSprite = spr_state_tutorial;
 		recollectionDescription = "All teleports performed during a higher state will have a powerful effect that can severely damage bosses, at the cost of additional state charge.";
 	}
-	if itemVal = "Tutorial 12" and global.stateTutorial >= 1 {
+	if itemVal = "Tutorial 12" and scr_State_Recollection_Unlocked() {
 	    recollectionSprite = spr_state_tutorial;
 		recollectionDescription = "In order to unlock a state transformation the soul needs 3 state credits. Each state has a different set of criteria for getting its state credits.";
 	}
-	if itemVal = "Tutorial 13" and global.stateTutorial >= 1 {
+	if itemVal = "Tutorial 13" and scr_State_Recollection_Unlocked() {
 	    recollectionSprite = spr_state_tutorial;
 		recollectionDescription = "Sources of state credits could be items you pick up, bosses defeated in channeling rooms, or having high enough stats.";
 	}
