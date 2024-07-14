@@ -14,49 +14,49 @@ if currentT = 1 {
     if textT[1] <= 1 and cloudT >= 1 {
         textT[1] += 0.02;
     }
-    draw_sprite_ext(spr_State_Tutorial_Recos,0,x,y-96,0.5,0.5,0,c_white,textT[1]);
+    draw_sprite_ext(spr_state_tutorial,0,x,y-96,0.5,0.5,0,c_white,textT[1]);
     draw_text_ext_color(x,y - 32,string_hash_to_newline("Your soul has reached a higher state of being!"),40,400,c_black,c_black,c_black,c_black,textT[1]);
 }
 if currentT = 2 {
     if textT[2] <= 1 and cloudT >= 2 {
         textT[2] += 0.02;
     }
-    draw_sprite_ext(spr_State_Tutorial_Recos,1,x,y-96,0.5,0.5,0,c_white,textT[1]);
+    draw_sprite_ext(spr_state_tutorial,1,x,y-96,0.5,0.5,0,c_white,textT[1]);
     draw_text_ext_color(x,y - 32,string_hash_to_newline("You can now temporarily activate a state transformation. There are various state transformations and each one is significantly more powerful than the base soul."),40,400,c_black,c_black,c_black,c_black,textT[1]);
 }
 if currentT = 3 {
     if textT[3] <= 1 and cloudT >= 3 {
         textT[3] += 0.02;
     }
-    draw_sprite_ext(spr_State_Tutorial_Recos,2,x,y-96,0.5,0.5,0,c_white,textT[1]);
+    draw_sprite_ext(spr_state_tutorial,2,x,y-96,0.5,0.5,0,c_white,textT[1]);
     draw_text_ext_color(x,y - 32,string_hash_to_newline("State transformations can be activated when the state bar is full. You trigger the transformation by performing a teleport on the position of the soul."),40,400,c_black,c_black,c_black,c_black,textT[1]);
 }
 if currentT = 4 {
     if textT[4] <= 1 and cloudT >= 4 {
         textT[4] += 0.02;
     }
-    draw_sprite_ext(spr_State_Tutorial_Recos,3,x,y-96,0.5,0.5,0,c_white,textT[1]);
+    draw_sprite_ext(spr_state_tutorial,3,x,y-96,0.5,0.5,0,c_white,textT[1]);
     draw_text_ext_color(x,y - 32,string_hash_to_newline("Different states have different rates of state charge usage. When you run out of state charge you revert back into the base soul."),40,400,c_black,c_black,c_black,c_black,textT[1]);
 }
 if currentT = 5 {
     if textT[5] <= 1 and cloudT >= 4 {
         textT[5] += 0.02;
     }
-    draw_sprite_ext(spr_State_Tutorial_Recos,4,x,y-96,0.5,0.5,0,c_white,textT[1]);
+    draw_sprite_ext(spr_state_tutorial,4,x,y-96,0.5,0.5,0,c_white,textT[1]);
     draw_text_ext_color(x,y - 32,string_hash_to_newline("All teleports performed during a higher state will have a powerful effect that can severely damage bosses, at the cost of additional state charge."),40,400,c_black,c_black,c_black,c_black,textT[1]);
 }
 if currentT = 6 {
     if textT[6] <= 1 and cloudT >= 4 {
         textT[6] += 0.02;
     }
-    draw_sprite_ext(spr_State_Tutorial_Recos,4,x,y-96,0.5,0.5,0,c_white,textT[1]);
+    draw_sprite_ext(spr_state_tutorial,4,x,y-96,0.5,0.5,0,c_white,textT[1]);
     draw_text_ext_color(x,y - 32,string_hash_to_newline("In order to unlock a state transformation the soul needs 3 state credits. Each state has a different set of criteria for getting its state credits."),40,400,c_black,c_black,c_black,c_black,textT[1]);
 }
 if currentT = 7 {
     if textT[7] <= 1 and cloudT >= 4 {
         textT[7] += 0.02;
     }
-    draw_sprite_ext(spr_State_Tutorial_Recos,4,x,y-96,0.5,0.5,0,c_white,textT[1]);
+    draw_sprite_ext(spr_state_tutorial,4,x,y-96,0.5,0.5,0,c_white,textT[1]);
     draw_text_ext_color(x,y - 32,string_hash_to_newline("Sources of state credits could be items you pick up, bosses defeated in channeling rooms, or having high enough stats in a certain attribute."),40,400,c_black,c_black,c_black,c_black,textT[1]);
 }
 

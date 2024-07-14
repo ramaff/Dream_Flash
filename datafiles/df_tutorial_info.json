@@ -30,7 +30,7 @@
         "tut_texts": ["When defeating bosses they drop recalls. Using these recalls you can access memories in this shop."]
     },
     "state_tutorial": {
-        "tut_sprite": "spr_State_Tutorial_Recos",
+        "tut_sprite": "spr_state_tutorial",
         "tut_texts": [
             "Your soul has reached a higher state of being!",
             "You can now temporarily activate a state transformation. There are various state transformations and each one is significantly more powerful than the base soul.",
@@ -40,7 +40,7 @@
         ]
     },
     "state_menu_tutorial": {
-        "tut_sprite": "spr_State_Tutorial_Recos",
+        "tut_sprite": "spr_state_menu_tutorial",
         "tut_texts": [
             "In order to unlock a state transformation the soul needs 3 state credits. Each state has a different set of criteria for getting its state credits.",
             "Sources of state credits could be items you pick up, bosses defeated in channeling rooms, or having high enough stats in a certain attribute."]

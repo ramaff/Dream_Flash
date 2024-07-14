@@ -82,4 +82,3 @@ instance_create(room_width / 2,room_height / 2, obj_Basic_Soul);
 scr_Game_Control_Setup();
 scr_Room_Change_Variables();
 
-scr_Tutorial_Note_Spawn("starting_tutorial")

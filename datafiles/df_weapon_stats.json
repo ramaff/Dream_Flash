@@ -334,6 +334,7 @@
         "Shot_Power": 7.5,
         "Shot_Knockback": 0,
         "Shot_Life_Span": 1,
+        "Burst_Power": 1,
         "Shot_Burst_Power": 7.5,
         "Weapon_Split_Visible": 1,
         "Weapon_Split_Hit_Again": 0,
