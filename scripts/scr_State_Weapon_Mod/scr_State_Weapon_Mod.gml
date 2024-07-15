@@ -28,7 +28,7 @@ function scr_State_Weapon_Mod(){
 			
 			repeat(count) {
 				with instance_create(x,y, object_index) {
-					scr_Duplicate_Shot_Stats(other.shot_stats);
+					scr_Duplicate_Shot_Stats("", "");
 					
 					sprite_index = other.sprite_index;
 				
@@ -38,7 +38,7 @@ function scr_State_Weapon_Mod(){
 					shot_stats.Shot_Snake_Move = 2;
 					
 					scr_Shot_Power_Set(0.5)
-					scr_Shot_Size_Set(0.7)
+					scr_Shot_Size_Set(0.7, false)
 					
 				}
 			}
