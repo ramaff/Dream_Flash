@@ -313,16 +313,9 @@ function scr_Recollection_Panel_Assign() {
 	}
 	
 	if global.recollectCategory = "Information" {
-	    for(i = 1; i <= 9; i++) {
-	        if buttNum = i {
-	            itemVal = "Tutorial 0" + string(i);
-	        }
-	    }
-	    for(i = 10; i <= 40; i++) {
-	        if buttNum = i {
-	            itemVal = "Tutorial " + string(i);
-	        }
-	    }
+		
+		var _tutorial_keywords = struct_get_names(global.tutorial_info)
+	    itemVal = _tutorial_keywords[buttNum]
 	}
 
 

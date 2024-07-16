@@ -1,4 +1,19 @@
 function scr_Information_Memory() {
+	var _tutorial_keyword = itemVal
+	if !variable_struct_exists(global.tutorial_info, _tutorial_keyword) {
+		exit;	
+	}
+	var _tutorial_info = variable_struct_get(global.tutorial_info, _tutorial_keyword)
+	var _tutorial_text = _tutorial_info.tut_texts
+
+	if variable_struct_get(global.tutorial_progress, _tutorial_keyword) > array_length(_tutorial_text) {
+		exit;	
+	}
+	
+	recollectionSprite = asset_get_index(tutorial_info.tut_sprite)
+	
+	recollectionDescription = _tutorial_text
+	/*
 	if itemVal = "Tutorial 01" and global.gameTutorial >= 1 {
 	    recollectionSprite = spr_Tutorial_Stuff;
 		recollectionDescription = "The soul can move using WASD. You can shoot by left clicking, which will generate imaginary attacks.";
@@ -107,6 +122,7 @@ function scr_Information_Memory() {
 	    recollectionSprite = spr_spirit_tutorial;
 		recollectionDescription = "Killing a masked spirit allows you to increase your emotional stats. Be careful, though, as provoking a spirit will cause more dangerous ones to appear later on.";
 	}
+	*/
 	//recollectionSprite = spr_Tutorial_Stuff;
 
 }

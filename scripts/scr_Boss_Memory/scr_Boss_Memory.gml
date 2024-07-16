@@ -9,8 +9,6 @@ function scr_Boss_Memory() {
 		return	
 	}
 	
-	//show_debug_message(string(current_boss_stats))
-	
 	var rememberance = global.recollectionBoss[string_digits(itemVal)]
 	
 	if rememberance >= 1 {

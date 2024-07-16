@@ -20,13 +20,13 @@
   ],
   "gridX": 0,
   "gridY": 0,
-  "height": 240,
+  "height": 320,
   "HTile": false,
   "layers": [
     {"resourceType":"GMImageLayer","resourceVersion":"1.0","name":"8529565d-ae8b-4e7f-ad1c-bee4bc66967d","blendMode":0,"displayName":"default","isLocked":false,"opacity":100.0,"visible":true,},
   ],
   "nineSlice": null,
-  "origin": 9,
+  "origin": 4,
   "parent": {
     "name": "State Reco Icons",
     "path": "folders/Sprites/Recollection/State Reco Icons.yy",
@@ -65,8 +65,8 @@
     ],
     "visibleRange": null,
     "volume": 1.0,
-    "xorigin": 95,
-    "yorigin": 180,
+    "xorigin": 160,
+    "yorigin": 160,
   },
   "swatchColours": null,
   "swfPrecision": 2.525,
@@ -76,5 +76,5 @@
   },
   "type": 0,
   "VTile": false,
-  "width": 240,
+  "width": 320,
 }
