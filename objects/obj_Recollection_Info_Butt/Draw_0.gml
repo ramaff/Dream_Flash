@@ -115,39 +115,6 @@ if global.recollectCategory = "Bosses" {
         draw_text(x+120,y-96, string_hash_to_newline("????"));
     }
     
-	/*
-    draw_sprite(spr_Recollection_Recharge_Icon,0,x-80,y-56);
-    if recollectionImaginaryResist[recollectionChamp] != -999 {
-        draw_text(x-80,y-36, string_hash_to_newline(string(recollectionImaginaryResist[recollectionChamp]) + "%"));
-    } else {
-        draw_text(x-80,y-36, string_hash_to_newline("????"));
-    }
-    draw_sprite(spr_Recollection_Sharp_Icon,0,x-16,y-56);
-    if recollectionSharpResist[recollectionChamp] != -999 {
-        draw_text(x-16,y-36, string_hash_to_newline(string(recollectionSharpResist[recollectionChamp]) + "%"));
-    } else {
-        draw_text(x-16,y-36, string_hash_to_newline("????"));
-    }
-    draw_sprite(spr_Recollection_Explosive_Icon,0,x+48,y-56);
-    if recollectionExplosiveResist[recollectionChamp] != -999 {
-        draw_text(x+48,y-36, string_hash_to_newline(string(recollectionExplosiveResist[recollectionChamp]) + "%"));
-    } else {
-        draw_text(x+48,y-36, string_hash_to_newline("????"));
-    }
-    draw_sprite(spr_Recollection_Magic_Icon,0,x+112,y-56);
-    if recollectionMagicResist[recollectionChamp] != -999 {
-        draw_text(x+112,y-36, string_hash_to_newline(string(recollectionMagicResist[recollectionChamp]) + "%"));
-    } else {
-        draw_text(x+112,y-36, string_hash_to_newline("????"));
-    }
-    draw_sprite(spr_Recollection_Energy_Icon,0,x+176,y-56);
-    if recollectionEnergyResist[recollectionChamp] != -999 {
-        draw_text(x+176,y-36, string_hash_to_newline(string(recollectionEnergyResist[recollectionChamp]) + "%"));
-    } else {
-        draw_text(x+176,y-36, string_hash_to_newline("????"));
-    }
-	*/
-    
     if recollectionDanger[recollectionChamp] != -999 {
         draw_text(x+48,y-16, string_hash_to_newline("Boss Power Level: " + string(recollectionDanger[recollectionChamp])));
     }
@@ -183,16 +150,16 @@ if global.recollectCategory = "State" {
 
 }
 
-if global.recollectCategory = "Information" {
-	var isize = 1;
-	var iv = string_digits(itemVal);
-	if iv > 6 {
-		iv = iv - 6;	
-		isize = 0.6;
-	}
-	if iv != 6 {
-		isize = 0.6;	
-	}
-    draw_sprite_ext(recollectionSprite,string_digits(iv) - 1,x,y-128,isize,isize,0,c_white,1);
-    draw_text_ext_color(x,y-32,string_hash_to_newline(recollectionDescription),40,440,c_black,c_black,c_black,c_black,1);
+if global.recollectCategory = "Information" and itemVal != "?00" and is_array(recollectionDescription){
+	var isize = 0.5;
+	
+    draw_sprite_ext(recollectionSprite,string_digits(recollectionChamp),x,y-128,isize,isize,0,c_white,1);
+    draw_text_ext_color(x,y-32,string_hash_to_newline(recollectionDescription[recollectionChamp]),40,440,c_black,c_black,c_black,c_black,1);
+	
+	draw_sprite(spr_Tutorial_Arrow,1,x+256,y+156);
+	
+	draw_text(x+208,y+144,string(recollectionChamp));
+	
+	draw_sprite_ext(spr_Tutorial_Arrow,1,x+160,y+156,-1,-1,0,c_white,1);
+	
 }

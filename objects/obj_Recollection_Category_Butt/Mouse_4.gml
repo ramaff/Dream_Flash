@@ -32,16 +32,15 @@ if scr_State_Recollection_Unlocked() {
 	}
 	if cat = 5 {
 	    global.recollectCategory = "Information";
-		numOfButts = 27;
+		numOfButts = array_length(struct_get_names(global.tutorial_info));
 	}
 } else {
 	if cat = 4 {
 		global.recollectCategory = "Information";	
-		numOfButts = 27;
+		numOfButts = array_length(struct_get_names(global.tutorial_info));
 	}
 }
 
-buttNum = 0;
 
 if global.recollectCategory = "Weapons" {
     for(i = 1; i <= (numOfButts / 3); i++) {

@@ -17,10 +17,6 @@ if global.recollectCategory = "Bosses" || global.recollectCategory = "State" || 
 	ytop += 30;
 }
 
-if global.recollectCategory = "Information" {
-	recollectionSize = 0.25;	
-}
-
 if (y < ybott) {
     image_alpha = 0;
 }

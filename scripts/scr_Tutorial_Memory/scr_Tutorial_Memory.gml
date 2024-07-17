@@ -6,13 +6,14 @@ function scr_Information_Memory() {
 	var _tutorial_info = variable_struct_get(global.tutorial_info, _tutorial_keyword)
 	var _tutorial_text = _tutorial_info.tut_texts
 
-	if variable_struct_get(global.tutorial_progress, _tutorial_keyword) > array_length(_tutorial_text) {
+	if variable_struct_get(global.tutorial_progress, _tutorial_keyword) < array_length(_tutorial_text) {
 		exit;	
 	}
 	
-	recollectionSprite = asset_get_index(tutorial_info.tut_sprite)
+	recollectionSprite = asset_get_index(_tutorial_info.tut_sprite)
 	
 	recollectionDescription = _tutorial_text
+	recollectionChamp = 0;
 	/*
 	if itemVal = "Tutorial 01" and global.gameTutorial >= 1 {
 	    recollectionSprite = spr_Tutorial_Stuff;

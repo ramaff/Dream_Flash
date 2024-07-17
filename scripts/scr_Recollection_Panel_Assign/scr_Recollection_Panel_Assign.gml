@@ -314,8 +314,12 @@ function scr_Recollection_Panel_Assign() {
 	
 	if global.recollectCategory = "Information" {
 		
-		var _tutorial_keywords = struct_get_names(global.tutorial_info)
-	    itemVal = _tutorial_keywords[buttNum]
+		var _tutorial_keywords = ["starting_tutorial", "item_field", "stat_level_up", "shop", "state_tutorial", "state_menu_tutorial", "channel_tutorial", 
+								  "spirit_tutorial", "stat_tutorial", "spiritual_stat_tutorial", "placeholder_run_end_note"]
+		var _i = buttNum - 1
+		if _i < array_length(_tutorial_keywords) {
+			itemVal = _tutorial_keywords[_i]
+		}
 	}
 
 

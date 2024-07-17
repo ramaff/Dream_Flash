@@ -1,16 +1,12 @@
 {
-    "base_tutorial": {
-        "tut_sprite": "spr_Tutorial_Stuff",
-        "tut_texts": ["this is placeholder tutorial text", "page 2 placeholder"]
-    },
     "starting_tutorial": {
         "tut_sprite": "spr_Tutorial_Stuff",
         "tut_texts": [
             "The soul can move using WASD. You can shoot by left clicking, which will generate imaginary attacks.", 
             "Teleport by right clicking, doing this costs essence and requires some cooldown time. You can exit dreamscape fields by teleporting outside of the field.",
             "Using Weapons and Teleporting uses up the essence of your soul. Your essence is limited but replenishes automatically.",
-            "You have 3 hearts by default. These hearts each have their own health and can have unique properties. You can also swap the order of your hearts by clicking them and moving them to a different heart slot. If you lose a heart it is gone forever.",
-            "Each room can have a boss battle or an item. You can pick up items from orbit using your right click. At the end of the chapter you will fight a super boss that will allow you to go deeper into your dream."
+            "You have 3 hearts by default. These hearts each have their own health and can have unique properties. You can also swap the order of your hearts outside of boss fights by clicking them and moving them to a different heart slot. If you lose a heart it is gone forever.",
+            "Each room can have a boss battle that you must defeat to proceed. At the end of the chapter you will fight a super boss that will allow you to enter the next stage of your dream."
         ]
     },
     "item_field": {
@@ -58,6 +54,28 @@
         "tut_texts": [
             "You've encountered a wandering Masked Spirit. These spirits wander the dreamscape, leaving if unprovoked.",
             "Killing a masked spirit allows you to increase your emotional stats. Be careful though, as provoking a spirit will cause more dangerous ones to appear later on."]
+    },
+    "stat_tutorial": {
+        "tut_sprite": "spr_stat_tutorial",
+        "tut_texts": [
+            "Strength\n+20% Damage at max strength (40)",
+            "Vitality\n+50% Health at max vitality (40)\n+100% Health Regen Speed at max vitality (40)",
+            "Essence\n+50% Essence Regen at max essence (40)",
+            "Dexterity\n+50% Soul Movement at max dexterity (40)\n+25% Weapon Firerate at max dexterity (40)",
+            "Perception\n+100% Teleport Recharge Speed at max perception (40)\n-25% Weapon/Teleport Essence Cost at max perception (40)",
+            "State\n+100% State Regen at max essence (40)"
+        ]
+    },
+    "spiritual_stat_tutorial": {
+        "tut_sprite": "spr_spiritual_stat_tutorial",
+        "tut_texts": [
+            "Hope\n+0.4-1.6 Extra Items per Item Field at max hope(40)\n+4 Recalls per boss fight at max hope(40)\n+200% Soul Brightness at max hope(40)",
+            "Bliss\n+33% Essence Regen at max bliss(40)\n+50% Health Regen at max bliss(40)",
+            "Assurance\n+16.6% Soul Attack Speed at max assurance(40)\n+20% Boss Attack Speed at max assurance(40)\n+2 Defense at max assurance(40)",
+            "Loathing\n+12.5% Soul Attack Power at max loathing(40)\n+4 Boss Attack Damage at max loathing(40)\n+20% Boss Bullet Speed at max loathing(40)",
+            "Paranoia\n+20% Boss Attack Speed at max paranoia(40)\n+20% Boss Bullet Speed at max paranoia(40)\n-200% Boss Attack Accuracy at max paranoia(40)",
+            "Despair\n+5 Boss Difficulty at max despair(40)\n-2 Soul Defense at max despair(40)\n+20% Boss Attack Speed at max despair(40)\n+100% Field Darkness at max despair(40)"
+        ]
     },
     "placeholder_run_end_note": {
         "tut_sprite": "spr_placeholder_run_end_note",
