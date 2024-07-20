@@ -1,13 +1,12 @@
 function scr_One_Heart_Drop() {
 	if global.mousehearttype != 0 and global.totalhearts = 1 {
     
-	    slot = 0;
+	    Soul_Hearts_Control.heart[0,2] = global.mousehearttype;
+	    Soul_Hearts_Control.heart[0,3] = global.mousehearthealth;
+	    Soul_Hearts_Control.heart[0,4] = global.mouseheartmaxhealth;
+		Soul_Hearts_Control.heart[0,5] = global.mouseheartdecay;
     
-	    Soul_Hearts_Control.heart[slot,2] = global.mousehearttype;
-	    Soul_Hearts_Control.heart[slot,3] = global.mousehearthealth;
-	    Soul_Hearts_Control.heart[slot,4] = global.mouseheartmaxhealth;
-		Soul_Hearts_Control.heart[slot,5] = global.mouseheartdecay;
-    
+		var i = 0;
 	    for (i = 0; i < 24; i++) {
 	        if (Soul_Hearts_Control.heart[i,3] >= 0) and (Soul_Hearts_Control.heart[i,2] != 0) {
 	            global.currentheart = Soul_Hearts_Control.heart[i,1] - 1;

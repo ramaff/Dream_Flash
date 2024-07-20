@@ -1,3 +1,4 @@
+
 var inum = instance_number(obj_Depth);
 var dgrid = ds_depthgrid;
 
@@ -7,10 +8,12 @@ if (ds_grid_height(ds_depthgrid) != inum) {
     ds_grid_resize(dgrid, 2, inum);
 }
 
+
 // Add instances
 
 var yyy = 0;
 with(obj_Depth) {
+	//depth = -bbox_bottom
 	dgrid[# 0, yyy] = id;
 	dgrid[# 1, yyy] = y - (depth * 8);
 	yyy++;
@@ -35,6 +38,7 @@ with(obj_Particle_Parent) {
 	event_perform(ev_draw,0)
 }
 
+
 yyy = 0;
 var inst;
 repeat(inum) {
@@ -45,6 +49,7 @@ repeat(inum) {
     }
     yyy++;
 }
+
 
 with(obj_Particle_Parent_Front) {
 	event_perform(ev_draw,0)

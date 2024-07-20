@@ -1,5 +1,7 @@
 function scr_Duplicate_Shot_Stats(_new_shot_stats = other.shot_stats, _existing_shot_stats = other.shot_stats, _dir = 0) {
 	
+	var shot_stats = {}
+	
 	if is_struct(_existing_shot_stats) {
 		shot_stats = _existing_shot_stats
 	} else {
@@ -63,5 +65,7 @@ function scr_Duplicate_Shot_Stats(_new_shot_stats = other.shot_stats, _existing_
 
 	followtarget = other.followtarget
 	shot_stats.Shot_Fear_Target = other.shot_stats.Shot_Fear_Target;
+	
+	return shot_stats
 
 }

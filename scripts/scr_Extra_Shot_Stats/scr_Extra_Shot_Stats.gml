@@ -1,12 +1,7 @@
 function scr_Extra_Shot_Stats() {
-	//shot_stats.Shot_Angle = other.Shot_Angle;
-	//shot_stats.Shot_Frame = other.Shot_Frame;
 	if shot_stats.Shot_Frames > 0 {
 		shot_stats.Shot_Frame = irandom(shot_stats.Shot_Frames)	
 	}
-	//shot_stats.Shot_Image_Speed = other.Shot_Image_Speed;
-	
-	//shot_stats = json_parse(json_stringify(other.Shot_Stats));
 	
 	y -= shot_stats.Shot_Height;
 	

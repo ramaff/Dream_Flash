@@ -1,15 +1,16 @@
 function scr_Heart_Drop_Slot() {
 	//Soul_Hearts_Control.heart[slot,1] = global.mouseheartslot;
 	//tempheartslot = Soul_Hearts_Control.heart[slot,1]
-	temphearttype = Soul_Hearts_Control.heart[slot,2]
-	temphearthealth = Soul_Hearts_Control.heart[slot,3]
-	tempheartmaxhealth = Soul_Hearts_Control.heart[slot,4]
-	tempheartdecay = Soul_Hearts_Control.heart[slot,5]
+	var temphearttype = Soul_Hearts_Control.heart[slot,2]
+	var temphearthealth = Soul_Hearts_Control.heart[slot,3]
+	var tempheartmaxhealth = Soul_Hearts_Control.heart[slot,4]
+	var tempheartdecay = Soul_Hearts_Control.heart[slot,5]
 	Soul_Hearts_Control.heart[slot,2] = global.mousehearttype;
 	Soul_Hearts_Control.heart[slot,3] = global.mousehearthealth;
 	Soul_Hearts_Control.heart[slot,4] = global.mouseheartmaxhealth;
 	Soul_Hearts_Control.heart[slot,5] = global.mouseheartdecay;
 
+	var i = 0;
 	for (i = 0; i < 24; i++) {
 	    if (Soul_Hearts_Control.heart[i,3] >= 0) and (Soul_Hearts_Control.heart[i,2] != 0) {
 	        global.currentheart = Soul_Hearts_Control.heart[i,1] - 1;

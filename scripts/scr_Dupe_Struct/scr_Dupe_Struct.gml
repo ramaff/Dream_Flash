@@ -2,6 +2,6 @@
 // https://help.yoyogames.com/hc/en-us/articles/360005277377 for more information
 function scr_Dupe_Struct(_struct){
 
-	return json_parse(json_stringify(_struct))
+	return variable_clone(_struct)
 
 }

@@ -4,7 +4,7 @@ function scr_Beam_Create(shxx, shyy, beamseg, beamdir, curvedir, beamstop, beamx
 		
 	var oldbeamdir = beamdir;
 
-	dir = beamdir;
+	var dir = beamdir;
 	image_angle = beamdir;
 	speed = 0;
 	shot_stats.Shot_Speed = 0;	
@@ -75,6 +75,8 @@ function scr_Beam_Create(shxx, shyy, beamseg, beamdir, curvedir, beamstop, beamx
 		}
 		
 		oldbeamdir = beamdir
+		
+		var _original_shot_stats = shot_stats
 			
 		/////////////////////// Air Burst //////////////////////////////
 		
@@ -86,56 +88,54 @@ function scr_Beam_Create(shxx, shyy, beamseg, beamdir, curvedir, beamstop, beamx
 			if instance_exists(obj_Boss_Parent) {
 				near_boss = instance_nearest(shxx + beamxx,shyy + beamyy, obj_Boss_Parent).id
 			}
-			if instance_exists(near_boss) and burstIndex >= 0 and shot_stats.Shot_Air_Burst_Stats[burstIndex] != false {
+			var _current_burst_stats = shot_stats.Shot_Air_Burst_Stats[burstIndex]
+			if instance_exists(near_boss) and burstIndex >= 0 and _current_burst_stats != false {
 				var near_dist = point_distance(shxx + beamxx,shyy + beamyy,near_boss.x,near_boss.y) - 50
-				var sprd = shot_stats.Shot_Air_Burst_Stats[burstIndex].Spread
-				if near_dist <= shot_stats.Shot_Air_Burst_Stats[burstIndex].Range {
+				var sprd = _current_burst_stats.Spread
+				if near_dist <= _current_burst_stats.Range {
 					dir = -sprd / 2;
-					//shot_stats.Shot_Life_Span = shot_stats.Shot_Life_Span * 0.6;
-					//shot_stats.Shot_Hit_Again = 1
 					
-					repeat(shot_stats.Shot_Air_Burst_Stats[burstIndex].Amount) {
+					repeat(_current_burst_stats.Amount) {
 						
 						if sprd < 0 {
 							dir = random(sprd) - (sprd / 2)
 						}
 						
-						shot_stats.Shot_Air_Burst_Stats[burstIndex].Shot_Hit_Again = 1
+						_current_burst_stats.Shot_Hit_Again = 1
 						
 						with instance_create(shxx + beamxx,shyy + beamyy,obj_Beam_Shot) {
-							var _v_shot_air_burst_stats = other.shot_stats.Shot_Air_Burst_Stats[burstIndex]
+							var _v_shot_air_burst_stats = _current_burst_stats
 					
-							scr_Duplicate_Shot_Stats(_v_shot_air_burst_stats, scr_Dupe_Struct(other.shot_stats), dir);
+							shot_stats = scr_Duplicate_Shot_Stats(_v_shot_air_burst_stats, _original_shot_stats, dir);
 							
 							if variable_struct_exists(_v_shot_air_burst_stats, "Shot_Life_Span") {
-								_v_shot_air_burst_stats.Shot_Life_Span = other.shot_stats.Shot_Life_Span
+								_v_shot_air_burst_stats.Shot_Life_Span = _original_shot_stats.Shot_Life_Span
 							}
 							if variable_struct_exists(_v_shot_air_burst_stats, "Burst_Life_Span") {
 								_v_shot_air_burst_stats.Burst_Life_Span = 1;
 							}
 							
 							scr_Shot_Burst_Stats(_v_shot_air_burst_stats);
-							shot_stats.Shot_Burst_Stats = other.shot_stats.Shot_Burst_Stats;
-							shot_stats.Shot_Extra_Stats = other.shot_stats.Shot_Extra_Stats;
+							shot_stats.Shot_Burst_Stats = _original_shot_stats.Shot_Burst_Stats;
+							shot_stats.Shot_Extra_Stats = _original_shot_stats.Shot_Extra_Stats;
 							if burstIndex > 0 {
 								shot_stats.Shot_Air_Burst_Stats = [];
 								for(var i = 0; i <= burstIndex-1; i++) {
-									array_insert(shot_stats.Shot_Air_Burst_Stats,i,other.shot_stats.Shot_Air_Burst_Stats[i])
+									array_insert(shot_stats.Shot_Air_Burst_Stats, i, _original_shot_stats.Shot_Air_Burst_Stats[i])
 								}
 							} else {
 								shot_stats.Shot_Air_Burst_Stats = false;	
 							}
 							
 							shot_stats.Shot_Hit_Again = 0;
-							//shotburstpower = shot_stats.Shot_Power
 							
-							splitsize = 128 * shot_stats.Shot_Size;
+							splitsize = 256 * shot_stats.Shot_Size;
 							beamsize = shot_stats.Shot_Size;
 							
 							scr_Beam_Create(shxx, shyy, beamseg, beamdir + other.dir, curvedir, beamstop, beamxx, beamyy, beamtype, beamtotalsegs, beamspriteindex, beamsize, dirChange, homespeed, splitsize)
 						}
 							
-					    dir += shot_stats.Shot_Air_Burst_Stats[burstIndex].Spread;
+					    dir += _current_burst_stats.Spread;
 					}
 					scr_Create_Beam_Tip(shxx, shyy, beamxx, beamyy, beamsize, beamdir);
 					exit;
@@ -149,9 +149,7 @@ function scr_Beam_Create(shxx, shyy, beamseg, beamdir, curvedir, beamstop, beamx
 		if (beamseg != beamtotalsegs || beamtype = 3) {
 			with instance_create(shxx + beamxx,shyy + beamyy,obj_Beam_Shot) {
 
-				scr_Duplicate_Shot_Stats();
-				
-				//shot_stats.Shot_Power = _par_power
+				shot_stats = scr_Duplicate_Shot_Stats(_original_shot_stats, _original_shot_stats);
 				
 				image_angle = beamdir - dirChange;
 				image_xscale = beamsize;

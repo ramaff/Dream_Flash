@@ -37,6 +37,8 @@ for(i = 0; i < extra_shots_amount; i++) {
 		if variable_struct_exists(current_extra_stats, "Shot_YY") {
 			_yy = current_extra_stats.Shot_YY
 		}
+		
+		var _og_stats = other.shot_stats
 	
 	    repeat(ramt) {
 		    with instance_create(x + _xx,y + _yy,obj_Lesser_Soul_Shot) {
@@ -44,7 +46,7 @@ for(i = 0; i < extra_shots_amount; i++) {
 				//shot_stats = scr_Setup_Default_Shot_Stats()
 				//shot_stats = scr_Struct_Merge(shot_stats, scr_Dupe_Struct(current_extra_stats), false);
 				//var _dupe_stats = scr_Dupe_Struct(other.shot_stats)
-		        scr_Duplicate_Shot_Stats(current_extra_stats, scr_Dupe_Struct(other.shot_stats), dir);
+		        shot_stats = scr_Duplicate_Shot_Stats(current_extra_stats, variable_clone(_og_stats), dir);
 				
 				scr_Shot_Burst_Stats(current_extra_stats)
 				
@@ -70,7 +72,7 @@ for(i = 0; i < extra_shots_amount; i++) {
 					shot_stats.Shot_Size = shot_stats.Shot_Size * shot_stats.Burst_Size
 					image_xscale = shot_stats.Shot_Size;
 					image_yscale = shot_stats.Shot_Size;
-					shot_stats.Shot_Size_Max = other.shot_stats.Shot_Size_Max;
+					shot_stats.Shot_Size_Max = _og_stats.Shot_Size_Max;
 				} else {
 					shot_stats.Shot_Size = shot_stats.Shot_Size;
 				}

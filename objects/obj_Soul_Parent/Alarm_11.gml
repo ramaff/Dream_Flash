@@ -47,9 +47,9 @@ for (bi = 0; bi < 9; bi++) {
 					Shot_Stats.Shot_Power = Shot_Stats.Shot_Power * 1.5;
 					
 					if Shot_Stats.Shot_Burst_Stats = false {
-						Shot_Stats.Shot_Burst_Stats = [json_parse(json_stringify(Shot_Stats))]
+						Shot_Stats.Shot_Burst_Stats = [variable_clone(Shot_Stats)]
 					} else {
-						array_push(Shot_Stats.Shot_Burst_Stats, json_parse(json_stringify(Shot_Stats)))	
+						array_push(Shot_Stats.Shot_Burst_Stats, variable_clone(Shot_Stats))	
 					}
 		
 					//Shot_Stats.Shot_Burst_Type = 1;

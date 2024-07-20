@@ -194,7 +194,7 @@ function scr_Shot_Creation(_cw = current_weapon_stats) {
 		    with instance_create(shxx, shyy, asset_get_index(_cw.Shot_Type)) {
 		        scr_Default_Shot_Stats();
 				
-				shot_stats = json_parse(json_stringify(_cw));
+				shot_stats = variable_clone(_cw);
         
 				shot_stats.Shot_Origin = obj_Soul_Parent;
 		        target = noone;

@@ -25,9 +25,11 @@ function scr_State_Weapon_Mod(){
 			
 			shotburstpower = shot_stats.Shot_Power
 			
+			var _og_stats = variable_clone(shot_stats)
+			
 			repeat(count) {
 				with instance_create(x,y, object_index) {
-					scr_Duplicate_Shot_Stats("", "");
+					shot_stats = scr_Duplicate_Shot_Stats(_og_stats, _og_stats);
 					
 					sprite_index = other.sprite_index;
 				

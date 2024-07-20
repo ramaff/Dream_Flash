@@ -67,11 +67,7 @@ if shot_stats.Shot_Speed < shot_stats.Shot_Min_Speed {
     speed = shot_stats.Shot_Min_Speed;
 }
 
-var oang = 90;
-if shot_stats.Shot_Wave_Direction < 0 {
-	oang = 270;	
-}
-{
+if shot_stats.Shot_Wave_Direction != 0 {
 	x += lengthdir_x(shot_stats.Shot_Wave_Direction,direction + 90);
 	y += lengthdir_y(shot_stats.Shot_Wave_Direction,direction + 90);
 }
@@ -142,7 +138,7 @@ if shot_stats.Shot_Air_Burst_Stats != false {
 		        with instance_create(x,y,_obj) {
 					var _v_shot_air_burst_stats = other.shot_stats.Shot_Air_Burst_Stats[burstIndex]
 				
-					scr_Duplicate_Shot_Stats(_v_shot_air_burst_stats, scr_Dupe_Struct(_stats), dir);
+					shot_stats = scr_Duplicate_Shot_Stats(_v_shot_air_burst_stats, scr_Dupe_Struct(_stats), dir);
 					
 					scr_Shot_Burst_Stats(_v_shot_air_burst_stats);
 					

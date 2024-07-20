@@ -67,7 +67,7 @@ if !scr_Room_Leavable() {
 	totalbossnum += instance_number(obj_The_Veil);
 	totalbossnum += instance_number(obj_Soul_Collector);
 	var cboss = 0;
-    for(i = 0; i < totalbossnum; i++) {
+    for(var i = 0; i < totalbossnum; i++) {
         bosshealth[i] = 0;
         bossmaxhealth[i] = 0;
 		bossphase[i] = 1;
