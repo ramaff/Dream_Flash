@@ -15,6 +15,8 @@ function scr_Weapon_GUI() {
 	for(i = 0; i < global.weaponslots; i++) {
 
 	    var weap = Soul_Weapons_Control.weapon[i,2];
+		var ex = 0;
+		var why = 0;
 		if global.weaponslots = 3 { 
 		    if (Soul_Weapons_Control.weapon[i,1] = 0 ) {
 		        var ex = 45

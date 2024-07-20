@@ -160,6 +160,12 @@ if abs(type) = 11 and category = 4 {
 	if size = 4 {
         scr_Game_Zoom(900/540);
     }
+	if instance_exists(obj_Bloom_Control) {
+		with(obj_Bloom_Control) {
+			scr_Room_Effect_Step()
+		}
+	}
+	
 }
 
 if abs(type) = 12 and category = 4 {
@@ -217,6 +223,12 @@ if abs(type) = 14 and category = 4 {
 	}
 	
 	scr_Game_Zoom(camcon.window_scale);
+	
+	if instance_exists(obj_Bloom_Control) {
+		with(obj_Bloom_Control) {
+			scr_Room_Effect_Step()
+		}
+	}
     
 }
 

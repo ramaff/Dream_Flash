@@ -105,7 +105,7 @@ function scr_Beam_Create(shxx, shyy, beamseg, beamdir, curvedir, beamstop, beamx
 						with instance_create(shxx + beamxx,shyy + beamyy,obj_Beam_Shot) {
 							var _v_shot_air_burst_stats = other.shot_stats.Shot_Air_Burst_Stats[burstIndex]
 					
-							scr_Duplicate_Shot_Stats(_v_shot_air_burst_stats, scr_Dupe_Struct(other.shot_stats));
+							scr_Duplicate_Shot_Stats(_v_shot_air_burst_stats, scr_Dupe_Struct(other.shot_stats), dir);
 							
 							if variable_struct_exists(_v_shot_air_burst_stats, "Shot_Life_Span") {
 								_v_shot_air_burst_stats.Shot_Life_Span = other.shot_stats.Shot_Life_Span

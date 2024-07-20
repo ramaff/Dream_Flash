@@ -41,6 +41,7 @@ if scr_State_Recollection_Unlocked() {
 	}
 }
 
+buttNum = 0;
 
 if global.recollectCategory = "Weapons" {
     for(i = 1; i <= (numOfButts / 3); i++) {

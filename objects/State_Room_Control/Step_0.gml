@@ -2,22 +2,10 @@
 if instance_number(obj_Item_Parent) = 0 and global.bosscount <= 1 and bossSpawn < 1 {
 
 
-	difficulty = global.floor[global.currentroom,24];
-	if bossSpawn = 0 {
-		boss = global.floor[global.currentroom,21];
-		champ = global.floor[global.currentroom,22];
-		boost = global.floor[global.currentroom,23];
-	}
-	/*
-	if bossSpawn = 1 {
-		boss = global.floor[global.currentroom,28];
-		champ = global.floor[global.currentroom,29];
-		boost = global.floor[global.currentroom,30];
-	}
-	if bossSpawn = 2 {
-		boss = global.floor[global.currentroom,31];
-		champ = global.floor[global.currentroom,32];
-		boost = global.floor[globa*/
+	var difficulty = global.floor[global.currentroom,24];
+	var boss = global.floor[global.currentroom,21];
+	var champ = global.floor[global.currentroom,22];
+	var boost = global.floor[global.currentroom,23];
 
 	scr_Boss_Summon(boss,champ,boost,difficulty,0);
 	
@@ -83,23 +71,11 @@ if global.bosscount < 1 and (/*bossSpawn = 0 ||*/ bossSpawn = 1) {
 	if fieldSpawn = 0 and global.soultransformedstate != "None" {
 		
 		scr_Boss_Beat();
-		
-		staChoose = 0;
         
         fieldSpawn = 1;
-
 		
-		if staChoose = 1 {
-            //global.floor[global.currentroom,0] = "State Field"
-        } else {
-            global.floor[global.currentroom,0] = "Normal"
-        }
+        global.floor[global.currentroom,0] = "Normal"
 		
-        
-        if global.floor[global.currentroom,0] = "Normal" {
-        } else {
-			
-        }
         
     } else {
 	    if instance_number(obj_Item_Parent) = 0 {

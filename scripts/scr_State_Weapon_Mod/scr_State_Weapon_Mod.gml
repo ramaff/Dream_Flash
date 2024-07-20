@@ -12,7 +12,6 @@ function scr_State_Weapon_Mod(){
 		
 			image = 1;
 			
-			dir = 0;
 			var followtar = id
 			var count = 2 * global.soulstateformboost;
 			var remainder = frac(count);

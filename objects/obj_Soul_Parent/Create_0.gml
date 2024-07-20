@@ -17,3 +17,12 @@ texelW = texture_get_texel_width(sprite_get_texture(sprite_index,0));
 texelH = texture_get_texel_height(sprite_get_texture(sprite_index,0));
 
 scr_Soul_Particles();
+
+Charge_Speed = 0;
+Charge_Power = 0;
+Charge_Knockback = 0;
+Charge_Lifespan = 0;
+Charge_Time = 0;
+Charge_Hold = 0;
+Charge_Size = 0;
+	

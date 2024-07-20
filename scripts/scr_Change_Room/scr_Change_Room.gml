@@ -7,6 +7,7 @@ function scr_Change_Room() {
 	global.soulperceptionTemp = 0;
 	global.soulstateTemp = 0;
 	*/
+	layer_tilemap_destroy(global.backt)
 
 	global.instanceidincrementer = 1;
 

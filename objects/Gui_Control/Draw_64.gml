@@ -74,22 +74,6 @@ if !scr_Room_Leavable() {
     }
     with(obj_Main_Boss_Parent) {
 		if object_index != obj_Sandman_Thought and object_index != obj_Veil_Mask and object_index != obj_Soul_Collector and object_index != obj_Dream_Crawler_Part {
-			/*if currentphase = finalphase {
-				other.bosshealth[cboss] = bosshealth;
-			} else {
-				other.bosshealth[cboss] = bosshealth + bossmaxhealth2;
-			} */
-		
-			/*
-			if finalphase = 3 {
-				if currentphase = 1 {
-					other.bosshealth[cboss] = bosshealth + bossmaxhealth2 + bossmaxhealth3;
-				} else if currentphase = 2 {
-					other.bosshealth[cboss] = bosshealth + bossmaxhealth3;
-				} else if currentphase = 3 {
-					other.bosshealth[cboss] = bosshealth;
-				}
-			} */
 			
 			other.bosshealth[cboss] = bosshealth;
 			
@@ -157,9 +141,9 @@ if !scr_Room_Leavable() {
 		draw_sprite(spr_Mega_Map,0,winx / 2,winy / 2)	
 	}
 
-    rType = global.floor[global.currentroom,0];
+    var _rm_type = global.floor[global.currentroom,0];
     
-    if rType = "Shop" {
+    if _rm_type = "Shop" {
         if global.currentchapter = 1 {
             draw_sprite_ext(spr_Soul_Flash,0,winx - 64,140,0.5,0.5,0,c_white,1);
             draw_text(winx - 64,156, string_hash_to_newline(string(global.soulflash)));

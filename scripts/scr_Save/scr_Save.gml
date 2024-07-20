@@ -10,6 +10,9 @@ function scr_Save() {
 
 	ini_open(_backup_save_file)
 
+	var i = 0;
+
+	//ini_write_string("Recollection", "recollectionWeap", json_stringify(global.recollectionWeap));
 	for(i = 0; i <= 999; i++) {
 	    ini_write_real("Recollection", "recollectionWeap" + string(i), global.recollectionWeap[i]);
 	}

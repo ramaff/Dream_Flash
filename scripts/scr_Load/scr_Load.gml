@@ -7,6 +7,8 @@ function scr_Load() {
 	var _backup_save_file = "savegame_backup.sav"
 	
 	scr_Handle_File_Load(_save_file, _backup_save_file)
+	
+	var i = 0;
 
 	if (file_exists(_save_file)) {
 	    ini_open(_save_file)

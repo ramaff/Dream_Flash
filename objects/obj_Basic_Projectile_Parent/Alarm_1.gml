@@ -16,7 +16,7 @@ for(i = 0; i < extra_shots_amount; i++) {
 	if (alarm[0] mod extra_stats[i].Shot_Extra_Hit_Frequency = 0) {
 	
 		var current_extra_stats = extra_stats[i]
-	    dir = 0;
+	    var dir = 0;
 	    shot_stats.Shot_Hit_Again = 1;
 		/*if variable_struct_exists(current_extra_stats, "Burst_Power") {
 			shotburstpower = shot_stats.Shot_Power * current_extra_stats.Burst_Power;
@@ -44,7 +44,7 @@ for(i = 0; i < extra_shots_amount; i++) {
 				//shot_stats = scr_Setup_Default_Shot_Stats()
 				//shot_stats = scr_Struct_Merge(shot_stats, scr_Dupe_Struct(current_extra_stats), false);
 				//var _dupe_stats = scr_Dupe_Struct(other.shot_stats)
-		        scr_Duplicate_Shot_Stats(current_extra_stats, scr_Dupe_Struct(other.shot_stats));
+		        scr_Duplicate_Shot_Stats(current_extra_stats, scr_Dupe_Struct(other.shot_stats), dir);
 				
 				scr_Shot_Burst_Stats(current_extra_stats)
 				

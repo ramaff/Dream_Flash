@@ -92,7 +92,9 @@ var dy = keyboard_check(ord(global.gameMoveDown)) - keyboard_check(ord(global.ga
 
 smovefactor = 1;
 
-smovemultiplier = smovefactor * smovementspeed * ((10 + smovementfactorbuffamount) / 10) * ((10 + smovementfactor) / 10) * scr_Class_Stat_Movement_Speed_Multiplier();
+var smovemultiplier = smovefactor * smovementspeed * ((10 + smovementfactorbuffamount) / 10) * ((10 + smovementfactor) / 10) * scr_Class_Stat_Movement_Speed_Multiplier();
+var energyregenfactor = 1;
+var sdelayregenfactor = 1;
 
 var soulDirectionAttempt = 0;
 var move = false;

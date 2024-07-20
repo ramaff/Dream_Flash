@@ -8,10 +8,9 @@ for (bi = 0; bi < 9; bi++) {
 			var len = (Shot_Repetition_Max[bi] - Shot_Repetition[bi]) * Shot_Repetition_Forward_Interval[bi];
 			//Shot_XX = lengthdir_x(len,Shot_Direction);
 			//Shot_YY = lengthdir_y(len,Shot_Direction);
-			Shot_Forward_Amount = len;
 		}
 		
-		Shot_Stats = Shot_Repetition_Stats[bi]
+		var Shot_Stats = Shot_Repetition_Stats[bi]
 		
 		Shot_Stats = scr_Setup_Weapon_Stats(Shot_Stats)
 		

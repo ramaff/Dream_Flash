@@ -18,6 +18,3 @@ var dir = -45;
         }
 		dir += 22.5;
     }
-
-// Inherit the parent event
-event_inherited();

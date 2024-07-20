@@ -1,40 +1,40 @@
-nextRoomX = 0;
-nextRoomY = 0;
-nextRoom = global.currentroom;
+var _next_room_x = 0;
+var _next_room_y = 0;
+var _next_room = global.currentroom;
 
-roomXUp = 0;
-roomXDown = 0;
-roomYUp = 0;
-roomYDown = 0;
+var _room_x_up = 0;
+var _room_x_down = 0;
+var _room_y_up = 0;
+var _room_y_down = 0;
 
-for(i = 0; i <= global.maxRooms; i++) {
-    if global.floor[global.currentroom,1] = global.floor[i,1] + 1
-    if global.floor[global.currentroom,2] = global.floor[i,2] {
-        roomXDown = 1;
+for(var _i = 0; _i <= global.maxRooms; _i++) {
+    if global.floor[global.currentroom,1] = global.floor[_i,1] + 1
+    if global.floor[global.currentroom,2] = global.floor[_i,2] {
+        _room_x_down = 1;
     }
-    if global.floor[global.currentroom,1] = global.floor[i,1] - 1
-    if global.floor[global.currentroom,2] = global.floor[i,2] {
-        roomXUp = 1;
+    if global.floor[global.currentroom,1] = global.floor[_i,1] - 1
+    if global.floor[global.currentroom,2] = global.floor[_i,2] {
+        _room_x_up = 1;
     }
-    if global.floor[global.currentroom,1] = global.floor[i,1]
-    if global.floor[global.currentroom,2] = global.floor[i,2] + 1 {
-        roomYUp = 1;
+    if global.floor[global.currentroom,1] = global.floor[_i,1]
+    if global.floor[global.currentroom,2] = global.floor[_i,2] + 1 {
+        _room_y_up = 1;
     }
-    if global.floor[global.currentroom,1] = global.floor[i,1]
-    if global.floor[global.currentroom,2] = global.floor[i,2] - 1 {
-        roomYDown = 1;
+    if global.floor[global.currentroom,1] = global.floor[_i,1]
+    if global.floor[global.currentroom,2] = global.floor[_i,2] - 1 {
+        _room_y_down = 1;
     }
 }
 
-size = global.floor[global.currentroom,3];
-xPos = (room_width / 2) - (size / 2);
-yPos = (room_height / 2) - (size / 2);
+var _size = global.floor[global.currentroom,3];
+var _x_pos = (room_width / 2) - (_size / 2);
+var _y_pos = (room_height / 2) - (_size / 2);
 
-spriteSize = size / 1024;
-//if size >= 992 {
-leaveSprite = spr_Adjustable_Leave_Indicator;
+var _sprite_size = _size / 1024;
+//if _size >= 992 {
+var _leave_sprite = spr_Adjustable_Leave_Indicator;
 
-var odep = depth;
+var _orig_depth = depth;
 depth = 100;
 
 
@@ -48,21 +48,21 @@ if lalp > 1.05 {
 }
 
 if scr_Room_Leavable() {
-    if roomXUp = 1 {
-        draw_sprite_ext(leaveSprite,0,xPos,yPos+2,spriteSize,spriteSize,0+180,c_white,lalp);
+    if _room_x_up = 1 {
+        draw_sprite_ext(_leave_sprite,0,_x_pos,_y_pos+2,_sprite_size,_sprite_size,0+180,c_white,lalp);
     }
-    if roomYUp = 1 {
-        draw_sprite_ext(leaveSprite,0,xPos+1,yPos+2+size,spriteSize,spriteSize,90+180,c_white,lalp);
+    if _room_y_up = 1 {
+        draw_sprite_ext(_leave_sprite,0,_x_pos+1,_y_pos+2+_size,_sprite_size,_sprite_size,90+180,c_white,lalp);
     }
-    if roomXDown = 1 {
-        draw_sprite_ext(leaveSprite,0,xPos+size-1,yPos+1+size,spriteSize,spriteSize,180+180,c_white,lalp);
+    if _room_x_down = 1 {
+        draw_sprite_ext(_leave_sprite,0,_x_pos+_size-1,_y_pos+1+_size,_sprite_size,_sprite_size,180+180,c_white,lalp);
     }
-    if roomYDown = 1 {
-        draw_sprite_ext(leaveSprite,0,xPos+size,yPos+1,spriteSize,spriteSize,270+180,c_white,lalp);
+    if _room_y_down = 1 {
+        draw_sprite_ext(_leave_sprite,0,_x_pos+_size,_y_pos+1,_sprite_size,_sprite_size,270+180,c_white,lalp);
     }
 }
 
-depth = odep;
+depth = _orig_depth;
 
 depth = 100;
 

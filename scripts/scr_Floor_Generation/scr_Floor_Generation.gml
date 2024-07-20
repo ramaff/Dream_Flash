@@ -136,7 +136,7 @@ function scr_Floor_Generation() {
     
 	    global.floor[i,5] = 0; // Room X Offset
 	    global.floor[i,6] = 0; // Room Y Offset
-	    for(j = 1; j <= 13; j++) {
+	    for(var j = 1; j <= 13; j++) {
 	        global.floor[i,6 + j] = 0; 
 	    }
 	    if global.floor[i,0] = "Boss" || global.floor[i,0] = "Super Boss" {
@@ -182,7 +182,7 @@ function scr_Floor_Generation() {
 			}
 			
 	        itemNumPick = 1;
-	        for(j = 1; j <= itemNumChoice; j++) {
+	        for(var j = 1; j <= itemNumChoice; j++) {
 				
 	            global.floor[i,j+6] = scr_Class_Item_Choose(global.floor[i,0],0);
 	        }
@@ -201,7 +201,7 @@ function scr_Floor_Generation() {
 			}
 			
 	        itemNumPick = 1;
-	        for(j = 1; j <= itemNumChoice; j++) {
+	        for(var j = 1; j <= itemNumChoice; j++) {
 				
 	            global.floor[i,j+6] = scr_Misc_Field_Pool_Pick()
 	        }
@@ -229,7 +229,7 @@ function scr_Floor_Generation() {
 	        itemNumPick = 1;
 		
 			//itemNumChoice = 4;
-	        for(j = 1; j <= itemNumChoice; j++) {
+	        for(var j = 1; j <= itemNumChoice; j++) {
 				
 	            global.floor[i,j+6] = scr_Weapon_Item_Choose();
 	        }
@@ -304,7 +304,7 @@ function scr_Floor_Generation() {
 			}
 			
 	        itemNumPick = 1;
-	        for(j = 1; j <= itemNumChoice; j++) {
+	        for(var j = 1; j <= itemNumChoice; j++) {
 				
 	            global.floor[i,j+6] = scr_Misc_Field_Pool_Pick();
 	        }
@@ -340,7 +340,7 @@ function scr_Floor_Generation() {
 	        itemNumPick = 1;
 
 			
-	        for(j = 1; j <= itemNumChoice; j++) {
+	        for(var j = 1; j <= itemNumChoice; j++) {
 	            global.floor[i,j+6] = scr_Misc_Field_Pool_Pick();
 	        }
 			

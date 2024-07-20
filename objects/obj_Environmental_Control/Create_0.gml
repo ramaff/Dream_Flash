@@ -21,7 +21,6 @@ with instance_create(room_width / 2,room_height / 2,obj_LightS) {
 
 //instance_create(x,y,obj_light_renderer);
 
-instance_create(room_width / 2, room_height / 2, obj_Flash_Overlay);
 
 scr_Mental_Background();
 
@@ -336,25 +335,3 @@ if properTileSet = ts_Dream_Tiles {
 		}
 	}
 }
-	
-	/*
-	//layer_background_visible(global.envr, true);
-	//layer_x(global.backl,(room_width - properSize) / 2);
-	//layer_y(global.backl,(room_height - properSize) / 2);
-} else {
-	//draw_background_part(properBG,0,0,global.floor[global.currentroom,4],global.floor[global.currentroom,4],room_width/2 - properSize/2,room_height/2 - properSize/2);
-	global.backl = layer_create(10000);
-	global.envr = layer_background_create(global.backl, properBG);
-	//global.backt = layer_tilemap_create(global.backl, 0, 0, bg_Flassh_tileset, 16, 32);
-	/*
-	layer_background_visible(global.envr, true);
-	layer_x(global.backl,(room_width - global.floor[global.currentroom,3]) / 2);
-	layer_y(global.backl,(room_height - global.floor[global.currentroom,3]) / 2);
-	
-	layer_background_xscale(global.envr,global.floor[global.currentroom,3] / properSize);
-	layer_background_yscale(global.envr,global.floor[global.currentroom,3] / properSize);
-	
-}
-*/
-
-//texture_set_interpolation(true);

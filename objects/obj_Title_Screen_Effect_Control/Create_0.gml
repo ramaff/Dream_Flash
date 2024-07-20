@@ -5,6 +5,4 @@ repeat(20 + irandom(5)) {
     instance_create(random(room_width),random(room_height),obj_Flash_Sparkle);
 }
 
-texture_set_interpolation(true);
-
 depth = -100;

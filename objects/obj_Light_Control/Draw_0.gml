@@ -1,15 +1,5 @@
 
 if surface_exists(surf) {
-	
-	
-	/*
-	var sheight = surface_get_height(surf);
-	 
-	if (sheight != (540 / camcon.view_zoom)) {
-		surface_resize(surf, 960 / camcon.view_zoom, 540 / camcon.view_zoom)
-	}
-	*/
-	
 
     roomEnvironment = global.floor[global.currentroom,4];
     

@@ -95,17 +95,17 @@ if ((global.bosscount <= 0) and (global.spiritRoom != global.currentroom) and (g
 	}   
 } 
 
-MThealth = 0;
-chealth = 0;
+var MThealth = 0;
+var chealth = 0;
 with(obj_Main_Boss_Parent) {
     if currentphase = 2 {
-        other.MThealth += bossmaxhealth;
-        other.chealth += bosshealth;
+        MThealth += bossmaxhealth;
+        chealth += bosshealth;
     } else {
-        other.MThealth += bossmaxhealth;
-        other.MThealth += bossmaxhealth2;
-        other.chealth += bosshealth;
-        other.chealth += bossmaxhealth2;
+        MThealth += bossmaxhealth;
+        MThealth += bossmaxhealth2;
+        chealth += bosshealth;
+        chealth += bossmaxhealth2;
     }
 }
 var spiritSend = 0 

@@ -7,8 +7,8 @@ if soulinvincibility <= 0 and other.bulletpower > 0 and soul_underground <= 0 {
 		}
 	}
     
-    damageamount = other.bulletpower + (global.souldespair / 20) + (global.soulloathing / 10);
-    defenseamount = (sdefenseadd + sdefensebuffamount) + global.currentheartdefense + (global.soulvanity / 20);
+    var damageamount = other.bulletpower + (global.souldespair / 20) + (global.soulloathing / 10);
+    var defenseamount = (sdefenseadd + sdefensebuffamount) + global.currentheartdefense + (global.soulvanity / 20);
     
 	hitType = "Nonboss";
 	
@@ -17,7 +17,7 @@ if soulinvincibility <= 0 and other.bulletpower > 0 and soul_underground <= 0 {
         scr_Soul_Spirit_Check_Bullet();
     }
     
-    scr_Soul_Damage_Calculation();
+    scr_Soul_Damage_Calculation(damageamount, defenseamount);
 	scr_Soul_Hit_Status_Add();
     
     if global.totalhearts <= 0 {

@@ -2,7 +2,7 @@
   "resourceType": "GMRoom",
   "resourceVersion": "1.0",
   "name": "Medium_Flash_Boss_Room",
-  "creationCodeFile": "${project_dir}/rooms/Medium_Flash_Boss_Room/RoomCreationCode.gml",
+  "creationCodeFile": "rooms/Medium_Flash_Boss_Room/RoomCreationCode.gml",
   "inheritCode": false,
   "inheritCreationOrder": false,
   "inheritLayers": false,

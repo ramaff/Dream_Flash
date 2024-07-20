@@ -32,9 +32,9 @@ with (obj_Bullet_Parent) {
 }
 with (obj_Soul_Parent) {
 	if point_distance(x,y,other.x,other.y) < (_range * 7.5) {
-		damageamount = _potency;
-		defenseamount = 0;
-		scr_Soul_Damage_Calculation();
+		var damageamount = _potency;
+		var defenseamount = 0;
+		scr_Soul_Damage_Calculation(damageamount, defenseamount);
 		
 		direction = point_direction(x,y,other.x,other.y)
 		speed = sqrt(_potency * 2)

@@ -2,7 +2,7 @@
 // You can write your code in this editor
 view_enabled = true;
 view_visible[0] = true;
-for(i = 1; i < 8; i++) {
+for(var i = 1; i < 8; i++) {
 	view_visible[i] = false;
 }
 

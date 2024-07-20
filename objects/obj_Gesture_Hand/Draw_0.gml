@@ -2,7 +2,6 @@
 // You can write your code in this editor
 
 // Inherit the parent event
-texture_set_interpolation(0);
 
 var palindex = champ;
 
@@ -15,5 +14,3 @@ pal_swap_set(spr_Gesture_Ghoul_Palette,palindex,false);
 event_inherited();
 
 pal_swap_reset();
-
-texture_set_interpolation(1);

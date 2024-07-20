@@ -1,7 +1,7 @@
-function scr_Soul_Damage_Calculation() {
+function scr_Soul_Damage_Calculation(_damage_amount, _defense_amount) {
 	//Location Soul Hit Events
 
-	//if (damageamount > defenseamount) {
+	//if (_damage_amount > _defense_amount) {
 	    soulinvincibility = 36;
 		
 		//scr_E01();
@@ -10,14 +10,14 @@ function scr_Soul_Damage_Calculation() {
 		
 		var truedam = 0;
 		
-		if damageamount > global.stagedamage * 1.5 {
-			damageamount = global.stagedamage * 1.5;	
+		if _damage_amount > global.stagedamage * 1.5 {
+			_damage_amount = global.stagedamage * 1.5;	
 		}
     
-	    if (damageamount - defenseamount > damageamount / 5) {
-	        truedam = (damageamount - defenseamount) / (1 + global.souldamagereduction);
+	    if (_damage_amount - _defense_amount > _damage_amount / 5) {
+	        truedam = (_damage_amount - _defense_amount) / (1 + global.souldamagereduction);
 	    } else {
-			truedam -= damageamount / 5;
+			truedam -= _damage_amount / 5;
 		}
 		
 		truedam = scr_OC04_Check(truedam);
@@ -54,9 +54,9 @@ function scr_Soul_Damage_Calculation() {
 	    scr_B04();
 		scr_XA03_Charge(truedam);
 		
-		scr_Screen_Shake(ceil(damageamount * 1.5), 7);
+		scr_Screen_Shake(ceil(_damage_amount * 1.5), 7);
     
-	    scr_Hit_Reactions();
+	    scr_Hit_Reactions(_damage_amount, _defense_amount);
 	//}
 
 

@@ -124,7 +124,7 @@ if shot_stats.Shot_Air_Burst_Stats != false {
 	if instance_exists(near_boss) and burstIndex >= 0 and shot_stats.Shot_Air_Burst_Stats[burstIndex] != false {
 		var sprd = shot_stats.Shot_Air_Burst_Stats[burstIndex].Spread
 		if distance_to_object(near_boss) <= shot_stats.Shot_Air_Burst_Stats[burstIndex].Range {
-			dir = -sprd / 2;
+			var dir = -sprd / 2;
 			//shot_stats.Shot_Life_Span = shot_stats.Shot_Life_Span * 0.6;
 			
 			//shot_stats.Shot_Air_Burst_Stats[burstIndex] = scr_Setup_Shot_Stats_Asset(shot_stats.Shot_Air_Burst_Stats[burstIndex]);
@@ -142,7 +142,7 @@ if shot_stats.Shot_Air_Burst_Stats != false {
 		        with instance_create(x,y,_obj) {
 					var _v_shot_air_burst_stats = other.shot_stats.Shot_Air_Burst_Stats[burstIndex]
 				
-					scr_Duplicate_Shot_Stats(_v_shot_air_burst_stats, scr_Dupe_Struct(_stats));
+					scr_Duplicate_Shot_Stats(_v_shot_air_burst_stats, scr_Dupe_Struct(_stats), dir);
 					
 					scr_Shot_Burst_Stats(_v_shot_air_burst_stats);
 					

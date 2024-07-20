@@ -7,15 +7,10 @@
 
 function scr_XA03(){
 	if global.temperActive = true {
-		/*
-		with (Soul_Hearts_Control) {
-			for(i = 1; i < 24; i++) {
-			    heart[i,3] -= 0.2;
-			}
-		} */
-		damageamount = round((1 + random(1)) * global.XA[3]);
-		defenseamount = 0;
-		scr_Soul_Damage_Calculation();
+		
+		var damageamount = round((1 + random(1)) * global.XA[3]);
+		var defenseamount = 0;
+		scr_Soul_Damage_Calculation(damageamount, defenseamount);
 	}
 	
 }

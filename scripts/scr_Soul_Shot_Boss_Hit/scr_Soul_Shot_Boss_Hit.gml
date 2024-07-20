@@ -116,7 +116,7 @@ function scr_Soul_Shot_Boss_Hit() {
 			}
         
 	        if shot_stats.Shot_Weaken != 0 {
-	            for(i = 0; i <= 49; i++) {
+	            for(var i = 0; i <= 49; i++) {
 	                if other.bossweaken[i] = 0 {
 	                    other.bossweaken[i] = shot_stats.Shot_Weaken;
 	                    other.bossweakentime[i] = shot_stats.Shot_Weaken_Time;
@@ -157,7 +157,7 @@ function scr_Soul_Shot_Boss_Hit() {
 					var _v_burst_stats = shot_stats.Shot_Burst_Stats[burstIndex]
 					repeat(shot_stats.Shot_Burst_Stats[burstIndex].Amount) {
 					    with instance_create(x,y, asset_get_index(_v_burst_stats.Shot_Type)) {
-					        scr_Duplicate_Shot_Stats(_v_burst_stats, scr_Dupe_Struct(other.shot_stats));
+					        scr_Duplicate_Shot_Stats(_v_burst_stats, scr_Dupe_Struct(other.shot_stats), dir);
 					
 							scr_Shot_Burst_Stats(_v_burst_stats);
 					
