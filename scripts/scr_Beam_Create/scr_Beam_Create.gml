@@ -20,7 +20,7 @@ function scr_Beam_Create(shxx, shyy, beamseg, beamdir, curvedir, beamstop, beamx
 		
 		beamsize = shot_stats.Shot_Size + scr_Wave(0,0.05,0.25,0);
 		
-		splitsize = splitsize * (beamsize / og_beamsize)
+		splitsize = 256 * (beamsize / og_beamsize)
 		
 		beamsize = clamp(beamsize, 0.1, 2)
 			
@@ -55,8 +55,8 @@ function scr_Beam_Create(shxx, shyy, beamseg, beamdir, curvedir, beamstop, beamx
     
 			    var pointDir = point_direction(shxx + beamxx,shyy + beamyy,target.x,target.y);
 				dirChange = sin(degtorad(pointDir - beamdir)) * homespeed;
-				dirChange = round(dirChange / 5) * 5;
-				dirChange = clamp(dirChange, -15, 15);
+				dirChange = round(dirChange / 10) * 10;
+				dirChange = clamp(dirChange, -30, 30);
 					
 				beamdir += dirChange
 			} 
@@ -129,10 +129,7 @@ function scr_Beam_Create(shxx, shyy, beamseg, beamdir, curvedir, beamstop, beamx
 							
 							shot_stats.Shot_Hit_Again = 0;
 							
-							splitsize = 256 * shot_stats.Shot_Size;
-							beamsize = shot_stats.Shot_Size;
-							
-							scr_Beam_Create(shxx, shyy, beamseg, beamdir + other.dir, curvedir, beamstop, beamxx, beamyy, beamtype, beamtotalsegs, beamspriteindex, beamsize, dirChange, homespeed, splitsize)
+							scr_Beam_Create(shxx, shyy, beamseg, beamdir + other.dir, curvedir, beamstop, beamxx, beamyy, beamtype, beamtotalsegs, beamspriteindex, shot_stats.Shot_Size, dirChange, homespeed, 256 * shot_stats.Shot_Size)
 						}
 							
 					    dir += _current_burst_stats.Spread;

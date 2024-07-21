@@ -21,8 +21,8 @@ with instance_create(room_width / 2,room_height / 2,obj_LightS) {
 
 //instance_create(x,y,obj_light_renderer);
 
-
 scr_Mental_Background();
+
 
 var h2 = 0;
 

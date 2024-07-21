@@ -1,7 +1,5 @@
 function scr_Change_Room(roomGoX, roomGoY) {
 
-	layer_tilemap_destroy(global.backt)
-
 	global.instanceidincrementer = 1;
 
 	global.roomdarkness = 0;

@@ -1,4 +1,5 @@
-game_restart();
+
 
 scr_Delete_Run();
 
+scr_Game_Reset()
