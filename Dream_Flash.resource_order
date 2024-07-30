@@ -166,6 +166,7 @@
     {"name":"obj_Thought_Spawn","order":9,"path":"objects/obj_Thought_Spawn/obj_Thought_Spawn.yy",},
     {"name":"scr_Dupe_Struct","order":1,"path":"scripts/scr_Dupe_Struct/scr_Dupe_Struct.yy",},
     {"name":"obj_Marble_Bullet","order":4,"path":"objects/obj_Marble_Bullet/obj_Marble_Bullet.yy",},
+    {"name":"newer_old_deep_watcher","order":1,"path":"sprites/newer_old_deep_watcher/newer_old_deep_watcher.yy",},
     {"name":"spr_thought_chain_xl","order":4,"path":"sprites/spr_thought_chain_xl/spr_thought_chain_xl.yy",},
     {"name":"obj_Chasing_Twin_Horror","order":1,"path":"objects/obj_Chasing_Twin_Horror/obj_Chasing_Twin_Horror.yy",},
     {"name":"scr_Ascending_Soul_Essence_Beam","order":20,"path":"scripts/scr_Ascending_Soul_Essence_Beam/scr_Ascending_Soul_Essence_Beam.yy",},

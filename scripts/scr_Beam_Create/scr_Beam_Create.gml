@@ -16,11 +16,11 @@ function scr_Beam_Create(shxx, shyy, beamseg, beamdir, curvedir, beamstop, beamx
 		beamspriteindex = global.essencebeamtime / 5
 		beamspriteindex = clamp(beamspriteindex, 0, 3);
 		
-		var og_beamsize = beamsize;
+		//var og_beamsize = beamsize;
 		
 		beamsize = shot_stats.Shot_Size + scr_Wave(0,0.05,0.25,0);
 		
-		splitsize = 256 * (beamsize / og_beamsize)
+		splitsize = 256 * beamsize//(beamsize / og_beamsize)
 		
 		beamsize = clamp(beamsize, 0.1, 2)
 			
@@ -55,8 +55,8 @@ function scr_Beam_Create(shxx, shyy, beamseg, beamdir, curvedir, beamstop, beamx
     
 			    var pointDir = point_direction(shxx + beamxx,shyy + beamyy,target.x,target.y);
 				dirChange = sin(degtorad(pointDir - beamdir)) * homespeed;
-				dirChange = round(dirChange / 10) * 10;
-				dirChange = clamp(dirChange, -30, 30);
+				dirChange = round(dirChange / 15) * 15;
+				dirChange = clamp(dirChange, -45, 45);
 					
 				beamdir += dirChange
 			} 
@@ -90,10 +90,12 @@ function scr_Beam_Create(shxx, shyy, beamseg, beamdir, curvedir, beamstop, beamx
 			}
 			var _current_burst_stats = shot_stats.Shot_Air_Burst_Stats[burstIndex]
 			if instance_exists(near_boss) and burstIndex >= 0 and _current_burst_stats != false {
-				var near_dist = point_distance(shxx + beamxx,shyy + beamyy,near_boss.x,near_boss.y) - 50
+				var near_dist = point_distance(shxx + beamxx,shyy + beamyy,near_boss.x,near_boss.y) - 100
 				var sprd = _current_burst_stats.Spread
 				if near_dist <= _current_burst_stats.Range {
 					dir = -sprd / 2;
+					
+					var _split_beam_size = splitsize * _current_burst_stats.Burst_Size
 					
 					repeat(_current_burst_stats.Amount) {
 						
@@ -129,7 +131,8 @@ function scr_Beam_Create(shxx, shyy, beamseg, beamdir, curvedir, beamstop, beamx
 							
 							shot_stats.Shot_Hit_Again = 0;
 							
-							scr_Beam_Create(shxx, shyy, beamseg, beamdir + other.dir, curvedir, beamstop, beamxx, beamyy, beamtype, beamtotalsegs, beamspriteindex, shot_stats.Shot_Size, dirChange, homespeed, 256 * shot_stats.Shot_Size)
+							scr_Beam_Create(shxx, shyy, beamseg, beamdir + dir, curvedir, beamstop, beamxx, beamyy, beamtype, 
+											beamtotalsegs, beamspriteindex, shot_stats.Shot_Size, dirChange, homespeed, _split_beam_size)
 						}
 							
 					    dir += _current_burst_stats.Spread;

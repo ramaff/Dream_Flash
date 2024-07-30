@@ -121,9 +121,6 @@ if shot_stats.Shot_Air_Burst_Stats != false {
 		var sprd = shot_stats.Shot_Air_Burst_Stats[burstIndex].Spread
 		if distance_to_object(near_boss) <= shot_stats.Shot_Air_Burst_Stats[burstIndex].Range {
 			var dir = -sprd / 2;
-			//shot_stats.Shot_Life_Span = shot_stats.Shot_Life_Span * 0.6;
-			
-			//shot_stats.Shot_Air_Burst_Stats[burstIndex] = scr_Setup_Shot_Stats_Asset(shot_stats.Shot_Air_Burst_Stats[burstIndex]);
 			
 			var _stats = shot_stats
 			var _obj = asset_get_index(shot_stats.Shot_Air_Burst_Stats[burstIndex].Shot_Type)
@@ -142,13 +139,13 @@ if shot_stats.Shot_Air_Burst_Stats != false {
 					
 					scr_Shot_Burst_Stats(_v_shot_air_burst_stats);
 					
-					shot_stats.Shot_Burst_Stats = other.shot_stats.Shot_Burst_Stats;
-					shot_stats.Shot_Extra_Stats = other.shot_stats.Shot_Extra_Stats;
+					shot_stats.Shot_Burst_Stats = _stats.Shot_Burst_Stats;
+					shot_stats.Shot_Extra_Stats = _stats.Shot_Extra_Stats;
 					
 					if burstIndex > 0 {
 						shot_stats.Shot_Air_Burst_Stats = [];
 						for(var i = 0; i <= burstIndex-1; i++) {
-							array_insert(shot_stats.Shot_Air_Burst_Stats,i,other.shot_stats.Shot_Air_Burst_Stats[i])
+							array_insert(shot_stats.Shot_Air_Burst_Stats,i, _stats.Shot_Air_Burst_Stats[i])
 						}
 					} else {
 						shot_stats.Shot_Air_Burst_Stats = false;	

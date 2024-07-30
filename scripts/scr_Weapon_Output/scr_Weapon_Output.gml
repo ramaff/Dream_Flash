@@ -14,7 +14,7 @@ function scr_Weapon_Output(_spawn_projectile = spawnProjectile, _minion = minion
 		
 		if _cw_stats.Shot_Extra != false {
 			
-			var _og_stats = scr_Dupe_Struct(_cw_stats)
+			var _og_stats = variable_clone(_cw_stats)
 			var _size = array_length(_cw_stats.Shot_Extra)
 			
 			for(var _i = 0; _i < _size; _i++) {

@@ -15,10 +15,10 @@ function scr_Initial_Beam_Shot_Setup(shxx = x, shyy = y){
 		var beamtotalsegs = shot_stats.Shot_Beam_Count;
 		beamtotalsegs = 10;
 		var beamspriteindex = 0;
-		var beamsize = shot_stats.Shot_Size * 2;
+		var beamsize = shot_stats.Shot_Size;
 		var dirChange = 0;
 		var boss_hits = {};
-		var homespeed = shot_stats.Shot_Homing_Speed * 5;
+		var homespeed = shot_stats.Shot_Homing_Speed * 7.5;
 		var hit_again = -1;
 		var splitsize = 256 * shot_stats.Shot_Size;
 		

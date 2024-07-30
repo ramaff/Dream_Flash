@@ -106,7 +106,7 @@ function scr_Weapon_Use_List(cWP = global.currentweapon, _weap_slot = 0) {
 				if Shot_Repetition[bi] <= 0 {
 					
 					//if Charge_Hold = 2 {
-					Shot_Repetition_Stats[bi] = current_weapon_stats
+					Shot_Repetition_Stats[bi] = variable_clone(current_weapon_stats)
 					//}
 					
 					if variable_struct_exists(current_weapon_stats, "Shot_Repetition") {

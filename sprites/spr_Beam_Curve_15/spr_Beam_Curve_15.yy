@@ -1,11 +1,11 @@
 {
   "resourceType": "GMSprite",
   "resourceVersion": "1.0",
-  "name": "spr_Beam_Curve_10",
-  "bbox_bottom": 271,
+  "name": "spr_Beam_Curve_15",
+  "bbox_bottom": 391,
   "bbox_left": 8,
-  "bbox_right": 319,
-  "bbox_top": 164,
+  "bbox_right": 312,
+  "bbox_top": 262,
   "bboxMode": 0,
   "collisionKind": 1,
   "collisionTolerance": 0,
@@ -13,11 +13,11 @@
   "edgeFiltering": false,
   "For3D": false,
   "frames": [
-    {"resourceType":"GMSpriteFrame","resourceVersion":"1.1","name":"1795a995-abe0-4a37-a716-8359cd69c654",},
+    {"resourceType":"GMSpriteFrame","resourceVersion":"1.1","name":"07e7be06-5d1d-49a3-ab93-f04ffbb89530",},
   ],
   "gridX": 0,
   "gridY": 0,
-  "height": 320,
+  "height": 400,
   "HTile": false,
   "layers": [
     {"resourceType":"GMImageLayer","resourceVersion":"1.0","name":"733e1447-c028-4c5b-bf90-8a9cc4a8953c","blendMode":0,"displayName":"default","isLocked":false,"opacity":100.0,"visible":true,},
@@ -32,7 +32,7 @@
   "sequence": {
     "resourceType": "GMSequence",
     "resourceVersion": "1.4",
-    "name": "spr_Beam_Curve_10",
+    "name": "spr_Beam_Curve_15",
     "autoRecord": true,
     "backdropHeight": 768,
     "backdropImageOpacity": 0.5,
@@ -54,13 +54,13 @@
     "timeUnits": 1,
     "tracks": [
       {"resourceType":"GMSpriteFramesTrack","resourceVersion":"1.0","name":"frames","builtinName":0,"events":[],"inheritsTrackColour":true,"interpolation":1,"isCreationTrack":false,"keyframes":{"resourceType":"KeyframeStore<SpriteFrameKeyframe>","resourceVersion":"1.0","Keyframes":[
-            {"resourceType":"Keyframe<SpriteFrameKeyframe>","resourceVersion":"1.0","Channels":{"0":{"resourceType":"SpriteFrameKeyframe","resourceVersion":"1.0","Id":{"name":"1795a995-abe0-4a37-a716-8359cd69c654","path":"sprites/spr_Beam_Curve_10/spr_Beam_Curve_10.yy",},},},"Disabled":false,"id":"7d234b99-dca3-4842-8498-b36b22564cb7","IsCreationKey":false,"Key":0.0,"Length":1.0,"Stretch":false,},
+            {"resourceType":"Keyframe<SpriteFrameKeyframe>","resourceVersion":"1.0","Channels":{"0":{"resourceType":"SpriteFrameKeyframe","resourceVersion":"1.0","Id":{"name":"07e7be06-5d1d-49a3-ab93-f04ffbb89530","path":"sprites/spr_Beam_Curve_15/spr_Beam_Curve_15.yy",},},},"Disabled":false,"id":"ffacd3db-df05-4393-992d-7c3e0ae13fa9","IsCreationKey":false,"Key":0.0,"Length":1.0,"Stretch":false,},
           ],},"modifiers":[],"spriteId":null,"trackColour":0,"tracks":[],"traits":0,},
     ],
     "visibleRange": null,
     "volume": 1.0,
     "xorigin": 40,
-    "yorigin": 240,
+    "yorigin": 360,
   },
   "swatchColours": null,
   "swfPrecision": 2.525,
@@ -70,5 +70,5 @@
   },
   "type": 0,
   "VTile": false,
-  "width": 320,
+  "width": 400,
 }
