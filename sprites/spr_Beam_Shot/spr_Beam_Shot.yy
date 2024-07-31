@@ -4,7 +4,7 @@
   "name": "spr_Beam_Shot",
   "bbox_bottom": 111,
   "bbox_left": 0,
-  "bbox_right": 315,
+  "bbox_right": 167,
   "bbox_top": 48,
   "bboxMode": 0,
   "collisionKind": 1,
@@ -80,5 +80,5 @@
   },
   "type": 0,
   "VTile": false,
-  "width": 320,
+  "width": 168,
 }

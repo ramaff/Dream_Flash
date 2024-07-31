@@ -13,14 +13,14 @@ function scr_Initial_Beam_Shot_Setup(shxx = x, shyy = y){
 		//var oldbeamdir = beamdir
 		var beamtype = shot_stats.Shot_Beam;
 		var beamtotalsegs = shot_stats.Shot_Beam_Count;
-		beamtotalsegs = 10;
+		beamtotalsegs = 15;
 		var beamspriteindex = 0;
 		var beamsize = shot_stats.Shot_Size;
 		var dirChange = 0;
 		var boss_hits = {};
-		var homespeed = shot_stats.Shot_Homing_Speed * 7.5;
+		var homespeed = shot_stats.Shot_Homing_Speed * 3;
 		var hit_again = -1;
-		var splitsize = 256 * shot_stats.Shot_Size;
+		var splitsize = 128 * shot_stats.Shot_Size;
 		
 		scr_Beam_Create(shxx, shyy, beamseg, beamdir, curvedir, beamstop, beamxx, beamyy, beamtype, beamtotalsegs, beamspriteindex, beamsize, dirChange, homespeed, splitsize)	
 	}

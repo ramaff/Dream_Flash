@@ -21,9 +21,9 @@ function scr_Charged_Release() {
 			
 			current_weapon_stats.Shot_Size += Charge_Size;
 			
-			if Charge_Hold = 2 {
+			/*if Charge_Hold = 2 {
 				scr_Weapon_Use_List(weaponcharge)
-			}
+			} */
 			
 			if weaponcharge = 10 {
 	        }
@@ -79,10 +79,10 @@ function scr_Charged_Release() {
 				current_weapon_stats.Shot_Burst_Power = current_weapon_stats.Shot_Power / 10;
 	        }
 			
-			if Charge_Hold = 2 {
+			/*if Charge_Hold = 2 {
 				
 				exit;
-			}
+			} */
 			
 			scr_OC03(weaponcharge);
 		
