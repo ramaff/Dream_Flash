@@ -174,7 +174,12 @@ function scr_Weapon_Use_List(cWP = global.currentweapon, _weap_slot = 0) {
 			} else {
 				current_weapon_stats.Shot_Power = 0;
 			}
-		}	
+		}
+		
+		if global.N[5] > 0 and cWP = 14 {
+			scr_Shot_Power_Set(0.4 + (global.N[5] / 10), current_weapon_stats)
+			scr_Shot_Size_Set(sqrt(0.4 + (global.N[5] / 10)), false, current_weapon_stats)
+		}
 		
 		scr_Weapon_Output(spawnProjectile, minion, current_weapon_stats)
 		

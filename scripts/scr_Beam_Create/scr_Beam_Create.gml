@@ -95,7 +95,8 @@ function scr_Beam_Create(shxx, shyy, beamseg, beamdir, curvedir, beamstop, beamx
 				if near_dist <= _current_burst_stats.Range {
 					dir = -sprd / 2;
 					
-					var _split_beam_size = splitsize * _current_burst_stats.Burst_Size
+					var _split_beam_size = shot_stats.Shot_Size * _current_burst_stats.Burst_Size
+					var _split_beam_split_size = splitsize * _current_burst_stats.Burst_Size
 					
 					repeat(_current_burst_stats.Amount) {
 						
@@ -132,7 +133,7 @@ function scr_Beam_Create(shxx, shyy, beamseg, beamdir, curvedir, beamstop, beamx
 							shot_stats.Shot_Hit_Again = 0;
 							
 							scr_Beam_Create(shxx, shyy, beamseg, beamdir + dir, curvedir, beamstop, beamxx, beamyy, beamtype, 
-											beamtotalsegs, beamspriteindex, shot_stats.Shot_Size, dirChange, homespeed, _split_beam_size)
+											beamtotalsegs, beamspriteindex, _split_beam_size, dirChange, homespeed, _split_beam_split_size)
 						}
 							
 					    dir += _current_burst_stats.Spread;

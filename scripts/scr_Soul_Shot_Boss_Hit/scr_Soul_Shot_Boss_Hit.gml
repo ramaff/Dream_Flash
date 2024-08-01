@@ -153,7 +153,7 @@ function scr_Soul_Shot_Boss_Hit() {
 			if shot_stats.Shot_Burst_Stats != false {
 				var burstIndex = array_length(shot_stats.Shot_Burst_Stats) - 1;
 				if instance_exists(obj_Boss_Parent) and burstIndex >= 0 {
-					dir = -shot_stats.Shot_Burst_Stats[burstIndex].Spread / 2;
+					var dir = -shot_stats.Shot_Burst_Stats[burstIndex].Spread / 2;
 					//shot_stats.Shot_Life_Span = shot_stats.Shot_Life_Span * 0.6;
 					image = 1
 					var _v_burst_stats = shot_stats.Shot_Burst_Stats[burstIndex]

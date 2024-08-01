@@ -1269,7 +1269,7 @@
     "N06": {
         "recollectionString": "Sophistication",
         "recollectionSprite": "spr_Sophistication_Art",
-        "recollectionExtraStats": "+Current Weapon Complexity Increase",
+        "recollectionExtraStats": "+Weapon Complexity Increase",
         "recollectionDescription": "Replace all of your current weapons with random weapons that are one tier higher than their current one."
     },
     
