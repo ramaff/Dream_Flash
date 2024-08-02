@@ -32,9 +32,6 @@ function scr_V06(_procs = 0) {
 		var amount = 2 + (_procs * 2)
 		variable_struct_set(current_weapon_stats.Shot_Air_Burst_Stats[burstIndex], "Amount", amount); 
 		variable_struct_set(current_weapon_stats.Shot_Air_Burst_Stats[burstIndex], "Spread", -(90 / saccuracy));
-		if global.currentweapon = 14 {
-			variable_struct_set(current_weapon_stats.Shot_Air_Burst_Stats[burstIndex], "Spread", (90 / saccuracy) / amount);
-		}
 	}
 
 }

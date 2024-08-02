@@ -7,7 +7,7 @@
 function scr_C01(){
 
 	if global.C[1] > 0 {
-		energyregenfactor += energyregenfactor * (global.C01Boost / 1000);
+		currentenergyregenfactor += currentenergyregenfactor * (global.C01Boost / 1000);
 		global.C01Boost = min(global.C01Boost + 0.8, 400 * global.C[1])
 	}
 

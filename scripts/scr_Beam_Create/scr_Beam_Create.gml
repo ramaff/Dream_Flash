@@ -62,8 +62,10 @@ function scr_Beam_Create(shxx, shyy, beamseg, beamdir, curvedir, beamstop, beamx
 			} 
 		} 
 
-		beamxx += lengthdir_x(splitsize, oldbeamdir)
-		beamyy += lengthdir_y(splitsize, oldbeamdir)
+		var upxx = lengthdir_x(splitsize, oldbeamdir)
+		var upyy = lengthdir_y(splitsize, oldbeamdir)
+		beamxx += upxx
+		beamyy += upyy
 
 		if shot_stats.Shot_Wander > 0 and beamseg > 8 {
 			scr_Create_Beam_Tip(shxx, shyy, beamxx, beamyy, beamsize, beamdir);
@@ -90,13 +92,22 @@ function scr_Beam_Create(shxx, shyy, beamseg, beamdir, curvedir, beamstop, beamx
 			}
 			var _current_burst_stats = shot_stats.Shot_Air_Burst_Stats[burstIndex]
 			if instance_exists(near_boss) and burstIndex >= 0 and _current_burst_stats != false {
-				var near_dist = point_distance(shxx + beamxx,shyy + beamyy,near_boss.x,near_boss.y) - 60
+				var near_dist = point_distance(shxx + beamxx,shyy + beamyy,near_boss.x,near_boss.y) - 100
 				var sprd = _current_burst_stats.Spread
 				if near_dist <= _current_burst_stats.Range {
 					dir = -sprd / 2;
 					
 					var _split_beam_size = shot_stats.Shot_Size * _current_burst_stats.Burst_Size
 					var _split_beam_split_size = splitsize * _current_burst_stats.Burst_Size
+					
+					scr_Create_Beam_Tip(shxx, shyy, beamxx, beamyy, beamsize, beamdir);
+					//var upxx = lengthdir_x(splitsize, oldbeamdir)
+					//var upyy = lengthdir_y(splitsize, oldbeamdir)
+					beamxx -= upxx
+					beamyy -= upyy
+					
+					beamxx += lengthdir_x(splitsize, oldbeamdir) * _current_burst_stats.Burst_Size
+					beamyy += lengthdir_y(splitsize, oldbeamdir) * _current_burst_stats.Burst_Size
 					
 					repeat(_current_burst_stats.Amount) {
 						
@@ -138,7 +149,6 @@ function scr_Beam_Create(shxx, shyy, beamseg, beamdir, curvedir, beamstop, beamx
 							
 					    dir += _current_burst_stats.Spread;
 					}
-					scr_Create_Beam_Tip(shxx, shyy, beamxx, beamyy, beamsize, beamdir);
 					exit;
 				}
 			}	

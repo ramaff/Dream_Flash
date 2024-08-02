@@ -13,9 +13,9 @@ if ((dx != 0) or (dy != 0))
     var l = sqrt(dx*dx + dy*dy);
     dx /= l;
     dy /= l;
-    energyregenfactor = 0.8 * ((120 + global.soulbliss) / 120) * ((10 + senergyregenfactor) / 10);
+    currentenergyregenfactor = 0.8 * ((120 + global.soulbliss) / 120) * ((10 + senergyregenfactor) / 10);
 } else {
-    energyregenfactor = 1 * ((120 + global.soulbliss) / 120) * ((10 + senergyidleregenfactor) / 10) * ((10 + senergyregenfactor) / 10);
+    currentenergyregenfactor = 1 * ((120 + global.soulbliss) / 120) * ((10 + senergyidleregenfactor) / 10) * ((10 + senergyregenfactor) / 10);
 }
 
 image_speed = 0;

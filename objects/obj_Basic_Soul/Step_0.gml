@@ -93,8 +93,8 @@ var dy = keyboard_check(ord(global.gameMoveDown)) - keyboard_check(ord(global.ga
 smovefactor = 1;
 
 var smovemultiplier = smovefactor * smovementspeed * ((10 + smovementfactorbuffamount) / 10) * ((10 + smovementfactor) / 10) * scr_Class_Stat_Movement_Speed_Multiplier();
-var energyregenfactor = 1;
-var sdelayregenfactor = 1;
+currentenergyregenfactor = 1;
+//var sdelayregenfactor = 1;
 
 var soulDirectionAttempt = 0;
 var move = false;
@@ -116,7 +116,7 @@ if ((dx != 0) or (dy != 0)) and move {
     dx /= l;
     dy /= l;
     shealthregenfactor = 0.8 * ((10 + sregenfactorbuffamount) / 10);
-    energyregenfactor = 0.9 * sstatefirerate * ((10 + senergyregenfactor) / 10);
+    currentenergyregenfactor = 0.9 * sstatefirerate * ((10 + senergyregenfactor) / 10);
     sdelayregenfactor = 1 * sstatefirerate * ((10 + sfireratefactorbuffamount) / 10);
 
     scr_D14();
@@ -169,7 +169,7 @@ if ((dx != 0) or (dy != 0)) and move {
 	}
 } else {
     shealthregenfactor = 1 * ((10 + shealthidleregenfactor) / 10) * ((10 + sregenfactorbuffamount) / 10);
-    energyregenfactor = 1 * sstatefirerate * ((10 + senergyidleregenfactor) / 10) * ((10 + senergyregenfactor) / 10);
+    currentenergyregenfactor = 1 * sstatefirerate * ((10 + senergyidleregenfactor) / 10) * ((10 + senergyregenfactor) / 10);
     sdelayregenfactor = 1 * sstatefirerate * ((10 + sfireratefactorbuffamount) / 10);
 	soulmovetimer = 0;
 	
@@ -250,9 +250,9 @@ var _surpass_cap = global.P[1] > 0 || global.C[9] > 0
 
 if (senergy < essenceCap) {
 	if global.bosscount > 0 {
-		senergy += 0.5 * energyregenfactor * scr_Class_Stat_Essence_Regen_Multiplier();
+		senergy += 0.5 * currentenergyregenfactor * scr_Class_Stat_Essence_Regen_Multiplier();
 	} else {
-		senergy += 5 * energyregenfactor * scr_Class_Stat_Essence_Regen_Multiplier();
+		senergy += 5 * currentenergyregenfactor * scr_Class_Stat_Essence_Regen_Multiplier();
 	}
 }
 	

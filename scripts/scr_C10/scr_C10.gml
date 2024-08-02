@@ -3,7 +3,7 @@ function scr_C10() {
 
 	if global.C[10] > 0 and (shealth < (smaxhealth / 2)) {
 		var regenfac = (1 + ((smaxhealth - shealth) / smaxhealth) * global.C[10])
-	    energyregenfactor += regenfac
+	    currentenergyregenfactor += regenfac
 		sdelayregenfactor += regenfac / 3
 		
 		if scr_Chance(10) {
@@ -11,7 +11,7 @@ function scr_C10() {
 		}
 	}
 	if global.C[10] > 0 and (global.totalhearts = 1) {
-	    energyregenfactor += 0.4 * global.C[10];
+	    currentenergyregenfactor += 0.4 * global.C[10];
 	    sdelayregenfactor += 0.133 * global.C[10];
 	}
 
