@@ -18,11 +18,6 @@ for(i = 0; i < extra_shots_amount; i++) {
 		var current_extra_stats = extra_stats[i]
 	    var dir = 0;
 	    shot_stats.Shot_Hit_Again = 1;
-		/*if variable_struct_exists(current_extra_stats, "Burst_Power") {
-			shotburstpower = shot_stats.Shot_Power * current_extra_stats.Burst_Power;
-		} else {
-			shotburstpower = shot_stats.Shot_Power;
-		} */
 	    shot_stats.Shot_Impact_Type = 0;
 	    shot_stats.Shot_Impact_Power = 0;
 	
@@ -42,10 +37,6 @@ for(i = 0; i < extra_shots_amount; i++) {
 	
 	    repeat(ramt) {
 		    with instance_create(x + _xx,y + _yy,obj_Lesser_Soul_Shot) {
-				//Print_DF(current_extra_stats)
-				//shot_stats = scr_Setup_Default_Shot_Stats()
-				//shot_stats = scr_Struct_Merge(shot_stats, scr_Dupe_Struct(current_extra_stats), false);
-				//var _dupe_stats = scr_Dupe_Struct(other.shot_stats)
 		        shot_stats = scr_Duplicate_Shot_Stats(current_extra_stats, variable_clone(_og_stats), dir);
 				
 				scr_Shot_Burst_Stats(current_extra_stats)

@@ -965,6 +965,7 @@
         "Shot_Extra_Stats": [
             {
                 "Shot_Count": 3,
+                "Shot_Spread": 120,
                 "Shot_Extra_Hit_Frequency": 30,
                 "Shot_Sprite": "spr_Paper_Cut",
                 "Burst_Power": 0.5,
@@ -977,7 +978,8 @@
                 "Shot_Point_Angle": true,
                 "Shot_Form_Show": 0,
                 "Shot_Init_Grow": 0,
-                "Shot_Face_Direction": false
+                "Shot_Face_Direction": false,
+                "Shot_Mouse": false
             }
         ],
         "Shot_Homing_Type": 1,
@@ -1861,7 +1863,7 @@
     "311": {
         "Name": "Magic Shields",
         "Recollection_Sprite": "spr_Magic_Shields_Art",
-        "Extra_Stats": "x4 Orbital Shot +Bullet Blocking +No Damage Potential",
+        "Extra_Stats": "+Bullet Blocking +Zero Offense",
         "Description": "Magic Shields orbit the soul, protecting it from damage sources.",
         "Essence": 30,
         "Delay": 40,
