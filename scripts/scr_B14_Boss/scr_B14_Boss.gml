@@ -1,4 +1,4 @@
-function scr_B14_Boss() {
+function scr_B14_Boss(damageamount, defenseamount) {
 	if global.B[14] > 0 {
 	    var bpow = damageamount - defenseamount;
 		if instance_exists(other.bossid) {

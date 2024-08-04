@@ -40,7 +40,7 @@ if instance_exists(other.bossid) and soul_underground <= 0 {
 		}
 	
 	    if (damageamount > defenseamount) {
-	        //scr_B14_Boss();
+			scr_B14_Boss(damageamount, defenseamount);
 	        scr_Soul_Spirit_Check_Boss();
 	    }
     	

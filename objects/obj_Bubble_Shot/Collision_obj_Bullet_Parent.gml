@@ -5,8 +5,10 @@ var bubbleQuotient = 20;
 
 if bubbleQuotient >= (other.bulletpower) {
 	instance_destroy(other);
-	instance_destroy();
+	//instance_destroy();
+	event_user(0)
 } else {
 	other.bulletpower -= (bubbleQuotient);
-	instance_destroy();
+	//instance_destroy();
+	event_user(0)
 }

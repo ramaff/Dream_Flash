@@ -13,7 +13,7 @@ if soulinvincibility <= 0 and other.bulletpower > 0 and soul_underground <= 0 {
 	hitType = "Nonboss";
 	
     if (damageamount > defenseamount) {
-        scr_B14_Bullet();
+        scr_B14_Bullet(damageamount, defenseamount);
         scr_Soul_Spirit_Check_Bullet();
     }
     

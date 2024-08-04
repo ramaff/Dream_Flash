@@ -1,4 +1,4 @@
-function scr_B14_Bullet() {
+function scr_B14_Bullet(damageamount, defenseamount) {
 	if global.B[14] > 0 {
 	    var bpow = damageamount - defenseamount;
 		if instance_exists(other.bulletorigin) {
