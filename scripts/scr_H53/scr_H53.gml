@@ -15,8 +15,8 @@ function scr_H53(){
 		current_weapon_stats.Shot_Forward = 0;
 		current_weapon_stats.Weapon_Split_Hit_Again = 1;
 		
-		Shot_XX = -20 + random(40);
-		Shot_YY = -10 + random(40);
+		current_weapon_stats.Shot_XX = -20 + random(40);
+		current_weapon_stats.Shot_YY = -10 + random(40);
 		
 		current_weapon_stats.Shot_Trail = 1
 		current_weapon_stats.Shot_Trail_Type = "obj_Fire_Part"
@@ -37,6 +37,7 @@ function scr_H53(){
                 Shot_Type: obj_Lesser_Soul_Shot,
                 Shot_Extra_Hit_Frequency: 15,
                 Shot_Power: 1,
+				Burst_Power: 0.34,
                 Shot_Life_Span: 1,
                 Shot_Alpha: 0
             }

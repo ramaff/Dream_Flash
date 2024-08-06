@@ -14,7 +14,7 @@ function scr_Shot_Burst_Stats(_v_burst_stats){
 		shot_stats.Shot_Power_Max = shot_stats.Shot_Power;
 	} else {
 		shot_stats.Shot_Power = _v_burst_stats.Shot_Power;
-		shot_stats.Shot_Power_Level = _v_burst_stats.Shot_Power_Level;
+		shot_stats.Shot_Power_Level = _v_burst_stats.Shot_Power;
 		shot_stats.Shot_Aura_Power = _v_burst_stats.Shot_Power;
 		shot_stats.Shot_Power_Max = shot_stats.Shot_Power;	
 	}
