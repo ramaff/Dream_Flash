@@ -47,7 +47,7 @@
         "recollectionString": "Muscle Memory",
         "recollectionSprite": "spr_Muscle_Memory_Item",
         "recollectionExtraStats": "+Strength from consistency",
-        "recollectionDescription": "Every time you hit a boss gain +6% damage, can increase to a max of +30%. If a projectile misses then the boost resets"
+        "recollectionDescription": "Every time you hit a boss gain additional power to your shots. This effect resets when missing a shot."
     },
     "A08": {
         "recollectionString": "Intense Thoughts",
@@ -262,7 +262,7 @@
         "recollectionString": "Overthinking",
         "recollectionSprite": "spr_Overthinking_Item",
         "recollectionExtraStats": "+Excess Essence Shots",
-        "recollectionDescription": "When over 50% essence the soul leaks more essence into each shot. These shots do more damage but cost much more. Excess essence can be recollected if quick enough."
+        "recollectionDescription": "The soul leaks extra essence into every shot. These shots do 30% more damage but cost much more. Excess essence can be recollected if quick enough."
     },
     "C12": {
         "recollectionString": "Pour Your Heart Out",
@@ -1269,7 +1269,7 @@
     "N06": {
         "recollectionString": "Sophistication",
         "recollectionSprite": "spr_Sophistication_Art",
-        "recollectionExtraStats": "+Current Weapon Complexity Increase",
+        "recollectionExtraStats": "+Weapon Complexity Increase",
         "recollectionDescription": "Replace all of your current weapons with random weapons that are one tier higher than their current one."
     },
     

@@ -59,7 +59,7 @@
             {"resourceType":"Keyframe<SpriteFrameKeyframe>","resourceVersion":"1.0","Channels":{"0":{"resourceType":"SpriteFrameKeyframe","resourceVersion":"1.0","Id":{"name":"25352f12-961b-49fe-80ae-55c6c3ddac69","path":"sprites/spr_Lightning_Bullet/spr_Lightning_Bullet.yy",},},},"Disabled":false,"id":"446293f0-ea81-47f1-b61f-2b0af1260e0e","IsCreationKey":false,"Key":0.0,"Length":1.0,"Stretch":false,},
           ],},"modifiers":[],"spriteId":null,"trackColour":0,"tracks":[],"traits":0,},
     ],
-    "visibleRange": {"x":0.0,"y":0.0,},
+    "visibleRange": null,
     "volume": 1.0,
     "xorigin": 46,
     "yorigin": 46,

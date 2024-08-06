@@ -7,7 +7,7 @@ function scr_Change_Room_Map(argument0) {
 	global.soulperceptionTemp = 0;
 	global.soulstateTemp = 0;
 	*/
-
+	
 	global.instanceidincrementer = 1;
 
 	global.roomdarkness = 0;

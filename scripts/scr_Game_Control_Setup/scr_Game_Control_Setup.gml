@@ -15,7 +15,7 @@ function scr_Game_Control_Setup() {
 	global.state_info = scr_Import_Json("df_state_info.json", json_parse);
 	
 	global.tutorial_progress = {
-		"base_tutorial": 0
+		"base_tutorial": 0,
 	}
 	
 	//scr_Setup_Default_Shot_Stats();

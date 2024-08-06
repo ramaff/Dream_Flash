@@ -21,9 +21,9 @@ function scr_Charged_Release() {
 			
 			current_weapon_stats.Shot_Size += Charge_Size;
 			
-			if Charge_Hold = 2 {
+			/*if Charge_Hold = 2 {
 				scr_Weapon_Use_List(weaponcharge)
-			}
+			} */
 			
 			if weaponcharge = 10 {
 	        }
@@ -48,14 +48,15 @@ function scr_Charged_Release() {
 			            Shot_Count: 1,
 			            Shot_Extra_Hit_Frequency: 15,
 			            Shot_Sprite: "spr_Adept_Bolt_Shot",
-			            Shot_Power: Shot_Power / 8,
+			            Shot_Power: current_weapon_stats.Shot_Power / 8,
 			            Shot_Speed: 1,
 			            Shot_Acceleration: 0.6,
 			            Shot_Life_Span: 60,
 			            Shot_Homing_Type: 1,
 			            Shot_Homing_Speed: 10,
 			            Shot_Pierce: 1,
-			            Shot_Size: 0.5
+			            Shot_Size: 0.5,
+						Shot_Mouse: false
 			        }
 			        
 				}
@@ -79,10 +80,10 @@ function scr_Charged_Release() {
 				current_weapon_stats.Shot_Burst_Power = current_weapon_stats.Shot_Power / 10;
 	        }
 			
-			if Charge_Hold = 2 {
+			/*if Charge_Hold = 2 {
 				
 				exit;
-			}
+			} */
 			
 			scr_OC03(weaponcharge);
 		

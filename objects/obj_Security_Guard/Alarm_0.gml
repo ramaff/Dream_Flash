@@ -5,34 +5,34 @@ alarm[2] = 20;
 if instance_exists(obj_Boss_Parent) {
     scr_Default_Weapon_Stats();
     
-    Shot_Spread += 0;
-    Shot_Accuracy += 45;
-    Shot_Count += 4;
+    current_weapon_stats.Shot_Spread += 10;
+    current_weapon_stats.Shot_Accuracy += 45;
+    current_weapon_stats.Shot_Count = 5;
     
-    Shot_Sprite = spr_Secure_Atk_Shot;
-    Shot_Type = obj_Lesser_Soul_Shot;
-	Shot_Size = 0.5;
+    current_weapon_stats.Shot_Sprite = "spr_Secure_Atk_Shot";
+    current_weapon_stats.Shot_Type = "obj_Lesser_Soul_Shot";
+	current_weapon_stats.Shot_Size = 0.5;
 	
 	Weapon_Vomit = 1;
 	Weapon_Vomit_Min_Speed = 0.5;
 	Weapon_Vomit_Max_Speed = 1;
     
-    Shot_Speed = 9.5;
-    Shot_Power = 10;
-    Shot_Knock_Back = 10;
-    Shot_Life_Span = 90;
+    current_weapon_stats.Shot_Speed = 9.5;
+    current_weapon_stats.Shot_Power = 10;
+    current_weapon_stats.Shot_Knock_Back = 10;
+    current_weapon_stats.Shot_Life_Span = 90;
     
     scr_Minion_Shot_Creation();
 	
-	Shot_Spread += 0;
-    Shot_Accuracy += 45;
-    Shot_Count -= 1;
+	current_weapon_stats.Shot_Spread = 10;
+    current_weapon_stats.Shot_Accuracy += 45;
+    current_weapon_stats.Shot_Count -= 1;
 	
-	Shot_Shield_Type = 1;
-    Shot_Shield_Power = 10;
+	current_weapon_stats.Shot_Shield_Type = 1;
+    current_weapon_stats.Shot_Shield_Power = 10;
 	
-	Shot_Sprite = spr_Secure_Def_Shot;
-	Shot_Type = obj_Defense_Soul_Shot;
+	current_weapon_stats.Shot_Sprite = "spr_Secure_Def_Shot";
+	current_weapon_stats.Shot_Type = "obj_Defense_Soul_Shot";
 	
 	scr_Minion_Shot_Creation();
 }

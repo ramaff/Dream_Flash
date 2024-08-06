@@ -64,13 +64,15 @@ instance_create(x,y, Floor_Layout_Control);
 //instance_create(x,y, Music_Control);
 instance_create(x,y, obj_Light_Control);
 instance_create(x,y, obj_Particle_Control);
-instance_create(x,y, obj_Bloom_Control);
+//instance_create(x,y, obj_Bloom_Control);
 
 //instance_create(x,y,obj_Dream_Light_Setup);
 
+/*
 if global.gameTutorial < 5 {
     instance_create(room_width / 2,room_height / 2, Tutorial_Control);
 }
+*/
 
 alarm[0] = 1;
 //alarm[0] = 15;
@@ -79,3 +81,4 @@ instance_create(room_width / 2,room_height / 2, obj_Basic_Soul);
 
 scr_Game_Control_Setup();
 scr_Room_Change_Variables();
+

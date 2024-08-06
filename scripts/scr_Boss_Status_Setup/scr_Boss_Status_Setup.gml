@@ -3,7 +3,7 @@ function scr_Boss_Status_Setup(version=1) {
 	//projectile_hits = ds_list_create();
 	projectile_hits = {};
 	
-	boss_height = 0;
+	//boss_height = 0;
 
 	bossID = id;
 
@@ -13,6 +13,7 @@ function scr_Boss_Status_Setup(version=1) {
 	facing_direction = 1;
 
 	if version = 1 {
+		boss_height = 0;
 		scr_Boss_Dash_Setup();
 	} else {
 		scr_Boss_Dash_Setup_v2();

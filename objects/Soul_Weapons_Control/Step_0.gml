@@ -1,4 +1,4 @@
-for (i = 0; i < 5; i++) {
+for (var i = 0; i < 5; i++) {
     if (weapon[i,1] = 0) {
         global.currentweapon = weapon[i,2];
     }

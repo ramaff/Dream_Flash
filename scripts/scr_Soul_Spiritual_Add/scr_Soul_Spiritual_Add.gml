@@ -40,9 +40,11 @@ function scr_Soul_Spiritual_Add() {
 	    global.badSpirits++;
 	}
 	
-	if global.spiritTutorial = 0 {
+	/*if global.spiritTutorial = 0 {
 		instance_create(x,y,obj_Spirit_Note);	
-	}
+	} */
+	
+	scr_Tutorial_Note_Spawn("spirit_tutorial")
 
 
 

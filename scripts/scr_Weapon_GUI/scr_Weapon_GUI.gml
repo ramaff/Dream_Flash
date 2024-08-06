@@ -6,15 +6,20 @@ function scr_Weapon_GUI() {
 	draw_sprite_ext(spr_Weapon_Template,0,24,winy - 88,0.25,0.25,0,c_white,1);
 	draw_sprite_ext(spr_Weapon_Template,0,65,winy - 88,0.25,0.25,0,c_white,1);
 	
-	wspr = spr_Soul_Shot_Art;
+	var wspr = spr_Soul_Shot_Art;
 
 	if global.weaponslots > 3 {
 		draw_sprite_ext(spr_Weapon_Template,0,45,winy - 112,0.125,0.125,0,c_white,1);
 	}
+	
+	var i = 0;
+	var sc = 1;
 
 	for(i = 0; i < global.weaponslots; i++) {
 
 	    var weap = Soul_Weapons_Control.weapon[i,2];
+		var ex = 0;
+		var why = 0;
 		if global.weaponslots = 3 { 
 		    if (Soul_Weapons_Control.weapon[i,1] = 0 ) {
 		        var ex = 45
@@ -59,7 +64,7 @@ function scr_Weapon_GUI() {
     
     
 	    if weap != 0 {
-	        scr_Weapon_Sprite_List();
+	        wspr = scr_Weapon_Sprite_List(weap, wspr);
             
 	        draw_sprite_ext(wspr,0,ex,why,sc,sc,0,c_white,1);
 	    }

@@ -70,6 +70,8 @@ if instance_exists(obj_Soul_Parent) {
 		}
 	}
 	*/
+	var xAv = 0;
+	var yAv = 0;
 	
 	if global.cameramode = "Soul" {
 		var xAv = mean(obj_Soul_Parent.x * 4,room_width / 2,mouse_x) / 2;

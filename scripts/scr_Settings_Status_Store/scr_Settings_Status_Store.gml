@@ -1,7 +1,7 @@
 function scr_Settings_Status_Store() {
 	
 	global.tutorial_progress = {
-		"base_tutorial": 0
+		"base_tutorial": 0,
 	}
 	
 	global.gameTutorial = 0;

@@ -92,14 +92,15 @@ function scr_Assign_Memory(){
 	}
 
 	if global.recollectCategory = "State" {
-			recoNum = string_digits(itemVal);
-			recollectionCount = global.recollectionState[recoNum];
-		}
+		recoNum = string_digits(itemVal);
+		recollectionCount = global.recollectionState[recoNum];
+	}
 	
-		if global.recollectCategory = "Information" {
-			recoNum = string_digits(itemVal);
-			if recoNum > 6 {
-				recoNum = recoNum - 6;	
-			}
-		}
+	if global.recollectCategory = "Information" {
+		recoNum = 0;
+		/*recoNum = string_digits(itemVal);
+		if recoNum > 6 {
+			recoNum = recoNum - 6;	
+		} */
+	}
 }

@@ -57,7 +57,7 @@
             {"resourceType":"Keyframe<SpriteFrameKeyframe>","resourceVersion":"1.0","Channels":{"0":{"resourceType":"SpriteFrameKeyframe","resourceVersion":"1.0","Id":{"name":"bcc64126-44b1-49f4-b9ab-8b576df9ed32","path":"sprites/spr_Water_Drop_Bullet/spr_Water_Drop_Bullet.yy",},},},"Disabled":false,"id":"228212ea-2995-4b04-871b-990721e46524","IsCreationKey":false,"Key":0.0,"Length":1.0,"Stretch":false,},
           ],},"modifiers":[],"spriteId":null,"trackColour":0,"tracks":[],"traits":0,},
     ],
-    "visibleRange": {"x":0.0,"y":0.0,},
+    "visibleRange": null,
     "volume": 1.0,
     "xorigin": 45,
     "yorigin": 45,

@@ -14,14 +14,14 @@ if currentT = 1 {
     if textT[1] <= 1 and cloudT >= 1 {
         textT[1] += 0.02;
     }
-    draw_sprite_ext(spr_Misc_Tutorial_Stuff,1,x,y-96,0.5,0.5,0,c_white,textT[1]);
+    draw_sprite_ext(spr_spirit_tutorial,1,x,y-96,0.5,0.5,0,c_white,textT[1]);
     draw_text_ext_color(x,y - 32,string_hash_to_newline("You've encountered a wandering Masked Spirit. These spirits wander the dreamscape, leaving if unprovoked."),40,400,c_black,c_black,c_black,c_black,textT[1]);
 }
 if currentT = 2 {
     if textT[2] <= 1 and cloudT >= 2 {
         textT[2] += 0.02;
     }
-    draw_sprite_ext(spr_Misc_Tutorial_Stuff,0,x,y-96,0.5,0.5,0,c_white,textT[1]);
+    draw_sprite_ext(spr_spirit_tutorial,0,x,y-96,0.5,0.5,0,c_white,textT[1]);
     draw_text_ext_color(x,y - 32,string_hash_to_newline("Killing a masked spirit allows you to increase your emotional stats. Be careful, though, as provoking a spirit will cause more dangerous ones to appear later on."),40,400,c_black,c_black,c_black,c_black,textT[1]);
 }
 

@@ -4,12 +4,10 @@ if instance_number(obj_Item_Parent) = 0 and global.bosscount <= 1 and bossSpawn 
 	global.bosscount = 1;
 	global.bossval = 0;
 
-	difficulty = global.floor[global.currentroom,24];
-	if bossSpawn = 0 {
-		boss = global.floor[global.currentroom,21];
-		champ = global.floor[global.currentroom,22];
-		boost = global.floor[global.currentroom,23];
-	}
+	var difficulty = global.floor[global.currentroom,24];
+	var boss = global.floor[global.currentroom,21];
+	var champ = global.floor[global.currentroom,22];
+	var boost = global.floor[global.currentroom,23];
 	if bossSpawn = 1 {
 		boss = global.floor[global.currentroom,28];
 		champ = global.floor[global.currentroom,29];

@@ -12,7 +12,7 @@
 #define PixelSize 1./TexturePageSize
 #define PalHeight ColorCount * PixelSize
 #define Transparent vec4(.0,.0,.0,.0)
-#define Tolerance .004
+#define Tolerance .005
 
 varying vec2 v_vTexcoord;
 varying vec4 v_vColour;

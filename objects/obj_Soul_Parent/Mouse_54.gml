@@ -7,12 +7,13 @@ if !(instance_exists(Tutorial_Control)) {
 	    }
 		scr_Soul_Right_Click(charge);
     
-	    scr_Leave_Condition();
+	    var _leave = scr_Leave_Condition();
     
-	    if global.bosscount = 0
-	    if inside = 0 {
-	        scr_Change_Room();
-	    }
+	    if scr_Room_Leavable() {
+		    if _leave[0] == false {
+		        scr_Change_Room(_leave[1], _leave[2]);
+		    }
+		}
 	} else {
 
 	    if point_distance(obj_Astral_Indicator.x,obj_Astral_Indicator.y,obj_Item_Parent.x,obj_Item_Parent.y) > 50 {
@@ -23,11 +24,11 @@ if !(instance_exists(Tutorial_Control)) {
 			scr_Soul_Right_Click(charge);
 	    }
     
-	    scr_Leave_Condition();
+	    var _leave = scr_Leave_Condition();
     
-	    if global.bosscount = 0 and scr_Negative_Room_Check() {
-		    if inside = 0 {
-		        scr_Change_Room();
+	    if scr_Room_Leavable() {
+		    if _leave[0] == false {
+		        scr_Change_Room(_leave[1], _leave[2]);
 		    }
 		}
 

@@ -4,7 +4,7 @@ var pointDir = scr_Soul_Point();
 image_angle += sin(degtorad(pointDir - image_angle)) * rspeed;
 direction = image_angle;
 	
-souldir = scr_Soul_Point();
+var souldir = scr_Soul_Point();
 var adif = 15 + abs(angle_difference(direction, souldir));
 			
 speed += (40 - (adif)) / (1200 / bulletspeed);

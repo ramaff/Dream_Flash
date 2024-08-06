@@ -313,16 +313,13 @@ function scr_Recollection_Panel_Assign() {
 	}
 	
 	if global.recollectCategory = "Information" {
-	    for(i = 1; i <= 9; i++) {
-	        if buttNum = i {
-	            itemVal = "Tutorial 0" + string(i);
-	        }
-	    }
-	    for(i = 10; i <= 40; i++) {
-	        if buttNum = i {
-	            itemVal = "Tutorial " + string(i);
-	        }
-	    }
+		
+		var _tutorial_keywords = ["starting_tutorial", "item_field", "stat_level_up", "shop", "state_tutorial", "state_menu_tutorial", "channel_tutorial", 
+								  "spirit_tutorial", "stat_tutorial", "spiritual_stat_tutorial", "placeholder_run_end_note"]
+		var _i = buttNum - 1
+		if _i < array_length(_tutorial_keywords) {
+			itemVal = _tutorial_keywords[_i]
+		}
 	}
 
 

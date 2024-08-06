@@ -3,7 +3,7 @@ function scr_U02() {
 
 	if global.U[2] > 0 and global.roomtime >= 600 {
 	    sdelayregenfactor += sdelayregenfactor * (global.U[2] * 0.3);
-		energyregenfactor += energyregenfactor * (global.U[2] * 0.45);
+		currentenergyregenfactor += currentenergyregenfactor * (global.U[2] * 0.45);
 		
 		var color = make_color_rgb(0, 255, 84);		
 		var color2 = make_color_rgb(0, 255, 255);

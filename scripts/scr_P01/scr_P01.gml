@@ -5,9 +5,9 @@ function scr_P01() {
 	var essenceCap = smaxenergy + (1.25 * (global.soulessence + global.soulessenceTemp));
 		if essLowCap = 1 {
 		if global.bosscount > 0 {
-			senergy += 0.425 * energyregenfactor * ((60 + global.soulessence + global.soulessenceTemp) / 60);
+			senergy += 0.425 * currentenergyregenfactor * ((60 + global.soulessence + global.soulessenceTemp) / 60);
 		} else {
-		    senergy += 4.25 * energyregenfactor * ((60 + global.soulessence + global.soulessenceTemp) / 60);
+		    senergy += 4.25 * currentenergyregenfactor * ((60 + global.soulessence + global.soulessenceTemp) / 60);
 		}
 		}
 

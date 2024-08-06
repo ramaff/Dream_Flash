@@ -71,6 +71,7 @@ if global.recollectCategory != "Bosses" and global.recollectCategory != "State" 
 } else {
 	var boxSize = 144;
 	//boxSize = sprite_get_height(recollectionSprite) * recollectionSize;
+	recollectionSize = 144 / sprite_get_width(recollectionSprite)
 }
 
 var rHeight = (sprite_get_height(recollectionSprite)) * recollectionSize;

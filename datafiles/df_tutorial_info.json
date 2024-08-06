@@ -1,22 +1,86 @@
 {
-    "base_tutorial": {
+    "starting_tutorial": {
         "tut_sprite": "spr_Tutorial_Stuff",
-        "tut_texts": ["this is placeholder tutorial text", "page 2 placeholder"]
+        "tut_texts": [
+            "The soul can move using WASD. You can shoot by left clicking, which will generate imaginary attacks.", 
+            "Teleport by right clicking, doing this costs essence and requires some cooldown time. You can exit dreamscape fields by teleporting outside of the field.",
+            "Using Weapons and Teleporting uses up the essence of your soul. Your essence is limited but replenishes automatically.",
+            "You have 3 hearts by default. These hearts each have their own health and can have unique properties. You can also swap the order of your hearts outside of boss fights by clicking them and moving them to a different heart slot. If you lose a heart it is gone forever.",
+            "Each room can have a boss battle that you must defeat to proceed. At the end of the chapter you will fight a super boss that will allow you to enter the next stage of your dream."
+        ]
     },
     "item_field": {
-        "tut_sprite": "spr_Item_Field_Tutorial",
+        "tut_sprite": "spr_item_field_tutorial",
         "tut_texts": [
             "As you explore the dreamscape, you will encounter item fields. You may pick one of the items in the field to influence your soul.",
             "After defeating a certain number of bosses an emotion item field will appear. This will allow you to pick which of your soul's stats to improve."]
     },
     "stat_level_up": {
-        "tut_sprite": "spr_Stat_Level_Up_Tutorial",
+        "tut_sprite": "spr_stat_level_up_tutorial",
         "tut_texts": [
             "When one of your stats gets high enough, an additional item field will spawn. This item field will contain items corresponding to the stat that has leveled up.",
             "Be mindful of which stats you decide to increase. Some stat item field may contain items with negative consequences."]
     },
     "shop": {
-        "tut_sprite": "spr_Shop_Tutorial",
+        "tut_sprite": "spr_shop_tutorial",
         "tut_texts": ["When defeating bosses they drop recalls. Using these recalls you can access memories in this shop."]
+    },
+    "state_tutorial": {
+        "tut_sprite": "spr_state_tutorial",
+        "tut_texts": [
+            "Your soul has reached a higher state of being!",
+            "You can now temporarily activate a state transformation. There are various state transformations and each one is significantly more powerful than the base soul.",
+            "State transformations can be activated when the state bar is full. You trigger the transformation by performing a teleport on the position of the soul.",
+            "Different states have different rates of state charge usage. When you run out of state charge you revert back into the base soul.",
+            "All teleports performed during a higher state will have a powerful effect that can severely damage bosses, at the cost of additional state charge."
+        ]
+    },
+    "state_menu_tutorial": {
+        "tut_sprite": "spr_state_menu_tutorial",
+        "tut_texts": [
+            "In order to unlock a state transformation the soul needs 3 state credits. Each state has a different set of criteria for getting its state credits.",
+            "Sources of state credits could be items you pick up, bosses defeated in channeling rooms, or having high enough stats in a certain attribute."]
+    },
+    "channel_tutorial": {
+        "tut_sprite": "spr_channel_tutorial",
+        "tut_texts": [
+            "In channeling rooms you fight state related bosses and gain a state credit when defeating them.",
+            "If you have two or more of a state credit, then a channel is guaranteed to have a boss related to that state.",
+            "If multiple states have two or more credits, then the boss with the highest credit will spawn."
+        ]
+    },
+    "spirit_tutorial": {
+        "tut_sprite": "spr_spirit_tutorial",
+        "tut_texts": [
+            "You've encountered a wandering Masked Spirit. These spirits wander the dreamscape, leaving if unprovoked.",
+            "Killing a masked spirit allows you to increase your emotional stats. Be careful though, as provoking a spirit will cause more dangerous ones to appear later on."]
+    },
+    "stat_tutorial": {
+        "tut_sprite": "spr_stat_tutorial",
+        "tut_texts": [
+            "Strength\n+20% Damage at max strength (40)",
+            "Vitality\n+50% Health at max vitality (40)\n+100% Health Regen Speed at max vitality (40)",
+            "Essence\n+50% Essence Regen at max essence (40)",
+            "Dexterity\n+50% Soul Movement at max dexterity (40)\n+25% Weapon Firerate at max dexterity (40)",
+            "Perception\n+100% Teleport Recharge Speed at max perception (40)\n-25% Weapon/Teleport Essence Cost at max perception (40)",
+            "State\n+100% State Regen at max essence (40)"
+        ]
+    },
+    "spiritual_stat_tutorial": {
+        "tut_sprite": "spr_spiritual_stat_tutorial",
+        "tut_texts": [
+            "Hope\n+0.4-1.6 Extra Items per Item Field at max hope(40)\n+4 Recalls per boss fight at max hope(40)\n+200% Soul Brightness at max hope(40)",
+            "Bliss\n+33% Essence Regen at max bliss(40)\n+50% Health Regen at max bliss(40)",
+            "Assurance\n+16.6% Soul Attack Speed at max assurance(40)\n+20% Boss Attack Speed at max assurance(40)\n+2 Defense at max assurance(40)",
+            "Loathing\n+12.5% Soul Attack Power at max loathing(40)\n+4 Boss Attack Damage at max loathing(40)\n+20% Boss Bullet Speed at max loathing(40)",
+            "Paranoia\n+20% Boss Attack Speed at max paranoia(40)\n+20% Boss Bullet Speed at max paranoia(40)\n-200% Boss Attack Accuracy at max paranoia(40)",
+            "Despair\n+5 Boss Difficulty at max despair(40)\n-2 Soul Defense at max despair(40)\n+20% Boss Attack Speed at max despair(40)\n+100% Field Darkness at max despair(40)"
+        ]
+    },
+    "placeholder_run_end_note": {
+        "tut_sprite": "spr_placeholder_run_end_note",
+        "tut_texts": [
+            "Congratulations on making it this far. This is where the final boss of the game is going to be when I add it for the non-early access version of the game. Thanks for playing! \n \nCheck in often cause this game gets updated on a semi regular basis, also tell all your friends about it."
+        ]
     }
 }

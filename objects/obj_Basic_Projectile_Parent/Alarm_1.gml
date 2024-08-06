@@ -16,13 +16,8 @@ for(i = 0; i < extra_shots_amount; i++) {
 	if (alarm[0] mod extra_stats[i].Shot_Extra_Hit_Frequency = 0) {
 	
 		var current_extra_stats = extra_stats[i]
-	    dir = 0;
+	    var dir = 0;
 	    shot_stats.Shot_Hit_Again = 1;
-		/*if variable_struct_exists(current_extra_stats, "Burst_Power") {
-			shotburstpower = shot_stats.Shot_Power * current_extra_stats.Burst_Power;
-		} else {
-			shotburstpower = shot_stats.Shot_Power;
-		} */
 	    shot_stats.Shot_Impact_Type = 0;
 	    shot_stats.Shot_Impact_Power = 0;
 	
@@ -37,13 +32,12 @@ for(i = 0; i < extra_shots_amount; i++) {
 		if variable_struct_exists(current_extra_stats, "Shot_YY") {
 			_yy = current_extra_stats.Shot_YY
 		}
+		
+		var _og_stats = other.shot_stats
 	
 	    repeat(ramt) {
 		    with instance_create(x + _xx,y + _yy,obj_Lesser_Soul_Shot) {
-				//Print_DF(current_extra_stats)
-				//shot_stats = scr_Setup_Default_Shot_Stats()
-				//shot_stats = scr_Struct_Merge(shot_stats, scr_Dupe_Struct(current_extra_stats), false);
-		        scr_Duplicate_Shot_Stats(current_extra_stats);
+		        shot_stats = scr_Duplicate_Shot_Stats(current_extra_stats, variable_clone(_og_stats), dir);
 				
 				scr_Shot_Burst_Stats(current_extra_stats)
 				
@@ -53,11 +47,6 @@ for(i = 0; i < extra_shots_amount; i++) {
 					shot_stats.Shot_Extra_Stats = []	
 				}
 				
-				//shot_stats = scr_Setup_Default_Shot_Stats();
-				//var _PropertyNames = variable_struct_get_names(current_extra_stats);
-		        //for (var i = 0; i < array_length(_PropertyNames); i++) {
-		        //    variable_struct_set(shot_stats, _PropertyNames[i], variable_struct_get(current_extra_stats, _PropertyNames[i]));
-		        //}
 				scr_Setup_Shot_Stats_Asset(shot_stats);
 			
 				shot_stats.Shot_Speed =	shot_stats.Shot_Speed;
@@ -74,7 +63,7 @@ for(i = 0; i < extra_shots_amount; i++) {
 					shot_stats.Shot_Size = shot_stats.Shot_Size * shot_stats.Burst_Size
 					image_xscale = shot_stats.Shot_Size;
 					image_yscale = shot_stats.Shot_Size;
-					shot_stats.Shot_Size_Max = other.shot_stats.Shot_Size_Max;
+					shot_stats.Shot_Size_Max = _og_stats.Shot_Size_Max;
 				} else {
 					shot_stats.Shot_Size = shot_stats.Shot_Size;
 				}

@@ -33,6 +33,7 @@ function scr_Boss_Stats_Setup(_version=1) {
 
 	//var champval = frac(global.bossval);
 	//var _boss_num = global.bossval - champval;
+	var _boss_num = 0;
 	if _version = 1 {
 		var _boss_num = bossValue - frac(bossValue)
 	} else {

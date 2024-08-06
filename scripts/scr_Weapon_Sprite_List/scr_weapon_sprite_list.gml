@@ -1,5 +1,4 @@
-function scr_Weapon_Sprite_List() {
-	var weap = Soul_Weapons_Control.weapon[i,2];
+function scr_Weapon_Sprite_List(weap, wspr) {
 
 	////////////////////////////////////////////////////////////////////
 	//////////////////////Imaginary Weapon Art//////////////////////////
@@ -398,6 +397,8 @@ function scr_Weapon_Sprite_List() {
 	if weap = 701 {
 		wspr = spr_Cramming_Art;	
 	}
+	
+	return wspr;
 
 
 }

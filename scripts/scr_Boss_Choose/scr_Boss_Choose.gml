@@ -238,13 +238,13 @@ function scr_Boss_Choose(roomNum, exclude, difficultyAdd = 0) {
 	{
 	    bosstype = obj_wall_of_thoughts_v2;
 	    difficulty = 8;
-	    global.champ = choose(0,1,2);
+	    global.champ = choose(0, 1, 2);
 	}
 	if bossform = 8.1 // Nightmare Cloud
 	{
-	    bosstype = obj_Nightmare_Cloud;
+	    bosstype = obj_dark_storm_cloud;
 	    difficulty = 13;
-	    global.champ = choose(0);
+	    global.champ = choose(0, 1, 2);
 	}
 
 	if bossform = 9.1 // Amorphous Jello

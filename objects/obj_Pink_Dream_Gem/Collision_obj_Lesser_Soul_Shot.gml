@@ -66,7 +66,7 @@ if !hit_again and other.shot_stats.Shot_Melee = 0 {
         if duplicate = 7 {
         with instance_create(x,y,obj_Lesser_Soul_Shot) {
             //image = 1;
-            scr_Duplicate_Shot_Stats();
+            shot_stats = scr_Duplicate_Shot_Stats();
 			shot_stats.Shot_Hit_Again = 1;
 			shot_stats.Shot_Size = other.shot_stats.Shot_Size;
 			image_xscale = shot_stats.Shot_Size;

@@ -12,7 +12,6 @@ function scr_State_Weapon_Mod(){
 		
 			image = 1;
 			
-			dir = 0;
 			var followtar = id
 			var count = 2 * global.soulstateformboost;
 			var remainder = frac(count);
@@ -26,9 +25,11 @@ function scr_State_Weapon_Mod(){
 			
 			shotburstpower = shot_stats.Shot_Power
 			
+			var _og_stats = variable_clone(shot_stats)
+			
 			repeat(count) {
 				with instance_create(x,y, object_index) {
-					scr_Duplicate_Shot_Stats(other.shot_stats);
+					shot_stats = scr_Duplicate_Shot_Stats(_og_stats, _og_stats);
 					
 					sprite_index = other.sprite_index;
 				
@@ -38,7 +39,7 @@ function scr_State_Weapon_Mod(){
 					shot_stats.Shot_Snake_Move = 2;
 					
 					scr_Shot_Power_Set(0.5)
-					scr_Shot_Size_Set(0.7)
+					scr_Shot_Size_Set(0.7, false)
 					
 				}
 			}
@@ -65,9 +66,6 @@ function scr_State_Weapon_Mod(){
 		if scr_State_Active_Check("Scrub") {
 		
 			image = 1;
-			//shotduplicatesprite = sprite_index;
-			//shot_stats.Shot_Air_Burst_Stats = scr_Dupe_Struct(shot_stats);
-
 			
 			var size = 1;
 			if sprite_get_height(sprite_index) > 100 {
@@ -78,19 +76,19 @@ function scr_State_Weapon_Mod(){
 				sprite_index = spr_Shot_Bubble_Large;	
 			}
 		
-			shot_stats.Shot_Speed = shot_stats.Shot_Speed;
+			//shot_stats.Shot_Speed = shot_stats.Shot_Speed;
+			shot_stats.Shot_Bubble_Air_Burst_Stats[0].Shot_Friction = shot_stats.Shot_Friction;
+			shot_stats.Shot_Bubble_Air_Burst_Stats[0].Shot_Min_Speed = shot_stats.Shot_Min_Speed;
+			shot_stats.Shot_Bubble_Air_Burst_Stats[0].Shot_Life_Span = shot_stats.Shot_Life_Span;
+			shot_stats.Shot_Bubble_Air_Burst_Stats[0].Shot_Speed = shot_stats.Shot_Speed;
+			shot_stats.Shot_Bubble_Air_Burst_Stats[0].Shot_Homing_Type = shot_stats.Shot_Homing_Type;
+			shot_stats.Shot_Bubble_Air_Burst_Stats[0].Shot_Homing_Speed = shot_stats.Shot_Homing_Speed;
+			shot_stats.Shot_Bubble_Air_Burst_Stats[0].Shot_Homing_Range = shot_stats.Shot_Homing_Range;
 			shot_stats.Shot_Friction = shot_stats.Shot_Speed / shot_stats.Shot_Life_Span;
 			shot_stats.Shot_Min_Speed = shot_stats.Shot_Speed * 0.2;
 			shot_stats.Shot_Life_Span = shot_stats.Shot_Life_Span * 2;
 			alarm[0] = shot_stats.Shot_Life_Span;
-		    ////shot_stats.Shot_Timer = shot_stats.Shot_Life_Span;
 			speed = shot_stats.Shot_Speed;
-			
-			/*shotbursttype = 3;
-			shotburstpower = shot_stats.Shot_Power;
-			shotburstspeed = shot_stats.Shot_Speed;
-			shotburstamount = 1;
-			shotburstrange = 80; */
 			
 			shot_stats.Shot_Homing_Type = 1;
 			if shot_stats.Shot_Homing_Range < 250 {

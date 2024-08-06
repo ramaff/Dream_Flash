@@ -112,7 +112,6 @@ if dist = 1 and vis = 1 {
     //scr_Soul_Stat_Cloud();
 	x += 24;
 	y += 50;
-    scr_Bottom_Cloud_Info();
 	x -= 24;
 	y -= 50;
 }

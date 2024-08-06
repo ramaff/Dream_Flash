@@ -18,6 +18,7 @@ function scr_Soul_Stats_Setup() {
 	sfireratefactorbuffamount = 0;
 
 	smovefactor = 1;
+	currentenergyregenfactor = 1;
 
 	sstrength = global.soulstrength;
 	svitality = global.soulvitality;

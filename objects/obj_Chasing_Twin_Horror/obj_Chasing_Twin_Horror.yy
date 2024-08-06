@@ -10,8 +10,8 @@
   "managed": true,
   "overriddenProperties": [],
   "parent": {
-    "name": "Nightmare Bosses",
-    "path": "folders/Objects/Bosses/Nightmare Bosses.yy",
+    "name": "v1",
+    "path": "folders/Objects/Bosses/Nightmare Bosses/v1.yy",
   },
   "parentObjectId": {
     "name": "obj_Wall_Stop_Boss_Parent",

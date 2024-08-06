@@ -30,8 +30,8 @@ if instance_exists(other.bossid) and soul_underground <= 0 {
 		
 		hitType = "Boss";
     
-	    damageamount = other.bossid.bosscontactdamage + (global.soulloathing / 10);
-	    defenseamount = (sdefenseadd + sdefensebuffamount + scontactdefenseadd) + global.currentheartdefense + scr_Class_Stat_Defense_Increase();
+	    var damageamount = other.bossid.bosscontactdamage + (global.soulloathing / 10);
+	    var defenseamount = (sdefenseadd + sdefensebuffamount + scontactdefenseadd) + global.currentheartdefense + scr_Class_Stat_Defense_Increase();
     
 		if global.A[11] > 0 {
 			if (other.bossid.bosshealth < 0) {
@@ -40,11 +40,11 @@ if instance_exists(other.bossid) and soul_underground <= 0 {
 		}
 	
 	    if (damageamount > defenseamount) {
-	        //scr_B14_Boss();
+			scr_B14_Boss(damageamount, defenseamount);
 	        scr_Soul_Spirit_Check_Boss();
 	    }
     	
-	    scr_Soul_Damage_Calculation();
+	    scr_Soul_Damage_Calculation(damageamount, defenseamount);
 		soulinvincibility += 5;
     
 	    if global.totalhearts <= 0 {

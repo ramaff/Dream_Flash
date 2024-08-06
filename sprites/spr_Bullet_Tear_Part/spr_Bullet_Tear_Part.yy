@@ -57,7 +57,7 @@
             {"resourceType":"Keyframe<SpriteFrameKeyframe>","resourceVersion":"1.0","Channels":{"0":{"resourceType":"SpriteFrameKeyframe","resourceVersion":"1.0","Id":{"name":"66407885-f0ee-4fa6-9161-cd307787d8af","path":"sprites/spr_Bullet_Tear_Part/spr_Bullet_Tear_Part.yy",},},},"Disabled":false,"id":"02da46ad-979c-4a05-8985-e2280eca1552","IsCreationKey":false,"Key":0.0,"Length":1.0,"Stretch":false,},
           ],},"modifiers":[],"spriteId":null,"trackColour":0,"tracks":[],"traits":0,},
     ],
-    "visibleRange": {"x":0.0,"y":0.0,},
+    "visibleRange": null,
     "volume": 1.0,
     "xorigin": 45,
     "yorigin": 45,

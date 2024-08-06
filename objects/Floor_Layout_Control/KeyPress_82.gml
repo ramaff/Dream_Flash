@@ -1,3 +1,3 @@
 exit;
-game_restart();
+scr_Game_Reset()
 

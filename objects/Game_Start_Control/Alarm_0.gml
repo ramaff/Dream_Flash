@@ -21,3 +21,5 @@ if global.loadrun = 1 {
     
 } 
 
+scr_Tutorial_Note_Spawn("starting_tutorial")
+

@@ -4,8 +4,8 @@
 // Shot Creation Script
 
 function scr_A07_Setup(){
-	shotA07 = false;
-	if global.A07memory >= 0.3 {
-		shotA07 = true;
+	if global.A07memory > 0 {
+		scr_Shot_Power_Set(1 + global.A07memory)
+		scr_Shot_Size_Set(global.A07memory)
 	}
 }

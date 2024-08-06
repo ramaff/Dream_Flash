@@ -7,7 +7,7 @@ if !instance_exists(obj_Item_Parent) {
 if distance_to_object(obj_Astral_Indicator) < 15 {
 	var price = 0;
 	
-    with instance_create(obj_Soul_Parent.x,obj_Soul_Parent.y,obj_Recollection_Cloud) {
+    with instance_create(obj_Soul_Parent.x,obj_Soul_Parent.y,obj_In_Game_Recollection_Cloud) {
 	   recollectionPriceType = spr_Soul_Flash;
 		if global.currentchapter = 2 {
 			recollectionPriceType = spr_Soul_Feel;

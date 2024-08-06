@@ -5,7 +5,7 @@ function scr_State_Form(){
 		sprite_index = spr_The_Soul_Trail_Sway;
 	}
 	
-	if scurrentstate = "Base" and global.bosscount > 0 and (global.stateTutorial = 0 || global.recollectionStateUnlocked = 0) {
+	if scurrentstate = "Base" and global.bosscount > 0 and !scr_State_Recollection_Unlocked() {
 		scr_State_Power_Up();	
 	}
 	
@@ -44,8 +44,8 @@ function scr_State_Form(){
 		}
 	}
 	
-	if scurrentstate != "Base" and global.bosscount = 0 and global.stateTutorial = 0 and (!instance_exists(obj_Higher_State_Note)) {
-		instance_create(x,y,obj_Higher_State_Note);		 
+	if scurrentstate != "Base" and global.bosscount = 0 {
+		scr_Tutorial_Note_Spawn("state_tutorial")	 
 	}
 	
 	if scurrentstate != "Base" and scurrentstate != "Powering Up" {

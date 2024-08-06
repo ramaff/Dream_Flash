@@ -6,12 +6,9 @@ for (bi = 0; bi < 9; bi++) {
 		alarm[11] = Shot_Barrage_Speed[bi];
 		if Shot_Repetition_Forward_Interval[bi] > 0 {
 			var len = (Shot_Repetition_Max[bi] - Shot_Repetition[bi]) * Shot_Repetition_Forward_Interval[bi];
-			//Shot_XX = lengthdir_x(len,Shot_Direction);
-			//Shot_YY = lengthdir_y(len,Shot_Direction);
-			Shot_Forward_Amount = len;
 		}
 		
-		Shot_Stats = Shot_Repetition_Stats[bi]
+		var Shot_Stats = Shot_Repetition_Stats[bi]
 		
 		Shot_Stats = scr_Setup_Weapon_Stats(Shot_Stats)
 		
@@ -48,21 +45,17 @@ for (bi = 0; bi < 9; bi++) {
 					Shot_Stats.Shot_Power = Shot_Stats.Shot_Power * 1.5;
 					
 					if Shot_Stats.Shot_Burst_Stats = false {
-						Shot_Stats.Shot_Burst_Stats = [json_parse(json_stringify(Shot_Stats))]
+						Shot_Stats.Shot_Burst_Stats = [{}]
 					} else {
-						array_push(Shot_Stats.Shot_Burst_Stats, json_parse(json_stringify(Shot_Stats)))	
+						array_push(Shot_Stats.Shot_Burst_Stats, {})	
 					}
-		
-					//Shot_Stats.Shot_Burst_Type = 1;
-					//Shot_Stats.Shot_Burst_Amount = 6;
-					//Shot_Stats.Shot_Burst_Power = Shot_Stats.Shot_Power * 0.5;
 					
 					var burstIndex = array_length(Shot_Stats.Shot_Burst_Stats) - 1;
 					variable_struct_set(Shot_Stats.Shot_Burst_Stats[burstIndex], "Burst_Power", 0.5); 
 					variable_struct_set(Shot_Stats.Shot_Burst_Stats[burstIndex], "Shot_Size", 0.45); 
-					variable_struct_set(Shot_Stats.Shot_Burst_Stats[burstIndex], "Burst_Size", 0.05);
+					variable_struct_set(Shot_Stats.Shot_Burst_Stats[burstIndex], "Burst_Size", 1);
 					variable_struct_set(Shot_Stats.Shot_Burst_Stats[burstIndex], "Burst_Speed", 1);
-					variable_struct_set(Shot_Stats.Shot_Burst_Stats[burstIndex], "Shot_Life_Span", 0.5);
+					variable_struct_set(Shot_Stats.Shot_Burst_Stats[burstIndex], "Burst_Life_Span", 0.5);
 					variable_struct_set(Shot_Stats.Shot_Burst_Stats[burstIndex], "Amount", 6); 
 					variable_struct_set(Shot_Stats.Shot_Burst_Stats[burstIndex], "Spread", 60);
 		
@@ -70,6 +63,7 @@ for (bi = 0; bi < 9; bi++) {
 					Shot_Stats.Weapon_Split_Hit_Again = 1;
 		
 					Shot_Stats.Shot_Sprite = "spr_Bullet_Hell_Big_Shot";
+					Shot_Stats.Shot_Burst_Stats[burstIndex].Shot_Type = Shot_Stats.Shot_Type;
 					Shot_Stats.Shot_Burst_Stats[burstIndex].Shot_Sprite = "spr_Bullet_Hell_Shot";
 				}	
 			}

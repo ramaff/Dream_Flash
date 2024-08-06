@@ -25,19 +25,19 @@ if cat = 3 {
     global.recollectCategory = "Bosses";
     numOfButts = 100;
 }
-if global.recollectionStateUnlocked = 1 {
+if scr_State_Recollection_Unlocked() {
 	if cat = 4 {
 	    global.recollectCategory = "State";
 	    numOfButts = 10;
 	}
 	if cat = 5 {
 	    global.recollectCategory = "Information";
-		numOfButts = 27;
+		numOfButts = array_length(struct_get_names(global.tutorial_info));
 	}
 } else {
 	if cat = 4 {
 		global.recollectCategory = "Information";	
-		numOfButts = 27;
+		numOfButts = array_length(struct_get_names(global.tutorial_info));
 	}
 }
 

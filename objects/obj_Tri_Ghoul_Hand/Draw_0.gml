@@ -12,7 +12,6 @@ with(obj_Tri_Ghoul) {
 }
 
 
-texture_set_interpolation(0);
 
 var palindex = color;
 
@@ -25,5 +24,3 @@ pal_swap_set(spr_Gesture_Ghoul_Palette,palindex,false);
 event_inherited();
 
 pal_swap_reset();
-
-texture_set_interpolation(1);

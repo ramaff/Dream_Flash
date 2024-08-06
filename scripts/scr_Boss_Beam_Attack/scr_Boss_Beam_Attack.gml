@@ -15,12 +15,11 @@ function scr_Boss_Beam_Attack() {
 				length = setbeamlength;	
 			}
         
+			var offsetx = boss_xoffset;
+	        var offsety = boss_yoffset;
 	        if bossoffsetangle = 1 {
 	            var offsetx = lengthdir_x(boss_xoffset,angle);
 	            var offsety = lengthdir_y(boss_yoffset,angle);
-	        } else {
-	            var offsetx = boss_xoffset;
-	            var offsety = boss_yoffset;
 	        }
         
 	        bossxx[boss_beam_num] = x + offsetx + lengthdir_x(16+space,angle);
@@ -67,6 +66,9 @@ function scr_Boss_Beam_Attack() {
 	        //scr_Boss_Beam_Draw(angle,length);
         
 	        if beamHit = "Active" {
+				
+			var damageamount = 0;
+			var defenseamount = 0;
         
 	        with (obj_Soul_Parent) {
 	            if collision_line(other.x,other.y,other.finx[other.boss_beam_num],other.finy[other.boss_beam_num],self,false,false) {
@@ -76,7 +78,7 @@ function scr_Boss_Beam_Attack() {
 	                defenseamount = (sdefenseadd + sdefensebuffamount) + global.currentheartdefense + (global.soulvanity / 20) - (global.souldespair / 20);
 	                defenseamount = defenseamount / 10;
                 
-	                scr_Soul_Damage_Calculation();
+	                scr_Soul_Damage_Calculation(damageamount, defenseamount);
 	                }
 	            }
 	        }

@@ -10,7 +10,7 @@ powadd = global.soulpoweradd;
 baseep = global.soulmaxenergy + scr_Class_Stat_Essence_Cap_Increase();
 regenep = (0.5 * 60) * ((10 + global.soulenergyregenfactor) / 10) * scr_Class_Stat_Essence_Regen_Multiplier(); 
 if instance_exists(obj_Soul_Parent) {
-	regenep = regenep * obj_Soul_Parent.energyregenfactor;	
+	regenep = regenep * obj_Soul_Parent.senergyregenfactor;	
 }
 
 soulspeed = 1 * global.soulmovementspeed * ((10 + global.soulmovementfactor) / 10) * scr_Class_Stat_Movement_Speed_Multiplier();

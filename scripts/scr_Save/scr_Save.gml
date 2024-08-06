@@ -10,6 +10,9 @@ function scr_Save() {
 
 	ini_open(_backup_save_file)
 
+	var i = 0;
+
+	//ini_write_string("Recollection", "recollectionWeap", json_stringify(global.recollectionWeap));
 	for(i = 0; i <= 999; i++) {
 	    ini_write_real("Recollection", "recollectionWeap" + string(i), global.recollectionWeap[i]);
 	}
@@ -19,9 +22,6 @@ function scr_Save() {
 	for(i = 0; i <= 19; i++) {
 	    ini_write_real("Recollection", "recollectionState" + string(i), global.recollectionState[i]);
 	}
-	ini_write_real("Recollection", "recollectionStateUnlocked", global.recollectionStateUnlocked);
-	ini_write_real("Recollection", "stateTutorial", global.stateTutorial);
-	ini_write_real("Recollection", "spiritTutorial", global.spiritTutorial);
 	
 	for(i = 0; i <= 49; i++) {
 	    ini_write_real("Recollection", "recollectionA" + string(i), global.recollectionA[i]);

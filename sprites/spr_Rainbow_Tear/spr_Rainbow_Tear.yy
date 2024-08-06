@@ -57,7 +57,7 @@
             {"resourceType":"Keyframe<SpriteFrameKeyframe>","resourceVersion":"1.0","Channels":{"0":{"resourceType":"SpriteFrameKeyframe","resourceVersion":"1.0","Id":{"name":"8b96afed-895d-4406-a5c7-ea0de4e92de3","path":"sprites/spr_Rainbow_Tear/spr_Rainbow_Tear.yy",},},},"Disabled":false,"id":"9b1cd4c5-bfb0-4b82-869b-b46ca8c1a020","IsCreationKey":false,"Key":0.0,"Length":1.0,"Stretch":false,},
           ],},"modifiers":[],"spriteId":null,"trackColour":0,"tracks":[],"traits":0,},
     ],
-    "visibleRange": {"x":0.0,"y":0.0,},
+    "visibleRange": null,
     "volume": 1.0,
     "xorigin": 45,
     "yorigin": 45,

@@ -178,6 +178,11 @@ function scr_Setup_Default_Shot_Stats(){
 		Shot_Trail_Hit_Life: 7,
 		Shot_Trail_Hit_Sprite: "spr_Soul_Bit",
 		Shot_Trail_Hit_Type: "obj_Friction_Part",
+		Shot_Lightning_Trail: 0,
+		Shot_Lightning_Trail_Color: [0, 0, 0],
+		Shot_Lightning_Trail_Area: 30,
+		Shot_Lightning_Trail_Frequency: 0,
+		Shot_Lightning_Trail_Streaks: 1,
 		Shot_Wishful: 0,
 		Shot_Recycle: 0,
 		Shot_Wander: 0,
@@ -205,6 +210,7 @@ function scr_Setup_Default_Shot_Stats(){
 		Shot_Gem: 0,
 		Shot_Burst_Power: 0,
 		Shot_Spike_Aura: false,
+		Shot_Instability: 0,
 	}
 	return _shot_stats
 

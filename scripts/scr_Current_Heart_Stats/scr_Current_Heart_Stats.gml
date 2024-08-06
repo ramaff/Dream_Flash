@@ -7,6 +7,8 @@ function scr_Current_Heart_Stats() {
 	global.currentheartregen = 1;
 	global.currentheartsurvival = 0;
 
+	var i = 0;
+	
 	for (i = 0; i < 16; i++) {
 	    if Soul_Hearts_Control.heart[i,2] != 0 {
 	        global.totalhearts++;
@@ -15,9 +17,6 @@ function scr_Current_Heart_Stats() {
 			scr_B06();
 		}
 	}
-	//if global.mousehearttype != 0 {
-	//	global.currentheart--;
-	//}
 	global.currentheart = global.totalhearts - 1;
 
 	if global.mousehearttype != 0 {
@@ -34,9 +33,6 @@ function scr_Current_Heart_Stats() {
 
 	if global.bosscount = 0 {
 	    for (i = 0; i < 16; i++) {
-	        //if Soul_Hearts_Control.heart[i,2] = 0.01 {
-	        //    Soul_Hearts_Control.heart[i,2] -= 0.01;
-	        //}
 	        if frac(Soul_Hearts_Control.heart[i,2]) > 0 {
 	            Soul_Hearts_Control.heart[i,2] -= frac(Soul_Hearts_Control.heart[i,2]);
 	        }
@@ -142,16 +138,5 @@ function scr_Current_Heart_Stats() {
 	if currHeart = 103 {
 		global.currenthearthp = 20 + 20 * global.B[3];
 	}
-
-	/*
-	if global.V[5] > 0 {
-		if global.currentheart = 0 {
-			global.currenthearthp += 20 * global.V[5];
-		}
-	}
-	*/
-	
-	//scr_H05();
-
 
 }

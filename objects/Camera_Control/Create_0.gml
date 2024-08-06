@@ -12,17 +12,7 @@ aspect_ratio = 960/540;
 
 ideal_width = floor(ideal_height * aspect_ratio);
 ideal_width = 960;
-//ideal_height = round(ideal_width / aspect_ratio);
-/*
-if (display_get_width() mod ideal_width != 0) {
-	var d = round(display_get_width() / ideal_width);
-	ideal_width = display_get_width() / d;
-}
-if (display_get_height() mod ideal_height != 0) {
-	var d = round(display_get_height() / ideal_height);
-	ideal_height = display_get_height() / d;
-}
-*/
+
 view_zoom = 1;
 view_max_zoom = 10;
 
@@ -44,13 +34,8 @@ max_scale = 10;
 view_width = ideal_width;
 view_height = ideal_height;
 
-/*
-for(i = 1; i < room_last; i++) {
-	if room_exists(i) {
-		room_set_view_enabled()
-	}	
-}
-*/
+view_width_zoom = ideal_width / view_zoom;
+view_height_zoom = ideal_height / view_zoom;
 
 //surface_resize(application_surface, view_width * window_scale, view_height * window_scale);
 window_set_size((view_width * window_scale), view_height * window_scale);

@@ -13,22 +13,29 @@
     {"name":"inst_571CD36A","path":"rooms/Title_Screen/Title_Screen.yy",},
     {"name":"inst_13C07DF6","path":"rooms/Title_Screen/Title_Screen.yy",},
     {"name":"inst_445B855D","path":"rooms/Title_Screen/Title_Screen.yy",},
-    {"name":"inst_16D73F99","path":"rooms/Title_Screen/Title_Screen.yy",},
     {"name":"inst_46340010","path":"rooms/Title_Screen/Title_Screen.yy",},
+    {"name":"inst_7B9B5C2F","path":"rooms/Title_Screen/Title_Screen.yy",},
   ],
   "isDnd": false,
   "layers": [
+    {"resourceType":"GMREffectLayer","resourceVersion":"1.0","name":"Effect_1","depth":-100,"effectEnabled":true,"effectType":"_effect_glow","gridX":32,"gridY":32,"hierarchyFrozen":false,"inheritLayerDepth":false,"inheritLayerSettings":false,"inheritSubLayers":true,"inheritVisibility":true,"layers":[],"properties":[
+        {"name":"g_GlowRadius","type":0,"value":"256",},
+        {"name":"g_GlowQuality","type":0,"value":"5",},
+        {"name":"g_GlowIntensity","type":0,"value":"0.5",},
+        {"name":"g_GlowGamma","type":0,"value":"0",},
+        {"name":"g_GlowAlpha","type":0,"value":"1",},
+      ],"userdefinedDepth":false,"visible":true,},
     {"resourceType":"GMRAssetLayer","resourceVersion":"1.0","name":"Compatibility_Tiles_Depth_0","assets":[
         {"resourceType":"GMRGraphic","resourceVersion":"1.0","name":"inst_3D018FD0","colour":4294967295,"frozen":false,"h":189,"ignore":false,"inheritedItemId":null,"inheritItemSettings":false,"spriteId":{"name":"bg_Title","path":"sprites/bg_Title/bg_Title.yy",},"u0":0,"u1":403,"v0":0,"v1":189,"w":403,"x":496.0,"y":128.0,},
       ],"depth":0,"effectEnabled":true,"effectType":null,"gridX":16,"gridY":16,"hierarchyFrozen":false,"inheritLayerDepth":false,"inheritLayerSettings":false,"inheritSubLayers":true,"inheritVisibility":true,"layers":[],"properties":[],"userdefinedDepth":true,"visible":true,},
     {"resourceType":"GMRInstanceLayer","resourceVersion":"1.0","name":"Compatibility_Instances_Depth_0","depth":100,"effectEnabled":true,"effectType":null,"gridX":8,"gridY":8,"hierarchyFrozen":false,"inheritLayerDepth":false,"inheritLayerSettings":false,"inheritSubLayers":true,"inheritVisibility":true,"instances":[
         {"resourceType":"GMRInstance","resourceVersion":"1.0","name":"inst_445B855D","colour":4294967295,"frozen":false,"hasCreationCode":false,"ignore":false,"imageIndex":0,"imageSpeed":1.0,"inheritCode":false,"inheritedItemId":null,"inheritItemSettings":false,"isDnd":false,"objectId":{"name":"Camera_Control","path":"objects/Camera_Control/Camera_Control.yy",},"properties":[],"rotation":0.0,"scaleX":1.0,"scaleY":1.0,"x":24.0,"y":0.0,},
-        {"resourceType":"GMRInstance","resourceVersion":"1.0","name":"inst_16D73F99","colour":4294967295,"frozen":false,"hasCreationCode":false,"ignore":false,"imageIndex":0,"imageSpeed":1.0,"inheritCode":false,"inheritedItemId":null,"inheritItemSettings":false,"isDnd":false,"objectId":{"name":"obj_lighting_init","path":"objects/obj_lighting_init/obj_lighting_init.yy",},"properties":[],"rotation":0.0,"scaleX":1.0,"scaleY":1.0,"x":48.0,"y":0.0,},
         {"resourceType":"GMRInstance","resourceVersion":"1.0","name":"inst_C399AF48","colour":4294967295,"frozen":false,"hasCreationCode":false,"ignore":false,"imageIndex":0,"imageSpeed":1.0,"inheritCode":false,"inheritedItemId":null,"inheritItemSettings":false,"isDnd":false,"objectId":{"name":"obj_Start_Button","path":"objects/obj_Start_Button/obj_Start_Button.yy",},"properties":[],"rotation":0.0,"scaleX":1.0,"scaleY":1.0,"x":688.0,"y":424.0,},
         {"resourceType":"GMRInstance","resourceVersion":"1.0","name":"inst_E17B0742","colour":4294967295,"frozen":false,"hasCreationCode":false,"ignore":false,"imageIndex":0,"imageSpeed":1.0,"inheritCode":false,"inheritedItemId":null,"inheritItemSettings":false,"isDnd":false,"objectId":{"name":"obj_Settings_Button","path":"objects/obj_Settings_Button/obj_Settings_Button.yy",},"properties":[],"rotation":0.0,"scaleX":1.0,"scaleY":1.0,"x":688.0,"y":472.0,},
         {"resourceType":"GMRInstance","resourceVersion":"1.0","name":"inst_6AC6F918","colour":4294967295,"frozen":false,"hasCreationCode":false,"ignore":false,"imageIndex":0,"imageSpeed":1.0,"inheritCode":false,"inheritedItemId":null,"inheritItemSettings":false,"isDnd":false,"objectId":{"name":"obj_Credits_Button","path":"objects/obj_Credits_Button/obj_Credits_Button.yy",},"properties":[],"rotation":0.0,"scaleX":1.0,"scaleY":1.0,"x":688.0,"y":520.0,},
         {"resourceType":"GMRInstance","resourceVersion":"1.0","name":"inst_571CD36A","colour":4294967295,"frozen":false,"hasCreationCode":false,"ignore":false,"imageIndex":0,"imageSpeed":1.0,"inheritCode":false,"inheritedItemId":null,"inheritItemSettings":false,"isDnd":false,"objectId":{"name":"obj_Quit_Button","path":"objects/obj_Quit_Button/obj_Quit_Button.yy",},"properties":[],"rotation":0.0,"scaleX":1.0,"scaleY":1.0,"x":688.0,"y":568.0,},
         {"resourceType":"GMRInstance","resourceVersion":"1.0","name":"inst_46340010","colour":4294967295,"frozen":false,"hasCreationCode":false,"ignore":false,"imageIndex":0,"imageSpeed":1.0,"inheritCode":false,"inheritedItemId":null,"inheritItemSettings":false,"isDnd":false,"objectId":{"name":"True_Start_Control","path":"objects/True_Start_Control/True_Start_Control.yy",},"properties":[],"rotation":0.0,"scaleX":1.0,"scaleY":1.0,"x":72.0,"y":0.0,},
+        {"resourceType":"GMRInstance","resourceVersion":"1.0","name":"inst_7B9B5C2F","colour":4294967295,"frozen":false,"hasCreationCode":false,"ignore":false,"imageIndex":0,"imageSpeed":1.0,"inheritCode":false,"inheritedItemId":null,"inheritItemSettings":false,"isDnd":false,"objectId":{"name":"obj_Bloom_Control","path":"objects/obj_Bloom_Control/obj_Bloom_Control.yy",},"properties":[],"rotation":0.0,"scaleX":1.0,"scaleY":1.0,"x":96.0,"y":0.0,},
       ],"layers":[],"properties":[],"userdefinedDepth":false,"visible":true,},
     {"resourceType":"GMRAssetLayer","resourceVersion":"1.0","name":"Compatibility_Tiles_Depth_1","assets":[
         {"resourceType":"GMRGraphic","resourceVersion":"1.0","name":"inst_1B6B6417","colour":4294967295,"frozen":false,"h":576,"ignore":false,"inheritedItemId":null,"inheritItemSettings":false,"spriteId":{"name":"bg_Title_Screen","path":"sprites/bg_Title_Screen/bg_Title_Screen.yy",},"u0":0,"u1":1024,"v0":0,"v1":576,"w":1024,"x":48.0,"y":96.0,},

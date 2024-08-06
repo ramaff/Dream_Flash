@@ -1,4 +1,4 @@
-roomType = "Title"
+var roomType = "Title"
 if instance_exists(Floor_Layout_Control) {
 	roomType = global.floor[global.currentroom,0];
 }

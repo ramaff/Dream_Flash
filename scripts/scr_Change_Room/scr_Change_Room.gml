@@ -1,12 +1,4 @@
-function scr_Change_Room() {
-	/*
-	global.soulstrengthTemp = 0;
-	global.soulvitalityTemp = 0;
-	global.soulessenceTemp = 0;
-	global.souldexterityTemp = 0;
-	global.soulperceptionTemp = 0;
-	global.soulstateTemp = 0;
-	*/
+function scr_Change_Room(roomGoX, roomGoY) {
 
 	global.instanceidincrementer = 1;
 

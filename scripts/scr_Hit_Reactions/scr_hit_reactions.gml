@@ -1,4 +1,4 @@
-function scr_Hit_Reactions() {
+function scr_Hit_Reactions(_damage_amount, _defense_amount) {
 	// Location: Soul Parent Hit Events
 
 	sNoHitTime = 0;
@@ -55,7 +55,7 @@ function scr_Hit_Reactions() {
 	}
 
 	var hchance = irandom(smaxhealth);
-	var dmg = damageamount - defenseamount;
+	var dmg = _damage_amount - _defense_amount;
 
 	scr_C09();
 	scr_S01();

@@ -1,4 +1,4 @@
-baseDepth = 0;
+var baseDepth = 0;
 
 scr_Room_Depth(0.01);
 

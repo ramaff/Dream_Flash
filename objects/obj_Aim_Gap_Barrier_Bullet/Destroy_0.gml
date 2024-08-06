@@ -1,6 +1,6 @@
 /// @description Insert description here
 // You can write your code in this editor
-dir = -45 + (-22.5 + random(45));
+var dir = -45 + (-22.5 + random(45));
     repeat(8) {
         dir += 45;
         with instance_create(x,y,obj_Basic_Bullet) {
@@ -12,7 +12,7 @@ dir = -45 + (-22.5 + random(45));
             bulletspeed = other.bulletspeed * 0.8;
             bulletpower = other.bulletpowermax * 0.66;
             speed = bulletspeed;
-            direction = other.direction + other.dir;
+            direction = other.direction + dir;
 			
 			bulletlifespan = 300;
 			alarm[0] = bulletlifespan;

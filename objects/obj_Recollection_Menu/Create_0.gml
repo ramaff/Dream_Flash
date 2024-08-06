@@ -3,8 +3,8 @@ global.recollectValue = 0;
 global.recollectDisplayValue = 0;
 var categoryNum = 4;
 
-if global.recollectionStateUnlocked = 1 {
-	categoryNum++;	
+if scr_State_Recollection_Unlocked() {
+	categoryNum++;
 }
 
 for(i = 1; i <= categoryNum; i++) {

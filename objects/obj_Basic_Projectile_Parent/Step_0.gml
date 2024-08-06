@@ -1,9 +1,3 @@
-//scr_Room_Depth(0);
-
-/*
-if shot_stats.Shot_Air_Target = 0 and shot_stats.Shot_Melee = 0 {
-	//scr_Projectile_Border();
-}*/
 
 scr_A14();
 scr_OA06_Damage();
@@ -35,7 +29,6 @@ if shot_stats.Shot_Bounce = 1 and shot_stats.Shot_Air_Target = 0 and shot_stats.
     scr_Wall_Bounce_Ext();
 }
 
-//scr_Weapon_Direction_List();
 if shot_stats.Shot_Point_Angle = 1 {
 	image_angle = direction;	
 }
@@ -43,20 +36,6 @@ if shot_stats.Shot_Point_Angle = 1 {
 if shot_stats.Shot_Face_Direction = 1 {
 	scr_Shot_Two_Face_Direction();	
 }
-
-//if shot_stats.Shot_Lobbing = true {
-//	scr_Shot_Lobbing();
-//}
-
-//shot_stats.Shot_Timer--;
-
-/*if alarm[0] <= shot_stats.Shot_Life_Span / 2 and shot_stats.Shot_Wander > 0 {
-	shot_stats.Shot_Wander--;
-	direction = random(360);
-	var fac = (1 + random(1))
-	shot_stats.Shot_Speed = shot_stats.Shot_Speed * fac;
-	speed = speed * fac;
-} */
 
 
 if shot_stats.Shot_Shrink = 1 {
@@ -75,7 +54,6 @@ if shot_stats.Shot_Fade = 1 {
 
 image_angle += shot_stats.Shot_Image_Rotation_Speed;
 
-//direction += shot_stats.Shot_Wave_Direction;
 shot_stats.Shot_Wave_Direction -= shot_stats.Shot_Wave_Acceleration;
 
 shot_stats.Shot_Speed -= shot_stats.Shot_Friction;
@@ -89,11 +67,7 @@ if shot_stats.Shot_Speed < shot_stats.Shot_Min_Speed {
     speed = shot_stats.Shot_Min_Speed;
 }
 
-var oang = 90;
-if shot_stats.Shot_Wave_Direction < 0 {
-	oang = 270;	
-}
-{
+if shot_stats.Shot_Wave_Direction != 0 {
 	x += lengthdir_x(shot_stats.Shot_Wave_Direction,direction + 90);
 	y += lengthdir_y(shot_stats.Shot_Wave_Direction,direction + 90);
 }
@@ -112,14 +86,16 @@ if shot_stats.Shot_Soul_Maintain = 1 {
 	}
 }
 
+if shot_stats.Shot_Instability > 0 {
+	x += (random(1) - 0.5) * shot_stats.Shot_Instability;
+	y += (random(1) - 0.5) * shot_stats.Shot_Instability;	
+}
+
 if shot_stats.Shot_Excess_Essence > 0 {
-	if scr_Chance(5) {
+	if alarm[0] mod 9 = 0 {
 		var color = make_color_rgb(0, 170, 255)
-		scr_Particle_Burst(obj_Friction_Part, spr_Soul_Big_Bit, color, color, 1, 4 + random(4), random(360), 0, 0, shot_stats.Shot_Size, 10 + random(5))
+		scr_Particle_Burst(obj_Friction_Part, spr_Soul_Big_Bit, color, color, 1, 4 + random(4), random(360), 0, 0, shot_stats.Shot_Size - 0.1, 10 + random(5))
 	}
-	var fac = speed / 2;
-	x += (random(1) - 0.5) * fac;
-	y += (random(1) - 0.5) * fac;
 }
 
 if shot_stats.Shot_Grow > 0 {
@@ -144,38 +120,36 @@ if shot_stats.Shot_Air_Burst_Stats != false {
 	if instance_exists(near_boss) and burstIndex >= 0 and shot_stats.Shot_Air_Burst_Stats[burstIndex] != false {
 		var sprd = shot_stats.Shot_Air_Burst_Stats[burstIndex].Spread
 		if distance_to_object(near_boss) <= shot_stats.Shot_Air_Burst_Stats[burstIndex].Range {
-			dir = -sprd / 2;
-			shot_stats.Shot_Life_Span = shot_stats.Shot_Life_Span * 0.6;
+			var dir = -sprd / 2;
 			
-			shot_stats.Shot_Air_Burst_Stats[burstIndex] = scr_Setup_Shot_Stats_Asset(shot_stats.Shot_Air_Burst_Stats[burstIndex]);
-			
+			var _stats = shot_stats
 			var _obj = asset_get_index(shot_stats.Shot_Air_Burst_Stats[burstIndex].Shot_Type)
+			
+			shot_stats.Shot_Excess_Essence = shot_stats.Shot_Excess_Essence / shot_stats.Shot_Air_Burst_Stats[burstIndex].Amount
 			
 		    repeat(shot_stats.Shot_Air_Burst_Stats[burstIndex].Amount) {
 				
 				if sprd < 0 {
 					dir = random(sprd) - (sprd / 2)
 				}
-				
 		        with instance_create(x,y,_obj) {
-		            scr_Duplicate_Shot_Stats();
-						
 					var _v_shot_air_burst_stats = other.shot_stats.Shot_Air_Burst_Stats[burstIndex]
+				
+					shot_stats = scr_Duplicate_Shot_Stats(_v_shot_air_burst_stats, variable_clone(_stats), dir);
 					
 					scr_Shot_Burst_Stats(_v_shot_air_burst_stats);
 					
-					shot_stats.Shot_Burst_Stats = other.shot_stats.Shot_Burst_Stats;
-					shot_stats.Shot_Extra_Stats = other.shot_stats.Shot_Extra_Stats;
+					shot_stats.Shot_Burst_Stats = _stats.Shot_Burst_Stats;
+					shot_stats.Shot_Extra_Stats = _stats.Shot_Extra_Stats;
 					
 					if burstIndex > 0 {
 						shot_stats.Shot_Air_Burst_Stats = [];
 						for(var i = 0; i <= burstIndex-1; i++) {
-							array_insert(shot_stats.Shot_Air_Burst_Stats,i,other.shot_stats.Shot_Air_Burst_Stats[i])
+							array_insert(shot_stats.Shot_Air_Burst_Stats,i, _stats.Shot_Air_Burst_Stats[i])
 						}
 					} else {
 						shot_stats.Shot_Air_Burst_Stats = false;	
 					}
-					//array_delete(shot_stats.Shot_Air_Burst_Stats,burstIndex,1);
 		        }
 		        dir += shot_stats.Shot_Air_Burst_Stats[burstIndex].Spread;
 		    }

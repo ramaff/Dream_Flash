@@ -1,39 +1,29 @@
 
 if surface_exists(surf) {
-	
-	
-	/*
-	var sheight = surface_get_height(surf);
-	 
-	if (sheight != (540 / camcon.view_zoom)) {
-		surface_resize(surf, 960 / camcon.view_zoom, 540 / camcon.view_zoom)
-	}
-	*/
-	
 
-    roomEnvironment = global.floor[global.currentroom,4];
+    var _room_environment = global.floor[global.currentroom,4];
     
     global.roomdarkness = -0.05;
 	
-	if roomEnvironment = bg_Dungeon_Tiles {
+	if _room_environment = bg_Dungeon_Tiles {
 		global.roomdarkness = 0.05;	
 	}
     
-    if roomEnvironment = bg_Deep_Woods_Tiles || roomEnvironment = bg_Cave_Tiles || roomEnvironment = bg_Graveyard_Tiles {
+    if _room_environment = bg_Deep_Woods_Tiles || _room_environment = bg_Cave_Tiles || _room_environment = bg_Graveyard_Tiles {
         global.roomdarkness = 0.15;
     }
     
-    if roomEnvironment = bg_Depths_Tiles {
+    if _room_environment = bg_Depths_Tiles {
         global.roomdarkness = 0.3;
     }
     
-    darkness = global.roomdarkness + ((global.souldespair + global.souldespairTemp) / 100);
+    var _darkness = global.roomdarkness + ((global.souldespair + global.souldespairTemp) / 100);
     
-	if darkness > 1 {
-		darkness = 1;	
+	if _darkness > 1 {
+		_darkness = 1;	
 	}
-	if darkness < 0 {
-		darkness = 0;	
+	if _darkness < 0 {
+		_darkness = 0;	
 	}
 
 	if global.currentdarkness > 1 {
@@ -43,38 +33,43 @@ if surface_exists(surf) {
 		global.currentdarkness = 0;	
 	}
 	
-	global.currentdarkness = lerp(global.currentdarkness,darkness,0.05);
+	global.currentdarkness = lerp(global.currentdarkness,_darkness,0.05);
 	
-	darkness = global.currentdarkness + global.gamedarknessadd;
+	_darkness = global.currentdarkness + global.gamedarknessadd;
 	
-	if darkness > 1 {
-		darkness = 1;	
+	if _darkness > 1 {
+		_darkness = 1;	
 	}
-	if darkness < 0 {
-		darkness = 0;	
+	if _darkness < 0 {
+		_darkness = 0;	
 	}
 	
-	//darkness = 0.5;
+	//_darkness = 0.5;
 	
     surface_set_target(surf);
     
     draw_clear(c_black);
+	
+	var _cam_x = camera_get_view_x(view)
+	var _cam_y = camera_get_view_y(view)
     
-	var xxx = surfscale - camera_get_view_x(view);
-	var yyy = surfscale - camera_get_view_y(view);
+	var xxx = surfscale - _cam_x;
+	var yyy = surfscale - _cam_y;
 	
 	draw_set_blend_mode(bm_src_color);
 	
+	var _scale = surfscale
+	
     with(obj_LightS) {
-        draw_sprite_ext(spr_Light,0,x + xxx,y + yyy,lightsize * other.surfscale,lightsize * other.surfscale,0,c_white,1 * lightstrength);
+        draw_sprite_ext(spr_Light,0,x + xxx,y + yyy,lightsize * _scale,lightsize * _scale,0,c_white,1 * lightstrength);
     }
 	
 	draw_set_blend_mode(bm_normal);
     
     surface_reset_target();
-    //draw_surface_ext(surf,x,y,1/surfscale,1/surfscale,0,c_white,darkness);
+    //draw_surface_ext(surf,x,y,1/surfscale,1/surfscale,0,c_white,_darkness);
 	//shader_set(shd_Bloom_Pot);
-    draw_surface_ext(surf,camera_get_view_x(view),camera_get_view_y(view),1/surfscale,1/surfscale,0,c_white,darkness);
+    draw_surface_ext(surf,_cam_x, _cam_y,1/surfscale,1/surfscale,0,c_white,_darkness);
 	//shader_reset();
 }
 

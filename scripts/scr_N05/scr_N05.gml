@@ -13,6 +13,10 @@ function scr_N05(){
 			if _weap_number != 0 and global.WeaponJugglingDelay[_weap_slot] <= 0 {
 			
 				scr_Weapon_Use_List(_weap_number, _weap_slot)
+				
+				if _weap_number = 14 {
+					global.WeaponJugglingDelay[_weap_slot] = 0
+				}
 			}
 		}
 	}

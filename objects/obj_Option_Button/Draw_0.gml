@@ -120,13 +120,7 @@
         }
     }
 	if type = 13 and category = 4 {
-        if global.gameBloomShader = 1 {
-            draw_text(x,y-12, string_hash_to_newline("Bloom Shader"));
-            draw_text(x + 220,y-12, string_hash_to_newline("ON"));
-        } else {
-            draw_text(x,y-12, string_hash_to_newline("Bloom Shader"));
-            draw_text(x + 220,y-12, string_hash_to_newline("OFF"));
-        }
+        draw_text(x,y-12, string_hash_to_newline("Glow Effect"));
     }
 	if type = 14 and category = 4 {
         draw_text(x,y-12, string_hash_to_newline("Graphic Quality"));
