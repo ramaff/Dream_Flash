@@ -1852,7 +1852,7 @@
                 "Name": "Spirit of Maelstrom",
                 "Recollection_Sprite": "reco_spirit_of_mischief_v2",
                 "Health_Phase_1": 280,
-                "Health_Phase_2": 280,
+                "Health_Phase_2": 380,
                 "Palette_Index": 1
             },
             "Champ 2": { 
@@ -1866,7 +1866,7 @@
                 "Name": "Spirit of Chaos",
                 "Recollection_Sprite": "reco_spirit_of_mischief_v2",
                 "Health_Phase_1": 330,
-                "Health_Phase_2": 330,
+                "Health_Phase_2": 430,
                 "Bullet_Speed": 2.15,
                 "Move_Speed": 1.8,
                 "Palette_Index": 3

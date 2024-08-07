@@ -1,4 +1,4 @@
-function scr_B05() {
+function scr_B05(damageamount) {
 	// Location Soul Hit by Bullet Event
 
 	if global.B[5] > 0 {
