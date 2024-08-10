@@ -52,7 +52,7 @@ function scr_Charged_Use() {
 		
 		if Charge_Hold > 0 {
 	
-			var slot = Soul_Weapons_Control.weapon[0,1];
+			var slot = variable_struct_get(Soul_Weapons_Control.weapon[0], "slot");
 			var eeContain = global.L01essence[slot];
 
 			if global.L[1] > 0 and eeContain > 0 {

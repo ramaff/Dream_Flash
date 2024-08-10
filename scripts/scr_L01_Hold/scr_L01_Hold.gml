@@ -10,7 +10,7 @@ function scr_L01_Hold(){
 	if senergy < ess_to_drain {
 		ess_to_drain = wenergy - senergy;
 	}
-	var slot = Soul_Weapons_Control.weapon[0,1];
+	var slot = variable_struct_get(Soul_Weapons_Control.weapon[0], "slot");
 	var ammunition_essence = global.L01essence[slot];
 	
 	if ammunition_essence > 0 {

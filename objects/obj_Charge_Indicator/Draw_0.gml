@@ -11,17 +11,8 @@ if instance_exists(obj_Soul_Parent) {
 
 	var cMax = 120 * cNum;
 
-	/*if obj_Soul_Parent.weaponcharge = 10 || obj_Soul_Parent.weaponcharge = 56 {
-	var cMax = 90 * cNum;
-	}
-	if obj_Soul_Parent.weaponcharge = 111 {
-	var cMax = 60 * cNum;
-	}
-	if obj_Soul_Parent.weaponcharge = 412 {
-	var cMax = 150 * cNum;
-	} */
 	if variable_struct_exists(global.weapon_stats, obj_Soul_Parent.weaponcharge) {
-		current_weapon_stats = scr_Setup_Default_Weapon_Stats(obj_Soul_Parent.weaponcharge)
+		var current_weapon_stats = scr_Setup_Default_Weapon_Stats(obj_Soul_Parent.weaponcharge)
 		scr_Modify_Current_Weapon_Stats();
 	
 		//show_debug_message("current_stats: " + string(current_stats))
@@ -43,7 +34,7 @@ if instance_exists(obj_Soul_Parent) {
 	if global.L[1] > 0 {
 		
 		var cMaxL = 50 * global.L[1];
-		var slot = Soul_Weapons_Control.weapon[0,1];
+		var slot = variable_struct_get(Soul_Weapons_Control.weapon[0], "slot");
 		
 		var cPercentL = 1 * (global.L01essence[slot] / cMaxL);
 		
@@ -61,7 +52,6 @@ if instance_exists(obj_Soul_Parent) {
 	if global.V[7] > 0 and global.V7mindblow > 0 {
 		
 		var cMaxL = 100;
-		var slot = Soul_Weapons_Control.weapon[0,1];
 		
 		var cPercentL = 1 * (global.V7mindblow / cMaxL);
 		
@@ -79,7 +69,6 @@ if instance_exists(obj_Soul_Parent) {
 	if global.XA[3] > 0 and global.temperCharge > 0 {
 		
 		var cMaxL = 100;
-		var slot = Soul_Weapons_Control.weapon[0,1];
 		
 		var cPercentL = 1 * (global.temperCharge / cMaxL);
 		

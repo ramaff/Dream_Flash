@@ -28,8 +28,8 @@ for(var i = 1; i <= 999; i++) {
 }
 
 for (var i = 0; i < 5; i++) {
-    if (Soul_Weapons_Control.weapon[i,2] > 0) {
-        global.recollectionFloorWeap[Soul_Weapons_Control.weapon[i,2]] = 1;
+    if (Soul_Weapons_Control.weapon[i].weapon_id > 0) {
+        global.recollectionFloorWeap[Soul_Weapons_Control.weapon[i].weapon_id] = 1;
     }
 }
 

@@ -12,6 +12,15 @@ function scr_Load_Run() {
 		var j = 0;
 
 		ini_open(_save_file)
+		
+		var _run_version = string_digits(ini_read_string("Run", "GAME_VERSION", 0)) / 1000000;
+		if _run_version < 23.6 {
+			file_delete("saverun.sav");
+			ini_close();
+			global.loadrun = 0;
+			exit;
+		}
+		
 		for(i = 0; i <= 39; i++) {
 			flo = asset_get_index(ini_read_string("Run", "floor" + string(i) + "-" + string(4),0));
 	
@@ -29,11 +38,11 @@ function scr_Load_Run() {
 	        global.Weap[i] = ini_read_real("Run","Weap" + string(i),-1);
 	    }
     
-	    for(i = 0; i <= 4; i++) {
+	    /*for(i = 0; i <= 4; i++) {
 	        for(j = 1; j <= 2; j++) {
 	        Soul_Weapons_Control.weapon[i,j] = ini_read_real("Run", "weapon" + string(i) + "-" + string(j),0);
 	        }
-	    }
+	    } */
 	    for(i = 0; i < 16; i++) {
 	        for(j = 0; j <= 5; j++) {
 	        Soul_Hearts_Control.heart[i,j] = ini_read_real("Run", "heart" + string(i) + "-" + string(j),0);
@@ -255,15 +264,12 @@ function scr_Load_Run() {
 		global.downwardSpiralBoost = ini_read_real("Run","downwardSpiralBoost",0);
 		global.B06HeartConversions = ini_read_real("Run","B06HeartConversions",0);
 		
-		//for(i = 0; i <= 39; i++) {
-	  
-		//}
-		//show_debug_message(global.OA5rooms)
-		//show_debug_message(json_parse(global.OA5rooms))
 		global.OA5rooms = ini_read_string("Run", "OA5rooms",0);
 		global.OA5rooms = json_parse(global.OA5rooms);
 		
-		//show_debug_message("loaded OA5rooms: " + string(global.OA5rooms))
+		Soul_Weapons_Control.weapon = ini_read_string("Run", "weapon",0);
+		Soul_Weapons_Control.weapon = json_parse(Soul_Weapons_Control.weapon);
+		
 	
         
 	    ini_close();
