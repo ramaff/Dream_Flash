@@ -6,6 +6,4 @@ for(var _i = 0; _i < 5; _i++) {
 	}
 }
 weapon[0].weapon_id = 1;
-weapon[1].weapon_id = 2;
-weapon[2].weapon_id = 3;
 

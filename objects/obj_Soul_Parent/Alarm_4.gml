@@ -24,6 +24,7 @@ if cHeart = 17 {
 
 scr_U08();
 scr_P08();
+scr_Q01();
 
 if scr_State_Active_Check("Bleeding") and speed > 4 {
 	scr_After_Image(20, false, true)	

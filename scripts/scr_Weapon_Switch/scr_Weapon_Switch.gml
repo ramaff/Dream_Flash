@@ -10,7 +10,7 @@ function scr_Weapon_Switch(_direction = 1) {
 
 	//if _direction = 1 {
 		for (var _i = 1; _i < global.weaponslots; _i++) {
-			var _temp_weap = weapon[_i]
+			var _temp_weap = Soul_Weapons_Control.weapon[_i]
 			var _j = _i
 			
 			while (1) {
@@ -26,10 +26,10 @@ function scr_Weapon_Switch(_direction = 1) {
 	                break;
 				}
 
-	            weapon[_j] = weapon[_k];
+	            Soul_Weapons_Control.weapon[_j] = Soul_Weapons_Control.weapon[_k];
 	            _j = _k;
 	        }
-	        weapon[_j] = _temp_weap;
+	        Soul_Weapons_Control.weapon[_j] = _temp_weap;
 		
 		}
 		
@@ -44,11 +44,13 @@ function scr_Weapon_Switch(_direction = 1) {
 		*/
 	//}
     
-	global.currentweapon = weapon[0].weapon_id;
+	global.currentweapon = Soul_Weapons_Control.weapon[0].weapon_id;
 
 	if global.currentweapon = 0 {
-	    scr_Weapon_Switch(-1);
+	    scr_Weapon_Switch(_direction);
 	}
+	
+	
 
 
 }

@@ -20,7 +20,7 @@ function scr_Q01() {
 			_delay = _delay * 3;	
 		}
 		
-		global.no_brainer += (global.Q[1] * 2) / _delay
+		global.no_brainer += (global.Q[1] * (2 / 3)) / _delay
 		
 		while global.no_brainer >= 1 {
 			
