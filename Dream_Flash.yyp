@@ -2604,6 +2604,7 @@
     {"id":{"name":"spr_Boss_Chain","path":"sprites/spr_Boss_Chain/spr_Boss_Chain.yy",},},
     {"id":{"name":"spr_Hope_Item_Diamond","path":"sprites/spr_Hope_Item_Diamond/spr_Hope_Item_Diamond.yy",},},
     {"id":{"name":"scr_Angle_Converge","path":"scripts/scr_Angle_Converge/scr_Angle_Converge.yy",},},
+    {"id":{"name":"scr_Build_Full_Version","path":"scripts/scr_Build_Full_Version/scr_Build_Full_Version.yy",},},
     {"id":{"name":"spr_Flash_Bomb","path":"sprites/spr_Flash_Bomb/spr_Flash_Bomb.yy",},},
     {"id":{"name":"spr_Dreamer","path":"sprites/spr_Dreamer/spr_Dreamer.yy",},},
     {"id":{"name":"spr_Bubble_Amorphous","path":"sprites/spr_Bubble_Amorphous/spr_Bubble_Amorphous.yy",},},

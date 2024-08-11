@@ -362,6 +362,7 @@
     {"name":"spr_boxer_slamming","order":2,"path":"sprites/spr_boxer_slamming/spr_boxer_slamming.yy",},
     {"name":"spr_infatuation_cloud_v2_p2","order":1,"path":"sprites/spr_infatuation_cloud_v2_p2/spr_infatuation_cloud_v2_p2.yy",},
     {"name":"spr_Beam_Curve_15_old_new","order":1,"path":"sprites/spr_Beam_Curve_15_old_new/spr_Beam_Curve_15_old_new.yy",},
+    {"name":"scr_Build_Full_Version","order":3,"path":"scripts/scr_Build_Full_Version/scr_Build_Full_Version.yy",},
     {"name":"obj_In_Game_Recollection_Cloud","order":1,"path":"objects/obj_In_Game_Recollection_Cloud/obj_In_Game_Recollection_Cloud.yy",},
     {"name":"spr_spirit_of_mischief_v22440","order":13,"path":"sprites/spr_spirit_of_mischief_v22440/spr_spirit_of_mischief_v22440.yy",},
     {"name":"scr_Baseball_Shot","order":1,"path":"scripts/scr_Baseball_Shot/scr_Baseball_Shot.yy",},

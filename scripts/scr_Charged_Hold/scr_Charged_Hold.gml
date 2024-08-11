@@ -96,7 +96,7 @@ function scr_Charged_Hold() {
 	} 
 
 	var drain = ((Charge_Essence - senergyconservation) / Charge_Total_Time) / senergyconservationfactor / ((6 + global.Weap[weaponcharge]) / 6) / (1 + ((global.soulperception + global.soulperceptionTemp) / 160));
-	var slot = Soul_Weapons_Control.weapon[0,1];
+	var slot = variable_struct_get(Soul_Weapons_Control.weapon[0], "slot");
 	var eeContain = global.L01essence[slot];
 	
 	scr_V07_Gain(drain / 5);

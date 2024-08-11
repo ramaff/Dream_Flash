@@ -12,7 +12,7 @@ function scr_N06(){
 		}
 
 		for(_weap_slot = 0; _weap_slot < global.weaponslots; _weap_slot++) {
-			_weap_number = Soul_Weapons_Control.weapon[_weap_slot,2]
+			_weap_number = Soul_Weapons_Control.weapon[_weap_slot].weapon_id
 			
 			if _weap_number != 0 {
 				_weap_stats = variable_struct_get(global.weapon_stats, string(_weap_number))
@@ -27,7 +27,7 @@ function scr_N06(){
 				_new_weap_number = scr_Pool_Pick(global.simpleWeaponPool)
 			}
 			
-			Soul_Weapons_Control.weapon[_weap_slot,2] = _new_weap_number;
+			Soul_Weapons_Control.weapon[_weap_slot].weapon_id = _new_weap_number;
 		}
 	}
 }

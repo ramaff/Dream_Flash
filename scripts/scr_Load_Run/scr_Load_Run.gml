@@ -13,7 +13,9 @@ function scr_Load_Run() {
 
 		ini_open(_save_file)
 		
-		var _run_version = string_digits(ini_read_string("Run", "GAME_VERSION", 0)) / 1000000;
+		var _run_version = ini_read_real("Run", "GAME_VERSION", 0) + (ini_read_real("Run", "GAME_MINOR_VERSION", 0) / 100)
+		var _run_version_beta = ini_read_real("Run", "GAME_VERSION_BETA", 0)
+		
 		if _run_version < 23.6 {
 			file_delete("saverun.sav");
 			ini_close();
@@ -38,11 +40,6 @@ function scr_Load_Run() {
 	        global.Weap[i] = ini_read_real("Run","Weap" + string(i),-1);
 	    }
     
-	    /*for(i = 0; i <= 4; i++) {
-	        for(j = 1; j <= 2; j++) {
-	        Soul_Weapons_Control.weapon[i,j] = ini_read_real("Run", "weapon" + string(i) + "-" + string(j),0);
-	        }
-	    } */
 	    for(i = 0; i < 16; i++) {
 	        for(j = 0; j <= 5; j++) {
 	        Soul_Hearts_Control.heart[i,j] = ini_read_real("Run", "heart" + string(i) + "-" + string(j),0);

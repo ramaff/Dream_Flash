@@ -4,11 +4,13 @@
 	
 	if window_has_focus() {
     
-	    startx = camera_get_view_x(view);
-	    starty = camera_get_view_y(view);
-		bottomy = starty + (camera_get_view_height(view)/* / camcon.view_zoom */);
+	    var startx = camera_get_view_x(view);
+	    var starty = camera_get_view_y(view);
+		var bottomy = starty + (camera_get_view_height(view)/* / camcon.view_zoom */);
+		
+		var _full_version_string = scr_Build_Full_Version()
     
-	    draw_text(startx + 8, bottomy - 20, string_hash_to_newline("Dream Flash Demo " + string(GAME_VERSION)));
+	    draw_text(startx + 8, bottomy - 20, string_hash_to_newline("Dream Flash Demo " + _full_version_string));
 	
 	}
 
