@@ -6,7 +6,7 @@ function scr_Soul_Damage_Calculation(_damage_amount, _defense_amount) {
 		
 		//scr_E01();
     
-	    scr_H16();
+	    scr_H16(_damage_amount, _defense_amount);
 		
 		var truedam = 0;
 		

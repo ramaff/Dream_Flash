@@ -1,7 +1,7 @@
 /// @description Insert description here
 // You can write your code in this editor
 recollectionChamp++;
-if global.recollectCategory = "Boss" {
+if global.recollectCategory = "Bosses" {
 	var rc = 0;
 	while(recollectionBString[recollectionChamp] = "You cannot remember") {
 		recollectionChamp++;	

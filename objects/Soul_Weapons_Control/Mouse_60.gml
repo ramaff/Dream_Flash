@@ -1,2 +1,2 @@
-scr_Weapon_Switch(0);
+scr_Weapon_Switch(-1);
 

@@ -8,7 +8,7 @@ function scr_N05(){
 		var _weap_slot = 0;
 
 		for(_weap_slot = 0; _weap_slot < global.weaponslots; _weap_slot++) {
-			_weap_number = Soul_Weapons_Control.weapon[_weap_slot,2];
+			_weap_number = Soul_Weapons_Control.weapon[_weap_slot].weapon_id;
 
 			if _weap_number != 0 and global.WeaponJugglingDelay[_weap_slot] <= 0 {
 			

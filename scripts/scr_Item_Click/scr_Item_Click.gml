@@ -1,5 +1,4 @@
-// Script assets have changed for v2.3.0 see
-// https://help.yoyogames.com/hc/en-us/articles/360005277377 for more information
+
 function scr_Item_Click(linger = false){
 	
 	var recollectionCount = 0;
@@ -210,6 +209,8 @@ function scr_Item_Click(linger = false){
 				scr_Tutorial_Note_Spawn("stat_level_up")	
 			}
 		}
+	} else {
+		recollectionCount = global.recollectionWeap[string_digits(itemVal)]	
 	}
 	
 	scr_State_Form_Unlock();

@@ -12,13 +12,4 @@ function scr_Cramming_Use(){
 		scr_Item_Click();
 	}
 	
-	//global.currentweapon = 0;
-	
-	for(i = 0; i < 5; i++) {
-		if Soul_Weapons_Control.weapon[i,2] = 701 {
-			Soul_Weapons_Control.weapon[i,2] = 0;
-			break;
-		}
-	}
-	
 }

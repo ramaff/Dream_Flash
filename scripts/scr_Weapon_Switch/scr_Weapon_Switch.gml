@@ -1,5 +1,4 @@
-function scr_Weapon_Switch() {
-	reverse = argument[0];
+function scr_Weapon_Switch(_direction = 1) {
 
 	scr_U03_Off();
 	
@@ -9,40 +8,49 @@ function scr_Weapon_Switch() {
 
 	//global.weaponslots = 4;
 
-	if reverse = 0 {
-	    for (i = 0; i < global.weaponslots; i++) {
-	        weapon[i,1] += 1
-	        if weapon[i,1] >= global.weaponslots
-	        weapon[i,1] = 0
-	    }
+	//if _direction = 1 {
+		for (var _i = 1; _i < global.weaponslots; _i++) {
+			var _temp_weap = Soul_Weapons_Control.weapon[_i]
+			var _j = _i
+			
+			while (1) {
+	            var _k = _j + _direction;
+	            if (_k >= global.weaponslots) {
+	                _k = _k - global.weaponslots;
+				}
+				if (_k < 0) {
+					_k = global.weaponslots - 1;
+				}
+
+	            if (_k == _i) {
+	                break;
+				}
+
+	            Soul_Weapons_Control.weapon[_j] = Soul_Weapons_Control.weapon[_k];
+	            _j = _k;
+	        }
+	        Soul_Weapons_Control.weapon[_j] = _temp_weap;
+		
+		}
+		
+		/*var _prev_weap = weapon[0]
+		var _cur_weap = weapon[1]
+		for (var _i = 1; _i < global.weaponslots; _i++) {
+			weapon[_i] = _prev_weap
+			_prev_weap = weapon[_i];
+			_cur_weap = weapon[_i + 1];
+		}
+		_weapon[0] = _cur_weap;
+		*/
+	//}
     
-	    for (i = 0; i < global.weaponslots; i++) {
-	        if (weapon[i,1] = 0) {
-	            global.currentweapon = weapon[i,2];
-	        }
-	    }
-	} else {
-	    for (i = global.weaponslots - 1; i >= 0; i--) {
-	        weapon[i,1] -= 1;
-	        if weapon[i,1] < 0 {
-	        weapon[i,1] = global.weaponslots - 1;
-	        }
-	        if weapon[i,1] >= global.weaponslots {
-	        weapon[i,1] = 0;
-			}
-	    }
-    
-	    for (i = 0; i < global.weaponslots; i++) {
-	        if (weapon[i,1] = 0) {
-	            global.currentweapon = weapon[i,2];
-	        }
-	    }
-	}
+	global.currentweapon = Soul_Weapons_Control.weapon[0].weapon_id;
 
 	if global.currentweapon = 0 {
-	    scr_Weapon_Switch(reverse);
+	    scr_Weapon_Switch(_direction);
 	}
-
+	
+	
 
 
 }

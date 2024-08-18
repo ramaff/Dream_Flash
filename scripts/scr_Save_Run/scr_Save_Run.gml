@@ -20,7 +20,13 @@ function scr_Save_Run() {
 	scr_Handle_File_Backup(_save_file, _backup_save_file)
 
 	ini_open(_backup_save_file)
+	
+	var _full_version_string = scr_Build_Full_Version()
 
+	ini_write_real("Run", "GAME_VERSION", GAME_VERSION);
+	ini_write_real("Run", "GAME_MINOR_VERSION", string_digits(GAME_MINOR_VERSION));
+	ini_write_real("Run", "GAME_VERSION_BETA", GAME_VERSION_BETA);
+	
 	ini_write_real("Run", "currentchapter", global.currentchapter);
 	ini_write_real("Run", "currentroom", global.currentroom);
 	ini_write_real("Run", "strFieldSpawn", global.strFieldSpawn);
@@ -87,11 +93,6 @@ function scr_Save_Run() {
 
 	for(i = 0; i <= 699; i++) {
 	    ini_write_real("Run", "Weap" + string(i), global.Weap[i]);
-	}
-	for(i = 0; i <= 4; i++) {
-	    for(j = 1; j <= 2; j++) {
-	    ini_write_real("Run", "weapon" + string(i) + "-" + string(j), Soul_Weapons_Control.weapon[i,j]);
-	    }
 	}
 	for(i = 0; i < 16; i++) {
 	    for(j = 1; j <= 5; j++) {
@@ -229,6 +230,7 @@ function scr_Save_Run() {
 	ini_write_real("Run", "B06HeartConversions", global.B06HeartConversions);
 	
 	ini_write_string("Run", "OA5rooms", string_replace_all(json_stringify(global.OA5rooms), "\"", "'"));
+	ini_write_string("Run", "weapon", string_replace_all(json_stringify(Soul_Weapons_Control.weapon), "\"", "'"));
 	//}
 	
 	

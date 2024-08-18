@@ -1,7 +1,9 @@
-function scr_Weapon_Item_Change() {
-	itemform = Soul_Weapons_Control.weapon[i,2];
+function scr_Weapon_Item_Change(_i = 0) {
+	itemform = Soul_Weapons_Control.weapon[_i].weapon_id;
 
 	global.floor[global.currentroom,itemData] = itemform;
+	
+	global.Weap[itemform]--;
 
 	with instance_create(1024,576, obj_Item_Parent) {
 	    weapon = 1;
@@ -37,8 +39,6 @@ function scr_Weapon_Item_Change() {
 	    }
 		scr_Initial_Item_Memory_Get()
 	}
-
-	global.Weap[itemform]--;
 	
 	scr_State_Weapon_Progress(itemform, -1);
 	

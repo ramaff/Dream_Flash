@@ -17,43 +17,43 @@ function scr_Weapon_GUI() {
 
 	for(i = 0; i < global.weaponslots; i++) {
 
-	    var weap = Soul_Weapons_Control.weapon[i,2];
+	    var weap = Soul_Weapons_Control.weapon[i].weapon_id;
 		var ex = 0;
 		var why = 0;
 		if global.weaponslots = 3 { 
-		    if (Soul_Weapons_Control.weapon[i,1] = 0 ) {
+		    if i = 0 {
 		        var ex = 45
 		        var why = winy - 48
 		        sc = 1;
 		    }
-		    if (Soul_Weapons_Control.weapon[i,1] = 1 ){
+		    if i = 1 {
 		        var ex = 24
 		        var why = winy - 88
 		        sc = 0.5;
 		    }
-		    if (Soul_Weapons_Control.weapon[i,1] = 2 ){
+		    if i = 2 {
 		        var ex = 66
 		        var why = winy - 88
 		        sc = 0.5;
 		    }
 		}
 		if global.weaponslots > 3 {
-			if (Soul_Weapons_Control.weapon[i,1] = 0 ) {
+			if i = 0 {
 		        var ex = 45
 		        var why = winy - 48
 		        sc = 1;
 		    }
-		    if (Soul_Weapons_Control.weapon[i,1] = 1 ){
+		    if i = 2 {
 		        var ex = 24
 		        var why = winy - 88
 		        sc = 0.5;
 		    }
-		    if (Soul_Weapons_Control.weapon[i,1] = 3 ){
+		    if i = 3 {
 		        var ex = 66
 		        var why = winy - 88
 		        sc = 0.5;
 		    }
-			if (Soul_Weapons_Control.weapon[i,1] = 2 ) {
+			if i = 2 {
 				var ex = 45
 				var why = winy - 112
 				sc = 0.25;
