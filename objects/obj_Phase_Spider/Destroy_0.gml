@@ -13,5 +13,5 @@
     
     scr_Soul_Shoot();
     
-    scr_H14_Minion();
+    
 

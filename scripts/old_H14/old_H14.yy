@@ -1,7 +1,7 @@
 {
   "resourceType": "GMScript",
   "resourceVersion": "1.0",
-  "name": "scr_H14_Minion",
+  "name": "old_H14",
   "isCompatibility": false,
   "isDnD": false,
   "parent": {

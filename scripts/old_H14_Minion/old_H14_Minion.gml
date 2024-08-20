@@ -1,4 +1,4 @@
-function scr_H14_Minion() {
+function old_H14_Minion() {
 	// Location: Boss Next Phase Check and Minion Death Event
 
 	if global.totalhearts > 0 {

@@ -18,5 +18,5 @@
 	
 	scr_Suicide_Even_Shoot(4,bullet_speed,300);
     
-    scr_H14_Minion();
+    
 
