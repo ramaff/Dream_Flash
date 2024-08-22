@@ -4,6 +4,13 @@ function scr_Weapon_Output(_spawn_projectile = spawnProjectile, _minion = minion
 
 	if _spawn_projectile {
 		
+		if global.Q[5] > 0 {
+			if scr_Chance(1 + (8 / global.Q[5])) {
+				_cw_stats = scr_Q05()
+				_minion = false
+			}
+		}
+		
 		if !_minion {
 			scr_Shot_Creation(_cw_stats);
 			scr_Q03(false, _cw_stats);

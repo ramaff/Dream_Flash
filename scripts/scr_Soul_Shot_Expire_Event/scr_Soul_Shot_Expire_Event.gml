@@ -5,6 +5,17 @@ function scr_Soul_Shot_Expire_Event(){
 	if variable_struct_names_count(bullet_hits) == 0 and shot_stats.Shot_Origin = obj_Soul_Parent {
 		scr_A07_Reset();	
 	}
+	
+	if shot_stats.Shot_Burst_Stats != false { 
+		var burstIndex = array_length(shot_stats.Shot_Burst_Stats) - 1;
+		if burstIndex >= 0 {
+			if variable_struct_exists(shot_stats.Shot_Burst_Stats[burstIndex], "Shot_Expire_Burst") {
+				if shot_stats.Shot_Burst_Stats[burstIndex].Shot_Expire_Burst {
+					event_user(0)
+				}
+			}	
+		}
+	} 
 
 	if shot_stats.Shot_Comeback > 0 {
 	    shot_stats.Shot_Comeback--;
