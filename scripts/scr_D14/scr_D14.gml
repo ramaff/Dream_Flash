@@ -4,7 +4,7 @@ function scr_D14() {
 	if global.D[14] > 0 {
 	    with(obj_Boss_Parent) {
 	        if distance_to_object(other) <= (90) {
-	            var dmg = (1 + global.D[14]) * other.smovemultiplier / 20;
+	            var dmg = (1 + global.D[14]) * sqrt((other.soulCurrentHorizontalSpeed * other.soulCurrentHorizontalSpeed) + (other.soulCurrentVerticalSpeed * other.soulCurrentVerticalSpeed)) / 20;
 	            bosshealth -= dmg;
 				
 				if scr_Chance(10) {

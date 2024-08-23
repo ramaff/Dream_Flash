@@ -20,14 +20,16 @@ function scr_Q05(){
         Shot_Gravity: 0.36,
 		Shot_Size: 0.5,
 		Shot_Pierce: 1,
+		Shot_Bounce: 1,
 		Shot_Burst_Stats: [
             {
 				Shot_Expire_Burst: true,
 				Shot_Speed: 0,
 				Shot_Sprite: "spr_Banana_Peel_Shot",
-				Shot_Type: "obj_Lesser_Soul_Shot",
+				Shot_Type: "obj_Banana_Peel_Shot",
 				Shot_Lobbing: false,
 				Shot_Life_Span: 240,
+				Shot_Angle: 0,
 				Spread: 0,
 				Amount: 1,
 				Burst_Power: 1
