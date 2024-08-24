@@ -8,6 +8,9 @@ shot_stats.Shot_Exist_Time++;
 if shot_stats.Shot_Movement = 0 {
 	speed = 0;	
 }
+if global.gameParticles > 0 {
+	scr_State_Shot_Particles();
+}
 
 if shot_stats.Shot_Ground = true {
 	shot_stats.Shot_Lobbing = false;
@@ -27,6 +30,10 @@ if shot_stats.Shot_Suck > 0 {
 
 if shot_stats.Shot_Bounce = 1 and shot_stats.Shot_Air_Target = 0 and shot_stats.Shot_Melee = 0 {
     scr_Wall_Bounce_Ext();
+}
+
+if shot_stats.Shot_Angular_Velocity != 0 {
+	direction += shot_stats.Shot_Angular_Velocity;	
 }
 
 if shot_stats.Shot_Point_Angle = 1 {

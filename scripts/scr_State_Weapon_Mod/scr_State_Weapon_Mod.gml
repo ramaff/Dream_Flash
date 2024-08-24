@@ -49,19 +49,19 @@ function scr_State_Weapon_Mod(){
 		}
 		if scr_State_Active_Check("Beast") {
 		
-			image = 1;
+			//image = 1;
 		
-			shot_stats.Shot_Speed = shot_stats.Shot_Speed * (1.5 * global.soulstateformboost);
+			/*shot_stats.Shot_Speed = shot_stats.Shot_Speed * (1.5 * global.soulstateformboost);
 			if shot_stats.Shot_Life_Span > 20 {
 				shot_stats.Shot_Life_Span = 20 + ((shot_stats.Shot_Life_Span - 20) / 3);
 			}
 			alarm[0] = shot_stats.Shot_Life_Span;
 		    ////shot_stats.Shot_Timer = shot_stats.Shot_Life_Span;
-			speed = shot_stats.Shot_Speed;
+			speed = shot_stats.Shot_Speed; */
 		
-			shot_stats.Shot_Power_Max = shot_stats.Shot_Power_Max * (1.5 * global.soulstateformboost);
+			/*shot_stats.Shot_Power_Max = shot_stats.Shot_Power_Max * (1.5 * global.soulstateformboost);
 		    shot_stats.Shot_Power = shot_stats.Shot_Power_Max;
-		    shot_stats.Shot_Power_Level = shot_stats.Shot_Power_Level * (1.5 * global.soulstateformboost);
+		    shot_stats.Shot_Power_Level = shot_stats.Shot_Power_Level * (1.5 * global.soulstateformboost); */
 		}
 		if scr_State_Active_Check("Scrub") {
 		

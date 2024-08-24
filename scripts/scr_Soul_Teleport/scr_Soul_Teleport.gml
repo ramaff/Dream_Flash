@@ -17,7 +17,6 @@ function scr_Soul_Teleport(_evasion = false){
 	scr_W01();
 		
 	scr_Snake_Soul_Teleport();
-	scr_Beast_Soul_Teleport();
 	scr_Mechanical_Teleport();
 	scr_Bleeding_Teleport();
 	scr_Scrub_Soul_Teleport();
@@ -32,6 +31,8 @@ function scr_Soul_Teleport(_evasion = false){
 	
 	var _xx = mouse_x;
 	var _yy = mouse_y;
+	
+	scr_Beast_Soul_Teleport(x, y, _xx, _yy);
 	
 	if _evasion = true {
 		var _new_pos = scr_V05_Evade(x, y);

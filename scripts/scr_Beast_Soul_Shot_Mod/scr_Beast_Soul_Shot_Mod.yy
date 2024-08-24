@@ -1,11 +1,11 @@
 {
   "resourceType": "GMScript",
   "resourceVersion": "1.0",
-  "name": "scr_Spike_Shot_Particles",
+  "name": "scr_Beast_Soul_Shot_Mod",
   "isCompatibility": false,
   "isDnD": false,
   "parent": {
-    "name": "Visual Commands",
-    "path": "folders/Scripts/Visual Commands.yy",
+    "name": "Shot_Mods",
+    "path": "folders/Scripts/State Commands/Shot_Mods.yy",
   },
 }

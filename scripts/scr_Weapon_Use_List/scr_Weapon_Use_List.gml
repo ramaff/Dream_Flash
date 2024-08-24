@@ -163,6 +163,8 @@ function scr_Weapon_Use_List(cWP = global.currentweapon, _weap_slot = 0) {
 			scr_OC03(cWP);
 		}
 		
+		scr_Beast_Soul_Shot_Mod(current_weapon_stats);
+		
 		var realCost = weaponCost * scr_U03_Ess_Cost();
 		
 		scr_C11_Shot_Mod(realCost)

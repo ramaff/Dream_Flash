@@ -50,6 +50,8 @@ function scr_Shot_Creation(_cw = current_weapon_stats) {
 	scr_D10(_cw);
 	
 	scr_XB05_Shot_Mod(_cw);
+	
+	//scr_Beast_Soul_Shot_Mod(_cw);
 
 	if _cw.Shot_Count > 1 {
 	    if _cw.Shot_Spread < 10 and _cw.Shot_Spread >= 0 {
