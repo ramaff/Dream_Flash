@@ -5,6 +5,7 @@ function scr_Setup_Default_Shot_Stats(){
 	var _shot_stats = {
 		Delay: 20,
 		Essence: 4,
+		Real_Essence_Cost: 4,
 		Weapon_Number: 0,
 		Shot_Accuracy: 15,
 		Shot_Spread: 0,

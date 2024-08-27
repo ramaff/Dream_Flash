@@ -175,6 +175,7 @@
     {"resourceType":"GMFolder","resourceVersion":"1.0","name":"Soul Hit","folderPath":"folders/Scripts/Soul Commands/Soul Hit.yy",},
     {"resourceType":"GMFolder","resourceVersion":"1.0","name":"Stat Commands","folderPath":"folders/Scripts/Stat Commands.yy",},
     {"resourceType":"GMFolder","resourceVersion":"1.0","name":"State Commands","folderPath":"folders/Scripts/State Commands.yy",},
+    {"resourceType":"GMFolder","resourceVersion":"1.0","name":"Shot_Mods","folderPath":"folders/Scripts/State Commands/Shot_Mods.yy",},
     {"resourceType":"GMFolder","resourceVersion":"1.0","name":"Teleport_Mods","folderPath":"folders/Scripts/State Commands/Teleport_Mods.yy",},
     {"resourceType":"GMFolder","resourceVersion":"1.0","name":"Utility Commands","folderPath":"folders/Scripts/Utility Commands.yy",},
     {"resourceType":"GMFolder","resourceVersion":"1.0","name":"Visual Commands","folderPath":"folders/Scripts/Visual Commands.yy",},
@@ -450,7 +451,6 @@
     {"resourceType":"GMFolder","resourceVersion":"1.0","name":"Misc BGs","folderPath":"folders/Tile Sets/Misc BGs.yy",},
     {"resourceType":"GMFolder","resourceVersion":"1.0","name":"Nightmare BGs","folderPath":"folders/Tile Sets/Nightmare BGs.yy",},
     {"resourceType":"GMFolder","resourceVersion":"1.0","name":"Timelines","folderPath":"folders/Timelines.yy",},
-    {"resourceType":"GMFolder","resourceVersion":"1.0","name":"Shot_Mods","folderPath":"folders/Scripts/State Commands/Shot_Mods.yy",},
   ],
   "IncludedFiles": [
     {"resourceType":"GMIncludedFile","resourceVersion":"1.0","name":"df_boss_stats.json","CopyToMask":-1,"filePath":"datafiles",},

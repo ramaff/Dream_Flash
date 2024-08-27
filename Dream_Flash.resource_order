@@ -19,6 +19,7 @@
     {"name":"Soul Shots","order":14,"path":"folders/Objects/Soul Shots.yy",},
     {"name":"Souls","order":15,"path":"folders/Objects/Souls.yy",},
     {"name":"Tutorial Notes","order":16,"path":"folders/Objects/Tutorial Notes.yy",},
+    {"name":"Shot_Mods","order":2,"path":"folders/Scripts/State Commands/Shot_Mods.yy",},
     {"name":"Visual Commands","order":2,"path":"folders/Scripts/Visual Commands.yy",},
     {"name":"Soul Shots","order":16,"path":"folders/Scripts/Weapon Commands/Soul Shots.yy",},
     {"name":"Alleged Real Sound Effects","order":1,"path":"folders/Sounds/Sound Effects/Alleged Real Sound Effects.yy",},
@@ -61,7 +62,6 @@
     {"name":"State Reco Icons","order":30,"path":"folders/Sprites/Recollection/State Reco Icons.yy",},
     {"name":"Tutorial Stuff","order":31,"path":"folders/Sprites/Recollection/Tutorial Stuff.yy",},
     {"name":"beam_punches","order":38,"path":"folders/Sprites/Soul Shot Sprites/Imaginary Shots/beam_punches.yy",},
-    {"name":"Shot_Mods","order":2,"path":"folders/Scripts/State Commands/Shot_Mods.yy",},
   ],
   "ResourceOrderSettings": [
     {"name":"reco_Demonic_Villainy","order":66,"path":"sprites/reco_Demonic_Villainy/reco_Demonic_Villainy.yy",},
