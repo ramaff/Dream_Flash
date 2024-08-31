@@ -17,10 +17,10 @@ function scr_Beast_Soul_Shot_Mod(_cw) {
 		
 		if sWeaponTicker mod 2 = 0 {
 			_cw.Shot_Angle_Relative = 40;
-			_cw.Shot_Angular_Velocity = -1;
+			_cw.Shot_Angular_Velocity = -1.5;
 		} else {
 			_cw.Shot_Angle_Relative = -40;
-			_cw.Shot_Angular_Velocity = 1;
+			_cw.Shot_Angular_Velocity = 1.5;
 		}
 		
 		_cw.Shot_State = "Beast";

@@ -3790,6 +3790,7 @@
     {"id":{"name":"spr_fire_kiss","path":"sprites/spr_fire_kiss/spr_fire_kiss.yy",},},
     {"id":{"name":"scr_Load_Options","path":"scripts/scr_Load_Options/scr_Load_Options.yy",},},
     {"id":{"name":"spr_Beam_Curve_5","path":"sprites/spr_Beam_Curve_5/spr_Beam_Curve_5.yy",},},
+    {"id":{"name":"spr_wall_watcher_v2_palette","path":"sprites/spr_wall_watcher_v2_palette/spr_wall_watcher_v2_palette.yy",},},
     {"id":{"name":"scr_Save_Options","path":"scripts/scr_Save_Options/scr_Save_Options.yy",},},
     {"id":{"name":"spr_Locust_Spawning_Fast","path":"sprites/spr_Locust_Spawning_Fast/spr_Locust_Spawning_Fast.yy",},},
     {"id":{"name":"scr_Steam_Save","path":"scripts/scr_Steam_Save/scr_Steam_Save.yy",},},

@@ -11,4 +11,4 @@ if boss_palette != noone {
 
 draw_self();
 
-//pal_swap_reset();
+pal_swap_reset();

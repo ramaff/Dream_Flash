@@ -11,8 +11,10 @@ if direction <= 90 || direction > 270 {
 	image_angle = direction;
 }
 
-if active_attack = 3 {
-	path_speed = bossmovespeed * 0.5;
+if active_attack = 3 || active_attack = 6 {
+	path_speed = bossmovespeed * 0.75;
+} else if active_attack = 4 {
+	path_speed = bossmovespeed * 2;
 } else {
 	path_speed = bossmovespeed * 3;	
 }
@@ -40,8 +42,14 @@ if active_attack_delay <= 0 and active_attack_cooldown <= 0 and active_attack_du
     
 	// Pick a random attack to do
 	active_attack = choose(1, 3);
+	if champ = 1 {
+		active_attack = choose(4, 6);
+	}
 	if currentphase = 2 {
-		active_attack = choose(2, 3);	
+		active_attack = choose(2, 3);
+		if champ = 1 {
+			active_attack = choose(5, 6);
+		}
 	}
 	
     if active_attack = 1 {
@@ -55,7 +63,19 @@ if active_attack_delay <= 0 and active_attack_cooldown <= 0 and active_attack_du
 	// Hop leap attack setup example
 	if active_attack = 3 {
 		// 
-		scr_Boss_Attack_Time_Setup_v2(7, 50, 60, 120, 30, 10);
+		scr_Boss_Attack_Time_Setup_v2(7, 60, 60, 120, 30, 10);
+    }
+	if active_attack = 4 {
+		// Setup how many attacks per boss move, delay, etc
+		scr_Boss_Attack_Time_Setup_v2(25, 50, 10, 120, 30, 10);
+    }
+	if active_attack = 5 {
+		// Setup how many attacks per boss move, delay, etc
+		scr_Boss_Attack_Time_Setup_v2(5, 50, 60, 120, 30, 10);
+    }
+	if active_attack = 6 {
+		// 
+		scr_Boss_Attack_Time_Setup_v2(7, 60, 60, 120, 30, 10);
     }
 }
 
@@ -68,7 +88,7 @@ scr_Default_Attack_Settings();
 // If its time to attack, attack
 if active_attack_delay <= 0 and pattern_cooldown <= 0 and pattern_count > 0 {
    
-    if active_attack = 1 || active_attack = 2 {
+    if active_attack = 1 || active_attack = 2 || active_attack = 4 || active_attack = 5 {
 		
 		bullet_speed = bossbulletspeed * 1.5;
 	
@@ -78,13 +98,35 @@ if active_attack_delay <= 0 and pattern_cooldown <= 0 and pattern_count > 0 {
 		//image_angle = -10 + (20 * (pattern_count mod 2))
 	
 		scr_Sound_Effect(snd_Boss_Laser);
-		scr_Boss_Stretch("Horizontal",0.35);
+		if active_attack = 1 {
+			scr_Boss_Stretch("Horizontal",0.25);
+		} else if active_attack = 4 {
+			scr_Boss_Stretch("Horizontal",0.1);
+		} else if active_attack = 5 {
+			scr_Boss_Stretch("Horizontal",0.5);
+		} else {
+			scr_Boss_Stretch("Horizontal",0.4);
+		}
 		
 		if active_attack = 2 {
 			bullet_type = obj_Basic_Red_Bullet;
 		    bullet_sprite = spr_Glowy_Enemy_Shot;
 		    bullet_count = 3;
 		    bullet_spread = 20;	
+		}
+		if active_attack = 4 {
+			bullet_type = obj_Sticky_Slide_Bullet;
+		    bullet_sprite = spr_Sticky_Shot;
+		    bullet_lifespan = 450;
+			bullet_speed = bossbulletspeed * (0.75 + random(1.25));
+		}
+		if active_attack = 5 {
+			bullet_type = obj_Rebound_Bullet;
+			bullet_sprite = spr_Kylie_Shot;
+			bullet_lifespan = 270;
+			bullet_count = 3;
+			bullet_spread = 40;	
+			bullet_speed = bossbulletspeed * 2.75;
 		}
 	
 	    boss_radius = 0;
@@ -101,7 +143,7 @@ if active_attack_delay <= 0 and pattern_cooldown <= 0 and pattern_count > 0 {
 	    // pattern_direction += 0;
 	}
 	
-	if active_attack = 3 {
+	if active_attack = 3 || active_attack = 6 {
 		bullet_type = obj_Basic_Red_Bullet;
 	    bullet_sprite = spr_Big_Glowy_Shot;
 	    bullet_speed = bossbulletspeed * 1.6;
@@ -122,6 +164,17 @@ if active_attack_delay <= 0 and pattern_cooldown <= 0 and pattern_count > 0 {
 		bullet_part_frequency = 4;
 		scr_Boss_Stretch("Horizontal",0.4);
 		 
+		if active_attack = 6 {
+			bullet_speed = bossbulletspeed * 1.35;
+	        bullet_power = bosspower * 2;
+	        bullet_type = obj_Cross_Split_Bullet;
+	        bullet_sprite = spr_Big_Cross_Split_Shot;
+			bullet_lifespan = 105 + random(30);	
+			
+			bullet_part_color1 = make_color_rgb(125,255,0);
+			bullet_part_color2 = make_color_rgb(125,255,0);
+		}
+		
 	    scr_Soul_Shoot();
 		scr_Sound_Effect(snd_Deep_Laser);
 		
@@ -133,7 +186,11 @@ if active_attack_delay <= 0 and pattern_cooldown <= 0 and pattern_count > 0 {
 		bullet_type = obj_Basic_Bullet;
 		bullet_sprite = spr_Glowy_Hot_Pink_Shot;
 		bullet_count = 2;
-		bullet_spread = 40;	
+		bullet_spread = 40;
+		bullet_lifespan = 300;
+		if active_attack = 6 {
+	        bullet_sprite = spr_Glowy_Green_Shot;
+		}
 		
 		if currentphase = 2 {
 		    bullet_count = 4;
@@ -181,13 +238,22 @@ if active_attack = 1 {
 	if image_index = _hold_frame {
 		scr_Boss_Wobble("Horizontal", 2, 0.4, 0)	
 	}
-} else if active_attack = 2 {
+} else if active_attack = 4 {
 	var _hold_frame = 2;
+	scr_Boss_Attack_Sprite_v2(spr_wall_watcher_v2_cannon_shoot_jolly, _hold_frame, 3, 3, 20);
+	if image_index = _hold_frame {
+		scr_Boss_Wobble("Horizontal", 2, 0.4, 0)	
+	}
+} else if active_attack = 2 || active_attack = 5 {
+	var _hold_frame = 2;
+	if active_attack = 5 {
+		image_speed = 0.5	
+	}
 	scr_Boss_Attack_Sprite_v2(spr_wall_watcher_v2_cannon_shoot_angry, _hold_frame, 3, 5, 20);
 	if image_index = _hold_frame {
 		scr_Boss_Wobble("Horizontal", 2, 0.4, 0)	
 	}
-} else if active_attack = 3 {
+} else if active_attack = 3 || active_attack = 6 {
 	var _hold_frame = 2;
 	scr_Boss_Attack_Sprite_v2(spr_wall_watcher_v2_eye_shoot, _hold_frame, 3, 3, 20);
 	if image_index = _hold_frame {
