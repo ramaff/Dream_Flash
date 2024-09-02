@@ -19,3 +19,5 @@ death_sprite = spr_boss_template_ko;
 boss_palette = spr_wall_watcher_v2_palette;
 boss_palette_index = champ;
 
+seg_angle = image_angle + 180 + 90;
+seg_distance = 64;

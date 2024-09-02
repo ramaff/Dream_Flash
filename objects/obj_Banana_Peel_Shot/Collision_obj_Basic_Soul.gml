@@ -3,18 +3,24 @@
 scr_Soul_Shot_Soul_Hit();
 
 var _slip_target = other
-if _slip_target.soulCurrentHorizontalSpeed != 0 || _slip_target.soulCurrentHorizontalSpeed != 0 {
+if (_slip_target.soulCurrentHorizontalSpeed != 0 || _slip_target.soulCurrentHorizontalSpeed != 0) and shot_stats.Shot_Soul_Maintain = 0 {
+	
+	var _time = 60 + irandom(15)
 	
 	with instance_create(x, y, obj_Force_Push) {
 		target = _slip_target
-		alarm[0] = 60 + irandom(30);
+		alarm[0] = _time
 
 		force = 4 + irandom(1);
 		force_friction = force / alarm[0];
 		force_direction = _slip_target.soulCurrentDirection - 60 + random(120);
 	}
 
-	instance_destroy()
+	shot_stats.Shot_Soul_Maintain = 1;
+	shot_stats.Shot_X_Maintain = x - _slip_target.x;
+	shot_stats.Shot_Y_Maintain = y - _slip_target.y;
+	alarm[0] = _time;
+	shot_stats.Shot_Life_Span = _time
 
 }
 
