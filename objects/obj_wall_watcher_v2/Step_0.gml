@@ -11,9 +11,9 @@ if direction <= 90 || direction > 270 {
 	image_angle = direction;
 }
 
-if active_attack = 3 || active_attack = 6 {
+if active_attack = 3 || active_attack = 6 || active_attack = 7 {
 	path_speed = bossmovespeed * 0.75;
-} else if active_attack = 4 {
+} else if active_attack = 4 || active_attack = 9 || active_attack = 8 {
 	path_speed = bossmovespeed * 2;
 } else {
 	path_speed = bossmovespeed * 3;	
@@ -57,9 +57,12 @@ if active_attack_delay <= 0 and active_attack_cooldown <= 0 and active_attack_du
 			active_attack = choose(8, 9);
 		}
 	}
-	active_attack = 9;
+	if champ = 8 {
+		active_attack = choose(10, 11);	
+	}
+	//active_attack = 9;
 	
-    if active_attack = 1 || active_attack = 7 || active_attack = 8 {
+    if active_attack = 1 || active_attack = 7 || active_attack = 8 || active_attack = 10 {
 		// Setup how many attacks per boss move, delay, etc
 		scr_Boss_Attack_Time_Setup_v2(12, 50, 20, 120, 30, 10);
     }
@@ -68,7 +71,7 @@ if active_attack_delay <= 0 and active_attack_cooldown <= 0 and active_attack_du
 		scr_Boss_Attack_Time_Setup_v2(12, 50, 30, 120, 30, 10);
     }
 	// Hop leap attack setup example
-	if active_attack = 3 {
+	if active_attack = 3 || active_attack = 11 {
 		// 
 		scr_Boss_Attack_Time_Setup_v2(7, 60, 60, 120, 30, 10);
     }
@@ -100,7 +103,7 @@ scr_Default_Attack_Settings();
 // If its time to attack, attack
 if active_attack_delay <= 0 and pattern_cooldown <= 0 and pattern_count > 0 {
    
-    if active_attack = 1 || active_attack = 2 || active_attack = 4 || active_attack = 5 || active_attack = 7 || active_attack = 8 {
+    if active_attack = 1 || active_attack = 2 || active_attack = 4 || active_attack = 5 || active_attack = 7 || active_attack = 8 || active_attack = 10 {
 		
 		bullet_speed = bossbulletspeed * 1.5;
 	
@@ -122,7 +125,7 @@ if active_attack_delay <= 0 and pattern_cooldown <= 0 and pattern_count > 0 {
 		
 		var _dir = image_angle + 180 + 90;
 		
-		if active_attack = 2 {
+		if active_attack = 2 || active_attack = 8 {
 			bullet_type = obj_Basic_Red_Bullet;
 		    bullet_sprite = spr_Glowy_Enemy_Shot;
 		    bullet_count = 3;
@@ -146,6 +149,23 @@ if active_attack_delay <= 0 and pattern_cooldown <= 0 and pattern_count > 0 {
 			pattern_direction = scr_Angle_Converge(pattern_direction, scr_Soul_Point(), 30)
 			_dir = pattern_direction;
 		}
+		if active_attack = 10 {
+			bullet_sprite = spr_Big_Glowy_Shot;
+		    bullet_speed = bossbulletspeed * 1.6;
+		    bullet_power = bosspower * 1.5;
+		    bullet_size = 1;
+		    bullet_count = 1;
+		    bullet_spread = 0;
+		    boss_radius = 0;
+	
+			bullet_part = 1;
+			bullet_part_sprite = spr_Soul_Big_Bit;
+			bullet_part_area = 45;
+			bullet_part_life = 30;
+			bullet_part_color1 = make_color_rgb(255,0,238);
+			bullet_part_color2 = make_color_rgb(255,0,238);
+			bullet_part_frequency = 4;	
+		}
 	
 	    boss_radius = 0;
 		bullet_direction = scr_Boss_Bullet_Direction_Formula(_dir, 20)
@@ -162,7 +182,6 @@ if active_attack_delay <= 0 and pattern_cooldown <= 0 and pattern_count > 0 {
 	}
 	
 	if active_attack = 3 || active_attack = 6 {
-		bullet_type = obj_Basic_Red_Bullet;
 	    bullet_sprite = spr_Big_Glowy_Shot;
 	    bullet_speed = bossbulletspeed * 1.6;
 	    bullet_power = bosspower * 1.5;
@@ -234,7 +253,8 @@ if active_attack_delay <= 0 and pattern_cooldown <= 0 and pattern_count > 0 {
 			bullet_power = 0
 			bullet_lifespan = 120;
 		    bullet_sprite = spr_Boss_Beam_Segment;
-			bullet_blend = make_color_rgb(255, 40, 0)
+			bullet_part_color1 = make_color_rgb(255, 0, 0)
+			bullet_part_color2 = make_color_rgb(255, 148, 127)
 				
 			scr_Spirit_Boss_BullFX_Pre();
 			
@@ -253,30 +273,18 @@ if active_attack_delay <= 0 and pattern_cooldown <= 0 and pattern_count > 0 {
 			}
 		}
 		
-		/*if pattern_count mod 10 = 0 {
+		if pattern_count mod 10 = 0 {
 			scr_Boss_Stretch("Horizontal",0.1);	
 		}
-		
-        scr_Default_Attack_Settings();
-        bullet_type = obj_Laser_Beam_Charge;
-        bullet_sprite = spr_Laser_Beam_Charge;
-        bullet_speed = path_speed * 1;
-        bullet_power = bosspower;
-        bullet_direction = image_angle - 90 + (-0.1 + random(0.2)) / bossaccuracy;
-        bullet_lifespan = 7;
-        bullet_size = 1;
-        bullet_count = 1;
-        bullet_spread = 0;
-        boss_radius = 0;
-        bullet_sprite = spr_Red_Beam;
-        beam_sprite = spr_Red_Beam;
-        beamSize = 0.6;
-        bossbeamattackactive = 1;
-		
-		var beamstart = 135 - pattern_count;
-		
-		scr_Easy_Boss_Beam_Shoot_v2(pattern_count_max, 18);
-		*/
+		if pattern_count mod 30 = 0 and currentphase = 2 {
+			var _dir = image_angle + 180 + 90;
+			
+			bullet_direction = scr_Boss_Bullet_Direction_Formula(_dir, 20)
+		    bullet_count = 2;
+			bullet_spread = 60;
+			bullet_lifespan = 300;
+		    scr_Boss_Shoot();
+		}
 	}
 	
 	
