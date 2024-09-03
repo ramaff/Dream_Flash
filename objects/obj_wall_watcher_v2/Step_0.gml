@@ -166,8 +166,8 @@ if active_attack_delay <= 0 and pattern_cooldown <= 0 and pattern_count > 0 {
 			bullet_part_color2 = make_color_rgb(255,0,238);
 			bullet_part_frequency = 4;	
 		}
-	
-	    boss_radius = 0;
+		
+		boss_radius = 0;
 		bullet_direction = scr_Boss_Bullet_Direction_Formula(_dir, 20)
 	    boss_xoffset = lengthdir_x(50,image_angle);
 	    boss_yoffset = lengthdir_y(50,image_angle) + lengthdir_y(39,image_angle + 270);
@@ -177,8 +177,32 @@ if active_attack_delay <= 0 and pattern_cooldown <= 0 and pattern_count > 0 {
 	    boss_yoffset = lengthdir_y(50,image_angle + 180) + lengthdir_y(39,image_angle + 270);
 	    scr_Boss_Shoot();
 	
-		// If you gotta change the pattern aim direction
-	    // pattern_direction += 0;
+		
+		if active_attack = 10 {
+			
+			bullet_type = obj_Basic_Bullet;
+			bullet_sprite = spr_Glowy_Hot_Pink_Shot;
+			bullet_part = 0;
+			bullet_speed -= bossbulletspeed * 0.35;
+		    bullet_power = bosspower * 1;
+			
+			if currentphase = 2 {
+				bullet_count = 2;
+				bullet_spread = 20;
+			}
+			
+			boss_radius = 0;
+			bullet_direction = scr_Boss_Bullet_Direction_Formula(_dir + 30, 20)
+		    boss_xoffset = lengthdir_x(50,image_angle);
+		    boss_yoffset = lengthdir_y(50,image_angle) + lengthdir_y(39,image_angle + 270);
+		    scr_Boss_Shoot();
+
+			bullet_direction = scr_Boss_Bullet_Direction_Formula(_dir - 30, 20)
+		    boss_xoffset = lengthdir_x(50,image_angle + 180);
+		    boss_yoffset = lengthdir_y(50,image_angle + 180) + lengthdir_y(39,image_angle + 270);
+		    scr_Boss_Shoot();
+		}
+	
 	}
 	
 	if active_attack = 3 || active_attack = 6 {
@@ -225,6 +249,7 @@ if active_attack_delay <= 0 and pattern_cooldown <= 0 and pattern_count > 0 {
 		bullet_count = 2;
 		bullet_spread = 40;
 		bullet_lifespan = 300;
+		
 		if active_attack = 6 {
 	        bullet_sprite = spr_Glowy_Green_Shot;
 		}
@@ -287,6 +312,47 @@ if active_attack_delay <= 0 and pattern_cooldown <= 0 and pattern_count > 0 {
 		}
 	}
 	
+	if active_attack = 11 {
+	    bullet_sprite = spr_Big_Glowy_Shot;
+	    bullet_speed = bossbulletspeed * 1.6;
+	    bullet_power = bosspower * 1.5;
+	    bullet_direction = (-10 + random(20)) / bossaccuracy;
+	    bullet_lifespan = 300;
+	    bullet_size = 1;
+	    bullet_count = 1;
+	    bullet_spread = 0;
+	    boss_radius = 0;
+	
+		bullet_part = 1;
+		bullet_part_sprite = spr_Soul_Big_Bit;
+		bullet_part_area = 45;
+		bullet_part_life = 30;
+		bullet_part_color1 = make_color_rgb(255,0,238);
+		bullet_part_color2 = make_color_rgb(255,0,238);
+		bullet_part_frequency = 4;
+		scr_Boss_Stretch("Horizontal",0.4);
+		
+		var _count = 8
+		if currentphase = 2 {
+			_count = 11;	
+		}
+		
+		var _dir = scr_Boss_Bullet_Direction_Formula(image_angle + 270, 20);
+		var _dirr = -45
+		
+		repeat(_count) {
+		
+			bullet_direction = _dir + _dirr
+			
+			bullet_speed = (bossbulletspeed * 3) / lengthdir_x(bossbulletspeed * 1, _dirr);
+			scr_Boss_Shoot();
+		 
+			_dirr += 90 / (_count - 1);
+		}
+		
+		scr_Sound_Effect(snd_Deep_Laser);
+	}
+	
 	
 	
 	// Maybe I should put this into a script
@@ -319,7 +385,7 @@ scr_Boss_Size_Lerp(0.15);
 		scr_Boss_Wobble("Horizontal", 2, 0.4, 0)	
 	}
 }  */
-if active_attack = 1 {
+if active_attack = 1 || active_attack = 10 {
 	var _hold_frame = 2;
 	scr_Boss_Attack_Sprite_v2(spr_wall_watcher_v2_cannon_shoot_jolly, _hold_frame, 3, 4, 20);
 	if image_index = _hold_frame {
@@ -346,7 +412,7 @@ if active_attack = 1 {
 	if image_index = _hold_frame {
 		scr_Boss_Wobble("Horizontal", 2, 0.4, 0)	
 	}
-} else if active_attack = 3 || active_attack = 6 || active_attack = 9 {
+} else if active_attack = 3 || active_attack = 6 || active_attack = 9 || active_attack = 11 {
 	var _hold_frame = 2;
 	scr_Boss_Attack_Sprite_v2(spr_wall_watcher_v2_eye_shoot, _hold_frame, 3, 3, 20);
 	if image_index = _hold_frame {
