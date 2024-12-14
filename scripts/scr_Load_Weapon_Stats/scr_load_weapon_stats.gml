@@ -5,7 +5,6 @@
 
 function scr_Load_Weapon_Stats(){
 	weapon_stats = scr_Import_Json("df_weapon_stats.json", json_parse);
-	//show_debug_message(string(weapon_stats));
 	
 	return weapon_stats;
 }

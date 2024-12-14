@@ -188,7 +188,7 @@ function scr_Boss_Choose(roomNum, exclude, difficultyAdd = 0) {
 
 	if bossform = 1.1  // Wall Watcher
 	{   
-	    bosstype = obj_Wall_Watcher;
+	    bosstype = obj_wall_watcher_v2;
 	    difficulty = 1;
 	    global.champ = choose(0,1,2,8);
 		//global.champ = choose(1,2,8);

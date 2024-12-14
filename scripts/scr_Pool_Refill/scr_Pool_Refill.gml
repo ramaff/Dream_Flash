@@ -86,7 +86,7 @@ function scr_Pool_Refill(pool){
 	}
 	if pool = global.q_item_pool {
 		letter = "Q"
-		totalitems = 4;
+		totalitems = 5;
 	}
 	if pool = global.r_item_pool {
 		letter = "R"
