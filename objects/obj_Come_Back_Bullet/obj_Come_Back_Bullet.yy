@@ -10,7 +10,7 @@
   "overriddenProperties": [],
   "parent": {
     "name": "Boomerang Bullets",
-    "path": "folders/Objects/Boss Bullets/Boomerang Bullets.yy",
+    "path": "folders/Objects/Boss Bullets/old bullets/Boomerang Bullets.yy",
   },
   "parentObjectId": {
     "name": "obj_Fasing_Bullet_Parent",

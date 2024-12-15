@@ -9,8 +9,8 @@
   "managed": true,
   "overriddenProperties": [],
   "parent": {
-    "name": "Basic Bullets",
-    "path": "folders/Objects/Boss Bullets/Basic Bullets.yy",
+    "name": "zBasic Bullets",
+    "path": "folders/Objects/Boss Bullets/old bullets/zBasic Bullets.yy",
   },
   "parentObjectId": {
     "name": "obj_Fasing_Bullet_Parent",

@@ -10,7 +10,7 @@
   "overriddenProperties": [],
   "parent": {
     "name": "Water Drops",
-    "path": "folders/Objects/Boss Bullets/Water Drops.yy",
+    "path": "folders/Objects/Boss Bullets/old bullets/Water Drops.yy",
   },
   "parentObjectId": {
     "name": "obj_Basic_Enemy_Bullet_Parent",

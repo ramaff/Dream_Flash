@@ -10,7 +10,7 @@
   "overriddenProperties": [],
   "parent": {
     "name": "Status Clouds",
-    "path": "folders/Objects/Boss Bullets/Status Clouds.yy",
+    "path": "folders/Objects/Boss Bullets/old bullets/Status Clouds.yy",
   },
   "parentObjectId": {
     "name": "obj_Basic_Enemy_Bullet_Parent",

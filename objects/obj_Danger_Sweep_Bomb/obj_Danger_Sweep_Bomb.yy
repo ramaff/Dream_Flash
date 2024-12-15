@@ -11,8 +11,8 @@
   "managed": true,
   "overriddenProperties": [],
   "parent": {
-    "name": "Mines(Dormant into bullets)",
-    "path": "folders/Objects/Boss Bullets/Mines(Dormant into bullets).yy",
+    "name": "zbomb",
+    "path": "folders/Objects/Boss Bullets/old bullets/zbomb.yy",
   },
   "parentObjectId": {
     "name": "obj_Depth",

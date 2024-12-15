@@ -12,7 +12,7 @@
   "overriddenProperties": [],
   "parent": {
     "name": "Parents",
-    "path": "folders/Objects/Boss Bullets/Parents.yy",
+    "path": "folders/Objects/Boss Bullets/old bullets/Parents.yy",
   },
   "parentObjectId": {
     "name": "obj_Soul_Hurt",

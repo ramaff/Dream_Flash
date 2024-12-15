@@ -2,7 +2,7 @@
   "resourceType": "GMSprite",
   "resourceVersion": "1.0",
   "name": "spr_deep_watcher_v2_drill_shoot",
-  "bbox_bottom": 449,
+  "bbox_bottom": 446,
   "bbox_left": 93,
   "bbox_right": 678,
   "bbox_top": 53,

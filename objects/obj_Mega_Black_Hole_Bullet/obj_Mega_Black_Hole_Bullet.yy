@@ -12,7 +12,7 @@
   "overriddenProperties": [],
   "parent": {
     "name": "Black Hole",
-    "path": "folders/Objects/Boss Bullets/Black Hole.yy",
+    "path": "folders/Objects/Boss Bullets/old bullets/Black Hole.yy",
   },
   "parentObjectId": {
     "name": "obj_Phase_All_Bullet",

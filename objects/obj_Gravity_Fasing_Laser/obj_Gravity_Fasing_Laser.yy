@@ -9,7 +9,7 @@
   "overriddenProperties": [],
   "parent": {
     "name": "Gravity Bullets",
-    "path": "folders/Objects/Boss Bullets/Gravity Bullets.yy",
+    "path": "folders/Objects/Boss Bullets/old bullets/Gravity Bullets.yy",
   },
   "parentObjectId": {
     "name": "obj_Fasing_Bullet_Parent",

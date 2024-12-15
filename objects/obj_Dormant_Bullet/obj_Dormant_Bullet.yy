@@ -9,7 +9,7 @@
   "overriddenProperties": [],
   "parent": {
     "name": "Dormant Bullet",
-    "path": "folders/Objects/Boss Bullets/Dormant Bullet.yy",
+    "path": "folders/Objects/Boss Bullets/old bullets/Dormant Bullet.yy",
   },
   "parentObjectId": {
     "name": "obj_Basic_Enemy_Bullet_Parent",

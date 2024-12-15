@@ -11,7 +11,7 @@
   "overriddenProperties": [],
   "parent": {
     "name": "Dormant Then Bullet",
-    "path": "folders/Objects/Boss Bullets/Dormant Then Bullet.yy",
+    "path": "folders/Objects/Boss Bullets/old bullets/Dormant Then Bullet.yy",
   },
   "parentObjectId": {
     "name": "obj_Depth",

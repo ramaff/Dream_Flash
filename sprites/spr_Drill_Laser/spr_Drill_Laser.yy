@@ -57,7 +57,7 @@
             {"resourceType":"Keyframe<SpriteFrameKeyframe>","resourceVersion":"1.0","Channels":{"0":{"resourceType":"SpriteFrameKeyframe","resourceVersion":"1.0","Id":{"name":"0361091c-e989-4c15-af60-2f28420ed8ad","path":"sprites/spr_Drill_Laser/spr_Drill_Laser.yy",},},},"Disabled":false,"id":"aeb01adc-e31c-4191-997e-7bef2831e728","IsCreationKey":false,"Key":0.0,"Length":1.0,"Stretch":false,},
           ],},"modifiers":[],"spriteId":null,"trackColour":0,"tracks":[],"traits":0,},
     ],
-    "visibleRange": {"x":0.0,"y":0.0,},
+    "visibleRange": null,
     "volume": 1.0,
     "xorigin": 48,
     "yorigin": 41,

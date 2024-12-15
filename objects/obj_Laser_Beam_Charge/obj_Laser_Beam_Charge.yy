@@ -11,7 +11,7 @@
   "overriddenProperties": [],
   "parent": {
     "name": "Laser Beams",
-    "path": "folders/Objects/Boss Bullets/Laser Beams.yy",
+    "path": "folders/Objects/Boss Bullets/old bullets/Laser Beams.yy",
   },
   "parentObjectId": null,
   "persistent": false,

@@ -12,8 +12,8 @@
   "managed": true,
   "overriddenProperties": [],
   "parent": {
-    "name": "Mines(Dormant into bullets)",
-    "path": "folders/Objects/Boss Bullets/Mines(Dormant into bullets).yy",
+    "name": "old bullets",
+    "path": "folders/Objects/Boss Bullets/old bullets.yy",
   },
   "parentObjectId": {
     "name": "obj_Bounce_Bullet",

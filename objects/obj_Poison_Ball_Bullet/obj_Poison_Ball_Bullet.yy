@@ -9,7 +9,7 @@
   "overriddenProperties": [],
   "parent": {
     "name": "Stationary Spawning Bullets",
-    "path": "folders/Objects/Boss Bullets/Stationary Spawning Bullets.yy",
+    "path": "folders/Objects/Boss Bullets/old bullets/Stationary Spawning Bullets.yy",
   },
   "parentObjectId": {
     "name": "obj_Lob_Bullet",

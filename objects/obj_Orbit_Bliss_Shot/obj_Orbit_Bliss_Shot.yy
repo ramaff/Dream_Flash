@@ -13,7 +13,7 @@
   "overriddenProperties": [],
   "parent": {
     "name": "Orbit Bulles",
-    "path": "folders/Objects/Boss Bullets/Orbit Bulles.yy",
+    "path": "folders/Objects/Boss Bullets/old bullets/Orbit Bulles.yy",
   },
   "parentObjectId": {
     "name": "obj_Depth",
