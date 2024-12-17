@@ -4,9 +4,7 @@
   "name": "obj_deep_exploding_bullet",
   "eventList": [
     {"resourceType":"GMEvent","resourceVersion":"1.0","name":"","collisionObjectId":null,"eventNum":0,"eventType":0,"isDnD":false,},
-    {"resourceType":"GMEvent","resourceVersion":"1.0","name":"","collisionObjectId":null,"eventNum":0,"eventType":2,"isDnD":false,},
     {"resourceType":"GMEvent","resourceVersion":"1.0","name":"","collisionObjectId":null,"eventNum":0,"eventType":3,"isDnD":false,},
-    {"resourceType":"GMEvent","resourceVersion":"1.0","name":"","collisionObjectId":{"name":"obj_The_Border","path":"objects/obj_The_Border/obj_The_Border.yy",},"eventNum":0,"eventType":4,"isDnD":false,},
     {"resourceType":"GMEvent","resourceVersion":"1.0","name":"","collisionObjectId":null,"eventNum":0,"eventType":1,"isDnD":false,},
   ],
   "managed": true,
@@ -16,8 +14,8 @@
     "path": "folders/Objects/Boss Bullets.yy",
   },
   "parentObjectId": {
-    "name": "obj_Basic_Bullet",
-    "path": "objects/obj_Basic_Bullet/obj_Basic_Bullet.yy",
+    "name": "obj_bullet_parent_v2",
+    "path": "objects/obj_bullet_parent_v2/obj_bullet_parent_v2.yy",
   },
   "persistent": false,
   "physicsAngularDamping": 0.1,

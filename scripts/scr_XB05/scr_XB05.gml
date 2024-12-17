@@ -8,13 +8,12 @@ function scr_XB05_v2(_attack_stats) {
 	
 	var _og_count = _attack_stats.bullet_count
 	
-	if _attack_stats.boss_bullet_count_modded = false and global.XB[5] >= 1 and scr_Chance(8 / (1 + global.XB[5])) {
+	if global.XB[5] >= 1 and scr_Chance(8 / (1 + global.XB[5])) {
 		_attack_stats.bullet_count = floor(_attack_stats.bullet_count * (1.2 + random(0.9)));
 		_attack_stats.bullet_spread = ((_attack_stats.bullet_spread / _attack_stats.bullet_count) * _og_count);
 		if _attack_stats.bullet_spread = 0 {
 			_attack_stats.bullet_spread += 15 * (_attack_stats.bullet_count - _og_count);
 		}
-		_attack_stats.boss_bullet_count_modded = true;
 	}
 }
 

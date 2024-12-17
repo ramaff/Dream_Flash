@@ -2,9 +2,7 @@
   "resourceType": "GMObject",
   "resourceVersion": "1.0",
   "name": "obj_basic_bullet_v2",
-  "eventList": [
-    {"resourceType":"GMEvent","resourceVersion":"1.0","name":"","collisionObjectId":null,"eventNum":0,"eventType":3,"isDnD":false,},
-  ],
+  "eventList": [],
   "managed": true,
   "overriddenProperties": [],
   "parent": {
@@ -12,8 +10,8 @@
     "path": "folders/Objects/Boss Bullets.yy",
   },
   "parentObjectId": {
-    "name": "obj_Basic_Enemy_Bullet_Parent",
-    "path": "objects/obj_Basic_Enemy_Bullet_Parent/obj_Basic_Enemy_Bullet_Parent.yy",
+    "name": "obj_bullet_parent_v2",
+    "path": "objects/obj_bullet_parent_v2/obj_bullet_parent_v2.yy",
   },
   "persistent": false,
   "physicsAngularDamping": 0.1,

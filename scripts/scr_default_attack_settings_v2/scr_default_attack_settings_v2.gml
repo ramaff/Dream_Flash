@@ -10,7 +10,7 @@ function scr_default_attack_settings_v2() {
 		    bullet_speed: bossbulletspeed * 1.5,
 		    bullet_power: bosspower,
 		    bullet_direction: (-10 + random(20)) / bossaccuracy,
-		    bullet_lifespan: 180,
+		    bullet_life_span: 180,
 			bullet_lob_time: 40,
 		    bullet_size: 1,
 			bullet_size_max: 1,

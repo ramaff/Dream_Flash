@@ -74,9 +74,8 @@ if active_attack_delay <= 0 and pattern_cooldown <= 0 and pattern_count > 0 {
     if active_attack = 1  {
 		
 		attack_stats.bullet_speed = bossbulletspeed * 1.5;
-	
-		attack_stats.bullet_type = "obj_Basic_Laser_Bullet";
 		attack_stats.bullet_sprite = "spr_Drill_Laser";
+		attack_stats.bullet_direction_angle = 1
 	
 		scr_Sound_Effect(snd_Boss_Laser);
 		if active_attack = 1 {
@@ -97,6 +96,7 @@ if active_attack_delay <= 0 and pattern_cooldown <= 0 and pattern_count > 0 {
 	}
 	
 	if active_attack = 2 {
+	    attack_stats.bullet_type = "obj_deep_exploding_bullet"
 	    attack_stats.bullet_sprite = "spr_Big_Glowy_Yellow_Shot"
 	    attack_stats.bullet_speed = bossbulletspeed * 1.6;
 	    attack_stats.bullet_power = bosspower * 1.5;
@@ -119,7 +119,6 @@ if active_attack_delay <= 0 and pattern_cooldown <= 0 and pattern_count > 0 {
 		
 	    scr_boss_shoot_v2();
 		scr_Sound_Effect(snd_Deep_Laser);
-		
 
 	}
 	

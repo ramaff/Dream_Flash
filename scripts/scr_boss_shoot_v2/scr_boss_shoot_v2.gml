@@ -1,5 +1,5 @@
 function scr_boss_shoot_v2(_attack_stats = attack_stats, _absolute_pos = false) {
-	scr_Spirit_Boss_BullFX_Pre();
+	scr_spirit_boss_bull_fx_pre_v2(_attack_stats);
 	
 	var _dir = -(_attack_stats.bullet_spread * (_attack_stats.bullet_count - 1) / 2);
 	var _xx = x + _attack_stats.boss_xoffset;
@@ -23,10 +23,11 @@ function scr_boss_shoot_v2(_attack_stats = attack_stats, _absolute_pos = false) 
 				bulletgrowinto = other.bullet_type;
 			} */
 			direction = bullet_stats.bullet_direction + _dir;
+			if bullet_stats.bullet_direction_angle = 1 {
+				image_angle = direction;
+			}
 	    }
 	    _dir += _attack_stats.bullet_spread;
 	}
-
-
 
 }
