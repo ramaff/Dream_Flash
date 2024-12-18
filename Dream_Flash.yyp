@@ -3657,6 +3657,7 @@
     {"id":{"name":"spr_Dream_Crawler_Part","path":"sprites/spr_Dream_Crawler_Part/spr_Dream_Crawler_Part.yy",},},
     {"id":{"name":"obj_Beast_Bomb","path":"objects/obj_Beast_Bomb/obj_Beast_Bomb.yy",},},
     {"id":{"name":"scr_Heart_Pickup_Slot","path":"scripts/scr_Heart_Pickup_Slot/scr_Heart_Pickup_Slot.yy",},},
+    {"id":{"name":"obj_drill_trail_bullet","path":"objects/obj_drill_trail_bullet/obj_drill_trail_bullet.yy",},},
     {"id":{"name":"spr_Barrier_Demon_Fist","path":"sprites/spr_Barrier_Demon_Fist/spr_Barrier_Demon_Fist.yy",},},
     {"id":{"name":"scr_One_Heart_Drop","path":"scripts/scr_One_Heart_Drop/scr_One_Heart_Drop.yy",},},
     {"id":{"name":"spr_Paper_Airplane","path":"sprites/spr_Paper_Airplane/spr_Paper_Airplane.yy",},},

@@ -4,7 +4,7 @@ function scr_bullet_shoot_properties_v2(_bullet_stats = bullet_stats) {
 	        
 	image_blend = _bullet_stats.bullet_blend
 	sprite_index = asset_get_index(_bullet_stats.bullet_sprite);
-	_bullet_stats.bullet_size = _bullet_stats.bullet_size * 0.5;
+	_bullet_stats.bullet_size = _bullet_stats.bullet_size;
 	_bullet_stats.bullet_size_max = _bullet_stats.bullet_size;
 	image_xscale = _bullet_stats.bullet_size;
 	image_yscale = _bullet_stats.bullet_size;

@@ -44,7 +44,7 @@ if active_attack_delay <= 0 and active_attack_cooldown <= 0 and active_attack_du
 	
     if active_attack = 1 {
 		// Setup how many attacks per boss move, delay, etc
-		scr_Boss_Attack_Time_Setup_v2(12, 50, 20, 120, 30, 10);
+		scr_Boss_Attack_Time_Setup_v2(12, 50, 30, 120, 30, 10);
     }
 	if active_attack = 2 {
 		// Setup how many attacks per boss move, delay, etc
@@ -75,6 +75,7 @@ if active_attack_delay <= 0 and pattern_cooldown <= 0 and pattern_count > 0 {
 		
 		attack_stats.bullet_speed = bossbulletspeed * 1.5;
 		attack_stats.bullet_sprite = "spr_Drill_Laser";
+		attack_stats.bullet_type = "obj_drill_trail_bullet";
 		attack_stats.bullet_direction_angle = 1
 	
 		scr_Sound_Effect(snd_Boss_Laser);
