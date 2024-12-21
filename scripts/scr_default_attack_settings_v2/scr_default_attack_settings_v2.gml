@@ -34,6 +34,7 @@ function scr_base_bullet_stats() {
 		
 		bullet_type: "obj_basic_bullet_v2",
 		bullet_sprite: "spr_Glowy_Enemy_Shot",
+		bullet_origin: id,
 		bullet_speed: bossbulletspeed * 1.5,
 		bullet_power: bosspower,
 		bullet_direction: (-10 + random(20)) / bossaccuracy,

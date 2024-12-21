@@ -40,7 +40,7 @@ if active_attack_delay <= 0 and active_attack_cooldown <= 0 and active_attack_du
 	if currentphase = 2 {
 		active_attack = choose(3, 4);
 	}
-	//active_attack = 9;
+	active_attack = 2;
 	
     if active_attack = 1 {
 		// Setup how many attacks per boss move, delay, etc
@@ -85,7 +85,10 @@ if active_attack_delay <= 0 and pattern_cooldown <= 0 and pattern_count > 0 {
 		
 		var _dir = image_angle + 180 + 90;
 		
-		attack_stats.bullet_direction = scr_Boss_Bullet_Direction_Formula(_dir, 20)
+		attack_stats.bullet_direction = scr_Boss_Bullet_Direction_Formula(_dir, 20) - 30;
+		
+		attack_stats.bullet_direction += (pattern_count mod 3) * 30
+		
 	    attack_stats.boss_xoffset = lengthdir_x(100,image_angle);
 	    attack_stats.boss_yoffset = lengthdir_y(100,image_angle) + lengthdir_y(85, image_angle + 270);
 	    scr_boss_shoot_v2();
@@ -98,12 +101,12 @@ if active_attack_delay <= 0 and pattern_cooldown <= 0 and pattern_count > 0 {
 	
 	if active_attack = 2 {
 	    attack_stats.bullet_type = "obj_deep_exploding_bullet"
-	    attack_stats.bullet_sprite = "spr_Big_Glowy_Yellow_Shot"
+	    attack_stats.bullet_sprite = "spr_Exploding_Shot"
 	    attack_stats.bullet_speed = bossbulletspeed * 1.6;
 	    attack_stats.bullet_power = bosspower * 1.5;
 	    attack_stats.bullet_direction = (-10 + random(20)) / bossaccuracy;
 	    attack_stats.bullet_lifespan = 300;
-	    attack_stats.bullet_size = 1;
+	    attack_stats.bullet_size = 0.55;
 	    attack_stats.bullet_count = 1;
 	    attack_stats.bullet_spread = 0;
 	

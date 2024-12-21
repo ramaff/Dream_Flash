@@ -1,1 +1,1 @@
-alarm[0] = 90 + irandom(30);
+alarm[1] = 60 + random(45);

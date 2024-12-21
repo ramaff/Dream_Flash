@@ -13,7 +13,8 @@ function scr_Room_Effect_Step(){
 		fx_glow_params.g_GlowRadius = 6;
 	}
 	fx_glow_params.g_GlowQuality = 3;
-	fx_glow_params.g_GlowIntensity = 0.075 * global.gameBloomShader;
+	//fx_glow_params.g_GlowIntensity = 0.075 * global.gameBloomShader;
+	fx_glow_params.g_GlowIntensity = 0.1 * global.gameBloomShader;
 	fx_glow_params.g_GlowGamma = 2;
 	fx_glow_params.g_GlowAlpha = 1;
 
