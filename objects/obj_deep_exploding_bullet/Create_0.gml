@@ -1,1 +1,3 @@
-alarm[1] = 60 + random(45);
+alarm[1] = 90 + random(30);
+
+bulls = 8;

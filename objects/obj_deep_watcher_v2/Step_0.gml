@@ -48,7 +48,7 @@ if active_attack_delay <= 0 and active_attack_cooldown <= 0 and active_attack_du
     }
 	if active_attack = 2 {
 		// Setup how many attacks per boss move, delay, etc
-		scr_Boss_Attack_Time_Setup_v2(12, 50, 30, 120, 30, 10);
+		scr_Boss_Attack_Time_Setup_v2(3, 50, 120, 120, 30, 10);
     }
 	// Hop leap attack setup example
 	if active_attack = 3  {
@@ -102,11 +102,10 @@ if active_attack_delay <= 0 and pattern_cooldown <= 0 and pattern_count > 0 {
 	if active_attack = 2 {
 	    attack_stats.bullet_type = "obj_deep_exploding_bullet"
 	    attack_stats.bullet_sprite = "spr_Exploding_Shot"
-	    attack_stats.bullet_speed = bossbulletspeed * 1.6;
+	    attack_stats.bullet_speed = bossbulletspeed * 0.85;
 	    attack_stats.bullet_power = bosspower * 1.5;
 	    attack_stats.bullet_direction = (-10 + random(20)) / bossaccuracy;
-	    attack_stats.bullet_lifespan = 300;
-	    attack_stats.bullet_size = 0.55;
+	    attack_stats.bullet_size = 0.6;
 	    attack_stats.bullet_count = 1;
 	    attack_stats.bullet_spread = 0;
 	
@@ -114,8 +113,8 @@ if active_attack_delay <= 0 and pattern_cooldown <= 0 and pattern_count > 0 {
 		attack_stats.bullet_part_sprite = "spr_Soul_Big_Bit";
 		attack_stats.bullet_part_area = 45;
 		attack_stats.bullet_part_life = 30;
-		attack_stats.bullet_part_color1 = make_color_rgb(255,0,238);
-		attack_stats.bullet_part_color2 = make_color_rgb(255,0,238);
+		attack_stats.bullet_part_color1 = make_color_rgb(255,170,0);
+		attack_stats.bullet_part_color2 = make_color_rgb(255,170,0);
 		attack_stats.bullet_part_frequency = 4;
 		scr_Boss_Stretch("Horizontal",0.4);
 		
