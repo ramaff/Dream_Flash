@@ -59,7 +59,7 @@ function scr_base_bullet_stats(_boss_bullet_speed, _bullet_power, _bullet_accura
 		bullet_crowd_direction: 0,
 		bullet_crowd_speed: 0,
 		bullet_crowd_acceleration: 0,
-		bullet_bounce_Y: 0,
+		bullet_bounce_height: 0,
 		bullet_bounce_speed: 4,
 		bullet_bounce_direction: 1,
 		bullet_bounce_gravity: 0,

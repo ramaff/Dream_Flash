@@ -17,7 +17,8 @@ function scr_bullet_shoot_properties_v2(_bullet_stats = bullet_stats) {
 	scr_E08_v2(_bullet_stats);
 	
 	if _bullet_stats.bullet_bounce_gravity = 0 {
-		_bullet_stats.bullet_bounce_gravity = 2 * _bullet_stats.bullet_bounce_speed / _bullet_stats.bullet_lob_time;
+		//_bullet_stats.bullet_bounce_gravity = 2 * _bullet_stats.bullet_bounce_speed / _bullet_stats.bullet_lob_time;
+		_bullet_stats.bullet_bounce_gravity = 2 * (( _bullet_stats.bullet_bounce_speed / _bullet_stats.bullet_lob_time) + (_bullet_stats.bullet_bounce_height / (_bullet_stats.bullet_lob_time * _bullet_stats.bullet_lob_time)));
 	}
 			
 	image_speed = _bullet_stats.bullet_image_speed;

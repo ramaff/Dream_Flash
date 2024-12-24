@@ -28,11 +28,11 @@ ds_grid_sort(dgrid, 1, true);
 
 //gpu_set_blendmode(bm_normal);
 
-with(obj_Soul_Hurt) {
+/*with(obj_Soul_Hurt) {
 	if depth > 0 {
 		event_perform(ev_draw,0)
 	}
-}
+} */
 
 with(obj_Particle_Parent) {
 	event_perform(ev_draw,0)
@@ -69,4 +69,9 @@ with(obj_Soul_Hurt) {
 	if depth <= 0 {
 		event_perform(ev_draw,0)
 	}
+}
+with(obj_soul_hurt_v2) {
+	//if depth <= 0 {
+		event_perform(ev_draw,0)
+	//}
 }

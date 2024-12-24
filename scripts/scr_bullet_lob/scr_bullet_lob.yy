@@ -1,7 +1,7 @@
 {
   "resourceType": "GMScript",
   "resourceVersion": "1.0",
-  "name": "scr_Bullet_Dampen",
+  "name": "scr_bullet_lob",
   "isCompatibility": false,
   "isDnD": false,
   "parent": {
