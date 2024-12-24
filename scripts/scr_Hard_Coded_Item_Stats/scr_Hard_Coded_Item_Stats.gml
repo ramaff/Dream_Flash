@@ -312,9 +312,7 @@ function scr_Hard_Coded_Item_Stats(itemVal, items_to_add = 1, reload = false) {
 	    //global.E[3]++;
 	}
 	if itemVal = "E04" {
-	    global.teleportenergyconservationfactor += 0.2;
-	    obj_Soul_Parent.tenergyconservationfactor += 0.2;
-		global.teleportboost += 0.3;
+		global.teleportboost += 0.4;
 	    //global.E[4]++;
 	}
 	if itemVal = "E05" {
@@ -727,31 +725,7 @@ function scr_Hard_Coded_Item_Stats(itemVal, items_to_add = 1, reload = false) {
 	}
 	
 	if itemVal = "N01" {
-	    //global.N[1] += 1;
-		global.extraitems += 0.5;
-	}
-	if itemVal = "N02" {
-	    //global.N[2] += 1;
-	}
-	if itemVal = "N03" {
-		//weapon = 1;
-	    //global.N[3] += 1;
-		/*
-		itemindex = 701;
-		global.weaponTaken = itemID;
-		global.orbit[itemOrbit] += 1;
-		with(obj_Item_Parent) {
-			if global.orbit[itemOrbit] >= 1 and itemID != global.weaponTaken {
-				Floor_Layout_Control.Flash[global.currentroom,itemData] = 0;
-				instance_destroy();	
-			}
-		}
-		global.orbit[itemOrbit] -= 1;
-	    scr_Weapon_Pickup(); */
-	}
-	if itemVal = "N04" {
-	    //global.N[4] += 1;
-		//global.mechprogress += 0.5;
+		global.extraitems += 1;
 	}
 	if itemVal = "N06" {
 	    if !reload {
@@ -759,119 +733,10 @@ function scr_Hard_Coded_Item_Stats(itemVal, items_to_add = 1, reload = false) {
 		}
 	}
 
-	if itemVal = "M01" {
-	    //global.M[1] += 1;
-		//global.mechprogress += 0.5;
-	}
-	if itemVal = "M02" {
-	    //global.M[2] += 1;
-		//global.mechprogress += 0.5;
-	}
-	if itemVal = "M03" {
-	    //global.M[3] += 1;
-		//global.mechprogress += 0.5;
-	}
-	if itemVal = "M04" {
-	    //global.M[4] += 1;
-		//global.mechprogress += 0.5;
-	}
-	if itemVal = "M05" {
-	    //global.M[5] += 1;
-		//global.mechprogress += 0.5;
-	}
-	if itemVal = "M06" {
-	    //global.M[6] += 1;
-		//global.mechprogress += 0.5;
-	}
-	if itemVal = "M07" {
-	    //global.M[7] += 1;
-		//global.mechprogress += 0.5;
-	}
-	if itemVal = "M08" {
-	    //global.M[8] += 1;
-		//global.mechprogress += 0.5;
-	}
-	if itemVal = "M09" {
-	    //global.M[9] += 1;
-		//global.spikeprogress++;
-	}
-	if itemVal = "M10" {
-	    //global.M[10] += 1;
-		//global.mechprogress += 0.5;
-	}
-	if itemVal = "M11" {
-	    //global.M[11] += 1;
-		//global.mechprogress += 0.5;
-	}
-	if itemVal = "M12" {
-	    //global.M[12] += 1;
-		//global.beastprogress += 0.5;
-	}
-	if itemVal = "M13" {
-	    //global.M[13] += 1;
-		//global.mechprogress += 0.5;
-		//global.castingprogress++;
-	}
-	if itemVal = "M14" {
-	    //global.M[14] += 1;
-		//global.mechprogress += 0.5;
-	}
-	if itemVal = "M15" {
-	    //global.M[15] += 1;
-		//global.snakeprogress += 0.5;
-	}
-	if itemVal = "M16" {
-	    //global.M[16] += 1;
-		//global.mechprogress += 1;
-	}
-	if itemVal = "M17" {
-	    //global.M[17] += 1;
-		//global.bleedingprogress++;
-		//global.mechprogress += 0.5;
-	}
-	if itemVal = "M18" {
-	    //global.M[18] += 1;
-		//global.beastprogress += 0.5;
-	}
-	if itemVal = "M19" {
-	    //global.M[19] += 1;
-		
-		//global.castingprogress++;
-	}
-	if itemVal = "M20" {
-	    //global.M[20] += 1;
-		//global.mechprogress += 0.5;
-	}
-	if itemVal = "M21" {
-	    //global.M[21] += 1;
-		//global.mechprogress += 0.5;
-	}
-	if itemVal = "M22" {
-	    //global.M[22] += 1;
-		//global.mechprogress += 0.5;
-	}
-	if itemVal = "M23" {
-	    //global.M[23] += 1;
-		//global.scrubprogress += 0.5;
-	}
-	if itemVal = "M24" {
-	    //global.M[24] += 1;
-		//global.scrubprogress += 0.5;
-	}
 	
 	if itemVal = "OA01" {
-	    //global.OA[1]++;
 		global.extraitems += 0.5;
 		global.extrarecalls += 1;
-	}
-	if itemVal = "OA02" {
-	    //global.OA[2]++;
-	}
-	if itemVal = "OA03" {
-	    //global.OA[3]++;
-	}
-	if itemVal = "OA04" {
-	    //global.OA[4]++;
 	}
 	if itemVal = "OA05" {
 		if !reload {
@@ -1129,6 +994,11 @@ function scr_Hard_Coded_Item_Stats(itemVal, items_to_add = 1, reload = false) {
 	}
 	if itemVal = "V08" {
 	    //global.V[8]++;
+	}
+	if itemVal = "V09" {
+		if !reload {
+		    global.soulloathing += 4;
+		}
 	}
 
 

@@ -5,6 +5,7 @@ recollectionMirror = 0;
 recollectionExtraStats = 0;
 shop = 0;
 leave = 0;
+stacks = 1;
 
 if global.cloudalpha < 0 {
 	global.cloudalpha = 0;	

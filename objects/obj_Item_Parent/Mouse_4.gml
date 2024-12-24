@@ -15,7 +15,7 @@ if itemData <= 13 {
 }
 */
 
-scr_Item_Click();
+scr_Item_Click(stacks);
 
 /* */
 /*  */

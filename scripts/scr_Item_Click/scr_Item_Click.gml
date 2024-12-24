@@ -1,5 +1,5 @@
 
-function scr_Item_Click(linger = false){
+function scr_Item_Click(_stacks = 1, _linger = false){
 	
 	var recollectionCount = 0;
 	
@@ -29,188 +29,193 @@ function scr_Item_Click(linger = false){
 		}
 		sDir += 45;
 	}
-
-	if weapon = 1 { 
+	
+	repeat(_stacks) {
 		
-		scr_State_Weapon_Progress(itemVal, 1);
+		if weapon = 1 { 
 		
-	    itemindex = itemVal;
-		global.weaponTaken = itemID;
-		global.orbit[itemOrbit] += 1;
-		with(obj_Item_Parent) {
-			if global.orbit[itemOrbit] >= 1 and itemID != global.weaponTaken {
-				global.floor[global.currentroom,itemData] = 0;
-				instance_destroy();	
+			scr_State_Weapon_Progress(itemVal, 1);
+		
+		    itemindex = itemVal;
+			global.weaponTaken = itemID;
+			global.orbit[itemOrbit] += 1;
+			with(obj_Item_Parent) {
+				if global.orbit[itemOrbit] >= 1 and itemID != global.weaponTaken {
+					global.floor[global.currentroom,itemData] = 0;
+					instance_destroy();	
+				}
 			}
-		}
-		global.orbit[itemOrbit] -= 1;
-	    scr_Weapon_Pickup();
+			global.orbit[itemOrbit] -= 1;
+		    scr_Weapon_Pickup();
 		
-		scr_Sound_Effect(snd_Pick_Up_Item_Good);
-	}
-
-	var recoGroup = string_letters(itemVal);
-	var itemNum = string_digits(itemVal);
-	if recoGroup = "A" {
-	    global.recollectionA[itemNum]++;
-		global.A[itemNum]++;
-		recollectionCount = global.recollectionA[string_digits(itemVal)];
-	}
-	if recoGroup = "B" {
-	    global.recollectionB[string_digits(itemVal)]++;
-		global.B[itemNum]++;
-		recollectionCount = global.recollectionB[string_digits(itemVal)];
-	}
-	if recoGroup = "C" {
-	    global.recollectionC[string_digits(itemVal)]++;
-		global.C[itemNum]++;
-		recollectionCount = global.recollectionC[string_digits(itemVal)];
-	}
-	if recoGroup = "D" {
-	    global.recollectionD[string_digits(itemVal)]++;
-		global.D[itemNum]++;
-		recollectionCount = global.recollectionD[string_digits(itemVal)];
-	}
-	if recoGroup = "E" {
-	    global.recollectionE[string_digits(itemVal)]++;
-		global.E[itemNum]++;
-		recollectionCount = global.recollectionE[string_digits(itemVal)];
-	}
-	if recoGroup = "F" {
-	    global.recollectionF[string_digits(itemVal)]++;
-		global.F[itemNum]++;
-		recollectionCount = global.recollectionF[string_digits(itemVal)];
-	}
-	if recoGroup = "G" {
-	    global.recollectionG[string_digits(itemVal)]++;
-		global.G[itemNum]++;
-		recollectionCount = global.recollectionG[string_digits(itemVal)];
-	}
-	if recoGroup = "H" {
-	    global.recollectionH[string_digits(itemVal)]++;
-		global.H[itemNum]++;
-		recollectionCount = global.recollectionH[string_digits(itemVal)];
-	}
-	if recoGroup = "I" {
-	    global.recollectionI[string_digits(itemVal)]++;
-		global.I[itemNum]++;
-		recollectionCount = global.recollectionI[string_digits(itemVal)];
-	}
-	if recoGroup = "J" {
-	    global.recollectionJ[string_digits(itemVal)]++;
-		global.J[itemNum]++;
-		recollectionCount = global.recollectionJ[string_digits(itemVal)];
-	}
-	if recoGroup = "K" {
-	    global.recollectionK[string_digits(itemVal)]++;
-		global.K[itemNum]++;
-		recollectionCount = global.recollectionK[string_digits(itemVal)];
-	}
-	if recoGroup = "L" {
-	    global.recollectionL[string_digits(itemVal)]++;
-		global.L[itemNum]++;
-		recollectionCount = global.recollectionL[string_digits(itemVal)];
-	}
-	if recoGroup = "M" {
-	    global.recollectionM[string_digits(itemVal)]++;
-		global.M[itemNum]++;
-		recollectionCount = global.recollectionM[string_digits(itemVal)];
-	}
-	if recoGroup = "N" {
-	    global.recollectionN[string_digits(itemVal)]++;
-		global.N[itemNum]++;
-		recollectionCount = global.recollectionN[string_digits(itemVal)];
-	}
-	if recoGroup = "P" {
-	    global.recollectionP[string_digits(itemVal)]++;
-		global.P[itemNum]++;
-		recollectionCount = global.recollectionP[string_digits(itemVal)];
-	}
-	if recoGroup = "OA" {
-	    global.recollectionOA[string_digits(itemVal)]++;
-		global.OA[itemNum]++;
-		recollectionCount = global.recollectionOA[string_digits(itemVal)];
-	}
-	if recoGroup = "OB" {
-	    global.recollectionOB[string_digits(itemVal)]++;
-		global.OB[itemNum]++;
-		recollectionCount = global.recollectionOB[string_digits(itemVal)];
-	}
-	if recoGroup = "OC" {
-	    global.recollectionOC[string_digits(itemVal)]++;
-		global.OC[itemNum]++;
-		recollectionCount = global.recollectionOC[string_digits(itemVal)];
-	}
-	if recoGroup = "R" {
-	    global.recollectionR[string_digits(itemVal)]++;
-		global.R[itemNum]++;
-		recollectionCount = global.recollectionR[string_digits(itemVal)];
-	}
-	if recoGroup = "Q" {
-	    global.recollectionQ[string_digits(itemVal)]++;
-		global.Q[itemNum]++;
-		recollectionCount = global.recollectionQ[string_digits(itemVal)];
-	}
-	if recoGroup = "S" {
-	    global.recollectionS[string_digits(itemVal)]++;
-		global.S[itemNum]++;
-		recollectionCount = global.recollectionS[string_digits(itemVal)];
-	}
-	if recoGroup = "T" {
-	    global.recollectionT[string_digits(itemVal)]++;
-		global.T[itemNum]++;
-		recollectionCount = global.recollectionT[string_digits(itemVal)];
-	}
-	if recoGroup = "U" {
-	    global.recollectionU[string_digits(itemVal)]++;
-		global.U[itemNum]++;
-		recollectionCount = global.recollectionU[string_digits(itemVal)];
-	}
-	if recoGroup = "V" {
-	    global.recollectionV[string_digits(itemVal)]++;
-		global.V[itemNum]++;
-		recollectionCount = global.recollectionV[string_digits(itemVal)];
-	}
-	if recoGroup = "W" {
-	    global.recollectionW[string_digits(itemVal)]++;
-		global.W[itemNum]++;
-		recollectionCount = global.recollectionW[string_digits(itemVal)];
-	}
-	if recoGroup = "XA" {
-	    global.recollectionXA[string_digits(itemVal)]++;
-		global.XA[itemNum]++;
-		recollectionCount = global.recollectionXA[string_digits(itemVal)];
-	}
-	if recoGroup = "XB" {
-	    global.recollectionXB[string_digits(itemVal)]++;
-		global.XB[itemNum]++;
-		recollectionCount = global.recollectionXB[string_digits(itemVal)];
-	}
-	if recoGroup = "XC" {
-	    global.recollectionXC[string_digits(itemVal)]++;
-		global.XC[itemNum]++;
-		recollectionCount = global.recollectionXC[string_digits(itemVal)];
-	}
-	
-	scr_Hard_Coded_Item_Stats(itemVal);
-	
-	if weapon = 0 {
-		scr_Item_State_Credit_Add(itemVal);
-		
-		if recoGroup = "I" || itemVal = "A00" || itemVal = "B00" || itemVal = "C00" || itemVal = "D00" || itemVal = "E00" || itemVal = "F00" { 
-			scr_Sound_Effect(snd_Pick_Up_Item_Neutral);
-			variable_struct_set(global.tutorial_progress, "stat_tutorial", 7)
-			variable_struct_set(global.tutorial_progress, "spiritual_stat_tutorial", 7)
-		} else if recoGroup = "XA" or recoGroup = "XB" or recoGroup = "XC" {
-			scr_Sound_Effect(snd_Pick_Up_Item_Bad);
-		} else {
 			scr_Sound_Effect(snd_Pick_Up_Item_Good);
-			if recoGroup = "A" || recoGroup = "B" || recoGroup = "C" || recoGroup = "D" || recoGroup = "E" || recoGroup = "F" {
-				scr_Tutorial_Note_Spawn("stat_level_up")	
-			}
 		}
-	} else {
-		recollectionCount = global.recollectionWeap[string_digits(itemVal)]	
+
+		var recoGroup = string_letters(itemVal);
+		var itemNum = string_digits(itemVal);
+	
+		if recoGroup = "A" {
+		    global.recollectionA[itemNum]++;
+			global.A[itemNum]++;
+			recollectionCount = global.recollectionA[string_digits(itemVal)];
+		}
+		if recoGroup = "B" {
+		    global.recollectionB[string_digits(itemVal)]++;
+			global.B[itemNum]++;
+			recollectionCount = global.recollectionB[string_digits(itemVal)];
+		}
+		if recoGroup = "C" {
+		    global.recollectionC[string_digits(itemVal)]++;
+			global.C[itemNum]++;
+			recollectionCount = global.recollectionC[string_digits(itemVal)];
+		}
+		if recoGroup = "D" {
+		    global.recollectionD[string_digits(itemVal)]++;
+			global.D[itemNum]++;
+			recollectionCount = global.recollectionD[string_digits(itemVal)];
+		}
+		if recoGroup = "E" {
+		    global.recollectionE[string_digits(itemVal)]++;
+			global.E[itemNum]++;
+			recollectionCount = global.recollectionE[string_digits(itemVal)];
+		}
+		if recoGroup = "F" {
+		    global.recollectionF[string_digits(itemVal)]++;
+			global.F[itemNum]++;
+			recollectionCount = global.recollectionF[string_digits(itemVal)];
+		}
+		if recoGroup = "G" {
+		    global.recollectionG[string_digits(itemVal)]++;
+			global.G[itemNum]++;
+			recollectionCount = global.recollectionG[string_digits(itemVal)];
+		}
+		if recoGroup = "H" {
+		    global.recollectionH[string_digits(itemVal)]++;
+			global.H[itemNum]++;
+			recollectionCount = global.recollectionH[string_digits(itemVal)];
+		}
+		if recoGroup = "I" {
+		    global.recollectionI[string_digits(itemVal)]++;
+			global.I[itemNum]++;
+			recollectionCount = global.recollectionI[string_digits(itemVal)];
+		}
+		if recoGroup = "J" {
+		    global.recollectionJ[string_digits(itemVal)]++;
+			global.J[itemNum]++;
+			recollectionCount = global.recollectionJ[string_digits(itemVal)];
+		}
+		if recoGroup = "K" {
+		    global.recollectionK[string_digits(itemVal)]++;
+			global.K[itemNum]++;
+			recollectionCount = global.recollectionK[string_digits(itemVal)];
+		}
+		if recoGroup = "L" {
+		    global.recollectionL[string_digits(itemVal)]++;
+			global.L[itemNum]++;
+			recollectionCount = global.recollectionL[string_digits(itemVal)];
+		}
+		if recoGroup = "M" {
+		    global.recollectionM[string_digits(itemVal)]++;
+			global.M[itemNum]++;
+			recollectionCount = global.recollectionM[string_digits(itemVal)];
+		}
+		if recoGroup = "N" {
+		    global.recollectionN[string_digits(itemVal)]++;
+			global.N[itemNum]++;
+			recollectionCount = global.recollectionN[string_digits(itemVal)];
+		}
+		if recoGroup = "P" {
+		    global.recollectionP[string_digits(itemVal)]++;
+			global.P[itemNum]++;
+			recollectionCount = global.recollectionP[string_digits(itemVal)];
+		}
+		if recoGroup = "OA" {
+		    global.recollectionOA[string_digits(itemVal)]++;
+			global.OA[itemNum]++;
+			recollectionCount = global.recollectionOA[string_digits(itemVal)];
+		}
+		if recoGroup = "OB" {
+		    global.recollectionOB[string_digits(itemVal)]++;
+			global.OB[itemNum]++;
+			recollectionCount = global.recollectionOB[string_digits(itemVal)];
+		}
+		if recoGroup = "OC" {
+		    global.recollectionOC[string_digits(itemVal)]++;
+			global.OC[itemNum]++;
+			recollectionCount = global.recollectionOC[string_digits(itemVal)];
+		}
+		if recoGroup = "R" {
+		    global.recollectionR[string_digits(itemVal)]++;
+			global.R[itemNum]++;
+			recollectionCount = global.recollectionR[string_digits(itemVal)];
+		}
+		if recoGroup = "Q" {
+		    global.recollectionQ[string_digits(itemVal)]++;
+			global.Q[itemNum]++;
+			recollectionCount = global.recollectionQ[string_digits(itemVal)];
+		}
+		if recoGroup = "S" {
+		    global.recollectionS[string_digits(itemVal)]++;
+			global.S[itemNum]++;
+			recollectionCount = global.recollectionS[string_digits(itemVal)];
+		}
+		if recoGroup = "T" {
+		    global.recollectionT[string_digits(itemVal)]++;
+			global.T[itemNum]++;
+			recollectionCount = global.recollectionT[string_digits(itemVal)];
+		}
+		if recoGroup = "U" {
+		    global.recollectionU[string_digits(itemVal)]++;
+			global.U[itemNum]++;
+			recollectionCount = global.recollectionU[string_digits(itemVal)];
+		}
+		if recoGroup = "V" {
+		    global.recollectionV[string_digits(itemVal)]++;
+			global.V[itemNum]++;
+			recollectionCount = global.recollectionV[string_digits(itemVal)];
+		}
+		if recoGroup = "W" {
+		    global.recollectionW[string_digits(itemVal)]++;
+			global.W[itemNum]++;
+			recollectionCount = global.recollectionW[string_digits(itemVal)];
+		}
+		if recoGroup = "XA" {
+		    global.recollectionXA[string_digits(itemVal)]++;
+			global.XA[itemNum]++;
+			recollectionCount = global.recollectionXA[string_digits(itemVal)];
+		}
+		if recoGroup = "XB" {
+		    global.recollectionXB[string_digits(itemVal)]++;
+			global.XB[itemNum]++;
+			recollectionCount = global.recollectionXB[string_digits(itemVal)];
+		}
+		if recoGroup = "XC" {
+		    global.recollectionXC[string_digits(itemVal)]++;
+			global.XC[itemNum]++;
+			recollectionCount = global.recollectionXC[string_digits(itemVal)];
+		}
+	
+		scr_Hard_Coded_Item_Stats(itemVal);
+	
+		if weapon = 0 {
+			scr_Item_State_Credit_Add(itemVal);
+		
+			if recoGroup = "I" || itemVal = "A00" || itemVal = "B00" || itemVal = "C00" || itemVal = "D00" || itemVal = "E00" || itemVal = "F00" { 
+				scr_Sound_Effect(snd_Pick_Up_Item_Neutral);
+				variable_struct_set(global.tutorial_progress, "stat_tutorial", 7)
+				variable_struct_set(global.tutorial_progress, "spiritual_stat_tutorial", 7)
+			} else if recoGroup = "XA" or recoGroup = "XB" or recoGroup = "XC" {
+				scr_Sound_Effect(snd_Pick_Up_Item_Bad);
+			} else {
+				scr_Sound_Effect(snd_Pick_Up_Item_Good);
+				if recoGroup = "A" || recoGroup = "B" || recoGroup = "C" || recoGroup = "D" || recoGroup = "E" || recoGroup = "F" {
+					scr_Tutorial_Note_Spawn("stat_level_up")	
+				}
+			}
+		} else {
+			recollectionCount = global.recollectionWeap[string_digits(itemVal)]	
+		}
+	
 	}
 	
 	scr_State_Form_Unlock();
@@ -225,7 +230,7 @@ function scr_Item_Click(linger = false){
 	
 	scr_Memory_Info_Bank();
 	
-	if linger = true || recollectionCount <= 1 {
+	if _linger = true || recollectionCount <= 1 {
 		scr_Item_Recollection_Cloud(120);
 	}
 	

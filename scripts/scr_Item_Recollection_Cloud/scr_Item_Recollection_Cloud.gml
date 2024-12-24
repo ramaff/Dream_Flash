@@ -19,6 +19,7 @@ function scr_Item_Recollection_Cloud(time = 1) {
 		recollectionUpgrade = other.recollectionUpgrade;
 		recollectionExtraStats = other.recollectionExtraStats;
 		shop = other.shop;
+		stacks = other.stacks;
 		
 		if global.cloudalpha < 0 {
 			global.cloudalpha = 0;	

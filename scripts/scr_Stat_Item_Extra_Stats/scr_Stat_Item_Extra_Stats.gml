@@ -1,6 +1,6 @@
 // Script assets have changed for v2.3.0 see
 // https://help.yoyogames.com/hc/en-us/articles/360005277377 for more information
-function scr_Stat_Item_Extra_Stats(){
+function scr_Stat_Item_Extra_Stats(_stacks = 1){
 
 	var rememberance = scr_Item_Memory_Count(itemVal)
 
@@ -128,6 +128,7 @@ function scr_Stat_Item_Extra_Stats(){
 						fieldSpawnChar = "!"	
 					}
 				}
+				valUp = valUp * _stacks
 				recollectionExtraStats += string(statUpString) + ": " + string(statStart) + "->" + string(statStart + valUp) + fieldSpawnChar + "\n";
 				//recollectionExtraStats += string(statUpString) + ": " + string(statStart) + " + " + string(valUp) + " = " + string(statStart + valUp) + "\n";
 				fieldSpawnChar = "";
@@ -183,9 +184,10 @@ function scr_Stat_Item_Extra_Stats(){
 		
 			}
 	
+			valUp = valUp * _stacks
 			recollectionExtraStats += string(statUpString) + ": " + string(statStart) + "->" + string(statStart + valUp) + fieldSpawnChar;
 			//recollectionExtraStats += string(statUpString) + ": " + string(statStart) + " + " + string(valUp) + " = " + string(statStart + valUp);
-		}
+			}
 	}
 
 }

@@ -5,7 +5,7 @@ draw_set_halign(fa_center);
 
 recollectionUpgradeString = "";
 
-repeat(recollectionUpgrade) {
+repeat(recollectionUpgrade + stacks - 1) {
     recollectionUpgradeString += "+";
 }
 

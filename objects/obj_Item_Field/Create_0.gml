@@ -11,6 +11,7 @@ fieldActive = 1;
 scr_N02();
 scr_OA03();
 scr_N03();
+scr_N07();
 
 image_xscale = 0.5;
 image_yscale = 0.5;

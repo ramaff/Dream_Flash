@@ -27,6 +27,8 @@ function scr_Soul_Shot_Boss_Hit() {
 				shot_stats.Shot_Excess_Essence = 0;
 			}
 			
+			scr_V09()
+			
 			if shot_stats.Shot_Chain > 0 {
 				
 				var max_streaks = 30;
