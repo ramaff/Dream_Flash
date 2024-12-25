@@ -18,7 +18,7 @@ function scr_Soul_Right_Click(teleport_charge = false) {
 		onsoul = 1;	
 	}
 
-	if inside = 1 and teleport_charge = true {
+	if /*inside = 1 and */teleport_charge = true {
 	    scr_Soul_Teleport();
 	}
 	if onsoul = 1 {

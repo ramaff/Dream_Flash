@@ -78,6 +78,14 @@ if active_attack_delay <= 0 and pattern_cooldown <= 0 and pattern_count > 0 {
 		attack_stats.bullet_sprite = "spr_Drill_Laser";
 		attack_stats.bullet_type = "obj_drill_trail_bullet";
 		attack_stats.bullet_direction_angle = 1
+		
+		attack_stats.bullet_part = 1;
+		attack_stats.bullet_part_sprite = "spr_Soul_Big_Bit";
+		attack_stats.bullet_part_area = 30;
+		attack_stats.bullet_part_life = 20;
+		attack_stats.bullet_part_color1 = make_color_rgb(122,0,255);
+		attack_stats.bullet_part_color2 = make_color_rgb(122,0,255);
+		attack_stats.bullet_part_frequency = 4;
 	
 		scr_Sound_Effect(snd_Boss_Laser);
 		if active_attack = 1 {
@@ -210,7 +218,7 @@ scr_Boss_Size_Lerp(0.15);
 
 if active_attack = 1 {
 	var _hold_frame = 1;
-	scr_Boss_Attack_Sprite_v2(spr_deep_watcher_v2_drill_shoot, _hold_frame, 2, 2, 20);
+	scr_Boss_Attack_Sprite_v2(spr_deep_watcher_v2_drill_shoot, _hold_frame, 2, 4, 20);
 	if image_index = _hold_frame {
 		scr_Boss_Wobble("Horizontal", 2, 0.4, 0)	
 	}

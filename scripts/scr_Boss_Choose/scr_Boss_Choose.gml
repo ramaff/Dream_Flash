@@ -197,8 +197,8 @@ function scr_Boss_Choose(roomNum, exclude, difficultyAdd = 0) {
 
 	if bossform = 2.1 // Mine Watcher 
 	{   
-	    bosstype = obj_Mine_Watcher;
-	    difficulty = 8;
+	    bosstype = obj_deep_watcher_v2
+	    difficulty = 7;
 	    global.champ = choose(0,1,2,3,8);
 		//global.champ = 0;
 	}
@@ -213,7 +213,7 @@ function scr_Boss_Choose(roomNum, exclude, difficultyAdd = 0) {
 	if bossform = 4.1 // Soaring Sorrows
 	{
 	    bosstype = obj_Soaring_Sorrows;
-	    difficulty = 10;
+	    difficulty = 11;
 	    global.champ = choose(0,1);
 		//global.champ = 1;
 	}
@@ -759,9 +759,9 @@ function scr_Boss_Choose(roomNum, exclude, difficultyAdd = 0) {
 	if i > roomNum {
 		for(j = 1; j < roomNum; j++) {
 			if bosstype = global.floor[j,21] {
-				if global.champ = global.floor[j,22] {
+				//if global.champ = global.floor[j,22] {
 					repeatBoss = 1;	
-				}
+				//}
 			}
 		}
 	}
