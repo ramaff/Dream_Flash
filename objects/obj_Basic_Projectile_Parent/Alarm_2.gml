@@ -36,10 +36,6 @@ if global.gameParticles > 0 {
 		}
 	
 	} 
-	
-	
-	
-	//scr_A07_Particles();
 
 	if shot_stats.Shot_Trail = 3 {
 	

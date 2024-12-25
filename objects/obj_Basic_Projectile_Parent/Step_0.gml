@@ -10,6 +10,7 @@ if shot_stats.Shot_Movement = 0 {
 }
 if global.gameParticles > 0 {
 	scr_State_Shot_Particles();
+	scr_P05_Particles();
 }
 
 if shot_stats.Shot_Ground = true {

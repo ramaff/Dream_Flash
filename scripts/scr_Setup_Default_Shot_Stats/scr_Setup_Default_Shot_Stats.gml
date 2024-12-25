@@ -213,6 +213,7 @@ function scr_Setup_Default_Shot_Stats(){
 		Shot_Burst_Power: 0,
 		Shot_Spike_Aura: false,
 		Shot_Instability: 0,
+		Shot_Perfect_Spark_Trail: false,
 	}
 	return _shot_stats
 

@@ -2,7 +2,7 @@ function scr_U07() {
 	// Location Soul Item Step Before Event
 	// Visual Code in Soul Draw Event
 
-	if global.U[07] > 0 {
+	if global.U[7] > 0 {
 	    var _instinct = 0;
 	    with(obj_Soul_Hurt) {
 	        if distance_to_object(other) <= 80 {

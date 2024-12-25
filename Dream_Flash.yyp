@@ -3198,6 +3198,7 @@
     {"id":{"name":"spr_Sophistication_Art","path":"sprites/spr_Sophistication_Art/spr_Sophistication_Art.yy",},},
     {"id":{"name":"spr_Mega_Map_Square","path":"sprites/spr_Mega_Map_Square/spr_Mega_Map_Square.yy",},},
     {"id":{"name":"spr_Cyan_Bubble_Bullet","path":"sprites/spr_Cyan_Bubble_Bullet/spr_Cyan_Bubble_Bullet.yy",},},
+    {"id":{"name":"scr_P05_Particles","path":"scripts/scr_P05_Particles/scr_P05_Particles.yy",},},
     {"id":{"name":"spr_Light_C","path":"sprites/spr_Light_C/spr_Light_C.yy",},},
     {"id":{"name":"spr_Horror_Minion","path":"sprites/spr_Horror_Minion/spr_Horror_Minion.yy",},},
     {"id":{"name":"scr_OA02","path":"scripts/scr_OA02/scr_OA02.yy",},},
