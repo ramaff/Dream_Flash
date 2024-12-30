@@ -3129,7 +3129,6 @@
     {"id":{"name":"spr_Relaxed_Art","path":"sprites/spr_Relaxed_Art/spr_Relaxed_Art.yy",},},
     {"id":{"name":"scr_Soul_Spawn","path":"scripts/scr_Soul_Spawn/scr_Soul_Spawn.yy",},},
     {"id":{"name":"spr_Downward_Spiral_Art","path":"sprites/spr_Downward_Spiral_Art/spr_Downward_Spiral_Art.yy",},},
-    {"id":{"name":"scr_Weapon_Part_Create","path":"scripts/scr_Weapon_Part_Create/scr_Weapon_Part_Create.yy",},},
     {"id":{"name":"obj_Fire_Part","path":"objects/obj_Fire_Part/obj_Fire_Part.yy",},},
     {"id":{"name":"spr_Bleeding_Soul_Reco_icon","path":"sprites/spr_Bleeding_Soul_Reco_icon/spr_Bleeding_Soul_Reco_icon.yy",},},
     {"id":{"name":"scr_Check_Shot_Ground","path":"scripts/scr_Check_Shot_Ground/scr_Check_Shot_Ground.yy",},},

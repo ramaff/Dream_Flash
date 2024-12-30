@@ -154,8 +154,6 @@ function scr_Shot_Creation(_cw = current_weapon_stats) {
 				//exit;	
 			}
 		}
-	
-		scr_Weapon_Part_Create();
 		
 		var mechFac = 1 + scr_Mechanical_Shot_Add(_cw);
 		var speedFac = 1;

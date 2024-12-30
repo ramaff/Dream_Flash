@@ -82,7 +82,7 @@ function scr_Weapon_Use_List(cWP = global.currentweapon, _weap_slot = 0) {
 			scr_Bleeding_Blade_Use(current_weapon_stats);
 		}
 		
-		current_weapon_stats = scr_Setup_Weapon_Stats(current_weapon_stats);
+		//current_weapon_stats = scr_Setup_Weapon_Stats(current_weapon_stats);
 		
 		barrage = false;
 		minion = false;

@@ -155,7 +155,7 @@ if active_attack_delay <= 0 and pattern_cooldown <= 0 and pattern_count > 0 {
 	if active_attack = 3 {
 	    attack_stats.bullet_type = "obj_basic_bullet_v2"
 	    attack_stats.bullet_sprite = "spr_Glowy_Red_Laser"
-	    attack_stats.bullet_speed = bossbulletspeed * (1.95 + random(0.1));
+	    attack_stats.bullet_speed = bossbulletspeed * (2.4 + random(0.25));
 		attack_stats.bullet_direction_angle = 1;
 	
 		scr_Boss_Stretch("Horizontal",0.4);
@@ -181,14 +181,14 @@ if active_attack_delay <= 0 and pattern_cooldown <= 0 and pattern_count > 0 {
 		scr_boss_shoot_v2();
 		scr_Sound_Effect(snd_Boss_Laser);
 		
-		attack_stats.bullet_speed = bossbulletspeed * (2 + random(3));
+		attack_stats.bullet_speed = bossbulletspeed * (1.5 + random(3));
 		attack_stats.bullet_type = "obj_falling_exploder_bullet";
 		attack_stats.bullet_sprite = "spr_Glowy_Explosive_Shot"
 		attack_stats.bullet_bounce_height = 60;
 		attack_stats.bullet_life_span = 120 + random(60);
 		attack_stats.bullet_bounce_speed = 1
 		attack_stats.bullet_lob_time = attack_stats.bullet_life_span
-		attack_stats.bullet_direction = scr_Boss_Bullet_Direction_Formula(image_angle + 270, 90)
+		attack_stats.bullet_direction = scr_Boss_Bullet_Direction_Formula(image_angle + 270, 120)
 		attack_stats.bullet_count = 1;
 			
 		scr_boss_shoot_v2();
