@@ -2,6 +2,7 @@
   "FolderOrderSettings": [
     {"name":"Ally Souls ","order":2,"path":"folders/Objects/Ally Souls .yy",},
     {"name":"Boss Bullets","order":3,"path":"folders/Objects/Boss Bullets.yy",},
+    {"name":"falling exploders","order":11,"path":"folders/Objects/Boss Bullets/falling exploders.yy",},
     {"name":"old bullets","order":1,"path":"folders/Objects/Boss Bullets/old bullets.yy",},
     {"name":"Air Strike Shots","order":18,"path":"folders/Objects/Boss Bullets/old bullets/Air Strike Shots.yy",},
     {"name":"Beam Bullets","order":21,"path":"folders/Objects/Boss Bullets/old bullets/Beam Bullets.yy",},
@@ -66,6 +67,7 @@
     {"name":"Visual Commands","order":2,"path":"folders/Scripts/Visual Commands.yy",},
     {"name":"Soul Shots","order":16,"path":"folders/Scripts/Weapon Commands/Soul Shots.yy",},
     {"name":"Alleged Real Sound Effects","order":1,"path":"folders/Sounds/Sound Effects/Alleged Real Sound Effects.yy",},
+    {"name":"Explosive Shots","order":3,"path":"folders/Sprites/Boss Bullet Sprites/Explosive Shots.yy",},
     {"name":"Explosive","order":1,"path":"folders/Sprites/Boss Bullet Sprites/Explosive.yy",},
     {"name":"Host Group","order":3,"path":"folders/Sprites/Boss Sprites/Dream Bosses/Host Group.yy",},
     {"name":"Wall Thoughts v2","order":2,"path":"folders/Sprites/Boss Sprites/Dream Bosses/Wall Thoughts v2.yy",},
@@ -106,8 +108,6 @@
     {"name":"State Reco Icons","order":30,"path":"folders/Sprites/Recollection/State Reco Icons.yy",},
     {"name":"Tutorial Stuff","order":31,"path":"folders/Sprites/Recollection/Tutorial Stuff.yy",},
     {"name":"beam_punches","order":38,"path":"folders/Sprites/Soul Shot Sprites/Imaginary Shots/beam_punches.yy",},
-    {"name":"Explosive Shots","order":3,"path":"folders/Sprites/Boss Bullet Sprites/Explosive Shots.yy",},
-    {"name":"falling exploders","order":11,"path":"folders/Objects/Boss Bullets/falling exploders.yy",},
   ],
   "ResourceOrderSettings": [
     {"name":"reco_Demonic_Villainy","order":66,"path":"sprites/reco_Demonic_Villainy/reco_Demonic_Villainy.yy",},
@@ -759,6 +759,7 @@
     {"name":"obj_Puck","order":12,"path":"objects/obj_Puck/obj_Puck.yy",},
     {"name":"obj_Locust","order":8,"path":"objects/obj_Locust/obj_Locust.yy",},
     {"name":"obj_Heart_Ache","order":6,"path":"objects/obj_Heart_Ache/obj_Heart_Ache.yy",},
+    {"name":"obj_wave_bullet_v2","order":13,"path":"objects/obj_wave_bullet_v2/obj_wave_bullet_v2.yy",},
     {"name":"obj_Crush","order":3,"path":"objects/obj_Crush/obj_Crush.yy",},
     {"name":"reco_Migraine","order":2,"path":"sprites/reco_Migraine/reco_Migraine.yy",},
     {"name":"obj_Tough_Luck","order":15,"path":"objects/obj_Tough_Luck/obj_Tough_Luck.yy",},

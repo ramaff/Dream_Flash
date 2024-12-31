@@ -15,6 +15,8 @@ if active_attack = 1 {
 	path_speed = bossmovespeed * 1.5;
 } else if active_attack = 2 {
 	path_speed = bossmovespeed * 0.5;
+} else if active_attack = 5 {
+	path_speed = bossmovespeed * 0.25;
 }
 if active_attack = 0 {
 	path_speed = bossmovespeed;	
@@ -40,6 +42,9 @@ if active_attack_delay <= 0 and active_attack_cooldown <= 0 and active_attack_du
 	if champ = 3 {
 		active_attack = 4;	
 	}
+	if champ = 8 {
+		active_attack = 5;	
+	}
 	if currentphase = 2 {
 		active_attack = choose(1, 3);
 		if champ = 1 {
@@ -47,6 +52,9 @@ if active_attack_delay <= 0 and active_attack_cooldown <= 0 and active_attack_du
 		}
 		if champ = 3 {
 			active_attack = choose(1, 4);	
+		}
+		if champ = 8 {
+			active_attack = 6;	
 		}
 	}
 	
@@ -76,6 +84,15 @@ if active_attack_delay <= 0 and active_attack_cooldown <= 0 and active_attack_du
     }
 	if active_attack = 4 {
 		scr_Boss_Attack_Time_Setup_v2(6, 50, 90, 120, 30, 10);
+    }
+	if active_attack = 5 {
+		// Setup how many attacks per boss move, delay, etc
+		scr_Boss_Attack_Time_Setup_v2(36, 50, 10, 120, 30, 10);
+    }
+	if active_attack = 6 {
+		// Setup how many attacks per boss move, delay, etc
+		
+		scr_Boss_Attack_Time_Setup_v2(3, 50, 120, 120, 30, 10);
     }
 	pattern_direction = image_angle + 180 + 90;
 }
@@ -297,6 +314,47 @@ if active_attack_delay <= 0 and pattern_cooldown <= 0 and pattern_count > 0 {
 
 	}
 	
+	if active_attack = 5 {
+		
+		attack_stats.bullet_speed = bossbulletspeed * 1.5;
+		attack_stats.bullet_sprite = "spr_Glowy_Purple_Laser";
+		attack_stats.bullet_type = "obj_basic_bullet_v2";
+		attack_stats.bullet_direction_angle = 1
+	
+		scr_Sound_Effect(snd_Boss_Laser);
+		scr_Boss_Stretch("Horizontal",0.25);
+		
+		var _dir = image_angle + 270;
+		
+		//attack_stats.bullet_direction = scr_Boss_Bullet_Direction_Formula(_dir, 20) - 30;
+		//attack_stats.bullet_direction += (pattern_count mod 3) * 30
+		
+		attack_stats.bullet_direction = scr_Boss_Bullet_Direction_Formula(_dir, 20)
+		
+		//var _dir_add = 180 * (pattern_count mod 2);
+		var _dir_add = 0;
+		repeat(2) {
+			_dir_add += 180
+			attack_stats.boss_xoffset = lengthdir_x(100,image_angle + _dir_add);
+			attack_stats.boss_yoffset = lengthdir_y(100,image_angle + _dir_add) + lengthdir_y(85,image_angle + 270);
+			scr_boss_shoot_v2();
+		}
+		attack_stats.bullet_type = "obj_wave_bullet_v2";
+		attack_stats.wave_strength = 45;
+		attack_stats.wave_time = 90;
+		repeat(2) {
+			_dir_add += 180
+			
+			attack_stats.boss_xoffset = lengthdir_x(100,image_angle + _dir_add);
+			attack_stats.boss_yoffset = lengthdir_y(100,image_angle + _dir_add) + lengthdir_y(85,image_angle + 270);
+			scr_boss_shoot_v2();
+			
+			attack_stats.wave_strength = -2;
+		}
+
+	
+	}
+	
 	// Maybe I should put this into a script
     pattern_count -= 1;
     pattern_cooldown += pattern_cooldown_max;
@@ -318,13 +376,13 @@ seg_distance = 0;
 // Go back to normal default size
 scr_Boss_Size_Lerp(0.15);
 
-if active_attack = 1 {
+if active_attack = 1 || active_attack = 5 {
 	var _hold_frame = 1;
 	scr_Boss_Attack_Sprite_v2(spr_deep_watcher_v2_drill_shoot, _hold_frame, 2, 4, 20);
 	if image_index = _hold_frame {
 		scr_Boss_Wobble("Horizontal", 2, 0.4, 0)	
 	}
-} else if active_attack = 2 || active_attack = 3 || active_attack = 4 {
+} else if active_attack = 2 || active_attack = 3 || active_attack = 4 || active_attack = 6 {
 	var _hold_frame = 1;
 	scr_Boss_Attack_Sprite_v2(spr_deep_watcher_v2_eye_shoot, _hold_frame, 2, 2, 20);
 	if image_index = _hold_frame {
