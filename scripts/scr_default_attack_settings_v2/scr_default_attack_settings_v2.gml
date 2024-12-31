@@ -87,5 +87,6 @@ function scr_base_bullet_stats(_boss_bullet_speed, _bullet_power, _bullet_accura
 		bullet_crowd_speed: 0,
 		bullet_crowd_acceleration: 0,
 		bullet_target: id,
+		homing_speed: 1
 	}	
 }
