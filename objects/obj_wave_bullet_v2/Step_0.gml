@@ -12,10 +12,8 @@ event_inherited();
 //direction = scr_Wave(direction - bullet_stats.wave_strength, direction + bullet_stats.wave_strength, 
 //					 bullet_stats.wave_time, bullet_stats.wave_time / 3)
 
+//bullet_stats.age++;
 
-var _tim = bullet_stats.wave_time
-var _ang = bullet_stats.wave_strength
-var _ang_dis = _ang - ((_ang * 2) * ((alarm[0] mod _tim) / _tim))
-//show_debug_message(_ang_dis)
+bullet_stats.angular_velocity += bullet_stats.wave_strength / bullet_stats.wave_time
 
-direction += _ang_dis
+direction += bullet_stats.angular_velocity

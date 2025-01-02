@@ -23,6 +23,9 @@ function scr_bullet_shoot_properties_v2(_bullet_stats = bullet_stats) {
 			
 	image_speed = _bullet_stats.bullet_image_speed;
 	alarm[0] = _bullet_stats.bullet_life_span;
+	if _bullet_stats.wave_time > 0 {
+		alarm[1] = (_bullet_stats.wave_time / 2) - 1;
+	}
 	alarm[8] = 2;
 				
 	_bullet_stats.bullet_speed = _bullet_stats.bullet_speed * ((200 + global.soulparanoia + global.soulparanoiaTemp) / 200) * ((200 + global.soulloathing + global.soulloathingTemp) / 200);

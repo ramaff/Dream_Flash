@@ -1,7 +1,7 @@
 {
   "resourceType": "GMSprite",
   "resourceVersion": "1.0",
-  "name": "spr_Maelstrom_Shot",
+  "name": "spr_Exploding_Shot2539",
   "bbox_bottom": 79,
   "bbox_left": 61,
   "bbox_right": 79,
@@ -13,14 +13,14 @@
   "edgeFiltering": false,
   "For3D": false,
   "frames": [
-    {"resourceType":"GMSpriteFrame","resourceVersion":"1.1","name":"7eb1cb50-8797-4e28-9c4e-bd6fd467acfd",},
+    {"resourceType":"GMSpriteFrame","resourceVersion":"1.1","name":"b14c8374-d6a5-4118-bbc0-ff2b081b5488",},
   ],
   "gridX": 0,
   "gridY": 0,
   "height": 138,
   "HTile": false,
   "layers": [
-    {"resourceType":"GMImageLayer","resourceVersion":"1.0","name":"ead2cfb4-4ebe-4fdb-816f-8e863c50a40c","blendMode":0,"displayName":"default","isLocked":false,"opacity":100.0,"visible":true,},
+    {"resourceType":"GMImageLayer","resourceVersion":"1.0","name":"9d982dfe-72e0-4127-baff-793fc96eee6a","blendMode":0,"displayName":"default","isLocked":false,"opacity":100.0,"visible":true,},
   ],
   "nineSlice": null,
   "origin": 4,
@@ -54,7 +54,7 @@
     "timeUnits": 1,
     "tracks": [
       {"resourceType":"GMSpriteFramesTrack","resourceVersion":"1.0","name":"frames","builtinName":0,"events":[],"inheritsTrackColour":true,"interpolation":1,"isCreationTrack":false,"keyframes":{"resourceType":"KeyframeStore<SpriteFrameKeyframe>","resourceVersion":"1.0","Keyframes":[
-            {"resourceType":"Keyframe<SpriteFrameKeyframe>","resourceVersion":"1.0","Channels":{"0":{"resourceType":"SpriteFrameKeyframe","resourceVersion":"1.0","Id":{"name":"7eb1cb50-8797-4e28-9c4e-bd6fd467acfd","path":"sprites/spr_Maelstrom_Shot/spr_Maelstrom_Shot.yy",},},},"Disabled":false,"id":"c2a2b103-3f92-4c44-b25c-cb1f33a31484","IsCreationKey":false,"Key":0.0,"Length":1.0,"Stretch":false,},
+            {"resourceType":"Keyframe<SpriteFrameKeyframe>","resourceVersion":"1.0","Channels":{"0":{"resourceType":"SpriteFrameKeyframe","resourceVersion":"1.0","Id":{"name":"b14c8374-d6a5-4118-bbc0-ff2b081b5488","path":"sprites/spr_Exploding_Shot2539/spr_Exploding_Shot2539.yy",},},},"Disabled":false,"id":"d944183b-97c8-48ee-9d73-02d81a0f61f4","IsCreationKey":false,"Key":0.0,"Length":1.0,"Stretch":false,},
           ],},"modifiers":[],"spriteId":null,"trackColour":0,"tracks":[],"traits":0,},
     ],
     "visibleRange": null,

@@ -89,6 +89,7 @@ function scr_base_bullet_stats(_boss_bullet_speed, _bullet_power, _bullet_accura
 		bullet_target: id,
 		homing_speed: 1,
 		wave_strength: 0,
-		wave_time: 0
+		wave_time: 0,
+		angular_velocity: 0
 	}	
 }
