@@ -1,21 +1,22 @@
 {
   "resourceType": "GMObject",
   "resourceVersion": "1.0",
-  "name": "obj_bullet_parent_v2",
+  "name": "obj_wall_king",
   "eventList": [
-    {"resourceType":"GMEvent","resourceVersion":"1.0","name":"","collisionObjectId":{"name":"obj_Soul","path":"objects/obj_Soul/obj_Soul.yy",},"eventNum":0,"eventType":4,"isDnD":false,},
-    {"resourceType":"GMEvent","resourceVersion":"1.0","name":"","collisionObjectId":null,"eventNum":0,"eventType":2,"isDnD":false,},
+    {"resourceType":"GMEvent","resourceVersion":"1.0","name":"","collisionObjectId":null,"eventNum":0,"eventType":0,"isDnD":false,},
     {"resourceType":"GMEvent","resourceVersion":"1.0","name":"","collisionObjectId":null,"eventNum":0,"eventType":3,"isDnD":false,},
+    {"resourceType":"GMEvent","resourceVersion":"1.0","name":"","collisionObjectId":null,"eventNum":0,"eventType":8,"isDnD":false,},
+    {"resourceType":"GMEvent","resourceVersion":"1.0","name":"","collisionObjectId":null,"eventNum":10,"eventType":7,"isDnD":false,},
   ],
   "managed": true,
   "overriddenProperties": [],
   "parent": {
-    "name": "Boss Bullets",
-    "path": "folders/Objects/Boss Bullets.yy",
+    "name": "Nightmare Bosses",
+    "path": "folders/Objects/Bosses/Nightmare Bosses.yy",
   },
   "parentObjectId": {
-    "name": "obj_soul_hurt_v2",
-    "path": "objects/obj_soul_hurt_v2/obj_soul_hurt_v2.yy",
+    "name": "obj_Main_Boss_Parent",
+    "path": "objects/obj_Main_Boss_Parent/obj_Main_Boss_Parent.yy",
   },
   "persistent": false,
   "physicsAngularDamping": 0.1,
@@ -32,7 +33,10 @@
   "physicsStartAwake": true,
   "properties": [],
   "solid": false,
-  "spriteId": null,
+  "spriteId": {
+    "name": "spr_wall_king",
+    "path": "sprites/spr_wall_king/spr_wall_king.yy",
+  },
   "spriteMaskId": null,
   "visible": false,
 }

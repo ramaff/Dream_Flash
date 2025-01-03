@@ -2,15 +2,17 @@
 // You can write your code in this editor
 
 if global.gameParticles > 0 {
-	if bpart > 0 {
+	if bullet_stats.bullet_part > 0 {
 		
-		var color = bpartcolor1;		
-		var color2 = bpartcolor2;
-		scr_Particle_Burst(obj_Weapon_Trail, bpartsprite, color, color2, 1, 0,
-						   random(360), 0, bpartarea, (bulletsize * 2) * bpartsize + random(0.1),
-						   bpartlife, false)
+		scr_Particle_Burst(obj_Weapon_Trail, asset_get_index(bullet_stats.bullet_part_sprite), 
+						   bullet_stats.bullet_part_color1, bullet_stats.bullet_part_color2, 1, bullet_stats.bullet_speed,
+						   random(360), 0, bullet_stats.bullet_part_area, 
+						   (bullet_stats.bullet_size * 2) * bullet_stats.bullet_part_size + random(0.1),
+						   bullet_stats.bullet_part_life, false)
 	
 	}
 
-	alarm[8] = bpartfrequency / global.gameParticles;
+	alarm[8] = bullet_stats.bullet_part_frequency / global.gameParticles;
 }
+
+

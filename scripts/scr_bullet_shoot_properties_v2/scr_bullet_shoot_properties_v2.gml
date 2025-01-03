@@ -1,6 +1,4 @@
 function scr_bullet_shoot_properties_v2(_bullet_stats = bullet_stats) {
-
-	depth = _bullet_stats.bullet_depth;
 	        
 	image_blend = _bullet_stats.bullet_blend
 	sprite_index = asset_get_index(_bullet_stats.bullet_sprite);

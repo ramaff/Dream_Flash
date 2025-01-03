@@ -96,7 +96,7 @@ function scr_Boss_Choose(roomNum, exclude, difficultyAdd = 0) {
 		}
 	}
 	if global.currentchapter >= 4 {
-	    bossform = choose(8,21,29,30,40,46,47,49);
+	    bossform = choose(8,21,29,30,40,46,47,49,61);
 		
 		sboss = scr_Chance(5);
 		if sboss = true {
@@ -564,6 +564,12 @@ function scr_Boss_Choose(roomNum, exclude, difficultyAdd = 0) {
 	    bosstype = obj_sleep_walker;
 	    difficulty = 1;
 	    global.champ = choose(0, 1);
+	}
+	if bossform = 61.1
+	{
+	    bosstype = obj_wall_king;
+	    difficulty = 16;
+	    global.champ = choose(0);
 	}
 	if bossform = 64.1 // Puck
 	{
