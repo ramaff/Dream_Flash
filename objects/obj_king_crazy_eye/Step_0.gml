@@ -20,7 +20,7 @@ if active_attack_delay <= 0 and active_attack_cooldown <= 0 and active_attack_du
 	
     if active_attack = 1 {
 		// Setup how many attacks per boss move, delay, etc
-		scr_Boss_Attack_Time_Setup_v2(1, 50, 1, 120, 30, 10);
+		scr_Boss_Attack_Time_Setup_v2(1, 50, 1, 180, 120, 10);
 		
 		// Can set up the initial pattern direction
 		// patternDirection = scr_Soul_Point();
@@ -41,6 +41,11 @@ if active_attack_delay <= 0 and pattern_cooldown <= 0 and pattern_count > 0 {
 		scr_Boss_Stretch("Vertical", 1);
 		
 		attack_stats.bullet_direction = scr_Boss_Bullet_Direction_Formula(scr_Soul_Point(), 30)
+		attack_stats.bullet_type = "obj_spin_bullet_v2"
+		attack_stats.bullet_sprite = "spr_Glowy_Green_Shot"
+		attack_stats.angular_velocity = 1.5
+		attack_stats.bullet_count = 4;
+		attack_stats.bullet_spread = 90;
 		
 		scr_boss_shoot_v2();
 	
@@ -59,10 +64,10 @@ if scr_Chance(5) {
 	attack_stats.bullet_type = "obj_poison_pool_v2"
 	attack_stats.bullet_sprite = "spr_Jelly_Pool"
 	attack_stats.bullet_lifespan = 75 + irandom(15);
-    attack_stats.bullet_size = 0.65 + random(0.15);
+    attack_stats.bullet_size = 0.3 + random(0.1);
     attack_stats.bullet_speed = bossbulletspeed * 0;
 	attack_stats.bullet_depth = 200;
-	attack_stats.bullet_blend = c_red;
+	attack_stats.bullet_blend = c_lime;
 	attack_stats.boss_yoffset = boss_height;
 	
 	scr_boss_shoot_v2();

@@ -1,0 +1,23 @@
+/// @description Insert description here
+// You can write your code in this editor
+
+
+alarm[1] = 10;
+
+var _bull = scr_base_bullet_stats(bullet_stats.bullet_speed * (1.2 + random(0.4)), bullet_stats.bullet_power, 1)
+
+_bull.bullet_type = "obj_basic_bullet_v2"
+_bull.bullet_sprite = "spr_Glowy_Green_Shot"
+_bull.bullet_life_span = 180
+_bull.bullet_count = 2;
+_bull.bullet_spread = 360 / _bull.bullet_count;
+_bull.bullet_size = 0.5;
+_bull.bullet_direction = direction - 15 + random(30)
+
+scr_shoot_bullets(_bull, x, y)
+
+_bull.bullet_count = 1;
+_bull.bullet_direction = direction - 180 - 15 + random(30)
+_bull.bullet_speed = _bull.bullet_speed * 0.2;
+
+scr_shoot_bullets(_bull, x, y)

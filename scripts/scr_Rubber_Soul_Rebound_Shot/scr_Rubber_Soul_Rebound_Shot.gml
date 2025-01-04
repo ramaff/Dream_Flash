@@ -1,4 +1,4 @@
-function scr_Rubber_Soul_Rebound_Shot() {
+function scr_Rubber_Soul_Rebound_Shot(_b_speed, _b_power) {
 	
 	scr_Default_Weapon_Stats();
 		
@@ -9,9 +9,9 @@ function scr_Rubber_Soul_Rebound_Shot() {
 		Shot_Mouse: 0,
 		Shot_Sprite: sprite_get_name(other.sprite_index),
 		Shot_Type: "obj_Lesser_Soul_Shot",
-		Shot_Speed: 6 + other.bulletspeed,
+		Shot_Speed: 6 + _b_speed,
 		Shot_Direction: other.direction + 180,
-		Shot_Power: max(1, other.bulletpower) * 3 * global.B[5],
+		Shot_Power: max(1, _b_power) * 3 * global.B[5],
 		Shot_Knock_Back: 10,
 		Shot_Life_Span: 100,
 		Shot_Pierce: 1,

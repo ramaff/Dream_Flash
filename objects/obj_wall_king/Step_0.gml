@@ -46,8 +46,11 @@ if active_attack_delay <= 0 and active_attack_cooldown <= 0 and active_attack_du
 	
     if active_attack = 1 {
 		var _attacks = 4;
+		if currentphase = 2 {
+			_attacks = 5	
+		}
 		
-		scr_Boss_Attack_Time_Setup_v2(_attacks, 50, 120, 120, 30, 10);
+		scr_Boss_Attack_Time_Setup_v2(_attacks, 50, 180, 120, 30, 10);
     }
 	if active_attack = 2 {
 		// Setup how many attacks per boss move, delay, etc
@@ -90,7 +93,7 @@ if active_attack_delay <= 0 and pattern_cooldown <= 0 and pattern_count > 0 {
    
     if active_attack = 1  {
 		
-		if pattern_count = pattern_count_max {
+		if pattern_count >= 4 {
 			minion_count = 1;
 			minion_type = obj_king_crazy_eye;
 			minion_health = bossmaxhealth / 5;
@@ -103,10 +106,10 @@ if active_attack_delay <= 0 and pattern_cooldown <= 0 and pattern_count > 0 {
 			
 		} else {
 		
-			attack_stats.bullet_type = "obj_deep_exploding_bullet"
-		    attack_stats.bullet_sprite = "spr_Exploding_Shot"
-		    attack_stats.bullet_speed = bossbulletspeed * 0.85;
-		    attack_stats.bullet_power = bosspower * 1.5;
+			attack_stats.bullet_type = "obj_wall_king_bullet"
+		    attack_stats.bullet_sprite = "spr_Corruption_Ball"
+		    attack_stats.bullet_speed = bossbulletspeed * (1.55 + random(0.2));
+		    attack_stats.bullet_power = bosspower * 2;
 		    attack_stats.bullet_direction = (-10 + random(20)) / bossaccuracy;
 		    attack_stats.bullet_size = 0.6;
 		    attack_stats.bullet_count = 1;
@@ -116,8 +119,8 @@ if active_attack_delay <= 0 and pattern_cooldown <= 0 and pattern_count > 0 {
 			attack_stats.bullet_part_sprite = "spr_Soul_Big_Bit";
 			attack_stats.bullet_part_area = 45;
 			attack_stats.bullet_part_life = 30;
-			attack_stats.bullet_part_color1 = make_color_rgb(255,170,0);
-			attack_stats.bullet_part_color2 = make_color_rgb(255,170,0);
+			attack_stats.bullet_part_color1 = make_color_rgb(0,255,0);
+			attack_stats.bullet_part_color2 = make_color_rgb(0,255,0);
 			attack_stats.bullet_part_frequency = 4;
 			scr_Boss_Stretch("Horizontal",0.4);
 		
