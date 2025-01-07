@@ -4,7 +4,7 @@ function scr_shoot_beam(_attack_stats, _xx, _yy) {
 	
 	var _seg_size = 128 * _attack_stats.bullet_size;
 
-	var _seg_tail = id;
+	var _seg_tail = noone;
 
 	repeat(_attack_stats.bullet_count) {
 		for(var _count = 0; _count < 17; _count++) {
@@ -21,13 +21,14 @@ function scr_shoot_beam(_attack_stats, _xx, _yy) {
 				if _count = 0 {
 					sprite_index = spr_Boss_Beam_Start;
 					//other.laser_start = id;	
+				} else {
+					seg_tail = _seg_tail;
 				}
 				if _count = 16 {
 					sprite_index = spr_Boss_Beam_Tail;
 					depth -= 5;
 				}
-		
-				seg_tail = _seg_tail;
+
 				seg_distance = _seg_size;
 				seg_angle = direction
 				seg_angle_displacement = 0;

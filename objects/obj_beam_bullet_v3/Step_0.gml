@@ -14,5 +14,8 @@ if alarm[0] > 10 and image_index >= 10 {
 	image_index = 10
 }
 
+seg_angle += bullet_stats.angular_velocity
+
 scr_boss_beam_position_update()
 
+bullet_stats.angular_velocity += bullet_stats.angular_acceleration

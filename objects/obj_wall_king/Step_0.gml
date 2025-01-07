@@ -42,7 +42,6 @@ if active_attack_delay <= 0 and active_attack_cooldown <= 0 and active_attack_du
 	if currentphase = 2 {
 		active_attack = choose(1, 3);
 	}
-	active_attack = 2
 	
     if active_attack = 1 {
 		var _attacks = 4;
@@ -50,11 +49,11 @@ if active_attack_delay <= 0 and active_attack_cooldown <= 0 and active_attack_du
 			_attacks = 5	
 		}
 		
-		scr_Boss_Attack_Time_Setup_v2(_attacks, 50, 180, 120, 30, 10);
+		scr_Boss_Attack_Time_Setup_v2(_attacks, 50, 180, 150, 30, 10);
     }
 	if active_attack = 2 {
 		// Setup how many attacks per boss move, delay, etc
-		scr_Boss_Attack_Time_Setup_v2(360, 50, 30, 120, 30, 10);
+		scr_Boss_Attack_Time_Setup_v2(360, 50, 1, 120, 30, 10);
     }
 	if active_attack = 3  {
 		// 
@@ -63,7 +62,7 @@ if active_attack_delay <= 0 and active_attack_cooldown <= 0 and active_attack_du
 			_attacks = 30;
 		}
 		
-		scr_Boss_Attack_Time_Setup_v2(_attacks, 50, 20, 120, 30, 10);
+		scr_Boss_Attack_Time_Setup_v2(_attacks, 50, 20, 150, 30, 10);
 		
 		pattern_direction = scr_Soul_Point()
     }
@@ -141,31 +140,59 @@ if active_attack_delay <= 0 and pattern_cooldown <= 0 and pattern_count > 0 {
 			attack_stats.bullet_type = "obj_beam_bullet_v3"
 		    attack_stats.bullet_speed = 0;
 			attack_stats.bullet_power = 0
-			attack_stats.bullet_lifespan = 360;
+			attack_stats.bullet_life_span = 360;
 		    attack_stats.bullet_sprite = "spr_Boss_Beam_Segment";
 			attack_stats.bullet_part_color1 = make_color_rgb(255, 0, 0)
 			attack_stats.bullet_part_color2 = make_color_rgb(255, 148, 127)
 
 			var _dir = image_angle + 270;
 			var _dir_add = 0;
+			attack_stats.angular_acceleration = 0.0065;
 		
 			
 			repeat(2) {
-				attack_stats.bullet_direction = _dir - ((90 - _dir_add) / 4)
-				show_debug_message(attack_stats.bullet_direction)
-				attack_stats.boss_xoffset = lengthdir_x(100,image_angle + _dir_add);
-				attack_stats.boss_yoffset = lengthdir_y(100,image_angle + _dir_add) + lengthdir_y(85,image_angle + 270);
+				attack_stats.bullet_direction = _dir - ((90 - _dir_add) / 2)
+				//show_debug_message(attack_stats.bullet_direction)
+				attack_stats.boss_xoffset = lengthdir_x(120,image_angle + _dir_add);
+				attack_stats.boss_yoffset = lengthdir_y(120,image_angle + _dir_add) + lengthdir_y(85,image_angle + 270);
 			
 			    scr_boss_beam_shoot_v2(attack_stats)
 				_dir_add += 180;
+				attack_stats.angular_acceleration = -0.0065;
 			}
 		}
 		
 		if pattern_count mod 10 = 0 {
 			scr_Boss_Stretch("Horizontal",0.1);	
 		}
-		if pattern_count mod 30 = 0 and currentphase = 2 {
-		    //scr_Boss_Shoot();
+		if pattern_count mod 25 = 0 {
+		    scr_Sound_Effect(snd_Boss_Laser);
+			scr_Boss_Stretch("Horizontal",0.25);
+		
+			//attack_stats.bullet_direction = scr_Boss_Bullet_Direction_Formula(_dir, 20) - 30;
+			//attack_stats.bullet_direction += (pattern_count mod 3) * 30
+			
+			var _dir = image_angle + 270;
+		
+			attack_stats.bullet_direction = scr_Boss_Bullet_Direction_Formula(_dir, 120)
+		
+			//var _dir_add = 180 * (pattern_count mod 2);
+			var _dir_add = 0;
+			attack_stats.bullet_type = "obj_wave_bullet_v2";
+			attack_stats.bullet_speed = bossbulletspeed * (1.35 + random(0.3));
+			attack_stats.wave_strength = 4;
+			attack_stats.wave_time = 80;
+			attack_stats.follow_bullets = 3;
+			attack_stats.bullet_life_span = 300;
+			repeat(2) {
+				_dir_add += 180
+			
+				attack_stats.boss_xoffset = lengthdir_x(100,image_angle + _dir_add);
+				attack_stats.boss_yoffset = lengthdir_y(100,image_angle + _dir_add) + lengthdir_y(85,image_angle + 270);
+				scr_boss_shoot_v2();
+			
+				attack_stats.wave_strength = -3;
+			}
 		}
 
 	}

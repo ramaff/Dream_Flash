@@ -460,6 +460,7 @@
     {"resourceType":"GMFolder","resourceVersion":"1.0","name":"Misc BGs","folderPath":"folders/Tile Sets/Misc BGs.yy",},
     {"resourceType":"GMFolder","resourceVersion":"1.0","name":"Nightmare BGs","folderPath":"folders/Tile Sets/Nightmare BGs.yy",},
     {"resourceType":"GMFolder","resourceVersion":"1.0","name":"Timelines","folderPath":"folders/Timelines.yy",},
+    {"resourceType":"GMFolder","resourceVersion":"1.0","name":"standard bullets","folderPath":"folders/Objects/Boss Bullets/standard bullets.yy",},
   ],
   "IncludedFiles": [
     {"resourceType":"GMIncludedFile","resourceVersion":"1.0","name":"df_boss_stats.json","CopyToMask":-1,"filePath":"datafiles",},
@@ -2734,6 +2735,7 @@
     {"id":{"name":"spr_No_BG","path":"sprites/spr_No_BG/spr_No_BG.yy",},},
     {"id":{"name":"spr_Dungeon_Master_Swing2022","path":"sprites/spr_Dungeon_Master_Swing2022/spr_Dungeon_Master_Swing2022.yy",},},
     {"id":{"name":"scr_Mental_Background","path":"scripts/scr_Mental_Background/scr_Mental_Background.yy",},},
+    {"id":{"name":"obj_school_bullet_v2","path":"objects/obj_school_bullet_v2/obj_school_bullet_v2.yy",},},
     {"id":{"name":"scr_Boss_Jump_Setup","path":"scripts/scr_Boss_Jump_Setup/scr_Boss_Jump_Setup.yy",},},
     {"id":{"name":"spr_Scroll_Star","path":"sprites/spr_Scroll_Star/spr_Scroll_Star.yy",},},
     {"id":{"name":"spr_Soul_Menu_Heart","path":"sprites/spr_Soul_Menu_Heart/spr_Soul_Menu_Heart.yy",},},
@@ -2794,6 +2796,7 @@
     {"id":{"name":"shd_dlight","path":"shaders/shd_dlight/shd_dlight.yy",},},
     {"id":{"name":"spr_Shot_Bubble_Medium","path":"sprites/spr_Shot_Bubble_Medium/spr_Shot_Bubble_Medium.yy",},},
     {"id":{"name":"spr_Gaping_Void","path":"sprites/spr_Gaping_Void/spr_Gaping_Void.yy",},},
+    {"id":{"name":"obj_follow_the_leader_bullet_v2","path":"objects/obj_follow_the_leader_bullet_v2/obj_follow_the_leader_bullet_v2.yy",},},
     {"id":{"name":"spr_Cope_Zone","path":"sprites/spr_Cope_Zone/spr_Cope_Zone.yy",},},
     {"id":{"name":"spr_Recollection_Hover_Cloud_Bigger_Leave","path":"sprites/spr_Recollection_Hover_Cloud_Bigger_Leave/spr_Recollection_Hover_Cloud_Bigger_Leave.yy",},},
     {"id":{"name":"spr_Soul_Ball","path":"sprites/spr_Soul_Ball/spr_Soul_Ball.yy",},},

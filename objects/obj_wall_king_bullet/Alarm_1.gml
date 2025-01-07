@@ -2,7 +2,7 @@
 // You can write your code in this editor
 
 
-alarm[1] = 10;
+alarm[1] = 6;
 
 var _bull = scr_base_bullet_stats(bullet_stats.bullet_speed * (1.2 + random(0.4)), bullet_stats.bullet_power, 1)
 

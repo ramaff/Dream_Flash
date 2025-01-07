@@ -6,8 +6,8 @@
   "managed": true,
   "overriddenProperties": [],
   "parent": {
-    "name": "Boss Bullets",
-    "path": "folders/Objects/Boss Bullets.yy",
+    "name": "standard bullets",
+    "path": "folders/Objects/Boss Bullets/standard bullets.yy",
   },
   "parentObjectId": {
     "name": "obj_bullet_parent_v2",

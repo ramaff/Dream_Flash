@@ -3,7 +3,8 @@ function scr_shoot_bullets(_attack_stats, _xx, _yy) {
 	var _bull = asset_get_index(_attack_stats.bullet_type);
 	
 	repeat(_attack_stats.bullet_count) {
-	    with instance_create(_xx, _yy, _bull) {
+		var _c_bull = noone;
+		with instance_create(_xx, _yy, _bull) {
 			bullet_stats = variable_clone(_attack_stats)
 	        scr_bullet_shoot_properties_v2(bullet_stats);
 
@@ -11,9 +12,24 @@ function scr_shoot_bullets(_attack_stats, _xx, _yy) {
 			if bullet_stats.bullet_direction_angle = 1 {
 				image_angle = direction;
 			}
-	    }
+			_c_bull = id
+		}
+	    
+		repeat(_attack_stats.follow_bullets) {
+		    with instance_create(_xx, _yy, obj_follow_the_leader_bullet_v2) {
+				bullet_stats = variable_clone(_attack_stats)
+		        scr_bullet_shoot_properties_v2(bullet_stats);
+
+				direction = bullet_stats.bullet_direction + _dir;
+				if bullet_stats.bullet_direction_angle = 1 {
+					image_angle = direction;
+				}
+				bullet_stats.bullet_target = _c_bull
+				_c_bull = id
+		    }
+		}
 	    _dir += _attack_stats.bullet_spread;
-	}	
+	}
 }
 
 function scr_boss_shoot_v2(_attack_stats = attack_stats, _absolute_pos = false) {
