@@ -66,6 +66,7 @@
     {"resourceType":"GMFolder","resourceVersion":"1.0","name":"zbomb","folderPath":"folders/Objects/Boss Bullets/old bullets/zbomb.yy",},
     {"resourceType":"GMFolder","resourceVersion":"1.0","name":"zbullets shooting more bullets","folderPath":"folders/Objects/Boss Bullets/old bullets/zbullets shooting more bullets.yy",},
     {"resourceType":"GMFolder","resourceVersion":"1.0","name":"zmisc","folderPath":"folders/Objects/Boss Bullets/old bullets/zmisc.yy",},
+    {"resourceType":"GMFolder","resourceVersion":"1.0","name":"standard bullets","folderPath":"folders/Objects/Boss Bullets/standard bullets.yy",},
     {"resourceType":"GMFolder","resourceVersion":"1.0","name":"Bosses","folderPath":"folders/Objects/Bosses.yy",},
     {"resourceType":"GMFolder","resourceVersion":"1.0","name":"Dream Bosses","folderPath":"folders/Objects/Bosses/Dream Bosses.yy",},
     {"resourceType":"GMFolder","resourceVersion":"1.0","name":"v1","folderPath":"folders/Objects/Bosses/Dream Bosses/v1.yy",},
@@ -460,7 +461,6 @@
     {"resourceType":"GMFolder","resourceVersion":"1.0","name":"Misc BGs","folderPath":"folders/Tile Sets/Misc BGs.yy",},
     {"resourceType":"GMFolder","resourceVersion":"1.0","name":"Nightmare BGs","folderPath":"folders/Tile Sets/Nightmare BGs.yy",},
     {"resourceType":"GMFolder","resourceVersion":"1.0","name":"Timelines","folderPath":"folders/Timelines.yy",},
-    {"resourceType":"GMFolder","resourceVersion":"1.0","name":"standard bullets","folderPath":"folders/Objects/Boss Bullets/standard bullets.yy",},
   ],
   "IncludedFiles": [
     {"resourceType":"GMIncludedFile","resourceVersion":"1.0","name":"df_boss_stats.json","CopyToMask":-1,"filePath":"datafiles",},

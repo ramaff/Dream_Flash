@@ -9,6 +9,12 @@ scr_Boss_Height_Bob(30, 1, 0);
 // Make boss shape wobble:
 scr_Boss_Wobble("Horizontal", 0.4, 1, 0);
 
+speed = lerp(speed, bossmovespeed * 3, 0.05)
+
+if active_attack_delay > 0 {
+	speed = lerp(speed, bossmovespeed * 0.05, 0.25)
+}
+
 //////////////////////////////////////////////////////////////////////////////////////////
 /////////////// Active Attack Prep
 //////////////////////////////////////////////////////////////////////////////////////////
@@ -46,6 +52,7 @@ if active_attack_delay <= 0 and pattern_cooldown <= 0 and pattern_count > 0 {
 		attack_stats.angular_velocity = 1.5
 		attack_stats.bullet_count = 4;
 		attack_stats.bullet_spread = 90;
+		attack_stats.follow_bullets = 2
 		
 		scr_boss_shoot_v2();
 	

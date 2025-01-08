@@ -46,6 +46,7 @@
     {"name":"zbomb","order":46,"path":"folders/Objects/Boss Bullets/old bullets/zbomb.yy",},
     {"name":"zbullets shooting more bullets","order":47,"path":"folders/Objects/Boss Bullets/old bullets/zbullets shooting more bullets.yy",},
     {"name":"zmisc","order":45,"path":"folders/Objects/Boss Bullets/old bullets/zmisc.yy",},
+    {"name":"standard bullets","order":21,"path":"folders/Objects/Boss Bullets/standard bullets.yy",},
     {"name":"Bosses","order":4,"path":"folders/Objects/Bosses.yy",},
     {"name":"Masked Spirit Bosses","order":2,"path":"folders/Objects/Bosses/Feel Bosses/Masked Spirit Bosses.yy",},
     {"name":"v1","order":1,"path":"folders/Objects/Bosses/Feel Bosses/v1.yy",},
@@ -109,7 +110,6 @@
     {"name":"State Reco Icons","order":30,"path":"folders/Sprites/Recollection/State Reco Icons.yy",},
     {"name":"Tutorial Stuff","order":31,"path":"folders/Sprites/Recollection/Tutorial Stuff.yy",},
     {"name":"beam_punches","order":38,"path":"folders/Sprites/Soul Shot Sprites/Imaginary Shots/beam_punches.yy",},
-    {"name":"standard bullets","order":21,"path":"folders/Objects/Boss Bullets/standard bullets.yy",},
   ],
   "ResourceOrderSettings": [
     {"name":"reco_Demonic_Villainy","order":66,"path":"sprites/reco_Demonic_Villainy/reco_Demonic_Villainy.yy",},

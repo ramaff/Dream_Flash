@@ -56,6 +56,7 @@ function scr_base_bullet_stats(_boss_bullet_speed, _bullet_power, _bullet_accura
 		bullet_part_color1: c_white,
 		bullet_part_color2: c_white,
 		bullet_part_size: 0.5,
+		bullet_part_speed: 0,
 		bullet_crowd_direction: 0,
 		bullet_crowd_speed: 0,
 		bullet_crowd_acceleration: 0,
