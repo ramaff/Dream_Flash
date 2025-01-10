@@ -2,7 +2,7 @@
 // https://help.yoyogames.com/hc/en-us/articles/360005277377 for more information
 function scr_Soul_Move_Particle(xx, yy, type){
 	var partrad = 15;
-	var parts = spr_Soul_Big_Bit;
+	var parts = spr_Diamond_Part
 	
 	if scurrentstate != "Base" {
 		parts = spr_State_Part;
@@ -42,7 +42,7 @@ function scr_Soul_Move_Particle(xx, yy, type){
 	}
 	
 	if type = "Teleport" {
-		with instance_create(xx + partx - (partrad / 2) + random(partrad), yy + 12 - (partrad / 2) + random(partrad),obj_State_Trail) {
+		with instance_create(xx + partx - (partrad / 2) + random(partrad), yy + 12 - (partrad / 2) + random(partrad),obj_Friction_Part) {
 		
 			sprite_index = parts;
 		
@@ -53,7 +53,7 @@ function scr_Soul_Move_Particle(xx, yy, type){
 			image_xscale = size;
 			image_yscale = size;
 		
-			life = 20 + irandom(20);
+			life = 30 + irandom(30);
 			alarm[0] = life;
 			alarm[1] = life / 2;
 		
@@ -72,7 +72,7 @@ function scr_Soul_Move_Particle(xx, yy, type){
 			image_xscale = size / 3;
 			image_yscale = size / 3;
 		
-			life = 20 + irandom(20);
+			life = 30 + irandom(30);
 			alarm[0] = life;
 			alarm[1] = 1;
 		

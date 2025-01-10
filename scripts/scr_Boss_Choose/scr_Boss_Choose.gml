@@ -766,7 +766,7 @@ function scr_Boss_Choose(roomNum, exclude, difficultyAdd = 0) {
 		for(j = 1; j < roomNum; j++) {
 			if bosstype = global.floor[j,21] {
 				//if global.champ = global.floor[j,22] {
-					repeatBoss = 1;	
+				repeatBoss = 1;	
 				//}
 			}
 		}

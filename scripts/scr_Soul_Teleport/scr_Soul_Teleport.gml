@@ -42,10 +42,31 @@ function scr_Soul_Teleport(_evasion = false){
 		
 	var dist = point_distance(x,y, _xx, _yy);
 	var dir = point_direction(x,y, _xx, _yy);
+	var _angle_offset = -30
+	var _angle_add = 30
+	var _segs = floor(dist) / 80
+	var _seg_dist = 100
+	
+	var _blend = make_color_rgb(255, 100, 255)
+	var _red_amount = 255;
 		
-	for(var i = 0; i < 11; i++) {
-		var cd = (dist / 10) * i;
-		scr_Soul_Move_Particle(x + lengthdir_x(cd, dir), y + lengthdir_y(cd, dir), "Teleport");
+	for(var i = 0; i < _segs; i++) {
+		var cd = 80 * i;
+		var _pxx = x + lengthdir_x(cd, dir + _angle_offset)
+		var _pyy = y + lengthdir_y(cd, dir + _angle_offset)
+		_angle_offset += _angle_add / _segs
+		scr_Soul_Move_Particle(_pxx, _pyy, "Teleport");
+		with instance_create(_pxx, _pyy, obj_After_Image) {
+			alarm[0] = 40 + (i * 1)
+			shrinking = false
+			fading = true
+			sprite_index = spr_The_Soul_Teleport_After_Image
+			image_xscale = other.image_xscale;
+			image_yscale = other.image_yscale;
+			image_blend = _blend
+		}
+		_blend = make_color_rgb(_red_amount, 100, 255)
+		_red_amount -= 100 / _segs
 	}
 		
 	scr_W04();

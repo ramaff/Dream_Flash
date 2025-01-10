@@ -18,6 +18,7 @@ function scr_Item_Recollection_Cloud(time = 1) {
 		priceString = other.priceString;
 		recollectionUpgrade = other.recollectionUpgrade;
 		recollectionExtraStats = other.recollectionExtraStats;
+		recollectionCount = other.recollectionCount;
 		shop = other.shop;
 		stacks = other.stacks;
 		

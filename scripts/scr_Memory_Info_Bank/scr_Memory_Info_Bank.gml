@@ -1,4 +1,4 @@
-function scr_Memory_Info_Bank() {
+function scr_Memory_Info_Bank(_item = false) {
 	recollectionSize = 1;
 	if is_string(itemVal) {
 	    recoNum = string_digits(itemVal);
@@ -96,8 +96,8 @@ function scr_Memory_Info_Bank() {
 	    recollectionCount = global.recollectionWeap[itemVal];
 	}
 	
-	scr_Weapon_Memory(false);
-	scr_Item_Memory(false);
+	scr_Weapon_Memory(_item);
+	scr_Item_Memory(_item);
 	scr_Boss_Memory();
 	
 	scr_State_Memory();

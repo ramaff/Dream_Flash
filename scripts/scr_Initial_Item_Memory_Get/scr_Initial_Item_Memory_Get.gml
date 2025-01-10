@@ -38,7 +38,7 @@ function scr_Initial_Item_Memory_Get(){
 		recollectionEnergyResist[v] = -999;
 	}
 
-	scr_Memory_Info_Bank();
+	scr_Memory_Info_Bank(true);
 
 	if !(is_string(itemVal)) {
 		if global.recollectionWeap[itemVal] >= 1 {

@@ -11,6 +11,7 @@ function scr_Item_Memory(displayItemSprite = true) {
 	//show_debug_message(string(current_item_stats))
 	
 	var rememberance = scr_Item_Memory_Count(itemVal)
+	recollectionCount = rememberance
 	recollectionSprite = spr_Recollection_Unknown_Weapon_Icon;
 	
 	if variable_struct_exists(current_item_stats, "recollectionString") {
@@ -31,7 +32,7 @@ function scr_Item_Memory(displayItemSprite = true) {
 	recollectionExtraStats = "You cannot remember"
 	
 	
-	if rememberance >= 1 {
+	if rememberance >= 1 || displayItemSprite {
 		recollectionExtraStats = "No Special Properties"
 		
 		if variable_struct_exists(current_item_stats, "recollectionExtraStats") {
