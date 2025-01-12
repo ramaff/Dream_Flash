@@ -4,6 +4,8 @@ function scr_Item_Variable_Setup() {
 	
 	/// state prog variables actually set up in soul stat control, the ones below are doing literally nothing.
 	
+	global.items = []
+	
 	global.instanceidincrementer = 1;
 	global.currentheartsurvival = 0;
 	

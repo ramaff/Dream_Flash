@@ -66,7 +66,7 @@ function scr_Pool_Refill(pool){
 	}
 	if pool = global.n_item_pool {
 		letter = "N"
-		totalitems = 7;
+		totalitems = 4;
 	}
 	if pool = global.oa_item_pool {
 		letter = "OA"
@@ -82,7 +82,7 @@ function scr_Pool_Refill(pool){
 	}
 	if pool = global.p_item_pool {
 		letter = "P"
-		totalitems = 9;
+		totalitems = 10;
 	}
 	if pool = global.q_item_pool {
 		letter = "Q"
@@ -94,11 +94,11 @@ function scr_Pool_Refill(pool){
 	}
 	if pool = global.s_item_pool {
 		letter = "S"
-		totalitems = 3;
+		totalitems = 6;
 	}
 	if pool = global.t_item_pool {
 		letter = "T"
-		totalitems = 3;
+		totalitems = 4;
 	}
 	if pool = global.u_item_pool {
 		letter = "U"

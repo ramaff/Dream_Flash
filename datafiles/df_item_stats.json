@@ -393,7 +393,7 @@
     "E02": {
         "recollectionString": "Perspective Change",
         "recollectionSprite": "spr_Phase_Sense_Item",
-        "recollectionExtraStats": "-50% Teleport Cost",
+        "recollectionExtraStats": "-10 Teleport Cost +25% Teleport Recharge",
         "recollectionDescription": "Phase through reality in a less costly matter."
     },
     "E03": {
@@ -405,7 +405,7 @@
     "E04": {
         "recollectionString": "Positive Headspace",
         "recollectionSprite": "spr_Space_Warping_Adeptness_Item",
-        "recollectionExtraStats": "-20% Teleport Cost +30% Teleport Effect Power",
+        "recollectionExtraStats": "+40% Teleport Effect Power",
         "recollectionDescription": "Increases your warp proficiency."
     },
     "E05": {
@@ -1236,37 +1236,25 @@
     },
     
     "N01": {
-        "recollectionString": "Inspired",
-        "recollectionSprite": "spr_Inspired_Art",
-        "recollectionExtraStats": "+1/2 Items per Pool",
+        "recollectionString": "Open Minded",
+        "recollectionSprite": "spr_Open_Minded_Art",
+        "recollectionExtraStats": "+1 Item per Pool",
         "recollectionDescription": "Creative inspiration results in having a 50% chance of getting an extra item in all non-shop item fields"
     },
     "N02": {
-        "recollectionString": "Think Again",
-        "recollectionSprite": "spr_Think_Again_Art",
-        "recollectionExtraStats": "+Item Field Refresh",
-        "recollectionDescription": "Allows you to swap all the items in a field to different items for a price."
-    },
-    "N03": {
-        "recollectionString": "Cramming",
-        "recollectionSprite": "spr_Cramming_Art",
-        "recollectionExtraStats": "+Full Field Suckage",
-        "recollectionDescription": "Quickly suck up all the knowledge/items a field has to offer. One time usage, takes up a weapon slot."
-    },
-    "N04": {
         "recollectionString": "Productivity",
         "recollectionSprite": "spr_Productivity_Art",
         "recollectionExtraStats": "+Thinking Lightbulb",
         "recollectionDescription": "Lightbulb that orbits the soul, produces extra recalls if lit at the end of boss fights.",
         "Mech_Credit": 0.5
     },
-    "N05": {
+    "N03": {
         "recollectionString": "Juggling Ideas",
         "recollectionSprite": "spr_Juggling_Ideas_Art",
         "recollectionExtraStats": "+Multi Weapon Shooting",
         "recollectionDescription": "Now the soul can shoot all of its weapons at the same time, at half their normal firerate."
     },
-    "N06": {
+    "N04": {
         "recollectionString": "Sophistication",
         "recollectionSprite": "spr_Sophistication_Art",
         "recollectionExtraStats": "+Weapon Complexity Increase",
@@ -1329,7 +1317,7 @@
         "recollectionDescription": "While in the happy place gain a big boost to health, essence, and shot rethink speed."
     },
     "OB04": {
-        "recollectionString": "Relaxed",
+        "recollectionString": "Can't Help It",
         "recollectionSprite": "spr_Relaxed_Art",
         "recollectionExtraStats": "+Bullet Slowdown Aura",
         "recollectionDescription": "Bullets that get near the soul move 30% slower. No need to stress!"
@@ -1441,6 +1429,12 @@
         "recollectionDescription": "Every 6th time you use your weapon you shoot in 5 different directions at once.",
         "Spike_Credit": 1
     },
+    "P10": {
+        "recollectionString": "Relaxed",
+        "recollectionSprite": "spr_Relaxed_Art",
+        "recollectionExtraStats": "+Bullet Slowdown Aura +2 Bliss",
+        "recollectionDescription": "Bullets that get near the soul move 30% slower. No need to stress!"
+    },
 
     "Q01": {
         "recollectionString": "No Brainer",
@@ -1469,7 +1463,7 @@
     },
     "Q05": {
         "recollectionString": "Slipped My Mind",
-        "recollectionSprite": "spr_Thinking_Outside_The_Box_Art",
+        "recollectionSprite": "spr_Slipped_My_Mind_Art",
         "recollectionExtraStats": "+Thought Redirection",
         "recollectionDescription": "The soul now constantly shoots banana peels on to the field. These redirect any bullets that come in contact with them. They also can make the soul slip."
     },
@@ -1530,25 +1524,49 @@
         "recollectionExtraStats": "+Friend on Hit",
         "recollectionDescription": "Receiving damage causes the soul to get emotional support from a powerful ally figment"
     },
-
-    "T01": {
+    "S04": {
         "recollectionString": "Cope",
         "recollectionSprite": "spr_Cope_Art",
         "recollectionExtraStats": "+Coping Heart",
         "recollectionDescription": "Losing hearts give you a coping heart replacement. This heart steadily loses its max hp, but can shoot extra projectiles at the enemy."
     },
-    "T02": {
+    "S05": {
         "recollectionString": "Comfort Zones",
         "recollectionSprite": "spr_Comfort_Zones_Art",
         "recollectionExtraStats": "+Stress Relief Zones",
         "recollectionDescription": "Go back to where you're comfortable. Getting hit spawns random healing fields in the field for a bit."
     },
-    "T03": {
+    "S06": {
         "recollectionString": "Mind Cleanser",
         "recollectionSprite": "spr_Mind_Cleanser_Art",
         "recollectionExtraStats": "+Stress Bubbles",
         "recollectionDescription": "When hit you shoot bubbles everywhere. Washes your headspace.",
         "Scrub_Credit": 1
+    },
+
+    "T01": {
+        "recollectionString": "Think Again",
+        "recollectionSprite": "spr_Think_Again_Art",
+        "recollectionExtraStats": "+Item Field Refresh",
+        "recollectionDescription": "Allows you to swap all the items in a field to different items for a price."
+    },
+    "T02": {
+        "recollectionString": "Cramming",
+        "recollectionSprite": "spr_Cramming_Art",
+        "recollectionExtraStats": "+Full Field Suckage",
+        "recollectionDescription": "Quickly suck up all the knowledge/items a field has to offer. One time usage, takes up a weapon slot."
+    },
+    "T03": {
+        "recollectionString": "Inspired",
+        "recollectionSprite": "spr_Inspired_Art",
+        "recollectionExtraStats": "+Upgrade Items in a Field",
+        "recollectionDescription": "Get inspired. You can activate this ability in any item field to increase the potency of the items in that field."
+    },
+    "T04": {
+        "recollectionString": "Hyper-Fixation",
+        "recollectionSprite": "spr_Cope_Art",
+        "recollectionExtraStats": "+Coping Heart",
+        "recollectionDescription": "Losing hearts give you a coping heart replacement. This heart steadily loses its max hp, but can shoot extra projectiles at the enemy."
     },
 
     "U01": {
@@ -1658,6 +1676,13 @@
         "recollectionSprite": "spr_Wandering_Thoughts_Art",
         "recollectionExtraStats": "+Aimless Shots",
         "recollectionDescription": "Producing shots uses up much less essence. Shots will wander around after a set distance in random directions."
+    },
+    "V09": {
+        "recollectionString": "Blood Lust",
+        "recollectionSprite": "spr_Blood_Lust_Art",
+        "recollectionExtraStats": "+Damage Health Regen +4 Loathing",
+        "recollectionDescription": "Producing shots uses up much less essence. Shots will wander around after a set distance in random directions.",
+        "Beast_Credit": 1
     },
 
 

@@ -727,9 +727,9 @@ function scr_Hard_Coded_Item_Stats(itemVal, items_to_add = 1, reload = false) {
 	if itemVal = "N01" {
 		global.extraitems += 1;
 	}
-	if itemVal = "N06" {
+	if itemVal = "N04" {
 	    if !reload {
-			scr_N06();	
+			scr_N04();	
 		}
 	}
 
@@ -761,10 +761,6 @@ function scr_Hard_Coded_Item_Stats(itemVal, items_to_add = 1, reload = false) {
 	}
 	if itemVal = "OB04" {
 	    //global.OB[4]++;
-		global.soulshotlifefactor += 2;
-	    obj_Soul_Parent.sshotlifefactor += 2;
-		global.soulshotspeed -= 1.5;
-	    obj_Soul_Parent.sshotspeed -= 1.5;
 	}
 	if itemVal = "OC01" {
 	    //global.OC[1]++;
@@ -817,17 +813,18 @@ function scr_Hard_Coded_Item_Stats(itemVal, items_to_add = 1, reload = false) {
 			global.soulparanoia += 4;
 		}
 	}
-	if itemVal = "P05" {	
-	}
-	if itemVal = "P06" {
-	}
-	if itemVal = "P07" {
-	}
-	if itemVal = "P08" {
-	}
 	if itemVal = "P09" {
 		if !reload {
 			global.soulloathing += 4;
+		}
+	}
+	if itemVal = "P10" {
+		global.soulshotlifefactor += 3;
+	    obj_Soul_Parent.sshotlifefactor += 3;
+		global.soulshotspeed -= 2;
+	    obj_Soul_Parent.sshotspeed -= 2;
+		if !reload {
+			global.soulbliss += 2;	
 		}
 	}
 	
@@ -881,40 +878,8 @@ function scr_Hard_Coded_Item_Stats(itemVal, items_to_add = 1, reload = false) {
 		}
 		//global.spikeprogress++;
 	}
-	if itemVal = "S02" {
-	    //global.S[2]++;
-	}
-	if itemVal = "S03" {
-	    //global.S[3]++;
-	}
+	
 
-	if itemVal = "T01" {
-	    //global.T[1]++;
-	}
-	if itemVal = "T02" {
-	    //global.T[2]++;
-	}
-	if itemVal = "T03" {
-	    //global.T[3]++;
-		//global.scrubprogress++;
-	}
-
-	if itemVal = "U01" {
-	    //global.U[1]++;
-	}
-	if itemVal = "U02" {
-	    //global.U[2]++;
-	}
-	if itemVal = "U03" {
-	    //global.U[3]++;
-	}
-	if itemVal = "U04" {
-	    //global.U[4]++;
-	}
-	if itemVal = "U05" {
-	    //global.U[5]++;
-		//global.snakeprogress += 0.5;
-	}
 	if itemVal = "U06" {
 	    //global.U[6]++;
 		global.souldelayconservationfactor += 1;

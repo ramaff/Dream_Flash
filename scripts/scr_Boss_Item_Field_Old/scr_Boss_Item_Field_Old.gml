@@ -226,7 +226,7 @@ function scr_Boss_Item_Field_Old(roomType){
 	        global.floor[global.currentroom,6 + j] = "00"; 
 	    }
         
-	    itemNumChoice = 2 + floor((global.soulhope + random(100 + global.soulhope * 3)) / 100);
+	    itemNumChoice = scr_Item_Field_Count(2)
 	    itemNumPick = 1;
 		var class = global.floor[global.currentroom,0];
 	    for(j = 1; j <= itemNumChoice; j++) {

@@ -26,7 +26,7 @@
   "origin": 9,
   "parent": {
     "name": "Forst",
-    "path": "folders/Sprites/Field Sprites/Forst.yy",
+    "path": "folders/Sprites/Old FG BG sprites/Forst.yy",
   },
   "preMultiplyAlpha": false,
   "sequence": {

@@ -1,11 +1,11 @@
 {
   "resourceType": "GMScript",
   "resourceVersion": "1.0",
-  "name": "scr_E11_Weapon",
+  "name": "scr_S04",
   "isCompatibility": false,
   "isDnD": false,
   "parent": {
-    "name": "E Items",
-    "path": "folders/Scripts/Item Commands/E Items.yy",
+    "name": "S Items",
+    "path": "folders/Scripts/Item Commands/S Items.yy",
   },
 }

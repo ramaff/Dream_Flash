@@ -124,7 +124,7 @@ function scr_Current_Heart_Stats() {
 	}
 	///////////////////////////////////////////// Cope Heart
 	if currHeart = 51 {
-		global.currenthearthp = 20 * global.T[1];
+		global.currenthearthp = 20 * global.S[4];
 	}
 	///////////////////////////////////////////// Security Heart
 	if currHeart = 52 {

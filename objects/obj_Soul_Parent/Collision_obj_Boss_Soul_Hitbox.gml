@@ -33,6 +33,8 @@ if instance_exists(other.bossid) and soul_underground <= 0 {
 	    var damageamount = other.bossid.bosscontactdamage + (global.soulloathing / 10);
 	    var defenseamount = (sdefenseadd + sdefensebuffamount + scontactdefenseadd) + global.currentheartdefense + scr_Class_Stat_Defense_Increase();
     
+		damageamount = scr_B05_v2(damageamount, false);
+	
 		if global.A[11] > 0 {
 			if (other.bossid.bosshealth < 0) {
 				damageamount = 0;

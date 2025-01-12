@@ -261,11 +261,9 @@ function scr_Load_Run() {
 		global.downwardSpiralBoost = ini_read_real("Run","downwardSpiralBoost",0);
 		global.B06HeartConversions = ini_read_real("Run","B06HeartConversions",0);
 		
-		global.OA5rooms = ini_read_string("Run", "OA5rooms",0);
-		global.OA5rooms = json_parse(global.OA5rooms);
-		
-		Soul_Weapons_Control.weapon = ini_read_string("Run", "weapon",0);
-		Soul_Weapons_Control.weapon = json_parse(Soul_Weapons_Control.weapon);
+		global.OA5rooms = json_parse(ini_read_string("Run", "OA5rooms", "[]"));
+		Soul_Weapons_Control.weapon = json_parse(ini_read_string("Run", "weapon", "[]"))
+		global.items = json_parse(ini_read_string("Run", "items", "[]"))
 		
 	
         

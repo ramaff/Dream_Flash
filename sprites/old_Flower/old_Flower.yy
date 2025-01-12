@@ -26,7 +26,7 @@
   "origin": 4,
   "parent": {
     "name": "Flower Fields",
-    "path": "folders/Sprites/Field Sprites/Flower Fields.yy",
+    "path": "folders/Sprites/Old FG BG sprites/Flower Fields.yy",
   },
   "preMultiplyAlpha": false,
   "sequence": {

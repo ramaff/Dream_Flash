@@ -3,7 +3,7 @@
 
 // Soul Damage Calculation Script
 
-function scr_T01_Decay(damage){
+function scr_S04_Decay(damage){
 	var i = global.currentheart;
 	with (Soul_Hearts_Control) {
 		if heart[i,2] = 51 {

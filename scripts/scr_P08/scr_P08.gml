@@ -32,10 +32,7 @@ function scr_P08(){
 			current_weapon_stats.Shot_Speed = 0
 			current_weapon_stats.Shot_Forward = 0;
 			
-			if current_weapon_stats.Shot_Beam = 0 {
-				current_weapon_stats.Shot_Life_Span = current_weapon_stats.Shot_Life_Span * 2
-				current_weapon_stats.Shot_Lobbing = true
-			} else {
+			if current_weapon_stats.Shot_Beam = 1 {
 				current_weapon_stats.Shot_Direction = scr_Wave(0, 360, 2, 0);
 				current_weapon_stats.Shot_Size = current_weapon_stats.Shot_Size * 0.5;
 				current_weapon_stats.Shot_Mouse = 0;
@@ -54,6 +51,7 @@ function scr_P08(){
 		
 			if current_weapon_stats.Shot_Beam = 0 {
 				current_weapon_stats.Shot_Lobbing = true;
+				current_weapon_stats.Shot_Life_Span = current_weapon_stats.Shot_Life_Span * 2
 				current_weapon_stats.Shot_Height += 20
 				current_weapon_stats.Shot_Fall_Speed = -0.4
 			
@@ -61,7 +59,7 @@ function scr_P08(){
 				var _time = current_weapon_stats.Shot_Life_Span;
 				var _vel = current_weapon_stats.Shot_Fall_Speed;
 
-		        current_weapon_stats.Shot_Gravity = ((2 * _dist) / (_time * _time)) - ((2 * _vel) / _time)
+		        current_weapon_stats.Shot_Gravity = scr_Accel_From_DTV(_dist, _time, _vel)
 			}
 			
 			scr_Weapon_Output(spawnProjectile, minion)

@@ -217,27 +217,8 @@ scr_Scrub_Soul_Slip();
 
 scr_Soul_Item_Step_After();
 
-/*
-if !(instance_exists(Tutorial_Control)) {
-	if soulstun = 0 and soulfreeze = 0 and soulsleep = 0 {
-		
-	}
-} else {
-		
-} */
-
 x += soulCurrentHorizontalSpeed;
 y += soulCurrentVerticalSpeed;
-
-//image_speed = 0;
-if dx > 0 {
-    //soulSizeX = -(abs(soulSizeX));
-	//size = -0.5
-} 
-if dx < 0 {
-    //soulSizeX = (abs(soulSizeX));
-	//size = 0.5;
-}
 
 if scurrentstate = "Powering Up" {
 	scr_State_Powering_Up();	
@@ -279,7 +260,7 @@ sdelay -= sdelayregenfactor;
 if sdelay < 0 {
     sdelay = 0;
 }
-scr_N05_Step(sdelayregenfactor);
+scr_N03_Step(sdelayregenfactor);
 
 tdelay -= tdelayregenfactor;
 if tdelay < 0 {

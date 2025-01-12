@@ -117,6 +117,9 @@ function scr_Soul_Stats_Setup() {
 	sheartboost = global.soulheartboost;
 
 	//tboost = global.teleportboost;
+	
+	// item releated stuff
+	cant_help = 0
 
 
 }

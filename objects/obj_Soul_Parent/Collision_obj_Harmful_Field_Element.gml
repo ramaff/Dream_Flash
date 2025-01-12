@@ -19,6 +19,7 @@ if soulinvincibility <= 0 and soul_underground <= 0 {
 	
 	damageamount = damageamount / negate;
 	defenseamount = defenseamount / negate;
+	damageamount = scr_B05_v2(damageamount, false);
 		
 		
 		scr_Soul_Damage_Calculation(damageamount, defenseamount);

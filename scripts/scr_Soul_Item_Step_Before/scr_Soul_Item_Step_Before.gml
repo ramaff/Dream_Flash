@@ -9,7 +9,7 @@ function scr_Soul_Item_Step_Before() {
 	scr_E13();
 
 	scr_OA02();
-	scr_OB04();
+	scr_P10();
 	
 	scr_P04();
 	//scr_P08();
@@ -23,6 +23,8 @@ function scr_Soul_Item_Step_Before() {
 	scr_OC05();
 	
 	scr_XC06_Step();
+	
+	scr_OB04();
 
 
 }

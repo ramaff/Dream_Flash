@@ -72,8 +72,8 @@
   "nineSlice": null,
   "origin": 0,
   "parent": {
-    "name": "Field Sprites",
-    "path": "folders/Sprites/Field Sprites.yy",
+    "name": "Old FG BG sprites",
+    "path": "folders/Sprites/Old FG BG sprites.yy",
   },
   "preMultiplyAlpha": false,
   "sequence": {

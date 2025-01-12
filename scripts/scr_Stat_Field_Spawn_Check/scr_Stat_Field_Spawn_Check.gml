@@ -13,16 +13,7 @@ function scr_Stat_Field_Spawn_Check() {
 	    global.floor[global.currentroom,6 + j] = "00"; 
 	}
         
-	itemNumChoice = 2 + floor((global.soulhope + random(100 + global.soulhope * 3)) / 100);
-	
-	var fr = frac(global.extraitems);
-	itemNumChoice += global.extraitems - fr;
-			
-	if fr > 0 {
-		if scr_Chance(1 / fr) {
-			itemNumChoice += 1;
-		}
-	}
+	itemNumChoice = scr_Item_Field_Count(2)
 	
 	itemNumPick = 1;
 	var class = global.floor[global.currentroom,0];

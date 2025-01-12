@@ -2001,7 +2001,7 @@
         "Shot_Pierce": 99,
         "Shot_Ground": true,
         "Shot_Forward": 1,
-        "Shot_Size": 0.2,
+        "Shot_Size": 0.3,
         "Shot_Image_Speed": 1,
         "Shot_Default_Count": 1,
         "Shot_Alpha": 0,

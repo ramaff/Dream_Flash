@@ -27,8 +27,8 @@ function scr_Soul_Damage_Calculation(_damage_amount, _defense_amount) {
 		if global.B[3] > 0 {
 			scr_B03(truedam)
 		}
-		if global.T[1] > 0 {
-			scr_T01_Decay(truedam)
+		if global.S[4] > 0 {
+			scr_S04_Decay(truedam)
 		}
 		scr_XC05(truedam);
 		scr_B14_Heart(truedam);

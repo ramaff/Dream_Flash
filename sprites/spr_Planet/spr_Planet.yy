@@ -27,7 +27,7 @@
   "origin": 4,
   "parent": {
     "name": "Space",
-    "path": "folders/Sprites/Field Sprites/Space.yy",
+    "path": "folders/Sprites/Old FG BG sprites/Space.yy",
   },
   "preMultiplyAlpha": false,
   "sequence": {

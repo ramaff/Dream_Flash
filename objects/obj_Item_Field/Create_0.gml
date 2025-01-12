@@ -8,10 +8,10 @@ global.currentOrbit = 500;
 
 fieldActive = 1;
 
-scr_N02();
+scr_T01();
 scr_OA03();
-scr_N03();
-scr_N07();
+scr_T02();
+scr_T03();
 
 image_xscale = 0.5;
 image_yscale = 0.5;

@@ -12,7 +12,7 @@ function scr_OC03(cWP = global.currentweapon){
 	if global.OC[3] > 0 {
 		
 		weaponDelay = weaponDelay * 3;
-		weaponCost = weaponCost * 3;
+		weaponCost = weaponCost * 3;	
 		
 		var fval = 0;
 		for(bi = 0; bi < 9; bi++) {
@@ -20,7 +20,7 @@ function scr_OC03(cWP = global.currentweapon){
 				Shot_Repetition[bi] = global.OC[3] + 2;
 				Shot_Repetition_Type[bi] = "Stubborn";
 				if current_weapon_stats.Shot_Mouse = 0 {
-					Shot_Repetition_Direction[bi] =scr_Dupe_Struct( current_weapon_stats.Shot_Direction);
+					Shot_Repetition_Direction[bi] = current_weapon_stats.Shot_Direction;
 				} else {
 					Shot_Repetition_Direction[bi] = point_direction(x,y,mouse_x,mouse_y);
 				}

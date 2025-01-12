@@ -9,7 +9,8 @@ if soulinvincibility <= 0 and other.bullet_stats.bullet_power > 0 and soul_under
     
     var damageamount = other.bullet_stats.bullet_power + (global.souldespair / 20) + (global.soulloathing / 10);
     var defenseamount = (sdefenseadd + sdefensebuffamount) + global.currentheartdefense + (global.soulvanity / 20);
-    
+    damageamount = scr_B05_v2(damageamount, false);
+	
 	hitType = "Nonboss";
 	
     if (damageamount > defenseamount) {

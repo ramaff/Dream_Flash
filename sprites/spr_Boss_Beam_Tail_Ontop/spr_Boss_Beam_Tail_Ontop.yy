@@ -23,7 +23,7 @@
     {"resourceType":"GMImageLayer","resourceVersion":"1.0","name":"602d7f21-e211-412b-9998-86fbf382fee1","blendMode":0,"displayName":"default","isLocked":false,"opacity":100.0,"visible":true,},
   ],
   "nineSlice": null,
-  "origin": 4,
+  "origin": 3,
   "parent": {
     "name": "Laser Beams",
     "path": "folders/Sprites/Boss Bullet Sprites/Laser Beams.yy",
@@ -59,7 +59,7 @@
     ],
     "visibleRange": null,
     "volume": 1.0,
-    "xorigin": 120,
+    "xorigin": 0,
     "yorigin": 120,
   },
   "swatchColours": null,

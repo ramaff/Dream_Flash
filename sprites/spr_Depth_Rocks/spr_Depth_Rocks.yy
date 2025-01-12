@@ -29,7 +29,7 @@
   "origin": 9,
   "parent": {
     "name": "Caves",
-    "path": "folders/Sprites/Field Sprites/Caves.yy",
+    "path": "folders/Sprites/Old FG BG sprites/Caves.yy",
   },
   "preMultiplyAlpha": false,
   "sequence": {

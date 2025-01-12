@@ -3,7 +3,7 @@
 
 // Boss Beat Script
 
-function scr_N04_Pay(){
+function scr_N02_Pay(){
 	
 	var _recall_objs = [obj_Soul_Flash, obj_Soul_Feel, obj_Soul_Dream, obj_Soul_Nightmare]
 	with (obj_Productivity) {

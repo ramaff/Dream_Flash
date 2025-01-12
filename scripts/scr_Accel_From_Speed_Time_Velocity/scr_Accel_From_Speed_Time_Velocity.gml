@@ -1,7 +1,7 @@
 // Script assets have changed for v2.3.0 see
 // https://help.yoyogames.com/hc/en-us/articles/360005277377 for more information
-function scr_N07(){
-	if global.N[7] > 0 {
-		instance_create((room_width / 2) - 200,(room_height / 2) - 200, obj_Inspired);
-	}
+function scr_Accel_From_DTV(_dist, _time, _vel){
+
+	return ((2 * _dist) / (_time * _time)) - ((2 * _vel) / _time)
+
 }

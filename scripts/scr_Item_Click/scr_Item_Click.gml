@@ -199,6 +199,7 @@ function scr_Item_Click(_stacks = 1, _linger = false){
 	
 		if weapon = 0 {
 			scr_Item_State_Credit_Add(itemVal);
+			global.items[array_length(global.items)] = itemVal
 		
 			if recoGroup = "I" || itemVal = "A00" || itemVal = "B00" || itemVal = "C00" || itemVal = "D00" || itemVal = "E00" || itemVal = "F00" { 
 				scr_Sound_Effect(snd_Pick_Up_Item_Neutral);
@@ -215,6 +216,8 @@ function scr_Item_Click(_stacks = 1, _linger = false){
 		} else {
 			recollectionCount = global.recollectionWeap[string_digits(itemVal)]	
 		}
+		
+		
 	
 	}
 	
@@ -230,7 +233,7 @@ function scr_Item_Click(_stacks = 1, _linger = false){
 	
 	scr_Memory_Info_Bank();
 	
-	if _linger = true || recollectionCount <= 1 {
+	if _linger = true {
 		scr_Item_Recollection_Cloud(120);
 	}
 	

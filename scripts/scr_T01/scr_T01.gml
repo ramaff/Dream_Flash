@@ -1,28 +1,7 @@
-/// Location: Heart Loss Event
-function scr_T01() {
-	
-	/*if heart[global.currentheart,2] >= 51 and heart[global.currentheart,2] <= 52 {
-		exit;	
-	} */
-	
-	//heart[global.currentheart,2] = 0;
-	// global.totalhearts -= 1;
-    
+// Script assets have changed for v2.3.0 see
+// https://help.yoyogames.com/hc/en-us/articles/360005277377 for more information
+function scr_T01(){
 	if global.T[1] > 0 {
-			
-		var hct = 1;
-		repeat(global.T[1]) {
-			Soul_Hearts_Control.heart[global.currentheart + hct, 2] = 51;
-			Soul_Hearts_Control.heart[global.currentheart + hct, 3] = 20;
-			Soul_Hearts_Control.heart[global.currentheart + hct, 4] = 20;
-			global.totalhearts++;
-			hct++;
-			
-			scr_Current_Heart_Stats();
-		}
-			
-	    //global.totalhearts++;
+		instance_create((room_width / 2) + 200,(room_height / 2) + 200, obj_Think_Again);
 	}
-
-
 }

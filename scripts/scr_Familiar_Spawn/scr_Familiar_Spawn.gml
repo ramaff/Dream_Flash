@@ -2,7 +2,7 @@ function scr_Familiar_Spawn() {
 
 	scr_Gem_Spawn();
 	
-	scr_N04();
+	scr_N02();
 	
 	minions[0] = noone;
 	followminions[0] = noone;

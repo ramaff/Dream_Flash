@@ -169,17 +169,7 @@ function scr_Floor_Generation() {
 		var itemNumChoice = 1;
 		
 	    if global.floor[i,0] = "Strength Field" || global.floor[i,0] = "Vitality Field" || global.floor[i,0] = "Dexterity Field" || global.floor[i,0] = "Essence Field" || global.floor[i,0] = "Perception Field" {
-	        itemNumChoice = 2 + floor((global.soulhope + random(100 + global.soulhope * 3)) / 100);
-		
-			
-			var fr = frac(global.extraitems);
-			itemNumChoice += global.extraitems - fr;
-			
-			if fr > 0 {
-				if scr_Chance(1 / fr) {
-					itemNumChoice += 1;
-				}
-			}
+	        itemNumChoice = scr_Item_Field_Count(2)
 			
 	        itemNumPick = 1;
 	        for(var j = 1; j <= itemNumChoice; j++) {
@@ -189,16 +179,7 @@ function scr_Floor_Generation() {
 	        global.floor[i,19] = scr_Stat_Up_Choose(global.floor[i,0]);
 	    }
 	    if global.floor[i,0] = "Misc Field" {
-	        itemNumChoice = 2 + floor((global.soulhope + random(100 + global.soulhope * 3)) / 100);
-		
-			var fr = frac(global.extraitems)
-			itemNumChoice += global.extraitems - fr;
-			
-			if fr > 0 {
-				if scr_Chance(1 / fr) {
-					itemNumChoice += 1;
-				}
-			}
+	        itemNumChoice = scr_Item_Field_Count(2)
 			
 	        itemNumPick = 1;
 	        for(var j = 1; j <= itemNumChoice; j++) {
@@ -215,16 +196,7 @@ function scr_Floor_Generation() {
 	    }
 	    */
 	    if global.floor[i,0] = "Weapon Field" {
-	        itemNumChoice = 2 + floor((global.soulhope + random(100 + global.soulhope * 3)) / 100);
-		
-			var fr = frac(global.extraitems)
-			itemNumChoice += global.extraitems - fr;
-			
-			if fr > 0 {
-				if scr_Chance(1 / fr) {
-					itemNumChoice += 1;
-				}
-			}
+	        itemNumChoice = scr_Item_Field_Count(2)
 			
 	        itemNumPick = 1;
 		
@@ -292,16 +264,7 @@ function scr_Floor_Generation() {
 	        global.floor[i,4] = bg_Mind_Chamber_Tiles;
 	        global.floor[i,3] += 256 + (64 * global.currentchapter);
 			
-			itemNumChoice = 1 + floor((global.soulhope + random(100 + global.soulhope * 3)) / 100);
-		
-			var fr = frac(global.extraitems)
-			itemNumChoice += global.extraitems - fr;
-			
-			if fr > 0 {
-				if scr_Chance(1 / fr) {
-					itemNumChoice += 1;
-				}
-			}
+			itemNumChoice = scr_Item_Field_Count(1)
 			
 	        itemNumPick = 1;
 	        for(var j = 1; j <= itemNumChoice; j++) {
@@ -336,13 +299,7 @@ function scr_Floor_Generation() {
 	        global.floor[i,4] = bg_State_Tiles;
 	        global.floor[i,3] += 256 + (64 * global.currentchapter);
 			
-			itemNumChoice = 1 + floor((global.soulhope + random(global.soulhope * 3)) / 100);
-	        itemNumPick = 1;
-
-			
-	        for(var j = 1; j <= itemNumChoice; j++) {
-	            global.floor[i,j+6] = scr_Misc_Field_Pool_Pick();
-	        }
+			itemNumChoice = scr_Item_Field_Count(1)
 			
 			var baseroom = ceil(i / 4);
 			
