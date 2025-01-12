@@ -5,6 +5,7 @@ scr_Soul_Utility_Setup();
 scr_Familiar_Spawn();
 
 scr_OB03();
+scr_S05()
 
 alarm[1] = 1;
 alarm[2] = 2;

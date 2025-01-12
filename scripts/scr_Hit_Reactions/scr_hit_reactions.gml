@@ -67,12 +67,12 @@ function scr_Hit_Reactions(_damage_amount, _defense_amount) {
 	
 	scr_F06(dmg);
 
-	if dmg > 2 {
+	/*if dmg > 2 {
 		var hchance = irandom(smaxhealth);
 		if (dmg > hchance) {
 			scr_S05();	
 		}
-	}
+	} */
 
 	var hchance = irandom(smaxhealth / 2);
 	if (dmg > hchance) and (dmg < shealth) {

@@ -25,4 +25,4 @@ Charge_Lifespan = 0;
 Charge_Time = 0;
 Charge_Hold = 0;
 Charge_Size = 0;
-	
+

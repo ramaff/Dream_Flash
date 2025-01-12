@@ -1,13 +1,14 @@
 function scr_S05() {
-	// Soul Hit Reactions
 
 	if global.S[5] > 0 {
+		
+		with instance_create(x,y, obj_cope_zone_v2) {
+		}
 
-	    repeat(global.S[5]) {
-			with instance_create(x,y,obj_Cope_Zone) {
-				size = 0.01;	
+	    repeat(2) {
+			with instance_create(x,y,obj_cope_zone_v2) {
 				scr_Basic_Teleport();
-			}	
+			}
 		}	
 	}
 

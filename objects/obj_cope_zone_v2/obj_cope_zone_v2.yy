@@ -1,13 +1,11 @@
 {
   "resourceType": "GMObject",
   "resourceVersion": "1.0",
-  "name": "obj_Happy_Place",
+  "name": "obj_cope_zone_v2",
   "eventList": [
     {"resourceType":"GMEvent","resourceVersion":"1.0","name":"","collisionObjectId":null,"eventNum":0,"eventType":0,"isDnD":false,},
     {"resourceType":"GMEvent","resourceVersion":"1.0","name":"","collisionObjectId":null,"eventNum":0,"eventType":3,"isDnD":false,},
     {"resourceType":"GMEvent","resourceVersion":"1.0","name":"","collisionObjectId":null,"eventNum":0,"eventType":2,"isDnD":false,},
-    {"resourceType":"GMEvent","resourceVersion":"1.0","name":"","collisionObjectId":null,"eventNum":1,"eventType":2,"isDnD":false,},
-    {"resourceType":"GMEvent","resourceVersion":"1.0","name":"","collisionObjectId":null,"eventNum":2,"eventType":2,"isDnD":false,},
   ],
   "managed": true,
   "overriddenProperties": [],
@@ -15,7 +13,10 @@
     "name": "Misc Item Stuff and objects",
     "path": "folders/Objects/Items/Misc Item Stuff and objects.yy",
   },
-  "parentObjectId": null,
+  "parentObjectId": {
+    "name": "obj_Depth",
+    "path": "objects/obj_Depth/obj_Depth.yy",
+  },
   "persistent": false,
   "physicsAngularDamping": 0.1,
   "physicsDensity": 0.5,
@@ -32,8 +33,8 @@
   "properties": [],
   "solid": false,
   "spriteId": {
-    "name": "spr_Happy_Place",
-    "path": "sprites/spr_Happy_Place/spr_Happy_Place.yy",
+    "name": "spr_Cope_Zone",
+    "path": "sprites/spr_Cope_Zone/spr_Cope_Zone.yy",
   },
   "spriteMaskId": null,
   "visible": true,
