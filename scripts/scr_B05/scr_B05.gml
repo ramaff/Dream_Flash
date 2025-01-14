@@ -4,7 +4,7 @@ function scr_B05_damage_reduction(damageamount) {
 	}
 	damageamount = damageamount / (1 + (0.25 * global.B[5]));
 		
-	var _b_dir = other.direction - 90 + random(180)
+	var _b_dir = point_direction(x, y, other.x, other.y) - 60 + random(120)
 	if other.speed = 0 {
 		_b_dir = random(360)	
 	}

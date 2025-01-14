@@ -13,7 +13,7 @@
   "edgeFiltering": false,
   "For3D": false,
   "frames": [
-    {"resourceType":"GMSpriteFrame","resourceVersion":"1.1","name":"8475d749-7264-4e33-b5d7-a4b1094b4dd7",},
+    {"resourceType":"GMSpriteFrame","resourceVersion":"1.1","name":"5a3814c3-184e-4373-9008-80c815851ffe",},
   ],
   "gridX": 0,
   "gridY": 0,
@@ -54,7 +54,7 @@
     "timeUnits": 1,
     "tracks": [
       {"resourceType":"GMSpriteFramesTrack","resourceVersion":"1.0","name":"frames","builtinName":0,"events":[],"inheritsTrackColour":true,"interpolation":1,"isCreationTrack":false,"keyframes":{"resourceType":"KeyframeStore<SpriteFrameKeyframe>","resourceVersion":"1.0","Keyframes":[
-            {"resourceType":"Keyframe<SpriteFrameKeyframe>","resourceVersion":"1.0","Channels":{"0":{"resourceType":"SpriteFrameKeyframe","resourceVersion":"1.0","Id":{"name":"8475d749-7264-4e33-b5d7-a4b1094b4dd7","path":"sprites/spr_Brain_Fart_Art/spr_Brain_Fart_Art.yy",},},},"Disabled":false,"id":"f41c0bda-3c7c-441e-895c-b3f1834a035c","IsCreationKey":false,"Key":0.0,"Length":1.0,"Stretch":false,},
+            {"resourceType":"Keyframe<SpriteFrameKeyframe>","resourceVersion":"1.0","Channels":{"0":{"resourceType":"SpriteFrameKeyframe","resourceVersion":"1.0","Id":{"name":"5a3814c3-184e-4373-9008-80c815851ffe","path":"sprites/spr_Brain_Fart_Art/spr_Brain_Fart_Art.yy",},},},"Disabled":false,"id":"b8d586fe-86c1-4f16-ab68-e04c16f00776","IsCreationKey":false,"Key":0.0,"Length":1.0,"Stretch":false,},
           ],},"modifiers":[],"spriteId":null,"trackColour":0,"tracks":[],"traits":0,},
     ],
     "visibleRange": null,
