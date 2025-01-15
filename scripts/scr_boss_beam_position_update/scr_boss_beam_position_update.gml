@@ -10,6 +10,9 @@ function scr_boss_beam_position_update(){
 	
 		x = seg_tail.x + _xx;
 		y = seg_tail.y + _yy;
+		
+		image_xscale = seg_tail.image_xscale;
+		image_yscale = seg_tail.image_yscale;
 	} else {
 		x = bullet_stats.bullet_origin.x	
 		y = bullet_stats.bullet_origin.y

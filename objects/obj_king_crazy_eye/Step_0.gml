@@ -26,7 +26,7 @@ if active_attack_delay <= 0 and active_attack_cooldown <= 0 and active_attack_du
 	
     if active_attack = 1 {
 		// Setup how many attacks per boss move, delay, etc
-		scr_Boss_Attack_Time_Setup_v2(1, 50, 1, 180, 120, 10);
+		scr_Boss_Attack_Time_Setup_v2(1, 50, 1, 180, 120, 30);
 		
 		// Can set up the initial pattern direction
 		// patternDirection = scr_Soul_Point();
@@ -91,12 +91,12 @@ if active_attack_duration <= 0 {
 /// Boss Sprite Code
 
 // Go back to normal default size
-scr_Boss_Size_Lerp(0.15);
+scr_Boss_Size_Lerp_Dir(0.15);
 
 // Handles boss attack sprite animation
 if active_attack != 0 {
 	var _hold_frame = 1;
-	scr_Boss_Attack_Sprite_v2(spr_king_crazy_eye, _hold_frame, 2, 2, 20);
+	scr_Boss_Attack_Sprite_v2(spr_king_crazy_eye_shoot, _hold_frame, 2, 2, 20);
 	if image_index = _hold_frame {
 		scr_Boss_Wobble("Horizontal", 2, 0.4, 0)	
 	}

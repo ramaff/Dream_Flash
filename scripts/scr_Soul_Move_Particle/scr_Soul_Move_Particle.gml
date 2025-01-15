@@ -1,6 +1,6 @@
 // Script assets have changed for v2.3.0 see
 // https://help.yoyogames.com/hc/en-us/articles/360005277377 for more information
-function scr_Soul_Move_Particle(xx, yy, type){
+function scr_Soul_Move_Particle(xx, yy, type, _blend = c_white){
 	var partrad = 15;
 	var parts = spr_Diamond_Part
 	
@@ -58,6 +58,8 @@ function scr_Soul_Move_Particle(xx, yy, type){
 			alarm[1] = life / 2;
 		
 			depth = other.depth + 2;
+			
+			image_blend = _blend;
 
 		}
 	} else {
@@ -77,6 +79,8 @@ function scr_Soul_Move_Particle(xx, yy, type){
 			alarm[1] = 1;
 		
 			depth = other.depth + 2;
+			
+			image_blend = _blend;
 
 		}
 	}
