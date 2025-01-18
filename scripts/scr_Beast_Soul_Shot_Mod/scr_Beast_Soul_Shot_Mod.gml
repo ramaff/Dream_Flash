@@ -25,15 +25,11 @@ function scr_Beast_Soul_Shot_Mod(_cw) {
 		
 		_cw.Shot_State = "Beast";
 		
-		with instance_create(x, y, obj_Force_Push) {
-			target = other.id
-			alarm[0] = 20;
-
-			force = 1 + (1.5 * sqrt(_cw.Real_Essence_Cost));
-			force_friction = force / alarm[0];
-			force_direction = point_direction(target.x, target.y, mouse_x, mouse_y) + _cw.Shot_Angle_Relative;
-			force_angular_velocity = _cw.Shot_Angular_Velocity;
-		}
+		var _force = 1 + (1.5 * sqrt(_cw.Real_Essence_Cost));
+		var _force_direction = point_direction(target.x, target.y, mouse_x, mouse_y) + _cw.Shot_Angle_Relative;
+		var _force_angular_velocity = _cw.Shot_Angular_Velocity;
+	
+		scr_force_push(other.id, 20, _force, _force / 20, _force_direction, _force_angular_velocity)
 		
 		weaponCost = weaponCost * 2;
 		weaponDelay = weaponDelay * 1.5;

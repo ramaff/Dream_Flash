@@ -135,7 +135,7 @@ if active_attack_delay <= 0 and pattern_cooldown <= 0 and pattern_count > 0 {
 			repeat(2) {
 				attack_stats.bullet_direction = _dir - ((90 - _dir_add) / 2)
 				//show_debug_message(attack_stats.bullet_direction)
-				attack_stats.boss_xoffset = lengthdir_x(120,image_angle + _dir_add);
+				attack_stats.boss_xoffset = lengthdir_x(120,image_angle + _dir_add) + lengthdir_y(85,image_angle + 270);
 				attack_stats.boss_yoffset = lengthdir_y(120,image_angle + _dir_add) + lengthdir_y(85,image_angle + 270);
 			
 			    scr_boss_beam_shoot_v2(attack_stats)
@@ -176,8 +176,8 @@ if active_attack_delay <= 0 and pattern_cooldown <= 0 and pattern_count > 0 {
 			repeat(2) {
 				_dir_add += 180
 			
-				attack_stats.boss_xoffset = lengthdir_x(100,image_angle + _dir_add);
-				attack_stats.boss_yoffset = lengthdir_y(100,image_angle + _dir_add) + lengthdir_y(85,image_angle + 270);
+				attack_stats.boss_xoffset = lengthdir_x(190,image_angle + _dir_add) - lengthdir_x(100,image_angle + 270);
+				attack_stats.boss_yoffset = lengthdir_y(190,image_angle + _dir_add) - lengthdir_y(100,image_angle + 270);
 				scr_boss_shoot_v2();
 			
 				attack_stats.wave_strength = -4;
@@ -207,8 +207,8 @@ if active_attack_delay <= 0 and pattern_cooldown <= 0 and pattern_count > 0 {
 			repeat(2) {
 				attack_stats.bullet_direction = _dir - (90 + _dir_add)
 				//show_debug_message(attack_stats.bullet_direction)
-				attack_stats.boss_xoffset = lengthdir_x(120,image_angle + _dir_add);
-				attack_stats.boss_yoffset = lengthdir_y(120,image_angle + _dir_add) + lengthdir_y(85,image_angle + 270);
+				attack_stats.boss_xoffset = lengthdir_x(190,image_angle + _dir_add) - lengthdir_x(100,image_angle + 270);
+				attack_stats.boss_yoffset = lengthdir_y(190,image_angle + _dir_add) - lengthdir_y(100,image_angle + 270);
 			
 			    scr_boss_beam_shoot_v2(attack_stats)
 				_dir_add += 180;
@@ -244,8 +244,8 @@ if active_attack_delay <= 0 and pattern_cooldown <= 0 and pattern_count > 0 {
 			attack_stats.bullet_life_span = 300;
 			attack_stats.bullet_count = 8;
 			attack_stats.bullet_spread = 15;
-			attack_stats.boss_xoffset = lengthdir_x(100,image_angle + _dir_add);
-			attack_stats.boss_yoffset = lengthdir_y(100,image_angle + _dir_add) + lengthdir_y(85,image_angle + 270);
+			attack_stats.boss_xoffset = lengthdir_x(120,image_angle + _dir_add) + lengthdir_y(85,image_angle + 270);
+			attack_stats.boss_yoffset = lengthdir_y(120,image_angle + _dir_add) + lengthdir_y(85,image_angle + 270);
 			scr_boss_shoot_v2();
 		}
 

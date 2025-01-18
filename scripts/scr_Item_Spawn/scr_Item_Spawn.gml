@@ -134,12 +134,13 @@ function scr_Item_Spawn() {
 		        if string_digits(itemVal) = itemVal {
 		            itemVal = real(itemVal);
 		        }
+				stacks = 1;
 		        itemData = 6 + i;
 		        if other.fieldType = "Weapon Field" {
 		            weapon = 1;
 		        }
 				if other.fieldType = "Hyper Field" {
-					stacks = 3;	
+					stacks = 2;	
 				}
 				
 				if i > 2 {
@@ -149,7 +150,7 @@ function scr_Item_Spawn() {
 				
 				fieldColor = tFieldColor;
 				
-				scr_Initial_Item_Memory_Get()
+				scr_Initial_Item_Memory_Get(stacks)
 		    }
 		}
 	}

@@ -199,7 +199,6 @@ function scr_Item_Click(_stacks = 1, _linger = false){
 	
 		if weapon = 0 {
 			scr_Item_State_Credit_Add(itemVal);
-			global.items[array_length(global.items)] = itemVal
 		
 			if recoGroup = "I" || itemVal = "A00" || itemVal = "B00" || itemVal = "C00" || itemVal = "D00" || itemVal = "E00" || itemVal = "F00" { 
 				scr_Sound_Effect(snd_Pick_Up_Item_Neutral);
@@ -207,11 +206,13 @@ function scr_Item_Click(_stacks = 1, _linger = false){
 				variable_struct_set(global.tutorial_progress, "spiritual_stat_tutorial", 7)
 			} else if recoGroup = "XA" or recoGroup = "XB" or recoGroup = "XC" {
 				scr_Sound_Effect(snd_Pick_Up_Item_Bad);
+				global.items[array_length(global.items)] = itemVal
 			} else {
 				scr_Sound_Effect(snd_Pick_Up_Item_Good);
 				if recoGroup = "A" || recoGroup = "B" || recoGroup = "C" || recoGroup = "D" || recoGroup = "E" || recoGroup = "F" {
-					scr_Tutorial_Note_Spawn("stat_level_up")	
+					scr_Tutorial_Note_Spawn("stat_level_up")
 				}
+				global.items[array_length(global.items)] = itemVal
 			}
 		} else {
 			recollectionCount = global.recollectionWeap[string_digits(itemVal)]	

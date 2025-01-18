@@ -1921,6 +1921,7 @@
     {"id":{"name":"spr_Calm_Restoration_Item","path":"sprites/spr_Calm_Restoration_Item/spr_Calm_Restoration_Item.yy",},},
     {"id":{"name":"spr_Healing_Concentration_Item","path":"sprites/spr_Healing_Concentration_Item/spr_Healing_Concentration_Item.yy",},},
     {"id":{"name":"spr_Contact_Field_Item","path":"sprites/spr_Contact_Field_Item/spr_Contact_Field_Item.yy",},},
+    {"id":{"name":"scr_Force_Push","path":"scripts/scr_Force_Push/scr_Force_Push.yy",},},
     {"id":{"name":"spr_Life_Draining_Aura_Item","path":"sprites/spr_Life_Draining_Aura_Item/spr_Life_Draining_Aura_Item.yy",},},
     {"id":{"name":"spr_Bounce_Back_Item","path":"sprites/spr_Bounce_Back_Item/spr_Bounce_Back_Item.yy",},},
     {"id":{"name":"scr_Create_Lightning_Streak","path":"scripts/scr_Create_Lightning_Streak/scr_Create_Lightning_Streak.yy",},},

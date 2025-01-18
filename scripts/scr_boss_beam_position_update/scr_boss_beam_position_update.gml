@@ -14,8 +14,8 @@ function scr_boss_beam_position_update(){
 		image_xscale = seg_tail.image_xscale;
 		image_yscale = seg_tail.image_yscale;
 	} else {
-		x = bullet_stats.bullet_origin.x	
-		y = bullet_stats.bullet_origin.y
+		x = bullet_stats.bullet_origin.x + bullet_stats.boss_xoffset;
+		y = bullet_stats.bullet_origin.y + bullet_stats.boss_yoffset;
 	}
 	image_angle = seg_angle;
 }

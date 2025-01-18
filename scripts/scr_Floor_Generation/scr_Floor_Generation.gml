@@ -214,7 +214,7 @@ function scr_Floor_Generation() {
 	        global.floor[i,8] = scr_Pool_Pick(global.h_item_pool);
 	        global.floor[i,9] = scr_Weapon_Item_Choose();
 	        global.floor[i,10] = scr_Weapon_Item_Choose();
-	        var miscChoose = choose(1,2,3)
+	        var miscChoose = choose(1,2,3,4)
 			var _first_misc = ""
 	        if miscChoose = 1 {
 	            global.floor[i,11] = scr_Pool_Pick(global.n_item_pool);
@@ -222,17 +222,21 @@ function scr_Floor_Generation() {
 	            global.floor[i,11] = scr_Pool_Pick(global.k_item_pool);
 	        } if miscChoose = 3 {
 	            global.floor[i,11] = scr_Pool_Pick(global.l_item_pool);
-	        }
+	        }if miscChoose = 4 {
+		        global.floor[i,11] = scr_Pool_Pick(global.t_item_pool);
+		    } 
 			_first_misc = string_letters(global.floor[i,11])
 			var _second_misc = _first_misc
 			while(_second_misc = _first_misc) {
-				miscChoose = choose(1,2,3)
+				miscChoose = choose(1,2,3,4)
 		        if miscChoose = 1 {
 		            global.floor[i,12] = scr_Pool_Pick(global.n_item_pool);
 		        } if miscChoose = 2 {
 		            global.floor[i,12] = scr_Pool_Pick(global.k_item_pool);
 		        } if miscChoose = 3 {
 		            global.floor[i,12] = scr_Pool_Pick(global.l_item_pool);
+		        } if miscChoose = 4 {
+		            global.floor[i,12] = scr_Pool_Pick(global.t_item_pool);
 		        } 
 				_second_misc = string_letters(global.floor[i,12])
 			}
@@ -252,10 +256,8 @@ function scr_Floor_Generation() {
 	        } if miscChoose = 6 {
 	            global.floor[i,13] = scr_Pool_Pick(global.g_item_pool);
 	        } if miscChoose = 7 {
-	            global.floor[i,13] = scr_Pool_Pick(global.t_item_pool);
-	        } if miscChoose = 8 {
 				global.floor[i,13] = scr_Pool_Pick(global.m_item_pool);
-			} if miscChoose = 9 {
+			} if miscChoose = 8 {
 	            global.floor[i,13] = scr_Pool_Pick(global.q_item_pool);
 	        }
 	    }

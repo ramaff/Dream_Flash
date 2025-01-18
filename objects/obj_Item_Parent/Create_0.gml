@@ -18,6 +18,6 @@ global.weaponTaken = 0;
 
 fieldColor = c_white;
 
-scr_Initial_Item_Memory_Get()
-
 stacks = 1;
+
+scr_Initial_Item_Memory_Get(stacks)

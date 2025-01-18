@@ -568,7 +568,7 @@ function scr_Boss_Choose(roomNum, exclude, difficultyAdd = 0) {
 	if bossform = 61.1
 	{
 	    bosstype = obj_wall_king;
-	    difficulty = 16;
+	    difficulty = 18;
 	    global.champ = choose(0);
 	}
 	if bossform = 64.1 // Puck

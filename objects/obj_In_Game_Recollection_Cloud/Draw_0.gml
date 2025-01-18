@@ -34,8 +34,8 @@ draw_text_color(x,y+_y_offset, string_hash_to_newline(recollectionString + recol
 
 if priceString != "" {
 	    //draw_set_alpha(image_alpha);
-		draw_text_color(x+24,y+_y_offset+104, string_hash_to_newline(priceString), c_black, c_black, c_black, c_black, image_alpha);
-		draw_sprite_ext(recollectionPriceType,0,x,y+_y_offset+108, 0.5, 0.5, 0, c_white, 1)
+		draw_text_color(x+64,y+_y_offset+104, string_hash_to_newline(priceString), c_black, c_black, c_black, c_black, image_alpha);
+		draw_sprite_ext(recollectionPriceType,0,x+40,y+_y_offset+108, 0.5, 0.5, 0, c_white, 1)
 	    //draw_set_alpha(1);
 }
 

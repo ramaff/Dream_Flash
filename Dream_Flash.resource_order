@@ -336,6 +336,7 @@
     {"name":"scr_umbrella_active","order":21,"path":"scripts/scr_umbrella_active/scr_umbrella_active.yy",},
     {"name":"reco_Behemoth","order":17,"path":"sprites/reco_Behemoth/reco_Behemoth.yy",},
     {"name":"obj_Bubble_Bullet","order":8,"path":"objects/obj_Bubble_Bullet/obj_Bubble_Bullet.yy",},
+    {"name":"scr_Force_Push","order":2,"path":"scripts/scr_Force_Push/scr_Force_Push.yy",},
     {"name":"scr_Create_Lightning_Streak","order":14,"path":"scripts/scr_Create_Lightning_Streak/scr_Create_Lightning_Streak.yy",},
     {"name":"reco_Wall_Of_Thoughts","order":16,"path":"sprites/reco_Wall_Of_Thoughts/reco_Wall_Of_Thoughts.yy",},
     {"name":"obj_Behemoth","order":2,"path":"objects/obj_Behemoth/obj_Behemoth.yy",},

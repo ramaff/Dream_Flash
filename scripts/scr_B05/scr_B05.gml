@@ -8,15 +8,10 @@ function scr_B05_damage_reduction(damageamount) {
 	if other.speed = 0 {
 		_b_dir = random(360)	
 	}
-		
-	with instance_create(x, y, obj_Force_Push) {
-		target = other.id
-		alarm[0] = 30
-
-		force = 5 + (5 * global.B[5]) + irandom(5);
-		force_friction = force / alarm[0];
-		force_direction = _b_dir;
-	}
+	
+	var _force = 5 + (5 * global.B[5]) + irandom(5);
+	
+	scr_force_push(other.id, 30, _force, _force / 30, _b_dir)
 	
 	return damageamount
 }

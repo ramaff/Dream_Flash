@@ -23,7 +23,7 @@ function scr_OB04() {
 			
 			cant_help -= _delay
 		
-			current_weapon_stats.Shot_Accuracy = 180;
+			current_weapon_stats.Shot_Accuracy = 150;
 			//current_weapon_stats.Shot_Count = current_weapon_stats.Shot_Count * global.OB[04]
 
 			if current_weapon_stats.Shot_Beam = 2 {
@@ -40,7 +40,7 @@ function scr_OB04() {
 			scr_Hard_Coded_Weapon_Stats(current_weapon_stats);
 		
 			if current_weapon_stats.Shot_Beam = 0 {
-				current_weapon_stats.Shot_Life_Span = current_weapon_stats.Shot_Life_Span * 0.5
+				current_weapon_stats.Shot_Life_Span = current_weapon_stats.Shot_Life_Span * 0.75
 				current_weapon_stats.Shot_Lobbing = true;
 				current_weapon_stats.Shot_Height += 20
 				current_weapon_stats.Shot_Fall_Speed = -2
