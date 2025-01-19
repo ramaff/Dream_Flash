@@ -723,6 +723,83 @@ function scr_Hard_Coded_Item_Stats(itemVal, items_to_add = 1, reload = false) {
 		} */
 		
 	}
+	if !reload {
+		if itemVal = "M01" {
+			scr_spawn_familar(x, y, obj_Wandering_Soul)	
+		}
+		if itemVal = "M02" {
+			scr_spawn_familar(x, y, obj_Friendly_Figment)	
+		}
+		if itemVal = "M03" {
+			scr_spawn_familar(x, y, obj_Fighter_Soul)	
+		}
+		if itemVal = "M04" {
+			scr_spawn_familar(x, y, obj_Butt_Of_Jokes)	
+		}
+		if itemVal = "M05" {
+			scr_spawn_familar(x, y, obj_Blaze_Soul)	
+		}
+		if itemVal = "M06" {
+			scr_spawn_familar(x, y, obj_Flash_Cannon)	
+		}
+		if itemVal = "M07" {
+			scr_spawn_familar(x, y, obj_Fuse_Soul)	
+		}
+		if itemVal = "M08" {
+			scr_spawn_familar(x, y, obj_Healthy_Thoughts)	
+		}
+		if itemVal = "M09" {
+			scr_spawn_familar(x, y, obj_Spike_Soul)	
+		}
+		if itemVal = "M10" {
+			scr_spawn_familar(x, y, obj_Corporeal_Chum)	
+		}
+		if itemVal = "M11" {
+			scr_spawn_familar(x, y, obj_Hungry_Soul)	
+		}
+		if itemVal = "M12" {
+			scr_spawn_familar(x, y, obj_Troubling_Thingo)	
+		}
+		if itemVal = "M13" {
+			scr_spawn_familar(x, y, obj_Copy_Cat_Soul)	
+		}
+		if itemVal = "M14" {
+			scr_spawn_familar(x, y, obj_Explosive_Manifesto)	
+		}
+		if itemVal = "M15" {
+			scr_spawn_familar(x, y, obj_Poisonous_Soul)	
+		}
+		if itemVal = "M16" {
+			scr_spawn_familar(x, y, obj_Cognition)	
+		}
+		if itemVal = "M17" {
+			scr_spawn_familar(x, y, obj_Bleeding_Soul)	
+		}
+		if itemVal = "M18" {
+			scr_spawn_familar(x, y, obj_Bullet_Eater)	
+		}
+		if itemVal = "M19" {
+			scr_spawn_familar(x, y, obj_Magican_Soul)	
+		}
+		if itemVal = "M20" {
+			scr_spawn_familar(x, y, obj_Positive_Thoughts)	
+		}
+		if itemVal = "M21" {
+			scr_spawn_familar(x, y, obj_Electro_Soul)	
+		}
+		if itemVal = "M22" {
+			scr_spawn_familar(x, y, obj_Glum_Chum)	
+		}
+		if itemVal = "M23" {
+			scr_spawn_familar(x, y, obj_Barrier_Soul)	
+		}
+		if itemVal = "M24" {
+			scr_spawn_familar(x, y, obj_Mello_Jello)	
+		}
+		if itemVal = "M25" {
+			scr_spawn_familar(x, y, obj_Rattlesoul)	
+		}
+	}
 	
 	if itemVal = "N01" {
 		global.extraitems += 1;

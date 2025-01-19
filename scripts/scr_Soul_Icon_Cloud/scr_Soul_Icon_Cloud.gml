@@ -3,7 +3,7 @@ function scr_Soul_Icon_Cloud() {
 	draw_set_colour(c_black);
 	draw_set_halign(fa_center);
 
-	depth -= 1000;
+	//depth -= 1000;
 	
 	var _xx = 200;
 	var _yy = 280;
@@ -37,7 +37,7 @@ function scr_Soul_Icon_Cloud() {
 		draw_text(x + _xx,y + _yy -116, string_hash_to_newline("Weapon Ess. Cost: " + "-" + string((1 - essCost) * 100) + "%"));
 	}
 
-	depth += 1000;
+	//depth += 1000;
 
 
 

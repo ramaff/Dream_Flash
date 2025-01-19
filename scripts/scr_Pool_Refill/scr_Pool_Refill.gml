@@ -169,6 +169,16 @@ function scr_Pool_Refill(pool){
 			}
 		}
 	}
+	if letter = "J" {
+		if !scr_State_Recollection_Unlocked() {
+			ds_list_delete(global.j_item_pool, ds_list_find_index(global.j_item_pool, "J06"))
+		}
+	}
+	if letter = "K" {
+		if !scr_State_Recollection_Unlocked() {
+			ds_list_delete(global.k_item_pool, ds_list_find_index(global.k_item_pool, "K08"))
+		}
+	}
 	
 
 }
