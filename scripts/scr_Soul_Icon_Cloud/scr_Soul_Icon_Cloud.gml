@@ -7,6 +7,13 @@ function scr_Soul_Icon_Cloud() {
 	
 	var _xx = 200;
 	var _yy = 280;
+	
+	var _xxx = 200;
+	var _yyy = 150;
+	
+	draw_sprite_ext(spr_Recollection_Cloud_v2_p3, 0, x + _xxx, y + _yyy, 0.5, 0.5, image_angle, image_blend, image_alpha)
+	draw_sprite_ext(spr_Recollection_Cloud_v2_p1, 0, x + (_xxx / 4.5), y + (_yyy / 8), 0.5, 0.5, image_angle, image_blend, image_alpha)
+	draw_sprite_ext(spr_Recollection_Cloud_v2_p2, 0, x + (_xxx / 2.4), y + (_yyy / 3.25), 0.5, 0.5, image_angle, image_blend, image_alpha)
 
 	if statVal = "Health" {
 	    draw_text(x + _xx,y + _yy -180, string_hash_to_newline("Base HP: " + string(basehp)));

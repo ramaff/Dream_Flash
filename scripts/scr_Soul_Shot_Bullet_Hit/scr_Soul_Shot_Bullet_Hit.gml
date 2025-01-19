@@ -87,7 +87,7 @@ function scr_soul_shot_bullet_hit_v2(_bullet_stats){
 					
 					var _shield = shot_stats.Shot_Shield_Power
 					with(other) {
-						scr_Bullet_Dampen(_shield);
+						scr_bullet_dampen_v2(_shield, _bullet_stats);
 					}
 				}
 				if shot_stats.Shot_Essence_Drain > 0 {
