@@ -664,8 +664,8 @@
     "H14": {
         "recollectionString": "Beast Heart",
         "recollectionSprite": "spr_Beast_Heart_Art",
-        "recollectionExtraStats": "+25 HP +5 HP from boss phases",
-        "recollectionDescription": "Regains health for all hearts whenever defeating a boss phase or killing an enemy. Soul has the spirit of an wild beast.",
+        "recollectionExtraStats": "+25 HP +Hungry Bites",
+        "recollectionDescription": "The soul bites in the direction of the nearest enemies. These bites do damage, regenerate health and push the soul towards their target. Soul has the spirit of an wild beast.",
         "Beast_Credit": 1
     },
     "H15": {
@@ -1318,9 +1318,9 @@
     },
     "OB04": {
         "recollectionString": "Can't Help It",
-        "recollectionSprite": "spr_Relaxed_Art",
-        "recollectionExtraStats": "+Bullet Slowdown Aura",
-        "recollectionDescription": "Bullets that get near the soul move 30% slower. No need to stress!"
+        "recollectionSprite": "spr_Cant_Help_It_Art",
+        "recollectionExtraStats": "+50% Extra Uncontainable Shots +15% Constant Essence Cost",
+        "recollectionDescription": "Continously shoot extra shots at all times, these shots cost 30% as much essence and get shot out half as often."
     },
     "OB05": {
         "recollectionString": "Ignorance Is Bliss",
@@ -1432,8 +1432,8 @@
     "P10": {
         "recollectionString": "Relaxed",
         "recollectionSprite": "spr_Relaxed_Art",
-        "recollectionExtraStats": "+Bullet Slowdown Aura +2 Bliss",
-        "recollectionDescription": "Bullets that get near the soul move 30% slower. No need to stress!"
+        "recollectionExtraStats": "+20% Bullet/Shot Slowdown Aura +30% Shot Lifespan +2 Bliss",
+        "recollectionDescription": "Bullets that get near the soul move 20% slower. No need to stress!"
     },
 
     "Q01": {
@@ -1464,8 +1464,8 @@
     "Q05": {
         "recollectionString": "Slipped My Mind",
         "recollectionSprite": "spr_Slipped_My_Mind_Art",
-        "recollectionExtraStats": "+Thought Redirection",
-        "recollectionDescription": "The soul now constantly shoots banana peels on to the field. These redirect any bullets that come in contact with them. They also can make the soul slip."
+        "recollectionExtraStats": "+Occasional Banana Peel Shot Replacement",
+        "recollectionDescription": "The soul now sometimes has its thoughts replaced with banana peels. These redirect any bullets that come in contact with them. They also can make the soul slip."
     },
 
     "R01": {
@@ -1533,8 +1533,8 @@
     "S05": {
         "recollectionString": "Comfort Zones",
         "recollectionSprite": "spr_Comfort_Zones_Art",
-        "recollectionExtraStats": "+Stress Relief Zones",
-        "recollectionDescription": "Go back to where you're comfortable. Getting hit spawns random healing fields in the field for a bit."
+        "recollectionExtraStats": "+Comfort in Zones +Pain outside Zones +2 Assurance +2 Paranoia",
+        "recollectionDescription": "Go back to where you're comfortable. Spawns several comfort zones that heal and refresh the soul when within them, and damage the soul when outside them."
     },
     "S06": {
         "recollectionString": "Mind Cleanser",
@@ -1564,9 +1564,9 @@
     },
     "T04": {
         "recollectionString": "Hyper-Fixation",
-        "recollectionSprite": "spr_Cope_Art",
-        "recollectionExtraStats": "+Coping Heart",
-        "recollectionDescription": "Losing hearts give you a coping heart replacement. This heart steadily loses its max hp, but can shoot extra projectiles at the enemy."
+        "recollectionSprite": "spr_Hyper_Fixation_Art",
+        "recollectionExtraStats": "+2 to an Existing Item",
+        "recollectionDescription": "Gives you a choice of 4 items to give +2 stacks to."
     },
 
     "U01": {

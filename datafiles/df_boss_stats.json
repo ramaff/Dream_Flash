@@ -1458,8 +1458,8 @@
             "Champ 2": {
                 "Name": "Decoy Hit Box",
                 "Recollection_Sprite": "reco_boxer",
-                "Health_Phase_1": 360,
-                "Health_Phase_2": 330,
+                "Health_Phase_1": 300,
+                "Health_Phase_2": 390,
                 "Palette_Index": 2
             }
         },
@@ -1501,52 +1501,18 @@
 
         "Boss 061": {
             "Name": "Wall King",
-            "Recollection_Sprite": "reco_deep_watcher_v2",
-            "Health_Phase_1": 1250,
-            "Health_Phase_2": 1090,
+            "Recollection_Sprite": "reco_wall_king",
+            "Health_Phase_1": 1350,
+            "Health_Phase_2": 1190,
             "Defense_Phase_1": 1,
             "Defense_Phase_2": 1,
-            "Boss_Danger": 7,
+            "Boss_Danger": 18,
             "Bullet_Speed": 3.35,
             "Move_Speed": 2.25,
             "Knock_Defense": 999,
             "Palette": "spr_deep_watcher_v2_palette",
         
-            "recollectionDescription": "Found deep in the depths of your psyche. Can manifest explosions all over the dreamscape!",
-        
-            "Champ 1": {
-                "Name": "Deep Explosive",
-                "Health_Phase_1": 570,
-                "Health_Phase_2": 490,
-                "Recollection_Sprite": "reco_deep_watcher_v2",
-                "Palette_Index": 1
-            },
-            "Champ 2": { 
-                "Name": "Deep Armour",
-                "Health_Phase_1": 570,
-                "Health_Phase_2": 490,
-                "Defense_Phase_1": 2,
-                "Defense_Phase_2": 2,
-                "Move_Speed": 2.65,
-                "Recollection_Sprite": "reco_deep_watcher_v2",
-                "Palette_Index": 2
-            },
-            "Champ 3": {
-                "Name": "Deep Trail",
-                "Health_Phase_1": 570,
-                "Health_Phase_2": 490,
-                "Move_Speed": 1.5,
-                "Recollection_Sprite": "reco_deep_watcher_v2",
-                "Palette_Index": 3
-            },
-            "Champ 8": {
-                "Name": "Deep Maelstrom",
-                "Health_Phase_1": 630,
-                "Health_Phase_2": 530,
-                "Attack_Speed": 1.2,
-                "Recollection_Sprite": "reco_deep_watcher_v2",
-                "Palette_Index": 4
-            }
+            "recollectionDescription": "Found deep in the depths of your psyche. Can manifest explosions all over the dreamscape!"
         },
 
         "Boss 064": {
