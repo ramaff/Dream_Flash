@@ -3,13 +3,13 @@
 
 // scr_Current_Heart_Stats
 
-function scr_B06(){
+function scr_B06(_heart_num){
 	
-	var _heart_type = Soul_Hearts_Control.heart[i,2]
+	var _heart_type = Soul_Hearts_Control.heart[_heart_num,2]
 	if _heart_type == 1 || _heart_type == 51 || _heart_type == 53 || _heart_type == 103 {
-		Soul_Hearts_Control.heart[i,2] = 2 + irandom(15)
-		Soul_Hearts_Control.heart[i,2] = choose(2,3,4,5,6,8,9,10,11,12,13,14,15,16,17)
-		if Soul_Hearts_Control.heart[i,2] = 6 {
+		Soul_Hearts_Control.heart[_heart_num,2] = 2 + irandom(15)
+		Soul_Hearts_Control.heart[_heart_num,2] = choose(2,3,4,5,6,8,9,10,11,12,13,14,15,16,17)
+		if Soul_Hearts_Control.heart[_heart_num,2] = 6 {
 			global.H[6]++;
 		}
 		

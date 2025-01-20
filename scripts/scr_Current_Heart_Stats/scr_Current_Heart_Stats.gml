@@ -14,7 +14,7 @@ function scr_Current_Heart_Stats() {
 	        global.totalhearts++;
 	    }
 		if global.B06HeartConversions > 0 {
-			scr_B06();
+			scr_B06(i);
 		}
 	}
 	global.currentheart = global.totalhearts - 1;

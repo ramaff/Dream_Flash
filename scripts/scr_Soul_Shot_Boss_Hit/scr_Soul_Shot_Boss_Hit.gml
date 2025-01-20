@@ -4,6 +4,7 @@ function scr_Soul_Shot_Boss_Hit() {
 
 	var hit_again = variable_struct_exists(other.projectile_hits, shot_boss_id)
 	if !hit_again and shot_stats.Shot_Damage {
+		variable_struct_set(shot_stats.Real_Boss_Hits, other.id, other.id)
 		
 		scr_Sound_Effect(asset_get_index(shot_stats.Shot_Hit_SFX));
     

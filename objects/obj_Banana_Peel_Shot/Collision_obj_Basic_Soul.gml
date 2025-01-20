@@ -1,5 +1,9 @@
 /// @description Insert description here
 // You can write your code in this editor
+if point_distance(x, y, other.x, other.y) > 30 {
+	exit;
+}
+
 scr_Soul_Shot_Soul_Hit();
 
 var _slip_target = other

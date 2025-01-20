@@ -2,7 +2,7 @@
 // https://help.yoyogames.com/hc/en-us/articles/360005277377 for more information
 function scr_Soul_Shot_Expire_Event(){
 	
-	if variable_struct_names_count(bullet_hits) == 0 and shot_stats.Shot_Origin = obj_Soul_Parent {
+	if variable_struct_names_count(shot_stats.Real_Boss_Hits) == 0 and shot_stats.Shot_Origin = obj_Soul_Parent {
 		scr_A07_Reset();	
 	}
 	
