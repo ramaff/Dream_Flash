@@ -1,6 +1,6 @@
 global.bosscount -= 1;
 
-global.recollectionBoss[global.bossval - frac(global.bossval)]++;
+global.recollectionBoss[bossValue]++;
 
 if currentphase >= finalphase
 if bosshealth <= 0 {
