@@ -108,6 +108,7 @@ if active_attack_delay <= 0 and pattern_cooldown <= 0 and pattern_count > 0 {
 		attack_stats.bullet_speed = bossbulletspeed * 1.5;
 	
 		attack_stats.bullet_type = "obj_basic_bullet_v2";
+		attack_stats.bullet_direction_angle = 1;
 		attack_stats.bullet_sprite = "spr_Glowy_Red_Laser";
 		
 		//image_angle = -10 + (20 * (pattern_count mod 2))
@@ -132,13 +133,13 @@ if active_attack_delay <= 0 and pattern_cooldown <= 0 and pattern_count > 0 {
 		    attack_stats.bullet_spread = 20;	
 		}
 		if active_attack = 4 {
-			attack_stats.bullet_type = "obj_Sticky_Slide_Bullet";
+			attack_stats.bullet_type = "obj_sticky_slide_bullet_v2";
 		    attack_stats.bullet_sprite = "spr_Sticky_Shot";
 		    attack_stats.bullet_lifespan = 450;
 			attack_stats.bullet_speed = bossbulletspeed * (0.75 + random(1.25));
 		}
 		if active_attack = 5 {
-			attack_stats.bullet_type = "obj_Rebound_Bullet";
+			attack_stats.bullet_type = "obj_rebound_bullet_v2";
 			attack_stats.bullet_sprite = "spr_Kylie_Shot";
 			attack_stats.bullet_lifespan = 270;
 			attack_stats.bullet_count = 3;
@@ -156,7 +157,6 @@ if active_attack_delay <= 0 and pattern_cooldown <= 0 and pattern_count > 0 {
 		    attack_stats.bullet_size = 1;
 		    attack_stats.bullet_count = 1;
 		    attack_stats.bullet_spread = 0;
-		    boss_radius = 0;
 	
 			attack_stats.bullet_part = 1;
 			attack_stats.bullet_part_sprite = "spr_Soul_Big_Bit";
@@ -167,14 +167,13 @@ if active_attack_delay <= 0 and pattern_cooldown <= 0 and pattern_count > 0 {
 			attack_stats.bullet_part_frequency = 4;	
 		}
 		
-		boss_radius = 0;
 		attack_stats.bullet_direction = scr_Boss_Bullet_Direction_Formula(_dir, 20)
-	    boss_xoffset = lengthdir_x(50,image_angle);
-	    boss_yoffset = lengthdir_y(50,image_angle) + lengthdir_y(39,image_angle + 270);
+	    attack_stats.boss_xoffset = lengthdir_x(50,image_angle) + lengthdir_x(39,image_angle + 270);
+	    attack_stats.boss_yoffset = lengthdir_y(50,image_angle) + lengthdir_y(39,image_angle + 270);
 			scr_boss_shoot_v2();
 
-	    boss_xoffset = lengthdir_x(50,image_angle + 180);
-	    boss_yoffset = lengthdir_y(50,image_angle + 180) + lengthdir_y(39,image_angle + 270);
+	    attack_stats.boss_xoffset = lengthdir_x(50,image_angle + 180) + lengthdir_x(39,image_angle + 270);
+	    attack_stats.boss_yoffset = lengthdir_y(50,image_angle + 180) + lengthdir_y(39,image_angle + 270);
 			scr_boss_shoot_v2();
 	
 		
@@ -191,15 +190,14 @@ if active_attack_delay <= 0 and pattern_cooldown <= 0 and pattern_count > 0 {
 				attack_stats.bullet_spread = 20;
 			}
 			
-			boss_radius = 0;
 			attack_stats.bullet_direction = scr_Boss_Bullet_Direction_Formula(_dir + 30, 20)
-		    boss_xoffset = lengthdir_x(50,image_angle);
-		    boss_yoffset = lengthdir_y(50,image_angle) + lengthdir_y(39,image_angle + 270);
+		    attack_stats.boss_xoffset = lengthdir_x(50,image_angle);
+		    attack_stats.boss_yoffset = lengthdir_y(50,image_angle) + lengthdir_y(39,image_angle + 270);
 			scr_boss_shoot_v2();
 
 			attack_stats.bullet_direction = scr_Boss_Bullet_Direction_Formula(_dir - 30, 20)
-		    boss_xoffset = lengthdir_x(50,image_angle + 180);
-		    boss_yoffset = lengthdir_y(50,image_angle + 180) + lengthdir_y(39,image_angle + 270);
+		    attack_stats.boss_xoffset = lengthdir_x(50,image_angle + 180);
+		    attack_stats.boss_yoffset = lengthdir_y(50,image_angle + 180) + lengthdir_y(39,image_angle + 270);
 			scr_boss_shoot_v2();
 		}
 	
@@ -211,10 +209,8 @@ if active_attack_delay <= 0 and pattern_cooldown <= 0 and pattern_count > 0 {
 	    attack_stats.bullet_power = bosspower * 1.5;
 	    attack_stats.bullet_direction = (-10 + random(20)) / bossaccuracy;
 	    attack_stats.bullet_lifespan = 300;
-	    attack_stats.bullet_size = 1;
 	    attack_stats.bullet_count = 1;
 	    attack_stats.bullet_spread = 0;
-	    boss_radius = 0;
 	
 		attack_stats.bullet_part = 1;
 		attack_stats.bullet_part_sprite = "spr_Soul_Big_Bit";
@@ -236,7 +232,8 @@ if active_attack_delay <= 0 and pattern_cooldown <= 0 and pattern_count > 0 {
 			attack_stats.bullet_part_color2 = make_color_rgb(125,255,0);
 		}
 		
-	    scr_Soul_Shoot();
+	    attack_stats.bullet_direction = scr_Boss_Bullet_Direction_Formula(scr_Soul_Point(), 30)
+		scr_boss_shoot_v2();
 		scr_Sound_Effect(snd_Deep_Laser);
 		
 		attack_stats.bullet_part = 0;
@@ -262,7 +259,6 @@ if active_attack_delay <= 0 and pattern_cooldown <= 0 and pattern_count > 0 {
 		//scr_Sound_Effect(snd_Boss_Laser);
 		scr_Boss_Stretch("Horizontal",0.1);
 		
-		attack_stats.bullet_direction = scr_Boss_Bullet_Direction_Formula(scr_Soul_Point(), 30)
 		scr_boss_shoot_v2();
 	}
 	
@@ -272,14 +268,15 @@ if active_attack_delay <= 0 and pattern_cooldown <= 0 and pattern_count > 0 {
 				
 			attack_stats.bullet_type = "obj_beam_bullet_v3"
 		    attack_stats.bullet_speed = 0;
-		    attack_stats.bullet_size =  0.5;
-		    attack_stats.bullet_count = 1;
-		    attack_stats.bullet_spread = 0;
-			attack_stats.bullet_power = 0
-			attack_stats.bullet_lifespan = 120;
+			attack_stats.bullet_life_span = 120;
+			attack_stats.bullet_size = 0.25;
 		    attack_stats.bullet_sprite = "spr_Boss_Beam_Segment";
 			attack_stats.bullet_part_color1 = make_color_rgb(255, 0, 0)
 			attack_stats.bullet_part_color2 = make_color_rgb(255, 148, 127)
+			
+			var _dir = image_angle + 270;
+			
+			attack_stats.bullet_direction = scr_Boss_Bullet_Direction_Formula(_dir, 0.1)
 			
 			scr_boss_beam_shoot_v2(attack_stats)
 		}
@@ -307,7 +304,6 @@ if active_attack_delay <= 0 and pattern_cooldown <= 0 and pattern_count > 0 {
 	    attack_stats.bullet_size = 1;
 	    attack_stats.bullet_count = 1;
 	    attack_stats.bullet_spread = 0;
-	    boss_radius = 0;
 	
 		attack_stats.bullet_part = 1;
 		attack_stats.bullet_part_sprite = "spr_Soul_Big_Bit";
