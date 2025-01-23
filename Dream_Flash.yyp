@@ -465,6 +465,7 @@
   "IncludedFiles": [
     {"resourceType":"GMIncludedFile","resourceVersion":"1.0","name":"df_boss_stats.json","CopyToMask":-1,"filePath":"datafiles",},
     {"resourceType":"GMIncludedFile","resourceVersion":"1.0","name":"df_item_stats.json","CopyToMask":3035426170322551022,"filePath":"datafiles",},
+    {"resourceType":"GMIncludedFile","resourceVersion":"1.0","name":"df_state_info.json","CopyToMask":-1,"filePath":"datafiles",},
     {"resourceType":"GMIncludedFile","resourceVersion":"1.0","name":"df_tutorial_info.json","CopyToMask":-1,"filePath":"datafiles",},
     {"resourceType":"GMIncludedFile","resourceVersion":"1.0","name":"df_weapon_stats.json","CopyToMask":-1,"filePath":"datafiles",},
   ],
@@ -4379,6 +4380,7 @@
     {"id":{"name":"scr_Boss_Beam_Frame","path":"scripts/scr_Boss_Beam_Frame/scr_Boss_Beam_Frame.yy",},},
     {"id":{"name":"obj_Flash_Crystal_Shot","path":"objects/obj_Flash_Crystal_Shot/obj_Flash_Crystal_Shot.yy",},},
     {"id":{"name":"scr_W05_Reload","path":"scripts/scr_W05_Reload/scr_W05_Reload.yy",},},
+    {"id":{"name":"obj_cross_split_bullet_v2","path":"objects/obj_cross_split_bullet_v2/obj_cross_split_bullet_v2.yy",},},
     {"id":{"name":"obj_Sand_Ball_Barrage","path":"objects/obj_Sand_Ball_Barrage/obj_Sand_Ball_Barrage.yy",},},
     {"id":{"name":"obj_Sand_Ball_Punch","path":"objects/obj_Sand_Ball_Punch/obj_Sand_Ball_Punch.yy",},},
     {"id":{"name":"scr_Stat_Item_Extra_Stats","path":"scripts/scr_Stat_Item_Extra_Stats/scr_Stat_Item_Extra_Stats.yy",},},

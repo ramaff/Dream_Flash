@@ -135,13 +135,13 @@ if active_attack_delay <= 0 and pattern_cooldown <= 0 and pattern_count > 0 {
 		if active_attack = 4 {
 			attack_stats.bullet_type = "obj_sticky_slide_bullet_v2";
 		    attack_stats.bullet_sprite = "spr_Sticky_Shot";
-		    attack_stats.bullet_lifespan = 450;
+		    attack_stats.bullet_life_span = 450;
 			attack_stats.bullet_speed = bossbulletspeed * (0.75 + random(1.25));
 		}
 		if active_attack = 5 {
 			attack_stats.bullet_type = "obj_rebound_bullet_v2";
 			attack_stats.bullet_sprite = "spr_Kylie_Shot";
-			attack_stats.bullet_lifespan = 270;
+			attack_stats.bullet_life_span = 270;
 			attack_stats.bullet_count = 3;
 			attack_stats.bullet_spread = 40;	
 			attack_stats.bullet_speed = bossbulletspeed * 2.75;
@@ -154,7 +154,6 @@ if active_attack_delay <= 0 and pattern_cooldown <= 0 and pattern_count > 0 {
 			attack_stats.bullet_sprite = "spr_Big_Glowy_Shot";
 		    attack_stats.bullet_speed = bossbulletspeed * 1.6;
 		    attack_stats.bullet_power = bosspower * 1.5;
-		    attack_stats.bullet_size = 1;
 		    attack_stats.bullet_count = 1;
 		    attack_stats.bullet_spread = 0;
 	
@@ -208,7 +207,7 @@ if active_attack_delay <= 0 and pattern_cooldown <= 0 and pattern_count > 0 {
 	    attack_stats.bullet_speed = bossbulletspeed * 1.6;
 	    attack_stats.bullet_power = bosspower * 1.5;
 	    attack_stats.bullet_direction = (-10 + random(20)) / bossaccuracy;
-	    attack_stats.bullet_lifespan = 300;
+	    attack_stats.bullet_life_span = 300;
 	    attack_stats.bullet_count = 1;
 	    attack_stats.bullet_spread = 0;
 	
@@ -224,9 +223,9 @@ if active_attack_delay <= 0 and pattern_cooldown <= 0 and pattern_count > 0 {
 		if active_attack = 6 {
 			attack_stats.bullet_speed = bossbulletspeed * 1.35;
 	        attack_stats.bullet_power = bosspower * 2;
-	        attack_stats.bullet_type = "obj_Cross_Split_Bullet";
+	        attack_stats.bullet_type = "obj_cross_split_bullet_v2";
 	        attack_stats.bullet_sprite = "spr_Big_Cross_Split_Shot";
-			attack_stats.bullet_lifespan = 105 + random(30);	
+			attack_stats.bullet_life_span = 105 + random(30);	
 			
 			attack_stats.bullet_part_color1 = make_color_rgb(125,255,0);
 			attack_stats.bullet_part_color2 = make_color_rgb(125,255,0);
@@ -245,7 +244,7 @@ if active_attack_delay <= 0 and pattern_cooldown <= 0 and pattern_count > 0 {
 		attack_stats.bullet_sprite = "spr_Glowy_Hot_Pink_Shot";
 		attack_stats.bullet_count = 2;
 		attack_stats.bullet_spread = 40;
-		attack_stats.bullet_lifespan = 300;
+		attack_stats.bullet_life_span = 300;
 		
 		if active_attack = 6 {
 	        attack_stats.bullet_sprite = "spr_Glowy_Green_Shot";
@@ -290,7 +289,7 @@ if active_attack_delay <= 0 and pattern_cooldown <= 0 and pattern_count > 0 {
 			attack_stats.bullet_direction = scr_Boss_Bullet_Direction_Formula(_dir, 20)
 		    attack_stats.bullet_count = 2;
 			attack_stats.bullet_spread = 60;
-			attack_stats.bullet_lifespan = 300;
+			attack_stats.bullet_life_span = 300;
 		    scr_boss_shoot_v2();
 		}
 	}
@@ -300,8 +299,7 @@ if active_attack_delay <= 0 and pattern_cooldown <= 0 and pattern_count > 0 {
 	    attack_stats.bullet_speed = bossbulletspeed * 1.6;
 	    attack_stats.bullet_power = bosspower * 1.5;
 	    attack_stats.bullet_direction = (-10 + random(20)) / bossaccuracy;
-	    attack_stats.bullet_lifespan = 300;
-	    attack_stats.bullet_size = 1;
+	    attack_stats.bullet_life_span = 300;
 	    attack_stats.bullet_count = 1;
 	    attack_stats.bullet_spread = 0;
 	

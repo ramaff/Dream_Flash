@@ -126,7 +126,7 @@
     "B05": {
         "recollectionString": "Rubber Soul",
         "recollectionSprite": "spr_Rubber_Soul_Item",
-        "recollectionExtraStats": "+Soul Hit Rebound +15% Soul Damage Reduction",
+        "recollectionExtraStats": "+Soul Hit Rebound +25% Soul Damage Reduction",
         "recollectionDescription": "Projectiles that hit your soul bounce back dealing damage to anything they run into.",
         "Scrub_Credit": 0.5
     },
@@ -1566,7 +1566,7 @@
         "recollectionString": "Hyper-Fixation",
         "recollectionSprite": "spr_Hyper_Fixation_Art",
         "recollectionExtraStats": "+2 to an Existing Item",
-        "recollectionDescription": "Gives you a choice of 4 items to give +2 stacks to."
+        "recollectionDescription": "Gives you a choice of 4 items that you previously picked up to give +2 stacks to."
     },
 
     "U01": {

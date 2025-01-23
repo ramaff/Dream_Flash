@@ -1,0 +1,50 @@
+{
+    "State 01": {
+	    "recollectionString": "Snake Soul State",
+	    "recollectionSprite": "spr_Snake_Soul_Reco",
+		"recollectionExtraStats": "+Snake Perception Shots +Snake Trail Shots",
+		"recollectionDescription": "State Stats: Dexterity x Perception\nDestroy your enemies with snake like weapon patterns. All shots now hit bosses multiple times with afterimages. Teleport to produce soul afterimages that do additional damage."
+	},
+	"State 02": {
+	    "recollectionString": "Beast Soul State",
+	    "recollectionSprite": "spr_Beast_Soul_Reco",
+		"recollectionExtraStats": "+Triple Slash Shots",
+		"recollectionDescription": "State Stats: Strength x Vitality\nSavagely devour bosses. Increased overall power is granted with this soul, The beast can also bite enemies by teleporting to recover some of its health."
+	}, 
+	"State 03": {
+	    "recollectionString": "Mechanical Soul State",
+	    "recollectionSprite": "spr_Mechanical_Soul_Reco",
+		"recollectionExtraStats": "+Soul Production Factory +Gear Protection",
+		"recollectionDescription": "State Stats: Vitality x Essence\nPowerful mech that provides the soul with additional protection and produces minions that massively increase power output."
+	},
+	"State 04": {
+	    "recollectionString": "Scrub Soul State",
+	    "recollectionSprite": "spr_Scrub_Soul_Reco",
+		"recollectionExtraStats": "+Bubbled Thoughts +Slippery Movement",
+		"recollectionDescription": "State Stats: Vitality x Dexterity\nSoapy soul that purifies enemies with bubbled thoughts. These thoughts block enemy bullets and then shoot then contents."
+	},
+	"State 06": {
+	    "recollectionString": "Spike Soul State",
+	    "recollectionSprite": "spr_Spike_State_Reco",
+		"recollectionExtraStats": "+Sharper Shots +5 Way Shots",
+		"recollectionDescription": "State Stats: Essence x Perception\nUnload a storm of spikes onto your enemies. Spiked shots have extra pierce, and extra damage. Occasionally unload a 5 way burst for field-wide punishment."
+	},
+	"State 07": {
+	    "recollectionString": "Bleeding Soul State",
+	    "recollectionSprite": "spr_Bleeding_Soul_Reco",
+		"recollectionExtraStats": "+Bleeding Blade",
+		"recollectionDescription": "State Stats: Strength x Dexterity\nPowerful knight that makes it's enemies bleed. Wield a powerful blade that can also shoot projectiles. Teleporting results in intricate swordplay that can redirect bullets."
+	},
+	"State 09": {
+	    "recollectionString": "Casting Soul State",
+	    "recollectionSprite": "spr_Casting_Soul_Reco",
+		"recollectionExtraStats": "+Orbital Shots +Shooting Shots",
+		"recollectionDescription": "State Stats: Vitality x Perception\nCreate orbitals that shoot additional shots at enemies. You can also unload these orbitals onto your enemies for extra damage."
+	},
+	"State 10": {
+	    "recollectionString": "Ascending Soul State",
+	    "recollectionSprite": "spr_Ascending_Soul_Reco",
+		"recollectionExtraStats": "+Charged Shots +Electric Shots",
+		"recollectionDescription": "State Stats: Essence x Perception\nCharges up super powered shots directly from the core of its imagination. These shots come packed with static electricity that damages all surrounding foes."
+	}
+}
