@@ -49,6 +49,8 @@ startOver = 0;
 
 loading = 1;
 
+global.bosstimer = 0;
+
 //show_debug_message("floor_layout_control in")
 ///show_debug_message("maxrooms: " + string(global.maxRooms))
 //show_debug_message("chapterrooms: " + string(global.chapterRooms))

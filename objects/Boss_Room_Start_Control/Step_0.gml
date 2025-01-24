@@ -2,10 +2,10 @@
 
 if ((global.bosscount <= 0) and (global.spiritRoom != global.currentroom) and (global.evilSpiritRoom != global.currentroom)) and instance_number(obj_Boss_Parent) = 0 {
     
-    scr_Room_End();
-    var roomType = global.floor[global.currentroom,0];
+	scr_Room_End();
+	var roomType = global.floor[global.currentroom,0];
 	
-    if fieldSpawn = 0 {
+	if fieldSpawn = 0 {
 		
 		scr_Boss_Beat();
 		
@@ -35,47 +35,47 @@ if ((global.bosscount <= 0) and (global.spiritRoom != global.currentroom) and (g
 		if instance_exists(obj_Soul_Spiritual) {
 			with(obj_Soul_Spiritual) {
 				if spirit = "Hope" {
-				    global.soulhope++;
+					global.soulhope++;
 				}
 				if spirit = "Bliss" {
-				    global.soulbliss++;
+					global.soulbliss++;
 				}
 				if spirit = "Vanity" {
-				    global.soulvanity++;
+					global.soulvanity++;
 				}
 				if spirit = "Loathing" {
-				    global.soulloathing++;
+					global.soulloathing++;
 				}
 				if spirit = "Paranoia" {
-				    global.soulparanoia++;
+					global.soulparanoia++;
 				}
 				if spirit = "Despair" {
-				    global.souldespair++;
+					global.souldespair++;
 				}
 			}
 		}
 		
-        scr_Save();
+	    scr_Save();
 		
 		if instance_exists(obj_Soul_Spiritual) {
 			with(obj_Soul_Spiritual) {
 				if spirit = "Hope" {
-				    global.soulhope--;
+					global.soulhope--;
 				}
 				if spirit = "Bliss" {
-				    global.soulbliss--;
+					global.soulbliss--;
 				}
 				if spirit = "Vanity" {
-				    global.soulvanity--;
+					global.soulvanity--;
 				}
 				if spirit = "Loathing" {
-				    global.soulloathing--;
+					global.soulloathing--;
 				}
 				if spirit = "Paranoia" {
-				    global.soulparanoia--;
+					global.soulparanoia--;
 				}
 				if spirit = "Despair" {
-				    global.souldespair--;
+					global.souldespair--;
 				}
 			}
 		}
@@ -90,10 +90,10 @@ if ((global.bosscount <= 0) and (global.spiritRoom != global.currentroom) and (g
 			global.souldream -= floor(initAmount);
 		}
         
-    } else {
+	} else {
 		scr_Stat_Field_Chain_Check();
-	}   
-} 
+	}  
+}
 
 var MThealth = 0;
 var chealth = 0;
