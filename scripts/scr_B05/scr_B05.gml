@@ -11,7 +11,7 @@ function scr_B05_damage_reduction(damageamount) {
 	
 	var _force = 5 + (5 * global.B[5]) + irandom(5);
 	
-	scr_force_push(other.id, 30, _force, _force / 30, _b_dir)
+	scr_force_push(id, 30, _force, _force / 30, _b_dir)
 	
 	return damageamount
 }

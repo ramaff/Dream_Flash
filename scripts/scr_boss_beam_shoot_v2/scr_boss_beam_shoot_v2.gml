@@ -1,4 +1,4 @@
-function scr_shoot_beam(_attack_stats, _xx, _yy) {
+function scr_shoot_beam(_attack_stats, _xx, _yy, _lightning = false) {
 	var _dir = -(_attack_stats.bullet_spread * (_attack_stats.bullet_count - 1) / 2);
 	var _bull = asset_get_index(_attack_stats.bullet_type);
 	
@@ -7,6 +7,8 @@ function scr_shoot_beam(_attack_stats, _xx, _yy) {
 	var _seg_tail = noone;
 	
 	var _beam_segments = 25;
+	
+	var _zag = -0.5 + irandom(1);
 
 	repeat(_attack_stats.bullet_count) {
 		for(var _count = 0; _count < _beam_segments; _count++) {
@@ -31,6 +33,18 @@ function scr_shoot_beam(_attack_stats, _xx, _yy) {
 					seg_angle_displacement = other.image_angle;
 				} else {
 					seg_tail = _seg_tail;
+				}
+				if _lightning = true {
+					if (_count mod 3 = 2) and scr_Chance(2) {
+						if _zag = -0.5 {
+							_zag = 0.5;
+							image_yscale = -image_yscale;
+						} else if _zag = 0.5 {
+							_zag = -0.5;
+						}
+						seg_angle_displacement = 180 * _zag;
+						sprite_index = spr_Lightning_Beam_Turn;
+						}	
 				}
 				if _count = (_beam_segments - 1) {
 					sprite_index = spr_Boss_Beam_Tail;
