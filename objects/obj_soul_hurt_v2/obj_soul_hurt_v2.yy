@@ -10,8 +10,8 @@
   "managed": true,
   "overriddenProperties": [],
   "parent": {
-    "name": "Boss Bullets",
-    "path": "folders/Objects/Boss Bullets.yy",
+    "name": "Non Bullet Hurt",
+    "path": "folders/Objects/Boss Bullets/Non Bullet Hurt.yy",
   },
   "parentObjectId": null,
   "persistent": false,

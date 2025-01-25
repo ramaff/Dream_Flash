@@ -10,8 +10,8 @@
   "managed": true,
   "overriddenProperties": [],
   "parent": {
-    "name": "Boss Bullets",
-    "path": "folders/Objects/Boss Bullets.yy",
+    "name": "homers",
+    "path": "folders/Objects/Boss Bullets/homers.yy",
   },
   "parentObjectId": {
     "name": "obj_bullet_parent_v2",

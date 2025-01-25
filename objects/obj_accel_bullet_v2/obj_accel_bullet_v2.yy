@@ -1,17 +1,15 @@
 {
   "resourceType": "GMObject",
   "resourceVersion": "1.0",
-  "name": "obj_deep_split_trail_bullet",
+  "name": "obj_accel_bullet_v2",
   "eventList": [
-    {"resourceType":"GMEvent","resourceVersion":"1.0","name":"","collisionObjectId":null,"eventNum":0,"eventType":0,"isDnD":false,},
-    {"resourceType":"GMEvent","resourceVersion":"1.0","name":"","collisionObjectId":null,"eventNum":1,"eventType":2,"isDnD":false,},
-    {"resourceType":"GMEvent","resourceVersion":"1.0","name":"","collisionObjectId":null,"eventNum":2,"eventType":2,"isDnD":false,},
+    {"resourceType":"GMEvent","resourceVersion":"1.0","name":"","collisionObjectId":null,"eventNum":0,"eventType":3,"isDnD":false,},
   ],
   "managed": true,
   "overriddenProperties": [],
   "parent": {
-    "name": "falling exploders",
-    "path": "folders/Objects/Boss Bullets/falling exploders.yy",
+    "name": "standard bullets",
+    "path": "folders/Objects/Boss Bullets/standard bullets.yy",
   },
   "parentObjectId": {
     "name": "obj_bullet_parent_v2",
@@ -33,8 +31,8 @@
   "properties": [],
   "solid": false,
   "spriteId": {
-    "name": "spr_Big_Glowy_Green_Shot",
-    "path": "sprites/spr_Big_Glowy_Green_Shot/spr_Big_Glowy_Green_Shot.yy",
+    "name": "spr_Glowy_Enemy_Shot",
+    "path": "sprites/spr_Glowy_Enemy_Shot/spr_Glowy_Enemy_Shot.yy",
   },
   "spriteMaskId": null,
   "visible": false,

@@ -11,8 +11,8 @@
   "managed": true,
   "overriddenProperties": [],
   "parent": {
-    "name": "Boss Bullets",
-    "path": "folders/Objects/Boss Bullets.yy",
+    "name": "falling exploders",
+    "path": "folders/Objects/Boss Bullets/falling exploders.yy",
   },
   "parentObjectId": {
     "name": "obj_Depth",

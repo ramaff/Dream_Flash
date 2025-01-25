@@ -89,12 +89,14 @@ if active_attack_delay <= 0 and active_attack_cooldown <= 0 and active_attack_du
 /// Active Attack Pattern Code
 //////////////////////////////////////////////////////////////////////////////////////////    
 
-scr_Default_Attack_Settings();
+scr_default_attack_settings_v2();
 
-attack_stats.bullet_type = "obj_Rain_Drop_Bullet";
+attack_stats.bullet_type = "obj_accel_bullet_v2";
 attack_stats.bullet_sprite = "spr_Tear_Drop_Bullet";
 attack_stats.bullet_speed = bossbulletspeed * (1.5 + random(0.75));
+attack_stats.bullet_acceleration = bossbulletspeed * 0.005;
 attack_stats.bullet_power = bosspower;
+attack_stats.bullet_direction_angle = 1;
 
 // If its time to attack, attack
 if active_attack_delay <= 0 and pattern_cooldown <= 0 and pattern_count > 0 {
@@ -103,8 +105,7 @@ if active_attack_delay <= 0 and pattern_cooldown <= 0 and pattern_count > 0 {
 		if pattern_count mod 2 = 0 {
 			scr_Boss_Stretch("Vertical", 0.1);
 		}
-		
-		attack_stats.bullet_type = "obj_Rain_Drop_Bullet";
+
 		attack_stats.bullet_count = 4;
 		attack_stats.bullet_spread = 35;
 		attack_stats.boss_yoffset = 50;
@@ -113,35 +114,35 @@ if active_attack_delay <= 0 and pattern_cooldown <= 0 and pattern_count > 0 {
 		attack_stats.bullet_direction = 238 + random(4) + scr_Wave(-40, 40, 6, 0);
 		attack_stats.boss_xoffset = -100;
 		
-		scr_Boss_Shoot();
+		scr_boss_shoot_v2();
 		
 		attack_stats.bullet_direction = 298 + random(4) + scr_Wave(-40, 40, 6, 0);
 		attack_stats.boss_xoffset = 100;
 		
-		scr_Boss_Shoot();
+		scr_boss_shoot_v2();
 		
 		if champ = 1 and pattern_count mod 10 = 2 {
 			
 			attack_stats.bullet_count = 15;
 			attack_stats.bullet_spread = 15;
-			attack_stats.bullet_type = "obj_Lob_Direction_Bullet";
+			attack_stats.bullet_type = "obj_lob_bullet_v2";
 			
 			attack_stats.bullet_direction = 238 + random(4) + scr_Wave(-40, 40, 6, 0);
 			attack_stats.boss_xoffset = -100;
 		
-			scr_Boss_Shoot();
+			scr_boss_shoot_v2();
 		
 			attack_stats.bullet_direction = 298 + random(4) + scr_Wave(-40, 40, 6, 0);
 			attack_stats.boss_xoffset = 100;
 		
-			scr_Boss_Shoot();
+			scr_boss_shoot_v2();
 		}
 		
 		if champ = 2 and pattern_count mod 10 = 2 {
 			
 			attack_stats.bullet_count = 8;
 			attack_stats.bullet_spread = 30;
-			attack_stats.bullet_type = "obj_Zig_Zag_Bullet";
+			attack_stats.bullet_type = "obj_zig_zag_bullet_v2";
 			attack_stats.bullet_sprite = "spr_Lightning_Bullet";
 			attack_stats.bullet_life_span = 240;
 			attack_stats.bullet_speed = bossbulletspeed * 2.9;
@@ -149,12 +150,12 @@ if active_attack_delay <= 0 and pattern_cooldown <= 0 and pattern_count > 0 {
 			attack_stats.bullet_direction = 238 + random(4) + scr_Wave(-40, 40, 6, 0);
 			attack_stats.boss_xoffset = -100;
 		
-			scr_Boss_Shoot();
+			scr_boss_shoot_v2();
 		
 			attack_stats.bullet_direction = 298 + random(4) + scr_Wave(-40, 40, 6, 0);
 			attack_stats.boss_xoffset = 100;
 		
-			scr_Boss_Shoot();
+			scr_boss_shoot_v2();
 		}
 	
 		// If you gotta change the pattern aim direction
@@ -174,7 +175,7 @@ if active_attack_delay <= 0 and pattern_cooldown <= 0 and pattern_count > 0 {
 		
 		attack_stats.bullet_direction = 240 + random(60);
 		
-		scr_Boss_Shoot();
+		scr_boss_shoot_v2();
 	}
 	
 	if active_attack = 3 {
@@ -212,12 +213,12 @@ if active_attack_delay <= 0 and pattern_cooldown <= 0 and pattern_count > 0 {
 			attack_stats.bullet_type = "obj_Rain_Drop_Bullet_Turn";
 		}
 		
-		scr_Boss_Shoot();
+		scr_boss_shoot_v2();
 		
 		attack_stats.bullet_direction += 60;
 		attack_stats.boss_xoffset = 100;
 		
-		scr_Boss_Shoot();
+		scr_boss_shoot_v2();
 	
 		// If you gotta change the pattern aim direction
 	    // pattern_direction += 0;	
@@ -241,7 +242,7 @@ if active_attack_delay <= 0 and pattern_cooldown <= 0 and pattern_count > 0 {
 		attack_stats.bullet_life_span = 120;
 		
 		if champ = 2 {
-			attack_stats.bullet_type = "obj_Thunder_Bullet_v2";
+			attack_stats.bullet_type = "obj_thunder_bullet_v2";
 			attack_stats.bullet_sprite = "spr_Thunder_Ball";
 			attack_stats.bullet_speed -= bossbulletspeed * 0.5
 		}
@@ -250,13 +251,13 @@ if active_attack_delay <= 0 and pattern_cooldown <= 0 and pattern_count > 0 {
 		attack_stats.bullet_bounce_gravity = 0.1;
 		attack_stats.bullet_life_span = sqrt((2 * (150)) / attack_stats.bullet_bounce_gravity);
 		attack_stats.bullet_lob_time = attack_stats.bullet_life_span - 2;
-		attack_stats.bullet_bounce_Y = 150;
+		attack_stats.bullet_bounce_height = 150;
 		
 		if champ = 2 {
 			attack_stats.bullet_life_span = attack_stats.bullet_life_span * 3.4;
 		}
 		
-		scr_Boss_Shoot();
+		scr_boss_shoot_v2();
 		
 		pattern_direction += 60;
 	
@@ -274,9 +275,13 @@ if active_attack_delay <= 0 and pattern_cooldown <= 0 and pattern_count > 0 {
 		    attack_stats.bullet_sprite = "spr_Boss_Beam_Segment";
 		    attack_stats.bullet_speed = 0;
 		    attack_stats.bullet_size = 0.3125;
-		    attack_stats.bullet_count = 4;
+		    attack_stats.bullet_count = 2;
 		    attack_stats.bullet_spread = 15;
 			attack_stats.bullet_power = 0
+			attack_stats.bullet_part_color1 = make_color_rgb(255, 212, 0)
+			attack_stats.bullet_part_color2 = make_color_rgb(255, 255, 127)
+			attack_stats.bullet_direction = 255;
+			
 			if image_index > 3 and pattern_count_max - pattern_count < 30 {
 				image_index = 3;	
 			}
@@ -285,14 +290,19 @@ if active_attack_delay <= 0 and pattern_cooldown <= 0 and pattern_count > 0 {
 				
 			attack_stats.boss_xoffset = -100;
 			
-			scr_boss_beam_shoot_v2(attack_stats, true)
+			scr_boss_beam_shoot_v2(attack_stats, false, true)
+			
+			attack_stats.boss_xoffset = 100;
+			attack_stats.bullet_direction = 285;
+			
+			scr_boss_beam_shoot_v2(attack_stats, false, true)
 				
 		} 
 			
 		if pattern_count = 60 {
 			attack_stats.bullet_count = 8;
 			attack_stats.bullet_spread = 30;
-			attack_stats.bullet_type = "obj_Zig_Zag_Bullet";
+			attack_stats.bullet_type = "obj_zig_zag_bullet_v2";
 			attack_stats.bullet_sprite = "spr_Lightning_Bullet";
 			attack_stats.bullet_life_span = 240;
 			attack_stats.bullet_speed = bossbulletspeed * 2.9;
@@ -300,12 +310,12 @@ if active_attack_delay <= 0 and pattern_cooldown <= 0 and pattern_count > 0 {
 			attack_stats.bullet_direction = 238 + random(4) + scr_Wave(-40, 40, 6, 0);
 			attack_stats.boss_xoffset = -100;
 		
-			scr_Boss_Shoot();
+			scr_boss_shoot_v2();
 		
 			attack_stats.bullet_direction = 298 + random(4) + scr_Wave(-40, 40, 6, 0);
 			attack_stats.boss_xoffset = 100;
 		
-			scr_Boss_Shoot();
+			scr_boss_shoot_v2();
 		}
 			
 		//var beamstart = bossPatternCountMax - bossPatternCount;

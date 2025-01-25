@@ -64,7 +64,7 @@ function scr_shoot_beam(_attack_stats, _xx, _yy, _lightning = false) {
 	
 }
 
-function scr_boss_beam_shoot_v2(_attack_stats = attack_stats, _absolute_pos = false) {
+function scr_boss_beam_shoot_v2(_attack_stats = attack_stats, _absolute_pos = false, _lightning = true) {
 	scr_spirit_boss_bull_fx_pre_v2(_attack_stats);
 	
 	var _xx = x + _attack_stats.boss_xoffset;
@@ -75,6 +75,6 @@ function scr_boss_beam_shoot_v2(_attack_stats = attack_stats, _absolute_pos = fa
 		_yy = _attack_stats.boss_yoffset;	
 	}
 	
-	scr_shoot_beam(_attack_stats, _xx, _yy)
+	scr_shoot_beam(_attack_stats, _xx, _yy, _lightning)
 
 }

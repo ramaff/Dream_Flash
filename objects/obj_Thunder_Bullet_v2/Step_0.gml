@@ -1,54 +1,31 @@
 /// @description Insert description here
 // You can write your code in this editor
 
-bulletbounceY += bounce_speed
-bounce_speed -= bounce_gravity
 
-y -= bounce_speed
+if bullet_stats.bullet_bounce_height + bullet_stats.bullet_bounce_speed < 0 {
+    var _bull = scr_base_bullet_stats(bullet_stats.bullet_speed * 1, bullet_stats.bullet_power, 1)
 
-if bulletbounceY + bounce_speed < 0 {
-	bounce_speed = bounce_speed * -1;
+	_bull.bullet_type = "obj_basic_bullet_v2"
+	_bull.bullet_sprite = "spr_Lightning_Bullet"
+	_bull.bullet_life_span = 180
+	_bull.bullet_count = 8;
+	_bull.bullet_spread = 360 / _bull.bullet_count;
+	_bull.bullet_size = 0.5;
+	_bull.bullet_direction_angle = 1;
+
+	scr_shoot_bullets(_bull, x, y)
 	
-	dir = random(360)
-    repeat(8) {
-        dir += 360 / 8;
-        with instance_create(x,y,obj_Direction_Bullet) {
-            scr_Bullet_Replicate_Properties();
-			bulletlife = 180;
-			alarm[0] = bulletlife;
-            sprite_index = spr_Lightning_Bullet;
-            bulletspeed = other.bulletspeed * 1;
-            bulletpower = global.stagedamage;
-            speed = bulletspeed;
-            direction = other.direction + other.dir;
-        }
-    }
-	repeat(4) {
-        dir += 360 / 4;
-        with instance_create(x,y,obj_Direction_Bullet) {
-            scr_Bullet_Replicate_Properties();
-			bulletlife = 180;
-			alarm[0] = bulletlife;
-            sprite_index = spr_Lightning_Bullet;
-            bulletspeed = other.bulletspeed * 1.333;
-            bulletpower = global.stagedamage;
-            speed = bulletspeed;
-            direction = other.direction + other.dir;
-        }
-    }
-	dir += 22.5
-	repeat(4) {
-        dir += 360 / 4;
-        with instance_create(x,y,obj_Direction_Bullet) {
-            scr_Bullet_Replicate_Properties();
-			bulletlife = 180;
-			alarm[0] = bulletlife;
-            sprite_index = spr_Lightning_Bullet;
-            bulletspeed = other.bulletspeed * 0.75;
-            bulletpower = global.stagedamage;
-            speed = bulletspeed;
-            direction = other.direction + other.dir;
-        }
-    }
+	_bull.bullet_speed = bullet_stats.bullet_speed * 1.333
+	_bull.bullet_count = 4;
+	_bull.bullet_spread = 360 / _bull.bullet_count;
+	
+	scr_shoot_bullets(_bull, x, y)
+	
+	_bull.bullet_direction += 22.5
+	_bull.bullet_speed = bullet_stats.bullet_speed * 0.75
+	
+	scr_shoot_bullets(_bull, x, y)
 	
 }
+
+scr_bullet_lob(bullet_stats)

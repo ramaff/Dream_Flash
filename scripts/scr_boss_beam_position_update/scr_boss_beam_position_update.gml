@@ -4,7 +4,7 @@ function scr_boss_beam_position_update(){
 	if instance_exists(seg_tail) {
 		var _actual_tail_angle = seg_tail.seg_angle + seg_tail.seg_angle_displacement
 		if seg_angle + seg_angle_displacement != _actual_tail_angle {
-			seg_angle = _actual_tail_angle - seg_angle_displacement
+			seg_angle = _actual_tail_angle// - seg_angle_displacement
 		}
 		var _xx = lengthdir_x(seg_tail.seg_distance, _actual_tail_angle)
 		var _yy = lengthdir_y(seg_tail.seg_distance, _actual_tail_angle)
