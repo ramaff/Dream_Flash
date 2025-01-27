@@ -9,6 +9,8 @@ function scr_bullet_lob(_bullet_stats = bullet_stats){
 
 	if _bullet_stats.bullet_bounce_height + _bullet_stats.bullet_bounce_speed < 0 {
 		_bullet_stats.bullet_bounce_speed = _bullet_stats.bullet_bounce_speed * -1;
+		
+		return true
 	}
 
 }

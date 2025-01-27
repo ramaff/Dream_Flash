@@ -41,7 +41,7 @@ if active_attack_delay <= 0 and active_attack_cooldown <= 0 and active_attack_du
 			active_attack = 6;	
 		}
 	}
-	//active_attack = 6;
+	active_attack = 6;
 	
     if active_attack = 1 {
 		// Setup how many attacks per boss move, delay, etc
@@ -274,7 +274,7 @@ if active_attack_delay <= 0 and pattern_cooldown <= 0 and pattern_count > 0 {
 			attack_stats.bullet_type = "obj_beam_bullet_v3"
 		    attack_stats.bullet_sprite = "spr_Boss_Beam_Segment";
 		    attack_stats.bullet_speed = 0;
-		    attack_stats.bullet_size = 0.3125;
+		    attack_stats.bullet_size = 0.625;
 		    attack_stats.bullet_count = 2;
 		    attack_stats.bullet_spread = 15;
 			attack_stats.bullet_power = 0
