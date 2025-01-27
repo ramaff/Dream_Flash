@@ -41,7 +41,7 @@ if active_attack_delay <= 0 and active_attack_cooldown <= 0 and active_attack_du
 			active_attack = 6;	
 		}
 	}
-	active_attack = 6;
+	//active_attack = 6;
 	
     if active_attack = 1 {
 		// Setup how many attacks per boss move, delay, etc
@@ -80,8 +80,6 @@ if active_attack_delay <= 0 and active_attack_cooldown <= 0 and active_attack_du
 	if active_attack = 6 {
 		// Setup how many attacks per boss move, delay, etc
 		scr_Boss_Attack_Time_Setup_v2(180, 20, 1, 150, 30, 10);
-		stored_x = x;
-		stored_y = y;
     }
 }
 
@@ -165,7 +163,7 @@ if active_attack_delay <= 0 and pattern_cooldown <= 0 and pattern_count > 0 {
 	if active_attack = 2 {
 		scr_Boss_Stretch("Vertical", 0.1);
 		
-		attack_stats.bullet_type = "obj_Splash_Bounce_Bullet";
+		attack_stats.bullet_type = "obj_splash_bounce_bullet_v2";
         attack_stats.bullet_sprite = "spr_Big_Glowy_Blue_Shot";
         attack_stats.bullet_speed = bossbulletspeed * (0.7 + random(1.6));
         attack_stats.bullet_power = bosspower * 2;
@@ -210,7 +208,7 @@ if active_attack_delay <= 0 and pattern_cooldown <= 0 and pattern_count > 0 {
 		if champ = 1 {
 			attack_stats.bullet_direction = 230 + random(20);
 			attack_stats.bullet_speed = bossbulletspeed * (5.5 - (pattern_count / 20) + random(1))
-			attack_stats.bullet_type = "obj_Rain_Drop_Bullet_Turn";
+			attack_stats.bullet_type = "obj_rain_drop_bullet_turn_v2";
 		}
 		
 		scr_boss_shoot_v2();
@@ -226,7 +224,7 @@ if active_attack_delay <= 0 and pattern_cooldown <= 0 and pattern_count > 0 {
 	if active_attack = 5 {
 		scr_Boss_Stretch("Vertical", 0.3);
 		
-		attack_stats.bullet_type = "obj_Splash_Bullet";
+		attack_stats.bullet_type = "obj_splash_bullet_v2";
         attack_stats.bullet_sprite = "spr_Rain_Ball";
 		
         attack_stats.bullet_speed = bossbulletspeed * (2.75 - (pattern_count / 3))

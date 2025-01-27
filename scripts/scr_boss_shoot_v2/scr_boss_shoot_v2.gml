@@ -8,7 +8,8 @@ function scr_shoot_bullets(_attack_stats, _xx, _yy) {
 			bullet_stats = variable_clone(_attack_stats)
 	        scr_bullet_shoot_properties_v2(bullet_stats);
 
-			direction = bullet_stats.bullet_direction + _dir;
+			bullet_stats.bullet_direction += _dir
+			direction = bullet_stats.bullet_direction;
 			if bullet_stats.bullet_direction_angle = 1 {
 				image_angle = direction;
 			}
@@ -20,7 +21,8 @@ function scr_shoot_bullets(_attack_stats, _xx, _yy) {
 				bullet_stats = variable_clone(_attack_stats)
 		        scr_bullet_shoot_properties_v2(bullet_stats);
 
-				direction = bullet_stats.bullet_direction + _dir;
+				bullet_stats.bullet_direction += _dir
+				direction = bullet_stats.bullet_direction;
 				if bullet_stats.bullet_direction_angle = 1 {
 					image_angle = direction;
 				}
