@@ -32,8 +32,10 @@ function scr_shoot_beam(_attack_stats, _xx, _yy, _lightning = false) {
 				if _count = 0 {
 					sprite_index = spr_Boss_Beam_Start;
 					//other.laser_start = id;
-					seg_angle = direction - other.image_angle;
-					seg_angle_displacement = other.image_angle;
+					if bullet_stats.bullet_direction_angle = 1 {
+						seg_angle = direction - other.image_angle;
+						seg_angle_displacement = other.image_angle;
+					}
 					
 					bullet_stats.bullet_sprite_ontop = spr_Boss_Beam_Start_Ontop
 					bullet_stats.bullet_sprite_ontoptop = spr_Boss_Beam_Start_Ontoptop
@@ -49,7 +51,7 @@ function scr_shoot_beam(_attack_stats, _xx, _yy, _lightning = false) {
 					bullet_stats.bullet_sprite_ontop = spr_Boss_Beam_Tail_Ontop
 					bullet_stats.bullet_sprite_ontoptop = spr_Boss_Beam_Tail_Ontop
 				} else if _lightning = true {
-					if (_count mod 3 = 2) and scr_Chance(2) {
+					if (_count mod 3 = 2) and scr_Chance(1.5) {
 						if _zag = -0.5 {
 							_zag = 0.5;
 							image_yscale = -bullet_stats.bullet_size;

@@ -2,6 +2,9 @@ function scr_shoot_bullets(_attack_stats, _xx, _yy) {
 	var _dir = -(_attack_stats.bullet_spread * (_attack_stats.bullet_count - 1) / 2);
 	var _bull = asset_get_index(_attack_stats.bullet_type);
 	
+	//Print_DF("shooting shots")
+	//Print_DF(_attack_stats.bullet_direction)
+	
 	repeat(_attack_stats.bullet_count) {
 		var _c_bull = noone;
 		with instance_create(_xx, _yy, _bull) {
@@ -10,6 +13,7 @@ function scr_shoot_bullets(_attack_stats, _xx, _yy) {
 
 			bullet_stats.bullet_direction += _dir
 			direction = bullet_stats.bullet_direction;
+			//Print_DF(direction mod 360)
 			if bullet_stats.bullet_direction_angle = 1 {
 				image_angle = direction;
 			}

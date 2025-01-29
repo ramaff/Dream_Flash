@@ -2,7 +2,7 @@
 // You can write your code in this editor
 
 if scr_bullet_lob(bullet_stats) {
-    var _bull = scr_base_bullet_stats(bullet_stats.bullet_speed * 1, bullet_stats.bullet_power, 1)
+    var _bull = scr_base_bullet_stats(bullet_stats.bullet_speed, bullet_stats.bullet_power, 1)
 
 	_bull.bullet_type = "obj_basic_bullet_v2"
 	_bull.bullet_sprite = "spr_Tear_Drop_Bullet"

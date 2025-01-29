@@ -41,7 +41,7 @@ if active_attack_delay <= 0 and active_attack_cooldown <= 0 and active_attack_du
 			active_attack = 6;	
 		}
 	}
-	//active_attack = 6;
+	//active_attack = 5;
 	
     if active_attack = 1 {
 		// Setup how many attacks per boss move, delay, etc
@@ -283,8 +283,6 @@ if active_attack_delay <= 0 and pattern_cooldown <= 0 and pattern_count > 0 {
 			if image_index > 3 and pattern_count_max - pattern_count < 30 {
 				image_index = 3;	
 			}
-	
-			var dir = -(attack_stats.bullet_spread * (attack_stats.bullet_count - 1) / 2);
 				
 			attack_stats.boss_xoffset = -100;
 			
