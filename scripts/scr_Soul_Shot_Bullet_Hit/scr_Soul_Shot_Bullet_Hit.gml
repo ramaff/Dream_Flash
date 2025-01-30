@@ -63,20 +63,20 @@ function scr_soul_shot_bullet_hit_v2(_bullet_stats){
 			if _bullet_stats.soul_shot_block = 1 {
 				_bullet_stats.bullet_power -= (shot_stats.Shot_Power / 10);
 				if _bullet_stats.bullet_power <= 0 {
-				instance_destroy(other);
+					instance_destroy(other);
 				}
 				shot_stats.Shot_Pierce--;
 					
 				if ((_bullet_stats.bullet_power > 0) and (_bullet_stats.bullet_power_max > 0)) {
-					other.bulletsize = 0.1 + 0.4 * sqrt(_bullet_stats.bullet_power / _bullet_stats.bullet_power_max);
+					_bullet_stats.bullet_size = 0.1 + 0.4 * sqrt(_bullet_stats.bullet_power / _bullet_stats.bullet_power_max);
 				} else {
-					other.bulletsize = 0.1;
+					_bullet_stats.bullet_size = 0.1;
 				}
-				other.image_xscale = other.bulletsize;
-				other.image_yscale = other.bulletsize;
+				other.image_xscale = _bullet_stats.bullet_size;
+				other.image_yscale = _bullet_stats.bullet_size;
 					
 				if shot_stats.Shot_Pierce <= 0 {
-				instance_destroy();
+					instance_destroy();
 				}
 			}
 		
@@ -109,8 +109,8 @@ function scr_soul_shot_bullet_hit_v2(_bullet_stats){
 				}
 			}
 	
-			if shot_stats.Shot_Freeze_Type > 0 and scr_Chance(1 / shot_stats.Shot_Freeze_Type) and other.bulletspeed != 0 {
-				other.bulletspeed = 0;
+			if shot_stats.Shot_Freeze_Type > 0 and scr_Chance(1 / shot_stats.Shot_Freeze_Type) and _bullet_stats.bullet_speed != 0 {
+				_bullet_stats.bullet_speed = 0;
 				other.speed = 0;
 		
 				var bid = other.id;

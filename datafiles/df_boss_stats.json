@@ -1512,7 +1512,7 @@
             "Knock_Defense": 999,
             "Palette": "spr_deep_watcher_v2_palette",
         
-            "recollectionDescription": "Found deep in the depths of your psyche. Can manifest explosions all over the dreamscape!"
+            "recollectionDescription": "Insurmountable wall."
         },
 
         "Boss 064": {
@@ -1913,13 +1913,13 @@
             },
             "Champ 2": { 
                 "Name":  "Masked High Hopes Spirit",
-                "Recollection_Sprite": "reco_Masked_High_Hope_Spirit",
+                "Recollection_Sprite": "reco_High_Hope_Spirit",
                 "Health_Phase_1": 115,
                 "Health_Phase_2": 1550
             },
             "Champ 3": {
                 "Name": "Masked High Hopes Spirit",
-                "Recollection_Sprite": "reco_Masked_High_Hope_Spirit",
+                "Recollection_Sprite": "reco_High_Hope_Spirit",
                 "Health_Phase_1": 135,
                 "Health_Phase_2": 2450
             }
@@ -1944,13 +1944,13 @@
             },
             "Champ 2": { 
                 "Name":  "Masked High Bliss Spirit",
-                "Recollection_Sprite": "reco_Masked_High_Bliss_Spirit",
+                "Recollection_Sprite": "reco_High_Bliss_Spirit",
                 "Health_Phase_1": 115,
                 "Health_Phase_2": 1550
             },
             "Champ 3": {
                 "Name": "Masked High Bliss Spirit",
-                "Recollection_Sprite": "reco_Masked_High_Hope_Spirit",
+                "Recollection_Sprite": "reco_High_Hope_Spirit",
                 "Health_Phase_1": 135,
                 "Health_Phase_2": 2450
             }
@@ -1975,13 +1975,13 @@
             },
             "Champ 2": { 
                 "Name":  "Masked High Assurance Spirit",
-                "Recollection_Sprite": "reco_Masked_High_Assurance_Spirit",
+                "Recollection_Sprite": "reco_High_Assurance_Spirit",
                 "Health_Phase_1": 115,
                 "Health_Phase_2": 1550
             },
             "Champ 3": {
                 "Name": "Masked High Assurance Spirit",
-                "Recollection_Sprite": "reco_Masked_High_Assurance_Spirit",
+                "Recollection_Sprite": "reco_High_Assurance_Spirit",
                 "Health_Phase_1": 135,
                 "Health_Phase_2": 2450
             }
@@ -2006,13 +2006,13 @@
             },
             "Champ 2": { 
                 "Name":  "Masked High Loathing Spirit",
-                "Recollection_Sprite": "reco_Masked_High_Loathing_Spirit",
+                "Recollection_Sprite": "reco_High_Loathing_Spirit",
                 "Health_Phase_1": 115,
                 "Health_Phase_2": 1550
             },
             "Champ 3": {
                 "Name": "Masked High Loathing Spirit",
-                "Recollection_Sprite": "reco_Masked_High_Loathing_Spirit",
+                "Recollection_Sprite": "reco_High_Loathing_Spirit",
                 "Health_Phase_1": 135,
                 "Health_Phase_2": 2450
             }
@@ -2037,13 +2037,13 @@
             },
             "Champ 2": { 
                 "Name":  "Masked High Paranoias Spirit",
-                "Recollection_Sprite": "reco_Masked_High_Paranoia_Spirit",
+                "Recollection_Sprite": "reco_High_Paranoia_Spirit",
                 "Health_Phase_1": 115,
                 "Health_Phase_2": 1550
             },
             "Champ 3": {
                 "Name": "Masked High Paranoias Spirit",
-                "Recollection_Sprite": "reco_Masked_High_Paranoia_Spirit",
+                "Recollection_Sprite": "reco_High_Paranoia_Spirit",
                 "Health_Phase_1": 135,
                 "Health_Phase_2": 2450
             }
@@ -2068,13 +2068,13 @@
             },
             "Champ 2": { 
                 "Name":  "Masked High Despairs Spirit",
-                "Recollection_Sprite": "reco_Masked_High_Despair_Spirit",
+                "Recollection_Sprite": "reco_High_Despair_Spirit",
                 "Health_Phase_1": 115,
                 "Health_Phase_2": 1550
             },
             "Champ 3": {
                 "Name": "Masked High Despairs Spirit",
-                "Recollection_Sprite": "reco_Masked_High_Despair_Spirit",
+                "Recollection_Sprite": "reco_High_Despair_Spirit",
                 "Health_Phase_1": 135,
                 "Health_Phase_2": 2450
             }
