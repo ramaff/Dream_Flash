@@ -13,12 +13,18 @@ function scr_boss_beam_position_update(){
 		x = seg_tail.x + _xx;
 		y = seg_tail.y + _yy;
 		
+		image_angle = seg_angle
 	} else {
-		if seg_angle_displacement != bullet_stats.bullet_origin.image_angle and bullet_stats.bullet_direction_angle = 1 {
+		if seg_angle_displacement != bullet_stats.bullet_origin.image_angle {
 			seg_angle_displacement = bullet_stats.bullet_origin.image_angle;
+		}
+		if bullet_stats.bullet_direction_angle = 1 {
+			image_angle = seg_angle + seg_angle_displacement
+		} else {
+			image_angle = seg_angle	
 		}
 		x = bullet_stats.bullet_origin.x + bullet_stats.boss_xoffset;
 		y = bullet_stats.bullet_origin.y + bullet_stats.boss_yoffset;
 	}
-	image_angle = seg_angle//+ seg_angle_displacement; // don't turn this shit back on
+	//+ seg_angle_displacement; // don't turn this shit back on
 }

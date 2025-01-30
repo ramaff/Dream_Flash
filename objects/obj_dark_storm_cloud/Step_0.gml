@@ -190,6 +190,8 @@ if active_attack_delay <= 0 and pattern_cooldown <= 0 and pattern_count > 0 {
 				
 			attack_stats.bullet_type = "obj_beam_bullet_v3"
 		    attack_stats.bullet_sprite = "spr_Boss_Beam_Segment";
+			attack_stats.bullet_direction_angle = 0;
+			attack_stats.angular_velocity = 0;
 			attack_stats.bullet_part_color1 = make_color_rgb(255, 212, 0)
 			attack_stats.bullet_part_color2 = make_color_rgb(255, 255, 127)
 		    attack_stats.bullet_speed = 0;
@@ -234,8 +236,8 @@ if active_attack_delay <= 0 and pattern_cooldown <= 0 and pattern_count > 0 {
 		attack_stats.bullet_type = "obj_wave_bullet_v2";
         attack_stats.bullet_sprite = "spr_Water_Drop_Bullet";
 		attack_stats.bullet_direction_angle = 1;
-		attack_stats.wave_strength = 2;
-		attack_stats.wave_time = 60;
+		attack_stats.wave_strength = 5;
+		attack_stats.wave_time = 30;
         attack_stats.bullet_speed = bossbulletspeed * 2.5;
         attack_stats.bullet_count = 8;
         attack_stats.bullet_spread = 255 / attack_stats.bullet_count;
@@ -266,6 +268,8 @@ if active_attack_delay <= 0 and pattern_cooldown <= 0 and pattern_count > 0 {
 				
 			attack_stats.bullet_type = "obj_beam_bullet_v3"
 		    attack_stats.bullet_sprite = "spr_Boss_Beam_Segment";
+			attack_stats.bullet_direction_angle = 0;
+			attack_stats.angular_velocity = 0;
 			attack_stats.bullet_part_color1 = make_color_rgb(255, 212, 0)
 			attack_stats.bullet_part_color2 = make_color_rgb(255, 255, 127)
 		    attack_stats.bullet_speed = 0;
@@ -322,6 +326,8 @@ if active_attack_delay <= 0 and pattern_cooldown <= 0 and pattern_count > 0 {
 			if champ = 2 {
 				attack_stats.bullet_type = "obj_beam_bullet_v3"
 			    attack_stats.bullet_sprite = "spr_Boss_Beam_Segment";
+				attack_stats.bullet_direction_angle = 0;
+				attack_stats.angular_velocity = 0;
 				attack_stats.bullet_part_color1 = make_color_rgb(255, 212, 0)
 				attack_stats.bullet_part_color2 = make_color_rgb(255, 255, 127)
 			    attack_stats.bullet_speed = 0;
@@ -393,13 +399,13 @@ if active_attack_delay <= 0 and pattern_cooldown <= 0 and pattern_count > 0 {
 		attack_stats.bullet_direction_angle = 1;
 	    attack_stats.bullet_count = 2;
 		attack_stats.bullet_spread = 360 / attack_stats.bullet_count;
-	    attack_stats.bullet_speed = bossbulletspeed * 1.55;
+	    attack_stats.bullet_speed = bossbulletspeed * 1.85;
 		
 		attack_stats.bullet_direction = scr_Boss_Bullet_Direction_Formula(pattern_direction, 0.5)
 		
 		repeat(2) {
 			scr_boss_shoot_v2();
-			attack_stats.bullet_speed = bossbulletspeed * 1.15;
+			attack_stats.bullet_speed = bossbulletspeed * 1.4;
 			attack_stats.bullet_direction += 9;
 		
 		}
@@ -426,8 +432,8 @@ if active_attack_delay <= 0 and pattern_cooldown <= 0 and pattern_count > 0 {
 		attack_stats.bullet_type = "obj_wave_bullet_v2";
         attack_stats.bullet_sprite = "spr_Water_Drop_Bullet";
 		attack_stats.bullet_direction_angle = 1;
-		attack_stats.wave_strength = 6;
-		attack_stats.wave_time = 15;
+		attack_stats.wave_strength = 5;
+		attack_stats.wave_time = 30;
         attack_stats.bullet_speed = bossbulletspeed * 2.5;
         attack_stats.bullet_count = 16;
         attack_stats.bullet_spread = 270 / attack_stats.bullet_count;
@@ -440,7 +446,8 @@ if active_attack_delay <= 0 and pattern_cooldown <= 0 and pattern_count > 0 {
 				
 			attack_stats.bullet_type = "obj_beam_bullet_v3"
 			attack_stats.bullet_sprite = "spr_Boss_Beam_Segment";
-			bullet_stats.bullet_direction_angle = 0;
+			attack_stats.bullet_direction_angle = 0;
+			attack_stats.angular_velocity = 0;
 			attack_stats.bullet_part_color1 = make_color_rgb(255, 212, 0)
 			attack_stats.bullet_part_color2 = make_color_rgb(255, 255, 127)
 			attack_stats.bullet_speed = 0;

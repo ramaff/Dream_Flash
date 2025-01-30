@@ -122,7 +122,10 @@ if active_attack_delay <= 0 and pattern_cooldown <= 0 and pattern_count > 0 {
 			attack_stats.bullet_type = "obj_beam_bullet_v3"
 		    attack_stats.bullet_speed = 0;
 			attack_stats.bullet_power = 0
+			
+			attack_stats.bullet_size = 0.625;
 			attack_stats.bullet_life_span = 390;
+			attack_stats.bullet_direction_angle = 1;
 		    attack_stats.bullet_sprite = "spr_Boss_Beam_Segment";
 			attack_stats.bullet_part_color1 = make_color_rgb(255, 0, 0)
 			attack_stats.bullet_part_color2 = make_color_rgb(255, 148, 127)
@@ -135,7 +138,7 @@ if active_attack_delay <= 0 and pattern_cooldown <= 0 and pattern_count > 0 {
 			repeat(2) {
 				attack_stats.bullet_direction = _dir - ((90 - _dir_add) / 2)
 				//show_debug_message(attack_stats.bullet_direction)
-				attack_stats.boss_xoffset = lengthdir_x(120,image_angle + _dir_add) + lengthdir_y(85,image_angle + 270);
+				attack_stats.boss_xoffset = lengthdir_x(120,image_angle + _dir_add) + lengthdir_x(85,image_angle + 270);
 				attack_stats.boss_yoffset = lengthdir_y(120,image_angle + _dir_add) + lengthdir_y(85,image_angle + 270);
 			
 			    scr_boss_beam_shoot_v2(attack_stats)
@@ -192,8 +195,10 @@ if active_attack_delay <= 0 and pattern_cooldown <= 0 and pattern_count > 0 {
 				
 			attack_stats.bullet_type = "obj_beam_bullet_v3"
 		    attack_stats.bullet_speed = 0;
-			attack_stats.bullet_power = 0
+			attack_stats.bullet_power = 0;
+			attack_stats.bullet_size = 0.625;
 			attack_stats.bullet_life_span = 390;
+			attack_stats.bullet_direction_angle = 1;
 		    attack_stats.bullet_sprite = "spr_Boss_Beam_Segment";
 			attack_stats.bullet_part_color1 = make_color_rgb(255, 0, 0)
 			attack_stats.bullet_part_color2 = make_color_rgb(255, 148, 127)
@@ -244,7 +249,7 @@ if active_attack_delay <= 0 and pattern_cooldown <= 0 and pattern_count > 0 {
 			attack_stats.bullet_life_span = 300;
 			attack_stats.bullet_count = 8;
 			attack_stats.bullet_spread = 15;
-			attack_stats.boss_xoffset = lengthdir_x(120,image_angle + _dir_add) + lengthdir_y(85,image_angle + 270);
+			attack_stats.boss_xoffset = lengthdir_x(120,image_angle + _dir_add) + lengthdir_x(85,image_angle + 270);
 			attack_stats.boss_yoffset = lengthdir_y(120,image_angle + _dir_add) + lengthdir_y(85,image_angle + 270);
 			scr_boss_shoot_v2();
 		}

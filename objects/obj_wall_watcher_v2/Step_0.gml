@@ -268,7 +268,7 @@ if active_attack_delay <= 0 and pattern_cooldown <= 0 and pattern_count > 0 {
 			attack_stats.bullet_type = "obj_beam_bullet_v3"
 		    attack_stats.bullet_speed = 0;
 			attack_stats.bullet_life_span = 120;
-			attack_stats.bullet_size = 0.25;
+			attack_stats.bullet_size = 0.5;
 			attack_stats.bullet_direction_angle = 1;
 		    attack_stats.bullet_sprite = "spr_Boss_Beam_Segment";
 			attack_stats.bullet_part_color1 = make_color_rgb(255, 0, 0)
