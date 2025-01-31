@@ -4,6 +4,7 @@ function scr_Aggressive_Follow_Boss_AI_No_Orbit() {
 	//var ran = irandom(100);
 
 	if instance_exists(obj_Boss_Parent) {
+		speed = 0;
 		var nboss = instance_nearest(x,y,obj_Boss_Parent)
 		if instance_exists(nboss) {
 			speed = 0;

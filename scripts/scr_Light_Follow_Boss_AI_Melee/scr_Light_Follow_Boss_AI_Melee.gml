@@ -4,6 +4,7 @@ function scr_Light_Follow_Boss_AI_Melee() {
 	var ran = irandom(100);
 
 	if instance_exists(obj_Boss_Parent) {
+		speed = 0;
 		if instance_exists(instance_nearest(x,y,obj_Boss_Parent)) {
 		    if distance_to_object(obj_Boss_Parent) > 60 {
 				minmovedir = point_direction(x,y,instance_nearest(x,y,obj_Boss_Parent).x, instance_nearest(x,y,obj_Boss_Parent).y);
