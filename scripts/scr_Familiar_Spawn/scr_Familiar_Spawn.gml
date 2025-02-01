@@ -1,242 +1,78 @@
+function scr_add_familiar_to_chain(_chain, _minion_type, _count) {
+	repeat(_count) {
+		_chain[array_length(_chain)] = _minion_type;
+	}
+}
+
+function scr_spawn_familar(_xx, _yy, _familiar, _follow_target = noone) {
+	var _ct = noone;
+	if !instance_exists(obj)
+	with instance_create(_xx, _yy, _familiar) {
+		followtarget = _follow_target
+		_ct = id;
+		scr_Minion_Follow_Adjust();
+	}
+	return _ct;
+}
+
 function scr_Familiar_Spawn() {
 
 	scr_Gem_Spawn();
 	
-	scr_N04();
+	scr_N02();
 	
-	minions[0] = noone;
-	followminions[0] = noone;
-	exemptminions[0] = noone;
-	var cMin = 0;
-	var cMinAlt = 0;
-	var cMinEx = 0;
+	minions = [];
+	followminions = [];
+	exemptminions = [];
 	
-	if global.M[1] > 0 {
-	    repeat(global.M[1]) {
-	        followminions[cMinAlt] = obj_Wandering_Soul;
-			cMinAlt++;
-	    }
-	}
+	scr_add_familiar_to_chain(followminions, obj_Wandering_Soul, global.M[1]);
+	scr_add_familiar_to_chain(followminions, obj_Friendly_Figment, global.M[2]);
+	scr_add_familiar_to_chain(minions, obj_Fighter_Soul, global.M[3]);
+	scr_add_familiar_to_chain(exemptminions, obj_Butt_Of_Jokes, global.M[4]);
+	scr_add_familiar_to_chain(minions, obj_Blaze_Soul, global.M[5]);
+	scr_add_familiar_to_chain(minions, obj_Flash_Cannon, global.M[6]);
+	scr_add_familiar_to_chain(followminions, obj_Fuse_Soul, global.M[7]);
+	scr_add_familiar_to_chain(followminions, obj_Healthy_Thoughts, global.M[8]);
+	scr_add_familiar_to_chain(followminions, obj_Spike_Soul, global.M[9]);
+	scr_add_familiar_to_chain(followminions, obj_Corporeal_Chum, global.M[10]);
+	scr_add_familiar_to_chain(minions, obj_Hungry_Soul, global.M[11]);
+	scr_add_familiar_to_chain(minions, obj_Troubling_Thingo, global.M[12]);
+	scr_add_familiar_to_chain(followminions, obj_Copy_Cat_Soul, global.M[13]);
+	scr_add_familiar_to_chain(minions, obj_Explosive_Manifesto, global.M[14]);
+	scr_add_familiar_to_chain(minions, obj_Poisonous_Soul, global.M[15]);
+	scr_add_familiar_to_chain(minions, obj_Cognition, global.M[16]);
+	scr_add_familiar_to_chain(minions, obj_Bleeding_Soul, global.M[17]);
+	scr_add_familiar_to_chain(exemptminions, obj_Bullet_Eater, global.M[18]);
+	scr_add_familiar_to_chain(followminions, obj_Magican_Soul, global.M[19]);
+	scr_add_familiar_to_chain(followminions, obj_Positive_Thoughts, global.M[20]);
+	scr_add_familiar_to_chain(followminions, obj_Electro_Soul, global.M[21]);
+	scr_add_familiar_to_chain(followminions, obj_Glum_Chum, global.M[22]);
+	scr_add_familiar_to_chain(minions, obj_Barrier_Soul, global.M[23]);
+	scr_add_familiar_to_chain(minions, obj_Mello_Jello, global.M[24]);
+	scr_add_familiar_to_chain(followminions, obj_Rattlesoul, global.M[25]);
 
-	if global.M[2] > 0 {
-	    repeat(global.M[2]) {
-	        followminions[cMinAlt] = obj_Friendly_Figment;
-			cMinAlt++;
-	    }
-	}
-
-	if global.M[3] > 0 {
-	    repeat(global.M[3]) {
-	        minions[cMin] = obj_Fighter_Soul;
-			cMin++;
-	    }
-	}
-
-	if global.M[4] > 0 {
-	    repeat(global.M[4]) {
-	        exemptminions[cMinEx] = obj_Butt_Of_Jokes;
-			cMinEx++;
-	    }
-	}
-
-	if global.M[5] > 0 {
-	    repeat(global.M[5]) {
-	        minions[cMin] = obj_Blaze_Soul;
-			cMin++;
-	    }
-	}
-
-	if global.M[6] > 0 {
-	    repeat(global.M[6]) {
-	        minions[cMin] = obj_Flash_Cannon;
-			cMin++;
-	    }
-	}
-
-	if global.M[7] > 0 {
-	    repeat(global.M[7]) {
-	        followminions[cMinAlt] = obj_Fuse_Soul;
-			cMinAlt++;
-	    }
-	}
-
-	if global.M[8] > 0 {
-	    repeat(global.M[8]) {
-	        followminions[cMinAlt] = obj_Healthy_Thoughts;
-			cMinAlt++;
-	    }
-	}
-
-	if global.M[9] > 0 {
-	    repeat(global.M[9]) {
-	        followminions[cMinAlt] = obj_Spike_Soul;
-			cMinAlt++;
-	    }
-	}
-
-	if global.M[10] > 0 {
-	    repeat(global.M[10]) {
-	        followminions[cMinAlt] = obj_Corporeal_Chum;
-			cMinAlt++;
-	    }
-	}
-
-	if global.M[11] > 0 {
-	    repeat(global.M[11]) {
-	        minions[cMin] = obj_Hungry_Soul;
-			cMin++;
-	    }
-	}
-
-	if global.M[12] > 0 {
-	    repeat(global.M[12]) {
-	        minions[cMin] = obj_Troubling_Thingo;
-			cMin++;
-	    }
-	}
-
-	if global.M[13] > 0 {
-	    repeat(global.M[13]) {
-	        followminions[cMinAlt] = obj_Copy_Cat_Soul;
-			cMinAlt++;
-	    }
-	}
-
-	if global.M[14] > 0 {
-	    repeat(global.M[14]) {
-	        minions[cMin] = obj_Explosive_Manifesto;
-			cMin++;
-	    }
-	}
-
-	if global.M[15] > 0 {
-	    repeat(global.M[15]) {
-	        minions[cMin] = obj_Poisonous_Soul;
-			cMin++;
-	    }
-	}
-
-	if global.M[16] > 0 {
-	    count = 0;
-	    repeat(global.M[16]) {
-			/*
-	        with instance_create(x,y,obj_Cognition) {
-	            Angle = other.count * (360 / global.M[16]);
-	        }
-	        count++;
-			*/
-			minions[cMin] = obj_Cognition;
-			cMin++;
-	    }
-	}
-	if global.M[17] > 0 {
-	    repeat(global.M[17]) {
-	        minions[cMin] = obj_Bleeding_Soul;
-			cMin++;
-	    }
-	}
-
-	if global.M[18] > 0 {
-	    repeat(global.M[18]) {
-	        exemptminions[cMinEx] = obj_Bullet_Eater;
-			cMinEx++;
-	    }
-	}
-
-	if global.M[19] > 0 {
-	    repeat(global.M[19]) {
-	        followminions[cMinAlt] = obj_Magican_Soul;
-			cMinAlt++;
-	    }
-	}
-	
-	if global.M[20] > 0 {
-	    repeat(global.M[20]) {
-	        followminions[cMinAlt] = obj_Positive_Thoughts;
-			cMinAlt++;
-	    }
-	}
-	
-	if global.M[21] > 0 {
-	    repeat(global.M[21]) {
-	        followminions[cMinAlt] = obj_Electro_Soul;
-			cMinAlt++;
-	    }
-	}
-	
-	if global.M[22] > 0 {
-	    repeat(global.M[22]) {
-	        followminions[cMinAlt] = obj_Glum_Chum;
-			cMinAlt++;
-	    }
-	}
-	
-	if global.M[23] > 0 {
-		/*
-	    count = 0;
-	    repeat(global.M[23]) {
-	        with minions[cMin] = obj_Barrier_Soul) {
-	            Angle = other.count * (360 / global.M[23]);
-	        }
-	        count++;
-	    }
-		*/
-		repeat(global.M[23]) {
-	        minions[cMin] = obj_Barrier_Soul;
-			cMin++;
-	    }
-	}
-
-	if global.M[24] > 0 {
-		/*
-	    count = 0;
-	    repeat(global.M[24]) {
-	        with minions[cMin] = obj_Mello_Jello) {
-	            Angle = other.count * (360 / global.M[24]);
-	        }
-	        count++;
-	    }
-		*/
-		repeat(global.M[24]) {
-	        minions[cMin] = obj_Mello_Jello;
-			cMin++;
-	    }
-	}
-	
-	if global.M[25] > 0 {
-	    repeat(global.M[25]) {
-	        followminions[cMinAlt] = obj_Rattlesoul;
-			cMinAlt++;
-	    }
-	}
-
-
-	var ct = id;
+	var _ct = id;
 	var ang = 0;
 	var dis = 20;
 
-	for(var i = 0; i < cMinAlt; i++) {
-		with instance_create(x + lengthdir_x(dis, ang),y + lengthdir_y(dis, ang), followminions[i]) {
-			followtarget = ct;
-			ct = id;
-		}
+	for(var i = 0; i < array_length(followminions); i++) {
+		_ct = scr_spawn_familar(x + lengthdir_x(dis, ang), y + lengthdir_y(dis, ang), followminions[i], _ct);
 		ang += 45;
 		dis += 5 + (300 / dis);
 	}
 	
-	for(var i = 0; i < cMin; i++) {
-		with instance_create(x + lengthdir_x(dis, ang),y + lengthdir_y(dis, ang), minions[i]) {
-			followtarget = ct;
-			ct = id;
-		}
+	var _ct = id;
+	
+	for(var i = 0; i < array_length(minions); i++) {
+		_ct = scr_spawn_familar(x + lengthdir_x(dis, ang), y + lengthdir_y(dis, ang), minions[i], _ct);
 		ang += 45;
 		dis += 5 + (300 / dis);
 	}
 	
-	for(var i = 0; i < cMinEx; i++) {
-		with instance_create(x + lengthdir_x(dis, ang),y + lengthdir_y(dis, ang), exemptminions[i]) {
-			followtarget = noone;
-		}
+	var _ct = id;
+	
+	for(var i = 0; i < array_length(exemptminions); i++) {
+		_ct = scr_spawn_familar(x + lengthdir_x(dis, ang), y + lengthdir_y(dis, ang), exemptminions[i], _ct);
 		ang += 45;
 		dis += 5 + (300 / dis);
 	}

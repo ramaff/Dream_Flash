@@ -45,7 +45,7 @@ if mouse_check_button(mb_left) {
 
 scr_E13_Draw();
 scr_P04_Draw();
-scr_U07_Draw();
+//scr_U07_Draw();
 
 /*
 var i = 0;

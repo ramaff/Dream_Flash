@@ -9,78 +9,47 @@ function scr_Beast_Maw_Use() {
 		Shot_Type: "obj_Lesser_Soul_Shot",
 		Shot_Speed: 0,
 		Shot_Movement: 0,
-		Shot_Power: 14 * global.soulstateformboost,
+		Shot_Power: 5,
 		Shot_Knock_Back: 10,
 		Shot_Life_Span: 23,
-		Shot_Screen_Shake: 5,
-		Shot_Size: 0.8,
+		Shot_Size: 0.4,
 		Shot_Phasing: 1,
 		Shot_Melee: true,
 		Shot_Pierce: 100
 	};
 	
-	var dist = point_distance(x,y,mouse_x,mouse_y);
+	var _target = instance_nearest(x, y, obj_Boss_Parent)
+	
+	var dist = point_distance(x,y,_target.x,_target.y);
 	if dist > 200 {
 		dist = 200;	
 	}
-	var ang = point_direction(x,y,mouse_x,mouse_y);
+	var ang = point_direction(x,y,_target.x,_target.y) - 30 + random(60);
 	
-	current_weapon_stats.Shot_XX = lengthdir_x(dist, ang - 15 + random(30));
-	current_weapon_stats.Shot_YY = lengthdir_y(dist, ang - 15 + random(30));
-	current_weapon_stats.Shot_Life_Drain = 0.5;
+	current_weapon_stats.Shot_XX = lengthdir_x(dist, ang);
+	current_weapon_stats.Shot_YY = lengthdir_y(dist, ang);
+	current_weapon_stats.Shot_Life_Drain = 1;
+	
+	speed = 10;
+	friction = 2;
+	direction = ang;
+	
+	if scr_Chance(5) {
+		current_weapon_stats.Shot_Screen_Shake = 4
+		current_weapon_stats.Shot_Life_Drain = 2;
+		current_weapon_stats.Shot_Size = 0.7;
+		current_weapon_stats.Shot_Power = 14;
+		speed = 15;
+	}
 		
 	current_weapon_stats = scr_Setup_Weapon_Stats(current_weapon_stats);
 
 	scr_Shot_Creation();
 	
-	var delay = 25 + random(10);
+	var delay = 15;
 	
 	delay = (delay - sdelayconservation) / sdelayconservationfactor / ((160 + global.souldexterity + global.souldexterityTemp) / 160);	
 	
 	alarm[4] = delay;
-	
-	
-	/*
-
-	Shot_Spread += 0;
-	Shot_Accuracy += 10;
-	Shot_Count += 0;
-
-	Shot_Sprite = spr_Beast_Maw;
-	Shot_Type = obj_Lesser_Soul_Shot;
-	Shot_Duplicate_Sprite = spr_Phase_Magic_Shot;
-
-	Shot_Imaginary -= 1;
-	Shot_Magical += 1;
-
-	Shot_Speed = 0;
-	Shot_Movement = 0;
-	Shot_Power = 14 * global.soulstateformboost;
-	Shot_Knock_Back = 10;
-	Shot_Life_Span = 23;
-	
-	Shot_Screen_Shake = 5;
-	
-	var dist = point_distance(x,y,mouse_x,mouse_y);
-	if dist > 200 {
-		dist = 200;	
-	}
-	var ang = point_direction(x,y,mouse_x,mouse_y);
-	
-	Shot_XX = lengthdir_x(dist, ang - 15 + random(30));
-	Shot_YY = lengthdir_y(dist, ang - 15 + random(30));
-	Shot_Life_Drain = 0.5;
-
-	Shot_Phasing = 1;
-	Shot_Melee = 1;
-
-	Shot_Pierce += 99;
-
-	Shot_Size = 0.8;
-
-	scr_Shot_Creation();
-	*/
-
-	
 
 }

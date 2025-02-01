@@ -72,6 +72,10 @@ function scr_Item_Spawn() {
 	    fieldSprite = spr_Variety_Item_Field; 
 		tFieldColor = make_color_rgb(255,237,3);	
 	}
+	if fieldType = "Hyper Field" {
+	    fieldSprite = spr_Hyper_Item_Field; 
+		tFieldColor = make_color_rgb(0,255,127);	
+	}
 	if fieldType = "Weapon Field" {
 		fieldSprite = spr_Weapon_Item_Field; 
 		tFieldColor = make_color_rgb(255,6,41);	
@@ -130,23 +134,23 @@ function scr_Item_Spawn() {
 		        if string_digits(itemVal) = itemVal {
 		            itemVal = real(itemVal);
 		        }
+				stacks = 1;
 		        itemData = 6 + i;
 		        if other.fieldType = "Weapon Field" {
 		            weapon = 1;
 		        }
+				if other.fieldType = "Hyper Field" {
+					stacks = 2;	
+				}
 				
 				if i > 2 {
 					hopeDiamond = true;	
 				}
 				
+				
 				fieldColor = tFieldColor;
 				
-				/*
-				if iTier = "CSpecial" {
-					shop = 3;	
-				}
-				*/
-				scr_Initial_Item_Memory_Get()
+				scr_Initial_Item_Memory_Get(stacks)
 		    }
 		}
 	}

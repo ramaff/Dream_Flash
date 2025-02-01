@@ -8,3 +8,4 @@ if global.XA[3] >= 1 {
 if global.OC[4] >= 1 {
 	scr_OC04_Effect();	
 }
+scr_S05_Tick();

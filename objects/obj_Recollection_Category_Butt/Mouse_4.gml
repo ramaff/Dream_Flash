@@ -15,20 +15,23 @@ with (obj_Recollection_Category_Butt) {
 numOfButts = 0;
 if cat = 1 {
     global.recollectCategory = "Weapons";
-    numOfButts = 93;
+    numOfButts = array_length(struct_get_names(global.weapon_stats));
+	Print_DF("Weapon Count: " + string(numOfButts))
 }
 if cat = 2 {
     global.recollectCategory = "Items";
-    numOfButts = 277; // Technically there is 1 additional item than this number
+    numOfButts = array_length(struct_get_names(global.item_stats)); // Technically there is 1 additional item than this number <- wtf was this guy talking about
+	Print_DF("Item Count: " + string(numOfButts))
 }
 if cat = 3 {
     global.recollectCategory = "Bosses";
-    numOfButts = 100;
+    numOfButts = array_length(struct_get_names(global.boss_stats));
+	Print_DF("Boss Count: " + string(numOfButts))
 }
 if scr_State_Recollection_Unlocked() {
 	if cat = 4 {
 	    global.recollectCategory = "State";
-	    numOfButts = 10;
+	    numOfButts = array_length(struct_get_names(global.state_info));
 	}
 	if cat = 5 {
 	    global.recollectCategory = "Information";
@@ -43,14 +46,36 @@ if scr_State_Recollection_Unlocked() {
 
 buttNum = 0;
 
+var _weapon_ids = struct_get_names(global.weapon_stats);
+var _item_ids = struct_get_names(global.item_stats);
+var _boss_ids = struct_get_names(global.boss_stats);
+var _state_ids = struct_get_names(global.state_info);
+
+array_sort(_weapon_ids, function(a, b)
+{
+    return real(a) > real(b);
+})
+
+array_sort(_item_ids, true)
+array_sort(_boss_ids, true)
+array_sort(_state_ids, true)
+
+var _i = 0
+var _j = 0
+
 if global.recollectCategory = "Weapons" {
-    for(i = 1; i <= (numOfButts / 3); i++) {
-        for(j = 0; j < 3; j++) {
-            buttNum++
+    for(_i = 0; _i < (numOfButts / 3); _i++) {
+        for(_j = 0; _j < 3; _j++) {
+            var _index = (_i * 3) + _j;
 			
-            with instance_create(camera_get_view_x(view) + 144 + 90 * j,camera_get_view_y(view) + 112 + 96 * i,obj_Recollection_Butt) {
-                buttNum = other.buttNum;
-                scr_Recollection_Panel_Assign();
+			if _index >= numOfButts {
+				break;
+			}
+			
+            with instance_create(camera_get_view_x(view) + 144 + 90 * _j,camera_get_view_y(view) + 208 + 96 * _i,obj_Recollection_Butt) {
+                //buttNum = other.buttNum;
+                //itemVal = _weapon_ids[_index]
+				itemVal = scr_Recollection_Panel_Assign(_weapon_ids, _index);
 				scr_Assign_Memory();
             }
         }
@@ -61,16 +86,19 @@ if global.recollectCategory = "Weapons" {
 }
 
 if global.recollectCategory = "Items" {
-    for(i = 1; i < ((numOfButts / 3) + 1); i++) {
-        for(j = 0; j < 3; j++) {
-			if buttNum <= numOfButts {
-	            with instance_create(camera_get_view_x(view) + 144 + 90 * j,camera_get_view_y(view) + 112 + 96 * i,obj_Recollection_Butt) {
-	                buttNum = other.buttNum;
-	                scr_Recollection_Panel_Assign();
-					scr_Assign_Memory();
-	            }
-	            buttNum++;
+    for(_i = 0; _i < (numOfButts / 3); _i++) {
+        for(_j = 0; _j < 3; _j++) {
+            var _index = (_i * 3) + _j;
+			if _index >= numOfButts {
+				break;
 			}
+
+	        with instance_create(camera_get_view_x(view) + 144 + 90 * _j, camera_get_view_y(view) + 208 + 96 * _i,obj_Recollection_Butt) {
+
+				itemVal = scr_Recollection_Panel_Assign(_item_ids, _index);
+	            //scr_Recollection_Panel_Assign();
+				scr_Assign_Memory();
+	        }
         }
     }
 	if cat = 2 {
@@ -78,21 +106,16 @@ if global.recollectCategory = "Items" {
 	} 
 }
 
-buttNum = 1;
 
 if global.recollectCategory = "Bosses" {
-    for(i = 1; i <= (numOfButts / 1); i++) {
-        for(j = 0; j < 1; j++) {
-            with instance_create(camera_get_view_x(view) + 176 + 160 * j,camera_get_view_y(view) + 168 + 80 * i,obj_Recollection_Butt) {
-				if other.i mod 2 = 0 {
-					x += 120;
-				}
-				sprite_index = spr_Boss_Border;
-                buttNum = other.buttNum;
-                scr_Recollection_Panel_Assign();
-				scr_Assign_Memory();
-            }
-            buttNum++;
+    for(_i = 0; _i < numOfButts; _i++) {
+        with instance_create(camera_get_view_x(view) + 176,camera_get_view_y(view) + 248 + 80 * _i,obj_Recollection_Butt) {
+			if _i mod 2 = 0 {
+				x += 120;
+			}
+			sprite_index = spr_Boss_Border;
+            itemVal = scr_Recollection_Panel_Assign(_boss_ids, _i);
+			scr_Assign_Memory();
         }
     }
 	if cat = 3 {
@@ -101,18 +124,14 @@ if global.recollectCategory = "Bosses" {
 }
 
 if global.recollectCategory = "State" {
-    for(i = 1; i <= (numOfButts / 1); i++) {
-        for(j = 0; j < 1; j++) {
-            with instance_create(camera_get_view_x(view) + 176 + 160 * j,camera_get_view_y(view) + 168 + 80 * i,obj_Recollection_Butt) {
-				if other.i mod 2 = 0 {
-					x += 120;
-				}
-                sprite_index = spr_Boss_Border;
-                buttNum = other.buttNum;
-                scr_Recollection_Panel_Assign();
-				scr_Assign_Memory();
-            }
-            buttNum++;
+    for(_i = 0; _i < numOfButts; _i++) {
+        with instance_create(camera_get_view_x(view) + 176,camera_get_view_y(view) + 248 + 80 * _i,obj_Recollection_Butt) {
+			if _i mod 2 = 0 {
+				x += 120;
+			}
+            sprite_index = spr_Boss_Border;
+            itemVal = scr_Recollection_Panel_Assign(_state_ids, _i);
+			scr_Assign_Memory();
         }
     }
 	if cat = 4 {
@@ -121,18 +140,14 @@ if global.recollectCategory = "State" {
 }
 
 if global.recollectCategory = "Information" {
-    for(i = 1; i <= (numOfButts / 1); i++) {
-        for(j = 0; j < 1; j++) {
-            with instance_create(camera_get_view_x(view) + 176 + 160 * j,camera_get_view_y(view) + 168 + 80 * i,obj_Recollection_Butt) {
-				if other.i mod 2 = 0 {
-					x += 120;
-				}
-                sprite_index = spr_Boss_Border;
-                buttNum = other.buttNum;
-                scr_Recollection_Panel_Assign();
-				scr_Assign_Memory();
-            }
-            buttNum++;
+    for(_i = 0; _i < numOfButts; _i++) {
+        with instance_create(camera_get_view_x(view) + 176,camera_get_view_y(view) + 248 + 80 * _i,obj_Recollection_Butt) {
+			if _i mod 2 = 0 {
+				x += 120;
+			}
+            sprite_index = spr_Boss_Border;
+            itemVal = scr_Recollection_Panel_Assign([], _i);
+			scr_Assign_Memory();
         }
     }
 	if cat = 5 {

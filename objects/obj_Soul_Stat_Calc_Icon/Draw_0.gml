@@ -4,6 +4,7 @@ draw_set_halign(fa_center);
 
 vis = 0;
 
+
 if statVal = "Health" {
     draw_sprite(spr_Soul_Menu_Heart,0,x,y);
 	sprite_index = spr_Soul_Menu_Heart;

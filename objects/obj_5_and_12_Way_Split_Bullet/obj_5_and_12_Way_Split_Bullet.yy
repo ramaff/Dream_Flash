@@ -12,7 +12,7 @@
   "overriddenProperties": [],
   "parent": {
     "name": "Bullet Into Bullets",
-    "path": "folders/Objects/Boss Bullets/Bullet Into Bullets.yy",
+    "path": "folders/Objects/Boss Bullets/old bullets/Bullet Into Bullets.yy",
   },
   "parentObjectId": {
     "name": "obj_Lob_Bullet",

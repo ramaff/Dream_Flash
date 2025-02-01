@@ -50,6 +50,8 @@ function scr_Shot_Creation(_cw = current_weapon_stats) {
 	scr_D10(_cw);
 	
 	scr_XB05_Shot_Mod(_cw);
+	
+	//scr_Beast_Soul_Shot_Mod(_cw);
 
 	if _cw.Shot_Count > 1 {
 	    if _cw.Shot_Spread < 10 and _cw.Shot_Spread >= 0 {
@@ -152,8 +154,6 @@ function scr_Shot_Creation(_cw = current_weapon_stats) {
 				//exit;	
 			}
 		}
-	
-		scr_Weapon_Part_Create();
 		
 		var mechFac = 1 + scr_Mechanical_Shot_Add(_cw);
 		var speedFac = 1;

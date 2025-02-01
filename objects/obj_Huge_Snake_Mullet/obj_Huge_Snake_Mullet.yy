@@ -13,7 +13,7 @@
   "overriddenProperties": [],
   "parent": {
     "name": "Boss Mullets",
-    "path": "folders/Objects/Boss Bullets/Boss Mullets.yy",
+    "path": "folders/Objects/Boss Bullets/old bullets/Boss Mullets.yy",
   },
   "parentObjectId": {
     "name": "obj_Phase_All_Bullet",

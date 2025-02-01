@@ -57,7 +57,7 @@
             {"resourceType":"Keyframe<SpriteFrameKeyframe>","resourceVersion":"1.0","Channels":{"0":{"resourceType":"SpriteFrameKeyframe","resourceVersion":"1.0","Id":{"name":"bb0f84fe-22af-4ce8-bfd6-2a59dc597334","path":"sprites/spr_Drill_Shot/spr_Drill_Shot.yy",},},},"Disabled":false,"id":"b3bb8fbc-79f1-4e8d-b081-b640d386a00c","IsCreationKey":false,"Key":0.0,"Length":1.0,"Stretch":false,},
           ],},"modifiers":[],"spriteId":null,"trackColour":0,"tracks":[],"traits":0,},
     ],
-    "visibleRange": {"x":0.0,"y":0.0,},
+    "visibleRange": null,
     "volume": 1.0,
     "xorigin": 24,
     "yorigin": 24,

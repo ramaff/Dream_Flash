@@ -33,6 +33,11 @@ with(obj_Soul_Hurt) {
 		event_perform(ev_draw,0)
 	}
 }
+with(obj_soul_hurt_v2) {
+	if depth > 0 {
+		event_perform(ev_draw,0)
+	}
+}
 
 with(obj_Particle_Parent) {
 	event_perform(ev_draw,0)
@@ -53,12 +58,7 @@ repeat(inum) {
 
 with(obj_Particle_Parent_Front) {
 	event_perform(ev_draw,0)
-}/*
-gpu_set_blendmode(bm_subtract);
-with(obj_Particle_Parent_Front_Mult) {
-	event_perform(ev_draw,0)
 }
-gpu_set_blendmode(bm_normal); */
 with(obj_Beam_Shot) {
 	event_perform(ev_draw,0)	
 }
@@ -66,6 +66,11 @@ with(obj_Laser_Tip) {
 	event_perform(ev_draw,0)	
 }
 with(obj_Soul_Hurt) {
+	if depth <= 0 {
+		event_perform(ev_draw,0)
+	}
+}
+with(obj_soul_hurt_v2) {
 	if depth <= 0 {
 		event_perform(ev_draw,0)
 	}

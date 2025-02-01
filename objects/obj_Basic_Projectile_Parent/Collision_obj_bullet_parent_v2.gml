@@ -1,0 +1,1 @@
+scr_soul_shot_bullet_hit_v2(other.bullet_stats)

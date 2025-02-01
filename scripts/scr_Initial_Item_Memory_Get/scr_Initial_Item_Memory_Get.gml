@@ -1,6 +1,6 @@
 // Script assets have changed for v2.3.0 see
 // https://help.yoyogames.com/hc/en-us/articles/360005277377 for more information
-function scr_Initial_Item_Memory_Get(){
+function scr_Initial_Item_Memory_Get(_stacks = 1){
 	recollectionString = "You cannot remember";
 	recollectionUpgrade = 0;
 	recollectionPriceType = spr_Soul_Flash;
@@ -38,7 +38,7 @@ function scr_Initial_Item_Memory_Get(){
 		recollectionEnergyResist[v] = -999;
 	}
 
-	scr_Memory_Info_Bank();
+	scr_Memory_Info_Bank(true);
 
 	if !(is_string(itemVal)) {
 		if global.recollectionWeap[itemVal] >= 1 {
@@ -48,5 +48,5 @@ function scr_Initial_Item_Memory_Get(){
 	
 	//show_debug_message("upgrade: " + string(recollectionUpgrade))
 	
-	scr_Stat_Item_Extra_Stats();
+	scr_Stat_Item_Extra_Stats(_stacks);
 }

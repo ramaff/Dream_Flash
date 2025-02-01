@@ -2,10 +2,10 @@
   "resourceType": "GMSprite",
   "resourceVersion": "1.0",
   "name": "spr_Recollection_Unknown_Weapon_Icon",
-  "bbox_bottom": 117,
-  "bbox_left": 46,
-  "bbox_right": 117,
-  "bbox_top": 46,
+  "bbox_bottom": 118,
+  "bbox_left": 45,
+  "bbox_right": 118,
+  "bbox_top": 45,
   "bboxMode": 0,
   "collisionKind": 1,
   "collisionTolerance": 0,
@@ -13,7 +13,7 @@
   "edgeFiltering": false,
   "For3D": false,
   "frames": [
-    {"resourceType":"GMSpriteFrame","resourceVersion":"1.1","name":"02437ebf-7acf-4c26-ac04-3d178a9d20f7",},
+    {"resourceType":"GMSpriteFrame","resourceVersion":"1.1","name":"8ae957ac-55c7-4535-b649-28b56b15c198",},
   ],
   "gridX": 0,
   "gridY": 0,
@@ -54,7 +54,7 @@
     "timeUnits": 1,
     "tracks": [
       {"resourceType":"GMSpriteFramesTrack","resourceVersion":"1.0","name":"frames","builtinName":0,"events":[],"inheritsTrackColour":true,"interpolation":1,"isCreationTrack":false,"keyframes":{"resourceType":"KeyframeStore<SpriteFrameKeyframe>","resourceVersion":"1.0","Keyframes":[
-            {"resourceType":"Keyframe<SpriteFrameKeyframe>","resourceVersion":"1.0","Channels":{"0":{"resourceType":"SpriteFrameKeyframe","resourceVersion":"1.0","Id":{"name":"02437ebf-7acf-4c26-ac04-3d178a9d20f7","path":"sprites/spr_Recollection_Unknown_Weapon_Icon/spr_Recollection_Unknown_Weapon_Icon.yy",},},},"Disabled":false,"id":"29d43937-425a-4a12-b863-320acfa1a034","IsCreationKey":false,"Key":0.0,"Length":1.0,"Stretch":false,},
+            {"resourceType":"Keyframe<SpriteFrameKeyframe>","resourceVersion":"1.0","Channels":{"0":{"resourceType":"SpriteFrameKeyframe","resourceVersion":"1.0","Id":{"name":"8ae957ac-55c7-4535-b649-28b56b15c198","path":"sprites/spr_Recollection_Unknown_Weapon_Icon/spr_Recollection_Unknown_Weapon_Icon.yy",},},},"Disabled":false,"id":"22bdbc39-2568-480b-b8d8-744c1ef0c5e4","IsCreationKey":false,"Key":0.0,"Length":1.0,"Stretch":false,},
           ],},"modifiers":[],"spriteId":null,"trackColour":0,"tracks":[],"traits":0,},
     ],
     "visibleRange": null,

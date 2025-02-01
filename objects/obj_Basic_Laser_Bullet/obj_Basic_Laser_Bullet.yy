@@ -8,8 +8,8 @@
   "managed": true,
   "overriddenProperties": [],
   "parent": {
-    "name": "Boss Bullets",
-    "path": "folders/Objects/Boss Bullets.yy",
+    "name": "zBasic Bullets",
+    "path": "folders/Objects/Boss Bullets/old bullets/zBasic Bullets.yy",
   },
   "parentObjectId": {
     "name": "obj_Basic_Enemy_Bullet_Parent",

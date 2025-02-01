@@ -40,18 +40,23 @@ for(i = 1; i <= ceil(numOfButts / 6); i++) {
     
 with instance_create(camX - 432,camY - 224,obj_Soul_Stat_Calc_Icon) {
     statVal = "Health";
+	depth = other.depth - 10;
 }
 with instance_create(camX - 304,camY - 224,obj_Soul_Stat_Calc_Icon) {
     statVal = "Power";
+	depth = other.depth - 10;
 }
 with instance_create(camX - 176,camY - 224,obj_Soul_Stat_Calc_Icon) {
     statVal = "Essence";
+	depth = other.depth - 10;
 }
 with instance_create(camX - 368,camY - 160,obj_Soul_Stat_Calc_Icon) {
     statVal = "Dexterity";
+	depth = other.depth - 10;
 }
 with instance_create(camX - 240,camY - 160,obj_Soul_Stat_Calc_Icon) {
     statVal = "Perception";
+	depth = other.depth - 10;
 }
 
 if scr_State_Recollection_Unlocked() {

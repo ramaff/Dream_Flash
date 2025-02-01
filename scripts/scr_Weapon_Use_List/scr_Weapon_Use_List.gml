@@ -10,15 +10,7 @@ function scr_Weapon_Use_List(cWP = global.currentweapon, _weap_slot = 0) {
 	
 	//cWP = global.currentweapon;
 	
-	var _umbrella_active = false;
-	
-	if cWP = 603 and instance_exists(obj_Umbrella_Shot) {
-		with (obj_Umbrella_Shot) {
-			if shot_stats.Shot_Follow_Origin = other.id {
-				_umbrella_active = true;
-			}
-		}
-	}
+	var _umbrella_active = scr_umbrella_active(cWP)
 	
 	current_weapon_stats = scr_Setup_Default_Weapon_Stats(cWP)
 	scr_Modify_Current_Weapon_Stats();
@@ -27,15 +19,8 @@ function scr_Weapon_Use_List(cWP = global.currentweapon, _weap_slot = 0) {
 	weaponDelay = current_weapon_stats.Delay;
 	//show_debug_message("Weapon Cost: " + string(weaponCost) + ", Weapon Delay: " + string(weaponDelay))
 	
-	if cWP = 603 and _umbrella_active {
-		weaponCost = weaponCost / 10;
-	}
+	weaponCost = scr_Pre_Shoot_Weapon_Essence_Cost(weaponCost, cWP, _umbrella_active)
 	
-	if weaponCost > 2 {
-		weaponCost = ((weaponCost - senergyconservation) / senergyconservationfactor / ((6 + global.Weap[global.currentweapon]) / 6)) 
-	} else {
-		weaponCost = ((weaponCost - (senergyconservation / 10)) / senergyconservationfactor / ((6 + global.Weap[global.currentweapon]) / 6)) 
-	}
 	weaponDelay = (weaponDelay - sdelayconservation) / sdelayconservationfactor / ((6 + global.Weap[global.currentweapon]) / 6);	
 	
 	if weaponDelay <= 1 {
@@ -45,14 +30,6 @@ function scr_Weapon_Use_List(cWP = global.currentweapon, _weap_slot = 0) {
 	////////////////////////////////////////////////////////////////////
 	//////////////////////Imaginary Weapon Use//////////////////////////
 	////////////////////////////////////////////////////////////////////
-
-	scr_C12();
-
-	scr_C14();
-
-	scr_E11_Weapon();
-
-	weaponCost = weaponCost / scr_Class_Stat_Weapon_Cost_Multiplier();
 
 	var lHalf = 0;
 
@@ -82,7 +59,7 @@ function scr_Weapon_Use_List(cWP = global.currentweapon, _weap_slot = 0) {
 			scr_Bleeding_Blade_Use(current_weapon_stats);
 		}
 		
-		current_weapon_stats = scr_Setup_Weapon_Stats(current_weapon_stats);
+		//current_weapon_stats = scr_Setup_Weapon_Stats(current_weapon_stats);
 		
 		barrage = false;
 		minion = false;
@@ -149,21 +126,19 @@ function scr_Weapon_Use_List(cWP = global.currentweapon, _weap_slot = 0) {
 		
 		//show_debug_message(current_weapon_stats)
 		
-		scr_XC06_Cost_Adjustment();
-		
-		scr_XA03_Cost_Adjustment();
-		
 		var _v6_procs = scr_V06_Active() 
 		if _v6_procs > 0 {
-			weaponCost += weaponCost * _v6_procs;
 			scr_V06(_v6_procs);
 		}
 		
 		if spawnProjectile {
 			scr_OC03(cWP);
 		}
+		scr_Beast_Soul_Shot_Mod(current_weapon_stats);
 		
-		var realCost = weaponCost * scr_U03_Ess_Cost();
+		var realCost = scr_Post_Req_Weapon_Essence_Cost(weaponCost, _v6_procs);
+		
+		current_weapon_stats.Real_Essence_Cost = realCost
 		
 		scr_C11_Shot_Mod(realCost)
 		
@@ -176,9 +151,9 @@ function scr_Weapon_Use_List(cWP = global.currentweapon, _weap_slot = 0) {
 			}
 		}
 		
-		if global.N[5] > 0 and cWP = 14 {
-			scr_Shot_Power_Set(0.4 + (global.N[5] / 10), current_weapon_stats)
-			scr_Shot_Size_Set(sqrt(0.4 + (global.N[5] / 10)), false, current_weapon_stats)
+		if global.N[3] > 0 and cWP = 14 {
+			scr_Shot_Power_Set(0.4 + (global.N[3] / 10), current_weapon_stats)
+			scr_Shot_Size_Set(sqrt(0.4 + (global.N[3] / 10)), false, current_weapon_stats)
 		}
 		
 		scr_Weapon_Output(spawnProjectile, minion, current_weapon_stats)
@@ -190,7 +165,7 @@ function scr_Weapon_Use_List(cWP = global.currentweapon, _weap_slot = 0) {
 		senergy -= realCost;
 		sWeaponTicker++;
     
-		if global.N[5] > 0 {
+		if global.N[3] > 0 {
 			global.WeaponJugglingDelay[_weap_slot] += weaponDelay / scr_Class_Stat_Firerate_Multiplier();
 		} else {
 			sdelay += weaponDelay / scr_Class_Stat_Firerate_Multiplier();

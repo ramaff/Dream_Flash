@@ -12,7 +12,7 @@
   "overriddenProperties": [],
   "parent": {
     "name": "Stationary Hazards",
-    "path": "folders/Objects/Boss Bullets/Stationary Hazards.yy",
+    "path": "folders/Objects/Boss Bullets/old bullets/Stationary Hazards.yy",
   },
   "parentObjectId": {
     "name": "obj_Follow_The_Leader_Bullet",

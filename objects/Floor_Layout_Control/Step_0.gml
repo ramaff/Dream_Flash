@@ -7,3 +7,6 @@ if global.recoalpha >= 0 {
 
 scr_Persistent_Stat_Check();
 scr_Room_Variable_Step();
+
+
+scr_Room_Leavable(true)

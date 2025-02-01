@@ -14,7 +14,7 @@
   "overriddenProperties": [],
   "parent": {
     "name": "Air Strike Shots",
-    "path": "folders/Objects/Boss Bullets/Air Strike Shots.yy",
+    "path": "folders/Objects/Boss Bullets/old bullets/Air Strike Shots.yy",
   },
   "parentObjectId": {
     "name": "obj_Depth",

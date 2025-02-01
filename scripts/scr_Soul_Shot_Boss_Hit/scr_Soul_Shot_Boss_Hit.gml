@@ -4,6 +4,7 @@ function scr_Soul_Shot_Boss_Hit() {
 
 	var hit_again = variable_struct_exists(other.projectile_hits, shot_boss_id)
 	if !hit_again and shot_stats.Shot_Damage {
+		variable_struct_set(shot_stats.Real_Boss_Hits, other.id, other.id)
 		
 		scr_Sound_Effect(asset_get_index(shot_stats.Shot_Hit_SFX));
     
@@ -26,6 +27,8 @@ function scr_Soul_Shot_Boss_Hit() {
 				}
 				shot_stats.Shot_Excess_Essence = 0;
 			}
+			
+			scr_V09()
 			
 			if shot_stats.Shot_Chain > 0 {
 				
@@ -148,32 +151,10 @@ function scr_Soul_Shot_Boss_Hit() {
 			
 			//show_debug_message("scr_Soul_Shot_Boss_Hit: " + string(shot_stats.Shot_Burst_Stats))
 			
-			var _og_stats = shot_stats
-			
 			if shot_stats.Shot_Burst_Stats != false {
 				var burstIndex = array_length(shot_stats.Shot_Burst_Stats) - 1;
 				if instance_exists(obj_Boss_Parent) and burstIndex >= 0 {
-					var dir = -shot_stats.Shot_Burst_Stats[burstIndex].Spread / 2;
-					//shot_stats.Shot_Life_Span = shot_stats.Shot_Life_Span * 0.6;
-					image = 1
-					var _v_burst_stats = shot_stats.Shot_Burst_Stats[burstIndex]
-					repeat(shot_stats.Shot_Burst_Stats[burstIndex].Amount) {
-					    with instance_create(x,y, asset_get_index(_v_burst_stats.Shot_Type)) {
-					        shot_stats = scr_Duplicate_Shot_Stats(_v_burst_stats, variable_clone(_og_stats), dir);
-					
-							scr_Shot_Burst_Stats(_v_burst_stats);
-					
-							if burstIndex > 0 {
-								shot_stats.Shot_Burst_Stats = [];
-								for(var i = 0; i <= burstIndex-1; i++) {
-									array_insert(shot_stats.Shot_Burst_Stats,i,_og_stats.Shot_Burst_Stats[i])
-								}
-							} else {
-								shot_stats.Shot_Burst_Stats = false;	
-							}
-					    }
-					    dir += shot_stats.Shot_Burst_Stats[burstIndex].Spread;
-					}
+					event_user(0)
 					instance_destroy();
 				}	
 			} 

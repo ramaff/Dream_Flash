@@ -1,6 +1,6 @@
 /// @description Insert description here
 // You can write your code in this editor
-var price = ceil((5 + (global.currentchapter * 5)) / ((3 + global.N[2]) / 4));
+var price = ceil((5 + (global.currentchapter * 5)) / ((3 + global.T[1]) / 4));
 
 if global.soulflash >= price {
 	with obj_Item_Parent {

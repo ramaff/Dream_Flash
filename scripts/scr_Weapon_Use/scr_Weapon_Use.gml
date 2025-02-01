@@ -10,14 +10,14 @@ function scr_Weapon_Use() {
 
 
 	if chargeweapon = 0 {
-	    if sdelay <= 0 and global.N[5] <= 0 {    
+	    if sdelay <= 0 and global.N[3] <= 0 {    
 	        scr_Weapon_Use_List();
 	    }
 	}
 	
 	scr_U03_Step()
 
-	scr_N05();
+	scr_N03();
 
 
 }

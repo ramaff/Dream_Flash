@@ -66,7 +66,7 @@ function scr_Pool_Refill(pool){
 	}
 	if pool = global.n_item_pool {
 		letter = "N"
-		totalitems = 6;
+		totalitems = 4;
 	}
 	if pool = global.oa_item_pool {
 		letter = "OA"
@@ -82,11 +82,11 @@ function scr_Pool_Refill(pool){
 	}
 	if pool = global.p_item_pool {
 		letter = "P"
-		totalitems = 9;
+		totalitems = 10;
 	}
 	if pool = global.q_item_pool {
 		letter = "Q"
-		totalitems = 4;
+		totalitems = 5;
 	}
 	if pool = global.r_item_pool {
 		letter = "R"
@@ -94,11 +94,11 @@ function scr_Pool_Refill(pool){
 	}
 	if pool = global.s_item_pool {
 		letter = "S"
-		totalitems = 3;
+		totalitems = 6;
 	}
 	if pool = global.t_item_pool {
 		letter = "T"
-		totalitems = 3;
+		totalitems = 4;
 	}
 	if pool = global.u_item_pool {
 		letter = "U"
@@ -106,7 +106,7 @@ function scr_Pool_Refill(pool){
 	}
 	if pool = global.v_item_pool {
 		letter = "V"
-		totalitems = 8;
+		totalitems = 9;
 	}
 	if pool = global.w_item_pool {
 		letter = "W"
@@ -167,6 +167,16 @@ function scr_Pool_Refill(pool){
 					ds_list_add(global.i_item_pool, "F00");
 				}
 			}
+		}
+	}
+	if letter = "J" {
+		if !scr_State_Recollection_Unlocked() {
+			ds_list_delete(global.j_item_pool, ds_list_find_index(global.j_item_pool, "J06"))
+		}
+	}
+	if letter = "K" {
+		if !scr_State_Recollection_Unlocked() {
+			ds_list_delete(global.k_item_pool, ds_list_find_index(global.k_item_pool, "K08"))
 		}
 	}
 	

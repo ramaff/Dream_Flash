@@ -4,7 +4,7 @@ function scr_V07_Use() {
 	if global.V[7] > 0 and global.V7mindblow >= 100 {
 		
 		 scr_Default_Weapon_Stats();
-		var pow = 2 + 4 * global.T[3]
+		var pow = 2 + 4 * global.V[7]
 		
 		current_weapon_stats = {
 			Shot_Spread: 0,

@@ -22,7 +22,3 @@ y -= (global.roomSizeY / 3);
 with(obj_Soul_Parent) {
 	y += 200;	
 }
-
-stored_x = x;
-stored_y = y;
-				

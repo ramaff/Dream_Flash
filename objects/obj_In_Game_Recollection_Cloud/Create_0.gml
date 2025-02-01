@@ -3,8 +3,10 @@ alarm[0] = 1;
 recollectionUpgrade = 0;
 recollectionMirror = 0;
 recollectionExtraStats = 0;
+recollectionCount = 1;
 shop = 0;
 leave = 0;
+stacks = 1;
 
 if global.cloudalpha < 0 {
 	global.cloudalpha = 0;	

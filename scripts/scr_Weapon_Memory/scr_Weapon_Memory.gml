@@ -25,9 +25,11 @@ function scr_Weapon_Memory(displayItemSprite = true) {
 		}
 	}
 	
+	recollectionCount = global.recollectionWeap[itemVal]
+	
 	recollectionExtraStats = "You cannot remember"
 	
-	if global.recollectionWeap[itemVal] >= 1 {
+	if global.recollectionWeap[itemVal] >= 1 || displayItemSprite {
 		recollectionExtraStats = "No Special Properties"
 		
 		if variable_struct_exists(current_weapon_stats, "Shot_Power") {

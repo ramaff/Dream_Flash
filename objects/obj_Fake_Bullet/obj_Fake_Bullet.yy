@@ -11,7 +11,7 @@
   "overriddenProperties": [],
   "parent": {
     "name": "Paranoid Bullets",
-    "path": "folders/Objects/Boss Bullets/Paranoid Bullets.yy",
+    "path": "folders/Objects/Boss Bullets/old bullets/Paranoid Bullets.yy",
   },
   "parentObjectId": {
     "name": "obj_Depth",

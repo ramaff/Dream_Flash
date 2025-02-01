@@ -24,7 +24,7 @@ if global.soulflash >= price {
 		shop = 0;
 	
 		scr_Initial_Item_Memory_Get();
-		scr_Item_Click(true);
+		scr_Item_Click(1, true);
 		
 	}
 	

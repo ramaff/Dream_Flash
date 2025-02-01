@@ -10,7 +10,7 @@ if soulinvincibility <= 0 {
 	alarm[2] = 10;
 	image_index = 1;
 
-	scr_Rubber_Soul_Rebound_Shot();
+	scr_Rubber_Soul_Rebound_Shot(other.speed, other.bulletpower);
     
     if shealth <= 0 {
         instance_destroy();

@@ -9,7 +9,7 @@
   "overriddenProperties": [],
   "parent": {
     "name": "Spin Bullets",
-    "path": "folders/Objects/Boss Bullets/Spin Bullets.yy",
+    "path": "folders/Objects/Boss Bullets/old bullets/Spin Bullets.yy",
   },
   "parentObjectId": {
     "name": "obj_Basic_Enemy_Bullet_Parent",

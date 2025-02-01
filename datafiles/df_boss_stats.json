@@ -3,9 +3,9 @@
             "Name": "Wall Watcher",
             "Description": "A Strange figment of your imagination, wanders around the edges of the dreamscape shooting aimlessly.",
             "Boss_Danger": 1,
-            "Recollection_Sprite": "reco_Watcher_Wall",
+            "Recollection_Sprite": "reco_wall_watcher_v2",
             "Health_Phase_1": 200,
-            "Health_Phase_2": 200,
+            "Health_Phase_2": 240,
             "Defense_Phase_1": 0,
             "Defense_Phase_2": 0,
             "Attack_Speed": 1,
@@ -13,21 +13,21 @@
             "Move_Speed": 1.75,
             "Knock_Defense": 999,
             "Accuracy": 1,
-            "Palette": "spr_Wall_Watcher_Palette",
+            "Palette": "spr_wall_watcher_v2_palette",
             "Champ 1": {
                 "Name": "Green Wall",
-                "Recollection_Sprite": "reco_Watcher_Wall",
+                "Recollection_Sprite": "reco_wall_watcher_v2",
                 "Health_Phase_1": 240,
-                "Health_Phase_2": 240,
+                "Health_Phase_2": 280,
                 "Defense_Phase_1": 0,
                 "Defense_Phase_2": 0,
                 "Palette_Index": 1
             },
             "Champ 2": {
                 "Name": "Laser Wall",
-                "Recollection_Sprite": "reco_Watcher_Wall",
+                "Recollection_Sprite": "reco_wall_watcher_v2",
                 "Health_Phase_1": 240,
-                "Health_Phase_2": 240,
+                "Health_Phase_2": 280,
                 "Defense_Phase_1": 0,
                 "Defense_Phase_2": 0,
                 "Move_Speed": 2.5,
@@ -35,9 +35,9 @@
             },
             "Champ 8": { 
                 "Name": "Pink Wall",
-                "Recollection_Sprite": "reco_Watcher_Wall",
+                "Recollection_Sprite": "reco_wall_watcher_v2",
                 "Health_Phase_1": 280,
-                "Health_Phase_2": 280,
+                "Health_Phase_2": 320,
                 "Defense_Phase_1": 0,
                 "Defense_Phase_2": 0,
                 "Accuracy": 0.5,
@@ -47,46 +47,51 @@
         },
         "Boss 002": {
             "Name": "Deep Watcher",
-            "Recollection_Sprite": "reco_Deep_Watcher",
-            "Health_Phase_1": 440,
-            "Health_Phase_2": 350,
+            "Recollection_Sprite": "reco_deep_watcher_v2",
+            "Health_Phase_1": 510,
+            "Health_Phase_2": 450,
             "Defense_Phase_1": 1,
             "Defense_Phase_2": 1,
             "Boss_Danger": 7,
             "Bullet_Speed": 3.35,
             "Move_Speed": 2.25,
             "Knock_Defense": 999,
+            "Palette": "spr_deep_watcher_v2_palette",
         
             "recollectionDescription": "Found deep in the depths of your psyche. Can manifest explosions all over the dreamscape!",
         
             "Champ 1": {
                 "Name": "Deep Explosive",
-                "Recollection_Sprite": "spr_Yellow_Miner",
-                "Health_Phase_1": 510,
-                "Health_Phase_2": 420
+                "Health_Phase_1": 570,
+                "Health_Phase_2": 490,
+                "Recollection_Sprite": "reco_deep_watcher_v2",
+                "Palette_Index": 1
             },
             "Champ 2": { 
                 "Name": "Deep Armour",
-                "Recollection_Sprite": "spr_Armoured_Miner",
-                "Health_Phase_1": 510,
-                "Health_Phase_2": 420,
+                "Health_Phase_1": 570,
+                "Health_Phase_2": 490,
                 "Defense_Phase_1": 2,
                 "Defense_Phase_2": 2,
-                "Move_Speed": 2.65
+                "Move_Speed": 2.65,
+                "Recollection_Sprite": "reco_deep_watcher_v2",
+                "Palette_Index": 2
             },
             "Champ 3": {
                 "Name": "Deep Trail",
-                "Recollection_Sprite": "spr_Green_Miner",
-                "Health_Phase_1": 510,
-                "Health_Phase_2": 420,
-                "Move_Speed": 1.5
+                "Health_Phase_1": 570,
+                "Health_Phase_2": 490,
+                "Move_Speed": 1.5,
+                "Recollection_Sprite": "reco_deep_watcher_v2",
+                "Palette_Index": 3
             },
             "Champ 8": {
                 "Name": "Deep Maelstrom",
-                "Recollection_Sprite": "spr_Purple_Miner",
-                "Health_Phase_1": 580,
-                "Health_Phase_2": 490,
-                "Attack_Speed": 1.2
+                "Health_Phase_1": 630,
+                "Health_Phase_2": 530,
+                "Attack_Speed": 1.2,
+                "Recollection_Sprite": "reco_deep_watcher_v2",
+                "Palette_Index": 4
             }
         },
 
@@ -151,8 +156,8 @@
         "Boss 005": {
             "Name": "Thought Cloud",
             "Recollection_Sprite": "reco_Thought_Cloud",
-            "Health_Phase_1": 200,
-            "Health_Phase_2": 240,
+            "Health_Phase_1": 210,
+            "Health_Phase_2": 250,
             "Defense_Phase_1": 0,
             "Defense_Phase_2": 0,
             "Boss_Danger": 1,
@@ -1453,8 +1458,8 @@
             "Champ 2": {
                 "Name": "Decoy Hit Box",
                 "Recollection_Sprite": "reco_boxer",
-                "Health_Phase_1": 360,
-                "Health_Phase_2": 330,
+                "Health_Phase_1": 300,
+                "Health_Phase_2": 390,
                 "Palette_Index": 2
             }
         },
@@ -1492,6 +1497,22 @@
             },
         
             "recollectionDescription": "Pet owners are really irresponsible these days."
+        },
+
+        "Boss 061": {
+            "Name": "Wall King",
+            "Recollection_Sprite": "reco_wall_king",
+            "Health_Phase_1": 1350,
+            "Health_Phase_2": 1190,
+            "Defense_Phase_1": 1,
+            "Defense_Phase_2": 1,
+            "Boss_Danger": 18,
+            "Bullet_Speed": 3.35,
+            "Move_Speed": 2.25,
+            "Knock_Defense": 999,
+            "Palette": "spr_deep_watcher_v2_palette",
+        
+            "recollectionDescription": "Insurmountable wall."
         },
 
         "Boss 064": {
@@ -1892,13 +1913,13 @@
             },
             "Champ 2": { 
                 "Name":  "Masked High Hopes Spirit",
-                "Recollection_Sprite": "reco_Masked_High_Hope_Spirit",
+                "Recollection_Sprite": "reco_High_Hope_Spirit",
                 "Health_Phase_1": 115,
                 "Health_Phase_2": 1550
             },
             "Champ 3": {
                 "Name": "Masked High Hopes Spirit",
-                "Recollection_Sprite": "reco_Masked_High_Hope_Spirit",
+                "Recollection_Sprite": "reco_High_Hope_Spirit",
                 "Health_Phase_1": 135,
                 "Health_Phase_2": 2450
             }
@@ -1923,13 +1944,13 @@
             },
             "Champ 2": { 
                 "Name":  "Masked High Bliss Spirit",
-                "Recollection_Sprite": "reco_Masked_High_Bliss_Spirit",
+                "Recollection_Sprite": "reco_High_Bliss_Spirit",
                 "Health_Phase_1": 115,
                 "Health_Phase_2": 1550
             },
             "Champ 3": {
                 "Name": "Masked High Bliss Spirit",
-                "Recollection_Sprite": "reco_Masked_High_Hope_Spirit",
+                "Recollection_Sprite": "reco_High_Hope_Spirit",
                 "Health_Phase_1": 135,
                 "Health_Phase_2": 2450
             }
@@ -1954,13 +1975,13 @@
             },
             "Champ 2": { 
                 "Name":  "Masked High Assurance Spirit",
-                "Recollection_Sprite": "reco_Masked_High_Assurance_Spirit",
+                "Recollection_Sprite": "reco_High_Assurance_Spirit",
                 "Health_Phase_1": 115,
                 "Health_Phase_2": 1550
             },
             "Champ 3": {
                 "Name": "Masked High Assurance Spirit",
-                "Recollection_Sprite": "reco_Masked_High_Assurance_Spirit",
+                "Recollection_Sprite": "reco_High_Assurance_Spirit",
                 "Health_Phase_1": 135,
                 "Health_Phase_2": 2450
             }
@@ -1985,13 +2006,13 @@
             },
             "Champ 2": { 
                 "Name":  "Masked High Loathing Spirit",
-                "Recollection_Sprite": "reco_Masked_High_Loathing_Spirit",
+                "Recollection_Sprite": "reco_High_Loathing_Spirit",
                 "Health_Phase_1": 115,
                 "Health_Phase_2": 1550
             },
             "Champ 3": {
                 "Name": "Masked High Loathing Spirit",
-                "Recollection_Sprite": "reco_Masked_High_Loathing_Spirit",
+                "Recollection_Sprite": "reco_High_Loathing_Spirit",
                 "Health_Phase_1": 135,
                 "Health_Phase_2": 2450
             }
@@ -2016,13 +2037,13 @@
             },
             "Champ 2": { 
                 "Name":  "Masked High Paranoias Spirit",
-                "Recollection_Sprite": "reco_Masked_High_Paranoia_Spirit",
+                "Recollection_Sprite": "reco_High_Paranoia_Spirit",
                 "Health_Phase_1": 115,
                 "Health_Phase_2": 1550
             },
             "Champ 3": {
                 "Name": "Masked High Paranoias Spirit",
-                "Recollection_Sprite": "reco_Masked_High_Paranoia_Spirit",
+                "Recollection_Sprite": "reco_High_Paranoia_Spirit",
                 "Health_Phase_1": 135,
                 "Health_Phase_2": 2450
             }
@@ -2047,18 +2068,18 @@
             },
             "Champ 2": { 
                 "Name":  "Masked High Despairs Spirit",
-                "Recollection_Sprite": "reco_Masked_High_Despair_Spirit",
+                "Recollection_Sprite": "reco_High_Despair_Spirit",
                 "Health_Phase_1": 115,
                 "Health_Phase_2": 1550
             },
             "Champ 3": {
                 "Name": "Masked High Despairs Spirit",
-                "Recollection_Sprite": "reco_Masked_High_Despair_Spirit",
+                "Recollection_Sprite": "reco_High_Despair_Spirit",
                 "Health_Phase_1": 135,
                 "Health_Phase_2": 2450
             }
         },
-        "Boss 999": {
+        "Boss 199": {
             "Name": "Template Boss",
             "Recollection_Sprite": "spr_Template_Boss",
             "Health_Phase_1": 150,

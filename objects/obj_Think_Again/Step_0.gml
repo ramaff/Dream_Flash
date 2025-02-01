@@ -5,7 +5,7 @@ if !instance_exists(obj_Item_Parent) {
 }
 
 if distance_to_object(obj_Astral_Indicator) < 15 {
-	var price = ceil((5 + (global.currentchapter * 5)) / ((3 + global.N[2]) / 4));
+	var price = ceil((5 + (global.currentchapter * 5)) / ((3 + global.T[1]) / 4));
 	
 	if price < 1 {
 		price = 1;	

@@ -1,5 +1,5 @@
 
-    scr_H14_Minion();
+    
     
     scr_Default_Attack_Settings();
 

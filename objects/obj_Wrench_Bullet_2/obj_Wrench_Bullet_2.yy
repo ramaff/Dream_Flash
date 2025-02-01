@@ -17,7 +17,7 @@
   "overriddenProperties": [],
   "parent": {
     "name": "Wiggle_Wave Bullets",
-    "path": "folders/Objects/Boss Bullets/Wiggle_Wave Bullets.yy",
+    "path": "folders/Objects/Boss Bullets/old bullets/Wiggle_Wave Bullets.yy",
   },
   "parentObjectId": {
     "name": "obj_Basic_Enemy_Bullet_Parent",

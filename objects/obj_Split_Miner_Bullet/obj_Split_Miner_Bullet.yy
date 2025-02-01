@@ -12,7 +12,7 @@
   "overriddenProperties": [],
   "parent": {
     "name": "Mines(Dormant into bullets)",
-    "path": "folders/Objects/Boss Bullets/Mines(Dormant into bullets).yy",
+    "path": "folders/Objects/Boss Bullets/old bullets/Mines(Dormant into bullets).yy",
   },
   "parentObjectId": {
     "name": "obj_Depth",

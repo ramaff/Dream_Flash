@@ -11,13 +11,12 @@ function scr_Misc_Field_Pool_Pick(){
 	var _q_size = ds_list_size(global.q_item_pool)
 	var _r_size = ds_list_size(global.r_item_pool)
 	var _s_size = ds_list_size(global.s_item_pool)
-	var _t_size = ds_list_size(global.t_item_pool)
 	var _u_size = ds_list_size(global.u_item_pool)
 	var _v_size = ds_list_size(global.v_item_pool)
 	var _w_size = ds_list_size(global.w_item_pool)
 	
 	var _misc_items = _g_size + _h_size + _m_size + _p_size + _q_size
-					  + _r_size + _s_size + _t_size + _u_size
+					  + _r_size + _s_size + _u_size
 					   + _v_size + _w_size
 
 	var _type = 1 + irandom(_misc_items - 1);
@@ -51,10 +50,6 @@ function scr_Misc_Field_Pool_Pick(){
 	itemcount += _s_size
 	if _type <= itemcount { /// S
 		return scr_Pool_Pick(global.s_item_pool);
-	}
-	itemcount += _t_size
-	if _type <= itemcount { /// T
-		return scr_Pool_Pick(global.t_item_pool);
 	}
 	itemcount += _u_size
 	if _type <= itemcount { /// U

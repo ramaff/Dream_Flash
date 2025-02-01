@@ -1,6 +1,9 @@
 // Script assets have changed for v2.3.0 see
 // https://help.yoyogames.com/hc/en-us/articles/360005277377 for more information
-function scr_Particle_Burst(particletype = obj_Weapon_Trail, particlesprite = spr_Soul_Big_Bit, particlecolor1 = c_white, particlecolor2 = c_white, burstcount = 0, burstspeed = 10, burstdir = 0, burstspread = 360, particleArea = 0, partSize = 0.5, partLife = 10, burstUniformSpread = false, _xx = -999999, _yy = -999999, _part_angle = image_angle){
+function scr_Particle_Burst(particletype = obj_Weapon_Trail, particlesprite = spr_Soul_Big_Bit, particlecolor1 = c_white,
+							particlecolor2 = c_white, burstcount = 0, burstspeed = 10, burstdir = 0, burstspread = 360, particleArea = 0, 
+							partSize = 0.5, partLife = 10, burstUniformSpread = false, _xx = -999999, _yy = -999999, _part_angle = image_angle,
+							_part_target = noone) {
 	if global.gameParticles > 0 {
 		repeat(burstcount) {
 		
@@ -21,6 +24,8 @@ function scr_Particle_Burst(particletype = obj_Weapon_Trail, particlesprite = sp
 				}
 				
 				base_direction = direction
+				
+				target = _part_target
 				
 				speed = (burstspeed / 4) + random(3 * burstspeed / 4);
 				

@@ -6,7 +6,7 @@
 function scr_U08(){
 	if global.U[8] > 0 {
 		with(obj_Basic_Projectile_Parent) {
-			if scr_Chance(90 / global.U[8]) {
+			if scr_Chance(60 / global.U[8]) {
 				var _xx = x;
 				var _yy = y;
 				var _pow = shot_stats.Shot_Power * global.U[8];
@@ -21,10 +21,12 @@ function scr_U08(){
 	
 				}
 				
+				var _force = 150 / max(10, sqrt(point_distance(x, y, other.x, other.y)));
+				var _force_friction = 1
+				var _force_time = _force / _force_friction
+				var _force_direction = point_direction(x, y, other.x, other.y);
 				
-				other.direction = point_direction(x, y, other.x, other.y);
-				other.speed = 100 / max(10, sqrt(point_distance(x, y, other.x, other.y)));
-				other.friction = 1;
+				scr_force_push(other.id, _force_time, _force, _force_friction, _force_direction)
 
 				with (obj_Boss_Parent) {
 					if point_distance(x,y,_xx,_yy) < _poison_size {
@@ -36,7 +38,7 @@ function scr_U08(){
 						bosshealth -= _pow;
 						scr_Damage_Indicator(0, _pow, 1);
 					
-						scr_Apply_Boss_Poison(id, _poison_pow, 30, 6);			
+						scr_Apply_Boss_Poison(id, _poison_pow, 30, 9);			
 					}
 				}
 				instance_destroy();

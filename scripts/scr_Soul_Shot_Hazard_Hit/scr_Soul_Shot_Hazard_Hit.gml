@@ -22,5 +22,4 @@ function scr_Soul_Shot_Hazard_Hit(){
 	
 	}
 
-
 }

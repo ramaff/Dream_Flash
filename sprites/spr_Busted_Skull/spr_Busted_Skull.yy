@@ -27,7 +27,7 @@
   "origin": 4,
   "parent": {
     "name": "Graveyard",
-    "path": "folders/Sprites/Field Sprites/Graveyard.yy",
+    "path": "folders/Sprites/Old FG BG sprites/Graveyard.yy",
   },
   "preMultiplyAlpha": false,
   "sequence": {

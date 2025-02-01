@@ -7,9 +7,10 @@ if global.currentheart < 0 {
 	global.currentheart = 0;	
 }
 
-if scr_State_Active_Check("Beast") {
+/*if scr_State_Active_Check("Beast") {
 	scr_Beast_Maw_Use();
-}
+} */
+scr_H14();
 
 if soulsleep = 1 and scr_Chance(6) {
 	instance_create(x,y,obj_Sleep_Part);	

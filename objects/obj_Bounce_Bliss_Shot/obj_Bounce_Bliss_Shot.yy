@@ -10,7 +10,7 @@
   "overriddenProperties": [],
   "parent": {
     "name": "Bullet Trail Bullets",
-    "path": "folders/Objects/Boss Bullets/Bullet Trail Bullets.yy",
+    "path": "folders/Objects/Boss Bullets/old bullets/Bullet Trail Bullets.yy",
   },
   "parentObjectId": {
     "name": "obj_Bounce_Bullet_Parent",

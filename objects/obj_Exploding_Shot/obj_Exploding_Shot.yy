@@ -13,7 +13,7 @@
   "overriddenProperties": [],
   "parent": {
     "name": "Home Then Explode",
-    "path": "folders/Objects/Boss Bullets/Home Then Explode.yy",
+    "path": "folders/Objects/Boss Bullets/old bullets/Home Then Explode.yy",
   },
   "parentObjectId": {
     "name": "obj_Basic_Enemy_Bullet_Parent",

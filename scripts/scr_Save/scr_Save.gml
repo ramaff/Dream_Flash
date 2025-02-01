@@ -64,7 +64,7 @@ function scr_Save() {
 
 	ini_close();
 	
-	scr_Copy_Backup_to_Save(_save_file, _backup_save_file)
+	scr_copy_backup_to_save(_save_file, _backup_save_file)
 	
 	//scr_Delete_File_Backup("savegame")
 

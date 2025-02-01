@@ -4,5 +4,4 @@ function scr_Default_Weapon_Stats() {
 	
 	umbrellaActive = false;
 
-
 }

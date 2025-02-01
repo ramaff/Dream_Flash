@@ -312,9 +312,7 @@ function scr_Hard_Coded_Item_Stats(itemVal, items_to_add = 1, reload = false) {
 	    //global.E[3]++;
 	}
 	if itemVal = "E04" {
-	    global.teleportenergyconservationfactor += 0.2;
-	    obj_Soul_Parent.tenergyconservationfactor += 0.2;
-		global.teleportboost += 0.3;
+		global.teleportboost += 0.4;
 	    //global.E[4]++;
 	}
 	if itemVal = "E05" {
@@ -725,153 +723,97 @@ function scr_Hard_Coded_Item_Stats(itemVal, items_to_add = 1, reload = false) {
 		} */
 		
 	}
+	if !reload {
+		if itemVal = "M01" {
+			scr_spawn_familar(x, y, obj_Wandering_Soul)	
+		}
+		if itemVal = "M02" {
+			scr_spawn_familar(x, y, obj_Friendly_Figment)	
+		}
+		if itemVal = "M03" {
+			scr_spawn_familar(x, y, obj_Fighter_Soul)	
+		}
+		if itemVal = "M04" {
+			scr_spawn_familar(x, y, obj_Butt_Of_Jokes)	
+		}
+		if itemVal = "M05" {
+			scr_spawn_familar(x, y, obj_Blaze_Soul)	
+		}
+		if itemVal = "M06" {
+			scr_spawn_familar(x, y, obj_Flash_Cannon)	
+		}
+		if itemVal = "M07" {
+			scr_spawn_familar(x, y, obj_Fuse_Soul)	
+		}
+		if itemVal = "M08" {
+			scr_spawn_familar(x, y, obj_Healthy_Thoughts)	
+		}
+		if itemVal = "M09" {
+			scr_spawn_familar(x, y, obj_Spike_Soul)	
+		}
+		if itemVal = "M10" {
+			scr_spawn_familar(x, y, obj_Corporeal_Chum)	
+		}
+		if itemVal = "M11" {
+			scr_spawn_familar(x, y, obj_Hungry_Soul)	
+		}
+		if itemVal = "M12" {
+			scr_spawn_familar(x, y, obj_Troubling_Thingo)	
+		}
+		if itemVal = "M13" {
+			scr_spawn_familar(x, y, obj_Copy_Cat_Soul)	
+		}
+		if itemVal = "M14" {
+			scr_spawn_familar(x, y, obj_Explosive_Manifesto)	
+		}
+		if itemVal = "M15" {
+			scr_spawn_familar(x, y, obj_Poisonous_Soul)	
+		}
+		if itemVal = "M16" {
+			scr_spawn_familar(x, y, obj_Cognition)	
+		}
+		if itemVal = "M17" {
+			scr_spawn_familar(x, y, obj_Bleeding_Soul)	
+		}
+		if itemVal = "M18" {
+			scr_spawn_familar(x, y, obj_Bullet_Eater)	
+		}
+		if itemVal = "M19" {
+			scr_spawn_familar(x, y, obj_Magican_Soul)	
+		}
+		if itemVal = "M20" {
+			scr_spawn_familar(x, y, obj_Positive_Thoughts)	
+		}
+		if itemVal = "M21" {
+			scr_spawn_familar(x, y, obj_Electro_Soul)	
+		}
+		if itemVal = "M22" {
+			scr_spawn_familar(x, y, obj_Glum_Chum)	
+		}
+		if itemVal = "M23" {
+			scr_spawn_familar(x, y, obj_Barrier_Soul)	
+		}
+		if itemVal = "M24" {
+			scr_spawn_familar(x, y, obj_Mello_Jello)	
+		}
+		if itemVal = "M25" {
+			scr_spawn_familar(x, y, obj_Rattlesoul)	
+		}
+	}
 	
 	if itemVal = "N01" {
-	    //global.N[1] += 1;
-		global.extraitems += 0.5;
-	}
-	if itemVal = "N02" {
-	    //global.N[2] += 1;
-	}
-	if itemVal = "N03" {
-		//weapon = 1;
-	    //global.N[3] += 1;
-		/*
-		itemindex = 701;
-		global.weaponTaken = itemID;
-		global.orbit[itemOrbit] += 1;
-		with(obj_Item_Parent) {
-			if global.orbit[itemOrbit] >= 1 and itemID != global.weaponTaken {
-				Floor_Layout_Control.Flash[global.currentroom,itemData] = 0;
-				instance_destroy();	
-			}
-		}
-		global.orbit[itemOrbit] -= 1;
-	    scr_Weapon_Pickup(); */
+		global.extraitems += 1;
 	}
 	if itemVal = "N04" {
-	    //global.N[4] += 1;
-		//global.mechprogress += 0.5;
-	}
-	if itemVal = "N06" {
 	    if !reload {
-			scr_N06();	
+			scr_N04();	
 		}
 	}
 
-	if itemVal = "M01" {
-	    //global.M[1] += 1;
-		//global.mechprogress += 0.5;
-	}
-	if itemVal = "M02" {
-	    //global.M[2] += 1;
-		//global.mechprogress += 0.5;
-	}
-	if itemVal = "M03" {
-	    //global.M[3] += 1;
-		//global.mechprogress += 0.5;
-	}
-	if itemVal = "M04" {
-	    //global.M[4] += 1;
-		//global.mechprogress += 0.5;
-	}
-	if itemVal = "M05" {
-	    //global.M[5] += 1;
-		//global.mechprogress += 0.5;
-	}
-	if itemVal = "M06" {
-	    //global.M[6] += 1;
-		//global.mechprogress += 0.5;
-	}
-	if itemVal = "M07" {
-	    //global.M[7] += 1;
-		//global.mechprogress += 0.5;
-	}
-	if itemVal = "M08" {
-	    //global.M[8] += 1;
-		//global.mechprogress += 0.5;
-	}
-	if itemVal = "M09" {
-	    //global.M[9] += 1;
-		//global.spikeprogress++;
-	}
-	if itemVal = "M10" {
-	    //global.M[10] += 1;
-		//global.mechprogress += 0.5;
-	}
-	if itemVal = "M11" {
-	    //global.M[11] += 1;
-		//global.mechprogress += 0.5;
-	}
-	if itemVal = "M12" {
-	    //global.M[12] += 1;
-		//global.beastprogress += 0.5;
-	}
-	if itemVal = "M13" {
-	    //global.M[13] += 1;
-		//global.mechprogress += 0.5;
-		//global.castingprogress++;
-	}
-	if itemVal = "M14" {
-	    //global.M[14] += 1;
-		//global.mechprogress += 0.5;
-	}
-	if itemVal = "M15" {
-	    //global.M[15] += 1;
-		//global.snakeprogress += 0.5;
-	}
-	if itemVal = "M16" {
-	    //global.M[16] += 1;
-		//global.mechprogress += 1;
-	}
-	if itemVal = "M17" {
-	    //global.M[17] += 1;
-		//global.bleedingprogress++;
-		//global.mechprogress += 0.5;
-	}
-	if itemVal = "M18" {
-	    //global.M[18] += 1;
-		//global.beastprogress += 0.5;
-	}
-	if itemVal = "M19" {
-	    //global.M[19] += 1;
-		
-		//global.castingprogress++;
-	}
-	if itemVal = "M20" {
-	    //global.M[20] += 1;
-		//global.mechprogress += 0.5;
-	}
-	if itemVal = "M21" {
-	    //global.M[21] += 1;
-		//global.mechprogress += 0.5;
-	}
-	if itemVal = "M22" {
-	    //global.M[22] += 1;
-		//global.mechprogress += 0.5;
-	}
-	if itemVal = "M23" {
-	    //global.M[23] += 1;
-		//global.scrubprogress += 0.5;
-	}
-	if itemVal = "M24" {
-	    //global.M[24] += 1;
-		//global.scrubprogress += 0.5;
-	}
 	
 	if itemVal = "OA01" {
-	    //global.OA[1]++;
 		global.extraitems += 0.5;
 		global.extrarecalls += 1;
-	}
-	if itemVal = "OA02" {
-	    //global.OA[2]++;
-	}
-	if itemVal = "OA03" {
-	    //global.OA[3]++;
-	}
-	if itemVal = "OA04" {
-	    //global.OA[4]++;
 	}
 	if itemVal = "OA05" {
 		if !reload {
@@ -896,10 +838,6 @@ function scr_Hard_Coded_Item_Stats(itemVal, items_to_add = 1, reload = false) {
 	}
 	if itemVal = "OB04" {
 	    //global.OB[4]++;
-		global.soulshotlifefactor += 2;
-	    obj_Soul_Parent.sshotlifefactor += 2;
-		global.soulshotspeed -= 1.5;
-	    obj_Soul_Parent.sshotspeed -= 1.5;
 	}
 	if itemVal = "OC01" {
 	    //global.OC[1]++;
@@ -952,17 +890,18 @@ function scr_Hard_Coded_Item_Stats(itemVal, items_to_add = 1, reload = false) {
 			global.soulparanoia += 4;
 		}
 	}
-	if itemVal = "P05" {	
-	}
-	if itemVal = "P06" {
-	}
-	if itemVal = "P07" {
-	}
-	if itemVal = "P08" {
-	}
 	if itemVal = "P09" {
 		if !reload {
 			global.soulloathing += 4;
+		}
+	}
+	if itemVal = "P10" {
+		global.soulshotlifefactor += 3;
+	    obj_Soul_Parent.sshotlifefactor += 3;
+		global.soulshotspeed -= 2;
+	    obj_Soul_Parent.sshotspeed -= 2;
+		if !reload {
+			global.soulbliss += 2;	
 		}
 	}
 	
@@ -1016,40 +955,15 @@ function scr_Hard_Coded_Item_Stats(itemVal, items_to_add = 1, reload = false) {
 		}
 		//global.spikeprogress++;
 	}
-	if itemVal = "S02" {
-	    //global.S[2]++;
+	if itemVal = "S05" {
+		if !reload {
+			global.soulparanoia += 2;
+			global.soulvanity += 2;
+		}
+		scr_S05()
 	}
-	if itemVal = "S03" {
-	    //global.S[3]++;
-	}
+	
 
-	if itemVal = "T01" {
-	    //global.T[1]++;
-	}
-	if itemVal = "T02" {
-	    //global.T[2]++;
-	}
-	if itemVal = "T03" {
-	    //global.T[3]++;
-		//global.scrubprogress++;
-	}
-
-	if itemVal = "U01" {
-	    //global.U[1]++;
-	}
-	if itemVal = "U02" {
-	    //global.U[2]++;
-	}
-	if itemVal = "U03" {
-	    //global.U[3]++;
-	}
-	if itemVal = "U04" {
-	    //global.U[4]++;
-	}
-	if itemVal = "U05" {
-	    //global.U[5]++;
-		//global.snakeprogress += 0.5;
-	}
 	if itemVal = "U06" {
 	    //global.U[6]++;
 		global.souldelayconservationfactor += 1;
@@ -1129,6 +1043,11 @@ function scr_Hard_Coded_Item_Stats(itemVal, items_to_add = 1, reload = false) {
 	}
 	if itemVal = "V08" {
 	    //global.V[8]++;
+	}
+	if itemVal = "V09" {
+		if !reload {
+		    global.soulloathing += 4;
+		}
 	}
 
 

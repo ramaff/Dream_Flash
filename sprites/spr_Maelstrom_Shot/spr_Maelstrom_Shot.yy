@@ -57,7 +57,7 @@
             {"resourceType":"Keyframe<SpriteFrameKeyframe>","resourceVersion":"1.0","Channels":{"0":{"resourceType":"SpriteFrameKeyframe","resourceVersion":"1.0","Id":{"name":"7eb1cb50-8797-4e28-9c4e-bd6fd467acfd","path":"sprites/spr_Maelstrom_Shot/spr_Maelstrom_Shot.yy",},},},"Disabled":false,"id":"c2a2b103-3f92-4c44-b25c-cb1f33a31484","IsCreationKey":false,"Key":0.0,"Length":1.0,"Stretch":false,},
           ],},"modifiers":[],"spriteId":null,"trackColour":0,"tracks":[],"traits":0,},
     ],
-    "visibleRange": {"x":0.0,"y":0.0,},
+    "visibleRange": null,
     "volume": 1.0,
     "xorigin": 70,
     "yorigin": 69,

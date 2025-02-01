@@ -10,8 +10,8 @@
   "managed": true,
   "overriddenProperties": [],
   "parent": {
-    "name": "Basic Bullets",
-    "path": "folders/Objects/Boss Bullets/Basic Bullets.yy",
+    "name": "Mines(Dormant into bullets)",
+    "path": "folders/Objects/Boss Bullets/old bullets/Mines(Dormant into bullets).yy",
   },
   "parentObjectId": {
     "name": "obj_Basic_Enemy_Bullet_Parent",

@@ -11,7 +11,7 @@
   "overriddenProperties": [],
   "parent": {
     "name": "Move then Random Bullets",
-    "path": "folders/Objects/Boss Bullets/Move then Random Bullets.yy",
+    "path": "folders/Objects/Boss Bullets/old bullets/Move then Random Bullets.yy",
   },
   "parentObjectId": {
     "name": "obj_Basic_Enemy_Bullet_Parent",

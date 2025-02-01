@@ -9,8 +9,8 @@
   "managed": true,
   "overriddenProperties": [],
   "parent": {
-    "name": "Homing",
-    "path": "folders/Objects/Boss Bullets/Homing.yy",
+    "name": "zbullets shooting more bullets",
+    "path": "folders/Objects/Boss Bullets/old bullets/zbullets shooting more bullets.yy",
   },
   "parentObjectId": {
     "name": "obj_Wave_Homing_Bullet",

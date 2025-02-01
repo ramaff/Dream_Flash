@@ -30,8 +30,8 @@
   "nineSlice": null,
   "origin": 4,
   "parent": {
-    "name": "Basic Shots",
-    "path": "folders/Sprites/Boss Bullet Sprites/Basic Shots.yy",
+    "name": "Explosive Shots",
+    "path": "folders/Sprites/Boss Bullet Sprites/Explosive Shots.yy",
   },
   "preMultiplyAlpha": false,
   "sequence": {

@@ -12,6 +12,12 @@ function scr_Minion_Follow_Adjust(){
 				followtar = id	
 			}
 		}
+		with (obj_Figment_Parent) {
+			if object_index != obj_Turret_Soul || object_index != obj_Bullet_Eater {
+				followtarget = followtar
+				followtar = id	
+			}
+		}
 		//followtarget = followtar
 	}
 }

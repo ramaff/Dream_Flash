@@ -4,14 +4,14 @@
   "name": "obj_Bullet_Parent",
   "eventList": [
     {"resourceType":"GMEvent","resourceVersion":"1.0","name":"","collisionObjectId":null,"eventNum":0,"eventType":2,"isDnD":false,},
-    {"resourceType":"GMEvent","resourceVersion":"1.0","name":"","collisionObjectId":null,"eventNum":1,"eventType":3,"isDnD":false,},
     {"resourceType":"GMEvent","resourceVersion":"1.0","name":"","collisionObjectId":null,"eventNum":0,"eventType":8,"isDnD":false,},
+    {"resourceType":"GMEvent","resourceVersion":"1.0","name":"","collisionObjectId":null,"eventNum":1,"eventType":3,"isDnD":false,},
   ],
   "managed": true,
   "overriddenProperties": [],
   "parent": {
     "name": "Parents",
-    "path": "folders/Objects/Boss Bullets/Parents.yy",
+    "path": "folders/Objects/Boss Bullets/old bullets/Parents.yy",
   },
   "parentObjectId": {
     "name": "obj_Soul_Hurt",

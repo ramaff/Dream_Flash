@@ -11,7 +11,7 @@
   "overriddenProperties": [],
   "parent": {
     "name": "Vertical Pillar Bullets",
-    "path": "folders/Objects/Boss Bullets/Vertical Pillar Bullets.yy",
+    "path": "folders/Objects/Boss Bullets/old bullets/Vertical Pillar Bullets.yy",
   },
   "parentObjectId": {
     "name": "obj_Basic_Bullet",

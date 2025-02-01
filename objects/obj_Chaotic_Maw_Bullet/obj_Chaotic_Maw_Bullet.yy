@@ -12,7 +12,7 @@
   "overriddenProperties": [],
   "parent": {
     "name": "Wall Explode",
-    "path": "folders/Objects/Boss Bullets/Wall Explode.yy",
+    "path": "folders/Objects/Boss Bullets/old bullets/Wall Explode.yy",
   },
   "parentObjectId": {
     "name": "obj_Basic_Bullet",

@@ -15,7 +15,13 @@ scr_Boss_Size_Setup(0.5);
 // Needed for bobbing/boss shadows
 scr_Boss_Height_Setup(30);
 
-death_sprite = spr_boss_template_ko;
-boss_palette = spr_boss_template_palette;
+death_sprite = spr_wall_watcher_v2_ko;
+boss_palette = spr_wall_watcher_v2_palette;
 boss_palette_index = champ;
 
+if champ = 8 {
+	boss_palette_index = 3;	
+}
+
+seg_angle = image_angle + 180 + 90;
+seg_distance = 64;

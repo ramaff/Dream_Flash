@@ -9,8 +9,8 @@
   "managed": true,
   "overriddenProperties": [],
   "parent": {
-    "name": "Basic Bullets",
-    "path": "folders/Objects/Boss Bullets/Basic Bullets.yy",
+    "name": "zmisc",
+    "path": "folders/Objects/Boss Bullets/old bullets/zmisc.yy",
   },
   "parentObjectId": {
     "name": "obj_Soul_Hurt",

@@ -5,7 +5,7 @@
   "isCompatibility": false,
   "isDnD": false,
   "parent": {
-    "name": "Teleports_and_Specific_Mods",
-    "path": "folders/Scripts/State Commands/Teleports_and_Specific_Mods.yy",
+    "name": "Teleport_Mods",
+    "path": "folders/Scripts/State Commands/Teleport_Mods.yy",
   },
 }

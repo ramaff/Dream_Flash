@@ -6,7 +6,6 @@ function scr_Next_Phase_Check() {
 
 	if bosshealth <= boss_phase_threshold {
 	    currentphase += 1;
-	    scr_H14();
 	    if currentphase = 2 {
 	        //bossmaxhealth = bossmaxhealth2;
 	        //bosshealth += bossmaxhealth2;

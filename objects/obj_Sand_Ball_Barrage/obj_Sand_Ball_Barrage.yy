@@ -14,7 +14,7 @@
   "overriddenProperties": [],
   "parent": {
     "name": "Sandman",
-    "path": "folders/Objects/Boss Bullets/Sandman.yy",
+    "path": "folders/Objects/Boss Bullets/old bullets/Sandman.yy",
   },
   "parentObjectId": {
     "name": "obj_Phase_All_Bullet",

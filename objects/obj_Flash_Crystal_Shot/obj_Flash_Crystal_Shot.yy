@@ -10,7 +10,7 @@
   "overriddenProperties": [],
   "parent": {
     "name": "Flash Knight",
-    "path": "folders/Objects/Boss Bullets/Flash Knight.yy",
+    "path": "folders/Objects/Boss Bullets/old bullets/Flash Knight.yy",
   },
   "parentObjectId": {
     "name": "obj_Fasing_Bullet_Parent",

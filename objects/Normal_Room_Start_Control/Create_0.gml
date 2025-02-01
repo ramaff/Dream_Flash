@@ -10,3 +10,5 @@ scr_Wall_Form();
 instance_create(x,y,obj_Environment_Emitter)
 
 scr_Hazard_Form();
+
+scr_T04();

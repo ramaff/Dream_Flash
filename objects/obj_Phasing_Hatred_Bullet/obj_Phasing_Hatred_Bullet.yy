@@ -11,7 +11,7 @@
   "overriddenProperties": [],
   "parent": {
     "name": "Timed Aim Bullets",
-    "path": "folders/Objects/Boss Bullets/Timed Aim Bullets.yy",
+    "path": "folders/Objects/Boss Bullets/old bullets/Timed Aim Bullets.yy",
   },
   "parentObjectId": {
     "name": "obj_Fasing_Bullet_Parent",

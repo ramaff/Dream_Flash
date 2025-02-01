@@ -5,9 +5,11 @@ function scr_Setup_Default_Shot_Stats(){
 	var _shot_stats = {
 		Delay: 20,
 		Essence: 4,
+		Real_Essence_Cost: 4,
 		Weapon_Number: 0,
 		Shot_Accuracy: 15,
 		Shot_Spread: 0,
+		Real_Boss_Hits: {},
 		Shot_Extra_Stats: [],
 		Shot_Burst_Stats: false,
 		Shot_Air_Burst_Stats: false,
@@ -23,6 +25,7 @@ function scr_Setup_Default_Shot_Stats(){
         Shot_Sprite: "spr_Soul_Shot",
 		Shot_Hit_SFX: "sd_Small_Damage_To_Boss",
 		Shot_Explosion_SFX: "snd_Standard_Explosion",
+		Shot_State: "Base",
 		Shot_Beam: 0,
         Shot_Power: 10,
 		Shot_Power_Level: 0,
@@ -95,6 +98,7 @@ function scr_Setup_Default_Shot_Stats(){
 		Weapon_Vomit_Min_Life: 1,
 		Weapon_Vomit_Max_Life: 1,
 		Shot_Angle_Relative: 0,
+		Shot_Angular_Velocity: 0,
 		Shot_Mouse_Maintain: 0,
 		Shot_Soul_Maintain: 0,
 		Shot_X_Maintain: 0,
@@ -139,7 +143,6 @@ function scr_Setup_Default_Shot_Stats(){
 		Shot_Image_Direction: -1,
 		Shot_Depth: 0,
 		Shot_Keep_Direction: 0,
-		Shot_Mouse_Origin: 0,
 		Shot_Weapon_Lean: 0,
 		Shot_Extra: false,
 		Shot_Miracle: 0,
@@ -211,6 +214,7 @@ function scr_Setup_Default_Shot_Stats(){
 		Shot_Burst_Power: 0,
 		Shot_Spike_Aura: false,
 		Shot_Instability: 0,
+		Shot_Perfect_Spark_Trail: false,
 	}
 	return _shot_stats
 

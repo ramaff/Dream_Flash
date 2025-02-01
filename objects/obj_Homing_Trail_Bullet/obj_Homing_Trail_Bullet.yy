@@ -11,8 +11,8 @@
   "managed": true,
   "overriddenProperties": [],
   "parent": {
-    "name": "Homing",
-    "path": "folders/Objects/Boss Bullets/Homing.yy",
+    "name": "zBasic Bullets",
+    "path": "folders/Objects/Boss Bullets/old bullets/zBasic Bullets.yy",
   },
   "parentObjectId": {
     "name": "obj_Basic_Enemy_Bullet_Parent",

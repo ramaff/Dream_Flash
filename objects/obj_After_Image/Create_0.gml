@@ -7,3 +7,6 @@ image_yscale = size;
 
 shrinking = true;
 fading = false;
+half_time = false;
+
+max_time = 30;

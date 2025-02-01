@@ -231,13 +231,14 @@ function scr_Save_Run() {
 	
 	ini_write_string("Run", "OA5rooms", string_replace_all(json_stringify(global.OA5rooms), "\"", "'"));
 	ini_write_string("Run", "weapon", string_replace_all(json_stringify(Soul_Weapons_Control.weapon), "\"", "'"));
+	ini_write_string("Run", "items", string_replace_all(json_stringify(global.items), "\"", "'"));
 	//}
 	
 	
 	
 	ini_close();
 	
-	scr_Copy_Backup_to_Save(_save_file, _backup_save_file)
+	scr_copy_backup_to_save(_save_file, _backup_save_file)
 
 
 

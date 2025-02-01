@@ -26,7 +26,7 @@
   "origin": 9,
   "parent": {
     "name": "Snowy Field",
-    "path": "folders/Sprites/Field Sprites/Snowy Field.yy",
+    "path": "folders/Sprites/Old FG BG sprites/Snowy Field.yy",
   },
   "preMultiplyAlpha": false,
   "sequence": {

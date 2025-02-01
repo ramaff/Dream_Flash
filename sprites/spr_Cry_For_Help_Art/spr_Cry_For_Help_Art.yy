@@ -26,8 +26,8 @@
   "nineSlice": null,
   "origin": 4,
   "parent": {
-    "name": "(T) Coping ",
-    "path": "folders/Sprites/Item Sprites/(T) Coping .yy",
+    "name": "(S) Defense Mechanisms Item Art",
+    "path": "folders/Sprites/Item Sprites/(S) Defense Mechanisms Item Art.yy",
   },
   "preMultiplyAlpha": false,
   "sequence": {

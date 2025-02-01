@@ -1,8 +1,8 @@
-function scr_B14_Bullet(damageamount, defenseamount) {
+function scr_B14_Bullet(damageamount, defenseamount, _borigin) {
 	if global.B[14] > 0 {
 	    var bpow = damageamount - defenseamount;
-		if instance_exists(other.bulletorigin) {
-		    with(other.bulletorigin) {
+		if instance_exists(_borigin) {
+		    with(_borigin) {
 		        var dmg = 5 + (global.B[14] * bpow * 4);
 		        bosshealth -= dmg;
         

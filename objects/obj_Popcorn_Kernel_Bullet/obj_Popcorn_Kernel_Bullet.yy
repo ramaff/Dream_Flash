@@ -12,7 +12,7 @@
   "overriddenProperties": [],
   "parent": {
     "name": "Lobbing Group",
-    "path": "folders/Objects/Boss Bullets/Lobbing Group.yy",
+    "path": "folders/Objects/Boss Bullets/old bullets/Lobbing Group.yy",
   },
   "parentObjectId": {
     "name": "obj_Marble_Bullet",

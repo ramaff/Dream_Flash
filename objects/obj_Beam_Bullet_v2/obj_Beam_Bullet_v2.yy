@@ -9,12 +9,13 @@
     {"resourceType":"GMEvent","resourceVersion":"1.0","name":"","collisionObjectId":{"name":"obj_Soul","path":"objects/obj_Soul/obj_Soul.yy",},"eventNum":0,"eventType":4,"isDnD":false,},
     {"resourceType":"GMEvent","resourceVersion":"1.0","name":"","collisionObjectId":null,"eventNum":0,"eventType":2,"isDnD":false,},
     {"resourceType":"GMEvent","resourceVersion":"1.0","name":"","collisionObjectId":null,"eventNum":0,"eventType":8,"isDnD":false,},
+    {"resourceType":"GMEvent","resourceVersion":"1.0","name":"","collisionObjectId":null,"eventNum":0,"eventType":0,"isDnD":false,},
   ],
   "managed": true,
   "overriddenProperties": [],
   "parent": {
     "name": "Beam Bullets",
-    "path": "folders/Objects/Boss Bullets/Beam Bullets.yy",
+    "path": "folders/Objects/Boss Bullets/old bullets/Beam Bullets.yy",
   },
   "parentObjectId": {
     "name": "obj_Soul_Hurt",
