@@ -140,7 +140,7 @@ if global.recollectCategory = "State" {
 }
 
 if global.recollectCategory = "Information" {
-    for(_i = 1; _i < numOfButts; _i++) {
+    for(_i = 0; _i < numOfButts; _i++) {
         with instance_create(camera_get_view_x(view) + 176,camera_get_view_y(view) + 248 + 80 * _i,obj_Recollection_Butt) {
 			if _i mod 2 = 0 {
 				x += 120;

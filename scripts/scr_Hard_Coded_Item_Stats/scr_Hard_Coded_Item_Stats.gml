@@ -958,7 +958,7 @@ function scr_Hard_Coded_Item_Stats(itemVal, items_to_add = 1, reload = false) {
 	if itemVal = "S05" {
 		if !reload {
 			global.soulparanoia += 2;
-			global.soulassurance += 2;
+			global.soulvanity += 2;
 		}
 		scr_S05()
 	}
