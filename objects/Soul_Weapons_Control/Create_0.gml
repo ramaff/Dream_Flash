@@ -1,5 +1,5 @@
 //weapon #
-for(var _i = 0; _i < 5; _i++) {
+for(var _i = 0; _i < 20; _i++) {
 	weapon[_i] = {
 		"slot": _i,
 		"weapon_id": 0
