@@ -96,6 +96,7 @@
     {"name":"Room Hazards","order":34,"path":"folders/Sprites/Boss Bullet Sprites/Room Hazards.yy",},
     {"name":"Tears ","order":35,"path":"folders/Sprites/Boss Bullet Sprites/Tears .yy",},
     {"name":"Trail Shots","order":36,"path":"folders/Sprites/Boss Bullet Sprites/Trail Shots.yy",},
+    {"name":"v2_basic_bullets","order":42,"path":"folders/Sprites/Boss Bullet Sprites/v2_basic_bullets.yy",},
     {"name":"Wall Bullets","order":37,"path":"folders/Sprites/Boss Bullet Sprites/Wall Bullets.yy",},
     {"name":"Weapons","order":38,"path":"folders/Sprites/Boss Bullet Sprites/Weapons.yy",},
     {"name":"Host Group","order":3,"path":"folders/Sprites/Boss Sprites/Dream Bosses/Host Group.yy",},
@@ -138,7 +139,6 @@
     {"name":"State Reco Icons","order":30,"path":"folders/Sprites/Recollection/State Reco Icons.yy",},
     {"name":"Tutorial Stuff","order":31,"path":"folders/Sprites/Recollection/Tutorial Stuff.yy",},
     {"name":"beam_punches","order":38,"path":"folders/Sprites/Soul Shot Sprites/Imaginary Shots/beam_punches.yy",},
-    {"name":"v2_basic_bullets","order":42,"path":"folders/Sprites/Boss Bullet Sprites/v2_basic_bullets.yy",},
   ],
   "ResourceOrderSettings": [
     {"name":"reco_Demonic_Villainy","order":66,"path":"sprites/reco_Demonic_Villainy/reco_Demonic_Villainy.yy",},
