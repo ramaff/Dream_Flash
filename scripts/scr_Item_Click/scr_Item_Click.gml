@@ -235,7 +235,7 @@ function scr_Item_Click(_stacks = 1, _linger = false){
 	scr_Memory_Info_Bank();
 	
 	if _linger = true {
-		scr_Item_Recollection_Cloud(120);
+		scr_Item_Recollection_Cloud(120, _stacks);
 	}
 	
 	scr_Tutorial_Note_Spawn("item_field")

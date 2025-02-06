@@ -1,4 +1,4 @@
-function scr_Item_Recollection_Cloud(time = 1) {
+function scr_Item_Recollection_Cloud(time = 1, _stacks = 1) {
 
 	if global.recoalpha < 1 {
 	    global.recoalpha += 0.15;
@@ -20,7 +20,7 @@ function scr_Item_Recollection_Cloud(time = 1) {
 		recollectionExtraStats = other.recollectionExtraStats;
 		recollectionCount = other.recollectionCount;
 		shop = other.shop;
-		stacks = other.stacks;
+		stacks = _stacks;
 		
 		if global.cloudalpha < 0 {
 			global.cloudalpha = 0;	
