@@ -262,7 +262,10 @@ function scr_Load_Run() {
 		global.B06HeartConversions = ini_read_real("Run","B06HeartConversions",0);
 		
 		global.OA5rooms = json_parse(ini_read_string("Run", "OA5rooms", "[]"));
+		
 		Soul_Weapons_Control.weapon = json_parse(ini_read_string("Run", "weapon", "[]"))
+		scr_Weapon_Slot_Info_Update(Soul_Weapons_Control.weapon_slot_info)
+		
 		global.items = json_parse(ini_read_string("Run", "items", "[]"))
 		
 	

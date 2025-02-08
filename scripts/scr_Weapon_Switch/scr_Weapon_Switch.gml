@@ -32,23 +32,15 @@ function scr_Weapon_Switch(_direction = 1) {
 	        Soul_Weapons_Control.weapon[_j] = _temp_weap;
 		
 		}
-		
-		/*var _prev_weap = weapon[0]
-		var _cur_weap = weapon[1]
-		for (var _i = 1; _i < global.weaponslots; _i++) {
-			weapon[_i] = _prev_weap
-			_prev_weap = weapon[_i];
-			_cur_weap = weapon[_i + 1];
-		}
-		_weapon[0] = _cur_weap;
-		*/
-	//}
     
 	global.currentweapon = Soul_Weapons_Control.weapon[0].weapon_id;
 
 	if global.currentweapon = 0 {
 	    scr_Weapon_Switch(_direction);
 	}
+	
+	Soul_Weapons_Control.angular_rotation -= (360 / global.weaponslots) * _direction;
+	scr_Weapon_Slot_Info_Update(Soul_Weapons_Control.weapon_slot_info)
 	
 	
 

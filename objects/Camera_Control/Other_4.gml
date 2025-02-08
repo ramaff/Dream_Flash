@@ -23,3 +23,4 @@ if room = The_Start_Room {
 } else {
 	view_zoom = 0.875;	
 }
+

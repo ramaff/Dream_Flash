@@ -3454,6 +3454,7 @@
     {"id":{"name":"scr_Room_Loop_Horizontal_Long","path":"scripts/scr_Room_Loop_Horizontal_Long/scr_Room_Loop_Horizontal_Long.yy",},},
     {"id":{"name":"scr_Room_Loop_Square","path":"scripts/scr_Room_Loop_Square/scr_Room_Loop_Square.yy",},},
     {"id":{"name":"obj_Danger_Giga_Bomb","path":"objects/obj_Danger_Giga_Bomb/obj_Danger_Giga_Bomb.yy",},},
+    {"id":{"name":"scr_Weapon_Slot_Info_Update","path":"scripts/scr_Weapon_Slot_Info_Update/scr_Weapon_Slot_Info_Update.yy",},},
     {"id":{"name":"scr_Room_Loop_Target","path":"scripts/scr_Room_Loop_Target/scr_Room_Loop_Target.yy",},},
     {"id":{"name":"scr_Tutorial_Memory","path":"scripts/scr_Tutorial_Memory/scr_Tutorial_Memory.yy",},},
     {"id":{"name":"scr_Soul_Turn_To_Linear","path":"scripts/scr_Soul_Turn_To_Linear/scr_Soul_Turn_To_Linear.yy",},},
