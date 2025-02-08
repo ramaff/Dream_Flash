@@ -2,7 +2,9 @@
 // https://help.yoyogames.com/hc/en-us/articles/360005277377 for more information
 
 #macro GAME_VERSION "24"
-#macro GAME_MINOR_VERSION "0.7"
+
+// in the format of x.x (ex: "1.0" minor version = x.1.0 full version value)
+#macro GAME_MINOR_VERSION "1"
 #macro GAME_VERSION_BETA "0"
 
 function scr_Macros(){

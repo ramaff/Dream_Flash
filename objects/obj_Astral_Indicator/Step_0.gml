@@ -3,7 +3,7 @@ if window_has_focus() {
     y = mouse_y;
 }
 
-if scr_Room_Leavable() and scr_Negative_Room_Check() {
+if scr_Room_Leavable() {
     scr_Adjacent_Room_Cloud();
 }
 
