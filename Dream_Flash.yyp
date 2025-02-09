@@ -246,6 +246,8 @@
     {"resourceType":"GMFolder","resourceVersion":"1.0","name":"Tears ","folderPath":"folders/Sprites/Boss Bullet Sprites/Tears .yy",},
     {"resourceType":"GMFolder","resourceVersion":"1.0","name":"Trail Shots","folderPath":"folders/Sprites/Boss Bullet Sprites/Trail Shots.yy",},
     {"resourceType":"GMFolder","resourceVersion":"1.0","name":"v2_basic_bullets","folderPath":"folders/Sprites/Boss Bullet Sprites/v2_basic_bullets.yy",},
+    {"resourceType":"GMFolder","resourceVersion":"1.0","name":"v2_big_bullets","folderPath":"folders/Sprites/Boss Bullet Sprites/v2_big_bullets.yy",},
+    {"resourceType":"GMFolder","resourceVersion":"1.0","name":"v2_laser_blasts","folderPath":"folders/Sprites/Boss Bullet Sprites/v2_laser_blasts.yy",},
     {"resourceType":"GMFolder","resourceVersion":"1.0","name":"Wall Bullets","folderPath":"folders/Sprites/Boss Bullet Sprites/Wall Bullets.yy",},
     {"resourceType":"GMFolder","resourceVersion":"1.0","name":"Weapons","folderPath":"folders/Sprites/Boss Bullet Sprites/Weapons.yy",},
     {"resourceType":"GMFolder","resourceVersion":"1.0","name":"Boss Sprites","folderPath":"folders/Sprites/Boss Sprites.yy",},
@@ -464,8 +466,6 @@
     {"resourceType":"GMFolder","resourceVersion":"1.0","name":"Misc BGs","folderPath":"folders/Tile Sets/Misc BGs.yy",},
     {"resourceType":"GMFolder","resourceVersion":"1.0","name":"Nightmare BGs","folderPath":"folders/Tile Sets/Nightmare BGs.yy",},
     {"resourceType":"GMFolder","resourceVersion":"1.0","name":"Timelines","folderPath":"folders/Timelines.yy",},
-    {"resourceType":"GMFolder","resourceVersion":"1.0","name":"v2_big_bullets","folderPath":"folders/Sprites/Boss Bullet Sprites/v2_big_bullets.yy",},
-    {"resourceType":"GMFolder","resourceVersion":"1.0","name":"v2_laser_blasts","folderPath":"folders/Sprites/Boss Bullet Sprites/v2_laser_blasts.yy",},
   ],
   "IncludedFiles": [
     {"resourceType":"GMIncludedFile","resourceVersion":"1.0","name":"df_boss_stats.json","CopyToMask":-1,"filePath":"datafiles",},

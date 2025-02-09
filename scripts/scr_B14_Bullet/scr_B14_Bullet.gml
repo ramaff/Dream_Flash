@@ -19,6 +19,4 @@ function scr_B14_Bullet(damageamount, defenseamount, _borigin) {
 		}
 	}
 
-
-
 }

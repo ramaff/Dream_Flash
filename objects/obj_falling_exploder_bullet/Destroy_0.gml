@@ -3,6 +3,7 @@
 
 var _bull = scr_base_bullet_stats(0, bullet_stats.bullet_power, 1)
 
+
 _bull.bullet_type = "obj_bullet_explosion_v2"
 _bull.bullet_sprite = "spr_Bullet_Explosion"
 _bull.bullet_life_span = 30;

@@ -4,6 +4,7 @@
 if scr_bullet_lob(bullet_stats) {
     var _bull = scr_base_bullet_stats(bullet_stats.bullet_speed, bullet_stats.bullet_power, 1)
 
+	
 	_bull.bullet_type = "obj_basic_bullet_v2"
 	_bull.bullet_sprite = "spr_Tear_Drop_Bullet"
 	_bull.bullet_life_span = 180

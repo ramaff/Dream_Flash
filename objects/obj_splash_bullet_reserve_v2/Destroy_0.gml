@@ -3,6 +3,7 @@
 
 	var _bull = scr_base_bullet_stats(bullet_stats.bullet_speed * 0.75, bullet_stats.bullet_power * 0.5, 1)
 
+	
 	_bull.bullet_direction = random(360)
 	
 	_bull.bullet_type = "obj_basic_bullet_v2"

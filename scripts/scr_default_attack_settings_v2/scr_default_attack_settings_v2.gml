@@ -3,7 +3,7 @@ function scr_default_attack_settings_v2() {
 		// XB05
 		boss_bullet_count_modded = false;
 		
-		attack_stats = scr_base_bullet_stats(bossbulletspeed * 1.5, bosspower, bossaccuracy);
+		attack_stats = scr_base_bullet_stats(bossbulletspeed * 1.5, bosspower, bossaccuracy, id);
     
 	    minion_count = 1;
 	    minion_type = noone;
@@ -29,12 +29,11 @@ function scr_default_attack_settings_v2() {
 
 }
 
-function scr_base_bullet_stats(_boss_bullet_speed, _bullet_power, _bullet_accuracy = 1) {
+function scr_base_bullet_stats(_boss_bullet_speed, _bullet_power, _bullet_accuracy = 1, _bullet_origin = bullet_stats.bullet_origin) {
 	return {
 		
 		bullet_type: "obj_basic_bullet_v2",
 		bullet_sprite: "spr_Glowy_Enemy_Shot",
-		bullet_origin: id,
 		bullet_speed: _boss_bullet_speed,
 		bullet_power: _bullet_power,
 		bullet_direction: (-10 + random(20)) / _bullet_accuracy,
@@ -71,6 +70,7 @@ function scr_base_bullet_stats(_boss_bullet_speed, _bullet_power, _bullet_accura
 		bullet_fade: 1,
 		soul_shot_block: 0,
 		bullet_id: id,
+		bullet_origin: _bullet_origin,
 		bullet_hit_list: {},
 		bullet_hit_ID: noone,
 		boss_radius: 0,
