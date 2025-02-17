@@ -99,6 +99,7 @@ if bossActiveAttackDelay[1] <= 0 and bossActiveAttackCooldown[1] <= 0 and bossAc
         bossPatternCooldownMax = 75;
         bossActiveAttackDuration[1] = 15 + bossPatternCooldownMax * bossPatternCount;
         bossActiveAttackCooldown[1] = 120 + random(120);
+		image_index = 4;
     }
     if bossActiveAttack[1] = 2  {
 		bossPatternCount = 7;
@@ -107,6 +108,7 @@ if bossActiveAttackDelay[1] <= 0 and bossActiveAttackCooldown[1] <= 0 and bossAc
         bossPatternCooldownMax = 15;
         bossActiveAttackDuration[1] = 15 + bossPatternCooldownMax * bossPatternCount;
         bossActiveAttackCooldown[1] = 120 + random(120);
+		image_index = 4;
     }
 }
 
@@ -207,6 +209,9 @@ if bossActiveAttackDelay[1] <= 0 and bossPatternCooldown <= 0 and bossPatternCou
     
     bossPatternCount -= 1;
     bossPatternCooldown += bossPatternCooldownMax;
+	if bossPatternCount <= 0 {
+		bossActiveAttackDuration[1] = 0;	
+	}
 }
 
 #endregion
@@ -228,17 +233,15 @@ scr_Boss_Size_Lerp(0.15);
 if (bossActiveAttack[1] != 0) {
 	sprite_index = spr_Dream_Crawler_Part_Blink;
 	if image_index > 5 {
-		image_index = 5;	
+		image_index = 5;
 	}
 	bossdefense = 0;
 } else {
 	sprite_index = spr_Dream_Crawler_Part_Blink;
 	if image_index > 3 {
 		image_index = 3;
-		bossdefense = 18;
-	} else {
-		bossdefense = 0;
 	}
+	bossdefense = 18;
 }
 
 #endregion

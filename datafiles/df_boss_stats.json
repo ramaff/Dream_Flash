@@ -1425,13 +1425,13 @@
             "Recollection_Sprite": "reco_Dream_Crawler",
             "Health_Phase_1": 750,
             "Health_Phase_2": 750,
-            "Defense_Phase_1": 3,
-            "Defense_Phase_2": 3,
+            "Defense_Phase_1": 6,
+            "Defense_Phase_2": 6,
             "Bullet_Speed": 2.4,
             "Move_Speed": 7.5,
             "Boss_Danger": 9,
         
-            "recollectionDescription": "These crawl around feeding off of dreams. Unleashes a barrage of bullets with its many eyes."
+            "recollectionDescription": "These crawl around feeding off of dreams. Unleashes a barrage of bullets with its many eyes. Has very thick armor when it's eyes are closed."
         },
 
         "Boss 057": {
@@ -1496,11 +1496,11 @@
                 "Defense_Phase_2": 20
             },
         
-            "recollectionDescription": "Pet owners are really irresponsible these days."
+            "recollectionDescription": "Irresponsible pet owner."
         },
 
         "Boss 061": {
-            "Name": "Wall King",
+            "Name": "Insurmountable Wall",
             "Recollection_Sprite": "reco_wall_king",
             "Health_Phase_1": 1350,
             "Health_Phase_2": 1190,
@@ -1512,7 +1512,7 @@
             "Knock_Defense": 999,
             "Palette": "spr_deep_watcher_v2_palette",
         
-            "recollectionDescription": "Insurmountable wall."
+            "recollectionDescription": "Incredibly powerful being found in the deepest and darkest parts of the dreamscape."
         },
 
         "Boss 064": {

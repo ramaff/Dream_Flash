@@ -179,7 +179,7 @@ function scr_Soul_Shot_Boss_Hit() {
 			}
         
 	       // if shot_stats.Shot_Melee = 1 { 
-			if shot_stats.Shot_Continue = 0 {
+			if shot_stats.Shot_Continue = 0 || (shot_stats.Shot_Continue = 1 and shot_stats.Shot_Pierce > 1) {
 		        shot_stats.Shot_Pierce--;
 		        if shot_stats.Shot_Pierce <= 0 {
 		            instance_destroy();

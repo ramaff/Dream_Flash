@@ -63,7 +63,7 @@ function scr_State_Weapon_Mod(){
 		    shot_stats.Shot_Power = shot_stats.Shot_Power_Max;
 		    shot_stats.Shot_Power_Level = shot_stats.Shot_Power_Level * (1.5 * global.soulstateformboost); */
 		}
-		if scr_State_Active_Check("Scrub") {
+		if shot_stats.Shot_Type = "obj_Bubble_Shot" {
 		
 			image = 1;
 			
