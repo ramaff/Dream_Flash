@@ -19,7 +19,7 @@ function scr_Weapon_Use_List(cWP = global.currentweapon, _weap_slot = 0) {
 	weaponDelay = current_weapon_stats.Delay;
 	//show_debug_message("Weapon Cost: " + string(weaponCost) + ", Weapon Delay: " + string(weaponDelay))
 	
-	weaponCost = scr_Pre_Shoot_Weapon_Essence_Cost(weaponCost, cWP, _umbrella_active)
+	weaponCost = scr_Pre_Shoot_Weapon_Essence_Cost(weaponCost, cWP, _umbrella_active, weapStop)
 	
 	weaponDelay = (weaponDelay - sdelayconservation) / sdelayconservationfactor / ((6 + global.Weap[global.currentweapon]) / 6);	
 	
