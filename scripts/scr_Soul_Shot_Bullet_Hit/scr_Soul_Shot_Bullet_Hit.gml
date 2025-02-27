@@ -39,7 +39,7 @@ function scr_soul_shot_bullet_hit_v2(_bullet_stats){
 			variable_struct_set(bullet_hits, other.id, other.id)
 	
 			if shot_stats.Shot_Rebound_Type = 1 {
-				scr_Weapon_Rebound_Mouse();
+				scr_Weapon_Rebound_Mouse(other.speed);
     
 				shot_stats.Shot_Pierce--;
 				if shot_stats.Shot_Pierce <= 0 {
