@@ -1,3 +1,5 @@
+
+// I got this online somewhere a long time ago
 function scr_Draw_Text_Outlined() {
 	//draw_text_outlined(x, y, outline color, string color, string)  
 	var xx,yy;  
