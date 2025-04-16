@@ -49,7 +49,7 @@ function scr_soul_shot_bullet_hit_v2(_bullet_stats){
 			}
 	
 			if shot_stats.Shot_Rebound_Type = 2 {
-				scr_Weapon_Rebound();
+				scr_Weapon_Rebound(_bullet_stats.bullet_speed);
 					
 				scr_Soul_Shot_Rebound_Parts();
     

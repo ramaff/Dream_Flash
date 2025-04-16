@@ -1,13 +1,12 @@
-function scr_Weapon_Rebound() {
-	bsize = other.image_xscale;
-	bsprite = other.sprite_index;
-	bspeed = other.bulletspeed;
-	xrelation = other.x - x;
-	yrelation = other.y - y;
-	biangle = other.image_angle;
-	bmoveangle = other.direction;
+function scr_Weapon_Rebound(_bull_speed = other.bulletspeed) {
+	var _bsize = other.image_xscale;
+	var _bsprite = other.sprite_index;
+	var _xrelation = other.x - x;
+	var _yrelation = other.y - y;
+	var _biangle = other.image_angle;
+	var _bmoveangle = other.direction;
 
-	if bspeed > 50 {
+	if _bull_speed > 50 {
 		exit;	
 	}
 	
@@ -17,29 +16,29 @@ function scr_Weapon_Rebound() {
 	with(obj_Soul_Parent) {
 		scr_Default_Weapon_Stats();
 		
-		current_weapon_stats.Shot_XX = other.xrelation;
-		current_weapon_stats.Shot_YY = other.yrelation;
+		current_weapon_stats.Shot_XX = _xrelation;
+		current_weapon_stats.Shot_YY = _yrelation;
 		
 		current_weapon_stats.Shot_Spread = 0;
 		current_weapon_stats.Shot_Accuracy = 5;
 		current_weapon_stats.Shot_Count = 1;
 		current_weapon_stats.Shot_Mouse = 0;
-		current_weapon_stats.Shot_Sprite = sprite_get_name(other.bsprite);
+		current_weapon_stats.Shot_Sprite = sprite_get_name(_bsprite);
 		current_weapon_stats.Shot_Type = "obj_Lesser_Soul_Shot";
-		current_weapon_stats.Shot_Speed = 6 + other.bspeed;
-		current_weapon_stats.Shot_Direction = other.bmoveangle + 180;
+		current_weapon_stats.Shot_Speed = 6 + _bull_speed;
+		current_weapon_stats.Shot_Direction = _bmoveangle + 180;
 		current_weapon_stats.Shot_Power = pow;
 		current_weapon_stats.Shot_Knock_Back = 10;
 		current_weapon_stats.Shot_Life_Span = 100;
 		current_weapon_stats.Shot_Pierce = 1;
-		current_weapon_stats.Shot_Size = other.bsize;
+		current_weapon_stats.Shot_Size = _bsize;
 		current_weapon_stats.Shot_Forward = 0;
 		current_weapon_stats.Shot_Form_Show = 0;
-		current_weapon_stats.Shot_Angle = other.bmoveangle + 180;
+		current_weapon_stats.Shot_Angle = _bmoveangle + 180;
 		current_weapon_stats.Shot_Init_Grow = 0
 	
-		if other.bspeed > 0 {
-	        current_weapon_stats.Shot_Speed = 3 + other.bspeed; 
+		if _bull_speed > 0 {
+	        current_weapon_stats.Shot_Speed = 3 + _bull_speed; 
 	    }
 	
 		//scr_Setup_Weapon_Stats(current_weapon_stats);
