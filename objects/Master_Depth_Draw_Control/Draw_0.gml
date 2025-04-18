@@ -26,8 +26,6 @@ ds_grid_sort(dgrid, 1, true);
 
 // Loop + Draw
 
-//gpu_set_blendmode(bm_normal);
-
 with(obj_Soul_Hurt) {
 	if depth > 0 {
 		event_perform(ev_draw,0)

@@ -2,8 +2,16 @@
 // https://help.yoyogames.com/hc/en-us/articles/360005277377 for more information
 function scr_Soul_Shot_Boss_Hit() {
 
-	var hit_again = variable_struct_exists(other.projectile_hits, shot_boss_id)
-	if !hit_again and shot_stats.Shot_Damage {
+	var _hitable = false
+	
+	if !variable_struct_exists(other.projectile_hits, id) {
+		_hitable = true
+	}
+	if variable_struct_get(other.projectile_hits, id) != (real(id) + shot_stats.Shot_ID_Offset) {
+		_hitable = true	
+	}
+		
+	if _hitable and shot_stats.Shot_Damage {
 		variable_struct_set(shot_stats.Real_Boss_Hits, other.id, other.id)
 		
 		scr_Sound_Effect(asset_get_index(shot_stats.Shot_Hit_SFX));
@@ -145,8 +153,7 @@ function scr_Soul_Shot_Boss_Hit() {
 	            }
 	        }
         
-	        //ds_list_add(other.projectile_hits, shot_boss_id);
-			variable_struct_set(other.projectile_hits, shot_boss_id, shot_boss_id)
+			variable_struct_set(other.projectile_hits, id, real(id) + shot_stats.Shot_ID_Offset)
 			
 			//show_debug_message("scr_Soul_Shot_Boss_Hit: " + string(shot_stats.Shot_Burst_Stats))
 			

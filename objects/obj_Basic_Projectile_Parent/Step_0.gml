@@ -13,6 +13,12 @@ if global.gameParticles > 0 {
 	scr_P05_Particles();
 }
 
+if shot_stats.Shot_Extra_Hits_Frequency != -1 {
+	if alarm[0] mod shot_stats.Shot_Extra_Hits_Frequency = 0 {
+		shot_stats.Shot_ID_Offset++;	
+	}
+}
+
 if shot_stats.Shot_Ground = true {
 	shot_stats.Shot_Lobbing = false;
 	shot_stats.Shot_Height = 0;
