@@ -12,45 +12,13 @@ for(_i = 0; _i < _script_count; _i++) {
 	script_execute(shot_stats.Shot_Draw_Scripts[_i])	
 }
 
-if shot_stats.Shot_Orbital_Type = 1 {
-    image_angle = shot_stats.Shot_Orbital_Angle + 90;
-}
-
-if shot_stats.Shot_Ground = true {
+/*if shot_stats.Shot_Ground = true {
 	shot_stats.Shot_Lobbing = false;
 	shot_stats.Shot_Height = 0;
 	shot_stats.Shot_Fall_Speed = 0;
 	shot_stats.Shot_Gravity = 0;
 	shot_stats.Shot_Lobbing = false;
-}
-
-var height = shot_stats.Shot_Height;
-var fall_speed = shot_stats.Shot_Fall_Speed;
-
-var wobble = shot_stats.Shot_Lobbing_Wobble
-wobble = scr_Wave(-wobble, wobble, 2, 0);
-
-if shot_stats.Shot_Lobbing = true {
-	
-	var shadow_size = shot_stats.Shot_Size * 1.5 * (1.2 - (height / 200));
-	shot_stats.Shot_Height -= fall_speed + wobble
-	shot_stats.Shot_Fall_Speed += shot_stats.Shot_Gravity
-	
-	y += fall_speed
-	
-	if height - fall_speed < 0 {
-		shot_stats.Shot_Fall_Speed = -1 * fall_speed;	
-	}
-	draw_sprite_ext(spr_Bullet_Shadow,0,x,y+height,shadow_size,shadow_size,0,c_white,0.5);
-} else if shot_stats.Shot_Lobbing >= 1 {
-	draw_sprite_ext(spr_Bullet_Shadow,0,x,y+shot_stats.Shot_Height,shot_stats.Shot_Size * 1.5 * (1.2 - (shot_stats.Shot_Height / 200)),shot_stats.Shot_Size * 1.5 * (1.2 - (shot_stats.Shot_Height / 200)),0,c_white,image_alpha * (0.5 - (shot_stats.Shot_Height/150)));
-}
-
-
-
-if shot_stats.Shot_Aura = 1 and image_alpha > 0 {
-    draw_sprite_ext(asset_get_index(shot_stats.Shot_Aura_Sprite),0,x,y,1,1,0,c_white,1);
-}
+} */
 
 var fdist = 50;
 var tdist = 50 / shot_stats.Shot_Init_Speed;
@@ -59,21 +27,7 @@ var edist = shot_stats.Shot_Init_Speed * etime;
 
 var sSize = 1 - ((fdist - edist) / fdist);
 
-if sSize >= 1 {
-	sSize = 1;	
-}
-
-if sSize < 0 {
-	sSize = 0;	
-}
-
-var angle = image_angle;
-if shot_stats.Shot_Lobbing_Tilt != 0 {
-	angle -= fall_speed * shot_stats.Shot_Lobbing_Tilt;
-	angle -= wobble * shot_stats.Shot_Lobbing_Tilt;
-}
-
-//Print_DF(shot_stats.Shot_Init_Grow)
+sSize = clamp(sSize, 0, 1)
 
 if shot_stats.Shot_Init_Grow = 0 {
 	shot_stats.Shot_Size_Relation = 1;
@@ -81,13 +35,9 @@ if shot_stats.Shot_Init_Grow = 0 {
 } 
 
 if ((shot_stats.Shot_Life_Span - alarm[0]) <= (tdist)) and (shot_stats.Shot_Life_Span > (tdist)) and (shot_stats.Shot_Form_Show = 1) {
-    draw_sprite_ext(sprite_index,image_index,x,y,image_xscale * sSize,image_yscale * sSize,angle,c_white,image_alpha/* * sSize*/);
+    draw_sprite_ext(sprite_index,image_index,x,y,image_xscale * sSize,image_yscale * sSize,	image_angle,c_white,image_alpha/* * sSize*/);
 } else {
-    draw_sprite_ext(sprite_index,image_index,x,y,image_xscale * shot_stats.Shot_Size_Relation,image_yscale * shot_stats.Shot_Size_Relation,angle,c_white,image_alpha);
+    draw_sprite_ext(sprite_index,image_index,x,y,image_xscale * shot_stats.Shot_Size_Relation,image_yscale * shot_stats.Shot_Size_Relation, image_angle,c_white,image_alpha);
 }
 
-if shot_stats.Shot_Miracle > 0 {
-	draw_sprite_ext(spr_Heart_Halo,image_index,x,y - (24 * image_yscale),image_xscale * shot_stats.Shot_Size_Relation,image_yscale * shot_stats.Shot_Size_Relation,image_angle,c_white,image_alpha);	
-	draw_sprite_ext(spr_Miracle_Aura,0,x,y,0.8,0.8,0,c_white,1);
-}
 

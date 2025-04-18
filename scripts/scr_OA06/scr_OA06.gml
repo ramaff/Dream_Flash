@@ -28,7 +28,8 @@ function scr_OA06(){
 			
 		}
 		if shot_stats.Shot_Miracle > 0 {
-			array_push(shot_stats.Shot_Step_Scripts, scr_OA06_Damage)	
+			array_push(shot_stats.Shot_Step_Scripts, scr_OA06_Damage)
+			array_push(shot_stats.Shot_Draw_Scripts, scr_OA06_Draw)
 		}
 	}
 }

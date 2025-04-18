@@ -2,9 +2,6 @@
 // https://help.yoyogames.com/hc/en-us/articles/360005277377 for more information
 function scr_Assign_Shot_Scripts(){
 	
-	// Only stuff directly related to shot_stats should get assigned here
-	// If a script is related to a specific item instead of a broad shot stat, it should get assigned separately
-
 	var _shot_step_scripts = []
 	var _shot_draw_scripts = []
 	
@@ -88,6 +85,9 @@ function scr_Assign_Shot_Scripts(){
 	}
 	if shot_stats.Shot_Orbital_Type > 0 { 
 		array_push(_shot_step_scripts, scr_Shot_Orbit)
+		if shot_stats.Shot_Orbital_Type = 1 {
+			array_push(_shot_draw_scripts, scr_Shot_Orbit_Angle)
+		}
 	}
 	
 	if shot_stats.Shot_Shield_Type = 1 || shot_stats.Shot_Continue = 1 { 
@@ -96,6 +96,7 @@ function scr_Assign_Shot_Scripts(){
 
 	if shot_stats.Shot_Aura = 1 {
 		array_push(_shot_step_scripts, scr_Shot_Aura_Damage)
+		array_push(_shot_draw_scripts, scr_Shot_Draw_Aura)
 	}
 
 	if shot_stats.Shot_Homing_Type = 1 {
@@ -108,6 +109,26 @@ function scr_Assign_Shot_Scripts(){
 
 	if shot_stats.Shot_Homing_Type = 3 {
 	    array_push(_shot_step_scripts, scr_Shot_Homing_3)
+	}
+
+	if shot_stats.Shot_Snake_Move > 0 {
+		array_push(_shot_step_scripts, scr_Shot_Snake_Move)
+	}
+
+	if instance_exists(followtarget) {
+		array_push(_shot_step_scripts, scr_Shot_Follow_Target_Keep_Distance)
+	} 
+
+	if global.OB[2] > 0 {
+		array_push(_shot_step_scripts, scr_OB02)
+	}
+
+	if shot_stats.Shot_Looping > 0 and shot_stats.Shot_Air_Target = 0 and shot_stats.Shot_Melee = 0 {
+	    array_push(_shot_step_scripts, scr_Room_Loop_Everywhere_Ext)
+	}
+	
+	if shot_stats.Shot_Lobbing == true || shot_stats.Shot_Lobbing >= 1 {
+		array_push(_shot_draw_scripts, scr_Shot_Lobbing_Draw())
 	}
 	
 	
