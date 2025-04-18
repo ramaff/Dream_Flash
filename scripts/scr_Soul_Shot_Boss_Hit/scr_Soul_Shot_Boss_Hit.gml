@@ -97,7 +97,7 @@ function scr_Soul_Shot_Boss_Hit() {
 					var ddir = direction - 90 + random(180);
 					scr_Particle_Burst(asset_get_index(shot_stats.Shot_Trail_Hit_Type), asset_get_index(shot_stats.Shot_Trail_Hit_Sprite), 
 									   shot_stats.Shot_Trail_Color_1, shot_stats.Shot_Trail_Color_2, 1, 12 + random(8), ddir,
-									   0, 0, shot_stats.Shot_Size + random(0.2), 15 + random(10), false, undefined, undefined, undefined, undefined, _xx, _yy)
+									   0, 0, shot_stats.Shot_Size + random(0.2), 15 + random(10), false, _xx, _yy)
 				}
 				
 				if shot_stats.Shot_Essence_Drain > 0 {
