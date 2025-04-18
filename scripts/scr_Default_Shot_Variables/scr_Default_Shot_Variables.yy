@@ -1,7 +1,7 @@
 {
   "resourceType": "GMScript",
   "resourceVersion": "1.0",
-  "name": "scr_Default_Shot_Stats",
+  "name": "scr_Default_Shot_Variables",
   "isCompatibility": false,
   "isDnD": false,
   "parent": {

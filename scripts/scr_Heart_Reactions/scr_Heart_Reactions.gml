@@ -2,7 +2,7 @@ function scr_Heart_Reactions() {
 	var cHeart = Soul_Hearts_Control.heart[global.currentheart, 2]
 	if cHeart = 8 {
 
-	    scr_Default_Weapon_Stats();
+	    current_weapon_stats = scr_Setup_Default_Shot_Stats();
 		
 		current_weapon_stats = {
 			Shot_Spread: 36,
@@ -32,7 +32,7 @@ function scr_Heart_Reactions() {
 
 	if cHeart = 9 {
 
-	    scr_Default_Weapon_Stats();
+	    current_weapon_stats = scr_Setup_Default_Shot_Stats();
 		
 		current_weapon_stats = {
 			Shot_Spread: 0,
@@ -64,7 +64,7 @@ function scr_Heart_Reactions() {
 
 	if cHeart = 10 {
 
-	    scr_Default_Weapon_Stats();
+	    current_weapon_stats = scr_Setup_Default_Shot_Stats();
 		
 		current_weapon_stats = {
 		    Shot_Spread: 0,
@@ -98,7 +98,7 @@ function scr_Heart_Reactions() {
 
 	if cHeart = 11 {
 
-	    scr_Default_Weapon_Stats();
+	    current_weapon_stats = scr_Setup_Default_Shot_Stats();
     
 		current_weapon_stats = {
 		    Shot_Spread: 0,
@@ -129,7 +129,7 @@ function scr_Heart_Reactions() {
 
 	if cHeart = 12 {
 
-	    scr_Default_Weapon_Stats();
+	    current_weapon_stats = scr_Setup_Default_Shot_Stats();
     
 		current_weapon_stats = {
 		    Shot_Spread: 0,

@@ -16,7 +16,7 @@ function scr_P08(){
 		current_weapon_stats = scr_Setup_Default_Weapon_Stats(_c_wp)
 		scr_Modify_Current_Weapon_Stats();
 		
-		//scr_Default_Weapon_Stats();
+		//current_weapon_stats = scr_Setup_Default_Shot_Stats();
 		
 		var _delay = current_weapon_stats.Delay / scr_Class_Stat_Firerate_Multiplier();
 		if current_weapon_stats.Shot_Beam = 2 {

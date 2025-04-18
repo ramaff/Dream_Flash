@@ -4,7 +4,7 @@ function scr_Ascending_Soul_Essence_Beam(c_wp = global.currentweapon){
 	if c_wp != 14 {
 		return	
 	}
-	scr_Default_Weapon_Stats();
+	current_weapon_stats = scr_Setup_Default_Shot_Stats();
 	
 	current_weapon_stats = {
 		Shot_Spread: 0,

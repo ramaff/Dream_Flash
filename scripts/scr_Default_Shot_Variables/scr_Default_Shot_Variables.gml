@@ -1,4 +1,4 @@
-function scr_Default_Shot_Stats() {
+function scr_Default_Shot_Variables() {
 	//global.instanceidincrementer = 1;
 	
 	bullet_hits = {}

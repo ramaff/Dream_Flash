@@ -1,6 +1,6 @@
 function scr_Optimism_Shot(xxx,yyy) {
 	
-	scr_Default_Weapon_Stats();
+	current_weapon_stats = scr_Setup_Default_Shot_Stats();
 		
 	current_weapon_stats = {
 		Shot_Spread: 0,
@@ -41,7 +41,7 @@ function scr_Optimism_Shot(xxx,yyy) {
 	scr_Shot_Creation();
 	
 	/*
-	scr_Default_Weapon_Stats();
+	current_weapon_stats = scr_Setup_Default_Shot_Stats();
 
 	Shot_Spread += 0;
 	Shot_Accuracy += 5;

@@ -1,5 +1,5 @@
 function scr_Healing_Essence_Use(_cw_stats) {
-	scr_Default_Weapon_Stats();
+	current_weapon_stats = scr_Setup_Default_Shot_Stats();
 
 	_cw_stats.Shot_Power = 8;
 

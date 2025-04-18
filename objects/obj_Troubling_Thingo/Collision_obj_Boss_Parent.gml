@@ -20,7 +20,7 @@ if shealth <= 0 {
 
     if instance_exists(obj_Troubling_Thingo) {
 
-        scr_Default_Weapon_Stats();
+        current_weapon_stats = scr_Setup_Default_Shot_Stats();
         
         current_weapon_stats.Shot_Spread += 45;
         current_weapon_stats.Shot_Accuracy += 360;
@@ -47,7 +47,6 @@ if shealth <= 0 {
 		
         repeat(Shot_Count) {
             with instance_create(x,y,Shot_Type) {
-                scr_Default_Shot_Stats();
                 scr_Proj_Teleport();
                 sprite_index = other.Shot_Sprite;
                 shot_stats.Shot_Size = other.Shot_Size;

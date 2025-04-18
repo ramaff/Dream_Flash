@@ -11,8 +11,6 @@ function scr_OA06(){
 			
 			shot_stats.Shot_Life_Span = shot_stats.Shot_Life_Span * 2;
 			alarm[0] = shot_stats.Shot_Life_Span;
-		    //shot_stats.Shot_Timer = shot_stats.Shot_Life_Span;
-			//speed = shot_stats.Shot_Speed;
 			
 			shot_stats.Shot_Speed = shot_stats.Shot_Speed * 0.55;
 			speed = shot_stats.Shot_Speed;
@@ -28,6 +26,9 @@ function scr_OA06(){
 			image_xscale = shot_stats.Shot_Size;
 			image_yscale = shot_stats.Shot_Size;
 			
+		}
+		if shot_stats.Shot_Miracle > 0 {
+			array_push(shot_stats.Shot_Step_Scripts, scr_OA06_Damage)	
 		}
 	}
 }

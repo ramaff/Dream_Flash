@@ -1,5 +1,5 @@
 function scr_Anvil_Rod_Use() {
-	scr_Default_Weapon_Stats();
+	current_weapon_stats = scr_Setup_Default_Shot_Stats();
 
 	current_weapon_stats.Shot_Spread += 0;
 	current_weapon_stats.Shot_Accuracy += 10;

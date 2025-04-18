@@ -3,7 +3,7 @@ function scr_W04() {
 
 	if global.W[4] > 0 {
 		
-		scr_Default_Weapon_Stats();
+		current_weapon_stats = scr_Setup_Default_Shot_Stats();
 		
 		var poww = 15 + 50 * global.W[4] * (1 + global.teleportboost);
 		

@@ -14,7 +14,7 @@ function scr_Weapon_Rebound(_bull_speed = other.bulletspeed) {
 	//var bspeed = 
 
 	with(obj_Soul_Parent) {
-		scr_Default_Weapon_Stats();
+		current_weapon_stats = scr_Setup_Default_Shot_Stats();
 		
 		current_weapon_stats.Shot_XX = _xrelation;
 		current_weapon_stats.Shot_YY = _yrelation;

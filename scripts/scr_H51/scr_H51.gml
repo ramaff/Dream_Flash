@@ -1,9 +1,9 @@
 // Script assets have changed for v2.3.0 see
 // https://help.yoyogames.com/hc/en-us/articles/360005277377 for more information
 function scr_H51(){
-	//scr_Default_Weapon_Stats();
+	//current_weapon_stats = scr_Setup_Default_Shot_Stats();
 	
-	scr_Default_Weapon_Stats();
+	current_weapon_stats = scr_Setup_Default_Shot_Stats();
 		
 	current_weapon_stats = {
 		Shot_Spread: 0,

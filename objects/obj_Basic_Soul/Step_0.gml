@@ -25,7 +25,7 @@ if soul_underground > 0 {
 	var ang = 0
 
 	for(var _i = 0; _i < 5; _i++) {
-		scr_Default_Weapon_Stats();
+		current_weapon_stats = scr_Setup_Default_Shot_Stats();
 
 		current_weapon_stats.Shot_Spread = 0;
 		current_weapon_stats.Shot_Accuracy = 10;

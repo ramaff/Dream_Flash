@@ -1,7 +1,7 @@
 function scr_Essence_Attack_Field() {
-	//scr_Default_Weapon_Stats();
+	//current_weapon_stats = scr_Setup_Default_Shot_Stats();
 	
-	scr_Default_Weapon_Stats();
+	current_weapon_stats = scr_Setup_Default_Shot_Stats();
 		
 	current_weapon_stats = {
 		Shot_Spread: 0,

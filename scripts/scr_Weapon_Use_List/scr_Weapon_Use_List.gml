@@ -45,7 +45,7 @@ function scr_Weapon_Use_List(cWP = global.currentweapon, _weap_slot = 0) {
 	
 		global.soulNoShoot = 0;
 		
-		//scr_Default_Weapon_Stats();
+		//current_weapon_stats = scr_Setup_Default_Shot_Stats();
 		
 		if Charge_Hold = 2 {
 			scr_Ascending_Soul_Essence_Beam(cWP);	

@@ -192,7 +192,7 @@ function scr_Shot_Creation(_cw = current_weapon_stats) {
 		repeat(mechFac) {
 			
 		    with instance_create(shxx, shyy, asset_get_index(_cw.Shot_Type)) {
-		        scr_Default_Shot_Stats();
+		        scr_Default_Shot_Variables();
 				
 				shot_stats = variable_clone(_cw);
         

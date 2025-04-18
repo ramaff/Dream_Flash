@@ -2,7 +2,7 @@
 // https://help.yoyogames.com/hc/en-us/articles/360005277377 for more information
 function scr_Baseball_Shot(xxx,yyy, pow) {
 
-	scr_Default_Weapon_Stats();
+	current_weapon_stats = scr_Setup_Default_Shot_Stats();
 
 	Shot_XX = xxx - x;
 	Shot_YY = yyy - y;

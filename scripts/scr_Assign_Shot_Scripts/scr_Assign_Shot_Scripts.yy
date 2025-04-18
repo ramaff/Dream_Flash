@@ -1,7 +1,7 @@
 {
   "resourceType": "GMScript",
   "resourceVersion": "1.0",
-  "name": "scr_Default_Weapon_Stats",
+  "name": "scr_Assign_Shot_Scripts",
   "isCompatibility": false,
   "isDnD": false,
   "parent": {

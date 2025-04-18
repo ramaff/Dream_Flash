@@ -12,7 +12,7 @@ function scr_Charged_Hold() {
 	Charge_Essence = 0;
 	Charge_Total_Time = 0;
 	
-	//scr_Default_Weapon_Stats();
+	//current_weapon_stats = scr_Setup_Default_Shot_Stats();
 	
 	current_weapon_stats = scr_Setup_Default_Weapon_Stats(weaponcharge)
 	scr_Modify_Current_Weapon_Stats();

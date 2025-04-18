@@ -6,6 +6,12 @@ if !is_struct(shot_stats) {
 	exit;	
 }
 
+var _i;
+var _script_count = array_length(shot_stats.Shot_Draw_Scripts)
+for(_i = 0; _i < _script_count; _i++) {
+	script_execute(shot_stats.Shot_Draw_Scripts[_i])	
+}
+
 if shot_stats.Shot_Orbital_Type = 1 {
     image_angle = shot_stats.Shot_Orbital_Angle + 90;
 }
@@ -40,11 +46,7 @@ if shot_stats.Shot_Lobbing = true {
 	draw_sprite_ext(spr_Bullet_Shadow,0,x,y+shot_stats.Shot_Height,shot_stats.Shot_Size * 1.5 * (1.2 - (shot_stats.Shot_Height / 200)),shot_stats.Shot_Size * 1.5 * (1.2 - (shot_stats.Shot_Height / 200)),0,c_white,image_alpha * (0.5 - (shot_stats.Shot_Height/150)));
 }
 
-if global.A[14] > 0 and shot_stats.Shot_Origin = obj_Soul_Parent {
-	var _size = 10 * sqrt(sqrt(sprite_get_width(sprite_index) * sprite_get_height(sprite_index))) * shot_stats.Shot_Size
-	_size = _size / 80
-    draw_sprite_ext(spr_Aura_Strike_Aura,0,x,y,_size, _size,0,c_white,ceil(image_alpha));
-}
+
 
 if shot_stats.Shot_Aura = 1 and image_alpha > 0 {
     draw_sprite_ext(asset_get_index(shot_stats.Shot_Aura_Sprite),0,x,y,1,1,0,c_white,1);

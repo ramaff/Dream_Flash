@@ -3,7 +3,7 @@ function scr_P03() {
 
 	if global.P[3] > 0 {
 
-	    scr_Default_Weapon_Stats();
+	    current_weapon_stats = scr_Setup_Default_Shot_Stats();
 		
 		var pow = 10 * ((20 + global.soulloathing + global.soulloathingTemp) / 20)
 		

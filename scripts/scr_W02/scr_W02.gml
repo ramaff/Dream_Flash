@@ -3,7 +3,7 @@ function scr_W02(teleport_dir = point_direction(x,y,mouse_x,mouse_y)) {
 
 	if global.W[02] > 0 {
 
-	    scr_Default_Weapon_Stats();
+	    current_weapon_stats = scr_Setup_Default_Shot_Stats();
 		
 		current_weapon_stats = {
 			Shot_Spread: 30,

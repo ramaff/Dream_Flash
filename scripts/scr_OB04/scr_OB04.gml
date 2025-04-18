@@ -10,7 +10,7 @@ function scr_OB04() {
 			exit;	
 		}
 		
-		scr_Default_Weapon_Stats();
+		current_weapon_stats = scr_Setup_Default_Shot_Stats();
 		
 		current_weapon_stats = scr_Setup_Default_Weapon_Stats(_c_wp)
 		scr_Modify_Current_Weapon_Stats();

@@ -189,7 +189,7 @@ function scr_Hitscan_Damage(argument0, argument1) {
     
 		if Shot_Burst_Type = 1 {
 		
-			//scr_Default_Weapon_Stats();
+			//current_weapon_stats = scr_Setup_Default_Shot_Stats();
 				
 			soulshotmouse = 0;
 			soulshotdirection = 0;

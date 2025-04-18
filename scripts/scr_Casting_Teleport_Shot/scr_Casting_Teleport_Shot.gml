@@ -1,5 +1,5 @@
 function scr_Casting_Teleport_Shot(xxx, yyy, distance) {
-	scr_Default_Weapon_Stats();
+	current_weapon_stats = scr_Setup_Default_Shot_Stats();
 	
 	current_weapon_stats = {
 		Shot_Spread: 0,

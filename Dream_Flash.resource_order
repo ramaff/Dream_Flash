@@ -141,6 +141,7 @@
     {"name":"State Reco Icons","order":30,"path":"folders/Sprites/Recollection/State Reco Icons.yy",},
     {"name":"Tutorial Stuff","order":31,"path":"folders/Sprites/Recollection/Tutorial Stuff.yy",},
     {"name":"beam_punches","order":38,"path":"folders/Sprites/Soul Shot Sprites/Imaginary Shots/beam_punches.yy",},
+    {"name":"Shot Step Scripts","order":4,"path":"folders/Scripts/Weapon And Projectile Commands/Shot Step Scripts.yy",},
   ],
   "ResourceOrderSettings": [
     {"name":"reco_Demonic_Villainy","order":66,"path":"sprites/reco_Demonic_Villainy/reco_Demonic_Villainy.yy",},
@@ -661,6 +662,7 @@
     {"name":"obj_accel_bullet_v2","order":8,"path":"objects/obj_accel_bullet_v2/obj_accel_bullet_v2.yy",},
     {"name":"spr_Trailing_Off_Art","order":2,"path":"sprites/spr_Trailing_Off_Art/spr_Trailing_Off_Art.yy",},
     {"name":"spr_state_menu_tutorial","order":9,"path":"sprites/spr_state_menu_tutorial/spr_state_menu_tutorial.yy",},
+    {"name":"scr_Assign_Shot_Scripts","order":3,"path":"scripts/scr_Assign_Shot_Scripts/scr_Assign_Shot_Scripts.yy",},
     {"name":"spr_Lightning_Beam_Turn_Ontoptop","order":14,"path":"sprites/spr_Lightning_Beam_Turn_Ontoptop/spr_Lightning_Beam_Turn_Ontoptop.yy",},
     {"name":"scr_Q05","order":2,"path":"scripts/scr_Q05/scr_Q05.yy",},
     {"name":"spr_wall_of_thoughts_v2_cry_stream","order":1,"path":"sprites/spr_wall_of_thoughts_v2_cry_stream/spr_wall_of_thoughts_v2_cry_stream.yy",},

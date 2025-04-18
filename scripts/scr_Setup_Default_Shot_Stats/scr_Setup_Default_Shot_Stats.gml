@@ -10,6 +10,8 @@ function scr_Setup_Default_Shot_Stats(){
 		Shot_Accuracy: 15,
 		Shot_Spread: 0,
 		Real_Boss_Hits: {},
+		Shot_Step_Scripts: [],
+		Shot_Draw_Scripts: [],
 		Shot_ID_Offset: 0,
 		Shot_Extra_Hits_Frequency: -1,
 		Shot_Extra_Stats: [],

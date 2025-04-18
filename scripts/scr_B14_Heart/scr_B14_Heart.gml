@@ -12,7 +12,7 @@ function scr_B14_Heart(truedam){
 		
 		var dam = truedam * 1.5;
 
-	    scr_Default_Weapon_Stats();
+	    current_weapon_stats = scr_Setup_Default_Shot_Stats();
 		
 		repeat(3) {
 			current_weapon_stats = {

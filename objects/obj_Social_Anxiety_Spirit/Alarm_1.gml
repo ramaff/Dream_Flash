@@ -13,7 +13,7 @@ if souldist < 320 {
 	if good = 1 {
 	
 		if instance_exists(obj_Bullet_Parent) and instance_exists(obj_Boss_Parent) {
-		    scr_Default_Weapon_Stats();
+		    current_weapon_stats = scr_Setup_Default_Shot_Stats();
         
 		    current_weapon_stats.Shot_Spread = 10;
 		    current_weapon_stats.Shot_Accuracy = 15;
