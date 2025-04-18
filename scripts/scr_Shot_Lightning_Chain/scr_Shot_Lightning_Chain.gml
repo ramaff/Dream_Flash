@@ -22,28 +22,11 @@ function scr_Shot_Lightning_Chain(max_streaks = 30, streak_target = noone, chain
 				}
 			}
 			if instance_exists(streak_target) {
-				/*
-				var aim_angle = point_direction(xst, yst, streak_target.x, streak_target.y);
-				var boss_dist = point_distance(xst, yst, streak_target.x, streak_target.y);
-				while boss_dist > 70 and max_streaks > 0 {
-					scr_Create_Lightning_Streak(xst, yst, aim_angle, streak_color)
-				
-					xst += lengthdir_x(streak_length, aim_angle)
-					yst += lengthdir_y(streak_length, aim_angle)
-					aim_angle = point_direction(xst, yst, streak_target.x, streak_target.y) - 90 + random(180);
-					boss_dist = point_distance(xst, yst, streak_target.x, streak_target.y);
-					max_streaks--;
-				}
-				var boss_aim_angle = point_direction(xst, yst, streak_target.x, streak_target.y);
-				with instance_create(xst, yst, obj_Lightning_Streak) {
-					image_angle = boss_aim_angle;
-					image_blend = streak_color;
-				} */
 				scr_Lightning_To_Target(spr_Lightning_Streak, xst, yst, streak_target.x, streak_target.y, max_streaks, streak_length, streak_color)
 				with streak_target {
 					bosshealth -= chain_damage;
             
-					scr_Damage_Indicator(0, chain_damage, 1);
+					scr_setup_dmg_indicator(x,y, chain_damage, c_white);
 				}
 				variable_struct_set(bosses_struck, streak_target, streak_target)
 				chains--;
@@ -87,7 +70,7 @@ function scr_Shot_Lightning_Chain(max_streaks = 30, streak_target = noone, chain
 				with streak_target {
 					bosshealth -= chain_damage;
             
-					scr_Damage_Indicator(0, chain_damage, 1);
+					scr_setup_dmg_indicator(x,y, chain_damage, c_white);
 				}
 				
 				variable_struct_set(bosses_struck, streak_target, streak_target)

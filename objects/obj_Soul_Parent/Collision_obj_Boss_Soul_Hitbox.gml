@@ -17,15 +17,7 @@ if instance_exists(other.bossid) and soul_underground <= 0 {
 			
 	        other.bossid.bosshealth -= cdam;
         
-	        with instance_create(other.bossid.x,other.bossid.y,obj_Damage_Indicator) {
-	            element = 0;
-	            damageIndication = cdam;
-	            textSize = 1;
-	            direction = 90;
-	            speed = 1 + (bspd / 6) + random(0.05)
-	            friction = 0.01 + (bspd / 600)
-	            alarm[0] = 30 + irandom(3);
-	        }
+			scr_setup_dmg_indicator(other.bossid.x,other.bossid.y, cdam, c_white)
 	    }
 		
 		hitType = "Boss";

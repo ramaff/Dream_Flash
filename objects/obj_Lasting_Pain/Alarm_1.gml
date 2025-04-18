@@ -19,7 +19,7 @@ scr_Disk_Effect(40, _range / 15, color2);
 with (obj_Boss_Parent) {
 	if point_distance(x,y,other.x,other.y) < (_range * 15) {
 		bosshealth -= _damage_potency;
-		scr_Damage_Indicator(0, _damage_potency, 2);
+		scr_setup_dmg_indicator(x,y, _damage_potency, c_white);
 		var dir = point_direction(x,y,other.x,other.y) + 180;
 		x += lengthdir_x(_damage_potency, dir);
 		y += lengthdir_y(_damage_potency, dir);

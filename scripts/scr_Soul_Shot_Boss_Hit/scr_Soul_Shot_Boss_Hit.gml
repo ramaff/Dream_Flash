@@ -55,9 +55,9 @@ function scr_Soul_Shot_Boss_Hit() {
 				scr_Disk_Effect(30, 1.5, c_white)
 		
 				with (obj_Boss_Parent) {
-				    dmg = other.shot_stats.Shot_Impact_Power;
-				    bosshealth -= dmg;
-				    scr_Damage_Indicator(0, dmg, 2);
+				    var _dmg = other.shot_stats.Shot_Impact_Power;
+				    bosshealth -= _dmg;
+					scr_setup_dmg_indicator(x,y, _dmg, c_white);
 				}
 		
 				with(obj_Bullet_Parent) {
@@ -87,11 +87,17 @@ function scr_Soul_Shot_Boss_Hit() {
 		
 			if shotDamage > 0 {
 				
+				var _xx = x;
+				var _yy = y;
+				if shot_stats.Shot_Melee {
+					_xx = other.x;
+					_yy = other.y;
+				}
 				repeat(shot_stats.Shot_Trail_Hit_Count) {
 					var ddir = direction - 90 + random(180);
 					scr_Particle_Burst(asset_get_index(shot_stats.Shot_Trail_Hit_Type), asset_get_index(shot_stats.Shot_Trail_Hit_Sprite), 
 									   shot_stats.Shot_Trail_Color_1, shot_stats.Shot_Trail_Color_2, 1, 12 + random(8), ddir,
-									   0, 0, shot_stats.Shot_Size + random(0.2), 15 + random(10))
+									   0, 0, shot_stats.Shot_Size + random(0.2), 15 + random(10), false, undefined, undefined, undefined, undefined, _xx, _yy)
 				}
 				
 				if shot_stats.Shot_Essence_Drain > 0 {
@@ -103,15 +109,8 @@ function scr_Soul_Shot_Boss_Hit() {
 				var valdis = (shotDamage / 10) * shot_stats.Shot_Life_Drain;
 				scr_Heal_Soul(valdis);
 
-				with instance_create(obj_Soul_Parent.x,obj_Soul_Parent.y,obj_Damage_Indicator) {
-					element = 6;
-					damageIndication = valdis;
-					textSize = 1;
-					direction = 90;
-					speed = 1.5 + random(0.35)
-					friction = 0.01 + (other.speed / 600)
-					alarm[0] = 30 + irandom(6);
-				}
+				scr_setup_dmg_indicator(obj_Soul_Parent.x,obj_Soul_Parent.y, valdis, c_fuchsia)
+
 			}
 		
 			if global.A[7] > 0 and shot_stats.Shot_Origin = obj_Soul_Parent {

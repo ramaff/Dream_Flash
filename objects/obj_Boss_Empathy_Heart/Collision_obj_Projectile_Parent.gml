@@ -7,7 +7,7 @@ if bosshealth < bossmaxhealth {
 	if instance_exists(followtarget) {
 		followtarget.bosshealth -= diff;
 		with (followtarget) {
-			scr_Damage_Indicator(0, diff, 1);
+			scr_setup_dmg_indicator(x,y, diff, c_white);
 		}
 		scr_Boss_Stretch("Vertical", 0.1);
 		scr_Heal_Soul(diff / 20);

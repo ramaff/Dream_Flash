@@ -19,7 +19,7 @@ function scr_C05() {
 				var chains = 1;
 				var chain_range = 300;
 				
-				scr_Damage_Indicator(0, chain_damage, 1)
+				scr_setup_dmg_indicator(x,y, chain_damage, c_white);
 				
 				bosshealth -= chain_damage;
 			

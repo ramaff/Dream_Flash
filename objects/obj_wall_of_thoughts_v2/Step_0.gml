@@ -185,10 +185,6 @@ if active_attack_delay <= 0 and pattern_cooldown <= 0 and pattern_count > 0 {
 		minion_speed = bossbulletspeed * (1.5 + random(0.5))
 		minion_yy = 150;
 		minion_knockdefense = 5
-		
-		//bosshealth -= 50;
-		//scr_Damage_Indicator(0, 50, 1)
-		//minion_movespeed = bossbulletspeed;
 
 		scr_Minion_Spawn();
 	

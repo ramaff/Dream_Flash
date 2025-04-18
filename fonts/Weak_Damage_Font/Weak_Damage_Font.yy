@@ -4,7 +4,7 @@
   "name": "Weak_Damage_Font",
   "AntiAlias": 1,
   "applyKerning": 0,
-  "ascender": 0,
+  "ascender": 13,
   "ascenderOffset": 0,
   "bold": true,
   "canGenerateBitmap": true,
@@ -144,7 +144,7 @@
     {"amount":-1,"first":111,"second":84,},
   ],
   "last": 0,
-  "lineHeight": 0,
+  "lineHeight": 17,
   "maintainGms1Font": false,
   "parent": {
     "name": "Fonts",

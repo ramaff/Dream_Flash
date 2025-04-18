@@ -3,7 +3,7 @@
 function scr_Particle_Burst(particletype = obj_Weapon_Trail, particlesprite = spr_Soul_Big_Bit, particlecolor1 = c_white,
 							particlecolor2 = c_white, burstcount = 0, burstspeed = 10, burstdir = 0, burstspread = 360, particleArea = 0, 
 							partSize = 0.5, partLife = 10, burstUniformSpread = false, _xx = -999999, _yy = -999999, _part_angle = image_angle,
-							_part_target = noone) {
+							_part_target = noone, _og_x = x, _og_y = y) {
 	if global.gameParticles > 0 {
 		repeat(burstcount) {
 		
@@ -14,7 +14,7 @@ function scr_Particle_Burst(particletype = obj_Weapon_Trail, particlesprite = sp
 				_yy = random(particleArea) - (particleArea / 2);
 			}
 	
-			with instance_create(x + _xx,y + _yy, particletype) {
+			with instance_create(_og_x + _xx,_og_y + _yy, particletype) {
 				
 				if burstUniformSpread {
 					direction = burstdir;

@@ -5,7 +5,7 @@
   "isCompatibility": false,
   "isDnD": false,
   "parent": {
-    "name": "Visual Commands",
-    "path": "folders/Scripts/Visual Commands.yy",
+    "name": "Visual and Displays Commands",
+    "path": "folders/Scripts/Visual and Displays Commands.yy",
   },
 }

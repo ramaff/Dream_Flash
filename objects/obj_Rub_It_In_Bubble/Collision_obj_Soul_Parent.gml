@@ -4,7 +4,7 @@ with (obj_Main_Boss_Parent) {
     
 	bosshealth -= dmg;
             
-	scr_Damage_Indicator(0, dmg, 3);
+	scr_setup_dmg_indicator(x,y, dmg, c_white);
 	
 	scr_Default_Attack_Settings();
     bullet_type = obj_Basic_Bullet;

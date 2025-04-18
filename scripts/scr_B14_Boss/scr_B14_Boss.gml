@@ -3,18 +3,10 @@ function scr_B14_Boss(damageamount, defenseamount) {
 	    var bpow = damageamount - defenseamount;
 		if instance_exists(other.bossid) {
 		    with(other.bossid) {
-		        var dmg = 5 + (global.B[14] * bpow * 4);
-		        bosshealth -= dmg;
+		        var _dmg = 5 + (global.B[14] * bpow * 4);
+		        bosshealth -= _dmg;
         
-		        with instance_create(x,y,obj_Damage_Indicator) {
-		            element = 0;
-		            damageIndication = dmg;
-		            textSize = 1;
-		            direction = 90;
-		            speed = 1 + (other.speed / 6) + random(0.05)
-		            friction = 0.01 + (other.speed / 600)
-		            alarm[0] = 30 + irandom(3);
-		        }
+				scr_setup_dmg_indicator(x,y, _dmg, c_white)
 		    }
 		}
 	}

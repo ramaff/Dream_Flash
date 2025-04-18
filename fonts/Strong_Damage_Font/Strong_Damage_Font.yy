@@ -4,7 +4,7 @@
   "name": "Strong_Damage_Font",
   "AntiAlias": 1,
   "applyKerning": 0,
-  "ascender": 0,
+  "ascender": 25,
   "ascenderOffset": 0,
   "bold": true,
   "canGenerateBitmap": true,
@@ -666,7 +666,7 @@
     {"amount":1,"first":124,"second":309,},
   ],
   "last": 0,
-  "lineHeight": 0,
+  "lineHeight": 33,
   "maintainGms1Font": false,
   "parent": {
     "name": "Fonts",

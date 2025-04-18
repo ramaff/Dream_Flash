@@ -4,11 +4,11 @@ function scr_D14() {
 	if global.D[14] > 0 {
 	    with(obj_Boss_Parent) {
 	        if distance_to_object(other) <= (90) {
-	            var dmg = (1 + global.D[14]) * sqrt((other.soulCurrentHorizontalSpeed * other.soulCurrentHorizontalSpeed) + (other.soulCurrentVerticalSpeed * other.soulCurrentVerticalSpeed)) / 20;
-	            bosshealth -= dmg;
+	            var _dmg = (1 + global.D[14]) * sqrt((other.soulCurrentHorizontalSpeed * other.soulCurrentHorizontalSpeed) + (other.soulCurrentVerticalSpeed * other.soulCurrentVerticalSpeed)) / 20;
+	            bosshealth -= _dmg;
 				
 				if scr_Chance(10) {
-					scr_Damage_Indicator(0, dmg * 10, 1);
+					scr_setup_dmg_indicator(x,y, _dmg * 10, c_white);
 				}
 	        }
 	    }

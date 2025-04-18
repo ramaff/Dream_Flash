@@ -1,6 +1,10 @@
 // Script assets have changed for v2.3.0 see
 // https://help.yoyogames.com/hc/en-us/articles/360005277377 for more information
 
+function scr_sort_by_scale(a, b) {
+	return a.scale < b.scale;
+}
+
 function scr_Weapon_Slot_Info_Update(_weapon_slot_info){
 	var _win_y = camcon.window_scale * camcon.view_zoom * camera_get_view_height(view);
 	
@@ -24,6 +28,12 @@ function scr_Weapon_Slot_Info_Update(_weapon_slot_info){
 		_xx = _xx_center + lengthdir_x(_xx_width, _angle)
 		_yy = _yy_center + (lengthdir_y(_yy_width, _angle) * 2 * _scale)
 
+		/*if _i < array_length(_weapon_slot_info) {
+			if is_struct(_weapon_slot_info[_i]) {
+				delete _weapon_slot_info[_i]	
+			}
+		} */
+
 		_weapon_slot_info[_i] = {
 			"xx": _xx,
 			"yy": _yy,
@@ -35,8 +45,6 @@ function scr_Weapon_Slot_Info_Update(_weapon_slot_info){
 
 	}
 	Soul_Weapons_Control.angular_rotation = floor(Soul_Weapons_Control.angular_rotation * 0.85)
-	array_sort(_weapon_slot_info, function(a, b)
-	{
-		return a.scale < b.scale;
-	})
+	
+	array_sort(_weapon_slot_info, scr_sort_by_scale)
 }

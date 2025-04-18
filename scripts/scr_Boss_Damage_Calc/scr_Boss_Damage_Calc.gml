@@ -43,7 +43,14 @@ function scr_Boss_Damage_Calc() {
 	shotDamage += shotDamage * downward_boost;
 	shotweaktotal += shotweaktotal * downward_boost;
 
-	scr_Boss_Damage_Display(shotweaktotal);
+	var _xx = x;
+	var _yy = y;
+	if shot_stats.Shot_Melee {
+		_xx = other.x;
+		_yy = other.y;
+	}
+
+	scr_setup_dmg_indicator(_xx, _yy, shotDamage, c_white, shotweaktotal);
 
 	//Adding Poison
 	if shot_stats.Shot_Poison != 0 {

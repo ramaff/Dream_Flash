@@ -9,14 +9,7 @@ target.shealth -= damage;
 damage_threshold += damage
 
 if damage_threshold >= 1 {
-	with instance_create(obj_Soul_Parent.x,obj_Soul_Parent.y,obj_Damage_Indicator) {
-		element = 1;
-		damageIndication = 1
-		textSize = 2;
-		direction = 90;
-		speed = 1.5 + random(0.35)
-		friction = 0.01 + (other.speed / 600)
-		alarm[0] = 60 + irandom(6);
-	}
+	scr_setup_dmg_indicator(obj_Soul_Parent.x,obj_Soul_Parent.y, 1, c_white)
+
 	damage_threshold -= 1
 }

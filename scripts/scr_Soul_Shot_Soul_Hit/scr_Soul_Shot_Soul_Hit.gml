@@ -9,15 +9,7 @@ function scr_Soul_Shot_Soul_Hit(){
 			if shothealemit = 0 {
 				var valdis = shot_stats.Shot_Power * shot_stats.Shot_Life_Span / 60;
 
-				with instance_create(other.x,other.y,obj_Damage_Indicator) {
-				    element = 6;
-				    damageIndication = valdis;
-				    textSize = 1;
-				    direction = 90;
-				    speed = 1.5 + random(0.35)
-				    friction = 0.01 + (other.speed / 600)
-				    alarm[0] = 30 + irandom(6);
-				}
+				scr_setup_dmg_indicator(x,y, valdis, c_fuchsia)
 				shothealemit = 1;
 			}
 		}

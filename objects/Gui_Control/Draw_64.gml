@@ -67,59 +67,64 @@ if !scr_Room_Leavable() {
 	totalbossnum += instance_number(obj_The_Veil);
 	totalbossnum += instance_number(obj_Soul_Collector);
 	var cboss = 0;
-    for(var i = 0; i < totalbossnum; i++) {
-        bosshealth[i] = 0;
-        bossmaxhealth[i] = 0;
-		bossphase[i] = 1;
+	var _i = 0
+	var _boss_health = []
+	var _boss_max_health = []
+	var _boss_phase = []
+	
+    for(_i = 0; _i < totalbossnum; _i++) {
+        _boss_health[_i] = 0;
+        _boss_max_health[_i] = 0;
+		_boss_phase[_i] = 1;
     }
     with(obj_Main_Boss_Parent) {
 		if object_index != obj_Sandman_Thought and object_index != obj_Veil_Mask and object_index != obj_Soul_Collector and object_index != obj_Dream_Crawler_Part {
 			
-			other.bosshealth[cboss] = bosshealth;
-			
-	        other.bossmaxhealth[cboss] = bosstotalhealth;
-			other.bossphase[cboss] = currentphase
+			_boss_health[cboss] = bosshealth;
+	        _boss_max_health[cboss] = bosstotalhealth;
+			_boss_phase[cboss] = currentphase
 	        cboss++;
 		}
     }
 	with(obj_The_Veil) {
-        other.bosshealth[0] = bosshealth;
-        other.bossmaxhealth[0] = bossmaxhealth + bossmaxhealth2;
+        _boss_health[0] = bosshealth;
+        _boss_max_health[0] = bossmaxhealth + bossmaxhealth2;
         cboss++;
     }
 	with(obj_Soul_Collector) {
-        other.bosshealth[0] = bosshealth + bossmaxhealth2;
-        other.bossmaxhealth[0] = bossmaxhealth + bossmaxhealth2;
+        _boss_health[0] = bosshealth + bossmaxhealth2;
+        _boss_max_health[0] = bossmaxhealth + bossmaxhealth2;
         cboss++;
     }
 	var barsize = 600;
 	var barspr = spr_Boss_Heart;
+	var i;
 	if totalbossnum = 1 {
 	    for(i = 0; i < totalbossnum; i++) {
-	        var bpercent = (bosshealth[i] / bossmaxhealth[i]);
+	        var bpercent = (_boss_health[i] / _boss_max_health[i]);
        
 			draw_sprite_ext(barspr,3,winx / 2 - (barsize / 4),winy - 60,0.5,0.5,0,c_white,1);
-			draw_sprite_part_ext(barspr,bossphase[i] - 1,0,0,barsize * (bpercent),99,winx / 2 - (barsize / 4), winy - 60,0.5,0.5,c_white,1);
+			draw_sprite_part_ext(barspr,_boss_phase[i] - 1,0,0,barsize * (bpercent),99,winx / 2 - (barsize / 4), winy - 60,0.5,0.5,c_white,1);
 		}
 	} else if totalbossnum = 2 {
 		barsize = 400;
 		barspr = spr_Boss_Heart_400;
 		
 		for(i = 0; i < totalbossnum; i++) {
-	        var bpercent = (bosshealth[i] / bossmaxhealth[i]);
+	        var bpercent = (_boss_health[i] / _boss_max_health[i]);
        
 			draw_sprite_ext(barspr,3,(winx / 2 - (barsize / 2 * (totalbossnum - 1)) + (barsize * i)) - (barsize / 4),winy - 60,0.5,0.5,0,c_white,1);
-			draw_sprite_part_ext(barspr,bossphase[i] - 1,0,0,barsize * (bpercent),99,(winx / 2 - (barsize / 2 * (totalbossnum - 1)) + (barsize * i)) - (barsize / 4), winy - 60,0.5,0.5,c_white,1);
+			draw_sprite_part_ext(barspr,_boss_phase[i] - 1,0,0,barsize * (bpercent),99,(winx / 2 - (barsize / 2 * (totalbossnum - 1)) + (barsize * i)) - (barsize / 4), winy - 60,0.5,0.5,c_white,1);
 		}
 	} else {
 		barsize = 300;
 		barspr = spr_Boss_Heart_300;
 		
 		for(i = 0; i < totalbossnum; i++) {
-	        var bpercent = (bosshealth[i] / bossmaxhealth[i]);
+	        var bpercent = (_boss_health[i] / _boss_max_health[i]);
        
 			draw_sprite_ext(barspr,3,(winx / 2 - (barsize / 2 * (totalbossnum - 1)) + (barsize * i)) - (barsize / 4),winy - 60,0.5,0.5,0,c_white,1);
-			draw_sprite_part_ext(barspr,bossphase[i] - 1,0,0,barsize * (bpercent),99,(winx / 2 - (barsize / 2 * (totalbossnum - 1)) + (barsize * i)) - (barsize / 4), winy - 60,0.5,0.5,c_white,1);
+			draw_sprite_part_ext(barspr,_boss_phase[i] - 1,0,0,barsize * (bpercent),99,(winx / 2 - (barsize / 2 * (totalbossnum - 1)) + (barsize * i)) - (barsize / 4), winy - 60,0.5,0.5,c_white,1);
 		}
 	}
 } else {

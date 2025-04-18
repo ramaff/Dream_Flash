@@ -4,15 +4,7 @@ if soulinvincibility = 0 {
 		other.bosshealth -= scontactdamage - other.bossdefense;
 	}
     
-    with instance_create(other.x,other.y,obj_Damage_Indicator) {
-        element = 0;
-        damageIndication = other.scontactdamage;
-        textSize = 1;
-        direction = 90;
-        speed = 1 + (other.speed / 6) + random(0.05)
-        friction = 0.01 + (other.speed / 600)
-        alarm[0] = 30 + irandom(3);
-    }
+	scr_setup_dmg_indicator(other.x,other.y, other.scontactdamage, c_white)
     
     soulinvincibility = 9;
     shealth -= other.bosscontactdamage

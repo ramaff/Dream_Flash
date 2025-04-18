@@ -116,9 +116,9 @@ function scr_Soul_Shot_Expire_Event(){
 		scr_Disk_Effect(30, 1.5, c_white)
 		
 		with (obj_Boss_Parent) {
-			dmg = other.shot_stats.Shot_Impact_Power;
-			bosshealth -= dmg;
-			scr_Damage_Indicator(0, dmg, 2);
+			var _dmg = other.shot_stats.Shot_Impact_Power;
+			bosshealth -= _dmg;
+			scr_setup_dmg_indicator(x,y, _dmg, c_white);
 		}
 		
 		with(obj_Bullet_Parent) {

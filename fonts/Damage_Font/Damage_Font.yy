@@ -4,7 +4,7 @@
   "name": "Damage_Font",
   "AntiAlias": 1,
   "applyKerning": 0,
-  "ascender": 0,
+  "ascender": 19,
   "ascenderOffset": 0,
   "bold": true,
   "canGenerateBitmap": true,
@@ -383,7 +383,7 @@
     {"amount":1,"first":123,"second":298,},
   ],
   "last": 0,
-  "lineHeight": 0,
+  "lineHeight": 25,
   "maintainGms1Font": false,
   "parent": {
     "name": "Fonts",

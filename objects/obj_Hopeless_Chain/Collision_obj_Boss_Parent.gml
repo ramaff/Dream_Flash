@@ -2,4 +2,4 @@
 // You can write your code in this editor
 other.bosshealth -= 5
 
-scr_Damage_Indicator(0,5,1)
+scr_setup_dmg_indicator(x,y, 5, c_white);

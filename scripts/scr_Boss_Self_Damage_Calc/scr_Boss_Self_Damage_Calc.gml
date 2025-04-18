@@ -33,8 +33,7 @@ function scr_Boss_Self_Damage_Calc() {
 	shotDamage = 0;
 	}
 
-
-	scr_Boss_Self_Damage_Display();
+	scr_setup_dmg_indicator(x,y, shotDamage, c_white);
 
 	if shotDamage > 0 {
 	    bosshealth -= shotDamage

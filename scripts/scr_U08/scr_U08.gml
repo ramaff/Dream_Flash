@@ -36,7 +36,7 @@ function scr_U08(){
 						scr_Apply_Boss_Knockback(id, _knock, 5, point_direction(_xx, _yy, x, y))
 						
 						bosshealth -= _pow;
-						scr_Damage_Indicator(0, _pow, 1);
+						scr_setup_dmg_indicator(x,y, _pow, c_white);
 					
 						scr_Apply_Boss_Poison(id, _poison_pow, 30, 9);			
 					}

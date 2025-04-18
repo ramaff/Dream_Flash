@@ -14,7 +14,7 @@ with (other) {
 if instance_exists(bosstarget) {
 	with (bosstarget) {
 		bosshealth -= hamount * 5;
-		scr_Damage_Indicator(0, hamount * 5, 1);
+		scr_setup_dmg_indicator(x,y, hamount * 5, c_white);
 	}
 }
 
