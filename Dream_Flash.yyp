@@ -3848,7 +3848,6 @@
     {"id":{"name":"scr_V08","path":"scripts/scr_V08/scr_V08.yy",},},
     {"id":{"name":"obj_Jump_Spider","path":"objects/obj_Jump_Spider/obj_Jump_Spider.yy",},},
     {"id":{"name":"bg_State_Fallout","path":"sprites/bg_State_Fallout/bg_State_Fallout.yy",},},
-    {"id":{"name":"scr_Weapon_Direction_List","path":"scripts/scr_Weapon_Direction_List/scr_Weapon_Direction_List.yy",},},
     {"id":{"name":"scr_Weapon_Switch","path":"scripts/scr_Weapon_Switch/scr_Weapon_Switch.yy",},},
     {"id":{"name":"spr_ninja_spirit_v2_shuffle_throw","path":"sprites/spr_ninja_spirit_v2_shuffle_throw/spr_ninja_spirit_v2_shuffle_throw.yy",},},
     {"id":{"name":"scr_Weapon_Sprite_List","path":"scripts/scr_Weapon_Sprite_List/scr_Weapon_Sprite_List.yy",},},

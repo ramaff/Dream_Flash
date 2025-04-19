@@ -811,7 +811,6 @@
     {"name":"scr_Weapon_Status_Store","order":11,"path":"scripts/scr_Weapon_Status_Store/scr_Weapon_Status_Store.yy",},
     {"name":"spr_Recollection_Hover_Cloud_Leave","order":2,"path":"sprites/spr_Recollection_Hover_Cloud_Leave/spr_Recollection_Hover_Cloud_Leave.yy",},
     {"name":"obj_Jump_Spider","order":6,"path":"objects/obj_Jump_Spider/obj_Jump_Spider.yy",},
-    {"name":"scr_Weapon_Direction_List","order":10,"path":"scripts/scr_Weapon_Direction_List/scr_Weapon_Direction_List.yy",},
     {"name":"scr_Weapon_Switch","order":9,"path":"scripts/scr_Weapon_Switch/scr_Weapon_Switch.yy",},
     {"name":"scr_Weapon_Sprite_List","order":8,"path":"scripts/scr_Weapon_Sprite_List/scr_Weapon_Sprite_List.yy",},
     {"name":"scr_Weapon_GUI","order":7,"path":"scripts/scr_Weapon_GUI/scr_Weapon_GUI.yy",},

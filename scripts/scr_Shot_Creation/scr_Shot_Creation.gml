@@ -221,7 +221,6 @@ function scr_Shot_Creation(_cw = current_weapon_stats) {
 		        alarm[0] = shot_stats.Shot_Life_Span;
 				alarm[1] = 1;
 		        scr_Extra_Shot_Stats();
-		        scr_Weapon_Direction_List();
 			
 				////shot_stats.Shot_Timer = shot_stats.Shot_Life_Span;
 			

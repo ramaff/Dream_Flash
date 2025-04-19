@@ -82,8 +82,6 @@ function scr_Extra_Shot_Stats() {
 		scr_U01();
 		scr_U05();
 	
-		scr_V08();
-	
 		scr_P06();
 		scr_P07();
 	
@@ -115,5 +113,10 @@ function scr_Extra_Shot_Stats() {
 	shot_stats.Shot_Size_Max = shot_stats.Shot_Size;
 
 	scr_Assign_Shot_Scripts();
+	
+	if shot_stats.Shot_Origin = obj_Soul_Parent {
+		scr_V08();
+	}
+		
 
 }

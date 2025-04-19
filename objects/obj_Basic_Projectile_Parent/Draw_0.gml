@@ -20,24 +20,15 @@ for(_i = 0; _i < _script_count; _i++) {
 	shot_stats.Shot_Lobbing = false;
 } */
 
-var fdist = 50;
-var tdist = 50 / shot_stats.Shot_Init_Speed;
-var etime = shot_stats.Shot_Life_Span - alarm[0];
-var edist = shot_stats.Shot_Init_Speed * etime;
+var _remaining_time = shot_stats.Shot_Life_Span - shot_stats.Shot_Exist_Time
 
-var sSize = 1 - ((fdist - edist) / fdist);
-
-sSize = clamp(sSize, 0, 1)
-
-if shot_stats.Shot_Init_Grow = 0 {
-	shot_stats.Shot_Size_Relation = 1;
-	sSize = 1;
+if _remaining_time < 15 {
+	shot_stats.Shot_Size -= shot_stats.Shot_Size / _remaining_time
+	image_xscale -= image_xscale / _remaining_time;
+	image_yscale -= image_yscale / _remaining_time;
 } 
 
-if ((shot_stats.Shot_Life_Span - alarm[0]) <= (tdist)) and (shot_stats.Shot_Life_Span > (tdist)) and (shot_stats.Shot_Form_Show = 1) {
-    draw_sprite_ext(sprite_index,image_index,x,y,image_xscale * sSize,image_yscale * sSize,	image_angle,c_white,image_alpha/* * sSize*/);
-} else {
-    draw_sprite_ext(sprite_index,image_index,x,y,image_xscale * shot_stats.Shot_Size_Relation,image_yscale * shot_stats.Shot_Size_Relation, image_angle,c_white,image_alpha);
-}
+draw_sprite_ext(sprite_index,image_index,x,y,image_xscale,image_yscale, image_angle,c_white,image_alpha);
+
 
 

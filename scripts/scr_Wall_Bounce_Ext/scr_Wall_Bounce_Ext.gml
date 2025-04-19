@@ -12,14 +12,12 @@ function scr_Wall_Bounce_Ext() {
 		bnc = 1;
 	}
 
-		if shot_stats.Shot_Speed = 0 || speed = 0 {
-			bnc = 0;
-		}
+	if shot_stats.Shot_Speed = 0 || speed = 0 {
+		bnc = 0;
+	}
 
 	if bnc = 1 {
-		shot_boss_id = instance_id_get( instance_count ) + global.instanceidincrementer;
-	
-		global.instanceidincrementer++;
+		shot_stats.Shot_ID_Offset++;
 	}
 
 
