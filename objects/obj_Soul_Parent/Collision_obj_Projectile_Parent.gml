@@ -23,3 +23,4 @@ if other.shot_stats.Shot_Soul_Damage > 0 and soul_underground <= 0 {
     instance_destroy(other);
 }
 
+scr_Soul_Shot_Soul_Hit();

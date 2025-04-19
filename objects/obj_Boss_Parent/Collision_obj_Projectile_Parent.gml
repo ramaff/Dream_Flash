@@ -1,4 +1,4 @@
-exit;
+scr_Soul_Shot_Boss_Hit();
 
 
 
