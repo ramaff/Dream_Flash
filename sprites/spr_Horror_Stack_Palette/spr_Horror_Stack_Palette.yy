@@ -26,7 +26,7 @@
   "origin": 0,
   "parent": {
     "name": "Horror Stack Group",
-    "path": "folders/Sprites/Boss Sprites/Flash Bosses/Horror Stack Group.yy",
+    "path": "folders/Sprites/Boss Sprites/Flash Bosses/aaa_v1/Horror Stack Group.yy",
   },
   "preMultiplyAlpha": false,
   "sequence": {

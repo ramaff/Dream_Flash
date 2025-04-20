@@ -31,7 +31,7 @@
   "origin": 9,
   "parent": {
     "name": "Mischief Group",
-    "path": "folders/Sprites/Boss Sprites/Flash Bosses/Mischief Group.yy",
+    "path": "folders/Sprites/Boss Sprites/Flash Bosses/aaa_v1/Mischief Group.yy",
   },
   "preMultiplyAlpha": false,
   "sequence": {

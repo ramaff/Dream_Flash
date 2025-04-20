@@ -26,7 +26,7 @@
   "origin": 4,
   "parent": {
     "name": "Spirit Group",
-    "path": "folders/Sprites/Boss Sprites/Flash Bosses/Spirit Group.yy",
+    "path": "folders/Sprites/Boss Sprites/Flash Bosses/aaa_v1/Spirit Group.yy",
   },
   "preMultiplyAlpha": false,
   "sequence": {

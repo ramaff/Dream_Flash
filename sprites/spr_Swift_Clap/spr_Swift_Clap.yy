@@ -26,7 +26,7 @@
   "origin": 4,
   "parent": {
     "name": "Clapper Group",
-    "path": "folders/Sprites/Boss Sprites/Flash Bosses/Clapper Group.yy",
+    "path": "folders/Sprites/Boss Sprites/Flash Bosses/aaa_v1/Clapper Group.yy",
   },
   "preMultiplyAlpha": false,
   "sequence": {

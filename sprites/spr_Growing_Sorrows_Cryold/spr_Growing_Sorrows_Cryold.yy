@@ -30,7 +30,7 @@
   "origin": 4,
   "parent": {
     "name": "old",
-    "path": "folders/Sprites/Boss Sprites/Flash Bosses/Sorrow Group/old.yy",
+    "path": "folders/Sprites/Boss Sprites/Flash Bosses/aaa_v1/Sorrow Group/old.yy",
   },
   "preMultiplyAlpha": false,
   "sequence": {

@@ -31,7 +31,7 @@
   "origin": 4,
   "parent": {
     "name": "Wisper Group",
-    "path": "folders/Sprites/Boss Sprites/Flash Bosses/Wisper Group.yy",
+    "path": "folders/Sprites/Boss Sprites/Flash Bosses/aaa_v1/Wisper Group.yy",
   },
   "preMultiplyAlpha": false,
   "sequence": {

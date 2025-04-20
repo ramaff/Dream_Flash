@@ -10,7 +10,7 @@
   ],
   "function": 0,
   "parent": {
-    "name": "Amorphous Jelly Group",
-    "path": "folders/Sprites/Boss Sprites/Flash Bosses/Amorphous Jelly Group.yy",
+    "name": "Amorphous Jelly Group (v2)",
+    "path": "folders/Sprites/Boss Sprites/Flash Bosses/Amorphous Jelly Group (v2).yy",
   },
 }

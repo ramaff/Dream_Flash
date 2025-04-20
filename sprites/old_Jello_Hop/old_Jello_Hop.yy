@@ -26,7 +26,7 @@
   "origin": 4,
   "parent": {
     "name": "old",
-    "path": "folders/Sprites/Boss Sprites/Flash Bosses/Amorphous Jelly Group/old.yy",
+    "path": "folders/Sprites/Boss Sprites/Flash Bosses/Amorphous Jelly Group (v2)/old.yy",
   },
   "preMultiplyAlpha": false,
   "sequence": {

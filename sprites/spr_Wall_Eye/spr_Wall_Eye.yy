@@ -33,7 +33,7 @@
   "origin": 4,
   "parent": {
     "name": "oild",
-    "path": "folders/Sprites/Boss Sprites/Flash Bosses/Watcher Boss Group/oild.yy",
+    "path": "folders/Sprites/Boss Sprites/Flash Bosses/aaa_v1/Watcher Boss Group/oild.yy",
   },
   "preMultiplyAlpha": false,
   "sequence": {

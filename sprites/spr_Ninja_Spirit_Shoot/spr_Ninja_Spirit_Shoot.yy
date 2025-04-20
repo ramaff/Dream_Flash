@@ -31,7 +31,7 @@
   "origin": 4,
   "parent": {
     "name": "Ninja Group",
-    "path": "folders/Sprites/Boss Sprites/Flash Bosses/Ninja Group.yy",
+    "path": "folders/Sprites/Boss Sprites/Flash Bosses/aaa_v1/Ninja Group.yy",
   },
   "preMultiplyAlpha": false,
   "sequence": {

@@ -26,7 +26,7 @@
   "origin": 3,
   "parent": {
     "name": "TriGhoul Group",
-    "path": "folders/Sprites/Boss Sprites/Flash Bosses/TriGhoul Group.yy",
+    "path": "folders/Sprites/Boss Sprites/Flash Bosses/aaa_v1/TriGhoul Group.yy",
   },
   "preMultiplyAlpha": false,
   "sequence": {

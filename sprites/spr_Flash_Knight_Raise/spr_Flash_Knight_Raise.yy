@@ -32,7 +32,7 @@
   "origin": 4,
   "parent": {
     "name": "Flash Knight",
-    "path": "folders/Sprites/Boss Sprites/Flash Bosses/Flash Knight.yy",
+    "path": "folders/Sprites/Boss Sprites/Flash Bosses/aaa_v1/Flash Knight.yy",
   },
   "preMultiplyAlpha": false,
   "sequence": {
