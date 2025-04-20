@@ -22,7 +22,7 @@ for(_i = 0; _i < _script_count; _i++) {
 
 var _remaining_time = shot_stats.Shot_Life_Span - shot_stats.Shot_Exist_Time
 
-if _remaining_time < 15 {
+if _remaining_time < 10 {
 	shot_stats.Shot_Size -= shot_stats.Shot_Size / _remaining_time
 	image_xscale -= image_xscale / _remaining_time;
 	image_yscale -= image_yscale / _remaining_time;
