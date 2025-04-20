@@ -16,11 +16,6 @@ function scr_Outside_Check_Bool(offset = 256) {
 	if inside = 0 {
 
 		return false;
-	    //x = clamp(x,(room_width / 2) - ((global.roomSizeY / 2) - abs(yval)),(room_width / 2) + ((global.roomSizeY / 2) - abs(yval)));
-	    //y = clamp(y,(room_height / 2) - ((global.roomSizeY / 2) - abs(xval)),(room_height / 2) + ((global.roomSizeX / 2) - abs(xval)));
-    
-	    //x = room_width / 2;
-	    //y = room_height / 2;
 	}
 
 	return true;
