@@ -7,6 +7,6 @@ event_inherited();
 var _bounce = scr_wall_bounce_v2()
 
 if _bounce {
-	bullet_stats.bullet_speed += 0.5;
-	speed += 0.5;
+	bullet_stats.bullet_speed += 0.25;
+	speed += 0.25;
 }

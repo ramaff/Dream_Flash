@@ -6,16 +6,29 @@ function scr_wall_bounce_v2() {
 
 	var _bounce = false
 	if(place_meeting(x + (hspeed * 2), y, obj_The_Border)) {
-	    direction = -direction + 180;
 		_bounce = true;
 	}
 
 	//Vertical bounce
 	if(place_meeting(x, y + (vspeed * 2), obj_The_Border)) {
-	    direction = -direction;
 		_bounce = true;
 	}
 	
+	if _bounce {
+		if y > 0 {
+			if x > 0 {
+				direction += 90;	
+			} else {
+				direction -= 90;
+			}
+		} else {
+			if x > 0 {
+				direction += 90;
+			} else {
+				direction -= 90;	
+			}
+		}
+	}
 	return _bounce
 
 }

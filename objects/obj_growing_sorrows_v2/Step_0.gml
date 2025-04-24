@@ -31,7 +31,7 @@ if active_attack_delay <= 0 and active_attack_cooldown <= 0 and active_attack_du
 	// Hop leap attack setup example
 	if active_attack = 2 {
 		// 
-		scr_Boss_Attack_Time_Setup_v2(1, 50, 1, 120, 30, 30);
+		scr_Boss_Attack_Time_Setup_v2(1, 50, 1, 120, 30, 50);
     }
 }
 
@@ -47,17 +47,29 @@ if active_attack_delay <= 0 and pattern_cooldown <= 0 and pattern_count > 0 {
     if active_attack = 1 {
 		scr_Boss_Stretch("Horizontal", 0.4);
 		
-		attack_stats.bullet_direction = scr_Boss_Bullet_Direction_Formula(scr_Soul_Point(), 30)
+		attack_stats.bullet_direction = scr_Boss_Bullet_Direction_Formula(mean(scr_Soul_Point(), 270), 30)
 		attack_stats.bullet_sprite = "spr_Tear_Drop_Bullet"
 		attack_stats.bullet_type = "obj_friction_bullet_v2"
 		attack_stats.bullet_count = 3;
-		attack_stats.bullet_spread = 25;
+		attack_stats.bullet_spread = 30;
+		attack_stats.bullet_speed = bossbulletspeed * 1.75;
 		attack_stats.bullet_friction = attack_stats.bullet_speed * 0.01;
-		attack_stats.bullet_min_speed = attack_stats.bullet_speed * 0.1;
+		attack_stats.bullet_min_speed = attack_stats.bullet_speed * 0.15;
 		attack_stats.bullet_life_span = 600;
 		attack_stats.bullet_direction_angle = true;
 		
+		
 		scr_boss_shoot_v2();
+		
+		if currentphase >= 2 {
+			attack_stats.bullet_count = 2;
+			
+			attack_stats.bullet_speed = bossbulletspeed * 1.35;
+			attack_stats.bullet_friction = attack_stats.bullet_speed * 0.01;
+			attack_stats.bullet_min_speed = attack_stats.bullet_speed * 0.15;
+			
+			scr_boss_shoot_v2();
+		}
 	
 		// If you gotta change the pattern aim direction
 	    // pattern_direction += 0;
@@ -72,6 +84,11 @@ if active_attack_delay <= 0 and pattern_cooldown <= 0 and pattern_count > 0 {
 		attack_stats.bullet_count = 3;
 		attack_stats.bullet_spread = 45;
 		attack_stats.bullet_direction_angle = true;
+		attack_stats.bullet_life_span = 360;
+		
+		if currentphase >= 2 {
+			attack_stats.bullet_count += 1;
+		}
 		
 		scr_boss_shoot_v2();
 	}
