@@ -1,10 +1,11 @@
 function scr_Item_Spawn() {
 	
-	fieldType = argument[0];
-	currItem = 1;
-	totalItems = 0;
+	var fieldType = argument[0];
+	var currItem = 1;
+	var totalItems = 0;
 	
 	var i = 0;
+	var item = []
 
 	for(i = 1; i <= 13; i ++) {
 	    item[i] = argument[i];

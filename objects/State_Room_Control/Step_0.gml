@@ -16,7 +16,10 @@ if instance_number(obj_Item_Parent) = 0 and global.bosscount <= 1 and bossSpawn 
 
 if global.bosscount < 1 and (/*bossSpawn = 0 ||*/ bossSpawn = 1) {
 	
-	scr_Room_End();
+	if !complete {
+		scr_Room_End();
+		complete = true;
+	}
 	
 	if variable_struct_get(global.tutorial_progress, "state_tutorial") >= 5 {
 		scr_Tutorial_Note_Spawn("channel_tutorial")

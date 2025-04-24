@@ -1,18 +1,18 @@
 
 
 function scr_Weapon_Use_List(cWP = global.currentweapon, _weap_slot = 0) {
-	weapStop = 0;
+	var weapStop = 0;
 
 	scr_C08();
 
-	weaponCost = 0;
-	weaponDelay = 0;
+	var weaponCost = 0;
+	var weaponDelay = 0;
 	
 	//cWP = global.currentweapon;
 	
 	var _umbrella_active = scr_umbrella_active(cWP)
 	
-	current_weapon_stats = scr_Setup_Default_Weapon_Stats(cWP)
+	var current_weapon_stats = scr_Setup_Default_Weapon_Stats(cWP)
 	scr_Modify_Current_Weapon_Stats();
 	
 	weaponCost = current_weapon_stats.Essence;	
@@ -61,9 +61,9 @@ function scr_Weapon_Use_List(cWP = global.currentweapon, _weap_slot = 0) {
 		
 		//current_weapon_stats = scr_Setup_Weapon_Stats(current_weapon_stats);
 		
-		barrage = false;
-		minion = false;
-		spawnProjectile = true;
+		var barrage = false;
+		var minion = false;
+		var spawnProjectile = true;
 		
 		if cWP = 603 {
 			spawnProjectile = !_umbrella_active;	
@@ -79,49 +79,49 @@ function scr_Weapon_Use_List(cWP = global.currentweapon, _weap_slot = 0) {
 			
 			var fval = 0;
 	
-			for(bi = 0; bi < 9; bi++) {
-				if Shot_Repetition[bi] <= 0 {
+			var _i;
+			for(_i = 0; _i < 9; _i++) {
+				if Shot_Repetition[_i] <= 0 {
 					
 					//if Charge_Hold = 2 {
-					Shot_Repetition_Stats[bi] = variable_clone(current_weapon_stats)
+					Shot_Repetition_Stats[_i] = variable_clone(current_weapon_stats)
 					//}
 					
 					if variable_struct_exists(current_weapon_stats, "Shot_Repetition") {
-						Shot_Repetition[bi] = current_weapon_stats.Shot_Repetition
+						Shot_Repetition[_i] = current_weapon_stats.Shot_Repetition
 						if global.OC[3] > 0 {
-							Shot_Repetition[bi] += global.OC[3];	
+							Shot_Repetition[_i] += global.OC[3];	
 						}
 					}
 					if variable_struct_exists(current_weapon_stats, "Shot_Repetition_Type") {
-						Shot_Repetition_Type[bi] = current_weapon_stats.Shot_Repetition_Type
+						Shot_Repetition_Type[_i] = current_weapon_stats.Shot_Repetition_Type
 					}
 					if variable_struct_exists(current_weapon_stats, "Shot_Barrage_Speed") {
-						Shot_Barrage_Speed[bi] = current_weapon_stats.Shot_Barrage_Speed
+						Shot_Barrage_Speed[_i] = current_weapon_stats.Shot_Barrage_Speed
 					}
 					if variable_struct_exists(current_weapon_stats, "Shot_Repetition_Forward_Interval") {
-						Shot_Repetition_Forward_Interval[bi] = current_weapon_stats.Shot_Repetition_Forward_Interval
+						Shot_Repetition_Forward_Interval[_i] = current_weapon_stats.Shot_Repetition_Forward_Interval
 					}
 					if variable_struct_exists(current_weapon_stats, "Shot_Default_Count") {
-						Shot_Default_Count[bi] = current_weapon_stats.Shot_Default_Count
+						Shot_Default_Count[_i] = current_weapon_stats.Shot_Default_Count
 					}
 					if variable_struct_exists(current_weapon_stats, "Shot_Repetition_Direction") {
-						Shot_Repetition_Direction[bi] = current_weapon_stats.Shot_Repetition_Direction
+						Shot_Repetition_Direction[_i] = current_weapon_stats.Shot_Repetition_Direction
 					}
 					
-					if Shot_Repetition_Direction[bi] > -1 {
-						Shot_Repetition_Direction[bi] = current_weapon_stats.Shot_Direction	
+					if Shot_Repetition_Direction[_i] > -1 {
+						Shot_Repetition_Direction[_i] = current_weapon_stats.Shot_Direction	
 					}
 					
-					alarm[11] = (Shot_Barrage_Speed[bi]);
+					alarm[11] = (Shot_Barrage_Speed[_i]);
 					
 					//Shot_Repetition[bi]--;
-					Shot_Repetition_Max[bi] = Shot_Repetition[bi];
-		
-					fval = bi;
+					Shot_Repetition_Max[_i] = Shot_Repetition[_i];
+	
 					break;
 				}
 			}
-			bi = fval;
+			bi = _i;
 		}
 		
 		//show_debug_message(current_weapon_stats)

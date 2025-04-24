@@ -12,3 +12,10 @@ instance_create(x,y,obj_Environment_Emitter)
 scr_Hazard_Form();
 
 scr_T04();
+
+if scr_Room_Leavable() {
+    scr_Room_End();
+}
+
+scr_Stat_Field_Chain_Check(); // this causes a memory leak, don't do it every step
+// still not sure why either

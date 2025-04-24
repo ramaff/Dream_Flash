@@ -25,12 +25,12 @@ if !(instance_exists(Tutorial_Control)) {
 
     if (Charge_Hold = 0 and !_ascending) || scr_Minion_Weapon(global.currentweapon) {
         //ds_list_clear(global.gembeam_hits);
-		soulshotmouse = 1;
-		soulshotdirection = 0;
+		//soulshotmouse = 1;
+		//soulshotdirection = 0;
         scr_Weapon_Use();
     } else if Charge_Hold > 0 {
-		soulshotmouse = 1;
-		soulshotdirection = 0;
+		//soulshotmouse = 1;
+		//soulshotdirection = 0;
         scr_Charged_Hold();
     }
 	

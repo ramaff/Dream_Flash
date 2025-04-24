@@ -59,12 +59,12 @@ function scr_Shot_Creation(_cw = current_weapon_stats) {
 	    }
 	}
 
-	dir = -(_cw.Shot_Spread * (_cw.Shot_Count - 1) / 2) + (-(_cw.Shot_Accuracy / 2) + random(_cw.Shot_Accuracy)) + _cw.Shot_Direction_Offset;
+	var dir = -(_cw.Shot_Spread * (_cw.Shot_Count - 1) / 2) + (-(_cw.Shot_Accuracy / 2) + random(_cw.Shot_Accuracy)) + _cw.Shot_Direction_Offset;
 
-	Shot_Current_Count = 0;
+	var Shot_Current_Count = 0;
 
 	
-	actual_shot_direction = 0;
+	var actual_shot_direction = 0;
 	
 	if _cw.Shot_Mouse {
 		actual_shot_direction = point_direction(x, y, mouse_x, mouse_y);
@@ -98,8 +98,8 @@ function scr_Shot_Creation(_cw = current_weapon_stats) {
 	        dir = (-(_cw.Shot_Accuracy / 2) + random(_cw.Shot_Accuracy));
 	    }
 		actual_shot_direction = 0;
-	    xx = 0;
-	    yy = 0;
+	    var xx = 0;
+	    var yy = 0;
 		
 		if _cw.Shot_Mouse {
 			actual_shot_direction = point_direction(x, y, mouse_x, mouse_y);
@@ -206,7 +206,7 @@ function scr_Shot_Creation(_cw = current_weapon_stats) {
 		        shot_stats.Shot_Power_Level = shot_stats.Shot_Power;
 		        shot_stats.Shot_Knock_Back = shot_stats.Shot_Knock_Back * other.sshotknockback / 10;
 		        shot_stats.Shot_Armour_Pierce = shot_stats.Shot_Armour_Pierce + other.sarmourpierce;
-				direction = other.actual_shot_direction;
+				direction = actual_shot_direction;
 		        //
 				
 		        if mechFac > 1 {

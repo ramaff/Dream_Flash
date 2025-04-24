@@ -29,7 +29,10 @@ if instance_number(obj_Item_Parent) = 0 and global.bosscount <= 1 and bossSpawn 
 
 if global.bosscount <= 1 and (bossSpawn = 0 || bossSpawn = 3) {
 	
-	scr_Room_End();
+	if !complete {
+		scr_Room_End();
+		complete = true;
+	}
 
 	if instance_number(obj_Item_Parent) = 0 {
 	    global.floor[global.currentroom,0] = "Normal"

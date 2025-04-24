@@ -1,6 +1,6 @@
 // Script assets have changed for v2.3.0 see
 // https://help.yoyogames.com/hc/en-us/articles/360005277377 for more information
-function scr_Hard_Coded_Weapon_Stats(_cw_stats){
+function scr_Hard_Coded_Weapon_Stats(_cw_stats, barrage = false, minion = false, spawnProjectile = true){
 	
 	var cWP = _cw_stats.Weapon_Number
 	
@@ -341,4 +341,13 @@ function scr_Hard_Coded_Weapon_Stats(_cw_stats){
 			//scr_Cramming_Use();
 			break;
 	}
+	
+	var _weapon_meta_data = {
+		"minion": minion,
+		"barrage": barrage,
+		"spawnProjectile": spawnProjectile
+	}
+	
+	return _weapon_meta_data
+	
 }

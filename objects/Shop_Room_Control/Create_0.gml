@@ -47,3 +47,5 @@ scr_Shop_Item_Spawn(field, item[1], item[2], item[3], item[4], item[5], item[6],
 
 //}
 scr_Tutorial_Note_Spawn("shop")
+
+scr_Room_End();

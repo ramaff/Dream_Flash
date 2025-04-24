@@ -30,9 +30,9 @@ function scr_Weapon_Output(_spawn_projectile = spawnProjectile, _minion = minion
 				
 					var _ex_stats = scr_Struct_Merge(_og_stats, _cw_stats.Shot_Extra[_i], false)
 
-					scr_Hard_Coded_Weapon_Stats(_ex_stats);
+					var _weapon_meta_data = scr_Hard_Coded_Weapon_Stats(_ex_stats);
 		
-					if !_minion {
+					if !_weapon_meta_data.minion {
 						scr_Shot_Creation(_ex_stats);
 						scr_Q03(false, _cw_stats);
 					} else {

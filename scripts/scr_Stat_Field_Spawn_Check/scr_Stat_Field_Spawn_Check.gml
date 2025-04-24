@@ -8,14 +8,15 @@ function scr_Stat_Field_Spawn_Check() {
 	global.orbit[2] = 0;
 	global.orbit[3] = 0;
 	global.orbit[999] = -1000;
-            
+    
+	var j;
 	for(j = 1; j <= 13; j++) {
 	    global.floor[global.currentroom,6 + j] = "00"; 
 	}
         
-	itemNumChoice = scr_Item_Field_Count(2)
+	var itemNumChoice = scr_Item_Field_Count(2)
 	
-	itemNumPick = 1;
+	var itemNumPick = 1;
 	var class = global.floor[global.currentroom,0];
 	for(j = 1; j <= itemNumChoice; j++) {
 		i = global.currentroom;
@@ -27,7 +28,9 @@ function scr_Stat_Field_Spawn_Check() {
 	    global.floor[global.currentroom,6+j] = itemPick;
 	}
 	//global.floor[global.currentroom,19] = scr_Stat_Up_Choose(class);
-	field = global.floor[global.currentroom,0];
+	var field = global.floor[global.currentroom,0];
+	var i;
+	var item = []
 	for(i = 1; i <= 13; i++) {
 	    item[i] = global.floor[global.currentroom,6+i];
 	}
