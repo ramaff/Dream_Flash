@@ -2,7 +2,6 @@
 
 function scr_OB04() {
 	
-	if global.OB[4] > 0 {
 		
 		var _c_wp = global.currentweapon
 		
@@ -10,9 +9,7 @@ function scr_OB04() {
 			exit;	
 		}
 		
-		current_weapon_stats = scr_Setup_Default_Shot_Stats();
-		
-		current_weapon_stats = scr_Setup_Default_Weapon_Stats(_c_wp)
+		var current_weapon_stats = scr_Setup_Default_Weapon_Stats(_c_wp)
 		scr_Modify_Current_Weapon_Stats();
 		
 		var _delay = current_weapon_stats.Delay / scr_Class_Stat_Firerate_Multiplier() * 2;
@@ -33,11 +30,11 @@ function scr_OB04() {
 			}
 			current_weapon_stats.Shot_Speed = current_weapon_stats.Shot_Speed * (0.75 + random(0.5))
 			
-			barrage = false;
-			minion = false;
-			spawnProjectile = true;
+			var barrage = false;
+			var minion = false;
+			var spawnProjectile = true;
 		
-			scr_Hard_Coded_Weapon_Stats(current_weapon_stats);
+			scr_Hard_Coded_Weapon_Stats(current_weapon_stats, barrage, minion, spawnProjectile);
 		
 			if current_weapon_stats.Shot_Beam = 0 {
 				current_weapon_stats.Shot_Life_Span = current_weapon_stats.Shot_Life_Span * 0.75
@@ -62,6 +59,5 @@ function scr_OB04() {
 			senergy -= _cost
 		}
 		
-	}
 
 }

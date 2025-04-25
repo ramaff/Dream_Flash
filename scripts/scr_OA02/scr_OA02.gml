@@ -5,9 +5,10 @@
 
 function scr_OA02(){
 
-	if global.OA[2] > 0 {
+	var _odds = 300 / max(1, global.OA[2])
+
 		with(obj_Bullet_Parent) {
-			if distance_to_object(other) <= (150) and scr_Chance(300 / max(1, global.P[8])) {
+			if distance_to_object(other) <= (150) and scr_Chance(_odds) {
 				var ddir = random(360);
 				var sspd = 9 + random(4);
 				var ssize = 0.4 + random(0.2);
@@ -45,5 +46,4 @@ function scr_OA02(){
 				}
 			}
 		}
-	}
 }

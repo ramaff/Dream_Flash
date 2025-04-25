@@ -1,10 +1,9 @@
 function scr_D14() {
 	// Location Soul Move Around Step
 
-	if global.D[14] > 0 {
+		var _dmg = (1 + global.D[14]) * sqrt((soulCurrentHorizontalSpeed * soulCurrentHorizontalSpeed) + (soulCurrentVerticalSpeed * soulCurrentVerticalSpeed)) / 20
 	    with(obj_Boss_Parent) {
 	        if distance_to_object(other) <= (90) {
-	            var _dmg = (1 + global.D[14]) * sqrt((other.soulCurrentHorizontalSpeed * other.soulCurrentHorizontalSpeed) + (other.soulCurrentVerticalSpeed * other.soulCurrentVerticalSpeed)) / 20;
 	            bosshealth -= _dmg;
 				
 				if scr_Chance(10) {
@@ -12,7 +11,7 @@ function scr_D14() {
 				}
 	        }
 	    }
-	    suckpow = 0.65 + (0.75 * global.D[14]);
+	    var suckpow = 0.65 + (0.75 * global.D[14]);
 	    scr_Enemy_Bullet_Suck(-suckpow);
 		
 		global.D14Trigger++;
@@ -26,16 +25,6 @@ function scr_D14() {
 			global.D14Trigger = 0;
 		}
 	
-		/*
-		part_type_sprite(ptype,spr_Soul_Small_Bit,0,0,0);
-		part_type_color_mix(ptype, make_color_rgb(50,255,50),make_color_rgb(150,255,150));
-		part_type_alpha1(ptype, 1)
-		var partcreate = irandom(4);
-				
-		if partcreate = 1 {
-			scr_Soul_Part_Summon_Burst(3 + random(6));
-		}*/
-	}
 
 
 

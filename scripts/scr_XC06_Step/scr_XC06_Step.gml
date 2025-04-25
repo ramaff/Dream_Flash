@@ -4,7 +4,6 @@
 // Location Soul Step Before
 function scr_XC06_Step(){
 
-	if global.XC[6] > 0 {
 		var setdist = 30 / global.XC[6]; 
 		
 		with (obj_Projectile_Parent) {
@@ -37,5 +36,4 @@ function scr_XC06_Step(){
 				instance_destroy();
 			}
 		}
-	}
 }

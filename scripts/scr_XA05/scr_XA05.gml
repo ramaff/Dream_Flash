@@ -2,7 +2,6 @@ function scr_XA05() {
 	// Location item step after
 
 
-	if global.XA[5] > 0 {
 		
 		var chance = irandom(270 / global.XA[5]);
 		
@@ -12,6 +11,5 @@ function scr_XA05() {
 				scr_Basic_Teleport();
 			}	
 		}	
-	}
 
 }

@@ -1,8 +1,6 @@
 function scr_P10() {
 	// Soul Item Step
 
-	if global.P[10] > 0 {
-
 		with(obj_Bullet_Parent) {
 			if point_distance(x,y,obj_Soul_Parent.x, obj_Soul_Parent.y) < 150 {
 				var mspd = bulletspeedmax * 0.9;
@@ -15,7 +13,6 @@ function scr_P10() {
 				}
 			}
 		}
-	}
 
 
 }

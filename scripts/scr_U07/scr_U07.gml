@@ -17,7 +17,6 @@ function scr_U07() {
 	// Location Soul Item Step Before Event
 	// Visual Code in Soul Draw Event
 
-	if global.U[7] > 0 {
 	    var _instinct = 0;
 	    with(obj_Soul_Hurt) {
 	        _instinct = scr_bullet_instinct_drain(_instinct)
@@ -29,7 +28,6 @@ function scr_U07() {
 	        sdelay -= global.U[07] * 0.2 * _instinct;
 			senergy += 0.1 * global.U[07] * _instinct;
 	    }
-	}
 
 
 
