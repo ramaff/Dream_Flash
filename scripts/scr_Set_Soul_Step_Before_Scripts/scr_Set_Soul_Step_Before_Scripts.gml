@@ -1,14 +1,24 @@
 function scr_Set_Soul_Step_Before_Scripts() {
 	
 	var _soul_step_before_scripts = []
-	scr_B10();
+	if global.B[10] > 0 {
+		array_push(_soul_step_before_scripts, scr_B10)
+	}
 
-	scr_C05();
-	scr_C06();
+	if global.C[5] > 0 {
+		scr_C05();
+	}
+	if global.C[6] > 0 {
+		scr_C06();
+	}
 
-	scr_D12_Gust();
+	if global.D[12] > 0
+		scr_D12_Gust();
+	}
 
-	scr_E13();
+	if global.E[13] > 0 {
+		scr_E13();
+	}
 
 	scr_OA02();
 	scr_P10();

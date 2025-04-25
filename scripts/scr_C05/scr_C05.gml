@@ -1,8 +1,6 @@
 function scr_C05() {
 	// Location Soul Hit by Bullet Event
 
-	if global.C[5] > 0 {
-
 	    var val = 1 + irandom(2 * global.C[5]) + irandom(40);
     
 	    if val >= 40
@@ -32,9 +30,6 @@ function scr_C05() {
 				//scr_Essence_Attack_Field();
 		    }
 		}
-
-	}
-
 
 
 }

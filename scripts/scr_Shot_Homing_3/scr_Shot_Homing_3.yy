@@ -6,6 +6,6 @@
   "isDnD": false,
   "parent": {
     "name": "Shot Step Scripts",
-    "path": "folders/Scripts/Weapon And Projectile Commands/Shot Step Scripts.yy",
+    "path": "folders/Scripts/Weapon And Projectile Setup/Shot Step Scripts.yy",
   },
 }

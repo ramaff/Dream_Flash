@@ -121,10 +121,7 @@ function scr_Soul_Stats_Setup() {
 	// item releated stuff
 	cant_help = 0
 	
-	soul_step_before_scripts = []
-	soul_step_after_scripts = []
-	soul_step_status_effect_scripts = []
-	soul_status_effect_scripts = []
+	scr_Set_Soul_Scripts(id)
 
 
 }

@@ -6,6 +6,6 @@
   "isDnD": false,
   "parent": {
     "name": "Beam Setup (Obsolete)",
-    "path": "folders/Scripts/Weapon And Projectile Commands/Beam Setup (Obsolete).yy",
+    "path": "folders/Scripts/Weapon And Projectile Setup/Beam Setup (Obsolete).yy",
   },
 }

@@ -6,6 +6,6 @@
   "isDnD": false,
   "parent": {
     "name": "Minion Weapon Use",
-    "path": "folders/Scripts/Weapon And Projectile Commands/Minion Weapon Use.yy",
+    "path": "folders/Scripts/Weapon And Projectile Setup/Minion Weapon Use.yy",
   },
 }

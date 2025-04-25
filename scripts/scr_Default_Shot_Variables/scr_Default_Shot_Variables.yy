@@ -6,6 +6,6 @@
   "isDnD": false,
   "parent": {
     "name": "Default Setup",
-    "path": "folders/Scripts/Weapon And Projectile Commands/Default Setup.yy",
+    "path": "folders/Scripts/Weapon And Projectile Setup/Default Setup.yy",
   },
 }
