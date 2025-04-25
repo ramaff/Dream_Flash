@@ -12,6 +12,10 @@ function scr_Weapon_Use_List(cWP = global.currentweapon, _weap_slot = 0) {
 	
 	var _umbrella_active = scr_umbrella_active(cWP)
 	
+	if !variable_struct_exists(global.weapon_stats, cWP) {
+		exit;	
+	}
+	
 	var current_weapon_stats = scr_Setup_Default_Weapon_Stats(cWP)
 	scr_Modify_Current_Weapon_Stats();
 	
