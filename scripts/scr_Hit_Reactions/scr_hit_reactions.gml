@@ -10,16 +10,18 @@ function scr_Hit_Reactions(_damage_amount, _defense_amount) {
 	scr_Heart_Reactions();
 
 	if global.A[5] > 0 {
-	    if sattackfactorbuffamount < 5 * global.A[5] {
-			repeat(8) {
-				scr_Particle_Burst(obj_State_Trail_Front, spr_Soul_Big_Bit, c_red, c_red, 1, 3 + random(3), 60 + random(60), 0, 100, 0.2 + random(0.3), 20 + random(20))	
-			}
-			
-	        sattackfactorbuffamount = 5 * global.A[5];
-	        sattackfactorbuffduration = 300;
-			smovementfactorbuffamount = 1.5
-	        smovementfactorbuffduration = 300;
-	    }
+		repeat(8) {
+			scr_Particle_Burst(obj_State_Trail_Front, spr_Soul_Big_Bit, c_red, c_red, 1, 3 + random(3), 60 + random(60), 0, 100, 0.2 + random(0.3), 20 + random(20))	
+		}
+		
+		var _status_effect = {
+			"duration": 300,
+			"magnitude": 5 * global.A[5]
+		}
+		scr_Soul_Status_Effect_Add(soul_step_status_effects, "attack_mult", _status_effect)	
+
+		smovementfactorbuffamount = 1.5
+	    smovementfactorbuffduration = 300;
 	}
 	if global.B[11] > 0 and global.B11Count > 0 {
 	    if sregenfactorbuffamount < 20 * global.B[11] {
@@ -32,13 +34,7 @@ function scr_Hit_Reactions(_damage_amount, _defense_amount) {
 		
 			global.B11Count--;
 	    }
-	} /*
-	if global.B[12] > 0 {
-	    if sdefensebuffamount < (2 + 2 * global.B[12]) {
-	        sdefensebuffamount = 2 + 2 * global.B[12];
-	        sdefensebuffduration = 180;
-	    }
-	} */
+	}
 	if global.D[5] > 0 {
 	    //if smovementfactorbuffamount < 10 * global.D[5] {
 			var color = make_color_rgb(0, 255, 84);	

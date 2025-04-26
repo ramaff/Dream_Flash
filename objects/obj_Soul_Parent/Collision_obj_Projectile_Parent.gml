@@ -11,7 +11,7 @@ if other.shot_stats.Shot_Soul_Damage > 0 and soul_underground <= 0 {
 		hitType = "Nonboss";
 		
         var damageamount = other.shot_stats.Shot_Soul_Damage;
-        var defenseamount = (sdefenseadd + sdefensebuffamount) + global.currentheartdefense + scr_Class_Stat_Defense_Increase();
+        var defenseamount = scr_Soul_Defense_Calc(id)
         scr_Soul_Damage_Calculation(damageamount, defenseamount);
         
         if global.totalhearts <= 0 {

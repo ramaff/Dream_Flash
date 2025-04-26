@@ -13,7 +13,7 @@ if soulinvincibility <= 0 and soul_underground <= 0 {
 	hitType = "Nonboss";
 
     var damageamount = other.hazardDamage;
-    var defenseamount = (sdefenseadd + sdefensebuffamount + scontactdefenseadd) + global.currentheartdefense + scr_Class_Stat_Defense_Increase();
+    var defenseamount = scr_Soul_Defense_Calc(id) + scontactdefenseadd
     
 	var negate = 2;
 	

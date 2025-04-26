@@ -75,7 +75,7 @@ function scr_Boss_Beam_Attack() {
 	                if soulinvincibility = 0 {
     
 	                damageamount = other.bullet_power - (global.soulhope / 40) + (global.souldespair / 20) + (global.soulloathing / 15);
-	                defenseamount = (sdefenseadd + sdefensebuffamount) + global.currentheartdefense + (global.soulvanity / 20) - (global.souldespair / 20);
+	                defenseamount = scr_Soul_Defense_Calc(id)
 	                defenseamount = defenseamount / 10;
                 
 	                scr_Soul_Damage_Calculation(damageamount, defenseamount);
@@ -87,7 +87,7 @@ function scr_Boss_Beam_Attack() {
 	                if soulinvincibility = 0 {
     
 	                damageamount = other.bullet_power - (global.soulhope / 40) + (global.souldespair / 20) + (global.soulloathing / 15);
-	                defenseamount = (sdefenseadd + sdefensebuffamount) + global.currentheartdefense + (global.soulvanity / 20) - (global.souldespair / 20);
+	                defenseamount = scr_Soul_Defense_Calc(id)
 	                defenseamount = defenseamount / 10;
 				
 				

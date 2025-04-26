@@ -1,11 +1,11 @@
 {
   "resourceType": "GMScript",
   "resourceVersion": "1.0",
-  "name": "scr_Soul_Stats_Setup",
+  "name": "scr_Soul_Sleep_Tick",
   "isCompatibility": false,
   "isDnD": false,
   "parent": {
-    "name": "setup",
-    "path": "folders/Scripts/Soul Commands/setup.yy",
+    "name": "Statuses",
+    "path": "folders/Scripts/Soul Commands/Statuses.yy",
   },
 }

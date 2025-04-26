@@ -35,10 +35,12 @@ var soulDirectionAttempt = 0;
 var move = false;
 
 if !(instance_exists(Tutorial_Control)) {
-	if soulstun = 0 and soulfreeze = 0 and soulsleep = 0 {
+	if !variable_struct_exists(soul_step_status_effects, "Stun") and !variable_struct_exists(soul_step_status_effects, "Freeze") and !variable_struct_exists(soul_step_status_effects, "Sleep") {
 		move = true;
 	}
 }
+
+scr_Soul_Status_Effect_Tick(soul_step_status_effects)
 
 if ((dx != 0) or (dy != 0)) and move {
 	soulDirectionAttempt = 90 - dx * 90;
@@ -178,8 +180,8 @@ if soulDeathFadeSpeed = 0 {
     }
 }
 
-if soulsleep = 1 {
-	scr_Soul_Attack_Think();	
+if variable_struct_exists(soul_step_status_effects, "Sleep") {
+	scr_Soul_Attack_Think();
 }
 
 var lerp_speed = 0.15;
