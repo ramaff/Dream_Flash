@@ -10,6 +10,18 @@ function scr_Soul_Status_Step() {
 		perX = x;
 		perY = y;
 	}
+	
+	sNoHitTime++;
+
+	if sWindGustTime > 0 {
+	    sWindGustTime--;
+	}
+	if senergy <= 0 {
+		sWeaponOvertimeTick = 1;
+	}
+	if sWeaponOvertimeTick > 0 {
+		sWeaponOvertime++;
+	}
 
 
 }

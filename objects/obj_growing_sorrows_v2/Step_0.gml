@@ -68,6 +68,8 @@ if active_attack_delay <= 0 and pattern_cooldown <= 0 and pattern_count > 0 {
 			attack_stats.bullet_friction = attack_stats.bullet_speed * 0.01;
 			attack_stats.bullet_min_speed = attack_stats.bullet_speed * 0.15;
 			
+			attack_stats.bullet_blend = c_green
+			
 			scr_boss_shoot_v2();
 		}
 	
@@ -85,6 +87,17 @@ if active_attack_delay <= 0 and pattern_cooldown <= 0 and pattern_count > 0 {
 		attack_stats.bullet_spread = 45;
 		attack_stats.bullet_direction_angle = true;
 		attack_stats.bullet_life_span = 360;
+		
+		if champ = 2 {
+			attack_stats.bullet_sprite = "spr_big_gas_cloud"
+			attack_stats.bullet_type = "obj_wandering_poison_gas"
+			attack_stats.bullet_poison_omen = 15;
+			attack_stats.bullet_power = 0;
+			
+			attack_stats.bullet_life_span = 900;
+			attack_stats.bullet_friction = attack_stats.bullet_speed * 0.01;
+			attack_stats.bullet_min_speed = attack_stats.bullet_speed * 0.15;
+		}
 		
 		if currentphase >= 2 {
 			attack_stats.bullet_count += 1;

@@ -155,7 +155,6 @@ function scr_soul_shot_bullet_hit_v2(_bullet_stats){
 		}
 
 		if shot_stats.Shot_Bullet_Displace >= 1 {
-			//backSpeed = speed + 1.6 * smovementspeed * ((10 + smovementfactorbuffamount) / 10) * ((10 + smovementfactor) / 10) * ((40 + global.souldexterity) / 40);
 
 			var point_dir = point_direction(x, y, other.x, other.y)
 			var magnitude = shot_stats.Shot_Bullet_Displace * 0.5 * (1 + speed)
@@ -324,7 +323,6 @@ function scr_Soul_Shot_Bullet_Hit(){
 		}
 
 		if shot_stats.Shot_Bullet_Displace >= 1 {
-			//backSpeed = speed + 1.6 * smovementspeed * ((10 + smovementfactorbuffamount) / 10) * ((10 + smovementfactor) / 10) * ((40 + global.souldexterity) / 40);
 
 			var point_dir = point_direction(x, y, other.x, other.y)
 			var magnitude = shot_stats.Shot_Bullet_Displace * 0.5 * (1 + speed)

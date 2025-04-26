@@ -1,7 +1,7 @@
 {
   "resourceType": "GMScript",
   "resourceVersion": "1.0",
-  "name": "scr_Soul_Power_Factor_Calc",
+  "name": "scr_Soul_Firerate_Mult_Tick",
   "isCompatibility": false,
   "isDnD": false,
   "parent": {

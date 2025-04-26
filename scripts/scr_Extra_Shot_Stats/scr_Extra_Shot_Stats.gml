@@ -13,7 +13,7 @@ function scr_Extra_Shot_Stats() {
 	
 	//Print_DF(shot_stats)
 
-	var shotaddedpow = ((10 + other.spowerfactor + other.sattackfactorbuffamount) / 10) * other.spower / 10 * scr_Class_Stat_Damage_Multiplier();
+	var shotaddedpow = scr_Soul_Power_Factor_Calc(other)
 	
 	shot_stats.Shot_Follow_Origin = other.id;
 

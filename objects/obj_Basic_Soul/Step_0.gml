@@ -15,8 +15,6 @@ if soulDeathFadeSpeed = 0 {
     scr_Invincibility_Frames();
 }
 
-scr_Soul_Item_Duration_Progress();
-
 scr_Soul_Status_Step();
 
 scr_Execute_List_Of_Scripts(soul_step_before_scripts)
@@ -27,7 +25,7 @@ var dy = keyboard_check(ord(global.gameMoveDown)) - keyboard_check(ord(global.ga
 
 smovefactor = 1;
 
-var smovemultiplier = smovefactor * smovementspeed * ((10 + smovementfactorbuffamount) / 10) * ((10 + smovementfactor) / 10) * scr_Class_Stat_Movement_Speed_Multiplier();
+var smovemultiplier = smovefactor * smovementspeed * ((10 + scr_Get_Status_Magnitude(id, "movement_mult")) / 10) * ((10 + smovementfactor) / 10) * scr_Class_Stat_Movement_Speed_Multiplier();
 currentenergyregenfactor = 1;
 //var sdelayregenfactor = 1;
 
@@ -35,7 +33,7 @@ var soulDirectionAttempt = 0;
 var move = false;
 
 if !(instance_exists(Tutorial_Control)) {
-	if !variable_struct_exists(soul_step_status_effects, "Stun") and !variable_struct_exists(soul_step_status_effects, "Freeze") and !variable_struct_exists(soul_step_status_effects, "Sleep") {
+	if !variable_struct_exists(soul_step_status_effects, "stun") and !variable_struct_exists(soul_step_status_effects, "freeze") and !variable_struct_exists(soul_step_status_effects, "sleep") {
 		move = true;
 	}
 }
@@ -52,9 +50,9 @@ if ((dx != 0) or (dy != 0)) and move {
     var l = sqrt(dx*dx + dy*dy);
     dx /= l;
     dy /= l;
-    shealthregenfactor = 0.8 * ((10 + sregenfactorbuffamount) / 10);
+    shealthregenfactor = 0.8 * ((10 + scr_Get_Status_Magnitude(id, "regen_mult")) / 10);
     currentenergyregenfactor = 0.9 * sstatefirerate * ((10 + senergyregenfactor) / 10);
-    sdelayregenfactor = 1 * sstatefirerate * ((10 + sfireratefactorbuffamount) / 10);
+    sdelayregenfactor = 1 * sstatefirerate * ((10 + scr_Get_Status_Magnitude(id, "firerate_mult")) / 10);
 	
 	soulmovetimer++;
 	if soulmovetimer mod 20 = 0 {
@@ -103,9 +101,9 @@ if ((dx != 0) or (dy != 0)) and move {
 		}
 	}
 } else {
-    shealthregenfactor = 1 * ((10 + shealthidleregenfactor) / 10) * ((10 + sregenfactorbuffamount) / 10);
+    shealthregenfactor = 1 * ((10 + shealthidleregenfactor) / 10) * ((10 + scr_Get_Status_Magnitude(id, "regen_mult")) / 10);
     currentenergyregenfactor = 1 * sstatefirerate * ((10 + senergyidleregenfactor) / 10) * ((10 + senergyregenfactor) / 10);
-    sdelayregenfactor = 1 * sstatefirerate * ((10 + sfireratefactorbuffamount) / 10);
+    sdelayregenfactor = 1 * sstatefirerate * ((10 + scr_Get_Status_Magnitude(id, "firerate_mult")) / 10);
 	soulmovetimer = 0;
 	
 	if abs(soulCurrentHorizontalSpeed) > 0 {
@@ -178,10 +176,6 @@ if soulDeathFadeSpeed = 0 {
         soulDeathFadeSpeed = 0.02;
         alarm[9] = 72;
     }
-}
-
-if variable_struct_exists(soul_step_status_effects, "Sleep") {
-	scr_Soul_Attack_Think();
 }
 
 var lerp_speed = 0.15;
