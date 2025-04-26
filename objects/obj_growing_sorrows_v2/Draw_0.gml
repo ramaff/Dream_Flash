@@ -6,7 +6,7 @@ scr_Boss_Shadow(undefined, undefined, undefined, 2);
 
 // Palette Color Swap for different boss champs:
 if boss_palette != noone {
-	pal_swap_set(boss_palette, boss_palette_index, false);
+	//pal_swap_set(boss_palette, boss_palette_index, false);
 }
 
 draw_self();

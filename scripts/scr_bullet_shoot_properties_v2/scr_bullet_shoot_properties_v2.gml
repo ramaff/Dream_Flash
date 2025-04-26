@@ -7,9 +7,6 @@ function scr_bullet_shoot_properties_v2(_bullet_stats = bullet_stats) {
 	image_xscale = _bullet_stats.bullet_size;
 	image_yscale = _bullet_stats.bullet_size;
 	_bullet_stats.bullet_speed_max = _bullet_stats.bullet_speed;
-	if _bullet_stats.bullet_power < global.stagedamage {
-		_bullet_stats.bullet_power = global.stagedamage;	
-	}
 	_bullet_stats.bullet_power_max = _bullet_stats.bullet_power;
 	
 	scr_E08_v2(_bullet_stats);

@@ -23,6 +23,7 @@ if active_attack_delay <= 0 and active_attack_cooldown <= 0 and active_attack_du
     
 	// Pick a random attack to do
 	active_attack = choose(1, 2);
+	active_attack = 2;
 	
     if active_attack = 1 {
 		// Setup how many attacks per boss move, delay, etc
@@ -93,10 +94,14 @@ if active_attack_delay <= 0 and pattern_cooldown <= 0 and pattern_count > 0 {
 			attack_stats.bullet_type = "obj_wandering_poison_gas"
 			attack_stats.bullet_poison_omen = 15;
 			attack_stats.bullet_power = 0;
+			attack_stats.bullet_alpha = 0.5;
+			attack_stats.bullet_blend = c_green;
 			
 			attack_stats.bullet_life_span = 900;
 			attack_stats.bullet_friction = attack_stats.bullet_speed * 0.01;
 			attack_stats.bullet_min_speed = attack_stats.bullet_speed * 0.15;
+
+			attack_stats.bullet_count += 1;
 		}
 		
 		if currentphase >= 2 {

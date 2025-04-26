@@ -17,6 +17,7 @@ function scr_shoot_bullets(_attack_stats, _xx, _yy) {
 			if bullet_stats.bullet_direction_angle = 1 {
 				image_angle = direction;
 			}
+			image_alpha = bullet_stats.bullet_alpha;
 			_c_bull = id
 		}
 	    
