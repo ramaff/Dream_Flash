@@ -124,6 +124,7 @@ function scr_Soul_Stats_Setup() {
 	scr_Set_Soul_Scripts(id)
 	soul_step_status_effects = {}
 	soul_status_effects = {}
+	soul_draw_status_effects = {}
 
 
 }

@@ -4,12 +4,29 @@
 // Inherit the parent event
 event_inherited();
 
-if variable_struct_exists(soul_step_status_effects, "poison_omen") {
-	if array_length(soul_step_status_effects.poison_omen) > 0 {
-		var _curr_poison = soul_step_status_effects.poison_omen[0].duration
-		draw_text(x - 40,y - 120,string(_curr_poison));
+scr_Soul_Status_Effect_Tick(soul_draw_status_effects)
+
+var _status_effects = variable_struct_get_names(soul_draw_status_effects);
+var _status_effects_count = array_length(_status_effects)
+var _bar_count = 0;
+for (var _i = 0; _i < _status_effects_count; _i++) {
+	var _status_effect_type = variable_struct_get(soul_draw_status_effects, _status_effects[_i])
+	var _status_effect_type_count = array_length(_status_effect_type)
+	if _status_effect_type_count > 0 {
+		for (var _j = 0; _j < _status_effect_type_count; _j++) {
+			var _status_effect_instance = _status_effect_type[_j]
+	
+			var _xx_offset = (208 * (_status_effect_instance.duration / _status_effect_instance.max_duration))
+	
+			var _yy = 128 + 64 * _bar_count
+			_bar_count++;
+
+			var _status_effect_bar = asset_get_index(_status_effect_instance.bar_sprite);
+			draw_sprite_part_ext(_status_effect_bar, 0, 0, 0, _xx_offset, 96, x - 32, y - _yy, 0.5, 0.5, c_white, 1)
+			draw_sprite_ext(_status_effect_bar, 1, x - 32, y - _yy, 0.5, 0.5, 0, c_white, 1)
+		}
 	}
-}	
+}
 
 /*
 draw_text(x,y+200, string(soulCurrentHorizontalSpeed))

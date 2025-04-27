@@ -92,7 +92,7 @@ if active_attack_delay <= 0 and pattern_cooldown <= 0 and pattern_count > 0 {
 		if champ = 2 {
 			attack_stats.bullet_sprite = "spr_big_gas_cloud"
 			attack_stats.bullet_type = "obj_wandering_poison_gas"
-			attack_stats.bullet_poison_omen = 15;
+			attack_stats.bullet_poison_omen = 7.5;
 			attack_stats.bullet_power = 0;
 			attack_stats.bullet_alpha = 0.5;
 			attack_stats.bullet_blend = c_green;

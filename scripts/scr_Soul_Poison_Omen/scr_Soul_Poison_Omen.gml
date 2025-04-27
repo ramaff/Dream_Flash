@@ -5,13 +5,21 @@ function scr_Soul_Poison_Omen(){
 		if array_length(soul_step_status_effects.poison_omen) > 0 {
 			var _curr_poison = soul_step_status_effects.poison_omen[0].duration
 			if _curr_poison > 360 {
-				soul_step_status_effects.poison_omen[0].duration -= 420;
+				soul_step_status_effects.poison_omen[0].duration -= 360;
 				var _status_effect = {
-					"duration": 720,
+					"duration": 1200,
+					"max_duration": 1200,
 					"tick_script": scr_Soul_Poison_Tick,
 					"tick_frequency": 120
 				}
-				variable_struct_set(soul_step_status_effects, "poison", [_status_effect])
+				
+				var _status_effect_2 = {
+					"duration": 1200,
+					"max_duration": 1200,
+					"bar_sprite": "spr_Poison_Status_Effect_Bar"
+				}
+				scr_Soul_Status_Effect_Add(soul_step_status_effects, "poison", _status_effect)
+				scr_Soul_Status_Effect_Add(soul_draw_status_effects, "poison", _status_effect_2)
 			}
 		}
 	}

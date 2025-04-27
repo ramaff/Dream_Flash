@@ -32,7 +32,13 @@ function scr_soul_hit_status_add_v2(_bullet_stats) {
 			"tick_script": scr_Soul_Poison_Omen,
 			"tick_frequency": 1
 		}
+		var _status_effect_2 = {
+			"duration": _curr_poison + _bullet_stats.bullet_poison_omen,
+			"max_duration": 360,
+			"bar_sprite": "spr_Poison_Omen_Status_Effect_Bar"
+		}
 		variable_struct_set(soul_step_status_effects, "poison_omen", [_status_effect])
+		variable_struct_set(soul_draw_status_effects, "poison_omen", [_status_effect_2])
 	}
 
 }
