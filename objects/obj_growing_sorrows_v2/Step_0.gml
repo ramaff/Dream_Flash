@@ -23,7 +23,6 @@ if active_attack_delay <= 0 and active_attack_cooldown <= 0 and active_attack_du
     
 	// Pick a random attack to do
 	active_attack = choose(1, 2);
-	active_attack = 2;
 	
     if active_attack = 1 {
 		// Setup how many attacks per boss move, delay, etc
@@ -48,7 +47,9 @@ if active_attack_delay <= 0 and pattern_cooldown <= 0 and pattern_count > 0 {
     if active_attack = 1 {
 		scr_Boss_Stretch("Horizontal", 0.4);
 		
-		attack_stats.bullet_direction = scr_Boss_Bullet_Direction_Formula(mean(scr_Soul_Point(), 270), 30)
+		var _centered_soul_point_angle = scr_Angle_Converge(scr_Soul_Point(), 270, angle_difference(scr_Soul_Point(), 270))
+		
+		attack_stats.bullet_direction = scr_Boss_Bullet_Direction_Formula(_centered_soul_point_angle, 30)
 		attack_stats.bullet_sprite = "spr_Tear_Drop_Bullet"
 		attack_stats.bullet_type = "obj_friction_bullet_v2"
 		attack_stats.bullet_count = 3;
@@ -59,7 +60,20 @@ if active_attack_delay <= 0 and pattern_cooldown <= 0 and pattern_count > 0 {
 		attack_stats.bullet_life_span = 600;
 		attack_stats.bullet_direction_angle = true;
 		
-		
+		if champ = 2 {
+			attack_stats.bullet_sprite = "spr_Acid_Rain_Tear"
+			attack_stats.bullet_count = 1;
+			attack_stats.bullet_poison_omen = 240;
+			repeat(3) {
+				scr_boss_shoot_v2();
+				attack_stats.bullet_direction = scr_Boss_Bullet_Direction_Formula(_centered_soul_point_angle, 90)
+				
+				attack_stats.bullet_speed = bossbulletspeed * (1 + random(1.25));
+				attack_stats.bullet_friction = attack_stats.bullet_speed * 0.01;
+				attack_stats.bullet_min_speed = attack_stats.bullet_speed * 0.15;
+			}
+		}
+				
 		scr_boss_shoot_v2();
 		
 		if currentphase >= 2 {
@@ -69,7 +83,6 @@ if active_attack_delay <= 0 and pattern_cooldown <= 0 and pattern_count > 0 {
 			attack_stats.bullet_friction = attack_stats.bullet_speed * 0.01;
 			attack_stats.bullet_min_speed = attack_stats.bullet_speed * 0.15;
 			
-			attack_stats.bullet_blend = c_green
 			
 			scr_boss_shoot_v2();
 		}

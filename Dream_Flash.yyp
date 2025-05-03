@@ -455,6 +455,7 @@
     {"resourceType":"GMFolder","resourceVersion":"1.0","name":"tilesets","folderPath":"folders/Sprites/tilesets.yy",},
     {"resourceType":"GMFolder","resourceVersion":"1.0","name":"Title Screen Sprites","folderPath":"folders/Sprites/Title Screen Sprites.yy",},
     {"resourceType":"GMFolder","resourceVersion":"1.0","name":"UI","folderPath":"folders/Sprites/UI.yy",},
+    {"resourceType":"GMFolder","resourceVersion":"1.0","name":"Bars","folderPath":"folders/Sprites/UI/Bars.yy",},
     {"resourceType":"GMFolder","resourceVersion":"1.0","name":"Weapon Sprites","folderPath":"folders/Sprites/Weapon Sprites.yy",},
     {"resourceType":"GMFolder","resourceVersion":"1.0","name":"Energy Art","folderPath":"folders/Sprites/Weapon Sprites/Energy Art.yy",},
     {"resourceType":"GMFolder","resourceVersion":"1.0","name":"Explosive Art","folderPath":"folders/Sprites/Weapon Sprites/Explosive Art.yy",},
@@ -471,7 +472,6 @@
     {"resourceType":"GMFolder","resourceVersion":"1.0","name":"Misc BGs","folderPath":"folders/Tile Sets/Misc BGs.yy",},
     {"resourceType":"GMFolder","resourceVersion":"1.0","name":"Nightmare BGs","folderPath":"folders/Tile Sets/Nightmare BGs.yy",},
     {"resourceType":"GMFolder","resourceVersion":"1.0","name":"Timelines","folderPath":"folders/Timelines.yy",},
-    {"resourceType":"GMFolder","resourceVersion":"1.0","name":"Bars","folderPath":"folders/Sprites/UI/Bars.yy",},
   ],
   "IncludedFiles": [
     {"resourceType":"GMIncludedFile","resourceVersion":"1.0","name":"df_boss_stats.json","CopyToMask":-1,"filePath":"datafiles",},
