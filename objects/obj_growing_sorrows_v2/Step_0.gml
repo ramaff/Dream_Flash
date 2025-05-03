@@ -145,13 +145,13 @@ scr_Boss_Size_Lerp(0.15);
 // Handles boss attack sprite animation
 if active_attack = 1 {
 	var _hold_frame = 1;
-	scr_Boss_Attack_Sprite_v2(spr_growing_sorrows_v2_weep, _hold_frame, 1, 4, 20);
+	scr_Boss_Attack_Sprite_v2(spr_growing_sorrows_v2_weep, _hold_frame, 1, 5, 20);
 	if image_index = _hold_frame {
 		scr_Boss_Wobble("Horizontal", 2, 0.4, 0)	
 	}
 } else if active_attack = 2 {
 	var _hold_frame = 2;
-	scr_Boss_Attack_Sprite_v2(spr_growing_sorrows_v2_wing_shot, _hold_frame, 1, 6, 20);
+	scr_Boss_Attack_Sprite_v2(spr_growing_sorrows_v2_wing_shot, _hold_frame, 1, 7, 20);
 	if image_index = _hold_frame {
 		scr_Boss_Wobble("Horizontal", 2, 0.4, 0)	
 	}
