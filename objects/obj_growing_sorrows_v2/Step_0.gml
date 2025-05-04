@@ -26,6 +26,12 @@ if active_attack_delay <= 0 and active_attack_cooldown <= 0 and active_attack_du
 	if champ = 1 {
 		active_attack = choose(1, 2, 3);
 	}
+	if champ = 8 {
+		active_attack = choose(1, 2, 4, 4)	
+	}
+	if scr_Minion_Count(7) {
+		active_attack = choose(1, 2)
+	}
 	
     if active_attack = 1 {
 		var _attack_counts = 10;
@@ -34,17 +40,31 @@ if active_attack_delay <= 0 and active_attack_cooldown <= 0 and active_attack_du
 			_attack_counts = 15;
 			_attack_gap = 30;
 		}
+		if champ = 8 {
+			_attack_counts = 20;
+			_attack_gap = 20;
+		}
 		// Setup how many attacks per boss move, delay, etc
 		scr_Boss_Attack_Time_Setup_v2(_attack_counts, 50, _attack_gap, 120, 30, 10);
     }
 	// Hop leap attack setup example
 	if active_attack = 2 {
-		// 
-		scr_Boss_Attack_Time_Setup_v2(1, 50, 1, 120, 30, 50);
+		var _attack_counts = 1;
+		var _attack_gap = 70;
+		if champ = 8 {
+			_attack_counts = 2;
+		}
+		// Setup how many attacks per boss move, delay, etc
+		scr_Boss_Attack_Time_Setup_v2(_attack_counts, 50, _attack_gap, 120, 30, 50);
     }
 	if active_attack = 3 {
 		// Setup how many attacks per boss move, delay, etc
 		scr_Boss_Attack_Time_Setup_v2(5, 50, 80, 120, 30, 10);
+    }
+	// Hop leap attack setup example
+	if active_attack = 4 {
+		// 
+		scr_Boss_Attack_Time_Setup_v2(1, 50, 1, 240, 30, 50);
     }
 }
 
@@ -60,7 +80,7 @@ if active_attack_delay <= 0 and pattern_cooldown <= 0 and pattern_count > 0 {
     if active_attack = 1 {
 		scr_Boss_Stretch("Horizontal", 0.4);
 		
-		var _centered_soul_point_angle = scr_Angle_Converge(scr_Soul_Point(), 270, angle_difference(scr_Soul_Point(), 270))
+		var _centered_soul_point_angle = scr_Angle_Converge(scr_Soul_Point(), 270, angle_difference(scr_Soul_Point(), 270) / 2)
 		
 		image_index = 3;	
 		
@@ -74,6 +94,10 @@ if active_attack_delay <= 0 and pattern_cooldown <= 0 and pattern_count > 0 {
 		attack_stats.bullet_min_speed = attack_stats.bullet_speed * 0.15;
 		attack_stats.bullet_life_span = 600;
 		attack_stats.bullet_direction_angle = true;
+		
+		if champ = 8 {
+			attack_stats.bullet_sprite = "spr_Blood_Tear"
+		}
 		
 		if champ = 2 {
 			attack_stats.bullet_sprite = "spr_Acid_Rain_Tear"
@@ -106,8 +130,10 @@ if active_attack_delay <= 0 and pattern_cooldown <= 0 and pattern_count > 0 {
 	    // pattern_direction += 0;
 	}
 	
-	 if active_attack = 2 {
+	if active_attack = 2 {
 		scr_Boss_Stretch("Vertical", 1);
+		
+		image_index = 3;
 		
 		attack_stats.bullet_direction = scr_Boss_Bullet_Direction_Formula(scr_Soul_Point(), 30)
 		attack_stats.bullet_sprite = "spr_Echolocation_Shot"
@@ -177,6 +203,26 @@ if active_attack_delay <= 0 and pattern_cooldown <= 0 and pattern_count > 0 {
 	    // pattern_direction += 0;
 	}
 	
+	if active_attack = 4 {
+		scr_Boss_Stretch("Vertical", 1);
+		
+		minion_count = 1;
+		minion_type = obj_vampire_bat_mullet;
+		minion_health = bossmaxhealth / 20;
+		minion_speed = bossbulletspeed * (3)
+		
+		var _minion_shots = 7;
+		if currentphase = 2 {
+			_minion_shots = 9;	
+		}
+		var _dir = 270 - (15 * _minion_shots);
+		repeat(_minion_shots) {
+			minion_dir = _dir
+			scr_Minion_Spawn()
+			_dir += 30;
+		}
+	}
+	
 	// Maybe I should put this into a script
     pattern_count -= 1;
     pattern_cooldown += pattern_cooldown_max;
@@ -195,6 +241,12 @@ if active_attack_duration <= 0 {
 // Go back to normal default size
 scr_Boss_Size_Lerp(0.15);
 
+if champ = 8 and active_attack = 1 {
+	image_speed = 2;	
+} else {
+	image_speed = 1;	
+}
+
 // Handles boss attack sprite animation
 if active_attack = 1 {
 	var _hold_frame = 2;
@@ -202,7 +254,7 @@ if active_attack = 1 {
 	if image_index = _hold_frame {
 		scr_Boss_Wobble("Horizontal", 2, 0.4, 0)	
 	}
-} else if active_attack = 2 {
+} else if active_attack = 2 || active_attack = 4  {
 	var _hold_frame = 2;
 	scr_Boss_Attack_Sprite_v2(spr_growing_sorrows_v2_wing_shot, _hold_frame, 1, 7, 20);
 	if image_index = _hold_frame {

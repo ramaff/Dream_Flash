@@ -1,22 +1,19 @@
 {
   "resourceType": "GMObject",
   "resourceVersion": "1.0",
-  "name": "obj_Poison_Cube",
+  "name": "obj_vampire_bat_bullet",
   "eventList": [
-    {"resourceType":"GMEvent","resourceVersion":"1.0","name":"","collisionObjectId":null,"eventNum":0,"eventType":0,"isDnD":false,},
-    {"resourceType":"GMEvent","resourceVersion":"1.0","name":"","collisionObjectId":null,"eventNum":0,"eventType":1,"isDnD":false,},
-    {"resourceType":"GMEvent","resourceVersion":"1.0","name":"","collisionObjectId":null,"eventNum":0,"eventType":2,"isDnD":false,},
     {"resourceType":"GMEvent","resourceVersion":"1.0","name":"","collisionObjectId":null,"eventNum":0,"eventType":3,"isDnD":false,},
   ],
   "managed": true,
   "overriddenProperties": [],
   "parent": {
-    "name": "v1",
-    "path": "folders/Objects/Bosses/Minions/Flash Minions/v1.yy",
+    "name": "mullets",
+    "path": "folders/Objects/Boss Bullets/mullets.yy",
   },
   "parentObjectId": {
-    "name": "obj_Minion_Parent",
-    "path": "objects/obj_Minion_Parent/obj_Minion_Parent.yy",
+    "name": "obj_bullet_parent_v2",
+    "path": "objects/obj_bullet_parent_v2/obj_bullet_parent_v2.yy",
   },
   "persistent": false,
   "physicsAngularDamping": 0.1,
@@ -33,7 +30,10 @@
   "physicsStartAwake": true,
   "properties": [],
   "solid": false,
-  "spriteId": null,
+  "spriteId": {
+    "name": "spr_Glowy_Enemy_Shot",
+    "path": "sprites/spr_Glowy_Enemy_Shot/spr_Glowy_Enemy_Shot.yy",
+  },
   "spriteMaskId": null,
   "visible": false,
 }

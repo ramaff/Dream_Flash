@@ -28,6 +28,8 @@ if soulinvincibility <= 0 and soul_underground <= 0 {
 	if other.bullet_stats.bullet_power != 0 {
 		scr_Soul_Damage_Calculation(damageamount, defenseamount);
 	}
+	
+	instance_destroy(other);
     
     if global.totalhearts <= 0 {
 	    if shealth <= 0 {

@@ -1,19 +1,22 @@
 {
   "resourceType": "GMObject",
   "resourceVersion": "1.0",
-  "name": "obj_Pin",
+  "name": "obj_vampire_bat_mullet",
   "eventList": [
     {"resourceType":"GMEvent","resourceVersion":"1.0","name":"","collisionObjectId":null,"eventNum":0,"eventType":0,"isDnD":false,},
-    {"resourceType":"GMEvent","resourceVersion":"1.0","name":"","collisionObjectId":null,"eventNum":0,"eventType":1,"isDnD":false,},
     {"resourceType":"GMEvent","resourceVersion":"1.0","name":"","collisionObjectId":null,"eventNum":0,"eventType":3,"isDnD":false,},
-    {"resourceType":"GMEvent","resourceVersion":"1.0","name":"","collisionObjectId":null,"eventNum":8,"eventType":2,"isDnD":false,},
+    {"resourceType":"GMEvent","resourceVersion":"1.0","name":"","collisionObjectId":null,"eventNum":0,"eventType":8,"isDnD":false,},
+    {"resourceType":"GMEvent","resourceVersion":"1.0","name":"","collisionObjectId":{"name":"obj_Main_Boss_Parent","path":"objects/obj_Main_Boss_Parent/obj_Main_Boss_Parent.yy",},"eventNum":0,"eventType":4,"isDnD":false,},
+    {"resourceType":"GMEvent","resourceVersion":"1.0","name":"","collisionObjectId":{"name":"obj_The_Border","path":"objects/obj_The_Border/obj_The_Border.yy",},"eventNum":0,"eventType":4,"isDnD":false,},
+    {"resourceType":"GMEvent","resourceVersion":"1.0","name":"","collisionObjectId":{"name":"obj_Soul_Parent","path":"objects/obj_Soul_Parent/obj_Soul_Parent.yy",},"eventNum":0,"eventType":4,"isDnD":false,},
     {"resourceType":"GMEvent","resourceVersion":"1.0","name":"","collisionObjectId":{"name":"obj_Boss_Parent","path":"objects/obj_Boss_Parent/obj_Boss_Parent.yy",},"eventNum":0,"eventType":4,"isDnD":false,},
+    {"resourceType":"GMEvent","resourceVersion":"1.0","name":"","collisionObjectId":null,"eventNum":0,"eventType":1,"isDnD":false,},
   ],
   "managed": true,
   "overriddenProperties": [],
   "parent": {
-    "name": "v1",
-    "path": "folders/Objects/Bosses/Minions/Flash Minions/v1.yy",
+    "name": "Flash Minions",
+    "path": "folders/Objects/Bosses/Minions/Flash Minions.yy",
   },
   "parentObjectId": {
     "name": "obj_Minion_Parent",
@@ -35,8 +38,8 @@
   "properties": [],
   "solid": false,
   "spriteId": {
-    "name": "spr_Gutsy_Pin",
-    "path": "sprites/spr_Gutsy_Pin/spr_Gutsy_Pin.yy",
+    "name": "spr_Vampire_Bat_Bullet",
+    "path": "sprites/spr_Vampire_Bat_Bullet/spr_Vampire_Bat_Bullet.yy",
   },
   "spriteMaskId": null,
   "visible": false,

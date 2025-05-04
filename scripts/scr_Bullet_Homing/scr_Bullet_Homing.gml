@@ -12,7 +12,7 @@ function scr_Bullet_Homing(_speed = bulletspeed, _rspeed = rspeed, _smart_home =
 		if _ang_dif > 15 {
 			speed -= _speed * (_ang_dif - 15) / 30
 		}
-		speed = min(speed + 0.5, bulletspeed);
+		speed = min(speed + 0.5, _speed);
 	}
 	
 	direction = _ang;
