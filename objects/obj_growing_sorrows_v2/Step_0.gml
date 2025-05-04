@@ -23,15 +23,28 @@ if active_attack_delay <= 0 and active_attack_cooldown <= 0 and active_attack_du
     
 	// Pick a random attack to do
 	active_attack = choose(1, 2);
+	if champ = 1 {
+		active_attack = choose(1, 2, 3);
+	}
 	
     if active_attack = 1 {
+		var _attack_counts = 10;
+		var _attack_gap = 40;
+		if champ = 1 {
+			_attack_counts = 15;
+			_attack_gap = 30;
+		}
 		// Setup how many attacks per boss move, delay, etc
-		scr_Boss_Attack_Time_Setup_v2(10, 50, 40, 120, 30, 10);
+		scr_Boss_Attack_Time_Setup_v2(_attack_counts, 50, _attack_gap, 120, 30, 10);
     }
 	// Hop leap attack setup example
 	if active_attack = 2 {
 		// 
 		scr_Boss_Attack_Time_Setup_v2(1, 50, 1, 120, 30, 50);
+    }
+	if active_attack = 3 {
+		// Setup how many attacks per boss move, delay, etc
+		scr_Boss_Attack_Time_Setup_v2(5, 50, 80, 120, 30, 10);
     }
 }
 
@@ -48,6 +61,8 @@ if active_attack_delay <= 0 and pattern_cooldown <= 0 and pattern_count > 0 {
 		scr_Boss_Stretch("Horizontal", 0.4);
 		
 		var _centered_soul_point_angle = scr_Angle_Converge(scr_Soul_Point(), 270, angle_difference(scr_Soul_Point(), 270))
+		
+		image_index = 3;	
 		
 		attack_stats.bullet_direction = scr_Boss_Bullet_Direction_Formula(_centered_soul_point_angle, 30)
 		attack_stats.bullet_sprite = "spr_Tear_Drop_Bullet"
@@ -114,7 +129,7 @@ if active_attack_delay <= 0 and pattern_cooldown <= 0 and pattern_count > 0 {
 			attack_stats.bullet_friction = attack_stats.bullet_speed * 0.01;
 			attack_stats.bullet_min_speed = attack_stats.bullet_speed * 0.15;
 
-			attack_stats.bullet_count += 1;
+			attack_stats.bullet_count += 2;
 		}
 		
 		if currentphase >= 2 {
@@ -122,6 +137,44 @@ if active_attack_delay <= 0 and pattern_cooldown <= 0 and pattern_count > 0 {
 		}
 		
 		scr_boss_shoot_v2();
+	}
+	
+	if active_attack = 3 {
+		scr_Boss_Stretch("Horizontal", 0.8);
+		
+		image_index = 3;	
+		
+		attack_stats.bullet_direction = scr_Boss_Bullet_Direction_Formula(270, 30)
+		attack_stats.bullet_sprite = "spr_Tear_Drop_Bullet"
+		attack_stats.bullet_type = "obj_friction_bullet_v2"
+		attack_stats.bullet_count = 7;
+		attack_stats.bullet_spread = 30;
+		attack_stats.bullet_speed = bossbulletspeed * 1.75;
+		attack_stats.bullet_friction = attack_stats.bullet_speed * 0.01;
+		attack_stats.bullet_min_speed = attack_stats.bullet_speed * 0.15;
+		attack_stats.bullet_life_span = 600;
+		attack_stats.bullet_direction_angle = true;
+		
+		if currentphase >= 2 {
+			attack_stats.bullet_count += 2;	
+		}
+				
+		scr_boss_shoot_v2();
+		
+		attack_stats.bullet_count = 6;
+		if currentphase >= 2 {
+			attack_stats.bullet_count += 2;	
+		}
+			
+		attack_stats.bullet_speed = bossbulletspeed * 1.35;
+		attack_stats.bullet_friction = attack_stats.bullet_speed * 0.01;
+		attack_stats.bullet_min_speed = attack_stats.bullet_speed * 0.15;
+			
+			
+		scr_boss_shoot_v2();
+	
+		// If you gotta change the pattern aim direction
+	    // pattern_direction += 0;
 	}
 	
 	// Maybe I should put this into a script
@@ -144,14 +197,23 @@ scr_Boss_Size_Lerp(0.15);
 
 // Handles boss attack sprite animation
 if active_attack = 1 {
-	var _hold_frame = 1;
-	scr_Boss_Attack_Sprite_v2(spr_growing_sorrows_v2_weep, _hold_frame, 1, 5, 20);
+	var _hold_frame = 2;
+	scr_Boss_Attack_Sprite_v2(spr_growing_sorrows_v2_weep, _hold_frame, 1, 4, 20);
 	if image_index = _hold_frame {
 		scr_Boss_Wobble("Horizontal", 2, 0.4, 0)	
 	}
 } else if active_attack = 2 {
 	var _hold_frame = 2;
 	scr_Boss_Attack_Sprite_v2(spr_growing_sorrows_v2_wing_shot, _hold_frame, 1, 7, 20);
+	if image_index = _hold_frame {
+		scr_Boss_Wobble("Horizontal", 2, 0.4, 0)	
+	}
+} else if active_attack = 3 {
+	var _hold_frame = 2;
+	if image_index > 2 and image_index < 3 {
+		image_index = 2;
+	}
+	scr_Boss_Attack_Sprite_v2(spr_growing_sorrows_v2_weep, _hold_frame, 1, 4, 20);
 	if image_index = _hold_frame {
 		scr_Boss_Wobble("Horizontal", 2, 0.4, 0)	
 	}
