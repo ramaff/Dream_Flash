@@ -13,7 +13,7 @@ var _tar_x = obj_Soul_Parent.perX + scr_Wave(-300, 300, 4, 0);
 var _tar_y = obj_Soul_Parent.perY - 170 - boss_height
 
 direction = point_direction(x, y, _tar_x, _tar_y)
-speed = min(bossmovespeed * 2.75, point_distance(x, y, _tar_x, _tar_y))
+speed = min(bossmovespeed * 2, point_distance(x, y, _tar_x, _tar_y))
 
 //////////////////////////////////////////////////////////////////////////////////////////
 /////////////// Active Attack Prep
@@ -209,7 +209,7 @@ if active_attack_delay <= 0 and pattern_cooldown <= 0 and pattern_count > 0 {
 		minion_count = 1;
 		minion_type = obj_vampire_bat_mullet;
 		minion_health = bossmaxhealth / 20;
-		minion_speed = bossbulletspeed * (3)
+		minion_speed = bossbulletspeed * (4)
 		
 		var _minion_shots = 7;
 		if currentphase = 2 {

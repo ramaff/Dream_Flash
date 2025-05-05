@@ -38,7 +38,7 @@ if full {
 			if speed < bossmovespeed * 0.5 {
 				lunge = true;
 				direction = scr_Soul_Point()
-				speed = bossmovespeed * 6;
+				speed = bossmovespeed * 4.5;
 			}
 		}
 		

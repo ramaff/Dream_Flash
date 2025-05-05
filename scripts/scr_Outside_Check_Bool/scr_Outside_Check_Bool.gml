@@ -1,24 +1,16 @@
 function scr_Outside_Check_Bool(offset = 256) {
-	var xv = room_width / 2;
-	var yv = room_height / 2;
+	// Should return true if outside of the room
+	// Previously it was doing it the other way around, which may have caused some bugs
 
-	var xval = x - xv;
-	var yval = y - yv;
-	var inside = 0;
+	var _x_pos = x - (room_width / 2);
+	var _y_pos = y - (room_height / 2);
 	
-	var xsize = (global.roomSizeX / 2) + offset
-	var ysize = (global.roomSizeY / 2) + offset
+	var _room_half_size = (global.roomSizeX / 2) + offset
 
-	if abs(xval) < ((xsize) - abs(yval)) and abs(yval) < (ysize - abs(xval)) {
-	    inside = 1;
-	}
-
-	if inside = 0 {
-
-		return false;
+	if (abs(_x_pos) + abs(_y_pos)) < _room_half_size {
+	    return false;
 	}
 
 	return true;
-
 
 }
