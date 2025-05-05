@@ -3,9 +3,9 @@
 
 if !full {
 	full_source_id = other.id;
-	other.shealth -= 2;
+	other.shealth -= 1;
 
-	scr_setup_dmg_indicator(other.x, other.y, 2, c_red, 0)
+	scr_setup_dmg_indicator(other.x, other.y, 1, c_red, 0)
 
 	full = true;
 }

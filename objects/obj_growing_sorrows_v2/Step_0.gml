@@ -50,12 +50,14 @@ if active_attack_delay <= 0 and active_attack_cooldown <= 0 and active_attack_du
 	// Hop leap attack setup example
 	if active_attack = 2 {
 		var _attack_counts = 1;
-		var _attack_gap = 70;
+		var _attack_gap = 120;
+		var _added_dur = 50;
 		if champ = 8 {
 			_attack_counts = 2;
+			_added_dur = -50
 		}
 		// Setup how many attacks per boss move, delay, etc
-		scr_Boss_Attack_Time_Setup_v2(_attack_counts, 50, _attack_gap, 120, 30, 50);
+		scr_Boss_Attack_Time_Setup_v2(_attack_counts, 50, _attack_gap, 120, 30, _added_dur);
     }
 	if active_attack = 3 {
 		// Setup how many attacks per boss move, delay, etc
@@ -64,7 +66,7 @@ if active_attack_delay <= 0 and active_attack_cooldown <= 0 and active_attack_du
 	// Hop leap attack setup example
 	if active_attack = 4 {
 		// 
-		scr_Boss_Attack_Time_Setup_v2(1, 50, 1, 240, 30, 50);
+		scr_Boss_Attack_Time_Setup_v2(1, 50, 1, 180, 30, 50);
     }
 }
 
@@ -205,15 +207,16 @@ if active_attack_delay <= 0 and pattern_cooldown <= 0 and pattern_count > 0 {
 	
 	if active_attack = 4 {
 		scr_Boss_Stretch("Vertical", 1);
+		image_index = 3;
 		
 		minion_count = 1;
 		minion_type = obj_vampire_bat_mullet;
 		minion_health = bossmaxhealth / 20;
-		minion_speed = bossbulletspeed * (4)
+		minion_speed = bossbulletspeed * (3)
 		
-		var _minion_shots = 7;
+		var _minion_shots = 9;
 		if currentphase = 2 {
-			_minion_shots = 9;	
+			_minion_shots = 11;	
 		}
 		var _dir = 270 - (15 * _minion_shots);
 		repeat(_minion_shots) {
@@ -256,6 +259,9 @@ if active_attack = 1 {
 	}
 } else if active_attack = 2 || active_attack = 4  {
 	var _hold_frame = 2;
+	if image_index > 2 and image_index < 3 {
+		image_index = 2;
+	}
 	scr_Boss_Attack_Sprite_v2(spr_growing_sorrows_v2_wing_shot, _hold_frame, 1, 7, 20);
 	if image_index = _hold_frame {
 		scr_Boss_Wobble("Horizontal", 2, 0.4, 0)	

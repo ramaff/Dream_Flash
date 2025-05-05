@@ -2378,7 +2378,6 @@
     {"id":{"name":"spr_Shock_Chain_Gun_Shot","path":"sprites/spr_Shock_Chain_Gun_Shot/spr_Shock_Chain_Gun_Shot.yy",},},
     {"id":{"name":"spr_Lightning_Bolt_Shot","path":"sprites/spr_Lightning_Bolt_Shot/spr_Lightning_Bolt_Shot.yy",},},
     {"id":{"name":"spr_Tranquil_Art","path":"sprites/spr_Tranquil_Art/spr_Tranquil_Art.yy",},},
-    {"id":{"name":"obj_vampire_bat_bullet","path":"objects/obj_vampire_bat_bullet/obj_vampire_bat_bullet.yy",},},
     {"id":{"name":"spr_Tesla_Coil_Shot","path":"sprites/spr_Tesla_Coil_Shot/spr_Tesla_Coil_Shot.yy",},},
     {"id":{"name":"spr_Bed_Bug_Nightmare","path":"sprites/spr_Bed_Bug_Nightmare/spr_Bed_Bug_Nightmare.yy",},},
     {"id":{"name":"spr_Charge_Shot","path":"sprites/spr_Charge_Shot/spr_Charge_Shot.yy",},},
