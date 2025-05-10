@@ -1,7 +1,7 @@
 /// @description Insert description here
 // You can write your code in this editor
 
-if full {
+if full and bosshealth <= 0 {
 	if instance_exists(full_source_id) {
 		full_source_id.shealth += 1;
 

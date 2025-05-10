@@ -17,6 +17,7 @@ if active_attack_delay <= 0 and active_attack_cooldown <= 0 and active_attack_du
     
 	// Pick a random attack to do
 	active_attack = choose(1, 2, 3);
+	active_attack = 1;
 	
     if active_attack = 1 {
 		// Setup how many attacks per boss move, delay, etc
@@ -59,6 +60,9 @@ if active_attack_delay <= 0 and pattern_cooldown <= 0 and pattern_count > 0 {
 		
 		attack_stats.bullet_direction = scr_Boss_Bullet_Direction_Formula(scr_Soul_Point(), 30)
 		attack_stats.bullet_sprite = "spr_red_bullet_v2"
+		attack_stats.bullet_count = 3;
+		attack_stats.bullet_spread = 30;
+		attack_stats.bullet_direction_angle = 1
 		
 		scr_boss_shoot_v2();
 	

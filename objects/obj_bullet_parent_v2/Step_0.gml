@@ -12,7 +12,9 @@ if bullet_stats.bullet_fade = 1 {
 
 if bullet_stats.bullet_direction_angle = 1 {
 	image_angle = direction;
-}
+} //else {
+//	image_angle += 6;
+//}
 
 
 

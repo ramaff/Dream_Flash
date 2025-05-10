@@ -2,7 +2,7 @@
   "resourceType": "GMSprite",
   "resourceVersion": "1.0",
   "name": "spr_growing_sorrows_v2_palette",
-  "bbox_bottom": 13,
+  "bbox_bottom": 14,
   "bbox_left": 0,
   "bbox_right": 3,
   "bbox_top": 0,

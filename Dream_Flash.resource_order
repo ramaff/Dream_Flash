@@ -150,6 +150,7 @@
     {"name":"Tutorial Stuff","order":31,"path":"folders/Sprites/Recollection/Tutorial Stuff.yy",},
     {"name":"beam_punches","order":38,"path":"folders/Sprites/Soul Shot Sprites/Imaginary Shots/beam_punches.yy",},
     {"name":"Bars","order":3,"path":"folders/Sprites/UI/Bars.yy",},
+    {"name":"Soaring v2 Group","order":4,"path":"folders/Sprites/Boss Sprites/Dream Bosses/Soaring v2 Group.yy",},
   ],
   "ResourceOrderSettings": [
     {"name":"reco_Demonic_Villainy","order":66,"path":"sprites/reco_Demonic_Villainy/reco_Demonic_Villainy.yy",},
@@ -378,6 +379,7 @@
     {"name":"spr_thought_cloud_v2_ko","order":2,"path":"sprites/spr_thought_cloud_v2_ko/spr_thought_cloud_v2_ko.yy",},
     {"name":"scr_Tutorial_Note_Spawn","order":21,"path":"scripts/scr_Tutorial_Note_Spawn/scr_Tutorial_Note_Spawn.yy",},
     {"name":"spr_Boss_Beam_Segment","order":6,"path":"sprites/spr_Boss_Beam_Segment/spr_Boss_Beam_Segment.yy",},
+    {"name":"reco_growing_sorrows_v2","order":88,"path":"sprites/reco_growing_sorrows_v2/reco_growing_sorrows_v2.yy",},
     {"name":"spr_Boss_Heart_300","order":1,"path":"sprites/spr_Boss_Heart_300/spr_Boss_Heart_300.yy",},
     {"name":"spr_Glowy_Green_Explosive_Shot","order":1,"path":"sprites/spr_Glowy_Green_Explosive_Shot/spr_Glowy_Green_Explosive_Shot.yy",},
     {"name":"spr_Vortex_Twister","order":11,"path":"sprites/spr_Vortex_Twister/spr_Vortex_Twister.yy",},
@@ -618,6 +620,7 @@
     {"name":"scr_Copy_Backup_to_Save","order":3,"path":"scripts/scr_Copy_Backup_to_Save/scr_Copy_Backup_to_Save.yy",},
     {"name":"spr_the_host_skitter","order":7,"path":"sprites/spr_the_host_skitter/spr_the_host_skitter.yy",},
     {"name":"obj_Corruption_Spire","order":4,"path":"objects/obj_Corruption_Spire/obj_Corruption_Spire.yy",},
+    {"name":"obj_boss_template_in_practice","order":3,"path":"objects/obj_boss_template_in_practice/obj_boss_template_in_practice.yy",},
     {"name":"obj_deep_watcher_v2","order":3,"path":"objects/obj_deep_watcher_v2/obj_deep_watcher_v2.yy",},
     {"name":"spr_Thicker_Lightning_Streak","order":1,"path":"sprites/spr_Thicker_Lightning_Streak/spr_Thicker_Lightning_Streak.yy",},
     {"name":"obj_Marble_Bomb_Bullet","order":13,"path":"objects/obj_Marble_Bomb_Bullet/obj_Marble_Bomb_Bullet.yy",},
