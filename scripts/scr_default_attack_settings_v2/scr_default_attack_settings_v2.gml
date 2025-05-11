@@ -68,6 +68,8 @@ function scr_base_bullet_stats(_boss_bullet_speed, _bullet_power, _bullet_accura
 		bullet_charged: false,
 		boss_xoffset: 0,
 		boss_yoffset: 0,
+		follow_xoffset: 0,
+		follow_yoffset: 0,
 		bullet_blend: c_white,
 		bullet_alpha: 1,
 		bullet_fade: 1,

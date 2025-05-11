@@ -24,44 +24,43 @@ if active_attack_delay <= 0 and active_attack_cooldown <= 0 and active_attack_du
     
 	// Pick a random attack to do
 	active_attack = choose(1, 2);
-	active_attack = 1;
+	if currentphase = 2 {
+		active_attack = choose(3, 4);
+	}
 	
     if active_attack = 1 {
 		var _attack_counts = 24;
 		var _attack_gap = 10;
-		if champ = 1 {
-			_attack_counts = 15;
-			_attack_gap = 30;
-		}
-		if champ = 8 {
-			_attack_counts = 20;
-			_attack_gap = 20;
-		}
 		// Setup how many attacks per boss move, delay, etc
-		scr_Boss_Attack_Time_Setup_v2(_attack_counts, 50, _attack_gap, 120, 30, 10);
+		scr_Boss_Attack_Time_Setup_v2(_attack_counts, 50, _attack_gap, 180, 45, 10);
 		
 		tear_trail_tip_1 = noone;
     }
-	// Hop leap attack setup example
 	if active_attack = 2 {
-		var _attack_counts = 4;
-		var _attack_gap = 30;
+		var _attack_counts = 6;
+		var _attack_gap = 60;
 		var _added_dur = 10;
-		if champ = 8 {
-			_attack_counts = 2;
-			_added_dur = -50
-		}
 		// Setup how many attacks per boss move, delay, etc
 		scr_Boss_Attack_Time_Setup_v2(_attack_counts, 50, _attack_gap, 120, 30, _added_dur);
     }
 	if active_attack = 3 {
 		// Setup how many attacks per boss move, delay, etc
-		scr_Boss_Attack_Time_Setup_v2(5, 50, 80, 120, 30, 10);
+		var _attack_counts = 24;
+		var _attack_gap = 10;
+		// Setup how many attacks per boss move, delay, etc
+		scr_Boss_Attack_Time_Setup_v2(_attack_counts, 50, _attack_gap, 180, 45, 10);
+		
+		tear_trail_tip_1 = noone;
     }
 	// Hop leap attack setup example
 	if active_attack = 4 {
-		// 
-		scr_Boss_Attack_Time_Setup_v2(1, 50, 1, 180, 30, 50);
+		var _attack_counts = 24;
+		var _attack_gap = 10;
+		// Setup how many attacks per boss move, delay, etc
+		scr_Boss_Attack_Time_Setup_v2(_attack_counts, 50, _attack_gap, 180, 45, 10);
+		
+		tear_trail_tip_1 = noone;
+		tear_trail_tip_2 = noone;
     }
 }
 
@@ -82,19 +81,39 @@ if active_attack_delay <= 0 and pattern_cooldown <= 0 and pattern_count > 0 {
 		attack_stats.bullet_type = "obj_follow_the_leader_bullet_v2"
 		attack_stats.bullet_count = 1;
 		attack_stats.bullet_size = 0.35 + random(0.3);
-		attack_stats.bullet_speed = bossbulletspeed * 1.55;
+		attack_stats.bullet_speed = bossbulletspeed * 1.35;
 		attack_stats.bullet_life_span = 660;
 		attack_stats.bullet_direction_angle = true;
-		attack_stats.homing_speed = 2;
+		attack_stats.homing_speed = 1.5;
 		
 		if !instance_exists(tear_trail_tip_1) {
 			attack_stats.bullet_type = "obj_increasing_homing_bullet_v2"
 			tear_trail_tip_1 = scr_boss_shoot_v2();
 		} else {
-			attack_stats.boss_xoffset = -30 + random(60);
-			attack_stats.boss_yoffset = -30 + random(60);
+			attack_stats.follow_xoffset = -30 + random(60);
+			attack_stats.follow_yoffset = -30 + random(60);
 			attack_stats.bullet_target = tear_trail_tip_1
 			tear_trail_tip_1 = scr_boss_shoot_v2();
+		}
+		
+		if pattern_count mod 6 = 1 {
+			attack_stats.bullet_sprite = "spr_Glowy_Orange_Shot"
+			attack_stats.bullet_type = "obj_basic_bullet_v2"
+			attack_stats.bullet_count = 4;
+			attack_stats.bullet_spread = 30;
+			attack_stats.bullet_size = 0.5;
+			attack_stats.bullet_speed = bossbulletspeed * 1.35;
+			attack_stats.bullet_life_span = 300;
+			attack_stats.boss_xoffset = -110;
+			attack_stats.boss_yoffset = -50;
+			
+			if pattern_count mod 12 = 1 {
+				attack_stats.boss_xoffset = 110;	
+			}
+			repeat(2) {
+				scr_boss_shoot_v2();
+				attack_stats.bullet_speed += bossbulletspeed * 0.3;
+			}
 		}
 		
 
@@ -104,9 +123,7 @@ if active_attack_delay <= 0 and pattern_cooldown <= 0 and pattern_count > 0 {
 	}
 	
 	if active_attack = 2 {
-		scr_Boss_Stretch("Vertical", 1);
-		
-		image_index = 3;
+		scr_Boss_Stretch("Vertical", 0.5);
 		
 		attack_stats.bullet_direction = scr_Boss_Bullet_Direction_Formula(scr_Soul_Point(), 30)
 		attack_stats.bullet_sprite = "spr_Soaring_Echo"
@@ -114,68 +131,130 @@ if active_attack_delay <= 0 and pattern_cooldown <= 0 and pattern_count > 0 {
 		attack_stats.bullet_count = 3;
 		attack_stats.bullet_spread = 45;
 		attack_stats.bullet_direction_angle = true;
-		attack_stats.bullet_life_span = 360;
+		attack_stats.bullet_life_span = 240;
+		attack_stats.boss_xoffset = -110;
+		attack_stats.boss_yoffset = -50;
+			
+		if pattern_count mod 2 = 1 {
+			attack_stats.boss_xoffset = 110;	
+		}
 		
 		scr_boss_shoot_v2();
+		
+		if pattern_count mod 3 = 1 {
+			attack_stats.bullet_sprite = "spr_Glowy_Orange_Shot"
+			attack_stats.bullet_type = "obj_basic_bullet_v2"
+			attack_stats.bullet_count = 12;
+			attack_stats.bullet_spread = 15;
+			attack_stats.bullet_size = 0.5;
+			attack_stats.bullet_speed = bossbulletspeed * 1.35;
+			attack_stats.bullet_life_span = 300;
+			attack_stats.boss_xoffset = 0;
+			attack_stats.boss_yoffset = 0;
+			repeat(2) {
+				scr_boss_shoot_v2();
+				attack_stats.bullet_speed += bossbulletspeed * 0.3;
+			}
+		}
 	}
 	
 	if active_attack = 3 {
-		scr_Boss_Stretch("Horizontal", 0.8);
+		scr_Boss_Stretch("Horizontal", 0.15);
 		
-		image_index = 3;	
-		
-		attack_stats.bullet_direction = scr_Boss_Bullet_Direction_Formula(270, 30)
-		attack_stats.bullet_sprite = "spr_Tear_Drop_Bullet"
-		attack_stats.bullet_type = "obj_friction_bullet_v2"
-		attack_stats.bullet_count = 7;
-		attack_stats.bullet_spread = 30;
-		attack_stats.bullet_speed = bossbulletspeed * 1.75;
-		attack_stats.bullet_friction = attack_stats.bullet_speed * 0.01;
-		attack_stats.bullet_min_speed = attack_stats.bullet_speed * 0.15;
-		attack_stats.bullet_life_span = 600;
-		attack_stats.bullet_direction_angle = true;
-		
-		if currentphase >= 2 {
-			attack_stats.bullet_count += 2;	
-		}
-				
-		scr_boss_shoot_v2();
-		
-		attack_stats.bullet_count = 6;
-		if currentphase >= 2 {
-			attack_stats.bullet_count += 2;	
-		}
-			
+		attack_stats.bullet_direction = 270
+		attack_stats.bullet_sprite = "spr_Holy_Tear_Bullet"
+		attack_stats.bullet_type = "obj_follow_the_leader_bullet_v2"
+		attack_stats.bullet_count = 1;
+		attack_stats.bullet_size = 0.35 + random(0.3);
 		attack_stats.bullet_speed = bossbulletspeed * 1.35;
-		attack_stats.bullet_friction = attack_stats.bullet_speed * 0.01;
-		attack_stats.bullet_min_speed = attack_stats.bullet_speed * 0.15;
+		attack_stats.bullet_life_span = 660;
+		attack_stats.bullet_direction_angle = true;
+		attack_stats.homing_speed = 1.5;
+		
+		if !instance_exists(tear_trail_tip_1) {
+			attack_stats.bullet_type = "obj_increasing_homing_bullet_v2"
+			tear_trail_tip_1 = scr_boss_shoot_v2();
+		} else {
+			attack_stats.follow_xoffset = -30 + random(60);
+			attack_stats.follow_yoffset = -30 + random(60);
+			attack_stats.bullet_target = tear_trail_tip_1
+			tear_trail_tip_1 = scr_boss_shoot_v2();
+		}
+		
+		if pattern_count mod 6 = 1 {
+			attack_stats.bullet_sprite = "spr_Soaring_Echo"
+			attack_stats.bullet_type = "obj_echo_bullet_v2"
+			attack_stats.bullet_count = 3;
+			attack_stats.bullet_spread = 45;
+			attack_stats.bullet_direction_angle = true;
+			attack_stats.bullet_life_span = 240;
+			attack_stats.bullet_size = 0.5;
+			attack_stats.bullet_speed = bossbulletspeed * 1.35;
+			attack_stats.boss_xoffset = -110;
+			attack_stats.boss_yoffset = -50;
 			
-			
-		scr_boss_shoot_v2();
+			if pattern_count mod 12 = 1 {
+				attack_stats.boss_xoffset = 110;	
+			}
+			scr_boss_shoot_v2();
+		}
+		
+
 	
 		// If you gotta change the pattern aim direction
 	    // pattern_direction += 0;
 	}
 	
 	if active_attack = 4 {
-		scr_Boss_Stretch("Vertical", 1);
-		image_index = 3;
+		scr_Boss_Stretch("Horizontal", 0.15);
 		
-		minion_count = 1;
-		minion_type = obj_vampire_bat_mullet;
-		minion_health = bossmaxhealth / 20;
-		minion_speed = bossbulletspeed * (3)
+		if pattern_count mod 12 = 1 {
+			attack_stats.bullet_sprite = "spr_Glowy_Orange_Shot"
+			attack_stats.bullet_type = "obj_basic_bullet_v2"
+			attack_stats.bullet_count = 12;
+			attack_stats.bullet_spread = 15;
+			attack_stats.bullet_speed = bossbulletspeed * 1.35;
+			attack_stats.bullet_life_span = 300;
+			repeat(2) {
+				scr_boss_shoot_v2();
+				attack_stats.bullet_speed += bossbulletspeed * 0.3;
+			}
+		}
 		
-		var _minion_shots = 9;
-		if currentphase = 2 {
-			_minion_shots = 11;	
+		attack_stats.bullet_direction = 210
+		attack_stats.bullet_sprite = "spr_Holy_Tear_Bullet"
+		attack_stats.bullet_type = "obj_follow_the_leader_bullet_v2"
+		attack_stats.bullet_count = 1;
+		attack_stats.bullet_size = 0.35 + random(0.15);
+		attack_stats.bullet_speed = bossbulletspeed * 1.35;
+		attack_stats.bullet_life_span = 660;
+		attack_stats.bullet_direction_angle = true;
+		attack_stats.homing_speed = 1.5;
+		attack_stats.boss_xoffset = -110;
+		attack_stats.boss_yoffset = -50;
+		
+		if !instance_exists(tear_trail_tip_1) {
+			attack_stats.bullet_type = "obj_increasing_homing_bullet_v2"
+			tear_trail_tip_1 = scr_boss_shoot_v2();
+		} else {
+			attack_stats.follow_xoffset = -30 + random(60);
+			attack_stats.follow_yoffset = -30 + random(60);
+			attack_stats.bullet_target = tear_trail_tip_1
+			tear_trail_tip_1 = scr_boss_shoot_v2();
 		}
-		var _dir = 270 - (15 * _minion_shots);
-		repeat(_minion_shots) {
-			minion_dir = _dir
-			scr_Minion_Spawn()
-			_dir += 30;
+		
+		attack_stats.bullet_direction = 330
+		attack_stats.boss_xoffset = 110;
+		if !instance_exists(tear_trail_tip_2) {
+			attack_stats.bullet_type = "obj_increasing_homing_bullet_v2"
+			tear_trail_tip_2 = scr_boss_shoot_v2();
+		} else {
+			attack_stats.follow_xoffset += -30 + random(60);
+			attack_stats.follow_yoffset += -30 + random(60);
+			attack_stats.bullet_target = tear_trail_tip_2
+			tear_trail_tip_2 = scr_boss_shoot_v2();
 		}
+		
 	}
 	
 	// Maybe I should put this into a script

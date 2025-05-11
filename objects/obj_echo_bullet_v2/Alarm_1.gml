@@ -4,6 +4,9 @@
 
 alarm[1] = 25;
 
+scr_After_Image(50, false, true)
+
+/*
 var _bull = scr_base_bullet_stats(bullet_stats.bullet_speed / 10, bullet_stats.bullet_power, 1)
 
 _bull.bullet_type = "obj_basic_bullet_v2"
