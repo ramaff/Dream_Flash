@@ -13,8 +13,15 @@ var _tar_x = obj_Soul_Parent.perX + scr_Wave(-300, 300, 4, 0);
 var _tar_y = obj_Soul_Parent.perY - 190 - boss_height;
 _tar_y = mean(top_tip, _tar_y, _tar_y)
 
+var _speed_fac = 2;
+
+if active_attack != 0 {
+	_speed_fac = 0.25	
+}
+
+
 direction = point_direction(x, y, _tar_x, _tar_y)
-speed = min(bossmovespeed * 2, point_distance(x, y, _tar_x, _tar_y))
+speed = min(bossmovespeed * _speed_fac, point_distance(x, y, _tar_x, _tar_y))
 
 //////////////////////////////////////////////////////////////////////////////////////////
 /////////////// Active Attack Prep
@@ -99,7 +106,7 @@ if active_attack_delay <= 0 and pattern_cooldown <= 0 and pattern_count > 0 {
 		if pattern_count mod 6 = 1 {
 			attack_stats.bullet_sprite = "spr_Glowy_Orange_Shot"
 			attack_stats.bullet_type = "obj_basic_bullet_v2"
-			attack_stats.bullet_count = 4;
+			attack_stats.bullet_count = 6;
 			attack_stats.bullet_spread = 30;
 			attack_stats.bullet_size = 0.5;
 			attack_stats.bullet_speed = bossbulletspeed * 1.35;
@@ -144,13 +151,14 @@ if active_attack_delay <= 0 and pattern_cooldown <= 0 and pattern_count > 0 {
 		if pattern_count mod 3 = 1 {
 			attack_stats.bullet_sprite = "spr_Glowy_Orange_Shot"
 			attack_stats.bullet_type = "obj_basic_bullet_v2"
-			attack_stats.bullet_count = 12;
-			attack_stats.bullet_spread = 15;
+			attack_stats.bullet_count = 10;
+			attack_stats.bullet_spread = 20;
 			attack_stats.bullet_size = 0.5;
 			attack_stats.bullet_speed = bossbulletspeed * 1.35;
 			attack_stats.bullet_life_span = 300;
 			attack_stats.boss_xoffset = 0;
 			attack_stats.boss_yoffset = 0;
+			attack_stats.bullet_direction = 270;
 			repeat(2) {
 				scr_boss_shoot_v2();
 				attack_stats.bullet_speed += bossbulletspeed * 0.3;
@@ -211,8 +219,9 @@ if active_attack_delay <= 0 and pattern_cooldown <= 0 and pattern_count > 0 {
 		if pattern_count mod 12 = 1 {
 			attack_stats.bullet_sprite = "spr_Glowy_Orange_Shot"
 			attack_stats.bullet_type = "obj_basic_bullet_v2"
-			attack_stats.bullet_count = 12;
-			attack_stats.bullet_spread = 15;
+			attack_stats.bullet_count = 10;
+			attack_stats.bullet_spread = 20;
+			attack_stats.bullet_direction = 270;
 			attack_stats.bullet_speed = bossbulletspeed * 1.35;
 			attack_stats.bullet_life_span = 300;
 			repeat(2) {
