@@ -96,7 +96,7 @@ function scr_Boss_Choose(roomNum, exclude, difficultyAdd = 0) {
 		}
 	}
 	if global.currentchapter >= 4 {
-	    bossform = choose(8,21,29,30,40,46,47,49,61);
+	    bossform = choose(4,8,21,29,30,40,46,47,49,61);
 		
 		sboss = scr_Chance(5);
 		if sboss = true {

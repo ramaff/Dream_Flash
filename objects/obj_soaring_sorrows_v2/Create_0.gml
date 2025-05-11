@@ -21,3 +21,7 @@ boss_palette_index = champ;
 if champ = 8 {
 	boss_palette_index = 3;
 }
+top_tip = (room_height / 2) - (global.roomSizeY / 2) + 150
+
+tear_trail_tip_1 = noone;
+tear_trail_tip_2 = noone;
