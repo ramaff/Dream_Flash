@@ -1,6 +1,6 @@
-function scr_wall_bounce_v2() {
+function scr_wall_bounce_v2(_offset = 0) {
 	
-	if scr_Outside_Check_Bool(-speed) {
+	if scr_Outside_Check_Bool(-speed + _offset) {
 		return false;
 	} else {
 
@@ -17,7 +17,7 @@ function scr_wall_bounce_v2() {
 		if _bounce {
 			if y > 0 {
 				if x > 0 {
-					direction += 90;	
+					direction += 90;
 				} else {
 					direction -= 90;
 				}

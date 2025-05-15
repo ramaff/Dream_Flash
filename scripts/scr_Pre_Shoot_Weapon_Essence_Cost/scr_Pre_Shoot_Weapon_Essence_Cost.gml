@@ -1,8 +1,8 @@
 // Script assets have changed for v2.3.0 see
 // https://help.yoyogames.com/hc/en-us/articles/360005277377 for more information
-function scr_Pre_Shoot_Weapon_Essence_Cost(_weapon_cost, cWP, _umbrella_active, _weap_stop = 0){
+function scr_Pre_Shoot_Weapon_Essence_Cost(_weapon_cost, cWP, _single_instance_active, _weap_stop = 0){
 
-	if cWP = 603 and _umbrella_active {
+	if _single_instance_active {
 		_weapon_cost = _weapon_cost / 10;
 	}
 	

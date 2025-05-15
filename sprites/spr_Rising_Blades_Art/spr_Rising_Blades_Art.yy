@@ -26,7 +26,7 @@
   "origin": 4,
   "parent": {
     "name": "Magical Art",
-    "path": "folders/Sprites/Weapon Sprites/Magical Art.yy",
+    "path": "folders/Sprites/Weapon Art/Magical Art.yy",
   },
   "preMultiplyAlpha": false,
   "sequence": {

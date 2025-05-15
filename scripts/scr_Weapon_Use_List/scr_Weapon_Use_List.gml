@@ -10,7 +10,7 @@ function scr_Weapon_Use_List(cWP = global.currentweapon, _weap_slot = 0) {
 	
 	//cWP = global.currentweapon;
 	
-	var _umbrella_active = scr_umbrella_active(cWP)
+	var _single_instance_active = scr_single_instance_weapon_active(cWP)
 	
 	if !variable_struct_exists(global.weapon_stats, cWP) {
 		exit;	
@@ -23,7 +23,7 @@ function scr_Weapon_Use_List(cWP = global.currentweapon, _weap_slot = 0) {
 	weaponDelay = current_weapon_stats.Delay;
 	//show_debug_message("Weapon Cost: " + string(weaponCost) + ", Weapon Delay: " + string(weaponDelay))
 	
-	weaponCost = scr_Pre_Shoot_Weapon_Essence_Cost(weaponCost, cWP, _umbrella_active, weapStop)
+	weaponCost = scr_Pre_Shoot_Weapon_Essence_Cost(weaponCost, cWP, _single_instance_active, weapStop)
 	
 	weaponDelay = (weaponDelay - sdelayconservation) / sdelayconservationfactor / ((6 + global.Weap[global.currentweapon]) / 6);	
 	
@@ -69,9 +69,7 @@ function scr_Weapon_Use_List(cWP = global.currentweapon, _weap_slot = 0) {
 		var minion = false;
 		var spawnProjectile = true;
 		
-		if cWP = 603 {
-			spawnProjectile = !_umbrella_active;	
-		}
+		spawnProjectile = !_single_instance_active;	
 		
 		scr_Hard_Coded_Weapon_Stats(current_weapon_stats);
 		

@@ -26,7 +26,7 @@
   "origin": 4,
   "parent": {
     "name": "Energy Art",
-    "path": "folders/Sprites/Weapon Sprites/Energy Art.yy",
+    "path": "folders/Sprites/Weapon Art/Energy Art.yy",
   },
   "preMultiplyAlpha": false,
   "sequence": {

@@ -26,7 +26,7 @@
   "origin": 4,
   "parent": {
     "name": "Misc Art",
-    "path": "folders/Sprites/Weapon Sprites/Misc Art.yy",
+    "path": "folders/Sprites/Weapon Art/Misc Art.yy",
   },
   "preMultiplyAlpha": false,
   "sequence": {

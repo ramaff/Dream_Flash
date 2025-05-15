@@ -1,15 +1,23 @@
 // Script assets have changed for v2.3.0 see
 // https://help.yoyogames.com/hc/en-us/articles/360005277377 for more information
-function scr_umbrella_active(_c_wp){
-	var _umbrella_active = false;
+function scr_single_instance_weapon_active(_c_wp){
+	var _single_instance_active = false;
+	var _single_instance_object = noone;
+
+	if _c_wp = 603 {
+		_single_instance_object = obj_Umbrella_Shot
+	}
+	if _c_wp = 604 {
+		_single_instance_object = obj_Bounce_Ball
+	}
 	
-	if _c_wp = 603 and instance_exists(obj_Umbrella_Shot) {
-		with (obj_Umbrella_Shot) {
+	if instance_exists(_single_instance_object) {
+		with (_single_instance_object) {
 			if shot_stats.Shot_Follow_Origin = other.id {
-				_umbrella_active = true;
+				_single_instance_active = true;
 			}
 		}
 	}
 	
-	return _umbrella_active
+	return _single_instance_active
 }
