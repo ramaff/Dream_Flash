@@ -3,10 +3,10 @@
 
 v_speed = 0;
 h_speed = 0;
-max_speed = 15;
+max_speed = 10;
 acceleration = 0.625;
 fric = 0.125
 
 drain_rate = 0.4;
 
-
+alarm[10] = 5;

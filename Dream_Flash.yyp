@@ -2268,6 +2268,7 @@
     {"id":{"name":"obj_Black_Hole_Bullet","path":"objects/obj_Black_Hole_Bullet/obj_Black_Hole_Bullet.yy",},},
     {"id":{"name":"spr_boxer_ko","path":"sprites/spr_boxer_ko/spr_boxer_ko.yy",},},
     {"id":{"name":"spr_Optimism_Shot","path":"sprites/spr_Optimism_Shot/spr_Optimism_Shot.yy",},},
+    {"id":{"name":"spr_Bounce_Ball_Shine","path":"sprites/spr_Bounce_Ball_Shine/spr_Bounce_Ball_Shine.yy",},},
     {"id":{"name":"spr_Boomerang_Blade_Shot","path":"sprites/spr_Boomerang_Blade_Shot/spr_Boomerang_Blade_Shot.yy",},},
     {"id":{"name":"spr_Mechanical_Soul_Hard_Think","path":"sprites/spr_Mechanical_Soul_Hard_Think/spr_Mechanical_Soul_Hard_Think.yy",},},
     {"id":{"name":"spr_Spinning_Top_Shot","path":"sprites/spr_Spinning_Top_Shot/spr_Spinning_Top_Shot.yy",},},

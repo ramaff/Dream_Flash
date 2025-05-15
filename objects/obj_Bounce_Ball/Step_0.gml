@@ -1,6 +1,8 @@
 /// @description Insert description here
 // You can write your code in this editor
 
+
+
 // Inherit the parent event
 event_inherited();
 
@@ -21,6 +23,10 @@ with(obj_Soul_Parent) {
 	if senergy < 0 {
 		instance_destroy(other)
 	}
+	if other.speed > other.max_speed + 10 {
+		soulinvincibility = max(3, soulinvincibility);
+	}
+	other.depth = depth - 10
 }
 
 if _threshold {
@@ -29,7 +35,14 @@ if _threshold {
 	image_alpha = lerp(image_alpha, 1, 0.2)	
 }
 
-scr_Key_Press_Movement(v_speed, h_speed, max_speed, acceleration, fric)
+var _hypothetical_speed = abs(point_distance(0, 0, h_speed, v_speed))
+if _hypothetical_speed > max_speed {
+	fric = 0.125 + ((_hypothetical_speed - max_speed) / 30)
+} else {
+	fric = 0.125	
+}
+
+scr_Key_Press_Movement(v_speed, h_speed, max_speed, acceleration, fric, false)
 
 vspeed = v_speed;
 hspeed = h_speed;

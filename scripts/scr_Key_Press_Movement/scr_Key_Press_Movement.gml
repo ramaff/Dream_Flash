@@ -1,6 +1,6 @@
 // Script assets have changed for v2.3.0 see
 // https://help.yoyogames.com/hc/en-us/articles/360005277377 for more information
-function scr_Key_Press_Movement(_vspeed = 0, _hspeed = 0, _max_speed = 5, _acceleration = 1, _friction = 0.2){
+function scr_Key_Press_Movement(_vspeed = 0, _hspeed = 0, _max_speed = 5, _acceleration = 1, _friction = 0.2, _hard_cap = true){
 
 	var dx = keyboard_check(ord(global.gameMoveRight)) - keyboard_check(ord(global.gameMoveLeft));
 	var dy = keyboard_check(ord(global.gameMoveDown)) - keyboard_check(ord(global.gameMoveUp));
@@ -29,8 +29,10 @@ function scr_Key_Press_Movement(_vspeed = 0, _hspeed = 0, _max_speed = 5, _accel
 	_hspeed = scr_Converge(_hspeed, 0, _h_reduce)
 	_vspeed = scr_Converge(_vspeed, 0, _v_reduce)
 	
-	_hspeed = clamp(_hspeed, -_max_hspeed, _max_hspeed)
-	_vspeed = clamp(_vspeed, -_max_vspeed, _max_vspeed)
+	if _hard_cap {
+		_hspeed = clamp(_hspeed, -_max_hspeed, _max_hspeed)
+		_vspeed = clamp(_vspeed, -_max_vspeed, _max_vspeed)
+	}
 	
 	v_speed = _vspeed;
 	h_speed = _hspeed;
