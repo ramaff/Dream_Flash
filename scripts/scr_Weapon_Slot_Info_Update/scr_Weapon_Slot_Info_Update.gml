@@ -10,9 +10,9 @@ function scr_Weapon_Slot_Info_Update(_weapon_slot_info){
 	
 	var _i = 0;
 	var _scale = 1;
-	var _xx_width = 40;
-	var _xx_center = 75;
-	var _yy_center = _win_y - 88;
+	var _xx_width = 55;
+	var _xx_center = 105;
+	var _yy_center = _win_y - 115;
 	var _yy_width = 40;
 	
 	var _xx = 0;
@@ -24,15 +24,9 @@ function scr_Weapon_Slot_Info_Update(_weapon_slot_info){
 	for(_i = 0; _i < global.weaponslots; _i++) {
 
 	    var _weap = Soul_Weapons_Control.weapon[_i].weapon_id;
-		_scale = 0.5 - (0.25 * abs(angle_difference(270, _angle) / 180))
+		_scale = 0.7 - (0.35 * abs(angle_difference(270, _angle) / 180))
 		_xx = _xx_center + lengthdir_x(_xx_width, _angle)
 		_yy = _yy_center + (lengthdir_y(_yy_width, _angle) * 2 * _scale)
-
-		/*if _i < array_length(_weapon_slot_info) {
-			if is_struct(_weapon_slot_info[_i]) {
-				delete _weapon_slot_info[_i]	
-			}
-		} */
 
 		_weapon_slot_info[_i] = {
 			"xx": _xx,

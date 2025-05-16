@@ -39,8 +39,8 @@ function scr_Soul_Teleport(_evasion = false){
 	
 	if instance_exists(obj_Bounce_Ball) {
 	
-		var _max_hspeed = lengthdir_x(50, dir)
-		var _max_vspeed = lengthdir_y(50, dir)
+		var _max_hspeed = lengthdir_x(25, dir)
+		var _max_vspeed = lengthdir_y(25, dir)
 		
 		with (obj_Bounce_Ball) {
 			h_speed += _max_hspeed

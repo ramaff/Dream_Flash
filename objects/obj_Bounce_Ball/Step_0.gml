@@ -37,7 +37,7 @@ if _threshold {
 
 var _hypothetical_speed = abs(point_distance(0, 0, h_speed, v_speed))
 if _hypothetical_speed > max_speed {
-	fric = 0.125 + ((_hypothetical_speed - max_speed) / 30)
+	fric = 0.125 + ((_hypothetical_speed - max_speed) / 50)
 } else {
 	fric = 0.125	
 }
