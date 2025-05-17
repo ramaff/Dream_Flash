@@ -10,3 +10,5 @@ fric = 0.125
 drain_rate = 0.4;
 
 alarm[10] = 5;
+
+bosses_hit_tracker = {}

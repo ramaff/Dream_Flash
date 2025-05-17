@@ -3814,6 +3814,7 @@
     {"id":{"name":"scr_Gem_Spawn","path":"scripts/scr_Gem_Spawn/scr_Gem_Spawn.yy",},},
     {"id":{"name":"scr_Default_Figment_Stats","path":"scripts/scr_Default_Figment_Stats/scr_Default_Figment_Stats.yy",},},
     {"id":{"name":"scr_Face_Direction","path":"scripts/scr_Face_Direction/scr_Face_Direction.yy",},},
+    {"id":{"name":"scr_Shot_Follow_The_Leader","path":"scripts/scr_Shot_Follow_The_Leader/scr_Shot_Follow_The_Leader.yy",},},
     {"id":{"name":"scr_Shuffle_Pool_List","path":"scripts/scr_Shuffle_Pool_List/scr_Shuffle_Pool_List.yy",},},
     {"id":{"name":"scr_New_Face_Direction","path":"scripts/scr_New_Face_Direction/scr_New_Face_Direction.yy",},},
     {"id":{"name":"scr_Gem_Draw","path":"scripts/scr_Gem_Draw/scr_Gem_Draw.yy",},},

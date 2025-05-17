@@ -25,7 +25,7 @@
     {"resourceType":"GMImageLayer","resourceVersion":"1.0","name":"c808e172-fa2d-4676-90c2-c856e37dd47c","blendMode":0,"displayName":"default","isLocked":false,"opacity":100.0,"visible":true,},
   ],
   "nineSlice": null,
-  "origin": 3,
+  "origin": 9,
   "parent": {
     "name": "Utility Sprites",
     "path": "folders/Sprites/Soul Shot Sprites/Utility Sprites.yy",
@@ -63,7 +63,7 @@
     ],
     "visibleRange": null,
     "volume": 1.0,
-    "xorigin": 0,
+    "xorigin": -30,
     "yorigin": 90,
   },
   "swatchColours": null,

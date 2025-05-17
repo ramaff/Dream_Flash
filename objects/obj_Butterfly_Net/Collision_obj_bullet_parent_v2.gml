@@ -1,6 +1,14 @@
 /// @description Insert description here
 // You can write your code in this editor
 
+var _soul = noone;
+
+if instance_exists(shot_stats.Shot_Follow_Origin) {
+	_soul = shot_stats.Shot_Follow_Origin
+} else {
+	exit;	
+}
+
 with(other) {
 	repeat(4) {
 		var ddir = direction - 270 + random(180);
@@ -10,7 +18,7 @@ with(other) {
 	if bullet_stats.bullet_power <= poww {
 		var xxx = x;
 		var yyy = y;
-		with(other) {
+		with(_soul) {
 			scr_Optimism_Shot(xxx,yyy);
 		}
 		instance_destroy();	

@@ -118,6 +118,11 @@ function scr_Assign_Shot_Scripts(){
 	if instance_exists(followtarget) {
 		array_push(_shot_step_scripts, scr_Shot_Follow_Target_Keep_Distance)
 	} 
+	
+	if shot_stats.Shot_Follow_The_Leader {
+		scr_Shot_Follow_The_Leader_Setup()
+		array_push(_shot_step_scripts, scr_Shot_Follow_The_Leader)
+	}
 
 	if global.OB[2] > 0 {
 		array_push(_shot_step_scripts, scr_OB02)

@@ -874,6 +874,7 @@
     {"name":"obj_drill_trail_bullet","order":2,"path":"objects/obj_drill_trail_bullet/obj_drill_trail_bullet.yy",},
     {"name":"spr_purple_spirit","order":14,"path":"sprites/spr_purple_spirit/spr_purple_spirit.yy",},
     {"name":"spr_spiritual_stat_tutorial","order":11,"path":"sprites/spr_spiritual_stat_tutorial/spr_spiritual_stat_tutorial.yy",},
+    {"name":"scr_Shot_Follow_The_Leader","order":28,"path":"scripts/scr_Shot_Follow_The_Leader/scr_Shot_Follow_The_Leader.yy",},
     {"name":"obj_Bubble_Jello","order":13,"path":"objects/obj_Bubble_Jello/obj_Bubble_Jello.yy",},
     {"name":"spr_dream_cloud_tears_of_joy","order":4,"path":"sprites/spr_dream_cloud_tears_of_joy/spr_dream_cloud_tears_of_joy.yy",},
     {"name":"spr_infatuation_cloud_v2_cry","order":4,"path":"sprites/spr_infatuation_cloud_v2_cry/spr_infatuation_cloud_v2_cry.yy",},
