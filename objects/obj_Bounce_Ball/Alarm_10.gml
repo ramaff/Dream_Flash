@@ -3,7 +3,7 @@
 
 alarm[10] = 5;
 
-if speed > max_speed + 10 {
+if speed > max_speed + 5 {
 	scr_After_Image(15, false, true, c_white)
 }
 

@@ -34,6 +34,12 @@ if active_attack_delay <= 0 and active_attack_cooldown <= 0 and active_attack_du
 	if currentphase = 2 {
 		active_attack = choose(3, 4);
 	}
+	if champ = 1 {
+		active_attack = choose(5, 2);
+		if currentphase = 2 {
+			active_attack = choose(6, 7);
+		}
+	}
 	
     if active_attack = 1 {
 		var _attack_counts = 24;
@@ -47,6 +53,9 @@ if active_attack_delay <= 0 and active_attack_cooldown <= 0 and active_attack_du
 		var _attack_counts = 6;
 		var _attack_gap = 60;
 		var _added_dur = 10;
+		if champ = 1 {
+			_attack_counts = 8;	
+		}
 		// Setup how many attacks per boss move, delay, etc
 		scr_Boss_Attack_Time_Setup_v2(_attack_counts, 50, _attack_gap, 120, 30, _added_dur);
     }
@@ -68,6 +77,26 @@ if active_attack_delay <= 0 and active_attack_cooldown <= 0 and active_attack_du
 		
 		tear_trail_tip_1 = noone;
 		tear_trail_tip_2 = noone;
+    }
+	
+	if active_attack = 5 {
+		var _attack_counts = 360;
+		var _attack_gap = 1;
+		// Setup how many attacks per boss move, delay, etc
+		scr_Boss_Attack_Time_Setup_v2(_attack_counts, 50, _attack_gap, 180, 45, 10);
+    }
+	if active_attack = 6 {
+		var _attack_counts = 8;
+		var _attack_gap = 50;
+		var _added_dur = 10;
+		// Setup how many attacks per boss move, delay, etc
+		scr_Boss_Attack_Time_Setup_v2(_attack_counts, 50, _attack_gap, 180, 30, _added_dur);
+    }
+	if active_attack = 7 {
+		var _attack_counts = 450;
+		var _attack_gap = 1;
+		// Setup how many attacks per boss move, delay, etc
+		scr_Boss_Attack_Time_Setup_v2(_attack_counts, 50, _attack_gap, 180, 45, 10);
     }
 }
 
@@ -146,6 +175,14 @@ if active_attack_delay <= 0 and pattern_cooldown <= 0 and pattern_count > 0 {
 			attack_stats.boss_xoffset = 110;	
 		}
 		
+		if champ = 1 {
+			attack_stats.bullet_count = 1;
+			attack_stats.follow_bullets = 3;
+			attack_stats.bullet_life_span = 330;
+			attack_stats.bullet_sprite = "spr_Arcane_Echo"
+			attack_stats.bullet_type = "obj_homing_echo_bullet_v2"
+		}
+		
 		scr_boss_shoot_v2();
 		
 		if pattern_count mod 3 = 1 {
@@ -159,7 +196,14 @@ if active_attack_delay <= 0 and pattern_cooldown <= 0 and pattern_count > 0 {
 			attack_stats.boss_xoffset = 0;
 			attack_stats.boss_yoffset = 0;
 			attack_stats.bullet_direction = 270;
-			repeat(2) {
+			var _count = 2;
+			if champ = 1 {
+				attack_stats.follow_bullets = 0;
+				_count = 3;
+				attack_stats.bullet_sprite = "spr_Glowy_Blue_Shot"
+				attack_stats.bullet_speed = bossbulletspeed * 1.15;
+			}
+			repeat(_count) {
 				scr_boss_shoot_v2();
 				attack_stats.bullet_speed += bossbulletspeed * 0.3;
 			}
@@ -264,6 +308,138 @@ if active_attack_delay <= 0 and pattern_cooldown <= 0 and pattern_count > 0 {
 			tear_trail_tip_2 = scr_boss_shoot_v2();
 		}
 		
+	}
+	
+	if active_attack = 5 {
+	
+		if pattern_count = pattern_count_max - 1 {
+				
+			attack_stats.bullet_type = "obj_converge_beam"
+		    attack_stats.bullet_speed = 0;
+			attack_stats.bullet_life_span = 360;
+			attack_stats.bullet_size = 0.5;
+			attack_stats.bullet_direction_angle = 1;
+			attack_stats.homing_speed = 1;
+		    attack_stats.bullet_sprite = "spr_Boss_Beam_Segment";
+			attack_stats.bullet_part_color1 = make_color_rgb(0, 0, 255)
+			attack_stats.bullet_part_color2 = make_color_rgb(100, 100, 255)
+			
+			var _dir = image_angle + 270;
+			attack_stats.bullet_direction = scr_Boss_Bullet_Direction_Formula(_dir, 0.1)
+			
+			scr_boss_beam_shoot_v2(attack_stats)
+		}
+		
+		if pattern_count mod 10 = 0 {
+			scr_Boss_Stretch("Horizontal",0.1);	
+		}
+		if pattern_count mod 60 = 1 {
+			attack_stats.bullet_sprite = "spr_Glowy_Blue_Shot"
+			attack_stats.bullet_type = "obj_basic_bullet_v2"
+			attack_stats.bullet_count = 6;
+			attack_stats.bullet_spread = 30;
+			attack_stats.bullet_size = 0.5;
+			attack_stats.bullet_speed = bossbulletspeed * 1.15;
+			attack_stats.bullet_life_span = 300;
+			attack_stats.boss_xoffset = -110;
+			attack_stats.boss_yoffset = -50;
+			var _dir = image_angle + 270;
+			attack_stats.bullet_direction = scr_Boss_Bullet_Direction_Formula(_dir, 15)
+			
+			if pattern_count mod 120 = 1 {
+				attack_stats.boss_xoffset = 110;	
+			}
+			repeat(3) {
+				scr_boss_shoot_v2();
+				attack_stats.bullet_speed += bossbulletspeed * 0.3;
+			}
+		}
+	}
+	
+	if active_attack = 6 {
+	
+		if pattern_count = pattern_count_max || pattern_count = floor(pattern_count_max / 2) {
+			scr_Boss_Stretch("Horizontal",0.6);
+			
+			attack_stats.bullet_type = "obj_mega_halo_ball"
+			attack_stats.bullet_life_span = 480;
+			attack_stats.bullet_size = 0.5;
+		    attack_stats.bullet_sprite = "spr_Arcane_Ball";
+			attack_stats.bullet_speed = bossbulletspeed * 0.33;
+			
+			var _dir = image_angle + 270;
+			attack_stats.bullet_direction = scr_Boss_Bullet_Direction_Formula(_dir, 0.1)
+			
+			scr_boss_shoot_v2();
+		}
+		
+		scr_Boss_Stretch("Horizontal",0.1);	
+		if pattern_count < pattern_count_max {
+			attack_stats.bullet_sprite = "spr_Glowy_Blue_Shot"
+			attack_stats.bullet_type = "obj_basic_bullet_v2"
+			attack_stats.bullet_count = 6;
+			attack_stats.bullet_spread = 30;
+			attack_stats.bullet_size = 0.5;
+			attack_stats.bullet_speed = bossbulletspeed * 1.15;
+			attack_stats.bullet_life_span = 300;
+			attack_stats.boss_xoffset = -110;
+			attack_stats.boss_yoffset = -50;
+			var _dir = image_angle + 270;
+			attack_stats.bullet_direction = scr_Boss_Bullet_Direction_Formula(_dir, 15)
+			
+			if pattern_count mod 2 = 1 {
+				attack_stats.boss_xoffset = 110;	
+			}
+			repeat(3) {
+				scr_boss_shoot_v2();
+				attack_stats.bullet_speed += bossbulletspeed * 0.3;
+			}
+		}
+	}
+	
+	if active_attack = 7 {
+	
+		if pattern_count = pattern_count_max - 1 {
+				
+			attack_stats.bullet_type = "obj_converge_beam"
+		    attack_stats.bullet_speed = 0;
+			attack_stats.bullet_life_span = 450;
+			attack_stats.bullet_size = 0.5;
+			attack_stats.bullet_direction_angle = 1;
+			attack_stats.homing_speed = 0.5;
+		    attack_stats.bullet_sprite = "spr_Boss_Beam_Segment";
+			attack_stats.bullet_part_color1 = make_color_rgb(0, 0, 255)
+			attack_stats.bullet_part_color2 = make_color_rgb(100, 100, 255)
+			attack_stats.boss_xoffset = -110;
+			attack_stats.boss_yoffset = -50;
+			
+			var _dir = image_angle + 180;
+			attack_stats.bullet_direction = scr_Boss_Bullet_Direction_Formula(_dir, 0.1)
+			
+			scr_boss_beam_shoot_v2(attack_stats)
+
+			attack_stats.boss_xoffset = 110;	
+			_dir = image_angle + 360;
+			attack_stats.bullet_direction = scr_Boss_Bullet_Direction_Formula(_dir, 0.1)
+			
+			scr_boss_beam_shoot_v2(attack_stats)
+		}
+		
+		if pattern_count mod 10 = 0 {
+			scr_Boss_Stretch("Horizontal",0.1);	
+		}
+		if pattern_count mod 60 = 1 {
+			var _dir = image_angle + 270;
+			attack_stats.bullet_direction = scr_Boss_Bullet_Direction_Formula(_dir, 15)
+			
+			attack_stats.bullet_count = 1;
+			attack_stats.follow_bullets = 3;
+			attack_stats.bullet_life_span = 390;
+			attack_stats.bullet_sprite = "spr_Arcane_Echo"
+			attack_stats.bullet_type = "obj_homing_echo_bullet_v2"
+			
+			scr_boss_shoot_v2();
+		}
 	}
 	
 	// Maybe I should put this into a script

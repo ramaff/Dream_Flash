@@ -18,6 +18,14 @@ drain_rate += 0.0025
 var _xx = x;
 var _yy = y;
 var _drain = drain_rate;
+
+var _hypothetical_speed = abs(point_distance(0, 0, h_speed, v_speed))
+if _hypothetical_speed > max_speed {
+	fric = 0.125 + ((_hypothetical_speed - max_speed) / 50)
+} else {
+	fric = 0.125	
+}
+
 var _threshold = false;
 if instance_exists(shot_stats.Shot_Follow_Origin) {
 	with(shot_stats.Shot_Follow_Origin) {
@@ -31,8 +39,8 @@ if instance_exists(shot_stats.Shot_Follow_Origin) {
 		if senergy < 0 {
 			instance_destroy(other)
 		}
-		if other.speed > other.max_speed + 10 {
-			soulinvincibility = max(3, soulinvincibility);
+		if _hypothetical_speed > other.max_speed + 5 {
+			soulinvincibility = max(5, soulinvincibility);
 		}
 		other.depth = depth - 10
 	}
@@ -42,13 +50,6 @@ if _threshold {
 	image_alpha = scr_Wave(0.2, 1, 0.25, 0)	
 } else {
 	image_alpha = lerp(image_alpha, 1, 0.2)	
-}
-
-var _hypothetical_speed = abs(point_distance(0, 0, h_speed, v_speed))
-if _hypothetical_speed > max_speed {
-	fric = 0.125 + ((_hypothetical_speed - max_speed) / 50)
-} else {
-	fric = 0.125	
 }
 
 scr_Key_Press_Movement(v_speed, h_speed, max_speed, acceleration, fric, false)
