@@ -32,6 +32,9 @@ function scr_Shot_Follow_The_Leader_Setup() {
 
 function scr_Shot_Follow_The_Leader_Expire() {
 	var _head = shot_stats.Shot_Follow_Target
+	if !instance_exists(_head) {
+		_head = shot_stats.Shot_Follow_Origin	
+	}
 	if instance_exists(shot_stats.Shot_Follow_Tail) {
 		with (shot_stats.Shot_Follow_Tail) {
 			shot_stats.Shot_Follow_Target = _head	

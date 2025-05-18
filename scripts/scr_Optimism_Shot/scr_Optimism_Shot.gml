@@ -1,4 +1,4 @@
-function scr_Optimism_Shot(xxx,yyy) {
+function scr_Optimism_Shot(xxx,yyy, _bullet_power = other.bulletpower, _additional_power = 5) {
 	
 	current_weapon_stats = scr_Setup_Default_Shot_Stats();
 		
@@ -12,7 +12,7 @@ function scr_Optimism_Shot(xxx,yyy) {
 		Shot_Speed: 0.25 + random(0.5),
 		Shot_Direction: other.direction,
 		Shot_Acceleration: 0.05,
-		Shot_Power: (5 + other.bulletpower / 2),
+		Shot_Power: (_additional_power + _bullet_power / 2),
 		Shot_Knock_Back: 10,
 		Shot_Life_Span: 480,
 		Shot_Pierce: 1,

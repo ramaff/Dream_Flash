@@ -20,8 +20,9 @@ with(other) {
 	if bulletpower <= poww {
 		var xxx = x;
 		var yyy = y;
+		var _dam = bulletpower
 		with(_soul) {
-			scr_Optimism_Shot(xxx,yyy);
+			scr_Optimism_Shot(xxx,yyy, _dam);
 		}
 		instance_destroy();	
 	} else {
