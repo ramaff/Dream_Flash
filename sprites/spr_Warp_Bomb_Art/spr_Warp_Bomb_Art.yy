@@ -27,7 +27,7 @@
   "origin": 4,
   "parent": {
     "name": "(W) Warp Item Art",
-    "path": "folders/Sprites/Item Sprites/(W) Warp Item Art.yy",
+    "path": "folders/Sprites/Item Icons/(W) Warp Item Art.yy",
   },
   "preMultiplyAlpha": false,
   "sequence": {

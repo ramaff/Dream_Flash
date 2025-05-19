@@ -26,7 +26,7 @@
   "origin": 4,
   "parent": {
     "name": "(T) Coping ",
-    "path": "folders/Sprites/Item Sprites/(T) Coping .yy",
+    "path": "folders/Sprites/Item Icons/(T) Coping .yy",
   },
   "preMultiplyAlpha": false,
   "sequence": {

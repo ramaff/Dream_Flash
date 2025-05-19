@@ -26,7 +26,7 @@
   "origin": 4,
   "parent": {
     "name": "(D) Dexterity Item Art",
-    "path": "folders/Sprites/Item Sprites/(D) Dexterity Item Art.yy",
+    "path": "folders/Sprites/Item Icons/(D) Dexterity Item Art.yy",
   },
   "preMultiplyAlpha": false,
   "sequence": {

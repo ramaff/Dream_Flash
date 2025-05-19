@@ -26,7 +26,7 @@
   "origin": 4,
   "parent": {
     "name": "(XA) Loathing Items",
-    "path": "folders/Sprites/Item Sprites/(XA) Loathing Items.yy",
+    "path": "folders/Sprites/Item Icons/(XA) Loathing Items.yy",
   },
   "preMultiplyAlpha": false,
   "sequence": {

@@ -26,7 +26,7 @@
   "origin": 4,
   "parent": {
     "name": "dex",
-    "path": "folders/Sprites/Item Sprites/(I) Emotion Item Art/dex.yy",
+    "path": "folders/Sprites/Item Icons/(I) Emotion Item Art/dex.yy",
   },
   "preMultiplyAlpha": false,
   "sequence": {

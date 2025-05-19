@@ -26,7 +26,7 @@
   "origin": 4,
   "parent": {
     "name": "(S) Defense Mechanisms Item Art",
-    "path": "folders/Sprites/Item Sprites/(S) Defense Mechanisms Item Art.yy",
+    "path": "folders/Sprites/Item Icons/(S) Defense Mechanisms Item Art.yy",
   },
   "preMultiplyAlpha": false,
   "sequence": {

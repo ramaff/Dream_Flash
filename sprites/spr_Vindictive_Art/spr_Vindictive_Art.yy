@@ -26,7 +26,7 @@
   "origin": 4,
   "parent": {
     "name": "(P) Personality_Traits Item Art",
-    "path": "folders/Sprites/Item Sprites/(P) Personality_Traits Item Art.yy",
+    "path": "folders/Sprites/Item Icons/(P) Personality_Traits Item Art.yy",
   },
   "preMultiplyAlpha": false,
   "sequence": {

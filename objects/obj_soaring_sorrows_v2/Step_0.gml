@@ -321,8 +321,8 @@ if active_attack_delay <= 0 and pattern_cooldown <= 0 and pattern_count > 0 {
 			attack_stats.bullet_direction_angle = 1;
 			attack_stats.homing_speed = 1;
 		    attack_stats.bullet_sprite = "spr_Boss_Beam_Segment";
-			attack_stats.bullet_part_color1 = make_color_rgb(0, 0, 255)
-			attack_stats.bullet_part_color2 = make_color_rgb(100, 100, 255)
+			attack_stats.bullet_part_color1 = make_color_rgb(0, 184, 255)
+			attack_stats.bullet_part_color2 = make_color_rgb(127, 219, 255)
 			
 			var _dir = image_angle + 270;
 			attack_stats.bullet_direction = scr_Boss_Bullet_Direction_Formula(_dir, 0.1)
@@ -363,7 +363,7 @@ if active_attack_delay <= 0 and pattern_cooldown <= 0 and pattern_count > 0 {
 			
 			attack_stats.bullet_type = "obj_mega_halo_ball"
 			attack_stats.bullet_life_span = 480;
-			attack_stats.bullet_size = 0.5;
+			attack_stats.bullet_size = 0.6;
 		    attack_stats.bullet_sprite = "spr_Arcane_Ball";
 			attack_stats.bullet_speed = bossbulletspeed * 0.33;
 			
@@ -408,8 +408,8 @@ if active_attack_delay <= 0 and pattern_cooldown <= 0 and pattern_count > 0 {
 			attack_stats.bullet_direction_angle = 1;
 			attack_stats.homing_speed = 0.5;
 		    attack_stats.bullet_sprite = "spr_Boss_Beam_Segment";
-			attack_stats.bullet_part_color1 = make_color_rgb(0, 0, 255)
-			attack_stats.bullet_part_color2 = make_color_rgb(100, 100, 255)
+			attack_stats.bullet_part_color1 = make_color_rgb(0, 184, 255)
+			attack_stats.bullet_part_color2 = make_color_rgb(127, 219, 255)
 			attack_stats.boss_xoffset = -110;
 			attack_stats.boss_yoffset = -50;
 			
@@ -437,6 +437,7 @@ if active_attack_delay <= 0 and pattern_cooldown <= 0 and pattern_count > 0 {
 			attack_stats.bullet_life_span = 390;
 			attack_stats.bullet_sprite = "spr_Arcane_Echo"
 			attack_stats.bullet_type = "obj_homing_echo_bullet_v2"
+			attack_stats.bullet_direction_angle = 1
 			
 			scr_boss_shoot_v2();
 		}

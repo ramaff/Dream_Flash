@@ -26,7 +26,7 @@
   "origin": 4,
   "parent": {
     "name": "(A) Strength Item Art",
-    "path": "folders/Sprites/Item Sprites/(A) Strength Item Art.yy",
+    "path": "folders/Sprites/Item Icons/(A) Strength Item Art.yy",
   },
   "preMultiplyAlpha": false,
   "sequence": {

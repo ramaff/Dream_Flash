@@ -26,7 +26,7 @@
   "origin": 4,
   "parent": {
     "name": "Tangible Items",
-    "path": "folders/Sprites/Item Sprites/Tangible Items.yy",
+    "path": "folders/Sprites/Item Icons/Tangible Items.yy",
   },
   "preMultiplyAlpha": false,
   "sequence": {

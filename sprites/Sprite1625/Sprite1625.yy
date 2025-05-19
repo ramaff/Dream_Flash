@@ -26,7 +26,7 @@
   "origin": 0,
   "parent": {
     "name": "(L) Mental Trinkets ",
-    "path": "folders/Sprites/Item Sprites/(L) Mental Trinkets .yy",
+    "path": "folders/Sprites/Item Icons/(L) Mental Trinkets .yy",
   },
   "preMultiplyAlpha": false,
   "sequence": {

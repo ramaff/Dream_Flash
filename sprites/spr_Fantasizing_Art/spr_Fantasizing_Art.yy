@@ -26,7 +26,7 @@
   "origin": 4,
   "parent": {
     "name": "sta",
-    "path": "folders/Sprites/Item Sprites/(I) Emotion Item Art/sta.yy",
+    "path": "folders/Sprites/Item Icons/(I) Emotion Item Art/sta.yy",
   },
   "preMultiplyAlpha": false,
   "sequence": {

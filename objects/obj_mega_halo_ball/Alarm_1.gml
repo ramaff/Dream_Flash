@@ -14,6 +14,7 @@ _bull.bullet_spread = 360 / _bull.bullet_count;
 _bull.bullet_size = 0.5;
 _bull.angular_velocity = 360 / 270;
 _bull.follow_bullets = 2;
+_bull.bullet_direction_angle = 1
 
 
 scr_shoot_bullets(_bull, x, y)

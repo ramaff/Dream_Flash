@@ -26,7 +26,7 @@
   "origin": 4,
   "parent": {
     "name": "(OB) Bliss Items",
-    "path": "folders/Sprites/Item Sprites/(OB) Bliss Items.yy",
+    "path": "folders/Sprites/Item Icons/(OB) Bliss Items.yy",
   },
   "preMultiplyAlpha": false,
   "sequence": {

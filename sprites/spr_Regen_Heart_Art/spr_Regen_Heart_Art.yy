@@ -26,7 +26,7 @@
   "origin": 4,
   "parent": {
     "name": "Heart Item Art",
-    "path": "folders/Sprites/Item Sprites/Heart Item Art.yy",
+    "path": "folders/Sprites/Item Icons/Heart Item Art.yy",
   },
   "preMultiplyAlpha": false,
   "sequence": {
