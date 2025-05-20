@@ -477,6 +477,7 @@
     {"resourceType":"GMFolder","resourceVersion":"1.0","name":"Misc BGs","folderPath":"folders/Tile Sets/Misc BGs.yy",},
     {"resourceType":"GMFolder","resourceVersion":"1.0","name":"Nightmare BGs","folderPath":"folders/Tile Sets/Nightmare BGs.yy",},
     {"resourceType":"GMFolder","resourceVersion":"1.0","name":"Timelines","folderPath":"folders/Timelines.yy",},
+    {"resourceType":"GMFolder","resourceVersion":"1.0","name":"v1","folderPath":"folders/Objects/Bosses/Minions/Dream Minions/v1.yy",},
   ],
   "IncludedFiles": [
     {"resourceType":"GMIncludedFile","resourceVersion":"1.0","name":"df_boss_stats.json","CopyToMask":-1,"filePath":"datafiles",},
@@ -602,6 +603,7 @@
     {"id":{"name":"spr_Recollection_Cloud_v2_p2","path":"sprites/spr_Recollection_Cloud_v2_p2/spr_Recollection_Cloud_v2_p2.yy",},},
     {"id":{"name":"obj_Aim_Gap_Barrier_Bullet","path":"objects/obj_Aim_Gap_Barrier_Bullet/obj_Aim_Gap_Barrier_Bullet.yy",},},
     {"id":{"name":"scr_XC06_Setup","path":"scripts/scr_XC06_Setup/scr_XC06_Setup.yy",},},
+    {"id":{"name":"obj_demon_bat_mullet","path":"objects/obj_demon_bat_mullet/obj_demon_bat_mullet.yy",},},
     {"id":{"name":"spr_New_Soul_Pupil","path":"sprites/spr_New_Soul_Pupil/spr_New_Soul_Pupil.yy",},},
     {"id":{"name":"spr_New_Soul_Pupil_Size_Default","path":"sprites/spr_New_Soul_Pupil_Size_Default/spr_New_Soul_Pupil_Size_Default.yy",},},
     {"id":{"name":"spr_New_Soul_Pupil_Size1","path":"sprites/spr_New_Soul_Pupil_Size1/spr_New_Soul_Pupil_Size1.yy",},},

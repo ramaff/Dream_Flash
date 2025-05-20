@@ -40,6 +40,12 @@ if active_attack_delay <= 0 and active_attack_cooldown <= 0 and active_attack_du
 			active_attack = choose(6, 7);
 		}
 	}
+	if champ = 8 {
+		active_attack = choose(8, 9);
+		if currentphase = 2 {
+			active_attack = choose(9, 10);
+		}
+	}
 	
     if active_attack = 1 {
 		var _attack_counts = 24;
@@ -97,6 +103,22 @@ if active_attack_delay <= 0 and active_attack_cooldown <= 0 and active_attack_du
 		var _attack_gap = 1;
 		// Setup how many attacks per boss move, delay, etc
 		scr_Boss_Attack_Time_Setup_v2(_attack_counts, 50, _attack_gap, 180, 45, 10);
+    }
+	
+	if active_attack = 8 {
+		var _attack_counts = 24;
+		var _attack_gap = 10;
+		// Setup how many attacks per boss move, delay, etc
+		scr_Boss_Attack_Time_Setup_v2(_attack_counts, 50, _attack_gap, 360, 45, 10);
+		
+		tear_trail_tip_1 = noone;
+		tear_trail_tip_2 = noone;
+    }
+	if active_attack = 9 {
+		var _attack_counts = 8;
+		var _attack_gap = 80;
+		// Setup how many attacks per boss move, delay, etc
+		scr_Boss_Attack_Time_Setup_v2(_attack_counts, 50, _attack_gap, 240, 45, 10);
     }
 }
 
@@ -319,7 +341,7 @@ if active_attack_delay <= 0 and pattern_cooldown <= 0 and pattern_count > 0 {
 			attack_stats.bullet_life_span = 360;
 			attack_stats.bullet_size = 0.5;
 			attack_stats.bullet_direction_angle = 1;
-			attack_stats.homing_speed = 1;
+			attack_stats.homing_speed = 0.8;
 		    attack_stats.bullet_sprite = "spr_Boss_Beam_Segment";
 			attack_stats.bullet_part_color1 = make_color_rgb(0, 184, 255)
 			attack_stats.bullet_part_color2 = make_color_rgb(127, 219, 255)
@@ -440,6 +462,107 @@ if active_attack_delay <= 0 and pattern_cooldown <= 0 and pattern_count > 0 {
 			attack_stats.bullet_direction_angle = 1
 			
 			scr_boss_shoot_v2();
+		}
+	}
+	
+	if active_attack = 8 {
+		scr_Boss_Stretch("Horizontal", 0.15);
+		
+		if pattern_count = pattern_count_max {
+				
+			attack_stats.bullet_type = "obj_converge_beam"
+		    attack_stats.bullet_speed = 0;
+			attack_stats.bullet_life_span = 600;
+			attack_stats.bullet_size = 0.5;
+			attack_stats.bullet_direction_angle = 1;
+			attack_stats.homing_speed = 0.8;
+		    attack_stats.bullet_sprite = "spr_Boss_Beam_Segment";
+			attack_stats.bullet_part_color1 = make_color_rgb(200, 0, 50)
+			attack_stats.bullet_part_color2 = make_color_rgb(255, 0, 150)
+			
+			var _dir = image_angle + 270;
+			attack_stats.bullet_direction = scr_Boss_Bullet_Direction_Formula(_dir, 0.1)
+			
+			scr_boss_beam_shoot_v2()
+			
+		}
+		
+		attack_stats.bullet_direction = 210
+		attack_stats.bullet_sprite = "spr_Blood_Tear"
+		attack_stats.bullet_type = "obj_follow_the_leader_bullet_v2"
+		attack_stats.bullet_count = 1;
+		attack_stats.bullet_size = 0.35 + random(0.15);
+		attack_stats.bullet_speed = bossbulletspeed * 1.35;
+		attack_stats.bullet_life_span = 660;
+		attack_stats.bullet_direction_angle = true;
+		attack_stats.homing_speed = 1.5;
+		attack_stats.boss_xoffset = -110;
+		attack_stats.boss_yoffset = -50;
+		
+		if !instance_exists(tear_trail_tip_1) {
+			attack_stats.bullet_type = "obj_increasing_homing_bullet_v2"
+			tear_trail_tip_1 = scr_boss_shoot_v2();
+		} else {
+			attack_stats.follow_xoffset = -30 + random(60);
+			attack_stats.follow_yoffset = -30 + random(60);
+			attack_stats.bullet_target = tear_trail_tip_1
+			tear_trail_tip_1 = scr_boss_shoot_v2();
+		}
+		
+		attack_stats.bullet_direction = 330
+		attack_stats.boss_xoffset = 110;
+		if !instance_exists(tear_trail_tip_2) {
+			attack_stats.bullet_type = "obj_increasing_homing_bullet_v2"
+			tear_trail_tip_2 = scr_boss_shoot_v2();
+		} else {
+			attack_stats.follow_xoffset += -30 + random(60);
+			attack_stats.follow_yoffset += -30 + random(60);
+			attack_stats.bullet_target = tear_trail_tip_2
+			tear_trail_tip_2 = scr_boss_shoot_v2();
+		}
+		
+	}
+	
+	if active_attack = 9 {
+		
+		if pattern_count = pattern_count_max {
+			scr_Boss_Stretch("Vertical", 1);
+			image_index = 3;
+			
+			minion_count = 1;
+			minion_type = obj_demon_bat_mullet;
+			minion_health = bossmaxhealth / 15;
+			minion_speed = bossbulletspeed * (3)
+		
+			var _minion_shots = 3;
+			if currentphase = 2 {
+				_minion_shots = 4;	
+			}
+			var _dir = 270 - (30 * _minion_shots);
+			repeat(_minion_shots) {
+				minion_dir = _dir
+				scr_Minion_Spawn()
+				_dir += 60;
+			}
+		} else {
+			attack_stats.bullet_sprite = "spr_Glowy_Enemy_Shot"
+			attack_stats.bullet_type = "obj_basic_bullet_v2"
+			attack_stats.bullet_count = 6;
+			attack_stats.bullet_spread = 30;
+			attack_stats.bullet_size = 0.5;
+			attack_stats.bullet_speed = bossbulletspeed * 1.35;
+			attack_stats.bullet_life_span = 300;
+			attack_stats.boss_xoffset = -110;
+			attack_stats.boss_yoffset = -50;
+			attack_stats.bullet_direction = scr_Boss_Bullet_Direction_Formula(270, 15)
+			
+			if pattern_count mod 2 = 1 {
+				attack_stats.boss_xoffset = 110;	
+			}
+			repeat(2) {
+				scr_boss_shoot_v2();
+				attack_stats.bullet_speed += bossbulletspeed * 0.3;
+			}
 		}
 	}
 	
