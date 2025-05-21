@@ -83,6 +83,7 @@
     {"resourceType":"GMFolder","resourceVersion":"1.0","name":"v1","folderPath":"folders/Objects/Bosses/Flash Bosses/v1.yy",},
     {"resourceType":"GMFolder","resourceVersion":"1.0","name":"Minions","folderPath":"folders/Objects/Bosses/Minions.yy",},
     {"resourceType":"GMFolder","resourceVersion":"1.0","name":"Dream Minions","folderPath":"folders/Objects/Bosses/Minions/Dream Minions.yy",},
+    {"resourceType":"GMFolder","resourceVersion":"1.0","name":"v1","folderPath":"folders/Objects/Bosses/Minions/Dream Minions/v1.yy",},
     {"resourceType":"GMFolder","resourceVersion":"1.0","name":"Feel Minions","folderPath":"folders/Objects/Bosses/Minions/Feel Minions.yy",},
     {"resourceType":"GMFolder","resourceVersion":"1.0","name":"Flash Minions","folderPath":"folders/Objects/Bosses/Minions/Flash Minions.yy",},
     {"resourceType":"GMFolder","resourceVersion":"1.0","name":"v1","folderPath":"folders/Objects/Bosses/Minions/Flash Minions/v1.yy",},
@@ -477,7 +478,6 @@
     {"resourceType":"GMFolder","resourceVersion":"1.0","name":"Misc BGs","folderPath":"folders/Tile Sets/Misc BGs.yy",},
     {"resourceType":"GMFolder","resourceVersion":"1.0","name":"Nightmare BGs","folderPath":"folders/Tile Sets/Nightmare BGs.yy",},
     {"resourceType":"GMFolder","resourceVersion":"1.0","name":"Timelines","folderPath":"folders/Timelines.yy",},
-    {"resourceType":"GMFolder","resourceVersion":"1.0","name":"v1","folderPath":"folders/Objects/Bosses/Minions/Dream Minions/v1.yy",},
   ],
   "IncludedFiles": [
     {"resourceType":"GMIncludedFile","resourceVersion":"1.0","name":"df_boss_stats.json","CopyToMask":-1,"filePath":"datafiles",},
@@ -3896,6 +3896,7 @@
     {"id":{"name":"scr_Channel_Boss_Kill","path":"scripts/scr_Channel_Boss_Kill/scr_Channel_Boss_Kill.yy",},},
     {"id":{"name":"obj_thought_cloud_v2","path":"objects/obj_thought_cloud_v2/obj_thought_cloud_v2.yy",},},
     {"id":{"name":"scr_Weapon_Status_Store","path":"scripts/scr_Weapon_Status_Store/scr_Weapon_Status_Store.yy",},},
+    {"id":{"name":"obj_increasing_homing_bullet_v2_massive_wave","path":"objects/obj_increasing_homing_bullet_v2_massive_wave/obj_increasing_homing_bullet_v2_massive_wave.yy",},},
     {"id":{"name":"spr_High_Despair_Spirit_Attack","path":"sprites/spr_High_Despair_Spirit_Attack/spr_High_Despair_Spirit_Attack.yy",},},
     {"id":{"name":"spr_Barrage_Behemoth","path":"sprites/spr_Barrage_Behemoth/spr_Barrage_Behemoth.yy",},},
     {"id":{"name":"spr_Recollection_Hover_Cloud_Leave","path":"sprites/spr_Recollection_Hover_Cloud_Leave/spr_Recollection_Hover_Cloud_Leave.yy",},},

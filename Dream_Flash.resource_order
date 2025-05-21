@@ -897,6 +897,7 @@
     {"name":"scr_Shot_Fade","order":6,"path":"scripts/scr_Shot_Fade/scr_Shot_Fade.yy",},
     {"name":"obj_thought_cloud_v2","order":11,"path":"objects/obj_thought_cloud_v2/obj_thought_cloud_v2.yy",},
     {"name":"scr_Weapon_Status_Store","order":11,"path":"scripts/scr_Weapon_Status_Store/scr_Weapon_Status_Store.yy",},
+    {"name":"obj_increasing_homing_bullet_v2_massive_wave","order":2,"path":"objects/obj_increasing_homing_bullet_v2_massive_wave/obj_increasing_homing_bullet_v2_massive_wave.yy",},
     {"name":"spr_Recollection_Hover_Cloud_Leave","order":2,"path":"sprites/spr_Recollection_Hover_Cloud_Leave/spr_Recollection_Hover_Cloud_Leave.yy",},
     {"name":"obj_Jump_Spider","order":6,"path":"objects/obj_Jump_Spider/obj_Jump_Spider.yy",},
     {"name":"scr_Weapon_Switch","order":9,"path":"scripts/scr_Weapon_Switch/scr_Weapon_Switch.yy",},

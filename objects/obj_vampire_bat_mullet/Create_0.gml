@@ -10,7 +10,7 @@ scr_Boss_Size_Setup(0.4);
 
 // If boss is visually 'floating' setup boss height
 // Needed for bobbing/boss shadows
-scr_Boss_Height_Setup(70);
+scr_Boss_Height_Setup(120);
 
 timer = 0;
 active_attack_cooldown = 60 + random(30);

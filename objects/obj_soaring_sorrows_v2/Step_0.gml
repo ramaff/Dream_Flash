@@ -42,8 +42,14 @@ if active_attack_delay <= 0 and active_attack_cooldown <= 0 and active_attack_du
 	}
 	if champ = 8 {
 		active_attack = choose(8, 9);
+		if scr_Minion_Count(3) {
+			active_attack = 8;	
+		}
 		if currentphase = 2 {
 			active_attack = choose(9, 10);
+			if scr_Minion_Count(3) {
+				active_attack = 10;	
+			}
 		}
 	}
 	
@@ -120,6 +126,14 @@ if active_attack_delay <= 0 and active_attack_cooldown <= 0 and active_attack_du
 		// Setup how many attacks per boss move, delay, etc
 		scr_Boss_Attack_Time_Setup_v2(_attack_counts, 50, _attack_gap, 240, 45, 10);
     }
+	if active_attack = 10 {
+		var _attack_counts = 36;
+		var _attack_gap = 10;
+		// Setup how many attacks per boss move, delay, etc
+		scr_Boss_Attack_Time_Setup_v2(_attack_counts, 50, _attack_gap, 360, 45, 10);
+		
+		tear_trail_tip_1 = noone;
+    }
 }
 
 //////////////////////////////////////////////////////////////////////////////////////////
@@ -173,11 +187,6 @@ if active_attack_delay <= 0 and pattern_cooldown <= 0 and pattern_count > 0 {
 				attack_stats.bullet_speed += bossbulletspeed * 0.3;
 			}
 		}
-		
-
-	
-		// If you gotta change the pattern aim direction
-	    // pattern_direction += 0;
 	}
 	
 	if active_attack = 2 {
@@ -341,7 +350,7 @@ if active_attack_delay <= 0 and pattern_cooldown <= 0 and pattern_count > 0 {
 			attack_stats.bullet_life_span = 360;
 			attack_stats.bullet_size = 0.5;
 			attack_stats.bullet_direction_angle = 1;
-			attack_stats.homing_speed = 0.8;
+			attack_stats.homing_speed = 0.6;
 		    attack_stats.bullet_sprite = "spr_Boss_Beam_Segment";
 			attack_stats.bullet_part_color1 = make_color_rgb(0, 184, 255)
 			attack_stats.bullet_part_color2 = make_color_rgb(127, 219, 255)
@@ -428,7 +437,7 @@ if active_attack_delay <= 0 and pattern_cooldown <= 0 and pattern_count > 0 {
 			attack_stats.bullet_life_span = 450;
 			attack_stats.bullet_size = 0.5;
 			attack_stats.bullet_direction_angle = 1;
-			attack_stats.homing_speed = 0.5;
+			attack_stats.homing_speed = 0.4;
 		    attack_stats.bullet_sprite = "spr_Boss_Beam_Segment";
 			attack_stats.bullet_part_color1 = make_color_rgb(0, 184, 255)
 			attack_stats.bullet_part_color2 = make_color_rgb(127, 219, 255)
@@ -475,7 +484,7 @@ if active_attack_delay <= 0 and pattern_cooldown <= 0 and pattern_count > 0 {
 			attack_stats.bullet_life_span = 600;
 			attack_stats.bullet_size = 0.5;
 			attack_stats.bullet_direction_angle = 1;
-			attack_stats.homing_speed = 0.8;
+			attack_stats.homing_speed = 0.6;
 		    attack_stats.bullet_sprite = "spr_Boss_Beam_Segment";
 			attack_stats.bullet_part_color1 = make_color_rgb(200, 0, 50)
 			attack_stats.bullet_part_color2 = make_color_rgb(255, 0, 150)
@@ -531,12 +540,12 @@ if active_attack_delay <= 0 and pattern_cooldown <= 0 and pattern_count > 0 {
 			
 			minion_count = 1;
 			minion_type = obj_demon_bat_mullet;
-			minion_health = bossmaxhealth / 15;
-			minion_speed = bossbulletspeed * (3)
+			minion_health = bossmaxhealth / 16;
+			minion_speed = bossbulletspeed * (2.5)
 		
-			var _minion_shots = 3;
+			var _minion_shots = 4;
 			if currentphase = 2 {
-				_minion_shots = 4;	
+				_minion_shots = 5;	
 			}
 			var _dir = 270 - (30 * _minion_shots);
 			repeat(_minion_shots) {
@@ -564,6 +573,59 @@ if active_attack_delay <= 0 and pattern_cooldown <= 0 and pattern_count > 0 {
 				attack_stats.bullet_speed += bossbulletspeed * 0.3;
 			}
 		}
+	}
+	
+	if active_attack = 10 {
+		scr_Boss_Stretch("Horizontal", 0.15);
+		
+		if pattern_count = pattern_count_max {
+				
+			attack_stats.bullet_type = "obj_converge_beam"
+		    attack_stats.bullet_speed = 0;
+			attack_stats.bullet_life_span = 600;
+			attack_stats.bullet_size = 0.5;
+			attack_stats.bullet_direction_angle = 1;
+			attack_stats.homing_speed = 0.4;
+		    attack_stats.bullet_sprite = "spr_Boss_Beam_Segment";
+			attack_stats.bullet_part_color1 = make_color_rgb(200, 0, 50)
+			attack_stats.bullet_part_color2 = make_color_rgb(255, 0, 150)
+			
+			attack_stats.boss_xoffset = -110;
+			attack_stats.boss_yoffset = -50;
+			
+			var _dir = image_angle + 180;
+			attack_stats.bullet_direction = scr_Boss_Bullet_Direction_Formula(_dir, 0.1)
+			
+			scr_boss_beam_shoot_v2(attack_stats)
+
+			attack_stats.boss_xoffset = 110;	
+			_dir = image_angle + 360;
+			attack_stats.bullet_direction = scr_Boss_Bullet_Direction_Formula(_dir, 0.1)
+			
+			scr_boss_beam_shoot_v2(attack_stats)
+			
+		}
+		
+		attack_stats.bullet_direction = 270
+		attack_stats.bullet_sprite = "spr_Blood_Tear"
+		attack_stats.bullet_type = "obj_follow_the_leader_bullet_v2"
+		attack_stats.bullet_count = 1;
+		attack_stats.bullet_size = 0.35 + random(0.3);
+		attack_stats.bullet_speed = bossbulletspeed * 1.95;
+		attack_stats.bullet_life_span = 660;
+		attack_stats.bullet_direction_angle = true;
+		attack_stats.homing_speed = 1.5;
+		
+		if !instance_exists(tear_trail_tip_1) {
+			attack_stats.bullet_type = "obj_increasing_homing_bullet_v2_massive_wave"
+			tear_trail_tip_1 = scr_boss_shoot_v2();
+		} else {
+			attack_stats.follow_xoffset = -30 + random(60);
+			attack_stats.follow_yoffset = -30 + random(60);
+			attack_stats.bullet_target = tear_trail_tip_1
+			tear_trail_tip_1 = scr_boss_shoot_v2();
+		}
+
 	}
 	
 	// Maybe I should put this into a script

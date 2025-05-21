@@ -8,13 +8,13 @@ if !instance_exists(minionbossparent) {
 scr_Boss_Step(2);
 
 // If boss is floating in air, can make it bob up and down:
-scr_Boss_Height_Bob(30, 1, 0);
+scr_Boss_Height_Bob(60, 1, 0);
 
 // Make boss shape wobble:
 scr_Boss_Wobble("Horizontal", 0.3, 1, 0);
 
-var _tar_x = obj_Soul_Parent.perX + scr_Wave(-300, 300, 4, 0);
-var _tar_y = obj_Soul_Parent.perY - 170 - boss_height
+var _tar_x = obj_Soul_Parent.perX + scr_Wave(-300, 300, 4, sweep_offset);
+var _tar_y = obj_Soul_Parent.perY - 240 - boss_height
 
 direction = point_direction(x, y, _tar_x, _tar_y)
 speed = min(bossmovespeed * 2, point_distance(x, y, _tar_x, _tar_y))
@@ -54,10 +54,16 @@ if active_attack_delay <= 0 and pattern_cooldown <= 0 and pattern_count > 0 {
     if active_attack = 1 {
 		scr_Boss_Stretch("Vertical", 0.7);
 		
-		bullet_direction = scr_Boss_Bullet_Direction_Formula(270, 30)
+		bullet_direction = scr_Boss_Bullet_Direction_Formula(270, 120)
 		bullet_direction = (bullet_direction + scr_Soul_Point()) / 2
-		bullet_count = 7;
+		bullet_count = 5;
 		bullet_spread = 15;
+		
+		bullet_speed = bossbulletspeed * 1.2;
+		
+		scr_Boss_Shoot();
+		
+		bullet_speed += bossbulletspeed * 0.15;
 		
 		scr_Boss_Shoot();
 	
