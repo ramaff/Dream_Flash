@@ -19,6 +19,9 @@ scr_Item_Field_Push(5);
 if instance_number(obj_Item_Parent) = 0 and fieldActive = 1 {
     alarm[0] = 60;
 	fieldActive = 0;
+	
+	scr_Stat_Field_Chain_Check(); // this causes a memory leak, don't do it every step
+	// still not sure why either
 }
 
 if fieldActive = 0 {

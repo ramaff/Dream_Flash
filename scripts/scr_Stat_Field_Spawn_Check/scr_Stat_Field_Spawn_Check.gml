@@ -2,12 +2,6 @@
 // https://help.yoyogames.com/hc/en-us/articles/360005277377 for more information
 function scr_Stat_Field_Spawn_Check() {
 	var itemPick = "";
-		
-	global.orbit[0] = 0;
-	global.orbit[1] = 0;
-	global.orbit[2] = 0;
-	global.orbit[3] = 0;
-	global.orbit[999] = -1000;
     
 	var j;
 	for(j = 1; j <= 13; j++) {

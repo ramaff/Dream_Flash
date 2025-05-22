@@ -3,7 +3,7 @@
 function scr_Stat_Field_Check(){
 	var field = global.floor[global.currentroom,0];
 	
-	if field = "Normal" || field = "Boss" {
+	//if field = "Normal" || field = "Boss" {
 		if global.souldespair >= global.desFieldSpawn {
 			global.desFieldSpawn += 10;
 			global.floor[global.currentroom,0] = "Despair Field";
@@ -55,8 +55,8 @@ function scr_Stat_Field_Check(){
 		} else if instance_number(obj_Item_Parent) = 0 {
 			global.floor[global.currentroom,0] = "Normal";
 		}
-	}
-	if instance_number(obj_Item_Parent) = 0 and field != "Normal" and field != "Boss" and instance_number(obj_Potential_For_Anything) = 0 {
-		global.floor[global.currentroom,0] = "Normal";
-	}
+	//}
+	//if instance_number(obj_Item_Parent) = 0 and field != "Normal" and field != "Boss" and instance_number(obj_Potential_For_Anything) = 0 {
+	//	global.floor[global.currentroom,0] = "Normal";
+	//}
 }

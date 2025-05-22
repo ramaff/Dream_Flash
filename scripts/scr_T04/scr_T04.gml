@@ -6,21 +6,15 @@ function scr_T04(){
 		
 		var itemPick = "";
 		
-		global.orbit[0] = 0;
-		global.orbit[1] = 0;
-		global.orbit[2] = 0;
-		global.orbit[3] = 0;
-		global.orbit[999] = -1000;
-		
 		var j = 1;
             
 		for(j = 1; j <= 13; j++) {
 		    global.floor[global.currentroom,6 + j] = "00"; 
 		}
         
-		itemNumChoice = min(scr_Item_Field_Count(4), array_length(global.items) - 1)
+		var itemNumChoice = min(scr_Item_Field_Count(4), array_length(global.items) - 1)
 	
-		itemNumPick = 1;
+		var itemNumPick = 1;
 		global.floor[global.currentroom,0] = "Hyper Field"
 		var _item = "T04"
 		var _picked = []
@@ -34,6 +28,7 @@ function scr_T04(){
 		    global.floor[global.currentroom,6+j] = _picked[j - 1]
 		}
 		var i = 1;
+		var item = []
 		for(i = 1; i <= 13; i++) {
 		    item[i] = global.floor[global.currentroom,6+i];
 		}
