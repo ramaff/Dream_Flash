@@ -11,4 +11,4 @@ event_inherited();
 
 var _home_speed = 1 + bullet_stats.homing_speed - (bullet_stats.homing_speed * (alarm[0] / bullet_stats.bullet_life_span))
 
-direction = scr_Angle_Converge(direction, scr_Soul_Point() + scr_Wave(-90, 90, 1.5, 0), _home_speed)
+direction = scr_Angle_Converge(direction, scr_Soul_Point() + 60, _home_speed)

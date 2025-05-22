@@ -611,13 +611,13 @@ if active_attack_delay <= 0 and pattern_cooldown <= 0 and pattern_count > 0 {
 		attack_stats.bullet_type = "obj_follow_the_leader_bullet_v2"
 		attack_stats.bullet_count = 1;
 		attack_stats.bullet_size = 0.35 + random(0.3);
-		attack_stats.bullet_speed = bossbulletspeed * 1.95;
+		attack_stats.bullet_speed = bossbulletspeed * 1.65;
 		attack_stats.bullet_life_span = 660;
 		attack_stats.bullet_direction_angle = true;
 		attack_stats.homing_speed = 1.5;
 		
 		if !instance_exists(tear_trail_tip_1) {
-			attack_stats.bullet_type = "obj_increasing_homing_bullet_v2_massive_wave"
+			attack_stats.bullet_type = "obj_increasing_homing_bullet_v2"
 			tear_trail_tip_1 = scr_boss_shoot_v2();
 		} else {
 			attack_stats.follow_xoffset = -30 + random(60);

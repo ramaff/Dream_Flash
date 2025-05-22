@@ -3896,7 +3896,7 @@
     {"id":{"name":"scr_Channel_Boss_Kill","path":"scripts/scr_Channel_Boss_Kill/scr_Channel_Boss_Kill.yy",},},
     {"id":{"name":"obj_thought_cloud_v2","path":"objects/obj_thought_cloud_v2/obj_thought_cloud_v2.yy",},},
     {"id":{"name":"scr_Weapon_Status_Store","path":"scripts/scr_Weapon_Status_Store/scr_Weapon_Status_Store.yy",},},
-    {"id":{"name":"obj_increasing_homing_bullet_v2_massive_wave","path":"objects/obj_increasing_homing_bullet_v2_massive_wave/obj_increasing_homing_bullet_v2_massive_wave.yy",},},
+    {"id":{"name":"obj_increasing_spin_homing_bullet_v2","path":"objects/obj_increasing_spin_homing_bullet_v2/obj_increasing_spin_homing_bullet_v2.yy",},},
     {"id":{"name":"spr_High_Despair_Spirit_Attack","path":"sprites/spr_High_Despair_Spirit_Attack/spr_High_Despair_Spirit_Attack.yy",},},
     {"id":{"name":"spr_Barrage_Behemoth","path":"sprites/spr_Barrage_Behemoth/spr_Barrage_Behemoth.yy",},},
     {"id":{"name":"spr_Recollection_Hover_Cloud_Leave","path":"sprites/spr_Recollection_Hover_Cloud_Leave/spr_Recollection_Hover_Cloud_Leave.yy",},},
