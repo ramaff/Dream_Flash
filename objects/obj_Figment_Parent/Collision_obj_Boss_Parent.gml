@@ -16,7 +16,7 @@ if soulinvincibility <= 0 {
 		other.bosshealth -= scontactdamage - other.bossdefense;
 	}
     
-	scr_setup_dmg_indicator(other.x,other.y, other.scontactdamage, c_white)
+	scr_setup_dmg_indicator(other.x,other.y, scontactdamage, c_white)
     
     if shealth <= 0 {
         instance_destroy();

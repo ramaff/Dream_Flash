@@ -11,7 +11,7 @@ if !variable_struct_exists(bosses_hit_tracker, real(other.id)) {
 	
 	variable_struct_set(bosses_hit_tracker, real(other.id), 3);
 
-var _damage = abs(speed * 3) - 10;
+var _damage = (abs(speed * 3) - 10) * (shot_stats.Shot_Power / 10);
 
 var _dir;
 _dir = point_direction(x, y, other.x, other.y)// + 180;

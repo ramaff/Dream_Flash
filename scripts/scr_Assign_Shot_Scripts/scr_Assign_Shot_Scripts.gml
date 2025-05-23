@@ -133,7 +133,7 @@ function scr_Assign_Shot_Scripts(){
 	}
 	
 	if shot_stats.Shot_Lobbing == true || shot_stats.Shot_Lobbing >= 1 {
-		array_push(_shot_draw_scripts, scr_Shot_Lobbing_Draw())
+		array_push(_shot_draw_scripts, scr_Shot_Lobbing_Draw)
 	}
 	
 	

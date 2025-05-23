@@ -120,11 +120,6 @@ function scr_Soul_Stats_Setup() {
 	
 	// item releated stuff
 	cant_help = 0
-	
-	scr_Set_Soul_Scripts(id)
-	soul_step_status_effects = {}
-	soul_status_effects = {}
-	soul_draw_status_effects = {}
 
 
 }

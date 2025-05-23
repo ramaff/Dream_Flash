@@ -1,6 +1,8 @@
 /// @description Insert description here
 // You can write your code in this editor
 
+max_speed = shot_stats.Shot_Speed;
+
 var _all_the_names = variable_struct_get_names(bosses_hit_tracker)
 var _bosses_hit_count = array_length(_all_the_names)
 
@@ -17,7 +19,8 @@ drain_rate += 0.0025
 
 var _xx = x;
 var _yy = y;
-var _drain = drain_rate;
+var _ball_count = instance_number(obj_Bounce_Ball)
+var _drain = drain_rate / _ball_count;
 
 var _hypothetical_speed = abs(point_distance(0, 0, h_speed, v_speed))
 if _hypothetical_speed > max_speed {

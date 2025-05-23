@@ -169,9 +169,9 @@ function scr_Soul_Shot_Boss_Hit(_shot = other) {
         
 		        if shot_stats.Shot_Impact_Type = 1 {
 		            with (obj_Boss_Parent) {
-		                var hit_again = variable_struct_exists(projectile_hits, _boss.shot_boss_id)
+		                var hit_again = variable_struct_exists(projectile_hits, other.shot_boss_id)
 						if !hit_again {
-		                    if distance_to_object(other) < _boss.shot_stats.Shot_Impact_Size {
+		                    if distance_to_object(other) < other.shot_stats.Shot_Impact_Size {
 		                        scr_Boss_Splash_Damage_Calc();
 		                    }
 		                }

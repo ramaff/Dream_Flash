@@ -38,7 +38,7 @@ function scr_Weapon_Slot_Info_Update(_weapon_slot_info){
 		_angle += _angle_displacement
 
 	}
-	Soul_Weapons_Control.angular_rotation = floor(Soul_Weapons_Control.angular_rotation * 0.85)
+	Soul_Weapons_Control.angular_rotation = floor(Soul_Weapons_Control.angular_rotation * 0.9)
 	
 	array_sort(_weapon_slot_info, scr_sort_by_scale)
 }

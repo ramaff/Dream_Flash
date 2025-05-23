@@ -16,11 +16,11 @@ function scr_Weapon_Use_List(cWP = global.currentweapon, _weap_slot = 0) {
 		exit;	
 	}
 	
-	var current_weapon_stats = scr_Setup_Default_Weapon_Stats(cWP)
-	scr_Modify_Current_Weapon_Stats();
+	var _current_weapon_stats = scr_Setup_Default_Weapon_Stats(cWP)
+	scr_Modify_Current_Weapon_Stats(_current_weapon_stats);
 	
-	weaponCost = current_weapon_stats.Essence;	
-	weaponDelay = current_weapon_stats.Delay;
+	weaponCost = _current_weapon_stats.Essence;	
+	weaponDelay = _current_weapon_stats.Delay;
 	//show_debug_message("Weapon Cost: " + string(weaponCost) + ", Weapon Delay: " + string(weaponDelay))
 	
 	weaponCost = scr_Pre_Shoot_Weapon_Essence_Cost(weaponCost, cWP, _single_instance_active, weapStop)
@@ -55,12 +55,12 @@ function scr_Weapon_Use_List(cWP = global.currentweapon, _weap_slot = 0) {
 			scr_Ascending_Soul_Essence_Beam(cWP);	
 		}
 		
-		scr_D03();
-		scr_D10_Shot_Mod();
+		scr_D03(_current_weapon_stats);
+		scr_D10_Shot_Mod(_current_weapon_stats);
 		
 		if obj_Soul_Parent.scurrentstate = "Bleeding" and cWP < 700 {
-			scr_Bleeding_Soul_Mod(current_weapon_stats);
-			scr_Bleeding_Blade_Use(current_weapon_stats);
+			scr_Bleeding_Soul_Mod(_current_weapon_stats);
+			scr_Bleeding_Blade_Use(_current_weapon_stats);
 		}
 		
 		//current_weapon_stats = scr_Setup_Weapon_Stats(current_weapon_stats);
@@ -71,7 +71,7 @@ function scr_Weapon_Use_List(cWP = global.currentweapon, _weap_slot = 0) {
 		
 		spawnProjectile = !_single_instance_active;	
 		
-		scr_Hard_Coded_Weapon_Stats(current_weapon_stats);
+		scr_Hard_Coded_Weapon_Stats(_current_weapon_stats);
 		
 		if Charge_Hold = 2 {
 			scr_Ascending_Soul_Weapon_Mod();
@@ -86,33 +86,33 @@ function scr_Weapon_Use_List(cWP = global.currentweapon, _weap_slot = 0) {
 				if Shot_Repetition[_i] <= 0 {
 					
 					//if Charge_Hold = 2 {
-					Shot_Repetition_Stats[_i] = variable_clone(current_weapon_stats)
+					Shot_Repetition_Stats[_i] = variable_clone(_current_weapon_stats)
 					//}
 					
-					if variable_struct_exists(current_weapon_stats, "Shot_Repetition") {
-						Shot_Repetition[_i] = current_weapon_stats.Shot_Repetition
+					if variable_struct_exists(_current_weapon_stats, "Shot_Repetition") {
+						Shot_Repetition[_i] = _current_weapon_stats.Shot_Repetition
 						if global.OC[3] > 0 {
 							Shot_Repetition[_i] += global.OC[3];	
 						}
 					}
-					if variable_struct_exists(current_weapon_stats, "Shot_Repetition_Type") {
-						Shot_Repetition_Type[_i] = current_weapon_stats.Shot_Repetition_Type
+					if variable_struct_exists(_current_weapon_stats, "Shot_Repetition_Type") {
+						Shot_Repetition_Type[_i] = _current_weapon_stats.Shot_Repetition_Type
 					}
-					if variable_struct_exists(current_weapon_stats, "Shot_Barrage_Speed") {
-						Shot_Barrage_Speed[_i] = current_weapon_stats.Shot_Barrage_Speed
+					if variable_struct_exists(_current_weapon_stats, "Shot_Barrage_Speed") {
+						Shot_Barrage_Speed[_i] = _current_weapon_stats.Shot_Barrage_Speed
 					}
-					if variable_struct_exists(current_weapon_stats, "Shot_Repetition_Forward_Interval") {
-						Shot_Repetition_Forward_Interval[_i] = current_weapon_stats.Shot_Repetition_Forward_Interval
+					if variable_struct_exists(_current_weapon_stats, "Shot_Repetition_Forward_Interval") {
+						Shot_Repetition_Forward_Interval[_i] = _current_weapon_stats.Shot_Repetition_Forward_Interval
 					}
-					if variable_struct_exists(current_weapon_stats, "Shot_Default_Count") {
-						Shot_Default_Count[_i] = current_weapon_stats.Shot_Default_Count
+					if variable_struct_exists(_current_weapon_stats, "Shot_Default_Count") {
+						Shot_Default_Count[_i] = _current_weapon_stats.Shot_Default_Count
 					}
-					if variable_struct_exists(current_weapon_stats, "Shot_Repetition_Direction") {
-						Shot_Repetition_Direction[_i] = current_weapon_stats.Shot_Repetition_Direction
+					if variable_struct_exists(_current_weapon_stats, "Shot_Repetition_Direction") {
+						Shot_Repetition_Direction[_i] = _current_weapon_stats.Shot_Repetition_Direction
 					}
 					
 					if Shot_Repetition_Direction[_i] > -1 {
-						Shot_Repetition_Direction[_i] = current_weapon_stats.Shot_Direction	
+						Shot_Repetition_Direction[_i] = _current_weapon_stats.Shot_Direction	
 					}
 					
 					alarm[11] = (Shot_Barrage_Speed[_i]);
@@ -136,29 +136,29 @@ function scr_Weapon_Use_List(cWP = global.currentweapon, _weap_slot = 0) {
 		if spawnProjectile {
 			scr_OC03(cWP);
 		}
-		scr_Beast_Soul_Shot_Mod(current_weapon_stats);
+		scr_Beast_Soul_Shot_Mod(_current_weapon_stats);
 		
 		var realCost = scr_Post_Req_Weapon_Essence_Cost(weaponCost, _v6_procs);
 		
-		current_weapon_stats.Real_Essence_Cost = realCost
+		_current_weapon_stats.Real_Essence_Cost = realCost
 		
-		scr_C11_Shot_Mod(realCost)
+		scr_C11_Shot_Mod(_current_weapon_stats, realCost)
 		
-		if current_weapon_stats.Shot_Beam = 2 {
-			current_weapon_stats.Shot_Damage = false;
+		if _current_weapon_stats.Shot_Beam = 2 {
+			_current_weapon_stats.Shot_Damage = false;
 			if sWeaponTicker mod 3 = 0 { 
-				current_weapon_stats.Shot_Damage = true;	
+				_current_weapon_stats.Shot_Damage = true;	
 			} else {
-				current_weapon_stats.Shot_Power = 0;
+				_current_weapon_stats.Shot_Power = 0;
 			}
 		}
 		
 		if global.N[3] > 0 and cWP = 14 {
-			scr_Shot_Power_Set(0.4 + (global.N[3] / 10), current_weapon_stats)
-			scr_Shot_Size_Set(sqrt(0.4 + (global.N[3] / 10)), false, current_weapon_stats)
+			scr_Shot_Power_Set(0.4 + (global.N[3] / 10), _current_weapon_stats)
+			scr_Shot_Size_Set(sqrt(0.4 + (global.N[3] / 10)), false, _current_weapon_stats)
 		}
 		
-		scr_Weapon_Output(spawnProjectile, minion, current_weapon_stats)
+		scr_Weapon_Output(spawnProjectile, minion, _current_weapon_stats)
 		
 		//if obj_Soul_Parent.scurrentstate = "Bleeding" and cWP < 700 {
 		//	scr_Bleeding_Blade_Use();
