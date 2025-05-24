@@ -1,7 +1,8 @@
 /// @description Insert description here
 // You can write your code in this editor
 
-max_speed = shot_stats.Shot_Speed;
+speed = min(50, speed);
+max_speed = min(50, shot_stats.Shot_Speed);
 
 var _all_the_names = variable_struct_get_names(bosses_hit_tracker)
 var _bosses_hit_count = array_length(_all_the_names)
@@ -15,7 +16,7 @@ for(var _i = 0; _i < _bosses_hit_count; _i++) {
 // Inherit the parent event
 event_inherited();
 
-drain_rate += 0.0025
+drain_rate += 0.0025 * (shot_stats.Real_Essence_Cost / 30)
 
 var _xx = x;
 var _yy = y;
@@ -30,22 +31,24 @@ if _hypothetical_speed > max_speed {
 }
 
 var _threshold = false;
-if instance_exists(shot_stats.Shot_Follow_Origin) {
-	with(shot_stats.Shot_Follow_Origin) {
-		x = _xx;
-		y = _yy + 10;
+if shot_stats.Prime_Shot {
+	if instance_exists(shot_stats.Shot_Follow_Origin) {
+		with(shot_stats.Shot_Follow_Origin) {
+			x = _xx;
+			y = _yy + 10;
 	
-		senergy -= _drain;
-		if senergy < _drain * 60 {
-			_threshold = true;	
+			senergy -= _drain;
+			if senergy < _drain * 60 {
+				_threshold = true;	
+			}
+			if senergy < 0 {
+				instance_destroy(other)
+			}
+			if _hypothetical_speed > other.max_speed + 5 {
+				soulinvincibility = max(5, soulinvincibility);
+			}
+			other.depth = depth - 10
 		}
-		if senergy < 0 {
-			instance_destroy(other)
-		}
-		if _hypothetical_speed > other.max_speed + 5 {
-			soulinvincibility = max(5, soulinvincibility);
-		}
-		other.depth = depth - 10
 	}
 }
 

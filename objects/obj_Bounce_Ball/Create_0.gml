@@ -7,7 +7,7 @@ max_speed = 10;
 acceleration = 0.625;
 fric = 0.125
 
-drain_rate = 0.4;
+drain_rate = 0.3;
 
 alarm[10] = 5;
 

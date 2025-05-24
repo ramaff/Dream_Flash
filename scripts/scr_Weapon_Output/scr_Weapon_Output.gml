@@ -33,7 +33,7 @@ function scr_Weapon_Output(_spawn_projectile = spawnProjectile, _minion = minion
 					var _weapon_meta_data = scr_Hard_Coded_Weapon_Stats(_ex_stats);
 		
 					if !_weapon_meta_data.minion {
-						scr_Shot_Creation(_ex_stats);
+						scr_Shot_Creation(_ex_stats, false);
 						scr_Q03(false, _cw_stats);
 					} else {
 						scr_Soul_Spawn(_cw_stats);

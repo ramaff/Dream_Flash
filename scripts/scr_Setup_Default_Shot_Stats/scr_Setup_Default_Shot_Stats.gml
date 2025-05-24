@@ -6,6 +6,8 @@ function scr_Setup_Default_Shot_Stats(){
 		Delay: 20,
 		Essence: 4,
 		Real_Essence_Cost: 4,
+		Real_Weapon_Delay: 20,
+		Prime_Shot: false,
 		Weapon_Number: 0,
 		Shot_Accuracy: 15,
 		Shot_Spread: 0,

@@ -1,4 +1,4 @@
-function scr_Shot_Creation(_cw = current_weapon_stats) {
+function scr_Shot_Creation(_cw = current_weapon_stats, _prime_shot = true) {
 	
 	scr_Spike_Soul_Extra();
 	scr_Casting_Soul_Manual_Synergy(_cw);
@@ -196,6 +196,7 @@ function scr_Shot_Creation(_cw = current_weapon_stats) {
 				
 				shot_stats = variable_clone(_cw);
         
+				shot_stats.Prime_Shot = _prime_shot
 				shot_stats.Shot_Origin = obj_Soul_Parent;
 		        target = noone;
 		        sprite_index = asset_get_index(shot_stats.Shot_Sprite);
@@ -280,6 +281,7 @@ function scr_Shot_Creation(_cw = current_weapon_stats) {
 				}
 				
 		    }
+			_prime_shot = false
 			speedFac += 0.4;
 		}
     
