@@ -8,7 +8,7 @@ var fac = (1 / tote_bosses) * potency
 
 if instance_exists(Floor_Layout_Control) and global.layerdeep < 1 {
 	var rsize = global.floor[global.currentroom, 3];
-	var ideal_zoom = sqrt(1024 / rsize);
+	var ideal_zoom = power((1024 / rsize), 0.333);
 	if ideal_zoom < 0.8 {
 		ideal_zoom = 0.8;
 	}
@@ -24,7 +24,7 @@ if instance_exists(Floor_Layout_Control) and global.layerdeep < 1 {
 			}
 			
 		}
-		ideal_zoom = sqrt(1024 / (rsize + extra_zoom))
+		ideal_zoom = power((1024 / (rsize + extra_zoom)), 0.333);
 	}
 	
 	if instance_exists(obj_Class_Level_Up_Indicator) and global.level_up_camera_lock = 1 {
@@ -67,9 +67,9 @@ if instance_exists(obj_Soul_Parent) {
 	}
 	if global.cameramode = "Boss" {
 		
-		var totalaveragers = 7.5;
-		var xTote = (obj_Soul_Parent.x * 6) + (mouse_x * 1.5);
-		var yTote = (obj_Soul_Parent.y * 6) + (mouse_y * 1.5);
+		var totalaveragers = 9;
+		var xTote = (obj_Soul_Parent.x * 6) + (mouse_x * 1.5) + (room_width / 2 * 1.5);
+		var yTote = (obj_Soul_Parent.y * 6) + (mouse_y * 1.5) + (room_height / 2 * 1.5);
 
 		with (obj_Main_Boss_Parent) {
 			if state = states.normal || state = states.jumping {
@@ -79,8 +79,8 @@ if instance_exists(obj_Soul_Parent) {
 			}
 		}
 		
-		var xAv = xTote / totalaveragers;
-		var yAv = yTote / totalaveragers;
+		xAv = xTote / totalaveragers;
+		yAv = yTote / totalaveragers;
 	}
 	
 	var camX = clamp((xAv - (view_width_zoom / 2)), 0, room_width - view_width_zoom);

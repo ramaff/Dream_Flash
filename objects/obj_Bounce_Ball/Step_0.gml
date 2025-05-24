@@ -20,8 +20,7 @@ drain_rate += 0.0025 * (shot_stats.Real_Essence_Cost / 30)
 
 var _xx = x;
 var _yy = y;
-var _ball_count = instance_number(obj_Bounce_Ball)
-var _drain = drain_rate / _ball_count;
+var _drain = max(0, drain_rate)
 
 var _hypothetical_speed = abs(point_distance(0, 0, h_speed, v_speed))
 if _hypothetical_speed > max_speed {
@@ -31,24 +30,26 @@ if _hypothetical_speed > max_speed {
 }
 
 var _threshold = false;
-if shot_stats.Prime_Shot {
-	if instance_exists(shot_stats.Shot_Follow_Origin) {
-		with(shot_stats.Shot_Follow_Origin) {
+
+if instance_exists(shot_stats.Shot_Follow_Origin) {
+	with(shot_stats.Shot_Follow_Origin) {
+		if other.shot_stats.Prime_Shot {
 			x = _xx;
 			y = _yy + 10;
 	
 			senergy -= _drain;
-			if senergy < _drain * 60 {
-				_threshold = true;	
-			}
-			if senergy < 0 {
-				instance_destroy(other)
-			}
 			if _hypothetical_speed > other.max_speed + 5 {
 				soulinvincibility = max(5, soulinvincibility);
 			}
-			other.depth = depth - 10
 		}
+		if senergy < _drain * 90 {
+			_threshold = true;	
+		}
+		if senergy < 0 and _drain > 0 {
+			instance_destroy(other)
+		}
+	
+		other.depth = depth - 10
 	}
 }
 

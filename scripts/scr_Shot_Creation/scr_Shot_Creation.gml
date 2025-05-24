@@ -1,4 +1,4 @@
-function scr_Shot_Creation(_cw = current_weapon_stats, _prime_shot = true) {
+function scr_Shot_Creation(_cw = current_weapon_stats, _prime_shot = false) {
 	
 	scr_Spike_Soul_Extra();
 	scr_Casting_Soul_Manual_Synergy(_cw);

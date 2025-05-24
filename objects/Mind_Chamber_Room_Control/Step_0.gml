@@ -1,7 +1,10 @@
 
-if instance_number(obj_Item_Parent) = 0 and global.bosscount <= 1 and bossSpawn < 3 {
+if instance_number(obj_Item_Parent) = 0 and global.bosscount < 1 and bossSpawn < 3 {
 	
-	global.bosscount = 1;
+	//global.bosscount = 1;
+	global.bosstimer = 3	
+	
+	global.floor[global.currentroom,0] = "Chamber"
 	global.bossval = 0;
 
 	var difficulty = global.floor[global.currentroom,24];
@@ -22,12 +25,14 @@ if instance_number(obj_Item_Parent) = 0 and global.bosscount <= 1 and bossSpawn 
 	scr_Boss_Summon(boss,champ,boost,difficulty,0);
 	
 	bossSpawn += 1;
+	
+	exit;
 
 	
 }
 
 
-if global.bosscount <= 1 and (bossSpawn = 0 || bossSpawn = 3) {
+if global.bosscount < 1 and (bossSpawn = 0 || bossSpawn = 3) {
 	
 	if !complete {
 		scr_Room_End();
@@ -39,8 +44,8 @@ if global.bosscount <= 1 and (bossSpawn = 0 || bossSpawn = 3) {
 	}
 }
 
-if bossSpawn > 0 and bossSpawn < 3 {
+/*if bossSpawn > 0 and bossSpawn < 3 {
 	if global.bosscount < 1 {
 		global.bosscount = 1;
 	}
-}
+} */
