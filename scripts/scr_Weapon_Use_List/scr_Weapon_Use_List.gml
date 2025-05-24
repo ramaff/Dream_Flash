@@ -153,7 +153,7 @@ function scr_Weapon_Use_List(cWP = global.currentweapon, _weap_slot = 0) {
 			scr_Shot_Size_Set(sqrt(0.4 + (global.N[3] / 10)), false, _current_weapon_stats)
 		}
 		
-		scr_Weapon_Output(spawnProjectile, minion, _current_weapon_stats)
+		scr_Weapon_Output(spawnProjectile, minion, _current_weapon_stats, true)
 		
 		//if obj_Soul_Parent.scurrentstate = "Bleeding" and cWP < 700 {
 		//	scr_Bleeding_Blade_Use();

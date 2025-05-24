@@ -16,7 +16,7 @@ for(var _i = 0; _i < _bosses_hit_count; _i++) {
 // Inherit the parent event
 event_inherited();
 
-drain_rate += 0.0025 * (shot_stats.Real_Essence_Cost / 30)
+drain_rate += 0.0025 * (shot_stats.Real_Essence_Cost / shot_stats.Essence)
 
 var _xx = x;
 var _yy = y;
