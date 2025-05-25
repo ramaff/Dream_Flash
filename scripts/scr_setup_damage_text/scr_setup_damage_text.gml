@@ -24,6 +24,6 @@ function scr_setup_damage_text(_dmg_val, _color = c_white, _add_val = 0){
 	return {
 		"string": _str,
 		"color": _color,
-		"font": _damage_fonts[min(array_length(_damage_fonts), _text_size)]
+		"font": _damage_fonts[min(array_length(_damage_fonts) - 1, _text_size)]
 	}
 }

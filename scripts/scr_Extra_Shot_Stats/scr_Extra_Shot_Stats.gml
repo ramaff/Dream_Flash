@@ -1,4 +1,4 @@
-function scr_Extra_Shot_Stats() {
+function scr_Extra_Shot_Stats(_Shot_Current_Count) {
 	if shot_stats.Shot_Frames > 0 {
 		shot_stats.Shot_Frame = irandom(shot_stats.Shot_Frames)	
 	}
@@ -39,7 +39,7 @@ function scr_Extra_Shot_Stats() {
 		
 		if shot_stats.Shot_Orbital_Angle = -1 {
 			shot_stats.Shot_Orbital_Angle = point_direction(x,y,mouse_x,mouse_y);
-			shot_stats.Shot_Orbital_Angle += other.Shot_Current_Count * (360 / shot_stats.Shot_Count)
+			shot_stats.Shot_Orbital_Angle += _Shot_Current_Count * (360 / shot_stats.Shot_Count)
 		}
 		shot_stats.Shot_Center_X = other.x;
 		shot_stats.Shot_Center_Y = other.y;

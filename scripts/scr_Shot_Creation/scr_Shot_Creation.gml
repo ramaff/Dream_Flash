@@ -146,14 +146,9 @@ function scr_Shot_Creation(_cw = current_weapon_stats, _prime_shot = false) {
 	        _cw.Shot_Y_Maintain = yy;
 	    }
 	
-		if _cw.Shot_Ground = 1 {
-			inscheck = 1
-			scr_Check_Shot_Ground();	
-		
-			if inscheck = 0 {
-				//exit;	
-			}
-		}
+		/*if _cw.Shot_Ground = 1 {
+			var inscheck = scr_Check_Shot_Ground(xx, yy);
+		} */
 		
 		var mechFac = 1 + scr_Mechanical_Shot_Add(_cw);
 		var speedFac = 1;
@@ -221,7 +216,7 @@ function scr_Shot_Creation(_cw = current_weapon_stats, _prime_shot = false) {
 				}
 		        alarm[0] = shot_stats.Shot_Life_Span;
 				alarm[1] = 1;
-		        scr_Extra_Shot_Stats();
+		        scr_Extra_Shot_Stats(_Shot_Current_Count);
 			
 				////shot_stats.Shot_Timer = shot_stats.Shot_Life_Span;
 			

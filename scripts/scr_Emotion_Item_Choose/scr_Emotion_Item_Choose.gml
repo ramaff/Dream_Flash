@@ -1,6 +1,4 @@
-function scr_Emotion_Item_Choose() {
-	classform = argument[0];
-	counter = argument[1];
+function scr_Emotion_Item_Choose(_class, _counter, _room) {
 	itemtype = noone;
 	elementString = "";
 
@@ -25,20 +23,21 @@ function scr_Emotion_Item_Choose() {
 
 	var dItem = 0;
 
-	for(f = 1; f <= 12; f++) {
-		if itemtype = string(global.floor[i,f+6]) {
+	var _f = 1;
+	for(_f = 1; _f <= 12; _f++) {
+		if itemtype = string(global.floor[_room,_f+6]) {
 			dItem = 1;	
 		}
 	}
 
-	if counter >= 10 {
+	if _counter >= 10 {
 		dItem = 0;	
 	}
 
-	counter += 1;
+	_counter += 1;
 
 	if dItem = 1 {
-		return scr_Emotion_Item_Choose(classform,counter);
+		return scr_Emotion_Item_Choose(_class,_counter, _room);
 	} else {
 		return itemtype;
 	}

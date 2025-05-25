@@ -3,10 +3,10 @@
 function scr_Mech_State_Angle(){
 	if scurrentstate = "Mechanical" {
 		image_angle = lerp(image_angle, 0, 0.15);	
-		if dx > 0 {
+		if soulCurrentHorizontalSpeed > 0 {
 		    image_angle += -2;
 		} 
-		if dx < 0 {
+		if soulCurrentHorizontalSpeed < 0 {
 		    image_angle += 2;
 		}
 	} else {

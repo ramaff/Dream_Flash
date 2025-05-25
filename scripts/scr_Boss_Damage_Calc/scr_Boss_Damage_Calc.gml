@@ -7,8 +7,9 @@ function scr_Boss_Damage_Calc() {
 		speeddmg += 1 * ceil((30 - exist) / 7.5 * global.D[11]);
 	}
 
-	for(i = 0; i <= 49; i++) { 
-	    bossweak += other.bossweaken[i];
+	var _i = 0;
+	for(_i = 0; _i <= 49; _i++) { 
+	    bossweak += other.bossweaken[_i];
 	}
     
 	if other.bossReaction >= 1 {
@@ -34,7 +35,7 @@ function scr_Boss_Damage_Calc() {
 		shotweaktotal = shotDamageMult * bossweak;
 	}
 	//scr_A07_Boss_Damage();
-	if shotDamage < 0 {
+	if shotDamage < 0 || is_nan(shotDamage) {
 		shotDamage = 0;
 	}
 	
@@ -67,6 +68,7 @@ function scr_Boss_Damage_Calc() {
 		//scr_Sound_Effect(sd_Small_Damage_To_Boss);
     
 	    //Adding Bleed
+		var i = 0;
 	    if shot_stats.Shot_Bleed != 0 {
 	        for(i = 0; i <= 49; i++) {
 	            if other.bossbleed[i] = 0 {

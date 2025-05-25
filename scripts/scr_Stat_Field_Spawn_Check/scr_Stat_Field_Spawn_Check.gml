@@ -15,7 +15,7 @@ function scr_Stat_Field_Spawn_Check() {
 	for(j = 1; j <= itemNumChoice; j++) {
 		i = global.currentroom;
 		if class = "Emotion Field" {
-			itemPick = scr_Emotion_Item_Choose(class,0);
+			itemPick = scr_Emotion_Item_Choose(class,0, i);
 		} else {
 			itemPick = scr_Class_Item_Choose(class,0);
 		}

@@ -12,24 +12,24 @@ function scr_Charged_Hold() {
 	Charge_Essence = 0;
 	Charge_Total_Time = 0;
 	
-	//current_weapon_stats = scr_Setup_Default_Shot_Stats();
+	//_current_weapon_stats = scr_Setup_Default_Shot_Stats();
 	
-	current_weapon_stats = scr_Setup_Default_Weapon_Stats(weaponcharge)
-	scr_Modify_Current_Weapon_Stats();
+	var _current_weapon_stats = scr_Setup_Default_Weapon_Stats(weaponcharge)
+	scr_Modify_Current_Weapon_Stats(_current_weapon_stats);
 
 	if Charge_Hold = 2 {
 		scr_Ascending_Soul_Essence_Beam(weaponcharge);
 	}
-	scr_Setup_Charge_Stats()
+	scr_Setup_Charge_Stats(_current_weapon_stats)
 	
-	Charge_Total_Time = current_weapon_stats.Charge_Time;
+	Charge_Total_Time = _current_weapon_stats.Charge_Time;
 	
-	var _weapon_cost = current_weapon_stats.Essence;	
-	var _weapon_delay = current_weapon_stats.Delay;
+	_current_weapon_stats.Real_Essence_Cost = _current_weapon_stats.Essence;	
+	_current_weapon_stats.Real_Weapon_Delay = _current_weapon_stats.Delay;
 	
 	if global.OC[3] > 0 {
-		_weapon_delay = _weapon_delay * 3;
-		_weapon_cost = _weapon_cost * 3;	
+		_current_weapon_stats.Real_Weapon_Delay = _current_weapon_stats.Real_Weapon_Delay * 3;
+		_current_weapon_stats.Real_Essence_Cost = _current_weapon_stats.Real_Essence_Cost * 3;	
 		Charge_Essence = Charge_Essence * 3;
 		Charge_Total_Time = Charge_Total_Time * 3;
 	}
@@ -47,34 +47,34 @@ function scr_Charged_Hold() {
 	if scurrentstate = "Ascending" || charged_weap {
 		if scurrentstate = "Ascending" {
 			if !charged_weap {
-				if variable_struct_exists(current_weapon_stats, "Shot_Speed") {
-					Shot_Charge_Speed = current_weapon_stats.Shot_Speed * 0.1;
+				if variable_struct_exists(_current_weapon_stats, "Shot_Speed") {
+					Shot_Charge_Speed = _current_weapon_stats.Shot_Speed * 0.1;
 				} else {
 					Shot_Charge_Speed = 0;	
 				}
 				
-				if variable_struct_exists(current_weapon_stats, "Shot_Power") {
-					Shot_Charge_Power = current_weapon_stats.Shot_Power * 8.5;
+				if variable_struct_exists(_current_weapon_stats, "Shot_Power") {
+					Shot_Charge_Power = _current_weapon_stats.Shot_Power * 8.5;
 				} else {
 					Shot_Charge_Power = 0
 				}
 				
-				if variable_struct_exists(current_weapon_stats, "Shot_Knock_Back") {
-					Shot_Charge_Knockback = current_weapon_stats.Shot_Knock_Back * 1;
+				if variable_struct_exists(_current_weapon_stats, "Shot_Knock_Back") {
+					Shot_Charge_Knockback = _current_weapon_stats.Shot_Knock_Back * 1;
 				} else {
 					Shot_Charge_Knockback = 0;
 				}
 				
-				if variable_struct_exists(current_weapon_stats, "Shot_Size") {
-					Shot_Charge_Size = current_weapon_stats.Shot_Size * 1.6;
+				if variable_struct_exists(_current_weapon_stats, "Shot_Size") {
+					Shot_Charge_Size = _current_weapon_stats.Shot_Size * 1.6;
 				} else {
 					Shot_Charge_Size = 0
 				}
 				
 				Shot_Charge_Lifespan = 0;
 				
-				Charge_Total_Time = 15 + (_weapon_delay * 3);
-				Charge_Essence = _weapon_cost * 4;
+				Charge_Total_Time = 15 + (_current_weapon_stats.Real_Weapon_Delay * 3);
+				Charge_Essence = _current_weapon_stats.Real_Essence_Cost * 4;
 			} else {
 				Shot_Charge_Power = Shot_Charge_Power * 1.15;	
 			}
@@ -104,7 +104,7 @@ function scr_Charged_Hold() {
 	if on != 0 and global.L[1] > 0 and eeContain > 0 {
 		global.L01essence[slot] -= drain;
 	} else if on != 0 {
-		sdelay = (_weapon_delay - sdelayconservation) / sdelayconservationfactor / ((6 + global.Weap[weaponcharge]) / 6);
+		sdelay = (_current_weapon_stats.Real_Weapon_Delay - sdelayconservation) / sdelayconservationfactor / ((6 + global.Weap[weaponcharge]) / 6);
 		senergy -= drain;
 		
 		//Charge_Essence += drain

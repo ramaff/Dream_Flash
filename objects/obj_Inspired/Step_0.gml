@@ -18,7 +18,7 @@ if distance_to_object(obj_Astral_Indicator) < 15 {
 		if global.currentchapter = 4 {
 			recollectionPriceType = spr_Soul_Dream;
 		}
-	    recollectionString = "Cramming";
+	    recollectionString = "Inspired";
 	    priceString = "";
 	    recollectionUpgrade = 0;
 		recollectionExtraStats = "Upgrade these items?";
