@@ -87,6 +87,10 @@ function scr_Item_Spawn() {
 	}
 	
 	//show_debug_message("somehow scr_Item_Spawn")
+	with(obj_Item_Field) {
+		alarm[0] = 60;
+		fieldActive = 0;	
+	}
 
 	with instance_create(room_width/2,room_height/2,obj_Item_Field) {
 	    sprite_index = fieldSprite;

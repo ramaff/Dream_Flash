@@ -5,13 +5,6 @@ function scr_Gem_Draw() {
 
 	senergy = 100;
 
-	scr_Draw_Standalone_Beam();
-
-	if gemDrawBeam > 0 {
-	    //scr_Draw_Beam_Setup(spr_Yellow_Beam_Shot);
-	    scr_Draw_Beam_Setup_No_Mouse(bSprite);
-	}
-
 	if gemDrawStandaloneBeam > 0 {
 	    if bSprite = spr_Yellow_Gem_Beam_Shot {
 	        bSprite = spr_Yellow_Gem_Beam_Standalone;
@@ -19,7 +12,6 @@ function scr_Gem_Draw() {
 	    if bSprite = spr_Red_Gem_Beam_Shot {
 	        bSprite = spr_Red_Gem_Beam_Standalone;
 	    }
-	    scr_Draw_Beam_Setup_No_Mouse(bSprite);
 	}
 
 	sWeaponUseFrame = 0;

@@ -10,6 +10,9 @@ function scr_Emotion_Field_Spawn_Check(){
 	/*if instance_exists(Chapter_Change_Control) and global.floor[global.currentroom,0] != "Spawn" {
 		exit;	
 	} */
+	if instance_exists(obj_Item_Parent) {
+		exit;	
+	}
 	
 	
 	if global.emoteFieldSpawn <= 0 and global.floor[global.currentroom,0] != "Super Boss" {

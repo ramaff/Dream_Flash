@@ -2,6 +2,10 @@
 // https://help.yoyogames.com/hc/en-us/articles/360005277377 for more information
 function scr_Stat_Field_Chain_Check(){
 	
+	if instance_exists(obj_Item_Parent) {
+		exit;	
+	}
+	
 	if global.floor[global.currentroom,0] != "Super Boss" || (global.currentchapter = 4 and global.floor[global.currentroom,0] == "Super Boss") {
 		scr_Stat_Field_Check();
 		if global.floor[global.currentroom,0] != "Normal" and instance_number(obj_Item_Parent) = 0 {

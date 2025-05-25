@@ -127,11 +127,11 @@ function scr_Weapon_Use_List(cWP = global.currentweapon, _weap_slot = 0) {
 		
 		var _v6_procs = scr_V06_Active() 
 		if _v6_procs > 0 {
-			scr_V06(_v6_procs);
+			scr_V06(_current_weapon_stats, _v6_procs);
 		}
 		
 		if spawnProjectile {
-			scr_OC03(cWP);
+			scr_OC03(_current_weapon_stats, cWP);
 		}
 		scr_Beast_Soul_Shot_Mod(_current_weapon_stats);
 		

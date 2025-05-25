@@ -1,3 +1,3 @@
 /// @description Insert description here
 // You can write your code in this editor
-scr_Soul_Shot_Soul_Hit()
+scr_soul_shot_bullet_hit_v2(other.bullet_stats)
