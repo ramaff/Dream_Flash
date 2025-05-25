@@ -205,16 +205,16 @@ function scr_Boss_Choose(roomNum, exclude, difficultyAdd = 0) {
 
 	if bossform = 3.1 // Growing Sorrows
 	{
-	    bosstype = obj_Growing_Sorrows;
+	    bosstype = obj_growing_sorrows_v2;
 	    difficulty = 4;
 	    global.champ = choose(0,1,3,8);
 	}
 
 	if bossform = 4.1 // Soaring Sorrows
 	{
-	    bosstype = obj_Soaring_Sorrows;
-	    difficulty = 11;
-	    global.champ = choose(0,1);
+	    bosstype = obj_soaring_sorrows_v2;
+	    difficulty = 12;
+	    global.champ = choose(0,1,8);
 		//global.champ = 1;
 	}
 

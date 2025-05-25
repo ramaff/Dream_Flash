@@ -4,7 +4,7 @@ if point_distance(x, y, other.x, other.y) > 30 {
 	exit;
 }
 
-scr_Soul_Shot_Soul_Hit();
+//scr_Soul_Shot_Soul_Hit();
 
 var _slip_target = other
 if (_slip_target.soulCurrentHorizontalSpeed != 0 || _slip_target.soulCurrentHorizontalSpeed != 0) and shot_stats.Shot_Soul_Maintain = 0 {

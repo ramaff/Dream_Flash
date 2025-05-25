@@ -61,7 +61,7 @@ function scr_Shot_Creation(_cw = current_weapon_stats, _prime_shot = false) {
 
 	var dir = -(_cw.Shot_Spread * (_cw.Shot_Count - 1) / 2) + (-(_cw.Shot_Accuracy / 2) + random(_cw.Shot_Accuracy)) + _cw.Shot_Direction_Offset;
 
-	var Shot_Current_Count = 0;
+	var _Shot_Current_Count = 0;
 
 	
 	var actual_shot_direction = 0;
@@ -187,7 +187,7 @@ function scr_Shot_Creation(_cw = current_weapon_stats, _prime_shot = false) {
 		scr_E14_Shot_Mod(_cw);
 		//scr_Snake_Glitch_Mod(_cw);
 		
-		scr_XB05_Shot_Stats(_cw);
+		scr_XB05_Shot_Stats(_cw, _Shot_Current_Count);
 		
 		repeat(mechFac) {
 			
@@ -286,7 +286,7 @@ function scr_Shot_Creation(_cw = current_weapon_stats, _prime_shot = false) {
 		}
     
 	    dir += _cw.Shot_Spread;
-	    Shot_Current_Count++;
+	    _Shot_Current_Count++;
 	}
 
 	if _cw.Shot_Power > 0 {

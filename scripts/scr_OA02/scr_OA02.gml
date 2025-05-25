@@ -40,8 +40,9 @@ function scr_OA02(){
 			if bulletpower <= poww {
 				var xxx = x;
 				var yyy = y;
+				var _dam = bulletpower
 				with(other) {
-					scr_Optimism_Shot(xxx,yyy, bulletpower);
+					scr_Optimism_Shot(xxx,yyy, _dam);
 				}
 				instance_destroy();	
 			} else {
