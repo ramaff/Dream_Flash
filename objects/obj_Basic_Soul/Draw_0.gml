@@ -16,13 +16,13 @@ for (var _i = 0; _i < _status_effects_count; _i++) {
 		for (var _j = 0; _j < _status_effect_type_count; _j++) {
 			var _status_effect_instance = _status_effect_type[_j]
 	
-			var _xx_offset = (208 * (_status_effect_instance.duration / _status_effect_instance.max_duration))
+			var _xx_offset = (160 * (_status_effect_instance.duration / _status_effect_instance.max_duration))
 	
-			var _yy = 128 + 64 * _bar_count
+			var _yy = 104 + 48 * _bar_count
 			_bar_count++;
 
 			var _status_effect_bar = asset_get_index(_status_effect_instance.bar_sprite);
-			draw_sprite_part_ext(_status_effect_bar, 0, 0, 0, _xx_offset, 96, x - 32, y - _yy, 0.5, 0.5, c_white, 1)
+			draw_sprite_part_ext(_status_effect_bar, 0, 0, 0, _xx_offset, 80, x - 32, y - _yy, 0.5, 0.5, c_white, 1)
 			draw_sprite_ext(_status_effect_bar, 1, x - 32, y - _yy, 0.5, 0.5, 0, c_white, 1)
 		}
 	}

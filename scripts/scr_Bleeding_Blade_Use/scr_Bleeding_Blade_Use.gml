@@ -15,7 +15,7 @@ function scr_Bleeding_Blade_Use(_cw = current_weapon_stats) {
 	_cw.Shot_Melee = true;
 	_cw.Shot_Speed = 24;
 	_cw.Shot_Acceleration = -2
-	_cw.Shot_Power = 4 + (weaponCost * 2);
+	_cw.Shot_Power = 4 + (_cw.Real_Essence_Cost * 2);
 	
 	if _cw.Shot_Repetition >= 1 {
 		_cw.Shot_Power = _cw.Shot_Power / (_cw.Shot_Repetition + 1)
