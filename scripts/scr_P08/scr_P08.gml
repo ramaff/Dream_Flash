@@ -62,7 +62,7 @@ function scr_P08(){
 		        _current_weapon_stats.Shot_Gravity = scr_Accel_From_DTV(_dist, _time, _vel)
 			}
 			
-			scr_Weapon_Output(spawnProjectile, minion)
+			scr_Weapon_Output(spawnProjectile, minion, _current_weapon_stats)
 		
 		}
 		

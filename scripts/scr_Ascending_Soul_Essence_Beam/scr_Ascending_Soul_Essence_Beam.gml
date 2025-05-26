@@ -1,11 +1,11 @@
 // Script assets have changed for v2.3.0 see
 // https://help.yoyogames.com/hc/en-us/articles/360005277377 for more information
-function scr_Ascending_Soul_Essence_Beam(c_wp = global.currentweapon){
+function scr_Ascending_Soul_Essence_Beam(c_wp = global.currentweapon, _current_weapon_stats){
 	if c_wp != 14 {
-		return	
+		return _current_weapon_stats
 	}
 	
-	var _current_weapon_stats = {
+	_current_weapon_stats = {
 		Shot_Spread: 0,
 		Shot_Accuracy: 10,
 		Shot_Count: 1,

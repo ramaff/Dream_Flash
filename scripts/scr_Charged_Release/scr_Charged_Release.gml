@@ -6,7 +6,7 @@ function scr_Charged_Release() {
 			scr_Modify_Current_Weapon_Stats(_current_weapon_stats);
 			
 			if Charge_Hold = 2 {
-				_current_weapon_stats = scr_Ascending_Soul_Essence_Beam(weaponcharge);
+				_current_weapon_stats = scr_Ascending_Soul_Essence_Beam(weaponcharge, _current_weapon_stats);
 			}
 			
 			_current_weapon_stats.Shot_Speed += Charge_Speed;
