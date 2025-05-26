@@ -32,7 +32,7 @@
   "origin": 9,
   "parent": {
     "name": "Unrest Group",
-    "path": "folders/Sprites/Boss Sprites/Dream Bosses/Unrest Group.yy",
+    "path": "folders/Sprites/Boss Sprites/Dream Bosses/aaa_v1/Unrest Group.yy",
   },
   "preMultiplyAlpha": false,
   "sequence": {

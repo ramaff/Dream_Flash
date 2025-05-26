@@ -29,7 +29,7 @@
   "origin": 4,
   "parent": {
     "name": "Prime Group",
-    "path": "folders/Sprites/Boss Sprites/Dream Bosses/Prime Group.yy",
+    "path": "folders/Sprites/Boss Sprites/Dream Bosses/aaa_v1/Prime Group.yy",
   },
   "preMultiplyAlpha": false,
   "sequence": {

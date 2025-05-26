@@ -31,7 +31,7 @@
   "origin": 9,
   "parent": {
     "name": "Storm Group",
-    "path": "folders/Sprites/Boss Sprites/Dream Bosses/Storm Group.yy",
+    "path": "folders/Sprites/Boss Sprites/Dream Bosses/aaa_v1/Storm Group.yy",
   },
   "preMultiplyAlpha": false,
   "sequence": {

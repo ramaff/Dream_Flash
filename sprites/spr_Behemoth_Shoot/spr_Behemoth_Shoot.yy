@@ -32,7 +32,7 @@
   "origin": 4,
   "parent": {
     "name": "Behemoth Group",
-    "path": "folders/Sprites/Boss Sprites/Dream Bosses/Behemoth Group.yy",
+    "path": "folders/Sprites/Boss Sprites/Dream Bosses/aaa_v1/Behemoth Group.yy",
   },
   "preMultiplyAlpha": false,
   "sequence": {

@@ -35,7 +35,7 @@
   "origin": 9,
   "parent": {
     "name": "Migraine",
-    "path": "folders/Sprites/Boss Sprites/Dream Bosses/Migraine.yy",
+    "path": "folders/Sprites/Boss Sprites/Dream Bosses/aaa_v1/Migraine.yy",
   },
   "preMultiplyAlpha": false,
   "sequence": {

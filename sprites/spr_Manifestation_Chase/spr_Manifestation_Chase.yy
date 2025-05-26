@@ -31,7 +31,7 @@
   "origin": 4,
   "parent": {
     "name": "Sleeper Group",
-    "path": "folders/Sprites/Boss Sprites/Dream Bosses/Sleeper Group.yy",
+    "path": "folders/Sprites/Boss Sprites/Dream Bosses/aaa_v1/Sleeper Group.yy",
   },
   "preMultiplyAlpha": false,
   "sequence": {

@@ -26,7 +26,7 @@
   "origin": 4,
   "parent": {
     "name": "Phase Group",
-    "path": "folders/Sprites/Boss Sprites/Dream Bosses/Phase Group.yy",
+    "path": "folders/Sprites/Boss Sprites/Dream Bosses/aaa_v1/Phase Group.yy",
   },
   "preMultiplyAlpha": false,
   "sequence": {

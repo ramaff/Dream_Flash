@@ -26,7 +26,7 @@
   "origin": 4,
   "parent": {
     "name": "old",
-    "path": "folders/Sprites/Boss Sprites/Dream Bosses/Soaring Group/old.yy",
+    "path": "folders/Sprites/Boss Sprites/Dream Bosses/aaa_v1/Soaring Group/old.yy",
   },
   "preMultiplyAlpha": false,
   "sequence": {

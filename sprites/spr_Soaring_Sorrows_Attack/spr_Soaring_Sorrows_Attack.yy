@@ -33,7 +33,7 @@
   "origin": 9,
   "parent": {
     "name": "Soaring Group",
-    "path": "folders/Sprites/Boss Sprites/Dream Bosses/Soaring Group.yy",
+    "path": "folders/Sprites/Boss Sprites/Dream Bosses/aaa_v1/Soaring Group.yy",
   },
   "preMultiplyAlpha": false,
   "sequence": {
