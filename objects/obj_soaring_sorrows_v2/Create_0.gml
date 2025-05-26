@@ -15,7 +15,7 @@ scr_Boss_Height_Setup(70);
 
 y -= 400;
 
-death_sprite = spr_boss_template_ko;
+death_sprite = spr_soaring_sorrows_v2_ko;
 boss_palette = spr_soaring_sorrows_v2_palette;
 boss_palette_index = champ;
 if champ = 8 {
