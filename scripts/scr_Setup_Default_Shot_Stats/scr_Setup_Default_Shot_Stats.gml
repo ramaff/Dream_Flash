@@ -53,6 +53,7 @@ function scr_Setup_Default_Shot_Stats(){
 		Shot_Acceleration: 0,
 		Shot_Fade: 0,
 		Shot_Shrink: 0,
+		Shot_Fizzle_Out: 1,
 		Shot_After_Images: 0,
 		Shot_Boss_Aim: 0,
 		Shot_Face_Direction: false,

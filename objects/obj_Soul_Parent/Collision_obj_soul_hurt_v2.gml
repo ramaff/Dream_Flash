@@ -22,9 +22,9 @@ if soulinvincibility <= 0 and other.bullet_stats.bullet_power > 0 and soul_under
 	scr_soul_hit_status_add_v2(other.bullet_stats);
     
     if global.totalhearts <= 0 {
-    if shealth <= 0 {
-        instance_destroy();
-    }
+	    if shealth <= 0 {
+	        instance_destroy();
+	    }
     }
 }
 

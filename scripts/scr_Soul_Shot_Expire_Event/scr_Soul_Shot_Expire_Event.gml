@@ -18,17 +18,6 @@ function scr_Soul_Shot_Expire_Event(){
 		
 		return;
 		
-		/*
-		with instance_create(x,y,object_index) {
-	        shot_stats = scr_Duplicate_Shot_Stats();
-			//shot_stats.Shot_Timer = shot_stats.Shot_Life_Span;
-			image_alpha = 1;
-			//shot_stats.Shot_Form_Show = 0;
-			shot_stats.Shot_Size_Relation = 1;
-			//shot_stats.Shot_Timer = shot_stats.Shot_Life_Span;
-			shot_stats.Shot_Size_Max = shot_stats.Shot_Size;
-			sprite_index = other.sprite_index;
-	    } */
 	}
 	if shot_stats.Shot_Comeback > 0 {
 	    shot_stats.Shot_Comeback--;

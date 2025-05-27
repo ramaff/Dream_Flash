@@ -30,7 +30,7 @@ function scr_OB04() {
 			}
 			_current_weapon_stats.Shot_Speed = _current_weapon_stats.Shot_Speed * (0.75 + random(0.5))
 		
-			var _weapon_meta_data = scr_Hard_Coded_Weapon_Stats(_current_weapon_stats, barrage, minion, spawnProjectile);
+			var _weapon_meta_data = scr_Hard_Coded_Weapon_Stats(_current_weapon_stats);
 		
 			if _current_weapon_stats.Shot_Beam = 0 {
 				_current_weapon_stats.Shot_Life_Span = _current_weapon_stats.Shot_Life_Span * 0.75

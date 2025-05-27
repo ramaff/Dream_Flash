@@ -47,7 +47,9 @@ function scr_Assign_Shot_Scripts(){
 	if shot_stats.Shot_Shrink = 1 {
 		array_push(_shot_step_scripts, scr_Shot_Shrink)
 	} else {
-		//array_push(_shot_step_scripts, scr_Shot_Fizzle_Out)
+		if shot_stats.Shot_Fizzle_Out = 1 {
+			array_push(_shot_draw_scripts, scr_Shot_Fizzle_Out)
+		}
 	}
 	
 	if shot_stats.Shot_Fade = 1 {
