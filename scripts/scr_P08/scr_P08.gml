@@ -42,12 +42,8 @@ function scr_P08(){
 				_current_weapon_stats.Shot_Frame = clamp(_current_weapon_stats.Shot_Frame, 0, 3);	
 				_current_weapon_stats.Shot_Life_Span = 5;
 			}
-			
-			barrage = false;
-			minion = false;
-			spawnProjectile = true;
 		
-			scr_Hard_Coded_Weapon_Stats(_current_weapon_stats);
+			var _weapon_meta_data = scr_Hard_Coded_Weapon_Stats(_current_weapon_stats);
 		
 			if _current_weapon_stats.Shot_Beam = 0 {
 				_current_weapon_stats.Shot_Lobbing = true;
@@ -62,7 +58,7 @@ function scr_P08(){
 		        _current_weapon_stats.Shot_Gravity = scr_Accel_From_DTV(_dist, _time, _vel)
 			}
 			
-			scr_Weapon_Output(spawnProjectile, minion, _current_weapon_stats)
+			scr_Weapon_Output(_weapon_meta_data.spawnProjectile, _weapon_meta_data.minion, _current_weapon_stats)
 		
 		}
 		

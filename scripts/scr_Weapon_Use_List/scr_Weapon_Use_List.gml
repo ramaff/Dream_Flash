@@ -62,19 +62,15 @@ function scr_Weapon_Use_List(cWP = global.currentweapon, _weap_slot = 0) {
 		
 		//current_weapon_stats = scr_Setup_Weapon_Stats(current_weapon_stats);
 		
-		var barrage = false;
-		var minion = false;
-		var spawnProjectile = true;
+		var _weapon_meta_data = scr_Hard_Coded_Weapon_Stats(_current_weapon_stats);
 		
-		spawnProjectile = !_single_instance_active;	
-		
-		scr_Hard_Coded_Weapon_Stats(_current_weapon_stats);
+		_weapon_meta_data.spawnProjectile = !_single_instance_active;	
 		
 		if Charge_Hold = 2 {
 			scr_Ascending_Soul_Weapon_Mod();
 		}
 		
-		if barrage {
+		if _weapon_meta_data.barrage {
 			
 			var fval = 0;
 	
@@ -130,7 +126,7 @@ function scr_Weapon_Use_List(cWP = global.currentweapon, _weap_slot = 0) {
 			scr_V06(_current_weapon_stats, _v6_procs);
 		}
 		
-		if spawnProjectile {
+		if _weapon_meta_data.spawnProjectile {
 			scr_OC03(_current_weapon_stats, cWP);
 		}
 		scr_Beast_Soul_Shot_Mod(_current_weapon_stats);
@@ -153,7 +149,7 @@ function scr_Weapon_Use_List(cWP = global.currentweapon, _weap_slot = 0) {
 			scr_Shot_Size_Set(sqrt(0.4 + (global.N[3] / 10)), false, _current_weapon_stats)
 		}
 		
-		scr_Weapon_Output(spawnProjectile, minion, _current_weapon_stats, true)
+		scr_Weapon_Output(_weapon_meta_data.spawnProjectile, _weapon_meta_data.minion, _current_weapon_stats, true)
 		
 		//if obj_Soul_Parent.scurrentstate = "Bleeding" and cWP < 700 {
 		//	scr_Bleeding_Blade_Use();

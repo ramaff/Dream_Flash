@@ -40,11 +40,11 @@ function scr_Q01() {
 			_current_weapon_stats.Shot_Homing_Speed = 1.5;
 
 			
-			barrage = false;
-			minion = false;
-			spawnProjectile = true;
+			var barrage = false;
+			var minion = false;
+			var spawnProjectile = true;
 		
-			scr_Hard_Coded_Weapon_Stats(_current_weapon_stats);
+			var _weapon_meta_data = scr_Hard_Coded_Weapon_Stats(_current_weapon_stats);
 		
 			if _current_weapon_stats.Shot_Beam = 0 {
 				_current_weapon_stats.Shot_Life_Span = _current_weapon_stats.Shot_Life_Span * 2.5
@@ -63,7 +63,7 @@ function scr_Q01() {
 			
 			_current_weapon_stats.Real_Essence_Cost = 0;
 		
-			scr_Weapon_Output(spawnProjectile, minion, _current_weapon_stats, false)
+			scr_Weapon_Output(_weapon_meta_data.spawnProjectile, _weapon_meta_data.minion, _current_weapon_stats, false)
 		}
 		
 	}
