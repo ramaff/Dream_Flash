@@ -29,7 +29,7 @@ function scr_Boss_Status_Step() {
 			
 			scr_State_Gain(bosspoison[i]);
         
-	        scr_Status_Damage_Display(bosspoison[i],5);
+	        scr_Status_Damage_Display(bosspoison[i], c_green);
         
 	        if bosspoisonticks[i] <= 0 {
 	            bosspoison[i] = 0;
@@ -45,7 +45,7 @@ function scr_Boss_Status_Step() {
 			
 			scr_State_Gain(bossbleed[i]);
         
-	        scr_Status_Damage_Display(bossbleed[i],1);
+	        scr_Status_Damage_Display(bossbleed[i], c_red);
         
 	        if bossbleedticks[i] <= 0 {
 	            bossbleed[i] = 0;
@@ -61,7 +61,7 @@ function scr_Boss_Status_Step() {
 			
 			scr_State_Gain(bossfire[i]);
         
-	        scr_Status_Damage_Display(bossfire[i],2);
+	        scr_Status_Damage_Display(bossfire[i], c_orange);
         
 	        if bossfireticks[i] <= 0 {
 	            bossfire[i] = 0;

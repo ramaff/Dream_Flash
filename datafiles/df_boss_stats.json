@@ -97,59 +97,68 @@
 
         "Boss 003": {
             "Name": "Growing Sorrows",
-            "Recollection_Sprite": "reco_Growing_Sorrows",
-            "Health_Phase_1": 290,
-            "Health_Phase_2": 230,
+            "Recollection_Sprite": "reco_growing_sorrows_v2",
+            "Health_Phase_1": 310,
+            "Health_Phase_2": 290,
             "Defense_Phase_1": 0,
             "Defense_Phase_2": 0,
-            "Boss_Danger": 4,
+            "Boss_Danger": 3,
             "Bullet_Speed": 3.5,
             "Move_Speed": 1.95,
-            "Palette": "spr_Growing_Sorrows_Palette",
+            "Palette": "spr_growing_sorrows_v2_palette",
         
             "recollectionDescription": "This boss grows in sadness as the fight goes on.",
         
             "Champ 1": {
                 "Name": "Feel Sorrows",
-                "Recollection_Sprite": "reco_Growing_Sorrows",
-                "Health_Phase_1": 340,
-                "Health_Phase_2": 270,
-                "Palette_Index": 3
+                "Recollection_Sprite": "reco_growing_sorrows_v2",
+                "Health_Phase_1": 360,
+                "Health_Phase_2": 340,
+                "Palette_Index": 1
             },
             "Champ 2": { 
                 "Name": "Toxic Sorrows",
-                "Recollection_Sprite": "reco_Growing_Sorrows",
-                "Health_Phase_1": 340,
-                "Health_Phase_2": 270,
-                "Palette_Index": 1
+                "Recollection_Sprite": "reco_growing_sorrows_v2",
+                "Health_Phase_1": 360,
+                "Health_Phase_2": 340,
+                "Palette_Index": 2
             },
             "Champ 8": {
-                "Name": "Sonic Sorrows",
-                "Recollection_Sprite": "reco_Growing_Sorrows",
-                "Health_Phase_1": 390,
-                "Health_Phase_2": 310,
+                "Name": "Vampiric Sorrows",
+                "Recollection_Sprite": "reco_growing_sorrows_v2",
+                "Health_Phase_1": 410,
+                "Health_Phase_2": 390,
                 "Bullet_Speed": 4,
-                "Palette_Index": 4
+                "Palette_Index": 3
             }
         },
 
         "Boss 004": {
             "Name": "Soaring Sorrows",
-            "Recollection_Sprite": "reco_Soaring_Sorrows",
-            "Health_Phase_1": 590,
-            "Health_Phase_2": 530,
+            "Recollection_Sprite": "reco_soaring_sorrows_v2",
+            "Health_Phase_1": 790,
+            "Health_Phase_2": 730,
             "Defense_Phase_1": 0,
             "Defense_Phase_2": 0,
-            "Boss_Danger": 10,
+            "Boss_Danger": 12,
             "recollectionDescription": "Feeds off the sorrow of others. Capable of using advanced attacks.",
             "Bullet_Speed": 3.9,
             "Move_Speed": 3.3,
+            "Palette": "spr_soaring_sorrows_v2_palette",
         
             "Champ 1": {
                 "Name": "Arcane Sorrows",
-                "Recollection_Sprite": "spr_Arcane_Sorrows",
-                "Health_Phase_1": 675,
-                "Health_Phase_2": 595
+                "Recollection_Sprite": "reco_soaring_sorrows_v2",
+                "Health_Phase_1": 830,
+                "Health_Phase_2": 910,
+                "Palette_Index": 1
+            },
+            "Champ 8": {
+                "Name": "Pit Sorrows",
+                "Recollection_Sprite": "reco_soaring_sorrows_v2",
+                "Health_Phase_1": 890,
+                "Health_Phase_2": 1090,
+                "Palette_Index": 2
             }
         },
 

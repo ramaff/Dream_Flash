@@ -11,7 +11,7 @@ for(i = 0; i <= 49; i++) {
         
         bosshealth -= bosspoison[i];
         
-        scr_Status_Damage_Display(bosspoison[i],5);
+        scr_Status_Damage_Display(bosspoison[i], c_green);
         
         if bosspoisonticks[i] <= 0 {
             bosspoison[i] = 0;
@@ -25,7 +25,7 @@ for(i = 0; i <= 49; i++) {
         
         bosshealth -= bossbleed[i];
         
-        scr_Status_Damage_Display(bossbleed[i],1);
+        scr_Status_Damage_Display(bossbleed[i], c_red);
         
         if bossbleedticks[i] <= 0 {
             bossbleed[i] = 0;
@@ -39,7 +39,7 @@ for(i = 0; i <= 49; i++) {
         
         bosshealth -= bossfire[i];
         
-        scr_Status_Damage_Display(bossfire[i],2);
+        scr_Status_Damage_Display(bossfire[i], c_orange);
         
         if bossfireticks[i] <= 0 {
             bossfire[i] = 0;
