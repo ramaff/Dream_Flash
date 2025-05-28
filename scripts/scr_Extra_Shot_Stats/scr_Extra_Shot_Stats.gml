@@ -117,6 +117,8 @@ function scr_Extra_Shot_Stats(_Shot_Current_Count) {
 	if shot_stats.Shot_Origin = obj_Soul_Parent {
 		scr_V08();
 	}
+	
+	alarm[1] = 1;
 		
 
 }

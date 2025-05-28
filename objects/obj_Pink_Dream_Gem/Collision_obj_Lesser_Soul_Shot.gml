@@ -84,6 +84,7 @@ if !hit_again and other.shot_stats.Shot_Melee = 0 {
             image_alpha = other.image_alpha;
             oshotid = shot_id;
 			shot_stats.Shot_Friction = 0;
+			//scr_Assign_Shot_Scripts();
         }
 		variable_struct_set(other.projectile_hits, oshotid, oshotid)
         //ds_list_add(other.projectile_hits, oshotid);  

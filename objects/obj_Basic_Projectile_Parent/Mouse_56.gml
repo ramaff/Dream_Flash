@@ -6,5 +6,8 @@ if shot_stats.Shot_Orbital_Type = 1 {
 	}
     speed = shot_stats.Shot_Speed;
     shot_stats.Shot_Orbital_Type = 0;
+	
+	var _i = array_get_index(shot_stats.Shot_Step_Scripts, scr_Shot_Rotate)
+	array_delete(shot_stats.Shot_Step_Scripts, _i, 1)
 }
 

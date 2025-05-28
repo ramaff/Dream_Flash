@@ -22,6 +22,7 @@ repeat(shot_stats.Shot_Burst_Stats[burstIndex].Amount) {
 		} else {
 			shot_stats.Shot_Burst_Stats = false;	
 		}
+		//scr_Assign_Shot_Scripts();
 	}
 	dir += shot_stats.Shot_Burst_Stats[burstIndex].Spread;
 }
