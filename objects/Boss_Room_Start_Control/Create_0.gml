@@ -9,6 +9,12 @@ scr_Wall_Form();
 
 fieldSpawn = 0;
 
+global.orbit[0] = 0;
+global.orbit[1] = 0;
+global.orbit[2] = 0;
+global.orbit[3] = 0;
+global.orbit[999] = -1000;
+
 //scr_Room_Effect_Setup()
 
 //instance_create(0,0, obj_Medium_Room_Wall);
