@@ -15,7 +15,7 @@ function scr_P03() {
 			Shot_Duplicate_Sprite: "spr_Vindictive_Soul",
 			Shot_Type: "obj_Lesser_Soul_Shot",
 			Shot_Image_Speed: 1,
-			Shot_Speed: 3.5,
+			Shot_Speed: 7,
 			Shot_Power: pow,
 			Shot_Knock_Back: 0,
 			Shot_Life_Span: 230,
@@ -25,9 +25,7 @@ function scr_P03() {
 			Shot_Face_Direction: 1,
 			Shot_Homing_Type: 2,
 			Shot_Homing_Range: 240,
-			Shot_Extra_Hits: [1, 0, 0, 0, 0],
-			Shot_Extra_Hit_Frequency: [95, 0, 0, 0, 0],
-			Shot_Extra_Hit_Power: [pow, 0, 0, 0, 0]
+			Shot_Extra_Hits_Frequency: 60,
 		};
 		
 		if instance_exists(obj_Boss_Parent) {

@@ -67,5 +67,6 @@ function scr_State_Form_Unlock(){
 			ds_list_add(global.i_item_pool, "I36");
 		}
 		obj_Soul_Parent.stransformedstate = global.soultransformedstate;
+		obj_Soul_Parent.soul_step_after_scripts = scr_Set_Soul_Step_After_Scripts(obj_Soul_Parent)
 	}
 }

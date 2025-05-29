@@ -6,7 +6,7 @@ function scr_Shot_Homing_3(){
 	if instance_exists(obj_Boss_Parent) {
 		with obj_Boss_Parent {
 		    var dis = point_distance(x, y, other.x, other.y);
-			var hit_again = variable_struct_exists(projectile_hits, other.shot_boss_id)
+			var hit_again = variable_struct_exists(projectile_hits, real(other.shot_boss_id) + other.shot_stats.Shot_ID_Offset)
 			if !hit_again and dis < other.shot_stats.Shot_Homing_Range and dis < _max_dis {
 				_target = id;
 			}

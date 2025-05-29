@@ -19,9 +19,7 @@ if instance_exists(obj_Boss_Parent) {
 	current_weapon_stats.Shot_Homing_Type = 2;
 	current_weapon_stats.Shot_Homing_Range = 120;
 
-	current_weapon_stats.Shot_Extra_Hits[0] = 1;
-	current_weapon_stats.Shot_Extra_Hit_Frequency[0] = 45;
-	current_weapon_stats.Shot_Extra_Hit_Power[0] = 5;
+	current_weapon_stats.Shot_Extra_Hits_Frequency = 45;
     
     current_weapon_stats.Shot_Phasing = 1;
 	current_weapon_stats.Shot_Pierce += 2;

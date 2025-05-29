@@ -4,7 +4,7 @@
 #macro GAME_VERSION "24"
 
 // in the format of x.x (ex: "1.0" minor version = x.1.0 full version value)
-#macro GAME_MINOR_VERSION "5"
+#macro GAME_MINOR_VERSION "5.1"
 #macro GAME_VERSION_BETA "0"
 
 function scr_Macros(){
