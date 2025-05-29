@@ -1033,7 +1033,8 @@
         "Scrub_Credit": 0.5,
         "Spike_Credit": 0.5,
         "Casting_Credit": 0.5,
-        "Bleeding_Credit": 0.5
+        "Bleeding_Credit": 0.5,
+        "Ascending_Credit": 0.5
     },
 
     "M01": {
