@@ -98,6 +98,9 @@ for(i = 0; i < extra_shots_amount; i++) {
 					} else {
 						direction = point_direction(x,y,mouse_x, mouse_y);
 					}
+					if shot_stats.Shot_Point_Angle || shot_stats.Shot_Point_Angle = 1 {
+						image_angle = direction	
+					}
 				}
 	
 				if instance_exists(obj_Boss_Parent) {

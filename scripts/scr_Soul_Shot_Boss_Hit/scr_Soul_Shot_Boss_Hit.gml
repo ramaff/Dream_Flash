@@ -6,10 +6,10 @@ function scr_Soul_Shot_Boss_Hit(_shot = other) {
 	with(_shot) {
 		var _hitable = false
 	
-		if !variable_struct_exists(_boss.projectile_hits, id) {
+		if !variable_struct_exists(_boss.projectile_hits, shot_boss_id) {
 			_hitable = true
 		}
-		if variable_struct_get(_boss.projectile_hits, id) != (real(id) + shot_stats.Shot_ID_Offset) {
+		if variable_struct_get(_boss.projectile_hits, shot_boss_id) != (real(shot_boss_id) + shot_stats.Shot_ID_Offset) {
 			_hitable = true	
 		}
 		
@@ -155,7 +155,7 @@ function scr_Soul_Shot_Boss_Hit(_shot = other) {
 		            }
 		        }
         
-				variable_struct_set(_boss.projectile_hits, id, real(id) + shot_stats.Shot_ID_Offset)
+				variable_struct_set(_boss.projectile_hits, shot_boss_id, real(shot_boss_id) + shot_stats.Shot_ID_Offset)
 			
 				//show_debug_message("scr_Soul_Shot_Boss_Hit: " + string(shot_stats.Shot_Burst_Stats))
 			
@@ -169,7 +169,7 @@ function scr_Soul_Shot_Boss_Hit(_shot = other) {
         
 		        if shot_stats.Shot_Impact_Type = 1 {
 		            with (obj_Boss_Parent) {
-		                var hit_again = variable_struct_exists(projectile_hits, other.shot_boss_id)
+		                var hit_again = variable_struct_exists(projectile_hits, real(other.shot_boss_id) + other.shot_stats.Shot_ID_Offset)
 						if !hit_again {
 		                    if distance_to_object(other) < other.shot_stats.Shot_Impact_Size {
 		                        scr_Boss_Splash_Damage_Calc();
