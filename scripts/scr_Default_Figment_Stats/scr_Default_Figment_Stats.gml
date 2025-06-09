@@ -146,6 +146,7 @@ function scr_Default_Figment_Stats() {
 	soul_draw_status_effects = {}
 	
 	health_bar_alpha = 0;
+	soul_saved_health = 100;
 
 
 }

@@ -12,7 +12,7 @@ if soul_saved_health != shealth {
 	health_bar_alpha -= 0.025;
 }
 
-var _xx_offset = (192 * (shealth / smaxhealth))
+var _xx_offset = (208 * (shealth / smaxhealth))
 var _yy = 104;
 
 draw_sprite_part_ext(spr_Figment_Health_Bar, 0, 0, 0, _xx_offset, 104, x - 64, y - _yy, 0.5, 0.5, c_white, health_bar_alpha)

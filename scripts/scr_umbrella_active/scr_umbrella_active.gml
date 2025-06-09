@@ -4,6 +4,9 @@ function scr_single_instance_weapon_active(_c_wp){
 	var _single_instance_active = false;
 	var _single_instance_object = noone;
 
+	if _c_wp = 601 {
+		_single_instance_object = obj_Healing_Essence
+	}
 	if _c_wp = 603 {
 		_single_instance_object = obj_Umbrella_Shot
 	}

@@ -22,6 +22,9 @@ function scr_Assign_Shot_Scripts(){
 		array_push(_shot_step_scripts, scr_P05_Particles)
 	}
 	if shot_stats.Shot_Extra_Hits_Frequency != -1 {
+		if shot_stats.Shot_Ticks_Modifiable {
+			shot_stats.Shot_Extra_Hits_Frequency = round(shot_stats.Shot_Extra_Hits_Frequency * (shot_stats.Real_Weapon_Delay / shot_stats.Delay))
+		}
 		array_push(_shot_step_scripts, scr_Shot_Extra_Hits_Tick)
 	}
 	if shot_stats.Shot_Suck != 0 {

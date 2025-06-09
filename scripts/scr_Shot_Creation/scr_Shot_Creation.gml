@@ -9,7 +9,6 @@ function scr_Shot_Creation(_cw = current_weapon_stats, _prime_shot = false) {
 	scr_D06(_cw);
 	scr_A08(_cw);
 	scr_D11(_cw);
-	//scr_V09_Add_old();
 	
 	scr_P09(_cw);
 	
@@ -17,7 +16,6 @@ function scr_Shot_Creation(_cw = current_weapon_stats, _prime_shot = false) {
 	scr_OC06(_cw);
 	scr_XB02(_cw);
 	scr_XA06(_cw);
-	//scr_XA06(_cw);
 	
 	
 	// Note
@@ -27,15 +25,6 @@ function scr_Shot_Creation(_cw = current_weapon_stats, _prime_shot = false) {
 	// So add a boolean to each script signifying if its a stubborn barrage or not?
 	
 	////
-
-	//show_debug_message(string(Shot_Count))
-	//show_debug_message(string(Shot_Repetition[bi]))
-	
-	//var _cw = current_weapon_stats;
-	
-	//if Shot_Repetition[bi] >= 1 {
-		//_cw.Shot_Count = _cw.Shot_Default_Count[bi];
-	//}
 
 	repeat(_cw.Shot_Count) {
 		sadd = global.soulshotamountaddchance + irandom(99);
@@ -50,8 +39,6 @@ function scr_Shot_Creation(_cw = current_weapon_stats, _prime_shot = false) {
 	scr_D10(_cw);
 	
 	scr_XB05_Shot_Mod(_cw);
-	
-	//scr_Beast_Soul_Shot_Mod(_cw);
 
 	if _cw.Shot_Count > 1 {
 	    if _cw.Shot_Spread < 10 and _cw.Shot_Spread >= 0 {
@@ -81,11 +68,6 @@ function scr_Shot_Creation(_cw = current_weapon_stats, _prime_shot = false) {
 			actual_shot_direction = point_direction(x,y,instance_nearest(x,y,obj_Boss_Parent).x,instance_nearest(x,y,obj_Boss_Parent).y);
 		}
 	}
-	
-	/*if Shot_Repetition[bi] == Shot_Repetition_Max[bi] {
-		Shot_Repetition_Stats[bi] = scr_Dupe_Struct(_cw)
-		Shot_Repetition_Direction[bi] = actual_shot_direction
-	} */
 	
 	if Shot_Repetition[bi] >= 1 {
 		_cw.Shot_Direction = Shot_Repetition_Direction[bi];
@@ -145,10 +127,6 @@ function scr_Shot_Creation(_cw = current_weapon_stats, _prime_shot = false) {
 	        _cw.Shot_X_Maintain = xx;
 	        _cw.Shot_Y_Maintain = yy;
 	    }
-	
-		/*if _cw.Shot_Ground = 1 {
-			var inscheck = scr_Check_Shot_Ground(xx, yy);
-		} */
 		
 		var mechFac = 1 + scr_Mechanical_Shot_Add(_cw);
 		var speedFac = 1;

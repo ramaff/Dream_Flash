@@ -151,10 +151,6 @@ function scr_Weapon_Use_List(cWP = global.currentweapon, _weap_slot = 0) {
 		
 		scr_Weapon_Output(_weapon_meta_data.spawnProjectile, _weapon_meta_data.minion, _current_weapon_stats, true)
 		
-		//if obj_Soul_Parent.scurrentstate = "Bleeding" and cWP < 700 {
-		//	scr_Bleeding_Blade_Use();
-		//}
-		
 		senergy -= _current_weapon_stats.Real_Essence_Cost;
 		sWeaponTicker++;
     

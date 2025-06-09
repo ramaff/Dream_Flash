@@ -6,7 +6,7 @@ function scr_Soul_Shot_Soul_Hit(_minion = false){
 		if other.shot_stats.Shot_Healing = 1 and other.shot_stats.Shot_Exist_Time mod other.shot_stats.Shot_Extra_Hits_Frequency = 0 {
 			var _amt = other.shot_stats.Shot_Power
 			if _minion {
-				_amt = _amt * 10;	
+				_amt = _amt * 5;
 			}
 			
 			shealth += _amt;
