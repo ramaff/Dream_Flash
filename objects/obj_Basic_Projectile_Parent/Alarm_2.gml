@@ -29,7 +29,7 @@ if global.gameParticles > 0 {
 			alarm[0] = life;
 			
 			speed = other.shot_stats.Shot_Trail_Speed
-			direction = other.shot_stats.Shot_Trail_Direction
+			direction = other.shot_stats.Shot_Trail_Direction - (other.shot_stats.Shot_Trail_Direction_Spread / 2) + random(other.shot_stats.Shot_Trail_Direction_Spread)
 			
 			base_direction = direction
 

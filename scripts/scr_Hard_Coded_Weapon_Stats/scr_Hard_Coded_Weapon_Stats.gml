@@ -320,8 +320,8 @@ function scr_Hard_Coded_Weapon_Stats(_cw_stats, barrage = false, minion = false,
 	        break;
     
 	    case 601:
-	        scr_Healing_Essence_Use(_cw_stats);
-			spawnProjectile = false;
+	        //scr_Healing_Essence_Use(_cw_stats);
+			//spawnProjectile = false;
 	        break;
 		case 602:
 	     //   scr_Protective_Barrier_Use();

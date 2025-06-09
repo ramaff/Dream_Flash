@@ -32,12 +32,9 @@ function scr_H53(){
 		_current_weapon_stats.Shot_Extra_Hits_Frequency = 30
 			
 		_current_weapon_stats = scr_Setup_Weapon_Stats(_current_weapon_stats);
+
 			
-		barrage = false;
-		minion = false;
-		spawnProjectile = true;
-			
-		scr_Weapon_Output(spawnProjectile, minion, _current_weapon_stats)
+		scr_Weapon_Output(true, false, _current_weapon_stats)
 
 
 }

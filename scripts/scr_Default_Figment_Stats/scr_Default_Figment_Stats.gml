@@ -144,6 +144,8 @@ function scr_Default_Figment_Stats() {
 	soul_step_status_effects = {}
 	soul_status_effects = {}
 	soul_draw_status_effects = {}
+	
+	health_bar_alpha = 0;
 
 
 }

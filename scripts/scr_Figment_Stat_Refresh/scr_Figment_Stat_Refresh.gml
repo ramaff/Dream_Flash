@@ -27,5 +27,7 @@ function scr_Figment_Stat_Refresh() {
 
 	}
 	alarm[6] = 15;
+	
+	soul_saved_health = shealth;
 
 }

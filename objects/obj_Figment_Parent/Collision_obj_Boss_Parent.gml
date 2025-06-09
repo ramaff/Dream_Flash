@@ -9,7 +9,7 @@ if soulinvincibility <= 0 {
         sminknockbacktime = 6;
     }
     
-    soulinvincibility = 15;
+    soulinvincibility = 30;
     shealth -= other.bosscontactdamage
     
 	if (scontactdamage > other.bossdefense) {
