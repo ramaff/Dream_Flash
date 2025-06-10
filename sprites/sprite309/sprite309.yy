@@ -26,7 +26,7 @@
   "origin": 0,
   "parent": {
     "name": "Hand Group",
-    "path": "folders/Sprites/Boss Sprites/Flash Bosses/Hand Group.yy",
+    "path": "folders/Sprites/Boss Sprites/Flash Bosses/aaa_v1/Hand Group.yy",
   },
   "preMultiplyAlpha": false,
   "sequence": {

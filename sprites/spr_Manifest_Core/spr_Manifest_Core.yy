@@ -33,7 +33,7 @@
   "origin": 4,
   "parent": {
     "name": "Core Manifester",
-    "path": "folders/Sprites/Boss Sprites/Flash Bosses/Core Manifester.yy",
+    "path": "folders/Sprites/Boss Sprites/Flash Bosses/aaa_v1/Core Manifester.yy",
   },
   "preMultiplyAlpha": false,
   "sequence": {

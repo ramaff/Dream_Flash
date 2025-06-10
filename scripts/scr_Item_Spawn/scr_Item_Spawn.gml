@@ -1,10 +1,11 @@
 function scr_Item_Spawn() {
 	
-	fieldType = argument[0];
-	currItem = 1;
-	totalItems = 0;
+	var fieldType = argument[0];
+	var currItem = 1;
+	var totalItems = 0;
 	
 	var i = 0;
+	var item = []
 
 	for(i = 1; i <= 13; i ++) {
 	    item[i] = argument[i];
@@ -86,6 +87,10 @@ function scr_Item_Spawn() {
 	}
 	
 	//show_debug_message("somehow scr_Item_Spawn")
+	with(obj_Item_Field) {
+		alarm[0] = 60;
+		fieldActive = 0;	
+	}
 
 	with instance_create(room_width/2,room_height/2,obj_Item_Field) {
 	    sprite_index = fieldSprite;
@@ -99,7 +104,7 @@ function scr_Item_Spawn() {
 	            itemOrbit = 0;
 	            path_start(Item_Path_Minus,25,path_action_continue,1)
 	            path_position = 0.5;
-	            itemVal = other.item[13];
+	            itemVal = item[13];
 	            if string_digits(itemVal) = itemVal {
 	                itemVal = real(itemVal);
 	            }
@@ -129,17 +134,17 @@ function scr_Item_Spawn() {
 		        itemOrbit = 1 + floor((i-1) / 4);
 				itemOrbit = 1;
 		        path_start(Item_Path,25,path_action_continue,1)
-		        path_position = (i / other.totalItems);
-		        itemVal = other.item[i];
+		        path_position = (i / totalItems);
+		        itemVal = item[i];
 		        if string_digits(itemVal) = itemVal {
 		            itemVal = real(itemVal);
 		        }
 				stacks = 1;
 		        itemData = 6 + i;
-		        if other.fieldType = "Weapon Field" {
+		        if fieldType = "Weapon Field" {
 		            weapon = 1;
 		        }
-				if other.fieldType = "Hyper Field" {
+				if fieldType = "Hyper Field" {
 					stacks = 2;	
 				}
 				

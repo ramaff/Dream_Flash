@@ -26,7 +26,7 @@
   "origin": 4,
   "parent": {
     "name": "(OA) Hope Items",
-    "path": "folders/Sprites/Item Sprites/(OA) Hope Items.yy",
+    "path": "folders/Sprites/Item Icons/(OA) Hope Items.yy",
   },
   "preMultiplyAlpha": false,
   "sequence": {

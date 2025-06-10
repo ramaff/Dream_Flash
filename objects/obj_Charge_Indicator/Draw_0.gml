@@ -12,13 +12,13 @@ if instance_exists(obj_Soul_Parent) {
 	var cMax = 120 * cNum;
 
 	if variable_struct_exists(global.weapon_stats, obj_Soul_Parent.weaponcharge) {
-		var current_weapon_stats = scr_Setup_Default_Weapon_Stats(obj_Soul_Parent.weaponcharge)
-		scr_Modify_Current_Weapon_Stats();
+		var _current_weapon_stats = scr_Setup_Default_Weapon_Stats(obj_Soul_Parent.weaponcharge)
+		scr_Modify_Current_Weapon_Stats(_current_weapon_stats);
 	
 		//show_debug_message("current_stats: " + string(current_stats))
 	
-		if variable_struct_exists(current_weapon_stats, "Charge_Time") {
-			cMax = current_weapon_stats.Charge_Time;
+		if variable_struct_exists(_current_weapon_stats, "Charge_Time") {
+			cMax = _current_weapon_stats.Charge_Time;
 		}
 		
 		if global.OC[3] > 0 {

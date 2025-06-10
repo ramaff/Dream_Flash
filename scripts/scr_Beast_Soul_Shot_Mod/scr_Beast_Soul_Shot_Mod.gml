@@ -31,8 +31,8 @@ function scr_Beast_Soul_Shot_Mod(_cw) {
 	
 		scr_force_push(id, 20, _force, _force / 20, _force_direction, _force_angular_velocity)
 		
-		weaponCost = weaponCost * 2;
-		weaponDelay = weaponDelay * 1.5;
+		_cw.Real_Essence_Cost = _cw.Real_Essence_Cost * 2;
+		_cw.Real_Weapon_Delay = _cw.Real_Weapon_Delay * 1.5;
 		
 	}
 

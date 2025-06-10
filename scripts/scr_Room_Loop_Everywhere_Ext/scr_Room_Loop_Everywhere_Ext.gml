@@ -68,9 +68,7 @@ function scr_Room_Loop_Everywhere_Ext() {
 	}
 
 	if bnc = 1 {
-		shot_boss_id = instance_id_get( instance_count ) + global.instanceidincrementer;
-	
-		global.instanceidincrementer++;
+		shot_stats.Shot_ID_Offset++;
 	}
 
 

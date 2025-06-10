@@ -1,27 +1,24 @@
 // Script assets have changed for v2.3.0 see
 // https://help.yoyogames.com/hc/en-us/articles/360005277377 for more information
-function scr_Soul_Shot_Soul_Hit(){
+function scr_Soul_Shot_Soul_Hit(_minion = false){
 
-	if shot_stats.Shot_Damage {
-		if shot_stats.Shot_Healing = 1 {
-			other.shealth += shot_stats.Shot_Power / 60;
-
-			if shothealemit = 0 {
-				var valdis = shot_stats.Shot_Power * shot_stats.Shot_Life_Span / 60;
-
-				with instance_create(other.x,other.y,obj_Damage_Indicator) {
-				    element = 6;
-				    damageIndication = valdis;
-				    textSize = 1;
-				    direction = 90;
-				    speed = 1.5 + random(0.35)
-				    friction = 0.01 + (other.speed / 600)
-				    alarm[0] = 30 + irandom(6);
-				}
-				shothealemit = 1;
+	//if other.shot_stats.Shot_Damage {
+		if other.shot_stats.Shot_Healing = 1 and other.shot_stats.Shot_Exist_Time mod other.shot_stats.Shot_Extra_Hits_Frequency = 0 {
+			var _amt = other.shot_stats.Shot_Power
+			if _minion {
+				_amt = _amt * 5;
 			}
-		}
+			
+			shealth += _amt;
+
+			scr_setup_dmg_indicator(other.x,other.y, _amt, c_fuchsia)
+			
+			
+			shealth = min(smaxhealth, shealth)	
+				//other.shot_stats.Shot_Healing = 1;
+			}
+		//}
 	
-	}
+	//}
 
 }

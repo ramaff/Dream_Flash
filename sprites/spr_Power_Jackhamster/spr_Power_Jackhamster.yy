@@ -26,7 +26,7 @@
   "origin": 4,
   "parent": {
     "name": "JackHamster",
-    "path": "folders/Sprites/Boss Sprites/Flash Bosses/JackHamster.yy",
+    "path": "folders/Sprites/Boss Sprites/Flash Bosses/aaa_v1/JackHamster.yy",
   },
   "preMultiplyAlpha": false,
   "sequence": {

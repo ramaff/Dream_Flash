@@ -26,7 +26,7 @@
   "origin": 4,
   "parent": {
     "name": "Veil Group",
-    "path": "folders/Sprites/Boss Sprites/Dream Bosses/Veil Group.yy",
+    "path": "folders/Sprites/Boss Sprites/Dream Bosses/aaa_v1/Veil Group.yy",
   },
   "preMultiplyAlpha": false,
   "sequence": {

@@ -26,7 +26,7 @@
   "origin": 0,
   "parent": {
     "name": "Guardian Group",
-    "path": "folders/Sprites/Boss Sprites/Dream Bosses/Guardian Group.yy",
+    "path": "folders/Sprites/Boss Sprites/Dream Bosses/aaa_v1/Guardian Group.yy",
   },
   "preMultiplyAlpha": false,
   "sequence": {

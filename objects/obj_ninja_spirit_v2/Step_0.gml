@@ -147,7 +147,7 @@ if active_attack_delay <= 0 and active_attack_cooldown <= 0 and active_attack_du
 		if champ = 1 {
 			_a_amount = 6
 		}
-		scr_Boss_Attack_Time_Setup_v2(_a_amount, 120, 20, 30, 30, -80);
+		scr_Boss_Attack_Time_Setup_v2(_a_amount, 120, 20, 30, 30, 10);
 		
 		// Can set up the initial pattern direction
 		pattern_direction = 180;
@@ -155,7 +155,7 @@ if active_attack_delay <= 0 and active_attack_cooldown <= 0 and active_attack_du
 	// Crazy Sword Slash
     if active_attack = 4 {
 		// Setup how many attacks per boss move, delay, etc
-		scr_Boss_Attack_Time_Setup_v2(30, 160, 1, 30, 30, -120);
+		scr_Boss_Attack_Time_Setup_v2(30, 160, 1, 30, 30, 10);
 		
 		scr_Boss_Dash_Setup_v2(scr_Soul_Point(), 0, bossmovespeed * 12)
 		

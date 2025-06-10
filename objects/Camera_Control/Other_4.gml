@@ -19,7 +19,10 @@ if instance_exists(obj_Soul_Parent) {
 }
 
 if room = The_Start_Room {
-	view_zoom = 0.9375;
+	view_zoom = 1;
 } else {
-	view_zoom = 0.875;	
+	view_zoom = 0.9375;	
 }
+
+
+

@@ -16,7 +16,9 @@ if global.gameParticles > 0 {
 
 			sprite_index = asset_get_index(other.shot_stats.Shot_Trail_Sprite);
 
-			image_angle = other.image_angle;
+			if other.shot_stats.Shot_Trail_Angle_Inherit {
+				image_angle = other.image_angle;
+			}
 			depth = other.depth - 1;
 		
 			image_blend = scr_Mix_Two_Color_Arrays(other.shot_stats.Shot_Trail_Color_1, other.shot_stats.Shot_Trail_Color_2)
@@ -29,7 +31,7 @@ if global.gameParticles > 0 {
 			alarm[0] = life;
 			
 			speed = other.shot_stats.Shot_Trail_Speed
-			direction = other.shot_stats.Shot_Trail_Direction
+			direction = other.shot_stats.Shot_Trail_Direction - (other.shot_stats.Shot_Trail_Direction_Spread / 2) + random(other.shot_stats.Shot_Trail_Direction_Spread)
 			
 			base_direction = direction
 

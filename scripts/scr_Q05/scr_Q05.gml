@@ -21,13 +21,14 @@ function scr_Q05(_essence_cost){
 		Shot_Knock_Back: 10,
 		Shot_Life_Span: 60,
 		Shot_Lobbing: true,
-		Shot_Lobbing_Tilt: 10,
+		Shot_Lobbing_Tilt: 1,
         Shot_Height: 30,
         Shot_Fall_Speed: -10,
         Shot_Gravity: 0.36,
 		Shot_Size: 0.5,
 		Shot_Pierce: 3,
 		Shot_Bounce: 1,
+		Shot_Fizzle_Out: 0,
 		Shot_Burst_Stats: [
             {
 				Shot_Expire_Burst: true,

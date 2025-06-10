@@ -11,7 +11,7 @@ function scr_Boss_Share_Damage(_boss = minionbossparent, _stored_hp = boss_store
 	if instance_exists(_boss) {
 		with (_boss) {
 			bosshealth -= _damage;
-			scr_Damage_Indicator(0, _damage, 1)
+			scr_setup_dmg_indicator(x,y, _damage, c_white);
 		}
 	}
 	

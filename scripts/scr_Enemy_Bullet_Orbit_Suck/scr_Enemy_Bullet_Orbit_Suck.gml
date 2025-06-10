@@ -1,4 +1,4 @@
-function scr_Enemy_Bullet_Orbit_Suck(_shut = 1) {
+function scr_Enemy_Bullet_Orbit_Suck(_shut = shot_stats.Shot_Suck) {
 	var _suck_speed = 0;
 	var _suck_angle = 0;
 

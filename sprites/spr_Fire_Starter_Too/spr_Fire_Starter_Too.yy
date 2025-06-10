@@ -31,7 +31,7 @@
   "origin": 4,
   "parent": {
     "name": "Fire Starter Group",
-    "path": "folders/Sprites/Boss Sprites/Flash Bosses/Fire Starter Group.yy",
+    "path": "folders/Sprites/Boss Sprites/Flash Bosses/aaa_v1/Fire Starter Group.yy",
   },
   "preMultiplyAlpha": false,
   "sequence": {

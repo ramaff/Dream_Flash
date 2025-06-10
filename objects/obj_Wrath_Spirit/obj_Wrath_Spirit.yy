@@ -10,8 +10,8 @@
   "managed": true,
   "overriddenProperties": [],
   "parent": {
-    "name": "Dream Minions",
-    "path": "folders/Objects/Bosses/Minions/Dream Minions.yy",
+    "name": "v1",
+    "path": "folders/Objects/Bosses/Minions/Dream Minions/v1.yy",
   },
   "parentObjectId": {
     "name": "obj_Minion_Phase",

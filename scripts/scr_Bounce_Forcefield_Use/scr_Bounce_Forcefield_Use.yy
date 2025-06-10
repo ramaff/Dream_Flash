@@ -6,6 +6,6 @@
   "isDnD": false,
   "parent": {
     "name": "Utility Weapon Use",
-    "path": "folders/Scripts/Weapon And Projectile Commands/Utility Weapon Use.yy",
+    "path": "folders/Scripts/Weapon And Projectile Setup/Utility Weapon Use.yy",
   },
 }

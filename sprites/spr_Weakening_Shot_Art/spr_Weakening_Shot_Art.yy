@@ -26,7 +26,7 @@
   "origin": 4,
   "parent": {
     "name": "Imaginary Shot Art",
-    "path": "folders/Sprites/Weapon Sprites/Imaginary Shot Art.yy",
+    "path": "folders/Sprites/Weapon Art/Imaginary Shot Art.yy",
   },
   "preMultiplyAlpha": false,
   "sequence": {

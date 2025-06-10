@@ -1,6 +1,7 @@
 function scr_Room_Change_Actions() {
 	scr_Heart_Respawn();
 	//scr_H07();
+	
 
 	global.roomSizeX = global.floor[global.currentroom,3];
 	global.roomSizeY = global.floor[global.currentroom,3];

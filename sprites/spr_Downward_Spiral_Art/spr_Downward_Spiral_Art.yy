@@ -26,7 +26,7 @@
   "origin": 4,
   "parent": {
     "name": "(XC) Despair Items",
-    "path": "folders/Sprites/Item Sprites/(XC) Despair Items.yy",
+    "path": "folders/Sprites/Item Icons/(XC) Despair Items.yy",
   },
   "preMultiplyAlpha": false,
   "sequence": {

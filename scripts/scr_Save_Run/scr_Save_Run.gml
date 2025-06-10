@@ -24,7 +24,7 @@ function scr_Save_Run() {
 	var _full_version_string = scr_Build_Full_Version()
 
 	ini_write_real("Run", "GAME_VERSION", GAME_VERSION);
-	ini_write_real("Run", "GAME_MINOR_VERSION", string_digits(GAME_MINOR_VERSION));
+	ini_write_real("Run", "GAME_MINOR_VERSION", real(GAME_MINOR_VERSION));
 	ini_write_real("Run", "GAME_VERSION_BETA", GAME_VERSION_BETA);
 	
 	ini_write_real("Run", "currentchapter", global.currentchapter);

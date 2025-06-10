@@ -27,7 +27,7 @@
   "origin": 4,
   "parent": {
     "name": "Spectre Group",
-    "path": "folders/Sprites/Boss Sprites/Dream Bosses/Spectre Group.yy",
+    "path": "folders/Sprites/Boss Sprites/Dream Bosses/aaa_v1/Spectre Group.yy",
   },
   "preMultiplyAlpha": false,
   "sequence": {

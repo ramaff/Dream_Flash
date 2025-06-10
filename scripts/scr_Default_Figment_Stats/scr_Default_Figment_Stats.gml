@@ -141,6 +141,12 @@ function scr_Default_Figment_Stats() {
 	sminknockbackdirection = 0;
 	sminknockbacktime = 0;
 
+	soul_step_status_effects = {}
+	soul_status_effects = {}
+	soul_draw_status_effects = {}
+	
+	health_bar_alpha = 0;
+	soul_saved_health = 100;
 
 
 }

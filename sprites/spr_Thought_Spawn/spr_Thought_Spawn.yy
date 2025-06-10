@@ -27,7 +27,7 @@
   "origin": 4,
   "parent": {
     "name": "Thought Wall",
-    "path": "folders/Sprites/Boss Sprites/Dream Bosses/Thought Wall.yy",
+    "path": "folders/Sprites/Boss Sprites/Dream Bosses/aaa_v1/Thought Wall.yy",
   },
   "preMultiplyAlpha": false,
   "sequence": {

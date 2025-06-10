@@ -26,7 +26,7 @@
   "origin": 4,
   "parent": {
     "name": "(U) Mental Phenomena Item Art",
-    "path": "folders/Sprites/Item Sprites/(U) Mental Phenomena Item Art.yy",
+    "path": "folders/Sprites/Item Icons/(U) Mental Phenomena Item Art.yy",
   },
   "preMultiplyAlpha": false,
   "sequence": {

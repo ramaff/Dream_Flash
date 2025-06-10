@@ -26,7 +26,7 @@
   "origin": 0,
   "parent": {
     "name": "Pocket Group",
-    "path": "folders/Sprites/Boss Sprites/Flash Bosses/Pocket Group.yy",
+    "path": "folders/Sprites/Boss Sprites/Flash Bosses/aaa_v1/Pocket Group.yy",
   },
   "preMultiplyAlpha": false,
   "sequence": {

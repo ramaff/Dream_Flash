@@ -7,4 +7,4 @@
 	
 	instance_destroy();
 	
-	global.N[3]--;
+	global.T[2]--;

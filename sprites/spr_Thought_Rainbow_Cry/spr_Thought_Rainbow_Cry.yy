@@ -30,7 +30,7 @@
   "origin": 9,
   "parent": {
     "name": "old",
-    "path": "folders/Sprites/Boss Sprites/Flash Bosses/Cloud Boss Group/old.yy",
+    "path": "folders/Sprites/Boss Sprites/Flash Bosses/aaa_v1/Cloud Boss Group/old.yy",
   },
   "preMultiplyAlpha": false,
   "sequence": {

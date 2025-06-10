@@ -10,13 +10,13 @@ function scr_Q01() {
 			exit;	
 		}
 		
-		scr_Default_Weapon_Stats();
+		var _current_weapon_stats = scr_Setup_Default_Shot_Stats();
 		
-		current_weapon_stats = scr_Setup_Default_Weapon_Stats(_c_wp)
-		scr_Modify_Current_Weapon_Stats();
+		_current_weapon_stats = scr_Setup_Default_Weapon_Stats(_c_wp)
+		scr_Modify_Current_Weapon_Stats(_current_weapon_stats);
 		
-		var _delay = current_weapon_stats.Delay / scr_Class_Stat_Firerate_Multiplier();
-		if current_weapon_stats.Shot_Beam = 2 {
+		var _delay = _current_weapon_stats.Delay / scr_Class_Stat_Firerate_Multiplier();
+		if _current_weapon_stats.Shot_Beam = 2 {
 			_delay = _delay * 3;	
 		}
 		
@@ -26,42 +26,44 @@ function scr_Q01() {
 			
 			global.no_brainer -= 1;
 		
-			current_weapon_stats.Shot_Mouse = 0;
-			current_weapon_stats.Shot_Direction = random(360);
+			_current_weapon_stats.Shot_Mouse = 0;
+			_current_weapon_stats.Shot_Direction = random(360);
 
-			if current_weapon_stats.Shot_Beam = 2 {
-				current_weapon_stats.Shot_Frame = global.essencebeamtime / 5
-				current_weapon_stats.Shot_Frame = clamp(current_weapon_stats.Shot_Frame, 0, 3);	
-				current_weapon_stats.Shot_Life_Span = 5;
+			if _current_weapon_stats.Shot_Beam = 2 {
+				_current_weapon_stats.Shot_Frame = global.essencebeamtime / 5
+				_current_weapon_stats.Shot_Frame = clamp(_current_weapon_stats.Shot_Frame, 0, 3);	
+				_current_weapon_stats.Shot_Life_Span = 5;
 			}
-			current_weapon_stats.Shot_Speed = current_weapon_stats.Shot_Speed / (1.75 + random(0.75))
-			current_weapon_stats.Shot_Homing_Type = 1;
-			current_weapon_stats.Shot_Homing_Range = 500;
-			current_weapon_stats.Shot_Homing_Speed = 1.5;
+			_current_weapon_stats.Shot_Speed = _current_weapon_stats.Shot_Speed / (1.75 + random(0.75))
+			_current_weapon_stats.Shot_Homing_Type = 1;
+			_current_weapon_stats.Shot_Homing_Range = 500;
+			_current_weapon_stats.Shot_Homing_Speed = 1.5;
 
 			
-			barrage = false;
-			minion = false;
-			spawnProjectile = true;
+			var barrage = false;
+			var minion = false;
+			var spawnProjectile = true;
 		
-			scr_Hard_Coded_Weapon_Stats(current_weapon_stats);
+			var _weapon_meta_data = scr_Hard_Coded_Weapon_Stats(_current_weapon_stats);
 		
-			if current_weapon_stats.Shot_Beam = 0 {
-				current_weapon_stats.Shot_Life_Span = current_weapon_stats.Shot_Life_Span * 2.5
-				current_weapon_stats.Shot_Lobbing = true;
-				current_weapon_stats.Shot_Height += 20
-				current_weapon_stats.Shot_Fall_Speed = -0.4
+			if _current_weapon_stats.Shot_Beam = 0 {
+				_current_weapon_stats.Shot_Life_Span = _current_weapon_stats.Shot_Life_Span * 2.5
+				_current_weapon_stats.Shot_Lobbing = true;
+				_current_weapon_stats.Shot_Height += 20
+				_current_weapon_stats.Shot_Fall_Speed = -0.4
 			
-				var _dist = current_weapon_stats.Shot_Height;
-				var _time = current_weapon_stats.Shot_Life_Span;
-				var _vel = current_weapon_stats.Shot_Fall_Speed;
+				var _dist = _current_weapon_stats.Shot_Height;
+				var _time = _current_weapon_stats.Shot_Life_Span;
+				var _vel = _current_weapon_stats.Shot_Fall_Speed;
 			
 				// velocity is backwards
-		        current_weapon_stats.Shot_Gravity = scr_Accel_From_DTV(_dist, _time, _vel)
+		        _current_weapon_stats.Shot_Gravity = scr_Accel_From_DTV(_dist, _time, _vel)
 			
 			}
+			
+			_current_weapon_stats.Real_Essence_Cost = 0;
 		
-			scr_Weapon_Output(spawnProjectile, minion)
+			scr_Weapon_Output(_weapon_meta_data.spawnProjectile, _weapon_meta_data.minion, _current_weapon_stats, false)
 		}
 		
 	}

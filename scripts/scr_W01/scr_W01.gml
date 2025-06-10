@@ -10,10 +10,10 @@ function scr_W01() {
 		with (obj_Boss_Parent) {
     
 		    if collision_line(other.x,other.y,mouse_x,mouse_y,self,false,false) {
-		        dmg = (30 + (global.W[01] * 30)) * (1 + global.teleportboost);
-		        bosshealth -= dmg;
+		        var _dmg = (30 + (global.W[01] * 30)) * (1 + global.teleportboost);
+		        bosshealth -= _dmg;
             
-		        scr_Damage_Indicator(0, dmg, 2);
+				scr_setup_dmg_indicator(x,y, _dmg, c_white);
 		    }
 		}
 	}

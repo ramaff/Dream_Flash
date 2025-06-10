@@ -18,6 +18,12 @@ function scr_Game_Control_Setup() {
 		"base_tutorial": 0,
 	}
 	
+	global.orbit[0] = 0;
+	global.orbit[1] = 0;
+	global.orbit[2] = 0;
+	global.orbit[3] = 0;
+	global.orbit[999] = -1000;
+	
 	//scr_Setup_Default_Shot_Stats();
 
 	scr_Music_Set();

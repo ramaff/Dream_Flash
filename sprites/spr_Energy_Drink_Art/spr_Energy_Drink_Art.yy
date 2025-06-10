@@ -26,7 +26,7 @@
   "origin": 4,
   "parent": {
     "name": "Food Item Art",
-    "path": "folders/Sprites/Item Sprites/Food Item Art.yy",
+    "path": "folders/Sprites/Item Icons/Food Item Art.yy",
   },
   "preMultiplyAlpha": false,
   "sequence": {

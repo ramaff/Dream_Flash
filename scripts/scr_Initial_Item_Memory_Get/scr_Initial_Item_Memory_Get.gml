@@ -41,9 +41,9 @@ function scr_Initial_Item_Memory_Get(_stacks = 1){
 	scr_Memory_Info_Bank(true);
 
 	if !(is_string(itemVal)) {
-		if global.recollectionWeap[itemVal] >= 1 {
+		//if global.recollectionWeap[itemVal] >= 1 {
 			recollectionUpgrade = global.Weap[itemVal] + 1;
-		}
+		//}
 	}
 	
 	//show_debug_message("upgrade: " + string(recollectionUpgrade))

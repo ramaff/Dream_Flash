@@ -26,7 +26,7 @@
   "origin": 4,
   "parent": {
     "name": "(F) State Item Art",
-    "path": "folders/Sprites/Item Sprites/(F) State Item Art.yy",
+    "path": "folders/Sprites/Item Icons/(F) State Item Art.yy",
   },
   "preMultiplyAlpha": false,
   "sequence": {

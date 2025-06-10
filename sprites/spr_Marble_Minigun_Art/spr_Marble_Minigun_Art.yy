@@ -26,7 +26,7 @@
   "origin": 4,
   "parent": {
     "name": "Sharp and Solid Art",
-    "path": "folders/Sprites/Weapon Sprites/Sharp and Solid Art.yy",
+    "path": "folders/Sprites/Weapon Art/Sharp and Solid Art.yy",
   },
   "preMultiplyAlpha": false,
   "sequence": {

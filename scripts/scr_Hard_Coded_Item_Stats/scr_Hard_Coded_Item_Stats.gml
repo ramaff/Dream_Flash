@@ -692,9 +692,11 @@ function scr_Hard_Coded_Item_Stats(itemVal, items_to_add = 1, reload = false) {
 	}
 
 	if itemVal = "L02" {
-		global.weaponslots++;
-		if global.weaponslots > 4 {
-			global.weaponslots = 4;	
+		if !reload  {
+			global.weaponslots++;
+			if instance_exists(Soul_Weapons_Control) {
+				scr_Weapon_Slot_Info_Update(Soul_Weapons_Control.weapon_slot_info)
+			}
 		}
 	    //global.L[2]++;
 	}
@@ -806,7 +808,10 @@ function scr_Hard_Coded_Item_Stats(itemVal, items_to_add = 1, reload = false) {
 	}
 	if itemVal = "N04" {
 	    if !reload {
-			scr_N04();	
+			scr_N04();
+			if instance_exists(Soul_Weapons_Control) {
+				scr_Weapon_Slot_Info_Update(Soul_Weapons_Control.weapon_slot_info)
+			}
 		}
 	}
 

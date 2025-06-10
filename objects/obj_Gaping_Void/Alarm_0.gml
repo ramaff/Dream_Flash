@@ -10,15 +10,8 @@ with(obj_Soul) {
 }
 with(obj_Boss_Parent) {
 	if (collision_circle(other.x,other.y,240 * other.size, id, false, false)) {
-		bosshealth -= (10 + (global.souldespair + global.souldespairTemp) / 2) * global.V[4];	
-		with instance_create(x,y,obj_Damage_Indicator) {
-	        element = 0;
-	        damageIndication = (10 + (global.souldespair + global.souldespairTemp) / 2) * global.V[4];
-	        textSize = 1;
-	        direction = 90;
-	        speed = 1 + (other.speed / 6) + random(0.05)
-	        friction = 0.01 + (other.speed / 600)
-	        alarm[0] = 30 + irandom(3);
-		}
+		var _dmg = (10 + (global.souldespair + global.souldespairTemp) / 2) * global.V[4]
+		bosshealth -= _dmg;	
+		scr_setup_dmg_indicator(x, y, _dmg, c_white)
 	}
 }

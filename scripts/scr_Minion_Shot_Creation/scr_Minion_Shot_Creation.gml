@@ -12,7 +12,7 @@ function scr_Minion_Shot_Creation() {
 		}
 		
 	    with instance_create(x,y,asset_get_index(current_weapon_stats.Shot_Type)) {
-	        scr_Default_Shot_Stats();
+	        scr_Default_Shot_Variables();
 			shot_stats = variable_clone(other.current_weapon_stats);
 		
 			shot_stats.Shot_Origin = other.id;

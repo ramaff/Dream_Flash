@@ -1,36 +1,70 @@
 function scr_soul_hit_status_add_v2(_bullet_stats) {
 
-	if soulstun = 0 {
-		soulstun = _bullet_stats.bullet_stun;
+	if _bullet_stats.bullet_stun > 0 {
+		var _status_effect = {
+			"duration": _bullet_stats.bullet_stun_time,
+		}
+		variable_struct_set(soul_step_status_effects, "stun", [_status_effect])
 	}
-	if _bullet_stats.bullet_stun_time > soulstuntime {
-		soulstuntime = _bullet_stats.bullet_stun_time;
+	if _bullet_stats.bullet_sleep > 0 {
+		var _status_effect = {
+			"duration": _bullet_stats.bullet_sleep_time,
+			"tick_script": scr_Soul_Sleep_Tick,
+			"tick_frequency": 30
+		}
+		var _status_effect_2 = {
+			"duration": _bullet_stats.bullet_sleep_time,
+			"tick_script": scr_Soul_Attack_Think,
+			"tick_frequency": 1
+		}
+		variable_struct_set(soul_step_status_effects, "sleep", [_status_effect])
+		variable_struct_set(soul_step_status_effects, "sleep_sprite", [_status_effect_2])
 	}
-	if soulsleep = 0 {
-		soulsleep = _bullet_stats.bullet_sleep;	
+	if _bullet_stats.bullet_poison_omen > 0 {
+		var _curr_poison = 0
+		if variable_struct_exists(soul_step_status_effects, "poison_omen") {
+			if array_length(soul_step_status_effects.poison_omen) > 0 {
+				_curr_poison = soul_step_status_effects.poison_omen[0].duration
+			}
+		}
+		var _status_effect = {
+			"duration": _curr_poison + _bullet_stats.bullet_poison_omen,
+			"tick_script": scr_Soul_Poison_Omen,
+			"tick_frequency": 1
+		}
+		var _status_effect_2 = {
+			"duration": _curr_poison + _bullet_stats.bullet_poison_omen,
+			"max_duration": 360,
+			"bar_sprite": "spr_Poison_Omen_Status_Effect_Bar"
+		}
+		variable_struct_set(soul_step_status_effects, "poison_omen", [_status_effect])
+		variable_struct_set(soul_draw_status_effects, "poison_omen", [_status_effect_2])
 	}
-	if _bullet_stats.bullet_sleep_time > soulsleeptime {
-		soulsleeptime = _bullet_stats.bullet_sleep_time;	
-	}
-
 
 }
 
 
 function scr_Soul_Hit_Status_Add() {
 
-	if soulstun = 0 {
-		soulstun = other.bulletstun;
+	if other.bulletstun > 0 {
+		var _status_effect = {
+			"duration": other.bulletstuntime	
+		}
+		variable_struct_set(soul_step_status_effects, "stun", [_status_effect])
 	}
-	if other.bulletstuntime > soulstuntime {
-		soulstuntime = other.bulletstuntime;
+	if other.bulletsleep > 0 {
+		var _status_effect = {
+			"duration": other.bulletsleeptime,
+			"tick_script": scr_Soul_Sleep_Tick,
+			"tick_frequency": 30
+		}
+		var _status_effect_2 = {
+			"duration": other.bulletsleeptime,
+			"tick_script": scr_Soul_Attack_Think,
+			"tick_frequency": 1
+		}
+		variable_struct_set(soul_step_status_effects, "sleep", [_status_effect])
+		variable_struct_set(soul_step_status_effects, "sleep_sprite", [_status_effect_2])
 	}
-	if soulsleep = 0 {
-		soulsleep = other.bulletsleep;	
-	}
-	if other.bulletsleeptime > soulsleeptime {
-		soulsleeptime = other.bulletsleeptime;	
-	}
-
 
 }

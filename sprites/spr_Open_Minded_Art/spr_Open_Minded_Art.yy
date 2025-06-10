@@ -26,7 +26,7 @@
   "origin": 4,
   "parent": {
     "name": "(N) Mental Actions",
-    "path": "folders/Sprites/Item Sprites/(N) Mental Actions.yy",
+    "path": "folders/Sprites/Item Icons/(N) Mental Actions.yy",
   },
   "preMultiplyAlpha": false,
   "sequence": {

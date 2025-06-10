@@ -2,19 +2,16 @@
 // https://help.yoyogames.com/hc/en-us/articles/360005277377 for more information
 function scr_Particle_Burst(particletype = obj_Weapon_Trail, particlesprite = spr_Soul_Big_Bit, particlecolor1 = c_white,
 							particlecolor2 = c_white, burstcount = 0, burstspeed = 10, burstdir = 0, burstspread = 360, particleArea = 0, 
-							partSize = 0.5, partLife = 10, burstUniformSpread = false, _xx = -999999, _yy = -999999, _part_angle = image_angle,
+							partSize = 0.5, partLife = 10, burstUniformSpread = false, _xx = x, _yy = y, _part_angle = image_angle,
 							_part_target = noone) {
 	if global.gameParticles > 0 {
 		repeat(burstcount) {
 		
-			if _xx == -999999 {
-				_xx = random(particleArea) - (particleArea / 2);
-			}
-			if _yy == -999999 {
-				_yy = random(particleArea) - (particleArea / 2);
-			}
+			_xx = _xx + random(particleArea) - (particleArea / 2);
+
+			_yy = _yy + random(particleArea) - (particleArea / 2);
 	
-			with instance_create(x + _xx,y + _yy, particletype) {
+			with instance_create(_xx,_yy, particletype) {
 				
 				if burstUniformSpread {
 					direction = burstdir;

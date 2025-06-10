@@ -26,7 +26,7 @@
   "origin": 4,
   "parent": {
     "name": "vit",
-    "path": "folders/Sprites/Item Sprites/(I) Emotion Item Art/vit.yy",
+    "path": "folders/Sprites/Item Icons/(I) Emotion Item Art/vit.yy",
   },
   "preMultiplyAlpha": false,
   "sequence": {

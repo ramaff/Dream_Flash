@@ -1,14 +1,10 @@
-function scr_Status_Damage_Display() {
-	damageInd = argument[0];
-	primaryElement = argument[1];
+function scr_Status_Damage_Display(_dmg, _color = c_white) {
 
-	xx = x - 3 + random(6);
-	yy = y - 23 + random(6);
-
-	textSize = 1;
+	var _xx = x - 3 + random(6);
+	var _yy = y - 23 + random(6);
 
 	if global.gameDamageDisplay != 0 {
-		scr_Damage_Indicator(primaryElement, damageInd, textSize);
+		scr_setup_dmg_indicator(_xx,_yy, _dmg, _color);
 	}
 
 

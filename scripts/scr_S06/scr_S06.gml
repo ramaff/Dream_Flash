@@ -3,7 +3,7 @@ function scr_S06() {
 
 	if global.S[6] > 0 {
 
-	    scr_Default_Weapon_Stats();
+	    current_weapon_stats = scr_Setup_Default_Shot_Stats();
 		var pow = 2 + 4 * global.S[6]
 		
 		current_weapon_stats = {

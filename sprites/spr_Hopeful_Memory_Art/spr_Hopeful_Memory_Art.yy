@@ -26,7 +26,7 @@
   "origin": 4,
   "parent": {
     "name": "(R) Recall Item Art",
-    "path": "folders/Sprites/Item Sprites/(R) Recall Item Art.yy",
+    "path": "folders/Sprites/Item Icons/(R) Recall Item Art.yy",
   },
   "preMultiplyAlpha": false,
   "sequence": {

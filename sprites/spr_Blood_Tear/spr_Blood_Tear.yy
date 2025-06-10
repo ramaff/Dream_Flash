@@ -13,7 +13,7 @@
   "edgeFiltering": false,
   "For3D": false,
   "frames": [
-    {"resourceType":"GMSpriteFrame","resourceVersion":"1.1","name":"96c79ec1-3c62-4ae2-b13e-1ff8f77a3cf1",},
+    {"resourceType":"GMSpriteFrame","resourceVersion":"1.1","name":"2d0ffb41-4110-4fda-b851-f519a80a0e34",},
   ],
   "gridX": 0,
   "gridY": 0,
@@ -54,7 +54,7 @@
     "timeUnits": 1,
     "tracks": [
       {"resourceType":"GMSpriteFramesTrack","resourceVersion":"1.0","name":"frames","builtinName":0,"events":[],"inheritsTrackColour":true,"interpolation":1,"isCreationTrack":false,"keyframes":{"resourceType":"KeyframeStore<SpriteFrameKeyframe>","resourceVersion":"1.0","Keyframes":[
-            {"resourceType":"Keyframe<SpriteFrameKeyframe>","resourceVersion":"1.0","Channels":{"0":{"resourceType":"SpriteFrameKeyframe","resourceVersion":"1.0","Id":{"name":"96c79ec1-3c62-4ae2-b13e-1ff8f77a3cf1","path":"sprites/spr_Blood_Tear/spr_Blood_Tear.yy",},},},"Disabled":false,"id":"aa25aa36-f72c-49c0-ab57-318123ab20c5","IsCreationKey":false,"Key":0.0,"Length":1.0,"Stretch":false,},
+            {"resourceType":"Keyframe<SpriteFrameKeyframe>","resourceVersion":"1.0","Channels":{"0":{"resourceType":"SpriteFrameKeyframe","resourceVersion":"1.0","Id":{"name":"2d0ffb41-4110-4fda-b851-f519a80a0e34","path":"sprites/spr_Blood_Tear/spr_Blood_Tear.yy",},},},"Disabled":false,"id":"6c02f8e4-eab0-433e-8327-7825839b6e66","IsCreationKey":false,"Key":0.0,"Length":1.0,"Stretch":false,},
           ],},"modifiers":[],"spriteId":null,"trackColour":0,"tracks":[],"traits":0,},
     ],
     "visibleRange": null,

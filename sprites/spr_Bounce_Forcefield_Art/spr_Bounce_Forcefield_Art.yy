@@ -2,10 +2,10 @@
   "resourceType": "GMSprite",
   "resourceVersion": "1.0",
   "name": "spr_Bounce_Forcefield_Art",
-  "bbox_bottom": 132,
-  "bbox_left": 6,
-  "bbox_right": 142,
-  "bbox_top": 23,
+  "bbox_bottom": 163,
+  "bbox_left": 0,
+  "bbox_right": 163,
+  "bbox_top": 0,
   "bboxMode": 0,
   "collisionKind": 1,
   "collisionTolerance": 0,
@@ -13,20 +13,20 @@
   "edgeFiltering": false,
   "For3D": false,
   "frames": [
-    {"resourceType":"GMSpriteFrame","resourceVersion":"1.1","name":"a08c75cc-9e5f-4588-bfc9-98cb4ca63150",},
+    {"resourceType":"GMSpriteFrame","resourceVersion":"1.1","name":"8b353f1c-c402-44aa-a70e-8742aae62743",},
   ],
   "gridX": 0,
   "gridY": 0,
   "height": 164,
   "HTile": false,
   "layers": [
-    {"resourceType":"GMImageLayer","resourceVersion":"1.0","name":"9a91c91a-3c3f-4e8e-b152-4c015183bb88","blendMode":0,"displayName":"default","isLocked":false,"opacity":100.0,"visible":true,},
+    {"resourceType":"GMImageLayer","resourceVersion":"1.0","name":"2dfbbd52-2d6a-4494-ae54-aa0bd214dfe9","blendMode":0,"displayName":"default","isLocked":false,"opacity":100.0,"visible":true,},
   ],
   "nineSlice": null,
   "origin": 4,
   "parent": {
     "name": "Misc Art",
-    "path": "folders/Sprites/Weapon Sprites/Misc Art.yy",
+    "path": "folders/Sprites/Weapon Art/Misc Art.yy",
   },
   "preMultiplyAlpha": false,
   "sequence": {
@@ -54,7 +54,7 @@
     "timeUnits": 1,
     "tracks": [
       {"resourceType":"GMSpriteFramesTrack","resourceVersion":"1.0","name":"frames","builtinName":0,"events":[],"inheritsTrackColour":true,"interpolation":1,"isCreationTrack":false,"keyframes":{"resourceType":"KeyframeStore<SpriteFrameKeyframe>","resourceVersion":"1.0","Keyframes":[
-            {"resourceType":"Keyframe<SpriteFrameKeyframe>","resourceVersion":"1.0","Channels":{"0":{"resourceType":"SpriteFrameKeyframe","resourceVersion":"1.0","Id":{"name":"a08c75cc-9e5f-4588-bfc9-98cb4ca63150","path":"sprites/spr_Bounce_Forcefield_Art/spr_Bounce_Forcefield_Art.yy",},},},"Disabled":false,"id":"f1fb72cf-b342-4a03-9b02-5bf52b2832ed","IsCreationKey":false,"Key":0.0,"Length":1.0,"Stretch":false,},
+            {"resourceType":"Keyframe<SpriteFrameKeyframe>","resourceVersion":"1.0","Channels":{"0":{"resourceType":"SpriteFrameKeyframe","resourceVersion":"1.0","Id":{"name":"8b353f1c-c402-44aa-a70e-8742aae62743","path":"sprites/spr_Bounce_Forcefield_Art/spr_Bounce_Forcefield_Art.yy",},},},"Disabled":false,"id":"c40bb205-6ba9-4605-a105-ec567e9c4b94","IsCreationKey":false,"Key":0.0,"Length":1.0,"Stretch":false,},
           ],},"modifiers":[],"spriteId":null,"trackColour":0,"tracks":[],"traits":0,},
     ],
     "visibleRange": null,

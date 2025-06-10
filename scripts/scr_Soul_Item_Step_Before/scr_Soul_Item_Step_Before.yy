@@ -5,7 +5,7 @@
   "isCompatibility": false,
   "isDnD": false,
   "parent": {
-    "name": "Soul Commands",
-    "path": "folders/Scripts/Soul Commands.yy",
+    "name": "Soul Step",
+    "path": "folders/Scripts/Soul Commands/Soul Step.yy",
   },
 }

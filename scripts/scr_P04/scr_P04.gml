@@ -2,7 +2,6 @@ function scr_P04() {
 	// Location Soul Item Step Before Event
 	// Visual Code in Soul Draw Event
 
-	if global.P[4] > 0 {
 	    var regenbulletnear = 0;
 	    with(obj_Soul_Hurt) {
 	        if distance_to_object(other) <= 80 {
@@ -20,7 +19,6 @@ function scr_P04() {
 				scr_Refresh_Soul(hamount * 5);
 			}
 	    }
-	}
 
 
 

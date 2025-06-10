@@ -1,8 +1,6 @@
 function scr_C05() {
 	// Location Soul Hit by Bullet Event
 
-	if global.C[5] > 0 {
-
 	    var val = 1 + irandom(2 * global.C[5]) + irandom(40);
     
 	    if val >= 40
@@ -19,7 +17,7 @@ function scr_C05() {
 				var chains = 1;
 				var chain_range = 300;
 				
-				scr_Damage_Indicator(0, chain_damage, 1)
+				scr_setup_dmg_indicator(x,y, chain_damage, c_white);
 				
 				bosshealth -= chain_damage;
 			
@@ -32,9 +30,6 @@ function scr_C05() {
 				//scr_Essence_Attack_Field();
 		    }
 		}
-
-	}
-
 
 
 }

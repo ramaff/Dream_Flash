@@ -26,7 +26,7 @@
   "origin": 9,
   "parent": {
     "name": "Hand Group",
-    "path": "folders/Sprites/Boss Sprites/Flash Bosses/Hand Group.yy",
+    "path": "folders/Sprites/Boss Sprites/Flash Bosses/aaa_v1/Hand Group.yy",
   },
   "preMultiplyAlpha": false,
   "sequence": {
@@ -57,7 +57,7 @@
             {"resourceType":"Keyframe<SpriteFrameKeyframe>","resourceVersion":"1.0","Channels":{"0":{"resourceType":"SpriteFrameKeyframe","resourceVersion":"1.0","Id":{"name":"9c55640c-e472-4e37-a88e-9450932260b2","path":"sprites/old_Hand_of_the_Accuser/old_Hand_of_the_Accuser.yy",},},},"Disabled":false,"id":"5f367dae-1daa-4dfc-aa25-3825e595d34c","IsCreationKey":false,"Key":0.0,"Length":1.0,"Stretch":false,},
           ],},"modifiers":[],"spriteId":null,"trackColour":0,"tracks":[],"traits":0,},
     ],
-    "visibleRange": {"x":0.0,"y":0.0,},
+    "visibleRange": null,
     "volume": 1.0,
     "xorigin": 410,
     "yorigin": 196,

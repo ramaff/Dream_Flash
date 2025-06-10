@@ -3,6 +3,7 @@
 
 var _bull = scr_base_bullet_stats(bullet_stats.bullet_speed * 2, bullet_stats.bullet_power, 1)
 
+
 _bull.bullet_type = "obj_falling_exploder_bullet"
 _bull.bullet_sprite = "spr_Glowy_Explosive_Shot"
 _bull.bullet_bounce_height = 60;

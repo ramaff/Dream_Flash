@@ -30,7 +30,10 @@
   "physicsStartAwake": true,
   "properties": [],
   "solid": false,
-  "spriteId": null,
+  "spriteId": {
+    "name": "spr_Banana_Peel_Shot",
+    "path": "sprites/spr_Banana_Peel_Shot/spr_Banana_Peel_Shot.yy",
+  },
   "spriteMaskId": null,
   "visible": true,
 }

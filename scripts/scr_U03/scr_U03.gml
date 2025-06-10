@@ -1,7 +1,6 @@
 function scr_U03() {
 	// Soul Step After Event
 
-	if global.U[3] > 0 {
 		var _shoot_angle = point_direction(obj_Soul_Parent.x, obj_Soul_Parent.y, mouse_x, mouse_y);
 		if global.U03boost <= 0 {
 			global.U03_direction = _shoot_angle
@@ -10,7 +9,6 @@ function scr_U03() {
 		global.U03boost = max(global.U03boost, 0);
 		global.U03_direction = _shoot_angle
 	    sdelayregenfactor += (global.U03boost / 500);
-	}
 
 
 }

@@ -16,8 +16,6 @@ if instance_exists(obj_Boss_Parent) {
 		soulshotdirection = point_direction(x,y,mouse_x,mouse_y);	
 	}
 
-scr_Beam_Step();
-
 scr_Weapon_Warmup_Step();
 
 scr_New_Face_Direction();

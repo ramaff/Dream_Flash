@@ -12,10 +12,6 @@ if global.currentheart < 0 {
 } */
 scr_H14();
 
-if soulsleep = 1 and scr_Chance(6) {
-	instance_create(x,y,obj_Sleep_Part);	
-}
-
 scr_XC02_Soul_Visual();
 
 var cHeart = Soul_Hearts_Control.heart[global.currentheart, 2]

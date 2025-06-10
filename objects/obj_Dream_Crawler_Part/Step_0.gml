@@ -2,11 +2,11 @@
 
 scr_Boss_Step();
 
-if bosshealth < bossmaxhealth {
-	var diff = bossmaxhealth - bosshealth;
-	bosshealth = bossmaxhealth;
-	if instance_exists(followtarget) {
-		followtarget.bosshealth -= diff;	
+if bosshealth < bosstotalhealth {
+	var diff = bosstotalhealth - bosshealth;
+	bosshealth = bosstotalhealth;
+	if instance_exists(grand_parent) {
+		grand_parent.bosshealth -= diff;	
 	}
 }
 
@@ -99,6 +99,7 @@ if bossActiveAttackDelay[1] <= 0 and bossActiveAttackCooldown[1] <= 0 and bossAc
         bossPatternCooldownMax = 75;
         bossActiveAttackDuration[1] = 15 + bossPatternCooldownMax * bossPatternCount;
         bossActiveAttackCooldown[1] = 120 + random(120);
+		image_index = 4;
     }
     if bossActiveAttack[1] = 2  {
 		bossPatternCount = 7;
@@ -107,35 +108,7 @@ if bossActiveAttackDelay[1] <= 0 and bossActiveAttackCooldown[1] <= 0 and bossAc
         bossPatternCooldownMax = 15;
         bossActiveAttackDuration[1] = 15 + bossPatternCooldownMax * bossPatternCount;
         bossActiveAttackCooldown[1] = 120 + random(120);
-    }
-    if bossActiveAttack[1] = 3  {
-		bossActiveAttackDelay[1] = 15;
-        bossActiveAttackDuration[1] = 15;
-        bossActiveAttackCooldown[1] = (130 + (40 * irandom(1)));
-    }
-    if bossActiveAttack[1] = 4  {
-        scr_Boss_Teleport();
-		bossActiveAttackDelay[1] = 15;
-        bossActiveAttackDuration[1] = 15;
-        bossActiveAttackCooldown[1] = (90 + (40 * irandom(1)));
-    }
-    if bossActiveAttack[1] = 5  {
-        bossActiveAttackDelay[1] = 15;
-        bossActiveAttackDuration[1] = 15;
-        bossActiveAttackCooldown[1] = (130 + (40 * irandom(1)));
-    }
-    if bossActiveAttack[1] = 6  {
-        scr_Boss_Dash_Setup();
-        bossPatternCount = 40;
-        bossPatternCountMax = bossPatternCount;
-        bossPatternCooldown = 1;
-        bossPatternCooldownMax = 1;
-        bossActiveAttackDuration[1] = 15 + bossPatternCooldownMax * bossPatternCount;
-        bossActiveAttackCooldown[1] = 60 + (40 * irandom(1))
-		
-		var bossdirection = scr_Soul_Point();
-        bossMaxDashSpeed = 7.5 * bossmovespeed;
-		bossDashSpeed = 0;
+		image_index = 4;
     }
 }
 
@@ -236,6 +209,9 @@ if bossActiveAttackDelay[1] <= 0 and bossPatternCooldown <= 0 and bossPatternCou
     
     bossPatternCount -= 1;
     bossPatternCooldown += bossPatternCooldownMax;
+	if bossPatternCount <= 0 {
+		bossActiveAttackDuration[1] = 0;	
+	}
 }
 
 #endregion
@@ -257,15 +233,15 @@ scr_Boss_Size_Lerp(0.15);
 if (bossActiveAttack[1] != 0) {
 	sprite_index = spr_Dream_Crawler_Part_Blink;
 	if image_index > 5 {
-		image_index = 5;	
+		image_index = 5;
 	}
 	bossdefense = 0;
 } else {
 	sprite_index = spr_Dream_Crawler_Part_Blink;
 	if image_index > 3 {
-		image_index = 3;	
+		image_index = 3;
 	}
-	bossdefense = 12;
+	bossdefense = 18;
 }
 
 #endregion

@@ -26,8 +26,8 @@
   "nineSlice": null,
   "origin": 4,
   "parent": {
-    "name": "Mullet",
-    "path": "folders/Sprites/Boss Bullet Sprites/Mullet.yy",
+    "name": "Mullets",
+    "path": "folders/Sprites/Boss Bullet Sprites/Mullets.yy",
   },
   "preMultiplyAlpha": false,
   "sequence": {

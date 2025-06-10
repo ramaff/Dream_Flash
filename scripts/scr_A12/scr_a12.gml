@@ -14,20 +14,12 @@ function scr_A12(_cw) {
 		*/
 		scr_Disk_Effect(10, 0.75, c_red);
 		
-		var dmg = ((1 + global.A[12])/2) * _cw.Shot_Power / 4;
+		var _dmg = ((1 + global.A[12])/2) * _cw.Shot_Power / 4;
 	    with(obj_Boss_Parent) {
 	        if distance_to_object(other) <= (150 + 10 * global.A[12]) {
-	            bosshealth -= dmg;
+	            bosshealth -= _dmg;
             
-	            with instance_create(x,y,obj_Damage_Indicator) {
-	                element = 0;
-	                damageIndication = dmg;
-	                textSize = 1;
-	                direction = 90;
-	                speed = 1 + (other.speed / 6) + random(0.05)
-	                friction = 0.01 + (other.speed / 600)
-	                alarm[0] = 30 + irandom(3);
-	            }
+				scr_setup_dmg_indicator(x,y, _dmg, c_white)
 	        }
 	    }
 	}

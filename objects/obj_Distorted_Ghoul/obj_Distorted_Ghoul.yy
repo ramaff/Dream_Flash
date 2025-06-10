@@ -9,8 +9,8 @@
   "managed": true,
   "overriddenProperties": [],
   "parent": {
-    "name": "Flash Minions",
-    "path": "folders/Objects/Bosses/Minions/Flash Minions.yy",
+    "name": "v1",
+    "path": "folders/Objects/Bosses/Minions/Flash Minions/v1.yy",
   },
   "parentObjectId": {
     "name": "obj_Minion_Phase",

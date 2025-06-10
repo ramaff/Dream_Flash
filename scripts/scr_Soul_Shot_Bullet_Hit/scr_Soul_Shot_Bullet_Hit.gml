@@ -39,7 +39,7 @@ function scr_soul_shot_bullet_hit_v2(_bullet_stats){
 			variable_struct_set(bullet_hits, other.id, other.id)
 	
 			if shot_stats.Shot_Rebound_Type = 1 {
-				scr_Weapon_Rebound_Mouse();
+				scr_Weapon_Rebound_Mouse(other.speed);
     
 				shot_stats.Shot_Pierce--;
 				if shot_stats.Shot_Pierce <= 0 {
@@ -49,7 +49,7 @@ function scr_soul_shot_bullet_hit_v2(_bullet_stats){
 			}
 	
 			if shot_stats.Shot_Rebound_Type = 2 {
-				scr_Weapon_Rebound();
+				scr_Weapon_Rebound(_bullet_stats.bullet_speed);
 					
 				scr_Soul_Shot_Rebound_Parts();
     
@@ -132,12 +132,12 @@ function scr_soul_shot_bullet_hit_v2(_bullet_stats){
 		if (shot_stats.Shot_Shield_Type = 4 || (shot_stats.Shot_Continue = 1 and _bullet_stats.soul_shot_block = 1)) and other.speed > 0 {
 		    if shot_stats.Shot_Shield_Power >= (_bullet_stats.bullet_power) {
 		        other.speed = 0;
-				other.bulletspeed = 0;
+				_bullet_stats.bullet_speed = 0;
 		        //instance_destroy();
 		    } else {
 				_bullet_stats.bullet_power -= shot_stats.Shot_Shield_Power;
 		        other.speed -= other.speed * (_bullet_stats.bullet_power / _bullet_stats.bullet_power_max);
-				other.bulletspeed = other.bulletspeed * (other.bulletspeed / _bullet_stats.bullet_power_max);
+				_bullet_stats.bullet_speed = _bullet_stats.bullet_speed * (_bullet_stats.bullet_speed / _bullet_stats.bullet_power_max);
 		        //instance_destroy();
 		    }
 			if shot_stats.Shot_Essence_Drain > 0 {
@@ -155,7 +155,6 @@ function scr_soul_shot_bullet_hit_v2(_bullet_stats){
 		}
 
 		if shot_stats.Shot_Bullet_Displace >= 1 {
-			//backSpeed = speed + 1.6 * smovementspeed * ((10 + smovementfactorbuffamount) / 10) * ((10 + smovementfactor) / 10) * ((40 + global.souldexterity) / 40);
 
 			var point_dir = point_direction(x, y, other.x, other.y)
 			var magnitude = shot_stats.Shot_Bullet_Displace * 0.5 * (1 + speed)
@@ -324,7 +323,6 @@ function scr_Soul_Shot_Bullet_Hit(){
 		}
 
 		if shot_stats.Shot_Bullet_Displace >= 1 {
-			//backSpeed = speed + 1.6 * smovementspeed * ((10 + smovementfactorbuffamount) / 10) * ((10 + smovementfactor) / 10) * ((40 + global.souldexterity) / 40);
 
 			var point_dir = point_direction(x, y, other.x, other.y)
 			var magnitude = shot_stats.Shot_Bullet_Displace * 0.5 * (1 + speed)

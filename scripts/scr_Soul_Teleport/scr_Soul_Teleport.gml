@@ -4,13 +4,6 @@
 function scr_Soul_Teleport(_evasion = false){
 	
 	var _base_tele_delay = 120;
-	
-	soulfade = 15;
-	with instance_create(obj_Soul_Parent.x,obj_Soul_Parent.y,obj_Soul_Linger) {
-	    if other.image_index = 1 {
-	        image_xscale = -1;
-	    } 
-	}
     
 	scr_E14();
 	
@@ -39,43 +32,25 @@ function scr_Soul_Teleport(_evasion = false){
 		_xx = _new_pos[0]
 		_yy = _new_pos[1]
 	}
+	var _can_teleport = true;
 		
 	var dist = point_distance(x,y, _xx, _yy);
 	var dir = point_direction(x,y, _xx, _yy);
-	var move_point = point_direction(0,0, soulCurrentHorizontalSpeed, soulCurrentVerticalSpeed);
-	if soulCurrentHorizontalSpeed = 0 and soulCurrentVerticalSpeed = 0 {
-		move_point = dir;	
-	}
-	var _angle_offset = -angle_difference(dir, move_point)
-	var _angle_add = angle_difference(dir, move_point)
-	var _seg_dist = 40
-	var _segs = floor(dist) / _seg_dist
 	
-	var _blend = make_color_rgb(255, 100, 255)
-	var _red_amount = 255;
+	if instance_exists(obj_Bounce_Ball) {
+	
+		var _max_hspeed = lengthdir_x(25, dir)
+		var _max_vspeed = lengthdir_y(25, dir)
 		
-	for(var _i = 0; _i < _segs; _i++) {
-		var cd = _seg_dist * _i;
-		var _pxx = x + lengthdir_x(cd, dir + _angle_offset)
-		var _pyy = y + lengthdir_y(cd, dir + _angle_offset)
-		_angle_offset += _angle_add / _segs
-		scr_Soul_Move_Particle(_pxx, _pyy, "Teleport", _blend);
-		if _i mod 2 = 0 {
-			with instance_create(_pxx, _pyy, obj_After_Image) {
-				alarm[0] = 30 + (_i * 2)
-				shrinking = false
-				fading = true
-				half_time = true;
-				max_time = alarm[0];
-				sprite_index = spr_The_Soul_Teleport_After_Image
-				size = abs(other.image_xscale);
-				image_xscale = size;
-				image_yscale = size;
-				image_blend = _blend
-			}
+		with (obj_Bounce_Ball) {
+			h_speed += _max_hspeed
+			v_speed += _max_vspeed
+			hspeed = h_speed
+			vspeed = v_speed
 		}
-		_blend = make_color_rgb(_red_amount, 100, 255)
-		_red_amount -= 160 / _segs
+		
+		_can_teleport = false;
+	
 	}
 		
 	scr_W04();
@@ -95,9 +70,54 @@ function scr_Soul_Teleport(_evasion = false){
 		friction = speed / 45;
 		soulinvincibility += 60;
 		
-	} else {
+	} else if _can_teleport {
+		var move_point = point_direction(0,0, soulCurrentHorizontalSpeed, soulCurrentVerticalSpeed);
+		if soulCurrentHorizontalSpeed = 0 and soulCurrentVerticalSpeed = 0 {
+			move_point = dir;	
+		}
+		var _angle_offset = -angle_difference(dir, move_point)
+		var _angle_add = angle_difference(dir, move_point)
+		var _seg_dist = 40
+		var _segs = floor(dist) / _seg_dist
+	
+		var _blend = make_color_rgb(255, 100, 255)
+		var _red_amount = 255;
+		
+		for(var _i = 0; _i < _segs; _i++) {
+			var cd = _seg_dist * _i;
+			var _pxx = x + lengthdir_x(cd, dir + _angle_offset)
+			var _pyy = y + lengthdir_y(cd, dir + _angle_offset)
+			_angle_offset += _angle_add / _segs
+			scr_Soul_Move_Particle(_pxx, _pyy, "Teleport", _blend);
+			if _i mod 2 = 0 {
+				with instance_create(_pxx, _pyy, obj_After_Image) {
+					alarm[0] = 30 + (_i * 2)
+					shrinking = false
+					fading = true
+					half_time = true;
+					max_time = alarm[0];
+					sprite_index = spr_The_Soul_Teleport_After_Image
+					size = abs(other.image_xscale);
+					image_xscale = size;
+					image_yscale = size;
+					image_blend = _blend
+				}
+			}
+			_blend = make_color_rgb(_red_amount, 100, 255)
+			_red_amount -= 160 / _segs
+		}
+		
+		with instance_create(obj_Soul_Parent.x,obj_Soul_Parent.y,obj_Soul_Linger) {
+		    if other.image_index = 1 {
+		        image_xscale = -1;
+		    } 
+		}
+		
+		soulfade = 15;
+		
 		x = _xx;
 		y = _yy;
+		
 	}
 	
 	scr_W02(dir);

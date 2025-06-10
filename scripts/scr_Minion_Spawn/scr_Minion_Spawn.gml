@@ -1,4 +1,4 @@
-function scr_Minion_Spawn() {
+function scr_Minion_Spawn(_minion_boss_parent = other.id) {
 
 		var _minion_ids = [];
 		var _index = 0
@@ -9,7 +9,7 @@ function scr_Minion_Spawn() {
 	                projectile_hit_id = noone;
 	                projectile_hits = ds_list_create();
 	                bossID = id;
-					minionbossparent = other.id;
+					minionbossparent = _minion_boss_parent;
 	                bossNum = 0;
 	                pathBoss = 0;
 					

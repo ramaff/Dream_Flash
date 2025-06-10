@@ -1,76 +1,16 @@
-function scr_Weapon_GUI() {
-	var winx = camcon.window_scale * camcon.view_zoom * camera_get_view_width(view);
-	var winy = camcon.window_scale * camcon.view_zoom * camera_get_view_height(view);
+function scr_Weapon_GUI(_weapon_slot_info = Soul_Weapons_Control.weapon_slot_info) {
 	
-	draw_sprite_ext(spr_Weapon_Template,0,45,winy - 48,0.5,0.5,0,c_white,1);
-	draw_sprite_ext(spr_Weapon_Template,0,24,winy - 88,0.25,0.25,0,c_white,1);
-	draw_sprite_ext(spr_Weapon_Template,0,65,winy - 88,0.25,0.25,0,c_white,1);
+	var _i = 0;
+	var _arr_len = array_length(_weapon_slot_info) - 1
 	
-	var wspr = spr_Soul_Shot_Art;
-
-	if global.weaponslots > 3 {
-		draw_sprite_ext(spr_Weapon_Template,0,45,winy - 112,0.125,0.125,0,c_white,1);
-	}
-	
-	var i = 0;
-	var sc = 1;
-
-	for(i = 0; i < global.weaponslots; i++) {
-
-	    var weap = Soul_Weapons_Control.weapon[i].weapon_id;
-		var ex = 0;
-		var why = 0;
-		if global.weaponslots = 3 { 
-		    if i = 0 {
-		        var ex = 45
-		        var why = winy - 48
-		        sc = 1;
-		    }
-		    if i = 1 {
-		        var ex = 24
-		        var why = winy - 88
-		        sc = 0.5;
-		    }
-		    if i = 2 {
-		        var ex = 66
-		        var why = winy - 88
-		        sc = 0.5;
-		    }
+	for(_i = _arr_len; _i >= 0; _i--) {
+		var _weap_info = _weapon_slot_info[_i]
+		draw_sprite_ext(spr_Weapon_Template,0,_weap_info.xx,_weap_info.yy,_weap_info.scale,_weap_info.scale,0,c_white,1);
+		if _weap_info.weap != 0 {
+			var _wspr = variable_struct_get(global.weapon_stats, _weap_info.weap).Recollection_Sprite
+		
+		    draw_sprite_ext(asset_get_index(_wspr),0,_weap_info.xx,_weap_info.yy,_weap_info.scale,_weap_info.scale,0,c_white,1);
 		}
-		if global.weaponslots > 3 {
-			if i = 0 {
-		        var ex = 45
-		        var why = winy - 48
-		        sc = 1;
-		    }
-		    if i = 2 {
-		        var ex = 24
-		        var why = winy - 88
-		        sc = 0.5;
-		    }
-		    if i = 3 {
-		        var ex = 66
-		        var why = winy - 88
-		        sc = 0.5;
-		    }
-			if i = 2 {
-				var ex = 45
-				var why = winy - 112
-				sc = 0.25;
-			}
-		}
-		sc = sc / 2;
-
-    
-    
-	    if weap != 0 {
-	        wspr = scr_Weapon_Sprite_List(weap, wspr);
-            
-	        draw_sprite_ext(wspr,0,ex,why,sc,sc,0,c_white,1);
-	    }
-
 	}
-
-
 
 }

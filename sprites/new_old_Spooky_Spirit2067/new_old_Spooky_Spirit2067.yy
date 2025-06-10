@@ -33,7 +33,7 @@
   "origin": 9,
   "parent": {
     "name": "old",
-    "path": "folders/Sprites/Boss Sprites/Flash Bosses/Spirit Group/old.yy",
+    "path": "folders/Sprites/Boss Sprites/Flash Bosses/aaa_v1/Spirit Group/old.yy",
   },
   "preMultiplyAlpha": false,
   "sequence": {

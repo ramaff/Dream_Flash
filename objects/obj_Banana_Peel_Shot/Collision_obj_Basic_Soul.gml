@@ -4,7 +4,7 @@ if point_distance(x, y, other.x, other.y) > 30 {
 	exit;
 }
 
-scr_Soul_Shot_Soul_Hit();
+//scr_Soul_Shot_Soul_Hit();
 
 var _slip_target = other
 if (_slip_target.soulCurrentHorizontalSpeed != 0 || _slip_target.soulCurrentHorizontalSpeed != 0) and shot_stats.Shot_Soul_Maintain = 0 {
@@ -13,6 +13,7 @@ if (_slip_target.soulCurrentHorizontalSpeed != 0 || _slip_target.soulCurrentHori
 	var _force = 4 + irandom(1)
 	
 	scr_force_push(_slip_target, _time, _force, _force / _time, _slip_target.soulCurrentDirection - 60 + random(120))
+	shot_stats.Shot_Step_Scripts = array_concat(shot_stats.Shot_Step_Scripts, [scr_Shot_Soul_Maintain])
 
 	shot_stats.Shot_Soul_Maintain = 1;
 	shot_stats.Shot_X_Maintain = x - _slip_target.x;

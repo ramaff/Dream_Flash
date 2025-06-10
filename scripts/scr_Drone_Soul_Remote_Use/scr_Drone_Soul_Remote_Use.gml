@@ -1,5 +1,5 @@
 function scr_Drone_Soul_Remote_Use() {
-	scr_Default_Weapon_Stats();
+	current_weapon_stats = scr_Setup_Default_Shot_Stats();
 
 	current_weapon_stats.Shot_Spread += 0;
 	current_weapon_stats.Shot_Accuracy += 10;
@@ -11,7 +11,7 @@ function scr_Drone_Soul_Remote_Use() {
 	current_weapon_stats.Minion_Speed = 2;
 	current_weapon_stats.Minion_Health = 99;
 	current_weapon_stats.Shot_Power = 5;
-	current_weapon_stats.Minion_Power = (current_weapon_stats.Shot_Power + spoweradd) * ((10 + spowerfactor + sattackfactorbuffamount) / 10) * spower / 10 * ((160 + global.soulstrength) / 160);
+	current_weapon_stats.Minion_Power = (current_weapon_stats.Shot_Power + spoweradd) * scr_Soul_Power_Factor_Calc(id)
 	current_weapon_stats.Shot_Knock_Back = 10;
 	current_weapon_stats.Minion_Lifespan = 750;
 

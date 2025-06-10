@@ -6,7 +6,7 @@ function scr_Gem_Beam_Step() {
 	var hit_again = ds_list_find_index(global.gembeam_hits, id);
 	if hit_again = -1 and gemBeamHeat > 0 {
     
-	    scr_Default_Weapon_Stats();
+	    current_weapon_stats = scr_Setup_Default_Shot_Stats();
     
 	    ds_list_add(global.gembeam_hits, id);  
 
@@ -66,7 +66,7 @@ function scr_Gem_Beam_Step() {
 	var hit_again = ds_list_find_index(global.gembeam_hits, id);
 	if hit_again = -1 and gemBeamStandaloneHeat > 0 {
     
-	    scr_Default_Weapon_Stats();
+	    current_weapon_stats = scr_Setup_Default_Shot_Stats();
     
 	    ds_list_add(global.gembeam_hits, id);  
 

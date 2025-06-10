@@ -7,7 +7,9 @@ var _room_x_down = 0;
 var _room_y_up = 0;
 var _room_y_down = 0;
 
-for(var _i = 0; _i <= global.maxRooms; _i++) {
+var _i;
+
+for(_i = 0; _i <= global.maxRooms; _i++) {
     if global.floor[global.currentroom,1] = global.floor[_i,1] + 1
     if global.floor[global.currentroom,2] = global.floor[_i,2] {
         _room_x_down = 1;

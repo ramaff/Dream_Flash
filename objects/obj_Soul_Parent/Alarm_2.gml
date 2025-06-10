@@ -21,4 +21,9 @@ if cHeart = 53 {
 	scr_H53();
 }
 
+if cHeart = 17 {
+	scr_H17_Bubble();	
+}
+
+
 alarm[2] = heartReload;

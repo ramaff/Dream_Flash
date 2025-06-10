@@ -13,7 +13,7 @@ var extra_shots_amount = array_length(extra_stats);
 var i = 0;
 for(i = 0; i < extra_shots_amount; i++) {
 	
-	if (alarm[0] mod extra_stats[i].Shot_Extra_Hit_Frequency = 0) {
+	if (alarm[0] mod round(extra_stats[i].Shot_Extra_Hit_Frequency) = 0) {
 	
 		var current_extra_stats = extra_stats[i]
 	    var dir = 0;
@@ -98,6 +98,9 @@ for(i = 0; i < extra_shots_amount; i++) {
 					} else {
 						direction = point_direction(x,y,mouse_x, mouse_y);
 					}
+					if shot_stats.Shot_Point_Angle || shot_stats.Shot_Point_Angle = 1 {
+						image_angle = direction	
+					}
 				}
 	
 				if instance_exists(obj_Boss_Parent) {
@@ -108,6 +111,9 @@ for(i = 0; i < extra_shots_amount; i++) {
 				}
 				
 		        alarm[0] = shot_stats.Shot_Life_Span;
+				
+				scr_Assign_Shot_Scripts();
+				
 		    }
 			dir += 360 / ramt;
 		}

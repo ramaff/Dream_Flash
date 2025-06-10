@@ -26,7 +26,7 @@
   "origin": 4,
   "parent": {
     "name": "(XB) Paranoia Items",
-    "path": "folders/Sprites/Item Sprites/(XB) Paranoia Items.yy",
+    "path": "folders/Sprites/Item Icons/(XB) Paranoia Items.yy",
   },
   "preMultiplyAlpha": false,
   "sequence": {

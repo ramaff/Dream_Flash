@@ -26,7 +26,7 @@
   "origin": 4,
   "parent": {
     "name": "Cloud Boss Group",
-    "path": "folders/Sprites/Boss Sprites/Flash Bosses/Cloud Boss Group.yy",
+    "path": "folders/Sprites/Boss Sprites/Flash Bosses/aaa_v1/Cloud Boss Group.yy",
   },
   "preMultiplyAlpha": false,
   "sequence": {

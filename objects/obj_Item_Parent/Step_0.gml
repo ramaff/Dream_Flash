@@ -6,6 +6,6 @@ path_speed = global.itemFieldSpeed[itemOrbit];
 
 if distance_to_object(obj_Astral_Indicator) < 15 {
 	
-    scr_Item_Recollection_Cloud();
+    scr_Item_Recollection_Cloud(undefined, stacks);
 }
 

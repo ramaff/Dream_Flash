@@ -3,10 +3,9 @@
 function scr_V07_Use() {
 	if global.V[7] > 0 and global.V7mindblow >= 100 {
 		
-		 scr_Default_Weapon_Stats();
 		var pow = 2 + 4 * global.V[7]
 		
-		current_weapon_stats = {
+		var _current_weapon_stats = {
 			Shot_Spread: 0,
 			Shot_Accuracy: 10,
 			Shot_Count: 1,
@@ -31,8 +30,8 @@ function scr_V07_Use() {
 		};
 		
 
-		current_weapon_stats = scr_Setup_Weapon_Stats(current_weapon_stats);
-		scr_Shot_Creation();
+		_current_weapon_stats = scr_Setup_Weapon_Stats(_current_weapon_stats);
+		scr_Shot_Creation(_current_weapon_stats);
 		
 		global.V7mindblow = 0;
 		

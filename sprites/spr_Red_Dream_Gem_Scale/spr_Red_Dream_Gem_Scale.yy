@@ -26,7 +26,7 @@
   "origin": 0,
   "parent": {
     "name": "Gem Item Art",
-    "path": "folders/Sprites/Item Sprites/Gem Item Art.yy",
+    "path": "folders/Sprites/Item Icons/Gem Item Art.yy",
   },
   "preMultiplyAlpha": false,
   "sequence": {

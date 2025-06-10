@@ -6,9 +6,15 @@ if soulinvincibility <= 0 and soul_underground <= 0 {
 			exit;	
 		}
 	}
+	
+	scr_soul_hit_status_add_v2(other.bullet_stats);
+	
+	if other.bullet_stats.bullet_power <= 0 {
+		exit;	
+	}
     
     var damageamount = other.bullet_stats.bullet_power + ((global.soulloathing + global.soulloathingTemp) / 10);
-    var defenseamount = (sdefenseadd + sdefensebuffamount) + global.currentheartdefense + scr_Class_Stat_Defense_Increase();
+    var defenseamount = scr_Soul_Defense_Calc(id);
     damageamount = scr_B05_v2(damageamount);
     damageamount = scr_H15_v2(damageamount);
     
@@ -22,7 +28,8 @@ if soulinvincibility <= 0 and soul_underground <= 0 {
 	if other.bullet_stats.bullet_power != 0 {
 		scr_Soul_Damage_Calculation(damageamount, defenseamount);
 	}
-	scr_soul_hit_status_add_v2(other.bullet_stats);
+	
+	instance_destroy(other);
     
     if global.totalhearts <= 0 {
 	    if shealth <= 0 {

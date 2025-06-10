@@ -20,7 +20,7 @@ function scr_Boss_Step(version = 1) {
 		if object_index = obj_Masked_Hope_Spirit || object_index = obj_Masked_Bliss_Spirit || object_index = obj_Masked_Vanity_Spirit {
 			stay_in = false;
 		}
-		if !scr_Outside_Check_Bool(256) and stay_in = true {
+		if scr_Outside_Check_Bool(256) and stay_in = true {
 			var dirr = point_direction(x, y, room_width / 2, room_height / 2);
 			var xx = x + lengthdir_x(100, dirr)
 			var yy = y + lengthdir_y(100, dirr)

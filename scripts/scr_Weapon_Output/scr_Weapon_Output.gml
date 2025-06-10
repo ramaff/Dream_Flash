@@ -1,6 +1,6 @@
 // Script assets have changed for v2.3.0 see
 // https://help.yoyogames.com/hc/en-us/articles/360005277377 for more information
-function scr_Weapon_Output(_spawn_projectile = spawnProjectile, _minion = minion, _cw_stats = current_weapon_stats) {
+function scr_Weapon_Output(_spawn_projectile = spawnProjectile, _minion = minion, _cw_stats = current_weapon_stats, _prime_shot = false) {
 
 	if _spawn_projectile {
 		
@@ -12,7 +12,7 @@ function scr_Weapon_Output(_spawn_projectile = spawnProjectile, _minion = minion
 		}
 		
 		if !_minion {
-			scr_Shot_Creation(_cw_stats);
+			scr_Shot_Creation(_cw_stats, _prime_shot);
 			scr_Q03(false, _cw_stats);
 		} else {
 			scr_Soul_Spawn(_cw_stats);
@@ -30,10 +30,10 @@ function scr_Weapon_Output(_spawn_projectile = spawnProjectile, _minion = minion
 				
 					var _ex_stats = scr_Struct_Merge(_og_stats, _cw_stats.Shot_Extra[_i], false)
 
-					scr_Hard_Coded_Weapon_Stats(_ex_stats);
+					var _weapon_meta_data = scr_Hard_Coded_Weapon_Stats(_ex_stats);
 		
-					if !_minion {
-						scr_Shot_Creation(_ex_stats);
+					if !_weapon_meta_data.minion {
+						scr_Shot_Creation(_ex_stats, false);
 						scr_Q03(false, _cw_stats);
 					} else {
 						scr_Soul_Spawn(_cw_stats);

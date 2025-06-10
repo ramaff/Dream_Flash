@@ -11,12 +11,12 @@ function scr_W05() {
 		scr_Disk_Effect(25, 1.25, c_white)
 		scr_Disk_Effect(30, 1.5, c_white)
 		
+		var _dmg = 50 * (1 + global.teleportboost);
+		
 		with (obj_Boss_Parent) {
-    
-		    dmg = 50 * (1 + global.teleportboost);
-		    bosshealth -= dmg;
+		    bosshealth -= _dmg;
             
-		    scr_Damage_Indicator(0, dmg, 2);
+			scr_setup_dmg_indicator(x,y, _dmg, c_white);
 		}
 		
 		with(obj_Bullet_Parent) {

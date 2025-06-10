@@ -4,6 +4,7 @@ function scr_shoot_bullets(_attack_stats, _xx, _yy) {
 	
 	//Print_DF("shooting shots")
 	//Print_DF(_attack_stats.bullet_direction)
+	var _og_bull = noone;
 	
 	repeat(_attack_stats.bullet_count) {
 		var _c_bull = noone;
@@ -17,7 +18,9 @@ function scr_shoot_bullets(_attack_stats, _xx, _yy) {
 			if bullet_stats.bullet_direction_angle = 1 {
 				image_angle = direction;
 			}
+			image_alpha = bullet_stats.bullet_alpha;
 			_c_bull = id
+			_og_bull = id;
 		}
 	    
 		repeat(_attack_stats.follow_bullets) {
@@ -36,6 +39,7 @@ function scr_shoot_bullets(_attack_stats, _xx, _yy) {
 		}
 	    _dir += _attack_stats.bullet_spread;
 	}
+	return _og_bull
 }
 
 function scr_boss_shoot_v2(_attack_stats = attack_stats, _absolute_pos = false) {
@@ -49,6 +53,6 @@ function scr_boss_shoot_v2(_attack_stats = attack_stats, _absolute_pos = false) 
 		_yy = _attack_stats.boss_yoffset;	
 	}
 
-	scr_shoot_bullets(_attack_stats, _xx, _yy)
+	return scr_shoot_bullets(_attack_stats, _xx, _yy)
 
 }

@@ -32,7 +32,7 @@
   "origin": 4,
   "parent": {
     "name": "Dreamer x Nightmare",
-    "path": "folders/Sprites/Boss Sprites/Dream Bosses/Dreamer x Nightmare.yy",
+    "path": "folders/Sprites/Boss Sprites/Dream Bosses/aaa_v1/Dreamer x Nightmare.yy",
   },
   "preMultiplyAlpha": false,
   "sequence": {

@@ -30,6 +30,8 @@ scr_Item_Spawn(field, item[1], item[2], item[3], item[4], item[5], item[6], item
 
 instance_create(x,y,obj_Environment_Emitter)
 
+complete = false;
+
 /*
 var roomtype = 1 + irandom(6);
 

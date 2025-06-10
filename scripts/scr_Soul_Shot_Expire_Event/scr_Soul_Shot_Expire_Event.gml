@@ -2,6 +2,32 @@
 // https://help.yoyogames.com/hc/en-us/articles/360005277377 for more information
 function scr_Soul_Shot_Expire_Event(){
 	
+	if shot_stats.Shot_Wander > 0 and shot_stats.Shot_Beam = 0 {
+		shot_stats.Shot_Wander--;
+		direction = random(360);
+		var fac = (1 + random(1))
+		shot_stats.Shot_Speed = shot_stats.Shot_Speed * fac;
+		speed = speed * fac;
+		//dir = random(360);
+		//shotburstpower = shot_stats.Shot_Power;
+		var _remaining_time = shot_stats.Shot_Life_Span - shot_stats.Shot_Exist_Time;
+		
+		alarm[0] = _remaining_time / (shot_stats.Shot_Wander + 1)
+		alarm[0] = clamp(alarm[0], 1, shot_stats.Shot_Life_Span)
+		shot_stats.Shot_ID_Offset++;
+		
+		return;
+		
+	}
+	if shot_stats.Shot_Comeback > 0 {
+	    shot_stats.Shot_Comeback--;
+	    direction += 180;
+		shot_stats.Shot_ID_Offset++;
+		alarm[0] = shot_stats.Shot_Life_Span;
+		
+		return
+	}
+	
 	if variable_struct_names_count(shot_stats.Real_Boss_Hits) == 0 and shot_stats.Shot_Origin = obj_Soul_Parent {
 		scr_A07_Reset();	
 	}
@@ -16,18 +42,6 @@ function scr_Soul_Shot_Expire_Event(){
 			}	
 		}
 	} 
-
-	if shot_stats.Shot_Comeback > 0 {
-	    shot_stats.Shot_Comeback--;
-	    dir = 180;
-	    image = 1;
-	    shot_stats.Shot_Hit_Again = 1;
-	    with instance_create(x,y,obj_Lesser_Soul_Shot) {
-	        shot_stats = scr_Duplicate_Shot_Stats();
-			//shot_stats.Shot_Timer = shot_stats.Shot_Life_Span;
-			image_alpha = 1;
-	    }
-	}
 
 	if shot_stats.Shot_Recycle > 0 {
 	    shot_stats.Shot_Recycle--;
@@ -71,25 +85,6 @@ function scr_Soul_Shot_Expire_Event(){
 		
 			scr_Beam_Create(x, y, beamseg, beamdir, curvedir, beamstop, beamxx, beamyy, beamtype, beamtotalsegs, beamspriteindex, beamsize, dirChange, homespeed, splitsize)	
 		}
-	} else if shot_stats.Shot_Wander > 0 and shot_stats.Shot_Beam = 0 {
-		shot_stats.Shot_Wander--;
-		direction = random(360);
-		var fac = (1 + random(1))
-		shot_stats.Shot_Speed = shot_stats.Shot_Speed * fac;
-		speed = speed * fac;
-		dir = random(360);
-		shotburstpower = shot_stats.Shot_Power;
-		
-		with instance_create(x,y,object_index) {
-	        shot_stats = scr_Duplicate_Shot_Stats();
-			//shot_stats.Shot_Timer = shot_stats.Shot_Life_Span;
-			image_alpha = 1;
-			//shot_stats.Shot_Form_Show = 0;
-			shot_stats.Shot_Size_Relation = 1;
-			//shot_stats.Shot_Timer = shot_stats.Shot_Life_Span;
-			shot_stats.Shot_Size_Max = shot_stats.Shot_Size;
-			sprite_index = other.sprite_index;
-	    } 
 	}
 
 	if shot_stats.Shot_Impact_Type = 1 {
@@ -116,9 +111,9 @@ function scr_Soul_Shot_Expire_Event(){
 		scr_Disk_Effect(30, 1.5, c_white)
 		
 		with (obj_Boss_Parent) {
-			dmg = other.shot_stats.Shot_Impact_Power;
-			bosshealth -= dmg;
-			scr_Damage_Indicator(0, dmg, 2);
+			var _dmg = other.shot_stats.Shot_Impact_Power;
+			bosshealth -= _dmg;
+			scr_setup_dmg_indicator(x,y, _dmg, c_white);
 		}
 		
 		with(obj_Bullet_Parent) {

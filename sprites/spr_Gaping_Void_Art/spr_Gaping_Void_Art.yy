@@ -26,7 +26,7 @@
   "origin": 4,
   "parent": {
     "name": "(V) Mindset Item Art",
-    "path": "folders/Sprites/Item Sprites/(V) Mindset Item Art.yy",
+    "path": "folders/Sprites/Item Icons/(V) Mindset Item Art.yy",
   },
   "preMultiplyAlpha": false,
   "sequence": {

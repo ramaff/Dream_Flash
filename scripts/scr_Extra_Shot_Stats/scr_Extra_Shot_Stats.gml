@@ -1,4 +1,4 @@
-function scr_Extra_Shot_Stats() {
+function scr_Extra_Shot_Stats(_Shot_Current_Count) {
 	if shot_stats.Shot_Frames > 0 {
 		shot_stats.Shot_Frame = irandom(shot_stats.Shot_Frames)	
 	}
@@ -13,7 +13,7 @@ function scr_Extra_Shot_Stats() {
 	
 	//Print_DF(shot_stats)
 
-	var shotaddedpow = ((10 + other.spowerfactor + other.sattackfactorbuffamount) / 10) * other.spower / 10 * scr_Class_Stat_Damage_Multiplier();
+	var shotaddedpow = scr_Soul_Power_Factor_Calc(other)
 	
 	shot_stats.Shot_Follow_Origin = other.id;
 
@@ -39,7 +39,7 @@ function scr_Extra_Shot_Stats() {
 		
 		if shot_stats.Shot_Orbital_Angle = -1 {
 			shot_stats.Shot_Orbital_Angle = point_direction(x,y,mouse_x,mouse_y);
-			shot_stats.Shot_Orbital_Angle += other.Shot_Current_Count * (360 / shot_stats.Shot_Count)
+			shot_stats.Shot_Orbital_Angle += _Shot_Current_Count * (360 / shot_stats.Shot_Count)
 		}
 		shot_stats.Shot_Center_X = other.x;
 		shot_stats.Shot_Center_Y = other.y;
@@ -82,10 +82,6 @@ function scr_Extra_Shot_Stats() {
 		scr_U01();
 		scr_U05();
 	
-		//scr_V06();
-		scr_V08();
-		//scr_V09_old();
-	
 		scr_P06();
 		scr_P07();
 	
@@ -104,8 +100,6 @@ function scr_Extra_Shot_Stats() {
 		scr_XA03_Shot_Mod();
 		scr_XA04_Shot_Mod();
 		
-		//scr_XB02();
-		
 		if global.XC[2] > 0 {
 			scr_XC02_Shot_Mod();
 		}
@@ -117,6 +111,14 @@ function scr_Extra_Shot_Stats() {
 	scr_XC06_Setup();
 	
 	shot_stats.Shot_Size_Max = shot_stats.Shot_Size;
+
+	scr_Assign_Shot_Scripts();
 	
+	if shot_stats.Shot_Origin = obj_Soul_Parent {
+		scr_V08();
+	}
+	
+	alarm[1] = 1;
+		
 
 }

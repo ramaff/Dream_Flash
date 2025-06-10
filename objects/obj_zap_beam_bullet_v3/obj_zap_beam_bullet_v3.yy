@@ -11,8 +11,8 @@
   "managed": true,
   "overriddenProperties": [],
   "parent": {
-    "name": "Boss Bullets",
-    "path": "folders/Objects/Boss Bullets.yy",
+    "name": "beams",
+    "path": "folders/Objects/Boss Bullets/beams.yy",
   },
   "parentObjectId": {
     "name": "obj_soul_hurt_v2",

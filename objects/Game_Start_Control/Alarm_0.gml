@@ -4,12 +4,12 @@ if global.loadrun = 1 {
 
     scr_Load_Run();
     
-    instance_destroy(Floor_Layout_Control);
-    instance_create(x,y, Floor_Layout_Control);
+    //instance_destroy(Floor_Layout_Control);
+    //instance_create(x,y, Floor_Layout_Control);
     //instance_destroy(Gui_Control);
     //instance_create(x,y, Gui_Control);
     
-    scr_Load_Run();
+    //scr_Load_Run();
     
     scr_Load_Item_Stats();
     
@@ -23,3 +23,5 @@ if global.loadrun = 1 {
 
 scr_Tutorial_Note_Spawn("starting_tutorial")
 
+
+	

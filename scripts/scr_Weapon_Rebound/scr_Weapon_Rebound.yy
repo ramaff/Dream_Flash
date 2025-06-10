@@ -6,6 +6,6 @@
   "isDnD": false,
   "parent": {
     "name": "Specific Shots",
-    "path": "folders/Scripts/Weapon And Projectile Commands/Specific Shots.yy",
+    "path": "folders/Scripts/Weapon And Projectile Setup/Specific Shots.yy",
   },
 }

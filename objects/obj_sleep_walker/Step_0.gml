@@ -92,7 +92,7 @@ if active_attack_delay <= 0 and pattern_cooldown <= 0 and pattern_count > 0 {
 		
 		if pattern_count = 1 {
 			bosshealth -= 10;
-			scr_Damage_Indicator(0, 10, 2);
+			scr_setup_dmg_indicator(x,y, 10, c_white);
 			image_index = 4;
 			
 			scr_Boss_Stretch("Horizontal", 0.4)

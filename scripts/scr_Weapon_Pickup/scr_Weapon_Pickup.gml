@@ -34,12 +34,13 @@ function scr_Weapon_Pickup() {
 	if emptyslot = 1 {
 	    Soul_Weapons_Control.weapon[emptynumber].weapon_id = itemindex;
 	    scr_Weapon_Stat_Add();
-		Print_DF(itemindex);
-		Print_DF(string(Soul_Weapons_Control.weapon[emptynumber]))
+		//Print_DF(itemindex);
+		//Print_DF(string(Soul_Weapons_Control.weapon[emptynumber]))
 		while(global.currentweapon != itemindex) {
-			Print_DF(string(Soul_Weapons_Control.weapon))
+			//Print_DF(string(Soul_Weapons_Control.weapon))
 			scr_Weapon_Switch(1);	
 		}
+		scr_Weapon_Slot_Info_Update(Soul_Weapons_Control.weapon_slot_info)	
 	    instance_destroy();
 	    global.floor[global.currentroom,itemData] = 0;
 	} else {
@@ -48,6 +49,7 @@ function scr_Weapon_Pickup() {
 	            scr_Weapon_Item_Change(_i);
 	            Soul_Weapons_Control.weapon[_i].weapon_id = itemindex;
 	            scr_Weapon_Stat_Add();
+				scr_Weapon_Slot_Info_Update(Soul_Weapons_Control.weapon_slot_info)	
 	            instance_destroy();
 	        }
 	    }

@@ -26,7 +26,7 @@
   "origin": 4,
   "parent": {
     "name": "(E) Perception Item Art",
-    "path": "folders/Sprites/Item Sprites/(E) Perception Item Art.yy",
+    "path": "folders/Sprites/Item Icons/(E) Perception Item Art.yy",
   },
   "preMultiplyAlpha": false,
   "sequence": {

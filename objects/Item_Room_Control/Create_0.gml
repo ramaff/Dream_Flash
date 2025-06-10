@@ -30,3 +30,10 @@ scr_Item_Spawn(field, item[1], item[2], item[3], item[4], item[5], item[6], item
 
 instance_create(x,y,obj_Environment_Emitter)
 
+if scr_Room_Leavable() {
+    scr_Room_End();
+}
+
+scr_Stat_Field_Chain_Check(); // this causes a memory leak, don't do it every step
+// still not sure why either
+

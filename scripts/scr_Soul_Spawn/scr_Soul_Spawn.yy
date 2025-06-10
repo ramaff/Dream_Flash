@@ -6,6 +6,6 @@
   "isDnD": false,
   "parent": {
     "name": "Misc Setup",
-    "path": "folders/Scripts/Weapon And Projectile Commands/Misc Setup.yy",
+    "path": "folders/Scripts/Weapon And Projectile Setup/Misc Setup.yy",
   },
 }

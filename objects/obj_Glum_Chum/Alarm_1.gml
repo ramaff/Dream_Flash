@@ -5,7 +5,7 @@ if corporealHit > 0 {
 
 	var scount = 1 + irandom(1);
     repeat(scount) {
-        scr_Default_Weapon_Stats();
+        current_weapon_stats = scr_Setup_Default_Shot_Stats();
         
         current_weapon_stats.Shot_Accuracy += 360;
         current_weapon_stats.Shot_Count += 0;

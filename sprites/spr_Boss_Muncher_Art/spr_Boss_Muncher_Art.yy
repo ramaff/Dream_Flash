@@ -26,7 +26,7 @@
   "origin": 4,
   "parent": {
     "name": "Explosive Art",
-    "path": "folders/Sprites/Weapon Sprites/Explosive Art.yy",
+    "path": "folders/Sprites/Weapon Art/Explosive Art.yy",
   },
   "preMultiplyAlpha": false,
   "sequence": {

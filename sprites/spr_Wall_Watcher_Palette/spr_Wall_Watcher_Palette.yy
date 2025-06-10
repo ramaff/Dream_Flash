@@ -26,7 +26,7 @@
   "origin": 0,
   "parent": {
     "name": "Watcher Boss Group",
-    "path": "folders/Sprites/Boss Sprites/Flash Bosses/Watcher Boss Group.yy",
+    "path": "folders/Sprites/Boss Sprites/Flash Bosses/aaa_v1/Watcher Boss Group.yy",
   },
   "preMultiplyAlpha": false,
   "sequence": {

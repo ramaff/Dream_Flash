@@ -29,21 +29,4 @@ if !(instance_exists(obj_Environmental_Control)) {
 
 instance_create(x,y,obj_Environment_Emitter)
 
-/*
-var roomtype = 1 + irandom(6);
-
-if roomtype = 1 || roomtype = 3 || roomtype = 7 {
-    scr_Class_Item_Spawn();
-}
-if roomtype = 2 || roomtype = 4 {
-    scr_Weapon_Item_Spawn();
-}
-if roomtype = 5 {
-    scr_Minion_Item_Spawn();
-}
-if roomtype = 6 {
-    scr_Heart_Item_Spawn();
-}
-
-/* */
-/*  */
+complete = false;

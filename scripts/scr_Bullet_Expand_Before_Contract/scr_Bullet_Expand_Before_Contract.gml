@@ -11,7 +11,7 @@ function scr_bullet_expand_before_contract_v2(_bullet_stats, _remaining_time = a
 
 }
 
-function scr_Bullet_Expand_Before_Contract(_expand_time = 60, _expand_rate = 0.01){
+function scr_Bullet_Expand_Before_Contract(_expand_time = 60, _expand_rate = 0.01) {
 
 	if alarm[0] <= _expand_time and alarm[0] > 15 {
 		bulletsize += bulletsize * _expand_rate;

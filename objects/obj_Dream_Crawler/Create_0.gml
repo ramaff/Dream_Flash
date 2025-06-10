@@ -15,9 +15,12 @@ var ct = id;
 var ang = 0;
 var dis = 20;
 
+var _grand_parent_id = id;
+
 for(var i = 0; i <= 9; i++) {
 	with instance_create(x + lengthdir_x(dis, ang),y + lengthdir_y(dis, ang),obj_Dream_Crawler_Part) {
 		followtarget = ct;
+		grand_parent = _grand_parent_id;
 		
 		ct = id;
 		tail = false;

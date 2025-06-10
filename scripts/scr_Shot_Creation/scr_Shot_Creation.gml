@@ -1,4 +1,4 @@
-function scr_Shot_Creation(_cw = current_weapon_stats) {
+function scr_Shot_Creation(_cw = current_weapon_stats, _prime_shot = false) {
 	
 	scr_Spike_Soul_Extra();
 	scr_Casting_Soul_Manual_Synergy(_cw);
@@ -9,7 +9,6 @@ function scr_Shot_Creation(_cw = current_weapon_stats) {
 	scr_D06(_cw);
 	scr_A08(_cw);
 	scr_D11(_cw);
-	//scr_V09_Add_old();
 	
 	scr_P09(_cw);
 	
@@ -17,7 +16,6 @@ function scr_Shot_Creation(_cw = current_weapon_stats) {
 	scr_OC06(_cw);
 	scr_XB02(_cw);
 	scr_XA06(_cw);
-	//scr_XA06(_cw);
 	
 	
 	// Note
@@ -27,15 +25,6 @@ function scr_Shot_Creation(_cw = current_weapon_stats) {
 	// So add a boolean to each script signifying if its a stubborn barrage or not?
 	
 	////
-
-	//show_debug_message(string(Shot_Count))
-	//show_debug_message(string(Shot_Repetition[bi]))
-	
-	//var _cw = current_weapon_stats;
-	
-	//if Shot_Repetition[bi] >= 1 {
-		//_cw.Shot_Count = _cw.Shot_Default_Count[bi];
-	//}
 
 	repeat(_cw.Shot_Count) {
 		sadd = global.soulshotamountaddchance + irandom(99);
@@ -50,8 +39,6 @@ function scr_Shot_Creation(_cw = current_weapon_stats) {
 	scr_D10(_cw);
 	
 	scr_XB05_Shot_Mod(_cw);
-	
-	//scr_Beast_Soul_Shot_Mod(_cw);
 
 	if _cw.Shot_Count > 1 {
 	    if _cw.Shot_Spread < 10 and _cw.Shot_Spread >= 0 {
@@ -59,12 +46,12 @@ function scr_Shot_Creation(_cw = current_weapon_stats) {
 	    }
 	}
 
-	dir = -(_cw.Shot_Spread * (_cw.Shot_Count - 1) / 2) + (-(_cw.Shot_Accuracy / 2) + random(_cw.Shot_Accuracy)) + _cw.Shot_Direction_Offset;
+	var dir = -(_cw.Shot_Spread * (_cw.Shot_Count - 1) / 2) + (-(_cw.Shot_Accuracy / 2) + random(_cw.Shot_Accuracy)) + _cw.Shot_Direction_Offset;
 
-	Shot_Current_Count = 0;
+	var _Shot_Current_Count = 0;
 
 	
-	actual_shot_direction = 0;
+	var actual_shot_direction = 0;
 	
 	if _cw.Shot_Mouse {
 		actual_shot_direction = point_direction(x, y, mouse_x, mouse_y);
@@ -82,11 +69,6 @@ function scr_Shot_Creation(_cw = current_weapon_stats) {
 		}
 	}
 	
-	/*if Shot_Repetition[bi] == Shot_Repetition_Max[bi] {
-		Shot_Repetition_Stats[bi] = scr_Dupe_Struct(_cw)
-		Shot_Repetition_Direction[bi] = actual_shot_direction
-	} */
-	
 	if Shot_Repetition[bi] >= 1 {
 		_cw.Shot_Direction = Shot_Repetition_Direction[bi];
 	}
@@ -98,8 +80,8 @@ function scr_Shot_Creation(_cw = current_weapon_stats) {
 	        dir = (-(_cw.Shot_Accuracy / 2) + random(_cw.Shot_Accuracy));
 	    }
 		actual_shot_direction = 0;
-	    xx = 0;
-	    yy = 0;
+	    var xx = 0;
+	    var yy = 0;
 		
 		if _cw.Shot_Mouse {
 			actual_shot_direction = point_direction(x, y, mouse_x, mouse_y);
@@ -145,15 +127,6 @@ function scr_Shot_Creation(_cw = current_weapon_stats) {
 	        _cw.Shot_X_Maintain = xx;
 	        _cw.Shot_Y_Maintain = yy;
 	    }
-	
-		if _cw.Shot_Ground = 1 {
-			inscheck = 1
-			scr_Check_Shot_Ground();	
-		
-			if inscheck = 0 {
-				//exit;	
-			}
-		}
 		
 		var mechFac = 1 + scr_Mechanical_Shot_Add(_cw);
 		var speedFac = 1;
@@ -187,26 +160,27 @@ function scr_Shot_Creation(_cw = current_weapon_stats) {
 		scr_E14_Shot_Mod(_cw);
 		//scr_Snake_Glitch_Mod(_cw);
 		
-		scr_XB05_Shot_Stats(_cw);
+		scr_XB05_Shot_Stats(_cw, _Shot_Current_Count);
 		
 		repeat(mechFac) {
 			
 		    with instance_create(shxx, shyy, asset_get_index(_cw.Shot_Type)) {
-		        scr_Default_Shot_Stats();
+		        scr_Default_Shot_Variables();
 				
 				shot_stats = variable_clone(_cw);
         
+				shot_stats.Prime_Shot = _prime_shot
 				shot_stats.Shot_Origin = obj_Soul_Parent;
 		        target = noone;
 		        sprite_index = asset_get_index(shot_stats.Shot_Sprite);
 		        shot_stats.Shot_Size = shot_stats.Shot_Size * ((1 + other.sshotsizefactor) / 1);
 		        shot_stats.Shot_Speed = (shot_stats.Shot_Speed + other.sshotspeedaddition) * (shot_stats.Weapon_Vomit_Min_Speed + random(shot_stats.Weapon_Vomit_Max_Speed - shot_stats.Weapon_Vomit_Min_Speed)) * other.sshotspeed / 10;
-		        shot_stats.Shot_Power_Max = (shot_stats.Shot_Power + other.spoweradd) * ((10 + other.spowerfactor + other.sattackfactorbuffamount) / 10) * other.spower / 10 * scr_Class_Stat_Damage_Multiplier();
+		        shot_stats.Shot_Power_Max = (shot_stats.Shot_Power + other.spoweradd) * scr_Soul_Power_Factor_Calc(other);
 		        shot_stats.Shot_Power = shot_stats.Shot_Power_Max;
 		        shot_stats.Shot_Power_Level = shot_stats.Shot_Power;
 		        shot_stats.Shot_Knock_Back = shot_stats.Shot_Knock_Back * other.sshotknockback / 10;
 		        shot_stats.Shot_Armour_Pierce = shot_stats.Shot_Armour_Pierce + other.sarmourpierce;
-				direction = other.actual_shot_direction;
+				direction = actual_shot_direction;
 		        //
 				
 		        if mechFac > 1 {
@@ -220,8 +194,7 @@ function scr_Shot_Creation(_cw = current_weapon_stats) {
 				}
 		        alarm[0] = shot_stats.Shot_Life_Span;
 				alarm[1] = 1;
-		        scr_Extra_Shot_Stats();
-		        scr_Weapon_Direction_List();
+		        scr_Extra_Shot_Stats(_Shot_Current_Count);
 			
 				////shot_stats.Shot_Timer = shot_stats.Shot_Life_Span;
 			
@@ -281,11 +254,12 @@ function scr_Shot_Creation(_cw = current_weapon_stats) {
 				}
 				
 		    }
+			_prime_shot = false
 			speedFac += 0.4;
 		}
     
 	    dir += _cw.Shot_Spread;
-	    Shot_Current_Count++;
+	    _Shot_Current_Count++;
 	}
 
 	if _cw.Shot_Power > 0 {

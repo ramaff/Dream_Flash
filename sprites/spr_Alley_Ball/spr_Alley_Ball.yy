@@ -26,7 +26,7 @@
   "origin": 4,
   "parent": {
     "name": "Gutterball Group",
-    "path": "folders/Sprites/Boss Sprites/Flash Bosses/Gutterball Group.yy",
+    "path": "folders/Sprites/Boss Sprites/Flash Bosses/aaa_v1/Gutterball Group.yy",
   },
   "preMultiplyAlpha": false,
   "sequence": {

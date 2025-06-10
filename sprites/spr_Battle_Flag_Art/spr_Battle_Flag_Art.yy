@@ -26,7 +26,7 @@
   "origin": 4,
   "parent": {
     "name": "Minion Spawn Art",
-    "path": "folders/Sprites/Weapon Sprites/Minion Spawn Art.yy",
+    "path": "folders/Sprites/Weapon Art/Minion Spawn Art.yy",
   },
   "preMultiplyAlpha": false,
   "sequence": {

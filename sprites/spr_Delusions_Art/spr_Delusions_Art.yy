@@ -26,7 +26,7 @@
   "origin": 4,
   "parent": {
     "name": "(OC) Assurance Items",
-    "path": "folders/Sprites/Item Sprites/(OC) Assurance Items.yy",
+    "path": "folders/Sprites/Item Icons/(OC) Assurance Items.yy",
   },
   "preMultiplyAlpha": false,
   "sequence": {

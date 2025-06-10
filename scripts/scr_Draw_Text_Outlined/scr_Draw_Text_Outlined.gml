@@ -1,29 +1,22 @@
-function scr_Draw_Text_Outlined() {
-	//draw_text_outlined(x, y, outline color, string color, string)  
-	var xx,yy;  
-	xx = argument[0];  
-	yy = argument[1];  
+
+// I got this online somewhere a long time ago
+function scr_Draw_Text_Outlined(_xx, _yy, _outline_color, _text_color, _text) {
 
 	//Outline  
-	draw_set_color(argument[2]);  
-	draw_text(xx+1, yy+1, string_hash_to_newline(argument[4]));  
-	draw_text(xx-1, yy-1, string_hash_to_newline(argument[4]));  
-	draw_text(xx,   yy+1, string_hash_to_newline(argument[4]));  
-	draw_text(xx+1,   yy, string_hash_to_newline(argument[4]));  
-	draw_text(xx,   yy-1, string_hash_to_newline(argument[4]));  
-	draw_text(xx-1,   yy, string_hash_to_newline(argument[4]));  
-	draw_text(xx-1, yy+1, string_hash_to_newline(argument[4]));  
-	draw_text(xx+1, yy-1, string_hash_to_newline(argument[4]));
+	draw_set_color(_outline_color);  
+	draw_text(_xx-1, _yy-1, _text);  
+	draw_text(_xx, _yy-1, _text); 
+	draw_text(_xx-1, _yy, _text);  
+	draw_text(_xx-1, _yy+1, _text); 
+	draw_text(_xx+1, _yy-1, _text); 
 	
-	draw_text(xx,   yy+2, string_hash_to_newline(argument[4]));  
-	draw_text(xx+2,   yy, string_hash_to_newline(argument[4]));  
-	draw_text(xx+2, yy+2, string_hash_to_newline(argument[4]));
-	draw_text(xx+1, yy+2, string_hash_to_newline(argument[4]));
-	draw_text(xx+2, yy+1, string_hash_to_newline(argument[4]));
+	draw_text(_xx, _yy+2, _text);  
+	draw_text(_xx+2, _yy, _text);  
+	draw_text(_xx+2, _yy+2, _text);
 
 	//Text  
-	draw_set_color(argument[3]);  
-	draw_text(xx, yy, string_hash_to_newline(argument[4]));  
+	draw_set_color(_text_color);  
+	draw_text(_xx, _yy, _text);  
 
 
 

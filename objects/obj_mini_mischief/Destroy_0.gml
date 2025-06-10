@@ -6,8 +6,9 @@ event_inherited();
 if instance_exists(minionbossparent) {
 	if bosshealth < 0 {
 		with (minionbossparent) {
-			bosshealth -= 15;
-			scr_Damage_Indicator(0, 15, 1)
+			var _dmg = 15
+			bosshealth -= _dmg;
+			scr_setup_dmg_indicator(x,y, _dmg, c_white);
 		}
 	}
 	minionbossparent.bossSize += minionbossparent.bossSize * 0.05;

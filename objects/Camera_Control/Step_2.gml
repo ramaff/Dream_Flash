@@ -8,7 +8,7 @@ var fac = (1 / tote_bosses) * potency
 
 if instance_exists(Floor_Layout_Control) and global.layerdeep < 1 {
 	var rsize = global.floor[global.currentroom, 3];
-	var ideal_zoom = sqrt(1024 / rsize);
+	var ideal_zoom = power((1024 / rsize), 0.333);
 	if ideal_zoom < 0.8 {
 		ideal_zoom = 0.8;
 	}
@@ -24,19 +24,13 @@ if instance_exists(Floor_Layout_Control) and global.layerdeep < 1 {
 			}
 			
 		}
-		ideal_zoom = sqrt(1024 / (rsize + extra_zoom))
+		ideal_zoom = power((1024 / (rsize + extra_zoom)), 0.333);
 	}
 	
 	if instance_exists(obj_Class_Level_Up_Indicator) and global.level_up_camera_lock = 1 {
 		var ideal_zoom = 1;
 	}
 
-	
-	//if global.layerdeep >= 1 {
-	//	ideal_zoom = 0.875;	
-	//}
-	//Print_DF("--------\nideal_zoom: " + string(ideal_zoom))
-	//Print_DF("view_zoom: " + string(view_zoom))
 	view_zoom = lerp(view_zoom, ideal_zoom, 0.0175)
 	
 	view_zoom = clamp(view_zoom, 0.5, 2);
@@ -50,26 +44,13 @@ if instance_exists(Floor_Layout_Control) and global.layerdeep < 1 {
 camera_set_view_size(view, view_width_zoom, view_height_zoom);
 
 // Game Zoom
-/*
-view_zoom += keyboard_check(vk_up) * 0.1;
-view_zoom -= keyboard_check(vk_down) * 0.1;
-*/
+
 
 // Center View
 
 if instance_exists(obj_Soul_Parent) {
 	
-	/*
-	var xAv = mean(obj_Soul_Parent.x*4,mouse_x) / 2.5;
-	var yAv = mean(obj_Soul_Parent.y*4,mouse_y) / 2.5;
 
-	if instance_exists(obj_Main_Boss_Parent) {
-		if obj_Main_Boss_Parent.state = states.normal || obj_Main_Boss_Parent.state = states.jumping {
-			var xAv = mean(obj_Soul_Parent.x * 4,obj_Main_Boss_Parent.x,mouse_x) / 2;
-			var yAv = mean(obj_Soul_Parent.y * 4,obj_Main_Boss_Parent.y,mouse_y) / 2;
-		}
-	}
-	*/
 	var xAv = 0;
 	var yAv = 0;
 	
@@ -86,9 +67,9 @@ if instance_exists(obj_Soul_Parent) {
 	}
 	if global.cameramode = "Boss" {
 		
-		var totalaveragers = 7.5;
-		var xTote = (obj_Soul_Parent.x * 6) + (mouse_x * 1.5);
-		var yTote = (obj_Soul_Parent.y * 6) + (mouse_y * 1.5);
+		var totalaveragers = 9;
+		var xTote = (obj_Soul_Parent.x * 6) + (mouse_x * 1.5) + (room_width / 2 * 1.5);
+		var yTote = (obj_Soul_Parent.y * 6) + (mouse_y * 1.5) + (room_height / 2 * 1.5);
 
 		with (obj_Main_Boss_Parent) {
 			if state = states.normal || state = states.jumping {
@@ -98,8 +79,8 @@ if instance_exists(obj_Soul_Parent) {
 			}
 		}
 		
-		var xAv = xTote / totalaveragers;
-		var yAv = yTote / totalaveragers;
+		xAv = xTote / totalaveragers;
+		yAv = yTote / totalaveragers;
 	}
 	
 	var camX = clamp((xAv - (view_width_zoom / 2)), 0, room_width - view_width_zoom);
@@ -116,8 +97,6 @@ if instance_exists(obj_Soul_Parent) {
 	    camY = Tutorial_Control.y - (view_height_zoom / 2);
 	}
 
-	//camX = clamp(camX,obj_Soul_Parent.x - view_width_zoom * 2,obj_Soul_Parent.x + view_width_zoom * 2);
-	//camY = clamp(camY,obj_Soul_Parent.y - view_height_zoom * 2,obj_Soul_Parent.y + view_height_zoom * 2);	
 	
 	var _cur_x = camera_get_view_x(view);
 	var _cur_y = camera_get_view_y(view);
@@ -127,9 +106,5 @@ if instance_exists(obj_Soul_Parent) {
 	camera_set_view_pos(view, 
 						(lerp(_cur_x, camX, spd)), 
 						(lerp(_cur_y, camY, spd)));
-} else {
-	//camera_set_view_pos(view, room_width / 2 - view_width_zoom / 2, room_height / 2 - view_height_zoom / 2);
 }
 
-
-//camera_set_default(view);

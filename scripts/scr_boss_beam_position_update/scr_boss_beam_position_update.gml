@@ -14,7 +14,7 @@ function scr_boss_beam_position_update(){
 		y = seg_tail.y + _yy;
 		
 		image_angle = seg_angle
-	} else {
+	} else if instance_exists(bullet_stats.bullet_origin) {
 		if seg_angle_displacement != bullet_stats.bullet_origin.image_angle {
 			seg_angle_displacement = bullet_stats.bullet_origin.image_angle;
 		}
@@ -25,6 +25,8 @@ function scr_boss_beam_position_update(){
 		}
 		x = bullet_stats.bullet_origin.x + bullet_stats.boss_xoffset;
 		y = bullet_stats.bullet_origin.y + bullet_stats.boss_yoffset;
+	} else {
+		instance_destroy();	
 	}
 	//+ seg_angle_displacement; // don't turn this shit back on
 }

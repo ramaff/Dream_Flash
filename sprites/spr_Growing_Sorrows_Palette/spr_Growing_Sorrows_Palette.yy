@@ -26,7 +26,7 @@
   "origin": 0,
   "parent": {
     "name": "Sorrow Group",
-    "path": "folders/Sprites/Boss Sprites/Flash Bosses/Sorrow Group.yy",
+    "path": "folders/Sprites/Boss Sprites/Flash Bosses/aaa_v1/Sorrow Group.yy",
   },
   "preMultiplyAlpha": false,
   "sequence": {

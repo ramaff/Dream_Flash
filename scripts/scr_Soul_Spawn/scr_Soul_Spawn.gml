@@ -10,9 +10,9 @@ function scr_Soul_Spawn(_cw_stats = current_weapon_stats) {
 
 	_cw_stats.Shot_Count += global.soulshotamountadd + global.soulshotamountaddtemp;
 
-	scr_D10(current_weapon_stats);
+	scr_D10(_cw_stats);
 	
-	scr_XB05_Shot_Mod(current_weapon_stats);
+	scr_XB05_Shot_Mod(_cw_stats);
 
 	if _cw_stats.Shot_Count > 1 {
 	    if _cw_stats.Shot_Spread < 10 and _cw_stats.Shot_Spread >= 0 {
@@ -26,7 +26,7 @@ function scr_Soul_Spawn(_cw_stats = current_weapon_stats) {
 	    }
 	}
 
-	dir = -(_cw_stats.Shot_Spread * (_cw_stats.Shot_Count - 1) / 2) + (-(_cw_stats.Shot_Accuracy / 2) + random(_cw_stats.Shot_Accuracy));
+	var dir = -(_cw_stats.Shot_Spread * (_cw_stats.Shot_Count - 1) / 2) + (-(_cw_stats.Shot_Accuracy / 2) + random(_cw_stats.Shot_Accuracy));
 	
 	repeat(Shot_Count) {
 
@@ -36,7 +36,7 @@ function scr_Soul_Spawn(_cw_stats = current_weapon_stats) {
 	        smovementspeed = _cw_stats.Minion_Speed;
 	        shealth = _cw_stats.Minion_Health;
 	        smaxhealth = shealth;
-	        spower = (_cw_stats.Minion_Power + other.spoweradd) * ((10 + other.spowerfactor + other.sattackfactorbuffamount) / 10) * other.spower / 10 * scr_Class_Stat_Damage_Multiplier();
+	        spower = (_cw_stats.Minion_Power + other.spoweradd) * scr_Soul_Power_Factor_Calc(other);
 	        //direction = point_direction(x,y,mouse_x,mouse_y);
 	        Shot_Power = _cw_stats.Shot_Power;
 	        Minion_Lifespan = _cw_stats.Minion_Lifespan;

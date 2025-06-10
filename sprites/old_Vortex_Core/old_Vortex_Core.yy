@@ -26,7 +26,7 @@
   "origin": 4,
   "parent": {
     "name": "old",
-    "path": "folders/Sprites/Boss Sprites/Flash Bosses/Core Manifester/old.yy",
+    "path": "folders/Sprites/Boss Sprites/Flash Bosses/aaa_v1/Core Manifester/old.yy",
   },
   "preMultiplyAlpha": false,
   "sequence": {

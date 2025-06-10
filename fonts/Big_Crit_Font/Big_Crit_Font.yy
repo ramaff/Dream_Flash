@@ -4,7 +4,7 @@
   "name": "Big_Crit_Font",
   "AntiAlias": 1,
   "applyKerning": 0,
-  "ascender": 0,
+  "ascender": 38,
   "ascenderOffset": 0,
   "bold": true,
   "canGenerateBitmap": true,
@@ -969,7 +969,7 @@
     {"amount":-1,"first":125,"second":125,},
   ],
   "last": 0,
-  "lineHeight": 0,
+  "lineHeight": 50,
   "maintainGms1Font": false,
   "parent": {
     "name": "Fonts",

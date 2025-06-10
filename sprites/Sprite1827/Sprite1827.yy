@@ -26,7 +26,7 @@
   "origin": 0,
   "parent": {
     "name": "(B) Vitality Item Art",
-    "path": "folders/Sprites/Item Sprites/(B) Vitality Item Art.yy",
+    "path": "folders/Sprites/Item Icons/(B) Vitality Item Art.yy",
   },
   "preMultiplyAlpha": false,
   "sequence": {

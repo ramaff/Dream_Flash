@@ -26,7 +26,7 @@
   "origin": 4,
   "parent": {
     "name": "(C) Essence Item Art",
-    "path": "folders/Sprites/Item Sprites/(C) Essence Item Art.yy",
+    "path": "folders/Sprites/Item Icons/(C) Essence Item Art.yy",
   },
   "preMultiplyAlpha": false,
   "sequence": {
