@@ -59,7 +59,10 @@ if _threshold {
 	image_alpha = lerp(image_alpha, 1, 0.2)	
 }
 
-scr_Key_Press_Movement(v_speed, h_speed, max_speed, acceleration, fric, false)
+var _speeds = scr_Key_Press_Movement(v_speed, h_speed, max_speed, acceleration, fric, false)
+
+v_speed = _speeds.v_speed;
+h_speed = _speeds.h_speed;
 
 vspeed = v_speed;
 hspeed = h_speed;

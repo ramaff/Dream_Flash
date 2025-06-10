@@ -40,16 +40,15 @@ if !(instance_exists(Tutorial_Control)) {
 
 scr_Soul_Status_Effect_Tick(soul_step_status_effects)
 
-if ((dx != 0) or (dy != 0)) and move {
-	soulDirectionAttempt = 90 - dx * 90;
-	if dx != 0 {
-		soulDirectionAttempt += 45 * -dy * dx;
-	} else {
-		soulDirectionAttempt = -dy * 90;
-	}
-    var l = sqrt(dx*dx + dy*dy);
-    dx /= l;
-    dy /= l;
+var _fric_add = smovemultiplier * (1 - soulFriction)
+
+var _speeds = scr_Key_Press_Movement(soulCurrentVerticalSpeed, soulCurrentHorizontalSpeed, smovemultiplier + _fric_add, soulAcceleration + 1, soulFriction, true)
+
+soulCurrentVerticalSpeed = _speeds.v_speed
+soulCurrentHorizontalSpeed = _speeds.h_speed
+
+if ((soulCurrentHorizontalSpeed != 0) or (soulCurrentVerticalSpeed != 0)) and move {
+	
     shealthregenfactor = 0.8 * ((10 + scr_Get_Status_Magnitude(id, "regen_mult")) / 10);
     currentenergyregenfactor = 0.9 * sstatefirerate * ((10 + senergyregenfactor) / 10);
     sdelayregenfactor = 1 * sstatefirerate * ((10 + scr_Get_Status_Magnitude(id, "firerate_mult")) / 10);
@@ -58,81 +57,16 @@ if ((dx != 0) or (dy != 0)) and move {
 	if soulmovetimer mod 20 = 0 {
 		scr_Soul_Stretch("Horizontal", 0.2)
 	}
-	if soulmovetimer mod 10 = 0 {
-		//scr_Soul_Move_Particle(x,y,"Move");	
-	}
-	var aDif = angle_difference(soulDirectionAttempt, soulCurrentDirection);
 	
-	soulCurrentHorizontalSpeed += lengthdir_x(smovemultiplier * 0.2 * soulAcceleration, soulDirectionAttempt)
-	soulCurrentVerticalSpeed += lengthdir_y(smovemultiplier * 0.2 * soulAcceleration, soulDirectionAttempt)
-	var maxHSpeed = abs(lengthdir_x(smovemultiplier, soulDirectionAttempt))
-	var maxVSpeed = abs(lengthdir_y(smovemultiplier, soulDirectionAttempt))
-	if soulFriction >= 1 {
-		if abs(soulCurrentHorizontalSpeed) > maxHSpeed {
-			if soulCurrentHorizontalSpeed > maxHSpeed {
-				soulCurrentHorizontalSpeed = maxHSpeed;
-			} else {
-				soulCurrentHorizontalSpeed = -maxHSpeed;
-			}
-		}
-		if abs(soulCurrentVerticalSpeed) > maxVSpeed {
-			if soulCurrentVerticalSpeed > maxVSpeed {
-				soulCurrentVerticalSpeed = maxVSpeed;
-			} else {
-				soulCurrentVerticalSpeed = -maxVSpeed;
-			}
-		}
-	} else {
-		maxHSpeed = maxHSpeed * 2;
-		maxVSpeed = maxVSpeed * 2;
-		if abs(soulCurrentHorizontalSpeed) > maxHSpeed {
-			if soulCurrentHorizontalSpeed > maxHSpeed {
-				soulCurrentHorizontalSpeed = maxHSpeed;
-			} else {
-				soulCurrentHorizontalSpeed = -maxHSpeed;
-			}
-		}
-		if abs(soulCurrentVerticalSpeed) > maxVSpeed {
-			if soulCurrentVerticalSpeed > maxVSpeed {
-				soulCurrentVerticalSpeed = maxVSpeed;
-			} else {
-				soulCurrentVerticalSpeed = -maxVSpeed;
-			}
-		}
-	}
 } else {
     shealthregenfactor = 1 * ((10 + shealthidleregenfactor) / 10) * ((10 + scr_Get_Status_Magnitude(id, "regen_mult")) / 10);
     currentenergyregenfactor = 1 * sstatefirerate * ((10 + senergyidleregenfactor) / 10) * ((10 + senergyregenfactor) / 10);
     sdelayregenfactor = 1 * sstatefirerate * ((10 + scr_Get_Status_Magnitude(id, "firerate_mult")) / 10);
 	soulmovetimer = 0;
-	
-	if abs(soulCurrentHorizontalSpeed) > 0 {
-		var hFriction = smovemultiplier * 0.2 * soulFriction
-		if abs(soulCurrentHorizontalSpeed) < hFriction {
-			soulCurrentHorizontalSpeed = 0;	
-		}
-		if soulCurrentHorizontalSpeed > 0 {
-			soulCurrentHorizontalSpeed -= hFriction
-		} else if soulCurrentHorizontalSpeed < 0 {
-			soulCurrentHorizontalSpeed += hFriction
-		}
-	}
-	if abs(soulCurrentVerticalSpeed) > 0 {
-		var vFriction = smovemultiplier * 0.2 * soulFriction
-		if abs(soulCurrentVerticalSpeed) < vFriction {
-			soulCurrentVerticalSpeed = 0;	
-		}
-		if soulCurrentVerticalSpeed > 0 {
-			soulCurrentVerticalSpeed -= vFriction
-		} else if soulCurrentVerticalSpeed < 0 {
-			soulCurrentVerticalSpeed += vFriction
-		}
-	}
 }
-soulCurrentDirection = soulDirectionAttempt;
 	
 if soulFriction < 1 {
-	soulFriction += 0.1;	
+	soulFriction += 0.1;
 }
 if soulAcceleration < 1 {
 	soulAcceleration += 0.1;	

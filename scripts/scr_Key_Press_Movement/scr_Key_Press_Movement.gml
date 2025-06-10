@@ -34,7 +34,9 @@ function scr_Key_Press_Movement(_vspeed = 0, _hspeed = 0, _max_speed = 5, _accel
 		_vspeed = clamp(_vspeed, -_max_vspeed, _max_vspeed)
 	}
 	
-	v_speed = _vspeed;
-	h_speed = _hspeed;
+	return {
+		"v_speed": _vspeed,	
+		"h_speed": _hspeed
+	}
 
 }
