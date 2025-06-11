@@ -4,7 +4,7 @@ function scr_Spike_State_Underground(){
 
 	if soul_underground > 0 {
 		var _dir = point_direction(x, y, mouse_x, mouse_y)
-		var _dis = min(15, point_distance(x, y, mouse_x, mouse_y) / soul_underground)
+		var _dis = min(15, point_distance(x, y, mouse_x, mouse_y) / max(1, soul_underground))
 	
 		x += lengthdir_x(_dis, _dir)
 		y += lengthdir_y(_dis, _dir)
@@ -20,6 +20,7 @@ function scr_Spike_State_Underground(){
 		var ang = 0
 
 		for(var _i = 0; _i < 5; _i++) {
+			for(var _j = 0; _j < 5; _j++) {
 			current_weapon_stats = scr_Setup_Default_Shot_Stats();
 
 			current_weapon_stats.Shot_Spread = 0;
@@ -50,7 +51,6 @@ function scr_Spike_State_Underground(){
 			}
 		
 		
-			for(var _j = 0; _j < 5; _j++) {
 	
 				dist = sqrt(2500 + (4000 * _i));
 				ang += 72
