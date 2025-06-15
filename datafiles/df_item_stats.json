@@ -373,7 +373,7 @@
     "D14": {
         "recollectionString": "Pressure Run",
         "recollectionSprite": "spr_Pressure_Run_Item",
-        "recollectionExtraStats": "+Movement Gust",
+        "recollectionExtraStats": "+Movement Gust +20% Movement Speed",
         "recollectionDescription": "Fast and powerful soul movement causes pressure, which blows back bullets and does damage to enemies.",
         "Snake_Credit": 0.5
     },

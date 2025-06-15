@@ -6,7 +6,7 @@ function scr_Room_Change_Actions() {
 	global.roomSizeX = global.floor[global.currentroom,3];
 	global.roomSizeY = global.floor[global.currentroom,3];
 
-	roomEnvironment = global.floor[global.currentroom,4];
+	var roomEnvironment = global.floor[global.currentroom,4];
 
 	if roomEnvironment = bg_Deep_Woods_Tiles || roomEnvironment = bg_Cave_Tiles || roomEnvironment = bg_Graveyard_Tiles {
 	    global.roomdarkness = 0.3;
@@ -18,7 +18,7 @@ function scr_Room_Change_Actions() {
 
 	scr_Room_Change_Variables();
 
-	roomType = global.floor[global.currentroom,0];
+	var roomType = global.floor[global.currentroom,0];
 
 	scr_Soul_Stat_Store();
 	

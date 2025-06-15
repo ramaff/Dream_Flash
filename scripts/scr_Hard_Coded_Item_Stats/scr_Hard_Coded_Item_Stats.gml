@@ -280,6 +280,8 @@ function scr_Hard_Coded_Item_Stats(itemVal, items_to_add = 1, reload = false) {
 	    //global.D[13]++;
 	}
 	if itemVal = "D14" {
+		global.soulmovementfactor += 2;
+	    obj_Soul_Parent.smovementfactor += 2;
 	    //global.D[14]++;
 	}
 

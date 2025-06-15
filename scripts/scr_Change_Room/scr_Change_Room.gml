@@ -104,7 +104,7 @@ function scr_Change_Room(roomGoX, roomGoY) {
 	        global.currentroom = nextRoom;
 	    }
     
-	    if nextRoomType = "Misc Field" || nextRoomType = "Heart Field" || nextRoomType = "Minion Field" || nextRoomType = "Weapon Field" {
+	    if nextRoomType = "Misc Field" || nextRoomType = "Heart Field" || nextRoomType = "Minion Field" || nextRoomType = "Weapon Field" || nextRoomType = "Hyper Field" {
 	        room_goto(Medium_Item_Room);
 	        global.currentroom = nextRoom;
 	    }

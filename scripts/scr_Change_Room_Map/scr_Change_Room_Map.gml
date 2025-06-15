@@ -19,16 +19,16 @@ function scr_Change_Room_Map(argument0) {
 	    camY = obj_Soul_Parent.y;
 	}
 
-	nextRoomX = 0;
-	nextRoomY = 0;
-	nextRoom = global.currentroom;
+	var nextRoomX = 0;
+	var nextRoomY = 0;
+	var nextRoom = global.currentroom;
 	
 	nextRoom = argument0;
 
 	global.soulSpawnXAdd = 0;
 	global.soulSpawnYAdd = 0;
 
-	nextRoomType = global.floor[nextRoom,0];
+	var nextRoomType = global.floor[nextRoom,0];
 
 	if global.currentroom != nextRoom {
     
@@ -55,7 +55,7 @@ function scr_Change_Room_Map(argument0) {
 	        global.currentroom = nextRoom;
 	    }
     
-	    if nextRoomType = "Misc Field" || nextRoomType = "Heart Field" || nextRoomType = "Minion Field" || nextRoomType = "Weapon Field"{
+	    if nextRoomType = "Misc Field" || nextRoomType = "Heart Field" || nextRoomType = "Minion Field" || nextRoomType = "Weapon Field" || nextRoomType = "Hyper Field" {
 	        room_goto(Medium_Item_Room);
 	        global.currentroom = nextRoom;
 	    }
