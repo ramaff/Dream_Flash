@@ -13,25 +13,7 @@ if global.soulflash >= price {
 				var itemform = 0;
 				
 				var ppool = global.a_item_pool;
-	
-			    /*if itemGroup = "A" and itemVal != "A00" {
-			        ppool = scr_Get_Item_Pool_From_Letter(itemGroup)
-			    }
-			    if itemGroup = "B" and itemVal != "B00" {
-			        ppool = scr_Get_Item_Pool_From_Letter(itemGroup)
-			    }
-			    if itemGroup = "C" and itemVal != "C00" {
-			        ppool = scr_Get_Item_Pool_From_Letter(itemGroup)
-			    }
-			    if itemGroup = "D" and itemVal != "D00" {
-			        ppool = scr_Get_Item_Pool_From_Letter(itemGroup)
-			    }
-			    if itemGroup = "E" and itemVal != "E00" {
-			        ppool = scr_Get_Item_Pool_From_Letter(itemGroup)
-			    }
-			    if itemGroup = "F" and itemVal != "F00" {
-			        ppool = scr_Get_Item_Pool_From_Letter(itemGroup)
-			    } */
+
 				if itemGroup = "I" || itemVal = "A00" || itemVal = "B00" || itemVal = "C00" || itemVal = "D00" || itemVal = "E00" || itemVal = "F00" {
 			        ppool = scr_Get_Item_Pool_From_Letter("I")
 			    } else {
@@ -39,14 +21,6 @@ if global.soulflash >= price {
 				}
 			    
 
-				/*
-				if itemNum > 0 {
-					if itemform <= 9 {
-						itemVal = itemGroup + "0" + string(itemform);
-					} else {
-						itemVal = itemGroup + string(itemform);
-					}
-				} */
 				itemVal = scr_Pool_Pick(ppool);
 			} else {
 				

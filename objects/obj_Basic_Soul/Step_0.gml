@@ -41,13 +41,17 @@ if !(instance_exists(Tutorial_Control)) {
 scr_Soul_Status_Effect_Tick(soul_step_status_effects)
 
 var _fric_add = smovemultiplier * (1 - soulFriction)
+var _accel = soulAcceleration + 1
+if !move {
+	_accel = 0;
+}
 
-var _speeds = scr_Key_Press_Movement(soulCurrentVerticalSpeed, soulCurrentHorizontalSpeed, smovemultiplier + _fric_add, soulAcceleration + 1, soulFriction, true)
+var _speeds = scr_Key_Press_Movement(soulCurrentVerticalSpeed, soulCurrentHorizontalSpeed, smovemultiplier + _fric_add, _accel, soulFriction, true)
 
 soulCurrentVerticalSpeed = _speeds.v_speed
 soulCurrentHorizontalSpeed = _speeds.h_speed
 
-if ((soulCurrentHorizontalSpeed != 0) or (soulCurrentVerticalSpeed != 0)) and move {
+if ((soulCurrentHorizontalSpeed != 0) or (soulCurrentVerticalSpeed != 0)) {
 	
     shealthregenfactor = 0.8 * ((10 + scr_Get_Status_Magnitude(id, "regen_mult")) / 10);
     currentenergyregenfactor = 0.9 * sstatefirerate * ((10 + senergyregenfactor) / 10);
