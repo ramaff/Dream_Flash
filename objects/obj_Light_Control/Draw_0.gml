@@ -3,9 +3,9 @@ if surface_exists(surf) {
 
     var _room_environment = global.floor[global.currentroom,4];
     
-    global.roomdarkness = -0.05;
+    global.roomdarkness = 0.1;
 	
-	if _room_environment = bg_Dungeon_Tiles {
+	/*if _room_environment = bg_Dungeon_Tiles {
 		global.roomdarkness = 0.05;	
 	}
     
@@ -15,7 +15,7 @@ if surface_exists(surf) {
     
     if _room_environment = bg_Depths_Tiles {
         global.roomdarkness = 0.3;
-    }
+    } */
     
     var _darkness = global.roomdarkness + ((global.souldespair + global.souldespairTemp) / 100);
     
@@ -48,7 +48,7 @@ if surface_exists(surf) {
 	
     surface_set_target(surf);
     
-    draw_clear(c_black);
+    draw_clear(flash_color);
 	
 	var _cam_x = camera_get_view_x(view)
 	var _cam_y = camera_get_view_y(view)
@@ -56,12 +56,14 @@ if surface_exists(surf) {
 	var xxx = surfscale - _cam_x;
 	var yyy = surfscale - _cam_y;
 	
-	draw_set_blend_mode(bm_src_color);
+	//draw_set_blend_mode(bm_src_color);
+	draw_set_blend_mode(bm_add);
 	
 	var _scale = surfscale
 	
     with(obj_LightS) {
-        draw_sprite_ext(spr_Light,0,x + xxx,y + yyy,lightsize * _scale,lightsize * _scale,0,c_white,1 * lightstrength);
+		var _lsize = lightsize * _scale
+        draw_sprite_ext(spr_Light,0,x + xxx,y + yyy, _lsize, _lsize,0,c_white,lightstrength);
     }
 	
 	draw_set_blend_mode(bm_normal);

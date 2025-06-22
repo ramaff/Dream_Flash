@@ -17,11 +17,12 @@ instance_create(0,0,obj_Sparkle_Emitter);
 instance_create(x,y,obj_Charge_Indicator);
 with instance_create(room_width / 2,room_height / 2,obj_LightS) {
     target = obj_Soul_Parent;
+	lightsize = 1;
 }
 
 //instance_create(x,y,obj_light_renderer);
 
-scr_Mental_Background();
+//scr_Mental_Background();
 
 
 var h2 = 0;
@@ -32,10 +33,57 @@ properBG = global.floor[global.currentroom,4];
 properTileSet = ts_Flash_Tiles;
 properTileFall = ts_Flash_Fall_Out;
 
-xx = (room_width / 2 - 640);
-yy = (room_height / 2 - 640);
+xx = (room_width / 2);
+yy = (room_height / 2);
+
+bg_xx = (room_width / 2 - 640);
+bg_yy = (room_height / 2 - 640);
 
 var tilesize = 64;
+
+deepest_layer = layer_create(10000000);
+deepest_bg = layer_background_create(deepest_layer, spr_No_BG);
+deep_layer = layer_create(100000);
+deep_bg = layer_background_create(deep_layer, spr_No_BG);
+forward_layer = layer_create(-100);
+forward_bg = layer_background_create(forward_layer, spr_No_BG);
+	
+var roomBG = global.floor[global.currentroom,4];
+var bgType = "Flash";
+	
+if global.currentchapter = 2 {
+	bgType = "Feel";
+}
+	
+if global.currentchapter = 3 {
+	bgType = "Dream";	
+}
+	
+if global.currentchapter = 4 {
+	bgType = "Nightmare";	
+}
+			
+if roomBG = bg_Cave_Tiles || roomBG = bg_Depths_Tiles || roomBG = bg_Flash_Dungeon_Tiles || roomBG = bg_Feel_Dungeon_Tiles  || roomBG = bg_Dream_Dungeon_Tiles  || roomBG = bg_Dungeon_Tiles || roomBG = bg_Safe_Room_Tiles || roomBG = bg_Mind_Chamber_Tiles || roomBG = bg_State_Tiles {
+	bgType = "None"
+}
+	
+if bgType = "Flash" {
+	deepest_bg = layer_background_create(deepest_layer, spr_flash_day_bg);
+	deep_bg = layer_background_create(deep_layer, spr_flash_day_front_bg);
+	forward_bg = layer_background_create(forward_layer, spr_flash_day_lights);
+}
+if bgType = "Feel" {
+	deepest_bg = layer_background_create(deepest_layer, spr_Mental_Background_Feel);
+}
+if bgType = "Dream" {
+	deepest_bg = layer_background_create(deepest_layer, spr_Mental_Background_Dream);
+}
+if bgType = "Nightmare" {
+	deepest_bg = layer_background_create(deepest_layer, spr_Mental_Background_Nightmare);
+}
+	
+//var back = layer_background_get_id(global.mentalBackground);
+
 
 
 /*

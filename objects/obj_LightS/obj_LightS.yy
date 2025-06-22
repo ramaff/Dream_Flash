@@ -28,10 +28,7 @@
   "physicsStartAwake": true,
   "properties": [],
   "solid": false,
-  "spriteId": {
-    "name": "spr_light_point",
-    "path": "sprites/spr_light_point/spr_light_point.yy",
-  },
+  "spriteId": null,
   "spriteMaskId": null,
   "visible": false,
 }

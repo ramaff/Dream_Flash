@@ -1,7 +1,7 @@
 {
   "resourceType": "GMSprite",
   "resourceVersion": "1.0",
-  "name": "spr_flash_day_bg",
+  "name": "spr_flash_day_lights",
   "bbox_bottom": 1279,
   "bbox_left": 0,
   "bbox_right": 1279,
@@ -13,14 +13,14 @@
   "edgeFiltering": false,
   "For3D": false,
   "frames": [
-    {"resourceType":"GMSpriteFrame","resourceVersion":"1.1","name":"2ad8565b-0ed6-4340-ad67-bad5828d543b",},
+    {"resourceType":"GMSpriteFrame","resourceVersion":"1.1","name":"9dd3723f-d894-4016-a1cc-5c1b7edf1787",},
   ],
   "gridX": 0,
   "gridY": 0,
   "height": 1280,
   "HTile": false,
   "layers": [
-    {"resourceType":"GMImageLayer","resourceVersion":"1.0","name":"93476376-59f6-4b6f-b7dd-855145cf8951","blendMode":0,"displayName":"default","isLocked":false,"opacity":100.0,"visible":true,},
+    {"resourceType":"GMImageLayer","resourceVersion":"1.0","name":"8ac932d3-4333-4db7-a4f1-6f2c63308a5a","blendMode":0,"displayName":"default","isLocked":false,"opacity":25.0,"visible":true,},
   ],
   "nineSlice": null,
   "origin": 0,
@@ -32,7 +32,7 @@
   "sequence": {
     "resourceType": "GMSequence",
     "resourceVersion": "1.4",
-    "name": "spr_flash_day_bg",
+    "name": "spr_flash_day_lights",
     "autoRecord": true,
     "backdropHeight": 768,
     "backdropImageOpacity": 0.5,
@@ -54,7 +54,7 @@
     "timeUnits": 1,
     "tracks": [
       {"resourceType":"GMSpriteFramesTrack","resourceVersion":"1.0","name":"frames","builtinName":0,"events":[],"inheritsTrackColour":true,"interpolation":1,"isCreationTrack":false,"keyframes":{"resourceType":"KeyframeStore<SpriteFrameKeyframe>","resourceVersion":"1.0","Keyframes":[
-            {"resourceType":"Keyframe<SpriteFrameKeyframe>","resourceVersion":"1.0","Channels":{"0":{"resourceType":"SpriteFrameKeyframe","resourceVersion":"1.0","Id":{"name":"2ad8565b-0ed6-4340-ad67-bad5828d543b","path":"sprites/spr_flash_day_bg/spr_flash_day_bg.yy",},},},"Disabled":false,"id":"7406eb02-202e-45d8-ae44-0739cf17cc2c","IsCreationKey":false,"Key":0.0,"Length":1.0,"Stretch":false,},
+            {"resourceType":"Keyframe<SpriteFrameKeyframe>","resourceVersion":"1.0","Channels":{"0":{"resourceType":"SpriteFrameKeyframe","resourceVersion":"1.0","Id":{"name":"9dd3723f-d894-4016-a1cc-5c1b7edf1787","path":"sprites/spr_flash_day_lights/spr_flash_day_lights.yy",},},},"Disabled":false,"id":"b1454882-6f6b-4d19-bb77-a7d419043141","IsCreationKey":false,"Key":0.0,"Length":1.0,"Stretch":false,},
           ],},"modifiers":[],"spriteId":null,"trackColour":0,"tracks":[],"traits":0,},
     ],
     "visibleRange": null,

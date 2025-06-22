@@ -1,18 +1,7 @@
-if instance_exists(target) {
-    x = target.x;
-    y = target.y;
-	lightstrength = target.image_alpha;
-	
-	if target = obj_Soul_Parent {
-		lightsize = 1;
-	}
-} else {
+if !instance_exists(target) {
     instance_destroy();
+	exit;
 }
-/*
-if ds_exists(light, ds_type_list) {
-	light[| eLight.X] = x;
-	light[| eLight.Y] = y;
-}
-
-//depth = -99;
+x = target.x;
+y = target.y;
+lightstrength = target.image_alpha;
