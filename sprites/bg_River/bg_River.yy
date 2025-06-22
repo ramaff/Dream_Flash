@@ -26,7 +26,7 @@
   "origin": 0,
   "parent": {
     "name": "Flash BG's",
-    "path": "folders/Sprites/Background/Flash BG's.yy",
+    "path": "folders/Sprites/Background/v1/Flash BG's.yy",
   },
   "preMultiplyAlpha": false,
   "sequence": {

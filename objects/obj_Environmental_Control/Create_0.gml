@@ -32,6 +32,14 @@ properBG = global.floor[global.currentroom,4];
 properTileSet = ts_Flash_Tiles;
 properTileFall = ts_Flash_Fall_Out;
 
+xx = (room_width / 2 - 640);
+yy = (room_height / 2 - 640);
+
+var tilesize = 64;
+
+
+/*
+
 if global.currentchapter = 1 and properBG = bg_Flash_Tiles {
 	properTileSet = ts_Flash_Tiles;
 }
@@ -180,6 +188,7 @@ xx = (room_width / 2 - properSize / 2);
 yy = (room_height / 2 - properSize / 2);
 
 var tilesize = 64;
+
 
 //if stretchb = 0 {
 	//draw_background_part(properBG,0,0,properSize,properSize,room_width/2 - properSize/2,room_height/2 - properSize/2);

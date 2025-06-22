@@ -24,7 +24,7 @@ function scr_Mental_Background(){
 	}
 	
 	if bgType = "Flash" {
-		global.mentalBackground = layer_background_create(global.backLayer, spr_Mental_Background);
+		global.mentalBackground = layer_background_create(global.backLayer, spr_flash_day_bg);
 	}
 	if bgType = "Feel" {
 		global.mentalBackground = layer_background_create(global.backLayer, spr_Mental_Background_Feel);
@@ -41,4 +41,5 @@ function scr_Mental_Background(){
 	layer_background_vtiled(global.mentalBackground, true);
 	
 	layer_hspeed(global.backLayer,1);
+	layer_vspeed(global.backLayer,-1);
 }

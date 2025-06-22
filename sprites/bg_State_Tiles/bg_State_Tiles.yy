@@ -26,7 +26,7 @@
   "origin": 0,
   "parent": {
     "name": "Misc BGs",
-    "path": "folders/Sprites/Background/Misc BGs.yy",
+    "path": "folders/Sprites/Background/v1/Misc BGs.yy",
   },
   "preMultiplyAlpha": false,
   "sequence": {
