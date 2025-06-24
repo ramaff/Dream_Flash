@@ -2,9 +2,9 @@
   "resourceType": "GMSprite",
   "resourceVersion": "1.0",
   "name": "spr_flash_day_bg",
-  "bbox_bottom": 1279,
+  "bbox_bottom": 1599,
   "bbox_left": 0,
-  "bbox_right": 1279,
+  "bbox_right": 2399,
   "bbox_top": 0,
   "bboxMode": 0,
   "collisionKind": 1,
@@ -13,14 +13,14 @@
   "edgeFiltering": false,
   "For3D": false,
   "frames": [
-    {"resourceType":"GMSpriteFrame","resourceVersion":"1.1","name":"2ad8565b-0ed6-4340-ad67-bad5828d543b",},
+    {"resourceType":"GMSpriteFrame","resourceVersion":"1.1","name":"a469bafc-c1df-44f1-81e1-fb724676c071",},
   ],
   "gridX": 0,
   "gridY": 0,
-  "height": 1280,
+  "height": 1600,
   "HTile": false,
   "layers": [
-    {"resourceType":"GMImageLayer","resourceVersion":"1.0","name":"93476376-59f6-4b6f-b7dd-855145cf8951","blendMode":0,"displayName":"default","isLocked":false,"opacity":100.0,"visible":true,},
+    {"resourceType":"GMImageLayer","resourceVersion":"1.0","name":"7fedcbf4-d2cc-427a-a47a-06c7c65e8ba8","blendMode":0,"displayName":"default","isLocked":false,"opacity":100.0,"visible":true,},
   ],
   "nineSlice": null,
   "origin": 0,
@@ -54,7 +54,7 @@
     "timeUnits": 1,
     "tracks": [
       {"resourceType":"GMSpriteFramesTrack","resourceVersion":"1.0","name":"frames","builtinName":0,"events":[],"inheritsTrackColour":true,"interpolation":1,"isCreationTrack":false,"keyframes":{"resourceType":"KeyframeStore<SpriteFrameKeyframe>","resourceVersion":"1.0","Keyframes":[
-            {"resourceType":"Keyframe<SpriteFrameKeyframe>","resourceVersion":"1.0","Channels":{"0":{"resourceType":"SpriteFrameKeyframe","resourceVersion":"1.0","Id":{"name":"2ad8565b-0ed6-4340-ad67-bad5828d543b","path":"sprites/spr_flash_day_bg/spr_flash_day_bg.yy",},},},"Disabled":false,"id":"7406eb02-202e-45d8-ae44-0739cf17cc2c","IsCreationKey":false,"Key":0.0,"Length":1.0,"Stretch":false,},
+            {"resourceType":"Keyframe<SpriteFrameKeyframe>","resourceVersion":"1.0","Channels":{"0":{"resourceType":"SpriteFrameKeyframe","resourceVersion":"1.0","Id":{"name":"a469bafc-c1df-44f1-81e1-fb724676c071","path":"sprites/spr_flash_day_bg/spr_flash_day_bg.yy",},},},"Disabled":false,"id":"cbec4ddb-3d47-414e-ad20-78ffa243138f","IsCreationKey":false,"Key":0.0,"Length":1.0,"Stretch":false,},
           ],},"modifiers":[],"spriteId":null,"trackColour":0,"tracks":[],"traits":0,},
     ],
     "visibleRange": null,
@@ -70,5 +70,5 @@
   },
   "type": 0,
   "VTile": false,
-  "width": 1280,
+  "width": 2400,
 }

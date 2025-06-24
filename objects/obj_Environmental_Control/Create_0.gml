@@ -36,8 +36,8 @@ properTileFall = ts_Flash_Fall_Out;
 xx = (room_width / 2);
 yy = (room_height / 2);
 
-bg_xx = (room_width / 2 - 640);
-bg_yy = (room_height / 2 - 640);
+bg_xx = (room_width / 2 - 1200);
+bg_yy = (room_height / 2 - 800);
 
 var tilesize = 64;
 

@@ -2,9 +2,9 @@
   "resourceType": "GMSprite",
   "resourceVersion": "1.0",
   "name": "spr_flash_day_lights",
-  "bbox_bottom": 1279,
+  "bbox_bottom": 1599,
   "bbox_left": 0,
-  "bbox_right": 1279,
+  "bbox_right": 2399,
   "bbox_top": 0,
   "bboxMode": 0,
   "collisionKind": 1,
@@ -13,14 +13,14 @@
   "edgeFiltering": false,
   "For3D": false,
   "frames": [
-    {"resourceType":"GMSpriteFrame","resourceVersion":"1.1","name":"9dd3723f-d894-4016-a1cc-5c1b7edf1787",},
+    {"resourceType":"GMSpriteFrame","resourceVersion":"1.1","name":"61ed197e-eca9-469b-90f1-9a8d7b2e9f7b",},
   ],
   "gridX": 0,
   "gridY": 0,
-  "height": 1280,
+  "height": 1600,
   "HTile": false,
   "layers": [
-    {"resourceType":"GMImageLayer","resourceVersion":"1.0","name":"8ac932d3-4333-4db7-a4f1-6f2c63308a5a","blendMode":0,"displayName":"default","isLocked":false,"opacity":25.0,"visible":true,},
+    {"resourceType":"GMImageLayer","resourceVersion":"1.0","name":"cfea0e12-3675-46c9-b73f-eaa04ce1c39f","blendMode":0,"displayName":"default","isLocked":false,"opacity":25.0,"visible":true,},
   ],
   "nineSlice": null,
   "origin": 0,
@@ -54,7 +54,7 @@
     "timeUnits": 1,
     "tracks": [
       {"resourceType":"GMSpriteFramesTrack","resourceVersion":"1.0","name":"frames","builtinName":0,"events":[],"inheritsTrackColour":true,"interpolation":1,"isCreationTrack":false,"keyframes":{"resourceType":"KeyframeStore<SpriteFrameKeyframe>","resourceVersion":"1.0","Keyframes":[
-            {"resourceType":"Keyframe<SpriteFrameKeyframe>","resourceVersion":"1.0","Channels":{"0":{"resourceType":"SpriteFrameKeyframe","resourceVersion":"1.0","Id":{"name":"9dd3723f-d894-4016-a1cc-5c1b7edf1787","path":"sprites/spr_flash_day_lights/spr_flash_day_lights.yy",},},},"Disabled":false,"id":"b1454882-6f6b-4d19-bb77-a7d419043141","IsCreationKey":false,"Key":0.0,"Length":1.0,"Stretch":false,},
+            {"resourceType":"Keyframe<SpriteFrameKeyframe>","resourceVersion":"1.0","Channels":{"0":{"resourceType":"SpriteFrameKeyframe","resourceVersion":"1.0","Id":{"name":"61ed197e-eca9-469b-90f1-9a8d7b2e9f7b","path":"sprites/spr_flash_day_lights/spr_flash_day_lights.yy",},},},"Disabled":false,"id":"bdbf5009-3a77-4160-acd8-590a24f04266","IsCreationKey":false,"Key":0.0,"Length":1.0,"Stretch":false,},
           ],},"modifiers":[],"spriteId":null,"trackColour":0,"tracks":[],"traits":0,},
     ],
     "visibleRange": null,
@@ -70,5 +70,5 @@
   },
   "type": 0,
   "VTile": false,
-  "width": 1280,
+  "width": 2400,
 }
