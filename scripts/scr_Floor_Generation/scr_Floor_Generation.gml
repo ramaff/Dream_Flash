@@ -315,7 +315,7 @@ function scr_Floor_Generation() {
 	        }
 		}
 	
-		global.floor[i,3] = floor(global.floor[i,3] / 128) * 128;
+		global.floor[i,3] = min(scr_Round_To_Nearest(global.floor[i,3], 256), 1536);
 
 		//global.floor[i,3] = 1408;
 		//global.floor[i,4] = bg_Feel_Dungeon_Tiles;

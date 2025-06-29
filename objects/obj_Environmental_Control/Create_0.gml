@@ -36,8 +36,8 @@ properTileFall = ts_Flash_Fall_Out;
 xx = (room_width / 2);
 yy = (room_height / 2);
 
-bg_xx = (room_width / 2 - 1200);
-bg_yy = (room_height / 2 - 800);
+bg_xx = (room_width / 2 - 1200) - 200 + random(400);
+bg_yy = (room_height / 2 - 800) - 200 + random(400);
 
 var tilesize = 64;
 
@@ -62,10 +62,11 @@ if global.currentchapter = 3 {
 if global.currentchapter = 4 {
 	bgType = "Nightmare";	
 }
-			
+
+/*
 if roomBG = bg_Cave_Tiles || roomBG = bg_Depths_Tiles || roomBG = bg_Flash_Dungeon_Tiles || roomBG = bg_Feel_Dungeon_Tiles  || roomBG = bg_Dream_Dungeon_Tiles  || roomBG = bg_Dungeon_Tiles || roomBG = bg_Safe_Room_Tiles || roomBG = bg_Mind_Chamber_Tiles || roomBG = bg_State_Tiles {
 	bgType = "None"
-}
+} */
 	
 if bgType = "Flash" {
 	deepest_bg = layer_background_create(deepest_layer, spr_flash_day_bg);

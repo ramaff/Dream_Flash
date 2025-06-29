@@ -1026,6 +1026,7 @@
     {"id":{"name":"scr_Dupe_Struct","path":"scripts/scr_Dupe_Struct/scr_Dupe_Struct.yy",},},
     {"id":{"name":"obj_Dummy_Figment593","path":"objects/obj_Dummy_Figment593/obj_Dummy_Figment593.yy",},},
     {"id":{"name":"spr_Queen_Orbital","path":"sprites/spr_Queen_Orbital/spr_Queen_Orbital.yy",},},
+    {"id":{"name":"spr_flash_base_fg_prototype_1","path":"sprites/spr_flash_base_fg_prototype_1/spr_flash_base_fg_prototype_1.yy",},},
     {"id":{"name":"spr_Vortex_Orbital","path":"sprites/spr_Vortex_Orbital/spr_Vortex_Orbital.yy",},},
     {"id":{"name":"scr_Assign_Memory","path":"scripts/scr_Assign_Memory/scr_Assign_Memory.yy",},},
     {"id":{"name":"old_Manifestation_Orbital","path":"sprites/old_Manifestation_Orbital/old_Manifestation_Orbital.yy",},},
