@@ -5,17 +5,9 @@ if surface_exists(surf) {
     
     global.roomdarkness = 0.1;
 	
-	/*if _room_environment = bg_Dungeon_Tiles {
-		global.roomdarkness = 0.05;	
+	if _room_environment = spr_flash_marble_brick_g || _room_environment = spr_flash_diagonal_brick_g {
+		global.roomdarkness = 0.2;	
 	}
-    
-    if _room_environment = bg_Deep_Woods_Tiles || _room_environment = bg_Cave_Tiles || _room_environment = bg_Graveyard_Tiles {
-        global.roomdarkness = 0.15;
-    }
-    
-    if _room_environment = bg_Depths_Tiles {
-        global.roomdarkness = 0.3;
-    } */
     
     var _darkness = global.roomdarkness + ((global.souldespair + global.souldespairTemp) / 100);
     

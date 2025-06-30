@@ -3,6 +3,6 @@
 
 
 
-draw_sprite(spr_flash_base_fg, 0, xx, yy);
+draw_sprite(ground, 0, xx, yy);
 
 

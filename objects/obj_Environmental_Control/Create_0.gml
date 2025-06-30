@@ -41,6 +41,7 @@ bg_yy = (room_height / 2 - 800) - 200 + random(400);
 
 var tilesize = 64;
 
+
 deepest_layer = layer_create(10000000);
 deepest_bg = layer_background_create(deepest_layer, spr_No_BG);
 deep_layer = layer_create(100000);
@@ -50,6 +51,8 @@ forward_bg = layer_background_create(forward_layer, spr_No_BG);
 	
 var roomBG = global.floor[global.currentroom,4];
 var bgType = "Flash";
+
+ground = roomBG
 	
 if global.currentchapter = 2 {
 	bgType = "Feel";
@@ -82,7 +85,9 @@ if bgType = "Dream" {
 if bgType = "Nightmare" {
 	deepest_bg = layer_background_create(deepest_layer, spr_Mental_Background_Nightmare);
 }
-	
+
+
+
 //var back = layer_background_get_id(global.mentalBackground);
 
 

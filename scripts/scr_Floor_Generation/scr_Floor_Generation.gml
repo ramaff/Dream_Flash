@@ -46,7 +46,7 @@ function scr_Floor_Generation() {
 	    global.floor[i,3] = 1024;
 	    if i = 15 and global.currentchapter = 1 {
 	        global.floor[i,0] = "Super Boss";
-	        global.floor[i,3] = 1408;
+	        global.floor[i,3] = 1536;
 	    }
 	    if i = 15 and global.currentchapter = 2 {
 	        global.floor[i,0] = "Super Boss";
@@ -65,16 +65,16 @@ function scr_Floor_Generation() {
 	    //    global.floor[i,3] = 1344;
 	    //}
 	    if global.currentchapter = 1 {
-	        global.floor[i,4] = bg_Flash_Tiles;
+	        global.floor[i,4] = spr_flash_base_g;
 	    }
 	    if global.currentchapter = 2 {
-	        global.floor[i,4] = bg_Feel_Tiles;
+	        global.floor[i,4] = spr_feel_base_g;
 	    }
 	    if global.currentchapter = 3 {
-	        global.floor[i,4] = bg_Dream_Tiles;
+	        global.floor[i,4] = spr_dream_base_g;
 	    }
 		if global.currentchapter >= 4 {
-	        global.floor[i,4] = bg_Nightmare_Tiles;
+	        global.floor[i,4] = spr_nightmare_base_g;
 	    }
     
 	    if i = global.chapterRooms {
@@ -86,12 +86,14 @@ function scr_Floor_Generation() {
 			ds_list_shuffle(list);
 	        if global.currentchapter = 1 {
 				var k = 1
-				for (k = 1; k < 6; k++) {
-					global.floor[list[| k],4] = bg_Dungeon_Tiles;	
+				for (k = 1; k < 4; k++) {
+					global.floor[list[| k],4] = spr_flash_marble_brick_g;	
 				}
-				for (k = 6; k < 10; k++) {
-					global.floor[list[| k],4] = bg_Flash_Dungeon_Tiles;	
-					//global.floor[list[| k],4] = bg_Forest_Tiles;	
+				for (k = 4; k < 8; k++) {
+					global.floor[list[| k],4] = spr_flash_diagonal_brick_g;	
+				}
+				for (k = 9; k < 11; k++) {
+					global.floor[list[| k],4] = spr_flash_grass_g
 				}
 	        }
         
@@ -148,10 +150,9 @@ function scr_Floor_Generation() {
 				global.floor[i,27] = scr_Hazard_Choose(i,global.floor[i,4]);
 			} */
 	        if global.floor[i,23] = 2 {
-	            global.floor[i,3] += 256;
+	            global.floor[i,3] += 128;
 	        }
 	        if global.floor[i,0] = "Boss" {
-				global.floor[i,3] += 112;
 	            global.floor[i,3] += 12 * global.floor[i,24];
 				global.floor[i,3] += random(8) * global.floor[i,24];
 	        }
@@ -187,14 +188,6 @@ function scr_Floor_Generation() {
 	            global.floor[i,j+6] = scr_Misc_Field_Pool_Pick()
 	        }
 	    }
-	    /*
-	    if global.floor[i,0] = "Heart Field" {
-	        global.floor[i,7] = scr_Heart_Item_Choose(global.floor[i,0]);
-	    }
-	    if global.floor[i,0] = "Minion Field" {
-	        global.floor[i,7] = scr_Minion_Item_Choose(global.floor[i,0]);
-	    }
-	    */
 	    if global.floor[i,0] = "Weapon Field" {
 	        itemNumChoice = scr_Item_Field_Count(2)
 			
@@ -264,7 +257,7 @@ function scr_Floor_Generation() {
 		
 		if global.floor[i,0] = "Chamber" {
 	        global.floor[i,4] = bg_Mind_Chamber_Tiles;
-	        global.floor[i,3] += 256 + (64 * global.currentchapter);
+	        global.floor[i,3] += 128 + (64 * global.currentchapter);
 			
 			itemNumChoice = scr_Item_Field_Count(1)
 			
@@ -282,11 +275,10 @@ function scr_Floor_Generation() {
 	        global.floor[i,24] = 0;
 			//global.floor[i,27] = scr_Hazard_Choose(i,global.floor[i,4]);
 	        if global.floor[i,23] = 2 {
-	            global.floor[i,3] += 256;
+	            global.floor[i,3] += 128;
 	        }
 	        if global.floor[i,0] = "Boss" {
-				global.floor[i,3] += 96;
-	            global.floor[i,3] += 24 * global.floor[i,24];
+	            global.floor[i,3] += 8 * global.floor[i,24];
 				global.floor[i,3] += random(8) * global.floor[i,24];
 	        }
 			global.floor[i,28] = scr_Boss_Choose(baseroom, 1, 5); // Boss Type or Item Type
@@ -299,7 +291,7 @@ function scr_Floor_Generation() {
 		
 		if global.floor[i,0] = "State" {
 	        global.floor[i,4] = bg_State_Tiles;
-	        global.floor[i,3] += 256 + (64 * global.currentchapter);
+	        global.floor[i,3] += 64 + (64 * global.currentchapter);
 			
 			itemNumChoice = scr_Item_Field_Count(1)
 			
@@ -315,7 +307,7 @@ function scr_Floor_Generation() {
 	        }
 		}
 	
-		global.floor[i,3] = min(scr_Round_To_Nearest(global.floor[i,3], 256), 1536);
+		global.floor[i,3] = min(scr_Floor_To_Nearest(global.floor[i,3], 256), 1536);
 
 		//global.floor[i,3] = 1408;
 		//global.floor[i,4] = bg_Feel_Dungeon_Tiles;
@@ -328,16 +320,16 @@ function scr_Floor_Generation() {
 	global.floor[0,3] = 1024; // Room Size
 	
 	if global.currentchapter = 1 {
-	    global.floor[0,4] = bg_Flash_Tiles;
+	    global.floor[0,4] = spr_flash_base_g;
 	}
 	if global.currentchapter = 2 {
-	    global.floor[0,4] = bg_Feel_Tiles;
+	    global.floor[0,4] = spr_feel_base_g;
 	}
 	if global.currentchapter = 3 {
-	    global.floor[0,4] = bg_Dream_Tiles;
+	    global.floor[0,4] = spr_dream_base_g;
 	}
 	if global.currentchapter >= 4 {
-	    global.floor[0,4] = bg_Nightmare_Tiles;
+	    global.floor[0,4] = spr_nightmare_base_g;
 	}
 
 
