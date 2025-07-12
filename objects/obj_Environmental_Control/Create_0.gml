@@ -67,7 +67,7 @@ if global.currentchapter = 4 {
 }
 
 /*
-if roomBG = bg_Cave_Tiles || roomBG = bg_Depths_Tiles || roomBG = bg_Flash_Dungeon_Tiles || roomBG = bg_Feel_Dungeon_Tiles  || roomBG = bg_Dream_Dungeon_Tiles  || roomBG = bg_Dungeon_Tiles || roomBG = bg_Safe_Room_Tiles || roomBG = bg_Mind_Chamber_Tiles || roomBG = bg_State_Tiles {
+if roomBG = bg_Cave_Tiles || roomBG = bg_Depths_Tiles || roomBG = bg_Flash_Dungeon_Tiles || roomBG = bg_Feel_Dungeon_Tiles  || roomBG = bg_Dream_Dungeon_Tiles  || roomBG = bg_Dungeon_Tiles || roomBG = spr_shop_g || roomBG = bg_Mind_Chamber_Tiles || roomBG = bg_State_Tiles {
 	bgType = "None"
 } */
 	
@@ -146,7 +146,7 @@ if properBG = bg_Crying_Woods_Tiles {
 	properTileFall = ts_Crying_Woods_Fall_Out;
 }
 
-if properBG = bg_Safe_Room_Tiles {
+if properBG = spr_shop_g {
     properTileSet = ts_Safe_Room_Tiles;
 	properTileFall = ts_Safe_Fall_Out;
 	h2 = 1;

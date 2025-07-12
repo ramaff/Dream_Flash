@@ -408,6 +408,7 @@
     {"name":"spr_spirit_of_mischief_v2_teleport_sequence","order":14,"path":"sprites/spr_spirit_of_mischief_v2_teleport_sequence/spr_spirit_of_mischief_v2_teleport_sequence.yy",},
     {"name":"spr_Red_Beam_Segment_old","order":1,"path":"sprites/spr_Red_Beam_Segment_old/spr_Red_Beam_Segment_old.yy",},
     {"name":"obj_The_Veil","order":17,"path":"objects/obj_The_Veil/obj_The_Veil.yy",},
+    {"name":"spr_shop_g","order":14,"path":"sprites/spr_shop_g/spr_shop_g.yy",},
     {"name":"old_Optimistic_Art","order":7,"path":"sprites/old_Optimistic_Art/old_Optimistic_Art.yy",},
     {"name":"spr_Boss_Beam_Segment_Ontop","order":9,"path":"sprites/spr_Boss_Beam_Segment_Ontop/spr_Boss_Beam_Segment_Ontop.yy",},
     {"name":"scr_Shot_Size_Proportional_To_Damage","order":18,"path":"scripts/scr_Shot_Size_Proportional_To_Damage/scr_Shot_Size_Proportional_To_Damage.yy",},

@@ -130,7 +130,7 @@ function scr_Floor_Generation() {
 				}
 				
 	        }
-	        global.floor[8,4] = bg_Safe_Room_Tiles;
+	        global.floor[8,4] = spr_shop_g;
 	        //global.floor[1,4] = bg_Caves;
 	        //global.floor[2,4] = bg_Depths;
 	    }
@@ -200,7 +200,7 @@ function scr_Floor_Generation() {
 	        }
 	    }
 	    if global.floor[i,0] = "Shop" {
-	        global.floor[i,4] = bg_Safe_Room_Tiles;
+	        global.floor[i,4] = spr_shop_g;
 	        global.floor[i,3] += 256;
 	        //global.floor[i,7] = scr_Food_Item_Choose();
 	        global.floor[i,7] = scr_Pool_Pick(global.j_item_pool);

@@ -19,7 +19,7 @@ function scr_Mental_Background(){
 		bgType = "Nightmare";	
 	}
 			
-	if roomBG = bg_Cave_Tiles || roomBG = bg_Depths_Tiles || roomBG = bg_Flash_Dungeon_Tiles || roomBG = bg_Feel_Dungeon_Tiles  || roomBG = bg_Dream_Dungeon_Tiles  || roomBG = bg_Dungeon_Tiles || roomBG = bg_Safe_Room_Tiles || roomBG = bg_Mind_Chamber_Tiles || roomBG = bg_State_Tiles {
+	if roomBG = bg_Cave_Tiles || roomBG = bg_Depths_Tiles || roomBG = bg_Flash_Dungeon_Tiles || roomBG = bg_Feel_Dungeon_Tiles  || roomBG = bg_Dream_Dungeon_Tiles  || roomBG = bg_Dungeon_Tiles || roomBG = spr_shop_g || roomBG = bg_Mind_Chamber_Tiles || roomBG = bg_State_Tiles {
 		bgType = "None"
 	}
 	

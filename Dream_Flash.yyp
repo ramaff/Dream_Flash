@@ -1605,6 +1605,7 @@
     {"id":{"name":"spr_Dimensional_Fire_Shot","path":"sprites/spr_Dimensional_Fire_Shot/spr_Dimensional_Fire_Shot.yy",},},
     {"id":{"name":"spr_Big_Explosive_Shot","path":"sprites/spr_Big_Explosive_Shot/spr_Big_Explosive_Shot.yy",},},
     {"id":{"name":"spr_Big_Magic_Shot","path":"sprites/spr_Big_Magic_Shot/spr_Big_Magic_Shot.yy",},},
+    {"id":{"name":"spr_shop_g","path":"sprites/spr_shop_g/spr_shop_g.yy",},},
     {"id":{"name":"spr_Big_Energy_Shot","path":"sprites/spr_Big_Energy_Shot/spr_Big_Energy_Shot.yy",},},
     {"id":{"name":"spr_Extinguishing_Shot","path":"sprites/spr_Extinguishing_Shot/spr_Extinguishing_Shot.yy",},},
     {"id":{"name":"old_Optimistic_Art","path":"sprites/old_Optimistic_Art/old_Optimistic_Art.yy",},},
