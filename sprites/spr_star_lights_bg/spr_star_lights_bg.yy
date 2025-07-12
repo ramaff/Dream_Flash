@@ -1,11 +1,11 @@
 {
   "resourceType": "GMSprite",
   "resourceVersion": "1.0",
-  "name": "spr_flash_day_bg",
-  "bbox_bottom": 1199,
+  "name": "spr_star_lights_bg",
+  "bbox_bottom": 1188,
   "bbox_left": 0,
   "bbox_right": 1799,
-  "bbox_top": 0,
+  "bbox_top": 10,
   "bboxMode": 0,
   "collisionKind": 1,
   "collisionTolerance": 0,
@@ -13,14 +13,14 @@
   "edgeFiltering": false,
   "For3D": false,
   "frames": [
-    {"resourceType":"GMSpriteFrame","resourceVersion":"1.1","name":"b8dea458-f74a-4686-81f2-b56352d2e623",},
+    {"resourceType":"GMSpriteFrame","resourceVersion":"1.1","name":"d24fd23f-242a-472f-b8a6-9d08ba66838d",},
   ],
   "gridX": 0,
   "gridY": 0,
   "height": 1200,
   "HTile": false,
   "layers": [
-    {"resourceType":"GMImageLayer","resourceVersion":"1.0","name":"ead771a4-dcab-4d0b-885d-864ac9e0b113","blendMode":0,"displayName":"default","isLocked":false,"opacity":100.0,"visible":true,},
+    {"resourceType":"GMImageLayer","resourceVersion":"1.0","name":"0a3696ef-0893-4bf8-9202-e1e6a2ef5b9f","blendMode":0,"displayName":"default","isLocked":false,"opacity":100.0,"visible":true,},
   ],
   "nineSlice": null,
   "origin": 0,
@@ -32,7 +32,7 @@
   "sequence": {
     "resourceType": "GMSequence",
     "resourceVersion": "1.4",
-    "name": "spr_flash_day_bg",
+    "name": "spr_star_lights_bg",
     "autoRecord": true,
     "backdropHeight": 768,
     "backdropImageOpacity": 0.5,
@@ -54,7 +54,7 @@
     "timeUnits": 1,
     "tracks": [
       {"resourceType":"GMSpriteFramesTrack","resourceVersion":"1.0","name":"frames","builtinName":0,"events":[],"inheritsTrackColour":true,"interpolation":1,"isCreationTrack":false,"keyframes":{"resourceType":"KeyframeStore<SpriteFrameKeyframe>","resourceVersion":"1.0","Keyframes":[
-            {"resourceType":"Keyframe<SpriteFrameKeyframe>","resourceVersion":"1.0","Channels":{"0":{"resourceType":"SpriteFrameKeyframe","resourceVersion":"1.0","Id":{"name":"b8dea458-f74a-4686-81f2-b56352d2e623","path":"sprites/spr_flash_day_bg/spr_flash_day_bg.yy",},},},"Disabled":false,"id":"185929fb-07f5-49ae-940e-2a392f16909d","IsCreationKey":false,"Key":0.0,"Length":1.0,"Stretch":false,},
+            {"resourceType":"Keyframe<SpriteFrameKeyframe>","resourceVersion":"1.0","Channels":{"0":{"resourceType":"SpriteFrameKeyframe","resourceVersion":"1.0","Id":{"name":"d24fd23f-242a-472f-b8a6-9d08ba66838d","path":"sprites/spr_star_lights_bg/spr_star_lights_bg.yy",},},},"Disabled":false,"id":"a53b402c-e299-491c-a4f6-45830b8f3030","IsCreationKey":false,"Key":0.0,"Length":1.0,"Stretch":false,},
           ],},"modifiers":[],"spriteId":null,"trackColour":0,"tracks":[],"traits":0,},
     ],
     "visibleRange": null,

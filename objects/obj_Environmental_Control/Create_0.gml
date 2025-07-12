@@ -44,6 +44,8 @@ var tilesize = 64;
 
 deepest_layer = layer_create(10000000);
 deepest_bg = layer_background_create(deepest_layer, spr_No_BG);
+deeper_layer = layer_create(1000000);
+deeper_bg = layer_background_create(deeper_layer, spr_star_lights_bg);
 deep_layer = layer_create(100000);
 deep_bg = layer_background_create(deep_layer, spr_No_BG);
 forward_layer = layer_create(-100);
@@ -66,27 +68,21 @@ if global.currentchapter = 4 {
 	bgType = "Nightmare";	
 }
 
-/*
-if roomBG = bg_Cave_Tiles || roomBG = bg_Depths_Tiles || roomBG = bg_Flash_Dungeon_Tiles || roomBG = bg_Feel_Dungeon_Tiles  || roomBG = bg_Dream_Dungeon_Tiles  || roomBG = bg_Dungeon_Tiles || roomBG = spr_shop_g || roomBG = bg_Mind_Chamber_Tiles || roomBG = bg_State_Tiles {
-	bgType = "None"
-} */
 	
-if bgType = "Flash" {
+if roomBG = spr_flash_marble_brick_g || roomBG = spr_flash_diagonal_brick_g|| roomBG = spr_shop_g || roomBG = bg_Mind_Chamber_Tiles || roomBG = bg_State_Tiles {
+	deepest_bg = layer_background_create(deepest_layer, spr_flash_night_bg);
+	forward_bg = layer_background_create(forward_layer, spr_flash_day_lights);
+} else if bgType = "Flash" {
 	deepest_bg = layer_background_create(deepest_layer, spr_flash_day_bg);
 	deep_bg = layer_background_create(deep_layer, spr_flash_day_front_bg);
 	forward_bg = layer_background_create(forward_layer, spr_flash_day_lights);
-}
-if bgType = "Feel" {
+} else if bgType = "Feel" {
 	deepest_bg = layer_background_create(deepest_layer, spr_Mental_Background_Feel);
-}
-if bgType = "Dream" {
+} else if bgType = "Dream" {
 	deepest_bg = layer_background_create(deepest_layer, spr_Mental_Background_Dream);
-}
-if bgType = "Nightmare" {
+} else if bgType = "Nightmare" {
 	deepest_bg = layer_background_create(deepest_layer, spr_Mental_Background_Nightmare);
 }
-
-
 
 //var back = layer_background_get_id(global.mentalBackground);
 
