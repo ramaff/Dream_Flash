@@ -2,9 +2,9 @@
   "resourceType": "GMSprite",
   "resourceVersion": "1.0",
   "name": "spr_flash_day_bg",
-  "bbox_bottom": 1199,
+  "bbox_bottom": 799,
   "bbox_left": 0,
-  "bbox_right": 1799,
+  "bbox_right": 1199,
   "bbox_top": 0,
   "bboxMode": 0,
   "collisionKind": 1,
@@ -17,7 +17,7 @@
   ],
   "gridX": 0,
   "gridY": 0,
-  "height": 1200,
+  "height": 800,
   "HTile": false,
   "layers": [
     {"resourceType":"GMImageLayer","resourceVersion":"1.0","name":"ead771a4-dcab-4d0b-885d-864ac9e0b113","blendMode":0,"displayName":"default","isLocked":false,"opacity":100.0,"visible":true,},
@@ -70,5 +70,5 @@
   },
   "type": 0,
   "VTile": false,
-  "width": 1800,
+  "width": 1200,
 }

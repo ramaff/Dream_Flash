@@ -1,7 +1,7 @@
 {
   "resourceType": "GMObject",
   "resourceVersion": "1.0",
-  "name": "obj_Boss_Template",
+  "name": "obj_will_wisp_heart",
   "eventList": [
     {"resourceType":"GMEvent","resourceVersion":"1.0","name":"","collisionObjectId":null,"eventNum":0,"eventType":0,"isDnD":false,},
     {"resourceType":"GMEvent","resourceVersion":"1.0","name":"","collisionObjectId":null,"eventNum":0,"eventType":3,"isDnD":false,},
@@ -10,8 +10,8 @@
   "managed": true,
   "overriddenProperties": [],
   "parent": {
-    "name": "Bosses",
-    "path": "folders/Objects/Bosses.yy",
+    "name": "Flash Bosses",
+    "path": "folders/Objects/Bosses/Flash Bosses.yy",
   },
   "parentObjectId": {
     "name": "obj_Main_Boss_Parent",
@@ -33,8 +33,8 @@
   "properties": [],
   "solid": false,
   "spriteId": {
-    "name": "spr_Boss_Template",
-    "path": "sprites/spr_Boss_Template/spr_Boss_Template.yy",
+    "name": "spr_Wisp_Mask_Heart",
+    "path": "sprites/spr_Wisp_Mask_Heart/spr_Wisp_Mask_Heart.yy",
   },
   "spriteMaskId": null,
   "visible": false,
