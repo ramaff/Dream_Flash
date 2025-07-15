@@ -20,3 +20,4 @@ boss_palette_index = champ;
 chasing_circle_x = x;
 chasing_circle_y = y;
 guardian_circle_angle = scr_Soul_Point(x, y)
+angular_velocity = 0;

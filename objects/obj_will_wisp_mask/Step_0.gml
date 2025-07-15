@@ -13,13 +13,13 @@ scr_Boss_Wobble("Horizontal", 0.3, 1, 0);
 
 if instance_exists(target) {
 	var _soul_point = scr_Soul_Point(target.x, target.y)
-	var _circle_size = 100
-	guardian_circle_angle = scr_Angle_Converge(guardian_circle_angle, _soul_point + scr_Wave(-5, 5, 1, 0), 2)
+	var _circle_size = 120
+	guardian_circle_angle = scr_Angle_Converge(guardian_circle_angle, _soul_point, bossmovespeed * 0.75)
 
 	var _xx = target.x + lengthdir_x(_circle_size, guardian_circle_angle)
 	var _yy = target.y + lengthdir_y(_circle_size, guardian_circle_angle)
-	x = lerp(x, _xx, 0.02)
-	y = lerp(y, _yy, 0.02)
+	x = lerp(x, _xx, 0.1)
+	y = lerp(y, _yy, 0.1)
 
 }
 

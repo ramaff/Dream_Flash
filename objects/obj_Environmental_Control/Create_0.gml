@@ -69,9 +69,14 @@ if global.currentchapter = 4 {
 }
 
 	
-if roomBG = spr_flash_marble_brick_g || roomBG = spr_flash_diagonal_brick_g|| roomBG = spr_shop_g || roomBG = bg_Mind_Chamber_Tiles || roomBG = bg_State_Tiles {
+if roomBG = spr_flash_marble_brick_g || roomBG = spr_flash_diagonal_brick_g || roomBG = spr_shop_g || roomBG = bg_Mind_Chamber_Tiles || roomBG = bg_State_Tiles {
 	deepest_bg = layer_background_create(deepest_layer, spr_flash_night_bg);
 	forward_bg = layer_background_create(forward_layer, spr_flash_day_lights);
+	
+	if roomBG = spr_flash_marble_brick_g {
+		deep_bg = layer_background_create(deep_layer, spr_flash_marble_front_bg);	
+	}
+	
 } else if bgType = "Flash" {
 	deepest_bg = layer_background_create(deepest_layer, spr_flash_day_bg);
 	deep_bg = layer_background_create(deep_layer, spr_flash_day_front_bg);

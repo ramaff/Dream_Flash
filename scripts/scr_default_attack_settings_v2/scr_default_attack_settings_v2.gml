@@ -81,6 +81,8 @@ function scr_base_bullet_stats(_boss_bullet_speed, _bullet_power, _bullet_accura
 		boss_radius: 0,
 		boss_xoffset: 0,
 		boss_yoffset: 0,
+		orbit_angle: 0,
+		orbit_distance: 0,
 		bullet_speedfac_min: 1,
 		bullet_speedfac_add: 0,
 		bullet_timefac_min: 1,
@@ -99,6 +101,7 @@ function scr_base_bullet_stats(_boss_bullet_speed, _bullet_power, _bullet_accura
 		wave_time: 0,
 		angular_velocity: 0,
 		angular_acceleration: 0,
-		follow_bullets: 0
+		follow_bullets: 0,
+		school_bullets: 0
 	}	
 }
