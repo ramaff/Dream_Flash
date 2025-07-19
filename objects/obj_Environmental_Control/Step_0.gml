@@ -1,15 +1,15 @@
 /// @description Insert description here
 // You can write your code in this editor
 
-layer_x(deepest_layer, lerp(bg_xx, camera_get_view_x(view), 0.9))
-layer_y(deepest_layer, lerp(bg_yy, camera_get_view_y(view), 0.9))
-layer_x(deeper_layer, lerp(bg_xx, camera_get_view_x(view), 0.8))
-layer_y(deeper_layer, lerp(bg_yy, camera_get_view_y(view), 0.8))
-layer_x(deep_layer, lerp(bg_xx, camera_get_view_x(view), 0.7))
-layer_y(deep_layer, lerp(bg_yy, camera_get_view_y(view), 0.7))
+deepest_layer.x = lerp(bg_xx, camera_get_view_x(view), 0.9)
+deepest_layer.y = lerp(bg_yy, camera_get_view_y(view), 0.9)
+deeper_layer.x = lerp(bg_xx, camera_get_view_x(view), 0.8)
+deeper_layer.y = lerp(bg_yy, camera_get_view_y(view), 0.8)
+deep_layer.x = lerp(bg_xx, camera_get_view_x(view), 0.7)
+deep_layer.y = lerp(bg_yy, camera_get_view_y(view), 0.7)
 
-layer_x(forward_layer, lerp(bg_xx, camera_get_view_x(view), 0.7))
-layer_y(forward_layer, lerp(bg_yy, camera_get_view_y(view), 0.7))
+forward_layer.x = lerp(bg_xx, camera_get_view_x(view), 0.7)
+forward_layer.y = lerp(bg_yy, camera_get_view_y(view), 0.7)
 
 
 

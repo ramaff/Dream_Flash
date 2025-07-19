@@ -36,20 +36,24 @@ properTileFall = ts_Flash_Fall_Out;
 xx = (room_width / 2);
 yy = (room_height / 2);
 
-bg_xx = (room_width / 2 - 1200) - 200 + random(400);
-bg_yy = (room_height / 2 - 800) - 200 + random(400);
+bg_xx = (room_width / 2 - 600) - 200 + random(400);
+bg_yy = (room_height / 2 - 400) - 200 + random(400);
 
 var tilesize = 64;
 
 
-deepest_layer = layer_create(10000000);
-deepest_bg = layer_background_create(deepest_layer, spr_No_BG);
-deeper_layer = layer_create(1000000);
-deeper_bg = layer_background_create(deeper_layer, spr_star_lights_bg);
-deep_layer = layer_create(100000);
-deep_bg = layer_background_create(deep_layer, spr_No_BG);
-forward_layer = layer_create(-100);
-forward_bg = layer_background_create(forward_layer, spr_No_BG);
+deepest_layer = instance_create(x, y, obj_background_drawing);
+deepest_layer.depth = 100000000;
+
+deeper_layer = instance_create(x, y, obj_background_drawing);
+deeper_layer.depth = 1000000;
+deeper_layer.sprite_index =  spr_star_lights_bg;
+
+deep_layer = instance_create(x, y, obj_background_drawing);
+deep_layer.depth = 10000;
+
+forward_layer = instance_create(x, y, obj_background_drawing);
+forward_layer.depth = -100;
 	
 var roomBG = global.floor[global.currentroom,4];
 var bgType = "Flash";
@@ -70,24 +74,30 @@ if global.currentchapter = 4 {
 
 	
 if roomBG = spr_flash_marble_brick_g || roomBG = spr_flash_diagonal_brick_g || roomBG = spr_shop_g || roomBG = bg_Mind_Chamber_Tiles || roomBG = bg_State_Tiles {
-	deepest_bg = layer_background_create(deepest_layer, spr_flash_night_bg);
-	forward_bg = layer_background_create(forward_layer, spr_flash_day_lights);
+	deepest_layer.sprite_index = spr_flash_night_bg;
+	forward_layer.sprite_index = spr_flash_day_lights;
 	
 	if roomBG = spr_flash_marble_brick_g {
-		deep_bg = layer_background_create(deep_layer, spr_flash_marble_front_bg);	
+		deep_layer.sprite_index = spr_flash_marble_front_bg;
 	}
 	
 } else if bgType = "Flash" {
-	deepest_bg = layer_background_create(deepest_layer, spr_flash_day_bg);
-	deep_bg = layer_background_create(deep_layer, spr_flash_day_front_bg);
-	forward_bg = layer_background_create(forward_layer, spr_flash_day_lights);
+	deepest_layer.sprite_index = spr_flash_day_bg
+	deep_layer.sprite_index = spr_flash_day_front_bg;
+	forward_layer.sprite_index = spr_flash_day_lights;
 } else if bgType = "Feel" {
-	deepest_bg = layer_background_create(deepest_layer, spr_Mental_Background_Feel);
+	deepest_layer.sprite_index = spr_Mental_Background_Feel;
 } else if bgType = "Dream" {
-	deepest_bg = layer_background_create(deepest_layer, spr_Mental_Background_Dream);
+	deepest_layer.sprite_index = spr_Mental_Background_Dream;
 } else if bgType = "Nightmare" {
-	deepest_bg = layer_background_create(deepest_layer, spr_Mental_Background_Nightmare);
+	deepest_layer.sprite_index = spr_Mental_Background_Nightmare;
 }
+
+
+//layer_background_xscale(deepest_bg, 0.5)
+//layer_background_xscale(deep_bg, 0.5)
+//layer_background_yscale(deep_bg, 0.5)
+//layer_background_xscale(forward_bg, 0.5)
 
 //var back = layer_background_get_id(global.mentalBackground);
 
