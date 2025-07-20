@@ -1,8 +1,8 @@
 // Script assets have changed for v2.3.0 see
 // https://help.yoyogames.com/hc/en-us/articles/360005277377 for more information
 
-function scr_Force_Hold_Frame(_hold_frame) {
-	if image_index > _hold_frame and image_index < _hold_frame + 1 {
+function scr_Force_Hold_Frame(_hold_frame, _attack_end_duration = 0) {
+	if image_index > _hold_frame and image_index < _hold_frame + 1 and active_attack_duration > _attack_end_duration {
 		image_index = _hold_frame;	
 	}	
 }
