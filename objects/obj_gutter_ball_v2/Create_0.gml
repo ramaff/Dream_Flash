@@ -12,3 +12,7 @@ scr_Boss_Size_Setup(0.5);
 death_sprite = spr_boss_template_ko;
 boss_palette = spr_boss_template_palette;
 boss_palette_index = champ;
+
+alarm[1] = 10;
+
+mirror = false;

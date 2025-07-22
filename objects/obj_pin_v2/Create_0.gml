@@ -5,6 +5,8 @@ scr_Boss_Minion_Stat_Setup();
 
 scr_Boss_Attack_Setup(2);
 
+active_attack_cooldown = 120
+
 // Required, usually set to 0.5
 scr_Boss_Size_Setup(0.5);
 
@@ -14,4 +16,4 @@ y = _new_pos[1]
 
 // If boss is visually 'floating' setup boss height
 // Needed for bobbing/boss shadows
-scr_Boss_Height_Setup(300 + random(50));
+scr_Boss_Height_Setup(330 + random(100));

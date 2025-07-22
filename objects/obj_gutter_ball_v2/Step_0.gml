@@ -28,7 +28,7 @@ if active_attack_delay <= 0 and active_attack_cooldown <= 0 and active_attack_du
     }
 	if active_attack = 2 {
 		// 
-		scr_Boss_Attack_Time_Setup_v2(50, 30, 1, 120, 30, 20);
+		scr_Boss_Attack_Time_Setup_v2(40, 30, 1, 120, 30, 20);
 		
 		scr_Boss_Jump_Setup_v2(0, 5 * bossmovespeed, x, y);
 		//scr_Boss_Dash_Setup_v2(scr_Soul_Point(), 0, 7 * bossmovespeed);
@@ -37,7 +37,7 @@ if active_attack_delay <= 0 and active_attack_cooldown <= 0 and active_attack_du
 		// Setup how many attacks per boss move, delay, etc
 		scr_Boss_Attack_Time_Setup_v2(360, 30, 1, 120, 30, 10);
 		
-		scr_Boss_Dash_Setup_v2(scr_Soul_Point(), 0, 3 * bossmovespeed);
+		scr_Boss_Dash_Setup_v2(scr_Soul_Point(), 0, 4.5 * bossmovespeed);
     }
 }
 
@@ -53,20 +53,24 @@ if active_attack_delay <= 0 and pattern_cooldown <= 0 and pattern_count > 0 {
     if active_attack = 1 {
 		scr_Boss_Dash_Movement_v2(15,30);
 		
+		mirror = true
 		speed = dash_speed;
         direction = dash_direction;
 		
 		if pattern_count = 1 {
 			active_attack = 2;
 			
-			scr_Boss_Attack_Time_Setup_v2(50, 0, 1, 120, 30, 10);
+			scr_Boss_Attack_Time_Setup_v2(40, 0, 1, 120, 30, 20);
 		
-			scr_Boss_Jump_Setup_v2(0, 7 * bossmovespeed, x, y);
+			scr_Boss_Jump_Setup_v2(0, 4.5 * bossmovespeed, x, y);
 		}
 		
 	}
 	
 	if active_attack = 2 {
+		if speed > 1 {
+		mirror = false
+		}
 		scr_Boss_Dash_Movement_v2(4,2);
 		
 		speed = dash_speed;
@@ -75,15 +79,30 @@ if active_attack_delay <= 0 and pattern_cooldown <= 0 and pattern_count > 0 {
 		scr_Jump_Movement_v2(4);	
 		
 		if pattern_count = 1 {
-			attack_stats.bullet_direction = scr_Boss_Bullet_Direction_Formula(scr_Soul_Point(), 30)
+			attack_stats.bullet_direction = scr_Boss_Bullet_Direction_Formula(mean(scr_Soul_Point(), direction), 30)
 		
+			attack_stats.bullet_count = 4;
+			attack_stats.bullet_speed = bossbulletspeed * 1.35;
+			attack_stats.bullet_spread = 60;
+			scr_boss_shoot_v2();
+			
+			attack_stats.bullet_count = 3;
+			attack_stats.bullet_speed = bossbulletspeed * 1.75;
+			scr_boss_shoot_v2();
+			
+			attack_stats.bullet_count = 2;
+			attack_stats.bullet_speed = bossbulletspeed * 2.15;
+			scr_boss_shoot_v2();
+			
+			attack_stats.bullet_count = 1;
+			attack_stats.bullet_speed = bossbulletspeed * 2.55;
 			scr_boss_shoot_v2();
 			
 			scr_Screen_Shake(5, 5)
 			
 			minion_count = 3;
 			minion_type = obj_pin_v2
-			minion_health = bossmaxhealth / 10;
+			minion_health = bossmaxhealth / 20;
 			//minion_spawn_animation = spr_pocket_minion_spawn
 			//minion_yy = boss_height;
 
@@ -93,7 +112,7 @@ if active_attack_delay <= 0 and pattern_cooldown <= 0 and pattern_count > 0 {
 	
 	if active_attack = 3 {
 	
-		scr_Boss_Dash_Movement_v2(30, 15);
+		scr_Boss_Dash_Movement_v2(60, 30);
 		
 		speed = dash_speed;
         direction = dash_direction;
@@ -116,11 +135,7 @@ if active_attack_duration <= 0 {
 /// Boss Sprite Code
 
 // Go back to normal default size
-if active_attack = 1 {
-	scr_Boss_Size_Lerp_Dir(0.15, true);
-} else {
-	scr_Boss_Size_Lerp_Dir(0.15);
-}
+scr_Boss_Size_Lerp_Dir(0.15, mirror);
 
 // Handles boss attack sprite animation
 if active_attack = 1 {
