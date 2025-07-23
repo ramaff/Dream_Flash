@@ -18,6 +18,14 @@ function scr_Minion_Spawn(_minion_boss_parent = other.id) {
 						active_attack = -1;
 					}
 					
+					boss_height = other.minion_height
+					y -= boss_height
+					
+					if boss_height > 50 {
+						state = states.leaping
+					}
+					
+					active_attack_cooldown = other.minion_attack_cooldown
 				
 					champ = other.champ;
 					boss_palette = other.boss_palette;

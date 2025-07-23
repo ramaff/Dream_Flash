@@ -9,8 +9,8 @@ scr_Boss_Step(2);
 // Make boss shape wobble:
 scr_Boss_Wobble("Horizontal", 0.3, 1, 0);
 
-if active_attack = 0 and boss_height > 3 {
-	var _diff = (boss_height / active_attack_cooldown) - 3;
+if active_attack = 0 and abs(boss_height) > 5 {
+	var _diff = clamp((boss_height / active_attack_cooldown) - 5, 0, 30);
 	boss_height	-= _diff
 	y += _diff
 }

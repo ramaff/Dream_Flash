@@ -16,4 +16,6 @@ y = _new_pos[1]
 
 // If boss is visually 'floating' setup boss height
 // Needed for bobbing/boss shadows
-scr_Boss_Height_Setup(330 + random(100));
+scr_Boss_Height_Setup(0);
+
+state = states.leaping

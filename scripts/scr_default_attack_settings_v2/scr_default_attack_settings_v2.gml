@@ -23,6 +23,8 @@ function scr_default_attack_settings_v2() {
 		
 		minion_dir = 0;
 		minion_speed = 0;
+		minion_height = 0;
+		minion_attack_cooldown = 90;
 	
 		minion_xx = 0;
 		minion_yy = 0;

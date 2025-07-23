@@ -54,7 +54,7 @@ if active_attack_delay <= 0 and pattern_cooldown <= 0 and pattern_count > 0 {
 		scr_Boss_Dash_Movement_v2(15,30);
 		
 		mirror = true
-		speed = dash_speed;
+		speed = dash_speed + 0.1;
         direction = dash_direction;
 		
 		if pattern_count = 1 {
@@ -68,9 +68,9 @@ if active_attack_delay <= 0 and pattern_cooldown <= 0 and pattern_count > 0 {
 	}
 	
 	if active_attack = 2 {
-		if speed > 1 {
-		mirror = false
-		}
+		//if speed > 1 {
+			mirror = false
+		//}
 		scr_Boss_Dash_Movement_v2(4,2);
 		
 		speed = dash_speed;
@@ -103,6 +103,8 @@ if active_attack_delay <= 0 and pattern_cooldown <= 0 and pattern_count > 0 {
 			minion_count = 3;
 			minion_type = obj_pin_v2
 			minion_health = bossmaxhealth / 20;
+			minion_height = 800 + random(200);
+			minion_attack_cooldown = 120;
 			//minion_spawn_animation = spr_pocket_minion_spawn
 			//minion_yy = boss_height;
 
@@ -133,6 +135,10 @@ if active_attack_duration <= 0 {
 }
 
 /// Boss Sprite Code
+if mirror and active_attack_cooldown > 0 and speed < 0.05 {
+	speed = -0.05;
+    direction = dash_direction;
+}
 
 // Go back to normal default size
 scr_Boss_Size_Lerp_Dir(0.15, mirror);
@@ -146,7 +152,7 @@ if active_attack = 1 {
 	}
 } else if active_attack = 2 {
 	var _hold_frame = 0;
-	scr_Boss_Attack_Sprite_v2(spr_gutter_ball_v2_jump, _hold_frame, 3, 3, 10);
+	scr_Boss_Attack_Sprite_v2(spr_gutter_ball_v2_jump, _hold_frame, 2, 2, 0);
 	if image_index = _hold_frame {
 		scr_Boss_Wobble("Horizontal", 2, 0.4, 0)	
 	}
