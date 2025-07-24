@@ -16,3 +16,4 @@ boss_palette_index = champ;
 alarm[1] = 10;
 
 mirror = false;
+hops = 0;

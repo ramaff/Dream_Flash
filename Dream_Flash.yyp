@@ -340,6 +340,7 @@
     {"resourceType":"GMFolder","resourceVersion":"1.0","name":"Fire Starter v2","folderPath":"folders/Sprites/Boss Sprites/Flash Bosses/Fire Starter v2.yy",},
     {"resourceType":"GMFolder","resourceVersion":"1.0","name":"Growing Sorrows v2","folderPath":"folders/Sprites/Boss Sprites/Flash Bosses/Growing Sorrows v2.yy",},
     {"resourceType":"GMFolder","resourceVersion":"1.0","name":"Gutter Ball v2 Group","folderPath":"folders/Sprites/Boss Sprites/Flash Bosses/Gutter Ball v2 Group.yy",},
+    {"resourceType":"GMFolder","resourceVersion":"1.0","name":"Horror Stack v2","folderPath":"folders/Sprites/Boss Sprites/Flash Bosses/Horror Stack v2.yy",},
     {"resourceType":"GMFolder","resourceVersion":"1.0","name":"Ninja v2 Group","folderPath":"folders/Sprites/Boss Sprites/Flash Bosses/Ninja v2 Group.yy",},
     {"resourceType":"GMFolder","resourceVersion":"1.0","name":"Pocket v2 Group","folderPath":"folders/Sprites/Boss Sprites/Flash Bosses/Pocket v2 Group.yy",},
     {"resourceType":"GMFolder","resourceVersion":"1.0","name":"sleep walker group","folderPath":"folders/Sprites/Boss Sprites/Flash Bosses/sleep walker group.yy",},
@@ -482,7 +483,6 @@
     {"resourceType":"GMFolder","resourceVersion":"1.0","name":"Misc BGs","folderPath":"folders/Tile Sets/Misc BGs.yy",},
     {"resourceType":"GMFolder","resourceVersion":"1.0","name":"Nightmare BGs","folderPath":"folders/Tile Sets/Nightmare BGs.yy",},
     {"resourceType":"GMFolder","resourceVersion":"1.0","name":"Timelines","folderPath":"folders/Timelines.yy",},
-    {"resourceType":"GMFolder","resourceVersion":"1.0","name":"Horror Stack v2","folderPath":"folders/Sprites/Boss Sprites/Flash Bosses/Horror Stack v2.yy",},
   ],
   "IncludedFiles": [
     {"resourceType":"GMIncludedFile","resourceVersion":"1.0","name":"df_boss_stats.json","CopyToMask":-1,"filePath":"datafiles",},

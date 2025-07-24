@@ -165,6 +165,7 @@
     {"name":"Fire Starter v2","order":7,"path":"folders/Sprites/Boss Sprites/Flash Bosses/Fire Starter v2.yy",},
     {"name":"Growing Sorrows v2","order":13,"path":"folders/Sprites/Boss Sprites/Flash Bosses/Growing Sorrows v2.yy",},
     {"name":"Gutter Ball v2 Group","order":14,"path":"folders/Sprites/Boss Sprites/Flash Bosses/Gutter Ball v2 Group.yy",},
+    {"name":"Horror Stack v2","order":18,"path":"folders/Sprites/Boss Sprites/Flash Bosses/Horror Stack v2.yy",},
     {"name":"Ninja v2 Group","order":4,"path":"folders/Sprites/Boss Sprites/Flash Bosses/Ninja v2 Group.yy",},
     {"name":"Pocket v2 Group","order":5,"path":"folders/Sprites/Boss Sprites/Flash Bosses/Pocket v2 Group.yy",},
     {"name":"sleep walker group","order":9,"path":"folders/Sprites/Boss Sprites/Flash Bosses/sleep walker group.yy",},
@@ -195,7 +196,6 @@
     {"name":"Minion Spawn Art","order":6,"path":"folders/Sprites/Weapon Art/Minion Spawn Art.yy",},
     {"name":"Misc Art","order":7,"path":"folders/Sprites/Weapon Art/Misc Art.yy",},
     {"name":"Sharp and Solid Art","order":8,"path":"folders/Sprites/Weapon Art/Sharp and Solid Art.yy",},
-    {"name":"Horror Stack v2","order":18,"path":"folders/Sprites/Boss Sprites/Flash Bosses/Horror Stack v2.yy",},
   ],
   "ResourceOrderSettings": [
     {"name":"reco_Demonic_Villainy","order":66,"path":"sprites/reco_Demonic_Villainy/reco_Demonic_Villainy.yy",},
