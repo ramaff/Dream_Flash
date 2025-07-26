@@ -3,7 +3,7 @@ boost = global.boost;
 champ = global.champ;
 
 // Boss # id
-boss_value = 61;
+boss_value = 60;
 scr_Boss_Stats_Setup(2);
 
 scr_Wall_Boss_Path_Setup();

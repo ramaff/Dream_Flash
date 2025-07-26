@@ -13,7 +13,9 @@
   "edgeFiltering": false,
   "For3D": false,
   "frames": [
-    {"resourceType":"GMSpriteFrame","resourceVersion":"1.1","name":"ebf05602-cfdb-485e-a7e2-1e478c301321",},
+    {"resourceType":"GMSpriteFrame","resourceVersion":"1.1","name":"1f34022c-0cdd-4f6e-a50c-90a87b6fd08f",},
+    {"resourceType":"GMSpriteFrame","resourceVersion":"1.1","name":"41918e69-7689-428a-af80-bc7095cb251b",},
+    {"resourceType":"GMSpriteFrame","resourceVersion":"1.1","name":"8bf8d07d-7fb6-4697-b28b-6d026b20ac48",},
   ],
   "gridX": 0,
   "gridY": 0,
@@ -43,7 +45,7 @@
     "events": {"resourceType":"KeyframeStore<MessageEventKeyframe>","resourceVersion":"1.0","Keyframes":[],},
     "eventStubScript": null,
     "eventToFunction": {},
-    "length": 1.0,
+    "length": 3.0,
     "lockOrigin": false,
     "moments": {"resourceType":"KeyframeStore<MomentsEventKeyframe>","resourceVersion":"1.0","Keyframes":[],},
     "playback": 1,
@@ -54,7 +56,9 @@
     "timeUnits": 1,
     "tracks": [
       {"resourceType":"GMSpriteFramesTrack","resourceVersion":"1.0","name":"frames","builtinName":0,"events":[],"inheritsTrackColour":true,"interpolation":1,"isCreationTrack":false,"keyframes":{"resourceType":"KeyframeStore<SpriteFrameKeyframe>","resourceVersion":"1.0","Keyframes":[
-            {"resourceType":"Keyframe<SpriteFrameKeyframe>","resourceVersion":"1.0","Channels":{"0":{"resourceType":"SpriteFrameKeyframe","resourceVersion":"1.0","Id":{"name":"ebf05602-cfdb-485e-a7e2-1e478c301321","path":"sprites/spr_horror_stack_v2_shoot/spr_horror_stack_v2_shoot.yy",},},},"Disabled":false,"id":"e545b1b7-f77d-421e-beec-9c24f6ca788a","IsCreationKey":false,"Key":0.0,"Length":1.0,"Stretch":false,},
+            {"resourceType":"Keyframe<SpriteFrameKeyframe>","resourceVersion":"1.0","Channels":{"0":{"resourceType":"SpriteFrameKeyframe","resourceVersion":"1.0","Id":{"name":"1f34022c-0cdd-4f6e-a50c-90a87b6fd08f","path":"sprites/spr_horror_stack_v2_shoot/spr_horror_stack_v2_shoot.yy",},},},"Disabled":false,"id":"7ae395d3-58f9-4a4d-829e-475c62e79a44","IsCreationKey":false,"Key":0.0,"Length":1.0,"Stretch":false,},
+            {"resourceType":"Keyframe<SpriteFrameKeyframe>","resourceVersion":"1.0","Channels":{"0":{"resourceType":"SpriteFrameKeyframe","resourceVersion":"1.0","Id":{"name":"41918e69-7689-428a-af80-bc7095cb251b","path":"sprites/spr_horror_stack_v2_shoot/spr_horror_stack_v2_shoot.yy",},},},"Disabled":false,"id":"7900afd2-09cc-4912-aca1-16c610a57e39","IsCreationKey":false,"Key":1.0,"Length":1.0,"Stretch":false,},
+            {"resourceType":"Keyframe<SpriteFrameKeyframe>","resourceVersion":"1.0","Channels":{"0":{"resourceType":"SpriteFrameKeyframe","resourceVersion":"1.0","Id":{"name":"8bf8d07d-7fb6-4697-b28b-6d026b20ac48","path":"sprites/spr_horror_stack_v2_shoot/spr_horror_stack_v2_shoot.yy",},},},"Disabled":false,"id":"de9d7699-512a-486c-a6bc-600e4355c8f2","IsCreationKey":false,"Key":2.0,"Length":1.0,"Stretch":false,},
           ],},"modifiers":[],"spriteId":null,"trackColour":0,"tracks":[],"traits":0,},
     ],
     "visibleRange": null,

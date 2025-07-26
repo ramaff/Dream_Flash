@@ -3,9 +3,9 @@
   "resourceVersion": "1.0",
   "name": "spr_horror_stack_v2",
   "bbox_bottom": 454,
-  "bbox_left": 146,
+  "bbox_left": 0,
   "bbox_right": 553,
-  "bbox_top": 61,
+  "bbox_top": 0,
   "bboxMode": 0,
   "collisionKind": 4,
   "collisionTolerance": 0,
@@ -14,8 +14,8 @@
   "For3D": false,
   "frames": [
     {"resourceType":"GMSpriteFrame","resourceVersion":"1.1","name":"b077d681-f894-4eba-9d94-0be71f75f42d",},
-    {"resourceType":"GMSpriteFrame","resourceVersion":"1.1","name":"ebf05602-cfdb-485e-a7e2-1e478c301321",},
     {"resourceType":"GMSpriteFrame","resourceVersion":"1.1","name":"17ea3b5a-a54d-46d3-8893-9173861e0c27",},
+    {"resourceType":"GMSpriteFrame","resourceVersion":"1.1","name":"1c1b403d-9be1-40b5-b4a7-900bfc5af1ec",},
     {"resourceType":"GMSpriteFrame","resourceVersion":"1.1","name":"5270358b-4968-4e5a-9a88-831690f610f1",},
     {"resourceType":"GMSpriteFrame","resourceVersion":"1.1","name":"15d8f350-9b58-46ab-a8f3-6e1f05e39df3",},
     {"resourceType":"GMSpriteFrame","resourceVersion":"1.1","name":"c15787c2-0fa4-485e-9356-d1235362a4ce",},
@@ -60,8 +60,8 @@
     "tracks": [
       {"resourceType":"GMSpriteFramesTrack","resourceVersion":"1.0","name":"frames","builtinName":0,"events":[],"inheritsTrackColour":true,"interpolation":1,"isCreationTrack":false,"keyframes":{"resourceType":"KeyframeStore<SpriteFrameKeyframe>","resourceVersion":"1.0","Keyframes":[
             {"resourceType":"Keyframe<SpriteFrameKeyframe>","resourceVersion":"1.0","Channels":{"0":{"resourceType":"SpriteFrameKeyframe","resourceVersion":"1.0","Id":{"name":"b077d681-f894-4eba-9d94-0be71f75f42d","path":"sprites/spr_horror_stack_v2/spr_horror_stack_v2.yy",},},},"Disabled":false,"id":"912e386f-f5f0-4879-acab-6f4cb19d329d","IsCreationKey":false,"Key":0.0,"Length":1.0,"Stretch":false,},
-            {"resourceType":"Keyframe<SpriteFrameKeyframe>","resourceVersion":"1.0","Channels":{"0":{"resourceType":"SpriteFrameKeyframe","resourceVersion":"1.0","Id":{"name":"ebf05602-cfdb-485e-a7e2-1e478c301321","path":"sprites/spr_horror_stack_v2/spr_horror_stack_v2.yy",},},},"Disabled":false,"id":"ec607b67-4d20-4b03-afec-6071f9d1471a","IsCreationKey":false,"Key":1.0,"Length":1.0,"Stretch":false,},
-            {"resourceType":"Keyframe<SpriteFrameKeyframe>","resourceVersion":"1.0","Channels":{"0":{"resourceType":"SpriteFrameKeyframe","resourceVersion":"1.0","Id":{"name":"17ea3b5a-a54d-46d3-8893-9173861e0c27","path":"sprites/spr_horror_stack_v2/spr_horror_stack_v2.yy",},},},"Disabled":false,"id":"bebb29a4-9869-4bb8-b67e-e705078cb6a1","IsCreationKey":false,"Key":2.0,"Length":1.0,"Stretch":false,},
+            {"resourceType":"Keyframe<SpriteFrameKeyframe>","resourceVersion":"1.0","Channels":{"0":{"resourceType":"SpriteFrameKeyframe","resourceVersion":"1.0","Id":{"name":"17ea3b5a-a54d-46d3-8893-9173861e0c27","path":"sprites/spr_horror_stack_v2/spr_horror_stack_v2.yy",},},},"Disabled":false,"id":"bebb29a4-9869-4bb8-b67e-e705078cb6a1","IsCreationKey":false,"Key":1.0,"Length":1.0,"Stretch":false,},
+            {"resourceType":"Keyframe<SpriteFrameKeyframe>","resourceVersion":"1.0","Channels":{"0":{"resourceType":"SpriteFrameKeyframe","resourceVersion":"1.0","Id":{"name":"1c1b403d-9be1-40b5-b4a7-900bfc5af1ec","path":"sprites/spr_horror_stack_v2/spr_horror_stack_v2.yy",},},},"Disabled":false,"id":"2c4ff659-e201-4357-bcbf-fa8a7a40f97e","IsCreationKey":false,"Key":2.0,"Length":1.0,"Stretch":false,},
             {"resourceType":"Keyframe<SpriteFrameKeyframe>","resourceVersion":"1.0","Channels":{"0":{"resourceType":"SpriteFrameKeyframe","resourceVersion":"1.0","Id":{"name":"5270358b-4968-4e5a-9a88-831690f610f1","path":"sprites/spr_horror_stack_v2/spr_horror_stack_v2.yy",},},},"Disabled":false,"id":"c6c1784c-aad5-42be-98de-5650825327f5","IsCreationKey":false,"Key":3.0,"Length":1.0,"Stretch":false,},
             {"resourceType":"Keyframe<SpriteFrameKeyframe>","resourceVersion":"1.0","Channels":{"0":{"resourceType":"SpriteFrameKeyframe","resourceVersion":"1.0","Id":{"name":"15d8f350-9b58-46ab-a8f3-6e1f05e39df3","path":"sprites/spr_horror_stack_v2/spr_horror_stack_v2.yy",},},},"Disabled":false,"id":"68074a02-8986-494c-9293-3dbcd4cf1f25","IsCreationKey":false,"Key":4.0,"Length":1.0,"Stretch":false,},
             {"resourceType":"Keyframe<SpriteFrameKeyframe>","resourceVersion":"1.0","Channels":{"0":{"resourceType":"SpriteFrameKeyframe","resourceVersion":"1.0","Id":{"name":"c15787c2-0fa4-485e-9356-d1235362a4ce","path":"sprites/spr_horror_stack_v2/spr_horror_stack_v2.yy",},},},"Disabled":false,"id":"5477cf91-9e4a-41cd-9fa3-6307f4d25fb6","IsCreationKey":false,"Key":5.0,"Length":1.0,"Stretch":false,},
