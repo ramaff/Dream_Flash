@@ -536,8 +536,8 @@
         "Boss 016": {
             "Name": "Horror Stack",
             "Recollection_Sprite": "reco_Horror_Stack",
-            "Health_Phase_1": 200,
-            "Health_Phase_2": 125,
+            "Health_Phase_1": 140,
+            "Health_Phase_2": 0,
             "Defense_Phase_1": 0,
             "Defense_Phase_2": 0,
             "Boss_Danger": 2,
@@ -546,7 +546,7 @@
             "recollectionDescription": "These three bosses combine into one menace.",
         
             "Champ 0.1": {
-                "Health_Phase_1": 125,
+                "Health_Phase_1": 70,
                 "Health_Phase_2": 0,
                 "Final_Phase": 1
             },

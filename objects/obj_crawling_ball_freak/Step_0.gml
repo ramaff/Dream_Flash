@@ -3,11 +3,15 @@
 // Mandatory:
 scr_Boss_Step(2);
 
-// If boss is floating in air, can make it bob up and down:
-scr_Boss_Height_Bob(30, 1, 0);
-
 // Make boss shape wobble:
 scr_Boss_Wobble("Horizontal", 0.4, 1, 0);
+
+if sprite_index = spr_horror_stack_v2_leg_ball and image_index >= 6 {
+	direction = scr_Soul_Point() + 60;
+	speed = lerp(speed, bossmovespeed * 5, 0.1);
+} else {
+	speed = lerp(speed, 0, 0.3);
+}
 
 //////////////////////////////////////////////////////////////////////////////////////////
 /////////////// Active Attack Prep
@@ -16,33 +20,13 @@ scr_Boss_Wobble("Horizontal", 0.4, 1, 0);
 if active_attack_delay <= 0 and active_attack_cooldown <= 0 and active_attack_duration <= 0 {
     
 	// Pick a random attack to do
-	active_attack = choose(1, 2, 3);
 	active_attack = 1;
 	
     if active_attack = 1 {
 		// Setup how many attacks per boss move, delay, etc
-		scr_Boss_Attack_Time_Setup_v2(1, 50, 1, 120, 30, 10);
+		scr_Boss_Attack_Time_Setup_v2(6, 50, 20, 180, 120, 10);
 		
-		// Can set up the initial pattern direction
-		// patternDirection = scr_Soul_Point();
-		// patternDirection = random(360;
-    }
-	// Hop leap attack setup example
-	if active_attack = 2 {
-		// 
-		scr_Boss_Attack_Time_Setup_v2(50, 30, 1, 30, 30, 10);
-		
-		scr_Boss_Jump_Setup_v2(0, 7 * bossmovespeed, x, y);
-		//scr_Boss_Dash_Setup_v2(scr_Soul_Point(), 0, 7 * bossmovespeed);
-    }
-	// Minion Spawn Example
-	if active_attack = 3 {
-		// Setup how many attacks per boss move, delay, etc
-		scr_Boss_Attack_Time_Setup_v2(1, 50, 1, 120, 30, 10);
-		
-		// Can set up the initial pattern direction
-		// patternDirection = scr_Soul_Point();
-		// patternDirection = random(360;
+		pattern_direction = scr_Soul_Point()
     }
 }
 
@@ -52,49 +36,24 @@ if active_attack_delay <= 0 and active_attack_cooldown <= 0 and active_attack_du
 
 scr_default_attack_settings_v2();
 
+scr_Soul_Outside_Check();
+
 // If its time to attack, attack
 if active_attack_delay <= 0 and pattern_cooldown <= 0 and pattern_count > 0 {
    
     if active_attack = 1 {
-		scr_Boss_Stretch("Vertical", 1);
+		scr_Boss_Stretch("Vertical", 0.3);
 		
-		attack_stats.bullet_direction = scr_Boss_Bullet_Direction_Formula(scr_Soul_Point(), 30)
-		attack_stats.bullet_sprite = "spr_red_bullet_v2"
-		attack_stats.bullet_count = 3;
-		attack_stats.bullet_spread = 30;
-		attack_stats.bullet_direction_angle = 1
+		attack_stats.bullet_direction = scr_Boss_Bullet_Direction_Formula(pattern_direction, 10)
+		attack_stats.bullet_sprite = "spr_Glowy_Enemy_Shot"
+		attack_stats.bullet_count = 2;
+		attack_stats.bullet_spread = 185 - (30 * pattern_count);
+		attack_stats.bullet_speed = bossbulletspeed * 1.5;
 		
 		scr_boss_shoot_v2();
 	
 		// If you gotta change the pattern aim direction
 	    // pattern_direction += 0;
-	}
-	
-	if active_attack = 2 {
-		scr_Boss_Dash_Movement_v2(4,2);
-		
-		speed = dash_speed;
-        direction = dash_direction;
-		
-		scr_Jump_Movement_v2(2);	
-		
-		if pattern_count = floor(pattern_count_max) {
-			attack_stats.bullet_direction = scr_Boss_Bullet_Direction_Formula(scr_Soul_Point(), 30)
-		
-			scr_boss_shoot_v2();
-		}
-	}
-	
-	if active_attack = 3 {
-	
-		minion_count = 1;
-		minion_type = obj_Minion_Template;
-		minion_health = bossmaxhealth / 10;
-		//minion_spawn_animation = spr_pocket_minion_spawn
-		//minion_yy = boss_height;
-
-		scr_Minion_Spawn();
-	
 	}
 	
 	// Maybe I should put this into a script
@@ -118,12 +77,12 @@ scr_Boss_Size_Lerp(0.15);
 // Handles boss attack sprite animation
 if active_attack != 0 {
 	var _hold_frame = 1;
-	scr_Boss_Attack_Sprite_v2(spr_Boss_Template_Attack, _hold_frame, 2, 2, 20);
+	scr_Boss_Attack_Sprite_v2(spr_horror_stack_v2_leg_ball_shoot, _hold_frame, 2, 2, 20);
 	if image_index = _hold_frame {
 		scr_Boss_Wobble("Horizontal", 2, 0.4, 0)	
 	}
 } else {
-	sprite_index = spr_Boss_Template;
+	sprite_index = spr_horror_stack_v2_leg_ball;
 }
 
 // So that the boss hurts soul on collision

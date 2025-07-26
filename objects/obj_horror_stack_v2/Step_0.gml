@@ -6,6 +6,9 @@ scr_Boss_Step(2);
 // Make boss shape wobble:
 scr_Boss_Wobble("Horizontal", 0.4, 1, 0);
 
+direction = scr_Soul_Point();
+speed = bossmovespeed * 0.15;
+
 if bosshealth <= bossmaxhealth * 0.75 and balls = 2 {
 	with instance_create_depth(x, y, depth, obj_flying_ball_freak) {
 		boss_value = 16
@@ -16,6 +19,7 @@ if bosshealth <= bossmaxhealth * 0.75 and balls = 2 {
 		boost = other.boost;
 		difficulty = global.floor[global.currentroom,24];	
 	}
+	balls--;
 }
 if bosshealth <= bossmaxhealth * 0.5 and balls = 1 {
 	with instance_create_depth(x, y, depth, obj_crawling_ball_freak) {
@@ -27,6 +31,7 @@ if bosshealth <= bossmaxhealth * 0.5 and balls = 1 {
 		boost = other.boost;
 		difficulty = global.floor[global.currentroom,24];	
 	}
+	balls--;
 }
 
 
@@ -100,12 +105,25 @@ scr_Boss_Size_Lerp(0.15);
 // Handles boss attack sprite animation
 if active_attack != 0 {
 	var _hold_frame = 0;
-	scr_Boss_Attack_Sprite_v2(spr_horror_stack_v2_shoot, _hold_frame, 1, 1, 10);
+	var _sprite_index = spr_horror_stack_v2_shoot;
+	if balls = 1 {
+		_sprite_index = spr_horror_stack_v2_ball_removed_shoot;
+	}
+	if balls = 0 {
+		_sprite_index = spr_horror_stack_v2_cannon_ball_shoot;
+	}
+	scr_Boss_Attack_Sprite_v2(_sprite_index, _hold_frame, 1, 1, 10);
 	if image_index = _hold_frame {
 		scr_Boss_Wobble("Horizontal", 2, 0.4, 0)	
 	}
 } else {
 	sprite_index = spr_horror_stack_v2;
+	if balls = 1 {
+		sprite_index = spr_horror_stack_v2_ball_removed;
+	}
+	if balls = 0 {
+		sprite_index = spr_horror_stack_v2_cannon_ball;
+	}
 }
 
 // So that the boss hurts soul on collision

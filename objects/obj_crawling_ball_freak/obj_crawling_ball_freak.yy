@@ -33,8 +33,8 @@
   "properties": [],
   "solid": false,
   "spriteId": {
-    "name": "spr_Boss_Template",
-    "path": "sprites/spr_Boss_Template/spr_Boss_Template.yy",
+    "name": "spr_horror_stack_v2_leg_ball",
+    "path": "sprites/spr_horror_stack_v2_leg_ball/spr_horror_stack_v2_leg_ball.yy",
   },
   "spriteMaskId": null,
   "visible": false,
