@@ -1,5 +1,7 @@
 boost = 0;
 champ = 0;
+difficulty = 0;
+deadknockdirection = 0
 
 scr_Boss_Minion_Stat_Setup();
 
@@ -19,3 +21,8 @@ y = _new_pos[1]
 scr_Boss_Height_Setup(0);
 
 state = states.leaping
+
+death_sprite = spr_pin_v2_ko;
+boss_palette = spr_boss_template_palette;
+boss_palette_index = champ;
+

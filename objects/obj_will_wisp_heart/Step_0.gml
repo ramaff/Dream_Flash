@@ -88,9 +88,9 @@ if active_attack_delay <= 0 and pattern_cooldown <= 0 and pattern_count > 0 {
 		attack_stats.bullet_type = "obj_decreasing_homing_bullet_school"
 		attack_stats.bullet_sprite = "spr_Glowy_Blue_Shot"
 		attack_stats.bullet_count = 1;
-		attack_stats.bullet_speed = bossbulletspeed * (0.85 + random(0.3))
+		attack_stats.bullet_speed = bossbulletspeed * (1.35 + random(0.4))
 		attack_stats.school_bullets = 3;
-		attack_stats.orbit_distance = 85;
+		attack_stats.orbit_distance = 95;
 		attack_stats.bullet_life_span = 360;
 		attack_stats.homing_speed = 1.5;
 		
@@ -127,14 +127,14 @@ scr_Boss_Size_Lerp(0.15);
 // Handles boss attack sprite animation
 if active_attack = 1 {
 	var _hold_frame = 1;
-	scr_Boss_Attack_Sprite_v2(spr_Wisp_Mask_Heart_Shoot, _hold_frame, 2, 2, 20);
+	scr_Boss_Attack_Sprite_v2(spr_Wisp_Mask_Heart_Shoot, _hold_frame, 3, 3, 20);
 	if image_index = _hold_frame {
 		scr_Boss_Wobble("Horizontal", 2, 0.4, 0)	
 	}
 } else if active_attack = 2 {
 	var _hold_frame = 1;
 	scr_Force_Hold_Frame(_hold_frame)
-	scr_Boss_Attack_Sprite_v2(spr_Wisp_Mask_Heart_Shoot, _hold_frame, 1, 2, 20);
+	scr_Boss_Attack_Sprite_v2(spr_Wisp_Mask_Heart_Shoot, _hold_frame, 1, 4, 20);
 	if image_index = _hold_frame {
 		scr_Boss_Wobble("Horizontal", 2, 0.4, 0)	
 	}

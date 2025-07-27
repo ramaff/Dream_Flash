@@ -2,6 +2,8 @@
 // You can write your code in this editor
 
 if speed > 1 {
+	
+	other.deadknockdirection = direction
 
 	scr_default_attack_settings_v2();
 
