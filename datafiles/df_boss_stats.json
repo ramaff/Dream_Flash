@@ -1542,6 +1542,24 @@
             "recollectionDescription": "Incredibly powerful being found in the deepest and darkest parts of the dreamscape."
         },
 
+        "Boss 061": {
+            "Name": "Boss Beads",
+            "Recollection_Sprite": "reco_sleep_walker",
+            "Health_Phase_1": 100,
+            "Defense_Phase_1": 0,
+            "Boss_Danger": 1,
+            "Bullet_Speed": 2.5,
+            "Move_Speed": 2.5,
+            "Palette": "spr_sleep_walker_palette",
+
+            "Champ 0.1": {
+                "Health_Phase_1": 100,
+                "Defense_Phase_1": 0
+            },
+        
+            "recollectionDescription": "Irresponsible pet owner."
+        },
+
         "Boss 062": {
             "Name": "Whack a Soul",
             "Recollection_Sprite": "reco_sleep_walker",

@@ -2,9 +2,9 @@
   "resourceType": "GMSprite",
   "resourceVersion": "1.0",
   "name": "spr_flash_marble_front_bg",
-  "bbox_bottom": 799,
-  "bbox_left": 16,
-  "bbox_right": 1199,
+  "bbox_bottom": 1599,
+  "bbox_left": 33,
+  "bbox_right": 2399,
   "bbox_top": 0,
   "bboxMode": 0,
   "collisionKind": 1,
@@ -13,14 +13,14 @@
   "edgeFiltering": false,
   "For3D": false,
   "frames": [
-    {"resourceType":"GMSpriteFrame","resourceVersion":"1.1","name":"48278f7f-d204-469b-a63c-19495b0d6920",},
+    {"resourceType":"GMSpriteFrame","resourceVersion":"1.1","name":"4dffe504-2e69-43a2-a006-c889d32bc189",},
   ],
   "gridX": 0,
   "gridY": 0,
-  "height": 800,
+  "height": 1600,
   "HTile": false,
   "layers": [
-    {"resourceType":"GMImageLayer","resourceVersion":"1.0","name":"21ff540e-b0fd-45f6-89dc-fcaea96cb41d","blendMode":0,"displayName":"default","isLocked":false,"opacity":100.0,"visible":true,},
+    {"resourceType":"GMImageLayer","resourceVersion":"1.0","name":"52f7dbe9-16fa-4bbd-bc78-920d81671bff","blendMode":0,"displayName":"default","isLocked":false,"opacity":100.0,"visible":true,},
   ],
   "nineSlice": null,
   "origin": 0,
@@ -54,7 +54,7 @@
     "timeUnits": 1,
     "tracks": [
       {"resourceType":"GMSpriteFramesTrack","resourceVersion":"1.0","name":"frames","builtinName":0,"events":[],"inheritsTrackColour":true,"interpolation":1,"isCreationTrack":false,"keyframes":{"resourceType":"KeyframeStore<SpriteFrameKeyframe>","resourceVersion":"1.0","Keyframes":[
-            {"resourceType":"Keyframe<SpriteFrameKeyframe>","resourceVersion":"1.0","Channels":{"0":{"resourceType":"SpriteFrameKeyframe","resourceVersion":"1.0","Id":{"name":"48278f7f-d204-469b-a63c-19495b0d6920","path":"sprites/spr_flash_marble_front_bg/spr_flash_marble_front_bg.yy",},},},"Disabled":false,"id":"8bf8fc43-6a42-4ada-9a9a-631ed5b98b91","IsCreationKey":false,"Key":0.0,"Length":1.0,"Stretch":false,},
+            {"resourceType":"Keyframe<SpriteFrameKeyframe>","resourceVersion":"1.0","Channels":{"0":{"resourceType":"SpriteFrameKeyframe","resourceVersion":"1.0","Id":{"name":"4dffe504-2e69-43a2-a006-c889d32bc189","path":"sprites/spr_flash_marble_front_bg/spr_flash_marble_front_bg.yy",},},},"Disabled":false,"id":"527d571c-8da9-4bfd-9515-d517e403b951","IsCreationKey":false,"Key":0.0,"Length":1.0,"Stretch":false,},
           ],},"modifiers":[],"spriteId":null,"trackColour":0,"tracks":[],"traits":0,},
     ],
     "visibleRange": null,
@@ -70,5 +70,5 @@
   },
   "type": 0,
   "VTile": false,
-  "width": 1200,
+  "width": 2400,
 }

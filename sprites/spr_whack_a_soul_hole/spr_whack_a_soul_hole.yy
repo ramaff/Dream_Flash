@@ -2,10 +2,10 @@
   "resourceType": "GMSprite",
   "resourceVersion": "1.0",
   "name": "spr_whack_a_soul_hole",
-  "bbox_bottom": 315,
-  "bbox_left": 88,
-  "bbox_right": 307,
-  "bbox_top": 198,
+  "bbox_bottom": 316,
+  "bbox_left": 84,
+  "bbox_right": 326,
+  "bbox_top": 218,
   "bboxMode": 0,
   "collisionKind": 4,
   "collisionTolerance": 0,
@@ -13,7 +13,7 @@
   "edgeFiltering": false,
   "For3D": false,
   "frames": [
-    {"resourceType":"GMSpriteFrame","resourceVersion":"1.1","name":"40aa2523-4bc7-478d-848a-afd98a546345",},
+    {"resourceType":"GMSpriteFrame","resourceVersion":"1.1","name":"d3cdb0c3-a659-4203-a53a-095cff40b7d0",},
   ],
   "gridX": 0,
   "gridY": 0,
@@ -54,7 +54,7 @@
     "timeUnits": 1,
     "tracks": [
       {"resourceType":"GMSpriteFramesTrack","resourceVersion":"1.0","name":"frames","builtinName":0,"events":[],"inheritsTrackColour":true,"interpolation":1,"isCreationTrack":false,"keyframes":{"resourceType":"KeyframeStore<SpriteFrameKeyframe>","resourceVersion":"1.0","Keyframes":[
-            {"resourceType":"Keyframe<SpriteFrameKeyframe>","resourceVersion":"1.0","Channels":{"0":{"resourceType":"SpriteFrameKeyframe","resourceVersion":"1.0","Id":{"name":"40aa2523-4bc7-478d-848a-afd98a546345","path":"sprites/spr_whack_a_soul_hole/spr_whack_a_soul_hole.yy",},},},"Disabled":false,"id":"f1f902c2-7ad8-4a8d-ab06-204b18302a30","IsCreationKey":false,"Key":0.0,"Length":1.0,"Stretch":false,},
+            {"resourceType":"Keyframe<SpriteFrameKeyframe>","resourceVersion":"1.0","Channels":{"0":{"resourceType":"SpriteFrameKeyframe","resourceVersion":"1.0","Id":{"name":"d3cdb0c3-a659-4203-a53a-095cff40b7d0","path":"sprites/spr_whack_a_soul_hole/spr_whack_a_soul_hole.yy",},},},"Disabled":false,"id":"08219412-0be2-444c-9248-ca84ee657a91","IsCreationKey":false,"Key":0.0,"Length":1.0,"Stretch":false,},
           ],},"modifiers":[],"spriteId":null,"trackColour":0,"tracks":[],"traits":0,},
     ],
     "visibleRange": null,

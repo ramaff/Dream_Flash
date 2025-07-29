@@ -63,7 +63,7 @@ if active_attack_delay <= 0 and pattern_cooldown <= 0 and pattern_count > 0 {
 			
 			scr_Boss_Attack_Time_Setup_v2(40, 0, 1, 120, 30, 50);
 		
-			scr_Boss_Jump_Setup_v2(0, 4.5 * bossmovespeed, x, y);
+			scr_Boss_Jump_Setup_v2(0, 5.5 * bossmovespeed, x, y);
 			
 			hops = 3;
 		}
@@ -79,7 +79,7 @@ if active_attack_delay <= 0 and pattern_cooldown <= 0 and pattern_count > 0 {
 		speed = dash_speed;
         direction = dash_direction;
 		
-		scr_Jump_Movement_v2(4);	
+		scr_Jump_Movement_v2(6);	
 		
 		if pattern_count = 1 and hops > 0 {
 			hops--;

@@ -1,5 +1,5 @@
 function scr_Wall_Boss_Path_Setup() {
-	bossPath = Medium_Wall_Crawl_A;
+	/*bossPath = Medium_Wall_Crawl_A;
 
 	if global.roomSizeX > 1024 {
 	    bossPath = Wall_Crawl_64;
@@ -24,7 +24,7 @@ function scr_Wall_Boss_Path_Setup() {
 	}
 	if global.roomSizeX > 1472 {
 	    bossPath = Wall_Crawl_512;
-	}
+	} */
 
 	bossPath = Wall_Path;
 
