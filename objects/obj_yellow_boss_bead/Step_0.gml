@@ -89,7 +89,7 @@ if active_attack_delay <= 0 and pattern_cooldown <= 0 and pattern_count > 0 {
 			
 			x -= 25;
 		}
-		attack_stats.boss_yoffset = 20;
+		attack_stats.boss_yoffset = -20;
 		
 		scr_boss_shoot_v2();
 	
