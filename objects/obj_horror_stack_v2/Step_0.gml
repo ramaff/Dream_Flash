@@ -46,7 +46,7 @@ if active_attack_delay <= 0 and active_attack_cooldown <= 0 and active_attack_du
 	
     if active_attack = 1 {
 		// Setup how many attacks per boss move, delay, etc
-		scr_Boss_Attack_Time_Setup_v2(1, 50, 1, 180, 120, 10);
+		scr_Boss_Attack_Time_Setup_v2(1, 50, 1, 180, 120, 30);
 		
 		// Can set up the initial pattern direction
 		// patternDirection = scr_Soul_Point();
@@ -112,7 +112,7 @@ if active_attack != 0 {
 	if balls = 0 {
 		_sprite_index = spr_horror_stack_v2_cannon_ball_shoot;
 	}
-	scr_Boss_Attack_Sprite_v2(_sprite_index, _hold_frame, 1, 1, 10);
+	scr_Boss_Attack_Sprite_v2(_sprite_index, _hold_frame, 1, 1, 20);
 	if image_index = _hold_frame {
 		scr_Boss_Wobble("Horizontal", 2, 0.4, 0)	
 	}
