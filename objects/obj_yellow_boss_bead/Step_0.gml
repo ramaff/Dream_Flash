@@ -15,7 +15,7 @@ var _yy = path_get_y(boss_path, path_position)
 if active_attack != 0 {
 	speed = lerp(speed, bossmovespeed * 0.1, 0.1)
 } else {
-	speed = lerp(speed, bossmovespeed * 3, 0.1)
+	speed = lerp(speed, bossmovespeed * 2, 0.1)
 }
 
 if instance_exists(target) {
@@ -31,9 +31,11 @@ direction = point_direction(x, y, _xx, _yy)
 
 var _dist = point_distance(x, y, _xx, _yy)
 
-if _dist < bossmovespeed * 3.5 {
+if _dist < bossmovespeed * 2.5 {
 	path_position += 0.01
-	speed = target.speed * 0.5
+	if instance_exists(target) {
+		speed = target.speed * 0.5
+	}
 }
 
 
@@ -54,7 +56,7 @@ if active_attack_delay <= 0 and active_attack_cooldown <= 0 and active_attack_du
 	
     if active_attack = 1 {
 		// Setup how many attacks per boss move, delay, etc
-		scr_Boss_Attack_Time_Setup_v2(4, 50, 20, 180, 120, 0);
+		scr_Boss_Attack_Time_Setup_v2(6, 50, 20, 240, 120, 0);
 		
 		// Can set up the initial pattern direction
 		// patternDirection = scr_Soul_Point();
@@ -118,7 +120,7 @@ scr_Boss_Size_Lerp(0.15);
 // Handles boss attack sprite animation
 if active_attack != 0 {
 	var _hold_frame = 0;
-	scr_Boss_Attack_Sprite_v2(spr_yellow_boss_bead_shoot, _hold_frame, 0, 3, 10);
+	scr_Boss_Attack_Sprite_v2(spr_yellow_boss_bead_shoot, _hold_frame, 0, 3, 15);
 	if image_index = _hold_frame {
 		scr_Boss_Wobble("Horizontal", 2, 0.4, 0)	
 	}

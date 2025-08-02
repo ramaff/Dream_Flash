@@ -36,7 +36,7 @@ if active_attack_delay <= 0 and active_attack_cooldown <= 0 and active_attack_du
 
 scr_default_attack_settings_v2();
 
-scr_Soul_Outside_Check();
+scr_Soul_Outside_Check(-64);
 
 // If its time to attack, attack
 if active_attack_delay <= 0 and pattern_cooldown <= 0 and pattern_count > 0 {
@@ -47,8 +47,9 @@ if active_attack_delay <= 0 and pattern_cooldown <= 0 and pattern_count > 0 {
 		attack_stats.bullet_direction = scr_Boss_Bullet_Direction_Formula(pattern_direction, 10)
 		attack_stats.bullet_sprite = "spr_Glowy_Enemy_Shot"
 		attack_stats.bullet_count = 2;
-		attack_stats.bullet_spread = 185 - (30 * pattern_count);
+		attack_stats.bullet_spread = 195 - (30 * pattern_count);
 		attack_stats.bullet_speed = bossbulletspeed * 1.5;
+		attack_stats.boss_yoffset = -20;
 		
 		scr_boss_shoot_v2();
 	

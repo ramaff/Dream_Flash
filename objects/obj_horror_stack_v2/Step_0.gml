@@ -17,7 +17,8 @@ if bosshealth <= bossmaxhealth * 0.75 and balls = 2 {
 			
 		champ = other.champ;
 		boost = other.boost;
-		difficulty = global.floor[global.currentroom,24];	
+		difficulty = global.floor[global.currentroom,24];
+		scr_Boss_Height_Setup(90);
 	}
 	balls--;
 }
@@ -30,6 +31,7 @@ if bosshealth <= bossmaxhealth * 0.5 and balls = 1 {
 		champ = other.champ;
 		boost = other.boost;
 		difficulty = global.floor[global.currentroom,24];	
+		scr_Boss_Height_Setup(40);
 	}
 	balls--;
 }

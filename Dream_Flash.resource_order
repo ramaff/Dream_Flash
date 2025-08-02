@@ -196,6 +196,7 @@
     {"name":"Minion Spawn Art","order":6,"path":"folders/Sprites/Weapon Art/Minion Spawn Art.yy",},
     {"name":"Misc Art","order":7,"path":"folders/Sprites/Weapon Art/Misc Art.yy",},
     {"name":"Sharp and Solid Art","order":8,"path":"folders/Sprites/Weapon Art/Sharp and Solid Art.yy",},
+    {"name":"numerous lobbers","order":25,"path":"folders/Objects/Boss Bullets/numerous lobbers.yy",},
   ],
   "ResourceOrderSettings": [
     {"name":"reco_Demonic_Villainy","order":66,"path":"sprites/reco_Demonic_Villainy/reco_Demonic_Villainy.yy",},

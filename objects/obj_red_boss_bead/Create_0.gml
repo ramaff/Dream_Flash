@@ -3,7 +3,7 @@ boost = global.boost;
 champ = global.champ;
 
 // Boss # id
-boss_value = 1;
+boss_value = 61;
 scr_Boss_Stats_Setup(2);
 
 // Required, usually set to 0.5
@@ -33,6 +33,7 @@ with instance_create_depth(x, y, depth, obj_yellow_boss_bead) {
 	champ = other.champ;
 	boost = other.boost;
 	difficulty = global.floor[global.currentroom,24];	
+	scr_Boss_Height_Setup(60);
 }
 
 with instance_create_depth(x, y, depth, obj_blue_boss_bead) {
@@ -46,6 +47,7 @@ with instance_create_depth(x, y, depth, obj_blue_boss_bead) {
 	champ = other.champ;
 	boost = other.boost;
 	difficulty = global.floor[global.currentroom,24];	
+	scr_Boss_Height_Setup(60);
 }
 
 

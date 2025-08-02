@@ -1,7 +1,7 @@
 
 event_inherited()
 
-bullet_stats.orbit_angle += bullet_stats.bullet_speed / 2;
+bullet_stats.orbit_angle += 40 * bullet_stats.bullet_speed / bullet_stats.orbit_distance;
 
 if instance_exists(bullet_stats.bullet_target) {
     var _xx = bullet_stats.bullet_target.x;

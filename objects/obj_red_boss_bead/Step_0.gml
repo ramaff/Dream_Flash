@@ -18,13 +18,13 @@ direction = point_direction(x, y, _xx, _yy)
 if active_attack != 0 {
 	speed = lerp(speed, bossmovespeed * 0.1, 0.1)
 } else {
-	speed = lerp(speed, bossmovespeed * 3, 0.1)
+	speed = lerp(speed, bossmovespeed * 2, 0.1)
 }
 
 var _dist = point_distance(x, y, _xx, _yy)
 //speed = min(speed, _dist)
 
-if _dist < bossmovespeed * 3.5 {
+if _dist < bossmovespeed * 2.5 {
 	path_position += 0.01
 }
 
@@ -46,7 +46,7 @@ if active_attack_delay <= 0 and active_attack_cooldown <= 0 and active_attack_du
 	
     if active_attack = 1 {
 		// Setup how many attacks per boss move, delay, etc
-		scr_Boss_Attack_Time_Setup_v2(1, 50, 1, 180, 120, 30);
+		scr_Boss_Attack_Time_Setup_v2(1, 50, 1, 240, 120, 30);
 		
 		// Can set up the initial pattern direction
 		// patternDirection = scr_Soul_Point();

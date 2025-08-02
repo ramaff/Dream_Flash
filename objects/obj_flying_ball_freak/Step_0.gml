@@ -10,7 +10,7 @@ scr_Boss_Height_Bob(30, 1, 0);
 scr_Boss_Wobble("Horizontal", 0.4, 1, 0);
 
 var _tar_x = obj_Soul_Parent.perX + scr_Wave(-300, 300, 4, 0);
-var _tar_y = obj_Soul_Parent.perY - 240 - boss_height
+var _tar_y = obj_Soul_Parent.perY - 150 - boss_height
 
 direction = point_direction(x, y, _tar_x, _tar_y)
 speed = min(bossmovespeed * 2, point_distance(x, y, _tar_x, _tar_y))

@@ -37,7 +37,7 @@ if active_attack_delay <= 0 and active_attack_cooldown <= 0 and active_attack_du
 	
 	if active_attack = 2 {
 		// Setup how many attacks per boss move, delay, etc
-		scr_Boss_Attack_Time_Setup_v2(4, 50, 60, 180, 120, 0);
+		scr_Boss_Attack_Time_Setup_v2(4, 50, 60, 240, 120, 0);
 		
 		// Can set up the initial pattern direction
     }
@@ -88,9 +88,9 @@ if active_attack_delay <= 0 and pattern_cooldown <= 0 and pattern_count > 0 {
 		attack_stats.bullet_type = "obj_decreasing_homing_bullet_school"
 		attack_stats.bullet_sprite = "spr_Glowy_Blue_Shot"
 		attack_stats.bullet_count = 1;
-		attack_stats.bullet_speed = bossbulletspeed * (1.35 + random(0.4))
+		attack_stats.bullet_speed = bossbulletspeed * (1.45 + random(0.3))
 		attack_stats.school_bullets = 3;
-		attack_stats.orbit_distance = 95;
+		attack_stats.orbit_distance = 105;
 		attack_stats.bullet_life_span = 360;
 		attack_stats.homing_speed = 1.5;
 		
@@ -134,7 +134,7 @@ if active_attack = 1 {
 } else if active_attack = 2 {
 	var _hold_frame = 1;
 	scr_Force_Hold_Frame(_hold_frame)
-	scr_Boss_Attack_Sprite_v2(spr_Wisp_Mask_Heart_Shoot, _hold_frame, 1, 4, 20);
+	scr_Boss_Attack_Sprite_v2(spr_Wisp_Mask_Heart_Shoot, _hold_frame, 1, 4, 10);
 	if image_index = _hold_frame {
 		scr_Boss_Wobble("Horizontal", 2, 0.4, 0)	
 	}
