@@ -17,7 +17,7 @@ if active_attack_delay <= 0 and active_attack_cooldown <= 0 and active_attack_du
 	
     if active_attack = 1 {
 		// Setup how many attacks per boss move, delay, etc
-		scr_Boss_Attack_Time_Setup_v2(1, 50, 1, 120, 30, 70);
+		scr_Boss_Attack_Time_Setup_v2(1, 50, 1, 120, 30, 90);
 		
 		// Can set up the initial pattern direction
 		// patternDirection = scr_Soul_Point();
@@ -26,13 +26,13 @@ if active_attack_delay <= 0 and active_attack_cooldown <= 0 and active_attack_du
 	// Hop leap attack setup example
 	if active_attack = 2 {
 		// 
-		scr_Boss_Attack_Time_Setup_v2(5, 30, 10, 120, 30, 10);
-		pattern_direction = scr_Soul_Point() - 60;
+		scr_Boss_Attack_Time_Setup_v2(3, 30, 10, 120, 30, 10);
+		pattern_direction = scr_Soul_Point() - 30;
     }
 	// Minion Spawn Example
 	if active_attack = 3 {
 		// Setup how many attacks per boss move, delay, etc
-		scr_Boss_Attack_Time_Setup_v2(1, 50, 1, 120, 30, 10);
+		scr_Boss_Attack_Time_Setup_v2(1, 110, 1, 120, 30, 30);
 		
 		// Can set up the initial pattern direction
 		// patternDirection = scr_Soul_Point();
@@ -70,13 +70,13 @@ if active_attack_delay <= 0 and pattern_cooldown <= 0 and pattern_count > 0 {
 		scr_Boss_Stretch("Vertical", 0.5);
 		
 		attack_stats.bullet_direction = scr_Boss_Bullet_Direction_Formula(pattern_direction, 10)
-		attack_stats.bullet_type = "obj_lob_bullet_v2"
+		attack_stats.bullet_type = "obj_normal_mallet_bullet"
 		attack_stats.bullet_sprite = "spr_Hammer_Bullet"
 		attack_stats.bullet_count = 1;
-		attack_stats.bullet_speed = bossbulletspeed * (1.6 + random(0.6));
+		attack_stats.bullet_speed = bossbulletspeed * (1.2 + random(0.8));
 		
-		attack_stats.bullet_lob_time = 40;
-		attack_stats.bullet_life_span = 202;
+		attack_stats.bullet_lob_time = 120 - (20 * pattern_count);
+		attack_stats.bullet_life_span = attack_stats.bullet_lob_time + 2;
 		
 		scr_boss_shoot_v2();
 		
@@ -136,8 +136,8 @@ if active_attack = 1 || active_attack = 3 {
 	if active_attack_duration = 1 {
 		active_attack = 2;
 			
-		scr_Boss_Attack_Time_Setup_v2(5, 60, 10, 120, 30, 10);
-		pattern_direction = scr_Soul_Point() - 60;
+		scr_Boss_Attack_Time_Setup_v2(3, 80, 20, 120, 30, 10);
+		pattern_direction = scr_Soul_Point() - 30;
 	}
 } else if active_attack = 2 {
 	var _hold_frame = 1;
