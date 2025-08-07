@@ -1,7 +1,7 @@
 /// @description Insert description here
 // You can write your code in this editor
 
-scr_Sound_Effect(sd_Boss_Kill);
+scr_Sound_Effect(snd_Bowling_Ball_Collide)
 
 with instance_create(x,y, obj_Dead_Boss) {
 	difficulty = -1;

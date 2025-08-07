@@ -1436,6 +1436,12 @@
         "recollectionExtraStats": "+20% Bullet/Shot Slowdown Aura +30% Shot Lifespan +2 Bliss",
         "recollectionDescription": "Bullets that get near the soul move 20% slower. No need to stress!"
     },
+    "P11": {
+        "recollectionString": "Photographic Memory",
+        "recollectionSprite": "spr_Photographic_Memory_Art",
+        "recollectionExtraStats": "+Snap Shots and Bullets in Place",
+        "recollectionDescription": "Cause soul shots and boss bullets to get stuck in time. They are still capable of doing damage during this time."
+    },
 
     "Q01": {
         "recollectionString": "No Brainer",
@@ -1570,8 +1576,8 @@
         "recollectionDescription": "Gives you a choice of 4 items that you previously picked up to give +2 stacks to."
     },
     "T05": {
-        "recollectionString": "Re-Trace my Steps",
-        "recollectionSprite": "spr_Hyper_Fixation_Art",
+        "recollectionString": "Retrace my Steps",
+        "recollectionSprite": "spr_Retrace_My_Steps_Art",
         "recollectionExtraStats": "+Free Teleport Back",
         "recollectionDescription": "Allows the soul to teleport back to it's original position after teleporting. This is free of charge and counts as a second teleport."
     },
@@ -1725,9 +1731,9 @@
     },
     "W06": {
         "recollectionString": "Astral Link",
-        "recollectionSprite": "spr_Clarity_Art",
-        "recollectionExtraStats": "+Field Clearing Teleport",
-        "recollectionDescription": "Clears every bullet on screen when teleporting for the first time in each boss battle."
+        "recollectionSprite": "spr_Astral_Link_Art",
+        "recollectionExtraStats": "+Perma Warp Portals",
+        "recollectionDescription": "Create a lingering rift in space when teleporting, allowing things to teleport between the two points."
     },
     
     "XA01": {
