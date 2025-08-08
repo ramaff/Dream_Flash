@@ -15,7 +15,7 @@ scr_Boss_Height_Setup(0);
 
 active_attack_cooldown = 60 / bossattackspeed;
 
-death_sprite = spr_boss_template_ko;
+death_sprite = spr_horror_stack_v2_cannon_ball_ko
 boss_palette = spr_boss_template_palette;
 boss_palette_index = champ;
 

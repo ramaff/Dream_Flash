@@ -13,6 +13,6 @@ scr_Boss_Size_Setup(0.5);
 // Needed for bobbing/boss shadows
 scr_Boss_Height_Setup(20);
 
-death_sprite = spr_boss_template_ko;
+death_sprite = spr_horror_stack_v2_leg_ball_ko
 boss_palette = spr_boss_template_palette;
 boss_palette_index = champ;

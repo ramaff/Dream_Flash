@@ -13,7 +13,7 @@ scr_Boss_Size_Setup(0.5);
 // Needed for bobbing/boss shadows
 scr_Boss_Height_Setup(60);
 
-death_sprite = spr_boss_template_ko;
+death_sprite = spr_red_boss_bead_ko
 boss_palette = spr_boss_template_palette;
 boss_palette_index = champ;
 
@@ -34,6 +34,8 @@ with instance_create_depth(x, y, depth, obj_yellow_boss_bead) {
 	boost = other.boost;
 	difficulty = global.floor[global.currentroom,24];	
 	scr_Boss_Height_Setup(60);
+	
+	death_sprite = spr_yellow_boss_bead_ko;
 }
 
 with instance_create_depth(x, y, depth, obj_blue_boss_bead) {
@@ -48,6 +50,8 @@ with instance_create_depth(x, y, depth, obj_blue_boss_bead) {
 	boost = other.boost;
 	difficulty = global.floor[global.currentroom,24];	
 	scr_Boss_Height_Setup(60);
+	
+	death_sprite = spr_blue_boss_bead_ko;
 }
 
 

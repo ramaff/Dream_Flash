@@ -19,6 +19,8 @@ if bosshealth <= bossmaxhealth * 0.75 and balls = 2 {
 		boost = other.boost;
 		difficulty = global.floor[global.currentroom,24];
 		scr_Boss_Height_Setup(90);
+		
+		death_sprite = spr_horror_stack_v2_flying_ball_ko
 	}
 	balls--;
 }
@@ -32,6 +34,8 @@ if bosshealth <= bossmaxhealth * 0.5 and balls = 1 {
 		boost = other.boost;
 		difficulty = global.floor[global.currentroom,24];	
 		scr_Boss_Height_Setup(40);
+		
+		death_sprite = spr_horror_stack_v2_leg_ball_ko
 	}
 	balls--;
 }
