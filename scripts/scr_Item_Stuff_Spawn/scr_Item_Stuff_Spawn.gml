@@ -33,6 +33,10 @@ function scr_Item_Stuff_Spawn() {
 			}
 	    }
 	}
+	
+	if global.P[11] > 0 {
+		instance_create_depth(x,y, depth, obj_Photographic_Memory)
+	}
 
 
 }

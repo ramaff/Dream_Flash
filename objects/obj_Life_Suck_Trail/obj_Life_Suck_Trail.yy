@@ -10,8 +10,8 @@
   "managed": true,
   "overriddenProperties": [],
   "parent": {
-    "name": "Misc Item Stuff and objects",
-    "path": "folders/Objects/Items/Misc Item Stuff and objects.yy",
+    "name": "Item Stuff",
+    "path": "folders/Objects/Item Stuff.yy",
   },
   "parentObjectId": null,
   "persistent": false,

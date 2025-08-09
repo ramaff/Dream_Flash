@@ -10,7 +10,7 @@
   "overriddenProperties": [],
   "parent": {
     "name": "Gem Item Stuff",
-    "path": "folders/Objects/Items/Gem Item Stuff.yy",
+    "path": "folders/Objects/Item Stuff/Gem Item Stuff.yy",
   },
   "parentObjectId": {
     "name": "obj_Soul_Minion_Parent",
