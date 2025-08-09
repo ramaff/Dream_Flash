@@ -7,6 +7,8 @@ function scr_Minion_Shot_Stats(){
 	minion_dir = 0;
 	minion_speed = 0;
 	minion_accuracy = 1; 
+	minion_height = 0;
+	minion_attack_cooldown = 90;
 	
 	champ = other.champ;
 	boss_palette = other.boss_palette;

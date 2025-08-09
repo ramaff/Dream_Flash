@@ -3106,6 +3106,7 @@
     {"id":{"name":"obj_Boss_Maw_Spit","path":"objects/obj_Boss_Maw_Spit/obj_Boss_Maw_Spit.yy",},},
     {"id":{"name":"bg_Feel_Dungeon_Tiles","path":"sprites/bg_Feel_Dungeon_Tiles/bg_Feel_Dungeon_Tiles.yy",},},
     {"id":{"name":"spr_Cant_Help_It_Art","path":"sprites/spr_Cant_Help_It_Art/spr_Cant_Help_It_Art.yy",},},
+    {"id":{"name":"obj_perma_hurt","path":"objects/obj_perma_hurt/obj_perma_hurt.yy",},},
     {"id":{"name":"spr_Hopeless","path":"sprites/spr_Hopeless/spr_Hopeless.yy",},},
     {"id":{"name":"spr_horror_stack_v2_leg_ball_shoot","path":"sprites/spr_horror_stack_v2_leg_ball_shoot/spr_horror_stack_v2_leg_ball_shoot.yy",},},
     {"id":{"name":"scr_Beam_Create","path":"scripts/scr_Beam_Create/scr_Beam_Create.yy",},},

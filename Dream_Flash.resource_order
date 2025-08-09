@@ -848,6 +848,7 @@
     {"name":"obj_hit_box_soul_decoy","order":8,"path":"objects/obj_hit_box_soul_decoy/obj_hit_box_soul_decoy.yy",},
     {"name":"obj_homing_echo_bullet_v2","order":21,"path":"objects/obj_homing_echo_bullet_v2/obj_homing_echo_bullet_v2.yy",},
     {"name":"spr_Cant_Help_It_Art","order":1,"path":"sprites/spr_Cant_Help_It_Art/spr_Cant_Help_It_Art.yy",},
+    {"name":"obj_perma_hurt","order":4,"path":"objects/obj_perma_hurt/obj_perma_hurt.yy",},
     {"name":"spr_horror_stack_v2_leg_ball_shoot","order":6,"path":"sprites/spr_horror_stack_v2_leg_ball_shoot/spr_horror_stack_v2_leg_ball_shoot.yy",},
     {"name":"obj_spin_bullet_v2","order":5,"path":"objects/obj_spin_bullet_v2/obj_spin_bullet_v2.yy",},
     {"name":"spr_storm_cloud_minion_sprite_dump","order":4,"path":"sprites/spr_storm_cloud_minion_sprite_dump/spr_storm_cloud_minion_sprite_dump.yy",},
