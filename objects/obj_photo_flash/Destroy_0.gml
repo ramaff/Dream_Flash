@@ -42,6 +42,7 @@ for(_i = 0; _i < _bullets; _i++) {
 				bullet_stats.bullet_stun_time = _bullet.bulletstuntime
 				bullet_stats.bullet_sleep = _bullet.bulletsleep
 				bullet_stats.bullet_sleep_time = _bullet.bulletsleeptime
+				bullet_stats.bullet_poison_omen = 0;
 			}
 			catch (_exception) {
 				instance_destroy();	

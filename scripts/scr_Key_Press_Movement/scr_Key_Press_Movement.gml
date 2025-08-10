@@ -23,8 +23,8 @@ function scr_Key_Press_Movement(_vspeed = 0, _hspeed = 0, _max_speed = 5, _accel
 	var _max_hspeed = abs(lengthdir_x(_max_speed, _current_direction))
 	var _max_vspeed = abs(lengthdir_y(_max_speed, _current_direction))
 	
-	var _h_reduce = _max_hspeed / _max_speed * _friction
-	var _v_reduce = _max_vspeed / _max_speed * _friction
+	var _h_reduce = (_max_hspeed / _max_speed) * _friction
+	var _v_reduce = (_max_vspeed / _max_speed) * _friction
 
 	_hspeed = scr_Converge(_hspeed, 0, _h_reduce)
 	_vspeed = scr_Converge(_vspeed, 0, _v_reduce)
