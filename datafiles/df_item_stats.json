@@ -466,7 +466,7 @@
         "Beast_Credit": 0.5
     },
     "E14": {
-        "recollectionString": "Seeing Double",
+        "recollectionString": "Lingering Feeling",
         "recollectionSprite": "spr_Dream_Glitching_Item",
         "recollectionExtraStats": "+Teleport Glitch Souls",
         "recollectionDescription": "Teleporting generates a duplicate soul that lingers and shoots for a bit.",
@@ -1730,9 +1730,9 @@
         "recollectionDescription": "Clears every bullet on screen when teleporting for the first time in each boss battle."
     },
     "W06": {
-        "recollectionString": "Astral Link",
+        "recollectionString": "Lasting Impression",
         "recollectionSprite": "spr_Astral_Link_Art",
-        "recollectionExtraStats": "+Perma Warp Portals",
+        "recollectionExtraStats": "+Astral Link Portals",
         "recollectionDescription": "Create a lingering rift in space when teleporting, allowing things to teleport between the two points."
     },
     

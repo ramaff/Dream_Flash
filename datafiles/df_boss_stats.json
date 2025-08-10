@@ -2013,7 +2013,7 @@
             },
             "Champ 3": {
                 "Name": "Masked High Bliss Spirit",
-                "Recollection_Sprite": "reco_High_Hope_Spirit",
+                "Recollection_Sprite": "reco_High_Bliss_Spirit",
                 "Health_Phase_1": 135,
                 "Health_Phase_2": 2450
             }
