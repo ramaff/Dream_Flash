@@ -19,7 +19,7 @@ if warp_back {
 	if _hs = 0 and _vs = 0 {
 		move_point = dir;
 	}
-	var _angle_offset = -angle_difference(dir, move_point) / 5 * _soul_speed;
+	var _angle_offset = -angle_difference(dir, move_point) / 10 * _soul_speed;
 	var _angle_add = -1 * _angle_offset;
 	var _seg_dist = 40
 	var _segs = floor(dist) / _seg_dist
@@ -32,7 +32,7 @@ if warp_back {
 		var _pxx = _xs + lengthdir_x(cd, dir + _angle_offset)
 		var _pyy = _ys + lengthdir_y(cd, dir + _angle_offset)
 		_angle_offset += _angle_add / _segs
-		draw_sprite_ext(spr_Diamond_Part, 0, _pxx, _pyy, 0.4, 0.4, 0, _blend, 1)
+		draw_sprite_ext(spr_Retrace_Part, 0, _pxx, _pyy, 0.4, 0.4, dir + _angle_offset, _blend, 1)
 		
 		_blend = make_color_rgb(_red_amount, 100, 255)
 		_red_amount -= 160 / _segs

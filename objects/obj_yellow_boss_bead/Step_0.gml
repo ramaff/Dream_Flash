@@ -56,7 +56,7 @@ if active_attack_delay <= 0 and active_attack_cooldown <= 0 and active_attack_du
 	
     if active_attack = 1 {
 		// Setup how many attacks per boss move, delay, etc
-		scr_Boss_Attack_Time_Setup_v2(6, 50, 20, 240, 120, 0);
+		scr_Boss_Attack_Time_Setup_v2(6, 50, 20, 300, 120, 0);
 		
 		// Can set up the initial pattern direction
 		// patternDirection = scr_Soul_Point();

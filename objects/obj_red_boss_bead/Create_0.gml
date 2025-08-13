@@ -27,12 +27,14 @@ with instance_create_depth(x, y, depth, obj_yellow_boss_bead) {
 	champ = 0.1;
 	scr_Boss_Stats_Setup(2);
 	
+	active_attack_cooldown = 120;
+	
 	target = _tar
 	_tar = id;
 	
 	champ = other.champ;
 	boost = other.boost;
-	difficulty = global.floor[global.currentroom,24];	
+	difficulty = 0;	
 	scr_Boss_Height_Setup(60);
 	
 	death_sprite = spr_yellow_boss_bead_ko;
@@ -43,12 +45,14 @@ with instance_create_depth(x, y, depth, obj_blue_boss_bead) {
 	champ = 0.1;
 	scr_Boss_Stats_Setup(2);
 	
+	active_attack_cooldown = 180;
+	
 	target = _tar
 	_tar = id;
 	
 	champ = other.champ;
 	boost = other.boost;
-	difficulty = global.floor[global.currentroom,24];	
+	difficulty = 0;	
 	scr_Boss_Height_Setup(60);
 	
 	death_sprite = spr_blue_boss_bead_ko;

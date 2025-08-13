@@ -73,7 +73,7 @@ function scr_Soul_Teleport(_evasion = false, _costs_money = true, _xx = mouse_x,
 		if soulCurrentHorizontalSpeed = 0 and soulCurrentVerticalSpeed = 0 {
 			move_point = dir;	
 		}
-		var _angle_offset = -angle_difference(dir, move_point) / 5 * _soul_speed;
+		var _angle_offset = -angle_difference(dir, move_point) / 10 * _soul_speed;
 		var _angle_add = -1 * _angle_offset;
 		var _seg_dist = 40
 		var _segs = floor(dist) / _seg_dist

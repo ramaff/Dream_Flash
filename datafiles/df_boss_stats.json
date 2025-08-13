@@ -536,17 +536,17 @@
         "Boss 016": {
             "Name": "Horror Stack",
             "Recollection_Sprite": "reco_Horror_Stack",
-            "Health_Phase_1": 140,
+            "Health_Phase_1": 160,
             "Health_Phase_2": 0,
             "Defense_Phase_1": 0,
             "Defense_Phase_2": 0,
-            "Boss_Danger": 2,
+            "Boss_Danger": 1.5,
             "Bullet_Speed": 3.3,
             "Move_Speed": 2.1,
             "recollectionDescription": "These three bosses combine into one menace.",
         
             "Champ 0.1": {
-                "Health_Phase_1": 70,
+                "Health_Phase_1": 80,
                 "Health_Phase_2": 0,
                 "Final_Phase": 1
             },
@@ -1243,10 +1243,10 @@
             "Name": "Gutter Ball",
             "Recollection_Sprite": "reco_Gutter_Ball",
             "Health_Phase_1": 270,
-            "Health_Phase_2": 250,
+            "Health_Phase_2": 0,
             "Defense_Phase_1": 1,
             "Defense_Phase_2": 1,
-            "Boss_Danger": 3,
+            "Boss_Danger": 1.5,
             "recollectionDescription": "Rolls around the field chasing after the soul. Can perform high scoring attacks.",
             "Bullet_Speed": 2.5,
             "Move_Speed": 2.5,
@@ -1511,7 +1511,7 @@
         "Boss 059": {
             "Name": "Will o' the wisp",
             "Recollection_Sprite": "reco_sleep_walker",
-            "Health_Phase_1": 200,
+            "Health_Phase_1": 170,
             "Defense_Phase_1": 0,
             "Boss_Danger": 1,
             "Bullet_Speed": 2.5,
@@ -1523,7 +1523,7 @@
                 "Defense_Phase_1": 20
             },
         
-            "recollectionDescription": "Irresponsible pet owner."
+            "recollectionDescription": "Eternal Flame guarded by an indestructible mask."
         },
 
         "Boss 060": {
@@ -1547,7 +1547,7 @@
             "Recollection_Sprite": "reco_sleep_walker",
             "Health_Phase_1": 100,
             "Defense_Phase_1": 0,
-            "Boss_Danger": 1,
+            "Boss_Danger": 1.5,
             "Bullet_Speed": 2.5,
             "Move_Speed": 2.5,
             "Palette": "spr_sleep_walker_palette",
@@ -1557,13 +1557,13 @@
                 "Defense_Phase_1": 0
             },
         
-            "recollectionDescription": "Irresponsible pet owner."
+            "recollectionDescription": "Trio of bosses that each have uniquely viscous attacks."
         },
 
         "Boss 062": {
             "Name": "Whack a Soul",
             "Recollection_Sprite": "reco_sleep_walker",
-            "Health_Phase_1": 200,
+            "Health_Phase_1": 190,
             "Defense_Phase_1": 0,
             "Boss_Danger": 1,
             "Bullet_Speed": 2.5,
@@ -1575,7 +1575,7 @@
                 "Defense_Phase_1": 20
             },
         
-            "recollectionDescription": "Irresponsible pet owner."
+            "recollectionDescription": "Evasive foe that digs up the field and spits up mallets."
         },
 
         "Boss 064": {

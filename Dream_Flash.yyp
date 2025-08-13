@@ -2352,6 +2352,7 @@
     {"id":{"name":"spr_Sharp_Shooter_Shot","path":"sprites/spr_Sharp_Shooter_Shot/spr_Sharp_Shooter_Shot.yy",},},
     {"id":{"name":"scr_Handle_File_Backup","path":"scripts/scr_Handle_File_Backup/scr_Handle_File_Backup.yy",},},
     {"id":{"name":"obj_sticky_slide_bullet_v2","path":"objects/obj_sticky_slide_bullet_v2/obj_sticky_slide_bullet_v2.yy",},},
+    {"id":{"name":"spr_Retrace_Part","path":"sprites/spr_Retrace_Part/spr_Retrace_Part.yy",},},
     {"id":{"name":"obj_Wandering_Spike_Trail","path":"objects/obj_Wandering_Spike_Trail/obj_Wandering_Spike_Trail.yy",},},
     {"id":{"name":"spr_Frag_Shot","path":"sprites/spr_Frag_Shot/spr_Frag_Shot.yy",},},
     {"id":{"name":"spr_Soul_Chain","path":"sprites/spr_Soul_Chain/spr_Soul_Chain.yy",},},

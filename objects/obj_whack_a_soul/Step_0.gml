@@ -125,7 +125,7 @@ if active_attack = 1 || active_attack = 3 {
 	var _hold_frame = 4;
 	scr_Force_Hold_Frame(_hold_frame, 40)
 	scr_Boss_Attack_Sprite_v2(spr_whack_a_soul_up_and_down, _hold_frame, 4, 4, 40);
-	if active_attack_duration = 50 {
+	if active_attack_duration = 70 {
 		var _new_pos = scr_Boss_Teleport_v2_Return(-128, -1, 300)
 		x = _new_pos[0]
 		y = _new_pos[1]
