@@ -27,7 +27,7 @@ with instance_create_depth(x, y, depth, obj_yellow_boss_bead) {
 	champ = 0.1;
 	scr_Boss_Stats_Setup(2);
 	
-	active_attack_cooldown = 120;
+	active_attack_cooldown = 180;
 	
 	target = _tar
 	_tar = id;
@@ -45,7 +45,7 @@ with instance_create_depth(x, y, depth, obj_blue_boss_bead) {
 	champ = 0.1;
 	scr_Boss_Stats_Setup(2);
 	
-	active_attack_cooldown = 180;
+	active_attack_cooldown = 300;
 	
 	target = _tar
 	_tar = id;

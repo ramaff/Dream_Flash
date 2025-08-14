@@ -91,7 +91,10 @@ function scr_Boss_Choose(roomNum, exclude, difficultyAdd = 0) {
 		bossform = _base_pool[irandom(array_length(_base_pool) - 1)]
 	}
 	
+	var _minion_picked = false
+	
 	if array_length(_mini_boss_pool) > 0 and scr_Chance(4) {
+		_minion_picked = true;
 		bossform = _mini_boss_pool[irandom(array_length(_mini_boss_pool) - 1)]
 	}
 
@@ -723,6 +726,9 @@ function scr_Boss_Choose(roomNum, exclude, difficultyAdd = 0) {
 	//baseDiff = difficulty;
 
 	difficulty += (1 * global.boost);
+	if !_minion_picked and global.boost = 2 {
+		difficulty += 2;
+	}
 	difficulty += (0.25 * global.boost) * floor(baseDiff - 1);
 
 	global.difficultyReward = difficulty;
