@@ -93,7 +93,7 @@ function scr_Floor_Generation() {
 				for (k = 4; k < 8; k++) {
 					global.floor[list[| k],4] = spr_flash_diagonal_brick_g;	
 				}
-				for (k = 9; k < 11; k++) {
+				for (k = 9; k < 10; k++) {
 					global.floor[list[| k],4] = spr_flash_grass_g
 				}
 	        }
