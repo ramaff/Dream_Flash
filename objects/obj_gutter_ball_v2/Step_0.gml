@@ -112,7 +112,7 @@ if active_attack_delay <= 0 and pattern_cooldown <= 0 and pattern_count > 0 {
 			
 				minion_count = 3;
 				minion_type = obj_pin_v2
-				minion_health = bossmaxhealth / 20;
+				minion_health = 18;
 				minion_height = 800 + random(200);
 				minion_attack_cooldown = 90;
 				//minion_spawn_animation = spr_pocket_minion_spawn

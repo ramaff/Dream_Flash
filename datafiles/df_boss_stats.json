@@ -1242,7 +1242,7 @@
         "Boss 043": {
             "Name": "Gutter Ball",
             "Recollection_Sprite": "reco_Gutter_Ball",
-            "Health_Phase_1": 270,
+            "Health_Phase_1": 250,
             "Health_Phase_2": 0,
             "Defense_Phase_1": 1,
             "Defense_Phase_2": 1,

@@ -73,7 +73,7 @@ if global.currentchapter = 4 {
 }
 
 	
-if roomBG = spr_flash_marble_brick_g || roomBG = spr_flash_diagonal_brick_g || roomBG = spr_shop_g || roomBG = bg_Mind_Chamber_Tiles || roomBG = bg_State_Tiles {
+if roomBG = spr_flash_marble_brick_g || roomBG = spr_flash_diagonal_brick_g || roomBG = spr_shop_g || roomBG = spr_chamber_g || roomBG = spr_channel_g {
 	deepest_layer.sprite_index = spr_flash_night_bg;
 	forward_layer.sprite_index = spr_flash_day_lights;
 	

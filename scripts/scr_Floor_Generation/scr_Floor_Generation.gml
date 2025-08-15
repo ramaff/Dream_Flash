@@ -10,6 +10,7 @@ function scr_Floor_Generation() {
 	var i = 1;
 	for(i = 1; i <= (global.maxRooms); i++) {
 		//show_debug_message("scr_Floor_Generation: " + string(i))
+		
 	    roomAttempt = 0;
 	    if i = 4 {
 	        nextRoomType = choose("Weapon Field", "Misc Field");
@@ -256,8 +257,8 @@ function scr_Floor_Generation() {
 	    }
 		
 		if global.floor[i,0] = "Chamber" {
-	        global.floor[i,4] = bg_Mind_Chamber_Tiles;
-	        global.floor[i,3] += 128 + (64 * global.currentchapter);
+	        global.floor[i,4] = spr_chamber_g;
+	        global.floor[i,3] = 1280;
 			
 			itemNumChoice = scr_Item_Field_Count(1)
 			
@@ -290,8 +291,8 @@ function scr_Floor_Generation() {
 		}
 		
 		if global.floor[i,0] = "State" {
-	        global.floor[i,4] = bg_State_Tiles;
-	        global.floor[i,3] += 64 + (64 * global.currentchapter);
+	        global.floor[i,4] = spr_channel_g;
+	        global.floor[i,3] = 1280;
 			
 			itemNumChoice = scr_Item_Field_Count(1)
 			
@@ -307,7 +308,19 @@ function scr_Floor_Generation() {
 	        }
 		}
 	
-		global.floor[i,3] = min(scr_Floor_To_Nearest(global.floor[i,3], 256), 1536);
+		global.floor[i,3] = min(scr_Floor_To_Nearest(global.floor[i,3], 256), 1280); // 1536 in the future?
+		
+		var _bg = sprite_get_name(global.floor[i,4]) 
+		
+		var _large_bgs = {
+			"spr_flash_base_g": spr_flash_base_g_xl,
+			"spr_flash_diagonal_brick_g": spr_flash_diagonal_brick_g_xl,
+			"spr_flash_marble_brick_g": spr_flash_marble_brick_g_xl
+		}
+		
+		if global.floor[i, 3] = 1280 and variable_struct_exists(_large_bgs, _bg) {
+			global.floor[i,4] = variable_struct_get(_large_bgs, _bg);
+		}
 
 		//global.floor[i,3] = 1408;
 		//global.floor[i,4] = bg_Feel_Dungeon_Tiles;
