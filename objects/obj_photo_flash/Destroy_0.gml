@@ -62,6 +62,8 @@ for(_i = 0; _i < _shots; _i++) {
 	var _cloned_shot_stats = variable_clone(_shot.shot_stats)
 	with instance_create_depth(_shot.x, _shot.y, _shot.depth, obj_Lesser_Soul_Shot) {
 		followtarget = noone;
+		target = noone;
+		otarget = noone;
 		bullet_hits = _shot.bullet_hits;
 		shot_boss_id = _shot.shot_boss_id;
 		

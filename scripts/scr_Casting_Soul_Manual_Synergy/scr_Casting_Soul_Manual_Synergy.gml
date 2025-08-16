@@ -25,7 +25,19 @@ function scr_Casting_Soul_Manual_Synergy(_cw){
 			//Shot_Off_State = 1;
 		}
 		if _cw.Shot_Beam > 0 and _casting {
+			
+			_cw.Shot_Power = _cw.Shot_Power * 2;
+			
+			_cw.Shot_Extra_Stats = [scr_Dupe_Struct(_cw)];
 		
+			//_cw.Shot_Beam = 0;
+			_cw.Shot_Speed = max(_cw.Shot_Speed, 5);
+			
+			_cw.Shot_Extra_Stats[0].Shot_Mouse = false
+			_cw.Shot_Extra_Stats[0].Shot_Beam = 1
+			_cw.Shot_Extra_Stats[0].Shot_Power_Level = _cw.Shot_Power;
+			_cw.Shot_Extra_Stats[0].Shot_Life_Span = 15;
+			
 			_cw.Shot_Type = "obj_Beam_Caster_Shot";
 			_cw.Shot_Life_Span = 180;
 			_cw.Shot_Size = _cw.Shot_Size / 2;

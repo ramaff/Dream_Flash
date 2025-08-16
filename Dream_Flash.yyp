@@ -2761,6 +2761,7 @@
     {"id":{"name":"spr_whack_a_soul_hole_open_up","path":"sprites/spr_whack_a_soul_hole_open_up/spr_whack_a_soul_hole_open_up.yy",},},
     {"id":{"name":"spr_Bleeding_Soul_Shot","path":"sprites/spr_Bleeding_Soul_Shot/spr_Bleeding_Soul_Shot.yy",},},
     {"id":{"name":"spr_Brightside_Hearts_Art","path":"sprites/spr_Brightside_Hearts_Art/spr_Brightside_Hearts_Art.yy",},},
+    {"id":{"name":"scr_Weapon_Barrage","path":"scripts/scr_Weapon_Barrage/scr_Weapon_Barrage.yy",},},
     {"id":{"name":"spr_Magical_Soul","path":"sprites/spr_Magical_Soul/spr_Magical_Soul.yy",},},
     {"id":{"name":"spr_Magical_Soul_Shot","path":"sprites/spr_Magical_Soul_Shot/spr_Magical_Soul_Shot.yy",},},
     {"id":{"name":"spr_Electro_Soul","path":"sprites/spr_Electro_Soul/spr_Electro_Soul.yy",},},

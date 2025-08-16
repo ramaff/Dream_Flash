@@ -30,6 +30,25 @@ var h2 = 0;
 properSize = global.floor[global.currentroom,3];
 properBG = global.floor[global.currentroom,4];
 
+var _bg = sprite_get_name(properBG) 
+		
+var _large_bgs = {
+	"spr_flash_base_g": spr_flash_base_g_xl,
+	"spr_flash_diagonal_brick_g": spr_flash_diagonal_brick_g_xl,
+	"spr_flash_marble_brick_g": spr_flash_marble_brick_g_xl,
+	"spr_feel_base_g": spr_feel_base_g_xl,
+	"spr_feel_brick_g": spr_feel_brick_g_xl,
+	"spr_dream_base_g": spr_dream_base_g_xl,
+	"spr_dream_brick_g": spr_dream_brick_g_xl,
+	"spr_nightmare_base_g": spr_nightmare_base_g_xl,
+	"spr_nightmare_brick_g": spr_nightmare_brick_g_xl,
+	"spr_dungeon_brick_g": spr_dungeon_brick_g_xl,
+}
+		
+if global.floor[global.currentroom, 3] >= 1280 and variable_struct_exists(_large_bgs, _bg) {
+	global.floor[global.currentroom,4] = variable_struct_get(_large_bgs, _bg);
+}
+
 properTileSet = ts_Flash_Tiles;
 properTileFall = ts_Flash_Fall_Out;
 

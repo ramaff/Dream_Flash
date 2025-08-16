@@ -111,7 +111,7 @@ function scr_State_Weapon_Mod(){
 			speed = shot_stats.Shot_Speed;
 		
 		}
-		if scr_State_Active_Check("Casting") and shot_stats.Shot_Beam = 0 {
+		if scr_State_Active_Check("Casting") /*and shot_stats.Shot_Beam = 0*/ {
 			
 
 			shot_stats.Shot_Size = shot_stats.Shot_Size * 1.25;
@@ -126,7 +126,7 @@ function scr_State_Weapon_Mod(){
 			
 			speed = shot_stats.Shot_Speed;
 
-			if shot_stats.Shot_Melee = false {
+			if shot_stats.Shot_Melee = false and shot_stats.Shot_Beam = 0 {
 				shot_stats.Shot_Extra_Stats = [scr_Dupe_Struct(shot_stats)];
 			}
 			
