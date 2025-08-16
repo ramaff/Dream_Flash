@@ -7,12 +7,12 @@ function scr_Boss_Setup_Again() {
 	        global.floor[i,9] = global.boost; // Boss Boost or Third Item
 	        global.floor[i,10] = global.difficultyReward
 	        if global.floor[i,9] = 2 {
-	            global.floor[i,3] += 64;
+	            //global.floor[i,3] += 64;
 	        }
 	        roomUp = irandom(global.floor[i,10]);
 	        repeat(floor(roomUp / 4)) {
 	            if roomUp >= 4 {
-	                global.floor[i,3] += 64;
+	                //global.floor[i,3] += 64;
 	            }
 	            roomUp -= 4
 	        }

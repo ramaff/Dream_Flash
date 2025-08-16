@@ -22,7 +22,8 @@ function scr_Soul_Spiritual_Add() {
 	            }
 	        }
 	        global.floor[badSpiritRoom,26] = scr_Spirit_Choose("Bad");
-	         global.floor[badSpiritRoom,3] += 128;
+	        //global.floor[badSpiritRoom,3] += 128;
+			//global.floor[badSpiritRoom,3] = scr_Floor_To_Nearest(global.floor[badSpiritRoom,3], 256)
 	        global.evilSpiritRoom = badSpiritRoom;
 	    }
 	}

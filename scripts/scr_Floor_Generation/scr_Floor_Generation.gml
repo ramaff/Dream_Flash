@@ -102,10 +102,10 @@ function scr_Floor_Generation() {
 				
 				var k = 1
 				for (k = 1; k < 3; k++) {
-					global.floor[list[| k],4] = bg_Dungeon_Tiles;	
+					global.floor[list[| k],4] = spr_dungeon_brick_g;	
 				}
 				for (k = 4; k < 10; k++) {
-					global.floor[list[| k],4] = bg_Feel_Dungeon_Tiles;	
+					global.floor[list[| k],4] = spr_feel_brick_g;	
 				}
 	        }
         
@@ -113,10 +113,10 @@ function scr_Floor_Generation() {
 				
 				var k = 1
 				for (k = 1; k < 4; k++) {
-					global.floor[list[| k],4] = bg_Dungeon_Tiles;	
+					global.floor[list[| k],4] = spr_dungeon_brick_g;	
 				}
 				for (k = 6; k < 12; k++) {
-					global.floor[list[| k],4] = bg_Dream_Dungeon_Tiles;	
+					global.floor[list[| k],4] = spr_dream_brick_g;	
 				}
 	        }
 			
@@ -124,10 +124,10 @@ function scr_Floor_Generation() {
 				
 				var k = 1
 				for (k = 1; k < 3; k++) {
-					global.floor[list[| k],4] = bg_Dungeon_Tiles;	
+					global.floor[list[| k],4] = spr_dungeon_brick_g;	
 				}
 				for (k = 4; k < 10; k++) {
-					global.floor[list[| k],4] = bg_Nightmare_Dungeon_Tiles;	
+					global.floor[list[| k],4] = spr_nightmare_brick_g;	
 				}
 				
 	        }
@@ -308,7 +308,10 @@ function scr_Floor_Generation() {
 	        }
 		}
 	
-		global.floor[i,3] = min(scr_Floor_To_Nearest(global.floor[i,3], 256), 1280); // 1536 in the future?
+		//Print_DF($"PRE: _i: {i}, floor size: {global.floor[i,3]}")
+		global.floor[i,3] = scr_Floor_To_Nearest(global.floor[i,3], 256); // 1536 in the future?
+		global.floor[i,3] = clamp(global.floor[i,3], 1024, 1280)
+		//Print_DF($"POST: _i: {i}, floor size: {global.floor[i,3]}")
 		
 		var _bg = sprite_get_name(global.floor[i,4]) 
 		
@@ -317,11 +320,15 @@ function scr_Floor_Generation() {
 			"spr_flash_diagonal_brick_g": spr_flash_diagonal_brick_g_xl,
 			"spr_flash_marble_brick_g": spr_flash_marble_brick_g_xl,
 			"spr_feel_base_g": spr_feel_base_g_xl,
+			"spr_feel_brick_g": spr_feel_brick_g_xl,
 			"spr_dream_base_g": spr_dream_base_g_xl,
+			"spr_dream_brick_g": spr_dream_brick_g_xl,
 			"spr_nightmare_base_g": spr_nightmare_base_g_xl,
+			"spr_nightmare_brick_g": spr_nightmare_brick_g_xl,
+			"spr_dungeon_brick_g": spr_dungeon_brick_g_xl,
 		}
 		
-		if global.floor[i, 3] = 1280 and variable_struct_exists(_large_bgs, _bg) {
+		if global.floor[i, 3] >= 1280 and variable_struct_exists(_large_bgs, _bg) {
 			global.floor[i,4] = variable_struct_get(_large_bgs, _bg);
 		}
 
