@@ -93,7 +93,7 @@ function scr_Floor_Generation() {
 				for (k = 4; k < 8; k++) {
 					global.floor[list[| k],4] = spr_flash_diagonal_brick_g;	
 				}
-				for (k = 9; k < 10; k++) {
+				for (k = 9; k < 9; k++) {
 					global.floor[list[| k],4] = spr_flash_grass_g
 				}
 	        }
@@ -315,7 +315,10 @@ function scr_Floor_Generation() {
 		var _large_bgs = {
 			"spr_flash_base_g": spr_flash_base_g_xl,
 			"spr_flash_diagonal_brick_g": spr_flash_diagonal_brick_g_xl,
-			"spr_flash_marble_brick_g": spr_flash_marble_brick_g_xl
+			"spr_flash_marble_brick_g": spr_flash_marble_brick_g_xl,
+			"spr_feel_base_g": spr_feel_base_g_xl,
+			"spr_dream_base_g": spr_dream_base_g_xl,
+			"spr_nightmare_base_g": spr_nightmare_base_g_xl,
 		}
 		
 		if global.floor[i, 3] = 1280 and variable_struct_exists(_large_bgs, _bg) {
