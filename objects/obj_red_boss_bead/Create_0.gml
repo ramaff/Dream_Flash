@@ -21,6 +21,7 @@ boss_path = pth_Boss_Beads_Path_1
 path_position = 0;
 
 var _tar = id;
+tail = noone;
 
 with instance_create_depth(x, y, depth, obj_yellow_boss_bead) {
 	boss_value = 61
@@ -31,6 +32,7 @@ with instance_create_depth(x, y, depth, obj_yellow_boss_bead) {
 	
 	target = _tar
 	_tar = id;
+	other.tail = id;
 	
 	champ = other.champ;
 	boost = other.boost;
@@ -48,7 +50,7 @@ with instance_create_depth(x, y, depth, obj_blue_boss_bead) {
 	active_attack_cooldown = 300;
 	
 	target = _tar
-	_tar = id;
+	target.tail = id;
 	
 	champ = other.champ;
 	boost = other.boost;
@@ -58,4 +60,17 @@ with instance_create_depth(x, y, depth, obj_blue_boss_bead) {
 	death_sprite = spr_blue_boss_bead_ko;
 }
 
+var _i;
 
+for(_i = 0; _i < 16; _i++) {
+	with instance_create_depth(x, y, depth + 10, obj_maze_bead) {
+		target = other.id;
+		offset = (_i * 0.02) - 0.14;
+		boss_path = pth_Boss_Beads_Path_1
+		
+		image_xscale = 0.5;
+		image_yscale = 0.5;
+		
+		image_alpha = 1.5 - abs(offset * 10)
+	}
+}

@@ -1543,7 +1543,7 @@
         },
 
         "Boss 061": {
-            "Name": "Boss Beads",
+            "Name": "Bash Beads",
             "Recollection_Sprite": "reco_sleep_walker",
             "Health_Phase_1": 100,
             "Defense_Phase_1": 0,

@@ -23,3 +23,5 @@ boss_path = pth_Boss_Beads_Path_1
 path_position = 0;
 
 target = noone;
+
+tail = noone;
