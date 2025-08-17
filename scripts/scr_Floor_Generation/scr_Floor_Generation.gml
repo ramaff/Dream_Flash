@@ -14,7 +14,6 @@ function scr_Floor_Generation() {
 	    roomAttempt = 0;
 	    if i = 4 {
 	        nextRoomType = choose("Weapon Field", "Misc Field");
-	        nextRoomType = choose("Weapon Field", "Misc Field");
 	    } 
 	    if i = 11 {
 			if global.floor[4,0] = "Weapon Field" {
@@ -173,7 +172,7 @@ function scr_Floor_Generation() {
 	    if global.floor[i,0] = "Strength Field" || global.floor[i,0] = "Vitality Field" || global.floor[i,0] = "Dexterity Field" || global.floor[i,0] = "Essence Field" || global.floor[i,0] = "Perception Field" {
 	        itemNumChoice = scr_Item_Field_Count(2)
 			
-	        itemNumPick = 1;
+	        // itemNumPick = 1;
 	        for(var j = 1; j <= itemNumChoice; j++) {
 				
 	            global.floor[i,j+6] = scr_Class_Item_Choose(global.floor[i,0],0);
@@ -183,7 +182,7 @@ function scr_Floor_Generation() {
 	    if global.floor[i,0] = "Misc Field" {
 	        itemNumChoice = scr_Item_Field_Count(2)
 			
-	        itemNumPick = 1;
+	        // itemNumPick = 1;
 	        for(var j = 1; j <= itemNumChoice; j++) {
 				
 	            global.floor[i,j+6] = scr_Misc_Field_Pool_Pick()
@@ -192,7 +191,7 @@ function scr_Floor_Generation() {
 	    if global.floor[i,0] = "Weapon Field" {
 	        itemNumChoice = scr_Item_Field_Count(2)
 			
-	        itemNumPick = 1;
+	        // itemNumPick = 1;
 		
 			//itemNumChoice = 4;
 	        for(var j = 1; j <= itemNumChoice; j++) {
@@ -262,7 +261,7 @@ function scr_Floor_Generation() {
 			
 			itemNumChoice = scr_Item_Field_Count(1)
 			
-	        itemNumPick = 1;
+	        // itemNumPick = 1;
 	        for(var j = 1; j <= itemNumChoice; j++) {
 				
 	            global.floor[i,j+6] = scr_Misc_Field_Pool_Pick();

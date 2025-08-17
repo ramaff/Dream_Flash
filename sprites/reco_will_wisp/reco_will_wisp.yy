@@ -1,11 +1,11 @@
 {
   "resourceType": "GMSprite",
   "resourceVersion": "1.0",
-  "name": "spr_blue_boss_bead",
-  "bbox_bottom": 226,
-  "bbox_left": 94,
-  "bbox_right": 244,
-  "bbox_top": 109,
+  "name": "reco_will_wisp",
+  "bbox_bottom": 316,
+  "bbox_left": 25,
+  "bbox_right": 335,
+  "bbox_top": 42,
   "bboxMode": 0,
   "collisionKind": 4,
   "collisionTolerance": 0,
@@ -13,14 +13,15 @@
   "edgeFiltering": false,
   "For3D": false,
   "frames": [
-    {"resourceType":"GMSpriteFrame","resourceVersion":"1.1","name":"9b9abbb6-f2fd-482c-8ec6-8e76302d9cad",},
+    {"resourceType":"GMSpriteFrame","resourceVersion":"1.1","name":"c3125351-a819-4e01-9df8-af9f9c15ad2d",},
   ],
   "gridX": 0,
   "gridY": 0,
   "height": 350,
   "HTile": false,
   "layers": [
-    {"resourceType":"GMImageLayer","resourceVersion":"1.0","name":"98f6c1f4-dcad-449a-8560-70ee520a46d9","blendMode":0,"displayName":"default","isLocked":false,"opacity":100.0,"visible":true,},
+    {"resourceType":"GMImageLayer","resourceVersion":"1.0","name":"0eeadf2c-29ba-405b-8fe1-c8de760363db","blendMode":0,"displayName":"Layer 1","isLocked":false,"opacity":100.0,"visible":true,},
+    {"resourceType":"GMImageLayer","resourceVersion":"1.0","name":"569cb078-3292-4ce4-829e-7ba27a70bacd","blendMode":0,"displayName":"default","isLocked":false,"opacity":100.0,"visible":true,},
   ],
   "nineSlice": {
     "resourceType": "GMNineSliceData",
@@ -48,14 +49,14 @@
   },
   "origin": 4,
   "parent": {
-    "name": "Boss Beads Group",
-    "path": "folders/Sprites/Boss Sprites/Flash Bosses/Boss Beads Group.yy",
+    "name": "Reco Bosses",
+    "path": "folders/Sprites/Boss Sprites/Reco Bosses.yy",
   },
   "preMultiplyAlpha": false,
   "sequence": {
     "resourceType": "GMSequence",
     "resourceVersion": "1.4",
-    "name": "spr_blue_boss_bead",
+    "name": "reco_will_wisp",
     "autoRecord": true,
     "backdropHeight": 768,
     "backdropImageOpacity": 0.5,
@@ -77,7 +78,7 @@
     "timeUnits": 1,
     "tracks": [
       {"resourceType":"GMSpriteFramesTrack","resourceVersion":"1.0","name":"frames","builtinName":0,"events":[],"inheritsTrackColour":true,"interpolation":1,"isCreationTrack":false,"keyframes":{"resourceType":"KeyframeStore<SpriteFrameKeyframe>","resourceVersion":"1.0","Keyframes":[
-            {"resourceType":"Keyframe<SpriteFrameKeyframe>","resourceVersion":"1.0","Channels":{"0":{"resourceType":"SpriteFrameKeyframe","resourceVersion":"1.0","Id":{"name":"9b9abbb6-f2fd-482c-8ec6-8e76302d9cad","path":"sprites/spr_blue_boss_bead/spr_blue_boss_bead.yy",},},},"Disabled":false,"id":"b4c4a2e5-21cf-4978-99c2-504dc1578387","IsCreationKey":false,"Key":0.0,"Length":1.0,"Stretch":false,},
+            {"resourceType":"Keyframe<SpriteFrameKeyframe>","resourceVersion":"1.0","Channels":{"0":{"resourceType":"SpriteFrameKeyframe","resourceVersion":"1.0","Id":{"name":"c3125351-a819-4e01-9df8-af9f9c15ad2d","path":"sprites/reco_will_wisp/reco_will_wisp.yy",},},},"Disabled":false,"id":"15950590-6d23-4b9c-a6d5-f22b9d71cb67","IsCreationKey":false,"Key":0.0,"Length":1.0,"Stretch":false,},
           ],},"modifiers":[],"spriteId":null,"trackColour":0,"tracks":[],"traits":0,},
     ],
     "visibleRange": null,

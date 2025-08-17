@@ -535,7 +535,7 @@
 
         "Boss 016": {
             "Name": "Horror Stack",
-            "Recollection_Sprite": "reco_Horror_Stack",
+            "Recollection_Sprite": "reco_horror_stack_v2",
             "Health_Phase_1": 160,
             "Health_Phase_2": 0,
             "Defense_Phase_1": 0,
@@ -549,45 +549,6 @@
                 "Health_Phase_1": 80,
                 "Health_Phase_2": 0,
                 "Final_Phase": 1
-            },
-            "Champ 1": {
-                "Name": "Horror Totem",
-                "Recollection_Sprite": "spr_Horror_Totem",
-                "Health_Phase_1": 200,
-                "Health_Phase_2": 125
-            },
-            "Champ 1.1": {
-                "Health_Phase_1": 125,
-                "Health_Phase_2": 0,
-                "Final_Phase": 1
-            },
-            "Champ 2": { 
-                "Name":  "Metal Stack",
-                "Recollection_Sprite": "spr_Metal_Stack",
-                "Health_Phase_1": 200,
-                "Health_Phase_2": 150,
-                "Bullet_Speed": 4.2
-            },
-            "Champ 2.1": {
-                "Health_Phase_1": 150,
-                "Health_Phase_2": 0,
-                "Final_Phase": 1,
-                "Bullet_Speed": 4.2
-            },
-            "Champ 8": {
-                "Name": "Horror Tower",
-                "Recollection_Sprite": "spr_Tower_Stack",
-                "Health_Phase_1": 200,
-                "Health_Phase_2": 175,
-                "Defense_Phase_1": 1,
-                "Defense_Phase_2": 1,
-                "Bullet_Speed": 4.2
-            },
-            "Champ 8.1": {
-                "Health_Phase_1": 175,
-                "Health_Phase_2": 0,
-                "Final_Phase": 1,
-                "Bullet_Speed": 4.2
             }
         },
 
@@ -1241,7 +1202,7 @@
 
         "Boss 043": {
             "Name": "Gutter Ball",
-            "Recollection_Sprite": "reco_Gutter_Ball",
+            "Recollection_Sprite": "reco_gutter_ball_v2",
             "Health_Phase_1": 250,
             "Health_Phase_2": 0,
             "Defense_Phase_1": 1,
@@ -1249,13 +1210,7 @@
             "Boss_Danger": 1.5,
             "recollectionDescription": "Rolls around the field chasing after the soul. Can perform high scoring attacks.",
             "Bullet_Speed": 2.5,
-            "Move_Speed": 2.5,
-            "Champ 1": {
-                "Name": "Alley Ball",
-                "Recollection_Sprite": "spr_Alley_Gutterball",
-                "Health_Phase_1": 320,
-                "Health_Phase_2": 300
-            }
+            "Move_Speed": 2.5
         },
 
         "Boss 044": {
@@ -1509,9 +1464,9 @@
         },
 
         "Boss 059": {
-            "Name": "Will o' the wisp",
-            "Recollection_Sprite": "reco_sleep_walker",
-            "Health_Phase_1": 170,
+            "Name": "Will o' the Wisp",
+            "Recollection_Sprite": "reco_will_wisp",
+            "Health_Phase_1": 130,
             "Defense_Phase_1": 0,
             "Boss_Danger": 1,
             "Bullet_Speed": 2.5,
@@ -1523,7 +1478,7 @@
                 "Defense_Phase_1": 20
             },
         
-            "recollectionDescription": "Eternal Flame guarded by an indestructible mask."
+            "recollectionDescription": "Eternal Flame guarded by the will of an indestructible mask."
         },
 
         "Boss 060": {
@@ -1544,7 +1499,7 @@
 
         "Boss 061": {
             "Name": "Bash Beads",
-            "Recollection_Sprite": "reco_sleep_walker",
+            "Recollection_Sprite": "reco_bash_beads",
             "Health_Phase_1": 100,
             "Defense_Phase_1": 0,
             "Boss_Danger": 1.5,
@@ -1562,7 +1517,7 @@
 
         "Boss 062": {
             "Name": "Whack a Soul",
-            "Recollection_Sprite": "reco_sleep_walker",
+            "Recollection_Sprite": "reco_whack_a_soul",
             "Health_Phase_1": 190,
             "Defense_Phase_1": 0,
             "Boss_Danger": 1,
