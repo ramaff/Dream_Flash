@@ -1210,7 +1210,7 @@
             "Boss_Danger": 1.5,
             "recollectionDescription": "Rolls around the field chasing after the soul. Can perform high scoring attacks.",
             "Bullet_Speed": 2.5,
-            "Move_Speed": 2.5
+            "Move_Speed": 1.9
         },
 
         "Boss 044": {

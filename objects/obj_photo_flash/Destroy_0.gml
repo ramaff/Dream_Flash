@@ -66,6 +66,7 @@ for(_i = 0; _i < _shots; _i++) {
 		otarget = noone;
 		bullet_hits = _shot.bullet_hits;
 		shot_boss_id = _shot.shot_boss_id;
+		shot_id = _shot.shot_id;
 		
 		shot_stats = _cloned_shot_stats
 		sprite_index = _shot.sprite_index;

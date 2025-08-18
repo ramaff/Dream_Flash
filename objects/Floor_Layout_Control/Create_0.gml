@@ -26,7 +26,10 @@ global.evilSpiritRoom = 0;
 
 global.chaptertime = 0;
 
-for (i = 0; i <= 99; i++) {
+i = 0;
+j = 0;
+
+for (i = 0; i <= 49; i++) {
 	for (j = 0; j <= 33; j++) {	
 		global.floor[i,j] = 0;
 	}
@@ -59,12 +62,12 @@ global.bosstimer = 0;
 
 if global.loadrun = 0 || global.doneLoading = 1 {
 
-	for (i = 0; i <= 99; i++) {
+	for (i = 0; i <= 49; i++) {
 	    global.floor[i,0] = "Spawn"; // Room Type
 	    global.floor[i,1] = 0; // Map X Position
 	    global.floor[i,2] = 0; // Map Y Position
 	    global.floor[i,3] = 1024; // Room Size
-	    global.floor[i,4] = bg_Flash_Tiles; // Room Background
+	    global.floor[i,4] = spr_flash_base_g; // Room Background
 	    global.floor[i,5] = 0; // Room X Offset
 	    global.floor[i,6] = 0; // Room Y Offset
 	    global.floor[i,7] = ""; // Boss Type or Item Type

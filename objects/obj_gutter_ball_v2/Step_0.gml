@@ -110,7 +110,7 @@ if active_attack_delay <= 0 and pattern_cooldown <= 0 and pattern_count > 0 {
 			
 				scr_Screen_Shake(5, 5)
 			
-				minion_count = 3;
+				minion_count = 4;
 				minion_type = obj_pin_v2
 				minion_health = 18;
 				minion_height = 800 + random(200);

@@ -2770,6 +2770,7 @@
     {"id":{"name":"spr_Clingy_Soul","path":"sprites/spr_Clingy_Soul/spr_Clingy_Soul.yy",},},
     {"id":{"name":"spr_Clingy_Shot","path":"sprites/spr_Clingy_Shot/spr_Clingy_Shot.yy",},},
     {"id":{"name":"spr_Barrier_Soul","path":"sprites/spr_Barrier_Soul/spr_Barrier_Soul.yy",},},
+    {"id":{"name":"snd_Camera_Flash","path":"sounds/snd_Camera_Flash/snd_Camera_Flash.yy",},},
     {"id":{"name":"spr_Watching_Flower","path":"sprites/spr_Watching_Flower/spr_Watching_Flower.yy",},},
     {"id":{"name":"spr_Weakening_Soul","path":"sprites/spr_Weakening_Soul/spr_Weakening_Soul.yy",},},
     {"id":{"name":"reco_wall_king","path":"sprites/reco_wall_king/reco_wall_king.yy",},},

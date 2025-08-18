@@ -7,6 +7,8 @@ alarm[1] = alarm[0] - 120;
 image_alpha = 0;
 var _frame_id = noone;
 
+scr_Sound_Effect(snd_Camera_Flash)
+
 with instance_create_depth(x, y, depth, obj_photo_frame) {
 	image_angle = other.image_angle
 	image_xscale = 1;
