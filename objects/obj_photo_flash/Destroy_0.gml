@@ -71,6 +71,7 @@ for(_i = 0; _i < _shots; _i++) {
 		sprite_index = _shot.sprite_index;
 		image_index = _shot.image_index;
 		image_angle = _shot.image_angle;
+		direction = _shot.direction;
 		image_xscale = _shot.image_xscale;
 		image_yscale = _shot.image_yscale;
 		shot_stats.Shot_Speed = 0;
@@ -79,6 +80,8 @@ for(_i = 0; _i < _shots; _i++) {
 		alarm[0] = 350;
 		shot_stats.Shot_Pierce = 999;
 		image_speed = 0;
+		
+		shot_stats.Shot_Angular_Velocity = 0;
 		
 		shot_stats.Shot_Extra_Stats = noone;
 		shot_stats.Shot_Extra_Hits_Frequency = 60;
