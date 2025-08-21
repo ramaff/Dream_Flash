@@ -39,7 +39,8 @@ function scr_soul_shot_bullet_hit_v2(_bullet_stats){
 			variable_struct_set(bullet_hits, other.id, other.id)
 	
 			if shot_stats.Shot_Rebound_Type = 1 {
-				scr_Weapon_Rebound_Mouse(other.speed);
+				var _mdir = point_direction(x, y, mouse_x, mouse_y)
+				scr_Weapon_Rebound_Mouse(other.speed + 1, other.image_xscale, other.sprite_index, _mdir - 180);
     
 				shot_stats.Shot_Pierce--;
 				if shot_stats.Shot_Pierce <= 0 {
@@ -208,7 +209,8 @@ function scr_Soul_Shot_Bullet_Hit(){
 			variable_struct_set(bullet_hits, other.id, other.id)
 	
 			if shot_stats.Shot_Rebound_Type = 1 {
-				scr_Weapon_Rebound_Mouse();
+				var _mdir = point_direction(x, y, mouse_x, mouse_y)
+				scr_Weapon_Rebound_Mouse(other.speed + 1, other.image_xscale, other.sprite_index, _mdir - 180);
     
 				shot_stats.Shot_Pierce--;
 				if shot_stats.Shot_Pierce <= 0 {

@@ -1733,7 +1733,7 @@
         "recollectionString": "Lasting Impression",
         "recollectionSprite": "spr_Astral_Link_Art",
         "recollectionExtraStats": "+Astral Link Portals",
-        "recollectionDescription": "Create a lingering rift in space when teleporting, allowing things to teleport between the two points."
+        "recollectionDescription": "Create a lingering rift in space when teleporting, allowing things to teleport between the two points. Projectiles that pass through the portals gain momentum, and can hit enemies again."
     },
     
     "XA01": {

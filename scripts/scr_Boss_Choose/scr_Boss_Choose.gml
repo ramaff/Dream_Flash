@@ -67,7 +67,7 @@ function scr_Boss_Choose(roomNum, exclude, difficultyAdd = 0) {
 	var _state_pool = [81,82,83,84,86,87,89,90]
 	
 	if global.currentchapter = 1 {
-	    _base_pool = [1,3,5,9,12,13,14,18,19,20,24,25,37,42,44,57,58,98]
+	    _base_pool = [1,3,5,9,12,14,18,19,20,24,25,37,42,44,57,58,98]
 		_mini_boss_pool = [16, 43, 59, 61, 62]
 		
 	}
