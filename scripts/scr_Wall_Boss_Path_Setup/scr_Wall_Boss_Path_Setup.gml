@@ -1,5 +1,5 @@
 function scr_Wall_Boss_Path_Setup() {
-	bossPath = Medium_Wall_Crawl_A;
+	/*bossPath = Medium_Wall_Crawl_A;
 
 	if global.roomSizeX > 1024 {
 	    bossPath = Wall_Crawl_64;
@@ -24,7 +24,7 @@ function scr_Wall_Boss_Path_Setup() {
 	}
 	if global.roomSizeX > 1472 {
 	    bossPath = Wall_Crawl_512;
-	}
+	} */
 
 	bossPath = Wall_Path;
 
@@ -35,21 +35,21 @@ function scr_Wall_Boss_Path_Setup() {
 
 	sizeadd = ((global.roomSizeX - 1024) / 2) - 16;
 
-	path_add_point(global.wallPath, 2528 + sizeadd, 2048, 100);
-	path_add_point(global.wallPath, 2480 + sizeadd, 1984, 100);
-	path_add_point(global.wallPath, 2112, 1616 - sizeadd, 100);
-	path_add_point(global.wallPath, 2048, 1568 - sizeadd, 100);
-	path_add_point(global.wallPath, 1984, 1616 - sizeadd, 100);
-	path_add_point(global.wallPath, 1616 - sizeadd, 1984, 100);
+	path_add_point(global.wallPath, 2528 - 848 + sizeadd, 2048 - 1248, 100);
+	path_add_point(global.wallPath, 2480 - 848 + sizeadd, 1984 - 1248, 100);
+	path_add_point(global.wallPath, 2112 - 848, 1616 - sizeadd - 1248, 100);
+	path_add_point(global.wallPath, 2048 - 848, 1568 - sizeadd - 1248, 100);
+	path_add_point(global.wallPath, 1984 - 848, 1616 - sizeadd - 1248, 100);
+	path_add_point(global.wallPath, 1616 - 848 - sizeadd, 1984 - 1248, 100);
 
-	path_add_point(global.wallPath, 1568 - sizeadd, 2048, 100);
+	path_add_point(global.wallPath, 1568 - 848 - sizeadd, 2048 - 1248, 100);
 
-	path_add_point(global.wallPath, 1616 - sizeadd, 1984, 100);
-	path_add_point(global.wallPath, 1984, 1616 - sizeadd, 100);
-	path_add_point(global.wallPath, 2048, 1568 - sizeadd, 100);
-	path_add_point(global.wallPath, 2112, 1616 - sizeadd, 100);
-	path_add_point(global.wallPath, 2480 + sizeadd, 1984, 100);
-	path_add_point(global.wallPath, 2528 + sizeadd, 2048, 100);
+	path_add_point(global.wallPath, 1616 - 848 - sizeadd, 1984 - 1248, 100);
+	path_add_point(global.wallPath, 1984 - 848, 1616 - sizeadd - 1248, 100);
+	path_add_point(global.wallPath, 2048 - 848, 1568 - sizeadd - 1248, 100);
+	path_add_point(global.wallPath, 2112 - 848, 1616 - sizeadd - 1248, 100);
+	path_add_point(global.wallPath, 2480 - 848 + sizeadd, 1984 - 1248, 100);
+	path_add_point(global.wallPath, 2528 - 848 + sizeadd, 2048 - 1248, 100);
 
 	bossPath = global.wallPath;
 

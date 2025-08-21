@@ -26,7 +26,7 @@
   "origin": 0,
   "parent": {
     "name": "Dream BGs",
-    "path": "folders/Sprites/Background/Dream BGs.yy",
+    "path": "folders/Sprites/Background/v1/Dream BGs.yy",
   },
   "preMultiplyAlpha": false,
   "sequence": {
@@ -57,7 +57,7 @@
             {"resourceType":"Keyframe<SpriteFrameKeyframe>","resourceVersion":"1.0","Channels":{"0":{"resourceType":"SpriteFrameKeyframe","resourceVersion":"1.0","Id":{"name":"e41fd114-e594-4dcf-b267-eda21a182b5b","path":"sprites/bg_Dream_Alt/bg_Dream_Alt.yy",},},},"Disabled":false,"id":"e3dbac57-d06c-4d1f-bcd9-cb6879b668fb","IsCreationKey":false,"Key":0.0,"Length":1.0,"Stretch":false,},
           ],},"modifiers":[],"spriteId":null,"trackColour":0,"tracks":[],"traits":0,},
     ],
-    "visibleRange": {"x":0.0,"y":0.0,},
+    "visibleRange": null,
     "volume": 1.0,
     "xorigin": 0,
     "yorigin": 0,

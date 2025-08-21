@@ -24,7 +24,11 @@ function scr_Shot_Lobbing_Draw(){
 	}
 
 	if shot_stats.Shot_Lobbing_Tilt != 0 {
-		image_angle -= fall_speed * shot_stats.Shot_Lobbing_Tilt;
-		image_angle -= wobble * shot_stats.Shot_Lobbing_Tilt;
+		var _mirror = 1;
+		if hspeed < 0 {
+			_mirror = -1;	
+		}
+		image_angle -= fall_speed * shot_stats.Shot_Lobbing_Tilt * _mirror;
+		image_angle -= wobble * shot_stats.Shot_Lobbing_Tilt * _mirror;
 	}
 }

@@ -7,25 +7,25 @@ var soundLevel = global.gameMusic / 100;
 
 if global.currentchapter = 1 {
     musicType = Flash_Theme;
-	if global.bosscount > 0 {
+	if scr_Boss_Fight() {
 		musicType = Flash_Theme_Combat;	
 	}
 }
 if global.currentchapter = 2 {
     musicType = Feel_Theme;
-	if global.bosscount > 0 {
+	if scr_Boss_Fight() {
 		musicType = Feel_Theme_Combat;	
 	}
 }
 if global.currentchapter = 3 {
     musicType = Dream_Theme;
-	if global.bosscount > 0 {
+	if scr_Boss_Fight() {
 		musicType = Dream_Theme_Combat;	
 	}
 }
 if global.currentchapter >= 4 {
     musicType = Nightmare_Theme;
-	if global.bosscount > 0 {
+	if scr_Boss_Fight() {
 		musicType = Nightmare_Theme_Combat;	
 	}
 }

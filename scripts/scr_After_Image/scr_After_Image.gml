@@ -6,6 +6,8 @@ function scr_After_Image(lifespan = 10, shrink = true, fade = false, _blend = ot
 		shrinking = shrink;
 		fading = fade;
 		sprite_index = other.sprite_index;
+		image_index = other.image_index;
+		image_speed = 0;
 		size = other.image_xscale;
 		image_xscale = other.image_xscale;
 		image_yscale = other.image_yscale;

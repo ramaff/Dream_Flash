@@ -5,3 +5,7 @@
 function scr_Round_To_Nearest(value = 3, interval = 5){
 	return interval * round(value / interval);
 }
+
+function scr_Floor_To_Nearest(value = 3, interval = 5){
+	return interval * floor(value / interval);
+}

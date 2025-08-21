@@ -73,6 +73,8 @@ function scr_Default_Attack_Settings() {
     
 	    minion_count = 1;
 	    minion_type = noone;
+		minion_height = 0;
+		minion_attack_cooldown = 90;
 	    minion_maxhealth = bossmaxhealth;
 	    minion_health = bossmaxhealth;
 	    minion_power = bosspower;

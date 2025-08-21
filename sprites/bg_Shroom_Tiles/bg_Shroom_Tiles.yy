@@ -26,7 +26,7 @@
   "origin": 0,
   "parent": {
     "name": "Feel BG's",
-    "path": "folders/Sprites/Background/Feel BG's.yy",
+    "path": "folders/Sprites/Background/v1/Feel BG's.yy",
   },
   "preMultiplyAlpha": false,
   "sequence": {

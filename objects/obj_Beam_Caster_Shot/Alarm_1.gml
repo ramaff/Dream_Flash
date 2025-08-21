@@ -13,8 +13,14 @@ shot_stats.Shot_Soul_Maintain = 0;
 
 shot_stats.Shot_Angle = dir - 90;
 
-if shotextrahitssprite[4] = spr_Safety_Scissors_Shot {
-	shot_stats.Shot_Angle = dir;	
+if variable_struct_exists(shot_stats, "Shot_Extra_Stats") {
+	if is_array(shot_stats.Shot_Extra_Stats) {
+		if array_length(shot_stats.Shot_Extra_Stats) > 0 {
+			if shot_stats.Shot_Extra_Stats[0].Shot_Sprite = "spr_Safety_Scissors_Shot" {
+				shot_stats.Shot_Angle = dir;	
+			}
+		}
+	}
 }
 
 event_inherited();

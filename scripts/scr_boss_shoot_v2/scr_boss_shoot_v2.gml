@@ -37,6 +37,22 @@ function scr_shoot_bullets(_attack_stats, _xx, _yy) {
 				_c_bull = id
 		    }
 		}
+		
+		var _ang = 0;
+		repeat(_attack_stats.school_bullets) {
+		    with instance_create(_xx, _yy, obj_school_bullet_v2) {
+				bullet_stats = variable_clone(_attack_stats)
+		        scr_bullet_shoot_properties_v2(bullet_stats);
+
+				bullet_stats.orbit_angle = _ang
+				direction = bullet_stats.orbit_angle;
+				if bullet_stats.bullet_direction_angle = 1 {
+					image_angle = direction;
+				}
+				bullet_stats.bullet_target = _c_bull
+		    }
+			_ang += 360 / _attack_stats.school_bullets
+		}
 	    _dir += _attack_stats.bullet_spread;
 	}
 	return _og_bull

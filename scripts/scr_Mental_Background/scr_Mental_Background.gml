@@ -19,12 +19,12 @@ function scr_Mental_Background(){
 		bgType = "Nightmare";	
 	}
 			
-	if roomBG = bg_Cave_Tiles || roomBG = bg_Depths_Tiles || roomBG = bg_Flash_Dungeon_Tiles || roomBG = bg_Feel_Dungeon_Tiles  || roomBG = bg_Dream_Dungeon_Tiles  || roomBG = bg_Dungeon_Tiles || roomBG = bg_Safe_Room_Tiles || roomBG = bg_Mind_Chamber_Tiles || roomBG = bg_State_Tiles {
+	if roomBG = bg_Cave_Tiles || roomBG = bg_Depths_Tiles || roomBG = bg_Flash_Dungeon_Tiles || roomBG = bg_Feel_Dungeon_Tiles  || roomBG = bg_Dream_Dungeon_Tiles  || roomBG = bg_Dungeon_Tiles || roomBG = spr_shop_g || roomBG = bg_Mind_Chamber_Tiles || roomBG = bg_State_Tiles {
 		bgType = "None"
 	}
 	
 	if bgType = "Flash" {
-		global.mentalBackground = layer_background_create(global.backLayer, spr_Mental_Background);
+		global.mentalBackground = layer_background_create(global.backLayer, spr_flash_day_bg);
 	}
 	if bgType = "Feel" {
 		global.mentalBackground = layer_background_create(global.backLayer, spr_Mental_Background_Feel);
@@ -41,4 +41,5 @@ function scr_Mental_Background(){
 	layer_background_vtiled(global.mentalBackground, true);
 	
 	layer_hspeed(global.backLayer,1);
+	layer_vspeed(global.backLayer,-1);
 }

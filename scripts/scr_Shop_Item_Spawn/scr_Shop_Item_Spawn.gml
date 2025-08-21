@@ -55,25 +55,6 @@ function scr_Shop_Item_Spawn() {
 	    currItem++;
 	}
 
-/*
-	if item[currItem] != 0 and item[currItem] != "0" {
-	    with instance_create(1024 + 50,576,obj_Item_Parent) {
-	        path_start(Shop_Path,0.25,path_action_continue,1)
-	        path_position = other.currItem / other.totalItems;
-	        itemOrbit = 999;
-	        itemVal = other.item[other.currItem];
-	        if string_digits(itemVal) = itemVal {
-	            itemVal = real(itemVal);
-	        }
-	        itemData = 7 + other.currItem - 1;
-	        shop = 1;
-	        flashcost = baseCost;
-	    }
-	}
-    
-	    currItem++;
-		*/
-	//}
 
 	repeat(1)
 	{
@@ -164,6 +145,7 @@ function scr_Shop_Item_Spawn() {
 		                flashcost = ceil((baseCost * 0.9 + 5) / 5) * 5;
 						
 						scr_Initial_Item_Memory_Get()
+						event_user(0)
 			        }
 			    } else {
 		            with instance_create(1024,576, obj_Item_Parent) {
@@ -203,148 +185,6 @@ function scr_Shop_Item_Spawn() {
 		    //}
 		}
 	}
-	
-	/*
-
-	if global.currentchapter >= 2 {
-		if isweap[currItem] = 0 {
-		    if item[currItem] != 0 and item[currItem] != "0" {
-		        with instance_create(1024 + 50,576, obj_Item_Parent) {
-		            path_start(Shop_Path,0.25,path_action_continue,1)        
-		            path_position = other.currItem / other.totalItems;
-		            itemOrbit = 999;
-		            itemVal = other.item[other.currItem];
-					shop = 1;
-		            flashcost = 25;
-					if string_digits(itemVal) = itemVal {
-						itemVal = real(itemVal);
-					}
-		            if (is_real(itemVal)) {
-						weapon = 1
-						flashcost = 0; 
-			            shop = 0;
-						itemVal = floor(itemVal);
-		            }
-					if itemVal = "H01" {
-						flashcost = 15;	
-					}
-		            itemData = 7 + other.currItem - 1;
-		        }
-			}
-		} else {
-			if item[currItem] != 0 and item[currItem] != "0" {
-				if frac(item[currItem]) = 0 {
-			        with instance_create(1024 + 50,576, obj_Item_Parent) {
-			            path_start(Shop_Path,0.25,path_action_continue,1)        
-			            path_position = other.currItem / other.totalItems;
-			            itemOrbit = 999;
-			            itemVal = other.item[other.currItem] - frac(other.item[other.currItem]);
-		                if string_digits(itemVal) = itemVal {
-		                    itemVal = real(itemVal);
-		                }
-						if itemVal = "H01" {
-							flashcost = 15;	
-						}
-						itemVal = floor(itemVal);
-		                itemData = 7 + other.currItem - 1;
-		                shop = 1;
-						weapon = 1
-			            shop = 1;
-			            flashcost = 30;
-			        }
-				}
-				else {
-					with instance_create(1024 + 50,576, obj_Item_Parent) {
-			            path_start(Shop_Path,0.25,path_action_continue,1)        
-			            path_position = other.currItem / other.totalItems;
-			            itemOrbit = 999;
-			            weapon = 1;
-			            itemVal = other.item[other.currItem] - frac(other.item[other.currItem]);
-		                if string_digits(itemVal) = itemVal {
-		                    itemVal = real(itemVal);
-		                }
-						itemVal = floor(itemVal);
-			            itemData = 7 + other.currItem - 1;
-			            flashcost = 0; 
-			            shop = 0;
-			        }	
-				}
-			}
-		}
-	    currItem++;
-	}
-
-	if global.currentchapter >= 3 {
-		if isweap[currItem] = 0 {
-		    if item[currItem] != 0 and item[currItem] != "0" {
-		        with instance_create(1024 + 50,576, obj_Item_Parent) {
-		            path_start(Shop_Path,0.25,path_action_continue,1)        
-		            path_position = other.currItem / other.totalItems;
-		            itemOrbit = 999;
-		            itemVal = other.item[other.currItem];
-					shop = 1;
-		            feelcost = 25;
-		            if string_digits(itemVal) = itemVal {
-		                itemVal = real(itemVal);
-		            }
-		            if (is_real(itemVal)) {
-		                weapon = 1;
-						shop = 0;
-						feelcost = 0;
-						itemVal = floor(itemVal);
-		                //itemVal = other.item[other.currItem] - frac(other.item[other.currItem]);
-		            }
-					if itemVal = "H01" {
-						flashcost = 15;	
-					}
-				
-		            itemData = 7 + other.currItem - 1;
-		        }
-			}
-		} else {
-			if item[currItem] != 0 and item[currItem] != "0" {
-				if frac(item[currItem]) = 0 {
-			        with instance_create(1024 + 50,576, obj_Item_Parent) {
-			            path_start(Shop_Path,0.25,path_action_continue,1)        
-			            path_position = other.currItem / other.totalItems;
-			            itemOrbit = 999;
-			            itemVal = other.item[other.currItem] - frac(other.item[other.currItem]);
-			            if string_digits(itemVal) = itemVal {
-			                itemVal = real(itemVal);
-			            }
-						itemVal = floor(itemVal);
-						weapon = 1;
-			            itemData = 7 + other.currItem - 1;
-			            shop = 1;
-			            feelcost = 30;
-						if itemVal = "H01" {
-							flashcost = 15;	
-						}
-			        }
-				} else {
-					with instance_create(1024 + 50,576, obj_Item_Parent) {
-			            path_start(Shop_Path,0.25,path_action_continue,1)        
-			            path_position = other.currItem / other.totalItems;
-			            itemOrbit = 999;
-			            weapon = 1;
-			            itemVal = other.item[other.currItem] - frac(other.item[other.currItem]);
-		                if string_digits(itemVal) = itemVal {
-		                    itemVal = real(itemVal);
-		                }
-						itemVal = floor(itemVal);
-			            itemData = 7 + other.currItem - 1;
-			            flashcost = 0; 
-			            shop = 0;
-					
-		            
-			        }
-				}
-			}
-		}
-	    currItem++;
-	}
-	
-	*/
 
 
 

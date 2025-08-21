@@ -26,7 +26,7 @@
   "origin": 0,
   "parent": {
     "name": "Dream BGs",
-    "path": "folders/Sprites/Background/Dream BGs.yy",
+    "path": "folders/Sprites/Background/v1/Dream BGs.yy",
   },
   "preMultiplyAlpha": false,
   "sequence": {

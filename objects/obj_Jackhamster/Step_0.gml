@@ -545,7 +545,7 @@ if bossActiveAttackDelay[1] <= 0 and bossPatternCooldown <= 0 and bossPatternCou
 if state = states.jumping {
 	if jumpHeight > 10 || bossPatternCooldown > 0 {
 		//sprite_index = spr_Jello_Hop;
-	} else if jumpHeight <= 10 {
+	} else if jumpHeight <= 10 and bossActiveAttackDuration[1] < 10 {
 		if jumpDirection = "Down" {
 			state = states.normal;
 			//ghit = 1;

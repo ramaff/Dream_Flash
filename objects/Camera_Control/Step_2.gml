@@ -33,7 +33,7 @@ if instance_exists(Floor_Layout_Control) and global.layerdeep < 1 {
 
 	view_zoom = lerp(view_zoom, ideal_zoom, 0.0175)
 	
-	view_zoom = clamp(view_zoom, 0.5, 2);
+	view_zoom = clamp(view_zoom, 0.5, 1.5);
 	view_width_zoom = ideal_width / view_zoom;
 	view_height_zoom = ideal_height / view_zoom;
 } else {

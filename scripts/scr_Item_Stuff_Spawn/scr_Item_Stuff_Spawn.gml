@@ -1,12 +1,4 @@
 function scr_Item_Stuff_Spawn() {
-	/*
-	var gcount = 0;
-	var totalg = 0;
-	var i;
-	for(i = 0; i < 99; i++) {
-	    totalg += global.G[i];
-	} */
-
 
 	if global.V[4] > 0 {
 	    repeat(global.V[4]) {
@@ -32,6 +24,10 @@ function scr_Item_Stuff_Spawn() {
 				//scr_Basic_Teleport();
 			}
 	    }
+	}
+	
+	if global.P[11] > 0 {
+		instance_create_depth(x,y, depth, obj_Photographic_Memory)
 	}
 
 

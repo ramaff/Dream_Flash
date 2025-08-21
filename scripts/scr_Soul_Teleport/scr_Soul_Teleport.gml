@@ -1,7 +1,7 @@
 // Script assets have changed for v2.3.0 see
 // https://help.yoyogames.com/hc/en-us/articles/360005277377 for more information
 
-function scr_Soul_Teleport(_evasion = false){
+function scr_Soul_Teleport(_evasion = false, _costs_money = true, _xx = mouse_x, _yy = mouse_y){
 	
 	var _base_tele_delay = 120;
     
@@ -21,9 +21,6 @@ function scr_Soul_Teleport(_evasion = false){
 	var _ystar = y;
 	
 	TPCooldown = 30 + (30 * global.E[11]);
-	
-	var _xx = mouse_x;
-	var _yy = mouse_y;
 	
 	scr_Beast_Soul_Teleport(x, y, _xx, _yy);
 	
@@ -72,11 +69,12 @@ function scr_Soul_Teleport(_evasion = false){
 		
 	} else if _can_teleport {
 		var move_point = point_direction(0,0, soulCurrentHorizontalSpeed, soulCurrentVerticalSpeed);
+		var _soul_speed = point_distance(0,0, soulCurrentHorizontalSpeed, soulCurrentVerticalSpeed);
 		if soulCurrentHorizontalSpeed = 0 and soulCurrentVerticalSpeed = 0 {
 			move_point = dir;	
 		}
-		var _angle_offset = -angle_difference(dir, move_point)
-		var _angle_add = angle_difference(dir, move_point)
+		var _angle_offset = -angle_difference(dir, move_point) / 10 * _soul_speed;
+		var _angle_add = -1 * _angle_offset;
 		var _seg_dist = 40
 		var _segs = floor(dist) / _seg_dist
 	
@@ -133,7 +131,14 @@ function scr_Soul_Teleport(_evasion = false){
 	scr_E11();
 	scr_D12_Activate();
 	//scr_U03_Off();
+	
+	var _calc_tele_delay = (_base_tele_delay - tdelayconservation) / ((40 + global.soulperception + global.soulperceptionTemp) / 40) / (tdelayconservationfactor)
+	
+	scr_T05(_xstar, _ystar, _calc_tele_delay);
+	scr_W06(_xstar, _ystar, _xx, _yy);
     
-	tdelay += (_base_tele_delay - tdelayconservation) / ((40 + global.soulperception + global.soulperceptionTemp) / 40) / (tdelayconservationfactor);
-	senergy -= (30 - tenergyconservation) / ((40 + global.soulperception + global.soulperceptionTemp) / 40) / tenergyconservationfactor;
+	if _costs_money {
+		tdelay += _calc_tele_delay;
+		senergy -= (30 - tenergyconservation) / ((40 + global.soulperception + global.soulperceptionTemp) / 40) / tenergyconservationfactor;
+	}
 }

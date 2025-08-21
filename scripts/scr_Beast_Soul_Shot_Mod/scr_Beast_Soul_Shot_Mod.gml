@@ -3,6 +3,7 @@ function scr_Beast_Soul_Shot_Mod(_cw) {
 	if scr_State_Active_Check("Beast") and _cw.Shot_Off_State = 0 {
 
 		_cw.Shot_Count = _cw.Shot_Count * (3 * global.soulstateformboost);
+		_cw.Shot_Spread = min(10, _cw.Shot_Spread);
 		
 		if frac(_cw.Shot_Count) > 0 {
 			if scr_Chance(1 / frac(_cw.Shot_Count)) {
@@ -16,11 +17,11 @@ function scr_Beast_Soul_Shot_Mod(_cw) {
 		}
 		
 		if sWeaponTicker mod 2 = 0 {
-			_cw.Shot_Angle_Relative = 60;
-			_cw.Shot_Angular_Velocity = -2;
+			_cw.Shot_Angle_Relative = 45;
+			_cw.Shot_Angular_Velocity = -(100 / _cw.Shot_Life_Span);
 		} else {
-			_cw.Shot_Angle_Relative = -60;
-			_cw.Shot_Angular_Velocity = 2;
+			_cw.Shot_Angle_Relative = -45;
+			_cw.Shot_Angular_Velocity = 100 / _cw.Shot_Life_Span;
 		}
 		
 		_cw.Shot_State = "Beast";

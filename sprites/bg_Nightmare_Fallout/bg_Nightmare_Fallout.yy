@@ -26,7 +26,7 @@
   "origin": 0,
   "parent": {
     "name": "Nightmare BGs",
-    "path": "folders/Sprites/Background/Nightmare BGs.yy",
+    "path": "folders/Sprites/Background/v1/Nightmare BGs.yy",
   },
   "preMultiplyAlpha": false,
   "sequence": {

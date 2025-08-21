@@ -3,7 +3,7 @@ if global.bosscount > 0 {
 	global.floor[global.currentroom,0] = "Chamber"	
 }
 
-if instance_number(obj_Item_Parent) = 0 and global.bosscount < 1 and bossSpawn < 3 {
+if instance_number(obj_Item_Parent) = 0 and !scr_Boss_Fight() and bossSpawn < 3 {
 	
 	//global.bosscount = 1;
 	global.bosstimer = 3	
@@ -37,7 +37,7 @@ if instance_number(obj_Item_Parent) = 0 and global.bosscount < 1 and bossSpawn <
 }
 
 
-if global.bosscount < 1 and (bossSpawn = 0 || bossSpawn = 3) {
+if !scr_Boss_Fight() and (bossSpawn = 0 || bossSpawn = 3) {
 	
 	if !complete {
 		scr_Room_End();

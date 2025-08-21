@@ -38,16 +38,16 @@ instance_destroy(Gui_Control)
 with instance_create(x,y,Floor_Layout_Control) {
     global.floor[0,3] = 1024;
     if global.currentchapter = 1 {
-        global.floor[0,4] = bg_Flash_Tiles;
+        global.floor[0,4] = spr_flash_base_g;
     }
     if global.currentchapter = 2 {
-        global.floor[0,4] = bg_Feel_Tiles;
+        global.floor[0,4] = spr_feel_base_g;
     }
     if global.currentchapter = 3 {
-        global.floor[0,4] = bg_Dream_Tiles;
+        global.floor[0,4] = spr_dream_base_g;
     }
 	if global.currentchapter = 4 {
-        global.floor[0,4] = bg_Nightmare_Tiles;
+        global.floor[0,4] = spr_nightmare_base_g;
     }
 }
 

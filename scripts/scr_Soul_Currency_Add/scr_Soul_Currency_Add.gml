@@ -1,4 +1,12 @@
 function scr_Soul_Currency_Add(_return_recalls = false) {
+	
+	if difficulty <= 0 {
+		if _return_recalls == true {
+			return 0;
+		}
+		exit;
+	}
+	
 	var giveFac = 1;
 	if global.boost = 2 {
 	    giveFac = giveFac * 0.5;
