@@ -35,7 +35,7 @@ function scr_base_bullet_stats(_boss_bullet_speed, _bullet_power, _bullet_accura
 	return {
 		
 		bullet_type: "obj_basic_bullet_v2",
-		bullet_sprite: "spr_Glowy_Enemy_Shot",
+		bullet_sprite: "spr_red_bullet_v2",
 		bullet_speed: _boss_bullet_speed,
 		bullet_power: _bullet_power,
 		bullet_friction: 0,

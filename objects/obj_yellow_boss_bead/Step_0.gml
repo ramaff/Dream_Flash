@@ -77,7 +77,7 @@ if active_attack_delay <= 0 and pattern_cooldown <= 0 and pattern_count > 0 {
 		scr_Boss_Stretch("Vertical", 0.5);
 		
 		attack_stats.bullet_direction = scr_Boss_Bullet_Direction_Formula(180, 60)
-		attack_stats.bullet_sprite = "spr_Glowy_Enemy_Shot";
+		attack_stats.bullet_sprite = "spr_red_bullet_v2";
 		attack_stats.bullet_count = 3;
 		attack_stats.bullet_spread = 15;
 		attack_stats.bullet_speed = bossbulletspeed * (1.9 + random(0.4))

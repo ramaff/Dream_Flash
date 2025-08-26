@@ -554,7 +554,7 @@ if active_attack_delay <= 0 and pattern_cooldown <= 0 and pattern_count > 0 {
 				_dir += 60;
 			}
 		} else {
-			attack_stats.bullet_sprite = "spr_Glowy_Enemy_Shot"
+			attack_stats.bullet_sprite = "spr_red_bullet_v2"
 			attack_stats.bullet_type = "obj_basic_bullet_v2"
 			attack_stats.bullet_count = 6;
 			attack_stats.bullet_spread = 30;

@@ -128,7 +128,7 @@ if active_attack_delay <= 0 and pattern_cooldown <= 0 and pattern_count > 0 {
 		
 		if active_attack = 2 || active_attack = 8 {
 			attack_stats.bullet_type = "obj_basic_bullet_v2";
-		    attack_stats.bullet_sprite = "spr_Glowy_Enemy_Shot";
+		    attack_stats.bullet_sprite = "spr_red_bullet_v2";
 		    attack_stats.bullet_count = 3;
 		    attack_stats.bullet_spread = 20;	
 		}
@@ -151,7 +151,7 @@ if active_attack_delay <= 0 and pattern_cooldown <= 0 and pattern_count > 0 {
 			_dir = pattern_direction;
 		}
 		if active_attack = 10 {
-			attack_stats.bullet_sprite = "spr_Big_Glowy_Shot";
+			attack_stats.bullet_sprite = "spr_pink_big_bullet_v2";
 		    attack_stats.bullet_speed = bossbulletspeed * 1.6;
 		    attack_stats.bullet_power = bosspower * 1.5;
 		    attack_stats.bullet_count = 1;
@@ -203,7 +203,7 @@ if active_attack_delay <= 0 and pattern_cooldown <= 0 and pattern_count > 0 {
 	}
 	
 	if active_attack = 3 || active_attack = 6 {
-	    attack_stats.bullet_sprite = "spr_Big_Glowy_Shot";
+	    attack_stats.bullet_sprite = "spr_pink_big_bullet_v2";
 	    attack_stats.bullet_speed = bossbulletspeed * 1.6;
 	    attack_stats.bullet_power = bosspower * 1.5;
 	    attack_stats.bullet_direction = (-10 + random(20)) / bossaccuracy;
@@ -296,7 +296,7 @@ if active_attack_delay <= 0 and pattern_cooldown <= 0 and pattern_count > 0 {
 	}
 	
 	if active_attack = 11 {
-	    attack_stats.bullet_sprite = "spr_Big_Glowy_Shot";
+	    attack_stats.bullet_sprite = "spr_pink_big_bullet_v2";
 	    attack_stats.bullet_speed = bossbulletspeed * 1.6;
 	    attack_stats.bullet_power = bosspower * 1.5;
 	    attack_stats.bullet_direction = (-10 + random(20)) / bossaccuracy;

@@ -26,7 +26,7 @@
     {"resourceType":"GMImageLayer","resourceVersion":"1.0","name":"cbdf4bec-edf0-4aa3-91c3-69462aa49a11","blendMode":0,"displayName":"default","isLocked":false,"opacity":100.0,"visible":true,},
   ],
   "nineSlice": null,
-  "origin": 4,
+  "origin": 9,
   "parent": {
     "name": "Horror Stack v2",
     "path": "folders/Sprites/Boss Sprites/Flash Bosses/Horror Stack v2.yy",
@@ -66,7 +66,7 @@
     "visibleRange": null,
     "volume": 1.0,
     "xorigin": 350,
-    "yorigin": 350,
+    "yorigin": 450,
   },
   "swatchColours": null,
   "swfPrecision": 2.525,
