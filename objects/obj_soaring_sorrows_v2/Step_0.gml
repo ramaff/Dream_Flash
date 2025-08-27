@@ -231,7 +231,7 @@ if active_attack_delay <= 0 and pattern_cooldown <= 0 and pattern_count > 0 {
 			if champ = 1 {
 				attack_stats.follow_bullets = 0;
 				_count = 3;
-				attack_stats.bullet_sprite = "spr_Glowy_Blue_Shot"
+				attack_stats.bullet_sprite = "spr_blue_bullet_v2"
 				attack_stats.bullet_speed = bossbulletspeed * 1.15;
 			}
 			repeat(_count) {
@@ -365,7 +365,7 @@ if active_attack_delay <= 0 and pattern_cooldown <= 0 and pattern_count > 0 {
 			scr_Boss_Stretch("Horizontal",0.1);	
 		}
 		if pattern_count mod 60 = 1 {
-			attack_stats.bullet_sprite = "spr_Glowy_Blue_Shot"
+			attack_stats.bullet_sprite = "spr_blue_bullet_v2"
 			attack_stats.bullet_type = "obj_basic_bullet_v2"
 			attack_stats.bullet_count = 6;
 			attack_stats.bullet_spread = 30;
@@ -406,7 +406,7 @@ if active_attack_delay <= 0 and pattern_cooldown <= 0 and pattern_count > 0 {
 		
 		scr_Boss_Stretch("Horizontal",0.1);	
 		if pattern_count < pattern_count_max {
-			attack_stats.bullet_sprite = "spr_Glowy_Blue_Shot"
+			attack_stats.bullet_sprite = "spr_blue_bullet_v2"
 			attack_stats.bullet_type = "obj_basic_bullet_v2"
 			attack_stats.bullet_count = 6;
 			attack_stats.bullet_spread = 30;
