@@ -3,11 +3,19 @@
 // Mandatory:
 scr_Boss_Step(2);
 
-// If boss is floating in air, can make it bob up and down:
-scr_Boss_Height_Bob(30, 1, 0);
-
 // Make boss shape wobble:
 scr_Boss_Wobble("Horizontal", 0.4, 1, 0);
+
+if active_attack = 0 {
+	if boss_height < 60 {
+		boss_height = lerp(boss_height, 60, 0.05)
+	}
+	// If boss is floating in air, can make it bob up and down:
+	scr_Boss_Height_Bob(30, 1, 0);
+
+	direction = scr_Soul_Point()
+	speed = lerp(speed, bossmovespeed, 0.05);
+}
 
 //////////////////////////////////////////////////////////////////////////////////////////
 /////////////// Active Attack Prep
@@ -22,9 +30,11 @@ if active_attack_delay <= 0 and active_attack_cooldown <= 0 and active_attack_du
 	// Hop leap attack setup example
 	if active_attack = 1 {
 		// 
-		scr_Boss_Attack_Time_Setup_v2(120, 30, 1, 60, 30, 40);
+		scr_Boss_Attack_Time_Setup_v2(80, 0, 1, 90, 30, 40);
 		
 		scr_Boss_Jump_Setup_v2(0, 7 * bossmovespeed, x, y);
+		
+		image_index = 0;
 		//scr_Boss_Dash_Setup_v2(scr_Soul_Point(), 0, 7 * bossmovespeed);
     }
 
@@ -39,17 +49,25 @@ scr_default_attack_settings_v2();
 // If its time to attack, attack
 if active_attack_delay <= 0 and pattern_cooldown <= 0 and pattern_count > 0 {
    
-	if active_attack = 2 {
+	if active_attack = 1 {
 		scr_Boss_Dash_Movement_v2(15,15);
 		
 		speed = dash_speed;
         direction = dash_direction;
 		
+		var dir = scr_Soul_Point(x, y + boss_height);
+		var dist = scr_Soul_Distance(x, y + boss_height);
+		var aimspeed = min(3, dist);
+		x += lengthdir_x(aimspeed, dir);
+		y += lengthdir_y(aimspeed, dir);
+		
 		scr_Jump_Movement_v2(5);	
 		
-		if pattern_count = floor(pattern_count_max) {
-			image_index = 3;
-			attack_stats.bullet_direction = scr_Boss_Bullet_Direction_Formula(scr_Soul_Point(), 30)
+		if pattern_count = 1 {
+			image_index = 4;
+			attack_stats.bullet_count = 6;
+			attack_stats.bullet_spread = 60;
+			attack_stats.bullet_direction = scr_Boss_Bullet_Direction_Formula(scr_Soul_Point(), 60)
 		
 			scr_boss_shoot_v2();
 		}
@@ -75,9 +93,10 @@ scr_Boss_Size_Lerp(0.15);
 
 // Handles boss attack sprite animation
 if active_attack != 0 {
+	sprite_index = spr_cursed_clapper_v2_solo_clap
 	var _hold_frame = 2;
-	scr_Force_Hold_Frame(2, 20);
-	scr_Boss_Attack_Sprite_v2(spr_cursed_clapper_v2_solo_clap, _hold_frame, 2, 4, 20);
+	scr_Force_Hold_Frame(2, 60);
+	//scr_Boss_Attack_Sprite_v2(spr_cursed_clapper_v2_solo_clap, _hold_frame, 0, 4, 60);
 	if image_index = _hold_frame {
 		scr_Boss_Wobble("Horizontal", 2, 0.4, 0)	
 	}

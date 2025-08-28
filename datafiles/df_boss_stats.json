@@ -444,7 +444,7 @@
             "Defense_Phase_1": 0,
             "Defense_Phase_2": 0,
             "Boss_Danger": 2,
-            "Bullet_Speed": 6.5,
+            "Bullet_Speed": 3.5,
             "Move_Speed": 3,
             "Knock_Defense": 999,
         
