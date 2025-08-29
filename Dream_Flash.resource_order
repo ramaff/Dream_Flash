@@ -1140,6 +1140,7 @@
     {"name":"spr_Wisp_Mask_Heart_Shoot","order":2,"path":"sprites/spr_Wisp_Mask_Heart_Shoot/spr_Wisp_Mask_Heart_Shoot.yy",},
     {"name":"obj_Original_Home_Bullet","order":10,"path":"objects/obj_Original_Home_Bullet/obj_Original_Home_Bullet.yy",},
     {"name":"spr_Nice_Crowd_Spirit_Eye","order":1,"path":"sprites/spr_Nice_Crowd_Spirit_Eye/spr_Nice_Crowd_Spirit_Eye.yy",},
+    {"name":"spr_cursed_clapper_v2_paired","order":4,"path":"sprites/spr_cursed_clapper_v2_paired/spr_cursed_clapper_v2_paired.yy",},
     {"name":"obj_thought_chain","order":2,"path":"objects/obj_thought_chain/obj_thought_chain.yy",},
     {"name":"scr_T03","order":2,"path":"scripts/scr_T03/scr_T03.yy",},
     {"name":"obj_Magic_Blade_Shot","order":2,"path":"objects/obj_Magic_Blade_Shot/obj_Magic_Blade_Shot.yy",},

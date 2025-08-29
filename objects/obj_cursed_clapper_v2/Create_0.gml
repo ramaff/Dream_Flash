@@ -16,3 +16,6 @@ scr_Boss_Height_Setup(60);
 death_sprite = spr_boss_template_ko;
 boss_palette = spr_boss_template_palette;
 boss_palette_index = champ;
+
+paired_hand = noone;
+orientation = "left"
