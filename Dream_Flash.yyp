@@ -2998,6 +2998,7 @@
     {"id":{"name":"sprheadinthecloudsallsprites","path":"sprites/sprheadinthecloudsallsprites/sprheadinthecloudsallsprites.yy",},},
     {"id":{"name":"spr_Tree","path":"sprites/spr_Tree/spr_Tree.yy",},},
     {"id":{"name":"obj_Spin_Expand_Line_Bullet_Alt","path":"objects/obj_Spin_Expand_Line_Bullet_Alt/obj_Spin_Expand_Line_Bullet_Alt.yy",},},
+    {"id":{"name":"obj_speed_up_down_bullet_v2","path":"objects/obj_speed_up_down_bullet_v2/obj_speed_up_down_bullet_v2.yy",},},
     {"id":{"name":"spr_gutter_ball_v2_ko","path":"sprites/spr_gutter_ball_v2_ko/spr_gutter_ball_v2_ko.yy",},},
     {"id":{"name":"old_Tree","path":"sprites/old_Tree/old_Tree.yy",},},
     {"id":{"name":"scr_Converge","path":"scripts/scr_Converge/scr_Converge.yy",},},

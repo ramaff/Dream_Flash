@@ -42,6 +42,9 @@ if active_attack = 0 {
 		speed = lerp(speed, bossmovespeed, 0.05);
 	}
 }
+if active_attack = 2 and active_attack_delay >= 0 {
+	speed = lerp(speed, 0, 0.025)
+}
 
 //////////////////////////////////////////////////////////////////////////////////////////
 /////////////// Active Attack Prep
@@ -71,7 +74,7 @@ if active_attack_delay <= 0 and active_attack_cooldown <= 0 and active_attack_du
 	
 	if active_attack = 2 {
 		// 
-		scr_Boss_Attack_Time_Setup_v2(60, 50, 1, 90, 30, 40);
+		scr_Boss_Attack_Time_Setup_v2(50, 50, 1, 90, 30, 20);
 		
 		var _speed = point_distance(x, y, room_width / 2, y) / pattern_count
 		scr_Boss_Dash_Setup_v2(point_direction(x, y, room_width / 2, paired_hand.y), 0, _speed);
@@ -115,20 +118,37 @@ if active_attack_delay <= 0 and pattern_cooldown <= 0 and pattern_count > 0 {
 	}
 	
 	if active_attack = 2 {
-		scr_Boss_Dash_Movement_v2(1,1);
+		scr_Boss_Dash_Movement_v2(1,0);
+		
+		if image_index < 3 {
+			image_index = 3;	
+		}
 		
 		speed = point_distance(x, y, room_width / 2, y) / max(1,(pattern_count - 1));
         direction = point_direction(x,y, room_width / 2, paired_hand.y)
 		
 		if pattern_count = 1 {
-			speed = 0;
-			
 			image_index = 4;
+			attack_stats.bullet_type = "obj_speed_up_down_bullet_v2"
+			attack_stats.boss_xoffset = (room_width / 2) - x
 			attack_stats.bullet_count = 12;
 			attack_stats.bullet_spread = 30;
-			attack_stats.bullet_direction = scr_Boss_Bullet_Direction_Formula(scr_Soul_Point(), 60)
-		
+			attack_stats.bullet_direction = 0;
+			
+			if orientation = "left" {
+				attack_stats.bullet_life_span += 30;
+				attack_stats.bullet_direction += 15;	
+			}
+			
 			scr_boss_shoot_v2();
+			
+			if orientation = "left" {
+				x -= 10;
+			} else {
+				x += 10;	
+			}
+			speed = 0;
+
 		}
 	}
 	
@@ -166,8 +186,8 @@ if active_attack = 1 {
 	}
 	
 	var _hold_frame = 2;
-	scr_Force_Hold_Frame(4, 20)
-	scr_Boss_Attack_Sprite_v2(spr_cursed_clapper_v2_duo_clap, _hold_frame, 3, 4, 20);
+	scr_Force_Hold_Frame(4, 0)
+	scr_Boss_Attack_Sprite_v2(spr_cursed_clapper_v2_duo_clap, _hold_frame, 3, 4, 0);
 	if image_index = _hold_frame {
 		scr_Boss_Wobble("Horizontal", 2, 0.4, 0)	
 	}

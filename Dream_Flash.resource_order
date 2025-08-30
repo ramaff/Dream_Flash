@@ -849,6 +849,7 @@
     {"name":"scr_Boss_Hit_Explosion","order":12,"path":"scripts/scr_Boss_Hit_Explosion/scr_Boss_Hit_Explosion.yy",},
     {"name":"spr_dream_cloud","order":5,"path":"sprites/spr_dream_cloud/spr_dream_cloud.yy",},
     {"name":"spr_Boss_Beam_Start_Ontop","order":13,"path":"sprites/spr_Boss_Beam_Start_Ontop/spr_Boss_Beam_Start_Ontop.yy",},
+    {"name":"obj_speed_up_down_bullet_v2","order":14,"path":"objects/obj_speed_up_down_bullet_v2/obj_speed_up_down_bullet_v2.yy",},
     {"name":"spr_gutter_ball_v2_ko","order":8,"path":"sprites/spr_gutter_ball_v2_ko/spr_gutter_ball_v2_ko.yy",},
     {"name":"obj_Boss_Sky_Lightning","order":1,"path":"objects/obj_Boss_Sky_Lightning/obj_Boss_Sky_Lightning.yy",},
     {"name":"scr_Scrub_Soul_Weapon_Mod","order":11,"path":"scripts/scr_Scrub_Soul_Weapon_Mod/scr_Scrub_Soul_Weapon_Mod.yy",},
