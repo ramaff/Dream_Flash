@@ -12,8 +12,8 @@
   "conversionMode": 0,
   "duration": 1.05,
   "parent": {
-    "name": "Alleged Real Sound Effects",
-    "path": "folders/Sounds/Sound Effects/Alleged Real Sound Effects.yy",
+    "name": "Soul Generic",
+    "path": "folders/Sounds/Sound Effects/Alleged Real Sound Effects/Soul Generic.yy",
   },
   "preload": false,
   "sampleRate": 44100,

@@ -13,7 +13,10 @@
     "name": "Game Stuff",
     "path": "folders/Objects/Game Stuff.yy",
   },
-  "parentObjectId": null,
+  "parentObjectId": {
+    "name": "obj_Menu_Button_Parent",
+    "path": "objects/obj_Menu_Button_Parent/obj_Menu_Button_Parent.yy",
+  },
   "persistent": false,
   "physicsAngularDamping": 0.1,
   "physicsDensity": 0.5,

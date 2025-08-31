@@ -13,7 +13,7 @@
   "duration": 0.645,
   "parent": {
     "name": "new_placeholder_sounds",
-    "path": "folders/Sounds/Sound Effects/new_placeholder_sounds.yy",
+    "path": "folders/Sounds/Sound Effects/old_placeholder_sounds/new_placeholder_sounds.yy",
   },
   "preload": false,
   "sampleRate": 44100,

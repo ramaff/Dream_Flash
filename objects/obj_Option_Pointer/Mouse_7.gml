@@ -1,3 +1,5 @@
+scr_Sound_Effect(snd_Button_Click)
+
 if abs(type) = 1 and category = 1 {
     move = "right";
     if type < 0 {

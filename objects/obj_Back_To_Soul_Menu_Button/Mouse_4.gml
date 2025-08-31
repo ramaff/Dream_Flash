@@ -6,6 +6,7 @@
 
 	//scr_Pause_Main_Leave();
 	//global.layerdeep = 2;
+scr_Sound_Effect(snd_Button_Click)
 
 	var camX = camera_get_view_x(view);
 	var camY = camera_get_view_y(view);

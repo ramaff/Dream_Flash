@@ -437,10 +437,9 @@
         },
 
         "Boss 013": {
-            "Name": "Cursed Clappers",
+            "Name": "Cursed Clapper",
             "Recollection_Sprite": "reco_Cursed_Clapper",
-            "Health_Phase_1": 150,
-            "Health_Phase_2": 120,
+            "Health_Phase_1": 130,
             "Defense_Phase_1": 0,
             "Defense_Phase_2": 0,
             "Boss_Danger": 2,
@@ -448,24 +447,7 @@
             "Move_Speed": 3,
             "Knock_Defense": 999,
         
-            "recollectionDescription": "Pair of hands that move fast and use powerful applause to damage the soul.",
-        
-            "Champ 1": {
-                "Name": "Swift Clapper",
-                "Recollection_Sprite": "spr_Swift_Clapper",
-                "Health_Phase_1": 170,
-                "Health_Phase_2": 140,
-                "Move_Speed": 3.5,
-                "Attack_Speed": 1.15
-            },
-            "Champ 2": { 
-                "Name":  "Mine Sweeper",
-                "Recollection_Sprite": "spr_Minesweeper_Clapper",
-                "Health_Phase_1": 170,
-                "Health_Phase_2": 140,
-                "Bullet_Speed": 7.5,
-                "Attack_Speed": 1.15
-            }
+            "recollectionDescription": "Pair of hands that move fast and use powerful applause to damage the soul."
         },
 
         "Boss 014": {

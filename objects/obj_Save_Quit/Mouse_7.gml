@@ -1,3 +1,5 @@
+
+scr_Sound_Effect(snd_Button_Click)
 scr_Pause_Main_Leave();
 global.layerdeep = 1;
 

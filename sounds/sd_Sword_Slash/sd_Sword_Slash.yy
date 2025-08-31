@@ -13,7 +13,7 @@
   "duration": 0.310147,
   "parent": {
     "name": "bad custom sound attempts",
-    "path": "folders/Sounds/Sound Effects/bad custom sound attempts.yy",
+    "path": "folders/Sounds/Sound Effects/old_placeholder_sounds/bad custom sound attempts.yy",
   },
   "preload": false,
   "sampleRate": 44100,

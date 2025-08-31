@@ -12,8 +12,8 @@
   "conversionMode": 0,
   "duration": 1.186893,
   "parent": {
-    "name": "Alleged Real Sound Effects",
-    "path": "folders/Sounds/Sound Effects/Alleged Real Sound Effects.yy",
+    "name": "Weapon Generic",
+    "path": "folders/Sounds/Sound Effects/Alleged Real Sound Effects/Weapon Generic.yy",
   },
   "preload": false,
   "sampleRate": 44100,

@@ -1,3 +1,5 @@
+scr_Sound_Effect(snd_Button_Click)
+
 if global.layerdeep = 2 {
     
     global.layerdeep = 3;

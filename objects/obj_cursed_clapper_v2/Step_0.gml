@@ -21,6 +21,8 @@ if !instance_exists(paired_hand) {
 }
 if instance_exists(paired_hand) {
 	_paired = true	
+} else if active_attack = 2 {
+	active_attack = 0
 }
 
 if active_attack = 0 {
@@ -44,6 +46,12 @@ if active_attack = 0 {
 }
 if active_attack = 2 and active_attack_delay >= 0 {
 	speed = lerp(speed, 0, 0.025)
+	
+	if boss_height < 60 {
+		boss_height = lerp(boss_height, 60, 0.05)
+	}
+	// If boss is floating in air, can make it bob up and down:
+	scr_Boss_Height_Bob(30, 1, 0);
 }
 
 //////////////////////////////////////////////////////////////////////////////////////////
@@ -53,7 +61,7 @@ if active_attack = 2 and active_attack_delay >= 0 {
 if active_attack_delay <= 0 and active_attack_cooldown <= 0 and active_attack_duration <= 0 {
 	
 	if _paired {
-		if point_distance(x, y, room_width / 2, obj_Soul_Parent.y) > (global.roomSizeX * 0.5) {
+		if point_distance(x, y, room_width / 2, obj_Soul_Parent.y) > (global.roomSizeX * 0.4) {
 			active_attack = 2;	
 			paired_hand.active_attack = 2;
 		}
@@ -64,7 +72,7 @@ if active_attack_delay <= 0 and active_attack_cooldown <= 0 and active_attack_du
 	// Hop leap attack setup example
 	if active_attack = 1 {
 		// 
-		scr_Boss_Attack_Time_Setup_v2(60, 0, 1, 90, 30, 40);
+		scr_Boss_Attack_Time_Setup_v2(60, 0, 1, 90, 30, 50);
 		
 		scr_Boss_Jump_Setup_v2(0, 7 * bossmovespeed, x, y);
 		
@@ -74,7 +82,7 @@ if active_attack_delay <= 0 and active_attack_cooldown <= 0 and active_attack_du
 	
 	if active_attack = 2 {
 		// 
-		scr_Boss_Attack_Time_Setup_v2(50, 50, 1, 90, 30, 20);
+		scr_Boss_Attack_Time_Setup_v2(50, 50, 1, 120, 0, 20);
 		
 		var _speed = point_distance(x, y, room_width / 2, y) / pattern_count
 		scr_Boss_Dash_Setup_v2(point_direction(x, y, room_width / 2, paired_hand.y), 0, _speed);
@@ -174,7 +182,7 @@ var _mirror = false;
 if active_attack = 1 {
 	sprite_index = spr_cursed_clapper_v2_solo_clap
 	var _hold_frame = 2;
-	scr_Force_Hold_Frame(2, 60);
+	scr_Force_Hold_Frame(2, 65);
 	//scr_Boss_Attack_Sprite_v2(spr_cursed_clapper_v2_solo_clap, _hold_frame, 0, 4, 60);
 	if image_index = _hold_frame {
 		scr_Boss_Wobble("Horizontal", 2, 0.4, 0)	

@@ -12,8 +12,8 @@
   "conversionMode": 0,
   "duration": 1.088481,
   "parent": {
-    "name": "Alleged Real Sound Effects",
-    "path": "folders/Sounds/Sound Effects/Alleged Real Sound Effects.yy",
+    "name": "Specific Item Things",
+    "path": "folders/Sounds/Sound Effects/Alleged Real Sound Effects/Specific Item Things.yy",
   },
   "preload": false,
   "sampleRate": 44100,

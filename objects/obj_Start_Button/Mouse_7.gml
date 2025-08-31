@@ -2,6 +2,8 @@
 midx = room_width / 2 + 32;
 midy = room_height / 2 + 32;
 
+scr_Sound_Effect(snd_Button_Click)
+
 if (file_exists("saverun.sav")) {
     if global.layerdeep = 1 {
     
