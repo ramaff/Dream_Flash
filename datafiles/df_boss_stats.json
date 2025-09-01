@@ -438,16 +438,16 @@
 
         "Boss 013": {
             "Name": "Cursed Clapper",
-            "Recollection_Sprite": "reco_Cursed_Clapper",
-            "Health_Phase_1": 130,
+            "Recollection_Sprite": "reco_cursed_clapper_v2",
+            "Health_Phase_1": 170,
             "Defense_Phase_1": 0,
             "Defense_Phase_2": 0,
-            "Boss_Danger": 2,
+            "Boss_Danger": 1,
             "Bullet_Speed": 3.5,
             "Move_Speed": 3,
             "Knock_Defense": 999,
         
-            "recollectionDescription": "Pair of hands that move fast and use powerful applause to damage the soul."
+            "recollectionDescription": "Cursed hand that slaps the ground. When paired up does a powerful applause attack."
         },
 
         "Boss 014": {

@@ -2,11 +2,11 @@
 midx = room_width / 2 + 32;
 midy = room_height / 2 + 32;
 
-scr_Sound_Effect(snd_Button_Click)
 
 if (file_exists("saverun.sav")) {
     if global.layerdeep = 1 {
     
+		scr_Sound_Effect(snd_Button_Click)
         scr_Pause_Main_Leave();
         instance_create(0,0,obj_Start_Run_Menu);
         with instance_create(midx - 100,midy + 60,obj_Start_Run_Button) {
@@ -21,6 +21,7 @@ if (file_exists("saverun.sav")) {
     }
 } else {
     if global.layerdeep = 1 {
+		scr_Sound_Effect(snd_Button_Click)
         instance_create(0,0,Run_Fade_Control);
         instance_create(0,0,obj_Fade);
     }

@@ -10,7 +10,7 @@
   "bitRate": 128,
   "compression": 0,
   "conversionMode": 0,
-  "duration": 1.333333,
+  "duration": 2.647052,
   "parent": {
     "name": "Menus",
     "path": "folders/Sounds/Sound Effects/Alleged Real Sound Effects/Menus.yy",
