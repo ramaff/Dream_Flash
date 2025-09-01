@@ -28,6 +28,7 @@ function scr_N04(){
 			}
 			
 			Soul_Weapons_Control.weapon[_weap_slot].weapon_id = _new_weap_number;
+			global.recollectionWeap[_new_weap_number]++;
 		}
 	}
 }

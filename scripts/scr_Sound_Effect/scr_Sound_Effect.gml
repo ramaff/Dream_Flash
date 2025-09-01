@@ -1,14 +1,13 @@
-function scr_Sound_Effect(argument0) {
-	var snd = argument0;
-
+function scr_Sound_Effect(_snd) {
 	
-	if snd = snd_Recall_Get {
-		snd = choose(snd_Recall_Get,snd_Recall_Get_2,snd_Recall_Get_3);
+	if is_array(_snd) {
+		_snd = _snd[irandom(array_length(_snd) - 1)]
+		//snd = choose(snd_Recall_Get,snd_Recall_Get_2,snd_Recall_Get_3);
 	}
 	
 
-	audio_sound_gain(snd,global.gameSound / 100,0);
-	audio_play_sound(snd, 10, false);
+	audio_sound_gain(_snd,global.gameSound / 100,0);
+	audio_play_sound(_snd, 10, false);
 
 
 }

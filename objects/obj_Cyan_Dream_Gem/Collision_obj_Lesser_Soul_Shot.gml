@@ -2,9 +2,9 @@ if other.shot_stats.Shot_Soul_Damage > 0 {
 	exit;	
 }
 
-var hit_again = variable_struct_exists(projectile_hits, other.shot_id)
+var hit_again = variable_struct_exists(projectile_hits, other.shot_boss_id)
 if !hit_again and other.shot_stats.Shot_Melee = 0 {
-	variable_struct_set(projectile_hits, other.shot_id, other.shot_id)
+	variable_struct_set(projectile_hits, other.shot_boss_id, other.shot_boss_id)
     
     with(other) {
         x = other.x;
@@ -14,13 +14,7 @@ if !hit_again and other.shot_stats.Shot_Melee = 0 {
 		}
         shot_stats.Shot_Phasing = 1;
 		shot_stats.Shot_Gem++;
-        /*
-        if shot_stats.Shot_Homing_Type = 0 {
-            shot_stats.Shot_Homing_Type = 1;
-        }
-        if shot_stats.Shot_Homing_Range < 60 {
-            shot_stats.Shot_Homing_Range = 60;
-        } */
+
         speed = shot_stats.Shot_Speed;
         shot_stats.Shot_Speed += 1.5;
         speed += 1.5;
@@ -31,27 +25,7 @@ if !hit_again and other.shot_stats.Shot_Melee = 0 {
 		if shot_stats.Shot_Melee = 0 and shot_stats.Shot_Beam = 0 and sprite_get_width(sprite_index) <= 100 {
 			sprite_index = spr_Cyan_Gem_Shot;
 		}
-        /*if shotbursttype = 0 {
-            shotbursttype = 1;
-            shot_stats.Shot_Hit_Again = 0;
-            image = 1;
-            shotduplicatesprite = sprite_index;
-			if shotburstamount < 3 {
-	            shotburstamount = 3;
-	        }
-	        if shotburstpower < 3 {
-	            shotburstpower = 3;
-	        }
-        }
-		if shotbursttype = 0 {
-			shotbursttype = 1;
-	        if shotburstamount < 3 {
-	            shotburstamount = 3;
-	        }
-	        if shotburstpower < 3 {
-	            shotburstpower = 3;
-	        }
-			} */
+        
 			if shot_stats.Shot_Burst_Stats != false {
 				var burstIndex = max(0, array_length(shot_stats.Shot_Burst_Stats));
 			} else {
@@ -89,7 +63,7 @@ if !hit_again and other.shot_stats.Shot_Melee = 0 {
         if instance_exists(obj_Gem_Parent) {
 	        with(obj_Gem_Parent) {
 				var cdis = distance_to_object(other);
-	            var hit_again = variable_struct_exists(projectile_hits, other.shot_id)
+	            var hit_again = variable_struct_exists(projectile_hits, other.shot_boss_id)
 				if !hit_again
 	            if target == noone || dis < cdis {
 					target = id;

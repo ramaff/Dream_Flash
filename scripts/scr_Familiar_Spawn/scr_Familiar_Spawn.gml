@@ -5,6 +5,10 @@ function scr_add_familiar_to_chain(_chain, _minion_type, _count) {
 }
 
 function scr_spawn_familar(_xx, _yy, _familiar, _follow_target = noone) {
+	with (obj_Minion_Parent) {
+		scr_Minion_Follow_Adjust();	
+	}
+	
 	var _ct = noone;
 	if !instance_exists(obj)
 	with instance_create(_xx, _yy, _familiar) {
