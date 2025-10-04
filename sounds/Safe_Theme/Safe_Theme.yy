@@ -1,7 +1,6 @@
 {
-  "resourceType": "GMSound",
-  "resourceVersion": "1.0",
-  "name": "Safe_Theme",
+  "$GMSound": "",
+  "%Name": "Safe_Theme",
   "audioGroupId": {
     "name": "audiogroup_default",
     "path": "audiogroups/audiogroup_default",
@@ -11,11 +10,14 @@
   "compression": 2,
   "conversionMode": 0,
   "duration": 129.8597,
+  "name": "Safe_Theme",
   "parent": {
     "name": "Music",
     "path": "folders/Sounds/Music.yy",
   },
   "preload": true,
+  "resourceType": "GMSound",
+  "resourceVersion": "2.0",
   "sampleRate": 44100,
   "soundFile": "Safe_Theme.mp3",
   "type": 0,

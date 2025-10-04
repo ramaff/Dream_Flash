@@ -1,11 +1,13 @@
 {
-  "resourceType": "GMScript",
-  "resourceVersion": "1.0",
-  "name": "scr_Keep_Horizontal",
-  "isCompatibility": false,
-  "isDnD": false,
-  "parent": {
-    "name": "Attack Helper Functions",
-    "path": "folders/Scripts/Boss Commands/Attack Helper Functions.yy",
+  "$GMScript":"v1",
+  "%Name":"scr_Keep_Horizontal",
+  "isCompatibility":false,
+  "isDnD":false,
+  "name":"scr_Keep_Horizontal",
+  "parent":{
+    "name":"Attack Helper Functions",
+    "path":"folders/Scripts/Boss Commands/Attack Helper Functions.yy",
   },
+  "resourceType":"GMScript",
+  "resourceVersion":"2.0",
 }

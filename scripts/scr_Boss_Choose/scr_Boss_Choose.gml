@@ -68,7 +68,7 @@ function scr_Boss_Choose(roomNum, exclude, difficultyAdd = 0) {
 	
 	if global.currentchapter = 1 {
 	    _base_pool = [1,3,5,9,12,14,18,19,20,24,25,37,42,44,57,58,98]
-		_mini_boss_pool = [16, 43, 59, 61, 62]
+		_mini_boss_pool = [13, 16, 43, 59, 61, 62]
 		
 	}
 	if global.currentchapter = 2 {
@@ -93,7 +93,7 @@ function scr_Boss_Choose(roomNum, exclude, difficultyAdd = 0) {
 	
 	var _minion_picked = false
 	
-	if array_length(_mini_boss_pool) > 0 and scr_Chance(4) {
+	if array_length(_mini_boss_pool) > 0 and scr_Chance(3.5) {
 		_minion_picked = true;
 		bossform = _mini_boss_pool[irandom(array_length(_mini_boss_pool) - 1)]
 	}
@@ -240,9 +240,9 @@ function scr_Boss_Choose(roomNum, exclude, difficultyAdd = 0) {
 
 	if bossform = 13.1 // Cursed Clappers
 	{
-	    bosstype = obj_Cursed_Clapper;
-	    difficulty = 2;
-	    global.champ = choose(0,1,2);
+	    bosstype = obj_cursed_clapper_v2;
+	    difficulty = 1;
+	    global.champ = choose(0);
 	}
 
 	if bossform = 14.1 // Spooked Spirit
@@ -639,8 +639,11 @@ function scr_Boss_Choose(roomNum, exclude, difficultyAdd = 0) {
 	if array_length(_mini_boss_pool) > 0 {
 		global.boost = choose(0, 2);
 	}
+	if bossform = 13.1 {
+		global.boost = choose(0, 2, 2, 2)	
+	}
 
-	if bossform = 13.1 || bossform = 41.1 {
+	if bossform = 41.1 {
 	    global.boost = 0;
 	}
 

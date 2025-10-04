@@ -1,9 +1,9 @@
 {
-  "resourceType": "GMObject",
-  "resourceVersion": "1.0",
-  "name": "obj_Pause_Parent",
+  "$GMObject": "",
+  "%Name": "obj_Pause_Parent",
   "eventList": [],
   "managed": true,
+  "name": "obj_Pause_Parent",
   "overriddenProperties": [],
   "parent": {
     "name": "Pause Control",
@@ -24,6 +24,8 @@
   "physicsShapePoints": [],
   "physicsStartAwake": true,
   "properties": [],
+  "resourceType": "GMObject",
+  "resourceVersion": "2.0",
   "solid": false,
   "spriteId": null,
   "spriteMaskId": null,

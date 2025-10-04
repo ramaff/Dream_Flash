@@ -1,11 +1,13 @@
 {
-  "resourceType": "GMScript",
-  "resourceVersion": "1.0",
-  "name": "scr_Essence_Beam_Step",
-  "isCompatibility": false,
-  "isDnD": false,
-  "parent": {
-    "name": "Misc Setup",
-    "path": "folders/Scripts/Weapon And Projectile Setup/Misc Setup.yy",
+  "$GMScript":"v1",
+  "%Name":"scr_Essence_Beam_Step",
+  "isCompatibility":false,
+  "isDnD":false,
+  "name":"scr_Essence_Beam_Step",
+  "parent":{
+    "name":"Misc Setup",
+    "path":"folders/Scripts/Weapon And Projectile Setup/Misc Setup.yy",
   },
+  "resourceType":"GMScript",
+  "resourceVersion":"2.0",
 }

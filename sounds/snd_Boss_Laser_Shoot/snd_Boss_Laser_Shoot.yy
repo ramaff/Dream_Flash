@@ -1,7 +1,6 @@
 {
-  "resourceType": "GMSound",
-  "resourceVersion": "1.0",
-  "name": "snd_Boss_Laser_Shoot",
+  "$GMSound": "",
+  "%Name": "snd_Boss_Laser_Shoot",
   "audioGroupId": {
     "name": "audiogroup_default",
     "path": "audiogroups/audiogroup_default",
@@ -11,11 +10,14 @@
   "compression": 0,
   "conversionMode": 0,
   "duration": 0.261224,
+  "name": "snd_Boss_Laser_Shoot",
   "parent": {
     "name": "bad custom sound attempts",
-    "path": "folders/Sounds/Sound Effects/bad custom sound attempts.yy",
+    "path": "folders/Sounds/Sound Effects/old_placeholder_sounds/bad custom sound attempts.yy",
   },
   "preload": false,
+  "resourceType": "GMSound",
+  "resourceVersion": "2.0",
   "sampleRate": 44100,
   "soundFile": "snd_Boss_Laser_Shoot.mp3",
   "type": 0,

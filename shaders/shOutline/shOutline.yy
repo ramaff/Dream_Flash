@@ -1,10 +1,12 @@
 {
-  "resourceType": "GMShader",
-  "resourceVersion": "1.0",
+  "$GMShader": "",
+  "%Name": "shOutline",
   "name": "shOutline",
   "parent": {
     "name": "Shaders",
     "path": "folders/Shaders.yy",
   },
+  "resourceType": "GMShader",
+  "resourceVersion": "2.0",
   "type": 1,
 }

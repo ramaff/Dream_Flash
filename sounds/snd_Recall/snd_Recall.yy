@@ -1,7 +1,6 @@
 {
-  "resourceType": "GMSound",
-  "resourceVersion": "1.0",
-  "name": "snd_Recall",
+  "$GMSound": "",
+  "%Name": "snd_Recall",
   "audioGroupId": {
     "name": "audiogroup_default",
     "path": "audiogroups/audiogroup_default",
@@ -11,11 +10,14 @@
   "compression": 0,
   "conversionMode": 0,
   "duration": 1.2,
+  "name": "snd_Recall",
   "parent": {
-    "name": "Alleged Real Sound Effects",
-    "path": "folders/Sounds/Sound Effects/Alleged Real Sound Effects.yy",
+    "name": "Soul Generic",
+    "path": "folders/Sounds/Sound Effects/Alleged Real Sound Effects/Soul Generic.yy",
   },
   "preload": false,
+  "resourceType": "GMSound",
+  "resourceVersion": "2.0",
   "sampleRate": 44100,
   "soundFile": "snd_Recall.wav",
   "type": 0,

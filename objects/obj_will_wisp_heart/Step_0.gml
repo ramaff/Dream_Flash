@@ -57,7 +57,7 @@ if active_attack_delay <= 0 and pattern_cooldown <= 0 and pattern_count > 0 {
 		
 		attack_stats.bullet_direction = scr_Boss_Bullet_Direction_Formula(scr_Soul_Point(), 30)
 		attack_stats.bullet_type = "obj_wave_bullet_v2"
-		attack_stats.bullet_sprite = "spr_Glowy_Blue_Shot"
+		attack_stats.bullet_sprite = "spr_blue_bullet_v2"
 		attack_stats.wave_strength = 6;
 		attack_stats.wave_time = 45;
 		attack_stats.bullet_count = 5;
@@ -86,7 +86,7 @@ if active_attack_delay <= 0 and pattern_cooldown <= 0 and pattern_count > 0 {
 		attack_stats.bullet_direction = scr_Boss_Bullet_Direction_Formula(scr_Soul_Point(), 30)
 		attack_stats.bullet_direction += (180 * (pattern_count mod 2)) - 90;
 		attack_stats.bullet_type = "obj_decreasing_homing_bullet_school"
-		attack_stats.bullet_sprite = "spr_Glowy_Blue_Shot"
+		attack_stats.bullet_sprite = "spr_blue_bullet_v2"
 		attack_stats.bullet_count = 1;
 		attack_stats.bullet_speed = bossbulletspeed * (1.45 + random(0.3))
 		attack_stats.school_bullets = 3;

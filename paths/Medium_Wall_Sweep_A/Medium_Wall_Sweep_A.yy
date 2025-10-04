@@ -1,9 +1,9 @@
 {
-  "resourceType": "GMPath",
-  "resourceVersion": "1.0",
-  "name": "Medium_Wall_Sweep_A",
+  "$GMPath": "",
+  "%Name": "Medium_Wall_Sweep_A",
   "closed": true,
   "kind": 1,
+  "name": "Medium_Wall_Sweep_A",
   "parent": {
     "name": "Paths",
     "path": "folders/Paths.yy",
@@ -35,4 +35,6 @@
     {"speed":100.0,"x":2448.0,"y":2000.0,},
   ],
   "precision": 4,
+  "resourceType": "GMPath",
+  "resourceVersion": "2.0",
 }

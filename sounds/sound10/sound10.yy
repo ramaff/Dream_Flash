@@ -1,7 +1,6 @@
 {
-  "resourceType": "GMSound",
-  "resourceVersion": "1.0",
-  "name": "sound10",
+  "$GMSound": "",
+  "%Name": "sound10",
   "audioGroupId": {
     "name": "audiogroup_default",
     "path": "audiogroups/audiogroup_default",
@@ -11,11 +10,14 @@
   "compression": 0,
   "conversionMode": 0,
   "duration": 0.169399,
+  "name": "sound10",
   "parent": {
     "name": "old_placeholder_sounds",
     "path": "folders/Sounds/Sound Effects/old_placeholder_sounds.yy",
   },
   "preload": false,
+  "resourceType": "GMSound",
+  "resourceVersion": "2.0",
   "sampleRate": 44100,
   "soundFile": "sound10",
   "type": 0,

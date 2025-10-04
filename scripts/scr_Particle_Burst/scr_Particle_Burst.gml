@@ -11,7 +11,7 @@ function scr_Particle_Burst(particletype = obj_Weapon_Trail, particlesprite = sp
 
 			_yy = _yy + random(particleArea) - (particleArea / 2);
 	
-			with instance_create(_xx,_yy, particletype) {
+			with instance_create_depth(_xx,_yy, depth, particletype) {
 				
 				if burstUniformSpread {
 					direction = burstdir;

@@ -1,11 +1,13 @@
 {
-  "resourceType": "GMScript",
-  "resourceVersion": "1.0",
-  "name": "scr_Soul_Stat_Cloud",
-  "isCompatibility": false,
-  "isDnD": false,
-  "parent": {
-    "name": "Recollection",
-    "path": "folders/Scripts/Recollection.yy",
+  "$GMScript":"v1",
+  "%Name":"scr_Soul_Stat_Cloud",
+  "isCompatibility":false,
+  "isDnD":false,
+  "name":"scr_Soul_Stat_Cloud",
+  "parent":{
+    "name":"Recollection",
+    "path":"folders/Scripts/Recollection.yy",
   },
+  "resourceType":"GMScript",
+  "resourceVersion":"2.0",
 }

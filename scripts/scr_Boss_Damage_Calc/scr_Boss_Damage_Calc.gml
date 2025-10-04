@@ -51,7 +51,7 @@ function scr_Boss_Damage_Calc() {
 		_yy = other.y;
 	}
 
-	scr_setup_dmg_indicator(_xx, _yy, shotDamage, c_white, shotweaktotal);
+	scr_setup_dmg_indicator(_xx, _yy, shotDamage - shotweaktotal, c_white, shotweaktotal);
 
 	//Adding Poison
 	if shot_stats.Shot_Poison != 0 {

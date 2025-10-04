@@ -1,11 +1,13 @@
 {
-  "resourceType": "GMScript",
-  "resourceVersion": "1.0",
-  "name": "scr_S01",
-  "isCompatibility": false,
-  "isDnD": false,
-  "parent": {
-    "name": "S Items",
-    "path": "folders/Scripts/Item Commands/S Items.yy",
+  "$GMScript":"v1",
+  "%Name":"scr_S01",
+  "isCompatibility":false,
+  "isDnD":false,
+  "name":"scr_S01",
+  "parent":{
+    "name":"S Items",
+    "path":"folders/Scripts/Item Commands/S Items.yy",
   },
+  "resourceType":"GMScript",
+  "resourceVersion":"2.0",
 }

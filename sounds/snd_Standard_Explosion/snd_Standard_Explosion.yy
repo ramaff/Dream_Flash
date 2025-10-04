@@ -1,7 +1,6 @@
 {
-  "resourceType": "GMSound",
-  "resourceVersion": "1.0",
-  "name": "snd_Standard_Explosion",
+  "$GMSound": "",
+  "%Name": "snd_Standard_Explosion",
   "audioGroupId": {
     "name": "audiogroup_default",
     "path": "audiogroups/audiogroup_default",
@@ -11,11 +10,14 @@
   "compression": 0,
   "conversionMode": 0,
   "duration": 1.186893,
+  "name": "snd_Standard_Explosion",
   "parent": {
-    "name": "Alleged Real Sound Effects",
-    "path": "folders/Sounds/Sound Effects/Alleged Real Sound Effects.yy",
+    "name": "Weapon Generic",
+    "path": "folders/Sounds/Sound Effects/Alleged Real Sound Effects/Weapon Generic.yy",
   },
   "preload": false,
+  "resourceType": "GMSound",
+  "resourceVersion": "2.0",
   "sampleRate": 44100,
   "soundFile": "snd_Standard_Explosion.wav",
   "type": 0,

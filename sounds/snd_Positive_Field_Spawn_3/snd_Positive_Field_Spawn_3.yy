@@ -1,7 +1,6 @@
 {
-  "resourceType": "GMSound",
-  "resourceVersion": "1.0",
-  "name": "snd_Positive_Field_Spawn_3",
+  "$GMSound": "",
+  "%Name": "snd_Positive_Field_Spawn_3",
   "audioGroupId": {
     "name": "audiogroup_default",
     "path": "audiogroups/audiogroup_default",
@@ -11,11 +10,14 @@
   "compression": 0,
   "conversionMode": 0,
   "duration": 3.0,
+  "name": "snd_Positive_Field_Spawn_3",
   "parent": {
-    "name": "Alleged Real Sound Effects",
-    "path": "folders/Sounds/Sound Effects/Alleged Real Sound Effects.yy",
+    "name": "Item Generic",
+    "path": "folders/Sounds/Sound Effects/Alleged Real Sound Effects/Item Generic.yy",
   },
   "preload": false,
+  "resourceType": "GMSound",
+  "resourceVersion": "2.0",
   "sampleRate": 44100,
   "soundFile": "snd_Positive_Field_Spawn_3.wav",
   "type": 0,

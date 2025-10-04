@@ -1,11 +1,13 @@
 {
-  "resourceType": "GMScript",
-  "resourceVersion": "1.0",
-  "name": "scr_Soul_Currency_Add",
-  "isCompatibility": false,
-  "isDnD": false,
-  "parent": {
-    "name": "Set Up",
-    "path": "folders/Scripts/Boss Commands/Set Up.yy",
+  "$GMScript":"v1",
+  "%Name":"scr_Soul_Currency_Add",
+  "isCompatibility":false,
+  "isDnD":false,
+  "name":"scr_Soul_Currency_Add",
+  "parent":{
+    "name":"Set Up",
+    "path":"folders/Scripts/Boss Commands/Set Up.yy",
   },
+  "resourceType":"GMScript",
+  "resourceVersion":"2.0",
 }

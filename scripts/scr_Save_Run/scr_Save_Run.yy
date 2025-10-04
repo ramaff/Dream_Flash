@@ -1,11 +1,13 @@
 {
-  "resourceType": "GMScript",
-  "resourceVersion": "1.0",
-  "name": "scr_Save_Run",
-  "isCompatibility": false,
-  "isDnD": false,
-  "parent": {
-    "name": "Saving Commands",
-    "path": "folders/Scripts/Saving Commands.yy",
+  "$GMScript":"v1",
+  "%Name":"scr_Save_Run",
+  "isCompatibility":false,
+  "isDnD":false,
+  "name":"scr_Save_Run",
+  "parent":{
+    "name":"Saving Commands",
+    "path":"folders/Scripts/Saving Commands.yy",
   },
+  "resourceType":"GMScript",
+  "resourceVersion":"2.0",
 }

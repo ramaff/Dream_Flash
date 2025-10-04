@@ -1,3 +1,4 @@
+scr_Sound_Effect([snd_Button_Click, snd_Button_Click_2, snd_Button_Click_3])
 
 var camX = camera_get_view_x(view);
 var camY = camera_get_view_y(view);

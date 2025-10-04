@@ -1,9 +1,9 @@
 {
-  "resourceType": "GMPath",
-  "resourceVersion": "1.0",
-  "name": "Wall_Path",
+  "$GMPath": "",
+  "%Name": "Wall_Path",
   "closed": false,
   "kind": 1,
+  "name": "Wall_Path",
   "parent": {
     "name": "Paths",
     "path": "folders/Paths.yy",
@@ -20,4 +20,6 @@
     {"speed":100.0,"x":0.0,"y":2048.0,},
   ],
   "precision": 4,
+  "resourceType": "GMPath",
+  "resourceVersion": "2.0",
 }

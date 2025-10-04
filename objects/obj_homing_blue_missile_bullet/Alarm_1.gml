@@ -7,7 +7,7 @@ var _bull = scr_base_bullet_stats(bullet_stats.bullet_speed / 5, bullet_stats.bu
 
 
 _bull.bullet_type = "obj_basic_bullet_v2"
-_bull.bullet_sprite = "spr_Glowy_Blue_Shot"
+_bull.bullet_sprite = "spr_blue_bullet_v2"
 _bull.bullet_size = _bull.bullet_size * 0.8;
 _bull.bullet_life_span = 60
 _bull.bullet_direction_angle = 1

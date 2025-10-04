@@ -1,5 +1,6 @@
 /// @description Insert description here
 // You can write your code in this editor
+scr_Sound_Effect([snd_Button_Click, snd_Button_Click_2, snd_Button_Click_3])
 
 if global.layerdeep < 3 {
 

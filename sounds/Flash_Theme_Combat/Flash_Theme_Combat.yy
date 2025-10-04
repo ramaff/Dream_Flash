@@ -1,7 +1,6 @@
 {
-  "resourceType": "GMSound",
-  "resourceVersion": "1.0",
-  "name": "Flash_Theme_Combat",
+  "$GMSound": "",
+  "%Name": "Flash_Theme_Combat",
   "audioGroupId": {
     "name": "audiogroup_default",
     "path": "audiogroups/audiogroup_default",
@@ -11,11 +10,14 @@
   "compression": 2,
   "conversionMode": 0,
   "duration": 97.8344,
+  "name": "Flash_Theme_Combat",
   "parent": {
     "name": "Music",
     "path": "folders/Sounds/Music.yy",
   },
   "preload": true,
+  "resourceType": "GMSound",
+  "resourceVersion": "2.0",
   "sampleRate": 44100,
   "soundFile": "Flash_Theme_Combat.ogg",
   "type": 0,

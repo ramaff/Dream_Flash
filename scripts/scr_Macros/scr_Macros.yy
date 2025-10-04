@@ -1,11 +1,13 @@
 {
-  "resourceType": "GMScript",
-  "resourceVersion": "1.0",
-  "name": "scr_Macros",
-  "isCompatibility": false,
-  "isDnD": false,
-  "parent": {
-    "name": "Control",
-    "path": "folders/Scripts/Control.yy",
+  "$GMScript":"v1",
+  "%Name":"scr_Macros",
+  "isCompatibility":false,
+  "isDnD":false,
+  "name":"scr_Macros",
+  "parent":{
+    "name":"Control",
+    "path":"folders/Scripts/Control.yy",
   },
+  "resourceType":"GMScript",
+  "resourceVersion":"2.0",
 }

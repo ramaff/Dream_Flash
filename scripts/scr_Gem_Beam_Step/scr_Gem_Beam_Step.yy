@@ -1,11 +1,13 @@
 {
-  "resourceType": "GMScript",
-  "resourceVersion": "1.0",
-  "name": "scr_Gem_Beam_Step",
-  "isCompatibility": false,
-  "isDnD": false,
-  "parent": {
-    "name": "Minion Commands",
-    "path": "folders/Scripts/Minion Commands.yy",
+  "$GMScript":"v1",
+  "%Name":"scr_Gem_Beam_Step",
+  "isCompatibility":false,
+  "isDnD":false,
+  "name":"scr_Gem_Beam_Step",
+  "parent":{
+    "name":"Minion Commands",
+    "path":"folders/Scripts/Minion Commands.yy",
   },
+  "resourceType":"GMScript",
+  "resourceVersion":"2.0",
 }

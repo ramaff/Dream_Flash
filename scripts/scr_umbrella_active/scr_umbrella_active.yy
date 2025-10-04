@@ -1,11 +1,13 @@
 {
-  "resourceType": "GMScript",
-  "resourceVersion": "1.0",
-  "name": "scr_umbrella_active",
-  "isCompatibility": false,
-  "isDnD": false,
-  "parent": {
-    "name": "Weapon Commands",
-    "path": "folders/Scripts/Weapon Commands.yy",
+  "$GMScript":"v1",
+  "%Name":"scr_umbrella_active",
+  "isCompatibility":false,
+  "isDnD":false,
+  "name":"scr_umbrella_active",
+  "parent":{
+    "name":"Weapon Commands",
+    "path":"folders/Scripts/Weapon Commands.yy",
   },
+  "resourceType":"GMScript",
+  "resourceVersion":"2.0",
 }

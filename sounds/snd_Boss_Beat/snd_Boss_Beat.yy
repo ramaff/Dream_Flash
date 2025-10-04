@@ -1,7 +1,6 @@
 {
-  "resourceType": "GMSound",
-  "resourceVersion": "1.0",
-  "name": "snd_Boss_Beat",
+  "$GMSound": "",
+  "%Name": "snd_Boss_Beat",
   "audioGroupId": {
     "name": "audiogroup_default",
     "path": "audiogroups/audiogroup_default",
@@ -11,11 +10,14 @@
   "compression": 0,
   "conversionMode": 0,
   "duration": 1.02,
+  "name": "snd_Boss_Beat",
   "parent": {
     "name": "new_placeholder_sounds",
-    "path": "folders/Sounds/Sound Effects/new_placeholder_sounds.yy",
+    "path": "folders/Sounds/Sound Effects/old_placeholder_sounds/new_placeholder_sounds.yy",
   },
   "preload": false,
+  "resourceType": "GMSound",
+  "resourceVersion": "2.0",
   "sampleRate": 44100,
   "soundFile": "snd_Boss_Beat.wav",
   "type": 0,

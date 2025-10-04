@@ -1,11 +1,13 @@
 {
-  "resourceType": "GMScript",
-  "resourceVersion": "1.0",
-  "name": "scr_Add_State_Credit_To_Extra_Stat_Description",
-  "isCompatibility": false,
-  "isDnD": false,
-  "parent": {
-    "name": "Recollection",
-    "path": "folders/Scripts/Recollection.yy",
+  "$GMScript":"v1",
+  "%Name":"scr_Add_State_Credit_To_Extra_Stat_Description",
+  "isCompatibility":false,
+  "isDnD":false,
+  "name":"scr_Add_State_Credit_To_Extra_Stat_Description",
+  "parent":{
+    "name":"Recollection",
+    "path":"folders/Scripts/Recollection.yy",
   },
+  "resourceType":"GMScript",
+  "resourceVersion":"2.0",
 }

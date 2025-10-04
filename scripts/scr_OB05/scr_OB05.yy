@@ -1,11 +1,13 @@
 {
-  "resourceType": "GMScript",
-  "resourceVersion": "1.0",
-  "name": "scr_OB05",
-  "isCompatibility": false,
-  "isDnD": false,
-  "parent": {
-    "name": "OB Items",
-    "path": "folders/Scripts/Item Commands/OB Items.yy",
+  "$GMScript":"v1",
+  "%Name":"scr_OB05",
+  "isCompatibility":false,
+  "isDnD":false,
+  "name":"scr_OB05",
+  "parent":{
+    "name":"OB Items",
+    "path":"folders/Scripts/Item Commands/OB Items.yy",
   },
+  "resourceType":"GMScript",
+  "resourceVersion":"2.0",
 }

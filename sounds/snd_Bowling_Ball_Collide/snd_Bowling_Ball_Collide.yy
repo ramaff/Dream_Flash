@@ -1,7 +1,6 @@
 {
-  "resourceType": "GMSound",
-  "resourceVersion": "1.0",
-  "name": "snd_Bowling_Ball_Collide",
+  "$GMSound": "",
+  "%Name": "snd_Bowling_Ball_Collide",
   "audioGroupId": {
     "name": "audiogroup_default",
     "path": "audiogroups/audiogroup_default",
@@ -11,11 +10,14 @@
   "compression": 0,
   "conversionMode": 0,
   "duration": 3.0,
+  "name": "snd_Bowling_Ball_Collide",
   "parent": {
-    "name": "Alleged Real Sound Effects",
-    "path": "folders/Sounds/Sound Effects/Alleged Real Sound Effects.yy",
+    "name": "Specific Boss Things",
+    "path": "folders/Sounds/Sound Effects/Alleged Real Sound Effects/Specific Boss Things.yy",
   },
   "preload": false,
+  "resourceType": "GMSound",
+  "resourceVersion": "2.0",
   "sampleRate": 44100,
   "soundFile": "snd_Bowling_Ball_Collide.wav",
   "type": 0,

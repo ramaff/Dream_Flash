@@ -5,7 +5,7 @@
 		var _bull = scr_base_bullet_stats(bullet_stats.bullet_speed + 1, bullet_stats.bullet_power, 1)
 
 		_bull.bullet_type = "obj_basic_bullet_v2"
-		_bull.bullet_sprite = "spr_Glowy_Enemy_Shot"
+		_bull.bullet_sprite = "spr_red_bullet_v2"
 		_bull.bullet_life_span = 180
 		_bull.bullet_count = 3;
 		_bull.bullet_spread = 15;
