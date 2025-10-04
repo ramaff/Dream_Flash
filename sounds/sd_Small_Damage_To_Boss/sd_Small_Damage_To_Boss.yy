@@ -1,7 +1,6 @@
 {
-  "resourceType": "GMSound",
-  "resourceVersion": "1.0",
-  "name": "sd_Small_Damage_To_Boss",
+  "$GMSound": "",
+  "%Name": "sd_Small_Damage_To_Boss",
   "audioGroupId": {
     "name": "audiogroup_default",
     "path": "audiogroups/audiogroup_default",
@@ -11,11 +10,14 @@
   "compression": 0,
   "conversionMode": 0,
   "duration": 0.209705,
+  "name": "sd_Small_Damage_To_Boss",
   "parent": {
     "name": "old_placeholder_sounds",
     "path": "folders/Sounds/Sound Effects/old_placeholder_sounds.yy",
   },
   "preload": false,
+  "resourceType": "GMSound",
+  "resourceVersion": "2.0",
   "sampleRate": 44100,
   "soundFile": "sd_Small_Damage_To_Boss",
   "type": 0,

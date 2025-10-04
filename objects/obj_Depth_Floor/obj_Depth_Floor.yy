@@ -1,9 +1,9 @@
 {
-  "resourceType": "GMObject",
-  "resourceVersion": "1.0",
-  "name": "obj_Depth_Floor",
+  "$GMObject": "",
+  "%Name": "obj_Depth_Floor",
   "eventList": [],
   "managed": true,
+  "name": "obj_Depth_Floor",
   "overriddenProperties": [],
   "parent": {
     "name": "Visual",
@@ -24,6 +24,8 @@
   "physicsShapePoints": [],
   "physicsStartAwake": true,
   "properties": [],
+  "resourceType": "GMObject",
+  "resourceVersion": "2.0",
   "solid": false,
   "spriteId": null,
   "spriteMaskId": null,

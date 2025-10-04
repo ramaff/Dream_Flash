@@ -1,9 +1,9 @@
 {
-  "resourceType": "GMPath",
-  "resourceVersion": "1.0",
-  "name": "Wall_Sweep_256",
+  "$GMPath": "",
+  "%Name": "Wall_Sweep_256",
   "closed": true,
   "kind": 1,
+  "name": "Wall_Sweep_256",
   "parent": {
     "name": "Paths",
     "path": "folders/Paths.yy",
@@ -35,4 +35,6 @@
     {"speed":100.0,"x":2560.0,"y":1986.56,},
   ],
   "precision": 4,
+  "resourceType": "GMPath",
+  "resourceVersion": "2.0",
 }

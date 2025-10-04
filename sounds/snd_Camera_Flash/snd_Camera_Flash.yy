@@ -1,7 +1,6 @@
 {
-  "resourceType": "GMSound",
-  "resourceVersion": "1.0",
-  "name": "snd_Camera_Flash",
+  "$GMSound": "",
+  "%Name": "snd_Camera_Flash",
   "audioGroupId": {
     "name": "audiogroup_default",
     "path": "audiogroups/audiogroup_default",
@@ -11,11 +10,14 @@
   "compression": 0,
   "conversionMode": 0,
   "duration": 1.088481,
+  "name": "snd_Camera_Flash",
   "parent": {
     "name": "Specific Item Things",
     "path": "folders/Sounds/Sound Effects/Alleged Real Sound Effects/Specific Item Things.yy",
   },
   "preload": false,
+  "resourceType": "GMSound",
+  "resourceVersion": "2.0",
   "sampleRate": 44100,
   "soundFile": "snd_Camera_Flash.wav",
   "type": 0,

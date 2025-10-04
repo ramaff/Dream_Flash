@@ -1,11 +1,13 @@
 {
-  "resourceType": "GMScript",
-  "resourceVersion": "1.0",
-  "name": "scr_Rubber_Soul_Rebound_Shot",
-  "isCompatibility": false,
-  "isDnD": false,
-  "parent": {
-    "name": "Specific Shots",
-    "path": "folders/Scripts/Weapon And Projectile Setup/Specific Shots.yy",
+  "$GMScript":"v1",
+  "%Name":"scr_Rubber_Soul_Rebound_Shot",
+  "isCompatibility":false,
+  "isDnD":false,
+  "name":"scr_Rubber_Soul_Rebound_Shot",
+  "parent":{
+    "name":"Specific Shots",
+    "path":"folders/Scripts/Weapon And Projectile Setup/Specific Shots.yy",
   },
+  "resourceType":"GMScript",
+  "resourceVersion":"2.0",
 }

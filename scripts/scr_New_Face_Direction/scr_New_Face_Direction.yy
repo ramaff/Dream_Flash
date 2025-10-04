@@ -1,11 +1,13 @@
 {
-  "resourceType": "GMScript",
-  "resourceVersion": "1.0",
-  "name": "scr_New_Face_Direction",
-  "isCompatibility": false,
-  "isDnD": false,
-  "parent": {
-    "name": "Minion Commands",
-    "path": "folders/Scripts/Minion Commands.yy",
+  "$GMScript":"v1",
+  "%Name":"scr_New_Face_Direction",
+  "isCompatibility":false,
+  "isDnD":false,
+  "name":"scr_New_Face_Direction",
+  "parent":{
+    "name":"Minion Commands",
+    "path":"folders/Scripts/Minion Commands.yy",
   },
+  "resourceType":"GMScript",
+  "resourceVersion":"2.0",
 }

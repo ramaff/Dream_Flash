@@ -1,7 +1,6 @@
 {
-  "resourceType": "GMSound",
-  "resourceVersion": "1.0",
-  "name": "snd_Button_Click_2",
+  "$GMSound": "",
+  "%Name": "snd_Button_Click_2",
   "audioGroupId": {
     "name": "audiogroup_default",
     "path": "audiogroups/audiogroup_default",
@@ -11,11 +10,14 @@
   "compression": 0,
   "conversionMode": 0,
   "duration": 1.852948,
+  "name": "snd_Button_Click_2",
   "parent": {
     "name": "Menus",
     "path": "folders/Sounds/Sound Effects/Alleged Real Sound Effects/Menus.yy",
   },
   "preload": false,
+  "resourceType": "GMSound",
+  "resourceVersion": "2.0",
   "sampleRate": 44100,
   "soundFile": "snd_Button_Click_2.wav",
   "type": 0,

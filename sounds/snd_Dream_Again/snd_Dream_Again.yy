@@ -1,7 +1,6 @@
 {
-  "resourceType": "GMSound",
-  "resourceVersion": "1.0",
-  "name": "snd_Dream_Again",
+  "$GMSound": "",
+  "%Name": "snd_Dream_Again",
   "audioGroupId": {
     "name": "audiogroup_default",
     "path": "audiogroups/audiogroup_default",
@@ -11,11 +10,14 @@
   "compression": 0,
   "conversionMode": 0,
   "duration": 4.6,
+  "name": "snd_Dream_Again",
   "parent": {
     "name": "Menus",
     "path": "folders/Sounds/Sound Effects/Alleged Real Sound Effects/Menus.yy",
   },
   "preload": false,
+  "resourceType": "GMSound",
+  "resourceVersion": "2.0",
   "sampleRate": 44100,
   "soundFile": "snd_Dream_Again.wav",
   "type": 0,

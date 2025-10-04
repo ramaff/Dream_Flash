@@ -1,9 +1,9 @@
 {
-  "resourceType": "GMPath",
-  "resourceVersion": "1.0",
-  "name": "Item_Path_Minus",
+  "$GMPath": "",
+  "%Name": "Item_Path_Minus",
   "closed": true,
   "kind": 1,
+  "name": "Item_Path_Minus",
   "parent": {
     "name": "Paths",
     "path": "folders/Paths.yy",
@@ -19,4 +19,6 @@
     {"speed":100.0,"x":1272.0,"y":728.0,},
   ],
   "precision": 4,
+  "resourceType": "GMPath",
+  "resourceVersion": "2.0",
 }

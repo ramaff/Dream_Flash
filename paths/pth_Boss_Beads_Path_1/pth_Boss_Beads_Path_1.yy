@@ -1,9 +1,9 @@
 {
-  "resourceType": "GMPath",
-  "resourceVersion": "1.0",
-  "name": "pth_Boss_Beads_Path_1",
+  "$GMPath": "",
+  "%Name": "pth_Boss_Beads_Path_1",
   "closed": true,
   "kind": 0,
+  "name": "pth_Boss_Beads_Path_1",
   "parent": {
     "name": "Paths",
     "path": "folders/Paths.yy",
@@ -18,4 +18,6 @@
     {"speed":100.0,"x":1443.4258,"y":584.1665,},
   ],
   "precision": 4,
+  "resourceType": "GMPath",
+  "resourceVersion": "2.0",
 }

@@ -1,7 +1,6 @@
 {
-  "resourceType": "GMSound",
-  "resourceVersion": "1.0",
-  "name": "sd_Boss_Kill",
+  "$GMSound": "",
+  "%Name": "sd_Boss_Kill",
   "audioGroupId": {
     "name": "audiogroup_default",
     "path": "audiogroups/audiogroup_default",
@@ -11,11 +10,14 @@
   "compression": 0,
   "conversionMode": 0,
   "duration": 0.866848,
+  "name": "sd_Boss_Kill",
   "parent": {
     "name": "old_placeholder_sounds",
     "path": "folders/Sounds/Sound Effects/old_placeholder_sounds.yy",
   },
   "preload": false,
+  "resourceType": "GMSound",
+  "resourceVersion": "2.0",
   "sampleRate": 44100,
   "soundFile": "sd_Boss_Kill",
   "type": 0,

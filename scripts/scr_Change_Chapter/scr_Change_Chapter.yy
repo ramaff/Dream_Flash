@@ -1,11 +1,13 @@
 {
-  "resourceType": "GMScript",
-  "resourceVersion": "1.0",
-  "name": "scr_Change_Chapter",
-  "isCompatibility": false,
-  "isDnD": false,
-  "parent": {
-    "name": "Room Commands",
-    "path": "folders/Scripts/Room Commands.yy",
+  "$GMScript":"v1",
+  "%Name":"scr_Change_Chapter",
+  "isCompatibility":false,
+  "isDnD":false,
+  "name":"scr_Change_Chapter",
+  "parent":{
+    "name":"Room Commands",
+    "path":"folders/Scripts/Room Commands.yy",
   },
+  "resourceType":"GMScript",
+  "resourceVersion":"2.0",
 }

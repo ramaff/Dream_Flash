@@ -1,11 +1,13 @@
 {
-  "resourceType": "GMScript",
-  "resourceVersion": "1.0",
-  "name": "scr_Boss_Self_Damage_Calc",
-  "isCompatibility": false,
-  "isDnD": false,
-  "parent": {
-    "name": "Math and Displays",
-    "path": "folders/Scripts/Boss Commands/Math and Displays.yy",
+  "$GMScript":"v1",
+  "%Name":"scr_Boss_Self_Damage_Calc",
+  "isCompatibility":false,
+  "isDnD":false,
+  "name":"scr_Boss_Self_Damage_Calc",
+  "parent":{
+    "name":"Math and Displays",
+    "path":"folders/Scripts/Boss Commands/Math and Displays.yy",
   },
+  "resourceType":"GMScript",
+  "resourceVersion":"2.0",
 }

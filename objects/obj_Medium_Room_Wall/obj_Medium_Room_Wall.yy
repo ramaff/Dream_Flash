@@ -1,9 +1,9 @@
 {
-  "resourceType": "GMObject",
-  "resourceVersion": "1.0",
-  "name": "obj_Medium_Room_Wall",
+  "$GMObject": "",
+  "%Name": "obj_Medium_Room_Wall",
   "eventList": [],
   "managed": true,
+  "name": "obj_Medium_Room_Wall",
   "overriddenProperties": [],
   "parent": {
     "name": "Room Stuff",
@@ -27,6 +27,8 @@
   "physicsShapePoints": [],
   "physicsStartAwake": true,
   "properties": [],
+  "resourceType": "GMObject",
+  "resourceVersion": "2.0",
   "solid": false,
   "spriteId": {
     "name": "spr_Giant_Wall",

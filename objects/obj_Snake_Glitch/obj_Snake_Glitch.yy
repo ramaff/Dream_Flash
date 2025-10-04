@@ -1,9 +1,9 @@
 {
-  "resourceType": "GMObject",
-  "resourceVersion": "1.0",
-  "name": "obj_Snake_Glitch",
+  "$GMObject": "",
+  "%Name": "obj_Snake_Glitch",
   "eventList": [],
   "managed": true,
+  "name": "obj_Snake_Glitch",
   "overriddenProperties": [],
   "parent": {
     "name": "Soul Effects",
@@ -27,6 +27,8 @@
   "physicsShapePoints": [],
   "physicsStartAwake": true,
   "properties": [],
+  "resourceType": "GMObject",
+  "resourceVersion": "2.0",
   "solid": false,
   "spriteId": {
     "name": "spr_The_Soul_Trail_Sway",

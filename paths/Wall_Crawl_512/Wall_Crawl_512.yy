@@ -1,9 +1,9 @@
 {
-  "resourceType": "GMPath",
-  "resourceVersion": "1.0",
-  "name": "Wall_Crawl_512",
+  "$GMPath": "",
+  "%Name": "Wall_Crawl_512",
   "closed": true,
   "kind": 1,
+  "name": "Wall_Crawl_512",
   "parent": {
     "name": "Paths",
     "path": "folders/Paths.yy",
@@ -23,4 +23,6 @@
     {"speed":100.0,"x":2676.0,"y":1972.64,},
   ],
   "precision": 4,
+  "resourceType": "GMPath",
+  "resourceVersion": "2.0",
 }

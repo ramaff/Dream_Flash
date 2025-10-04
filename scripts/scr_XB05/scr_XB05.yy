@@ -1,11 +1,13 @@
 {
-  "resourceType": "GMScript",
-  "resourceVersion": "1.0",
-  "name": "scr_XB05",
-  "isCompatibility": false,
-  "isDnD": false,
-  "parent": {
-    "name": "XB Items",
-    "path": "folders/Scripts/Item Commands/XB Items.yy",
+  "$GMScript":"v1",
+  "%Name":"scr_XB05",
+  "isCompatibility":false,
+  "isDnD":false,
+  "name":"scr_XB05",
+  "parent":{
+    "name":"XB Items",
+    "path":"folders/Scripts/Item Commands/XB Items.yy",
   },
+  "resourceType":"GMScript",
+  "resourceVersion":"2.0",
 }

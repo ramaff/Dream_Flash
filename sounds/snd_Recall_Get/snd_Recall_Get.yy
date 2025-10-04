@@ -1,7 +1,6 @@
 {
-  "resourceType": "GMSound",
-  "resourceVersion": "1.0",
-  "name": "snd_Recall_Get",
+  "$GMSound": "",
+  "%Name": "snd_Recall_Get",
   "audioGroupId": {
     "name": "audiogroup_default",
     "path": "audiogroups/audiogroup_default",
@@ -11,11 +10,14 @@
   "compression": 0,
   "conversionMode": 0,
   "duration": 0.3411,
+  "name": "snd_Recall_Get",
   "parent": {
     "name": "new_placeholder_sounds",
     "path": "folders/Sounds/Sound Effects/old_placeholder_sounds/new_placeholder_sounds.yy",
   },
   "preload": false,
+  "resourceType": "GMSound",
+  "resourceVersion": "2.0",
   "sampleRate": 44100,
   "soundFile": "snd_Recall_Get.wav",
   "type": 0,

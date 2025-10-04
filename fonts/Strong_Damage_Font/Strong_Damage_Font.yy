@@ -1,7 +1,6 @@
 {
-  "resourceType": "GMFont",
-  "resourceVersion": "1.0",
-  "name": "Strong_Damage_Font",
+  "$GMFont": "",
+  "%Name": "Strong_Damage_Font",
   "AntiAlias": 1,
   "applyKerning": 0,
   "ascender": 25,
@@ -668,6 +667,7 @@
   "last": 0,
   "lineHeight": 33,
   "maintainGms1Font": false,
+  "name": "Strong_Damage_Font",
   "parent": {
     "name": "Fonts",
     "path": "folders/Fonts.yy",
@@ -677,6 +677,8 @@
     {"lower":32,"upper":127,},
   ],
   "regenerateBitmap": false,
+  "resourceType": "GMFont",
+  "resourceVersion": "2.0",
   "sampleText": "abcdef ABCDEF\n0123456789 .,<>\"'&!?\nthe quick brown fox jumps over the lazy dog\nTHE QUICK BROWN FOX JUMPS OVER THE LAZY DOG\nDefault character: ▯ (9647)",
   "sdfSpread": 8,
   "size": 20.0,

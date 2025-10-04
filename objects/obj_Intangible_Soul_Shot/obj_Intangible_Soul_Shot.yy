@@ -1,9 +1,9 @@
 {
-  "resourceType": "GMObject",
-  "resourceVersion": "1.0",
-  "name": "obj_Intangible_Soul_Shot",
+  "$GMObject": "",
+  "%Name": "obj_Intangible_Soul_Shot",
   "eventList": [],
   "managed": true,
+  "name": "obj_Intangible_Soul_Shot",
   "overriddenProperties": [],
   "parent": {
     "name": "Soul Shots",
@@ -24,6 +24,8 @@
   "physicsShapePoints": [],
   "physicsStartAwake": true,
   "properties": [],
+  "resourceType": "GMObject",
+  "resourceVersion": "2.0",
   "solid": false,
   "spriteId": {
     "name": "spr_Soul_Shot",

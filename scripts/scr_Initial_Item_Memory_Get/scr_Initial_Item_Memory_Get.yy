@@ -1,11 +1,13 @@
 {
-  "resourceType": "GMScript",
-  "resourceVersion": "1.0",
-  "name": "scr_Initial_Item_Memory_Get",
-  "isCompatibility": false,
-  "isDnD": false,
-  "parent": {
-    "name": "Recollection",
-    "path": "folders/Scripts/Recollection.yy",
+  "$GMScript":"v1",
+  "%Name":"scr_Initial_Item_Memory_Get",
+  "isCompatibility":false,
+  "isDnD":false,
+  "name":"scr_Initial_Item_Memory_Get",
+  "parent":{
+    "name":"Recollection",
+    "path":"folders/Scripts/Recollection.yy",
   },
+  "resourceType":"GMScript",
+  "resourceVersion":"2.0",
 }

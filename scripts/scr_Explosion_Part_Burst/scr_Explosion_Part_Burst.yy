@@ -1,11 +1,13 @@
 {
-  "resourceType": "GMScript",
-  "resourceVersion": "1.0",
-  "name": "scr_Explosion_Part_Burst",
-  "isCompatibility": false,
-  "isDnD": false,
-  "parent": {
-    "name": "Partlcles",
-    "path": "folders/Scripts/Soul Commands/Partlcles.yy",
+  "$GMScript":"v1",
+  "%Name":"scr_Explosion_Part_Burst",
+  "isCompatibility":false,
+  "isDnD":false,
+  "name":"scr_Explosion_Part_Burst",
+  "parent":{
+    "name":"Partlcles",
+    "path":"folders/Scripts/Soul Commands/Partlcles.yy",
   },
+  "resourceType":"GMScript",
+  "resourceVersion":"2.0",
 }

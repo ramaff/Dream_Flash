@@ -1,11 +1,13 @@
 {
-  "resourceType": "GMScript",
-  "resourceVersion": "1.0",
-  "name": "scr_Soul_Shot_Rebound_Parts",
-  "isCompatibility": false,
-  "isDnD": false,
-  "parent": {
-    "name": "Soul Shots",
-    "path": "folders/Scripts/Weapon Commands/Soul Shots.yy",
+  "$GMScript":"v1",
+  "%Name":"scr_Soul_Shot_Rebound_Parts",
+  "isCompatibility":false,
+  "isDnD":false,
+  "name":"scr_Soul_Shot_Rebound_Parts",
+  "parent":{
+    "name":"Soul Shots",
+    "path":"folders/Scripts/Weapon Commands/Soul Shots.yy",
   },
+  "resourceType":"GMScript",
+  "resourceVersion":"2.0",
 }

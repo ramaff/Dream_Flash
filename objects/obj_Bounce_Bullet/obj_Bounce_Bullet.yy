@@ -1,9 +1,9 @@
 {
-  "resourceType": "GMObject",
-  "resourceVersion": "1.0",
-  "name": "obj_Bounce_Bullet",
+  "$GMObject": "",
+  "%Name": "obj_Bounce_Bullet",
   "eventList": [],
   "managed": true,
+  "name": "obj_Bounce_Bullet",
   "overriddenProperties": [],
   "parent": {
     "name": "zBasic Bullets",
@@ -27,6 +27,8 @@
   "physicsShapePoints": [],
   "physicsStartAwake": true,
   "properties": [],
+  "resourceType": "GMObject",
+  "resourceVersion": "2.0",
   "solid": false,
   "spriteId": {
     "name": "spr_Glowy_Enemy_Shot",

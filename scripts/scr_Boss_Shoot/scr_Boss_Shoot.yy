@@ -1,11 +1,13 @@
 {
-  "resourceType": "GMScript",
-  "resourceVersion": "1.0",
-  "name": "scr_Boss_Shoot",
-  "isCompatibility": false,
-  "isDnD": false,
-  "parent": {
-    "name": "Shooting",
-    "path": "folders/Scripts/Boss Commands/Shooting.yy",
+  "$GMScript":"v1",
+  "%Name":"scr_Boss_Shoot",
+  "isCompatibility":false,
+  "isDnD":false,
+  "name":"scr_Boss_Shoot",
+  "parent":{
+    "name":"Shooting",
+    "path":"folders/Scripts/Boss Commands/Shooting.yy",
   },
+  "resourceType":"GMScript",
+  "resourceVersion":"2.0",
 }

@@ -1,7 +1,6 @@
 {
-  "resourceType": "GMSound",
-  "resourceVersion": "1.0",
-  "name": "sd_Sword_Slash",
+  "$GMSound": "",
+  "%Name": "sd_Sword_Slash",
   "audioGroupId": {
     "name": "audiogroup_default",
     "path": "audiogroups/audiogroup_default",
@@ -11,11 +10,14 @@
   "compression": 0,
   "conversionMode": 0,
   "duration": 0.310147,
+  "name": "sd_Sword_Slash",
   "parent": {
     "name": "bad custom sound attempts",
     "path": "folders/Sounds/Sound Effects/old_placeholder_sounds/bad custom sound attempts.yy",
   },
   "preload": false,
+  "resourceType": "GMSound",
+  "resourceVersion": "2.0",
   "sampleRate": 44100,
   "soundFile": "sd_Sword_Slash.wav",
   "type": 0,

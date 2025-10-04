@@ -1,11 +1,13 @@
 {
-  "resourceType": "GMScript",
-  "resourceVersion": "1.0",
-  "name": "scr_Spike_Soul_Teleport",
-  "isCompatibility": false,
-  "isDnD": false,
-  "parent": {
-    "name": "Teleport_Mods",
-    "path": "folders/Scripts/State Commands/Teleport_Mods.yy",
+  "$GMScript":"v1",
+  "%Name":"scr_Spike_Soul_Teleport",
+  "isCompatibility":false,
+  "isDnD":false,
+  "name":"scr_Spike_Soul_Teleport",
+  "parent":{
+    "name":"Teleport_Mods",
+    "path":"folders/Scripts/State Commands/Teleport_Mods.yy",
   },
+  "resourceType":"GMScript",
+  "resourceVersion":"2.0",
 }

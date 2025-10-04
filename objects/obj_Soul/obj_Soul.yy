@@ -1,9 +1,9 @@
 {
-  "resourceType": "GMObject",
-  "resourceVersion": "1.0",
-  "name": "obj_Soul",
+  "$GMObject": "",
+  "%Name": "obj_Soul",
   "eventList": [],
   "managed": true,
+  "name": "obj_Soul",
   "overriddenProperties": [],
   "parent": {
     "name": "Souls",
@@ -27,6 +27,8 @@
   "physicsShapePoints": [],
   "physicsStartAwake": true,
   "properties": [],
+  "resourceType": "GMObject",
+  "resourceVersion": "2.0",
   "solid": false,
   "spriteId": null,
   "spriteMaskId": null,

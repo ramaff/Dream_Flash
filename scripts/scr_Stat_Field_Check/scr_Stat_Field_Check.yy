@@ -1,11 +1,13 @@
 {
-  "resourceType": "GMScript",
-  "resourceVersion": "1.0",
-  "name": "scr_Stat_Field_Check",
-  "isCompatibility": false,
-  "isDnD": false,
-  "parent": {
-    "name": "Room Commands",
-    "path": "folders/Scripts/Room Commands.yy",
+  "$GMScript":"v1",
+  "%Name":"scr_Stat_Field_Check",
+  "isCompatibility":false,
+  "isDnD":false,
+  "name":"scr_Stat_Field_Check",
+  "parent":{
+    "name":"Room Commands",
+    "path":"folders/Scripts/Room Commands.yy",
   },
+  "resourceType":"GMScript",
+  "resourceVersion":"2.0",
 }
