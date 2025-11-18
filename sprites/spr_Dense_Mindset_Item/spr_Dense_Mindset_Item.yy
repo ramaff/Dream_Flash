@@ -1,5 +1,5 @@
 {
-  "$GMSprite":"",
+  "$GMSprite":"v2",
   "%Name":"spr_Dense_Mindset_Item",
   "bboxMode":0,
   "bbox_bottom":157,
@@ -12,7 +12,7 @@
   "edgeFiltering":false,
   "For3D":false,
   "frames":[
-    {"$GMSpriteFrame":"","%Name":"0a7c87eb-ae74-4776-a9d5-8095abbd4ebf","name":"0a7c87eb-ae74-4776-a9d5-8095abbd4ebf","resourceType":"GMSpriteFrame","resourceVersion":"2.0",},
+    {"$GMSpriteFrame":"v1","%Name":"0a7c87eb-ae74-4776-a9d5-8095abbd4ebf","name":"0a7c87eb-ae74-4776-a9d5-8095abbd4ebf","resourceType":"GMSpriteFrame","resourceVersion":"2.0",},
   ],
   "gridX":0,
   "gridY":0,

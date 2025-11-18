@@ -2,7 +2,7 @@
 global.currentweapon = variable_struct_get(weapon[0], "weapon_id");
 
 if angular_rotation != 0 {
-	scr_Weapon_Slot_Info_Update(Soul_Weapons_Control.weapon_slot_info)	
+	weapon_slot_info = scr_Weapon_Slot_Info_Update(weapon_slot_info)	
 }
 
 if keyboard_check_pressed(ord(global.gameWeaponSwapDown)) {

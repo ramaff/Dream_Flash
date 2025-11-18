@@ -1,5 +1,5 @@
 {
-  "$GMSprite":"",
+  "$GMSprite":"v2",
   "%Name":"spr_Jackhamster",
   "bboxMode":0,
   "bbox_bottom":405,
@@ -12,7 +12,7 @@
   "edgeFiltering":false,
   "For3D":false,
   "frames":[
-    {"$GMSpriteFrame":"","%Name":"8c279864-3ee2-4112-9fd9-20ebc3f87bb2","name":"8c279864-3ee2-4112-9fd9-20ebc3f87bb2","resourceType":"GMSpriteFrame","resourceVersion":"2.0",},
+    {"$GMSpriteFrame":"v1","%Name":"8c279864-3ee2-4112-9fd9-20ebc3f87bb2","name":"8c279864-3ee2-4112-9fd9-20ebc3f87bb2","resourceType":"GMSpriteFrame","resourceVersion":"2.0",},
   ],
   "gridX":0,
   "gridY":0,

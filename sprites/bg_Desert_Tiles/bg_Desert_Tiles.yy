@@ -1,5 +1,5 @@
 {
-  "$GMSprite":"",
+  "$GMSprite":"v2",
   "%Name":"bg_Desert_Tiles",
   "bboxMode":0,
   "bbox_bottom":127,
@@ -12,7 +12,7 @@
   "edgeFiltering":false,
   "For3D":false,
   "frames":[
-    {"$GMSpriteFrame":"","%Name":"de1d5a43-05dc-45d3-9c25-67a2e6fa6dea","name":"de1d5a43-05dc-45d3-9c25-67a2e6fa6dea","resourceType":"GMSpriteFrame","resourceVersion":"2.0",},
+    {"$GMSpriteFrame":"v1","%Name":"de1d5a43-05dc-45d3-9c25-67a2e6fa6dea","name":"de1d5a43-05dc-45d3-9c25-67a2e6fa6dea","resourceType":"GMSpriteFrame","resourceVersion":"2.0",},
   ],
   "gridX":0,
   "gridY":0,

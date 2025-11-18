@@ -1,5 +1,5 @@
 {
-  "$GMSprite":"",
+  "$GMSprite":"v2",
   "%Name":"spr_Wooden_Grave",
   "bboxMode":0,
   "bbox_bottom":124,
@@ -12,8 +12,8 @@
   "edgeFiltering":false,
   "For3D":false,
   "frames":[
-    {"$GMSpriteFrame":"","%Name":"e401bcc4-64b2-4edf-a2e5-85dc69f438d5","name":"e401bcc4-64b2-4edf-a2e5-85dc69f438d5","resourceType":"GMSpriteFrame","resourceVersion":"2.0",},
-    {"$GMSpriteFrame":"","%Name":"4af91447-e552-4faf-8fab-f4861bf9f065","name":"4af91447-e552-4faf-8fab-f4861bf9f065","resourceType":"GMSpriteFrame","resourceVersion":"2.0",},
+    {"$GMSpriteFrame":"v1","%Name":"e401bcc4-64b2-4edf-a2e5-85dc69f438d5","name":"e401bcc4-64b2-4edf-a2e5-85dc69f438d5","resourceType":"GMSpriteFrame","resourceVersion":"2.0",},
+    {"$GMSpriteFrame":"v1","%Name":"4af91447-e552-4faf-8fab-f4861bf9f065","name":"4af91447-e552-4faf-8fab-f4861bf9f065","resourceType":"GMSpriteFrame","resourceVersion":"2.0",},
   ],
   "gridX":0,
   "gridY":0,

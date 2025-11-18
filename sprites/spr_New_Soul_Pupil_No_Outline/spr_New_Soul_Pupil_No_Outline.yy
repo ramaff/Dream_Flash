@@ -1,5 +1,5 @@
 {
-  "$GMSprite":"",
+  "$GMSprite":"v2",
   "%Name":"spr_New_Soul_Pupil_No_Outline",
   "bboxMode":2,
   "bbox_bottom":131,
@@ -12,7 +12,7 @@
   "edgeFiltering":false,
   "For3D":false,
   "frames":[
-    {"$GMSpriteFrame":"","%Name":"5277eaad-96bb-42c1-a827-5a7bd0b33b10","name":"5277eaad-96bb-42c1-a827-5a7bd0b33b10","resourceType":"GMSpriteFrame","resourceVersion":"2.0",},
+    {"$GMSpriteFrame":"v1","%Name":"5277eaad-96bb-42c1-a827-5a7bd0b33b10","name":"5277eaad-96bb-42c1-a827-5a7bd0b33b10","resourceType":"GMSpriteFrame","resourceVersion":"2.0",},
   ],
   "gridX":0,
   "gridY":0,

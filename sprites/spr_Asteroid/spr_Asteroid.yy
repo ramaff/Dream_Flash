@@ -1,5 +1,5 @@
 {
-  "$GMSprite":"",
+  "$GMSprite":"v2",
   "%Name":"spr_Asteroid",
   "bboxMode":0,
   "bbox_bottom":179,
@@ -12,7 +12,7 @@
   "edgeFiltering":false,
   "For3D":false,
   "frames":[
-    {"$GMSpriteFrame":"","%Name":"9b856bec-2d0c-444f-bcf5-7313c5a3d20e","name":"9b856bec-2d0c-444f-bcf5-7313c5a3d20e","resourceType":"GMSpriteFrame","resourceVersion":"2.0",},
+    {"$GMSpriteFrame":"v1","%Name":"9b856bec-2d0c-444f-bcf5-7313c5a3d20e","name":"9b856bec-2d0c-444f-bcf5-7313c5a3d20e","resourceType":"GMSpriteFrame","resourceVersion":"2.0",},
   ],
   "gridX":0,
   "gridY":0,

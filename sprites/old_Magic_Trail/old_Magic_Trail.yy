@@ -1,5 +1,5 @@
 {
-  "$GMSprite":"",
+  "$GMSprite":"v2",
   "%Name":"old_Magic_Trail",
   "bboxMode":2,
   "bbox_bottom":28,
@@ -12,7 +12,7 @@
   "edgeFiltering":false,
   "For3D":false,
   "frames":[
-    {"$GMSpriteFrame":"","%Name":"a862623a-15d1-4e37-890b-70754e368a2f","name":"a862623a-15d1-4e37-890b-70754e368a2f","resourceType":"GMSpriteFrame","resourceVersion":"2.0",},
+    {"$GMSpriteFrame":"v1","%Name":"a862623a-15d1-4e37-890b-70754e368a2f","name":"a862623a-15d1-4e37-890b-70754e368a2f","resourceType":"GMSpriteFrame","resourceVersion":"2.0",},
   ],
   "gridX":0,
   "gridY":0,

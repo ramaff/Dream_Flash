@@ -1,5 +1,5 @@
 {
-  "$GMSprite":"",
+  "$GMSprite":"v2",
   "%Name":"spr_Water_Drop_Bullet",
   "bboxMode":2,
   "bbox_bottom":49,
@@ -12,7 +12,7 @@
   "edgeFiltering":false,
   "For3D":false,
   "frames":[
-    {"$GMSpriteFrame":"","%Name":"bcc64126-44b1-49f4-b9ab-8b576df9ed32","name":"bcc64126-44b1-49f4-b9ab-8b576df9ed32","resourceType":"GMSpriteFrame","resourceVersion":"2.0",},
+    {"$GMSpriteFrame":"v1","%Name":"bcc64126-44b1-49f4-b9ab-8b576df9ed32","name":"bcc64126-44b1-49f4-b9ab-8b576df9ed32","resourceType":"GMSpriteFrame","resourceVersion":"2.0",},
   ],
   "gridX":0,
   "gridY":0,

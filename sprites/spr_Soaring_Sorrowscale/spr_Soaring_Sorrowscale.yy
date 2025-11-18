@@ -1,5 +1,5 @@
 {
-  "$GMSprite":"",
+  "$GMSprite":"v2",
   "%Name":"spr_Soaring_Sorrowscale",
   "bboxMode":0,
   "bbox_bottom":242,
@@ -12,7 +12,7 @@
   "edgeFiltering":false,
   "For3D":false,
   "frames":[
-    {"$GMSpriteFrame":"","%Name":"d85ae4fd-16e6-4d8c-b574-c5aa997c11d4","name":"d85ae4fd-16e6-4d8c-b574-c5aa997c11d4","resourceType":"GMSpriteFrame","resourceVersion":"2.0",},
+    {"$GMSpriteFrame":"v1","%Name":"d85ae4fd-16e6-4d8c-b574-c5aa997c11d4","name":"d85ae4fd-16e6-4d8c-b574-c5aa997c11d4","resourceType":"GMSpriteFrame","resourceVersion":"2.0",},
   ],
   "gridX":0,
   "gridY":0,

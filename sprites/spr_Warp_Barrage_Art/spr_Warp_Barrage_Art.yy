@@ -1,5 +1,5 @@
 {
-  "$GMSprite":"",
+  "$GMSprite":"v2",
   "%Name":"spr_Warp_Barrage_Art",
   "bboxMode":1,
   "bbox_bottom":163,
@@ -12,7 +12,7 @@
   "edgeFiltering":false,
   "For3D":false,
   "frames":[
-    {"$GMSpriteFrame":"","%Name":"521f629b-aa6c-4f7f-b3c0-69a5ec92c577","name":"521f629b-aa6c-4f7f-b3c0-69a5ec92c577","resourceType":"GMSpriteFrame","resourceVersion":"2.0",},
+    {"$GMSpriteFrame":"v1","%Name":"521f629b-aa6c-4f7f-b3c0-69a5ec92c577","name":"521f629b-aa6c-4f7f-b3c0-69a5ec92c577","resourceType":"GMSpriteFrame","resourceVersion":"2.0",},
   ],
   "gridX":0,
   "gridY":0,

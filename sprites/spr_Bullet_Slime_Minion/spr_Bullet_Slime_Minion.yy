@@ -1,5 +1,5 @@
 {
-  "$GMSprite":"",
+  "$GMSprite":"v2",
   "%Name":"spr_Bullet_Slime_Minion",
   "bboxMode":0,
   "bbox_bottom":134,
@@ -12,8 +12,8 @@
   "edgeFiltering":false,
   "For3D":false,
   "frames":[
-    {"$GMSpriteFrame":"","%Name":"10368dcd-2c86-469f-b84d-91d434733b1e","name":"10368dcd-2c86-469f-b84d-91d434733b1e","resourceType":"GMSpriteFrame","resourceVersion":"2.0",},
-    {"$GMSpriteFrame":"","%Name":"19a7b66f-9746-4d51-a3aa-aa3d77186ac7","name":"19a7b66f-9746-4d51-a3aa-aa3d77186ac7","resourceType":"GMSpriteFrame","resourceVersion":"2.0",},
+    {"$GMSpriteFrame":"v1","%Name":"10368dcd-2c86-469f-b84d-91d434733b1e","name":"10368dcd-2c86-469f-b84d-91d434733b1e","resourceType":"GMSpriteFrame","resourceVersion":"2.0",},
+    {"$GMSpriteFrame":"v1","%Name":"19a7b66f-9746-4d51-a3aa-aa3d77186ac7","name":"19a7b66f-9746-4d51-a3aa-aa3d77186ac7","resourceType":"GMSpriteFrame","resourceVersion":"2.0",},
   ],
   "gridX":0,
   "gridY":0,

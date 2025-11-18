@@ -1,5 +1,5 @@
 {
-  "$GMSprite":"",
+  "$GMSprite":"v2",
   "%Name":"spr_Comfort_Zones_Art",
   "bboxMode":0,
   "bbox_bottom":163,
@@ -12,7 +12,7 @@
   "edgeFiltering":false,
   "For3D":false,
   "frames":[
-    {"$GMSpriteFrame":"","%Name":"16a3f490-c811-44cb-a1e7-0cfdb28b0804","name":"16a3f490-c811-44cb-a1e7-0cfdb28b0804","resourceType":"GMSpriteFrame","resourceVersion":"2.0",},
+    {"$GMSpriteFrame":"v1","%Name":"16a3f490-c811-44cb-a1e7-0cfdb28b0804","name":"16a3f490-c811-44cb-a1e7-0cfdb28b0804","resourceType":"GMSpriteFrame","resourceVersion":"2.0",},
   ],
   "gridX":0,
   "gridY":0,

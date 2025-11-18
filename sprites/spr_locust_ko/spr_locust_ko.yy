@@ -1,5 +1,5 @@
 {
-  "$GMSprite":"",
+  "$GMSprite":"v2",
   "%Name":"spr_locust_ko",
   "bboxMode":0,
   "bbox_bottom":367,
@@ -12,7 +12,7 @@
   "edgeFiltering":false,
   "For3D":false,
   "frames":[
-    {"$GMSpriteFrame":"","%Name":"02eef05d-a0b8-458b-89e5-90d8622adbeb","name":"02eef05d-a0b8-458b-89e5-90d8622adbeb","resourceType":"GMSpriteFrame","resourceVersion":"2.0",},
+    {"$GMSpriteFrame":"v1","%Name":"02eef05d-a0b8-458b-89e5-90d8622adbeb","name":"02eef05d-a0b8-458b-89e5-90d8622adbeb","resourceType":"GMSpriteFrame","resourceVersion":"2.0",},
   ],
   "gridX":0,
   "gridY":0,

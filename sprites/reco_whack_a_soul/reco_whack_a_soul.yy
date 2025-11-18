@@ -1,5 +1,5 @@
 {
-  "$GMSprite":"",
+  "$GMSprite":"v2",
   "%Name":"reco_whack_a_soul",
   "bboxMode":0,
   "bbox_bottom":316,
@@ -12,7 +12,7 @@
   "edgeFiltering":false,
   "For3D":false,
   "frames":[
-    {"$GMSpriteFrame":"","%Name":"40bb6890-9ad4-48e9-8a23-75a3294e0760","name":"40bb6890-9ad4-48e9-8a23-75a3294e0760","resourceType":"GMSpriteFrame","resourceVersion":"2.0",},
+    {"$GMSpriteFrame":"v1","%Name":"40bb6890-9ad4-48e9-8a23-75a3294e0760","name":"40bb6890-9ad4-48e9-8a23-75a3294e0760","resourceType":"GMSpriteFrame","resourceVersion":"2.0",},
   ],
   "gridX":0,
   "gridY":0,

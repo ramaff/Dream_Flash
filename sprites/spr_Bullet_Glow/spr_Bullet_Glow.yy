@@ -1,5 +1,5 @@
 {
-  "$GMSprite":"",
+  "$GMSprite":"v2",
   "%Name":"spr_Bullet_Glow",
   "bboxMode":0,
   "bbox_bottom":63,
@@ -12,7 +12,7 @@
   "edgeFiltering":false,
   "For3D":false,
   "frames":[
-    {"$GMSpriteFrame":"","%Name":"99fa69fc-6fa0-4e4a-80fb-cfcb22ccdd86","name":"99fa69fc-6fa0-4e4a-80fb-cfcb22ccdd86","resourceType":"GMSpriteFrame","resourceVersion":"2.0",},
+    {"$GMSpriteFrame":"v1","%Name":"99fa69fc-6fa0-4e4a-80fb-cfcb22ccdd86","name":"99fa69fc-6fa0-4e4a-80fb-cfcb22ccdd86","resourceType":"GMSpriteFrame","resourceVersion":"2.0",},
   ],
   "gridX":0,
   "gridY":0,

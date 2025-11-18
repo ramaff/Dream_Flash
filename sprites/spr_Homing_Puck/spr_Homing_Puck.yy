@@ -1,5 +1,5 @@
 {
-  "$GMSprite":"",
+  "$GMSprite":"v2",
   "%Name":"spr_Homing_Puck",
   "bboxMode":2,
   "bbox_bottom":54,
@@ -12,7 +12,7 @@
   "edgeFiltering":false,
   "For3D":false,
   "frames":[
-    {"$GMSpriteFrame":"","%Name":"8d6d0adb-d5ee-4af7-9c2b-3a442637a5d3","name":"8d6d0adb-d5ee-4af7-9c2b-3a442637a5d3","resourceType":"GMSpriteFrame","resourceVersion":"2.0",},
+    {"$GMSpriteFrame":"v1","%Name":"8d6d0adb-d5ee-4af7-9c2b-3a442637a5d3","name":"8d6d0adb-d5ee-4af7-9c2b-3a442637a5d3","resourceType":"GMSpriteFrame","resourceVersion":"2.0",},
   ],
   "gridX":0,
   "gridY":0,

@@ -1,5 +1,5 @@
 {
-  "$GMSprite":"",
+  "$GMSprite":"v2",
   "%Name":"spr_Yellow_Hand",
   "bboxMode":2,
   "bbox_bottom":33,
@@ -12,7 +12,7 @@
   "edgeFiltering":false,
   "For3D":false,
   "frames":[
-    {"$GMSpriteFrame":"","%Name":"c7fba143-2c69-4e38-b333-ac3f0e3d7d15","name":"c7fba143-2c69-4e38-b333-ac3f0e3d7d15","resourceType":"GMSpriteFrame","resourceVersion":"2.0",},
+    {"$GMSpriteFrame":"v1","%Name":"c7fba143-2c69-4e38-b333-ac3f0e3d7d15","name":"c7fba143-2c69-4e38-b333-ac3f0e3d7d15","resourceType":"GMSpriteFrame","resourceVersion":"2.0",},
   ],
   "gridX":0,
   "gridY":0,

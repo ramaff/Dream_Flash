@@ -1,5 +1,5 @@
 {
-  "$GMSprite":"",
+  "$GMSprite":"v2",
   "%Name":"spr_Scrub_Soul_Reco_Icon",
   "bboxMode":0,
   "bbox_bottom":178,
@@ -12,7 +12,7 @@
   "edgeFiltering":false,
   "For3D":false,
   "frames":[
-    {"$GMSpriteFrame":"","%Name":"c43d5e69-d24b-4f40-badd-0657bc5ca516","name":"c43d5e69-d24b-4f40-badd-0657bc5ca516","resourceType":"GMSpriteFrame","resourceVersion":"2.0",},
+    {"$GMSpriteFrame":"v1","%Name":"c43d5e69-d24b-4f40-badd-0657bc5ca516","name":"c43d5e69-d24b-4f40-badd-0657bc5ca516","resourceType":"GMSpriteFrame","resourceVersion":"2.0",},
   ],
   "gridX":0,
   "gridY":0,

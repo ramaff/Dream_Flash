@@ -1,5 +1,5 @@
 {
-  "$GMSprite":"",
+  "$GMSprite":"v2",
   "%Name":"spr_Power_Whip_Tip",
   "bboxMode":0,
   "bbox_bottom":60,
@@ -12,7 +12,7 @@
   "edgeFiltering":false,
   "For3D":false,
   "frames":[
-    {"$GMSpriteFrame":"","%Name":"aa86bc94-b33d-4c92-b611-4ae8939ac485","name":"aa86bc94-b33d-4c92-b611-4ae8939ac485","resourceType":"GMSpriteFrame","resourceVersion":"2.0",},
+    {"$GMSpriteFrame":"v1","%Name":"aa86bc94-b33d-4c92-b611-4ae8939ac485","name":"aa86bc94-b33d-4c92-b611-4ae8939ac485","resourceType":"GMSpriteFrame","resourceVersion":"2.0",},
   ],
   "gridX":0,
   "gridY":0,

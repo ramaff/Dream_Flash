@@ -1,5 +1,5 @@
 {
-  "$GMSprite":"",
+  "$GMSprite":"v2",
   "%Name":"reco_horror_stack_v2",
   "bboxMode":0,
   "bbox_bottom":420,
@@ -12,7 +12,7 @@
   "edgeFiltering":false,
   "For3D":false,
   "frames":[
-    {"$GMSpriteFrame":"","%Name":"d34c6d4b-52fd-417c-beb9-ced4d39fdeca","name":"d34c6d4b-52fd-417c-beb9-ced4d39fdeca","resourceType":"GMSpriteFrame","resourceVersion":"2.0",},
+    {"$GMSpriteFrame":"v1","%Name":"d34c6d4b-52fd-417c-beb9-ced4d39fdeca","name":"d34c6d4b-52fd-417c-beb9-ced4d39fdeca","resourceType":"GMSpriteFrame","resourceVersion":"2.0",},
   ],
   "gridX":0,
   "gridY":0,

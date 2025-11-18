@@ -1,5 +1,5 @@
 {
-  "$GMSprite":"",
+  "$GMSprite":"v2",
   "%Name":"spr_Cursed_Dormant_Shot",
   "bboxMode":2,
   "bbox_bottom":43,
@@ -12,7 +12,7 @@
   "edgeFiltering":false,
   "For3D":false,
   "frames":[
-    {"$GMSpriteFrame":"","%Name":"8f809bd9-2ea7-429d-a5f0-72e6f672e614","name":"8f809bd9-2ea7-429d-a5f0-72e6f672e614","resourceType":"GMSpriteFrame","resourceVersion":"2.0",},
+    {"$GMSpriteFrame":"v1","%Name":"8f809bd9-2ea7-429d-a5f0-72e6f672e614","name":"8f809bd9-2ea7-429d-a5f0-72e6f672e614","resourceType":"GMSpriteFrame","resourceVersion":"2.0",},
   ],
   "gridX":0,
   "gridY":0,

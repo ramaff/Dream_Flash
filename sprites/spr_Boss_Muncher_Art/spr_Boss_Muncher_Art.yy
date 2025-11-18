@@ -1,5 +1,5 @@
 {
-  "$GMSprite":"",
+  "$GMSprite":"v2",
   "%Name":"spr_Boss_Muncher_Art",
   "bboxMode":0,
   "bbox_bottom":131,
@@ -12,7 +12,7 @@
   "edgeFiltering":false,
   "For3D":false,
   "frames":[
-    {"$GMSpriteFrame":"","%Name":"24ceb92e-2c91-4d5d-ad80-18a95e07289e","name":"24ceb92e-2c91-4d5d-ad80-18a95e07289e","resourceType":"GMSpriteFrame","resourceVersion":"2.0",},
+    {"$GMSpriteFrame":"v1","%Name":"24ceb92e-2c91-4d5d-ad80-18a95e07289e","name":"24ceb92e-2c91-4d5d-ad80-18a95e07289e","resourceType":"GMSpriteFrame","resourceVersion":"2.0",},
   ],
   "gridX":0,
   "gridY":0,

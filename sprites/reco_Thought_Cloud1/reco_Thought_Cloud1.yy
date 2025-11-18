@@ -1,5 +1,5 @@
 {
-  "$GMSprite":"",
+  "$GMSprite":"v2",
   "%Name":"reco_Thought_Cloud1",
   "bboxMode":0,
   "bbox_bottom":126,
@@ -12,7 +12,7 @@
   "edgeFiltering":false,
   "For3D":false,
   "frames":[
-    {"$GMSpriteFrame":"","%Name":"5833ce2f-880d-4836-8773-0299fa332357","name":"5833ce2f-880d-4836-8773-0299fa332357","resourceType":"GMSpriteFrame","resourceVersion":"2.0",},
+    {"$GMSpriteFrame":"v1","%Name":"5833ce2f-880d-4836-8773-0299fa332357","name":"5833ce2f-880d-4836-8773-0299fa332357","resourceType":"GMSpriteFrame","resourceVersion":"2.0",},
   ],
   "gridX":0,
   "gridY":0,

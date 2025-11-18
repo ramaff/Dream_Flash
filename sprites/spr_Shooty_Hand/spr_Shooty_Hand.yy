@@ -1,5 +1,5 @@
 {
-  "$GMSprite":"",
+  "$GMSprite":"v2",
   "%Name":"spr_Shooty_Hand",
   "bboxMode":2,
   "bbox_bottom":41,
@@ -12,7 +12,7 @@
   "edgeFiltering":false,
   "For3D":false,
   "frames":[
-    {"$GMSpriteFrame":"","%Name":"dd584514-ca7f-4132-a756-039f1238dc68","name":"dd584514-ca7f-4132-a756-039f1238dc68","resourceType":"GMSpriteFrame","resourceVersion":"2.0",},
+    {"$GMSpriteFrame":"v1","%Name":"dd584514-ca7f-4132-a756-039f1238dc68","name":"dd584514-ca7f-4132-a756-039f1238dc68","resourceType":"GMSpriteFrame","resourceVersion":"2.0",},
   ],
   "gridX":0,
   "gridY":0,

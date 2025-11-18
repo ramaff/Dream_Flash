@@ -1,5 +1,5 @@
 {
-  "$GMSprite":"",
+  "$GMSprite":"v2",
   "%Name":"reco_Ninja_Spirit",
   "bboxMode":0,
   "bbox_bottom":457,
@@ -12,7 +12,7 @@
   "edgeFiltering":false,
   "For3D":false,
   "frames":[
-    {"$GMSpriteFrame":"","%Name":"0154958a-bd65-49b9-a2a6-023425033976","name":"0154958a-bd65-49b9-a2a6-023425033976","resourceType":"GMSpriteFrame","resourceVersion":"2.0",},
+    {"$GMSpriteFrame":"v1","%Name":"0154958a-bd65-49b9-a2a6-023425033976","name":"0154958a-bd65-49b9-a2a6-023425033976","resourceType":"GMSpriteFrame","resourceVersion":"2.0",},
   ],
   "gridX":0,
   "gridY":0,

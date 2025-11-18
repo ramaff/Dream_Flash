@@ -1,5 +1,5 @@
 {
-  "$GMSprite":"",
+  "$GMSprite":"v2",
   "%Name":"spr_Minesweeper_Clapper",
   "bboxMode":0,
   "bbox_bottom":279,
@@ -12,7 +12,7 @@
   "edgeFiltering":false,
   "For3D":false,
   "frames":[
-    {"$GMSpriteFrame":"","%Name":"e1468d2d-68a2-456c-9d00-c1973d9b6a29","name":"e1468d2d-68a2-456c-9d00-c1973d9b6a29","resourceType":"GMSpriteFrame","resourceVersion":"2.0",},
+    {"$GMSpriteFrame":"v1","%Name":"e1468d2d-68a2-456c-9d00-c1973d9b6a29","name":"e1468d2d-68a2-456c-9d00-c1973d9b6a29","resourceType":"GMSpriteFrame","resourceVersion":"2.0",},
   ],
   "gridX":0,
   "gridY":0,

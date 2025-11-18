@@ -1,5 +1,5 @@
 {
-  "$GMSprite":"",
+  "$GMSprite":"v2",
   "%Name":"spr_wall_king_ko",
   "bboxMode":0,
   "bbox_bottom":626,
@@ -12,7 +12,7 @@
   "edgeFiltering":false,
   "For3D":false,
   "frames":[
-    {"$GMSpriteFrame":"","%Name":"29ffd956-5227-4d3e-bb8d-e6800d61b1c5","name":"29ffd956-5227-4d3e-bb8d-e6800d61b1c5","resourceType":"GMSpriteFrame","resourceVersion":"2.0",},
+    {"$GMSpriteFrame":"v1","%Name":"29ffd956-5227-4d3e-bb8d-e6800d61b1c5","name":"29ffd956-5227-4d3e-bb8d-e6800d61b1c5","resourceType":"GMSpriteFrame","resourceVersion":"2.0",},
   ],
   "gridX":0,
   "gridY":0,

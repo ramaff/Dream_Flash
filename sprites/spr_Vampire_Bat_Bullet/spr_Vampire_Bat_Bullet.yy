@@ -1,5 +1,5 @@
 {
-  "$GMSprite":"",
+  "$GMSprite":"v2",
   "%Name":"spr_Vampire_Bat_Bullet",
   "bboxMode":0,
   "bbox_bottom":151,
@@ -12,8 +12,8 @@
   "edgeFiltering":false,
   "For3D":false,
   "frames":[
-    {"$GMSpriteFrame":"","%Name":"91964ee8-6f36-4317-a172-8ae68481e7ca","name":"91964ee8-6f36-4317-a172-8ae68481e7ca","resourceType":"GMSpriteFrame","resourceVersion":"2.0",},
-    {"$GMSpriteFrame":"","%Name":"a9faeb8e-54c5-402e-bffa-95ade97e1d91","name":"a9faeb8e-54c5-402e-bffa-95ade97e1d91","resourceType":"GMSpriteFrame","resourceVersion":"2.0",},
+    {"$GMSpriteFrame":"v1","%Name":"91964ee8-6f36-4317-a172-8ae68481e7ca","name":"91964ee8-6f36-4317-a172-8ae68481e7ca","resourceType":"GMSpriteFrame","resourceVersion":"2.0",},
+    {"$GMSpriteFrame":"v1","%Name":"a9faeb8e-54c5-402e-bffa-95ade97e1d91","name":"a9faeb8e-54c5-402e-bffa-95ade97e1d91","resourceType":"GMSpriteFrame","resourceVersion":"2.0",},
   ],
   "gridX":0,
   "gridY":0,

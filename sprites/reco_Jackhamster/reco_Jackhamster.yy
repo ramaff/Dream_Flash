@@ -1,5 +1,5 @@
 {
-  "$GMSprite":"",
+  "$GMSprite":"v2",
   "%Name":"reco_Jackhamster",
   "bboxMode":0,
   "bbox_bottom":405,
@@ -12,7 +12,7 @@
   "edgeFiltering":false,
   "For3D":false,
   "frames":[
-    {"$GMSpriteFrame":"","%Name":"09d02099-fd79-4a14-9da5-a6fac47fe648","name":"09d02099-fd79-4a14-9da5-a6fac47fe648","resourceType":"GMSpriteFrame","resourceVersion":"2.0",},
+    {"$GMSpriteFrame":"v1","%Name":"09d02099-fd79-4a14-9da5-a6fac47fe648","name":"09d02099-fd79-4a14-9da5-a6fac47fe648","resourceType":"GMSpriteFrame","resourceVersion":"2.0",},
   ],
   "gridX":0,
   "gridY":0,

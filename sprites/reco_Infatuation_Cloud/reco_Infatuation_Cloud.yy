@@ -1,5 +1,5 @@
 {
-  "$GMSprite":"",
+  "$GMSprite":"v2",
   "%Name":"reco_Infatuation_Cloud",
   "bboxMode":0,
   "bbox_bottom":370,
@@ -12,7 +12,7 @@
   "edgeFiltering":false,
   "For3D":false,
   "frames":[
-    {"$GMSpriteFrame":"","%Name":"bb4cf46e-2b5a-4c79-9dfb-f031357c46a5","name":"bb4cf46e-2b5a-4c79-9dfb-f031357c46a5","resourceType":"GMSpriteFrame","resourceVersion":"2.0",},
+    {"$GMSpriteFrame":"v1","%Name":"bb4cf46e-2b5a-4c79-9dfb-f031357c46a5","name":"bb4cf46e-2b5a-4c79-9dfb-f031357c46a5","resourceType":"GMSpriteFrame","resourceVersion":"2.0",},
   ],
   "gridX":0,
   "gridY":0,

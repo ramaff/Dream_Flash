@@ -1,5 +1,5 @@
 {
-  "$GMSprite":"",
+  "$GMSprite":"v2",
   "%Name":"spr_Rubber_Heart",
   "bboxMode":0,
   "bbox_bottom":77,
@@ -12,8 +12,8 @@
   "edgeFiltering":false,
   "For3D":false,
   "frames":[
-    {"$GMSpriteFrame":"","%Name":"aaf7b7f0-8a88-4695-9e8c-3284a65cfdd1","name":"aaf7b7f0-8a88-4695-9e8c-3284a65cfdd1","resourceType":"GMSpriteFrame","resourceVersion":"2.0",},
-    {"$GMSpriteFrame":"","%Name":"e0b0ba45-cc90-4d4e-9f21-7d0d3f2f3396","name":"e0b0ba45-cc90-4d4e-9f21-7d0d3f2f3396","resourceType":"GMSpriteFrame","resourceVersion":"2.0",},
+    {"$GMSpriteFrame":"v1","%Name":"aaf7b7f0-8a88-4695-9e8c-3284a65cfdd1","name":"aaf7b7f0-8a88-4695-9e8c-3284a65cfdd1","resourceType":"GMSpriteFrame","resourceVersion":"2.0",},
+    {"$GMSpriteFrame":"v1","%Name":"e0b0ba45-cc90-4d4e-9f21-7d0d3f2f3396","name":"e0b0ba45-cc90-4d4e-9f21-7d0d3f2f3396","resourceType":"GMSpriteFrame","resourceVersion":"2.0",},
   ],
   "gridX":0,
   "gridY":0,

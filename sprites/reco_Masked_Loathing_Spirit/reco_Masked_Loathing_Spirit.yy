@@ -1,5 +1,5 @@
 {
-  "$GMSprite":"",
+  "$GMSprite":"v2",
   "%Name":"reco_Masked_Loathing_Spirit",
   "bboxMode":0,
   "bbox_bottom":303,
@@ -12,7 +12,7 @@
   "edgeFiltering":false,
   "For3D":false,
   "frames":[
-    {"$GMSpriteFrame":"","%Name":"2a422fba-add8-4ae1-bcf0-398c3605195d","name":"2a422fba-add8-4ae1-bcf0-398c3605195d","resourceType":"GMSpriteFrame","resourceVersion":"2.0",},
+    {"$GMSpriteFrame":"v1","%Name":"2a422fba-add8-4ae1-bcf0-398c3605195d","name":"2a422fba-add8-4ae1-bcf0-398c3605195d","resourceType":"GMSpriteFrame","resourceVersion":"2.0",},
   ],
   "gridX":0,
   "gridY":0,

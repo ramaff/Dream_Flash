@@ -1,5 +1,5 @@
 {
-  "$GMSprite":"",
+  "$GMSprite":"v2",
   "%Name":"spr_Rain_Manifestation",
   "bboxMode":0,
   "bbox_bottom":353,
@@ -12,7 +12,7 @@
   "edgeFiltering":false,
   "For3D":false,
   "frames":[
-    {"$GMSpriteFrame":"","%Name":"6436f241-2643-4a3b-954b-2df9cc1e047c","name":"6436f241-2643-4a3b-954b-2df9cc1e047c","resourceType":"GMSpriteFrame","resourceVersion":"2.0",},
+    {"$GMSpriteFrame":"v1","%Name":"6436f241-2643-4a3b-954b-2df9cc1e047c","name":"6436f241-2643-4a3b-954b-2df9cc1e047c","resourceType":"GMSpriteFrame","resourceVersion":"2.0",},
   ],
   "gridX":0,
   "gridY":0,

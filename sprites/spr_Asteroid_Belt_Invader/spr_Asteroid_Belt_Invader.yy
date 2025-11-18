@@ -1,5 +1,5 @@
 {
-  "$GMSprite":"",
+  "$GMSprite":"v2",
   "%Name":"spr_Asteroid_Belt_Invader",
   "bboxMode":0,
   "bbox_bottom":317,
@@ -12,7 +12,7 @@
   "edgeFiltering":false,
   "For3D":false,
   "frames":[
-    {"$GMSpriteFrame":"","%Name":"f38f6ad8-b1ff-4fe4-98fc-5cba6885fdc7","name":"f38f6ad8-b1ff-4fe4-98fc-5cba6885fdc7","resourceType":"GMSpriteFrame","resourceVersion":"2.0",},
+    {"$GMSpriteFrame":"v1","%Name":"f38f6ad8-b1ff-4fe4-98fc-5cba6885fdc7","name":"f38f6ad8-b1ff-4fe4-98fc-5cba6885fdc7","resourceType":"GMSpriteFrame","resourceVersion":"2.0",},
   ],
   "gridX":0,
   "gridY":0,

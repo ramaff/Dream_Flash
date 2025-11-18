@@ -1,5 +1,5 @@
 {
-  "$GMSprite":"",
+  "$GMSprite":"v2",
   "%Name":"spr_Chilling_Thoughts_Art",
   "bboxMode":0,
   "bbox_bottom":157,
@@ -12,7 +12,7 @@
   "edgeFiltering":false,
   "For3D":false,
   "frames":[
-    {"$GMSpriteFrame":"","%Name":"dc3f7e52-7642-45f3-b1ac-664f3b48d268","name":"dc3f7e52-7642-45f3-b1ac-664f3b48d268","resourceType":"GMSpriteFrame","resourceVersion":"2.0",},
+    {"$GMSpriteFrame":"v1","%Name":"dc3f7e52-7642-45f3-b1ac-664f3b48d268","name":"dc3f7e52-7642-45f3-b1ac-664f3b48d268","resourceType":"GMSpriteFrame","resourceVersion":"2.0",},
   ],
   "gridX":0,
   "gridY":0,

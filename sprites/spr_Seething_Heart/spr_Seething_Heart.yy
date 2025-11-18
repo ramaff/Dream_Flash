@@ -1,5 +1,5 @@
 {
-  "$GMSprite":"",
+  "$GMSprite":"v2",
   "%Name":"spr_Seething_Heart",
   "bboxMode":0,
   "bbox_bottom":80,
@@ -12,8 +12,8 @@
   "edgeFiltering":false,
   "For3D":false,
   "frames":[
-    {"$GMSpriteFrame":"","%Name":"b83bab54-0352-412a-badb-a5deef0fdb0c","name":"b83bab54-0352-412a-badb-a5deef0fdb0c","resourceType":"GMSpriteFrame","resourceVersion":"2.0",},
-    {"$GMSpriteFrame":"","%Name":"0c6cefe2-2b7e-45df-a545-82d58ba578a2","name":"0c6cefe2-2b7e-45df-a545-82d58ba578a2","resourceType":"GMSpriteFrame","resourceVersion":"2.0",},
+    {"$GMSpriteFrame":"v1","%Name":"b83bab54-0352-412a-badb-a5deef0fdb0c","name":"b83bab54-0352-412a-badb-a5deef0fdb0c","resourceType":"GMSpriteFrame","resourceVersion":"2.0",},
+    {"$GMSpriteFrame":"v1","%Name":"0c6cefe2-2b7e-45df-a545-82d58ba578a2","name":"0c6cefe2-2b7e-45df-a545-82d58ba578a2","resourceType":"GMSpriteFrame","resourceVersion":"2.0",},
   ],
   "gridX":0,
   "gridY":0,

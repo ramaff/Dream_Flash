@@ -1,5 +1,5 @@
 {
-  "$GMSprite":"",
+  "$GMSprite":"v2",
   "%Name":"spr_Clingy_Shot",
   "bboxMode":0,
   "bbox_bottom":100,
@@ -12,7 +12,7 @@
   "edgeFiltering":false,
   "For3D":false,
   "frames":[
-    {"$GMSpriteFrame":"","%Name":"7d39157f-257a-4e20-b615-89c51c0af8b2","name":"7d39157f-257a-4e20-b615-89c51c0af8b2","resourceType":"GMSpriteFrame","resourceVersion":"2.0",},
+    {"$GMSpriteFrame":"v1","%Name":"7d39157f-257a-4e20-b615-89c51c0af8b2","name":"7d39157f-257a-4e20-b615-89c51c0af8b2","resourceType":"GMSpriteFrame","resourceVersion":"2.0",},
   ],
   "gridX":0,
   "gridY":0,

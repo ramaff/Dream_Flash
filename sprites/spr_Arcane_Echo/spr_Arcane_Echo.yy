@@ -1,5 +1,5 @@
 {
-  "$GMSprite":"",
+  "$GMSprite":"v2",
   "%Name":"spr_Arcane_Echo",
   "bboxMode":2,
   "bbox_bottom":62,
@@ -12,7 +12,7 @@
   "edgeFiltering":false,
   "For3D":false,
   "frames":[
-    {"$GMSpriteFrame":"","%Name":"d32ed9ab-b8a7-4b60-ac94-8b60d9e95f59","name":"d32ed9ab-b8a7-4b60-ac94-8b60d9e95f59","resourceType":"GMSpriteFrame","resourceVersion":"2.0",},
+    {"$GMSpriteFrame":"v1","%Name":"d32ed9ab-b8a7-4b60-ac94-8b60d9e95f59","name":"d32ed9ab-b8a7-4b60-ac94-8b60d9e95f59","resourceType":"GMSpriteFrame","resourceVersion":"2.0",},
   ],
   "gridX":0,
   "gridY":0,

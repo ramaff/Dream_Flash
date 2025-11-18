@@ -1,5 +1,5 @@
 {
-  "$GMSprite":"",
+  "$GMSprite":"v2",
   "%Name":"spr_Saw_Blade_Shot",
   "bboxMode":0,
   "bbox_bottom":105,
@@ -12,7 +12,7 @@
   "edgeFiltering":false,
   "For3D":false,
   "frames":[
-    {"$GMSpriteFrame":"","%Name":"7ce347c0-a973-44d6-90dd-6cfc09c3fa8f","name":"7ce347c0-a973-44d6-90dd-6cfc09c3fa8f","resourceType":"GMSpriteFrame","resourceVersion":"2.0",},
+    {"$GMSpriteFrame":"v1","%Name":"7ce347c0-a973-44d6-90dd-6cfc09c3fa8f","name":"7ce347c0-a973-44d6-90dd-6cfc09c3fa8f","resourceType":"GMSpriteFrame","resourceVersion":"2.0",},
   ],
   "gridX":0,
   "gridY":0,

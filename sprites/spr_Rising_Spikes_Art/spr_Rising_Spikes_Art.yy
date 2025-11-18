@@ -1,5 +1,5 @@
 {
-  "$GMSprite":"",
+  "$GMSprite":"v2",
   "%Name":"spr_Rising_Spikes_Art",
   "bboxMode":0,
   "bbox_bottom":136,
@@ -12,7 +12,7 @@
   "edgeFiltering":false,
   "For3D":false,
   "frames":[
-    {"$GMSpriteFrame":"","%Name":"dec1a0d5-3224-42bd-b48d-4b967296ff48","name":"dec1a0d5-3224-42bd-b48d-4b967296ff48","resourceType":"GMSpriteFrame","resourceVersion":"2.0",},
+    {"$GMSpriteFrame":"v1","%Name":"dec1a0d5-3224-42bd-b48d-4b967296ff48","name":"dec1a0d5-3224-42bd-b48d-4b967296ff48","resourceType":"GMSpriteFrame","resourceVersion":"2.0",},
   ],
   "gridX":0,
   "gridY":0,

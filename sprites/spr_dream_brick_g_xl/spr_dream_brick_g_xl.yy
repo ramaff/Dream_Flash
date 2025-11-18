@@ -1,5 +1,5 @@
 {
-  "$GMSprite":"",
+  "$GMSprite":"v2",
   "%Name":"spr_dream_brick_g_xl",
   "bboxMode":0,
   "bbox_bottom":1376,
@@ -12,7 +12,7 @@
   "edgeFiltering":false,
   "For3D":false,
   "frames":[
-    {"$GMSpriteFrame":"","%Name":"6cb6762e-8deb-4689-b979-091fd199f013","name":"6cb6762e-8deb-4689-b979-091fd199f013","resourceType":"GMSpriteFrame","resourceVersion":"2.0",},
+    {"$GMSpriteFrame":"v1","%Name":"6cb6762e-8deb-4689-b979-091fd199f013","name":"6cb6762e-8deb-4689-b979-091fd199f013","resourceType":"GMSpriteFrame","resourceVersion":"2.0",},
   ],
   "gridX":0,
   "gridY":0,

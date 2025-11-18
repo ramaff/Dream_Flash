@@ -1,5 +1,5 @@
 {
-  "$GMSprite":"",
+  "$GMSprite":"v2",
   "%Name":"spr_Bleeding_Soul_Reco_icon",
   "bboxMode":2,
   "bbox_bottom":205,
@@ -12,7 +12,7 @@
   "edgeFiltering":false,
   "For3D":false,
   "frames":[
-    {"$GMSpriteFrame":"","%Name":"6f6fe890-51c2-4cff-a097-6715092ad295","name":"6f6fe890-51c2-4cff-a097-6715092ad295","resourceType":"GMSpriteFrame","resourceVersion":"2.0",},
+    {"$GMSpriteFrame":"v1","%Name":"6f6fe890-51c2-4cff-a097-6715092ad295","name":"6f6fe890-51c2-4cff-a097-6715092ad295","resourceType":"GMSpriteFrame","resourceVersion":"2.0",},
   ],
   "gridX":0,
   "gridY":0,

@@ -1,5 +1,5 @@
 {
-  "$GMSprite":"",
+  "$GMSprite":"v2",
   "%Name":"spr_Blind_Hunger_Test",
   "bboxMode":2,
   "bbox_bottom":149,
@@ -12,7 +12,7 @@
   "edgeFiltering":false,
   "For3D":false,
   "frames":[
-    {"$GMSpriteFrame":"","%Name":"f240d785-ac7d-4a14-93a4-9b05108b0566","name":"f240d785-ac7d-4a14-93a4-9b05108b0566","resourceType":"GMSpriteFrame","resourceVersion":"2.0",},
+    {"$GMSpriteFrame":"v1","%Name":"f240d785-ac7d-4a14-93a4-9b05108b0566","name":"f240d785-ac7d-4a14-93a4-9b05108b0566","resourceType":"GMSpriteFrame","resourceVersion":"2.0",},
   ],
   "gridX":0,
   "gridY":0,

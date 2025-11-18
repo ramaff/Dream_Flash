@@ -1,5 +1,5 @@
 {
-  "$GMSprite":"",
+  "$GMSprite":"v2",
   "%Name":"reco_Flash_Knight",
   "bboxMode":0,
   "bbox_bottom":741,
@@ -12,7 +12,7 @@
   "edgeFiltering":false,
   "For3D":false,
   "frames":[
-    {"$GMSpriteFrame":"","%Name":"ae4ff6fb-f6f5-484e-ac0e-337d69b8c941","name":"ae4ff6fb-f6f5-484e-ac0e-337d69b8c941","resourceType":"GMSpriteFrame","resourceVersion":"2.0",},
+    {"$GMSpriteFrame":"v1","%Name":"ae4ff6fb-f6f5-484e-ac0e-337d69b8c941","name":"ae4ff6fb-f6f5-484e-ac0e-337d69b8c941","resourceType":"GMSpriteFrame","resourceVersion":"2.0",},
   ],
   "gridX":0,
   "gridY":0,

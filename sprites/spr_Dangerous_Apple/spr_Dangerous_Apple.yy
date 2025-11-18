@@ -1,5 +1,5 @@
 {
-  "$GMSprite":"",
+  "$GMSprite":"v2",
   "%Name":"spr_Dangerous_Apple",
   "bboxMode":0,
   "bbox_bottom":206,
@@ -12,7 +12,7 @@
   "edgeFiltering":false,
   "For3D":false,
   "frames":[
-    {"$GMSpriteFrame":"","%Name":"62964bc2-3a2e-403f-b465-ee19ad48561b","name":"62964bc2-3a2e-403f-b465-ee19ad48561b","resourceType":"GMSpriteFrame","resourceVersion":"2.0",},
+    {"$GMSpriteFrame":"v1","%Name":"62964bc2-3a2e-403f-b465-ee19ad48561b","name":"62964bc2-3a2e-403f-b465-ee19ad48561b","resourceType":"GMSpriteFrame","resourceVersion":"2.0",},
   ],
   "gridX":0,
   "gridY":0,

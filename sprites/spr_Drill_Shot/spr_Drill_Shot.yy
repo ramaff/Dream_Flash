@@ -1,5 +1,5 @@
 {
-  "$GMSprite":"",
+  "$GMSprite":"v2",
   "%Name":"spr_Drill_Shot",
   "bboxMode":2,
   "bbox_bottom":29,
@@ -12,7 +12,7 @@
   "edgeFiltering":false,
   "For3D":false,
   "frames":[
-    {"$GMSpriteFrame":"","%Name":"bb0f84fe-22af-4ce8-bfd6-2a59dc597334","name":"bb0f84fe-22af-4ce8-bfd6-2a59dc597334","resourceType":"GMSpriteFrame","resourceVersion":"2.0",},
+    {"$GMSpriteFrame":"v1","%Name":"bb0f84fe-22af-4ce8-bfd6-2a59dc597334","name":"bb0f84fe-22af-4ce8-bfd6-2a59dc597334","resourceType":"GMSpriteFrame","resourceVersion":"2.0",},
   ],
   "gridX":0,
   "gridY":0,

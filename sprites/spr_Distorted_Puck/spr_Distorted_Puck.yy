@@ -1,5 +1,5 @@
 {
-  "$GMSprite":"",
+  "$GMSprite":"v2",
   "%Name":"spr_Distorted_Puck",
   "bboxMode":0,
   "bbox_bottom":357,
@@ -12,7 +12,7 @@
   "edgeFiltering":false,
   "For3D":false,
   "frames":[
-    {"$GMSpriteFrame":"","%Name":"a807e1ae-5fff-4cac-b1dc-d57f298c0f53","name":"a807e1ae-5fff-4cac-b1dc-d57f298c0f53","resourceType":"GMSpriteFrame","resourceVersion":"2.0",},
+    {"$GMSpriteFrame":"v1","%Name":"a807e1ae-5fff-4cac-b1dc-d57f298c0f53","name":"a807e1ae-5fff-4cac-b1dc-d57f298c0f53","resourceType":"GMSpriteFrame","resourceVersion":"2.0",},
   ],
   "gridX":0,
   "gridY":0,

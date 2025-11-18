@@ -1,5 +1,5 @@
 {
-  "$GMSprite":"",
+  "$GMSprite":"v2",
   "%Name":"spr_Tempest_Wall_Mage",
   "bboxMode":0,
   "bbox_bottom":495,
@@ -12,7 +12,7 @@
   "edgeFiltering":false,
   "For3D":false,
   "frames":[
-    {"$GMSpriteFrame":"","%Name":"804abd4d-9176-4a5c-be40-95fc42c53848","name":"804abd4d-9176-4a5c-be40-95fc42c53848","resourceType":"GMSpriteFrame","resourceVersion":"2.0",},
+    {"$GMSpriteFrame":"v1","%Name":"804abd4d-9176-4a5c-be40-95fc42c53848","name":"804abd4d-9176-4a5c-be40-95fc42c53848","resourceType":"GMSpriteFrame","resourceVersion":"2.0",},
   ],
   "gridX":0,
   "gridY":0,

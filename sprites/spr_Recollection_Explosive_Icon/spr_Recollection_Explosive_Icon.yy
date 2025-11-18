@@ -1,5 +1,5 @@
 {
-  "$GMSprite":"",
+  "$GMSprite":"v2",
   "%Name":"spr_Recollection_Explosive_Icon",
   "bboxMode":0,
   "bbox_bottom":28,
@@ -12,7 +12,7 @@
   "edgeFiltering":false,
   "For3D":false,
   "frames":[
-    {"$GMSpriteFrame":"","%Name":"5b51343d-c0c3-4e9b-ac4b-ef511fc318d0","name":"5b51343d-c0c3-4e9b-ac4b-ef511fc318d0","resourceType":"GMSpriteFrame","resourceVersion":"2.0",},
+    {"$GMSpriteFrame":"v1","%Name":"5b51343d-c0c3-4e9b-ac4b-ef511fc318d0","name":"5b51343d-c0c3-4e9b-ac4b-ef511fc318d0","resourceType":"GMSpriteFrame","resourceVersion":"2.0",},
   ],
   "gridX":0,
   "gridY":0,

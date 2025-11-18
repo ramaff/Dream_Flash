@@ -1,5 +1,5 @@
 {
-  "$GMSprite":"",
+  "$GMSprite":"v2",
   "%Name":"spr_Explosive_Soul_Shot",
   "bboxMode":2,
   "bbox_bottom":57,
@@ -12,7 +12,7 @@
   "edgeFiltering":false,
   "For3D":false,
   "frames":[
-    {"$GMSpriteFrame":"","%Name":"30f72e47-68fc-4e23-a579-997d11c7f6f5","name":"30f72e47-68fc-4e23-a579-997d11c7f6f5","resourceType":"GMSpriteFrame","resourceVersion":"2.0",},
+    {"$GMSpriteFrame":"v1","%Name":"30f72e47-68fc-4e23-a579-997d11c7f6f5","name":"30f72e47-68fc-4e23-a579-997d11c7f6f5","resourceType":"GMSpriteFrame","resourceVersion":"2.0",},
   ],
   "gridX":0,
   "gridY":0,

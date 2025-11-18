@@ -1,5 +1,5 @@
 {
-  "$GMSprite":"",
+  "$GMSprite":"v2",
   "%Name":"spr_Healing_Concentration_Item",
   "bboxMode":0,
   "bbox_bottom":157,
@@ -12,7 +12,7 @@
   "edgeFiltering":false,
   "For3D":false,
   "frames":[
-    {"$GMSpriteFrame":"","%Name":"432bc0d8-f00a-4117-b211-ac9c6a53de88","name":"432bc0d8-f00a-4117-b211-ac9c6a53de88","resourceType":"GMSpriteFrame","resourceVersion":"2.0",},
+    {"$GMSpriteFrame":"v1","%Name":"432bc0d8-f00a-4117-b211-ac9c6a53de88","name":"432bc0d8-f00a-4117-b211-ac9c6a53de88","resourceType":"GMSpriteFrame","resourceVersion":"2.0",},
   ],
   "gridX":0,
   "gridY":0,

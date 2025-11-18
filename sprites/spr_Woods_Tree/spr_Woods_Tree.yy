@@ -1,5 +1,5 @@
 {
-  "$GMSprite":"",
+  "$GMSprite":"v2",
   "%Name":"spr_Woods_Tree",
   "bboxMode":0,
   "bbox_bottom":482,
@@ -12,7 +12,7 @@
   "edgeFiltering":false,
   "For3D":false,
   "frames":[
-    {"$GMSpriteFrame":"","%Name":"09b04096-2afc-4a11-b99a-821936b34cd9","name":"09b04096-2afc-4a11-b99a-821936b34cd9","resourceType":"GMSpriteFrame","resourceVersion":"2.0",},
+    {"$GMSpriteFrame":"v1","%Name":"09b04096-2afc-4a11-b99a-821936b34cd9","name":"09b04096-2afc-4a11-b99a-821936b34cd9","resourceType":"GMSpriteFrame","resourceVersion":"2.0",},
   ],
   "gridX":0,
   "gridY":0,

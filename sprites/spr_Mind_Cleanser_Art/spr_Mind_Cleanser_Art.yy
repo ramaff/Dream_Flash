@@ -1,5 +1,5 @@
 {
-  "$GMSprite":"",
+  "$GMSprite":"v2",
   "%Name":"spr_Mind_Cleanser_Art",
   "bboxMode":0,
   "bbox_bottom":157,
@@ -12,7 +12,7 @@
   "edgeFiltering":false,
   "For3D":false,
   "frames":[
-    {"$GMSpriteFrame":"","%Name":"eb9e734d-273b-4c5c-8b18-0e1b48f0b5e8","name":"eb9e734d-273b-4c5c-8b18-0e1b48f0b5e8","resourceType":"GMSpriteFrame","resourceVersion":"2.0",},
+    {"$GMSpriteFrame":"v1","%Name":"eb9e734d-273b-4c5c-8b18-0e1b48f0b5e8","name":"eb9e734d-273b-4c5c-8b18-0e1b48f0b5e8","resourceType":"GMSpriteFrame","resourceVersion":"2.0",},
   ],
   "gridX":0,
   "gridY":0,

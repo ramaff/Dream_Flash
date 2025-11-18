@@ -1,5 +1,5 @@
 {
-  "$GMSprite":"",
+  "$GMSprite":"v2",
   "%Name":"spr_Thinking_Outside_The_Box_Art",
   "bboxMode":0,
   "bbox_bottom":157,
@@ -12,7 +12,7 @@
   "edgeFiltering":false,
   "For3D":false,
   "frames":[
-    {"$GMSpriteFrame":"","%Name":"7d51e0f6-65d1-4e1c-853c-19f44b5730da","name":"7d51e0f6-65d1-4e1c-853c-19f44b5730da","resourceType":"GMSpriteFrame","resourceVersion":"2.0",},
+    {"$GMSpriteFrame":"v1","%Name":"7d51e0f6-65d1-4e1c-853c-19f44b5730da","name":"7d51e0f6-65d1-4e1c-853c-19f44b5730da","resourceType":"GMSpriteFrame","resourceVersion":"2.0",},
   ],
   "gridX":0,
   "gridY":0,

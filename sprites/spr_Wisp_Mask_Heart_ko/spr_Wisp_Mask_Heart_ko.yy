@@ -1,5 +1,5 @@
 {
-  "$GMSprite":"",
+  "$GMSprite":"v2",
   "%Name":"spr_Wisp_Mask_Heart_ko",
   "bboxMode":0,
   "bbox_bottom":213,
@@ -12,7 +12,7 @@
   "edgeFiltering":false,
   "For3D":false,
   "frames":[
-    {"$GMSpriteFrame":"","%Name":"003e8ce8-2338-4a3c-9fa9-40e231f705de","name":"003e8ce8-2338-4a3c-9fa9-40e231f705de","resourceType":"GMSpriteFrame","resourceVersion":"2.0",},
+    {"$GMSpriteFrame":"v1","%Name":"003e8ce8-2338-4a3c-9fa9-40e231f705de","name":"003e8ce8-2338-4a3c-9fa9-40e231f705de","resourceType":"GMSpriteFrame","resourceVersion":"2.0",},
   ],
   "gridX":0,
   "gridY":0,

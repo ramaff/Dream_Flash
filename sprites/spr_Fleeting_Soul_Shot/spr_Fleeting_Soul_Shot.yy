@@ -1,5 +1,5 @@
 {
-  "$GMSprite":"",
+  "$GMSprite":"v2",
   "%Name":"spr_Fleeting_Soul_Shot",
   "bboxMode":0,
   "bbox_bottom":63,
@@ -12,7 +12,7 @@
   "edgeFiltering":false,
   "For3D":false,
   "frames":[
-    {"$GMSpriteFrame":"","%Name":"9345535e-6b0c-4f1e-830a-ef1b4a13b1ef","name":"9345535e-6b0c-4f1e-830a-ef1b4a13b1ef","resourceType":"GMSpriteFrame","resourceVersion":"2.0",},
+    {"$GMSpriteFrame":"v1","%Name":"9345535e-6b0c-4f1e-830a-ef1b4a13b1ef","name":"9345535e-6b0c-4f1e-830a-ef1b4a13b1ef","resourceType":"GMSpriteFrame","resourceVersion":"2.0",},
   ],
   "gridX":0,
   "gridY":0,

@@ -1,5 +1,5 @@
 {
-  "$GMSprite":"",
+  "$GMSprite":"v2",
   "%Name":"spr_Casting_Beam_Orbital",
   "bboxMode":0,
   "bbox_bottom":158,
@@ -12,7 +12,7 @@
   "edgeFiltering":false,
   "For3D":false,
   "frames":[
-    {"$GMSpriteFrame":"","%Name":"714999c3-1378-4b3f-82ca-db955aecd2f1","name":"714999c3-1378-4b3f-82ca-db955aecd2f1","resourceType":"GMSpriteFrame","resourceVersion":"2.0",},
+    {"$GMSpriteFrame":"v1","%Name":"714999c3-1378-4b3f-82ca-db955aecd2f1","name":"714999c3-1378-4b3f-82ca-db955aecd2f1","resourceType":"GMSpriteFrame","resourceVersion":"2.0",},
   ],
   "gridX":0,
   "gridY":0,

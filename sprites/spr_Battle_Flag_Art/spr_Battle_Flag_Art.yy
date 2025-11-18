@@ -1,5 +1,5 @@
 {
-  "$GMSprite":"",
+  "$GMSprite":"v2",
   "%Name":"spr_Battle_Flag_Art",
   "bboxMode":0,
   "bbox_bottom":131,
@@ -12,7 +12,7 @@
   "edgeFiltering":false,
   "For3D":false,
   "frames":[
-    {"$GMSpriteFrame":"","%Name":"94e89d9c-1b4b-44f9-8069-aab41b65542d","name":"94e89d9c-1b4b-44f9-8069-aab41b65542d","resourceType":"GMSpriteFrame","resourceVersion":"2.0",},
+    {"$GMSpriteFrame":"v1","%Name":"94e89d9c-1b4b-44f9-8069-aab41b65542d","name":"94e89d9c-1b4b-44f9-8069-aab41b65542d","resourceType":"GMSpriteFrame","resourceVersion":"2.0",},
   ],
   "gridX":0,
   "gridY":0,

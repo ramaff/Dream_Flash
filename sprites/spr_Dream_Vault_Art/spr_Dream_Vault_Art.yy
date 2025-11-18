@@ -1,5 +1,5 @@
 {
-  "$GMSprite":"",
+  "$GMSprite":"v2",
   "%Name":"spr_Dream_Vault_Art",
   "bboxMode":0,
   "bbox_bottom":120,
@@ -12,7 +12,7 @@
   "edgeFiltering":false,
   "For3D":false,
   "frames":[
-    {"$GMSpriteFrame":"","%Name":"f0c0e46d-2eb2-413a-9256-4aaddf3b9b52","name":"f0c0e46d-2eb2-413a-9256-4aaddf3b9b52","resourceType":"GMSpriteFrame","resourceVersion":"2.0",},
+    {"$GMSpriteFrame":"v1","%Name":"f0c0e46d-2eb2-413a-9256-4aaddf3b9b52","name":"f0c0e46d-2eb2-413a-9256-4aaddf3b9b52","resourceType":"GMSpriteFrame","resourceVersion":"2.0",},
   ],
   "gridX":0,
   "gridY":0,

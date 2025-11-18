@@ -1,5 +1,5 @@
 {
-  "$GMSprite":"",
+  "$GMSprite":"v2",
   "%Name":"spr_Big_Energy_Shot",
   "bboxMode":2,
   "bbox_bottom":60,
@@ -12,7 +12,7 @@
   "edgeFiltering":false,
   "For3D":false,
   "frames":[
-    {"$GMSpriteFrame":"","%Name":"9b7c1e46-38f0-45e9-ad60-8047ad7acc1d","name":"9b7c1e46-38f0-45e9-ad60-8047ad7acc1d","resourceType":"GMSpriteFrame","resourceVersion":"2.0",},
+    {"$GMSpriteFrame":"v1","%Name":"9b7c1e46-38f0-45e9-ad60-8047ad7acc1d","name":"9b7c1e46-38f0-45e9-ad60-8047ad7acc1d","resourceType":"GMSpriteFrame","resourceVersion":"2.0",},
   ],
   "gridX":0,
   "gridY":0,

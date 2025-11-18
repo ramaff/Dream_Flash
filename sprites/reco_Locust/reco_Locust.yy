@@ -1,5 +1,5 @@
 {
-  "$GMSprite":"",
+  "$GMSprite":"v2",
   "%Name":"reco_Locust",
   "bboxMode":0,
   "bbox_bottom":315,
@@ -12,7 +12,7 @@
   "edgeFiltering":false,
   "For3D":false,
   "frames":[
-    {"$GMSpriteFrame":"","%Name":"1c349bf4-c052-402d-8c09-ac7e1c281208","name":"1c349bf4-c052-402d-8c09-ac7e1c281208","resourceType":"GMSpriteFrame","resourceVersion":"2.0",},
+    {"$GMSpriteFrame":"v1","%Name":"1c349bf4-c052-402d-8c09-ac7e1c281208","name":"1c349bf4-c052-402d-8c09-ac7e1c281208","resourceType":"GMSpriteFrame","resourceVersion":"2.0",},
   ],
   "gridX":0,
   "gridY":0,

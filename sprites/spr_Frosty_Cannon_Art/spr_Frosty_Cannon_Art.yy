@@ -1,5 +1,5 @@
 {
-  "$GMSprite":"",
+  "$GMSprite":"v2",
   "%Name":"spr_Frosty_Cannon_Art",
   "bboxMode":0,
   "bbox_bottom":120,
@@ -12,7 +12,7 @@
   "edgeFiltering":false,
   "For3D":false,
   "frames":[
-    {"$GMSpriteFrame":"","%Name":"228b49dd-fe1f-42de-911c-2cd5d86aee4e","name":"228b49dd-fe1f-42de-911c-2cd5d86aee4e","resourceType":"GMSpriteFrame","resourceVersion":"2.0",},
+    {"$GMSpriteFrame":"v1","%Name":"228b49dd-fe1f-42de-911c-2cd5d86aee4e","name":"228b49dd-fe1f-42de-911c-2cd5d86aee4e","resourceType":"GMSpriteFrame","resourceVersion":"2.0",},
   ],
   "gridX":0,
   "gridY":0,

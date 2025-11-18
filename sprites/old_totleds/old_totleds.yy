@@ -1,5 +1,5 @@
 {
-  "$GMSprite":"",
+  "$GMSprite":"v2",
   "%Name":"old_totleds",
   "bboxMode":0,
   "bbox_bottom":129,
@@ -12,7 +12,7 @@
   "edgeFiltering":false,
   "For3D":false,
   "frames":[
-    {"$GMSpriteFrame":"","%Name":"16226138-e4ff-4ffe-b5e5-dcd939f99e8b","name":"16226138-e4ff-4ffe-b5e5-dcd939f99e8b","resourceType":"GMSpriteFrame","resourceVersion":"2.0",},
+    {"$GMSpriteFrame":"v1","%Name":"16226138-e4ff-4ffe-b5e5-dcd939f99e8b","name":"16226138-e4ff-4ffe-b5e5-dcd939f99e8b","resourceType":"GMSpriteFrame","resourceVersion":"2.0",},
   ],
   "gridX":0,
   "gridY":0,

@@ -1,5 +1,5 @@
 {
-  "$GMSprite":"",
+  "$GMSprite":"v2",
   "%Name":"spr_Alcoholic_Hunger",
   "bboxMode":0,
   "bbox_bottom":431,
@@ -12,7 +12,7 @@
   "edgeFiltering":false,
   "For3D":false,
   "frames":[
-    {"$GMSpriteFrame":"","%Name":"3d763567-572a-4fa5-8494-4496b4ae78f5","name":"3d763567-572a-4fa5-8494-4496b4ae78f5","resourceType":"GMSpriteFrame","resourceVersion":"2.0",},
+    {"$GMSpriteFrame":"v1","%Name":"3d763567-572a-4fa5-8494-4496b4ae78f5","name":"3d763567-572a-4fa5-8494-4496b4ae78f5","resourceType":"GMSpriteFrame","resourceVersion":"2.0",},
   ],
   "gridX":0,
   "gridY":0,

@@ -1,5 +1,5 @@
 {
-  "$GMSprite":"",
+  "$GMSprite":"v2",
   "%Name":"spr_Big_Cloud",
   "bboxMode":0,
   "bbox_bottom":303,
@@ -12,7 +12,7 @@
   "edgeFiltering":false,
   "For3D":false,
   "frames":[
-    {"$GMSpriteFrame":"","%Name":"a2e0d5ee-b433-47f2-9f83-b8c65a005b54","name":"a2e0d5ee-b433-47f2-9f83-b8c65a005b54","resourceType":"GMSpriteFrame","resourceVersion":"2.0",},
+    {"$GMSpriteFrame":"v1","%Name":"a2e0d5ee-b433-47f2-9f83-b8c65a005b54","name":"a2e0d5ee-b433-47f2-9f83-b8c65a005b54","resourceType":"GMSpriteFrame","resourceVersion":"2.0",},
   ],
   "gridX":0,
   "gridY":0,

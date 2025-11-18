@@ -1,5 +1,5 @@
 {
-  "$GMSprite":"",
+  "$GMSprite":"v2",
   "%Name":"spr_Piggy_Bank",
   "bboxMode":0,
   "bbox_bottom":268,
@@ -12,7 +12,7 @@
   "edgeFiltering":false,
   "For3D":false,
   "frames":[
-    {"$GMSpriteFrame":"","%Name":"7c8424b3-9740-4769-a63f-8b2a4770e0f6","name":"7c8424b3-9740-4769-a63f-8b2a4770e0f6","resourceType":"GMSpriteFrame","resourceVersion":"2.0",},
+    {"$GMSpriteFrame":"v1","%Name":"7c8424b3-9740-4769-a63f-8b2a4770e0f6","name":"7c8424b3-9740-4769-a63f-8b2a4770e0f6","resourceType":"GMSpriteFrame","resourceVersion":"2.0",},
   ],
   "gridX":0,
   "gridY":0,

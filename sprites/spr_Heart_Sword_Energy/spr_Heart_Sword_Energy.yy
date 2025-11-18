@@ -1,5 +1,5 @@
 {
-  "$GMSprite":"",
+  "$GMSprite":"v2",
   "%Name":"spr_Heart_Sword_Energy",
   "bboxMode":2,
   "bbox_bottom":47,
@@ -12,7 +12,7 @@
   "edgeFiltering":false,
   "For3D":false,
   "frames":[
-    {"$GMSpriteFrame":"","%Name":"3e35553d-36a1-4fd5-b702-bfe63326cd61","name":"3e35553d-36a1-4fd5-b702-bfe63326cd61","resourceType":"GMSpriteFrame","resourceVersion":"2.0",},
+    {"$GMSpriteFrame":"v1","%Name":"3e35553d-36a1-4fd5-b702-bfe63326cd61","name":"3e35553d-36a1-4fd5-b702-bfe63326cd61","resourceType":"GMSpriteFrame","resourceVersion":"2.0",},
   ],
   "gridX":0,
   "gridY":0,

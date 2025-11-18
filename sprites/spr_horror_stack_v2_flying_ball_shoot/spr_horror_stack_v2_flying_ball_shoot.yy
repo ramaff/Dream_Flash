@@ -1,5 +1,5 @@
 {
-  "$GMSprite":"",
+  "$GMSprite":"v2",
   "%Name":"spr_horror_stack_v2_flying_ball_shoot",
   "bboxMode":0,
   "bbox_bottom":576,
@@ -12,10 +12,10 @@
   "edgeFiltering":false,
   "For3D":false,
   "frames":[
-    {"$GMSpriteFrame":"","%Name":"d2820f59-962d-4a32-bd18-3ebc3f42b477","name":"d2820f59-962d-4a32-bd18-3ebc3f42b477","resourceType":"GMSpriteFrame","resourceVersion":"2.0",},
-    {"$GMSpriteFrame":"","%Name":"8aaa6cab-f97b-415c-add4-2219d4aa2b06","name":"8aaa6cab-f97b-415c-add4-2219d4aa2b06","resourceType":"GMSpriteFrame","resourceVersion":"2.0",},
-    {"$GMSpriteFrame":"","%Name":"5ec65bb3-533e-4c7d-8995-0411afa0ffd6","name":"5ec65bb3-533e-4c7d-8995-0411afa0ffd6","resourceType":"GMSpriteFrame","resourceVersion":"2.0",},
-    {"$GMSpriteFrame":"","%Name":"17a47576-03ea-4662-8f8f-adb694bb2b8e","name":"17a47576-03ea-4662-8f8f-adb694bb2b8e","resourceType":"GMSpriteFrame","resourceVersion":"2.0",},
+    {"$GMSpriteFrame":"v1","%Name":"d2820f59-962d-4a32-bd18-3ebc3f42b477","name":"d2820f59-962d-4a32-bd18-3ebc3f42b477","resourceType":"GMSpriteFrame","resourceVersion":"2.0",},
+    {"$GMSpriteFrame":"v1","%Name":"8aaa6cab-f97b-415c-add4-2219d4aa2b06","name":"8aaa6cab-f97b-415c-add4-2219d4aa2b06","resourceType":"GMSpriteFrame","resourceVersion":"2.0",},
+    {"$GMSpriteFrame":"v1","%Name":"5ec65bb3-533e-4c7d-8995-0411afa0ffd6","name":"5ec65bb3-533e-4c7d-8995-0411afa0ffd6","resourceType":"GMSpriteFrame","resourceVersion":"2.0",},
+    {"$GMSpriteFrame":"v1","%Name":"17a47576-03ea-4662-8f8f-adb694bb2b8e","name":"17a47576-03ea-4662-8f8f-adb694bb2b8e","resourceType":"GMSpriteFrame","resourceVersion":"2.0",},
   ],
   "gridX":0,
   "gridY":0,

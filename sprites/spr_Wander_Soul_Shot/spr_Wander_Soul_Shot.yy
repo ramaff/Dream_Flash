@@ -1,5 +1,5 @@
 {
-  "$GMSprite":"",
+  "$GMSprite":"v2",
   "%Name":"spr_Wander_Soul_Shot",
   "bboxMode":0,
   "bbox_bottom":63,
@@ -12,7 +12,7 @@
   "edgeFiltering":false,
   "For3D":false,
   "frames":[
-    {"$GMSpriteFrame":"","%Name":"1e3afe82-bec6-4fdb-b889-9f1515eb5460","name":"1e3afe82-bec6-4fdb-b889-9f1515eb5460","resourceType":"GMSpriteFrame","resourceVersion":"2.0",},
+    {"$GMSpriteFrame":"v1","%Name":"1e3afe82-bec6-4fdb-b889-9f1515eb5460","name":"1e3afe82-bec6-4fdb-b889-9f1515eb5460","resourceType":"GMSpriteFrame","resourceVersion":"2.0",},
   ],
   "gridX":0,
   "gridY":0,

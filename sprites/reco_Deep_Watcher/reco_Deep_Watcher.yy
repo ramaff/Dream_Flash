@@ -1,5 +1,5 @@
 {
-  "$GMSprite":"",
+  "$GMSprite":"v2",
   "%Name":"reco_Deep_Watcher",
   "bboxMode":0,
   "bbox_bottom":281,
@@ -12,7 +12,7 @@
   "edgeFiltering":false,
   "For3D":false,
   "frames":[
-    {"$GMSpriteFrame":"","%Name":"1da20b92-6594-429d-bd81-370395747bff","name":"1da20b92-6594-429d-bd81-370395747bff","resourceType":"GMSpriteFrame","resourceVersion":"2.0",},
+    {"$GMSpriteFrame":"v1","%Name":"1da20b92-6594-429d-bd81-370395747bff","name":"1da20b92-6594-429d-bd81-370395747bff","resourceType":"GMSpriteFrame","resourceVersion":"2.0",},
   ],
   "gridX":0,
   "gridY":0,

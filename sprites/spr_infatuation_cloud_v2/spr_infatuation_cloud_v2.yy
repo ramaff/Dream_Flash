@@ -1,5 +1,5 @@
 {
-  "$GMSprite":"",
+  "$GMSprite":"v2",
   "%Name":"spr_infatuation_cloud_v2",
   "bboxMode":0,
   "bbox_bottom":445,
@@ -12,7 +12,7 @@
   "edgeFiltering":false,
   "For3D":false,
   "frames":[
-    {"$GMSpriteFrame":"","%Name":"79679061-6876-4290-962d-42c3471cfc82","name":"79679061-6876-4290-962d-42c3471cfc82","resourceType":"GMSpriteFrame","resourceVersion":"2.0",},
+    {"$GMSpriteFrame":"v1","%Name":"79679061-6876-4290-962d-42c3471cfc82","name":"79679061-6876-4290-962d-42c3471cfc82","resourceType":"GMSpriteFrame","resourceVersion":"2.0",},
   ],
   "gridX":0,
   "gridY":0,

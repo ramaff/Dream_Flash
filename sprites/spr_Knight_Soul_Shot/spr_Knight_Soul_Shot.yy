@@ -1,5 +1,5 @@
 {
-  "$GMSprite":"",
+  "$GMSprite":"v2",
   "%Name":"spr_Knight_Soul_Shot",
   "bboxMode":0,
   "bbox_bottom":225,
@@ -12,7 +12,7 @@
   "edgeFiltering":false,
   "For3D":false,
   "frames":[
-    {"$GMSpriteFrame":"","%Name":"a5358102-902f-4204-8da8-98dc5e1fb6e0","name":"a5358102-902f-4204-8da8-98dc5e1fb6e0","resourceType":"GMSpriteFrame","resourceVersion":"2.0",},
+    {"$GMSpriteFrame":"v1","%Name":"a5358102-902f-4204-8da8-98dc5e1fb6e0","name":"a5358102-902f-4204-8da8-98dc5e1fb6e0","resourceType":"GMSpriteFrame","resourceVersion":"2.0",},
   ],
   "gridX":0,
   "gridY":0,

@@ -1,5 +1,5 @@
 {
-  "$GMSprite":"",
+  "$GMSprite":"v2",
   "%Name":"reco_wall_king",
   "bboxMode":0,
   "bbox_bottom":652,
@@ -12,7 +12,7 @@
   "edgeFiltering":false,
   "For3D":false,
   "frames":[
-    {"$GMSpriteFrame":"","%Name":"051b7ec9-b9c8-48c6-a622-97ef82e15145","name":"051b7ec9-b9c8-48c6-a622-97ef82e15145","resourceType":"GMSpriteFrame","resourceVersion":"2.0",},
+    {"$GMSpriteFrame":"v1","%Name":"051b7ec9-b9c8-48c6-a622-97ef82e15145","name":"051b7ec9-b9c8-48c6-a622-97ef82e15145","resourceType":"GMSpriteFrame","resourceVersion":"2.0",},
   ],
   "gridX":0,
   "gridY":0,

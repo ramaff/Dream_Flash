@@ -1,5 +1,5 @@
 {
-  "$GMSprite":"",
+  "$GMSprite":"v2",
   "%Name":"spr_Burst_Wisper",
   "bboxMode":0,
   "bbox_bottom":357,
@@ -12,7 +12,7 @@
   "edgeFiltering":false,
   "For3D":false,
   "frames":[
-    {"$GMSpriteFrame":"","%Name":"31e1c314-2b77-48a1-be53-bd9ad54cebcc","name":"31e1c314-2b77-48a1-be53-bd9ad54cebcc","resourceType":"GMSpriteFrame","resourceVersion":"2.0",},
+    {"$GMSpriteFrame":"v1","%Name":"31e1c314-2b77-48a1-be53-bd9ad54cebcc","name":"31e1c314-2b77-48a1-be53-bd9ad54cebcc","resourceType":"GMSpriteFrame","resourceVersion":"2.0",},
   ],
   "gridX":0,
   "gridY":0,

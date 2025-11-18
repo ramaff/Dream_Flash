@@ -1,5 +1,5 @@
 {
-  "$GMSprite":"",
+  "$GMSprite":"v2",
   "%Name":"spr_Hysterical_Art",
   "bboxMode":0,
   "bbox_bottom":157,
@@ -12,7 +12,7 @@
   "edgeFiltering":false,
   "For3D":false,
   "frames":[
-    {"$GMSpriteFrame":"","%Name":"832c6fe4-2f74-41b7-8ec7-961a05cb3caf","name":"832c6fe4-2f74-41b7-8ec7-961a05cb3caf","resourceType":"GMSpriteFrame","resourceVersion":"2.0",},
+    {"$GMSpriteFrame":"v1","%Name":"832c6fe4-2f74-41b7-8ec7-961a05cb3caf","name":"832c6fe4-2f74-41b7-8ec7-961a05cb3caf","resourceType":"GMSpriteFrame","resourceVersion":"2.0",},
   ],
   "gridX":0,
   "gridY":0,

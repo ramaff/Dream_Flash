@@ -1,5 +1,5 @@
 {
-  "$GMSprite":"",
+  "$GMSprite":"v2",
   "%Name":"spr_Dangerous_Bomb",
   "bboxMode":0,
   "bbox_bottom":196,
@@ -12,7 +12,7 @@
   "edgeFiltering":false,
   "For3D":false,
   "frames":[
-    {"$GMSpriteFrame":"","%Name":"4367d663-8283-4d10-a517-39334b3aa95e","name":"4367d663-8283-4d10-a517-39334b3aa95e","resourceType":"GMSpriteFrame","resourceVersion":"2.0",},
+    {"$GMSpriteFrame":"v1","%Name":"4367d663-8283-4d10-a517-39334b3aa95e","name":"4367d663-8283-4d10-a517-39334b3aa95e","resourceType":"GMSpriteFrame","resourceVersion":"2.0",},
   ],
   "gridX":0,
   "gridY":0,

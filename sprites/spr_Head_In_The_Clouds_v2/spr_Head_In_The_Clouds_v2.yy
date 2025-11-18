@@ -1,5 +1,5 @@
 {
-  "$GMSprite":"",
+  "$GMSprite":"v2",
   "%Name":"spr_Head_In_The_Clouds_v2",
   "bboxMode":0,
   "bbox_bottom":463,
@@ -12,7 +12,7 @@
   "edgeFiltering":false,
   "For3D":false,
   "frames":[
-    {"$GMSpriteFrame":"","%Name":"f62503f9-c4d8-49b7-8aba-910419837af0","name":"f62503f9-c4d8-49b7-8aba-910419837af0","resourceType":"GMSpriteFrame","resourceVersion":"2.0",},
+    {"$GMSpriteFrame":"v1","%Name":"f62503f9-c4d8-49b7-8aba-910419837af0","name":"f62503f9-c4d8-49b7-8aba-910419837af0","resourceType":"GMSpriteFrame","resourceVersion":"2.0",},
   ],
   "gridX":0,
   "gridY":0,

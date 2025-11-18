@@ -1,5 +1,5 @@
 {
-  "$GMSprite":"",
+  "$GMSprite":"v2",
   "%Name":"spr_pink_bullet_v2",
   "bboxMode":2,
   "bbox_bottom":56,
@@ -12,7 +12,7 @@
   "edgeFiltering":false,
   "For3D":false,
   "frames":[
-    {"$GMSpriteFrame":"","%Name":"7fc20513-8ec0-4491-b23b-d7a7cc53a321","name":"7fc20513-8ec0-4491-b23b-d7a7cc53a321","resourceType":"GMSpriteFrame","resourceVersion":"2.0",},
+    {"$GMSpriteFrame":"v1","%Name":"7fc20513-8ec0-4491-b23b-d7a7cc53a321","name":"7fc20513-8ec0-4491-b23b-d7a7cc53a321","resourceType":"GMSpriteFrame","resourceVersion":"2.0",},
   ],
   "gridX":0,
   "gridY":0,

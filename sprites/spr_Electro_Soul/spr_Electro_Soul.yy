@@ -1,5 +1,5 @@
 {
-  "$GMSprite":"",
+  "$GMSprite":"v2",
   "%Name":"spr_Electro_Soul",
   "bboxMode":0,
   "bbox_bottom":150,
@@ -12,8 +12,8 @@
   "edgeFiltering":false,
   "For3D":false,
   "frames":[
-    {"$GMSpriteFrame":"","%Name":"7aebb18c-bbe6-4013-9ad8-c5bed9d27281","name":"7aebb18c-bbe6-4013-9ad8-c5bed9d27281","resourceType":"GMSpriteFrame","resourceVersion":"2.0",},
-    {"$GMSpriteFrame":"","%Name":"00d54239-77cb-4b42-a43e-920d755743f3","name":"00d54239-77cb-4b42-a43e-920d755743f3","resourceType":"GMSpriteFrame","resourceVersion":"2.0",},
+    {"$GMSpriteFrame":"v1","%Name":"7aebb18c-bbe6-4013-9ad8-c5bed9d27281","name":"7aebb18c-bbe6-4013-9ad8-c5bed9d27281","resourceType":"GMSpriteFrame","resourceVersion":"2.0",},
+    {"$GMSpriteFrame":"v1","%Name":"00d54239-77cb-4b42-a43e-920d755743f3","name":"00d54239-77cb-4b42-a43e-920d755743f3","resourceType":"GMSpriteFrame","resourceVersion":"2.0",},
   ],
   "gridX":0,
   "gridY":0,

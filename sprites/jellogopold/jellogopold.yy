@@ -1,5 +1,5 @@
 {
-  "$GMSprite":"",
+  "$GMSprite":"v2",
   "%Name":"jellogopold",
   "bboxMode":0,
   "bbox_bottom":372,
@@ -12,7 +12,7 @@
   "edgeFiltering":false,
   "For3D":false,
   "frames":[
-    {"$GMSpriteFrame":"","%Name":"244b60bf-b19b-415a-8ed8-71df553899d4","name":"244b60bf-b19b-415a-8ed8-71df553899d4","resourceType":"GMSpriteFrame","resourceVersion":"2.0",},
+    {"$GMSpriteFrame":"v1","%Name":"244b60bf-b19b-415a-8ed8-71df553899d4","name":"244b60bf-b19b-415a-8ed8-71df553899d4","resourceType":"GMSpriteFrame","resourceVersion":"2.0",},
   ],
   "gridX":0,
   "gridY":0,

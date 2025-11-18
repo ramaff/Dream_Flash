@@ -1,5 +1,5 @@
 {
-  "$GMSprite":"",
+  "$GMSprite":"v2",
   "%Name":"spr_Laser_Startold",
   "bboxMode":0,
   "bbox_bottom":58,
@@ -12,7 +12,7 @@
   "edgeFiltering":false,
   "For3D":false,
   "frames":[
-    {"$GMSpriteFrame":"","%Name":"45c6d7a5-515b-4209-8d9d-7e2de22dae66","name":"45c6d7a5-515b-4209-8d9d-7e2de22dae66","resourceType":"GMSpriteFrame","resourceVersion":"2.0",},
+    {"$GMSpriteFrame":"v1","%Name":"45c6d7a5-515b-4209-8d9d-7e2de22dae66","name":"45c6d7a5-515b-4209-8d9d-7e2de22dae66","resourceType":"GMSpriteFrame","resourceVersion":"2.0",},
   ],
   "gridX":0,
   "gridY":0,

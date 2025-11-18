@@ -1,5 +1,5 @@
 {
-  "$GMSprite":"",
+  "$GMSprite":"v2",
   "%Name":"spr_Green_Wall_Observer",
   "bboxMode":0,
   "bbox_bottom":53,
@@ -12,7 +12,7 @@
   "edgeFiltering":false,
   "For3D":false,
   "frames":[
-    {"$GMSpriteFrame":"","%Name":"321e3eb4-3f25-4155-99ca-88a65ca3e35d","name":"321e3eb4-3f25-4155-99ca-88a65ca3e35d","resourceType":"GMSpriteFrame","resourceVersion":"2.0",},
+    {"$GMSpriteFrame":"v1","%Name":"321e3eb4-3f25-4155-99ca-88a65ca3e35d","name":"321e3eb4-3f25-4155-99ca-88a65ca3e35d","resourceType":"GMSpriteFrame","resourceVersion":"2.0",},
   ],
   "gridX":0,
   "gridY":0,

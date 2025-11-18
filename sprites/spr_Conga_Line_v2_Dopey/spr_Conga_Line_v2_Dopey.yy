@@ -1,5 +1,5 @@
 {
-  "$GMSprite":"",
+  "$GMSprite":"v2",
   "%Name":"spr_Conga_Line_v2_Dopey",
   "bboxMode":0,
   "bbox_bottom":287,
@@ -12,7 +12,7 @@
   "edgeFiltering":false,
   "For3D":false,
   "frames":[
-    {"$GMSpriteFrame":"","%Name":"8019aeb8-919a-4085-9aef-324200e34694","name":"8019aeb8-919a-4085-9aef-324200e34694","resourceType":"GMSpriteFrame","resourceVersion":"2.0",},
+    {"$GMSpriteFrame":"v1","%Name":"8019aeb8-919a-4085-9aef-324200e34694","name":"8019aeb8-919a-4085-9aef-324200e34694","resourceType":"GMSpriteFrame","resourceVersion":"2.0",},
   ],
   "gridX":0,
   "gridY":0,

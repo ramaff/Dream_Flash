@@ -1,5 +1,5 @@
 {
-  "$GMSprite":"",
+  "$GMSprite":"v2",
   "%Name":"spr_Orbit_Bliss",
   "bboxMode":2,
   "bbox_bottom":63,
@@ -12,7 +12,7 @@
   "edgeFiltering":false,
   "For3D":false,
   "frames":[
-    {"$GMSpriteFrame":"","%Name":"de1a4f3e-039c-4ce1-a8ef-7143f0f6f497","name":"de1a4f3e-039c-4ce1-a8ef-7143f0f6f497","resourceType":"GMSpriteFrame","resourceVersion":"2.0",},
+    {"$GMSpriteFrame":"v1","%Name":"de1a4f3e-039c-4ce1-a8ef-7143f0f6f497","name":"de1a4f3e-039c-4ce1-a8ef-7143f0f6f497","resourceType":"GMSpriteFrame","resourceVersion":"2.0",},
   ],
   "gridX":0,
   "gridY":0,

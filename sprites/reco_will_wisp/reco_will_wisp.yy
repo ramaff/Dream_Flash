@@ -1,5 +1,5 @@
 {
-  "$GMSprite":"",
+  "$GMSprite":"v2",
   "%Name":"reco_will_wisp",
   "bboxMode":0,
   "bbox_bottom":316,
@@ -12,7 +12,7 @@
   "edgeFiltering":false,
   "For3D":false,
   "frames":[
-    {"$GMSpriteFrame":"","%Name":"c3125351-a819-4e01-9df8-af9f9c15ad2d","name":"c3125351-a819-4e01-9df8-af9f9c15ad2d","resourceType":"GMSpriteFrame","resourceVersion":"2.0",},
+    {"$GMSpriteFrame":"v1","%Name":"c3125351-a819-4e01-9df8-af9f9c15ad2d","name":"c3125351-a819-4e01-9df8-af9f9c15ad2d","resourceType":"GMSpriteFrame","resourceVersion":"2.0",},
   ],
   "gridX":0,
   "gridY":0,

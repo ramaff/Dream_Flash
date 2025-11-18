@@ -1,5 +1,5 @@
 {
-  "$GMSprite":"",
+  "$GMSprite":"v2",
   "%Name":"spr_Big_Lightning_Ball",
   "bboxMode":2,
   "bbox_bottom":68,
@@ -12,7 +12,7 @@
   "edgeFiltering":false,
   "For3D":false,
   "frames":[
-    {"$GMSpriteFrame":"","%Name":"dbd56239-3e93-4df1-91f5-aacee8865894","name":"dbd56239-3e93-4df1-91f5-aacee8865894","resourceType":"GMSpriteFrame","resourceVersion":"2.0",},
+    {"$GMSpriteFrame":"v1","%Name":"dbd56239-3e93-4df1-91f5-aacee8865894","name":"dbd56239-3e93-4df1-91f5-aacee8865894","resourceType":"GMSpriteFrame","resourceVersion":"2.0",},
   ],
   "gridX":0,
   "gridY":0,

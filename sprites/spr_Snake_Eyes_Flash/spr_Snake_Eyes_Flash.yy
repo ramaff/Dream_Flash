@@ -1,5 +1,5 @@
 {
-  "$GMSprite":"",
+  "$GMSprite":"v2",
   "%Name":"spr_Snake_Eyes_Flash",
   "bboxMode":0,
   "bbox_bottom":524,
@@ -12,7 +12,7 @@
   "edgeFiltering":false,
   "For3D":false,
   "frames":[
-    {"$GMSpriteFrame":"","%Name":"cee5fbd5-3223-4b21-b5fa-9c7ca5ad960c","name":"cee5fbd5-3223-4b21-b5fa-9c7ca5ad960c","resourceType":"GMSpriteFrame","resourceVersion":"2.0",},
+    {"$GMSpriteFrame":"v1","%Name":"cee5fbd5-3223-4b21-b5fa-9c7ca5ad960c","name":"cee5fbd5-3223-4b21-b5fa-9c7ca5ad960c","resourceType":"GMSpriteFrame","resourceVersion":"2.0",},
   ],
   "gridX":0,
   "gridY":0,

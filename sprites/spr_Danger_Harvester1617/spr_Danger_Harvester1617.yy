@@ -1,5 +1,5 @@
 {
-  "$GMSprite":"",
+  "$GMSprite":"v2",
   "%Name":"spr_Danger_Harvester1617",
   "bboxMode":0,
   "bbox_bottom":451,
@@ -12,7 +12,7 @@
   "edgeFiltering":false,
   "For3D":false,
   "frames":[
-    {"$GMSpriteFrame":"","%Name":"6ba15e08-028d-430d-b6c9-6803c503b540","name":"6ba15e08-028d-430d-b6c9-6803c503b540","resourceType":"GMSpriteFrame","resourceVersion":"2.0",},
+    {"$GMSpriteFrame":"v1","%Name":"6ba15e08-028d-430d-b6c9-6803c503b540","name":"6ba15e08-028d-430d-b6c9-6803c503b540","resourceType":"GMSpriteFrame","resourceVersion":"2.0",},
   ],
   "gridX":0,
   "gridY":0,

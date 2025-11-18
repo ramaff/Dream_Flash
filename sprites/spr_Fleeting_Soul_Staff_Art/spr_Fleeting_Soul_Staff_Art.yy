@@ -1,5 +1,5 @@
 {
-  "$GMSprite":"",
+  "$GMSprite":"v2",
   "%Name":"spr_Fleeting_Soul_Staff_Art",
   "bboxMode":1,
   "bbox_bottom":163,
@@ -12,7 +12,7 @@
   "edgeFiltering":false,
   "For3D":false,
   "frames":[
-    {"$GMSpriteFrame":"","%Name":"849900c0-6af0-4e6e-ba48-bf495b90b058","name":"849900c0-6af0-4e6e-ba48-bf495b90b058","resourceType":"GMSpriteFrame","resourceVersion":"2.0",},
+    {"$GMSpriteFrame":"v1","%Name":"849900c0-6af0-4e6e-ba48-bf495b90b058","name":"849900c0-6af0-4e6e-ba48-bf495b90b058","resourceType":"GMSpriteFrame","resourceVersion":"2.0",},
   ],
   "gridX":0,
   "gridY":0,

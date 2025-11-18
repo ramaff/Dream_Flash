@@ -1,5 +1,5 @@
 {
-  "$GMSprite":"",
+  "$GMSprite":"v2",
   "%Name":"spr_Spirit_of_Mischief_Dash",
   "bboxMode":0,
   "bbox_bottom":306,
@@ -12,7 +12,7 @@
   "edgeFiltering":false,
   "For3D":false,
   "frames":[
-    {"$GMSpriteFrame":"","%Name":"cab5573e-ec5f-41e0-9614-e304cebf1ac7","name":"cab5573e-ec5f-41e0-9614-e304cebf1ac7","resourceType":"GMSpriteFrame","resourceVersion":"2.0",},
+    {"$GMSpriteFrame":"v1","%Name":"cab5573e-ec5f-41e0-9614-e304cebf1ac7","name":"cab5573e-ec5f-41e0-9614-e304cebf1ac7","resourceType":"GMSpriteFrame","resourceVersion":"2.0",},
   ],
   "gridX":0,
   "gridY":0,

@@ -1,5 +1,5 @@
 {
-  "$GMSprite":"",
+  "$GMSprite":"v2",
   "%Name":"spr_Rising_Bliss_Bullet",
   "bboxMode":2,
   "bbox_bottom":63,
@@ -12,7 +12,7 @@
   "edgeFiltering":false,
   "For3D":false,
   "frames":[
-    {"$GMSpriteFrame":"","%Name":"ee0b2127-d493-4cf8-a502-aee7ce9b62d4","name":"ee0b2127-d493-4cf8-a502-aee7ce9b62d4","resourceType":"GMSpriteFrame","resourceVersion":"2.0",},
+    {"$GMSpriteFrame":"v1","%Name":"ee0b2127-d493-4cf8-a502-aee7ce9b62d4","name":"ee0b2127-d493-4cf8-a502-aee7ce9b62d4","resourceType":"GMSpriteFrame","resourceVersion":"2.0",},
   ],
   "gridX":0,
   "gridY":0,

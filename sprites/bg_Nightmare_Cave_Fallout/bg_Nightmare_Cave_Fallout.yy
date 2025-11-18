@@ -1,5 +1,5 @@
 {
-  "$GMSprite":"",
+  "$GMSprite":"v2",
   "%Name":"bg_Nightmare_Cave_Fallout",
   "bboxMode":0,
   "bbox_bottom":117,
@@ -12,7 +12,7 @@
   "edgeFiltering":false,
   "For3D":false,
   "frames":[
-    {"$GMSpriteFrame":"","%Name":"a2ccf4e9-caee-4ba9-a1bb-fea5127041ad","name":"a2ccf4e9-caee-4ba9-a1bb-fea5127041ad","resourceType":"GMSpriteFrame","resourceVersion":"2.0",},
+    {"$GMSpriteFrame":"v1","%Name":"a2ccf4e9-caee-4ba9-a1bb-fea5127041ad","name":"a2ccf4e9-caee-4ba9-a1bb-fea5127041ad","resourceType":"GMSpriteFrame","resourceVersion":"2.0",},
   ],
   "gridX":0,
   "gridY":0,

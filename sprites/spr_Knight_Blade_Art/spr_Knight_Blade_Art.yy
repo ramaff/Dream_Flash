@@ -1,5 +1,5 @@
 {
-  "$GMSprite":"",
+  "$GMSprite":"v2",
   "%Name":"spr_Knight_Blade_Art",
   "bboxMode":2,
   "bbox_bottom":63,
@@ -12,7 +12,7 @@
   "edgeFiltering":false,
   "For3D":false,
   "frames":[
-    {"$GMSpriteFrame":"","%Name":"ff91d9a5-4e1f-4a3c-be9e-4033690facce","name":"ff91d9a5-4e1f-4a3c-be9e-4033690facce","resourceType":"GMSpriteFrame","resourceVersion":"2.0",},
+    {"$GMSpriteFrame":"v1","%Name":"ff91d9a5-4e1f-4a3c-be9e-4033690facce","name":"ff91d9a5-4e1f-4a3c-be9e-4033690facce","resourceType":"GMSpriteFrame","resourceVersion":"2.0",},
   ],
   "gridX":0,
   "gridY":0,

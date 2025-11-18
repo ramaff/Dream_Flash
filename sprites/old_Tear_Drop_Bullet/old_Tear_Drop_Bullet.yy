@@ -1,5 +1,5 @@
 {
-  "$GMSprite":"",
+  "$GMSprite":"v2",
   "%Name":"old_Tear_Drop_Bullet",
   "bboxMode":2,
   "bbox_bottom":43,
@@ -12,7 +12,7 @@
   "edgeFiltering":false,
   "For3D":false,
   "frames":[
-    {"$GMSpriteFrame":"","%Name":"fd8a62d1-615c-439a-b0f2-6d749db9743b","name":"fd8a62d1-615c-439a-b0f2-6d749db9743b","resourceType":"GMSpriteFrame","resourceVersion":"2.0",},
+    {"$GMSpriteFrame":"v1","%Name":"fd8a62d1-615c-439a-b0f2-6d749db9743b","name":"fd8a62d1-615c-439a-b0f2-6d749db9743b","resourceType":"GMSpriteFrame","resourceVersion":"2.0",},
   ],
   "gridX":0,
   "gridY":0,

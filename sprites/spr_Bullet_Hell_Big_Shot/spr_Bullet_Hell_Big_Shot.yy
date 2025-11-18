@@ -1,5 +1,5 @@
 {
-  "$GMSprite":"",
+  "$GMSprite":"v2",
   "%Name":"spr_Bullet_Hell_Big_Shot",
   "bboxMode":0,
   "bbox_bottom":99,
@@ -12,7 +12,7 @@
   "edgeFiltering":false,
   "For3D":false,
   "frames":[
-    {"$GMSpriteFrame":"","%Name":"0d2f7f7c-6ca0-4f32-8755-79be6636cb40","name":"0d2f7f7c-6ca0-4f32-8755-79be6636cb40","resourceType":"GMSpriteFrame","resourceVersion":"2.0",},
+    {"$GMSpriteFrame":"v1","%Name":"0d2f7f7c-6ca0-4f32-8755-79be6636cb40","name":"0d2f7f7c-6ca0-4f32-8755-79be6636cb40","resourceType":"GMSpriteFrame","resourceVersion":"2.0",},
   ],
   "gridX":0,
   "gridY":0,

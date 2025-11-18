@@ -1,5 +1,5 @@
 {
-  "$GMSprite":"",
+  "$GMSprite":"v2",
   "%Name":"spr_Flash_Knight_Cannon",
   "bboxMode":2,
   "bbox_bottom":160,
@@ -12,7 +12,7 @@
   "edgeFiltering":false,
   "For3D":false,
   "frames":[
-    {"$GMSpriteFrame":"","%Name":"5e048d4d-aca7-4f1d-99ca-236c230b6e85","name":"5e048d4d-aca7-4f1d-99ca-236c230b6e85","resourceType":"GMSpriteFrame","resourceVersion":"2.0",},
+    {"$GMSpriteFrame":"v1","%Name":"5e048d4d-aca7-4f1d-99ca-236c230b6e85","name":"5e048d4d-aca7-4f1d-99ca-236c230b6e85","resourceType":"GMSpriteFrame","resourceVersion":"2.0",},
   ],
   "gridX":0,
   "gridY":0,

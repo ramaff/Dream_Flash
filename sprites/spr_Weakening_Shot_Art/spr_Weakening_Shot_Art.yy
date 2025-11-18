@@ -1,5 +1,5 @@
 {
-  "$GMSprite":"",
+  "$GMSprite":"v2",
   "%Name":"spr_Weakening_Shot_Art",
   "bboxMode":0,
   "bbox_bottom":116,
@@ -12,7 +12,7 @@
   "edgeFiltering":false,
   "For3D":false,
   "frames":[
-    {"$GMSpriteFrame":"","%Name":"1d197af5-64ca-4a6c-9fc7-60fb137bc579","name":"1d197af5-64ca-4a6c-9fc7-60fb137bc579","resourceType":"GMSpriteFrame","resourceVersion":"2.0",},
+    {"$GMSpriteFrame":"v1","%Name":"1d197af5-64ca-4a6c-9fc7-60fb137bc579","name":"1d197af5-64ca-4a6c-9fc7-60fb137bc579","resourceType":"GMSpriteFrame","resourceVersion":"2.0",},
   ],
   "gridX":0,
   "gridY":0,

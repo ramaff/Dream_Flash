@@ -1,5 +1,5 @@
 {
-  "$GMSprite":"",
+  "$GMSprite":"v2",
   "%Name":"spr_horror_stack_v2_leg_ball_ko",
   "bboxMode":0,
   "bbox_bottom":412,
@@ -12,7 +12,7 @@
   "edgeFiltering":false,
   "For3D":false,
   "frames":[
-    {"$GMSpriteFrame":"","%Name":"591e9287-a207-433f-ad3b-f9895dc9eed4","name":"591e9287-a207-433f-ad3b-f9895dc9eed4","resourceType":"GMSpriteFrame","resourceVersion":"2.0",},
+    {"$GMSpriteFrame":"v1","%Name":"591e9287-a207-433f-ad3b-f9895dc9eed4","name":"591e9287-a207-433f-ad3b-f9895dc9eed4","resourceType":"GMSpriteFrame","resourceVersion":"2.0",},
   ],
   "gridX":0,
   "gridY":0,

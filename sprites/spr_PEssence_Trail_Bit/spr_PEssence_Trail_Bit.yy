@@ -1,5 +1,5 @@
 {
-  "$GMSprite":"",
+  "$GMSprite":"v2",
   "%Name":"spr_PEssence_Trail_Bit",
   "bboxMode":0,
   "bbox_bottom":27,
@@ -12,8 +12,8 @@
   "edgeFiltering":false,
   "For3D":false,
   "frames":[
-    {"$GMSpriteFrame":"","%Name":"cf35a760-90e7-4cfb-9ac0-b23620ff568b","name":"cf35a760-90e7-4cfb-9ac0-b23620ff568b","resourceType":"GMSpriteFrame","resourceVersion":"2.0",},
-    {"$GMSpriteFrame":"","%Name":"7431eb02-e5cc-40c4-9647-63504301050a","name":"7431eb02-e5cc-40c4-9647-63504301050a","resourceType":"GMSpriteFrame","resourceVersion":"2.0",},
+    {"$GMSpriteFrame":"v1","%Name":"cf35a760-90e7-4cfb-9ac0-b23620ff568b","name":"cf35a760-90e7-4cfb-9ac0-b23620ff568b","resourceType":"GMSpriteFrame","resourceVersion":"2.0",},
+    {"$GMSpriteFrame":"v1","%Name":"7431eb02-e5cc-40c4-9647-63504301050a","name":"7431eb02-e5cc-40c4-9647-63504301050a","resourceType":"GMSpriteFrame","resourceVersion":"2.0",},
   ],
   "gridX":0,
   "gridY":0,

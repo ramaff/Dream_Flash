@@ -1,5 +1,5 @@
 {
-  "$GMSprite":"",
+  "$GMSprite":"v2",
   "%Name":"reco_The_Construct",
   "bboxMode":0,
   "bbox_bottom":624,
@@ -12,7 +12,7 @@
   "edgeFiltering":false,
   "For3D":false,
   "frames":[
-    {"$GMSpriteFrame":"","%Name":"01989376-eb0e-4d54-9d3f-f0443a8c340d","name":"01989376-eb0e-4d54-9d3f-f0443a8c340d","resourceType":"GMSpriteFrame","resourceVersion":"2.0",},
+    {"$GMSpriteFrame":"v1","%Name":"01989376-eb0e-4d54-9d3f-f0443a8c340d","name":"01989376-eb0e-4d54-9d3f-f0443a8c340d","resourceType":"GMSpriteFrame","resourceVersion":"2.0",},
   ],
   "gridX":0,
   "gridY":0,

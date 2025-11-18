@@ -1,5 +1,5 @@
 {
-  "$GMSprite":"",
+  "$GMSprite":"v2",
   "%Name":"spr_Green_Miner",
   "bboxMode":0,
   "bbox_bottom":298,
@@ -12,7 +12,7 @@
   "edgeFiltering":false,
   "For3D":false,
   "frames":[
-    {"$GMSpriteFrame":"","%Name":"d3aaaa0f-e9ed-40b0-9d66-ceceaf0ba360","name":"d3aaaa0f-e9ed-40b0-9d66-ceceaf0ba360","resourceType":"GMSpriteFrame","resourceVersion":"2.0",},
+    {"$GMSpriteFrame":"v1","%Name":"d3aaaa0f-e9ed-40b0-9d66-ceceaf0ba360","name":"d3aaaa0f-e9ed-40b0-9d66-ceceaf0ba360","resourceType":"GMSpriteFrame","resourceVersion":"2.0",},
   ],
   "gridX":0,
   "gridY":0,

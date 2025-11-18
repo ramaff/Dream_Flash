@@ -1,5 +1,5 @@
 {
-  "$GMSprite":"",
+  "$GMSprite":"v2",
   "%Name":"spr_Lime_Dream_Gem",
   "bboxMode":1,
   "bbox_bottom":100,
@@ -12,7 +12,7 @@
   "edgeFiltering":false,
   "For3D":false,
   "frames":[
-    {"$GMSpriteFrame":"","%Name":"ec490ca6-27df-433a-9204-8e4775df3956","name":"ec490ca6-27df-433a-9204-8e4775df3956","resourceType":"GMSpriteFrame","resourceVersion":"2.0",},
+    {"$GMSpriteFrame":"v1","%Name":"ec490ca6-27df-433a-9204-8e4775df3956","name":"ec490ca6-27df-433a-9204-8e4775df3956","resourceType":"GMSpriteFrame","resourceVersion":"2.0",},
   ],
   "gridX":0,
   "gridY":0,

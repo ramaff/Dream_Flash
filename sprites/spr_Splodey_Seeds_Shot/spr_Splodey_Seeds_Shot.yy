@@ -1,5 +1,5 @@
 {
-  "$GMSprite":"",
+  "$GMSprite":"v2",
   "%Name":"spr_Splodey_Seeds_Shot",
   "bboxMode":0,
   "bbox_bottom":45,
@@ -12,7 +12,7 @@
   "edgeFiltering":false,
   "For3D":false,
   "frames":[
-    {"$GMSpriteFrame":"","%Name":"167c7198-9b8a-4a7f-b4e1-30d2d1c8c74b","name":"167c7198-9b8a-4a7f-b4e1-30d2d1c8c74b","resourceType":"GMSpriteFrame","resourceVersion":"2.0",},
+    {"$GMSpriteFrame":"v1","%Name":"167c7198-9b8a-4a7f-b4e1-30d2d1c8c74b","name":"167c7198-9b8a-4a7f-b4e1-30d2d1c8c74b","resourceType":"GMSpriteFrame","resourceVersion":"2.0",},
   ],
   "gridX":0,
   "gridY":0,

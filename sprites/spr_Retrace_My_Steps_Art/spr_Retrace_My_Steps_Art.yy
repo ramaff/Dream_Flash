@@ -1,5 +1,5 @@
 {
-  "$GMSprite":"",
+  "$GMSprite":"v2",
   "%Name":"spr_Retrace_My_Steps_Art",
   "bboxMode":0,
   "bbox_bottom":163,
@@ -12,7 +12,7 @@
   "edgeFiltering":false,
   "For3D":false,
   "frames":[
-    {"$GMSpriteFrame":"","%Name":"c147ef2b-f306-4643-aa3e-6f6737ad23f5","name":"c147ef2b-f306-4643-aa3e-6f6737ad23f5","resourceType":"GMSpriteFrame","resourceVersion":"2.0",},
+    {"$GMSpriteFrame":"v1","%Name":"c147ef2b-f306-4643-aa3e-6f6737ad23f5","name":"c147ef2b-f306-4643-aa3e-6f6737ad23f5","resourceType":"GMSpriteFrame","resourceVersion":"2.0",},
   ],
   "gridX":0,
   "gridY":0,

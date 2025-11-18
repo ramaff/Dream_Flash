@@ -1,5 +1,5 @@
 {
-  "$GMSprite":"",
+  "$GMSprite":"v2",
   "%Name":"tearsclae",
   "bboxMode":2,
   "bbox_bottom":49,
@@ -12,7 +12,7 @@
   "edgeFiltering":false,
   "For3D":false,
   "frames":[
-    {"$GMSpriteFrame":"","%Name":"96c79ec1-3c62-4ae2-b13e-1ff8f77a3cf1","name":"96c79ec1-3c62-4ae2-b13e-1ff8f77a3cf1","resourceType":"GMSpriteFrame","resourceVersion":"2.0",},
+    {"$GMSpriteFrame":"v1","%Name":"96c79ec1-3c62-4ae2-b13e-1ff8f77a3cf1","name":"96c79ec1-3c62-4ae2-b13e-1ff8f77a3cf1","resourceType":"GMSpriteFrame","resourceVersion":"2.0",},
   ],
   "gridX":0,
   "gridY":0,

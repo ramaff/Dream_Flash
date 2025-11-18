@@ -1,5 +1,5 @@
 {
-  "$GMSprite":"",
+  "$GMSprite":"v2",
   "%Name":"spr_Sandman_Sword",
   "bboxMode":0,
   "bbox_bottom":459,
@@ -12,7 +12,7 @@
   "edgeFiltering":false,
   "For3D":false,
   "frames":[
-    {"$GMSpriteFrame":"","%Name":"d334c9fc-fd14-40ab-8672-a77f76d5f0b4","name":"d334c9fc-fd14-40ab-8672-a77f76d5f0b4","resourceType":"GMSpriteFrame","resourceVersion":"2.0",},
+    {"$GMSpriteFrame":"v1","%Name":"d334c9fc-fd14-40ab-8672-a77f76d5f0b4","name":"d334c9fc-fd14-40ab-8672-a77f76d5f0b4","resourceType":"GMSpriteFrame","resourceVersion":"2.0",},
   ],
   "gridX":0,
   "gridY":0,

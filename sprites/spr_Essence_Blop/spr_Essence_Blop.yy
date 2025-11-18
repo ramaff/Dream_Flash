@@ -1,5 +1,5 @@
 {
-  "$GMSprite":"",
+  "$GMSprite":"v2",
   "%Name":"spr_Essence_Blop",
   "bboxMode":0,
   "bbox_bottom":38,
@@ -12,7 +12,7 @@
   "edgeFiltering":false,
   "For3D":false,
   "frames":[
-    {"$GMSpriteFrame":"","%Name":"4ce3187e-2ca8-494f-86c5-eb6bd55b5ee7","name":"4ce3187e-2ca8-494f-86c5-eb6bd55b5ee7","resourceType":"GMSpriteFrame","resourceVersion":"2.0",},
+    {"$GMSpriteFrame":"v1","%Name":"4ce3187e-2ca8-494f-86c5-eb6bd55b5ee7","name":"4ce3187e-2ca8-494f-86c5-eb6bd55b5ee7","resourceType":"GMSpriteFrame","resourceVersion":"2.0",},
   ],
   "gridX":0,
   "gridY":0,

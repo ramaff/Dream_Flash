@@ -1,5 +1,5 @@
 {
-  "$GMSprite":"",
+  "$GMSprite":"v2",
   "%Name":"spr_Sandman_Punch",
   "bboxMode":2,
   "bbox_bottom":428,
@@ -12,7 +12,7 @@
   "edgeFiltering":false,
   "For3D":false,
   "frames":[
-    {"$GMSpriteFrame":"","%Name":"4d30244c-6ca7-4acd-a4cf-9755e0da027f","name":"4d30244c-6ca7-4acd-a4cf-9755e0da027f","resourceType":"GMSpriteFrame","resourceVersion":"2.0",},
+    {"$GMSpriteFrame":"v1","%Name":"4d30244c-6ca7-4acd-a4cf-9755e0da027f","name":"4d30244c-6ca7-4acd-a4cf-9755e0da027f","resourceType":"GMSpriteFrame","resourceVersion":"2.0",},
   ],
   "gridX":0,
   "gridY":0,

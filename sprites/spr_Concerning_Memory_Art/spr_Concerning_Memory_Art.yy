@@ -1,5 +1,5 @@
 {
-  "$GMSprite":"",
+  "$GMSprite":"v2",
   "%Name":"spr_Concerning_Memory_Art",
   "bboxMode":0,
   "bbox_bottom":157,
@@ -12,7 +12,7 @@
   "edgeFiltering":false,
   "For3D":false,
   "frames":[
-    {"$GMSpriteFrame":"","%Name":"618a19ff-32b2-41ca-aa11-dfedaa474e4b","name":"618a19ff-32b2-41ca-aa11-dfedaa474e4b","resourceType":"GMSpriteFrame","resourceVersion":"2.0",},
+    {"$GMSpriteFrame":"v1","%Name":"618a19ff-32b2-41ca-aa11-dfedaa474e4b","name":"618a19ff-32b2-41ca-aa11-dfedaa474e4b","resourceType":"GMSpriteFrame","resourceVersion":"2.0",},
   ],
   "gridX":0,
   "gridY":0,

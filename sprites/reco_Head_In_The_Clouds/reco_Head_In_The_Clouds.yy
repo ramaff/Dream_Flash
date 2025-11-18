@@ -1,5 +1,5 @@
 {
-  "$GMSprite":"",
+  "$GMSprite":"v2",
   "%Name":"reco_Head_In_The_Clouds",
   "bboxMode":0,
   "bbox_bottom":450,
@@ -12,7 +12,7 @@
   "edgeFiltering":false,
   "For3D":false,
   "frames":[
-    {"$GMSpriteFrame":"","%Name":"1bf526a9-d166-435a-9501-1e94bcc8cb3e","name":"1bf526a9-d166-435a-9501-1e94bcc8cb3e","resourceType":"GMSpriteFrame","resourceVersion":"2.0",},
+    {"$GMSpriteFrame":"v1","%Name":"1bf526a9-d166-435a-9501-1e94bcc8cb3e","name":"1bf526a9-d166-435a-9501-1e94bcc8cb3e","resourceType":"GMSpriteFrame","resourceVersion":"2.0",},
   ],
   "gridX":0,
   "gridY":0,

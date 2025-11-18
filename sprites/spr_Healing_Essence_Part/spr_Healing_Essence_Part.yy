@@ -1,5 +1,5 @@
 {
-  "$GMSprite":"",
+  "$GMSprite":"v2",
   "%Name":"spr_Healing_Essence_Part",
   "bboxMode":0,
   "bbox_bottom":62,
@@ -12,7 +12,7 @@
   "edgeFiltering":false,
   "For3D":false,
   "frames":[
-    {"$GMSpriteFrame":"","%Name":"34240b34-b87f-4b8b-b2c8-afa73465bfb0","name":"34240b34-b87f-4b8b-b2c8-afa73465bfb0","resourceType":"GMSpriteFrame","resourceVersion":"2.0",},
+    {"$GMSpriteFrame":"v1","%Name":"34240b34-b87f-4b8b-b2c8-afa73465bfb0","name":"34240b34-b87f-4b8b-b2c8-afa73465bfb0","resourceType":"GMSpriteFrame","resourceVersion":"2.0",},
   ],
   "gridX":0,
   "gridY":0,

@@ -1,5 +1,5 @@
 {
-  "$GMSprite":"",
+  "$GMSprite":"v2",
   "%Name":"spr_Wicked_Spectre1522",
   "bboxMode":0,
   "bbox_bottom":318,
@@ -12,7 +12,7 @@
   "edgeFiltering":false,
   "For3D":false,
   "frames":[
-    {"$GMSpriteFrame":"","%Name":"615cedaf-1581-4e0c-a2ab-af63726064d7","name":"615cedaf-1581-4e0c-a2ab-af63726064d7","resourceType":"GMSpriteFrame","resourceVersion":"2.0",},
+    {"$GMSpriteFrame":"v1","%Name":"615cedaf-1581-4e0c-a2ab-af63726064d7","name":"615cedaf-1581-4e0c-a2ab-af63726064d7","resourceType":"GMSpriteFrame","resourceVersion":"2.0",},
   ],
   "gridX":0,
   "gridY":0,

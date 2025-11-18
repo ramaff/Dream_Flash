@@ -1,5 +1,5 @@
 {
-  "$GMSprite":"",
+  "$GMSprite":"v2",
   "%Name":"spr_Infatuation_Cloud",
   "bboxMode":0,
   "bbox_bottom":321,
@@ -12,7 +12,7 @@
   "edgeFiltering":false,
   "For3D":false,
   "frames":[
-    {"$GMSpriteFrame":"","%Name":"99ce1081-ef56-4553-b34a-1b074e6b8090","name":"99ce1081-ef56-4553-b34a-1b074e6b8090","resourceType":"GMSpriteFrame","resourceVersion":"2.0",},
+    {"$GMSpriteFrame":"v1","%Name":"99ce1081-ef56-4553-b34a-1b074e6b8090","name":"99ce1081-ef56-4553-b34a-1b074e6b8090","resourceType":"GMSpriteFrame","resourceVersion":"2.0",},
   ],
   "gridX":0,
   "gridY":0,

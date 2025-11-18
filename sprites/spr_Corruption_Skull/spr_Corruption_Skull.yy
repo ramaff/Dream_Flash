@@ -1,5 +1,5 @@
 {
-  "$GMSprite":"",
+  "$GMSprite":"v2",
   "%Name":"spr_Corruption_Skull",
   "bboxMode":0,
   "bbox_bottom":387,
@@ -12,7 +12,7 @@
   "edgeFiltering":false,
   "For3D":false,
   "frames":[
-    {"$GMSpriteFrame":"","%Name":"5b95190e-a99f-4b6e-9531-a55c8ab26e05","name":"5b95190e-a99f-4b6e-9531-a55c8ab26e05","resourceType":"GMSpriteFrame","resourceVersion":"2.0",},
+    {"$GMSpriteFrame":"v1","%Name":"5b95190e-a99f-4b6e-9531-a55c8ab26e05","name":"5b95190e-a99f-4b6e-9531-a55c8ab26e05","resourceType":"GMSpriteFrame","resourceVersion":"2.0",},
   ],
   "gridX":0,
   "gridY":0,

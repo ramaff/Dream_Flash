@@ -1,5 +1,5 @@
 {
-  "$GMSprite":"",
+  "$GMSprite":"v2",
   "%Name":"spr_Drill_Laser",
   "bboxMode":2,
   "bbox_bottom":88,
@@ -12,9 +12,9 @@
   "edgeFiltering":false,
   "For3D":false,
   "frames":[
-    {"$GMSpriteFrame":"","%Name":"805613c9-a2c8-4302-a7c4-40f085b56bf2","name":"805613c9-a2c8-4302-a7c4-40f085b56bf2","resourceType":"GMSpriteFrame","resourceVersion":"2.0",},
-    {"$GMSpriteFrame":"","%Name":"bb11a9e4-e592-4718-a490-c6be3f8376d7","name":"bb11a9e4-e592-4718-a490-c6be3f8376d7","resourceType":"GMSpriteFrame","resourceVersion":"2.0",},
-    {"$GMSpriteFrame":"","%Name":"b6558dd5-dd79-4440-b442-08db48b216c6","name":"b6558dd5-dd79-4440-b442-08db48b216c6","resourceType":"GMSpriteFrame","resourceVersion":"2.0",},
+    {"$GMSpriteFrame":"v1","%Name":"805613c9-a2c8-4302-a7c4-40f085b56bf2","name":"805613c9-a2c8-4302-a7c4-40f085b56bf2","resourceType":"GMSpriteFrame","resourceVersion":"2.0",},
+    {"$GMSpriteFrame":"v1","%Name":"bb11a9e4-e592-4718-a490-c6be3f8376d7","name":"bb11a9e4-e592-4718-a490-c6be3f8376d7","resourceType":"GMSpriteFrame","resourceVersion":"2.0",},
+    {"$GMSpriteFrame":"v1","%Name":"b6558dd5-dd79-4440-b442-08db48b216c6","name":"b6558dd5-dd79-4440-b442-08db48b216c6","resourceType":"GMSpriteFrame","resourceVersion":"2.0",},
   ],
   "gridX":0,
   "gridY":0,

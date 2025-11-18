@@ -1,5 +1,5 @@
 {
-  "$GMSprite":"",
+  "$GMSprite":"v2",
   "%Name":"spr_White_Belt_Ninja",
   "bboxMode":0,
   "bbox_bottom":416,
@@ -12,7 +12,7 @@
   "edgeFiltering":false,
   "For3D":false,
   "frames":[
-    {"$GMSpriteFrame":"","%Name":"fa24c98c-5f58-4611-bde2-b8ec1dcfb815","name":"fa24c98c-5f58-4611-bde2-b8ec1dcfb815","resourceType":"GMSpriteFrame","resourceVersion":"2.0",},
+    {"$GMSpriteFrame":"v1","%Name":"fa24c98c-5f58-4611-bde2-b8ec1dcfb815","name":"fa24c98c-5f58-4611-bde2-b8ec1dcfb815","resourceType":"GMSpriteFrame","resourceVersion":"2.0",},
   ],
   "gridX":0,
   "gridY":0,

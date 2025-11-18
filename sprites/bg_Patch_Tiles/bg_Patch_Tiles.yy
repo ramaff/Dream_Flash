@@ -1,5 +1,5 @@
 {
-  "$GMSprite":"",
+  "$GMSprite":"v2",
   "%Name":"bg_Patch_Tiles",
   "bboxMode":0,
   "bbox_bottom":127,
@@ -12,7 +12,7 @@
   "edgeFiltering":false,
   "For3D":false,
   "frames":[
-    {"$GMSpriteFrame":"","%Name":"500b1d2e-7c32-4a0c-9fc5-f3cab0694b69","name":"500b1d2e-7c32-4a0c-9fc5-f3cab0694b69","resourceType":"GMSpriteFrame","resourceVersion":"2.0",},
+    {"$GMSpriteFrame":"v1","%Name":"500b1d2e-7c32-4a0c-9fc5-f3cab0694b69","name":"500b1d2e-7c32-4a0c-9fc5-f3cab0694b69","resourceType":"GMSpriteFrame","resourceVersion":"2.0",},
   ],
   "gridX":0,
   "gridY":0,

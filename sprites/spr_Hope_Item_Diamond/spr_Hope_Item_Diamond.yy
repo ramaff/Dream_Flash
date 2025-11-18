@@ -1,5 +1,5 @@
 {
-  "$GMSprite":"",
+  "$GMSprite":"v2",
   "%Name":"spr_Hope_Item_Diamond",
   "bboxMode":1,
   "bbox_bottom":171,
@@ -12,7 +12,7 @@
   "edgeFiltering":false,
   "For3D":false,
   "frames":[
-    {"$GMSpriteFrame":"","%Name":"4813c344-5dad-42e1-95e1-43f00006592c","name":"4813c344-5dad-42e1-95e1-43f00006592c","resourceType":"GMSpriteFrame","resourceVersion":"2.0",},
+    {"$GMSpriteFrame":"v1","%Name":"4813c344-5dad-42e1-95e1-43f00006592c","name":"4813c344-5dad-42e1-95e1-43f00006592c","resourceType":"GMSpriteFrame","resourceVersion":"2.0",},
   ],
   "gridX":0,
   "gridY":0,

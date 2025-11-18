@@ -1,5 +1,5 @@
 {
-  "$GMSprite":"",
+  "$GMSprite":"v2",
   "%Name":"spr_Crying_Tree",
   "bboxMode":0,
   "bbox_bottom":410,
@@ -12,7 +12,7 @@
   "edgeFiltering":false,
   "For3D":false,
   "frames":[
-    {"$GMSpriteFrame":"","%Name":"4a198042-8cfe-4591-a09f-794e56643fb0","name":"4a198042-8cfe-4591-a09f-794e56643fb0","resourceType":"GMSpriteFrame","resourceVersion":"2.0",},
+    {"$GMSpriteFrame":"v1","%Name":"4a198042-8cfe-4591-a09f-794e56643fb0","name":"4a198042-8cfe-4591-a09f-794e56643fb0","resourceType":"GMSpriteFrame","resourceVersion":"2.0",},
   ],
   "gridX":0,
   "gridY":0,

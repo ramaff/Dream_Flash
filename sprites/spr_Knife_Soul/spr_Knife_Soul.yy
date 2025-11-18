@@ -1,5 +1,5 @@
 {
-  "$GMSprite":"",
+  "$GMSprite":"v2",
   "%Name":"spr_Knife_Soul",
   "bboxMode":0,
   "bbox_bottom":149,
@@ -12,7 +12,7 @@
   "edgeFiltering":false,
   "For3D":false,
   "frames":[
-    {"$GMSpriteFrame":"","%Name":"89a1ec6b-bb7c-4f39-9404-ba982778b6ce","name":"89a1ec6b-bb7c-4f39-9404-ba982778b6ce","resourceType":"GMSpriteFrame","resourceVersion":"2.0",},
+    {"$GMSpriteFrame":"v1","%Name":"89a1ec6b-bb7c-4f39-9404-ba982778b6ce","name":"89a1ec6b-bb7c-4f39-9404-ba982778b6ce","resourceType":"GMSpriteFrame","resourceVersion":"2.0",},
   ],
   "gridX":0,
   "gridY":0,

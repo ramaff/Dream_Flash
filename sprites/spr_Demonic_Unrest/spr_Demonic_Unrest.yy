@@ -1,5 +1,5 @@
 {
-  "$GMSprite":"",
+  "$GMSprite":"v2",
   "%Name":"spr_Demonic_Unrest",
   "bboxMode":0,
   "bbox_bottom":401,
@@ -12,7 +12,7 @@
   "edgeFiltering":false,
   "For3D":false,
   "frames":[
-    {"$GMSpriteFrame":"","%Name":"f6d15ddd-ef6a-4cce-a940-4db9e765275d","name":"f6d15ddd-ef6a-4cce-a940-4db9e765275d","resourceType":"GMSpriteFrame","resourceVersion":"2.0",},
+    {"$GMSpriteFrame":"v1","%Name":"f6d15ddd-ef6a-4cce-a940-4db9e765275d","name":"f6d15ddd-ef6a-4cce-a940-4db9e765275d","resourceType":"GMSpriteFrame","resourceVersion":"2.0",},
   ],
   "gridX":0,
   "gridY":0,

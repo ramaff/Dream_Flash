@@ -1,5 +1,5 @@
 {
-  "$GMSprite":"",
+  "$GMSprite":"v2",
   "%Name":"spr_Regen_Heart_Art",
   "bboxMode":0,
   "bbox_bottom":157,
@@ -12,7 +12,7 @@
   "edgeFiltering":false,
   "For3D":false,
   "frames":[
-    {"$GMSpriteFrame":"","%Name":"0f0c8b44-bcc0-449a-8eb5-f5b5cdc1cb2e","name":"0f0c8b44-bcc0-449a-8eb5-f5b5cdc1cb2e","resourceType":"GMSpriteFrame","resourceVersion":"2.0",},
+    {"$GMSpriteFrame":"v1","%Name":"0f0c8b44-bcc0-449a-8eb5-f5b5cdc1cb2e","name":"0f0c8b44-bcc0-449a-8eb5-f5b5cdc1cb2e","resourceType":"GMSpriteFrame","resourceVersion":"2.0",},
   ],
   "gridX":0,
   "gridY":0,

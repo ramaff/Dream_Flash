@@ -1,5 +1,5 @@
 {
-  "$GMSprite":"",
+  "$GMSprite":"v2",
   "%Name":"spr_Red_Gem_Beam_Shot",
   "bboxMode":0,
   "bbox_bottom":61,
@@ -12,7 +12,7 @@
   "edgeFiltering":false,
   "For3D":false,
   "frames":[
-    {"$GMSpriteFrame":"","%Name":"705b9c81-8154-4159-bef3-00c0763c4ce9","name":"705b9c81-8154-4159-bef3-00c0763c4ce9","resourceType":"GMSpriteFrame","resourceVersion":"2.0",},
+    {"$GMSpriteFrame":"v1","%Name":"705b9c81-8154-4159-bef3-00c0763c4ce9","name":"705b9c81-8154-4159-bef3-00c0763c4ce9","resourceType":"GMSpriteFrame","resourceVersion":"2.0",},
   ],
   "gridX":0,
   "gridY":0,

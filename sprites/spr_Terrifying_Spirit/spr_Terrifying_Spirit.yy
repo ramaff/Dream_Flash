@@ -1,5 +1,5 @@
 {
-  "$GMSprite":"",
+  "$GMSprite":"v2",
   "%Name":"spr_Terrifying_Spirit",
   "bboxMode":0,
   "bbox_bottom":315,
@@ -12,7 +12,7 @@
   "edgeFiltering":false,
   "For3D":false,
   "frames":[
-    {"$GMSpriteFrame":"","%Name":"8f15c724-42c8-422c-9fe7-138dd8a5d7ed","name":"8f15c724-42c8-422c-9fe7-138dd8a5d7ed","resourceType":"GMSpriteFrame","resourceVersion":"2.0",},
+    {"$GMSpriteFrame":"v1","%Name":"8f15c724-42c8-422c-9fe7-138dd8a5d7ed","name":"8f15c724-42c8-422c-9fe7-138dd8a5d7ed","resourceType":"GMSpriteFrame","resourceVersion":"2.0",},
   ],
   "gridX":0,
   "gridY":0,

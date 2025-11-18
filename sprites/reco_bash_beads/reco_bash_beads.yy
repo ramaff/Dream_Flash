@@ -1,5 +1,5 @@
 {
-  "$GMSprite":"",
+  "$GMSprite":"v2",
   "%Name":"reco_bash_beads",
   "bboxMode":0,
   "bbox_bottom":297,
@@ -12,7 +12,7 @@
   "edgeFiltering":false,
   "For3D":false,
   "frames":[
-    {"$GMSpriteFrame":"","%Name":"1a6ef4e2-e38a-404b-8ffd-c38e1570d404","name":"1a6ef4e2-e38a-404b-8ffd-c38e1570d404","resourceType":"GMSpriteFrame","resourceVersion":"2.0",},
+    {"$GMSpriteFrame":"v1","%Name":"1a6ef4e2-e38a-404b-8ffd-c38e1570d404","name":"1a6ef4e2-e38a-404b-8ffd-c38e1570d404","resourceType":"GMSpriteFrame","resourceVersion":"2.0",},
   ],
   "gridX":0,
   "gridY":0,

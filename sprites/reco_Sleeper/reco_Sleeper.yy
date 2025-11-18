@@ -1,5 +1,5 @@
 {
-  "$GMSprite":"",
+  "$GMSprite":"v2",
   "%Name":"reco_Sleeper",
   "bboxMode":0,
   "bbox_bottom":300,
@@ -12,7 +12,7 @@
   "edgeFiltering":false,
   "For3D":false,
   "frames":[
-    {"$GMSpriteFrame":"","%Name":"d5bff3ec-34cb-4586-8c62-0b7835764fd1","name":"d5bff3ec-34cb-4586-8c62-0b7835764fd1","resourceType":"GMSpriteFrame","resourceVersion":"2.0",},
+    {"$GMSpriteFrame":"v1","%Name":"d5bff3ec-34cb-4586-8c62-0b7835764fd1","name":"d5bff3ec-34cb-4586-8c62-0b7835764fd1","resourceType":"GMSpriteFrame","resourceVersion":"2.0",},
   ],
   "gridX":0,
   "gridY":0,

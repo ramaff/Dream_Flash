@@ -1,5 +1,5 @@
 {
-  "$GMSprite":"",
+  "$GMSprite":"v2",
   "%Name":"spr_Recollection_Cloud_v2_p1",
   "bboxMode":0,
   "bbox_bottom":109,
@@ -12,7 +12,7 @@
   "edgeFiltering":false,
   "For3D":false,
   "frames":[
-    {"$GMSpriteFrame":"","%Name":"215b2b6c-e8a7-4382-b9ab-b5d6548e4273","name":"215b2b6c-e8a7-4382-b9ab-b5d6548e4273","resourceType":"GMSpriteFrame","resourceVersion":"2.0",},
+    {"$GMSpriteFrame":"v1","%Name":"215b2b6c-e8a7-4382-b9ab-b5d6548e4273","name":"215b2b6c-e8a7-4382-b9ab-b5d6548e4273","resourceType":"GMSpriteFrame","resourceVersion":"2.0",},
   ],
   "gridX":0,
   "gridY":0,

@@ -1,5 +1,5 @@
 {
-  "$GMSprite":"",
+  "$GMSprite":"v2",
   "%Name":"reco_High_Loathing_Spirit",
   "bboxMode":0,
   "bbox_bottom":591,
@@ -12,7 +12,7 @@
   "edgeFiltering":false,
   "For3D":false,
   "frames":[
-    {"$GMSpriteFrame":"","%Name":"4c1267b5-2b0b-4052-8519-87c5c323f59d","name":"4c1267b5-2b0b-4052-8519-87c5c323f59d","resourceType":"GMSpriteFrame","resourceVersion":"2.0",},
+    {"$GMSpriteFrame":"v1","%Name":"4c1267b5-2b0b-4052-8519-87c5c323f59d","name":"4c1267b5-2b0b-4052-8519-87c5c323f59d","resourceType":"GMSpriteFrame","resourceVersion":"2.0",},
   ],
   "gridX":0,
   "gridY":0,

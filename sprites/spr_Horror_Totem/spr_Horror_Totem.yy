@@ -1,5 +1,5 @@
 {
-  "$GMSprite":"",
+  "$GMSprite":"v2",
   "%Name":"spr_Horror_Totem",
   "bboxMode":0,
   "bbox_bottom":469,
@@ -12,7 +12,7 @@
   "edgeFiltering":false,
   "For3D":false,
   "frames":[
-    {"$GMSpriteFrame":"","%Name":"cfeaabb5-049e-4665-96e5-3b4120c98a82","name":"cfeaabb5-049e-4665-96e5-3b4120c98a82","resourceType":"GMSpriteFrame","resourceVersion":"2.0",},
+    {"$GMSpriteFrame":"v1","%Name":"cfeaabb5-049e-4665-96e5-3b4120c98a82","name":"cfeaabb5-049e-4665-96e5-3b4120c98a82","resourceType":"GMSpriteFrame","resourceVersion":"2.0",},
   ],
   "gridX":0,
   "gridY":0,

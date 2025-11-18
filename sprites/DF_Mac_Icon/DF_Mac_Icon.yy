@@ -1,5 +1,5 @@
 {
-  "$GMSprite":"",
+  "$GMSprite":"v2",
   "%Name":"DF_Mac_Icon",
   "bboxMode":2,
   "bbox_bottom":41,
@@ -12,7 +12,7 @@
   "edgeFiltering":false,
   "For3D":false,
   "frames":[
-    {"$GMSpriteFrame":"","%Name":"7f4eca44-ab06-4cf3-befe-c466fa3ff076","name":"7f4eca44-ab06-4cf3-befe-c466fa3ff076","resourceType":"GMSpriteFrame","resourceVersion":"2.0",},
+    {"$GMSpriteFrame":"v1","%Name":"7f4eca44-ab06-4cf3-befe-c466fa3ff076","name":"7f4eca44-ab06-4cf3-befe-c466fa3ff076","resourceType":"GMSpriteFrame","resourceVersion":"2.0",},
   ],
   "gridX":0,
   "gridY":0,

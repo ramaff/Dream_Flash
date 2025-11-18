@@ -1,5 +1,5 @@
 {
-  "$GMSprite":"",
+  "$GMSprite":"v2",
   "%Name":"spr_dark_storm_cloud_palette",
   "bboxMode":0,
   "bbox_bottom":12,
@@ -12,7 +12,7 @@
   "edgeFiltering":false,
   "For3D":false,
   "frames":[
-    {"$GMSpriteFrame":"","%Name":"f73bb36a-d0cc-4869-8cd0-c11d4e4d2955","name":"f73bb36a-d0cc-4869-8cd0-c11d4e4d2955","resourceType":"GMSpriteFrame","resourceVersion":"2.0",},
+    {"$GMSpriteFrame":"v1","%Name":"f73bb36a-d0cc-4869-8cd0-c11d4e4d2955","name":"f73bb36a-d0cc-4869-8cd0-c11d4e4d2955","resourceType":"GMSpriteFrame","resourceVersion":"2.0",},
   ],
   "gridX":0,
   "gridY":0,

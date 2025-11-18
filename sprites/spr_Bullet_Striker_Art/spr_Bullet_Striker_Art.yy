@@ -1,5 +1,5 @@
 {
-  "$GMSprite":"",
+  "$GMSprite":"v2",
   "%Name":"spr_Bullet_Striker_Art",
   "bboxMode":0,
   "bbox_bottom":156,
@@ -12,7 +12,7 @@
   "edgeFiltering":false,
   "For3D":false,
   "frames":[
-    {"$GMSpriteFrame":"","%Name":"cbc2b079-00d7-4ec9-b5e2-8a28873b064f","name":"cbc2b079-00d7-4ec9-b5e2-8a28873b064f","resourceType":"GMSpriteFrame","resourceVersion":"2.0",},
+    {"$GMSpriteFrame":"v1","%Name":"cbc2b079-00d7-4ec9-b5e2-8a28873b064f","name":"cbc2b079-00d7-4ec9-b5e2-8a28873b064f","resourceType":"GMSpriteFrame","resourceVersion":"2.0",},
   ],
   "gridX":0,
   "gridY":0,

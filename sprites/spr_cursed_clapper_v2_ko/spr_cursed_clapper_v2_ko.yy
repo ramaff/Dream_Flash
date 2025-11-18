@@ -1,5 +1,5 @@
 {
-  "$GMSprite":"",
+  "$GMSprite":"v2",
   "%Name":"spr_cursed_clapper_v2_ko",
   "bboxMode":0,
   "bbox_bottom":437,
@@ -12,7 +12,7 @@
   "edgeFiltering":false,
   "For3D":false,
   "frames":[
-    {"$GMSpriteFrame":"","%Name":"1aa3dea0-84ea-408a-92a3-d58cf141b3e2","name":"1aa3dea0-84ea-408a-92a3-d58cf141b3e2","resourceType":"GMSpriteFrame","resourceVersion":"2.0",},
+    {"$GMSpriteFrame":"v1","%Name":"1aa3dea0-84ea-408a-92a3-d58cf141b3e2","name":"1aa3dea0-84ea-408a-92a3-d58cf141b3e2","resourceType":"GMSpriteFrame","resourceVersion":"2.0",},
   ],
   "gridX":0,
   "gridY":0,

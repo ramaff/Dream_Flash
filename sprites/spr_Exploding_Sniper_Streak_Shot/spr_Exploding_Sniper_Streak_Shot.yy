@@ -1,5 +1,5 @@
 {
-  "$GMSprite":"",
+  "$GMSprite":"v2",
   "%Name":"spr_Exploding_Sniper_Streak_Shot",
   "bboxMode":0,
   "bbox_bottom":52,
@@ -12,7 +12,7 @@
   "edgeFiltering":false,
   "For3D":false,
   "frames":[
-    {"$GMSpriteFrame":"","%Name":"9f688e98-d883-4d08-b43b-fc52914ed37d","name":"9f688e98-d883-4d08-b43b-fc52914ed37d","resourceType":"GMSpriteFrame","resourceVersion":"2.0",},
+    {"$GMSpriteFrame":"v1","%Name":"9f688e98-d883-4d08-b43b-fc52914ed37d","name":"9f688e98-d883-4d08-b43b-fc52914ed37d","resourceType":"GMSpriteFrame","resourceVersion":"2.0",},
   ],
   "gridX":0,
   "gridY":0,

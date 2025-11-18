@@ -1,5 +1,5 @@
 {
-  "$GMSprite":"",
+  "$GMSprite":"v2",
   "%Name":"spr_Evil_Fire",
   "bboxMode":2,
   "bbox_bottom":85,
@@ -12,7 +12,7 @@
   "edgeFiltering":false,
   "For3D":false,
   "frames":[
-    {"$GMSpriteFrame":"","%Name":"5e625ec9-6f93-4051-920a-3a86b32b790a","name":"5e625ec9-6f93-4051-920a-3a86b32b790a","resourceType":"GMSpriteFrame","resourceVersion":"2.0",},
+    {"$GMSpriteFrame":"v1","%Name":"5e625ec9-6f93-4051-920a-3a86b32b790a","name":"5e625ec9-6f93-4051-920a-3a86b32b790a","resourceType":"GMSpriteFrame","resourceVersion":"2.0",},
   ],
   "gridX":0,
   "gridY":0,

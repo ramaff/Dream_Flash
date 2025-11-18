@@ -1,5 +1,5 @@
 {
-  "$GMSprite":"",
+  "$GMSprite":"v2",
   "%Name":"spr_Field_Diamond",
   "bboxMode":0,
   "bbox_bottom":367,
@@ -12,7 +12,7 @@
   "edgeFiltering":false,
   "For3D":false,
   "frames":[
-    {"$GMSpriteFrame":"","%Name":"1c463361-7bec-43da-a597-1ce2fe86f9b8","name":"1c463361-7bec-43da-a597-1ce2fe86f9b8","resourceType":"GMSpriteFrame","resourceVersion":"2.0",},
+    {"$GMSpriteFrame":"v1","%Name":"1c463361-7bec-43da-a597-1ce2fe86f9b8","name":"1c463361-7bec-43da-a597-1ce2fe86f9b8","resourceType":"GMSpriteFrame","resourceVersion":"2.0",},
   ],
   "gridX":0,
   "gridY":0,

@@ -1,5 +1,5 @@
 {
-  "$GMSprite":"",
+  "$GMSprite":"v2",
   "%Name":"reco_Hand_of_the_Accuser",
   "bboxMode":0,
   "bbox_bottom":256,
@@ -12,7 +12,7 @@
   "edgeFiltering":false,
   "For3D":false,
   "frames":[
-    {"$GMSpriteFrame":"","%Name":"e419ea19-bf45-4991-baad-c9a832ed311f","name":"e419ea19-bf45-4991-baad-c9a832ed311f","resourceType":"GMSpriteFrame","resourceVersion":"2.0",},
+    {"$GMSpriteFrame":"v1","%Name":"e419ea19-bf45-4991-baad-c9a832ed311f","name":"e419ea19-bf45-4991-baad-c9a832ed311f","resourceType":"GMSpriteFrame","resourceVersion":"2.0",},
   ],
   "gridX":0,
   "gridY":0,

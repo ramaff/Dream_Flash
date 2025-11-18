@@ -1,5 +1,5 @@
 {
-  "$GMSprite":"",
+  "$GMSprite":"v2",
   "%Name":"spr_Bleeding_Knife",
   "bboxMode":0,
   "bbox_bottom":33,
@@ -12,7 +12,7 @@
   "edgeFiltering":false,
   "For3D":false,
   "frames":[
-    {"$GMSpriteFrame":"","%Name":"49804d3b-bd7e-4c1d-9ac1-85ac49eeba08","name":"49804d3b-bd7e-4c1d-9ac1-85ac49eeba08","resourceType":"GMSpriteFrame","resourceVersion":"2.0",},
+    {"$GMSpriteFrame":"v1","%Name":"49804d3b-bd7e-4c1d-9ac1-85ac49eeba08","name":"49804d3b-bd7e-4c1d-9ac1-85ac49eeba08","resourceType":"GMSpriteFrame","resourceVersion":"2.0",},
   ],
   "gridX":0,
   "gridY":0,

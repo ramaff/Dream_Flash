@@ -1,5 +1,5 @@
 {
-  "$GMSprite":"",
+  "$GMSprite":"v2",
   "%Name":"spr_Maw_Head",
   "bboxMode":0,
   "bbox_bottom":324,
@@ -12,7 +12,7 @@
   "edgeFiltering":false,
   "For3D":false,
   "frames":[
-    {"$GMSpriteFrame":"","%Name":"cf80c8b3-8f48-4078-9e52-9b7c526bed57","name":"cf80c8b3-8f48-4078-9e52-9b7c526bed57","resourceType":"GMSpriteFrame","resourceVersion":"2.0",},
+    {"$GMSpriteFrame":"v1","%Name":"cf80c8b3-8f48-4078-9e52-9b7c526bed57","name":"cf80c8b3-8f48-4078-9e52-9b7c526bed57","resourceType":"GMSpriteFrame","resourceVersion":"2.0",},
   ],
   "gridX":0,
   "gridY":0,

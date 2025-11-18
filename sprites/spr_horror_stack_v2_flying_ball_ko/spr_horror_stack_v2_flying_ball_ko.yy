@@ -1,5 +1,5 @@
 {
-  "$GMSprite":"",
+  "$GMSprite":"v2",
   "%Name":"spr_horror_stack_v2_flying_ball_ko",
   "bboxMode":0,
   "bbox_bottom":485,
@@ -12,7 +12,7 @@
   "edgeFiltering":false,
   "For3D":false,
   "frames":[
-    {"$GMSpriteFrame":"","%Name":"9db996a5-13cd-4125-96c5-7363d962a7b7","name":"9db996a5-13cd-4125-96c5-7363d962a7b7","resourceType":"GMSpriteFrame","resourceVersion":"2.0",},
+    {"$GMSpriteFrame":"v1","%Name":"9db996a5-13cd-4125-96c5-7363d962a7b7","name":"9db996a5-13cd-4125-96c5-7363d962a7b7","resourceType":"GMSpriteFrame","resourceVersion":"2.0",},
   ],
   "gridX":0,
   "gridY":0,

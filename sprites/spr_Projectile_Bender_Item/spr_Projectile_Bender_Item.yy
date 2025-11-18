@@ -1,5 +1,5 @@
 {
-  "$GMSprite":"",
+  "$GMSprite":"v2",
   "%Name":"spr_Projectile_Bender_Item",
   "bboxMode":0,
   "bbox_bottom":157,
@@ -12,7 +12,7 @@
   "edgeFiltering":false,
   "For3D":false,
   "frames":[
-    {"$GMSpriteFrame":"","%Name":"6e71c5c0-dd46-4a6a-999f-2098cd0832d9","name":"6e71c5c0-dd46-4a6a-999f-2098cd0832d9","resourceType":"GMSpriteFrame","resourceVersion":"2.0",},
+    {"$GMSpriteFrame":"v1","%Name":"6e71c5c0-dd46-4a6a-999f-2098cd0832d9","name":"6e71c5c0-dd46-4a6a-999f-2098cd0832d9","resourceType":"GMSpriteFrame","resourceVersion":"2.0",},
   ],
   "gridX":0,
   "gridY":0,

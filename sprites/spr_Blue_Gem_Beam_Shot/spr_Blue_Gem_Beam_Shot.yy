@@ -1,5 +1,5 @@
 {
-  "$GMSprite":"",
+  "$GMSprite":"v2",
   "%Name":"spr_Blue_Gem_Beam_Shot",
   "bboxMode":0,
   "bbox_bottom":30,
@@ -12,7 +12,7 @@
   "edgeFiltering":false,
   "For3D":false,
   "frames":[
-    {"$GMSpriteFrame":"","%Name":"254ea72a-ddea-4b32-9430-ff885b06b017","name":"254ea72a-ddea-4b32-9430-ff885b06b017","resourceType":"GMSpriteFrame","resourceVersion":"2.0",},
+    {"$GMSpriteFrame":"v1","%Name":"254ea72a-ddea-4b32-9430-ff885b06b017","name":"254ea72a-ddea-4b32-9430-ff885b06b017","resourceType":"GMSpriteFrame","resourceVersion":"2.0",},
   ],
   "gridX":0,
   "gridY":0,

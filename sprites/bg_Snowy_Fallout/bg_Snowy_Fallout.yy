@@ -1,5 +1,5 @@
 {
-  "$GMSprite":"",
+  "$GMSprite":"v2",
   "%Name":"bg_Snowy_Fallout",
   "bboxMode":0,
   "bbox_bottom":127,
@@ -12,7 +12,7 @@
   "edgeFiltering":false,
   "For3D":false,
   "frames":[
-    {"$GMSpriteFrame":"","%Name":"7406c9ab-7e29-4b21-8c4b-f4b7dda4e597","name":"7406c9ab-7e29-4b21-8c4b-f4b7dda4e597","resourceType":"GMSpriteFrame","resourceVersion":"2.0",},
+    {"$GMSpriteFrame":"v1","%Name":"7406c9ab-7e29-4b21-8c4b-f4b7dda4e597","name":"7406c9ab-7e29-4b21-8c4b-f4b7dda4e597","resourceType":"GMSpriteFrame","resourceVersion":"2.0",},
   ],
   "gridX":0,
   "gridY":0,

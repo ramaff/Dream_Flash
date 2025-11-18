@@ -1,5 +1,5 @@
 {
-  "$GMSprite":"",
+  "$GMSprite":"v2",
   "%Name":"old_Feel_Tiles",
   "bboxMode":0,
   "bbox_bottom":127,
@@ -12,7 +12,7 @@
   "edgeFiltering":false,
   "For3D":false,
   "frames":[
-    {"$GMSpriteFrame":"","%Name":"41bfbecd-5fe1-4cab-8403-7cc904ecd5f4","name":"41bfbecd-5fe1-4cab-8403-7cc904ecd5f4","resourceType":"GMSpriteFrame","resourceVersion":"2.0",},
+    {"$GMSpriteFrame":"v1","%Name":"41bfbecd-5fe1-4cab-8403-7cc904ecd5f4","name":"41bfbecd-5fe1-4cab-8403-7cc904ecd5f4","resourceType":"GMSpriteFrame","resourceVersion":"2.0",},
   ],
   "gridX":0,
   "gridY":0,

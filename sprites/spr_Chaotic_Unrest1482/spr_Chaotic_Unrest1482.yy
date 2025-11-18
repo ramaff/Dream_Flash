@@ -1,5 +1,5 @@
 {
-  "$GMSprite":"",
+  "$GMSprite":"v2",
   "%Name":"spr_Chaotic_Unrest1482",
   "bboxMode":0,
   "bbox_bottom":313,
@@ -12,7 +12,7 @@
   "edgeFiltering":false,
   "For3D":false,
   "frames":[
-    {"$GMSpriteFrame":"","%Name":"cdda7091-6e41-47f1-b8f1-06be482dc51f","name":"cdda7091-6e41-47f1-b8f1-06be482dc51f","resourceType":"GMSpriteFrame","resourceVersion":"2.0",},
+    {"$GMSpriteFrame":"v1","%Name":"cdda7091-6e41-47f1-b8f1-06be482dc51f","name":"cdda7091-6e41-47f1-b8f1-06be482dc51f","resourceType":"GMSpriteFrame","resourceVersion":"2.0",},
   ],
   "gridX":0,
   "gridY":0,

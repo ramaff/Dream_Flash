@@ -1,5 +1,5 @@
 {
-  "$GMSprite":"",
+  "$GMSprite":"v2",
   "%Name":"spr_Spitballing_Art",
   "bboxMode":0,
   "bbox_bottom":157,
@@ -12,7 +12,7 @@
   "edgeFiltering":false,
   "For3D":false,
   "frames":[
-    {"$GMSpriteFrame":"","%Name":"9c5fb0f4-4e7a-4be1-85ca-31c91f1516d1","name":"9c5fb0f4-4e7a-4be1-85ca-31c91f1516d1","resourceType":"GMSpriteFrame","resourceVersion":"2.0",},
+    {"$GMSpriteFrame":"v1","%Name":"9c5fb0f4-4e7a-4be1-85ca-31c91f1516d1","name":"9c5fb0f4-4e7a-4be1-85ca-31c91f1516d1","resourceType":"GMSpriteFrame","resourceVersion":"2.0",},
   ],
   "gridX":0,
   "gridY":0,

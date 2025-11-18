@@ -1,5 +1,5 @@
 {
-  "$GMSprite":"",
+  "$GMSprite":"v2",
   "%Name":"spr_Snowman",
   "bboxMode":0,
   "bbox_bottom":210,
@@ -12,7 +12,7 @@
   "edgeFiltering":false,
   "For3D":false,
   "frames":[
-    {"$GMSpriteFrame":"","%Name":"b35026c4-a0fe-4e84-b43b-10e61a10a058","name":"b35026c4-a0fe-4e84-b43b-10e61a10a058","resourceType":"GMSpriteFrame","resourceVersion":"2.0",},
+    {"$GMSpriteFrame":"v1","%Name":"b35026c4-a0fe-4e84-b43b-10e61a10a058","name":"b35026c4-a0fe-4e84-b43b-10e61a10a058","resourceType":"GMSpriteFrame","resourceVersion":"2.0",},
   ],
   "gridX":0,
   "gridY":0,

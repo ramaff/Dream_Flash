@@ -1,5 +1,5 @@
 {
-  "$GMSprite":"",
+  "$GMSprite":"v2",
   "%Name":"spr_Boss_Beam_Tail",
   "bboxMode":0,
   "bbox_bottom":161,
@@ -12,7 +12,7 @@
   "edgeFiltering":false,
   "For3D":false,
   "frames":[
-    {"$GMSpriteFrame":"","%Name":"6a8ecc68-008d-4e5a-8930-d31bf26c71ce","name":"6a8ecc68-008d-4e5a-8930-d31bf26c71ce","resourceType":"GMSpriteFrame","resourceVersion":"2.0",},
+    {"$GMSpriteFrame":"v1","%Name":"6a8ecc68-008d-4e5a-8930-d31bf26c71ce","name":"6a8ecc68-008d-4e5a-8930-d31bf26c71ce","resourceType":"GMSpriteFrame","resourceVersion":"2.0",},
   ],
   "gridX":0,
   "gridY":0,

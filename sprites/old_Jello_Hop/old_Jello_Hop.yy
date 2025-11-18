@@ -1,5 +1,5 @@
 {
-  "$GMSprite":"",
+  "$GMSprite":"v2",
   "%Name":"old_Jello_Hop",
   "bboxMode":0,
   "bbox_bottom":285,
@@ -12,7 +12,7 @@
   "edgeFiltering":false,
   "For3D":false,
   "frames":[
-    {"$GMSpriteFrame":"","%Name":"b5b8be3a-acfa-4971-a798-54e37e4482fe","name":"b5b8be3a-acfa-4971-a798-54e37e4482fe","resourceType":"GMSpriteFrame","resourceVersion":"2.0",},
+    {"$GMSpriteFrame":"v1","%Name":"b5b8be3a-acfa-4971-a798-54e37e4482fe","name":"b5b8be3a-acfa-4971-a798-54e37e4482fe","resourceType":"GMSpriteFrame","resourceVersion":"2.0",},
   ],
   "gridX":0,
   "gridY":0,

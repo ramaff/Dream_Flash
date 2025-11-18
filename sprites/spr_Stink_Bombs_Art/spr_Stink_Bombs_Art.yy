@@ -1,5 +1,5 @@
 {
-  "$GMSprite":"",
+  "$GMSprite":"v2",
   "%Name":"spr_Stink_Bombs_Art",
   "bboxMode":0,
   "bbox_bottom":154,
@@ -12,7 +12,7 @@
   "edgeFiltering":false,
   "For3D":false,
   "frames":[
-    {"$GMSpriteFrame":"","%Name":"cc8db772-7548-45e2-88f2-7de08d71c5f8","name":"cc8db772-7548-45e2-88f2-7de08d71c5f8","resourceType":"GMSpriteFrame","resourceVersion":"2.0",},
+    {"$GMSpriteFrame":"v1","%Name":"cc8db772-7548-45e2-88f2-7de08d71c5f8","name":"cc8db772-7548-45e2-88f2-7de08d71c5f8","resourceType":"GMSpriteFrame","resourceVersion":"2.0",},
   ],
   "gridX":0,
   "gridY":0,

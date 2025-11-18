@@ -1,5 +1,5 @@
 {
-  "$GMSprite":"",
+  "$GMSprite":"v2",
   "%Name":"spr_Demon_Flame_Pillar",
   "bboxMode":2,
   "bbox_bottom":190,
@@ -12,7 +12,7 @@
   "edgeFiltering":false,
   "For3D":false,
   "frames":[
-    {"$GMSpriteFrame":"","%Name":"bc59362b-3f89-4c0d-a71e-03867937fb86","name":"bc59362b-3f89-4c0d-a71e-03867937fb86","resourceType":"GMSpriteFrame","resourceVersion":"2.0",},
+    {"$GMSpriteFrame":"v1","%Name":"bc59362b-3f89-4c0d-a71e-03867937fb86","name":"bc59362b-3f89-4c0d-a71e-03867937fb86","resourceType":"GMSpriteFrame","resourceVersion":"2.0",},
   ],
   "gridX":0,
   "gridY":0,

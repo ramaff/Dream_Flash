@@ -1,5 +1,5 @@
 {
-  "$GMSprite":"",
+  "$GMSprite":"v2",
   "%Name":"tempCannon",
   "bboxMode":0,
   "bbox_bottom":136,
@@ -12,7 +12,7 @@
   "edgeFiltering":false,
   "For3D":false,
   "frames":[
-    {"$GMSpriteFrame":"","%Name":"4d8a1209-04cd-4c2a-8303-45fe79ef46fe","name":"4d8a1209-04cd-4c2a-8303-45fe79ef46fe","resourceType":"GMSpriteFrame","resourceVersion":"2.0",},
+    {"$GMSpriteFrame":"v1","%Name":"4d8a1209-04cd-4c2a-8303-45fe79ef46fe","name":"4d8a1209-04cd-4c2a-8303-45fe79ef46fe","resourceType":"GMSpriteFrame","resourceVersion":"2.0",},
   ],
   "gridX":0,
   "gridY":0,

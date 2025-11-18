@@ -1,5 +1,5 @@
 {
-  "$GMSprite":"",
+  "$GMSprite":"v2",
   "%Name":"spr_Stink_Cloud",
   "bboxMode":0,
   "bbox_bottom":145,
@@ -12,7 +12,7 @@
   "edgeFiltering":false,
   "For3D":false,
   "frames":[
-    {"$GMSpriteFrame":"","%Name":"dec01439-31ae-49eb-bf8b-a3da2bd896cd","name":"dec01439-31ae-49eb-bf8b-a3da2bd896cd","resourceType":"GMSpriteFrame","resourceVersion":"2.0",},
+    {"$GMSpriteFrame":"v1","%Name":"dec01439-31ae-49eb-bf8b-a3da2bd896cd","name":"dec01439-31ae-49eb-bf8b-a3da2bd896cd","resourceType":"GMSpriteFrame","resourceVersion":"2.0",},
   ],
   "gridX":0,
   "gridY":0,

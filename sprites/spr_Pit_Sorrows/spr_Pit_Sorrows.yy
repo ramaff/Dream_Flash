@@ -1,5 +1,5 @@
 {
-  "$GMSprite":"",
+  "$GMSprite":"v2",
   "%Name":"spr_Pit_Sorrows",
   "bboxMode":0,
   "bbox_bottom":411,
@@ -12,7 +12,7 @@
   "edgeFiltering":false,
   "For3D":false,
   "frames":[
-    {"$GMSpriteFrame":"","%Name":"2794388d-9221-45d7-a8fe-a9d9f25cd0f3","name":"2794388d-9221-45d7-a8fe-a9d9f25cd0f3","resourceType":"GMSpriteFrame","resourceVersion":"2.0",},
+    {"$GMSpriteFrame":"v1","%Name":"2794388d-9221-45d7-a8fe-a9d9f25cd0f3","name":"2794388d-9221-45d7-a8fe-a9d9f25cd0f3","resourceType":"GMSpriteFrame","resourceVersion":"2.0",},
   ],
   "gridX":0,
   "gridY":0,

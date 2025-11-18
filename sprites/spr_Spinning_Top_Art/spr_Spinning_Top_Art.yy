@@ -1,5 +1,5 @@
 {
-  "$GMSprite":"",
+  "$GMSprite":"v2",
   "%Name":"spr_Spinning_Top_Art",
   "bboxMode":0,
   "bbox_bottom":147,
@@ -12,7 +12,7 @@
   "edgeFiltering":false,
   "For3D":false,
   "frames":[
-    {"$GMSpriteFrame":"","%Name":"6aa1f4a0-3a05-41f5-b603-c668d67e9c74","name":"6aa1f4a0-3a05-41f5-b603-c668d67e9c74","resourceType":"GMSpriteFrame","resourceVersion":"2.0",},
+    {"$GMSpriteFrame":"v1","%Name":"6aa1f4a0-3a05-41f5-b603-c668d67e9c74","name":"6aa1f4a0-3a05-41f5-b603-c668d67e9c74","resourceType":"GMSpriteFrame","resourceVersion":"2.0",},
   ],
   "gridX":0,
   "gridY":0,

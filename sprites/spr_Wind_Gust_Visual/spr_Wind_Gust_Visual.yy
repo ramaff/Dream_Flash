@@ -1,5 +1,5 @@
 {
-  "$GMSprite":"",
+  "$GMSprite":"v2",
   "%Name":"spr_Wind_Gust_Visual",
   "bboxMode":1,
   "bbox_bottom":155,
@@ -12,7 +12,7 @@
   "edgeFiltering":false,
   "For3D":false,
   "frames":[
-    {"$GMSpriteFrame":"","%Name":"e34615bc-ca19-43fb-8335-6b46bd0300cf","name":"e34615bc-ca19-43fb-8335-6b46bd0300cf","resourceType":"GMSpriteFrame","resourceVersion":"2.0",},
+    {"$GMSpriteFrame":"v1","%Name":"e34615bc-ca19-43fb-8335-6b46bd0300cf","name":"e34615bc-ca19-43fb-8335-6b46bd0300cf","resourceType":"GMSpriteFrame","resourceVersion":"2.0",},
   ],
   "gridX":0,
   "gridY":0,

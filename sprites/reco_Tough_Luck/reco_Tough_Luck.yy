@@ -1,5 +1,5 @@
 {
-  "$GMSprite":"",
+  "$GMSprite":"v2",
   "%Name":"reco_Tough_Luck",
   "bboxMode":0,
   "bbox_bottom":277,
@@ -12,7 +12,7 @@
   "edgeFiltering":false,
   "For3D":false,
   "frames":[
-    {"$GMSpriteFrame":"","%Name":"f3cd83bf-3300-48fd-86a2-febb1786085a","name":"f3cd83bf-3300-48fd-86a2-febb1786085a","resourceType":"GMSpriteFrame","resourceVersion":"2.0",},
+    {"$GMSpriteFrame":"v1","%Name":"f3cd83bf-3300-48fd-86a2-febb1786085a","name":"f3cd83bf-3300-48fd-86a2-febb1786085a","resourceType":"GMSpriteFrame","resourceVersion":"2.0",},
   ],
   "gridX":0,
   "gridY":0,

@@ -1,5 +1,5 @@
 {
-  "$GMSprite":"",
+  "$GMSprite":"v2",
   "%Name":"spr_Dimensional_Fire_Shot",
   "bboxMode":2,
   "bbox_bottom":60,
@@ -12,7 +12,7 @@
   "edgeFiltering":false,
   "For3D":false,
   "frames":[
-    {"$GMSpriteFrame":"","%Name":"5870a8c0-f09e-4f2a-a80b-8c87b7a3ae8d","name":"5870a8c0-f09e-4f2a-a80b-8c87b7a3ae8d","resourceType":"GMSpriteFrame","resourceVersion":"2.0",},
+    {"$GMSpriteFrame":"v1","%Name":"5870a8c0-f09e-4f2a-a80b-8c87b7a3ae8d","name":"5870a8c0-f09e-4f2a-a80b-8c87b7a3ae8d","resourceType":"GMSpriteFrame","resourceVersion":"2.0",},
   ],
   "gridX":0,
   "gridY":0,

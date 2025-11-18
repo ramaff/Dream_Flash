@@ -55,7 +55,7 @@ if instance_exists(obj_Soul_Parent) {
 		draw_sprite_part_ext(spr_OverOverEssence_Container,1,0,172 * (1 - ((epercent - 300) / 300)),89,172,winx - 72, winy - 96 + (172 / 2) * (1 - ((epercent - 300) / 300)),0.5,0.5,c_white,1);
 	}
 	
-    scr_Weapon_GUI();
+    scr_Weapon_GUI(Soul_Weapons_Control.weapon_slot_info);
 
 }
 

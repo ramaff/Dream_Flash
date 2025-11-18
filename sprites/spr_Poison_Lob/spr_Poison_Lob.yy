@@ -1,5 +1,5 @@
 {
-  "$GMSprite":"",
+  "$GMSprite":"v2",
   "%Name":"spr_Poison_Lob",
   "bboxMode":2,
   "bbox_bottom":54,
@@ -12,7 +12,7 @@
   "edgeFiltering":false,
   "For3D":false,
   "frames":[
-    {"$GMSpriteFrame":"","%Name":"272eb3db-73a5-455f-a1aa-b4bad35b9f2c","name":"272eb3db-73a5-455f-a1aa-b4bad35b9f2c","resourceType":"GMSpriteFrame","resourceVersion":"2.0",},
+    {"$GMSpriteFrame":"v1","%Name":"272eb3db-73a5-455f-a1aa-b4bad35b9f2c","name":"272eb3db-73a5-455f-a1aa-b4bad35b9f2c","resourceType":"GMSpriteFrame","resourceVersion":"2.0",},
   ],
   "gridX":0,
   "gridY":0,

@@ -1,5 +1,5 @@
 {
-  "$GMSprite":"",
+  "$GMSprite":"v2",
   "%Name":"old_Flower",
   "bboxMode":0,
   "bbox_bottom":172,
@@ -12,7 +12,7 @@
   "edgeFiltering":false,
   "For3D":false,
   "frames":[
-    {"$GMSpriteFrame":"","%Name":"d3b36167-2690-48a9-8a20-25fd2ef51a60","name":"d3b36167-2690-48a9-8a20-25fd2ef51a60","resourceType":"GMSpriteFrame","resourceVersion":"2.0",},
+    {"$GMSpriteFrame":"v1","%Name":"d3b36167-2690-48a9-8a20-25fd2ef51a60","name":"d3b36167-2690-48a9-8a20-25fd2ef51a60","resourceType":"GMSpriteFrame","resourceVersion":"2.0",},
   ],
   "gridX":0,
   "gridY":0,

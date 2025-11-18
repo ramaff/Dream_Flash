@@ -1,5 +1,5 @@
 {
-  "$GMSprite":"",
+  "$GMSprite":"v2",
   "%Name":"spr_Mental_Ammunition_Art",
   "bboxMode":0,
   "bbox_bottom":157,
@@ -12,7 +12,7 @@
   "edgeFiltering":false,
   "For3D":false,
   "frames":[
-    {"$GMSpriteFrame":"","%Name":"ad78234d-8dc9-4c6d-ac39-5a89ac650b42","name":"ad78234d-8dc9-4c6d-ac39-5a89ac650b42","resourceType":"GMSpriteFrame","resourceVersion":"2.0",},
+    {"$GMSpriteFrame":"v1","%Name":"ad78234d-8dc9-4c6d-ac39-5a89ac650b42","name":"ad78234d-8dc9-4c6d-ac39-5a89ac650b42","resourceType":"GMSpriteFrame","resourceVersion":"2.0",},
   ],
   "gridX":0,
   "gridY":0,

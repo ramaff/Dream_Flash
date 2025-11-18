@@ -1,5 +1,5 @@
 {
-  "$GMSprite":"",
+  "$GMSprite":"v2",
   "%Name":"spr_Paranoia_Crowd_Spirit_Eye",
   "bboxMode":0,
   "bbox_bottom":174,
@@ -12,7 +12,7 @@
   "edgeFiltering":false,
   "For3D":false,
   "frames":[
-    {"$GMSpriteFrame":"","%Name":"d07a2e0e-f41a-4e8a-bfda-26aa52bc133a","name":"d07a2e0e-f41a-4e8a-bfda-26aa52bc133a","resourceType":"GMSpriteFrame","resourceVersion":"2.0",},
+    {"$GMSpriteFrame":"v1","%Name":"d07a2e0e-f41a-4e8a-bfda-26aa52bc133a","name":"d07a2e0e-f41a-4e8a-bfda-26aa52bc133a","resourceType":"GMSpriteFrame","resourceVersion":"2.0",},
   ],
   "gridX":0,
   "gridY":0,

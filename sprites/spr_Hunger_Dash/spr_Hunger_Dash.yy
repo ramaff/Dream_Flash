@@ -1,5 +1,5 @@
 {
-  "$GMSprite":"",
+  "$GMSprite":"v2",
   "%Name":"spr_Hunger_Dash",
   "bboxMode":2,
   "bbox_bottom":122,
@@ -12,7 +12,7 @@
   "edgeFiltering":false,
   "For3D":false,
   "frames":[
-    {"$GMSpriteFrame":"","%Name":"fa2eb2f8-af58-4f42-907b-5ff8993c4446","name":"fa2eb2f8-af58-4f42-907b-5ff8993c4446","resourceType":"GMSpriteFrame","resourceVersion":"2.0",},
+    {"$GMSpriteFrame":"v1","%Name":"fa2eb2f8-af58-4f42-907b-5ff8993c4446","name":"fa2eb2f8-af58-4f42-907b-5ff8993c4446","resourceType":"GMSpriteFrame","resourceVersion":"2.0",},
   ],
   "gridX":0,
   "gridY":0,

@@ -1,5 +1,5 @@
 {
-  "$GMSprite":"",
+  "$GMSprite":"v2",
   "%Name":"spr_Slipped_My_Mind_Art",
   "bboxMode":0,
   "bbox_bottom":157,
@@ -12,7 +12,7 @@
   "edgeFiltering":false,
   "For3D":false,
   "frames":[
-    {"$GMSpriteFrame":"","%Name":"50e34925-71c0-4ed5-adb5-b9da79f0e53f","name":"50e34925-71c0-4ed5-adb5-b9da79f0e53f","resourceType":"GMSpriteFrame","resourceVersion":"2.0",},
+    {"$GMSpriteFrame":"v1","%Name":"50e34925-71c0-4ed5-adb5-b9da79f0e53f","name":"50e34925-71c0-4ed5-adb5-b9da79f0e53f","resourceType":"GMSpriteFrame","resourceVersion":"2.0",},
   ],
   "gridX":0,
   "gridY":0,

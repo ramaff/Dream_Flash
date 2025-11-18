@@ -1,5 +1,5 @@
 {
-  "$GMSprite":"",
+  "$GMSprite":"v2",
   "%Name":"spr_Boss_Empathy_Heart",
   "bboxMode":0,
   "bbox_bottom":252,
@@ -12,8 +12,8 @@
   "edgeFiltering":false,
   "For3D":false,
   "frames":[
-    {"$GMSpriteFrame":"","%Name":"60788505-7246-4fcb-90da-9d7e19699bd9","name":"60788505-7246-4fcb-90da-9d7e19699bd9","resourceType":"GMSpriteFrame","resourceVersion":"2.0",},
-    {"$GMSpriteFrame":"","%Name":"878c42ad-0a12-4a42-b61f-37276138df36","name":"878c42ad-0a12-4a42-b61f-37276138df36","resourceType":"GMSpriteFrame","resourceVersion":"2.0",},
+    {"$GMSpriteFrame":"v1","%Name":"60788505-7246-4fcb-90da-9d7e19699bd9","name":"60788505-7246-4fcb-90da-9d7e19699bd9","resourceType":"GMSpriteFrame","resourceVersion":"2.0",},
+    {"$GMSpriteFrame":"v1","%Name":"878c42ad-0a12-4a42-b61f-37276138df36","name":"878c42ad-0a12-4a42-b61f-37276138df36","resourceType":"GMSpriteFrame","resourceVersion":"2.0",},
   ],
   "gridX":0,
   "gridY":0,

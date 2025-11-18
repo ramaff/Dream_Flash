@@ -1,5 +1,5 @@
 {
-  "$GMSprite":"",
+  "$GMSprite":"v2",
   "%Name":"spr_Mental_Background_Realertest",
   "bboxMode":0,
   "bbox_bottom":2047,
@@ -12,7 +12,7 @@
   "edgeFiltering":false,
   "For3D":false,
   "frames":[
-    {"$GMSpriteFrame":"","%Name":"d2a744c2-8461-4f8d-9c3a-0b16a8f0a1d8","name":"d2a744c2-8461-4f8d-9c3a-0b16a8f0a1d8","resourceType":"GMSpriteFrame","resourceVersion":"2.0",},
+    {"$GMSpriteFrame":"v1","%Name":"d2a744c2-8461-4f8d-9c3a-0b16a8f0a1d8","name":"d2a744c2-8461-4f8d-9c3a-0b16a8f0a1d8","resourceType":"GMSpriteFrame","resourceVersion":"2.0",},
   ],
   "gridX":0,
   "gridY":0,

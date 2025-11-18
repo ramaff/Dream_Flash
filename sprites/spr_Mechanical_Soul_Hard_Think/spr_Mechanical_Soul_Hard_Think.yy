@@ -1,5 +1,5 @@
 {
-  "$GMSprite":"",
+  "$GMSprite":"v2",
   "%Name":"spr_Mechanical_Soul_Hard_Think",
   "bboxMode":0,
   "bbox_bottom":227,
@@ -12,7 +12,7 @@
   "edgeFiltering":false,
   "For3D":false,
   "frames":[
-    {"$GMSpriteFrame":"","%Name":"ee0bb563-dd1f-4860-90fe-f15bffdce81e","name":"ee0bb563-dd1f-4860-90fe-f15bffdce81e","resourceType":"GMSpriteFrame","resourceVersion":"2.0",},
+    {"$GMSpriteFrame":"v1","%Name":"ee0bb563-dd1f-4860-90fe-f15bffdce81e","name":"ee0bb563-dd1f-4860-90fe-f15bffdce81e","resourceType":"GMSpriteFrame","resourceVersion":"2.0",},
   ],
   "gridX":0,
   "gridY":0,

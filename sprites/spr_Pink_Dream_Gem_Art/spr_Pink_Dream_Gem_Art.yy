@@ -1,5 +1,5 @@
 {
-  "$GMSprite":"",
+  "$GMSprite":"v2",
   "%Name":"spr_Pink_Dream_Gem_Art",
   "bboxMode":0,
   "bbox_bottom":140,
@@ -12,7 +12,7 @@
   "edgeFiltering":false,
   "For3D":false,
   "frames":[
-    {"$GMSpriteFrame":"","%Name":"26183cbb-2cf9-4059-971f-df50c7f74ac8","name":"26183cbb-2cf9-4059-971f-df50c7f74ac8","resourceType":"GMSpriteFrame","resourceVersion":"2.0",},
+    {"$GMSpriteFrame":"v1","%Name":"26183cbb-2cf9-4059-971f-df50c7f74ac8","name":"26183cbb-2cf9-4059-971f-df50c7f74ac8","resourceType":"GMSpriteFrame","resourceVersion":"2.0",},
   ],
   "gridX":0,
   "gridY":0,

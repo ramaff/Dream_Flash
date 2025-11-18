@@ -1,5 +1,5 @@
 {
-  "$GMSprite":"",
+  "$GMSprite":"v2",
   "%Name":"bg_Feel_Fallout",
   "bboxMode":0,
   "bbox_bottom":113,
@@ -12,7 +12,7 @@
   "edgeFiltering":false,
   "For3D":false,
   "frames":[
-    {"$GMSpriteFrame":"","%Name":"33bcf230-5b20-407d-9e61-b46ae877a9d6","name":"33bcf230-5b20-407d-9e61-b46ae877a9d6","resourceType":"GMSpriteFrame","resourceVersion":"2.0",},
+    {"$GMSpriteFrame":"v1","%Name":"33bcf230-5b20-407d-9e61-b46ae877a9d6","name":"33bcf230-5b20-407d-9e61-b46ae877a9d6","resourceType":"GMSpriteFrame","resourceVersion":"2.0",},
   ],
   "gridX":0,
   "gridY":0,

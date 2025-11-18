@@ -1,5 +1,5 @@
 {
-  "$GMSprite":"",
+  "$GMSprite":"v2",
   "%Name":"spr_Bullet_Missile_Part",
   "bboxMode":0,
   "bbox_bottom":31,
@@ -12,7 +12,7 @@
   "edgeFiltering":false,
   "For3D":false,
   "frames":[
-    {"$GMSpriteFrame":"","%Name":"72339fa8-ff2c-40fc-ad01-78dbf81aa2b6","name":"72339fa8-ff2c-40fc-ad01-78dbf81aa2b6","resourceType":"GMSpriteFrame","resourceVersion":"2.0",},
+    {"$GMSpriteFrame":"v1","%Name":"72339fa8-ff2c-40fc-ad01-78dbf81aa2b6","name":"72339fa8-ff2c-40fc-ad01-78dbf81aa2b6","resourceType":"GMSpriteFrame","resourceVersion":"2.0",},
   ],
   "gridX":0,
   "gridY":0,

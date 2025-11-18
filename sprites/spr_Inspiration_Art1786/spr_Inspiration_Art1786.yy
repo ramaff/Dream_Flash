@@ -1,5 +1,5 @@
 {
-  "$GMSprite":"",
+  "$GMSprite":"v2",
   "%Name":"spr_Inspiration_Art1786",
   "bboxMode":0,
   "bbox_bottom":157,
@@ -12,7 +12,7 @@
   "edgeFiltering":false,
   "For3D":false,
   "frames":[
-    {"$GMSpriteFrame":"","%Name":"160d2daf-61d4-4395-bc3b-6f05397b1a57","name":"160d2daf-61d4-4395-bc3b-6f05397b1a57","resourceType":"GMSpriteFrame","resourceVersion":"2.0",},
+    {"$GMSpriteFrame":"v1","%Name":"160d2daf-61d4-4395-bc3b-6f05397b1a57","name":"160d2daf-61d4-4395-bc3b-6f05397b1a57","resourceType":"GMSpriteFrame","resourceVersion":"2.0",},
   ],
   "gridX":0,
   "gridY":0,

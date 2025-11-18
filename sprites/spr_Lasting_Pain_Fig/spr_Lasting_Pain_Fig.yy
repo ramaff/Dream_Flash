@@ -1,5 +1,5 @@
 {
-  "$GMSprite":"",
+  "$GMSprite":"v2",
   "%Name":"spr_Lasting_Pain_Fig",
   "bboxMode":0,
   "bbox_bottom":162,
@@ -12,8 +12,8 @@
   "edgeFiltering":false,
   "For3D":false,
   "frames":[
-    {"$GMSpriteFrame":"","%Name":"41a824a4-a5b5-400f-a79a-780ed5e1c1b9","name":"41a824a4-a5b5-400f-a79a-780ed5e1c1b9","resourceType":"GMSpriteFrame","resourceVersion":"2.0",},
-    {"$GMSpriteFrame":"","%Name":"8905f66b-9413-40a5-9e7d-b6de485d672f","name":"8905f66b-9413-40a5-9e7d-b6de485d672f","resourceType":"GMSpriteFrame","resourceVersion":"2.0",},
+    {"$GMSpriteFrame":"v1","%Name":"41a824a4-a5b5-400f-a79a-780ed5e1c1b9","name":"41a824a4-a5b5-400f-a79a-780ed5e1c1b9","resourceType":"GMSpriteFrame","resourceVersion":"2.0",},
+    {"$GMSpriteFrame":"v1","%Name":"8905f66b-9413-40a5-9e7d-b6de485d672f","name":"8905f66b-9413-40a5-9e7d-b6de485d672f","resourceType":"GMSpriteFrame","resourceVersion":"2.0",},
   ],
   "gridX":0,
   "gridY":0,

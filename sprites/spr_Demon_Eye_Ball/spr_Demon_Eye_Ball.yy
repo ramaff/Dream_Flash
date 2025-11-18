@@ -1,5 +1,5 @@
 {
-  "$GMSprite":"",
+  "$GMSprite":"v2",
   "%Name":"spr_Demon_Eye_Ball",
   "bboxMode":2,
   "bbox_bottom":66,
@@ -12,7 +12,7 @@
   "edgeFiltering":false,
   "For3D":false,
   "frames":[
-    {"$GMSpriteFrame":"","%Name":"6e5de054-9abd-4deb-b11f-1c29658a5484","name":"6e5de054-9abd-4deb-b11f-1c29658a5484","resourceType":"GMSpriteFrame","resourceVersion":"2.0",},
+    {"$GMSpriteFrame":"v1","%Name":"6e5de054-9abd-4deb-b11f-1c29658a5484","name":"6e5de054-9abd-4deb-b11f-1c29658a5484","resourceType":"GMSpriteFrame","resourceVersion":"2.0",},
   ],
   "gridX":0,
   "gridY":0,

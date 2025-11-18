@@ -1,5 +1,5 @@
 {
-  "$GMSprite":"",
+  "$GMSprite":"v2",
   "%Name":"bg_Nightmare_Cave_Tiles",
   "bboxMode":0,
   "bbox_bottom":127,
@@ -12,7 +12,7 @@
   "edgeFiltering":false,
   "For3D":false,
   "frames":[
-    {"$GMSpriteFrame":"","%Name":"b609f4ce-ce28-473b-ae6a-15f7d6e4df5d","name":"b609f4ce-ce28-473b-ae6a-15f7d6e4df5d","resourceType":"GMSpriteFrame","resourceVersion":"2.0",},
+    {"$GMSpriteFrame":"v1","%Name":"b609f4ce-ce28-473b-ae6a-15f7d6e4df5d","name":"b609f4ce-ce28-473b-ae6a-15f7d6e4df5d","resourceType":"GMSpriteFrame","resourceVersion":"2.0",},
   ],
   "gridX":0,
   "gridY":0,

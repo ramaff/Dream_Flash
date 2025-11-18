@@ -1,5 +1,5 @@
 {
-  "$GMSprite":"",
+  "$GMSprite":"v2",
   "%Name":"spr_Beam_Tip21742276",
   "bboxMode":0,
   "bbox_bottom":138,
@@ -12,7 +12,7 @@
   "edgeFiltering":false,
   "For3D":false,
   "frames":[
-    {"$GMSpriteFrame":"","%Name":"7d9984f3-a35e-426d-bcd2-f3ae18301205","name":"7d9984f3-a35e-426d-bcd2-f3ae18301205","resourceType":"GMSpriteFrame","resourceVersion":"2.0",},
+    {"$GMSpriteFrame":"v1","%Name":"7d9984f3-a35e-426d-bcd2-f3ae18301205","name":"7d9984f3-a35e-426d-bcd2-f3ae18301205","resourceType":"GMSpriteFrame","resourceVersion":"2.0",},
   ],
   "gridX":0,
   "gridY":0,

@@ -1,5 +1,5 @@
 {
-  "$GMSprite":"",
+  "$GMSprite":"v2",
   "%Name":"spr_Calm_Restoration_Item",
   "bboxMode":0,
   "bbox_bottom":137,
@@ -12,7 +12,7 @@
   "edgeFiltering":false,
   "For3D":false,
   "frames":[
-    {"$GMSpriteFrame":"","%Name":"f60091e3-38d0-4591-8063-546c384d9ae9","name":"f60091e3-38d0-4591-8063-546c384d9ae9","resourceType":"GMSpriteFrame","resourceVersion":"2.0",},
+    {"$GMSpriteFrame":"v1","%Name":"f60091e3-38d0-4591-8063-546c384d9ae9","name":"f60091e3-38d0-4591-8063-546c384d9ae9","resourceType":"GMSpriteFrame","resourceVersion":"2.0",},
   ],
   "gridX":0,
   "gridY":0,

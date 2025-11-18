@@ -1,5 +1,5 @@
 {
-  "$GMSprite":"",
+  "$GMSprite":"v2",
   "%Name":"spr_Horror_Minion",
   "bboxMode":0,
   "bbox_bottom":276,
@@ -12,7 +12,7 @@
   "edgeFiltering":false,
   "For3D":false,
   "frames":[
-    {"$GMSpriteFrame":"","%Name":"2dacbe26-f36a-48b7-a891-2a4f04fc6b29","name":"2dacbe26-f36a-48b7-a891-2a4f04fc6b29","resourceType":"GMSpriteFrame","resourceVersion":"2.0",},
+    {"$GMSpriteFrame":"v1","%Name":"2dacbe26-f36a-48b7-a891-2a4f04fc6b29","name":"2dacbe26-f36a-48b7-a891-2a4f04fc6b29","resourceType":"GMSpriteFrame","resourceVersion":"2.0",},
   ],
   "gridX":0,
   "gridY":0,

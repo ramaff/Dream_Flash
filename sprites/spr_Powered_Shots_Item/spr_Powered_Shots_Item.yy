@@ -1,5 +1,5 @@
 {
-  "$GMSprite":"",
+  "$GMSprite":"v2",
   "%Name":"spr_Powered_Shots_Item",
   "bboxMode":0,
   "bbox_bottom":157,
@@ -12,7 +12,7 @@
   "edgeFiltering":false,
   "For3D":false,
   "frames":[
-    {"$GMSpriteFrame":"","%Name":"59605ce3-aad0-49d2-b94c-6c9ab4f2ff07","name":"59605ce3-aad0-49d2-b94c-6c9ab4f2ff07","resourceType":"GMSpriteFrame","resourceVersion":"2.0",},
+    {"$GMSpriteFrame":"v1","%Name":"59605ce3-aad0-49d2-b94c-6c9ab4f2ff07","name":"59605ce3-aad0-49d2-b94c-6c9ab4f2ff07","resourceType":"GMSpriteFrame","resourceVersion":"2.0",},
   ],
   "gridX":0,
   "gridY":0,

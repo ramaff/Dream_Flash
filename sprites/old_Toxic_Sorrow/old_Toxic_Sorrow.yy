@@ -1,5 +1,5 @@
 {
-  "$GMSprite":"",
+  "$GMSprite":"v2",
   "%Name":"old_Toxic_Sorrow",
   "bboxMode":0,
   "bbox_bottom":307,
@@ -12,7 +12,7 @@
   "edgeFiltering":false,
   "For3D":false,
   "frames":[
-    {"$GMSpriteFrame":"","%Name":"5566f7c9-7ea8-44cb-8b27-87cd637e7077","name":"5566f7c9-7ea8-44cb-8b27-87cd637e7077","resourceType":"GMSpriteFrame","resourceVersion":"2.0",},
+    {"$GMSpriteFrame":"v1","%Name":"5566f7c9-7ea8-44cb-8b27-87cd637e7077","name":"5566f7c9-7ea8-44cb-8b27-87cd637e7077","resourceType":"GMSpriteFrame","resourceVersion":"2.0",},
   ],
   "gridX":0,
   "gridY":0,

@@ -1,5 +1,5 @@
 {
-  "$GMSprite":"",
+  "$GMSprite":"v2",
   "%Name":"spr_Life_Suck",
   "bboxMode":0,
   "bbox_bottom":24,
@@ -12,7 +12,7 @@
   "edgeFiltering":false,
   "For3D":false,
   "frames":[
-    {"$GMSpriteFrame":"","%Name":"c95ddcb6-8b5d-4eff-86e8-f7b52c3d6be5","name":"c95ddcb6-8b5d-4eff-86e8-f7b52c3d6be5","resourceType":"GMSpriteFrame","resourceVersion":"2.0",},
+    {"$GMSpriteFrame":"v1","%Name":"c95ddcb6-8b5d-4eff-86e8-f7b52c3d6be5","name":"c95ddcb6-8b5d-4eff-86e8-f7b52c3d6be5","resourceType":"GMSpriteFrame","resourceVersion":"2.0",},
   ],
   "gridX":0,
   "gridY":0,

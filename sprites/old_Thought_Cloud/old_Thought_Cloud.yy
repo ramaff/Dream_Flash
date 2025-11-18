@@ -1,5 +1,5 @@
 {
-  "$GMSprite":"",
+  "$GMSprite":"v2",
   "%Name":"old_Thought_Cloud",
   "bboxMode":0,
   "bbox_bottom":257,
@@ -12,7 +12,7 @@
   "edgeFiltering":false,
   "For3D":false,
   "frames":[
-    {"$GMSpriteFrame":"","%Name":"130e13da-bd41-43cd-8ca0-7ac94c5ea9ee","name":"130e13da-bd41-43cd-8ca0-7ac94c5ea9ee","resourceType":"GMSpriteFrame","resourceVersion":"2.0",},
+    {"$GMSpriteFrame":"v1","%Name":"130e13da-bd41-43cd-8ca0-7ac94c5ea9ee","name":"130e13da-bd41-43cd-8ca0-7ac94c5ea9ee","resourceType":"GMSpriteFrame","resourceVersion":"2.0",},
   ],
   "gridX":0,
   "gridY":0,

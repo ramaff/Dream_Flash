@@ -1,5 +1,5 @@
 {
-  "$GMSprite":"",
+  "$GMSprite":"v2",
   "%Name":"spr_Tide_Staff_Art",
   "bboxMode":0,
   "bbox_bottom":144,
@@ -12,7 +12,7 @@
   "edgeFiltering":false,
   "For3D":false,
   "frames":[
-    {"$GMSpriteFrame":"","%Name":"c54f84b5-a9ad-4ba9-a608-7a2938d12c4d","name":"c54f84b5-a9ad-4ba9-a608-7a2938d12c4d","resourceType":"GMSpriteFrame","resourceVersion":"2.0",},
+    {"$GMSpriteFrame":"v1","%Name":"c54f84b5-a9ad-4ba9-a608-7a2938d12c4d","name":"c54f84b5-a9ad-4ba9-a608-7a2938d12c4d","resourceType":"GMSpriteFrame","resourceVersion":"2.0",},
   ],
   "gridX":0,
   "gridY":0,

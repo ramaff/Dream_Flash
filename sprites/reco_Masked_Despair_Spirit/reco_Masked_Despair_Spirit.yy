@@ -1,5 +1,5 @@
 {
-  "$GMSprite":"",
+  "$GMSprite":"v2",
   "%Name":"reco_Masked_Despair_Spirit",
   "bboxMode":0,
   "bbox_bottom":303,
@@ -12,7 +12,7 @@
   "edgeFiltering":false,
   "For3D":false,
   "frames":[
-    {"$GMSpriteFrame":"","%Name":"bd50587a-ccac-4ac3-9ae2-665a66ca40b6","name":"bd50587a-ccac-4ac3-9ae2-665a66ca40b6","resourceType":"GMSpriteFrame","resourceVersion":"2.0",},
+    {"$GMSpriteFrame":"v1","%Name":"bd50587a-ccac-4ac3-9ae2-665a66ca40b6","name":"bd50587a-ccac-4ac3-9ae2-665a66ca40b6","resourceType":"GMSpriteFrame","resourceVersion":"2.0",},
   ],
   "gridX":0,
   "gridY":0,

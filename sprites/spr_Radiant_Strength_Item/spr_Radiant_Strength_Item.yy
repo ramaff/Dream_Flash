@@ -1,5 +1,5 @@
 {
-  "$GMSprite":"",
+  "$GMSprite":"v2",
   "%Name":"spr_Radiant_Strength_Item",
   "bboxMode":0,
   "bbox_bottom":157,
@@ -12,7 +12,7 @@
   "edgeFiltering":false,
   "For3D":false,
   "frames":[
-    {"$GMSpriteFrame":"","%Name":"f9e4b5aa-845d-4fe8-9714-b68adf79ec25","name":"f9e4b5aa-845d-4fe8-9714-b68adf79ec25","resourceType":"GMSpriteFrame","resourceVersion":"2.0",},
+    {"$GMSpriteFrame":"v1","%Name":"f9e4b5aa-845d-4fe8-9714-b68adf79ec25","name":"f9e4b5aa-845d-4fe8-9714-b68adf79ec25","resourceType":"GMSpriteFrame","resourceVersion":"2.0",},
   ],
   "gridX":0,
   "gridY":0,

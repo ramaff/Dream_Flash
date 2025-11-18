@@ -1,5 +1,5 @@
 {
-  "$GMSprite":"",
+  "$GMSprite":"v2",
   "%Name":"spr_Bounce_Ball",
   "bboxMode":2,
   "bbox_bottom":249,
@@ -12,7 +12,7 @@
   "edgeFiltering":false,
   "For3D":false,
   "frames":[
-    {"$GMSpriteFrame":"","%Name":"e02ad808-4693-4a7e-82e7-1a77fe818c73","name":"e02ad808-4693-4a7e-82e7-1a77fe818c73","resourceType":"GMSpriteFrame","resourceVersion":"2.0",},
+    {"$GMSpriteFrame":"v1","%Name":"e02ad808-4693-4a7e-82e7-1a77fe818c73","name":"e02ad808-4693-4a7e-82e7-1a77fe818c73","resourceType":"GMSpriteFrame","resourceVersion":"2.0",},
   ],
   "gridX":0,
   "gridY":0,

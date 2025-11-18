@@ -1,5 +1,5 @@
 {
-  "$GMSprite":"",
+  "$GMSprite":"v2",
   "%Name":"spr_Phase_Affinity_Art",
   "bboxMode":0,
   "bbox_bottom":157,
@@ -12,7 +12,7 @@
   "edgeFiltering":false,
   "For3D":false,
   "frames":[
-    {"$GMSpriteFrame":"","%Name":"c84085d0-0e3a-4121-8d7b-3f5d49dc6441","name":"c84085d0-0e3a-4121-8d7b-3f5d49dc6441","resourceType":"GMSpriteFrame","resourceVersion":"2.0",},
+    {"$GMSpriteFrame":"v1","%Name":"c84085d0-0e3a-4121-8d7b-3f5d49dc6441","name":"c84085d0-0e3a-4121-8d7b-3f5d49dc6441","resourceType":"GMSpriteFrame","resourceVersion":"2.0",},
   ],
   "gridX":0,
   "gridY":0,

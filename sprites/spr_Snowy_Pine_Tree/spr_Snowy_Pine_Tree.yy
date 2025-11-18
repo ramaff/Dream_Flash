@@ -1,5 +1,5 @@
 {
-  "$GMSprite":"",
+  "$GMSprite":"v2",
   "%Name":"spr_Snowy_Pine_Tree",
   "bboxMode":0,
   "bbox_bottom":482,
@@ -12,7 +12,7 @@
   "edgeFiltering":false,
   "For3D":false,
   "frames":[
-    {"$GMSpriteFrame":"","%Name":"ce387687-57be-4df1-bce0-6de020f9167c","name":"ce387687-57be-4df1-bce0-6de020f9167c","resourceType":"GMSpriteFrame","resourceVersion":"2.0",},
+    {"$GMSpriteFrame":"v1","%Name":"ce387687-57be-4df1-bce0-6de020f9167c","name":"ce387687-57be-4df1-bce0-6de020f9167c","resourceType":"GMSpriteFrame","resourceVersion":"2.0",},
   ],
   "gridX":0,
   "gridY":0,

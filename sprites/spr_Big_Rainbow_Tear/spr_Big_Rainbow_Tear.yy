@@ -1,5 +1,5 @@
 {
-  "$GMSprite":"",
+  "$GMSprite":"v2",
   "%Name":"spr_Big_Rainbow_Tear",
   "bboxMode":2,
   "bbox_bottom":84,
@@ -12,7 +12,7 @@
   "edgeFiltering":false,
   "For3D":false,
   "frames":[
-    {"$GMSpriteFrame":"","%Name":"15641c7a-69be-4d0c-a8b5-71a6d53f041f","name":"15641c7a-69be-4d0c-a8b5-71a6d53f041f","resourceType":"GMSpriteFrame","resourceVersion":"2.0",},
+    {"$GMSpriteFrame":"v1","%Name":"15641c7a-69be-4d0c-a8b5-71a6d53f041f","name":"15641c7a-69be-4d0c-a8b5-71a6d53f041f","resourceType":"GMSpriteFrame","resourceVersion":"2.0",},
   ],
   "gridX":0,
   "gridY":0,

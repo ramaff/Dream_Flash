@@ -1,5 +1,5 @@
 {
-  "$GMSprite":"",
+  "$GMSprite":"v2",
   "%Name":"spr_Spike_State_Reco_Icon",
   "bboxMode":2,
   "bbox_bottom":187,
@@ -12,7 +12,7 @@
   "edgeFiltering":false,
   "For3D":false,
   "frames":[
-    {"$GMSpriteFrame":"","%Name":"ba067f94-3f8b-4c74-82ef-adb935abd1db","name":"ba067f94-3f8b-4c74-82ef-adb935abd1db","resourceType":"GMSpriteFrame","resourceVersion":"2.0",},
+    {"$GMSpriteFrame":"v1","%Name":"ba067f94-3f8b-4c74-82ef-adb935abd1db","name":"ba067f94-3f8b-4c74-82ef-adb935abd1db","resourceType":"GMSpriteFrame","resourceVersion":"2.0",},
   ],
   "gridX":0,
   "gridY":0,

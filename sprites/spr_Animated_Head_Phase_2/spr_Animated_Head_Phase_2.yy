@@ -1,5 +1,5 @@
 {
-  "$GMSprite":"",
+  "$GMSprite":"v2",
   "%Name":"spr_Animated_Head_Phase_2",
   "bboxMode":0,
   "bbox_bottom":385,
@@ -12,7 +12,7 @@
   "edgeFiltering":false,
   "For3D":false,
   "frames":[
-    {"$GMSpriteFrame":"","%Name":"04159060-9f79-42bd-bf31-cfe3f5da91e6","name":"04159060-9f79-42bd-bf31-cfe3f5da91e6","resourceType":"GMSpriteFrame","resourceVersion":"2.0",},
+    {"$GMSpriteFrame":"v1","%Name":"04159060-9f79-42bd-bf31-cfe3f5da91e6","name":"04159060-9f79-42bd-bf31-cfe3f5da91e6","resourceType":"GMSpriteFrame","resourceVersion":"2.0",},
   ],
   "gridX":0,
   "gridY":0,

@@ -1,5 +1,5 @@
 {
-  "$GMSprite":"",
+  "$GMSprite":"v2",
   "%Name":"reco_Demonic_Villainy",
   "bboxMode":0,
   "bbox_bottom":568,
@@ -12,7 +12,7 @@
   "edgeFiltering":false,
   "For3D":false,
   "frames":[
-    {"$GMSpriteFrame":"","%Name":"b15a8875-95cc-4c1b-9439-1081e710d45f","name":"b15a8875-95cc-4c1b-9439-1081e710d45f","resourceType":"GMSpriteFrame","resourceVersion":"2.0",},
+    {"$GMSpriteFrame":"v1","%Name":"b15a8875-95cc-4c1b-9439-1081e710d45f","name":"b15a8875-95cc-4c1b-9439-1081e710d45f","resourceType":"GMSpriteFrame","resourceVersion":"2.0",},
   ],
   "gridX":0,
   "gridY":0,

@@ -1,5 +1,5 @@
 {
-  "$GMSprite":"",
+  "$GMSprite":"v2",
   "%Name":"spr_Lightning_Bolt_Shot",
   "bboxMode":0,
   "bbox_bottom":92,
@@ -12,7 +12,7 @@
   "edgeFiltering":false,
   "For3D":false,
   "frames":[
-    {"$GMSpriteFrame":"","%Name":"dfd37ca8-dc18-432c-87e4-1cccb3f766f1","name":"dfd37ca8-dc18-432c-87e4-1cccb3f766f1","resourceType":"GMSpriteFrame","resourceVersion":"2.0",},
+    {"$GMSpriteFrame":"v1","%Name":"dfd37ca8-dc18-432c-87e4-1cccb3f766f1","name":"dfd37ca8-dc18-432c-87e4-1cccb3f766f1","resourceType":"GMSpriteFrame","resourceVersion":"2.0",},
   ],
   "gridX":0,
   "gridY":0,

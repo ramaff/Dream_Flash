@@ -1,5 +1,5 @@
 {
-  "$GMSprite":"",
+  "$GMSprite":"v2",
   "%Name":"spr_Guardian_Cannon_Art",
   "bboxMode":0,
   "bbox_bottom":141,
@@ -12,7 +12,7 @@
   "edgeFiltering":false,
   "For3D":false,
   "frames":[
-    {"$GMSpriteFrame":"","%Name":"7bd48653-d396-4722-a49a-76f3219e903d","name":"7bd48653-d396-4722-a49a-76f3219e903d","resourceType":"GMSpriteFrame","resourceVersion":"2.0",},
+    {"$GMSpriteFrame":"v1","%Name":"7bd48653-d396-4722-a49a-76f3219e903d","name":"7bd48653-d396-4722-a49a-76f3219e903d","resourceType":"GMSpriteFrame","resourceVersion":"2.0",},
   ],
   "gridX":0,
   "gridY":0,

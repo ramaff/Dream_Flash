@@ -1,5 +1,5 @@
 {
-  "$GMSprite":"",
+  "$GMSprite":"v2",
   "%Name":"spr_Snake_Soul_Reco_Icon",
   "bboxMode":2,
   "bbox_bottom":185,
@@ -12,7 +12,7 @@
   "edgeFiltering":false,
   "For3D":false,
   "frames":[
-    {"$GMSpriteFrame":"","%Name":"c7421923-1798-4bee-8a66-f516215999d6","name":"c7421923-1798-4bee-8a66-f516215999d6","resourceType":"GMSpriteFrame","resourceVersion":"2.0",},
+    {"$GMSpriteFrame":"v1","%Name":"c7421923-1798-4bee-8a66-f516215999d6","name":"c7421923-1798-4bee-8a66-f516215999d6","resourceType":"GMSpriteFrame","resourceVersion":"2.0",},
   ],
   "gridX":0,
   "gridY":0,

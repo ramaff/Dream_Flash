@@ -1,5 +1,5 @@
 {
-  "$GMSprite":"",
+  "$GMSprite":"v2",
   "%Name":"spr_boxer_ko",
   "bboxMode":0,
   "bbox_bottom":463,
@@ -12,7 +12,7 @@
   "edgeFiltering":false,
   "For3D":false,
   "frames":[
-    {"$GMSpriteFrame":"","%Name":"4a78d74d-f5a4-410b-8f09-44db404534c3","name":"4a78d74d-f5a4-410b-8f09-44db404534c3","resourceType":"GMSpriteFrame","resourceVersion":"2.0",},
+    {"$GMSpriteFrame":"v1","%Name":"4a78d74d-f5a4-410b-8f09-44db404534c3","name":"4a78d74d-f5a4-410b-8f09-44db404534c3","resourceType":"GMSpriteFrame","resourceVersion":"2.0",},
   ],
   "gridX":0,
   "gridY":0,

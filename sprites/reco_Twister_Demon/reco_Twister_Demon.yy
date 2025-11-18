@@ -1,5 +1,5 @@
 {
-  "$GMSprite":"",
+  "$GMSprite":"v2",
   "%Name":"reco_Twister_Demon",
   "bboxMode":0,
   "bbox_bottom":416,
@@ -12,7 +12,7 @@
   "edgeFiltering":false,
   "For3D":false,
   "frames":[
-    {"$GMSpriteFrame":"","%Name":"a2a7d16e-6c47-45fc-bbfe-a263d150c079","name":"a2a7d16e-6c47-45fc-bbfe-a263d150c079","resourceType":"GMSpriteFrame","resourceVersion":"2.0",},
+    {"$GMSpriteFrame":"v1","%Name":"a2a7d16e-6c47-45fc-bbfe-a263d150c079","name":"a2a7d16e-6c47-45fc-bbfe-a263d150c079","resourceType":"GMSpriteFrame","resourceVersion":"2.0",},
   ],
   "gridX":0,
   "gridY":0,

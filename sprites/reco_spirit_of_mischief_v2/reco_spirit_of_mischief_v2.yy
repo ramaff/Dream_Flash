@@ -1,5 +1,5 @@
 {
-  "$GMSprite":"",
+  "$GMSprite":"v2",
   "%Name":"reco_spirit_of_mischief_v2",
   "bboxMode":0,
   "bbox_bottom":380,
@@ -12,7 +12,7 @@
   "edgeFiltering":false,
   "For3D":false,
   "frames":[
-    {"$GMSpriteFrame":"","%Name":"9ddcc84f-cf7e-4181-ab28-0e3ba3a0f6fc","name":"9ddcc84f-cf7e-4181-ab28-0e3ba3a0f6fc","resourceType":"GMSpriteFrame","resourceVersion":"2.0",},
+    {"$GMSpriteFrame":"v1","%Name":"9ddcc84f-cf7e-4181-ab28-0e3ba3a0f6fc","name":"9ddcc84f-cf7e-4181-ab28-0e3ba3a0f6fc","resourceType":"GMSpriteFrame","resourceVersion":"2.0",},
   ],
   "gridX":0,
   "gridY":0,

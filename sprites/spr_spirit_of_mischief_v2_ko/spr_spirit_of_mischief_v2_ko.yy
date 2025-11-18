@@ -1,5 +1,5 @@
 {
-  "$GMSprite":"",
+  "$GMSprite":"v2",
   "%Name":"spr_spirit_of_mischief_v2_ko",
   "bboxMode":0,
   "bbox_bottom":421,
@@ -12,7 +12,7 @@
   "edgeFiltering":false,
   "For3D":false,
   "frames":[
-    {"$GMSpriteFrame":"","%Name":"ef739884-368d-4f9b-b9c6-b8afcea57143","name":"ef739884-368d-4f9b-b9c6-b8afcea57143","resourceType":"GMSpriteFrame","resourceVersion":"2.0",},
+    {"$GMSpriteFrame":"v1","%Name":"ef739884-368d-4f9b-b9c6-b8afcea57143","name":"ef739884-368d-4f9b-b9c6-b8afcea57143","resourceType":"GMSpriteFrame","resourceVersion":"2.0",},
   ],
   "gridX":0,
   "gridY":0,

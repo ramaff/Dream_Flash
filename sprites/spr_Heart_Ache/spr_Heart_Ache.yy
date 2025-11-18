@@ -1,5 +1,5 @@
 {
-  "$GMSprite":"",
+  "$GMSprite":"v2",
   "%Name":"spr_Heart_Ache",
   "bboxMode":0,
   "bbox_bottom":293,
@@ -12,7 +12,7 @@
   "edgeFiltering":false,
   "For3D":false,
   "frames":[
-    {"$GMSpriteFrame":"","%Name":"efc8c5f8-a627-4ba8-92a5-2818b011e9bb","name":"efc8c5f8-a627-4ba8-92a5-2818b011e9bb","resourceType":"GMSpriteFrame","resourceVersion":"2.0",},
+    {"$GMSpriteFrame":"v1","%Name":"efc8c5f8-a627-4ba8-92a5-2818b011e9bb","name":"efc8c5f8-a627-4ba8-92a5-2818b011e9bb","resourceType":"GMSpriteFrame","resourceVersion":"2.0",},
   ],
   "gridX":0,
   "gridY":0,

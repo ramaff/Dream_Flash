@@ -1,5 +1,5 @@
 {
-  "$GMSprite":"",
+  "$GMSprite":"v2",
   "%Name":"spr_The_Soul_Tiny",
   "bboxMode":2,
   "bbox_bottom":130,
@@ -12,7 +12,7 @@
   "edgeFiltering":false,
   "For3D":false,
   "frames":[
-    {"$GMSpriteFrame":"","%Name":"3216e937-7a82-4ec9-8b37-683092a18b90","name":"3216e937-7a82-4ec9-8b37-683092a18b90","resourceType":"GMSpriteFrame","resourceVersion":"2.0",},
+    {"$GMSpriteFrame":"v1","%Name":"3216e937-7a82-4ec9-8b37-683092a18b90","name":"3216e937-7a82-4ec9-8b37-683092a18b90","resourceType":"GMSpriteFrame","resourceVersion":"2.0",},
   ],
   "gridX":0,
   "gridY":0,

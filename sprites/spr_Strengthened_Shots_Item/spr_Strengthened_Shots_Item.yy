@@ -1,5 +1,5 @@
 {
-  "$GMSprite":"",
+  "$GMSprite":"v2",
   "%Name":"spr_Strengthened_Shots_Item",
   "bboxMode":0,
   "bbox_bottom":157,
@@ -12,7 +12,7 @@
   "edgeFiltering":false,
   "For3D":false,
   "frames":[
-    {"$GMSpriteFrame":"","%Name":"c515ff8b-5f4d-4dfa-9d5c-b8d476de9959","name":"c515ff8b-5f4d-4dfa-9d5c-b8d476de9959","resourceType":"GMSpriteFrame","resourceVersion":"2.0",},
+    {"$GMSpriteFrame":"v1","%Name":"c515ff8b-5f4d-4dfa-9d5c-b8d476de9959","name":"c515ff8b-5f4d-4dfa-9d5c-b8d476de9959","resourceType":"GMSpriteFrame","resourceVersion":"2.0",},
   ],
   "gridX":0,
   "gridY":0,

@@ -1,5 +1,5 @@
 {
-  "$GMSprite":"",
+  "$GMSprite":"v2",
   "%Name":"spr_Bombarder_Shot",
   "bboxMode":0,
   "bbox_bottom":62,
@@ -12,7 +12,7 @@
   "edgeFiltering":false,
   "For3D":false,
   "frames":[
-    {"$GMSpriteFrame":"","%Name":"4dd10ea4-f6bf-49f6-8209-ac418d4a3e8b","name":"4dd10ea4-f6bf-49f6-8209-ac418d4a3e8b","resourceType":"GMSpriteFrame","resourceVersion":"2.0",},
+    {"$GMSpriteFrame":"v1","%Name":"4dd10ea4-f6bf-49f6-8209-ac418d4a3e8b","name":"4dd10ea4-f6bf-49f6-8209-ac418d4a3e8b","resourceType":"GMSpriteFrame","resourceVersion":"2.0",},
   ],
   "gridX":0,
   "gridY":0,

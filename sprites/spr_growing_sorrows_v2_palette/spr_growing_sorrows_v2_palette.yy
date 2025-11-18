@@ -1,5 +1,5 @@
 {
-  "$GMSprite":"",
+  "$GMSprite":"v2",
   "%Name":"spr_growing_sorrows_v2_palette",
   "bboxMode":0,
   "bbox_bottom":14,
@@ -12,7 +12,7 @@
   "edgeFiltering":false,
   "For3D":false,
   "frames":[
-    {"$GMSpriteFrame":"","%Name":"190ca213-d6e4-47cc-bbb8-acf5c1c711ed","name":"190ca213-d6e4-47cc-bbb8-acf5c1c711ed","resourceType":"GMSpriteFrame","resourceVersion":"2.0",},
+    {"$GMSpriteFrame":"v1","%Name":"190ca213-d6e4-47cc-bbb8-acf5c1c711ed","name":"190ca213-d6e4-47cc-bbb8-acf5c1c711ed","resourceType":"GMSpriteFrame","resourceVersion":"2.0",},
   ],
   "gridX":0,
   "gridY":0,

@@ -1,5 +1,5 @@
 {
-  "$GMSprite":"",
+  "$GMSprite":"v2",
   "%Name":"spr_Yellow_Dream_Gem_Art",
   "bboxMode":0,
   "bbox_bottom":124,
@@ -12,7 +12,7 @@
   "edgeFiltering":false,
   "For3D":false,
   "frames":[
-    {"$GMSpriteFrame":"","%Name":"24bba784-e24e-4a42-9ff1-7e9c65faead5","name":"24bba784-e24e-4a42-9ff1-7e9c65faead5","resourceType":"GMSpriteFrame","resourceVersion":"2.0",},
+    {"$GMSpriteFrame":"v1","%Name":"24bba784-e24e-4a42-9ff1-7e9c65faead5","name":"24bba784-e24e-4a42-9ff1-7e9c65faead5","resourceType":"GMSpriteFrame","resourceVersion":"2.0",},
   ],
   "gridX":0,
   "gridY":0,

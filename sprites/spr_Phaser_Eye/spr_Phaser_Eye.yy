@@ -1,5 +1,5 @@
 {
-  "$GMSprite":"",
+  "$GMSprite":"v2",
   "%Name":"spr_Phaser_Eye",
   "bboxMode":0,
   "bbox_bottom":299,
@@ -12,7 +12,7 @@
   "edgeFiltering":false,
   "For3D":false,
   "frames":[
-    {"$GMSpriteFrame":"","%Name":"135257a3-b82d-4f32-8f82-c19c26ae65b2","name":"135257a3-b82d-4f32-8f82-c19c26ae65b2","resourceType":"GMSpriteFrame","resourceVersion":"2.0",},
+    {"$GMSpriteFrame":"v1","%Name":"135257a3-b82d-4f32-8f82-c19c26ae65b2","name":"135257a3-b82d-4f32-8f82-c19c26ae65b2","resourceType":"GMSpriteFrame","resourceVersion":"2.0",},
   ],
   "gridX":0,
   "gridY":0,

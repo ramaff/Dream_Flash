@@ -1,5 +1,5 @@
 {
-  "$GMSprite":"",
+  "$GMSprite":"v2",
   "%Name":"spr_Sleep_Caster_Nightmare",
   "bboxMode":0,
   "bbox_bottom":483,
@@ -12,7 +12,7 @@
   "edgeFiltering":false,
   "For3D":false,
   "frames":[
-    {"$GMSpriteFrame":"","%Name":"dc20c64f-45ef-4199-a88e-62a2a68e10f0","name":"dc20c64f-45ef-4199-a88e-62a2a68e10f0","resourceType":"GMSpriteFrame","resourceVersion":"2.0",},
+    {"$GMSpriteFrame":"v1","%Name":"dc20c64f-45ef-4199-a88e-62a2a68e10f0","name":"dc20c64f-45ef-4199-a88e-62a2a68e10f0","resourceType":"GMSpriteFrame","resourceVersion":"2.0",},
   ],
   "gridX":0,
   "gridY":0,

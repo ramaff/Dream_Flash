@@ -1,5 +1,5 @@
 {
-  "$GMSprite":"",
+  "$GMSprite":"v2",
   "%Name":"spr_Poison_Omen_Status_Effect_Bar",
   "bboxMode":0,
   "bbox_bottom":99,
@@ -12,8 +12,8 @@
   "edgeFiltering":false,
   "For3D":false,
   "frames":[
-    {"$GMSpriteFrame":"","%Name":"3b99c2b8-6622-4b05-a95e-d79aad2c6b47","name":"3b99c2b8-6622-4b05-a95e-d79aad2c6b47","resourceType":"GMSpriteFrame","resourceVersion":"2.0",},
-    {"$GMSpriteFrame":"","%Name":"5899c673-b008-424d-84e9-1667c543e5f4","name":"5899c673-b008-424d-84e9-1667c543e5f4","resourceType":"GMSpriteFrame","resourceVersion":"2.0",},
+    {"$GMSpriteFrame":"v1","%Name":"3b99c2b8-6622-4b05-a95e-d79aad2c6b47","name":"3b99c2b8-6622-4b05-a95e-d79aad2c6b47","resourceType":"GMSpriteFrame","resourceVersion":"2.0",},
+    {"$GMSpriteFrame":"v1","%Name":"5899c673-b008-424d-84e9-1667c543e5f4","name":"5899c673-b008-424d-84e9-1667c543e5f4","resourceType":"GMSpriteFrame","resourceVersion":"2.0",},
   ],
   "gridX":0,
   "gridY":0,

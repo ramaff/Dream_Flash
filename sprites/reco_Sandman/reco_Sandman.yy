@@ -1,5 +1,5 @@
 {
-  "$GMSprite":"",
+  "$GMSprite":"v2",
   "%Name":"reco_Sandman",
   "bboxMode":0,
   "bbox_bottom":740,
@@ -12,7 +12,7 @@
   "edgeFiltering":false,
   "For3D":false,
   "frames":[
-    {"$GMSpriteFrame":"","%Name":"5543e6fa-ef6b-4cd4-b20c-918f1ae2ca89","name":"5543e6fa-ef6b-4cd4-b20c-918f1ae2ca89","resourceType":"GMSpriteFrame","resourceVersion":"2.0",},
+    {"$GMSpriteFrame":"v1","%Name":"5543e6fa-ef6b-4cd4-b20c-918f1ae2ca89","name":"5543e6fa-ef6b-4cd4-b20c-918f1ae2ca89","resourceType":"GMSpriteFrame","resourceVersion":"2.0",},
   ],
   "gridX":0,
   "gridY":0,

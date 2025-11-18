@@ -1,5 +1,5 @@
 {
-  "$GMSprite":"",
+  "$GMSprite":"v2",
   "%Name":"spr_Projectile_Wall_Mage",
   "bboxMode":0,
   "bbox_bottom":495,
@@ -12,7 +12,7 @@
   "edgeFiltering":false,
   "For3D":false,
   "frames":[
-    {"$GMSpriteFrame":"","%Name":"672d4fac-eb44-4175-9b49-9c9448bd24a3","name":"672d4fac-eb44-4175-9b49-9c9448bd24a3","resourceType":"GMSpriteFrame","resourceVersion":"2.0",},
+    {"$GMSpriteFrame":"v1","%Name":"672d4fac-eb44-4175-9b49-9c9448bd24a3","name":"672d4fac-eb44-4175-9b49-9c9448bd24a3","resourceType":"GMSpriteFrame","resourceVersion":"2.0",},
   ],
   "gridX":0,
   "gridY":0,

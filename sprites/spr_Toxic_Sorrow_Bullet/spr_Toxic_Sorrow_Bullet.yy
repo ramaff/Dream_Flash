@@ -1,5 +1,5 @@
 {
-  "$GMSprite":"",
+  "$GMSprite":"v2",
   "%Name":"spr_Toxic_Sorrow_Bullet",
   "bboxMode":2,
   "bbox_bottom":84,
@@ -12,7 +12,7 @@
   "edgeFiltering":false,
   "For3D":false,
   "frames":[
-    {"$GMSpriteFrame":"","%Name":"f8b174f8-4fcc-4ba4-9477-ef8b0de1a2f3","name":"f8b174f8-4fcc-4ba4-9477-ef8b0de1a2f3","resourceType":"GMSpriteFrame","resourceVersion":"2.0",},
+    {"$GMSpriteFrame":"v1","%Name":"f8b174f8-4fcc-4ba4-9477-ef8b0de1a2f3","name":"f8b174f8-4fcc-4ba4-9477-ef8b0de1a2f3","resourceType":"GMSpriteFrame","resourceVersion":"2.0",},
   ],
   "gridX":0,
   "gridY":0,

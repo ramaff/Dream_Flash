@@ -1,5 +1,5 @@
 {
-  "$GMSprite":"",
+  "$GMSprite":"v2",
   "%Name":"spr_Soul_Menu_Dexterity2050",
   "bboxMode":2,
   "bbox_bottom":112,
@@ -12,7 +12,7 @@
   "edgeFiltering":false,
   "For3D":false,
   "frames":[
-    {"$GMSpriteFrame":"","%Name":"820064bd-8d87-4d8f-b652-62ced7415b50","name":"820064bd-8d87-4d8f-b652-62ced7415b50","resourceType":"GMSpriteFrame","resourceVersion":"2.0",},
+    {"$GMSpriteFrame":"v1","%Name":"820064bd-8d87-4d8f-b652-62ced7415b50","name":"820064bd-8d87-4d8f-b652-62ced7415b50","resourceType":"GMSpriteFrame","resourceVersion":"2.0",},
   ],
   "gridX":0,
   "gridY":0,

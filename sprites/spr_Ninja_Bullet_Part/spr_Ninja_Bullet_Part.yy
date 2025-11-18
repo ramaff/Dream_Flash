@@ -1,5 +1,5 @@
 {
-  "$GMSprite":"",
+  "$GMSprite":"v2",
   "%Name":"spr_Ninja_Bullet_Part",
   "bboxMode":2,
   "bbox_bottom":53,
@@ -12,7 +12,7 @@
   "edgeFiltering":false,
   "For3D":false,
   "frames":[
-    {"$GMSpriteFrame":"","%Name":"3d056b23-6b9c-48a8-8a1a-06c581045d22","name":"3d056b23-6b9c-48a8-8a1a-06c581045d22","resourceType":"GMSpriteFrame","resourceVersion":"2.0",},
+    {"$GMSpriteFrame":"v1","%Name":"3d056b23-6b9c-48a8-8a1a-06c581045d22","name":"3d056b23-6b9c-48a8-8a1a-06c581045d22","resourceType":"GMSpriteFrame","resourceVersion":"2.0",},
   ],
   "gridX":0,
   "gridY":0,

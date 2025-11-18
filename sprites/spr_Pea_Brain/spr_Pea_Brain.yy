@@ -1,5 +1,5 @@
 {
-  "$GMSprite":"",
+  "$GMSprite":"v2",
   "%Name":"spr_Pea_Brain",
   "bboxMode":0,
   "bbox_bottom":163,
@@ -12,7 +12,7 @@
   "edgeFiltering":false,
   "For3D":false,
   "frames":[
-    {"$GMSpriteFrame":"","%Name":"1c1bbe11-7e2b-47f5-ab04-a2b613902fee","name":"1c1bbe11-7e2b-47f5-ab04-a2b613902fee","resourceType":"GMSpriteFrame","resourceVersion":"2.0",},
+    {"$GMSpriteFrame":"v1","%Name":"1c1bbe11-7e2b-47f5-ab04-a2b613902fee","name":"1c1bbe11-7e2b-47f5-ab04-a2b613902fee","resourceType":"GMSpriteFrame","resourceVersion":"2.0",},
   ],
   "gridX":0,
   "gridY":0,

@@ -1,5 +1,5 @@
 {
-  "$GMSprite":"",
+  "$GMSprite":"v2",
   "%Name":"bg_Feel_Dungeon_Fallout",
   "bboxMode":0,
   "bbox_bottom":127,
@@ -12,7 +12,7 @@
   "edgeFiltering":false,
   "For3D":false,
   "frames":[
-    {"$GMSpriteFrame":"","%Name":"79de10d0-a7b0-4ed5-8fb4-c4c99540702d","name":"79de10d0-a7b0-4ed5-8fb4-c4c99540702d","resourceType":"GMSpriteFrame","resourceVersion":"2.0",},
+    {"$GMSpriteFrame":"v1","%Name":"79de10d0-a7b0-4ed5-8fb4-c4c99540702d","name":"79de10d0-a7b0-4ed5-8fb4-c4c99540702d","resourceType":"GMSpriteFrame","resourceVersion":"2.0",},
   ],
   "gridX":0,
   "gridY":0,

@@ -1,5 +1,5 @@
 {
-  "$GMSprite":"",
+  "$GMSprite":"v2",
   "%Name":"spr_Maelstrom_Spirit",
   "bboxMode":0,
   "bbox_bottom":329,
@@ -12,7 +12,7 @@
   "edgeFiltering":false,
   "For3D":false,
   "frames":[
-    {"$GMSpriteFrame":"","%Name":"642f424b-5aad-4a34-b606-1b9f6c32efea","name":"642f424b-5aad-4a34-b606-1b9f6c32efea","resourceType":"GMSpriteFrame","resourceVersion":"2.0",},
+    {"$GMSpriteFrame":"v1","%Name":"642f424b-5aad-4a34-b606-1b9f6c32efea","name":"642f424b-5aad-4a34-b606-1b9f6c32efea","resourceType":"GMSpriteFrame","resourceVersion":"2.0",},
   ],
   "gridX":0,
   "gridY":0,

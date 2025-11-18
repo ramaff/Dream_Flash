@@ -1,5 +1,5 @@
 {
-  "$GMSprite":"",
+  "$GMSprite":"v2",
   "%Name":"spr_Mechanical_Soul_Hard_Think1907",
   "bboxMode":0,
   "bbox_bottom":220,
@@ -12,8 +12,8 @@
   "edgeFiltering":false,
   "For3D":false,
   "frames":[
-    {"$GMSpriteFrame":"","%Name":"af64fc2b-5dda-40b7-861b-f489a14aabdd","name":"af64fc2b-5dda-40b7-861b-f489a14aabdd","resourceType":"GMSpriteFrame","resourceVersion":"2.0",},
-    {"$GMSpriteFrame":"","%Name":"f4c1d35a-d815-4f7b-ae87-09c54ea722fe","name":"f4c1d35a-d815-4f7b-ae87-09c54ea722fe","resourceType":"GMSpriteFrame","resourceVersion":"2.0",},
+    {"$GMSpriteFrame":"v1","%Name":"af64fc2b-5dda-40b7-861b-f489a14aabdd","name":"af64fc2b-5dda-40b7-861b-f489a14aabdd","resourceType":"GMSpriteFrame","resourceVersion":"2.0",},
+    {"$GMSpriteFrame":"v1","%Name":"f4c1d35a-d815-4f7b-ae87-09c54ea722fe","name":"f4c1d35a-d815-4f7b-ae87-09c54ea722fe","resourceType":"GMSpriteFrame","resourceVersion":"2.0",},
   ],
   "gridX":0,
   "gridY":0,

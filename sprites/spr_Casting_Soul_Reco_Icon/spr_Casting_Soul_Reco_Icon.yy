@@ -1,5 +1,5 @@
 {
-  "$GMSprite":"",
+  "$GMSprite":"v2",
   "%Name":"spr_Casting_Soul_Reco_Icon",
   "bboxMode":2,
   "bbox_bottom":200,
@@ -12,7 +12,7 @@
   "edgeFiltering":false,
   "For3D":false,
   "frames":[
-    {"$GMSpriteFrame":"","%Name":"f264ffdd-1f26-4544-ae53-994af75ec581","name":"f264ffdd-1f26-4544-ae53-994af75ec581","resourceType":"GMSpriteFrame","resourceVersion":"2.0",},
+    {"$GMSpriteFrame":"v1","%Name":"f264ffdd-1f26-4544-ae53-994af75ec581","name":"f264ffdd-1f26-4544-ae53-994af75ec581","resourceType":"GMSpriteFrame","resourceVersion":"2.0",},
   ],
   "gridX":0,
   "gridY":0,

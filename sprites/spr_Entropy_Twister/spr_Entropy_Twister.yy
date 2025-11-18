@@ -1,5 +1,5 @@
 {
-  "$GMSprite":"",
+  "$GMSprite":"v2",
   "%Name":"spr_Entropy_Twister",
   "bboxMode":2,
   "bbox_bottom":69,
@@ -12,7 +12,7 @@
   "edgeFiltering":false,
   "For3D":false,
   "frames":[
-    {"$GMSpriteFrame":"","%Name":"1c204453-1373-4d40-876b-c97ff1529edf","name":"1c204453-1373-4d40-876b-c97ff1529edf","resourceType":"GMSpriteFrame","resourceVersion":"2.0",},
+    {"$GMSpriteFrame":"v1","%Name":"1c204453-1373-4d40-876b-c97ff1529edf","name":"1c204453-1373-4d40-876b-c97ff1529edf","resourceType":"GMSpriteFrame","resourceVersion":"2.0",},
   ],
   "gridX":0,
   "gridY":0,

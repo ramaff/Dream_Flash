@@ -1,5 +1,5 @@
 {
-  "$GMSprite":"",
+  "$GMSprite":"v2",
   "%Name":"bg_Light_Forest_Tiles",
   "bboxMode":0,
   "bbox_bottom":127,
@@ -12,7 +12,7 @@
   "edgeFiltering":false,
   "For3D":false,
   "frames":[
-    {"$GMSpriteFrame":"","%Name":"fdddcabe-b15c-4c6b-b4fa-21d7585449b4","name":"fdddcabe-b15c-4c6b-b4fa-21d7585449b4","resourceType":"GMSpriteFrame","resourceVersion":"2.0",},
+    {"$GMSpriteFrame":"v1","%Name":"fdddcabe-b15c-4c6b-b4fa-21d7585449b4","name":"fdddcabe-b15c-4c6b-b4fa-21d7585449b4","resourceType":"GMSpriteFrame","resourceVersion":"2.0",},
   ],
   "gridX":0,
   "gridY":0,

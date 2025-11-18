@@ -1,5 +1,5 @@
 {
-  "$GMSprite":"",
+  "$GMSprite":"v2",
   "%Name":"spr_Shuriken_Shot",
   "bboxMode":0,
   "bbox_bottom":75,
@@ -12,7 +12,7 @@
   "edgeFiltering":false,
   "For3D":false,
   "frames":[
-    {"$GMSpriteFrame":"","%Name":"99b29572-28fa-41e6-a146-6df8e3046e72","name":"99b29572-28fa-41e6-a146-6df8e3046e72","resourceType":"GMSpriteFrame","resourceVersion":"2.0",},
+    {"$GMSpriteFrame":"v1","%Name":"99b29572-28fa-41e6-a146-6df8e3046e72","name":"99b29572-28fa-41e6-a146-6df8e3046e72","resourceType":"GMSpriteFrame","resourceVersion":"2.0",},
   ],
   "gridX":0,
   "gridY":0,

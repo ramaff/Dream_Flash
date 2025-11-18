@@ -1,5 +1,5 @@
 {
-  "$GMSprite":"",
+  "$GMSprite":"v2",
   "%Name":"spr_Mechanical_Soul_Think1906",
   "bboxMode":0,
   "bbox_bottom":220,
@@ -12,8 +12,8 @@
   "edgeFiltering":false,
   "For3D":false,
   "frames":[
-    {"$GMSpriteFrame":"","%Name":"d4da09f3-839e-4bf2-934e-0e26784a70f8","name":"d4da09f3-839e-4bf2-934e-0e26784a70f8","resourceType":"GMSpriteFrame","resourceVersion":"2.0",},
-    {"$GMSpriteFrame":"","%Name":"d69b6dbb-0743-4c1c-8180-b5a36b6a2480","name":"d69b6dbb-0743-4c1c-8180-b5a36b6a2480","resourceType":"GMSpriteFrame","resourceVersion":"2.0",},
+    {"$GMSpriteFrame":"v1","%Name":"d4da09f3-839e-4bf2-934e-0e26784a70f8","name":"d4da09f3-839e-4bf2-934e-0e26784a70f8","resourceType":"GMSpriteFrame","resourceVersion":"2.0",},
+    {"$GMSpriteFrame":"v1","%Name":"d69b6dbb-0743-4c1c-8180-b5a36b6a2480","name":"d69b6dbb-0743-4c1c-8180-b5a36b6a2480","resourceType":"GMSpriteFrame","resourceVersion":"2.0",},
   ],
   "gridX":0,
   "gridY":0,

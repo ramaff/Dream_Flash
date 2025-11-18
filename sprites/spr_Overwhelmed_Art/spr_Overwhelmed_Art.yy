@@ -1,5 +1,5 @@
 {
-  "$GMSprite":"",
+  "$GMSprite":"v2",
   "%Name":"spr_Overwhelmed_Art",
   "bboxMode":0,
   "bbox_bottom":157,
@@ -12,7 +12,7 @@
   "edgeFiltering":false,
   "For3D":false,
   "frames":[
-    {"$GMSpriteFrame":"","%Name":"804c7524-6a66-4298-97b4-b2e4bf8e9047","name":"804c7524-6a66-4298-97b4-b2e4bf8e9047","resourceType":"GMSpriteFrame","resourceVersion":"2.0",},
+    {"$GMSpriteFrame":"v1","%Name":"804c7524-6a66-4298-97b4-b2e4bf8e9047","name":"804c7524-6a66-4298-97b4-b2e4bf8e9047","resourceType":"GMSpriteFrame","resourceVersion":"2.0",},
   ],
   "gridX":0,
   "gridY":0,

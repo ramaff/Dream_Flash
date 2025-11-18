@@ -1,5 +1,5 @@
 {
-  "$GMSprite":"",
+  "$GMSprite":"v2",
   "%Name":"spr_Pine_Tree",
   "bboxMode":0,
   "bbox_bottom":482,
@@ -12,7 +12,7 @@
   "edgeFiltering":false,
   "For3D":false,
   "frames":[
-    {"$GMSpriteFrame":"","%Name":"fa05dffa-adb0-40a7-8d89-5e8edf7a7800","name":"fa05dffa-adb0-40a7-8d89-5e8edf7a7800","resourceType":"GMSpriteFrame","resourceVersion":"2.0",},
+    {"$GMSpriteFrame":"v1","%Name":"fa05dffa-adb0-40a7-8d89-5e8edf7a7800","name":"fa05dffa-adb0-40a7-8d89-5e8edf7a7800","resourceType":"GMSpriteFrame","resourceVersion":"2.0",},
   ],
   "gridX":0,
   "gridY":0,

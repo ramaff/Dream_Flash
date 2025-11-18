@@ -1,5 +1,5 @@
 {
-  "$GMSprite":"",
+  "$GMSprite":"v2",
   "%Name":"spr_Ascending_Soul_Reco",
   "bboxMode":0,
   "bbox_bottom":268,
@@ -12,7 +12,7 @@
   "edgeFiltering":false,
   "For3D":false,
   "frames":[
-    {"$GMSpriteFrame":"","%Name":"8481a6a1-5d45-4fe0-8e37-f9ba1d817846","name":"8481a6a1-5d45-4fe0-8e37-f9ba1d817846","resourceType":"GMSpriteFrame","resourceVersion":"2.0",},
+    {"$GMSpriteFrame":"v1","%Name":"8481a6a1-5d45-4fe0-8e37-f9ba1d817846","name":"8481a6a1-5d45-4fe0-8e37-f9ba1d817846","resourceType":"GMSpriteFrame","resourceVersion":"2.0",},
   ],
   "gridX":0,
   "gridY":0,

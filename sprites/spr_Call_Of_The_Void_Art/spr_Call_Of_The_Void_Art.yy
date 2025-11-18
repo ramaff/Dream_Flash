@@ -1,5 +1,5 @@
 {
-  "$GMSprite":"",
+  "$GMSprite":"v2",
   "%Name":"spr_Call_Of_The_Void_Art",
   "bboxMode":0,
   "bbox_bottom":157,
@@ -12,7 +12,7 @@
   "edgeFiltering":false,
   "For3D":false,
   "frames":[
-    {"$GMSpriteFrame":"","%Name":"877d6fe4-c565-4290-b4b3-11c2fe813255","name":"877d6fe4-c565-4290-b4b3-11c2fe813255","resourceType":"GMSpriteFrame","resourceVersion":"2.0",},
+    {"$GMSpriteFrame":"v1","%Name":"877d6fe4-c565-4290-b4b3-11c2fe813255","name":"877d6fe4-c565-4290-b4b3-11c2fe813255","resourceType":"GMSpriteFrame","resourceVersion":"2.0",},
   ],
   "gridX":0,
   "gridY":0,

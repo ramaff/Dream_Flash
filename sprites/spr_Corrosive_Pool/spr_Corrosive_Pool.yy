@@ -1,5 +1,5 @@
 {
-  "$GMSprite":"",
+  "$GMSprite":"v2",
   "%Name":"spr_Corrosive_Pool",
   "bboxMode":2,
   "bbox_bottom":120,
@@ -12,7 +12,7 @@
   "edgeFiltering":false,
   "For3D":false,
   "frames":[
-    {"$GMSpriteFrame":"","%Name":"b7f17325-6a68-402e-9ae8-243d7e916e34","name":"b7f17325-6a68-402e-9ae8-243d7e916e34","resourceType":"GMSpriteFrame","resourceVersion":"2.0",},
+    {"$GMSpriteFrame":"v1","%Name":"b7f17325-6a68-402e-9ae8-243d7e916e34","name":"b7f17325-6a68-402e-9ae8-243d7e916e34","resourceType":"GMSpriteFrame","resourceVersion":"2.0",},
   ],
   "gridX":0,
   "gridY":0,

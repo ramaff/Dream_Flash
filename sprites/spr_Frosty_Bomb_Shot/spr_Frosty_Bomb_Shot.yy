@@ -1,5 +1,5 @@
 {
-  "$GMSprite":"",
+  "$GMSprite":"v2",
   "%Name":"spr_Frosty_Bomb_Shot",
   "bboxMode":0,
   "bbox_bottom":81,
@@ -12,7 +12,7 @@
   "edgeFiltering":false,
   "For3D":false,
   "frames":[
-    {"$GMSpriteFrame":"","%Name":"a8ef0dbb-bfc7-4da9-b970-71cd915b39a6","name":"a8ef0dbb-bfc7-4da9-b970-71cd915b39a6","resourceType":"GMSpriteFrame","resourceVersion":"2.0",},
+    {"$GMSpriteFrame":"v1","%Name":"a8ef0dbb-bfc7-4da9-b970-71cd915b39a6","name":"a8ef0dbb-bfc7-4da9-b970-71cd915b39a6","resourceType":"GMSpriteFrame","resourceVersion":"2.0",},
   ],
   "gridX":0,
   "gridY":0,

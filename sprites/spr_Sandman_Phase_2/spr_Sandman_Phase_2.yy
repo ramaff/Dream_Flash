@@ -1,5 +1,5 @@
 {
-  "$GMSprite":"",
+  "$GMSprite":"v2",
   "%Name":"spr_Sandman_Phase_2",
   "bboxMode":0,
   "bbox_bottom":740,
@@ -12,7 +12,7 @@
   "edgeFiltering":false,
   "For3D":false,
   "frames":[
-    {"$GMSpriteFrame":"","%Name":"c9888199-89fd-4a63-a679-76bc2027b15a","name":"c9888199-89fd-4a63-a679-76bc2027b15a","resourceType":"GMSpriteFrame","resourceVersion":"2.0",},
+    {"$GMSpriteFrame":"v1","%Name":"c9888199-89fd-4a63-a679-76bc2027b15a","name":"c9888199-89fd-4a63-a679-76bc2027b15a","resourceType":"GMSpriteFrame","resourceVersion":"2.0",},
   ],
   "gridX":0,
   "gridY":0,

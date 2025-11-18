@@ -1,5 +1,5 @@
 {
-  "$GMSprite":"",
+  "$GMSprite":"v2",
   "%Name":"spr_Dream_Crawler_Tail",
   "bboxMode":0,
   "bbox_bottom":340,
@@ -12,7 +12,7 @@
   "edgeFiltering":false,
   "For3D":false,
   "frames":[
-    {"$GMSpriteFrame":"","%Name":"8a2fa3b1-308f-4030-ab8d-c267b4258205","name":"8a2fa3b1-308f-4030-ab8d-c267b4258205","resourceType":"GMSpriteFrame","resourceVersion":"2.0",},
+    {"$GMSpriteFrame":"v1","%Name":"8a2fa3b1-308f-4030-ab8d-c267b4258205","name":"8a2fa3b1-308f-4030-ab8d-c267b4258205","resourceType":"GMSpriteFrame","resourceVersion":"2.0",},
   ],
   "gridX":0,
   "gridY":0,

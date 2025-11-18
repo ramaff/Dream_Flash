@@ -1,5 +1,5 @@
 {
-  "$GMSprite":"",
+  "$GMSprite":"v2",
   "%Name":"spr_Shooty_Ghoul",
   "bboxMode":0,
   "bbox_bottom":306,
@@ -12,7 +12,7 @@
   "edgeFiltering":false,
   "For3D":false,
   "frames":[
-    {"$GMSpriteFrame":"","%Name":"e964f735-e800-49c7-8ff8-dd65940ec80e","name":"e964f735-e800-49c7-8ff8-dd65940ec80e","resourceType":"GMSpriteFrame","resourceVersion":"2.0",},
+    {"$GMSpriteFrame":"v1","%Name":"e964f735-e800-49c7-8ff8-dd65940ec80e","name":"e964f735-e800-49c7-8ff8-dd65940ec80e","resourceType":"GMSpriteFrame","resourceVersion":"2.0",},
   ],
   "gridX":0,
   "gridY":0,

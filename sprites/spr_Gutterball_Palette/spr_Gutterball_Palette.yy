@@ -1,5 +1,5 @@
 {
-  "$GMSprite":"",
+  "$GMSprite":"v2",
   "%Name":"spr_Gutterball_Palette",
   "bboxMode":0,
   "bbox_bottom":8,
@@ -12,7 +12,7 @@
   "edgeFiltering":false,
   "For3D":false,
   "frames":[
-    {"$GMSpriteFrame":"","%Name":"96403501-67d0-48f8-ae21-3c6b3a0ad77e","name":"96403501-67d0-48f8-ae21-3c6b3a0ad77e","resourceType":"GMSpriteFrame","resourceVersion":"2.0",},
+    {"$GMSpriteFrame":"v1","%Name":"96403501-67d0-48f8-ae21-3c6b3a0ad77e","name":"96403501-67d0-48f8-ae21-3c6b3a0ad77e","resourceType":"GMSpriteFrame","resourceVersion":"2.0",},
   ],
   "gridX":0,
   "gridY":0,

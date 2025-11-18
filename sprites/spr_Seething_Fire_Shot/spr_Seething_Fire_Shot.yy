@@ -1,5 +1,5 @@
 {
-  "$GMSprite":"",
+  "$GMSprite":"v2",
   "%Name":"spr_Seething_Fire_Shot",
   "bboxMode":2,
   "bbox_bottom":29,
@@ -12,7 +12,7 @@
   "edgeFiltering":false,
   "For3D":false,
   "frames":[
-    {"$GMSpriteFrame":"","%Name":"ce871f99-dbce-4b3d-8ffb-17e3bd03bece","name":"ce871f99-dbce-4b3d-8ffb-17e3bd03bece","resourceType":"GMSpriteFrame","resourceVersion":"2.0",},
+    {"$GMSpriteFrame":"v1","%Name":"ce871f99-dbce-4b3d-8ffb-17e3bd03bece","name":"ce871f99-dbce-4b3d-8ffb-17e3bd03bece","resourceType":"GMSpriteFrame","resourceVersion":"2.0",},
   ],
   "gridX":0,
   "gridY":0,

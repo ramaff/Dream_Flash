@@ -1,5 +1,5 @@
 {
-  "$GMSprite":"",
+  "$GMSprite":"v2",
   "%Name":"spr_Bullet_Jam_Shot",
   "bboxMode":2,
   "bbox_bottom":54,
@@ -12,7 +12,7 @@
   "edgeFiltering":false,
   "For3D":false,
   "frames":[
-    {"$GMSpriteFrame":"","%Name":"ce67e93c-f1b8-4210-a6e2-fcc7cdda88b6","name":"ce67e93c-f1b8-4210-a6e2-fcc7cdda88b6","resourceType":"GMSpriteFrame","resourceVersion":"2.0",},
+    {"$GMSpriteFrame":"v1","%Name":"ce67e93c-f1b8-4210-a6e2-fcc7cdda88b6","name":"ce67e93c-f1b8-4210-a6e2-fcc7cdda88b6","resourceType":"GMSpriteFrame","resourceVersion":"2.0",},
   ],
   "gridX":0,
   "gridY":0,

@@ -1,5 +1,5 @@
 {
-  "$GMSprite":"",
+  "$GMSprite":"v2",
   "%Name":"reco_Mass_Puck",
   "bboxMode":0,
   "bbox_bottom":425,
@@ -12,7 +12,7 @@
   "edgeFiltering":false,
   "For3D":false,
   "frames":[
-    {"$GMSpriteFrame":"","%Name":"6edd6067-0acc-4af0-bc4e-b3e9ee514b69","name":"6edd6067-0acc-4af0-bc4e-b3e9ee514b69","resourceType":"GMSpriteFrame","resourceVersion":"2.0",},
+    {"$GMSpriteFrame":"v1","%Name":"6edd6067-0acc-4af0-bc4e-b3e9ee514b69","name":"6edd6067-0acc-4af0-bc4e-b3e9ee514b69","resourceType":"GMSpriteFrame","resourceVersion":"2.0",},
   ],
   "gridX":0,
   "gridY":0,

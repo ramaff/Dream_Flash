@@ -1,5 +1,5 @@
 {
-  "$GMSprite":"",
+  "$GMSprite":"v2",
   "%Name":"spr_Strength_Item_Field",
   "bboxMode":0,
   "bbox_bottom":258,
@@ -12,7 +12,7 @@
   "edgeFiltering":false,
   "For3D":false,
   "frames":[
-    {"$GMSpriteFrame":"","%Name":"7a1ec936-e2d0-4627-b47a-4ad2121c21d7","name":"7a1ec936-e2d0-4627-b47a-4ad2121c21d7","resourceType":"GMSpriteFrame","resourceVersion":"2.0",},
+    {"$GMSpriteFrame":"v1","%Name":"7a1ec936-e2d0-4627-b47a-4ad2121c21d7","name":"7a1ec936-e2d0-4627-b47a-4ad2121c21d7","resourceType":"GMSpriteFrame","resourceVersion":"2.0",},
   ],
   "gridX":0,
   "gridY":0,

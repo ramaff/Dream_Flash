@@ -1,5 +1,5 @@
 {
-  "$GMSprite":"",
+  "$GMSprite":"v2",
   "%Name":"spr_The_Veil",
   "bboxMode":0,
   "bbox_bottom":514,
@@ -12,7 +12,7 @@
   "edgeFiltering":false,
   "For3D":false,
   "frames":[
-    {"$GMSpriteFrame":"","%Name":"cb9881ee-ed1c-4c75-af0b-9bdc45634f18","name":"cb9881ee-ed1c-4c75-af0b-9bdc45634f18","resourceType":"GMSpriteFrame","resourceVersion":"2.0",},
+    {"$GMSpriteFrame":"v1","%Name":"cb9881ee-ed1c-4c75-af0b-9bdc45634f18","name":"cb9881ee-ed1c-4c75-af0b-9bdc45634f18","resourceType":"GMSpriteFrame","resourceVersion":"2.0",},
   ],
   "gridX":0,
   "gridY":0,

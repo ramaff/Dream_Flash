@@ -1,5 +1,5 @@
 {
-  "$GMSprite":"",
+  "$GMSprite":"v2",
   "%Name":"spr_Debris_Bullet",
   "bboxMode":2,
   "bbox_bottom":43,
@@ -12,7 +12,7 @@
   "edgeFiltering":false,
   "For3D":false,
   "frames":[
-    {"$GMSpriteFrame":"","%Name":"e132d44f-44e7-4a9a-8d4b-0b49d95fa5dd","name":"e132d44f-44e7-4a9a-8d4b-0b49d95fa5dd","resourceType":"GMSpriteFrame","resourceVersion":"2.0",},
+    {"$GMSpriteFrame":"v1","%Name":"e132d44f-44e7-4a9a-8d4b-0b49d95fa5dd","name":"e132d44f-44e7-4a9a-8d4b-0b49d95fa5dd","resourceType":"GMSpriteFrame","resourceVersion":"2.0",},
   ],
   "gridX":0,
   "gridY":0,

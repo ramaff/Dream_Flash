@@ -1,5 +1,5 @@
 {
-  "$GMSprite":"",
+  "$GMSprite":"v2",
   "%Name":"spr_Poisonous_Soul",
   "bboxMode":0,
   "bbox_bottom":161,
@@ -12,8 +12,8 @@
   "edgeFiltering":false,
   "For3D":false,
   "frames":[
-    {"$GMSpriteFrame":"","%Name":"bb949634-a440-4e73-8880-444db797cf6b","name":"bb949634-a440-4e73-8880-444db797cf6b","resourceType":"GMSpriteFrame","resourceVersion":"2.0",},
-    {"$GMSpriteFrame":"","%Name":"f4279604-879c-452c-a70b-d01b6aa47a17","name":"f4279604-879c-452c-a70b-d01b6aa47a17","resourceType":"GMSpriteFrame","resourceVersion":"2.0",},
+    {"$GMSpriteFrame":"v1","%Name":"bb949634-a440-4e73-8880-444db797cf6b","name":"bb949634-a440-4e73-8880-444db797cf6b","resourceType":"GMSpriteFrame","resourceVersion":"2.0",},
+    {"$GMSpriteFrame":"v1","%Name":"f4279604-879c-452c-a70b-d01b6aa47a17","name":"f4279604-879c-452c-a70b-d01b6aa47a17","resourceType":"GMSpriteFrame","resourceVersion":"2.0",},
   ],
   "gridX":0,
   "gridY":0,

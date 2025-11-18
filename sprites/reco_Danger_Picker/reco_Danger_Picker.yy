@@ -1,5 +1,5 @@
 {
-  "$GMSprite":"",
+  "$GMSprite":"v2",
   "%Name":"reco_Danger_Picker",
   "bboxMode":0,
   "bbox_bottom":602,
@@ -12,7 +12,7 @@
   "edgeFiltering":false,
   "For3D":false,
   "frames":[
-    {"$GMSpriteFrame":"","%Name":"efaeee16-be75-41e8-9b12-e5859e941009","name":"efaeee16-be75-41e8-9b12-e5859e941009","resourceType":"GMSpriteFrame","resourceVersion":"2.0",},
+    {"$GMSpriteFrame":"v1","%Name":"efaeee16-be75-41e8-9b12-e5859e941009","name":"efaeee16-be75-41e8-9b12-e5859e941009","resourceType":"GMSpriteFrame","resourceVersion":"2.0",},
   ],
   "gridX":0,
   "gridY":0,

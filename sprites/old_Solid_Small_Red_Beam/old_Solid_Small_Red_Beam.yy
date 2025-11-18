@@ -1,5 +1,5 @@
 {
-  "$GMSprite":"",
+  "$GMSprite":"v2",
   "%Name":"old_Solid_Small_Red_Beam",
   "bboxMode":0,
   "bbox_bottom":35,
@@ -12,7 +12,7 @@
   "edgeFiltering":false,
   "For3D":false,
   "frames":[
-    {"$GMSpriteFrame":"","%Name":"1e3ca30b-ac3c-4e8f-ab30-ddd6ff781330","name":"1e3ca30b-ac3c-4e8f-ab30-ddd6ff781330","resourceType":"GMSpriteFrame","resourceVersion":"2.0",},
+    {"$GMSpriteFrame":"v1","%Name":"1e3ca30b-ac3c-4e8f-ab30-ddd6ff781330","name":"1e3ca30b-ac3c-4e8f-ab30-ddd6ff781330","resourceType":"GMSpriteFrame","resourceVersion":"2.0",},
   ],
   "gridX":0,
   "gridY":0,

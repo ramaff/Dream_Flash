@@ -1,5 +1,5 @@
 {
-  "$GMSprite":"",
+  "$GMSprite":"v2",
   "%Name":"spr_Shockwave_Devil",
   "bboxMode":0,
   "bbox_bottom":115,
@@ -12,7 +12,7 @@
   "edgeFiltering":false,
   "For3D":false,
   "frames":[
-    {"$GMSpriteFrame":"","%Name":"db2bb0c7-539a-4ded-8331-882a53f3dc7b","name":"db2bb0c7-539a-4ded-8331-882a53f3dc7b","resourceType":"GMSpriteFrame","resourceVersion":"2.0",},
+    {"$GMSpriteFrame":"v1","%Name":"db2bb0c7-539a-4ded-8331-882a53f3dc7b","name":"db2bb0c7-539a-4ded-8331-882a53f3dc7b","resourceType":"GMSpriteFrame","resourceVersion":"2.0",},
   ],
   "gridX":0,
   "gridY":0,

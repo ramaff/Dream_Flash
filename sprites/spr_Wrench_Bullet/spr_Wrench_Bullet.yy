@@ -1,5 +1,5 @@
 {
-  "$GMSprite":"",
+  "$GMSprite":"v2",
   "%Name":"spr_Wrench_Bullet",
   "bboxMode":2,
   "bbox_bottom":65,
@@ -12,7 +12,7 @@
   "edgeFiltering":false,
   "For3D":false,
   "frames":[
-    {"$GMSpriteFrame":"","%Name":"2a639282-4cb7-4bf8-a6fa-2b763ea6106c","name":"2a639282-4cb7-4bf8-a6fa-2b763ea6106c","resourceType":"GMSpriteFrame","resourceVersion":"2.0",},
+    {"$GMSpriteFrame":"v1","%Name":"2a639282-4cb7-4bf8-a6fa-2b763ea6106c","name":"2a639282-4cb7-4bf8-a6fa-2b763ea6106c","resourceType":"GMSpriteFrame","resourceVersion":"2.0",},
   ],
   "gridX":0,
   "gridY":0,

@@ -1,5 +1,5 @@
 {
-  "$GMSprite":"",
+  "$GMSprite":"v2",
   "%Name":"spr_Open_Minded_Art",
   "bboxMode":0,
   "bbox_bottom":157,
@@ -12,7 +12,7 @@
   "edgeFiltering":false,
   "For3D":false,
   "frames":[
-    {"$GMSpriteFrame":"","%Name":"1c97b247-2cee-4d3a-83c3-d6a55e8d6c19","name":"1c97b247-2cee-4d3a-83c3-d6a55e8d6c19","resourceType":"GMSpriteFrame","resourceVersion":"2.0",},
+    {"$GMSpriteFrame":"v1","%Name":"1c97b247-2cee-4d3a-83c3-d6a55e8d6c19","name":"1c97b247-2cee-4d3a-83c3-d6a55e8d6c19","resourceType":"GMSpriteFrame","resourceVersion":"2.0",},
   ],
   "gridX":0,
   "gridY":0,

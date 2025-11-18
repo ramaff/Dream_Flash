@@ -1,5 +1,5 @@
 {
-  "$GMSprite":"",
+  "$GMSprite":"v2",
   "%Name":"reco_soaring_sorrows_v2",
   "bboxMode":0,
   "bbox_bottom":690,
@@ -12,7 +12,7 @@
   "edgeFiltering":false,
   "For3D":false,
   "frames":[
-    {"$GMSpriteFrame":"","%Name":"f8b2cfa4-43bc-474d-9be2-f555b1480ef7","name":"f8b2cfa4-43bc-474d-9be2-f555b1480ef7","resourceType":"GMSpriteFrame","resourceVersion":"2.0",},
+    {"$GMSpriteFrame":"v1","%Name":"f8b2cfa4-43bc-474d-9be2-f555b1480ef7","name":"f8b2cfa4-43bc-474d-9be2-f555b1480ef7","resourceType":"GMSpriteFrame","resourceVersion":"2.0",},
   ],
   "gridX":0,
   "gridY":0,

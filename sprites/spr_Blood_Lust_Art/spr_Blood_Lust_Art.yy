@@ -1,5 +1,5 @@
 {
-  "$GMSprite":"",
+  "$GMSprite":"v2",
   "%Name":"spr_Blood_Lust_Art",
   "bboxMode":0,
   "bbox_bottom":157,
@@ -12,7 +12,7 @@
   "edgeFiltering":false,
   "For3D":false,
   "frames":[
-    {"$GMSpriteFrame":"","%Name":"695fd070-1e5f-48c4-bdeb-59f8000eff3c","name":"695fd070-1e5f-48c4-bdeb-59f8000eff3c","resourceType":"GMSpriteFrame","resourceVersion":"2.0",},
+    {"$GMSpriteFrame":"v1","%Name":"695fd070-1e5f-48c4-bdeb-59f8000eff3c","name":"695fd070-1e5f-48c4-bdeb-59f8000eff3c","resourceType":"GMSpriteFrame","resourceVersion":"2.0",},
   ],
   "gridX":0,
   "gridY":0,

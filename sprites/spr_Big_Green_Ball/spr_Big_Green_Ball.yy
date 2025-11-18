@@ -1,5 +1,5 @@
 {
-  "$GMSprite":"",
+  "$GMSprite":"v2",
   "%Name":"spr_Big_Green_Ball",
   "bboxMode":2,
   "bbox_bottom":66,
@@ -12,7 +12,7 @@
   "edgeFiltering":false,
   "For3D":false,
   "frames":[
-    {"$GMSpriteFrame":"","%Name":"e2a0738e-ea37-4fcd-85f0-f351c7d7a781","name":"e2a0738e-ea37-4fcd-85f0-f351c7d7a781","resourceType":"GMSpriteFrame","resourceVersion":"2.0",},
+    {"$GMSpriteFrame":"v1","%Name":"e2a0738e-ea37-4fcd-85f0-f351c7d7a781","name":"e2a0738e-ea37-4fcd-85f0-f351c7d7a781","resourceType":"GMSpriteFrame","resourceVersion":"2.0",},
   ],
   "gridX":0,
   "gridY":0,

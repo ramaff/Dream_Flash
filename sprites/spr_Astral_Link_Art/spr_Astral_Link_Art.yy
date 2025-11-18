@@ -1,5 +1,5 @@
 {
-  "$GMSprite":"",
+  "$GMSprite":"v2",
   "%Name":"spr_Astral_Link_Art",
   "bboxMode":1,
   "bbox_bottom":223,
@@ -12,7 +12,7 @@
   "edgeFiltering":false,
   "For3D":false,
   "frames":[
-    {"$GMSpriteFrame":"","%Name":"9831d3c3-1286-49d4-95c4-d8d74090ac99","name":"9831d3c3-1286-49d4-95c4-d8d74090ac99","resourceType":"GMSpriteFrame","resourceVersion":"2.0",},
+    {"$GMSpriteFrame":"v1","%Name":"9831d3c3-1286-49d4-95c4-d8d74090ac99","name":"9831d3c3-1286-49d4-95c4-d8d74090ac99","resourceType":"GMSpriteFrame","resourceVersion":"2.0",},
   ],
   "gridX":0,
   "gridY":0,

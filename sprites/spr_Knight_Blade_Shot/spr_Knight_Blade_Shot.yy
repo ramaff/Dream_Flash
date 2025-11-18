@@ -1,5 +1,5 @@
 {
-  "$GMSprite":"",
+  "$GMSprite":"v2",
   "%Name":"spr_Knight_Blade_Shot",
   "bboxMode":0,
   "bbox_bottom":225,
@@ -12,7 +12,7 @@
   "edgeFiltering":false,
   "For3D":false,
   "frames":[
-    {"$GMSpriteFrame":"","%Name":"7c05bf4a-3743-4279-8e14-c15e78359db3","name":"7c05bf4a-3743-4279-8e14-c15e78359db3","resourceType":"GMSpriteFrame","resourceVersion":"2.0",},
+    {"$GMSpriteFrame":"v1","%Name":"7c05bf4a-3743-4279-8e14-c15e78359db3","name":"7c05bf4a-3743-4279-8e14-c15e78359db3","resourceType":"GMSpriteFrame","resourceVersion":"2.0",},
   ],
   "gridX":0,
   "gridY":0,

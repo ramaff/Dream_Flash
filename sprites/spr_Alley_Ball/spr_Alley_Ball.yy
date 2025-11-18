@@ -1,5 +1,5 @@
 {
-  "$GMSprite":"",
+  "$GMSprite":"v2",
   "%Name":"spr_Alley_Ball",
   "bboxMode":0,
   "bbox_bottom":221,
@@ -12,7 +12,7 @@
   "edgeFiltering":false,
   "For3D":false,
   "frames":[
-    {"$GMSpriteFrame":"","%Name":"9b1a9f83-1d7a-4bbe-959c-f299c3f8be6a","name":"9b1a9f83-1d7a-4bbe-959c-f299c3f8be6a","resourceType":"GMSpriteFrame","resourceVersion":"2.0",},
+    {"$GMSpriteFrame":"v1","%Name":"9b1a9f83-1d7a-4bbe-959c-f299c3f8be6a","name":"9b1a9f83-1d7a-4bbe-959c-f299c3f8be6a","resourceType":"GMSpriteFrame","resourceVersion":"2.0",},
   ],
   "gridX":0,
   "gridY":0,

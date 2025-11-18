@@ -1,5 +1,5 @@
 {
-  "$GMSprite":"",
+  "$GMSprite":"v2",
   "%Name":"spr_Throwing_Axe_Art",
   "bboxMode":0,
   "bbox_bottom":144,
@@ -12,7 +12,7 @@
   "edgeFiltering":false,
   "For3D":false,
   "frames":[
-    {"$GMSpriteFrame":"","%Name":"ceab5470-5810-40b4-bc5f-5010302dcf7e","name":"ceab5470-5810-40b4-bc5f-5010302dcf7e","resourceType":"GMSpriteFrame","resourceVersion":"2.0",},
+    {"$GMSpriteFrame":"v1","%Name":"ceab5470-5810-40b4-bc5f-5010302dcf7e","name":"ceab5470-5810-40b4-bc5f-5010302dcf7e","resourceType":"GMSpriteFrame","resourceVersion":"2.0",},
   ],
   "gridX":0,
   "gridY":0,

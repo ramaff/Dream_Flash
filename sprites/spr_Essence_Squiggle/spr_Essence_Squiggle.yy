@@ -1,5 +1,5 @@
 {
-  "$GMSprite":"",
+  "$GMSprite":"v2",
   "%Name":"spr_Essence_Squiggle",
   "bboxMode":0,
   "bbox_bottom":26,
@@ -12,7 +12,7 @@
   "edgeFiltering":false,
   "For3D":false,
   "frames":[
-    {"$GMSpriteFrame":"","%Name":"d5e937f0-50b7-4dec-9b1b-a80b988bfd00","name":"d5e937f0-50b7-4dec-9b1b-a80b988bfd00","resourceType":"GMSpriteFrame","resourceVersion":"2.0",},
+    {"$GMSpriteFrame":"v1","%Name":"d5e937f0-50b7-4dec-9b1b-a80b988bfd00","name":"d5e937f0-50b7-4dec-9b1b-a80b988bfd00","resourceType":"GMSpriteFrame","resourceVersion":"2.0",},
   ],
   "gridX":0,
   "gridY":0,

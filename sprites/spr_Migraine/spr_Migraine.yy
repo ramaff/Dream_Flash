@@ -1,5 +1,5 @@
 {
-  "$GMSprite":"",
+  "$GMSprite":"v2",
   "%Name":"spr_Migraine",
   "bboxMode":0,
   "bbox_bottom":355,
@@ -12,7 +12,7 @@
   "edgeFiltering":false,
   "For3D":false,
   "frames":[
-    {"$GMSpriteFrame":"","%Name":"10bb3a08-b1e0-4f50-ad95-3baaa25353bc","name":"10bb3a08-b1e0-4f50-ad95-3baaa25353bc","resourceType":"GMSpriteFrame","resourceVersion":"2.0",},
+    {"$GMSpriteFrame":"v1","%Name":"10bb3a08-b1e0-4f50-ad95-3baaa25353bc","name":"10bb3a08-b1e0-4f50-ad95-3baaa25353bc","resourceType":"GMSpriteFrame","resourceVersion":"2.0",},
   ],
   "gridX":0,
   "gridY":0,

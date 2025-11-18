@@ -1,5 +1,5 @@
 {
-  "$GMSprite":"",
+  "$GMSprite":"v2",
   "%Name":"bg_Title_Screen",
   "bboxMode":0,
   "bbox_bottom":554,
@@ -12,7 +12,7 @@
   "edgeFiltering":false,
   "For3D":false,
   "frames":[
-    {"$GMSpriteFrame":"","%Name":"c7b6c92b-8dba-4142-858e-124fc4f0a7b1","name":"c7b6c92b-8dba-4142-858e-124fc4f0a7b1","resourceType":"GMSpriteFrame","resourceVersion":"2.0",},
+    {"$GMSpriteFrame":"v1","%Name":"c7b6c92b-8dba-4142-858e-124fc4f0a7b1","name":"c7b6c92b-8dba-4142-858e-124fc4f0a7b1","resourceType":"GMSpriteFrame","resourceVersion":"2.0",},
   ],
   "gridX":0,
   "gridY":0,
