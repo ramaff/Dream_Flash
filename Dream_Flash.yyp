@@ -492,7 +492,10 @@
     {"$GMFolder":"","%Name":"Nightmare BGs","folderPath":"folders/Tile Sets/Nightmare BGs.yy","name":"Nightmare BGs","resourceType":"GMFolder","resourceVersion":"2.0",},
     {"$GMFolder":"","%Name":"Timelines","folderPath":"folders/Timelines.yy","name":"Timelines","resourceType":"GMFolder","resourceVersion":"2.0",},
   ],
-  "ForcedPrefabProjectReferences":[],
+  "ForcedPrefabProjectReferences":[
+    {"link":"io.gamemaker.gm_effect_glow-1.0.0","name":"io.gamemaker.gm_effect_glow-1.0.0","path":"io.gamemaker.gm_effect_glow-1.0.0.yyp",},
+    {"link":"io.gamemaker.gm_filter_vignette-1.0.0","name":"io.gamemaker.gm_filter_vignette-1.0.0","path":"io.gamemaker.gm_filter_vignette-1.0.0.yyp",},
+  ],
   "IncludedFiles":[
     {"$GMIncludedFile":"","%Name":"df_boss_stats.json","CopyToMask":-1,"filePath":"datafiles","name":"df_boss_stats.json","resourceType":"GMIncludedFile","resourceVersion":"2.0",},
     {"$GMIncludedFile":"","%Name":"df_item_stats.json","CopyToMask":3035426170322551022,"filePath":"datafiles","name":"df_item_stats.json","resourceType":"GMIncludedFile","resourceVersion":"2.0",},
@@ -503,7 +506,7 @@
   "isEcma":false,
   "LibraryEmitters":[],
   "MetaData":{
-    "IDEVersion":"2024.14.0.207",
+    "IDEVersion":"2024.14.1.210",
   },
   "name":"Dream_Flash",
   "resources":[

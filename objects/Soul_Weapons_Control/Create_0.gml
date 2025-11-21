@@ -9,7 +9,7 @@ weapon[0].weapon_id = 1;
 
 weapon_slot_info = []
 
-angular_rotation = 2;
+angular_rotation = 0;
 check_time = 0;
 
 weapon_slot_info = scr_Weapon_Slot_Info_Update(weapon_slot_info)	

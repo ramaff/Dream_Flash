@@ -98,7 +98,9 @@ if cMus {
 }
 
 
-if (audio_sound_get_gain(previousMusic) <= 0) {
-    audio_stop_sound(previousMusic);
+if previousMusic != noone {
+	if (audio_sound_get_gain(previousMusic) <= 0) {
+		audio_stop_sound(previousMusic);
+	}
 }
 
