@@ -55,21 +55,21 @@ if instance_exists(obj_Soul_Parent) {
 	var yAv = 0;
 	
 	if global.cameramode = "Soul" {
-		var xAv = mean(obj_Soul_Parent.x * 4,room_width / 2,mouse_x) / 2;
-		var yAv = mean(obj_Soul_Parent.y * 4,room_height / 2,mouse_y) / 2;
+		var xAv = mean(obj_Soul_Parent.x * 4,room_width / 2,obj_Astral_Indicator.x) / 2;
+		var yAv = mean(obj_Soul_Parent.y * 4,room_height / 2,obj_Astral_Indicator.y) / 2;
 	
 		if instance_exists(obj_Wall_Of_Thoughts) {
 			if obj_Wall_Of_Thoughts.state = states.normal || obj_Wall_Of_Thoughts.state = states.jumping {
-				var xAv = mean(obj_Soul_Parent.x * 3,obj_Wall_Of_Thoughts.x * 2,mouse_x) / 2;
-				var yAv = mean(obj_Soul_Parent.y * 3,obj_Wall_Of_Thoughts.y * 2,mouse_y) / 2;
+				var xAv = mean(obj_Soul_Parent.x * 3,obj_Wall_Of_Thoughts.x * 2,obj_Astral_Indicator.x) / 2;
+				var yAv = mean(obj_Soul_Parent.y * 3,obj_Wall_Of_Thoughts.y * 2,obj_Astral_Indicator.y) / 2;
 			}
 		}
 	}
 	if global.cameramode = "Boss" {
 		
 		var totalaveragers = 9;
-		var xTote = (obj_Soul_Parent.x * 6) + (mouse_x * 1.5) + (room_width / 2 * 1.5);
-		var yTote = (obj_Soul_Parent.y * 6) + (mouse_y * 1.5) + (room_height / 2 * 1.5);
+		var xTote = (obj_Soul_Parent.x * 6) + (obj_Astral_Indicator.x * 1.5) + (room_width / 2 * 1.5);
+		var yTote = (obj_Soul_Parent.y * 6) + (obj_Astral_Indicator.y * 1.5) + (room_height / 2 * 1.5);
 
 		with (obj_Main_Boss_Parent) {
 			if state = states.normal || state = states.jumping {

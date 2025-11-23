@@ -18,7 +18,10 @@ if soulDeathFadeSpeed = 0 {
 if InputCheck(INPUT_VERB.SHOOT ) {
 	event_user(0)	
 }
-if InputCheck(INPUT_VERB.WARP ) {
+if InputReleased(INPUT_VERB.SHOOT ) {
+	event_user(2)	
+}
+if InputPressed(INPUT_VERB.WARP ) {
 	event_user(2)	
 }
 

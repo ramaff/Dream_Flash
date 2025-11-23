@@ -2,3 +2,4 @@
 // You can write your code in this editor
 
 
+scr_Item_Click(stacks);

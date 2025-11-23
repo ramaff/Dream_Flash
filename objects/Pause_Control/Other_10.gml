@@ -10,6 +10,7 @@ if global.layerdeep < 2 and global.doneLoading = 1 and global.doneTransitioning 
 		scr_Collect_Income();
         instance_deactivate_all(true);
         instance_activate_object(Control_Parent);
+		instance_activate_object(__InputUpdateController)
         scr_Pause_Main_Spawn();
     } else {
         pause = 0;

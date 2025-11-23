@@ -1,1 +1,1 @@
-scr_Item_Click(stacks);
+event_user(0)

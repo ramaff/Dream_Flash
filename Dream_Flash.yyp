@@ -571,7 +571,6 @@
     {"id":{"name":"notes","path":"notes/notes/notes.yy",},},
     {"id":{"name":"__InputUpdateController","path":"objects/__InputUpdateController/__InputUpdateController.yy",},},
     {"id":{"name":"Boss_Room_Start_Control","path":"objects/Boss_Room_Start_Control/Boss_Room_Start_Control.yy",},},
-    {"id":{"name":"Camera_Control_old","path":"objects/Camera_Control_old/Camera_Control_old.yy",},},
     {"id":{"name":"Camera_Control","path":"objects/Camera_Control/Camera_Control.yy",},},
     {"id":{"name":"Chapter_Change_Control","path":"objects/Chapter_Change_Control/Chapter_Change_Control.yy",},},
     {"id":{"name":"Control_Parent","path":"objects/Control_Parent/Control_Parent.yy",},},

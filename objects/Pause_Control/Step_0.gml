@@ -1,5 +1,5 @@
 
-if InputCheck(INPUT_VERB.PAUSE ) {
+if InputPressed(INPUT_VERB.PAUSE ) {
 	event_user(0)	
 }
 
