@@ -16,4 +16,6 @@ if global.gameFullscreen = 1 {
 
 scr_Game_Zoom(global.gameResolutionY / 540)
 
+window_center();
+
 room_speed = 60;
