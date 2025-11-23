@@ -2,8 +2,8 @@
 // https://help.yoyogames.com/hc/en-us/articles/360005277377 for more information
 function scr_Key_Press_Movement(_vspeed = 0, _hspeed = 0, _max_speed = 5, _acceleration = 1, _friction = 0.2, _hard_cap = true){
 
-	var dx = keyboard_check(ord(global.gameMoveRight)) - keyboard_check(ord(global.gameMoveLeft));
-	var dy = keyboard_check(ord(global.gameMoveDown)) - keyboard_check(ord(global.gameMoveUp));
+	var dx = InputCheck(INPUT_VERB.RIGHT ) - InputCheck(INPUT_VERB.LEFT );
+	var dy = InputCheck(INPUT_VERB.DOWN ) - InputCheck(INPUT_VERB.UP );
 	
 	var distance_per_step = sqrt(dx*dx + dy*dy);
 	

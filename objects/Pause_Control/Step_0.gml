@@ -1,16 +1,8 @@
-if global.gameFocusPause = 0 {
 
-    exit;
-    
-    if !window_has_focus() {
-        instance_destroy(obj_Light_Control);
-    }
-    if window_has_focus() and !instance_exists(obj_Light_Control) {
-        instance_create(x,y,obj_Light_Control);
-    }
-
-    exit;
+if InputCheck(INPUT_VERB.PAUSE ) {
+	event_user(0)	
 }
+
 
 if instance_exists(obj_Fade) {
 	exit;	

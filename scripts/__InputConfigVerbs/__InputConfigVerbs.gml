@@ -12,6 +12,12 @@ function __InputConfigVerbs()
         ACTION,
         SPECIAL,
         PAUSE,
+		SHOOT,
+		WARP,
+		AS_UP,
+        AS_DOWN,
+        AS_LEFT,
+        AS_RIGHT,
     }
     
     enum INPUT_CLUSTER
@@ -31,7 +37,13 @@ function __InputConfigVerbs()
         InputDefineVerb(INPUT_VERB.CANCEL,  "cancel",      vk_backspace,        gp_face2);
         InputDefineVerb(INPUT_VERB.ACTION,  "action",      vk_enter,            gp_face3);
         InputDefineVerb(INPUT_VERB.SPECIAL, "special",     vk_shift,            gp_face4);
-        InputDefineVerb(INPUT_VERB.PAUSE,   "pause",       vk_escape,           gp_start);
+        InputDefineVerb(INPUT_VERB.PAUSE,   "pause",      [vk_escape, "P"],           gp_start);
+        InputDefineVerb(INPUT_VERB.SHOOT,   "shoot",       undefined,           gp_shoulderl);
+        InputDefineVerb(INPUT_VERB.WARP,    "warp",       undefined,           gp_shoulderr);
+		InputDefineVerb(INPUT_VERB.AS_UP,      "up",         undefined,    -gp_axisrv);
+        InputDefineVerb(INPUT_VERB.AS_DOWN,    "down",       undefined,    gp_axisrv);
+        InputDefineVerb(INPUT_VERB.AS_LEFT,    "left",       undefined,    -gp_axisrh);
+        InputDefineVerb(INPUT_VERB.AS_RIGHT,   "right",      undefined,    gp_axisrh);
     }
     else //Flip A/B over on Switch
     {

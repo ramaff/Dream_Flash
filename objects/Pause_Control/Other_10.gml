@@ -1,3 +1,7 @@
+/// @description Insert description here
+// You can write your code in this editor
+
+
 if global.layerdeep < 2 and global.doneLoading = 1 and global.doneTransitioning = 1 {
     if (!pause) {
         instance_destroy(obj_Light_Control);
@@ -16,5 +20,4 @@ if global.layerdeep < 2 and global.doneLoading = 1 and global.doneTransitioning 
         instance_create(x,y,obj_Light_Control);
     }
 }
-
 
