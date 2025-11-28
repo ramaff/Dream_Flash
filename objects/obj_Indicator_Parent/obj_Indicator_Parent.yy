@@ -1,23 +1,19 @@
 {
   "$GMObject":"",
-  "%Name":"obj_Dream_Cursor",
+  "%Name":"obj_Indicator_Parent",
   "eventList":[
     {"$GMEvent":"v1","%Name":"","collisionObjectId":null,"eventNum":0,"eventType":8,"isDnD":false,"name":"","resourceType":"GMEvent","resourceVersion":"2.0",},
     {"$GMEvent":"v1","%Name":"","collisionObjectId":null,"eventNum":0,"eventType":3,"isDnD":false,"name":"","resourceType":"GMEvent","resourceVersion":"2.0",},
     {"$GMEvent":"v1","%Name":"","collisionObjectId":null,"eventNum":0,"eventType":0,"isDnD":false,"name":"","resourceType":"GMEvent","resourceVersion":"2.0",},
-    {"$GMEvent":"v1","%Name":"","collisionObjectId":null,"eventNum":10,"eventType":7,"isDnD":false,"name":"","resourceType":"GMEvent","resourceVersion":"2.0",},
   ],
   "managed":true,
-  "name":"obj_Dream_Cursor",
+  "name":"obj_Indicator_Parent",
   "overriddenProperties":[],
   "parent":{
     "name":"Indicators",
     "path":"folders/Objects/Game UI/Indicators.yy",
   },
-  "parentObjectId":{
-    "name":"obj_Indicator_Parent",
-    "path":"objects/obj_Indicator_Parent/obj_Indicator_Parent.yy",
-  },
+  "parentObjectId":null,
   "persistent":false,
   "physicsAngularDamping":0.1,
   "physicsDensity":0.5,

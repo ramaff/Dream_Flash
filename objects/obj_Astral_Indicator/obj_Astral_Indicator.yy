@@ -13,7 +13,10 @@
     "name":"Indicators",
     "path":"folders/Objects/Game UI/Indicators.yy",
   },
-  "parentObjectId":null,
+  "parentObjectId":{
+    "name":"obj_Indicator_Parent",
+    "path":"objects/obj_Indicator_Parent/obj_Indicator_Parent.yy",
+  },
   "persistent":false,
   "physicsAngularDamping":0.1,
   "physicsDensity":0.5,

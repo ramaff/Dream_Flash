@@ -19,10 +19,10 @@ if InputCheck(INPUT_VERB.SHOOT ) {
 	event_user(0)	
 }
 if InputReleased(INPUT_VERB.SHOOT ) {
-	event_user(2)	
+	event_user(1)	
 }
 if InputPressed(INPUT_VERB.WARP ) {
-	event_user(2)	
+	event_user(2)
 }
 
 scr_Soul_Status_Step();

@@ -422,7 +422,7 @@
         "Snake_Credit": 0.5
     },
     "E07": {
-        "recollectionString": "Recursive Thinking",
+        "recollectionString": "Cross My Mind",
         "recollectionSprite": "spr_Space_Bender_Item",
         "recollectionExtraStats": "+Looping Projectiles",
         "recollectionDescription": "Projectiles can loop back around to the other side of the field when going past the border.",

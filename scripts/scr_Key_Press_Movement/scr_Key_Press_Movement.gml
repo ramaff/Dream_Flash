@@ -2,8 +2,8 @@
 // https://help.yoyogames.com/hc/en-us/articles/360005277377 for more information
 function scr_Key_Press_Movement(_vspeed = 0, _hspeed = 0, _max_speed = 5, _acceleration = 1, _friction = 0.2, _hard_cap = true){
 
-	var dx = InputCheck(INPUT_VERB.RIGHT ) - InputCheck(INPUT_VERB.LEFT );
-	var dy = InputCheck(INPUT_VERB.DOWN ) - InputCheck(INPUT_VERB.UP );
+	var dx = InputValue(INPUT_VERB.RIGHT ) - InputValue(INPUT_VERB.LEFT );
+	var dy = InputValue(INPUT_VERB.DOWN ) - InputValue(INPUT_VERB.UP );
 	
 	var distance_per_step = sqrt(dx*dx + dy*dy);
 	
@@ -20,8 +20,8 @@ function scr_Key_Press_Movement(_vspeed = 0, _hspeed = 0, _max_speed = 5, _accel
 	
 	var _current_direction = point_direction(0,0, _hspeed, _vspeed);
 	
-	var _max_hspeed = abs(lengthdir_x(_max_speed, _current_direction))
-	var _max_vspeed = abs(lengthdir_y(_max_speed, _current_direction))
+	var _max_hspeed = abs(lengthdir_x(_max_speed, _current_direction)) * distance_per_step
+	var _max_vspeed = abs(lengthdir_y(_max_speed, _current_direction)) * distance_per_step
 	
 	var _h_reduce = (_max_hspeed / _max_speed) * _friction
 	var _v_reduce = (_max_vspeed / _max_speed) * _friction

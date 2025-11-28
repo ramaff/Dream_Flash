@@ -1,27 +1,8 @@
 /// @description Insert description here
 // You can write your code in this editor
 
-movement_delay--;
-
-if movement_delay <= 0 {
-	if InputCheck(INPUT_VERB.DOWN) || InputCheck(INPUT_VERB.UP) {
-		event_user(0)
-		movement_delay = 15;
-	}
-}
-
-
-
-if InputDeviceGetAnyActive() {
-	controller_movement++;	
-}
-
-if !InputMouseMoved() and controller_movement > 0 {
-	
-	//image_alpha = 0;
+if !InputMouseMoved() {
 	stop_following_mouse++;
-
-	
 	var dx = InputValue(INPUT_VERB.AS_RIGHT ) - InputValue(INPUT_VERB.AS_LEFT );
 	var dy = InputValue(INPUT_VERB.AS_DOWN ) - InputValue(INPUT_VERB.AS_UP );
 
@@ -54,19 +35,13 @@ if !InputMouseMoved() and controller_movement > 0 {
 	y = clamp(y, _cur_y, _cur_y + winy);
 	
 } else {
-	stop_following_mouse = 0;
-	controller_movement = 0;
-	image_alpha = 1;
+	stop_following_mouse = 0;	
 }
 
-if stop_following_mouse < 1 {
+if stop_following_mouse < 15 {
 
 	if window_has_focus() {
 	    x = mouse_x;
 	    y = mouse_y;
 	}
-}
-/*
-if stop_following_mouse = 0 {
-	controller_movement = 0;	
 }

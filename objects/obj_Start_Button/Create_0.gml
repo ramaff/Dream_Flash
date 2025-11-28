@@ -1,6 +1,8 @@
 image_index = 0;
 image_speed = 0;
 
+event_inherited()
+
 scr_Load();
 
 global.loadrun = 0;
