@@ -4,10 +4,7 @@
 movement_delay--;
 
 if movement_delay <= 0 {
-	if InputCheck(INPUT_VERB.DOWN) || InputCheck(INPUT_VERB.UP) {
-		event_user(0)
-		movement_delay = 15;
-	}
+	event_user(0);
 }
 
 
