@@ -13,12 +13,16 @@ if instance_exists(target_button) {
 
 if InputCheck(INPUT_VERB.DOWN) {
 	_yy += 1;
+	_xx -= 1;
 } else if InputCheck(INPUT_VERB.UP) {
 	_yy -= 1;
+	_xx -= 1;
 } else if InputCheck(INPUT_VERB.RIGHT) {
 	_xx += 1;
+	_yy -= 1;
 } else if InputCheck(INPUT_VERB.LEFT) {
 	_xx -= 1;
+	_yy -= 1;
 } else {
 	_direction = false;
 	exit;
@@ -28,22 +32,14 @@ movement_delay = 15;
 
 var _tar_button = target_button;
 var _og_button = target_button;
-var _closest_dist = 9999;
 
 if instance_exists(obj_Menu_Button_Parent) and _direction == true {
-	with (obj_Menu_Button_Parent) {
-		if id != _og_button {
-			var _dist = point_distance(x, y, _xx, _yy)	
-			if _dist < _closest_dist and x != _xx and y != _yy {
-				_tar_button = id;
-				_closest_dist = _dist
-			}
-		}
-	}
-	target_button = _tar_button;
+	event_user(1)
+} else {
+	exit;	
 }
 
-if _tar_button == _og_button {
+if _tar_button == target_button {
 	target_button = noone;
 	
 	if InputCheck(INPUT_VERB.DOWN) {
@@ -61,7 +57,7 @@ if _tar_button == _og_button {
 		x += 1280
 	}
 	
-	event_user(0)
+	event_user(1)
 	exit;
 }
 

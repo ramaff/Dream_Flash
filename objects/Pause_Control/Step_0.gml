@@ -17,6 +17,7 @@ if !window_has_focus() {
 			scr_Collect_Income();
             instance_deactivate_all(true);
             instance_activate_object(Control_Parent);
+			instance_activate_object(__InputUpdateController)
             scr_Pause_Main_Spawn();
         }
     }
