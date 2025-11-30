@@ -1,4 +1,4 @@
-instance_create(mouse_x,mouse_y,obj_Dream_Cursor);
+
 
 scr_Settings_Status_Store();
 

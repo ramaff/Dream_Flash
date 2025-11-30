@@ -29,3 +29,9 @@ function InputDeviceGetAnyActive()
     
     return false;
 }
+
+menu_grid = [];
+xx = 0;
+yy = 0;
+max_x = 0;
+max_y = 0;
