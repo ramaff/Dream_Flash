@@ -23,4 +23,7 @@ with (_cursor) {
 	
 	max_x = 0;
 	max_y = 3;
+	
+	target_button = _start;
+	event_user(1);
 }

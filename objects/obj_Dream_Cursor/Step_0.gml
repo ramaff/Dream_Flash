@@ -7,10 +7,16 @@ if movement_delay <= 0 {
 	event_user(0);
 }
 
-
-
 if InputDeviceGetAnyActive() {
 	controller_movement++;	
+}
+
+if InputReleased(INPUT_VERB.ACCEPT) {
+	if instance_exists(target_button) {
+		with(target_button) {
+			event_perform(ev_mouse, ev_left_release)	
+		}
+	}
 }
 
 if !InputMouseMoved() and controller_movement > 0 {

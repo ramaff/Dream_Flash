@@ -39,11 +39,9 @@ target_button = menu_grid[xx][yy];
 if instance_exists(target_button) {
 	x = target_button.x;
 	y = target_button.y;
-	with (target_button) {
-		event_user(0);	
-	}
+	event_user(1);
 }
-if instance_exists(_og_button) {
+if instance_exists(_og_button) and _og_button != target_button {
 	with (_og_button) {
 		event_user(1);	
 	}
