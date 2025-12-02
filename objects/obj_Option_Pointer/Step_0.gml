@@ -9,14 +9,6 @@ if awaitinput = 1 {
 	var ke = keyboard_key;
 	var input = scr_String_Keycheck(ke);
 	
-	/*
-	var mo = mouse_lastbutton;
-	
-	if mo != 0 {
-		input = mo;	
-	}
-	*/
-	
 	if keyboard_key != 0 {
 		if type = 1 {
 			global.gameMoveLeft = input;	
