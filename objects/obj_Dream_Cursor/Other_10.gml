@@ -36,6 +36,12 @@ if yy < 0 {
 
 target_button = menu_grid[xx][yy];
 
+if instance_exists(_og_button) {
+	with (_og_button) {
+		event_user(1);	
+	}
+}
+
 if instance_exists(target_button) {
 	if target_button.object_index == obj_Option_Button {
 		var _type = target_button.type
@@ -66,9 +72,10 @@ if instance_exists(target_button) {
 	y = target_button.y;
 	event_user(1);
 }
+/*
 if instance_exists(_og_button) and _og_button != target_button {
 	with (_og_button) {
 		event_user(1);	
 	}
-}
+} */
 

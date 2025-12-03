@@ -1,10 +1,11 @@
 /// @description Insert description here
 // You can write your code in this editor
+
 if global.layerdeep = 2 {
     scr_Pause_Main_Leave();
     scr_Save_Options();
+	
     var _cursor = instance_create(mouse_x,mouse_y,obj_Dream_Cursor);
-
 	var _menu_grid = True_Start_Control.menu_grid
 	
 	with (obj_Menu_Button_Parent) {
@@ -23,4 +24,5 @@ if global.layerdeep = 2 {
 	
     global.layerdeep = 1
 }
+
 
