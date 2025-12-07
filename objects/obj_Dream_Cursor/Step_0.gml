@@ -60,6 +60,7 @@ if !InputMouseMoved() and controller_movement > 0 {
 	stop_following_mouse = 0;
 	controller_movement = 0;
 	image_alpha = 1;
+	
 }
 
 if stop_following_mouse < 1 {
@@ -68,6 +69,9 @@ if stop_following_mouse < 1 {
 	    x = mouse_x;
 	    y = mouse_y;
 	}
+} else {
+	x = -64;
+	y = -64;	
 }
 /*
 if stop_following_mouse = 0 {

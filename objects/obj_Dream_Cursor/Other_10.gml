@@ -68,8 +68,8 @@ if instance_exists(target_button) {
 			}
 		}
 	}
-	x = target_button.x;
-	y = target_button.y;
+	//x = target_button.x;
+	//y = target_button.y;
 	event_user(1);
 }
 /*

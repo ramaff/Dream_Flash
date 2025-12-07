@@ -9,6 +9,8 @@ controller_movement = 0;
 
 if InputDeviceGetAnyGamepadConnected() {
 	stop_following_mouse = 1;	
+	x = -64;
+	y = -64;	
 }
 
 movement_delay = 0;
