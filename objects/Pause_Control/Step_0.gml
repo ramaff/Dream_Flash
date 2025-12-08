@@ -1,5 +1,5 @@
 
-if InputPressed(INPUT_VERB.PAUSE ) {
+if InputReleased(INPUT_VERB.PAUSE) || InputReleased(INPUT_VERB.CANCEL) {
 	event_user(0)	
 }
 
