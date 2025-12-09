@@ -50,8 +50,8 @@ if !InputMouseMoved() and controller_movement > 0 {
 	
 	var _cur_x = camera_get_view_x(view) + 5;
 	var _cur_y = camera_get_view_y(view) + 5;
-	var winx = /*camcon.window_scale * camcon.view_zoom **/ camera_get_view_width(view) - 10;
-	var winy = /*camcon.window_scale * camcon.view_zoom **/ camera_get_view_height(view) - 10;
+	var winx = camera_get_view_width(view) - 10;
+	var winy = camera_get_view_height(view) - 10;
 	
 	x = clamp(x, _cur_x, _cur_x + winx);
 	y = clamp(y, _cur_y, _cur_y + winy);
@@ -60,6 +60,9 @@ if !InputMouseMoved() and controller_movement > 0 {
 	stop_following_mouse = 0;
 	controller_movement = 0;
 	image_alpha = 1;
+	with (obj_Pause_Menu_Butt) {
+		event_user(1)	
+	}
 	
 }
 

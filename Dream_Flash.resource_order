@@ -1060,6 +1060,7 @@
     {"name":"scr_set_bullet_size","order":2,"path":"scripts/scr_set_bullet_size/scr_set_bullet_size.yy",},
     {"name":"scr_Set_Soul_Step_After_Scripts","order":1,"path":"scripts/scr_Set_Soul_Step_After_Scripts/scr_Set_Soul_Step_After_Scripts.yy",},
     {"name":"scr_Set_Soul_Step_Before_Scripts","order":2,"path":"scripts/scr_Set_Soul_Step_Before_Scripts/scr_Set_Soul_Step_Before_Scripts.yy",},
+    {"name":"scr_Settings_Menu_Cursor_Setup","order":2,"path":"scripts/scr_Settings_Menu_Cursor_Setup/scr_Settings_Menu_Cursor_Setup.yy",},
     {"name":"scr_setup_damage_text","order":1,"path":"scripts/scr_setup_damage_text/scr_setup_damage_text.yy",},
     {"name":"scr_Setup_Default_Weapon_Stats","order":1,"path":"scripts/scr_Setup_Default_Weapon_Stats/scr_Setup_Default_Weapon_Stats.yy",},
     {"name":"scr_setup_dmg_indicator","order":2,"path":"scripts/scr_setup_dmg_indicator/scr_setup_dmg_indicator.yy",},

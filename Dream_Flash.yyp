@@ -2317,6 +2317,7 @@
     {"id":{"name":"scr_Set_Soul_Scripts","path":"scripts/scr_Set_Soul_Scripts/scr_Set_Soul_Scripts.yy",},},
     {"id":{"name":"scr_Set_Soul_Step_After_Scripts","path":"scripts/scr_Set_Soul_Step_After_Scripts/scr_Set_Soul_Step_After_Scripts.yy",},},
     {"id":{"name":"scr_Set_Soul_Step_Before_Scripts","path":"scripts/scr_Set_Soul_Step_Before_Scripts/scr_Set_Soul_Step_Before_Scripts.yy",},},
+    {"id":{"name":"scr_Settings_Menu_Cursor_Setup","path":"scripts/scr_Settings_Menu_Cursor_Setup/scr_Settings_Menu_Cursor_Setup.yy",},},
     {"id":{"name":"scr_Settings_Status_Store","path":"scripts/scr_Settings_Status_Store/scr_Settings_Status_Store.yy",},},
     {"id":{"name":"scr_Setup_Charge_Stats","path":"scripts/scr_Setup_Charge_Stats/scr_Setup_Charge_Stats.yy",},},
     {"id":{"name":"scr_setup_damage_text","path":"scripts/scr_setup_damage_text/scr_setup_damage_text.yy",},},

@@ -6,12 +6,14 @@ if global.layerdeep = 2 {
     
     global.layerdeep = 3;
 	
+	//scr_Pause_Main_Leave();
+	
+	instance_destroy(obj_Dream_Cursor)
+	
 	var i;
 	var _max_i = 0
 	var _cursor = noone;
-	with (obj_Dream_Cursor) {
-		_cursor = id;	
-	}
+	_cursor = instance_create_depth(x, y, depth - 100, obj_Dream_Cursor)
 	_cursor.menu_grid = []
     
     if category = 1 {
