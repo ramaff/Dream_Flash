@@ -5,6 +5,10 @@
 var _direction = true
 var _og_button = target_button
 
+if array_length(menu_grid) <= 0 {
+	exit;	
+}
+
 if InputCheck(INPUT_VERB.DOWN) {
 	yy += 1;
 } else if InputCheck(INPUT_VERB.UP) {

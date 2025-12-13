@@ -63,6 +63,9 @@ array_sort(_state_ids, true)
 var _i = 0
 var _j = 0
 
+instance_destroy(obj_Dream_Cursor)
+var _cursor = instance_create(mouse_x,mouse_y,obj_Dream_Cursor);
+
 if global.recollectCategory = "Weapons" {
     for(_i = 0; _i < (numOfButts / 3); _i++) {
         for(_j = 0; _j < 3; _j++) {
@@ -77,12 +80,25 @@ if global.recollectCategory = "Weapons" {
                 //itemVal = _weapon_ids[_index]
 				itemVal = scr_Recollection_Panel_Assign(_weapon_ids, _index);
 				scr_Assign_Memory();
+				
+				_cursor.menu_grid[_j, _i] = id;
             }
         }
     }
 	if cat = 1 {
 		selected = true;	
 	} 
+}
+
+with (_cursor) {
+	
+	max_x = 2;
+	max_y = floor(other.numOfButts / 3) - 1;
+			
+	xx = 0;
+	yy = 0;
+	target_button = menu_grid[0, 0];
+	event_user(1);
 }
 
 if global.recollectCategory = "Items" {

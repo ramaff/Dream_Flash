@@ -103,6 +103,10 @@ if image_alpha != 0 {
 	}
 }
 
+if global.recollectDisplayValue = itemVal {
+	draw_sprite_ext(sprite_index,image_index,x,y,0.5,0.5,scr_Wave(-90, 90, 4, 0),c_white,1);
+}
+
 image_xscale = 0.5;
 image_yscale = 0.5;
 

@@ -1629,6 +1629,7 @@
     {"name":"spr_Scroll_Bar","order":23,"path":"sprites/spr_Scroll_Bar/spr_Scroll_Bar.yy",},
     {"name":"spr_Scroll_Star","order":22,"path":"sprites/spr_Scroll_Star/spr_Scroll_Star.yy",},
     {"name":"spr_Seething_Fire_Shot","order":39,"path":"sprites/spr_Seething_Fire_Shot/spr_Seething_Fire_Shot.yy",},
+    {"name":"spr_Selected_Item_Border","order":2,"path":"sprites/spr_Selected_Item_Border/spr_Selected_Item_Border.yy",},
     {"name":"spr_Settings_Butts_On","order":2,"path":"sprites/spr_Settings_Butts_On/spr_Settings_Butts_On.yy",},
     {"name":"spr_shop_g","order":14,"path":"sprites/spr_shop_g/spr_shop_g.yy",},
     {"name":"spr_shop_tutorial","order":7,"path":"sprites/spr_shop_tutorial/spr_shop_tutorial.yy",},

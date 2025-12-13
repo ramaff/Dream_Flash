@@ -552,7 +552,7 @@
   "isEcma":false,
   "LibraryEmitters":[],
   "MetaData":{
-    "IDEVersion":"2024.14.1.210",
+    "IDEVersion":"2024.14.2.212",
   },
   "name":"Dream_Flash",
   "resources":[
@@ -4687,6 +4687,7 @@
     {"id":{"name":"spr_Seethe_Art","path":"sprites/spr_Seethe_Art/spr_Seethe_Art.yy",},},
     {"id":{"name":"spr_Seething_Fire_Shot","path":"sprites/spr_Seething_Fire_Shot/spr_Seething_Fire_Shot.yy",},},
     {"id":{"name":"spr_Seething_Heart","path":"sprites/spr_Seething_Heart/spr_Seething_Heart.yy",},},
+    {"id":{"name":"spr_Selected_Item_Border","path":"sprites/spr_Selected_Item_Border/spr_Selected_Item_Border.yy",},},
     {"id":{"name":"spr_Self_Awareness_Art","path":"sprites/spr_Self_Awareness_Art/spr_Self_Awareness_Art.yy",},},
     {"id":{"name":"spr_Self_Control_Item","path":"sprites/spr_Self_Control_Item/spr_Self_Control_Item.yy",},},
     {"id":{"name":"spr_Self_Discovery_Item","path":"sprites/spr_Self_Discovery_Item/spr_Self_Discovery_Item.yy",},},

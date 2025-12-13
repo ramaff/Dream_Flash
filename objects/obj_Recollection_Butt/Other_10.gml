@@ -1,3 +1,5 @@
+/// @description Insert description here
+// You can write your code in this editor
 if image_alpha != 0 {
     global.recollectDisplayValue = itemVal;
     instance_destroy(obj_Recollection_Info_Butt);
