@@ -90,17 +90,6 @@ if global.recollectCategory = "Weapons" {
 	} 
 }
 
-with (_cursor) {
-	
-	max_x = 2;
-	max_y = floor(other.numOfButts / 3) - 1;
-			
-	xx = 0;
-	yy = 0;
-	target_button = menu_grid[0, 0];
-	event_user(1);
-}
-
 if global.recollectCategory = "Items" {
     for(_i = 0; _i < (numOfButts / 3); _i++) {
         for(_j = 0; _j < 3; _j++) {
@@ -114,6 +103,8 @@ if global.recollectCategory = "Items" {
 				itemVal = scr_Recollection_Panel_Assign(_item_ids, _index);
 	            //scr_Recollection_Panel_Assign();
 				scr_Assign_Memory();
+				
+				_cursor.menu_grid[_j, _i] = id;
 	        }
         }
     }
@@ -132,6 +123,8 @@ if global.recollectCategory = "Bosses" {
 			sprite_index = spr_Boss_Border;
             itemVal = scr_Recollection_Panel_Assign(_boss_ids, _i);
 			scr_Assign_Memory();
+			
+			_cursor.menu_grid[0, _i] = id;
         }
     }
 	if cat = 3 {
@@ -148,6 +141,8 @@ if global.recollectCategory = "State" {
             sprite_index = spr_Boss_Border;
             itemVal = scr_Recollection_Panel_Assign(_state_ids, _i);
 			scr_Assign_Memory();
+			
+			_cursor.menu_grid[0, _i] = id;
         }
     }
 	if cat = 4 {
@@ -164,11 +159,30 @@ if global.recollectCategory = "Information" {
             sprite_index = spr_Boss_Border;
             itemVal = scr_Recollection_Panel_Assign([], _i);
 			scr_Assign_Memory();
+			
+			_cursor.menu_grid[0, _i] = id;
         }
     }
 	if cat = 5 {
 		selected = true;	
 	} 
+}
+
+with (_cursor) {
+	
+	if global.recollectCategory == "Items" || global.recollectCategory == "Weapons" {
+	
+		max_x = 2;
+		max_y = floor(other.numOfButts / 3) - 1;
+	} else {
+		max_x = 0;
+		max_y = other.numOfButts - 1;
+	}
+			
+	xx = 0;
+	yy = 0;
+	target_button = menu_grid[0, 0];
+	event_user(1);
 }
 
 if !instance_exists(obj_Recollection_Scroll_Bar) {

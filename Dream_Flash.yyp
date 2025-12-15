@@ -2309,6 +2309,7 @@
     {"id":{"name":"scr_Save","path":"scripts/scr_Save/scr_Save.yy",},},
     {"id":{"name":"scr_Screen_Flash","path":"scripts/scr_Screen_Flash/scr_Screen_Flash.yy",},},
     {"id":{"name":"scr_Screen_Shake","path":"scripts/scr_Screen_Shake/scr_Screen_Shake.yy",},},
+    {"id":{"name":"scr_Scroll_Reco_Menu","path":"scripts/scr_Scroll_Reco_Menu/scr_Scroll_Reco_Menu.yy",},},
     {"id":{"name":"scr_Scrub_Soul_Slip","path":"scripts/scr_Scrub_Soul_Slip/scr_Scrub_Soul_Slip.yy",},},
     {"id":{"name":"scr_Scrub_Soul_Teleport_Use","path":"scripts/scr_Scrub_Soul_Teleport_Use/scr_Scrub_Soul_Teleport_Use.yy",},},
     {"id":{"name":"scr_Scrub_Soul_Teleport","path":"scripts/scr_Scrub_Soul_Teleport/scr_Scrub_Soul_Teleport.yy",},},

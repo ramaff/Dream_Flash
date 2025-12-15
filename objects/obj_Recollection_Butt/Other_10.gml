@@ -3,7 +3,7 @@
 if image_alpha != 0 {
     global.recollectDisplayValue = itemVal;
     instance_destroy(obj_Recollection_Info_Butt);
-    
+	
     with instance_create(camera_get_view_x(view) + 720,camera_get_view_y(view) + 320,obj_Recollection_Info_Butt) {
 		depth = other.depth;
 	

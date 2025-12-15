@@ -1,6 +1,8 @@
 global.recollectCategory = 0;
 global.recollectValue = 0;
 global.recollectDisplayValue = 0;
+
+global.scrollperc = 0;
 var categoryNum = 4;
 
 if scr_State_Recollection_Unlocked() {
