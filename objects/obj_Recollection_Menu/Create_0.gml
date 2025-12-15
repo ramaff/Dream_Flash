@@ -19,3 +19,4 @@ with instance_create(camera_get_view_x(view),camera_get_view_y(view), obj_Recoll
 	depth = -1;	
 }
 
+selected_cat = 0;

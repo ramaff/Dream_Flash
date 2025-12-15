@@ -1,5 +1,5 @@
-
-
+/// @description Insert description here
+// You can write your code in this editor
 instance_destroy();
 
 scr_Pause_Main_Leave();
