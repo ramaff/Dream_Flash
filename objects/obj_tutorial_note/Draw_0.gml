@@ -25,6 +25,11 @@ if InputDeviceGetAnyGamepadConnected() {
 
 if current_page > 1 {
 	draw_sprite_ext(spr_Tutorial_Arrow,0,x-256+_back_xx,y+112,-1,-1,0,c_white,note_alpha);
+	
+	if InputDeviceGetAnyGamepadConnected() {
+		draw_sprite_ext(spr_Controller_Cancel_Icon, scr_Wave(0, 1.9, 1, 0), x - 260, y + 60, 0.5, 0.5, 0, c_black, 1)
+		draw_text_colour(x - 255, y + 80, "back", c_black, c_black, c_black, c_black, 1)
+	}
 }
 
 note_alpha += 0.1;

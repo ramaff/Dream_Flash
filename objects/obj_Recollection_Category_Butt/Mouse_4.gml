@@ -166,6 +166,9 @@ if global.recollectCategory = "Information" {
 	if cat = 5 {
 		selected = true;	
 	} 
+	if scr_State_Recollection_Unlocked() and cat = 4 {
+		selected = true;	
+	}
 }
 
 with (_cursor) {

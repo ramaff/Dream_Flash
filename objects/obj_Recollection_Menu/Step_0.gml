@@ -22,9 +22,11 @@ if _add_cat != 0 {
 		selected = false;
 	}
 	selected_cat = selected_cat + _add_cat
-	selected_cat = selected_cat mod 5
 	if selected_cat <= 0 {
-		selected_cat = 5;
+		selected_cat = categoryNum;
+	}
+	if selected_cat > categoryNum {
+		selected_cat = 1;
 	}
 	with (obj_Recollection_Category_Butt) {
 		if other.selected_cat == cat {
