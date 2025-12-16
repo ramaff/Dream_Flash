@@ -17,6 +17,12 @@ if mouse_x < x {
 }
 
 draw_sprite_ext(spr_Tutorial_Arrow,0,x+256+_forward_xx,y+144,1,1,0,c_white,note_alpha);
+
+if InputDeviceGetAnyGamepadConnected() {
+	draw_sprite_ext(spr_Controller_Accept_Icon, scr_Wave(0, 1.9, 1, 0), x + 260, y + 100, 0.5, 0.5, 0, c_black, 1)
+	draw_text_colour(x + 255, y + 120, "next", c_black, c_black, c_black, c_black, 1)
+} 
+
 if current_page > 1 {
 	draw_sprite_ext(spr_Tutorial_Arrow,0,x-256+_back_xx,y+112,-1,-1,0,c_white,note_alpha);
 }

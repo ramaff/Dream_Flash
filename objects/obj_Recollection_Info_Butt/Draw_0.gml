@@ -134,6 +134,11 @@ if global.recollectCategory = "Bosses" {
 	}
 	
 	draw_sprite_ext(spr_Tutorial_Arrow,1,x+160,y+156,-1,-1,0,c_white,1);
+	
+	if InputDeviceGetAnyGamepadConnected() {
+		draw_sprite_ext(spr_Controller_Accept_Icon, scr_Wave(0, 1.9, 1, 0), x + 200, y + 100, 0.5, 0.5, 0, c_black, 1)
+		draw_text_colour(x + 195, y + 120, "next", c_black, c_black, c_black, c_black, 1)
+	} 
 }
 
 if global.recollectCategory = "State" {
@@ -161,5 +166,10 @@ if global.recollectCategory = "Information" and itemVal != "?00" and is_array(re
 	draw_text(x+208,y+144,string(recollectionChamp));
 	
 	draw_sprite_ext(spr_Tutorial_Arrow,1,x+160,y+156,-1,-1,0,c_white,1);
+	
+	if InputDeviceGetAnyGamepadConnected() {
+		draw_sprite_ext(spr_Controller_Accept_Icon, scr_Wave(0, 1.9, 1, 0), x + 200, y + 100, 0.5, 0.5, 0, c_black, 1)
+		draw_text_colour(x + 195, y + 120, "next", c_black, c_black, c_black, c_black, 1)
+	} 
 	
 }

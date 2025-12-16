@@ -20,5 +20,13 @@ if variable_struct_exists(global.tutorial_progress, tutorial_keyword) {
 	}
 }
 
-
+if text_alpha >= 1 {
+	if InputPressed(INPUT_VERB.CANCEL) {
+		current_page--;
+	} else if InputPressed(INPUT_VERB.ACCEPT) {
+		current_page++;
+	}
+	text_alpha = 0;
+}
+event_user(0);
 
