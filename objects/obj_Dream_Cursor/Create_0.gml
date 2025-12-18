@@ -14,6 +14,7 @@ if InputDeviceGetAnyGamepadConnected() {
 }
 
 movement_delay = 0;
+movement_max_delay = 15;
 target_button = noone;
 
 function InputDeviceGetAnyActive()

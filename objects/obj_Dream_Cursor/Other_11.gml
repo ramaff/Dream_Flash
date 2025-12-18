@@ -7,6 +7,6 @@
 with (target_button) {
 	if object_index == obj_Recollection_Butt {
 		scr_Scroll_Reco_Menu(id)
-	}	
+	}
 	event_user(0);	
 }

@@ -18,10 +18,13 @@ if InputCheck(INPUT_VERB.DOWN) {
 } else if InputCheck(INPUT_VERB.LEFT) {
 	xx -= 1;
 } else {
+	movement_delay = 0;
+	movement_max_delay = 15;
 	exit;
 }
 
-movement_delay = 15;
+movement_delay = movement_max_delay;
+movement_max_delay = lerp(movement_max_delay, 2, 0.1);
 
 if xx > max_x {
 	//yy += 1;
@@ -38,7 +41,11 @@ if yy < 0 {
 	yy = max_y	
 }
 
-target_button = menu_grid[xx][yy];
+if xx < array_length(menu_grid) {
+	if yy < array_length(menu_grid[xx]) {
+		target_button = menu_grid[xx][yy];
+	}
+}
 
 if instance_exists(_og_button) {
 	with (_og_button) {

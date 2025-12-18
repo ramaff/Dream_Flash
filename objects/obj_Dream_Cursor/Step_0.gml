@@ -14,7 +14,11 @@ if InputDeviceGetAnyActive() {
 if InputReleased(INPUT_VERB.ACCEPT) {
 	if instance_exists(target_button) {
 		with(target_button) {
-			event_perform(ev_mouse, ev_left_release)	
+			if object_index == obj_Recollection_Butt {
+				break;	
+			} else {
+				event_perform(ev_mouse, ev_left_release)	
+			}
 		}
 	}
 }

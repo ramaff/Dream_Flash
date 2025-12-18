@@ -176,18 +176,22 @@ with (_cursor) {
 	if global.recollectCategory == "Items" || global.recollectCategory == "Weapons" {
 	
 		max_x = 2;
-		max_y = floor(other.numOfButts / 3) - 1;
+		max_y = array_length(menu_grid[0]) - 1;
 	} else {
 		max_x = 0;
-		max_y = other.numOfButts - 1;
+		max_y = array_length(menu_grid[0]) - 1;
 	}
 			
 	xx = 0;
 	yy = 0;
 	target_button = menu_grid[0, 0];
 	event_user(1);
+	
+	global.scrollperc = 0;
 }
 
-if !instance_exists(obj_Recollection_Scroll_Bar) {
+instance_destroy(obj_Recollection_Scroll_Bar)
+
+//if !instance_exists(obj_Recollection_Scroll_Bar) {
 	instance_create(camera_get_view_x(view) + 80,camera_get_view_y(view) + 144,obj_Recollection_Scroll_Bar);
-}
+//}
