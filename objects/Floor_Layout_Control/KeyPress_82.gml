@@ -1,3 +1,3 @@
-exit;
-scr_Game_Reset()
+//exit;
+//scr_Game_Reset()
 

@@ -11,26 +11,7 @@ function scr_Minion_Step() {
 	    sminknockback = 0;
 	}
 
-	scr_Soul_Outside_Check();
-
-	/*
-	if global.U[4] > 0 {
-	
-		//speed = smovementspeed;
-		
-		CenterX = obj_Soul_Parent.x;
-	    CenterY = obj_Soul_Parent.y;
-    
-	    Angle += smovementspeed;
-	    if (Angle >= 360) {
-	        Angle -= 360;
-	    }
-
-	    x = lengthdir_x(Orbit, Angle) + CenterX;
-	    y = lengthdir_y(Orbit, Angle) + CenterY;
-	
-	}
-	*/
+	//scr_Soul_Outside_Check();
 
 
 }
