@@ -6,7 +6,7 @@ path_speed = global.itemFieldSpeed[itemOrbit];
 
 if point_distance(x, y, obj_Astral_Indicator.x, obj_Astral_Indicator.y) < ITEM_HOVER_RANGE {
 	
-	if InputCheck(INPUT_VERB.SHOOT) || InputCheck(INPUT_VERB.WARP) {
+	if InputPressed(INPUT_VERB.SHOOT) || InputPressed(INPUT_VERB.WARP) {
 		event_user(0);	
 	}
 	

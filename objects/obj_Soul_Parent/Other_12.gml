@@ -35,7 +35,7 @@ if !(instance_exists(Tutorial_Control)) {
 		}
 	}
 	
-	if InputPressed(INPUT_VERB.WARP ) and charge == true {
+	if InputPressed(INPUT_VERB.WARP ) and charge == true and _item_selected == false{
 		obj_Astral_Indicator.x = obj_Soul_Parent.x + _xadd;
 		obj_Astral_Indicator.y = obj_Soul_Parent.y + _yadd;
 	}

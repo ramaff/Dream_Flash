@@ -92,6 +92,7 @@ function scr_Assign_Shot_Scripts(){
 		array_push(_shot_step_scripts, scr_Shot_Orbit)
 		if shot_stats.Shot_Orbital_Type = 1 {
 			array_push(_shot_draw_scripts, scr_Shot_Orbit_Angle)
+			array_push(_shot_step_scripts, scr_Shot_Orbit_Release);
 		}
 	}
 	
