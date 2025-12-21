@@ -14,6 +14,8 @@ function __InputConfigVerbs()
         PAUSE,
 		SHOOT,
 		WARP,
+		W_LEFT,
+		W_RIGHT,
 		AS_UP,
         AS_DOWN,
         AS_LEFT,
@@ -37,9 +39,11 @@ function __InputConfigVerbs()
         InputDefineVerb(INPUT_VERB.CANCEL,  "cancel",      vk_backspace,        gp_face2);
         InputDefineVerb(INPUT_VERB.ACTION,  "action",      vk_enter,            gp_face3);
         InputDefineVerb(INPUT_VERB.SPECIAL, "special",     vk_shift,            gp_face4);
-        InputDefineVerb(INPUT_VERB.PAUSE,   "pause",      [vk_escape, "P"],           gp_start);
+        InputDefineVerb(INPUT_VERB.PAUSE,   "pause",      [vk_escape, "P"],     gp_start);
         InputDefineVerb(INPUT_VERB.SHOOT,   "shoot",       undefined,           gp_shoulderl);
-        InputDefineVerb(INPUT_VERB.WARP,    "warp",       undefined,           gp_shoulderr);
+        InputDefineVerb(INPUT_VERB.WARP,    "warp",       undefined,            gp_shoulderr);
+		InputDefineVerb(INPUT_VERB.W_LEFT,  "w_left",       undefined,          gp_shoulderlb);
+        InputDefineVerb(INPUT_VERB.W_RIGHT, "w_right",       undefined,         gp_shoulderrb);
 		InputDefineVerb(INPUT_VERB.AS_UP,      "up",         undefined,    -gp_axisrv);
         InputDefineVerb(INPUT_VERB.AS_DOWN,    "down",       undefined,    gp_axisrv);
         InputDefineVerb(INPUT_VERB.AS_LEFT,    "left",       undefined,    -gp_axisrh);

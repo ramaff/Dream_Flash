@@ -10,7 +10,9 @@ scr_S05()
 alarm[1] = 1;
 alarm[2] = 2;
 
-instance_create(x,y,obj_Astral_Indicator);
+if instance_number(obj_Astral_Indicator) < 1 {
+	instance_create(x,y,obj_Astral_Indicator);
+}
 
 upixelH = shader_get_uniform(shOutline,"pixelH");
 upixelW = shader_get_uniform(shOutline,"pixelW");

@@ -11,3 +11,10 @@ if keyboard_check_pressed(ord(global.gameWeaponSwapDown)) {
 if keyboard_check_pressed(ord(global.gameWeaponSwapUp)) {
 	scr_Weapon_Switch(-1);
 }
+
+if InputPressed(INPUT_VERB.W_LEFT) {
+	scr_Weapon_Switch(1);
+}
+if InputPressed(INPUT_VERB.W_RIGHT) {
+	scr_Weapon_Switch(-1);
+}

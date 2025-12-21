@@ -4,12 +4,12 @@ function scr_Scroll_Reco_Menu(_target_butt){
 
 	var _ybott = camera_get_view_y(view) + 91;
 	var _ytop = camera_get_view_y(view) + 599 - 256;
-	var _scrolls = 200
+	var _scrolls = 400
 
 	while (_target_butt.y < _ybott || _target_butt.y > _ytop) and _scrolls > 0 {
 		with (obj_Recollection_Scroll_Bar) {
 			event_perform(ev_step, 0)
-			buttony += 8;
+			buttony += 4;
 			buttony = clamp(buttony, 0, barheight)
 		}
 		with (_target_butt) {
@@ -18,7 +18,7 @@ function scr_Scroll_Reco_Menu(_target_butt){
 		}
 		_scrolls--;
 		
-		if _scrolls = 100 {
+		if _scrolls = 200 {
 			with (obj_Recollection_Scroll_Bar) {
 				event_perform(ev_step, 0)
 				buttony = 0;

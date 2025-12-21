@@ -7,9 +7,6 @@ function scr_Soul_Right_Click(teleport_charge = false) {
 	var inside = 0;
 	var onsoul = 0;
 
-	xstar = x;
-	ystar = y;
-
 	if abs(xval) < ((global.roomSizeX / 2) - abs(yval)) and abs(yval) < ((global.roomSizeY / 2) - abs(xval)) {
 	    inside = 1;
 	}

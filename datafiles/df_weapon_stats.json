@@ -926,7 +926,7 @@
         "Shot_Power": 27,
         "Shot_Knockback": 10,
         "Shot_Life_Span": 90,
-        "Shot_Pierce": 1,
+        "Shot_Pierce": 2,
         "Shot_Size": 0.4,
         "Bleeding_Credit": 0.5
     },

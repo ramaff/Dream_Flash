@@ -135,10 +135,10 @@ if !scr_Room_Leavable() {
     
     scr_Mini_Map();
 	
-	if keyboard_check(ord(global.gameMapExpand)) and instance_number(obj_Map_Button) = 0 {
+	if (keyboard_check(ord(global.gameMapExpand)) || InputCheck(INPUT_VERB.SPECIAL) ) and instance_number(obj_Map_Button) = 0 {
 		scr_Mega_Map();
 	}
-	if !keyboard_check(ord(global.gameMapExpand)) {
+	if !keyboard_check(ord(global.gameMapExpand)) and !InputCheck(INPUT_VERB.SPECIAL) {
 		with(obj_Map_Button) {
 			instance_destroy();
 		}

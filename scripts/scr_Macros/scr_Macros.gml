@@ -7,6 +7,9 @@
 #macro GAME_MINOR_VERSION "1"
 #macro GAME_VERSION_BETA "0"
 
+// In game constants
+#macro ITEM_HOVER_RANGE 60
+
 function scr_Macros(){
 
 }

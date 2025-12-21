@@ -17,7 +17,7 @@
     "name":"obj_Indicator_Parent",
     "path":"objects/obj_Indicator_Parent/obj_Indicator_Parent.yy",
   },
-  "persistent":false,
+  "persistent":true,
   "physicsAngularDamping":0.1,
   "physicsDensity":0.5,
   "physicsFriction":0.2,

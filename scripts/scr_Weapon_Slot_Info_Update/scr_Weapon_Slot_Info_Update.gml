@@ -6,8 +6,8 @@ function scr_sort_by_scale(a, b) {
 }
 
 function scr_Weapon_Slot_Info_Update(_weapon_slot_info){
-	Print_DF($"window_scale: {camcon.window_scale}, view_zoom: {camcon.view_zoom}", 5)
-	Print_DF($"camera_get_view_height: {camera_get_view_height(view)}", 5)
+	//Print_DF($"window_scale: {camcon.window_scale}, view_zoom: {camcon.view_zoom}", 5)
+	//Print_DF($"camera_get_view_height: {camera_get_view_height(view)}", 5)
 	var _win_y = camcon.window_scale * camcon.view_zoom * camera_get_view_height(view) - 120;
 	
 	var _i = 0;
