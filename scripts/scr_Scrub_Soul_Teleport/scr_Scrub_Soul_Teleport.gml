@@ -4,8 +4,8 @@ function scr_Scrub_Soul_Teleport() {
 	if obj_Soul_Parent.scurrentstate = "Scrub" {
 		
 		var dur = 10;
-		var dis = point_distance(x,y, mouse_x, mouse_y);
-		var ang = point_direction(x,y, mouse_x, mouse_y);
+		var dis = point_distance(x,y, obj_Astral_Indicator.x, obj_Astral_Indicator.y);
+		var ang = point_direction(x,y, obj_Astral_Indicator.x, obj_Astral_Indicator.y);
 		
 		var dismult = 1;
 		

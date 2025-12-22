@@ -3,7 +3,7 @@
 function scr_Settings_Menu_Cursor_Setup(){
 	
 	instance_destroy(obj_Dream_Cursor)
-	var _cursor = instance_create(mouse_x,mouse_y,obj_Dream_Cursor);
+	var _cursor = instance_create(obj_Astral_Indicator.x,obj_Astral_Indicator.y,obj_Dream_Cursor);
 
 	var _i = 0;
 	for(_i = 1; _i <= 4; _i++) {

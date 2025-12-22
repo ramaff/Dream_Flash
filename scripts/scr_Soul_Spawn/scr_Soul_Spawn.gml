@@ -37,7 +37,7 @@ function scr_Soul_Spawn(_cw_stats = current_weapon_stats) {
 	        shealth = _cw_stats.Minion_Health;
 	        smaxhealth = shealth;
 	        spower = (_cw_stats.Minion_Power + other.spoweradd) * scr_Soul_Power_Factor_Calc(other);
-	        //direction = point_direction(x,y,mouse_x,mouse_y);
+
 	        Shot_Power = _cw_stats.Shot_Power;
 	        Minion_Lifespan = _cw_stats.Minion_Lifespan;
 	        alarm[1] = Minion_Lifespan;

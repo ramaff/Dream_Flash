@@ -52,12 +52,12 @@ function scr_Shot_Creation(_cw = current_weapon_stats, _prime_shot = false) {
 
 	var actual_shot_direction = 0;
 	
-	var _mx = mouse_x;
-	var _my = mouse_y;
-	if instance_exists(obj_Astral_Indicator) {
+	var _mx = obj_Astral_Indicator.x;
+	var _my = obj_Astral_Indicator.y;
+	/*if instance_exists(obj_Astral_Indicator) {
 		_mx = obj_Astral_Indicator.x;
 		_my = obj_Astral_Indicator.y;
-	}
+	} */
 	
 	if _cw.Shot_Mouse {
 		actual_shot_direction = point_direction(x, y, _mx, _my);

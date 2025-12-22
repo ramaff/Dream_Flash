@@ -5,7 +5,7 @@ image_index = 0;
 image_xscale = 0.5;
 image_yscale = 0.5;
 
-if global.layerdeep = 3 || point_distance(x,y,mouse_x,mouse_y) < 50 {
+if global.layerdeep = 3 || point_distance(x,y,obj_Astral_Indicator.x,obj_Astral_Indicator.y) < 50 {
 	image_index = 1;	
 }
 

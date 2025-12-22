@@ -1,13 +1,13 @@
 function scr_Mouse_Follow_AI() {
-	disx = abs(mouse_x - x);
-	disy = abs(mouse_y - y);
+	disx = abs(obj_Astral_Indicator.x - x);
+	disy = abs(obj_Astral_Indicator.y - y);
 	dis = sqrt((disx * disx) + (disy * disy));
 
 	if dis < smovementspeed {
-	    x = mouse_x;
-	    y = mouse_y;
+	    x = obj_Astral_Indicator.x;
+	    y = obj_Astral_Indicator.y;
 	} else {
-	    move_towards_point(mouse_x,mouse_y,smovementspeed);
+	    move_towards_point(obj_Astral_Indicator.x,obj_Astral_Indicator.y,smovementspeed);
 	}
 
 

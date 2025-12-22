@@ -13,7 +13,7 @@ if instance_exists(shot_stats.Shot_Follow_Origin) {
 	exit;	
 }
 
-var _mouse_angle = point_direction(_soul.x, _soul.y, mouse_x, mouse_y)
+var _mouse_angle = point_direction(_soul.x, _soul.y, obj_Astral_Indicator.x, obj_Astral_Indicator.y)
 var _diff = angle_difference(image_angle, _mouse_angle)
 
 if _diff > 0 {

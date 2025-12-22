@@ -1,5 +1,6 @@
 /// @description Insert description here
 // You can write your code in this editor
 
-event_user(0)
-
+if InputPressed(INPUT_VERB.WARP) {
+	event_user(0)	
+}

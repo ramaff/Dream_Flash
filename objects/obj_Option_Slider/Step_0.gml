@@ -5,13 +5,9 @@ if (!mouse_check_button(mb_left)) {
 if (grab = false) and (clicked = false) {
     exit;
 } else {
-    if ((mouse_x /* + xx */) > leftLimit - 50) and ((mouse_x /* + xx */) < rightLimit + 50) {
-        xPos = mouse_x /* + xx */;
-    } /*else if ((mouse_x + xx) < leftLimit) {
-        xPos = leftLimit;
-    } else if ((mouse_x + xx) > rightLimit) {
-        xPos = rightLimit;
-    } */
+    if ((obj_Astral_Indicator.x /* + xx */) > leftLimit - 50) and ((obj_Astral_Indicator.x /* + xx */) < rightLimit + 50) {
+        xPos = obj_Astral_Indicator.x /* + xx */;
+    }
 }
 
 percent = round(((xPos-leftLimit) / (rightLimit - leftLimit ))*100);

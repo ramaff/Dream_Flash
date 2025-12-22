@@ -6,15 +6,13 @@ function scr_Baseball_Shot(xxx,yyy, pow) {
 
 	Shot_XX = xxx - x;
 	Shot_YY = yyy - y;
-	//shot_dir = point_direction(x, y, xxx, yyy)
-	//shot_dir = shot_dir + (angle_difference(shot_dir, point_direction(xxx,yyy, mouse_x, mouse_y)) / 2)
 
 	current_weapon_stats = {
 		Shot_Spread: 0,
 		Shot_Accuracy: 5,
 		Shot_Count: 1,
 		Shot_Mouse: 0,
-		Shot_Direction: point_direction(xxx,yyy, mouse_x, mouse_y),
+		Shot_Direction: point_direction(xxx,yyy, obj_Astral_Indicator.x, obj_Astral_Indicator.y),
 		Shot_Sprite: "spr_Baseball",
 		Shot_Type: "obj_Lesser_Soul_Shot",
 		Shot_Size: 0.1 + other.image_xscale,

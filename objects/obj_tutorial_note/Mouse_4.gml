@@ -2,7 +2,7 @@
 // You can write your code in this editor
 
 if text_alpha >= 1 {
-	if mouse_x <= x {
+	if obj_Astral_Indicator.x <= x {
 		current_page--;
 	} else {
 		current_page++;

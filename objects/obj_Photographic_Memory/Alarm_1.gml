@@ -3,8 +3,8 @@
 
 alarm[1] = 1;
 
-x = mouse_x;
-y = mouse_y;
+x = obj_Astral_Indicator.x;
+y = obj_Astral_Indicator.y;
 
 image_alpha = lerp(image_alpha, 0.5, 0.01)
 

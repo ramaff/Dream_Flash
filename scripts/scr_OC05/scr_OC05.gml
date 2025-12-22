@@ -5,7 +5,7 @@
 function scr_OC05(){
 
 	var convergeSpeed = 0.6 + (0.9 * global.OC[5]);
-	var tunnelAngleTarget = point_direction(x,y,mouse_x,mouse_y);
+	var tunnelAngleTarget = point_direction(x,y,obj_Astral_Indicator.x,obj_Astral_Indicator.y);
 	global.Tunnel_Vision_Angle = scr_Angle_Converge(global.Tunnel_Vision_Angle, tunnelAngleTarget, convergeSpeed)
 		
 	//Print_DF("tunnelAngleTarget: " + string(tunnelAngleTarget))

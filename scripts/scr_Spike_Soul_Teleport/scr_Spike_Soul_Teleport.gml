@@ -5,7 +5,7 @@ function scr_Spike_Soul_Teleport(_xstar, _ystar) {
 		
 		var dur = 10;
 		var dis = 900;
-		var ang = point_direction(_xstar,_ystar, mouse_x, mouse_y);
+		var ang = point_direction(_xstar,_ystar, obj_Astral_Indicator.x, obj_Astral_Indicator.y);
 		
 		var angadd = 0
 		

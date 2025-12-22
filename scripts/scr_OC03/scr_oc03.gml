@@ -23,7 +23,7 @@ function scr_OC03(_current_weapon_stats, cWP = global.currentweapon){
 				if _current_weapon_stats.Shot_Mouse = 0 {
 					Shot_Repetition_Direction[_i] = _current_weapon_stats.Shot_Direction;
 				} else {
-					Shot_Repetition_Direction[_i] = point_direction(x,y,mouse_x,mouse_y);
+					Shot_Repetition_Direction[_i] = point_direction(x,y,obj_Astral_Indicator.x,obj_Astral_Indicator.y);
 				}
 				//Shot_Repetition_Max[_i] = 7;
 				Shot_Barrage_Speed[_i] = (7 + (_current_weapon_stats.Real_Weapon_Delay / 4)) / 2;

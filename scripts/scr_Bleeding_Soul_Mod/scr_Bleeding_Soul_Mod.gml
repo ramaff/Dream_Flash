@@ -13,7 +13,7 @@ function scr_Bleeding_Soul_Mod(_cw = current_weapon_stats){
 		_cw.Shot_Lobbing = true
 		_cw.Shot_Speed = _shot_speed;
 		
-		_cw.Shot_Direction = point_direction(x, y, mouse_x, mouse_y)
+		_cw.Shot_Direction = point_direction(x, y, obj_Astral_Indicator.x, obj_Astral_Indicator.y)
 		_cw.Shot_Mouse = false;
 
 		_cw.Shot_Height = min(30, _cw.Shot_Height + 30);

@@ -1,5 +1,5 @@
 grab = true;
-xx = x - mouse_x;
+xx = x - obj_Astral_Indicator.x;
 
 if type = 13 and category = 4 {
 	if instance_exists(obj_Bloom_Control) {
