@@ -13,3 +13,13 @@ if instance_exists(obj_Boss_Parent) {
 scr_Beam_Step();
 
 scr_Weapon_Warmup_Step();
+
+if InputCheck(INPUT_VERB.SHOOT) {
+	event_perform(ev_mouse, ev_global_left_button)
+}
+if InputPressed(INPUT_VERB.SHOOT) {
+	event_perform(ev_mouse, ev_global_left_press)
+}
+if InputReleased(INPUT_VERB.SHOOT) {
+	event_perform(ev_mouse, ev_global_left_release)
+}

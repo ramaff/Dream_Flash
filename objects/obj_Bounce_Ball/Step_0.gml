@@ -81,3 +81,10 @@ if _bounce {
 image_angle += hspeed;
 image_angle += vspeed / 5;
 
+if InputCheck(INPUT_VERB.SHOOT) {
+	event_perform(ev_mouse, ev_global_left_button)
+}
+if InputReleased(INPUT_VERB.SHOOT) {
+	event_perform(ev_mouse, ev_global_left_release)
+}
+
