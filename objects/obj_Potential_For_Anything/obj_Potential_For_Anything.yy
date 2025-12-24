@@ -18,8 +18,8 @@
     "path":"folders/Objects/Item Room Things.yy",
   },
   "parentObjectId":{
-    "name":"obj_Depth",
-    "path":"objects/obj_Depth/obj_Depth.yy",
+    "name":"obj_Item_Like",
+    "path":"objects/obj_Item_Like/obj_Item_Like.yy",
   },
   "persistent":false,
   "physicsAngularDamping":0.1,

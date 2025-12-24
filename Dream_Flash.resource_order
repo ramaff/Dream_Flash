@@ -458,6 +458,7 @@
     {"name":"obj_Indicator_Parent","order":1,"path":"objects/obj_Indicator_Parent/obj_Indicator_Parent.yy",},
     {"name":"obj_Infatuation_Cloud","order":7,"path":"objects/obj_Infatuation_Cloud/obj_Infatuation_Cloud.yy",},
     {"name":"obj_Inspired","order":1,"path":"objects/obj_Inspired/obj_Inspired.yy",},
+    {"name":"obj_Item_Like","order":3,"path":"objects/obj_Item_Like/obj_Item_Like.yy",},
     {"name":"obj_Item_Trail","order":15,"path":"objects/obj_Item_Trail/obj_Item_Trail.yy",},
     {"name":"obj_Jam_Ball","order":10,"path":"objects/obj_Jam_Ball/obj_Jam_Ball.yy",},
     {"name":"obj_Jello_Cube","order":4,"path":"objects/obj_Jello_Cube/obj_Jello_Cube.yy",},

@@ -978,6 +978,7 @@
     {"id":{"name":"obj_Item_Diamond","path":"objects/obj_Item_Diamond/obj_Item_Diamond.yy",},},
     {"id":{"name":"obj_Item_Essence","path":"objects/obj_Item_Essence/obj_Item_Essence.yy",},},
     {"id":{"name":"obj_Item_Field","path":"objects/obj_Item_Field/obj_Item_Field.yy",},},
+    {"id":{"name":"obj_Item_Like","path":"objects/obj_Item_Like/obj_Item_Like.yy",},},
     {"id":{"name":"obj_Item_Parent","path":"objects/obj_Item_Parent/obj_Item_Parent.yy",},},
     {"id":{"name":"obj_Item_Spark","path":"objects/obj_Item_Spark/obj_Item_Spark.yy",},},
     {"id":{"name":"obj_Item_Trail","path":"objects/obj_Item_Trail/obj_Item_Trail.yy",},},

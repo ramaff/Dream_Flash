@@ -13,8 +13,8 @@ if !(instance_exists(Tutorial_Control)) {
 	
 	var _item_selected = false
 
-	if instance_exists(obj_Item_Parent) {
-		with(obj_Item_Parent) {
+	if instance_exists(obj_Item_Like) {
+		with(obj_Item_Like) {
 			if point_distance(x, y, obj_Astral_Indicator.x,obj_Astral_Indicator.y) < ITEM_HOVER_RANGE {
 				_item_selected = true;
 			}

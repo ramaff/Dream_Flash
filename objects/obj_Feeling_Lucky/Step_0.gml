@@ -4,7 +4,7 @@ if !instance_exists(obj_Item_Parent) {
 	instance_destroy();	
 }
 
-price = 0;
+var price = 0;
 
 if distance_to_object(obj_Astral_Indicator) < 15 {
 	
@@ -37,3 +37,12 @@ image_xscale = 0.5;
 image_yscale = 0.5;
 
 y = starty + scr_Wave(-20, 20, 2, 0);
+
+if point_distance(x, y, obj_Astral_Indicator.x, obj_Astral_Indicator.y) < ITEM_HOVER_RANGE {
+	if InputPressed(INPUT_VERB.SHOOT) {
+		event_perform(ev_mouse, ev_left_press)
+	}
+	if InputPressed(INPUT_VERB.WARP) {
+		event_perform(ev_mouse, ev_left_press)
+	}
+}

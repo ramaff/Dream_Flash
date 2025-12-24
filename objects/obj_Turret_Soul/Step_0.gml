@@ -21,3 +21,13 @@ scr_Weapon_Warmup_Step();
 scr_New_Face_Direction();
 
 scr_Minion_Follow_Leader();
+
+if InputCheck(INPUT_VERB.SHOOT) {
+	event_perform(ev_mouse, ev_global_left_button)
+}
+if InputPressed(INPUT_VERB.SHOOT) {
+	event_perform(ev_mouse, ev_global_left_press)
+}
+if InputReleased(INPUT_VERB.SHOOT) {
+	event_perform(ev_mouse, ev_global_left_release)
+}

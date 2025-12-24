@@ -911,6 +911,11 @@ function scr_Hard_Coded_Item_Stats(itemVal, items_to_add = 1, reload = false) {
 			global.soulbliss += 2;	
 		}
 	}
+	if itemVal = "P11" {
+		if !instance_exists(obj_Photographic_Memory) {
+			instance_create_depth(x,y, depth, obj_Photographic_Memory)	
+		}
+	}
 	
 	if itemVal = "Q04" {
 		global.soulshotlifefactor += 10;
