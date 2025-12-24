@@ -63,28 +63,6 @@ function scr_Soul_Utility_Setup() {
 	sBeamLife = 0;
 	
 	umbrellaActive = false;
-
-	/*
-	var i;
-	for(i = 0; i < sBeamNumMax; i++){
-	    bArrBeamAlpha[i] = 0;
-	    bArrBeamFrame[i] = 0;
-	    bArrBeamLife[i] = 0;
-	    bShotCount[i] = 0;
-    
-	    bangle[i] = 0;
-	    blength[i] = 0;
-		var j;
-	    for(j = 0; j < 32; j++) {
-	        bArrangle[i,j] = 0;
-	        bArrlength[i,j] = 0;
-	        bArrxx[i,j] = 0;
-	        bArryy[i,j] = 0;
-	        bArrxs[i,j] = 0;
-	        bArrys[i,j] = 0;
-	    }
-	}
-	*/
 	
 	var _i;
 	for(_i = 0; _i < 10; _i++) {

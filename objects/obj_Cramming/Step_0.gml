@@ -36,7 +36,7 @@ if point_distance(x, y, obj_Astral_Indicator.x, obj_Astral_Indicator.y) < ITEM_H
 		event_perform(ev_mouse, ev_left_press)
 	}
 	if InputPressed(INPUT_VERB.WARP) {
-		event_perform(ev_mouse, ev_right_press)
+		event_perform(ev_mouse, ev_left_press)
 	}
 }
 

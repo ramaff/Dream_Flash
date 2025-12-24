@@ -37,6 +37,6 @@ function scr_Game_Zoom(zoom) {
 	global.gameResolutionY = camcon.view_height * camcon.window_scale;
 	
 	if instance_exists(Soul_Weapons_Control) {
-		Soul_Weapons_Control.weapon_slot_info = scr_Weapon_Slot_Info_Update(Soul_Weapons_Control.weapon_slot_info)
+		scr_Weapon_Slot_Info_Update(Soul_Weapons_Control.weapon_slot_info)
 	}
 }

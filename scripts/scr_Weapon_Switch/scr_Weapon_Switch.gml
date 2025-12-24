@@ -40,7 +40,7 @@ function scr_Weapon_Switch(_direction = 1) {
 	}
 	
 	Soul_Weapons_Control.angular_rotation -= (360 / global.weaponslots) * _direction;
-	Soul_Weapons_Control.weapon_slot_info = scr_Weapon_Slot_Info_Update(Soul_Weapons_Control.weapon_slot_info)
+	scr_Weapon_Slot_Info_Update(Soul_Weapons_Control.weapon_slot_info)
 	
 	
 

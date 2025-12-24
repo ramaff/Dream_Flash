@@ -40,7 +40,7 @@ function scr_Weapon_Pickup() {
 			//Print_DF(string(Soul_Weapons_Control.weapon))
 			scr_Weapon_Switch(1);	
 		}
-		Soul_Weapons_Control.weapon_slot_info = scr_Weapon_Slot_Info_Update(Soul_Weapons_Control.weapon_slot_info)	
+		scr_Weapon_Slot_Info_Update(Soul_Weapons_Control.weapon_slot_info)	
 	    instance_destroy();
 	    global.floor[global.currentroom,itemData] = 0;
 	} else {
@@ -49,7 +49,7 @@ function scr_Weapon_Pickup() {
 	            scr_Weapon_Item_Change(_i);
 	            Soul_Weapons_Control.weapon[_i].weapon_id = itemindex;
 	            scr_Weapon_Stat_Add();
-				Soul_Weapons_Control.weapon_slot_info = scr_Weapon_Slot_Info_Update(Soul_Weapons_Control.weapon_slot_info)	
+				scr_Weapon_Slot_Info_Update(Soul_Weapons_Control.weapon_slot_info)	
 	            instance_destroy();
 	        }
 	    }

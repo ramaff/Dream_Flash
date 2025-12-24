@@ -18,15 +18,5 @@ if instance_exists(obj_Soul_Parent) {
 	camera_set_view_pos(view, room_width / 2 - view_width / 2, room_height / 2 - view_height / 2);
 }
 
-/*
-if room = The_Start_Room {
-	view_zoom = 1;
-} else {
-	view_zoom = 0.9375;	
-} */
 
-/*
-if instance_exists(Soul_Weapons_Control) {
-	Soul_Weapons_Control.weapon_slot_info = scr_Weapon_Slot_Info_Update(Soul_Weapons_Control.weapon_slot_info)
-}
 

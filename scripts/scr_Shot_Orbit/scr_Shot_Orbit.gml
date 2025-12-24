@@ -12,13 +12,19 @@ function scr_Shot_Orbit_Release() {
 	    shot_stats.Shot_Orbital_Type = 0;
 	
 		var _i = array_get_index(shot_stats.Shot_Step_Scripts, scr_Shot_Rotate)
-		array_delete(shot_stats.Shot_Step_Scripts, _i, 1)
-		
-		_i = array_get_index(shot_stats.Shot_Step_Scripts, scr_Shot_Orbit_Release)
-		array_delete(shot_stats.Shot_Step_Scripts, _i, 1)
+		if _i != -1 {
+			array_delete(shot_stats.Shot_Step_Scripts, _i, 1)
+		}
 		
 		_i = array_get_index(shot_stats.Shot_Step_Scripts, scr_Shot_Orbit)
-		array_delete(shot_stats.Shot_Step_Scripts, _i, 1)
+		if _i != -1 {
+			array_delete(shot_stats.Shot_Step_Scripts, _i, 1)
+		}
+		
+		_i = array_get_index(shot_stats.Shot_Step_Scripts, scr_Shot_Orbit_Release)
+		if _i != -1 {
+			array_delete(shot_stats.Shot_Step_Scripts, _i, 1)
+		}
 	}
 
 }
