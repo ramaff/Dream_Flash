@@ -3,7 +3,7 @@
 function scr_Settings_Menu_Cursor_Setup(){
 	
 	instance_destroy(obj_Dream_Cursor)
-	var _cursor = instance_create(obj_Astral_Indicator.x,obj_Astral_Indicator.y,obj_Dream_Cursor);
+	var _cursor = instance_create(x,y,obj_Dream_Cursor);
 
 	var _i = 0;
 	for(_i = 1; _i <= 4; _i++) {
@@ -24,7 +24,9 @@ function scr_Settings_Menu_Cursor_Setup(){
 		xx = 0;
 		yy = 0;
 		target_button = menu_grid[0, 0];
-		event_user(1);
+		InputDeviceGetAnyGamepadConnected() {
+			event_user(1);
+		}
 	}
 
 

@@ -5,8 +5,8 @@ if (!mouse_check_button(mb_left)) {
 if (grab = false) and (clicked = false) {
     exit;
 } else {
-    if ((obj_Astral_Indicator.x /* + xx */) > leftLimit - 50) and ((obj_Astral_Indicator.x /* + xx */) < rightLimit + 50) {
-        xPos = obj_Astral_Indicator.x /* + xx */;
+    if ((obj_Indicator_Parent.x /* + xx */) > leftLimit - 50) and ((obj_Indicator_Parent.x /* + xx */) < rightLimit + 50) {
+        xPos = obj_Indicator_Parent.x /* + xx */;
     }
 }
 

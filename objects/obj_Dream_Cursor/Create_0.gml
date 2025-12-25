@@ -38,3 +38,5 @@ xx = 0;
 yy = 0;
 max_x = 0;
 max_y = 0;
+
+alarm[0] = 1;

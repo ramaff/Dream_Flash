@@ -40,7 +40,7 @@ if !InputMouseMoved() {
 	stop_following_mouse = 0;	
 }
 
-if stop_following_mouse < 15 {
+if stop_following_mouse < 60 || !InputDeviceGetAnyGamepadConnected() {
 
 	if window_has_focus() {
 	    x = mouse_x;

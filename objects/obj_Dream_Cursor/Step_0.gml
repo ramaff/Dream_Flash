@@ -11,6 +11,7 @@ if InputDeviceGetAnyActive() {
 	controller_movement++;	
 }
 
+
 if InputReleased(INPUT_VERB.ACCEPT) {
 	if instance_exists(target_button) {
 		with(target_button) {

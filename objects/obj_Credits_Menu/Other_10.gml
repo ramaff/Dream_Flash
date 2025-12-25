@@ -19,7 +19,9 @@ if global.layerdeep = 2 {
 		max_y = 3;
 	
 		target_button = menu_grid[0,0];
-		event_user(1);
+		InputDeviceGetAnyGamepadConnected() {
+			event_user(1);
+		}
 	}
 	
     global.layerdeep = 1

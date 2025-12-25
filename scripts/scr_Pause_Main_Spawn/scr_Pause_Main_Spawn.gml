@@ -19,7 +19,7 @@ function scr_Pause_Main_Spawn() {
 	var camY = camera_get_view_y(view) + (camera_get_view_height(view) / 2);
 	
 	instance_destroy(obj_Dream_Cursor)
-	var _cursor = instance_create(obj_Astral_Indicator.x,obj_Astral_Indicator.y,obj_Dream_Cursor);
+	var _cursor = instance_create(x,y,obj_Dream_Cursor);
 
 	instance_create(camX + 128,camY + 288,obj_Pause);
 	var _soul_butt = instance_create(camX - 224,camY - 240,obj_Soul_Menu_Butt);
@@ -40,7 +40,9 @@ function scr_Pause_Main_Spawn() {
 		xx = 0;
 		yy = 0;
 		target_button = menu_grid[0, 0];
-		event_user(1);
+		InputDeviceGetAnyGamepadConnected() {
+			event_user(1);
+		}
 	}
 
 	repeat(99) {

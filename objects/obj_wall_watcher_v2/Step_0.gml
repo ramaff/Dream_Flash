@@ -179,7 +179,7 @@ if active_attack_delay <= 0 and pattern_cooldown <= 0 and pattern_count > 0 {
 		if active_attack = 10 {
 			
 			attack_stats.bullet_type = "obj_basic_bullet_v2";
-			attack_stats.bullet_sprite = "spr_Glowy_Hot_Pink_Shot";
+			attack_stats.bullet_sprite = "spr_pink_bullet_v2";
 			attack_stats.bullet_part = 0;
 			attack_stats.bullet_speed -= bossbulletspeed * 0.35;
 		    attack_stats.bullet_power = bosspower * 1;
@@ -241,7 +241,7 @@ if active_attack_delay <= 0 and pattern_cooldown <= 0 and pattern_count > 0 {
 		attack_stats.bullet_power = bosspower;
 	
 		attack_stats.bullet_type = "obj_basic_bullet_v2";
-		attack_stats.bullet_sprite = "spr_Glowy_Hot_Pink_Shot";
+		attack_stats.bullet_sprite = "spr_pink_bullet_v2";
 		attack_stats.bullet_count = 2;
 		attack_stats.bullet_spread = 40;
 		attack_stats.bullet_life_span = 300;
