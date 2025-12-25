@@ -5,3 +5,5 @@ if instance_number(obj_Dream_Cursor) > 1 {
 }
 
 stop_following_mouse = 0
+
+alarm[0] = 1;

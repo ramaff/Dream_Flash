@@ -30,6 +30,6 @@ alarm[0] = 5;
 cMus = currentMusic;
 pMus = previousMusic;
 
-currentMusic = Title_Theme;
+//currentMusic = Title_Theme;
 
 trackPosition = 0;

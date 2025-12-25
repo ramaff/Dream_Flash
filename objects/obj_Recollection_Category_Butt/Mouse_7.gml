@@ -185,8 +185,8 @@ with (_cursor) {
 	xx = 0;
 	yy = 0;
 	target_button = menu_grid[0, 0];
-	InputDeviceGetAnyGamepadConnected() {
-		event_user(1);
+	if InputDeviceGetAnyGamepadConnected() {
+		event_user(0);
 	}
 	
 	global.scrollperc = 0;

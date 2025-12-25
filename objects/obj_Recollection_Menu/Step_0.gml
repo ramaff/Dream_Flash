@@ -31,7 +31,7 @@ if _add_cat != 0 {
 	with (obj_Recollection_Category_Butt) {
 		if other.selected_cat == cat {
 			selected = true;
-			event_perform(ev_mouse, ev_left_press)
+			event_perform(ev_mouse, ev_left_release)
 		}
 	}
 }

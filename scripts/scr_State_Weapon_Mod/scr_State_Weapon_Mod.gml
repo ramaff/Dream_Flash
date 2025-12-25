@@ -41,6 +41,8 @@ function scr_State_Weapon_Mod(){
 					scr_Shot_Power_Set(0.5)
 					scr_Shot_Size_Set(0.7, false)
 					
+					scr_Assign_Shot_Scripts();
+					
 				}
 			}
 			

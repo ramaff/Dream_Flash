@@ -77,6 +77,7 @@ if instance_exists(target_button) {
 			if InputCheck(INPUT_VERB.RIGHT) {
 				percent = clamp(percent + 10, 0, 100);
 			}
+			event_user(0)
 		}
 	}
 	//x = target_button.x;
