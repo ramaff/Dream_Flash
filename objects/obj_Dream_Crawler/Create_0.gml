@@ -18,7 +18,7 @@ var dis = 20;
 var _grand_parent_id = id;
 
 for(var i = 0; i <= 9; i++) {
-	with instance_create(x + lengthdir_x(dis, ang),y + lengthdir_y(dis, ang),obj_Dream_Crawler_Part) {
+	with instance_create_depth(x + lengthdir_x(dis, ang),y + lengthdir_y(dis, ang),depth,obj_Dream_Crawler_Part) {
 		followtarget = ct;
 		grand_parent = _grand_parent_id;
 		
@@ -29,7 +29,7 @@ for(var i = 0; i <= 9; i++) {
 			sprite_index = spr_Dream_Crawler_Tail;
 		}
 		
-		champ = other.champ + 0.1;
+		champ = other.champ;
 		scr_Boss_Stats_Setup();
 	}
 	ang += 45;

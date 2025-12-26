@@ -7,11 +7,6 @@ scr_Boss_Step();
 #region ///Passive Attack Prep
 
 
-/*
-speed = bossmovespeed * 1;
-direction = scr_Soul_Point();
-*/
-
 var speedFac = 1;
 
 if currentphase = 2 {
@@ -20,25 +15,6 @@ if currentphase = 2 {
 
 var pointDir = scr_Soul_Point();
 
-/*
-direction += sin(degtorad(pointDir - direction)) * rspeed;
-	
-var souldir = scr_Soul_Point();
-var adif = 15 + abs(angle_difference(direction, souldir));
-			
-speed += (40 - (adif / 1.5)) / (1200 / (bossmovespeed * speedFac));
-rspeed += (0.0075 * (adif)) / 900;
-	
-if rspeed < (0.25) {
-	rspeed = 0.25;	
-}
-
-if speed < (bossmovespeed * 0.2 * speedFac) {
-	speed = bossmovespeed * 0.2 * speedFac;	
-}
-if speed > (bossmovespeed * speedFac) {
-	speed = bossmovespeed * speedFac;
-}	*/
 
 var im = direction;
 
