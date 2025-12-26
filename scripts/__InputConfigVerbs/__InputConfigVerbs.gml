@@ -12,6 +12,7 @@ function __InputConfigVerbs()
         ACTION,
         SPECIAL,
         PAUSE,
+        CONSOLE,
 		SHOOT,
 		WARP,
 		W_LEFT,
@@ -40,6 +41,7 @@ function __InputConfigVerbs()
         InputDefineVerb(INPUT_VERB.ACTION,  "action",      vk_enter,            gp_face3);
         InputDefineVerb(INPUT_VERB.SPECIAL, "special",     vk_shift,            gp_face4);
         InputDefineVerb(INPUT_VERB.PAUSE,   "pause",      [vk_escape, "P"],     gp_start);
+        InputDefineVerb(INPUT_VERB.CONSOLE,   "console",      undefined,     gp_select);
         InputDefineVerb(INPUT_VERB.SHOOT,   "shoot",       undefined,           gp_shoulderl);
         InputDefineVerb(INPUT_VERB.WARP,    "warp",       undefined,            gp_shoulderr);
 		InputDefineVerb(INPUT_VERB.W_LEFT,  "w_left",       undefined,          gp_shoulderlb);

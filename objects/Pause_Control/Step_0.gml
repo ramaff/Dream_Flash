@@ -1,4 +1,8 @@
 
+if InputPressed(INPUT_VERB.CONSOLE) {
+	steam_activate_overlay()	
+}
+
 if InputReleased(INPUT_VERB.PAUSE) || keyboard_check_released(ord("P")) || keyboard_check_released(vk_escape) {
 	event_user(0)	
 }
