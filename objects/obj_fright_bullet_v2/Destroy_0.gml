@@ -8,7 +8,7 @@ _bull.bullet_sprite = "spr_dark_bullet_v2"
 _bull.bullet_life_span = 180
 _bull.bullet_count = 4;
 _bull.bullet_spread = 360 / _bull.bullet_count;
-_bull.bullet_size = 0.5;
+_bull.bullet_size = bullet_stats.bullet_size * 0.5;
 _bull.bullet_direction_angle = 1;
 
 scr_shoot_bullets(_bull, x, y)
