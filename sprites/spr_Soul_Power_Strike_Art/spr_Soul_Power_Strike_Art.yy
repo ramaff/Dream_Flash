@@ -1,5 +1,5 @@
 {
-  "$GMSprite":"",
+  "$GMSprite":"v2",
   "%Name":"spr_Soul_Power_Strike_Art",
   "bboxMode":0,
   "bbox_bottom":141,
@@ -12,7 +12,7 @@
   "edgeFiltering":false,
   "For3D":false,
   "frames":[
-    {"$GMSpriteFrame":"","%Name":"b66ab8d2-0d54-4f05-8a61-ef7e2226fad5","name":"b66ab8d2-0d54-4f05-8a61-ef7e2226fad5","resourceType":"GMSpriteFrame","resourceVersion":"2.0",},
+    {"$GMSpriteFrame":"v1","%Name":"b66ab8d2-0d54-4f05-8a61-ef7e2226fad5","name":"b66ab8d2-0d54-4f05-8a61-ef7e2226fad5","resourceType":"GMSpriteFrame","resourceVersion":"2.0",},
   ],
   "gridX":0,
   "gridY":0,

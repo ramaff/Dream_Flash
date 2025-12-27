@@ -2,8 +2,11 @@
   "$GMObject":"",
   "%Name":"obj_Dream_Cursor",
   "eventList":[
-    {"$GMEvent":"v1","%Name":"","collisionObjectId":null,"eventNum":0,"eventType":3,"isDnD":false,"name":"","resourceType":"GMEvent","resourceVersion":"2.0",},
     {"$GMEvent":"v1","%Name":"","collisionObjectId":null,"eventNum":0,"eventType":8,"isDnD":false,"name":"","resourceType":"GMEvent","resourceVersion":"2.0",},
+    {"$GMEvent":"v1","%Name":"","collisionObjectId":null,"eventNum":0,"eventType":3,"isDnD":false,"name":"","resourceType":"GMEvent","resourceVersion":"2.0",},
+    {"$GMEvent":"v1","%Name":"","collisionObjectId":null,"eventNum":0,"eventType":0,"isDnD":false,"name":"","resourceType":"GMEvent","resourceVersion":"2.0",},
+    {"$GMEvent":"v1","%Name":"","collisionObjectId":null,"eventNum":10,"eventType":7,"isDnD":false,"name":"","resourceType":"GMEvent","resourceVersion":"2.0",},
+    {"$GMEvent":"v1","%Name":"","collisionObjectId":null,"eventNum":11,"eventType":7,"isDnD":false,"name":"","resourceType":"GMEvent","resourceVersion":"2.0",},
   ],
   "managed":true,
   "name":"obj_Dream_Cursor",
@@ -13,8 +16,8 @@
     "path":"folders/Objects/Game UI/Indicators.yy",
   },
   "parentObjectId":{
-    "name":"obj_Astral_Indicator",
-    "path":"objects/obj_Astral_Indicator/obj_Astral_Indicator.yy",
+    "name":"obj_Indicator_Parent",
+    "path":"objects/obj_Indicator_Parent/obj_Indicator_Parent.yy",
   },
   "persistent":false,
   "physicsAngularDamping":0.1,

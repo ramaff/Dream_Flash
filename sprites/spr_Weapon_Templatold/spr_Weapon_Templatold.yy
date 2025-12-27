@@ -1,5 +1,5 @@
 {
-  "$GMSprite":"",
+  "$GMSprite":"v2",
   "%Name":"spr_Weapon_Templatold",
   "bboxMode":0,
   "bbox_bottom":127,
@@ -12,8 +12,8 @@
   "edgeFiltering":false,
   "For3D":false,
   "frames":[
-    {"$GMSpriteFrame":"","%Name":"dbdc3a84-b213-4895-83bb-d62ccd28e865","name":"dbdc3a84-b213-4895-83bb-d62ccd28e865","resourceType":"GMSpriteFrame","resourceVersion":"2.0",},
-    {"$GMSpriteFrame":"","%Name":"bda704e8-d042-4da8-ad4b-6784494cca9e","name":"bda704e8-d042-4da8-ad4b-6784494cca9e","resourceType":"GMSpriteFrame","resourceVersion":"2.0",},
+    {"$GMSpriteFrame":"v1","%Name":"dbdc3a84-b213-4895-83bb-d62ccd28e865","name":"dbdc3a84-b213-4895-83bb-d62ccd28e865","resourceType":"GMSpriteFrame","resourceVersion":"2.0",},
+    {"$GMSpriteFrame":"v1","%Name":"bda704e8-d042-4da8-ad4b-6784494cca9e","name":"bda704e8-d042-4da8-ad4b-6784494cca9e","resourceType":"GMSpriteFrame","resourceVersion":"2.0",},
   ],
   "gridX":0,
   "gridY":0,

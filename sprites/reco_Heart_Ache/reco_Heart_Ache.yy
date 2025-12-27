@@ -1,5 +1,5 @@
 {
-  "$GMSprite":"",
+  "$GMSprite":"v2",
   "%Name":"reco_Heart_Ache",
   "bboxMode":0,
   "bbox_bottom":293,
@@ -12,7 +12,7 @@
   "edgeFiltering":false,
   "For3D":false,
   "frames":[
-    {"$GMSpriteFrame":"","%Name":"2662081a-497d-4a3c-9195-7970fb1c385e","name":"2662081a-497d-4a3c-9195-7970fb1c385e","resourceType":"GMSpriteFrame","resourceVersion":"2.0",},
+    {"$GMSpriteFrame":"v1","%Name":"2662081a-497d-4a3c-9195-7970fb1c385e","name":"2662081a-497d-4a3c-9195-7970fb1c385e","resourceType":"GMSpriteFrame","resourceVersion":"2.0",},
   ],
   "gridX":0,
   "gridY":0,

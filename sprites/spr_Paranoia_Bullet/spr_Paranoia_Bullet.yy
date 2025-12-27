@@ -1,5 +1,5 @@
 {
-  "$GMSprite":"",
+  "$GMSprite":"v2",
   "%Name":"spr_Paranoia_Bullet",
   "bboxMode":2,
   "bbox_bottom":54,
@@ -12,7 +12,7 @@
   "edgeFiltering":false,
   "For3D":false,
   "frames":[
-    {"$GMSpriteFrame":"","%Name":"75011680-8f12-46b8-af9d-5da4ee82adb4","name":"75011680-8f12-46b8-af9d-5da4ee82adb4","resourceType":"GMSpriteFrame","resourceVersion":"2.0",},
+    {"$GMSpriteFrame":"v1","%Name":"75011680-8f12-46b8-af9d-5da4ee82adb4","name":"75011680-8f12-46b8-af9d-5da4ee82adb4","resourceType":"GMSpriteFrame","resourceVersion":"2.0",},
   ],
   "gridX":0,
   "gridY":0,

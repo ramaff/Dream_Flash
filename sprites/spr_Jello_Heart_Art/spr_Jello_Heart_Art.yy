@@ -1,5 +1,5 @@
 {
-  "$GMSprite":"",
+  "$GMSprite":"v2",
   "%Name":"spr_Jello_Heart_Art",
   "bboxMode":1,
   "bbox_bottom":163,
@@ -12,7 +12,7 @@
   "edgeFiltering":false,
   "For3D":false,
   "frames":[
-    {"$GMSpriteFrame":"","%Name":"20f52b33-cd47-45ad-b8c7-d10de53c649e","name":"20f52b33-cd47-45ad-b8c7-d10de53c649e","resourceType":"GMSpriteFrame","resourceVersion":"2.0",},
+    {"$GMSpriteFrame":"v1","%Name":"20f52b33-cd47-45ad-b8c7-d10de53c649e","name":"20f52b33-cd47-45ad-b8c7-d10de53c649e","resourceType":"GMSpriteFrame","resourceVersion":"2.0",},
   ],
   "gridX":0,
   "gridY":0,

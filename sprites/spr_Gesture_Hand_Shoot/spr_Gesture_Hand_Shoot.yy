@@ -1,5 +1,5 @@
 {
-  "$GMSprite":"",
+  "$GMSprite":"v2",
   "%Name":"spr_Gesture_Hand_Shoot",
   "bboxMode":2,
   "bbox_bottom":119,
@@ -12,7 +12,7 @@
   "edgeFiltering":false,
   "For3D":false,
   "frames":[
-    {"$GMSpriteFrame":"","%Name":"5364ca5b-cabe-45cc-b2ff-a47e7ac17775","name":"5364ca5b-cabe-45cc-b2ff-a47e7ac17775","resourceType":"GMSpriteFrame","resourceVersion":"2.0",},
+    {"$GMSpriteFrame":"v1","%Name":"5364ca5b-cabe-45cc-b2ff-a47e7ac17775","name":"5364ca5b-cabe-45cc-b2ff-a47e7ac17775","resourceType":"GMSpriteFrame","resourceVersion":"2.0",},
   ],
   "gridX":0,
   "gridY":0,

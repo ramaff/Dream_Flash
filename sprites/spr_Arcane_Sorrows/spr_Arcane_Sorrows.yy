@@ -1,5 +1,5 @@
 {
-  "$GMSprite":"",
+  "$GMSprite":"v2",
   "%Name":"spr_Arcane_Sorrows",
   "bboxMode":0,
   "bbox_bottom":411,
@@ -12,7 +12,7 @@
   "edgeFiltering":false,
   "For3D":false,
   "frames":[
-    {"$GMSpriteFrame":"","%Name":"5182634c-5e0d-4dcc-9be3-f4375622ac02","name":"5182634c-5e0d-4dcc-9be3-f4375622ac02","resourceType":"GMSpriteFrame","resourceVersion":"2.0",},
+    {"$GMSpriteFrame":"v1","%Name":"5182634c-5e0d-4dcc-9be3-f4375622ac02","name":"5182634c-5e0d-4dcc-9be3-f4375622ac02","resourceType":"GMSpriteFrame","resourceVersion":"2.0",},
   ],
   "gridX":0,
   "gridY":0,

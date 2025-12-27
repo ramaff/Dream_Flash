@@ -1,5 +1,5 @@
 {
-  "$GMSprite":"",
+  "$GMSprite":"v2",
   "%Name":"spr_Amorphous_Prime_Squish",
   "bboxMode":0,
   "bbox_bottom":432,
@@ -12,7 +12,7 @@
   "edgeFiltering":false,
   "For3D":false,
   "frames":[
-    {"$GMSpriteFrame":"","%Name":"13c9a6b8-c156-4711-bd9a-baba3f4d8f51","name":"13c9a6b8-c156-4711-bd9a-baba3f4d8f51","resourceType":"GMSpriteFrame","resourceVersion":"2.0",},
+    {"$GMSpriteFrame":"v1","%Name":"13c9a6b8-c156-4711-bd9a-baba3f4d8f51","name":"13c9a6b8-c156-4711-bd9a-baba3f4d8f51","resourceType":"GMSpriteFrame","resourceVersion":"2.0",},
   ],
   "gridX":0,
   "gridY":0,

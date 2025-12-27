@@ -1,5 +1,5 @@
 {
-  "$GMSprite":"",
+  "$GMSprite":"v2",
   "%Name":"spr_Hopeful_Memory_Art",
   "bboxMode":0,
   "bbox_bottom":157,
@@ -12,7 +12,7 @@
   "edgeFiltering":false,
   "For3D":false,
   "frames":[
-    {"$GMSpriteFrame":"","%Name":"bd891e4f-7780-4d95-bdd7-206fa46cc5ed","name":"bd891e4f-7780-4d95-bdd7-206fa46cc5ed","resourceType":"GMSpriteFrame","resourceVersion":"2.0",},
+    {"$GMSpriteFrame":"v1","%Name":"bd891e4f-7780-4d95-bdd7-206fa46cc5ed","name":"bd891e4f-7780-4d95-bdd7-206fa46cc5ed","resourceType":"GMSpriteFrame","resourceVersion":"2.0",},
   ],
   "gridX":0,
   "gridY":0,

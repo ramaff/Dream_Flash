@@ -1,5 +1,5 @@
 {
-  "$GMSprite":"",
+  "$GMSprite":"v2",
   "%Name":"spr_Sharp_Machine_Gun_Art",
   "bboxMode":1,
   "bbox_bottom":163,
@@ -12,7 +12,7 @@
   "edgeFiltering":false,
   "For3D":false,
   "frames":[
-    {"$GMSpriteFrame":"","%Name":"e5401c96-cf57-4200-a130-b946f82f4988","name":"e5401c96-cf57-4200-a130-b946f82f4988","resourceType":"GMSpriteFrame","resourceVersion":"2.0",},
+    {"$GMSpriteFrame":"v1","%Name":"e5401c96-cf57-4200-a130-b946f82f4988","name":"e5401c96-cf57-4200-a130-b946f82f4988","resourceType":"GMSpriteFrame","resourceVersion":"2.0",},
   ],
   "gridX":0,
   "gridY":0,

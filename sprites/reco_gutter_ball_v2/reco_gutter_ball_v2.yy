@@ -1,5 +1,5 @@
 {
-  "$GMSprite":"",
+  "$GMSprite":"v2",
   "%Name":"reco_gutter_ball_v2",
   "bboxMode":0,
   "bbox_bottom":259,
@@ -12,7 +12,7 @@
   "edgeFiltering":false,
   "For3D":false,
   "frames":[
-    {"$GMSpriteFrame":"","%Name":"ff748557-13bc-4650-a5e7-486af7b7fda0","name":"ff748557-13bc-4650-a5e7-486af7b7fda0","resourceType":"GMSpriteFrame","resourceVersion":"2.0",},
+    {"$GMSpriteFrame":"v1","%Name":"ff748557-13bc-4650-a5e7-486af7b7fda0","name":"ff748557-13bc-4650-a5e7-486af7b7fda0","resourceType":"GMSpriteFrame","resourceVersion":"2.0",},
   ],
   "gridX":0,
   "gridY":0,

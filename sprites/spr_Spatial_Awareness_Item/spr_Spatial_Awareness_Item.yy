@@ -1,5 +1,5 @@
 {
-  "$GMSprite":"",
+  "$GMSprite":"v2",
   "%Name":"spr_Spatial_Awareness_Item",
   "bboxMode":0,
   "bbox_bottom":157,
@@ -12,7 +12,7 @@
   "edgeFiltering":false,
   "For3D":false,
   "frames":[
-    {"$GMSpriteFrame":"","%Name":"f5ca9d06-dbaa-4b6f-b3d3-54c0fe9a9fa5","name":"f5ca9d06-dbaa-4b6f-b3d3-54c0fe9a9fa5","resourceType":"GMSpriteFrame","resourceVersion":"2.0",},
+    {"$GMSpriteFrame":"v1","%Name":"f5ca9d06-dbaa-4b6f-b3d3-54c0fe9a9fa5","name":"f5ca9d06-dbaa-4b6f-b3d3-54c0fe9a9fa5","resourceType":"GMSpriteFrame","resourceVersion":"2.0",},
   ],
   "gridX":0,
   "gridY":0,

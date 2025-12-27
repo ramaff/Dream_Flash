@@ -1,5 +1,5 @@
 {
-  "$GMSprite":"",
+  "$GMSprite":"v2",
   "%Name":"spr_Dark_Ball",
   "bboxMode":2,
   "bbox_bottom":66,
@@ -12,7 +12,7 @@
   "edgeFiltering":false,
   "For3D":false,
   "frames":[
-    {"$GMSpriteFrame":"","%Name":"41d4eb79-5299-43ea-8384-f3e50bd0e364","name":"41d4eb79-5299-43ea-8384-f3e50bd0e364","resourceType":"GMSpriteFrame","resourceVersion":"2.0",},
+    {"$GMSpriteFrame":"v1","%Name":"41d4eb79-5299-43ea-8384-f3e50bd0e364","name":"41d4eb79-5299-43ea-8384-f3e50bd0e364","resourceType":"GMSpriteFrame","resourceVersion":"2.0",},
   ],
   "gridX":0,
   "gridY":0,

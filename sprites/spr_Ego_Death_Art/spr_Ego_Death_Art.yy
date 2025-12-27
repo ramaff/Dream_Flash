@@ -1,5 +1,5 @@
 {
-  "$GMSprite":"",
+  "$GMSprite":"v2",
   "%Name":"spr_Ego_Death_Art",
   "bboxMode":0,
   "bbox_bottom":157,
@@ -12,7 +12,7 @@
   "edgeFiltering":false,
   "For3D":false,
   "frames":[
-    {"$GMSpriteFrame":"","%Name":"04d4c701-0744-47d3-be8d-359cd2152af2","name":"04d4c701-0744-47d3-be8d-359cd2152af2","resourceType":"GMSpriteFrame","resourceVersion":"2.0",},
+    {"$GMSpriteFrame":"v1","%Name":"04d4c701-0744-47d3-be8d-359cd2152af2","name":"04d4c701-0744-47d3-be8d-359cd2152af2","resourceType":"GMSpriteFrame","resourceVersion":"2.0",},
   ],
   "gridX":0,
   "gridY":0,

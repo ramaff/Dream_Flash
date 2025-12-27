@@ -1,5 +1,5 @@
 {
-  "$GMSprite":"",
+  "$GMSprite":"v2",
   "%Name":"spr_Soul_Move_Bit",
   "bboxMode":0,
   "bbox_bottom":31,
@@ -12,7 +12,7 @@
   "edgeFiltering":false,
   "For3D":false,
   "frames":[
-    {"$GMSpriteFrame":"","%Name":"cf7f5989-3fbb-4fab-8ea4-e7d7e92f97e0","name":"cf7f5989-3fbb-4fab-8ea4-e7d7e92f97e0","resourceType":"GMSpriteFrame","resourceVersion":"2.0",},
+    {"$GMSpriteFrame":"v1","%Name":"cf7f5989-3fbb-4fab-8ea4-e7d7e92f97e0","name":"cf7f5989-3fbb-4fab-8ea4-e7d7e92f97e0","resourceType":"GMSpriteFrame","resourceVersion":"2.0",},
   ],
   "gridX":0,
   "gridY":0,

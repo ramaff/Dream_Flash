@@ -19,7 +19,7 @@ function scr_Weapon_Rebound_Mouse(_bspeed = other.speed, _bsize = other.image_xs
 			Shot_Sprite: sprite_get_name(_bsprite),
 			Shot_Type: "obj_Lesser_Soul_Shot",
 			Shot_Speed: 4,
-			Shot_Direction: _biangle + 180, //point_direction(obj_Soul_Parent.x,obj_Soul_Parent.y,mouse_x,mouse_y),
+			Shot_Direction: _biangle + 180,
 			Shot_Power: pow,
 			Shot_Knock_Back: 10,
 			Shot_Life_Span: 100,
@@ -27,7 +27,7 @@ function scr_Weapon_Rebound_Mouse(_bspeed = other.speed, _bsize = other.image_xs
 			Shot_Size: _bsize,
 			Shot_Forward: 0,
 			Shot_Form_Show: 0,
-			Shot_Angle: _biangle + 180, //point_direction(obj_Soul_Parent.x,obj_Soul_Parent.y,mouse_x,mouse_y)
+			Shot_Angle: _biangle + 180,
 			Shot_Init_Grow: 0
 		};
 		

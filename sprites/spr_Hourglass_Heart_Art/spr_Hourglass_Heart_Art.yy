@@ -1,5 +1,5 @@
 {
-  "$GMSprite":"",
+  "$GMSprite":"v2",
   "%Name":"spr_Hourglass_Heart_Art",
   "bboxMode":0,
   "bbox_bottom":129,
@@ -12,7 +12,7 @@
   "edgeFiltering":false,
   "For3D":false,
   "frames":[
-    {"$GMSpriteFrame":"","%Name":"be836ca6-213d-44f2-835d-1cd5f879b75b","name":"be836ca6-213d-44f2-835d-1cd5f879b75b","resourceType":"GMSpriteFrame","resourceVersion":"2.0",},
+    {"$GMSpriteFrame":"v1","%Name":"be836ca6-213d-44f2-835d-1cd5f879b75b","name":"be836ca6-213d-44f2-835d-1cd5f879b75b","resourceType":"GMSpriteFrame","resourceVersion":"2.0",},
   ],
   "gridX":0,
   "gridY":0,

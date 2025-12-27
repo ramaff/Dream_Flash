@@ -1,5 +1,5 @@
 {
-  "$GMSprite":"",
+  "$GMSprite":"v2",
   "%Name":"spr_Pink_Gem_Shot",
   "bboxMode":0,
   "bbox_bottom":72,
@@ -12,7 +12,7 @@
   "edgeFiltering":false,
   "For3D":false,
   "frames":[
-    {"$GMSpriteFrame":"","%Name":"60f46a53-4ba6-48ae-8213-0bcf71d86a66","name":"60f46a53-4ba6-48ae-8213-0bcf71d86a66","resourceType":"GMSpriteFrame","resourceVersion":"2.0",},
+    {"$GMSpriteFrame":"v1","%Name":"60f46a53-4ba6-48ae-8213-0bcf71d86a66","name":"60f46a53-4ba6-48ae-8213-0bcf71d86a66","resourceType":"GMSpriteFrame","resourceVersion":"2.0",},
   ],
   "gridX":0,
   "gridY":0,

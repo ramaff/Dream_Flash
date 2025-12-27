@@ -11,6 +11,17 @@ depth = -3;
 var ybott = camera_get_view_y(view) + 80 + 11;
 var ytop = camera_get_view_y(view) + 156 + 379 + 64;
 
+var _rot = 0;
+var _alf = 0.5;
+var _col = c_gray
+
+if global.recollectDisplayValue = itemVal {
+	_rot = scr_Wave(-90, 90, 4, 0);
+	_alf = 1;
+	_col = c_white
+}
+
+
 
 if global.recollectCategory = "Bosses" || global.recollectCategory = "State" || global.recollectCategory = "Information" {
 	ybott -= 31;
@@ -40,25 +51,25 @@ if image_alpha = 1 {
 		if y > ytop - 82 {
 			var showam = 82 - (y - (ytop - 82));
 			var showdiff = 82 - sprite_get_height(recollectionSprite);
-			draw_sprite_part_ext(sprite_index,image_index,0,0,164,showam * 2,x-41,y-41,0.5,0.5,c_white,1);
+			draw_sprite_part_ext(sprite_index,image_index,0,0,164,showam * 2,x-41,y-41,0.5,0.5,_col, _alf);
 		} else if y < ybott + 82 {
 			var showam = 82 - ((ybott + 82) - y);
 			var showdiff = 82 - sprite_get_height(recollectionSprite);
-			draw_sprite_part_ext(sprite_index,image_index,0,(82 - showam) * 2,164,showam * 2,x-41,y-41 + (82 - showam),0.5,0.5,c_white,1);
+			draw_sprite_part_ext(sprite_index,image_index,0,(82 - showam) * 2,164,showam * 2,x-41,y-41 + (82 - showam),0.5,0.5,_col, _alf);
 		} else {
-			draw_self();	
+			draw_sprite_ext(sprite_index, image_index, x, y, image_xscale, image_yscale, 0, _col, _alf);
 		}
 	} else {
 		image_xscale = 1;
 		image_yscale = 1;
 		if y > ytop - 144 {
 			var showam = 144 - (y - (ytop - 144));
-			draw_sprite_part_ext(sprite_index,image_index,0,0,288,showam * 2,x-72,y-72,0.5,0.5,c_white,1);
+			draw_sprite_part_ext(sprite_index,image_index,0,0,288,showam * 2,x-72,y-72,0.5,0.5,_col, _alf);
 		} else if y < ybott + 144 {
 			var showam = 144 - ((ybott + 144) - y);
-			draw_sprite_part_ext(sprite_index,image_index,0,(144 - showam) * 2,288,showam * 2,x-72,y-72 + (144 - showam),0.5,0.5,c_white,1);
+			draw_sprite_part_ext(sprite_index,image_index,0,(144 - showam) * 2,288,showam * 2,x-72,y-72 + (144 - showam),0.5,0.5,_col, _alf);
 		} else {
-			draw_sprite_ext(sprite_index,image_index,x,y,0.5,0.5,0,c_white,1);
+			draw_sprite_ext(sprite_index,image_index,x,y,0.5,0.5,0,_col, _alf);
 		}
 	}
 }
@@ -67,9 +78,9 @@ if image_alpha = 1 {
 var boxSize = 82;
 
 if global.recollectCategory != "Bosses" and global.recollectCategory != "State"  and global.recollectCategory != "Information" {
-	var boxSize = 82;
+	boxSize = 82;
 } else {
-	var boxSize = 144;
+	boxSize = 144;
 	//boxSize = sprite_get_height(recollectionSprite) * recollectionSize;
 	recollectionSize = 144 / sprite_get_width(recollectionSprite)
 }
@@ -90,24 +101,22 @@ if image_alpha != 0 {
 		//boxSize = 288;
 		var showam = boxSize - (y - (ytop - boxSize));
 		var showspr = rHeight - (y - (ytop - rHeight));
-		//draw_sprite_part_ext(recollectionSprite,0,0,0,256/recollectionSize,showam/recollectionSize,x-(rWidth / 2),y-(rHeight / 2),recollectionSize,recollectionSize,c_white,1);
-		draw_sprite_part_ext(recollectionSprite,ind,0,0,256/recollectionSize,showam/recollectionSize,x-(rWidth / 2),y-(boxSize / 2),recollectionSize,recollectionSize,c_white,1);
+		
+		draw_sprite_part_ext(recollectionSprite,ind,0,0,256/recollectionSize,showam/recollectionSize,x-(rWidth / 2),y-(boxSize / 2),recollectionSize,recollectionSize,_col, _alf);
 	} else if y < ybott + boxSize {
 		//boxSize = -144;
 		var showam = boxSize - ((ybott + boxSize) - y);
 		var showspr = rHeight - ((ybott + rHeight) - y);
-		//draw_sprite_part_ext(recollectionSprite,0,0,rHeight - (showam),256/recollectionSize,1600,x-(rWidth / 2),y - (rHeight / 2) + recollectionSize * (rHeight - (showam)),recollectionSize,recollectionSize,c_white,1);
-		draw_sprite_part_ext(recollectionSprite,ind,0,(boxSize - showam) / recollectionSize,256/recollectionSize,boxSize / recollectionSize,x-(rWidth / 2),(y - (boxSize / 2)) + (boxSize - (showam)),recollectionSize,recollectionSize,c_white,1);
+		
+		draw_sprite_part_ext(recollectionSprite,ind,0,(boxSize - showam) / recollectionSize,256/recollectionSize,boxSize / recollectionSize,x-(rWidth / 2),(y - (boxSize / 2)) + (boxSize - (showam)),recollectionSize,recollectionSize,_col, _alf);
 	} else {
-		draw_sprite_ext(recollectionSprite,ind,x,y,recollectionSize,recollectionSize,0,c_white,1)	
+		draw_sprite_ext(recollectionSprite,ind,x,y,recollectionSize,recollectionSize,0,_col, _alf)	
 	}
 }
 
+
 image_xscale = 0.5;
 image_yscale = 0.5;
-
-
-//draw_sprite_ext(recollectionSprite,0,x-(sprite_get_xoffset(recollectionSprite) * recollectionSize)+(rWidth / 2),y-(sprite_get_yoffset(recollectionSprite) * recollectionSize)+(rHeight / 2),recollectionSize,recollectionSize,0,c_white,1)	
 
 
 //texture_set_interpolation(false);

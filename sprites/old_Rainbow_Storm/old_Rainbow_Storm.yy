@@ -1,5 +1,5 @@
 {
-  "$GMSprite":"",
+  "$GMSprite":"v2",
   "%Name":"old_Rainbow_Storm",
   "bboxMode":0,
   "bbox_bottom":147,
@@ -12,7 +12,7 @@
   "edgeFiltering":false,
   "For3D":false,
   "frames":[
-    {"$GMSpriteFrame":"","%Name":"67f281d7-316c-4aa4-a225-41dafd6a0935","name":"67f281d7-316c-4aa4-a225-41dafd6a0935","resourceType":"GMSpriteFrame","resourceVersion":"2.0",},
+    {"$GMSpriteFrame":"v1","%Name":"67f281d7-316c-4aa4-a225-41dafd6a0935","name":"67f281d7-316c-4aa4-a225-41dafd6a0935","resourceType":"GMSpriteFrame","resourceVersion":"2.0",},
   ],
   "gridX":0,
   "gridY":0,

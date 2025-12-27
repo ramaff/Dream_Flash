@@ -1,5 +1,5 @@
 {
-  "$GMSprite":"",
+  "$GMSprite":"v2",
   "%Name":"bg_Deep_Woods_Fallout",
   "bboxMode":0,
   "bbox_bottom":127,
@@ -12,7 +12,7 @@
   "edgeFiltering":false,
   "For3D":false,
   "frames":[
-    {"$GMSpriteFrame":"","%Name":"23a0e847-cf46-4a11-b3a8-04d823ae332f","name":"23a0e847-cf46-4a11-b3a8-04d823ae332f","resourceType":"GMSpriteFrame","resourceVersion":"2.0",},
+    {"$GMSpriteFrame":"v1","%Name":"23a0e847-cf46-4a11-b3a8-04d823ae332f","name":"23a0e847-cf46-4a11-b3a8-04d823ae332f","resourceType":"GMSpriteFrame","resourceVersion":"2.0",},
   ],
   "gridX":0,
   "gridY":0,

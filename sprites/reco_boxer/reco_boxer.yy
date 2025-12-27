@@ -1,5 +1,5 @@
 {
-  "$GMSprite":"",
+  "$GMSprite":"v2",
   "%Name":"reco_boxer",
   "bboxMode":0,
   "bbox_bottom":470,
@@ -12,7 +12,7 @@
   "edgeFiltering":false,
   "For3D":false,
   "frames":[
-    {"$GMSpriteFrame":"","%Name":"c7f9e1c1-b72d-48ee-ba0a-1d1f67e99111","name":"c7f9e1c1-b72d-48ee-ba0a-1d1f67e99111","resourceType":"GMSpriteFrame","resourceVersion":"2.0",},
+    {"$GMSpriteFrame":"v1","%Name":"c7f9e1c1-b72d-48ee-ba0a-1d1f67e99111","name":"c7f9e1c1-b72d-48ee-ba0a-1d1f67e99111","resourceType":"GMSpriteFrame","resourceVersion":"2.0",},
   ],
   "gridX":0,
   "gridY":0,

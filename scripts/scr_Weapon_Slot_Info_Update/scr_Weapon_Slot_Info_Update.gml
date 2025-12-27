@@ -6,13 +6,15 @@ function scr_sort_by_scale(a, b) {
 }
 
 function scr_Weapon_Slot_Info_Update(_weapon_slot_info){
-	var _win_y = camcon.window_scale * camcon.view_zoom * camera_get_view_height(view);
+	//Print_DF($"window_scale: {camcon.window_scale}, view_zoom: {camcon.view_zoom}", 5)
+	//Print_DF($"camera_get_view_height: {camera_get_view_height(view)}", 5)
+	var _win_y = camcon.window_scale * camcon.view_zoom * camera_get_view_height(view) - 120;
 	
 	var _i = 0;
 	var _scale = 1;
 	var _xx_width = 55;
 	var _xx_center = 105;
-	var _yy_center = _win_y - 115;
+	var _yy_center = _win_y;
 	var _yy_width = 40;
 	
 	var _xx = 0;
@@ -41,4 +43,6 @@ function scr_Weapon_Slot_Info_Update(_weapon_slot_info){
 	Soul_Weapons_Control.angular_rotation = floor(Soul_Weapons_Control.angular_rotation * 0.9)
 	
 	array_sort(_weapon_slot_info, scr_sort_by_scale)
+	
+	return _weapon_slot_info
 }

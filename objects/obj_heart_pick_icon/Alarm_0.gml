@@ -12,7 +12,7 @@ with(soul_source) {
 	soulinvincibility += 30;
 	
 	scr_setup_dmg_indicator(x,y, 2, c_red)
-	var _boss_dir = point_direction(x + _xx, y + _yy, mouse_x, mouse_y)
+	var _boss_dir = point_direction(x + _xx, y + _yy, obj_Astral_Indicator.x, obj_Astral_Indicator.y)
 	if instance_exists(obj_Boss_Parent) {
 		var _boss_tar = instance_nearest(x, y, obj_Boss_Parent)
 		_boss_dir = point_direction(x + _xx, y + _yy, _boss_tar.x, _boss_tar.y)

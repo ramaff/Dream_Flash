@@ -1,5 +1,5 @@
 {
-  "$GMSprite":"",
+  "$GMSprite":"v2",
   "%Name":"spr_Blood_Sorrow",
   "bboxMode":2,
   "bbox_bottom":84,
@@ -12,7 +12,7 @@
   "edgeFiltering":false,
   "For3D":false,
   "frames":[
-    {"$GMSpriteFrame":"","%Name":"0e86e91e-e55d-4182-85e3-76ab0d0e1c6d","name":"0e86e91e-e55d-4182-85e3-76ab0d0e1c6d","resourceType":"GMSpriteFrame","resourceVersion":"2.0",},
+    {"$GMSpriteFrame":"v1","%Name":"0e86e91e-e55d-4182-85e3-76ab0d0e1c6d","name":"0e86e91e-e55d-4182-85e3-76ab0d0e1c6d","resourceType":"GMSpriteFrame","resourceVersion":"2.0",},
   ],
   "gridX":0,
   "gridY":0,

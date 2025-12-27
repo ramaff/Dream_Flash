@@ -1,5 +1,5 @@
 {
-  "$GMSprite":"",
+  "$GMSprite":"v2",
   "%Name":"spr_Harder_Hearts_Item",
   "bboxMode":0,
   "bbox_bottom":157,
@@ -12,7 +12,7 @@
   "edgeFiltering":false,
   "For3D":false,
   "frames":[
-    {"$GMSpriteFrame":"","%Name":"35981ae4-e09b-4ceb-bc91-9ea05b75ecbf","name":"35981ae4-e09b-4ceb-bc91-9ea05b75ecbf","resourceType":"GMSpriteFrame","resourceVersion":"2.0",},
+    {"$GMSpriteFrame":"v1","%Name":"35981ae4-e09b-4ceb-bc91-9ea05b75ecbf","name":"35981ae4-e09b-4ceb-bc91-9ea05b75ecbf","resourceType":"GMSpriteFrame","resourceVersion":"2.0",},
   ],
   "gridX":0,
   "gridY":0,

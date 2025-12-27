@@ -1,5 +1,5 @@
 {
-  "$GMSprite":"",
+  "$GMSprite":"v2",
   "%Name":"spr_The_Soul_Teleport_After_Image",
   "bboxMode":2,
   "bbox_bottom":130,
@@ -12,7 +12,7 @@
   "edgeFiltering":false,
   "For3D":false,
   "frames":[
-    {"$GMSpriteFrame":"","%Name":"a5cf28d7-7e78-4c42-9dc1-2b36752283c7","name":"a5cf28d7-7e78-4c42-9dc1-2b36752283c7","resourceType":"GMSpriteFrame","resourceVersion":"2.0",},
+    {"$GMSpriteFrame":"v1","%Name":"a5cf28d7-7e78-4c42-9dc1-2b36752283c7","name":"a5cf28d7-7e78-4c42-9dc1-2b36752283c7","resourceType":"GMSpriteFrame","resourceVersion":"2.0",},
   ],
   "gridX":0,
   "gridY":0,

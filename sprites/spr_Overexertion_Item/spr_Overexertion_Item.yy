@@ -1,5 +1,5 @@
 {
-  "$GMSprite":"",
+  "$GMSprite":"v2",
   "%Name":"spr_Overexertion_Item",
   "bboxMode":0,
   "bbox_bottom":122,
@@ -12,7 +12,7 @@
   "edgeFiltering":false,
   "For3D":false,
   "frames":[
-    {"$GMSpriteFrame":"","%Name":"7d327270-964c-423f-abcf-cc304f72e685","name":"7d327270-964c-423f-abcf-cc304f72e685","resourceType":"GMSpriteFrame","resourceVersion":"2.0",},
+    {"$GMSpriteFrame":"v1","%Name":"7d327270-964c-423f-abcf-cc304f72e685","name":"7d327270-964c-423f-abcf-cc304f72e685","resourceType":"GMSpriteFrame","resourceVersion":"2.0",},
   ],
   "gridX":0,
   "gridY":0,

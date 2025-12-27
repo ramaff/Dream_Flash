@@ -1,5 +1,5 @@
 {
-  "$GMSprite":"",
+  "$GMSprite":"v2",
   "%Name":"reco_Angry_Pointer",
   "bboxMode":0,
   "bbox_bottom":179,
@@ -12,7 +12,7 @@
   "edgeFiltering":false,
   "For3D":false,
   "frames":[
-    {"$GMSpriteFrame":"","%Name":"49a06ed5-1749-41e0-b97c-7d043b9ffaff","name":"49a06ed5-1749-41e0-b97c-7d043b9ffaff","resourceType":"GMSpriteFrame","resourceVersion":"2.0",},
+    {"$GMSpriteFrame":"v1","%Name":"49a06ed5-1749-41e0-b97c-7d043b9ffaff","name":"49a06ed5-1749-41e0-b97c-7d043b9ffaff","resourceType":"GMSpriteFrame","resourceVersion":"2.0",},
   ],
   "gridX":0,
   "gridY":0,

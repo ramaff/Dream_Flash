@@ -1,5 +1,5 @@
 {
-  "$GMSprite":"",
+  "$GMSprite":"v2",
   "%Name":"bg_Dream",
   "bboxMode":0,
   "bbox_bottom":1328,
@@ -12,7 +12,7 @@
   "edgeFiltering":false,
   "For3D":false,
   "frames":[
-    {"$GMSpriteFrame":"","%Name":"8d960fd2-8aa7-478f-b6c5-d8b6d67270a2","name":"8d960fd2-8aa7-478f-b6c5-d8b6d67270a2","resourceType":"GMSpriteFrame","resourceVersion":"2.0",},
+    {"$GMSpriteFrame":"v1","%Name":"8d960fd2-8aa7-478f-b6c5-d8b6d67270a2","name":"8d960fd2-8aa7-478f-b6c5-d8b6d67270a2","resourceType":"GMSpriteFrame","resourceVersion":"2.0",},
   ],
   "gridX":0,
   "gridY":0,

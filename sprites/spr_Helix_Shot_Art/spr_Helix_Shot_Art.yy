@@ -1,5 +1,5 @@
 {
-  "$GMSprite":"",
+  "$GMSprite":"v2",
   "%Name":"spr_Helix_Shot_Art",
   "bboxMode":1,
   "bbox_bottom":163,
@@ -12,7 +12,7 @@
   "edgeFiltering":false,
   "For3D":false,
   "frames":[
-    {"$GMSpriteFrame":"","%Name":"cee599a8-da50-4805-99a5-e3627819cbc8","name":"cee599a8-da50-4805-99a5-e3627819cbc8","resourceType":"GMSpriteFrame","resourceVersion":"2.0",},
+    {"$GMSpriteFrame":"v1","%Name":"cee599a8-da50-4805-99a5-e3627819cbc8","name":"cee599a8-da50-4805-99a5-e3627819cbc8","resourceType":"GMSpriteFrame","resourceVersion":"2.0",},
   ],
   "gridX":0,
   "gridY":0,

@@ -5,3 +5,7 @@ if type != 10 {
 		y = starty - ((5*160)*global.scrollperc);
 	}
 }
+
+
+
+

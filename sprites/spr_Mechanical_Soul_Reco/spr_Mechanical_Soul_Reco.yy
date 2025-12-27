@@ -1,5 +1,5 @@
 {
-  "$GMSprite":"",
+  "$GMSprite":"v2",
   "%Name":"spr_Mechanical_Soul_Reco",
   "bboxMode":2,
   "bbox_bottom":170,
@@ -12,7 +12,7 @@
   "edgeFiltering":false,
   "For3D":false,
   "frames":[
-    {"$GMSpriteFrame":"","%Name":"20608f1c-7e7c-4abe-ad46-282b16b283d5","name":"20608f1c-7e7c-4abe-ad46-282b16b283d5","resourceType":"GMSpriteFrame","resourceVersion":"2.0",},
+    {"$GMSpriteFrame":"v1","%Name":"20608f1c-7e7c-4abe-ad46-282b16b283d5","name":"20608f1c-7e7c-4abe-ad46-282b16b283d5","resourceType":"GMSpriteFrame","resourceVersion":"2.0",},
   ],
   "gridX":0,
   "gridY":0,

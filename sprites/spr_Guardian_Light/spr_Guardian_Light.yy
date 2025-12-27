@@ -1,5 +1,5 @@
 {
-  "$GMSprite":"",
+  "$GMSprite":"v2",
   "%Name":"spr_Guardian_Light",
   "bboxMode":0,
   "bbox_bottom":66,
@@ -12,7 +12,7 @@
   "edgeFiltering":false,
   "For3D":false,
   "frames":[
-    {"$GMSpriteFrame":"","%Name":"dabca68e-8b6c-4724-afc2-0405dcfcdd50","name":"dabca68e-8b6c-4724-afc2-0405dcfcdd50","resourceType":"GMSpriteFrame","resourceVersion":"2.0",},
+    {"$GMSpriteFrame":"v1","%Name":"dabca68e-8b6c-4724-afc2-0405dcfcdd50","name":"dabca68e-8b6c-4724-afc2-0405dcfcdd50","resourceType":"GMSpriteFrame","resourceVersion":"2.0",},
   ],
   "gridX":0,
   "gridY":0,

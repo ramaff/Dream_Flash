@@ -1,5 +1,5 @@
 {
-  "$GMSprite":"",
+  "$GMSprite":"v2",
   "%Name":"reco_Cursed_Clapper",
   "bboxMode":1,
   "bbox_bottom":303,
@@ -12,7 +12,7 @@
   "edgeFiltering":false,
   "For3D":false,
   "frames":[
-    {"$GMSpriteFrame":"","%Name":"0048ce0c-d03a-494c-86f5-b8facd4ee6d7","name":"0048ce0c-d03a-494c-86f5-b8facd4ee6d7","resourceType":"GMSpriteFrame","resourceVersion":"2.0",},
+    {"$GMSpriteFrame":"v1","%Name":"0048ce0c-d03a-494c-86f5-b8facd4ee6d7","name":"0048ce0c-d03a-494c-86f5-b8facd4ee6d7","resourceType":"GMSpriteFrame","resourceVersion":"2.0",},
   ],
   "gridX":0,
   "gridY":0,

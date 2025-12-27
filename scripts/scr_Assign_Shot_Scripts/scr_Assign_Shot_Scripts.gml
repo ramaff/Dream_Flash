@@ -92,6 +92,7 @@ function scr_Assign_Shot_Scripts(){
 		array_push(_shot_step_scripts, scr_Shot_Orbit)
 		if shot_stats.Shot_Orbital_Type = 1 {
 			array_push(_shot_draw_scripts, scr_Shot_Orbit_Angle)
+			array_push(_shot_step_scripts, scr_Shot_Orbit_Release);
 		}
 	}
 	
@@ -147,6 +148,11 @@ function scr_Assign_Shot_Scripts(){
 	if shot_stats.Shot_Wave_Direction != 0 || shot_stats.Shot_Wave_Acceleration != 0 {
 		array_push(_shot_step_scripts, scr_Shot_Wave)
 	}
+
+	// this actually has to be one of the last b/c it deletes scripts from the list
+	//if shot_stats.Shot_Orbital_Type = 1 {
+	//	array_push(_shot_step_scripts, scr_Shot_Orbit_Release);
+	//}
 	
 	shot_stats.Shot_Step_Scripts = array_concat(shot_stats.Shot_Step_Scripts, _shot_step_scripts)
 	shot_stats.Shot_Draw_Scripts = array_concat(shot_stats.Shot_Draw_Scripts, _shot_draw_scripts)

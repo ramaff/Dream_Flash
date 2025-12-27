@@ -6,6 +6,8 @@ function scr_State_Form(){
 	}
 	
 	if scurrentstate = "Base" and global.bosscount > 0 and !scr_State_Recollection_Unlocked() {
+		obj_Soul_Parent.stransformedstate = global.soultransformedstate;
+		obj_Soul_Parent.soul_step_after_scripts = scr_Set_Soul_Step_After_Scripts(obj_Soul_Parent)
 		scr_State_Power_Up();	
 	}
 	

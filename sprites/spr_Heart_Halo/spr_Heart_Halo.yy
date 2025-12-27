@@ -1,5 +1,5 @@
 {
-  "$GMSprite":"",
+  "$GMSprite":"v2",
   "%Name":"spr_Heart_Halo",
   "bboxMode":0,
   "bbox_bottom":27,
@@ -12,7 +12,7 @@
   "edgeFiltering":false,
   "For3D":false,
   "frames":[
-    {"$GMSpriteFrame":"","%Name":"023e274a-f22a-4ea2-be2f-40e98b2dbb46","name":"023e274a-f22a-4ea2-be2f-40e98b2dbb46","resourceType":"GMSpriteFrame","resourceVersion":"2.0",},
+    {"$GMSpriteFrame":"v1","%Name":"023e274a-f22a-4ea2-be2f-40e98b2dbb46","name":"023e274a-f22a-4ea2-be2f-40e98b2dbb46","resourceType":"GMSpriteFrame","resourceVersion":"2.0",},
   ],
   "gridX":0,
   "gridY":0,

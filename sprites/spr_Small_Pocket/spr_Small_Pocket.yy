@@ -1,5 +1,5 @@
 {
-  "$GMSprite":"",
+  "$GMSprite":"v2",
   "%Name":"spr_Small_Pocket",
   "bboxMode":0,
   "bbox_bottom":131,
@@ -12,7 +12,7 @@
   "edgeFiltering":false,
   "For3D":false,
   "frames":[
-    {"$GMSpriteFrame":"","%Name":"011d54af-bd9c-454d-bbc8-10f73e04aa83","name":"011d54af-bd9c-454d-bbc8-10f73e04aa83","resourceType":"GMSpriteFrame","resourceVersion":"2.0",},
+    {"$GMSpriteFrame":"v1","%Name":"011d54af-bd9c-454d-bbc8-10f73e04aa83","name":"011d54af-bd9c-454d-bbc8-10f73e04aa83","resourceType":"GMSpriteFrame","resourceVersion":"2.0",},
   ],
   "gridX":0,
   "gridY":0,

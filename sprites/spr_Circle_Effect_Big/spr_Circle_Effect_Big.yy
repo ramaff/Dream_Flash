@@ -1,5 +1,5 @@
 {
-  "$GMSprite":"",
+  "$GMSprite":"v2",
   "%Name":"spr_Circle_Effect_Big",
   "bboxMode":0,
   "bbox_bottom":394,
@@ -12,7 +12,7 @@
   "edgeFiltering":false,
   "For3D":false,
   "frames":[
-    {"$GMSpriteFrame":"","%Name":"916993b9-52ff-4eba-964c-03edbd5bdba9","name":"916993b9-52ff-4eba-964c-03edbd5bdba9","resourceType":"GMSpriteFrame","resourceVersion":"2.0",},
+    {"$GMSpriteFrame":"v1","%Name":"916993b9-52ff-4eba-964c-03edbd5bdba9","name":"916993b9-52ff-4eba-964c-03edbd5bdba9","resourceType":"GMSpriteFrame","resourceVersion":"2.0",},
   ],
   "gridX":0,
   "gridY":0,

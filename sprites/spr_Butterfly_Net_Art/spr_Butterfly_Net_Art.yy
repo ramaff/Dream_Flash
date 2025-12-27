@@ -1,5 +1,5 @@
 {
-  "$GMSprite":"",
+  "$GMSprite":"v2",
   "%Name":"spr_Butterfly_Net_Art",
   "bboxMode":0,
   "bbox_bottom":163,
@@ -12,7 +12,7 @@
   "edgeFiltering":false,
   "For3D":false,
   "frames":[
-    {"$GMSpriteFrame":"","%Name":"6ae5289a-e2f7-4cd1-ac94-fac7e023cd9e","name":"6ae5289a-e2f7-4cd1-ac94-fac7e023cd9e","resourceType":"GMSpriteFrame","resourceVersion":"2.0",},
+    {"$GMSpriteFrame":"v1","%Name":"6ae5289a-e2f7-4cd1-ac94-fac7e023cd9e","name":"6ae5289a-e2f7-4cd1-ac94-fac7e023cd9e","resourceType":"GMSpriteFrame","resourceVersion":"2.0",},
   ],
   "gridX":0,
   "gridY":0,

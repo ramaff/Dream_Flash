@@ -1,5 +1,5 @@
 {
-  "$GMSprite":"",
+  "$GMSprite":"v2",
   "%Name":"spr_Laser_Bolt_Shot",
   "bboxMode":0,
   "bbox_bottom":54,
@@ -12,7 +12,7 @@
   "edgeFiltering":false,
   "For3D":false,
   "frames":[
-    {"$GMSpriteFrame":"","%Name":"64ae60c9-2bdc-4fa2-bb84-e1328d68ef06","name":"64ae60c9-2bdc-4fa2-bb84-e1328d68ef06","resourceType":"GMSpriteFrame","resourceVersion":"2.0",},
+    {"$GMSpriteFrame":"v1","%Name":"64ae60c9-2bdc-4fa2-bb84-e1328d68ef06","name":"64ae60c9-2bdc-4fa2-bb84-e1328d68ef06","resourceType":"GMSpriteFrame","resourceVersion":"2.0",},
   ],
   "gridX":0,
   "gridY":0,

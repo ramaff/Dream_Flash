@@ -1,5 +1,5 @@
 {
-  "$GMSprite":"",
+  "$GMSprite":"v2",
   "%Name":"bg_Nightmare_Tilesold",
   "bboxMode":0,
   "bbox_bottom":127,
@@ -12,7 +12,7 @@
   "edgeFiltering":false,
   "For3D":false,
   "frames":[
-    {"$GMSpriteFrame":"","%Name":"bdf6fa1b-7252-4dc5-a08e-88bed276ad67","name":"bdf6fa1b-7252-4dc5-a08e-88bed276ad67","resourceType":"GMSpriteFrame","resourceVersion":"2.0",},
+    {"$GMSpriteFrame":"v1","%Name":"bdf6fa1b-7252-4dc5-a08e-88bed276ad67","name":"bdf6fa1b-7252-4dc5-a08e-88bed276ad67","resourceType":"GMSpriteFrame","resourceVersion":"2.0",},
   ],
   "gridX":0,
   "gridY":0,

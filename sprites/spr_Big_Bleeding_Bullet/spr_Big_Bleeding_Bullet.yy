@@ -1,5 +1,5 @@
 {
-  "$GMSprite":"",
+  "$GMSprite":"v2",
   "%Name":"spr_Big_Bleeding_Bullet",
   "bboxMode":2,
   "bbox_bottom":39,
@@ -12,7 +12,7 @@
   "edgeFiltering":false,
   "For3D":false,
   "frames":[
-    {"$GMSpriteFrame":"","%Name":"21bed98f-f708-45af-b35d-08267f9040c1","name":"21bed98f-f708-45af-b35d-08267f9040c1","resourceType":"GMSpriteFrame","resourceVersion":"2.0",},
+    {"$GMSpriteFrame":"v1","%Name":"21bed98f-f708-45af-b35d-08267f9040c1","name":"21bed98f-f708-45af-b35d-08267f9040c1","resourceType":"GMSpriteFrame","resourceVersion":"2.0",},
   ],
   "gridX":0,
   "gridY":0,

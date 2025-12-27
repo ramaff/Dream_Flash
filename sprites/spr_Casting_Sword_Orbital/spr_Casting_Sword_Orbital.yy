@@ -1,5 +1,5 @@
 {
-  "$GMSprite":"",
+  "$GMSprite":"v2",
   "%Name":"spr_Casting_Sword_Orbital",
   "bboxMode":0,
   "bbox_bottom":218,
@@ -12,7 +12,7 @@
   "edgeFiltering":false,
   "For3D":false,
   "frames":[
-    {"$GMSpriteFrame":"","%Name":"01181fdb-7aca-4328-983b-9c3a89ab7d52","name":"01181fdb-7aca-4328-983b-9c3a89ab7d52","resourceType":"GMSpriteFrame","resourceVersion":"2.0",},
+    {"$GMSpriteFrame":"v1","%Name":"01181fdb-7aca-4328-983b-9c3a89ab7d52","name":"01181fdb-7aca-4328-983b-9c3a89ab7d52","resourceType":"GMSpriteFrame","resourceVersion":"2.0",},
   ],
   "gridX":0,
   "gridY":0,

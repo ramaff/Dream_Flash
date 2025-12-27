@@ -1,5 +1,5 @@
 {
-  "$GMSprite":"",
+  "$GMSprite":"v2",
   "%Name":"spr_Bleeding_Heart_Art",
   "bboxMode":2,
   "bbox_bottom":63,
@@ -12,7 +12,7 @@
   "edgeFiltering":false,
   "For3D":false,
   "frames":[
-    {"$GMSpriteFrame":"","%Name":"1a125197-3be9-475c-bc7e-1f2dde6a365e","name":"1a125197-3be9-475c-bc7e-1f2dde6a365e","resourceType":"GMSpriteFrame","resourceVersion":"2.0",},
+    {"$GMSpriteFrame":"v1","%Name":"1a125197-3be9-475c-bc7e-1f2dde6a365e","name":"1a125197-3be9-475c-bc7e-1f2dde6a365e","resourceType":"GMSpriteFrame","resourceVersion":"2.0",},
   ],
   "gridX":0,
   "gridY":0,

@@ -1,5 +1,5 @@
 {
-  "$GMSprite":"",
+  "$GMSprite":"v2",
   "%Name":"spr_Beast_Soul_Reco_Icon",
   "bboxMode":2,
   "bbox_bottom":210,
@@ -12,7 +12,7 @@
   "edgeFiltering":false,
   "For3D":false,
   "frames":[
-    {"$GMSpriteFrame":"","%Name":"dc274429-6698-4903-899c-9670f73f06f3","name":"dc274429-6698-4903-899c-9670f73f06f3","resourceType":"GMSpriteFrame","resourceVersion":"2.0",},
+    {"$GMSpriteFrame":"v1","%Name":"dc274429-6698-4903-899c-9670f73f06f3","name":"dc274429-6698-4903-899c-9670f73f06f3","resourceType":"GMSpriteFrame","resourceVersion":"2.0",},
   ],
   "gridX":0,
   "gridY":0,

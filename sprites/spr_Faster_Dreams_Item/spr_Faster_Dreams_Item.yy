@@ -1,5 +1,5 @@
 {
-  "$GMSprite":"",
+  "$GMSprite":"v2",
   "%Name":"spr_Faster_Dreams_Item",
   "bboxMode":0,
   "bbox_bottom":157,
@@ -12,7 +12,7 @@
   "edgeFiltering":false,
   "For3D":false,
   "frames":[
-    {"$GMSpriteFrame":"","%Name":"99b3cddc-5789-4d5d-9b6b-20183d2772d2","name":"99b3cddc-5789-4d5d-9b6b-20183d2772d2","resourceType":"GMSpriteFrame","resourceVersion":"2.0",},
+    {"$GMSpriteFrame":"v1","%Name":"99b3cddc-5789-4d5d-9b6b-20183d2772d2","name":"99b3cddc-5789-4d5d-9b6b-20183d2772d2","resourceType":"GMSpriteFrame","resourceVersion":"2.0",},
   ],
   "gridX":0,
   "gridY":0,

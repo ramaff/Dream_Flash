@@ -2,7 +2,7 @@
 // You can write your code in this editor
 
 // Inherit the parent event
-var dir = point_direction(x,y,mouse_x,mouse_y);
+var dir = point_direction(x,y,obj_Astral_Indicator.x,obj_Astral_Indicator.y);
 
 shot_stats.Shot_Extra_Stats[0].Shot_XX = lengthdir_x(50, dir);
 shot_stats.Shot_Extra_Stats[0].Shot_YY = lengthdir_y(50, dir);

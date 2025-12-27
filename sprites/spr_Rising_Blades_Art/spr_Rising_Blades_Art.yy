@@ -1,5 +1,5 @@
 {
-  "$GMSprite":"",
+  "$GMSprite":"v2",
   "%Name":"spr_Rising_Blades_Art",
   "bboxMode":0,
   "bbox_bottom":145,
@@ -12,7 +12,7 @@
   "edgeFiltering":false,
   "For3D":false,
   "frames":[
-    {"$GMSpriteFrame":"","%Name":"3434d399-e2f9-4a6e-b222-19e7bddb8bcc","name":"3434d399-e2f9-4a6e-b222-19e7bddb8bcc","resourceType":"GMSpriteFrame","resourceVersion":"2.0",},
+    {"$GMSpriteFrame":"v1","%Name":"3434d399-e2f9-4a6e-b222-19e7bddb8bcc","name":"3434d399-e2f9-4a6e-b222-19e7bddb8bcc","resourceType":"GMSpriteFrame","resourceVersion":"2.0",},
   ],
   "gridX":0,
   "gridY":0,

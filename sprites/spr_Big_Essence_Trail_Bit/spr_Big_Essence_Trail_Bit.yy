@@ -1,5 +1,5 @@
 {
-  "$GMSprite":"",
+  "$GMSprite":"v2",
   "%Name":"spr_Big_Essence_Trail_Bit",
   "bboxMode":0,
   "bbox_bottom":63,
@@ -12,7 +12,7 @@
   "edgeFiltering":false,
   "For3D":false,
   "frames":[
-    {"$GMSpriteFrame":"","%Name":"9235a726-d1e3-47a5-a687-3f599b4fd072","name":"9235a726-d1e3-47a5-a687-3f599b4fd072","resourceType":"GMSpriteFrame","resourceVersion":"2.0",},
+    {"$GMSpriteFrame":"v1","%Name":"9235a726-d1e3-47a5-a687-3f599b4fd072","name":"9235a726-d1e3-47a5-a687-3f599b4fd072","resourceType":"GMSpriteFrame","resourceVersion":"2.0",},
   ],
   "gridX":0,
   "gridY":0,

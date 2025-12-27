@@ -1,5 +1,5 @@
 {
-  "$GMSprite":"",
+  "$GMSprite":"v2",
   "%Name":"spr_Twister_Demon_scale",
   "bboxMode":0,
   "bbox_bottom":345,
@@ -12,7 +12,7 @@
   "edgeFiltering":false,
   "For3D":false,
   "frames":[
-    {"$GMSpriteFrame":"","%Name":"79ad59cc-7db0-4d75-bf9b-a17e3bcb91c4","name":"79ad59cc-7db0-4d75-bf9b-a17e3bcb91c4","resourceType":"GMSpriteFrame","resourceVersion":"2.0",},
+    {"$GMSpriteFrame":"v1","%Name":"79ad59cc-7db0-4d75-bf9b-a17e3bcb91c4","name":"79ad59cc-7db0-4d75-bf9b-a17e3bcb91c4","resourceType":"GMSpriteFrame","resourceVersion":"2.0",},
   ],
   "gridX":0,
   "gridY":0,

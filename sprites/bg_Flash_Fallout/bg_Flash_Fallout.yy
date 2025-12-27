@@ -1,5 +1,5 @@
 {
-  "$GMSprite":"",
+  "$GMSprite":"v2",
   "%Name":"bg_Flash_Fallout",
   "bboxMode":0,
   "bbox_bottom":111,
@@ -12,7 +12,7 @@
   "edgeFiltering":false,
   "For3D":false,
   "frames":[
-    {"$GMSpriteFrame":"","%Name":"29cc6051-ca1a-4235-9b1a-421dc4d18fef","name":"29cc6051-ca1a-4235-9b1a-421dc4d18fef","resourceType":"GMSpriteFrame","resourceVersion":"2.0",},
+    {"$GMSpriteFrame":"v1","%Name":"29cc6051-ca1a-4235-9b1a-421dc4d18fef","name":"29cc6051-ca1a-4235-9b1a-421dc4d18fef","resourceType":"GMSpriteFrame","resourceVersion":"2.0",},
   ],
   "gridX":0,
   "gridY":0,

@@ -1,5 +1,5 @@
 {
-  "$GMSprite":"",
+  "$GMSprite":"v2",
   "%Name":"spr_dungeon_brick_g_xl",
   "bboxMode":0,
   "bbox_bottom":1362,
@@ -12,7 +12,7 @@
   "edgeFiltering":false,
   "For3D":false,
   "frames":[
-    {"$GMSpriteFrame":"","%Name":"2d473cd6-dd84-4d06-be87-a68242033790","name":"2d473cd6-dd84-4d06-be87-a68242033790","resourceType":"GMSpriteFrame","resourceVersion":"2.0",},
+    {"$GMSpriteFrame":"v1","%Name":"2d473cd6-dd84-4d06-be87-a68242033790","name":"2d473cd6-dd84-4d06-be87-a68242033790","resourceType":"GMSpriteFrame","resourceVersion":"2.0",},
   ],
   "gridX":0,
   "gridY":0,

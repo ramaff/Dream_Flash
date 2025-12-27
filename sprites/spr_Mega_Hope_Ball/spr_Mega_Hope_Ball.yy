@@ -1,5 +1,5 @@
 {
-  "$GMSprite":"",
+  "$GMSprite":"v2",
   "%Name":"spr_Mega_Hope_Ball",
   "bboxMode":2,
   "bbox_bottom":92,
@@ -12,7 +12,7 @@
   "edgeFiltering":false,
   "For3D":false,
   "frames":[
-    {"$GMSpriteFrame":"","%Name":"a4909754-4a9b-4090-8f65-ef6f11303f61","name":"a4909754-4a9b-4090-8f65-ef6f11303f61","resourceType":"GMSpriteFrame","resourceVersion":"2.0",},
+    {"$GMSpriteFrame":"v1","%Name":"a4909754-4a9b-4090-8f65-ef6f11303f61","name":"a4909754-4a9b-4090-8f65-ef6f11303f61","resourceType":"GMSpriteFrame","resourceVersion":"2.0",},
   ],
   "gridX":0,
   "gridY":0,

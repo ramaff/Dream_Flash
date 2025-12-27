@@ -1,5 +1,5 @@
 {
-  "$GMSprite":"",
+  "$GMSprite":"v2",
   "%Name":"spr_thought_cloud_v2_ko",
   "bboxMode":0,
   "bbox_bottom":405,
@@ -12,7 +12,7 @@
   "edgeFiltering":false,
   "For3D":false,
   "frames":[
-    {"$GMSpriteFrame":"","%Name":"e8f2deec-b72d-4a25-bd7c-a00bc8ca15d5","name":"e8f2deec-b72d-4a25-bd7c-a00bc8ca15d5","resourceType":"GMSpriteFrame","resourceVersion":"2.0",},
+    {"$GMSpriteFrame":"v1","%Name":"e8f2deec-b72d-4a25-bd7c-a00bc8ca15d5","name":"e8f2deec-b72d-4a25-bd7c-a00bc8ca15d5","resourceType":"GMSpriteFrame","resourceVersion":"2.0",},
   ],
   "gridX":0,
   "gridY":0,

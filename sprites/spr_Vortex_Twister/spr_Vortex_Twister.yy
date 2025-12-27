@@ -1,5 +1,5 @@
 {
-  "$GMSprite":"",
+  "$GMSprite":"v2",
   "%Name":"spr_Vortex_Twister",
   "bboxMode":2,
   "bbox_bottom":69,
@@ -12,7 +12,7 @@
   "edgeFiltering":false,
   "For3D":false,
   "frames":[
-    {"$GMSpriteFrame":"","%Name":"97e3c5d5-addd-4389-81e1-051fda4980bb","name":"97e3c5d5-addd-4389-81e1-051fda4980bb","resourceType":"GMSpriteFrame","resourceVersion":"2.0",},
+    {"$GMSpriteFrame":"v1","%Name":"97e3c5d5-addd-4389-81e1-051fda4980bb","name":"97e3c5d5-addd-4389-81e1-051fda4980bb","resourceType":"GMSpriteFrame","resourceVersion":"2.0",},
   ],
   "gridX":0,
   "gridY":0,

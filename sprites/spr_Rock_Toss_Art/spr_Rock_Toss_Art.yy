@@ -1,5 +1,5 @@
 {
-  "$GMSprite":"",
+  "$GMSprite":"v2",
   "%Name":"spr_Rock_Toss_Art",
   "bboxMode":0,
   "bbox_bottom":132,
@@ -12,7 +12,7 @@
   "edgeFiltering":false,
   "For3D":false,
   "frames":[
-    {"$GMSpriteFrame":"","%Name":"aab7424b-a7db-40f1-afd1-e47750d9fe1a","name":"aab7424b-a7db-40f1-afd1-e47750d9fe1a","resourceType":"GMSpriteFrame","resourceVersion":"2.0",},
+    {"$GMSpriteFrame":"v1","%Name":"aab7424b-a7db-40f1-afd1-e47750d9fe1a","name":"aab7424b-a7db-40f1-afd1-e47750d9fe1a","resourceType":"GMSpriteFrame","resourceVersion":"2.0",},
   ],
   "gridX":0,
   "gridY":0,

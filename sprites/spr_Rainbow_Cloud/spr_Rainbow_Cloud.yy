@@ -1,5 +1,5 @@
 {
-  "$GMSprite":"",
+  "$GMSprite":"v2",
   "%Name":"spr_Rainbow_Cloud",
   "bboxMode":0,
   "bbox_bottom":207,
@@ -12,7 +12,7 @@
   "edgeFiltering":false,
   "For3D":false,
   "frames":[
-    {"$GMSpriteFrame":"","%Name":"69ed6482-f7b5-49c7-8adb-98797f78fbcf","name":"69ed6482-f7b5-49c7-8adb-98797f78fbcf","resourceType":"GMSpriteFrame","resourceVersion":"2.0",},
+    {"$GMSpriteFrame":"v1","%Name":"69ed6482-f7b5-49c7-8adb-98797f78fbcf","name":"69ed6482-f7b5-49c7-8adb-98797f78fbcf","resourceType":"GMSpriteFrame","resourceVersion":"2.0",},
   ],
   "gridX":0,
   "gridY":0,

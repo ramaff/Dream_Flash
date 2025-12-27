@@ -1,5 +1,5 @@
 {
-  "$GMSprite":"",
+  "$GMSprite":"v2",
   "%Name":"spr_Tunnel_Vision_Art",
   "bboxMode":0,
   "bbox_bottom":163,
@@ -12,7 +12,7 @@
   "edgeFiltering":false,
   "For3D":false,
   "frames":[
-    {"$GMSpriteFrame":"","%Name":"e7b71169-72da-4c92-a531-f47ef43a1e60","name":"e7b71169-72da-4c92-a531-f47ef43a1e60","resourceType":"GMSpriteFrame","resourceVersion":"2.0",},
+    {"$GMSpriteFrame":"v1","%Name":"e7b71169-72da-4c92-a531-f47ef43a1e60","name":"e7b71169-72da-4c92-a531-f47ef43a1e60","resourceType":"GMSpriteFrame","resourceVersion":"2.0",},
   ],
   "gridX":0,
   "gridY":0,

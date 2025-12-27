@@ -1,5 +1,5 @@
 {
-  "$GMSprite":"",
+  "$GMSprite":"v2",
   "%Name":"old_Puck_Man",
   "bboxMode":0,
   "bbox_bottom":79,
@@ -12,8 +12,8 @@
   "edgeFiltering":false,
   "For3D":false,
   "frames":[
-    {"$GMSpriteFrame":"","%Name":"b159b2b1-063e-4da3-b32e-0d534a310975","name":"b159b2b1-063e-4da3-b32e-0d534a310975","resourceType":"GMSpriteFrame","resourceVersion":"2.0",},
-    {"$GMSpriteFrame":"","%Name":"3aee96f5-c37b-4e09-ab2c-e166f64a70e4","name":"3aee96f5-c37b-4e09-ab2c-e166f64a70e4","resourceType":"GMSpriteFrame","resourceVersion":"2.0",},
+    {"$GMSpriteFrame":"v1","%Name":"b159b2b1-063e-4da3-b32e-0d534a310975","name":"b159b2b1-063e-4da3-b32e-0d534a310975","resourceType":"GMSpriteFrame","resourceVersion":"2.0",},
+    {"$GMSpriteFrame":"v1","%Name":"3aee96f5-c37b-4e09-ab2c-e166f64a70e4","name":"3aee96f5-c37b-4e09-ab2c-e166f64a70e4","resourceType":"GMSpriteFrame","resourceVersion":"2.0",},
   ],
   "gridX":0,
   "gridY":0,

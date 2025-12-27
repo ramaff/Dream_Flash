@@ -1,5 +1,5 @@
 {
-  "$GMSprite":"",
+  "$GMSprite":"v2",
   "%Name":"spr_Sorrow_Bullet",
   "bboxMode":2,
   "bbox_bottom":100,
@@ -12,7 +12,7 @@
   "edgeFiltering":false,
   "For3D":false,
   "frames":[
-    {"$GMSpriteFrame":"","%Name":"43649a3a-66c7-4915-8734-d1b053745e7c","name":"43649a3a-66c7-4915-8734-d1b053745e7c","resourceType":"GMSpriteFrame","resourceVersion":"2.0",},
+    {"$GMSpriteFrame":"v1","%Name":"43649a3a-66c7-4915-8734-d1b053745e7c","name":"43649a3a-66c7-4915-8734-d1b053745e7c","resourceType":"GMSpriteFrame","resourceVersion":"2.0",},
   ],
   "gridX":0,
   "gridY":0,

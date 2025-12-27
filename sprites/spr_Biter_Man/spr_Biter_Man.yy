@@ -1,5 +1,5 @@
 {
-  "$GMSprite":"",
+  "$GMSprite":"v2",
   "%Name":"spr_Biter_Man",
   "bboxMode":0,
   "bbox_bottom":358,
@@ -12,7 +12,7 @@
   "edgeFiltering":false,
   "For3D":false,
   "frames":[
-    {"$GMSpriteFrame":"","%Name":"ee01b631-64d6-413e-a0b8-5cf1485c1d9c","name":"ee01b631-64d6-413e-a0b8-5cf1485c1d9c","resourceType":"GMSpriteFrame","resourceVersion":"2.0",},
+    {"$GMSpriteFrame":"v1","%Name":"ee01b631-64d6-413e-a0b8-5cf1485c1d9c","name":"ee01b631-64d6-413e-a0b8-5cf1485c1d9c","resourceType":"GMSpriteFrame","resourceVersion":"2.0",},
   ],
   "gridX":0,
   "gridY":0,

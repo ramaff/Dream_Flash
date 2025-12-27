@@ -1,5 +1,5 @@
 {
-  "$GMSprite":"",
+  "$GMSprite":"v2",
   "%Name":"spr_Barrage_Behemoth",
   "bboxMode":0,
   "bbox_bottom":435,
@@ -12,7 +12,7 @@
   "edgeFiltering":false,
   "For3D":false,
   "frames":[
-    {"$GMSpriteFrame":"","%Name":"48440166-1135-4218-a3ad-4793ba3a17f5","name":"48440166-1135-4218-a3ad-4793ba3a17f5","resourceType":"GMSpriteFrame","resourceVersion":"2.0",},
+    {"$GMSpriteFrame":"v1","%Name":"48440166-1135-4218-a3ad-4793ba3a17f5","name":"48440166-1135-4218-a3ad-4793ba3a17f5","resourceType":"GMSpriteFrame","resourceVersion":"2.0",},
   ],
   "gridX":0,
   "gridY":0,

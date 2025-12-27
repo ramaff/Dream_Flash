@@ -1,5 +1,5 @@
 {
-  "$GMSprite":"",
+  "$GMSprite":"v2",
   "%Name":"spr_Downward_Spiral_Art",
   "bboxMode":0,
   "bbox_bottom":157,
@@ -12,7 +12,7 @@
   "edgeFiltering":false,
   "For3D":false,
   "frames":[
-    {"$GMSpriteFrame":"","%Name":"95266b97-8ad5-40f5-898b-4666d6b37fa8","name":"95266b97-8ad5-40f5-898b-4666d6b37fa8","resourceType":"GMSpriteFrame","resourceVersion":"2.0",},
+    {"$GMSpriteFrame":"v1","%Name":"95266b97-8ad5-40f5-898b-4666d6b37fa8","name":"95266b97-8ad5-40f5-898b-4666d6b37fa8","resourceType":"GMSpriteFrame","resourceVersion":"2.0",},
   ],
   "gridX":0,
   "gridY":0,

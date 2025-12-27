@@ -1,5 +1,5 @@
 {
-  "$GMSprite":"",
+  "$GMSprite":"v2",
   "%Name":"spr_The_Soul_Think_Face",
   "bboxMode":2,
   "bbox_bottom":130,
@@ -12,7 +12,7 @@
   "edgeFiltering":false,
   "For3D":false,
   "frames":[
-    {"$GMSpriteFrame":"","%Name":"2bff2f47-41ff-4148-be92-c3d366bc180f","name":"2bff2f47-41ff-4148-be92-c3d366bc180f","resourceType":"GMSpriteFrame","resourceVersion":"2.0",},
+    {"$GMSpriteFrame":"v1","%Name":"2bff2f47-41ff-4148-be92-c3d366bc180f","name":"2bff2f47-41ff-4148-be92-c3d366bc180f","resourceType":"GMSpriteFrame","resourceVersion":"2.0",},
   ],
   "gridX":0,
   "gridY":0,

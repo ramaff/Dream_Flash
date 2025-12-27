@@ -1,5 +1,5 @@
 {
-  "$GMSprite":"",
+  "$GMSprite":"v2",
   "%Name":"reco_Animated_Head",
   "bboxMode":0,
   "bbox_bottom":324,
@@ -12,7 +12,7 @@
   "edgeFiltering":false,
   "For3D":false,
   "frames":[
-    {"$GMSpriteFrame":"","%Name":"a636939b-b9f0-4b2b-adea-4957dcd86280","name":"a636939b-b9f0-4b2b-adea-4957dcd86280","resourceType":"GMSpriteFrame","resourceVersion":"2.0",},
+    {"$GMSpriteFrame":"v1","%Name":"a636939b-b9f0-4b2b-adea-4957dcd86280","name":"a636939b-b9f0-4b2b-adea-4957dcd86280","resourceType":"GMSpriteFrame","resourceVersion":"2.0",},
   ],
   "gridX":0,
   "gridY":0,

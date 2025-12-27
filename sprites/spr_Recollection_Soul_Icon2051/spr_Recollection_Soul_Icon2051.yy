@@ -1,5 +1,5 @@
 {
-  "$GMSprite":"",
+  "$GMSprite":"v2",
   "%Name":"spr_Recollection_Soul_Icon2051",
   "bboxMode":2,
   "bbox_bottom":41,
@@ -12,7 +12,7 @@
   "edgeFiltering":false,
   "For3D":false,
   "frames":[
-    {"$GMSpriteFrame":"","%Name":"fb0d36bd-9901-4267-8c02-748889bb55bc","name":"fb0d36bd-9901-4267-8c02-748889bb55bc","resourceType":"GMSpriteFrame","resourceVersion":"2.0",},
+    {"$GMSpriteFrame":"v1","%Name":"fb0d36bd-9901-4267-8c02-748889bb55bc","name":"fb0d36bd-9901-4267-8c02-748889bb55bc","resourceType":"GMSpriteFrame","resourceVersion":"2.0",},
   ],
   "gridX":0,
   "gridY":0,

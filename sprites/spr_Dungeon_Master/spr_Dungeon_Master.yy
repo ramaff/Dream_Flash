@@ -1,5 +1,5 @@
 {
-  "$GMSprite":"",
+  "$GMSprite":"v2",
   "%Name":"spr_Dungeon_Master",
   "bboxMode":0,
   "bbox_bottom":423,
@@ -12,7 +12,7 @@
   "edgeFiltering":false,
   "For3D":false,
   "frames":[
-    {"$GMSpriteFrame":"","%Name":"8f371aa6-1a85-40c1-b33f-9a625ef6521e","name":"8f371aa6-1a85-40c1-b33f-9a625ef6521e","resourceType":"GMSpriteFrame","resourceVersion":"2.0",},
+    {"$GMSpriteFrame":"v1","%Name":"8f371aa6-1a85-40c1-b33f-9a625ef6521e","name":"8f371aa6-1a85-40c1-b33f-9a625ef6521e","resourceType":"GMSpriteFrame","resourceVersion":"2.0",},
   ],
   "gridX":0,
   "gridY":0,

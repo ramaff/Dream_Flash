@@ -1,5 +1,5 @@
 {
-  "$GMSprite":"",
+  "$GMSprite":"v2",
   "%Name":"spr_Hand_of_the_Accuser_P2",
   "bboxMode":0,
   "bbox_bottom":256,
@@ -12,7 +12,7 @@
   "edgeFiltering":false,
   "For3D":false,
   "frames":[
-    {"$GMSpriteFrame":"","%Name":"cda58648-71ae-4f45-a1af-f529b70658c1","name":"cda58648-71ae-4f45-a1af-f529b70658c1","resourceType":"GMSpriteFrame","resourceVersion":"2.0",},
+    {"$GMSpriteFrame":"v1","%Name":"cda58648-71ae-4f45-a1af-f529b70658c1","name":"cda58648-71ae-4f45-a1af-f529b70658c1","resourceType":"GMSpriteFrame","resourceVersion":"2.0",},
   ],
   "gridX":0,
   "gridY":0,

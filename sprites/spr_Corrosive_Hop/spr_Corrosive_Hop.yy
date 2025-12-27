@@ -1,5 +1,5 @@
 {
-  "$GMSprite":"",
+  "$GMSprite":"v2",
   "%Name":"spr_Corrosive_Hop",
   "bboxMode":0,
   "bbox_bottom":286,
@@ -12,7 +12,7 @@
   "edgeFiltering":false,
   "For3D":false,
   "frames":[
-    {"$GMSpriteFrame":"","%Name":"f3a9aabe-50ce-4697-abdd-fa9a4662f9b1","name":"f3a9aabe-50ce-4697-abdd-fa9a4662f9b1","resourceType":"GMSpriteFrame","resourceVersion":"2.0",},
+    {"$GMSpriteFrame":"v1","%Name":"f3a9aabe-50ce-4697-abdd-fa9a4662f9b1","name":"f3a9aabe-50ce-4697-abdd-fa9a4662f9b1","resourceType":"GMSpriteFrame","resourceVersion":"2.0",},
   ],
   "gridX":0,
   "gridY":0,

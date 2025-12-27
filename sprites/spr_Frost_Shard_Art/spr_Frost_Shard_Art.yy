@@ -1,5 +1,5 @@
 {
-  "$GMSprite":"",
+  "$GMSprite":"v2",
   "%Name":"spr_Frost_Shard_Art",
   "bboxMode":0,
   "bbox_bottom":127,
@@ -12,7 +12,7 @@
   "edgeFiltering":false,
   "For3D":false,
   "frames":[
-    {"$GMSpriteFrame":"","%Name":"ace2562f-3cb3-40b0-bbb4-90630a69639c","name":"ace2562f-3cb3-40b0-bbb4-90630a69639c","resourceType":"GMSpriteFrame","resourceVersion":"2.0",},
+    {"$GMSpriteFrame":"v1","%Name":"ace2562f-3cb3-40b0-bbb4-90630a69639c","name":"ace2562f-3cb3-40b0-bbb4-90630a69639c","resourceType":"GMSpriteFrame","resourceVersion":"2.0",},
   ],
   "gridX":0,
   "gridY":0,

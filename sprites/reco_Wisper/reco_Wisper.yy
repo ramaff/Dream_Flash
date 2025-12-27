@@ -1,5 +1,5 @@
 {
-  "$GMSprite":"",
+  "$GMSprite":"v2",
   "%Name":"reco_Wisper",
   "bboxMode":0,
   "bbox_bottom":382,
@@ -12,7 +12,7 @@
   "edgeFiltering":false,
   "For3D":false,
   "frames":[
-    {"$GMSpriteFrame":"","%Name":"360da4f0-2350-4aa1-9d5f-0c80c486f472","name":"360da4f0-2350-4aa1-9d5f-0c80c486f472","resourceType":"GMSpriteFrame","resourceVersion":"2.0",},
+    {"$GMSpriteFrame":"v1","%Name":"360da4f0-2350-4aa1-9d5f-0c80c486f472","name":"360da4f0-2350-4aa1-9d5f-0c80c486f472","resourceType":"GMSpriteFrame","resourceVersion":"2.0",},
   ],
   "gridX":0,
   "gridY":0,

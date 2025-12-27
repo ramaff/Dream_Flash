@@ -1,5 +1,5 @@
 {
-  "$GMSprite":"",
+  "$GMSprite":"v2",
   "%Name":"spr_Projectile_Wall_Shot",
   "bboxMode":2,
   "bbox_bottom":44,
@@ -12,7 +12,7 @@
   "edgeFiltering":false,
   "For3D":false,
   "frames":[
-    {"$GMSpriteFrame":"","%Name":"7970f95c-4f2b-45c0-9cc9-1f5378e10e42","name":"7970f95c-4f2b-45c0-9cc9-1f5378e10e42","resourceType":"GMSpriteFrame","resourceVersion":"2.0",},
+    {"$GMSpriteFrame":"v1","%Name":"7970f95c-4f2b-45c0-9cc9-1f5378e10e42","name":"7970f95c-4f2b-45c0-9cc9-1f5378e10e42","resourceType":"GMSpriteFrame","resourceVersion":"2.0",},
   ],
   "gridX":0,
   "gridY":0,

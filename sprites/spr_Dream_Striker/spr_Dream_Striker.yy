@@ -1,5 +1,5 @@
 {
-  "$GMSprite":"",
+  "$GMSprite":"v2",
   "%Name":"spr_Dream_Striker",
   "bboxMode":0,
   "bbox_bottom":242,
@@ -12,7 +12,7 @@
   "edgeFiltering":false,
   "For3D":false,
   "frames":[
-    {"$GMSpriteFrame":"","%Name":"a696c5d3-7718-4f5b-876f-0027aa7de248","name":"a696c5d3-7718-4f5b-876f-0027aa7de248","resourceType":"GMSpriteFrame","resourceVersion":"2.0",},
+    {"$GMSpriteFrame":"v1","%Name":"a696c5d3-7718-4f5b-876f-0027aa7de248","name":"a696c5d3-7718-4f5b-876f-0027aa7de248","resourceType":"GMSpriteFrame","resourceVersion":"2.0",},
   ],
   "gridX":0,
   "gridY":0,

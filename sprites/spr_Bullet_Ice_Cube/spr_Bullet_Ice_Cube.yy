@@ -1,5 +1,5 @@
 {
-  "$GMSprite":"",
+  "$GMSprite":"v2",
   "%Name":"spr_Bullet_Ice_Cube",
   "bboxMode":0,
   "bbox_bottom":125,
@@ -12,7 +12,7 @@
   "edgeFiltering":false,
   "For3D":false,
   "frames":[
-    {"$GMSpriteFrame":"","%Name":"effac18b-2433-44c0-ae76-dc89ab3549c6","name":"effac18b-2433-44c0-ae76-dc89ab3549c6","resourceType":"GMSpriteFrame","resourceVersion":"2.0",},
+    {"$GMSpriteFrame":"v1","%Name":"effac18b-2433-44c0-ae76-dc89ab3549c6","name":"effac18b-2433-44c0-ae76-dc89ab3549c6","resourceType":"GMSpriteFrame","resourceVersion":"2.0",},
   ],
   "gridX":0,
   "gridY":0,

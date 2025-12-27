@@ -1,5 +1,5 @@
 {
-  "$GMSprite":"",
+  "$GMSprite":"v2",
   "%Name":"spr_Potential_For_Anything_Art",
   "bboxMode":0,
   "bbox_bottom":157,
@@ -12,7 +12,7 @@
   "edgeFiltering":false,
   "For3D":false,
   "frames":[
-    {"$GMSpriteFrame":"","%Name":"efed08f1-d326-4afa-976e-bcc9bc5e898e","name":"efed08f1-d326-4afa-976e-bcc9bc5e898e","resourceType":"GMSpriteFrame","resourceVersion":"2.0",},
+    {"$GMSpriteFrame":"v1","%Name":"efed08f1-d326-4afa-976e-bcc9bc5e898e","name":"efed08f1-d326-4afa-976e-bcc9bc5e898e","resourceType":"GMSpriteFrame","resourceVersion":"2.0",},
   ],
   "gridX":0,
   "gridY":0,

@@ -1,5 +1,5 @@
 {
-  "$GMSprite":"",
+  "$GMSprite":"v2",
   "%Name":"reco_Crazy_Eye",
   "bboxMode":0,
   "bbox_bottom":287,
@@ -12,7 +12,7 @@
   "edgeFiltering":false,
   "For3D":false,
   "frames":[
-    {"$GMSpriteFrame":"","%Name":"f14e7712-8c25-4c87-a4c6-f534846a53c0","name":"f14e7712-8c25-4c87-a4c6-f534846a53c0","resourceType":"GMSpriteFrame","resourceVersion":"2.0",},
+    {"$GMSpriteFrame":"v1","%Name":"f14e7712-8c25-4c87-a4c6-f534846a53c0","name":"f14e7712-8c25-4c87-a4c6-f534846a53c0","resourceType":"GMSpriteFrame","resourceVersion":"2.0",},
   ],
   "gridX":0,
   "gridY":0,

@@ -1,5 +1,5 @@
 {
-  "$GMSprite":"",
+  "$GMSprite":"v2",
   "%Name":"spr_Soul_Chain",
   "bboxMode":0,
   "bbox_bottom":66,
@@ -12,7 +12,7 @@
   "edgeFiltering":false,
   "For3D":false,
   "frames":[
-    {"$GMSpriteFrame":"","%Name":"e4f65db5-3dfd-46d0-ac15-925187c3bda9","name":"e4f65db5-3dfd-46d0-ac15-925187c3bda9","resourceType":"GMSpriteFrame","resourceVersion":"2.0",},
+    {"$GMSpriteFrame":"v1","%Name":"e4f65db5-3dfd-46d0-ac15-925187c3bda9","name":"e4f65db5-3dfd-46d0-ac15-925187c3bda9","resourceType":"GMSpriteFrame","resourceVersion":"2.0",},
   ],
   "gridX":0,
   "gridY":0,

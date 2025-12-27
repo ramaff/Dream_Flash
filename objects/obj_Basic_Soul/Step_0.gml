@@ -15,19 +15,24 @@ if soulDeathFadeSpeed = 0 {
     scr_Invincibility_Frames();
 }
 
+if InputCheck(INPUT_VERB.SHOOT ) {
+	event_user(0)	
+}
+if InputReleased(INPUT_VERB.SHOOT ) {
+	event_user(1)	
+}
+if InputPressed(INPUT_VERB.WARP ) {
+	event_user(2)
+}
+
 scr_Soul_Status_Step();
 
 scr_Execute_List_Of_Scripts(soul_step_before_scripts)
-//scr_Soul_Item_Step_Before();
-
-var dx = keyboard_check(ord(global.gameMoveRight)) - keyboard_check(ord(global.gameMoveLeft));
-var dy = keyboard_check(ord(global.gameMoveDown)) - keyboard_check(ord(global.gameMoveUp));
 
 smovefactor = 1;
 
 var smovemultiplier = smovefactor * smovementspeed * ((10 + scr_Get_Status_Magnitude(id, "movement_mult")) / 10) * ((10 + smovementfactor) / 10) * scr_Class_Stat_Movement_Speed_Multiplier();
 currentenergyregenfactor = 1;
-//var sdelayregenfactor = 1;
 
 var soulDirectionAttempt = 0;
 var move = false;

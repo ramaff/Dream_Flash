@@ -1,5 +1,5 @@
 {
-  "$GMSprite":"",
+  "$GMSprite":"v2",
   "%Name":"reco_Dream_Crawler",
   "bboxMode":0,
   "bbox_bottom":720,
@@ -12,7 +12,7 @@
   "edgeFiltering":false,
   "For3D":false,
   "frames":[
-    {"$GMSpriteFrame":"","%Name":"d20b504d-cd2c-4a3e-95fa-be936fef9a5c","name":"d20b504d-cd2c-4a3e-95fa-be936fef9a5c","resourceType":"GMSpriteFrame","resourceVersion":"2.0",},
+    {"$GMSpriteFrame":"v1","%Name":"d20b504d-cd2c-4a3e-95fa-be936fef9a5c","name":"d20b504d-cd2c-4a3e-95fa-be936fef9a5c","resourceType":"GMSpriteFrame","resourceVersion":"2.0",},
   ],
   "gridX":0,
   "gridY":0,

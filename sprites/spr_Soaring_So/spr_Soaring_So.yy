@@ -1,5 +1,5 @@
 {
-  "$GMSprite":"",
+  "$GMSprite":"v2",
   "%Name":"spr_Soaring_So",
   "bboxMode":0,
   "bbox_bottom":0,
@@ -12,7 +12,7 @@
   "edgeFiltering":false,
   "For3D":false,
   "frames":[
-    {"$GMSpriteFrame":"","%Name":"23e1dbfb-10f3-4f62-8cb2-41f7e1e5af70","name":"23e1dbfb-10f3-4f62-8cb2-41f7e1e5af70","resourceType":"GMSpriteFrame","resourceVersion":"2.0",},
+    {"$GMSpriteFrame":"v1","%Name":"23e1dbfb-10f3-4f62-8cb2-41f7e1e5af70","name":"23e1dbfb-10f3-4f62-8cb2-41f7e1e5af70","resourceType":"GMSpriteFrame","resourceVersion":"2.0",},
   ],
   "gridX":0,
   "gridY":0,

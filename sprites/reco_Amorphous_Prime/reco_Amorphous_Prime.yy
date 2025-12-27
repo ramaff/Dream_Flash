@@ -1,5 +1,5 @@
 {
-  "$GMSprite":"",
+  "$GMSprite":"v2",
   "%Name":"reco_Amorphous_Prime",
   "bboxMode":0,
   "bbox_bottom":485,
@@ -12,7 +12,7 @@
   "edgeFiltering":false,
   "For3D":false,
   "frames":[
-    {"$GMSpriteFrame":"","%Name":"78d5edab-14bc-4ee6-b6f1-c18528ca2077","name":"78d5edab-14bc-4ee6-b6f1-c18528ca2077","resourceType":"GMSpriteFrame","resourceVersion":"2.0",},
+    {"$GMSpriteFrame":"v1","%Name":"78d5edab-14bc-4ee6-b6f1-c18528ca2077","name":"78d5edab-14bc-4ee6-b6f1-c18528ca2077","resourceType":"GMSpriteFrame","resourceVersion":"2.0",},
   ],
   "gridX":0,
   "gridY":0,

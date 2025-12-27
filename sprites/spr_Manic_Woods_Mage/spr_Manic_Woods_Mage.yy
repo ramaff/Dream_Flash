@@ -1,5 +1,5 @@
 {
-  "$GMSprite":"",
+  "$GMSprite":"v2",
   "%Name":"spr_Manic_Woods_Mage",
   "bboxMode":0,
   "bbox_bottom":179,
@@ -12,7 +12,7 @@
   "edgeFiltering":false,
   "For3D":false,
   "frames":[
-    {"$GMSpriteFrame":"","%Name":"4579d9be-2fdd-4edc-a6d3-525020892d9c","name":"4579d9be-2fdd-4edc-a6d3-525020892d9c","resourceType":"GMSpriteFrame","resourceVersion":"2.0",},
+    {"$GMSpriteFrame":"v1","%Name":"4579d9be-2fdd-4edc-a6d3-525020892d9c","name":"4579d9be-2fdd-4edc-a6d3-525020892d9c","resourceType":"GMSpriteFrame","resourceVersion":"2.0",},
   ],
   "gridX":0,
   "gridY":0,

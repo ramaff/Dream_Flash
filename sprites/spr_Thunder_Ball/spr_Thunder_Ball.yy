@@ -1,5 +1,5 @@
 {
-  "$GMSprite":"",
+  "$GMSprite":"v2",
   "%Name":"spr_Thunder_Ball",
   "bboxMode":2,
   "bbox_bottom":66,
@@ -12,7 +12,7 @@
   "edgeFiltering":false,
   "For3D":false,
   "frames":[
-    {"$GMSpriteFrame":"","%Name":"5109cc8e-4bcb-41e7-8ff3-d8117aa94424","name":"5109cc8e-4bcb-41e7-8ff3-d8117aa94424","resourceType":"GMSpriteFrame","resourceVersion":"2.0",},
+    {"$GMSpriteFrame":"v1","%Name":"5109cc8e-4bcb-41e7-8ff3-d8117aa94424","name":"5109cc8e-4bcb-41e7-8ff3-d8117aa94424","resourceType":"GMSpriteFrame","resourceVersion":"2.0",},
   ],
   "gridX":0,
   "gridY":0,

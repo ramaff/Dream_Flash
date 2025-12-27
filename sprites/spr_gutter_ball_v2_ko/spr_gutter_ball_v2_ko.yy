@@ -1,5 +1,5 @@
 {
-  "$GMSprite":"",
+  "$GMSprite":"v2",
   "%Name":"spr_gutter_ball_v2_ko",
   "bboxMode":0,
   "bbox_bottom":261,
@@ -12,7 +12,7 @@
   "edgeFiltering":false,
   "For3D":false,
   "frames":[
-    {"$GMSpriteFrame":"","%Name":"017776e4-d949-49c5-a235-1ea416d5d1dd","name":"017776e4-d949-49c5-a235-1ea416d5d1dd","resourceType":"GMSpriteFrame","resourceVersion":"2.0",},
+    {"$GMSpriteFrame":"v1","%Name":"017776e4-d949-49c5-a235-1ea416d5d1dd","name":"017776e4-d949-49c5-a235-1ea416d5d1dd","resourceType":"GMSpriteFrame","resourceVersion":"2.0",},
   ],
   "gridX":0,
   "gridY":0,

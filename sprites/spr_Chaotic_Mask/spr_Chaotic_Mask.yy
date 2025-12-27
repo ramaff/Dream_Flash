@@ -1,5 +1,5 @@
 {
-  "$GMSprite":"",
+  "$GMSprite":"v2",
   "%Name":"spr_Chaotic_Mask",
   "bboxMode":0,
   "bbox_bottom":207,
@@ -12,7 +12,7 @@
   "edgeFiltering":false,
   "For3D":false,
   "frames":[
-    {"$GMSpriteFrame":"","%Name":"e03850af-62a5-40ac-87b2-67615e751c4a","name":"e03850af-62a5-40ac-87b2-67615e751c4a","resourceType":"GMSpriteFrame","resourceVersion":"2.0",},
+    {"$GMSpriteFrame":"v1","%Name":"e03850af-62a5-40ac-87b2-67615e751c4a","name":"e03850af-62a5-40ac-87b2-67615e751c4a","resourceType":"GMSpriteFrame","resourceVersion":"2.0",},
   ],
   "gridX":0,
   "gridY":0,

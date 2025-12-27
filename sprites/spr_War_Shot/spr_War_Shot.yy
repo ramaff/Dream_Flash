@@ -1,5 +1,5 @@
 {
-  "$GMSprite":"",
+  "$GMSprite":"v2",
   "%Name":"spr_War_Shot",
   "bboxMode":2,
   "bbox_bottom":54,
@@ -12,7 +12,7 @@
   "edgeFiltering":false,
   "For3D":false,
   "frames":[
-    {"$GMSpriteFrame":"","%Name":"c22844b9-539d-43ea-8963-4026f3c5ec91","name":"c22844b9-539d-43ea-8963-4026f3c5ec91","resourceType":"GMSpriteFrame","resourceVersion":"2.0",},
+    {"$GMSpriteFrame":"v1","%Name":"c22844b9-539d-43ea-8963-4026f3c5ec91","name":"c22844b9-539d-43ea-8963-4026f3c5ec91","resourceType":"GMSpriteFrame","resourceVersion":"2.0",},
   ],
   "gridX":0,
   "gridY":0,

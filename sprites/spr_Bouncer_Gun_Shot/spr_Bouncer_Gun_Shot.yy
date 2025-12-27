@@ -1,5 +1,5 @@
 {
-  "$GMSprite":"",
+  "$GMSprite":"v2",
   "%Name":"spr_Bouncer_Gun_Shot",
   "bboxMode":1,
   "bbox_bottom":89,
@@ -12,7 +12,7 @@
   "edgeFiltering":false,
   "For3D":false,
   "frames":[
-    {"$GMSpriteFrame":"","%Name":"309834e5-da1c-4c46-86fc-33b03b0f205d","name":"309834e5-da1c-4c46-86fc-33b03b0f205d","resourceType":"GMSpriteFrame","resourceVersion":"2.0",},
+    {"$GMSpriteFrame":"v1","%Name":"309834e5-da1c-4c46-86fc-33b03b0f205d","name":"309834e5-da1c-4c46-86fc-33b03b0f205d","resourceType":"GMSpriteFrame","resourceVersion":"2.0",},
   ],
   "gridX":0,
   "gridY":0,

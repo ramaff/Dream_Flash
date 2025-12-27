@@ -1,5 +1,5 @@
 {
-  "$GMSprite":"",
+  "$GMSprite":"v2",
   "%Name":"spr_Big_Bomb_Cannon_Art",
   "bboxMode":1,
   "bbox_bottom":163,
@@ -12,7 +12,7 @@
   "edgeFiltering":false,
   "For3D":false,
   "frames":[
-    {"$GMSpriteFrame":"","%Name":"e5020ff9-1579-4608-9c2d-beb872e927b4","name":"e5020ff9-1579-4608-9c2d-beb872e927b4","resourceType":"GMSpriteFrame","resourceVersion":"2.0",},
+    {"$GMSpriteFrame":"v1","%Name":"e5020ff9-1579-4608-9c2d-beb872e927b4","name":"e5020ff9-1579-4608-9c2d-beb872e927b4","resourceType":"GMSpriteFrame","resourceVersion":"2.0",},
   ],
   "gridX":0,
   "gridY":0,

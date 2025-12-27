@@ -1,5 +1,5 @@
 {
-  "$GMSprite":"",
+  "$GMSprite":"v2",
   "%Name":"spr_Phase_Magic_Staff_Art",
   "bboxMode":2,
   "bbox_bottom":31,
@@ -12,7 +12,7 @@
   "edgeFiltering":false,
   "For3D":false,
   "frames":[
-    {"$GMSpriteFrame":"","%Name":"e579d024-5e0c-4eea-a99f-db3692d8b6ab","name":"e579d024-5e0c-4eea-a99f-db3692d8b6ab","resourceType":"GMSpriteFrame","resourceVersion":"2.0",},
+    {"$GMSpriteFrame":"v1","%Name":"e579d024-5e0c-4eea-a99f-db3692d8b6ab","name":"e579d024-5e0c-4eea-a99f-db3692d8b6ab","resourceType":"GMSpriteFrame","resourceVersion":"2.0",},
   ],
   "gridX":0,
   "gridY":0,

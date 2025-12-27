@@ -1,7 +1,7 @@
 // Script assets have changed for v2.3.0 see
 // https://help.yoyogames.com/hc/en-us/articles/360005277377 for more information
 
-function scr_Soul_Teleport(_evasion = false, _costs_money = true, _xx = mouse_x, _yy = mouse_y){
+function scr_Soul_Teleport(_evasion = false, _costs_money = true, _xx = obj_Astral_Indicator.x, _yy = obj_Astral_Indicator.y){
 	
 	var _base_tele_delay = 120;
     

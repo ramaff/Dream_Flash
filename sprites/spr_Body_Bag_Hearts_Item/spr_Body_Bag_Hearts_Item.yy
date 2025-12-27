@@ -1,5 +1,5 @@
 {
-  "$GMSprite":"",
+  "$GMSprite":"v2",
   "%Name":"spr_Body_Bag_Hearts_Item",
   "bboxMode":0,
   "bbox_bottom":157,
@@ -12,7 +12,7 @@
   "edgeFiltering":false,
   "For3D":false,
   "frames":[
-    {"$GMSpriteFrame":"","%Name":"f2c53d50-0fc0-438a-a698-d579bdeb420e","name":"f2c53d50-0fc0-438a-a698-d579bdeb420e","resourceType":"GMSpriteFrame","resourceVersion":"2.0",},
+    {"$GMSpriteFrame":"v1","%Name":"f2c53d50-0fc0-438a-a698-d579bdeb420e","name":"f2c53d50-0fc0-438a-a698-d579bdeb420e","resourceType":"GMSpriteFrame","resourceVersion":"2.0",},
   ],
   "gridX":0,
   "gridY":0,

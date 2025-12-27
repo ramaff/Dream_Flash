@@ -4,8 +4,8 @@ if global.mouseheartslot != -1 {
     
     if (item != -1) {
     
-        x = mouse_x;
-        y = mouse_y;
+        x = obj_Astral_Indicator.x;
+        y = obj_Astral_Indicator.y;
 		
 		scr_Draw_Heart(global.mousehearttype, hpercent)
   

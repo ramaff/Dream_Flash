@@ -1,5 +1,5 @@
 {
-  "$GMSprite":"",
+  "$GMSprite":"v2",
   "%Name":"spr_Blood_Tear",
   "bboxMode":2,
   "bbox_bottom":49,
@@ -12,7 +12,7 @@
   "edgeFiltering":false,
   "For3D":false,
   "frames":[
-    {"$GMSpriteFrame":"","%Name":"2d0ffb41-4110-4fda-b851-f519a80a0e34","name":"2d0ffb41-4110-4fda-b851-f519a80a0e34","resourceType":"GMSpriteFrame","resourceVersion":"2.0",},
+    {"$GMSpriteFrame":"v1","%Name":"2d0ffb41-4110-4fda-b851-f519a80a0e34","name":"2d0ffb41-4110-4fda-b851-f519a80a0e34","resourceType":"GMSpriteFrame","resourceVersion":"2.0",},
   ],
   "gridX":0,
   "gridY":0,

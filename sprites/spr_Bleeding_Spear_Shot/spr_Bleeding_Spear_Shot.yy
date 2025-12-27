@@ -1,5 +1,5 @@
 {
-  "$GMSprite":"",
+  "$GMSprite":"v2",
   "%Name":"spr_Bleeding_Spear_Shot",
   "bboxMode":2,
   "bbox_bottom":220,
@@ -12,7 +12,7 @@
   "edgeFiltering":false,
   "For3D":false,
   "frames":[
-    {"$GMSpriteFrame":"","%Name":"4da676dc-e3b0-4549-9131-44a5d3d5ebeb","name":"4da676dc-e3b0-4549-9131-44a5d3d5ebeb","resourceType":"GMSpriteFrame","resourceVersion":"2.0",},
+    {"$GMSpriteFrame":"v1","%Name":"4da676dc-e3b0-4549-9131-44a5d3d5ebeb","name":"4da676dc-e3b0-4549-9131-44a5d3d5ebeb","resourceType":"GMSpriteFrame","resourceVersion":"2.0",},
   ],
   "gridX":0,
   "gridY":0,

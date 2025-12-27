@@ -1,5 +1,5 @@
 {
-  "$GMSprite":"",
+  "$GMSprite":"v2",
   "%Name":"spr_Horror_Stack_Palette",
   "bboxMode":0,
   "bbox_bottom":18,
@@ -12,7 +12,7 @@
   "edgeFiltering":false,
   "For3D":false,
   "frames":[
-    {"$GMSpriteFrame":"","%Name":"5b36a6b6-90ba-40ac-a7b1-b40e45129b12","name":"5b36a6b6-90ba-40ac-a7b1-b40e45129b12","resourceType":"GMSpriteFrame","resourceVersion":"2.0",},
+    {"$GMSpriteFrame":"v1","%Name":"5b36a6b6-90ba-40ac-a7b1-b40e45129b12","name":"5b36a6b6-90ba-40ac-a7b1-b40e45129b12","resourceType":"GMSpriteFrame","resourceVersion":"2.0",},
   ],
   "gridX":0,
   "gridY":0,

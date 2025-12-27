@@ -1,5 +1,5 @@
 {
-  "$GMSprite":"",
+  "$GMSprite":"v2",
   "%Name":"spr_Hope_Minion",
   "bboxMode":0,
   "bbox_bottom":218,
@@ -12,7 +12,7 @@
   "edgeFiltering":false,
   "For3D":false,
   "frames":[
-    {"$GMSpriteFrame":"","%Name":"7ecbd8b4-96ca-45fa-9f3a-f27f2e3e8d9a","name":"7ecbd8b4-96ca-45fa-9f3a-f27f2e3e8d9a","resourceType":"GMSpriteFrame","resourceVersion":"2.0",},
+    {"$GMSpriteFrame":"v1","%Name":"7ecbd8b4-96ca-45fa-9f3a-f27f2e3e8d9a","name":"7ecbd8b4-96ca-45fa-9f3a-f27f2e3e8d9a","resourceType":"GMSpriteFrame","resourceVersion":"2.0",},
   ],
   "gridX":0,
   "gridY":0,

@@ -1,5 +1,5 @@
 {
-  "$GMSprite":"",
+  "$GMSprite":"v2",
   "%Name":"spr_Intense_Big_Fire_Shot",
   "bboxMode":2,
   "bbox_bottom":60,
@@ -12,7 +12,7 @@
   "edgeFiltering":false,
   "For3D":false,
   "frames":[
-    {"$GMSpriteFrame":"","%Name":"a0154919-bdc3-4439-8fbe-c41078134389","name":"a0154919-bdc3-4439-8fbe-c41078134389","resourceType":"GMSpriteFrame","resourceVersion":"2.0",},
+    {"$GMSpriteFrame":"v1","%Name":"a0154919-bdc3-4439-8fbe-c41078134389","name":"a0154919-bdc3-4439-8fbe-c41078134389","resourceType":"GMSpriteFrame","resourceVersion":"2.0",},
   ],
   "gridX":0,
   "gridY":0,

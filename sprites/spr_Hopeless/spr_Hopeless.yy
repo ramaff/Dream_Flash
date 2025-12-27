@@ -1,5 +1,5 @@
 {
-  "$GMSprite":"",
+  "$GMSprite":"v2",
   "%Name":"spr_Hopeless",
   "bboxMode":0,
   "bbox_bottom":243,
@@ -12,7 +12,7 @@
   "edgeFiltering":false,
   "For3D":false,
   "frames":[
-    {"$GMSpriteFrame":"","%Name":"6b07b096-b641-47a5-a0c4-2b95a3b7c97c","name":"6b07b096-b641-47a5-a0c4-2b95a3b7c97c","resourceType":"GMSpriteFrame","resourceVersion":"2.0",},
+    {"$GMSpriteFrame":"v1","%Name":"6b07b096-b641-47a5-a0c4-2b95a3b7c97c","name":"6b07b096-b641-47a5-a0c4-2b95a3b7c97c","resourceType":"GMSpriteFrame","resourceVersion":"2.0",},
   ],
   "gridX":0,
   "gridY":0,

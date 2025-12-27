@@ -1,5 +1,5 @@
 {
-  "$GMSprite":"",
+  "$GMSprite":"v2",
   "%Name":"spr_Vengeful_Heart_Shot",
   "bboxMode":0,
   "bbox_bottom":98,
@@ -12,7 +12,7 @@
   "edgeFiltering":false,
   "For3D":false,
   "frames":[
-    {"$GMSpriteFrame":"","%Name":"3a13adb3-992d-42ca-ba1d-c2f80a675bba","name":"3a13adb3-992d-42ca-ba1d-c2f80a675bba","resourceType":"GMSpriteFrame","resourceVersion":"2.0",},
+    {"$GMSpriteFrame":"v1","%Name":"3a13adb3-992d-42ca-ba1d-c2f80a675bba","name":"3a13adb3-992d-42ca-ba1d-c2f80a675bba","resourceType":"GMSpriteFrame","resourceVersion":"2.0",},
   ],
   "gridX":0,
   "gridY":0,

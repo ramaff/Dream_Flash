@@ -1,5 +1,5 @@
 {
-  "$GMSprite":"",
+  "$GMSprite":"v2",
   "%Name":"spr_Barrier_Shot_Art",
   "bboxMode":0,
   "bbox_bottom":130,
@@ -12,7 +12,7 @@
   "edgeFiltering":false,
   "For3D":false,
   "frames":[
-    {"$GMSpriteFrame":"","%Name":"2e9e522a-b6a9-4c6c-9ad3-e7fefad2bed3","name":"2e9e522a-b6a9-4c6c-9ad3-e7fefad2bed3","resourceType":"GMSpriteFrame","resourceVersion":"2.0",},
+    {"$GMSpriteFrame":"v1","%Name":"2e9e522a-b6a9-4c6c-9ad3-e7fefad2bed3","name":"2e9e522a-b6a9-4c6c-9ad3-e7fefad2bed3","resourceType":"GMSpriteFrame","resourceVersion":"2.0",},
   ],
   "gridX":0,
   "gridY":0,

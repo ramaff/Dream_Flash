@@ -1,5 +1,5 @@
 {
-  "$GMSprite":"",
+  "$GMSprite":"v2",
   "%Name":"spr_Chaotic_Big_Shot",
   "bboxMode":2,
   "bbox_bottom":53,
@@ -12,7 +12,7 @@
   "edgeFiltering":false,
   "For3D":false,
   "frames":[
-    {"$GMSpriteFrame":"","%Name":"6d6e89d8-a37d-44ec-82cb-d42b592b20d2","name":"6d6e89d8-a37d-44ec-82cb-d42b592b20d2","resourceType":"GMSpriteFrame","resourceVersion":"2.0",},
+    {"$GMSpriteFrame":"v1","%Name":"6d6e89d8-a37d-44ec-82cb-d42b592b20d2","name":"6d6e89d8-a37d-44ec-82cb-d42b592b20d2","resourceType":"GMSpriteFrame","resourceVersion":"2.0",},
   ],
   "gridX":0,
   "gridY":0,

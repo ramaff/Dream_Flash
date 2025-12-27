@@ -1,5 +1,5 @@
 {
-  "$GMSprite":"",
+  "$GMSprite":"v2",
   "%Name":"spr_Weakening_Soul",
   "bboxMode":0,
   "bbox_bottom":171,
@@ -12,8 +12,8 @@
   "edgeFiltering":false,
   "For3D":false,
   "frames":[
-    {"$GMSpriteFrame":"","%Name":"9f5d4e39-bf2c-425a-a979-a1f335653c03","name":"9f5d4e39-bf2c-425a-a979-a1f335653c03","resourceType":"GMSpriteFrame","resourceVersion":"2.0",},
-    {"$GMSpriteFrame":"","%Name":"8c76d151-807f-4ae4-9fb4-37430b6c9f08","name":"8c76d151-807f-4ae4-9fb4-37430b6c9f08","resourceType":"GMSpriteFrame","resourceVersion":"2.0",},
+    {"$GMSpriteFrame":"v1","%Name":"9f5d4e39-bf2c-425a-a979-a1f335653c03","name":"9f5d4e39-bf2c-425a-a979-a1f335653c03","resourceType":"GMSpriteFrame","resourceVersion":"2.0",},
+    {"$GMSpriteFrame":"v1","%Name":"8c76d151-807f-4ae4-9fb4-37430b6c9f08","name":"8c76d151-807f-4ae4-9fb4-37430b6c9f08","resourceType":"GMSpriteFrame","resourceVersion":"2.0",},
   ],
   "gridX":0,
   "gridY":0,

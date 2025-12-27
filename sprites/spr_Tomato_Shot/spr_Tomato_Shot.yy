@@ -1,5 +1,5 @@
 {
-  "$GMSprite":"",
+  "$GMSprite":"v2",
   "%Name":"spr_Tomato_Shot",
   "bboxMode":0,
   "bbox_bottom":131,
@@ -12,7 +12,7 @@
   "edgeFiltering":false,
   "For3D":false,
   "frames":[
-    {"$GMSpriteFrame":"","%Name":"fe7220ad-a001-4b68-a792-5be65310c130","name":"fe7220ad-a001-4b68-a792-5be65310c130","resourceType":"GMSpriteFrame","resourceVersion":"2.0",},
+    {"$GMSpriteFrame":"v1","%Name":"fe7220ad-a001-4b68-a792-5be65310c130","name":"fe7220ad-a001-4b68-a792-5be65310c130","resourceType":"GMSpriteFrame","resourceVersion":"2.0",},
   ],
   "gridX":0,
   "gridY":0,

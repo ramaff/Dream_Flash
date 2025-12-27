@@ -1,5 +1,5 @@
 {
-  "$GMSprite":"",
+  "$GMSprite":"v2",
   "%Name":"spr_Wicked_Spectre_old",
   "bboxMode":0,
   "bbox_bottom":153,
@@ -12,8 +12,8 @@
   "edgeFiltering":false,
   "For3D":false,
   "frames":[
-    {"$GMSpriteFrame":"","%Name":"9ab0326e-7dd7-4925-a179-91e70a6e69a8","name":"9ab0326e-7dd7-4925-a179-91e70a6e69a8","resourceType":"GMSpriteFrame","resourceVersion":"2.0",},
-    {"$GMSpriteFrame":"","%Name":"0f384683-9a72-4fbd-a73c-fcb55d4c70b1","name":"0f384683-9a72-4fbd-a73c-fcb55d4c70b1","resourceType":"GMSpriteFrame","resourceVersion":"2.0",},
+    {"$GMSpriteFrame":"v1","%Name":"9ab0326e-7dd7-4925-a179-91e70a6e69a8","name":"9ab0326e-7dd7-4925-a179-91e70a6e69a8","resourceType":"GMSpriteFrame","resourceVersion":"2.0",},
+    {"$GMSpriteFrame":"v1","%Name":"0f384683-9a72-4fbd-a73c-fcb55d4c70b1","name":"0f384683-9a72-4fbd-a73c-fcb55d4c70b1","resourceType":"GMSpriteFrame","resourceVersion":"2.0",},
   ],
   "gridX":0,
   "gridY":0,

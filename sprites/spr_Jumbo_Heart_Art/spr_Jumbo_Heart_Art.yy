@@ -1,5 +1,5 @@
 {
-  "$GMSprite":"",
+  "$GMSprite":"v2",
   "%Name":"spr_Jumbo_Heart_Art",
   "bboxMode":0,
   "bbox_bottom":157,
@@ -12,7 +12,7 @@
   "edgeFiltering":false,
   "For3D":false,
   "frames":[
-    {"$GMSpriteFrame":"","%Name":"3f1d75cb-96ca-4255-8255-5fd1a4517d60","name":"3f1d75cb-96ca-4255-8255-5fd1a4517d60","resourceType":"GMSpriteFrame","resourceVersion":"2.0",},
+    {"$GMSpriteFrame":"v1","%Name":"3f1d75cb-96ca-4255-8255-5fd1a4517d60","name":"3f1d75cb-96ca-4255-8255-5fd1a4517d60","resourceType":"GMSpriteFrame","resourceVersion":"2.0",},
   ],
   "gridX":0,
   "gridY":0,

@@ -1,5 +1,5 @@
 {
-  "$GMSprite":"",
+  "$GMSprite":"v2",
   "%Name":"spr_amorphous_jello_ko",
   "bboxMode":0,
   "bbox_bottom":412,
@@ -12,7 +12,7 @@
   "edgeFiltering":false,
   "For3D":false,
   "frames":[
-    {"$GMSpriteFrame":"","%Name":"f9f778d5-9aed-4566-87b1-852e9f014336","name":"f9f778d5-9aed-4566-87b1-852e9f014336","resourceType":"GMSpriteFrame","resourceVersion":"2.0",},
+    {"$GMSpriteFrame":"v1","%Name":"f9f778d5-9aed-4566-87b1-852e9f014336","name":"f9f778d5-9aed-4566-87b1-852e9f014336","resourceType":"GMSpriteFrame","resourceVersion":"2.0",},
   ],
   "gridX":0,
   "gridY":0,

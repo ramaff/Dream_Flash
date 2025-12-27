@@ -1,5 +1,5 @@
 {
-  "$GMSprite":"",
+  "$GMSprite":"v2",
   "%Name":"reco_growing_sorrows_v2",
   "bboxMode":0,
   "bbox_bottom":414,
@@ -12,7 +12,7 @@
   "edgeFiltering":false,
   "For3D":false,
   "frames":[
-    {"$GMSpriteFrame":"","%Name":"abac0464-53d2-4742-b100-a69740f38289","name":"abac0464-53d2-4742-b100-a69740f38289","resourceType":"GMSpriteFrame","resourceVersion":"2.0",},
+    {"$GMSpriteFrame":"v1","%Name":"abac0464-53d2-4742-b100-a69740f38289","name":"abac0464-53d2-4742-b100-a69740f38289","resourceType":"GMSpriteFrame","resourceVersion":"2.0",},
   ],
   "gridX":0,
   "gridY":0,

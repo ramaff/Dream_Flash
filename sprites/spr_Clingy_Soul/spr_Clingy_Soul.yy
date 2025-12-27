@@ -1,5 +1,5 @@
 {
-  "$GMSprite":"",
+  "$GMSprite":"v2",
   "%Name":"spr_Clingy_Soul",
   "bboxMode":0,
   "bbox_bottom":147,
@@ -12,7 +12,7 @@
   "edgeFiltering":false,
   "For3D":false,
   "frames":[
-    {"$GMSpriteFrame":"","%Name":"deeeeac0-50e4-42e8-bf9a-18512009d3bb","name":"deeeeac0-50e4-42e8-bf9a-18512009d3bb","resourceType":"GMSpriteFrame","resourceVersion":"2.0",},
+    {"$GMSpriteFrame":"v1","%Name":"deeeeac0-50e4-42e8-bf9a-18512009d3bb","name":"deeeeac0-50e4-42e8-bf9a-18512009d3bb","resourceType":"GMSpriteFrame","resourceVersion":"2.0",},
   ],
   "gridX":0,
   "gridY":0,

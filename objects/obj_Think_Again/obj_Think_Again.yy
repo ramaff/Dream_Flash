@@ -15,7 +15,10 @@
     "name":"Item Room Things",
     "path":"folders/Objects/Item Room Things.yy",
   },
-  "parentObjectId":null,
+  "parentObjectId":{
+    "name":"obj_Item_Like",
+    "path":"objects/obj_Item_Like/obj_Item_Like.yy",
+  },
   "persistent":false,
   "physicsAngularDamping":0.1,
   "physicsDensity":0.5,

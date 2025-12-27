@@ -1,5 +1,5 @@
 {
-  "$GMSprite":"",
+  "$GMSprite":"v2",
   "%Name":"spr_star_lights_bg",
   "bboxMode":0,
   "bbox_bottom":1188,
@@ -12,7 +12,7 @@
   "edgeFiltering":false,
   "For3D":false,
   "frames":[
-    {"$GMSpriteFrame":"","%Name":"1adf2726-e2b9-4dba-913c-37a3d459c5a6","name":"1adf2726-e2b9-4dba-913c-37a3d459c5a6","resourceType":"GMSpriteFrame","resourceVersion":"2.0",},
+    {"$GMSpriteFrame":"v1","%Name":"1adf2726-e2b9-4dba-913c-37a3d459c5a6","name":"1adf2726-e2b9-4dba-913c-37a3d459c5a6","resourceType":"GMSpriteFrame","resourceVersion":"2.0",},
   ],
   "gridX":0,
   "gridY":0,

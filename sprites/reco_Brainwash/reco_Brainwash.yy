@@ -1,5 +1,5 @@
 {
-  "$GMSprite":"",
+  "$GMSprite":"v2",
   "%Name":"reco_Brainwash",
   "bboxMode":0,
   "bbox_bottom":372,
@@ -12,7 +12,7 @@
   "edgeFiltering":false,
   "For3D":false,
   "frames":[
-    {"$GMSpriteFrame":"","%Name":"1d20777c-18dc-4ec9-b756-fca387a3f20e","name":"1d20777c-18dc-4ec9-b756-fca387a3f20e","resourceType":"GMSpriteFrame","resourceVersion":"2.0",},
+    {"$GMSpriteFrame":"v1","%Name":"1d20777c-18dc-4ec9-b756-fca387a3f20e","name":"1d20777c-18dc-4ec9-b756-fca387a3f20e","resourceType":"GMSpriteFrame","resourceVersion":"2.0",},
   ],
   "gridX":0,
   "gridY":0,

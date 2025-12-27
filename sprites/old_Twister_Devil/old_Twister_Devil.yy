@@ -1,5 +1,5 @@
 {
-  "$GMSprite":"",
+  "$GMSprite":"v2",
   "%Name":"old_Twister_Devil",
   "bboxMode":0,
   "bbox_bottom":115,
@@ -12,7 +12,7 @@
   "edgeFiltering":false,
   "For3D":false,
   "frames":[
-    {"$GMSpriteFrame":"","%Name":"18c7152d-a089-454e-bee5-50feaa810445","name":"18c7152d-a089-454e-bee5-50feaa810445","resourceType":"GMSpriteFrame","resourceVersion":"2.0",},
+    {"$GMSpriteFrame":"v1","%Name":"18c7152d-a089-454e-bee5-50feaa810445","name":"18c7152d-a089-454e-bee5-50feaa810445","resourceType":"GMSpriteFrame","resourceVersion":"2.0",},
   ],
   "gridX":0,
   "gridY":0,

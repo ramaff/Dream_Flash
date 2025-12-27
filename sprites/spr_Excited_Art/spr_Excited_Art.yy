@@ -1,5 +1,5 @@
 {
-  "$GMSprite":"",
+  "$GMSprite":"v2",
   "%Name":"spr_Excited_Art",
   "bboxMode":0,
   "bbox_bottom":157,
@@ -12,7 +12,7 @@
   "edgeFiltering":false,
   "For3D":false,
   "frames":[
-    {"$GMSpriteFrame":"","%Name":"32d9f9ad-a174-4b6d-a96a-a70f5b4e5ea3","name":"32d9f9ad-a174-4b6d-a96a-a70f5b4e5ea3","resourceType":"GMSpriteFrame","resourceVersion":"2.0",},
+    {"$GMSpriteFrame":"v1","%Name":"32d9f9ad-a174-4b6d-a96a-a70f5b4e5ea3","name":"32d9f9ad-a174-4b6d-a96a-a70f5b4e5ea3","resourceType":"GMSpriteFrame","resourceVersion":"2.0",},
   ],
   "gridX":0,
   "gridY":0,

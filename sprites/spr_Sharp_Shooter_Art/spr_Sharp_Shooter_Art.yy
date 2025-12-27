@@ -1,5 +1,5 @@
 {
-  "$GMSprite":"",
+  "$GMSprite":"v2",
   "%Name":"spr_Sharp_Shooter_Art",
   "bboxMode":0,
   "bbox_bottom":125,
@@ -12,7 +12,7 @@
   "edgeFiltering":false,
   "For3D":false,
   "frames":[
-    {"$GMSpriteFrame":"","%Name":"6a45337e-0dd8-42ce-92a8-9b3319cc3493","name":"6a45337e-0dd8-42ce-92a8-9b3319cc3493","resourceType":"GMSpriteFrame","resourceVersion":"2.0",},
+    {"$GMSpriteFrame":"v1","%Name":"6a45337e-0dd8-42ce-92a8-9b3319cc3493","name":"6a45337e-0dd8-42ce-92a8-9b3319cc3493","resourceType":"GMSpriteFrame","resourceVersion":"2.0",},
   ],
   "gridX":0,
   "gridY":0,

@@ -1,5 +1,5 @@
 {
-  "$GMSprite":"",
+  "$GMSprite":"v2",
   "%Name":"reco_Nightmare_Cloud",
   "bboxMode":0,
   "bbox_bottom":471,
@@ -12,7 +12,7 @@
   "edgeFiltering":false,
   "For3D":false,
   "frames":[
-    {"$GMSpriteFrame":"","%Name":"e50adf88-ef13-4141-8c0d-174b6474fb7b","name":"e50adf88-ef13-4141-8c0d-174b6474fb7b","resourceType":"GMSpriteFrame","resourceVersion":"2.0",},
+    {"$GMSpriteFrame":"v1","%Name":"e50adf88-ef13-4141-8c0d-174b6474fb7b","name":"e50adf88-ef13-4141-8c0d-174b6474fb7b","resourceType":"GMSpriteFrame","resourceVersion":"2.0",},
   ],
   "gridX":0,
   "gridY":0,

@@ -1,5 +1,5 @@
 {
-  "$GMSprite":"",
+  "$GMSprite":"v2",
   "%Name":"spr_Recollection_Lifespan_Icon",
   "bboxMode":0,
   "bbox_bottom":27,
@@ -12,7 +12,7 @@
   "edgeFiltering":false,
   "For3D":false,
   "frames":[
-    {"$GMSpriteFrame":"","%Name":"85a16e32-b1d1-4e8f-a0ce-ebb00bc62b9e","name":"85a16e32-b1d1-4e8f-a0ce-ebb00bc62b9e","resourceType":"GMSpriteFrame","resourceVersion":"2.0",},
+    {"$GMSpriteFrame":"v1","%Name":"85a16e32-b1d1-4e8f-a0ce-ebb00bc62b9e","name":"85a16e32-b1d1-4e8f-a0ce-ebb00bc62b9e","resourceType":"GMSpriteFrame","resourceVersion":"2.0",},
   ],
   "gridX":0,
   "gridY":0,

@@ -1,5 +1,5 @@
 {
-  "$GMSprite":"",
+  "$GMSprite":"v2",
   "%Name":"spr_Nightmare_Cloud",
   "bboxMode":0,
   "bbox_bottom":464,
@@ -12,7 +12,7 @@
   "edgeFiltering":false,
   "For3D":false,
   "frames":[
-    {"$GMSpriteFrame":"","%Name":"1fa8fc8f-bc9c-4da6-99b4-d32b05c41b79","name":"1fa8fc8f-bc9c-4da6-99b4-d32b05c41b79","resourceType":"GMSpriteFrame","resourceVersion":"2.0",},
+    {"$GMSpriteFrame":"v1","%Name":"1fa8fc8f-bc9c-4da6-99b4-d32b05c41b79","name":"1fa8fc8f-bc9c-4da6-99b4-d32b05c41b79","resourceType":"GMSpriteFrame","resourceVersion":"2.0",},
   ],
   "gridX":0,
   "gridY":0,

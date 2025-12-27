@@ -1,5 +1,5 @@
 {
-  "$GMSprite":"",
+  "$GMSprite":"v2",
   "%Name":"spr_Danger_Raiser1588",
   "bboxMode":0,
   "bbox_bottom":602,
@@ -12,7 +12,7 @@
   "edgeFiltering":false,
   "For3D":false,
   "frames":[
-    {"$GMSpriteFrame":"","%Name":"ea2f6d01-5e00-40ff-bdbb-0b925965cde5","name":"ea2f6d01-5e00-40ff-bdbb-0b925965cde5","resourceType":"GMSpriteFrame","resourceVersion":"2.0",},
+    {"$GMSpriteFrame":"v1","%Name":"ea2f6d01-5e00-40ff-bdbb-0b925965cde5","name":"ea2f6d01-5e00-40ff-bdbb-0b925965cde5","resourceType":"GMSpriteFrame","resourceVersion":"2.0",},
   ],
   "gridX":0,
   "gridY":0,

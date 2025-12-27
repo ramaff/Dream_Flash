@@ -1,5 +1,5 @@
 {
-  "$GMSprite":"",
+  "$GMSprite":"v2",
   "%Name":"spr_Big_Explosive_Shot",
   "bboxMode":2,
   "bbox_bottom":60,
@@ -12,7 +12,7 @@
   "edgeFiltering":false,
   "For3D":false,
   "frames":[
-    {"$GMSpriteFrame":"","%Name":"39e8afc9-17fc-4c4a-bec7-5447130f3ab4","name":"39e8afc9-17fc-4c4a-bec7-5447130f3ab4","resourceType":"GMSpriteFrame","resourceVersion":"2.0",},
+    {"$GMSpriteFrame":"v1","%Name":"39e8afc9-17fc-4c4a-bec7-5447130f3ab4","name":"39e8afc9-17fc-4c4a-bec7-5447130f3ab4","resourceType":"GMSpriteFrame","resourceVersion":"2.0",},
   ],
   "gridX":0,
   "gridY":0,

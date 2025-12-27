@@ -1,5 +1,5 @@
 {
-  "$GMSprite":"",
+  "$GMSprite":"v2",
   "%Name":"spr_Despair_Harpoon",
   "bboxMode":2,
   "bbox_bottom":47,
@@ -12,7 +12,7 @@
   "edgeFiltering":false,
   "For3D":false,
   "frames":[
-    {"$GMSpriteFrame":"","%Name":"75f406f6-583a-463e-b3a4-cb6a7b69bf55","name":"75f406f6-583a-463e-b3a4-cb6a7b69bf55","resourceType":"GMSpriteFrame","resourceVersion":"2.0",},
+    {"$GMSpriteFrame":"v1","%Name":"75f406f6-583a-463e-b3a4-cb6a7b69bf55","name":"75f406f6-583a-463e-b3a4-cb6a7b69bf55","resourceType":"GMSpriteFrame","resourceVersion":"2.0",},
   ],
   "gridX":0,
   "gridY":0,

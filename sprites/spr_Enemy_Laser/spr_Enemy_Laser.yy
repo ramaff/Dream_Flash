@@ -1,5 +1,5 @@
 {
-  "$GMSprite":"",
+  "$GMSprite":"v2",
   "%Name":"spr_Enemy_Laser",
   "bboxMode":2,
   "bbox_bottom":25,
@@ -12,7 +12,7 @@
   "edgeFiltering":false,
   "For3D":false,
   "frames":[
-    {"$GMSpriteFrame":"","%Name":"d6b537c8-effd-474b-a054-7f0d0cea0538","name":"d6b537c8-effd-474b-a054-7f0d0cea0538","resourceType":"GMSpriteFrame","resourceVersion":"2.0",},
+    {"$GMSpriteFrame":"v1","%Name":"d6b537c8-effd-474b-a054-7f0d0cea0538","name":"d6b537c8-effd-474b-a054-7f0d0cea0538","resourceType":"GMSpriteFrame","resourceVersion":"2.0",},
   ],
   "gridX":0,
   "gridY":0,

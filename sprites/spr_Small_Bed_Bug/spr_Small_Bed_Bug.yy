@@ -1,5 +1,5 @@
 {
-  "$GMSprite":"",
+  "$GMSprite":"v2",
   "%Name":"spr_Small_Bed_Bug",
   "bboxMode":0,
   "bbox_bottom":283,
@@ -12,7 +12,7 @@
   "edgeFiltering":false,
   "For3D":false,
   "frames":[
-    {"$GMSpriteFrame":"","%Name":"41c62f2e-6343-4203-9431-3c15624fc82f","name":"41c62f2e-6343-4203-9431-3c15624fc82f","resourceType":"GMSpriteFrame","resourceVersion":"2.0",},
+    {"$GMSpriteFrame":"v1","%Name":"41c62f2e-6343-4203-9431-3c15624fc82f","name":"41c62f2e-6343-4203-9431-3c15624fc82f","resourceType":"GMSpriteFrame","resourceVersion":"2.0",},
   ],
   "gridX":0,
   "gridY":0,

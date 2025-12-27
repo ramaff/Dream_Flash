@@ -1,5 +1,5 @@
 {
-  "$GMSprite":"",
+  "$GMSprite":"v2",
   "%Name":"spr_Muscle_Memory_Item",
   "bboxMode":0,
   "bbox_bottom":157,
@@ -12,7 +12,7 @@
   "edgeFiltering":false,
   "For3D":false,
   "frames":[
-    {"$GMSpriteFrame":"","%Name":"ac1129b2-0d3c-4fcf-a727-af72a8df5cca","name":"ac1129b2-0d3c-4fcf-a727-af72a8df5cca","resourceType":"GMSpriteFrame","resourceVersion":"2.0",},
+    {"$GMSpriteFrame":"v1","%Name":"ac1129b2-0d3c-4fcf-a727-af72a8df5cca","name":"ac1129b2-0d3c-4fcf-a727-af72a8df5cca","resourceType":"GMSpriteFrame","resourceVersion":"2.0",},
   ],
   "gridX":0,
   "gridY":0,

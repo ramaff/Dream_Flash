@@ -1,5 +1,5 @@
 {
-  "$GMSprite":"",
+  "$GMSprite":"v2",
   "%Name":"spr_Crystal_Laser_Tip",
   "bboxMode":0,
   "bbox_bottom":258,
@@ -12,7 +12,7 @@
   "edgeFiltering":false,
   "For3D":false,
   "frames":[
-    {"$GMSpriteFrame":"","%Name":"068032f1-ac8a-47d2-9bcf-85c834029149","name":"068032f1-ac8a-47d2-9bcf-85c834029149","resourceType":"GMSpriteFrame","resourceVersion":"2.0",},
+    {"$GMSpriteFrame":"v1","%Name":"068032f1-ac8a-47d2-9bcf-85c834029149","name":"068032f1-ac8a-47d2-9bcf-85c834029149","resourceType":"GMSpriteFrame","resourceVersion":"2.0",},
   ],
   "gridX":0,
   "gridY":0,

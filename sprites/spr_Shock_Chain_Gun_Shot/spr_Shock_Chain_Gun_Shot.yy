@@ -1,5 +1,5 @@
 {
-  "$GMSprite":"",
+  "$GMSprite":"v2",
   "%Name":"spr_Shock_Chain_Gun_Shot",
   "bboxMode":0,
   "bbox_bottom":58,
@@ -12,7 +12,7 @@
   "edgeFiltering":false,
   "For3D":false,
   "frames":[
-    {"$GMSpriteFrame":"","%Name":"31ea4f8c-bdb1-4c6c-a480-873a1ec7c380","name":"31ea4f8c-bdb1-4c6c-a480-873a1ec7c380","resourceType":"GMSpriteFrame","resourceVersion":"2.0",},
+    {"$GMSpriteFrame":"v1","%Name":"31ea4f8c-bdb1-4c6c-a480-873a1ec7c380","name":"31ea4f8c-bdb1-4c6c-a480-873a1ec7c380","resourceType":"GMSpriteFrame","resourceVersion":"2.0",},
   ],
   "gridX":0,
   "gridY":0,

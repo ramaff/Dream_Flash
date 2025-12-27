@@ -2,7 +2,7 @@
 // https://help.yoyogames.com/hc/en-us/articles/360005277377 for more information
 function scr_Soul_Attack_Think() {
 	with obj_Soul_Parent {
-		sprite_index = spr_The_Soul_Hard_Think;
+		//sprite_index = spr_The_Soul_Hard_Think;
 		//show_debug_message("scr_soul_attack_think: " + string(scurrentstate))
 		if scurrentstate != "Base" {
 			//show_debug_message(sprite_get_name(sprite_index))
@@ -40,10 +40,12 @@ function scr_Soul_Attack_Think() {
 						sprite_index = spr_Ascending_Soul_Hard_Think;
 						break;
 				
-					default:
-						sprite_index = spr_The_Soul_Hard_Think;
+					//default:
+					//	sprite_index = spr_The_Soul_Hard_Think;
 				
 				}
+			} else {
+				sprite_index = spr_The_Soul_Hard_Think;	
 			}
 		//show_debug_message(sprite_get_name(sprite_index))
 		alarm[8] = 10;

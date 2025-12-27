@@ -1,5 +1,5 @@
 {
-  "$GMSprite":"",
+  "$GMSprite":"v2",
   "%Name":"spr_Pocket1585",
   "bboxMode":0,
   "bbox_bottom":245,
@@ -12,7 +12,7 @@
   "edgeFiltering":false,
   "For3D":false,
   "frames":[
-    {"$GMSpriteFrame":"","%Name":"c78b4559-2f07-4de3-b0fc-4ed9e9260526","name":"c78b4559-2f07-4de3-b0fc-4ed9e9260526","resourceType":"GMSpriteFrame","resourceVersion":"2.0",},
+    {"$GMSpriteFrame":"v1","%Name":"c78b4559-2f07-4de3-b0fc-4ed9e9260526","name":"c78b4559-2f07-4de3-b0fc-4ed9e9260526","resourceType":"GMSpriteFrame","resourceVersion":"2.0",},
   ],
   "gridX":0,
   "gridY":0,

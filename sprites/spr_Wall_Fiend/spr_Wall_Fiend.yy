@@ -1,5 +1,5 @@
 {
-  "$GMSprite":"",
+  "$GMSprite":"v2",
   "%Name":"spr_Wall_Fiend",
   "bboxMode":0,
   "bbox_bottom":176,
@@ -12,7 +12,7 @@
   "edgeFiltering":false,
   "For3D":false,
   "frames":[
-    {"$GMSpriteFrame":"","%Name":"cd34f129-6ed0-49a2-befb-bcbf9898be15","name":"cd34f129-6ed0-49a2-befb-bcbf9898be15","resourceType":"GMSpriteFrame","resourceVersion":"2.0",},
+    {"$GMSpriteFrame":"v1","%Name":"cd34f129-6ed0-49a2-befb-bcbf9898be15","name":"cd34f129-6ed0-49a2-befb-bcbf9898be15","resourceType":"GMSpriteFrame","resourceVersion":"2.0",},
   ],
   "gridX":0,
   "gridY":0,

@@ -1,5 +1,5 @@
 {
-  "$GMSprite":"",
+  "$GMSprite":"v2",
   "%Name":"reco_Pocket",
   "bboxMode":0,
   "bbox_bottom":389,
@@ -12,7 +12,7 @@
   "edgeFiltering":false,
   "For3D":false,
   "frames":[
-    {"$GMSpriteFrame":"","%Name":"1f7e119a-2699-4ce7-b17e-cdc907818b7e","name":"1f7e119a-2699-4ce7-b17e-cdc907818b7e","resourceType":"GMSpriteFrame","resourceVersion":"2.0",},
+    {"$GMSpriteFrame":"v1","%Name":"1f7e119a-2699-4ce7-b17e-cdc907818b7e","name":"1f7e119a-2699-4ce7-b17e-cdc907818b7e","resourceType":"GMSpriteFrame","resourceVersion":"2.0",},
   ],
   "gridX":0,
   "gridY":0,

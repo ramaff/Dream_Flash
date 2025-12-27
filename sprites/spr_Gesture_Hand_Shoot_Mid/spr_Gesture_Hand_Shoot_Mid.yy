@@ -1,5 +1,5 @@
 {
-  "$GMSprite":"",
+  "$GMSprite":"v2",
   "%Name":"spr_Gesture_Hand_Shoot_Mid",
   "bboxMode":2,
   "bbox_bottom":119,
@@ -12,7 +12,7 @@
   "edgeFiltering":false,
   "For3D":false,
   "frames":[
-    {"$GMSpriteFrame":"","%Name":"6a1c2bf9-c831-47ce-8391-fe2d3322ad88","name":"6a1c2bf9-c831-47ce-8391-fe2d3322ad88","resourceType":"GMSpriteFrame","resourceVersion":"2.0",},
+    {"$GMSpriteFrame":"v1","%Name":"6a1c2bf9-c831-47ce-8391-fe2d3322ad88","name":"6a1c2bf9-c831-47ce-8391-fe2d3322ad88","resourceType":"GMSpriteFrame","resourceVersion":"2.0",},
   ],
   "gridX":0,
   "gridY":0,

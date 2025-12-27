@@ -1,5 +1,5 @@
 {
-  "$GMSprite":"",
+  "$GMSprite":"v2",
   "%Name":"spr_Amorphous_Prime_Spring_Up",
   "bboxMode":0,
   "bbox_bottom":592,
@@ -12,7 +12,7 @@
   "edgeFiltering":false,
   "For3D":false,
   "frames":[
-    {"$GMSpriteFrame":"","%Name":"4ec7b84f-d442-4740-9591-df1527e92cbf","name":"4ec7b84f-d442-4740-9591-df1527e92cbf","resourceType":"GMSpriteFrame","resourceVersion":"2.0",},
+    {"$GMSpriteFrame":"v1","%Name":"4ec7b84f-d442-4740-9591-df1527e92cbf","name":"4ec7b84f-d442-4740-9591-df1527e92cbf","resourceType":"GMSpriteFrame","resourceVersion":"2.0",},
   ],
   "gridX":0,
   "gridY":0,

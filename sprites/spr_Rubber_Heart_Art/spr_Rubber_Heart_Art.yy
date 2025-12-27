@@ -1,5 +1,5 @@
 {
-  "$GMSprite":"",
+  "$GMSprite":"v2",
   "%Name":"spr_Rubber_Heart_Art",
   "bboxMode":1,
   "bbox_bottom":163,
@@ -12,7 +12,7 @@
   "edgeFiltering":false,
   "For3D":false,
   "frames":[
-    {"$GMSpriteFrame":"","%Name":"db64d5ad-c9d9-4dec-84ec-a14f7889cc64","name":"db64d5ad-c9d9-4dec-84ec-a14f7889cc64","resourceType":"GMSpriteFrame","resourceVersion":"2.0",},
+    {"$GMSpriteFrame":"v1","%Name":"db64d5ad-c9d9-4dec-84ec-a14f7889cc64","name":"db64d5ad-c9d9-4dec-84ec-a14f7889cc64","resourceType":"GMSpriteFrame","resourceVersion":"2.0",},
   ],
   "gridX":0,
   "gridY":0,

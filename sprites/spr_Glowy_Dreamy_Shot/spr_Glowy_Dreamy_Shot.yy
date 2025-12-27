@@ -1,5 +1,5 @@
 {
-  "$GMSprite":"",
+  "$GMSprite":"v2",
   "%Name":"spr_Glowy_Dreamy_Shot",
   "bboxMode":2,
   "bbox_bottom":40,
@@ -12,7 +12,7 @@
   "edgeFiltering":false,
   "For3D":false,
   "frames":[
-    {"$GMSpriteFrame":"","%Name":"fb1a8310-44ec-4945-b601-f1ece4203fdb","name":"fb1a8310-44ec-4945-b601-f1ece4203fdb","resourceType":"GMSpriteFrame","resourceVersion":"2.0",},
+    {"$GMSpriteFrame":"v1","%Name":"fb1a8310-44ec-4945-b601-f1ece4203fdb","name":"fb1a8310-44ec-4945-b601-f1ece4203fdb","resourceType":"GMSpriteFrame","resourceVersion":"2.0",},
   ],
   "gridX":0,
   "gridY":0,

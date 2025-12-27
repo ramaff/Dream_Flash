@@ -1,5 +1,5 @@
 {
-  "$GMSprite":"",
+  "$GMSprite":"v2",
   "%Name":"spr_Beam_Apparition_Attack",
   "bboxMode":0,
   "bbox_bottom":503,
@@ -12,8 +12,8 @@
   "edgeFiltering":false,
   "For3D":false,
   "frames":[
-    {"$GMSpriteFrame":"","%Name":"7fec7558-2e14-4fa1-8aad-a57dd6421c29","name":"7fec7558-2e14-4fa1-8aad-a57dd6421c29","resourceType":"GMSpriteFrame","resourceVersion":"2.0",},
-    {"$GMSpriteFrame":"","%Name":"4260e4f1-e367-45fb-9352-39b1a1cccd58","name":"4260e4f1-e367-45fb-9352-39b1a1cccd58","resourceType":"GMSpriteFrame","resourceVersion":"2.0",},
+    {"$GMSpriteFrame":"v1","%Name":"7fec7558-2e14-4fa1-8aad-a57dd6421c29","name":"7fec7558-2e14-4fa1-8aad-a57dd6421c29","resourceType":"GMSpriteFrame","resourceVersion":"2.0",},
+    {"$GMSpriteFrame":"v1","%Name":"4260e4f1-e367-45fb-9352-39b1a1cccd58","name":"4260e4f1-e367-45fb-9352-39b1a1cccd58","resourceType":"GMSpriteFrame","resourceVersion":"2.0",},
   ],
   "gridX":0,
   "gridY":0,

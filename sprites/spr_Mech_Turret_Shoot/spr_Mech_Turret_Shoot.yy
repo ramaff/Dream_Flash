@@ -1,5 +1,5 @@
 {
-  "$GMSprite":"",
+  "$GMSprite":"v2",
   "%Name":"spr_Mech_Turret_Shoot",
   "bboxMode":0,
   "bbox_bottom":244,
@@ -12,8 +12,8 @@
   "edgeFiltering":false,
   "For3D":false,
   "frames":[
-    {"$GMSpriteFrame":"","%Name":"e560a398-2c51-45b5-9095-d2be5bf67f2e","name":"e560a398-2c51-45b5-9095-d2be5bf67f2e","resourceType":"GMSpriteFrame","resourceVersion":"2.0",},
-    {"$GMSpriteFrame":"","%Name":"10a22d7c-44f4-4959-8a61-14058431cefa","name":"10a22d7c-44f4-4959-8a61-14058431cefa","resourceType":"GMSpriteFrame","resourceVersion":"2.0",},
+    {"$GMSpriteFrame":"v1","%Name":"e560a398-2c51-45b5-9095-d2be5bf67f2e","name":"e560a398-2c51-45b5-9095-d2be5bf67f2e","resourceType":"GMSpriteFrame","resourceVersion":"2.0",},
+    {"$GMSpriteFrame":"v1","%Name":"10a22d7c-44f4-4959-8a61-14058431cefa","name":"10a22d7c-44f4-4959-8a61-14058431cefa","resourceType":"GMSpriteFrame","resourceVersion":"2.0",},
   ],
   "gridX":0,
   "gridY":0,

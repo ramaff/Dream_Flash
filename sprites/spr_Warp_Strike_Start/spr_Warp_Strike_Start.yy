@@ -1,5 +1,5 @@
 {
-  "$GMSprite":"",
+  "$GMSprite":"v2",
   "%Name":"spr_Warp_Strike_Start",
   "bboxMode":0,
   "bbox_bottom":58,
@@ -12,7 +12,7 @@
   "edgeFiltering":false,
   "For3D":false,
   "frames":[
-    {"$GMSpriteFrame":"","%Name":"e0c664c3-eeda-4067-8dbb-5fcf9c4c5b23","name":"e0c664c3-eeda-4067-8dbb-5fcf9c4c5b23","resourceType":"GMSpriteFrame","resourceVersion":"2.0",},
+    {"$GMSpriteFrame":"v1","%Name":"e0c664c3-eeda-4067-8dbb-5fcf9c4c5b23","name":"e0c664c3-eeda-4067-8dbb-5fcf9c4c5b23","resourceType":"GMSpriteFrame","resourceVersion":"2.0",},
   ],
   "gridX":0,
   "gridY":0,

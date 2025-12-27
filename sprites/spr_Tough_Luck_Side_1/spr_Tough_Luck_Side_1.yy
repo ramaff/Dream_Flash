@@ -1,5 +1,5 @@
 {
-  "$GMSprite":"",
+  "$GMSprite":"v2",
   "%Name":"spr_Tough_Luck_Side_1",
   "bboxMode":0,
   "bbox_bottom":245,
@@ -12,7 +12,7 @@
   "edgeFiltering":false,
   "For3D":false,
   "frames":[
-    {"$GMSpriteFrame":"","%Name":"a43f03a6-fbd1-420a-b0a2-4ac687ad7b19","name":"a43f03a6-fbd1-420a-b0a2-4ac687ad7b19","resourceType":"GMSpriteFrame","resourceVersion":"2.0",},
+    {"$GMSpriteFrame":"v1","%Name":"a43f03a6-fbd1-420a-b0a2-4ac687ad7b19","name":"a43f03a6-fbd1-420a-b0a2-4ac687ad7b19","resourceType":"GMSpriteFrame","resourceVersion":"2.0",},
   ],
   "gridX":0,
   "gridY":0,

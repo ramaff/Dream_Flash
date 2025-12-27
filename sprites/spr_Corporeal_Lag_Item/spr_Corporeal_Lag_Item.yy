@@ -1,5 +1,5 @@
 {
-  "$GMSprite":"",
+  "$GMSprite":"v2",
   "%Name":"spr_Corporeal_Lag_Item",
   "bboxMode":0,
   "bbox_bottom":157,
@@ -12,7 +12,7 @@
   "edgeFiltering":false,
   "For3D":false,
   "frames":[
-    {"$GMSpriteFrame":"","%Name":"2b8a3d1d-3853-4f17-b723-9a57c1d3b9a7","name":"2b8a3d1d-3853-4f17-b723-9a57c1d3b9a7","resourceType":"GMSpriteFrame","resourceVersion":"2.0",},
+    {"$GMSpriteFrame":"v1","%Name":"2b8a3d1d-3853-4f17-b723-9a57c1d3b9a7","name":"2b8a3d1d-3853-4f17-b723-9a57c1d3b9a7","resourceType":"GMSpriteFrame","resourceVersion":"2.0",},
   ],
   "gridX":0,
   "gridY":0,

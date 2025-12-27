@@ -1,5 +1,5 @@
 {
-  "$GMSprite":"",
+  "$GMSprite":"v2",
   "%Name":"DF_Mac_Splash",
   "bboxMode":2,
   "bbox_bottom":1151,
@@ -12,7 +12,7 @@
   "edgeFiltering":false,
   "For3D":false,
   "frames":[
-    {"$GMSpriteFrame":"","%Name":"9a0961f4-f910-44ba-a8a3-acc439c70053","name":"9a0961f4-f910-44ba-a8a3-acc439c70053","resourceType":"GMSpriteFrame","resourceVersion":"2.0",},
+    {"$GMSpriteFrame":"v1","%Name":"9a0961f4-f910-44ba-a8a3-acc439c70053","name":"9a0961f4-f910-44ba-a8a3-acc439c70053","resourceType":"GMSpriteFrame","resourceVersion":"2.0",},
   ],
   "gridX":0,
   "gridY":0,

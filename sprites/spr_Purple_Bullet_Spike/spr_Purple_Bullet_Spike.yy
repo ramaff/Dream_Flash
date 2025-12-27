@@ -1,5 +1,5 @@
 {
-  "$GMSprite":"",
+  "$GMSprite":"v2",
   "%Name":"spr_Purple_Bullet_Spike",
   "bboxMode":2,
   "bbox_bottom":48,
@@ -12,7 +12,7 @@
   "edgeFiltering":false,
   "For3D":false,
   "frames":[
-    {"$GMSpriteFrame":"","%Name":"0361091c-e989-4c15-af60-2f28420ed8ad","name":"0361091c-e989-4c15-af60-2f28420ed8ad","resourceType":"GMSpriteFrame","resourceVersion":"2.0",},
+    {"$GMSpriteFrame":"v1","%Name":"0361091c-e989-4c15-af60-2f28420ed8ad","name":"0361091c-e989-4c15-af60-2f28420ed8ad","resourceType":"GMSpriteFrame","resourceVersion":"2.0",},
   ],
   "gridX":0,
   "gridY":0,

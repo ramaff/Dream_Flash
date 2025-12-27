@@ -1,5 +1,5 @@
 {
-  "$GMSprite":"",
+  "$GMSprite":"v2",
   "%Name":"old_Flood_Cloud",
   "bboxMode":0,
   "bbox_bottom":147,
@@ -12,7 +12,7 @@
   "edgeFiltering":false,
   "For3D":false,
   "frames":[
-    {"$GMSpriteFrame":"","%Name":"8968f530-3e89-4cf1-922c-c2911fa0078a","name":"8968f530-3e89-4cf1-922c-c2911fa0078a","resourceType":"GMSpriteFrame","resourceVersion":"2.0",},
+    {"$GMSpriteFrame":"v1","%Name":"8968f530-3e89-4cf1-922c-c2911fa0078a","name":"8968f530-3e89-4cf1-922c-c2911fa0078a","resourceType":"GMSpriteFrame","resourceVersion":"2.0",},
   ],
   "gridX":0,
   "gridY":0,

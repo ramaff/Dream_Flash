@@ -1,5 +1,5 @@
 {
-  "$GMSprite":"",
+  "$GMSprite":"v2",
   "%Name":"spr_Evil_Head_Hitbox",
   "bboxMode":0,
   "bbox_bottom":243,
@@ -12,7 +12,7 @@
   "edgeFiltering":false,
   "For3D":false,
   "frames":[
-    {"$GMSpriteFrame":"","%Name":"681fee23-3c5a-4f70-b83f-a52ee97fb0f3","name":"681fee23-3c5a-4f70-b83f-a52ee97fb0f3","resourceType":"GMSpriteFrame","resourceVersion":"2.0",},
+    {"$GMSpriteFrame":"v1","%Name":"681fee23-3c5a-4f70-b83f-a52ee97fb0f3","name":"681fee23-3c5a-4f70-b83f-a52ee97fb0f3","resourceType":"GMSpriteFrame","resourceVersion":"2.0",},
   ],
   "gridX":0,
   "gridY":0,

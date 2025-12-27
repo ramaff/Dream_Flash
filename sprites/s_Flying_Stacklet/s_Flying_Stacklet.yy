@@ -1,5 +1,5 @@
 {
-  "$GMSprite":"",
+  "$GMSprite":"v2",
   "%Name":"s_Flying_Stacklet",
   "bboxMode":0,
   "bbox_bottom":326,
@@ -12,7 +12,7 @@
   "edgeFiltering":false,
   "For3D":false,
   "frames":[
-    {"$GMSpriteFrame":"","%Name":"916a3173-a772-4724-94a8-863713af4dce","name":"916a3173-a772-4724-94a8-863713af4dce","resourceType":"GMSpriteFrame","resourceVersion":"2.0",},
+    {"$GMSpriteFrame":"v1","%Name":"916a3173-a772-4724-94a8-863713af4dce","name":"916a3173-a772-4724-94a8-863713af4dce","resourceType":"GMSpriteFrame","resourceVersion":"2.0",},
   ],
   "gridX":0,
   "gridY":0,

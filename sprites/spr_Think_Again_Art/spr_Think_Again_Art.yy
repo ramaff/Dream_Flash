@@ -1,5 +1,5 @@
 {
-  "$GMSprite":"",
+  "$GMSprite":"v2",
   "%Name":"spr_Think_Again_Art",
   "bboxMode":0,
   "bbox_bottom":157,
@@ -12,7 +12,7 @@
   "edgeFiltering":false,
   "For3D":false,
   "frames":[
-    {"$GMSpriteFrame":"","%Name":"d2da46ea-e29f-47a1-a9d8-ae479ddaeb8c","name":"d2da46ea-e29f-47a1-a9d8-ae479ddaeb8c","resourceType":"GMSpriteFrame","resourceVersion":"2.0",},
+    {"$GMSpriteFrame":"v1","%Name":"d2da46ea-e29f-47a1-a9d8-ae479ddaeb8c","name":"d2da46ea-e29f-47a1-a9d8-ae479ddaeb8c","resourceType":"GMSpriteFrame","resourceVersion":"2.0",},
   ],
   "gridX":0,
   "gridY":0,

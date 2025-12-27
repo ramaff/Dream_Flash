@@ -1,5 +1,5 @@
 {
-  "$GMSprite":"",
+  "$GMSprite":"v2",
   "%Name":"spr_Demonic_Hunger",
   "bboxMode":0,
   "bbox_bottom":546,
@@ -12,7 +12,7 @@
   "edgeFiltering":false,
   "For3D":false,
   "frames":[
-    {"$GMSpriteFrame":"","%Name":"b92ad094-b07f-471b-a200-8685c2b14d39","name":"b92ad094-b07f-471b-a200-8685c2b14d39","resourceType":"GMSpriteFrame","resourceVersion":"2.0",},
+    {"$GMSpriteFrame":"v1","%Name":"b92ad094-b07f-471b-a200-8685c2b14d39","name":"b92ad094-b07f-471b-a200-8685c2b14d39","resourceType":"GMSpriteFrame","resourceVersion":"2.0",},
   ],
   "gridX":0,
   "gridY":0,

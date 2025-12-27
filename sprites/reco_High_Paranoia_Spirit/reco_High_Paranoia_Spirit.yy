@@ -1,5 +1,5 @@
 {
-  "$GMSprite":"",
+  "$GMSprite":"v2",
   "%Name":"reco_High_Paranoia_Spirit",
   "bboxMode":0,
   "bbox_bottom":591,
@@ -12,7 +12,7 @@
   "edgeFiltering":false,
   "For3D":false,
   "frames":[
-    {"$GMSpriteFrame":"","%Name":"20cca266-7530-4472-8970-96754e2287bf","name":"20cca266-7530-4472-8970-96754e2287bf","resourceType":"GMSpriteFrame","resourceVersion":"2.0",},
+    {"$GMSpriteFrame":"v1","%Name":"20cca266-7530-4472-8970-96754e2287bf","name":"20cca266-7530-4472-8970-96754e2287bf","resourceType":"GMSpriteFrame","resourceVersion":"2.0",},
   ],
   "gridX":0,
   "gridY":0,

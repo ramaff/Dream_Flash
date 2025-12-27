@@ -1,7 +1,5 @@
-if window_has_focus() {
-    x = mouse_x;
-    y = mouse_y;
-}
+
+event_inherited()
 
 if scr_Room_Leavable() {
     scr_Adjacent_Room_Cloud();

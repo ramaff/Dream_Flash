@@ -1,5 +1,5 @@
 {
-  "$GMSprite":"",
+  "$GMSprite":"v2",
   "%Name":"spr_Crystal_Laser_Charge_Ball",
   "bboxMode":0,
   "bbox_bottom":121,
@@ -12,7 +12,7 @@
   "edgeFiltering":false,
   "For3D":false,
   "frames":[
-    {"$GMSpriteFrame":"","%Name":"25190440-ab1b-4ee9-ba71-c00a4cefb26c","name":"25190440-ab1b-4ee9-ba71-c00a4cefb26c","resourceType":"GMSpriteFrame","resourceVersion":"2.0",},
+    {"$GMSpriteFrame":"v1","%Name":"25190440-ab1b-4ee9-ba71-c00a4cefb26c","name":"25190440-ab1b-4ee9-ba71-c00a4cefb26c","resourceType":"GMSpriteFrame","resourceVersion":"2.0",},
   ],
   "gridX":0,
   "gridY":0,

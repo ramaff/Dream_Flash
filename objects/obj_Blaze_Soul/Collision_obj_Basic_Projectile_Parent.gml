@@ -2,8 +2,10 @@ var hit_again = variable_struct_exists(projectile_hits, other.id)
 if !hit_again {
 	variable_struct_set(projectile_hits, other.id, other.id)
     with(other) {
-        shot_stats.Shot_Speed += 2.5;
-        speed += 2.5;
+		if speed != 0 {
+			shot_stats.Shot_Speed += 2.5;
+			speed += 2.5;
+		}
         shot_stats.Shot_Fire += 3;
         if shot_stats.Shot_Fire_Ticks <= 3 {
             shot_stats.Shot_Fire_Time = 60;

@@ -1,5 +1,5 @@
 {
-  "$GMSprite":"",
+  "$GMSprite":"v2",
   "%Name":"spr_Uplifted_Art",
   "bboxMode":0,
   "bbox_bottom":157,
@@ -12,7 +12,7 @@
   "edgeFiltering":false,
   "For3D":false,
   "frames":[
-    {"$GMSpriteFrame":"","%Name":"5b2ab6d4-212e-40f5-9805-cbd6541aeca9","name":"5b2ab6d4-212e-40f5-9805-cbd6541aeca9","resourceType":"GMSpriteFrame","resourceVersion":"2.0",},
+    {"$GMSpriteFrame":"v1","%Name":"5b2ab6d4-212e-40f5-9805-cbd6541aeca9","name":"5b2ab6d4-212e-40f5-9805-cbd6541aeca9","resourceType":"GMSpriteFrame","resourceVersion":"2.0",},
   ],
   "gridX":0,
   "gridY":0,

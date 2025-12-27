@@ -1,5 +1,5 @@
 {
-  "$GMSprite":"",
+  "$GMSprite":"v2",
   "%Name":"spr_Heart_Shells_Item",
   "bboxMode":0,
   "bbox_bottom":157,
@@ -12,7 +12,7 @@
   "edgeFiltering":false,
   "For3D":false,
   "frames":[
-    {"$GMSpriteFrame":"","%Name":"66d4ccaa-81a5-450a-bfa6-30bf37d3fc89","name":"66d4ccaa-81a5-450a-bfa6-30bf37d3fc89","resourceType":"GMSpriteFrame","resourceVersion":"2.0",},
+    {"$GMSpriteFrame":"v1","%Name":"66d4ccaa-81a5-450a-bfa6-30bf37d3fc89","name":"66d4ccaa-81a5-450a-bfa6-30bf37d3fc89","resourceType":"GMSpriteFrame","resourceVersion":"2.0",},
   ],
   "gridX":0,
   "gridY":0,

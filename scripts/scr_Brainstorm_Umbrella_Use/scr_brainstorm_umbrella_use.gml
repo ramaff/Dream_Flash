@@ -27,7 +27,7 @@ function scr_Brainstorm_Umbrella_Use() {
 	Shot_Size = 0.5;
 	Shot_Mouse = 0;
 	
-	Shot_Direction = point_direction(x,y,mouse_x,mouse_y);
+	Shot_Direction = point_direction(x,y,obj_Astral_Indicator.x,obj_Astral_Indicator.y);
 	
 	Shot_Image_Direction = Shot_Direction;
 

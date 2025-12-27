@@ -1,5 +1,5 @@
 {
-  "$GMSprite":"",
+  "$GMSprite":"v2",
   "%Name":"spr_Wave_Gun_Art",
   "bboxMode":1,
   "bbox_bottom":163,
@@ -12,7 +12,7 @@
   "edgeFiltering":false,
   "For3D":false,
   "frames":[
-    {"$GMSpriteFrame":"","%Name":"acba3034-1d7c-4e2a-91e5-11bb96e7a7d3","name":"acba3034-1d7c-4e2a-91e5-11bb96e7a7d3","resourceType":"GMSpriteFrame","resourceVersion":"2.0",},
+    {"$GMSpriteFrame":"v1","%Name":"acba3034-1d7c-4e2a-91e5-11bb96e7a7d3","name":"acba3034-1d7c-4e2a-91e5-11bb96e7a7d3","resourceType":"GMSpriteFrame","resourceVersion":"2.0",},
   ],
   "gridX":0,
   "gridY":0,

@@ -1,5 +1,5 @@
 {
-  "$GMSprite":"",
+  "$GMSprite":"v2",
   "%Name":"spr_Red_Beam_Tail",
   "bboxMode":0,
   "bbox_bottom":207,
@@ -12,7 +12,7 @@
   "edgeFiltering":false,
   "For3D":false,
   "frames":[
-    {"$GMSpriteFrame":"","%Name":"26d33ba0-cc66-4d7f-9f8b-f6014ef76e4f","name":"26d33ba0-cc66-4d7f-9f8b-f6014ef76e4f","resourceType":"GMSpriteFrame","resourceVersion":"2.0",},
+    {"$GMSpriteFrame":"v1","%Name":"26d33ba0-cc66-4d7f-9f8b-f6014ef76e4f","name":"26d33ba0-cc66-4d7f-9f8b-f6014ef76e4f","resourceType":"GMSpriteFrame","resourceVersion":"2.0",},
   ],
   "gridX":0,
   "gridY":0,

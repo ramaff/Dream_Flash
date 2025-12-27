@@ -1,5 +1,5 @@
 {
-  "$GMSprite":"",
+  "$GMSprite":"v2",
   "%Name":"spr_Dream_Cell_Shot",
   "bboxMode":0,
   "bbox_bottom":340,
@@ -12,7 +12,7 @@
   "edgeFiltering":false,
   "For3D":false,
   "frames":[
-    {"$GMSpriteFrame":"","%Name":"18fb22e1-8be4-44eb-b5ec-3eb3cb8a6a15","name":"18fb22e1-8be4-44eb-b5ec-3eb3cb8a6a15","resourceType":"GMSpriteFrame","resourceVersion":"2.0",},
+    {"$GMSpriteFrame":"v1","%Name":"18fb22e1-8be4-44eb-b5ec-3eb3cb8a6a15","name":"18fb22e1-8be4-44eb-b5ec-3eb3cb8a6a15","resourceType":"GMSpriteFrame","resourceVersion":"2.0",},
   ],
   "gridX":0,
   "gridY":0,

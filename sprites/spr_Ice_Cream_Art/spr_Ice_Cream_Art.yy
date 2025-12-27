@@ -1,5 +1,5 @@
 {
-  "$GMSprite":"",
+  "$GMSprite":"v2",
   "%Name":"spr_Ice_Cream_Art",
   "bboxMode":0,
   "bbox_bottom":157,
@@ -12,7 +12,7 @@
   "edgeFiltering":false,
   "For3D":false,
   "frames":[
-    {"$GMSpriteFrame":"","%Name":"c69d10a5-ed70-42df-8e33-0bac6d224ae0","name":"c69d10a5-ed70-42df-8e33-0bac6d224ae0","resourceType":"GMSpriteFrame","resourceVersion":"2.0",},
+    {"$GMSpriteFrame":"v1","%Name":"c69d10a5-ed70-42df-8e33-0bac6d224ae0","name":"c69d10a5-ed70-42df-8e33-0bac6d224ae0","resourceType":"GMSpriteFrame","resourceVersion":"2.0",},
   ],
   "gridX":0,
   "gridY":0,

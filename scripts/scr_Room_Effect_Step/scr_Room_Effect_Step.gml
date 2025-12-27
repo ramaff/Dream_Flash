@@ -12,10 +12,10 @@ function scr_Room_Effect_Step(){
 	} else {
 		fx_glow_params.g_GlowRadius = 6;
 	}
-	fx_glow_params.g_GlowQuality = 1;
+	fx_glow_params.g_GlowQuality = 2;
 	//fx_glow_params.g_GlowIntensity = 0.075 * global.gameBloomShader;
-	fx_glow_params.g_GlowIntensity = 0.2 * global.gameBloomShader;
-	fx_glow_params.g_GlowGamma = 2;
+	fx_glow_params.g_GlowIntensity = 0.4 * global.gameBloomShader;
+	fx_glow_params.g_GlowGamma = 1;
 	fx_glow_params.g_GlowAlpha = 1;
 
 	fx_set_parameters(fx_glow, fx_glow_params);

@@ -1,5 +1,5 @@
 {
-  "$GMSprite":"",
+  "$GMSprite":"v2",
   "%Name":"bg_Cave_Tiles",
   "bboxMode":0,
   "bbox_bottom":127,
@@ -12,7 +12,7 @@
   "edgeFiltering":false,
   "For3D":false,
   "frames":[
-    {"$GMSpriteFrame":"","%Name":"dba1a2ee-607b-4e4a-8048-da4bb128db64","name":"dba1a2ee-607b-4e4a-8048-da4bb128db64","resourceType":"GMSpriteFrame","resourceVersion":"2.0",},
+    {"$GMSpriteFrame":"v1","%Name":"dba1a2ee-607b-4e4a-8048-da4bb128db64","name":"dba1a2ee-607b-4e4a-8048-da4bb128db64","resourceType":"GMSpriteFrame","resourceVersion":"2.0",},
   ],
   "gridX":0,
   "gridY":0,

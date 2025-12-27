@@ -1,5 +1,5 @@
 {
-  "$GMSprite":"",
+  "$GMSprite":"v2",
   "%Name":"spr_Demon_Spirit_Skull",
   "bboxMode":0,
   "bbox_bottom":189,
@@ -12,7 +12,7 @@
   "edgeFiltering":false,
   "For3D":false,
   "frames":[
-    {"$GMSpriteFrame":"","%Name":"c7d399a7-13d8-4252-a40c-e8123ba78ab9","name":"c7d399a7-13d8-4252-a40c-e8123ba78ab9","resourceType":"GMSpriteFrame","resourceVersion":"2.0",},
+    {"$GMSpriteFrame":"v1","%Name":"c7d399a7-13d8-4252-a40c-e8123ba78ab9","name":"c7d399a7-13d8-4252-a40c-e8123ba78ab9","resourceType":"GMSpriteFrame","resourceVersion":"2.0",},
   ],
   "gridX":0,
   "gridY":0,

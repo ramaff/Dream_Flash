@@ -1,5 +1,5 @@
 {
-  "$GMSprite":"",
+  "$GMSprite":"v2",
   "%Name":"spr_Entropy_Demon",
   "bboxMode":0,
   "bbox_bottom":416,
@@ -12,7 +12,7 @@
   "edgeFiltering":false,
   "For3D":false,
   "frames":[
-    {"$GMSpriteFrame":"","%Name":"320ed395-b511-4277-89a9-1c4614329608","name":"320ed395-b511-4277-89a9-1c4614329608","resourceType":"GMSpriteFrame","resourceVersion":"2.0",},
+    {"$GMSpriteFrame":"v1","%Name":"320ed395-b511-4277-89a9-1c4614329608","name":"320ed395-b511-4277-89a9-1c4614329608","resourceType":"GMSpriteFrame","resourceVersion":"2.0",},
   ],
   "gridX":0,
   "gridY":0,

@@ -1,5 +1,5 @@
 {
-  "$GMSprite":"",
+  "$GMSprite":"v2",
   "%Name":"reco_Nightmare",
   "bboxMode":0,
   "bbox_bottom":516,
@@ -12,7 +12,7 @@
   "edgeFiltering":false,
   "For3D":false,
   "frames":[
-    {"$GMSpriteFrame":"","%Name":"7b194620-ee95-41aa-8ec1-6d9ae2559168","name":"7b194620-ee95-41aa-8ec1-6d9ae2559168","resourceType":"GMSpriteFrame","resourceVersion":"2.0",},
+    {"$GMSpriteFrame":"v1","%Name":"7b194620-ee95-41aa-8ec1-6d9ae2559168","name":"7b194620-ee95-41aa-8ec1-6d9ae2559168","resourceType":"GMSpriteFrame","resourceVersion":"2.0",},
   ],
   "gridX":0,
   "gridY":0,

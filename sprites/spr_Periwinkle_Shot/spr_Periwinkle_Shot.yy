@@ -1,5 +1,5 @@
 {
-  "$GMSprite":"",
+  "$GMSprite":"v2",
   "%Name":"spr_Periwinkle_Shot",
   "bboxMode":2,
   "bbox_bottom":36,
@@ -12,7 +12,7 @@
   "edgeFiltering":false,
   "For3D":false,
   "frames":[
-    {"$GMSpriteFrame":"","%Name":"185ac529-9c84-49b2-8acd-de0944576ab3","name":"185ac529-9c84-49b2-8acd-de0944576ab3","resourceType":"GMSpriteFrame","resourceVersion":"2.0",},
+    {"$GMSpriteFrame":"v1","%Name":"185ac529-9c84-49b2-8acd-de0944576ab3","name":"185ac529-9c84-49b2-8acd-de0944576ab3","resourceType":"GMSpriteFrame","resourceVersion":"2.0",},
   ],
   "gridX":0,
   "gridY":0,

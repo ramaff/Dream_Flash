@@ -1,5 +1,5 @@
 {
-  "$GMSprite":"",
+  "$GMSprite":"v2",
   "%Name":"spr_Pumpkin",
   "bboxMode":0,
   "bbox_bottom":78,
@@ -12,7 +12,7 @@
   "edgeFiltering":false,
   "For3D":false,
   "frames":[
-    {"$GMSpriteFrame":"","%Name":"55e8bd6b-d948-4836-8277-ea07fb059f1e","name":"55e8bd6b-d948-4836-8277-ea07fb059f1e","resourceType":"GMSpriteFrame","resourceVersion":"2.0",},
+    {"$GMSpriteFrame":"v1","%Name":"55e8bd6b-d948-4836-8277-ea07fb059f1e","name":"55e8bd6b-d948-4836-8277-ea07fb059f1e","resourceType":"GMSpriteFrame","resourceVersion":"2.0",},
   ],
   "gridX":0,
   "gridY":0,

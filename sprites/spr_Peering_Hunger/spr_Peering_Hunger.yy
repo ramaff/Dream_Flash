@@ -1,5 +1,5 @@
 {
-  "$GMSprite":"",
+  "$GMSprite":"v2",
   "%Name":"spr_Peering_Hunger",
   "bboxMode":2,
   "bbox_bottom":149,
@@ -12,7 +12,7 @@
   "edgeFiltering":false,
   "For3D":false,
   "frames":[
-    {"$GMSpriteFrame":"","%Name":"da8e464d-ea3a-470c-b227-60c65720daea","name":"da8e464d-ea3a-470c-b227-60c65720daea","resourceType":"GMSpriteFrame","resourceVersion":"2.0",},
+    {"$GMSpriteFrame":"v1","%Name":"da8e464d-ea3a-470c-b227-60c65720daea","name":"da8e464d-ea3a-470c-b227-60c65720daea","resourceType":"GMSpriteFrame","resourceVersion":"2.0",},
   ],
   "gridX":0,
   "gridY":0,

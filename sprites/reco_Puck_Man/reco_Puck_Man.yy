@@ -1,5 +1,5 @@
 {
-  "$GMSprite":"",
+  "$GMSprite":"v2",
   "%Name":"reco_Puck_Man",
   "bboxMode":0,
   "bbox_bottom":306,
@@ -12,7 +12,7 @@
   "edgeFiltering":false,
   "For3D":false,
   "frames":[
-    {"$GMSpriteFrame":"","%Name":"be553c70-4da5-45b9-9756-6462679c31a5","name":"be553c70-4da5-45b9-9756-6462679c31a5","resourceType":"GMSpriteFrame","resourceVersion":"2.0",},
+    {"$GMSpriteFrame":"v1","%Name":"be553c70-4da5-45b9-9756-6462679c31a5","name":"be553c70-4da5-45b9-9756-6462679c31a5","resourceType":"GMSpriteFrame","resourceVersion":"2.0",},
   ],
   "gridX":0,
   "gridY":0,

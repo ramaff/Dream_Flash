@@ -16,8 +16,6 @@ ideal_width = 960;
 view_zoom = 1;
 view_max_zoom = 10;
 
-view_zoom = 0.875;
-
 if(ideal_width & 1) {
 	ideal_width++;
 }
@@ -42,6 +40,10 @@ window_set_size((view_width * window_scale), view_height * window_scale);
 surface_resize(application_surface, (view_width * window_scale), view_height * window_scale);
 display_set_gui_size(view_width * window_scale, view_width * window_scale);
 alarm[0] = 1;
+
+if instance_exists(Soul_Weapons_Control) {
+	scr_Weapon_Slot_Info_Update(Soul_Weapons_Control.weapon_slot_info)
+}
 
 //alarm[1] = 600;
 

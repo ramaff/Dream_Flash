@@ -1,5 +1,5 @@
 {
-  "$GMSprite":"",
+  "$GMSprite":"v2",
   "%Name":"spr_Wisp_Mask_Face",
   "bboxMode":0,
   "bbox_bottom":271,
@@ -12,7 +12,7 @@
   "edgeFiltering":false,
   "For3D":false,
   "frames":[
-    {"$GMSpriteFrame":"","%Name":"0fc1fb11-b3fa-4ad9-a485-f23fc9df7e77","name":"0fc1fb11-b3fa-4ad9-a485-f23fc9df7e77","resourceType":"GMSpriteFrame","resourceVersion":"2.0",},
+    {"$GMSpriteFrame":"v1","%Name":"0fc1fb11-b3fa-4ad9-a485-f23fc9df7e77","name":"0fc1fb11-b3fa-4ad9-a485-f23fc9df7e77","resourceType":"GMSpriteFrame","resourceVersion":"2.0",},
   ],
   "gridX":0,
   "gridY":0,

@@ -1,5 +1,5 @@
 {
-  "$GMSprite":"",
+  "$GMSprite":"v2",
   "%Name":"spr_Figment_Health_Bar",
   "bboxMode":0,
   "bbox_bottom":89,
@@ -12,8 +12,8 @@
   "edgeFiltering":false,
   "For3D":false,
   "frames":[
-    {"$GMSpriteFrame":"","%Name":"e3a4fd1e-7eac-4dc5-9317-af6eaf031a28","name":"e3a4fd1e-7eac-4dc5-9317-af6eaf031a28","resourceType":"GMSpriteFrame","resourceVersion":"2.0",},
-    {"$GMSpriteFrame":"","%Name":"2cce1540-72bc-46d9-be9f-0e9cd0e58dff","name":"2cce1540-72bc-46d9-be9f-0e9cd0e58dff","resourceType":"GMSpriteFrame","resourceVersion":"2.0",},
+    {"$GMSpriteFrame":"v1","%Name":"e3a4fd1e-7eac-4dc5-9317-af6eaf031a28","name":"e3a4fd1e-7eac-4dc5-9317-af6eaf031a28","resourceType":"GMSpriteFrame","resourceVersion":"2.0",},
+    {"$GMSpriteFrame":"v1","%Name":"2cce1540-72bc-46d9-be9f-0e9cd0e58dff","name":"2cce1540-72bc-46d9-be9f-0e9cd0e58dff","resourceType":"GMSpriteFrame","resourceVersion":"2.0",},
   ],
   "gridX":0,
   "gridY":0,

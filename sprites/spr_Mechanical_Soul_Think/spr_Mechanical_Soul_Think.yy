@@ -1,5 +1,5 @@
 {
-  "$GMSprite":"",
+  "$GMSprite":"v2",
   "%Name":"spr_Mechanical_Soul_Think",
   "bboxMode":0,
   "bbox_bottom":227,
@@ -12,7 +12,7 @@
   "edgeFiltering":false,
   "For3D":false,
   "frames":[
-    {"$GMSpriteFrame":"","%Name":"d9a7adf2-2bdb-47de-8d9b-f25b29f108f9","name":"d9a7adf2-2bdb-47de-8d9b-f25b29f108f9","resourceType":"GMSpriteFrame","resourceVersion":"2.0",},
+    {"$GMSpriteFrame":"v1","%Name":"d9a7adf2-2bdb-47de-8d9b-f25b29f108f9","name":"d9a7adf2-2bdb-47de-8d9b-f25b29f108f9","resourceType":"GMSpriteFrame","resourceVersion":"2.0",},
   ],
   "gridX":0,
   "gridY":0,

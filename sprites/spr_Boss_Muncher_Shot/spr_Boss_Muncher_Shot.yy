@@ -1,5 +1,5 @@
 {
-  "$GMSprite":"",
+  "$GMSprite":"v2",
   "%Name":"spr_Boss_Muncher_Shot",
   "bboxMode":0,
   "bbox_bottom":87,
@@ -12,8 +12,8 @@
   "edgeFiltering":false,
   "For3D":false,
   "frames":[
-    {"$GMSpriteFrame":"","%Name":"3f41399d-3fc9-47fc-92ae-a17832a5646f","name":"3f41399d-3fc9-47fc-92ae-a17832a5646f","resourceType":"GMSpriteFrame","resourceVersion":"2.0",},
-    {"$GMSpriteFrame":"","%Name":"77fdd557-1b6f-480c-8cd5-411404a3a531","name":"77fdd557-1b6f-480c-8cd5-411404a3a531","resourceType":"GMSpriteFrame","resourceVersion":"2.0",},
+    {"$GMSpriteFrame":"v1","%Name":"3f41399d-3fc9-47fc-92ae-a17832a5646f","name":"3f41399d-3fc9-47fc-92ae-a17832a5646f","resourceType":"GMSpriteFrame","resourceVersion":"2.0",},
+    {"$GMSpriteFrame":"v1","%Name":"77fdd557-1b6f-480c-8cd5-411404a3a531","name":"77fdd557-1b6f-480c-8cd5-411404a3a531","resourceType":"GMSpriteFrame","resourceVersion":"2.0",},
   ],
   "gridX":0,
   "gridY":0,

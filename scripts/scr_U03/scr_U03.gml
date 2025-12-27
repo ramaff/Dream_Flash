@@ -1,7 +1,7 @@
 function scr_U03() {
 	// Soul Step After Event
 
-		var _shoot_angle = point_direction(obj_Soul_Parent.x, obj_Soul_Parent.y, mouse_x, mouse_y);
+		var _shoot_angle = point_direction(obj_Soul_Parent.x, obj_Soul_Parent.y, obj_Astral_Indicator.x, obj_Astral_Indicator.y);
 		if global.U03boost <= 0 {
 			global.U03_direction = _shoot_angle
 		}

@@ -1,5 +1,5 @@
 {
-  "$GMSprite":"",
+  "$GMSprite":"v2",
   "%Name":"reco_Crush",
   "bboxMode":0,
   "bbox_bottom":368,
@@ -12,7 +12,7 @@
   "edgeFiltering":false,
   "For3D":false,
   "frames":[
-    {"$GMSpriteFrame":"","%Name":"4abf0768-55ef-4bcc-af6a-1addb086e072","name":"4abf0768-55ef-4bcc-af6a-1addb086e072","resourceType":"GMSpriteFrame","resourceVersion":"2.0",},
+    {"$GMSpriteFrame":"v1","%Name":"4abf0768-55ef-4bcc-af6a-1addb086e072","name":"4abf0768-55ef-4bcc-af6a-1addb086e072","resourceType":"GMSpriteFrame","resourceVersion":"2.0",},
   ],
   "gridX":0,
   "gridY":0,

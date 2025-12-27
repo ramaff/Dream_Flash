@@ -1,5 +1,5 @@
 {
-  "$GMSprite":"",
+  "$GMSprite":"v2",
   "%Name":"spr_Sore_Eye",
   "bboxMode":2,
   "bbox_bottom":153,
@@ -12,7 +12,7 @@
   "edgeFiltering":false,
   "For3D":false,
   "frames":[
-    {"$GMSpriteFrame":"","%Name":"11a88e1b-e48f-48b6-96ab-821d9bc2067f","name":"11a88e1b-e48f-48b6-96ab-821d9bc2067f","resourceType":"GMSpriteFrame","resourceVersion":"2.0",},
+    {"$GMSpriteFrame":"v1","%Name":"11a88e1b-e48f-48b6-96ab-821d9bc2067f","name":"11a88e1b-e48f-48b6-96ab-821d9bc2067f","resourceType":"GMSpriteFrame","resourceVersion":"2.0",},
   ],
   "gridX":0,
   "gridY":0,

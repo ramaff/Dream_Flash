@@ -1,5 +1,5 @@
 {
-  "$GMSprite":"",
+  "$GMSprite":"v2",
   "%Name":"spr_Pain_Emanation_Art",
   "bboxMode":0,
   "bbox_bottom":145,
@@ -12,7 +12,7 @@
   "edgeFiltering":false,
   "For3D":false,
   "frames":[
-    {"$GMSpriteFrame":"","%Name":"e4f465ed-d8f9-4d2e-ac04-a5d2055e05ed","name":"e4f465ed-d8f9-4d2e-ac04-a5d2055e05ed","resourceType":"GMSpriteFrame","resourceVersion":"2.0",},
+    {"$GMSpriteFrame":"v1","%Name":"e4f465ed-d8f9-4d2e-ac04-a5d2055e05ed","name":"e4f465ed-d8f9-4d2e-ac04-a5d2055e05ed","resourceType":"GMSpriteFrame","resourceVersion":"2.0",},
   ],
   "gridX":0,
   "gridY":0,

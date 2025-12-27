@@ -1,5 +1,5 @@
 {
-  "$GMSprite":"",
+  "$GMSprite":"v2",
   "%Name":"spr_Drone_Soul",
   "bboxMode":0,
   "bbox_bottom":163,
@@ -12,8 +12,8 @@
   "edgeFiltering":false,
   "For3D":false,
   "frames":[
-    {"$GMSpriteFrame":"","%Name":"013e4446-f233-4bec-b511-38b358e91858","name":"013e4446-f233-4bec-b511-38b358e91858","resourceType":"GMSpriteFrame","resourceVersion":"2.0",},
-    {"$GMSpriteFrame":"","%Name":"ae065045-7f1b-44ad-8cea-00854e0bbb74","name":"ae065045-7f1b-44ad-8cea-00854e0bbb74","resourceType":"GMSpriteFrame","resourceVersion":"2.0",},
+    {"$GMSpriteFrame":"v1","%Name":"013e4446-f233-4bec-b511-38b358e91858","name":"013e4446-f233-4bec-b511-38b358e91858","resourceType":"GMSpriteFrame","resourceVersion":"2.0",},
+    {"$GMSpriteFrame":"v1","%Name":"ae065045-7f1b-44ad-8cea-00854e0bbb74","name":"ae065045-7f1b-44ad-8cea-00854e0bbb74","resourceType":"GMSpriteFrame","resourceVersion":"2.0",},
   ],
   "gridX":0,
   "gridY":0,

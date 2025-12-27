@@ -1,5 +1,5 @@
 {
-  "$GMSprite":"",
+  "$GMSprite":"v2",
   "%Name":"spr_Loathing_Bullet",
   "bboxMode":2,
   "bbox_bottom":63,
@@ -12,7 +12,7 @@
   "edgeFiltering":false,
   "For3D":false,
   "frames":[
-    {"$GMSpriteFrame":"","%Name":"6dbffa88-e5cf-4a72-8f78-f35a334e659c","name":"6dbffa88-e5cf-4a72-8f78-f35a334e659c","resourceType":"GMSpriteFrame","resourceVersion":"2.0",},
+    {"$GMSpriteFrame":"v1","%Name":"6dbffa88-e5cf-4a72-8f78-f35a334e659c","name":"6dbffa88-e5cf-4a72-8f78-f35a334e659c","resourceType":"GMSpriteFrame","resourceVersion":"2.0",},
   ],
   "gridX":0,
   "gridY":0,

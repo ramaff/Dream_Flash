@@ -1,5 +1,5 @@
 {
-  "$GMSprite":"",
+  "$GMSprite":"v2",
   "%Name":"spr_Horror_Ghoul_Shoot",
   "bboxMode":0,
   "bbox_bottom":178,
@@ -12,7 +12,7 @@
   "edgeFiltering":false,
   "For3D":false,
   "frames":[
-    {"$GMSpriteFrame":"","%Name":"60f1b640-fcb6-4d35-bb0b-779765b55194","name":"60f1b640-fcb6-4d35-bb0b-779765b55194","resourceType":"GMSpriteFrame","resourceVersion":"2.0",},
+    {"$GMSpriteFrame":"v1","%Name":"60f1b640-fcb6-4d35-bb0b-779765b55194","name":"60f1b640-fcb6-4d35-bb0b-779765b55194","resourceType":"GMSpriteFrame","resourceVersion":"2.0",},
   ],
   "gridX":0,
   "gridY":0,

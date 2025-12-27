@@ -1,5 +1,5 @@
 {
-  "$GMSprite":"",
+  "$GMSprite":"v2",
   "%Name":"bg_Dungeon_Fallout",
   "bboxMode":0,
   "bbox_bottom":108,
@@ -12,7 +12,7 @@
   "edgeFiltering":false,
   "For3D":false,
   "frames":[
-    {"$GMSpriteFrame":"","%Name":"46180793-ad93-416c-8155-0ba9bc05408c","name":"46180793-ad93-416c-8155-0ba9bc05408c","resourceType":"GMSpriteFrame","resourceVersion":"2.0",},
+    {"$GMSpriteFrame":"v1","%Name":"46180793-ad93-416c-8155-0ba9bc05408c","name":"46180793-ad93-416c-8155-0ba9bc05408c","resourceType":"GMSpriteFrame","resourceVersion":"2.0",},
   ],
   "gridX":0,
   "gridY":0,

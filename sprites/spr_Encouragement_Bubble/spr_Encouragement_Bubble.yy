@@ -1,5 +1,5 @@
 {
-  "$GMSprite":"",
+  "$GMSprite":"v2",
   "%Name":"spr_Encouragement_Bubble",
   "bboxMode":0,
   "bbox_bottom":99,
@@ -12,7 +12,7 @@
   "edgeFiltering":false,
   "For3D":false,
   "frames":[
-    {"$GMSpriteFrame":"","%Name":"9e71b69f-727a-4ff3-89cb-04b27d6ab503","name":"9e71b69f-727a-4ff3-89cb-04b27d6ab503","resourceType":"GMSpriteFrame","resourceVersion":"2.0",},
+    {"$GMSpriteFrame":"v1","%Name":"9e71b69f-727a-4ff3-89cb-04b27d6ab503","name":"9e71b69f-727a-4ff3-89cb-04b27d6ab503","resourceType":"GMSpriteFrame","resourceVersion":"2.0",},
   ],
   "gridX":0,
   "gridY":0,

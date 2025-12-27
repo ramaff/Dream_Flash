@@ -1,5 +1,5 @@
 {
-  "$GMSprite":"",
+  "$GMSprite":"v2",
   "%Name":"spr_Wicked_Sentinel",
   "bboxMode":0,
   "bbox_bottom":252,
@@ -12,7 +12,7 @@
   "edgeFiltering":false,
   "For3D":false,
   "frames":[
-    {"$GMSpriteFrame":"","%Name":"de562306-df3a-41f6-94ce-543977f7f098","name":"de562306-df3a-41f6-94ce-543977f7f098","resourceType":"GMSpriteFrame","resourceVersion":"2.0",},
+    {"$GMSpriteFrame":"v1","%Name":"de562306-df3a-41f6-94ce-543977f7f098","name":"de562306-df3a-41f6-94ce-543977f7f098","resourceType":"GMSpriteFrame","resourceVersion":"2.0",},
   ],
   "gridX":0,
   "gridY":0,

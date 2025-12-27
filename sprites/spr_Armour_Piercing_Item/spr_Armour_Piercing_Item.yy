@@ -1,5 +1,5 @@
 {
-  "$GMSprite":"",
+  "$GMSprite":"v2",
   "%Name":"spr_Armour_Piercing_Item",
   "bboxMode":0,
   "bbox_bottom":157,
@@ -12,7 +12,7 @@
   "edgeFiltering":false,
   "For3D":false,
   "frames":[
-    {"$GMSpriteFrame":"","%Name":"43761f09-ba2c-4a6e-bb2b-5ea5d5bec164","name":"43761f09-ba2c-4a6e-bb2b-5ea5d5bec164","resourceType":"GMSpriteFrame","resourceVersion":"2.0",},
+    {"$GMSpriteFrame":"v1","%Name":"43761f09-ba2c-4a6e-bb2b-5ea5d5bec164","name":"43761f09-ba2c-4a6e-bb2b-5ea5d5bec164","resourceType":"GMSpriteFrame","resourceVersion":"2.0",},
   ],
   "gridX":0,
   "gridY":0,

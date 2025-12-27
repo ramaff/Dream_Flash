@@ -1,5 +1,5 @@
 {
-  "$GMSprite":"",
+  "$GMSprite":"v2",
   "%Name":"spr_Emotional_Art",
   "bboxMode":0,
   "bbox_bottom":163,
@@ -12,7 +12,7 @@
   "edgeFiltering":false,
   "For3D":false,
   "frames":[
-    {"$GMSpriteFrame":"","%Name":"ffd3317b-ca02-4d96-b715-4e0382c5a9b1","name":"ffd3317b-ca02-4d96-b715-4e0382c5a9b1","resourceType":"GMSpriteFrame","resourceVersion":"2.0",},
+    {"$GMSpriteFrame":"v1","%Name":"ffd3317b-ca02-4d96-b715-4e0382c5a9b1","name":"ffd3317b-ca02-4d96-b715-4e0382c5a9b1","resourceType":"GMSpriteFrame","resourceVersion":"2.0",},
   ],
   "gridX":0,
   "gridY":0,

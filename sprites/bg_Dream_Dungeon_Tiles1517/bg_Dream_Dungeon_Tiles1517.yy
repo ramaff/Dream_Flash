@@ -1,5 +1,5 @@
 {
-  "$GMSprite":"",
+  "$GMSprite":"v2",
   "%Name":"bg_Dream_Dungeon_Tiles1517",
   "bboxMode":0,
   "bbox_bottom":127,
@@ -12,8 +12,8 @@
   "edgeFiltering":false,
   "For3D":false,
   "frames":[
-    {"$GMSpriteFrame":"","%Name":"b1bb398a-a385-40e9-a361-a2eb97ffc917","name":"b1bb398a-a385-40e9-a361-a2eb97ffc917","resourceType":"GMSpriteFrame","resourceVersion":"2.0",},
-    {"$GMSpriteFrame":"","%Name":"2de7c500-8a5b-48fd-9d86-c813178d162f","name":"2de7c500-8a5b-48fd-9d86-c813178d162f","resourceType":"GMSpriteFrame","resourceVersion":"2.0",},
+    {"$GMSpriteFrame":"v1","%Name":"b1bb398a-a385-40e9-a361-a2eb97ffc917","name":"b1bb398a-a385-40e9-a361-a2eb97ffc917","resourceType":"GMSpriteFrame","resourceVersion":"2.0",},
+    {"$GMSpriteFrame":"v1","%Name":"2de7c500-8a5b-48fd-9d86-c813178d162f","name":"2de7c500-8a5b-48fd-9d86-c813178d162f","resourceType":"GMSpriteFrame","resourceVersion":"2.0",},
   ],
   "gridX":0,
   "gridY":0,

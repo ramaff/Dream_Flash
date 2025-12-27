@@ -1,5 +1,5 @@
 {
-  "$GMSprite":"",
+  "$GMSprite":"v2",
   "%Name":"spr_Paranoia_Crowd_Spirit",
   "bboxMode":0,
   "bbox_bottom":174,
@@ -12,7 +12,7 @@
   "edgeFiltering":false,
   "For3D":false,
   "frames":[
-    {"$GMSpriteFrame":"","%Name":"e7d65080-32c9-42cc-94bb-5b6bc2d78ad9","name":"e7d65080-32c9-42cc-94bb-5b6bc2d78ad9","resourceType":"GMSpriteFrame","resourceVersion":"2.0",},
+    {"$GMSpriteFrame":"v1","%Name":"e7d65080-32c9-42cc-94bb-5b6bc2d78ad9","name":"e7d65080-32c9-42cc-94bb-5b6bc2d78ad9","resourceType":"GMSpriteFrame","resourceVersion":"2.0",},
   ],
   "gridX":0,
   "gridY":0,

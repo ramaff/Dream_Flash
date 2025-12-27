@@ -1,5 +1,5 @@
 {
-  "$GMSprite":"",
+  "$GMSprite":"v2",
   "%Name":"bg_Mind_Chamber_Fallout",
   "bboxMode":0,
   "bbox_bottom":122,
@@ -12,7 +12,7 @@
   "edgeFiltering":false,
   "For3D":false,
   "frames":[
-    {"$GMSpriteFrame":"","%Name":"738cb7ca-2b80-4163-b798-ad760f7ddadf","name":"738cb7ca-2b80-4163-b798-ad760f7ddadf","resourceType":"GMSpriteFrame","resourceVersion":"2.0",},
+    {"$GMSpriteFrame":"v1","%Name":"738cb7ca-2b80-4163-b798-ad760f7ddadf","name":"738cb7ca-2b80-4163-b798-ad760f7ddadf","resourceType":"GMSpriteFrame","resourceVersion":"2.0",},
   ],
   "gridX":0,
   "gridY":0,

@@ -1,5 +1,5 @@
 {
-  "$GMSprite":"",
+  "$GMSprite":"v2",
   "%Name":"spr_Sonic_Sorrows",
   "bboxMode":0,
   "bbox_bottom":160,
@@ -12,7 +12,7 @@
   "edgeFiltering":false,
   "For3D":false,
   "frames":[
-    {"$GMSpriteFrame":"","%Name":"d5f354f4-b415-4589-aab1-6efcb7f5d9cb","name":"d5f354f4-b415-4589-aab1-6efcb7f5d9cb","resourceType":"GMSpriteFrame","resourceVersion":"2.0",},
+    {"$GMSpriteFrame":"v1","%Name":"d5f354f4-b415-4589-aab1-6efcb7f5d9cb","name":"d5f354f4-b415-4589-aab1-6efcb7f5d9cb","resourceType":"GMSpriteFrame","resourceVersion":"2.0",},
   ],
   "gridX":0,
   "gridY":0,

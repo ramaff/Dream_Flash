@@ -1,5 +1,5 @@
 {
-  "$GMSprite":"",
+  "$GMSprite":"v2",
   "%Name":"spr_Thunderbolt_Bullet",
   "bboxMode":0,
   "bbox_bottom":51,
@@ -12,7 +12,7 @@
   "edgeFiltering":false,
   "For3D":false,
   "frames":[
-    {"$GMSpriteFrame":"","%Name":"11e8bcfe-a3c9-44ec-a31d-170f80065dfe","name":"11e8bcfe-a3c9-44ec-a31d-170f80065dfe","resourceType":"GMSpriteFrame","resourceVersion":"2.0",},
+    {"$GMSpriteFrame":"v1","%Name":"11e8bcfe-a3c9-44ec-a31d-170f80065dfe","name":"11e8bcfe-a3c9-44ec-a31d-170f80065dfe","resourceType":"GMSpriteFrame","resourceVersion":"2.0",},
   ],
   "gridX":0,
   "gridY":0,

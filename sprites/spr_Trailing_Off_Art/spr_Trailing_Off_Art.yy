@@ -1,5 +1,5 @@
 {
-  "$GMSprite":"",
+  "$GMSprite":"v2",
   "%Name":"spr_Trailing_Off_Art",
   "bboxMode":0,
   "bbox_bottom":163,
@@ -12,7 +12,7 @@
   "edgeFiltering":false,
   "For3D":false,
   "frames":[
-    {"$GMSpriteFrame":"","%Name":"90b4f04d-ac68-4acb-8b05-c5f9137035a0","name":"90b4f04d-ac68-4acb-8b05-c5f9137035a0","resourceType":"GMSpriteFrame","resourceVersion":"2.0",},
+    {"$GMSpriteFrame":"v1","%Name":"90b4f04d-ac68-4acb-8b05-c5f9137035a0","name":"90b4f04d-ac68-4acb-8b05-c5f9137035a0","resourceType":"GMSpriteFrame","resourceVersion":"2.0",},
   ],
   "gridX":0,
   "gridY":0,

@@ -1,5 +1,5 @@
 {
-  "$GMSprite":"",
+  "$GMSprite":"v2",
   "%Name":"reco_wall_of_thoughts_v2",
   "bboxMode":0,
   "bbox_bottom":967,
@@ -12,7 +12,7 @@
   "edgeFiltering":false,
   "For3D":false,
   "frames":[
-    {"$GMSpriteFrame":"","%Name":"92ba8ebd-564d-41c0-9c2f-8bb69dd7dbac","name":"92ba8ebd-564d-41c0-9c2f-8bb69dd7dbac","resourceType":"GMSpriteFrame","resourceVersion":"2.0",},
+    {"$GMSpriteFrame":"v1","%Name":"92ba8ebd-564d-41c0-9c2f-8bb69dd7dbac","name":"92ba8ebd-564d-41c0-9c2f-8bb69dd7dbac","resourceType":"GMSpriteFrame","resourceVersion":"2.0",},
   ],
   "gridX":0,
   "gridY":0,

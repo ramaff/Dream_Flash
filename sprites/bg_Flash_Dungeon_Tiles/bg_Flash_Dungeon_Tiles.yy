@@ -1,5 +1,5 @@
 {
-  "$GMSprite":"",
+  "$GMSprite":"v2",
   "%Name":"bg_Flash_Dungeon_Tiles",
   "bboxMode":0,
   "bbox_bottom":127,
@@ -12,8 +12,8 @@
   "edgeFiltering":false,
   "For3D":false,
   "frames":[
-    {"$GMSpriteFrame":"","%Name":"75f3b490-71eb-4f1f-a788-975c834f3b3e","name":"75f3b490-71eb-4f1f-a788-975c834f3b3e","resourceType":"GMSpriteFrame","resourceVersion":"2.0",},
-    {"$GMSpriteFrame":"","%Name":"6f137e72-6503-4b15-9839-e4714bcdd62f","name":"6f137e72-6503-4b15-9839-e4714bcdd62f","resourceType":"GMSpriteFrame","resourceVersion":"2.0",},
+    {"$GMSpriteFrame":"v1","%Name":"75f3b490-71eb-4f1f-a788-975c834f3b3e","name":"75f3b490-71eb-4f1f-a788-975c834f3b3e","resourceType":"GMSpriteFrame","resourceVersion":"2.0",},
+    {"$GMSpriteFrame":"v1","%Name":"6f137e72-6503-4b15-9839-e4714bcdd62f","name":"6f137e72-6503-4b15-9839-e4714bcdd62f","resourceType":"GMSpriteFrame","resourceVersion":"2.0",},
   ],
   "gridX":0,
   "gridY":0,

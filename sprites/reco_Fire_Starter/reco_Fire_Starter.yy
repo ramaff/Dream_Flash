@@ -1,5 +1,5 @@
 {
-  "$GMSprite":"",
+  "$GMSprite":"v2",
   "%Name":"reco_Fire_Starter",
   "bboxMode":0,
   "bbox_bottom":440,
@@ -12,7 +12,7 @@
   "edgeFiltering":false,
   "For3D":false,
   "frames":[
-    {"$GMSpriteFrame":"","%Name":"a54fe561-d0d8-48bf-a74b-ee1a2b3023bc","name":"a54fe561-d0d8-48bf-a74b-ee1a2b3023bc","resourceType":"GMSpriteFrame","resourceVersion":"2.0",},
+    {"$GMSpriteFrame":"v1","%Name":"a54fe561-d0d8-48bf-a74b-ee1a2b3023bc","name":"a54fe561-d0d8-48bf-a74b-ee1a2b3023bc","resourceType":"GMSpriteFrame","resourceVersion":"2.0",},
   ],
   "gridX":0,
   "gridY":0,

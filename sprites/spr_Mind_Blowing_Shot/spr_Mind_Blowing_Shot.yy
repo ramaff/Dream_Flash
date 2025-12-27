@@ -1,5 +1,5 @@
 {
-  "$GMSprite":"",
+  "$GMSprite":"v2",
   "%Name":"spr_Mind_Blowing_Shot",
   "bboxMode":1,
   "bbox_bottom":199,
@@ -12,7 +12,7 @@
   "edgeFiltering":false,
   "For3D":false,
   "frames":[
-    {"$GMSpriteFrame":"","%Name":"67f2f7e5-d4f9-4e79-8de5-c539ffcc883d","name":"67f2f7e5-d4f9-4e79-8de5-c539ffcc883d","resourceType":"GMSpriteFrame","resourceVersion":"2.0",},
+    {"$GMSpriteFrame":"v1","%Name":"67f2f7e5-d4f9-4e79-8de5-c539ffcc883d","name":"67f2f7e5-d4f9-4e79-8de5-c539ffcc883d","resourceType":"GMSpriteFrame","resourceVersion":"2.0",},
   ],
   "gridX":0,
   "gridY":0,

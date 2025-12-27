@@ -1,5 +1,5 @@
 {
-  "$GMSprite":"",
+  "$GMSprite":"v2",
   "%Name":"spr_Gesture_Ghoul_Palette",
   "bboxMode":0,
   "bbox_bottom":8,
@@ -12,7 +12,7 @@
   "edgeFiltering":false,
   "For3D":false,
   "frames":[
-    {"$GMSpriteFrame":"","%Name":"1c956ec4-5ccc-4910-bc5e-54d62c904900","name":"1c956ec4-5ccc-4910-bc5e-54d62c904900","resourceType":"GMSpriteFrame","resourceVersion":"2.0",},
+    {"$GMSpriteFrame":"v1","%Name":"1c956ec4-5ccc-4910-bc5e-54d62c904900","name":"1c956ec4-5ccc-4910-bc5e-54d62c904900","resourceType":"GMSpriteFrame","resourceVersion":"2.0",},
   ],
   "gridX":0,
   "gridY":0,

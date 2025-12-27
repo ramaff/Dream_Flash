@@ -1,5 +1,5 @@
 {
-  "$GMSprite":"",
+  "$GMSprite":"v2",
   "%Name":"spr_spirit_of_mischief_v2_twin_maelstrom",
   "bboxMode":0,
   "bbox_bottom":460,
@@ -12,10 +12,10 @@
   "edgeFiltering":false,
   "For3D":false,
   "frames":[
-    {"$GMSpriteFrame":"","%Name":"1c7f9f6c-7657-4e28-8519-9448b1f05eba","name":"1c7f9f6c-7657-4e28-8519-9448b1f05eba","resourceType":"GMSpriteFrame","resourceVersion":"2.0",},
-    {"$GMSpriteFrame":"","%Name":"aca0a563-7bf6-4709-852a-09fb2d997dbf","name":"aca0a563-7bf6-4709-852a-09fb2d997dbf","resourceType":"GMSpriteFrame","resourceVersion":"2.0",},
-    {"$GMSpriteFrame":"","%Name":"718605ce-dc0c-4428-9b99-8dddd0dab5b6","name":"718605ce-dc0c-4428-9b99-8dddd0dab5b6","resourceType":"GMSpriteFrame","resourceVersion":"2.0",},
-    {"$GMSpriteFrame":"","%Name":"5782b477-7dd8-4615-a828-ccc024df704a","name":"5782b477-7dd8-4615-a828-ccc024df704a","resourceType":"GMSpriteFrame","resourceVersion":"2.0",},
+    {"$GMSpriteFrame":"v1","%Name":"1c7f9f6c-7657-4e28-8519-9448b1f05eba","name":"1c7f9f6c-7657-4e28-8519-9448b1f05eba","resourceType":"GMSpriteFrame","resourceVersion":"2.0",},
+    {"$GMSpriteFrame":"v1","%Name":"aca0a563-7bf6-4709-852a-09fb2d997dbf","name":"aca0a563-7bf6-4709-852a-09fb2d997dbf","resourceType":"GMSpriteFrame","resourceVersion":"2.0",},
+    {"$GMSpriteFrame":"v1","%Name":"718605ce-dc0c-4428-9b99-8dddd0dab5b6","name":"718605ce-dc0c-4428-9b99-8dddd0dab5b6","resourceType":"GMSpriteFrame","resourceVersion":"2.0",},
+    {"$GMSpriteFrame":"v1","%Name":"5782b477-7dd8-4615-a828-ccc024df704a","name":"5782b477-7dd8-4615-a828-ccc024df704a","resourceType":"GMSpriteFrame","resourceVersion":"2.0",},
   ],
   "gridX":0,
   "gridY":0,

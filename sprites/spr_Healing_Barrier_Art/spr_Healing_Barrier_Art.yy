@@ -1,5 +1,5 @@
 {
-  "$GMSprite":"",
+  "$GMSprite":"v2",
   "%Name":"spr_Healing_Barrier_Art",
   "bboxMode":0,
   "bbox_bottom":133,
@@ -12,7 +12,7 @@
   "edgeFiltering":false,
   "For3D":false,
   "frames":[
-    {"$GMSpriteFrame":"","%Name":"b1b875da-b660-417a-89ba-a92306924efe","name":"b1b875da-b660-417a-89ba-a92306924efe","resourceType":"GMSpriteFrame","resourceVersion":"2.0",},
+    {"$GMSpriteFrame":"v1","%Name":"b1b875da-b660-417a-89ba-a92306924efe","name":"b1b875da-b660-417a-89ba-a92306924efe","resourceType":"GMSpriteFrame","resourceVersion":"2.0",},
   ],
   "gridX":0,
   "gridY":0,

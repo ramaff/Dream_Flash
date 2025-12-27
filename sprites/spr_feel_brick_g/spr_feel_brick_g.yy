@@ -1,5 +1,5 @@
 {
-  "$GMSprite":"",
+  "$GMSprite":"v2",
   "%Name":"spr_feel_brick_g",
   "bboxMode":0,
   "bbox_bottom":1167,
@@ -12,7 +12,7 @@
   "edgeFiltering":false,
   "For3D":false,
   "frames":[
-    {"$GMSpriteFrame":"","%Name":"6f28fb31-9263-4dca-baed-a96f12f79010","name":"6f28fb31-9263-4dca-baed-a96f12f79010","resourceType":"GMSpriteFrame","resourceVersion":"2.0",},
+    {"$GMSpriteFrame":"v1","%Name":"6f28fb31-9263-4dca-baed-a96f12f79010","name":"6f28fb31-9263-4dca-baed-a96f12f79010","resourceType":"GMSpriteFrame","resourceVersion":"2.0",},
   ],
   "gridX":0,
   "gridY":0,

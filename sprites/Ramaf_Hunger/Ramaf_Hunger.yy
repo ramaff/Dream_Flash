@@ -1,5 +1,5 @@
 {
-  "$GMSprite":"",
+  "$GMSprite":"v2",
   "%Name":"Ramaf_Hunger",
   "bboxMode":0,
   "bbox_bottom":103,
@@ -12,7 +12,7 @@
   "edgeFiltering":false,
   "For3D":false,
   "frames":[
-    {"$GMSpriteFrame":"","%Name":"93b9038e-240e-445c-9cbc-ef5c2640d81a","name":"93b9038e-240e-445c-9cbc-ef5c2640d81a","resourceType":"GMSpriteFrame","resourceVersion":"2.0",},
+    {"$GMSpriteFrame":"v1","%Name":"93b9038e-240e-445c-9cbc-ef5c2640d81a","name":"93b9038e-240e-445c-9cbc-ef5c2640d81a","resourceType":"GMSpriteFrame","resourceVersion":"2.0",},
   ],
   "gridX":0,
   "gridY":0,

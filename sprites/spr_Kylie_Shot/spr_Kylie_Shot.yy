@@ -1,5 +1,5 @@
 {
-  "$GMSprite":"",
+  "$GMSprite":"v2",
   "%Name":"spr_Kylie_Shot",
   "bboxMode":2,
   "bbox_bottom":96,
@@ -12,7 +12,7 @@
   "edgeFiltering":false,
   "For3D":false,
   "frames":[
-    {"$GMSpriteFrame":"","%Name":"4e0d2cfa-2ced-4822-8368-fef06d5a814c","name":"4e0d2cfa-2ced-4822-8368-fef06d5a814c","resourceType":"GMSpriteFrame","resourceVersion":"2.0",},
+    {"$GMSpriteFrame":"v1","%Name":"4e0d2cfa-2ced-4822-8368-fef06d5a814c","name":"4e0d2cfa-2ced-4822-8368-fef06d5a814c","resourceType":"GMSpriteFrame","resourceVersion":"2.0",},
   ],
   "gridX":0,
   "gridY":0,

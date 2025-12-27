@@ -1,5 +1,5 @@
 {
-  "$GMSprite":"",
+  "$GMSprite":"v2",
   "%Name":"spr_Beam_Curve_15_old_new",
   "bboxMode":0,
   "bbox_bottom":391,
@@ -12,7 +12,7 @@
   "edgeFiltering":false,
   "For3D":false,
   "frames":[
-    {"$GMSpriteFrame":"","%Name":"07e7be06-5d1d-49a3-ab93-f04ffbb89530","name":"07e7be06-5d1d-49a3-ab93-f04ffbb89530","resourceType":"GMSpriteFrame","resourceVersion":"2.0",},
+    {"$GMSpriteFrame":"v1","%Name":"07e7be06-5d1d-49a3-ab93-f04ffbb89530","name":"07e7be06-5d1d-49a3-ab93-f04ffbb89530","resourceType":"GMSpriteFrame","resourceVersion":"2.0",},
   ],
   "gridX":0,
   "gridY":0,

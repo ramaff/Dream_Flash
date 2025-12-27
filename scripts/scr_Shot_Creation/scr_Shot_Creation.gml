@@ -50,13 +50,19 @@ function scr_Shot_Creation(_cw = current_weapon_stats, _prime_shot = false) {
 
 	var _Shot_Current_Count = 0;
 
-	
 	var actual_shot_direction = 0;
 	
+	var _mx = obj_Astral_Indicator.x;
+	var _my = obj_Astral_Indicator.y;
+	/*if instance_exists(obj_Astral_Indicator) {
+		_mx = obj_Astral_Indicator.x;
+		_my = obj_Astral_Indicator.y;
+	} */
+	
 	if _cw.Shot_Mouse {
-		actual_shot_direction = point_direction(x, y, mouse_x, mouse_y);
+		actual_shot_direction = point_direction(x, y, _mx, _my);
 		if _cw.Shot_XX != 0 || _cw.Shot_YY != 0 {
-			actual_shot_direction = point_direction(x + _cw.Shot_XX, y + _cw.Shot_YY, mouse_x ,mouse_y);
+			actual_shot_direction = point_direction(x + _cw.Shot_XX, y + _cw.Shot_YY, _mx , _my);
 		}
 	} else if !_cw.Shot_Mouse {
 		actual_shot_direction = _cw.Shot_Direction;
@@ -84,9 +90,9 @@ function scr_Shot_Creation(_cw = current_weapon_stats, _prime_shot = false) {
 	    var yy = 0;
 		
 		if _cw.Shot_Mouse {
-			actual_shot_direction = point_direction(x, y, mouse_x, mouse_y);
+			actual_shot_direction = point_direction(x, y, _mx, _my);
 			if _cw.Shot_XX != 0 || _cw.Shot_YY != 0 {
-				actual_shot_direction = point_direction(x + _cw.Shot_XX, y + _cw.Shot_YY, mouse_x ,mouse_y);
+				actual_shot_direction = point_direction(x + _cw.Shot_XX, y + _cw.Shot_YY, _mx, _my);
 			}
 		} else if !_cw.Shot_Mouse {
 		    actual_shot_direction = _cw.Shot_Direction;
@@ -131,7 +137,7 @@ function scr_Shot_Creation(_cw = current_weapon_stats, _prime_shot = false) {
 		var mechFac = 1 + scr_Mechanical_Shot_Add(_cw);
 		var speedFac = 1;
 		if mechFac > 1 and _cw.Shot_XX = 0 and _cw.Shot_YY = 0 {
-			_cw.Shot_Direction = point_direction(x,y,mouse_x,mouse_y) 
+			_cw.Shot_Direction = point_direction(x,y, _mx, _my) 
 			if _cw.Shot_Direction < 90 || _cw.Shot_Direction > 270 {
 				xx = 50;	
 				yy = 3;
@@ -246,7 +252,7 @@ function scr_Shot_Creation(_cw = current_weapon_stats, _prime_shot = false) {
 				}
 				
 				if shot_stats.Shot_Angle_Relative != 0 {
-					image_angle = point_direction(x,y,mouse_x,mouse_y) + shot_stats.Shot_Angle_Relative;	
+					image_angle = point_direction(x,y, _mx, _my) + shot_stats.Shot_Angle_Relative;	
 				}
 				
 				if shot_stats.Shot_Image_Direction != -1 {
@@ -268,7 +274,7 @@ function scr_Shot_Creation(_cw = current_weapon_stats, _prime_shot = false) {
 	if _cw.Shot_Weapon_Lean != 0 {
 		speed = _cw.Shot_Weapon_Lean;
 		friction = 1;
-		direction = point_direction(x,y,mouse_x,mouse_y);
+		direction = point_direction(x,y, _mx, _my);
 	}
    
 

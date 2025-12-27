@@ -1,5 +1,5 @@
 {
-  "$GMSprite":"",
+  "$GMSprite":"v2",
   "%Name":"reco_Manifest_Core",
   "bboxMode":0,
   "bbox_bottom":365,
@@ -12,7 +12,7 @@
   "edgeFiltering":false,
   "For3D":false,
   "frames":[
-    {"$GMSpriteFrame":"","%Name":"c3d0f7e4-8c4e-4e5c-9dd4-a3d947292b36","name":"c3d0f7e4-8c4e-4e5c-9dd4-a3d947292b36","resourceType":"GMSpriteFrame","resourceVersion":"2.0",},
+    {"$GMSpriteFrame":"v1","%Name":"c3d0f7e4-8c4e-4e5c-9dd4-a3d947292b36","name":"c3d0f7e4-8c4e-4e5c-9dd4-a3d947292b36","resourceType":"GMSpriteFrame","resourceVersion":"2.0",},
   ],
   "gridX":0,
   "gridY":0,

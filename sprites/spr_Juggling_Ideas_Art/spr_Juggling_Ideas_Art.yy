@@ -1,5 +1,5 @@
 {
-  "$GMSprite":"",
+  "$GMSprite":"v2",
   "%Name":"spr_Juggling_Ideas_Art",
   "bboxMode":0,
   "bbox_bottom":157,
@@ -12,7 +12,7 @@
   "edgeFiltering":false,
   "For3D":false,
   "frames":[
-    {"$GMSpriteFrame":"","%Name":"72bcaff1-9a1c-4cfc-ba22-07071224dcd2","name":"72bcaff1-9a1c-4cfc-ba22-07071224dcd2","resourceType":"GMSpriteFrame","resourceVersion":"2.0",},
+    {"$GMSpriteFrame":"v1","%Name":"72bcaff1-9a1c-4cfc-ba22-07071224dcd2","name":"72bcaff1-9a1c-4cfc-ba22-07071224dcd2","resourceType":"GMSpriteFrame","resourceVersion":"2.0",},
   ],
   "gridX":0,
   "gridY":0,

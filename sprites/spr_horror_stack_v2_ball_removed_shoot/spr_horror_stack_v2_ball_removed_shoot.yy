@@ -1,5 +1,5 @@
 {
-  "$GMSprite":"",
+  "$GMSprite":"v2",
   "%Name":"spr_horror_stack_v2_ball_removed_shoot",
   "bboxMode":0,
   "bbox_bottom":440,
@@ -12,9 +12,9 @@
   "edgeFiltering":false,
   "For3D":false,
   "frames":[
-    {"$GMSpriteFrame":"","%Name":"384af1f6-3827-4161-a478-f4c7698dd511","name":"384af1f6-3827-4161-a478-f4c7698dd511","resourceType":"GMSpriteFrame","resourceVersion":"2.0",},
-    {"$GMSpriteFrame":"","%Name":"9807f880-f8e6-43d1-852d-6bf8c6408301","name":"9807f880-f8e6-43d1-852d-6bf8c6408301","resourceType":"GMSpriteFrame","resourceVersion":"2.0",},
-    {"$GMSpriteFrame":"","%Name":"ecc5ad95-ba68-47a0-9ff6-fa108cc50394","name":"ecc5ad95-ba68-47a0-9ff6-fa108cc50394","resourceType":"GMSpriteFrame","resourceVersion":"2.0",},
+    {"$GMSpriteFrame":"v1","%Name":"384af1f6-3827-4161-a478-f4c7698dd511","name":"384af1f6-3827-4161-a478-f4c7698dd511","resourceType":"GMSpriteFrame","resourceVersion":"2.0",},
+    {"$GMSpriteFrame":"v1","%Name":"9807f880-f8e6-43d1-852d-6bf8c6408301","name":"9807f880-f8e6-43d1-852d-6bf8c6408301","resourceType":"GMSpriteFrame","resourceVersion":"2.0",},
+    {"$GMSpriteFrame":"v1","%Name":"ecc5ad95-ba68-47a0-9ff6-fa108cc50394","name":"ecc5ad95-ba68-47a0-9ff6-fa108cc50394","resourceType":"GMSpriteFrame","resourceVersion":"2.0",},
   ],
   "gridX":0,
   "gridY":0,

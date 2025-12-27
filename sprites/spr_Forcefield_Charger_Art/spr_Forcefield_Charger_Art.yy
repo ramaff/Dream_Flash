@@ -1,5 +1,5 @@
 {
-  "$GMSprite":"",
+  "$GMSprite":"v2",
   "%Name":"spr_Forcefield_Charger_Art",
   "bboxMode":2,
   "bbox_bottom":63,
@@ -12,7 +12,7 @@
   "edgeFiltering":false,
   "For3D":false,
   "frames":[
-    {"$GMSpriteFrame":"","%Name":"d72c1e8b-6fe1-494b-8743-42c3c76ff44a","name":"d72c1e8b-6fe1-494b-8743-42c3c76ff44a","resourceType":"GMSpriteFrame","resourceVersion":"2.0",},
+    {"$GMSpriteFrame":"v1","%Name":"d72c1e8b-6fe1-494b-8743-42c3c76ff44a","name":"d72c1e8b-6fe1-494b-8743-42c3c76ff44a","resourceType":"GMSpriteFrame","resourceVersion":"2.0",},
   ],
   "gridX":0,
   "gridY":0,

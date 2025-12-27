@@ -1,5 +1,5 @@
 {
-  "$GMSprite":"",
+  "$GMSprite":"v2",
   "%Name":"spr_Big_Enemy_Shot",
   "bboxMode":2,
   "bbox_bottom":54,
@@ -12,7 +12,7 @@
   "edgeFiltering":false,
   "For3D":false,
   "frames":[
-    {"$GMSpriteFrame":"","%Name":"d6def985-e133-46ba-9878-17f83b95bce9","name":"d6def985-e133-46ba-9878-17f83b95bce9","resourceType":"GMSpriteFrame","resourceVersion":"2.0",},
+    {"$GMSpriteFrame":"v1","%Name":"d6def985-e133-46ba-9878-17f83b95bce9","name":"d6def985-e133-46ba-9878-17f83b95bce9","resourceType":"GMSpriteFrame","resourceVersion":"2.0",},
   ],
   "gridX":0,
   "gridY":0,

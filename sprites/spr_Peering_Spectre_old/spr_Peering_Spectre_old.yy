@@ -1,5 +1,5 @@
 {
-  "$GMSprite":"",
+  "$GMSprite":"v2",
   "%Name":"spr_Peering_Spectre_old",
   "bboxMode":0,
   "bbox_bottom":118,
@@ -12,7 +12,7 @@
   "edgeFiltering":false,
   "For3D":false,
   "frames":[
-    {"$GMSpriteFrame":"","%Name":"9cf191bc-99bc-430c-b4fb-8cb884ca30dd","name":"9cf191bc-99bc-430c-b4fb-8cb884ca30dd","resourceType":"GMSpriteFrame","resourceVersion":"2.0",},
+    {"$GMSpriteFrame":"v1","%Name":"9cf191bc-99bc-430c-b4fb-8cb884ca30dd","name":"9cf191bc-99bc-430c-b4fb-8cb884ca30dd","resourceType":"GMSpriteFrame","resourceVersion":"2.0",},
   ],
   "gridX":0,
   "gridY":0,

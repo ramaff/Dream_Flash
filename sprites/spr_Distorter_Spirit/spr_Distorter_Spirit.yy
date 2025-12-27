@@ -1,5 +1,5 @@
 {
-  "$GMSprite":"",
+  "$GMSprite":"v2",
   "%Name":"spr_Distorter_Spirit",
   "bboxMode":0,
   "bbox_bottom":62,
@@ -12,7 +12,7 @@
   "edgeFiltering":false,
   "For3D":false,
   "frames":[
-    {"$GMSpriteFrame":"","%Name":"2e0aa4cc-6b4b-442e-8e1c-e22dde1d2d85","name":"2e0aa4cc-6b4b-442e-8e1c-e22dde1d2d85","resourceType":"GMSpriteFrame","resourceVersion":"2.0",},
+    {"$GMSpriteFrame":"v1","%Name":"2e0aa4cc-6b4b-442e-8e1c-e22dde1d2d85","name":"2e0aa4cc-6b4b-442e-8e1c-e22dde1d2d85","resourceType":"GMSpriteFrame","resourceVersion":"2.0",},
   ],
   "gridX":0,
   "gridY":0,

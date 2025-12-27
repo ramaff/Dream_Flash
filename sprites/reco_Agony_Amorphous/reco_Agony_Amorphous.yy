@@ -1,5 +1,5 @@
 {
-  "$GMSprite":"",
+  "$GMSprite":"v2",
   "%Name":"reco_Agony_Amorphous",
   "bboxMode":0,
   "bbox_bottom":257,
@@ -12,7 +12,7 @@
   "edgeFiltering":false,
   "For3D":false,
   "frames":[
-    {"$GMSpriteFrame":"","%Name":"c3616ebb-1a0b-4f37-ab6e-d0204b93d13f","name":"c3616ebb-1a0b-4f37-ab6e-d0204b93d13f","resourceType":"GMSpriteFrame","resourceVersion":"2.0",},
+    {"$GMSpriteFrame":"v1","%Name":"c3616ebb-1a0b-4f37-ab6e-d0204b93d13f","name":"c3616ebb-1a0b-4f37-ab6e-d0204b93d13f","resourceType":"GMSpriteFrame","resourceVersion":"2.0",},
   ],
   "gridX":0,
   "gridY":0,

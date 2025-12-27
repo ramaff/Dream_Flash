@@ -1,5 +1,5 @@
 {
-  "$GMSprite":"",
+  "$GMSprite":"v2",
   "%Name":"spr_Wishful_Thinking_Art",
   "bboxMode":0,
   "bbox_bottom":157,
@@ -12,7 +12,7 @@
   "edgeFiltering":false,
   "For3D":false,
   "frames":[
-    {"$GMSpriteFrame":"","%Name":"855a42ae-1716-41b4-a1b6-8628ebc24b19","name":"855a42ae-1716-41b4-a1b6-8628ebc24b19","resourceType":"GMSpriteFrame","resourceVersion":"2.0",},
+    {"$GMSpriteFrame":"v1","%Name":"855a42ae-1716-41b4-a1b6-8628ebc24b19","name":"855a42ae-1716-41b4-a1b6-8628ebc24b19","resourceType":"GMSpriteFrame","resourceVersion":"2.0",},
   ],
   "gridX":0,
   "gridY":0,

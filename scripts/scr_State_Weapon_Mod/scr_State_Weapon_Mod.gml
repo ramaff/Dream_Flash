@@ -5,8 +5,8 @@ function scr_State_Weapon_Mod(){
 	if shot_stats.Shot_Off_State = 0 and shot_stats.Shot_Origin = obj_Soul_Parent {
 		if scr_State_Active_Check("Snake") and shot_stats.Shot_Beam = 0 {
 			shot_stats.Shot_Snake_Move = 2;
-			shot_stats.Shot_Target_X = mouse_x;
-			shot_stats.Shot_Target_Y = mouse_y;
+			shot_stats.Shot_Target_X = obj_Astral_Indicator.x;
+			shot_stats.Shot_Target_Y = obj_Astral_Indicator.y;
 		
 			//shotduplicatesprite = sprite_index;
 		
@@ -40,6 +40,8 @@ function scr_State_Weapon_Mod(){
 					
 					scr_Shot_Power_Set(0.5)
 					scr_Shot_Size_Set(0.7, false)
+					
+					scr_Assign_Shot_Scripts();
 					
 				}
 			}
@@ -155,7 +157,7 @@ function scr_State_Weapon_Mod(){
 			
 			shot_stats.Shot_Orbital_Type = 1;
 			shot_stats.Shot_Orbital_Range = 75;
-	        shot_stats.Shot_Orbital_Angle = point_direction(x,y,mouse_x,mouse_y);
+	        shot_stats.Shot_Orbital_Angle = point_direction(x,y,obj_Astral_Indicator.x,obj_Astral_Indicator.y);
 
 	        shot_stats.Shot_Center_X = other.x;
 	        shot_stats.Shot_Center_Y = other.y;

@@ -1,5 +1,5 @@
 {
-  "$GMSprite":"",
+  "$GMSprite":"v2",
   "%Name":"spr_Self_Awareness_Art",
   "bboxMode":0,
   "bbox_bottom":163,
@@ -12,7 +12,7 @@
   "edgeFiltering":false,
   "For3D":false,
   "frames":[
-    {"$GMSpriteFrame":"","%Name":"3ef0fdb5-e656-4422-bc53-c5ff8b6d0907","name":"3ef0fdb5-e656-4422-bc53-c5ff8b6d0907","resourceType":"GMSpriteFrame","resourceVersion":"2.0",},
+    {"$GMSpriteFrame":"v1","%Name":"3ef0fdb5-e656-4422-bc53-c5ff8b6d0907","name":"3ef0fdb5-e656-4422-bc53-c5ff8b6d0907","resourceType":"GMSpriteFrame","resourceVersion":"2.0",},
   ],
   "gridX":0,
   "gridY":0,

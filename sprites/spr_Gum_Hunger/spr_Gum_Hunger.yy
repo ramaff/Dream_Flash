@@ -1,5 +1,5 @@
 {
-  "$GMSprite":"",
+  "$GMSprite":"v2",
   "%Name":"spr_Gum_Hunger",
   "bboxMode":0,
   "bbox_bottom":546,
@@ -12,7 +12,7 @@
   "edgeFiltering":false,
   "For3D":false,
   "frames":[
-    {"$GMSpriteFrame":"","%Name":"46669ece-02b4-41a8-af66-ff994ddfaa84","name":"46669ece-02b4-41a8-af66-ff994ddfaa84","resourceType":"GMSpriteFrame","resourceVersion":"2.0",},
+    {"$GMSpriteFrame":"v1","%Name":"46669ece-02b4-41a8-af66-ff994ddfaa84","name":"46669ece-02b4-41a8-af66-ff994ddfaa84","resourceType":"GMSpriteFrame","resourceVersion":"2.0",},
   ],
   "gridX":0,
   "gridY":0,

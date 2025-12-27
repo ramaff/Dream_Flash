@@ -1,5 +1,5 @@
 {
-  "$GMSprite":"",
+  "$GMSprite":"v2",
   "%Name":"spr_Tutorial_Arrow",
   "bboxMode":0,
   "bbox_bottom":24,
@@ -12,7 +12,7 @@
   "edgeFiltering":false,
   "For3D":false,
   "frames":[
-    {"$GMSpriteFrame":"","%Name":"281dba02-1255-4a14-a5e4-4f82f0d0e9fa","name":"281dba02-1255-4a14-a5e4-4f82f0d0e9fa","resourceType":"GMSpriteFrame","resourceVersion":"2.0",},
+    {"$GMSpriteFrame":"v1","%Name":"281dba02-1255-4a14-a5e4-4f82f0d0e9fa","name":"281dba02-1255-4a14-a5e4-4f82f0d0e9fa","resourceType":"GMSpriteFrame","resourceVersion":"2.0",},
   ],
   "gridX":0,
   "gridY":0,

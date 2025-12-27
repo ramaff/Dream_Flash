@@ -1,5 +1,5 @@
 {
-  "$GMSprite":"",
+  "$GMSprite":"v2",
   "%Name":"spr_Bounce_Forcefield",
   "bboxMode":0,
   "bbox_bottom":341,
@@ -12,7 +12,7 @@
   "edgeFiltering":false,
   "For3D":false,
   "frames":[
-    {"$GMSpriteFrame":"","%Name":"532e9dd4-007f-410b-84ed-ad2c0349cd21","name":"532e9dd4-007f-410b-84ed-ad2c0349cd21","resourceType":"GMSpriteFrame","resourceVersion":"2.0",},
+    {"$GMSpriteFrame":"v1","%Name":"532e9dd4-007f-410b-84ed-ad2c0349cd21","name":"532e9dd4-007f-410b-84ed-ad2c0349cd21","resourceType":"GMSpriteFrame","resourceVersion":"2.0",},
   ],
   "gridX":0,
   "gridY":0,

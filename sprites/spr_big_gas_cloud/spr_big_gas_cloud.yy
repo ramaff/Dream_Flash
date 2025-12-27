@@ -1,5 +1,5 @@
 {
-  "$GMSprite":"",
+  "$GMSprite":"v2",
   "%Name":"spr_big_gas_cloud",
   "bboxMode":2,
   "bbox_bottom":306,
@@ -12,8 +12,8 @@
   "edgeFiltering":false,
   "For3D":false,
   "frames":[
-    {"$GMSpriteFrame":"","%Name":"8b0f1e1a-66da-420d-82b8-db87991f4a4d","name":"8b0f1e1a-66da-420d-82b8-db87991f4a4d","resourceType":"GMSpriteFrame","resourceVersion":"2.0",},
-    {"$GMSpriteFrame":"","%Name":"88efcf14-28be-475b-9192-41c1da5e0dd7","name":"88efcf14-28be-475b-9192-41c1da5e0dd7","resourceType":"GMSpriteFrame","resourceVersion":"2.0",},
+    {"$GMSpriteFrame":"v1","%Name":"8b0f1e1a-66da-420d-82b8-db87991f4a4d","name":"8b0f1e1a-66da-420d-82b8-db87991f4a4d","resourceType":"GMSpriteFrame","resourceVersion":"2.0",},
+    {"$GMSpriteFrame":"v1","%Name":"88efcf14-28be-475b-9192-41c1da5e0dd7","name":"88efcf14-28be-475b-9192-41c1da5e0dd7","resourceType":"GMSpriteFrame","resourceVersion":"2.0",},
   ],
   "gridX":0,
   "gridY":0,

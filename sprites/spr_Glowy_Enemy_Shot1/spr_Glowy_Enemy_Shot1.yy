@@ -1,5 +1,5 @@
 {
-  "$GMSprite":"",
+  "$GMSprite":"v2",
   "%Name":"spr_Glowy_Enemy_Shot1",
   "bboxMode":2,
   "bbox_bottom":36,
@@ -12,7 +12,7 @@
   "edgeFiltering":false,
   "For3D":false,
   "frames":[
-    {"$GMSpriteFrame":"","%Name":"da8a47ff-8ed8-4387-b920-eff3d16d7dc4","name":"da8a47ff-8ed8-4387-b920-eff3d16d7dc4","resourceType":"GMSpriteFrame","resourceVersion":"2.0",},
+    {"$GMSpriteFrame":"v1","%Name":"da8a47ff-8ed8-4387-b920-eff3d16d7dc4","name":"da8a47ff-8ed8-4387-b920-eff3d16d7dc4","resourceType":"GMSpriteFrame","resourceVersion":"2.0",},
   ],
   "gridX":0,
   "gridY":0,

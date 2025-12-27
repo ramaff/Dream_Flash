@@ -1,5 +1,5 @@
 {
-  "$GMSprite":"",
+  "$GMSprite":"v2",
   "%Name":"spr_Aura_Strike_Item",
   "bboxMode":0,
   "bbox_bottom":157,
@@ -12,7 +12,7 @@
   "edgeFiltering":false,
   "For3D":false,
   "frames":[
-    {"$GMSpriteFrame":"","%Name":"3e63d4ed-22a1-437f-8aad-1fd6c7e2ee3e","name":"3e63d4ed-22a1-437f-8aad-1fd6c7e2ee3e","resourceType":"GMSpriteFrame","resourceVersion":"2.0",},
+    {"$GMSpriteFrame":"v1","%Name":"3e63d4ed-22a1-437f-8aad-1fd6c7e2ee3e","name":"3e63d4ed-22a1-437f-8aad-1fd6c7e2ee3e","resourceType":"GMSpriteFrame","resourceVersion":"2.0",},
   ],
   "gridX":0,
   "gridY":0,

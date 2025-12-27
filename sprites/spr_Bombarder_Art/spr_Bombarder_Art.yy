@@ -1,5 +1,5 @@
 {
-  "$GMSprite":"",
+  "$GMSprite":"v2",
   "%Name":"spr_Bombarder_Art",
   "bboxMode":0,
   "bbox_bottom":154,
@@ -12,7 +12,7 @@
   "edgeFiltering":false,
   "For3D":false,
   "frames":[
-    {"$GMSpriteFrame":"","%Name":"cd6bc862-72b9-466a-aa81-776f8dfcd268","name":"cd6bc862-72b9-466a-aa81-776f8dfcd268","resourceType":"GMSpriteFrame","resourceVersion":"2.0",},
+    {"$GMSpriteFrame":"v1","%Name":"cd6bc862-72b9-466a-aa81-776f8dfcd268","name":"cd6bc862-72b9-466a-aa81-776f8dfcd268","resourceType":"GMSpriteFrame","resourceVersion":"2.0",},
   ],
   "gridX":0,
   "gridY":0,

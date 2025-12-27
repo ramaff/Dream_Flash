@@ -1,5 +1,5 @@
 {
-  "$GMSprite":"",
+  "$GMSprite":"v2",
   "%Name":"spr_Busted_Skull",
   "bboxMode":0,
   "bbox_bottom":901,
@@ -12,8 +12,8 @@
   "edgeFiltering":false,
   "For3D":false,
   "frames":[
-    {"$GMSpriteFrame":"","%Name":"d3dbf436-bb6a-41b0-8344-d0a0327b28cb","name":"d3dbf436-bb6a-41b0-8344-d0a0327b28cb","resourceType":"GMSpriteFrame","resourceVersion":"2.0",},
-    {"$GMSpriteFrame":"","%Name":"fd967db2-1acd-4658-977f-f31c9d5e4a84","name":"fd967db2-1acd-4658-977f-f31c9d5e4a84","resourceType":"GMSpriteFrame","resourceVersion":"2.0",},
+    {"$GMSpriteFrame":"v1","%Name":"d3dbf436-bb6a-41b0-8344-d0a0327b28cb","name":"d3dbf436-bb6a-41b0-8344-d0a0327b28cb","resourceType":"GMSpriteFrame","resourceVersion":"2.0",},
+    {"$GMSpriteFrame":"v1","%Name":"fd967db2-1acd-4658-977f-f31c9d5e4a84","name":"fd967db2-1acd-4658-977f-f31c9d5e4a84","resourceType":"GMSpriteFrame","resourceVersion":"2.0",},
   ],
   "gridX":0,
   "gridY":0,

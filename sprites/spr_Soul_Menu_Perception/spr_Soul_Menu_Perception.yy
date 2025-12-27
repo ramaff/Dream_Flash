@@ -1,5 +1,5 @@
 {
-  "$GMSprite":"",
+  "$GMSprite":"v2",
   "%Name":"spr_Soul_Menu_Perception",
   "bboxMode":2,
   "bbox_bottom":112,
@@ -12,7 +12,7 @@
   "edgeFiltering":false,
   "For3D":false,
   "frames":[
-    {"$GMSpriteFrame":"","%Name":"a4a35b8b-6bdf-4015-b566-8d0c3c8c5a9c","name":"a4a35b8b-6bdf-4015-b566-8d0c3c8c5a9c","resourceType":"GMSpriteFrame","resourceVersion":"2.0",},
+    {"$GMSpriteFrame":"v1","%Name":"a4a35b8b-6bdf-4015-b566-8d0c3c8c5a9c","name":"a4a35b8b-6bdf-4015-b566-8d0c3c8c5a9c","resourceType":"GMSpriteFrame","resourceVersion":"2.0",},
   ],
   "gridX":0,
   "gridY":0,

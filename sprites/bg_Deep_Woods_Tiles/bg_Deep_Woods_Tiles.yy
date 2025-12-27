@@ -1,5 +1,5 @@
 {
-  "$GMSprite":"",
+  "$GMSprite":"v2",
   "%Name":"bg_Deep_Woods_Tiles",
   "bboxMode":0,
   "bbox_bottom":127,
@@ -12,7 +12,7 @@
   "edgeFiltering":false,
   "For3D":false,
   "frames":[
-    {"$GMSpriteFrame":"","%Name":"dea6f6b4-4a72-4a2f-abdc-784f4b7b7140","name":"dea6f6b4-4a72-4a2f-abdc-784f4b7b7140","resourceType":"GMSpriteFrame","resourceVersion":"2.0",},
+    {"$GMSpriteFrame":"v1","%Name":"dea6f6b4-4a72-4a2f-abdc-784f4b7b7140","name":"dea6f6b4-4a72-4a2f-abdc-784f4b7b7140","resourceType":"GMSpriteFrame","resourceVersion":"2.0",},
   ],
   "gridX":0,
   "gridY":0,

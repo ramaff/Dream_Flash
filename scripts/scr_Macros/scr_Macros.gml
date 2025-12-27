@@ -4,8 +4,11 @@
 #macro GAME_VERSION "25"
 
 // in the format of x.x (ex: "1.0" minor version = x.1.0 full version value)
-#macro GAME_MINOR_VERSION "1"
-#macro GAME_VERSION_BETA "0"
+#macro GAME_MINOR_VERSION "2"
+#macro GAME_VERSION_BETA "2"
+
+// In game constants
+#macro ITEM_HOVER_RANGE 60
 
 function scr_Macros(){
 

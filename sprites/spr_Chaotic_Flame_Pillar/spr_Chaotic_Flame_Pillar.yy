@@ -1,5 +1,5 @@
 {
-  "$GMSprite":"",
+  "$GMSprite":"v2",
   "%Name":"spr_Chaotic_Flame_Pillar",
   "bboxMode":2,
   "bbox_bottom":190,
@@ -12,7 +12,7 @@
   "edgeFiltering":false,
   "For3D":false,
   "frames":[
-    {"$GMSpriteFrame":"","%Name":"9614f422-f017-4f61-94d5-304345582394","name":"9614f422-f017-4f61-94d5-304345582394","resourceType":"GMSpriteFrame","resourceVersion":"2.0",},
+    {"$GMSpriteFrame":"v1","%Name":"9614f422-f017-4f61-94d5-304345582394","name":"9614f422-f017-4f61-94d5-304345582394","resourceType":"GMSpriteFrame","resourceVersion":"2.0",},
   ],
   "gridX":0,
   "gridY":0,

@@ -1,5 +1,5 @@
 {
-  "$GMSprite":"",
+  "$GMSprite":"v2",
   "%Name":"spr_Healing_Essence_Radius",
   "bboxMode":2,
   "bbox_bottom":381,
@@ -12,7 +12,7 @@
   "edgeFiltering":false,
   "For3D":false,
   "frames":[
-    {"$GMSpriteFrame":"","%Name":"678b045b-5dc5-4edc-951c-a816b64b1f9c","name":"678b045b-5dc5-4edc-951c-a816b64b1f9c","resourceType":"GMSpriteFrame","resourceVersion":"2.0",},
+    {"$GMSpriteFrame":"v1","%Name":"678b045b-5dc5-4edc-951c-a816b64b1f9c","name":"678b045b-5dc5-4edc-951c-a816b64b1f9c","resourceType":"GMSpriteFrame","resourceVersion":"2.0",},
   ],
   "gridX":0,
   "gridY":0,

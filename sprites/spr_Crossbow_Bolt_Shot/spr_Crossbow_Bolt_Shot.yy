@@ -1,5 +1,5 @@
 {
-  "$GMSprite":"",
+  "$GMSprite":"v2",
   "%Name":"spr_Crossbow_Bolt_Shot",
   "bboxMode":0,
   "bbox_bottom":44,
@@ -12,7 +12,7 @@
   "edgeFiltering":false,
   "For3D":false,
   "frames":[
-    {"$GMSpriteFrame":"","%Name":"a6972054-f97d-435d-a4ff-3c3d819c8311","name":"a6972054-f97d-435d-a4ff-3c3d819c8311","resourceType":"GMSpriteFrame","resourceVersion":"2.0",},
+    {"$GMSpriteFrame":"v1","%Name":"a6972054-f97d-435d-a4ff-3c3d819c8311","name":"a6972054-f97d-435d-a4ff-3c3d819c8311","resourceType":"GMSpriteFrame","resourceVersion":"2.0",},
   ],
   "gridX":0,
   "gridY":0,

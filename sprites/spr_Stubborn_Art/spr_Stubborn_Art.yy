@@ -1,5 +1,5 @@
 {
-  "$GMSprite":"",
+  "$GMSprite":"v2",
   "%Name":"spr_Stubborn_Art",
   "bboxMode":0,
   "bbox_bottom":157,
@@ -12,7 +12,7 @@
   "edgeFiltering":false,
   "For3D":false,
   "frames":[
-    {"$GMSpriteFrame":"","%Name":"2f8303ae-e4f9-4f66-bcd8-3b72aa80a1ed","name":"2f8303ae-e4f9-4f66-bcd8-3b72aa80a1ed","resourceType":"GMSpriteFrame","resourceVersion":"2.0",},
+    {"$GMSpriteFrame":"v1","%Name":"2f8303ae-e4f9-4f66-bcd8-3b72aa80a1ed","name":"2f8303ae-e4f9-4f66-bcd8-3b72aa80a1ed","resourceType":"GMSpriteFrame","resourceVersion":"2.0",},
   ],
   "gridX":0,
   "gridY":0,

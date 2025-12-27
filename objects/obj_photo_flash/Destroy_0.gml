@@ -88,6 +88,7 @@ for(_i = 0; _i < _shots; _i++) {
 		shot_stats.Shot_Extra_Hits_Frequency = 60;
 		shot_stats.Shot_Fizzle_Out = 0;
 		shot_stats.Shot_Lobbing = false;
+		shot_stats.Shot_Movement = 0;
 		shot_stats.Shot_Step_Scripts = [];
 		shot_stats.Shot_Draw_Scripts = [];
 		

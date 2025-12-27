@@ -1,5 +1,5 @@
 {
-  "$GMSprite":"",
+  "$GMSprite":"v2",
   "%Name":"spr_Jam_Ball",
   "bboxMode":2,
   "bbox_bottom":66,
@@ -12,7 +12,7 @@
   "edgeFiltering":false,
   "For3D":false,
   "frames":[
-    {"$GMSpriteFrame":"","%Name":"e97621a8-42b5-441d-a3d2-aa932e3bcd89","name":"e97621a8-42b5-441d-a3d2-aa932e3bcd89","resourceType":"GMSpriteFrame","resourceVersion":"2.0",},
+    {"$GMSpriteFrame":"v1","%Name":"e97621a8-42b5-441d-a3d2-aa932e3bcd89","name":"e97621a8-42b5-441d-a3d2-aa932e3bcd89","resourceType":"GMSpriteFrame","resourceVersion":"2.0",},
   ],
   "gridX":0,
   "gridY":0,

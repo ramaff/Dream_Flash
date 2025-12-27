@@ -1,5 +1,5 @@
 {
-  "$GMSprite":"",
+  "$GMSprite":"v2",
   "%Name":"spr_Coping_Buddies_Art",
   "bboxMode":0,
   "bbox_bottom":157,
@@ -12,7 +12,7 @@
   "edgeFiltering":false,
   "For3D":false,
   "frames":[
-    {"$GMSpriteFrame":"","%Name":"65a4e303-de31-45b3-bc2b-547c0abfdf17","name":"65a4e303-de31-45b3-bc2b-547c0abfdf17","resourceType":"GMSpriteFrame","resourceVersion":"2.0",},
+    {"$GMSpriteFrame":"v1","%Name":"65a4e303-de31-45b3-bc2b-547c0abfdf17","name":"65a4e303-de31-45b3-bc2b-547c0abfdf17","resourceType":"GMSpriteFrame","resourceVersion":"2.0",},
   ],
   "gridX":0,
   "gridY":0,

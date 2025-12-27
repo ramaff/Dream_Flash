@@ -62,7 +62,7 @@ if audio_sound_get_gain(currentMusic) < soundLevel {
 
 if ((audio_is_playing(musicType) = false) and (currentMusic != musicType)) {
 
-	if previousMusic = noone {
+	if previousMusic = noone and currentMusic != noone {
 		//show_debug_message("No prev music")
 		audio_sound_gain(currentMusic,soundLevel,0);
 		pm = true;
@@ -71,7 +71,7 @@ if ((audio_is_playing(musicType) = false) and (currentMusic != musicType)) {
     previousMusic = currentMusic;
     currentMusic = musicType;
     
-	if previousMusic != currentMusic {
+	if previousMusic != currentMusic and previousMusic != noone {
         audio_sound_gain(previousMusic,0,transitionTime);
     }
 	
@@ -98,7 +98,9 @@ if cMus {
 }
 
 
-if (audio_sound_get_gain(previousMusic) <= 0) {
-    audio_stop_sound(previousMusic);
+if previousMusic != noone {
+	if (audio_sound_get_gain(previousMusic) <= 0) {
+		audio_stop_sound(previousMusic);
+	}
 }
 

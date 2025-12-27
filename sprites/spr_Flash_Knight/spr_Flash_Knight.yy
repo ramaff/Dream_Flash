@@ -1,5 +1,5 @@
 {
-  "$GMSprite":"",
+  "$GMSprite":"v2",
   "%Name":"spr_Flash_Knight",
   "bboxMode":0,
   "bbox_bottom":741,
@@ -12,7 +12,7 @@
   "edgeFiltering":false,
   "For3D":false,
   "frames":[
-    {"$GMSpriteFrame":"","%Name":"3fa673be-dca7-4ccc-9fd7-c2831bedfc2b","name":"3fa673be-dca7-4ccc-9fd7-c2831bedfc2b","resourceType":"GMSpriteFrame","resourceVersion":"2.0",},
+    {"$GMSpriteFrame":"v1","%Name":"3fa673be-dca7-4ccc-9fd7-c2831bedfc2b","name":"3fa673be-dca7-4ccc-9fd7-c2831bedfc2b","resourceType":"GMSpriteFrame","resourceVersion":"2.0",},
   ],
   "gridX":0,
   "gridY":0,

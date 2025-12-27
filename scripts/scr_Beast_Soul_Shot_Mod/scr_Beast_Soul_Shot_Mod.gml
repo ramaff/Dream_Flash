@@ -27,7 +27,7 @@ function scr_Beast_Soul_Shot_Mod(_cw) {
 		_cw.Shot_State = "Beast";
 		
 		var _force = 1 + (1.5 * sqrt(_cw.Real_Essence_Cost));
-		var _force_direction = point_direction(x, y, mouse_x, mouse_y) + _cw.Shot_Angle_Relative;
+		var _force_direction = point_direction(x, y, obj_Astral_Indicator.x, obj_Astral_Indicator.y) + _cw.Shot_Angle_Relative;
 		var _force_angular_velocity = _cw.Shot_Angular_Velocity;
 	
 		scr_force_push(id, 20, _force, _force / 20, _force_direction, _force_angular_velocity)

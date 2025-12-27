@@ -23,7 +23,7 @@ function scr_Bleeding_Blade_Use(_cw = current_weapon_stats) {
 	
 	_cw.Shot_Knock_Back = 10 + sqrt(_cw.Shot_Power);
 	_cw.Shot_Life_Span = 15;
-	_cw.Shot_Angle = point_direction(x,y,mouse_x,mouse_y);
+	_cw.Shot_Angle = point_direction(x,y,obj_Astral_Indicator.x,obj_Astral_Indicator.y);
 	_cw.Shot_Pierce = 20;
 	_cw.Shot_Bullet_Redirect = 1;
 	_cw.Shot_Bullet_Redirect_Chance = 100;
@@ -37,7 +37,7 @@ function scr_Bleeding_Blade_Use(_cw = current_weapon_stats) {
 
 	speed = 8;
 	friction = 1;
-	direction = point_direction(x,y,mouse_x,mouse_y);
+	direction = point_direction(x,y,obj_Astral_Indicator.x,obj_Astral_Indicator.y);
 	
 	_cw = scr_Setup_Weapon_Stats(_cw);
 	

@@ -6,14 +6,10 @@ global.scrollperc = buttony / barheight;
 
 if active = false {
 	if mouse_wheel_up() {
-		//if mouse_x < x {
-			buttony -= scrollamount;
-		//}
+		buttony -= scrollamount;
 	}
 	if mouse_wheel_down() {
-		//if mouse_x < x {
-			buttony += scrollamount;
-		//}
+		buttony += scrollamount;
 	}
 }
 

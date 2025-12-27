@@ -1,5 +1,5 @@
 {
-  "$GMSprite":"",
+  "$GMSprite":"v2",
   "%Name":"spr_Gear_Bullet",
   "bboxMode":2,
   "bbox_bottom":85,
@@ -12,7 +12,7 @@
   "edgeFiltering":false,
   "For3D":false,
   "frames":[
-    {"$GMSpriteFrame":"","%Name":"e9afa313-4cc6-4374-8494-92e59e7077ac","name":"e9afa313-4cc6-4374-8494-92e59e7077ac","resourceType":"GMSpriteFrame","resourceVersion":"2.0",},
+    {"$GMSpriteFrame":"v1","%Name":"e9afa313-4cc6-4374-8494-92e59e7077ac","name":"e9afa313-4cc6-4374-8494-92e59e7077ac","resourceType":"GMSpriteFrame","resourceVersion":"2.0",},
   ],
   "gridX":0,
   "gridY":0,

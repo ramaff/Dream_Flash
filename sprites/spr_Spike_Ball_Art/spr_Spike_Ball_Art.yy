@@ -1,5 +1,5 @@
 {
-  "$GMSprite":"",
+  "$GMSprite":"v2",
   "%Name":"spr_Spike_Ball_Art",
   "bboxMode":0,
   "bbox_bottom":150,
@@ -12,7 +12,7 @@
   "edgeFiltering":false,
   "For3D":false,
   "frames":[
-    {"$GMSpriteFrame":"","%Name":"b5e5b2bd-fec8-4edc-ad95-414151b468c9","name":"b5e5b2bd-fec8-4edc-ad95-414151b468c9","resourceType":"GMSpriteFrame","resourceVersion":"2.0",},
+    {"$GMSpriteFrame":"v1","%Name":"b5e5b2bd-fec8-4edc-ad95-414151b468c9","name":"b5e5b2bd-fec8-4edc-ad95-414151b468c9","resourceType":"GMSpriteFrame","resourceVersion":"2.0",},
   ],
   "gridX":0,
   "gridY":0,

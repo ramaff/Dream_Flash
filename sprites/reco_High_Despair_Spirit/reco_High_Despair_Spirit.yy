@@ -1,5 +1,5 @@
 {
-  "$GMSprite":"",
+  "$GMSprite":"v2",
   "%Name":"reco_High_Despair_Spirit",
   "bboxMode":0,
   "bbox_bottom":591,
@@ -12,7 +12,7 @@
   "edgeFiltering":false,
   "For3D":false,
   "frames":[
-    {"$GMSpriteFrame":"","%Name":"3f7f4398-8202-419b-b75a-83399705a19b","name":"3f7f4398-8202-419b-b75a-83399705a19b","resourceType":"GMSpriteFrame","resourceVersion":"2.0",},
+    {"$GMSpriteFrame":"v1","%Name":"3f7f4398-8202-419b-b75a-83399705a19b","name":"3f7f4398-8202-419b-b75a-83399705a19b","resourceType":"GMSpriteFrame","resourceVersion":"2.0",},
   ],
   "gridX":0,
   "gridY":0,

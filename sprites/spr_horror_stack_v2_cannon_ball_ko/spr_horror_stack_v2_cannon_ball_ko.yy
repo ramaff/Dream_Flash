@@ -1,5 +1,5 @@
 {
-  "$GMSprite":"",
+  "$GMSprite":"v2",
   "%Name":"spr_horror_stack_v2_cannon_ball_ko",
   "bboxMode":0,
   "bbox_bottom":320,
@@ -12,7 +12,7 @@
   "edgeFiltering":false,
   "For3D":false,
   "frames":[
-    {"$GMSpriteFrame":"","%Name":"a8b39207-0e47-4b0c-b02c-5ea3471cbfae","name":"a8b39207-0e47-4b0c-b02c-5ea3471cbfae","resourceType":"GMSpriteFrame","resourceVersion":"2.0",},
+    {"$GMSpriteFrame":"v1","%Name":"a8b39207-0e47-4b0c-b02c-5ea3471cbfae","name":"a8b39207-0e47-4b0c-b02c-5ea3471cbfae","resourceType":"GMSpriteFrame","resourceVersion":"2.0",},
   ],
   "gridX":0,
   "gridY":0,

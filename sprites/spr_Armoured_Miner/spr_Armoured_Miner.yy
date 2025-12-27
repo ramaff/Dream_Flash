@@ -1,5 +1,5 @@
 {
-  "$GMSprite":"",
+  "$GMSprite":"v2",
   "%Name":"spr_Armoured_Miner",
   "bboxMode":0,
   "bbox_bottom":298,
@@ -12,7 +12,7 @@
   "edgeFiltering":false,
   "For3D":false,
   "frames":[
-    {"$GMSpriteFrame":"","%Name":"bb397fa6-f73c-43e7-bd5f-6b9ad26aedfe","name":"bb397fa6-f73c-43e7-bd5f-6b9ad26aedfe","resourceType":"GMSpriteFrame","resourceVersion":"2.0",},
+    {"$GMSpriteFrame":"v1","%Name":"bb397fa6-f73c-43e7-bd5f-6b9ad26aedfe","name":"bb397fa6-f73c-43e7-bd5f-6b9ad26aedfe","resourceType":"GMSpriteFrame","resourceVersion":"2.0",},
   ],
   "gridX":0,
   "gridY":0,

@@ -3,8 +3,8 @@
 function scr_Spike_State_Underground(){
 
 	if soul_underground > 0 {
-		var _dir = point_direction(x, y, mouse_x, mouse_y)
-		var _dis = min(15, point_distance(x, y, mouse_x, mouse_y) / max(1, soul_underground))
+		var _dir = point_direction(x, y, obj_Astral_Indicator.x, obj_Astral_Indicator.y)
+		var _dis = min(15, point_distance(x, y, obj_Astral_Indicator.x, obj_Astral_Indicator.y) / max(1, soul_underground))
 	
 		x += lengthdir_x(_dis, _dir)
 		y += lengthdir_y(_dis, _dir)

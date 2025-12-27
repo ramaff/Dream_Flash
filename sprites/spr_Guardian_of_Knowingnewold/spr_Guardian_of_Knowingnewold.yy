@@ -1,5 +1,5 @@
 {
-  "$GMSprite":"",
+  "$GMSprite":"v2",
   "%Name":"spr_Guardian_of_Knowingnewold",
   "bboxMode":0,
   "bbox_bottom":499,
@@ -12,7 +12,7 @@
   "edgeFiltering":false,
   "For3D":false,
   "frames":[
-    {"$GMSpriteFrame":"","%Name":"c61c184e-ecc1-4c3a-8c8b-0a025cd33f28","name":"c61c184e-ecc1-4c3a-8c8b-0a025cd33f28","resourceType":"GMSpriteFrame","resourceVersion":"2.0",},
+    {"$GMSpriteFrame":"v1","%Name":"c61c184e-ecc1-4c3a-8c8b-0a025cd33f28","name":"c61c184e-ecc1-4c3a-8c8b-0a025cd33f28","resourceType":"GMSpriteFrame","resourceVersion":"2.0",},
   ],
   "gridX":0,
   "gridY":0,

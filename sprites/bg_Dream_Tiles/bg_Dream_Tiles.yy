@@ -1,5 +1,5 @@
 {
-  "$GMSprite":"",
+  "$GMSprite":"v2",
   "%Name":"bg_Dream_Tiles",
   "bboxMode":0,
   "bbox_bottom":308,
@@ -12,7 +12,7 @@
   "edgeFiltering":false,
   "For3D":false,
   "frames":[
-    {"$GMSpriteFrame":"","%Name":"cc510c08-8db5-45a5-8324-5ce04e0eac29","name":"cc510c08-8db5-45a5-8324-5ce04e0eac29","resourceType":"GMSpriteFrame","resourceVersion":"2.0",},
+    {"$GMSpriteFrame":"v1","%Name":"cc510c08-8db5-45a5-8324-5ce04e0eac29","name":"cc510c08-8db5-45a5-8324-5ce04e0eac29","resourceType":"GMSpriteFrame","resourceVersion":"2.0",},
   ],
   "gridX":0,
   "gridY":0,

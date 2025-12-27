@@ -1,5 +1,5 @@
 {
-  "$GMSprite":"",
+  "$GMSprite":"v2",
   "%Name":"spr_Charged_Bolt_Part",
   "bboxMode":0,
   "bbox_bottom":87,
@@ -12,7 +12,7 @@
   "edgeFiltering":false,
   "For3D":false,
   "frames":[
-    {"$GMSpriteFrame":"","%Name":"53702cee-768a-480c-bb72-7c9a93142fe1","name":"53702cee-768a-480c-bb72-7c9a93142fe1","resourceType":"GMSpriteFrame","resourceVersion":"2.0",},
+    {"$GMSpriteFrame":"v1","%Name":"53702cee-768a-480c-bb72-7c9a93142fe1","name":"53702cee-768a-480c-bb72-7c9a93142fe1","resourceType":"GMSpriteFrame","resourceVersion":"2.0",},
   ],
   "gridX":0,
   "gridY":0,

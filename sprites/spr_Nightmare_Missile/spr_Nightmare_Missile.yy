@@ -1,5 +1,5 @@
 {
-  "$GMSprite":"",
+  "$GMSprite":"v2",
   "%Name":"spr_Nightmare_Missile",
   "bboxMode":2,
   "bbox_bottom":72,
@@ -12,7 +12,7 @@
   "edgeFiltering":false,
   "For3D":false,
   "frames":[
-    {"$GMSpriteFrame":"","%Name":"783c6e61-42bd-47db-9e75-221442b49bf1","name":"783c6e61-42bd-47db-9e75-221442b49bf1","resourceType":"GMSpriteFrame","resourceVersion":"2.0",},
+    {"$GMSpriteFrame":"v1","%Name":"783c6e61-42bd-47db-9e75-221442b49bf1","name":"783c6e61-42bd-47db-9e75-221442b49bf1","resourceType":"GMSpriteFrame","resourceVersion":"2.0",},
   ],
   "gridX":0,
   "gridY":0,

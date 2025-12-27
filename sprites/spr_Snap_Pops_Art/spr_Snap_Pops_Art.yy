@@ -1,5 +1,5 @@
 {
-  "$GMSprite":"",
+  "$GMSprite":"v2",
   "%Name":"spr_Snap_Pops_Art",
   "bboxMode":0,
   "bbox_bottom":144,
@@ -12,7 +12,7 @@
   "edgeFiltering":false,
   "For3D":false,
   "frames":[
-    {"$GMSpriteFrame":"","%Name":"d71c8b1c-5e8a-470e-a33e-18e8c09bfdb7","name":"d71c8b1c-5e8a-470e-a33e-18e8c09bfdb7","resourceType":"GMSpriteFrame","resourceVersion":"2.0",},
+    {"$GMSpriteFrame":"v1","%Name":"d71c8b1c-5e8a-470e-a33e-18e8c09bfdb7","name":"d71c8b1c-5e8a-470e-a33e-18e8c09bfdb7","resourceType":"GMSpriteFrame","resourceVersion":"2.0",},
   ],
   "gridX":0,
   "gridY":0,

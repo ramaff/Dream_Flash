@@ -1,5 +1,5 @@
 {
-  "$GMSprite":"",
+  "$GMSprite":"v2",
   "%Name":"spr_Spirit_of_Mischief_scale",
   "bboxMode":0,
   "bbox_bottom":405,
@@ -12,7 +12,7 @@
   "edgeFiltering":false,
   "For3D":false,
   "frames":[
-    {"$GMSpriteFrame":"","%Name":"74c2730e-1890-42a8-aa1c-515f5fd56822","name":"74c2730e-1890-42a8-aa1c-515f5fd56822","resourceType":"GMSpriteFrame","resourceVersion":"2.0",},
+    {"$GMSpriteFrame":"v1","%Name":"74c2730e-1890-42a8-aa1c-515f5fd56822","name":"74c2730e-1890-42a8-aa1c-515f5fd56822","resourceType":"GMSpriteFrame","resourceVersion":"2.0",},
   ],
   "gridX":0,
   "gridY":0,

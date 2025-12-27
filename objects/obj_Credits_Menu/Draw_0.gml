@@ -4,26 +4,32 @@
     draw_rectangle(0,0,room_width,room_height,0);
     draw_set_halign(fa_center);
     draw_set_colour(c_white);
+	
+	scr_Go_Back_Text();
     
     startx = 1376 / 2;
     
     draw_text(startx,64, string_hash_to_newline("CREDITS"));
     
-    draw_text(startx,128, string_hash_to_newline("A Game by Ramaf Party"));
+    draw_text(startx,112, string_hash_to_newline("A Game by Ramaf Party"));
     
-    draw_text(startx,192, string_hash_to_newline("Music - Rossiter, Evie"));    
+    draw_text(startx,160, string_hash_to_newline("Music - Rossiter, Evie"));    
 	
-	draw_text(startx,256, string_hash_to_newline("Sound Effects - justforeating"));
+	draw_text(startx,208, string_hash_to_newline("Sound Effects - justforeating"));
 
     
-    draw_text(startx,320, string_hash_to_newline("SPECIAL THANKS"));
+    draw_text(startx,256, string_hash_to_newline("SPECIAL THANKS"));
     
     creditsText = " Rossiter # double-pmcl-dot-net # FrostedGH # Garrok # WikiTay # Chortles # Weaz # Bob # Gunga Ginga # Corsaka # Phone # Miksalok # Fiery # Embarr"
     
-    draw_text_ext(startx - 104,384, string_hash_to_newline(creditsText),20,600);
+    draw_text_ext(startx - 104,320, string_hash_to_newline(creditsText),20,600);
     
     creditsText2 = " EvieMusic # Dr. Napkins # Imperfect BL God # Filipe Andre (H3XO) # Sheeper (The Classical) # TripledYou # Zakoji # Cryo # Yui # Jeancarlos # Omni # Kegg(cuthe) # Anew Returner # Prop"
     
-    draw_text_ext(startx + 104,384, string_hash_to_newline(creditsText2),20,600);
+    draw_text_ext(startx + 104,320, string_hash_to_newline(creditsText2),20,600);
+	
+	creditsText3 = "Input Developers (Juju Adams, Alynne Keith, and Friends)"
+	
+	draw_text_ext(startx, 640, string_hash_to_newline(creditsText3),20,600);
 //}
 

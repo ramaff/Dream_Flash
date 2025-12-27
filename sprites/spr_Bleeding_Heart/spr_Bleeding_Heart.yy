@@ -1,5 +1,5 @@
 {
-  "$GMSprite":"",
+  "$GMSprite":"v2",
   "%Name":"spr_Bleeding_Heart",
   "bboxMode":0,
   "bbox_bottom":102,
@@ -12,8 +12,8 @@
   "edgeFiltering":false,
   "For3D":false,
   "frames":[
-    {"$GMSpriteFrame":"","%Name":"81bc1e02-665c-4578-82a4-e1d709a55b5f","name":"81bc1e02-665c-4578-82a4-e1d709a55b5f","resourceType":"GMSpriteFrame","resourceVersion":"2.0",},
-    {"$GMSpriteFrame":"","%Name":"7d7199f1-1c2b-4722-8829-b6447c44fd44","name":"7d7199f1-1c2b-4722-8829-b6447c44fd44","resourceType":"GMSpriteFrame","resourceVersion":"2.0",},
+    {"$GMSpriteFrame":"v1","%Name":"81bc1e02-665c-4578-82a4-e1d709a55b5f","name":"81bc1e02-665c-4578-82a4-e1d709a55b5f","resourceType":"GMSpriteFrame","resourceVersion":"2.0",},
+    {"$GMSpriteFrame":"v1","%Name":"7d7199f1-1c2b-4722-8829-b6447c44fd44","name":"7d7199f1-1c2b-4722-8829-b6447c44fd44","resourceType":"GMSpriteFrame","resourceVersion":"2.0",},
   ],
   "gridX":0,
   "gridY":0,

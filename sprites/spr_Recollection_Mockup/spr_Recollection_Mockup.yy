@@ -1,5 +1,5 @@
 {
-  "$GMSprite":"",
+  "$GMSprite":"v2",
   "%Name":"spr_Recollection_Mockup",
   "bboxMode":0,
   "bbox_bottom":584,
@@ -12,7 +12,7 @@
   "edgeFiltering":false,
   "For3D":false,
   "frames":[
-    {"$GMSpriteFrame":"","%Name":"57082995-0701-473c-8d37-5631f0d653f4","name":"57082995-0701-473c-8d37-5631f0d653f4","resourceType":"GMSpriteFrame","resourceVersion":"2.0",},
+    {"$GMSpriteFrame":"v1","%Name":"57082995-0701-473c-8d37-5631f0d653f4","name":"57082995-0701-473c-8d37-5631f0d653f4","resourceType":"GMSpriteFrame","resourceVersion":"2.0",},
   ],
   "gridX":0,
   "gridY":0,

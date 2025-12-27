@@ -1,5 +1,5 @@
 {
-  "$GMSprite":"",
+  "$GMSprite":"v2",
   "%Name":"reco_Masked_Assurance_Spirit",
   "bboxMode":0,
   "bbox_bottom":303,
@@ -12,7 +12,7 @@
   "edgeFiltering":false,
   "For3D":false,
   "frames":[
-    {"$GMSpriteFrame":"","%Name":"b887a268-a510-45bc-a4e9-48badeff97c9","name":"b887a268-a510-45bc-a4e9-48badeff97c9","resourceType":"GMSpriteFrame","resourceVersion":"2.0",},
+    {"$GMSpriteFrame":"v1","%Name":"b887a268-a510-45bc-a4e9-48badeff97c9","name":"b887a268-a510-45bc-a4e9-48badeff97c9","resourceType":"GMSpriteFrame","resourceVersion":"2.0",},
   ],
   "gridX":0,
   "gridY":0,

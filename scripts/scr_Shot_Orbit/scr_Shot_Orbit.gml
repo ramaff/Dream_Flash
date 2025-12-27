@@ -1,5 +1,34 @@
 // Script assets have changed for v2.3.0 see
 // https://help.yoyogames.com/hc/en-us/articles/360005277377 for more information
+
+function scr_Shot_Orbit_Release() {
+	if InputReleased(INPUT_VERB.SHOOT) || mouse_check_button_released(mb_left) {
+		if instance_exists(otarget) {
+			direction = point_direction(otarget.x, otarget.y, obj_Astral_Indicator.x, obj_Astral_Indicator.y)
+		} else {
+			direction = point_direction(x, y, obj_Astral_Indicator.x, obj_Astral_Indicator.y)
+		}
+	    speed = shot_stats.Shot_Speed;
+	    shot_stats.Shot_Orbital_Type = 0;
+	
+		var _i = array_get_index(shot_stats.Shot_Step_Scripts, scr_Shot_Rotate)
+		if _i != -1 {
+			array_delete(shot_stats.Shot_Step_Scripts, _i, 1)
+		}
+		
+		_i = array_get_index(shot_stats.Shot_Step_Scripts, scr_Shot_Orbit)
+		if _i != -1 {
+			array_delete(shot_stats.Shot_Step_Scripts, _i, 1)
+		}
+		
+		_i = array_get_index(shot_stats.Shot_Step_Scripts, scr_Shot_Orbit_Release)
+		if _i != -1 {
+			array_delete(shot_stats.Shot_Step_Scripts, _i, 1)
+		}
+	}
+
+}
+
 function scr_Shot_Orbit(){
 
 	

@@ -1,5 +1,5 @@
 {
-  "$GMSprite":"",
+  "$GMSprite":"v2",
   "%Name":"reco_Watcher_Wall",
   "bboxMode":0,
   "bbox_bottom":290,
@@ -12,7 +12,7 @@
   "edgeFiltering":false,
   "For3D":false,
   "frames":[
-    {"$GMSpriteFrame":"","%Name":"b26a0d1e-e33e-4dc8-9c1e-fd7a50b33c47","name":"b26a0d1e-e33e-4dc8-9c1e-fd7a50b33c47","resourceType":"GMSpriteFrame","resourceVersion":"2.0",},
+    {"$GMSpriteFrame":"v1","%Name":"b26a0d1e-e33e-4dc8-9c1e-fd7a50b33c47","name":"b26a0d1e-e33e-4dc8-9c1e-fd7a50b33c47","resourceType":"GMSpriteFrame","resourceVersion":"2.0",},
   ],
   "gridX":0,
   "gridY":0,

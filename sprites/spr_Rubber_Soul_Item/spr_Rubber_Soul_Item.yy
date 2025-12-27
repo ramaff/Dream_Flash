@@ -1,5 +1,5 @@
 {
-  "$GMSprite":"",
+  "$GMSprite":"v2",
   "%Name":"spr_Rubber_Soul_Item",
   "bboxMode":0,
   "bbox_bottom":163,
@@ -12,7 +12,7 @@
   "edgeFiltering":false,
   "For3D":false,
   "frames":[
-    {"$GMSpriteFrame":"","%Name":"f7432cd9-d3cc-4c9c-a673-5874830f2cc7","name":"f7432cd9-d3cc-4c9c-a673-5874830f2cc7","resourceType":"GMSpriteFrame","resourceVersion":"2.0",},
+    {"$GMSpriteFrame":"v1","%Name":"f7432cd9-d3cc-4c9c-a673-5874830f2cc7","name":"f7432cd9-d3cc-4c9c-a673-5874830f2cc7","resourceType":"GMSpriteFrame","resourceVersion":"2.0",},
   ],
   "gridX":0,
   "gridY":0,

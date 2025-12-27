@@ -1,5 +1,5 @@
 {
-  "$GMSprite":"",
+  "$GMSprite":"v2",
   "%Name":"spr_Wrap_My_Head_Around_Art_Placeholder",
   "bboxMode":0,
   "bbox_bottom":163,
@@ -12,7 +12,7 @@
   "edgeFiltering":false,
   "For3D":false,
   "frames":[
-    {"$GMSpriteFrame":"","%Name":"3086d200-9acb-494a-9cfe-60815a35dd31","name":"3086d200-9acb-494a-9cfe-60815a35dd31","resourceType":"GMSpriteFrame","resourceVersion":"2.0",},
+    {"$GMSpriteFrame":"v1","%Name":"3086d200-9acb-494a-9cfe-60815a35dd31","name":"3086d200-9acb-494a-9cfe-60815a35dd31","resourceType":"GMSpriteFrame","resourceVersion":"2.0",},
   ],
   "gridX":0,
   "gridY":0,

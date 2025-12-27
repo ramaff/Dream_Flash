@@ -1,5 +1,5 @@
 {
-  "$GMSprite":"",
+  "$GMSprite":"v2",
   "%Name":"spr_Overjoyed_Art",
   "bboxMode":0,
   "bbox_bottom":157,
@@ -12,7 +12,7 @@
   "edgeFiltering":false,
   "For3D":false,
   "frames":[
-    {"$GMSpriteFrame":"","%Name":"900ad9d0-e32e-44a4-b8f8-79b20414a7bd","name":"900ad9d0-e32e-44a4-b8f8-79b20414a7bd","resourceType":"GMSpriteFrame","resourceVersion":"2.0",},
+    {"$GMSpriteFrame":"v1","%Name":"900ad9d0-e32e-44a4-b8f8-79b20414a7bd","name":"900ad9d0-e32e-44a4-b8f8-79b20414a7bd","resourceType":"GMSpriteFrame","resourceVersion":"2.0",},
   ],
   "gridX":0,
   "gridY":0,

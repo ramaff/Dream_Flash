@@ -1,5 +1,5 @@
 {
-  "$GMSprite":"",
+  "$GMSprite":"v2",
   "%Name":"spr_Sleepy_Hand_P2",
   "bboxMode":0,
   "bbox_bottom":256,
@@ -12,7 +12,7 @@
   "edgeFiltering":false,
   "For3D":false,
   "frames":[
-    {"$GMSpriteFrame":"","%Name":"664d1964-6aa2-474f-a0a4-e2f36a5d7d04","name":"664d1964-6aa2-474f-a0a4-e2f36a5d7d04","resourceType":"GMSpriteFrame","resourceVersion":"2.0",},
+    {"$GMSpriteFrame":"v1","%Name":"664d1964-6aa2-474f-a0a4-e2f36a5d7d04","name":"664d1964-6aa2-474f-a0a4-e2f36a5d7d04","resourceType":"GMSpriteFrame","resourceVersion":"2.0",},
   ],
   "gridX":0,
   "gridY":0,

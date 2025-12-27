@@ -1,5 +1,5 @@
 {
-  "$GMSprite":"",
+  "$GMSprite":"v2",
   "%Name":"spr_Demon_Spiral_Shot",
   "bboxMode":2,
   "bbox_bottom":60,
@@ -12,7 +12,7 @@
   "edgeFiltering":false,
   "For3D":false,
   "frames":[
-    {"$GMSpriteFrame":"","%Name":"8bbe0fc9-7835-4ce5-a244-14fa0885bdf3","name":"8bbe0fc9-7835-4ce5-a244-14fa0885bdf3","resourceType":"GMSpriteFrame","resourceVersion":"2.0",},
+    {"$GMSpriteFrame":"v1","%Name":"8bbe0fc9-7835-4ce5-a244-14fa0885bdf3","name":"8bbe0fc9-7835-4ce5-a244-14fa0885bdf3","resourceType":"GMSpriteFrame","resourceVersion":"2.0",},
   ],
   "gridX":0,
   "gridY":0,

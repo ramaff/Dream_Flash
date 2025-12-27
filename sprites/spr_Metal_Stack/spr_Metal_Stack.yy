@@ -1,5 +1,5 @@
 {
-  "$GMSprite":"",
+  "$GMSprite":"v2",
   "%Name":"spr_Metal_Stack",
   "bboxMode":0,
   "bbox_bottom":427,
@@ -12,7 +12,7 @@
   "edgeFiltering":false,
   "For3D":false,
   "frames":[
-    {"$GMSpriteFrame":"","%Name":"7a2c07f2-3a99-40e0-a79b-d93659aad17a","name":"7a2c07f2-3a99-40e0-a79b-d93659aad17a","resourceType":"GMSpriteFrame","resourceVersion":"2.0",},
+    {"$GMSpriteFrame":"v1","%Name":"7a2c07f2-3a99-40e0-a79b-d93659aad17a","name":"7a2c07f2-3a99-40e0-a79b-d93659aad17a","resourceType":"GMSpriteFrame","resourceVersion":"2.0",},
   ],
   "gridX":0,
   "gridY":0,

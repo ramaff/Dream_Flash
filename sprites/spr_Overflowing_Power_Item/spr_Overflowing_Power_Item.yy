@@ -1,5 +1,5 @@
 {
-  "$GMSprite":"",
+  "$GMSprite":"v2",
   "%Name":"spr_Overflowing_Power_Item",
   "bboxMode":0,
   "bbox_bottom":157,
@@ -12,7 +12,7 @@
   "edgeFiltering":false,
   "For3D":false,
   "frames":[
-    {"$GMSpriteFrame":"","%Name":"a870e1a0-48b4-4c55-9853-9c8465dc5fdf","name":"a870e1a0-48b4-4c55-9853-9c8465dc5fdf","resourceType":"GMSpriteFrame","resourceVersion":"2.0",},
+    {"$GMSpriteFrame":"v1","%Name":"a870e1a0-48b4-4c55-9853-9c8465dc5fdf","name":"a870e1a0-48b4-4c55-9853-9c8465dc5fdf","resourceType":"GMSpriteFrame","resourceVersion":"2.0",},
   ],
   "gridX":0,
   "gridY":0,

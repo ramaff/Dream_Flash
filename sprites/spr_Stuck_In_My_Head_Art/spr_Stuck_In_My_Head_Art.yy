@@ -1,5 +1,5 @@
 {
-  "$GMSprite":"",
+  "$GMSprite":"v2",
   "%Name":"spr_Stuck_In_My_Head_Art",
   "bboxMode":1,
   "bbox_bottom":163,
@@ -12,7 +12,7 @@
   "edgeFiltering":false,
   "For3D":false,
   "frames":[
-    {"$GMSpriteFrame":"","%Name":"19dcda7b-014a-480a-8b4f-98d8076a2215","name":"19dcda7b-014a-480a-8b4f-98d8076a2215","resourceType":"GMSpriteFrame","resourceVersion":"2.0",},
+    {"$GMSpriteFrame":"v1","%Name":"19dcda7b-014a-480a-8b4f-98d8076a2215","name":"19dcda7b-014a-480a-8b4f-98d8076a2215","resourceType":"GMSpriteFrame","resourceVersion":"2.0",},
   ],
   "gridX":0,
   "gridY":0,

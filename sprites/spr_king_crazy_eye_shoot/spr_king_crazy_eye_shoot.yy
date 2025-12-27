@@ -1,5 +1,5 @@
 {
-  "$GMSprite":"",
+  "$GMSprite":"v2",
   "%Name":"spr_king_crazy_eye_shoot",
   "bboxMode":0,
   "bbox_bottom":355,
@@ -12,9 +12,9 @@
   "edgeFiltering":false,
   "For3D":false,
   "frames":[
-    {"$GMSpriteFrame":"","%Name":"11d3d970-1780-4c51-a9ac-7c50316f4e87","name":"11d3d970-1780-4c51-a9ac-7c50316f4e87","resourceType":"GMSpriteFrame","resourceVersion":"2.0",},
-    {"$GMSpriteFrame":"","%Name":"13c91434-4ba1-49db-9d79-56c4c8f12f25","name":"13c91434-4ba1-49db-9d79-56c4c8f12f25","resourceType":"GMSpriteFrame","resourceVersion":"2.0",},
-    {"$GMSpriteFrame":"","%Name":"a681db37-301f-4524-ae71-2ee4ae841cf9","name":"a681db37-301f-4524-ae71-2ee4ae841cf9","resourceType":"GMSpriteFrame","resourceVersion":"2.0",},
+    {"$GMSpriteFrame":"v1","%Name":"11d3d970-1780-4c51-a9ac-7c50316f4e87","name":"11d3d970-1780-4c51-a9ac-7c50316f4e87","resourceType":"GMSpriteFrame","resourceVersion":"2.0",},
+    {"$GMSpriteFrame":"v1","%Name":"13c91434-4ba1-49db-9d79-56c4c8f12f25","name":"13c91434-4ba1-49db-9d79-56c4c8f12f25","resourceType":"GMSpriteFrame","resourceVersion":"2.0",},
+    {"$GMSpriteFrame":"v1","%Name":"a681db37-301f-4524-ae71-2ee4ae841cf9","name":"a681db37-301f-4524-ae71-2ee4ae841cf9","resourceType":"GMSpriteFrame","resourceVersion":"2.0",},
   ],
   "gridX":0,
   "gridY":0,

@@ -1,5 +1,5 @@
 {
-  "$GMSprite":"",
+  "$GMSprite":"v2",
   "%Name":"spr_Samurai_I_guess",
   "bboxMode":0,
   "bbox_bottom":113,
@@ -12,7 +12,7 @@
   "edgeFiltering":false,
   "For3D":false,
   "frames":[
-    {"$GMSpriteFrame":"","%Name":"1a86e496-64cb-46be-9aa2-5870385c40a2","name":"1a86e496-64cb-46be-9aa2-5870385c40a2","resourceType":"GMSpriteFrame","resourceVersion":"2.0",},
+    {"$GMSpriteFrame":"v1","%Name":"1a86e496-64cb-46be-9aa2-5870385c40a2","name":"1a86e496-64cb-46be-9aa2-5870385c40a2","resourceType":"GMSpriteFrame","resourceVersion":"2.0",},
   ],
   "gridX":0,
   "gridY":0,

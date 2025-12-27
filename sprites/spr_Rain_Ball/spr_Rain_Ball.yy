@@ -1,5 +1,5 @@
 {
-  "$GMSprite":"",
+  "$GMSprite":"v2",
   "%Name":"spr_Rain_Ball",
   "bboxMode":2,
   "bbox_bottom":68,
@@ -12,7 +12,7 @@
   "edgeFiltering":false,
   "For3D":false,
   "frames":[
-    {"$GMSpriteFrame":"","%Name":"5d754cc4-574d-481c-8629-1a04a9c61da8","name":"5d754cc4-574d-481c-8629-1a04a9c61da8","resourceType":"GMSpriteFrame","resourceVersion":"2.0",},
+    {"$GMSpriteFrame":"v1","%Name":"5d754cc4-574d-481c-8629-1a04a9c61da8","name":"5d754cc4-574d-481c-8629-1a04a9c61da8","resourceType":"GMSpriteFrame","resourceVersion":"2.0",},
   ],
   "gridX":0,
   "gridY":0,

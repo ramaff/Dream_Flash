@@ -1,5 +1,5 @@
 {
-  "$GMSprite":"",
+  "$GMSprite":"v2",
   "%Name":"spr_Recollection_Boss_Health_Icon",
   "bboxMode":0,
   "bbox_bottom":54,
@@ -12,8 +12,8 @@
   "edgeFiltering":false,
   "For3D":false,
   "frames":[
-    {"$GMSpriteFrame":"","%Name":"6400153c-82b0-4e01-9c82-bcb0786c9f65","name":"6400153c-82b0-4e01-9c82-bcb0786c9f65","resourceType":"GMSpriteFrame","resourceVersion":"2.0",},
-    {"$GMSpriteFrame":"","%Name":"94297be3-c7df-4d07-b231-0a89df5346ce","name":"94297be3-c7df-4d07-b231-0a89df5346ce","resourceType":"GMSpriteFrame","resourceVersion":"2.0",},
+    {"$GMSpriteFrame":"v1","%Name":"6400153c-82b0-4e01-9c82-bcb0786c9f65","name":"6400153c-82b0-4e01-9c82-bcb0786c9f65","resourceType":"GMSpriteFrame","resourceVersion":"2.0",},
+    {"$GMSpriteFrame":"v1","%Name":"94297be3-c7df-4d07-b231-0a89df5346ce","name":"94297be3-c7df-4d07-b231-0a89df5346ce","resourceType":"GMSpriteFrame","resourceVersion":"2.0",},
   ],
   "gridX":0,
   "gridY":0,

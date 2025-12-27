@@ -1,5 +1,5 @@
 {
-  "$GMSprite":"",
+  "$GMSprite":"v2",
   "%Name":"spr_Sandman_Thought",
   "bboxMode":0,
   "bbox_bottom":412,
@@ -12,7 +12,7 @@
   "edgeFiltering":false,
   "For3D":false,
   "frames":[
-    {"$GMSpriteFrame":"","%Name":"d80fa6b4-497f-475a-9149-09027d01c463","name":"d80fa6b4-497f-475a-9149-09027d01c463","resourceType":"GMSpriteFrame","resourceVersion":"2.0",},
+    {"$GMSpriteFrame":"v1","%Name":"d80fa6b4-497f-475a-9149-09027d01c463","name":"d80fa6b4-497f-475a-9149-09027d01c463","resourceType":"GMSpriteFrame","resourceVersion":"2.0",},
   ],
   "gridX":0,
   "gridY":0,

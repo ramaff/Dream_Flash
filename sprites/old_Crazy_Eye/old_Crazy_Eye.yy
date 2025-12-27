@@ -1,5 +1,5 @@
 {
-  "$GMSprite":"",
+  "$GMSprite":"v2",
   "%Name":"old_Crazy_Eye",
   "bboxMode":0,
   "bbox_bottom":261,
@@ -12,7 +12,7 @@
   "edgeFiltering":false,
   "For3D":false,
   "frames":[
-    {"$GMSpriteFrame":"","%Name":"7a1a2f03-09bb-400f-a14a-c426de4e62d0","name":"7a1a2f03-09bb-400f-a14a-c426de4e62d0","resourceType":"GMSpriteFrame","resourceVersion":"2.0",},
+    {"$GMSpriteFrame":"v1","%Name":"7a1a2f03-09bb-400f-a14a-c426de4e62d0","name":"7a1a2f03-09bb-400f-a14a-c426de4e62d0","resourceType":"GMSpriteFrame","resourceVersion":"2.0",},
   ],
   "gridX":0,
   "gridY":0,

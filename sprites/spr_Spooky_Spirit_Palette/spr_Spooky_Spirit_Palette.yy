@@ -1,5 +1,5 @@
 {
-  "$GMSprite":"",
+  "$GMSprite":"v2",
   "%Name":"spr_Spooky_Spirit_Palette",
   "bboxMode":0,
   "bbox_bottom":3,
@@ -12,7 +12,7 @@
   "edgeFiltering":false,
   "For3D":false,
   "frames":[
-    {"$GMSpriteFrame":"","%Name":"efbb12c1-8b08-4ed5-ab25-6a639ae02a52","name":"efbb12c1-8b08-4ed5-ab25-6a639ae02a52","resourceType":"GMSpriteFrame","resourceVersion":"2.0",},
+    {"$GMSpriteFrame":"v1","%Name":"efbb12c1-8b08-4ed5-ab25-6a639ae02a52","name":"efbb12c1-8b08-4ed5-ab25-6a639ae02a52","resourceType":"GMSpriteFrame","resourceVersion":"2.0",},
   ],
   "gridX":0,
   "gridY":0,

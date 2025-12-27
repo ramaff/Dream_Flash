@@ -1,5 +1,5 @@
 {
-  "$GMSprite":"",
+  "$GMSprite":"v2",
   "%Name":"spr_Phase_Magic_Shot",
   "bboxMode":0,
   "bbox_bottom":120,
@@ -12,7 +12,7 @@
   "edgeFiltering":false,
   "For3D":false,
   "frames":[
-    {"$GMSpriteFrame":"","%Name":"65f44c59-2016-4e3d-bb29-64b41f74c605","name":"65f44c59-2016-4e3d-bb29-64b41f74c605","resourceType":"GMSpriteFrame","resourceVersion":"2.0",},
+    {"$GMSpriteFrame":"v1","%Name":"65f44c59-2016-4e3d-bb29-64b41f74c605","name":"65f44c59-2016-4e3d-bb29-64b41f74c605","resourceType":"GMSpriteFrame","resourceVersion":"2.0",},
   ],
   "gridX":0,
   "gridY":0,

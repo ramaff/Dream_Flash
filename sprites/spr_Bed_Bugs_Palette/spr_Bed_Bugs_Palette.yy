@@ -1,5 +1,5 @@
 {
-  "$GMSprite":"",
+  "$GMSprite":"v2",
   "%Name":"spr_Bed_Bugs_Palette",
   "bboxMode":0,
   "bbox_bottom":7,
@@ -12,7 +12,7 @@
   "edgeFiltering":false,
   "For3D":false,
   "frames":[
-    {"$GMSpriteFrame":"","%Name":"742144f5-9c1d-48ea-ae80-80dacc4682d9","name":"742144f5-9c1d-48ea-ae80-80dacc4682d9","resourceType":"GMSpriteFrame","resourceVersion":"2.0",},
+    {"$GMSpriteFrame":"v1","%Name":"742144f5-9c1d-48ea-ae80-80dacc4682d9","name":"742144f5-9c1d-48ea-ae80-80dacc4682d9","resourceType":"GMSpriteFrame","resourceVersion":"2.0",},
   ],
   "gridX":0,
   "gridY":0,

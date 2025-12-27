@@ -1,5 +1,5 @@
 {
-  "$GMSprite":"",
+  "$GMSprite":"v2",
   "%Name":"spr_Charged_Forcefield_Shot",
   "bboxMode":1,
   "bbox_bottom":149,
@@ -12,7 +12,7 @@
   "edgeFiltering":false,
   "For3D":false,
   "frames":[
-    {"$GMSpriteFrame":"","%Name":"6046b570-6e8d-4e27-931e-146579ad859a","name":"6046b570-6e8d-4e27-931e-146579ad859a","resourceType":"GMSpriteFrame","resourceVersion":"2.0",},
+    {"$GMSpriteFrame":"v1","%Name":"6046b570-6e8d-4e27-931e-146579ad859a","name":"6046b570-6e8d-4e27-931e-146579ad859a","resourceType":"GMSpriteFrame","resourceVersion":"2.0",},
   ],
   "gridX":0,
   "gridY":0,

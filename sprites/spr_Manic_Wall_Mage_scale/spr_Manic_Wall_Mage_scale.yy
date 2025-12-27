@@ -1,5 +1,5 @@
 {
-  "$GMSprite":"",
+  "$GMSprite":"v2",
   "%Name":"spr_Manic_Wall_Mage_scale",
   "bboxMode":0,
   "bbox_bottom":442,
@@ -12,7 +12,7 @@
   "edgeFiltering":false,
   "For3D":false,
   "frames":[
-    {"$GMSpriteFrame":"","%Name":"8dd68000-43cb-4a8b-bc3f-af304903e2c0","name":"8dd68000-43cb-4a8b-bc3f-af304903e2c0","resourceType":"GMSpriteFrame","resourceVersion":"2.0",},
+    {"$GMSpriteFrame":"v1","%Name":"8dd68000-43cb-4a8b-bc3f-af304903e2c0","name":"8dd68000-43cb-4a8b-bc3f-af304903e2c0","resourceType":"GMSpriteFrame","resourceVersion":"2.0",},
   ],
   "gridX":0,
   "gridY":0,

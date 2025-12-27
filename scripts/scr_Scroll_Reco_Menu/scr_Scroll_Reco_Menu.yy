@@ -1,0 +1,13 @@
+{
+  "$GMScript":"v1",
+  "%Name":"scr_Scroll_Reco_Menu",
+  "isCompatibility":false,
+  "isDnD":false,
+  "name":"scr_Scroll_Reco_Menu",
+  "parent":{
+    "name":"Recollection",
+    "path":"folders/Scripts/Recollection.yy",
+  },
+  "resourceType":"GMScript",
+  "resourceVersion":"2.0",
+}

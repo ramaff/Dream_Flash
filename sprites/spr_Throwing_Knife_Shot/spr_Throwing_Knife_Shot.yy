@@ -1,5 +1,5 @@
 {
-  "$GMSprite":"",
+  "$GMSprite":"v2",
   "%Name":"spr_Throwing_Knife_Shot",
   "bboxMode":0,
   "bbox_bottom":58,
@@ -12,7 +12,7 @@
   "edgeFiltering":false,
   "For3D":false,
   "frames":[
-    {"$GMSpriteFrame":"","%Name":"6c0d48f1-d87c-4b64-9dfa-8f640283efd5","name":"6c0d48f1-d87c-4b64-9dfa-8f640283efd5","resourceType":"GMSpriteFrame","resourceVersion":"2.0",},
+    {"$GMSpriteFrame":"v1","%Name":"6c0d48f1-d87c-4b64-9dfa-8f640283efd5","name":"6c0d48f1-d87c-4b64-9dfa-8f640283efd5","resourceType":"GMSpriteFrame","resourceVersion":"2.0",},
   ],
   "gridX":0,
   "gridY":0,

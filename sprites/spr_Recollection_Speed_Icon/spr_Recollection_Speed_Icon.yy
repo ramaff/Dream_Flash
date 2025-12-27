@@ -1,5 +1,5 @@
 {
-  "$GMSprite":"",
+  "$GMSprite":"v2",
   "%Name":"spr_Recollection_Speed_Icon",
   "bboxMode":0,
   "bbox_bottom":24,
@@ -12,7 +12,7 @@
   "edgeFiltering":false,
   "For3D":false,
   "frames":[
-    {"$GMSpriteFrame":"","%Name":"a1f8d5c9-5f06-4aea-9b0e-93b48684cb00","name":"a1f8d5c9-5f06-4aea-9b0e-93b48684cb00","resourceType":"GMSpriteFrame","resourceVersion":"2.0",},
+    {"$GMSpriteFrame":"v1","%Name":"a1f8d5c9-5f06-4aea-9b0e-93b48684cb00","name":"a1f8d5c9-5f06-4aea-9b0e-93b48684cb00","resourceType":"GMSpriteFrame","resourceVersion":"2.0",},
   ],
   "gridX":0,
   "gridY":0,

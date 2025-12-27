@@ -1,5 +1,5 @@
 {
-  "$GMSprite":"",
+  "$GMSprite":"v2",
   "%Name":"spr_Summoned_Ghoul1",
   "bboxMode":0,
   "bbox_bottom":117,
@@ -12,7 +12,7 @@
   "edgeFiltering":false,
   "For3D":false,
   "frames":[
-    {"$GMSpriteFrame":"","%Name":"34b24fca-e3fd-43bb-8fcb-45518d2e3110","name":"34b24fca-e3fd-43bb-8fcb-45518d2e3110","resourceType":"GMSpriteFrame","resourceVersion":"2.0",},
+    {"$GMSpriteFrame":"v1","%Name":"34b24fca-e3fd-43bb-8fcb-45518d2e3110","name":"34b24fca-e3fd-43bb-8fcb-45518d2e3110","resourceType":"GMSpriteFrame","resourceVersion":"2.0",},
   ],
   "gridX":0,
   "gridY":0,

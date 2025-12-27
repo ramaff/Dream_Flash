@@ -1,5 +1,5 @@
 {
-  "$GMSprite":"",
+  "$GMSprite":"v2",
   "%Name":"spr_Bleeding_Blade_Shot_old",
   "bboxMode":0,
   "bbox_bottom":265,
@@ -12,7 +12,7 @@
   "edgeFiltering":false,
   "For3D":false,
   "frames":[
-    {"$GMSpriteFrame":"","%Name":"f05fc392-5132-4061-8829-3a73d4668e2d","name":"f05fc392-5132-4061-8829-3a73d4668e2d","resourceType":"GMSpriteFrame","resourceVersion":"2.0",},
+    {"$GMSpriteFrame":"v1","%Name":"f05fc392-5132-4061-8829-3a73d4668e2d","name":"f05fc392-5132-4061-8829-3a73d4668e2d","resourceType":"GMSpriteFrame","resourceVersion":"2.0",},
   ],
   "gridX":0,
   "gridY":0,

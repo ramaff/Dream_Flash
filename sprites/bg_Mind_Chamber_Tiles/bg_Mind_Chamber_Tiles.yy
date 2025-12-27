@@ -1,5 +1,5 @@
 {
-  "$GMSprite":"",
+  "$GMSprite":"v2",
   "%Name":"bg_Mind_Chamber_Tiles",
   "bboxMode":0,
   "bbox_bottom":191,
@@ -12,7 +12,7 @@
   "edgeFiltering":false,
   "For3D":false,
   "frames":[
-    {"$GMSpriteFrame":"","%Name":"0610ece9-123f-4c4f-97e6-59513b2283be","name":"0610ece9-123f-4c4f-97e6-59513b2283be","resourceType":"GMSpriteFrame","resourceVersion":"2.0",},
+    {"$GMSpriteFrame":"v1","%Name":"0610ece9-123f-4c4f-97e6-59513b2283be","name":"0610ece9-123f-4c4f-97e6-59513b2283be","resourceType":"GMSpriteFrame","resourceVersion":"2.0",},
   ],
   "gridX":0,
   "gridY":0,

@@ -55,7 +55,7 @@ if instance_exists(obj_Soul_Parent) {
 		draw_sprite_part_ext(spr_OverOverEssence_Container,1,0,172 * (1 - ((epercent - 300) / 300)),89,172,winx - 72, winy - 96 + (172 / 2) * (1 - ((epercent - 300) / 300)),0.5,0.5,c_white,1);
 	}
 	
-    scr_Weapon_GUI();
+    scr_Weapon_GUI(Soul_Weapons_Control.weapon_slot_info);
 
 }
 
@@ -135,10 +135,10 @@ if !scr_Room_Leavable() {
     
     scr_Mini_Map();
 	
-	if keyboard_check(ord(global.gameMapExpand)) and instance_number(obj_Map_Button) = 0 {
+	if (keyboard_check(ord(global.gameMapExpand)) || InputCheck(INPUT_VERB.SPECIAL) ) and instance_number(obj_Map_Button) = 0 {
 		scr_Mega_Map();
 	}
-	if !keyboard_check(ord(global.gameMapExpand)) {
+	if !keyboard_check(ord(global.gameMapExpand)) and !InputCheck(INPUT_VERB.SPECIAL) {
 		with(obj_Map_Button) {
 			instance_destroy();
 		}

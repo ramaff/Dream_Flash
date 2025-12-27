@@ -1,5 +1,5 @@
 {
-  "$GMSprite":"",
+  "$GMSprite":"v2",
   "%Name":"spr_Vanity_Ball",
   "bboxMode":2,
   "bbox_bottom":63,
@@ -12,8 +12,8 @@
   "edgeFiltering":false,
   "For3D":false,
   "frames":[
-    {"$GMSpriteFrame":"","%Name":"ed968c4a-f98f-4a66-8478-d4bdb22cbd89","name":"ed968c4a-f98f-4a66-8478-d4bdb22cbd89","resourceType":"GMSpriteFrame","resourceVersion":"2.0",},
-    {"$GMSpriteFrame":"","%Name":"66cfa9d2-ae4e-4eb3-8a8f-3487510a4563","name":"66cfa9d2-ae4e-4eb3-8a8f-3487510a4563","resourceType":"GMSpriteFrame","resourceVersion":"2.0",},
+    {"$GMSpriteFrame":"v1","%Name":"ed968c4a-f98f-4a66-8478-d4bdb22cbd89","name":"ed968c4a-f98f-4a66-8478-d4bdb22cbd89","resourceType":"GMSpriteFrame","resourceVersion":"2.0",},
+    {"$GMSpriteFrame":"v1","%Name":"66cfa9d2-ae4e-4eb3-8a8f-3487510a4563","name":"66cfa9d2-ae4e-4eb3-8a8f-3487510a4563","resourceType":"GMSpriteFrame","resourceVersion":"2.0",},
   ],
   "gridX":0,
   "gridY":0,

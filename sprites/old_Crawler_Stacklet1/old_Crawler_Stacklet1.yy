@@ -1,5 +1,5 @@
 {
-  "$GMSprite":"",
+  "$GMSprite":"v2",
   "%Name":"old_Crawler_Stacklet1",
   "bboxMode":0,
   "bbox_bottom":305,
@@ -12,7 +12,7 @@
   "edgeFiltering":false,
   "For3D":false,
   "frames":[
-    {"$GMSpriteFrame":"","%Name":"fb8bf50b-dc6a-4c8f-bf8f-cde8372365b2","name":"fb8bf50b-dc6a-4c8f-bf8f-cde8372365b2","resourceType":"GMSpriteFrame","resourceVersion":"2.0",},
+    {"$GMSpriteFrame":"v1","%Name":"fb8bf50b-dc6a-4c8f-bf8f-cde8372365b2","name":"fb8bf50b-dc6a-4c8f-bf8f-cde8372365b2","resourceType":"GMSpriteFrame","resourceVersion":"2.0",},
   ],
   "gridX":0,
   "gridY":0,

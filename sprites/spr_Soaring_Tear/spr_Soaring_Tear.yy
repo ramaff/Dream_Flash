@@ -1,5 +1,5 @@
 {
-  "$GMSprite":"",
+  "$GMSprite":"v2",
   "%Name":"spr_Soaring_Tear",
   "bboxMode":2,
   "bbox_bottom":74,
@@ -12,7 +12,7 @@
   "edgeFiltering":false,
   "For3D":false,
   "frames":[
-    {"$GMSpriteFrame":"","%Name":"545e6a3a-b547-4471-b78c-2c9add39de45","name":"545e6a3a-b547-4471-b78c-2c9add39de45","resourceType":"GMSpriteFrame","resourceVersion":"2.0",},
+    {"$GMSpriteFrame":"v1","%Name":"545e6a3a-b547-4471-b78c-2c9add39de45","name":"545e6a3a-b547-4471-b78c-2c9add39de45","resourceType":"GMSpriteFrame","resourceVersion":"2.0",},
   ],
   "gridX":0,
   "gridY":0,

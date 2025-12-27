@@ -1,5 +1,5 @@
 {
-  "$GMSprite":"",
+  "$GMSprite":"v2",
   "%Name":"reco_Blind_Hunger",
   "bboxMode":0,
   "bbox_bottom":491,
@@ -12,7 +12,7 @@
   "edgeFiltering":false,
   "For3D":false,
   "frames":[
-    {"$GMSpriteFrame":"","%Name":"34c652e9-8cd7-4017-b7a0-5ef4557d4b77","name":"34c652e9-8cd7-4017-b7a0-5ef4557d4b77","resourceType":"GMSpriteFrame","resourceVersion":"2.0",},
+    {"$GMSpriteFrame":"v1","%Name":"34c652e9-8cd7-4017-b7a0-5ef4557d4b77","name":"34c652e9-8cd7-4017-b7a0-5ef4557d4b77","resourceType":"GMSpriteFrame","resourceVersion":"2.0",},
   ],
   "gridX":0,
   "gridY":0,

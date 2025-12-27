@@ -1,5 +1,5 @@
 {
-  "$GMSprite":"",
+  "$GMSprite":"v2",
   "%Name":"spr_Healthy_Thoughts",
   "bboxMode":0,
   "bbox_bottom":155,
@@ -12,8 +12,8 @@
   "edgeFiltering":false,
   "For3D":false,
   "frames":[
-    {"$GMSpriteFrame":"","%Name":"d2a6a767-2d58-4ff7-9663-dc68ee9f76d6","name":"d2a6a767-2d58-4ff7-9663-dc68ee9f76d6","resourceType":"GMSpriteFrame","resourceVersion":"2.0",},
-    {"$GMSpriteFrame":"","%Name":"b1e502b8-da5d-4999-9674-4afbd24d3bdc","name":"b1e502b8-da5d-4999-9674-4afbd24d3bdc","resourceType":"GMSpriteFrame","resourceVersion":"2.0",},
+    {"$GMSpriteFrame":"v1","%Name":"d2a6a767-2d58-4ff7-9663-dc68ee9f76d6","name":"d2a6a767-2d58-4ff7-9663-dc68ee9f76d6","resourceType":"GMSpriteFrame","resourceVersion":"2.0",},
+    {"$GMSpriteFrame":"v1","%Name":"b1e502b8-da5d-4999-9674-4afbd24d3bdc","name":"b1e502b8-da5d-4999-9674-4afbd24d3bdc","resourceType":"GMSpriteFrame","resourceVersion":"2.0",},
   ],
   "gridX":0,
   "gridY":0,

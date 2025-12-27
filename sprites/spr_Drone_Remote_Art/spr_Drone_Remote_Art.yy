@@ -1,5 +1,5 @@
 {
-  "$GMSprite":"",
+  "$GMSprite":"v2",
   "%Name":"spr_Drone_Remote_Art",
   "bboxMode":0,
   "bbox_bottom":157,
@@ -12,7 +12,7 @@
   "edgeFiltering":false,
   "For3D":false,
   "frames":[
-    {"$GMSpriteFrame":"","%Name":"c2de3f64-0fc7-4626-b32f-d34e0c8fd7d1","name":"c2de3f64-0fc7-4626-b32f-d34e0c8fd7d1","resourceType":"GMSpriteFrame","resourceVersion":"2.0",},
+    {"$GMSpriteFrame":"v1","%Name":"c2de3f64-0fc7-4626-b32f-d34e0c8fd7d1","name":"c2de3f64-0fc7-4626-b32f-d34e0c8fd7d1","resourceType":"GMSpriteFrame","resourceVersion":"2.0",},
   ],
   "gridX":0,
   "gridY":0,

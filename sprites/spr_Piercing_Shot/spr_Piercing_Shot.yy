@@ -1,5 +1,5 @@
 {
-  "$GMSprite":"",
+  "$GMSprite":"v2",
   "%Name":"spr_Piercing_Shot",
   "bboxMode":0,
   "bbox_bottom":71,
@@ -12,7 +12,7 @@
   "edgeFiltering":false,
   "For3D":false,
   "frames":[
-    {"$GMSpriteFrame":"","%Name":"7f4f90ad-40d6-4a7b-ae69-782be995fc39","name":"7f4f90ad-40d6-4a7b-ae69-782be995fc39","resourceType":"GMSpriteFrame","resourceVersion":"2.0",},
+    {"$GMSpriteFrame":"v1","%Name":"7f4f90ad-40d6-4a7b-ae69-782be995fc39","name":"7f4f90ad-40d6-4a7b-ae69-782be995fc39","resourceType":"GMSpriteFrame","resourceVersion":"2.0",},
   ],
   "gridX":0,
   "gridY":0,

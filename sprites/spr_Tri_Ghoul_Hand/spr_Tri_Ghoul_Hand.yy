@@ -1,5 +1,5 @@
 {
-  "$GMSprite":"",
+  "$GMSprite":"v2",
   "%Name":"spr_Tri_Ghoul_Hand",
   "bboxMode":2,
   "bbox_bottom":170,
@@ -12,7 +12,7 @@
   "edgeFiltering":false,
   "For3D":false,
   "frames":[
-    {"$GMSpriteFrame":"","%Name":"b662bb94-a603-4449-addc-e9a33c817460","name":"b662bb94-a603-4449-addc-e9a33c817460","resourceType":"GMSpriteFrame","resourceVersion":"2.0",},
+    {"$GMSpriteFrame":"v1","%Name":"b662bb94-a603-4449-addc-e9a33c817460","name":"b662bb94-a603-4449-addc-e9a33c817460","resourceType":"GMSpriteFrame","resourceVersion":"2.0",},
   ],
   "gridX":0,
   "gridY":0,

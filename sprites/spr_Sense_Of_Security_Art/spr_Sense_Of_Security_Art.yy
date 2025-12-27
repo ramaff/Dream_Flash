@@ -1,5 +1,5 @@
 {
-  "$GMSprite":"",
+  "$GMSprite":"v2",
   "%Name":"spr_Sense_Of_Security_Art",
   "bboxMode":0,
   "bbox_bottom":157,
@@ -12,7 +12,7 @@
   "edgeFiltering":false,
   "For3D":false,
   "frames":[
-    {"$GMSpriteFrame":"","%Name":"6aeb5156-2dbd-4d72-a2fc-a38ef7ec04a4","name":"6aeb5156-2dbd-4d72-a2fc-a38ef7ec04a4","resourceType":"GMSpriteFrame","resourceVersion":"2.0",},
+    {"$GMSpriteFrame":"v1","%Name":"6aeb5156-2dbd-4d72-a2fc-a38ef7ec04a4","name":"6aeb5156-2dbd-4d72-a2fc-a38ef7ec04a4","resourceType":"GMSpriteFrame","resourceVersion":"2.0",},
   ],
   "gridX":0,
   "gridY":0,

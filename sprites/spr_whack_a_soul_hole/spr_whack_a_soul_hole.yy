@@ -1,5 +1,5 @@
 {
-  "$GMSprite":"",
+  "$GMSprite":"v2",
   "%Name":"spr_whack_a_soul_hole",
   "bboxMode":0,
   "bbox_bottom":316,
@@ -12,7 +12,7 @@
   "edgeFiltering":false,
   "For3D":false,
   "frames":[
-    {"$GMSpriteFrame":"","%Name":"d3cdb0c3-a659-4203-a53a-095cff40b7d0","name":"d3cdb0c3-a659-4203-a53a-095cff40b7d0","resourceType":"GMSpriteFrame","resourceVersion":"2.0",},
+    {"$GMSpriteFrame":"v1","%Name":"d3cdb0c3-a659-4203-a53a-095cff40b7d0","name":"d3cdb0c3-a659-4203-a53a-095cff40b7d0","resourceType":"GMSpriteFrame","resourceVersion":"2.0",},
   ],
   "gridX":0,
   "gridY":0,

@@ -1,5 +1,5 @@
 {
-  "$GMSprite":"",
+  "$GMSprite":"v2",
   "%Name":"spr_Hourglass_Heart",
   "bboxMode":0,
   "bbox_bottom":88,
@@ -12,8 +12,8 @@
   "edgeFiltering":false,
   "For3D":false,
   "frames":[
-    {"$GMSpriteFrame":"","%Name":"ab0caa7e-a627-4cf9-a394-7862bbc53e05","name":"ab0caa7e-a627-4cf9-a394-7862bbc53e05","resourceType":"GMSpriteFrame","resourceVersion":"2.0",},
-    {"$GMSpriteFrame":"","%Name":"36bbd335-65a3-424a-bd76-6d85899f8641","name":"36bbd335-65a3-424a-bd76-6d85899f8641","resourceType":"GMSpriteFrame","resourceVersion":"2.0",},
+    {"$GMSpriteFrame":"v1","%Name":"ab0caa7e-a627-4cf9-a394-7862bbc53e05","name":"ab0caa7e-a627-4cf9-a394-7862bbc53e05","resourceType":"GMSpriteFrame","resourceVersion":"2.0",},
+    {"$GMSpriteFrame":"v1","%Name":"36bbd335-65a3-424a-bd76-6d85899f8641","name":"36bbd335-65a3-424a-bd76-6d85899f8641","resourceType":"GMSpriteFrame","resourceVersion":"2.0",},
   ],
   "gridX":0,
   "gridY":0,

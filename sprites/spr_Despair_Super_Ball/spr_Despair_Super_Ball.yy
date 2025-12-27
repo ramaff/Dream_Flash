@@ -1,5 +1,5 @@
 {
-  "$GMSprite":"",
+  "$GMSprite":"v2",
   "%Name":"spr_Despair_Super_Ball",
   "bboxMode":2,
   "bbox_bottom":124,
@@ -12,7 +12,7 @@
   "edgeFiltering":false,
   "For3D":false,
   "frames":[
-    {"$GMSpriteFrame":"","%Name":"39f3cc0f-7899-41e5-86a2-02d7d21535c6","name":"39f3cc0f-7899-41e5-86a2-02d7d21535c6","resourceType":"GMSpriteFrame","resourceVersion":"2.0",},
+    {"$GMSpriteFrame":"v1","%Name":"39f3cc0f-7899-41e5-86a2-02d7d21535c6","name":"39f3cc0f-7899-41e5-86a2-02d7d21535c6","resourceType":"GMSpriteFrame","resourceVersion":"2.0",},
   ],
   "gridX":0,
   "gridY":0,

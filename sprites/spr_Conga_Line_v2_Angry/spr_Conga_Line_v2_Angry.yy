@@ -1,5 +1,5 @@
 {
-  "$GMSprite":"",
+  "$GMSprite":"v2",
   "%Name":"spr_Conga_Line_v2_Angry",
   "bboxMode":0,
   "bbox_bottom":293,
@@ -12,7 +12,7 @@
   "edgeFiltering":false,
   "For3D":false,
   "frames":[
-    {"$GMSpriteFrame":"","%Name":"a2143796-303e-4cdc-94b5-33fef3607c8f","name":"a2143796-303e-4cdc-94b5-33fef3607c8f","resourceType":"GMSpriteFrame","resourceVersion":"2.0",},
+    {"$GMSpriteFrame":"v1","%Name":"a2143796-303e-4cdc-94b5-33fef3607c8f","name":"a2143796-303e-4cdc-94b5-33fef3607c8f","resourceType":"GMSpriteFrame","resourceVersion":"2.0",},
   ],
   "gridX":0,
   "gridY":0,

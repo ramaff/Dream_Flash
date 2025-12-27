@@ -63,11 +63,11 @@ function scr_Soul_Shot_Expire_Event(){
 				//shot_stats.Shot_Timer = shot_stats.Shot_Life_Span;
 				shot_stats.Shot_Size_Max = shot_stats.Shot_Size;
 				sprite_index = other.sprite_index;
-				direction = point_direction(obj_Soul_Parent.x,obj_Soul_Parent.y,mouse_x, mouse_y) - (shot_stats.Shot_Accuracy / 2) + random(shot_stats.Shot_Accuracy);
+				direction = point_direction(obj_Soul_Parent.x,obj_Soul_Parent.y,obj_Astral_Indicator.x, obj_Astral_Indicator.y) - (shot_stats.Shot_Accuracy / 2) + random(shot_stats.Shot_Accuracy);
 		    } 
 		} else if scr_Chance(15) {
 			var beamseg = 1;
-			var beamdir = point_direction(obj_Soul_Parent.x,obj_Soul_Parent.y,mouse_x, mouse_y) - (shot_stats.Shot_Accuracy / 2) + random(shot_stats.Shot_Accuracy);
+			var beamdir = point_direction(obj_Soul_Parent.x,obj_Soul_Parent.y,obj_Astral_Indicator.x, obj_Astral_Indicator.y) - (shot_stats.Shot_Accuracy / 2) + random(shot_stats.Shot_Accuracy);
 			var curvedir = (-1 + random(2))
 			var beamstop = shot_stats.Shot_Melee
 			var beamxx = lengthdir_x(-6, beamdir)

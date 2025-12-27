@@ -1,5 +1,5 @@
 {
-  "$GMSprite":"",
+  "$GMSprite":"v2",
   "%Name":"spr_Warp_Bomb_Art",
   "bboxMode":0,
   "bbox_bottom":157,
@@ -12,7 +12,7 @@
   "edgeFiltering":false,
   "For3D":false,
   "frames":[
-    {"$GMSpriteFrame":"","%Name":"8db8e2e9-a1c0-4f13-a333-b187f52e84ec","name":"8db8e2e9-a1c0-4f13-a333-b187f52e84ec","resourceType":"GMSpriteFrame","resourceVersion":"2.0",},
+    {"$GMSpriteFrame":"v1","%Name":"8db8e2e9-a1c0-4f13-a333-b187f52e84ec","name":"8db8e2e9-a1c0-4f13-a333-b187f52e84ec","resourceType":"GMSpriteFrame","resourceVersion":"2.0",},
   ],
   "gridX":0,
   "gridY":0,

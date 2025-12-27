@@ -1,5 +1,5 @@
 {
-  "$GMSprite":"",
+  "$GMSprite":"v2",
   "%Name":"spr_King_Of_Beasts",
   "bboxMode":0,
   "bbox_bottom":588,
@@ -12,7 +12,7 @@
   "edgeFiltering":false,
   "For3D":false,
   "frames":[
-    {"$GMSpriteFrame":"","%Name":"206cf45a-0c7b-4663-a63b-56f5e8bf31fc","name":"206cf45a-0c7b-4663-a63b-56f5e8bf31fc","resourceType":"GMSpriteFrame","resourceVersion":"2.0",},
+    {"$GMSpriteFrame":"v1","%Name":"206cf45a-0c7b-4663-a63b-56f5e8bf31fc","name":"206cf45a-0c7b-4663-a63b-56f5e8bf31fc","resourceType":"GMSpriteFrame","resourceVersion":"2.0",},
   ],
   "gridX":0,
   "gridY":0,

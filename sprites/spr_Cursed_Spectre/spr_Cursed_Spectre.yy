@@ -1,5 +1,5 @@
 {
-  "$GMSprite":"",
+  "$GMSprite":"v2",
   "%Name":"spr_Cursed_Spectre",
   "bboxMode":0,
   "bbox_bottom":365,
@@ -12,7 +12,7 @@
   "edgeFiltering":false,
   "For3D":false,
   "frames":[
-    {"$GMSpriteFrame":"","%Name":"9adcfafb-b537-4f5b-8ed3-51c9ecdcb8fc","name":"9adcfafb-b537-4f5b-8ed3-51c9ecdcb8fc","resourceType":"GMSpriteFrame","resourceVersion":"2.0",},
+    {"$GMSpriteFrame":"v1","%Name":"9adcfafb-b537-4f5b-8ed3-51c9ecdcb8fc","name":"9adcfafb-b537-4f5b-8ed3-51c9ecdcb8fc","resourceType":"GMSpriteFrame","resourceVersion":"2.0",},
   ],
   "gridX":0,
   "gridY":0,

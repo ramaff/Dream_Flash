@@ -1,5 +1,5 @@
 {
-  "$GMSprite":"",
+  "$GMSprite":"v2",
   "%Name":"old_Hand_of_the_Accuser",
   "bboxMode":0,
   "bbox_bottom":382,
@@ -12,7 +12,7 @@
   "edgeFiltering":false,
   "For3D":false,
   "frames":[
-    {"$GMSpriteFrame":"","%Name":"9c55640c-e472-4e37-a88e-9450932260b2","name":"9c55640c-e472-4e37-a88e-9450932260b2","resourceType":"GMSpriteFrame","resourceVersion":"2.0",},
+    {"$GMSpriteFrame":"v1","%Name":"9c55640c-e472-4e37-a88e-9450932260b2","name":"9c55640c-e472-4e37-a88e-9450932260b2","resourceType":"GMSpriteFrame","resourceVersion":"2.0",},
   ],
   "gridX":0,
   "gridY":0,

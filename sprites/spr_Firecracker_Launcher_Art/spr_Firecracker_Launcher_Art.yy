@@ -1,5 +1,5 @@
 {
-  "$GMSprite":"",
+  "$GMSprite":"v2",
   "%Name":"spr_Firecracker_Launcher_Art",
   "bboxMode":1,
   "bbox_bottom":163,
@@ -12,7 +12,7 @@
   "edgeFiltering":false,
   "For3D":false,
   "frames":[
-    {"$GMSpriteFrame":"","%Name":"f7bd092b-390e-492a-a3d3-d17f3f19f4ec","name":"f7bd092b-390e-492a-a3d3-d17f3f19f4ec","resourceType":"GMSpriteFrame","resourceVersion":"2.0",},
+    {"$GMSpriteFrame":"v1","%Name":"f7bd092b-390e-492a-a3d3-d17f3f19f4ec","name":"f7bd092b-390e-492a-a3d3-d17f3f19f4ec","resourceType":"GMSpriteFrame","resourceVersion":"2.0",},
   ],
   "gridX":0,
   "gridY":0,

@@ -1,5 +1,5 @@
 {
-  "$GMSprite":"",
+  "$GMSprite":"v2",
   "%Name":"spr_Field_Overlay_Flash",
   "bboxMode":0,
   "bbox_bottom":2047,
@@ -12,7 +12,7 @@
   "edgeFiltering":false,
   "For3D":false,
   "frames":[
-    {"$GMSpriteFrame":"","%Name":"ae523ab4-544d-425c-8058-085e2c648972","name":"ae523ab4-544d-425c-8058-085e2c648972","resourceType":"GMSpriteFrame","resourceVersion":"2.0",},
+    {"$GMSpriteFrame":"v1","%Name":"ae523ab4-544d-425c-8058-085e2c648972","name":"ae523ab4-544d-425c-8058-085e2c648972","resourceType":"GMSpriteFrame","resourceVersion":"2.0",},
   ],
   "gridX":0,
   "gridY":0,

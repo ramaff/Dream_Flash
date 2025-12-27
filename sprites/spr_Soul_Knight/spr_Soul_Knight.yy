@@ -1,5 +1,5 @@
 {
-  "$GMSprite":"",
+  "$GMSprite":"v2",
   "%Name":"spr_Soul_Knight",
   "bboxMode":0,
   "bbox_bottom":157,
@@ -12,8 +12,8 @@
   "edgeFiltering":false,
   "For3D":false,
   "frames":[
-    {"$GMSpriteFrame":"","%Name":"6f9006c1-f8d9-4138-bece-1f715ffe7a09","name":"6f9006c1-f8d9-4138-bece-1f715ffe7a09","resourceType":"GMSpriteFrame","resourceVersion":"2.0",},
-    {"$GMSpriteFrame":"","%Name":"5c492884-6aab-4da6-adb8-8f6d25c38a5e","name":"5c492884-6aab-4da6-adb8-8f6d25c38a5e","resourceType":"GMSpriteFrame","resourceVersion":"2.0",},
+    {"$GMSpriteFrame":"v1","%Name":"6f9006c1-f8d9-4138-bece-1f715ffe7a09","name":"6f9006c1-f8d9-4138-bece-1f715ffe7a09","resourceType":"GMSpriteFrame","resourceVersion":"2.0",},
+    {"$GMSpriteFrame":"v1","%Name":"5c492884-6aab-4da6-adb8-8f6d25c38a5e","name":"5c492884-6aab-4da6-adb8-8f6d25c38a5e","resourceType":"GMSpriteFrame","resourceVersion":"2.0",},
   ],
   "gridX":0,
   "gridY":0,

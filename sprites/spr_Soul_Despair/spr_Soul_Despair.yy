@@ -1,5 +1,5 @@
 {
-  "$GMSprite":"",
+  "$GMSprite":"v2",
   "%Name":"spr_Soul_Despair",
   "bboxMode":0,
   "bbox_bottom":24,
@@ -12,7 +12,7 @@
   "edgeFiltering":false,
   "For3D":false,
   "frames":[
-    {"$GMSpriteFrame":"","%Name":"edd4fc43-b6e2-4d34-8d25-7115b614ac98","name":"edd4fc43-b6e2-4d34-8d25-7115b614ac98","resourceType":"GMSpriteFrame","resourceVersion":"2.0",},
+    {"$GMSpriteFrame":"v1","%Name":"edd4fc43-b6e2-4d34-8d25-7115b614ac98","name":"edd4fc43-b6e2-4d34-8d25-7115b614ac98","resourceType":"GMSpriteFrame","resourceVersion":"2.0",},
   ],
   "gridX":0,
   "gridY":0,

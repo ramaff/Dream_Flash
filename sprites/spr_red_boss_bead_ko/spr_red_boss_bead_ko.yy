@@ -1,5 +1,5 @@
 {
-  "$GMSprite":"",
+  "$GMSprite":"v2",
   "%Name":"spr_red_boss_bead_ko",
   "bboxMode":0,
   "bbox_bottom":219,
@@ -12,7 +12,7 @@
   "edgeFiltering":false,
   "For3D":false,
   "frames":[
-    {"$GMSpriteFrame":"","%Name":"411cac13-d54c-4e8f-aff4-706bd2f8073e","name":"411cac13-d54c-4e8f-aff4-706bd2f8073e","resourceType":"GMSpriteFrame","resourceVersion":"2.0",},
+    {"$GMSpriteFrame":"v1","%Name":"411cac13-d54c-4e8f-aff4-706bd2f8073e","name":"411cac13-d54c-4e8f-aff4-706bd2f8073e","resourceType":"GMSpriteFrame","resourceVersion":"2.0",},
   ],
   "gridX":0,
   "gridY":0,

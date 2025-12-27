@@ -1,5 +1,5 @@
 {
-  "$GMSprite":"",
+  "$GMSprite":"v2",
   "%Name":"old_Deep_Watcher",
   "bboxMode":0,
   "bbox_bottom":416,
@@ -12,7 +12,7 @@
   "edgeFiltering":false,
   "For3D":false,
   "frames":[
-    {"$GMSpriteFrame":"","%Name":"7241c745-8840-4bed-ba63-5aedfdd4bc4c","name":"7241c745-8840-4bed-ba63-5aedfdd4bc4c","resourceType":"GMSpriteFrame","resourceVersion":"2.0",},
+    {"$GMSpriteFrame":"v1","%Name":"7241c745-8840-4bed-ba63-5aedfdd4bc4c","name":"7241c745-8840-4bed-ba63-5aedfdd4bc4c","resourceType":"GMSpriteFrame","resourceVersion":"2.0",},
   ],
   "gridX":0,
   "gridY":0,

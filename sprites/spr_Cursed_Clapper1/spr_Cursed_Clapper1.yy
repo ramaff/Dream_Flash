@@ -1,5 +1,5 @@
 {
-  "$GMSprite":"",
+  "$GMSprite":"v2",
   "%Name":"spr_Cursed_Clapper1",
   "bboxMode":1,
   "bbox_bottom":415,
@@ -12,7 +12,7 @@
   "edgeFiltering":false,
   "For3D":false,
   "frames":[
-    {"$GMSpriteFrame":"","%Name":"505eb0fa-ca8f-47d2-90fe-214c9df4408a","name":"505eb0fa-ca8f-47d2-90fe-214c9df4408a","resourceType":"GMSpriteFrame","resourceVersion":"2.0",},
+    {"$GMSpriteFrame":"v1","%Name":"505eb0fa-ca8f-47d2-90fe-214c9df4408a","name":"505eb0fa-ca8f-47d2-90fe-214c9df4408a","resourceType":"GMSpriteFrame","resourceVersion":"2.0",},
   ],
   "gridX":0,
   "gridY":0,

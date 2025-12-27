@@ -1,5 +1,5 @@
 {
-  "$GMSprite":"",
+  "$GMSprite":"v2",
   "%Name":"spr_Hopeless_Art",
   "bboxMode":0,
   "bbox_bottom":151,
@@ -12,7 +12,7 @@
   "edgeFiltering":false,
   "For3D":false,
   "frames":[
-    {"$GMSpriteFrame":"","%Name":"048641a5-6226-4a0a-bbd0-68c97e92f806","name":"048641a5-6226-4a0a-bbd0-68c97e92f806","resourceType":"GMSpriteFrame","resourceVersion":"2.0",},
+    {"$GMSpriteFrame":"v1","%Name":"048641a5-6226-4a0a-bbd0-68c97e92f806","name":"048641a5-6226-4a0a-bbd0-68c97e92f806","resourceType":"GMSpriteFrame","resourceVersion":"2.0",},
   ],
   "gridX":0,
   "gridY":0,

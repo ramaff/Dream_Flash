@@ -1,5 +1,5 @@
 {
-  "$GMSprite":"",
+  "$GMSprite":"v2",
   "%Name":"spr_Boomerang_Blade_Shot",
   "bboxMode":0,
   "bbox_bottom":135,
@@ -12,7 +12,7 @@
   "edgeFiltering":false,
   "For3D":false,
   "frames":[
-    {"$GMSpriteFrame":"","%Name":"ddbecd85-a460-424e-a05a-00d79a7bf498","name":"ddbecd85-a460-424e-a05a-00d79a7bf498","resourceType":"GMSpriteFrame","resourceVersion":"2.0",},
+    {"$GMSpriteFrame":"v1","%Name":"ddbecd85-a460-424e-a05a-00d79a7bf498","name":"ddbecd85-a460-424e-a05a-00d79a7bf498","resourceType":"GMSpriteFrame","resourceVersion":"2.0",},
   ],
   "gridX":0,
   "gridY":0,

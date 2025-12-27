@@ -94,9 +94,9 @@ for(i = 0; i < extra_shots_amount; i++) {
 				
 				if shot_stats.Shot_Mouse {
 					if instance_exists(other.otarget) {
-						direction = point_direction(other.otarget.x, other.otarget.y,mouse_x, mouse_y);
+						direction = point_direction(other.otarget.x, other.otarget.y,obj_Astral_Indicator.x, obj_Astral_Indicator.y);
 					} else {
-						direction = point_direction(x,y,mouse_x, mouse_y);
+						direction = point_direction(x,y,obj_Astral_Indicator.x, obj_Astral_Indicator.y);
 					}
 					if shot_stats.Shot_Point_Angle || shot_stats.Shot_Point_Angle = 1 {
 						image_angle = direction	

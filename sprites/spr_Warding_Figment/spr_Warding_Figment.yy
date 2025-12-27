@@ -1,5 +1,5 @@
 {
-  "$GMSprite":"",
+  "$GMSprite":"v2",
   "%Name":"spr_Warding_Figment",
   "bboxMode":0,
   "bbox_bottom":119,
@@ -12,7 +12,7 @@
   "edgeFiltering":false,
   "For3D":false,
   "frames":[
-    {"$GMSpriteFrame":"","%Name":"f3180766-aa31-43c8-af09-09ed2d40cf43","name":"f3180766-aa31-43c8-af09-09ed2d40cf43","resourceType":"GMSpriteFrame","resourceVersion":"2.0",},
+    {"$GMSpriteFrame":"v1","%Name":"f3180766-aa31-43c8-af09-09ed2d40cf43","name":"f3180766-aa31-43c8-af09-09ed2d40cf43","resourceType":"GMSpriteFrame","resourceVersion":"2.0",},
   ],
   "gridX":0,
   "gridY":0,

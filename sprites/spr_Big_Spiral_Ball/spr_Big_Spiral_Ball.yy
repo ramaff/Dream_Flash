@@ -1,5 +1,5 @@
 {
-  "$GMSprite":"",
+  "$GMSprite":"v2",
   "%Name":"spr_Big_Spiral_Ball",
   "bboxMode":2,
   "bbox_bottom":112,
@@ -12,7 +12,7 @@
   "edgeFiltering":false,
   "For3D":false,
   "frames":[
-    {"$GMSpriteFrame":"","%Name":"e16d8346-e4fa-43e8-bd6c-ed515b03c8d2","name":"e16d8346-e4fa-43e8-bd6c-ed515b03c8d2","resourceType":"GMSpriteFrame","resourceVersion":"2.0",},
+    {"$GMSpriteFrame":"v1","%Name":"e16d8346-e4fa-43e8-bd6c-ed515b03c8d2","name":"e16d8346-e4fa-43e8-bd6c-ed515b03c8d2","resourceType":"GMSpriteFrame","resourceVersion":"2.0",},
   ],
   "gridX":0,
   "gridY":0,

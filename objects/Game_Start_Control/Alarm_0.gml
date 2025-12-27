@@ -18,6 +18,7 @@ if global.loadrun = 1 {
 	global.doneLoading = 1;
 	
 	scr_Save_Run();
+	
     
 } 
 

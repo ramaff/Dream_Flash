@@ -1,5 +1,5 @@
 {
-  "$GMSprite":"",
+  "$GMSprite":"v2",
   "%Name":"spr_Nightmare_Soul",
   "bboxMode":0,
   "bbox_bottom":122,
@@ -12,7 +12,7 @@
   "edgeFiltering":false,
   "For3D":false,
   "frames":[
-    {"$GMSpriteFrame":"","%Name":"6763c3ce-21ca-4c8f-8232-174882588f04","name":"6763c3ce-21ca-4c8f-8232-174882588f04","resourceType":"GMSpriteFrame","resourceVersion":"2.0",},
+    {"$GMSpriteFrame":"v1","%Name":"6763c3ce-21ca-4c8f-8232-174882588f04","name":"6763c3ce-21ca-4c8f-8232-174882588f04","resourceType":"GMSpriteFrame","resourceVersion":"2.0",},
   ],
   "gridX":0,
   "gridY":0,

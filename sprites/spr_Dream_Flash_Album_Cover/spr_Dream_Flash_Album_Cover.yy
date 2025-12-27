@@ -1,5 +1,5 @@
 {
-  "$GMSprite":"",
+  "$GMSprite":"v2",
   "%Name":"spr_Dream_Flash_Album_Cover",
   "bboxMode":0,
   "bbox_bottom":1599,
@@ -12,7 +12,7 @@
   "edgeFiltering":false,
   "For3D":false,
   "frames":[
-    {"$GMSpriteFrame":"","%Name":"10cb75e0-f3d8-42a0-b5c4-e5fd95d70287","name":"10cb75e0-f3d8-42a0-b5c4-e5fd95d70287","resourceType":"GMSpriteFrame","resourceVersion":"2.0",},
+    {"$GMSpriteFrame":"v1","%Name":"10cb75e0-f3d8-42a0-b5c4-e5fd95d70287","name":"10cb75e0-f3d8-42a0-b5c4-e5fd95d70287","resourceType":"GMSpriteFrame","resourceVersion":"2.0",},
   ],
   "gridX":0,
   "gridY":0,

@@ -1,5 +1,5 @@
 {
-  "$GMSprite":"",
+  "$GMSprite":"v2",
   "%Name":"spr_Plasma_Visor_Art",
   "bboxMode":0,
   "bbox_bottom":156,
@@ -12,7 +12,7 @@
   "edgeFiltering":false,
   "For3D":false,
   "frames":[
-    {"$GMSpriteFrame":"","%Name":"74587fa8-9505-47d8-91cd-2215adad64ba","name":"74587fa8-9505-47d8-91cd-2215adad64ba","resourceType":"GMSpriteFrame","resourceVersion":"2.0",},
+    {"$GMSpriteFrame":"v1","%Name":"74587fa8-9505-47d8-91cd-2215adad64ba","name":"74587fa8-9505-47d8-91cd-2215adad64ba","resourceType":"GMSpriteFrame","resourceVersion":"2.0",},
   ],
   "gridX":0,
   "gridY":0,

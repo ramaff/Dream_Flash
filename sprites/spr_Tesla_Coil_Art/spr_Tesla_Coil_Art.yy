@@ -1,5 +1,5 @@
 {
-  "$GMSprite":"",
+  "$GMSprite":"v2",
   "%Name":"spr_Tesla_Coil_Art",
   "bboxMode":1,
   "bbox_bottom":163,
@@ -12,7 +12,7 @@
   "edgeFiltering":false,
   "For3D":false,
   "frames":[
-    {"$GMSpriteFrame":"","%Name":"8b105d5d-bc64-4d1d-bb8a-32e9dde88f2e","name":"8b105d5d-bc64-4d1d-bb8a-32e9dde88f2e","resourceType":"GMSpriteFrame","resourceVersion":"2.0",},
+    {"$GMSpriteFrame":"v1","%Name":"8b105d5d-bc64-4d1d-bb8a-32e9dde88f2e","name":"8b105d5d-bc64-4d1d-bb8a-32e9dde88f2e","resourceType":"GMSpriteFrame","resourceVersion":"2.0",},
   ],
   "gridX":0,
   "gridY":0,

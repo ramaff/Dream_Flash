@@ -1,4 +1,4 @@
-function scr_W02(teleport_dir = point_direction(x,y,mouse_x,mouse_y)) {
+function scr_W02(teleport_dir = point_direction(x,y,obj_Astral_Indicator.x,obj_Astral_Indicator.y)) {
 	// Teleport After Position Change
 
 	if global.W[02] > 0 {

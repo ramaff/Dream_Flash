@@ -1,3 +1,13 @@
+if InputCheck(INPUT_VERB.SHOOT) {
+	event_perform(ev_mouse, ev_global_left_button)
+}
+if InputPressed(INPUT_VERB.SHOOT) {
+	event_perform(ev_mouse, ev_global_left_press)
+}
+if InputReleased(INPUT_VERB.SHOOT) {
+	event_perform(ev_mouse, ev_global_left_release)
+}
+
 image_alpha -= 1 / (50 + 50 * global.E[14]);
 
 scr_Soul_Particle_Step();

@@ -1,5 +1,5 @@
 {
-  "$GMSprite":"",
+  "$GMSprite":"v2",
   "%Name":"spr_flash_marble_brick_g",
   "bboxMode":0,
   "bbox_bottom":1163,
@@ -12,8 +12,8 @@
   "edgeFiltering":false,
   "For3D":false,
   "frames":[
-    {"$GMSpriteFrame":"","%Name":"2b8c5032-275e-456a-8d4c-db62fdf1b1ae","name":"2b8c5032-275e-456a-8d4c-db62fdf1b1ae","resourceType":"GMSpriteFrame","resourceVersion":"2.0",},
-    {"$GMSpriteFrame":"","%Name":"d71f5f6a-09c3-4e97-9bac-72263755b2c4","name":"d71f5f6a-09c3-4e97-9bac-72263755b2c4","resourceType":"GMSpriteFrame","resourceVersion":"2.0",},
+    {"$GMSpriteFrame":"v1","%Name":"2b8c5032-275e-456a-8d4c-db62fdf1b1ae","name":"2b8c5032-275e-456a-8d4c-db62fdf1b1ae","resourceType":"GMSpriteFrame","resourceVersion":"2.0",},
+    {"$GMSpriteFrame":"v1","%Name":"d71f5f6a-09c3-4e97-9bac-72263755b2c4","name":"d71f5f6a-09c3-4e97-9bac-72263755b2c4","resourceType":"GMSpriteFrame","resourceVersion":"2.0",},
   ],
   "gridX":0,
   "gridY":0,

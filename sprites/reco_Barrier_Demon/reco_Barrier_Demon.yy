@@ -1,5 +1,5 @@
 {
-  "$GMSprite":"",
+  "$GMSprite":"v2",
   "%Name":"reco_Barrier_Demon",
   "bboxMode":0,
   "bbox_bottom":547,
@@ -12,7 +12,7 @@
   "edgeFiltering":false,
   "For3D":false,
   "frames":[
-    {"$GMSpriteFrame":"","%Name":"d3faa17b-4c80-4144-9e8a-923a6e412606","name":"d3faa17b-4c80-4144-9e8a-923a6e412606","resourceType":"GMSpriteFrame","resourceVersion":"2.0",},
+    {"$GMSpriteFrame":"v1","%Name":"d3faa17b-4c80-4144-9e8a-923a6e412606","name":"d3faa17b-4c80-4144-9e8a-923a6e412606","resourceType":"GMSpriteFrame","resourceVersion":"2.0",},
   ],
   "gridX":0,
   "gridY":0,

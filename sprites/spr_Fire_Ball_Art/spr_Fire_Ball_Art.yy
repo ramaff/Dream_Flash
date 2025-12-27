@@ -1,5 +1,5 @@
 {
-  "$GMSprite":"",
+  "$GMSprite":"v2",
   "%Name":"spr_Fire_Ball_Art",
   "bboxMode":0,
   "bbox_bottom":130,
@@ -12,7 +12,7 @@
   "edgeFiltering":false,
   "For3D":false,
   "frames":[
-    {"$GMSpriteFrame":"","%Name":"78ec75e3-811f-456d-abd9-1cd72e07b0b6","name":"78ec75e3-811f-456d-abd9-1cd72e07b0b6","resourceType":"GMSpriteFrame","resourceVersion":"2.0",},
+    {"$GMSpriteFrame":"v1","%Name":"78ec75e3-811f-456d-abd9-1cd72e07b0b6","name":"78ec75e3-811f-456d-abd9-1cd72e07b0b6","resourceType":"GMSpriteFrame","resourceVersion":"2.0",},
   ],
   "gridX":0,
   "gridY":0,

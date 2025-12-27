@@ -1,5 +1,5 @@
 {
-  "$GMSprite":"",
+  "$GMSprite":"v2",
   "%Name":"reco_Wicked_Spectre",
   "bboxMode":0,
   "bbox_bottom":365,
@@ -12,7 +12,7 @@
   "edgeFiltering":false,
   "For3D":false,
   "frames":[
-    {"$GMSpriteFrame":"","%Name":"fd8c137c-574a-4dd9-ac4c-8304a97adee3","name":"fd8c137c-574a-4dd9-ac4c-8304a97adee3","resourceType":"GMSpriteFrame","resourceVersion":"2.0",},
+    {"$GMSpriteFrame":"v1","%Name":"fd8c137c-574a-4dd9-ac4c-8304a97adee3","name":"fd8c137c-574a-4dd9-ac4c-8304a97adee3","resourceType":"GMSpriteFrame","resourceVersion":"2.0",},
   ],
   "gridX":0,
   "gridY":0,

@@ -4,8 +4,8 @@
 
 var click = mouse_check_button_pressed(mb_left);
 
-var mxx = mouse_x //- camera_get_view_x(view);
-var myy = mouse_y //- camera_get_view_y(view);
+var mxx = obj_Astral_Indicator.x 
+var myy = obj_Astral_Indicator.y 
 var xx = x;
 var yy = y;
 

@@ -1,5 +1,5 @@
 {
-  "$GMSprite":"",
+  "$GMSprite":"v2",
   "%Name":"spr_Fire_Trail",
   "bboxMode":2,
   "bbox_bottom":85,
@@ -12,7 +12,7 @@
   "edgeFiltering":false,
   "For3D":false,
   "frames":[
-    {"$GMSpriteFrame":"","%Name":"9302b631-a7a4-497b-a50d-498e111101a7","name":"9302b631-a7a4-497b-a50d-498e111101a7","resourceType":"GMSpriteFrame","resourceVersion":"2.0",},
+    {"$GMSpriteFrame":"v1","%Name":"9302b631-a7a4-497b-a50d-498e111101a7","name":"9302b631-a7a4-497b-a50d-498e111101a7","resourceType":"GMSpriteFrame","resourceVersion":"2.0",},
   ],
   "gridX":0,
   "gridY":0,

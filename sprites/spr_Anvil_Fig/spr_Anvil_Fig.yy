@@ -1,5 +1,5 @@
 {
-  "$GMSprite":"",
+  "$GMSprite":"v2",
   "%Name":"spr_Anvil_Fig",
   "bboxMode":0,
   "bbox_bottom":150,
@@ -12,7 +12,7 @@
   "edgeFiltering":false,
   "For3D":false,
   "frames":[
-    {"$GMSpriteFrame":"","%Name":"bf7d6d96-f3eb-4fb2-b227-41640cf9c838","name":"bf7d6d96-f3eb-4fb2-b227-41640cf9c838","resourceType":"GMSpriteFrame","resourceVersion":"2.0",},
+    {"$GMSpriteFrame":"v1","%Name":"bf7d6d96-f3eb-4fb2-b227-41640cf9c838","name":"bf7d6d96-f3eb-4fb2-b227-41640cf9c838","resourceType":"GMSpriteFrame","resourceVersion":"2.0",},
   ],
   "gridX":0,
   "gridY":0,

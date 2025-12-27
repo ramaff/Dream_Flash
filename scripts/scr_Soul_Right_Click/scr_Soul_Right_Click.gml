@@ -7,14 +7,11 @@ function scr_Soul_Right_Click(teleport_charge = false) {
 	var inside = 0;
 	var onsoul = 0;
 
-	xstar = x;
-	ystar = y;
-
 	if abs(xval) < ((global.roomSizeX / 2) - abs(yval)) and abs(yval) < ((global.roomSizeY / 2) - abs(xval)) {
 	    inside = 1;
 	}
 	
-	if (point_distance(mouse_x, mouse_y, obj_Soul_Parent.x, obj_Soul_Parent.y) <= 80) and (obj_Soul_Parent.sstatecharge >= obj_Soul_Parent.smaxstate) {
+	if (point_distance(obj_Astral_Indicator.x, obj_Astral_Indicator.y, obj_Soul_Parent.x, obj_Soul_Parent.y) <= 80) and (obj_Soul_Parent.sstatecharge >= obj_Soul_Parent.smaxstate) {
 		onsoul = 1;	
 	}
 

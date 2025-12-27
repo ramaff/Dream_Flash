@@ -1,5 +1,5 @@
 {
-  "$GMSprite":"",
+  "$GMSprite":"v2",
   "%Name":"spr_Cognitive_Dissonance_Art",
   "bboxMode":0,
   "bbox_bottom":157,
@@ -12,7 +12,7 @@
   "edgeFiltering":false,
   "For3D":false,
   "frames":[
-    {"$GMSpriteFrame":"","%Name":"7de8a4a3-6b49-42d8-aa20-d5e0f77b2471","name":"7de8a4a3-6b49-42d8-aa20-d5e0f77b2471","resourceType":"GMSpriteFrame","resourceVersion":"2.0",},
+    {"$GMSpriteFrame":"v1","%Name":"7de8a4a3-6b49-42d8-aa20-d5e0f77b2471","name":"7de8a4a3-6b49-42d8-aa20-d5e0f77b2471","resourceType":"GMSpriteFrame","resourceVersion":"2.0",},
   ],
   "gridX":0,
   "gridY":0,

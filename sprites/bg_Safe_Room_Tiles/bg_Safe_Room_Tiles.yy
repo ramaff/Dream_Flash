@@ -1,5 +1,5 @@
 {
-  "$GMSprite":"",
+  "$GMSprite":"v2",
   "%Name":"bg_Safe_Room_Tiles",
   "bboxMode":0,
   "bbox_bottom":191,
@@ -12,7 +12,7 @@
   "edgeFiltering":false,
   "For3D":false,
   "frames":[
-    {"$GMSpriteFrame":"","%Name":"4fcc63a0-59b0-4740-b6d2-c295211bbf69","name":"4fcc63a0-59b0-4740-b6d2-c295211bbf69","resourceType":"GMSpriteFrame","resourceVersion":"2.0",},
+    {"$GMSpriteFrame":"v1","%Name":"4fcc63a0-59b0-4740-b6d2-c295211bbf69","name":"4fcc63a0-59b0-4740-b6d2-c295211bbf69","resourceType":"GMSpriteFrame","resourceVersion":"2.0",},
   ],
   "gridX":0,
   "gridY":0,

@@ -1,5 +1,5 @@
 {
-  "$GMSprite":"",
+  "$GMSprite":"v2",
   "%Name":"spr_Angry_Unrest",
   "bboxMode":0,
   "bbox_bottom":401,
@@ -12,7 +12,7 @@
   "edgeFiltering":false,
   "For3D":false,
   "frames":[
-    {"$GMSpriteFrame":"","%Name":"954ca65b-1c5f-4b3e-ba58-0d1b2f5d4f4e","name":"954ca65b-1c5f-4b3e-ba58-0d1b2f5d4f4e","resourceType":"GMSpriteFrame","resourceVersion":"2.0",},
+    {"$GMSpriteFrame":"v1","%Name":"954ca65b-1c5f-4b3e-ba58-0d1b2f5d4f4e","name":"954ca65b-1c5f-4b3e-ba58-0d1b2f5d4f4e","resourceType":"GMSpriteFrame","resourceVersion":"2.0",},
   ],
   "gridX":0,
   "gridY":0,

@@ -1,5 +1,5 @@
 {
-  "$GMSprite":"",
+  "$GMSprite":"v2",
   "%Name":"spr_Arm_Cannon_Art",
   "bboxMode":0,
   "bbox_bottom":139,
@@ -12,7 +12,7 @@
   "edgeFiltering":false,
   "For3D":false,
   "frames":[
-    {"$GMSpriteFrame":"","%Name":"1c85e508-fbc4-4df7-9398-a10b418fba0b","name":"1c85e508-fbc4-4df7-9398-a10b418fba0b","resourceType":"GMSpriteFrame","resourceVersion":"2.0",},
+    {"$GMSpriteFrame":"v1","%Name":"1c85e508-fbc4-4df7-9398-a10b418fba0b","name":"1c85e508-fbc4-4df7-9398-a10b418fba0b","resourceType":"GMSpriteFrame","resourceVersion":"2.0",},
   ],
   "gridX":0,
   "gridY":0,

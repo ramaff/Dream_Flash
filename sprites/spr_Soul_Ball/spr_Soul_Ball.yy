@@ -1,5 +1,5 @@
 {
-  "$GMSprite":"",
+  "$GMSprite":"v2",
   "%Name":"spr_Soul_Ball",
   "bboxMode":0,
   "bbox_bottom":50,
@@ -12,7 +12,7 @@
   "edgeFiltering":false,
   "For3D":false,
   "frames":[
-    {"$GMSpriteFrame":"","%Name":"c983dd30-2d69-49c6-beb7-5e70e4546054","name":"c983dd30-2d69-49c6-beb7-5e70e4546054","resourceType":"GMSpriteFrame","resourceVersion":"2.0",},
+    {"$GMSpriteFrame":"v1","%Name":"c983dd30-2d69-49c6-beb7-5e70e4546054","name":"c983dd30-2d69-49c6-beb7-5e70e4546054","resourceType":"GMSpriteFrame","resourceVersion":"2.0",},
   ],
   "gridX":0,
   "gridY":0,

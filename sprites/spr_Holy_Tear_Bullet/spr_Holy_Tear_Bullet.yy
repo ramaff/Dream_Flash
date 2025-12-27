@@ -1,5 +1,5 @@
 {
-  "$GMSprite":"",
+  "$GMSprite":"v2",
   "%Name":"spr_Holy_Tear_Bullet",
   "bboxMode":2,
   "bbox_bottom":49,
@@ -12,7 +12,7 @@
   "edgeFiltering":false,
   "For3D":false,
   "frames":[
-    {"$GMSpriteFrame":"","%Name":"e2e4b719-2126-497f-9cc2-1730a4307c89","name":"e2e4b719-2126-497f-9cc2-1730a4307c89","resourceType":"GMSpriteFrame","resourceVersion":"2.0",},
+    {"$GMSpriteFrame":"v1","%Name":"e2e4b719-2126-497f-9cc2-1730a4307c89","name":"e2e4b719-2126-497f-9cc2-1730a4307c89","resourceType":"GMSpriteFrame","resourceVersion":"2.0",},
   ],
   "gridX":0,
   "gridY":0,

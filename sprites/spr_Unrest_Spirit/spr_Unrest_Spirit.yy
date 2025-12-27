@@ -1,5 +1,5 @@
 {
-  "$GMSprite":"",
+  "$GMSprite":"v2",
   "%Name":"spr_Unrest_Spirit",
   "bboxMode":0,
   "bbox_bottom":189,
@@ -12,7 +12,7 @@
   "edgeFiltering":false,
   "For3D":false,
   "frames":[
-    {"$GMSpriteFrame":"","%Name":"a7b903b5-54c3-4dde-b54e-bb1d4bd7db5a","name":"a7b903b5-54c3-4dde-b54e-bb1d4bd7db5a","resourceType":"GMSpriteFrame","resourceVersion":"2.0",},
+    {"$GMSpriteFrame":"v1","%Name":"a7b903b5-54c3-4dde-b54e-bb1d4bd7db5a","name":"a7b903b5-54c3-4dde-b54e-bb1d4bd7db5a","resourceType":"GMSpriteFrame","resourceVersion":"2.0",},
   ],
   "gridX":0,
   "gridY":0,

@@ -1,5 +1,5 @@
 {
-  "$GMSprite":"",
+  "$GMSprite":"v2",
   "%Name":"spr_Gumbo_Amorphous",
   "bboxMode":0,
   "bbox_bottom":258,
@@ -12,7 +12,7 @@
   "edgeFiltering":false,
   "For3D":false,
   "frames":[
-    {"$GMSpriteFrame":"","%Name":"2fa76a5e-b394-4def-832f-66460bf5b5ec","name":"2fa76a5e-b394-4def-832f-66460bf5b5ec","resourceType":"GMSpriteFrame","resourceVersion":"2.0",},
+    {"$GMSpriteFrame":"v1","%Name":"2fa76a5e-b394-4def-832f-66460bf5b5ec","name":"2fa76a5e-b394-4def-832f-66460bf5b5ec","resourceType":"GMSpriteFrame","resourceVersion":"2.0",},
   ],
   "gridX":0,
   "gridY":0,

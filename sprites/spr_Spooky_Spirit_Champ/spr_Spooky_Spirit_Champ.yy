@@ -1,5 +1,5 @@
 {
-  "$GMSprite":"",
+  "$GMSprite":"v2",
   "%Name":"spr_Spooky_Spirit_Champ",
   "bboxMode":0,
   "bbox_bottom":64,
@@ -12,7 +12,7 @@
   "edgeFiltering":false,
   "For3D":false,
   "frames":[
-    {"$GMSpriteFrame":"","%Name":"b6e42e00-301a-4cb8-b3b9-79f3d3534a51","name":"b6e42e00-301a-4cb8-b3b9-79f3d3534a51","resourceType":"GMSpriteFrame","resourceVersion":"2.0",},
+    {"$GMSpriteFrame":"v1","%Name":"b6e42e00-301a-4cb8-b3b9-79f3d3534a51","name":"b6e42e00-301a-4cb8-b3b9-79f3d3534a51","resourceType":"GMSpriteFrame","resourceVersion":"2.0",},
   ],
   "gridX":0,
   "gridY":0,

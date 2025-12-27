@@ -1,5 +1,5 @@
 {
-  "$GMSprite":"",
+  "$GMSprite":"v2",
   "%Name":"spr_Poison_Status_Effect_Bar_old",
   "bboxMode":0,
   "bbox_bottom":175,
@@ -12,8 +12,8 @@
   "edgeFiltering":false,
   "For3D":false,
   "frames":[
-    {"$GMSpriteFrame":"","%Name":"421e8b20-fbad-4287-af37-ab847f0f44da","name":"421e8b20-fbad-4287-af37-ab847f0f44da","resourceType":"GMSpriteFrame","resourceVersion":"2.0",},
-    {"$GMSpriteFrame":"","%Name":"0c11f11f-e580-4e9b-bfba-4b9d30f6ba5a","name":"0c11f11f-e580-4e9b-bfba-4b9d30f6ba5a","resourceType":"GMSpriteFrame","resourceVersion":"2.0",},
+    {"$GMSpriteFrame":"v1","%Name":"421e8b20-fbad-4287-af37-ab847f0f44da","name":"421e8b20-fbad-4287-af37-ab847f0f44da","resourceType":"GMSpriteFrame","resourceVersion":"2.0",},
+    {"$GMSpriteFrame":"v1","%Name":"0c11f11f-e580-4e9b-bfba-4b9d30f6ba5a","name":"0c11f11f-e580-4e9b-bfba-4b9d30f6ba5a","resourceType":"GMSpriteFrame","resourceVersion":"2.0",},
   ],
   "gridX":0,
   "gridY":0,

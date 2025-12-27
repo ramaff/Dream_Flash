@@ -1,5 +1,5 @@
 {
-  "$GMSprite":"",
+  "$GMSprite":"v2",
   "%Name":"spr_Sand_Ball",
   "bboxMode":2,
   "bbox_bottom":68,
@@ -12,7 +12,7 @@
   "edgeFiltering":false,
   "For3D":false,
   "frames":[
-    {"$GMSpriteFrame":"","%Name":"554ea7bf-4471-4da3-9f01-973713c54fd6","name":"554ea7bf-4471-4da3-9f01-973713c54fd6","resourceType":"GMSpriteFrame","resourceVersion":"2.0",},
+    {"$GMSpriteFrame":"v1","%Name":"554ea7bf-4471-4da3-9f01-973713c54fd6","name":"554ea7bf-4471-4da3-9f01-973713c54fd6","resourceType":"GMSpriteFrame","resourceVersion":"2.0",},
   ],
   "gridX":0,
   "gridY":0,

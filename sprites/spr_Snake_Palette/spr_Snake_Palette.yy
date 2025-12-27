@@ -1,5 +1,5 @@
 {
-  "$GMSprite":"",
+  "$GMSprite":"v2",
   "%Name":"spr_Snake_Palette",
   "bboxMode":0,
   "bbox_bottom":31,
@@ -12,7 +12,7 @@
   "edgeFiltering":false,
   "For3D":false,
   "frames":[
-    {"$GMSpriteFrame":"","%Name":"ddf8c69d-c9ef-412e-b90a-0a5d5eac6fc4","name":"ddf8c69d-c9ef-412e-b90a-0a5d5eac6fc4","resourceType":"GMSpriteFrame","resourceVersion":"2.0",},
+    {"$GMSpriteFrame":"v1","%Name":"ddf8c69d-c9ef-412e-b90a-0a5d5eac6fc4","name":"ddf8c69d-c9ef-412e-b90a-0a5d5eac6fc4","resourceType":"GMSpriteFrame","resourceVersion":"2.0",},
   ],
   "gridX":0,
   "gridY":0,

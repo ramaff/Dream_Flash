@@ -1,5 +1,5 @@
 {
-  "$GMSprite":"",
+  "$GMSprite":"v2",
   "%Name":"old_Soaring_Sorrows",
   "bboxMode":0,
   "bbox_bottom":160,
@@ -12,7 +12,7 @@
   "edgeFiltering":false,
   "For3D":false,
   "frames":[
-    {"$GMSpriteFrame":"","%Name":"5df674fd-7c3a-488f-8511-792405e17480","name":"5df674fd-7c3a-488f-8511-792405e17480","resourceType":"GMSpriteFrame","resourceVersion":"2.0",},
+    {"$GMSpriteFrame":"v1","%Name":"5df674fd-7c3a-488f-8511-792405e17480","name":"5df674fd-7c3a-488f-8511-792405e17480","resourceType":"GMSpriteFrame","resourceVersion":"2.0",},
   ],
   "gridX":0,
   "gridY":0,

@@ -1,5 +1,5 @@
 {
-  "$GMSprite":"",
+  "$GMSprite":"v2",
   "%Name":"spr_nightmare_brick_g",
   "bboxMode":0,
   "bbox_bottom":1149,
@@ -12,7 +12,7 @@
   "edgeFiltering":false,
   "For3D":false,
   "frames":[
-    {"$GMSpriteFrame":"","%Name":"3dc9ea78-2940-4c75-bb6e-5f1191393579","name":"3dc9ea78-2940-4c75-bb6e-5f1191393579","resourceType":"GMSpriteFrame","resourceVersion":"2.0",},
+    {"$GMSpriteFrame":"v1","%Name":"3dc9ea78-2940-4c75-bb6e-5f1191393579","name":"3dc9ea78-2940-4c75-bb6e-5f1191393579","resourceType":"GMSpriteFrame","resourceVersion":"2.0",},
   ],
   "gridX":0,
   "gridY":0,

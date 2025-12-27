@@ -1,5 +1,5 @@
 {
-  "$GMSprite":"",
+  "$GMSprite":"v2",
   "%Name":"reco_Masked_Paranoia_Spirit",
   "bboxMode":0,
   "bbox_bottom":303,
@@ -12,7 +12,7 @@
   "edgeFiltering":false,
   "For3D":false,
   "frames":[
-    {"$GMSpriteFrame":"","%Name":"4e2f122e-f758-4d2b-a607-54b71aa398e0","name":"4e2f122e-f758-4d2b-a607-54b71aa398e0","resourceType":"GMSpriteFrame","resourceVersion":"2.0",},
+    {"$GMSpriteFrame":"v1","%Name":"4e2f122e-f758-4d2b-a607-54b71aa398e0","name":"4e2f122e-f758-4d2b-a607-54b71aa398e0","resourceType":"GMSpriteFrame","resourceVersion":"2.0",},
   ],
   "gridX":0,
   "gridY":0,

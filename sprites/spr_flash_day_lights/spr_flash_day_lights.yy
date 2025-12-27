@@ -1,5 +1,5 @@
 {
-  "$GMSprite":"",
+  "$GMSprite":"v2",
   "%Name":"spr_flash_day_lights",
   "bboxMode":0,
   "bbox_bottom":0,
@@ -12,7 +12,7 @@
   "edgeFiltering":false,
   "For3D":false,
   "frames":[
-    {"$GMSpriteFrame":"","%Name":"61ed197e-eca9-469b-90f1-9a8d7b2e9f7b","name":"61ed197e-eca9-469b-90f1-9a8d7b2e9f7b","resourceType":"GMSpriteFrame","resourceVersion":"2.0",},
+    {"$GMSpriteFrame":"v1","%Name":"61ed197e-eca9-469b-90f1-9a8d7b2e9f7b","name":"61ed197e-eca9-469b-90f1-9a8d7b2e9f7b","resourceType":"GMSpriteFrame","resourceVersion":"2.0",},
   ],
   "gridX":0,
   "gridY":0,

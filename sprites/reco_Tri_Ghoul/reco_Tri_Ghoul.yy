@@ -1,5 +1,5 @@
 {
-  "$GMSprite":"",
+  "$GMSprite":"v2",
   "%Name":"reco_Tri_Ghoul",
   "bboxMode":0,
   "bbox_bottom":305,
@@ -12,7 +12,7 @@
   "edgeFiltering":false,
   "For3D":false,
   "frames":[
-    {"$GMSpriteFrame":"","%Name":"4d721aa5-58a5-41c9-9e74-f08c88cea8a3","name":"4d721aa5-58a5-41c9-9e74-f08c88cea8a3","resourceType":"GMSpriteFrame","resourceVersion":"2.0",},
+    {"$GMSpriteFrame":"v1","%Name":"4d721aa5-58a5-41c9-9e74-f08c88cea8a3","name":"4d721aa5-58a5-41c9-9e74-f08c88cea8a3","resourceType":"GMSpriteFrame","resourceVersion":"2.0",},
   ],
   "gridX":0,
   "gridY":0,

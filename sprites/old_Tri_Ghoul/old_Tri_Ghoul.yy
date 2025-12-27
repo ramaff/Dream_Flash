@@ -1,5 +1,5 @@
 {
-  "$GMSprite":"",
+  "$GMSprite":"v2",
   "%Name":"old_Tri_Ghoul",
   "bboxMode":0,
   "bbox_bottom":87,
@@ -12,8 +12,8 @@
   "edgeFiltering":false,
   "For3D":false,
   "frames":[
-    {"$GMSpriteFrame":"","%Name":"8488bf94-591f-471f-a5b3-b71078362ecf","name":"8488bf94-591f-471f-a5b3-b71078362ecf","resourceType":"GMSpriteFrame","resourceVersion":"2.0",},
-    {"$GMSpriteFrame":"","%Name":"abf9e98e-56b4-4541-9153-0be590462876","name":"abf9e98e-56b4-4541-9153-0be590462876","resourceType":"GMSpriteFrame","resourceVersion":"2.0",},
+    {"$GMSpriteFrame":"v1","%Name":"8488bf94-591f-471f-a5b3-b71078362ecf","name":"8488bf94-591f-471f-a5b3-b71078362ecf","resourceType":"GMSpriteFrame","resourceVersion":"2.0",},
+    {"$GMSpriteFrame":"v1","%Name":"abf9e98e-56b4-4541-9153-0be590462876","name":"abf9e98e-56b4-4541-9153-0be590462876","resourceType":"GMSpriteFrame","resourceVersion":"2.0",},
   ],
   "gridX":0,
   "gridY":0,

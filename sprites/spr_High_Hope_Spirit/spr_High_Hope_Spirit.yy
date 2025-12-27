@@ -1,5 +1,5 @@
 {
-  "$GMSprite":"",
+  "$GMSprite":"v2",
   "%Name":"spr_High_Hope_Spirit",
   "bboxMode":0,
   "bbox_bottom":523,
@@ -12,7 +12,7 @@
   "edgeFiltering":false,
   "For3D":false,
   "frames":[
-    {"$GMSpriteFrame":"","%Name":"87bf17c9-b834-4955-bd36-059d35bdfca2","name":"87bf17c9-b834-4955-bd36-059d35bdfca2","resourceType":"GMSpriteFrame","resourceVersion":"2.0",},
+    {"$GMSpriteFrame":"v1","%Name":"87bf17c9-b834-4955-bd36-059d35bdfca2","name":"87bf17c9-b834-4955-bd36-059d35bdfca2","resourceType":"GMSpriteFrame","resourceVersion":"2.0",},
   ],
   "gridX":0,
   "gridY":0,

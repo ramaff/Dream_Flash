@@ -1,5 +1,5 @@
 {
-  "$GMSprite":"",
+  "$GMSprite":"v2",
   "%Name":"spr_Trash_Terrestrial",
   "bboxMode":0,
   "bbox_bottom":110,
@@ -12,7 +12,7 @@
   "edgeFiltering":false,
   "For3D":false,
   "frames":[
-    {"$GMSpriteFrame":"","%Name":"54474e4d-ee86-4e86-983a-34991c58c083","name":"54474e4d-ee86-4e86-983a-34991c58c083","resourceType":"GMSpriteFrame","resourceVersion":"2.0",},
+    {"$GMSpriteFrame":"v1","%Name":"54474e4d-ee86-4e86-983a-34991c58c083","name":"54474e4d-ee86-4e86-983a-34991c58c083","resourceType":"GMSpriteFrame","resourceVersion":"2.0",},
   ],
   "gridX":0,
   "gridY":0,

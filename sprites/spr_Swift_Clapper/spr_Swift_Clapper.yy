@@ -1,5 +1,5 @@
 {
-  "$GMSprite":"",
+  "$GMSprite":"v2",
   "%Name":"spr_Swift_Clapper",
   "bboxMode":0,
   "bbox_bottom":279,
@@ -12,7 +12,7 @@
   "edgeFiltering":false,
   "For3D":false,
   "frames":[
-    {"$GMSpriteFrame":"","%Name":"f20bfdb8-c77d-4312-913a-f2b17a932806","name":"f20bfdb8-c77d-4312-913a-f2b17a932806","resourceType":"GMSpriteFrame","resourceVersion":"2.0",},
+    {"$GMSpriteFrame":"v1","%Name":"f20bfdb8-c77d-4312-913a-f2b17a932806","name":"f20bfdb8-c77d-4312-913a-f2b17a932806","resourceType":"GMSpriteFrame","resourceVersion":"2.0",},
   ],
   "gridX":0,
   "gridY":0,

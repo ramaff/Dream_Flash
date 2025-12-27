@@ -1,5 +1,5 @@
 {
-  "$GMSprite":"",
+  "$GMSprite":"v2",
   "%Name":"spr_Fruit_Of_Labor_Art",
   "bboxMode":0,
   "bbox_bottom":119,
@@ -12,7 +12,7 @@
   "edgeFiltering":false,
   "For3D":false,
   "frames":[
-    {"$GMSpriteFrame":"","%Name":"9000f2e3-cc74-4869-995d-c3775edc9fc2","name":"9000f2e3-cc74-4869-995d-c3775edc9fc2","resourceType":"GMSpriteFrame","resourceVersion":"2.0",},
+    {"$GMSpriteFrame":"v1","%Name":"9000f2e3-cc74-4869-995d-c3775edc9fc2","name":"9000f2e3-cc74-4869-995d-c3775edc9fc2","resourceType":"GMSpriteFrame","resourceVersion":"2.0",},
   ],
   "gridX":0,
   "gridY":0,

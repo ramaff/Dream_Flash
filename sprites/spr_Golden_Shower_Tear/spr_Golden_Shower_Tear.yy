@@ -1,5 +1,5 @@
 {
-  "$GMSprite":"",
+  "$GMSprite":"v2",
   "%Name":"spr_Golden_Shower_Tear",
   "bboxMode":2,
   "bbox_bottom":49,
@@ -12,7 +12,7 @@
   "edgeFiltering":false,
   "For3D":false,
   "frames":[
-    {"$GMSpriteFrame":"","%Name":"8b96afed-895d-4406-a5c7-ea0de4e92de3","name":"8b96afed-895d-4406-a5c7-ea0de4e92de3","resourceType":"GMSpriteFrame","resourceVersion":"2.0",},
+    {"$GMSpriteFrame":"v1","%Name":"8b96afed-895d-4406-a5c7-ea0de4e92de3","name":"8b96afed-895d-4406-a5c7-ea0de4e92de3","resourceType":"GMSpriteFrame","resourceVersion":"2.0",},
   ],
   "gridX":0,
   "gridY":0,

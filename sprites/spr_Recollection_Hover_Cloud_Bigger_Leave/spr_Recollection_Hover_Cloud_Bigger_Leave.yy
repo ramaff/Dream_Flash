@@ -1,5 +1,5 @@
 {
-  "$GMSprite":"",
+  "$GMSprite":"v2",
   "%Name":"spr_Recollection_Hover_Cloud_Bigger_Leave",
   "bboxMode":0,
   "bbox_bottom":277,
@@ -12,9 +12,9 @@
   "edgeFiltering":false,
   "For3D":false,
   "frames":[
-    {"$GMSpriteFrame":"","%Name":"75f99b8a-c0b2-43de-932e-fa24bf22c314","name":"75f99b8a-c0b2-43de-932e-fa24bf22c314","resourceType":"GMSpriteFrame","resourceVersion":"2.0",},
-    {"$GMSpriteFrame":"","%Name":"05cfc1ee-6387-4a54-8bd9-fae817921fb4","name":"05cfc1ee-6387-4a54-8bd9-fae817921fb4","resourceType":"GMSpriteFrame","resourceVersion":"2.0",},
-    {"$GMSpriteFrame":"","%Name":"28a91c58-7e3b-45fd-a275-40789298e4eb","name":"28a91c58-7e3b-45fd-a275-40789298e4eb","resourceType":"GMSpriteFrame","resourceVersion":"2.0",},
+    {"$GMSpriteFrame":"v1","%Name":"75f99b8a-c0b2-43de-932e-fa24bf22c314","name":"75f99b8a-c0b2-43de-932e-fa24bf22c314","resourceType":"GMSpriteFrame","resourceVersion":"2.0",},
+    {"$GMSpriteFrame":"v1","%Name":"05cfc1ee-6387-4a54-8bd9-fae817921fb4","name":"05cfc1ee-6387-4a54-8bd9-fae817921fb4","resourceType":"GMSpriteFrame","resourceVersion":"2.0",},
+    {"$GMSpriteFrame":"v1","%Name":"28a91c58-7e3b-45fd-a275-40789298e4eb","name":"28a91c58-7e3b-45fd-a275-40789298e4eb","resourceType":"GMSpriteFrame","resourceVersion":"2.0",},
   ],
   "gridX":0,
   "gridY":0,

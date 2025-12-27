@@ -1,5 +1,5 @@
 {
-  "$GMSprite":"",
+  "$GMSprite":"v2",
   "%Name":"spr_Conga_Line_Dead",
   "bboxMode":0,
   "bbox_bottom":335,
@@ -12,7 +12,7 @@
   "edgeFiltering":false,
   "For3D":false,
   "frames":[
-    {"$GMSpriteFrame":"","%Name":"b88f7881-a8bc-4840-8f3e-b4a6c412a545","name":"b88f7881-a8bc-4840-8f3e-b4a6c412a545","resourceType":"GMSpriteFrame","resourceVersion":"2.0",},
+    {"$GMSpriteFrame":"v1","%Name":"b88f7881-a8bc-4840-8f3e-b4a6c412a545","name":"b88f7881-a8bc-4840-8f3e-b4a6c412a545","resourceType":"GMSpriteFrame","resourceVersion":"2.0",},
   ],
   "gridX":0,
   "gridY":0,
