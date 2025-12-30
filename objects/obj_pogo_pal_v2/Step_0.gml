@@ -29,7 +29,7 @@ if active_attack_delay <= 0 and active_attack_cooldown <= 0 and active_attack_du
     }
 	if active_attack = 2 {
 		// Setup how many attacks per boss move, delay, etc
-		scr_Boss_Attack_Time_Setup_v2(90, 60, 1, 0, 0, 30);
+		scr_Boss_Attack_Time_Setup_v2(90, 60, 1, 0, 0, 40);
 		
 		scr_Boss_Jump_Setup_v2(0, 4 * bossmovespeed, x, y);
 		
@@ -178,7 +178,7 @@ if active_attack = 1 {
 	}
 } else if active_attack = 2 {
 	var _hold_frame = 2;
-	scr_Boss_Attack_Sprite_v2(spr_pogo_pal_v2_large_leap, _hold_frame, 3, 12, 20);
+	scr_Boss_Attack_Sprite_v2(spr_pogo_pal_v2_large_leap, _hold_frame, 3, 12, 40);
 	if image_index = _hold_frame {
 		scr_Boss_Wobble("Horizontal", 2, 0.4, 0)	
 	}
