@@ -14,6 +14,7 @@ function scr_Settings_Status_Store() {
 	global.gameFullscreen = 0;
 	global.gameBloomShader = 1;
 	global.level_up_camera_lock = 1;
+	global.game_controller_gryo = 1;
 	
 	global.gameScreenShake = 1;
 	global.gameParticles = 1;

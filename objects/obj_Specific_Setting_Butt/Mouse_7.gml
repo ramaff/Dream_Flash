@@ -17,8 +17,8 @@ if global.layerdeep = 2 {
 	_cursor.menu_grid = []
     
     if category = 1 {
-		_max_i = 3;
-        for(i = 1; i <= 4; i++) {
+		_max_i = 4;
+        for(i = 1; i <= 5; i++) {
 			if i != 4 {
 				with instance_create(camera_get_view_x(view) + camera_get_view_width(view) / 2 - 32 + 128,camera_get_view_y(view) + 96 * i,obj_Option_Button) {
 	                type = i;

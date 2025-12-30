@@ -35,7 +35,7 @@ if (file_exists("saverun.sav")) {
 			xx = 1;
 			yy = 0;
 			target_button = _butt2;
-			InputDeviceGetAnyGamepadConnected() {
+			if InputDeviceGetAnyGamepadConnected() {
 				event_user(1);
 			}
 		}

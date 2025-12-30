@@ -156,7 +156,7 @@ if global.totalhearts >= 1 {
 		heart[i,4] = ((heartHea * ((10 + obj_Soul_Parent.shpfactor) / 10)) + obj_Soul_Parent.shpadd + scr_Class_Stat_Health_Cap_Increase());
 		
         if heart[i,2] != 7 /*and heart[i,2] != 103*/ {
-            if global.bosscount > 0 {
+            if !scr_Room_Leavable() {
                 heart[i,3] += obj_Soul_Parent.shealthregenfactor * heartReg * ((10 + obj_Soul_Parent.shealthregenadd) / 10) * scr_Class_Stat_Health_Regen_Multiplier() / 200;   
             } else {
                 heart[i,3] += obj_Soul_Parent.shealthregenfactor * heartReg * ((10 + obj_Soul_Parent.shealthregenadd) / 10) * scr_Class_Stat_Health_Regen_Multiplier() * 5;   

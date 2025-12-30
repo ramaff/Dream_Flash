@@ -70,7 +70,7 @@ if active_attack_delay <= 0 and pattern_cooldown <= 0 and pattern_count > 0 {
 		scr_Jump_Movement_v2(4);	
 		
 		if pattern_count = 1 {
-			scr_Boss_Stretch("Horizontal", 1);
+			scr_Boss_Stretch("Horizontal", 0.5);
 			attack_stats.bullet_direction = scr_Boss_Bullet_Direction_Formula(direction, 30)
 			attack_stats.bullet_count = 2;
 			attack_stats.bullet_spread = 180;
@@ -178,7 +178,7 @@ if active_attack = 1 {
 	}
 } else if active_attack = 2 {
 	var _hold_frame = 2;
-	scr_Boss_Attack_Sprite_v2(spr_pogo_pal_v2_large_leap, _hold_frame, 3, 6, 20);
+	scr_Boss_Attack_Sprite_v2(spr_pogo_pal_v2_large_leap, _hold_frame, 3, 12, 20);
 	if image_index = _hold_frame {
 		scr_Boss_Wobble("Horizontal", 2, 0.4, 0)	
 	}
