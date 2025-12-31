@@ -27,11 +27,11 @@ if active_attack = 3 {
 if active_attack_delay <= 0 and active_attack_cooldown <= 0 and active_attack_duration <= 0 {
     
 	// Pick a random attack to do
-	active_attack = choose(1, 1, 1, 2, 3);
+	active_attack = choose(1, 1, 1, 1, 2, 3);
 	
     if active_attack = 1 {
 		// Setup how many attacks per boss move, delay, etc
-		scr_Boss_Attack_Time_Setup_v2(1, 50, 1, 60, 30, 40);
+		scr_Boss_Attack_Time_Setup_v2(1, 50, 1, 60, 10, 40);
 		
 		// Can set up the initial pattern direction
 		// patternDirection = scr_Soul_Point();
@@ -73,7 +73,7 @@ if active_attack_delay <= 0 and pattern_cooldown <= 0 and pattern_count > 0 {
 		attack_stats.bullet_size = 0.55;
 		attack_stats.bullet_count = 1;
 		attack_stats.bulle_life_span = 270;
-		attack_stats.bullet_speed = (2.3 + random(0.6)) * bossbulletspeed
+		attack_stats.bullet_speed = (2.1 + random(0.5)) * bossbulletspeed
 		attack_stats.homing_speed = 3;
 		
 		attack_stats.bullet_part = 1;
