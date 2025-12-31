@@ -103,7 +103,7 @@ if abs(type) = 11 and category = 4 {
     
 	size = size mod 11
 	if size < 0 {
-		size += 11;	
+		size += 11;
 	}
 
    scr_Game_Zoom((540 + (90 * size))/540);

@@ -53,8 +53,8 @@ function scr_Boss_Choose(roomNum, exclude, difficultyAdd = 0) {
 	var _state_pool = [81,82,83,84,86,87,89,90]
 	
 	if global.currentchapter = 1 {
-	    _base_pool = [1,3,5,9,12,18,19,20,24,25,37,42,44,57,58,98]
-		_mini_boss_pool = [13, 14, 16, 43, 59, 61, 62]
+	    _base_pool = [1,3,5,9,12,18,19,20,24,25,42,44,57,58,98]
+		_mini_boss_pool = [13, 14, 16, 37, 43, 59, 61, 62]
 		
 	}
 	if global.currentchapter = 2 {
@@ -389,9 +389,9 @@ function scr_Boss_Choose(roomNum, exclude, difficultyAdd = 0) {
 	}
 	if bossform = 37.1 // Jackhamster
 	{
-	    bosstype = obj_Jackhamster;
-	    difficulty = 3;
-	    global.champ = choose(0,1);
+	    bosstype = obj_pogo_pal_v2
+	    difficulty = 2;
+	    global.champ = 0
 	}
 	if bossform = 38.1 // Crush
 	{
