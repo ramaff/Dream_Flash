@@ -2,6 +2,10 @@
 // https://help.yoyogames.com/hc/en-us/articles/360005277377 for more information
 function scr_Boss_Height_Bob(_height_range = 40, _duration_time = 1, _offset = 0){
 	
+	if boss_height < boss_static_height and state = states.normal {
+		boss_height = lerp(boss_height, boss_static_height, 0.1)	
+	}
+	
 	var _c_height = boss_height
 
 	var _h_velocity = 60;

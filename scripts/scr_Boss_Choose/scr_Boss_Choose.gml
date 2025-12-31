@@ -390,7 +390,7 @@ function scr_Boss_Choose(roomNum, exclude, difficultyAdd = 0) {
 	if bossform = 37.1 // Jackhamster
 	{
 	    bosstype = obj_pogo_pal_v2
-	    difficulty = 2;
+	    difficulty = 1.5;
 	    global.champ = 0
 	}
 	if bossform = 38.1 // Crush
