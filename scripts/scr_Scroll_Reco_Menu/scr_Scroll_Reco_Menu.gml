@@ -30,10 +30,10 @@ function scr_Scroll_Reco_Menu(_target_butt){
 	with (obj_Recollection_Butt) {
 		event_perform(ev_step, 0)
 		event_perform(ev_draw, 0)
-		event_perform(ev_mouse, ev_left_press)
+		event_perform(ev_mouse, ev_left_release)
 	}
 	with (_target_butt) {
-		event_perform(ev_mouse, ev_left_press)
+		event_perform(ev_mouse, ev_left_release)
 	}
 
 }
