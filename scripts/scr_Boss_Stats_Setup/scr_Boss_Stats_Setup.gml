@@ -21,6 +21,7 @@ function scr_Boss_Stats_Setup(_version=1) {
 	bossattackspeed = 1;
 		
 	boss_height = 0;
+	boss_static_height = 0;
 	if _version = 1 {
 		bossHeight = 0;	
 	}

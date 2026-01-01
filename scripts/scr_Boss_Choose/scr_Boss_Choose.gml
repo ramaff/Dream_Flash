@@ -47,28 +47,14 @@ function scr_Boss_Choose(roomNum, exclude, difficultyAdd = 0) {
 	difficulty = 0;
 
 	bosstype = noone;
-
-	/*
-	chapter1 = [1,3,5,9,12,13,14,16,18,19,20,24,25,37,42,43,98];
-	//chapter1_2 = [];
-	chapter2 = [2,3,6,10,14,17,20,23,26,27,32,34,35,36,38,45,48,50,64];
-	//chapter2_3 = [2];
-	chapter3 = [2,4,7,11,15,21,22,26,28,29,30,31,33,41,45,50,56,65];
-	//chapter3_4 = [];
-	chapter4 = [8,21,29,30,40,46,47,49];
-	statepool = choose(81,82,83,85,87);
-	
-	bosspool = chapter1 + statepool
-	bossform = choose(bosspool)
-	*/
 	
 	var _base_pool = []
 	var _mini_boss_pool = []
 	var _state_pool = [81,82,83,84,86,87,89,90]
 	
 	if global.currentchapter = 1 {
-	    _base_pool = [1,3,5,9,12,14,18,19,20,24,25,37,42,44,57,58,98]
-		_mini_boss_pool = [13, 16, 43, 59, 61, 62]
+	    _base_pool = [1,3,5,9,12,18,19,20,24,25,42,44,57,58,98]
+		_mini_boss_pool = [13, 14, 16, 37, 43, 59, 61, 62]
 		
 	}
 	if global.currentchapter = 2 {
@@ -93,37 +79,10 @@ function scr_Boss_Choose(roomNum, exclude, difficultyAdd = 0) {
 	
 	var _minion_picked = false
 	
-	if array_length(_mini_boss_pool) > 0 and scr_Chance(3.5) {
+	if array_length(_mini_boss_pool) > 0 and scr_Chance(3) {
 		_minion_picked = true;
 		bossform = _mini_boss_pool[irandom(array_length(_mini_boss_pool) - 1)]
 	}
-
-	/*
-	if global.currentchapter = 1 {
-	    bossform = choose(1,3,5,9,12,13,14,16,18,19,20,24,25,37,42,43,44,57,58,98);
-		
-		sboss = scr_Chance(34);
-	}
-	if global.currentchapter = 2 {
-	    bossform = choose(2,3,6,10,14,17,20,23,26,27,32,34,35,36,38,45,48,64);
-		
-		sboss = scr_Chance(18);
-	}
-	if global.currentchapter = 3 {
-	    bossform = choose(2,4,7,11,15,22,26,28,29,30,31,33,39,41,45,50,56,65);
-		
-		sboss = scr_Chance(15);
-	}
-	if global.currentchapter >= 4 {
-	    bossform = choose(4,8,21,29,30,40,46,47,49,61);
-		
-		sboss = scr_Chance(5);
-	}
-	
-	if sboss = true {
-		bossform = choose(81,82,83,84,86,87,89,90);
-	}*/
-	
 
 	bossform += 0.1;
 
@@ -247,9 +206,15 @@ function scr_Boss_Choose(roomNum, exclude, difficultyAdd = 0) {
 
 	if bossform = 14.1 // Spooked Spirit
 	{
-	    bosstype = obj_Spooked_Spirit;
-	    difficulty = 4;
-	    global.champ = choose(0,1,2,8);
+		if global.currentchapter = 1 {
+			bosstype = obj_frightful_spirit_v2;
+			difficulty = 2;
+			global.champ = 0;
+		} else {
+			bosstype = obj_Spooked_Spirit;
+			difficulty = 4;
+			global.champ = choose(1,2,8);
+		}
 		//global.champ = 2;
 	}
 
@@ -424,9 +389,9 @@ function scr_Boss_Choose(roomNum, exclude, difficultyAdd = 0) {
 	}
 	if bossform = 37.1 // Jackhamster
 	{
-	    bosstype = obj_Jackhamster;
-	    difficulty = 3;
-	    global.champ = choose(0,1);
+	    bosstype = obj_pogo_pal_v2
+	    difficulty = 1.5;
+	    global.champ = 0
 	}
 	if bossform = 38.1 // Crush
 	{

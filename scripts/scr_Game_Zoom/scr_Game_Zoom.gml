@@ -14,6 +14,13 @@ function scr_Game_Zoom(zoom) {
 		camcon.window_scale = camcon.max_scale;
 	}
 	
+	if camcon.window_scale * camcon.view_width > display_get_width() {
+		camcon.window_scale = display_get_width() / camcon.view_width;	
+	}
+	if camcon.window_scale * camcon.view_height > display_get_height() {
+		camcon.window_scale = display_get_height() / camcon.view_height;	
+	}
+	
 	window_set_size(camcon.view_width * camcon.window_scale, camcon.view_height * camcon.window_scale);
 	if global.gameGraphics = "High" {
 		surface_resize(application_surface, camcon.view_width * camcon.window_scale, camcon.view_height * camcon.window_scale);

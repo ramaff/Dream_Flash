@@ -59,6 +59,25 @@ if abs(type) = 3 and category = 1 {
     }     
 }
 
+if abs(type) = 5 and category = 1 {
+    move = "right";
+    if type < 0 {
+        move = "left";
+    }
+
+    if move = "right" {
+        global.game_controller_gryo++;
+    } else if move = "left" {
+        global.game_controller_gryo--;
+    }
+    
+    if global.game_controller_gryo < 0 {
+        global.game_controller_gryo = 1;
+    } else if global.game_controller_gryo > 1 {
+        global.game_controller_gryo = 0;
+    }     
+}
+
 if category = 2 {
 	awaitinput = 1;
 }
@@ -84,7 +103,7 @@ if abs(type) = 11 and category = 4 {
     
 	size = size mod 11
 	if size < 0 {
-		size += 11;	
+		size += 11;
 	}
 
    scr_Game_Zoom((540 + (90 * size))/540);

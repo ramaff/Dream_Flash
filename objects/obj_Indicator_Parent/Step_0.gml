@@ -3,29 +3,66 @@
 
 if !InputMouseMoved() {
 	stop_following_mouse++;
-	var dx = InputValue(INPUT_VERB.AS_RIGHT ) - InputValue(INPUT_VERB.AS_LEFT );
-	var dy = InputValue(INPUT_VERB.AS_DOWN ) - InputValue(INPUT_VERB.AS_UP );
-
-	var _xmag = abs(dx);
-	var _ymag = abs(dy);
 	
-	var distance_per_step = sqrt(dx*dx + dy*dy);
-	
-	if distance_per_step != 0 {
-		//var move_point = point_direction(0,0, soulCurrentHorizontalSpeed, soulCurrentVerticalSpeed);
-	    
-		dx /= distance_per_step;
-		dy /= distance_per_step;
-	
-		hspeed += dx * 1
-		vspeed += dy * 1
+	if global.game_controller_gryo {
 		
-		hspeed = clamp(hspeed, _xmag * -15, _xmag * 15);
-		vspeed = clamp(vspeed, _ymag * -15, _ymag * 15);
+		var dx = InputValue(INPUT_VERB.AS_RIGHT ) - InputValue(INPUT_VERB.AS_LEFT );
+		var dy = InputValue(INPUT_VERB.AS_DOWN ) - InputValue(INPUT_VERB.AS_UP );
+		
+		if dx != 0 || dy != 0 {
+		
+			var _xmag = abs(dx);
+			var _ymag = abs(dy);
 	
+			var distance_per_step = min(_xmag + _ymag, 1)
+		
+			var _cx = obj_Soul_Parent.x;
+			var _cy = obj_Soul_Parent.y;
+		
+			var _gyro_dist = distance_per_step * 500;
+			var _gyro_ang = point_direction(0, 0, dx, dy);
+		
+			var _tx = _cx + lengthdir_x(_gyro_dist, _gyro_ang)
+			var _ty = _cy + lengthdir_y(_gyro_dist, _gyro_ang)
+			
+			x = lerp(x, _tx, 0.05)
+			y = lerp(y, _ty, 0.05)
+			
+			x = scr_Converge(x, _tx, 5)
+			y = scr_Converge(y, _ty, 5)
+			
+			if distance_to_object(obj_Item_Like) < (ITEM_HOVER_RANGE + 20) and _xmag < 1 and _ymag < 1 {
+				x = lerp(x, instance_nearest(x, y, obj_Item_Like).x, 0.5)
+				y = lerp(y, instance_nearest(x, y, obj_Item_Like).y, 0.5)
+			}
+		}
+		
 	} else {
-		hspeed = 0;
-		vspeed = 0;
+		var dx = InputValue(INPUT_VERB.AS_RIGHT ) - InputValue(INPUT_VERB.AS_LEFT );
+		var dy = InputValue(INPUT_VERB.AS_DOWN ) - InputValue(INPUT_VERB.AS_UP );
+
+		var _xmag = abs(dx);
+		var _ymag = abs(dy);
+	
+		var distance_per_step = sqrt(dx*dx + dy*dy);
+	
+		if distance_per_step != 0 {
+			//var move_point = point_direction(0,0, soulCurrentHorizontalSpeed, soulCurrentVerticalSpeed);
+	    
+			dx /= distance_per_step;
+			dy /= distance_per_step;
+	
+			hspeed += dx * 1
+			vspeed += dy * 1
+		
+			hspeed = clamp(hspeed, _xmag * -15, _xmag * 15);
+			vspeed = clamp(vspeed, _ymag * -15, _ymag * 15);
+	
+		} else {
+			hspeed = 0;
+			vspeed = 0;
+		}
+	
 	}
 	
 	var _cur_x = camera_get_view_x(view) + 5;

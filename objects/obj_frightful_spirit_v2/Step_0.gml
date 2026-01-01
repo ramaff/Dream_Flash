@@ -27,11 +27,11 @@ if active_attack = 3 {
 if active_attack_delay <= 0 and active_attack_cooldown <= 0 and active_attack_duration <= 0 {
     
 	// Pick a random attack to do
-	active_attack = choose(1, 1, 1, 2, 3);
+	active_attack = choose(1, 1, 1, 1, 2, 3);
 	
     if active_attack = 1 {
 		// Setup how many attacks per boss move, delay, etc
-		scr_Boss_Attack_Time_Setup_v2(1, 50, 1, 60, 30, 40);
+		scr_Boss_Attack_Time_Setup_v2(1, 50, 1, 60, 10, 40);
 		
 		// Can set up the initial pattern direction
 		// patternDirection = scr_Soul_Point();
@@ -70,18 +70,19 @@ if active_attack_delay <= 0 and pattern_cooldown <= 0 and pattern_count > 0 {
 		attack_stats.bullet_direction = scr_Boss_Bullet_Direction_Formula(scr_Soul_Point(), 30)
 		attack_stats.bullet_sprite = "spr_dark_bullet_v2"
 		attack_stats.bullet_type = "obj_fright_bullet_v2"
-		attack_stats.bullet_size = 0.625;
+		attack_stats.bullet_size = 0.55;
 		attack_stats.bullet_count = 1;
-		attack_stats.bullet_speed = (1.4 + random(0.6)) * bossbulletspeed
-		attack_stats.homing_speed = 2;
+		attack_stats.bulle_life_span = 270;
+		attack_stats.bullet_speed = (2.1 + random(0.5)) * bossbulletspeed
+		attack_stats.homing_speed = 3;
 		
 		attack_stats.bullet_part = 1;
 		attack_stats.bullet_part_sprite = spr_Soul_Big_Bit;
-		attack_stats.bullet_part_area = 30;
-		attack_stats.bullet_part_life = 15;
+		attack_stats.bullet_part_area = 34;
+		attack_stats.bullet_part_life = 20;
 		attack_stats.bullet_part_color1 = make_color_rgb(0, 0, 0);
 		attack_stats.bullet_part_color2 = make_color_rgb(0, 0, 0);
-		attack_stats.bullet_part_frequency = 5;
+		attack_stats.bullet_part_frequency = 3;
 		
 		scr_boss_shoot_v2();
 	

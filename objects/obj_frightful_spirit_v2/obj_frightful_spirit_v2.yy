@@ -1,13 +1,13 @@
 {
   "$GMObject":"",
-  "%Name":"obj_spooked_spirit_v2",
+  "%Name":"obj_frightful_spirit_v2",
   "eventList":[
     {"$GMEvent":"v1","%Name":"","collisionObjectId":null,"eventNum":0,"eventType":0,"isDnD":false,"name":"","resourceType":"GMEvent","resourceVersion":"2.0",},
     {"$GMEvent":"v1","%Name":"","collisionObjectId":null,"eventNum":0,"eventType":3,"isDnD":false,"name":"","resourceType":"GMEvent","resourceVersion":"2.0",},
     {"$GMEvent":"v1","%Name":"","collisionObjectId":null,"eventNum":0,"eventType":8,"isDnD":false,"name":"","resourceType":"GMEvent","resourceVersion":"2.0",},
   ],
   "managed":true,
-  "name":"obj_spooked_spirit_v2",
+  "name":"obj_frightful_spirit_v2",
   "overriddenProperties":[],
   "parent":{
     "name":"Flash Bosses",

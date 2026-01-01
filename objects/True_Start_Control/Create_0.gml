@@ -29,7 +29,7 @@ with (_cursor) {
 	max_y = 3;
 	
 	target_button = _start;
-	InputDeviceGetAnyGamepadConnected() {
+	if InputDeviceGetAnyGamepadConnected() {
 		event_user(1);
 	}
 }

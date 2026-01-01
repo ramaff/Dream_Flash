@@ -56,18 +56,20 @@ function scr_Stat_Up_Indication(_stat_up = 0, _level_up = false){
 	
 	
 	var _dir = 70 + random(40);
-	var _xx = obj_Soul_Parent.x + lengthdir_x(100 + random(200), _dir)
-	var _yy = obj_Soul_Parent.y - 40 + random(60)
+	_xx = room_width / 2;
+	_yy = (room_height / 2) - 50;
 	var _obj = obj_Stat_Up_Indicator;
 	
 	if _level_up {
 		_stat_up_string = _stat_up_string + " LEVELED UP"	
-		_xx = room_width / 2;
-		_yy = (room_height / 2) - 50;
-		var _obj = obj_Class_Level_Up_Indicator;
+		_obj = obj_Class_Level_Up_Indicator;
 	}
 	
 	if instance_exists(obj_Soul_Parent) {
+		if !_level_up {
+			var _xx = obj_Soul_Parent.x + lengthdir_x(100 + random(200), _dir)
+			var _yy = obj_Soul_Parent.y - 40 + random(60)	
+		}
 	
 		with instance_create(_xx, _yy, _obj) {
 			stat_up_str = _stat_up_string;

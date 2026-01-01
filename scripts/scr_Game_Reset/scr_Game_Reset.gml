@@ -11,7 +11,7 @@ function scr_Game_Reset() {
 		instance_destroy();	
 	}
 
-	//audio_stop_all();
+	audio_stop_all();
 	
 	
 

@@ -3,7 +3,7 @@ boost = global.boost;
 champ = global.champ;
 
 // Boss # id
-boss_value = 14;
+boss_value = 37;
 scr_Boss_Stats_Setup(2);
 
 // Required, usually set to 0.5
@@ -11,11 +11,10 @@ scr_Boss_Size_Setup(0.5);
 
 // If boss is visually 'floating' setup boss height
 // Needed for bobbing/boss shadows
-scr_Boss_Height_Setup(60);
+scr_Boss_Height_Setup(0);
 
-death_sprite = spr_boss_template_ko;
+death_sprite = spr_pogo_pal_v2_ko;
 boss_palette = spr_boss_template_palette;
 boss_palette_index = champ;
 
-x_bound = (room_width / 2) - (global.roomSizeX / 2) - 100
-x_top_bound = (room_width / 2) + (global.roomSizeX / 2) + 100
+successive_hop_count = 0;
