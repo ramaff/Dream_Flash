@@ -25,11 +25,15 @@ if !InputMouseMoved() {
 			var _tx = _cx + lengthdir_x(_gyro_dist, _gyro_ang)
 			var _ty = _cy + lengthdir_y(_gyro_dist, _gyro_ang)
 			
-			x = lerp(x, _tx, 0.05)
-			y = lerp(y, _ty, 0.05)
+			var _lerp_amount = 0.01 + (0.06 * global.game_controller_sensitivity);
 			
-			x = scr_Converge(x, _tx, 5)
-			y = scr_Converge(y, _ty, 5)
+			x = lerp(x, _tx, _lerp_amount)
+			y = lerp(y, _ty, _lerp_amount)
+			
+			var _linear_amount = 1 + (5 * global.game_controller_sensitivity);
+			
+			x = scr_Converge(x, _tx, _linear_amount)
+			y = scr_Converge(y, _ty, _linear_amount)
 			
 			if distance_to_object(obj_Item_Like) < (ITEM_HOVER_RANGE + 20) and _xmag < 1 and _ymag < 1 {
 				x = lerp(x, instance_nearest(x, y, obj_Item_Like).x, 0.5)
@@ -45,6 +49,9 @@ if !InputMouseMoved() {
 		var _ymag = abs(dy);
 	
 		var distance_per_step = sqrt(dx*dx + dy*dy);
+		
+		var _linear_accel = 0.1 + (1.5 * global.game_controller_sensitivity);
+		var _linear_max_speed = 1 + (25 * global.game_controller_sensitivity);
 	
 		if distance_per_step != 0 {
 			//var move_point = point_direction(0,0, soulCurrentHorizontalSpeed, soulCurrentVerticalSpeed);
@@ -52,11 +59,11 @@ if !InputMouseMoved() {
 			dx /= distance_per_step;
 			dy /= distance_per_step;
 	
-			hspeed += dx * 1
-			vspeed += dy * 1
+			hspeed += dx * _linear_accel
+			vspeed += dy * _linear_accel
 		
-			hspeed = clamp(hspeed, _xmag * -15, _xmag * 15);
-			vspeed = clamp(vspeed, _ymag * -15, _ymag * 15);
+			hspeed = clamp(hspeed, _xmag * -_linear_max_speed, _xmag * _linear_max_speed);
+			vspeed = clamp(vspeed, _ymag * -_linear_max_speed, _ymag * _linear_max_speed);
 	
 		} else {
 			hspeed = 0;

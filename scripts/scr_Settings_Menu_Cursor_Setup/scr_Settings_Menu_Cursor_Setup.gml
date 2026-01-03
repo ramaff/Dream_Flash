@@ -6,7 +6,7 @@ function scr_Settings_Menu_Cursor_Setup(){
 	var _cursor = instance_create(x,y,obj_Dream_Cursor);
 
 	var _i = 0;
-	for(_i = 1; _i <= 4; _i++) {
+	for(_i = 1; _i <= 5; _i++) {
 	    with instance_create(camera_get_view_x(view) + camera_get_view_width(view) / 2 - 160,camera_get_view_y(view) - 80 + _i * 104,obj_Specific_Setting_Butt) {
 	        category = _i;
 	        image_speed = 0;
@@ -19,7 +19,7 @@ function scr_Settings_Menu_Cursor_Setup(){
 	with (_cursor) {
 	
 		max_x = 0;
-		max_y = 3;
+		max_y = 4;
 			
 		xx = 0;
 		yy = 0;

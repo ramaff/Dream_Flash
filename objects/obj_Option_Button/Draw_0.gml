@@ -39,15 +39,6 @@
 	if type = 4 and category = 1 {
         draw_text(x,y-12, string_hash_to_newline("SCREENSHAKE AMOUNT"));
     }
-	if type = 5 and category = 1 {
-        draw_text(x-256,y-12, string_hash_to_newline("CONTROLLER MOVEMENT TYPE"));
-        if global.game_controller_gryo = 1 {
-            draw_text(x,y-12, string_hash_to_newline("GYROSCOPIC"));
-        }
-        if global.game_controller_gryo = 0 {
-            draw_text(x,y-12, string_hash_to_newline("LINEAR"));
-        }
-    }
 	
 	// CONTROLS
 	
@@ -137,5 +128,21 @@
     }
 	if type = 15 and category = 4 {
         draw_text(x,y-12, string_hash_to_newline("Particle Amount"));
+    }
+	
+	// controller settings
+	
+	if type = 1 and category = 5 {
+        draw_text(x-256,y-12, string_hash_to_newline("CONTROLLER MOVEMENT TYPE"));
+        if global.game_controller_gryo = 1 {
+            draw_text(x,y-12, string_hash_to_newline("GYROSCOPIC"));
+        }
+        if global.game_controller_gryo = 0 {
+            draw_text(x,y-12, string_hash_to_newline("LINEAR"));
+        }
+    }
+	
+	if type = 2 and category = 5 {
+        draw_text(x,y-12, string_hash_to_newline("CONTROLLER SENSITIVITY"));
     }
 

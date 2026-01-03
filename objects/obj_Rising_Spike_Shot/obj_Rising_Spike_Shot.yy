@@ -33,8 +33,8 @@
   "resourceVersion":"2.0",
   "solid":false,
   "spriteId":{
-    "name":"spr_Soul_Shot",
-    "path":"sprites/spr_Soul_Shot/spr_Soul_Shot.yy",
+    "name":"spr_Rising_Spike",
+    "path":"sprites/spr_Rising_Spike/spr_Rising_Spike.yy",
   },
   "spriteMaskId":null,
   "visible":false,
