@@ -111,7 +111,12 @@ function scr_Weapon_Use_List(cWP = global.currentweapon, _weap_slot = 0) {
 		sWeaponTicker++;
     
 		if global.N[3] > 0 {
-			global.WeaponJugglingDelay[_weap_slot] += _current_weapon_stats.Real_Weapon_Delay / scr_Class_Stat_Firerate_Multiplier();
+			var _current_soul_juggle = variable_struct_get(global.WeaponJugglingDelay, string(id))
+			var _fac = 1;
+			if object_index = obj_Copy_Cat_Soul {
+				_fac = 3;	
+			}
+			_current_soul_juggle[_weap_slot] += _fac * _current_weapon_stats.Real_Weapon_Delay / scr_Class_Stat_Firerate_Multiplier();
 		} else {
 			sdelay += _current_weapon_stats.Real_Weapon_Delay / scr_Class_Stat_Firerate_Multiplier();
 		}

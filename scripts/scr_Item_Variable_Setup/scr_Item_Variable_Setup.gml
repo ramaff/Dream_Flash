@@ -22,10 +22,11 @@ function scr_Item_Variable_Setup() {
 		global.OA5rooms[i] = [];
 	}
 	
-	global.WeaponJugglingDelay = [];
-	for(var i = 0; i < 10; i++) {
-		global.WeaponJugglingDelay[i] = 0;
-	}
+	global.WeaponJugglingDelay = {};
+	/*if instance_exists(obj_Soul_Parent) {
+		var _soul = obj_Soul_Parent.id;
+		global.WeaponJugglingDelay[_soul] = [0, 0, 0, 0, 0, 0, 0, 0, 0, 0];
+	} */
 	
 	global.gembeam_hits = ds_list_create();
 	
