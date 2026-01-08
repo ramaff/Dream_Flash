@@ -1,6 +1,6 @@
 {
   "$GMSprite":"v2",
-  "%Name":"spr_hand_of_the_accusor_v2",
+  "%Name":"reco_hand_of_the_accusor_v2",
   "bboxMode":0,
   "bbox_bottom":350,
   "bbox_left":136,
@@ -22,19 +22,19 @@
   "layers":[
     {"$GMImageLayer":"","%Name":"e7d2b0c8-fc7c-48bf-b602-ab9f7cc1863f","blendMode":0,"displayName":"default","isLocked":false,"name":"e7d2b0c8-fc7c-48bf-b602-ab9f7cc1863f","opacity":100.0,"resourceType":"GMImageLayer","resourceVersion":"2.0","visible":true,},
   ],
-  "name":"spr_hand_of_the_accusor_v2",
+  "name":"reco_hand_of_the_accusor_v2",
   "nineSlice":null,
   "origin":4,
   "parent":{
-    "name":"Hand of the Accusor v2",
-    "path":"folders/Sprites/Boss Sprites/Flash Bosses/Hand of the Accusor v2.yy",
+    "name":"Reco Bosses",
+    "path":"folders/Sprites/Boss Sprites/Reco Bosses.yy",
   },
   "preMultiplyAlpha":false,
   "resourceType":"GMSprite",
   "resourceVersion":"2.0",
   "sequence":{
     "$GMSequence":"v1",
-    "%Name":"spr_hand_of_the_accusor_v2",
+    "%Name":"reco_hand_of_the_accusor_v2",
     "autoRecord":true,
     "backdropHeight":768,
     "backdropImageOpacity":0.5,
@@ -58,7 +58,7 @@
       "resourceType":"KeyframeStore<MomentsEventKeyframe>",
       "resourceVersion":"2.0",
     },
-    "name":"spr_hand_of_the_accusor_v2",
+    "name":"reco_hand_of_the_accusor_v2",
     "playback":1,
     "playbackSpeed":6.0,
     "playbackSpeedType":0,
@@ -70,10 +70,10 @@
     "tracks":[
       {"$GMSpriteFramesTrack":"","builtinName":0,"events":[],"inheritsTrackColour":true,"interpolation":1,"isCreationTrack":false,"keyframes":{"$KeyframeStore<SpriteFrameKeyframe>":"","Keyframes":[
             {"$Keyframe<SpriteFrameKeyframe>":"","Channels":{
-                "0":{"$SpriteFrameKeyframe":"","Id":{"name":"c63658b2-1a06-4df5-a047-ad05f77fa0ce","path":"sprites/spr_hand_of_the_accusor_v2/spr_hand_of_the_accusor_v2.yy",},"resourceType":"SpriteFrameKeyframe","resourceVersion":"2.0",},
+                "0":{"$SpriteFrameKeyframe":"","Id":{"name":"c63658b2-1a06-4df5-a047-ad05f77fa0ce","path":"sprites/reco_hand_of_the_accusor_v2/reco_hand_of_the_accusor_v2.yy",},"resourceType":"SpriteFrameKeyframe","resourceVersion":"2.0",},
               },"Disabled":false,"id":"2ec764de-3754-4019-81b3-f18bdda14061","IsCreationKey":false,"Key":0.0,"Length":1.0,"resourceType":"Keyframe<SpriteFrameKeyframe>","resourceVersion":"2.0","Stretch":false,},
             {"$Keyframe<SpriteFrameKeyframe>":"","Channels":{
-                "0":{"$SpriteFrameKeyframe":"","Id":{"name":"40739271-31c6-4aba-89b0-642e56386813","path":"sprites/spr_hand_of_the_accusor_v2/spr_hand_of_the_accusor_v2.yy",},"resourceType":"SpriteFrameKeyframe","resourceVersion":"2.0",},
+                "0":{"$SpriteFrameKeyframe":"","Id":{"name":"40739271-31c6-4aba-89b0-642e56386813","path":"sprites/reco_hand_of_the_accusor_v2/reco_hand_of_the_accusor_v2.yy",},"resourceType":"SpriteFrameKeyframe","resourceVersion":"2.0",},
               },"Disabled":false,"id":"4c1561ac-4bc8-4f22-a3ef-c1d29ee81eff","IsCreationKey":false,"Key":1.0,"Length":1.0,"resourceType":"Keyframe<SpriteFrameKeyframe>","resourceVersion":"2.0","Stretch":false,},
           ],"resourceType":"KeyframeStore<SpriteFrameKeyframe>","resourceVersion":"2.0",},"modifiers":[],"name":"frames","resourceType":"GMSpriteFramesTrack","resourceVersion":"2.0","spriteId":null,"trackColour":0,"tracks":[],"traits":0,},
     ],

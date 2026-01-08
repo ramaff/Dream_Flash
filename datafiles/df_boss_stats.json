@@ -397,9 +397,9 @@
 
         "Boss 012": {
             "Name": "Hand of the Accuser",
-            "Recollection_Sprite": "reco_Hand_of_the_Accuser",
-            "Health_Phase_1": 140,
-            "Health_Phase_2": 160,
+            "Recollection_Sprite": "reco_hand_of_the_accusor_v2",
+            "Health_Phase_1": 190,
+            "Health_Phase_2": 0,
             "Defense_Phase_1": 0,
             "Defense_Phase_2": 0,
             "Boss_Danger": 1,
