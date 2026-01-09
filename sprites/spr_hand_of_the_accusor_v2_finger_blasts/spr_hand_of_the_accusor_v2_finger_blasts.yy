@@ -14,6 +14,8 @@
   "frames":[
     {"$GMSpriteFrame":"v1","%Name":"081638db-0a36-4fe9-bfe6-2477146b7281","name":"081638db-0a36-4fe9-bfe6-2477146b7281","resourceType":"GMSpriteFrame","resourceVersion":"2.0",},
     {"$GMSpriteFrame":"v1","%Name":"3591d3c0-f15f-4768-a33f-c97e8bf0cc36","name":"3591d3c0-f15f-4768-a33f-c97e8bf0cc36","resourceType":"GMSpriteFrame","resourceVersion":"2.0",},
+    {"$GMSpriteFrame":"v1","%Name":"3fe62085-3396-44ec-9de7-07bc9d000e7f","name":"3fe62085-3396-44ec-9de7-07bc9d000e7f","resourceType":"GMSpriteFrame","resourceVersion":"2.0",},
+    {"$GMSpriteFrame":"v1","%Name":"bf3171a3-e7cd-409d-8e51-8c6030956e33","name":"bf3171a3-e7cd-409d-8e51-8c6030956e33","resourceType":"GMSpriteFrame","resourceVersion":"2.0",},
     {"$GMSpriteFrame":"v1","%Name":"adc27743-7d93-463f-bfef-0e09a7f5c1b6","name":"adc27743-7d93-463f-bfef-0e09a7f5c1b6","resourceType":"GMSpriteFrame","resourceVersion":"2.0",},
     {"$GMSpriteFrame":"v1","%Name":"9aeb0715-d500-4a12-8d74-85df6fa22b27","name":"9aeb0715-d500-4a12-8d74-85df6fa22b27","resourceType":"GMSpriteFrame","resourceVersion":"2.0",},
     {"$GMSpriteFrame":"v1","%Name":"8b80d0da-1ef9-4c9f-a266-f4bf773fa6e2","name":"8b80d0da-1ef9-4c9f-a266-f4bf773fa6e2","resourceType":"GMSpriteFrame","resourceVersion":"2.0",},
@@ -53,7 +55,7 @@
     },
     "eventStubScript":null,
     "eventToFunction":{},
-    "length":5.0,
+    "length":7.0,
     "lockOrigin":false,
     "moments":{
       "$KeyframeStore<MomentsEventKeyframe>":"",
@@ -79,14 +81,20 @@
                 "0":{"$SpriteFrameKeyframe":"","Id":{"name":"3591d3c0-f15f-4768-a33f-c97e8bf0cc36","path":"sprites/spr_hand_of_the_accusor_v2_finger_blasts/spr_hand_of_the_accusor_v2_finger_blasts.yy",},"resourceType":"SpriteFrameKeyframe","resourceVersion":"2.0",},
               },"Disabled":false,"id":"f5f4fc63-f05b-4bb5-860a-89290482c895","IsCreationKey":false,"Key":1.0,"Length":1.0,"resourceType":"Keyframe<SpriteFrameKeyframe>","resourceVersion":"2.0","Stretch":false,},
             {"$Keyframe<SpriteFrameKeyframe>":"","Channels":{
+                "0":{"$SpriteFrameKeyframe":"","Id":{"name":"3fe62085-3396-44ec-9de7-07bc9d000e7f","path":"sprites/spr_hand_of_the_accusor_v2_finger_blasts/spr_hand_of_the_accusor_v2_finger_blasts.yy",},"resourceType":"SpriteFrameKeyframe","resourceVersion":"2.0",},
+              },"Disabled":false,"id":"0b018969-14fc-4c1b-8341-0061c8b924e4","IsCreationKey":false,"Key":2.0,"Length":1.0,"resourceType":"Keyframe<SpriteFrameKeyframe>","resourceVersion":"2.0","Stretch":false,},
+            {"$Keyframe<SpriteFrameKeyframe>":"","Channels":{
+                "0":{"$SpriteFrameKeyframe":"","Id":{"name":"bf3171a3-e7cd-409d-8e51-8c6030956e33","path":"sprites/spr_hand_of_the_accusor_v2_finger_blasts/spr_hand_of_the_accusor_v2_finger_blasts.yy",},"resourceType":"SpriteFrameKeyframe","resourceVersion":"2.0",},
+              },"Disabled":false,"id":"9d2e514d-1eb4-4436-b8a8-ec2985ae8c12","IsCreationKey":false,"Key":3.0,"Length":1.0,"resourceType":"Keyframe<SpriteFrameKeyframe>","resourceVersion":"2.0","Stretch":false,},
+            {"$Keyframe<SpriteFrameKeyframe>":"","Channels":{
                 "0":{"$SpriteFrameKeyframe":"","Id":{"name":"adc27743-7d93-463f-bfef-0e09a7f5c1b6","path":"sprites/spr_hand_of_the_accusor_v2_finger_blasts/spr_hand_of_the_accusor_v2_finger_blasts.yy",},"resourceType":"SpriteFrameKeyframe","resourceVersion":"2.0",},
-              },"Disabled":false,"id":"d6801cc2-55b8-42be-9d4d-00cc391ba599","IsCreationKey":false,"Key":2.0,"Length":1.0,"resourceType":"Keyframe<SpriteFrameKeyframe>","resourceVersion":"2.0","Stretch":false,},
+              },"Disabled":false,"id":"d6801cc2-55b8-42be-9d4d-00cc391ba599","IsCreationKey":false,"Key":4.0,"Length":1.0,"resourceType":"Keyframe<SpriteFrameKeyframe>","resourceVersion":"2.0","Stretch":false,},
             {"$Keyframe<SpriteFrameKeyframe>":"","Channels":{
                 "0":{"$SpriteFrameKeyframe":"","Id":{"name":"9aeb0715-d500-4a12-8d74-85df6fa22b27","path":"sprites/spr_hand_of_the_accusor_v2_finger_blasts/spr_hand_of_the_accusor_v2_finger_blasts.yy",},"resourceType":"SpriteFrameKeyframe","resourceVersion":"2.0",},
-              },"Disabled":false,"id":"29e51456-ba2f-4dce-af93-47c134341652","IsCreationKey":false,"Key":3.0,"Length":1.0,"resourceType":"Keyframe<SpriteFrameKeyframe>","resourceVersion":"2.0","Stretch":false,},
+              },"Disabled":false,"id":"29e51456-ba2f-4dce-af93-47c134341652","IsCreationKey":false,"Key":5.0,"Length":1.0,"resourceType":"Keyframe<SpriteFrameKeyframe>","resourceVersion":"2.0","Stretch":false,},
             {"$Keyframe<SpriteFrameKeyframe>":"","Channels":{
                 "0":{"$SpriteFrameKeyframe":"","Id":{"name":"8b80d0da-1ef9-4c9f-a266-f4bf773fa6e2","path":"sprites/spr_hand_of_the_accusor_v2_finger_blasts/spr_hand_of_the_accusor_v2_finger_blasts.yy",},"resourceType":"SpriteFrameKeyframe","resourceVersion":"2.0",},
-              },"Disabled":false,"id":"610602d3-2453-437a-b1fa-9bb666e23d9e","IsCreationKey":false,"Key":4.0,"Length":1.0,"resourceType":"Keyframe<SpriteFrameKeyframe>","resourceVersion":"2.0","Stretch":false,},
+              },"Disabled":false,"id":"610602d3-2453-437a-b1fa-9bb666e23d9e","IsCreationKey":false,"Key":6.0,"Length":1.0,"resourceType":"Keyframe<SpriteFrameKeyframe>","resourceVersion":"2.0","Stretch":false,},
           ],"resourceType":"KeyframeStore<SpriteFrameKeyframe>","resourceVersion":"2.0",},"modifiers":[],"name":"frames","resourceType":"GMSpriteFramesTrack","resourceVersion":"2.0","spriteId":null,"trackColour":0,"tracks":[],"traits":0,},
     ],
     "visibleRange":null,

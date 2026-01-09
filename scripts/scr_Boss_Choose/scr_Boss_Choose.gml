@@ -79,7 +79,7 @@ function scr_Boss_Choose(roomNum, exclude, difficultyAdd = 0) {
 	
 	var _minion_picked = false
 	
-	if array_length(_mini_boss_pool) > 0 and scr_Chance(2.5) {
+	if array_length(_mini_boss_pool) > 0 and scr_Chance(2.25) {
 		_minion_picked = true;
 		bossform = _mini_boss_pool[irandom(array_length(_mini_boss_pool) - 1)]
 	}

@@ -11,11 +11,11 @@ scr_Boss_Wobble("Horizontal", 0.4, 1, 0);
 
 if active_attack != 2 {
 	direction = scr_Angle_Converge(direction, scr_Soul_Point(x + 270, y), 10)
-	speed = lerp(speed, bossmovespeed * 2, 0.1);
+	speed = min(lerp(speed, bossmovespeed * 2, 0.1), scr_Soul_Distance(x + 270, y));
 }
 if active_attack = 2 and active_attack_delay > 0 {
 	direction = scr_Soul_Point(x + 450, y)
-	speed = lerp(speed, bossmovespeed * 3, 1);
+	speed = min(lerp(speed, bossmovespeed * 3, 1), scr_Soul_Distance(x + 450, y));
 }
 
 //////////////////////////////////////////////////////////////////////////////////////////
@@ -29,7 +29,8 @@ if active_attack_delay <= 0 and active_attack_cooldown <= 0 and active_attack_du
 	
     if active_attack = 1 {
 		// Setup how many attacks per boss move, delay, etc
-		scr_Boss_Attack_Time_Setup_v2(8, 50, 40, 120, 30, 10);
+		scr_Boss_Attack_Time_Setup_v2(8, 50, 50, 120, 30, 10);
+		image_index = 0
 		
 		// Can set up the initial pattern direction
 		// patternDirection = scr_Soul_Point();
@@ -49,7 +50,7 @@ if active_attack_delay <= 0 and pattern_cooldown <= 0 and pattern_count > 0 {
     if active_attack = 1 {
 		scr_Boss_Stretch("Vertical", 0.5);
 		
-		image_index = 2;
+		image_index = 4;
 		
 		x -= 25;
 		direction = 180;
@@ -109,7 +110,7 @@ if active_attack_duration <= 0 {
 		active_attack = 2;
 		scr_Boss_Attack_Time_Setup_v2(180, 60, 1, 120, 30, 10);
 		
-		scr_Boss_Dash_Setup_v2(0, bossmovespeed * 3, 8 * bossmovespeed);
+		scr_Boss_Dash_Setup_v2(0, bossmovespeed * 2, 6.5 * bossmovespeed);
 	} else {
 		active_attack = 0;
 	}
@@ -122,15 +123,15 @@ scr_Boss_Size_Lerp(0.15);
 
 // Handles boss attack sprite animation
 if active_attack = 1 {
-	var _hold_frame = 1;
-	scr_Force_Hold_Frame(1, 20)
-	scr_Boss_Attack_Sprite_v2(spr_hand_of_the_accusor_v2_finger_blasts, _hold_frame, 1, 3, 0);
+	var _hold_frame = 3;
+	scr_Force_Hold_Frame(3, 20)
+	scr_Boss_Attack_Sprite_v2(spr_hand_of_the_accusor_v2_finger_blasts, -1, 1, 5, 0);
 	if image_index = _hold_frame {
 		scr_Boss_Wobble("Horizontal", 2, 0.4, 0)	
 	}
 } else if active_attack = 2 {
-	var _hold_frame = 1;
-	scr_Boss_Attack_Sprite_v2(spr_hand_of_the_accusor_v2_finger_dash, _hold_frame, 2, 3, 10);
+	var _hold_frame = 2;
+	scr_Boss_Attack_Sprite_v2(spr_hand_of_the_accusor_v2_finger_dash, _hold_frame, 3, 4, 10);
 	if image_index = _hold_frame {
 		scr_Boss_Wobble("Horizontal", 2, 0.4, 0)	
 	}
