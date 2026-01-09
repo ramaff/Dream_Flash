@@ -13,7 +13,11 @@ if point_distance(x, y, obj_Astral_Indicator.x, obj_Astral_Indicator.y) < ITEM_H
     scr_Item_Recollection_Cloud(undefined, stacks);
 	
 	spriteSize = lerp(spriteSize, 0.625, 0.1);
+	image_xscale = spriteSize;
+	image_yscale = spriteSize;
 } else {
-	spriteSize = lerp(spriteSize, 0.5, 0.1);	
+	spriteSize = lerp(spriteSize, 0.5, 0.1);
+	image_xscale = spriteSize;
+	image_yscale = spriteSize;
 }
 

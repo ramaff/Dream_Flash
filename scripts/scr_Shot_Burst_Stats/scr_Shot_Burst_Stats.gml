@@ -57,4 +57,8 @@ function scr_Shot_Burst_Stats(_v_burst_stats){
 		shot_stats.Shot_Impact_Type = _v_burst_stats.Shot_Impact_Type
 	}
 
+	if shot_stats.Shot_Soul_Damage > 0 {
+		scr_Follow_Shot_Bullet_Spawn()
+	}
+
 }

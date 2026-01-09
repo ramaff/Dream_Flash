@@ -8,4 +8,4 @@ if instance_exists(obj_Soul_Parent) {
 	instance_destroy();	
 }
 
-scr_Minion_Follow_Leader(100, 2);
+scr_Minion_Follow_Leader(100, 1);

@@ -118,6 +118,10 @@ function scr_Extra_Shot_Stats(_Shot_Current_Count) {
 		scr_V08();
 	}
 	
+	if shot_stats.Shot_Soul_Damage > 0 {
+		scr_Follow_Shot_Bullet_Spawn()
+	}
+	
 	alarm[1] = 1;
 		
 
