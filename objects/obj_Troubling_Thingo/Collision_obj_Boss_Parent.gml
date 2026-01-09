@@ -38,6 +38,7 @@ if shealth <= 0 {
         current_weapon_stats.Shot_Life_Span = 120;
 		current_weapon_stats.Shot_Size = 0.55;
 		current_weapon_stats.Shot_Pierce += 1;
+		current_weapon_stats.Shot_Point_Angle = true;
 		
 		scr_Minion_Shot_Creation();
     
