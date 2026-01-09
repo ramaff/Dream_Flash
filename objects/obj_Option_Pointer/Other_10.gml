@@ -59,25 +59,6 @@ if abs(type) = 3 and category = 1 {
     }     
 }
 
-if abs(type) = 5 and category = 1 {
-    move = "right";
-    if type < 0 {
-        move = "left";
-    }
-
-    if move = "right" {
-        global.game_controller_gryo++;
-    } else if move = "left" {
-        global.game_controller_gryo--;
-    }
-    
-    if global.game_controller_gryo < 0 {
-        global.game_controller_gryo = 1;
-    } else if global.game_controller_gryo > 1 {
-        global.game_controller_gryo = 0;
-    }     
-}
-
 if category = 2 {
 	awaitinput = 1;
 }
@@ -177,6 +158,25 @@ if abs(type) = 14 and category = 4 {
 		}
 	}
     
+}
+
+if abs(type) = 1 and category = 5 {
+    move = "right";
+    if type < 0 {
+        move = "left";
+    }
+
+    if move = "right" {
+        global.game_controller_gryo++;
+    } else if move = "left" {
+        global.game_controller_gryo--;
+    }
+    
+    if global.game_controller_gryo < 0 {
+        global.game_controller_gryo = 1;
+    } else if global.game_controller_gryo > 1 {
+        global.game_controller_gryo = 0;
+    }     
 }
 
 /* */

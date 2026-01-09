@@ -17,3 +17,6 @@ if type = 13 and category = 4 {
 if type = 15 and category = 4 {
     global.gameParticles = percent / 100;
 }
+if type = 2 and category = 5 {
+    global.game_controller_sensitivity = percent / 100;
+}

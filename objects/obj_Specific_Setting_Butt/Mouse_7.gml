@@ -17,8 +17,8 @@ if global.layerdeep = 2 {
 	_cursor.menu_grid = []
     
     if category = 1 {
-		_max_i = 4;
-        for(i = 1; i <= 5; i++) {
+		_max_i = 3;
+        for(i = 1; i <= 4; i++) {
 			if i != 4 {
 				with instance_create(camera_get_view_x(view) + camera_get_view_width(view) / 2 - 32 + 128,camera_get_view_y(view) + 96 * i,obj_Option_Button) {
 	                type = i;
@@ -34,13 +34,16 @@ if global.layerdeep = 2 {
 	                category = other.category;
 	            }
 			} else {
-				with instance_create(camera_get_view_x(view) + camera_get_view_width(view) / 2 - 252,camera_get_view_y(view) + 96 * i,obj_Option_Button) {
+				with instance_create(camera_get_view_x(view) + camera_get_view_width(view) / 2 - 208,camera_get_view_y(view) + 96 * i,obj_Option_Button) {
 	                type = i;
 	                category = other.category;
+					sprite_index = spr_Option_Button_Big;
+					on_sprite = spr_Option_Button_Big_On;
+					off_sprite = spr_Option_Button_Big;
 					percent = global.gameScreenShake * 100;
 					_cursor.menu_grid[0, i - 1] = id;
 	            }
-				with instance_create(camera_get_view_x(view) + camera_get_view_width(view) / 2 - 32,camera_get_view_y(view) + 96 * i,obj_Option_Slider) {
+				with instance_create(camera_get_view_x(view) + camera_get_view_width(view) / 2 + 80,camera_get_view_y(view) + 96 * i,obj_Option_Slider) {
 	                type = i;
 	                category = other.category;
 	                percent = global.gameScreenShake * 100;
@@ -136,6 +139,42 @@ if global.layerdeep = 2 {
 	            with instance_create(camera_get_view_x(view) + camera_get_view_width(view) / 2 - 128,camera_get_view_y(view) + 96 * (i - 10),obj_Option_Pointer) {
 	                type = -i;
 	                category = other.category;
+	            }
+			}
+        }
+    }
+	
+	if category = 5 {
+		_max_i = 3;
+        for(i = 1; i <= 2; i++) {
+			if i != 2 {
+				with instance_create(camera_get_view_x(view) + camera_get_view_width(view) / 2 - 32 + 128,camera_get_view_y(view) + 96 * i,obj_Option_Button) {
+	                type = i;
+	                category = other.category;
+					_cursor.menu_grid[0, i - 1] = id;
+	            }
+	            with instance_create(camera_get_view_x(view) + camera_get_view_width(view) / 2 + 64 + 128,camera_get_view_y(view) + 96 * i,obj_Option_Pointer) {
+	                type = i;
+	                category = other.category;
+	            }
+	            with instance_create(camera_get_view_x(view) + camera_get_view_width(view) / 2 - 128 + 128,camera_get_view_y(view) + 96 * i,obj_Option_Pointer) {
+	                type = -i;
+	                category = other.category;
+	            }
+			} else {
+				with instance_create(camera_get_view_x(view) + camera_get_view_width(view) / 2 - 208,camera_get_view_y(view) + 96 * i,obj_Option_Button) {
+	                type = i;
+	                category = other.category;
+					sprite_index = spr_Option_Button_Big;
+					on_sprite = spr_Option_Button_Big_On;
+					off_sprite = spr_Option_Button_Big;
+					percent = global.game_controller_sensitivity * 100;
+					_cursor.menu_grid[0, i - 1] = id;
+	            }
+				with instance_create(camera_get_view_x(view) + camera_get_view_width(view) / 2 + 80,camera_get_view_y(view) + 96 * i,obj_Option_Slider) {
+	                type = i;
+	                category = other.category;
+	                percent = global.game_controller_sensitivity * 100;
 	            }
 			}
         }

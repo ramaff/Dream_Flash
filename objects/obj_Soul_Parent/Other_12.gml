@@ -21,7 +21,7 @@ if !(instance_exists(Tutorial_Control)) {
 		}
 	} 
 	if _item_selected == false {
-		if (senergy >= ((30 - tenergyconservation) / tenergyconservationfactor)) and (tdelay <= 0) {
+		if senergy >= 0 and tdelay <= 0 {
 	        charge = true
 	    }
 		scr_Soul_Right_Click(charge);	

@@ -1,24 +1,16 @@
 function scr_Wall_Bounce_Ext() {
-	var bnc = 0;
+	var _hor_bounce = scr_Generic_Outside_Check(0, hspeed, 0)
+	var _ver_bounce = scr_Generic_Outside_Check(0, vspeed, 0)
 
-	if(place_meeting(x + hspeed, y, obj_The_Border)) {
-	    direction = -direction + 180;
-		bnc = 1;
-	}
-
-	//Vertical bounce
-	if(place_meeting(x, y + vspeed, obj_The_Border)) {
-	    direction = -direction;
-		bnc = 1;
-	}
-
-	if shot_stats.Shot_Speed = 0 || speed = 0 {
-		bnc = 0;
-	}
-
-	if bnc = 1 {
+	if _hor_bounce {
+		hspeed = -hspeed
 		shot_stats.Shot_ID_Offset++;
+		scr_Keep_In_Room()
 	}
-
+	if _ver_bounce {
+		vspeed = -vspeed
+		shot_stats.Shot_ID_Offset++;
+		scr_Keep_In_Room()
+	}
 
 }

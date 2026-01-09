@@ -3,7 +3,7 @@
 
 //image_speed = 0;
 
-if boss_palette != noone {
+if boss_palette != noone and boss_palette != spr_boss_template_palette {
 	pal_swap_set(boss_palette, boss_palette_index, false);
 
 	draw_sprite_ext(sprite_index,image_index,x,y,image_xscale,image_yscale,0,c_white,image_alpha);

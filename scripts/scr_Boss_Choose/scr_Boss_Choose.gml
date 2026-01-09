@@ -53,8 +53,8 @@ function scr_Boss_Choose(roomNum, exclude, difficultyAdd = 0) {
 	var _state_pool = [81,82,83,84,86,87,89,90]
 	
 	if global.currentchapter = 1 {
-	    _base_pool = [1,3,5,9,12,18,19,20,24,25,42,44,57,58,98]
-		_mini_boss_pool = [13, 14, 16, 37, 43, 59, 61, 62]
+	    _base_pool = [1,3,5,9,18,19,20,24,25,42,44,57,58,98]
+		_mini_boss_pool = [12, 13, 14, 16, 37, 43, 59, 61, 62]
 		
 	}
 	if global.currentchapter = 2 {
@@ -79,7 +79,7 @@ function scr_Boss_Choose(roomNum, exclude, difficultyAdd = 0) {
 	
 	var _minion_picked = false
 	
-	if array_length(_mini_boss_pool) > 0 and scr_Chance(3) {
+	if array_length(_mini_boss_pool) > 0 and scr_Chance(2.25) {
 		_minion_picked = true;
 		bossform = _mini_boss_pool[irandom(array_length(_mini_boss_pool) - 1)]
 	}
@@ -191,10 +191,10 @@ function scr_Boss_Choose(roomNum, exclude, difficultyAdd = 0) {
 
 	if bossform = 12.1 // Hand of The Accuser
 	{
-	    bosstype = obj_Hand_of_the_Accuser;
+	    bosstype = obj_hand_of_the_accusor_v2
 	    difficulty = 1;
-	    global.champ = choose(0,1,2,8);
-		//global.champ = 8;
+	    //global.champ = choose(0,1,2,8);
+		global.champ = 0;
 	}
 
 	if bossform = 13.1 // Cursed Clappers
