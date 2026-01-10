@@ -1724,7 +1724,7 @@
         "recollectionDescription": "Plants a bomb in the inital location during soul teleports."
     },
     "W05": {
-        "recollectionString": "Clarity",
+        "recollectionString": "Clear Your Mind",
         "recollectionSprite": "spr_Clarity_Art",
         "recollectionExtraStats": "+Field Clearing Teleport",
         "recollectionDescription": "Clears every bullet on screen when teleporting for the first time in each boss battle."

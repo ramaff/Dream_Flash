@@ -7,7 +7,7 @@ scr_Boss_Minion_Stat_Setup();
 
 scr_Boss_Attack_Setup(2);
 
-active_attack_cooldown = 120
+active_attack_cooldown = 180
 
 // Required, usually set to 0.5
 scr_Boss_Size_Setup(0.5);

@@ -49,7 +49,6 @@ function scr_Extra_Shot_Stats(_Shot_Current_Count) {
 	shot_stats.Shot_Crit_Chance += other.scritaddchance;
 	shot_stats.Shot_Crit_Multiple += other.scritadd;
 	
-	shot_stats.Shot_Impact_Power_Level = shot_stats.Shot_Impact_Power;
 	shot_stats.Shot_Pierce += other.sshotpierce;
 	shot_stats.Shot_Armour_Pierce += other.sarmourpierce;
 	shot_stats.Shot_Chain_Power = (shot_stats.Shot_Chain_Power + other.spoweradd) * shotaddedpow;

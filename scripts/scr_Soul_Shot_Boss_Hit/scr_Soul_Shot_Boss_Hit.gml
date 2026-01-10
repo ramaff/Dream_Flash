@@ -88,14 +88,14 @@ function scr_Soul_Shot_Boss_Hit(_shot = other) {
 			
 				//Print_DF("shot power: " + string(shot_stats.Shot_Power))
 		
-		        scr_Boss_Damage_Calc();
+		        var _shot_damage = scr_Boss_Damage_Calc();
 		
 				if shot_stats.Shot_Screen_Shake > 2 {
 					scr_Screen_Shake(shot_stats.Shot_Screen_Shake, shot_stats.Shot_Screen_Shake - 2);
 					shot_stats.Shot_Screen_Shake = 0;
 				}
 		
-				if shotDamage > 0 {
+				if _shot_damage > 0 {
 				
 					var _xx = x;
 					var _yy = y;
@@ -116,7 +116,7 @@ function scr_Soul_Shot_Boss_Hit(_shot = other) {
 				}
 		
 				if shot_stats.Shot_Life_Drain > 0 {
-					var valdis = (shotDamage / 10) * shot_stats.Shot_Life_Drain;
+					var valdis = (_shot_damage / 10) * shot_stats.Shot_Life_Drain;
 					scr_Heal_Soul(valdis);
 
 					scr_setup_dmg_indicator(obj_Soul_Parent.x,obj_Soul_Parent.y, valdis, c_fuchsia)

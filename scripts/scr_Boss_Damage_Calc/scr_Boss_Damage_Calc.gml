@@ -1,5 +1,5 @@
 function scr_Boss_Damage_Calc() {
-	bossweak = 0;
+	var bossweak = 0;
 	
 	var speeddmg = shot_stats.Shot_Speed_Power_Add * speed;
 	var exist = (shot_stats.Shot_Life_Span - alarm[0]);
@@ -15,34 +15,24 @@ function scr_Boss_Damage_Calc() {
 	if other.bossReaction >= 1 {
 	    other.bossReaction++;
 	}
-
-	shotDamageMult = shot_stats.Shot_Power / shot_stats.Shot_Power_Level;
-	crit = shot_stats.Shot_Crit_Chance + irandom(99);
-
-	if crit >= 100 {
-	    shotDamageMult = shotDamageMult * shot_stats.Shot_Crit_Multiple;
-	}
-	shotDamageBase = 0;
-	shotDamageBase += shot_stats.Shot_Power_Level;
 	
-	var shotweaktotal = 0;
+	var _shot_dam = shot_stats.Shot_Power;
 
-	if shot_stats.Shot_Armour_Pierce > other.bossdefense {
-	    shotDamage = shotDamageMult * (shotDamageBase + bossweak + speeddmg);
-		shotweaktotal = shotDamageMult * bossweak;
-	} else {
-	    shotDamage = shotDamageMult * ((shotDamageBase + bossweak + speeddmg) - (other.bossdefense - shot_stats.Shot_Armour_Pierce));
-		shotweaktotal = shotDamageMult * bossweak;
+	var crit = shot_stats.Shot_Crit_Chance + irandom(99);
+	if crit >= 100 {
+	    _shot_dam = _shot_dam * shot_stats.Shot_Crit_Multiple;
 	}
-	//scr_A07_Boss_Damage();
-	if shotDamage < 0 || is_nan(shotDamage) {
-		shotDamage = 0;
+	
+	_shot_dam = (_shot_dam + bossweak + speeddmg) - max(0, (other.bossdefense - shot_stats.Shot_Armour_Pierce));
+
+	if _shot_dam < 0 || is_nan(_shot_dam) {
+		_shot_dam = 0;
 	}
 	
 	var downward_boost = global.downwardSpiralBoost / 2
 	
-	shotDamage += shotDamage * downward_boost;
-	shotweaktotal += shotweaktotal * downward_boost;
+	_shot_dam += _shot_dam * downward_boost;
+	bossweak += bossweak * downward_boost;
 
 	var _xx = x;
 	var _yy = y;
@@ -51,19 +41,19 @@ function scr_Boss_Damage_Calc() {
 		_yy = other.y;
 	}
 
-	scr_setup_dmg_indicator(_xx, _yy, shotDamage - shotweaktotal, c_white, shotweaktotal);
+	scr_setup_dmg_indicator(_xx, _yy, _shot_dam - bossweak, c_white, bossweak);
 
 	//Adding Poison
 	if shot_stats.Shot_Poison != 0 {
 		scr_Apply_Boss_Poison(other.id, shot_stats.Shot_Poison, shot_stats.Shot_Poison_Time, shot_stats.Shot_Poison_Ticks);
 	}
 
-	if shotDamage > 0 {
-	    other.bosshealth -= shotDamage
+	if _shot_dam > 0 {
+	    other.bosshealth -= _shot_dam
 		
-		scr_B09(shotDamage);
+		scr_B09(_shot_dam);
 		
-		scr_State_Gain(shotDamage);
+		scr_State_Gain(_shot_dam);
 	
 		//scr_Sound_Effect(sd_Small_Damage_To_Boss);
     
@@ -113,6 +103,6 @@ function scr_Boss_Damage_Calc() {
 	    }
 	}
 
-
+	return _shot_dam
 
 }

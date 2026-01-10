@@ -7,7 +7,6 @@ function scr_XA02_Shot_Mod(){
 	if scr_Chance(18 / global.XA[2]) {
 		shot_stats.Shot_Power += shot_stats.Shot_Power;
 		shot_stats.Shot_Power_Max += shot_stats.Shot_Power_Max;
-		shot_stats.Shot_Power_Level += shot_stats.Shot_Power_Level;
 		shot_stats.Shot_Speed += shot_stats.Shot_Speed * 0.33;
 		speed = shot_stats.Shot_Speed;
 		shot_stats.Shot_Size += 0.2;

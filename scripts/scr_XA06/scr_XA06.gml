@@ -17,7 +17,6 @@ function scr_XA06(_cw){
 		variable_struct_set(_cw.Shot_Burst_Stats[burstIndex], "Shot_Type", "obj_Lesser_Soul_Shot");
 		variable_struct_set(_cw.Shot_Burst_Stats[burstIndex], "Shot_Trail", 0);
 		variable_struct_set(_cw.Shot_Burst_Stats[burstIndex], "Shot_Power", 12);
-		variable_struct_set(_cw.Shot_Burst_Stats[burstIndex], "Shot_Power_Level", 12);
 		variable_struct_set(_cw.Shot_Burst_Stats[burstIndex], "Shot_Pierce", 2);
 		variable_struct_set(_cw.Shot_Burst_Stats[burstIndex], "Shot_Life_Span", 120 + (_cw.Shot_Life_Span / 3));
 		variable_struct_set(_cw.Shot_Burst_Stats[burstIndex], "Shot_Speed", 6 + (_cw.Shot_Speed / 3));

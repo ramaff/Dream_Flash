@@ -2028,7 +2028,6 @@
     {"id":{"name":"scr_Boss_Morphing","path":"scripts/scr_Boss_Morphing/scr_Boss_Morphing.yy",},},
     {"id":{"name":"scr_Boss_Pattern_Turn_To_Soul","path":"scripts/scr_Boss_Pattern_Turn_To_Soul/scr_Boss_Pattern_Turn_To_Soul.yy",},},
     {"id":{"name":"scr_Boss_Phase_Transition_Animation","path":"scripts/scr_Boss_Phase_Transition_Animation/scr_Boss_Phase_Transition_Animation.yy",},},
-    {"id":{"name":"scr_Boss_Self_Damage_Calc","path":"scripts/scr_Boss_Self_Damage_Calc/scr_Boss_Self_Damage_Calc.yy",},},
     {"id":{"name":"scr_Boss_Setup_Again","path":"scripts/scr_Boss_Setup_Again/scr_Boss_Setup_Again.yy",},},
     {"id":{"name":"scr_Boss_Shadow","path":"scripts/scr_Boss_Shadow/scr_Boss_Shadow.yy",},},
     {"id":{"name":"scr_Boss_Share_Damage","path":"scripts/scr_Boss_Share_Damage/scr_Boss_Share_Damage.yy",},},

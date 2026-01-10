@@ -35,7 +35,6 @@ function scr_Setup_Default_Shot_Stats(){
 		Shot_State: "Base",
 		Shot_Beam: 0,
         Shot_Power: 10,
-		Shot_Power_Level: 0,
         Shot_Speed: 0,
         Shot_Life_Span: 60,
         Shot_Homing_Type: 0,

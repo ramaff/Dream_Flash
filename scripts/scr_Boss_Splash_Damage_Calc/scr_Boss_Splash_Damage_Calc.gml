@@ -1,44 +1,45 @@
 function scr_Boss_Splash_Damage_Calc() {
-	bossweak = 0;
-
+	var bossweak = 0;
+	
+	var i;
 	for(i = 0; i <= 49; i++) { 
 	    bossweak += bossweaken[i];
+	}
+	
+	var speeddmg = other.shot_stats.Shot_Speed_Power_Add * other.speed;
+	var exist = (other.shot_stats.Shot_Life_Span - other.alarm[0]);
+	if exist < 30 and global.D[11] > 0 {
+		speeddmg += 1 * ceil((30 - exist) / 7.5 * global.D[11]);
 	}
 
 	if bossReaction >= 1 {
 	    bossReaction++;
 	}
 
-	shotDamageMult = other.shot_stats.Shot_Impact_Power / other.shot_stats.Shot_Impact_Power_Level;
-	crit = other.shot_stats.Shot_Crit_Chance + irandom(99);
+	var _shot_dam = other.shot_stats.Shot_Power;
+
+	var crit = other.shot_stats.Shot_Crit_Chance + irandom(99);
 	if crit >= 100 {
-	    shotDamageMult = shotDamageMult * other.shot_stats.Shot_Crit_Multiple;
+	    _shot_dam = _shot_dam * other.shot_stats.Shot_Crit_Multiple;
 	}
+	
+	_shot_dam = (_shot_dam + bossweak + speeddmg) - max(0, (bossdefense - other.shot_stats.Shot_Armour_Pierce));
 
-	shotDamageBase = 0;
-	shotDamageBase += other.shot_stats.Shot_Power_Level;
-	/*
-	shotDamageBase += (shotimaginary * shot_stats.Shot_Power_Level) * (1 - other.bossImaginaryResistance);
-	shotDamageBase += (shotsharpandsolid * shot_stats.Shot_Power_Level) * (1 - other.bossSharpSolidResistance);
-	shotDamageBase += (shotmagical * shot_stats.Shot_Power_Level) * (1 - other.bossMagicResistance);
-	shotDamageBase += (shotexplosive * shot_stats.Shot_Power_Level) * (1 - other.bossExplosiveResistance);
-	shotDamageBase += (shotenergy * shot_stats.Shot_Power_Level) * (1 - other.bossEnergyResistance);
-	*/
-	if other.shot_stats.Shot_Armour_Pierce > bossdefense {
-	    shotDamage = shotDamageMult * (shotDamageBase + bossweak);
-	} else {
-	    shotDamage = shotDamageMult * ((shotDamageBase + bossweak) - (bossdefense - other.shot_stats.Shot_Armour_Pierce));
+	if _shot_dam < 0 || is_nan(_shot_dam) {
+		_shot_dam = 0;
 	}
-	if shotDamage < 0 {
-	shotDamage = 0;
-	}
+	
+	var downward_boost = global.downwardSpiralBoost / 2
+	
+	_shot_dam += _shot_dam * downward_boost;
+	bossweak += bossweak * downward_boost;
 
-	scr_setup_dmg_indicator(x,y, shotDamage, c_white);
+	scr_setup_dmg_indicator(x, y, _shot_dam - bossweak, c_white, bossweak);
 
-	if shotDamage > 0 {
-	    bosshealth -= shotDamage
+	if _shot_dam > 0 {
+	    bosshealth -= _shot_dam
 		
-		scr_State_Gain(shotDamage);
+		scr_State_Gain(_shot_dam);
 	}
 
 

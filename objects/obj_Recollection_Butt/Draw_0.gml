@@ -12,8 +12,8 @@ var ybott = camera_get_view_y(view) + 80 + 11;
 var ytop = camera_get_view_y(view) + 156 + 379 + 64;
 
 var _rot = 0;
-var _alf = 0.5;
-var _col = c_gray
+var _alf = 0.8;
+var _col = make_colour_rgb(200, 200, 200)
 
 if global.recollectDisplayValue = itemVal {
 	_rot = scr_Wave(-90, 90, 4, 0);

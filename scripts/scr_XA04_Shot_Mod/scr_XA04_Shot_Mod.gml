@@ -32,7 +32,6 @@ function scr_XA04_Shot_Mod(){
 		if shot_stats.Shot_Impact_Power <= 8 {
 			shot_stats.Shot_Impact_Power = 8;	
 		}
-		shot_stats.Shot_Impact_Power_Level = shot_stats.Shot_Impact_Power;
 		
 		//if shot_stats.Shot_Trail < 2 {
 			shot_stats.Shot_Trail = 2;

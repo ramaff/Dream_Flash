@@ -16,12 +16,10 @@ if !hit_again {
         shotexplosive = 0;
         shotenergy = 0;
         shotexplosive += 1;
-		shot_stats.Shot_Impact_Power_Level = shot_stats.Shot_Impact_Power;
         
         if shot_stats.Shot_Impact_Type = 0 {
             shot_stats.Shot_Impact_Type = 1;
             shot_stats.Shot_Impact_Size = 80;
-            shot_stats.Shot_Impact_Power_Level = 8;
             shot_stats.Shot_Impact_Power = 8;
         }
     }
