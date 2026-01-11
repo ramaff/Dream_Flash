@@ -15,7 +15,7 @@ function scr_Pre_Shoot_Weapon_Essence_Cost(_current_weapon_stats, _single_instan
 	scr_C12(_current_weapon_stats, _weap_stop);
 	scr_C14(_current_weapon_stats);
 	
-	_current_weapon_stats.Real_Essence_Cost = _current_weapon_stats.Real_Essence_Cost / scr_Class_Stat_Weapon_Cost_Multiplier();
+	_current_weapon_stats.Real_Essence_Cost = _current_weapon_stats.Real_Essence_Cost;
 	
 	return _current_weapon_stats.Real_Essence_Cost
 

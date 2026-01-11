@@ -116,9 +116,9 @@ function scr_Weapon_Use_List(cWP = global.currentweapon, _weap_slot = 0) {
 			if object_index = obj_Copy_Cat_Soul {
 				_fac = 3;	
 			}
-			_current_soul_juggle[_weap_slot] += _fac * _current_weapon_stats.Real_Weapon_Delay / scr_Class_Stat_Firerate_Multiplier();
+			_current_soul_juggle[_weap_slot] += _fac * _current_weapon_stats.Real_Weapon_Delay;
 		} else {
-			sdelay += _current_weapon_stats.Real_Weapon_Delay / scr_Class_Stat_Firerate_Multiplier();
+			sdelay += _current_weapon_stats.Real_Weapon_Delay;
 		}
 	    sWeaponUseFrame = 1;   
 		global.essencebeamtime++;

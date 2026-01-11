@@ -40,6 +40,9 @@ global.soulflash = 0;
 global.soulfeel = 0;
 global.souldream = 0;
 global.soulnightmare = 0;
+global.soul_xp = 0;
+global.soul_level = 0;
+global.soul_xp_threshold = 10;
 
 global.soulweaponcap = 3;
 

@@ -1,18 +1,22 @@
 function scr_Collect_Income() {
 	with (obj_Soul_Flash) {
 	    global.soulflash++;
+		global.soulxp++;
 	    instance_destroy();
 	}
 	with (obj_Soul_Feel) {
 	    global.soulflash++;
+		global.soulxp++;
 	    instance_destroy();
 	}
 	with (obj_Soul_Dream) {
 	    global.soulflash++;
+		global.soulxp++;
 	    instance_destroy();
 	}
 	with (obj_Soul_Nightmare) {
 	    global.soulflash++;
+		global.soulxp++;
 	    instance_destroy();
 	}
 	/*

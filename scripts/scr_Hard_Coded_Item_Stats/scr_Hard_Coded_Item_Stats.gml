@@ -925,35 +925,41 @@ function scr_Hard_Coded_Item_Stats(itemVal, items_to_add = 1, reload = false) {
 	if !reload {
 		if itemVal = "R01" {
 		    global.soulflash += 55;
+		    global.soulxp += 55;
 		    global.souldespair += 5;
 		    scr_Spirit_Add_Commands();
 		    //global.R[1]++;
 		}
 		if itemVal = "R02" {
 		    global.soulflash += 45;
+		    global.soulxp += 45;
 		    global.soulparanoia += 5;
 		    //global.R[2]++;
 		}
 		if itemVal = "R03" {
 		    global.soulflash += 35;
+		    global.soulxp += 35;
 		    global.soulloathing += 5;
 		    scr_Spirit_Add_Commands();
 		    //global.R[3]++;
 		}
 		if itemVal = "R04" {
 		    global.soulflash += 20;
+		    global.soulxp += 20;
 		    global.soulvanity += 5;
 			scr_Spirit_Add_Commands();
 		    //global.R[4]++;
 		}
 		if itemVal = "R05" {
 		    global.soulflash += 15;
+		    global.soulxp += 15;
 		    global.soulbliss += 5;
 			scr_Spirit_Add_Commands();
 		    //global.R[5]++;
 		}
 		if itemVal = "R06" {
 		    global.soulflash += 10;
+		    global.soulxp += 10;
 		    global.soulhope += 5;
 			scr_Spirit_Add_Commands();
 		    //global.R[6]++;

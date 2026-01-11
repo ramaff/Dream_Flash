@@ -1,17 +1,21 @@
 with (obj_Soul_Flash) {
     global.soulflash++;
+	global.soulxp++;
     instance_destroy();
 }
 with (obj_Soul_Feel) {
-    global.soulfeel++;
+    global.soulflash++;
+	global.soulxp++;
     instance_destroy();
 }
 with (obj_Soul_Dream) {
-    global.souldream++;
+    global.soulflash++;
+	global.soulxp++;
     instance_destroy();
 }
 with (obj_Soul_Nightmare) {
-    global.soulnightmare++;
+    global.soulflash++;
+	global.soulxp++;
     instance_destroy();
 }
 

@@ -18,7 +18,7 @@ function scr_P08(){
 		
 		//current_weapon_stats = scr_Setup_Default_Shot_Stats();
 		
-		var _delay = _current_weapon_stats.Delay / scr_Class_Stat_Firerate_Multiplier();
+		var _delay = _current_weapon_stats.Delay;
 		if _current_weapon_stats.Shot_Beam = 2 {
 			_delay = _delay * 3;	
 		}

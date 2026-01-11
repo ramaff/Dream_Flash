@@ -31,7 +31,7 @@ scr_Execute_List_Of_Scripts(soul_step_before_scripts)
 
 smovefactor = 1;
 
-var smovemultiplier = smovefactor * smovementspeed * ((10 + scr_Get_Status_Magnitude(id, "movement_mult")) / 10) * ((10 + smovementfactor) / 10) * scr_Class_Stat_Movement_Speed_Multiplier();
+var smovemultiplier = smovefactor * smovementspeed * ((10 + scr_Get_Status_Magnitude(id, "movement_mult")) / 10) * ((10 + smovementfactor) / 10);
 currentenergyregenfactor = 1;
 
 var soulDirectionAttempt = 0;
@@ -88,14 +88,14 @@ scr_Execute_List_Of_Scripts(soul_step_after_scripts)
 x += soulCurrentHorizontalSpeed;
 y += soulCurrentVerticalSpeed;
 
-var essenceCap = smaxenergy + scr_Class_Stat_Essence_Cap_Increase();
+var essenceCap = smaxenergy;
 var _surpass_cap = global.P[1] > 0 || global.C[9] > 0
 
 if (senergy < essenceCap) {
 	if global.bosscount > 0 {
-		senergy += 0.5 * currentenergyregenfactor * scr_Class_Stat_Essence_Regen_Multiplier();
+		senergy += 0.5 * currentenergyregenfactor;
 	} else {
-		senergy += 5 * currentenergyregenfactor * scr_Class_Stat_Essence_Regen_Multiplier();
+		senergy += 5 * currentenergyregenfactor;
 	}
 }
 	

@@ -24,12 +24,12 @@ if ((global.bosscount <= 0) and (global.spiritRoom != global.currentroom) and (g
 		
 		if global.currentchapter = 2 {
 			initAmount = initAmount * giveFac;
-			global.soulfeel += floor(initAmount);
+			global.soulflash += floor(initAmount);
 		}
 		
 		if global.currentchapter = 3 {
 			initAmount = initAmount * giveFac * (2/3);
-			global.souldream += floor(initAmount);
+			global.soulflash += floor(initAmount);
 		}
 		
 		if instance_exists(obj_Soul_Spiritual) {
