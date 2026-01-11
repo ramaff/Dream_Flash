@@ -2,7 +2,7 @@
 // You can write your code in this editor
 var price = ceil((5 + (global.currentchapter * 5)) / ((3 + global.T[1]) / 4));
 
-if global.soulflash >= price {
+if global.soul_recall >= price {
 	with obj_Item_Parent {
 		/*if itemVal != "A00" and itemVal != "B00" and itemVal != "C00" and itemVal != "D00" and itemVal != "E00" and itemVal != "F00" { */
 			if is_string(itemVal) {
@@ -29,5 +29,5 @@ if global.soulflash >= price {
 		/*} */
 		scr_Initial_Item_Memory_Get()
 	}
-	global.soulflash -= price;
+	global.soul_recall -= price;
 }

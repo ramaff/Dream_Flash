@@ -22,16 +22,3 @@ if followtarget = obj_Soul_Parent.id {
 }
 
 /// In Boss Beat Script
-
-/*
-if global.bosscount < 1 and pay = 0 {
-	repeat(2) {
-		with instance_create(x,y,obj_Soul_Flash) {
-		    direction = random(360);
-		    speed = 1 + random(4);
-		    friction = 0.1
-		    alarm[0] = 45 + random(10);
-		}
-	}
-	pay = 1;
-}

@@ -625,6 +625,7 @@
     {"name":"obj_Soul_Collector","order":5,"path":"objects/obj_Soul_Collector/obj_Soul_Collector.yy",},
     {"name":"obj_Soul_Line_Shot","order":13,"path":"objects/obj_Soul_Line_Shot/obj_Soul_Line_Shot.yy",},
     {"name":"obj_Soul_Phase_Bullet","order":28,"path":"objects/obj_Soul_Phase_Bullet/obj_Soul_Phase_Bullet.yy",},
+    {"name":"obj_Soul_Recall","order":1,"path":"objects/obj_Soul_Recall/obj_Soul_Recall.yy",},
     {"name":"obj_Soul_Target_Trail_Part","order":26,"path":"objects/obj_Soul_Target_Trail_Part/obj_Soul_Target_Trail_Part.yy",},
     {"name":"obj_Soul_Trail","order":20,"path":"objects/obj_Soul_Trail/obj_Soul_Trail.yy",},
     {"name":"obj_Speech_Heart","order":9,"path":"objects/obj_Speech_Heart/obj_Speech_Heart.yy",},

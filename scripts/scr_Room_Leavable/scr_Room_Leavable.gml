@@ -10,7 +10,7 @@ function scr_Room_Leavable(_tick_down = false){
 		return true	
 	}
 	
-	var _no_bosses = (instance_number(obj_Main_Boss_Parent) <= 0 and (((global.spiritRoom != global.currentroom) and (global.evilSpiritRoom != global.currentroom)) || global.currentroom = 0) and scr_Negative_Room_Check())
+	var _no_bosses = (instance_number(obj_Main_Boss_Parent) <= 0 and instance_number(obj_Dead_Boss) <= 0 and (((global.spiritRoom != global.currentroom) and (global.evilSpiritRoom != global.currentroom)) || global.currentroom = 0) and scr_Negative_Room_Check())
 
 	if _tick_down == 1 {
 		if _no_bosses == 1 {

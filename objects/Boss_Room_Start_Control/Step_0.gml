@@ -1,7 +1,8 @@
 //scr_Room_Effect_Step();
 
-if ((global.bosscount <= 0) and (global.spiritRoom != global.currentroom) and (global.evilSpiritRoom != global.currentroom)) and instance_number(obj_Boss_Parent) = 0 {
-    
+//if ((global.bosscount <= 0) and (global.spiritRoom != global.currentroom) and (global.evilSpiritRoom != global.currentroom)) and instance_number(obj_Boss_Parent) = 0 {
+
+if scr_Room_Leavable() {  
 	scr_Room_End();
 	var roomType = global.floor[global.currentroom,0];
 	
@@ -15,80 +16,10 @@ if ((global.bosscount <= 0) and (global.spiritRoom != global.currentroom) and (g
 		
 		var initAmount = 0;
 		var giveFac = 1;
-
-		initAmount = ((global.soulhope + global.soulhopeTemp) / 10) + 1 + (difficulty * giveFac);
-		if global.currentchapter = 1 {
-			initAmount = initAmount * giveFac * 2;
-			global.soulflash += floor(initAmount);
-		}
 		
-		if global.currentchapter = 2 {
-			initAmount = initAmount * giveFac;
-			global.soulflash += floor(initAmount);
-		}
-		
-		if global.currentchapter = 3 {
-			initAmount = initAmount * giveFac * (2/3);
-			global.soulflash += floor(initAmount);
-		}
-		
-		if instance_exists(obj_Soul_Spiritual) {
-			with(obj_Soul_Spiritual) {
-				if spirit = "Hope" {
-					global.soulhope++;
-				}
-				if spirit = "Bliss" {
-					global.soulbliss++;
-				}
-				if spirit = "Vanity" {
-					global.soulvanity++;
-				}
-				if spirit = "Loathing" {
-					global.soulloathing++;
-				}
-				if spirit = "Paranoia" {
-					global.soulparanoia++;
-				}
-				if spirit = "Despair" {
-					global.souldespair++;
-				}
-			}
-		}
+		scr_Collect_Income()
 		
 	    scr_Save();
-		
-		if instance_exists(obj_Soul_Spiritual) {
-			with(obj_Soul_Spiritual) {
-				if spirit = "Hope" {
-					global.soulhope--;
-				}
-				if spirit = "Bliss" {
-					global.soulbliss--;
-				}
-				if spirit = "Vanity" {
-					global.soulvanity--;
-				}
-				if spirit = "Loathing" {
-					global.soulloathing--;
-				}
-				if spirit = "Paranoia" {
-					global.soulparanoia--;
-				}
-				if spirit = "Despair" {
-					global.souldespair--;
-				}
-			}
-		}
-		
-		if global.currentchapter = 1 {
-			global.soulflash -= floor(initAmount);
-		}
-		if global.currentchapter = 2 {
-			global.soulfeel -= floor(initAmount);
-		}
-		if global.currentchapter = 3 {
-			global.souldream -= floor(initAmount);
-		}
         
 	} else {
 		scr_Stat_Field_Chain_Check();

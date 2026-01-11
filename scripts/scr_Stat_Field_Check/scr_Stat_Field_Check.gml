@@ -3,6 +3,9 @@
 function scr_Stat_Field_Check(){
 	var field = global.floor[global.currentroom,0];
 	
+	// Spawn the next stat field in the queue
+	// If the spawned fields is less than the current level
+	
 	//if field = "Normal" || field = "Boss" {
 		if global.souldespair >= global.desFieldSpawn {
 			global.desFieldSpawn += 10;

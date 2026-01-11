@@ -61,10 +61,9 @@ function scr_Save_Run() {
 	ini_write_real("Run", "soulbliss", global.soulbliss);
 	ini_write_real("Run", "soulhope", global.soulhope);
 
-	ini_write_real("Run", "soulflash", global.soulflash);
-	ini_write_real("Run", "soulfeel", global.soulfeel);
-	ini_write_real("Run", "souldream", global.souldream);
-	ini_write_real("Run", "soulnightmare", global.soulnightmare);
+	ini_write_real("Run", "soul_recall", global.soul_recall);
+	ini_write_real("Run", "soul_xp", global.soul_xp);
+	ini_write_real("Run", "soul_level", global.soul_level);
 	ini_write_real("Run", "chaptertime", global.chaptertime);
 	ini_write_real("Run", "glasstime", global.glasstime);
 

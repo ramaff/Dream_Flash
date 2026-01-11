@@ -14,12 +14,17 @@ function scr_Emotion_Field_Spawn_Check(){
 		exit;	
 	}
 	
-	
-	if global.emoteFieldSpawn <= 0 and global.floor[global.currentroom,0] != "Super Boss" {
-		global.totalFieldSpawn++;
+	// Check if leveling up
+	// if the stat field queue is empty spawn an emotion field to fill the queue
+	if global.soul_xp >= global.soul_xp_threshold and global.floor[global.currentroom,0] != "Super Boss" {
+		//global.totalFieldSpawn++;
 		//global.emoteFieldSpawn = (1 + round(global.totalFieldSpawn / 1.5));
-		global.emoteFieldSpawn += (1 + round(global.totalFieldSpawn / 1.75)) * max(1, (1 + ((global.totalFieldSpawn - 2) / 2)));
+		//global.emoteFieldSpawn += (1 + round(global.totalFieldSpawn / 1.75)) * max(1, (1 + ((global.totalFieldSpawn - 2) / 2)));
 		//global.emoteFieldSpawn = 1;
+		global.soul_level++;
+		global.soul_xp -= global.soul_xp_threshold;
+		global.soul_xp_threshold += 10;
+		
 		global.floor[global.currentroom,0] = "Emotion Field"
 	} else {
 		global.floor[global.currentroom,0] = "Normal"
@@ -32,6 +37,6 @@ function scr_Emotion_Field_Spawn_Check(){
 	if global.floor[global.currentroom,0] = "Normal" || global.floor[global.currentroom,0] = "Spawn" {
 	    //instance_create(x,y,Normal_Room_Start_Control)
 	} else {
-		scr_Stat_Field_Spawn_Check();
+		scr_Stat_Field_Spawn();
 	}
 }

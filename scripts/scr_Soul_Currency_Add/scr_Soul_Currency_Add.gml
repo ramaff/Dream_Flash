@@ -17,24 +17,22 @@ function scr_Soul_Currency_Add(_return_recalls = false) {
 	
 	var recalls = ((global.soulhope + global.soulhopeTemp) / 20) + 1 + global.extrarecalls;
 	var recall_obj = obj_Soul_Flash
+	
+	recalls += difficulty * 1 * giveFac;
 
 	if global.currentchapter = 1 {
-	    recalls += difficulty * 2 * giveFac
 	    recall_obj = obj_Soul_Flash
 	}
 
 	if global.currentchapter = 2 {
-	    recalls += difficulty * 1 * giveFac;
 	    recall_obj = obj_Soul_Feel;
 	}
 
 	if global.currentchapter = 3 {
-		recalls += difficulty * 0.5 * giveFac
 	    recall_obj = obj_Soul_Dream;
 	}
 
 	if global.currentchapter = 4 {
-		recalls += difficulty * 0.35 * giveFac
 		recall_obj = obj_Soul_Nightmare;
 	}
 	
@@ -45,9 +43,9 @@ function scr_Soul_Currency_Add(_return_recalls = false) {
 	repeat(recalls) {
 	    with instance_create(x,y,recall_obj) {
 	        direction = random(360);
-	        speed = 1 + random(4);
-	        friction = 0.1
-	        alarm[0] = 45 + random(10);
+	        speed = 10 + random(8);
+	        //friction = 0.1
+	        //alarm[0] = 45 + random(10);
 			
 			image_xscale = 0.5;
 			image_yscale = 0.5;

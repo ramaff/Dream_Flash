@@ -11,8 +11,8 @@ function scr_Item_Click(_stacks = 1, _linger = false){
 	if shop > 0 and shop != 3 {
 	    //if global.currentchapter = 1
 	    if flashcost != 0
-	    if global.soulflash >= flashcost {
-	        global.soulflash -= flashcost;
+	    if global.soul_recall >= flashcost {
+	        global.soul_recall -= flashcost;
 	        bought = 1;
 	    }
 	}

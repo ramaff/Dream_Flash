@@ -1,12 +1,12 @@
 {
   "$GMObject":"",
-  "%Name":"obj_Soul_Dream552",
+  "%Name":"obj_Soul_Recall",
   "eventList":[
-    {"$GMEvent":"v1","%Name":"","collisionObjectId":null,"eventNum":0,"eventType":2,"isDnD":false,"name":"","resourceType":"GMEvent","resourceVersion":"2.0",},
     {"$GMEvent":"v1","%Name":"","collisionObjectId":{"name":"obj_Soul_Parent","path":"objects/obj_Soul_Parent/obj_Soul_Parent.yy",},"eventNum":0,"eventType":4,"isDnD":false,"name":"","resourceType":"GMEvent","resourceVersion":"2.0",},
+    {"$GMEvent":"v1","%Name":"","collisionObjectId":null,"eventNum":0,"eventType":3,"isDnD":false,"name":"","resourceType":"GMEvent","resourceVersion":"2.0",},
   ],
   "managed":true,
-  "name":"obj_Soul_Dream552",
+  "name":"obj_Soul_Recall",
   "overriddenProperties":[],
   "parent":{
     "name":"Currency",
@@ -31,8 +31,8 @@
   "resourceVersion":"2.0",
   "solid":false,
   "spriteId":{
-    "name":"spr_Soul_Dream",
-    "path":"sprites/spr_Soul_Dream/spr_Soul_Dream.yy",
+    "name":"spr_Soul_Flash",
+    "path":"sprites/spr_Soul_Flash/spr_Soul_Flash.yy",
   },
   "spriteMaskId":null,
   "visible":true,

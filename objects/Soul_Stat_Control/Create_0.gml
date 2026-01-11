@@ -36,10 +36,7 @@ global.soulparanoiaTemp = 0;
 global.souldespairTemp = 0;
 
 
-global.soulflash = 0;
-global.soulfeel = 0;
-global.souldream = 0;
-global.soulnightmare = 0;
+global.soul_recall = 0;
 global.soul_xp = 0;
 global.soul_level = 0;
 global.soul_xp_threshold = 10;

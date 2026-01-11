@@ -1,10 +1,7 @@
 {
   "$GMObject":"",
   "%Name":"obj_Soul_Flash",
-  "eventList":[
-    {"$GMEvent":"v1","%Name":"","collisionObjectId":null,"eventNum":0,"eventType":2,"isDnD":false,"name":"","resourceType":"GMEvent","resourceVersion":"2.0",},
-    {"$GMEvent":"v1","%Name":"","collisionObjectId":{"name":"obj_Soul_Parent","path":"objects/obj_Soul_Parent/obj_Soul_Parent.yy",},"eventNum":0,"eventType":4,"isDnD":false,"name":"","resourceType":"GMEvent","resourceVersion":"2.0",},
-  ],
+  "eventList":[],
   "managed":true,
   "name":"obj_Soul_Flash",
   "overriddenProperties":[],
@@ -12,7 +9,10 @@
     "name":"Currency",
     "path":"folders/Objects/Souls/Currency.yy",
   },
-  "parentObjectId":null,
+  "parentObjectId":{
+    "name":"obj_Soul_Recall",
+    "path":"objects/obj_Soul_Recall/obj_Soul_Recall.yy",
+  },
   "persistent":false,
   "physicsAngularDamping":0.1,
   "physicsDensity":0.5,
