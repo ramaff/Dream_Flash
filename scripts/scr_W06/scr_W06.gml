@@ -16,7 +16,7 @@ function scr_W06(_star_x, _star_y, _xx, _yy){
 			image_angle = _dir;
 			image_xscale = _size;
 			image_yscale = _size;
-			alarm[0] = 1080 * _size;
+			alarm[0] = 1440 * _size;
 			alarm[1] = alarm[0] * 0.75;
 			image_speed = 0;
 			image_index = 0;
@@ -30,7 +30,7 @@ function scr_W06(_star_x, _star_y, _xx, _yy){
 			image_angle = _dir;
 			image_xscale = _size;
 			image_yscale = _size;
-			alarm[0] = 1080 * _size;
+			alarm[0] = 1440 * _size;
 			alarm[1] = alarm[0] * 0.75;
 			image_speed = 0;
 			image_index = 1;

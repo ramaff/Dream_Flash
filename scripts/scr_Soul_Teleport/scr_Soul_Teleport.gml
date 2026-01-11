@@ -1,13 +1,13 @@
 // Script assets have changed for v2.3.0 see
 // https://help.yoyogames.com/hc/en-us/articles/360005277377 for more information
 
-function scr_Soul_Teleport(_evasion = false, _costs_money = true, _xx = obj_Astral_Indicator.x, _yy = obj_Astral_Indicator.y){
+function scr_Soul_Teleport(_evasion = false, _costs_money = true, _xx = obj_Astral_Indicator.x, _yy = obj_Astral_Indicator.y, _link = false){
 	
 	var _base_tele_delay = 120;
     
 	scr_E14();
 	
-	scr_W01();
+	scr_W01(_xx, _yy);
 		
 	scr_Snake_Soul_Teleport();
 	scr_Mechanical_Teleport();
@@ -135,7 +135,9 @@ function scr_Soul_Teleport(_evasion = false, _costs_money = true, _xx = obj_Astr
 	var _calc_tele_delay = (_base_tele_delay - tdelayconservation) / ((40 + global.soulperception + global.soulperceptionTemp) / 40) / (tdelayconservationfactor)
 	
 	scr_T05(_xstar, _ystar, _calc_tele_delay);
-	scr_W06(_xstar, _ystar, _xx, _yy);
+	if !_link {
+		scr_W06(_xstar, _ystar, _xx, _yy);
+	}
     
 	if _costs_money {
 		tdelay += _calc_tele_delay;
