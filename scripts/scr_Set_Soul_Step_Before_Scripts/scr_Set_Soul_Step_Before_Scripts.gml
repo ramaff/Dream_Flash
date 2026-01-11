@@ -25,6 +25,9 @@ function scr_Set_Soul_Step_Before_Scripts(_soul = obj_Soul_Parent.id) {
 	if global.P[4] > 0 {
 		array_push(_soul_step_before_scripts, scr_P04);
 	}
+	if global.S[1] > 0 {
+		array_push(_soul_step_before_scripts, scr_S01_Status_Build_Up);
+	}
 	if global.U[7] > 0 {
 		array_push(_soul_step_before_scripts, scr_U07);
 	}

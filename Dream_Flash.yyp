@@ -3597,6 +3597,7 @@
     {"id":{"name":"spr_Default_Weapon_Border","path":"sprites/spr_Default_Weapon_Border/spr_Default_Weapon_Border.yy",},},
     {"id":{"name":"spr_Defeated_Art","path":"sprites/spr_Defeated_Art/spr_Defeated_Art.yy",},},
     {"id":{"name":"spr_Defensive_Art","path":"sprites/spr_Defensive_Art/spr_Defensive_Art.yy",},},
+    {"id":{"name":"spr_Defensive_Omen_Status_Effect_Bar","path":"sprites/spr_Defensive_Omen_Status_Effect_Bar/spr_Defensive_Omen_Status_Effect_Bar.yy",},},
     {"id":{"name":"spr_Defensive_Shot","path":"sprites/spr_Defensive_Shot/spr_Defensive_Shot.yy",},},
     {"id":{"name":"spr_Delusions_Art","path":"sprites/spr_Delusions_Art/spr_Delusions_Art.yy",},},
     {"id":{"name":"spr_demon_bat_mullet_shoot","path":"sprites/spr_demon_bat_mullet_shoot/spr_demon_bat_mullet_shoot.yy",},},

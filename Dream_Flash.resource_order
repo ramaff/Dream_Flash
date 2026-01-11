@@ -1493,6 +1493,7 @@
     {"name":"spr_deep_watcher_v2","order":4,"path":"sprites/spr_deep_watcher_v2/spr_deep_watcher_v2.yy",},
     {"name":"spr_Default_Weapon_Border","order":1,"path":"sprites/spr_Default_Weapon_Border/spr_Default_Weapon_Border.yy",},
     {"name":"spr_Defensive_Art","order":1,"path":"sprites/spr_Defensive_Art/spr_Defensive_Art.yy",},
+    {"name":"spr_Defensive_Omen_Status_Effect_Bar","order":8,"path":"sprites/spr_Defensive_Omen_Status_Effect_Bar/spr_Defensive_Omen_Status_Effect_Bar.yy",},
     {"name":"spr_Defensive_Shot","order":25,"path":"sprites/spr_Defensive_Shot/spr_Defensive_Shot.yy",},
     {"name":"spr_demon_bat_mullet_shoot","order":5,"path":"sprites/spr_demon_bat_mullet_shoot/spr_demon_bat_mullet_shoot.yy",},
     {"name":"spr_demon_bat_mullet","order":4,"path":"sprites/spr_demon_bat_mullet/spr_demon_bat_mullet.yy",},
