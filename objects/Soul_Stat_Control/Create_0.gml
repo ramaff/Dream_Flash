@@ -24,13 +24,13 @@ global.soulstateTemp = 0;
 global.souldespair = 0;
 global.soulparanoia = 0;
 global.soulloathing = 0;
-global.soulvanity = 0;
+global.soulassurance = 0;
 global.soulbliss = 0;
 global.soulhope = 0;
 
 global.soulhopeTemp = 0;
 global.soulblissTemp = 0;
-global.soulvanityTemp = 0;
+global.soulassuranceTemp = 0;
 global.soulloathingTemp = 0;
 global.soulparanoiaTemp = 0;
 global.souldespairTemp = 0;
@@ -39,7 +39,10 @@ global.souldespairTemp = 0;
 global.soul_recall = 0;
 global.soul_xp = 0;
 global.soul_level = 0;
-global.soul_xp_threshold = 10;
+global.soul_xp_threshold = 5;
+global.soul_xp_threshold_mult = 1;
+
+global.soul_field_queue = [];
 
 global.soulweaponcap = 3;
 

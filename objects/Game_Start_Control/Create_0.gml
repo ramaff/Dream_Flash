@@ -28,12 +28,12 @@ global.dexFieldSpawn = 8;
 global.perFieldSpawn = 8;
 global.staFieldSpawn = 8;
 
-global.hopFieldSpawn = 10;
-global.blsFieldSpawn = 10;
-global.assFieldSpawn = 10;
-global.loaFieldSpawn = 10;
-global.parFieldSpawn = 10;
-global.desFieldSpawn = 10;
+global.hopFieldSpawn = 8;
+global.blsFieldSpawn = 8;
+global.assFieldSpawn = 8;
+global.loaFieldSpawn = 8;
+global.parFieldSpawn = 8;
+global.desFieldSpawn = 8;
 
 global.totalFieldSpawn = 0;
 global.emoteFieldSpawn = 1;

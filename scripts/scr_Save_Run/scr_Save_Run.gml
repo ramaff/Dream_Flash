@@ -57,13 +57,15 @@ function scr_Save_Run() {
 	ini_write_real("Run", "souldespair", global.souldespair);
 	ini_write_real("Run", "soulparanoia", global.soulparanoia);
 	ini_write_real("Run", "soulloathing", global.soulloathing);
-	ini_write_real("Run", "soulvanity", global.soulvanity);
+	ini_write_real("Run", "soulassurance", global.soulassurance);
 	ini_write_real("Run", "soulbliss", global.soulbliss);
 	ini_write_real("Run", "soulhope", global.soulhope);
 
 	ini_write_real("Run", "soul_recall", global.soul_recall);
 	ini_write_real("Run", "soul_xp", global.soul_xp);
 	ini_write_real("Run", "soul_level", global.soul_level);
+	ini_write_real("Run", "soul_xp_threshold", global.soul_xp_threshold);
+	ini_write_real("Run", "soul_xp_threshold_mult", global.soul_xp_threshold_mult);
 	ini_write_real("Run", "chaptertime", global.chaptertime);
 	ini_write_real("Run", "glasstime", global.glasstime);
 

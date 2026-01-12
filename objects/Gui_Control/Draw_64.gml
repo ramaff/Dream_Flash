@@ -183,6 +183,7 @@ if !scr_Room_Leavable() {
             draw_text(winx - 64,156, string_hash_to_newline(string(global.soul_recall)));
         }
     }
+	draw_text(winx - 64,172, $"{global.soul_xp}/{global.soul_xp_threshold}");
 
 }
 

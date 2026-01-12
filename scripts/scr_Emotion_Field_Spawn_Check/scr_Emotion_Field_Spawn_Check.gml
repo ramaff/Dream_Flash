@@ -23,9 +23,56 @@ function scr_Emotion_Field_Spawn_Check(){
 		//global.emoteFieldSpawn = 1;
 		global.soul_level++;
 		global.soul_xp -= global.soul_xp_threshold;
-		global.soul_xp_threshold += 10;
+		scr_Soul_Level_Up_Threshold_Set();
 		
-		global.floor[global.currentroom,0] = "Emotion Field"
+		if array_length(global.soul_field_queue) > 0 {
+			var _field = global.soul_field_queue[array_length(global.soul_field_queue) - 1];
+			
+			array_delete(global.soul_field_queue, array_length(global.soul_field_queue) - 1, 1)
+			
+			switch(_field) {
+				case "Despair":
+					global.souldespair += 8;
+					break;
+				case "Paranoia":
+					global.soulparanoia += 8;
+					break;
+				case "Loathing":
+					global.soulloathing += 8;
+					break;
+				case "Assurance":
+					global.soulassurance += 8;
+					break;
+				case "Bliss":
+					global.soulbliss += 8;
+					break;
+				case "Hope":
+					global.soulhope += 8;
+					break;
+				case "Strength":
+					global.soulstrength += 8;
+					break;
+				case "Vitality":
+					global.soulvitality += 8;
+					break;
+				case "Essence":
+					global.soulessence += 8;
+					break;
+				case "Dexterity":
+					global.souldexterity += 8;
+					break;
+				case "Perception":
+					global.soulperception += 8;
+					break;
+				case "State":
+					global.soulstate += 8;
+					break;
+			}
+		} else {
+			global.soul_xp_threshold_mult = 1;
+			scr_Soul_Level_Up_Threshold_Set()
+			global.floor[global.currentroom,0] = "Emotion Field"
+		}
 	} else {
 		global.floor[global.currentroom,0] = "Normal"
 	}

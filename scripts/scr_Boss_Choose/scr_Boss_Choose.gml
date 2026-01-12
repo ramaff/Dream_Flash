@@ -491,7 +491,7 @@ function scr_Boss_Choose(roomNum, exclude, difficultyAdd = 0) {
 	if bossform = 59.1
 	{
 	    bosstype = obj_will_wisp_heart;
-	    difficulty = 1;
+	    difficulty = 1.5;
 	}
 	if bossform = 60.1
 	{

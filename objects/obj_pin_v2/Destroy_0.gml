@@ -5,6 +5,7 @@ scr_Sound_Effect(snd_Bowling_Ball_Collide)
 
 with instance_create(x,y, obj_Dead_Boss) {
 	difficulty = -1;
+	recalls = 0;
 	boss_palette = other.boss_palette;
 	boss_palette_index = other.boss_palette_index;
 	image_xscale = other.bossSize;

@@ -7,6 +7,8 @@ alarm[2] = 3;
 image_index = 0;
 image_speed = 0;
 
+state = states.normal
+
 scr_Boss_Height_Setup(40);
 scr_Boss_Size_Setup(0.5);
 

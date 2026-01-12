@@ -15,7 +15,7 @@ function scr_Soul_Currency_Add(_return_recalls = false) {
 	    giveFac = giveFac * 0.5;
 	}
 	
-	var recalls = ((global.soulhope + global.soulhopeTemp) / 20) + 1 + global.extrarecalls;
+	var recalls = 4 + global.extrarecalls;
 	var recall_obj = obj_Soul_Flash
 	
 	recalls += difficulty * 1 * giveFac;

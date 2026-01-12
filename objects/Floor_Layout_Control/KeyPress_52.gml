@@ -1,4 +1,4 @@
 exit;
 
-global.soulvanity++;
+global.soulassurance++;
 

@@ -2,7 +2,7 @@
     "A00": {
         "recollectionString": "Powerful",
         "recollectionSprite": "spr_Strength_Up_Item",
-        "recollectionExtraStats": "+5 Strength",
+        "recollectionExtraStats": "+Strength",
         "recollectionDescription": "Increases your soul's Strength. This will lead to an increase in damage, better strength items, and a higher chance of getting more strength items in item fields!"
     },
     "A01": {
@@ -96,7 +96,7 @@
     "B00": {
         "recollectionString": "Lively",
         "recollectionSprite": "spr_Vitality_Up_Item",
-        "recollectionExtraStats": "+5 Vitality",
+        "recollectionExtraStats": "+Vitality",
         "recollectionDescription": "Increases your soul's Vitality. This will lead to an increase in health regen, better vitality items, and a higher chance of getting more vitality items in item fields!"
     },
     "B01": {
@@ -190,7 +190,7 @@
     "C00": {
         "recollectionString": "Concentrated",
         "recollectionSprite": "spr_Essence_Up_Item",
-        "recollectionExtraStats": "+5 Essence",
+        "recollectionExtraStats": "+Essence",
         "recollectionDescription": "Increases your soul's Essence. This will lead to an increase in essence regen, better essence items, and a higher chance of getting more essence items in item fields!"
     },
     "C01": {
@@ -286,7 +286,7 @@
     "D00": {
         "recollectionString": "Alert",
         "recollectionSprite": "spr_Dexterity_Up_Item",
-        "recollectionExtraStats": "+5 Dexterity",
+        "recollectionExtraStats": "+Dexterity",
         "recollectionDescription": "Increases your soul's Dexterity. This will lead to an increase in movement speed, better dexterity items, and a higher chance of getting more dexterity items in item fields!"
     },
     "D01": {
@@ -381,7 +381,7 @@
     "E00": {
         "recollectionString": "Thoughtful",
         "recollectionSprite": "spr_Perception_Up_Item",
-        "recollectionExtraStats": "+5 Perception",
+        "recollectionExtraStats": "+Perception",
         "recollectionDescription": "Increases your soul's Perception. This will lead to a decrease in teleport cooldown, decrease in teleport and weapon cost, better perception items, and a higher chance of getting more perception items in item fields!"
     },
     "E01": {
@@ -476,7 +476,7 @@
     "F00": {
         "recollectionString": "Proud",
         "recollectionSprite": "spr_State_Up_Item",
-        "recollectionExtraStats": "+5 State",
+        "recollectionExtraStats": "+State",
         "recollectionDescription": "Increases your soul's State. This will lead to an increase in the charge rate of your state bar, allowing you to transform more often and stay transformed longer. It also comes with a higher chance of getting more state items in item fields!"
     },
     "F01": {
@@ -692,221 +692,221 @@
     "I01": {
         "recollectionString": "Uplifted",
         "recollectionSprite": "spr_Uplifted_Art",
-        "recollectionExtraStats": "+2 Strength +4 Hope",
+        "recollectionExtraStats": "+Hope Then Strength +60% Slower Leveling",
         "recollectionDescription": ""
     },
     "I02": {
         "recollectionString": "Overjoyed",
         "recollectionSprite": "spr_Overjoyed_Art",
-        "recollectionExtraStats": "+3 Strength +4 Bliss",
+        "recollectionExtraStats": "+Bliss Then Strength +30% Slower Leveling",
         "recollectionDescription": ""
     },
     "I03": {
         "recollectionString": "Confident",
         "recollectionSprite": "spr_Confident_Art",
-        "recollectionExtraStats": "+4 Strength +4 Assurance",
+        "recollectionExtraStats": "+Assurance Then Strength +10% Slower Leveling",
         "recollectionDescription": ""
     },
     "I04": {
         "recollectionString": "Aggressive",
         "recollectionSprite": "spr_Aggressive_Art",
-        "recollectionExtraStats": "+7 Strength +4 Loathing",
+        "recollectionExtraStats": "+Loathing Then Strength x2 +10% Faster Leveling",
         "recollectionDescription": ""
     },
     "I05": {
         "recollectionString": "Insecure",
         "recollectionSprite": "spr_Insecure_Art",
-        "recollectionExtraStats": "+9 Strength +4 Paranoia",
+        "recollectionExtraStats": "+Paranoia Then Strength x2 +30% Faster Leveling",
         "recollectionDescription": ""
     },
     "I06": {
         "recollectionString": "Destructive",
         "recollectionSprite": "spr_Destructive_Art",
-        "recollectionExtraStats": "+11 Strength +4 Despair",
+        "recollectionExtraStats": "+Despair Then Strength x2 +60% Faster Leveling",
         "recollectionDescription": ""
     },
     
     "I07": {
         "recollectionString": "Safe",
         "recollectionSprite": "spr_Safe_Art",
-        "recollectionExtraStats": "+2 Vitality +4 Hope",
+        "recollectionExtraStats": "+Hope Then Vitality +60% Slower Leveling",
         "recollectionDescription": ""
     },
     "I08": {
         "recollectionString": "Ecstatic",
         "recollectionSprite": "spr_Ecstatic_Art",
-        "recollectionExtraStats": "+3 Vitality +4 Bliss",
+        "recollectionExtraStats": "+Bliss Then Vitality +30% Slower Leveling",
         "recollectionDescription": ""
     },
     "I09": {
         "recollectionString": "Secure",
         "recollectionSprite": "spr_Secure_Art",
-        "recollectionExtraStats": "+4 Vitality +4 Assurance",
+        "recollectionExtraStats": "+Assurance Then Vitality +10% Slower Leveling",
         "recollectionDescription": ""
     },
     "I10": {
         "recollectionString": "Strained",
         "recollectionSprite": "spr_Strained_Art",
-        "recollectionExtraStats": "+7 Vitality +4 Loathing",
+        "recollectionExtraStats": "+Loathing Then Vitality x2 +10% Faster Leveling",
         "recollectionDescription": ""
     },
     "I11": {
         "recollectionString": "Overwhelmed",
         "recollectionSprite": "spr_Overwhelmed_Art",
-        "recollectionExtraStats": "+9 Vitality +4 Paranoia",
+        "recollectionExtraStats": "+Paranoia Then Vitality x2 +30% Faster Leveling",
         "recollectionDescription": ""
     },
     "I12": {
         "recollectionString": "Sorrow",
         "recollectionSprite": "spr_Sorrow_Art",
-        "recollectionExtraStats": "+11 Vitality +4 Despair",
+        "recollectionExtraStats": "+Despair Then Vitality x2 +60% Faster Leveling",
         "recollectionDescription": ""
     },
     
     "I13": {
         "recollectionString": "Merry",
         "recollectionSprite": "spr_Merry_Art",
-        "recollectionExtraStats": "+2 Essence +4 Hope",
+        "recollectionExtraStats": "+Hope Then Essence +60% Slower Leveling",
         "recollectionDescription": ""
     },
     "I14": {
         "recollectionString": "Energized",
         "recollectionSprite": "spr_Energized_Art",
-        "recollectionExtraStats": "+3 Essence +4 Bliss",
+        "recollectionExtraStats": "+Bliss Then Essence +30% Slower Leveling",
         "recollectionDescription": ""
     },
     "I15": {
         "recollectionString": "Capable",
         "recollectionSprite": "spr_Capable_Art",
-        "recollectionExtraStats": "+4 Essence +4 Assurance",
+        "recollectionExtraStats": "+Assurance Then Essence +10% Slower Leveling",
         "recollectionDescription": ""
     },
     "I16": {
         "recollectionString": "Hateful",
         "recollectionSprite": "spr_Hateful_Art",
-        "recollectionExtraStats": "+7 Essence +4 Loathing",
+        "recollectionExtraStats": "+Loathing Then Essence x2 +10% Faster Leveling",
         "recollectionDescription": ""
     },
     "I17": {
         "recollectionString": "Pressured",
         "recollectionSprite": "spr_Pressured_Art",
-        "recollectionExtraStats": "+9 Essence +4 Paranoia",
+        "recollectionExtraStats": "+Paranoia Then Essence x2 +30% Faster Leveling",
         "recollectionDescription": ""
     },
     "I18": {
         "recollectionString": "Defeated",
         "recollectionSprite": "spr_Defeated_Art",
-        "recollectionExtraStats": "+11 Essence +4 Despair",
+        "recollectionExtraStats": "+Despair Then Essence x2 +60% Faster Leveling",
         "recollectionDescription": ""
     },
     
     "I19": {
         "recollectionString": "Eager",
         "recollectionSprite": "spr_Eager_Art",
-        "recollectionExtraStats": "+2 Dexterity +4 Hope",
+        "recollectionExtraStats": "+Hope Then Dexterity +60% Slower Leveling",
         "recollectionDescription": ""
     },
     "I20": {
         "recollectionString": "Excited",
         "recollectionSprite": "spr_Excited_Art",
-        "recollectionExtraStats": "+3 Dexterity +4 Bliss",
+        "recollectionExtraStats": "+Bliss Then Dexterity +30% Slower Leveling",
         "recollectionDescription": ""
     },
     "I21": {
         "recollectionString": "Hyped",
         "recollectionSprite": "spr_Hyped_Art",
-        "recollectionExtraStats": "+4 Dexterity +4 Assurance",
+        "recollectionExtraStats": "+Assurance Then Dexterity +10% Slower Leveling",
         "recollectionDescription": ""
     },
     "I22": {
         "recollectionString": "Impatient",
         "recollectionSprite": "spr_Frustrated_Art",
-        "recollectionExtraStats": "+7 Dexterity +4 Loathing",
+        "recollectionExtraStats": "+Loathing Then Dexterity x2 +10% Faster Leveling",
         "recollectionDescription": ""
     },
     "I23": {
         "recollectionString": "Panic",
         "recollectionSprite": "spr_Panic_Art",
-        "recollectionExtraStats": "+9 Dexterity +4 Paranoia",
+        "recollectionExtraStats": "+Paranoia Then Dexterity x2 +30% Faster Leveling",
         "recollectionDescription": ""
     },
     "I24": {
         "recollectionString": "Crushed",
         "recollectionSprite": "spr_Crushed_Art",
-        "recollectionExtraStats": "+11 Dexterity +4 Despair",
+        "recollectionExtraStats": "+Despair Then Dexterity x2 +60% Faster Leveling",
         "recollectionDescription": ""
     },
     
     "I25": {
         "recollectionString": "Peaceful",
         "recollectionSprite": "spr_Peaceful_Art",
-        "recollectionExtraStats": "+2 Perception +4 Hope",
+        "recollectionExtraStats": "+Hope Then Perception +60% Slower Leveling",
         "recollectionDescription": ""
     },
     "I26": {
         "recollectionString": "Tranquil",
         "recollectionSprite": "spr_Tranquil_Art",
-        "recollectionExtraStats": "+3 Perception +4 Bliss",
+        "recollectionExtraStats": "+Bliss Then Perception +30% Slower Leveling",
         "recollectionDescription": ""
     },
     "I27": {
         "recollectionString": "Comfortable",
         "recollectionSprite": "spr_Comfortable_Art",
-        "recollectionExtraStats": "+4 Perception +4 Assurance",
+        "recollectionExtraStats": "+Assurance Then Perception +10% Slower Leveling",
         "recollectionDescription": ""
     },
     "I28": {
         "recollectionString": "Boiling",
         "recollectionSprite": "spr_Boiling_Art",
-        "recollectionExtraStats": "+7 Perception +4 Loathing",
+        "recollectionExtraStats": "+Loathing Then Perception x2 +10% Faster Leveling",
         "recollectionDescription": ""
     },
     "I29": {
         "recollectionString": "Anxious",
         "recollectionSprite": "spr_Anxious_Art",
-        "recollectionExtraStats": "+9 Perception +4 Paranoia",
+        "recollectionExtraStats": "+Paranoia Then Perception x2 +30% Faster Leveling",
         "recollectionDescription": ""
     },
     "I30": {
         "recollectionString": "Depressed",
         "recollectionSprite": "spr_Depressed_Art",
-        "recollectionExtraStats": "+11 Perception +4 Despair",
+        "recollectionExtraStats": "+Despair Then Perception x2 +60% Faster Leveling",
         "recollectionDescription": ""
     },
     "I31": {
         "recollectionString": "Ambitious",
         "recollectionSprite": "spr_Overcoming_Art",
-        "recollectionExtraStats": "+2 State +4 Hope",
+        "recollectionExtraStats": "+Hope Then State +60% Slower Leveling",
         "recollectionDescription": ""
     },
     "I32": {
         "recollectionString": "Fantasizing",
         "recollectionSprite": "spr_Fantasizing_Art",
-        "recollectionExtraStats": "+3 State +4 Bliss",
+        "recollectionExtraStats": "+Bliss Then State +30% Slower Leveling",
         "recollectionDescription": ""
     },
     "I33": {
         "recollectionString": "Prideful",
         "recollectionSprite": "spr_Prideful_Art",
-        "recollectionExtraStats": "+4 State +4 Assurance",
+        "recollectionExtraStats": "+Assurance Then State +10% Slower Leveling",
         "recollectionDescription": ""
     },
     "I34": {
         "recollectionString": "Envious",
         "recollectionSprite": "spr_Envious_Art",
-        "recollectionExtraStats": "+7 State +4 Loathing",
+        "recollectionExtraStats": "+Loathing Then State x2 +10% Faster Leveling",
         "recollectionDescription": ""
     },
     "I35": {
         "recollectionString": "Hysterical",
         "recollectionSprite": "spr_Hysterical_Art",
-        "recollectionExtraStats": "+9 State +4 Paranoia",
+        "recollectionExtraStats": "+Paranoia Then State x2 +30% Faster Leveling",
         "recollectionDescription": ""
     },
     "I36": {
         "recollectionString": "Empty",
         "recollectionSprite": "spr_Empty_Art",
-        "recollectionExtraStats": "+11 State +4 Despair",
+        "recollectionExtraStats": "+Despair Then State x2 +60% Faster Leveling",
         "recollectionDescription": ""
     },
     

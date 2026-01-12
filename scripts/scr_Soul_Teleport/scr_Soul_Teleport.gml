@@ -132,7 +132,7 @@ function scr_Soul_Teleport(_evasion = false, _costs_money = true, _xx = obj_Astr
 	scr_D12_Activate();
 	//scr_U03_Off();
 	
-	var _calc_tele_delay = (_base_tele_delay - tdelayconservation) / ((40 + global.soulperception + global.soulperceptionTemp) / 40) / (tdelayconservationfactor)
+	var _calc_tele_delay = (_base_tele_delay - tdelayconservation) / (tdelayconservationfactor)
 	
 	scr_T05(_xstar, _ystar, _calc_tele_delay);
 	if !_link {
@@ -141,6 +141,6 @@ function scr_Soul_Teleport(_evasion = false, _costs_money = true, _xx = obj_Astr
     
 	if _costs_money {
 		tdelay += _calc_tele_delay;
-		senergy -= (30 - tenergyconservation) / ((40 + global.soulperception + global.soulperceptionTemp) / 40) / tenergyconservationfactor;
+		senergy -= (30 - tenergyconservation) / tenergyconservationfactor;
 	}
 }

@@ -6,7 +6,7 @@ if spirit = "Bliss" {
     global.soulbliss++;
 }
 if spirit = "Vanity" {
-    global.soulvanity++;
+    global.soulassurance++;
 }
 if spirit = "Loathing" {
     global.soulloathing++;

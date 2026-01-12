@@ -13,7 +13,7 @@ function scr_Collect_Income() {
 	        global.soulbliss++;
 	    }
 	    if spirit = "Vanity" {
-	        global.soulvanity++;
+	        global.soulassurance++;
 	    }
 	    if spirit = "Loathing" {
 	        global.soulloathing++;

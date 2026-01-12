@@ -48,7 +48,7 @@ function scr_Initial_Item_Memory_Get(_stacks = 1){
 	
 	//show_debug_message("upgrade: " + string(recollectionUpgrade))
 	
-	scr_Stat_Item_Extra_Stats(_stacks);
+	//scr_Stat_Item_Extra_Stats(_stacks);
 	
 	
 	itemGroup = string_letters(itemVal);

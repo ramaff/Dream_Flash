@@ -28,7 +28,7 @@ if corporealHit > 0 {
 		
 		current_weapon_stats.Shot_Point_Angle = 1;
         
-        Shot_ID = instance_id_get( instance_count ) + glumcount;
+        Shot_ID = real(id) + glumcount;
     
         glumcount++
     

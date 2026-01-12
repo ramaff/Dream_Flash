@@ -122,12 +122,14 @@ function scr_Load_Run() {
 	    global.souldespair = ini_read_real("Run","souldespair",0);
 	    global.soulparanoia = ini_read_real("Run","soulparanoia",0);
 	    global.soulloathing = ini_read_real("Run","soulloathing",0);
-	    global.soulvanity = ini_read_real("Run","soulvanity",0);
+	    global.soulassurance = ini_read_real("Run","soulassurance",0);
 	    global.soulbliss = ini_read_real("Run","soulbliss",0);
 	    global.soulhope = ini_read_real("Run","soulhope",0);
     
 	    global.soul_recall = ini_read_real("Run","soul_recall",0);
 	    global.soul_xp = ini_read_real("Run","soul_xp",0);
+	    global.soul_xp_threshold = ini_read_real("Run","soul_xp_threshold",0);
+	    global.soul_xp_threshold_mult = ini_read_real("Run","soul_xp_threshold_mult",0);
 	    global.soul_level = ini_read_real("Run","soul_level",0);
 		global.chaptertime = ini_read_real("Run","chaptertime",0);
 		global.glasstime = ini_read_real("Run","glasstime",0);

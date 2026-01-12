@@ -7,7 +7,7 @@ function scr_Room_Change_Variables() {
 	global.soulstateTemp = 0;
 	global.soulhopeTemp = 0;
 	global.soulblissTemp = 0;
-	global.soulvanityTemp = 0;
+	global.soulassuranceTemp = 0;
 	global.soulloathingTemp = 0;
 	global.soulparanoiaTemp = 0;
 	global.souldespairTemp = 0;

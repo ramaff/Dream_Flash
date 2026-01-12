@@ -1208,6 +1208,7 @@
     {"name":"scr_Soul_Firerate_Mult_Tick","order":7,"path":"scripts/scr_Soul_Firerate_Mult_Tick/scr_Soul_Firerate_Mult_Tick.yy",},
     {"name":"scr_Soul_Item_Step_After","order":1,"path":"scripts/scr_Soul_Item_Step_After/scr_Soul_Item_Step_After.yy",},
     {"name":"scr_Soul_Item_Step_Before","order":2,"path":"scripts/scr_Soul_Item_Step_Before/scr_Soul_Item_Step_Before.yy",},
+    {"name":"scr_Soul_Level_Up_Threshold_Set","order":3,"path":"scripts/scr_Soul_Level_Up_Threshold_Set/scr_Soul_Level_Up_Threshold_Set.yy",},
     {"name":"scr_Soul_Movement_Mult_Tick","order":6,"path":"scripts/scr_Soul_Movement_Mult_Tick/scr_Soul_Movement_Mult_Tick.yy",},
     {"name":"scr_Soul_Poison_Omen","order":10,"path":"scripts/scr_Soul_Poison_Omen/scr_Soul_Poison_Omen.yy",},
     {"name":"scr_Soul_Poison_Tick","order":11,"path":"scripts/scr_Soul_Poison_Tick/scr_Soul_Poison_Tick.yy",},

@@ -14,7 +14,6 @@ function scr_Spread_Screen_Wipe() {
 	        with instance_create(xStart,bulletRightY,bullet_type) {
 	            scr_Bullet_Shoot_Properties();
 	            speed = speed;
-	            //direction = other.bullet_direction + (other.dir) * ((40 + random(global.soulparanoia)) / 40);
 				direction = other.bullet_direction + other.dir;
 				scr_Spiritual_Stats_Boss_Bullet_Effects();
 	        }

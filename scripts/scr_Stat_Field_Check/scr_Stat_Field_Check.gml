@@ -5,30 +5,31 @@ function scr_Stat_Field_Check(){
 	
 	// Spawn the next stat field in the queue
 	// If the spawned fields is less than the current level
+	// nah nvm ignore that
 	
 	//if field = "Normal" || field = "Boss" {
 		if global.souldespair >= global.desFieldSpawn {
-			global.desFieldSpawn += 10;
+			global.desFieldSpawn += 8;
 			global.floor[global.currentroom,0] = "Despair Field";
 			scr_Stat_Up_Indication(12, true);
 		} else if global.soulparanoia >= global.parFieldSpawn {
-			global.parFieldSpawn += 10;
+			global.parFieldSpawn += 8;
 			global.floor[global.currentroom,0] = "Paranoia Field";
 			scr_Stat_Up_Indication(11, true);
 		} else if global.soulloathing >= global.loaFieldSpawn {
-			global.loaFieldSpawn += 10;
+			global.loaFieldSpawn += 8;
 			global.floor[global.currentroom,0] = "Loathing Field";
 			scr_Stat_Up_Indication(10, true);
-		} else if global.soulvanity >= global.assFieldSpawn {
-			global.assFieldSpawn += 10;
+		} else if global.soulassurance >= global.assFieldSpawn {
+			global.assFieldSpawn += 8;
 			global.floor[global.currentroom,0] = "Assurance Field";
 			scr_Stat_Up_Indication(9, true);
 		} else if global.soulbliss >= global.blsFieldSpawn {
-			global.blsFieldSpawn += 10;
+			global.blsFieldSpawn += 8;
 			global.floor[global.currentroom,0] = "Bliss Field";
 			scr_Stat_Up_Indication(8, true);
 		} else if global.soulhope >= global.hopFieldSpawn {
-			global.hopFieldSpawn += 10;
+			global.hopFieldSpawn += 8;
 			global.floor[global.currentroom,0] = "Hope Field";
 			scr_Stat_Up_Indication(7, true);
 		} else if global.soulstrength >= global.strFieldSpawn {
@@ -58,8 +59,5 @@ function scr_Stat_Field_Check(){
 		} else if instance_number(obj_Item_Parent) = 0 {
 			global.floor[global.currentroom,0] = "Normal";
 		}
-	//}
-	//if instance_number(obj_Item_Parent) = 0 and field != "Normal" and field != "Boss" and instance_number(obj_Potential_For_Anything) = 0 {
-	//	global.floor[global.currentroom,0] = "Normal";
-	//}
+
 }

@@ -4,8 +4,10 @@ function scr_Hard_Coded_Item_Stats(itemVal, items_to_add = 1, reload = false) {
 
 	if itemVal = "A00" {
 		if !reload {
-		    global.soulstrength += 5;
-		    obj_Soul_Parent.sstrength += 5;
+		    global.soulstrength += 8;
+		    obj_Soul_Parent.sstrength += 8;
+			global.soul_xp_threshold_mult = 1;
+			scr_Soul_Level_Up_Threshold_Set()
 		    //global.strFields++;
 		}
 	}
@@ -79,8 +81,10 @@ function scr_Hard_Coded_Item_Stats(itemVal, items_to_add = 1, reload = false) {
 
 	if itemVal = "B00" {
 		if !reload {
-		    global.soulvitality += 5;
-		    obj_Soul_Parent.svitality += 5;
+		    global.soulvitality += 8;
+		    obj_Soul_Parent.svitality += 8;
+			global.soul_xp_threshold_mult = 1;
+			scr_Soul_Level_Up_Threshold_Set()
 		}
 	    //global.vitFields++;
 	}
@@ -146,8 +150,10 @@ function scr_Hard_Coded_Item_Stats(itemVal, items_to_add = 1, reload = false) {
 
 	if itemVal = "C00" {
 		if !reload {
-			global.soulessence += 5;
-			obj_Soul_Parent.sessence += 5;
+			global.soulessence += 8;
+			obj_Soul_Parent.sessence += 8;
+			global.soul_xp_threshold_mult = 1;
+			scr_Soul_Level_Up_Threshold_Set()
 		}
 		//global.essFields++;
 	}
@@ -210,8 +216,10 @@ function scr_Hard_Coded_Item_Stats(itemVal, items_to_add = 1, reload = false) {
 
 	if itemVal = "D00" {
 		if !reload {
-			global.souldexterity += 5;
-			obj_Soul_Parent.sdexterity += 5;
+			global.souldexterity += 8;
+			obj_Soul_Parent.sdexterity += 8;
+			global.soul_xp_threshold_mult = 1;
+			scr_Soul_Level_Up_Threshold_Set()
 		}
 		//global.dexFields++;
 	}
@@ -287,8 +295,10 @@ function scr_Hard_Coded_Item_Stats(itemVal, items_to_add = 1, reload = false) {
 
 	if itemVal = "E00" {
 		if !reload {
-			global.soulperception += 5;
-			obj_Soul_Parent.sperception += 5;
+			global.soulperception += 8;
+			obj_Soul_Parent.sperception += 8;
+			global.soul_xp_threshold_mult = 1;
+			scr_Soul_Level_Up_Threshold_Set()
 		}
 		//global.perFields++;
 	}
@@ -361,8 +371,10 @@ function scr_Hard_Coded_Item_Stats(itemVal, items_to_add = 1, reload = false) {
 	
 	if itemVal = "F00" {
 		if !reload {
-			global.soulstate += 5;
-			obj_Soul_Parent.sstate += 5;
+			global.soulstate += 8;
+			obj_Soul_Parent.sstate += 8;
+			global.soul_xp_threshold_mult = 1;
+			scr_Soul_Level_Up_Threshold_Set()
 		}
 		global.staFields++;
 	}
@@ -508,67 +520,96 @@ function scr_Hard_Coded_Item_Stats(itemVal, items_to_add = 1, reload = false) {
 		
 			var emNum = string_digits(itemVal)
 			var spirNum = 1 + ((emNum - 1) mod 6);
-			var upAmt = 2;
+			global.soul_xp_threshold_mult = 1.6;
+			
+			var _repeat_amt = 1
 		
 			if spirNum = 2 {
 				upAmt = 3
+				global.soul_xp_threshold_mult = 1.3;
 			}
 			if spirNum = 3 {
-				upAmt = 4;	
+				upAmt = 4;
+				global.soul_xp_threshold_mult = 1.1;
 			}
 			if spirNum = 4 {
 				upAmt = 7;
+				_repeat_amt = 2
+				global.soul_xp_threshold_mult = 0.9;
 			}
 			if spirNum = 5 {
 				upAmt = 9;	
+				_repeat_amt = 2
+				global.soul_xp_threshold_mult = 0.75;
 			}
 			if spirNum = 6 {
 				upAmt = 11;	
+				_repeat_amt = 2
+				global.soul_xp_threshold_mult = 0.625;
 			}
+			scr_Soul_Level_Up_Threshold_Set()
 		
 			if emNum > 0 and emNum <= 6 {
-				global.soulstrength += upAmt;
-				obj_Soul_Parent.sstrength += upAmt;
+				//global.soulstrength += upAmt;
+				//obj_Soul_Parent.sstrength += upAmt;
+				repeat(_repeat_amt) {
+					global.soul_field_queue[array_length(global.soul_field_queue)] = "Strength"
+				}
 			}
 			if emNum > 6 and emNum <= 12 {
-				global.soulvitality += upAmt;
-				obj_Soul_Parent.svitality += upAmt;
+				//global.soulvitality += upAmt;
+				//obj_Soul_Parent.svitality += upAmt;
+				repeat(_repeat_amt) {
+					global.soul_field_queue[array_length(global.soul_field_queue)] = "Vitality"
+				}
 			}
 			if emNum > 12 and emNum <= 18 {
-				global.soulessence += upAmt;
-				obj_Soul_Parent.sessence += upAmt;
+				//global.soulessence += upAmt;
+				//obj_Soul_Parent.sessence += upAmt;
+				repeat(_repeat_amt) {
+					global.soul_field_queue[array_length(global.soul_field_queue)] = "Essence"
+				}
 			}
 			if emNum > 18 and emNum <= 24 {
-				global.souldexterity += upAmt;
-				obj_Soul_Parent.sdexterity += upAmt;
+				//global.souldexterity += upAmt;
+				//obj_Soul_Parent.sdexterity += upAmt;
+				repeat(_repeat_amt) {
+					global.soul_field_queue[array_length(global.soul_field_queue)] = "Dexterity"
+				}
 			}
 			if emNum > 24 and emNum <= 30 {
-				global.soulperception += upAmt;
-				obj_Soul_Parent.sperception += upAmt;
+				//global.soulperception += upAmt;
+				//obj_Soul_Parent.sperception += upAmt;
+				repeat(_repeat_amt) {
+					global.soul_field_queue[array_length(global.soul_field_queue)] = "Perception"
+				}
 			}
 			if emNum > 30 and emNum <= 36 {
-				global.soulstate += upAmt;
-				obj_Soul_Parent.sstate += upAmt;
+				//global.soulstate += upAmt;
+				//obj_Soul_Parent.sstate += upAmt;
+				repeat(_repeat_amt) {
+					global.soul_field_queue[array_length(global.soul_field_queue)] = "State"
+				}
 			}
 		
 			if spirNum = 1 {
-				global.soulhope += 4;
+				global.soulhope += 8;
 			}
 			if spirNum = 2 {
-				global.soulbliss += 4;
+				global.soulbliss += 8;
 			}
 			if spirNum = 3 {
-				global.soulvanity += 4;
+				global.soulassurance += 8;
 			}
 			if spirNum = 4 {
-				global.soulloathing += 4;
+				global.soulloathing += 8;
 				scr_Spirit_Add_Commands();
 			}
 			if spirNum = 5 {
-				global.soulparanoia += 4;
+				global.soulparanoia += 8;
 			}
 			if spirNum = 6 {
-				global.souldespair += 4;
+				global.souldespair += 8;
 				scr_Spirit_Add_Commands();
 			}
 		
@@ -926,41 +967,41 @@ function scr_Hard_Coded_Item_Stats(itemVal, items_to_add = 1, reload = false) {
 		if itemVal = "R01" {
 		    global.soul_recall += 55;
 		    global.soul_xp += 55;
-		    global.souldespair += 5;
+		    global.souldespair += 8;
 		    scr_Spirit_Add_Commands();
 		    //global.R[1]++;
 		}
 		if itemVal = "R02" {
 		    global.soul_recall += 45;
 		    global.soul_xp += 45;
-		    global.soulparanoia += 5;
+		    global.soulparanoia += 8;
 		    //global.R[2]++;
 		}
 		if itemVal = "R03" {
 		    global.soul_recall += 35;
 		    global.soul_xp += 35;
-		    global.soulloathing += 5;
+		    global.soulloathing += 8;
 		    scr_Spirit_Add_Commands();
 		    //global.R[3]++;
 		}
 		if itemVal = "R04" {
 		    global.soul_recall += 20;
 		    global.soul_xp += 20;
-		    global.soulvanity += 5;
+		    global.soulassurance += 8;
 			scr_Spirit_Add_Commands();
 		    //global.R[4]++;
 		}
 		if itemVal = "R05" {
 		    global.soul_recall += 15;
 		    global.soul_xp += 15;
-		    global.soulbliss += 5;
+		    global.soulbliss += 8;
 			scr_Spirit_Add_Commands();
 		    //global.R[5]++;
 		}
 		if itemVal = "R06" {
 		    global.soul_recall += 10;
 		    global.soul_xp += 10;
-		    global.soulhope += 5;
+		    global.soulhope += 8;
 			scr_Spirit_Add_Commands();
 		    //global.R[6]++;
 		}
@@ -976,7 +1017,7 @@ function scr_Hard_Coded_Item_Stats(itemVal, items_to_add = 1, reload = false) {
 	if itemVal = "S05" {
 		if !reload {
 			global.soulparanoia += 2;
-			global.soulvanity += 2;
+			global.soulassurance += 2;
 		}
 		scr_S05()
 	}
@@ -1022,7 +1063,7 @@ function scr_Hard_Coded_Item_Stats(itemVal, items_to_add = 1, reload = false) {
 	
 			global.soulhope++;
 			global.soulbliss++;
-			global.soulvanity++;
+			global.soulassurance++;
 		}
 	    //global.V[1]++;
 	}
@@ -1046,7 +1087,7 @@ function scr_Hard_Coded_Item_Stats(itemVal, items_to_add = 1, reload = false) {
 	if itemVal = "V05" {
 		if !reload {
 			global.soulparanoia += 6;
-			global.soulvanity += 2;
+			global.soulassurance += 2;
 			scr_Stat_Up_Indication(9, false)
 			scr_Stat_Up_Indication(11, false)
 			scr_Stat_Up_Indication(11, false)

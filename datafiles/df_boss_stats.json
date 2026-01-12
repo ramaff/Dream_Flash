@@ -1451,9 +1451,9 @@
         "Boss 059": {
             "Name": "Will o' the Wisp",
             "Recollection_Sprite": "reco_will_wisp",
-            "Health_Phase_1": 130,
+            "Health_Phase_1": 160,
             "Defense_Phase_1": 0,
-            "Boss_Danger": 1,
+            "Boss_Danger": 1.5,
             "Bullet_Speed": 2.5,
             "Move_Speed": 2.5,
             "Palette": "spr_sleep_walker_palette",

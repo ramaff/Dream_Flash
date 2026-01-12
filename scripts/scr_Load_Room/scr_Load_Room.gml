@@ -21,7 +21,7 @@ function scr_Load_Room() {
 	        global.soulbliss++;
 	    }
 	    if spirit = "Vanity" {
-	        global.soulvanity++;
+	        global.soulassurance++;
 	    }
 	    if spirit = "Loathing" {
 	        global.soulloathing++;
