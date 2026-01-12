@@ -32,7 +32,7 @@ function scr_Shop_Item_Spawn() {
 		}
 	}
 	
-	var baseCost = 20 + (global.currentchapter * 10);
+	var baseCost = 25 + ((global.currentchapter * global.currentchapter) * 5);
 
 	repeat(1)
 	{       
