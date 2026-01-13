@@ -6,8 +6,8 @@
 function scr_XC06_Cost_Adjustment(_current_weapon_stats){
 
 	if global.XC[6] > 0 {
-		_current_weapon_stats.Real_Essence_Cost = _current_weapon_stats.Real_Essence_Cost * 0.66;
-		_current_weapon_stats.Real_Weapon_Delay = _current_weapon_stats.Real_Weapon_Delay * 0.83;
+		_current_weapon_stats.Real_Essence_Cost = _current_weapon_stats.Real_Essence_Cost * 0.6;
+		_current_weapon_stats.Real_Weapon_Delay = _current_weapon_stats.Real_Weapon_Delay * 0.7;
 	}
 
 }

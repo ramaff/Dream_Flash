@@ -18,11 +18,11 @@ function scr_XB02(_cw) {
 
 	if _procs >= 1 {
 		
-		var _burst_pow = 0.4;
+		var _burst_pow = 0.5;
 		var _burst_size = 0.7;
 		var _burst_life = 0.55;
-		var _burst_speed = 1.2
-		var _burst_amount = 5
+		var _burst_speed = 1.3
+		var _burst_amount = 6
 		repeat(_procs - 1) {
 			_burst_pow = _burst_pow * 0.6;
 			_burst_size = _burst_size * 0.8;

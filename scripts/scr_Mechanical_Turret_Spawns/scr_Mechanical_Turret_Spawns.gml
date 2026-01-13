@@ -4,7 +4,7 @@ function scr_Mechanical_Turret_Spawns(){
 	if obj_Soul_Parent.scurrentstate == "Mechanical" {
 		global.turretSpawnTime--;
 	} else if (global.F[5] >= 1 and obj_Soul_Parent.stransformedstate == "Mechanical") {
-		global.turretSpawnTime -= 0.1 * global.F[5];
+		global.turretSpawnTime -= 0.15 * global.F[5];
 	}
 	
 	if (obj_Soul_Parent.scurrentstate == "Mechanical" || (global.F[5] > 0 and obj_Soul_Parent.stransformedstate == "Mechanical")) and global.turretSpawnTime <= 0 {

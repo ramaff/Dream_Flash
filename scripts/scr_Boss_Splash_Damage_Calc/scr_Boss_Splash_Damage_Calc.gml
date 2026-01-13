@@ -29,7 +29,7 @@ function scr_Boss_Splash_Damage_Calc() {
 		_shot_dam = 0;
 	}
 	
-	var downward_boost = global.downwardSpiralBoost / 2
+	var downward_boost = global.downwardSpiralBoost / 1.333
 	
 	_shot_dam += _shot_dam * downward_boost;
 	bossweak += bossweak * downward_boost;
