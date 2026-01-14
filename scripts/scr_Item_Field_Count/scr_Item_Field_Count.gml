@@ -2,7 +2,7 @@
 // https://help.yoyogames.com/hc/en-us/articles/360005277377 for more information
 function scr_Item_Field_Count(_base_count = 2){
 	
-	_base_count = _base_count + floor((global.soulhope + random(100 + global.soulhope * 3)) / 100);
+	_base_count = _base_count;
 	
 	var fr = frac(global.extraitems);
 	_base_count += global.extraitems - fr;

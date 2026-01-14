@@ -1,4 +1,10 @@
 function scr_Item_Stuff_Spawn() {
+	
+	if global.A[11] > 0 {
+		with instance_create(x - 200,y - 200,obj_Strong_Personality) {
+			//scr_Basic_Teleport();
+		}
+	}
 
 	if global.V[4] > 0 {
 	    repeat(global.V[4]) {

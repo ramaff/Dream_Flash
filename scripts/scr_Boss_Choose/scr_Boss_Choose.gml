@@ -9,7 +9,7 @@ function scr_Boss_Choose(roomNum, exclude, difficultyAdd = 0) {
 		stage_base_diff += 2;
 	}
 	
-	roomDifficulty = stage_base_diff + ((3.5 * simRoom) / 10) + (global.souldespair / 8);
+	roomDifficulty = stage_base_diff + ((3.5 * simRoom) / 10);
 
 	roomDifficulty += global.bossdifficultyadd;
 	

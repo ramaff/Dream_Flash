@@ -74,7 +74,7 @@ function scr_Boss_Beam_Attack() {
 	            if collision_line(other.x,other.y,other.finx[other.boss_beam_num],other.finy[other.boss_beam_num],self,false,false) {
 	                if soulinvincibility = 0 {
     
-	                damageamount = other.bullet_power - (global.soulhope / 40) + (global.souldespair / 20) + (global.soulloathing / 15);
+	                damageamount = other.bullet_power;
 	                defenseamount = scr_Soul_Defense_Calc(id)
 	                defenseamount = defenseamount / 10;
                 
@@ -86,7 +86,7 @@ function scr_Boss_Beam_Attack() {
 				if collision_line(other.x,other.y,other.finx[other.boss_beam_num],other.finy[other.boss_beam_num],self,false,false) {
 	                if soulinvincibility = 0 {
     
-	                damageamount = other.bullet_power - (global.soulhope / 40) + (global.souldespair / 20) + (global.soulloathing / 15);
+	                damageamount = other.bullet_power;
 	                defenseamount = scr_Soul_Defense_Calc(id)
 	                defenseamount = defenseamount / 10;
 				

@@ -1776,7 +1776,7 @@
     "XB01": {
         "recollectionString": "Paranoid",
         "recollectionSprite": "spr_Paranoid_Art",
-        "recollectionExtraStats": "-50% Soul/Boss Accuracy +20% Soul/Boss Firerate +40% Bullet Speed",
+        "recollectionExtraStats": "-50% Soul/Boss Accuracy +25% Soul/Boss Firerate +40% Bullet Speed",
         "recollectionDescription": "Being paranoid lowers everyone's aim. It also increases the attack rate of everyone while speeding up boss bullets."
     },
     "XB02": {

@@ -7,7 +7,7 @@ if soulinvincibility <= 0 and other.bulletpower > 0 and soul_underground <= 0 {
 		}
 	}
     
-    var damageamount = other.bulletpower + (global.souldespair / 20) + (global.soulloathing / 10);
+    var damageamount = other.bulletpower;
     var defenseamount = scr_Soul_Defense_Calc(id)
     damageamount = scr_B05_v2(damageamount, false);
 	

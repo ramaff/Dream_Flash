@@ -1,10 +1,13 @@
 function scr_A14() {
 
-	var _dmg = (global.A[14]) * shot_stats.Shot_Power / 62.5;
-	var _size = 10 * sqrt(sqrt(sprite_get_width(sprite_index) * sprite_get_height(sprite_index))) * shot_stats.Shot_Size
+	var _dmg = (global.A[14]) * shot_stats.Shot_Power / 60;
+	var _size = 15 * sqrt(sqrt(sprite_get_width(sprite_index) * sprite_get_height(sprite_index))) * shot_stats.Shot_Size
 	with(obj_Boss_Parent) {
 	    if distance_to_object(other) <= _size {
 	        bosshealth -= _dmg;
+			if global.roomtime mod 10 = 0 {
+				scr_setup_dmg_indicator(x,y, _dmg * 10, c_white);
+			}
 	    }
 	}
 

@@ -38,7 +38,7 @@ function scr_Hit_Reactions(_damage_amount, _defense_amount) {
 	scr_S01();
 	scr_S06();
 	scr_P03();
-	scr_A11();
+	//scr_A11();
 	scr_XA04();
 	scr_XC04();
 	

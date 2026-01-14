@@ -200,8 +200,7 @@ function scr_Boss_Stats_Setup(_version=1) {
 	    if boost = 1 {
 	        bossattackspeed += 0.33;
 	    }
-    
-	    bossattackspeed = bossattackspeed * ((200 + global.souldespair + global.souldespairTemp) / 200) * ((200 + global.soulparanoia + global.soulparanoiaTemp) / 200) * ((200 + global.soulassurance + global.soulassuranceTemp) / 200);
+   
 		bossattackspeed = bossattackspeed * global.bossfireratefactor;
 	    bossbulletspeed = bossbulletspeed;
 	    bossaccuracy =  max(0.1, global.bossaccuracyfactor) * bossaccuracy / ((20 + random(global.soulparanoia + global.soulparanoiaTemp)) / 20);
@@ -232,7 +231,7 @@ function scr_Boss_Stats_Setup(_version=1) {
 		bosscontactdamage = bosspower;
 		
 		roomNum = global.currentroom;
-		roomDifficulty = 1.5 + (4 * (global.currentchapter - 1)) + ((2.5 * roomNum) / 10) + (global.souldespair / 8) + (global.soulloathing / 10);
+		roomDifficulty = 1.5 + (4 * (global.currentchapter - 1)) + ((2.5 * roomNum) / 10);
 
 		if global.currentchapter = 2 {
 			roomDifficulty += ((0.5 * roomNum) / 10);
