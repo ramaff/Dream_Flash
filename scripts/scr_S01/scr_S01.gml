@@ -5,23 +5,18 @@ function scr_S01_Status_Build_Up() {
 	var _near_bulls = 0
 	var _soul = id;
 	with(obj_soul_hurt_v2) {
-		if distance_to_object(_soul) < 75 {
+		if distance_to_object(_soul) < 90 {
 			_near_bulls++;	
 		}
 	}
 	with(obj_Soul_Hurt) {
-		if distance_to_object(_soul) < 75 {
+		if distance_to_object(_soul) < 90 {
 			_near_bulls++;	
 		}
 	}
 	
 	if _near_bulls > 0 {
-		var _curr_defensive = 0
-		if variable_struct_exists(soul_step_status_effects, "defensive_omen") {
-			if array_length(soul_step_status_effects.defensive_omen) > 0 {
-				_curr_defensive = soul_step_status_effects.defensive_omen[0].duration
-			}
-		}
+		var _curr_defensive = scr_Get_Status_Time("defensive_omen");
 		var _status_effect = {
 			"duration": _curr_defensive + 5 + _near_bulls,
 			"tick_script": scr_Soul_Defensive_Omen,
@@ -38,21 +33,7 @@ function scr_S01_Status_Build_Up() {
 }
 
 function scr_Soul_Defensive_Omen() {
-	if variable_struct_exists(soul_step_status_effects, "defensive_omen") {
-		if array_length(soul_step_status_effects.defensive_omen) > 0 {
-			var _curr_defensive = soul_step_status_effects.defensive_omen[0].duration
-			if _curr_defensive > 360 {
-				soul_step_status_effects.defensive_omen[0].duration -= 360;
-				if variable_struct_exists(soul_draw_status_effects, "defensive_omen") {
-					if array_length(soul_draw_status_effects.defensive_omen) > 0 {
-						soul_draw_status_effects.defensive_omen[0].duration -= 360;
-					}
-				}
-				scr_S01();
-			}
-			//Print_DF(soul_step_status_effects.defensive_omen[0].duration)
-		}
-	}
+	scr_Soul_Step_Omen_Generic("defensive_omen", 360, scr_S01)
 }
 
 function scr_S01() {

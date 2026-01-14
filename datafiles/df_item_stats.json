@@ -71,8 +71,8 @@
     "A11": {
         "recollectionString": "Strong Personality",
         "recollectionSprite": "spr_Radiant_Strength_Item",
-        "recollectionExtraStats": "+Soul Hit Aura",
-        "recollectionDescription": "Field of radiance surrounds your soul. After it builds up or when the soul is hit damage everything nearby and destroy all bullets."
+        "recollectionExtraStats": "+Soul Aura Forcefield",
+        "recollectionDescription": "Field of radiance surrounds your soul. Blocks off bullets/bosses and does damage to them."
     },
     "A12": {
         "recollectionString": "Overwhelming Thoughts",
@@ -133,8 +133,8 @@
     "B06": {
         "recollectionString": "Lovely Personality",
         "recollectionSprite": "spr_Lovely_Personality_Item",
-        "recollectionExtraStats": "+Protective Barrier",
-        "recollectionDescription": "Builds up a barrier over time around the soul that pushes back bullets and bosses."
+        "recollectionExtraStats": "+40% Heart Effect Boost +Upgrades 1 Heart",
+        "recollectionDescription": "Increases the special effect of hearts by 40%. Also upgrades one of your lesser hearts into a special heart."
     },
     "B07": {
         "recollectionString": "Encouragement",
@@ -316,7 +316,7 @@
     "D05": {
         "recollectionString": "Flight Response",
         "recollectionSprite": "spr_Flight_Response_Item",
-        "recollectionExtraStats": "Temporary +40% Move Speed and +60% Think Speed",
+        "recollectionExtraStats": "Temporary +50% Move/Think Speed and 1/2 Second of Invincibility",
         "recollectionDescription": "Boosts your speed and firerate by a massive amount when near bullets or hit for 4 seconds.",
         "Snake_Credit": 0.5
     },
