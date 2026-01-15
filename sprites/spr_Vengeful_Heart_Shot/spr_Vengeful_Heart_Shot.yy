@@ -2,17 +2,22 @@
   "$GMSprite":"v2",
   "%Name":"spr_Vengeful_Heart_Shot",
   "bboxMode":0,
-  "bbox_bottom":98,
-  "bbox_left":26,
-  "bbox_right":103,
-  "bbox_top":30,
+  "bbox_bottom":118,
+  "bbox_left":9,
+  "bbox_right":121,
+  "bbox_top":12,
   "collisionKind":1,
   "collisionTolerance":0,
   "DynamicTexturePage":false,
   "edgeFiltering":false,
   "For3D":false,
   "frames":[
-    {"$GMSpriteFrame":"v1","%Name":"3a13adb3-992d-42ca-ba1d-c2f80a675bba","name":"3a13adb3-992d-42ca-ba1d-c2f80a675bba","resourceType":"GMSpriteFrame","resourceVersion":"2.0",},
+    {"$GMSpriteFrame":"v1","%Name":"548e0094-92c2-45f2-b145-330bc4618b6b","name":"548e0094-92c2-45f2-b145-330bc4618b6b","resourceType":"GMSpriteFrame","resourceVersion":"2.0",},
+    {"$GMSpriteFrame":"v1","%Name":"5e97c3b2-487f-4859-91ec-f8a894f67096","name":"5e97c3b2-487f-4859-91ec-f8a894f67096","resourceType":"GMSpriteFrame","resourceVersion":"2.0",},
+    {"$GMSpriteFrame":"v1","%Name":"1cb789e8-5ce0-4b6d-a329-256d39189f3e","name":"1cb789e8-5ce0-4b6d-a329-256d39189f3e","resourceType":"GMSpriteFrame","resourceVersion":"2.0",},
+    {"$GMSpriteFrame":"v1","%Name":"e21904a6-f7f3-4ee1-94a0-72a0ecba60af","name":"e21904a6-f7f3-4ee1-94a0-72a0ecba60af","resourceType":"GMSpriteFrame","resourceVersion":"2.0",},
+    {"$GMSpriteFrame":"v1","%Name":"2aa80118-66e5-4430-a1df-cc398e8da1d6","name":"2aa80118-66e5-4430-a1df-cc398e8da1d6","resourceType":"GMSpriteFrame","resourceVersion":"2.0",},
+    {"$GMSpriteFrame":"v1","%Name":"141d0efc-9af2-4aca-a787-ef21ab99fb50","name":"141d0efc-9af2-4aca-a787-ef21ab99fb50","resourceType":"GMSpriteFrame","resourceVersion":"2.0",},
   ],
   "gridX":0,
   "gridY":0,
@@ -49,7 +54,7 @@
     },
     "eventStubScript":null,
     "eventToFunction":{},
-    "length":1.0,
+    "length":6.0,
     "lockOrigin":false,
     "moments":{
       "$KeyframeStore<MomentsEventKeyframe>":"",
@@ -59,7 +64,7 @@
     },
     "name":"spr_Vengeful_Heart_Shot",
     "playback":1,
-    "playbackSpeed":2.0,
+    "playbackSpeed":6.0,
     "playbackSpeedType":0,
     "resourceType":"GMSequence",
     "resourceVersion":"2.0",
@@ -68,7 +73,24 @@
     "timeUnits":1,
     "tracks":[
       {"$GMSpriteFramesTrack":"","builtinName":0,"events":[],"inheritsTrackColour":true,"interpolation":1,"isCreationTrack":false,"keyframes":{"$KeyframeStore<SpriteFrameKeyframe>":"","Keyframes":[
-            {"$Keyframe<SpriteFrameKeyframe>":"","Channels":{"0":{"$SpriteFrameKeyframe":"","Id":{"name":"3a13adb3-992d-42ca-ba1d-c2f80a675bba","path":"sprites/spr_Vengeful_Heart_Shot/spr_Vengeful_Heart_Shot.yy",},"resourceType":"SpriteFrameKeyframe","resourceVersion":"2.0",},},"Disabled":false,"id":"77d763ea-2c10-41bf-9da6-47cce2364809","IsCreationKey":false,"Key":0.0,"Length":1.0,"resourceType":"Keyframe<SpriteFrameKeyframe>","resourceVersion":"2.0","Stretch":false,},
+            {"$Keyframe<SpriteFrameKeyframe>":"","Channels":{
+                "0":{"$SpriteFrameKeyframe":"","Id":{"name":"548e0094-92c2-45f2-b145-330bc4618b6b","path":"sprites/spr_Vengeful_Heart_Shot/spr_Vengeful_Heart_Shot.yy",},"resourceType":"SpriteFrameKeyframe","resourceVersion":"2.0",},
+              },"Disabled":false,"id":"401d8790-000e-452a-814c-93400e3959e2","IsCreationKey":false,"Key":0.0,"Length":1.0,"resourceType":"Keyframe<SpriteFrameKeyframe>","resourceVersion":"2.0","Stretch":false,},
+            {"$Keyframe<SpriteFrameKeyframe>":"","Channels":{
+                "0":{"$SpriteFrameKeyframe":"","Id":{"name":"5e97c3b2-487f-4859-91ec-f8a894f67096","path":"sprites/spr_Vengeful_Heart_Shot/spr_Vengeful_Heart_Shot.yy",},"resourceType":"SpriteFrameKeyframe","resourceVersion":"2.0",},
+              },"Disabled":false,"id":"74e4fa65-17e8-47ff-96cf-99778c9a7720","IsCreationKey":false,"Key":1.0,"Length":1.0,"resourceType":"Keyframe<SpriteFrameKeyframe>","resourceVersion":"2.0","Stretch":false,},
+            {"$Keyframe<SpriteFrameKeyframe>":"","Channels":{
+                "0":{"$SpriteFrameKeyframe":"","Id":{"name":"1cb789e8-5ce0-4b6d-a329-256d39189f3e","path":"sprites/spr_Vengeful_Heart_Shot/spr_Vengeful_Heart_Shot.yy",},"resourceType":"SpriteFrameKeyframe","resourceVersion":"2.0",},
+              },"Disabled":false,"id":"b1f5676b-cefc-4ade-b3e6-26ffe1448d76","IsCreationKey":false,"Key":2.0,"Length":1.0,"resourceType":"Keyframe<SpriteFrameKeyframe>","resourceVersion":"2.0","Stretch":false,},
+            {"$Keyframe<SpriteFrameKeyframe>":"","Channels":{
+                "0":{"$SpriteFrameKeyframe":"","Id":{"name":"e21904a6-f7f3-4ee1-94a0-72a0ecba60af","path":"sprites/spr_Vengeful_Heart_Shot/spr_Vengeful_Heart_Shot.yy",},"resourceType":"SpriteFrameKeyframe","resourceVersion":"2.0",},
+              },"Disabled":false,"id":"dda12f05-80c3-4ac6-b08f-7386527c8c71","IsCreationKey":false,"Key":3.0,"Length":1.0,"resourceType":"Keyframe<SpriteFrameKeyframe>","resourceVersion":"2.0","Stretch":false,},
+            {"$Keyframe<SpriteFrameKeyframe>":"","Channels":{
+                "0":{"$SpriteFrameKeyframe":"","Id":{"name":"2aa80118-66e5-4430-a1df-cc398e8da1d6","path":"sprites/spr_Vengeful_Heart_Shot/spr_Vengeful_Heart_Shot.yy",},"resourceType":"SpriteFrameKeyframe","resourceVersion":"2.0",},
+              },"Disabled":false,"id":"ace003d9-9a22-4da6-842c-c1fd1d68802e","IsCreationKey":false,"Key":4.0,"Length":1.0,"resourceType":"Keyframe<SpriteFrameKeyframe>","resourceVersion":"2.0","Stretch":false,},
+            {"$Keyframe<SpriteFrameKeyframe>":"","Channels":{
+                "0":{"$SpriteFrameKeyframe":"","Id":{"name":"141d0efc-9af2-4aca-a787-ef21ab99fb50","path":"sprites/spr_Vengeful_Heart_Shot/spr_Vengeful_Heart_Shot.yy",},"resourceType":"SpriteFrameKeyframe","resourceVersion":"2.0",},
+              },"Disabled":false,"id":"9f5864a0-5b21-4065-9834-c8e0e8185817","IsCreationKey":false,"Key":5.0,"Length":1.0,"resourceType":"Keyframe<SpriteFrameKeyframe>","resourceVersion":"2.0","Stretch":false,},
           ],"resourceType":"KeyframeStore<SpriteFrameKeyframe>","resourceVersion":"2.0",},"modifiers":[],"name":"frames","resourceType":"GMSpriteFramesTrack","resourceVersion":"2.0","spriteId":null,"trackColour":0,"tracks":[],"traits":0,},
     ],
     "visibleRange":null,

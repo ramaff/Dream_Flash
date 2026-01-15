@@ -14,7 +14,7 @@ if soulinvincibility <= 0 and other.bullet_stats.bullet_power > 0 and soul_under
 	hitType = "Nonboss";
 	
     if (damageamount > defenseamount) {
-        scr_B14_Bullet(damageamount, defenseamount, other.bullet_stats.bullet_origin);
+        //scr_B14_Bullet(damageamount, defenseamount, other.bullet_stats.bullet_origin);
         scr_Soul_Spirit_Check_Bullet(other.bullet_stats.bullet_origin);
     }
     

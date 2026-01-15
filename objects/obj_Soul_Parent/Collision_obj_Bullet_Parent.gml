@@ -13,7 +13,7 @@ if soulinvincibility <= 0 and soul_underground <= 0 {
     damageamount = scr_H15(damageamount);
     
     if (damageamount > defenseamount) {
-		scr_B14_Bullet(damageamount, defenseamount, other.bulletobj);
+		//scr_B14_Bullet(damageamount, defenseamount, other.bulletobj);
         scr_Soul_Spirit_Check_Bullet(other.bulletobj);
     }
     

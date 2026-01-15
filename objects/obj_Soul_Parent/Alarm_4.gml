@@ -12,7 +12,7 @@ if global.currentheart < 0 {
 } */
 scr_H14();
 
-scr_XC02_Soul_Visual();
+//scr_XC02_Soul_Visual();
 
 var cHeart = Soul_Hearts_Control.heart[global.currentheart, 2]
 if cHeart = 17 {

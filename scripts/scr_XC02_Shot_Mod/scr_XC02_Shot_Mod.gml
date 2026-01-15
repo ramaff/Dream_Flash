@@ -6,7 +6,7 @@
 function scr_XC02_Shot_Mod(){
 	if scr_Chance(15 / global.XC[2]) {
 		
-		shot_stats.Shot_Suck += 0.5 + 1 * global.XC[2];
+		shot_stats.Shot_Suck += 0.5 + (shot_stats.Shot_Power / 20 * (1 + 2 * global.XC[2]));
 		shot_stats.Shot_Suck_Type = 2;
 		
 		shot_stats.Shot_Speed -= shot_stats.Shot_Speed * 0.4;
@@ -27,7 +27,8 @@ function scr_XC02_Shot_Mod(){
 		shot_stats.Shot_Aura_Power = shot_stats.Shot_Power;
 		shot_stats.Shot_Aura_Range = 100; */
 		
-		shot_stats.Shot_Pierce += 1;
+		shot_stats.Shot_Pierce += 5;
+		shot_stats.Shot_Extra_Hits_Frequency = 60;
 		
 		//if shot_stats.Shot_Trail = 0 {
 			shot_stats.Shot_Trail = 3;

@@ -63,11 +63,15 @@ function scr_Hard_Coded_Item_Stats(itemVal, items_to_add = 1, reload = false) {
 		//global.A[10]++;
 	}
 	if itemVal = "A11" {
-	    global.soulcontactdamageadd += 25;
-	    obj_Soul_Parent.scontactdamageadd += 25;
+	   //global.soulcontactdamageadd += 25;
+	    //obj_Soul_Parent.scontactdamageadd += 25;
 	    //global.A[11]++;
 	}
 	if itemVal = "A12" {
+		global.soulenergyconservationfactor += 0.1;
+	    obj_Soul_Parent.senergyconservationfactor += 0.1;
+		global.soulpowerfactor += 1.5;
+	    obj_Soul_Parent.spowerfactor += 1.5;
 	    //global.A[12]++;
 	}
 	if itemVal = "A13" {
@@ -113,11 +117,11 @@ function scr_Hard_Coded_Item_Stats(itemVal, items_to_add = 1, reload = false) {
 	}
 	if itemVal = "B06" {
 	    //global.B[6]++;
-	    //global.soulheartboost += 0.25;
-	    //obj_Soul_Parent.sheartboost += 0.25;
-		/*if !reload {
-			global.B06HeartConversions += 3;
-		} */
+	    global.soulheartboost += 0.4;
+	    obj_Soul_Parent.sheartboost += 0.4;
+		if !reload {
+			global.B06HeartConversions += 1;
+		}
 	}
 	if itemVal = "B07" {
 	    //global.B[7]++;

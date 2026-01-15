@@ -77,7 +77,7 @@
     "A12": {
         "recollectionString": "Overwhelming Thoughts",
         "recollectionSprite": "spr_Overflowing_Power_Item",
-        "recollectionExtraStats": "+33% Nearby Soul Shot Leakage",
+        "recollectionExtraStats": "+33% Nearby Soul Shot Leakage +15% Shot Power +10% Essence Cost",
         "recollectionDescription": "Whenever imagining an attack, power leaks and does extra damage to nearby enemies and dampens bullets."
     },
     "A13": {
@@ -183,7 +183,7 @@
     "B14": {
         "recollectionString": "Catharsis",
         "recollectionSprite": "spr_Punch_Back_Hearts_Item",
-        "recollectionExtraStats": "+500% Revenge Damage",
+        "recollectionExtraStats": "+Bullet Dampen and upto 1200% Revenge Damage",
         "recollectionDescription": "When injured by an attack, hearts inflict punishment upon the source of the damage. The hearts also explode and dampen bullets"
     },
 
