@@ -1,9 +1,9 @@
 {
   "$GMScript":"v1",
-  "%Name":"scr_XA03_Weapon_Mod",
+  "%Name":"scr_XA04_Weapon_Mod",
   "isCompatibility":false,
   "isDnD":false,
-  "name":"scr_XA03_Weapon_Mod",
+  "name":"scr_XA04_Weapon_Mod",
   "parent":{
     "name":"XA Items",
     "path":"folders/Scripts/Item Commands/XA Items.yy",

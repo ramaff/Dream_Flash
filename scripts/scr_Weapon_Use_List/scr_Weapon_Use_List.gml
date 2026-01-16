@@ -1,10 +1,7 @@
 
 
 function scr_Weapon_Use_List(cWP = global.currentweapon, _weap_slot = 0) {
-	var weapStop = 0;
 
-	scr_C08();
-	
 	//cWP = global.currentweapon;
 	
 	var _single_instance_active = scr_single_instance_weapon_active(cWP)
@@ -20,7 +17,7 @@ function scr_Weapon_Use_List(cWP = global.currentweapon, _weap_slot = 0) {
 	_current_weapon_stats.Real_Weapon_Delay = _current_weapon_stats.Delay;
 	//show_debug_message("Weapon Cost: " + string(weaponCost) + ", Weapon Delay: " + string(weaponDelay))
 	
-	_current_weapon_stats.Real_Essence_Cost = scr_Pre_Shoot_Weapon_Essence_Cost(_current_weapon_stats, _single_instance_active, weapStop)
+	_current_weapon_stats.Real_Essence_Cost = scr_Pre_Shoot_Weapon_Essence_Cost(_current_weapon_stats, _single_instance_active)
 	
 	_current_weapon_stats.Real_Weapon_Delay = (_current_weapon_stats.Real_Weapon_Delay - sdelayconservation) / sdelayconservationfactor / ((6 + global.Weap[global.currentweapon]) / 6);	
 	
@@ -40,9 +37,13 @@ function scr_Weapon_Use_List(cWP = global.currentweapon, _weap_slot = 0) {
 			_current_weapon_stats.Real_Weapon_Delay = _current_weapon_stats.Real_Weapon_Delay / 1.25;
 		}
 	}
+	
+	if senergy < _current_weapon_stats.Real_Essence_Cost {
+		scr_C08();	
+	}
 
 	
-	if senergy >= _current_weapon_stats.Real_Essence_Cost || Charge_Hold = 2 || weapStop != 0 || senergy >= smaxenergy { 
+	if senergy >= _current_weapon_stats.Real_Essence_Cost || Charge_Hold = 2 || senergy >= smaxenergy { 
 	
 		global.soulNoShoot = 0;
 		
@@ -122,10 +123,6 @@ function scr_Weapon_Use_List(cWP = global.currentweapon, _weap_slot = 0) {
 		}
 	    sWeaponUseFrame = 1;   
 		global.essencebeamtime++;
-		
-		if weapStop != 0 {
-			senergy = max(0, senergy)	
-		}
 		
 		sWeaponWarmUp += _current_weapon_stats.Real_Weapon_Delay * (2 + (300 / 180));
 		

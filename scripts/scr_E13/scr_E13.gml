@@ -5,14 +5,18 @@ function scr_E13() {
 	    var telebulletnear = 0;
 	    with(obj_Soul_Hurt) {
 	        if distance_to_object(other) <= 75 {
-	            if speed > 0 {
-	                telebulletnear = 1;
-	            }
+	            telebulletnear++;
 	        }
 	    }
-	    if telebulletnear = 1 {
-	        tdelay -= global.E[13];
-			scr_Refresh_Soul(0.3 * global.E[13]);
+		with(obj_soul_hurt_v2) {
+	        if distance_to_object(other) <= 75 {
+	            telebulletnear++;
+	        }
+	    }
+	    if telebulletnear >= 1 {
+			var _uppies = 0.3 * global.E[13] * telebulletnear;
+	        tdelay -= global.E[13] * telebulletnear;
+			scr_Refresh_Soul(_uppies);
 	    }
 
 

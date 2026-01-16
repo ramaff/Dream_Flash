@@ -26,7 +26,7 @@ function scr_Soul_Shot_Boss_Hit(_shot = other) {
 						var pot = min(ex_ess, 10)
 						with instance_create(x,y,obj_Essence_Blop) {
 
-							speed = 16 + random(25);
+							speed = 12 + random(15);
 							direction = random(360);
 							friction = 0.5;
 							potency = pot;

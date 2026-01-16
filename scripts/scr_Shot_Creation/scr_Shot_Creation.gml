@@ -108,7 +108,7 @@ function scr_Shot_Creation(_cw = current_weapon_stats, _prime_shot = false) {
 		var _shot_direction_add = dir * ((40 + random(global.soulparanoia)) / 40) / saccuracy;
 		actual_shot_direction += _shot_direction_add + _cw.Shot_Angle_Relative;
 		
-		actual_shot_direction += scr_XA03_Weapon_Mod();
+		actual_shot_direction += scr_XA04_Weapon_Mod();
 		
 		
 	   // if Shot_Forward = 1 {

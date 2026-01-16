@@ -1,9 +1,9 @@
 {
   "$GMScript":"v1",
-  "%Name":"scr_XA03_Cost_Adjustment",
+  "%Name":"scr_XA04_Cost_Adjustment",
   "isCompatibility":false,
   "isDnD":false,
-  "name":"scr_XA03_Cost_Adjustment",
+  "name":"scr_XA04_Cost_Adjustment",
   "parent":{
     "name":"XA Items",
     "path":"folders/Scripts/Item Commands/XA Items.yy",

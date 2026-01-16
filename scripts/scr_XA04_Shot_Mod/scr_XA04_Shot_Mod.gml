@@ -4,43 +4,33 @@
 // Extra Shot Stats
 
 function scr_XA04_Shot_Mod(){
-	if sprite_index = spr_Seething_Fire_Shot {
-		exit;	
-	}
 	
 	if global.XA[4] > 0 and Soul_Hearts_Control.heart[global.currentheart, 2] = 53 {
-		if shot_stats.Shot_Speed != 0 {
-			shot_stats.Shot_Speed += 2 * global.XA[4];
-			speed = shot_stats.Shot_Speed;
+		repeat(global.XA[4]) {
+			shot_stats.Shot_Life_Span = shot_stats.Shot_Life_Span * 0.6;
+			shot_stats.Shot_Speed += shot_stats.Shot_Speed * 0.33;
+		}
+		speed = shot_stats.Shot_Speed;
+		alarm[0] = shot_stats.Shot_Life_Span;
+		////shot_stats.Shot_Timer = shot_stats.Shot_Life_Span;
+		
+		shot_stats.Shot_Fire += 2 * global.XA[4];
+		
+		shot_stats.Shot_Fire_Ticks += 3;
+		if shot_stats.Shot_Fire_Time = 0 {
+			shot_stats.Shot_Fire_Time = 30;
 		}
 		
-		/*shot_stats.Shot_Fire += 3 * global.XA[4];
-		shot_stats.Shot_Fire_Ticks = 4;
-		shot_stats.Shot_Fire_Time = 30; */
+		shot_stats.Shot_Wave_Direction = (10 * (round(other.sWeaponTicker) mod 2)) - 5
+		shot_stats.Shot_Wave_Acceleration = (2.5 * (round(other.sWeaponTicker) mod 2)) - 1.25;
+		shot_stats.Shot_Wave_Time = 8;
 		
-		scr_Shot_Power_Set(1.2);
-		
-		if shot_stats.Shot_Impact_Type = 0 {
-            shot_stats.Shot_Impact_Type = 1;
-        }
-		
-		shot_stats.Shot_Impact_Power += 4 * global.XA[4];
-        shot_stats.Shot_Impact_Size += 40;
-		if shot_stats.Shot_Impact_Size <= 80 {
-			shot_stats.Shot_Impact_Size = 80;
-		}
-		if shot_stats.Shot_Impact_Power <= 8 {
-			shot_stats.Shot_Impact_Power = 8;	
-		}
-		
-		//if shot_stats.Shot_Trail < 2 {
-			shot_stats.Shot_Trail = 2;
-			shot_stats.Shot_Trail_Sprite = "spr_Soul_Big_Bit";
-			shot_stats.Shot_Trail_Color_1 = c_red;
-			shot_stats.Shot_Trail_Color_2 = c_yellow;
-			shot_stats.Shot_Trail_Life = 10;
-			shot_stats.Shot_Trail_Area = 20;
-			shot_stats.Shot_Trail_Frequency = 2;
-		//}
+		shot_stats.Shot_Trail = 2;
+		shot_stats.Shot_Trail_Sprite = "spr_Soul_Big_Bit";
+		shot_stats.Shot_Trail_Color_1 = c_red;
+		shot_stats.Shot_Trail_Color_2 = c_yellow
+		shot_stats.Shot_Trail_Life = 15;
+		shot_stats.Shot_Trail_Area = 45;
+		shot_stats.Shot_Trail_Frequency = 2;
 	}
 }

@@ -59,7 +59,7 @@ soulCurrentHorizontalSpeed = _speeds.h_speed
 if ((soulCurrentHorizontalSpeed != 0) or (soulCurrentVerticalSpeed != 0)) {
 	
     shealthregenfactor = 0.8 * ((10 + scr_Get_Status_Magnitude(id, "regen_mult")) / 10);
-    currentenergyregenfactor = 0.9 * sstatefirerate * ((10 + senergyregenfactor) / 10);
+    currentenergyregenfactor = 0.9 * sstatefirerate * ((10 + senergyregenfactor) / 10) * ((10 + scr_Get_Status_Magnitude(id, "essence_mult")) / 10);
     sdelayregenfactor = 1 * sstatefirerate * ((10 + scr_Get_Status_Magnitude(id, "firerate_mult")) / 10);
 	
 	soulmovetimer++;
