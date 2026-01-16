@@ -3,6 +3,7 @@
 
 alarm[0] = 270;
 alarm[2] = 3;
+//alarm[4] = 10;
 
 image_index = 0;
 image_speed = 0;

@@ -92,7 +92,7 @@ var essenceCap = smaxenergy;
 var _surpass_cap = global.P[1] > 0 || global.C[9] > 0
 
 if (senergy < essenceCap) {
-	if global.bosscount > 0 {
+	if !scr_Room_Leavable() {
 		senergy += 0.5 * currentenergyregenfactor;
 	} else {
 		senergy += 5 * currentenergyregenfactor;

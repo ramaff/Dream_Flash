@@ -202,6 +202,7 @@ function scr_Setup_Default_Shot_Stats(){
 		Shot_Beam_Curve: 0,
 		Shot_Beam_Count: 40,
 		Shot_Healing: 0,
+		Shot_Refreshing: 0,
 		Shot_Freeze_Chance: 1,
 		Shot_Freeze_Type: 0,
 		Shot_Freeze: 0,
