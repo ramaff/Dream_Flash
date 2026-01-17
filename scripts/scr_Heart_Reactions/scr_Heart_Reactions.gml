@@ -26,7 +26,7 @@ function scr_Heart_Reactions() {
 		
 		current_weapon_stats = scr_Setup_Weapon_Stats(current_weapon_stats);
 
-	    scr_Shot_Creation();
+	    scr_Shot_Creation(current_weapon_stats);
 
 	}
 
@@ -58,7 +58,7 @@ function scr_Heart_Reactions() {
 		
 		current_weapon_stats = scr_Setup_Weapon_Stats(current_weapon_stats);
     
-	    scr_Shot_Creation();
+	    scr_Shot_Creation(current_weapon_stats);
 
 	}
 
@@ -92,7 +92,7 @@ function scr_Heart_Reactions() {
 		}
     
 		current_weapon_stats = scr_Setup_Weapon_Stats(current_weapon_stats);
-	    scr_Shot_Creation();
+	    scr_Shot_Creation(current_weapon_stats);
 
 	}
 
@@ -123,7 +123,7 @@ function scr_Heart_Reactions() {
 		}
     
 		current_weapon_stats = scr_Setup_Weapon_Stats(current_weapon_stats);
-	    scr_Shot_Creation();
+	    scr_Shot_Creation(current_weapon_stats);
 
 	}
 
@@ -150,7 +150,7 @@ function scr_Heart_Reactions() {
 		}
     
 		current_weapon_stats = scr_Setup_Weapon_Stats(current_weapon_stats);
-	    scr_Shot_Creation();
+	    scr_Shot_Creation(current_weapon_stats);
 
 	}
 	

@@ -159,6 +159,7 @@ function scr_Setup_Default_Shot_Stats(){
 		Shot_Bounce: 0,
 		Shot_Friction: 0,
 		Shot_Min_Speed: 0,
+		Shot_Max_Speed: 9999,
 		Shot_Mouse_Maintain: 0,
 		Shot_Soul_Maintain: 0,
 		Shot_Continue: 0,

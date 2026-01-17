@@ -14,7 +14,6 @@ function scr_B14_Heart(truedam){
 
 	    var current_weapon_stats = scr_Setup_Default_Shot_Stats();
 		
-		//repeat(3) {
 		current_weapon_stats = {
 			Shot_Spread: 360 / global.B[14],
 			Shot_Accuracy: 360,
@@ -40,7 +39,6 @@ function scr_B14_Heart(truedam){
 		
 		current_weapon_stats = scr_Setup_Weapon_Stats(current_weapon_stats);
 		scr_Shot_Creation(current_weapon_stats);
-		//}
 	}
 
 }

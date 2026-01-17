@@ -1758,7 +1758,7 @@
         "recollectionString": "Seethe",
         "recollectionSprite": "spr_Seethe_Art",
         "recollectionExtraStats": "+Seething Heart",
-        "recollectionDescription": "Getting hit has a 1/16 chance to convert the soul's rightmost heart into a seething heart. These hearts lose some of their max HP every room, but let soul shots explode and deal extra damage."
+        "recollectionDescription": "Getting hit has a 1/16 chance to convert the soul's rightmost heart into a seething heart. These hearts lose some of their max HP every room, but let soul shots burn bosses."
     },
     "XA05": {
         "recollectionString": "Rub It In",
