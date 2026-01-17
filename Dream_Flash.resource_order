@@ -1672,6 +1672,7 @@
     {"name":"spr_Magic_Blade_Shot_old","order":1,"path":"sprites/spr_Magic_Blade_Shot_old/spr_Magic_Blade_Shot_old.yy",},
     {"name":"spr_Massive_Essence_Trail_Bit","order":34,"path":"sprites/spr_Massive_Essence_Trail_Bit/spr_Massive_Essence_Trail_Bit.yy",},
     {"name":"spr_maze_bead","order":10,"path":"sprites/spr_maze_bead/spr_maze_bead.yy",},
+    {"name":"spr_medium_gas_cloud_opac","order":2,"path":"sprites/spr_medium_gas_cloud_opac/spr_medium_gas_cloud_opac.yy",},
     {"name":"spr_medium_gas_cloud","order":1,"path":"sprites/spr_medium_gas_cloud/spr_medium_gas_cloud.yy",},
     {"name":"spr_Mental_Background_Dream","order":10,"path":"sprites/spr_Mental_Background_Dream/spr_Mental_Background_Dream.yy",},
     {"name":"spr_Mental_Background_Feel","order":11,"path":"sprites/spr_Mental_Background_Feel/spr_Mental_Background_Feel.yy",},

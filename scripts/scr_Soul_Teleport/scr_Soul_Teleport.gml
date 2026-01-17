@@ -141,6 +141,6 @@ function scr_Soul_Teleport(_evasion = false, _costs_money = true, _xx = obj_Astr
     
 	if _costs_money {
 		tdelay += _calc_tele_delay;
-		senergy -= (30 - tenergyconservation) / tenergyconservationfactor;
+		senergy -= (TELEPORT_BASE_COST - tenergyconservation) / tenergyconservationfactor;
 	}
 }

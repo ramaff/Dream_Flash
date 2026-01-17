@@ -5,7 +5,7 @@ function scr_V05() {
 	if global.V[5] > 0 {
 		
 		var _charge = false
-		if (senergy >= ((20 - tenergyconservation) / tenergyconservationfactor)) and (tdelay <= 0) {
+		if (senergy >= ((TELEPORT_BASE_COST - tenergyconservation) / tenergyconservationfactor)) and (tdelay <= 0) {
 	        _charge = true
 	    }
 		if _charge {

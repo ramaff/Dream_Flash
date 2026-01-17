@@ -19,6 +19,6 @@ if instance_exists(obj_Soul_Parent) {
 	basefirerate = basefirerate * obj_Soul_Parent.sdelayregenfactor;	
 }
 
-teleCost = (40 - global.teleportenergyconservation) / (global.teleportenergyconservationfactor);
+teleCost = (TELEPORT_BASE_COST - global.teleportenergyconservation) / (global.teleportenergyconservationfactor);
 teleSpeed = (120 - global.teleportdelayconservation) / (global.teleportdelayconservationfactor);
 essCost = (1) / (global.soulenergyconservationfactor);

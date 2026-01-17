@@ -54,16 +54,16 @@ function scr_Soul_Shot_Expire_Event(){
 	    image = 1;
 	    shot_stats.Shot_Hit_Again = 1;
 		if shot_stats.Shot_Beam = 0 {
+			var _shot_stats = variable_clone(shot_stats)
 		    with instance_create(obj_Soul_Parent.x,obj_Soul_Parent.y, object_index) {
-		        shot_stats = scr_Duplicate_Shot_Stats();
-				//shot_stats.Shot_Timer = shot_stats.Shot_Life_Span;
+		        shot_stats = scr_Duplicate_Shot_Stats(_shot_stats, _shot_stats);
+				shot_stats.Shot_Exist_Time = 0;
 				image_alpha = 1;
-				//shot_stats.Shot_Form_Show = 0;
 				shot_stats.Shot_Size_Relation = 1;
-				//shot_stats.Shot_Timer = shot_stats.Shot_Life_Span;
 				shot_stats.Shot_Size_Max = shot_stats.Shot_Size;
 				sprite_index = other.sprite_index;
 				direction = point_direction(obj_Soul_Parent.x,obj_Soul_Parent.y,obj_Astral_Indicator.x, obj_Astral_Indicator.y) - (shot_stats.Shot_Accuracy / 2) + random(shot_stats.Shot_Accuracy);
+				scr_Assign_Shot_Scripts();
 		    } 
 		} else if scr_Chance(15) {
 			var beamseg = 1;

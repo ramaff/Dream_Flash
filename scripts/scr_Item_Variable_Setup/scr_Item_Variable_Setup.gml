@@ -67,9 +67,6 @@ function scr_Item_Variable_Setup() {
 	
 	global.OC4Debuff = false;
 	
-	global.temperCharge = 0;
-	global.temperActive = false;
-	
 	global.XB4Dir = 0;
 	
 	global.downwardSpiralBoost = 0;

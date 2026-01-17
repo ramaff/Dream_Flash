@@ -16,8 +16,6 @@ function scr_Room_Change_Variables() {
 	global.roomtime = 0;
 	global.soulNoShoot = 0;
 	global.healthungen = 1;
-	
-	global.temperActive = false;
 
 	global.B11Count = 2 + global.B[11];
 	

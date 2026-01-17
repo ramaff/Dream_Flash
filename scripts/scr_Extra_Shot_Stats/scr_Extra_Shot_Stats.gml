@@ -96,7 +96,6 @@ function scr_Extra_Shot_Stats(_Shot_Current_Count) {
 		if global.XA[2] > 0 {
 			scr_XA02_Shot_Mod();	
 		}
-		scr_XA03_Shot_Mod();
 		scr_XA04_Shot_Mod();
 		
 		if global.XC[2] > 0 {

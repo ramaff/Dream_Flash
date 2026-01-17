@@ -9,7 +9,7 @@ function scr_Setup_Default_Shot_Stats(){
 		Real_Weapon_Delay: 20,
 		Prime_Shot: false,
 		Weapon_Number: 0,
-		Shot_Accuracy: 15,
+		Shot_Accuracy: 25,
 		Shot_Spread: 0,
 		Real_Boss_Hits: {},
 		Shot_Step_Scripts: [],

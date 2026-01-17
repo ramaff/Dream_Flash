@@ -12,14 +12,14 @@ function scr_D05(){
 	var _status_effect = {
 		"duration": 300,
 		"magnitude": 5,
-		"tick_script": scr_Soul_Movement_Mult_Tick,
-		"tick_frequency": 5
+		//"tick_script": scr_Soul_Movement_Mult_Tick,
+		//"tick_frequency": 5
 	}
 	var _status_effect_2 = {
 		"duration": 300,
 		"magnitude": 5 * global.D[5],
 		"tick_script": scr_Soul_Movement_Extra_Mult_Tick,
-		"tick_frequency": 30
+		"tick_frequency": 5
 	}
 	scr_Soul_Status_Effect_Add(soul_step_status_effects, "movement_mult", _status_effect)
 	scr_Soul_Status_Effect_Add(soul_step_status_effects, "movement_mult", _status_effect_2)
@@ -27,8 +27,8 @@ function scr_D05(){
 	_status_effect = {
 		"duration": 300,
 		"magnitude": (5 * global.D[5]),
-		"tick_script": scr_Soul_Firerate_Mult_Tick,
-		"tick_frequency": 5
+		//"tick_script": scr_Soul_Firerate_Mult_Tick,
+		//"tick_frequency": 5
 	}
 		
 	scr_Soul_Status_Effect_Add(soul_step_status_effects, "firerate_mult", _status_effect)

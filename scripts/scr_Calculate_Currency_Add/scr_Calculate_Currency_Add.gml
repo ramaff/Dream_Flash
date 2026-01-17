@@ -1,4 +1,4 @@
-function scr_Soul_Currency_Add(_return_recalls = false) {
+function scr_Calculate_Currency_Add(_return_recalls = false) {
 	
 	if difficulty <= 0 {
 		if _return_recalls == true {
@@ -15,10 +15,10 @@ function scr_Soul_Currency_Add(_return_recalls = false) {
 	    giveFac = giveFac * 0.5;
 	}
 	
-	var recalls = 4 + global.extrarecalls;
+	var recalls = (5 + global.extrarecalls) * giveFac;
 	var recall_obj = obj_Soul_Flash
 	
-	recalls += difficulty * 1 * giveFac;
+	recalls += ceil(difficulty * 0.5 * giveFac);
 
 	if global.currentchapter = 1 {
 	    recall_obj = obj_Soul_Flash

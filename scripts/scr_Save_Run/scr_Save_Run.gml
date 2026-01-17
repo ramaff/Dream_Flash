@@ -225,14 +225,14 @@ function scr_Save_Run() {
 	
 	ini_write_real("Run", "clarityBomb", global.clarityBomb);
 	ini_write_real("Run", "OC4Debuff", global.OC4Debuff);
-	ini_write_real("Run", "temperCharge", global.temperCharge);
-	ini_write_real("Run", "temperActive", global.temperActive);
 	ini_write_real("Run", "downwardSpiralBoost", global.downwardSpiralBoost);
 	ini_write_real("Run", "B06HeartConversions", global.B06HeartConversions);
 	
 	ini_write_string("Run", "OA5rooms", string_replace_all(json_stringify(global.OA5rooms), "\"", "'"));
 	ini_write_string("Run", "weapon", string_replace_all(json_stringify(Soul_Weapons_Control.weapon), "\"", "'"));
 	ini_write_string("Run", "items", string_replace_all(json_stringify(global.items), "\"", "'"));
+	
+	ini_write_string("Run", "soul_field_queue", string_replace_all(json_stringify(global.soul_field_queue), "\"", "'"));
 	//}
 	
 	

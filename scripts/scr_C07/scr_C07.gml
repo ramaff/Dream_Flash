@@ -1,7 +1,7 @@
 function scr_C07() {
 	// Location Soul Step Event
 
-	if global.soulNoShoot >= 15 and senergy < smaxenergy{
+	if global.soulNoShoot >= 15 and senergy < smaxenergy {
 	    var _curr_mental_reload = scr_Get_Status_Time("mental_reload_omen");
 		var _status_effect = {
 			"duration": _curr_mental_reload + 5,

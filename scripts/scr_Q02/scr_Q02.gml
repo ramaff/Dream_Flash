@@ -6,7 +6,7 @@
 
 function scr_Q02(){
 	if global.Q[2] > 0 {
-		var amt = global.Q[2] / 4;
+		var amt = global.Q[2] / 2.5;
 		while amt > 1 {
 			shot_stats.Shot_Recycle += 1;	
 		}
@@ -14,6 +14,9 @@ function scr_Q02(){
 			if scr_Chance(1 / amt) {
 				shot_stats.Shot_Recycle += 1;	
 			}
+		}
+		if shot_stats.Shot_Recycle > 0 {
+			shot_stats.Shot_Fizzle_Out = 0
 		}
 	}
 }

@@ -3,4 +3,4 @@
 
 global.bosscount -= 1;
 
-scr_Soul_Currency_Add();
+scr_Calculate_Currency_Add();

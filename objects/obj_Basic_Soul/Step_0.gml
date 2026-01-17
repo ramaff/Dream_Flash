@@ -15,7 +15,7 @@ if soulDeathFadeSpeed = 0 {
     scr_Invincibility_Frames();
 }
 
-if InputCheck(INPUT_VERB.SHOOT ) {
+if InputCheck(INPUT_VERB.SHOOT ) || variable_struct_exists(soul_step_status_effects, "temper") {
 	event_user(0)	
 }
 if InputReleased(INPUT_VERB.SHOOT ) {

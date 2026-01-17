@@ -41,9 +41,14 @@ function scr_Weapon_Use_List(cWP = global.currentweapon, _weap_slot = 0) {
 	if senergy < _current_weapon_stats.Real_Essence_Cost {
 		scr_C08();	
 	}
+	
+	var _shoot_anyways = false;
+	if variable_struct_exists(soul_step_status_effects, "temper") {
+		_shoot_anyways = true;	
+	}
 
 	
-	if senergy >= _current_weapon_stats.Real_Essence_Cost || Charge_Hold = 2 || senergy >= smaxenergy { 
+	if senergy >= _current_weapon_stats.Real_Essence_Cost || Charge_Hold = 2 || _shoot_anyways || senergy >= smaxenergy { 
 	
 		global.soulNoShoot = 0;
 		

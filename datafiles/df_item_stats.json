@@ -1452,7 +1452,7 @@
     "Q02": {
         "recollectionString": "On Second Thought",
         "recollectionSprite": "spr_Hold_That_Thought_Art",
-        "recollectionExtraStats": "+25% Thought Recycling",
+        "recollectionExtraStats": "+40% Thought Recycling",
         "recollectionDescription": "When your thoughts expire from running out of their lifespan, they have a chance to get shot again from the soul."
     },
     "Q03": {

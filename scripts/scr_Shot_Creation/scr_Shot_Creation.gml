@@ -45,6 +45,12 @@ function scr_Shot_Creation(_cw = current_weapon_stats, _prime_shot = false) {
 	        _cw.Shot_Spread = 10;
 	    }
 	}
+	
+	var _acc_mult = scr_Get_Status_Magnitude_Mult(id, "accuracy_mult")
+	if _acc_mult = 0 {
+		_acc_mult = 1;	
+	}
+	_cw.Shot_Accuracy = _cw.Shot_Accuracy / _acc_mult
 
 	var dir = -(_cw.Shot_Spread * (_cw.Shot_Count - 1) / 2) + (-(_cw.Shot_Accuracy / 2) + random(_cw.Shot_Accuracy)) + _cw.Shot_Direction_Offset;
 

@@ -257,8 +257,6 @@ function scr_Load_Run() {
 		
 		global.clarityBomb = ini_read_real("Run","clarityBomb",0);
 	    global.OC4Debuff = ini_read_string("Run","OC4Debuff","None");
-		global.temperCharge = ini_read_real("Run","temperCharge",0);
-		global.temperActive = ini_read_string("Run","temperActive","Base");
 		global.downwardSpiralBoost = ini_read_real("Run","downwardSpiralBoost",0);
 		global.B06HeartConversions = ini_read_real("Run","B06HeartConversions",0);
 		
@@ -267,6 +265,9 @@ function scr_Load_Run() {
 		Soul_Weapons_Control.weapon = json_parse(ini_read_string("Run", "weapon", "[]"))
 		
 		global.items = json_parse(ini_read_string("Run", "items", "[]"))
+		
+		
+	    global.soul_field_queue = json_parse(ini_read_string("Run","soul_field_queue", "[]"))
 		
 	
         
