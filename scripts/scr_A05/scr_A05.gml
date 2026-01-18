@@ -2,23 +2,36 @@
 // https://help.yoyogames.com/hc/en-us/articles/360005277377 for more information
 function scr_A05(){
 
-	repeat(8) {
+	/*repeat(8) {
 		scr_Particle_Burst(obj_State_Trail_Front, spr_Soul_Big_Bit, c_red, c_red, 1, 3 + random(3), 60 + random(60), 0, 100, 0.2 + random(0.3), 20 + random(20))	
+	} */
+	
+	with instance_create_depth(x, y, depth, obj_float_up_icon) {
+		soul_source = other.id;
+		sprite_index = spr_Fight_Response_Icon;
+		
+		image_xscale = 0.5;
+		image_yscale = 0.5;
+		
+		alarm[1] = 60;
 	}
 		
 	var _status_effect = {
 		"duration": 300,
 		"magnitude": 5 * global.A[5],
-		"tick_script": scr_Soul_Power_Mult_Tick,
-		"tick_frequency": 5
+	}
+	var _status_effect_3 = {
+		"duration": 300,
+		"magnitude": 0.5 * global.A[5],
 	}
 	var _status_effect_2 = {
 		"duration": 300,
 		"magnitude": 1.5 * global.A[5],
-		"tick_script": scr_Soul_Movement_Mult_Tick,
-		"tick_frequency": 5
+		//"tick_script": scr_Soul_Movement_Mult_Tick,
+		//"tick_frequency": 5
 	}
-	scr_Soul_Status_Effect_Add(soul_step_status_effects, "attack_mult", _status_effect)	
+	scr_Soul_Status_Effect_Add(soul_step_status_effects, "attack_mult", _status_effect)
+	scr_Soul_Status_Effect_Add(soul_step_status_effects, "attack_size_mult", _status_effect_3)
 	scr_Soul_Status_Effect_Add(soul_step_status_effects, "movement_mult", _status_effect_2)	
 
 }

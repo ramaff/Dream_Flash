@@ -6,20 +6,20 @@
   "bbox_left":21,
   "bbox_right":478,
   "bbox_top":21,
-  "collisionKind":1,
+  "collisionKind":2,
   "collisionTolerance":0,
   "DynamicTexturePage":false,
   "edgeFiltering":false,
   "For3D":false,
   "frames":[
-    {"$GMSpriteFrame":"v1","%Name":"6606d938-f34c-4216-9815-99fa753d86c2","name":"6606d938-f34c-4216-9815-99fa753d86c2","resourceType":"GMSpriteFrame","resourceVersion":"2.0",},
+    {"$GMSpriteFrame":"v1","%Name":"8387d4fd-6b12-42ea-a0a1-623a5d56bf37","name":"8387d4fd-6b12-42ea-a0a1-623a5d56bf37","resourceType":"GMSpriteFrame","resourceVersion":"2.0",},
   ],
   "gridX":0,
   "gridY":0,
   "height":500,
   "HTile":false,
   "layers":[
-    {"$GMImageLayer":"","%Name":"85896ee7-b48e-4c34-b400-85cd7866f6f7","blendMode":0,"displayName":"default","isLocked":false,"name":"85896ee7-b48e-4c34-b400-85cd7866f6f7","opacity":100.0,"resourceType":"GMImageLayer","resourceVersion":"2.0","visible":true,},
+    {"$GMImageLayer":"","%Name":"8158ea47-50d0-4840-a90d-5689a7925a27","blendMode":0,"displayName":"default","isLocked":false,"name":"8158ea47-50d0-4840-a90d-5689a7925a27","opacity":100.0,"resourceType":"GMImageLayer","resourceVersion":"2.0","visible":true,},
   ],
   "name":"spr_Circle_Effect_Big",
   "nineSlice":null,
@@ -69,8 +69,8 @@
     "tracks":[
       {"$GMSpriteFramesTrack":"","builtinName":0,"events":[],"inheritsTrackColour":true,"interpolation":1,"isCreationTrack":false,"keyframes":{"$KeyframeStore<SpriteFrameKeyframe>":"","Keyframes":[
             {"$Keyframe<SpriteFrameKeyframe>":"","Channels":{
-                "0":{"$SpriteFrameKeyframe":"","Id":{"name":"6606d938-f34c-4216-9815-99fa753d86c2","path":"sprites/spr_Circle_Effect_Big/spr_Circle_Effect_Big.yy",},"resourceType":"SpriteFrameKeyframe","resourceVersion":"2.0",},
-              },"Disabled":false,"id":"065ce373-4e44-44ef-92a1-61c8529d4723","IsCreationKey":false,"Key":0.0,"Length":1.0,"resourceType":"Keyframe<SpriteFrameKeyframe>","resourceVersion":"2.0","Stretch":false,},
+                "0":{"$SpriteFrameKeyframe":"","Id":{"name":"8387d4fd-6b12-42ea-a0a1-623a5d56bf37","path":"sprites/spr_Circle_Effect_Big/spr_Circle_Effect_Big.yy",},"resourceType":"SpriteFrameKeyframe","resourceVersion":"2.0",},
+              },"Disabled":false,"id":"36ebe3b4-d414-420f-a7b3-3eee51bafbb1","IsCreationKey":false,"Key":0.0,"Length":1.0,"resourceType":"Keyframe<SpriteFrameKeyframe>","resourceVersion":"2.0","Stretch":false,},
           ],"resourceType":"KeyframeStore<SpriteFrameKeyframe>","resourceVersion":"2.0",},"modifiers":[],"name":"frames","resourceType":"GMSpriteFramesTrack","resourceVersion":"2.0","spriteId":null,"trackColour":0,"tracks":[],"traits":0,},
     ],
     "visibleRange":null,

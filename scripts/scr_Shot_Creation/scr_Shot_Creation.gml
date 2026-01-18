@@ -185,7 +185,7 @@ function scr_Shot_Creation(_cw = current_weapon_stats, _prime_shot = false) {
 				shot_stats.Shot_Origin = obj_Soul_Parent;
 		        target = noone;
 		        sprite_index = asset_get_index(shot_stats.Shot_Sprite);
-		        shot_stats.Shot_Size = shot_stats.Shot_Size * ((1 + other.sshotsizefactor) / 1);
+		        shot_stats.Shot_Size = shot_stats.Shot_Size * scr_Soul_Size_Factor_Calc(other);
 		        shot_stats.Shot_Speed = (shot_stats.Shot_Speed + other.sshotspeedaddition) * (shot_stats.Weapon_Vomit_Min_Speed + random(shot_stats.Weapon_Vomit_Max_Speed - shot_stats.Weapon_Vomit_Min_Speed)) * other.sshotspeed / 10;
 		        shot_stats.Shot_Power_Max = (shot_stats.Shot_Power + other.spoweradd) * scr_Soul_Power_Factor_Calc(other);
 		        shot_stats.Shot_Power = shot_stats.Shot_Power_Max;
