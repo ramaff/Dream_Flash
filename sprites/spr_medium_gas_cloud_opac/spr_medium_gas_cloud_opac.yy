@@ -20,7 +20,7 @@
   "height":240,
   "HTile":false,
   "layers":[
-    {"$GMImageLayer":"","%Name":"153a24c8-8b49-4040-bb69-6a2a5ee90563","blendMode":0,"displayName":"default","isLocked":false,"name":"153a24c8-8b49-4040-bb69-6a2a5ee90563","opacity":100.0,"resourceType":"GMImageLayer","resourceVersion":"2.0","visible":true,},
+    {"$GMImageLayer":"","%Name":"153a24c8-8b49-4040-bb69-6a2a5ee90563","blendMode":0,"displayName":"default","isLocked":false,"name":"153a24c8-8b49-4040-bb69-6a2a5ee90563","opacity":50.0,"resourceType":"GMImageLayer","resourceVersion":"2.0","visible":true,},
   ],
   "name":"spr_medium_gas_cloud_opac",
   "nineSlice":null,

@@ -148,8 +148,8 @@ function scr_Hard_Coded_Item_Stats(itemVal, items_to_add = 1, reload = false) {
 	if itemVal = "B13" {
 	    global.soulhpadd += 4;
 	    obj_Soul_Parent.shpadd += 4;
-	    global.soulhealthregenadd += 4;
-	    obj_Soul_Parent.shealthregenadd += 4;
+	    global.soulhealthregenadd += 5;
+	    obj_Soul_Parent.shealthregenadd += 5;
 	    //global.B[13]++;
 	}
 	if itemVal = "B14" {
@@ -631,43 +631,43 @@ function scr_Hard_Coded_Item_Stats(itemVal, items_to_add = 1, reload = false) {
 		if itemVal = "J01" {
 		    Soul_Hearts_Control.heart[global.currentheart + 1, 2] = 1;
 		    global.totalhearts++;
-		    global.soulstrength += 3;
-		    obj_Soul_Parent.sstrength += 3;
+		    global.soulstrength += 4;
+		    obj_Soul_Parent.sstrength += 4;
 		    //global.J[1]++;
 		}
 		if itemVal = "J02" {
 		    Soul_Hearts_Control.heart[global.currentheart + 1, 2] = 1;
 		    global.totalhearts++;
-		    global.soulvitality += 3;
-		    obj_Soul_Parent.svitality += 3;
+		    global.soulvitality += 4;
+		    obj_Soul_Parent.svitality += 4;
 		    //global.J[2]++;
 		}
 		if itemVal = "J03" {
 		    Soul_Hearts_Control.heart[global.currentheart + 1, 2] = 1;
 		    global.totalhearts++;
-		    global.soulessence += 3;
-		    obj_Soul_Parent.sessence += 3;
+		    global.soulessence += 4;
+		    obj_Soul_Parent.sessence += 4;
 		    //global.J[3]++;
 		}
 		if itemVal = "J04" {
 		    Soul_Hearts_Control.heart[global.currentheart + 1, 2] = 1;
 		    global.totalhearts++;
-		    global.souldexterity += 3;
-		    obj_Soul_Parent.sdexterity += 3;
+		    global.souldexterity += 4;
+		    obj_Soul_Parent.sdexterity += 4;
 		    //global.J[4]++;
 		}
 		if itemVal = "J05" {
 		    Soul_Hearts_Control.heart[global.currentheart + 1, 2] = 1;
 		    global.totalhearts++;
-		    global.soulperception += 3;
-		    obj_Soul_Parent.sperception += 3;
+		    global.soulperception += 4;
+		    obj_Soul_Parent.sperception += 4;
 		    //global.J[5]++;
 		}
 		if itemVal = "J06" {
 		    Soul_Hearts_Control.heart[global.currentheart + 1, 2] = 1;
 		    global.totalhearts++;
-		    global.soulstate += 3;
-		    obj_Soul_Parent.sstate += 3;
+		    global.soulstate += 4;
+		    obj_Soul_Parent.sstate += 4;
 		    //global.J[6]++;
 		}
 		if itemVal = "J07" {
@@ -882,7 +882,8 @@ function scr_Hard_Coded_Item_Stats(itemVal, items_to_add = 1, reload = false) {
 	
 	if itemVal = "OB01" {
 		//global.OB[1]++;
-		global.soulhealthregenadd += 6;
+		global.soulhealthregenadd += 10;
+	    obj_Soul_Parent.shealthregenadd += 10;
 		global.soulenergyregenfactor += 2.5;
 	}
 	if itemVal = "OB02" {

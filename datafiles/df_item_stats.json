@@ -133,7 +133,7 @@
     "B06": {
         "recollectionString": "Lovely Personality",
         "recollectionSprite": "spr_Lovely_Personality_Item",
-        "recollectionExtraStats": "+40% Heart Effect Boost +Upgrades 1 Heart",
+        "recollectionExtraStats": "+40% Heart Effect Boost +Upgrades a Heart",
         "recollectionDescription": "Increases the special effect of hearts by 40%. Also upgrades one of your lesser hearts into a special heart."
     },
     "B07": {
@@ -177,7 +177,7 @@
     "B13": {
         "recollectionString": "Greater Hearts",
         "recollectionSprite": "spr_Greater_Hearts_Item",
-        "recollectionExtraStats": "+4 Base HP +40% Health Regen",
+        "recollectionExtraStats": "+4 Base HP +50% Health Regen",
         "recollectionDescription": "Makes your hearts greater."
     },
     "B14": {
@@ -1302,7 +1302,7 @@
     "OB01": {
         "recollectionString": "Pure Bliss",
         "recollectionSprite": "spr_Pure_Bliss_Art",
-        "recollectionExtraStats": "+60% Health Regen +25% Essence Regen",
+        "recollectionExtraStats": "+100% Health Regen +25% Essence Regen",
         "recollectionDescription": "Feeling full of bliss, gain a boost to health and essence regen"
     },
     "OB02": {

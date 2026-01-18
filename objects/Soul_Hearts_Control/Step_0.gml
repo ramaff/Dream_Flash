@@ -157,7 +157,7 @@ if global.totalhearts >= 1 {
 		
         if heart[i,2] != 7 /*and heart[i,2] != 103*/ {
             if !scr_Room_Leavable() {
-                heart[i,3] += obj_Soul_Parent.shealthregenfactor * heartReg * ((10 + obj_Soul_Parent.shealthregenadd) / 10) / 200;   
+                heart[i,3] += obj_Soul_Parent.shealthregenfactor * heartReg * ((10 + obj_Soul_Parent.shealthregenadd) / 10) / 60;   
             } else {
                 heart[i,3] += obj_Soul_Parent.shealthregenfactor * heartReg * ((10 + obj_Soul_Parent.shealthregenadd) / 10) * 5;   
             }

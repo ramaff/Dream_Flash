@@ -32,7 +32,7 @@ function scr_Update_Temper(_mag = 6) {
 	var _status_effect_2 = {
 		"duration": _curr_temper + _mag,
 		"max_duration": 360,
-		"bar_sprite": "spr_Defensive_Omen_Status_Effect_Bar"
+		"bar_sprite": "spr_Temper_Omen_Status_Effect_Bar"
 	}
 	variable_struct_set(soul_step_status_effects, "temper_omen", [_status_effect])
 	variable_struct_set(soul_draw_status_effects, "temper_omen", [_status_effect_2])	

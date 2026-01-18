@@ -14,9 +14,9 @@ function scr_U08(){
 				var _poison_size = sqrt(max(0, image_xscale * (100 + _pow))) * 35
 				var _poison_sprite_size = _poison_size / 400
 				
-				repeat(8) {
+				repeat(12) {
 					var _ddir = random(360);
-					scr_Particle_Burst(obj_Smoke_Part, spr_Smoke_Part, make_color_rgb(40,255,80), make_color_rgb(30,205,60), 
+					scr_Particle_Burst(obj_Smoke_Part, spr_medium_gas_cloud_opac, make_color_rgb(40,255,80), make_color_rgb(30,205,60), 
 									   1, 4 + random(2), _ddir, 0, 30, _poison_sprite_size + random(0.1), 45 + random(15))
 	
 				}
@@ -38,7 +38,7 @@ function scr_U08(){
 						bosshealth -= _pow;
 						scr_setup_dmg_indicator(x,y, _pow, c_white);
 					
-						scr_Apply_Boss_Poison(id, _poison_pow, 30, 9);			
+						scr_Apply_Boss_Poison(id, _poison_pow, 30, 12);			
 					}
 				}
 				instance_destroy();

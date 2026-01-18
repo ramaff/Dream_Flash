@@ -210,10 +210,10 @@ function scr_Boss_Stats_Setup(_version=1) {
 	    bosscontactdamage = bosspower;
     
     
-	    if global.currentchapter = 1 {
+	    //if global.currentchapter = 1 {
 	        bosspower = 10;
 	        bosscontactdamage = 10;
-	    }
+	    /*}
 	    if global.currentchapter = 2 {
 	        bosspower = 12;
 	        bosscontactdamage = 12;
@@ -225,7 +225,7 @@ function scr_Boss_Stats_Setup(_version=1) {
 		if global.currentchapter = 4 {
 	        bosspower = 16;
 	        bosscontactdamage = 16;
-	    }
+	    } */
 		
 		bosspower = bosspower * global.bossdamagefactor;
 		bosscontactdamage = bosspower;

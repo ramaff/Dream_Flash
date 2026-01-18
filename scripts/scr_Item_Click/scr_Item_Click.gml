@@ -226,6 +226,8 @@ function scr_Item_Click(_stacks = 1, _linger = false){
 	
 	scr_Channel_Boss_Reroll();
 	
+	scr_Set_Soul_Scripts()
+	
 	instance_destroy();
 	
 	if recoGroup = "I" || itemVal = "A00" || itemVal = "B00" || itemVal = "C00" || itemVal = "D00" || itemVal = "E00" || itemVal = "F00" {

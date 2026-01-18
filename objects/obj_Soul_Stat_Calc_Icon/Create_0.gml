@@ -1,7 +1,7 @@
 vis = 0;
 
 basehp = (20 * ((10 + global.soulhpfactor) / 10) + global.soulhpadd);
-regenhp = (60 / 200) * global.soulhealthregenfactor * ((10 + global.soulhealthregenadd) / 10);  
+regenhp = (1) * global.soulhealthregenfactor * ((10 + global.soulhealthregenadd) / 10);  
 defense = global.souldefenseadd;
 
 basepow = ((10 + global.soulpowerfactor) / 10) * global.soulpower / 10;

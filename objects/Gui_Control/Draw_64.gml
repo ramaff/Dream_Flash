@@ -14,46 +14,60 @@ if instance_exists(obj_Soul_Parent) {
 			spercent = 100;	
 		}
 	
-		draw_sprite_ext(spr_State_Container,0,winx - 144,winy - 96,0.5,0.5,0,c_white,1);
-		draw_sprite_part_ext(spr_State_Container,1,0,172 * (1 - ((spercent) / 100)),89,172,winx - 144, winy - 96 + (172 / 2) * (1 - ((spercent) / 100)),0.5,0.5,c_white,1);	
+		draw_sprite_ext(spr_State_Container,0,winx - 72,winy - 208,0.5,0.5,0,c_white,1);
+		draw_sprite_part_ext(spr_State_Container,1,0,172 * (1 - ((spercent) / 100)),89,172, winx - 72, winy - 208 + (172 / 2) * (1 - ((spercent) / 100)),0.5,0.5,c_white,1);	
 	}
 
-    var epercent = 100 * (obj_Soul_Parent.senergy / (obj_Soul_Parent.smaxenergy + (1.25 * (global.soulessence + global.soulessenceTemp))));
+    var epercent = obj_Soul_Parent.senergy;
     
-	var _debt_percent = clamp(0 - epercent, 0, 100);
+	var _debt_percent = clamp(0 - epercent, 0, 9999);
 	if epercent < 0 {
         epercent = 0;
     }
 	
     //draw_sprite(spr_Essence_Container,round(epercent / 3.7),winx - 32, winy - 40);
-	var epercent1 = epercent;
-	if epercent1 > 100 {
+	var epercent1 = clamp(epercent, 0, 100) / 100;
+	/*if epercent1 > 100 {
 		epercent1 = 100;	
-	}
+	} */
 	
 	draw_sprite_ext(spr_Essence_Container,0,winx - 72,winy - 96,0.5,0.5,0,c_white,1);
-	draw_sprite_part_ext(spr_Essence_Container,1,0,172 * (1 - ((epercent1) / 100)),89,172,winx - 72, winy - 96 + (172 / 2) * (1 - ((epercent1) / 100)),0.5,0.5,c_white,1);
+	draw_sprite_part_ext(spr_Essence_Container,1,0,172 * (1 - epercent1),89,172,winx - 72, winy - 96 + (172 / 2) * (1 - epercent1),0.5,0.5,c_white,1);
 	
 	if _debt_percent > 0 {
-		draw_sprite_part_ext(spr_Essence_Debt_Container,1,0,172 * (1 - (_debt_percent / 100)),89,172,winx - 72, winy - 96 + (172 / 2) * (1 - (_debt_percent / 100)),0.5,0.5,c_white,1);
+		var _ess_floor = 0;
+		var _xxx = 0;
+		while(_ess_floor < _debt_percent) {
+			var _curr_ess = clamp(_debt_percent - _ess_floor, 0, 100) / 100;
+			draw_sprite_part_ext(spr_Essence_Debt_Container,1,0,172 * (1 - _curr_ess),89,172,winx - 72 + _xxx, winy - 96 + (172 / 2) * (1 - _curr_ess),0.5,0.5,c_white,1);
+			_ess_floor += 100;
+			_xxx -= 64;
+		}
 	}
 	
-	var epercent2 = epercent;
+	/*var epercent2 = epercent;
 	if epercent2 > 300 {
 		epercent2 = 300;	
-	}
+	} */
 	
 	if epercent > 100 {
-		draw_sprite_part_ext(spr_OverEssence_Container,1,0,172 * (1 - ((epercent2 - 100) / 200)),89,172,winx - 72, winy - 96 + (172 / 2) * (1 - ((epercent2 - 100) / 200)),0.5,0.5,c_white,1);
+		var _ess_floor = 100;
+		var _xxx = -64;
+		while(_ess_floor < epercent) {
+			var _curr_ess = clamp(epercent - _ess_floor, 0, 100) / 100;
+			draw_sprite_part_ext(spr_Essence_Container,1,0,172 * (1 - _curr_ess),89,172,winx - 72 + _xxx, winy - 96 + (172 / 2) * (1 - _curr_ess),0.5,0.5,c_white,1);
+			_ess_floor += 100;
+			_xxx -= 64;
+		}
 	}
 	
-	if epercent > 600 {
+	/*if epercent > 600 {
 		epercent = 600;	
 	}
 	
 	if epercent > 300 {
 		draw_sprite_part_ext(spr_OverOverEssence_Container,1,0,172 * (1 - ((epercent - 300) / 300)),89,172,winx - 72, winy - 96 + (172 / 2) * (1 - ((epercent - 300) / 300)),0.5,0.5,c_white,1);
-	}
+	} */
 	
     scr_Weapon_GUI(Soul_Weapons_Control.weapon_slot_info);
 
