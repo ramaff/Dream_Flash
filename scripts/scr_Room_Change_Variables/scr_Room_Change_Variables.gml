@@ -20,6 +20,7 @@ function scr_Room_Change_Variables() {
 	global.B11Count = 2 + global.B[11];
 	
 	global.C01Boost = 0;
+	global.C08Activated = false;
 
 	global.roomdarkness = 0;
 

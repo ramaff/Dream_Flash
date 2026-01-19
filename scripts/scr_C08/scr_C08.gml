@@ -2,8 +2,9 @@ function scr_C08() {
 	// Location Weapon Use List
 
 	if global.C[8] > 0 {
-	    if (sWeaponOvertime <= (30 + global.C[8] * 90)) {
-			senergy += 100 * global.C[8];
+	    if !global.C08Activated {
+			//senergy += 100 * global.C[8];
+			global.C08Activated = true;
 	        var _status_effect = {
 				"duration": 180,
 				"magnitude": (20 * global.C[8])
@@ -11,7 +12,7 @@ function scr_C08() {
 			var _status_effect_2 = {
 				"duration": 180,
 				"max_duration": 180,
-				"bar_sprite": "spr_Poison_Status_Effect_Bar"
+				"bar_sprite": "spr_All_Out_Status_Effect_Bar"
 			}
 			var _status_effect_3 = {
 				"duration": 180,

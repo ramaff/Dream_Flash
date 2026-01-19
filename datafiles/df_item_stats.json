@@ -243,7 +243,7 @@
         "recollectionString": "All Out",
         "recollectionSprite": "spr_All_Out_Item",
         "recollectionExtraStats": "+3 Seconds of +200% Essence Regen and +50% Think Speed",
-        "recollectionDescription": "Once per field, you can continue to use your attacks for a bit after running out of essence. However doing so will give you an essence debuff for 6 seconds afterwards."
+        "recollectionDescription": "Once per field, you can continue to use your attacks for a bit after running out of essence."
     },
     "C09": {
         "recollectionString": "Epiphany",

@@ -60,7 +60,7 @@ function scr_D05_Status_Build_Up() {
 		var _status_effect_2 = {
 			"duration": _curr_flight_response + 5 + _near_bulls,
 			"max_duration": 600,
-			"bar_sprite": "spr_Defensive_Omen_Status_Effect_Bar"
+			"bar_sprite": "spr_Flight_Response_Omen_Status_Effect_Bar"
 		}
 		variable_struct_set(soul_step_status_effects, "flight_response_omen", [_status_effect])
 		variable_struct_set(soul_draw_status_effects, "flight_response_omen", [_status_effect_2])
