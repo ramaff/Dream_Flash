@@ -145,7 +145,7 @@
     },
     "B08": {
         "recollectionString": "Self Love",
-        "recollectionSprite": "spr_Healing_Concentration_Item",
+        "recollectionSprite": "spr_Self_Love_Item",
         "recollectionExtraStats": "+Idle Regen Trigger +2 Base Heart HP",
         "recollectionDescription": "Stopping your movement for a brief moment will trigger a self love buff, that rapidly heals the soul."
     },
@@ -234,7 +234,7 @@
         "Ascending_Credit": 0.5
     },
     "C07": {
-        "recollectionString": "Imaginary Reload",
+        "recollectionString": "Mental Reload",
         "recollectionSprite": "spr_Imaginary_Reload_Item",
         "recollectionExtraStats": "+100 Attack Idle Essence Regen",
         "recollectionDescription": "If not shooting for a while, reload which restores all essence."
@@ -255,7 +255,7 @@
         "recollectionString": "Adrenaline",
         "recollectionSprite": "spr_Adrenaline_Item",
         "recollectionExtraStats": "+Up to 120% Essence Regen and 60% Think Speed when current heart health is low",
-        "recollectionDescription": "Gain extra essence regen and firerate the lower your current heart health is. An additional regen effect is added when on your last heart.",
+        "recollectionDescription": "Gain extra essence regen and firerate the lower your current heart health is.",
         "Beast_Credit": 0.5
     },
     "C11": {
