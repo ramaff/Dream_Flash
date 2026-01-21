@@ -11,7 +11,7 @@ function scr_Heal_Soul(_h_amount) {
 	if ichance = 1 {
 		var xx = -20 + random(20);
 		var yy = -20 + random(20);
-		scr_setup_dmg_indicator(obj_Soul_Parent.x + xx,obj_Soul_Parent.y + yy, min(1, _h_amount), c_fuchsia)
+		scr_setup_dmg_indicator(obj_Soul_Parent.x + xx,obj_Soul_Parent.y + yy, max(1, _h_amount), c_fuchsia)
 	}
 
 }

@@ -13,7 +13,7 @@ function scr_D14() {
 	        if distance_to_object(other) <= (90) {
 	            bosshealth -= _dmg;
 				
-				if scr_Chance(10) {
+				if global.roomtime mod 10 = 0 {
 					scr_setup_dmg_indicator(x,y, _dmg * 10, c_white);
 				}
 	        }

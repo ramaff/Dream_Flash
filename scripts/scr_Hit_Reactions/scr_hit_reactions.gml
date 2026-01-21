@@ -12,20 +12,30 @@ function scr_Hit_Reactions(_damage_amount, _defense_amount) {
 	if global.A[5] > 0 {
 		scr_A05();
 	}
-	if global.B[11] > 0 and global.B11Count > 0 {
-		repeat(8) {
-			scr_Particle_Burst(obj_State_Trail_Front, spr_Soul_Big_Bit, c_fuchsia, c_fuchsia, 1, 3 + random(3), 60 + random(60), 0, 100, 0.2 + random(0.3), 20 + random(20))	
-		}
-			
-		var _status_effect = {
-			"duration": 180,
-			"magnitude": 20 * global.B[11],
-			"tick_script": scr_Soul_Regen_Mult_Tick,
-			"tick_frequency": 5
-		}
-		scr_Soul_Status_Effect_Add(soul_step_status_effects, "regen_mult", _status_effect)	
+	if global.B[11] > 0 {
 		
-		global.B11Count--;
+		if variable_struct_exists(soul_step_status_effects, "bounce_back") {
+			scr_Soul_Status_Effect_Remove(soul_step_status_effects, "bounce_back")
+			scr_Soul_Status_Effect_Remove(soul_draw_status_effects, "bounce_back")
+		} else {
+			repeat(8) {
+				scr_Particle_Burst(obj_State_Trail_Front, spr_Soul_Big_Bit, c_fuchsia, c_fuchsia, 1, 3 + random(3), 60 + random(60), 0, 100, 0.2 + random(0.3), 20 + random(20))	
+			}
+			
+			var _status_effect = {
+				"duration": 360,
+				"tick_script": scr_Bounce_Back_Tick,
+				"tick_frequency": 60
+			}
+			scr_Soul_Status_Effect_Add(soul_step_status_effects, "bounce_back", _status_effect)	
+			var _status_effect_2 = {
+				"duration": 360,
+				"max_duration": 360,
+				"bar_sprite": "spr_Bounce_Back_Status_Effect_Bar"
+			}
+			scr_Soul_Status_Effect_Add(soul_draw_status_effects, "bounce_back", _status_effect_2)
+		}
+
 	}
 	if global.D[5] > 0 {
 		scr_D05();

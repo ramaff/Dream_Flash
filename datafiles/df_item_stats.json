@@ -359,10 +359,10 @@
         "Beast_Credit": 0.5
     },
     "D12": {
-        "recollectionString": "Warp Gust",
+        "recollectionString": "Head Wind",
         "recollectionSprite": "spr_Wind_Teleport_Item",
         "recollectionExtraStats": "+Teleport Bullet Blowback",
-        "recollectionDescription": "Teleporting causes a gust of wind, capable of blowing away bullets."
+        "recollectionDescription": "Teleporting causes a gust of wind, capable of blowing away bosses and bullets."
     },
     "D13": {
         "recollectionString": "Nice Going",
@@ -1730,7 +1730,7 @@
         "recollectionDescription": "Clears every bullet on screen when teleporting for the first time in each boss battle."
     },
     "W06": {
-        "recollectionString": "Lasting Impression",
+        "recollectionString": "Astral Link",
         "recollectionSprite": "spr_Astral_Link_Art",
         "recollectionExtraStats": "+Astral Link Portals",
         "recollectionDescription": "Create a lingering rift in space when teleporting, allowing things to teleport between the two points. Projectiles that pass through the portals gain momentum, and can hit enemies again."

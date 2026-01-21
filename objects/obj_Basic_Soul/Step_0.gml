@@ -63,9 +63,11 @@ if ((soulCurrentHorizontalSpeed != 0) or (soulCurrentVerticalSpeed != 0)) {
     sdelayregenfactor = 1 * sstatefirerate * ((10 + scr_Get_Status_Magnitude(id, "firerate_mult")) / 10);
 	
 	soulmovetimer++;
-	if soulmovetimer mod 20 = 0 {
-		scr_Soul_Stretch("Horizontal", 0.2)
-	}
+	var _total_speed = sqrt((soulCurrentHorizontalSpeed * soulCurrentHorizontalSpeed) + (soulCurrentVerticalSpeed * soulCurrentVerticalSpeed))
+	scr_Soul_Stretch("Horizontal", scr_Wave(0, 0.05, 5 / _total_speed, 0))
+	//if soulmovetimer mod 20 = 0 {
+	//	scr_Soul_Stretch("Horizontal", 0.2)
+	//}
 	
 } else {
     shealthregenfactor = 1 * ((10 + shealthidleregenfactor) / 10) * ((10 + scr_Get_Status_Magnitude(id, "regen_mult")) / 10);
