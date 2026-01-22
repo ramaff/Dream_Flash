@@ -156,26 +156,7 @@ function scr_Heart_Reactions() {
 	
 	if cHeart = 103 {
 
-	    var current_weapon_stats = scr_Setup_Default_Shot_Stats();
-    
-		current_weapon_stats = {
-		    Shot_Speed: 0,
-			Shot_Power: 0,
-			Shot_Sprite: "spr_Airbag_Shot",
-			Shot_Type: "obj_Soul_Physics_Shot",
-			Shot_Life_Span: 600,
-			//Shot_Angle: 0,
-			Shot_Pierce: 1000,
-			Shot_Point_Angle: false,
-			Spread: 0,
-			Amount: 1,
-			Shot_Bullet_Displace: 25,
-			Shot_Knock_Back: 25,
-			Shot_Extra_Hits_Frequency: 5
-		}
-    
-		current_weapon_stats = scr_Setup_Weapon_Stats(current_weapon_stats);
-	    scr_Shot_Creation(current_weapon_stats);
+	    scr_Spawn_Airbag()
 
 	}
 

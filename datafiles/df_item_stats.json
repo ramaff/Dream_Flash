@@ -1732,7 +1732,7 @@
     "W06": {
         "recollectionString": "Astral Link",
         "recollectionSprite": "spr_Astral_Link_Art",
-        "recollectionExtraStats": "+Astral Link Portals",
+        "recollectionExtraStats": "+Permawarp Portals",
         "recollectionDescription": "Create a lingering rift in space when teleporting, allowing things to teleport between the two points. Projectiles that pass through the portals gain momentum, and can hit enemies again."
     },
     

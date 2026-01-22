@@ -1,22 +1,23 @@
 function scr_C06() {
 	// Location Soul Hit by Bullet Event
     
-	var val = irandom(2 * global.C[6]) + irandom(60);
+	//var val = irandom(2 * global.C[6]) + irandom(60);
     
-	if val >= 60
-	if (instance_exists(obj_Bullet_Parent) and (distance_to_object(obj_Bullet_Parent) < 100)) {
-	    var tar = instance_nearest(x,y,obj_Bullet_Parent).id;
+	if global.roomtime mod round(20 / global.C[6]) = 0 {
+		if (instance_exists(obj_Bullet_Parent) and (distance_to_object(obj_Bullet_Parent) < 100)) {
+		    var tar = instance_nearest(x,y,obj_Bullet_Parent).id;
 			
-		scr_Lightning_To_Target(spr_Lightning_Streak, x, y, tar.x, tar.y, 10, 64, make_color_rgb(175, 200, 255))
+			scr_Lightning_To_Target(spr_Lightning_Streak, x, y, tar.x, tar.y, 10, 64, make_color_rgb(175, 200, 255))
 			
-		with (tar) {
-			scr_Bullet_Dampen(5)
+			with (tar) {
+				scr_Bullet_Dampen(5)
+			}
+			
+			scr_Refresh_Soul(4)
+			
+			
+			//scr_Essence_Defense_Field();
 		}
-			
-		scr_Refresh_Soul(3)
-			
-			
-		//scr_Essence_Defense_Field();
 	}
 
 
