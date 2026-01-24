@@ -23,13 +23,16 @@ if leave = 1 {
 }
 
 draw_sprite_ext(sprite_index,image_index,x,y,image_xscale,image_yscale,0,c_white,image_alpha);
+draw_text_color(x,y+_y_offset, recollectionString + recollectionUpgradeString, c_black, c_black, c_black, c_black, image_alpha);
+draw_set_font(Weak_Damage_Font)
 //draw_set_alpha(image_alpha);
-if recollectionExtraStats != 0 {
-	draw_text_ext_color(x,y+_y_offset+32, string_hash_to_newline(recollectionExtraStats),24,200, c_black, c_black, c_black, c_black, image_alpha);
+if recollectionExtraStats != 0 and recollectionExtraStats != "" {
+	draw_text_ext_color(x,y+_y_offset+24, recollectionExtraStats,20,200, c_black, c_black, c_gray, c_gray, image_alpha);
+	_y_offset += 24;
 } else {
-	_y_offset += 30;	
+	//_y_offset += 30;	
 }
-draw_text_color(x,y+_y_offset, string_hash_to_newline(recollectionString + recollectionUpgradeString), c_black, c_black, c_black, c_black, image_alpha);
+draw_text_ext_color(x,y+_y_offset+32, recollectionDescription,20,200, c_black, c_black, c_black, c_black, image_alpha);
 //draw_set_alpha(1);
 
 if priceString != "" {

@@ -3,6 +3,7 @@ alarm[0] = 1;
 recollectionUpgrade = 0;
 recollectionMirror = 0;
 recollectionExtraStats = 0;
+recollectionDescription = "";
 recollectionCount = 1;
 shop = 0;
 leave = 0;

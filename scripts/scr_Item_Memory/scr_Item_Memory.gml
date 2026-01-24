@@ -33,10 +33,10 @@ function scr_Item_Memory(displayItemSprite = true) {
 	
 	
 	if rememberance >= 1 || displayItemSprite {
-		recollectionExtraStats = "No Special Properties"
+		recollectionExtraStats = ""
 		
-		if variable_struct_exists(current_item_stats, "recollectionExtraStats") {
-			recollectionExtraStats = current_item_stats.recollectionExtraStats
+		if variable_struct_exists(current_item_stats, "recollectionSummary") {
+			recollectionExtraStats = current_item_stats.recollectionSummary
 		}
 		if variable_struct_exists(current_item_stats, "recollectionDescription") {
 			recollectionDescription = current_item_stats.recollectionDescription
@@ -52,13 +52,21 @@ function scr_Item_Memory(displayItemSprite = true) {
 		if itemVal = "L05" {
 			state_description = "";	
 		}
-		if recollectionExtraStats != "No Special Properties" {
+		recollectionDescription = recollectionDescription + state_description
+		/*if !is_array(recollectionDescription) {
+			recollectionDescription = [recollectionDescription]	
+		} */
+		//recollectionDescription[array_length(recollectionDescription)] = state_description
+		/*if recollectionExtraStats != "No Special Properties" {
 			recollectionExtraStats += " " + state_description
 		} else {
 			recollectionExtraStats = state_description
-		}
+		} */
 		
 	}
+	Print_DF(recollectionDescription)
+	recollectionDescription = string_replace_all(recollectionDescription, " +", "\n+")
+	Print_DF(recollectionDescription)
 	
 	
 
