@@ -20,7 +20,7 @@ function scr_Soul_Teleport(_evasion = false, _costs_money = true, _xx = obj_Astr
 	var _xstar = x;
 	var _ystar = y;
 	
-	TPCooldown = 30 + (30 * global.E[11]);
+	TPCooldown = 30;
 	
 	scr_Beast_Soul_Teleport(x, y, _xx, _yy);
 	

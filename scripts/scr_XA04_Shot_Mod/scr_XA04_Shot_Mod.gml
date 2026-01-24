@@ -14,7 +14,7 @@ function scr_XA04_Shot_Mod(){
 		alarm[0] = shot_stats.Shot_Life_Span;
 		////shot_stats.Shot_Timer = shot_stats.Shot_Life_Span;
 		
-		shot_stats.Shot_Fire += 2 * global.XA[4];
+		shot_stats.Shot_Fire += 2 * global.XA[4] * global.soulheartboost;
 		
 		shot_stats.Shot_Fire_Ticks += 3;
 		if shot_stats.Shot_Fire_Time = 0 {

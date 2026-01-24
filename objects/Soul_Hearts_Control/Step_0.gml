@@ -34,7 +34,7 @@ if global.totalhearts >= 1 {
 			if global.H06refill < 0 {
 				global.H06refill = 0;	
 			}
-			global.H06refill += 3;
+			global.H06refill += (3 / global.soulheartboost);
 		}
 		
 		//if heart[global.currentheart,2] != 103 and heart[global.currentheart,2] != 6 {
@@ -51,25 +51,6 @@ if global.totalhearts >= 1 {
 		
 		scr_Heart_Loss_Event(global.currentheart, heartLostType);
 		scr_L04();
-    
-	    /*if heart[global.currentheart,2] != 103 and heart[global.currentheart,2] != 6 {
-	        heart[global.currentheart,2] = 0;
-	        global.totalhearts -= 1;
-			scr_L04();
-    
-	        if global.B[3] > 0 {
-	            Soul_Hearts_Control.heart[global.currentheart, 2] = 103;
-	            Soul_Hearts_Control.heart[global.currentheart, 3] = 20 + 10 * global.B[3];
-				Soul_Hearts_Control.heart[global.currentheart, 4] = 20 + 10 * global.B[3];
-			
-				scr_Current_Heart_Stats();
-			
-	            global.totalhearts++;
-	        }
-	    } else {
-	        heart[global.currentheart,2] = 0;
-	        global.totalhearts -= 1;
-	    } */
 	
 	    scr_Current_Heart_Stats();
 		
@@ -130,14 +111,14 @@ if global.totalhearts >= 1 {
 		var heartReg = 1;
 		var heartType = heart[i,2]
 		if heartType = 2 {
-			heartReg = 3;	
+			heartReg = 3 * global.soulheartboost;	
 		}
 		if heartType = 4 {
-			heartHea = 40;	
-			heartReg = 0.5 * global.soulheartboost;
+			heartHea = 20 + (20 * global.soulheartboost);	
+			heartReg = 0.5// * global.soulheartboost;
 		}
 		if heartType = 103 {
-			var heartHea = 20 + 20 * global.B[3];
+			heartHea = 40;
 		}
 		if heartType = 7 {
 			heartHea = 60;	
@@ -147,7 +128,7 @@ if global.totalhearts >= 1 {
 		}
 		if heartType = 6 {
 			heartHea = 10;	
-			heartReg = 0.5 * global.soulheartboost;
+			heartReg = 0.5// * global.soulheartboost;
 		}
 		if heartType = 52 {
 			heartHea = 20 * global.OC[2];
@@ -157,7 +138,7 @@ if global.totalhearts >= 1 {
 		
         if heart[i,2] != 7 /*and heart[i,2] != 103*/ {
             if !scr_Room_Leavable() {
-                heart[i,3] += obj_Soul_Parent.shealthregenfactor * heartReg * ((10 + obj_Soul_Parent.shealthregenadd) / 10) / 60;   
+                heart[i,3] += obj_Soul_Parent.shealthregenfactor * heartReg * ((10 + obj_Soul_Parent.shealthregenadd) / 10) / 120;   
             } else {
                 heart[i,3] += obj_Soul_Parent.shealthregenfactor * heartReg * ((10 + obj_Soul_Parent.shealthregenadd) / 10) * 5;   
             }
@@ -168,16 +149,11 @@ if global.totalhearts >= 1 {
 				heart[i,3] -= (1 / 1200) + (global.glasstime / 600000);   
 			}
 		}
-		//if ((global.V[5] > 0) and (i = 0)) {
-		//	if (heart[i,3] >= heart[i,4] + 20 * global.V[5]) {
-	    //        heart[i,3] = heart[i,4] + 20 * global.V[5];
-	    //    }
-		//} else {
+
 		var healthcap = heart[i,4] - heart[i,5];
-			if (heart[i,3] >= healthcap) {
-	            heart[i,3] = healthcap;
-	        }	
-		//}
+		if (heart[i,3] >= healthcap) {
+	        heart[i,3] = healthcap;
+	    }	
     }
     
     obj_Soul_Parent.shealth = heart[global.currentheart,3];
