@@ -64,7 +64,7 @@ if ((soulCurrentHorizontalSpeed != 0) or (soulCurrentVerticalSpeed != 0)) {
 	
 	soulmovetimer++;
 	var _total_speed = sqrt((soulCurrentHorizontalSpeed * soulCurrentHorizontalSpeed) + (soulCurrentVerticalSpeed * soulCurrentVerticalSpeed))
-	scr_Soul_Stretch("Horizontal", scr_Wave(0, 0.05, 5 / _total_speed, 0))
+	scr_Soul_Stretch("Horizontal", scr_Wave(0, 0.05, 2.5 / _total_speed, 0))
 	//if soulmovetimer mod 20 = 0 {
 	//	scr_Soul_Stretch("Horizontal", 0.2)
 	//}

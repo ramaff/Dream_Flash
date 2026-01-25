@@ -84,8 +84,8 @@ if instance_exists(obj_Soul_Parent) {
 	}
 	
 	if instance_exists(obj_In_Game_Recollection_Cloud) {
-		xAv = mean(xAv * 4, obj_In_Game_Recollection_Cloud.x) / 2.5;	
-		yAv = mean(yAv * 4, obj_In_Game_Recollection_Cloud.y) / 2.5;	
+		xAv = mean(xAv * 5, obj_In_Game_Recollection_Cloud.x) / 3;	
+		yAv = mean(yAv * 5, obj_In_Game_Recollection_Cloud.y) / 3;	
 	}
 	
 	var camX = clamp((xAv - (view_width_zoom / 2)), 0, room_width - view_width_zoom);

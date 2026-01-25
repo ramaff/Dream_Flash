@@ -1,22 +1,22 @@
 function scr_Item_Recollection_Cloud(time = 1, _stacks = 1) {
 
-	if global.recoalpha < 1 {
-	    global.recoalpha += 0.15;
-	}
-	if global.recoalpha >= 1 {
-		global.recoalpha = 1;	
-	}
-	if global.recoalpha <= 0.05 {
-		global.recoalpha = 0.05;
+	if global.cloudalpha < 1.2 {
+		global.cloudalpha += 0.18;
 	}
 
 	//draw_sprite_ext(spr_Recollection_Hover_Cloud,0,x,y,1,1,0,c_white,global.recoalpha);
 	
 	if instance_exists(cloud) {
 		with(cloud) {
-			alarm[0] = time;	
+			alarm[0] = time;
+			//image_alpha = global.recoalpha
 		}
 	} else {
+		with(obj_In_Game_Recollection_Cloud) {
+			if alarm[0] < 20 {
+				instance_destroy()	
+			}
+		}
 	
 		with instance_create(obj_Soul_Parent.x,obj_Soul_Parent.y,obj_In_Game_Recollection_Cloud) {
 			recollectionPriceType = other.recollectionPriceType;
@@ -28,23 +28,12 @@ function scr_Item_Recollection_Cloud(time = 1, _stacks = 1) {
 			recollectionCount = other.recollectionCount;
 			shop = other.shop;
 			stacks = _stacks;
-		
-			if global.cloudalpha < 0 {
-				global.cloudalpha = 0;	
-			}
-			if global.cloudalpha > 1 {
-				global.cloudalpha = 1;	
-			}
 
 			image_alpha = global.cloudalpha;
-
-			if global.cloudalpha < 1.2 {
-			    global.cloudalpha += 0.18;
-			}
 		
 			alarm[0] = time;
 		
-			if time > 1 {
+			if time > 20 {
 				leave = 1;	
 			}
 		

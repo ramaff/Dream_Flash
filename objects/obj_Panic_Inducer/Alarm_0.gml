@@ -16,7 +16,7 @@ if instance_exists(obj_Boss_Parent) {
     current_weapon_stats.Shot_Type = obj_Lesser_Soul_Shot;
         
     current_weapon_stats.Shot_Phasing = 1;
-	current_weapon_stats.Shot_Pierce = 2;
+	current_weapon_stats.Shot_Pierce = 3;
         
     current_weapon_stats.Shot_Speed = 4.5 + random(2);
 	current_weapon_stats.Shot_Point_Angle = true
@@ -25,8 +25,6 @@ if instance_exists(obj_Boss_Parent) {
     current_weapon_stats.Shot_Knock_Back = 10;
     current_weapon_stats.Shot_Life_Span = 120;
 	current_weapon_stats.Shot_Size = 0.55;
-	
-	current_weapon_stats.Shot_Pierce += 1;
 		
 	scr_Minion_Shot_Creation();
 	

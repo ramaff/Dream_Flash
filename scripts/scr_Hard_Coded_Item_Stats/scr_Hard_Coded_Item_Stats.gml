@@ -556,7 +556,7 @@ function scr_Hard_Coded_Item_Stats(itemVal, items_to_add = 1, reload = false) {
 			if spirNum = 6 {
 				upAmt = 11;	
 				_repeat_amt = 2
-				global.soul_xp_threshold_mult = 0.625;
+				global.soul_xp_threshold_mult = 0.55;
 			}
 			scr_Soul_Level_Up_Threshold_Set()
 		

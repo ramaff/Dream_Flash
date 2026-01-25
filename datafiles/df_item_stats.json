@@ -692,222 +692,222 @@
     "I01": {
         "recollectionString": "Uplifted",
         "recollectionSprite": "spr_Uplifted_Art",
-        "recollectionSummary": "Hope and Strength",
-        "recollectionDescription": "+Spawn a Hope Item Field +The next level up will be Strength +60% Slower Leveling"
+        "recollectionSummary": "Strength and Hope",
+        "recollectionDescription": "+Spawn a Hope Item Field +The next level up will be Strength +60% Level Up Cost"
     },
     "I02": {
         "recollectionString": "Overjoyed",
         "recollectionSprite": "spr_Overjoyed_Art",
-        "recollectionSummary": "+Bliss +Strength +30% Slower Leveling",
-        "recollectionDescription": ""
+        "recollectionSummary": "Strength and Bliss",
+        "recollectionDescription": "+Spawn a Bliss Item Field +Next level up will be Strength +30% Level Up Cost"
     },
     "I03": {
         "recollectionString": "Confident",
         "recollectionSprite": "spr_Confident_Art",
-        "recollectionSummary": "+Assurance +Strength +10% Slower Leveling",
-        "recollectionDescription": ""
+        "recollectionSummary": "Strength and Assurance",
+        "recollectionDescription": "+Spawn an Assurance Item Field +Next level up will be Strength +10% Level Up Cost"
     },
     "I04": {
         "recollectionString": "Aggressive",
         "recollectionSprite": "spr_Aggressive_Art",
-        "recollectionSummary": "+Loathing +Strength x2 +10% Faster Leveling",
-        "recollectionDescription": ""
+        "recollectionSummary": "Strength and Loathing",
+        "recollectionDescription": "+Spawn a Loathing Item Field +Next two level ups will be Strength -10% Level Up Cost"
     },
     "I05": {
         "recollectionString": "Insecure",
         "recollectionSprite": "spr_Insecure_Art",
-        "recollectionSummary": "+Paranoia +Strength x2 +30% Faster Leveling",
-        "recollectionDescription": ""
+        "recollectionSummary": "Strength and Paranoia",
+        "recollectionDescription": "+Spawn a Paranoia Item Field +Next two level ups will be Strength -25% Level Up Cost"
     },
     "I06": {
         "recollectionString": "Destructive",
         "recollectionSprite": "spr_Destructive_Art",
-        "recollectionSummary": "+Despair +Strength x2 +60% Faster Leveling",
-        "recollectionDescription": ""
+        "recollectionSummary": "Strength and Despair",
+        "recollectionDescription": "+Spawn a Despair Item Field +Next two level ups will be Strength -45% Level Up Cost"
     },
     
     "I07": {
         "recollectionString": "Safe",
         "recollectionSprite": "spr_Safe_Art",
-        "recollectionSummary": "+Hope +Vitality +60% Slower Leveling",
-        "recollectionDescription": ""
+        "recollectionSummary": "Vitality and Hope",
+        "recollectionDescription": "+Spawn an Hope Item Field +Next level up will be Vitality +60% Level Up Cost"
     },
     "I08": {
         "recollectionString": "Ecstatic",
         "recollectionSprite": "spr_Ecstatic_Art",
-        "recollectionSummary": "+Bliss +Vitality +30% Slower Leveling",
-        "recollectionDescription": ""
+        "recollectionSummary": "Vitality and Bliss",
+        "recollectionDescription": "+Spawn a Bliss Item Field +Next level up will be Vitality +30% Level Up Cost"
     },
     "I09": {
         "recollectionString": "Secure",
         "recollectionSprite": "spr_Secure_Art",
-        "recollectionSummary": "+Assurance +Vitality +10% Slower Leveling",
-        "recollectionDescription": ""
+        "recollectionSummary": "Vitality and Essence",
+        "recollectionDescription": "+Spawn an Assurance Item Field +Next level up will be Vitality +10% Level Up Cost"
     },
     "I10": {
         "recollectionString": "Strained",
         "recollectionSprite": "spr_Strained_Art",
-        "recollectionSummary": "+Loathing +Vitality x2 +10% Faster Leveling",
-        "recollectionDescription": ""
+        "recollectionSummary": "Vitality and Loathing",
+        "recollectionDescription": "+Spawn a Loathing Item Field +Next two level ups will be Vitality -10% Level Up Cost"
     },
     "I11": {
         "recollectionString": "Overwhelmed",
         "recollectionSprite": "spr_Overwhelmed_Art",
-        "recollectionSummary": "+Paranoia +Vitality x2 +30% Faster Leveling",
-        "recollectionDescription": ""
+        "recollectionSummary": "Vitality and Paranoia",
+        "recollectionDescription": "+Spawn a Paranoia Item Field +Next two level ups will be Vitality -25% Level Up Cost"
     },
     "I12": {
         "recollectionString": "Sorrow",
         "recollectionSprite": "spr_Sorrow_Art",
-        "recollectionSummary": "+Despair +Vitality x2 +60% Faster Leveling",
-        "recollectionDescription": ""
+        "recollectionSummary": "Vitality and Despair",
+        "recollectionDescription": "+Spawn a Despair Item Field +Next two level ups will be Vitality -45% Level Up Cost"
     },
     
     "I13": {
         "recollectionString": "Merry",
         "recollectionSprite": "spr_Merry_Art",
-        "recollectionSummary": "+Hope +Essence +60% Slower Leveling",
-        "recollectionDescription": ""
+        "recollectionSummary": "Essence and Hope",
+        "recollectionDescription": "+Spawn an Hope Item Field +Next level up will be Essence +60% Level Up Cost"
     },
     "I14": {
         "recollectionString": "Energized",
         "recollectionSprite": "spr_Energized_Art",
-        "recollectionSummary": "+Bliss +Essence +30% Slower Leveling",
-        "recollectionDescription": ""
+        "recollectionSummary": "Essence and Bliss",
+        "recollectionDescription": "+Spawn a Bliss Item Field +Next level up will be Essence +30% Level Up Cost"
     },
     "I15": {
         "recollectionString": "Capable",
         "recollectionSprite": "spr_Capable_Art",
-        "recollectionSummary": "+Assurance +Essence +10% Slower Leveling",
-        "recollectionDescription": ""
+        "recollectionSummary": "Essence and Assurance",
+        "recollectionDescription": "+Spawn an Assurance Item Field +Next level up will be Essence +10% Level Up Cost"
     },
     "I16": {
         "recollectionString": "Hateful",
         "recollectionSprite": "spr_Hateful_Art",
-        "recollectionSummary": "+Loathing +Essence x2 +10% Faster Leveling",
-        "recollectionDescription": ""
+        "recollectionSummary": "Essence and Loathing",
+        "recollectionDescription": "+Spawn a Loathing Item Field +Next two level ups will be Essence -10% Level Up Cost"
     },
     "I17": {
         "recollectionString": "Pressured",
         "recollectionSprite": "spr_Pressured_Art",
-        "recollectionSummary": "+Paranoia +Essence x2 +30% Faster Leveling",
-        "recollectionDescription": ""
+        "recollectionSummary": "Essence and Paranoia",
+        "recollectionDescription": "+Spawn a Paranoia Item Field +Next two level ups will be Essence -25% Level Up Cost"
     },
     "I18": {
         "recollectionString": "Defeated",
         "recollectionSprite": "spr_Defeated_Art",
-        "recollectionSummary": "+Despair +Essence x2 +60% Faster Leveling",
-        "recollectionDescription": ""
+        "recollectionSummary": "Essence and Despair",
+        "recollectionDescription": "+Spawn a Despair Item Field +Next two level ups will be Essence -45% Level Up Cost"
     },
     
     "I19": {
         "recollectionString": "Eager",
         "recollectionSprite": "spr_Eager_Art",
-        "recollectionSummary": "+Hope +Dexterity +60% Slower Leveling",
-        "recollectionDescription": ""
+        "recollectionSummary": "Dexterity and Hope",
+        "recollectionDescription": "+Spawn an Hope Item Field +Next level up will be Dexterity +60% Level Up Cost"
     },
     "I20": {
         "recollectionString": "Excited",
         "recollectionSprite": "spr_Excited_Art",
-        "recollectionSummary": "Bliss and Dexterity",
-        "recollectionDescription": "+Spawn a Bliss Item Field +The next level up will be Dexterity +30% Slower Leveling"
+        "recollectionSummary": "Dexterity and Bliss",
+        "recollectionDescription": "+Spawn a Bliss Item Field +Next level up will be Dexterity +30% Level Up Cost"
     },
     "I21": {
         "recollectionString": "Hyped",
         "recollectionSprite": "spr_Hyped_Art",
-        "recollectionSummary": "+Assurance +Dexterity +10% Slower Leveling",
-        "recollectionDescription": ""
+        "recollectionSummary": "Dexterity and Assurance",
+        "recollectionDescription": "+Spawn an Assurance Item Field +Next level up will be Dexterity +10% Level Up Cost"
     },
     "I22": {
         "recollectionString": "Impatient",
         "recollectionSprite": "spr_Frustrated_Art",
-        "recollectionSummary": "+Loathing +Dexterity x2 +10% Faster Leveling",
-        "recollectionDescription": ""
+        "recollectionSummary": "Dexterity and Loathing",
+        "recollectionDescription": "+Spawn a Loathing Item Field +Next two level ups will be Dexterity -10% Level Up Cost"
     },
     "I23": {
         "recollectionString": "Panic",
         "recollectionSprite": "spr_Panic_Art",
-        "recollectionSummary": "+Paranoia +Dexterity x2 +30% Faster Leveling",
-        "recollectionDescription": ""
+        "recollectionSummary": "Dexterity and Paranoia",
+        "recollectionDescription": "+Spawn a Paranoia Item Field +Next two level ups will be Dexterity -25% Level Up Cost"
     },
     "I24": {
         "recollectionString": "Crushed",
         "recollectionSprite": "spr_Crushed_Art",
-        "recollectionSummary": "+Despair +Dexterity x2 +60% Faster Leveling",
-        "recollectionDescription": ""
+        "recollectionSummary": "Dexterity and Despair",
+        "recollectionDescription": "+Spawn a Despair Item Field +Next two level ups will be Dexterity -45% Level Up Cost"
     },
     
     "I25": {
         "recollectionString": "Peaceful",
         "recollectionSprite": "spr_Peaceful_Art",
-        "recollectionSummary": "+Hope +Perception +60% Slower Leveling",
-        "recollectionDescription": ""
+        "recollectionSummary": "Perception and Hope",
+        "recollectionDescription": "+Spawn an Hope Item Field +Next level up will be Perception +60% Level Up Cost"
     },
     "I26": {
         "recollectionString": "Tranquil",
         "recollectionSprite": "spr_Tranquil_Art",
-        "recollectionSummary": "+Bliss +Perception +30% Slower Leveling",
-        "recollectionDescription": ""
+        "recollectionSummary": "Perception and Bliss",
+        "recollectionDescription": "+Spawn a Bliss Item Field +Next level up will be Perception +30% Level Up Cost"
     },
     "I27": {
         "recollectionString": "Comfortable",
         "recollectionSprite": "spr_Comfortable_Art",
-        "recollectionSummary": "+Assurance +Perception +10% Slower Leveling",
-        "recollectionDescription": ""
+        "recollectionSummary": "Perception and Assurance",
+        "recollectionDescription": "+Spawn an Assurance Item Field +Next level up will be Perception +10% Level Up Cost"
     },
     "I28": {
         "recollectionString": "Boiling",
         "recollectionSprite": "spr_Boiling_Art",
-        "recollectionSummary": "+Loathing +Perception x2 +10% Faster Leveling",
-        "recollectionDescription": ""
+        "recollectionSummary": "Perception and Loathing",
+        "recollectionDescription": "+Spawn a Loathing Item Field +Next two level ups will be Perception -10% Level Up Cost"
     },
     "I29": {
         "recollectionString": "Anxious",
         "recollectionSprite": "spr_Anxious_Art",
-        "recollectionSummary": "+Paranoia +Perception x2 +30% Faster Leveling",
-        "recollectionDescription": ""
+        "recollectionSummary": "Perception and Paranoia",
+        "recollectionDescription": "+Spawn a Paranoia Item Field +Next two level ups will be Perception -25% Level Up Cost"
     },
     "I30": {
         "recollectionString": "Depressed",
         "recollectionSprite": "spr_Depressed_Art",
-        "recollectionSummary": "+Despair +Perception x2 +60% Faster Leveling",
-        "recollectionDescription": ""
+        "recollectionSummary": "Perception and Despair",
+        "recollectionDescription": "+Spawn a Despair Item Field +Next two level ups will be Perception -45% Level Up Cost"
     },
     "I31": {
         "recollectionString": "Ambitious",
         "recollectionSprite": "spr_Overcoming_Art",
-        "recollectionSummary": "+Hope +State +60% Slower Leveling",
-        "recollectionDescription": ""
+        "recollectionSummary": "State and Hope",
+        "recollectionDescription": "+Spawn an Hope Item Field +Next level up will be State +60% Level Up Cost"
     },
     "I32": {
         "recollectionString": "Fantasizing",
         "recollectionSprite": "spr_Fantasizing_Art",
-        "recollectionSummary": "+Bliss +State +30% Slower Leveling",
-        "recollectionDescription": ""
+        "recollectionSummary": "State and Bliss",
+        "recollectionDescription": "+Spawn a Bliss Item Field +Next level up will be State +30% Level Up Cost"
     },
     "I33": {
         "recollectionString": "Prideful",
         "recollectionSprite": "spr_Prideful_Art",
-        "recollectionSummary": "+Assurance +State +10% Slower Leveling",
-        "recollectionDescription": ""
+        "recollectionSummary": "State and Assurance",
+        "recollectionDescription": "+Spawn an Assurance Item Field +Next level up will be State +10% Level Up Cost"
     },
     "I34": {
         "recollectionString": "Envious",
         "recollectionSprite": "spr_Envious_Art",
-        "recollectionSummary": "+Loathing +State x2 +10% Faster Leveling",
-        "recollectionDescription": ""
+        "recollectionSummary": "State and Loathing",
+        "recollectionDescription": "+Spawn a Loathing Item Field +Next two level ups will be State -10% Level Up Cost"
     },
     "I35": {
         "recollectionString": "Hysterical",
         "recollectionSprite": "spr_Hysterical_Art",
-        "recollectionSummary": "+Paranoia +State x2 +30% Faster Leveling",
-        "recollectionDescription": ""
+        "recollectionSummary": "State and Paranoia",
+        "recollectionDescription": "+Spawn a Paranoia Item Field +Next two level ups will be State -25% Level Up Cost"
     },
     "I36": {
         "recollectionString": "Empty",
         "recollectionSprite": "spr_Empty_Art",
-        "recollectionSummary": "+Despair +State x2 +60% Faster Leveling",
-        "recollectionDescription": ""
+        "recollectionSummary": "State and Despair",
+        "recollectionDescription": "+Spawn a Despair Item Field +Next two level ups will be State -45% Level Up Cost"
     },
     
     
