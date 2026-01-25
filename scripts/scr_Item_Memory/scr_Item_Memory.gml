@@ -64,10 +64,8 @@ function scr_Item_Memory(displayItemSprite = true) {
 		} */
 		
 	}
-	Print_DF(recollectionDescription)
 	recollectionDescription = string_replace_all(recollectionDescription, " +", "\n+")
 	recollectionDescription = string_replace_all(recollectionDescription, " -", "\n-")
-	Print_DF(recollectionDescription)
 	
 	
 

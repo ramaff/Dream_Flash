@@ -101,9 +101,9 @@ if (senergy < essenceCap) {
 	}
 }
 	
-if senergy > essenceCap and _surpass_cap = false {
-	senergy = essenceCap;
-}
+//if senergy > essenceCap and _surpass_cap = false {
+//	senergy = essenceCap;
+//}
 
 sdelay -= sdelayregenfactor;
 if sdelay < 0 {

@@ -580,112 +580,112 @@
     "H01": {
         "recollectionString": "Lesser Heart",
         "recollectionSprite": "spr_Basic_Heart_Art",
-        "recollectionSummary": "+20 HP +Basic Heart",
-        "recollectionDescription": "A regular heart made up of some life force, heart dies when its health reaches 0."
+        "recollectionSummary": "Basic Heart",
+        "recollectionDescription": "+20 Health"
     },
     "H02": {
         "recollectionString": "Regen Heart",
         "recollectionSprite": "spr_Regen_Heart_Art",
-        "recollectionSummary": "+20 HP +Faster Regen",
-        "recollectionDescription": "This heart can regenerate its life force three times as fast as normal!"
+        "recollectionSummary": "Faster Regen",
+        "recollectionDescription": "+20 Health +3x Faster Regen"
     },
     "H03": {
         "recollectionString": "Survivor Heart",
         "recollectionSprite": "spr_Survivor_Heart_Art",
-        "recollectionSummary": "+20 HP +2 Survival Hits",
-        "recollectionDescription": "Can survive an extra 2 lethal hits, leaving the heart in a broken but repairable state."
+        "recollectionSummary": "Survival Hits",
+        "recollectionDescription": "+20 HP +Can survive an extra 2 lethal hits leaving the heart in a broken but repairable state."
     },
     "H04": {
         "recollectionString": "Jumbo Heart",
         "recollectionSprite": "spr_Jumbo_Heart_Art",
-        "recollectionSummary": "+40 HP Large Heart -Regen Speed",
-        "recollectionDescription": "Larger than normal, letting this heart take more punishment."
+        "recollectionSummary": "Big HP Heart",
+        "recollectionDescription": "+40 HP Large Heart -Regen Speed"
     },
     "H05": {
         "recollectionString": "Mechanical Heart",
         "recollectionSprite": "spr_Tough_Heart_Art",
-        "recollectionSummary": "+20 HP +Essence Gain",
-        "recollectionDescription": "Regens Heart much faster when soul is full on essence. Regens essence much faster when heart is full.",
+        "recollectionSummary": "Rapid Essence Regen",
+        "recollectionDescription": "+Regens health much faster when soul is full on essence. Regens essence much faster when heart is full.",
         "Mech_Credit": 1
     },
     "H06": {
         "recollectionString": "Undying Heart",
         "recollectionSprite": "spr_Undying_Heart_Art",
-        "recollectionSummary": "+10 HP +Revive",
-        "recollectionDescription": "This heart comes back next room after it dies!"
+        "recollectionSummary": "Reviving Heart",
+        "recollectionDescription": "+10 HP +The heart comes back 3 rooms after it dies"
     },
     "H07": {
         "recollectionString": "Eternal Hourglass Heart",
         "recollectionSprite": "spr_Hourglass_Heart_Art",
-        "recollectionSummary": "+60 HP +Expiration",
-        "recollectionDescription": "Has much more health than normal, but slowly loses it over time. Also gains some health after every boss fight."
+        "recollectionSummary": "Expiring Big Heart",
+        "recollectionDescription": "+60 HP +Slowly loses max health over time"
     },
     "H08": {
         "recollectionString": "Spike Heart",
         "recollectionSprite": "spr_Spike_Heart_Art",
-        "recollectionSummary": "+20 HP +Imaginary Revenge Damage",
-        "recollectionDescription": "Shoots imaginary spikes in all directions when hit!",
+        "recollectionSummary": "Imaginary Revenge Damage",
+        "recollectionDescription": "+20HP +Shoots imaginary spikes in all directions when hit.",
         "Spike_Credit": 1
     },
     "H09": {
         "recollectionString": "Bleeding Heart",
         "recollectionSprite": "spr_Bleeding_Heart_Art",
-        "recollectionSummary": "+20 HP +Sharp Revenge Damage",
-        "recollectionDescription": "Shoots Daggers when hit that make bosses bleed!",
+        "recollectionSummary": "Sharp Revenge Damage",
+        "recollectionDescription": "+20 HP +Shoots Daggers when hit that make bosses bleed!",
         "Bleeding_Credit": 1
     },
     "H10": {
         "recollectionString": "Magician Heart",
         "recollectionSprite": "spr_Magician_Heart_Art",
-        "recollectionSummary": "+20 HP +Magic Revenge Damage",
-        "recollectionDescription": "Shoots Homing Magic Bolts at bosses when hit.",
+        "recollectionSummary": "Magic Revenge Damage",
+        "recollectionDescription": "+20 HP +Shoots Homing Magic Bolts at bosses when hit.",
         "Casting_Credit": 1
     },
     "H11": {
         "recollectionString": "Rocket Heart",
         "recollectionSprite": "spr_Rocket_Heart_Art",
-        "recollectionSummary": "+20 HP +Explosive Revenge Damage",
-        "recollectionDescription": "Sends a bunch of rockets down from above when hit."
+        "recollectionSummary": "Explosive Revenge Damage",
+        "recollectionDescription": "+20 HP +Sends a bunch of rockets down from above when hit."
     },
     "H12": {
         "recollectionString": "Lightning Heart",
         "recollectionSprite": "spr_Lightning_Heart_Art",
-        "recollectionSummary": "+20 HP +Energy Revenge Damage",
-        "recollectionDescription": "Sends in Lightning Bolts from the sky when hit.",
+        "recollectionSummary": "Energy Revenge Damage",
+        "recollectionDescription": "+20 HP +Sends in Lightning Bolts from the sky when hit.",
         "Ascending_Credit": 1
     },
     "H13": {
         "recollectionString": "Scaley Heart",
         "recollectionSprite": "spr_Scaley_Heart_Art",
-        "recollectionSummary": "+20 HP +Dexterity When HP Low",
-        "recollectionDescription": "Increases soul attack rate and movement speed when low on HP. Makes the soul slither.",
+        "recollectionSummary": "Dexterity When HP Low",
+        "recollectionDescription": "+20 HP +Increases soul attack rate and movement speed when low on HP. Makes the soul slither.",
         "Snake_Credit": 1
     },
     "H14": {
         "recollectionString": "Beast Heart",
         "recollectionSprite": "spr_Beast_Heart_Art",
-        "recollectionSummary": "+25 HP +Hungry Bites",
-        "recollectionDescription": "The soul bites in the direction of the nearest enemies. These bites do damage, regenerate health and push the soul towards their target. Soul has the spirit of an wild beast.",
+        "recollectionSummary": "Hungry Bites",
+        "recollectionDescription": "+25 HP +The soul bites in the direction of the nearest enemies. These bites do damage, regenerate health and push the soul towards their target. Soul has the spirit of an wild beast.",
         "Beast_Credit": 1
     },
     "H15": {
         "recollectionString": "Rubber Heart",
         "recollectionSprite": "spr_Rubber_Heart_Art",
-        "recollectionSummary": "+20 HP +Bullet Bounceback",
-        "recollectionDescription": "Gives the soul a 50% chance of shooting back enemy projectiles and negating damage."
+        "recollectionSummary": "Bullet Bounceback",
+        "recollectionDescription": "+20 HP +Gives the soul a 50% chance of shooting back enemy projectiles and negating damage."
     },
     "H16": {
         "recollectionString": "Jello Heart",
         "recollectionSprite": "spr_Jello_Heart_Art",
-        "recollectionSummary": "+20 HP +Damage Redirection",
-        "recollectionDescription": "When damaged, has a large chance of redirecting the damage to another heart slot.",
+        "recollectionSummary": "Damage Redirection",
+        "recollectionDescription": "+20 HP +When damaged, has a large chance of redirecting the damage to another heart slot.",
         "Scrub_Credit": 0.5
     },
     "H17": {
         "recollectionString": "Soapy Heart",
         "recollectionSprite": "spr_Soapy_Heart_Art",
-        "recollectionSummary": "+20 HP +Soap Trail",
-        "recollectionDescription": "While active, gives the soul a slippery bubble trail.",
+        "recollectionSummary": "Soap Trail",
+        "recollectionDescription": "+20 HP +While active, gives the soul a slippery bubble trail.",
         "Scrub_Credit": 1
     },
     
@@ -915,118 +915,118 @@
     "J01": {
         "recollectionString": "Drumstick",
         "recollectionSprite": "spr_Drumstick_Art",
-        "recollectionSummary": "+3 Strength +1 Heart",
-        "recollectionDescription": "Memory of some food you ate, gives you strength and more health!"
+        "recollectionSummary": "Strength and Health",
+        "recollectionDescription": "+1/2 Strength Level +1 Lesser Heart"
     },
     "J02": {
         "recollectionString": "Pizza",
         "recollectionSprite": "spr_Pizza_Art",
-        "recollectionSummary": "+3 Vitality +1 Heart",
-        "recollectionDescription": "Memory of some food you ate, gives you vitality and more health!"
+        "recollectionSummary": "Vitality and Health",
+        "recollectionDescription": "+1/2 Vitality Level +1 Lesser Heart"
     },
     "J03": {
         "recollectionString": "Ice Cream",
         "recollectionSprite": "spr_Ice_Cream_Art",
-        "recollectionSummary": "+3 Essence +1 Heart",
-        "recollectionDescription": "Memory of some food you ate, gives you essence and more health!"
+        "recollectionSummary": "Essence and Health",
+        "recollectionDescription": "+1/2 Essence Level +1 Lesser Heart"
     },
     "J04": {
         "recollectionString": "Coffee",
         "recollectionSprite": "spr_Coffee_Art",
-        "recollectionSummary": "+3 Dexterity +1 Heart",
-        "recollectionDescription": "Memory of some food you ate, gives you dexterity and more health!"
+        "recollectionSummary": "Dexterity and Health",
+        "recollectionDescription": "+1/2 Dexterity Level +1 Lesser Heart"
     },
     "J05": {
         "recollectionString": "Tea",
         "recollectionSprite": "spr_Tea_Art",
-        "recollectionSummary": "+3 Perception +1 Heart",
-        "recollectionDescription": "Memory of some food you ate, gives you perception and more health!"
+        "recollectionSummary": "Perception and Health",
+        "recollectionDescription": "+1/2 Perception Level +1 Lesser Heart"
     },
     "J06": {
         "recollectionString": "Energy Drink",
         "recollectionSprite": "spr_Energy_Drink_Art",
-        "recollectionSummary": "+3 State +1 Heart",
-        "recollectionDescription": "Memory of some food you ate, gives you state and more health!"
+        "recollectionSummary": "State and Health",
+        "recollectionDescription": "+1/2 State Level +1 Lesser Heart"
     },
     "J07": {
         "recollectionString": "Soul Food",
         "recollectionSprite": "spr_Soul_Food_Art",
-        "recollectionSummary": "+40% Soul Minion Firerate +1 Heart",
-        "recollectionDescription": "Boost the power of your ally souls by allowing them to shoot faster."
+        "recollectionSummary": "Soul and Health",
+        "recollectionDescription": "+40% Soul Minion Firerate +1 Lesser Heart"
     },
     "J08": {
         "recollectionString": "Fig",
         "recollectionSprite": "spr_Fig_Art",
-        "recollectionSummary": "+30% Figment Damage +30% Figment Health +1 Heart",
-        "recollectionDescription": "Boost the power of your ally figments by allowing them to hit harder, and get hit more."
+        "recollectionSummary": "Figment and Health",
+        "recollectionDescription": "+30% Figment Damage +30% Figment Health +1 Lesser Heart"
     },
 
     "K03": {
         "recollectionString": "Dumbell",
         "recollectionSprite": "spr_Dumbell_Art",
-        "recollectionSummary": "+2 Strength Per Floor",
-        "recollectionDescription": "Lifting heavy objects makes you stronger over time!"
+        "recollectionSummary": "Strength over Time",
+        "recollectionDescription": "+1/4 Strength Level Per Floor"
     },
     "K04": {
         "recollectionString": "Vitamins",
         "recollectionSprite": "spr_Vitamins_Art",
-        "recollectionSummary": "+2 Vitality Per Floor",
-        "recollectionDescription": "Taking your vitamins makes you healthier over time!"
+        "recollectionSummary": "Vitality over Time",
+        "recollectionDescription": "+1/4 Vitality Level Per Floor"
     },
     "K05": {
         "recollectionString": "Essentials",
         "recollectionSprite": "spr_Essentials_Art",
-        "recollectionSummary": "+2 Essence Per Floor",
-        "recollectionDescription": "Essential items give you more essence over time!"
+        "recollectionSummary": "Essence over Time",
+        "recollectionDescription": "+1/4 Essence Level Per Floor"
     },
     "K06": {
         "recollectionString": "Running Shoes",
         "recollectionSprite": "spr_Running_Shoes_Art",
-        "recollectionSummary": "+2 Dexterity Per Floor",
-        "recollectionDescription": "These dream-like kicks give you more speed over time!"
+        "recollectionSummary": "Dexterity over Time",
+        "recollectionDescription": "+1/4 Dexterity Level Per Floor"
     },
     "K07": {
         "recollectionString": "Glasses",
         "recollectionSprite": "spr_Glasses_Art",
-        "recollectionSummary": "+2 Perception Per Floor",
-        "recollectionDescription": "Wearing glasses give you more perception over time!"
+        "recollectionSummary": "Perception over Time",
+        "recollectionDescription": "+1/4 Perception Level Per Floor"
     },
     "K08": {
         "recollectionString": "Role Model",
         "recollectionSprite": "spr_Role_Model_Art",
-        "recollectionSummary": "+2 State Per Floor",
-        "recollectionDescription": "Having someone to look up to gives you more state over time!"
+        "recollectionSummary": "State over Time",
+        "recollectionDescription": "+1/4 State Level Per Floor"
     },
 
     "L01": {
         "recollectionString": "Mental Ammunition",
         "recollectionSprite": "spr_Mental_Ammunition_Art",
-        "recollectionSummary": "+Weapon Specific Essence",
-        "recollectionDescription": "A boost of mental ammunition, gives you a bigger and higher quality stockpile of imaginary weapons. Each weapon now has an extra bit of initial essence that also has a shorter delay."
+        "recollectionSummary": "Weapon Specific Essence",
+        "recollectionDescription": "+Each weapon now has an extra bit of initial essence that also has a shorter delay."
     },
     "L02": {
         "recollectionString": "Mental Baggage",
         "recollectionSprite": "spr_Mental_Baggage_Art",
-        "recollectionSummary": "+1 Weapon Slots",
-        "recollectionDescription": "A bag that lets you hold an extra weapon!"
+        "recollectionSummary": "Hold an Extra Weapon",
+        "recollectionDescription": "+1 Weapon Slots"
     },
     "L03": {
         "recollectionString": "Technique",
         "recollectionSprite": "spr_Technique_Art",
-        "recollectionSummary": "+Weapon Upgrade",
-        "recollectionDescription": "Provides an extra level of improvement to your currently held weapon. Upgraded weapons shoot 16% faster and consume 16% less essence per level."
+        "recollectionSummary": "Weapon Upgrade",
+        "recollectionDescription": "+Upgrade your currently held weapon. Weapons shoot 16% faster and consume 16% less essence per level."
     },
     "L04": {
         "recollectionString": "Brightside Hearts",
         "recollectionSprite": "spr_Brightside_Hearts_Art",
-        "recollectionSummary": "+Heart Loss Stats",
-        "recollectionDescription": "When life hands you lemons. Losing a heart will give you a permanent +2 increase to a random basic stat."
+        "recollectionSummary": "Heart Loss Stats",
+        "recollectionDescription": "+Losing a heart will give you a permanent +1/4 Level to a random basic stat."
     },
     "L05": {
         "recollectionString": "Potential",
         "recollectionSprite": "spr_Potential_Art",
-        "recollectionSummary": "+1/2 All State Credits",
-        "recollectionDescription": "Potential for anything, brings you closer to any state transformation.",
+        "recollectionSummary": "Closer to a Higher State",
+        "recollectionDescription": "1/2 All State Credits",
         "Snake_Credit": 0.5,
         "Beast_Credit": 0.5,
         "Mech_Credit": 0.5,
@@ -1041,93 +1041,93 @@
         "recollectionString": "Wandering Soul",
         "recollectionSprite": "spr_Wandering_Soul",
         "recollectionSize": 0.375,
-        "recollectionSummary": "+Ally Soul",
-        "recollectionDescription": "This soul seems a bit lost, luckily it's on your side. Shoots at bosses and loosely follows your soul. More souls wander into your party the longer the fight goes on.",
+        "recollectionSummary": "Ally Soul",
+        "recollectionDescription": "+This soul seems a bit lost, luckily it's on your side. Shoots at bosses and loosely follows your soul. More souls wander into your party the longer the fight goes on.",
         "Mech_Credit": 0.5
     },
     "M02": {
         "recollectionString": "Friendly Figment",
         "recollectionSprite": "spr_Friendly_Figment",
         "recollectionSize": 0.375,
-        "recollectionSummary": "+Ally Figment",
-        "recollectionDescription": "Unlike souls, figments are corporeal. Bosses will target and shoot them, however the figments can die if they are hit too much. Luckily they always come back!",
+        "recollectionSummary": "Ally Figment",
+        "recollectionDescription": "+Unlike souls, figments are corporeal. Bosses will target and shoot them, however the figments can die if they are hit too much. Luckily they always come back!",
         "Mech_Credit": 0.5
     },
     "M03": {
         "recollectionString": "Fighter Soul",
         "recollectionSprite": "spr_Fighter_Soul",
         "recollectionSize": 0.375,
-        "recollectionSummary": "+Ally Soul",
-        "recollectionDescription": "Follows bosses and shoots pretty quick for a soul.",
+        "recollectionSummary": "Ally Soul",
+        "recollectionDescription": "+Follows bosses and shoots pretty quick for a soul.",
         "Mech_Credit": 0.5
     },
     "M04": {
         "recollectionString": "The Butt of Jokes",
         "recollectionSprite": "spr_Butt_of_Jokes",
         "recollectionSize": 0.375,
-        "recollectionSummary": "+Ally Figment",
-        "recollectionDescription": "Comedic punching bag, bosses will target this figment instead of the soul.",
+        "recollectionSummary": "Ally Figment",
+        "recollectionDescription": "+Comedic punching bag, bosses will target this figment instead of the soul.",
         "Mech_Credit": 0.5
     },
     "M05": {
         "recollectionString": "Blaze Soul",
         "recollectionSprite": "spr_Blaze_Soul",
         "recollectionSize": 0.375,
-        "recollectionSummary": "+Ally Soul",
-        "recollectionDescription": "Shoots fire essence at bosses, if your projectiles go through this soul they will also be set on fire for extra damage!"
+        "recollectionSummary": "Ally Soul",
+        "recollectionDescription": "+Shoots fire essence at bosses, if your projectiles go through this soul they will also be set on fire for extra damage!"
     },
     "M06": {
         "recollectionString": "Flash Cannon",
         "recollectionSprite": "spr_Flash_Cannon",
         "recollectionSize": 0.375,
-        "recollectionSummary": "+Ally Figment",
-        "recollectionDescription": "Shoots powerful imaginary explosives at the enemies."
+        "recollectionSummary": "Ally Figment",
+        "recollectionDescription": "+Shoots powerful imaginary explosives at the enemies."
     },
     "M07": {
         "recollectionString": "Fuse Soul",
         "recollectionSprite": "spr_Fuse_Soul",
         "recollectionSize": 0.375,
-        "recollectionSummary": "+Ally Soul",
-        "recollectionDescription": "Shoots gunpowder, if your projectiles pass through this soul they will gain explosiveness!"
+        "recollectionSummary": "Ally Soul",
+        "recollectionDescription": "+Shoots gunpowder, if your projectiles pass through this soul they will gain explosiveness!"
     },
     "M08": {
         "recollectionString": "Healthy Thoughts",
         "recollectionSprite": "spr_Healthy_Thoughts",
         "recollectionSize": 0.375,
-        "recollectionSummary": "+Ally Figment",
-        "recollectionDescription": "Produces healthy thinking that heals you if you pick it up!",
+        "recollectionSummary": "Ally Figment",
+        "recollectionDescription": "+Produces healthy thinking that heals you if you pick it up!",
         "Mech_Credit": 0.5
     },
     "M09": {
         "recollectionString": "Spike Soul",
         "recollectionSprite": "spr_Spike_Soul",
         "recollectionSize": 0.375,
-        "recollectionSummary": "+Ally Soul",
-        "recollectionDescription": "Shoots spike essence at the enemies, Increases the pierce of your projectiles by 1 and shot power by 2.5 if they pass through the soul.",
+        "recollectionSummary": "Ally Soul",
+        "recollectionDescription": "+Shoots spike essence at the enemies, Increases the pierce of your projectiles by 1 and shot power by 2.5 if they pass through the soul.",
         "Spike_Credit": 1
     },
     "M10": {
         "recollectionString": "Corporeal Chum",
         "recollectionSprite": "spr_Corporeal_Chum",
         "recollectionSize": 0.375,
-        "recollectionSummary": "+Ally Figment",
-        "recollectionDescription": "When hit will retaliate with a barrage of green essence!",
+        "recollectionSummary": "Ally Figment",
+        "recollectionDescription": "+When hit will retaliate with a barrage of green essence!",
         "Mech_Credit": 0.5
     },
     "M11": {
         "recollectionString": "Hungry Soul",
         "recollectionSprite": "spr_Hungry_Soul",
         "recollectionSize": 0.375,
-        "recollectionSummary": "+Ally Soul",
-        "recollectionDescription": "Chases down bosses, doing big damage to them.",
+        "recollectionSummary": "Ally Soul",
+        "recollectionDescription": "+Chases down bosses, doing big damage to them.",
         "Beast_Credit": 1
     },
     "M12": {
         "recollectionString": "Troubling Thingo",
         "recollectionSprite": "spr_Troubling_Thingo",
         "recollectionSize": 0.375,
-        "recollectionSummary": "+Ally Figment",
-        "recollectionDescription": "When colliding with a boss will send a bunch of bullets from outside the dreamscape towards itself. Bullets can hurt bosses and your soul!",
+        "recollectionSummary": "Ally Figment",
+        "recollectionDescription": "+When colliding with a boss will send a bunch of bullets from outside the dreamscape towards itself. Bullets can hurt bosses and your soul!",
         "Beast_Credit": 0.5
         
     },
@@ -1135,131 +1135,131 @@
         "recollectionString": "Copy Cat Soul",
         "recollectionSprite": "spr_Copy_Cat_Soul",
         "recollectionSize": 0.375,
-        "recollectionSummary": "+Ally Soul",
-        "recollectionDescription": "Shoots projectiles mimicking your own!",
+        "recollectionSummary": "Ally Soul",
+        "recollectionDescription": "+Shoots projectiles mimicking your own!",
         "Mech_Credit": 0.5
     },
     "M14": {
         "recollectionString": "Explosive Manifesto",
         "recollectionSprite": "spr_Explosive_Manifesto",
         "recollectionSize": 0.375,
-        "recollectionSummary": "+Ally Figment",
-        "recollectionDescription": "Rushes to bosses, explodes when it dies doing big damage!",
+        "recollectionSummary": "Ally Figment",
+        "recollectionDescription": "+Rushes to bosses, explodes when it dies doing big damage!",
         "Mech_Credit": 0.5
     },
     "M15": {
         "recollectionString": "Poisonous Soul",
         "recollectionSprite": "spr_Poisonous_Soul",
         "recollectionSize": 0.375,
-        "recollectionSummary": "+Ally Soul",
-        "recollectionDescription": "Shoots poisonous essence, doing damage over time. If your projectiles pass through they also gain poison damage!",
+        "recollectionSummary": "Ally Soul",
+        "recollectionDescription": "+Shoots poisonous essence, doing damage over time. If your projectiles pass through they also gain poison damage!",
         "Snake_Credit": 0.5
     },
     "M16": {
         "recollectionString": "Cognition",
         "recollectionSprite": "spr_Cognition",
         "recollectionSize": 0.375,
-        "recollectionSummary": "+Ally Figment",
-        "recollectionDescription": "Increases productivity. Produces essence and blocks enemy bullets.",
+        "recollectionSummary": "Ally Figment",
+        "recollectionDescription": "+Increases productivity. Produces essence and blocks enemy bullets.",
         "Mech_Credit": 1
     },
     "M17": {
         "recollectionString": "Bleeding Soul",
         "recollectionSprite": "spr_Sharp_Soul",
         "recollectionSize": 0.375,
-        "recollectionSummary": "+Ally Soul",
-        "recollectionDescription": "A Soul cursed to inflict sharp damage and make enemies bleed! Will make any projectiles passing through also inflict bleed.",
+        "recollectionSummary": "Ally Soul",
+        "recollectionDescription": "+A Soul cursed to inflict sharp damage and make enemies bleed! Will make any projectiles passing through also inflict bleed.",
         "Bleeding_Credit": 1
     },
     "M18": {
         "recollectionString": "Bullet Eater",
         "recollectionSprite": "spr_Bullet_Eater",
         "recollectionSize": 0.375,
-        "recollectionSummary": "+Ally Figment",
-        "recollectionDescription": "Sucks up any nearby bullets into the endless void that is its mouth. Imaginative Appetite.",
+        "recollectionSummary": "Ally Figment",
+        "recollectionDescription": "+Sucks up any nearby bullets into the endless void that is its mouth. Imaginative Appetite.",
         "Beast_Credit": 0.5
     },
     "M19": {
         "recollectionString": "Magician Soul",
         "recollectionSprite": "spr_Magical_Soul",
         "recollectionSize": 0.375,
-        "recollectionSummary": "+Ally Soul",
-        "recollectionDescription": "Powerful wizard soul that can home in on enemies. Projectiles passing through gain homing and magic.",
+        "recollectionSummary": "Ally Soul",
+        "recollectionDescription": "+Powerful wizard soul that can home in on enemies. Projectiles passing through gain homing and magic.",
         "Casting_Credit": 1
     },
     "M20": {
         "recollectionString": "Positive Thoughts",
         "recollectionSprite": "spr_Positive_Thoughts",
         "recollectionSize": 0.375,
-        "recollectionSummary": "+Ally Figment",
-        "recollectionDescription": "Produces positive thinking that gives you various stat boosts if you pick it up!",
+        "recollectionSummary": "Ally Figment",
+        "recollectionDescription": "+Produces positive thinking that gives you various stat boosts if you pick it up!",
         "Mech_Credit": 0.5
     },
     "M21": {
         "recollectionString": "Electro Soul",
         "recollectionSprite": "spr_Electro_Soul",
         "recollectionSize": 0.375,
-        "recollectionSummary": "+Ally Soul",
-        "recollectionDescription": "Electrical Soul that shoots chain shots. Projectiles passing through gain chain and energy.",
+        "recollectionSummary": "Ally Soul",
+        "recollectionDescription": "+Electrical Soul that shoots chain shots. Projectiles passing through gain chain and energy.",
         "Ascending_Credit": 1
     },
     "M22": {
         "recollectionString": "Glum Chum",
         "recollectionSprite": "spr_Glum_Chum",
         "recollectionSize": 0.375,
-        "recollectionSummary": "+Ally Figment",
-        "recollectionDescription": "Figment with self loathing. Shooting this figment with your own weapondry will damage it and cause it to shoot powerful projectiles to harm your enemies.",
+        "recollectionSummary": "Ally Figment",
+        "recollectionDescription": "+Figment with self loathing. Shooting this figment with your own weapondry will damage it and cause it to shoot powerful projectiles to harm your enemies.",
         "Mech_Credit": 0.5
     },
     "M23": {
         "recollectionString": "Barrier Soul",
         "recollectionSprite": "spr_Barrier_Soul",
         "recollectionSize": 0.375,
-        "recollectionSummary": "+Ally Soul",
-        "recollectionDescription": "Ally orbits soul and shoots barriers to block out enemy bullets.",
+        "recollectionSummary": "Ally Soul",
+        "recollectionDescription": "+Ally orbits soul and shoots barriers to block out enemy bullets.",
         "Scrub_Credit": 0.5
     },
     "M24": {
         "recollectionString": "Mello Jello",
         "recollectionSprite": "spr_Mello_Jello",
         "recollectionSize": 0.375,
-        "recollectionSummary": "+Ally Figment",
-        "recollectionDescription": "Orbits the soul, redirecting projectiles until the dream fades away.",
+        "recollectionSummary": "Ally Figment",
+        "recollectionDescription": "+Orbits the soul, redirecting projectiles until the dream fades away.",
         "Scrub_Credit": 0.5
     },
     "M25": {
         "recollectionString": "Rattlesoul",
         "recollectionSprite": "spr_Weakening_Soul",
         "recollectionSize": 0.375,
-        "recollectionSummary": "+Ally Soul",
-        "recollectionDescription": "Scares bosses and boss bullets, causing bosses to take extra damage from all sources.",
+        "recollectionSummary": "Ally Soul",
+        "recollectionDescription": "+Scares bosses and boss bullets, causing bosses to take extra damage from all sources.",
         "Snake_Credit": 1
     },
     
     "N01": {
         "recollectionString": "Open Minded",
         "recollectionSprite": "spr_Open_Minded_Art",
-        "recollectionSummary": "+1 Item per Pool",
-        "recollectionDescription": "Creative inspiration results in having a 50% chance of getting an extra item in all non-shop item fields"
+        "recollectionSummary": "More Choices",
+        "recollectionDescription": "+1 item choice per Field"
     },
     "N02": {
         "recollectionString": "Productivity",
         "recollectionSprite": "spr_Productivity_Art",
-        "recollectionSummary": "+Thinking Lightbulb",
-        "recollectionDescription": "Lightbulb that orbits the soul, produces extra recalls if lit at the end of boss fights.",
+        "recollectionSummary": "Thinking Lightbulb",
+        "recollectionDescription": "+Lightbulb that follows the soul, produces extra recalls if lit at the end of boss fights.",
         "Mech_Credit": 0.5
     },
     "N03": {
         "recollectionString": "Juggling Ideas",
         "recollectionSprite": "spr_Juggling_Ideas_Art",
-        "recollectionSummary": "+Multi Weapon Shooting",
-        "recollectionDescription": "Now the soul can shoot all of its weapons at the same time, at half their normal firerate."
+        "recollectionSummary": "Multi Weapon Shooting",
+        "recollectionDescription": "+Now the soul can shoot all of its weapons at the same time, at half their normal firerate."
     },
     "N04": {
         "recollectionString": "Sophistication",
         "recollectionSprite": "spr_Sophistication_Art",
-        "recollectionSummary": "+Weapon Complexity Increase",
-        "recollectionDescription": "Replace all of your current weapons with random weapons that are one tier higher than their current one."
+        "recollectionSummary": "Weapon Complexity Increase",
+        "recollectionDescription": "+Replace all of your current weapons with random weapons that are one tier higher than their current one."
     },
     
     "OA01": {
@@ -1376,325 +1376,325 @@
     "P01": {
         "recollectionString": "Forward Thinking",
         "recollectionSprite": "spr_Forward_Thinking_Art",
-        "recollectionSummary": "+100 Starting Essence",
-        "recollectionDescription": "Increases amount of essence you enter a field with, does not actually increase your max essence. Forward thinking allows you to plan ahead and have some idea of what it is you are doing!"
+        "recollectionSummary": "Extra Starting Essence",
+        "recollectionDescription": "+200 Essence at the start of each room."
     },
     "P02": {
         "recollectionString": "Curiousity",
         "recollectionSprite": "spr_Curious_Art",
-        "recollectionSummary": "+Changing Worldview +2 All Stats",
-        "recollectionDescription": "Increase all base stats by 2, +10 hope that swaps to despair when losing a heart and back."
+        "recollectionSummary": "Changing Worldview",
+        "recollectionDescription": "+1/4 Levels to all Basic Stats +1/2 Hope and Despair Levels"
     },
     "P03": {
         "recollectionString": "Vindictive",
         "recollectionSprite": "spr_Vindictive_Art",
-        "recollectionSummary": "+4 Loathing +Revenge Affinity",
-        "recollectionDescription": "When hit unleash a vindictive soul spirit, does damage and life steal. Stronger based on loathing stat"
+        "recollectionSummary": "Revenge Affinity",
+        "recollectionDescription": "+1/2 Loathing +When hit unleash a vindictive soul spirit, does damage and life steal. Stronger based on loathing stat"
     },
     "P04": {
         "recollectionString": "Cautious",
         "recollectionSprite": "spr_Cautious_Art",
-        "recollectionSummary": "+4 Paranoia +Regen when near bullets",
-        "recollectionDescription": "Being careful causes the soul to regenerate health faster when in potential danger.",
+        "recollectionSummary": "Regen when near bullets",
+        "recollectionDescription": "+4 Paranoia +Being careful causes the soul to regenerate health faster when in potential danger.",
         "Beast_Credit": 0.5
     },
     "P05": {
         "recollectionString": "Perfectionist",
         "recollectionSprite": "spr_Perfectionist_Art",
-        "recollectionSummary": "+Perfectly Prepared Shots",
-        "recollectionDescription": "All weapons deal twice as much damage, but also cost 80% more and take 80% longer to concieve of."
+        "recollectionSummary": "Perfectly Prepared Shots",
+        "recollectionDescription": "+3x Weapon Power +2.5x Weapon Cost +2x Weapon Delay"
     },
     "P06": {
         "recollectionString": "Toxic Personality",
         "recollectionSprite": "spr_Toxic_Mentality_Art",
-        "recollectionSummary": "+1/4 Poison Shot",
-        "recollectionDescription": "All shots from the soul can be toxic, doing poison damage over time.",
+        "recollectionSummary": "Poison Shots",
+        "recollectionDescription": "+25% chance to shoot a poisonous shot that does 2 damage per second over 6 seconds",
         "Snake_Credit": 1
     },
     "P07": {
         "recollectionString": "Fiery Passion",
         "recollectionSprite": "spr_Fiery_Passion_Art",
-        "recollectionSummary": "+1/6 Fiery Shot",
-        "recollectionDescription": "Occasionally your shots have flames applied to them. These shots do more damage, and can pierce through enemies."
+        "recollectionSummary": "Fiery Shots",
+        "recollectionDescription": "+16% chance to shoot fiery shots, which can pierce. They also apply a burn that does 4 damage per second over 3 seconds."
     },
     "P08": {
         "recollectionString": "Trailing Off",
         "recollectionSprite": "spr_Trailing_Off_Art",
-        "recollectionSummary": "+Shot Trail",
-        "recollectionDescription": "Constantly create shots that passively float around for a while."
+        "recollectionSummary": "Shot Trail",
+        "recollectionDescription": "+Constantly create shots that passively float around for a while."
     },
     "P09": {
         "recollectionString": "Outburst",
         "recollectionSprite": "spr_Outburst_Art",
-        "recollectionSummary": "+5 Way Shots +4 Loathing",
-        "recollectionDescription": "Every 6th time you use your weapon you shoot in 5 different directions at once.",
+        "recollectionSummary": "5 Way Shots",
+        "recollectionDescription": "+Every 6th time you use your weapon you shoot in 5 different directions at once. +1/2 Loathing",
         "Spike_Credit": 1
     },
     "P10": {
         "recollectionString": "Relaxed",
         "recollectionSprite": "spr_Relaxed_Art",
-        "recollectionSummary": "+20% Bullet/Shot Slowdown Aura +50% Shot Lifespan +2 Bliss",
-        "recollectionDescription": "Bullets that get near the soul move 20% slower. No need to stress!"
+        "recollectionSummary": "No Need to Stress",
+        "recollectionDescription": "+20% Bullet/Shot Slowdown Aura +50% Shot Lifespan +1/4 Bliss"
     },
     "P11": {
         "recollectionString": "Photographic Memory",
         "recollectionSprite": "spr_Photographic_Memory_Art",
-        "recollectionSummary": "+Snap Shots and Bullets in Place",
-        "recollectionDescription": "Cause soul shots and boss bullets to get stuck in time. They are still capable of doing damage during this time."
+        "recollectionSummary": "Snap Shots and Bullets in Place",
+        "recollectionDescription": "+Cause soul shots and boss bullets to get stuck in time. They are still capable of doing damage during this time."
     },
 
     "Q01": {
         "recollectionString": "No Brainer",
         "recollectionSprite": "spr_No_Brainer_Art",
-        "recollectionSummary": "+Free Thoughts",
-        "recollectionDescription": "Occasionally shoot free extra shots that automatically aim at the nearest enemy. Extra damage is a no brainer."
+        "recollectionSummary": "Free Thoughts",
+        "recollectionDescription": "+Occasionally shoot free extra shots that automatically aim at the nearest enemy."
     },
     "Q02": {
         "recollectionString": "On Second Thought",
         "recollectionSprite": "spr_Hold_That_Thought_Art",
-        "recollectionSummary": "+40% Thought Recycling",
-        "recollectionDescription": "When your thoughts expire from running out of their lifespan, they have a chance to get shot again from the soul."
+        "recollectionSummary": "Thought Recycling",
+        "recollectionDescription": "+40% chance for recycling thoughts. When your thoughts expire from running out of their lifespan, they have a chance to get shot again from the soul."
     },
     "Q03": {
         "recollectionString": "Thinking Outside the Box",
         "recollectionSprite": "spr_Thinking_Outside_The_Box_Art",
-        "recollectionSummary": "+Unconventional Thinking",
-        "recollectionDescription": "Shot Projectiles spawn away from soul and then travel back to the soul."
+        "recollectionSummary": "Unconventional Thinking",
+        "recollectionDescription": "+Shot Projectiles spawn away from soul and then travel back to the cursor."
     },
     "Q04": {
         "recollectionString": "Wrap My Head Around",
         "recollectionSprite": "spr_Wrap_My_Head_Around_Art",
-        "recollectionSummary": "+Spiral Homing +100% Shot Lifespan",
-        "recollectionDescription": "Your shots will now spiral around toward the nearest enemy.",
+        "recollectionSummary": "Spiral Homing",
+        "recollectionDescription": "+Shots spiral toward bosses +100% Shot Lifespan",
         "Casting_Credit": 0.5
     },
     "Q05": {
         "recollectionString": "Slipped My Mind",
         "recollectionSprite": "spr_Slipped_My_Mind_Art",
-        "recollectionSummary": "+Occasional Banana Peel Shot Replacement",
-        "recollectionDescription": "The soul now sometimes has its thoughts replaced with banana peels. These redirect any bullets that come in contact with them. They also can make the soul slip."
+        "recollectionSummary": "+ccasional Banana Peel Shots",
+        "recollectionDescription": "+The soul now sometimes has its thoughts replaced with banana peels. These redirect any bullets that come in contact with them. They also can make the soul slip."
     },
 
     "R01": {
         "recollectionString": "Frightened Memory",
         "recollectionSprite": "spr_Frightened_Memory_Art",
-        "recollectionSummary": "+5 Despair +55 Recalls",
-        "recollectionDescription": "Remembering fills you with despair..."
+        "recollectionSummary": "Despair Recollection",
+        "recollectionDescription": "+1/2 Despair Level +55 Recalls/XP"
     },
     "R02": {
         "recollectionString": "Anxious Memory",
         "recollectionSprite": "spr_Anxious_Memory_Art",
-        "recollectionSummary": "+5 Paranoia +45 Recalls",
-        "recollectionDescription": "Remembering fills you with paranoia..."
+        "recollectionSummary": "Paranoia Recollection",
+        "recollectionDescription": "+1/2 Paranoia Level +45 Recalls/XP"
     },
     "R03": {
         "recollectionString": "Angry Memory",
         "recollectionSprite": "spr_Angry_Memory_Art",
-        "recollectionSummary": "+5 Loathing +35 Recalls",
-        "recollectionDescription": "Remembering fills you with loathing..."
+        "recollectionSummary": "Loathing Recollection",
+        "recollectionDescription": "+1/2 Loathing Level +35 Recalls/XP"
     },
     "R04": {
         "recollectionString": "Proud Memory",
         "recollectionSprite": "spr_Proud_Memory_Art",
-        "recollectionSummary": "+5 Assurance +20 Recalls",
-        "recollectionDescription": "Remembering fills you with Assurance..."
+        "recollectionSummary": "Assurance Recollection",
+        "recollectionDescription": "+1/2 Assurance Level +20 Recalls/XP"
     },
     "R05": {
         "recollectionString": "Peaceful Memory",
         "recollectionSprite": "spr_Peaceful_Memory_Art",
-        "recollectionSummary": "+5 Bliss +15 Recalls",
-        "recollectionDescription": "Remembering fills you with bliss..."
+        "recollectionSummary": "Bliss Recollection",
+        "recollectionDescription": "+1/2 Bliss Level +15 Recalls/XP"
     },
     "R06": {
         "recollectionString": "Hopeful Memory",
         "recollectionSprite": "spr_Hopeful_Memory_Art",
-        "recollectionSummary": "+5 Hope +10 Recalls",
-        "recollectionDescription": "Remembering fills you with hope..."
+        "recollectionSummary": "Hope Recollection",
+        "recollectionDescription": "+1/2 Hope Level +10 Recalls/XP"
     },
 
     "S01": {
         "recollectionString": "Defensive",
         "recollectionSprite": "spr_Defensive_Art",
-        "recollectionSummary": "+Reactive Shots +2 Paranoia",
-        "recollectionDescription": "Receiving damage causes the soul to shoot piercing shots in all directions, stronger based on paranoia stat.",
+        "recollectionSummary": "Reactive Shots",
+        "recollectionDescription": "+Receiving damage or being near bullets causes the soul to shoot piercing shots in all directions, stronger based on paranoia stat. +1/4 Paranoia",
         "Spike_Credit": 1
     },
     "S02": {
         "recollectionString": "Cry For Help",
         "recollectionSprite": "spr_Cry_For_Help_Art",
-        "recollectionSummary": "+Friend on Hit",
-        "recollectionDescription": "Receiving damage causes the soul to get backup from a powerful ally soul"
+        "recollectionSummary": "Friend on Hit",
+        "recollectionDescription": "+Receiving damage causes the soul to get backup from a powerful ally soul"
     },
     "S03": {
         "recollectionString": "Coping Buddies",
         "recollectionSprite": "spr_Coping_Buddies_Art",
-        "recollectionSummary": "+Friend on Hit",
-        "recollectionDescription": "Receiving damage causes the soul to get emotional support from a powerful ally figment"
+        "recollectionSummary": "Friend on Hit",
+        "recollectionDescription": "+Receiving damage causes the soul to get emotional support from a powerful ally figment"
     },
     "S04": {
         "recollectionString": "Cope",
         "recollectionSprite": "spr_Cope_Art",
-        "recollectionSummary": "+Coping Heart",
-        "recollectionDescription": "Losing hearts give you a coping heart replacement. This heart steadily loses its max hp, but can shoot extra projectiles at the enemy."
+        "recollectionSummary": "Coping Heart",
+        "recollectionDescription": "+Losing hearts give you a coping heart replacement. This heart steadily loses its max hp, but can shoot extra projectiles at the enemy."
     },
     "S05": {
         "recollectionString": "Comfort Zones",
         "recollectionSprite": "spr_Comfort_Zones_Art",
-        "recollectionSummary": "+Comfort in Zones +Pain outside Zones +2 Assurance +2 Paranoia",
-        "recollectionDescription": "Go back to where you're comfortable. Spawns several comfort zones that heal and refresh the soul when within them, and damage the soul when outside them."
+        "recollectionSummary": "Comfort in Zones, Pain outside Zones",
+        "recollectionDescription": "+Spawns several comfort zones that heal and refresh the soul when within them, and damage the soul when outside them. +1/4 Assurance +1/4 Paranoia"
     },
     "S06": {
         "recollectionString": "Mind Cleanser",
         "recollectionSprite": "spr_Mind_Cleanser_Art",
-        "recollectionSummary": "+Stress Bubbles",
-        "recollectionDescription": "When hit you shoot bubbles everywhere. Washes your headspace.",
+        "recollectionSummary": "Stress Bubbles",
+        "recollectionDescription": "+When hit you shoot bubbles everywhere. Washes your headspace.",
         "Scrub_Credit": 1
     },
 
     "T01": {
         "recollectionString": "Think Again",
         "recollectionSprite": "spr_Think_Again_Art",
-        "recollectionSummary": "+Item Field Refresh",
-        "recollectionDescription": "Allows you to swap all the items in a field to different items for a price."
+        "recollectionSummary": "Item Field Refresh",
+        "recollectionDescription": "+Allows you to swap all the items in a field to different items for a price."
     },
     "T02": {
         "recollectionString": "Cramming",
         "recollectionSprite": "spr_Cramming_Art",
-        "recollectionSummary": "+Full Field Suckage",
-        "recollectionDescription": "Quickly suck up all the knowledge/items a field has to offer. One time usage, takes up a weapon slot."
+        "recollectionSummary": "Full Field Suckage",
+        "recollectionDescription": "+Quickly suck up all the knowledge/items a field has to offer. One time usage."
     },
     "T03": {
         "recollectionString": "Inspired",
         "recollectionSprite": "spr_Inspired_Art",
-        "recollectionSummary": "+Upgrade Items in a Field",
-        "recollectionDescription": "Get inspired. You can activate this ability in any item field to increase the potency of the items in that field."
+        "recollectionSummary": "Upgrade Items in a Field",
+        "recollectionDescription": "+Get inspired. You can activate this ability in any item field to increase the potency of the items in that field."
     },
     "T04": {
         "recollectionString": "Hyper-Fixation",
         "recollectionSprite": "spr_Hyper_Fixation_Art",
-        "recollectionSummary": "+2 to an Existing Item",
-        "recollectionDescription": "Gives you a choice of 4 items that you previously picked up to give +2 stacks to."
+        "recollectionSummary": "Massively Upgrade an Existing Item",
+        "recollectionDescription": "+Gives you a choice of 4 items that you previously picked up to give +2 stacks to."
     },
     "T05": {
         "recollectionString": "Retrace my Steps",
         "recollectionSprite": "spr_Retrace_My_Steps_Art",
-        "recollectionSummary": "+Free Teleport Back",
-        "recollectionDescription": "Allows the soul to teleport back to it's original position after teleporting. This is free of charge and counts as a second teleport."
+        "recollectionSummary": "Free Teleport Back",
+        "recollectionDescription": "+Allows the soul to teleport back to it's original position after teleporting. This is free of charge and counts as a second teleport."
     },
 
     "U01": {
         "recollectionString": "Stuck In My Head",
         "recollectionSprite": "spr_Stuck_In_My_Head_Art",
-        "recollectionSummary": "+Bouncy Shots",
-        "recollectionDescription": "All soul projectiles bounce off walls now. Can't get these ideas out of my head."
+        "recollectionSummary": "Bouncy Shots",
+        "recollectionDescription": "+All soul projectiles bounce off walls now. Can't get these ideas out of my head."
     },
     "U02": {
         "recollectionString": "Second Wind",
         "recollectionSprite": "spr_Second_Wind_Art",
-        "recollectionSummary": "+Stat Boost during Long Fights",
-        "recollectionDescription": "Gives the soul a big boost if a room lasts more than 10 seconds. Sudden burst of energy out of nowhere."
+        "recollectionSummary": "Stat Boost during Long Fights",
+        "recollectionDescription": "+Gives the soul a big boost if a room lasts more than 10 seconds. Sudden burst of energy out of nowhere."
     },
     "U03": {
         "recollectionString": "Train of Thought",
         "recollectionSprite": "spr_Train_Of_Thought_Art",
         "recollectionSummary": "+Increasing Weapon Firerate and Efficiency",
-        "recollectionDescription": "By keeping up a train of thought, slowly gain up to +100% firerate and -50% essence cost with a weapon as long as you do not switch weapons, get hit, stop firing, or change shooting angle."
+        "recollectionDescription": "+By keeping up a train of thought, slowly gain up to +100% firerate and -50% essence cost with a weapon as long as you do not switch weapons, get hit, stop firing, or change shooting angle."
     },
     "U04": {
         "recollectionString": "Circle of Trust",
         "recollectionSprite": "spr_Circular_Reasoning_Art",
-        "recollectionSummary": "+Minion Orbit +Minion Firerate",
-        "recollectionDescription": "All your minions will now circle the soul instead of their typical movement pattern. In addition to this they also all shoot 10% faster.",
+        "recollectionSummary": "Minion Orbit",
+        "recollectionDescription": "+All your minions will now circle the soul instead of their typical movement pattern. In addition to this they also all shoot 10% faster.",
         "Casting_Credit": 0.5
     },
     "U05": {
         "recollectionString": "Idea Connection",
         "recollectionSprite": "spr_Idea_Connection_Art",
-        "recollectionSummary": "+Projectile Chain Hit",
-        "recollectionDescription": "Connecting your ideas allows them to hit multiple targets in a single shot.",
+        "recollectionSummary": "Projectile Chain Hit",
+        "recollectionDescription": "+Connecting your ideas allows them to hit 2 extra targets in a single shot.",
         "Snake_Credit": 0.5,
         "Ascending_Credit": 0.5
     },
     "U06": {
         "recollectionString": "Mental Unload",
         "recollectionSprite": "spr_Venting_Art",
-        "recollectionSummary": "+150% Think Speed -40% Shot Power -40% Essence Cost",
-        "recollectionDescription": "Completely unload your thoughts, massively increasing firerate but lowering shot power, accuracy, and essence cost.",
+        "recollectionSummary": "Super Fast Weapon Dump",
+        "recollectionDescription": "+150% Think Speed -40% Shot Power -40% Essence Cost",
         "Scrub_Credit": 0.5
     },
     "U07": {
         "recollectionString": "Instinct",
         "recollectionSprite": "spr_Instinct_Art",
-        "recollectionSummary": "+Firerate/Essence when Near Danger",
-        "recollectionDescription": "Being close to enemies and enemy bullets greatly increases your firerate and essence gain.",
+        "recollectionSummary": "Firerate/Essence when Near Danger",
+        "recollectionDescription": "+Being close to enemies and enemy bullets greatly increases your firerate and essence gain.",
         "Beast_Credit": 1
     },
     "U08": {
         "recollectionString": "Brain Fart",
         "recollectionSprite": "spr_Brain_Fart_Art",
-        "recollectionSummary": "+Projectile Fart",
-        "recollectionDescription": "Every projectile at any moment could instantly explode into a fart. These farts do splash damage and inflict powerful poison on enemies."
+        "recollectionSummary": "Projectile Fart",
+        "recollectionDescription": "+Every projectile at any moment could instantly explode into a fart. These farts do splash damage and inflict powerful poison on enemies."
     },
     "U09": {
         "recollectionString": "Chilling Thoughts",
         "recollectionSprite": "spr_Chilling_Thoughts_Art",
-        "recollectionSummary": "+1/8 Freezing Shots",
-        "recollectionDescription": "Occasionally create freezing shots, which can slow down bosses or freeze bullets."
+        "recollectionSummary": "Freezing Shots",
+        "recollectionDescription": "+12.5% chance to create freezing shots, which can slow down bosses or freeze bullets."
     },
 
     "V01": {
         "recollectionString": "Wonder",
         "recollectionSprite": "spr_Tiny_Bit_Of_Wonder_Art",
-        "recollectionSummary": "+1 to all Basic Stats and positive Spiritual Stats",
-        "recollectionDescription": "The feeling of wonder boosts your overall power."
+        "recollectionSummary": "All Stats Up",
+        "recollectionDescription": "+1/4 Levels to all basic stats"
     },
     "V02": {
         "recollectionString": "Starry Eyed",
         "recollectionSprite": "spr_Starry_Eyed_Art",
-        "recollectionSummary": "+4 Hope +Amazing Sight Chance",
-        "recollectionDescription": "Gives you the chance to see amazing bonuses after defeating boss fields."
+        "recollectionSummary": "Amazing Sight Chance",
+        "recollectionDescription": "+1/2 Hope +Randomly gain lesser hearts after boss fights"
     },
     "V03": {
         "recollectionString": "Cognitive Dissonance",
         "recollectionSprite": "spr_Cognitive_Dissonance_Art",
-        "recollectionSummary": "+4 Random Basic Positive Negative Stat per Floor",
-        "recollectionDescription": "A mix of preconceived notions affect your attributes in random ways permanently every floor. Applies retroactively as well."
+        "recollectionSummary": "Lots of Conflicting Level Ups",
+        "recollectionDescription": "+1/2 Basic Stat Level per Floor +1/2 Spiritual Stat Level per Floor +1/2 Negative Spiritual Stat Level per Floor"
     },
     "V04": {
         "recollectionString": "Gaping Void",
         "recollectionSprite": "spr_Gaping_Void_Art",
-        "recollectionSummary": "+4 Despair +Damage Zone",
-        "recollectionDescription": "Creates a random dark area on the field, this area does damage to everything it touches. Grows more powerful with a higher despair stat."
+        "recollectionSummary": "Damage Zone",
+        "recollectionDescription": "+Creates a random dark area on the field, this area does damage to everything it touches. Grows more powerful with a higher despair stat. +1/2 Despair"
     },
     "V05": {
         "recollectionString": "Self Aware",
         "recollectionSprite": "spr_Self_Awareness_Art",
-        "recollectionSummary": "+Teleport Evasion +2 Assurance +6 Paranoia",
-        "recollectionDescription": "Self Awareness allows the soul to automatically teleport away to a nearby location whenever they would have taken damage."
+        "recollectionSummary": "Automatic Warp Evasion",
+        "recollectionDescription": "+Self Awareness allows the soul to automatically teleport away to a nearby location whenever they would have taken damage. +1/4 Assurance +3/4 Paranoia"
     },
     "V06": {
         "recollectionString": "Overstimulation",
         "recollectionSprite": "spr_Overexertion_Art",
-        "recollectionSummary": "+Overpowered Shots",
-        "recollectionDescription": "Place an excess of essence into these shots. Occasionally shoot over exerted shots that drain twice as much essence but dish out more damage."
+        "recollectionSummary": "Overpowered Shots",
+        "recollectionDescription": "+Occasionally shoot over-exerted shots that drain twice as much essence but split into 4 targetted burst shots."
     },
     "V07": {
         "recollectionString": "Mind Blowing",
         "recollectionSprite": "spr_Mind_Blowing_Art",
-        "recollectionSummary": "+Mind Blowing Shot",
-        "recollectionDescription": "Slowly fill up a massive mega shot that does damage to everything on the screen."
+        "recollectionSummary": "Mind Blowing Shot",
+        "recollectionDescription": "+Slowly fill up a massive mega shot that does damage to everything on the screen."
     },
     "V08": {
         "recollectionString": "Lost in Thought",
         "recollectionSprite": "spr_Wandering_Thoughts_Art",
-        "recollectionSummary": "+Aimless Shots",
-        "recollectionDescription": "Producing shots uses up much less essence. Shots will wander around after a set distance in random directions."
+        "recollectionSummary": "Aimless Shots",
+        "recollectionDescription": "+Producing shots uses up much less essence. Shots will wander around after a set distance in random directions."
     },
     "V09": {
         "recollectionString": "Blood Lust",
         "recollectionSprite": "spr_Blood_Lust_Art",
-        "recollectionSummary": "+Damage Health Regen +4 Loathing",
-        "recollectionDescription": "Damaging bosses causes healing energy to leak out of bosses. When contacting the soul it will restore some lost HP.",
+        "recollectionSummary": "Damage Health Regen",
+        "recollectionDescription": "+Damaging bosses causes healing energy to leak out of bosses. When contacting the soul it will restore some lost HP. +1/2 Loathing",
         "Beast_Credit": 1
     },
 
@@ -1702,45 +1702,45 @@
     "W01": {
         "recollectionString": "Warp Strike",
         "recollectionSprite": "spr_Warp_Strike_Art",
-        "recollectionSummary": "+Teleport Slash",
-        "recollectionDescription": "Deal damage to everything in between your origin and destination when teleporting."
+        "recollectionSummary": "Teleport Slash",
+        "recollectionDescription": "+Deal damage to everything in between your origin and destination when teleporting."
     },
     "W02": {
         "recollectionString": "Warp Barrage",
         "recollectionSprite": "spr_Warp_Barrage_Art",
-        "recollectionSummary": "+Teleport Bullet Barrage",
-        "recollectionDescription": "Shoot out excess teleporting energy in the form of projectiles. Projectiles aim toward the nearest enemy/boss."
+        "recollectionSummary": "Teleport Bullet Barrage",
+        "recollectionDescription": "+Shoot out excess teleporting energy in the form of projectiles. Projectiles aim toward the nearest enemy/boss."
     },
     "W03": {
         "recollectionString": "Phase Affinity",
         "recollectionSprite": "spr_Phase_Affinity_Art",
-        "recollectionSummary": "+Teleport Heal",
-        "recollectionDescription": "A love of bending space allows you to heal yourself when teleporting."
+        "recollectionSummary": "Teleport Heal",
+        "recollectionDescription": "+A love of bending space allows you to heal yourself when teleporting."
     },
     "W04": {
         "recollectionString": "Warp Bomb",
         "recollectionSprite": "spr_Warp_Bomb_Art",
-        "recollectionSummary": "+Teleport Bomb",
-        "recollectionDescription": "Plants a bomb in the inital location during soul teleports."
+        "recollectionSummary": "Teleport Bomb",
+        "recollectionDescription": "+Plants a bomb in the inital location during soul teleports."
     },
     "W05": {
         "recollectionString": "Clear Your Mind",
         "recollectionSprite": "spr_Clarity_Art",
-        "recollectionSummary": "+Field Clearing Teleport",
-        "recollectionDescription": "Clears every bullet on screen when teleporting for the first time in each boss battle."
+        "recollectionSummary": "Field Clearing Teleport",
+        "recollectionDescription": "+Clears every bullet on screen when teleporting for the first time in each boss battle."
     },
     "W06": {
         "recollectionString": "Astral Link",
         "recollectionSprite": "spr_Astral_Link_Art",
-        "recollectionSummary": "+Permawarp Portals",
-        "recollectionDescription": "Create a lingering rift in space when teleporting, allowing things to teleport between the two points. Projectiles that pass through the portals gain momentum, and can hit enemies again."
+        "recollectionSummary": "Permawarp Portals",
+        "recollectionDescription": "+Create a lingering rift in space when teleporting, allowing things to teleport between the two points. Projectiles that pass through the portals gain momentum, and can hit enemies again."
     },
     
     "XA01": {
         "recollectionString": "Loathsome",
         "recollectionSprite": "spr_Loathsome_Art",
         "recollectionSummary": "Soul and Boss Damage Up",
-        "recollectionDescription": "22.5% Soul Damage -30% Soul Accuracy +30% Boss Damage"
+        "recollectionDescription": "+22.5% Soul Damage -30% Soul Accuracy +30% Boss Damage"
     },
     "XA02": {
         "recollectionString": "Hatred",

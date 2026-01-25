@@ -23,7 +23,7 @@ function scr_Room_Change_Variables() {
 	global.roomdarkness = 0;
 
 	//scr_V03();
-	scr_P02();
+	//scr_P02();
 	scr_L01_Recharge();
 	scr_W05_Reload();
 	

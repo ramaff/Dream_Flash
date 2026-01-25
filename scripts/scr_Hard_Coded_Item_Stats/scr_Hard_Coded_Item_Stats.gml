@@ -936,6 +936,9 @@ function scr_Hard_Coded_Item_Stats(itemVal, items_to_add = 1, reload = false) {
 			global.souldexterity += 2;
 			global.soulperception += 2;
 			global.soulstate += 2;
+			
+			global.soulhope += 4;
+			global.souldespair += 4;
 		}
 	}
 
@@ -1066,16 +1069,12 @@ function scr_Hard_Coded_Item_Stats(itemVal, items_to_add = 1, reload = false) {
 
 	if itemVal = "V01" {
 		if !reload {
-			global.soulstrength++;
-			global.soulvitality++;
-			global.soulessence++;
-			global.souldexterity++;
-			global.soulperception++;
-			global.soulstate++;
-	
-			global.soulhope++;
-			global.soulbliss++;
-			global.soulassurance++;
+			global.soulstrength += 2;
+			global.soulvitality += 2;
+			global.soulessence += 2;
+			global.souldexterity += 2;
+			global.soulperception += 2;
+			global.soulstate += 2;
 		}
 	    //global.V[1]++;
 	}
