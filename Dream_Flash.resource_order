@@ -1780,6 +1780,7 @@
     {"name":"spr_Reco_Hover_Cloud_Left","order":14,"path":"sprites/spr_Reco_Hover_Cloud_Left/spr_Reco_Hover_Cloud_Left.yy",},
     {"name":"spr_Recollection_Cloud_v2_p1","order":36,"path":"sprites/spr_Recollection_Cloud_v2_p1/spr_Recollection_Cloud_v2_p1.yy",},
     {"name":"spr_Recollection_Cloud_v2_p2","order":34,"path":"sprites/spr_Recollection_Cloud_v2_p2/spr_Recollection_Cloud_v2_p2.yy",},
+    {"name":"spr_Recollection_Cloud_v2_p3_2","order":37,"path":"sprites/spr_Recollection_Cloud_v2_p3_2/spr_Recollection_Cloud_v2_p3_2.yy",},
     {"name":"spr_Recollection_Cloud_v2_p3","order":35,"path":"sprites/spr_Recollection_Cloud_v2_p3/spr_Recollection_Cloud_v2_p3.yy",},
     {"name":"spr_Recollection_Diagonal","order":24,"path":"sprites/spr_Recollection_Diagonal/spr_Recollection_Diagonal.yy",},
     {"name":"spr_Recollection_Hover_Cloud_Bigger_Leave","order":3,"path":"sprites/spr_Recollection_Hover_Cloud_Bigger_Leave/spr_Recollection_Hover_Cloud_Bigger_Leave.yy",},

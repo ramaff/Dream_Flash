@@ -12,7 +12,7 @@ repeat(recollectionUpgrade + stacks - 1) {
 image_xscale = 0.5;
 image_yscale = 0.5;
 
-var _y_offset = -60;
+var _y_offset = -80;
 
 /*if shop > 0 || (string_length(recollectionExtraStats) > 50) {
 	var _y_offset = -60;

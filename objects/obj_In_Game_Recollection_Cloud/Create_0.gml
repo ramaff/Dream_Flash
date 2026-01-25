@@ -27,7 +27,7 @@ image_yscale = 0.5;
 
 target = obj_Soul_Parent;
 xx_offset = 200;
-yy_offset = -125;
+yy_offset = -150;
 
 depth = -3;
 
