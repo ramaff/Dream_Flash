@@ -5,7 +5,7 @@ function scr_E10(_cw) {
 	    var stop = (_cw.Shot_Power * global.E[10]) + irandom(149);
 		var _radius = sqrt(30000 * global.E[10])
 	    if stop >= 150 {
-			scr_Particle_Burst(obj_Animated_Lightning_Streak, spr_Animated_Lightning_Streak, c_fuchsia, c_fuchsia, 10, 35, 0, 360, 20, 0.75, 30, false)
+			scr_Lightning_Burst(obj_Animated_Lightning_Streak, spr_Animated_Lightning_Streak, c_fuchsia, c_fuchsia, 10, 35, 0, 360, 20, 0.75, 30, false)
 	    }
 	    with(obj_Bullet_Parent) {
 	        if stop >= 150 {

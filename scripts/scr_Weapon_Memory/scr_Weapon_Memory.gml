@@ -27,10 +27,11 @@ function scr_Weapon_Memory(displayItemSprite = true) {
 	
 	recollectionCount = global.recollectionWeap[itemVal]
 	
-	recollectionExtraStats = "You cannot remember"
+	recollectionExtraStats = ""
+	recollectionDescription = ""
 	
 	if global.recollectionWeap[itemVal] >= 1 || displayItemSprite {
-		recollectionExtraStats = "No Special Properties"
+		recollectionExtraStats = ""
 		
 		if variable_struct_exists(current_weapon_stats, "Shot_Power") {
 			recollectionPower = current_weapon_stats.Shot_Power
@@ -67,11 +68,14 @@ function scr_Weapon_Memory(displayItemSprite = true) {
 			}
 		}*/
 		state_description = scr_Add_State_Credit_To_Extra_Stat_Description(current_weapon_stats);
-		if recollectionExtraStats != "No Special Properties" {
-			recollectionExtraStats += " " + state_description
-		} else {
-			recollectionExtraStats = state_description
-		}
+		//if recollectionExtraStats != "No Special Properties" {
+		//	recollectionExtraStats += " " + state_description
+		//} else {
+		recollectionDescription += state_description
+		//}
+		
+		recollectionDescription = string_replace_all(recollectionDescription, " +", "\n+")
+		recollectionDescription = string_replace_all(recollectionDescription, " -", "\n-")
 	}
 	
 
