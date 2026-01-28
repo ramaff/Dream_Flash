@@ -2,7 +2,7 @@
     "1": {
         "Name": "Lesser Essence",
         "Recollection_Sprite": "spr_Soul_Shot_Art",
-        "Description": "+Low Potency, Very Low Drain",
+        "Description": "",
         "Complexity": "Low",
         "Spike_Credit": 0.5,
         "Detailed_Description": "Using the power of your vivid imagination you are capable of creating projectiles made of pure essence! This essence is made up of the same things that make up your being.",
@@ -22,7 +22,7 @@
     "2": {
         "Name": "Power Essence",
         "Recollection_Sprite": "spr_Power_Shot_Art",
-        "Description": "+Medium Potency, Low Drain",
+        "Description": "",
         "Detailed_Description": "Shoot Essence made of Powerfulness. Does big damage.",
         "Essence": 9,
         "Delay": 20,
@@ -42,7 +42,7 @@
     "3": {
         "Name": "Heavy Essence",
         "Recollection_Sprite": "spr_Heavy_Shot_Art",
-        "Description": "+Slow High Damage, Low Drain +Snowball Pierce: If destroying a low HP enemy, can continue.",
+        "Description": "+Snowball Pierce",
         "Detailed_Description": "Very Slow but Powerful Essence",
         "Essence": 18,
         "Delay": 40,
@@ -65,7 +65,7 @@
     "4": {
         "Name": "Light Essence",
         "Recollection_Sprite": "spr_Light_Shot_Art",
-        "Description": "+Very Fast Very Low Damage + Low Drain",
+        "Description": "",
         "Detailed_Description": "Does low damage, but is easy and quick to think of!",
         "Essence": 3,
         "Delay": 10,
@@ -85,7 +85,7 @@
     "5": {
         "Name": "Piercing Essence",
         "Recollection_Sprite": "spr_Piercing_Shot_Art",
-        "Description": "+Low Potency, Low Drain +2 Piercing Hits",
+        "Description": "+Piercing",
         "Detailed_Description": "You've thought of something that is pointy enough to pierce through multiple enemies at once!",
         "Essence": 6,
         "Delay": 18,
@@ -107,7 +107,7 @@
     "6": {
         "Name": "Condensed Essence",
         "Recollection_Sprite": "spr_Condensed_Shot_Art",
-        "Description": "+High Initial Potency, Medium Drain +Fast Fading Potency",
+        "Description": "+Fast Fading",
         "Detailed_Description": "Strong and Short lived. You condensed powerful thoughts into this essential shot!",
         "Essence": 10,
         "Delay": 20,
@@ -131,7 +131,7 @@
     "7": {
         "Name": "Poison Essence",
         "Recollection_Sprite": "spr_Poison_Shot_Art",
-        "Description": "+Poison Damage +Very Low Potency, Low Drain",
+        "Description": "+Poison Damage",
         "Detailed_Description": "Poisonous thoughts put together into this weapon let it do damage over time. It's stackable too!",
         "Essence": 14,
         "Delay": 28,
@@ -154,7 +154,7 @@
     "8": {
         "Name": "Multi Essence",
         "Recollection_Sprite": "spr_Multi_Shot_Art",
-        "Description": "x3 Spread Shot +Low Potency, Medium Drain",
+        "Description": "x3 Spread Shot",
         "Detailed_Description": "Allows you to dish out three times as many shots at once for three times as much damage!",
         "Essence": 12,
         "Delay": 27,
@@ -174,7 +174,7 @@
     "9": {
         "Name": "Splitting Essence",
         "Recollection_Sprite": "spr_Splitting_Shot_Art",
-        "Description": "+4 Way Splitting +Low Potency, Low Drain",
+        "Description": "+4 Way Splitting",
         "Detailed_Description": "Upon impact with foes, will split into 4 smaller projectiles that can damage other enemies!",
         "Essence": 12,
         "Delay": 27,
@@ -211,7 +211,7 @@
     "10": {
         "Name": "Charged Essence",
         "Recollection_Sprite": "spr_Charged_Shot_Art",
-        "Description": "+Charged Attack +Low->Very High Potency, Low->Very High Drain",
+        "Description": "+Charged Attack",
         "Detailed_Description": "Flexible attack thought, can be rapidly shot, or held down for a stronger attack!",
         "Essence": 10,
         "Charge_Essence": 40,
@@ -239,7 +239,7 @@
     "11": {
         "Name": "Tomatoes",
         "Recollection_Sprite": "spr_Tomato_Art",
-        "Description": "+Splash Damage +Boss Vulnerability +Low Potency, Low Drain",
+        "Description": "+Splash Damage +Boss Vulnerability",
         "Detailed_Description": "Bring enemies down a peg, causing them to take more damage from all sources!",
         "Essence": 9,
         "Delay": 23,
@@ -273,7 +273,7 @@
     "12": {
         "Name": "Laser Essence",
         "Recollection_Sprite": "spr_Laser_Shot_Art",
-        "Description": "+Long Range, Infinite Piercing Hits +Medium Potency, Medium Drain",
+        "Description": "+Piercing Beam",
         "Detailed_Description": "A ray of laser-ey essence capable of damaging everything in a line.",
         "Essence": 13,
         "Delay": 23,
@@ -299,7 +299,7 @@
     "13": {
         "Name": "Hyper Essence",
         "Recollection_Sprite": "spr_Hyper_Shot_Art",
-        "Description": "x7 Barrage Shot +Low Potency, High Drain",
+        "Description": "x7 Barrage Shot",
         "Detailed_Description": "Unleash a barrage of super hyper essence capable of doing big damage!",
         "Essence": 33,
         "Delay": 44,
@@ -321,7 +321,7 @@
     "14": {
         "Name": "Essence Beam",
         "Recollection_Sprite": "spr_Essence_Beam_Art",
-        "Description": "+Constant Long Range, Infinite Piercing Hits +High Potency, Very High Drain",
+        "Description": "+Constant Piercing Beam",
         "Detailed_Description": "A Solid Beam of pure essence, capable of dealing massive damage in a short period of time!",
         "Essence": 1.5,
         "Delay": 1,
@@ -349,7 +349,7 @@
     "15": {
         "Name": "Rainmaker",
         "Recollection_Sprite": "spr_Rainmaker_Art",
-        "Description": "+4 Way Shooting +Low Potency, Medium Drain",
+        "Description": "+4 Way Shooting",
         "Detailed_Description": "Sad Cloud Weaponry shoots tears of sadness in all directions.",
         "Essence": 13,
         "Delay": 25,
@@ -394,7 +394,7 @@
     "16": {
         "Name": "Rising Spikes",
         "Recollection_Sprite": "spr_Rising_Spikes_Art",
-        "Description": "+Spike Landslide +High Potency, Medium Drain",
+        "Description": "+Spike Landslide",
         "Detailed_Description": "Send up spikes from below to instantly damage bosses in a line. Feels pointy.",
         "Essence": 23,
         "Delay": 45,
@@ -448,7 +448,7 @@
     "51": {
         "Name": "Soul Punches",
         "Recollection_Sprite": "spr_Soul_Punches_Art",
-        "Description": "+Melee, Boss Knockback +Medium Potency, Low Drain",
+        "Description": "+Melee +Boss Knockback",
         "Detailed_Description": "Get up close and beat up your imaginary foes.",
         "Essence": 5,
         "Delay": 18,
@@ -479,7 +479,7 @@
     "52": {
         "Name": "Power Whip",
         "Recollection_Sprite": "spr_Power_Whip_Art",
-        "Description": "+Melee +Boss and Bullet Knockback +High Potency, Medium Drain",
+        "Description": "+Melee +Boss and Bullet Knockback",
         "Detailed_Description": "A Strong Whip made out of pure power!",
         "Essence": 10,
         "Delay": 20,
@@ -507,7 +507,7 @@
     "53": {
         "Name": "Dreamer's Blade",
         "Recollection_Sprite": "spr_Dreamers_Blade_Art",
-        "Description": "+Melee +Extra Shots +Very High Potency, High Drain",
+        "Description": "+Melee +Extra Shots",
         "Detailed_Description": "Blade made of dreams that does heavy damage to your enemies.",
         "Essence": 39,
         "Delay": 45,
@@ -553,7 +553,7 @@
     "54": {
         "Name": "Soul Strike",
         "Recollection_Sprite": "spr_Soul_Power_Strike_Art",
-        "Description": "+Slow Powerful Melee +Massive Boss and Bullet Knockback +High Potency, Medium Drain",
+        "Description": "+Slow Powerful Melee +Massive Boss and Bullet Knockback",
         "Detailed_Description": "Unleash a powerful strike that will heavily damage your strongest enemies!",
         "Essence": 30,
         "Delay": 54,
@@ -582,7 +582,7 @@
     "101": {
         "Name": "Rock Toss",
         "Recollection_Sprite": "spr_Rock_Toss_Art",
-        "Description": "+Low Potency, Low Drain +Small Critical Hit Chance",
+        "Description": "+Small Critical Hit Chance",
         "Detailed_Description": "Just a rock, depending on the angle you throw it there might be sharp parts.",
         "Essence": 5,
         "Delay": 20,
@@ -604,7 +604,7 @@
     "102": {
         "Name": "Bag of Marbles",
         "Recollection_Sprite": "spr_Bag_Of_Marbles_Art",
-        "Description": "+Multi Shot Bouncing +High Potency, Medium Drain",
+        "Description": "+Multi Shot Bouncing",
         "Detailed_Description": "A bag full of colorful marbles. Some are red, some are blue.",
         "Essence": 21,
         "Delay": 38,
@@ -633,7 +633,7 @@
     "103": {
         "Name": "Flying Disk",
         "Recollection_Sprite": "spr_Flying_Disk_Art",
-        "Description": "+Bullet Redirection +Extra Hits +Low Potency, Medium Drain",
+        "Description": "+Bullet Redirection +Extra Hits",
         "Detailed_Description": "A flying disk, capable of damaging multiple foes and sending fear into their hearts. Its also fun to play with.",
         "Essence": 15,
         "Delay": 30,
@@ -655,7 +655,7 @@
     "104": {
         "Name": "Shuriken",
         "Recollection_Sprite": "spr_Shuriken_Art",
-        "Description": "+2 Way Homing Shots +Fast Low Potency, Medium Drain",
+        "Description": "+2 Way Homing Shots",
         "Detailed_Description": "Shurikens that had hateful thoughts infused into them, allowing them to seek out targets to damage.",
         "Essence": 14,
         "Delay": 18,
@@ -679,7 +679,7 @@
     "105": {
         "Name": "Spike Ball",
         "Recollection_Sprite": "spr_Spike_Ball_Art",
-        "Description": "+Piercing Bullet Crush +Slow High Potency, Medium Drain",
+        "Description": "+Piercing Bullet Crush",
         "Detailed_Description": "A really big pointy ball, rolls into your enemies and pushes them around!",
         "Essence": 25,
         "Delay": 45,
@@ -712,7 +712,7 @@
     "107": {
         "Name": "Spinning Top",
         "Recollection_Sprite": "spr_Spinning_Top_Art",
-        "Description": "+Bullet Redirection +Extra Hits +Long Lasting Low Potency, Medium Drain",
+        "Description": "+Bullet Redirection +Extra Hits",
         "Detailed_Description": "These spin in place and do extra damage to enemies, neat to look at as well!",
         "Essence": 15,
         "Delay": 35,
@@ -736,7 +736,7 @@
     "108": {
         "Name": "Sharpshooter",
         "Recollection_Sprite": "spr_Sharp_Machine_Gun_Art",
-        "Description": "+Fast Medium Potency, High Drain +Chance for Bleed",
+        "Description": "+Chance for Bleed",
         "Detailed_Description": "Weapon that shoots sharp objects really really fast.",
         "Essence": 10,
         "Delay": 14,
@@ -765,7 +765,7 @@
     "109": {
         "Name": "Throwing Knives",
         "Recollection_Sprite": "spr_Throwing_Knives_Art",
-        "Description": "+Bleed +High Potency, Medium Drain",
+        "Description": "+Bleed",
         "Detailed_Description": "Sharp and strong knives that will make your enemies bleed!",
         "Essence": 18,
         "Delay": 23,
@@ -787,7 +787,7 @@
     "110": {
         "Name": "Bow",
         "Recollection_Sprite": "spr_Archery_Bow_Art",
-        "Description": "+Charged Attack +Critical Hit Chance +Low->Very High Potency, Low->Very High Drain",
+        "Description": "+Charged Attack +Critical Hit Chance",
         "Detailed_Description": "Powerful Bow and Arrow that can be drawn for extra critical hit chance.",
         "Shot_Element": "Sharp",
         "Shot_Count": 3,
@@ -823,7 +823,7 @@
     "111": {
         "Name": "Crossbow",
         "Recollection_Sprite": "spr_Crossbow_Art",
-        "Description": "+Fast Charged Attack +Critical Hit Chance +Low->High Potency, Low->High Drain",
+        "Description": "+Fast Charged Attack +Critical Hit Chance",
         "Detailed_Description": "Powerful Crossbow that can be quickly drawn for extra critical hit chance.",
         "Shot_Element": "Sharp",
         "Essence": 14,
@@ -856,7 +856,7 @@
     "112": {
         "Name": "Pins",
         "Recollection_Sprite": "spr_Pins_Art",
-        "Description": "+Bullet Pinning +Bleed Chance +Medium Potency, Medium Drain",
+        "Description": "+Bullet Pinning +Bleed Chance",
         "Detailed_Description": "Throw a volley of pins at bosses that have a chance to make them bleed. Pins can also pin down incoming bullets.",
         "Essence": 23,
         "Delay": 37,
@@ -886,7 +886,7 @@
     "113": {
         "Name": "Marble Minigun",
         "Recollection_Sprite": "spr_Marble_Minigun_Art",
-        "Description": "+Very Fast Marbles +Low Potency, High Drain",
+        "Description": "+Very Fast Marbles",
         "Detailed_Description": "Marble Minigun shoots marbles at an incredible speed!",
         "Essence": 7,
         "Delay": 7,
@@ -915,7 +915,7 @@
     "114": {
         "Name": "Saw Blade Launcher",
         "Recollection_Sprite": "spr_Saw_Blade_Launcher_Art",
-        "Description": "+High Potency, Medium Drain",
+        "Description": "",
         "Detailed_Description": "Shoots razor sharp rotating saw blades.",
         "Essence": 18,
         "Delay": 25,
@@ -935,7 +935,7 @@
     "115": {
         "Name": "Paper Airplane",
         "Recollection_Sprite": "spr_Paper_Airplane_Art",
-        "Description": "+Continual 3 Way Paper Cuts +High Potency, Medium Drain",
+        "Description": "+Continual 3 Way Paper Cuts",
         "Detailed_Description": "Homing paper airplane that shoots additional shots all across the battle field.",
         "Essence": 32,
         "Delay": 42,

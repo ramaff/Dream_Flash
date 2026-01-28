@@ -58,23 +58,17 @@ soulCurrentHorizontalSpeed = _speeds.h_speed
 
 if ((soulCurrentHorizontalSpeed != 0) or (soulCurrentVerticalSpeed != 0)) {
 	
-    shealthregenfactor = 0.8 * ((10 + scr_Get_Status_Magnitude(id, "regen_mult")) / 10);
-    currentenergyregenfactor = 0.9 * sstatefirerate * ((10 + senergyregenfactor) / 10) * ((10 + scr_Get_Status_Magnitude(id, "essence_mult")) / 10);
-    sdelayregenfactor = 1 * sstatefirerate * ((10 + scr_Get_Status_Magnitude(id, "firerate_mult")) / 10);
-	
 	soulmovetimer++;
 	var _total_speed = sqrt((soulCurrentHorizontalSpeed * soulCurrentHorizontalSpeed) + (soulCurrentVerticalSpeed * soulCurrentVerticalSpeed))
 	scr_Soul_Stretch("Horizontal", scr_Wave(0, 0.05, 2.5 / _total_speed, 0))
-	//if soulmovetimer mod 20 = 0 {
-	//	scr_Soul_Stretch("Horizontal", 0.2)
-	//}
 	
 } else {
-    shealthregenfactor = 1 * ((10 + shealthidleregenfactor) / 10) * ((10 + scr_Get_Status_Magnitude(id, "regen_mult")) / 10);
-    currentenergyregenfactor = 1 * sstatefirerate * ((10 + senergyidleregenfactor) / 10) * ((10 + senergyregenfactor) / 10);
-    sdelayregenfactor = 1 * sstatefirerate * ((10 + scr_Get_Status_Magnitude(id, "firerate_mult")) / 10);
 	soulmovetimer = 0;
 }
+
+shealthregenfactor = 1 * ((10 + scr_Get_Status_Magnitude(id, "regen_mult")) / 10);
+currentenergyregenfactor = 1 * sstatefirerate * ((10 + senergyregenfactor) / 10) * ((10 + scr_Get_Status_Magnitude(id, "essence_mult")) / 10);
+sdelayregenfactor = 1 * sstatefirerate * ((10 + scr_Get_Status_Magnitude(id, "firerate_mult")) / 10);
 	
 if soulFriction < 1 {
 	soulFriction += 0.1;
@@ -94,11 +88,13 @@ var essenceCap = smaxenergy;
 var _surpass_cap = global.P[1] > 0 || global.C[9] > 0
 
 if (senergy < essenceCap) {
+	var _ess_uppies = max(0, essenceCap - senergy);
 	if !scr_Room_Leavable() {
-		senergy += 0.5 * currentenergyregenfactor;
+		_ess_uppies = min(_ess_uppies, 0.5 * currentenergyregenfactor);
 	} else {
-		senergy += 5 * currentenergyregenfactor;
+		_ess_uppies = min(_ess_uppies, 5 * currentenergyregenfactor);
 	}
+	senergy += _ess_uppies;
 }
 	
 //if senergy > essenceCap and _surpass_cap = false {

@@ -29,3 +29,15 @@ if recalls >= 1 {
 		image_yscale = 0.5;
 	}
 }
+
+if alarm[0] = 10 {
+	var color = make_color_rgb(200+random(55), 200, 255);
+		
+	scr_Particle_Burst(obj_Spiral_Wind_Part_Alt, spr_Soul_Big_Bit, color, color, 3, 16, random(360), 120, 0, 0.525, 40, true)	
+}
+
+/*if alarm[0] mod 5 = 0 {
+	var color = make_color_rgb(200+random(55), 200, 255);
+		
+	scr_Particle_Burst(obj_Spiral_Wind_Part, spr_Soul_Big_Bit, color, color, 1, 12, random(360), 90, 0, 0.4, 30, true)	
+} */

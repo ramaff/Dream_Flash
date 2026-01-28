@@ -658,14 +658,14 @@
         "recollectionString": "Scaley Heart",
         "recollectionSprite": "spr_Scaley_Heart_Art",
         "recollectionSummary": "Dexterity When HP Low",
-        "recollectionDescription": "+20 HP +Increases soul attack rate and movement speed when low on HP. Makes the soul slither.",
+        "recollectionDescription": "+20 HP +Increases soul attack rate and movement speed when low on HP.",
         "Snake_Credit": 1
     },
     "H14": {
         "recollectionString": "Beast Heart",
         "recollectionSprite": "spr_Beast_Heart_Art",
         "recollectionSummary": "Hungry Bites",
-        "recollectionDescription": "+25 HP +The soul bites in the direction of the nearest enemies. These bites do damage, regenerate health and push the soul towards their target. Soul has the spirit of an wild beast.",
+        "recollectionDescription": "+25 HP +The soul bites towards bosses. These bites do damage, and regenerate health.",
         "Beast_Credit": 1
     },
     "H15": {
@@ -1103,7 +1103,7 @@
         "recollectionSprite": "spr_Spike_Soul",
         "recollectionSize": 0.375,
         "recollectionSummary": "Ally Soul",
-        "recollectionDescription": "+Shoots spike essence at the enemies, Increases the pierce of your projectiles by 1 and shot power by 2.5 if they pass through the soul.",
+        "recollectionDescription": "+Shoots spike essence at the enemies, Increases the pierce of your passing projectiles and shot power.",
         "Spike_Credit": 1
     },
     "M10": {
@@ -1127,7 +1127,7 @@
         "recollectionSprite": "spr_Troubling_Thingo",
         "recollectionSize": 0.375,
         "recollectionSummary": "Ally Figment",
-        "recollectionDescription": "+When colliding with a boss will send a bunch of bullets from outside the dreamscape towards itself. Bullets can hurt bosses and your soul!",
+        "recollectionDescription": "+When colliding with a boss will shoot a bunch of shots that are followed by soul damaging bullets.",
         "Beast_Credit": 0.5
         
     },
@@ -1598,7 +1598,7 @@
         "recollectionString": "Train of Thought",
         "recollectionSprite": "spr_Train_Of_Thought_Art",
         "recollectionSummary": "+Increasing Weapon Firerate and Efficiency",
-        "recollectionDescription": "+By keeping up a train of thought, slowly gain up to +100% firerate and -50% essence cost with a weapon as long as you do not switch weapons, get hit, stop firing, or change shooting angle."
+        "recollectionDescription": "+By keeping up a train of thought, slowly gain up to 100% firerate and 50% lower essence cost with a weapon as long as you do not change shooting angle."
     },
     "U04": {
         "recollectionString": "Circle of Trust",
