@@ -1,7 +1,5 @@
 function scr_Collect_Income() {
 	with (obj_Soul_Recall) {
-	    global.soul_recall++;
-	    global.soul_xp++;
 	    instance_destroy();
 	}
 	/*

@@ -21,7 +21,7 @@ if distance_to_object(obj_Astral_Indicator) < 15 {
 	    recollectionString = "Inspired";
 	    priceString = "";
 	    recollectionUpgrade = 0;
-		recollectionExtraStats = "Upgrade these items?";
+		recollectionDescription = "Upgrade these items?";
 		shop = 0;
 	}
 }

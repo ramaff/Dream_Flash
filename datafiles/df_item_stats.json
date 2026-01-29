@@ -1020,7 +1020,7 @@
         "recollectionString": "Brightside Hearts",
         "recollectionSprite": "spr_Brightside_Hearts_Art",
         "recollectionSummary": "Heart Loss Stats",
-        "recollectionDescription": "+Losing a heart will give you a permanent +1/4 Level to a random basic stat."
+        "recollectionDescription": "+Losing a heart will give you a permanent 1/4 Level to a random basic stat."
     },
     "L05": {
         "recollectionString": "Potential",
@@ -1838,7 +1838,7 @@
         "recollectionString": "Lasting Pain",
         "recollectionSprite": "spr_Lasting_Pain_Art",
         "recollectionSummary": "Pain that Follows",
-        "recollectionDescription": "+Every time the soul takes damage, pained spirits will closely follow the soul. These spirits eventually explode dealing extra damage to the soul and anything else nearby."
+        "recollectionDescription": "+Every time the soul takes damage, pained spirits will closely follow the soul, which eventually explode dealing extra damage to the soul and anything else nearby."
     },
     "XC06": {
         "recollectionString": "Helpless",

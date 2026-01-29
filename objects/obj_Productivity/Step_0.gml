@@ -22,3 +22,6 @@ if followtarget = obj_Soul_Parent.id {
 }
 
 /// In Boss Beat Script
+if instance_number(obj_Main_Boss_Parent) - instance_number(obj_Dead_Boss) <= 0 {
+	scr_N02_Pay();	
+}

@@ -29,6 +29,7 @@ function scr_Weapon_Memory(displayItemSprite = true) {
 	
 	recollectionExtraStats = ""
 	recollectionDescription = ""
+	recollectionPower = 0
 	
 	if global.recollectionWeap[itemVal] >= 1 || displayItemSprite {
 		recollectionExtraStats = ""

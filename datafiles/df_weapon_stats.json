@@ -418,7 +418,8 @@
         "Shot_Alpha": 0,
         "Weapon_Split_Visible": 1,
         "Weapon_Split_Hit_Again": 1,
-        "Shot_Description": [
+        "Shot_Damage": false,
+        "Shot_Extra_Stats": [
             {
                 "Shot_Count": 1,
                 "Shot_Sprite": "spr_Rising_Spike",
@@ -437,6 +438,7 @@
                 "Shot_Fizzle_Out": 0,
                 "Shot_Pierce": 99,
                 "Shot_Ground": true,
+                "Shot_Damage": true,
                 "Shot_Forward": 1,
                 "Shot_Size": 0.5,
                 "Shot_Image_Speed": 1,
@@ -947,7 +949,7 @@
         "Shot_Duplicate_Sprite": "spr_Paper_Cut",
         "Shot_Phasing": 1,
         "Shot_Extra_Hits": false,
-        "Shot_Description": [
+        "Shot_Extra_Stats": [
             {
                 "Shot_Count": 3,
                 "Shot_Spread": 120,
@@ -1338,7 +1340,6 @@
                 "Shot_Speed": 0,
                 "Shot_Point_Angle": 0,
                 "Shot_Impact_Type": 0,
-                "Shot_Power": 3,
                 "Burst_Size": 1,
                 "Shot_Pierce": 4,
                 "Weapon_Split_Visible": 0,
@@ -1615,7 +1616,6 @@
                 "Shot_Life_Span": 90,
                 "Shot_Speed": 10,
                 "Shot_Point_Angle": 1,
-                "Shot_Power": 3,
                 "Burst_Size": 1,
                 "Shot_Pierce": 1,
                 "Weapon_Split_Hit_Again": 1,
@@ -1937,7 +1937,8 @@
         "Shot_Alpha": 0,
         "Weapon_Split_Visible": 1,
         "Weapon_Split_Hit_Again": 1,
-        "Shot_Description": [
+        "Shot_Damage": false,
+        "Shot_Extra_Stats": [
             {
                 "Shot_Count": 1,
                 "Shot_Sprite": "spr_Magic_Blade_Shot",
@@ -1956,6 +1957,7 @@
                 "Shot_Fizzle_Out": 0,
                 "Shot_Pierce": 99,
                 "Shot_Ground": true,
+                "Shot_Damage": true,
                 "Shot_Forward": 1,
                 "Burst_Size": 1,
                 "Shot_Image_Speed": 1,
@@ -2375,7 +2377,7 @@
         "Shot_Duplicate_Sprite": "spr_Guardian_Light",
         "Shot_Phasing": 1,
         "Shot_Extra_Hits": false,
-        "Shot_Description": [
+        "Shot_Extra_Stats": [
             {
                 "Shot_Count": 1,
                 "Shot_Extra_Hit_Frequency": 18,
@@ -2676,7 +2678,8 @@
         "Description": "+Blood Shot Burst +Heart Effect Activation",
         "Detailed_Description": "Deals a small amount of damage to the soul. Doing this activates any on-hit effects the soul may have. It also shoots a burst that targets the nearest enemies.",
         "Essence": 45,
-        "Delay": 60
+        "Delay": 60,
+        "Shot_Power": 5
     },
     "99": {
         "Name": "",

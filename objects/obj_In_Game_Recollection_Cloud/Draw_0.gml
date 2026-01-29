@@ -39,13 +39,13 @@ if (string_count("+", recollectionDescription) > 2) and recollectionExtraStats =
 if priceString != "" {
 	//draw_set_alpha(image_alpha);
 	draw_text_color(x+84,y+_y_offset+114, string_hash_to_newline(priceString), c_black, c_black, c_black, c_black, image_alpha);
-	draw_sprite_ext(recollectionPriceType,0,x+60,y+_y_offset+118, 0.5, 0.5, 0, c_white, 1)
+	draw_sprite_ext(recollectionPriceType,0,x+60,y+_y_offset+118, 0.5, 0.5, 0, c_white, image_alpha)
 	//draw_set_alpha(1);
 }
 
 if recollectionCount = 0 {
 	draw_set_font(Weak_Damage_Font);
-	draw_sprite_ext(spr_no_recollection_icon,0,x-94,y+_y_offset+123, 0.5, 0.5, 0, c_white, 1)
+	draw_sprite_ext(spr_no_recollection_icon,0,x-94,y+_y_offset+123, 0.5, 0.5, 0, c_white, image_alpha)
 	draw_text_color(x-40,y+_y_offset+114, "No Recollection", c_black, c_black, c_black, c_black, image_alpha);	
 }
 

@@ -24,7 +24,7 @@ if distance_to_object(obj_Astral_Indicator) < 15 {
 	    recollectionString = scr_Item_Pool_Names(other.pool);
 	    priceString = "";
 	    recollectionUpgrade = 0;
-		recollectionExtraStats = "";
+		recollectionDescription = "";
 		shop = 0;
 	}
 }

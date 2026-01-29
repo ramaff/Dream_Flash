@@ -6,15 +6,17 @@ function scr_Item_Recollection_Cloud(time = 1, _stacks = 1) {
 
 	//draw_sprite_ext(spr_Recollection_Hover_Cloud,0,x,y,1,1,0,c_white,global.recoalpha);
 	
-	if instance_exists(cloud) {
+	if instance_exists(cloud) and time < 20 {
 		with(cloud) {
 			alarm[0] = time;
 			//image_alpha = global.recoalpha
 		}
 	} else {
-		with(obj_In_Game_Recollection_Cloud) {
-			if alarm[0] < 20 {
-				instance_destroy()	
+		if time < 20 {
+			with(obj_In_Game_Recollection_Cloud) {
+				if alarm[0] < 20 {
+					instance_destroy()	
+				}
 			}
 		}
 	
