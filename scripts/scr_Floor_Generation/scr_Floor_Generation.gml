@@ -234,7 +234,7 @@ function scr_Floor_Generation() {
 				_second_misc = string_letters(global.floor[i,12])
 			}
 			
-			miscChoose = choose(1,2,3,4,5,6,7,8,8,8,9);
+			miscChoose = choose(1,2,3,4,5,6,6,6,7);
 			//miscChoose = 6;
 	        if miscChoose = 1 {
 	            global.floor[i,13] = scr_Pool_Pick(global.u_item_pool);
@@ -247,10 +247,8 @@ function scr_Floor_Generation() {
 	        } if miscChoose = 5 {
 	            global.floor[i,13] = scr_Pool_Pick(global.v_item_pool);
 	        } if miscChoose = 6 {
-	            global.floor[i,13] = scr_Pool_Pick(global.g_item_pool);
-	        } if miscChoose = 7 {
 				global.floor[i,13] = scr_Pool_Pick(global.m_item_pool);
-			} if miscChoose = 8 {
+			} if miscChoose = 7 {
 	            global.floor[i,13] = scr_Pool_Pick(global.q_item_pool);
 	        }
 	    }

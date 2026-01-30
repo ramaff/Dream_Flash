@@ -371,10 +371,10 @@
         "recollectionDescription": "+20% Soul Speed +20% Weapon Speed"
     },
     "D14": {
-        "recollectionString": "Pressure Run",
+        "recollectionString": "Going Through the Motions",
         "recollectionSprite": "spr_Pressure_Run_Item",
-        "recollectionSummary": "Movement Gust",
-        "recollectionDescription": "+Soul movement causes pressure, which blows back bullets and does damage to enemies. +30% Movement Speed",
+        "recollectionSummary": "Pressure Run",
+        "recollectionDescription": "+Soul movement causes pressure, which blows back bullets and does damage. +30% Movement Speed",
         "Snake_Credit": 0.5
     },
 
@@ -444,7 +444,7 @@
         "recollectionString": "Hold That Thought",
         "recollectionSprite": "spr_Bullet_Conquest_Item",
         "recollectionSummary": "Bullet Conquest Energy",
-        "recollectionDescription": "+When shooting sometimes stop all nearby bullets"
+        "recollectionDescription": "+When shooting sometimes stop all nearby bullets and do damage to bosses. Frequency depends on the potency of the original attack."
     },
     "E11": {
         "recollectionString": "Corporeal Lag",
@@ -462,7 +462,7 @@
         "recollectionString": "Spatial Awareness",
         "recollectionSprite": "spr_Spatial_Awareness_Item",
         "recollectionSummary": "Danger Warp Replenish",
-        "recollectionDescription": "+When near bullets, recharge your teleport faster, and regain essence quickly.",
+        "recollectionDescription": "+Hyper sense nearby bullets, this slightly staggers them, recharges your teleport faster, and regains.",
         "Beast_Credit": 0.5
     },
     "E14": {
@@ -1733,7 +1733,7 @@
         "recollectionString": "Astral Link",
         "recollectionSprite": "spr_Astral_Link_Art",
         "recollectionSummary": "Permawarp Portals",
-        "recollectionDescription": "+Create a lingering rift in space when teleporting, allowing things to teleport between the two points. Projectiles that pass through the portals gain momentum, and can hit enemies again."
+        "recollectionDescription": "+Create lingering rifts in headspace when teleporting, allowing things to warp between the two points. Projectiles passing through gain momentum, and can hit enemies again."
     },
     
     "XA01": {

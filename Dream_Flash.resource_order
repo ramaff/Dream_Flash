@@ -1501,6 +1501,7 @@
     {"name":"spr_Coping_Shot","order":29,"path":"sprites/spr_Coping_Shot/spr_Coping_Shot.yy",},
     {"name":"spr_crazy_eye_ko","order":2,"path":"sprites/spr_crazy_eye_ko/spr_crazy_eye_ko.yy",},
     {"name":"spr_Crazy_Eye_Phase_2_Fall","order":1,"path":"sprites/spr_Crazy_Eye_Phase_2_Fall/spr_Crazy_Eye_Phase_2_Fall.yy",},
+    {"name":"spr_Cross_Part","order":4,"path":"sprites/spr_Cross_Part/spr_Cross_Part.yy",},
     {"name":"spr_Cry_For_Help_Art","order":8,"path":"sprites/spr_Cry_For_Help_Art/spr_Cry_For_Help_Art.yy",},
     {"name":"spr_Crystal_Laser_Charge_Ball","order":4,"path":"sprites/spr_Crystal_Laser_Charge_Ball/spr_Crystal_Laser_Charge_Ball.yy",},
     {"name":"spr_Curious_Art","order":4,"path":"sprites/spr_Curious_Art/spr_Curious_Art.yy",},

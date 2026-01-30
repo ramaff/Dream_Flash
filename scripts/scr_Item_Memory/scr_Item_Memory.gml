@@ -30,6 +30,7 @@ function scr_Item_Memory(displayItemSprite = true) {
 	}
 	
 	recollectionExtraStats = "You cannot remember"
+	recollectionDescription = ""
 	
 	
 	if rememberance >= 1 || displayItemSprite {
