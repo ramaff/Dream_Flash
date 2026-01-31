@@ -16,7 +16,7 @@ global.itemFieldSpeed[global.currentOrbit] = 0.03;
 
 scr_Item_Field_Push(5);
 
-if instance_number(obj_Item_Parent) = 0 and fieldActive = 1 {
+if instance_number(obj_Item_Parent) = 0 and fieldActive = 1 and global.floor[global.currentroom,0] != "Chamber" {
     alarm[0] = 60;
 	fieldActive = 0;
 	

@@ -16,8 +16,6 @@ if instance_exists(obj_Boss_Parent) {
     current_weapon_stats.Shot_Life_Span = 210;
 	current_weapon_stats.Shot_Size = 0.5;
     
-    current_weapon_stats.Shot_ID = instance_id_get( instance_count ) + glumcount;
-    
     glumcount++
     
     current_weapon_stats.Shot_Homing_Type = 1;
@@ -27,8 +25,6 @@ if instance_exists(obj_Boss_Parent) {
     current_weapon_stats.Shot_Looping += 1;  
 	
 	current_weapon_stats.Shot_Point_Angle = 1;
-    
-    variable_struct_set(projectile_hits, current_weapon_stats.Shot_ID, current_weapon_stats.Shot_ID)
     
     scr_Minion_Shot_Creation();
 }

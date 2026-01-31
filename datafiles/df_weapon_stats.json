@@ -2439,7 +2439,7 @@
             "Shot_Spread": 90,
             "Shot_Accuracy": 15,
             "Shot_Count": 4,
-            "Shot_Mouse": 0,
+            "Shot_Mouse": 1,
             "Shot_Angle_Relative": 45,
             "Shot_Sprite": "spr_Sparks_Shot",
             "Shot_Type": "obj_Lesser_Soul_Shot",

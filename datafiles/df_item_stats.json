@@ -1694,7 +1694,7 @@
         "recollectionString": "Blood Lust",
         "recollectionSprite": "spr_Blood_Lust_Art",
         "recollectionSummary": "Damage Health Regen",
-        "recollectionDescription": "+Damaging bosses causes healing energy to leak out of bosses. When contacting the soul it will restore some lost HP. +1/2 Loathing",
+        "recollectionDescription": "+Damaging bosses causes short-ranged healing energy to leak out of bosses. +1/2 Loathing",
         "Beast_Credit": 1
     },
 
