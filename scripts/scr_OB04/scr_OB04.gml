@@ -12,7 +12,7 @@ function scr_OB04() {
 		var _current_weapon_stats = scr_Setup_Default_Weapon_Stats(_c_wp)
 		scr_Modify_Current_Weapon_Stats(_current_weapon_stats);
 		
-		var _delay = _current_weapon_stats.Delay / scr_Class_Stat_Firerate_Multiplier() * 2;
+		var _delay = _current_weapon_stats.Delay * 2;
 		
 		cant_help += global.OB[4];
 		

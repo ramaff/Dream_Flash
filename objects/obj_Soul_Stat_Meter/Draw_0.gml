@@ -63,9 +63,9 @@ if stat = 9 and (global.soulloathing) > 0 {
 	draw_text(x+50,y+60, string_hash_to_newline(sPercent / 2.5));
 	vis = 1;
 }
-if stat = 10 and (global.soulvanity) > 0 {
+if stat = 10 and (global.soulassurance) > 0 {
     draw_text(x+50,y+84, string_hash_to_newline("VAN"));
-    sPercent = (global.soulvanity) * 2.5;
+    sPercent = (global.soulassurance) * 2.5;
 	draw_text(x+50,y+60, string_hash_to_newline(sPercent / 2.5));
 	vis = 1;
 }

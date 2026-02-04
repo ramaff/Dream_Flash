@@ -1,18 +1,5 @@
 function scr_Collect_Income() {
-	with (obj_Soul_Flash) {
-	    global.soulflash++;
-	    instance_destroy();
-	}
-	with (obj_Soul_Feel) {
-	    global.soulflash++;
-	    instance_destroy();
-	}
-	with (obj_Soul_Dream) {
-	    global.soulflash++;
-	    instance_destroy();
-	}
-	with (obj_Soul_Nightmare) {
-	    global.soulflash++;
+	with (obj_Soul_Recall) {
 	    instance_destroy();
 	}
 	/*
@@ -24,7 +11,7 @@ function scr_Collect_Income() {
 	        global.soulbliss++;
 	    }
 	    if spirit = "Vanity" {
-	        global.soulvanity++;
+	        global.soulassurance++;
 	    }
 	    if spirit = "Loathing" {
 	        global.soulloathing++;

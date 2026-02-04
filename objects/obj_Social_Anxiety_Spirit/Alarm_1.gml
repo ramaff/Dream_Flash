@@ -12,7 +12,7 @@ if evil = 0 {
 if souldist < 320 {
 	if good = 1 {
 	
-		if instance_exists(obj_Bullet_Parent) and instance_exists(obj_Boss_Parent) {
+		if (instance_exists(obj_Bullet_Parent) || instance_exists(obj_bullet_parent_v2)) and instance_exists(obj_Boss_Parent) {
 		    current_weapon_stats = scr_Setup_Default_Shot_Stats();
         
 		    current_weapon_stats.Shot_Spread = 10;
@@ -34,6 +34,9 @@ if souldist < 320 {
 			if instance_exists(instance_nearest(x,y,obj_Bullet_Parent)) {
 				current_weapon_stats.Shot_Direction = point_direction(x,y,instance_nearest(x,y,obj_Bullet_Parent).x,instance_nearest(x,y,obj_Bullet_Parent).y);
 			}
+			if instance_exists(instance_nearest(x,y,obj_bullet_parent_v2)) {
+				current_weapon_stats.Shot_Direction = point_direction(x,y,instance_nearest(x,y,obj_bullet_parent_v2).x,instance_nearest(x,y,obj_bullet_parent_v2).y);
+			}
 		
 		    current_weapon_stats.Shot_Shield_Type = 1;
 		    current_weapon_stats.Shot_Shield_Power = 10;
@@ -47,6 +50,7 @@ if souldist < 320 {
 	
 	if evil = 1 {
 
+		/*
 		bossbulletspeed = 4;
 		bosspower = global.stagedamage;
 		bossaccuracy = 1;
@@ -71,7 +75,31 @@ if souldist < 320 {
 
 		bullet_spread = 15;
 		bullet_count = choose(5, 5, 5, 10);
-		scr_Soul_Shoot();
+		scr_Soul_Shoot(); */
+		
+		current_weapon_stats = scr_Setup_Default_Shot_Stats();
+    
+	    current_weapon_stats.Shot_Spread = 30;
+	    current_weapon_stats.Shot_Accuracy = 90;
+	    current_weapon_stats.Shot_Count = choose(5, 5, 5, 7, 9);
+        
+	    current_weapon_stats.Shot_Sprite = spr_Panic_Shot;
+	    current_weapon_stats.Shot_Type = obj_Lesser_Soul_Shot;
+        
+	    current_weapon_stats.Shot_Phasing = 1;
+		current_weapon_stats.Shot_Pierce = 3;
+        
+	    current_weapon_stats.Shot_Speed = 3 + random(1.5);
+		current_weapon_stats.Shot_Acceleration = current_weapon_stats.Shot_Speed / 60;
+		current_weapon_stats.Shot_Point_Angle = true;
+	    current_weapon_stats.Shot_Power = 10;
+	    current_weapon_stats.Shot_Soul_Damage = 10;
+	    current_weapon_stats.Shot_Life_Span = 180;
+		current_weapon_stats.Shot_Size = 0.55;
+		current_weapon_stats.Shot_Mouse = 0;
+		current_weapon_stats.Shot_Direction = scr_Soul_Point()
+		
+		scr_Minion_Shot_Creation();
 	
 		scr_Boss_Stretch("Vertical", 0.4);
 	}

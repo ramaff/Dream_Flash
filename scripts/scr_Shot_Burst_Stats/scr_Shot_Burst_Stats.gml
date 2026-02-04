@@ -9,12 +9,10 @@ function scr_Shot_Burst_Stats(_v_burst_stats){
 	} */
 	if variable_struct_exists(_v_burst_stats, "Burst_Power") {
 		shot_stats.Shot_Power = shot_stats.Shot_Power * _v_burst_stats.Burst_Power;
-		shot_stats.Shot_Power_Level = shot_stats.Shot_Power_Level * _v_burst_stats.Burst_Power;
 		shot_stats.Shot_Aura_Power = shot_stats.Shot_Aura_Power * _v_burst_stats.Burst_Power;
 		shot_stats.Shot_Power_Max = shot_stats.Shot_Power;
 	} else {
 		shot_stats.Shot_Power = _v_burst_stats.Shot_Power;
-		shot_stats.Shot_Power_Level = _v_burst_stats.Shot_Power;
 		shot_stats.Shot_Aura_Power = _v_burst_stats.Shot_Power;
 		shot_stats.Shot_Power_Max = shot_stats.Shot_Power;	
 	}
@@ -55,6 +53,10 @@ function scr_Shot_Burst_Stats(_v_burst_stats){
 	}
 	if variable_struct_exists(_v_burst_stats, "Shot_Impact_Type") {
 		shot_stats.Shot_Impact_Type = _v_burst_stats.Shot_Impact_Type
+	}
+
+	if shot_stats.Shot_Soul_Damage > 0 {
+		scr_Follow_Shot_Bullet_Spawn()
 	}
 
 }

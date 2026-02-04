@@ -6,7 +6,8 @@ function scr_D12_Activate() {
 		
 		var color = make_color_rgb(126, 255, 0);
 		
-		scr_Particle_Burst(obj_Field_Trail, spr_Soul_Big_Bit, color, color, 10, 12, 0, 360, 20, 0.5, 15, false)
+		scr_Particle_Burst(obj_Spiral_Wind_Part, spr_Soul_Big_Bit, color, color, 4, 12, 0, 90, 0, 0.4, 30, true)
+		scr_Particle_Burst(obj_Spiral_Wind_Part_Alt, spr_Soul_Big_Bit, color, color, 4, 12, 0, 90, 0, 0.4, 30, true)
 		
 		scr_Disk_Effect(20, 0.5, color);
 		scr_Disk_Effect(20, 0.9, color);

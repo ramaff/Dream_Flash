@@ -3,6 +3,7 @@ alarm[0] = 1;
 recollectionUpgrade = 0;
 recollectionMirror = 0;
 recollectionExtraStats = 0;
+recollectionDescription = "";
 recollectionCount = 1;
 shop = 0;
 leave = 0;
@@ -26,7 +27,7 @@ image_yscale = 0.5;
 
 target = obj_Soul_Parent;
 xx_offset = 200;
-yy_offset = -125;
+yy_offset = -150;
 
 depth = -3;
 

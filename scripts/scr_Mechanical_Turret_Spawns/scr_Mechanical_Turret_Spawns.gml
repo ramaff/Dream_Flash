@@ -4,7 +4,7 @@ function scr_Mechanical_Turret_Spawns(){
 	if obj_Soul_Parent.scurrentstate == "Mechanical" {
 		global.turretSpawnTime--;
 	} else if (global.F[5] >= 1 and obj_Soul_Parent.stransformedstate == "Mechanical") {
-		global.turretSpawnTime -= 0.1 * global.F[5];
+		global.turretSpawnTime -= 0.15 * global.F[5];
 	}
 	
 	if (obj_Soul_Parent.scurrentstate == "Mechanical" || (global.F[5] > 0 and obj_Soul_Parent.stransformedstate == "Mechanical")) and global.turretSpawnTime <= 0 {
@@ -20,6 +20,6 @@ function scr_Mechanical_Turret_Spawns(){
 		with instance_create(x,y,obj_Turret_Soul) {
 			followtarget = followtar
 		}
-		global.turretSpawnTime = 120 / ((160 + global.souldexterity + global.souldexterityTemp) / 160) / (sstatefirerate * ((200 + global.soulvanity + global.soulvanityTemp) / 200) * ((10 + scr_Get_Status_Magnitude(id, "firerate_mult")) / 10));
+		global.turretSpawnTime = 120 / ((160 + global.souldexterity + global.souldexterityTemp) / 160) / (sstatefirerate * ((200 + global.soulassurance + global.soulassuranceTemp) / 200) * ((10 + scr_Get_Status_Magnitude(id, "firerate_mult")) / 10));
 	}
 }

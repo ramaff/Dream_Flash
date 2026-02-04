@@ -15,7 +15,7 @@ if soulDeathFadeSpeed = 0 {
     scr_Invincibility_Frames();
 }
 
-if InputCheck(INPUT_VERB.SHOOT ) {
+if InputCheck(INPUT_VERB.SHOOT ) || variable_struct_exists(soul_step_status_effects, "temper") {
 	event_user(0)	
 }
 if InputReleased(INPUT_VERB.SHOOT ) {
@@ -31,7 +31,7 @@ scr_Execute_List_Of_Scripts(soul_step_before_scripts)
 
 smovefactor = 1;
 
-var smovemultiplier = smovefactor * smovementspeed * ((10 + scr_Get_Status_Magnitude(id, "movement_mult")) / 10) * ((10 + smovementfactor) / 10) * scr_Class_Stat_Movement_Speed_Multiplier();
+var smovemultiplier = smovefactor * smovementspeed * ((10 + scr_Get_Status_Magnitude(id, "movement_mult")) / 10) * ((10 + smovementfactor) / 10);
 currentenergyregenfactor = 1;
 
 var soulDirectionAttempt = 0;
@@ -58,21 +58,17 @@ soulCurrentHorizontalSpeed = _speeds.h_speed
 
 if ((soulCurrentHorizontalSpeed != 0) or (soulCurrentVerticalSpeed != 0)) {
 	
-    shealthregenfactor = 0.8 * ((10 + scr_Get_Status_Magnitude(id, "regen_mult")) / 10);
-    currentenergyregenfactor = 0.9 * sstatefirerate * ((10 + senergyregenfactor) / 10);
-    sdelayregenfactor = 1 * sstatefirerate * ((10 + scr_Get_Status_Magnitude(id, "firerate_mult")) / 10);
-	
 	soulmovetimer++;
-	if soulmovetimer mod 20 = 0 {
-		scr_Soul_Stretch("Horizontal", 0.2)
-	}
+	var _total_speed = sqrt((soulCurrentHorizontalSpeed * soulCurrentHorizontalSpeed) + (soulCurrentVerticalSpeed * soulCurrentVerticalSpeed))
+	scr_Soul_Stretch("Horizontal", scr_Wave(0, 0.05, 2.5 / _total_speed, 0))
 	
 } else {
-    shealthregenfactor = 1 * ((10 + shealthidleregenfactor) / 10) * ((10 + scr_Get_Status_Magnitude(id, "regen_mult")) / 10);
-    currentenergyregenfactor = 1 * sstatefirerate * ((10 + senergyidleregenfactor) / 10) * ((10 + senergyregenfactor) / 10);
-    sdelayregenfactor = 1 * sstatefirerate * ((10 + scr_Get_Status_Magnitude(id, "firerate_mult")) / 10);
 	soulmovetimer = 0;
 }
+
+shealthregenfactor = 1 * ((10 + scr_Get_Status_Magnitude(id, "regen_mult")) / 10);
+currentenergyregenfactor = 1 * sstatefirerate * ((10 + senergyregenfactor) / 10) * ((10 + scr_Get_Status_Magnitude(id, "essence_mult")) / 10);
+sdelayregenfactor = 1 * sstatefirerate * ((10 + scr_Get_Status_Magnitude(id, "firerate_mult")) / 10);
 	
 if soulFriction < 1 {
 	soulFriction += 0.1;
@@ -88,20 +84,22 @@ scr_Execute_List_Of_Scripts(soul_step_after_scripts)
 x += soulCurrentHorizontalSpeed;
 y += soulCurrentVerticalSpeed;
 
-var essenceCap = smaxenergy + scr_Class_Stat_Essence_Cap_Increase();
+var essenceCap = smaxenergy;
 var _surpass_cap = global.P[1] > 0 || global.C[9] > 0
 
 if (senergy < essenceCap) {
-	if global.bosscount > 0 {
-		senergy += 0.5 * currentenergyregenfactor * scr_Class_Stat_Essence_Regen_Multiplier();
+	var _ess_uppies = max(0, essenceCap - senergy);
+	if !scr_Room_Leavable() {
+		_ess_uppies = min(_ess_uppies, 0.5 * currentenergyregenfactor);
 	} else {
-		senergy += 5 * currentenergyregenfactor * scr_Class_Stat_Essence_Regen_Multiplier();
+		_ess_uppies = min(_ess_uppies, 5 * currentenergyregenfactor);
 	}
+	senergy += _ess_uppies;
 }
 	
-if senergy > essenceCap and _surpass_cap = false {
-	senergy = essenceCap;
-}
+//if senergy > essenceCap and _surpass_cap = false {
+//	senergy = essenceCap;
+//}
 
 sdelay -= sdelayregenfactor;
 if sdelay < 0 {

@@ -43,7 +43,7 @@ function scr_V03() {
 			scr_Stat_Up_Indication(8);
 		}
 		if sstat = 3 {
-			global.soulvanity += 4;
+			global.soulassurance += 4;
 			scr_Stat_Up_Indication(9);
 		}
 	

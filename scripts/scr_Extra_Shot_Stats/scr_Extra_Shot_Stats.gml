@@ -49,7 +49,6 @@ function scr_Extra_Shot_Stats(_Shot_Current_Count) {
 	shot_stats.Shot_Crit_Chance += other.scritaddchance;
 	shot_stats.Shot_Crit_Multiple += other.scritadd;
 	
-	shot_stats.Shot_Impact_Power_Level = shot_stats.Shot_Impact_Power;
 	shot_stats.Shot_Pierce += other.sshotpierce;
 	shot_stats.Shot_Armour_Pierce += other.sarmourpierce;
 	shot_stats.Shot_Chain_Power = (shot_stats.Shot_Chain_Power + other.spoweradd) * shotaddedpow;
@@ -97,7 +96,6 @@ function scr_Extra_Shot_Stats(_Shot_Current_Count) {
 		if global.XA[2] > 0 {
 			scr_XA02_Shot_Mod();	
 		}
-		scr_XA03_Shot_Mod();
 		scr_XA04_Shot_Mod();
 		
 		if global.XC[2] > 0 {
@@ -116,6 +114,10 @@ function scr_Extra_Shot_Stats(_Shot_Current_Count) {
 	
 	if shot_stats.Shot_Origin = obj_Soul_Parent {
 		scr_V08();
+	}
+	
+	if shot_stats.Shot_Soul_Damage > 0 {
+		scr_Follow_Shot_Bullet_Spawn()
 	}
 	
 	alarm[1] = 1;

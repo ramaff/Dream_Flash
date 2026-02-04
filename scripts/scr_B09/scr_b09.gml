@@ -5,14 +5,14 @@
 
 function scr_B09(damage){
 	if global.B[9] > 0 {
-		var threshold = 40 + 20 * global.currentchapter;
+		var threshold = 40;
 		
 		var bossid = other.id;
 	
 		while(damage > threshold) {
 			damage -= threshold;
 			with instance_create(x,y, obj_Speech_Heart) {
-				speed = 15 + random(15);
+				speed = 15 + random(20);
 				direction = random(360);
 				bosstarget = bossid;
 			}
@@ -21,7 +21,7 @@ function scr_B09(damage){
 			if scr_Chance(threshold / damage) {
 			
 				with instance_create(x,y, obj_Speech_Heart) {
-					speed = 15 + random(15);
+					speed = 15 + random(20);
 					direction = random(360);
 					bosstarget = bossid;
 				}

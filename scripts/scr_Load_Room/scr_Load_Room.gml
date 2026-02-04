@@ -8,22 +8,11 @@ function scr_Load_Room() {
 
 	global.roomdarkness = 0;
 
-	with (obj_Soul_Flash) {
-	    global.soulflash++;
+	with (obj_Soul_Recall) {
+	    global.soul_recall++;
 	    instance_destroy();
 	}
-	with (obj_Soul_Feel) {
-	    global.soulfeel++;
-	    instance_destroy();
-	}
-	with (obj_Soul_Dream) {
-	    global.souldream++;
-	    instance_destroy();
-	}
-	with (obj_Soul_Nightmare) {
-	    global.soulnightmare++;
-	    instance_destroy();
-	}
+	
 	with (obj_Soul_Spiritual) {
 	    if spirit = "Hope" {
 	        global.soulhope++;
@@ -32,7 +21,7 @@ function scr_Load_Room() {
 	        global.soulbliss++;
 	    }
 	    if spirit = "Vanity" {
-	        global.soulvanity++;
+	        global.soulassurance++;
 	    }
 	    if spirit = "Loathing" {
 	        global.soulloathing++;

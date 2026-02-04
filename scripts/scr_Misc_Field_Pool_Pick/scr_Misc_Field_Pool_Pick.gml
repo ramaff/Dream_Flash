@@ -4,7 +4,8 @@ function scr_Misc_Field_Pool_Pick(){
 	//var type = choose(1,1,1,2,2,2,3,4,5,6,7,8,9,10);
 	var itemcount = 0;
 	
-	var _g_size = ceil(ds_list_size(global.g_item_pool) / 2)
+	//var _g_size = ceil(ds_list_size(global.g_item_pool) / 2)
+	var _g_size = 0;
 	var _h_size = ceil(ds_list_size(global.h_item_pool) / 1.5)
 	var _m_size = ceil(ds_list_size(global.m_item_pool) / 2)
 	var _p_size = ds_list_size(global.p_item_pool)
@@ -23,10 +24,10 @@ function scr_Misc_Field_Pool_Pick(){
 	// Exlcude J K L N
 	// 3+12+12+7+6+3+3+10+8+5
 	
-	itemcount += _g_size
+	/*itemcount += _g_size
 	if _type <= itemcount { /// G
 		return scr_Pool_Pick(global.g_item_pool);
-	}
+	} */
 	itemcount += _h_size
 	if _type <= itemcount {
 		return scr_Pool_Pick(global.h_item_pool);

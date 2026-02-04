@@ -3,3 +3,5 @@
 alarm[0] = 5 + random(15);
 
 starty = y;
+
+cloud = noone;

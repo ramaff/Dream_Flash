@@ -25,7 +25,7 @@ if distance_to_object(obj_Astral_Indicator) < 15 {
 	    recollectionString = "Think Again";
 	    priceString = string(price);
 	    recollectionUpgrade = 0;
-		recollectionExtraStats = "Reroll entire field";
+		recollectionDescription = "Reroll entire field";
 		shop = 1;
 	}
 }

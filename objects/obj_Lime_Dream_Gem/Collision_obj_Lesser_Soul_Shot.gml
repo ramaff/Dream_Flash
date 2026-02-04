@@ -33,7 +33,6 @@ if !hit_again and other.shot_stats.Shot_Melee = 0 {
 			image_xscale = shot_stats.Shot_Size;
 			image_yscale = shot_stats.Shot_Size;
 		}
-        shot_stats.Shot_Power_Level = shot_stats.Shot_Power * 1.05;
         shot_stats.Shot_Power = shot_stats.Shot_Power * 1.05;
         shot_stats.Shot_Knock_Back += 10;
         sprite_index = spr_Lime_Gem_Shot;

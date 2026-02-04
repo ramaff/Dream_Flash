@@ -57,14 +57,15 @@ function scr_Save_Run() {
 	ini_write_real("Run", "souldespair", global.souldespair);
 	ini_write_real("Run", "soulparanoia", global.soulparanoia);
 	ini_write_real("Run", "soulloathing", global.soulloathing);
-	ini_write_real("Run", "soulvanity", global.soulvanity);
+	ini_write_real("Run", "soulassurance", global.soulassurance);
 	ini_write_real("Run", "soulbliss", global.soulbliss);
 	ini_write_real("Run", "soulhope", global.soulhope);
 
-	ini_write_real("Run", "soulflash", global.soulflash);
-	ini_write_real("Run", "soulfeel", global.soulfeel);
-	ini_write_real("Run", "souldream", global.souldream);
-	ini_write_real("Run", "soulnightmare", global.soulnightmare);
+	ini_write_real("Run", "soul_recall", global.soul_recall);
+	ini_write_real("Run", "soul_xp", global.soul_xp);
+	ini_write_real("Run", "soul_level", global.soul_level);
+	ini_write_real("Run", "soul_xp_threshold", global.soul_xp_threshold);
+	ini_write_real("Run", "soul_xp_threshold_mult", global.soul_xp_threshold_mult);
 	ini_write_real("Run", "chaptertime", global.chaptertime);
 	ini_write_real("Run", "glasstime", global.glasstime);
 
@@ -224,14 +225,14 @@ function scr_Save_Run() {
 	
 	ini_write_real("Run", "clarityBomb", global.clarityBomb);
 	ini_write_real("Run", "OC4Debuff", global.OC4Debuff);
-	ini_write_real("Run", "temperCharge", global.temperCharge);
-	ini_write_real("Run", "temperActive", global.temperActive);
 	ini_write_real("Run", "downwardSpiralBoost", global.downwardSpiralBoost);
 	ini_write_real("Run", "B06HeartConversions", global.B06HeartConversions);
 	
 	ini_write_string("Run", "OA5rooms", string_replace_all(json_stringify(global.OA5rooms), "\"", "'"));
 	ini_write_string("Run", "weapon", string_replace_all(json_stringify(Soul_Weapons_Control.weapon), "\"", "'"));
 	ini_write_string("Run", "items", string_replace_all(json_stringify(global.items), "\"", "'"));
+	
+	ini_write_string("Run", "soul_field_queue", string_replace_all(json_stringify(global.soul_field_queue), "\"", "'"));
 	//}
 	
 	

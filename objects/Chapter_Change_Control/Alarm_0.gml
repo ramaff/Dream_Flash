@@ -6,22 +6,7 @@ global.glasstime = 0;
 
 scr_K03_To_K08();
 
-with (obj_Soul_Flash) {
-	global.soulflash++;
-	instance_destroy();
-}
-with (obj_Soul_Feel) {
-	global.soulflash++;
-	instance_destroy();
-}
-with (obj_Soul_Dream) {
-	global.soulflash++;
-	instance_destroy();
-}
-with (obj_Soul_Nightmare) {
-	global.soulflash++;
-	instance_destroy();
-}
+scr_Collect_Income()
 
 for(var i = 1; i <= 999; i++) {
     global.recollectionFloorWeap[i] = 0;

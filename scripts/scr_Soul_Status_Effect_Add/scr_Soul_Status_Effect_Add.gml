@@ -7,3 +7,9 @@ function scr_Soul_Status_Effect_Add(_status_effects, _effect_name, _effect_to_ad
 	var _status_effect = variable_struct_get(_status_effects, _effect_name);
 	array_push(_status_effect, _effect_to_add)
 }
+
+function scr_Soul_Status_Effect_Remove(_status_effects, _effect_name) {
+	if variable_struct_exists(_status_effects, _effect_name) {
+		variable_struct_remove(_status_effects, _effect_name);
+	}
+}

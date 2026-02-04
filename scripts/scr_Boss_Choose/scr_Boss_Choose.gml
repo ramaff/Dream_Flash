@@ -1,27 +1,14 @@
 function scr_Boss_Choose(roomNum, exclude, difficultyAdd = 0) {
 	var simRoom = (roomNum + difficultyAdd)
 	
-	var stage_base_diff = 1.5 + (3.5 * (global.currentchapter - 1))
-	if global.currentchapter = 3 {
-		stage_base_diff += 1;
-	}
-	if global.currentchapter >= 4 {
-		stage_base_diff += 2;
-	}
+	var stage_base_diff = 0.25 + (global.currentchapter * global.currentchapter)
 	
-	roomDifficulty = stage_base_diff + ((3.5 * simRoom) / 10) + (global.souldespair / 8);
+	roomDifficulty = stage_base_diff + ((3.5 * simRoom) / 10);
 
 	roomDifficulty += global.bossdifficultyadd;
 	
-	if global.currentchapter = 2 {
-		roomDifficulty += ((0.5 * simRoom) / 10);
-	}
-	if global.currentchapter = 3 {
-		roomDifficulty += ((1 * simRoom) / 10);
-	}
-	if global.currentchapter >= 4 {
-		roomDifficulty += ((1.5 * simRoom) / 10);
-	}
+	roomDifficulty += (((0.5 * global.currentchapter * simRoom) - 0.5) / 10);
+
 
 	if roomDifficulty > 30 {
 	    roomDifficulty = 30;
@@ -491,7 +478,7 @@ function scr_Boss_Choose(roomNum, exclude, difficultyAdd = 0) {
 	if bossform = 59.1
 	{
 	    bosstype = obj_will_wisp_heart;
-	    difficulty = 1;
+	    difficulty = 1.5;
 	}
 	if bossform = 60.1
 	{
@@ -726,7 +713,7 @@ function scr_Boss_Choose(roomNum, exclude, difficultyAdd = 0) {
 	if repeatBoss = 1 {
 		return scr_Boss_Choose(roomNum, exclude);	
 	} else {
-		if (difficulty <= (roomDifficulty)) and (difficulty >= ((roomDifficulty) / 2)) {
+		if (difficulty <= (roomDifficulty)) and (difficulty >= ((roomDifficulty) / 1.5)) {
 		    return bosstype;
 		}
 		else {

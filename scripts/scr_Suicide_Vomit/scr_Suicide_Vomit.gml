@@ -7,7 +7,6 @@ function scr_Suicide_Vomit() {
 	        bulletspeed = bulletspeed * (other.bullet_speedfac_min + random(other.bullet_speedfac_add));
 	        bulletlife = bulletlife * (other.bullet_timefac_min + random(other.bullet_timefac_add));
 	        alarm[0] = bulletlife;
-	        //direction = (other.dir) * ((40 + random(global.soulparanoia)) / 40);
 			direction = other.dir
 			scr_Spiritual_Stats_Boss_Bullet_Effects();
 	    }

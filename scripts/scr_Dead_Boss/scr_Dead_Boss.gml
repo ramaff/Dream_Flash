@@ -1,11 +1,11 @@
 // Script assets have changed for v2.3.0 see
 // https://help.yoyogames.com/hc/en-us/articles/360005277377 for more information
-function scr_Dead_Boss(_diff = difficulty, _ko_time = 30){
+function scr_Dead_Boss(_diff = difficulty, _ko_time = 40){
 
 	//Print_DF(sprite_get_name(death_sprite))
 	//Print_DF(sprite_get_name(boss_palette))
 	if is_undefined(death_sprite) {
-		scr_Soul_Currency_Add();
+		scr_Calculate_Currency_Add();
 
 		scr_Sound_Effect(sd_Boss_Kill);
 
@@ -15,6 +15,7 @@ function scr_Dead_Boss(_diff = difficulty, _ko_time = 30){
 	} else {
 		with instance_create(x,y, obj_Dead_Boss) {
 			difficulty = _diff
+			recalls = scr_Calculate_Currency_Add(true)
 			boss_palette = other.boss_palette;
 			boss_palette_index = other.boss_palette_index;
 			image_xscale = other.bossSize;

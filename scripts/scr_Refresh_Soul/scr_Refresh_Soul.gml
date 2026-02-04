@@ -1,5 +1,10 @@
-function scr_Refresh_Soul(_h_amount) {
+function scr_Refresh_Soul(_h_amount, _overflow = false) {
 
+	if !_overflow {
+		var _remain = obj_Soul_Parent.smaxenergy - obj_Soul_Parent.senergy;
+		_remain = max(_remain, 0);
+		_h_amount = min(_remain, _h_amount);
+	}
 	obj_Soul_Parent.senergy += _h_amount /* / global.healthungen */;
 	//global.healthungen += (global.healthungen * _h_amount) / 20;
 	

@@ -21,8 +21,8 @@ function scr_Persistent_Stat_Check() {
 	if global.soulbliss > 40 {
 		global.soulbliss = 40;	
 	}
-	if global.soulvanity > 40 {
-		global.soulvanity = 40;	
+	if global.soulassurance > 40 {
+		global.soulassurance = 40;	
 	}
 
 	if global.soulstrength > 120 {

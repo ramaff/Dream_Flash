@@ -9,7 +9,7 @@ function scr_Beast_Maw_Use() {
 		Shot_Type: "obj_Lesser_Soul_Shot",
 		Shot_Speed: 0,
 		Shot_Movement: 0,
-		Shot_Power: 5,
+		Shot_Power: 5 * global.soulheartboost,
 		Shot_Knock_Back: 10,
 		Shot_Life_Span: 23,
 		Shot_Size: 0.4,
@@ -38,7 +38,7 @@ function scr_Beast_Maw_Use() {
 		current_weapon_stats.Shot_Screen_Shake = 4
 		current_weapon_stats.Shot_Life_Drain = 2;
 		current_weapon_stats.Shot_Size = 0.7;
-		current_weapon_stats.Shot_Power = 14;
+		current_weapon_stats.Shot_Power = 14 * global.soulheartboost;
 		speed = 15;
 	}
 		

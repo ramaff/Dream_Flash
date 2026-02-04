@@ -8,7 +8,7 @@ function scr_Stat_Item_Extra_Stats(_stacks = 1){
 	var recoGroup = string_letters(itemVal);
 	
 	if recoGroup == "I" || itemVal == "A00" || itemVal == "B00" || itemVal == "C00" || itemVal == "D00" || itemVal == "E00" || itemVal == "F00" {
-		recollectionExtraStats = "";
+		/*recollectionExtraStats = "";
 		var statUpString = "";
 		var statStart = global.soulstrength;
 		var valUp = 5;
@@ -149,7 +149,7 @@ function scr_Stat_Item_Extra_Stats(_stacks = 1){
 				}
 			}
 			if spirNum = 3 {
-				statStart = global.soulvanity;
+				statStart = global.soulassurance;
 				valUp = 4;
 				statUpString = "Assurance";
 				if statStart + valUp >= global.assFieldSpawn {
@@ -186,6 +186,7 @@ function scr_Stat_Item_Extra_Stats(_stacks = 1){
 		valUp = valUp * _stacks
 		recollectionExtraStats += string(statUpString) + ": " + string(statStart) + "->" + string(statStart + valUp) + fieldSpawnChar;
 		//recollectionExtraStats += string(statUpString) + ": " + string(statStart) + " + " + string(valUp) + " = " + string(statStart + valUp);
+		*/
 	}
 	//}
 

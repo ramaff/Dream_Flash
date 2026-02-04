@@ -13,7 +13,7 @@ for(_i = 0; _i < _total_things; _i++) {
 		variable_struct_remove(exited_things, real(_exited_thing))
 		continue
 	}
-	if distance_to_object(_exited_thing) > 10 {
+	if distance_to_object(_exited_thing) > 10 || _exited_thing.object_index == obj_Basic_Soul {
 		variable_struct_remove(exited_things, real(_exited_thing))
 	}
 }

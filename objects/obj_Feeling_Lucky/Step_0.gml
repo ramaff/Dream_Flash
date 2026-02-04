@@ -28,7 +28,7 @@ if distance_to_object(obj_Astral_Indicator) < 15 {
 	    recollectionString = "Feeling Lucky";
 	    priceString = string(price);
 	    recollectionUpgrade = 0;
-		recollectionExtraStats = "Take 2 Random Items Instead";
+		recollectionDescription = "Take 2 Random Items Instead";
 		shop = 1;
 	}
 }

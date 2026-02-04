@@ -2,7 +2,7 @@ function scr_Heart_Reactions() {
 	var cHeart = Soul_Hearts_Control.heart[global.currentheart, 2]
 	if cHeart = 8 {
 
-	    current_weapon_stats = scr_Setup_Default_Shot_Stats();
+	    var current_weapon_stats = scr_Setup_Default_Shot_Stats();
 		
 		current_weapon_stats = {
 			Shot_Spread: 36,
@@ -26,13 +26,13 @@ function scr_Heart_Reactions() {
 		
 		current_weapon_stats = scr_Setup_Weapon_Stats(current_weapon_stats);
 
-	    scr_Shot_Creation();
+	    scr_Shot_Creation(current_weapon_stats);
 
 	}
 
 	if cHeart = 9 {
 
-	    current_weapon_stats = scr_Setup_Default_Shot_Stats();
+	    var current_weapon_stats = scr_Setup_Default_Shot_Stats();
 		
 		current_weapon_stats = {
 			Shot_Spread: 0,
@@ -58,13 +58,13 @@ function scr_Heart_Reactions() {
 		
 		current_weapon_stats = scr_Setup_Weapon_Stats(current_weapon_stats);
     
-	    scr_Shot_Creation();
+	    scr_Shot_Creation(current_weapon_stats);
 
 	}
 
 	if cHeart = 10 {
 
-	    current_weapon_stats = scr_Setup_Default_Shot_Stats();
+	    var current_weapon_stats = scr_Setup_Default_Shot_Stats();
 		
 		current_weapon_stats = {
 		    Shot_Spread: 0,
@@ -92,13 +92,13 @@ function scr_Heart_Reactions() {
 		}
     
 		current_weapon_stats = scr_Setup_Weapon_Stats(current_weapon_stats);
-	    scr_Shot_Creation();
+	    scr_Shot_Creation(current_weapon_stats);
 
 	}
 
 	if cHeart = 11 {
 
-	    current_weapon_stats = scr_Setup_Default_Shot_Stats();
+	    var current_weapon_stats = scr_Setup_Default_Shot_Stats();
     
 		current_weapon_stats = {
 		    Shot_Spread: 0,
@@ -123,13 +123,13 @@ function scr_Heart_Reactions() {
 		}
     
 		current_weapon_stats = scr_Setup_Weapon_Stats(current_weapon_stats);
-	    scr_Shot_Creation();
+	    scr_Shot_Creation(current_weapon_stats);
 
 	}
 
 	if cHeart = 12 {
 
-	    current_weapon_stats = scr_Setup_Default_Shot_Stats();
+	    var current_weapon_stats = scr_Setup_Default_Shot_Stats();
     
 		current_weapon_stats = {
 		    Shot_Spread: 0,
@@ -150,7 +150,13 @@ function scr_Heart_Reactions() {
 		}
     
 		current_weapon_stats = scr_Setup_Weapon_Stats(current_weapon_stats);
-	    scr_Shot_Creation();
+	    scr_Shot_Creation(current_weapon_stats);
+
+	}
+	
+	if cHeart = 103 {
+
+	    scr_Spawn_Airbag()
 
 	}
 

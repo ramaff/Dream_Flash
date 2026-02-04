@@ -10,7 +10,7 @@ function scr_Heart_Loss_Event(current_heart, current_heart_type) {
 		scr_B03_Add();
 	}
 
-	scr_P02_Swap();
+	//scr_P02_Swap();
 	
 	scr_F06(25);
 

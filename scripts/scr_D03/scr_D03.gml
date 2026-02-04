@@ -25,7 +25,7 @@ function scr_D03(_current_weapon_stats){
 	
 			var _extra_index = array_length(_current_weapon_stats.Shot_Extra) - 1;
 			
-			_current_weapon_stats.Shot_Extra[_extra_index].Shot_Power = _current_weapon_stats.Shot_Power * 0.2;
+			_current_weapon_stats.Shot_Extra[_extra_index].Shot_Power = _current_weapon_stats.Shot_Power * 0.4;
 			_current_weapon_stats.Shot_Extra[_extra_index].Shot_Size = _current_weapon_stats.Shot_Size * 0.6;
 			_current_weapon_stats.Shot_Extra[_extra_index].Shot_Speed = _current_weapon_stats.Shot_Speed * (0.6 + random(0.6));
 		

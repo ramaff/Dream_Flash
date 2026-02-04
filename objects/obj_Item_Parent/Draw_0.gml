@@ -27,7 +27,7 @@ if is_string(itemVal) {
 		}	
 	}
 } else {
-	spriteSize = 0.5;
+	//spriteSize = 0.5;
 	if shop = 1 {
 		draw_sprite_ext(spr_Shop_Item_Lock,0,x,y,spriteSize,spriteSize,0,c_white,1);
 	}	
@@ -39,7 +39,7 @@ if is_string(itemVal) {
 if weapon = 1 {
 	var weapSpr = spr_Soul_Shot_Art;
 	
-	spriteSize = 0.5;
+	//spriteSize = 0.5;
 	
 	if variable_struct_exists(global.weapon_stats, string(itemVal)) {
 		current_weapon_stats = variable_struct_get(global.weapon_stats, string(itemVal))

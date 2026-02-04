@@ -43,7 +43,6 @@ if mouse_check_button(mb_left) {
 
 //shader_reset();
 
-scr_E13_Draw();
 scr_P04_Draw();
 //scr_U07_Draw();
 

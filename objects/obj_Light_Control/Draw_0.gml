@@ -9,7 +9,7 @@ if surface_exists(surf) {
 		global.roomdarkness = 0.05;
 	}
     
-    var _darkness = global.roomdarkness + ((global.souldespair + global.souldespairTemp) / 100);
+    var _darkness = global.roomdarkness;
     
 	/*if _darkness > 1 {
 		_darkness = 1;	

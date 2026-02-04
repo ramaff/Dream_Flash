@@ -35,8 +35,8 @@
   "resourceVersion":"2.0",
   "solid":false,
   "spriteId":{
-    "name":"spr_Recollection_Cloud_v2_p3",
-    "path":"sprites/spr_Recollection_Cloud_v2_p3/spr_Recollection_Cloud_v2_p3.yy",
+    "name":"spr_Recollection_Cloud_v2_p3_2",
+    "path":"sprites/spr_Recollection_Cloud_v2_p3_2/spr_Recollection_Cloud_v2_p3_2.yy",
   },
   "spriteMaskId":null,
   "visible":true,

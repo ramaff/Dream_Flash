@@ -1,7 +1,8 @@
 //var hit_again = ds_list_find_index(projectile_hits, other.shot_id);
 //if hit_again = -1 
 var hit_again = variable_struct_exists(projectile_hits, other.shot_id)
-if !hit_again { 
+
+if !hit_again and other.shot_stats.Shot_Origin != id { 
     
     if soulinvincibility = 0 {
 

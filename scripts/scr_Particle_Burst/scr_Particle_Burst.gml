@@ -24,7 +24,11 @@ function scr_Particle_Burst(particletype = obj_Weapon_Trail, particlesprite = sp
 				
 				target = _part_target
 				
-				speed = (burstspeed / 4) + random(3 * burstspeed / 4);
+				if burstUniformSpread {
+					speed = burstspeed
+				} else {
+					speed = (burstspeed / 4) + random(3 * burstspeed / 4);
+				}
 				
 				//Print_DF("part sprite: " + string(sprite_get_name(particlesprite)))
 				
@@ -39,6 +43,56 @@ function scr_Particle_Burst(particletype = obj_Weapon_Trail, particlesprite = sp
 				depth = other.depth + 5;
 		
 				image_blend = scr_Mix_Two_Color_Arrays(particlecolor1, particlecolor2)
+
+				size = partSize;
+				image_xscale = size;
+				image_yscale = size;
+		
+				life = partLife;
+				alarm[0] = life;
+			}	
+		}
+	}
+}
+
+function scr_Lightning_Burst(particletype = obj_Animated_Lightning_Streak, particlesprite = spr_Animated_Lightning_Streak, particlecolor1 = c_white,
+							particlecolor2 = c_white, burstcount = 0, burstspeed = 10, burstdir = 0, burstspread = 360, particleArea = 0, 
+							partSize = 0.5, partLife = 10, burstUniformSpread = false, _xx = x, _yy = y, _part_angle = image_angle,
+							_part_target = noone) {
+	if global.gameParticles > 0 {
+		repeat(burstcount) {
+		
+			_xx = _xx + random(particleArea) - (particleArea / 2);
+
+			_yy = _yy + random(particleArea) - (particleArea / 2);
+	
+			with instance_create_depth(_xx,_yy, depth, particletype) {
+				
+				if burstUniformSpread {
+					direction = burstdir;
+					burstdir += burstspread;
+				} else {
+					direction = burstdir - (burstspread / 2) + random(burstspread);
+				}
+				
+				base_direction = direction
+				
+				target = _part_target
+				
+				if burstUniformSpread {
+					speed = burstspeed
+				} else {
+					speed = (burstspeed / 4) + random(3 * burstspeed / 4);
+				}
+				
+				sprite_index = particlesprite;
+				image_index = irandom(2);
+		
+				image_angle = direction;
+				
+				depth = other.depth + 5;
+		
+				image_blend = choose(particlecolor1, particlecolor2)
 
 				size = partSize;
 				image_xscale = size;

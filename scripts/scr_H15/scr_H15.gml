@@ -3,9 +3,8 @@ function scr_H15_v2(damageamount) {
 
 	if global.totalhearts > 0 {
 		if Soul_Hearts_Control.heart[global.currentheart, 2] = 15 {
-		    var chance = irandom(2);
 			scr_Rubber_Soul_Rebound_Shot(other.bullet_stats.bullet_speed, other.bullet_stats.bullet_power);
-		    if chance >= 1 {
+		    if scr_Chance(1 + (1 / global.soulheartboost)) {
 		        return 2;
 		    }
 		}
@@ -18,9 +17,8 @@ function scr_H15(damageamount) {
 
 	if global.totalhearts > 0 {
 		if Soul_Hearts_Control.heart[global.currentheart, 2] = 15 {
-		    var chance = irandom(2);
 			scr_Rubber_Soul_Rebound_Shot(other.bulletspeed, other.bulletpower);
-		    if chance >= 1 {
+		    if scr_Chance(1 + (1 / global.soulheartboost)) {
 		        return 2;
 		    }
 		}

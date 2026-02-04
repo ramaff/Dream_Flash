@@ -83,6 +83,11 @@ if instance_exists(obj_Soul_Parent) {
 		yAv = yTote / totalaveragers;
 	}
 	
+	if instance_exists(obj_In_Game_Recollection_Cloud) {
+		xAv = mean(xAv * 5, obj_In_Game_Recollection_Cloud.x) / 3;	
+		yAv = mean(yAv * 5, obj_In_Game_Recollection_Cloud.y) / 3;	
+	}
+	
 	var camX = clamp((xAv - (view_width_zoom / 2)), 0, room_width - view_width_zoom);
 	var camY = clamp((yAv - (view_height_zoom / 2)), 0, room_height - view_height_zoom);
 	

@@ -4,4 +4,5 @@ function scr_Boss_Height_Setup(_boss_height = 0){
 	boss_height = _boss_height;
 	y -= boss_height;
 	boss_static_height = boss_height
+	state = states.normal
 }

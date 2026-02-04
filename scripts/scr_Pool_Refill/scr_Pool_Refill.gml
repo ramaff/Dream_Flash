@@ -179,6 +179,7 @@ function scr_Pool_Refill(pool){
 			ds_list_delete(global.k_item_pool, ds_list_find_index(global.k_item_pool, "K08"))
 		}
 	}
+	ds_list_delete(global.m_item_pool, ds_list_find_index(global.m_item_pool, "M20"))
 	
 
 }

@@ -1,45 +1,43 @@
-var dmg = 50;
 
-with (obj_Main_Boss_Parent) {
-    
-	bosshealth -= dmg;
-            
-	scr_setup_dmg_indicator(x,y, dmg, c_white);
-	
-	scr_Default_Attack_Settings();
-    bullet_type = obj_Basic_Bullet;
-    bullet_sprite = spr_Glowy_Enemy_Shot;
-    bullet_speed = 2 + random(3);
-    bullet_power = global.stagedamage;
-    bullet_direction = (-45 + random(90)) / bossaccuracy;
-    bullet_lifespan = 300;
-    bullet_size = 1;
-    bullet_count = 4;
-    bullet_spread = 90;
-    boss_radius = 0;
-    bullet_image_speed = 0.5
-	
-	repeat(3) {
-		bullet_direction += 12.5;
-		scr_Just_Shoot()
-	}
-	bullet_speed += 3;
-	repeat(3) {
-		bullet_direction += 12.5;
-		scr_Just_Shoot()
-	}
+with(other) {
+var dam = 50;
 
-	var color = make_color_rgb(255, 0, 0);
-	var color2 = make_color_rgb(180, 0, 0);
+var current_weapon_stats = scr_Setup_Default_Shot_Stats();
 		
-	scr_Particle_Burst(obj_Field_Trail, spr_Soul_Big_Bit, color, color2, 10, 12, 0, 360, 20, 0.5, 15, false)
+current_weapon_stats = {
+	Shot_Spread: 60,
+	Shot_Accuracy: 360,
+	Shot_Count: 1,
+	Shot_Sprite: "spr_Rub_It_In_Punch",
+	Shot_Type: "obj_Rub_It_In_Shot",
+	Shot_Speed: 2,
+	Shot_Acceleration: 0.5,
+	Shot_Max_Speed: 15,
+	Shot_Point_Angle: 1,
+	Shot_Power: dam * 2,
+	Shot_Pierce: 1,
+	Shot_Knock_Back: 50,
+	Shot_Impact_Type: 1,
+	Shot_Impact_Explode: 0,
+    Shot_Impact_Size: 150,
+    Shot_Impact_Power: dam,
+	Shot_Life_Span: 300,
+	Shot_Homing_Type: 1,
+	Shot_Homing_Speed: 5,
+	Shot_Homing_Range: 3000,
+	Shot_Size: 0.5,
+	Shot_Init_Grow: 0,
+	Shot_Trail: 1,
+    Shot_Trail_Frequency: 2,
+    Shot_Trail_Sprite: "spr_Diamond_Part",
+    Shot_Trail_Area: 10,
+    Shot_Trail_Life: 15,
+    Shot_Trail_Color_1: [255, 0, 9],
+    Shot_Trail_Color_2: [255, 0, 9]
+};
 		
-	scr_Disk_Effect(20, 0.5, color);
-	scr_Disk_Effect(20, 0.9, color2);
-	
-	var dir = random(360);
-	x += lengthdir_x(bullet_speed * 10, dir);
-	y += lengthdir_y(bullet_speed * 10, dir);
+current_weapon_stats = scr_Setup_Weapon_Stats(current_weapon_stats);
+scr_Shot_Creation(current_weapon_stats);
 
 }
 

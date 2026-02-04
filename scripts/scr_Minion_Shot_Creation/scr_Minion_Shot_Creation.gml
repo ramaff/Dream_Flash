@@ -23,7 +23,6 @@ function scr_Minion_Shot_Creation() {
 	        shot_stats.Shot_Speed = shot_stats.Shot_Speed * other.sshotspeed / 10 * (shot_stats.Weapon_Vomit_Min_Speed + random(shot_stats.Weapon_Vomit_Max_Speed - shot_stats.Weapon_Vomit_Min_Speed));
 	        shot_stats.Shot_Power_Max = shot_stats.Shot_Power * other.spower / 10;
 	        shot_stats.Shot_Power = shot_stats.Shot_Power_Max;
-	        shot_stats.Shot_Power_Level = shot_stats.Shot_Power;
 	        shot_stats.Shot_Knock_Back = shot_stats.Shot_Knock_Back * other.sshotknockback / 10;
 	        if shot_stats.Shot_Mouse = 1 {
 				if instance_exists(instance_nearest(x,y,obj_Boss_Parent)) {
@@ -34,8 +33,9 @@ function scr_Minion_Shot_Creation() {
 	        }
 	        direction += other.dir;
 	        alarm[0] = shot_stats.Shot_Life_Span;
-	        scr_Extra_Shot_Stats();
+			
 			speed = shot_stats.Shot_Speed;
+	        scr_Extra_Shot_Stats();
 			
 			//shot_stats.Shot_Timer = shot_stats.Shot_Life_Span;
 			

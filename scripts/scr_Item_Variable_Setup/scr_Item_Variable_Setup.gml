@@ -49,8 +49,6 @@ function scr_Item_Variable_Setup() {
 	global.U03_direction = 0;
 
 	global.P02status = 0;
-
-	global.B11Count = 2 + global.B[11];
 	
 	global.A07memory = 0;
 	
@@ -66,9 +64,6 @@ function scr_Item_Variable_Setup() {
 	global.clarityBomb = 0;
 	
 	global.OC4Debuff = false;
-	
-	global.temperCharge = 0;
-	global.temperActive = false;
 	
 	global.XB4Dir = 0;
 	

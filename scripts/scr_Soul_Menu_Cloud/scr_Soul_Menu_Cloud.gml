@@ -53,7 +53,7 @@ function scr_Soul_Menu_Cloud() {
 	
 	recollectionMirror = 3;	
 	
-	recollectionExtraStats += "\n (click for more info)"
+	//recollectionExtraStats += "\n (click for more info)"
 	
 	//show_debug_message(string(recollectionMirror))
 
@@ -69,6 +69,7 @@ function scr_Soul_Menu_Cloud() {
 	    priceString = other.priceString;
 	    recollectionUpgrade = other.recollectionUpgrade;
 		recollectionExtraStats = other.recollectionExtraStats;
+		recollectionDescription = other.recollectionDescription;
 		shop = other.shop;
 	}
 

@@ -40,7 +40,7 @@ badSpiritSend = 0;
 
 startHope = global.soulhope;
 startBliss = global.soulbliss;
-startVanity = global.soulvanity;
+startVanity = global.soulassurance;
 startLoathing = global.soulloathing;
 startParanoia = global.soulparanoia;
 startDespair = global.souldespair;

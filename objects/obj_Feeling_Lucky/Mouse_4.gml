@@ -6,7 +6,7 @@ weapon = 0;
 
 var price = ceil((5 + (global.currentchapter * 5)) / ((3 + global.OA[3]) / 4));
 
-if global.soulflash >= price {
+if global.soul_recall >= price {
 	
 	with (obj_Item_Parent) {
 		instance_destroy();
@@ -28,7 +28,7 @@ if global.soulflash >= price {
 		
 	}
 	
-	global.soulflash -= price;
+	global.soul_recall -= price;
 	
 	instance_destroy();
 	

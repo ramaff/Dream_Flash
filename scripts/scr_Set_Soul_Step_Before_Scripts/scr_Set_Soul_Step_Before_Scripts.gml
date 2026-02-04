@@ -1,6 +1,12 @@
 function scr_Set_Soul_Step_Before_Scripts(_soul = obj_Soul_Parent.id) {
 	
 	var _soul_step_before_scripts = []
+	if global.A[5] > 0 {
+		array_push(_soul_step_before_scripts, scr_A05_Status_Build_Up);
+	}
+	if global.B[3] > 0 {
+		array_push(_soul_step_before_scripts, scr_B03_Status_Build_Up);
+	}
 	if global.B[10] > 0 {
 		array_push(_soul_step_before_scripts, scr_B10)
 	}
@@ -9,6 +15,9 @@ function scr_Set_Soul_Step_Before_Scripts(_soul = obj_Soul_Parent.id) {
 	}
 	if global.C[6] > 0 {
 		array_push(_soul_step_before_scripts, scr_C06);
+	}
+	if global.D[5] > 0 {
+		array_push(_soul_step_before_scripts, scr_D05_Status_Build_Up);
 	}
 	if global.D[12] > 0 {
 		array_push(_soul_step_before_scripts, scr_D12_Gust);
@@ -25,17 +34,23 @@ function scr_Set_Soul_Step_Before_Scripts(_soul = obj_Soul_Parent.id) {
 	if global.P[4] > 0 {
 		array_push(_soul_step_before_scripts, scr_P04);
 	}
+	if global.S[1] > 0 {
+		array_push(_soul_step_before_scripts, scr_S01_Status_Build_Up);
+	}
 	if global.U[7] > 0 {
 		array_push(_soul_step_before_scripts, scr_U07);
 	}
 	if global.Weap[14] > 0 {
 		array_push(_soul_step_before_scripts, scr_Essence_Beam_Step)
 	}
-	if global.XC[2] > 0 {
+	/*if global.XC[2] > 0 {
 		array_push(_soul_step_before_scripts, scr_XC02);
-	}
+	} */
 	if global.OC[5] > 0 {
 		array_push(_soul_step_before_scripts, scr_OC05);
+	}
+	if global.XA[3] > 0 {
+		array_push(_soul_step_before_scripts, scr_XA03_Status_Build_Up);
 	}
 	if global.XC[6] > 0 {
 		array_push(_soul_step_before_scripts, scr_XC06_Step);

@@ -2,23 +2,31 @@ function scr_E10(_cw) {
 	// Location Shot Creation
 
 	if global.E[10] > 0 {
-	    stop = (_cw.Shot_Power / 1.5) * global.E[10] + irandom(149);
+	    var stop = (_cw.Shot_Power * global.E[10]) + irandom(149);
+		var _radius = sqrt(30000 * global.E[10])
 	    if stop >= 150 {
-	    repeat(7) {
-	        with instance_create(x,y,obj_Bullet_Conquest) {
-	            speed = 7 + random(23);
-	            direction = random(360);
-	            alarm[0] = 5 + irandom(4);
-	        }
-	    }
-	    }
-	    with(obj_Bullet_Parent) {
-	        if other.stop >= 150
-	        if distance_to_object(other) <= (100 + global.E[10] * 25) {
-	            bulletspeed = bulletspeed / 10;
-	            speed = speed / 10;
-	            }
-	        }
+			scr_Lightning_Burst(obj_Animated_Lightning_Streak, spr_Animated_Lightning_Streak, c_fuchsia, c_fuchsia, 10, 35, 0, 360, 20, 0.75, 30, false)
+		    with(obj_Bullet_Parent) {
+				if distance_to_object(other) <= _radius {
+			        bulletspeed = bulletspeed / 10;
+			        speed = speed / 10;
+		        }
+		    }
+			with(obj_bullet_parent_v2) {
+				if distance_to_object(other) <= _radius {
+			        bullet_stats.bullet_speed = bullet_stats.bullet_speed / 10;
+			        speed = speed / 10;
+		        }
+		    }
+			with(obj_Boss_Parent) {
+				if distance_to_object(other) <= _radius {
+					bosshealth -= 33;
+				
+					scr_setup_dmg_indicator(x,y, 33, c_white);
+					
+				}
+			}
+		}
 	}
 
 

@@ -116,6 +116,9 @@ if active_attack_delay <= 0 and pattern_cooldown <= 0 and pattern_count > 0 {
 		scr_Jump_Movement_v2(5);	
 		
 		if pattern_count = 1 {
+			scr_Boss_Stretch("Horizontal", 0.5)
+			scr_Screen_Shake(5, 5)
+			
 			image_index = 4;
 			attack_stats.bullet_count = 6;
 			attack_stats.bullet_spread = 60;
@@ -136,7 +139,8 @@ if active_attack_delay <= 0 and pattern_cooldown <= 0 and pattern_count > 0 {
         direction = point_direction(x,y, room_width / 2, paired_hand.y)
 		
 		if pattern_count = 1 {
-			scr_Screen_Shake(5, 5)
+			scr_Boss_Stretch("Vertical", 0.5)
+			scr_Screen_Shake(7, 5)
 			
 			image_index = 4;
 			attack_stats.bullet_type = "obj_speed_up_down_bullet_v2"

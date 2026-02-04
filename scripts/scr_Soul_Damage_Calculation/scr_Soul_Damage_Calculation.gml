@@ -2,7 +2,7 @@ function scr_Soul_Damage_Calculation(_damage_amount, _defense_amount) {
 	//Location Soul Hit Events
 
 	//if (_damage_amount > _defense_amount) {
-	    soulinvincibility = 36;
+	    soulinvincibility = scr_Soul_IFrame_Calc();
 		
 		//scr_E01();
     
@@ -40,7 +40,6 @@ function scr_Soul_Damage_Calculation(_damage_amount, _defense_amount) {
 		scr_setup_dmg_indicator(obj_Soul_Parent.x,obj_Soul_Parent.y, truedam, c_red)
     
 	    scr_B04();
-		scr_XA03_Charge(truedam);
 		
 		scr_Screen_Shake(ceil(_damage_amount * 1.5), 7);
     

@@ -21,7 +21,7 @@ if distance_to_object(obj_Astral_Indicator) < 15 {
 	    recollectionString = "Cramming";
 	    priceString = "";
 	    recollectionUpgrade = 0;
-		recollectionExtraStats = "Take all of these items";
+		recollectionDescription = "Take all of these items";
 		shop = 0;
 	}
 }

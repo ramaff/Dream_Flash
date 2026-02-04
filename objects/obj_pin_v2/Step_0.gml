@@ -28,7 +28,7 @@ if active_attack_delay <= 0 and active_attack_cooldown <= 0 and active_attack_du
 		// Setup how many attacks per boss move, delay, etc
 		scr_Boss_Attack_Time_Setup_v2(20, 30, 1, 30, 10, 10);
 		
-		scr_Boss_Jump_Setup_v2(0, 4 * bossmovespeed, x, y);
+		scr_Boss_Jump_Setup_v2(0, 3 * bossmovespeed, x, y);
     }
 	
 }

@@ -7,7 +7,7 @@ function scr_Room_Change_Variables() {
 	global.soulstateTemp = 0;
 	global.soulhopeTemp = 0;
 	global.soulblissTemp = 0;
-	global.soulvanityTemp = 0;
+	global.soulassuranceTemp = 0;
 	global.soulloathingTemp = 0;
 	global.soulparanoiaTemp = 0;
 	global.souldespairTemp = 0;
@@ -17,16 +17,13 @@ function scr_Room_Change_Variables() {
 	global.soulNoShoot = 0;
 	global.healthungen = 1;
 	
-	global.temperActive = false;
-
-	global.B11Count = 2 + global.B[11];
-	
 	global.C01Boost = 0;
+	global.C08Activated = false;
 
 	global.roomdarkness = 0;
 
 	//scr_V03();
-	scr_P02();
+	//scr_P02();
 	scr_L01_Recharge();
 	scr_W05_Reload();
 	

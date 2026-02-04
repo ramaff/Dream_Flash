@@ -28,3 +28,7 @@ image_yscale = size;
 scr_Figment_Stat_Refresh();
 
 pay = 0;
+dim = false;
+if instance_number(obj_Main_Boss_Parent) <= 0 {
+	dim = true;	
+}

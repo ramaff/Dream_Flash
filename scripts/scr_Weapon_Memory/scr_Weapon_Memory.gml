@@ -27,10 +27,12 @@ function scr_Weapon_Memory(displayItemSprite = true) {
 	
 	recollectionCount = global.recollectionWeap[itemVal]
 	
-	recollectionExtraStats = "You cannot remember"
+	recollectionExtraStats = ""
+	recollectionDescription = ""
+	recollectionPower = 0
 	
 	if global.recollectionWeap[itemVal] >= 1 || displayItemSprite {
-		recollectionExtraStats = "No Special Properties"
+		recollectionExtraStats = ""
 		
 		if variable_struct_exists(current_weapon_stats, "Shot_Power") {
 			recollectionPower = current_weapon_stats.Shot_Power
@@ -59,19 +61,56 @@ function scr_Weapon_Memory(displayItemSprite = true) {
 		if variable_struct_exists(current_weapon_stats, "Complexity") {
 			recollectionComplexity = current_weapon_stats.Complexity
 		}
-		/*if variable_struct_exists(current_weapon_stats, "State_Extra_Stats") {
-			if recollectionExtraStats != "No Special Properties" {
-				recollectionExtraStats += " " + current_weapon_stats.State_Extra_Stats
-			} else {
-				recollectionExtraStats = current_weapon_stats.State_Extra_Stats
-			}
-		}*/
-		state_description = scr_Add_State_Credit_To_Extra_Stat_Description(current_weapon_stats);
-		if recollectionExtraStats != "No Special Properties" {
-			recollectionExtraStats += " " + state_description
+	
+		
+		var _potency_drain_description = " +"
+		
+		if recollectionRecharge < 8 {
+			_potency_drain_description += "Very Fast "
+		} else if recollectionRecharge < 15 {
+			_potency_drain_description += "Fast "
+		} else if recollectionRecharge < 30 {
+			_potency_drain_description += ""
+		} else if recollectionRecharge < 60 {
+			_potency_drain_description += "Slow "
 		} else {
-			recollectionExtraStats = state_description
+			_potency_drain_description += "Very Slow "
 		}
+		
+		if recollectionPower < 8 {
+			_potency_drain_description += "Very Low Potency"
+		} else if recollectionPower < 15 {
+			_potency_drain_description += "Low Potency"
+		} else if recollectionPower < 30 {
+			_potency_drain_description += "Medium Potency"
+		} else if recollectionPower < 60 {
+			_potency_drain_description += "High Potency"
+		} else {
+			_potency_drain_description += "Very High Potency"
+		}
+		
+		var _reco_drain = recollectionEssence * (60 / recollectionRecharge)
+		
+		if _reco_drain < 15 {
+			_potency_drain_description += ", Very Low Drain"
+		} else if _reco_drain < 25 {
+			_potency_drain_description += ", Low Drain"
+		} else if _reco_drain < 45 {
+			_potency_drain_description += ", Medium Drain"
+		} else if _reco_drain < 75 {
+			_potency_drain_description += ", High Drain"
+		} else {
+			_potency_drain_description += ", Very Hig Drain"
+		}
+		
+		recollectionDescription += _potency_drain_description
+		
+		state_description = scr_Add_State_Credit_To_Extra_Stat_Description(current_weapon_stats);
+
+		recollectionDescription += state_description
+		
+		recollectionDescription = string_replace_all(recollectionDescription, " +", "\n+")
+		recollectionDescription = string_replace_all(recollectionDescription, " -", "\n-")
 	}
 	
 

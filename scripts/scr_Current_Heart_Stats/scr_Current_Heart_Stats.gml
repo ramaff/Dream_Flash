@@ -56,21 +56,16 @@ function scr_Current_Heart_Stats() {
 	}
 	/////////////////////////////////////////////Survivor Heart
 	if global.currenthearttype = 3 {
-	global.currentheartsurvival = 2;
+	global.currentheartsurvival = round(2 * global.soulheartboost);
 	}
 	/////////////////////////////////////////////Survivor Heart Pt II
-	if global.currenthearttype = 3.01 {
-	global.currentheartsurvival = 1;
-	global.currenthearthp = 1;
-	}
-	/////////////////////////////////////////////Survivor Heart Pt III
-	if global.currenthearttype = 3.02 {
-	global.currentheartsurvival = 0;
-	global.currenthearthp = 1;
+	if global.currenthearttype > 3 and global.currenthearttype < 4 {
+		global.currentheartsurvival = round(2 * global.soulheartboost) - (frac(global.currenthearttype - 3) * 100);
+		global.currenthearthp = 1;
 	}
 	/////////////////////////////////////////////Jumbo Heart
 	if currHeart = 4 {
-	global.currenthearthp = 40;
+		global.currenthearthp = 20 + (20 * global.soulheartboost);
 	}
 	/////////////////////////////////////////////Tough Heart
 	if currHeart = 5 {
@@ -136,7 +131,7 @@ function scr_Current_Heart_Stats() {
 	}
 	/////////////////////////////////////////////Body Bag Heart
 	if currHeart = 103 {
-		global.currenthearthp = 20 + 20 * global.B[3];
+		global.currenthearthp = 40;
 	}
 
 }

@@ -24,3 +24,5 @@ scr_Initial_Item_Memory_Get(stacks)
 //event_user(0)
 spriteSize = 0.5;
 tempNum = 0;
+
+cloud = noone;

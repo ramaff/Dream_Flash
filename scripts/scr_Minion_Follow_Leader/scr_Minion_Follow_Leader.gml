@@ -10,7 +10,7 @@ function scr_Minion_Follow_Leader(setdist = 50, setspeed = 5, adjust = true){
 		var dis = point_distance(x, y, followtarget.x, followtarget.y)
 		direction = point_direction(x, y, followtarget.x, followtarget.y);
 		if dis > setdist {
-			speed = (dis - setdist) / 10;
+			speed = (dis - setdist) / (50 / setspeed);
 		} else {
 			speed = lerp(speed, 0, 0.3);
 		}

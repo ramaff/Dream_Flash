@@ -17,7 +17,6 @@ function scr_Casting_Soul_Manual_Synergy(_cw){
 			//_cw.Shot_Duplicate_Sprite = _cw.Shot_Sprite;
 			_cw.Shot_Sprite = "spr_Casting_Sword_Orbital";
 			_cw.Shot_Point_Angle = 0;
-			_cw.Shot_Extra_Stats[0].Shot_Power_Level = _cw.Shot_Power;
 			//_cw.Shot_Extra_Stats[0].Shot_Mouse = true;
 			//_cw.Shot_Extra_Stats[0].Shot_Point_Angle = true;
 			
@@ -35,7 +34,6 @@ function scr_Casting_Soul_Manual_Synergy(_cw){
 			
 			_cw.Shot_Extra_Stats[0].Shot_Mouse = false
 			_cw.Shot_Extra_Stats[0].Shot_Beam = 1
-			_cw.Shot_Extra_Stats[0].Shot_Power_Level = _cw.Shot_Power;
 			_cw.Shot_Extra_Stats[0].Shot_Life_Span = 15;
 			
 			_cw.Shot_Type = "obj_Beam_Caster_Shot";

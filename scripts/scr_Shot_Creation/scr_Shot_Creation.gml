@@ -45,6 +45,12 @@ function scr_Shot_Creation(_cw = current_weapon_stats, _prime_shot = false) {
 	        _cw.Shot_Spread = 10;
 	    }
 	}
+	
+	var _acc_mult = scr_Get_Status_Magnitude_Mult(id, "accuracy_mult")
+	if _acc_mult = 0 {
+		_acc_mult = 1;	
+	}
+	_cw.Shot_Accuracy = _cw.Shot_Accuracy / _acc_mult
 
 	var dir = -(_cw.Shot_Spread * (_cw.Shot_Count - 1) / 2) + (-(_cw.Shot_Accuracy / 2) + random(_cw.Shot_Accuracy)) + _cw.Shot_Direction_Offset;
 
@@ -108,7 +114,7 @@ function scr_Shot_Creation(_cw = current_weapon_stats, _prime_shot = false) {
 		var _shot_direction_add = dir * ((40 + random(global.soulparanoia)) / 40) / saccuracy;
 		actual_shot_direction += _shot_direction_add + _cw.Shot_Angle_Relative;
 		
-		actual_shot_direction += scr_XA03_Weapon_Mod();
+		actual_shot_direction += scr_XA04_Weapon_Mod();
 		
 		
 	   // if Shot_Forward = 1 {
@@ -170,7 +176,7 @@ function scr_Shot_Creation(_cw = current_weapon_stats, _prime_shot = false) {
 		
 		repeat(mechFac) {
 			
-		    with instance_create(shxx, shyy, asset_get_index(_cw.Shot_Type)) {
+		    with instance_create_depth(shxx, shyy, _cw.Shot_Depth, asset_get_index(_cw.Shot_Type)) {
 		        scr_Default_Shot_Variables();
 				
 				shot_stats = variable_clone(_cw);
@@ -179,11 +185,10 @@ function scr_Shot_Creation(_cw = current_weapon_stats, _prime_shot = false) {
 				shot_stats.Shot_Origin = obj_Soul_Parent;
 		        target = noone;
 		        sprite_index = asset_get_index(shot_stats.Shot_Sprite);
-		        shot_stats.Shot_Size = shot_stats.Shot_Size * ((1 + other.sshotsizefactor) / 1);
+		        shot_stats.Shot_Size = shot_stats.Shot_Size * scr_Soul_Size_Factor_Calc(other);
 		        shot_stats.Shot_Speed = (shot_stats.Shot_Speed + other.sshotspeedaddition) * (shot_stats.Weapon_Vomit_Min_Speed + random(shot_stats.Weapon_Vomit_Max_Speed - shot_stats.Weapon_Vomit_Min_Speed)) * other.sshotspeed / 10;
 		        shot_stats.Shot_Power_Max = (shot_stats.Shot_Power + other.spoweradd) * scr_Soul_Power_Factor_Calc(other);
 		        shot_stats.Shot_Power = shot_stats.Shot_Power_Max;
-		        shot_stats.Shot_Power_Level = shot_stats.Shot_Power;
 		        shot_stats.Shot_Knock_Back = shot_stats.Shot_Knock_Back * other.sshotknockback / 10;
 		        shot_stats.Shot_Armour_Pierce = shot_stats.Shot_Armour_Pierce + other.sarmourpierce;
 				direction = actual_shot_direction;

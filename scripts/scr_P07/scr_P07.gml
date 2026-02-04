@@ -1,7 +1,7 @@
 function scr_P07() {
 	// Location: Extra Shots Stats Script
 
-	var prob = scr_Chance(4);
+	var prob = scr_Chance(6);
 
 	if global.P[7] >= 1 and prob = true {
 		shot_stats.Shot_Fire += 2 * global.P[7];
@@ -10,11 +10,11 @@ function scr_P07() {
 		
 		shot_stats.Shot_Pierce += 1;
 		
-		if shot_stats.Shot_Fire_Ticks < 3 {
-			shot_stats.Shot_Fire_Ticks = 3;
+		if shot_stats.Shot_Fire_Ticks < 6 {
+			shot_stats.Shot_Fire_Ticks = 6;
 		}
 		if shot_stats.Shot_Fire_Time = 0 {
-			shot_stats.Shot_Fire_Time = 90;
+			shot_stats.Shot_Fire_Time = 30;
 		}
 		
 		shotTrail = 1;

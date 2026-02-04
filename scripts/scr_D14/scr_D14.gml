@@ -13,7 +13,7 @@ function scr_D14() {
 	        if distance_to_object(other) <= (90) {
 	            bosshealth -= _dmg;
 				
-				if scr_Chance(10) {
+				if global.roomtime mod 10 = 0 {
 					scr_setup_dmg_indicator(x,y, _dmg * 10, c_white);
 				}
 	        }
@@ -24,9 +24,9 @@ function scr_D14() {
 		global.D14Trigger++;
 		var color = make_color_rgb(0, 255, 84);
 		
-		if global.D14Trigger mod 5 = 0 {
-			scr_Particle_Burst(obj_Friction_Part, spr_Soul_Big_Bit, color, color, 1, 8 + _move_speed, _move_direction - 180, 180, 20, 0.3 + random(0.15), 15 + random(15), false)
-		}
+		/*if global.D14Trigger mod 10 = 0 {
+			scr_Particle_Burst(obj_Wind_Particle, spr_Soul_Big_Bit, color, color, 1, 2 + _move_speed, _move_direction - 180, 180, 20, 0.3 + random(0.15), 30 + random(15), false)
+		} */
 		if global.D14Trigger >= 20 {
 			scr_Disk_Effect(15, 0.75, color);
 			global.D14Trigger = 0;
