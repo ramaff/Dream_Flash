@@ -324,7 +324,7 @@
         "recollectionString": "Thoughts Racing",
         "recollectionSprite": "spr_Thoughts_Racing_Item",
         "recollectionSummary": "Speed is Power",
-        "recollectionDescription": "+Shots do extra damage proportional to their speed +Massive shot acceleration -30% Shot Lifespan",
+        "recollectionDescription": "+Shots do extra damage proportional to their speed, 30% shorter shot lifespan +Massive shot acceleration",
         "Snake_Credit": 0.5
     },
     "D07": {
@@ -1516,7 +1516,7 @@
         "recollectionString": "Defensive",
         "recollectionSprite": "spr_Defensive_Art",
         "recollectionSummary": "Reactive Shots",
-        "recollectionDescription": "+Receiving damage or being near bullets causes the soul to shoot piercing shots in all directions, stronger based on paranoia stat. +1/4 Paranoia",
+        "recollectionDescription": "+Receiving damage or being near bullets causes the soul to shoot piercing shots in all directions. +1/4 Paranoia",
         "Spike_Credit": 1
     },
     "S02": {

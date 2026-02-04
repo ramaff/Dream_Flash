@@ -1,6 +1,7 @@
 scr_Minion_Reload();
 
 with (obj_Boss_Parent) {
+	var i;
     for(i = 0; i <= 49; i++) {
         if bossweaken[i] = 0 {
             bossweaken[i] = 4;
