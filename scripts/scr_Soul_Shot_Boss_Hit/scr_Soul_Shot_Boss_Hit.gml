@@ -163,7 +163,7 @@ function scr_Soul_Shot_Boss_Hit(_shot = other) {
 					var burstIndex = array_length(shot_stats.Shot_Burst_Stats) - 1;
 					if instance_exists(obj_Boss_Parent) and burstIndex >= 0 {
 						event_user(0)
-						instance_destroy();
+						//instance_destroy();
 					}	
 				} 
         

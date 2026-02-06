@@ -107,6 +107,9 @@ function scr_Adjacent_Room_Cloud() {
 	if _recollection_string != "?" {
 		if instance_exists(cloud) {
 			with(cloud) {
+				if _recollection_string != recollectionString {
+					instance_destroy()
+				}
 				alarm[0] = 20;
 			}
 		} else {

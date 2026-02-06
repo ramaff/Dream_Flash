@@ -90,7 +90,7 @@
         "recollectionString": "Radiant Ideas",
         "recollectionSprite": "spr_Aura_Strike_Item",
         "recollectionSummary": "Soul Shot Aura",
-        "recollectionDescription": "+Creates an aura around your shots, which does up to 100% shot damage over a second."
+        "recollectionDescription": "+Creates an aura around your shots, which does up to 50% shot damage over a second."
     },
 
     "B00": {
@@ -1050,7 +1050,7 @@
         "recollectionSprite": "spr_Friendly_Figment",
         "recollectionSize": 0.375,
         "recollectionSummary": "Ally Figment",
-        "recollectionDescription": "+Unlike souls, figments are corporeal. Bosses will target and shoot them, however the figments can die if they are hit too much. Luckily they always come back!",
+        "recollectionDescription": "+Unlike souls, figments are corporeal. Bosses will target and shoot them, however the figments can die if they are hit too much.",
         "Mech_Credit": 0.5
     },
     "M03": {
@@ -1670,7 +1670,7 @@
         "recollectionString": "Self Aware",
         "recollectionSprite": "spr_Self_Awareness_Art",
         "recollectionSummary": "Automatic Warp Evasion",
-        "recollectionDescription": "+Self Awareness allows the soul to automatically teleport away to a nearby location whenever they would have taken damage. +1/4 Assurance +3/4 Paranoia"
+        "recollectionDescription": "+Automatically warp to a nearby location whenever you would have taken damage. +1/4 Assurance, 3/4 Paranoia"
     },
     "V06": {
         "recollectionString": "Overstimulation",
