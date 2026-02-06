@@ -5,9 +5,9 @@
 
 function scr_XB04(){
 	if global.XB4Dir < 0 {
-		global.XB4Dir = 5 + (global.XB[4] * 10);
+		global.XB4Dir = 5 + (global.XB[4] * 15);
 	} else {
-		global.XB4Dir = -5 - (global.XB[4] * 10);	
+		global.XB4Dir = -5 - (global.XB[4] * 15);	
 	}
 	with (obj_Basic_Projectile_Parent) {
 		direction += global.XB4Dir;

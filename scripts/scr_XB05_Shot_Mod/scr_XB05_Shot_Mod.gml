@@ -2,7 +2,7 @@
 // https://help.yoyogames.com/hc/en-us/articles/360005277377 for more information
 function scr_XB05_Shot_Mod(_cw){
 
-	if global.XB[5] >= 1 and sWeaponTicker mod 6 = 0 {
+	if global.XB[5] >= 1 and sWeaponTicker mod 8 = 0 {
 		_cw.Shot_Count = _cw.Shot_Count * (1 + (2 * global.XB[5]))	
 		if _cw.Shot_Spread < 10 {
 			_cw.Shot_Spread = 10;	

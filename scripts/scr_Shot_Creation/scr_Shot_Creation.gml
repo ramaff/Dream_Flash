@@ -12,9 +12,6 @@ function scr_Shot_Creation(_cw = current_weapon_stats, _prime_shot = false) {
 	
 	scr_P09(_cw);
 	
-	scr_OB06(_cw);
-	scr_OC06(_cw);
-	scr_XB02(_cw);
 	scr_XA06(_cw);
 	
 	

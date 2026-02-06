@@ -76,18 +76,14 @@ function scr_Weapon_Use_List(cWP = global.currentweapon, _weap_slot = 0) {
 			scr_Ascending_Soul_Weapon_Mod(_current_weapon_stats);
 		}
 		
-
-		
-		//show_debug_message(current_weapon_stats)
-		
-		var _v6_procs = scr_V06_Active() 
-		if _v6_procs > 0 {
-			scr_V06(_current_weapon_stats, _v6_procs);
-		}
+		scr_V06(_current_weapon_stats);
+		scr_OB06(_current_weapon_stats);
+		scr_OC06(_current_weapon_stats);
+		scr_XB02(_current_weapon_stats);
 		
 		scr_Beast_Soul_Shot_Mod(_current_weapon_stats);
 		
-		_current_weapon_stats.Real_Essence_Cost = scr_Post_Req_Weapon_Essence_Cost(_current_weapon_stats, _v6_procs);
+		_current_weapon_stats.Real_Essence_Cost = scr_Post_Req_Weapon_Essence_Cost(_current_weapon_stats);
 		
 		scr_C11_Shot_Mod(_current_weapon_stats)
 		

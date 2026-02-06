@@ -31,7 +31,7 @@ function scr_Update_Temper(_mag = 6) {
 	}
 	var _status_effect_2 = {
 		"duration": _curr_temper + _mag,
-		"max_duration": 360,
+		"max_duration": 600,
 		"bar_sprite": "spr_Temper_Omen_Status_Effect_Bar"
 	}
 	variable_struct_set(soul_step_status_effects, "temper_omen", [_status_effect])
@@ -39,7 +39,7 @@ function scr_Update_Temper(_mag = 6) {
 }
 
 function scr_Soul_Temper_Omen() {
-	scr_Soul_Step_Omen_Generic("temper_omen", 360, scr_Temper_Activate)
+	scr_Soul_Step_Omen_Generic("temper_omen", 600, scr_Temper_Activate)
 }
 
 function scr_Temper_Activate() {

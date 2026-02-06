@@ -2,18 +2,7 @@
 // https://help.yoyogames.com/hc/en-us/articles/360005277377 for more information
 function scr_OB06(_cw){
 	
-	var _procs = floor(global.OB[6] / 5);
-	var _proc_mod = global.OB[6] mod 5;
-	
-	if global.currentweapon = 14 {
-		if sWeaponTicker mod 75 < (_proc_mod * 15) {
-			_procs += 1;
-		}
-	} else {
-		if sWeaponTicker mod 5 < _proc_mod {
-			_procs += 1;
-		}
-	}
+	var _procs = scr_Item_Sometimes_Trigger_Check(global.OB[6], 5) 
 
 	if _procs >= 1 {
 		
@@ -30,7 +19,7 @@ function scr_OB06(_cw){
 		variable_struct_set(_cw.Shot_Air_Burst_Stats[burstIndex], "Shot_Type", _cw.Shot_Type); 
 		variable_struct_set(_cw.Shot_Air_Burst_Stats[burstIndex], "Burst_Power", 1); 
 		variable_struct_set(_cw.Shot_Air_Burst_Stats[burstIndex], "Burst_Size", 0.9); 
-		variable_struct_set(_cw.Shot_Air_Burst_Stats[burstIndex], "Burst_Life_Span", 0.8); 
+		variable_struct_set(_cw.Shot_Air_Burst_Stats[burstIndex], "Burst_Life_Span", 0.6); 
 		variable_struct_set(_cw.Shot_Air_Burst_Stats[burstIndex], "Air_Burst", true); 
 		variable_struct_set(_cw.Shot_Air_Burst_Stats[burstIndex], "Range", 100); 
 		var amount = 2 + (_procs * 2)

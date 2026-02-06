@@ -3,26 +3,15 @@ function scr_XB02(_cw) {
 	// Extra Shot Stats
 	// nah its in shot_creation now
 	
-	var _procs = floor(global.XB[2] / 7);
-	var _proc_mod = global.XB[2] mod 7;
-	
-	if global.currentweapon = 14 {
-		if sWeaponTicker mod 105 < (_proc_mod * 15) {
-			_procs += 1;
-		}
-	} else if _proc_mod > 0 {
-		if scr_Chance(7 / _proc_mod) {
-			_procs += 1;
-		}
-	}
+	var _procs = scr_Item_Sometimes_Trigger_Check(global.XB[2], 7) 
 
 	if _procs >= 1 {
 		
 		var _burst_pow = 0.5;
 		var _burst_size = 0.7;
-		var _burst_life = 0.55;
+		var _burst_life = 0.5;
 		var _burst_speed = 1.3
-		var _burst_amount = 6
+		var _burst_amount = 5
 		repeat(_procs - 1) {
 			_burst_pow = _burst_pow * 0.6;
 			_burst_size = _burst_size * 0.8;
@@ -32,6 +21,7 @@ function scr_XB02(_cw) {
 		}
 			
 		_cw.Shot_Size += 0.1;
+		_cw.Real_Essence_Cost = _cw.Real_Essence_Cost * (2 + _procs);
 			
 		if _cw.Shot_Air_Burst_Stats = false {
 			_cw.Shot_Air_Burst_Stats = [{}]

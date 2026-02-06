@@ -2,18 +2,7 @@
 // https://help.yoyogames.com/hc/en-us/articles/360005277377 for more information
 function scr_OC06(_cw){
 
-	var _procs = floor(global.OC[6] / 3);
-	var _proc_mod = global.OC[6] mod 3;
-	
-	if global.currentweapon = 14 {
-		if sWeaponTicker mod 45 < (_proc_mod * 15) {
-			_procs += 1;
-		}
-	} else {
-		if sWeaponTicker mod 3 < _proc_mod {
-			_procs += 1;
-		}
-	}
+	var _procs = scr_Item_Sometimes_Trigger_Check(global.OC[6], 3) 
  
 	if _procs >= 1 {
 		
@@ -30,11 +19,11 @@ function scr_OC06(_cw){
 		variable_struct_set(_cw.Shot_Air_Burst_Stats[burstIndex], "Shot_Type", _cw.Shot_Type); 
 		variable_struct_set(_cw.Shot_Air_Burst_Stats[burstIndex], "Burst_Power", 1);
 		variable_struct_set(_cw.Shot_Air_Burst_Stats[burstIndex], "Burst_Size", 0.9);
-		variable_struct_set(_cw.Shot_Air_Burst_Stats[burstIndex], "Burst_Life_Span", 0.7);
+		variable_struct_set(_cw.Shot_Air_Burst_Stats[burstIndex], "Burst_Life_Span", 0.6);
 		variable_struct_set(_cw.Shot_Air_Burst_Stats[burstIndex], "Air_Burst", true); 
-		variable_struct_set(_cw.Shot_Air_Burst_Stats[burstIndex], "Range", 100 + random(40));
+		variable_struct_set(_cw.Shot_Air_Burst_Stats[burstIndex], "Range", 130 + random(60));
 		variable_struct_set(_cw.Shot_Air_Burst_Stats[burstIndex], "Amount", 1 + _procs); 
-		variable_struct_set(_cw.Shot_Air_Burst_Stats[burstIndex], "Spread", 70);
+		variable_struct_set(_cw.Shot_Air_Burst_Stats[burstIndex], "Spread", 75);
 		
 	}
 

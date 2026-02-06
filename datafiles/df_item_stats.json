@@ -21,7 +21,7 @@
         "recollectionString": "Thinking Harder",
         "recollectionSprite": "spr_Powered_Shots_Item",
         "recollectionSummary": "Damage Up",
-        "recollectionDescription": "+20% Weapon Power"
+        "recollectionDescription": "+15% Weapon Power"
     },
     "A04": {
         "recollectionString": "Piercing Thoughts",
@@ -53,20 +53,20 @@
         "recollectionString": "Intense Thoughts",
         "recollectionSprite": "spr_Dense_Mindset_Item",
         "recollectionSummary": "Big Damage Up, Fast Burn Out",
-        "recollectionDescription": "+35% Shot Power -30% Shot Lifespan",
+        "recollectionDescription": "+25% Shot Power -30% Shot Lifespan",
         "Beast_Credit": 0.5
     },
     "A09": {
         "recollectionString": "Thinking Bigger",
         "recollectionSprite": "spr_Thinking_Bigger_Item",
         "recollectionSummary": "Idea Size Up",
-        "recollectionDescription": "+40% Shot Size +10% Shot Power"
+        "recollectionDescription": "+33% Shot Size +10% Shot Power"
     },
     "A10": {
         "recollectionString": "Critical Thinking",
         "recollectionSprite": "spr_Critical_Thinking_Item",
         "recollectionSummary": "Critical Hit Chance",
-        "recollectionDescription": "+10% Chance for x3 Critical Damage"
+        "recollectionDescription": "+7.5% Chance for x3 Critical Damage"
     },
     "A11": {
         "recollectionString": "Strong Personality",
@@ -78,13 +78,13 @@
         "recollectionString": "Overwhelming Thoughts",
         "recollectionSprite": "spr_Overflowing_Power_Item",
         "recollectionSummary": "Extra Nearby Damage",
-        "recollectionDescription": "+33% Nearby Soul Shot Leakage +15% Shot Power +10% Essence Cost"
+        "recollectionDescription": "+33% Nearby Soul Shot Leakage +10% Shot Power +10% Essence Cost"
     },
     "A13": {
         "recollectionString": "Good Thinking",
         "recollectionSprite": "spr_Stronger_Imagination_Item",
         "recollectionSummary": "Balanced Damage Up",
-        "recollectionDescription": "+2 Shot Power +10% Damage"
+        "recollectionDescription": "+1 Shot Power +10% Damage"
     },
     "A14": {
         "recollectionString": "Radiant Ideas",
@@ -255,14 +255,14 @@
         "recollectionString": "Adrenaline",
         "recollectionSprite": "spr_Adrenaline_Item",
         "recollectionSummary": "More Essence on Low HP",
-        "recollectionDescription": "+Gain extra essence regen and firerate the lower your current heart health is. Up to an additional 120% Essence Regen and 60% Think Speed",
+        "recollectionDescription": "+Gain extra essence regen and firerate the lower your current heart health is. Up to 120% Essence Regen and 60% Think Speed",
         "Beast_Credit": 0.5
     },
     "C11": {
         "recollectionString": "Overthinking",
         "recollectionSprite": "spr_Overthinking_Item",
         "recollectionSummary": "Essence Overloaded Shots",
-        "recollectionDescription": "+35% Shot Power +100% Essence Cost, excess essence can be re-collected by the soul for a brief moment."
+        "recollectionDescription": "+30% Shot Power +100% Essence Cost, excess essence can be re-collected by the soul for a brief moment."
     },
     "C12": {
         "recollectionString": "Pour Your Heart Out",
@@ -299,7 +299,7 @@
         "recollectionString": "Quick Thinking",
         "recollectionSprite": "spr_Quick_Thinking_Item",
         "recollectionSummary": "Think Speed Up",
-        "recollectionDescription": "+30% Weapon Fire Rate"
+        "recollectionDescription": "+25% Weapon Fire Rate"
     },
     "D03": {
         "recollectionString": "Spitballing",
@@ -331,13 +331,13 @@
         "recollectionString": "Mindfulness",
         "recollectionSprite": "spr_Mindfulness_Item",
         "recollectionSummary": "+Smart Fire Rate",
-        "recollectionDescription": "+40% Weapon Firerate per 100 essence"
+        "recollectionDescription": "+20% Weapon Firerate per 100 essence"
     },
     "D08": {
         "recollectionString": "Information Dump",
         "recollectionSprite": "spr_Information_Dump_Item",
         "recollectionSummary": "Rapid Inaccurate Thoughts",
-        "recollectionDescription": "+55% Weapon Fire Rate -50% Accuracy"
+        "recollectionDescription": "+45% Weapon Fire Rate -50% Accuracy"
     },
     "D09": {
         "recollectionString": "Brainstorming",
@@ -1340,7 +1340,7 @@
         "recollectionString": "Assured",
         "recollectionSprite": "spr_Assured_Art",
         "recollectionSummary": "Boss and Soul Attack Speed Up",
-        "recollectionDescription": "+30% Firerate +1 Defense +15% Boss Attack Speed"
+        "recollectionDescription": "+25% Firerate +1 Defense +15% Boss Attack Speed"
     },
     "OC02": {
         "recollectionString": "Sense Of Security",
@@ -1358,7 +1358,7 @@
         "recollectionString": "Delusions of Grandeur",
         "recollectionSprite": "spr_Delusions_Art",
         "recollectionSummary": "Big Delusional Damage Up",
-        "recollectionDescription": "+Deal 40% more damage to enemies, however upon getting hit in a boss fight you will recieve 50% more damage until the end of that field."
+        "recollectionDescription": "+Deal 30% more damage to enemies, however upon getting hit in a boss fight you will recieve 50% more damage until the end of that field."
     },
     "OC05": {
         "recollectionString": "Tunnel Vision",
@@ -1427,7 +1427,7 @@
         "recollectionString": "Outburst",
         "recollectionSprite": "spr_Outburst_Art",
         "recollectionSummary": "5 Way Shots",
-        "recollectionDescription": "+Every 6th time you use your weapon you shoot in 5 different directions at once. +1/2 Loathing",
+        "recollectionDescription": "+Every 7th time you use your weapon you shoot in 5 different directions at once. +1/2 Loathing",
         "Spike_Credit": 1
     },
     "P10": {
@@ -1604,7 +1604,7 @@
         "recollectionString": "Circle of Trust",
         "recollectionSprite": "spr_Circular_Reasoning_Art",
         "recollectionSummary": "Minion Orbit",
-        "recollectionDescription": "+All your minions will now circle the soul instead of their typical movement pattern. In addition to this they also all shoot 10% faster.",
+        "recollectionDescription": "+All your minions will now circle the soul instead of their typical movement pattern. They also all shoot 10% faster.",
         "Casting_Credit": 0.5
     },
     "U05": {
@@ -1664,7 +1664,7 @@
         "recollectionString": "Gaping Void",
         "recollectionSprite": "spr_Gaping_Void_Art",
         "recollectionSummary": "Damage Zone",
-        "recollectionDescription": "+Creates a random dark area on the field, this area does damage to everything it touches. Grows more powerful with a higher despair stat. +1/2 Despair"
+        "recollectionDescription": "+Creates a random dark area on the field, this area does damage to everything it touches. +1/2 Despair"
     },
     "V05": {
         "recollectionString": "Self Aware",
@@ -1676,7 +1676,7 @@
         "recollectionString": "Overstimulation",
         "recollectionSprite": "spr_Overexertion_Art",
         "recollectionSummary": "Overpowered Shots",
-        "recollectionDescription": "+Occasionally shoot over-exerted shots that drain twice as much essence but split into 4 targetted burst shots."
+        "recollectionDescription": "+Occasionally shoot over-exerted shots that drain three times as much essence but split into 4 targetted burst shots."
     },
     "V07": {
         "recollectionString": "Mind Blowing",
@@ -1740,7 +1740,7 @@
         "recollectionString": "Loathsome",
         "recollectionSprite": "spr_Loathsome_Art",
         "recollectionSummary": "Soul and Boss Damage Up",
-        "recollectionDescription": "+22.5% Soul Damage -30% Soul Accuracy +30% Boss Damage"
+        "recollectionDescription": "+20% Soul Damage -40% Soul Accuracy +30% Boss Damage"
     },
     "XA02": {
         "recollectionString": "Hatred",
@@ -1783,7 +1783,7 @@
         "recollectionString": "Nervous",
         "recollectionSprite": "spr_Nervous_Art",
         "recollectionSummary": "Nervous Thoughts",
-        "recollectionDescription": "+Soul shots can sometimes shake and explode prior to hitting bosses from nervousness. These shots explode into 6 shots that go in random directions."
+        "recollectionDescription": "+Soul shots can sometimes shake and explode prior to hitting bosses from nervousness. These shots explode into 5 shots that go in random directions, and cost 3 times as much."
     },
     "XB03": {
         "recollectionString": "Panic Inducing Realization",
