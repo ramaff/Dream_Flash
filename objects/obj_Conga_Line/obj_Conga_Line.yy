@@ -14,8 +14,8 @@
   "name":"obj_conga_line",
   "overriddenProperties":[],
   "parent":{
-    "name":"Flash Bosses",
-    "path":"folders/Objects/Bosses/Flash Bosses.yy",
+    "name":"v1",
+    "path":"folders/Objects/Bosses/Flash Bosses/v1.yy",
   },
   "parentObjectId":{
     "name":"obj_Wall_Stop_Boss_Parent",
