@@ -4,13 +4,17 @@
 scr_Boss_Step(2);
 
 // If boss is floating in air, can make it bob up and down:
-scr_Boss_Height_Bob(60, 1, 0);
+scr_Boss_Height_Bob(90, 1, 0);
 
 // Make boss shape wobble:
 scr_Boss_Wobble("Horizontal", 0.4, 1, 0);
 
 direction = scr_Soul_Point()
-speed = lerp(speed, bossmovespeed, 0.1);
+if active_attack = 1 {
+	speed = lerp(speed, bossmovespeed * 0.1, 0.1);
+} else {
+	speed = lerp(speed, bossmovespeed, 0.1);
+}
 
 //////////////////////////////////////////////////////////////////////////////////////////
 /////////////// Active Attack Prep
@@ -21,13 +25,15 @@ if active_attack_delay <= 0 and active_attack_cooldown <= 0 and active_attack_du
 	// Pick a random attack to do
 	//active_attack = choose(1, 2, 3);
 	if !instance_exists(red_cloud) || !instance_exists(blue_cloud) || !instance_exists(green_cloud) || !instance_exists(yellow_cloud) {
-		active_attack = 1;
+		if image_index < 1 {
+			active_attack = 1;
+		}
 	}
 	
 	
     if active_attack = 1 {
 		// Setup how many attacks per boss move, delay, etc
-		scr_Boss_Attack_Time_Setup_v2(1, 50, 1, 90, 30, 30);
+		scr_Boss_Attack_Time_Setup_v2(1, 50, 1, 60, 30, 30);
 		
 		// Can set up the initial pattern direction
 		// patternDirection = scr_Soul_Point();
@@ -52,7 +58,7 @@ if active_attack_delay <= 0 and pattern_cooldown <= 0 and pattern_count > 0 {
 		attack_stats.bullet_count = 12;
 		attack_stats.bullet_spread = 30;
 		attack_stats.bullet_direction_angle = 1
-		attack_stats.bullet_speed = bossbulletspeed * (1 + random(0.5));
+		attack_stats.bullet_speed = bossbulletspeed * (1.5 + random(0.6));
 		
 		scr_boss_shoot_v2();
 		

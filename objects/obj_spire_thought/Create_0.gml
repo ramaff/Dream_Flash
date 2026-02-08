@@ -13,3 +13,6 @@ scr_Boss_Size_Setup(0.5);
 scr_Boss_Height_Setup(50);
 
 active_attack_cooldown += 60 + random(120);
+norm_sprite = spr_spire_thought;
+shoot_sprite = spr_spire_thought_shoot;
+
