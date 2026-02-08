@@ -31,3 +31,7 @@ blue_cloud = _mins[1];
 green_cloud = _mins[2];
 yellow_cloud = _mins[3];
 
+red_cloud.active_attack_cooldown += 60 + random(120);
+blue_cloud.active_attack_cooldown += 60 + random(120);
+green_cloud.active_attack_cooldown += 60 + random(120);
+yellow_cloud.active_attack_cooldown += 60 + random(120);

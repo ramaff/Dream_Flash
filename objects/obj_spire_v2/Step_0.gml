@@ -13,7 +13,7 @@ direction = scr_Soul_Point()
 if active_attack = 1 {
 	speed = lerp(speed, bossmovespeed * 0.1, 0.1);
 } else {
-	speed = lerp(speed, bossmovespeed, 0.1);
+	speed = lerp(speed, bossmovespeed, 0.025);
 }
 
 //////////////////////////////////////////////////////////////////////////////////////////
@@ -62,25 +62,59 @@ if active_attack_delay <= 0 and pattern_cooldown <= 0 and pattern_count > 0 {
 		
 		scr_boss_shoot_v2();
 		
-		minion_count = 1;
-		minion_type = obj_spire_thought;
-		minion_health = 40;
-		minion_defense = 0;
-		
-		var _mins = scr_Minion_Spawn();
 		if !instance_exists(red_cloud) {
+			minion_count = 1;
+			minion_type = obj_spire_thought;
+			minion_health = 40;
+			minion_defense = 0;
+		
+			var _mins = scr_Minion_Spawn();
 			red_cloud = _mins[0];
-		} else if !instance_exists(blue_cloud) {
+			
+			var _dmg = 30
+			bosshealth -= _dmg;
+			scr_setup_dmg_indicator(x,y, _dmg, c_white);
+		} 
+		if !instance_exists(blue_cloud) {
+			minion_count = 1;
+			minion_type = obj_spire_thought;
+			minion_health = 40;
+			minion_defense = 0;
+		
+			var _mins = scr_Minion_Spawn();
 			blue_cloud = _mins[0];
-		} else if !instance_exists(green_cloud) {
+			
+			var _dmg = 30
+			bosshealth -= _dmg;
+			scr_setup_dmg_indicator(x,y, _dmg, c_white);
+		} 
+		if !instance_exists(green_cloud) {
+			minion_count = 1;
+			minion_type = obj_spire_thought;
+			minion_health = 40;
+			minion_defense = 0;
+		
+			var _mins = scr_Minion_Spawn();
 			green_cloud = _mins[0];
-		} else if !instance_exists(yellow_cloud) {
+			
+			var _dmg = 30
+			bosshealth -= _dmg;
+			scr_setup_dmg_indicator(x,y, _dmg, c_white);
+		} 
+		if !instance_exists(yellow_cloud) {
+			minion_count = 1;
+			minion_type = obj_spire_thought;
+			minion_health = 40;
+			minion_defense = 0;
+		
+			var _mins = scr_Minion_Spawn();
 			yellow_cloud = _mins[0];
+			
+			var _dmg = 30
+			bosshealth -= _dmg;
+			scr_setup_dmg_indicator(x,y, _dmg, c_white);
 		}
 		
-		var _dmg = 30
-		bosshealth -= _dmg;
-		scr_setup_dmg_indicator(x,y, _dmg, c_white);
 	
 		// If you gotta change the pattern aim direction
 	    // pattern_direction += 0;
