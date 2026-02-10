@@ -162,7 +162,13 @@ function scr_Soul_Shot_Boss_Hit(_shot = other) {
 				if shot_stats.Shot_Burst_Stats != false {
 					var burstIndex = array_length(shot_stats.Shot_Burst_Stats) - 1;
 					if instance_exists(obj_Boss_Parent) and burstIndex >= 0 {
-						event_user(0)
+						var _xx = x;
+						var _yy = y;
+						if shot_stats.Shot_Melee {
+							_xx = _boss.x;
+							_yy = _boss.y;
+						}
+						scr_Basic_Projectile_Burst(_xx, _yy)
 						//instance_destroy();
 					}	
 				} 

@@ -13,6 +13,7 @@ function scr_Beam_Create(shxx, shyy, beamseg, beamdir, curvedir, beamstop, beamx
 	var hit_again = -1;
 	
 	shot_stats.Shot_Life_Span = 15;
+	alarm[0] = 15;
 		
 	if beamtype = 2 {
 		beamspriteindex = global.essencebeamtime / 5

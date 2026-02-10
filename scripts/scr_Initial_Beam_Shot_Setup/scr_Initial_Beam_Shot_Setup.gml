@@ -17,6 +17,7 @@ function scr_Initial_Beam_Shot_Setup(shxx = x, shyy = y){
 		if beamtype = 2 {
 			beamtotalsegs = shot_stats.Shot_Life_Span * 15;
 		}
+		beamtotalsegs = ceil(beamtotalsegs)
 		var beamspriteindex = 0;
 		var beamsize = shot_stats.Shot_Size;
 		var dirChange = 0;

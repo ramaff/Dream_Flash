@@ -6,8 +6,16 @@ var burstIndex = array_length(shot_stats.Shot_Burst_Stats) - 1;
 var dir = -shot_stats.Shot_Burst_Stats[burstIndex].Spread / 2;
 image = 1
 var _v_burst_stats = shot_stats.Shot_Burst_Stats[burstIndex]
+
+var _xx = x;
+var _yy = y;
+if shot_stats.Shot_Melee {
+	_xx = _boss.x;
+	_yy = _boss.y;
+}
+
 repeat(shot_stats.Shot_Burst_Stats[burstIndex].Amount) {
-	with instance_create(x,y, asset_get_index(_v_burst_stats.Shot_Type)) {
+	with instance_create(_xx,_yy, asset_get_index(_v_burst_stats.Shot_Type)) {
 		shot_stats = scr_Duplicate_Shot_Stats(_v_burst_stats, variable_clone(_og_stats), dir);
 		
 		shot_stats.Shot_Exist_Time = 0;

@@ -1991,6 +1991,7 @@
     {"id":{"name":"scr_B14_Heart","path":"scripts/scr_B14_Heart/scr_B14_Heart.yy",},},
     {"id":{"name":"scr_Barrage_Weapon_Use","path":"scripts/scr_Barrage_Weapon_Use/scr_Barrage_Weapon_Use.yy",},},
     {"id":{"name":"scr_Baseball_Shot","path":"scripts/scr_Baseball_Shot/scr_Baseball_Shot.yy",},},
+    {"id":{"name":"scr_Basic_Projectile_Burst","path":"scripts/scr_Basic_Projectile_Burst/scr_Basic_Projectile_Burst.yy",},},
     {"id":{"name":"scr_Basic_Soul_Hitboxes","path":"scripts/scr_Basic_Soul_Hitboxes/scr_Basic_Soul_Hitboxes.yy",},},
     {"id":{"name":"scr_Basic_Teleport","path":"scripts/scr_Basic_Teleport/scr_Basic_Teleport.yy",},},
     {"id":{"name":"scr_Battle_Flag_Use","path":"scripts/scr_Battle_Flag_Use/scr_Battle_Flag_Use.yy",},},
