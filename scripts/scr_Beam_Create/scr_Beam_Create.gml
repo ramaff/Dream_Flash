@@ -11,10 +11,13 @@ function scr_Beam_Create(shxx, shyy, beamseg, beamdir, curvedir, beamstop, beamx
 
 	var boss_hits = {};
 	var hit_again = -1;
+	
+	shot_stats.Shot_Life_Span = 15;
 		
 	if beamtype = 2 {
 		beamspriteindex = global.essencebeamtime / 5
 		beamspriteindex = clamp(beamspriteindex, 0, 3);
+		shot_stats.Shot_Life_Span = 1;
 		
 		//var og_beamsize = beamsize;
 		
@@ -123,29 +126,25 @@ function scr_Beam_Create(shxx, shyy, beamseg, beamdir, curvedir, beamstop, beamx
 							if variable_struct_exists(_v_shot_air_burst_stats, "Shot_Life_Span") {
 								_v_shot_air_burst_stats.Shot_Life_Span = _original_shot_stats.Shot_Life_Span
 							}
-							if variable_struct_exists(_v_shot_air_burst_stats, "Burst_Life_Span") {
-								_v_shot_air_burst_stats.Burst_Life_Span = 1;
-							}
 							
 							scr_Shot_Burst_Stats(_v_shot_air_burst_stats);
 							shot_stats.Shot_Burst_Stats = _original_shot_stats.Shot_Burst_Stats;
 							shot_stats.Shot_Extra_Stats = _original_shot_stats.Shot_Extra_Stats;
 							if _top_air_burst_index > 0 {
 								array_delete(shot_stats.Shot_Air_Burst_Stats, _top_air_burst_index, 1)
-								/*shot_stats.Shot_Air_Burst_Stats = [];
-								Print_DF("_original_shot_stats")
-								Print_DF(_original_shot_stats)
-								for(var i = 0; i < _top_air_burst_index; i++) {
-									array_insert(shot_stats.Shot_Air_Burst_Stats, i, _original_shot_stats.Shot_Air_Burst_Stats[i])
-								} */
 							} else {
 								shot_stats.Shot_Air_Burst_Stats = false;	
 							}
 							
 							shot_stats.Shot_Hit_Again = 0;
 							
-							scr_Beam_Create(shxx, shyy, beamseg, beamdir + dir, curvedir, beamstop, beamxx, beamyy, beamtype, 
-											beamtotalsegs, beamspriteindex, _split_beam_size, dirChange, homespeed, _split_beam_split_size)
+							scr_Beam_Create(shxx, shyy, 1, beamdir + dir, curvedir, beamstop, beamxx, beamyy, beamtype, 
+											floor(shot_stats.Shot_Life_Span), beamspriteindex, _split_beam_size, dirChange, homespeed, _split_beam_split_size)
+											
+							shot_stats.Shot_Life_Span = 15;
+							alarm[0] = 15;
+							speed = 0;
+							shot_stats.Shot_Movement = 0;
 						}
 							
 					    dir += _current_burst_stats.Spread;

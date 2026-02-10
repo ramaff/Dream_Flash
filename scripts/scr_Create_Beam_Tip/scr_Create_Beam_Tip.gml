@@ -15,7 +15,7 @@ function scr_Create_Beam_Tip(shxx, shyy, beamxx, beamyy, beamsize, beamdir){
 		var pspr = asset_get_index(ssstr + "Tip")
 					
 		depth = other.depth - 10;
-		image_angle = beamdir;
+		image_angle = beamdir + scr_Wave(0, 360, 0.1, 0);
 					
 		if sprite_exists(pspr) {
 			sprite_index = pspr
