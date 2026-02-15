@@ -8,77 +8,77 @@ var sPercent = 0;
 image_xscale = 0.5;
 image_yscale = 0.5;
 
-if stat = 1 {
-    draw_text(x+50,y+84, string_hash_to_newline("STR"));
+if stat = 1 and global.soulstrength > 0 {
+    draw_text(x+45,y+84, string_hash_to_newline("STR"));
     sPercent = (global.soulstrength) * 2.5;
-	draw_text(x+50,y+60, string_hash_to_newline(sPercent / 2.5));
+	draw_text(x+45,y+60, string_hash_to_newline(sPercent / 20));
 	vis = 1;
 }
-if stat = 2 {
-    draw_text(x+50,y+84, string_hash_to_newline("VIT"));
+if stat = 2 and global.soulvitality > 0 {
+    draw_text(x+45,y+84, string_hash_to_newline("VIT"));
     sPercent = (global.soulvitality) * 2.5;
-	draw_text(x+50,y+60, string_hash_to_newline(sPercent / 2.5));
+	draw_text(x+45,y+60, string_hash_to_newline(sPercent / 20));
 	vis = 1;
 }
-if stat = 3 {
-    draw_text(x+50,y+84, string_hash_to_newline("ESS"));
+if stat = 3 and global.soulessence > 0 {
+    draw_text(x+45,y+84, string_hash_to_newline("ESS"));
     sPercent = (global.soulessence) * 2.5;
-	draw_text(x+50,y+60, string_hash_to_newline(sPercent / 2.5));
+	draw_text(x+45,y+60, string_hash_to_newline(sPercent / 20));
 	vis = 1;
 }
-if stat = 4 {
-    draw_text(x+50,y+84, string_hash_to_newline("DEX"));
+if stat = 4 and global.souldexterity > 0 {
+    draw_text(x+45,y+84, string_hash_to_newline("DEX"));
     sPercent = (global.souldexterity) * 2.5;
-	draw_text(x+50,y+60, string_hash_to_newline(sPercent / 2.5));
+	draw_text(x+45,y+60, string_hash_to_newline(sPercent / 20));
 	vis = 1;
 }
-if stat = 5 {
-    draw_text(x+50,y+84, string_hash_to_newline("PER"));
+if stat = 5 and global.soulperception > 0 {
+    draw_text(x+45,y+84, string_hash_to_newline("PER"));
     sPercent = (global.soulperception) * 2.5;
-	draw_text(x+50,y+60, string_hash_to_newline(sPercent / 2.5));
+	draw_text(x+45,y+60, string_hash_to_newline(sPercent / 2.5));
 	vis = 1;
 }
-if stat = 6 {
-    draw_text(x+50,y+84, string_hash_to_newline("STE"));
+if stat = 6 and global.soulstate > 0 {
+    draw_text(x+45,y+84, string_hash_to_newline("STE"));
     sPercent = (global.soulstate) * 2.5;
-	draw_text(x+50,y+60, string_hash_to_newline(sPercent / 2.5));
+	draw_text(x+45,y+60, string_hash_to_newline(sPercent / 20));
 	vis = 1;
 }
 
 if stat = 7 and (global.souldespair) > 0 {
-    draw_text(x+50,y+84, string_hash_to_newline("DES"));
+    draw_text(x+45,y+84, string_hash_to_newline("DES"));
     sPercent = (global.souldespair + global.souldespairTemp) * 2.5;
-	draw_text(x+50,y+60, string_hash_to_newline(sPercent / 2.5));
+	draw_text(x+45,y+60, string_hash_to_newline(sPercent / 20));
 	vis = 1;
 }
 if stat = 8 and (global.soulparanoia) > 0 {
-    draw_text(x+50,y+84, string_hash_to_newline("PAR"));
+    draw_text(x+45,y+84, string_hash_to_newline("PAR"));
     sPercent = (global.soulparanoia + global.soulparanoiaTemp) * 2.5;
-	draw_text(x+50,y+60, string_hash_to_newline(sPercent / 2.5));
+	draw_text(x+45,y+60, string_hash_to_newline(sPercent / 20));
 	vis = 1;
 }
 if stat = 9 and (global.soulloathing) > 0 {
-    draw_text(x+50,y+84, string_hash_to_newline("LTH"));
+    draw_text(x+45,y+84, string_hash_to_newline("LTH"));
     sPercent = (global.soulloathing) * 2.5;
-	draw_text(x+50,y+60, string_hash_to_newline(sPercent / 2.5));
+	draw_text(x+45,y+60, string_hash_to_newline(sPercent / 20));
 	vis = 1;
 }
 if stat = 10 and (global.soulassurance) > 0 {
-    draw_text(x+50,y+84, string_hash_to_newline("VAN"));
+    draw_text(x+45,y+84, string_hash_to_newline("VAN"));
     sPercent = (global.soulassurance) * 2.5;
-	draw_text(x+50,y+60, string_hash_to_newline(sPercent / 2.5));
+	draw_text(x+45,y+60, string_hash_to_newline(sPercent / 20));
 	vis = 1;
 }
 if stat = 11 and (global.soulbliss) > 0 {
-    draw_text(x+50,y+84, string_hash_to_newline("BLS"));
+    draw_text(x+45,y+84, string_hash_to_newline("BLS"));
     sPercent = (global.soulbliss) * 2.5;
-	draw_text(x+50,y+60, string_hash_to_newline(sPercent / 2.5));
+	draw_text(x+45,y+60, string_hash_to_newline(sPercent / 20));
 	vis = 1;
 }
-if stat = 12 and (global.soulhope + global.soulhopeTemp) > 0 {
-    draw_text(x+50,y+84, string_hash_to_newline("HPE"));
+if stat = 12 and (global.soulhope) > 0 {
+    draw_text(x+45,y+84, string_hash_to_newline("HPE"));
     sPercent = (global.soulhope) * 2.5;
-	draw_text(x+50,y+60, string_hash_to_newline(sPercent / 2.5));
+	draw_text(x+45,y+60, string_hash_to_newline(sPercent / 20));
 	vis = 1;
 }
 
@@ -92,9 +92,9 @@ if sPercent > 100 {
 
 var yy = 200;
 
-if stat > 6 {
+/*if stat > 6 {
 	sprite_index = spr_Spiritual_Stat_Meter_Butt;	
-}
+} */
 
 if vis = 1 {
 	//draw_sprite_ext(sprite_index,0,x,y,0.5,0.5,0,c_white,1);

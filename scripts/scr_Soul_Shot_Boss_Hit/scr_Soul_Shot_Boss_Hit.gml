@@ -22,9 +22,15 @@ function scr_Soul_Shot_Boss_Hit(_shot = other) {
 			
 				if shot_stats.Shot_Excess_Essence > 0 {
 					var ex_ess = shot_stats.Shot_Excess_Essence;
+					var _xx = x;
+					var _yy = y;
+					if shot_stats.Shot_Melee {
+						_xx = _boss.x;
+						_yy = _boss.y;
+					}
 					while(ex_ess > 0) {
 						var pot = min(ex_ess, 10)
-						with instance_create(x,y,obj_Essence_Blop) {
+						with instance_create(_xx,_yy,obj_Essence_Blop) {
 
 							speed = 12 + random(15);
 							direction = random(360);

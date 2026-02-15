@@ -14,7 +14,10 @@ image_yscale = 0.5;
 
 var _y_offset = -40;
 
-if shop > 0 || (string_length(recollectionExtraStats) > 30) || (string_length(recollectionDescription) > 30) || ((string_length(recollectionExtraStats) > 0) and (string_length(recollectionDescription) > 0)) {
+//Print_DF($"recollectionExtraStats len: {string_length(recollectionExtraStats)}")
+//Print_DF($"recollectionDescription len: {string_length(recollectionDescription)}")
+
+if shop > 0 || (string_length(recollectionExtraStats) > 60) || (string_length(recollectionDescription) > 60) || ((string_length(recollectionExtraStats) > 0) and (string_length(recollectionDescription) > 0)) || recollectionCount = 0 {
 	_y_offset = -80;
 }
 

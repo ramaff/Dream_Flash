@@ -3,7 +3,7 @@
         "recollectionString": "Powerful",
         "recollectionSprite": "spr_Strength_Up_Item",
         "recollectionSummary": "Strength",
-        "recollectionDescription": "Summons a choice of items that increase the strength of your soul."
+        "recollectionDescription": "Summons a choice of items that increase the strength of your soul. Usually increasing the damage you deal to bosses."
     },
     "A01": {
         "recollectionString": "Extra Thought",
@@ -97,7 +97,7 @@
         "recollectionString": "Lively",
         "recollectionSprite": "spr_Vitality_Up_Item",
         "recollectionSummary": "Vitality",
-        "recollectionDescription": "Summons a choice of items that increase the vitality of your soul."
+        "recollectionDescription": "Summons a choice of items that increase the vitality of your soul. Usually increasing the health of the soul."
     },
     "B01": {
         "recollectionString": "Full of Life",
@@ -191,7 +191,7 @@
         "recollectionString": "Concentrated",
         "recollectionSprite": "spr_Essence_Up_Item",
         "recollectionSummary": "Essence",
-        "recollectionDescription": "Summons a choice of items that increase the essence of your soul."
+        "recollectionDescription": "Summons a choice of items that increase the essence of your soul. Usually increasing the essence regen of the soul."
     },
     "C01": {
         "recollectionString": "Warming Up",
@@ -287,7 +287,7 @@
         "recollectionString": "Alert",
         "recollectionSprite": "spr_Dexterity_Up_Item",
         "recollectionSummary": "Dexterity",
-        "recollectionDescription": "Summons a choice of items that increase the dexterity of your soul."
+        "recollectionDescription": "Summons a choice of items that increase the dexterity of your soul. Usually increasing the speed and firerate of the soul."
     },
     "D01": {
         "recollectionString": "Spiritual Swiftness",
@@ -382,7 +382,7 @@
         "recollectionString": "Thoughtful",
         "recollectionSprite": "spr_Perception_Up_Item",
         "recollectionSummary": "Perception",
-        "recollectionDescription": "Summons a choice of items that increase the perception of your soul."
+        "recollectionDescription": "Summons a choice of items that increase the perception of your soul. Usually increasing your warp rate, and lowering weapon drain rate."
     },
     "E01": {
         "recollectionString": "Think Smarter",
@@ -477,7 +477,7 @@
         "recollectionString": "Proud",
         "recollectionSprite": "spr_State_Up_Item",
         "recollectionSummary": "State",
-        "recollectionDescription": "Summons a choice of items that increase the state of your soul."
+        "recollectionDescription": "Summons a choice of items that increase the state of your soul. Usually increasing transformation duration and recharge rate."
     },
     "F01": {
         "recollectionString": "Self Discovery",
