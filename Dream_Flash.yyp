@@ -5104,6 +5104,7 @@
     {"id":{"name":"spr_spire_dump_1","path":"sprites/spr_spire_dump_1/spr_spire_dump_1.yy",},},
     {"id":{"name":"spr_spire_dump","path":"sprites/spr_spire_dump/spr_spire_dump.yy",},},
     {"id":{"name":"spr_spire_hard_think","path":"sprites/spr_spire_hard_think/spr_spire_hard_think.yy",},},
+    {"id":{"name":"spr_spire_ko","path":"sprites/spr_spire_ko/spr_spire_ko.yy",},},
     {"id":{"name":"spr_spire_minion_dump","path":"sprites/spr_spire_minion_dump/spr_spire_minion_dump.yy",},},
     {"id":{"name":"spr_spire_thought_blue","path":"sprites/spr_spire_thought_blue/spr_spire_thought_blue.yy",},},
     {"id":{"name":"spr_spire_thought_green","path":"sprites/spr_spire_thought_green/spr_spire_thought_green.yy",},},

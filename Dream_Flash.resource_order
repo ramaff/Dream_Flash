@@ -1887,6 +1887,7 @@
     {"name":"spr_Spike_Strike_Aura","order":10,"path":"sprites/spr_Spike_Strike_Aura/spr_Spike_Strike_Aura.yy",},
     {"name":"spr_spire_dump_1","order":1,"path":"sprites/spr_spire_dump_1/spr_spire_dump_1.yy",},
     {"name":"spr_spire_hard_think","order":3,"path":"sprites/spr_spire_hard_think/spr_spire_hard_think.yy",},
+    {"name":"spr_spire_ko","order":13,"path":"sprites/spr_spire_ko/spr_spire_ko.yy",},
     {"name":"spr_spire_minion_dump","order":4,"path":"sprites/spr_spire_minion_dump/spr_spire_minion_dump.yy",},
     {"name":"spr_spire_thought_blue","order":7,"path":"sprites/spr_spire_thought_blue/spr_spire_thought_blue.yy",},
     {"name":"spr_spire_thought_green","order":9,"path":"sprites/spr_spire_thought_green/spr_spire_thought_green.yy",},

@@ -631,36 +631,10 @@
             "Boss_Danger": 2,
             "Bullet_Speed": 2.75,
             "Move_Speed": 1.75,
-            "recollectionDescription": "Strange construct that can manifest all kinds of other figures.",
+            "recollectionDescription": "Strange construct that can manifest enemies",
             
             "Champ 0.1": {
                 "Health_Phase_1": 100,
-                "Health_Phase_2": 0,
-                "Final_Phase": 1,
-                "Knock_Defense": 1,
-                "Defense_Phase_1": 0
-            },
-            "Champ 1": {
-                "Name": "Vortex Spire",
-                "Recollection_Sprite": "spr_Vortex_Core",
-                "Health_Phase_1": 400,
-                "Health_Phase_2": 300
-            },
-            "Champ 1.1": {
-                "Health_Phase_1": 150,
-                "Health_Phase_2": 0,
-                "Final_Phase": 1,
-                "Knock_Defense": 1,
-                "Defense_Phase_1": 0
-            },
-            "Champ 2": { 
-                "Name":  "Queen Spire",
-                "Recollection_Sprite": "spr_Queen_Core",
-                "Health_Phase_1": 400,
-                "Health_Phase_2": 300
-            },
-            "Champ 2.1": {
-                "Health_Phase_1": 50,
                 "Health_Phase_2": 0,
                 "Final_Phase": 1,
                 "Knock_Defense": 1,
