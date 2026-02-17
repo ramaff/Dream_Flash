@@ -6,3 +6,5 @@ on_sprite = spr_Option_Button_On;
 off_sprite = spr_Option_Button;
 
 selected = false
+
+awaitinput = 0;

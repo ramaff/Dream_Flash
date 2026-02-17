@@ -4,4 +4,5 @@
 if selected = true {
 	selected = false;
 	sprite_index = off_sprite
+	awaitinput = 0;
 }

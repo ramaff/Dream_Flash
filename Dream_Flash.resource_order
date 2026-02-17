@@ -930,6 +930,7 @@
     {"name":"InputDefineCluster","order":2,"path":"scripts/InputDefineCluster/InputDefineCluster.yy",},
     {"name":"InputDefineVerb","order":3,"path":"scripts/InputDefineVerb/InputDefineVerb.yy",},
     {"name":"InputDeviceEnumerate","order":1,"path":"scripts/InputDeviceEnumerate/InputDeviceEnumerate.yy",},
+    {"name":"InputDeviceGetAnyActive","order":28,"path":"scripts/InputDeviceGetAnyActive/InputDeviceGetAnyActive.yy",},
     {"name":"InputDeviceGetAnyGamepadConnected","order":2,"path":"scripts/InputDeviceGetAnyGamepadConnected/InputDeviceGetAnyGamepadConnected.yy",},
     {"name":"InputDeviceGetDescription","order":3,"path":"scripts/InputDeviceGetDescription/InputDeviceGetDescription.yy",},
     {"name":"InputDeviceGetGamepadType","order":4,"path":"scripts/InputDeviceGetGamepadType/InputDeviceGetGamepadType.yy",},

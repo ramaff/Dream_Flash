@@ -85,8 +85,13 @@
 			draw_text(x,y-12, string_hash_to_newline("Reset to Default"));
 		}
 		
-		draw_text(x - 192,y-12, string_hash_to_newline(typekey));
-		draw_text(x,y-12, string_hash_to_newline(string(key)));
+		
+		draw_text(x - 192,y-12, typekey);
+		if awaitinput = 0 {
+			draw_text(x,y-12, string(key));
+		} else {
+			draw_text(x,y-12, "PRESS KEY")
+		}
 		
 	}
 	
