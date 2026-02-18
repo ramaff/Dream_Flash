@@ -2224,6 +2224,7 @@
     {"id":{"name":"scr_Gem_Draw","path":"scripts/scr_Gem_Draw/scr_Gem_Draw.yy",},},
     {"id":{"name":"scr_Gem_Spawn","path":"scripts/scr_Gem_Spawn/scr_Gem_Spawn.yy",},},
     {"id":{"name":"scr_Generic_Outside_Check","path":"scripts/scr_Generic_Outside_Check/scr_Generic_Outside_Check.yy",},},
+    {"id":{"name":"scr_Get_Bind","path":"scripts/scr_Get_Bind/scr_Get_Bind.yy",},},
     {"id":{"name":"scr_Get_Item_Pool_From_Letter","path":"scripts/scr_Get_Item_Pool_From_Letter/scr_Get_Item_Pool_From_Letter.yy",},},
     {"id":{"name":"scr_Get_Item_Pools","path":"scripts/scr_Get_Item_Pools/scr_Get_Item_Pools.yy",},},
     {"id":{"name":"scr_Get_Status_Magnitude","path":"scripts/scr_Get_Status_Magnitude/scr_Get_Status_Magnitude.yy",},},

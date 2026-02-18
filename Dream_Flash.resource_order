@@ -1164,6 +1164,7 @@
     {"name":"scr_Force_Push","order":2,"path":"scripts/scr_Force_Push/scr_Force_Push.yy",},
     {"name":"scr_Game_Reset","order":1,"path":"scripts/scr_Game_Reset/scr_Game_Reset.yy",},
     {"name":"scr_Generic_Outside_Check","order":27,"path":"scripts/scr_Generic_Outside_Check/scr_Generic_Outside_Check.yy",},
+    {"name":"scr_Get_Bind","order":29,"path":"scripts/scr_Get_Bind/scr_Get_Bind.yy",},
     {"name":"scr_Get_Status_Magnitude","order":3,"path":"scripts/scr_Get_Status_Magnitude/scr_Get_Status_Magnitude.yy",},
     {"name":"scr_Get_Status_Time","order":5,"path":"scripts/scr_Get_Status_Time/scr_Get_Status_Time.yy",},
     {"name":"scr_Go_Back_Text","order":1,"path":"scripts/scr_Go_Back_Text/scr_Go_Back_Text.yy",},

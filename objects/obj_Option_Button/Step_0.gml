@@ -35,17 +35,7 @@ if awaitinput = 1 {
 			_change_verb = INPUT_VERB.W_RIGHT
 		}
 		
-		var _bind = noone;
-		
-		if InputCheck(INPUT_VERB.SHOOT) {
-			_bind = InputBindingGet(true, INPUT_VERB.SHOOT)	
-		} else if InputCheck(INPUT_VERB.WARP) {
-			_bind = InputBindingGet(true, INPUT_VERB.WARP)
-		} else if InputCheck(INPUT_VERB.W_LEFT) {
-			_bind = InputBindingGet(true, INPUT_VERB.W_LEFT)
-		} else if InputCheck(INPUT_VERB.W_RIGHT) {
-			_bind = InputBindingGet(true, INPUT_VERB.W_RIGHT)
-		}
+		var _bind = scr_Get_Bind();
 		
 		if _bind != noone {
 			InputBindingSet(true, _change_verb, _bind)

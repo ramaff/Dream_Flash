@@ -80,6 +80,38 @@
 			key = global.gameMapExpand;
 		}
 		
+		if InputDeviceGetAnyGamepadConnected() {
+			switch(type) {
+				case 1:	
+					key = InputVerbGetBindingName(INPUT_VERB.UP)
+					break;
+				case 2:	
+					key = InputVerbGetBindingName(INPUT_VERB.DOWN)
+					break;
+				case 3:
+					key = InputVerbGetBindingName(INPUT_VERB.LEFT)
+					break;
+				case 4:	
+					key = InputVerbGetBindingName(INPUT_VERB.RIGHT)
+					break;
+				case 5:	
+					key = InputVerbGetBindingName(INPUT_VERB.SHOOT)
+					break;
+				case 6:	
+					key = InputVerbGetBindingName(INPUT_VERB.WARP)
+					break;
+				case 7:	
+					key = InputVerbGetBindingName(INPUT_VERB.W_LEFT)
+					break;
+				case 8:	
+					key = InputVerbGetBindingName(INPUT_VERB.W_RIGHT)
+					break;
+				//case 9:	
+				//	key = InputBindingGet(true, INPUT_VERB.ACCEPT)
+			}
+			
+		}
+		
 		
 		if type = 10 {
 			draw_text(x,y-12, string_hash_to_newline("Reset to Default"));
