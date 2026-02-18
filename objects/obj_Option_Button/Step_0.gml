@@ -18,9 +18,6 @@ if awaitinput = 1 {
 			awaitinput = 0;
 		} else */
 		
-		// need to check every input type
-		// then depending on the 'type' of the button, update that binding specifically
-		
 		var _change_verb = INPUT_VERB.SHOOT
 		if type = 5 {
 			_change_verb = INPUT_VERB.SHOOT	
@@ -35,12 +32,33 @@ if awaitinput = 1 {
 			_change_verb = INPUT_VERB.W_RIGHT
 		}
 		
+		var _device = InputPlayerGetDevice();
+		
+		if (InputDeviceGetRebinding(_device))
+		{
+		    var _result = InputDeviceGetRebindingResult(_device);
+		    if (_result != undefined)
+		    {
+		        InputBindingSet(InputDeviceIsGamepad(_device), _change_verb, _result);
+
+		        InputDeviceSetRebinding(_device, false);
+				
+				awaitinput = 0;
+		    }
+		}
+		
+		
+		// need to check every input type
+		// then depending on the 'type' of the button, update that binding specifically
+		
+		/*
+		
 		var _bind = scr_Get_Bind();
 		
 		if _bind != noone {
 			InputBindingSet(true, _change_verb, _bind)
 			awaitinput = 0;
-		}
+		} */
 		
 	} else {
 	

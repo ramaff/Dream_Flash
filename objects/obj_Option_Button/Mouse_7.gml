@@ -8,6 +8,9 @@ if InputDeviceGetAnyActive() and !selected {
 }
 
 if type = 10 and category = 2 {
+	
+	InputBindingsReset(true)
+	
 	global.gameMoveLeft = "A";
 	global.gameMoveDown = "S";
 	global.gameMoveRight = "D";
@@ -17,8 +20,9 @@ if type = 10 and category = 2 {
 	global.gameWeaponSwapDown = "C";
 	global.gameWeaponSwapUp = "Z";
 	global.gameMapExpand = "M";
-}
-
-if category = 2 {
+} else if category = 2 {
 	awaitinput = 1;
+	
+	var _device = InputPlayerGetDevice();
+	InputDeviceSetRebinding(_device, true);
 }

@@ -48,8 +48,8 @@ function __InputConfigVerbs()
         InputDefineVerb(INPUT_VERB.CONSOLE,   "console",      undefined,     gp_select);
         InputDefineVerb(INPUT_VERB.SHOOT,   "shoot",       undefined,           gp_shoulderl);
         InputDefineVerb(INPUT_VERB.WARP,    "warp",       undefined,            gp_shoulderr);
-		InputDefineVerb(INPUT_VERB.W_LEFT,  "w_left",       undefined,          gp_shoulderlb);
-        InputDefineVerb(INPUT_VERB.W_RIGHT, "w_right",       undefined,         gp_shoulderrb);
+		InputDefineVerb(INPUT_VERB.W_LEFT,  "w_left",       "Z",          gp_shoulderlb);
+        InputDefineVerb(INPUT_VERB.W_RIGHT, "w_right",       "C",         gp_shoulderrb);
     }
     else //Flip A/B over on Switch
     {

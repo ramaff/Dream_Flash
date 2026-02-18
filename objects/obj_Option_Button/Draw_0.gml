@@ -80,19 +80,21 @@
 			key = global.gameMapExpand;
 		}
 		
+		var _icon = noone;
+		
 		if InputDeviceGetAnyGamepadConnected() {
 			switch(type) {
 				case 1:	
-					key = InputVerbGetBindingName(INPUT_VERB.UP)
+					key = InputVerbGetBindingName(INPUT_VERB.LEFT)
 					break;
 				case 2:	
 					key = InputVerbGetBindingName(INPUT_VERB.DOWN)
 					break;
 				case 3:
-					key = InputVerbGetBindingName(INPUT_VERB.LEFT)
+					key = InputVerbGetBindingName(INPUT_VERB.RIGHT)
 					break;
 				case 4:	
-					key = InputVerbGetBindingName(INPUT_VERB.RIGHT)
+					key = InputVerbGetBindingName(INPUT_VERB.UP)
 					break;
 				case 5:	
 					key = InputVerbGetBindingName(INPUT_VERB.SHOOT)
