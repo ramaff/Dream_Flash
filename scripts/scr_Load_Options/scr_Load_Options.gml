@@ -40,6 +40,12 @@ function scr_Load_Options() {
 			global.gameWeaponSwapUp = ini_read_string("Options","gameWeaponSwapUp","Z");
 			
 			global.gameMapExpand = ini_read_string("Options","gameMapExpand","M");
+			
+			var _controller_controls = ini_read_string("Options", "controller_controls",{});
+			_controller_controls = json_parse(_controller_controls);
+			if array_length(struct_get_names(_controller_controls)) > 0 {
+				InputBindingsImport(true, _controller_controls)
+			}
         
 	    ini_close()
 

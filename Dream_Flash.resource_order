@@ -1424,6 +1424,7 @@
     {"name":"reco_soaring_sorrows_v2","order":20,"path":"sprites/reco_soaring_sorrows_v2/reco_soaring_sorrows_v2.yy",},
     {"name":"reco_Soaring_Sorrows","order":54,"path":"sprites/reco_Soaring_Sorrows/reco_Soaring_Sorrows.yy",},
     {"name":"reco_Soul_Collector","order":55,"path":"sprites/reco_Soul_Collector/reco_Soul_Collector.yy",},
+    {"name":"reco_spire","order":32,"path":"sprites/reco_spire/reco_spire.yy",},
     {"name":"reco_spirit_of_mischief_v2","order":12,"path":"sprites/reco_spirit_of_mischief_v2/reco_spirit_of_mischief_v2.yy",},
     {"name":"reco_Spirit_of_Mischief","order":56,"path":"sprites/reco_Spirit_of_Mischief/reco_Spirit_of_Mischief.yy",},
     {"name":"reco_Spooky_Spirit","order":57,"path":"sprites/reco_Spooky_Spirit/reco_Spooky_Spirit.yy",},

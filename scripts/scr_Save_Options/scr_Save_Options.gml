@@ -33,6 +33,22 @@ function scr_Save_Options() {
 	ini_write_string("Options", "gameWeaponSwapDown", global.gameWeaponSwapDown);
 	ini_write_string("Options", "gameWeaponSwapUp", global.gameWeaponSwapUp);
 	ini_write_string("Options", "gameMapExpand", global.gameMapExpand);
+	
+	ini_write_string("Options", "gameMoveLeft", global.gameMoveLeft);
+	ini_write_string("Options", "gameMoveRight", global.gameMoveRight);
+	ini_write_string("Options", "gameMoveUp", global.gameMoveUp);
+	ini_write_string("Options", "gameMoveDown", global.gameMoveDown);
+	
+	ini_write_string("Options", "gamePressShoot", global.gamePressShoot);
+	ini_write_string("Options", "gamePressTeleport", global.gamePressTeleport);
+	ini_write_string("Options", "gameWeaponSwapDown", global.gameWeaponSwapDown);
+	ini_write_string("Options", "gameWeaponSwapUp", global.gameWeaponSwapUp);
+	ini_write_string("Options", "gameMapExpand", global.gameMapExpand);
+	
+	var _device = InputPlayerGetDevice();
+	var _bindings = InputBindingsExport(true)
+	
+	ini_write_string("Options", "controller_controls", string_replace_all(json_stringify(_bindings), "\"", "'"));
 
 	ini_close();
 
