@@ -158,7 +158,7 @@ function scr_soul_shot_bullet_hit_v2(_bullet_stats){
 		if shot_stats.Shot_Bullet_Displace >= 1 {
 
 			var point_dir = point_direction(x, y, other.x, other.y)
-			var magnitude = shot_stats.Shot_Bullet_Displace * 0.5 * (1 + speed)
+			var magnitude = 0.5 * (shot_stats.Shot_Bullet_Displace + (1 + speed));
 			other.x += lengthdir_x(magnitude, direction);
 			other.y += lengthdir_y(magnitude, direction);
 			other.x += lengthdir_x(magnitude, point_dir);

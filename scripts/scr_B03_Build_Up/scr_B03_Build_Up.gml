@@ -50,7 +50,7 @@ function scr_B03_Status_Build_Up() {
 			}
 			var _status_effect_2 = {
 				"duration": _curr_air_bag + 5 + _near_bulls,
-				"max_duration": 600,
+				"max_duration": 900,
 				"bar_sprite": "spr_Air_Bag_Omen_Status_Effect_Bar"
 			}
 			variable_struct_set(soul_step_status_effects, "air_bag_omen", [_status_effect])
@@ -60,5 +60,5 @@ function scr_B03_Status_Build_Up() {
 }
 
 function scr_Soul_Air_Bag_Omen() {
-	scr_Soul_Step_Omen_Generic("air_bag_omen", 600, scr_Spawn_Airbag)
+	scr_Soul_Step_Omen_Generic("air_bag_omen", 900, scr_Spawn_Airbag)
 }

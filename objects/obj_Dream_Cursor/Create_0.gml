@@ -17,21 +17,6 @@ movement_delay = 0;
 movement_max_delay = 15;
 target_button = noone;
 
-function InputDeviceGetAnyActive()
-{
-    static _gamepadArray = __InputSystem().__gamepadArray;
-    
-    if (INPUT_BAN_GAMEPADS) return false;
-    
-    var _i = 0;
-    repeat(array_length(_gamepadArray))
-    {
-        if (InputDeviceIsActive(_i)) return true;
-        ++_i;
-    }
-    
-    return false;
-}
 
 menu_grid = [];
 xx = 0;

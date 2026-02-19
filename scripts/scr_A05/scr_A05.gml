@@ -60,7 +60,7 @@ function scr_A05_Status_Build_Up() {
 		}
 		var _status_effect_2 = {
 			"duration": _curr_fight_response + 5 + _near_bulls,
-			"max_duration": 600,
+			"max_duration": 900,
 			"bar_sprite": "spr_Fight_Response_Omen_Status_Effect_Bar"
 		}
 		variable_struct_set(soul_step_status_effects, "fight_response_omen", [_status_effect])
@@ -69,5 +69,5 @@ function scr_A05_Status_Build_Up() {
 }
 
 function scr_Soul_Fight_Response_Omen() {
-	scr_Soul_Step_Omen_Generic("fight_response_omen", 600, scr_A05)
+	scr_Soul_Step_Omen_Generic("fight_response_omen", 900, scr_A05)
 }

@@ -1,6 +1,6 @@
 // Script assets have changed for v2.3.0 see
 // https://help.yoyogames.com/hc/en-us/articles/360005277377 for more information
-function scr_Scroll_Reco_Menu(_target_butt){
+function scr_Scroll_Reco_Menu(_target_butt, _click = true){
 
 	var _ybott = camera_get_view_y(view) + 91;
 	var _ytop = camera_get_view_y(view) + 599 - 256;
@@ -32,8 +32,10 @@ function scr_Scroll_Reco_Menu(_target_butt){
 		event_perform(ev_draw, 0)
 		event_perform(ev_mouse, ev_left_release)
 	}
-	with (_target_butt) {
-		event_perform(ev_mouse, ev_left_release)
+	if _click {
+		with (_target_butt) {
+			event_perform(ev_mouse, ev_left_release)
+		}
 	}
 
 }

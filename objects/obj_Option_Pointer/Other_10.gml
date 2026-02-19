@@ -59,10 +59,6 @@ if abs(type) = 3 and category = 1 {
     }     
 }
 
-if category = 2 {
-	awaitinput = 1;
-}
-
 if abs(type) = 11 and category = 4 {
     var ww = camera_get_view_width(view);
     var wh = camera_get_view_height(view);

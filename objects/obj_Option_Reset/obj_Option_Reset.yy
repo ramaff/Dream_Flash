@@ -15,8 +15,8 @@
     "path":"folders/Objects/Pause Control/Settings.yy",
   },
   "parentObjectId":{
-    "name":"obj_Pause_Parent",
-    "path":"objects/obj_Pause_Parent/obj_Pause_Parent.yy",
+    "name":"obj_Option_Button",
+    "path":"objects/obj_Option_Button/obj_Option_Button.yy",
   },
   "persistent":false,
   "physicsAngularDamping":0.1,

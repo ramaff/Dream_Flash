@@ -20,8 +20,8 @@ function scr_Hard_Coded_Item_Stats(itemVal, items_to_add = 1, reload = false) {
 	    obj_Soul_Parent.sarmourpierce += 30;
 	}
 	if itemVal = "A03" {
-	    global.soulpowerfactor += 2;
-	    obj_Soul_Parent.spowerfactor += 2;
+	    global.soulpowerfactor += 1.5;
+	    obj_Soul_Parent.spowerfactor += 1.5;
 	}
 	if itemVal = "A04" {
 	    global.soulshotpierce += 1;
@@ -40,8 +40,8 @@ function scr_Hard_Coded_Item_Stats(itemVal, items_to_add = 1, reload = false) {
 	if itemVal = "A07" {
 	}
 	if itemVal = "A08" {
-	    global.soulpowerfactor += 3.5;
-	    obj_Soul_Parent.spowerfactor += 3.5;
+	    global.soulpowerfactor += 2.5;
+	    obj_Soul_Parent.spowerfactor += 2.5;
 	    global.soulshotlifefactor = ((global.soulshotlifefactor + 10) / 1.3) - 10;
 	    obj_Soul_Parent.sshotlifefactor = ((obj_Soul_Parent.sshotlifefactor + 10) / 1.3) - 10;
 	    //global.soulshotspeed += 1;
@@ -49,8 +49,8 @@ function scr_Hard_Coded_Item_Stats(itemVal, items_to_add = 1, reload = false) {
 	    //global.A[8]++;
 	}
 	if itemVal = "A09" {
-	    global.soulshotsizefactor += 0.4;
-	    obj_Soul_Parent.sshotsizefactor += 0.4;
+	    global.soulshotsizefactor += 0.33;
+	    obj_Soul_Parent.sshotsizefactor += 0.33;
 	    global.soulpowerfactor += 1;
 	    obj_Soul_Parent.spowerfactor += 1;
 	    //global.A[9]++;
@@ -58,8 +58,8 @@ function scr_Hard_Coded_Item_Stats(itemVal, items_to_add = 1, reload = false) {
 	if itemVal = "A10" {
 	    global.soulcritadd += 2;
 	    obj_Soul_Parent.scritadd += 2;
-	    global.soulcritaddchance += 10;
-	    obj_Soul_Parent.scritaddchance += 10;
+	    global.soulcritaddchance += 7.5;
+	    obj_Soul_Parent.scritaddchance += 7.5;
 		//global.A[10]++;
 	}
 	if itemVal = "A11" {
@@ -70,13 +70,13 @@ function scr_Hard_Coded_Item_Stats(itemVal, items_to_add = 1, reload = false) {
 	if itemVal = "A12" {
 		global.soulenergyconservationfactor += 0.1;
 	    obj_Soul_Parent.senergyconservationfactor += 0.1;
-		global.soulpowerfactor += 1.5;
-	    obj_Soul_Parent.spowerfactor += 1.5;
+		global.soulpowerfactor += 1;
+	    obj_Soul_Parent.spowerfactor += 1;
 	    //global.A[12]++;
 	}
 	if itemVal = "A13" {
-	    global.soulpoweradd += 2;
-	    obj_Soul_Parent.spoweradd += 2;
+	    global.soulpoweradd += 1;
+	    obj_Soul_Parent.spoweradd += 1;
 	    global.soulpowerfactor += 1;
 	    obj_Soul_Parent.spowerfactor += 1;
 	    //global.A[13]++;
@@ -239,8 +239,8 @@ function scr_Hard_Coded_Item_Stats(itemVal, items_to_add = 1, reload = false) {
 	    //global.D[1]++;
 	}
 	if itemVal = "D02" {
-	    global.souldelayconservationfactor += 0.3;
-	    obj_Soul_Parent.sdelayconservationfactor += 0.3;
+	    global.souldelayconservationfactor += 0.25;
+	    obj_Soul_Parent.sdelayconservationfactor += 0.25;
 	    //global.D[2]++;
 	}
 	if itemVal = "D03" {
@@ -266,8 +266,8 @@ function scr_Hard_Coded_Item_Stats(itemVal, items_to_add = 1, reload = false) {
 	    //global.D[7]++;
 	}
 	if itemVal = "D08" {
-	    global.souldelayconservationfactor += 0.55;
-	    obj_Soul_Parent.sdelayconservationfactor += 0.55;
+	    global.souldelayconservationfactor += 0.45;
+	    obj_Soul_Parent.sdelayconservationfactor += 0.45;
 	    global.soulaccuracy = global.soulaccuracy * 0.5;
 	    obj_Soul_Parent.saccuracy = obj_Soul_Parent.saccuracy * 0.5;
 	    //global.D[8]++;
@@ -901,8 +901,8 @@ function scr_Hard_Coded_Item_Stats(itemVal, items_to_add = 1, reload = false) {
 	}
 	if itemVal = "OC01" {
 	    //global.OC[1]++;
-		global.souldelayconservationfactor += 0.3;
-	    obj_Soul_Parent.sdelayconservationfactor += 0.3;
+		global.souldelayconservationfactor += 0.25;
+	    obj_Soul_Parent.sdelayconservationfactor += 0.25;
 		global.souldefenseadd += 1;
 	    obj_Soul_Parent.sdefenseadd += 1;
 		global.bossfireratefactor += 0.15;
@@ -921,8 +921,8 @@ function scr_Hard_Coded_Item_Stats(itemVal, items_to_add = 1, reload = false) {
 	if itemVal = "OC03" {
 	}
 	if itemVal = "OC04" {
-		global.soulpowerfactor += 4;
-	    obj_Soul_Parent.spowerfactor += 4;
+		global.soulpowerfactor += 3;
+	    obj_Soul_Parent.spowerfactor += 3;
 	}
 
 	if itemVal = "P01" {
@@ -1139,11 +1139,11 @@ function scr_Hard_Coded_Item_Stats(itemVal, items_to_add = 1, reload = false) {
 	
 	if itemVal = "XA01" {
 	    //global.XA[1]++;
-		global.soulpowerfactor += 2.25;
-	    obj_Soul_Parent.spowerfactor += 2.25;
+		global.soulpowerfactor += 2;
+	    obj_Soul_Parent.spowerfactor += 2;
 		global.bossdamagefactor += 0.3;
-		global.soulaccuracy = global.soulaccuracy * 0.7;
-	    obj_Soul_Parent.saccuracy = obj_Soul_Parent.saccuracy * 0.7;
+		global.soulaccuracy = global.soulaccuracy * 0.6;
+	    obj_Soul_Parent.saccuracy = obj_Soul_Parent.saccuracy * 0.6;
 	}
 	if itemVal = "XA02" {
 	    //global.XA[2]++;

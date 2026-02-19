@@ -3,7 +3,6 @@
 
 event_inherited()
 
-
 if instance_exists(bullet_stats.bullet_target) {
 	var _dist = point_distance(x, y, bullet_stats.bullet_target.x, bullet_stats.bullet_target.y)
 	if _dist < 150 {

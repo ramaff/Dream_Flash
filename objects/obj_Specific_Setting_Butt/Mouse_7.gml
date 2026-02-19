@@ -12,6 +12,7 @@ if global.layerdeep = 2 {
 	
 	var i;
 	var _max_i = 0
+	var _max_x = 0;
 	var _cursor = noone;
 	_cursor = instance_create_depth(x, y, depth - 100, obj_Dream_Cursor)
 	_cursor.menu_grid = []
@@ -52,7 +53,8 @@ if global.layerdeep = 2 {
         }
     }
     if category = 2 {
-		_max_i = 9;
+		_max_i = 8;
+		_max_x = 1;
 		if !instance_exists(obj_Recollection_Scroll_Bar) {
 			instance_create(camera_get_view_x(view) + 32,camera_get_view_y(view) + 144,obj_Recollection_Scroll_Bar);
 		}
@@ -62,15 +64,17 @@ if global.layerdeep = 2 {
                 category = other.category;
 				_cursor.menu_grid[0, i - 1] = id;
             }
-            with instance_create(camera_get_view_x(view) + camera_get_view_width(view) / 2 + 64 + 128,camera_get_view_y(view) + 96 * i,obj_Option_Pointer) {
+            /*with instance_create(camera_get_view_x(view) + camera_get_view_width(view) / 2 + 64 + 128,camera_get_view_y(view) + 96 * i,obj_Option_Pointer) {
                 type = i;
                 category = other.category;
-            }
+            } */
         }
 			with instance_create(camera_get_view_x(view) + camera_get_view_width(view) / 2 + 384,camera_get_view_y(view) + 480,obj_Option_Reset) {
 	            type = 10;
 	            category = 2;
-				_cursor.menu_grid[0, 9] = id;
+				for(i = 1; i <= 9; i++) {
+					_cursor.menu_grid[1, i - 1] = id;
+				}
 	        }
     }
     if category = 3 {
@@ -182,7 +186,7 @@ if global.layerdeep = 2 {
 	
 	with (_cursor) {
 	
-		max_x = 0;
+		max_x = _max_x;
 		max_y = _max_i;
 			
 		xx = 0;

@@ -40,12 +40,12 @@ function scr_Boss_Choose(roomNum, exclude, difficultyAdd = 0) {
 	var _state_pool = [81,82,83,84,86,87,89,90]
 	
 	if global.currentchapter = 1 {
-	    _base_pool = [1,3,5,9,18,19,20,24,25,42,44,57,58,98]
-		_mini_boss_pool = [12, 13, 14, 16, 37, 43, 59, 61, 62]
+	    _base_pool = [1,3,5,9,18,19,24,25,42,44,57,58,98]
+		_mini_boss_pool = [12, 13, 14, 16, 20, 37, 43, 59, 61, 62]
 		
 	}
 	if global.currentchapter = 2 {
-	    _base_pool = [2,3,6,10,14,17,20,23,26,27,32,34,35,36,38,45,48,64];
+	    _base_pool = [2,3,6,10,14,17,23,26,27,32,34,35,36,38,45,48,64];
 		
 	}
 	if global.currentchapter = 3 {
@@ -66,7 +66,7 @@ function scr_Boss_Choose(roomNum, exclude, difficultyAdd = 0) {
 	
 	var _minion_picked = false
 	
-	if array_length(_mini_boss_pool) > 0 and scr_Chance(2.25) {
+	if array_length(_mini_boss_pool) > 0 and scr_Chance(2.15) {
 		_minion_picked = true;
 		bossform = _mini_boss_pool[irandom(array_length(_mini_boss_pool) - 1)]
 	}
@@ -246,9 +246,9 @@ function scr_Boss_Choose(roomNum, exclude, difficultyAdd = 0) {
 
 	if bossform = 20.1 // Manifest Core
 	{
-	    bosstype = obj_Manifest_Core;
-	    difficulty = 4;
-	    global.champ = choose(0,1,2);
+	    bosstype = obj_spire_v2
+	    difficulty = 2;
+	    //global.champ = choose(0,1,2);
 	    //global.champ = 2;
 	}
 

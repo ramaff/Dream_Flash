@@ -40,7 +40,7 @@ if active_attack_delay <= 0 and active_attack_cooldown <= 0 and active_attack_du
 /// Active Attack Pattern Code
 //////////////////////////////////////////////////////////////////////////////////////////    
 
-scr_Default_Attack_Settings();
+scr_default_attack_settings_v2();
 
 // If its time to attack, attack
 if active_attack_delay <= 0 and pattern_cooldown <= 0 and pattern_count > 0 {
@@ -49,6 +49,7 @@ if active_attack_delay <= 0 and pattern_cooldown <= 0 and pattern_count > 0 {
 	
 		// If you gotta change the pattern aim direction
 	    // bossPatternDirection += 0;
+		scr_boss_shoot_v2();
 	}
 	
 	if active_attack = 2 {
@@ -60,9 +61,9 @@ if active_attack_delay <= 0 and pattern_cooldown <= 0 and pattern_count > 0 {
 		scr_Jump_Movement_v2(2);	
 		
 		if pattern_count = floor(pattern_count_max) {
-			bullet_direction = scr_Boss_Bullet_Direction_Formula(scr_Soul_Point(), 30)
+			attack_stats.bullet_direction = scr_Boss_Bullet_Direction_Formula(scr_Soul_Point(), 30)
 		
-			scr_Boss_Shoot();	
+			scr_boss_shoot_v2();
 		}
 	}
 	

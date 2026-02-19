@@ -623,44 +623,18 @@
 
         "Boss 020": {
             "Name": "Manifest Spire",
-            "Recollection_Sprite": "reco_Manifest_Core",
-            "Health_Phase_1": 400,
-            "Health_Phase_2": 250,
+            "Recollection_Sprite": "reco_spire",
+            "Health_Phase_1": 210,
+            "Health_Phase_2": 0,
             "Defense_Phase_1": 25,
             "Defense_Phase_2": 0,
-            "Boss_Danger": 4,
+            "Boss_Danger": 2,
             "Bullet_Speed": 2.75,
             "Move_Speed": 1.75,
-            "recollectionDescription": "Strange construct that can manifest all kinds of other figures.",
+            "recollectionDescription": "Strange construct that can manifest enemies",
             
             "Champ 0.1": {
                 "Health_Phase_1": 100,
-                "Health_Phase_2": 0,
-                "Final_Phase": 1,
-                "Knock_Defense": 1,
-                "Defense_Phase_1": 0
-            },
-            "Champ 1": {
-                "Name": "Vortex Spire",
-                "Recollection_Sprite": "spr_Vortex_Core",
-                "Health_Phase_1": 400,
-                "Health_Phase_2": 300
-            },
-            "Champ 1.1": {
-                "Health_Phase_1": 150,
-                "Health_Phase_2": 0,
-                "Final_Phase": 1,
-                "Knock_Defense": 1,
-                "Defense_Phase_1": 0
-            },
-            "Champ 2": { 
-                "Name":  "Queen Spire",
-                "Recollection_Sprite": "spr_Queen_Core",
-                "Health_Phase_1": 400,
-                "Health_Phase_2": 300
-            },
-            "Champ 2.1": {
-                "Health_Phase_1": 50,
                 "Health_Phase_2": 0,
                 "Final_Phase": 1,
                 "Knock_Defense": 1,
@@ -1716,8 +1690,8 @@
             "Recollection_Sprite": "reco_Bed_Bug",
             "Health_Phase_1": 200,
             "Health_Phase_2": 200,
-            "Defense_Phase_1": 4,
-            "Defense_Phase_2": 4,
+            "Defense_Phase_1": 3,
+            "Defense_Phase_2": 3,
             "Boss_Danger": 4,
             "Bullet_Speed": 3.1,
             "Move_Speed": 2.55,
@@ -1728,24 +1702,24 @@
                 "Recollection_Sprite": "spr_Bed_Bug_Feel",
                 "Health_Phase_1": 325,
                 "Health_Phase_2": 325,
-                "Defense_Phase_1": 5,
-                "Defense_Phase_2": 5
+                "Defense_Phase_1": 4,
+                "Defense_Phase_2": 4
             },
             "Champ 2": { 
                 "Name":  "Bed Bugs (Tier 3)",
                 "Recollection_Sprite": "spr_Bed_Bug_Dream",
                 "Health_Phase_1": 485,
                 "Health_Phase_2": 485,
-                "Defense_Phase_1": 7,
-                "Defense_Phase_2": 7
+                "Defense_Phase_1": 5,
+                "Defense_Phase_2": 5
             },
             "Champ 3": {
                 "Name": "Bed Bugs (Tier 4)",
                 "Recollection_Sprite": "spr_Bed_Bug_Nightmare",
                 "Health_Phase_1": 705,
                 "Health_Phase_2": 705,
-                "Defense_Phase_1": 10,
-                "Defense_Phase_2": 10
+                "Defense_Phase_1": 7,
+                "Defense_Phase_2": 7
             }
         },
         

@@ -8,7 +8,7 @@ function scr_shoot_bullets(_attack_stats, _xx, _yy) {
 	
 	repeat(_attack_stats.bullet_count) {
 		var _c_bull = noone;
-		with instance_create(_xx, _yy, _bull) {
+		with instance_create_depth(_xx, _yy, depth, _bull) {
 			bullet_stats = variable_clone(_attack_stats)
 	        scr_bullet_shoot_properties_v2(bullet_stats);
 
@@ -24,7 +24,7 @@ function scr_shoot_bullets(_attack_stats, _xx, _yy) {
 		}
 	    
 		repeat(_attack_stats.follow_bullets) {
-		    with instance_create(_xx, _yy, obj_follow_the_leader_bullet_v2) {
+		    with instance_create_depth(_xx, _yy, depth, obj_follow_the_leader_bullet_v2) {
 				bullet_stats = variable_clone(_attack_stats)
 		        scr_bullet_shoot_properties_v2(bullet_stats);
 
@@ -40,7 +40,7 @@ function scr_shoot_bullets(_attack_stats, _xx, _yy) {
 		
 		var _ang = 0;
 		repeat(_attack_stats.school_bullets) {
-		    with instance_create(_xx, _yy, obj_school_bullet_v2) {
+		    with instance_create_depth(_xx, _yy, depth, obj_school_bullet_v2) {
 				bullet_stats = variable_clone(_attack_stats)
 		        scr_bullet_shoot_properties_v2(bullet_stats);
 

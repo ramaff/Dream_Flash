@@ -9,7 +9,6 @@ function scr_Item_Recollection_Cloud(time = 1, _stacks = 1) {
 	if instance_exists(cloud) and time < 20 {
 		with(cloud) {
 			alarm[0] = time;
-			//image_alpha = global.recoalpha
 		}
 	} else {
 		if time < 20 {

@@ -7,3 +7,4 @@ if instance_number(obj_Astral_Indicator) > 1 {
 }
 
 stop_following_mouse = 0
+cloud = noone;
