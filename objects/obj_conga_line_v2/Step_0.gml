@@ -43,7 +43,7 @@ if currentphase = 1 {
 	if active_attack = 0 {
 		active_attack_cooldown = min(1, active_attack_cooldown);
 		active_attack_delay = min(1, active_attack_delay);
-		speed = lerp(speed, bossmovespeed * 0, 0.05);
+		speed = lerp(speed, bossmovespeed * 0, 0.5);
 	}
 }
 
@@ -66,6 +66,7 @@ if active_attack_delay <= 0 and active_attack_cooldown <= 0 and active_attack_du
 	// Hop leap attack setup example
 	if active_attack = 2 {
 		// 
+		speed = 0;
 		scr_Boss_Attack_Time_Setup_v2(110, 40, 1, 1, 1, 220);
 		
 		scr_Boss_Jump_Setup_v2(0, 7 * bossmovespeed, x, y);
@@ -100,12 +101,17 @@ if active_attack_delay <= 0 and pattern_cooldown <= 0 and pattern_count > 0 {
 		scr_Jump_Movement_v2(3);	
 		
 		if pattern_count = 1 {
+			image_index = 11;
 			scr_Boss_Stretch("Horizontal", 1)
 			attack_stats.bullet_direction = direction
 			attack_stats.bullet_sprite = "spr_red_bullet_v2"
 			attack_stats.bullet_count = 2;
 			attack_stats.bullet_spread = 180;
 		
+			scr_boss_shoot_v2();
+			
+			attack_stats.bullet_speed += 0.5 * bossbulletspeed;
+			
 			scr_boss_shoot_v2();
 		}
 	
@@ -114,13 +120,15 @@ if active_attack_delay <= 0 and pattern_cooldown <= 0 and pattern_count > 0 {
 	}
 	
 	if active_attack = 2 {
-		scr_Boss_Dash_Movement_v2(4,2);
+		scr_Boss_Dash_Movement_v2(15,15);
 		
 		speed = dash_speed;
+		direction = dash_direction;
 		
 		scr_Jump_Movement_v2(3);	
 		
 		if pattern_count = 1 {
+			image_index = 7;
 			scr_Boss_Stretch("Horizontal", 1)
 			attack_stats.bullet_direction = direction
 			attack_stats.bullet_sprite = "spr_red_bullet_v2"
@@ -164,11 +172,12 @@ if active_attack = 1 {
 	if image_index = _hold_frame {
 		scr_Boss_Wobble("Horizontal", 2, 0.4, 0)	
 	}
-	if pattern_count <= 0 and active_attack_duration <= 200 {
+	if pattern_count <= 0 and active_attack_duration <= 210 {
 		if image_index < 8 {
 			image_index = 8;	
-			scr_Boss_Wobble("Horizontal", 10, 0.4, 0)
 		}
+		scr_Boss_Wobble("Horizontal", 4, 0.4, 0)
+		speed = 0;
 	}
 } else {
 	sprite_index = spr_conga_v2_strut;
