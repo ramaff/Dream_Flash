@@ -119,7 +119,7 @@ if soulDeathFadeSpeed = 0 {
     }
 }
 
-var lerp_speed = 0.15;
+var lerp_speed = 0.25;
 
 soulSizeX = lerp(soulSizeX,abs(size),lerp_speed);
 soulSizeY = lerp(soulSizeY,abs(size),lerp_speed);

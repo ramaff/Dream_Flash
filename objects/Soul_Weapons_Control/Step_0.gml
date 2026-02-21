@@ -7,14 +7,10 @@ if angular_rotation != 0 {
 
 if keyboard_check_pressed(ord(global.gameWeaponSwapDown)) {
 	scr_Weapon_Switch(1);
-}
-if keyboard_check_pressed(ord(global.gameWeaponSwapUp)) {
+} else if keyboard_check_pressed(ord(global.gameWeaponSwapUp)) {
 	scr_Weapon_Switch(-1);
-}
-
-if InputPressed(INPUT_VERB.W_LEFT) {
+} else if InputPressed(INPUT_VERB.W_LEFT) {
 	scr_Weapon_Switch(1);
-}
-if InputPressed(INPUT_VERB.W_RIGHT) {
+} else if InputPressed(INPUT_VERB.W_RIGHT) {
 	scr_Weapon_Switch(-1);
 }
