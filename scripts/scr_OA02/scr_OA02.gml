@@ -31,41 +31,43 @@ function scr_Optimism_Parts() {
 
 function scr_OA02(){
 
-	var _odds = 300 / max(1, global.OA[2])
+	if global.roomtime mod 5 = 0 {
+		var _odds = 30 / max(1, global.OA[2])
 
-	with(obj_Bullet_Parent) {
-		if distance_to_object(other) <= (150) and scr_Chance(_odds) {
-			scr_Optimism_Parts()
-			var poww = 20;
-			if bulletpower <= poww {
-				var xxx = x;
-				var yyy = y;
-				var _dam = bulletpower
-				with(other) {
-					scr_Optimism_Shot(xxx,yyy, _dam);
+		with(obj_Bullet_Parent) {
+			if distance_to_object(other) <= (160) and scr_Chance(_odds) {
+				scr_Optimism_Parts()
+				var poww = 20;
+				if bulletpower <= poww {
+					var xxx = x;
+					var yyy = y;
+					var _dam = bulletpower
+					with(other) {
+						scr_Optimism_Shot(xxx,yyy, _dam);
+					}
+					instance_destroy();	
+				} else {
+					bulletpower -= poww;
+					bulletsize = (bulletpower / bulletpowermax);
 				}
-				instance_destroy();	
-			} else {
-				bulletpower -= poww;
-				bulletsize = (bulletpower / bulletpowermax);
 			}
 		}
-	}
-	with(obj_bullet_parent_v2) {
-		if distance_to_object(other) <= (150) and scr_Chance(_odds) {
-			scr_Optimism_Parts()
-			var poww = 20;
-			if bullet_stats.bullet_power <= poww {
-				var xxx = x;
-				var yyy = y;
-				var _dam = bullet_stats.bullet_power
-				with(other) {
-					scr_Optimism_Shot(xxx,yyy, _dam);
+		with(obj_bullet_parent_v2) {
+			if distance_to_object(other) <= (160) and scr_Chance(_odds) {
+				scr_Optimism_Parts()
+				var poww = 20;
+				if bullet_stats.bullet_power <= poww {
+					var xxx = x;
+					var yyy = y;
+					var _dam = bullet_stats.bullet_power
+					with(other) {
+						scr_Optimism_Shot(xxx,yyy, _dam);
+					}
+					instance_destroy();	
+				} else {
+					bullet_stats.bullet_power -= poww;
+					bullet_stats.bullet_size = (bullet_stats.bullet_power / bullet_stats.bullet_power_max);
 				}
-				instance_destroy();	
-			} else {
-				bullet_stats.bullet_power -= poww;
-				bullet_stats.bullet_size = (bullet_stats.bullet_power / bullet_stats.bullet_power_max);
 			}
 		}
 	}

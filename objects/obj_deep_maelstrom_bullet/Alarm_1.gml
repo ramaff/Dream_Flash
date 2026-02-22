@@ -6,5 +6,8 @@ alarm[1] = max(1, 15 * speed);
 
 bulls = 4
 
+image_xscale *= 0.9;
+image_yscale *= 0.9;
+
 event_user(0)
 

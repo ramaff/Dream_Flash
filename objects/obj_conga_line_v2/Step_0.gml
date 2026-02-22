@@ -11,7 +11,7 @@ if currentphase = 1 {
 	if instance_exists(followtarget) {
 		if point_distance(x, y, followtarget.x, followtarget.y) > 110 {
 			direction = point_direction(x, y, followtarget.x, followtarget.y);
-			speed = followtarget.speed;
+			//speed = lerp(speed, followtarget.speed, 0.05);
 		}
 	} else {
 		var _i = 0;
@@ -132,9 +132,13 @@ if active_attack_delay <= 0 and pattern_cooldown <= 0 and pattern_count > 0 {
 			scr_Boss_Stretch("Horizontal", 1)
 			attack_stats.bullet_direction = direction
 			attack_stats.bullet_sprite = "spr_red_bullet_v2"
-			attack_stats.bullet_count = 8;
-			attack_stats.bullet_spread = 45;
+			attack_stats.bullet_count = 6;
+			attack_stats.bullet_spread = 60;
 		
+			scr_boss_shoot_v2();
+			
+			attack_stats.bullet_speed += 0.5 * bossbulletspeed;
+			
 			scr_boss_shoot_v2();
 			
 			speed = 0;
@@ -168,7 +172,7 @@ if active_attack = 1 {
 	}
 } else if active_attack = 2 {
 	var _hold_frame = 2;
-	scr_Boss_Attack_Sprite_v2(spr_conga_v2_crack, _hold_frame, 4, 6, 220);
+	scr_Boss_Attack_Sprite_v2(spr_conga_v2_crack, _hold_frame, 4, 6, 230);
 	if image_index = _hold_frame {
 		scr_Boss_Wobble("Horizontal", 2, 0.4, 0)	
 	}
