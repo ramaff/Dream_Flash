@@ -8,12 +8,7 @@ scr_Boss_Wobble("Horizontal", 0.4, 1, 0);
 
 if currentphase = 1 {
 	
-	if instance_exists(followtarget) {
-		if point_distance(x, y, followtarget.x, followtarget.y) > 110 {
-			direction = point_direction(x, y, followtarget.x, followtarget.y);
-			//speed = lerp(speed, followtarget.speed, 0.05);
-		}
-	} else {
+	if !instance_exists(followtarget) {
 		var _i = 0;
 		for(_i = 0; _i < 4; _i++) {
 			var _soul_dir = scr_Soul_Point();
@@ -24,13 +19,20 @@ if currentphase = 1 {
 		if active_attack = 0 {
 			speed = lerp(speed, bossmovespeed * 1.5, 0.05);
 		} else {
-			speed = lerp(speed, bossmovespeed * 0.05, 0.5);
+			speed = 0
+			//speed = lerp(speed, bossmovespeed * 0.05, 0.5);
 		}
+	} else {
+		if point_distance(x, y, followtarget.x, followtarget.y) > 115 {
+			direction = point_direction(x, y, followtarget.x, followtarget.y);
+		}
+		speed = lerp(speed, followtarget.speed, 0.2);
 	}
 	if instance_exists(follower) {
 		follower.active_attack_cooldown = active_attack_cooldown
 		follower.active_attack_delay = active_attack_delay
-		follower.speed = speed;
+		//follower.speed = speed;
+		//follower.direction = point_direction(follower.x, follower.y, x, y)
 		//follower.active_attack_duration = active_attack_duration
 	}
 } else {
@@ -134,6 +136,7 @@ if active_attack_delay <= 0 and pattern_cooldown <= 0 and pattern_count > 0 {
 			attack_stats.bullet_sprite = "spr_red_bullet_v2"
 			attack_stats.bullet_count = 6;
 			attack_stats.bullet_spread = 60;
+			attack_stats.bullet_direction = random(360);
 		
 			scr_boss_shoot_v2();
 			

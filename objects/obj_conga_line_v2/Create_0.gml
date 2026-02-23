@@ -35,7 +35,7 @@ if instance_number(obj_conga_line_v2) <= total_num {
 	var xx = x;
 	var yy = y;
 
-	for(var i = 0; i < 12; i++) {
+	for(var i = 0; i < 10; i++) {
 		xx += lengthdir_x(80, line_angle);
 		yy += lengthdir_y(80, line_angle);
 		
@@ -52,6 +52,7 @@ if instance_number(obj_conga_line_v2) <= total_num {
 		with instance_create(xx,yy,obj_conga_line_v2) {
 			followtarget = ct;
 			followtarget.follower = id;
+			direction = point_direction(x, y, followtarget.x, followtarget.y)
 		
 			ct = id;
 			scr_Boss_Stats_Setup(2);
