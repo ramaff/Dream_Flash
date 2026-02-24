@@ -1174,7 +1174,7 @@
 
         "Boss 044": {
             "Name": "Conga Line",
-            "Recollection_Sprite": "reco_Conga_Line",
+            "Recollection_Sprite": "reco_conga_v2",
             "Health_Phase_1": 45,
             "Health_Phase_2": 30,
             "Defense_Phase_1": 0,

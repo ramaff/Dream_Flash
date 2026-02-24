@@ -13,7 +13,7 @@ scr_Boss_Size_Setup(0.5);
 // Needed for bobbing/boss shadows
 scr_Boss_Height_Setup(0);
 
-death_sprite = spr_boss_template_ko;
+death_sprite = spr_conga_v2_ko;
 boss_palette = spr_boss_template_palette;
 boss_palette_index = champ;
 
@@ -62,6 +62,8 @@ if instance_number(obj_conga_line_v2) <= total_num {
 			difficulty = global.floor[global.currentroom,24];
 			
 			active_attack_cooldown = 240;
+			
+			death_sprite = spr_conga_v2_ko;
 		}
 	}
 }

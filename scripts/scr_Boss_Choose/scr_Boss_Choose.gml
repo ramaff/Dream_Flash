@@ -417,7 +417,7 @@ function scr_Boss_Choose(roomNum, exclude, difficultyAdd = 0) {
 	}
 	if bossform = 44.1 // Congaline
 	{
-	    bosstype = obj_conga_line;
+	    bosstype = obj_conga_line_v2;
 	    difficulty = 2;
 	    global.champ = choose(0);
 	}
