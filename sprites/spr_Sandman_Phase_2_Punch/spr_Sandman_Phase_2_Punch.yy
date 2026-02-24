@@ -33,7 +33,7 @@
   "origin":4,
   "parent":{
     "name":"Sandman Group",
-    "path":"folders/Sprites/Boss Sprites/Feel Bosses/Sandman Group.yy",
+    "path":"folders/Sprites/Boss Sprites/Feel Bosses/aaa_v1/Sandman Group.yy",
   },
   "preMultiplyAlpha":false,
   "resourceType":"GMSprite",
@@ -75,14 +75,30 @@
     "timeUnits":1,
     "tracks":[
       {"$GMSpriteFramesTrack":"","builtinName":0,"events":[],"inheritsTrackColour":true,"interpolation":1,"isCreationTrack":false,"keyframes":{"$KeyframeStore<SpriteFrameKeyframe>":"","Keyframes":[
-            {"$Keyframe<SpriteFrameKeyframe>":"","Channels":{"0":{"$SpriteFrameKeyframe":"","Id":{"name":"b2475dd1-473b-4870-aaeb-75b30e229602","path":"sprites/spr_Sandman_Phase_2_Punch/spr_Sandman_Phase_2_Punch.yy",},"resourceType":"SpriteFrameKeyframe","resourceVersion":"2.0",},},"Disabled":false,"id":"56920dcb-ce95-4bfe-8eb5-0acbde6a600e","IsCreationKey":false,"Key":0.0,"Length":1.0,"resourceType":"Keyframe<SpriteFrameKeyframe>","resourceVersion":"2.0","Stretch":false,},
-            {"$Keyframe<SpriteFrameKeyframe>":"","Channels":{"0":{"$SpriteFrameKeyframe":"","Id":{"name":"ce4a45f2-c8d9-4faa-b6a3-11ef205ee51d","path":"sprites/spr_Sandman_Phase_2_Punch/spr_Sandman_Phase_2_Punch.yy",},"resourceType":"SpriteFrameKeyframe","resourceVersion":"2.0",},},"Disabled":false,"id":"66cfa24b-7f40-4e9d-980b-d5ca16885ea9","IsCreationKey":false,"Key":1.0,"Length":1.0,"resourceType":"Keyframe<SpriteFrameKeyframe>","resourceVersion":"2.0","Stretch":false,},
-            {"$Keyframe<SpriteFrameKeyframe>":"","Channels":{"0":{"$SpriteFrameKeyframe":"","Id":{"name":"0da2c41a-d2ab-4768-91c4-aae656dceec1","path":"sprites/spr_Sandman_Phase_2_Punch/spr_Sandman_Phase_2_Punch.yy",},"resourceType":"SpriteFrameKeyframe","resourceVersion":"2.0",},},"Disabled":false,"id":"1c2b1fca-16a7-4b49-a0b9-7b16b2ea963a","IsCreationKey":false,"Key":2.0,"Length":1.0,"resourceType":"Keyframe<SpriteFrameKeyframe>","resourceVersion":"2.0","Stretch":false,},
-            {"$Keyframe<SpriteFrameKeyframe>":"","Channels":{"0":{"$SpriteFrameKeyframe":"","Id":{"name":"3a4bd9ed-f6c5-4ccd-9a2f-f59a4ae0e2d9","path":"sprites/spr_Sandman_Phase_2_Punch/spr_Sandman_Phase_2_Punch.yy",},"resourceType":"SpriteFrameKeyframe","resourceVersion":"2.0",},},"Disabled":false,"id":"70bc1f0b-6a3c-4969-9d7d-9df36ca8f186","IsCreationKey":false,"Key":3.0,"Length":1.0,"resourceType":"Keyframe<SpriteFrameKeyframe>","resourceVersion":"2.0","Stretch":false,},
-            {"$Keyframe<SpriteFrameKeyframe>":"","Channels":{"0":{"$SpriteFrameKeyframe":"","Id":{"name":"d68cf7fe-55da-4fc1-81e0-94d6645ca4fb","path":"sprites/spr_Sandman_Phase_2_Punch/spr_Sandman_Phase_2_Punch.yy",},"resourceType":"SpriteFrameKeyframe","resourceVersion":"2.0",},},"Disabled":false,"id":"e1669a65-0f9a-410e-b461-842d0232e5a8","IsCreationKey":false,"Key":4.0,"Length":1.0,"resourceType":"Keyframe<SpriteFrameKeyframe>","resourceVersion":"2.0","Stretch":false,},
-            {"$Keyframe<SpriteFrameKeyframe>":"","Channels":{"0":{"$SpriteFrameKeyframe":"","Id":{"name":"e234164e-14fa-47bb-82ef-f5cb74c9a6b9","path":"sprites/spr_Sandman_Phase_2_Punch/spr_Sandman_Phase_2_Punch.yy",},"resourceType":"SpriteFrameKeyframe","resourceVersion":"2.0",},},"Disabled":false,"id":"15548a76-634f-40ef-b5fc-2c40ce1732c3","IsCreationKey":false,"Key":5.0,"Length":1.0,"resourceType":"Keyframe<SpriteFrameKeyframe>","resourceVersion":"2.0","Stretch":false,},
-            {"$Keyframe<SpriteFrameKeyframe>":"","Channels":{"0":{"$SpriteFrameKeyframe":"","Id":{"name":"ce6a6c00-8cfa-48f4-96b0-294a7975711a","path":"sprites/spr_Sandman_Phase_2_Punch/spr_Sandman_Phase_2_Punch.yy",},"resourceType":"SpriteFrameKeyframe","resourceVersion":"2.0",},},"Disabled":false,"id":"a0bf1eb7-303a-4010-92fe-62d8b82111b4","IsCreationKey":false,"Key":6.0,"Length":1.0,"resourceType":"Keyframe<SpriteFrameKeyframe>","resourceVersion":"2.0","Stretch":false,},
-            {"$Keyframe<SpriteFrameKeyframe>":"","Channels":{"0":{"$SpriteFrameKeyframe":"","Id":{"name":"707a834b-cb8c-46db-8065-80bbb52f417e","path":"sprites/spr_Sandman_Phase_2_Punch/spr_Sandman_Phase_2_Punch.yy",},"resourceType":"SpriteFrameKeyframe","resourceVersion":"2.0",},},"Disabled":false,"id":"fb3b2c75-977e-401c-b7f9-d164a5c53003","IsCreationKey":false,"Key":7.0,"Length":1.0,"resourceType":"Keyframe<SpriteFrameKeyframe>","resourceVersion":"2.0","Stretch":false,},
+            {"$Keyframe<SpriteFrameKeyframe>":"","Channels":{
+                "0":{"$SpriteFrameKeyframe":"","Id":{"name":"b2475dd1-473b-4870-aaeb-75b30e229602","path":"sprites/spr_Sandman_Phase_2_Punch/spr_Sandman_Phase_2_Punch.yy",},"resourceType":"SpriteFrameKeyframe","resourceVersion":"2.0",},
+              },"Disabled":false,"id":"56920dcb-ce95-4bfe-8eb5-0acbde6a600e","IsCreationKey":false,"Key":0.0,"Length":1.0,"resourceType":"Keyframe<SpriteFrameKeyframe>","resourceVersion":"2.0","Stretch":false,},
+            {"$Keyframe<SpriteFrameKeyframe>":"","Channels":{
+                "0":{"$SpriteFrameKeyframe":"","Id":{"name":"ce4a45f2-c8d9-4faa-b6a3-11ef205ee51d","path":"sprites/spr_Sandman_Phase_2_Punch/spr_Sandman_Phase_2_Punch.yy",},"resourceType":"SpriteFrameKeyframe","resourceVersion":"2.0",},
+              },"Disabled":false,"id":"66cfa24b-7f40-4e9d-980b-d5ca16885ea9","IsCreationKey":false,"Key":1.0,"Length":1.0,"resourceType":"Keyframe<SpriteFrameKeyframe>","resourceVersion":"2.0","Stretch":false,},
+            {"$Keyframe<SpriteFrameKeyframe>":"","Channels":{
+                "0":{"$SpriteFrameKeyframe":"","Id":{"name":"0da2c41a-d2ab-4768-91c4-aae656dceec1","path":"sprites/spr_Sandman_Phase_2_Punch/spr_Sandman_Phase_2_Punch.yy",},"resourceType":"SpriteFrameKeyframe","resourceVersion":"2.0",},
+              },"Disabled":false,"id":"1c2b1fca-16a7-4b49-a0b9-7b16b2ea963a","IsCreationKey":false,"Key":2.0,"Length":1.0,"resourceType":"Keyframe<SpriteFrameKeyframe>","resourceVersion":"2.0","Stretch":false,},
+            {"$Keyframe<SpriteFrameKeyframe>":"","Channels":{
+                "0":{"$SpriteFrameKeyframe":"","Id":{"name":"3a4bd9ed-f6c5-4ccd-9a2f-f59a4ae0e2d9","path":"sprites/spr_Sandman_Phase_2_Punch/spr_Sandman_Phase_2_Punch.yy",},"resourceType":"SpriteFrameKeyframe","resourceVersion":"2.0",},
+              },"Disabled":false,"id":"70bc1f0b-6a3c-4969-9d7d-9df36ca8f186","IsCreationKey":false,"Key":3.0,"Length":1.0,"resourceType":"Keyframe<SpriteFrameKeyframe>","resourceVersion":"2.0","Stretch":false,},
+            {"$Keyframe<SpriteFrameKeyframe>":"","Channels":{
+                "0":{"$SpriteFrameKeyframe":"","Id":{"name":"d68cf7fe-55da-4fc1-81e0-94d6645ca4fb","path":"sprites/spr_Sandman_Phase_2_Punch/spr_Sandman_Phase_2_Punch.yy",},"resourceType":"SpriteFrameKeyframe","resourceVersion":"2.0",},
+              },"Disabled":false,"id":"e1669a65-0f9a-410e-b461-842d0232e5a8","IsCreationKey":false,"Key":4.0,"Length":1.0,"resourceType":"Keyframe<SpriteFrameKeyframe>","resourceVersion":"2.0","Stretch":false,},
+            {"$Keyframe<SpriteFrameKeyframe>":"","Channels":{
+                "0":{"$SpriteFrameKeyframe":"","Id":{"name":"e234164e-14fa-47bb-82ef-f5cb74c9a6b9","path":"sprites/spr_Sandman_Phase_2_Punch/spr_Sandman_Phase_2_Punch.yy",},"resourceType":"SpriteFrameKeyframe","resourceVersion":"2.0",},
+              },"Disabled":false,"id":"15548a76-634f-40ef-b5fc-2c40ce1732c3","IsCreationKey":false,"Key":5.0,"Length":1.0,"resourceType":"Keyframe<SpriteFrameKeyframe>","resourceVersion":"2.0","Stretch":false,},
+            {"$Keyframe<SpriteFrameKeyframe>":"","Channels":{
+                "0":{"$SpriteFrameKeyframe":"","Id":{"name":"ce6a6c00-8cfa-48f4-96b0-294a7975711a","path":"sprites/spr_Sandman_Phase_2_Punch/spr_Sandman_Phase_2_Punch.yy",},"resourceType":"SpriteFrameKeyframe","resourceVersion":"2.0",},
+              },"Disabled":false,"id":"a0bf1eb7-303a-4010-92fe-62d8b82111b4","IsCreationKey":false,"Key":6.0,"Length":1.0,"resourceType":"Keyframe<SpriteFrameKeyframe>","resourceVersion":"2.0","Stretch":false,},
+            {"$Keyframe<SpriteFrameKeyframe>":"","Channels":{
+                "0":{"$SpriteFrameKeyframe":"","Id":{"name":"707a834b-cb8c-46db-8065-80bbb52f417e","path":"sprites/spr_Sandman_Phase_2_Punch/spr_Sandman_Phase_2_Punch.yy",},"resourceType":"SpriteFrameKeyframe","resourceVersion":"2.0",},
+              },"Disabled":false,"id":"fb3b2c75-977e-401c-b7f9-d164a5c53003","IsCreationKey":false,"Key":7.0,"Length":1.0,"resourceType":"Keyframe<SpriteFrameKeyframe>","resourceVersion":"2.0","Stretch":false,},
           ],"resourceType":"KeyframeStore<SpriteFrameKeyframe>","resourceVersion":"2.0",},"modifiers":[],"name":"frames","resourceType":"GMSpriteFramesTrack","resourceVersion":"2.0","spriteId":null,"trackColour":0,"tracks":[],"traits":0,},
     ],
     "visibleRange":null,

@@ -38,6 +38,8 @@ function scr_Weapon_Use_List(cWP = global.currentweapon, _weap_slot = 0) {
 		}
 	}
 	
+	_current_weapon_stats.Real_Essence_Cost = max(0, _current_weapon_stats.Real_Essence_Cost);
+	
 	if senergy < _current_weapon_stats.Real_Essence_Cost {
 		scr_C08();	
 	}
