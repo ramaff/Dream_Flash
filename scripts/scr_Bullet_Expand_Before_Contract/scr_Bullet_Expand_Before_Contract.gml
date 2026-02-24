@@ -4,6 +4,7 @@ function scr_bullet_expand_before_contract_v2(_bullet_stats, _remaining_time = a
 
 	if _remaining_time <= _expand_time and _remaining_time > 15 {
 		_bullet_stats.bullet_size += _bullet_stats.bullet_size * _expand_rate;
+		_bullet_stats.bullet_size = clamp(_bullet_stats.bullet_size, 0.01, 4);
 	
 		image_xscale = _bullet_stats.bullet_size;
 		image_yscale = _bullet_stats.bullet_size;

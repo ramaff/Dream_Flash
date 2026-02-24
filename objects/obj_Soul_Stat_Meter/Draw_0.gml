@@ -35,7 +35,7 @@ if stat = 4 and global.souldexterity > 0 {
 if stat = 5 and global.soulperception > 0 {
     draw_text(x+45,y+84, string_hash_to_newline("PER"));
     sPercent = (global.soulperception) * 2.5;
-	draw_text(x+45,y+60, string_hash_to_newline(sPercent / 2.5));
+	draw_text(x+45,y+60, string_hash_to_newline(sPercent / 20));
 	vis = 1;
 }
 if stat = 6 and global.soulstate > 0 {

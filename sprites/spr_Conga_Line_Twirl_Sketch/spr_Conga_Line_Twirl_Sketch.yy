@@ -32,7 +32,7 @@
   "origin":9,
   "parent":{
     "name":"Congaline",
-    "path":"folders/Sprites/Boss Sprites/Flash Bosses/Congaline.yy",
+    "path":"folders/Sprites/Boss Sprites/Flash Bosses/aaa_v1/Congaline.yy",
   },
   "preMultiplyAlpha":false,
   "resourceType":"GMSprite",
@@ -74,13 +74,27 @@
     "timeUnits":1,
     "tracks":[
       {"$GMSpriteFramesTrack":"","builtinName":0,"events":[],"inheritsTrackColour":true,"interpolation":1,"isCreationTrack":false,"keyframes":{"$KeyframeStore<SpriteFrameKeyframe>":"","Keyframes":[
-            {"$Keyframe<SpriteFrameKeyframe>":"","Channels":{"0":{"$SpriteFrameKeyframe":"","Id":{"name":"9040f937-e742-4381-bd12-a74cdc64786b","path":"sprites/spr_Conga_Line_Twirl_Sketch/spr_Conga_Line_Twirl_Sketch.yy",},"resourceType":"SpriteFrameKeyframe","resourceVersion":"2.0",},},"Disabled":false,"id":"44619312-1363-44bd-9106-f053698267d6","IsCreationKey":false,"Key":0.0,"Length":1.0,"resourceType":"Keyframe<SpriteFrameKeyframe>","resourceVersion":"2.0","Stretch":false,},
-            {"$Keyframe<SpriteFrameKeyframe>":"","Channels":{"0":{"$SpriteFrameKeyframe":"","Id":{"name":"2f1fc942-85ed-4b3d-a74d-a2d67151fd8f","path":"sprites/spr_Conga_Line_Twirl_Sketch/spr_Conga_Line_Twirl_Sketch.yy",},"resourceType":"SpriteFrameKeyframe","resourceVersion":"2.0",},},"Disabled":false,"id":"51956724-eca1-4ca0-bc22-a8e030cc03c0","IsCreationKey":false,"Key":1.0,"Length":1.0,"resourceType":"Keyframe<SpriteFrameKeyframe>","resourceVersion":"2.0","Stretch":false,},
-            {"$Keyframe<SpriteFrameKeyframe>":"","Channels":{"0":{"$SpriteFrameKeyframe":"","Id":{"name":"10280b88-2e9a-454b-a44d-f85c24dc5c41","path":"sprites/spr_Conga_Line_Twirl_Sketch/spr_Conga_Line_Twirl_Sketch.yy",},"resourceType":"SpriteFrameKeyframe","resourceVersion":"2.0",},},"Disabled":false,"id":"174bf42d-c4bb-4725-a126-da6789af56cf","IsCreationKey":false,"Key":2.0,"Length":1.0,"resourceType":"Keyframe<SpriteFrameKeyframe>","resourceVersion":"2.0","Stretch":false,},
-            {"$Keyframe<SpriteFrameKeyframe>":"","Channels":{"0":{"$SpriteFrameKeyframe":"","Id":{"name":"460bf3a9-9a72-4c70-9b90-c21a05fecb78","path":"sprites/spr_Conga_Line_Twirl_Sketch/spr_Conga_Line_Twirl_Sketch.yy",},"resourceType":"SpriteFrameKeyframe","resourceVersion":"2.0",},},"Disabled":false,"id":"9410f36f-a4ba-4a95-b634-9dbb8d09b215","IsCreationKey":false,"Key":3.0,"Length":1.0,"resourceType":"Keyframe<SpriteFrameKeyframe>","resourceVersion":"2.0","Stretch":false,},
-            {"$Keyframe<SpriteFrameKeyframe>":"","Channels":{"0":{"$SpriteFrameKeyframe":"","Id":{"name":"ec1adeef-57d2-4543-89da-10c321339604","path":"sprites/spr_Conga_Line_Twirl_Sketch/spr_Conga_Line_Twirl_Sketch.yy",},"resourceType":"SpriteFrameKeyframe","resourceVersion":"2.0",},},"Disabled":false,"id":"612cb715-b6fd-4ce9-88ef-ef3f12d3458b","IsCreationKey":false,"Key":4.0,"Length":1.0,"resourceType":"Keyframe<SpriteFrameKeyframe>","resourceVersion":"2.0","Stretch":false,},
-            {"$Keyframe<SpriteFrameKeyframe>":"","Channels":{"0":{"$SpriteFrameKeyframe":"","Id":{"name":"36f2244b-be83-483f-896d-9c919721d8e7","path":"sprites/spr_Conga_Line_Twirl_Sketch/spr_Conga_Line_Twirl_Sketch.yy",},"resourceType":"SpriteFrameKeyframe","resourceVersion":"2.0",},},"Disabled":false,"id":"84bb3223-37fc-494f-8aa8-6f759707aae5","IsCreationKey":false,"Key":5.0,"Length":1.0,"resourceType":"Keyframe<SpriteFrameKeyframe>","resourceVersion":"2.0","Stretch":false,},
-            {"$Keyframe<SpriteFrameKeyframe>":"","Channels":{"0":{"$SpriteFrameKeyframe":"","Id":{"name":"b761549f-69d9-441d-bd25-eb71460ca9b9","path":"sprites/spr_Conga_Line_Twirl_Sketch/spr_Conga_Line_Twirl_Sketch.yy",},"resourceType":"SpriteFrameKeyframe","resourceVersion":"2.0",},},"Disabled":false,"id":"0b482b78-1ff6-4ad9-a2a2-965f31bf317f","IsCreationKey":false,"Key":6.0,"Length":1.0,"resourceType":"Keyframe<SpriteFrameKeyframe>","resourceVersion":"2.0","Stretch":false,},
+            {"$Keyframe<SpriteFrameKeyframe>":"","Channels":{
+                "0":{"$SpriteFrameKeyframe":"","Id":{"name":"9040f937-e742-4381-bd12-a74cdc64786b","path":"sprites/spr_Conga_Line_Twirl_Sketch/spr_Conga_Line_Twirl_Sketch.yy",},"resourceType":"SpriteFrameKeyframe","resourceVersion":"2.0",},
+              },"Disabled":false,"id":"44619312-1363-44bd-9106-f053698267d6","IsCreationKey":false,"Key":0.0,"Length":1.0,"resourceType":"Keyframe<SpriteFrameKeyframe>","resourceVersion":"2.0","Stretch":false,},
+            {"$Keyframe<SpriteFrameKeyframe>":"","Channels":{
+                "0":{"$SpriteFrameKeyframe":"","Id":{"name":"2f1fc942-85ed-4b3d-a74d-a2d67151fd8f","path":"sprites/spr_Conga_Line_Twirl_Sketch/spr_Conga_Line_Twirl_Sketch.yy",},"resourceType":"SpriteFrameKeyframe","resourceVersion":"2.0",},
+              },"Disabled":false,"id":"51956724-eca1-4ca0-bc22-a8e030cc03c0","IsCreationKey":false,"Key":1.0,"Length":1.0,"resourceType":"Keyframe<SpriteFrameKeyframe>","resourceVersion":"2.0","Stretch":false,},
+            {"$Keyframe<SpriteFrameKeyframe>":"","Channels":{
+                "0":{"$SpriteFrameKeyframe":"","Id":{"name":"10280b88-2e9a-454b-a44d-f85c24dc5c41","path":"sprites/spr_Conga_Line_Twirl_Sketch/spr_Conga_Line_Twirl_Sketch.yy",},"resourceType":"SpriteFrameKeyframe","resourceVersion":"2.0",},
+              },"Disabled":false,"id":"174bf42d-c4bb-4725-a126-da6789af56cf","IsCreationKey":false,"Key":2.0,"Length":1.0,"resourceType":"Keyframe<SpriteFrameKeyframe>","resourceVersion":"2.0","Stretch":false,},
+            {"$Keyframe<SpriteFrameKeyframe>":"","Channels":{
+                "0":{"$SpriteFrameKeyframe":"","Id":{"name":"460bf3a9-9a72-4c70-9b90-c21a05fecb78","path":"sprites/spr_Conga_Line_Twirl_Sketch/spr_Conga_Line_Twirl_Sketch.yy",},"resourceType":"SpriteFrameKeyframe","resourceVersion":"2.0",},
+              },"Disabled":false,"id":"9410f36f-a4ba-4a95-b634-9dbb8d09b215","IsCreationKey":false,"Key":3.0,"Length":1.0,"resourceType":"Keyframe<SpriteFrameKeyframe>","resourceVersion":"2.0","Stretch":false,},
+            {"$Keyframe<SpriteFrameKeyframe>":"","Channels":{
+                "0":{"$SpriteFrameKeyframe":"","Id":{"name":"ec1adeef-57d2-4543-89da-10c321339604","path":"sprites/spr_Conga_Line_Twirl_Sketch/spr_Conga_Line_Twirl_Sketch.yy",},"resourceType":"SpriteFrameKeyframe","resourceVersion":"2.0",},
+              },"Disabled":false,"id":"612cb715-b6fd-4ce9-88ef-ef3f12d3458b","IsCreationKey":false,"Key":4.0,"Length":1.0,"resourceType":"Keyframe<SpriteFrameKeyframe>","resourceVersion":"2.0","Stretch":false,},
+            {"$Keyframe<SpriteFrameKeyframe>":"","Channels":{
+                "0":{"$SpriteFrameKeyframe":"","Id":{"name":"36f2244b-be83-483f-896d-9c919721d8e7","path":"sprites/spr_Conga_Line_Twirl_Sketch/spr_Conga_Line_Twirl_Sketch.yy",},"resourceType":"SpriteFrameKeyframe","resourceVersion":"2.0",},
+              },"Disabled":false,"id":"84bb3223-37fc-494f-8aa8-6f759707aae5","IsCreationKey":false,"Key":5.0,"Length":1.0,"resourceType":"Keyframe<SpriteFrameKeyframe>","resourceVersion":"2.0","Stretch":false,},
+            {"$Keyframe<SpriteFrameKeyframe>":"","Channels":{
+                "0":{"$SpriteFrameKeyframe":"","Id":{"name":"b761549f-69d9-441d-bd25-eb71460ca9b9","path":"sprites/spr_Conga_Line_Twirl_Sketch/spr_Conga_Line_Twirl_Sketch.yy",},"resourceType":"SpriteFrameKeyframe","resourceVersion":"2.0",},
+              },"Disabled":false,"id":"0b482b78-1ff6-4ad9-a2a2-965f31bf317f","IsCreationKey":false,"Key":6.0,"Length":1.0,"resourceType":"Keyframe<SpriteFrameKeyframe>","resourceVersion":"2.0","Stretch":false,},
           ],"resourceType":"KeyframeStore<SpriteFrameKeyframe>","resourceVersion":"2.0",},"modifiers":[],"name":"frames","resourceType":"GMSpriteFramesTrack","resourceVersion":"2.0","spriteId":null,"trackColour":0,"tracks":[],"traits":0,},
     ],
     "visibleRange":null,
