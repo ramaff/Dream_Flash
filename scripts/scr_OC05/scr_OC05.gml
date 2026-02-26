@@ -20,11 +20,11 @@ function scr_OC05(){
 		
 	with (obj_Projectile_Parent) {
 		if shot_stats.Shot_Melee == 0 {
-			var dist = shot_stats.Shot_Speed * (shot_stats.Shot_Exist_Time);
+			var dist = min(2000, abs(shot_stats.Shot_Speed * (shot_stats.Shot_Exist_Time)));
 			var tarPositionX = xx + lengthdir_x(dist, tangle)
 			var tarPositionY = yy + lengthdir_y(dist, tangle)
 				
-			var lerp_amount = convergeLerpSpeed * speed;
+			var lerp_amount = convergeLerpSpeed * min(100, speed);
 				
 			x = lerp(x, tarPositionX, lerp_amount)
 			y = lerp(y, tarPositionY, lerp_amount)
