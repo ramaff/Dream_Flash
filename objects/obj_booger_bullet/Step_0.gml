@@ -25,8 +25,9 @@ var _proj_count = array_length(sticked_projectiles);
 var _xx = lengthdir_x(speed, direction);
 var _yy = lengthdir_y(speed, direction);
 for(_i = 0; _i < _proj_count; _i++) {
-	with(sticked_projectiles[_i]) {
-		x += _xx;
-		y += _yy;
+	var _sticked_projectile = sticked_projectiles[_i]
+	with(variable_struct_get(_sticked_projectile, "id")) {
+		x = other.x + variable_struct_get(_sticked_projectile, "xx");
+		y = other.y + variable_struct_get(_sticked_projectile, "yy");
 	}
 }
