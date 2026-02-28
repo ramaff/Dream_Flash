@@ -5,12 +5,12 @@ function scr_wall_bounce_v2(_offset = 0) {
 	} else {
 
 		var _bounce = false
-		if(place_meeting(x + (hspeed * 2), y, obj_The_Border)) {
+		if(place_meeting(x + (hspeed * 5), y, obj_The_Border)) {
 			_bounce = true;
 		}
 
 		//Vertical bounce
-		if(place_meeting(x, y + (vspeed * 2), obj_The_Border)) {
+		if(place_meeting(x, y + (vspeed * 5), obj_The_Border)) {
 			_bounce = true;
 		}
 	

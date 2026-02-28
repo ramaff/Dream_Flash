@@ -3,14 +3,17 @@
 // Mandatory:
 scr_Boss_Step(2);
 
-// If boss is floating in air, can make it bob up and down:
-scr_Boss_Height_Bob(30, 1, 0);
-
 // Make boss shape wobble:
 scr_Boss_Wobble("Horizontal", 0.4, 1, 0);
 
 speed = lerp(speed, bossmovespeed * 2, 0.05);
-direction = scr_Soul_Point() + scr_Wave(-60, 60, 4, 0)
+direction = scr_Angle_Converge(direction, scr_Soul_Point() + scr_Wave(-75, 75, 4, 0), 3);
+
+if scr_wall_bounce_v2(384) {
+	dash_direction = direction;
+	//x += lengthdir_x(speed * 5, direction)
+	//y += lengthdir_y(speed * 5, direction)
+}
 
 //////////////////////////////////////////////////////////////////////////////////////////
 /////////////// Active Attack Prep
@@ -19,13 +22,12 @@ direction = scr_Soul_Point() + scr_Wave(-60, 60, 4, 0)
 if active_attack_delay <= 0 and active_attack_cooldown <= 0 and active_attack_duration <= 0 {
     
 	// Pick a random attack to do
-	active_attack = choose(1, 2, 3);
-	active_attack = 1;
+	active_attack = choose(1, 1, 1, 2);
 	
 	// Sneeze
     if active_attack = 1 {
 		// Setup how many attacks per boss move, delay, etc
-		scr_Boss_Attack_Time_Setup_v2(40, 30, 1, 120, 30, 10);
+		scr_Boss_Attack_Time_Setup_v2(40, 30, 1, 180, 60, 10);
 		
 		scr_Boss_Dash_Setup_v2(scr_Soul_Point() + 180, 0, 5 * bossmovespeed);
 		
@@ -36,10 +38,24 @@ if active_attack_delay <= 0 and active_attack_cooldown <= 0 and active_attack_du
 	// The Long Nose Blow
 	if active_attack = 2 {
 		// 
-		scr_Boss_Attack_Time_Setup_v2(50, 30, 1, 30, 30, 10);
+		scr_Boss_Attack_Time_Setup_v2(270, 30, 1, 180, 60, 10);
 		
-		scr_Boss_Dash_Setup_v2(scr_Soul_Point() + 180, 0, 7 * bossmovespeed);
+		scr_Boss_Dash_Setup_v2(scr_Soul_Point() + 180, 0, 3 * bossmovespeed);
     }
+}
+
+if global.roomtime mod 3 = 1 {
+	scr_default_attack_settings_v2();	
+	attack_stats.bullet_type = "obj_stationary_damager_v2"
+	attack_stats.bullet_sprite = "spr_Poison_Pool"
+	attack_stats.boss_xoffset = -40 + random(80);
+	attack_stats.boss_yoffset = -40 + random(80) + 40 + boss_height;
+	attack_stats.bullet_depth = depth + 100;
+	attack_stats.bullet_life_span = 180 + random(60);
+	attack_stats.bullet_size = (0.3 + random(0.15));
+	attack_stats.bullet_speed = 0;
+	
+	scr_boss_shoot_v2();
 }
 
 //////////////////////////////////////////////////////////////////////////////////////////
@@ -69,8 +85,8 @@ if active_attack_delay <= 0 and pattern_cooldown <= 0 and pattern_count > 0 {
 			repeat(6) {
 				attack_stats.bullet_direction = scr_Boss_Bullet_Direction_Formula(scr_Soul_Point(), 60)
 				attack_stats.bullet_speed = bossbulletspeed * (1 + random(1))
-				attack_stats.bullet_life_span = 300 + random(60);
-				attack_stats.bullet_bounce_speed = 4 + random(4);
+				attack_stats.bullet_life_span = 330 + random(90);
+				attack_stats.bullet_bounce_speed = 6 + random(4);
 				
 				scr_boss_shoot_v2();
 			}
@@ -85,14 +101,15 @@ if active_attack_delay <= 0 and pattern_cooldown <= 0 and pattern_count > 0 {
 		
 		speed = dash_speed;
         direction = dash_direction;
+		dash_direction = scr_Angle_Converge(direction, scr_Soul_Point() + scr_Wave(75, 75, 2, 0), 1)
 		
-		scr_Jump_Movement_v2(2);	
+		//scr_Jump_Movement_v2(2);	
 		
-		if pattern_count = floor(pattern_count_max) {
-			attack_stats.bullet_direction = scr_Boss_Bullet_Direction_Formula(scr_Soul_Point(), 30)
+		//if pattern_count = floor(pattern_count_max) {
+		//	attack_stats.bullet_direction = scr_Boss_Bullet_Direction_Formula(scr_Soul_Point(), 30)
 		
-			scr_boss_shoot_v2();
-		}
+		//	scr_boss_shoot_v2();
+		//}
 	}
 	
 	if active_attack = 3 {
