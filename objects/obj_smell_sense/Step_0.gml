@@ -40,7 +40,7 @@ if active_attack_delay <= 0 and active_attack_cooldown <= 0 and active_attack_du
 		// 
 		scr_Boss_Attack_Time_Setup_v2(270, 30, 1, 180, 60, 10);
 		
-		scr_Boss_Dash_Setup_v2(scr_Soul_Point() + 180, 0, 3 * bossmovespeed);
+		scr_Boss_Dash_Setup_v2(scr_Soul_Point() + 180, 0, 5 * bossmovespeed);
     }
 }
 
@@ -78,7 +78,7 @@ if active_attack_delay <= 0 and pattern_cooldown <= 0 and pattern_count > 0 {
 		
 		if pattern_count = floor(pattern_count_max) {
 			scr_Boss_Stretch("Vertical", 1);
-			attack_stats.bullet_sprite = "spr_green_bullet_v2"
+			attack_stats.bullet_sprite = "spr_booger_bullet"
 			attack_stats.bullet_count = 1;
 			attack_stats.bullet_type = "obj_booger_bullet"
 		
@@ -143,9 +143,15 @@ if active_attack_duration <= 0 {
 scr_Boss_Size_Lerp_Dir(0.15);
 
 // Handles boss attack sprite animation
-if active_attack != 0 {
-	var _hold_frame = 1;
-	scr_Boss_Attack_Sprite_v2(spr_smell_ghoul, _hold_frame, 2, 2, 20);
+if active_attack = 1 {
+	var _hold_frame = 2;
+	scr_Boss_Attack_Sprite_v2(spr_smell_ghoul_sneeze, _hold_frame, 3, 3, 20);
+	if image_index = _hold_frame {
+		scr_Boss_Wobble("Horizontal", 2, 0.4, 0)	
+	}
+} else if active_attack = 2 {
+	var _hold_frame = 2;
+	scr_Boss_Attack_Sprite_v2(spr_smell_ghoul_blow, _hold_frame, 3, 3, 20);
 	if image_index = _hold_frame {
 		scr_Boss_Wobble("Horizontal", 2, 0.4, 0)	
 	}
