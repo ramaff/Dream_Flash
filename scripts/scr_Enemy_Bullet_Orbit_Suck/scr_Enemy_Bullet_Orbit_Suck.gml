@@ -16,6 +16,35 @@ function scr_circular_suck(_suck_speed, _suck_angle, _offset = 90) {
 	} 
 }
 
+function scr_suck_all(_suck_factor = 1, _xx = x, _yy = y, _target_angle = undefined) {
+	var _suck_speed = 0;
+	var _suck_angle = 0;
+	var _real_suck_fac = _suck_factor * 200
+
+	with (obj_Bullet_Parent) {
+	    _suck_speed = _real_suck_fac / (distance_to_object(other) + 150);
+	    _suck_angle = point_direction(x,y,_xx,_yy);
+       
+		scr_linear_suck(_suck_speed, _suck_angle);
+	}
+	with (obj_bullet_parent_v2) {
+	    _suck_speed = _real_suck_fac / (distance_to_object(other) + 150);
+	    _suck_angle = point_direction(x,y,_xx,_yy);
+		scr_linear_suck(_suck_speed, _suck_angle);
+	}
+	with (obj_Basic_Projectile_Parent) {
+	    _suck_speed = _real_suck_fac / (distance_to_object(other) + 150);
+	    _suck_angle = point_direction(x,y,_xx,_yy);
+        scr_linear_suck(_suck_speed, _suck_angle);
+	}
+	
+	with (obj_Soul_Parent) {
+	    _suck_speed = (_real_suck_fac / 2) / (distance_to_object(other) + 150);
+	    _suck_angle = point_direction(x,y,_xx,_yy);
+        scr_linear_suck(_suck_speed, _suck_angle);
+	}
+}
+
 function scr_suck_all_into_angle(_suck_type = scr_linear_suck, _suck_factor = 1, _xx = x, _yy = y, _target_angle = undefined) {
 	var _suck_speed = 0;
 	var _suck_angle = 0;
