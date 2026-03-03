@@ -1,16 +1,16 @@
-function scr_wall_bounce_v2(_offset = 0) {
+function scr_wall_bounce_v2(_offset = 0, _bounce_tolerance = 5) {
 	
 	if scr_Outside_Check_Bool(-speed + _offset) {
 		return false;
 	} else {
 
 		var _bounce = false
-		if(place_meeting(x + (hspeed * 5), y, obj_The_Border)) {
+		if(place_meeting(x + (hspeed * _bounce_tolerance), y, obj_The_Border)) {
 			_bounce = true;
 		}
 
 		//Vertical bounce
-		if(place_meeting(x, y + (vspeed * 5), obj_The_Border)) {
+		if(place_meeting(x, y + (vspeed * _bounce_tolerance), obj_The_Border)) {
 			_bounce = true;
 		}
 	

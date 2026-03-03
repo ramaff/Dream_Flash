@@ -13,14 +13,14 @@ if active_attack = 0 {
 	direction = scr_Soul_Point() + 180 + scr_Wave(-60, 60, 2, 0) + 45;
 	speed = lerp(speed, bossmovespeed, 0.1);
 } else if active_attack = 1 {
-	direction = scr_Soul_Point();
-	speed = lerp(speed, bossmovespeed * 0.05, 0.05);	
+	direction = scr_Soul_Point() + 180;
+	speed = lerp(speed, bossmovespeed * 0.25, 0.05);	
 }
 
-if scr_Soul_Distance() > 260 {
+if scr_Soul_Distance() > 300 {
 	image_alpha = lerp(image_alpha, 0, 0.05);	
 } else {
-	image_alpha = lerp(image_alpha, 1, 0.5);	
+	image_alpha = lerp(image_alpha, 1, 0.25);	
 }
 
 if scr_Outside_Check_Bool(256) {
@@ -67,7 +67,7 @@ if active_attack_delay <= 0 and pattern_cooldown <= 0 and pattern_count > 0 {
 		attack_stats.bullet_count = 3;
 		attack_stats.bullet_spread = 15;
 		attack_stats.bullet_alpha = 0;
-		attack_stats.bullet_speed = bossbulletspeed * (0.5 + random(1));
+		attack_stats.bullet_speed = bossbulletspeed * (0.6 + random(0.9));
 		attack_stats.bullet_life_span = 360;
 		
 		if scr_Soul_Distance() < 300 {
@@ -76,7 +76,7 @@ if active_attack_delay <= 0 and pattern_cooldown <= 0 and pattern_count > 0 {
 		
 		var _x_mult = 1;
 		
-		if image_xscale > 0 {
+		if image_xscale < 0 {
 			_x_mult = -1;	
 		}
 		
