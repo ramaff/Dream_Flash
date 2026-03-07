@@ -1512,6 +1512,7 @@
     {"name":"spr_Blue_Gem_Beam_Start","order":10,"path":"sprites/spr_Blue_Gem_Beam_Start/spr_Blue_Gem_Beam_Start.yy",},
     {"name":"spr_Blue_Gem_Beam_Tip","order":9,"path":"sprites/spr_Blue_Gem_Beam_Tip/spr_Blue_Gem_Beam_Tip.yy",},
     {"name":"spr_Blur_Noise","order":6,"path":"sprites/spr_Blur_Noise/spr_Blur_Noise.yy",},
+    {"name":"spr_booger_bullet_slam","order":1,"path":"sprites/spr_booger_bullet_slam/spr_booger_bullet_slam.yy",},
     {"name":"spr_Boost_Spark","order":5,"path":"sprites/spr_Boost_Spark/spr_Boost_Spark.yy",},
     {"name":"spr_Boss_Beam_Segment_Ontop","order":9,"path":"sprites/spr_Boss_Beam_Segment_Ontop/spr_Boss_Beam_Segment_Ontop.yy",},
     {"name":"spr_Boss_Beam_Segment_Ontoptop","order":12,"path":"sprites/spr_Boss_Beam_Segment_Ontoptop/spr_Boss_Beam_Segment_Ontoptop.yy",},

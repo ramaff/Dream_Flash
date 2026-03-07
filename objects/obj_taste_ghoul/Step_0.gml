@@ -51,7 +51,7 @@ if active_attack_delay <= 0 and active_attack_cooldown <= 0 and active_attack_du
 	// Hop leap attack setup example
 	if active_attack = 2 {
 		// 
-		scr_Boss_Attack_Time_Setup_v2(30, 30, 1, 0, 0, 10);
+		scr_Boss_Attack_Time_Setup_v2(40, 30, 1, 0, 0, 10);
 		scr_Boss_Dash_Setup_v2(scr_Soul_Point() - 30, 0, 4 * bossmovespeed);
 		bites = 2;
     }
@@ -75,6 +75,8 @@ if active_attack_delay <= 0 and pattern_cooldown <= 0 and pattern_count > 0 {
 		}
 		
 		attack_stats.bullet_direction = scr_Boss_Bullet_Direction_Formula(pattern_direction + _offset, 30)
+		attack_stats.bullet_direction = scr_Angle_Converge(attack_stats.bullet_direction, 90, 30)
+		
 		attack_stats.bullet_sprite = "spr_red_bullet_v2"
 		attack_stats.bullet_type = "obj_friction_bullet_v2"
 		attack_stats.bullet_count = 5;
@@ -82,13 +84,15 @@ if active_attack_delay <= 0 and pattern_cooldown <= 0 and pattern_count > 0 {
 		attack_stats.bullet_direction_angle = 1
 		
 		attack_stats.boss_xoffset = 60;
-		attack_stats.boss_yoffset = -40;
+		attack_stats.boss_yoffset = -50;
 		if pattern_direction = 180 {
 			attack_stats.boss_xoffset = -60;
 		}
-		attack_stats.bullet_speed = bossbulletspeed * (4);
-		attack_stats.bullet_min_speed = attack_stats.bullet_speed * 0.5;
+		attack_stats.bullet_speed = bossbulletspeed * (5);
+		attack_stats.bullet_min_speed = attack_stats.bullet_speed * 0.4;
 		attack_stats.bullet_friction = attack_stats.bullet_speed / 30;
+		
+		image_index = 6
 		
 		scr_boss_shoot_v2();
 	
@@ -103,7 +107,18 @@ if active_attack_delay <= 0 and pattern_cooldown <= 0 and pattern_count > 0 {
         direction = dash_direction;
 	
 		if pattern_count = 1 {
-			scr_Boss_Stretch("Vertical", 0.5);
+			
+			if image_index > 7 {
+				image_index = 11;	
+			}
+			
+			if image_index < 7 {
+				image_index = 7	
+			}
+		
+			var _im = image_index;
+			
+			scr_Boss_Stretch("Horizontal", 0.8);
 			attack_stats.bullet_direction = scr_Boss_Bullet_Direction_Formula(scr_Soul_Point(), 30)
 			attack_stats.bullet_sprite = "spr_red_bullet_v2"
 			attack_stats.bullet_count = 8;
@@ -122,6 +137,7 @@ if active_attack_delay <= 0 and pattern_cooldown <= 0 and pattern_count > 0 {
 					scr_Boss_Dash_Setup_v2(dash_direction - 60, 0, 4 * bossmovespeed);
 				}
 				bites--;
+				image_index = _im
 			}
 		}
 	}
@@ -146,14 +162,14 @@ scr_Boss_Size_Lerp_Dir(0.15);
 
 // Handles boss attack sprite animation
 if active_attack = 1 {
-	var _hold_frame = 1;
-	scr_Boss_Attack_Sprite_v2(spr_taste_sense_ultra_suck, _hold_frame, 2, 2, 20);
+	var _hold_frame = 3;
+	scr_Boss_Attack_Sprite_v2(spr_taste_sense_ultra_suck, _hold_frame, 4, 6, 20);
 	if image_index = _hold_frame {
 		scr_Boss_Wobble("Horizontal", 2, 0.4, 0)	
 	}
 } else if active_attack = 2 {
-	var _hold_frame = 1;
-	scr_Boss_Attack_Sprite_v2(spr_taste_sense_bites, _hold_frame, 2, 2, 20);
+	var _hold_frame = 3;
+	scr_Boss_Attack_Sprite_v2(spr_taste_sense_bites, _hold_frame, 4, 11, 20);
 	if image_index = _hold_frame {
 		scr_Boss_Wobble("Horizontal", 2, 0.4, 0)	
 	}

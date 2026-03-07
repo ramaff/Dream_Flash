@@ -6,10 +6,10 @@
 var _eat = false;
 
 if active_attack = 1 and active_attack_delay <= 0 {
-	if pattern_direction = 0 and other.x < (x - 5) {
+	if pattern_direction = 0 and other.x < (x - 0) {
 		_eat = true	
 	}
-	if pattern_direction = 180 and other.x > (x + 5) {
+	if pattern_direction = 180 and other.x > (x + 0) {
 		_eat = true	
 	}
 }

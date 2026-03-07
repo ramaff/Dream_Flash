@@ -3318,6 +3318,7 @@
     {"id":{"name":"spr_Bomb_Shot","path":"sprites/spr_Bomb_Shot/spr_Bomb_Shot.yy",},},
     {"id":{"name":"spr_Bombarder_Art","path":"sprites/spr_Bombarder_Art/spr_Bombarder_Art.yy",},},
     {"id":{"name":"spr_Bombarder_Shot","path":"sprites/spr_Bombarder_Shot/spr_Bombarder_Shot.yy",},},
+    {"id":{"name":"spr_booger_bullet_slam","path":"sprites/spr_booger_bullet_slam/spr_booger_bullet_slam.yy",},},
     {"id":{"name":"spr_booger_bullet","path":"sprites/spr_booger_bullet/spr_booger_bullet.yy",},},
     {"id":{"name":"spr_Book_Guardian","path":"sprites/spr_Book_Guardian/spr_Book_Guardian.yy",},},
     {"id":{"name":"spr_Boomerang_Blade_Art","path":"sprites/spr_Boomerang_Blade_Art/spr_Boomerang_Blade_Art.yy",},},

@@ -5,9 +5,9 @@ scr_Boss_Step(2);
 
 // Make boss shape wobble:
 if active_attack = 2 and active_attack_delay < 0 {
-	scr_Boss_Wobble("Horizontal", 0.8, 0.5, 0);
+	scr_Boss_Wobble("Horizontal", 2.1, 0.3, 0);
 } else {
-	scr_Boss_Wobble("Horizontal", 0.4, 1, 0);
+	scr_Boss_Wobble("Horizontal", 1, 0.6, 0);
 }
 
 speed = lerp(speed, bossmovespeed * 1.4, 0.05);
