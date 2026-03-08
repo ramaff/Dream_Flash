@@ -21,7 +21,9 @@ function scr_U08(){
 	
 				}
 				
+				
 				var _force = 150 / max(10, sqrt(point_distance(x, y, other.x, other.y)));
+				_force = clamp(_force, 0, 150)
 				var _force_friction = 1
 				var _force_time = _force / _force_friction
 				var _force_direction = point_direction(x, y, other.x, other.y);
@@ -32,6 +34,7 @@ function scr_U08(){
 					if point_distance(x,y,_xx,_yy) < _poison_size {
 						
 						var _knock = 300 / max(10, sqrt(point_distance(x, y, _xx, _yy)));
+						_knock = clamp(_knock, 0, 300)
 						
 						scr_Apply_Boss_Knockback(id, _knock, 5, point_direction(_xx, _yy, x, y))
 						

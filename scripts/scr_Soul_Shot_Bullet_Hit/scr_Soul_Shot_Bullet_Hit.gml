@@ -134,6 +134,7 @@ function scr_soul_shot_bullet_hit_v2(_bullet_stats){
 		    if shot_stats.Shot_Shield_Power >= (_bullet_stats.bullet_power) {
 		        other.speed = 0;
 				_bullet_stats.bullet_speed = 0;
+				_bullet_stats.bullet_power = 0;
 		        //instance_destroy();
 		    } else {
 				_bullet_stats.bullet_power -= shot_stats.Shot_Shield_Power;
