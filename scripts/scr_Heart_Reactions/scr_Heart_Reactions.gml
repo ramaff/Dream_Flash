@@ -1,5 +1,5 @@
 function scr_Heart_Reactions() {
-	var cHeart = Soul_Hearts_Control.heart[global.currentheart, 2]
+	var cHeart = global.currenthearttype
 	if cHeart = 8 {
 
 	    var current_weapon_stats = scr_Setup_Default_Shot_Stats();

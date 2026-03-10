@@ -3,7 +3,7 @@ function scr_H07() {
 
 	if global.totalhearts > 0 {
 		for (i = 0; i < 15; i++) {
-		    if (Soul_Hearts_Control.heart[i,2] = 7) {
+		    if (Soul_Hearts_Control.heart[i].heart_id = 7) {
 		        Soul_Hearts_Control.heart[i,3] += 10 * global.soulheartboost;
 		    }
 		}

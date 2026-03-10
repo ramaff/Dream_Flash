@@ -2,7 +2,7 @@ function scr_H16(_damage_amount, _defense_amount) {
 	// Location Damage Calculation Event
 
 	if global.totalhearts > 0 {
-	if Soul_Hearts_Control.heart[global.currentheart, 2] = 16 {
+	if global.currenthearttype = 16 {
     
 	    heartredirect = global.currentheart;
 

@@ -7,7 +7,7 @@ if global.currentheart < 0 {
 	global.currentheart = 0;	
 }
 
-var cHeart = Soul_Hearts_Control.heart[global.currentheart, 2]
+var cHeart = global.currenthearttype
 
 if cHeart = 51 {
 	heartReload = 45;

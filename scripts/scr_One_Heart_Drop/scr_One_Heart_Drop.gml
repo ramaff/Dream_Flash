@@ -8,7 +8,7 @@ function scr_One_Heart_Drop() {
     
 		var i = 0;
 	    for (i = 0; i < 24; i++) {
-	        if (Soul_Hearts_Control.heart[i,3] >= 0) and (Soul_Hearts_Control.heart[i,2] != 0) {
+	        if (Soul_Hearts_Control.heart[i,3] >= 0) and (Soul_Hearts_Control.heart[i].heart_id != 0) {
 	            global.currentheart = Soul_Hearts_Control.heart[i,1] - 1;
 	        }
 	    }

@@ -1,9 +1,9 @@
 {
   "$GMScript":"v1",
-  "%Name":"old_H14_Minion",
+  "%Name":"scr_Update_Soul_Health",
   "isCompatibility":false,
   "isDnD":false,
-  "name":"old_H14_Minion",
+  "name":"scr_Update_Soul_Health",
   "parent":{
     "name":"Heart Commands",
     "path":"folders/Scripts/Heart Commands.yy",

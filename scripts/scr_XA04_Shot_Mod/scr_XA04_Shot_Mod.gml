@@ -5,7 +5,7 @@
 
 function scr_XA04_Shot_Mod(){
 	
-	if global.XA[4] > 0 and Soul_Hearts_Control.heart[global.currentheart, 2] = 53 {
+	if global.XA[4] > 0 and global.currenthearttype = 53 {
 		repeat(global.XA[4]) {
 			shot_stats.Shot_Life_Span = shot_stats.Shot_Life_Span * 0.6;
 			shot_stats.Shot_Speed += shot_stats.Shot_Speed * 0.33;

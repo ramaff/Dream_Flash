@@ -1,7 +1,7 @@
 function scr_Save_Run() {
 
 	
-	if global.totalhearts <= 0 {
+	if global.currentheart < 0 {
 		exit;	
 	}
 	

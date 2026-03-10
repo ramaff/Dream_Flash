@@ -6,19 +6,6 @@ if !window_has_focus() {
 	exit;	
 }
 
-//global.currentheart = variable_struct_get(heart[-1], "heart_id");
-global.currentheart = array_length(heart) - 1;
-if global.currentheart < 0 {
-	exit;	
-}
-global.currenthearttype = heart[global.currentheart].heart_id;
-
-if heart_script != noone {
-	script_execute(heart_script)	
-}
-
-/*
-
     if global.totalhearts >= 16 {
         global.totalhearts = 16;
     }
@@ -43,6 +30,9 @@ if global.totalhearts >= 1 {
 			global.H06refill += (3 / global.soulheartboost);
 		}
 		
+		//if heart[global.currentheart,2] != 103 and heart[global.currentheart,2] != 6 {
+		//	scr_Heart_Loss_Event();
+		//}
 		if obj_Soul_Parent.soulDeathFadeSpeed = 0 {
 	        instance_create(obj_Soul_Parent.x,obj_Soul_Parent.y,obj_Broken_Heart);
 	    }
@@ -102,7 +92,8 @@ if global.totalhearts >= 1 {
     scr_Sort_Hearts();
     
     scr_One_Heart_Drop();
-
+	
+	//scr_V05();
 	
     if global.currentheart < 0 {
 		global.currentheart = 0;	
@@ -117,7 +108,7 @@ if global.totalhearts >= 1 {
 		}
 		if heartType = 4 {
 			heartHea = 20 + (20 * global.soulheartboost);	
-			heartReg = 0.5
+			heartReg = 0.5// * global.soulheartboost;
 		}
 		if heartType = 103 {
 			heartHea = 40;
@@ -130,7 +121,7 @@ if global.totalhearts >= 1 {
 		}
 		if heartType = 6 {
 			heartHea = 10;	
-			heartReg = 0.5
+			heartReg = 0.5// * global.soulheartboost;
 		}
 		if heartType = 52 {
 			heartHea = 20 * global.OC[2];
@@ -138,7 +129,7 @@ if global.totalhearts >= 1 {
 		
 		heart[i,4] = ((heartHea * ((10 + obj_Soul_Parent.shpfactor) / 10)) + obj_Soul_Parent.shpadd);
 		
-        if heart[i,2] != 7  {
+        if heart[i,2] != 7 /*and heart[i,2] != 103*/ {
             if !scr_Room_Leavable() {
                 heart[i,3] += obj_Soul_Parent.shealthregenfactor * heartReg * ((10 + obj_Soul_Parent.shealthregenadd) / 10) / 120;   
             } else {

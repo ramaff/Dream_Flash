@@ -27,7 +27,7 @@ function scr_Spawn_Airbag(){
 
 function scr_B03_Status_Build_Up() {
 	
-	if Soul_Hearts_Control.heart[global.currentheart, 2] = 103 {
+	if global.currenthearttype = 103 {
 		var _near_bulls = 0
 		var _soul = id;
 		with(obj_soul_hurt_v2) {

@@ -112,7 +112,7 @@ if tdelay < 0 {
 }
 
 if soulDeathFadeSpeed = 0 {
-    if global.totalhearts <= 0 {
+    if global.currentheart < 0 {
 		scr_Delete_Run();
         soulDeathFadeSpeed = 0.02;
         alarm[9] = 72;
@@ -120,6 +120,10 @@ if soulDeathFadeSpeed = 0 {
 }
 
 var lerp_speed = 0.25;
+
+//if scr_Current_Heart() = 4 {
+//	size = 0.6;	
+//}
 
 soulSizeX = lerp(soulSizeX,abs(size),lerp_speed);
 soulSizeY = lerp(soulSizeY,abs(size),lerp_speed);

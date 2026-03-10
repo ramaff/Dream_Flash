@@ -2,8 +2,10 @@ function scr_Heart_Respawn() {
 	if global.H06refill <= 0 {
 		var undyingHeartCount = 0;
 
-		for (i = 0; i < 16; i++) {
-		    if (Soul_Hearts_Control.heart[i,2] = 6) {
+		var i;
+		var max_heart = array_length(Soul_Hearts_Control.heart);
+		for (i = 0; i < max_heart; i++) {
+		    if (Soul_Hearts_Control.heart[i].heart_id = 6) {
 		        undyingHeartCount++;
 		    }
 		}

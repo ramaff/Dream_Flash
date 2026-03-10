@@ -14,7 +14,7 @@
         var defenseamount = scr_Soul_Defense_Calc(id)
         scr_Soul_Damage_Calculation(damageamount, defenseamount);
         
-        if global.totalhearts <= 0 {
+        if global.currentheart < 0 {
         if shealth <= 0 {
             instance_destroy();
         }

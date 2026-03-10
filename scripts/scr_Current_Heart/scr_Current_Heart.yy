@@ -1,9 +1,9 @@
 {
   "$GMScript":"v1",
-  "%Name":"old_H14",
+  "%Name":"scr_Current_Heart",
   "isCompatibility":false,
   "isDnD":false,
-  "name":"old_H14",
+  "name":"scr_Current_Heart",
   "parent":{
     "name":"Heart Commands",
     "path":"folders/Scripts/Heart Commands.yy",

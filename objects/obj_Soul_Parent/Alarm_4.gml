@@ -14,7 +14,7 @@ scr_H14();
 
 //scr_XC02_Soul_Visual();
 
-var cHeart = Soul_Hearts_Control.heart[global.currentheart, 2]
+var cHeart = global.currenthearttype
 if cHeart = 17 {
 	scr_H17_Pool();	
 }

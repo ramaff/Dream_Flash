@@ -41,7 +41,7 @@ if instance_exists(other.bossid) and soul_underground <= 0 {
 	    scr_Soul_Damage_Calculation(damageamount, defenseamount);
 		soulinvincibility += 5;
     
-	    if global.totalhearts <= 0 {
+	    if global.currentheart < 0 {
 	    if shealth <= 0 {
 	        instance_destroy();
 	    }

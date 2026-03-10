@@ -12,7 +12,7 @@ if other.bossknockbackforce > sknockbackdefense {
 shealth -= other.bosscontactdamage;
 soulinvincibility = 6
 
-if global.totalhearts <= 0 {
+if global.currentheart < 0 {
 if shealth <= 0 {
     instance_destroy();
 }
