@@ -599,7 +599,7 @@
         "recollectionString": "Jumbo Heart",
         "recollectionSprite": "spr_Jumbo_Heart_Art",
         "recollectionSummary": "Big HP Heart",
-        "recollectionDescription": "+40 HP Large Heart -Regen Speed"
+        "recollectionDescription": "+40 HP Large Heart +30% Soul/Soul Shot Size and Damage -20% Soul Move and Think Speed"
     },
     "H05": {
         "recollectionString": "Mechanical Heart",

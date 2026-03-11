@@ -9,7 +9,7 @@ for(var _i = 0; _i < 3; _i++) {
 	}
 }
 heart[0].heart_id = 1;
-heart[1].heart_id = 1;
+heart[1].heart_id = 4;
 heart[2].heart_id = 1;
 
 global.currentheart = 2;
@@ -17,6 +17,8 @@ global.currenthearttype = 1;
 
 heart_slot_info = []
 heart_script = noone;
+
+current_heart_stats = {}
 
 /*
 for(i = 0; i < 16; i++) {

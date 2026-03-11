@@ -40,16 +40,9 @@ function scr_Load_Run() {
 	        global.Weap[i] = ini_read_real("Run","Weap" + string(i),-1);
 	    }
     
-	    for(i = 0; i < 16; i++) {
-	        for(j = 0; j <= 5; j++) {
-	        Soul_Hearts_Control.heart[i,j] = ini_read_real("Run", "heart" + string(i) + "-" + string(j),0);
-	        }
-	    }
+
 	    for(i = 0; i <= 39; i++) {
-	        //for(j = 0; j <= 39; j++) {
-	        //global.floor[i,j] = ini_read_string("Run", "floor" + string(i) + "-" + string(j),0);
-	        //}
-	        //}
+
 	        global.floor[i,0] = ini_read_string("Run", "floor" + string(i) + "-" + string(0),0);
 	        global.floor[i,1] = ini_read_real("Run", "floor" + string(i) + "-" + string(1),0);
 	        global.floor[i,2] = ini_read_real("Run", "floor" + string(i) + "-" + string(2),0);
@@ -175,10 +168,12 @@ function scr_Load_Run() {
 		global.castingprogress = ini_read_real("Run","castingprogress",0);
 		global.ascendingprogress = ini_read_real("Run","ascendingprogress",0);
 	
+		/*
 		global.soulhealth = Soul_Hearts_Control.heart[global.totalhearts - 1,3];
 		global.soulhealthmax = Soul_Hearts_Control.heart[global.totalhearts - 1,4];
 		obj_Soul_Parent.shealth = Soul_Hearts_Control.heart[global.totalhearts - 1,3];
 		obj_Soul_Parent.smaxhealth = Soul_Hearts_Control.heart[global.totalhearts - 1,4]; 
+		*/
 	
     
 	    for(i = 0; i <= 99; i++) {
@@ -263,6 +258,7 @@ function scr_Load_Run() {
 		global.OA5rooms = json_parse(ini_read_string("Run", "OA5rooms", "[]"));
 		
 		Soul_Weapons_Control.weapon = json_parse(ini_read_string("Run", "weapon", "[]"))
+		Soul_Hearts_Control.heart = json_parse(ini_read_string("Run", "heart", "[]"))
 		
 		global.items = json_parse(ini_read_string("Run", "items", "[]"))
 		

@@ -125,8 +125,10 @@ var lerp_speed = 0.25;
 //	size = 0.6;	
 //}
 
-soulSizeX = lerp(soulSizeX,abs(size),lerp_speed);
-soulSizeY = lerp(soulSizeY,abs(size),lerp_speed);
+var _tar_size = 0.5 * ssize;
+
+soulSizeX = lerp(soulSizeX,abs(_tar_size),lerp_speed);
+soulSizeY = lerp(soulSizeY,abs(_tar_size),lerp_speed);
 
 //image_xscale = soulSizeX; //* (size * 2);
 image_yscale = soulSizeY;

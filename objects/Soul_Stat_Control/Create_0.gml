@@ -111,7 +111,7 @@ global.soulshotknockbackaddition = 0;
 global.soulshotlifefactor = 0;
 
 global.soulaccuracy = 1
-global.soulsize = 0
+global.soulsize = 1
 
 ///////////////////////// Other Soul Stats
 
