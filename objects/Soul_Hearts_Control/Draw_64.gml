@@ -8,10 +8,10 @@ var click = mouse_check_button_pressed(mb_left);
 var _no_boss = !scr_Boss_Fight()
 var x1 = camera_get_view_x(view);
 var y1 = camera_get_view_y(view);
-var _scale = Camera_Control.view_zoom * 0.5
+var _scale = Camera_Control.view_zoom * Camera_Control.window_scale
 
-var mxx = (obj_Indicator_Parent.x - x1) / _scale
-var myy = (obj_Indicator_Parent.y - y1) / _scale
+var mxx = (obj_Indicator_Parent.x - x1) * _scale
+var myy = (obj_Indicator_Parent.y - y1) * _scale
 
 var _space = 89;
 var yy = 45;
