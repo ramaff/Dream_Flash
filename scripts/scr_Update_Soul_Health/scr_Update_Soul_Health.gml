@@ -8,9 +8,9 @@ function scr_Update_Soul_Health(_health, _slot = global.currentheart) {
 	if _heart.health <= 0 {
 		
 		array_delete(_hearts, _slot, 1)
-		scr_Heart_Loss_Handle_All(_heart);
 		instance_create(obj_Soul_Parent.x,obj_Soul_Parent.y,obj_Broken_Heart);
 		global.currentheart = array_length(_hearts) - 1;
+		scr_Heart_Loss_Handle_All(_heart);
 		if global.currentheart < 0 {
 			exit;	
 		}

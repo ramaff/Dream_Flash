@@ -1977,6 +1977,7 @@
     {"id":{"name":"scr_A14","path":"scripts/scr_A14/scr_A14.yy",},},
     {"id":{"name":"scr_Above_Soul_Sweep","path":"scripts/scr_Above_Soul_Sweep/scr_Above_Soul_Sweep.yy",},},
     {"id":{"name":"scr_Accel_From_Speed_Time_Velocity","path":"scripts/scr_Accel_From_Speed_Time_Velocity/scr_Accel_From_Speed_Time_Velocity.yy",},},
+    {"id":{"name":"scr_Add_New_Heart","path":"scripts/scr_Add_New_Heart/scr_Add_New_Heart.yy",},},
     {"id":{"name":"scr_Add_State_Credit_To_Extra_Stat_Description","path":"scripts/scr_Add_State_Credit_To_Extra_Stat_Description/scr_Add_State_Credit_To_Extra_Stat_Description.yy",},},
     {"id":{"name":"scr_Adjacent_Room_Cloud","path":"scripts/scr_Adjacent_Room_Cloud/scr_Adjacent_Room_Cloud.yy",},},
     {"id":{"name":"scr_After_Image","path":"scripts/scr_After_Image/scr_After_Image.yy",},},

@@ -14,7 +14,7 @@ var mxx = (obj_Indicator_Parent.x - x1) * _scale
 var myy = (obj_Indicator_Parent.y - y1) * _scale
 
 var _space = 89;
-var yy = 45;
+var yy = 50;
 var _half_heart_size = (32)
 var _correct_y = (abs(myy - yy) < _half_heart_size)
 

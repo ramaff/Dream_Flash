@@ -260,6 +260,8 @@ function scr_Load_Run() {
 		Soul_Weapons_Control.weapon = json_parse(ini_read_string("Run", "weapon", "[]"))
 		Soul_Hearts_Control.heart = json_parse(ini_read_string("Run", "heart", "[]"))
 		
+		scr_Swap_Heart(Soul_Hearts_Control.heart[array_length(Soul_Hearts_Control.heart) - 1].heart_id);
+		
 		global.items = json_parse(ini_read_string("Run", "items", "[]"))
 		
 		

@@ -6,13 +6,11 @@ for(var _i = 0; _i < 3; _i++) {
 		_butt = id;
 	} */
 	heart[_i] = {
-		"slot": _i,
 		"heart_id": 0,
 		"health": 20,
 		"max_health": 20,
 		"health_decay": 0,
-		"survival_hits": 0//,
-		//"butt": _butt
+		"survival_hits": 0
 	}
 }
 heart[0].heart_id = 1;
