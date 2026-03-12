@@ -1,16 +1,14 @@
-function scr_Draw_Heart_Status() {
+function scr_Draw_Heart_Status(_heart, _scale, _xx = x, _yy = y) {
 	
-	 var _scale = 0.5 / Camera_Control.view_zoom;
 	
-	var hpercent = 100 * (Soul_Hearts_Control.heart[slot,3] / Soul_Hearts_Control.heart[slot,4]);
-	var currHeart = Soul_Hearts_Control.heart[slot,2];
-	var surv = frac(Soul_Hearts_Control.heart[slot,2]);
+	var hpercent = 100 * (_heart.health / _heart.max_health);
+	var currHeart = _heart.heart_id;
+	var surv = _heart.survival_hits;
 
-	scr_Draw_Heart(currHeart, hpercent)
+	scr_Draw_Heart(currHeart, hpercent, _scale, _xx, _yy)
     
-	if global.B[4] > 0 and surv > 0 {
-		draw_sprite_ext(spr_Heart_Halo,0,x,y-15, _scale, _scale,0,c_white,1);
+	if surv > 0 {
+		draw_sprite_ext(spr_Heart_Halo,0,_xx,_yy-15, _scale, _scale,0,c_white,1);
 	}
-
 
 }

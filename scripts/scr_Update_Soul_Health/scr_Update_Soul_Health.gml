@@ -5,8 +5,11 @@ function scr_Update_Soul_Health(_health, _slot = global.currentheart) {
 	var _heart = _hearts[_slot]
 	
 	_heart.health = _health
-	if _heart.health <= 0 {	
+	if _heart.health <= 0 {
+		
 		array_delete(_hearts, _slot, 1)
+		scr_Heart_Loss_Handle_All(_heart);
+		instance_create(obj_Soul_Parent.x,obj_Soul_Parent.y,obj_Broken_Heart);
 		global.currentheart = array_length(_hearts) - 1;
 		if global.currentheart < 0 {
 			exit;	
@@ -17,6 +20,22 @@ function scr_Update_Soul_Health(_health, _slot = global.currentheart) {
 	
 	shealth = _heart.health
 	
+}
+
+function scr_Heart_Loss_Handle_All(_heart) {
+	if _heart.heart_id = 6 {
+		if global.H06refill < 0 {
+			global.H06refill = 0;	
+		}
+		global.H06refill += (3 / global.soulheartboost);
+	}
+		
+	if obj_Soul_Parent.soulDeathFadeSpeed = 0 {
+	    instance_create(obj_Soul_Parent.x,obj_Soul_Parent.y,obj_Broken_Heart);
+	}
+	
+	scr_Heart_Loss_Event(_heart.heart_id);
+	scr_L04();
 }
 
 function scr_Swap_Heart(_heart_id) {

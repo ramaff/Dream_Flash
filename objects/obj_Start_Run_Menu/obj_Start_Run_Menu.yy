@@ -10,7 +10,7 @@
   "overriddenProperties":[],
   "parent":{
     "name":"Game Stuff",
-    "path":"folders/Objects/Game Stuff.yy",
+    "path":"folders/Objects/Game UI/Game Stuff.yy",
   },
   "parentObjectId":{
     "name":"obj_Pause_Parent",
