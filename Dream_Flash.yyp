@@ -2518,7 +2518,6 @@
     {"id":{"name":"scr_Shot_Wave","path":"scripts/scr_Shot_Wave/scr_Shot_Wave.yy",},},
     {"id":{"name":"scr_Shuffle_Pool_List","path":"scripts/scr_Shuffle_Pool_List/scr_Shuffle_Pool_List.yy",},},
     {"id":{"name":"scr_Snake_Soul_Teleport","path":"scripts/scr_Snake_Soul_Teleport/scr_Snake_Soul_Teleport.yy",},},
-    {"id":{"name":"scr_Sort_Hearts","path":"scripts/scr_Sort_Hearts/scr_Sort_Hearts.yy",},},
     {"id":{"name":"scr_Soul_Attack_Think","path":"scripts/scr_Soul_Attack_Think/scr_Soul_Attack_Think.yy",},},
     {"id":{"name":"scr_Soul_Been_Hit","path":"scripts/scr_Soul_Been_Hit/scr_Soul_Been_Hit.yy",},},
     {"id":{"name":"scr_Soul_Create_Mod","path":"scripts/scr_Soul_Create_Mod/scr_Soul_Create_Mod.yy",},},

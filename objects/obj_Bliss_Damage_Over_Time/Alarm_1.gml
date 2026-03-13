@@ -5,7 +5,7 @@ alarm[1] = 15;
 
 var damage = (damage_over_time / time) * 15
 
-target.shealth -= damage;
+scr_Update_Soul_Health(target.shealth - damage);
 damage_threshold += damage
 
 if damage_threshold >= 1 {

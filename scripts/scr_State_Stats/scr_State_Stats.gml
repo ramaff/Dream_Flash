@@ -8,7 +8,9 @@ function scr_State_Stats(){
 		global.soulstatefirerate = 1;
 	} else {
 		if global.F[10] >= 1 {
-			obj_Soul_Parent.shealth -= 0.025;	
+			if global.roomtime mod 6 = 0 {
+				scr_Update_Soul_Health(obj_Soul_Parent.shealth - 0.025);
+			}
 		}	
 	}
 	

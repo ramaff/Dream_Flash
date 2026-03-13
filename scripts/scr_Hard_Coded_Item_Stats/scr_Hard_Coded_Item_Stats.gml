@@ -461,6 +461,7 @@ function scr_Hard_Coded_Item_Stats(itemVal, items_to_add = 1, reload = false) {
 		}
 		if itemVal = "H04" {
 			scr_Add_New_Heart(4, 40);
+		}
 		if itemVal = "H05" {
 		    scr_Add_New_Heart(5, 20);
 		}

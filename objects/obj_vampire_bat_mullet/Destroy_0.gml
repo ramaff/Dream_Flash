@@ -3,7 +3,7 @@
 
 if full and bosshealth <= 0 {
 	if instance_exists(full_source_id) {
-		full_source_id.shealth += 1;
+		scr_Update_Soul_Health(shealth + 1);
 
 		scr_setup_dmg_indicator(full_source_id.x, full_source_id.y, 1, c_fuchsia, 0)
 		

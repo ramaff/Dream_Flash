@@ -3,7 +3,11 @@
 
 if !full {
 	full_source_id = other.id;
-	other.shealth -= 1;
+	if other.object_index = obj_Basic_Soul {
+		scr_Update_Soul_Health(shealth - 1)
+	} else {
+		other.shealth -= 1;
+	}
 
 	scr_setup_dmg_indicator(other.x, other.y, 1, c_red, 0)
 
