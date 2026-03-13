@@ -39,7 +39,7 @@ function scr_Soul_Damage_Calculation(_damage_amount, _defense_amount) {
 		
 		scr_setup_dmg_indicator(obj_Soul_Parent.x,obj_Soul_Parent.y, truedam, c_red)
     
-	    scr_B04();
+	    //scr_B04();
 		
 		scr_Screen_Shake(ceil(_damage_amount * 1.5), 7);
     

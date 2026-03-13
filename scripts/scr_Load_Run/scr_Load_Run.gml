@@ -167,14 +167,6 @@ function scr_Load_Run() {
 		global.bleedingprogress = ini_read_real("Run","bleedingprogress",0);
 		global.castingprogress = ini_read_real("Run","castingprogress",0);
 		global.ascendingprogress = ini_read_real("Run","ascendingprogress",0);
-	
-		/*
-		global.soulhealth = Soul_Hearts_Control.heart[global.totalhearts - 1,3];
-		global.soulhealthmax = Soul_Hearts_Control.heart[global.totalhearts - 1,4];
-		obj_Soul_Parent.shealth = Soul_Hearts_Control.heart[global.totalhearts - 1,3];
-		obj_Soul_Parent.smaxhealth = Soul_Hearts_Control.heart[global.totalhearts - 1,4]; 
-		*/
-	
     
 	    for(i = 0; i <= 99; i++) {
 	        global.A[i] = ini_read_real("Run","A" + string(i),0);

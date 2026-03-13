@@ -1,5 +1,6 @@
 function scr_Current_Heart_Stats() {
 
+	/*
 	global.totalhearts = 0;
 
 	global.currenthearthp = 20;
@@ -133,5 +134,6 @@ function scr_Current_Heart_Stats() {
 	if currHeart = 103 {
 		global.currenthearthp = 40;
 	}
+	*/
 
 }

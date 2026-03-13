@@ -451,80 +451,55 @@ function scr_Hard_Coded_Item_Stats(itemVal, items_to_add = 1, reload = false) {
 	if !reload {
 
 		if itemVal = "H01" {
-			scr_Heart_Item_Pickup_Setup(1, 20);
-		    //Soul_Hearts_Control.heart[global.currentheart + 1, 2] = 1
-		    //global.totalhearts++;
-		    //global.H[1]++;
+			scr_Add_New_Heart(1, 20)
 		}
 		if itemVal = "H02" {
-			scr_Heart_Item_Pickup_Setup(2, 20);
-		    //Soul_Hearts_Control.heart[global.currentheart + 1, 2] = 2;
-		    //global.totalhearts++;
-		    //global.H[2]++;
+			scr_Add_New_Heart(2, 20);
 		}
 		if itemVal = "H03" {
-			scr_Heart_Item_Pickup_Setup(3, 20);
-		    //Soul_Hearts_Control.heart[global.currentheart + 1, 2] = 3;
-		    //global.totalhearts++;
-		    //global.H[3]++;
+			scr_Add_New_Heart(3, 20);
 		}
 		if itemVal = "H04" {
-			scr_Heart_Item_Pickup_Setup(4, 40);
-		    //Soul_Hearts_Control.heart[global.currentheart + 1, 2] = 4;
-		    //global.totalhearts++;
-		    //global.H[4]++;
-		}
+			scr_Add_New_Heart(4, 40);
 		if itemVal = "H05" {
-		    scr_Heart_Item_Pickup_Setup(5, 20);
+		    scr_Add_New_Heart(5, 20);
 		}
 		if itemVal = "H06" {
-		    scr_Heart_Item_Pickup_Setup(6, 10);
+		    scr_Add_New_Heart(6, 10);
 		}
 		if itemVal = "H07" {
-			/*
-		    Soul_Hearts_Control.heart[global.currentheart + 1, 2] = 7;
-			var heartHealth = ((60 * ((10 + obj_Soul_Parent.shpfactor) / 10)) + obj_Soul_Parent.shpadd + ((global.soulvitality + global.soulvitalityTemp) / 4));
-		    global.soulhealth = heartHealth;
-		    global.soulhealthmax = heartHealth;
-		    obj_Soul_Parent.shealth = heartHealth;
-		    obj_Soul_Parent.shealthmax = heartHealth;
-		    Soul_Hearts_Control.heart[global.currentheart + 1, 3] = heartHealth;
-		    Soul_Hearts_Control.heart[global.currentheart + 1, 4] = heartHealth;
-		    global.totalhearts++;
-			*/
-		    //global.H[7]++;
-			scr_Heart_Item_Pickup_Setup(7, 60);
+			scr_Add_New_Heart(7, 60);
 			global.glasstime = 0;
 		}
 		if itemVal = "H08" {
-		    scr_Heart_Item_Pickup_Setup(8, 20);
+		    scr_Add_New_Heart(8, 20);
 		}
 		if itemVal = "H09" {
-		    scr_Heart_Item_Pickup_Setup(9, 20);
+		    scr_Add_New_Heart(9, 20);
 		}
 		if itemVal = "H10" {
-		    scr_Heart_Item_Pickup_Setup(10, 20);
+		    scr_Add_New_Heart(10, 20);
 		}
 		if itemVal = "H11" {
-		    scr_Heart_Item_Pickup_Setup(11, 20);
+		    scr_Add_New_Heart(11, 20);
 		}
 		if itemVal = "H12" {
-		    scr_Heart_Item_Pickup_Setup(12, 20);
+		    scr_Add_New_Heart(12, 20);
 		}
 		if itemVal = "H13" {
-		    scr_Heart_Item_Pickup_Setup(13, 20);
+		    scr_Add_New_Heart(13, 20);
 		}
 		if itemVal = "H14" {
-		    scr_Heart_Item_Pickup_Setup(14, 25);
+		    scr_Add_New_Heart(14, 25);
 		}
 		if itemVal = "H15" {
-		    scr_Heart_Item_Pickup_Setup(15, 20);
+		    scr_Add_New_Heart(15, 20);
 		}
 		if itemVal = "H16" {
-		    scr_Heart_Item_Pickup_Setup(16, 20);
+		    scr_Add_New_Heart(16, 20);
 		}
 		if itemVal = "H17" {
-		    scr_Heart_Item_Pickup_Setup(17, 20);
+		    scr_Add_New_Heart(17, 20);
 		}
 	
 		if recoGroup = "I" and !reload {
@@ -629,55 +604,47 @@ function scr_Hard_Coded_Item_Stats(itemVal, items_to_add = 1, reload = false) {
 	
 
 		if itemVal = "J01" {
-		    Soul_Hearts_Control.heart[global.currentheart + 1, 2] = 1;
-		    global.totalhearts++;
+			scr_Add_New_Heart(1, 20);
 		    global.soulstrength += 4;
 		    obj_Soul_Parent.sstrength += 4;
 		    //global.J[1]++;
 		}
 		if itemVal = "J02" {
-		    Soul_Hearts_Control.heart[global.currentheart + 1, 2] = 1;
-		    global.totalhearts++;
+		    scr_Add_New_Heart(1, 20);
 		    global.soulvitality += 4;
 		    obj_Soul_Parent.svitality += 4;
 		    //global.J[2]++;
 		}
 		if itemVal = "J03" {
-		    Soul_Hearts_Control.heart[global.currentheart + 1, 2] = 1;
-		    global.totalhearts++;
+		    scr_Add_New_Heart(1, 20);
 		    global.soulessence += 4;
 		    obj_Soul_Parent.sessence += 4;
 		    //global.J[3]++;
 		}
 		if itemVal = "J04" {
-		    Soul_Hearts_Control.heart[global.currentheart + 1, 2] = 1;
-		    global.totalhearts++;
+		    scr_Add_New_Heart(1, 20);
 		    global.souldexterity += 4;
 		    obj_Soul_Parent.sdexterity += 4;
 		    //global.J[4]++;
 		}
 		if itemVal = "J05" {
-		    Soul_Hearts_Control.heart[global.currentheart + 1, 2] = 1;
-		    global.totalhearts++;
+		    scr_Add_New_Heart(1, 20);
 		    global.soulperception += 4;
 		    obj_Soul_Parent.sperception += 4;
 		    //global.J[5]++;
 		}
 		if itemVal = "J06" {
-		    Soul_Hearts_Control.heart[global.currentheart + 1, 2] = 1;
-		    global.totalhearts++;
+		    scr_Add_New_Heart(1, 20);
 		    global.soulstate += 4;
 		    obj_Soul_Parent.sstate += 4;
 		    //global.J[6]++;
 		}
 		if itemVal = "J07" {
-		    Soul_Hearts_Control.heart[global.currentheart + 1, 2] = 1;
-		    global.totalhearts++;
+		    scr_Add_New_Heart(1, 20);
 		    //global.J[7]++;
 		}
 		if itemVal = "J08" {
-		    Soul_Hearts_Control.heart[global.currentheart + 1, 2] = 1;
-		    global.totalhearts++;
+		    scr_Add_New_Heart(1, 20);
 		    //global.J[8]++;
 		}
 
@@ -914,8 +881,7 @@ function scr_Hard_Coded_Item_Stats(itemVal, items_to_add = 1, reload = false) {
 	if itemVal = "OC02" {
 	    //global.OC[2]++;
 		if !reload {
-			Soul_Hearts_Control.heart[global.currentheart + 1, 2] = 52;
-		    global.totalhearts++;
+			scr_Add_New_Heart(52, 20);
 		}
 	}
 	if itemVal = "OC03" {
