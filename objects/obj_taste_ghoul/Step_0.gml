@@ -14,7 +14,7 @@ if active_attack = 1 {
 	direction = pattern_direction + 180;
 	
 	if active_attack_delay <= 0 {
-		scr_suck_all_into_angle(scr_circular_suck, 0.8 / speed, x, y, pattern_direction)
+		scr_suck_all_into_angle(scr_circular_suck, 1.5 / speed, x, y, pattern_direction)
 		if pattern_direction = 180 {
 			x -= speed * 5;	
 		} else {
@@ -51,7 +51,7 @@ if active_attack_delay <= 0 and active_attack_cooldown <= 0 and active_attack_du
 	// Hop leap attack setup example
 	if active_attack = 2 {
 		// 
-		scr_Boss_Attack_Time_Setup_v2(40, 30, 1, 0, 0, 10);
+		scr_Boss_Attack_Time_Setup_v2(30, 30, 1, 0, 0, 10);
 		scr_Boss_Dash_Setup_v2(scr_Soul_Point() - 30, 0, 4 * bossmovespeed);
 		bites = 2;
     }
@@ -71,11 +71,11 @@ if active_attack_delay <= 0 and pattern_cooldown <= 0 and pattern_count > 0 {
 		
 		var _offset = -45;
 		if pattern_count mod 2 = 0 {
-			_offset = 45	
+			_offset = 45
 		}
 		
 		attack_stats.bullet_direction = scr_Boss_Bullet_Direction_Formula(pattern_direction + _offset, 30)
-		attack_stats.bullet_direction = scr_Angle_Converge(attack_stats.bullet_direction, 90, 30)
+		attack_stats.bullet_direction = scr_Angle_Converge(attack_stats.bullet_direction, 90, 15)
 		
 		attack_stats.bullet_sprite = "spr_red_bullet_v2"
 		attack_stats.bullet_type = "obj_friction_bullet_v2"
@@ -83,13 +83,13 @@ if active_attack_delay <= 0 and pattern_cooldown <= 0 and pattern_count > 0 {
 		attack_stats.bullet_spread = 20;
 		attack_stats.bullet_direction_angle = 1
 		
-		attack_stats.boss_xoffset = 60;
+		attack_stats.boss_xoffset = 30;
 		attack_stats.boss_yoffset = -50;
 		if pattern_direction = 180 {
-			attack_stats.boss_xoffset = -60;
+			attack_stats.boss_xoffset = -30;
 		}
-		attack_stats.bullet_speed = bossbulletspeed * (5);
-		attack_stats.bullet_min_speed = attack_stats.bullet_speed * 0.4;
+		attack_stats.bullet_speed = bossbulletspeed * (3.3);
+		attack_stats.bullet_min_speed = attack_stats.bullet_speed * 0.5;
 		attack_stats.bullet_friction = attack_stats.bullet_speed / 30;
 		
 		image_index = 6
@@ -101,7 +101,7 @@ if active_attack_delay <= 0 and pattern_cooldown <= 0 and pattern_count > 0 {
 	}
 	
 	if active_attack = 2 {
-		scr_Boss_Dash_Movement_v2(30,2);
+		scr_Boss_Dash_Movement_v2(20,2);
 		
 		speed = dash_speed;
         direction = dash_direction;
@@ -129,12 +129,12 @@ if active_attack_delay <= 0 and pattern_cooldown <= 0 and pattern_count > 0 {
 			
 			if bites > 0 {
 				if bites = 2 {
-					scr_Boss_Attack_Time_Setup_v2(40, 0, 1, 120, 40, 10);
-					scr_Boss_Dash_Setup_v2(dash_direction + 60, 0, 4 * bossmovespeed);
+					scr_Boss_Attack_Time_Setup_v2(30, 0, 1, 120, 40, 10);
+					scr_Boss_Dash_Setup_v2(dash_direction + 90, 0, 4.5 * bossmovespeed);
 				}
 				if bites = 1 {
-					scr_Boss_Attack_Time_Setup_v2(50, 0, 1, 120, 40, 10);
-					scr_Boss_Dash_Setup_v2(dash_direction - 60, 0, 4 * bossmovespeed);
+					scr_Boss_Attack_Time_Setup_v2(30, 0, 1, 120, 40, 10);
+					scr_Boss_Dash_Setup_v2(dash_direction - 60, 0, 5 * bossmovespeed);
 				}
 				bites--;
 				image_index = _im

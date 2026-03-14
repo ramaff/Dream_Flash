@@ -53,9 +53,13 @@ function scr_suck_all_into_angle(_suck_type = scr_linear_suck, _suck_factor = 1,
 	with (obj_Bullet_Parent) {
 	    _suck_speed = _real_suck_fac / (distance_to_object(other) + 150);
 	    _suck_angle = point_direction(x,y,_xx,_yy);
-        var _diff = angle_difference(_suck_angle, _target_angle)
+        var _diff = abs(angle_difference(_suck_angle, _target_angle))
+		
+		if _diff > 110 {
+			break;	
+		}
         
-	    if abs(_diff) > 15 and _suck_type == scr_circular_suck {
+	    if _diff > 15 and _suck_type == scr_circular_suck {
 			var _offset = 90;
 			if _diff < 0 {
 				_offset = -90
@@ -68,9 +72,13 @@ function scr_suck_all_into_angle(_suck_type = scr_linear_suck, _suck_factor = 1,
 	with (obj_bullet_parent_v2) {
 	    _suck_speed = _real_suck_fac / (distance_to_object(other) + 150);
 	    _suck_angle = point_direction(x,y,_xx,_yy);
-		var _diff = angle_difference(_suck_angle, _target_angle)
+		var _diff = abs(angle_difference(_suck_angle, _target_angle))
+		
+		if _diff > 110 {
+			break;	
+		}
         
-	    if abs(_diff) > 15 and _suck_type == scr_circular_suck {
+	    if _diff > 15 and _suck_type == scr_circular_suck {
 			var _offset = 90;
 			if _diff < 0 {
 				_offset = -90
@@ -83,9 +91,13 @@ function scr_suck_all_into_angle(_suck_type = scr_linear_suck, _suck_factor = 1,
 	with (obj_Basic_Projectile_Parent) {
 	    _suck_speed = _real_suck_fac / (distance_to_object(other) + 150);
 	    _suck_angle = point_direction(x,y,_xx,_yy);
-        var _diff = angle_difference(_suck_angle, _target_angle)
+		var _diff = abs(angle_difference(_suck_angle, _target_angle))
+		
+		if _diff > 110 {
+			break;	
+		}
         
-	    if abs(_diff) > 15 and _suck_type == scr_circular_suck {
+	    if _diff > 15 and _suck_type == scr_circular_suck {
 			var _offset = 90;
 			if _diff < 0 {
 				_offset = -90
@@ -99,9 +111,13 @@ function scr_suck_all_into_angle(_suck_type = scr_linear_suck, _suck_factor = 1,
 	with (obj_Soul_Parent) {
 	    _suck_speed = (_real_suck_fac / 2) / (distance_to_object(other) + 150);
 	    _suck_angle = point_direction(x,y,_xx,_yy);
-        var _diff = angle_difference(_suck_angle, _target_angle)
+        var _diff = abs(angle_difference(_suck_angle, _target_angle))
+		
+		if _diff > 110 {
+			break;	
+		}
         
-	    if abs(_diff) > 15 and _suck_type == scr_circular_suck {
+	    if _diff > 15 and _suck_type == scr_circular_suck {
 			var _offset = 90;
 			if _diff < 0 {
 				_offset = -90
