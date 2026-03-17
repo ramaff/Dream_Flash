@@ -66,11 +66,11 @@ if active_attack_delay <= 0 and pattern_cooldown <= 0 and pattern_count > 0 {
 		attack_stats.bullet_direction = scr_Boss_Bullet_Direction_Formula(scr_Soul_Point(), 120)
 		attack_stats.bullet_sprite = "spr_red_bullet_v2"
 		attack_stats.bullet_count = 2;
-		attack_stats.bullet_spread = 90;
+		attack_stats.bullet_spread = 75;
 		attack_stats.bullet_type = "obj_wave_bullet_v2"
 		attack_stats.wave_strength = 9;
 		attack_stats.wave_time = 45;
-		attack_stats.bullet_speed = bossbulletspeed * (1.35 + random(0.8))
+		attack_stats.bullet_speed = bossbulletspeed * (1.55 + random(0.8))
 		attack_stats.follow_bullets = 4;
 		
 		scr_boss_shoot_v2();
@@ -87,10 +87,17 @@ if active_attack_delay <= 0 and pattern_cooldown <= 0 and pattern_count > 0 {
 		dash_direction = scr_Angle_Converge(dash_direction, scr_Soul_Point() + scr_Wave(-60, 60, 1, 0), 5)
 		
 		if pattern_count < 150 {
-			speed = dash_speed * 0.25;	
+			speed = dash_speed * 0.25;
+			if image_index > 4 {
+				image_index = 4	
+			}
+		} else {
+			image_index = 2;	
 		}
 		
 		if pattern_count mod 3 = 0 and pattern_count < 140 {
+			
+			scr_Boss_Stretch("Vertical", 0.1);
 			attack_stats.bullet_direction = scr_Boss_Bullet_Direction_Formula(scr_Wave(-75, 75, 1.75, 0), 0.1)
 			attack_stats.bullet_count = 3;
 			attack_stats.bullet_spread = 120;
@@ -139,7 +146,7 @@ if active_attack = 1 {
 	}
 } else if active_attack = 2 {
 	var _hold_frame = 1;
-	scr_Boss_Attack_Sprite_v2(spr_hear_ghoul_freak_out, _hold_frame, 2, 2, 20);
+	scr_Boss_Attack_Sprite_v2(spr_hear_ghoul_freak_out, _hold_frame, 2, 4, 20);
 	if image_index = _hold_frame {
 		scr_Boss_Wobble("Horizontal", 2, 0.4, 0)	
 	}
