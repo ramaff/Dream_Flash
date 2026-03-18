@@ -17,11 +17,13 @@ if active_attack = 0 {
 	speed = lerp(speed, bossmovespeed * 0.25, 0.05);	
 }
 
+
 if scr_Soul_Distance() > 300 {
 	image_alpha = lerp(image_alpha, 0, 0.05);	
 } else {
 	image_alpha = lerp(image_alpha, 1, 0.25);	
 }
+
 
 if scr_Outside_Check_Bool(256) {
 	var _new_pos = scr_Boss_Teleport_v2_Return(-256, -1, 300)
@@ -41,7 +43,7 @@ if active_attack_delay <= 0 and active_attack_cooldown <= 0 and active_attack_du
 	
     if active_attack = 1 {
 		// Setup how many attacks per boss move, delay, etc
-		scr_Boss_Attack_Time_Setup_v2(10, 20, 30, 180, 80, 10);
+		scr_Boss_Attack_Time_Setup_v2(10, 40, 30, 180, 80, 10);
 		
 		// Can set up the initial pattern direction
 		// patternDirection = scr_Soul_Point();
@@ -61,13 +63,15 @@ if active_attack_delay <= 0 and pattern_cooldown <= 0 and pattern_count > 0 {
     if active_attack = 1 {
 		scr_Boss_Stretch("Vertical", 1);
 		
+		image_index = 2;
+		
 		attack_stats.bullet_direction = scr_Boss_Bullet_Direction_Formula(scr_Soul_Point(), 30)
 		attack_stats.bullet_sprite = "spr_red_bullet_v2"
 		attack_stats.bullet_type = "obj_peek_a_bullet"
-		attack_stats.bullet_count = 3;
+		attack_stats.bullet_count = 1;
 		attack_stats.bullet_spread = 15;
 		attack_stats.bullet_alpha = 0;
-		attack_stats.bullet_speed = bossbulletspeed * (0.6 + random(0.9));
+		attack_stats.bullet_speed = bossbulletspeed * (0.9 + random(0.9));
 		attack_stats.bullet_life_span = 360;
 		
 		if scr_Soul_Distance() < 300 {
@@ -80,13 +84,17 @@ if active_attack_delay <= 0 and pattern_cooldown <= 0 and pattern_count > 0 {
 			_x_mult = -1;	
 		}
 		
-		var _xoffsets = [-10, 0, 10, 15, 50]
-		var _yoffsets = [-55, -100, -75, -50, -20]
-		var _index = pattern_count mod 5;
+		var _xoffsets = [-10, -15, 30, 60, 38]
+		var _yoffsets = [-15, -50, -70, -50, -10]
+		var _i;
 		
-		attack_stats.boss_xoffset = _xoffsets[_index] * _x_mult;
-		attack_stats.boss_yoffset = _yoffsets[_index];
-		scr_boss_shoot_v2();
+		for(_i = 0; _i < 5; _i++) {
+			var _index = _i mod 5;
+		
+			attack_stats.boss_xoffset = _xoffsets[_index] * _x_mult;
+			attack_stats.boss_yoffset = _yoffsets[_index];
+			scr_boss_shoot_v2();
+		}
 	
 		// If you gotta change the pattern aim direction
 	    // pattern_direction += 0;
@@ -140,7 +148,7 @@ scr_Boss_Size_Lerp_Dir(0.15);
 // Handles boss attack sprite animation
 if active_attack != 0 {
 	var _hold_frame = 1;
-	scr_Boss_Attack_Sprite_v2(spr_sight_sense_shoot, _hold_frame, 2, 2, 20);
+	scr_Boss_Attack_Sprite_v2(spr_sight_sense_shoot, _hold_frame, 2, 5, 20);
 	if image_index = _hold_frame {
 		scr_Boss_Wobble("Horizontal", 2, 0.4, 0)	
 	}
