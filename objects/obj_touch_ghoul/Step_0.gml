@@ -9,13 +9,6 @@ scr_Boss_Height_Bob(30, 1, 0);
 // Make boss shape wobble:
 scr_Boss_Wobble("Horizontal", 0.4, 1, 0);
 
-if active_attack = 0 {
-	direction = scr_Soul_Point() + scr_Wave(-60, 60, 2, 0) + 60;
-	speed = lerp(speed, bossmovespeed, 0.1);
-} else if active_attack = 1 {
-	speed = lerp(speed, bossmovespeed * 0.05, 0.05);	
-}
-
 //////////////////////////////////////////////////////////////////////////////////////////
 /////////////// Active Attack Prep
 //////////////////////////////////////////////////////////////////////////////////////////
@@ -28,7 +21,7 @@ if active_attack_delay <= 0 and active_attack_cooldown <= 0 and active_attack_du
 	
     if active_attack = 1 {
 		// Setup how many attacks per boss move, delay, etc
-		scr_Boss_Attack_Time_Setup_v2(4, 50, 60, 150, 120, 10);
+		scr_Boss_Attack_Time_Setup_v2(1, 50, 1, 120, 30, 10);
 		
 		// Can set up the initial pattern direction
 		// patternDirection = scr_Soul_Point();
@@ -38,7 +31,9 @@ if active_attack_delay <= 0 and active_attack_cooldown <= 0 and active_attack_du
 	if active_attack = 2 {
 		// 
 		scr_Boss_Attack_Time_Setup_v2(50, 30, 1, 30, 30, 10);
-		scr_Boss_Dash_Setup_v2(scr_Soul_Point(), 0, 7 * bossmovespeed);
+		
+		scr_Boss_Jump_Setup_v2(0, 7 * bossmovespeed, x, y);
+		//scr_Boss_Dash_Setup_v2(scr_Soul_Point(), 0, 7 * bossmovespeed);
     }
 	// Minion Spawn Example
 	if active_attack = 3 {
@@ -63,15 +58,11 @@ if active_attack_delay <= 0 and pattern_cooldown <= 0 and pattern_count > 0 {
     if active_attack = 1 {
 		scr_Boss_Stretch("Vertical", 1);
 		
-		attack_stats.bullet_direction = scr_Boss_Bullet_Direction_Formula(scr_Soul_Point(), 120)
+		attack_stats.bullet_direction = scr_Boss_Bullet_Direction_Formula(scr_Soul_Point(), 30)
 		attack_stats.bullet_sprite = "spr_red_bullet_v2"
-		attack_stats.bullet_count = 2;
-		attack_stats.bullet_spread = 75;
-		attack_stats.bullet_type = "obj_wave_bullet_v2"
-		attack_stats.wave_strength = 9;
-		attack_stats.wave_time = 45;
-		attack_stats.bullet_speed = bossbulletspeed * (1.55 + random(0.8))
-		attack_stats.follow_bullets = 4;
+		attack_stats.bullet_count = 3;
+		attack_stats.bullet_spread = 30;
+		attack_stats.bullet_direction_angle = 1
 		
 		scr_boss_shoot_v2();
 	
@@ -80,28 +71,15 @@ if active_attack_delay <= 0 and pattern_cooldown <= 0 and pattern_count > 0 {
 	}
 	
 	if active_attack = 2 {
-		scr_Boss_Dash_Movement_v2(30,200);
+		scr_Boss_Dash_Movement_v2(4,2);
 		
 		speed = dash_speed;
         direction = dash_direction;
-		dash_direction = scr_Angle_Converge(dash_direction, scr_Soul_Point() + scr_Wave(-60, 60, 1, 0), 5)
 		
-		if pattern_count < 150 {
-			speed = dash_speed * 0.25;
-			if image_index > 5.9 {
-				image_index = 4	
-			}
-		} else {
-			image_index = 2;	
-		}
+		scr_Jump_Movement_v2(2);	
 		
-		if pattern_count mod 3 = 0 and pattern_count < 140 {
-			
-			scr_Boss_Stretch("Vertical", 0.1);
-			attack_stats.bullet_direction = scr_Boss_Bullet_Direction_Formula(scr_Wave(-75, 75, 1.75, 0), 0.1)
-			attack_stats.bullet_count = 3;
-			attack_stats.bullet_spread = 120;
-			attack_stats.bullet_speed = bossbulletspeed * 2;
+		if pattern_count = floor(pattern_count_max) {
+			attack_stats.bullet_direction = scr_Boss_Bullet_Direction_Formula(scr_Soul_Point(), 30)
 		
 			scr_boss_shoot_v2();
 		}
@@ -135,23 +113,17 @@ if active_attack_duration <= 0 {
 /// Boss Sprite Code
 
 // Go back to normal default size
-scr_Boss_Size_Lerp_Dir(0.15);
+scr_Boss_Size_Lerp(0.15);
 
 // Handles boss attack sprite animation
-if active_attack = 1 {
+if active_attack != 0 {
 	var _hold_frame = 1;
-	scr_Boss_Attack_Sprite_v2(spr_hear_ghoul_attack, _hold_frame, 2, 2, 20);
-	if image_index = _hold_frame {
-		scr_Boss_Wobble("Horizontal", 2, 0.4, 0)	
-	}
-} else if active_attack = 2 {
-	var _hold_frame = 1;
-	scr_Boss_Attack_Sprite_v2(spr_hear_ghoul_freak_out, _hold_frame, 2, 5, 20);
+	scr_Boss_Attack_Sprite_v2(spr_Boss_Template_Attack, _hold_frame, 2, 2, 20);
 	if image_index = _hold_frame {
 		scr_Boss_Wobble("Horizontal", 2, 0.4, 0)	
 	}
 } else {
-	sprite_index = spr_hear_ghoul;
+	sprite_index = spr_Boss_Template;
 }
 
 // So that the boss hurts soul on collision

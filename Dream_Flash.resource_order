@@ -781,6 +781,7 @@
     {"name":"obj_Thought_Spawn","order":13,"path":"objects/obj_Thought_Spawn/obj_Thought_Spawn.yy",},
     {"name":"obj_thunder_bullet_v2","order":11,"path":"objects/obj_thunder_bullet_v2/obj_thunder_bullet_v2.yy",},
     {"name":"obj_Time_Warp","order":1,"path":"objects/obj_Time_Warp/obj_Time_Warp.yy",},
+    {"name":"obj_touch_ghoul","order":9,"path":"objects/obj_touch_ghoul/obj_touch_ghoul.yy",},
     {"name":"obj_Tough_Luck","order":15,"path":"objects/obj_Tough_Luck/obj_Tough_Luck.yy",},
     {"name":"obj_Trail_Friction_Part","order":24,"path":"objects/obj_Trail_Friction_Part/obj_Trail_Friction_Part.yy",},
     {"name":"obj_Trash_Apple","order":11,"path":"objects/obj_Trash_Apple/obj_Trash_Apple.yy",},

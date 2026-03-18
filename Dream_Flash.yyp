@@ -1488,6 +1488,7 @@
     {"id":{"name":"obj_Time_Warp","path":"objects/obj_Time_Warp/obj_Time_Warp.yy",},},
     {"id":{"name":"obj_Title_Screen_Effect_Control","path":"objects/obj_Title_Screen_Effect_Control/obj_Title_Screen_Effect_Control.yy",},},
     {"id":{"name":"obj_Title_Settings_Menu","path":"objects/obj_Title_Settings_Menu/obj_Title_Settings_Menu.yy",},},
+    {"id":{"name":"obj_touch_ghoul","path":"objects/obj_touch_ghoul/obj_touch_ghoul.yy",},},
     {"id":{"name":"obj_Tough_Luck","path":"objects/obj_Tough_Luck/obj_Tough_Luck.yy",},},
     {"id":{"name":"obj_Toxic_Slime","path":"objects/obj_Toxic_Slime/obj_Toxic_Slime.yy",},},
     {"id":{"name":"obj_Toxic_Sorrow_Bullet","path":"objects/obj_Toxic_Sorrow_Bullet/obj_Toxic_Sorrow_Bullet.yy",},},
