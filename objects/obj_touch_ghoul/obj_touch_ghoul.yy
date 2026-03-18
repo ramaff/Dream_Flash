@@ -35,8 +35,8 @@
   "resourceVersion":"2.0",
   "solid":false,
   "spriteId":{
-    "name":"spr_Boss_Template",
-    "path":"sprites/spr_Boss_Template/spr_Boss_Template.yy",
+    "name":"spr_touch_ghoul",
+    "path":"sprites/spr_touch_ghoul/spr_touch_ghoul.yy",
   },
   "spriteMaskId":null,
   "visible":false,
