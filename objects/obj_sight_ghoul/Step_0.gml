@@ -84,8 +84,8 @@ if active_attack_delay <= 0 and pattern_cooldown <= 0 and pattern_count > 0 {
 			_x_mult = -1;	
 		}
 		
-		var _xoffsets = [-10, -15, 30, 60, 38]
-		var _yoffsets = [-15, -50, -70, -50, -10]
+		var _xoffsets = [0, -5, 30, 55, 38]
+		var _yoffsets = [-15, -50, -70, -40, -10]
 		var _i;
 		
 		for(_i = 0; _i < 5; _i++) {
