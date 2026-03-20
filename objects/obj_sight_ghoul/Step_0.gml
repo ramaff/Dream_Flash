@@ -43,7 +43,7 @@ if active_attack_delay <= 0 and active_attack_cooldown <= 0 and active_attack_du
 	
     if active_attack = 1 {
 		// Setup how many attacks per boss move, delay, etc
-		scr_Boss_Attack_Time_Setup_v2(10, 40, 30, 180, 80, 10);
+		scr_Boss_Attack_Time_Setup_v2(10, 40, 40, 180, 80, 20);
 		
 		// Can set up the initial pattern direction
 		// patternDirection = scr_Soul_Point();
@@ -63,7 +63,7 @@ if active_attack_delay <= 0 and pattern_cooldown <= 0 and pattern_count > 0 {
     if active_attack = 1 {
 		scr_Boss_Stretch("Vertical", 1);
 		
-		image_index = 2;
+		image_index = 3;
 		
 		attack_stats.bullet_direction = scr_Boss_Bullet_Direction_Formula(scr_Soul_Point(), 30)
 		attack_stats.bullet_sprite = "spr_red_bullet_v2"
@@ -148,7 +148,7 @@ scr_Boss_Size_Lerp_Dir(0.15);
 // Handles boss attack sprite animation
 if active_attack != 0 {
 	var _hold_frame = 1;
-	scr_Boss_Attack_Sprite_v2(spr_sight_sense_shoot, _hold_frame, 2, 5, 20);
+	scr_Boss_Attack_Sprite_v2(spr_sight_sense_shoot, _hold_frame, 2, 5, 30);
 	if image_index = _hold_frame {
 		scr_Boss_Wobble("Horizontal", 2, 0.4, 0)	
 	}
