@@ -16,3 +16,18 @@ scr_Boss_Height_Setup(60);
 death_sprite = spr_boss_template_ko;
 boss_palette = spr_boss_template_palette;
 boss_palette_index = champ;
+
+tar_angle = 0;
+
+scr_default_attack_settings_v2();
+
+minion_count = 3;
+minion_type = obj_touch_hand;
+minion_health = 40;
+minion_defense = 0;
+		
+var _mins = scr_Minion_Spawn();
+
+hand_1 = _mins[0];
+hand_2 = _mins[1];
+hand_3 = _mins[2];

@@ -1,11 +1,11 @@
 {
   "$GMSprite":"v2",
-  "%Name":"spr_touch_ghoul",
+  "%Name":"spr_touch_ghoul_hand_stuff",
   "bboxMode":0,
   "bbox_bottom":347,
   "bbox_left":163,
-  "bbox_right":311,
-  "bbox_top":85,
+  "bbox_right":319,
+  "bbox_top":41,
   "collisionKind":4,
   "collisionTolerance":0,
   "DynamicTexturePage":false,
@@ -13,6 +13,9 @@
   "For3D":false,
   "frames":[
     {"$GMSpriteFrame":"v1","%Name":"7201369e-babe-4d33-a5dc-61a42ad61abf","name":"7201369e-babe-4d33-a5dc-61a42ad61abf","resourceType":"GMSpriteFrame","resourceVersion":"2.0",},
+    {"$GMSpriteFrame":"v1","%Name":"f3ff3b37-66e3-4da5-b9aa-7f4a669c1bfc","name":"f3ff3b37-66e3-4da5-b9aa-7f4a669c1bfc","resourceType":"GMSpriteFrame","resourceVersion":"2.0",},
+    {"$GMSpriteFrame":"v1","%Name":"dd7b36f8-1937-4cee-8f7f-d5260b9ea2ed","name":"dd7b36f8-1937-4cee-8f7f-d5260b9ea2ed","resourceType":"GMSpriteFrame","resourceVersion":"2.0",},
+    {"$GMSpriteFrame":"v1","%Name":"e0eae9df-364f-46b0-ac6b-8a41614bc499","name":"e0eae9df-364f-46b0-ac6b-8a41614bc499","resourceType":"GMSpriteFrame","resourceVersion":"2.0",},
   ],
   "gridX":0,
   "gridY":0,
@@ -21,7 +24,7 @@
   "layers":[
     {"$GMImageLayer":"","%Name":"242a401b-24bf-4544-8454-59432ff5255c","blendMode":0,"displayName":"default","isLocked":false,"name":"242a401b-24bf-4544-8454-59432ff5255c","opacity":100.0,"resourceType":"GMImageLayer","resourceVersion":"2.0","visible":true,},
   ],
-  "name":"spr_touch_ghoul",
+  "name":"spr_touch_ghoul_hand_stuff",
   "nineSlice":{
     "$GMNineSliceData":"",
     "bottom":0,
@@ -52,7 +55,7 @@
   "resourceVersion":"2.0",
   "sequence":{
     "$GMSequence":"v1",
-    "%Name":"spr_touch_ghoul",
+    "%Name":"spr_touch_ghoul_hand_stuff",
     "autoRecord":true,
     "backdropHeight":768,
     "backdropImageOpacity":0.5,
@@ -68,7 +71,7 @@
     },
     "eventStubScript":null,
     "eventToFunction":{},
-    "length":1.0,
+    "length":4.0,
     "lockOrigin":false,
     "moments":{
       "$KeyframeStore<MomentsEventKeyframe>":"",
@@ -76,7 +79,7 @@
       "resourceType":"KeyframeStore<MomentsEventKeyframe>",
       "resourceVersion":"2.0",
     },
-    "name":"spr_touch_ghoul",
+    "name":"spr_touch_ghoul_hand_stuff",
     "playback":1,
     "playbackSpeed":6.0,
     "playbackSpeedType":0,
@@ -88,8 +91,17 @@
     "tracks":[
       {"$GMSpriteFramesTrack":"","builtinName":0,"events":[],"inheritsTrackColour":true,"interpolation":1,"isCreationTrack":false,"keyframes":{"$KeyframeStore<SpriteFrameKeyframe>":"","Keyframes":[
             {"$Keyframe<SpriteFrameKeyframe>":"","Channels":{
-                "0":{"$SpriteFrameKeyframe":"","Id":{"name":"7201369e-babe-4d33-a5dc-61a42ad61abf","path":"sprites/spr_touch_ghoul/spr_touch_ghoul.yy",},"resourceType":"SpriteFrameKeyframe","resourceVersion":"2.0",},
+                "0":{"$SpriteFrameKeyframe":"","Id":{"name":"7201369e-babe-4d33-a5dc-61a42ad61abf","path":"sprites/spr_touch_ghoul_hand_stuff/spr_touch_ghoul_hand_stuff.yy",},"resourceType":"SpriteFrameKeyframe","resourceVersion":"2.0",},
               },"Disabled":false,"id":"7b7fa295-c437-416b-a71f-f6805ff03dd7","IsCreationKey":false,"Key":0.0,"Length":1.0,"resourceType":"Keyframe<SpriteFrameKeyframe>","resourceVersion":"2.0","Stretch":false,},
+            {"$Keyframe<SpriteFrameKeyframe>":"","Channels":{
+                "0":{"$SpriteFrameKeyframe":"","Id":{"name":"f3ff3b37-66e3-4da5-b9aa-7f4a669c1bfc","path":"sprites/spr_touch_ghoul_hand_stuff/spr_touch_ghoul_hand_stuff.yy",},"resourceType":"SpriteFrameKeyframe","resourceVersion":"2.0",},
+              },"Disabled":false,"id":"5656d646-73c6-451d-91c1-5b0ac0e0b20b","IsCreationKey":false,"Key":1.0,"Length":1.0,"resourceType":"Keyframe<SpriteFrameKeyframe>","resourceVersion":"2.0","Stretch":false,},
+            {"$Keyframe<SpriteFrameKeyframe>":"","Channels":{
+                "0":{"$SpriteFrameKeyframe":"","Id":{"name":"dd7b36f8-1937-4cee-8f7f-d5260b9ea2ed","path":"sprites/spr_touch_ghoul_hand_stuff/spr_touch_ghoul_hand_stuff.yy",},"resourceType":"SpriteFrameKeyframe","resourceVersion":"2.0",},
+              },"Disabled":false,"id":"569e9b2d-8912-417d-b91c-f4e1d9f59552","IsCreationKey":false,"Key":2.0,"Length":1.0,"resourceType":"Keyframe<SpriteFrameKeyframe>","resourceVersion":"2.0","Stretch":false,},
+            {"$Keyframe<SpriteFrameKeyframe>":"","Channels":{
+                "0":{"$SpriteFrameKeyframe":"","Id":{"name":"e0eae9df-364f-46b0-ac6b-8a41614bc499","path":"sprites/spr_touch_ghoul_hand_stuff/spr_touch_ghoul_hand_stuff.yy",},"resourceType":"SpriteFrameKeyframe","resourceVersion":"2.0",},
+              },"Disabled":false,"id":"dd65546e-b913-4a23-b179-31e71d8ec0c6","IsCreationKey":false,"Key":3.0,"Length":1.0,"resourceType":"Keyframe<SpriteFrameKeyframe>","resourceVersion":"2.0","Stretch":false,},
           ],"resourceType":"KeyframeStore<SpriteFrameKeyframe>","resourceVersion":"2.0",},"modifiers":[],"name":"frames","resourceType":"GMSpriteFramesTrack","resourceVersion":"2.0","spriteId":null,"trackColour":0,"tracks":[],"traits":0,},
     ],
     "visibleRange":null,

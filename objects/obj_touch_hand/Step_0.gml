@@ -7,19 +7,19 @@ scr_Boss_Step(2);
 scr_Boss_Height_Bob(30, 1, 0);
 
 // Make boss shape wobble:
-scr_Boss_Wobble("Horizontal", 0.4, 1, 0);
+scr_Boss_Wobble("Horizontal", 0.3, 1, 0);
 
-tar_angle = (tar_angle + 1) mod 360
 
-if instance_exists(hand_1) {
-	hand_1.tar_angle = tar_angle;	
+var _xx = lengthdir_x(100, tar_angle)
+var _yy = lengthdir_y(100, tar_angle)
+
+direction = point_direction(x, y,minionbossparent.x + _xx, minionbossparent.y + _yy)
+if active_attack = 1 {
+	speed = lerp(speed, bossmovespeed * 0.1, 0.1);
+} else {
+	speed = lerp(speed, bossmovespeed * 2, 0.1);
 }
-if instance_exists(hand_2) {
-	hand_2.tar_angle = tar_angle + 120;
-}
-if instance_exists(hand_3) {
-	hand_3.tar_angle = tar_angle + 240;	
-}
+speed = min(speed, point_distance(x, y,minionbossparent.x + _xx, minionbossparent.y + _yy));
 
 //////////////////////////////////////////////////////////////////////////////////////////
 /////////////// Active Attack Prep
@@ -27,40 +27,22 @@ if instance_exists(hand_3) {
 
 if active_attack_delay <= 0 and active_attack_cooldown <= 0 and active_attack_duration <= 0 {
     
-	// Pick a random attack to do
-	active_attack = choose(1, 2, 3);
-	active_attack = 1;
 	
     if active_attack = 1 {
 		// Setup how many attacks per boss move, delay, etc
-		scr_Boss_Attack_Time_Setup_v2(1, 50, 1, 120, 30, 10);
-		
-		var _hands_attack = 3;
-		
-		hand_1.active_attack = _hands_attack
-		hand_2.active_attack = _hands_attack
-		hand_3.active_attack = _hands_attack
+		scr_Boss_Attack_Time_Setup_v2(1, 40, 1, 120, 30, 10);
 		
 		// Can set up the initial pattern direction
 		// patternDirection = scr_Soul_Point();
 		// patternDirection = random(360;
     }
+	
 	// Hop leap attack setup example
 	if active_attack = 2 {
 		// 
 		scr_Boss_Attack_Time_Setup_v2(50, 30, 1, 30, 30, 10);
 		
 		scr_Boss_Jump_Setup_v2(0, 7 * bossmovespeed, x, y);
-		//scr_Boss_Dash_Setup_v2(scr_Soul_Point(), 0, 7 * bossmovespeed);
-    }
-	// Minion Spawn Example
-	if active_attack = 3 {
-		// Setup how many attacks per boss move, delay, etc
-		scr_Boss_Attack_Time_Setup_v2(1, 50, 1, 120, 30, 10);
-		
-		// Can set up the initial pattern direction
-		// patternDirection = scr_Soul_Point();
-		// patternDirection = random(360;
     }
 }
 
@@ -74,18 +56,10 @@ scr_default_attack_settings_v2();
 if active_attack_delay <= 0 and pattern_cooldown <= 0 and pattern_count > 0 {
    
     if active_attack = 1 {
-		scr_Boss_Stretch("Vertical", 1);
-		
-		attack_stats.bullet_direction = scr_Boss_Bullet_Direction_Formula(scr_Soul_Point(), 30)
-		attack_stats.bullet_sprite = "spr_red_bullet_v2"
-		attack_stats.bullet_count = 3;
-		attack_stats.bullet_spread = 30;
-		attack_stats.bullet_direction_angle = 1
-		
-		scr_boss_shoot_v2();
 	
 		// If you gotta change the pattern aim direction
-	    // pattern_direction += 0;
+	    // bossPatternDirection += 0;
+		scr_boss_shoot_v2();
 	}
 	
 	if active_attack = 2 {
@@ -101,18 +75,6 @@ if active_attack_delay <= 0 and pattern_cooldown <= 0 and pattern_count > 0 {
 		
 			scr_boss_shoot_v2();
 		}
-	}
-	
-	if active_attack = 3 {
-	
-		minion_count = 1;
-		minion_type = obj_Minion_Template;
-		minion_health = bossmaxhealth / 10;
-		//minion_spawn_animation = spr_pocket_minion_spawn
-		//minion_yy = boss_height;
-
-		scr_Minion_Spawn();
-	
 	}
 	
 	// Maybe I should put this into a script
@@ -136,18 +98,24 @@ scr_Boss_Size_Lerp(0.15);
 // Handles boss attack sprite animation
 if active_attack = 1 {
 	var _hold_frame = 1;
-	scr_Boss_Attack_Sprite_v2(spr_touch_ghoul_shoot, _hold_frame, 2, 2, 20);
+	scr_Boss_Attack_Sprite_v2(spr_touch_hand_rock, _hold_frame, 2, 2, 20);
 	if image_index = _hold_frame {
-		scr_Boss_Wobble("Horizontal", 2, 0.4, 0)	
+		scr_Boss_Wobble("Horizontal", 2, 0.25, 0)	
 	}
 } else if active_attack = 2 {
 	var _hold_frame = 1;
-	scr_Boss_Attack_Sprite_v2(spr_touch_ghoul_hand_stuff, _hold_frame, 2, 2, 20);
+	scr_Boss_Attack_Sprite_v2(spr_touch_hand_paper, _hold_frame, 2, 2, 20);
 	if image_index = _hold_frame {
-		scr_Boss_Wobble("Horizontal", 2, 0.4, 0)	
+		scr_Boss_Wobble("Horizontal", 2, 0.25, 0)	
+	}
+} else if active_attack = 3 {
+	var _hold_frame = 1;
+	scr_Boss_Attack_Sprite_v2(spr_touch_hand_scissors, _hold_frame, 2, 2, 20);
+	if image_index = _hold_frame {
+		scr_Boss_Wobble("Horizontal", 2, 0.25, 0)	
 	}
 } else {
-	sprite_index = spr_touch_ghoul;
+	sprite_index = spr_touch_hand;
 }
 
 // So that the boss hurts soul on collision

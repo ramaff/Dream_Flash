@@ -1,21 +1,21 @@
 {
   "$GMObject":"",
-  "%Name":"obj_touch_ghoul",
+  "%Name":"obj_touch_hand",
   "eventList":[
     {"$GMEvent":"v1","%Name":"","collisionObjectId":null,"eventNum":0,"eventType":0,"isDnD":false,"name":"","resourceType":"GMEvent","resourceVersion":"2.0",},
     {"$GMEvent":"v1","%Name":"","collisionObjectId":null,"eventNum":0,"eventType":3,"isDnD":false,"name":"","resourceType":"GMEvent","resourceVersion":"2.0",},
     {"$GMEvent":"v1","%Name":"","collisionObjectId":null,"eventNum":0,"eventType":8,"isDnD":false,"name":"","resourceType":"GMEvent","resourceVersion":"2.0",},
   ],
   "managed":true,
-  "name":"obj_touch_ghoul",
+  "name":"obj_touch_hand",
   "overriddenProperties":[],
   "parent":{
-    "name":"Feel Bosses",
-    "path":"folders/Objects/Bosses/Feel Bosses.yy",
+    "name":"Feel Minions",
+    "path":"folders/Objects/Bosses/Minions/Feel Minions.yy",
   },
   "parentObjectId":{
-    "name":"obj_Main_Boss_Parent",
-    "path":"objects/obj_Main_Boss_Parent/obj_Main_Boss_Parent.yy",
+    "name":"obj_Minion_Parent",
+    "path":"objects/obj_Minion_Parent/obj_Minion_Parent.yy",
   },
   "persistent":false,
   "physicsAngularDamping":0.1,
@@ -35,8 +35,8 @@
   "resourceVersion":"2.0",
   "solid":false,
   "spriteId":{
-    "name":"spr_touch_ghoul_dump",
-    "path":"sprites/spr_touch_ghoul_dump/spr_touch_ghoul_dump.yy",
+    "name":"spr_touch_hand",
+    "path":"sprites/spr_touch_hand/spr_touch_hand.yy",
   },
   "spriteMaskId":null,
   "visible":false,
