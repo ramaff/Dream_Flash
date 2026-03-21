@@ -4,14 +4,15 @@
 scr_Boss_Step(2);
 
 // Make boss shape wobble:
+speed = lerp(speed, bossmovespeed * 1.4, 0.05);
+direction = scr_Angle_Converge(direction, scr_Soul_Point() + scr_Wave(-75, 75, 4, 0), 3);
+
 if active_attack = 2 and active_attack_delay < 0 {
 	scr_Boss_Wobble("Horizontal", 2.1, 0.3, 0);
+	speed = lerp(speed, bossmovespeed * 0.05, 0.25);
 } else {
 	scr_Boss_Wobble("Horizontal", 1, 0.6, 0);
 }
-
-speed = lerp(speed, bossmovespeed * 1.4, 0.05);
-direction = scr_Angle_Converge(direction, scr_Soul_Point() + scr_Wave(-75, 75, 4, 0), 3);
 
 if scr_wall_bounce_v2(900, 8) {
 	dash_direction = direction;
@@ -26,7 +27,8 @@ if scr_wall_bounce_v2(900, 8) {
 if active_attack_delay <= 0 and active_attack_cooldown <= 0 and active_attack_duration <= 0 {
     
 	// Pick a random attack to do
-	active_attack = choose(1, 1, 1, 2);
+	active_attack = choose(1, 1, 2);
+	active_attack = 2;
 	
 	// Sneeze
     if active_attack = 1 {
@@ -42,9 +44,10 @@ if active_attack_delay <= 0 and active_attack_cooldown <= 0 and active_attack_du
 	// The Long Nose Blow
 	if active_attack = 2 {
 		// 
-		scr_Boss_Attack_Time_Setup_v2(270, 30, 1, 210, 60, 10);
+		//scr_Boss_Attack_Time_Setup_v2(270, 30, 1, 210, 60, 10);
+		scr_Boss_Attack_Time_Setup_v2(1, 30, 1, 210, 60, 240);
 		
-		scr_Boss_Dash_Setup_v2(scr_Soul_Point() + 180, 0, 5 * bossmovespeed);
+		//scr_Boss_Dash_Setup_v2(scr_Soul_Point() + 180, 0, 5 * bossmovespeed);
     }
 }
 
@@ -102,11 +105,22 @@ if active_attack_delay <= 0 and pattern_cooldown <= 0 and pattern_count > 0 {
 	}
 	
 	if active_attack = 2 {
-		scr_Boss_Dash_Movement_v2(4,2);
+		
+		attack_stats.bullet_count = 3;
+		attack_stats.bullet_spread = 120;
+		attack_stats.bullet_direction = random(360);
+		attack_stats.bullet_speed = bossbulletspeed * (2 + random(0.3))
+		
+		attack_stats.bullet_type = "obj_spinning_snot_trail_v2"
+		attack_stats.angular_velocity = 1.5;
+		attack_stats.bullet_life_span = 240;
+		
+		scr_boss_shoot_v2();
+		/*scr_Boss_Dash_Movement_v2(4,2);
 		
 		speed = dash_speed;
         direction = dash_direction;
-		dash_direction = scr_Angle_Converge(direction, scr_Soul_Point() + scr_Wave(75, 75, 1, 0), 3)
+		dash_direction = scr_Angle_Converge(direction, scr_Soul_Point() + scr_Wave(75, 75, 1, 0), 3) */
 		
 		//scr_Jump_Movement_v2(2);	
 		
