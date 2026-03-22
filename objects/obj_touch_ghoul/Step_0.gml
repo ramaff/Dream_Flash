@@ -50,7 +50,7 @@ if active_attack_delay <= 0 and active_attack_cooldown <= 0 and active_attack_du
 		}
 		var _dir = scr_Soul_Point()
 		
-		scr_Boss_Attack_Time_Setup_v2(_pattern_count, 60, 1, 210, 30, 10);
+		scr_Boss_Attack_Time_Setup_v2(_pattern_count, 60, 1, 270, 30, 10);
 		
 		with(hand_1) {
 			active_attack = _hands_attack;
@@ -64,7 +64,7 @@ if active_attack_delay <= 0 and active_attack_cooldown <= 0 and active_attack_du
 		}
 		with(hand_2) {
 			active_attack = _hands_attack;
-			scr_Boss_Attack_Time_Setup_v2(_pattern_count, 60, 1, 999, 30, _added_dur);
+			scr_Boss_Attack_Time_Setup_v2(_pattern_count, 90, 1, 999, 30, _added_dur);
 			
 			if active_attack = 1 {
 				scr_Boss_Jump_Setup_v2(0, 7 * bossmovespeed, x, y);	
@@ -74,7 +74,7 @@ if active_attack_delay <= 0 and active_attack_cooldown <= 0 and active_attack_du
 		}
 		with(hand_3) {
 			active_attack = _hands_attack;
-			scr_Boss_Attack_Time_Setup_v2(_pattern_count, 60, 1, 999, 30, _added_dur);
+			scr_Boss_Attack_Time_Setup_v2(_pattern_count, 120, 1, 999, 30, _added_dur);
 			
 			if active_attack = 1 {
 				scr_Boss_Jump_Setup_v2(0, 7 * bossmovespeed, x, y);	

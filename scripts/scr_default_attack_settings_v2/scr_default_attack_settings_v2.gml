@@ -105,6 +105,7 @@ function scr_base_bullet_stats(_boss_bullet_speed, _bullet_power, _bullet_accura
 		angular_velocity: 0,
 		angular_acceleration: 0,
 		follow_bullets: 0,
+		follow_strength: 1,
 		school_bullets: 0
 	}	
 }

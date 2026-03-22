@@ -51,6 +51,8 @@ if active_attack_delay <= 0 and pattern_cooldown <= 0 and pattern_count > 0 {
 			attack_stats.bullet_direction = random(360);
 			attack_stats.bullet_spread = 45;
 			attack_stats.bullet_count = 8;
+			attack_stats.bullet_type = "obj_rebound_bullet_v2";
+			attack_stats.bullet_speed = bossbulletspeed * 3;
 			
 			scr_boss_shoot_v2();
 		}
@@ -73,11 +75,13 @@ if active_attack_delay <= 0 and pattern_cooldown <= 0 and pattern_count > 0 {
 		speed = dash_speed;
         direction = dash_direction;
 		
-		if pattern_count mod 20 = 0 {
+		if pattern_count mod 30 = 10 {
 			attack_stats.bullet_direction = scr_Boss_Bullet_Direction_Formula(direction, 30);
-			attack_stats.bullet_spread = 180;
+			attack_stats.bullet_spread = 180 + random(90);
 			attack_stats.bullet_count = 2;
-			attack_stats.bullet_type = "obj_speed_up_down_bullet_v2";
+			attack_stats.follow_bullets = 2;
+			attack_stats.follow_strength = 0.5;
+			//attack_stats.bullet_type = "obj_speed_up_down_bullet_v2";
 			attack_stats.bullet_speed = bossbulletspeed * 1.8;
 		
 			scr_boss_shoot_v2();
