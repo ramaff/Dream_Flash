@@ -13,3 +13,4 @@ scr_Boss_Size_Setup(0.5);
 scr_Boss_Height_Setup(50);
 
 tar_angle = 0;
+orbit_height = 100;

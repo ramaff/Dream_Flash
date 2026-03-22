@@ -9,7 +9,15 @@ scr_Boss_Height_Bob(30, 1, 0);
 // Make boss shape wobble:
 scr_Boss_Wobble("Horizontal", 0.4, 1, 0);
 
-tar_angle = (tar_angle + 1) mod 360
+direction = scr_Soul_Point()
+
+if active_attack = 0 {
+	speed = lerp(speed, bossmovespeed, 0.1);
+} else {
+	speed = lerp(speed, bossmovespeed * 0.25, 0.05);	
+}
+
+tar_angle = (tar_angle + 1.5) mod 360
 
 if instance_exists(hand_1) {
 	hand_1.tar_angle = tar_angle;	
@@ -27,34 +35,52 @@ if instance_exists(hand_3) {
 
 if active_attack_delay <= 0 and active_attack_cooldown <= 0 and active_attack_duration <= 0 {
     
-	// Pick a random attack to do
-	active_attack = choose(1, 2, 3);
 	active_attack = 1;
 	
     if active_attack = 1 {
-		var _hands_attack = 3;
-		var _pattern_count = 90;
+		var _hands_attack = choose(1, 2, 3);
+		var _pattern_count = 120;
+		var _added_dur = 10;
+		if _hands_attack = 1 {
+			_pattern_count = 90;
+			_added_dur = 40;
+		}
+		if _hands_attack = 2 {
+			_pattern_count = 240;	
+		}
 		var _dir = scr_Soul_Point()
 		
-		scr_Boss_Attack_Time_Setup_v2(_pattern_count, 60, 1, 180, 30, 10);
+		scr_Boss_Attack_Time_Setup_v2(_pattern_count, 60, 1, 210, 30, 10);
 		
 		with(hand_1) {
 			active_attack = _hands_attack;
-			scr_Boss_Attack_Time_Setup_v2(_pattern_count, 60, 1, 999, 30, 10);
+			scr_Boss_Attack_Time_Setup_v2(_pattern_count, 60, 1, 999, 30, _added_dur);
 			
-			scr_Boss_Dash_Setup_v2(scr_Soul_Point(), 0, 7 * bossmovespeed);
+			if active_attack = 1 {
+				scr_Boss_Jump_Setup_v2(0, 7 * bossmovespeed, x, y);	
+			} else if active_attack != 2 {
+				scr_Boss_Dash_Setup_v2(_dir, 0, 5 * bossmovespeed);
+			}
 		}
 		with(hand_2) {
 			active_attack = _hands_attack;
-			scr_Boss_Attack_Time_Setup_v2(_pattern_count, 60, 1, 999, 30, 10);
+			scr_Boss_Attack_Time_Setup_v2(_pattern_count, 60, 1, 999, 30, _added_dur);
 			
-			scr_Boss_Dash_Setup_v2(scr_Soul_Point(), 0, 7 * bossmovespeed);
+			if active_attack = 1 {
+				scr_Boss_Jump_Setup_v2(0, 7 * bossmovespeed, x, y);	
+			} else if active_attack != 2 {
+				scr_Boss_Dash_Setup_v2(_dir, 0, 5 * bossmovespeed);
+			}
 		}
 		with(hand_3) {
 			active_attack = _hands_attack;
-			scr_Boss_Attack_Time_Setup_v2(_pattern_count, 60, 1, 999, 30, 10);
+			scr_Boss_Attack_Time_Setup_v2(_pattern_count, 60, 1, 999, 30, _added_dur);
 			
-			scr_Boss_Dash_Setup_v2(_dir, 0, 5 * bossmovespeed);
+			if active_attack = 1 {
+				scr_Boss_Jump_Setup_v2(0, 7 * bossmovespeed, x, y);	
+			} else if active_attack != 2 {
+				scr_Boss_Dash_Setup_v2(_dir, 0, 5 * bossmovespeed);
+			}
 		}
 		
 		// Can set up the initial pattern direction

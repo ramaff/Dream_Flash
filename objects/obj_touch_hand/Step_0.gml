@@ -10,15 +10,16 @@ scr_Boss_Height_Bob(30, 1, 0);
 scr_Boss_Wobble("Horizontal", 0.3, 1, 0);
 
 
-var _xx = lengthdir_x(100, tar_angle)
-var _yy = lengthdir_y(100, tar_angle)
+var _xx = lengthdir_x(orbit_height, tar_angle)
+var _yy = lengthdir_y(orbit_height, tar_angle)
 
 direction = point_direction(x, y,minionbossparent.x + _xx, minionbossparent.y + _yy)
-if active_attack = 1 {
-	speed = lerp(speed, bossmovespeed * 0.1, 0.1);
-} else {
-	speed = lerp(speed, bossmovespeed * 3, 0.1);
+
+if active_attack = 0 {
+	orbit_height = lerp(orbit_height, 100, 0.2);	
 }
+
+speed = lerp(speed, bossmovespeed * 3, 0.1)
 speed = min(speed, point_distance(x, y,minionbossparent.x + _xx, minionbossparent.y + _yy));
 
 //////////////////////////////////////////////////////////////////////////////////////////
@@ -31,22 +32,36 @@ scr_default_attack_settings_v2();
 if active_attack_delay <= 0 and pattern_cooldown <= 0 and pattern_count > 0 {
    
     if active_attack = 1 {
-	
-		// If you gotta change the pattern aim direction
-	    // bossPatternDirection += 0;
-		scr_boss_shoot_v2();
-	}
-	
-	if active_attack = 2 {
-		scr_Boss_Dash_Movement_v2(4,2);
+		
+		scr_Boss_Dash_Movement_v2(45,15);
 		
 		speed = dash_speed;
         direction = dash_direction;
 		
-		scr_Jump_Movement_v2(2);	
+		scr_Jump_Movement_v2(4);
 		
-		if pattern_count = floor(pattern_count_max) {
-			attack_stats.bullet_direction = scr_Boss_Bullet_Direction_Formula(scr_Soul_Point(), 30)
+		var dir = scr_Soul_Point(x, y + boss_height);
+		var dist = scr_Soul_Distance(x, y + boss_height);
+		var aimspeed = min(5, dist);
+		x += lengthdir_x(aimspeed, dir);
+		y += lengthdir_y(aimspeed, dir);
+	
+		if pattern_count = 1 {
+			image_index = 1;
+			attack_stats.bullet_direction = random(360);
+			attack_stats.bullet_spread = 45;
+			attack_stats.bullet_count = 8;
+			
+			scr_boss_shoot_v2();
+		}
+	}
+	
+	if active_attack = 2 {
+		orbit_height += 1.2;
+		speed = lerp(speed, bossmovespeed * (5.4 - (pattern_count / 100)), 0.25)
+		if pattern_count mod 15 = 0 {
+			var _dir = point_direction(minionbossparent.x, minionbossparent.y, x, y)
+			attack_stats.bullet_direction = scr_Boss_Bullet_Direction_Formula(_dir, 30);
 		
 			scr_boss_shoot_v2();
 		}
@@ -60,8 +75,10 @@ if active_attack_delay <= 0 and pattern_cooldown <= 0 and pattern_count > 0 {
 		
 		if pattern_count mod 20 = 0 {
 			attack_stats.bullet_direction = scr_Boss_Bullet_Direction_Formula(direction, 30);
-			attack_stats.bullet_spread = 270;
+			attack_stats.bullet_spread = 180;
 			attack_stats.bullet_count = 2;
+			attack_stats.bullet_type = "obj_speed_up_down_bullet_v2";
+			attack_stats.bullet_speed = bossbulletspeed * 1.8;
 		
 			scr_boss_shoot_v2();
 		}
@@ -90,22 +107,18 @@ if active_attack != 0 and active_attack_delay > 0 {
 	sprite_index = spr_touch_hand_shoot;
 } else if active_attack = 1 {
 	var _hold_frame = 0;
-	scr_Boss_Attack_Sprite_v2(spr_touch_hand_rock, _hold_frame, 0, 0, 20);
-	if image_index = _hold_frame {
-		scr_Boss_Wobble("Horizontal", 2, 0.25, 0)	
+	scr_Boss_Attack_Sprite_v2(spr_touch_hand_rock, _hold_frame, 0, 0, 40);
+	if active_attack_duration < 40 {
+		image_index = 1;	
+		scr_Boss_Wobble("Horizontal", 4, 0.25, 0)
+		speed = 0;
 	}
 } else if active_attack = 2 {
 	var _hold_frame = 1;
 	scr_Boss_Attack_Sprite_v2(spr_touch_hand_paper, _hold_frame, 0, 0, 20);
-	if image_index = _hold_frame {
-		scr_Boss_Wobble("Horizontal", 2, 0.25, 0)	
-	}
 } else if active_attack = 3 {
 	var _hold_frame = 0;
 	scr_Boss_Attack_Sprite_v2(spr_touch_hand_scissors, _hold_frame, 0, 1, 20);
-	if image_index = _hold_frame {
-		scr_Boss_Wobble("Horizontal", 2, 0.25, 0)	
-	}
 } else {
 	sprite_index = spr_touch_hand;
 }

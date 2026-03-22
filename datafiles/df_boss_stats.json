@@ -1554,7 +1554,7 @@
             "Defense_Phase_2": 0,
             "Boss_Danger": 3,
             "Bullet_Speed": 3,
-            "Move_Speed": 3,
+            "Move_Speed": 1.6,
             "recollectionDescription": "Many hands"
         },
         "Boss 067": {
