@@ -5346,6 +5346,7 @@
     {"id":{"name":"spr_touch_hand_paper","path":"sprites/spr_touch_hand_paper/spr_touch_hand_paper.yy",},},
     {"id":{"name":"spr_touch_hand_rock","path":"sprites/spr_touch_hand_rock/spr_touch_hand_rock.yy",},},
     {"id":{"name":"spr_touch_hand_scissors","path":"sprites/spr_touch_hand_scissors/spr_touch_hand_scissors.yy",},},
+    {"id":{"name":"spr_touch_hand_shoot","path":"sprites/spr_touch_hand_shoot/spr_touch_hand_shoot.yy",},},
     {"id":{"name":"spr_touch_hand","path":"sprites/spr_touch_hand/spr_touch_hand.yy",},},
     {"id":{"name":"spr_Tough_Heart_Art","path":"sprites/spr_Tough_Heart_Art/spr_Tough_Heart_Art.yy",},},
     {"id":{"name":"spr_Tough_Heart","path":"sprites/spr_Tough_Heart/spr_Tough_Heart.yy",},},

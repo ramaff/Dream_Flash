@@ -2047,6 +2047,7 @@
     {"name":"spr_touch_hand_paper","order":6,"path":"sprites/spr_touch_hand_paper/spr_touch_hand_paper.yy",},
     {"name":"spr_touch_hand_rock","order":7,"path":"sprites/spr_touch_hand_rock/spr_touch_hand_rock.yy",},
     {"name":"spr_touch_hand_scissors","order":5,"path":"sprites/spr_touch_hand_scissors/spr_touch_hand_scissors.yy",},
+    {"name":"spr_touch_hand_shoot","order":8,"path":"sprites/spr_touch_hand_shoot/spr_touch_hand_shoot.yy",},
     {"name":"spr_touch_hand","order":4,"path":"sprites/spr_touch_hand/spr_touch_hand.yy",},
     {"name":"spr_Toxic_Mentality_Art","order":8,"path":"sprites/spr_Toxic_Mentality_Art/spr_Toxic_Mentality_Art.yy",},
     {"name":"spr_Trailing_Off_Art","order":2,"path":"sprites/spr_Trailing_Off_Art/spr_Trailing_Off_Art.yy",},

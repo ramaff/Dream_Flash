@@ -23,7 +23,7 @@ scr_default_attack_settings_v2();
 
 minion_count = 3;
 minion_type = obj_touch_hand;
-minion_health = 40;
+minion_health = 150;
 minion_defense = 0;
 		
 var _mins = scr_Minion_Spawn();

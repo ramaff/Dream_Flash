@@ -32,14 +32,30 @@ if active_attack_delay <= 0 and active_attack_cooldown <= 0 and active_attack_du
 	active_attack = 1;
 	
     if active_attack = 1 {
-		// Setup how many attacks per boss move, delay, etc
-		scr_Boss_Attack_Time_Setup_v2(1, 50, 1, 120, 30, 10);
-		
 		var _hands_attack = 3;
+		var _pattern_count = 90;
+		var _dir = scr_Soul_Point()
 		
-		hand_1.active_attack = _hands_attack
-		hand_2.active_attack = _hands_attack
-		hand_3.active_attack = _hands_attack
+		scr_Boss_Attack_Time_Setup_v2(_pattern_count, 60, 1, 180, 30, 10);
+		
+		with(hand_1) {
+			active_attack = _hands_attack;
+			scr_Boss_Attack_Time_Setup_v2(_pattern_count, 60, 1, 999, 30, 10);
+			
+			scr_Boss_Dash_Setup_v2(scr_Soul_Point(), 0, 7 * bossmovespeed);
+		}
+		with(hand_2) {
+			active_attack = _hands_attack;
+			scr_Boss_Attack_Time_Setup_v2(_pattern_count, 60, 1, 999, 30, 10);
+			
+			scr_Boss_Dash_Setup_v2(scr_Soul_Point(), 0, 7 * bossmovespeed);
+		}
+		with(hand_3) {
+			active_attack = _hands_attack;
+			scr_Boss_Attack_Time_Setup_v2(_pattern_count, 60, 1, 999, 30, 10);
+			
+			scr_Boss_Dash_Setup_v2(_dir, 0, 5 * bossmovespeed);
+		}
 		
 		// Can set up the initial pattern direction
 		// patternDirection = scr_Soul_Point();
@@ -74,15 +90,7 @@ scr_default_attack_settings_v2();
 if active_attack_delay <= 0 and pattern_cooldown <= 0 and pattern_count > 0 {
    
     if active_attack = 1 {
-		scr_Boss_Stretch("Vertical", 1);
-		
-		attack_stats.bullet_direction = scr_Boss_Bullet_Direction_Formula(scr_Soul_Point(), 30)
-		attack_stats.bullet_sprite = "spr_red_bullet_v2"
-		attack_stats.bullet_count = 3;
-		attack_stats.bullet_spread = 30;
-		attack_stats.bullet_direction_angle = 1
-		
-		scr_boss_shoot_v2();
+		scr_Boss_Wobble("Vertical", 1, 0.5, 0);
 	
 		// If you gotta change the pattern aim direction
 	    // pattern_direction += 0;
