@@ -5343,6 +5343,7 @@
     {"id":{"name":"spr_touch_ghoul_hand_stuff","path":"sprites/spr_touch_ghoul_hand_stuff/spr_touch_ghoul_hand_stuff.yy",},},
     {"id":{"name":"spr_touch_ghoul_shoot","path":"sprites/spr_touch_ghoul_shoot/spr_touch_ghoul_shoot.yy",},},
     {"id":{"name":"spr_touch_ghoul","path":"sprites/spr_touch_ghoul/spr_touch_ghoul.yy",},},
+    {"id":{"name":"spr_touch_hand_dump","path":"sprites/spr_touch_hand_dump/spr_touch_hand_dump.yy",},},
     {"id":{"name":"spr_touch_hand_paper","path":"sprites/spr_touch_hand_paper/spr_touch_hand_paper.yy",},},
     {"id":{"name":"spr_touch_hand_rock","path":"sprites/spr_touch_hand_rock/spr_touch_hand_rock.yy",},},
     {"id":{"name":"spr_touch_hand_scissors","path":"sprites/spr_touch_hand_scissors/spr_touch_hand_scissors.yy",},},

@@ -2,19 +2,22 @@
   "$GMSprite":"v2",
   "%Name":"spr_touch_hand_rock",
   "bboxMode":0,
-  "bbox_bottom":324,
-  "bbox_left":114,
-  "bbox_right":317,
-  "bbox_top":33,
+  "bbox_bottom":325,
+  "bbox_left":121,
+  "bbox_right":319,
+  "bbox_top":49,
   "collisionKind":4,
   "collisionTolerance":0,
   "DynamicTexturePage":false,
   "edgeFiltering":false,
   "For3D":false,
   "frames":[
-    {"$GMSpriteFrame":"v1","%Name":"6c7dfcb8-b716-4a22-88a1-5e92d1652b69","name":"6c7dfcb8-b716-4a22-88a1-5e92d1652b69","resourceType":"GMSpriteFrame","resourceVersion":"2.0",},
-    {"$GMSpriteFrame":"v1","%Name":"13a9b972-2e70-4d15-a9e2-74f45b614946","name":"13a9b972-2e70-4d15-a9e2-74f45b614946","resourceType":"GMSpriteFrame","resourceVersion":"2.0",},
-    {"$GMSpriteFrame":"v1","%Name":"c9e6715b-1282-4517-af66-97a005bd0bd4","name":"c9e6715b-1282-4517-af66-97a005bd0bd4","resourceType":"GMSpriteFrame","resourceVersion":"2.0",},
+    {"$GMSpriteFrame":"v1","%Name":"8f68b2d8-b7ce-4ea0-9284-10ce3acdf391","name":"8f68b2d8-b7ce-4ea0-9284-10ce3acdf391","resourceType":"GMSpriteFrame","resourceVersion":"2.0",},
+    {"$GMSpriteFrame":"v1","%Name":"269b6ccf-12e7-4e8f-b2d0-7a93194f86b6","name":"269b6ccf-12e7-4e8f-b2d0-7a93194f86b6","resourceType":"GMSpriteFrame","resourceVersion":"2.0",},
+    {"$GMSpriteFrame":"v1","%Name":"334fa95d-6664-4ee0-a646-fa72f947a2a2","name":"334fa95d-6664-4ee0-a646-fa72f947a2a2","resourceType":"GMSpriteFrame","resourceVersion":"2.0",},
+    {"$GMSpriteFrame":"v1","%Name":"47b994f8-5934-47a8-b295-86879e064ddf","name":"47b994f8-5934-47a8-b295-86879e064ddf","resourceType":"GMSpriteFrame","resourceVersion":"2.0",},
+    {"$GMSpriteFrame":"v1","%Name":"f6a193da-9fc6-43be-9730-bb340b5cb575","name":"f6a193da-9fc6-43be-9730-bb340b5cb575","resourceType":"GMSpriteFrame","resourceVersion":"2.0",},
+    {"$GMSpriteFrame":"v1","%Name":"c3dad370-2f3d-4a97-bd97-30be6bc1aa7f","name":"c3dad370-2f3d-4a97-bd97-30be6bc1aa7f","resourceType":"GMSpriteFrame","resourceVersion":"2.0",},
   ],
   "gridX":0,
   "gridY":0,
@@ -70,7 +73,7 @@
     },
     "eventStubScript":null,
     "eventToFunction":{},
-    "length":3.0,
+    "length":6.0,
     "lockOrigin":false,
     "moments":{
       "$KeyframeStore<MomentsEventKeyframe>":"",
@@ -90,14 +93,23 @@
     "tracks":[
       {"$GMSpriteFramesTrack":"","builtinName":0,"events":[],"inheritsTrackColour":true,"interpolation":1,"isCreationTrack":false,"keyframes":{"$KeyframeStore<SpriteFrameKeyframe>":"","Keyframes":[
             {"$Keyframe<SpriteFrameKeyframe>":"","Channels":{
-                "0":{"$SpriteFrameKeyframe":"","Id":{"name":"6c7dfcb8-b716-4a22-88a1-5e92d1652b69","path":"sprites/spr_touch_hand_rock/spr_touch_hand_rock.yy",},"resourceType":"SpriteFrameKeyframe","resourceVersion":"2.0",},
-              },"Disabled":false,"id":"7077198a-6d95-4aed-a3be-baa68942e700","IsCreationKey":false,"Key":0.0,"Length":1.0,"resourceType":"Keyframe<SpriteFrameKeyframe>","resourceVersion":"2.0","Stretch":false,},
+                "0":{"$SpriteFrameKeyframe":"","Id":{"name":"8f68b2d8-b7ce-4ea0-9284-10ce3acdf391","path":"sprites/spr_touch_hand_rock/spr_touch_hand_rock.yy",},"resourceType":"SpriteFrameKeyframe","resourceVersion":"2.0",},
+              },"Disabled":false,"id":"9dec877d-dbca-4e6a-9b52-38c7a47de8c3","IsCreationKey":false,"Key":0.0,"Length":1.0,"resourceType":"Keyframe<SpriteFrameKeyframe>","resourceVersion":"2.0","Stretch":false,},
             {"$Keyframe<SpriteFrameKeyframe>":"","Channels":{
-                "0":{"$SpriteFrameKeyframe":"","Id":{"name":"13a9b972-2e70-4d15-a9e2-74f45b614946","path":"sprites/spr_touch_hand_rock/spr_touch_hand_rock.yy",},"resourceType":"SpriteFrameKeyframe","resourceVersion":"2.0",},
-              },"Disabled":false,"id":"225d58d8-bcf1-4553-814a-474f02b527c9","IsCreationKey":false,"Key":1.0,"Length":1.0,"resourceType":"Keyframe<SpriteFrameKeyframe>","resourceVersion":"2.0","Stretch":false,},
+                "0":{"$SpriteFrameKeyframe":"","Id":{"name":"269b6ccf-12e7-4e8f-b2d0-7a93194f86b6","path":"sprites/spr_touch_hand_rock/spr_touch_hand_rock.yy",},"resourceType":"SpriteFrameKeyframe","resourceVersion":"2.0",},
+              },"Disabled":false,"id":"1be64081-ff82-46ec-816c-53a86be4b9d1","IsCreationKey":false,"Key":1.0,"Length":1.0,"resourceType":"Keyframe<SpriteFrameKeyframe>","resourceVersion":"2.0","Stretch":false,},
             {"$Keyframe<SpriteFrameKeyframe>":"","Channels":{
-                "0":{"$SpriteFrameKeyframe":"","Id":{"name":"c9e6715b-1282-4517-af66-97a005bd0bd4","path":"sprites/spr_touch_hand_rock/spr_touch_hand_rock.yy",},"resourceType":"SpriteFrameKeyframe","resourceVersion":"2.0",},
-              },"Disabled":false,"id":"59579631-58f5-4c81-b70d-f389da962676","IsCreationKey":false,"Key":2.0,"Length":1.0,"resourceType":"Keyframe<SpriteFrameKeyframe>","resourceVersion":"2.0","Stretch":false,},
+                "0":{"$SpriteFrameKeyframe":"","Id":{"name":"334fa95d-6664-4ee0-a646-fa72f947a2a2","path":"sprites/spr_touch_hand_rock/spr_touch_hand_rock.yy",},"resourceType":"SpriteFrameKeyframe","resourceVersion":"2.0",},
+              },"Disabled":false,"id":"39cc3314-f890-42f0-95d1-433ac7df484f","IsCreationKey":false,"Key":2.0,"Length":1.0,"resourceType":"Keyframe<SpriteFrameKeyframe>","resourceVersion":"2.0","Stretch":false,},
+            {"$Keyframe<SpriteFrameKeyframe>":"","Channels":{
+                "0":{"$SpriteFrameKeyframe":"","Id":{"name":"47b994f8-5934-47a8-b295-86879e064ddf","path":"sprites/spr_touch_hand_rock/spr_touch_hand_rock.yy",},"resourceType":"SpriteFrameKeyframe","resourceVersion":"2.0",},
+              },"Disabled":false,"id":"6f4dfdc1-8f89-4361-b694-7573fcb5a685","IsCreationKey":false,"Key":3.0,"Length":1.0,"resourceType":"Keyframe<SpriteFrameKeyframe>","resourceVersion":"2.0","Stretch":false,},
+            {"$Keyframe<SpriteFrameKeyframe>":"","Channels":{
+                "0":{"$SpriteFrameKeyframe":"","Id":{"name":"f6a193da-9fc6-43be-9730-bb340b5cb575","path":"sprites/spr_touch_hand_rock/spr_touch_hand_rock.yy",},"resourceType":"SpriteFrameKeyframe","resourceVersion":"2.0",},
+              },"Disabled":false,"id":"3bbc490a-6e64-43b9-abf6-ff0f37843729","IsCreationKey":false,"Key":4.0,"Length":1.0,"resourceType":"Keyframe<SpriteFrameKeyframe>","resourceVersion":"2.0","Stretch":false,},
+            {"$Keyframe<SpriteFrameKeyframe>":"","Channels":{
+                "0":{"$SpriteFrameKeyframe":"","Id":{"name":"c3dad370-2f3d-4a97-bd97-30be6bc1aa7f","path":"sprites/spr_touch_hand_rock/spr_touch_hand_rock.yy",},"resourceType":"SpriteFrameKeyframe","resourceVersion":"2.0",},
+              },"Disabled":false,"id":"977f4909-e5b7-41c4-8e6e-4453466e4407","IsCreationKey":false,"Key":5.0,"Length":1.0,"resourceType":"Keyframe<SpriteFrameKeyframe>","resourceVersion":"2.0","Stretch":false,},
           ],"resourceType":"KeyframeStore<SpriteFrameKeyframe>","resourceVersion":"2.0",},"modifiers":[],"name":"frames","resourceType":"GMSpriteFramesTrack","resourceVersion":"2.0","spriteId":null,"trackColour":0,"tracks":[],"traits":0,},
     ],
     "visibleRange":null,

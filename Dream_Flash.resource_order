@@ -2044,6 +2044,7 @@
     {"name":"spr_touch_ghoul_hand_stuff","order":3,"path":"sprites/spr_touch_ghoul_hand_stuff/spr_touch_ghoul_hand_stuff.yy",},
     {"name":"spr_touch_ghoul_shoot","order":2,"path":"sprites/spr_touch_ghoul_shoot/spr_touch_ghoul_shoot.yy",},
     {"name":"spr_touch_ghoul","order":1,"path":"sprites/spr_touch_ghoul/spr_touch_ghoul.yy",},
+    {"name":"spr_touch_hand_dump","order":9,"path":"sprites/spr_touch_hand_dump/spr_touch_hand_dump.yy",},
     {"name":"spr_touch_hand_paper","order":6,"path":"sprites/spr_touch_hand_paper/spr_touch_hand_paper.yy",},
     {"name":"spr_touch_hand_rock","order":7,"path":"sprites/spr_touch_hand_rock/spr_touch_hand_rock.yy",},
     {"name":"spr_touch_hand_scissors","order":5,"path":"sprites/spr_touch_hand_scissors/spr_touch_hand_scissors.yy",},
