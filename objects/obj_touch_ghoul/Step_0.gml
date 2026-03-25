@@ -37,12 +37,16 @@ if active_attack_delay <= 0 and active_attack_cooldown <= 0 and active_attack_du
     
 	active_attack = 1;
 	
+	if !instance_exists(hand_1) || !instance_exists(hand_2) || !instance_exists(hand_3) {
+		active_attack = 2;	
+	}
+	
     if active_attack = 1 {
 		var _hands_attack = choose(1, 2, 3);
 		var _pattern_count = 120;
 		var _added_dur = 10;
 		if _hands_attack = 1 {
-			_pattern_count = 90;
+			_pattern_count = 120;
 			_added_dur = 40;
 		}
 		if _hands_attack = 2 {
@@ -50,7 +54,7 @@ if active_attack_delay <= 0 and active_attack_cooldown <= 0 and active_attack_du
 		}
 		var _dir = scr_Soul_Point()
 		
-		scr_Boss_Attack_Time_Setup_v2(_pattern_count, 60, 1, 270, 30, 10);
+		scr_Boss_Attack_Time_Setup_v2(_pattern_count, 60, 1, 210, 30, 10);
 		
 		with(hand_1) {
 			active_attack = _hands_attack;
@@ -90,20 +94,9 @@ if active_attack_delay <= 0 and active_attack_cooldown <= 0 and active_attack_du
 	// Hop leap attack setup example
 	if active_attack = 2 {
 		// 
-		scr_Boss_Attack_Time_Setup_v2(50, 30, 1, 30, 30, 10);
-		
-		scr_Boss_Jump_Setup_v2(0, 7 * bossmovespeed, x, y);
-		//scr_Boss_Dash_Setup_v2(scr_Soul_Point(), 0, 7 * bossmovespeed);
+		scr_Boss_Attack_Time_Setup_v2(1, 50, 1, 60, 15, 40);
     }
-	// Minion Spawn Example
-	if active_attack = 3 {
-		// Setup how many attacks per boss move, delay, etc
-		scr_Boss_Attack_Time_Setup_v2(1, 50, 1, 120, 30, 10);
-		
-		// Can set up the initial pattern direction
-		// patternDirection = scr_Soul_Point();
-		// patternDirection = random(360;
-    }
+
 }
 
 //////////////////////////////////////////////////////////////////////////////////////////
@@ -123,29 +116,23 @@ if active_attack_delay <= 0 and pattern_cooldown <= 0 and pattern_count > 0 {
 	}
 	
 	if active_attack = 2 {
-		scr_Boss_Dash_Movement_v2(4,2);
-		
-		speed = dash_speed;
-        direction = dash_direction;
-		
-		scr_Jump_Movement_v2(2);	
-		
-		if pattern_count = floor(pattern_count_max) {
-			attack_stats.bullet_direction = scr_Boss_Bullet_Direction_Formula(scr_Soul_Point(), 30)
-		
-			scr_boss_shoot_v2();
-		}
-	}
-	
-	if active_attack = 3 {
 	
 		minion_count = 1;
-		minion_type = obj_Minion_Template;
-		minion_health = bossmaxhealth / 10;
-		//minion_spawn_animation = spr_pocket_minion_spawn
-		//minion_yy = boss_height;
+		minion_type = obj_touch_hand;
+		minion_health = 150;
+		minion_defense = 0;
+		
+		var _mins = scr_Minion_Spawn();
 
-		scr_Minion_Spawn();
+		if !instance_exists(hand_1) {
+			hand_1 = _mins[0];
+		}
+		if !instance_exists(hand_2) {
+			hand_2 = _mins[0];
+		}
+		if !instance_exists(hand_3) {
+			hand_3 = _mins[0];
+		}
 	
 	}
 	
@@ -165,18 +152,18 @@ if active_attack_duration <= 0 {
 /// Boss Sprite Code
 
 // Go back to normal default size
-scr_Boss_Size_Lerp_Dir(0.15);
+scr_Boss_Size_Lerp(0.15);
 
 // Handles boss attack sprite animation
 if active_attack = 1 {
-	var _hold_frame = 1;
-	scr_Boss_Attack_Sprite_v2(spr_touch_ghoul_shoot, _hold_frame, 2, 2, 20);
+	var _hold_frame = 2;
+	scr_Boss_Attack_Sprite_v2(spr_touch_ghoul_shoot, _hold_frame, 3, 3, 20);
 	if image_index = _hold_frame {
 		scr_Boss_Wobble("Horizontal", 2, 0.4, 0)	
 	}
 } else if active_attack = 2 {
-	var _hold_frame = 1;
-	scr_Boss_Attack_Sprite_v2(spr_touch_ghoul_hand_stuff, _hold_frame, 2, 2, 20);
+	var _hold_frame = 2;
+	scr_Boss_Attack_Sprite_v2(spr_touch_ghoul_hand_stuff, _hold_frame, 3, 3, 20);
 	if image_index = _hold_frame {
 		scr_Boss_Wobble("Horizontal", 2, 0.4, 0)	
 	}
