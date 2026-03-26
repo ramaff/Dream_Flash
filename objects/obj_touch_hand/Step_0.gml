@@ -19,7 +19,7 @@ if active_attack = 0 {
 	orbit_height = lerp(orbit_height, 100, 0.2);	
 }
 
-speed = lerp(speed, bossmovespeed * 4, 0.1)
+speed = lerp(speed, bossmovespeed * 4, 0.02)
 speed = min(speed, point_distance(x, y,minionbossparent.x + _xx, minionbossparent.y + _yy));
 
 //////////////////////////////////////////////////////////////////////////////////////////
