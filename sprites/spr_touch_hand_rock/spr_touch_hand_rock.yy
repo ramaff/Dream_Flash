@@ -18,6 +18,8 @@
     {"$GMSpriteFrame":"v1","%Name":"47b994f8-5934-47a8-b295-86879e064ddf","name":"47b994f8-5934-47a8-b295-86879e064ddf","resourceType":"GMSpriteFrame","resourceVersion":"2.0",},
     {"$GMSpriteFrame":"v1","%Name":"f6a193da-9fc6-43be-9730-bb340b5cb575","name":"f6a193da-9fc6-43be-9730-bb340b5cb575","resourceType":"GMSpriteFrame","resourceVersion":"2.0",},
     {"$GMSpriteFrame":"v1","%Name":"c3dad370-2f3d-4a97-bd97-30be6bc1aa7f","name":"c3dad370-2f3d-4a97-bd97-30be6bc1aa7f","resourceType":"GMSpriteFrame","resourceVersion":"2.0",},
+    {"$GMSpriteFrame":"v1","%Name":"74bcff34-1e97-4e57-8f12-4f924338c2a3","name":"74bcff34-1e97-4e57-8f12-4f924338c2a3","resourceType":"GMSpriteFrame","resourceVersion":"2.0",},
+    {"$GMSpriteFrame":"v1","%Name":"8ce3468e-2464-48b1-96ff-dbd17a2868c4","name":"8ce3468e-2464-48b1-96ff-dbd17a2868c4","resourceType":"GMSpriteFrame","resourceVersion":"2.0",},
   ],
   "gridX":0,
   "gridY":0,
@@ -73,7 +75,7 @@
     },
     "eventStubScript":null,
     "eventToFunction":{},
-    "length":6.0,
+    "length":8.0,
     "lockOrigin":false,
     "moments":{
       "$KeyframeStore<MomentsEventKeyframe>":"",
@@ -110,6 +112,12 @@
             {"$Keyframe<SpriteFrameKeyframe>":"","Channels":{
                 "0":{"$SpriteFrameKeyframe":"","Id":{"name":"c3dad370-2f3d-4a97-bd97-30be6bc1aa7f","path":"sprites/spr_touch_hand_rock/spr_touch_hand_rock.yy",},"resourceType":"SpriteFrameKeyframe","resourceVersion":"2.0",},
               },"Disabled":false,"id":"977f4909-e5b7-41c4-8e6e-4453466e4407","IsCreationKey":false,"Key":5.0,"Length":1.0,"resourceType":"Keyframe<SpriteFrameKeyframe>","resourceVersion":"2.0","Stretch":false,},
+            {"$Keyframe<SpriteFrameKeyframe>":"","Channels":{
+                "0":{"$SpriteFrameKeyframe":"","Id":{"name":"74bcff34-1e97-4e57-8f12-4f924338c2a3","path":"sprites/spr_touch_hand_rock/spr_touch_hand_rock.yy",},"resourceType":"SpriteFrameKeyframe","resourceVersion":"2.0",},
+              },"Disabled":false,"id":"d0e47766-09d3-4a7d-8854-74da5b213708","IsCreationKey":false,"Key":6.0,"Length":1.0,"resourceType":"Keyframe<SpriteFrameKeyframe>","resourceVersion":"2.0","Stretch":false,},
+            {"$Keyframe<SpriteFrameKeyframe>":"","Channels":{
+                "0":{"$SpriteFrameKeyframe":"","Id":{"name":"8ce3468e-2464-48b1-96ff-dbd17a2868c4","path":"sprites/spr_touch_hand_rock/spr_touch_hand_rock.yy",},"resourceType":"SpriteFrameKeyframe","resourceVersion":"2.0",},
+              },"Disabled":false,"id":"1aa765e6-1706-40b9-b7c7-a5f7615e435b","IsCreationKey":false,"Key":7.0,"Length":1.0,"resourceType":"Keyframe<SpriteFrameKeyframe>","resourceVersion":"2.0","Stretch":false,},
           ],"resourceType":"KeyframeStore<SpriteFrameKeyframe>","resourceVersion":"2.0",},"modifiers":[],"name":"frames","resourceType":"GMSpriteFramesTrack","resourceVersion":"2.0","spriteId":null,"trackColour":0,"tracks":[],"traits":0,},
     ],
     "visibleRange":null,

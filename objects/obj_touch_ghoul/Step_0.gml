@@ -12,7 +12,7 @@ scr_Boss_Wobble("Horizontal", 0.4, 1, 0);
 direction = scr_Soul_Point()
 
 if active_attack = 0 {
-	speed = lerp(speed, bossmovespeed, 0.1);
+	speed = lerp(speed, bossmovespeed, 0.02);
 } else {
 	speed = lerp(speed, bossmovespeed * 0.25, 0.05);	
 }
@@ -109,13 +109,19 @@ scr_default_attack_settings_v2();
 if active_attack_delay <= 0 and pattern_cooldown <= 0 and pattern_count > 0 {
    
     if active_attack = 1 {
-		scr_Boss_Wobble("Vertical", 1, 0.5, 0);
+		if pattern_count = pattern_count_max {
+			scr_Boss_Stretch("Vertical", 1);
+		}
 	
 		// If you gotta change the pattern aim direction
 	    // pattern_direction += 0;
 	}
 	
 	if active_attack = 2 {
+		
+		if pattern_count = pattern_count_max {
+			scr_Boss_Stretch("Vertical", 1);
+		}
 	
 		minion_count = 1;
 		minion_type = obj_touch_hand;
@@ -126,11 +132,9 @@ if active_attack_delay <= 0 and pattern_cooldown <= 0 and pattern_count > 0 {
 
 		if !instance_exists(hand_1) {
 			hand_1 = _mins[0];
-		}
-		if !instance_exists(hand_2) {
+		} else if !instance_exists(hand_2) {
 			hand_2 = _mins[0];
-		}
-		if !instance_exists(hand_3) {
+		} else if !instance_exists(hand_3) {
 			hand_3 = _mins[0];
 		}
 	

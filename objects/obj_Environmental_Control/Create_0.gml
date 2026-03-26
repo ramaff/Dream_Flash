@@ -61,7 +61,6 @@ deepest_layer.depth = 100000000;
 
 deeper_layer = instance_create(x, y, obj_background_drawing);
 deeper_layer.depth = 1000000;
-deeper_layer.sprite_index =  spr_star_lights_bg;
 
 deep_layer = instance_create(x, y, obj_background_drawing);
 deep_layer.depth = 10000;
@@ -98,9 +97,11 @@ if roomBG = spr_flash_marble_brick_g || roomBG = spr_flash_diagonal_brick_g || r
 } else if bgType = "Flash" {
 	deepest_layer.sprite_index = spr_flash_day_bg
 	deep_layer.sprite_index = spr_flash_day_front_bg;
+	deeper_layer.sprite_index =  spr_star_lights_bg;
 	//forward_layer.sprite_index = spr_flash_day_lights;
 } else if bgType = "Feel" {
-	deepest_layer.sprite_index = spr_Mental_Background_Feel;
+	deepest_layer.sprite_index = spr_feel_day_bg;
+	deep_layer.sprite_index = spr_feel_day_front_bg;
 } else if bgType = "Dream" {
 	deepest_layer.sprite_index = spr_Mental_Background_Dream;
 } else if bgType = "Nightmare" {

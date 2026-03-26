@@ -1674,6 +1674,8 @@
     {"name":"spr_feel_base_g","order":11,"path":"sprites/spr_feel_base_g/spr_feel_base_g.yy",},
     {"name":"spr_feel_brick_g_xl","order":27,"path":"sprites/spr_feel_brick_g_xl/spr_feel_brick_g_xl.yy",},
     {"name":"spr_feel_brick_g","order":26,"path":"sprites/spr_feel_brick_g/spr_feel_brick_g.yy",},
+    {"name":"spr_feel_day_bg","order":34,"path":"sprites/spr_feel_day_bg/spr_feel_day_bg.yy",},
+    {"name":"spr_feel_day_front_bg","order":35,"path":"sprites/spr_feel_day_front_bg/spr_feel_day_front_bg.yy",},
     {"name":"spr_Field_Overlay_Dream","order":5,"path":"sprites/spr_Field_Overlay_Dream/spr_Field_Overlay_Dream.yy",},
     {"name":"spr_Field_Overlay_Feel","order":6,"path":"sprites/spr_Field_Overlay_Feel/spr_Field_Overlay_Feel.yy",},
     {"name":"spr_Field_Overlay_Flash","order":7,"path":"sprites/spr_Field_Overlay_Flash/spr_Field_Overlay_Flash.yy",},

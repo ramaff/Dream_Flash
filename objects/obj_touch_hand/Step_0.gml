@@ -47,7 +47,7 @@ if active_attack_delay <= 0 and pattern_cooldown <= 0 and pattern_count > 0 {
 		y += lengthdir_y(aimspeed, dir);
 	
 		if pattern_count = 1 {
-			scr_Boss_Wobble("Horizontal", 1, 0.5, 0);
+			scr_Boss_Stretch("Horizontal", 1);
 			image_index = 3;
 			attack_stats.bullet_direction = random(360);
 			attack_stats.bullet_spread = 45;
@@ -63,7 +63,7 @@ if active_attack_delay <= 0 and pattern_cooldown <= 0 and pattern_count > 0 {
 		orbit_height += 1.2;
 		speed = lerp(speed, bossmovespeed * (5.4 - (pattern_count / 100)), 0.25)
 		if pattern_count mod 15 = 0 {
-			scr_Boss_Wobble("Vertical", 0.3, 0.5, 0);
+			scr_Boss_Stretch("Vertical", 0.3);
 			var _dir = point_direction(minionbossparent.x, minionbossparent.y, x, y)
 			attack_stats.bullet_direction = scr_Boss_Bullet_Direction_Formula(_dir, 30);
 		
@@ -80,7 +80,7 @@ if active_attack_delay <= 0 and pattern_cooldown <= 0 and pattern_count > 0 {
 		dash_direction = scr_Angle_Converge(dash_direction, scr_Soul_Point(minionbossparent.x, minionbossparent.y), 3)
 		
 		if pattern_count mod 30 = 10 {
-			scr_Boss_Wobble("Horizontal", 0.6, 0.5, 0);
+			scr_Boss_Stretch("Horizontal", 0.6);
 			attack_stats.bullet_direction = scr_Boss_Bullet_Direction_Formula(direction, 30);
 			attack_stats.bullet_spread = 180 + random(90);
 			attack_stats.bullet_count = 2;
@@ -125,8 +125,8 @@ if active_attack != 0 and active_attack_delay > 0 {
 		speed = 0;
 	}
 } else if active_attack = 2 {
-	var _hold_frame = 1;
-	scr_Boss_Attack_Sprite_v2(spr_touch_hand_paper, _hold_frame, 0, 0, 20);
+	var _hold_frame = 0;
+	scr_Boss_Attack_Sprite_v2(spr_touch_hand_paper, _hold_frame, 0, 1, 20);
 } else if active_attack = 3 {
 	var _hold_frame = 0;
 	scr_Boss_Attack_Sprite_v2(spr_touch_hand_scissors, _hold_frame, 0, 1, 20);

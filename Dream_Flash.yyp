@@ -3832,6 +3832,8 @@
     {"id":{"name":"spr_feel_base_g","path":"sprites/spr_feel_base_g/spr_feel_base_g.yy",},},
     {"id":{"name":"spr_feel_brick_g_xl","path":"sprites/spr_feel_brick_g_xl/spr_feel_brick_g_xl.yy",},},
     {"id":{"name":"spr_feel_brick_g","path":"sprites/spr_feel_brick_g/spr_feel_brick_g.yy",},},
+    {"id":{"name":"spr_feel_day_bg","path":"sprites/spr_feel_day_bg/spr_feel_day_bg.yy",},},
+    {"id":{"name":"spr_feel_day_front_bg","path":"sprites/spr_feel_day_front_bg/spr_feel_day_front_bg.yy",},},
     {"id":{"name":"spr_Feel_Heart","path":"sprites/spr_Feel_Heart/spr_Feel_Heart.yy",},},
     {"id":{"name":"spr_Feel_Sorrow","path":"sprites/spr_Feel_Sorrow/spr_Feel_Sorrow.yy",},},
     {"id":{"name":"spr_Feeling_Lucky_Art","path":"sprites/spr_Feeling_Lucky_Art/spr_Feeling_Lucky_Art.yy",},},
