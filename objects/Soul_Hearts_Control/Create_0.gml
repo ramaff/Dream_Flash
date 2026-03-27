@@ -10,7 +10,8 @@ for(var _i = 0; _i < 3; _i++) {
 		"health": 20,
 		"max_health": 20,
 		"health_decay": 0,
-		"survival_hits": 0
+		"survival_hits": 0,
+		"max_survival_hits": 0
 	}
 }
 
@@ -24,14 +25,3 @@ current_heart_stats = {}
 
 alarm[0] = 30;
 
-/*
-for(i = 0; i < 16; i++) {
-    global.hinv[i] = 0;
-    heartbutt[i] = instance_create(0,0,obj_Heart_Butt);
-    heartbutt[i].slot = i;
-}
-
-global.mouseheartslot = 0;
-global.mousehearttype = 0;
-instance_create(0,0,obj_Mouse_Heart);
-*/

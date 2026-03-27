@@ -24,10 +24,11 @@ var _i;
 var _max = array_length(heart);
 var _alpha = 0.7;
 var _max_minus_one = _max - 1;
+var xx;
 
 for(_i = 0; _i < _max; _i++) {
 
-	var xx = (1.5*_half_heart_size) + _space * _i;
+	xx = (1.5*_half_heart_size) + _space * _i;
 
 	if (abs(mxx - xx) < _half_heart_size) && _correct_y && _no_boss {
 	    draw_set_color(c_white);
@@ -53,4 +54,11 @@ if _to_swap != -1 {
 	heart[array_length(heart)] = _old_heart
 	
 	scr_Swap_Heart(_old_heart.heart_id)	
+}
+
+if heart[array_length(heart) - 1].max_survival_hits > 0 {
+	
+	draw_set_font(Damage_Font)
+
+	scr_Draw_Text_Outlined(xx + 20, yy + 16, c_black, c_white, $"x{heart[array_length(heart) - 1].survival_hits}")	
 }

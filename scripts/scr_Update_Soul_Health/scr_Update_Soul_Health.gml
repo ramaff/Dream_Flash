@@ -7,15 +7,21 @@ function scr_Update_Soul_Health(_health, _slot = global.currentheart) {
 	_heart.health = _health
 	if _heart.health <= 0 {
 		
-		array_delete(_hearts, _slot, 1)
-		instance_create(obj_Soul_Parent.x,obj_Soul_Parent.y,obj_Broken_Heart);
-		global.currentheart = array_length(_hearts) - 1;
-		scr_Heart_Loss_Handle_All(_heart);
-		if global.currentheart < 0 {
-			exit;	
+		if _heart.survival_hits > 0 {
+			_heart.survival_hits--;
+			_heart.health = 1;
+		} else {
+		
+			array_delete(_hearts, _slot, 1)
+			instance_create(obj_Soul_Parent.x,obj_Soul_Parent.y,obj_Broken_Heart);
+			global.currentheart = array_length(_hearts) - 1;
+			scr_Heart_Loss_Handle_All(_heart);
+			if global.currentheart < 0 {
+				exit;	
+			}
+			_heart = _hearts[global.currentheart]
+			scr_Swap_Heart(_heart.heart_id);
 		}
-		_heart = _hearts[global.currentheart]
-		scr_Swap_Heart(_heart.heart_id);
 	}
 	
 	shealth = _heart.health

@@ -14,6 +14,7 @@ for(_i = 0; _i < _max; _i++) {
 	    heart[_i].health += obj_Soul_Parent.shealthregenfactor * ((10 + obj_Soul_Parent.shealthregenadd) / 10) / 4;   
 	} else {
 	    heart[_i].health += obj_Soul_Parent.shealthregenfactor * ((10 + obj_Soul_Parent.shealthregenadd) / 10) * 100;   
+		heart[_i].survival_hits = heart[_i].max_survival_hits
 	}
 	var _real_cap = heart[_i].max_health - heart[_i].health_decay;
 	if heart[_i].health > _real_cap {
