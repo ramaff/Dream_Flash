@@ -22,6 +22,8 @@ var _to_swap = -1;
 
 var _i;
 var _max = array_length(heart);
+var _alpha = 0.7;
+var _max_minus_one = _max - 1;
 
 for(_i = 0; _i < _max; _i++) {
 
@@ -35,8 +37,12 @@ for(_i = 0; _i < _max; _i++) {
 			_to_swap = _i;
 	    }
 	}
+	
+	if _i == _max_minus_one {
+		_alpha = 1;	
+	}
 
-	scr_Draw_Heart_Status(heart[_i], 2, xx, yy);
+	scr_Draw_Heart_Status(heart[_i], 2, xx, yy, _alpha);
 
 }
 

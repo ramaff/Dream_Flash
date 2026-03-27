@@ -243,7 +243,7 @@
         "recollectionString": "All Out",
         "recollectionSprite": "spr_All_Out_Item",
         "recollectionSummary": "Nonstop Attacking",
-        "recollectionDescription": "+Once per field, trigger 3 Seconds of 200% more essence regen and 50% more think speed."
+        "recollectionDescription": "+Once per field when running out of essence, trigger 3 Seconds of 200% more essence regen and 50% more think speed."
     },
     "C09": {
         "recollectionString": "Epiphany",
