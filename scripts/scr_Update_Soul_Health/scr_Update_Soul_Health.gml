@@ -45,6 +45,15 @@ function scr_Swap_Heart(_heart_id) {
 	
 	switch(_heart_id) {
 	
+		case 2:
+			_heart_stats = {
+				"ssize": -0.3,
+				"spowerfactor": -2,
+				"sshotsizefactor": -0.3,
+				"sdelayconservationfactor": 0.4,
+				"smovementfactor": 0.3
+			}
+			break;
 		case 4:
 			_heart_stats = {
 				"ssize": 0.3,

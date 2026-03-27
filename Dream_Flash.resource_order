@@ -1826,6 +1826,7 @@
     {"name":"spr_Mindfulness_Item","order":9,"path":"sprites/spr_Mindfulness_Item/spr_Mindfulness_Item.yy",},
     {"name":"spr_Minesweeper_Clap","order":2,"path":"sprites/spr_Minesweeper_Clap/spr_Minesweeper_Clap.yy",},
     {"name":"spr_Minesweeper_Clapper","order":4,"path":"sprites/spr_Minesweeper_Clapper/spr_Minesweeper_Clapper.yy",},
+    {"name":"spr_Mini_Heart","order":1,"path":"sprites/spr_Mini_Heart/spr_Mini_Heart.yy",},
     {"name":"spr_mini_mischief_attack","order":7,"path":"sprites/spr_mini_mischief_attack/spr_mini_mischief_attack.yy",},
     {"name":"spr_mini_mischief","order":6,"path":"sprites/spr_mini_mischief/spr_mini_mischief.yy",},
     {"name":"spr_Multi_Shot","order":18,"path":"sprites/spr_Multi_Shot/spr_Multi_Shot.yy",},

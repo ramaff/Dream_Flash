@@ -4,10 +4,10 @@ function scr_Draw_Heart(_heart_num, _percent, _scale, _xx = x, _yy = y, _alpha =
 
 	switch(_heart_num) {
 		case(1): 
-			scr_Draw_Heart_Health(spr_Lesser_Heart, _xx, _yy, _scale, _alpha, _percent, 78, 72);
+			scr_Draw_Heart_Health(spr_Lesser_Heart, _xx, _yy, _scale, _alpha, _percent, 90, 75);
 			break;
 		case(2): 
-		    scr_Draw_Heart_Health(spr_Regen_Heart, _xx, _yy, _scale, _alpha, _percent, 84, 78);
+		    scr_Draw_Heart_Health(spr_Mini_Heart, _xx, _yy, _scale, _alpha, _percent, 70, 63);
 		    break;
 		case(3): 
 			scr_Draw_Heart_Health(spr_Survivor_Heart, _xx, _yy, _scale, _alpha, _percent, 78, 72, 10);
@@ -21,7 +21,7 @@ function scr_Draw_Heart(_heart_num, _percent, _scale, _xx = x, _yy = y, _alpha =
 		    break;
 		*/
 		case(4): 
-			scr_Draw_Heart_Health(spr_Jumbo_Heart, _xx, _yy, _scale, _alpha, _percent, 88, 85);
+			scr_Draw_Heart_Health(spr_Jumbo_Heart, _xx, _yy, _scale, _alpha, _percent, 108, 92);
 		    break;
 		case(5): 
 			scr_Draw_Heart_Health(spr_Mechanical_Heart, _xx, _yy, _scale, _alpha, _percent, 80, 74, 24, 0, 1);
