@@ -10,16 +10,8 @@ function scr_Draw_Heart(_heart_num, _percent, _scale, _xx = x, _yy = y, _alpha =
 		    scr_Draw_Heart_Health(spr_Mini_Heart, _xx, _yy, _scale, _alpha, _percent, 70, 63);
 		    break;
 		case(3): 
-			scr_Draw_Heart_Health(spr_Survivor_Heart, _xx, _yy, _scale, _alpha, _percent, 78, 72, 10);
+			scr_Draw_Heart_Health(spr_Survivor_Heart, _xx, _yy, _scale, _alpha, _percent, 96, 97, 10);
 		    break;
-		/*
-		if _heart_num_float = 3.01 {
-		    draw_sprite_ext(spr_Survivor_Heart,2,_xx,_yy,0.5 * _scale,0.5 * _scale,0,c_white,1);
-		    break;
-		if _heart_num_float = 3.02 {
-		    draw_sprite_ext(spr_Survivor_Heart,3,_xx,_yy,0.5 * _scale,0.5 * _scale,0,c_white,1);
-		    break;
-		*/
 		case(4): 
 			scr_Draw_Heart_Health(spr_Jumbo_Heart, _xx, _yy, _scale, _alpha, _percent, 108, 92);
 		    break;
@@ -30,7 +22,7 @@ function scr_Draw_Heart(_heart_num, _percent, _scale, _xx = x, _yy = y, _alpha =
 			scr_Draw_Heart_Health(spr_Undying_Heart, _xx, _yy, _scale, _alpha, _percent, 84, 78);
 		    break;
 		case(7): 
-			scr_Draw_Heart_Health(spr_Hourglass_Heart, _xx, _yy, _scale, _alpha, _percent, 84, 89);
+			scr_Draw_Heart_Health(spr_Fart_Heart, _xx, _yy, _scale, _alpha, _percent, 108, 104);
 		    break;
 		case(8): 
 			scr_Draw_Heart_Health(spr_Spike_Heart, _xx, _yy, _scale, _alpha, _percent, 78, 72, 21);

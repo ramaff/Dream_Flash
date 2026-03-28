@@ -88,12 +88,13 @@ if global.currentchapter = 4 {
 	
 if roomBG = spr_flash_marble_brick_g || roomBG = spr_flash_diagonal_brick_g || roomBG = spr_shop_g || roomBG = spr_chamber_g || roomBG = spr_channel_g {
 	deepest_layer.sprite_index = spr_flash_night_bg;
-	//forward_layer.sprite_index = spr_flash_day_lights;
 	
 	if roomBG = spr_flash_marble_brick_g {
 		deep_layer.sprite_index = spr_flash_marble_front_bg;
 	}
 	
+} else if roomBG = spr_feel_brick_g || roomBG = spr_feel_brick_g_xl{
+	deepest_layer.sprite_index = spr_feel_night_bg
 } else if bgType = "Flash" {
 	deepest_layer.sprite_index = spr_flash_day_bg
 	deep_layer.sprite_index = spr_flash_day_front_bg;
