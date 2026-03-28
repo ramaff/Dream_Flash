@@ -110,6 +110,15 @@ function scr_Hard_Coded_Item_Stats(itemVal, items_to_add = 1, reload = false) {
 	if itemVal = "B04" {
 		global.soulhpadd += 2;
 	    obj_Soul_Parent.shpadd += 2;
+		if !reload {
+			var _i;
+			var _max = array_length(Soul_Hearts_Control.heart);
+
+			for(_i = 0; _i < _max; _i++) {
+				Soul_Hearts_Control.heart[_i].survival_hits++;
+				Soul_Hearts_Control.heart[_i].max_survival_hits++;
+			}
+		}
 	    //global.B[4]++;
 	}
 	if itemVal = "B05" {

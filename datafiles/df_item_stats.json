@@ -584,10 +584,10 @@
         "recollectionDescription": "+20 Health"
     },
     "H02": {
-        "recollectionString": "Regen Heart",
+        "recollectionString": "Mini Heart",
         "recollectionSprite": "spr_Regen_Heart_Art",
-        "recollectionSummary": "Faster Regen",
-        "recollectionDescription": "+20 Health +3x Faster Regen"
+        "recollectionSummary": "Small Sized Soul",
+        "recollectionDescription": "+15 HP -30% Soul/Shot Size -20% Shot Damage +30% Soul Move Speed +50% Think Speed"
     },
     "H03": {
         "recollectionString": "Survivor Heart",
@@ -599,7 +599,7 @@
         "recollectionString": "Jumbo Heart",
         "recollectionSprite": "spr_Jumbo_Heart_Art",
         "recollectionSummary": "Big HP Heart",
-        "recollectionDescription": "+40 HP Large Heart +30% Soul/Soul Shot Size and Damage -20% Soul Move and Think Speed"
+        "recollectionDescription": "+40 HP Large Heart +30% Soul/Shot Size and Damage -20% Soul Move and Think Speed"
     },
     "H05": {
         "recollectionString": "Mechanical Heart",

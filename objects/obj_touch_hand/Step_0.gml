@@ -1,5 +1,10 @@
 /// @description  Boss Step Event
 
+if !instance_exists(minionbossparent) {
+	instance_destroy();
+	exit;
+}
+
 // Mandatory:
 scr_Boss_Step(2);
 

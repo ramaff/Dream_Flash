@@ -28,7 +28,6 @@ if active_attack_delay <= 0 and active_attack_cooldown <= 0 and active_attack_du
     
 	// Pick a random attack to do
 	active_attack = choose(1, 1, 2);
-	active_attack = 2;
 	
 	// Sneeze
     if active_attack = 1 {

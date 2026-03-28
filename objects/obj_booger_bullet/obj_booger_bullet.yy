@@ -36,8 +36,8 @@
   "resourceVersion":"2.0",
   "solid":false,
   "spriteId":{
-    "name":"spr_Glowy_Enemy_Shot",
-    "path":"sprites/spr_Glowy_Enemy_Shot/spr_Glowy_Enemy_Shot.yy",
+    "name":"spr_booger_bullet",
+    "path":"sprites/spr_booger_bullet/spr_booger_bullet.yy",
   },
   "spriteMaskId":null,
   "visible":false,

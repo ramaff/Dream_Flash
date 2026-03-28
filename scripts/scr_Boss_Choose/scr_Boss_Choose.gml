@@ -504,6 +504,26 @@ function scr_Boss_Choose(roomNum, exclude, difficultyAdd = 0) {
 	    global.champ = choose(0,1,8);
 		//global.champ = 8;
 	}
+	if bossform = 66.1 {
+	    bosstype = obj_touch_ghoul
+	    difficulty = 3;
+	}
+	if bossform = 67.1 {
+	    bosstype = obj_smell_ghoul
+	    difficulty = 3;
+	}
+	if bossform = 68.1 {
+	    bosstype = obj_taste_ghoul
+	    difficulty = 3;
+	}
+	if bossform = 69.1 {
+	    bosstype = obj_hear_ghoul
+	    difficulty = 3;
+	}
+	if bossform = 70.1 {
+	    bosstype = obj_sight_ghoul
+	    difficulty = 3;
+	}
 	
 	if bossform = 81.1
 	{
