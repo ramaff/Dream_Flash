@@ -12,6 +12,9 @@ if active_attack = 1 and active_attack_delay <= 0 {
 	if pattern_direction = 180 and other.x > (x + 0) {
 		_eat = true	
 	}
+	if other.y > y + 40 || other.y < y - 70 {
+		_eat = false;	
+	}
 }
 
 if _eat {

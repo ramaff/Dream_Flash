@@ -15,6 +15,14 @@ if active_attack = 1 {
 	
 	if active_attack_delay <= 0 {
 		scr_suck_all_into_angle(scr_circular_suck, 1.5 / speed, x, y, pattern_direction)
+		scr_suck_specific_into_angle(obj_Wind_Particle, 3 / speed, x, y, pattern_direction)
+		if active_attack_duration mod 3 = 0 {
+			var _xx_add = -500;
+			if pattern_direction = 180 {
+				_xx_add = 500;	
+			}
+			scr_Particle_Burst(obj_Wind_Particle, spr_Big_Essence_Trail_Bit, particle_color, particle_color, 1, 0, pattern_direction, 0, 800, 0.4 + random(0.1), 20 + irandom(10), false, x + _xx_add)	
+		}
 		if pattern_direction = 180 {
 			x -= speed * 5;	
 		} else {
@@ -75,7 +83,7 @@ if active_attack_delay <= 0 and pattern_cooldown <= 0 and pattern_count > 0 {
 		}
 		
 		attack_stats.bullet_direction = scr_Boss_Bullet_Direction_Formula(pattern_direction + _offset, 30)
-		attack_stats.bullet_direction = scr_Angle_Converge(attack_stats.bullet_direction, 90, 15)
+		//attack_stats.bullet_direction = scr_Angle_Converge(attack_stats.bullet_direction, 180, 15)
 		
 		attack_stats.bullet_sprite = "spr_red_bullet_v2"
 		attack_stats.bullet_type = "obj_friction_bullet_v2"

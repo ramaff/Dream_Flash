@@ -5523,6 +5523,7 @@
     {"id":{"name":"spr_Wicked_Spectre1522","path":"sprites/spr_Wicked_Spectre1522/spr_Wicked_Spectre1522.yy",},},
     {"id":{"name":"spr_Will_To_Live_Item","path":"sprites/spr_Will_To_Live_Item/spr_Will_To_Live_Item.yy",},},
     {"id":{"name":"spr_Wind_Gust_Visual","path":"sprites/spr_Wind_Gust_Visual/spr_Wind_Gust_Visual.yy",},},
+    {"id":{"name":"spr_wind_part","path":"sprites/spr_wind_part/spr_wind_part.yy",},},
     {"id":{"name":"spr_Wind_Teleport_Item","path":"sprites/spr_Wind_Teleport_Item/spr_Wind_Teleport_Item.yy",},},
     {"id":{"name":"spr_Wishful_Thinking_Art","path":"sprites/spr_Wishful_Thinking_Art/spr_Wishful_Thinking_Art.yy",},},
     {"id":{"name":"spr_Wisp_Mask_Dump","path":"sprites/spr_Wisp_Mask_Dump/spr_Wisp_Mask_Dump.yy",},},

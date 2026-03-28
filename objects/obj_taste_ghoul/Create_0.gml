@@ -18,3 +18,4 @@ boss_palette = spr_boss_template_palette;
 boss_palette_index = champ;
 
 bites = 0;
+particle_color = make_colour_rgb(150, 200, 255)
