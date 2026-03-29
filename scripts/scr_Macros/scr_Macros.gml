@@ -5,7 +5,7 @@
 
 // in the format of x.x (ex: "1.0" minor version = x.1.0 full version value)
 #macro GAME_MINOR_VERSION "0"
-#macro GAME_VERSION_BETA "3"
+#macro GAME_VERSION_BETA "4"
 
 // In game constants
 #macro ITEM_HOVER_RANGE 60

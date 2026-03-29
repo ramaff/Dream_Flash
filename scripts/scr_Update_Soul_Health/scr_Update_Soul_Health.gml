@@ -4,8 +4,11 @@ function scr_Update_Soul_Health(_health, _slot = global.currentheart) {
 	if _slot > global.currentheart {
 		exit;
 	}
-	
 	var _hearts = Soul_Hearts_Control.heart
+	if array_length(_hearts) <= 0 {
+		exit;
+	}
+	
 	var _heart = _hearts[_slot]
 	
 	_heart.health = _health

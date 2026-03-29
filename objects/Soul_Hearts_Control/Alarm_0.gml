@@ -1,6 +1,8 @@
 /// @description Insert description here
 // You can write your code in this editor
 
+alarm[0] = 30;
+
 if (Pause_Control.pause) {
 	exit;	
 }
@@ -25,5 +27,3 @@ for(_i = 0; _i < _max; _i++) {
 	}
 }
 obj_Soul_Parent.shealth = heart[_max-1].health;
-
-alarm[0] = 30;
