@@ -4,9 +4,12 @@
 if (Pause_Control.pause) {
 	exit;	
 }
+var _max = array_length(heart);
+if _max <= 0 {
+	exit;	
+}
 
 var _i;
-var _max = array_length(heart);
 var _not_leavable = !scr_Room_Leavable()
 
 for(_i = 0; _i < _max; _i++) {

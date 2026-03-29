@@ -3,6 +3,11 @@
 if (Pause_Control.pause) {
 	exit;	
 }
+var _max = array_length(heart);
+
+if _max <= 0 {
+	exit;	
+}
 
 var click = mouse_check_button_pressed(mb_left);
 var _no_boss = !scr_Boss_Fight()
@@ -21,7 +26,6 @@ var _correct_y = (abs(myy - yy) < _half_heart_size)
 var _to_swap = -1;
 
 var _i;
-var _max = array_length(heart);
 var _alpha = 0.7;
 var _max_minus_one = _max - 1;
 var xx;
