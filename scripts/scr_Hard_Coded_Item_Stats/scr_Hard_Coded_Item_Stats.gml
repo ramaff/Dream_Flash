@@ -128,6 +128,10 @@ function scr_Hard_Coded_Item_Stats(itemVal, items_to_add = 1, reload = false) {
 	    //global.B[6]++;
 	    global.soulheartboost += 0.4;
 	    obj_Soul_Parent.sheartboost += 0.4;
+		var _heart_stats = Soul_Hearts_Control.current_heart_stats;
+	
+		scr_Modify_Soul_Stats_From_Heart(_heart_stats, 0.4);
+		
 		if !reload {
 			global.B06HeartConversions += 1;
 		}
@@ -478,8 +482,7 @@ function scr_Hard_Coded_Item_Stats(itemVal, items_to_add = 1, reload = false) {
 		    scr_Add_New_Heart(6, 10);
 		}
 		if itemVal = "H07" {
-			scr_Add_New_Heart(7, 60);
-			global.glasstime = 0;
+			scr_Add_New_Heart(7, 20);
 		}
 		if itemVal = "H08" {
 		    scr_Add_New_Heart(8, 20);

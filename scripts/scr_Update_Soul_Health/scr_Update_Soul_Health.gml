@@ -55,7 +55,7 @@ function scr_Heart_Loss_Handle_All(_heart) {
 function scr_Swap_Heart(_heart_id) {
 	var _heart_stats = Soul_Hearts_Control.current_heart_stats;
 	
-	scr_Modify_Soul_Stats_From_Heart(_heart_stats, -1);
+	scr_Modify_Soul_Stats_From_Heart(_heart_stats, -1 * global.soulheartboost);
 	
 	switch(_heart_id) {
 	
@@ -82,7 +82,7 @@ function scr_Swap_Heart(_heart_id) {
 	}
 	Soul_Hearts_Control.current_heart_stats = _heart_stats
 	
-	scr_Modify_Soul_Stats_From_Heart(Soul_Hearts_Control.current_heart_stats, 1)
+	scr_Modify_Soul_Stats_From_Heart(Soul_Hearts_Control.current_heart_stats, 1 * global.soulheartboost)
 	
 }
 

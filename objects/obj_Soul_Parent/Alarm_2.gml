@@ -20,6 +20,13 @@ if cHeart = 53 {
 	heartReload = 15;
 	scr_H53();
 }
+if cHeart = 7 {
+	var _soul_speed = sqrt((soulCurrentHorizontalSpeed * soulCurrentHorizontalSpeed) + (soulCurrentVerticalSpeed * soulCurrentVerticalSpeed));
+	if _soul_speed > 0 {
+		heartReload = 300 / (3 + _soul_speed);
+		scr_H07();
+	}
+}
 
 if cHeart = 17 {
 	scr_H17_Bubble();	

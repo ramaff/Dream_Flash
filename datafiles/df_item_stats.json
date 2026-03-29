@@ -585,9 +585,9 @@
     },
     "H02": {
         "recollectionString": "Mini Heart",
-        "recollectionSprite": "spr_Regen_Heart_Art",
+        "recollectionSprite": "spr_Mini_Heart_Art",
         "recollectionSummary": "Small Sized Soul",
-        "recollectionDescription": "+15 HP -30% Soul/Shot Size -20% Shot Damage +30% Soul Move Speed +50% Think Speed"
+        "recollectionDescription": "+15 HP -30% Soul/Shot Size -20% Shot Damage +30% Move Speed and 50% Think Speed"
     },
     "H03": {
         "recollectionString": "Survivor Heart",
@@ -615,10 +615,10 @@
         "recollectionDescription": "+10 HP +The heart comes back 3 rooms after it dies"
     },
     "H07": {
-        "recollectionString": "Eternal Hourglass Heart",
+        "recollectionString": "Fart Heart",
         "recollectionSprite": "spr_Hourglass_Heart_Art",
-        "recollectionSummary": "Expiring Big Heart",
-        "recollectionDescription": "+60 HP +Slowly loses max health over time"
+        "recollectionSummary": "Fart",
+        "recollectionDescription": "+20 HP +When moving spawn gas clouds that poison bosses and push stuff away."
     },
     "H08": {
         "recollectionString": "Spike Heart",

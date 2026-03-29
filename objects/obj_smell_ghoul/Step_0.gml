@@ -52,8 +52,9 @@ if active_attack_delay <= 0 and active_attack_cooldown <= 0 and active_attack_du
 
 if global.roomtime mod 3 = 1 {
 	scr_default_attack_settings_v2();	
-	attack_stats.bullet_type = "obj_stationary_damager_v2"
-	attack_stats.bullet_sprite = "spr_Poison_Pool"
+	attack_stats.bullet_type = "obj_damage_pool_v2"
+	attack_stats.bullet_sprite = "spr_Damage_Pool"
+	attack_stats.bullet_blend = make_colour_rgb(0, 255, 168);
 	attack_stats.boss_xoffset = -40 + random(80);
 	attack_stats.boss_yoffset = -40 + random(80) + 40 + boss_height;
 	attack_stats.bullet_depth = depth + 100;

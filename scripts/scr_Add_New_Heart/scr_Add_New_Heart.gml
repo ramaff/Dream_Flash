@@ -17,4 +17,5 @@ function scr_Add_New_Heart(_heart_id, _health = 20, _health_decay = 0, _survival
 	}
 	
 	scr_Update_Soul_Health(_health, global.currentheart)
+	scr_Swap_Heart(_heart_id);
 }

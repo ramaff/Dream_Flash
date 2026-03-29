@@ -1,6 +1,6 @@
 {
   "$GMSprite":"v2",
-  "%Name":"spr_Regen_Heart_Art",
+  "%Name":"spr_Fart_Heart_Art",
   "bboxMode":0,
   "bbox_bottom":157,
   "bbox_left":6,
@@ -12,28 +12,28 @@
   "edgeFiltering":false,
   "For3D":false,
   "frames":[
-    {"$GMSpriteFrame":"v1","%Name":"0f0c8b44-bcc0-449a-8eb5-f5b5cdc1cb2e","name":"0f0c8b44-bcc0-449a-8eb5-f5b5cdc1cb2e","resourceType":"GMSpriteFrame","resourceVersion":"2.0",},
+    {"$GMSpriteFrame":"v1","%Name":"a19ad80c-959b-45e9-bb50-12cb820b430c","name":"a19ad80c-959b-45e9-bb50-12cb820b430c","resourceType":"GMSpriteFrame","resourceVersion":"2.0",},
   ],
   "gridX":0,
   "gridY":0,
   "height":164,
   "HTile":false,
   "layers":[
-    {"$GMImageLayer":"","%Name":"03ed2683-dd23-44de-af76-32a259fa1774","blendMode":0,"displayName":"default","isLocked":false,"name":"03ed2683-dd23-44de-af76-32a259fa1774","opacity":100.0,"resourceType":"GMImageLayer","resourceVersion":"2.0","visible":true,},
+    {"$GMImageLayer":"","%Name":"19f0b121-c52a-492a-87f9-808645684a9b","blendMode":0,"displayName":"default","isLocked":false,"name":"19f0b121-c52a-492a-87f9-808645684a9b","opacity":100.0,"resourceType":"GMImageLayer","resourceVersion":"2.0","visible":true,},
   ],
-  "name":"spr_Regen_Heart_Art",
+  "name":"spr_Fart_Heart_Art",
   "nineSlice":null,
   "origin":4,
   "parent":{
-    "name":"Heart Item Art",
-    "path":"folders/Sprites/Item Icons/Heart Item Art.yy",
+    "name":"(H) Heart Item Art",
+    "path":"folders/Sprites/Item Icons/(H) Heart Item Art.yy",
   },
   "preMultiplyAlpha":false,
   "resourceType":"GMSprite",
   "resourceVersion":"2.0",
   "sequence":{
     "$GMSequence":"v1",
-    "%Name":"",
+    "%Name":"spr_Fart_Heart_Art",
     "autoRecord":true,
     "backdropHeight":1080,
     "backdropImageOpacity":0.5,
@@ -57,7 +57,7 @@
       "resourceType":"KeyframeStore<MomentsEventKeyframe>",
       "resourceVersion":"2.0",
     },
-    "name":"",
+    "name":"spr_Fart_Heart_Art",
     "playback":1,
     "playbackSpeed":1.0,
     "playbackSpeedType":1,
@@ -68,7 +68,9 @@
     "timeUnits":1,
     "tracks":[
       {"$GMSpriteFramesTrack":"","builtinName":0,"events":[],"inheritsTrackColour":true,"interpolation":1,"isCreationTrack":false,"keyframes":{"$KeyframeStore<SpriteFrameKeyframe>":"","Keyframes":[
-            {"$Keyframe<SpriteFrameKeyframe>":"","Channels":{"0":{"$SpriteFrameKeyframe":"","Id":{"name":"0f0c8b44-bcc0-449a-8eb5-f5b5cdc1cb2e","path":"sprites/spr_Regen_Heart_Art/spr_Regen_Heart_Art.yy",},"resourceType":"SpriteFrameKeyframe","resourceVersion":"2.0",},},"Disabled":false,"id":"3029a46a-b833-496e-a522-5a9bf3ab1862","IsCreationKey":false,"Key":0.0,"Length":1.0,"resourceType":"Keyframe<SpriteFrameKeyframe>","resourceVersion":"2.0","Stretch":false,},
+            {"$Keyframe<SpriteFrameKeyframe>":"","Channels":{
+                "0":{"$SpriteFrameKeyframe":"","Id":{"name":"a19ad80c-959b-45e9-bb50-12cb820b430c","path":"sprites/spr_Fart_Heart_Art/spr_Fart_Heart_Art.yy",},"resourceType":"SpriteFrameKeyframe","resourceVersion":"2.0",},
+              },"Disabled":false,"id":"8c405ebe-541f-4a93-8cb7-3352dc85fd1b","IsCreationKey":false,"Key":0.0,"Length":1.0,"resourceType":"Keyframe<SpriteFrameKeyframe>","resourceVersion":"2.0","Stretch":false,},
           ],"resourceType":"KeyframeStore<SpriteFrameKeyframe>","resourceVersion":"2.0",},"modifiers":[],"name":"frames","resourceType":"GMSpriteFramesTrack","resourceVersion":"2.0","spriteId":null,"trackColour":0,"tracks":[],"traits":0,},
     ],
     "visibleRange":null,

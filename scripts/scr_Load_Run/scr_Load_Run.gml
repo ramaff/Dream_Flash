@@ -254,6 +254,12 @@ function scr_Load_Run() {
 		
 		scr_Swap_Heart(Soul_Hearts_Control.heart[array_length(Soul_Hearts_Control.heart) - 1].heart_id);
 		
+		/*var _heart_stats = json_parse(ini_read_string("Run", "heart_stats", "{}"))
+		 
+		if array_length(struct_get_names(_heart_stats)) > 0 {
+			Soul_Hearts_Control.current_heart_stats = _heart_stats	
+		} */
+		
 		global.items = json_parse(ini_read_string("Run", "items", "[]"))
 		
 		
