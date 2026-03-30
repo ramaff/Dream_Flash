@@ -21,6 +21,7 @@ function scr_default_attack_settings_v2() {
 		minion_target = other.id;
 		minion_spawn_animation = noone;
 		
+		deadknockdirection = 0;
 		minion_dir = 0;
 		minion_speed = 0;
 		minion_height = 0;
