@@ -1547,7 +1547,7 @@
 
         "Boss 066": {
             "Name": "The Ghoul of Touch",
-            "Recollection_Sprite": "reco_Mass_Puck",
+            "Recollection_Sprite": "reco_touch_ghoul",
             "Health_Phase_1": 450,
             "Health_Phase_2": 0,
             "Defense_Phase_1": 0,
@@ -1559,7 +1559,7 @@
         },
         "Boss 067": {
             "Name": "The Ghoul of Smell",
-            "Recollection_Sprite": "reco_Mass_Puck",
+            "Recollection_Sprite": "reco_smell_ghoul",
             "Health_Phase_1": 540,
             "Health_Phase_2": 0,
             "Defense_Phase_1": 0,
@@ -1571,7 +1571,7 @@
         },
         "Boss 068": {
             "Name": "The Ghoul of Taste",
-            "Recollection_Sprite": "reco_Mass_Puck",
+            "Recollection_Sprite": "reco_taste_ghoul",
             "Health_Phase_1": 630,
             "Health_Phase_2": 0,
             "Defense_Phase_1": 0,
@@ -1583,7 +1583,7 @@
         },
         "Boss 069": {
             "Name": "The Ghoul of Hearing",
-            "Recollection_Sprite": "reco_Mass_Puck",
+            "Recollection_Sprite": "reco_hear_ghoul",
             "Health_Phase_1": 530,
             "Health_Phase_2": 0,
             "Defense_Phase_1": 0,
@@ -1595,7 +1595,7 @@
         },
         "Boss 070": {
             "Name": "The Ghoul of Sight",
-            "Recollection_Sprite": "reco_Mass_Puck",
+            "Recollection_Sprite": "reco_sight_ghoul",
             "Health_Phase_1": 430,
             "Health_Phase_2": 0,
             "Defense_Phase_1": 0,
