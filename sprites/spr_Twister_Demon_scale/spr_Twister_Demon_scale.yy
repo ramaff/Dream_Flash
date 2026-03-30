@@ -26,7 +26,7 @@
   "origin":9,
   "parent":{
     "name":"Twister Group",
-    "path":"folders/Sprites/Boss Sprites/Feel Bosses/Twister Group.yy",
+    "path":"folders/Sprites/Boss Sprites/Feel Bosses/aaa_v1/Twister Group.yy",
   },
   "preMultiplyAlpha":false,
   "resourceType":"GMSprite",
@@ -68,7 +68,9 @@
     "timeUnits":1,
     "tracks":[
       {"$GMSpriteFramesTrack":"","builtinName":0,"events":[],"inheritsTrackColour":true,"interpolation":1,"isCreationTrack":false,"keyframes":{"$KeyframeStore<SpriteFrameKeyframe>":"","Keyframes":[
-            {"$Keyframe<SpriteFrameKeyframe>":"","Channels":{"0":{"$SpriteFrameKeyframe":"","Id":{"name":"79ad59cc-7db0-4d75-bf9b-a17e3bcb91c4","path":"sprites/spr_Twister_Demon_scale/spr_Twister_Demon_scale.yy",},"resourceType":"SpriteFrameKeyframe","resourceVersion":"2.0",},},"Disabled":false,"id":"7eb5fbf8-d75f-4527-8dbd-c3eae0afb4d0","IsCreationKey":false,"Key":0.0,"Length":1.0,"resourceType":"Keyframe<SpriteFrameKeyframe>","resourceVersion":"2.0","Stretch":false,},
+            {"$Keyframe<SpriteFrameKeyframe>":"","Channels":{
+                "0":{"$SpriteFrameKeyframe":"","Id":{"name":"79ad59cc-7db0-4d75-bf9b-a17e3bcb91c4","path":"sprites/spr_Twister_Demon_scale/spr_Twister_Demon_scale.yy",},"resourceType":"SpriteFrameKeyframe","resourceVersion":"2.0",},
+              },"Disabled":false,"id":"7eb5fbf8-d75f-4527-8dbd-c3eae0afb4d0","IsCreationKey":false,"Key":0.0,"Length":1.0,"resourceType":"Keyframe<SpriteFrameKeyframe>","resourceVersion":"2.0","Stretch":false,},
           ],"resourceType":"KeyframeStore<SpriteFrameKeyframe>","resourceVersion":"2.0",},"modifiers":[],"name":"frames","resourceType":"GMSpriteFramesTrack","resourceVersion":"2.0","spriteId":null,"trackColour":0,"tracks":[],"traits":0,},
     ],
     "visibleRange":{

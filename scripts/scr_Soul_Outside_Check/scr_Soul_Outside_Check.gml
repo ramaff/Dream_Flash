@@ -23,6 +23,9 @@ function scr_Soul_Outside_Check(_offset = 0) {
 
 	x = clamp(x, _x_center - _yy_bound_amount, _x_center + _yy_bound_amount);
 	y = clamp(y, _y_center - _xx_bound_amount, _y_center + _xx_bound_amount);
+	
+	x = clamp(x, _x_center - _room_half_size, _x_center + _room_half_size);
+	y = clamp(y, _y_center - _room_half_size, _y_center + _room_half_size);
 
 	return true
 

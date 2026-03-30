@@ -21,7 +21,7 @@ if soulinvincibility <= 0 and other.bullet_stats.bullet_power > 0 and soul_under
     scr_Soul_Damage_Calculation(damageamount, defenseamount);
 	scr_soul_hit_status_add_v2(other.bullet_stats);
     
-    if global.totalhearts <= 0 {
+    if global.currentheart < 0 {
 	    if shealth <= 0 {
 	        instance_destroy();
 	    }

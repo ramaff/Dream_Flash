@@ -1,4 +1,4 @@
-function scr_Heart_Loss_Event(current_heart, current_heart_type) {
+function scr_Heart_Loss_Event(current_heart_type) {
 	scr_S02();
 	scr_S03();
 

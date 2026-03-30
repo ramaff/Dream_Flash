@@ -31,7 +31,7 @@
   "origin":4,
   "parent":{
     "name":"Harvester Group",
-    "path":"folders/Sprites/Boss Sprites/Feel Bosses/Harvester Group.yy",
+    "path":"folders/Sprites/Boss Sprites/Feel Bosses/aaa_v1/Harvester Group.yy",
   },
   "preMultiplyAlpha":false,
   "resourceType":"GMSprite",
@@ -73,12 +73,24 @@
     "timeUnits":1,
     "tracks":[
       {"$GMSpriteFramesTrack":"","builtinName":0,"events":[],"inheritsTrackColour":true,"interpolation":1,"isCreationTrack":false,"keyframes":{"$KeyframeStore<SpriteFrameKeyframe>":"","Keyframes":[
-            {"$Keyframe<SpriteFrameKeyframe>":"","Channels":{"0":{"$SpriteFrameKeyframe":"","Id":{"name":"4367d663-8283-4d10-a517-39334b3aa95e","path":"sprites/spr_Dangerous_Bomb_Shoot/spr_Dangerous_Bomb_Shoot.yy",},"resourceType":"SpriteFrameKeyframe","resourceVersion":"2.0",},},"Disabled":false,"id":"49f00af0-be08-40f5-96df-e814189f26cf","IsCreationKey":false,"Key":0.0,"Length":1.0,"resourceType":"Keyframe<SpriteFrameKeyframe>","resourceVersion":"2.0","Stretch":false,},
-            {"$Keyframe<SpriteFrameKeyframe>":"","Channels":{"0":{"$SpriteFrameKeyframe":"","Id":{"name":"b361e954-afc5-4e8f-95ae-2a124cfc1046","path":"sprites/spr_Dangerous_Bomb_Shoot/spr_Dangerous_Bomb_Shoot.yy",},"resourceType":"SpriteFrameKeyframe","resourceVersion":"2.0",},},"Disabled":false,"id":"6ede950b-c15c-409f-8d20-88257a8519d4","IsCreationKey":false,"Key":1.0,"Length":1.0,"resourceType":"Keyframe<SpriteFrameKeyframe>","resourceVersion":"2.0","Stretch":false,},
-            {"$Keyframe<SpriteFrameKeyframe>":"","Channels":{"0":{"$SpriteFrameKeyframe":"","Id":{"name":"3136e023-a951-45c5-9e38-bd6bbf00e320","path":"sprites/spr_Dangerous_Bomb_Shoot/spr_Dangerous_Bomb_Shoot.yy",},"resourceType":"SpriteFrameKeyframe","resourceVersion":"2.0",},},"Disabled":false,"id":"36bb0ac7-33ce-4682-a292-71d7fa8b01e4","IsCreationKey":false,"Key":2.0,"Length":1.0,"resourceType":"Keyframe<SpriteFrameKeyframe>","resourceVersion":"2.0","Stretch":false,},
-            {"$Keyframe<SpriteFrameKeyframe>":"","Channels":{"0":{"$SpriteFrameKeyframe":"","Id":{"name":"86f0a665-b9e6-489b-a048-09456e2a47f3","path":"sprites/spr_Dangerous_Bomb_Shoot/spr_Dangerous_Bomb_Shoot.yy",},"resourceType":"SpriteFrameKeyframe","resourceVersion":"2.0",},},"Disabled":false,"id":"edbbeda4-ef75-45e0-afef-f5a317f34d8f","IsCreationKey":false,"Key":3.0,"Length":1.0,"resourceType":"Keyframe<SpriteFrameKeyframe>","resourceVersion":"2.0","Stretch":false,},
-            {"$Keyframe<SpriteFrameKeyframe>":"","Channels":{"0":{"$SpriteFrameKeyframe":"","Id":{"name":"e058743a-bd2c-47f8-8389-ce2ce963e557","path":"sprites/spr_Dangerous_Bomb_Shoot/spr_Dangerous_Bomb_Shoot.yy",},"resourceType":"SpriteFrameKeyframe","resourceVersion":"2.0",},},"Disabled":false,"id":"a644bac6-01ab-46fb-9d4a-a5e5f9b4ccc1","IsCreationKey":false,"Key":4.0,"Length":1.0,"resourceType":"Keyframe<SpriteFrameKeyframe>","resourceVersion":"2.0","Stretch":false,},
-            {"$Keyframe<SpriteFrameKeyframe>":"","Channels":{"0":{"$SpriteFrameKeyframe":"","Id":{"name":"cfcc482f-3c16-4cdd-9663-90b759ae5e9d","path":"sprites/spr_Dangerous_Bomb_Shoot/spr_Dangerous_Bomb_Shoot.yy",},"resourceType":"SpriteFrameKeyframe","resourceVersion":"2.0",},},"Disabled":false,"id":"edf19542-9e38-4e8f-8ffc-1af5af77ebd3","IsCreationKey":false,"Key":5.0,"Length":1.0,"resourceType":"Keyframe<SpriteFrameKeyframe>","resourceVersion":"2.0","Stretch":false,},
+            {"$Keyframe<SpriteFrameKeyframe>":"","Channels":{
+                "0":{"$SpriteFrameKeyframe":"","Id":{"name":"4367d663-8283-4d10-a517-39334b3aa95e","path":"sprites/spr_Dangerous_Bomb_Shoot/spr_Dangerous_Bomb_Shoot.yy",},"resourceType":"SpriteFrameKeyframe","resourceVersion":"2.0",},
+              },"Disabled":false,"id":"49f00af0-be08-40f5-96df-e814189f26cf","IsCreationKey":false,"Key":0.0,"Length":1.0,"resourceType":"Keyframe<SpriteFrameKeyframe>","resourceVersion":"2.0","Stretch":false,},
+            {"$Keyframe<SpriteFrameKeyframe>":"","Channels":{
+                "0":{"$SpriteFrameKeyframe":"","Id":{"name":"b361e954-afc5-4e8f-95ae-2a124cfc1046","path":"sprites/spr_Dangerous_Bomb_Shoot/spr_Dangerous_Bomb_Shoot.yy",},"resourceType":"SpriteFrameKeyframe","resourceVersion":"2.0",},
+              },"Disabled":false,"id":"6ede950b-c15c-409f-8d20-88257a8519d4","IsCreationKey":false,"Key":1.0,"Length":1.0,"resourceType":"Keyframe<SpriteFrameKeyframe>","resourceVersion":"2.0","Stretch":false,},
+            {"$Keyframe<SpriteFrameKeyframe>":"","Channels":{
+                "0":{"$SpriteFrameKeyframe":"","Id":{"name":"3136e023-a951-45c5-9e38-bd6bbf00e320","path":"sprites/spr_Dangerous_Bomb_Shoot/spr_Dangerous_Bomb_Shoot.yy",},"resourceType":"SpriteFrameKeyframe","resourceVersion":"2.0",},
+              },"Disabled":false,"id":"36bb0ac7-33ce-4682-a292-71d7fa8b01e4","IsCreationKey":false,"Key":2.0,"Length":1.0,"resourceType":"Keyframe<SpriteFrameKeyframe>","resourceVersion":"2.0","Stretch":false,},
+            {"$Keyframe<SpriteFrameKeyframe>":"","Channels":{
+                "0":{"$SpriteFrameKeyframe":"","Id":{"name":"86f0a665-b9e6-489b-a048-09456e2a47f3","path":"sprites/spr_Dangerous_Bomb_Shoot/spr_Dangerous_Bomb_Shoot.yy",},"resourceType":"SpriteFrameKeyframe","resourceVersion":"2.0",},
+              },"Disabled":false,"id":"edbbeda4-ef75-45e0-afef-f5a317f34d8f","IsCreationKey":false,"Key":3.0,"Length":1.0,"resourceType":"Keyframe<SpriteFrameKeyframe>","resourceVersion":"2.0","Stretch":false,},
+            {"$Keyframe<SpriteFrameKeyframe>":"","Channels":{
+                "0":{"$SpriteFrameKeyframe":"","Id":{"name":"e058743a-bd2c-47f8-8389-ce2ce963e557","path":"sprites/spr_Dangerous_Bomb_Shoot/spr_Dangerous_Bomb_Shoot.yy",},"resourceType":"SpriteFrameKeyframe","resourceVersion":"2.0",},
+              },"Disabled":false,"id":"a644bac6-01ab-46fb-9d4a-a5e5f9b4ccc1","IsCreationKey":false,"Key":4.0,"Length":1.0,"resourceType":"Keyframe<SpriteFrameKeyframe>","resourceVersion":"2.0","Stretch":false,},
+            {"$Keyframe<SpriteFrameKeyframe>":"","Channels":{
+                "0":{"$SpriteFrameKeyframe":"","Id":{"name":"cfcc482f-3c16-4cdd-9663-90b759ae5e9d","path":"sprites/spr_Dangerous_Bomb_Shoot/spr_Dangerous_Bomb_Shoot.yy",},"resourceType":"SpriteFrameKeyframe","resourceVersion":"2.0",},
+              },"Disabled":false,"id":"edf19542-9e38-4e8f-8ffc-1af5af77ebd3","IsCreationKey":false,"Key":5.0,"Length":1.0,"resourceType":"Keyframe<SpriteFrameKeyframe>","resourceVersion":"2.0","Stretch":false,},
           ],"resourceType":"KeyframeStore<SpriteFrameKeyframe>","resourceVersion":"2.0",},"modifiers":[],"name":"frames","resourceType":"GMSpriteFramesTrack","resourceVersion":"2.0","spriteId":null,"trackColour":0,"tracks":[],"traits":0,},
     ],
     "visibleRange":null,

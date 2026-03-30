@@ -26,7 +26,7 @@
   "origin":9,
   "parent":{
     "name":"Infatuation Group",
-    "path":"folders/Sprites/Boss Sprites/Feel Bosses/Infatuation Group.yy",
+    "path":"folders/Sprites/Boss Sprites/Feel Bosses/aaa_v1/Infatuation Group.yy",
   },
   "preMultiplyAlpha":false,
   "resourceType":"GMSprite",
@@ -68,7 +68,9 @@
     "timeUnits":1,
     "tracks":[
       {"$GMSpriteFramesTrack":"","builtinName":0,"events":[],"inheritsTrackColour":true,"interpolation":1,"isCreationTrack":false,"keyframes":{"$KeyframeStore<SpriteFrameKeyframe>":"","Keyframes":[
-            {"$Keyframe<SpriteFrameKeyframe>":"","Channels":{"0":{"$SpriteFrameKeyframe":"","Id":{"name":"d7d76e37-c699-4912-8664-029c4fabe3fc","path":"sprites/spr_Infatuation_Cloud_Scale/spr_Infatuation_Cloud_Scale.yy",},"resourceType":"SpriteFrameKeyframe","resourceVersion":"2.0",},},"Disabled":false,"id":"5da2f34d-333b-496e-8b05-143c863fbf91","IsCreationKey":false,"Key":0.0,"Length":1.0,"resourceType":"Keyframe<SpriteFrameKeyframe>","resourceVersion":"2.0","Stretch":false,},
+            {"$Keyframe<SpriteFrameKeyframe>":"","Channels":{
+                "0":{"$SpriteFrameKeyframe":"","Id":{"name":"d7d76e37-c699-4912-8664-029c4fabe3fc","path":"sprites/spr_Infatuation_Cloud_Scale/spr_Infatuation_Cloud_Scale.yy",},"resourceType":"SpriteFrameKeyframe","resourceVersion":"2.0",},
+              },"Disabled":false,"id":"5da2f34d-333b-496e-8b05-143c863fbf91","IsCreationKey":false,"Key":0.0,"Length":1.0,"resourceType":"Keyframe<SpriteFrameKeyframe>","resourceVersion":"2.0","Stretch":false,},
           ],"resourceType":"KeyframeStore<SpriteFrameKeyframe>","resourceVersion":"2.0",},"modifiers":[],"name":"frames","resourceType":"GMSpriteFramesTrack","resourceVersion":"2.0","spriteId":null,"trackColour":0,"tracks":[],"traits":0,},
     ],
     "visibleRange":{

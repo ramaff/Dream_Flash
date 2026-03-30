@@ -33,7 +33,7 @@
   "origin":9,
   "parent":{
     "name":"Twister Group",
-    "path":"folders/Sprites/Boss Sprites/Feel Bosses/Twister Group.yy",
+    "path":"folders/Sprites/Boss Sprites/Feel Bosses/aaa_v1/Twister Group.yy",
   },
   "preMultiplyAlpha":false,
   "resourceType":"GMSprite",
@@ -75,14 +75,30 @@
     "timeUnits":1,
     "tracks":[
       {"$GMSpriteFramesTrack":"","builtinName":0,"events":[],"inheritsTrackColour":true,"interpolation":1,"isCreationTrack":false,"keyframes":{"$KeyframeStore<SpriteFrameKeyframe>":"","Keyframes":[
-            {"$Keyframe<SpriteFrameKeyframe>":"","Channels":{"0":{"$SpriteFrameKeyframe":"","Id":{"name":"a1db3fc1-9352-48ec-9ef7-fdfd07f7ce95","path":"sprites/spr_Twister_Demon_Twirl/spr_Twister_Demon_Twirl.yy",},"resourceType":"SpriteFrameKeyframe","resourceVersion":"2.0",},},"Disabled":false,"id":"95cfa8d2-82b7-44b9-a35f-500a6555c16f","IsCreationKey":false,"Key":0.0,"Length":1.0,"resourceType":"Keyframe<SpriteFrameKeyframe>","resourceVersion":"2.0","Stretch":false,},
-            {"$Keyframe<SpriteFrameKeyframe>":"","Channels":{"0":{"$SpriteFrameKeyframe":"","Id":{"name":"6c0d77ff-6e7f-4c12-ab72-a914d88f3cd2","path":"sprites/spr_Twister_Demon_Twirl/spr_Twister_Demon_Twirl.yy",},"resourceType":"SpriteFrameKeyframe","resourceVersion":"2.0",},},"Disabled":false,"id":"04ff5377-7bd3-4e66-a97f-20a98c1a87f3","IsCreationKey":false,"Key":1.0,"Length":1.0,"resourceType":"Keyframe<SpriteFrameKeyframe>","resourceVersion":"2.0","Stretch":false,},
-            {"$Keyframe<SpriteFrameKeyframe>":"","Channels":{"0":{"$SpriteFrameKeyframe":"","Id":{"name":"348daec1-ac8d-4eb3-9397-1b7e6dd30ba6","path":"sprites/spr_Twister_Demon_Twirl/spr_Twister_Demon_Twirl.yy",},"resourceType":"SpriteFrameKeyframe","resourceVersion":"2.0",},},"Disabled":false,"id":"070866c1-e618-42df-bae8-f0d64f2e635a","IsCreationKey":false,"Key":2.0,"Length":1.0,"resourceType":"Keyframe<SpriteFrameKeyframe>","resourceVersion":"2.0","Stretch":false,},
-            {"$Keyframe<SpriteFrameKeyframe>":"","Channels":{"0":{"$SpriteFrameKeyframe":"","Id":{"name":"f4de7c23-6a94-4964-89a2-73cb248c7141","path":"sprites/spr_Twister_Demon_Twirl/spr_Twister_Demon_Twirl.yy",},"resourceType":"SpriteFrameKeyframe","resourceVersion":"2.0",},},"Disabled":false,"id":"a2b83066-5d19-4d91-adab-982e1de3f1c4","IsCreationKey":false,"Key":3.0,"Length":1.0,"resourceType":"Keyframe<SpriteFrameKeyframe>","resourceVersion":"2.0","Stretch":false,},
-            {"$Keyframe<SpriteFrameKeyframe>":"","Channels":{"0":{"$SpriteFrameKeyframe":"","Id":{"name":"37010907-ede1-4071-aea7-26dd29047e16","path":"sprites/spr_Twister_Demon_Twirl/spr_Twister_Demon_Twirl.yy",},"resourceType":"SpriteFrameKeyframe","resourceVersion":"2.0",},},"Disabled":false,"id":"1ba522df-67f3-42b0-b166-dc042b6ed55f","IsCreationKey":false,"Key":4.0,"Length":1.0,"resourceType":"Keyframe<SpriteFrameKeyframe>","resourceVersion":"2.0","Stretch":false,},
-            {"$Keyframe<SpriteFrameKeyframe>":"","Channels":{"0":{"$SpriteFrameKeyframe":"","Id":{"name":"033d2b1a-360b-435f-b99c-f3787ff2d028","path":"sprites/spr_Twister_Demon_Twirl/spr_Twister_Demon_Twirl.yy",},"resourceType":"SpriteFrameKeyframe","resourceVersion":"2.0",},},"Disabled":false,"id":"98a3faae-72d8-4377-9cbf-c3d75f52dd86","IsCreationKey":false,"Key":5.0,"Length":1.0,"resourceType":"Keyframe<SpriteFrameKeyframe>","resourceVersion":"2.0","Stretch":false,},
-            {"$Keyframe<SpriteFrameKeyframe>":"","Channels":{"0":{"$SpriteFrameKeyframe":"","Id":{"name":"ae633fe1-0229-4c5c-87b5-58be83ea6e0c","path":"sprites/spr_Twister_Demon_Twirl/spr_Twister_Demon_Twirl.yy",},"resourceType":"SpriteFrameKeyframe","resourceVersion":"2.0",},},"Disabled":false,"id":"8ce5cc05-ed5a-428e-b01b-b7bd118e942d","IsCreationKey":false,"Key":6.0,"Length":1.0,"resourceType":"Keyframe<SpriteFrameKeyframe>","resourceVersion":"2.0","Stretch":false,},
-            {"$Keyframe<SpriteFrameKeyframe>":"","Channels":{"0":{"$SpriteFrameKeyframe":"","Id":{"name":"9f8f3fd6-2918-46f7-ac94-1890ede5ae58","path":"sprites/spr_Twister_Demon_Twirl/spr_Twister_Demon_Twirl.yy",},"resourceType":"SpriteFrameKeyframe","resourceVersion":"2.0",},},"Disabled":false,"id":"90728d05-f1b0-4ccf-b1c8-2464d30e96fa","IsCreationKey":false,"Key":7.0,"Length":1.0,"resourceType":"Keyframe<SpriteFrameKeyframe>","resourceVersion":"2.0","Stretch":false,},
+            {"$Keyframe<SpriteFrameKeyframe>":"","Channels":{
+                "0":{"$SpriteFrameKeyframe":"","Id":{"name":"a1db3fc1-9352-48ec-9ef7-fdfd07f7ce95","path":"sprites/spr_Twister_Demon_Twirl/spr_Twister_Demon_Twirl.yy",},"resourceType":"SpriteFrameKeyframe","resourceVersion":"2.0",},
+              },"Disabled":false,"id":"95cfa8d2-82b7-44b9-a35f-500a6555c16f","IsCreationKey":false,"Key":0.0,"Length":1.0,"resourceType":"Keyframe<SpriteFrameKeyframe>","resourceVersion":"2.0","Stretch":false,},
+            {"$Keyframe<SpriteFrameKeyframe>":"","Channels":{
+                "0":{"$SpriteFrameKeyframe":"","Id":{"name":"6c0d77ff-6e7f-4c12-ab72-a914d88f3cd2","path":"sprites/spr_Twister_Demon_Twirl/spr_Twister_Demon_Twirl.yy",},"resourceType":"SpriteFrameKeyframe","resourceVersion":"2.0",},
+              },"Disabled":false,"id":"04ff5377-7bd3-4e66-a97f-20a98c1a87f3","IsCreationKey":false,"Key":1.0,"Length":1.0,"resourceType":"Keyframe<SpriteFrameKeyframe>","resourceVersion":"2.0","Stretch":false,},
+            {"$Keyframe<SpriteFrameKeyframe>":"","Channels":{
+                "0":{"$SpriteFrameKeyframe":"","Id":{"name":"348daec1-ac8d-4eb3-9397-1b7e6dd30ba6","path":"sprites/spr_Twister_Demon_Twirl/spr_Twister_Demon_Twirl.yy",},"resourceType":"SpriteFrameKeyframe","resourceVersion":"2.0",},
+              },"Disabled":false,"id":"070866c1-e618-42df-bae8-f0d64f2e635a","IsCreationKey":false,"Key":2.0,"Length":1.0,"resourceType":"Keyframe<SpriteFrameKeyframe>","resourceVersion":"2.0","Stretch":false,},
+            {"$Keyframe<SpriteFrameKeyframe>":"","Channels":{
+                "0":{"$SpriteFrameKeyframe":"","Id":{"name":"f4de7c23-6a94-4964-89a2-73cb248c7141","path":"sprites/spr_Twister_Demon_Twirl/spr_Twister_Demon_Twirl.yy",},"resourceType":"SpriteFrameKeyframe","resourceVersion":"2.0",},
+              },"Disabled":false,"id":"a2b83066-5d19-4d91-adab-982e1de3f1c4","IsCreationKey":false,"Key":3.0,"Length":1.0,"resourceType":"Keyframe<SpriteFrameKeyframe>","resourceVersion":"2.0","Stretch":false,},
+            {"$Keyframe<SpriteFrameKeyframe>":"","Channels":{
+                "0":{"$SpriteFrameKeyframe":"","Id":{"name":"37010907-ede1-4071-aea7-26dd29047e16","path":"sprites/spr_Twister_Demon_Twirl/spr_Twister_Demon_Twirl.yy",},"resourceType":"SpriteFrameKeyframe","resourceVersion":"2.0",},
+              },"Disabled":false,"id":"1ba522df-67f3-42b0-b166-dc042b6ed55f","IsCreationKey":false,"Key":4.0,"Length":1.0,"resourceType":"Keyframe<SpriteFrameKeyframe>","resourceVersion":"2.0","Stretch":false,},
+            {"$Keyframe<SpriteFrameKeyframe>":"","Channels":{
+                "0":{"$SpriteFrameKeyframe":"","Id":{"name":"033d2b1a-360b-435f-b99c-f3787ff2d028","path":"sprites/spr_Twister_Demon_Twirl/spr_Twister_Demon_Twirl.yy",},"resourceType":"SpriteFrameKeyframe","resourceVersion":"2.0",},
+              },"Disabled":false,"id":"98a3faae-72d8-4377-9cbf-c3d75f52dd86","IsCreationKey":false,"Key":5.0,"Length":1.0,"resourceType":"Keyframe<SpriteFrameKeyframe>","resourceVersion":"2.0","Stretch":false,},
+            {"$Keyframe<SpriteFrameKeyframe>":"","Channels":{
+                "0":{"$SpriteFrameKeyframe":"","Id":{"name":"ae633fe1-0229-4c5c-87b5-58be83ea6e0c","path":"sprites/spr_Twister_Demon_Twirl/spr_Twister_Demon_Twirl.yy",},"resourceType":"SpriteFrameKeyframe","resourceVersion":"2.0",},
+              },"Disabled":false,"id":"8ce5cc05-ed5a-428e-b01b-b7bd118e942d","IsCreationKey":false,"Key":6.0,"Length":1.0,"resourceType":"Keyframe<SpriteFrameKeyframe>","resourceVersion":"2.0","Stretch":false,},
+            {"$Keyframe<SpriteFrameKeyframe>":"","Channels":{
+                "0":{"$SpriteFrameKeyframe":"","Id":{"name":"9f8f3fd6-2918-46f7-ac94-1890ede5ae58","path":"sprites/spr_Twister_Demon_Twirl/spr_Twister_Demon_Twirl.yy",},"resourceType":"SpriteFrameKeyframe","resourceVersion":"2.0",},
+              },"Disabled":false,"id":"90728d05-f1b0-4ccf-b1c8-2464d30e96fa","IsCreationKey":false,"Key":7.0,"Length":1.0,"resourceType":"Keyframe<SpriteFrameKeyframe>","resourceVersion":"2.0","Stretch":false,},
           ],"resourceType":"KeyframeStore<SpriteFrameKeyframe>","resourceVersion":"2.0",},"modifiers":[],"name":"frames","resourceType":"GMSpriteFramesTrack","resourceVersion":"2.0","spriteId":null,"trackColour":0,"tracks":[],"traits":0,},
     ],
     "visibleRange":{

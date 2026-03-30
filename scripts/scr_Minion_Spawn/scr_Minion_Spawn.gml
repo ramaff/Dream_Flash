@@ -48,6 +48,7 @@ function scr_Minion_Spawn(_minion_boss_parent = other.id) {
 	                bossknockbackforce = other.minion_knockbackforce;
 	                bosscontactdamage = other.minion_contactdamage;
 					
+					deadknockdirection = 0;
 					miniondir = other.minion_dir;
 					direction = miniondir;
 					speed = other.minion_speed

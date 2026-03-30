@@ -112,7 +112,7 @@ if tdelay < 0 {
 }
 
 if soulDeathFadeSpeed = 0 {
-    if global.totalhearts <= 0 {
+    if global.currentheart < 0 {
 		scr_Delete_Run();
         soulDeathFadeSpeed = 0.02;
         alarm[9] = 72;
@@ -121,8 +121,14 @@ if soulDeathFadeSpeed = 0 {
 
 var lerp_speed = 0.25;
 
-soulSizeX = lerp(soulSizeX,abs(size),lerp_speed);
-soulSizeY = lerp(soulSizeY,abs(size),lerp_speed);
+//if scr_Current_Heart() = 4 {
+//	size = 0.6;	
+//}
+
+var _tar_size = 0.5 * ssize;
+
+soulSizeX = lerp(soulSizeX,abs(_tar_size),lerp_speed);
+soulSizeY = lerp(soulSizeY,abs(_tar_size),lerp_speed);
 
 //image_xscale = soulSizeX; //* (size * 2);
 image_yscale = soulSizeY;

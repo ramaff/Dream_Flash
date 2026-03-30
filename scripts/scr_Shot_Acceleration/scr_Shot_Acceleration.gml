@@ -7,4 +7,8 @@ function scr_Shot_Acceleration(){
 	    shot_stats.Shot_Speed = shot_stats.Shot_Max_Speed;
 	    speed = shot_stats.Shot_Max_Speed;
 	}
+	if shot_stats.Shot_Speed < shot_stats.Shot_Min_Speed {
+	    shot_stats.Shot_Speed = shot_stats.Shot_Min_Speed;
+	    speed = shot_stats.Shot_Min_Speed;
+	}
 }

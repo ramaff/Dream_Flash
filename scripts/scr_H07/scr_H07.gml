@@ -1,16 +1,18 @@
-function scr_H07() {
-	// Location: scr_Boss_Beat
-
-	if global.totalhearts > 0 {
-		for (i = 0; i < 15; i++) {
-		    if (Soul_Hearts_Control.heart[i,2] = 7) {
-		        Soul_Hearts_Control.heart[i,3] += 10 * global.soulheartboost;
-		    }
-		}
-
-		obj_Soul_Parent.shealth = Soul_Hearts_Control.heart[global.currentheart,3];
-		obj_Soul_Parent.smaxhealth = Soul_Hearts_Control.heart[global.currentheart,4]; 
-	}
+// Script assets have changed for v2.3.0 see
+// https://help.yoyogames.com/hc/en-us/articles/360005277377 for more information
+function scr_H07(){
+		
+	var _xx = x + soulCurrentHorizontalSpeed;
+	var _yy = y + soulCurrentVerticalSpeed;
+	var _pow = 10 * global.soulheartboost;
+	var _poison_pow = round(_pow / 5)
+	var _poison_size = sqrt(max(0, _pow)) * 100
+	var _poison_sprite_size = _poison_size / 1000
+	
+	var _dist = point_distance(x, y, _xx, _yy)
+	var _dir = point_direction(x, y, _xx, _yy)
+				
+	scr_Fart(_xx, _yy, _dist, _dir, _pow, _poison_pow, _poison_size, _poison_sprite_size)
 
 
 }

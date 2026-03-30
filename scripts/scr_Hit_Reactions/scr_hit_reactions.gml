@@ -64,12 +64,11 @@ function scr_Hit_Reactions(_damage_amount, _defense_amount) {
 		}
 	} */
 
-	var hchance = irandom(smaxhealth / 2);
+	hchance = irandom(smaxhealth / 2);
 	if (dmg > hchance) and (dmg < shealth) {
 		scr_S02();
 	}
 
-	var hchance = irandom(smaxhealth / 2);
 	if (dmg > hchance) and (dmg < shealth) {
 		scr_S03();
 	}

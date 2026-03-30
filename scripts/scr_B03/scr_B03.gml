@@ -6,10 +6,10 @@
 function scr_B03(damage){
 	var i = global.currentheart;
 	with (Soul_Hearts_Control) {
-		if heart[i,2] = 103 {
-			heart[i,5] += damage * 0.25;
-			if heart[i,5] > heart[i,4] - 1 {
-				heart[i,5] = heart[i,4] - 1;
+		if heart[i].heart_id = 103 {
+			heart[i].health_decay += damage * 0.25;
+			if heart[i].health_decay > heart[i].max_health - 1 {
+				heart[i].health_decay  = heart[i].max_health - 1;
 			}
 		}
 	}

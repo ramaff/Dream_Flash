@@ -1,0 +1,68 @@
+/// @description Insert description here
+// You can write your code in this editor
+if (Pause_Control.pause) {
+	exit;	
+}
+var _max = array_length(heart);
+
+if _max <= 0 {
+	exit;	
+}
+
+var click = mouse_check_button_pressed(mb_left);
+var _no_boss = !scr_Boss_Fight()
+var x1 = camera_get_view_x(view);
+var y1 = camera_get_view_y(view);
+var _scale = Camera_Control.view_zoom * Camera_Control.window_scale
+
+var mxx = (obj_Indicator_Parent.x - x1) * _scale
+var myy = (obj_Indicator_Parent.y - y1) * _scale
+
+var _space = 89;
+var yy = 50;
+var _half_heart_size = (32)
+var _correct_y = (abs(myy - yy) < _half_heart_size)
+
+var _to_swap = -1;
+
+var _i;
+var _alpha = 0.7;
+var _max_minus_one = _max - 1;
+var xx;
+
+for(_i = 0; _i < _max; _i++) {
+
+	xx = (1.5*_half_heart_size) + _space * _i;
+
+	if (abs(mxx - xx) < _half_heart_size) && _correct_y && _no_boss {
+	    draw_set_color(c_white);
+	    draw_rectangle(xx-_half_heart_size,yy-_half_heart_size,xx+_half_heart_size,yy+_half_heart_size,0);
+
+	    if (click) {
+			_to_swap = _i;
+	    }
+	}
+	
+	if _i == _max_minus_one {
+		_alpha = 1;	
+	}
+
+	scr_Draw_Heart_Status(heart[_i], 2, xx, yy, _alpha);
+
+}
+
+if _to_swap != -1 {
+	var _old_heart = heart[_to_swap];
+	
+	array_delete(heart, _to_swap, 1)
+	heart[array_length(heart)] = _old_heart
+	
+	scr_Swap_Heart(_old_heart.heart_id)	
+}
+
+if heart[array_length(heart) - 1].max_survival_hits > 0 {
+	
+	draw_set_font(Damage_Font)
+
+	scr_Draw_Text_Outlined(xx + 20, yy + 16, c_black, c_white, $"x{heart[array_length(heart) - 1].survival_hits}")	
+}

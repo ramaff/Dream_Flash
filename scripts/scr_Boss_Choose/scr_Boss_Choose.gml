@@ -17,17 +17,6 @@ function scr_Boss_Choose(roomNum, exclude, difficultyAdd = 0) {
 		roomDifficulty = stage_base_diff;	
 	}
 
-	/*
-	if roomNum = 16 and global.currentchapter < 3 {
-		roomDifficulty += 2;
-		if global.currentchapter = 2 {
-			roomDifficulty += 1;	
-		}
-	}
-	if roomNum = 23 and global.currentchapter = 3 {
-		roomDifficulty += 4
-	} */
-
 	bossform = 1;
 	global.champ = 0;
 	global.boost = 0;
@@ -38,14 +27,18 @@ function scr_Boss_Choose(roomNum, exclude, difficultyAdd = 0) {
 	var _base_pool = []
 	var _mini_boss_pool = []
 	var _state_pool = [81,82,83,84,86,87,89,90]
+	var _mini_chance = 1
 	
 	if global.currentchapter = 1 {
-	    _base_pool = [1,3,5,9,18,19,24,25,42,44,57,58,98]
+	    _base_pool =      [1, 3, 5, 9, 18, 24, 25, 42, 44, 57, 58, 98]
 		_mini_boss_pool = [12, 13, 14, 16, 20, 37, 43, 59, 61, 62]
+		_mini_chance = 2;
 		
 	}
 	if global.currentchapter = 2 {
 	    _base_pool = [2,3,6,10,14,17,23,26,27,32,34,35,36,38,45,48,64];
+		_mini_boss_pool = [66, 67, 68, 69, 70]
+		_mini_chance = 3.5
 		
 	}
 	if global.currentchapter = 3 {
@@ -66,7 +59,7 @@ function scr_Boss_Choose(roomNum, exclude, difficultyAdd = 0) {
 	
 	var _minion_picked = false
 	
-	if array_length(_mini_boss_pool) > 0 and scr_Chance(2.15) {
+	if array_length(_mini_boss_pool) > 0 and scr_Chance(_mini_chance) {
 		_minion_picked = true;
 		bossform = _mini_boss_pool[irandom(array_length(_mini_boss_pool) - 1)]
 	}
@@ -510,6 +503,26 @@ function scr_Boss_Choose(roomNum, exclude, difficultyAdd = 0) {
 	    difficulty = 9;
 	    global.champ = choose(0,1,8);
 		//global.champ = 8;
+	}
+	if bossform = 66.1 {
+	    bosstype = obj_touch_ghoul
+	    difficulty = 3;
+	}
+	if bossform = 67.1 {
+	    bosstype = obj_smell_ghoul
+	    difficulty = 3;
+	}
+	if bossform = 68.1 {
+	    bosstype = obj_taste_ghoul
+	    difficulty = 3;
+	}
+	if bossform = 69.1 {
+	    bosstype = obj_hear_ghoul
+	    difficulty = 3;
+	}
+	if bossform = 70.1 {
+	    bosstype = obj_sight_ghoul
+	    difficulty = 3;
 	}
 	
 	if bossform = 81.1

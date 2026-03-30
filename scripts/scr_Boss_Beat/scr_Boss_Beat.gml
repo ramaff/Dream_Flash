@@ -8,7 +8,6 @@ function scr_Boss_Beat() {
 	}
 
 	scr_V02();
-	scr_H07();
 	
 	scr_N02_Pay();
 

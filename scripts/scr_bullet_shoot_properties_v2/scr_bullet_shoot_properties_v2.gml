@@ -6,6 +6,7 @@ function scr_bullet_shoot_properties_v2(_bullet_stats = bullet_stats) {
 	_bullet_stats.bullet_size_max = _bullet_stats.bullet_size;
 	image_xscale = _bullet_stats.bullet_size;
 	image_yscale = _bullet_stats.bullet_size;
+	image_alpha = _bullet_stats.bullet_alpha
 	_bullet_stats.bullet_speed_max = _bullet_stats.bullet_speed;
 	_bullet_stats.bullet_power_max = _bullet_stats.bullet_power;
 	
@@ -41,6 +42,7 @@ function scr_bullet_shoot_properties_v2(_bullet_stats = bullet_stats) {
 		target = other.id;
 
 		lightsize = _bullet_stats.bullet_size;
+		lightstrength = _bullet_stats.bullet_alpha;
 	}
 				
 	depth = _bullet_stats.bullet_depth;

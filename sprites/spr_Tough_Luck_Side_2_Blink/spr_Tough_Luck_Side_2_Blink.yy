@@ -30,7 +30,7 @@
   "origin":9,
   "parent":{
     "name":"Tough Group",
-    "path":"folders/Sprites/Boss Sprites/Feel Bosses/Tough Group.yy",
+    "path":"folders/Sprites/Boss Sprites/Feel Bosses/aaa_v1/Tough Group.yy",
   },
   "preMultiplyAlpha":false,
   "resourceType":"GMSprite",
@@ -72,11 +72,21 @@
     "timeUnits":1,
     "tracks":[
       {"$GMSpriteFramesTrack":"","builtinName":0,"events":[],"inheritsTrackColour":true,"interpolation":1,"isCreationTrack":false,"keyframes":{"$KeyframeStore<SpriteFrameKeyframe>":"","Keyframes":[
-            {"$Keyframe<SpriteFrameKeyframe>":"","Channels":{"0":{"$SpriteFrameKeyframe":"","Id":{"name":"9bf9f890-e300-4e53-839c-ab2cb4d85952","path":"sprites/spr_Tough_Luck_Side_2_Blink/spr_Tough_Luck_Side_2_Blink.yy",},"resourceType":"SpriteFrameKeyframe","resourceVersion":"2.0",},},"Disabled":false,"id":"f8663516-57eb-4d6f-b562-ca989a116baf","IsCreationKey":false,"Key":0.0,"Length":1.0,"resourceType":"Keyframe<SpriteFrameKeyframe>","resourceVersion":"2.0","Stretch":false,},
-            {"$Keyframe<SpriteFrameKeyframe>":"","Channels":{"0":{"$SpriteFrameKeyframe":"","Id":{"name":"0a152458-50fd-4e59-ae60-e48c7efc6577","path":"sprites/spr_Tough_Luck_Side_2_Blink/spr_Tough_Luck_Side_2_Blink.yy",},"resourceType":"SpriteFrameKeyframe","resourceVersion":"2.0",},},"Disabled":false,"id":"3db0ee15-5e5d-4c45-a027-2520759cea0c","IsCreationKey":false,"Key":1.0,"Length":1.0,"resourceType":"Keyframe<SpriteFrameKeyframe>","resourceVersion":"2.0","Stretch":false,},
-            {"$Keyframe<SpriteFrameKeyframe>":"","Channels":{"0":{"$SpriteFrameKeyframe":"","Id":{"name":"9a7f3d54-dba7-42be-ae14-aac22d68c437","path":"sprites/spr_Tough_Luck_Side_2_Blink/spr_Tough_Luck_Side_2_Blink.yy",},"resourceType":"SpriteFrameKeyframe","resourceVersion":"2.0",},},"Disabled":false,"id":"b68374c0-a76c-4f6e-bc00-43d437089810","IsCreationKey":false,"Key":2.0,"Length":1.0,"resourceType":"Keyframe<SpriteFrameKeyframe>","resourceVersion":"2.0","Stretch":false,},
-            {"$Keyframe<SpriteFrameKeyframe>":"","Channels":{"0":{"$SpriteFrameKeyframe":"","Id":{"name":"cae48897-249a-4045-933f-2e9880e8a2f3","path":"sprites/spr_Tough_Luck_Side_2_Blink/spr_Tough_Luck_Side_2_Blink.yy",},"resourceType":"SpriteFrameKeyframe","resourceVersion":"2.0",},},"Disabled":false,"id":"0c0a91fe-91bc-4da9-80a4-dd140c35eb2a","IsCreationKey":false,"Key":3.0,"Length":1.0,"resourceType":"Keyframe<SpriteFrameKeyframe>","resourceVersion":"2.0","Stretch":false,},
-            {"$Keyframe<SpriteFrameKeyframe>":"","Channels":{"0":{"$SpriteFrameKeyframe":"","Id":{"name":"e4ae2b66-5d6a-4322-9615-8cfac79c1045","path":"sprites/spr_Tough_Luck_Side_2_Blink/spr_Tough_Luck_Side_2_Blink.yy",},"resourceType":"SpriteFrameKeyframe","resourceVersion":"2.0",},},"Disabled":false,"id":"419acc30-7da1-4432-b112-e4a64d2f95b3","IsCreationKey":false,"Key":4.0,"Length":1.0,"resourceType":"Keyframe<SpriteFrameKeyframe>","resourceVersion":"2.0","Stretch":false,},
+            {"$Keyframe<SpriteFrameKeyframe>":"","Channels":{
+                "0":{"$SpriteFrameKeyframe":"","Id":{"name":"9bf9f890-e300-4e53-839c-ab2cb4d85952","path":"sprites/spr_Tough_Luck_Side_2_Blink/spr_Tough_Luck_Side_2_Blink.yy",},"resourceType":"SpriteFrameKeyframe","resourceVersion":"2.0",},
+              },"Disabled":false,"id":"f8663516-57eb-4d6f-b562-ca989a116baf","IsCreationKey":false,"Key":0.0,"Length":1.0,"resourceType":"Keyframe<SpriteFrameKeyframe>","resourceVersion":"2.0","Stretch":false,},
+            {"$Keyframe<SpriteFrameKeyframe>":"","Channels":{
+                "0":{"$SpriteFrameKeyframe":"","Id":{"name":"0a152458-50fd-4e59-ae60-e48c7efc6577","path":"sprites/spr_Tough_Luck_Side_2_Blink/spr_Tough_Luck_Side_2_Blink.yy",},"resourceType":"SpriteFrameKeyframe","resourceVersion":"2.0",},
+              },"Disabled":false,"id":"3db0ee15-5e5d-4c45-a027-2520759cea0c","IsCreationKey":false,"Key":1.0,"Length":1.0,"resourceType":"Keyframe<SpriteFrameKeyframe>","resourceVersion":"2.0","Stretch":false,},
+            {"$Keyframe<SpriteFrameKeyframe>":"","Channels":{
+                "0":{"$SpriteFrameKeyframe":"","Id":{"name":"9a7f3d54-dba7-42be-ae14-aac22d68c437","path":"sprites/spr_Tough_Luck_Side_2_Blink/spr_Tough_Luck_Side_2_Blink.yy",},"resourceType":"SpriteFrameKeyframe","resourceVersion":"2.0",},
+              },"Disabled":false,"id":"b68374c0-a76c-4f6e-bc00-43d437089810","IsCreationKey":false,"Key":2.0,"Length":1.0,"resourceType":"Keyframe<SpriteFrameKeyframe>","resourceVersion":"2.0","Stretch":false,},
+            {"$Keyframe<SpriteFrameKeyframe>":"","Channels":{
+                "0":{"$SpriteFrameKeyframe":"","Id":{"name":"cae48897-249a-4045-933f-2e9880e8a2f3","path":"sprites/spr_Tough_Luck_Side_2_Blink/spr_Tough_Luck_Side_2_Blink.yy",},"resourceType":"SpriteFrameKeyframe","resourceVersion":"2.0",},
+              },"Disabled":false,"id":"0c0a91fe-91bc-4da9-80a4-dd140c35eb2a","IsCreationKey":false,"Key":3.0,"Length":1.0,"resourceType":"Keyframe<SpriteFrameKeyframe>","resourceVersion":"2.0","Stretch":false,},
+            {"$Keyframe<SpriteFrameKeyframe>":"","Channels":{
+                "0":{"$SpriteFrameKeyframe":"","Id":{"name":"e4ae2b66-5d6a-4322-9615-8cfac79c1045","path":"sprites/spr_Tough_Luck_Side_2_Blink/spr_Tough_Luck_Side_2_Blink.yy",},"resourceType":"SpriteFrameKeyframe","resourceVersion":"2.0",},
+              },"Disabled":false,"id":"419acc30-7da1-4432-b112-e4a64d2f95b3","IsCreationKey":false,"Key":4.0,"Length":1.0,"resourceType":"Keyframe<SpriteFrameKeyframe>","resourceVersion":"2.0","Stretch":false,},
           ],"resourceType":"KeyframeStore<SpriteFrameKeyframe>","resourceVersion":"2.0",},"modifiers":[],"name":"frames","resourceType":"GMSpriteFramesTrack","resourceVersion":"2.0","spriteId":null,"trackColour":0,"tracks":[],"traits":0,},
     ],
     "visibleRange":null,

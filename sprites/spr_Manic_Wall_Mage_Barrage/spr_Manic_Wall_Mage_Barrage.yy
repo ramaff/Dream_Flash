@@ -32,7 +32,7 @@
   "origin":9,
   "parent":{
     "name":"Wall Mage Group",
-    "path":"folders/Sprites/Boss Sprites/Feel Bosses/Wall Mage Group.yy",
+    "path":"folders/Sprites/Boss Sprites/Feel Bosses/aaa_v1/Wall Mage Group.yy",
   },
   "preMultiplyAlpha":false,
   "resourceType":"GMSprite",
@@ -74,13 +74,27 @@
     "timeUnits":1,
     "tracks":[
       {"$GMSpriteFramesTrack":"","builtinName":0,"events":[],"inheritsTrackColour":true,"interpolation":1,"isCreationTrack":false,"keyframes":{"$KeyframeStore<SpriteFrameKeyframe>":"","Keyframes":[
-            {"$Keyframe<SpriteFrameKeyframe>":"","Channels":{"0":{"$SpriteFrameKeyframe":"","Id":{"name":"ea7d806c-a66e-46ed-be18-0435b02d6519","path":"sprites/spr_Manic_Wall_Mage_Barrage/spr_Manic_Wall_Mage_Barrage.yy",},"resourceType":"SpriteFrameKeyframe","resourceVersion":"2.0",},},"Disabled":false,"id":"5ed00dae-c885-4b46-b14a-d131fa5e7534","IsCreationKey":false,"Key":0.0,"Length":1.0,"resourceType":"Keyframe<SpriteFrameKeyframe>","resourceVersion":"2.0","Stretch":false,},
-            {"$Keyframe<SpriteFrameKeyframe>":"","Channels":{"0":{"$SpriteFrameKeyframe":"","Id":{"name":"35e7885e-c0e9-4d6f-8554-814a1a7bad63","path":"sprites/spr_Manic_Wall_Mage_Barrage/spr_Manic_Wall_Mage_Barrage.yy",},"resourceType":"SpriteFrameKeyframe","resourceVersion":"2.0",},},"Disabled":false,"id":"965a6f9c-5d7b-4fc0-beca-cb64df18be74","IsCreationKey":false,"Key":1.0,"Length":1.0,"resourceType":"Keyframe<SpriteFrameKeyframe>","resourceVersion":"2.0","Stretch":false,},
-            {"$Keyframe<SpriteFrameKeyframe>":"","Channels":{"0":{"$SpriteFrameKeyframe":"","Id":{"name":"10b9e0ea-28a4-41d8-ac3c-b547a6e1754d","path":"sprites/spr_Manic_Wall_Mage_Barrage/spr_Manic_Wall_Mage_Barrage.yy",},"resourceType":"SpriteFrameKeyframe","resourceVersion":"2.0",},},"Disabled":false,"id":"bfe83629-1fd9-44b8-892b-6e5fdf810999","IsCreationKey":false,"Key":2.0,"Length":1.0,"resourceType":"Keyframe<SpriteFrameKeyframe>","resourceVersion":"2.0","Stretch":false,},
-            {"$Keyframe<SpriteFrameKeyframe>":"","Channels":{"0":{"$SpriteFrameKeyframe":"","Id":{"name":"15feb430-95dc-42b5-a67e-b3f8d8de1ba6","path":"sprites/spr_Manic_Wall_Mage_Barrage/spr_Manic_Wall_Mage_Barrage.yy",},"resourceType":"SpriteFrameKeyframe","resourceVersion":"2.0",},},"Disabled":false,"id":"16175385-2987-41cb-bdd8-5ec8c8391091","IsCreationKey":false,"Key":3.0,"Length":1.0,"resourceType":"Keyframe<SpriteFrameKeyframe>","resourceVersion":"2.0","Stretch":false,},
-            {"$Keyframe<SpriteFrameKeyframe>":"","Channels":{"0":{"$SpriteFrameKeyframe":"","Id":{"name":"4ab73af0-144c-4e69-bbcd-200e79c6d942","path":"sprites/spr_Manic_Wall_Mage_Barrage/spr_Manic_Wall_Mage_Barrage.yy",},"resourceType":"SpriteFrameKeyframe","resourceVersion":"2.0",},},"Disabled":false,"id":"fa2559c9-c376-424e-9269-f4eaa3b54986","IsCreationKey":false,"Key":4.0,"Length":1.0,"resourceType":"Keyframe<SpriteFrameKeyframe>","resourceVersion":"2.0","Stretch":false,},
-            {"$Keyframe<SpriteFrameKeyframe>":"","Channels":{"0":{"$SpriteFrameKeyframe":"","Id":{"name":"eb99f22e-ad7d-41ed-ae3c-a465b3b08f75","path":"sprites/spr_Manic_Wall_Mage_Barrage/spr_Manic_Wall_Mage_Barrage.yy",},"resourceType":"SpriteFrameKeyframe","resourceVersion":"2.0",},},"Disabled":false,"id":"f0a51113-fa38-44b5-bd47-69523ec1ae51","IsCreationKey":false,"Key":5.0,"Length":1.0,"resourceType":"Keyframe<SpriteFrameKeyframe>","resourceVersion":"2.0","Stretch":false,},
-            {"$Keyframe<SpriteFrameKeyframe>":"","Channels":{"0":{"$SpriteFrameKeyframe":"","Id":{"name":"454f4d20-1f3f-4149-a385-bfc16cc56e63","path":"sprites/spr_Manic_Wall_Mage_Barrage/spr_Manic_Wall_Mage_Barrage.yy",},"resourceType":"SpriteFrameKeyframe","resourceVersion":"2.0",},},"Disabled":false,"id":"56a0f146-f5a5-4ee2-9c56-d7ed9745a464","IsCreationKey":false,"Key":6.0,"Length":1.0,"resourceType":"Keyframe<SpriteFrameKeyframe>","resourceVersion":"2.0","Stretch":false,},
+            {"$Keyframe<SpriteFrameKeyframe>":"","Channels":{
+                "0":{"$SpriteFrameKeyframe":"","Id":{"name":"ea7d806c-a66e-46ed-be18-0435b02d6519","path":"sprites/spr_Manic_Wall_Mage_Barrage/spr_Manic_Wall_Mage_Barrage.yy",},"resourceType":"SpriteFrameKeyframe","resourceVersion":"2.0",},
+              },"Disabled":false,"id":"5ed00dae-c885-4b46-b14a-d131fa5e7534","IsCreationKey":false,"Key":0.0,"Length":1.0,"resourceType":"Keyframe<SpriteFrameKeyframe>","resourceVersion":"2.0","Stretch":false,},
+            {"$Keyframe<SpriteFrameKeyframe>":"","Channels":{
+                "0":{"$SpriteFrameKeyframe":"","Id":{"name":"35e7885e-c0e9-4d6f-8554-814a1a7bad63","path":"sprites/spr_Manic_Wall_Mage_Barrage/spr_Manic_Wall_Mage_Barrage.yy",},"resourceType":"SpriteFrameKeyframe","resourceVersion":"2.0",},
+              },"Disabled":false,"id":"965a6f9c-5d7b-4fc0-beca-cb64df18be74","IsCreationKey":false,"Key":1.0,"Length":1.0,"resourceType":"Keyframe<SpriteFrameKeyframe>","resourceVersion":"2.0","Stretch":false,},
+            {"$Keyframe<SpriteFrameKeyframe>":"","Channels":{
+                "0":{"$SpriteFrameKeyframe":"","Id":{"name":"10b9e0ea-28a4-41d8-ac3c-b547a6e1754d","path":"sprites/spr_Manic_Wall_Mage_Barrage/spr_Manic_Wall_Mage_Barrage.yy",},"resourceType":"SpriteFrameKeyframe","resourceVersion":"2.0",},
+              },"Disabled":false,"id":"bfe83629-1fd9-44b8-892b-6e5fdf810999","IsCreationKey":false,"Key":2.0,"Length":1.0,"resourceType":"Keyframe<SpriteFrameKeyframe>","resourceVersion":"2.0","Stretch":false,},
+            {"$Keyframe<SpriteFrameKeyframe>":"","Channels":{
+                "0":{"$SpriteFrameKeyframe":"","Id":{"name":"15feb430-95dc-42b5-a67e-b3f8d8de1ba6","path":"sprites/spr_Manic_Wall_Mage_Barrage/spr_Manic_Wall_Mage_Barrage.yy",},"resourceType":"SpriteFrameKeyframe","resourceVersion":"2.0",},
+              },"Disabled":false,"id":"16175385-2987-41cb-bdd8-5ec8c8391091","IsCreationKey":false,"Key":3.0,"Length":1.0,"resourceType":"Keyframe<SpriteFrameKeyframe>","resourceVersion":"2.0","Stretch":false,},
+            {"$Keyframe<SpriteFrameKeyframe>":"","Channels":{
+                "0":{"$SpriteFrameKeyframe":"","Id":{"name":"4ab73af0-144c-4e69-bbcd-200e79c6d942","path":"sprites/spr_Manic_Wall_Mage_Barrage/spr_Manic_Wall_Mage_Barrage.yy",},"resourceType":"SpriteFrameKeyframe","resourceVersion":"2.0",},
+              },"Disabled":false,"id":"fa2559c9-c376-424e-9269-f4eaa3b54986","IsCreationKey":false,"Key":4.0,"Length":1.0,"resourceType":"Keyframe<SpriteFrameKeyframe>","resourceVersion":"2.0","Stretch":false,},
+            {"$Keyframe<SpriteFrameKeyframe>":"","Channels":{
+                "0":{"$SpriteFrameKeyframe":"","Id":{"name":"eb99f22e-ad7d-41ed-ae3c-a465b3b08f75","path":"sprites/spr_Manic_Wall_Mage_Barrage/spr_Manic_Wall_Mage_Barrage.yy",},"resourceType":"SpriteFrameKeyframe","resourceVersion":"2.0",},
+              },"Disabled":false,"id":"f0a51113-fa38-44b5-bd47-69523ec1ae51","IsCreationKey":false,"Key":5.0,"Length":1.0,"resourceType":"Keyframe<SpriteFrameKeyframe>","resourceVersion":"2.0","Stretch":false,},
+            {"$Keyframe<SpriteFrameKeyframe>":"","Channels":{
+                "0":{"$SpriteFrameKeyframe":"","Id":{"name":"454f4d20-1f3f-4149-a385-bfc16cc56e63","path":"sprites/spr_Manic_Wall_Mage_Barrage/spr_Manic_Wall_Mage_Barrage.yy",},"resourceType":"SpriteFrameKeyframe","resourceVersion":"2.0",},
+              },"Disabled":false,"id":"56a0f146-f5a5-4ee2-9c56-d7ed9745a464","IsCreationKey":false,"Key":6.0,"Length":1.0,"resourceType":"Keyframe<SpriteFrameKeyframe>","resourceVersion":"2.0","Stretch":false,},
           ],"resourceType":"KeyframeStore<SpriteFrameKeyframe>","resourceVersion":"2.0",},"modifiers":[],"name":"frames","resourceType":"GMSpriteFramesTrack","resourceVersion":"2.0","spriteId":null,"trackColour":0,"tracks":[],"traits":0,},
     ],
     "visibleRange":null,

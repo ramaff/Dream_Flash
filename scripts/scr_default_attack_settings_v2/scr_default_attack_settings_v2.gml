@@ -21,6 +21,7 @@ function scr_default_attack_settings_v2() {
 		minion_target = other.id;
 		minion_spawn_animation = noone;
 		
+		deadknockdirection = 0;
 		minion_dir = 0;
 		minion_speed = 0;
 		minion_height = 0;
@@ -43,6 +44,7 @@ function scr_base_bullet_stats(_boss_bullet_speed, _bullet_power, _bullet_accura
 		bullet_direction: (-10 + random(20)) / _bullet_accuracy,
 		bullet_life_span: 180,
 		bullet_lob_time: 40,
+		bullet_alpha: 1,
 		bullet_size: 0.5,
 		bullet_size_max: 0.5,
 		bullet_count: 1,
@@ -104,6 +106,7 @@ function scr_base_bullet_stats(_boss_bullet_speed, _bullet_power, _bullet_accura
 		angular_velocity: 0,
 		angular_acceleration: 0,
 		follow_bullets: 0,
+		follow_strength: 1,
 		school_bullets: 0
 	}	
 }

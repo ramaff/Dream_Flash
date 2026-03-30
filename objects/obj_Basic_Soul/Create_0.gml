@@ -1,5 +1,10 @@
 scr_Soul_Stats_Setup();
 
+size = 0.5;
+
+image_xscale = 0.5;
+image_yscale = 0.5;
+
 scr_Soul_Utility_Setup();
 
 scr_Familiar_Spawn();
@@ -21,11 +26,6 @@ texelW = 2 * texture_get_texel_width(sprite_get_texture(sprite_index,0));
 texelH = 2 * texture_get_texel_height(sprite_get_texture(sprite_index,0));
 
 scr_Soul_Create_Mod();
-
-size = 0.5;
-
-image_xscale = 0.5;
-image_yscale = 0.5;
 
 facing_direction = 1;
 

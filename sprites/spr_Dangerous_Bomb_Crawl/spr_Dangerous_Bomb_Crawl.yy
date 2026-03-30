@@ -31,7 +31,7 @@
   "origin":4,
   "parent":{
     "name":"Harvester Group",
-    "path":"folders/Sprites/Boss Sprites/Feel Bosses/Harvester Group.yy",
+    "path":"folders/Sprites/Boss Sprites/Feel Bosses/aaa_v1/Harvester Group.yy",
   },
   "preMultiplyAlpha":false,
   "resourceType":"GMSprite",
@@ -73,12 +73,24 @@
     "timeUnits":1,
     "tracks":[
       {"$GMSpriteFramesTrack":"","builtinName":0,"events":[],"inheritsTrackColour":true,"interpolation":1,"isCreationTrack":false,"keyframes":{"$KeyframeStore<SpriteFrameKeyframe>":"","Keyframes":[
-            {"$Keyframe<SpriteFrameKeyframe>":"","Channels":{"0":{"$SpriteFrameKeyframe":"","Id":{"name":"6bd8eb5b-60d2-41d2-9569-13534efd5638","path":"sprites/spr_Dangerous_Bomb_Crawl/spr_Dangerous_Bomb_Crawl.yy",},"resourceType":"SpriteFrameKeyframe","resourceVersion":"2.0",},},"Disabled":false,"id":"e3a1795f-5b03-4044-afc3-b83e0c0a9dd2","IsCreationKey":false,"Key":0.0,"Length":1.0,"resourceType":"Keyframe<SpriteFrameKeyframe>","resourceVersion":"2.0","Stretch":false,},
-            {"$Keyframe<SpriteFrameKeyframe>":"","Channels":{"0":{"$SpriteFrameKeyframe":"","Id":{"name":"7ac9c82b-a478-4bcf-a552-d9420eba9280","path":"sprites/spr_Dangerous_Bomb_Crawl/spr_Dangerous_Bomb_Crawl.yy",},"resourceType":"SpriteFrameKeyframe","resourceVersion":"2.0",},},"Disabled":false,"id":"1a508cb0-fd05-4198-8821-15bf13237a23","IsCreationKey":false,"Key":1.0,"Length":1.0,"resourceType":"Keyframe<SpriteFrameKeyframe>","resourceVersion":"2.0","Stretch":false,},
-            {"$Keyframe<SpriteFrameKeyframe>":"","Channels":{"0":{"$SpriteFrameKeyframe":"","Id":{"name":"1d8ca464-dccb-4bec-8230-975834f40506","path":"sprites/spr_Dangerous_Bomb_Crawl/spr_Dangerous_Bomb_Crawl.yy",},"resourceType":"SpriteFrameKeyframe","resourceVersion":"2.0",},},"Disabled":false,"id":"fce697a4-237c-4f38-9fd7-65f21aacd54f","IsCreationKey":false,"Key":2.0,"Length":1.0,"resourceType":"Keyframe<SpriteFrameKeyframe>","resourceVersion":"2.0","Stretch":false,},
-            {"$Keyframe<SpriteFrameKeyframe>":"","Channels":{"0":{"$SpriteFrameKeyframe":"","Id":{"name":"6c1ee29d-84dc-4faf-9505-7f8d62644bf2","path":"sprites/spr_Dangerous_Bomb_Crawl/spr_Dangerous_Bomb_Crawl.yy",},"resourceType":"SpriteFrameKeyframe","resourceVersion":"2.0",},},"Disabled":false,"id":"127322be-b323-494b-b9f7-33fb8c79fd4d","IsCreationKey":false,"Key":3.0,"Length":1.0,"resourceType":"Keyframe<SpriteFrameKeyframe>","resourceVersion":"2.0","Stretch":false,},
-            {"$Keyframe<SpriteFrameKeyframe>":"","Channels":{"0":{"$SpriteFrameKeyframe":"","Id":{"name":"333872f2-44bc-4aa0-b4fa-aa1a93a2b5a5","path":"sprites/spr_Dangerous_Bomb_Crawl/spr_Dangerous_Bomb_Crawl.yy",},"resourceType":"SpriteFrameKeyframe","resourceVersion":"2.0",},},"Disabled":false,"id":"3035cd88-561b-4d54-908a-2a9bffa38ea0","IsCreationKey":false,"Key":4.0,"Length":1.0,"resourceType":"Keyframe<SpriteFrameKeyframe>","resourceVersion":"2.0","Stretch":false,},
-            {"$Keyframe<SpriteFrameKeyframe>":"","Channels":{"0":{"$SpriteFrameKeyframe":"","Id":{"name":"dc9d69dd-ff29-4b2b-90de-6875d9d026c7","path":"sprites/spr_Dangerous_Bomb_Crawl/spr_Dangerous_Bomb_Crawl.yy",},"resourceType":"SpriteFrameKeyframe","resourceVersion":"2.0",},},"Disabled":false,"id":"1892729e-b410-4bb9-82aa-701819eda7da","IsCreationKey":false,"Key":5.0,"Length":1.0,"resourceType":"Keyframe<SpriteFrameKeyframe>","resourceVersion":"2.0","Stretch":false,},
+            {"$Keyframe<SpriteFrameKeyframe>":"","Channels":{
+                "0":{"$SpriteFrameKeyframe":"","Id":{"name":"6bd8eb5b-60d2-41d2-9569-13534efd5638","path":"sprites/spr_Dangerous_Bomb_Crawl/spr_Dangerous_Bomb_Crawl.yy",},"resourceType":"SpriteFrameKeyframe","resourceVersion":"2.0",},
+              },"Disabled":false,"id":"e3a1795f-5b03-4044-afc3-b83e0c0a9dd2","IsCreationKey":false,"Key":0.0,"Length":1.0,"resourceType":"Keyframe<SpriteFrameKeyframe>","resourceVersion":"2.0","Stretch":false,},
+            {"$Keyframe<SpriteFrameKeyframe>":"","Channels":{
+                "0":{"$SpriteFrameKeyframe":"","Id":{"name":"7ac9c82b-a478-4bcf-a552-d9420eba9280","path":"sprites/spr_Dangerous_Bomb_Crawl/spr_Dangerous_Bomb_Crawl.yy",},"resourceType":"SpriteFrameKeyframe","resourceVersion":"2.0",},
+              },"Disabled":false,"id":"1a508cb0-fd05-4198-8821-15bf13237a23","IsCreationKey":false,"Key":1.0,"Length":1.0,"resourceType":"Keyframe<SpriteFrameKeyframe>","resourceVersion":"2.0","Stretch":false,},
+            {"$Keyframe<SpriteFrameKeyframe>":"","Channels":{
+                "0":{"$SpriteFrameKeyframe":"","Id":{"name":"1d8ca464-dccb-4bec-8230-975834f40506","path":"sprites/spr_Dangerous_Bomb_Crawl/spr_Dangerous_Bomb_Crawl.yy",},"resourceType":"SpriteFrameKeyframe","resourceVersion":"2.0",},
+              },"Disabled":false,"id":"fce697a4-237c-4f38-9fd7-65f21aacd54f","IsCreationKey":false,"Key":2.0,"Length":1.0,"resourceType":"Keyframe<SpriteFrameKeyframe>","resourceVersion":"2.0","Stretch":false,},
+            {"$Keyframe<SpriteFrameKeyframe>":"","Channels":{
+                "0":{"$SpriteFrameKeyframe":"","Id":{"name":"6c1ee29d-84dc-4faf-9505-7f8d62644bf2","path":"sprites/spr_Dangerous_Bomb_Crawl/spr_Dangerous_Bomb_Crawl.yy",},"resourceType":"SpriteFrameKeyframe","resourceVersion":"2.0",},
+              },"Disabled":false,"id":"127322be-b323-494b-b9f7-33fb8c79fd4d","IsCreationKey":false,"Key":3.0,"Length":1.0,"resourceType":"Keyframe<SpriteFrameKeyframe>","resourceVersion":"2.0","Stretch":false,},
+            {"$Keyframe<SpriteFrameKeyframe>":"","Channels":{
+                "0":{"$SpriteFrameKeyframe":"","Id":{"name":"333872f2-44bc-4aa0-b4fa-aa1a93a2b5a5","path":"sprites/spr_Dangerous_Bomb_Crawl/spr_Dangerous_Bomb_Crawl.yy",},"resourceType":"SpriteFrameKeyframe","resourceVersion":"2.0",},
+              },"Disabled":false,"id":"3035cd88-561b-4d54-908a-2a9bffa38ea0","IsCreationKey":false,"Key":4.0,"Length":1.0,"resourceType":"Keyframe<SpriteFrameKeyframe>","resourceVersion":"2.0","Stretch":false,},
+            {"$Keyframe<SpriteFrameKeyframe>":"","Channels":{
+                "0":{"$SpriteFrameKeyframe":"","Id":{"name":"dc9d69dd-ff29-4b2b-90de-6875d9d026c7","path":"sprites/spr_Dangerous_Bomb_Crawl/spr_Dangerous_Bomb_Crawl.yy",},"resourceType":"SpriteFrameKeyframe","resourceVersion":"2.0",},
+              },"Disabled":false,"id":"1892729e-b410-4bb9-82aa-701819eda7da","IsCreationKey":false,"Key":5.0,"Length":1.0,"resourceType":"Keyframe<SpriteFrameKeyframe>","resourceVersion":"2.0","Stretch":false,},
           ],"resourceType":"KeyframeStore<SpriteFrameKeyframe>","resourceVersion":"2.0",},"modifiers":[],"name":"frames","resourceType":"GMSpriteFramesTrack","resourceVersion":"2.0","spriteId":null,"trackColour":0,"tracks":[],"traits":0,},
     ],
     "visibleRange":null,

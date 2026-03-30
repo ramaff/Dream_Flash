@@ -12,7 +12,7 @@ repeat(recollectionUpgrade + stacks - 1) {
 image_xscale = 0.5;
 image_yscale = 0.5;
 
-var _y_offset = -40;
+var _y_offset = -60;
 
 //Print_DF($"recollectionExtraStats len: {string_length(recollectionExtraStats)}")
 //Print_DF($"recollectionDescription len: {string_length(recollectionDescription)}")

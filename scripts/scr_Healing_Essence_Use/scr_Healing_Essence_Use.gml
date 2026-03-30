@@ -3,7 +3,7 @@ function scr_Healing_Essence_Use(_cw_stats) {
 
 	_cw_stats.Shot_Power = 8;
 
-	shealth += (_cw_stats.Shot_Power + spoweradd) * scr_Soul_Power_Factor_Calc(id) * ((60 + global.soulvitality + global.soulvitalityTemp) / 60);
+	scr_Update_Soul_Health(shealth + ((_cw_stats.Shot_Power + spoweradd) * scr_Soul_Power_Factor_Calc(id)));
 
 	with instance_create(x,y,obj_Weapon_Effect) {
 	    moveUp = 1;

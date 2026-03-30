@@ -1,6 +1,6 @@
 function scr_Heal_Soul(_h_amount) {
 
-	obj_Soul_Parent.shealth += _h_amount /* / global.healthungen */;
+	scr_Update_Soul_Health(obj_Soul_Parent.shealth + _h_amount);
 	global.healthungen += (global.healthungen * _h_amount) / 20;
 	
 	var ichance = 1;

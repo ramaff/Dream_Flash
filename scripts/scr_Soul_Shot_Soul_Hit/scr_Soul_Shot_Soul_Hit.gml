@@ -7,9 +7,10 @@ function scr_Soul_Shot_Soul_Hit(_minion = false){
 			var _amt = other.shot_stats.Shot_Power
 			if _minion {
 				_amt = _amt * 5;
+				shealth += _amt
+			} else {
+				scr_Update_Soul_Health(shealth + _amt);
 			}
-			
-			shealth += _amt;
 
 			scr_setup_dmg_indicator(other.x,other.y, _amt, c_fuchsia)
 			

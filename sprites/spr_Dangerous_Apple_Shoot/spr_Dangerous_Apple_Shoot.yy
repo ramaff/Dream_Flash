@@ -31,7 +31,7 @@
   "origin":9,
   "parent":{
     "name":"Harvester Group",
-    "path":"folders/Sprites/Boss Sprites/Feel Bosses/Harvester Group.yy",
+    "path":"folders/Sprites/Boss Sprites/Feel Bosses/aaa_v1/Harvester Group.yy",
   },
   "preMultiplyAlpha":false,
   "resourceType":"GMSprite",
@@ -73,12 +73,24 @@
     "timeUnits":1,
     "tracks":[
       {"$GMSpriteFramesTrack":"","builtinName":0,"events":[],"inheritsTrackColour":true,"interpolation":1,"isCreationTrack":false,"keyframes":{"$KeyframeStore<SpriteFrameKeyframe>":"","Keyframes":[
-            {"$Keyframe<SpriteFrameKeyframe>":"","Channels":{"0":{"$SpriteFrameKeyframe":"","Id":{"name":"1040c2dc-3f31-4eee-b58d-7f30b0e9bd7d","path":"sprites/spr_Dangerous_Apple_Shoot/spr_Dangerous_Apple_Shoot.yy",},"resourceType":"SpriteFrameKeyframe","resourceVersion":"2.0",},},"Disabled":false,"id":"a5f8e30d-fdba-4fa2-b2b1-24e68a259b78","IsCreationKey":false,"Key":0.0,"Length":1.0,"resourceType":"Keyframe<SpriteFrameKeyframe>","resourceVersion":"2.0","Stretch":false,},
-            {"$Keyframe<SpriteFrameKeyframe>":"","Channels":{"0":{"$SpriteFrameKeyframe":"","Id":{"name":"5748c506-b192-44e8-89d7-92a34914fe2f","path":"sprites/spr_Dangerous_Apple_Shoot/spr_Dangerous_Apple_Shoot.yy",},"resourceType":"SpriteFrameKeyframe","resourceVersion":"2.0",},},"Disabled":false,"id":"88346ac4-1382-4c5c-96dd-3817998bf103","IsCreationKey":false,"Key":1.0,"Length":1.0,"resourceType":"Keyframe<SpriteFrameKeyframe>","resourceVersion":"2.0","Stretch":false,},
-            {"$Keyframe<SpriteFrameKeyframe>":"","Channels":{"0":{"$SpriteFrameKeyframe":"","Id":{"name":"83898e8e-259f-435f-b9f2-9cc56f6b6e80","path":"sprites/spr_Dangerous_Apple_Shoot/spr_Dangerous_Apple_Shoot.yy",},"resourceType":"SpriteFrameKeyframe","resourceVersion":"2.0",},},"Disabled":false,"id":"378438f7-8380-40a4-b4b5-8b4220b7be1e","IsCreationKey":false,"Key":2.0,"Length":1.0,"resourceType":"Keyframe<SpriteFrameKeyframe>","resourceVersion":"2.0","Stretch":false,},
-            {"$Keyframe<SpriteFrameKeyframe>":"","Channels":{"0":{"$SpriteFrameKeyframe":"","Id":{"name":"d757f26d-516a-4e73-84e6-aaa1fb6edd0f","path":"sprites/spr_Dangerous_Apple_Shoot/spr_Dangerous_Apple_Shoot.yy",},"resourceType":"SpriteFrameKeyframe","resourceVersion":"2.0",},},"Disabled":false,"id":"733b3df8-c20a-4846-9c5e-b0cbd20debdc","IsCreationKey":false,"Key":3.0,"Length":1.0,"resourceType":"Keyframe<SpriteFrameKeyframe>","resourceVersion":"2.0","Stretch":false,},
-            {"$Keyframe<SpriteFrameKeyframe>":"","Channels":{"0":{"$SpriteFrameKeyframe":"","Id":{"name":"662574ba-4179-4312-b365-ed1ba8954e8f","path":"sprites/spr_Dangerous_Apple_Shoot/spr_Dangerous_Apple_Shoot.yy",},"resourceType":"SpriteFrameKeyframe","resourceVersion":"2.0",},},"Disabled":false,"id":"e2af9729-c089-45a5-9a0f-d5f9970cb082","IsCreationKey":false,"Key":4.0,"Length":1.0,"resourceType":"Keyframe<SpriteFrameKeyframe>","resourceVersion":"2.0","Stretch":false,},
-            {"$Keyframe<SpriteFrameKeyframe>":"","Channels":{"0":{"$SpriteFrameKeyframe":"","Id":{"name":"4904e103-36a0-41a5-a7a8-65d32b0e2fc1","path":"sprites/spr_Dangerous_Apple_Shoot/spr_Dangerous_Apple_Shoot.yy",},"resourceType":"SpriteFrameKeyframe","resourceVersion":"2.0",},},"Disabled":false,"id":"a78f4579-dbb8-416d-b208-8b3e22e97366","IsCreationKey":false,"Key":5.0,"Length":1.0,"resourceType":"Keyframe<SpriteFrameKeyframe>","resourceVersion":"2.0","Stretch":false,},
+            {"$Keyframe<SpriteFrameKeyframe>":"","Channels":{
+                "0":{"$SpriteFrameKeyframe":"","Id":{"name":"1040c2dc-3f31-4eee-b58d-7f30b0e9bd7d","path":"sprites/spr_Dangerous_Apple_Shoot/spr_Dangerous_Apple_Shoot.yy",},"resourceType":"SpriteFrameKeyframe","resourceVersion":"2.0",},
+              },"Disabled":false,"id":"a5f8e30d-fdba-4fa2-b2b1-24e68a259b78","IsCreationKey":false,"Key":0.0,"Length":1.0,"resourceType":"Keyframe<SpriteFrameKeyframe>","resourceVersion":"2.0","Stretch":false,},
+            {"$Keyframe<SpriteFrameKeyframe>":"","Channels":{
+                "0":{"$SpriteFrameKeyframe":"","Id":{"name":"5748c506-b192-44e8-89d7-92a34914fe2f","path":"sprites/spr_Dangerous_Apple_Shoot/spr_Dangerous_Apple_Shoot.yy",},"resourceType":"SpriteFrameKeyframe","resourceVersion":"2.0",},
+              },"Disabled":false,"id":"88346ac4-1382-4c5c-96dd-3817998bf103","IsCreationKey":false,"Key":1.0,"Length":1.0,"resourceType":"Keyframe<SpriteFrameKeyframe>","resourceVersion":"2.0","Stretch":false,},
+            {"$Keyframe<SpriteFrameKeyframe>":"","Channels":{
+                "0":{"$SpriteFrameKeyframe":"","Id":{"name":"83898e8e-259f-435f-b9f2-9cc56f6b6e80","path":"sprites/spr_Dangerous_Apple_Shoot/spr_Dangerous_Apple_Shoot.yy",},"resourceType":"SpriteFrameKeyframe","resourceVersion":"2.0",},
+              },"Disabled":false,"id":"378438f7-8380-40a4-b4b5-8b4220b7be1e","IsCreationKey":false,"Key":2.0,"Length":1.0,"resourceType":"Keyframe<SpriteFrameKeyframe>","resourceVersion":"2.0","Stretch":false,},
+            {"$Keyframe<SpriteFrameKeyframe>":"","Channels":{
+                "0":{"$SpriteFrameKeyframe":"","Id":{"name":"d757f26d-516a-4e73-84e6-aaa1fb6edd0f","path":"sprites/spr_Dangerous_Apple_Shoot/spr_Dangerous_Apple_Shoot.yy",},"resourceType":"SpriteFrameKeyframe","resourceVersion":"2.0",},
+              },"Disabled":false,"id":"733b3df8-c20a-4846-9c5e-b0cbd20debdc","IsCreationKey":false,"Key":3.0,"Length":1.0,"resourceType":"Keyframe<SpriteFrameKeyframe>","resourceVersion":"2.0","Stretch":false,},
+            {"$Keyframe<SpriteFrameKeyframe>":"","Channels":{
+                "0":{"$SpriteFrameKeyframe":"","Id":{"name":"662574ba-4179-4312-b365-ed1ba8954e8f","path":"sprites/spr_Dangerous_Apple_Shoot/spr_Dangerous_Apple_Shoot.yy",},"resourceType":"SpriteFrameKeyframe","resourceVersion":"2.0",},
+              },"Disabled":false,"id":"e2af9729-c089-45a5-9a0f-d5f9970cb082","IsCreationKey":false,"Key":4.0,"Length":1.0,"resourceType":"Keyframe<SpriteFrameKeyframe>","resourceVersion":"2.0","Stretch":false,},
+            {"$Keyframe<SpriteFrameKeyframe>":"","Channels":{
+                "0":{"$SpriteFrameKeyframe":"","Id":{"name":"4904e103-36a0-41a5-a7a8-65d32b0e2fc1","path":"sprites/spr_Dangerous_Apple_Shoot/spr_Dangerous_Apple_Shoot.yy",},"resourceType":"SpriteFrameKeyframe","resourceVersion":"2.0",},
+              },"Disabled":false,"id":"a78f4579-dbb8-416d-b208-8b3e22e97366","IsCreationKey":false,"Key":5.0,"Length":1.0,"resourceType":"Keyframe<SpriteFrameKeyframe>","resourceVersion":"2.0","Stretch":false,},
           ],"resourceType":"KeyframeStore<SpriteFrameKeyframe>","resourceVersion":"2.0",},"modifiers":[],"name":"frames","resourceType":"GMSpriteFramesTrack","resourceVersion":"2.0","spriteId":null,"trackColour":0,"tracks":[],"traits":0,},
     ],
     "visibleRange":null,

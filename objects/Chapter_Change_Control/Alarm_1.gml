@@ -1,4 +1,4 @@
-scr_H07_Respawn();
+
 repeat(global.V[3]) {
 	scr_V03();
 }

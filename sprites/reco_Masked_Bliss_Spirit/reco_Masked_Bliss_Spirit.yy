@@ -25,8 +25,8 @@
   "nineSlice":null,
   "origin":9,
   "parent":{
-    "name":"v1",
-    "path":"folders/Sprites/Boss Sprites/Reco Bosses/v1.yy",
+    "name":"zzz_v1",
+    "path":"folders/Sprites/Boss Sprites/Reco Bosses/zzz_v1.yy",
   },
   "preMultiplyAlpha":false,
   "resourceType":"GMSprite",

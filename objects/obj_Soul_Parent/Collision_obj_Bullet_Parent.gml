@@ -24,7 +24,7 @@ if soulinvincibility <= 0 and soul_underground <= 0 {
 	}
 	scr_Soul_Hit_Status_Add();
     
-    if global.totalhearts <= 0 {
+    if global.currentheart < 0 {
     if shealth <= 0 {
         instance_destroy();
     }

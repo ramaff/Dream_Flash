@@ -2,7 +2,7 @@
 // You can write your code in this editor
 
 
-alarm[1] = max(1, 15 * speed);
+alarm[1] = max(1, 15 * max(1, speed));
 
 bulls = 4
 

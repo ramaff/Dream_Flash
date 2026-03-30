@@ -1,7 +1,7 @@
 function scr_Save_Run() {
 
 	
-	if global.totalhearts <= 0 {
+	if global.currentheart < 0 {
 		exit;	
 	}
 	
@@ -94,11 +94,6 @@ function scr_Save_Run() {
 
 	for(i = 0; i <= 699; i++) {
 	    ini_write_real("Run", "Weap" + string(i), global.Weap[i]);
-	}
-	for(i = 0; i < 16; i++) {
-	    for(j = 1; j <= 5; j++) {
-	    ini_write_real("Run", "heart" + string(i) + "-" + string(j), Soul_Hearts_Control.heart[i,j]);
-	    }
 	}
 	for(i = 0; i <= 39; i++) {
 	    //for(j = 0; j <= 39; j++) {
@@ -230,6 +225,11 @@ function scr_Save_Run() {
 	
 	ini_write_string("Run", "OA5rooms", string_replace_all(json_stringify(global.OA5rooms), "\"", "'"));
 	ini_write_string("Run", "weapon", string_replace_all(json_stringify(Soul_Weapons_Control.weapon), "\"", "'"));
+	ini_write_string("Run", "heart", string_replace_all(json_stringify(Soul_Hearts_Control.heart), "\"", "'"));
+	
+	//var _heart_stats = Soul_Hearts_Control.current_heart_stats;
+	//ini_write_string("Run", "heart_stats", string_replace_all(json_stringify(_heart_stats), "\"", "'"));
+	
 	ini_write_string("Run", "items", string_replace_all(json_stringify(global.items), "\"", "'"));
 	
 	ini_write_string("Run", "soul_field_queue", string_replace_all(json_stringify(global.soul_field_queue), "\"", "'"));

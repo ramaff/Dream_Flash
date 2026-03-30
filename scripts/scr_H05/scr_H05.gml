@@ -4,7 +4,7 @@
 // Heart Control Step
 
 function scr_H05(){
-	if Soul_Hearts_Control.heart[global.currentheart, 2] = 5 {
+	if global.currenthearttype = 5 {
 		if global.H5timer >= 60 {
 			if obj_Soul_Parent.shealth >= obj_Soul_Parent.smaxhealth {
 				scr_Refresh_Soul(5);

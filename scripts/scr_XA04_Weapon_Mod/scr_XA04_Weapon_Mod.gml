@@ -6,7 +6,7 @@
 function scr_XA04_Weapon_Mod(){
 
 	var accuracyOffset = 0;
-	if global.XA[4] > 0 and Soul_Hearts_Control.heart[global.currentheart, 2] = 53 {
+	if global.XA[4] > 0 and global.currenthearttype = 53 {
 		if sWeaponTicker mod 10 < 5 {
 			accuracyOffset = -60 + ((sWeaponTicker mod 5) * 24);
 		} else {
