@@ -8,7 +8,7 @@ if !instance_exists(minionbossparent) {
 scr_Boss_Step(2);
 
 // If boss is floating in air, can make it bob up and down:
-scr_Boss_Height_Bob(60, 1, 0);
+scr_Boss_Height_Bob(30, 1, 0);
 
 // Make boss shape wobble:
 scr_Boss_Wobble("Horizontal", 0.3, 1, 0);

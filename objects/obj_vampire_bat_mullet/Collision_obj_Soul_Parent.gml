@@ -4,7 +4,7 @@
 if !full {
 	full_source_id = other.id;
 	if other.object_index = obj_Basic_Soul {
-		scr_Update_Soul_Health(shealth - 1)
+		scr_Update_Soul_Health(other.shealth - 1)
 	} else {
 		other.shealth -= 1;
 	}
