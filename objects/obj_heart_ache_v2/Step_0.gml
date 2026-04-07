@@ -11,14 +11,20 @@ scr_Boss_Wobble("Horizontal", 0.4, 1, 0);
 
 if active_attack = 0 {
 	direction = scr_Soul_Point() + 180;
-	speed = lerp(speed, bossmovespeed, 0.1);
+	speed = lerp(speed, bossmovespeed * 2, 0.1);
 } else {
 	direction = scr_Soul_Point() + 180;
-	speed = lerp(speed, bossmovespeed * 0.15, 0.05);	
+	speed = lerp(speed, bossmovespeed * 0.25, 0.05);	
 }
 
-x += 4 - random(8);
-y += 4 - random(8);
+x += 3 - random(6);
+y += 3 - random(6);
+
+var _cent_dir = point_direction(x, y, room_width / 2, room_height / 2)
+var _cent_dist = point_distance(x, y, room_width / 2, room_height / 2) / 200
+
+x += lengthdir_x(_cent_dist, _cent_dir)
+y += lengthdir_y(_cent_dist, _cent_dir)
 
 if active_attack = 2 and active_attack_delay <= 0 and pattern_count > 0 {
 	var _image = false

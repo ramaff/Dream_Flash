@@ -10,10 +10,10 @@ scr_Boss_Height_Bob(30, 1, 0);
 scr_Boss_Wobble("Horizontal", 0.3, 1, 0);
 
 if active_attack = 0 {
-	direction = scr_Soul_Point() + 180;
+	direction = scr_Soul_Point();
 	speed = lerp(speed, bossmovespeed, 0.1);
 } else {
-	direction = scr_Soul_Point() + 180;
+	direction = scr_Soul_Point();
 	speed = lerp(speed, bossmovespeed * 0.15, 0.05);	
 }
 
