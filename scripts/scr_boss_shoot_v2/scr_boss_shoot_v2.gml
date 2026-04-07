@@ -1,12 +1,18 @@
-function scr_shoot_bullets(_attack_stats, _xx, _yy) {
+function scr_shoot_bullets(_attack_stats, _ox, _oy) {
 	var _dir = -(_attack_stats.bullet_spread * (_attack_stats.bullet_count - 1) / 2);
 	var _bull = asset_get_index(_attack_stats.bullet_type);
 	
 	//Print_DF("shooting shots")
 	//Print_DF(_attack_stats.bullet_direction)
 	var _og_bull = noone;
+	var _xx = _ox;
+	var _yy = _oy;
 	
 	repeat(_attack_stats.bullet_count) {
+		if _attack_stats.forward_offset != 0 {
+			_xx = _ox + lengthdir_x(_attack_stats.forward_offset, _attack_stats.bullet_direction + _dir);
+			_yy = _oy + lengthdir_y(_attack_stats.forward_offset, _attack_stats.bullet_direction + _dir);
+		}
 		var _c_bull = noone;
 		with instance_create_depth(_xx, _yy, depth, _bull) {
 			bullet_stats = variable_clone(_attack_stats)

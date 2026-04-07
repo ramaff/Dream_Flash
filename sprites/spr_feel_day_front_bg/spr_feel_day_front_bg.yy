@@ -3,8 +3,8 @@
   "%Name":"spr_feel_day_front_bg",
   "bboxMode":0,
   "bbox_bottom":1599,
-  "bbox_left":24,
-  "bbox_right":2387,
+  "bbox_left":0,
+  "bbox_right":2399,
   "bbox_top":0,
   "collisionKind":1,
   "collisionTolerance":0,
@@ -12,14 +12,14 @@
   "edgeFiltering":false,
   "For3D":false,
   "frames":[
-    {"$GMSpriteFrame":"v1","%Name":"0c1470d2-7d67-43a0-8fd3-2385f69e28f1","name":"0c1470d2-7d67-43a0-8fd3-2385f69e28f1","resourceType":"GMSpriteFrame","resourceVersion":"2.0",},
+    {"$GMSpriteFrame":"v1","%Name":"39744e42-2dbb-4b15-ac7c-a71714cd94d1","name":"39744e42-2dbb-4b15-ac7c-a71714cd94d1","resourceType":"GMSpriteFrame","resourceVersion":"2.0",},
   ],
   "gridX":0,
   "gridY":0,
   "height":1600,
   "HTile":false,
   "layers":[
-    {"$GMImageLayer":"","%Name":"c2605351-1dbe-488c-9f49-f190c00bc30c","blendMode":0,"displayName":"default","isLocked":false,"name":"c2605351-1dbe-488c-9f49-f190c00bc30c","opacity":100.0,"resourceType":"GMImageLayer","resourceVersion":"2.0","visible":true,},
+    {"$GMImageLayer":"","%Name":"17bb4d25-f543-436e-97a7-551378948706","blendMode":0,"displayName":"default","isLocked":false,"name":"17bb4d25-f543-436e-97a7-551378948706","opacity":100.0,"resourceType":"GMImageLayer","resourceVersion":"2.0","visible":true,},
   ],
   "name":"spr_feel_day_front_bg",
   "nineSlice":null,
@@ -69,8 +69,8 @@
     "tracks":[
       {"$GMSpriteFramesTrack":"","builtinName":0,"events":[],"inheritsTrackColour":true,"interpolation":1,"isCreationTrack":false,"keyframes":{"$KeyframeStore<SpriteFrameKeyframe>":"","Keyframes":[
             {"$Keyframe<SpriteFrameKeyframe>":"","Channels":{
-                "0":{"$SpriteFrameKeyframe":"","Id":{"name":"0c1470d2-7d67-43a0-8fd3-2385f69e28f1","path":"sprites/spr_feel_day_front_bg/spr_feel_day_front_bg.yy",},"resourceType":"SpriteFrameKeyframe","resourceVersion":"2.0",},
-              },"Disabled":false,"id":"5ed4f57b-c3c1-4d45-a61f-bf27e3ac0c1f","IsCreationKey":false,"Key":0.0,"Length":1.0,"resourceType":"Keyframe<SpriteFrameKeyframe>","resourceVersion":"2.0","Stretch":false,},
+                "0":{"$SpriteFrameKeyframe":"","Id":{"name":"39744e42-2dbb-4b15-ac7c-a71714cd94d1","path":"sprites/spr_feel_day_front_bg/spr_feel_day_front_bg.yy",},"resourceType":"SpriteFrameKeyframe","resourceVersion":"2.0",},
+              },"Disabled":false,"id":"3f123df5-22dd-45f4-bf72-e522b067fe5f","IsCreationKey":false,"Key":0.0,"Length":1.0,"resourceType":"Keyframe<SpriteFrameKeyframe>","resourceVersion":"2.0","Stretch":false,},
           ],"resourceType":"KeyframeStore<SpriteFrameKeyframe>","resourceVersion":"2.0",},"modifiers":[],"name":"frames","resourceType":"GMSpriteFramesTrack","resourceVersion":"2.0","spriteId":null,"trackColour":0,"tracks":[],"traits":0,},
     ],
     "visibleRange":null,

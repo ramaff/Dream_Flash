@@ -13,6 +13,8 @@ with (obj_bell) {
 direction = other.direction;
 speed = max(1, _dam / 2);
 
+scr_Sound_Effect([snd_Bell_Hit_1, snd_Bell_Hit_2], 1.25 + (sqrt(speed) / 50))
+
 //instance_destroy(other)
 
 scr_Disk_Effect(30, sqrt(speed) / 4, c_orange)

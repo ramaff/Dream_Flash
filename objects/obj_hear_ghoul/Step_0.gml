@@ -57,6 +57,8 @@ if active_attack_delay <= 0 and active_attack_cooldown <= 0 and active_attack_du
 
 scr_default_attack_settings_v2();
 
+attack_stats.forward_offset = 50;
+
 // If its time to attack, attack
 if active_attack_delay <= 0 and pattern_cooldown <= 0 and pattern_count > 0 {
    
@@ -86,13 +88,17 @@ if active_attack_delay <= 0 and pattern_cooldown <= 0 and pattern_count > 0 {
         direction = dash_direction;
 		dash_direction = scr_Angle_Converge(dash_direction, scr_Soul_Point() + scr_Wave(-60, 60, 1, 0), 5)
 		
+		if pattern_count mod 10 = 0 {
+			scr_After_Image(30, false, true)	
+		}
+		
 		if pattern_count < 150 {
 			speed = dash_speed * 0.25;
 			if image_index > 5.9 {
 				image_index = 4	
 			}
 		} else {
-			image_index = 2;	
+			image_index = 2;
 		}
 		
 		if pattern_count mod 3 = 0 and pattern_count < 140 {
