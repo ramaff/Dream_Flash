@@ -1,21 +1,21 @@
 {
   "$GMObject":"",
-  "%Name":"obj_heart_ache_v2",
+  "%Name":"obj_heart_attacker",
   "eventList":[
     {"$GMEvent":"v1","%Name":"","collisionObjectId":null,"eventNum":0,"eventType":0,"isDnD":false,"name":"","resourceType":"GMEvent","resourceVersion":"2.0",},
     {"$GMEvent":"v1","%Name":"","collisionObjectId":null,"eventNum":0,"eventType":3,"isDnD":false,"name":"","resourceType":"GMEvent","resourceVersion":"2.0",},
     {"$GMEvent":"v1","%Name":"","collisionObjectId":null,"eventNum":0,"eventType":8,"isDnD":false,"name":"","resourceType":"GMEvent","resourceVersion":"2.0",},
   ],
   "managed":true,
-  "name":"obj_heart_ache_v2",
+  "name":"obj_heart_attacker",
   "overriddenProperties":[],
   "parent":{
-    "name":"Feel Bosses",
-    "path":"folders/Objects/Bosses/Feel Bosses.yy",
+    "name":"Feel Minions",
+    "path":"folders/Objects/Bosses/Minions/Feel Minions.yy",
   },
   "parentObjectId":{
-    "name":"obj_Main_Boss_Parent",
-    "path":"objects/obj_Main_Boss_Parent/obj_Main_Boss_Parent.yy",
+    "name":"obj_Minion_Parent",
+    "path":"objects/obj_Minion_Parent/obj_Minion_Parent.yy",
   },
   "persistent":false,
   "physicsAngularDamping":0.1,
@@ -35,8 +35,8 @@
   "resourceVersion":"2.0",
   "solid":false,
   "spriteId":{
-    "name":"spr_heart_ache_v2",
-    "path":"sprites/spr_heart_ache_v2/spr_heart_ache_v2.yy",
+    "name":"spr_heart_attacker_v2",
+    "path":"sprites/spr_heart_attacker_v2/spr_heart_attacker_v2.yy",
   },
   "spriteMaskId":null,
   "visible":false,
