@@ -35,7 +35,7 @@ if active_attack = 2 and active_attack_delay <= 0 and pattern_count > 0 {
 		bullet_stats.bullet_speed += 0.1;
 		speed += 0.1;
 		if _image {
-			scr_After_Image(30, false, true, c_white, sprite_index)	
+			scr_After_Image(20, false, true, c_white, sprite_index)	
 		}
 	}
 }
@@ -49,6 +49,10 @@ if active_attack_delay <= 0 and active_attack_cooldown <= 0 and active_attack_du
 	// Pick a random attack to do
 	active_attack = choose(1, 2, 2, 3);
 	
+	if scr_Minion_Count() {
+		active_attack = choose(1, 2, 2);
+	}
+	
 	if instance_number(obj_bullet_parent_v2) < 20 {
 		if active_attack = 2 {
 			active_attack = 1;	
@@ -57,7 +61,7 @@ if active_attack_delay <= 0 and active_attack_cooldown <= 0 and active_attack_du
 	
     if active_attack = 1 {
 		// Setup how many attacks per boss move, delay, etc
-		scr_Boss_Attack_Time_Setup_v2(3, 50, 60, 120, 30, 10);
+		scr_Boss_Attack_Time_Setup_v2(3, 50, 60, 90, 30, 10);
 		
 		// Can set up the initial pattern direction
 		// patternDirection = scr_Soul_Point();
@@ -73,7 +77,7 @@ if active_attack_delay <= 0 and active_attack_cooldown <= 0 and active_attack_du
 	// Minion Spawn Example
 	if active_attack = 3 {
 		// Setup how many attacks per boss move, delay, etc
-		scr_Boss_Attack_Time_Setup_v2(1, 50, 1, 120, 30, 10);
+		scr_Boss_Attack_Time_Setup_v2(1, 50, 1, 150, 30, 10);
 		
 		// Can set up the initial pattern direction
 		// patternDirection = scr_Soul_Point();
@@ -117,8 +121,9 @@ if active_attack_delay <= 0 and pattern_cooldown <= 0 and pattern_count > 0 {
 	
 	if active_attack = 2 {	
 		
-		if pattern_count = floor(pattern_count_max) {
-			attack_stats.bullet_direction = scr_Boss_Bullet_Direction_Formula(scr_Soul_Point(), 90)
+		if pattern_count = floor(pattern_count_max) || pattern_count = floor(pattern_count_max / 2) {
+			scr_Boss_Stretch("Vertical", 1);
+			attack_stats.bullet_direction = scr_Boss_Bullet_Direction_Formula(scr_Soul_Point(), 180)
 			attack_stats.bullet_count = 6;
 			attack_stats.bullet_spread = 60;
 		
@@ -132,6 +137,8 @@ if active_attack_delay <= 0 and pattern_cooldown <= 0 and pattern_count > 0 {
 	}
 	
 	if active_attack = 3 {
+		
+		scr_Boss_Stretch("Vertical", 1);
 	
 		minion_count = 3;
 		minion_type = obj_heart_attacker;
@@ -163,14 +170,14 @@ scr_Boss_Size_Lerp(0.15);
 
 // Handles boss attack sprite animation
 if active_attack = 2 {
-	var _hold_frame = 1;
-	scr_Boss_Attack_Sprite_v2(spr_heart_ache_v2_ache, _hold_frame, 2, 2, 10);
+	var _hold_frame = 2;
+	scr_Boss_Attack_Sprite_v2(spr_heart_ache_v2_ache, _hold_frame, 3, 3, 20);
 	if image_index = _hold_frame {
 		scr_Boss_Wobble("Horizontal", 2, 0.4, 0)	
 	}
 } else if active_attack != 0 {
-	var _hold_frame = 1;
-	scr_Boss_Attack_Sprite_v2(spr_heart_ache_v2_mitosis, _hold_frame, 2, 2, 10);
+	var _hold_frame = 2;
+	scr_Boss_Attack_Sprite_v2(spr_heart_ache_v2_mitosis, _hold_frame, 3, 3, 20);
 	if image_index = _hold_frame {
 		scr_Boss_Wobble("Horizontal", 2, 0.4, 0)	
 	}

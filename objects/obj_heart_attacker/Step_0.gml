@@ -58,7 +58,7 @@ attack_stats.bullet_type = "obj_speed_up_down_bullet_v2";
 if active_attack_delay <= 0 and pattern_cooldown <= 0 and pattern_count > 0 {
    
     if active_attack = 1 {
-	
+		scr_Boss_Stretch("Vertical", 1);
 		// If you gotta change the pattern aim direction
 	    // bossPatternDirection += 0;
 		attack_stats.bullet_direction = scr_Boss_Bullet_Direction_Formula(scr_Soul_Point(), 120)

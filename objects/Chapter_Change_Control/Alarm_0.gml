@@ -1,3 +1,10 @@
+if !instance_exists(obj_Soul_Parent) {
+	exit;	
+}
+if global.totalhearts <= 0 {
+	exit;	
+}
+
 global.currentroom = 0;
 global.currentchapter += 1;
 
