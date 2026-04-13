@@ -31,7 +31,7 @@
   "origin":4,
   "parent":{
     "name":"Explosive Shots",
-    "path":"folders/Sprites/Boss Bullet Sprites/Explosive Shots.yy",
+    "path":"folders/Sprites/Boss Bullet Sprites/v1/Explosive Shots.yy",
   },
   "preMultiplyAlpha":false,
   "resourceType":"GMSprite",
@@ -73,12 +73,24 @@
     "timeUnits":1,
     "tracks":[
       {"$GMSpriteFramesTrack":"","builtinName":0,"events":[],"inheritsTrackColour":true,"interpolation":1,"isCreationTrack":false,"keyframes":{"$KeyframeStore<SpriteFrameKeyframe>":"","Keyframes":[
-            {"$Keyframe<SpriteFrameKeyframe>":"","Channels":{"0":{"$SpriteFrameKeyframe":"","Id":{"name":"3d7cb238-5598-4638-b52f-edda4af70168","path":"sprites/spr_Glowy_Green_Explosive_Shot/spr_Glowy_Green_Explosive_Shot.yy",},"resourceType":"SpriteFrameKeyframe","resourceVersion":"2.0",},},"Disabled":false,"id":"c53a1305-9a21-4f82-8aee-42eccd741510","IsCreationKey":false,"Key":0.0,"Length":1.0,"resourceType":"Keyframe<SpriteFrameKeyframe>","resourceVersion":"2.0","Stretch":false,},
-            {"$Keyframe<SpriteFrameKeyframe>":"","Channels":{"0":{"$SpriteFrameKeyframe":"","Id":{"name":"88cabe91-f4dc-405b-a5e6-e923ded2770b","path":"sprites/spr_Glowy_Green_Explosive_Shot/spr_Glowy_Green_Explosive_Shot.yy",},"resourceType":"SpriteFrameKeyframe","resourceVersion":"2.0",},},"Disabled":false,"id":"eb97d547-bad9-4407-a74c-038bcd868ba3","IsCreationKey":false,"Key":1.0,"Length":1.0,"resourceType":"Keyframe<SpriteFrameKeyframe>","resourceVersion":"2.0","Stretch":false,},
-            {"$Keyframe<SpriteFrameKeyframe>":"","Channels":{"0":{"$SpriteFrameKeyframe":"","Id":{"name":"d7f80a3d-42f6-408a-9372-c4385cfb4032","path":"sprites/spr_Glowy_Green_Explosive_Shot/spr_Glowy_Green_Explosive_Shot.yy",},"resourceType":"SpriteFrameKeyframe","resourceVersion":"2.0",},},"Disabled":false,"id":"ffdb082d-72e6-44ea-ae78-5a38e63dc1af","IsCreationKey":false,"Key":2.0,"Length":1.0,"resourceType":"Keyframe<SpriteFrameKeyframe>","resourceVersion":"2.0","Stretch":false,},
-            {"$Keyframe<SpriteFrameKeyframe>":"","Channels":{"0":{"$SpriteFrameKeyframe":"","Id":{"name":"1f824461-1042-45c3-9ea5-277407ee43af","path":"sprites/spr_Glowy_Green_Explosive_Shot/spr_Glowy_Green_Explosive_Shot.yy",},"resourceType":"SpriteFrameKeyframe","resourceVersion":"2.0",},},"Disabled":false,"id":"435fb801-2211-4aa4-bcde-49b7718bce0e","IsCreationKey":false,"Key":3.0,"Length":1.0,"resourceType":"Keyframe<SpriteFrameKeyframe>","resourceVersion":"2.0","Stretch":false,},
-            {"$Keyframe<SpriteFrameKeyframe>":"","Channels":{"0":{"$SpriteFrameKeyframe":"","Id":{"name":"078a1a2b-4825-4906-adda-d50a924f878d","path":"sprites/spr_Glowy_Green_Explosive_Shot/spr_Glowy_Green_Explosive_Shot.yy",},"resourceType":"SpriteFrameKeyframe","resourceVersion":"2.0",},},"Disabled":false,"id":"0f8013a9-bec7-47f7-90c6-ec2406304731","IsCreationKey":false,"Key":4.0,"Length":1.0,"resourceType":"Keyframe<SpriteFrameKeyframe>","resourceVersion":"2.0","Stretch":false,},
-            {"$Keyframe<SpriteFrameKeyframe>":"","Channels":{"0":{"$SpriteFrameKeyframe":"","Id":{"name":"b7a81c5f-dbce-454c-9a7e-a9f3a3b8570c","path":"sprites/spr_Glowy_Green_Explosive_Shot/spr_Glowy_Green_Explosive_Shot.yy",},"resourceType":"SpriteFrameKeyframe","resourceVersion":"2.0",},},"Disabled":false,"id":"5adc6e9e-b901-40f6-b80a-72b2b5d8d7cf","IsCreationKey":false,"Key":5.0,"Length":1.0,"resourceType":"Keyframe<SpriteFrameKeyframe>","resourceVersion":"2.0","Stretch":false,},
+            {"$Keyframe<SpriteFrameKeyframe>":"","Channels":{
+                "0":{"$SpriteFrameKeyframe":"","Id":{"name":"3d7cb238-5598-4638-b52f-edda4af70168","path":"sprites/spr_Glowy_Green_Explosive_Shot/spr_Glowy_Green_Explosive_Shot.yy",},"resourceType":"SpriteFrameKeyframe","resourceVersion":"2.0",},
+              },"Disabled":false,"id":"c53a1305-9a21-4f82-8aee-42eccd741510","IsCreationKey":false,"Key":0.0,"Length":1.0,"resourceType":"Keyframe<SpriteFrameKeyframe>","resourceVersion":"2.0","Stretch":false,},
+            {"$Keyframe<SpriteFrameKeyframe>":"","Channels":{
+                "0":{"$SpriteFrameKeyframe":"","Id":{"name":"88cabe91-f4dc-405b-a5e6-e923ded2770b","path":"sprites/spr_Glowy_Green_Explosive_Shot/spr_Glowy_Green_Explosive_Shot.yy",},"resourceType":"SpriteFrameKeyframe","resourceVersion":"2.0",},
+              },"Disabled":false,"id":"eb97d547-bad9-4407-a74c-038bcd868ba3","IsCreationKey":false,"Key":1.0,"Length":1.0,"resourceType":"Keyframe<SpriteFrameKeyframe>","resourceVersion":"2.0","Stretch":false,},
+            {"$Keyframe<SpriteFrameKeyframe>":"","Channels":{
+                "0":{"$SpriteFrameKeyframe":"","Id":{"name":"d7f80a3d-42f6-408a-9372-c4385cfb4032","path":"sprites/spr_Glowy_Green_Explosive_Shot/spr_Glowy_Green_Explosive_Shot.yy",},"resourceType":"SpriteFrameKeyframe","resourceVersion":"2.0",},
+              },"Disabled":false,"id":"ffdb082d-72e6-44ea-ae78-5a38e63dc1af","IsCreationKey":false,"Key":2.0,"Length":1.0,"resourceType":"Keyframe<SpriteFrameKeyframe>","resourceVersion":"2.0","Stretch":false,},
+            {"$Keyframe<SpriteFrameKeyframe>":"","Channels":{
+                "0":{"$SpriteFrameKeyframe":"","Id":{"name":"1f824461-1042-45c3-9ea5-277407ee43af","path":"sprites/spr_Glowy_Green_Explosive_Shot/spr_Glowy_Green_Explosive_Shot.yy",},"resourceType":"SpriteFrameKeyframe","resourceVersion":"2.0",},
+              },"Disabled":false,"id":"435fb801-2211-4aa4-bcde-49b7718bce0e","IsCreationKey":false,"Key":3.0,"Length":1.0,"resourceType":"Keyframe<SpriteFrameKeyframe>","resourceVersion":"2.0","Stretch":false,},
+            {"$Keyframe<SpriteFrameKeyframe>":"","Channels":{
+                "0":{"$SpriteFrameKeyframe":"","Id":{"name":"078a1a2b-4825-4906-adda-d50a924f878d","path":"sprites/spr_Glowy_Green_Explosive_Shot/spr_Glowy_Green_Explosive_Shot.yy",},"resourceType":"SpriteFrameKeyframe","resourceVersion":"2.0",},
+              },"Disabled":false,"id":"0f8013a9-bec7-47f7-90c6-ec2406304731","IsCreationKey":false,"Key":4.0,"Length":1.0,"resourceType":"Keyframe<SpriteFrameKeyframe>","resourceVersion":"2.0","Stretch":false,},
+            {"$Keyframe<SpriteFrameKeyframe>":"","Channels":{
+                "0":{"$SpriteFrameKeyframe":"","Id":{"name":"b7a81c5f-dbce-454c-9a7e-a9f3a3b8570c","path":"sprites/spr_Glowy_Green_Explosive_Shot/spr_Glowy_Green_Explosive_Shot.yy",},"resourceType":"SpriteFrameKeyframe","resourceVersion":"2.0",},
+              },"Disabled":false,"id":"5adc6e9e-b901-40f6-b80a-72b2b5d8d7cf","IsCreationKey":false,"Key":5.0,"Length":1.0,"resourceType":"Keyframe<SpriteFrameKeyframe>","resourceVersion":"2.0","Stretch":false,},
           ],"resourceType":"KeyframeStore<SpriteFrameKeyframe>","resourceVersion":"2.0",},"modifiers":[],"name":"frames","resourceType":"GMSpriteFramesTrack","resourceVersion":"2.0","spriteId":null,"trackColour":0,"tracks":[],"traits":0,},
     ],
     "visibleRange":null,

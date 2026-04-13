@@ -27,7 +27,7 @@
   "origin":4,
   "parent":{
     "name":"Gas",
-    "path":"folders/Sprites/Boss Bullet Sprites/Gas.yy",
+    "path":"folders/Sprites/Boss Bullet Sprites/v1/Gas.yy",
   },
   "preMultiplyAlpha":false,
   "resourceType":"GMSprite",

@@ -55,7 +55,7 @@ if active_attack_delay <= 0 and active_attack_cooldown <= 0 and active_attack_du
 
 scr_default_attack_settings_v2();
 
-attack_stats.bullet_sprite = "spr_red_bullet_v2"
+attack_stats.bullet_sprite = "spr_pointy_red_bullet_v2"
 attack_stats.bullet_type = "obj_accel_bullet_v2"
 attack_stats.bullet_acceleration = 0.035 * bossbulletspeed;
 

@@ -93,13 +93,18 @@ scr_default_attack_settings_v2();
 
 attack_stats.bullet_speed = bossbulletspeed * (0.4 + random(0.15))
 attack_stats.bullet_life_span = 420;
-attack_stats.bullet_type = "obj_speed_up_down_bullet_v2";
+attack_stats.bullet_type = "obj_heart_beat_bullet_v2";
+attack_stats.bullet_sprite = "spr_bloody_bullet_v2"
 
 // If its time to attack, attack
 if active_attack_delay <= 0 and pattern_cooldown <= 0 and pattern_count > 0 {
    
     if active_attack = 1 {
 		scr_Boss_Stretch("Vertical", 1);
+		
+		if pattern_count mod 2 = 1 {
+			attack_stats.bullet_type = "obj_heart_beat_bullet_v2_alt";	
+		}
 		
 		attack_stats.bullet_direction = scr_Boss_Bullet_Direction_Formula(scr_Soul_Point(), 120)
 		attack_stats.bullet_count = 3;
@@ -126,6 +131,10 @@ if active_attack_delay <= 0 and pattern_cooldown <= 0 and pattern_count > 0 {
 			attack_stats.bullet_direction = scr_Boss_Bullet_Direction_Formula(scr_Soul_Point(), 180)
 			attack_stats.bullet_count = 6;
 			attack_stats.bullet_spread = 60;
+			
+			if pattern_count = floor(pattern_count_max / 2) {
+				attack_stats.bullet_type = "obj_heart_beat_bullet_v2_alt";	
+			}
 		
 			scr_boss_shoot_v2();
 		

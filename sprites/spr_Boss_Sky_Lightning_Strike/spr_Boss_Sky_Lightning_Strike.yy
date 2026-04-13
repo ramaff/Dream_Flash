@@ -29,7 +29,7 @@
   "origin":9,
   "parent":{
     "name":"Lightning",
-    "path":"folders/Sprites/Boss Bullet Sprites/Lightning.yy",
+    "path":"folders/Sprites/Boss Bullet Sprites/v1/Lightning.yy",
   },
   "preMultiplyAlpha":false,
   "resourceType":"GMSprite",
@@ -71,10 +71,18 @@
     "timeUnits":1,
     "tracks":[
       {"$GMSpriteFramesTrack":"","builtinName":0,"events":[],"inheritsTrackColour":true,"interpolation":1,"isCreationTrack":false,"keyframes":{"$KeyframeStore<SpriteFrameKeyframe>":"","Keyframes":[
-            {"$Keyframe<SpriteFrameKeyframe>":"","Channels":{"0":{"$SpriteFrameKeyframe":"","Id":{"name":"03794b5b-419a-40a5-93c3-4dc51bb1bf0d","path":"sprites/spr_Boss_Sky_Lightning_Strike/spr_Boss_Sky_Lightning_Strike.yy",},"resourceType":"SpriteFrameKeyframe","resourceVersion":"2.0",},},"Disabled":false,"id":"fd30ee46-4745-4ba8-9448-36377bcf71f3","IsCreationKey":false,"Key":0.0,"Length":1.0,"resourceType":"Keyframe<SpriteFrameKeyframe>","resourceVersion":"2.0","Stretch":false,},
-            {"$Keyframe<SpriteFrameKeyframe>":"","Channels":{"0":{"$SpriteFrameKeyframe":"","Id":{"name":"6d790f35-5558-45bf-bb3d-28b12912508a","path":"sprites/spr_Boss_Sky_Lightning_Strike/spr_Boss_Sky_Lightning_Strike.yy",},"resourceType":"SpriteFrameKeyframe","resourceVersion":"2.0",},},"Disabled":false,"id":"1b496e0f-645a-419c-a4fa-07a7ff974d1e","IsCreationKey":false,"Key":1.0,"Length":1.0,"resourceType":"Keyframe<SpriteFrameKeyframe>","resourceVersion":"2.0","Stretch":false,},
-            {"$Keyframe<SpriteFrameKeyframe>":"","Channels":{"0":{"$SpriteFrameKeyframe":"","Id":{"name":"11e87b6d-d142-493f-a43c-c6b3c6b9920e","path":"sprites/spr_Boss_Sky_Lightning_Strike/spr_Boss_Sky_Lightning_Strike.yy",},"resourceType":"SpriteFrameKeyframe","resourceVersion":"2.0",},},"Disabled":false,"id":"b084a197-da70-4836-9cc2-02a3373ecc67","IsCreationKey":false,"Key":2.0,"Length":1.0,"resourceType":"Keyframe<SpriteFrameKeyframe>","resourceVersion":"2.0","Stretch":false,},
-            {"$Keyframe<SpriteFrameKeyframe>":"","Channels":{"0":{"$SpriteFrameKeyframe":"","Id":{"name":"c6b98013-a48b-4953-ba32-d4f9f5bb0902","path":"sprites/spr_Boss_Sky_Lightning_Strike/spr_Boss_Sky_Lightning_Strike.yy",},"resourceType":"SpriteFrameKeyframe","resourceVersion":"2.0",},},"Disabled":false,"id":"f6b10699-c03f-4ba5-899f-fc8c9440561f","IsCreationKey":false,"Key":3.0,"Length":1.0,"resourceType":"Keyframe<SpriteFrameKeyframe>","resourceVersion":"2.0","Stretch":false,},
+            {"$Keyframe<SpriteFrameKeyframe>":"","Channels":{
+                "0":{"$SpriteFrameKeyframe":"","Id":{"name":"03794b5b-419a-40a5-93c3-4dc51bb1bf0d","path":"sprites/spr_Boss_Sky_Lightning_Strike/spr_Boss_Sky_Lightning_Strike.yy",},"resourceType":"SpriteFrameKeyframe","resourceVersion":"2.0",},
+              },"Disabled":false,"id":"fd30ee46-4745-4ba8-9448-36377bcf71f3","IsCreationKey":false,"Key":0.0,"Length":1.0,"resourceType":"Keyframe<SpriteFrameKeyframe>","resourceVersion":"2.0","Stretch":false,},
+            {"$Keyframe<SpriteFrameKeyframe>":"","Channels":{
+                "0":{"$SpriteFrameKeyframe":"","Id":{"name":"6d790f35-5558-45bf-bb3d-28b12912508a","path":"sprites/spr_Boss_Sky_Lightning_Strike/spr_Boss_Sky_Lightning_Strike.yy",},"resourceType":"SpriteFrameKeyframe","resourceVersion":"2.0",},
+              },"Disabled":false,"id":"1b496e0f-645a-419c-a4fa-07a7ff974d1e","IsCreationKey":false,"Key":1.0,"Length":1.0,"resourceType":"Keyframe<SpriteFrameKeyframe>","resourceVersion":"2.0","Stretch":false,},
+            {"$Keyframe<SpriteFrameKeyframe>":"","Channels":{
+                "0":{"$SpriteFrameKeyframe":"","Id":{"name":"11e87b6d-d142-493f-a43c-c6b3c6b9920e","path":"sprites/spr_Boss_Sky_Lightning_Strike/spr_Boss_Sky_Lightning_Strike.yy",},"resourceType":"SpriteFrameKeyframe","resourceVersion":"2.0",},
+              },"Disabled":false,"id":"b084a197-da70-4836-9cc2-02a3373ecc67","IsCreationKey":false,"Key":2.0,"Length":1.0,"resourceType":"Keyframe<SpriteFrameKeyframe>","resourceVersion":"2.0","Stretch":false,},
+            {"$Keyframe<SpriteFrameKeyframe>":"","Channels":{
+                "0":{"$SpriteFrameKeyframe":"","Id":{"name":"c6b98013-a48b-4953-ba32-d4f9f5bb0902","path":"sprites/spr_Boss_Sky_Lightning_Strike/spr_Boss_Sky_Lightning_Strike.yy",},"resourceType":"SpriteFrameKeyframe","resourceVersion":"2.0",},
+              },"Disabled":false,"id":"f6b10699-c03f-4ba5-899f-fc8c9440561f","IsCreationKey":false,"Key":3.0,"Length":1.0,"resourceType":"Keyframe<SpriteFrameKeyframe>","resourceVersion":"2.0","Stretch":false,},
           ],"resourceType":"KeyframeStore<SpriteFrameKeyframe>","resourceVersion":"2.0",},"modifiers":[],"name":"frames","resourceType":"GMSpriteFramesTrack","resourceVersion":"2.0","spriteId":null,"trackColour":0,"tracks":[],"traits":0,},
     ],
     "visibleRange":null,
