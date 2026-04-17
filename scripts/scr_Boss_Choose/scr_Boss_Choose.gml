@@ -36,8 +36,8 @@ function scr_Boss_Choose(roomNum, exclude, difficultyAdd = 0) {
 		
 	}
 	if global.currentchapter = 2 {
-	    _base_pool = [2,3,6,10,14,17,23,26,27,32,34,35,36,38,45,48,64];
-		_mini_boss_pool = [66, 67, 68, 69, 70]
+	    _base_pool = [2,3,6,10,14,17,26,27,32,34,36,38,45,48,64];
+		_mini_boss_pool = [23, 35, 66, 67, 68, 69, 70]
 		_mini_chance = 3.5
 		
 	}
@@ -262,9 +262,9 @@ function scr_Boss_Choose(roomNum, exclude, difficultyAdd = 0) {
 
 	if bossform = 23.1 // Heart Ache
 	{
-	    bosstype = obj_Heart_Ache;
-	    difficulty = 5;
-	    global.champ = 0 + irandom(0);
+	    bosstype = obj_heart_ache_v2;
+	    difficulty = 3.5;
+	    //global.champ = 0 + irandom(0);
 		//global.champ = 0;
 	}
 
@@ -357,9 +357,9 @@ function scr_Boss_Choose(roomNum, exclude, difficultyAdd = 0) {
 	}
 	if bossform = 35.1 // Peering Spectre
 	{
-	    bosstype = obj_Peering_Spectre;
-	    difficulty = 4;
-	    global.champ = choose(0,1);
+	    bosstype = obj_grim_apparition_v2;
+	    difficulty = 3.5;
+	    //global.champ = choose(0,1);
 	}
 	if bossform = 36.1 // Dream Invader
 	{

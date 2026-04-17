@@ -683,11 +683,11 @@
         "Boss 023": {
             "Name": "Heart Ache",
             "Recollection_Sprite": "reco_Heart_Ache",
-            "Health_Phase_1": 390,
-            "Health_Phase_2": 300,
+            "Health_Phase_1": 690,
+            "Health_Phase": 0,
             "Defense_Phase_1": 0,
             "Defense_Phase_2": 0,
-            "Boss_Danger": 5,
+            "Boss_Danger": 4,
             "Bullet_Speed": 2.8,
             "Move_Speed": 1.4,
             "recollectionDescription": "This heart aches in pain and horror. Splits into smaller versions of itself."
@@ -1004,11 +1004,11 @@
         "Boss 035": {
             "Name": "Grim Apparition",
             "Recollection_Sprite": "reco_Grim_Apparition",
-            "Health_Phase_1": 330,
-            "Health_Phase_2": 250,
+            "Health_Phase_1": 580,
+            "Health_Phase_2": 0,
             "Defense_Phase_1": 0,
             "Defense_Phase_2": 2,
-            "Boss_Danger": 4,
+            "Boss_Danger": 3.5,
             "Bullet_Speed": 3.3,
             "Move_Speed": 3.9,
             "recollectionDescription": "Instills you with a grim feeling. Malicous apparition that channels bursts of dark energy.",
@@ -1548,11 +1548,11 @@
         "Boss 066": {
             "Name": "The Ghoul of Touch",
             "Recollection_Sprite": "reco_touch_ghoul",
-            "Health_Phase_1": 450,
+            "Health_Phase_1": 530,
             "Health_Phase_2": 0,
             "Defense_Phase_1": 0,
             "Defense_Phase_2": 0,
-            "Boss_Danger": 3,
+            "Boss_Danger": 4,
             "Bullet_Speed": 3,
             "Move_Speed": 1.6,
             "recollectionDescription": "Many hands"
@@ -1560,11 +1560,11 @@
         "Boss 067": {
             "Name": "The Ghoul of Smell",
             "Recollection_Sprite": "reco_smell_ghoul",
-            "Health_Phase_1": 540,
+            "Health_Phase_1": 610,
             "Health_Phase_2": 0,
             "Defense_Phase_1": 0,
             "Defense_Phase_2": 0,
-            "Boss_Danger": 3,
+            "Boss_Danger": 4,
             "Bullet_Speed": 3,
             "Move_Speed": 3,
             "recollectionDescription": "Nosey"
@@ -1572,11 +1572,11 @@
         "Boss 068": {
             "Name": "The Ghoul of Taste",
             "Recollection_Sprite": "reco_taste_ghoul",
-            "Health_Phase_1": 630,
+            "Health_Phase_1": 780,
             "Health_Phase_2": 0,
             "Defense_Phase_1": 0,
             "Defense_Phase_2": 0,
-            "Boss_Danger": 3,
+            "Boss_Danger": 4,
             "Bullet_Speed": 3,
             "Move_Speed": 3,
             "recollectionDescription": "Consumes anything in front of it."
@@ -1584,11 +1584,11 @@
         "Boss 069": {
             "Name": "The Ghoul of Hearing",
             "Recollection_Sprite": "reco_hear_ghoul",
-            "Health_Phase_1": 530,
+            "Health_Phase_1": 650,
             "Health_Phase_2": 0,
             "Defense_Phase_1": 0,
             "Defense_Phase_2": 0,
-            "Boss_Danger": 3,
+            "Boss_Danger": 4,
             "Bullet_Speed": 3,
             "Move_Speed": 3,
             "recollectionDescription": "Has a strong negative reaction to loud noises."
@@ -1596,11 +1596,11 @@
         "Boss 070": {
             "Name": "The Ghoul of Sight",
             "Recollection_Sprite": "reco_sight_ghoul",
-            "Health_Phase_1": 430,
+            "Health_Phase_1": 530,
             "Health_Phase_2": 0,
             "Defense_Phase_1": 0,
             "Defense_Phase_2": 0,
-            "Boss_Danger": 3,
+            "Boss_Danger": 4,
             "Bullet_Speed": 3,
             "Move_Speed": 3,
             "recollectionDescription": "Stays out of sight."

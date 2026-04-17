@@ -8,7 +8,7 @@ var fac = (1 / tote_bosses) * potency
 
 if instance_exists(Floor_Layout_Control) and global.layerdeep < 1 {
 	var rsize = global.floor[global.currentroom, 3];
-	var ideal_zoom = power((1024 / rsize), 0.333);
+	var ideal_zoom = power((1024 / rsize), 0.25);
 	if ideal_zoom < 0.8 {
 		ideal_zoom = 0.8;
 	}
@@ -24,7 +24,7 @@ if instance_exists(Floor_Layout_Control) and global.layerdeep < 1 {
 			}
 			
 		}
-		ideal_zoom = power((1024 / (rsize + extra_zoom)), 0.333);
+		ideal_zoom = power((1024 / (rsize + extra_zoom)), 0.25);
 	}
 	
 	if instance_exists(obj_Class_Level_Up_Indicator) and global.level_up_camera_lock = 1 {

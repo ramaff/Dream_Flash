@@ -30,13 +30,13 @@ with instance_create(xx,yy, obj_Social_Anxiety_Spirit) {
 	
 	evil = 0
 	good = 0
-	if scr_Chance(18 / (1 + global.XB[6])) {
+	if scr_Chance(20 / (1 + global.XB[6])) {
 		evil = 1;
 		sprite_index = spr_Paranoia_Crowd_Spirit_Eye;
-		if scr_Chance(3) {
+		/*if scr_Chance(3) {
 			good = 1;
 			evil = 0;
-		}
+		} */
 	}
 	
 	if instance_number(obj_Social_Anxiety_Spirit) < 8 {
