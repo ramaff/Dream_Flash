@@ -19,7 +19,7 @@ if !InputMouseMoved() {
 			var _cx = obj_Soul_Parent.x;
 			var _cy = obj_Soul_Parent.y;
 		
-			var _gyro_dist = distance_per_step * 500;
+			var _gyro_dist = distance_per_step * 800;
 			var _gyro_ang = point_direction(0, 0, dx, dy);
 		
 			var _tx = _cx + lengthdir_x(_gyro_dist, _gyro_ang)
@@ -30,16 +30,16 @@ if !InputMouseMoved() {
 			x = lerp(x, _tx, _lerp_amount)
 			y = lerp(y, _ty, _lerp_amount)
 			
-			var _linear_amount = 1 + (5 * global.game_controller_sensitivity);
+			var _linear_amount = 1 + (10 * global.game_controller_sensitivity);
 			
 			x = scr_Converge(x, _tx, _linear_amount)
 			y = scr_Converge(y, _ty, _linear_amount)
 			
-			if distance_to_object(obj_Item_Like) < (ITEM_HOVER_RANGE + 20) and _xmag < 1 and _ymag < 1 {
+			/*if distance_to_object(obj_Item_Like) < (ITEM_HOVER_RANGE + 20) and _xmag < 1 and _ymag < 1 {
 				x = lerp(x, instance_nearest(x, y, obj_Item_Like).x, 0.5)
 				y = lerp(y, instance_nearest(x, y, obj_Item_Like).y, 0.5)
-			}
-		}
+			} */
+ 		}
 		
 	} else {
 		var dx = InputValue(INPUT_VERB.AS_RIGHT ) - InputValue(INPUT_VERB.AS_LEFT );
@@ -50,8 +50,8 @@ if !InputMouseMoved() {
 	
 		var distance_per_step = sqrt(dx*dx + dy*dy);
 		
-		var _linear_accel = 0.1 + (1.5 * global.game_controller_sensitivity);
-		var _linear_max_speed = 1 + (25 * global.game_controller_sensitivity);
+		var _linear_accel = 0.2 + (4 * global.game_controller_sensitivity);
+		var _linear_max_speed = 1 + (40 * global.game_controller_sensitivity);
 	
 		if distance_per_step != 0 {
 			//var move_point = point_direction(0,0, soulCurrentHorizontalSpeed, soulCurrentVerticalSpeed);

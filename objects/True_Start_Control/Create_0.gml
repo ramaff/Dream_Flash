@@ -8,7 +8,7 @@ global.evilSpiritRoom = -1;
 
 instance_create(x,y, Music_Control);
 
-var _cursor = instance_create_depth(mouse_x,mouse_y, depth - 9999, obj_Dream_Cursor);
+var _cursor = instance_create_depth(-64,-64, depth - 9999, obj_Dream_Cursor);
 
 var _start = instance_create_depth(688, 424, depth - 1, obj_Start_Button)
 var _settings = instance_create_depth(688, 472, depth - 1, obj_Settings_Button)

@@ -5,6 +5,3 @@ if scr_Room_Leavable() {
     scr_Adjacent_Room_Cloud();
 }
 
-/*if global.bosscount = 0 and scr_Negative_Room_Check() {
-    scr_Adjacent_Room_Cloud();
-} */

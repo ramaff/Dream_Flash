@@ -28,6 +28,8 @@ function scr_Load_Options() {
 			global.gameParticles = ini_read_real("Options","gameParticles",1);
 			global.gameGraphics = ini_read_string("Options","gameGraphics","High");
 			global.level_up_camera_lock = ini_read_real("Options","level_up_camera_lock",1);
+			global.game_controller_gryo = ini_read_real("Options","game_controller_gryo",0);
+			global.game_controller_sensitivity = ini_read_real("Options","game_controller_sensitivity",0.5);
 			
 			global.gameMoveLeft = ini_read_string("Options","gameMoveLeft","A");
 			global.gameMoveDown = ini_read_string("Options","gameMoveDown","S");
