@@ -13,7 +13,7 @@ if active_attack = 0 {
 	direction = scr_Soul_Point();
 	speed = lerp(speed, bossmovespeed, 0.05);
 	
-	y = scr_Converge(y, obj_Soul_Parent.perY, speed);
+	y = scr_Converge(y, obj_Soul_Parent.perY, speed * 0.5);
 } else {
 	direction = scr_Soul_Point();
 	speed = lerp(speed, bossmovespeed * 0.15, 0.1);	
@@ -44,7 +44,7 @@ if active_attack_delay <= 0 and active_attack_cooldown <= 0 and active_attack_du
 		// 
 		scr_Boss_Attack_Time_Setup_v2(180, 40, 1, 120, 30, 10);
 		
-		scr_Boss_Dash_Setup_v2(scr_Round_To_Nearest(scr_Soul_Point(), 180), 0, 7.1 * bossmovespeed);
+		scr_Boss_Dash_Setup_v2(scr_Round_To_Nearest(scr_Soul_Point(), 180), 0, 4.3 * bossmovespeed);
 		//scr_Boss_Dash_Setup_v2(scr_Soul_Point(), 0, 7 * bossmovespeed);
     }
 }

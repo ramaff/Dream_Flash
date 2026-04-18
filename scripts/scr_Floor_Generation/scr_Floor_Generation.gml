@@ -87,7 +87,7 @@ function scr_Floor_Generation() {
 	        if global.currentchapter = 1 {
 				var k = 1
 				for (k = 1; k < 4; k++) {
-					global.floor[list[| k],4] = spr_flash_marble_brick_g;	
+					global.floor[list[| k],4] = spr_flash_marble_g;	
 				}
 				for (k = 4; k < 8; k++) {
 					global.floor[list[| k],4] = spr_flash_diagonal_brick_g;	
@@ -100,8 +100,8 @@ function scr_Floor_Generation() {
 	        if global.currentchapter = 2 {
 				
 				var k = 1
-				for (k = 1; k < 3; k++) {
-					global.floor[list[| k],4] = spr_dungeon_brick_g;	
+				for (k = 1; k < 4; k++) {
+					global.floor[list[| k],4] = spr_feel_marble_g_xl;	
 				}
 				for (k = 4; k < 10; k++) {
 					global.floor[list[| k],4] = spr_feel_brick_g;	

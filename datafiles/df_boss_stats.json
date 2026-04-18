@@ -1001,8 +1001,8 @@
             "Defense_Phase_1": 0,
             "Defense_Phase_2": 2,
             "Boss_Danger": 3.5,
-            "Bullet_Speed": 3.3,
-            "Move_Speed": 3.9,
+            "Bullet_Speed": 2.3,
+            "Move_Speed": 2.9,
             "recollectionDescription": "Instills you with a grim feeling. Malicous apparition that channels bursts of dark energy.",
         
             "Champ 1": {
