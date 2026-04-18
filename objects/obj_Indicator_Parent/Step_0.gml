@@ -77,8 +77,10 @@ if !InputMouseMoved() {
 	var winx = camera_get_view_width(view) - 10;
 	var winy =  camera_get_view_height(view) - 10;
 	
-	x = clamp(x, _cur_x, _cur_x + winx);
-	y = clamp(y, _cur_y, _cur_y + winy);
+	if room != Title_Screen {
+		x = clamp(x, _cur_x, _cur_x + winx);
+		y = clamp(y, _cur_y, _cur_y + winy);
+	}
 	
 } else {
 	stop_following_mouse = 0;	

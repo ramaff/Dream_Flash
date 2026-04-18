@@ -31,7 +31,7 @@ function scr_Boss_Choose(roomNum, exclude, difficultyAdd = 0) {
 	
 	if global.currentchapter = 1 {
 	    _base_pool =      [1, 3, 5, 9, 18, 24, 25, 42, 44, 57, 58, 98]
-		_mini_boss_pool = [12, 13, 14, 16, 20, 37, 43, 59, 61, 62]
+		_mini_boss_pool = [12, 13, 14, 16, 19, 20, 37, 43, 59, 61]
 		_mini_chance = 2;
 		
 	}
@@ -230,9 +230,8 @@ function scr_Boss_Choose(roomNum, exclude, difficultyAdd = 0) {
 
 	if bossform = 19.1 // Tri Ghoul
 	{
-	    bosstype = obj_Tri_Ghoul;
-	    difficulty = 2;
-	    global.champ = choose(0,1,8);
+	    bosstype = obj_whack_a_soul;
+	    difficulty = 1;
 		//global.champ = 8;
 		//global.champ = 1;
 	}
@@ -471,7 +470,7 @@ function scr_Boss_Choose(roomNum, exclude, difficultyAdd = 0) {
 	if bossform = 59.1
 	{
 	    bosstype = obj_will_wisp_heart;
-	    difficulty = 1.5;
+	    difficulty = 2;
 	}
 	if bossform = 60.1
 	{

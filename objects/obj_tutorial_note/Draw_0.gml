@@ -16,19 +16,21 @@ if obj_Indicator_Parent.x < x {
 	_forward_xx = scr_Wave(-10, 10, 1, 0)		
 }
 
-draw_sprite_ext(spr_Tutorial_Arrow,0,x+256+_forward_xx,y+144,1,1,0,c_white,note_alpha);
 
 if InputDeviceGetAnyGamepadConnected() {
-	draw_sprite_ext(spr_Controller_Accept_Icon, scr_Wave(0, 1.9, 1, 0), x + 260, y + 100, 0.5, 0.5, 0, c_black, 1)
-	draw_text_colour(x + 255, y + 120, "next", c_black, c_black, c_black, c_black, 1)
-} 
+	draw_sprite_ext(spr_Controller_Accept_Icon, scr_Wave(0, 1.9, 1, 0), x + 260, y + 140, 0.5, 0.5, 0, c_black, 1)
+	draw_text_colour(x + 255, y + 160, "next", c_black, c_black, c_black, c_black, 1)
+} else {
+	draw_sprite_ext(spr_Tutorial_Arrow,0,x+256+_forward_xx,y+144,1,1,0,c_white,note_alpha);
+}
 
 if current_page > 1 {
-	draw_sprite_ext(spr_Tutorial_Arrow,0,x-256+_back_xx,y+112,-1,-1,0,c_white,note_alpha);
 	
 	if InputDeviceGetAnyGamepadConnected() {
-		draw_sprite_ext(spr_Controller_Cancel_Icon, scr_Wave(0, 1.9, 1, 0), x - 260, y + 60, 0.5, 0.5, 0, c_black, 1)
-		draw_text_colour(x - 255, y + 80, "back", c_black, c_black, c_black, c_black, 1)
+		draw_sprite_ext(spr_Controller_Cancel_Icon, scr_Wave(0, 1.9, 1, 0), x - 260, y + 100, 0.5, 0.5, 0, c_black, 1)
+		draw_text_colour(x - 255, y + 120, "back", c_black, c_black, c_black, c_black, 1)
+	} else {
+		draw_sprite_ext(spr_Tutorial_Arrow,0,x-256+_back_xx,y+112,-1,-1,0,c_white,note_alpha);
 	}
 }
 
