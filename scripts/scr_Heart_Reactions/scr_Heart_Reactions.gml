@@ -1,7 +1,7 @@
 function scr_Heart_Reactions() {
 	var cHeart = global.currenthearttype
 	if cHeart = 8 {
-
+		/*
 	    var current_weapon_stats = scr_Setup_Default_Shot_Stats();
 		
 		current_weapon_stats = {
@@ -27,6 +27,7 @@ function scr_Heart_Reactions() {
 		current_weapon_stats = scr_Setup_Weapon_Stats(current_weapon_stats);
 
 	    scr_Shot_Creation(current_weapon_stats);
+		*/
 
 	}
 

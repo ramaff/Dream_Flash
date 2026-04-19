@@ -28,6 +28,11 @@ if cHeart = 7 {
 	}
 }
 
+if cHeart = 8 {
+	scr_H08_Status_Build_Up()
+	heartReload = 1;
+}
+
 if cHeart = 17 {
 	scr_H17_Bubble();	
 }

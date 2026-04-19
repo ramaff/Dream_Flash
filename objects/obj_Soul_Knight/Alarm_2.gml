@@ -23,7 +23,7 @@ if instance_exists(obj_Boss_Parent) {
 	friction = 1;
 	
 	current_weapon_stats.Shot_Pierce += 19;
-	current_weapon_stats.Shot_Size = 0.4;
+	current_weapon_stats.Shot_Size = 0.7;
 	
 	current_weapon_stats.Shot_Shield_Type = 3;
 	current_weapon_stats.Shot_Shield_Power = 4;
