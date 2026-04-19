@@ -902,6 +902,10 @@ function scr_Hard_Coded_Item_Stats(itemVal, items_to_add = 1, reload = false) {
 	if itemVal = "OC04" {
 		global.soulpowerfactor += 3;
 	    obj_Soul_Parent.spowerfactor += 3;
+		global.soulshotsizefactor += 0.2;
+	    obj_Soul_Parent.sshotsizefactor += 0.2;
+		global.soulsize += 0.2;
+		obj_Soul_Parent.ssize += 0.2;
 	}
 
 	if itemVal = "P01" {

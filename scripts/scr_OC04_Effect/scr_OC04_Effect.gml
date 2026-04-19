@@ -4,7 +4,7 @@
 // soul alarm 5
 
 function scr_OC04_Effect(){
-	if global.OC4Debuff = true {
+	/*if global.OC4Debuff = true {
 		var _shot_trail_area = 120;
 		
 		repeat(6) {
@@ -32,6 +32,6 @@ function scr_OC04_Effect(){
 
 			}
 		}
-	}
+	} */
 	
 }
