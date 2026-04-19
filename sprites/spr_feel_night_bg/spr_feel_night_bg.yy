@@ -19,6 +19,7 @@
   "height":1600,
   "HTile":false,
   "layers":[
+    {"$GMImageLayer":"","%Name":"2fdcfe8c-b85a-4899-b713-053601a94989","blendMode":3,"displayName":"Layer 1","isLocked":false,"name":"2fdcfe8c-b85a-4899-b713-053601a94989","opacity":30.0,"resourceType":"GMImageLayer","resourceVersion":"2.0","visible":true,},
     {"$GMImageLayer":"","%Name":"ffaf7cba-1277-4250-b2f0-8a2450a37537","blendMode":0,"displayName":"default","isLocked":false,"name":"ffaf7cba-1277-4250-b2f0-8a2450a37537","opacity":100.0,"resourceType":"GMImageLayer","resourceVersion":"2.0","visible":true,},
   ],
   "name":"spr_feel_night_bg",

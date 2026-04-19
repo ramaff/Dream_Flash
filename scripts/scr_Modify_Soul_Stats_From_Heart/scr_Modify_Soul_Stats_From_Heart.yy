@@ -1,9 +1,9 @@
 {
   "$GMScript":"v1",
-  "%Name":"scr_Current_Heart_Stats",
+  "%Name":"scr_Modify_Soul_Stats_From_Heart",
   "isCompatibility":false,
   "isDnD":false,
-  "name":"scr_Current_Heart_Stats",
+  "name":"scr_Modify_Soul_Stats_From_Heart",
   "parent":{
     "name":"Heart Commands",
     "path":"folders/Scripts/Heart Commands.yy",
