@@ -33,6 +33,15 @@ if cHeart = 8 {
 	heartReload = 1;
 }
 
+if cHeart = 9 {
+	with instance_create_depth(x, y, depth + 1, obj_Bleeding_Heart_Blade) {
+		target = other.id;
+		alarm[0] = 270;
+		image_angle = -90;
+	}
+	heartReload = 99999999;
+}
+
 if cHeart = 17 {
 	scr_H17_Bubble();	
 }
