@@ -6,7 +6,7 @@ var _yy = y - soul_source.y;
 
 with(soul_source) {
 	
-	scr_Heart_Reactions();
+	//scr_Heart_Reactions();
 
 	shealth -= 2;
 	soulinvincibility += 30;

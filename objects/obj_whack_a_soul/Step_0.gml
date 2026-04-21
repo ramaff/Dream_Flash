@@ -125,12 +125,12 @@ if active_attack = 1 || active_attack = 3 {
 	var _hold_frame = 4;
 	scr_Force_Hold_Frame(_hold_frame, 40)
 	scr_Boss_Attack_Sprite_v2(spr_whack_a_soul_up_and_down, _hold_frame, 4, 4, 40);
-	if active_attack_duration = 70 {
+	if image_index = 5 {
 		var _new_pos = scr_Boss_Teleport_v2_Return(-128, -1, 300)
 		x = _new_pos[0]
 		y = _new_pos[1]
 	}
-	if image_index = _hold_frame {
+	if image_index >= _hold_frame and image_index <= _hold_frame + 1 {
 		scr_Boss_Wobble("Horizontal", 2, 0.4, 0)	
 	}
 	if active_attack_duration = 1 {

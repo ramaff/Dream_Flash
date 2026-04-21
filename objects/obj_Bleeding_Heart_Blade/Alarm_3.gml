@@ -6,3 +6,5 @@ x -= lengthdir_x(2000, direction)
 y -= lengthdir_y(2000, direction)
 
 speed = 0;
+
+bosses_hit = {};

@@ -3,4 +3,4 @@
 alarm[1] = 1;
 
 alarm[2] = 60;
-alarm[0] = 720;
+alarm[0] = 330;

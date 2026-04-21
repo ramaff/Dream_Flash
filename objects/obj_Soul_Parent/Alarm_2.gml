@@ -34,10 +34,13 @@ if cHeart = 8 {
 }
 
 if cHeart = 9 {
-	with instance_create_depth(x, y, depth + 1, obj_Bleeding_Heart_Blade) {
+	with instance_create_depth(x + 50, y, depth + 1, obj_Bleeding_Heart_Blade) {
 		target = other.id;
-		alarm[0] = 270;
+		alarm[0] = 90;
 		image_angle = -90;
+		
+		image_xscale = 0.5;
+		image_yscale = 0.5;
 	}
 	heartReload = 99999999;
 }

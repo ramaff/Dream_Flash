@@ -7,7 +7,7 @@ function scr_Hit_Reactions(_damage_amount, _defense_amount) {
 	scr_U03_Off();
 	//scr_P02_Swap();
 
-	scr_Heart_Reactions();
+	//scr_Heart_Reactions();
 
 	if global.A[5] > 0 {
 		scr_A05();
