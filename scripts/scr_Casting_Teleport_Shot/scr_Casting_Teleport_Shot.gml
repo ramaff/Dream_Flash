@@ -1,5 +1,5 @@
 function scr_Casting_Teleport_Shot(xxx, yyy, distance) {
-	current_weapon_stats = scr_Setup_Default_Shot_Stats();
+	var current_weapon_stats = scr_Setup_Default_Shot_Stats();
 	
 	current_weapon_stats = {
 		Shot_Spread: 0,
@@ -18,14 +18,9 @@ function scr_Casting_Teleport_Shot(xxx, yyy, distance) {
 
 	current_weapon_stats.Shot_Size = 0.4;
 	current_weapon_stats.Shot_Forward = 0;
-	//current_weapon_stats.Shot_Point_Angle = 1;
 	current_weapon_stats.Shot_Off_State = 1;
 	current_weapon_stats.Shot_XX = xxx - x;
 	current_weapon_stats.Shot_YY = yyy - y;
-	/*current_weapon_stats.Shot_Homing_Type = 3;
-	current_weapon_stats.Shot_Homing_Range = 500;
-	current_weapon_stats.Shot_Homing_Speed = 5; */
-	//current_weapon_stats.Shot_Point_Angle = true;
 	current_weapon_stats.Shot_Orbital_Type = 3;
 	current_weapon_stats.Shot_Orbital_Range = distance;
 	current_weapon_stats.Shot_Orbit_Angle = point_direction(x,y,xxx,yyy);
