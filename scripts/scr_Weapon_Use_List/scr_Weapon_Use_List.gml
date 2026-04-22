@@ -111,6 +111,7 @@ function scr_Weapon_Use_List(cWP = global.currentweapon, _weap_slot = 0) {
 		
 		scr_Weapon_Output(_weapon_meta_data.spawnProjectile, _weapon_meta_data.minion, _current_weapon_stats, true)
 		
+		scr_H11_Status_Build_Up(_current_weapon_stats);
 		senergy -= _current_weapon_stats.Real_Essence_Cost;
 		sWeaponTicker++;
     

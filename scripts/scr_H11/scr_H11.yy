@@ -1,9 +1,9 @@
 {
   "$GMScript":"v1",
-  "%Name":"scr_H08",
+  "%Name":"scr_H11",
   "isCompatibility":false,
   "isDnD":false,
-  "name":"scr_H08",
+  "name":"scr_H11",
   "parent":{
     "name":"Specific Heart Scripts",
     "path":"folders/Scripts/Heart Commands/Specific Heart Scripts.yy",
