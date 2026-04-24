@@ -1540,7 +1540,7 @@
             "Defense_Phase_2": 0,
             "Boss_Danger": 4,
             "Bullet_Speed": 3,
-            "Move_Speed": 3,
+            "Move_Speed": 1.6,
             "recollectionDescription": "Nosey"
         },
         "Boss 068": {

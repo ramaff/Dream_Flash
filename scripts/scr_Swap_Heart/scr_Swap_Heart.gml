@@ -25,6 +25,11 @@ function scr_Swap_Heart(_heart_id) {
 				"smovementfactor": -0.3
 			}
 			break;
+		case 12:
+			_heart_stats = {
+				"senergyregenfactor": 0.3
+			}
+			break;
 		default:
 			_heart_stats = {}
 	}

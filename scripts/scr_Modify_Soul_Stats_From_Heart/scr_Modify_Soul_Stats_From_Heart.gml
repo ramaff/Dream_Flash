@@ -21,4 +21,8 @@ function scr_Modify_Soul_Stats_From_Heart(_heart_stats, _fact) {
 		global.soulmovementfactor += _heart_stats.smovementfactor * _fact;
 	    obj_Soul_Parent.smovementfactor += _heart_stats.smovementfactor * _fact;
 	}
+	if variable_struct_exists(_heart_stats, "senergyregenfactor") {
+		global.soulenergyregenfactor += _heart_stats.senergyregenfactor * _fact;
+	    obj_Soul_Parent.senergyregenfactor += _heart_stats.senergyregenfactor * _fact;
+	}
 }

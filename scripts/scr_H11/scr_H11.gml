@@ -4,6 +4,10 @@
 
 function scr_H11_Status_Build_Up(_current_weapon_stats) {
 	
+	if global.currentheart != 11 {
+		exit;	
+	}
+	
 	if InputCheck(INPUT_VERB.SHOOT) || variable_struct_exists(soul_step_status_effects, "temper") || mouse_check_button(mb_left) {
 	
 		var _mag = _current_weapon_stats.Real_Weapon_Delay * 2;
