@@ -674,7 +674,7 @@
 
         "Boss 023": {
             "Name": "Heart Ache",
-            "Recollection_Sprite": "reco_Heart_Ache",
+            "Recollection_Sprite": "reco_heart_ache_v2",
             "Health_Phase_1": 690,
             "Health_Phase": 0,
             "Defense_Phase_1": 0,
@@ -995,7 +995,7 @@
 
         "Boss 035": {
             "Name": "Grim Apparition",
-            "Recollection_Sprite": "reco_Grim_Apparition",
+            "Recollection_Sprite": "reco_grim_apparition_v2",
             "Health_Phase_1": 580,
             "Health_Phase_2": 0,
             "Defense_Phase_1": 0,

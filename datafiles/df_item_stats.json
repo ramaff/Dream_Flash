@@ -616,42 +616,42 @@
     },
     "H07": {
         "recollectionString": "Fart Heart",
-        "recollectionSprite": "spr_Hourglass_Heart_Art",
+        "recollectionSprite": "spr_Fart_Heart_Art",
         "recollectionSummary": "Fart",
         "recollectionDescription": "+20 HP +When moving spawn gas clouds that poison bosses and push stuff away."
     },
     "H08": {
         "recollectionString": "Spike Heart",
         "recollectionSprite": "spr_Spike_Heart_Art",
-        "recollectionSummary": "Imaginary Revenge Damage",
-        "recollectionDescription": "+20HP +Shoots imaginary spikes in all directions when hit.",
+        "recollectionSummary": "Pointy Soul",
+        "recollectionDescription": "+20HP +Shoot out spikes from the soul when near danger that push bullets and deal damage.",
         "Spike_Credit": 1
     },
     "H09": {
         "recollectionString": "Bleeding Heart",
         "recollectionSprite": "spr_Bleeding_Heart_Art",
-        "recollectionSummary": "Sharp Revenge Damage",
-        "recollectionDescription": "+20 HP +Shoots Daggers when hit that make bosses bleed!",
+        "recollectionSummary": "Cursed Bleeding",
+        "recollectionDescription": "+20 HP +Blade that slashes bosses, inflicting deep bleed that does big damage, but also leaks out bullets.",
         "Bleeding_Credit": 1
     },
     "H10": {
         "recollectionString": "Magician Heart",
         "recollectionSprite": "spr_Magician_Heart_Art",
-        "recollectionSummary": "Magic Revenge Damage",
-        "recollectionDescription": "+20 HP +Shoots Homing Magic Bolts at bosses when hit.",
+        "recollectionSummary": "Magic Orbitals",
+        "recollectionDescription": "+20 HP +Summons 3 permanent orbiting magic bolts.",
         "Casting_Credit": 1
     },
     "H11": {
         "recollectionString": "Rocket Heart",
         "recollectionSprite": "spr_Rocket_Heart_Art",
-        "recollectionSummary": "Explosive Revenge Damage",
-        "recollectionDescription": "+20 HP +Sends a bunch of rockets down from above when hit."
+        "recollectionSummary": "Jet Propulsion",
+        "recollectionDescription": "+20 HP +Gain massive fire rate and propulsion the longer the soul shoots. +Wind up and Wind down time."
     },
     "H12": {
         "recollectionString": "Lightning Heart",
         "recollectionSprite": "spr_Lightning_Heart_Art",
-        "recollectionSummary": "Energy Revenge Damage",
-        "recollectionDescription": "+20 HP +Sends in Lightning Bolts from the sky when hit.",
+        "recollectionSummary": "Divine Strikes",
+        "recollectionDescription": "+20 HP +If at/above max essence: Damage every enemy on screen with lightning, costing some essence. +30% Essence Regen",
         "Ascending_Credit": 1
     },
     "H13": {
