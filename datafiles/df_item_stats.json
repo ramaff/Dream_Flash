@@ -462,7 +462,7 @@
         "recollectionString": "Spatial Awareness",
         "recollectionSprite": "spr_Spatial_Awareness_Item",
         "recollectionSummary": "Danger Warp Replenish",
-        "recollectionDescription": "+Hyper sense nearby bullets, this slightly staggers them, recharges your teleport faster, and regains.",
+        "recollectionDescription": "+Hyper sense nearby bullets, this slightly staggers them, recharges your teleport faster, and regains essence.",
         "Beast_Credit": 0.5
     },
     "E14": {

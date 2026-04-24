@@ -12,18 +12,18 @@
   "edgeFiltering":false,
   "For3D":false,
   "frames":[
-    {"$GMSpriteFrame":"v1","%Name":"94545a18-1890-42f8-a933-e5eb128eeda1","name":"94545a18-1890-42f8-a933-e5eb128eeda1","resourceType":"GMSpriteFrame","resourceVersion":"2.0",},
+    {"$GMSpriteFrame":"v1","%Name":"79e6a668-9a89-40f6-8ec6-e29e0d133487","name":"79e6a668-9a89-40f6-8ec6-e29e0d133487","resourceType":"GMSpriteFrame","resourceVersion":"2.0",},
   ],
   "gridX":0,
   "gridY":0,
-  "height":160,
+  "height":180,
   "HTile":false,
   "layers":[
-    {"$GMImageLayer":"","%Name":"f6c0962d-2a3c-432c-9d7a-86beefc65b07","blendMode":0,"displayName":"default","isLocked":false,"name":"f6c0962d-2a3c-432c-9d7a-86beefc65b07","opacity":100.0,"resourceType":"GMImageLayer","resourceVersion":"2.0","visible":true,},
+    {"$GMImageLayer":"","%Name":"2ff81add-24ba-4181-8f91-750b1f0faa9b","blendMode":0,"displayName":"default","isLocked":false,"name":"2ff81add-24ba-4181-8f91-750b1f0faa9b","opacity":100.0,"resourceType":"GMImageLayer","resourceVersion":"2.0","visible":true,},
   ],
   "name":"spr_Bleeding_Heart_Blade",
   "nineSlice":null,
-  "origin":4,
+  "origin":9,
   "parent":{
     "name":"Item Stuff Sprites",
     "path":"folders/Sprites/Item Stuff Sprites.yy",
@@ -69,14 +69,14 @@
     "tracks":[
       {"$GMSpriteFramesTrack":"","builtinName":0,"events":[],"inheritsTrackColour":true,"interpolation":1,"isCreationTrack":false,"keyframes":{"$KeyframeStore<SpriteFrameKeyframe>":"","Keyframes":[
             {"$Keyframe<SpriteFrameKeyframe>":"","Channels":{
-                "0":{"$SpriteFrameKeyframe":"","Id":{"name":"94545a18-1890-42f8-a933-e5eb128eeda1","path":"sprites/spr_Bleeding_Heart_Blade/spr_Bleeding_Heart_Blade.yy",},"resourceType":"SpriteFrameKeyframe","resourceVersion":"2.0",},
-              },"Disabled":false,"id":"4a804aa3-58cc-4cb5-a788-810ee9013400","IsCreationKey":false,"Key":0.0,"Length":1.0,"resourceType":"Keyframe<SpriteFrameKeyframe>","resourceVersion":"2.0","Stretch":false,},
+                "0":{"$SpriteFrameKeyframe":"","Id":{"name":"79e6a668-9a89-40f6-8ec6-e29e0d133487","path":"sprites/spr_Bleeding_Heart_Blade/spr_Bleeding_Heart_Blade.yy",},"resourceType":"SpriteFrameKeyframe","resourceVersion":"2.0",},
+              },"Disabled":false,"id":"cea548d9-8862-40a2-a6f9-2e2795ca3de2","IsCreationKey":false,"Key":0.0,"Length":1.0,"resourceType":"Keyframe<SpriteFrameKeyframe>","resourceVersion":"2.0","Stretch":false,},
           ],"resourceType":"KeyframeStore<SpriteFrameKeyframe>","resourceVersion":"2.0",},"modifiers":[],"name":"frames","resourceType":"GMSpriteFramesTrack","resourceVersion":"2.0","spriteId":null,"trackColour":0,"tracks":[],"traits":0,},
     ],
     "visibleRange":null,
     "volume":1.0,
-    "xorigin":80,
-    "yorigin":80,
+    "xorigin":82,
+    "yorigin":85,
   },
   "swatchColours":null,
   "swfPrecision":0.5,
@@ -86,5 +86,5 @@
   },
   "type":0,
   "VTile":false,
-  "width":160,
+  "width":180,
 }

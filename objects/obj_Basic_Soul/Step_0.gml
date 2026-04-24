@@ -78,7 +78,7 @@ if soulAcceleration < 1 {
 }
 //soulFriction = 0.1;
 if variable_struct_exists(soul_step_status_effects, "rocket") {
-	sdelayregenfactor = sdelayregenfactor * (0.5 + (scr_Get_Status_Time("rocket") / 100))
+	sdelayregenfactor = sdelayregenfactor * (0.75 + (scr_Get_Status_Time("rocket") / 150))
 }
 
 scr_Execute_List_Of_Scripts(soul_step_after_scripts)

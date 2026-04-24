@@ -9,6 +9,7 @@ if instance_exists(target) {
 	var _attack_stats = scr_base_bullet_stats(4, global.stagedamage, 1, id)
 	_attack_stats.bullet_direction = random(360);
 	_attack_stats.bullet_type = "obj_lob_bullet_v2"
+	_attack_stats.bullet_sprite = "spr_red_drop_bullet_v2"
 	_attack_stats.bullet_life_span = 105 + random(30);
 	_attack_stats.bullet_bounce_speed = 3 + random(2);
 	_attack_stats.bullet_speed += random(2);
