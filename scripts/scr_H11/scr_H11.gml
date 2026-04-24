@@ -10,10 +10,10 @@ function scr_H11_Status_Build_Up(_current_weapon_stats) {
 	
 	if InputCheck(INPUT_VERB.SHOOT) || variable_struct_exists(soul_step_status_effects, "temper") || mouse_check_button(mb_left) {
 	
-		var _mag = _current_weapon_stats.Real_Weapon_Delay * 2;
+		var _mag = ceil(_current_weapon_stats.Real_Weapon_Delay * (1 + (1 * global.soulheartboost)));
 
 		var _dur = scr_Get_Status_Time("rocket") + _mag
-		_dur = min(400, _dur);
+		_dur = min(400 * global.soulheartboost, _dur);
 		var _status_effect = {
 			"duration": _dur,
 			"tick_script": scr_Rocket_Tick,

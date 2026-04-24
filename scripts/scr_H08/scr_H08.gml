@@ -23,12 +23,12 @@ function scr_H08_Status_Build_Up() {
 	if _near_bulls > 0 {
 		var _curr_defensive = scr_Get_Status_Time("spike_heart_omen");
 		var _status_effect = {
-			"duration": _curr_defensive + ((5 + _near_bulls) * global.soulheartboost),
+			"duration": _curr_defensive + ceil((5 + _near_bulls) * global.soulheartboost),
 			"tick_script": scr_Spike_Heart_Omen,
 			"tick_frequency": 1
 		}
 		var _status_effect_2 = {
-			"duration": _curr_defensive + ((5 + _near_bulls) * global.soulheartboost),
+			"duration": _curr_defensive + ceil((5 + _near_bulls) * global.soulheartboost),
 			"max_duration": 360,
 			"bar_sprite": "spr_Defensive_Omen_Status_Effect_Bar"
 		}
@@ -54,32 +54,34 @@ function scr_H08() {
 		var _near = instance_nearest(x, y, obj_bullet_parent_v2);
 		_dir = point_direction(x, y, _near.x, _near.y)
 	}
+	
+	var _dam = 2.5;
 
 	with instance_create(x, y, obj_Spike_Aura_Maintain) {
-		damage = 2;
+		damage = _dam * 2;
 		direction = _dir;
 		image_angle = direction;
-		image_xscale = 0.75;
+		image_xscale = 0.5 + (_dam / 10);
 		image_yscale = image_xscale;
 					
 		alarm[0] = 60;
 		origin = other.id;
 	}
 	with instance_create(x, y, obj_Spike_Aura_Maintain) {
-		damage = 1;
+		damage = _dam;
 		direction = _dir;
 		image_angle = direction - 45;
-		image_xscale = 0.55;
+		image_xscale = 0.45 + (_dam / 20);
 		image_yscale = image_xscale;
 					
 		alarm[0] = 60;
 		origin = other.id;
 	}
 	with instance_create(x, y, obj_Spike_Aura_Maintain) {
-		damage = 1;
+		damage = _dam;
 		direction = _dir;
 		image_angle = direction + 45;
-		image_xscale = 0.55;
+		image_xscale = 0.45 + (_dam / 20);
 		image_yscale = image_xscale;
 					
 		alarm[0] = 60;
