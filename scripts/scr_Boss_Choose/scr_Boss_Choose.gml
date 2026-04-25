@@ -36,7 +36,7 @@ function scr_Boss_Choose(roomNum, exclude, difficultyAdd = 0) {
 		
 	}
 	if global.currentchapter = 2 {
-	    _base_pool = [2,3,6,10,14,17,26,27,32,34,36,38,45,48,64];
+	    _base_pool = [2,3,6,10,17,26,27,32,34,36,38,45,48,64];
 		_mini_boss_pool = [23, 35, 66, 67, 68, 69, 70]
 		_mini_chance = 3.5
 		
@@ -186,15 +186,15 @@ function scr_Boss_Choose(roomNum, exclude, difficultyAdd = 0) {
 
 	if bossform = 14.1 // Spooked Spirit
 	{
-		if global.currentchapter = 1 {
+		//if global.currentchapter = 1 {
 			bosstype = obj_frightful_spirit_v2;
 			difficulty = 2;
 			global.champ = 0;
-		} else {
+		/*} else {
 			bosstype = obj_Spooked_Spirit;
 			difficulty = 4;
 			global.champ = choose(1,2,8);
-		}
+		} */
 		//global.champ = 2;
 	}
 

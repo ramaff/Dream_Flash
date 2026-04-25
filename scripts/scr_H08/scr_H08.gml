@@ -55,7 +55,7 @@ function scr_H08() {
 		_dir = point_direction(x, y, _near.x, _near.y)
 	}
 	
-	var _dam = 2.5;
+	var _dam = 1.5;
 
 	with instance_create(x, y, obj_Spike_Aura_Maintain) {
 		damage = _dam * 2;

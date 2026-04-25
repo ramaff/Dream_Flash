@@ -101,7 +101,7 @@ function scr_Floor_Generation() {
 				
 				var k = 1
 				for (k = 1; k < 4; k++) {
-					global.floor[list[| k],4] = spr_feel_marble_g_xl;	
+					global.floor[list[| k],4] = spr_feel_marble_g;	
 				}
 				for (k = 4; k < 10; k++) {
 					global.floor[list[| k],4] = spr_feel_brick_g;	

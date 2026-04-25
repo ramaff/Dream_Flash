@@ -37,7 +37,7 @@ function scr_Casting_Teleport_Shot(xxx, yyy, distance) {
 	
 	current_weapon_stats = scr_Setup_Weapon_Stats(current_weapon_stats);
 
-	scr_Shot_Creation();
+	scr_Shot_Creation(current_weapon_stats);
 
 
 

@@ -26,6 +26,8 @@ var _cent_dist = point_distance(x, y, room_width / 2, room_height / 2) / 200
 x += lengthdir_x(_cent_dist, _cent_dir)
 y += lengthdir_y(_cent_dist, _cent_dir)
 
+var _blood_color = blood_color
+
 if active_attack = 2 and active_attack_delay <= 0 and pattern_count > 0 {
 	var _image = false
 	if pattern_count mod 10 = 0 {
@@ -36,6 +38,9 @@ if active_attack = 2 and active_attack_delay <= 0 and pattern_count > 0 {
 		speed += 0.1;
 		if _image {
 			scr_After_Image(20, false, true, c_white, sprite_index)	
+		}
+		if sprite_index = spr_bloody_bullet_v2 {
+			image_blend = _blood_color
 		}
 	}
 }
@@ -151,7 +156,7 @@ if active_attack_delay <= 0 and pattern_cooldown <= 0 and pattern_count > 0 {
 	
 		minion_count = 3;
 		minion_type = obj_heart_attacker;
-		minion_health = bossmaxhealth / 10;
+		minion_health = bossmaxhealth / 15;
 		//minion_spawn_animation = spr_pocket_minion_spawn
 		//minion_yy = boss_height;
 

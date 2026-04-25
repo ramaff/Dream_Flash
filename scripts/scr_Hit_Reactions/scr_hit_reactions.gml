@@ -64,14 +64,14 @@ function scr_Hit_Reactions(_damage_amount, _defense_amount) {
 		}
 	} */
 
-	hchance = irandom(smaxhealth / 2);
-	if (dmg > hchance) and (dmg < shealth) {
+	//hchance = irandom(smaxhealth / 2);
+	//if (dmg > hchance) and (dmg < shealth) {
 		scr_S02();
-	}
+	//}
 
-	if (dmg > hchance) and (dmg < shealth) {
+	//if (dmg > hchance) and (dmg < shealth) {
 		scr_S03();
-	}
+	//}
 
 
 
