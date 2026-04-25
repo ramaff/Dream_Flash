@@ -44,6 +44,8 @@ function scr_P08(){
 			}
 		
 			var _weapon_meta_data = scr_Hard_Coded_Weapon_Stats(_current_weapon_stats);
+			
+			scr_Weapon_Output_Item_Mods(_current_weapon_stats, _weapon_meta_data, _c_wp)
 		
 			if _current_weapon_stats.Shot_Beam = 0 {
 				_current_weapon_stats.Shot_Lobbing = true;

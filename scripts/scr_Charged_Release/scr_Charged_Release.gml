@@ -71,17 +71,16 @@ function scr_Charged_Release() {
 				_current_weapon_stats.Shot_Burst_Power = _current_weapon_stats.Shot_Power / 10;
 	        }
 			
-
-			
-			scr_OC03(_current_weapon_stats, weaponcharge);
-			
 			var _weapon_meta_data = scr_Hard_Coded_Weapon_Stats(_current_weapon_stats);
-			
-			if _weapon_meta_data.barrage {
-				scr_Weapon_Barrage(_current_weapon_stats)
-			}
 		
-			scr_Shot_Creation(_current_weapon_stats, true);
+			scr_Weapon_Output_Item_Mods(_current_weapon_stats, _weapon_meta_data, weaponcharge)
+			
+			//if _weapon_meta_data.barrage {
+			//	scr_Weapon_Barrage(_current_weapon_stats)
+			//}
+		
+			//scr_Shot_Creation(_current_weapon_stats, true);
+			scr_Weapon_Output(true, false, _current_weapon_stats)
 			
 			sWeaponTicker++;
 	    }

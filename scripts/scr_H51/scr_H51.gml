@@ -32,8 +32,15 @@ function scr_H51(){
 	};
 	
 	_current_weapon_stats = scr_Setup_Weapon_Stats(_current_weapon_stats);
+	var _weapon_meta_data = {
+		"minion": false,
+		"barrage": false,
+		"spawnProjectile": true
+	}
+	scr_Weapon_Output_Item_Mods(_current_weapon_stats, _weapon_meta_data, -1)
+	scr_Weapon_Output(true, false, _current_weapon_stats)
 
-	scr_Shot_Creation(_current_weapon_stats);
+	//scr_Shot_Creation(_current_weapon_stats);
 		
 	_current_weapon_stats.Shot_Direction = 180;
 	_current_weapon_stats.Shot_Lobbing_Tilt = -10;

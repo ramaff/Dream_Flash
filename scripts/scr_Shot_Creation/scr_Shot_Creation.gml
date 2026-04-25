@@ -83,6 +83,8 @@ function scr_Shot_Creation(_cw = current_weapon_stats, _prime_shot = false) {
 	}
 	
 	_cw.Shot_Excess_Essence = _cw.Shot_Excess_Essence / _cw.Shot_Count
+	
+	var _shot_ass = asset_get_index(_cw.Shot_Type)
 
 	repeat(_cw.Shot_Count) {
 	    if _cw.Weapon_Vomit = 1 {
@@ -173,7 +175,7 @@ function scr_Shot_Creation(_cw = current_weapon_stats, _prime_shot = false) {
 		
 		repeat(mechFac) {
 			
-		    with instance_create_depth(shxx, shyy, _cw.Shot_Depth, asset_get_index(_cw.Shot_Type)) {
+		    with instance_create_depth(shxx, shyy, _cw.Shot_Depth, _shot_ass) {
 		        scr_Default_Shot_Variables();
 				
 				shot_stats = variable_clone(_cw);

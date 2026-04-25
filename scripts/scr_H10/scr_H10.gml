@@ -19,6 +19,7 @@ function scr_H10(){
 	var spawnProjectile = true;
 		
 	var _weapon_meta_data = scr_Hard_Coded_Weapon_Stats(_current_weapon_stats);
+	scr_Weapon_Output_Item_Mods(_current_weapon_stats, _weapon_meta_data, -1)
 		
 	scr_Weapon_Output(_weapon_meta_data.spawnProjectile, _weapon_meta_data.minion, _current_weapon_stats, false)	
 }

@@ -1408,6 +1408,7 @@
     {"name":"scr_Weapon_Barrage","order":5,"path":"scripts/scr_Weapon_Barrage/scr_Weapon_Barrage.yy",},
     {"name":"scr_Weapon_GUI","order":7,"path":"scripts/scr_Weapon_GUI/scr_Weapon_GUI.yy",},
     {"name":"scr_Weapon_Item_Change","order":5,"path":"scripts/scr_Weapon_Item_Change/scr_Weapon_Item_Change.yy",},
+    {"name":"scr_Weapon_Output_Item_Mods","order":6,"path":"scripts/scr_Weapon_Output_Item_Mods/scr_Weapon_Output_Item_Mods.yy",},
     {"name":"scr_Weapon_Output","order":17,"path":"scripts/scr_Weapon_Output/scr_Weapon_Output.yy",},
     {"name":"scr_Weapon_Pickup","order":6,"path":"scripts/scr_Weapon_Pickup/scr_Weapon_Pickup.yy",},
     {"name":"scr_Weapon_Slot_Info_Update","order":22,"path":"scripts/scr_Weapon_Slot_Info_Update/scr_Weapon_Slot_Info_Update.yy",},

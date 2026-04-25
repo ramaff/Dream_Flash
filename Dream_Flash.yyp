@@ -2710,6 +2710,7 @@
     {"id":{"name":"scr_Weapon_Item_Change","path":"scripts/scr_Weapon_Item_Change/scr_Weapon_Item_Change.yy",},},
     {"id":{"name":"scr_Weapon_Item_Choose","path":"scripts/scr_Weapon_Item_Choose/scr_Weapon_Item_Choose.yy",},},
     {"id":{"name":"scr_Weapon_Memory","path":"scripts/scr_Weapon_Memory/scr_Weapon_Memory.yy",},},
+    {"id":{"name":"scr_Weapon_Output_Item_Mods","path":"scripts/scr_Weapon_Output_Item_Mods/scr_Weapon_Output_Item_Mods.yy",},},
     {"id":{"name":"scr_Weapon_Output","path":"scripts/scr_Weapon_Output/scr_Weapon_Output.yy",},},
     {"id":{"name":"scr_Weapon_Pickup","path":"scripts/scr_Weapon_Pickup/scr_Weapon_Pickup.yy",},},
     {"id":{"name":"scr_Weapon_Rebound_Mouse","path":"scripts/scr_Weapon_Rebound_Mouse/scr_Weapon_Rebound_Mouse.yy",},},
