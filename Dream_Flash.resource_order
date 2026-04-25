@@ -1993,7 +1993,7 @@
     {"name":"spr_red_boss_bead_ko","order":8,"path":"sprites/spr_red_boss_bead_ko/spr_red_boss_bead_ko.yy",},
     {"name":"spr_red_boss_bead_shoot","order":2,"path":"sprites/spr_red_boss_bead_shoot/spr_red_boss_bead_shoot.yy",},
     {"name":"spr_red_boss_bead","order":1,"path":"sprites/spr_red_boss_bead/spr_red_boss_bead.yy",},
-    {"name":"spr_red_bullet_v2_1","order":10,"path":"sprites/spr_red_bullet_v2_1/spr_red_bullet_v2_1.yy",},
+    {"name":"spr_red_drop_bullet_v2","order":10,"path":"sprites/spr_red_drop_bullet_v2/spr_red_drop_bullet_v2.yy",},
     {"name":"spr_Red_Gem_Beam_Shot","order":20,"path":"sprites/spr_Red_Gem_Beam_Shot/spr_Red_Gem_Beam_Shot.yy",},
     {"name":"spr_Red_Gem_Beam_Standalone","order":4,"path":"sprites/spr_Red_Gem_Beam_Standalone/spr_Red_Gem_Beam_Standalone.yy",},
     {"name":"spr_Red_Gem_Beam_Start","order":22,"path":"sprites/spr_Red_Gem_Beam_Start/spr_Red_Gem_Beam_Start.yy",},

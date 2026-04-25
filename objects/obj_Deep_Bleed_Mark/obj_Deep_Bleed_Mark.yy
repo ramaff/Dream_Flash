@@ -13,7 +13,10 @@
     "name":"Item Stuff",
     "path":"folders/Objects/Item Stuff.yy",
   },
-  "parentObjectId":null,
+  "parentObjectId":{
+    "name":"obj_Depth",
+    "path":"objects/obj_Depth/obj_Depth.yy",
+  },
   "persistent":false,
   "physicsAngularDamping":0.1,
   "physicsDensity":0.5,
