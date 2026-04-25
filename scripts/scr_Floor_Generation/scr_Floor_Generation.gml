@@ -306,7 +306,7 @@ function scr_Floor_Generation() {
 			"spr_flash_base_g": spr_flash_base_g_xl,
 			"spr_flash_diagonal_brick_g": spr_flash_diagonal_brick_g_xl,
 			"spr_flash_marble_brick_g": spr_flash_marble_brick_g_xl,
-			"spr_feel_base_g": spr_feel_base_g_xl_v1,
+			"spr_feel_base_g": spr_feel_base_g_xl,
 			"spr_feel_brick_g": spr_feel_brick_g_xl,
 			"spr_dream_base_g": spr_dream_base_g_xl,
 			"spr_dream_brick_g": spr_dream_brick_g_xl,

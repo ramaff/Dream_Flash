@@ -1,5 +1,10 @@
 /// @description Insert description here
 // You can write your code in this editor
+
+if global.currenthearttype != 9 {
+	instance_destroy()	
+}
+
 if alarm[0] < 210 {
 	var _dist = point_distance(x, y, target.x, target.y)
 	direction = point_direction(x, y, target.x, target.y)

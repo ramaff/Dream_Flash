@@ -4,7 +4,7 @@ function scr_H10(){
 	var _current_weapon_stats = scr_Setup_Default_Shot_Stats();
 	
 	_current_weapon_stats.Shot_Sprite = "spr_Pure_Magic_Shot"
-	_current_weapon_stats.Shot_Type = "obj_Lesser_Soul_Shot"
+	_current_weapon_stats.Shot_Type = "obj_Magic_Heart_Bolt"
 	_current_weapon_stats.Shot_Count = ceil(3 * global.soulheartboost);
 	_current_weapon_stats.Shot_Orbital_Type = 2;
 	_current_weapon_stats.Shot_Orbital_Range = 165;

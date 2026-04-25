@@ -1,6 +1,7 @@
 // Script assets have changed for v2.3.0 see
 // https://help.yoyogames.com/hc/en-us/articles/360005277377 for more information
 function scr_Swap_Heart(_heart_id) {
+	global.currenthearttype = _heart_id;
 	var _heart_stats = Soul_Hearts_Control.current_heart_stats;
 	
 	scr_Modify_Soul_Stats_From_Heart(_heart_stats, -1 * global.soulheartboost);
