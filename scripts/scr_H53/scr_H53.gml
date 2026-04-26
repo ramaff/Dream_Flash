@@ -29,6 +29,11 @@ function scr_H53(){
         _current_weapon_stats.Shot_Trail_Color_1 = [255,42,0]
         _current_weapon_stats.Shot_Trail_Color_2 = [255,42,0]
 		
+		_current_weapon_stats.Shot_Fire = 2 * global.soulheartboost;
+		
+		_current_weapon_stats.Shot_Fire_Ticks = 3;
+		_current_weapon_stats.Shot_Fire_Time = 60;
+		
 		_current_weapon_stats.Shot_Extra_Hits_Frequency = 30
 			
 		_current_weapon_stats = scr_Setup_Weapon_Stats(_current_weapon_stats);
