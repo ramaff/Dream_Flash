@@ -35,7 +35,7 @@ function scr_Default_Figment_Stats() {
 	
 	Charge_Hold = 0;
 
-
+	/*
 	sBeamNum = 0;
 	sBeamNumMax = 100;
 	sWeaponUseFrame = 0;
@@ -61,6 +61,7 @@ function scr_Default_Figment_Stats() {
 	        bArrlength[i,j] = 0;
 	    }
 	}
+	*/
 	
 	/*for(bi = 0; bi < 10; bi++) {
 		Shot_Repetition[bi] = 0;

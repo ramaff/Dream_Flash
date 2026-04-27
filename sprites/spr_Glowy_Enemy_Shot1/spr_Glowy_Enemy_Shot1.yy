@@ -26,7 +26,7 @@
   "origin":4,
   "parent":{
     "name":"Basic Shots",
-    "path":"folders/Sprites/Boss Bullet Sprites/Basic Shots.yy",
+    "path":"folders/Sprites/Boss Bullet Sprites/v1/Basic Shots.yy",
   },
   "preMultiplyAlpha":false,
   "resourceType":"GMSprite",
@@ -68,7 +68,9 @@
     "timeUnits":1,
     "tracks":[
       {"$GMSpriteFramesTrack":"","builtinName":0,"events":[],"inheritsTrackColour":true,"interpolation":1,"isCreationTrack":false,"keyframes":{"$KeyframeStore<SpriteFrameKeyframe>":"","Keyframes":[
-            {"$Keyframe<SpriteFrameKeyframe>":"","Channels":{"0":{"$SpriteFrameKeyframe":"","Id":{"name":"da8a47ff-8ed8-4387-b920-eff3d16d7dc4","path":"sprites/spr_Glowy_Enemy_Shot1/spr_Glowy_Enemy_Shot1.yy",},"resourceType":"SpriteFrameKeyframe","resourceVersion":"2.0",},},"Disabled":false,"id":"a1bfcf59-2b1c-4836-9cb3-ee7b41ef09b4","IsCreationKey":false,"Key":0.0,"Length":1.0,"resourceType":"Keyframe<SpriteFrameKeyframe>","resourceVersion":"2.0","Stretch":false,},
+            {"$Keyframe<SpriteFrameKeyframe>":"","Channels":{
+                "0":{"$SpriteFrameKeyframe":"","Id":{"name":"da8a47ff-8ed8-4387-b920-eff3d16d7dc4","path":"sprites/spr_Glowy_Enemy_Shot1/spr_Glowy_Enemy_Shot1.yy",},"resourceType":"SpriteFrameKeyframe","resourceVersion":"2.0",},
+              },"Disabled":false,"id":"a1bfcf59-2b1c-4836-9cb3-ee7b41ef09b4","IsCreationKey":false,"Key":0.0,"Length":1.0,"resourceType":"Keyframe<SpriteFrameKeyframe>","resourceVersion":"2.0","Stretch":false,},
           ],"resourceType":"KeyframeStore<SpriteFrameKeyframe>","resourceVersion":"2.0",},"modifiers":[],"name":"frames","resourceType":"GMSpriteFramesTrack","resourceVersion":"2.0","spriteId":null,"trackColour":0,"tracks":[],"traits":0,},
     ],
     "visibleRange":{

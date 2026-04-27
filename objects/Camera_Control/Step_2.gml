@@ -8,7 +8,7 @@ var fac = (1 / tote_bosses) * potency
 
 if instance_exists(Floor_Layout_Control) and global.layerdeep < 1 {
 	var rsize = global.floor[global.currentroom, 3];
-	var ideal_zoom = power((1024 / rsize), 0.333);
+	var ideal_zoom = power((1024 / rsize), 0.25);
 	if ideal_zoom < 0.8 {
 		ideal_zoom = 0.8;
 	}
@@ -24,7 +24,7 @@ if instance_exists(Floor_Layout_Control) and global.layerdeep < 1 {
 			}
 			
 		}
-		ideal_zoom = power((1024 / (rsize + extra_zoom)), 0.333);
+		ideal_zoom = power((1024 / (rsize + extra_zoom)), 0.25);
 	}
 	
 	if instance_exists(obj_Class_Level_Up_Indicator) and global.level_up_camera_lock = 1 {
@@ -55,21 +55,14 @@ if instance_exists(obj_Soul_Parent) {
 	var yAv = 0;
 	
 	if global.cameramode = "Soul" {
-		var xAv = mean(obj_Soul_Parent.x * 4,room_width / 2,obj_Astral_Indicator.x) / 2;
-		var yAv = mean(obj_Soul_Parent.y * 4,room_height / 2,obj_Astral_Indicator.y) / 2;
-	
-		if instance_exists(obj_Wall_Of_Thoughts) {
-			if obj_Wall_Of_Thoughts.state = states.normal || obj_Wall_Of_Thoughts.state = states.jumping {
-				var xAv = mean(obj_Soul_Parent.x * 3,obj_Wall_Of_Thoughts.x * 2,obj_Astral_Indicator.x) / 2;
-				var yAv = mean(obj_Soul_Parent.y * 3,obj_Wall_Of_Thoughts.y * 2,obj_Astral_Indicator.y) / 2;
-			}
-		}
+		xAv = mean(obj_Soul_Parent.x * 6,room_width / 2,obj_Astral_Indicator.x * 2) / 3;
+		yAv = mean(obj_Soul_Parent.y * 6,room_height / 2,obj_Astral_Indicator.y * 2) / 3;
 	}
 	if global.cameramode = "Boss" {
 		
-		var totalaveragers = 9;
-		var xTote = (obj_Soul_Parent.x * 6) + (obj_Astral_Indicator.x * 1.5) + (room_width / 2 * 1.5);
-		var yTote = (obj_Soul_Parent.y * 6) + (obj_Astral_Indicator.y * 1.5) + (room_height / 2 * 1.5);
+		var totalaveragers = 8.5;
+		var xTote = (obj_Soul_Parent.x * 6) + (obj_Astral_Indicator.x * 1.5) + (room_width / 2);
+		var yTote = (obj_Soul_Parent.y * 6) + (obj_Astral_Indicator.y * 1.5) + (room_height / 2);
 
 		with (obj_Main_Boss_Parent) {
 			if state = states.normal || state = states.jumping {
@@ -84,16 +77,16 @@ if instance_exists(obj_Soul_Parent) {
 	}
 	
 	if instance_exists(obj_In_Game_Recollection_Cloud) {
-		xAv = mean(xAv * 5, obj_In_Game_Recollection_Cloud.x) / 3;	
-		yAv = mean(yAv * 5, obj_In_Game_Recollection_Cloud.y) / 3;	
+		xAv = mean(xAv * 7, obj_In_Game_Recollection_Cloud.x) / 4;	
+		yAv = mean(yAv * 7, obj_In_Game_Recollection_Cloud.y) / 4;	
 	}
 	
 	var camX = clamp((xAv - (view_width_zoom / 2)), 0, room_width - view_width_zoom);
 	var camY = clamp((yAv - (view_height_zoom / 2)), 0, room_height - view_height_zoom);
 	
 	if instance_exists(obj_Class_Level_Up_Indicator) and global.level_up_camera_lock = 1 {
-		var camX = (room_width / 2) - (view_width_zoom / 2)
-		var camY = (room_height / 2) - (view_height_zoom / 2)
+		camX = (room_width / 2) - (view_width_zoom / 2)
+		camY = (room_height / 2) - (view_height_zoom / 2)
 	}
 
 	if instance_exists(Tutorial_Control) {

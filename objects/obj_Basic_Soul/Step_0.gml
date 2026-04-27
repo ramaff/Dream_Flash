@@ -15,7 +15,7 @@ if soulDeathFadeSpeed = 0 {
     scr_Invincibility_Frames();
 }
 
-if InputCheck(INPUT_VERB.SHOOT ) || variable_struct_exists(soul_step_status_effects, "temper") {
+if InputCheck(INPUT_VERB.SHOOT ) || variable_struct_exists(soul_step_status_effects, "temper") || variable_struct_exists(soul_step_status_effects, "rocket") {
 	event_user(0)	
 }
 if InputReleased(INPUT_VERB.SHOOT ) {
@@ -77,6 +77,9 @@ if soulAcceleration < 1 {
 	soulAcceleration += 0.1;	
 }
 //soulFriction = 0.1;
+if variable_struct_exists(soul_step_status_effects, "rocket") {
+	sdelayregenfactor = sdelayregenfactor * (0.75 + (scr_Get_Status_Time("rocket") / 150))
+}
 
 scr_Execute_List_Of_Scripts(soul_step_after_scripts)
 //scr_Soul_Item_Step_After();

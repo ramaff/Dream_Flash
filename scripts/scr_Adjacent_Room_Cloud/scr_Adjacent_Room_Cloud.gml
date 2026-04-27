@@ -1,8 +1,13 @@
 function scr_Adjacent_Room_Cloud() {
 	
 	draw_sprite(spr_Recollection_Hover_Cloud,0,x,y);
+	
+	var _leave_add = 0;
+	if instance_exists(cloud) {
+		_leave_add -= 50;
+	}
 
-	var _leave = scr_Leave_Condition();
+	var _leave = scr_Leave_Condition(_leave_add);
 	var roomGoX = _leave[1]
 	var roomGoY = _leave[2]
 

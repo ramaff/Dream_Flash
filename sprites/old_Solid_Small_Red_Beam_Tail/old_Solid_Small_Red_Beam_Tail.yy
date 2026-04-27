@@ -31,7 +31,7 @@
   "origin":4,
   "parent":{
     "name":"Laser Beams",
-    "path":"folders/Sprites/Boss Bullet Sprites/Laser Beams.yy",
+    "path":"folders/Sprites/Boss Bullet Sprites/v1/Laser Beams.yy",
   },
   "preMultiplyAlpha":false,
   "resourceType":"GMSprite",
@@ -73,12 +73,24 @@
     "timeUnits":1,
     "tracks":[
       {"$GMSpriteFramesTrack":"","builtinName":0,"events":[],"inheritsTrackColour":true,"interpolation":1,"isCreationTrack":false,"keyframes":{"$KeyframeStore<SpriteFrameKeyframe>":"","Keyframes":[
-            {"$Keyframe<SpriteFrameKeyframe>":"","Channels":{"0":{"$SpriteFrameKeyframe":"","Id":{"name":"43645eb0-5d6f-4671-80da-1c1ec0283a3d","path":"sprites/old_Solid_Small_Red_Beam_Tail/old_Solid_Small_Red_Beam_Tail.yy",},"resourceType":"SpriteFrameKeyframe","resourceVersion":"2.0",},},"Disabled":false,"id":"6871995b-735d-4458-92ee-dd1b2191c35b","IsCreationKey":false,"Key":0.0,"Length":1.0,"resourceType":"Keyframe<SpriteFrameKeyframe>","resourceVersion":"2.0","Stretch":false,},
-            {"$Keyframe<SpriteFrameKeyframe>":"","Channels":{"0":{"$SpriteFrameKeyframe":"","Id":{"name":"11c7bc06-5089-482e-a3f6-689723617267","path":"sprites/old_Solid_Small_Red_Beam_Tail/old_Solid_Small_Red_Beam_Tail.yy",},"resourceType":"SpriteFrameKeyframe","resourceVersion":"2.0",},},"Disabled":false,"id":"3c67b02b-698d-4e70-b23a-3c30a204ff06","IsCreationKey":false,"Key":1.0,"Length":1.0,"resourceType":"Keyframe<SpriteFrameKeyframe>","resourceVersion":"2.0","Stretch":false,},
-            {"$Keyframe<SpriteFrameKeyframe>":"","Channels":{"0":{"$SpriteFrameKeyframe":"","Id":{"name":"fe790efa-2828-4285-821a-839bca2ed718","path":"sprites/old_Solid_Small_Red_Beam_Tail/old_Solid_Small_Red_Beam_Tail.yy",},"resourceType":"SpriteFrameKeyframe","resourceVersion":"2.0",},},"Disabled":false,"id":"5f3890e6-37e0-4c3c-bf33-4c62581815fe","IsCreationKey":false,"Key":2.0,"Length":1.0,"resourceType":"Keyframe<SpriteFrameKeyframe>","resourceVersion":"2.0","Stretch":false,},
-            {"$Keyframe<SpriteFrameKeyframe>":"","Channels":{"0":{"$SpriteFrameKeyframe":"","Id":{"name":"7a90edb8-1f14-4164-9948-d2ca5f8e7881","path":"sprites/old_Solid_Small_Red_Beam_Tail/old_Solid_Small_Red_Beam_Tail.yy",},"resourceType":"SpriteFrameKeyframe","resourceVersion":"2.0",},},"Disabled":false,"id":"34300d14-d75c-4f37-baab-3786dbcdfffa","IsCreationKey":false,"Key":3.0,"Length":1.0,"resourceType":"Keyframe<SpriteFrameKeyframe>","resourceVersion":"2.0","Stretch":false,},
-            {"$Keyframe<SpriteFrameKeyframe>":"","Channels":{"0":{"$SpriteFrameKeyframe":"","Id":{"name":"863add87-6eed-4288-8736-6ddd17be3e10","path":"sprites/old_Solid_Small_Red_Beam_Tail/old_Solid_Small_Red_Beam_Tail.yy",},"resourceType":"SpriteFrameKeyframe","resourceVersion":"2.0",},},"Disabled":false,"id":"ccb70fd2-aeaa-47ff-9ef3-874fe0f88ea4","IsCreationKey":false,"Key":4.0,"Length":1.0,"resourceType":"Keyframe<SpriteFrameKeyframe>","resourceVersion":"2.0","Stretch":false,},
-            {"$Keyframe<SpriteFrameKeyframe>":"","Channels":{"0":{"$SpriteFrameKeyframe":"","Id":{"name":"557e9b15-5732-4764-802c-56221a58ab6b","path":"sprites/old_Solid_Small_Red_Beam_Tail/old_Solid_Small_Red_Beam_Tail.yy",},"resourceType":"SpriteFrameKeyframe","resourceVersion":"2.0",},},"Disabled":false,"id":"dd2a3f31-e11c-4278-a873-f0933e76d978","IsCreationKey":false,"Key":5.0,"Length":1.0,"resourceType":"Keyframe<SpriteFrameKeyframe>","resourceVersion":"2.0","Stretch":false,},
+            {"$Keyframe<SpriteFrameKeyframe>":"","Channels":{
+                "0":{"$SpriteFrameKeyframe":"","Id":{"name":"43645eb0-5d6f-4671-80da-1c1ec0283a3d","path":"sprites/old_Solid_Small_Red_Beam_Tail/old_Solid_Small_Red_Beam_Tail.yy",},"resourceType":"SpriteFrameKeyframe","resourceVersion":"2.0",},
+              },"Disabled":false,"id":"6871995b-735d-4458-92ee-dd1b2191c35b","IsCreationKey":false,"Key":0.0,"Length":1.0,"resourceType":"Keyframe<SpriteFrameKeyframe>","resourceVersion":"2.0","Stretch":false,},
+            {"$Keyframe<SpriteFrameKeyframe>":"","Channels":{
+                "0":{"$SpriteFrameKeyframe":"","Id":{"name":"11c7bc06-5089-482e-a3f6-689723617267","path":"sprites/old_Solid_Small_Red_Beam_Tail/old_Solid_Small_Red_Beam_Tail.yy",},"resourceType":"SpriteFrameKeyframe","resourceVersion":"2.0",},
+              },"Disabled":false,"id":"3c67b02b-698d-4e70-b23a-3c30a204ff06","IsCreationKey":false,"Key":1.0,"Length":1.0,"resourceType":"Keyframe<SpriteFrameKeyframe>","resourceVersion":"2.0","Stretch":false,},
+            {"$Keyframe<SpriteFrameKeyframe>":"","Channels":{
+                "0":{"$SpriteFrameKeyframe":"","Id":{"name":"fe790efa-2828-4285-821a-839bca2ed718","path":"sprites/old_Solid_Small_Red_Beam_Tail/old_Solid_Small_Red_Beam_Tail.yy",},"resourceType":"SpriteFrameKeyframe","resourceVersion":"2.0",},
+              },"Disabled":false,"id":"5f3890e6-37e0-4c3c-bf33-4c62581815fe","IsCreationKey":false,"Key":2.0,"Length":1.0,"resourceType":"Keyframe<SpriteFrameKeyframe>","resourceVersion":"2.0","Stretch":false,},
+            {"$Keyframe<SpriteFrameKeyframe>":"","Channels":{
+                "0":{"$SpriteFrameKeyframe":"","Id":{"name":"7a90edb8-1f14-4164-9948-d2ca5f8e7881","path":"sprites/old_Solid_Small_Red_Beam_Tail/old_Solid_Small_Red_Beam_Tail.yy",},"resourceType":"SpriteFrameKeyframe","resourceVersion":"2.0",},
+              },"Disabled":false,"id":"34300d14-d75c-4f37-baab-3786dbcdfffa","IsCreationKey":false,"Key":3.0,"Length":1.0,"resourceType":"Keyframe<SpriteFrameKeyframe>","resourceVersion":"2.0","Stretch":false,},
+            {"$Keyframe<SpriteFrameKeyframe>":"","Channels":{
+                "0":{"$SpriteFrameKeyframe":"","Id":{"name":"863add87-6eed-4288-8736-6ddd17be3e10","path":"sprites/old_Solid_Small_Red_Beam_Tail/old_Solid_Small_Red_Beam_Tail.yy",},"resourceType":"SpriteFrameKeyframe","resourceVersion":"2.0",},
+              },"Disabled":false,"id":"ccb70fd2-aeaa-47ff-9ef3-874fe0f88ea4","IsCreationKey":false,"Key":4.0,"Length":1.0,"resourceType":"Keyframe<SpriteFrameKeyframe>","resourceVersion":"2.0","Stretch":false,},
+            {"$Keyframe<SpriteFrameKeyframe>":"","Channels":{
+                "0":{"$SpriteFrameKeyframe":"","Id":{"name":"557e9b15-5732-4764-802c-56221a58ab6b","path":"sprites/old_Solid_Small_Red_Beam_Tail/old_Solid_Small_Red_Beam_Tail.yy",},"resourceType":"SpriteFrameKeyframe","resourceVersion":"2.0",},
+              },"Disabled":false,"id":"dd2a3f31-e11c-4278-a873-f0933e76d978","IsCreationKey":false,"Key":5.0,"Length":1.0,"resourceType":"Keyframe<SpriteFrameKeyframe>","resourceVersion":"2.0","Stretch":false,},
           ],"resourceType":"KeyframeStore<SpriteFrameKeyframe>","resourceVersion":"2.0",},"modifiers":[],"name":"frames","resourceType":"GMSpriteFramesTrack","resourceVersion":"2.0","spriteId":null,"trackColour":0,"tracks":[],"traits":0,},
     ],
     "visibleRange":null,

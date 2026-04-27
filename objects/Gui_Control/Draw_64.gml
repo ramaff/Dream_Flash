@@ -24,12 +24,7 @@ if instance_exists(obj_Soul_Parent) {
 	if epercent < 0 {
         epercent = 0;
     }
-	
-    //draw_sprite(spr_Essence_Container,round(epercent / 3.7),winx - 32, winy - 40);
 	var epercent1 = clamp(epercent, 0, 100) / 100;
-	/*if epercent1 > 100 {
-		epercent1 = 100;	
-	} */
 	
 	draw_sprite_ext(spr_Essence_Container,0,winx - 72,winy - 96,0.5,0.5,0,c_white,1);
 	draw_sprite_part_ext(spr_Essence_Container,1,0,172 * (1 - epercent1),89,172,winx - 72, winy - 96 + (172 / 2) * (1 - epercent1),0.5,0.5,c_white,1);
@@ -45,11 +40,6 @@ if instance_exists(obj_Soul_Parent) {
 		}
 	}
 	
-	/*var epercent2 = epercent;
-	if epercent2 > 300 {
-		epercent2 = 300;	
-	} */
-	
 	if epercent > 100 {
 		var _ess_floor = 100;
 		var _xxx = -64;
@@ -60,14 +50,6 @@ if instance_exists(obj_Soul_Parent) {
 			_xxx -= 64;
 		}
 	}
-	
-	/*if epercent > 600 {
-		epercent = 600;	
-	}
-	
-	if epercent > 300 {
-		draw_sprite_part_ext(spr_OverOverEssence_Container,1,0,172 * (1 - ((epercent - 300) / 300)),89,172,winx - 72, winy - 96 + (172 / 2) * (1 - ((epercent - 300) / 300)),0.5,0.5,c_white,1);
-	} */
 	
     scr_Weapon_GUI(Soul_Weapons_Control.weapon_slot_info);
 

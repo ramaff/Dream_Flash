@@ -46,19 +46,19 @@ function scr_Floor_Generation() {
 	    global.floor[i,3] = 1024;
 	    if i = 15 and global.currentchapter = 1 {
 	        global.floor[i,0] = "Super Boss";
-	        global.floor[i,3] = 1536;
+	        global.floor[i,3] = 1280;
 	    }
 	    if i = 15 and global.currentchapter = 2 {
 	        global.floor[i,0] = "Super Boss";
-	        global.floor[i,3] = 1536;
+	        global.floor[i,3] = 1280;
 	    }
 		if i = 18 and global.currentchapter = 3 {
 	        global.floor[i,0] = "Super Boss";
-	        global.floor[i,3] = 1536;
+	        global.floor[i,3] = 1280;
 	    }
 		if i = 15 and global.currentchapter = 4 {
 	        global.floor[i,0] = "Super Boss";
-	        global.floor[i,3] = 1536;
+	        global.floor[i,3] = 1280;
 	    }
 	    //if i = 17 and global.currentchapter = 3 {
 	    //    global.floor[i,0] = "Super Boss";
@@ -87,7 +87,7 @@ function scr_Floor_Generation() {
 	        if global.currentchapter = 1 {
 				var k = 1
 				for (k = 1; k < 4; k++) {
-					global.floor[list[| k],4] = spr_flash_marble_brick_g;	
+					global.floor[list[| k],4] = spr_flash_marble_g;	
 				}
 				for (k = 4; k < 8; k++) {
 					global.floor[list[| k],4] = spr_flash_diagonal_brick_g;	
@@ -100,8 +100,8 @@ function scr_Floor_Generation() {
 	        if global.currentchapter = 2 {
 				
 				var k = 1
-				for (k = 1; k < 3; k++) {
-					global.floor[list[| k],4] = spr_dungeon_brick_g;	
+				for (k = 1; k < 4; k++) {
+					global.floor[list[| k],4] = spr_feel_marble_g;	
 				}
 				for (k = 4; k < 10; k++) {
 					global.floor[list[| k],4] = spr_feel_brick_g;	
@@ -149,13 +149,13 @@ function scr_Floor_Generation() {
 			/*if global.floor[i,0] = "Boss" {
 				global.floor[i,27] = scr_Hazard_Choose(i,global.floor[i,4]);
 			} */
-	        if global.floor[i,23] = 2 {
+	        /*if global.floor[i,23] = 2 {
 	            global.floor[i,3] += 128;
 	        }
 	        if global.floor[i,0] = "Boss" {
 	            global.floor[i,3] += 12 * global.floor[i,24];
 				global.floor[i,3] += random(8) * global.floor[i,24];
-	        }
+	        } */
 	        if i = global.spiritRoom {
 	            global.floor[i,25] = scr_Spirit_Choose("Good");
 	            //global.floor[i,3] += 128;
@@ -272,13 +272,6 @@ function scr_Floor_Generation() {
 	        global.floor[i,23] = global.boost; // Boss Boost or Third Item
 	        global.floor[i,24] = 0;
 			//global.floor[i,27] = scr_Hazard_Choose(i,global.floor[i,4]);
-	        if global.floor[i,23] = 2 {
-	            global.floor[i,3] += 128;
-	        }
-	        if global.floor[i,0] = "Boss" {
-	            global.floor[i,3] += 8 * global.floor[i,24];
-				global.floor[i,3] += random(8) * global.floor[i,24];
-	        }
 			global.floor[i,28] = scr_Boss_Choose(baseroom, 1, 5); // Boss Type or Item Type
 			global.floor[i,29] = global.champ; // Boss Champ or Second Item
 	        global.floor[i,30] = global.boost; // Boss Boost or Third Item
@@ -300,9 +293,6 @@ function scr_Floor_Generation() {
 	        global.floor[i,23] = 0; // Boss Boost or Third Item
 	        global.floor[i,24] = 0;
 			//global.floor[i,27] = scr_Hazard_Choose(i,global.floor[i,4]);
-	        if global.floor[i,23] = 2 {
-	            global.floor[i,3] += 256;
-	        }
 		}
 	
 		//Print_DF($"PRE: _i: {i}, floor size: {global.floor[i,3]}")

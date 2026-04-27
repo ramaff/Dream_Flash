@@ -46,11 +46,11 @@ function scr_Boss_Teleport_v2_Return(_border_offset = -128, _near_soul = -1, _ne
 	}
 
 	if _near_boss > -1 {
-		if distance_to_point(_potx, _poty) > _og_away {
+		if distance_to_point(_potx, _poty) > _near_boss {
 		    _og_away = true;
 		}
 	} else {
-		_og_away = true
+		_og_away = true;
 	}
 
 	if _inside = 0 || _soul_away = 1 || _og_away = false {

@@ -1,13 +1,6 @@
 /// @description Insert description here
 // You can write your code in this editor
 
-/*var ang = point_direction(x,y,obj_In_Game_Recollection_Cloud.x, obj_In_Game_Recollection_Cloud.y);
-while distance_to_object(obj_In_Game_Recollection_Cloud) < 100 {
-	x += lengthdir_x(10, ang + 180);
-	y += lengthdir_y(10, ang + 180);
-	ang = point_direction(x,y,obj_In_Game_Recollection_Cloud.x, obj_In_Game_Recollection_Cloud.y);
-} */
-
 if instance_exists(target) {
 
 	with instance_create(target.x + (xx_offset / 4), target.y + (yy_offset / 8), obj_In_Game_Recollection_Leadup_Cloud) {

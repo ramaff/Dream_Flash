@@ -15,12 +15,12 @@ function scr_Q03(_minion = false, _cw = current_weapon_stats){
 			_cw.Shot_XX = room_center - (effect_diameter / 2) + random(effect_diameter) - x;
 		    _cw.Shot_YY = room_center - (effect_diameter / 2) + random(effect_diameter) - y;
 		
+			// This script is called within weapon output, so no need to do all the modification/setup
 			if !_minion {
 				scr_Shot_Creation(_cw);
 			} else {
 				scr_Soul_Spawn(_cw);
 			}
-			//scr_Weapon_Output(true, _minion)
 		
 			global.Q3count -= 4;
 		}

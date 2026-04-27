@@ -60,16 +60,9 @@ function scr_S01() {
             Shot_Forward_Amount: 40
 		};
 		
-		/*if hitType = "Boss" and instance_exists(obj_Boss_Parent) {
-			current_weapon_stats.Shot_Count = 5;
-			current_weapon_stats.Shot_Mouse = 0;
-			current_weapon_stats.Shot_Direction = point_direction(x,y,instance_nearest(x,y,obj_Boss_Parent).x,instance_nearest(x,y,obj_Boss_Parent).y);
-		} */
-		
 		current_weapon_stats = scr_Setup_Weapon_Stats(current_weapon_stats);
 		scr_Shot_Creation(current_weapon_stats);
 
 	}
-
 
 }

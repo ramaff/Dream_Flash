@@ -25,19 +25,19 @@ function scr_Draw_Heart(_heart_num, _percent, _scale, _xx = x, _yy = y, _alpha =
 			scr_Draw_Heart_Health(spr_Fart_Heart, _xx, _yy, _scale, _alpha, _percent, 108, 104);
 		    break;
 		case(8): 
-			scr_Draw_Heart_Health(spr_Spike_Heart, _xx, _yy, _scale, _alpha, _percent, 78, 72, 21);
+			scr_Draw_Heart_Health(spr_Spike_Heart, _xx, _yy, _scale, _alpha, _percent, 128, 95, 0);
 		    break;
 		case(9): 
-			scr_Draw_Heart_Health(spr_Bleeding_Heart, _xx, _yy, _scale, _alpha, _percent, 91, 72, 27, 3);
+			scr_Draw_Heart_Health(spr_Bleeding_Heart, _xx, _yy, _scale, _alpha, _percent, 128, 110, 0, 0);
 		    break;
 		case(10): 
-			scr_Draw_Heart_Health(spr_Magician_Heart, _xx, _yy, _scale, _alpha, _percent, 85, 121, 0, 0, 10);
+			scr_Draw_Heart_Health(spr_Magician_Heart, _xx, _yy, _scale, _alpha, _percent, 128, 107, 0, 0, 0);
 		    break;
 		case(11): 
-			scr_Draw_Heart_Health(spr_Rocket_Heart, _xx, _yy, _scale, _alpha, _percent, 78, 72, 33, 0, 0);
+			scr_Draw_Heart_Health(spr_Rocket_Heart, _xx, _yy, _scale, _alpha, _percent, 128, 120, 0, 0, 0);
 		    break;
 		case(12): 
-			scr_Draw_Heart_Health(spr_Lightning_Heart, _xx, _yy, _scale, _alpha, _percent, 78, 88, 0, 0, -4);
+			scr_Draw_Heart_Health(spr_Lightning_Heart, _xx, _yy, _scale, _alpha, _percent, 128, 111, 0, 0, 0);
 		    break;
 		case(13): 
 			scr_Draw_Heart_Health(spr_Scaley_Heart, _xx, _yy, _scale, _alpha, _percent, 84, 78);

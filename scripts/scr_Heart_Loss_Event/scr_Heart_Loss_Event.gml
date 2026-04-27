@@ -13,5 +13,9 @@ function scr_Heart_Loss_Event(current_heart_type) {
 	//scr_P02_Swap();
 	
 	scr_F06(25);
+	
+	with(obj_Soul_Parent) {
+		alarm[2] = 1;
+	}
 
 }

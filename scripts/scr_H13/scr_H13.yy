@@ -5,8 +5,8 @@
   "isDnD":false,
   "name":"scr_H13",
   "parent":{
-    "name":"Heart Commands",
-    "path":"folders/Scripts/Heart Commands.yy",
+    "name":"Specific Heart Scripts",
+    "path":"folders/Scripts/Heart Commands/Specific Heart Scripts.yy",
   },
   "resourceType":"GMScript",
   "resourceVersion":"2.0",

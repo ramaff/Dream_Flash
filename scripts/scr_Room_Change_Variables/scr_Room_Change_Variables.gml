@@ -27,7 +27,12 @@ function scr_Room_Change_Variables() {
 	scr_L01_Recharge();
 	scr_W05_Reload();
 	
-	global.OC4Debuff = 0;
+	if global.OC4Debuff > 0 {
+		global.OC4Debuff = 0;
+		obj_Soul_Parent.ssize += 0.2 + (0.2 * global.OC[4]);
+		obj_Soul_Parent.sshotsizefactor += 0.2 * global.OC[4];
+		obj_Soul_Parent.spowerfactor += 3 * global.OC[4];
+	}
 
 
 }

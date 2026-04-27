@@ -7,7 +7,13 @@ function scr_OC04_Check(damage) {
 
 	if global.OC[4] > 0 {
 		damage += damage * (0.5 * global.OC4Debuff);
-		global.OC4Debuff = global.OC[4];	
+		if global.OC4Debuff <= 0 {
+			//global.soulshotsizefactor -= 0.5;
+			obj_Soul_Parent.ssize -= 0.2 + (0.2 * global.OC[4]);
+			obj_Soul_Parent.sshotsizefactor -= 0.2 * global.OC[4];
+			obj_Soul_Parent.spowerfactor -= 3 * global.OC[4];
+		}
+		global.OC4Debuff = global.OC[4];
 	}
 	
 	return damage;

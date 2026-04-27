@@ -243,7 +243,7 @@ function scr_Load_Run() {
 			
 		
 		global.clarityBomb = ini_read_real("Run","clarityBomb",0);
-	    global.OC4Debuff = ini_read_string("Run","OC4Debuff","None");
+	    global.OC4Debuff = ini_read_real("Run","OC4Debuff", 0);
 		global.downwardSpiralBoost = ini_read_real("Run","downwardSpiralBoost",0);
 		global.B06HeartConversions = ini_read_real("Run","B06HeartConversions",0);
 		

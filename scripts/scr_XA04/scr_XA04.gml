@@ -7,10 +7,10 @@ function scr_XA04() {
 				var _i;
 				var _max = array_length(heart);
 
-				for(_i = 0; _i < _max; _i++) {
-					var heart_val = heart[i].heart_id
+				for(_i = _max - 1; _i >= 0; _i--) {
+					var heart_val = heart[_i].heart_id
 					if heart_val != 103 and heart_val != 6 and heart_val != 51 and heart_val != 52 and heart_val != 53 and heart_val != 0 {
-						heart[i].heart_id = 53;
+						heart[_i].heart_id = 53;
 						break;
 					}
 				}

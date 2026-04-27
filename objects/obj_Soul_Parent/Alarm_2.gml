@@ -28,6 +28,33 @@ if cHeart = 7 {
 	}
 }
 
+if cHeart = 8 {
+	scr_H08_Status_Build_Up()
+	heartReload = 1;
+}
+
+if cHeart = 9 {
+	with instance_create_depth(x + 50, y, depth + 1, obj_Bleeding_Heart_Blade) {
+		target = other.id;
+		alarm[0] = 90;
+		image_angle = -90;
+		
+		image_xscale = 0.5;
+		image_yscale = 0.5;
+	}
+	heartReload = 99999999;
+}
+
+if cHeart = 10 {
+	scr_H10()
+	heartReload = 99999999;
+}
+
+if cHeart = 12 {
+	scr_H12()
+	heartReload = 6;	
+}
+
 if cHeart = 17 {
 	scr_H17_Bubble();	
 }

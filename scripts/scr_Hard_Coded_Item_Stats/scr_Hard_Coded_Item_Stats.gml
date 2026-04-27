@@ -97,6 +97,15 @@ function scr_Hard_Coded_Item_Stats(itemVal, items_to_add = 1, reload = false) {
 	if itemVal = "B01" {
 	    global.soulhpadd += 6;
 	    obj_Soul_Parent.shpadd += 6;
+		if !reload {
+			var _i;
+			var _max = array_length(Soul_Hearts_Control.heart);
+
+			for(_i = 0; _i < _max; _i++) {
+				Soul_Hearts_Control.heart[_i].health += 6;
+				Soul_Hearts_Control.heart[_i].max_health += 6;
+			}
+		}
 	    //global.B[1]++;
 	}
 	if itemVal = "B02" {
@@ -117,6 +126,9 @@ function scr_Hard_Coded_Item_Stats(itemVal, items_to_add = 1, reload = false) {
 			for(_i = 0; _i < _max; _i++) {
 				Soul_Hearts_Control.heart[_i].survival_hits++;
 				Soul_Hearts_Control.heart[_i].max_survival_hits++;
+				
+				Soul_Hearts_Control.heart[_i].health += 2;
+				Soul_Hearts_Control.heart[_i].max_health += 2;
 			}
 		}
 	    //global.B[4]++;
@@ -144,6 +156,15 @@ function scr_Hard_Coded_Item_Stats(itemVal, items_to_add = 1, reload = false) {
 	    //global.B[8]++;
 		global.soulhpadd += 2;
 	    obj_Soul_Parent.shpadd += 2;
+		if !reload {
+			var _i;
+			var _max = array_length(Soul_Hearts_Control.heart);
+
+			for(_i = 0; _i < _max; _i++) {
+				Soul_Hearts_Control.heart[_i].health += 2;
+				Soul_Hearts_Control.heart[_i].max_health += 2;
+			}
+		}
 	}
 	if itemVal = "B09" {
 	    //global.B[9]++;
@@ -163,6 +184,15 @@ function scr_Hard_Coded_Item_Stats(itemVal, items_to_add = 1, reload = false) {
 	    obj_Soul_Parent.shpadd += 4;
 	    global.soulhealthregenadd += 5;
 	    obj_Soul_Parent.shealthregenadd += 5;
+		if !reload {
+			var _i;
+			var _max = array_length(Soul_Hearts_Control.heart);
+
+			for(_i = 0; _i < _max; _i++) {
+				Soul_Hearts_Control.heart[_i].health += 4;
+				Soul_Hearts_Control.heart[_i].max_health += 4;
+			}
+		}
 	    //global.B[13]++;
 	}
 	if itemVal = "B14" {
@@ -902,6 +932,10 @@ function scr_Hard_Coded_Item_Stats(itemVal, items_to_add = 1, reload = false) {
 	if itemVal = "OC04" {
 		global.soulpowerfactor += 3;
 	    obj_Soul_Parent.spowerfactor += 3;
+		global.soulshotsizefactor += 0.2;
+	    obj_Soul_Parent.sshotsizefactor += 0.2;
+		global.soulsize += 0.2;
+		obj_Soul_Parent.ssize += 0.2;
 	}
 
 	if itemVal = "P01" {

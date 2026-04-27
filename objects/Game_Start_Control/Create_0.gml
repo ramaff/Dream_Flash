@@ -60,19 +60,8 @@ instance_create(x,y, Soul_Weapons_Control);
 instance_create(x,y, Master_Depth_Draw_Control);
 instance_create(x,y, Pause_Control);
 instance_create(x,y, Floor_Layout_Control);
-//instance_create(x,y, Camera_Control);
-//instance_create(x,y, Music_Control);
 instance_create(x,y, obj_Light_Control);
 instance_create(x,y, obj_Particle_Control);
-//instance_create(x,y, obj_Bloom_Control);
-
-//instance_create(x,y,obj_Dream_Light_Setup);
-
-/*
-if global.gameTutorial < 5 {
-    instance_create(room_width / 2,room_height / 2, Tutorial_Control);
-}
-*/
 
 alarm[0] = 1;
 //alarm[0] = 15;

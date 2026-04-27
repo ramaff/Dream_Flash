@@ -1,4 +1,4 @@
-function scr_Sound_Effect(_snd) {
+function scr_Sound_Effect(_snd, _gain = 1) {
 	
 	if is_array(_snd) {
 		_snd = _snd[irandom(array_length(_snd) - 1)]
@@ -7,7 +7,7 @@ function scr_Sound_Effect(_snd) {
 	
 
 	audio_sound_gain(_snd,global.gameSound / 100,0);
-	audio_play_sound(_snd, 10, false);
+	audio_play_sound(_snd, 10, false, _gain, 0, 0.8 + random(0.4));
 
 
 }

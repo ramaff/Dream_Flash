@@ -1,22 +1,25 @@
 
 if surface_exists(surf) {
+	
+	if global.currentchapter = 1 {
+		flash_color = make_color_rgb(150,200,255);	
+	} else if global.currentchapter = 2 {
+		flash_color = make_color_rgb(255,150,200);	
+	} else if global.currentchapter = 3 {
+		flash_color = make_color_rgb(205,150,255);	
+	} else {
+		flash_color = make_color_rgb(205,150,255);	
+	}
 
     var _room_environment = global.floor[global.currentroom,4];
     
-    global.roomdarkness = 0.025;
+    global.roomdarkness = 0.025 * global.currentchapter;
 	
-	if _room_environment = spr_flash_marble_brick_g || _room_environment = spr_flash_diagonal_brick_g {
-		global.roomdarkness = 0.05;
+	if _room_environment = spr_flash_marble_g || _room_environment = spr_flash_diagonal_brick_g || _room_environment = spr_feel_marble_g {
+		global.roomdarkness += 0.025;
 	}
     
     var _darkness = global.roomdarkness;
-    
-	/*if _darkness > 1 {
-		_darkness = 1;	
-	}
-	if _darkness < 0 {
-		_darkness = 0;	
-	} */
 
 	if global.currentdarkness > 1 {
 		global.currentdarkness = 1;	

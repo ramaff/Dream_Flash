@@ -31,13 +31,13 @@ function scr_Boss_Choose(roomNum, exclude, difficultyAdd = 0) {
 	
 	if global.currentchapter = 1 {
 	    _base_pool =      [1, 3, 5, 9, 18, 24, 25, 42, 44, 57, 58, 98]
-		_mini_boss_pool = [12, 13, 14, 16, 20, 37, 43, 59, 61, 62]
+		_mini_boss_pool = [12, 13, 14, 16, 19, 20, 37, 43, 59, 61]
 		_mini_chance = 2;
 		
 	}
 	if global.currentchapter = 2 {
-	    _base_pool = [2,3,6,10,14,17,23,26,27,32,34,35,36,38,45,48,64];
-		_mini_boss_pool = [66, 67, 68, 69, 70]
+	    _base_pool = [2,3,6,10,17,26,27,32,34,36,38,45,48,64];
+		_mini_boss_pool = [23, 35, 66, 67, 68, 69, 70]
 		_mini_chance = 3.5
 		
 	}
@@ -186,15 +186,15 @@ function scr_Boss_Choose(roomNum, exclude, difficultyAdd = 0) {
 
 	if bossform = 14.1 // Spooked Spirit
 	{
-		if global.currentchapter = 1 {
+		//if global.currentchapter = 1 {
 			bosstype = obj_frightful_spirit_v2;
 			difficulty = 2;
 			global.champ = 0;
-		} else {
+		/*} else {
 			bosstype = obj_Spooked_Spirit;
 			difficulty = 4;
 			global.champ = choose(1,2,8);
-		}
+		} */
 		//global.champ = 2;
 	}
 
@@ -230,9 +230,8 @@ function scr_Boss_Choose(roomNum, exclude, difficultyAdd = 0) {
 
 	if bossform = 19.1 // Tri Ghoul
 	{
-	    bosstype = obj_Tri_Ghoul;
-	    difficulty = 2;
-	    global.champ = choose(0,1,8);
+	    bosstype = obj_whack_a_soul;
+	    difficulty = 1;
 		//global.champ = 8;
 		//global.champ = 1;
 	}
@@ -262,9 +261,9 @@ function scr_Boss_Choose(roomNum, exclude, difficultyAdd = 0) {
 
 	if bossform = 23.1 // Heart Ache
 	{
-	    bosstype = obj_Heart_Ache;
-	    difficulty = 5;
-	    global.champ = 0 + irandom(0);
+	    bosstype = obj_heart_ache_v2;
+	    difficulty = 3.5;
+	    //global.champ = 0 + irandom(0);
 		//global.champ = 0;
 	}
 
@@ -357,9 +356,9 @@ function scr_Boss_Choose(roomNum, exclude, difficultyAdd = 0) {
 	}
 	if bossform = 35.1 // Peering Spectre
 	{
-	    bosstype = obj_Peering_Spectre;
-	    difficulty = 4;
-	    global.champ = choose(0,1);
+	    bosstype = obj_grim_apparition_v2;
+	    difficulty = 3.5;
+	    //global.champ = choose(0,1);
 	}
 	if bossform = 36.1 // Dream Invader
 	{
@@ -471,7 +470,7 @@ function scr_Boss_Choose(roomNum, exclude, difficultyAdd = 0) {
 	if bossform = 59.1
 	{
 	    bosstype = obj_will_wisp_heart;
-	    difficulty = 1.5;
+	    difficulty = 2;
 	}
 	if bossform = 60.1
 	{
