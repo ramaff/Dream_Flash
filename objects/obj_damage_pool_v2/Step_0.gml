@@ -1,7 +1,7 @@
 /// @description Insert description here
 // You can write your code in this editor
 
-depth = 200;
+//depth = 200;
 
 if bullet_stats.bullet_fade = 1 {
 	if alarm[0] < 15 {

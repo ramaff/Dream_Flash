@@ -11,5 +11,5 @@ _bull.bullet_depth = depth + 100;
 
 scr_shoot_bullets(_bull, x - 10 + random(20), y - 10 + random(20))
 
-alarm[1] = 3;
+alarm[1] = 4;
 

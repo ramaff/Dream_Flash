@@ -50,7 +50,7 @@ if active_attack_delay <= 0 and active_attack_cooldown <= 0 and active_attack_du
     }
 }
 
-if global.roomtime mod 3 = 1 {
+if global.roomtime mod 6 = 1 {
 	scr_default_attack_settings_v2();	
 	attack_stats.bullet_type = "obj_damage_pool_v2"
 	attack_stats.bullet_sprite = "spr_Damage_Pool"
@@ -58,7 +58,7 @@ if global.roomtime mod 3 = 1 {
 	attack_stats.boss_xoffset = -40 + random(80);
 	attack_stats.boss_yoffset = -40 + random(80) + 40 + boss_height;
 	attack_stats.bullet_depth = depth + 100;
-	attack_stats.bullet_life_span = 180 + random(60);
+	attack_stats.bullet_life_span = 120 + random(60);
 	attack_stats.bullet_size = (0.3 + random(0.15));
 	attack_stats.bullet_speed = 0;
 	
@@ -93,8 +93,8 @@ if active_attack_delay <= 0 and pattern_cooldown <= 0 and pattern_count > 0 {
 				attack_stats.bullet_direction = scr_Boss_Bullet_Direction_Formula(scr_Soul_Point(), 60)
 				attack_stats.bullet_speed = bossbulletspeed * (1 + random(1))
 				attack_stats.bullet_life_span = 360 + random(90);
-				attack_stats.bullet_bounce_speed = 4 + random(2);
-				attack_stats.bullet_lob_time = 50 + random(20);
+				attack_stats.bullet_bounce_speed = 6 + random(2);
+				attack_stats.bullet_lob_time = 80 + random(20);
 				
 				scr_boss_shoot_v2();
 			}
@@ -113,22 +113,9 @@ if active_attack_delay <= 0 and pattern_cooldown <= 0 and pattern_count > 0 {
 		
 		attack_stats.bullet_type = "obj_spinning_snot_trail_v2"
 		attack_stats.angular_velocity = 1.5;
-		attack_stats.bullet_life_span = 240;
+		attack_stats.bullet_life_span = 210;
 		
 		scr_boss_shoot_v2();
-		/*scr_Boss_Dash_Movement_v2(4,2);
-		
-		speed = dash_speed;
-        direction = dash_direction;
-		dash_direction = scr_Angle_Converge(direction, scr_Soul_Point() + scr_Wave(75, 75, 1, 0), 3) */
-		
-		//scr_Jump_Movement_v2(2);	
-		
-		//if pattern_count = floor(pattern_count_max) {
-		//	attack_stats.bullet_direction = scr_Boss_Bullet_Direction_Formula(scr_Soul_Point(), 30)
-		
-		//	scr_boss_shoot_v2();
-		//}
 	}
 	
 	if active_attack = 3 {
