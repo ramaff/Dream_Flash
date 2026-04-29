@@ -11,7 +11,7 @@ scr_Boss_Wobble("Horizontal", 0.7, 1, 0);
 
 if active_attack = 0 {
 	direction = scr_Soul_Point();
-	speed = lerp(speed, bossmovespeed, 0.05);
+	speed = lerp(speed, bossmovespeed * 0.66, 0.05);
 	
 	y = scr_Converge(y, obj_Soul_Parent.perY, speed * 0.5);
 } else {

@@ -30,7 +30,7 @@ function scr_Boss_Teleport_v2_Return(_border_offset = -128, _near_soul = -1, _ne
 	}
 
 
-	if _near_soul >= -1 {
+	if _near_soul > -1 {
 		with obj_Soul_Parent {
 			var _pdist = point_distance(perX, perY, _potx, _poty)
 		    if _pdist > _near_soul and _pdist < (_near_soul + 200) {
