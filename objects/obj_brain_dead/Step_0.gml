@@ -79,7 +79,13 @@ if active_attack_delay <= 0 and pattern_cooldown <= 0 and pattern_count > 0 {
         direction = dash_direction + scr_Wave(-60, 60, 1, 0);
 		dash_direction = scr_Angle_Converge(dash_direction, scr_Soul_Point(), 10)
 		
-		if pattern_count mod 40 = 0 {
+		if pattern_count mod 40 = 10 {
+			if pattern_count mod 80 = 10 {
+				image_index = 3;	
+			} 
+			if pattern_count mod 80 = 50 {
+				image_index = 7;	
+			}
 			speed = speed * 0.05;
 			scr_Boss_Stretch("Vertical", 1);
 		
@@ -110,17 +116,23 @@ if active_attack_duration <= 0 {
 /// Boss Sprite Code
 
 // Go back to normal default size
-scr_Boss_Size_Lerp(0.15);
+scr_Boss_Size_Lerp_Dir(0.15);
 
 // Handles boss attack sprite animation
-if active_attack != 0 {
-	var _hold_frame = 1;
-	scr_Boss_Attack_Sprite_v2(spr_brain_dead_concept, _hold_frame, 2, 2, 20);
+if active_attack = 1 {
+	var _hold_frame = 2;
+	scr_Boss_Attack_Sprite_v2(spr_brain_dead_rise_from_graves, _hold_frame, 3, 3, 20);
+	if image_index = _hold_frame {
+		scr_Boss_Wobble("Horizontal", 2, 0.4, 0)	
+	}
+} else if active_attack = 2 {
+	var _hold_frame = 2;
+	scr_Boss_Attack_Sprite_v2(spr_brain_dead_crazy_chase, _hold_frame, 3, 10, 20);
 	if image_index = _hold_frame {
 		scr_Boss_Wobble("Horizontal", 2, 0.4, 0)	
 	}
 } else {
-	sprite_index = spr_brain_dead_concept;
+	sprite_index = spr_brain_dead;
 }
 
 // So that the boss hurts soul on collision
