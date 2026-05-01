@@ -17,6 +17,10 @@ if active_attack = 0 {
 	speed = lerp(speed, bossmovespeed * 0.15, 0.1);	
 }
 
+if active_attack = 1 and active_attack_delay <= 0 {
+	scr_Boss_Wobble("Vertical", 5, 0.2, 0)	
+}
+
 //////////////////////////////////////////////////////////////////////////////////////////
 /////////////// Active Attack Prep
 //////////////////////////////////////////////////////////////////////////////////////////
@@ -55,12 +59,13 @@ scr_default_attack_settings_v2();
 if active_attack_delay <= 0 and pattern_cooldown <= 0 and pattern_count > 0 {
    
     if active_attack = 1 {
-		scr_Boss_Stretch("Vertical", 0.2);
+		scr_Boss_Stretch("Vertical", 0.1);
 		
 		attack_stats.bullet_direction = scr_Boss_Bullet_Direction_Formula(scr_Soul_Point(), 30)
 		attack_stats.bullet_sprite = "spr_rising_red_bullet"
 		attack_stats.bullet_type = "obj_rise_then_shoot_bullet"
 		attack_stats.bullet_count = 1;
+		attack_stats.bullet_power = 0;
 		
 		var _port = scr_Teleport_In_Room_Generic(0);
 		attack_stats.boss_xoffset = _port[0] - x
@@ -116,12 +121,16 @@ if active_attack_duration <= 0 {
 /// Boss Sprite Code
 
 // Go back to normal default size
-scr_Boss_Size_Lerp_Dir(0.15);
+if active_attack_delay > 0 || active_attack_duration < 20 {
+	scr_Boss_Size_Lerp_Dir(0.15);
+} else {
+	scr_Boss_Size_Lerp(0.15)
+}
 
 // Handles boss attack sprite animation
 if active_attack = 1 {
 	var _hold_frame = 2;
-	scr_Boss_Attack_Sprite_v2(spr_brain_dead_rise_from_graves, _hold_frame, 3, 3, 20);
+	scr_Boss_Attack_Sprite_v2(spr_brain_dead_rise_from_graves, _hold_frame, 3, 4, 20);
 	if image_index = _hold_frame {
 		scr_Boss_Wobble("Horizontal", 2, 0.4, 0)	
 	}
