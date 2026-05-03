@@ -9,6 +9,14 @@ scr_Boss_Height_Bob(30, 1, 0);
 // Make boss shape wobble:
 scr_Boss_Wobble("Horizontal", 0.4, 1, 0);
 
+if active_attack = 0 {
+	direction = scr_Soul_Point();
+	speed = lerp(speed, bossmovespeed, 0.05);
+} else {
+	direction = scr_Soul_Point();
+	speed = lerp(speed, bossmovespeed * 0.15, 0.1);	
+}
+
 //////////////////////////////////////////////////////////////////////////////////////////
 /////////////// Active Attack Prep
 //////////////////////////////////////////////////////////////////////////////////////////
@@ -27,7 +35,7 @@ if active_attack_delay <= 0 and active_attack_cooldown <= 0 and active_attack_du
 		// 
 		scr_Boss_Attack_Time_Setup_v2(300, 40, 1, 30, 30, 10);
 		
-		scr_Boss_Dash_Setup_v2(scr_Soul_Point(), 0, 0.666 * bossmovespeed);
+		scr_Boss_Dash_Setup_v2(scr_Soul_Point(), 0, 0.999 * bossmovespeed);
 		
 		pattern_direction = scr_Soul_Point()
     }
@@ -73,11 +81,11 @@ if active_attack_delay <= 0 and pattern_cooldown <= 0 and pattern_count > 0 {
 	}
 	
 	if active_attack = 2 {
-		scr_Boss_Dash_Movement_v2(30,30);
+		scr_Boss_Dash_Movement_v2(60,3);
 		
 		speed = dash_speed;
         direction = dash_direction;
-		dash_direction = scr_Angle_Converge(dash_direction, scr_Soul_Point(), 2)
+		dash_direction = scr_Angle_Converge(dash_direction, scr_Soul_Point(), 1.333)
 		
 		if pattern_count mod 6 = 0 {
 			
@@ -125,6 +133,18 @@ if active_attack_delay <= 0 and pattern_cooldown <= 0 and pattern_count > 0 {
 		if pattern_count = 1 {
 			image_index = 3;
 			scr_Boss_Stretch("Horizontal", 0.6);
+			
+			attack_stats.bullet_sprite = "spr_pink_bullet_v2"
+			attack_stats.bullet_type = "obj_fire_jet_spike_trail"
+			attack_stats.bullet_speed = bossbulletspeed * 10.3;
+			attack_stats.bullet_count = 8;
+			attack_stats.bullet_spread = 45;
+			attack_stats.bullet_life_span = 31;
+			
+			scr_boss_shoot_v2();
+			
+			attack_stats.bullet_life_span = 180;
+			
 			attack_stats.bullet_sprite = "spr_pink_bullet_v2"
 			attack_stats.bullet_type = "obj_accel_bullet_v2"
 			attack_stats.bullet_speed = bossbulletspeed * 1.6;

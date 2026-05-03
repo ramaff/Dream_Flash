@@ -35,8 +35,8 @@
   "resourceVersion":"2.0",
   "solid":false,
   "spriteId":{
-    "name":"spr_brain_dead_concept",
-    "path":"sprites/spr_brain_dead_concept/spr_brain_dead_concept.yy",
+    "name":"spr_brain_dead",
+    "path":"sprites/spr_brain_dead/spr_brain_dead.yy",
   },
   "spriteMaskId":null,
   "visible":false,

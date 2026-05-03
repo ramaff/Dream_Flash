@@ -7,7 +7,7 @@ _bull.bullet_sprite = "spr_pink_bullet_v2"
 _bull.bullet_life_span = 180
 _bull.bullet_count = 6;
 _bull.bullet_spread = 360 / _bull.bullet_count;
-_bull.bullet_size = bullet_stats.bullet_size * 0.6;
+_bull.bullet_size = bullet_stats.bullet_size * 0.65;
 _bull.bullet_direction_angle = 1;
 
 _bull.bullet_part = 1;
