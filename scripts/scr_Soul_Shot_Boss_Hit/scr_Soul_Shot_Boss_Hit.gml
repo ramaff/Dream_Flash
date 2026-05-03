@@ -102,6 +102,26 @@ function scr_Soul_Shot_Boss_Hit(_shot = other) {
 				}
 		
 				if _shot_damage > 0 {
+					
+					var _mag = 0.05 + (sqrt(_shot_damage) / 30)
+					
+					if abs(vspeed) > abs(hspeed) {
+						with(_boss) {
+							scr_Boss_Stretch("Horizontal", _mag);
+						}
+					} else {
+						with(_boss) {
+							scr_Boss_Stretch("Vertical", _mag);
+						}
+						
+					}
+					
+					with instance_create_depth(_boss.x, _boss.y, _boss.depth - 1, obj_Boss_Flash) {
+						target = _boss;	
+						image_alpha = 0.3 + _mag;
+						alarm[0] = floor(image_alpha * 10);
+						event_user(0);
+					}
 				
 					var _xx = x;
 					var _yy = y;

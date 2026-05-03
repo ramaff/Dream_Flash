@@ -46,24 +46,24 @@ if instance_exists(other.bossid) and soul_underground <= 0 {
 	        instance_destroy();
 	    }
 	    }
-
-	}
+		
+		if scr_State_Active_Check("Bleeding") and speed > 2 and soulinvincibility > 0 {
+			exit;	
+		}
 	
-	if scr_State_Active_Check("Bleeding") and speed > 2 and soulinvincibility > 0 {
-		exit;	
-	}
-	
-	var i;
-	i = point_direction(other.bossid.x, other.bossid.y, x, y);
-	x += lengthdir_x(2, i);
-	y += lengthdir_y(2, i);
+		var i;
+		i = point_direction(other.bossid.x, other.bossid.y, x, y);
+		x += lengthdir_x(2, i);
+		y += lengthdir_y(2, i);
 
 
-	if sknockbackdefense < other.bossid.bossknockbackforce {
-	    direction = other.bossid.direction;
-	    speed = (other.bossid.bossknockbackforce - sknockbackdefense);
-	    alarm[10] = 6;
-	    scr_Knockback_Reactions();
+		if sknockbackdefense < other.bossid.bossknockbackforce {
+		    direction = other.bossid.direction;
+		    speed = (other.bossid.bossknockbackforce - sknockbackdefense);
+		    alarm[10] = 6;
+		    scr_Knockback_Reactions();
+		}
+
 	}
 			
 }

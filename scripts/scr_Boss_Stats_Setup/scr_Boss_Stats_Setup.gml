@@ -44,7 +44,7 @@ function scr_Boss_Stats_Setup(_version=1) {
 	
 	difficulty = 0;
     
-	bossknockdefense = 10;
+	bossknockdefense = 8;
 	bossmovespeed = 2;
 	bossattackspeed = 1;
 	bossaccuracy = 1;    
