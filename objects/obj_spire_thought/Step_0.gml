@@ -14,26 +14,26 @@ scr_Boss_Height_Bob(60, 1, 0);
 // Make boss shape wobble:
 scr_Boss_Wobble("Horizontal", 0.3, 1, 0);
 
-var _xx = -50;
-var _yy = -50;
+var _xx = -70;
+var _yy = -70;
 //image_blend = c_red;
 var _bull_sprite = spr_red_bullet_v2;
 
 if minionbossparent.blue_cloud = id {
-	_xx = 50
+	_xx = 70
 	norm_sprite = spr_spire_thought_blue;
 	shoot_sprite = spr_spire_thought_shoot_blue;
 	_bull_sprite = spr_blue_bullet_v2
 }
 if minionbossparent.green_cloud = id {
-	_yy = 50
+	_yy = 70
 	norm_sprite = spr_spire_thought_green;
 	shoot_sprite = spr_spire_thought_shoot_green;
 	_bull_sprite = spr_green_bullet_v2
 }
 if minionbossparent.yellow_cloud = id {
-	_xx = 50
-	_yy = 50
+	_xx = 70
+	_yy = 70
 	norm_sprite = spr_spire_thought_yellow;
 	shoot_sprite = spr_spire_thought_shoot_yellow;
 	_bull_sprite = spr_yellow_bullet_v2;

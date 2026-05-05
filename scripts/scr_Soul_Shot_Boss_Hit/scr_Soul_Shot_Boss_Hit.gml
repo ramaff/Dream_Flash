@@ -103,7 +103,7 @@ function scr_Soul_Shot_Boss_Hit(_shot = other) {
 		
 				if _shot_damage > 0 {
 					
-					var _mag = 0.05 + (sqrt(_shot_damage) / 30)
+					var _mag = 0.05 + (sqrt(1 + _shot_damage) / 30)
 					
 					if abs(vspeed) > abs(hspeed) {
 						with(_boss) {
@@ -113,14 +113,15 @@ function scr_Soul_Shot_Boss_Hit(_shot = other) {
 						with(_boss) {
 							scr_Boss_Stretch("Vertical", _mag);
 						}
-						
 					}
 					
-					with instance_create_depth(_boss.x, _boss.y, _boss.depth - 1, obj_Boss_Flash) {
-						target = _boss;	
-						image_alpha = 0.3 + _mag;
-						alarm[0] = floor(image_alpha * 10);
-						event_user(0);
+					if instance_exists(_boss) {
+						with instance_create_depth(_boss.x, _boss.y, _boss.depth - 1, obj_Boss_Flash) {
+							target = _boss;	
+							image_alpha = 0.5 + _mag;
+							alarm[0] = 3 + floor(_mag * 5);
+							event_user(0);
+						}
 					}
 				
 					var _xx = x;
@@ -129,11 +130,14 @@ function scr_Soul_Shot_Boss_Hit(_shot = other) {
 						_xx = _boss.x;
 						_yy = _boss.y;
 					}
+					var _ass_hit = asset_get_index(shot_stats.Shot_Trail_Hit_Type)
+					var _ass_index = asset_get_index(shot_stats.Shot_Trail_Hit_Sprite)
+					var _area = shot_stats.Shot_Trail_Area * shot_stats.Shot_Size * 2
 					repeat(shot_stats.Shot_Trail_Hit_Count) {
-						var ddir = direction - 90 + random(180);
-						scr_Particle_Burst(asset_get_index(shot_stats.Shot_Trail_Hit_Type), asset_get_index(shot_stats.Shot_Trail_Hit_Sprite), 
+						var ddir = direction + 90 + random(180);
+						scr_Particle_Burst(_ass_hit, _ass_index, 
 										   shot_stats.Shot_Trail_Color_1, shot_stats.Shot_Trail_Color_2, 1, 12 + random(8), ddir,
-										   0, 0, shot_stats.Shot_Size + random(0.2), 15 + random(10), false, _xx, _yy)
+										   0, _area, shot_stats.Shot_Size - 0.1 + random(0.2), 15 + random(10), false, _xx, _yy)
 					}
 				
 					if shot_stats.Shot_Essence_Drain > 0 {

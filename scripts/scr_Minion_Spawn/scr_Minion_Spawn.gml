@@ -6,6 +6,7 @@ function scr_Minion_Spawn(_minion_boss_parent = other.id) {
 	    repeat(minion_count) {
 	        with instance_create(x + minion_xx,y + minion_yy, minion_type) {
 	                scr_Boss_Status_Setup();
+					scr_Boss_Size_Setup(0.5);
 	                projectile_hit_id = noone;
 	                projectile_hits = ds_list_create();
 	                bossID = id;

@@ -35,8 +35,10 @@
         "Shot_Size": 0.4,
         "Shot_Light": true,
         "Shot_Trail": 1,
-        "Shot_Trail_Color_1": [255, 128, 166],
-        "Shot_Trail_Color_2": [255, 51, 113],
+        "Shot_Trail_Sprite": "spr_Soul_Bit",
+        "Shot_Trail_Hit_Sprite": "spr_Soul_Bit",
+        "Shot_Trail_Color_1": [255, 40, 140],
+        "Shot_Trail_Color_2": [255, 40, 140],
         "Spike_Credit": 0.5
     },
     "3": {

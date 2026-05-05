@@ -13,7 +13,7 @@ function scr_Boss_Soul_Hitbox(_hitbox_sprite = sprite_index, _hitbox_index = ima
 		//path_speed = 0;
 	}
 	if state = states.normal || (state = states.jumping and boss_height < 10)  || (state = states.leaping and boss_height < 10) {
-		with instance_create(x,y,obj_Boss_Soul_Hitbox) {
+		with instance_create_depth(x,y,depth,obj_Boss_Soul_Hitbox) {
 			sprite_index = _hitbox_sprite;
 			image_xscale = other.image_xscale * 0.75;
 			image_yscale = other.image_yscale * 0.75;
