@@ -1,5 +1,5 @@
-function scr_Boss_Size_Setup(argument0) {
-	bossSize = argument0;
+function scr_Boss_Size_Setup(_size) {
+	bossSize = _size;
 	//bossSize = 1;
 	image_xscale = bossSize;
 	image_yscale = bossSize;

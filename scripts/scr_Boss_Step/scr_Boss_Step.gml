@@ -2,9 +2,6 @@ function scr_Boss_Step(version = 1) {
 	scr_Next_Phase_Check();
 	scr_Boss_Attack_Step(version);
 	//scr_Boss_Status_Step();
-	if object_get_parent(object_index) != obj_Minion_Parent {
-		scr_Boss_Morph_In(version);
-	}
 	//scr_Room_Depth(0);
 	
 	if version = 2 {
@@ -31,7 +28,7 @@ function scr_Boss_Step(version = 1) {
 
 	if boost = 1 {
 	    //var _val = irandom(30)
-	    if scr_Chance(20 + instance_number(obj_Main_Boss_Parent)) {
+	    if global.roomtime mod (20 + instance_number(obj_Main_Boss_Parent)) {
 			
 			var _p_size = 1 / (2 + instance_number(obj_Main_Boss_Parent))
 			

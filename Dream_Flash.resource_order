@@ -379,7 +379,6 @@
     {"name":"obj_boss_flame_jet_damage","order":5,"path":"objects/obj_boss_flame_jet_damage/obj_boss_flame_jet_damage.yy",},
     {"name":"obj_boss_flame_jet","order":4,"path":"objects/obj_boss_flame_jet/obj_boss_flame_jet.yy",},
     {"name":"obj_Boss_Flash","order":23,"path":"objects/obj_Boss_Flash/obj_Boss_Flash.yy",},
-    {"name":"obj_Boss_Overlay","order":10,"path":"objects/obj_Boss_Overlay/obj_Boss_Overlay.yy",},
     {"name":"obj_Boss_Parent","order":2,"path":"objects/obj_Boss_Parent/obj_Boss_Parent.yy",},
     {"name":"obj_Boss_Preset","order":4,"path":"objects/obj_Boss_Preset/obj_Boss_Preset.yy",},
     {"name":"obj_Boss_Sky_Lightning_2","order":2,"path":"objects/obj_Boss_Sky_Lightning_2/obj_Boss_Sky_Lightning_2.yy",},

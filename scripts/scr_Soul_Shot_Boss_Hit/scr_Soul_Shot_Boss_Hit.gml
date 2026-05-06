@@ -3,6 +3,9 @@
 function scr_Soul_Shot_Boss_Hit(_shot = other) {
 
 	var _boss = id;
+	var _shot_damage = 0;
+	var _shspeed = _shot.hspeed;
+	var _svspeed = _shot.vspeed;
 	with(_shot) {
 		var _hitable = false
 	
@@ -94,7 +97,7 @@ function scr_Soul_Shot_Boss_Hit(_shot = other) {
 			
 				//Print_DF("shot power: " + string(shot_stats.Shot_Power))
 		
-		        var _shot_damage = scr_Boss_Damage_Calc();
+		        _shot_damage = scr_Boss_Damage_Calc();
 		
 				if shot_stats.Shot_Screen_Shake > 2 {
 					scr_Screen_Shake(shot_stats.Shot_Screen_Shake, shot_stats.Shot_Screen_Shake - 2);
@@ -102,27 +105,6 @@ function scr_Soul_Shot_Boss_Hit(_shot = other) {
 				}
 		
 				if _shot_damage > 0 {
-					
-					var _mag = 0.05 + (sqrt(1 + _shot_damage) / 30)
-					
-					if abs(vspeed) > abs(hspeed) {
-						with(_boss) {
-							scr_Boss_Stretch("Horizontal", _mag);
-						}
-					} else {
-						with(_boss) {
-							scr_Boss_Stretch("Vertical", _mag);
-						}
-					}
-					
-					if instance_exists(_boss) {
-						with instance_create_depth(_boss.x, _boss.y, _boss.depth - 1, obj_Boss_Flash) {
-							target = _boss;	
-							image_alpha = 0.5 + _mag;
-							alarm[0] = 3 + floor(_mag * 5);
-							event_user(0);
-						}
-					}
 				
 					var _xx = x;
 					var _yy = y;
@@ -262,6 +244,25 @@ function scr_Soul_Shot_Boss_Hit(_shot = other) {
 		        }
 		    }
 		}
+	}
+	
+	if _shot_damage > 0 {
+		var _mag = 0.05 + (sqrt(1 + _shot_damage) / 30)
+					
+		if abs(_svspeed) > abs(_shspeed) {
+			scr_Boss_Stretch("Horizontal", _mag);
+		} else {
+			scr_Boss_Stretch("Vertical", _mag);
+		}	
+
+		
+		with instance_create_depth(x, y, depth - 1, obj_Boss_Flash) {
+			target = _boss;	
+			image_alpha = 0.5 + _mag;
+			alarm[0] = 3 + floor(_mag * 5);
+			event_user(0);
+		}
+		
 	}
 
 

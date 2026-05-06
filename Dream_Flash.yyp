@@ -735,7 +735,6 @@
     {"id":{"name":"obj_Boss_Flash","path":"objects/obj_Boss_Flash/obj_Boss_Flash.yy",},},
     {"id":{"name":"obj_Boss_Maw_Spit","path":"objects/obj_Boss_Maw_Spit/obj_Boss_Maw_Spit.yy",},},
     {"id":{"name":"obj_Boss_Maw","path":"objects/obj_Boss_Maw/obj_Boss_Maw.yy",},},
-    {"id":{"name":"obj_Boss_Overlay","path":"objects/obj_Boss_Overlay/obj_Boss_Overlay.yy",},},
     {"id":{"name":"obj_Boss_Parent","path":"objects/obj_Boss_Parent/obj_Boss_Parent.yy",},},
     {"id":{"name":"obj_Boss_Preset","path":"objects/obj_Boss_Preset/obj_Boss_Preset.yy",},},
     {"id":{"name":"obj_Boss_Sky_Lightning_2","path":"objects/obj_Boss_Sky_Lightning_2/obj_Boss_Sky_Lightning_2.yy",},},

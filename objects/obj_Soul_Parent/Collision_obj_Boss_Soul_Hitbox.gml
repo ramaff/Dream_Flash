@@ -56,13 +56,13 @@ if instance_exists(other.bossid) and soul_underground <= 0 {
 		x += lengthdir_x(2, i);
 		y += lengthdir_y(2, i);
 
-
+		/*
 		if sknockbackdefense < other.bossid.bossknockbackforce {
 		    direction = other.bossid.direction;
 		    speed = (other.bossid.bossknockbackforce - sknockbackdefense);
 		    alarm[10] = 6;
 		    scr_Knockback_Reactions();
-		}
+		} */
 
 	}
 			
