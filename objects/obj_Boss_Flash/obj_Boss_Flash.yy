@@ -35,10 +35,7 @@
   "resourceType":"GMObject",
   "resourceVersion":"2.0",
   "solid":false,
-  "spriteId":{
-    "name":"spr_Boss_Beam_Tail",
-    "path":"sprites/spr_Boss_Beam_Tail/spr_Boss_Beam_Tail.yy",
-  },
+  "spriteId":null,
   "spriteMaskId":null,
   "visible":false,
 }

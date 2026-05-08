@@ -17,6 +17,8 @@
         "Shot_Light": true,
         "Shot_Light_Size": 0.4,
         "Shot_Trail": 1,
+        "Shot_Trail_Sprite": "spr_Soul_Bit",
+        "Shot_Trail_Hit_Sprite": "spr_Soul_Bit",
         "Shot_Trail_Color_2": [230, 238, 255]
     },
     "2": {
@@ -35,8 +37,6 @@
         "Shot_Size": 0.4,
         "Shot_Light": true,
         "Shot_Trail": 1,
-        "Shot_Trail_Sprite": "spr_Soul_Bit",
-        "Shot_Trail_Hit_Sprite": "spr_Soul_Bit",
         "Shot_Trail_Color_1": [255, 40, 140],
         "Shot_Trail_Color_2": [255, 40, 140],
         "Spike_Credit": 0.5
@@ -59,9 +59,8 @@
         "Shot_Continue": 1,
         "Shot_Light": true,
         "Shot_Trail": 1,
-        "Shot_Trail_Sprite": "spr_Big_Essence_Trail_Bit",
-        "Shot_Trail_Color_1": [255,124,40],
-        "Shot_Trail_Color_2": [255,174,127],
+        "Shot_Trail_Color_1": [255,159,81],
+        "Shot_Trail_Color_2": [255,159,81],
         "Spike_Credit": 0.5
     },
     "4": {
@@ -70,18 +69,20 @@
         "Description": "",
         "Detailed_Description": "Does low damage, but is easy and quick to think of!",
         "Essence": 3,
-        "Delay": 10,
+        "Delay": 9,
         "Complexity": "Low",
         "Shot_Sprite": "spr_Light_Shot",
-        "Shot_Power": 8,
+        "Shot_Power": 7,
         "Shot_Speed": 9,
         "Shot_Life_Span": 60,
-        "Shot_Knock_Back": 8,
+        "Shot_Knock_Back": 9,
         "Shot_Size": 0.4,
         "Shot_Light": true,
         "Shot_Trail": 1,
-        "Shot_Trail_Color_1": [49,184,255],
-        "Shot_Trail_Color_2": [127,210,255],
+        "Shot_Trail_Sprite": "spr_Soul_Bit",
+        "Shot_Trail_Hit_Sprite": "spr_Soul_Bit",
+        "Shot_Trail_Color_1": [101,222,255],
+        "Shot_Trail_Color_2": [101,222,255],
         "Spike_Credit": 0.5
     },
     "5": {
@@ -124,10 +125,9 @@
         "Shot_Min_Speed": 6,
         "Shot_Speed_Power_Add": 0.5,
         "Shot_Trail": 1,
-        "Shot_Trail_Sprite": "spr_Big_Essence_Trail_Bit",
         "Shot_Trail_Area": 15,
-        "Shot_Trail_Color_1": [178,0,134],
-        "Shot_Trail_Color_2": [229,0,172],
+        "Shot_Trail_Color_1": [204,0,154],
+        "Shot_Trail_Color_2": [204,0,154],
         "Spike_Credit": 0.5
     },
     "7": {
@@ -148,8 +148,8 @@
         "Shot_Poison_Time": 90,
         "Shot_Poison_Ticks": 10,
         "Shot_Trail": 1,
-        "Shot_Trail_Color_1": [107,229,0],
-        "Shot_Trail_Color_2": [119,255,0],
+        "Shot_Trail_Color_1": [110,235,0],
+        "Shot_Trail_Color_2": [110,235,0],
         "Snake_Credit": 0.5,
         "Spike_Credit": 0.5
     },
@@ -170,7 +170,7 @@
         "Shot_Spread": 20,
         "Shot_Trail": 1,
         "Shot_Trail_Color_1": [30,197,255],
-        "Shot_Trail_Color_2": [20,236,255],
+        "Shot_Trail_Color_2": [30,197,255],
         "Spike_Credit": 0.5
     },
     "9": {
@@ -233,8 +233,8 @@
         "Shot_Charge_Size": 0.4,
         "Shot_Trail": 1,
         "Shot_Trail_Area": 20,
-        "Shot_Trail_Color_1": [0,250,255],
-        "Shot_Trail_Color_2": [0,215,255],
+        "Shot_Trail_Color_1": [0,255,255],
+        "Shot_Trail_Color_2": [0,255,255],
         "Spike_Credit": 0.5,
         "Ascending_Credit": 0.5
     },

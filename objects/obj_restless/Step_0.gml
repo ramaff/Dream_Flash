@@ -11,7 +11,7 @@ scr_Boss_Wobble("Horizontal", 0.4, 1, 0);
 
 if active_attack = 0 {
 	direction = scr_Soul_Point();
-	speed = lerp(speed, bossmovespeed, 0.05);
+	speed = lerp(speed, bossmovespeed * 0.666, 0.05);
 } else {
 	direction = scr_Soul_Point();
 	speed = lerp(speed, bossmovespeed * 0.15, 0.1);	
@@ -35,7 +35,7 @@ if active_attack_delay <= 0 and active_attack_cooldown <= 0 and active_attack_du
 		// 
 		scr_Boss_Attack_Time_Setup_v2(300, 40, 1, 30, 30, 10);
 		
-		scr_Boss_Dash_Setup_v2(scr_Soul_Point(), 0, 0.999 * bossmovespeed);
+		scr_Boss_Dash_Setup_v2(scr_Soul_Point(), 0, 1.3666 * bossmovespeed);
 		
 		pattern_direction = scr_Soul_Point()
     }
@@ -109,9 +109,9 @@ if active_attack_delay <= 0 and pattern_cooldown <= 0 and pattern_count > 0 {
 		}
 		if pattern_count = 1 {
 			active_attack = 3;
-			scr_Boss_Attack_Time_Setup_v2(120, 10, 1, 120, 30, 10);
+			scr_Boss_Attack_Time_Setup_v2(90, 10, 1, 120, 30, 30);
 		
-			scr_Boss_Jump_Setup_v2(0, 3 * bossmovespeed, x, y);	
+			scr_Boss_Jump_Setup_v2(0, 3.6666 * bossmovespeed, x, y);	
 		}
 	}
 	
@@ -125,14 +125,18 @@ if active_attack_delay <= 0 and pattern_cooldown <= 0 and pattern_count > 0 {
 		scr_Jump_Movement_v2(6);	
 		
 		if pattern_count > 60 {
-			image_index = 1;	
+			if image_index >= 3 {
+				image_index = 1;
+			}
 		} else if pattern_count > 1 {
-			image_index = 2;	
+			if image_index >= 5 || image_index < 3 {
+				image_index = 3;
+			}
 		}
 		
 		if pattern_count = 1 {
-			image_index = 3;
-			scr_Boss_Stretch("Horizontal", 0.6);
+			image_index = 5;
+			scr_Boss_Stretch("Horizontal", 1);
 			
 			attack_stats.bullet_sprite = "spr_pink_bullet_v2"
 			attack_stats.bullet_type = "obj_fire_jet_spike_trail"
@@ -185,20 +189,20 @@ scr_Boss_Size_Lerp_Dir(0.15);
 
 // Handles boss attack sprite animation
 if active_attack = 1 {
-	var _hold_frame = 1;
-	scr_Boss_Attack_Sprite_v2(spr_restless_burst, _hold_frame, 2, 2, 20);
+	var _hold_frame = 2;
+	scr_Boss_Attack_Sprite_v2(spr_restless_burst, _hold_frame, 3, 4, 20);
 	if image_index = _hold_frame {
 		scr_Boss_Wobble("Horizontal", 2, 0.4, 0)	
 	}
 } else if active_attack = 2 {
-	var _hold_frame = 1;
-	scr_Boss_Attack_Sprite_v2(spr_restless_chase, _hold_frame, 2, 2, 20);
+	var _hold_frame = 2;
+	scr_Boss_Attack_Sprite_v2(spr_restless_chase, _hold_frame, 3, 4, 20);
 	if image_index = _hold_frame {
 		scr_Boss_Wobble("Horizontal", 2, 0.4, 0)	
 	}
 } else if active_attack = 3 {
 	var _hold_frame = 0;
-	scr_Boss_Attack_Sprite_v2(spr_restless_jump_into_chaos, _hold_frame, 1, 2, 20);
+	scr_Boss_Attack_Sprite_v2(spr_restless_jump_into_chaos, _hold_frame, 1, 4, 40);
 	if image_index = _hold_frame {
 		scr_Boss_Wobble("Horizontal", 2, 0.4, 0)	
 	}
