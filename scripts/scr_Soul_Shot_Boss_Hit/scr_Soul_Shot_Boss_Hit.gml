@@ -236,7 +236,12 @@ function scr_Soul_Shot_Boss_Hit(_shot = other) {
 						alarm[0] = 20;
 					}
 				}
-			
+				
+				 if shot_stats.Shot_Super_Bleed_Chance != 0 {
+					if scr_Chance(100/shot_stats.Shot_Super_Bleed_Chance) {
+						scr_Super_Bleed_Boss(_boss, 4, 30, 15)
+					}
+				 }
         
 		        if _boss.currentphase >= _boss.finalphase
 		        if _boss.bosshealth <= 0 {

@@ -1208,7 +1208,7 @@
         "recollectionSprite": "spr_Glum_Chum",
         "recollectionSize": 0.375,
         "recollectionSummary": "Ally Figment",
-        "recollectionDescription": "+Figment with self loathing. Shooting this figment with your own weapondry will damage it and cause it to shoot powerful projectiles to harm your enemies.",
+        "recollectionDescription": "+Shooting this figment will damage it and cause it to shoot powerful projectiles.",
         "Mech_Credit": 0.5
     },
     "M23": {

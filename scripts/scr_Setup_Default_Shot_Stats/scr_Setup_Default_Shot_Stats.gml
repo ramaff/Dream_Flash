@@ -74,6 +74,7 @@ function scr_Setup_Default_Shot_Stats(){
 		Shot_Bleed_Chance: 0,
 		Shot_Bleed_Time: 0,
 		Shot_Bleed_Ticks: 0,
+		Shot_Super_Bleed_Chance: 0,
 		Shot_Knock_Back: 10,
 		Shot_Charge_Power: 0,
 		Shot_Charge_Size: 0,
