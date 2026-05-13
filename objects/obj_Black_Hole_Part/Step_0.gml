@@ -11,3 +11,5 @@ if instance_exists(target) {
 	x += lengthdir_x(speed, direction + 90);
 	y += lengthdir_y(speed, direction + 90);
 }
+
+scr_After_Image(5, true, false, image_blend, sprite_index)

@@ -42,6 +42,8 @@ function scr_Soul_Damage_Calculation(_damage_amount, _defense_amount) {
 	    //scr_B04();
 		
 		scr_Screen_Shake(ceil(_damage_amount * 1.5), 7);
+		
+		scr_Sound_Effect([snd_Soul_Ouch_1, snd_Soul_Ouch_2], sqrt(_damage_amount));
     
 	    scr_Hit_Reactions(_damage_amount, _defense_amount);
 	//}

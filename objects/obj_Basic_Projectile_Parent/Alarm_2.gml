@@ -43,8 +43,10 @@ if global.gameParticles > 0 {
 
 	if shot_stats.Shot_Trail = 3 {
 	
-		var xx = random(shot_stats.Shot_Trail_Area) - (shot_stats.Shot_Trail_Area / 2);
-		var yy = random(shot_stats.Shot_Trail_Area) - (shot_stats.Shot_Trail_Area / 2);
+		var _area = shot_stats.Shot_Trail_Area * shot_stats.Shot_Size * 2
+	
+		var xx = random(_area) - (_area / 2);
+		var yy = random(_area) - (_area / 2);
 	
 		with instance_create(x + xx,y + yy, asset_get_index(shot_stats.Shot_Trail_Type)) {
 		
