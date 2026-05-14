@@ -1386,6 +1386,7 @@
         "Complexity": "Low",
         "Shot_Sprite": "spr_Pop_Corn_Shot",
         "Shot_Type": "obj_Soul_Physics_Shot",
+        "Shot_Spawn_Sound": "snd_Popcorn",
         "Shot_Frames": 3,
         "Shot_Speed": 5,
         "Shot_Friction": 0.2,

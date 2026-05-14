@@ -223,7 +223,8 @@ function scr_Setup_Default_Shot_Stats(){
 		Shot_Gem: 0,
 		Shot_Burst_Power: 0,
 		Shot_Spike_Aura: false,
-		Shot_Instability: 0
+		Shot_Instability: 0,
+		Shot_Spawn_Sound: noone
 	}
 	return _shot_stats
 

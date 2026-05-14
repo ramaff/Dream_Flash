@@ -175,6 +175,10 @@ function scr_Shot_Creation(_cw = current_weapon_stats, _prime_shot = false) {
 		
 		repeat(mechFac) {
 			
+			if _cw.Shot_Spawn_Sound != noone {
+				scr_Sound_Effect(asset_get_index(_cw.Shot_Spawn_Sound))
+			}
+			
 		    with instance_create_depth(shxx, shyy, _cw.Shot_Depth, _shot_ass) {
 		        scr_Default_Shot_Variables();
 				
