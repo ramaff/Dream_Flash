@@ -64,7 +64,7 @@ if global.gameParticles > 0 {
 			life = other.shot_stats.Shot_Trail_Life;
 			alarm[0] = life;
 		
-			if other.shot_stats.Shot_Trail_Type = obj_Black_Hole_Part {
+			if other.shot_stats.Shot_Trail_Type = "obj_Black_Hole_Part" {
 				target = other.id
 			} else {
 				direction = point_direction(x,y,other.x,other.y);

@@ -1,4 +1,12 @@
-function scr_Boss_Damage_Calc() {
+function scr_Boss_Damage_Calc_Splash(_boss = other.id, _shot = id) {
+
+	with (_shot) {
+		scr_Boss_Damage_Calc(_boss, true)
+	}
+	
+}
+
+function scr_Boss_Damage_Calc(_boss = other.id, _boss_ind_placement = false) {
 	var bossweak = 0;
 	
 	var speeddmg = shot_stats.Shot_Speed_Power_Add * speed;
@@ -9,11 +17,11 @@ function scr_Boss_Damage_Calc() {
 
 	var _i = 0;
 	for(_i = 0; _i <= 49; _i++) { 
-	    bossweak += other.bossweaken[_i];
+	    bossweak += _boss.bossweaken[_i];
 	}
     
-	if other.bossReaction >= 1 {
-	    other.bossReaction++;
+	if _boss.bossReaction >= 1 {
+	    _boss.bossReaction++;
 	}
 	
 	var _shot_dam = shot_stats.Shot_Power;
@@ -23,7 +31,7 @@ function scr_Boss_Damage_Calc() {
 	    _shot_dam = _shot_dam * shot_stats.Shot_Crit_Multiple;
 	}
 	
-	_shot_dam = (_shot_dam + bossweak + speeddmg) - max(0, (other.bossdefense - shot_stats.Shot_Armour_Pierce));
+	_shot_dam = (_shot_dam + bossweak + speeddmg) - max(0, (_boss.bossdefense - shot_stats.Shot_Armour_Pierce));
 
 	if _shot_dam < 0 || is_nan(_shot_dam) {
 		_shot_dam = 0;
@@ -36,20 +44,20 @@ function scr_Boss_Damage_Calc() {
 
 	var _xx = x;
 	var _yy = y;
-	if shot_stats.Shot_Melee {
-		_xx = other.x;
-		_yy = other.y;
+	if shot_stats.Shot_Melee || _boss_ind_placement {
+		_xx = _boss.x;
+		_yy = _boss.y;
 	}
 
 	scr_setup_dmg_indicator(_xx, _yy, _shot_dam - bossweak, c_white, bossweak);
 
 	//Adding Poison
 	if shot_stats.Shot_Poison != 0 {
-		scr_Apply_Boss_Poison(other.id, shot_stats.Shot_Poison, shot_stats.Shot_Poison_Time, shot_stats.Shot_Poison_Ticks);
+		scr_Apply_Boss_Poison(_boss.id, shot_stats.Shot_Poison, shot_stats.Shot_Poison_Time, shot_stats.Shot_Poison_Ticks);
 	}
 
 	if _shot_dam > 0 {
-	    other.bosshealth -= _shot_dam
+	    _boss.bosshealth -= _shot_dam
 		
 		scr_B09(_shot_dam);
 		
@@ -61,11 +69,11 @@ function scr_Boss_Damage_Calc() {
 		var i = 0;
 	    if shot_stats.Shot_Bleed != 0 {
 	        for(i = 0; i <= 49; i++) {
-	            if other.bossbleed[i] = 0 {
-	                other.bossbleed[i] = shot_stats.Shot_Bleed;
-	                other.bossbleedtime[i] = shot_stats.Shot_Bleed_Time;
-	                other.bossbleedmaxtime[i] = shot_stats.Shot_Bleed_Time;
-	                other.bossbleedticks[i] = shot_stats.Shot_Bleed_Ticks;
+	            if _boss.bossbleed[i] = 0 {
+	                _boss.bossbleed[i] = shot_stats.Shot_Bleed;
+	                _boss.bossbleedtime[i] = shot_stats.Shot_Bleed_Time;
+	                _boss.bossbleedmaxtime[i] = shot_stats.Shot_Bleed_Time;
+	                _boss.bossbleedticks[i] = shot_stats.Shot_Bleed_Ticks;
 	                break;
 	            }
 	        }
@@ -74,31 +82,31 @@ function scr_Boss_Damage_Calc() {
 	    //Adding Fire
 	    if shot_stats.Shot_Fire != 0 {
 	        for(i = 0; i <= 49; i++) {
-	            if other.bossfire[i] = 0 {
-	                other.bossfire[i] = shot_stats.Shot_Fire;
-	                other.bossfiretime[i] = shot_stats.Shot_Fire_Time;
-	                other.bossfiremaxtime[i] = shot_stats.Shot_Fire_Time;
-	                other.bossfireticks[i] = shot_stats.Shot_Fire_Ticks;
+	            if _boss.bossfire[i] = 0 {
+	                _boss.bossfire[i] = shot_stats.Shot_Fire;
+	                _boss.bossfiretime[i] = shot_stats.Shot_Fire_Time;
+	                _boss.bossfiremaxtime[i] = shot_stats.Shot_Fire_Time;
+	                _boss.bossfireticks[i] = shot_stats.Shot_Fire_Ticks;
 	                break;
 	            }
 	        }
 	    }
     
 	    //Adding Freeze
-	    if shot_stats.Shot_Freeze_Type >= other.bossfreezetype and shot_stats.Shot_Freeze_Type > 0 and scr_Chance(1 / max(shot_stats.Shot_Freeze_Type, 0.01)) {
+	    if shot_stats.Shot_Freeze_Type >= _boss.bossfreezetype and shot_stats.Shot_Freeze_Type > 0 and scr_Chance(1 / max(shot_stats.Shot_Freeze_Type, 0.01)) {
 	        var wasFrozen = 1;
-	        if other.bossfreezetype = 0 {
+	        if _boss.bossfreezetype = 0 {
 	            wasFrozen = 0;
 	        }
-	        other.bossfreezetype = 0.5;
-	        other.bossfreeze = shot_stats.Shot_Freeze;
-	        other.bossfreezetime = shot_stats.Shot_Freeze_Time;
+	        _boss.bossfreezetype = 0.5;
+	        _boss.bossfreeze = shot_stats.Shot_Freeze;
+	        _boss.bossfreezetime = shot_stats.Shot_Freeze_Time;
 	        if wasFrozen = 0 {
-	            other.bossattackspeed = other.bossattackspeed * 0.5;//(1 - other.bossfreezetype);
-	            other.bossmovespeed = other.bossmovespeed * 0.5; //(1 - other.bossfreezetype);
-	            other.speed = other.speed * 0.5; //(1 - other.bossfreezetype);
-	            other.path_speed = other.path_speed * 0.5; //(1 - other.bossfreezetype);
-				other.image_speed = other.image_speed * 0.5; //(1 - other.bossfreezetype);
+	            _boss.bossattackspeed = _boss.bossattackspeed * 0.5;//(1 - _boss.bossfreezetype);
+	            _boss.bossmovespeed = _boss.bossmovespeed * 0.5; //(1 - _boss.bossfreezetype);
+	            _boss.speed = _boss.speed * 0.5; //(1 - _boss.bossfreezetype);
+	            _boss.path_speed = _boss.path_speed * 0.5; //(1 - _boss.bossfreezetype);
+				_boss.image_speed = _boss.image_speed * 0.5; //(1 - _boss.bossfreezetype);
 	        }
 	    }
 	}

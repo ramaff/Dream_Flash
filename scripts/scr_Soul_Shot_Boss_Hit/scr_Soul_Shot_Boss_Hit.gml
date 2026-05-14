@@ -97,7 +97,7 @@ function scr_Soul_Shot_Boss_Hit(_shot = other) {
 			
 				//Print_DF("shot power: " + string(shot_stats.Shot_Power))
 		
-		        _shot_damage = scr_Boss_Damage_Calc();
+		        _shot_damage = scr_Boss_Damage_Calc(_boss);
 		
 				if shot_stats.Shot_Screen_Shake > 2 {
 					scr_Screen_Shake(shot_stats.Shot_Screen_Shake, shot_stats.Shot_Screen_Shake - 2);
@@ -186,18 +186,20 @@ function scr_Soul_Shot_Boss_Hit(_shot = other) {
 				} 
         
 		        if shot_stats.Shot_Impact_Type = 1 {
+					var _radius = _shot.shot_stats.Shot_Impact_Size * _shot.shot_stats.Shot_Size;
 		            with (obj_Boss_Parent) {
 						var _imp_hitable = false
 	
-						if !variable_struct_exists(projectile_hits, other.shot_boss_id) {
+						if !variable_struct_exists(projectile_hits, _shot.shot_boss_id) {
 							_imp_hitable = true
 						}
-						if variable_struct_get(projectile_hits, other.shot_boss_id) != (real(other.shot_boss_id) + other.shot_stats.Shot_ID_Offset) {
+						if variable_struct_get(projectile_hits, _shot.shot_boss_id) != (real( _shot.shot_boss_id) + _shot.shot_stats.Shot_ID_Offset) {
 							_imp_hitable = true	
 						}
 						if _imp_hitable {
-		                    if distance_to_object(other) < other.shot_stats.Shot_Impact_Size {
-		                        scr_Boss_Splash_Damage_Calc();
+		                    if distance_to_object(_shot) < _radius {
+		                        //scr_Boss_Splash_Damage_Calc();
+								scr_Boss_Damage_Calc_Splash(id, _shot)
 		                    }
 		                }
 		            }
@@ -206,6 +208,32 @@ function scr_Soul_Shot_Boss_Hit(_shot = other) {
 						scr_Boss_Hit_Explosion();
 					}
 		        }
+				
+				if shot_stats.Shot_Impact_Type = 3 {
+					var _radius = _shot.shot_stats.Shot_Impact_Size * _shot.shot_stats.Shot_Size;
+					scr_Screen_Shake(sqrt(_shot.shot_stats.Shot_Power / 10), 10);
+					//scr_Screen_Flash(7);
+					scr_Disk_Effect(20, _radius / 100, c_white)
+					scr_Disk_Effect(25, _radius / 75, c_white)
+					scr_Disk_Effect(30, _radius / 50, c_white)
+		
+		            with (obj_Boss_Parent) {
+						var _imp_hitable = false
+	
+						if !variable_struct_exists(projectile_hits, _shot.shot_boss_id) {
+							_imp_hitable = true
+						}
+						if variable_struct_get(projectile_hits, _shot.shot_boss_id) != (real( _shot.shot_boss_id) + _shot.shot_stats.Shot_ID_Offset) {
+							_imp_hitable = true	
+						}
+						if _imp_hitable {
+		                    if distance_to_object(_shot) < _radius {
+		                        //scr_Boss_Splash_Damage_Calc();
+								scr_Boss_Damage_Calc_Splash(id, _shot)
+		                    }
+		                }
+		            }
+				}
 		
 				if shot_stats.Shot_Bounce = 2 {
 					direction = random(360);	
