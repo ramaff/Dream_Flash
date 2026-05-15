@@ -43,7 +43,7 @@ function scr_Soul_Stat_Cloud() {
 		_desc_add = "Usually increasing the damage the soul and bosses do to each other."
 	}
 	if stat = 10 {
-	    recollectionString = "VANITY";
+	    recollectionString = "ASSURANCE";
 		_desc_add = "Usually increasing the fire rate of the soul and bosses."
 	}
 	if stat = 11 {
