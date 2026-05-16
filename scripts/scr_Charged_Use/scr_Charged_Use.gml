@@ -42,9 +42,22 @@ function scr_Charged_Use() {
 		    if senergy >= smaxenergy || senergy > ((_current_weapon_stats.Real_Essence_Cost - senergyconservation) / senergyconservationfactor / ((6 + global.Weap[weaponcharge]) / 6)) {        
 		        sdelay += (_current_weapon_stats.Real_Weapon_Delay - sdelayconservation) / sdelayconservationfactor / ((6 + global.Weap[weaponcharge]) / 6);
 		        energyCost = (_current_weapon_stats.Real_Essence_Cost - senergyconservation) / senergyconservationfactor / ((6 + global.Weap[weaponcharge]) / 6);
-		        Charge_Hold = 1;
+		        Charge_Hold = _current_weapon_stats.Charge_Hold
 				if _ascending and !scr_Charged_Weapon(cw) {
 					Charge_Hold = 2;	
+				}
+				if Charge_Hold = 3 {
+					
+					var barrage = false;
+					var minion = false;
+					var spawnProjectile = true;
+		
+					var _weapon_meta_data = scr_Hard_Coded_Weapon_Stats(_current_weapon_stats);
+					scr_Weapon_Output_Item_Mods(_current_weapon_stats, _weapon_meta_data, cw)
+					
+					charging_shots = scr_Weapon_Output(spawnProjectile, minion, _current_weapon_stats, true)
+			
+					sWeaponTicker++;
 				}
 		    }
 

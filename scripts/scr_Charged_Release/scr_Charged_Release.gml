@@ -1,6 +1,6 @@
 function scr_Charged_Release() {
 
-	    if Charge_Hold > 0 {
+	    if Charge_Hold > 0 and Charge_Hold != 3 {
 			
 			var _current_weapon_stats = scr_Setup_Default_Weapon_Stats(weaponcharge)
 			scr_Modify_Current_Weapon_Stats(_current_weapon_stats);

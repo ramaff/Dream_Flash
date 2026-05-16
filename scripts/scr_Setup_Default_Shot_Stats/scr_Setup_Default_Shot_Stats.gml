@@ -78,6 +78,7 @@ function scr_Setup_Default_Shot_Stats(){
 		Shot_Knock_Back: 10,
 		Shot_Charge_Power: 0,
 		Shot_Charge_Size: 0,
+		Charge_Hold: 1,
 		Charge_Time: 0,
 		Charge_Essence: 0,
 		Shot_Impact_Type: 0,

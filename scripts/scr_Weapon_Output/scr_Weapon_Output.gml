@@ -2,6 +2,8 @@
 // https://help.yoyogames.com/hc/en-us/articles/360005277377 for more information
 function scr_Weapon_Output(_spawn_projectile = spawnProjectile, _minion = minion, _cw_stats = current_weapon_stats, _prime_shot = false) {
 
+	var _shot_outputs = [];
+
 	if _spawn_projectile {
 		
 		if global.Q[5] > 0 {
@@ -12,8 +14,8 @@ function scr_Weapon_Output(_spawn_projectile = spawnProjectile, _minion = minion
 		}
 		
 		if !_minion {
-			scr_Shot_Creation(_cw_stats, _prime_shot);
-			scr_Q03(false, _cw_stats);
+			_shot_outputs = scr_Shot_Creation(_cw_stats, _prime_shot);
+			array_concat(_shot_outputs, scr_Q03(false, _cw_stats));
 		} else {
 			scr_Soul_Spawn(_cw_stats);
 			scr_Q03(true, _cw_stats);
@@ -33,8 +35,8 @@ function scr_Weapon_Output(_spawn_projectile = spawnProjectile, _minion = minion
 					var _weapon_meta_data = scr_Hard_Coded_Weapon_Stats(_ex_stats);
 		
 					if !_weapon_meta_data.minion {
-						scr_Shot_Creation(_ex_stats, false);
-						scr_Q03(false, _cw_stats);
+						array_concat(_shot_outputs, scr_Shot_Creation(_ex_stats, false));
+						array_concat(_shot_outputs, scr_Q03(false, _cw_stats));
 					} else {
 						scr_Soul_Spawn(_cw_stats);
 						scr_Q03(true, _cw_stats);
@@ -42,7 +44,6 @@ function scr_Weapon_Output(_spawn_projectile = spawnProjectile, _minion = minion
 				}
 			}
 		}
-		
 	}
-
+	return _shot_outputs
 }

@@ -1,5 +1,7 @@
 function scr_Shot_Creation(_cw = current_weapon_stats, _prime_shot = false) {
 	
+	var _shot_output = []
+	
 	scr_Spike_Soul_Extra();
 	scr_Casting_Soul_Manual_Synergy(_cw);
 	scr_Scrub_Soul_Weapon_Mod(_cw);
@@ -180,6 +182,7 @@ function scr_Shot_Creation(_cw = current_weapon_stats, _prime_shot = false) {
 			}
 			
 		    with instance_create_depth(shxx, shyy, _cw.Shot_Depth, _shot_ass) {
+				array_push(_shot_output, id)
 		        scr_Default_Shot_Variables();
 				
 				shot_stats = variable_clone(_cw);
@@ -285,6 +288,7 @@ function scr_Shot_Creation(_cw = current_weapon_stats, _prime_shot = false) {
 		direction = point_direction(x,y, _mx, _my);
 	}
    
+	return _shot_output
 
 
 

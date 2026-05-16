@@ -4,5 +4,7 @@ function scr_Shot_Mouse_Maintain(){
 	var _target_direction = point_direction(x,y,obj_Astral_Indicator.x,obj_Astral_Indicator.y) + shot_stats.Shot_Direction_Addition;
 	
 	direction = scr_Angle_Converge(direction, _target_direction, speed + 2);
-	image_angle = direction
+	if shot_stats.Shot_Point_Angle {
+		image_angle = direction
+	}
 }

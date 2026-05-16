@@ -84,13 +84,44 @@ function scr_Charged_Hold() {
 		
 	    if senergy >= smaxenergy || senergy >= (((Charge_Essence - senergyconservation) / Charge_Total_Time) / senergyconservationfactor / ((6 + global.Weap[weaponcharge]) / 6)) {
 		    if Charge_Time < Charge_Total_Time {
-		        Charge_Speed += _charge_portion * Shot_Charge_Speed;
-		        Charge_Power += _charge_portion * Shot_Charge_Power;
-				Charge_Lifespan += _charge_portion * Shot_Charge_Lifespan;
-				Charge_Knockback += _charge_portion * Shot_Charge_Knockback;
+				var _speed_up = _charge_portion * Shot_Charge_Speed
+				var _power_up = _charge_portion * Shot_Charge_Power
+				var _lifespan_up = _charge_portion * Shot_Charge_Lifespan
+				var _knock_up = _charge_portion * Shot_Charge_Knockback
+				var _size_up = _charge_portion * Shot_Charge_Size
+
+		        Charge_Speed += _speed_up;
+		        Charge_Power += _power_up;
+				Charge_Lifespan += _lifespan_up;
+				Charge_Knockback += _knock_up;
 		        Charge_Time += _charge_rate;
-		        Charge_Size += _charge_portion * Shot_Charge_Size;
+		        Charge_Size += _size_up;
 				on = 1;
+				
+				if Charge_Hold = 3 {
+					var _charging_shots_count = array_length(charging_shots)
+					for (var _i = _charging_shots_count - 1; _i >= 0; _i--) {
+						var _charging_shot = charging_shots[_i];
+						if instance_exists(_charging_shot) {
+							with(_charging_shot) {
+								shot_stats.Shot_Speed += _speed_up;
+								speed += _speed_up;
+						        shot_stats.Shot_Power += _power_up;
+								shot_stats.Shot_Life_Span += _lifespan_up;
+								alarm[0] = shot_stats.Shot_Life_Span - shot_stats.Shot_Exist_Time;
+								shot_stats.Shot_Knock_Back += _knock_up;
+						        shot_stats.Shot_Size += _size_up;
+								image_xscale += _size_up;
+								image_yscale += _size_up;
+							}
+						} else {
+							array_delete(charging_shots, _i, 1)	
+						}
+					}
+					if array_length(charging_shots) = 0 {
+						Charge_Hold = 0;	
+					}
+				}
 		    }
 		}
 	} 
