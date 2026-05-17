@@ -1378,7 +1378,7 @@
     },
     "210": {
         "Name": "Bag of Popcorn",
-        "Recollection_Sprite": "spr_Pop_Gun_Art",
+        "Recollection_Sprite": "spr_Popcorn_Bag_Art",
         "Description": "+Rapidly Take up Space",
         "Detailed_Description": "Create popcorn kernels insanely fast that shove bullets and bosses.",
         "Essence": 4,
@@ -1399,7 +1399,7 @@
     },
     "211": {
         "Name": "Bullet Hell Gun",
-        "Recollection_Sprite": "spr_Semi_Auto_Rifle_Art",
+        "Recollection_Sprite": "spr_Bullet_Hell_Gun_Art",
         "Description": "+Big Barrage",
         "Detailed_Description": "Unloads a swarm of bullets.",
         "Essence": 53,
@@ -2296,7 +2296,7 @@
     },
     "411": {
         "Name": "Chewing Gum",
-        "Recollection_Sprite": "spr_Forcefield_Charger_Art",
+        "Recollection_Sprite": "spr_Chewing_Gum_Art",
         "Description": "+Bullet Blocking +Piercing",
         "Detailed_Description": "This weapon can charge up a powerful forcefield that blocks bullets and can severely damage bosses.",
         "Essence": 20,
@@ -2384,7 +2384,7 @@
     },
     "413": {
         "Name": "Lightbulbs",
-        "Recollection_Sprite": "spr_Guardian_Cannon_Art",
+        "Recollection_Sprite": "spr_Light_Bulbs_Art",
         "Description": "+Bright Idea Producers",
         "Detailed_Description": "Lightbulbs rapidly shoot out additonal shots that home.",
         "Essence": 50,
