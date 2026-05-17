@@ -85,6 +85,7 @@ function scr_Setup_Default_Shot_Stats(){
 		Shot_Impact_Power: 0,
 		Shot_Impact_Size: 0,
 		Shot_Impact_Explode: 1,
+		Shot_Impact_Color: [255, 255, 255],
 		Shot_Explosion_Sprite: "spr_Shot_Explosion",
 		Shot_Forward: 0,
 		Shot_Forward_Amount: 16,

@@ -213,9 +213,10 @@ function scr_Soul_Shot_Boss_Hit(_shot = other) {
 					var _radius = _shot.shot_stats.Shot_Impact_Size * _shot.shot_stats.Shot_Size;
 					scr_Screen_Shake(sqrt(_shot.shot_stats.Shot_Power / 10), 10);
 					//scr_Screen_Flash(7);
-					scr_Disk_Effect(20, _radius / 100, c_white)
-					scr_Disk_Effect(25, _radius / 75, c_white)
-					scr_Disk_Effect(30, _radius / 50, c_white)
+					var _col = make_colour_rgb(_shot.shot_stats.Shot_Impact_Color[0], _shot.shot_stats.Shot_Impact_Color[1], _shot.shot_stats.Shot_Impact_Color[2])
+					scr_Disk_Effect(20, _radius / 100, _col)
+					scr_Disk_Effect(25, _radius / 75, _col)
+					scr_Disk_Effect(30, _radius / 50, _col)
 		
 		            with (obj_Boss_Parent) {
 						var _imp_hitable = false

@@ -827,6 +827,7 @@
     {"name":"obj_Tar_Pool","order":4,"path":"objects/obj_Tar_Pool/obj_Tar_Pool.yy",},
     {"name":"obj_Target_Home_Bullet","order":9,"path":"objects/obj_Target_Home_Bullet/obj_Target_Home_Bullet.yy",},
     {"name":"obj_taste_ghoul","order":4,"path":"objects/obj_taste_ghoul/obj_taste_ghoul.yy",},
+    {"name":"obj_Tesla_Shot","order":19,"path":"objects/obj_Tesla_Shot/obj_Tesla_Shot.yy",},
     {"name":"obj_the_host","order":2,"path":"objects/obj_the_host/obj_the_host.yy",},
     {"name":"obj_The_Veil_True_Boss","order":18,"path":"objects/obj_The_Veil_True_Boss/obj_The_Veil_True_Boss.yy",},
     {"name":"obj_The_Veil","order":17,"path":"objects/obj_The_Veil/obj_The_Veil.yy",},

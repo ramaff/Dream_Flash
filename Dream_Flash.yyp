@@ -1507,6 +1507,7 @@
     {"id":{"name":"obj_Tar_Pool","path":"objects/obj_Tar_Pool/obj_Tar_Pool.yy",},},
     {"id":{"name":"obj_Target_Home_Bullet","path":"objects/obj_Target_Home_Bullet/obj_Target_Home_Bullet.yy",},},
     {"id":{"name":"obj_taste_ghoul","path":"objects/obj_taste_ghoul/obj_taste_ghoul.yy",},},
+    {"id":{"name":"obj_Tesla_Shot","path":"objects/obj_Tesla_Shot/obj_Tesla_Shot.yy",},},
     {"id":{"name":"obj_The_Border","path":"objects/obj_The_Border/obj_The_Border.yy",},},
     {"id":{"name":"obj_The_Construct","path":"objects/obj_The_Construct/obj_The_Construct.yy",},},
     {"id":{"name":"obj_the_host","path":"objects/obj_the_host/obj_the_host.yy",},},
