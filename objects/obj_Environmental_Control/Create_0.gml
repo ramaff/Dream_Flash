@@ -96,7 +96,7 @@ if roomBG = spr_flash_marble_g || roomBG = spr_flash_diagonal_brick_g || roomBG 
 	
 	deepest_layer.sprite_index = spr_dream_night_bg_test;
 	
-} else if roomBG = spr_feel_brick_g || roomBG = spr_feel_brick_g_xl || roomBG = spr_feel_marble_g {
+} else if roomBG = spr_feel_brick_g || roomBG = spr_feel_brick_g_xl || roomBG = spr_feel_marble_g || roomBG = spr_dream_marble_g {
 	deepest_layer.sprite_index = spr_feel_night_bg
 	deepest_layer.sprite_index = spr_dream_night_bg_test;
 } else if bgType = "Flash" {

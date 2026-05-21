@@ -341,9 +341,9 @@ function scr_Boss_Choose(roomNum, exclude, difficultyAdd = 0) {
 	}
 	if bossform = 33.1 // Chaotic Unrest
 	{
-	    bosstype = obj_Chaotic_Unrest;
+	    bosstype = obj_restless
 	    difficulty = 9;
-	    global.champ = choose(0,1,8);
+	    global.champ = choose(0);
 		//global.champ = 8;
 	}
 	if bossform = 34.1 // Locust

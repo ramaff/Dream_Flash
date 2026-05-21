@@ -1743,6 +1743,7 @@
     {"name":"spr_dream_day_front_bg","order":9,"path":"sprites/spr_dream_day_front_bg/spr_dream_day_front_bg.yy",},
     {"name":"spr_Dream_Flash_Album_Cover_Link","order":4,"path":"sprites/spr_Dream_Flash_Album_Cover_Link/spr_Dream_Flash_Album_Cover_Link.yy",},
     {"name":"spr_Dream_Flash_Album_Cover","order":10,"path":"sprites/spr_Dream_Flash_Album_Cover/spr_Dream_Flash_Album_Cover.yy",},
+    {"name":"spr_dream_marble_g","order":33,"path":"sprites/spr_dream_marble_g/spr_dream_marble_g.yy",},
     {"name":"spr_dream_night_bg_test","order":11,"path":"sprites/spr_dream_night_bg_test/spr_dream_night_bg_test.yy",},
     {"name":"spr_Dreamers_Blade_Shot","order":6,"path":"sprites/spr_Dreamers_Blade_Shot/spr_Dreamers_Blade_Shot.yy",},
     {"name":"spr_Dreams_that_Flash","order":7,"path":"sprites/spr_Dreams_that_Flash/spr_Dreams_that_Flash.yy",},
