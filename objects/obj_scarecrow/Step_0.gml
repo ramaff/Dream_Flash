@@ -16,8 +16,12 @@ scr_Boss_Wobble("Horizontal", 0.4, 1, 0);
 if active_attack_delay <= 0 and active_attack_cooldown <= 0 and active_attack_duration <= 0 {
     
 	// Pick a random attack to do
-	active_attack = choose(1, 2, 3);
-	active_attack = 1;
+	if currentphase = 1 {
+		active_attack = 1;
+	} else {
+		active_attack = choose(2, 3, 4);
+		active_attack = 2;
+	}
 	
     if active_attack = 1 {
 		// Setup how many attacks per boss move, delay, etc
@@ -27,16 +31,25 @@ if active_attack_delay <= 0 and active_attack_cooldown <= 0 and active_attack_du
 		// patternDirection = scr_Soul_Point();
 		// patternDirection = random(360;
     }
-	// Hop leap attack setup example
+	// Field Slash
 	if active_attack = 2 {
+		// 
+		scr_Boss_Attack_Time_Setup_v2(20, 30, 1, 30, 30, 10);
+		
+		//scr_Boss_Jump_Setup_v2(0, 7 * bossmovespeed, x, y);
+		scr_Boss_Dash_Setup_v2(scr_Soul_Point(), 0, 2 * bossmovespeed);
+		pattern_direction = 60;
+    }
+	// Down Slash
+	if active_attack = 3 {
 		// 
 		scr_Boss_Attack_Time_Setup_v2(50, 30, 1, 30, 30, 10);
 		
-		scr_Boss_Jump_Setup_v2(0, 7 * bossmovespeed, x, y);
+		scr_Boss_Jump_Setup_v2(0, 2 * bossmovespeed, x, y);
 		//scr_Boss_Dash_Setup_v2(scr_Soul_Point(), 0, 7 * bossmovespeed);
     }
-	// Minion Spawn Example
-	if active_attack = 3 {
+	// Minion Spawn
+	if active_attack = 4 {
 		// Setup how many attacks per boss move, delay, etc
 		scr_Boss_Attack_Time_Setup_v2(1, 50, 1, 120, 30, 10);
 		
@@ -56,21 +69,33 @@ scr_default_attack_settings_v2();
 if active_attack_delay <= 0 and pattern_cooldown <= 0 and pattern_count > 0 {
    
     if active_attack = 1 {
-		scr_Boss_Stretch("Vertical", 1);
-		
-		attack_stats.bullet_direction = scr_Boss_Bullet_Direction_Formula(scr_Soul_Point(), 30)
-		attack_stats.bullet_sprite = "spr_red_bullet_v2"
-		attack_stats.bullet_count = 3;
-		attack_stats.bullet_spread = 30;
-		attack_stats.bullet_direction_angle = 1
-		
-		scr_boss_shoot_v2();
-	
-		// If you gotta change the pattern aim direction
-	    // pattern_direction += 0;
+		minion_count = 4;
+		minion_type = obj_patch;
+		minion_health = bossmaxhealth / 20;
+		//minion_spawn_animation = spr_pocket_minion_spawn
+		//minion_yy = boss_height;
+
+		scr_Minion_Spawn();
 	}
 	
 	if active_attack = 2 {
+		scr_Boss_Dash_Movement_v2(4,2);
+		
+		speed = dash_speed;
+        direction = dash_direction;	
+		
+		attack_stats.bullet_direction = pattern_direction;
+		attack_stats.bullet_type = "obj_falling_2_way_shot_bullet"
+		attack_stats.bullet_life_span = 90;
+		attack_stats.bullet_lob_time = 58;
+		attack_stats.bullet_speed = bossbulletspeed * (1.5 + random(0.6));
+		
+		scr_boss_shoot_v2();
+		
+		pattern_direction += 15;
+	}
+
+	if active_attack = 3 {
 		scr_Boss_Dash_Movement_v2(4,2);
 		
 		speed = dash_speed;
@@ -79,17 +104,17 @@ if active_attack_delay <= 0 and pattern_cooldown <= 0 and pattern_count > 0 {
 		scr_Jump_Movement_v2(2);	
 		
 		if pattern_count = floor(pattern_count_max) {
-			attack_stats.bullet_direction = scr_Boss_Bullet_Direction_Formula(scr_Soul_Point(), 30)
+			attack_stats.bullet_direction = pattern_direction;
 		
 			scr_boss_shoot_v2();
 		}
 	}
 	
-	if active_attack = 3 {
+	if active_attack = 4 {
 	
-		minion_count = 1;
-		minion_type = obj_Minion_Template;
-		minion_health = bossmaxhealth / 10;
+		minion_count = 3;
+		minion_type = obj_patch;
+		minion_health = bossmaxhealth / 20;
 		//minion_spawn_animation = spr_pocket_minion_spawn
 		//minion_yy = boss_height;
 
@@ -113,17 +138,43 @@ if active_attack_duration <= 0 {
 /// Boss Sprite Code
 
 // Go back to normal default size
-scr_Boss_Size_Lerp(0.15);
-
+if currentphase = 1 {
+	scr_Boss_Size_Lerp(0.15);
+} else {
+	scr_Boss_Size_Lerp_Dir(0.15);
+}
 // Handles boss attack sprite animation
-if active_attack != 0 {
+if active_attack = 1 {
 	var _hold_frame = 1;
-	scr_Boss_Attack_Sprite_v2(spr_Boss_Template_Attack, _hold_frame, 2, 2, 20);
+	scr_Boss_Attack_Sprite_v2(spr_scarecrow_summon, _hold_frame, 2, 2, 20);
+	if image_index = _hold_frame {
+		scr_Boss_Wobble("Horizontal", 2, 0.4, 0)	
+	}
+} else if active_attack = 2 {
+	var _hold_frame = 2;
+	scr_Boss_Attack_Sprite_v2(spr_scarecrow_field_slash, _hold_frame, 3, 4, 20);
+	if image_index = _hold_frame {
+		scr_Boss_Wobble("Horizontal", 2, 0.4, 0)	
+	}
+} else if active_attack = 3 {
+	var _hold_frame = 1;
+	scr_Boss_Attack_Sprite_v2(spr_scarecrow_down_slash, _hold_frame, 2, 2, 20);
+	if image_index = _hold_frame {
+		scr_Boss_Wobble("Horizontal", 2, 0.4, 0)	
+	}
+} else if active_attack = 4 {
+	var _hold_frame = 1;
+	scr_Boss_Attack_Sprite_v2(spr_scarecrow_summon_again, _hold_frame, 2, 2, 20);
 	if image_index = _hold_frame {
 		scr_Boss_Wobble("Horizontal", 2, 0.4, 0)	
 	}
 } else {
-	sprite_index = spr_Boss_Template;
+	if currentphase = 1 {
+		sprite_index = spr_scarecrow;
+	}
+	if currentphase = 2 {
+		scr_Boss_Phase_Transition_Animation(2, spr_scarecrow_transition, spr_scarecrow_phase_2, 7)
+	}
 }
 
 // So that the boss hurts soul on collision

@@ -1229,7 +1229,7 @@
         "Boss 048": {
             "Name": "Scarecrow",
             "Recollection_Sprite": "reco_Danger_Picker",
-            "Health_Phase_1": 630,
+            "Health_Phase_1": 590,
             "Health_Phase_2": 950,
             "Defense_Phase_1": 0,
             "Defense_Phase_2": 0,
