@@ -1227,13 +1227,13 @@
         },
         
         "Boss 048": {
-            "Name": "Danger Raiser",
+            "Name": "Scarecrow",
             "Recollection_Sprite": "reco_Danger_Picker",
-            "Health_Phase_1": 480,
-            "Health_Phase_2": 400,
+            "Health_Phase_1": 630,
+            "Health_Phase_2": 950,
             "Defense_Phase_1": 0,
             "Defense_Phase_2": 0,
-            "Boss_Danger": 6,
+            "Boss_Danger": 8,
             "Bullet_Speed": 2.4,
             "Move_Speed": 3,
             "Champ 8": {
