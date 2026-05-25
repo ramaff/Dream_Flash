@@ -99,6 +99,8 @@ if roomBG = spr_flash_marble_g || roomBG = spr_flash_diagonal_brick_g || roomBG 
 } else if roomBG = spr_feel_brick_g || roomBG = spr_feel_brick_g_xl || roomBG = spr_feel_marble_g || roomBG = spr_dream_marble_g {
 	deepest_layer.sprite_index = spr_feel_night_bg
 	deepest_layer.sprite_index = spr_dream_night_bg_test;
+} else if roomBG = spr_dream_brick_g {
+	deepest_layer.sprite_index = spr_dream_night_bg_test;
 } else if bgType = "Flash" {
 	deepest_layer.sprite_index = spr_flash_day_bg
 	deep_layer.sprite_index = spr_flash_day_front_bg;
@@ -108,9 +110,9 @@ if roomBG = spr_flash_marble_g || roomBG = spr_flash_diagonal_brick_g || roomBG 
 	deepest_layer.sprite_index = spr_feel_day_bg;
 	deep_layer.sprite_index = spr_feel_day_front_bg;
 } else if bgType = "Dream" {
-	//deepest_layer.sprite_index = spr_dream_day_bg;
-	//deep_layer.sprite_index = spr_dream_day_front_bg;
-	deepest_layer.sprite_index = spr_Mental_Background_Dream;
+	deepest_layer.sprite_index = spr_dream_day_bg;
+	deep_layer.sprite_index = spr_dream_day_front_bg;
+	//deepest_layer.sprite_index = spr_Mental_Background_Dream;
 } else if bgType = "Nightmare" {
 	deepest_layer.sprite_index = spr_Mental_Background_Nightmare;
 }
