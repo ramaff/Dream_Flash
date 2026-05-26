@@ -17,10 +17,14 @@ if active_attack_delay <= 0 and active_attack_cooldown <= 0 and active_attack_du
     
 	// Pick a random attack to do
 	if currentphase = 1 {
-		active_attack = 1;
+		if !scr_Minion_Count() {
+			active_attack = 1;
+		}
 	} else {
 		active_attack = choose(2, 3, 4);
-		active_attack = 2;
+		if !scr_Minion_Count() {
+			active_attack = choose(2, 3);
+		};
 	}
 	
     if active_attack = 1 {
@@ -34,7 +38,7 @@ if active_attack_delay <= 0 and active_attack_cooldown <= 0 and active_attack_du
 	// Field Slash
 	if active_attack = 2 {
 		// 
-		scr_Boss_Attack_Time_Setup_v2(20, 30, 1, 30, 30, 10);
+		scr_Boss_Attack_Time_Setup_v2(30, 40, 1, 120, 60, 10);
 		
 		//scr_Boss_Jump_Setup_v2(0, 7 * bossmovespeed, x, y);
 		scr_Boss_Dash_Setup_v2(scr_Soul_Point(), 0, 2 * bossmovespeed);
@@ -43,7 +47,7 @@ if active_attack_delay <= 0 and active_attack_cooldown <= 0 and active_attack_du
 	// Down Slash
 	if active_attack = 3 {
 		// 
-		scr_Boss_Attack_Time_Setup_v2(50, 30, 1, 30, 30, 10);
+		scr_Boss_Attack_Time_Setup_v2(40, 40, 1, 120, 60, 10);
 		
 		scr_Boss_Jump_Setup_v2(0, 2 * bossmovespeed, x, y);
 		//scr_Boss_Dash_Setup_v2(scr_Soul_Point(), 0, 7 * bossmovespeed);
@@ -84,15 +88,18 @@ if active_attack_delay <= 0 and pattern_cooldown <= 0 and pattern_count > 0 {
 		speed = dash_speed;
         direction = dash_direction;	
 		
-		attack_stats.bullet_direction = pattern_direction;
-		attack_stats.bullet_type = "obj_falling_2_way_shot_bullet"
-		attack_stats.bullet_life_span = 90;
-		attack_stats.bullet_lob_time = 58;
-		attack_stats.bullet_speed = bossbulletspeed * (1.5 + random(0.6));
+		if pattern_count mod 2 = 0 {
+			attack_stats.bullet_direction = pattern_direction;
+			attack_stats.bullet_type = "obj_falling_2_way_shot_bullet"
+			attack_stats.bullet_life_span = 135 - (pattern_count * 2);
+			attack_stats.bullet_lob_time = 130 - (pattern_count * 2);
+			attack_stats.bullet_speed = bossbulletspeed * (1.5 + random(0.6));
+			attack_stats.forward_offset = 80;
 		
-		scr_boss_shoot_v2();
+			scr_boss_shoot_v2();
 		
-		pattern_direction += 15;
+			pattern_direction += 20;
+		}
 	}
 
 	if active_attack = 3 {
@@ -103,8 +110,13 @@ if active_attack_delay <= 0 and pattern_cooldown <= 0 and pattern_count > 0 {
 		
 		scr_Jump_Movement_v2(2);	
 		
-		if pattern_count = floor(pattern_count_max) {
-			attack_stats.bullet_direction = pattern_direction;
+		if pattern_count mod 8 = 1 {
+			attack_stats.bullet_direction = dash_direction - 90 + random(180);
+			attack_stats.forward_offset = 80;
+			attack_stats.bullet_speed = bossbulletspeed * (1.8 + random(0.5));
+			attack_stats.bullet_type = "obj_marble_8_way_bomb"
+			attack_stats.bullet_sprite = "spr_Boss_Red_Bomb"
+			attack_stats.bullet_lob_time = 45;
 		
 			scr_boss_shoot_v2();
 		}
@@ -158,7 +170,7 @@ if active_attack = 1 {
 	}
 } else if active_attack = 3 {
 	var _hold_frame = 1;
-	scr_Boss_Attack_Sprite_v2(spr_scarecrow_down_slash, _hold_frame, 2, 2, 20);
+	scr_Boss_Attack_Sprite_v2(spr_scarecrow_down_slash, _hold_frame, 2, 5, 20);
 	if image_index = _hold_frame {
 		scr_Boss_Wobble("Horizontal", 2, 0.4, 0)	
 	}
