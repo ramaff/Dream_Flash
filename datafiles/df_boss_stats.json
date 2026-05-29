@@ -1235,15 +1235,9 @@
             "Defense_Phase_2": 0,
             "Boss_Danger": 8,
             "Bullet_Speed": 2.4,
-            "Move_Speed": 3,
-            "Champ 8": {
-                "Name": "Explosive Danger",
-                "Recollection_Sprite": "spr_Explosive_Danger",
-                "Health_Phase_1": 600,
-                "Health_Phase_2": 540
-            },
+            "Move_Speed": 1.8,
         
-            "recollectionDescription": "Sprouts various methods of harming the soul. Has masterful control of bullet movements."
+            "recollectionDescription": "Dangerous Harvest"
         },
         
         "Boss 049": {

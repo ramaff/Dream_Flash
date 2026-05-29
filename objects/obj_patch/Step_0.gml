@@ -21,6 +21,8 @@ if active_attack_delay <= 0 and active_attack_cooldown <= 0 and active_attack_du
 		scr_Boss_Attack_Time_Setup_v2(30, 30, 1, 0, 30, 10);
 		
 		scr_Boss_Jump_Setup_v2(0, 5 * bossmovespeed, x, y);
+		
+		dash_direction = scr_Soul_Point() - 90 + random(180);
     }
 }
 
@@ -41,9 +43,18 @@ if active_attack_delay <= 0 and pattern_cooldown <= 0 and pattern_count > 0 {
 		
 		scr_Jump_Movement_v2(4);	
 		
-		if pattern_count = floor(pattern_count_max / 2) {
-			attack_stats.bullet_direction = scr_Boss_Bullet_Direction_Formula(scr_Soul_Point(), 30)
+		if pattern_count = 1 {
+			image_index = 3;
+			scr_Boss_Stretch("Horizontal", 0.6)
+			
+			attack_stats.bullet_direction = scr_Boss_Bullet_Direction_Formula(90, 30)
+			attack_stats.bullet_count = 2;
+			attack_stats.bullet_spread = 180;
 		
+			scr_boss_shoot_v2();
+			
+			attack_stats.bullet_speed += bossbulletspeed * 0.3;
+			
 			scr_boss_shoot_v2();
 		}
 	}

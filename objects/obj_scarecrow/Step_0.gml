@@ -4,7 +4,18 @@
 scr_Boss_Step(2);
 
 // If boss is floating in air, can make it bob up and down:
-scr_Boss_Height_Bob(30, 1, 0);
+if currentphase > 1 {
+	scr_Boss_Height_Bob(30, 1, 0);
+	boss_static_height = 100;
+	
+	if active_attack = 0 {
+		direction = scr_Soul_Point();
+		speed = lerp(speed, bossmovespeed, 0.05);
+	} else if active_attack != 2 {
+		direction = scr_Soul_Point();
+		speed = lerp(speed, bossmovespeed * 0.15, 0.1);	
+	}
+}
 
 // Make boss shape wobble:
 scr_Boss_Wobble("Horizontal", 0.4, 1, 0);
@@ -38,7 +49,7 @@ if active_attack_delay <= 0 and active_attack_cooldown <= 0 and active_attack_du
 	// Field Slash
 	if active_attack = 2 {
 		// 
-		scr_Boss_Attack_Time_Setup_v2(30, 40, 1, 120, 60, 10);
+		scr_Boss_Attack_Time_Setup_v2(30, 50, 1, 120, 60, 10);
 		
 		//scr_Boss_Jump_Setup_v2(0, 7 * bossmovespeed, x, y);
 		scr_Boss_Dash_Setup_v2(scr_Soul_Point(), 0, 2 * bossmovespeed);
@@ -47,7 +58,7 @@ if active_attack_delay <= 0 and active_attack_cooldown <= 0 and active_attack_du
 	// Down Slash
 	if active_attack = 3 {
 		// 
-		scr_Boss_Attack_Time_Setup_v2(40, 40, 1, 120, 60, 10);
+		scr_Boss_Attack_Time_Setup_v2(90, 40, 1, 120, 60, 10);
 		
 		scr_Boss_Jump_Setup_v2(0, 2 * bossmovespeed, x, y);
 		//scr_Boss_Dash_Setup_v2(scr_Soul_Point(), 0, 7 * bossmovespeed);
@@ -110,7 +121,11 @@ if active_attack_delay <= 0 and pattern_cooldown <= 0 and pattern_count > 0 {
 		
 		scr_Jump_Movement_v2(2);	
 		
-		if pattern_count mod 8 = 1 {
+		if pattern_count > 25 and image_index >= 4 {
+			image_index = 3;	
+		}
+		
+		if pattern_count mod 5 = 1 and pattern_count < 25 {
 			attack_stats.bullet_direction = dash_direction - 90 + random(180);
 			attack_stats.forward_offset = 80;
 			attack_stats.bullet_speed = bossbulletspeed * (1.8 + random(0.5));
@@ -157,7 +172,7 @@ if currentphase = 1 {
 }
 // Handles boss attack sprite animation
 if active_attack = 1 {
-	var _hold_frame = 1;
+	var _hold_frame = 2;
 	scr_Boss_Attack_Sprite_v2(spr_scarecrow_summon, _hold_frame, 2, 2, 20);
 	if image_index = _hold_frame {
 		scr_Boss_Wobble("Horizontal", 2, 0.4, 0)	
@@ -169,13 +184,13 @@ if active_attack = 1 {
 		scr_Boss_Wobble("Horizontal", 2, 0.4, 0)	
 	}
 } else if active_attack = 3 {
-	var _hold_frame = 1;
-	scr_Boss_Attack_Sprite_v2(spr_scarecrow_down_slash, _hold_frame, 2, 5, 20);
+	var _hold_frame = 2;
+	scr_Boss_Attack_Sprite_v2(spr_scarecrow_down_slash, _hold_frame, 3, 6, 20);
 	if image_index = _hold_frame {
 		scr_Boss_Wobble("Horizontal", 2, 0.4, 0)	
 	}
 } else if active_attack = 4 {
-	var _hold_frame = 1;
+	var _hold_frame = 2;
 	scr_Boss_Attack_Sprite_v2(spr_scarecrow_summon_again, _hold_frame, 2, 2, 20);
 	if image_index = _hold_frame {
 		scr_Boss_Wobble("Horizontal", 2, 0.4, 0)	
