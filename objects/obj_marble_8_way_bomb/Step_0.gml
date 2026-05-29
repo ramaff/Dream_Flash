@@ -8,6 +8,8 @@ if scr_bullet_lob(bullet_stats) {
 	direction = scr_Soul_Point() - 60 + random(120);
 }
 
+scr_wall_bounce_v2()
+
 scr_bullet_expand_before_contract_v2(bullet_stats, alarm[0], 45, 0.015)
 
 if alarm[0] < 15 {

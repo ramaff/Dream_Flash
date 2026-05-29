@@ -28,12 +28,12 @@ if active_attack_delay <= 0 and active_attack_cooldown <= 0 and active_attack_du
     
 	// Pick a random attack to do
 	if currentphase = 1 {
-		if !scr_Minion_Count() {
+		if !scr_Over_Minion_Count() {
 			active_attack = 1;
 		}
-	} else {
+	} else if sprite_index = spr_scarecrow_phase_2 {
 		active_attack = choose(2, 3, 4);
-		if !scr_Minion_Count() {
+		if scr_Over_Minion_Count() {
 			active_attack = choose(2, 3);
 		};
 	}
@@ -49,11 +49,16 @@ if active_attack_delay <= 0 and active_attack_cooldown <= 0 and active_attack_du
 	// Field Slash
 	if active_attack = 2 {
 		// 
-		scr_Boss_Attack_Time_Setup_v2(30, 50, 1, 120, 60, 10);
+		scr_Boss_Attack_Time_Setup_v2(30, 50, 1, 120, 60, 20);
 		
 		//scr_Boss_Jump_Setup_v2(0, 7 * bossmovespeed, x, y);
-		scr_Boss_Dash_Setup_v2(scr_Soul_Point(), 0, 2 * bossmovespeed);
+		scr_Boss_Dash_Setup_v2(scr_Soul_Point(), speed + 1, 2 * bossmovespeed);
+		direction = dash_direction;
+		speed = dash_speed;
 		pattern_direction = 60;
+		if hspeed < 0 {
+			pattern_direction = 300;
+		}
     }
 	// Down Slash
 	if active_attack = 3 {
@@ -109,7 +114,11 @@ if active_attack_delay <= 0 and pattern_cooldown <= 0 and pattern_count > 0 {
 		
 			scr_boss_shoot_v2();
 		
-			pattern_direction += 20;
+			if hspeed < 0 {
+				pattern_direction += 20;
+			} else {
+				pattern_direction -= 20;	
+			}
 		}
 	}
 
@@ -179,7 +188,7 @@ if active_attack = 1 {
 	}
 } else if active_attack = 2 {
 	var _hold_frame = 2;
-	scr_Boss_Attack_Sprite_v2(spr_scarecrow_field_slash, _hold_frame, 3, 4, 20);
+	scr_Boss_Attack_Sprite_v2(spr_scarecrow_field_slash, _hold_frame, 3, 5, 20);
 	if image_index = _hold_frame {
 		scr_Boss_Wobble("Horizontal", 2, 0.4, 0)	
 	}

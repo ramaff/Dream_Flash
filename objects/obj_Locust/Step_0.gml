@@ -31,7 +31,7 @@ if bossActiveAttackDelay[1] <= 0 and bossActiveAttackCooldown[1] <= 0 and bossAc
 		bossActiveAttack[1] = choose(4,2,2,2);	
 	}
 	
-	if scr_Minion_Count() {
+	if scr_Over_Minion_Count() {
         bossActiveAttack[1] = choose(1);
 		if champ = 1 {
 			bossActiveAttack[1] = 4
@@ -239,7 +239,7 @@ if bossActiveAttackDelay[1] <= 0 and bossPatternCooldown <= 0 and bossPatternCou
 			}
 		}
 		
-		if bossPatternCount = 1 and !scr_Minion_Count() {
+		if bossPatternCount = 1 and !scr_Over_Minion_Count() {
 			minion_xx = (room_width / 2) - ((global.roomSizeX / 2) + 64) - x;
 			var startY = (room_height / 2) - ((global.roomSizeY / 2) + 64);
 			minion_yy = startY + random(global.roomSizeY) - y;
@@ -277,7 +277,7 @@ if bossActiveAttackDelay[1] <= 0 and bossPatternCooldown <= 0 and bossPatternCou
 		scr_Just_Shoot(true);
 		}
 		
-		if bossPatternCount = 1 and !scr_Minion_Count() {
+		if bossPatternCount = 1 and !scr_Over_Minion_Count() {
 			minion_xx = (room_width / 2) - ((global.roomSizeX / 2) + 64) - x;
 			var startY = (room_height / 2) - ((global.roomSizeY / 2) + 64);
 			minion_yy = startY + random(global.roomSizeY) - y;

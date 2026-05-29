@@ -42,12 +42,12 @@ if active_attack_delay <= 0 and active_attack_cooldown <= 0 and active_attack_du
 	}
 	if champ = 8 {
 		active_attack = choose(8, 9);
-		if scr_Minion_Count(3) {
+		if scr_Over_Minion_Count(3) {
 			active_attack = 8;	
 		}
 		if currentphase = 2 {
 			active_attack = choose(9, 10);
-			if scr_Minion_Count(3) {
+			if scr_Over_Minion_Count(3) {
 				active_attack = 10;	
 			}
 		}

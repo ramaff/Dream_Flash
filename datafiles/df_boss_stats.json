@@ -1229,12 +1229,12 @@
         "Boss 048": {
             "Name": "Scarecrow",
             "Recollection_Sprite": "reco_Danger_Picker",
-            "Health_Phase_1": 590,
-            "Health_Phase_2": 950,
+            "Health_Phase_1": 420,
+            "Health_Phase_2": 1090,
             "Defense_Phase_1": 0,
             "Defense_Phase_2": 0,
             "Boss_Danger": 8,
-            "Bullet_Speed": 2.4,
+            "Bullet_Speed": 2.7,
             "Move_Speed": 1.8,
         
             "recollectionDescription": "Dangerous Harvest"

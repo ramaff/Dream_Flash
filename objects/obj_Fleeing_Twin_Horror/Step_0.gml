@@ -38,7 +38,7 @@ bossPassiveAttack[2] = 0;
 if bossActiveAttackDelay[1] <= 0 and bossActiveAttackCooldown[1] <= 0 and bossActiveAttackDuration[1] <= 0 {
     
     //speed = 0;
-	var minThreshold = scr_Minion_Count();
+	var minThreshold = scr_Over_Minion_Count();
 
     bossActiveAttack[1] = choose(1);
     bossActiveAttackDelay[1] = 15;

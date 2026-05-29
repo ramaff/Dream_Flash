@@ -432,9 +432,9 @@ function scr_Boss_Choose(roomNum, exclude, difficultyAdd = 0) {
 	}
 	if bossform = 48.1 // Danger Raiser
 	{
-	    bosstype = obj_Danger_Raiser;
-	    difficulty = 6;
-	    global.champ = choose(0,8);
+	    bosstype = obj_scarecrow;
+	    difficulty = 8;
+	    global.champ = choose(0);
 	}
 	if bossform = 49.1 // Mind Corruptor
 	{

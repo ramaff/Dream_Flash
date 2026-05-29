@@ -14,6 +14,8 @@ _bull.bullet_size = 0.5;
 
 scr_shoot_bullets(_bull, x, y)
 
+_bull.bullet_speed = bullet_stats.bullet_speed * 1.3
 
+scr_shoot_bullets(_bull, x, y)
 
 
