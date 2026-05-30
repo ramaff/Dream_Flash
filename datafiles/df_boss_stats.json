@@ -927,49 +927,29 @@
         },
 
         "Boss 032": {
-            "Name": "Animated Head",
-            "Recollection_Sprite": "reco_Animated_Head",
-            "Health_Phase_1": 360,
-            "Health_Phase_2": 330,
-            "Defense_Phase_1": 4,
+            "Name": "Brain Dead",
+            "Recollection_Sprite": "reco_brain_dead",
+            "Health_Phase_1": 830,
+            "Health_Phase_2": 0,
+            "Defense_Phase_1": 3,
             "Defense_Phase_2": 1,
-            "Boss_Danger": 5,
+            "Boss_Danger": 4,
             "Bullet_Speed": 3.3,
             "Move_Speed": 3,
-            "recollectionDescription": "Reanimated boss, uses the powers of pestilence to create trailing bullets.",
-        
-            "Champ 1": {
-                "Name": "Maw Head",
-                "Recollection_Sprite": "spr_Maw_Head",
-                "Health_Phase_1": 410,
-                "Health_Phase_2": 370
-            }
+            "recollectionDescription": "Reanimated"
         },
 
         "Boss 033": {
-            "Name": "Chaotic Unrest",
-            "Recollection_Sprite": "reco_Chaotic_Unrest",
-            "Health_Phase_1": 570,
-            "Health_Phase_2": 440,
+            "Name": "Restless Chaos",
+            "Recollection_Sprite": "reco_restless",
+            "Health_Phase_1": 1350,
+            "Health_Phase_2": 0,
             "Defense_Phase_1": 3,
             "Defense_Phase_2": 1,
-            "Boss_Danger": 8,
+            "Boss_Danger": 7,
             "Bullet_Speed": 3.8,
             "Move_Speed": 3.53,
-            "recollectionDescription": "Deadly spirit unable to rest, its soul lingers in this skull. Shoots chaotic magic and can create additional chaos spirits.",
-
-            "Champ 1": {
-                "Name": "Angry Unrest",
-                "Recollection_Sprite": "spr_Angry_Unrest",
-                "Health_Phase_1": 630,
-                "Health_Phase_2": 500
-            },
-            "Champ 8": {
-                "Name": "Demonic Unrest",
-                "Recollection_Sprite": "spr_Demonic_Unrest",
-                "Health_Phase_1": 696,
-                "Health_Phase_2": 566
-            }
+            "recollectionDescription": "Cannot Rest"
         },
 
         "Boss 034": {
@@ -1228,7 +1208,7 @@
         
         "Boss 048": {
             "Name": "Scarecrow",
-            "Recollection_Sprite": "reco_Danger_Picker",
+            "Recollection_Sprite": "reco_scarecrow",
             "Health_Phase_1": 420,
             "Health_Phase_2": 1090,
             "Defense_Phase_1": 0,
