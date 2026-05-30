@@ -17,6 +17,8 @@
     {"$GMSpriteFrame":"v1","%Name":"f0d3ee2e-cd7a-4a6c-b725-2d735d073726","name":"f0d3ee2e-cd7a-4a6c-b725-2d735d073726","resourceType":"GMSpriteFrame","resourceVersion":"2.0",},
     {"$GMSpriteFrame":"v1","%Name":"2d0b5251-51b0-453c-823f-dfb08d85c449","name":"2d0b5251-51b0-453c-823f-dfb08d85c449","resourceType":"GMSpriteFrame","resourceVersion":"2.0",},
     {"$GMSpriteFrame":"v1","%Name":"44bcf121-d96e-497f-9e3f-2e3aebfc6cc2","name":"44bcf121-d96e-497f-9e3f-2e3aebfc6cc2","resourceType":"GMSpriteFrame","resourceVersion":"2.0",},
+    {"$GMSpriteFrame":"v1","%Name":"70a488e6-959d-4c92-b9ef-ab418fc8a9a4","name":"70a488e6-959d-4c92-b9ef-ab418fc8a9a4","resourceType":"GMSpriteFrame","resourceVersion":"2.0",},
+    {"$GMSpriteFrame":"v1","%Name":"e1615a9d-3c34-4de4-a1bf-d1766a46ebe0","name":"e1615a9d-3c34-4de4-a1bf-d1766a46ebe0","resourceType":"GMSpriteFrame","resourceVersion":"2.0",},
     {"$GMSpriteFrame":"v1","%Name":"4addc44c-487d-4070-8433-5f721139d9de","name":"4addc44c-487d-4070-8433-5f721139d9de","resourceType":"GMSpriteFrame","resourceVersion":"2.0",},
     {"$GMSpriteFrame":"v1","%Name":"a9b60de2-f1a6-4b75-9dd1-fa6b3d1f12b9","name":"a9b60de2-f1a6-4b75-9dd1-fa6b3d1f12b9","resourceType":"GMSpriteFrame","resourceVersion":"2.0",},
   ],
@@ -55,7 +57,7 @@
     },
     "eventStubScript":null,
     "eventToFunction":{},
-    "length":7.0,
+    "length":9.0,
     "lockOrigin":false,
     "moments":{
       "$KeyframeStore<MomentsEventKeyframe>":"",
@@ -90,11 +92,17 @@
                 "0":{"$SpriteFrameKeyframe":"","Id":{"name":"44bcf121-d96e-497f-9e3f-2e3aebfc6cc2","path":"sprites/spr_brain_dead_rise_from_graves/spr_brain_dead_rise_from_graves.yy",},"resourceType":"SpriteFrameKeyframe","resourceVersion":"2.0",},
               },"Disabled":false,"id":"bc2c5d33-17a7-451f-a553-fd47403b304d","IsCreationKey":false,"Key":4.0,"Length":1.0,"resourceType":"Keyframe<SpriteFrameKeyframe>","resourceVersion":"2.0","Stretch":false,},
             {"$Keyframe<SpriteFrameKeyframe>":"","Channels":{
+                "0":{"$SpriteFrameKeyframe":"","Id":{"name":"70a488e6-959d-4c92-b9ef-ab418fc8a9a4","path":"sprites/spr_brain_dead_rise_from_graves/spr_brain_dead_rise_from_graves.yy",},"resourceType":"SpriteFrameKeyframe","resourceVersion":"2.0",},
+              },"Disabled":false,"id":"bb8a0cbe-5b56-46c1-a8f6-061fb471459a","IsCreationKey":false,"Key":5.0,"Length":1.0,"resourceType":"Keyframe<SpriteFrameKeyframe>","resourceVersion":"2.0","Stretch":false,},
+            {"$Keyframe<SpriteFrameKeyframe>":"","Channels":{
+                "0":{"$SpriteFrameKeyframe":"","Id":{"name":"e1615a9d-3c34-4de4-a1bf-d1766a46ebe0","path":"sprites/spr_brain_dead_rise_from_graves/spr_brain_dead_rise_from_graves.yy",},"resourceType":"SpriteFrameKeyframe","resourceVersion":"2.0",},
+              },"Disabled":false,"id":"b138ae52-955a-43df-84f7-53096acbba38","IsCreationKey":false,"Key":6.0,"Length":1.0,"resourceType":"Keyframe<SpriteFrameKeyframe>","resourceVersion":"2.0","Stretch":false,},
+            {"$Keyframe<SpriteFrameKeyframe>":"","Channels":{
                 "0":{"$SpriteFrameKeyframe":"","Id":{"name":"4addc44c-487d-4070-8433-5f721139d9de","path":"sprites/spr_brain_dead_rise_from_graves/spr_brain_dead_rise_from_graves.yy",},"resourceType":"SpriteFrameKeyframe","resourceVersion":"2.0",},
-              },"Disabled":false,"id":"d877ca0c-a106-4988-9694-9dc0064dd60d","IsCreationKey":false,"Key":5.0,"Length":1.0,"resourceType":"Keyframe<SpriteFrameKeyframe>","resourceVersion":"2.0","Stretch":false,},
+              },"Disabled":false,"id":"d877ca0c-a106-4988-9694-9dc0064dd60d","IsCreationKey":false,"Key":7.0,"Length":1.0,"resourceType":"Keyframe<SpriteFrameKeyframe>","resourceVersion":"2.0","Stretch":false,},
             {"$Keyframe<SpriteFrameKeyframe>":"","Channels":{
                 "0":{"$SpriteFrameKeyframe":"","Id":{"name":"a9b60de2-f1a6-4b75-9dd1-fa6b3d1f12b9","path":"sprites/spr_brain_dead_rise_from_graves/spr_brain_dead_rise_from_graves.yy",},"resourceType":"SpriteFrameKeyframe","resourceVersion":"2.0",},
-              },"Disabled":false,"id":"9870ce7e-90a4-49a4-aa80-940d68b11dc4","IsCreationKey":false,"Key":6.0,"Length":1.0,"resourceType":"Keyframe<SpriteFrameKeyframe>","resourceVersion":"2.0","Stretch":false,},
+              },"Disabled":false,"id":"9870ce7e-90a4-49a4-aa80-940d68b11dc4","IsCreationKey":false,"Key":8.0,"Length":1.0,"resourceType":"Keyframe<SpriteFrameKeyframe>","resourceVersion":"2.0","Stretch":false,},
           ],"resourceType":"KeyframeStore<SpriteFrameKeyframe>","resourceVersion":"2.0",},"modifiers":[],"name":"frames","resourceType":"GMSpriteFramesTrack","resourceVersion":"2.0","spriteId":null,"trackColour":0,"tracks":[],"traits":0,},
     ],
     "visibleRange":null,

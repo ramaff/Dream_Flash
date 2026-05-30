@@ -55,6 +55,8 @@ function scr_Charged_Use() {
 					var _weapon_meta_data = scr_Hard_Coded_Weapon_Stats(_current_weapon_stats);
 					scr_Weapon_Output_Item_Mods(_current_weapon_stats, _weapon_meta_data, cw)
 					
+					_current_weapon_stats.Being_Charged = true;
+					
 					charging_shots = scr_Weapon_Output(spawnProjectile, minion, _current_weapon_stats, true)
 			
 					sWeaponTicker++;

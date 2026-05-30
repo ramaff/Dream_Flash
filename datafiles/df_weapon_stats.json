@@ -1651,7 +1651,7 @@
     "306": {
         "Name": "Twister Staff",
         "Recollection_Sprite": "spr_Magic_Twister_Art",
-        "Description": "+Bullet Redirection +Extra Hits",
+        "Description": "+Mass Suckage +Extra Hits",
         "Detailed_Description": "Does continuous twisting damage, also has big knockback power!",
         "Essence": 57,
         "Delay": 73,
@@ -2300,8 +2300,8 @@
     "411": {
         "Name": "Chewing Gum",
         "Recollection_Sprite": "spr_Chewing_Gum_Art",
-        "Description": "+Bullet Blocking +Piercing",
-        "Detailed_Description": "This weapon can charge up a powerful forcefield that blocks bullets and can severely damage bosses.",
+        "Description": "+Bullet Absorption +Charging",
+        "Detailed_Description": "Chew up gum and blow a big bubble that traps bullets and does large splash damage. Pops after a while.",
         "Essence": 20,
         "Delay": 30,
         "Complexity": "Medium",

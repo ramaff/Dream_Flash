@@ -57,6 +57,7 @@ function scr_Duplicate_Shot_Stats(_new_shot_stats = other.shot_stats, _existing_
 	}
 
 	direction = other.direction + _dir;
+	shot_stats.Shot_Direction_Addition += _dir
 	speed = shot_stats.Shot_Speed;
 	shot_stats.Shot_Exist_Time = 0;
 	alarm[0] = shot_stats.Shot_Life_Span;

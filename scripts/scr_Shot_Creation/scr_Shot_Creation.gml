@@ -92,6 +92,7 @@ function scr_Shot_Creation(_cw = current_weapon_stats, _prime_shot = false) {
 	    if _cw.Weapon_Vomit = 1 {
 	        dir = (-(_cw.Shot_Accuracy / 2) + random(_cw.Shot_Accuracy));
 	    }
+		_cw.Shot_Direction_Addition = dir;
 		actual_shot_direction = 0;
 	    var xx = 0;
 	    var yy = 0;
