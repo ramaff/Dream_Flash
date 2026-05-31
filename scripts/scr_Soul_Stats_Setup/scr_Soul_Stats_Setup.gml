@@ -1,6 +1,7 @@
 function scr_Soul_Stats_Setup() {
 	Charge_Hold = 0;
 	Charge_Time = 0;
+	charging_shots = []
 
 	///////////////////////////////////////////////
 	///////////////// Temp Effects ////////////////

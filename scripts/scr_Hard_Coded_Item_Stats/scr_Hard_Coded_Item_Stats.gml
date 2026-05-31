@@ -758,6 +758,7 @@ function scr_Hard_Coded_Item_Stats(itemVal, items_to_add = 1, reload = false) {
 	if itemVal = "L02" {
 		if !reload  {
 			global.weaponslots++;
+			scr_N03();
 			if instance_exists(Soul_Weapons_Control) {
 				scr_Weapon_Slot_Info_Update(Soul_Weapons_Control.weapon_slot_info)
 			}

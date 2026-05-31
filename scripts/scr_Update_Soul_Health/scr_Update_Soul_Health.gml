@@ -1,6 +1,7 @@
 // Script assets have changed for v2.3.0 see
 // https://help.yoyogames.com/hc/en-us/articles/360005277377 for more information
 function scr_Update_Soul_Health(_health, _slot = global.currentheart) {
+	
 	if _slot > global.currentheart {
 		exit;
 	}

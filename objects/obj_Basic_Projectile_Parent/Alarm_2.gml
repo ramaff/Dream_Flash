@@ -5,9 +5,11 @@ if global.gameParticles > 0 {
 	alarm[2] = shot_stats.Shot_Trail_Frequency / global.gameParticles;
 
 	if shot_stats.Shot_Trail > 0 and shot_stats.Shot_Trail < 3 {
+		
+		var _area = shot_stats.Shot_Trail_Area * shot_stats.Shot_Size * 2
 	
-		var xx = random(shot_stats.Shot_Trail_Area) - (shot_stats.Shot_Trail_Area / 2);
-		var yy = random(shot_stats.Shot_Trail_Area) - (shot_stats.Shot_Trail_Area / 2);
+		var xx = random(_area) - (_area / 2);
+		var yy = random(_area) - (_area / 2);
 		
 		var _speed = 0;
 		var _direction = 0;
@@ -41,8 +43,10 @@ if global.gameParticles > 0 {
 
 	if shot_stats.Shot_Trail = 3 {
 	
-		var xx = random(shot_stats.Shot_Trail_Area) - (shot_stats.Shot_Trail_Area / 2);
-		var yy = random(shot_stats.Shot_Trail_Area) - (shot_stats.Shot_Trail_Area / 2);
+		var _area = shot_stats.Shot_Trail_Area * shot_stats.Shot_Size * 2
+	
+		var xx = random(_area) - (_area / 2);
+		var yy = random(_area) - (_area / 2);
 	
 		with instance_create(x + xx,y + yy, asset_get_index(shot_stats.Shot_Trail_Type)) {
 		
@@ -60,7 +64,7 @@ if global.gameParticles > 0 {
 			life = other.shot_stats.Shot_Trail_Life;
 			alarm[0] = life;
 		
-			if other.shot_stats.Shot_Trail_Type = obj_Black_Hole_Part {
+			if other.shot_stats.Shot_Trail_Type = "obj_Black_Hole_Part" {
 				target = other.id
 			} else {
 				direction = point_direction(x,y,other.x,other.y);

@@ -1,0 +1,26 @@
+{
+  "$GMSound":"v2",
+  "%Name":"snd_Popcorn",
+  "audioGroupId":{
+    "name":"audiogroup_default",
+    "path":"audiogroups/audiogroup_default",
+  },
+  "bitDepth":1,
+  "channelFormat":0,
+  "compression":0,
+  "compressionQuality":4,
+  "conversionMode":0,
+  "duration":0.75,
+  "exportDir":"",
+  "name":"snd_Popcorn",
+  "parent":{
+    "name":"weapon Specific",
+    "path":"folders/Sounds/Sound Effects/Alleged Real Sound Effects/weapon Specific.yy",
+  },
+  "preload":false,
+  "resourceType":"GMSound",
+  "resourceVersion":"2.0",
+  "sampleRate":44100,
+  "soundFile":"snd_Popcorn.wav",
+  "volume":1.0,
+}

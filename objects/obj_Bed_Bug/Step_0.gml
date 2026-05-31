@@ -40,7 +40,7 @@ direction = bossdirection;
 
 if bossActiveAttackDelay[1] <= 0 and bossActiveAttackCooldown[1] <= 0 and bossActiveAttackDuration[1] <= 0 {
     
-	var minThres = scr_Minion_Count();
+	var minThres = scr_Over_Minion_Count();
 	
     bossActiveAttack[1] = choose(1,2);
     bossActiveAttackDelay[1] = 15;

@@ -1,6 +1,4 @@
-function scr_Boss_Stretch(argument0, argument1) {
-	var ori = argument0;
-	var amt = argument1;
+function scr_Boss_Stretch(ori, amt) {
 
 	if ori = "Horizontal" {
 		bossSizeX += amt * bossSize;

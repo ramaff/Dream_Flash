@@ -69,7 +69,7 @@ if active_attack_delay <= 0 and active_attack_cooldown <= 0 and active_attack_du
 	if champ = 1 {
 		active_attack = choose(3, 4, 6);	
 	}
-	if scr_Minion_Count(10) {
+	if scr_Over_Minion_Count(10) {
 		active_attack = 1;	
 	}
 	

@@ -47,7 +47,7 @@ if instance_exists(obj_Soul_Parent) and currentphase = 1 {
 
 if bossActiveAttackDelay[1] <= 0 and bossActiveAttackCooldown[1] <= 0 and bossActiveAttackDuration[1] <= 0 {
     
-	var minThreshold = scr_Minion_Count();
+	var minThreshold = scr_Over_Minion_Count();
 	
     speed = bossmovespeed * 0.5;
     bossdirection = scr_Soul_Point();

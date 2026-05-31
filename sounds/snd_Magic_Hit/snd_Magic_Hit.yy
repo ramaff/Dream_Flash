@@ -1,0 +1,26 @@
+{
+  "$GMSound":"v2",
+  "%Name":"snd_Magic_Hit",
+  "audioGroupId":{
+    "name":"audiogroup_default",
+    "path":"audiogroups/audiogroup_default",
+  },
+  "bitDepth":1,
+  "channelFormat":0,
+  "compression":0,
+  "compressionQuality":4,
+  "conversionMode":0,
+  "duration":0.75,
+  "exportDir":"",
+  "name":"snd_Magic_Hit",
+  "parent":{
+    "name":"Weapon Generic",
+    "path":"folders/Sounds/Sound Effects/Alleged Real Sound Effects/Weapon Generic.yy",
+  },
+  "preload":false,
+  "resourceType":"GMSound",
+  "resourceVersion":"2.0",
+  "sampleRate":44100,
+  "soundFile":"snd_Magic_Hit.wav",
+  "volume":1.0,
+}

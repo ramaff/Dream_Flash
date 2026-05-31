@@ -3,6 +3,9 @@
 function scr_Soul_Shot_Boss_Hit(_shot = other) {
 
 	var _boss = id;
+	var _shot_damage = 0;
+	var _shspeed = _shot.hspeed;
+	var _svspeed = _shot.vspeed;
 	with(_shot) {
 		var _hitable = false
 	
@@ -94,7 +97,7 @@ function scr_Soul_Shot_Boss_Hit(_shot = other) {
 			
 				//Print_DF("shot power: " + string(shot_stats.Shot_Power))
 		
-		        var _shot_damage = scr_Boss_Damage_Calc();
+		        _shot_damage = scr_Boss_Damage_Calc(_boss);
 		
 				if shot_stats.Shot_Screen_Shake > 2 {
 					scr_Screen_Shake(shot_stats.Shot_Screen_Shake, shot_stats.Shot_Screen_Shake - 2);
@@ -109,11 +112,14 @@ function scr_Soul_Shot_Boss_Hit(_shot = other) {
 						_xx = _boss.x;
 						_yy = _boss.y;
 					}
+					var _ass_hit = asset_get_index(shot_stats.Shot_Trail_Hit_Type)
+					var _ass_index = asset_get_index(shot_stats.Shot_Trail_Hit_Sprite)
+					var _area = shot_stats.Shot_Trail_Area * shot_stats.Shot_Size * 2
 					repeat(shot_stats.Shot_Trail_Hit_Count) {
-						var ddir = direction - 90 + random(180);
-						scr_Particle_Burst(asset_get_index(shot_stats.Shot_Trail_Hit_Type), asset_get_index(shot_stats.Shot_Trail_Hit_Sprite), 
+						var ddir = direction + 90 + random(180);
+						scr_Particle_Burst(_ass_hit, _ass_index, 
 										   shot_stats.Shot_Trail_Color_1, shot_stats.Shot_Trail_Color_2, 1, 12 + random(8), ddir,
-										   0, 0, shot_stats.Shot_Size + random(0.2), 15 + random(10), false, _xx, _yy)
+										   0, _area, shot_stats.Shot_Size - 0.1 + random(0.2), 15 + random(10), false, _xx, _yy)
 					}
 				
 					if shot_stats.Shot_Essence_Drain > 0 {
@@ -180,18 +186,20 @@ function scr_Soul_Shot_Boss_Hit(_shot = other) {
 				} 
         
 		        if shot_stats.Shot_Impact_Type = 1 {
+					var _radius = _shot.shot_stats.Shot_Impact_Size * _shot.shot_stats.Shot_Size;
 		            with (obj_Boss_Parent) {
 						var _imp_hitable = false
 	
-						if !variable_struct_exists(projectile_hits, other.shot_boss_id) {
+						if !variable_struct_exists(projectile_hits, _shot.shot_boss_id) {
 							_imp_hitable = true
 						}
-						if variable_struct_get(projectile_hits, other.shot_boss_id) != (real(other.shot_boss_id) + other.shot_stats.Shot_ID_Offset) {
+						if variable_struct_get(projectile_hits, _shot.shot_boss_id) != (real( _shot.shot_boss_id) + _shot.shot_stats.Shot_ID_Offset) {
 							_imp_hitable = true	
 						}
 						if _imp_hitable {
-		                    if distance_to_object(other) < other.shot_stats.Shot_Impact_Size {
-		                        scr_Boss_Splash_Damage_Calc();
+		                    if distance_to_object(_shot) < _radius {
+		                        //scr_Boss_Splash_Damage_Calc();
+								scr_Boss_Damage_Calc_Splash(id, _shot)
 		                    }
 		                }
 		            }
@@ -200,6 +208,33 @@ function scr_Soul_Shot_Boss_Hit(_shot = other) {
 						scr_Boss_Hit_Explosion();
 					}
 		        }
+				
+				if shot_stats.Shot_Impact_Type = 3 {
+					var _radius = _shot.shot_stats.Shot_Impact_Size * _shot.shot_stats.Shot_Size;
+					scr_Screen_Shake(sqrt(_shot.shot_stats.Shot_Power / 10), 10);
+					//scr_Screen_Flash(7);
+					var _col = make_colour_rgb(_shot.shot_stats.Shot_Impact_Color[0], _shot.shot_stats.Shot_Impact_Color[1], _shot.shot_stats.Shot_Impact_Color[2])
+					scr_Disk_Effect(20, _radius / 100, _col)
+					scr_Disk_Effect(25, _radius / 75, _col)
+					scr_Disk_Effect(30, _radius / 50, _col)
+		
+		            with (obj_Boss_Parent) {
+						var _imp_hitable = false
+	
+						if !variable_struct_exists(projectile_hits, _shot.shot_boss_id) {
+							_imp_hitable = true
+						}
+						if variable_struct_get(projectile_hits, _shot.shot_boss_id) != (real( _shot.shot_boss_id) + _shot.shot_stats.Shot_ID_Offset) {
+							_imp_hitable = true	
+						}
+						if _imp_hitable {
+		                    if distance_to_object(_shot) < _radius {
+		                        //scr_Boss_Splash_Damage_Calc();
+								scr_Boss_Damage_Calc_Splash(id, _shot)
+		                    }
+		                }
+		            }
+				}
 		
 				if shot_stats.Shot_Bounce = 2 {
 					direction = random(360);	
@@ -230,7 +265,12 @@ function scr_Soul_Shot_Boss_Hit(_shot = other) {
 						alarm[0] = 20;
 					}
 				}
-			
+				
+				 if shot_stats.Shot_Super_Bleed_Chance != 0 {
+					if scr_Chance(100/shot_stats.Shot_Super_Bleed_Chance) {
+						scr_Super_Bleed_Boss(_boss, 4, 30, 15)
+					}
+				 }
         
 		        if _boss.currentphase >= _boss.finalphase
 		        if _boss.bosshealth <= 0 {
@@ -238,6 +278,25 @@ function scr_Soul_Shot_Boss_Hit(_shot = other) {
 		        }
 		    }
 		}
+	}
+	
+	if _shot_damage > 0 {
+		var _mag = 0.05 + (sqrt(1 + _shot_damage) / 30)
+					
+		if abs(_svspeed) > abs(_shspeed) {
+			scr_Boss_Stretch("Horizontal", _mag);
+		} else {
+			scr_Boss_Stretch("Vertical", _mag);
+		}	
+
+		
+		with instance_create_depth(x, y, depth - 1, obj_Boss_Flash) {
+			target = _boss;	
+			image_alpha = 0.5 + _mag;
+			alarm[0] = 3 + floor(_mag * 5);
+			event_user(0);
+		}
+		
 	}
 
 

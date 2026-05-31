@@ -69,6 +69,9 @@ with(obj_soul_hurt_v2) {
 		event_perform(ev_draw,0)
 	}
 }
+with(obj_Above_Bullet_Shot) {
+	event_perform(ev_draw,0)
+}
 with(obj_Particle_Parent_Front) {
 	event_perform(ev_draw,0)
 }

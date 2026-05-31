@@ -5,7 +5,7 @@ scr_Particle_Burst(obj_Weapon_Trail, bullet_stats.bullet_part_sprite,
 					bullet_stats.bullet_part_color1, bullet_stats.bullet_part_color2, 1, bullet_stats.bullet_part_speed,
 					random(360), 0, bullet_stats.bullet_part_area, 
 					bullet_stats.bullet_part_size + random(0.1),
-					bullet_stats.bullet_part_life, false)
+					bullet_stats.bullet_part_life, false, x + bullet_stats.bullet_part_xx, y + bullet_stats.bullet_part_yy)
 alarm[8] = bullet_stats.bullet_part_frequency;
 
 

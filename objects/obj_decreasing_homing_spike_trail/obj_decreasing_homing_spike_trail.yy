@@ -11,8 +11,8 @@
   "name":"obj_decreasing_homing_spike_trail",
   "overriddenProperties":[],
   "parent":{
-    "name":"homers",
-    "path":"folders/Objects/Boss Bullets/homers.yy",
+    "name":"spike trail",
+    "path":"folders/Objects/Boss Bullets/spike trail.yy",
   },
   "parentObjectId":null,
   "persistent":false,

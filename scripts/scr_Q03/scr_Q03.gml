@@ -5,7 +5,8 @@
 
 
 function scr_Q03(_minion = false, _cw = current_weapon_stats){
-	
+
+	var _shot_output = []
    if global.Q[3] > 0 {
 	
 		var room_center = room_width / 2;
@@ -17,7 +18,7 @@ function scr_Q03(_minion = false, _cw = current_weapon_stats){
 		
 			// This script is called within weapon output, so no need to do all the modification/setup
 			if !_minion {
-				scr_Shot_Creation(_cw);
+				_shot_output = scr_Shot_Creation(_cw);
 			} else {
 				scr_Soul_Spawn(_cw);
 			}
@@ -30,4 +31,5 @@ function scr_Q03(_minion = false, _cw = current_weapon_stats){
 			global.Q3count += global.Q[3];
 		}
    }
+   return _shot_output;
 }

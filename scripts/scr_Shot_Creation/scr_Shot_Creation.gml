@@ -1,5 +1,7 @@
 function scr_Shot_Creation(_cw = current_weapon_stats, _prime_shot = false) {
 	
+	var _shot_output = []
+	
 	scr_Spike_Soul_Extra();
 	scr_Casting_Soul_Manual_Synergy(_cw);
 	scr_Scrub_Soul_Weapon_Mod(_cw);
@@ -90,6 +92,7 @@ function scr_Shot_Creation(_cw = current_weapon_stats, _prime_shot = false) {
 	    if _cw.Weapon_Vomit = 1 {
 	        dir = (-(_cw.Shot_Accuracy / 2) + random(_cw.Shot_Accuracy));
 	    }
+		_cw.Shot_Direction_Addition = dir;
 		actual_shot_direction = 0;
 	    var xx = 0;
 	    var yy = 0;
@@ -175,7 +178,12 @@ function scr_Shot_Creation(_cw = current_weapon_stats, _prime_shot = false) {
 		
 		repeat(mechFac) {
 			
+			if _cw.Shot_Spawn_Sound != noone {
+				scr_Sound_Effect(asset_get_index(_cw.Shot_Spawn_Sound))
+			}
+			
 		    with instance_create_depth(shxx, shyy, _cw.Shot_Depth, _shot_ass) {
+				array_push(_shot_output, id)
 		        scr_Default_Shot_Variables();
 				
 				shot_stats = variable_clone(_cw);
@@ -281,6 +289,7 @@ function scr_Shot_Creation(_cw = current_weapon_stats, _prime_shot = false) {
 		direction = point_direction(x,y, _mx, _my);
 	}
    
+	return _shot_output
 
 
 

@@ -4,8 +4,8 @@ function scr_Draw_Text_Outlined(_xx, _yy, _outline_color, _text_color, _text) {
 
 	//Outline  
 	draw_set_color(_outline_color);  
-	draw_text(_xx-1, _yy-1, _text);  
-	draw_text(_xx, _yy-1, _text); 
+	//draw_text(_xx-1, _yy-1, _text);  
+	//draw_text(_xx, _yy-1, _text); 
 	draw_text(_xx-1, _yy, _text);  
 	draw_text(_xx-1, _yy+1, _text); 
 	draw_text(_xx+1, _yy-1, _text); 

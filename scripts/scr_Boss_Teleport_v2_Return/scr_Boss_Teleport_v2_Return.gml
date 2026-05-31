@@ -21,7 +21,7 @@ function scr_Boss_Teleport_v2_Return(_border_offset = -128, _near_soul = -1, _ne
 	///////////////// Teleport Condition Checks ///////////////////////////////
 	
 	var _inside = false
-	var _soul_away = false
+	var _soul_away = 0
 	var _og_away = false
 	
 	// Check if _inside the room diamond or not
@@ -29,8 +29,7 @@ function scr_Boss_Teleport_v2_Return(_border_offset = -128, _near_soul = -1, _ne
 	    _inside = true;
 	}
 
-
-	if _near_soul >= -1 {
+	if _near_soul > -1 {
 		with obj_Soul_Parent {
 			var _pdist = point_distance(perX, perY, _potx, _poty)
 		    if _pdist > _near_soul and _pdist < (_near_soul + 200) {
@@ -43,7 +42,7 @@ function scr_Boss_Teleport_v2_Return(_border_offset = -128, _near_soul = -1, _ne
 		        _soul_away = 1
 		    }
 		}
-	}
+	} 
 
 	if _near_boss > -1 {
 		if distance_to_point(_potx, _poty) > _near_boss {
@@ -53,8 +52,8 @@ function scr_Boss_Teleport_v2_Return(_border_offset = -128, _near_soul = -1, _ne
 		_og_away = true;
 	}
 
-	if _inside = 0 || _soul_away = 1 || _og_away = false {
-	    return scr_Boss_Teleport_v2_Return(_border_offset + 32, _near_soul, _near_boss - 50);
+	if _inside = 0 || _soul_away = 0 || _og_away = false {
+	    return scr_Boss_Teleport_v2_Return(_border_offset, _near_soul, _near_boss);
 	} else {
 	    return [_potx, _poty];
 	}

@@ -77,7 +77,7 @@ if bossActiveAttackDelay[1] <= 0 and bossActiveAttackCooldown[1] <= 0 and bossAc
         speed = 0.33 * bossmovespeed;
         direction = bossdirection;
     }
-    var minThres = scr_Minion_Count();
+    var minThres = scr_Over_Minion_Count();
 	
     bossActiveAttack[1] = choose(1,2,3);
     if currentphase = 2 {

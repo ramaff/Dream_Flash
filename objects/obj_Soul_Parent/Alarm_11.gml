@@ -40,7 +40,7 @@ for (bi = 0; bi < 9; bi++) {
 				Shot_Stats.Shot_Spread += Shot_Stats.Shot_Spread * (Shot_Repetition_Max[bi] - Shot_Repetition[bi]);
 			}
 			if Shot_Repetition_Type[bi] = "Bullet Hell" {
-				if Shot_Repetition[bi] = 1 {
+				if Shot_Repetition[bi] mod 8 = 1 {
 					//Shot_Default_Count[bi] = 1;
 					Shot_Stats.Shot_Power = Shot_Stats.Shot_Power * 1.5;
 					

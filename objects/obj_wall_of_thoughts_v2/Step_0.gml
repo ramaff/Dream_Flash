@@ -26,7 +26,7 @@ if active_attack_delay <= 0 and active_attack_cooldown <= 0 and active_attack_du
     
 	// Pick a random attack to do
 	active_attack = choose(1, 2, 4, 3, 3, 3);
-	if scr_Minion_Count(currentphase) {
+	if scr_Over_Minion_Count(currentphase) {
 		active_attack = choose(1, 2, 4);
 	}
 	

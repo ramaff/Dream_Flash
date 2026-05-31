@@ -40,7 +40,7 @@ if active_attack_delay <= 0 and active_attack_cooldown <= 0 and active_attack_du
 	if currentphase = 2 {
 		active_attack = choose(1, 3);
 	}
-	if scr_Minion_Count(currentphase) {
+	if scr_Over_Minion_Count(currentphase) {
 		active_attack = 1 + currentphase
 	}
 	

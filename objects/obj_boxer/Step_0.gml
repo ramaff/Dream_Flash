@@ -56,12 +56,12 @@ if active_attack_delay <= 0 and active_attack_cooldown <= 0 and active_attack_du
     
 	// Pick a random attack to do
 	active_attack = choose(1, 2, 3);
-	if scr_Minion_Count() || champ = 1 {
+	if scr_Over_Minion_Count() || champ = 1 {
 		active_attack = choose(1, 2);
 	}
 	if champ = 2 {
 		active_attack = choose(1, 3);
-		if scr_Minion_Count() {
+		if scr_Over_Minion_Count() {
 			active_attack = 1;	
 		}
 	}
@@ -265,7 +265,7 @@ if active_attack_delay <= 0 and pattern_cooldown <= 0 and pattern_count > 0 {
 		    scr_Just_Shoot();
 		}
 		
-		if !scr_Minion_Count(2) {
+		if !scr_Over_Minion_Count(2) {
 			if pattern_count mod 80 = 40 {
 				minion_count = 1;
 			    minion_type = obj_boxless
@@ -286,7 +286,7 @@ if active_attack_delay <= 0 and pattern_cooldown <= 0 and pattern_count > 0 {
 		
 		scr_Boss_Stretch("Vertical", 0.2);
 		
-		if !scr_Minion_Count(2) {
+		if !scr_Over_Minion_Count(2) {
 		
 			boss_xoffset = 0;
 			boss_yoffset = -40;

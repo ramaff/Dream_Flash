@@ -32,13 +32,13 @@ if active_attack_delay <= 0 and active_attack_cooldown <= 0 and active_attack_du
     
 	// Pick a random attack to do
 	active_attack = choose(1, 2, 3);
-	if scr_Minion_Count() {
+	if scr_Over_Minion_Count() {
 		active_attack = choose(1, 2);
 	}
 	
 	if currentphase = 2 {
 		active_attack = choose(4, 5);
-		if scr_Minion_Count() {
+		if scr_Over_Minion_Count() {
 			active_attack = choose(5);
 		}
 		if champ = 1 {
@@ -235,7 +235,7 @@ if active_attack_delay <= 0 and pattern_cooldown <= 0 and pattern_count > 0 {
 			
 			scr_Boss_Shoot();
 		}
-		if !scr_Minion_Count() {
+		if !scr_Over_Minion_Count() {
 			if pattern_count mod 100 = 30 {
 				minion_count = 1;
 			    minion_type = obj_pocket_minion_v2

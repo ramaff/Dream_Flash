@@ -8,8 +8,8 @@
   "name":"obj_stationary_damager_v2",
   "overriddenProperties":[],
   "parent":{
-    "name":"standard bullets",
-    "path":"folders/Objects/Boss Bullets/standard bullets.yy",
+    "name":"spike trail",
+    "path":"folders/Objects/Boss Bullets/spike trail.yy",
   },
   "parentObjectId":{
     "name":"obj_soul_hurt_v2",

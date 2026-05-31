@@ -112,7 +112,7 @@ function scr_Floor_Generation() {
 				
 				var k = 1
 				for (k = 1; k < 4; k++) {
-					global.floor[list[| k],4] = spr_dungeon_brick_g;	
+					global.floor[list[| k],4] = spr_dream_marble_g;	
 				}
 				for (k = 6; k < 12; k++) {
 					global.floor[list[| k],4] = spr_dream_brick_g;	

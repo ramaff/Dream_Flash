@@ -36,19 +36,18 @@ function scr_Boss_Choose(roomNum, exclude, difficultyAdd = 0) {
 		
 	}
 	if global.currentchapter = 2 {
-	    _base_pool = [2,3,6,10,17,26,27,32,34,36,38,45,48,64];
-		_mini_boss_pool = [23, 35, 66, 67, 68, 69, 70]
-		_mini_chance = 3.5
+	    _base_pool = [2, 3, 6, 10, 17, 26, 27, 34, 36, 38, 45, 48, 64];
+		_mini_boss_pool = [23, 32, 35, 66, 67, 68, 69, 70]
+		_mini_chance = 2.8
 		
 	}
 	if global.currentchapter = 3 {
-	    _base_pool = [2,4,7,11,15,22,26,28,29,30,31,33,39,41,45,50,56,65];
-		
-
+	    _base_pool = [2, 4, 7, 11, 15, 22, 26, 28, 29, 30, 31, 39, 41, 45, 56, 65];
+		_mini_boss_pool = [33, 50]
+		_mini_chance = 6.5
 	}
 	if global.currentchapter >= 4 {
 	   _base_pool = [4,8,21,29,30,40,46,47,49,61];
-		
 	}
 	
 	if scr_Chance(array_length(_base_pool) * 4 / global.currentchapter) {
@@ -335,16 +334,16 @@ function scr_Boss_Choose(roomNum, exclude, difficultyAdd = 0) {
 	}
 	if bossform = 32.1 // Animated Head
 	{
-	    bosstype = obj_Animated_Head;
-	    difficulty = 5;
-	    global.champ = choose(0,1);
+	    bosstype = obj_brain_dead;
+	    difficulty = 4.5;
+	    global.champ = choose(0);
 		//global.champ = 1;
 	}
 	if bossform = 33.1 // Chaotic Unrest
 	{
-	    bosstype = obj_Chaotic_Unrest;
+	    bosstype = obj_restless
 	    difficulty = 9;
-	    global.champ = choose(0,1,8);
+	    global.champ = choose(0);
 		//global.champ = 8;
 	}
 	if bossform = 34.1 // Locust
@@ -433,9 +432,9 @@ function scr_Boss_Choose(roomNum, exclude, difficultyAdd = 0) {
 	}
 	if bossform = 48.1 // Danger Raiser
 	{
-	    bosstype = obj_Danger_Raiser;
-	    difficulty = 6;
-	    global.champ = choose(0,8);
+	    bosstype = obj_scarecrow;
+	    difficulty = 7;
+	    global.champ = choose(0);
 	}
 	if bossform = 49.1 // Mind Corruptor
 	{
