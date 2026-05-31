@@ -53,7 +53,7 @@ function scr_Boss_Teleport_v2_Return(_border_offset = -128, _near_soul = -1, _ne
 	}
 
 	if _inside = 0 || _soul_away = 0 || _og_away = false {
-	    return scr_Boss_Teleport_v2_Return(_border_offset + 32, _near_soul, _near_boss);
+	    return scr_Boss_Teleport_v2_Return(_border_offset, _near_soul, _near_boss);
 	} else {
 	    return [_potx, _poty];
 	}

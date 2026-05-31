@@ -1732,7 +1732,7 @@
         "Shot_Homing_Range": 180,
         "Shot_Homing_Speed": 2.5,
         "Shot_Speed": 5,
-        "Shot_Power": 30,
+        "Shot_Power": 20,
         "Shot_Knock_Back": 10,
         "Shot_Life_Span": 120,
         "Shot_Pierce": 3,
