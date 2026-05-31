@@ -13,7 +13,10 @@ if surface_exists(surf) {
 
     var _room_environment = global.floor[global.currentroom,4];
     
-    global.roomdarkness = 0.025 * global.currentchapter;
+    global.roomdarkness = 0.025 //* global.currentchapter;
+	if global.currentchapter {
+		global.roomdarkness += 0.033	
+	}
 	
 	if _room_environment = spr_flash_marble_g || _room_environment = spr_flash_diagonal_brick_g || _room_environment = spr_feel_marble_g {
 		global.roomdarkness += 0.025;

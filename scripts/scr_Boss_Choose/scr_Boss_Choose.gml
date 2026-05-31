@@ -334,9 +334,9 @@ function scr_Boss_Choose(roomNum, exclude, difficultyAdd = 0) {
 	}
 	if bossform = 32.1 // Animated Head
 	{
-	    bosstype = obj_Animated_Head;
-	    difficulty = 5;
-	    global.champ = choose(0,1);
+	    bosstype = obj_brain_dead;
+	    difficulty = 4.5;
+	    global.champ = choose(0);
 		//global.champ = 1;
 	}
 	if bossform = 33.1 // Chaotic Unrest
@@ -433,7 +433,7 @@ function scr_Boss_Choose(roomNum, exclude, difficultyAdd = 0) {
 	if bossform = 48.1 // Danger Raiser
 	{
 	    bosstype = obj_scarecrow;
-	    difficulty = 8;
+	    difficulty = 7;
 	    global.champ = choose(0);
 	}
 	if bossform = 49.1 // Mind Corruptor
