@@ -10,7 +10,7 @@ if stored_hp > bosshealth + 60 {
 	
 		minion_count = 1;
 		minion_type = obj_Angry_Maw_Spirit;
-		minion_health = bossmaxhealth / 15;
+		minion_health = bosstotalhealth / 15;
 		minion_dir = random(360);
 		minion_speed = bossbulletspeed * 1.25;
 
@@ -160,7 +160,7 @@ if active_attack_delay <= 0 and pattern_cooldown <= 0 and pattern_count > 0 {
 	
 		minion_count = 1;
 		minion_type = obj_Chasing_Circle_Spirit;
-		minion_health = bossmaxhealth / 10;
+		minion_health = bosstotalhealth / 18;
 
 		scr_Minion_Spawn();
 	
@@ -171,7 +171,7 @@ if active_attack_delay <= 0 and pattern_cooldown <= 0 and pattern_count > 0 {
 		
 		minion_count = 1;
 		minion_type = obj_Guardian_Circle_Spirit;
-		minion_health = bossmaxhealth / 7;
+		minion_health = bosstotalhealth / 12;
 
 		scr_Minion_Spawn();
 	
@@ -182,7 +182,7 @@ if active_attack_delay <= 0 and pattern_cooldown <= 0 and pattern_count > 0 {
 	
 		minion_count = 1;
 		minion_type = obj_Mael_Maw_Spirit;
-		minion_health = bossmaxhealth / 25;
+		minion_health = bosstotalhealth / 40;
 		minion_dir = pattern_direction
 		minion_speed = bossbulletspeed * 2.5
 		//minion_spawn_animation = spr_pocket_minion_spawn
@@ -204,7 +204,7 @@ if active_attack_delay <= 0 and pattern_cooldown <= 0 and pattern_count > 0 {
 	
 		minion_count = 1;
 		minion_type = obj_Wave_Dashing_Spirit;
-		minion_health = bossmaxhealth / 10;
+		minion_health = bosstotalhealth / 18;
 
 		scr_Minion_Spawn();
 	
@@ -215,7 +215,7 @@ if active_attack_delay <= 0 and pattern_cooldown <= 0 and pattern_count > 0 {
 		
 		minion_count = 1;
 		minion_type = obj_Warping_Spirit;
-		minion_health = bossmaxhealth / 10;
+		minion_health = bosstotalhealth / 18;
 		
 		minion_speed = bossmovespeed * (0.5 + random(1));
 		minion_dir = random(360);

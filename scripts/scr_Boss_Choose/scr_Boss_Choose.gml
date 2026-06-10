@@ -3,11 +3,9 @@ function scr_Boss_Choose(roomNum, exclude, difficultyAdd = 0) {
 	
 	var stage_base_diff = 0.25 + (global.currentchapter * global.currentchapter)
 	
-	roomDifficulty = stage_base_diff + ((3.5 * simRoom) / 10);
+	roomDifficulty = stage_base_diff + (((6 + global.currentchapter) * simRoom) / 20);
 
 	roomDifficulty += global.bossdifficultyadd;
-	
-	roomDifficulty += (((0.5 * global.currentchapter * simRoom) - 0.5) / 10);
 
 
 	if roomDifficulty > 30 {
@@ -36,18 +34,18 @@ function scr_Boss_Choose(roomNum, exclude, difficultyAdd = 0) {
 		
 	}
 	if global.currentchapter = 2 {
-	    _base_pool = [2, 3, 6, 10, 17, 26, 27, 34, 36, 38, 45, 48, 64];
+	    _base_pool =      [2, 3, 6, 10, 17, 26, 27, 34, 36, 38, 45, 48, 64];
 		_mini_boss_pool = [23, 32, 35, 66, 67, 68, 69, 70]
 		_mini_chance = 2.8
 		
 	}
 	if global.currentchapter = 3 {
-	    _base_pool = [2, 4, 7, 11, 15, 22, 26, 28, 29, 30, 31, 39, 41, 45, 56, 65];
+	    _base_pool =      [2, 4, 7, 11, 15, 22, 26, 28, 29, 30, 31, 39, 41, 45, 56, 65];
 		_mini_boss_pool = [33, 50]
 		_mini_chance = 6.5
 	}
 	if global.currentchapter >= 4 {
-	   _base_pool = [4,8,21,29,30,40,46,47,49,61];
+	   _base_pool = [4,8,21,29,30,40,46,47,49,60];
 	}
 	
 	if scr_Chance(array_length(_base_pool) * 4 / global.currentchapter) {

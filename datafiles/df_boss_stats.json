@@ -1407,7 +1407,7 @@
         },
 
         "Boss 060": {
-            "Name": "Insurmountable Wall",
+            "Name": "The Insurmountable",
             "Recollection_Sprite": "reco_wall_king",
             "Health_Phase_1": 1350,
             "Health_Phase_2": 1190,

@@ -4,7 +4,7 @@
 #macro GAME_VERSION "27"
 
 // in the format of x.x (ex: "1.0" minor version = x.1.0 full version value)
-#macro GAME_MINOR_VERSION "0"
+#macro GAME_MINOR_VERSION "0.1"
 #macro GAME_VERSION_BETA "0"
 
 // In game constants
