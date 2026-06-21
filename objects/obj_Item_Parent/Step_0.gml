@@ -4,6 +4,11 @@ path_speed = global.itemFieldSpeed[itemOrbit];
 
 //scr_Room_Depth(0);
 
+if instance_exists(obj_tutorial_note) {
+	exit;	
+}
+
+
 var _selected_add = 0;
 
 if instance_exists(cloud) {
