@@ -46,8 +46,8 @@ function __InputConfigVerbs()
         InputDefineVerb(INPUT_VERB.SPECIAL, "special",     vk_shift,            gp_face4);
         InputDefineVerb(INPUT_VERB.PAUSE,   "pause",      [vk_escape, "P"],     gp_start);
         InputDefineVerb(INPUT_VERB.CONSOLE,   "console",      undefined,     gp_select);
-        InputDefineVerb(INPUT_VERB.SHOOT,   "shoot",       undefined,           gp_shoulderl);
-        InputDefineVerb(INPUT_VERB.WARP,    "warp",       undefined,            gp_shoulderr);
+        InputDefineVerb(INPUT_VERB.SHOOT,   "shoot",       mb_left,           gp_shoulderl);
+        InputDefineVerb(INPUT_VERB.WARP,    "warp",       mb_right,            gp_shoulderr);
 		InputDefineVerb(INPUT_VERB.W_LEFT,  "w_left",       "C",          gp_shoulderlb);
         InputDefineVerb(INPUT_VERB.W_RIGHT, "w_right",       "Z",         gp_shoulderrb);
     }

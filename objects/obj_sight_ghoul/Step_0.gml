@@ -25,7 +25,7 @@ if scr_Soul_Distance() > 300 {
 }
 
 
-if scr_Outside_Check_Bool(256) {
+if scr_Outside_Check_Bool(128) {
 	var _new_pos = scr_Boss_Teleport_v2_Return(-256, -1, 300)
 	x = _new_pos[0]
 	y = _new_pos[1]

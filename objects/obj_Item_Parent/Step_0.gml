@@ -18,7 +18,7 @@ if point_distance(x, y, obj_Astral_Indicator.x, obj_Astral_Indicator.y) < (ITEM_
 	
 	scr_Item_Recollection_Cloud(16, stacks);
 	
-	spriteSize = lerp(spriteSize, 0.625, 0.1);
+	spriteSize = lerp(spriteSize, 0.7, 0.1);
 	image_xscale = spriteSize;
 	image_yscale = spriteSize;
 } else {
@@ -27,7 +27,7 @@ if point_distance(x, y, obj_Astral_Indicator.x, obj_Astral_Indicator.y) < (ITEM_
 			alarm[0] = min(alarm[0], 15);
 		}
 	}
-	spriteSize = lerp(spriteSize, 0.5, 0.1);
+	spriteSize = lerp(spriteSize, 0.55, 0.1);
 	image_xscale = spriteSize;
 	image_yscale = spriteSize;
 }

@@ -2,7 +2,7 @@
 // You can write your code in this editor
 
 if text_alpha >= 1 {
-	if obj_Indicator_Parent.x <= x {
+	if obj_Indicator_Parent.x <= x - 200 and obj_Indicator_Parent.y >= y + 50 {
 		current_page--;
 	} else {
 		current_page++;
