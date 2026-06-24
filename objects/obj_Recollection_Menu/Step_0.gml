@@ -7,10 +7,10 @@ if InputReleased(INPUT_VERB.PAUSE) || InputReleased(INPUT_VERB.CANCEL) || keyboa
 var _add_cat = 0;
 
 
-if InputReleased(INPUT_VERB.SHOOT) {
+if InputReleased(INPUT_VERB.SHOOT) and !mouse_check_button_released(mb_left) {
 	_add_cat = -1;	
 }
-if InputReleased(INPUT_VERB.WARP) {
+if InputReleased(INPUT_VERB.WARP) and !mouse_check_button_released(mb_right) {
 	_add_cat = 1;	
 }
 	

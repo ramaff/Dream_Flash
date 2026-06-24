@@ -18,34 +18,36 @@ if awaitinput = 1 {
 			awaitinput = 0;
 		} else */
 		
-		var _change_verb = INPUT_VERB.SHOOT
-		if type = 5 {
-			_change_verb = INPUT_VERB.SHOOT	
-		}
-		if type = 6 {
-			_change_verb = INPUT_VERB.WARP
-		}
-		if type = 7 {
-			_change_verb = INPUT_VERB.W_LEFT
-		}
-		if type = 8 {
-			_change_verb = INPUT_VERB.W_RIGHT
-		}
+		if type >= 5 and type <= 8 {
+			var _change_verb = INPUT_VERB.SHOOT
+			if type = 5 {
+				_change_verb = INPUT_VERB.SHOOT	
+			}
+			if type = 6 {
+				_change_verb = INPUT_VERB.WARP
+			}
+			if type = 7 {
+				_change_verb = INPUT_VERB.W_LEFT
+			}
+			if type = 8 {
+				_change_verb = INPUT_VERB.W_RIGHT
+			}
 		
-		var _device = InputPlayerGetDevice();
+			var _device = InputPlayerGetDevice();
 		
-		if (InputDeviceGetRebinding(_device))
-		{
-		    var _result = InputDeviceGetRebindingResult(_device);
-		    if (_result != undefined)
-		    {
-		        InputBindingSet(InputDeviceIsGamepad(_device), _change_verb, _result);
+			if (InputDeviceGetRebinding(_device))
+			{
+			    var _result = InputDeviceGetRebindingResult(_device);
+			    if (_result != undefined)
+			    {
+			        InputBindingSet(InputDeviceIsGamepad(_device), _change_verb, _result);
 
-		        InputDeviceSetRebinding(_device, false);
+			        InputDeviceSetRebinding(_device, false);
 				
-				awaitinput = 0;
-		    }
-		}
+					awaitinput = 0;
+			    }
+			}
+		} 
 		
 		
 		// need to check every input type

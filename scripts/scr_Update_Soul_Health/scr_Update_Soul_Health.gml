@@ -6,7 +6,11 @@ function scr_Update_Soul_Health(_health, _slot = global.currentheart) {
 		exit;
 	}
 	var _hearts = Soul_Hearts_Control.heart
-	if array_length(_hearts) <= 0 {
+	var _total_hearts = array_length(_hearts)
+	if _slot >= _total_hearts {
+		_slot = _total_hearts - 1;
+	}
+	if _total_hearts <= 0 {
 		exit;
 	}
 	
@@ -21,7 +25,6 @@ function scr_Update_Soul_Health(_health, _slot = global.currentheart) {
 		} else {
 		
 			array_delete(_hearts, _slot, 1)
-			instance_create(obj_Soul_Parent.x,obj_Soul_Parent.y,obj_Broken_Heart);
 			global.currentheart = array_length(_hearts) - 1;
 			scr_Heart_Loss_Handle_All(_heart);
 			if global.currentheart < 0 {

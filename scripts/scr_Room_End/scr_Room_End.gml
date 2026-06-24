@@ -14,7 +14,6 @@ function scr_Room_End() {
 			alarm[0] = 15;	
 		}
 	}
-	global.currentheart = array_length(Soul_Hearts_Control.heart) - 1;
 	scr_Update_Soul_Health(1000)
 	
 	global.soulstatecharge = obj_Soul_Parent.sstatecharge;

@@ -1,5 +1,5 @@
 
-function scr_Item_Click(_stacks = 1, _linger = false){
+function scr_Item_Click(_stacks = 1, _linger = false, _destroy = true){
 	
 	var recollectionCount = 0;
 	
@@ -198,6 +198,7 @@ function scr_Item_Click(_stacks = 1, _linger = false){
 		scr_Hard_Coded_Item_Stats(itemVal);
 	
 		if weapon = 0 {
+			scr_Tutorial_Note_Spawn("stat_level_up")
 			scr_Item_State_Credit_Add(itemVal);
 		
 			if recoGroup = "I" || itemVal = "A00" || itemVal = "B00" || itemVal = "C00" || itemVal = "D00" || itemVal = "E00" || itemVal = "F00" { 
@@ -209,8 +210,8 @@ function scr_Item_Click(_stacks = 1, _linger = false){
 				global.items[array_length(global.items)] = itemVal
 			} else {
 				scr_Sound_Effect(snd_Pick_Up_Item_Good);
-				if recoGroup = "A" || recoGroup = "B" || recoGroup = "C" || recoGroup = "D" || recoGroup = "E" || recoGroup = "F" {
-					scr_Tutorial_Note_Spawn("stat_level_up")
+				if recoGroup = "A" || recoGroup = "B" || recoGroup = "C" || recoGroup = "D" || recoGroup = "E" || recoGroup = "F" || recoGroup = "I" {
+					//scr_Tutorial_Note_Spawn("stat_level_up")
 				}
 				global.items[array_length(global.items)] = itemVal
 			}
@@ -228,7 +229,9 @@ function scr_Item_Click(_stacks = 1, _linger = false){
 	
 	scr_Set_Soul_Scripts()
 	
-	instance_destroy();
+	if _destroy {
+		instance_destroy();
+	}
 	
 	if recoGroup = "I" || itemVal = "A00" || itemVal = "B00" || itemVal = "C00" || itemVal = "D00" || itemVal = "E00" || itemVal = "F00" {
 		ds_list_delete(global.i_item_pool, ds_list_find_index(global.i_item_pool, itemVal));
@@ -240,5 +243,4 @@ function scr_Item_Click(_stacks = 1, _linger = false){
 		scr_Item_Recollection_Cloud(120, _stacks);
 	}
 	
-	scr_Tutorial_Note_Spawn("item_field")
 }

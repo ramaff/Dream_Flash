@@ -17,7 +17,13 @@ death_sprite = spr_hear_ghoul_ko;
 boss_palette = spr_boss_template_palette;
 boss_palette_index = champ;
 
-repeat(12) {
+var _bell_count = 10;
+/*
+if boost = 2 {
+	_bell_count = 8;	
+} */
+
+repeat(_bell_count) {
 	with instance_create_depth(x, y, depth, obj_bell) {
 		boss_parent = other.id;
 		speed = 4 + random(8);

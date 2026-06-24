@@ -163,10 +163,10 @@ if global.recollectCategory = "Information" {
 			_cursor.menu_grid[0, _i] = id;
         }
     }
-	if cat = 5 {
+	if !scr_State_Recollection_Unlocked() and cat = 4 {
 		selected = true;	
 	} 
-	if scr_State_Recollection_Unlocked() and cat = 4 {
+	if cat = 5 {
 		selected = true;	
 	}
 }

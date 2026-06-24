@@ -22,7 +22,7 @@ stacks = 1;
 
 scr_Initial_Item_Memory_Get(stacks)
 //event_user(0)
-spriteSize = 0.5;
+spriteSize = 0.55;
 tempNum = 0;
 
 cloud = noone;

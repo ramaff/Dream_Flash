@@ -10,7 +10,7 @@ draw_text_ext_color(x-256,y+144,string_hash_to_newline("Page " + string(current_
 var _forward_xx = 0;
 var _back_xx = 0;
 
-if obj_Indicator_Parent.x < x {
+if obj_Indicator_Parent.x <= x - 200 and obj_Indicator_Parent.y >= y + 50 {
 	_back_xx = scr_Wave(-10, 10, 1, 0)	
 } else {
 	_forward_xx = scr_Wave(-10, 10, 1, 0)		

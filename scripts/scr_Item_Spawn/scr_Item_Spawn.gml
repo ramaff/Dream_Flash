@@ -109,6 +109,8 @@ function scr_Item_Spawn() {
 		fieldActive = 0;	
 	}
 
+	scr_Tutorial_Note_Spawn("item_field")
+
 	with instance_create(room_width/2,room_height/2,obj_Item_Field) {
 	    sprite_index = fieldSprite;
 		fieldColor = tFieldColor;

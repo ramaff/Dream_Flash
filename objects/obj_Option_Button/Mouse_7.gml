@@ -23,6 +23,8 @@ if type = 10 and category = 2 {
 } else if category = 2 {
 	awaitinput = 1;
 	
-	var _device = InputPlayerGetDevice();
-	InputDeviceSetRebinding(_device, true);
+	if type >= 5 and type <= 8 {
+		var _device = InputPlayerGetDevice();
+		InputDeviceSetRebinding(_device, true);
+	}
 }

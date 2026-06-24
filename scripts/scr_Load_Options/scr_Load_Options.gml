@@ -1,4 +1,4 @@
-function scr_Load_Options() {
+function scr_Load_Options(_bindings = true) {
 	
 	var _save_file = "options.sav"
 	var _backup_save_file = "options_backup.sav"
@@ -43,10 +43,12 @@ function scr_Load_Options() {
 			
 			global.gameMapExpand = ini_read_string("Options","gameMapExpand","M");
 			
-			var _controller_controls = ini_read_string("Options", "controller_controls",{});
-			_controller_controls = json_parse(_controller_controls);
-			if array_length(struct_get_names(_controller_controls)) > 0 {
-				InputBindingsImport(true, _controller_controls)
+			if _bindings {
+				var _controller_controls = ini_read_string("Options", "controller_controls",{});
+				_controller_controls = json_parse(_controller_controls);
+				if array_length(struct_get_names(_controller_controls)) > 0 {
+					InputBindingsImport(true, _controller_controls)
+				}
 			}
         
 	    ini_close()
