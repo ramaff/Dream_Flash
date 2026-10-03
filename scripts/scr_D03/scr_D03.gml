@@ -14,13 +14,13 @@ function scr_D03(_current_weapon_stats){
 		_current_weapon_stats.Shot_Fall_Speed = -4;
 		_current_weapon_stats.Shot_Gravity = 8 / _current_weapon_stats.Shot_Life_Span;
 		
-		var _og_stats = scr_Dupe_Struct(_current_weapon_stats)
+		var _og_stats = variable_clone(_current_weapon_stats)
 		repeat(global.D[3]) {
 		
 			if _current_weapon_stats.Shot_Extra = false {
-				_current_weapon_stats.Shot_Extra = [scr_Dupe_Struct(_og_stats)]
+				_current_weapon_stats.Shot_Extra = [variable_clone(_og_stats)]
 			} else {
-				array_push(_current_weapon_stats.Shot_Extra, scr_Dupe_Struct(_og_stats))
+				array_push(_current_weapon_stats.Shot_Extra, variable_clone(_og_stats))
 			}
 	
 			var _extra_index = array_length(_current_weapon_stats.Shot_Extra) - 1;

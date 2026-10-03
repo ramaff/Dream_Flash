@@ -10,7 +10,3 @@
 // In game constants
 #macro ITEM_HOVER_RANGE 60
 #macro TELEPORT_BASE_COST 40
-
-function scr_Macros(){
-
-}

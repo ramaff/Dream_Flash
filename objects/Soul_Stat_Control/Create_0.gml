@@ -48,7 +48,6 @@ global.soulweaponcap = 3;
 
 global.soulhearts = 3;
 global.currentheart = 0;
-global.totalhearts = 3;
 
 global.currentweapon = 0;
 global.weaponcharge = 0;

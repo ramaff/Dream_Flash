@@ -6,6 +6,12 @@ global.currentroom = 0;
 global.spiritRoom = -1;
 global.evilSpiritRoom = -1;
 
+var _tex_array = texturegroup_get_textures( "default");
+for (var i = 0; i < array_length(_tex_array); ++i)
+{
+   texture_prefetch(_tex_array[i]);
+}
+
 instance_create(x,y, Music_Control);
 
 var _cursor = instance_create_depth(-64,-64, depth - 9999, obj_Dream_Cursor);

@@ -8,8 +8,6 @@ function scr_V06(_current_weapon_stats) {
 		_current_weapon_stats.Shot_Power = _current_weapon_stats.Shot_Power * (1 + _procs);
 		_current_weapon_stats.Real_Essence_Cost = _current_weapon_stats.Real_Essence_Cost * (2 + _procs);
 		
-		//var _og_stats = scr_Dupe_Struct(_current_weapon_stats)
-		
 		_current_weapon_stats.Shot_Instability += _current_weapon_stats.Shot_Speed;
 		_current_weapon_stats.Shot_Lightning_Trail = 1;
 		_current_weapon_stats.Shot_Lightning_Trail_Area = 30;

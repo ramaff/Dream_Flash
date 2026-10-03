@@ -69,7 +69,6 @@ function scr_Save_Run() {
 	ini_write_real("Run", "chaptertime", global.chaptertime);
 	ini_write_real("Run", "glasstime", global.glasstime);
 
-	ini_write_real("Run", "totalhearts", global.totalhearts);
 	ini_write_real("Run", "spiritRoom", global.spiritRoom);
 	ini_write_real("Run", "evilSpiritRoom", global.evilSpiritRoom);
 	

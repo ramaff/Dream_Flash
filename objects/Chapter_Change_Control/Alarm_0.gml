@@ -1,7 +1,7 @@
 if !instance_exists(obj_Soul_Parent) {
 	exit;	
 }
-if global.totalhearts <= 0 {
+if global.currentheart <= 0 {
 	exit;	
 }
 

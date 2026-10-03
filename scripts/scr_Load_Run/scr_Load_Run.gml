@@ -127,7 +127,6 @@ function scr_Load_Run() {
 		global.chaptertime = ini_read_real("Run","chaptertime",0);
 		global.glasstime = ini_read_real("Run","glasstime",0);
     
-	    global.totalhearts = ini_read_real("Run","totalhearts",3);
 	    global.spiritRoom = ini_read_real("Run","spiritRoom",0);
 	    global.evilSpiritRoom = ini_read_real("Run","evilSpiritRoom",0);
 		

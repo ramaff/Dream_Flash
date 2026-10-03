@@ -1,26 +1,20 @@
 function scr_Highest_Stat_Calc() {
-	highstat = "none";
-
-	if global.soulstrength > 0 {
-		highstat = "str";	
-	}
-	if global.soulvitality >= global.soulstrength {
-		highstat = "vit";	
-	}
-	if global.soulessence >= global.soulvitality and global.soulessence >= global.soulstrength {
-		highstat = "ess";	
-	}
-	if global.souldexterity >= global.soulessence and global.souldexterity >= global.soulvitality and global.souldexterity >= global.soulstrength {
-		highstat = "dex";	
-	}
-	if global.soulperception >= global.souldexterity and global.soulperception >= global.soulessence and global.soulperception >= global.soulvitality and global.soulperception >= global.soulstrength {
-		highstat = "per";	
-	}
-	if global.soulstate >= global.soulperception and global.soulstate >= global.souldexterity and global.soulstate >= global.soulessence and global.soulstate >= global.soulvitality and global.soulstate >= global.soulstrength {
-		highstat = "sta";	
+	
+	var _stat_value = [global.soulstrength,global.soulvitality,global.soulessence,global.souldexterity,global.soulperception,global.soulstate]
+	var _stat_name = [ "str","vit","ess","dex","per","sta" ]
+	
+	var _highstat = "none"
+	var _val = -99999
+	
+	for(var i = 0; i < array_length(_stat_value); i++){
+		var _cstat = _stat_value[i]
+		if _cstat > _val{
+			_highstat = _stat_name[i]
+			_val = _cstat
+		}
 	}
 
-	return highstat;
 
+	return _highstat;
 
 }

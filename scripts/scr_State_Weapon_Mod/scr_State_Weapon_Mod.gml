@@ -115,7 +115,7 @@ function scr_State_Weapon_Mod(){
 			speed = shot_stats.Shot_Speed;
 
 			if shot_stats.Shot_Type != "obj_Melee_Caster_Shot" and shot_stats.Shot_Type != "obj_Beam_Caster_Shot" {
-				shot_stats.Shot_Extra_Stats = [scr_Dupe_Struct(shot_stats)];
+				shot_stats.Shot_Extra_Stats = [variable_clone(shot_stats)];
 			}
 			
 			shot_stats.Shot_Extra_Stats[0].Shot_Count = 1;

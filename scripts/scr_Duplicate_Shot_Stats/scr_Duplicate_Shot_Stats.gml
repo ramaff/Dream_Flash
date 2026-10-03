@@ -5,7 +5,7 @@ function scr_Duplicate_Shot_Stats(_new_shot_stats = other.shot_stats, _existing_
 	if is_struct(_existing_shot_stats) {
 		shot_stats = _existing_shot_stats
 	} else {
-		shot_stats = scr_Dupe_Struct(other.shot_stats)
+		shot_stats = variable_clone(other.shot_stats)
 	}
 	
 

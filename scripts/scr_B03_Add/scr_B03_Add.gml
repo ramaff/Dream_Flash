@@ -4,9 +4,6 @@
 // Location: heart loss event
 
 function scr_B03_Add(){
-	//heart[global.currentheart,2] = 0;
-	// global.totalhearts -= 1;
-    
 	if global.B[3] > 0 {
 		scr_Add_New_Heart(103, 20 + (20 * global.B[3]));
 	}
