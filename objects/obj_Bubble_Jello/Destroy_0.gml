@@ -27,10 +27,7 @@
 		
 		bullet_direction = scr_Boss_Bullet_Direction_Formula(scr_Soul_Point(), 70)
 		
-		//scr_Suicide_Even_Shoot(1,bullet_speed, 300, dirr);
-		
 		scr_Boss_Shoot()
-		//scr_Suicide_Vomit_Tar();
 	}
     
     //ds_list_destroy(projectile_hits);

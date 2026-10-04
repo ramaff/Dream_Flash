@@ -1,18 +1,10 @@
-/// @description Insert description here
-// You can write your code in this editor
-
 alarm[4] = 5;
 
 if global.currentheart < 0 {
 	global.currentheart = 0;	
 }
 
-/*if scr_State_Active_Check("Beast") {
-	scr_Beast_Maw_Use();
-} */
 scr_H14();
-
-//scr_XC02_Soul_Visual();
 
 var cHeart = global.currenthearttype
 if cHeart = 17 {

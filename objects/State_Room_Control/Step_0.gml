@@ -32,7 +32,6 @@ if global.bosscount < 1 and (/*bossSpawn = 0 ||*/ bossSpawn = 1) {
         fieldSpawn = 1;
 		
         global.floor[global.currentroom,0] = "Normal"
-		
         
     } else {
 	    if instance_number(obj_Item_Parent) = 0 {

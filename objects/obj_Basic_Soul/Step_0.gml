@@ -82,7 +82,6 @@ if variable_struct_exists(soul_step_status_effects, "rocket") {
 }
 
 scr_Execute_List_Of_Scripts(soul_step_after_scripts)
-//scr_Soul_Item_Step_After();
 
 x += soulCurrentHorizontalSpeed;
 y += soulCurrentVerticalSpeed;

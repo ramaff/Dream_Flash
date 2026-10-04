@@ -45,6 +45,8 @@ function scr_Change_Room(roomGoX, roomGoY) {
 
 	if global.currentroom != nextRoom {
     
+        global.floor[global.currentroom,FLOOR_VALUES.VISITED] = true
+        
 	    if nextRoomType = "Boss" || nextRoomType = "Super Boss" {
 	        room_goto(Medium_Flash_Boss_Room);
 	        global.currentroom = nextRoom;

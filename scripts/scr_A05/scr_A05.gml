@@ -26,9 +26,7 @@ function scr_A05(){
 	}
 	var _status_effect_2 = {
 		"duration": 300,
-		"magnitude": 1.5 * global.A[5],
-		//"tick_script": scr_Soul_Movement_Mult_Tick,
-		//"tick_frequency": 5
+		"magnitude": 1.5 * global.A[5]
 	}
 	scr_Soul_Status_Effect_Add(soul_step_status_effects, "attack_mult", _status_effect)
 	scr_Soul_Status_Effect_Add(soul_step_status_effects, "attack_size_mult", _status_effect_3)

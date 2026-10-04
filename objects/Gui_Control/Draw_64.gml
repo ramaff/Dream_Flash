@@ -131,16 +131,15 @@ if !scr_Room_Leavable() {
     
     scr_Mini_Map();
 	
-	if (keyboard_check(ord(global.gameMapExpand)) || InputCheck(INPUT_VERB.SPECIAL) ) and instance_number(obj_Map_Button) = 0 {
-		scr_Mega_Map();
+    
+	if (keyboard_check(ord(global.gameMapExpand)) || InputCheck(INPUT_VERB.SPECIAL) ) and instance_number(obj_new_mega_map) == 0 {
+        instance_create_depth(0,0,depth,obj_new_mega_map)
 	}
 	if !keyboard_check(ord(global.gameMapExpand)) and !InputCheck(INPUT_VERB.SPECIAL) {
-		with(obj_Map_Button) {
-			instance_destroy();
-		}
-	} else {
-		draw_sprite(spr_Mega_Map,0,winx / 2,winy / 2)	
-	}
+		with obj_new_mega_map{
+            instance_destroy()
+        }
+    }
 
     var _rm_type = global.floor[global.currentroom,0];
     

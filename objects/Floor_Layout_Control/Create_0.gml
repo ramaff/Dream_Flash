@@ -26,6 +26,17 @@ global.evilSpiritRoom = 0;
 
 global.chaptertime = 0;
 
+enum FLOOR_VALUES {
+    TYPE = 0,
+    X_POS = 1,
+    Y_POS = 2,
+    SIZE = 3,
+    BACKGROUND = 4,
+    X_OFFSET = 5,
+    Y_OFFSET = 6,
+    VISITED = 40
+}
+
 i = 0;
 j = 0;
 
@@ -89,6 +100,7 @@ if global.loadrun = 0 || global.doneLoading = 1 {
 		global.floor[i,31] = obj_Wall_Watcher;
 		global.floor[i,32] = 0;
 		global.floor[i,33] = 0;
+        global.floor[i,FLOOR_VALUES.VISITED] = false;
 	}
 
 	// currRoom = 
