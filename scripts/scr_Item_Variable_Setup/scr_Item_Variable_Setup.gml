@@ -30,7 +30,6 @@ function scr_Item_Variable_Setup() {
 	
 	global.gembeam_hits = ds_list_create();
 	
-	global.H5timer = 0;
 	global.D14Trigger = 0;
 	
 	global.essencebeamsize = 0;

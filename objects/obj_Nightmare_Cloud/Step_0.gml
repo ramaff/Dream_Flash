@@ -231,8 +231,6 @@ if bossActiveAttackDelay[1] <= 0 {
         bullet_spread = 90;
         bullet_lifespan = 30;
         
-        scr_Offset_Just_Shoot(40);
-        
         bullet_type = obj_Direction_Bullet;
         bullet_sprite = spr_Lightning_Bullet;
 		bullet_direction = random(360);

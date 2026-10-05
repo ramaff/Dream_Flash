@@ -69,7 +69,6 @@ function scr_Save_Run() {
 	ini_write_real("Run", "chaptertime", global.chaptertime);
 	ini_write_real("Run", "glasstime", global.glasstime);
 
-	ini_write_real("Run", "totalhearts", global.totalhearts);
 	ini_write_real("Run", "spiritRoom", global.spiritRoom);
 	ini_write_real("Run", "evilSpiritRoom", global.evilSpiritRoom);
 	
@@ -134,6 +133,7 @@ function scr_Save_Run() {
 		ini_write_string("Run", "floor" + string(i) + "-" + string(31), object_get_name(global.floor[i,31]));
 		ini_write_real("Run", "floor" + string(i) + "-" + string(32), global.floor[i,32]);
 	    ini_write_real("Run", "floor" + string(i) + "-" + string(33), global.floor[i,33]);
+        ini_write_real("Run", "floor" + string(i) + "-" + string(FLOOR_VALUES.VISITED), global.floor[i,FLOOR_VALUES.VISITED]);
 	}
 	for(i = 0; i <= 39; i++) {
 	    ini_write_real("Run", "A" + string(i), global.A[i]);

@@ -1,13 +1,7 @@
 function scr_Change_Room_Map(argument0) {
-	/*
-	global.soulstrengthTemp = 0;
-	global.soulvitalityTemp = 0;
-	global.soulessenceTemp = 0;
-	global.souldexterityTemp = 0;
-	global.soulperceptionTemp = 0;
-	global.soulstateTemp = 0;
-	*/
-	
+
+	global.floor[global.currentroom,FLOOR_VALUES.VISITED] = true
+    
 	global.instanceidincrementer = 1;
 
 	global.roomdarkness = 0;

@@ -77,6 +77,7 @@ function scr_Load_Run() {
 			global.floor[i,31] = asset_get_index(ini_read_string("Run", "floor" + string(i) + "-" + string(31),0));
 			global.floor[i,32] = ini_read_real("Run", "floor" + string(i) + "-" + string(32),0);
 	        global.floor[i,33] = ini_read_real("Run", "floor" + string(i) + "-" + string(33),0);
+            global.floor[i,FLOOR_VALUES.VISITED] = ini_read_real("Run", "floor" + string(i) + "-" + string(FLOOR_VALUES.VISITED),0);
 	    }
     
 	    global.currentchapter = ini_read_real("Run","currentchapter",1);
@@ -127,7 +128,6 @@ function scr_Load_Run() {
 		global.chaptertime = ini_read_real("Run","chaptertime",0);
 		global.glasstime = ini_read_real("Run","glasstime",0);
     
-	    global.totalhearts = ini_read_real("Run","totalhearts",3);
 	    global.spiritRoom = ini_read_real("Run","spiritRoom",0);
 	    global.evilSpiritRoom = ini_read_real("Run","evilSpiritRoom",0);
 		

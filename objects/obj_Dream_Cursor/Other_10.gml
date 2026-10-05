@@ -1,7 +1,3 @@
-/// @description Insert description here
-// You can write your code in this editor
-
-
 var _direction = true
 var _og_button = target_button
 
@@ -80,14 +76,5 @@ if instance_exists(target_button) {
 			event_user(0)
 		}
 	}
-	//x = target_button.x;
-	//y = target_button.y;
 	event_user(1);
 }
-/*
-if instance_exists(_og_button) and _og_button != target_button {
-	with (_og_button) {
-		event_user(1);	
-	}
-} */
-

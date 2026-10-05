@@ -1,5 +1,5 @@
 function scr_Change_Chapter() {
-	if global.totalhearts > 0 {
+	if global.currentheart > 0 {
 		instance_create(0,0,Chapter_Change_Control);
 		instance_create(0,0,obj_Fade);
 	}

@@ -27,15 +27,15 @@ function scr_Bleeding_Soul_Mod(_cw = current_weapon_stats){
 			_bleed_count += scr_Chance(1 / global.soulstateformboost)	
 		}
 		
-		var _og_stats = scr_Dupe_Struct(_cw)
+		var _og_stats = variable_clone(_cw)
 		
 		var _i = 0;
 		repeat(_bleed_count) {
 		
 			if _cw.Shot_Extra = false {
-				_cw.Shot_Extra = [scr_Dupe_Struct(_og_stats)]
+				_cw.Shot_Extra = [variable_clone(_og_stats)]
 			} else {
-				array_push(_cw.Shot_Extra, scr_Dupe_Struct(_og_stats))
+				array_push(_cw.Shot_Extra, variable_clone(_og_stats))
 			}
 	
 			var _extra_index = array_length(_cw.Shot_Extra) - 1;

@@ -121,7 +121,6 @@ function scr_Soul_Teleport(_evasion = false, _costs_money = true, _xx = obj_Astr
 	scr_W02(dir);
 	scr_W03();
 		
-	//scr_Spike_Soul_Teleport(_xstar, _ystar);
 	scr_Casting_Soul_Teleport();
 	scr_Ascending_Soul_Teleport();
 	

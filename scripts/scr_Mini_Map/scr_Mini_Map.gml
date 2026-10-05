@@ -5,7 +5,7 @@ function scr_Mini_Map() {
 	var yOrigin = 64;
 
 	draw_sprite(spr_Mini_Map,0,xOrigin,yOrigin);
-
+    
 	draw_sprite(spr_Mini_Map_Square,1,xOrigin,yOrigin);
 	
 	var sprr = -1;
@@ -24,9 +24,4 @@ function scr_Mini_Map() {
 			}
 		}
 	}
-
-
-
-
-
 }

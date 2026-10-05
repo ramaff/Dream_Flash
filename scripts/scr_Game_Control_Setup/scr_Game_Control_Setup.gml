@@ -24,7 +24,4 @@ function scr_Game_Control_Setup() {
 	global.orbit[3] = 0;
 	global.orbit[999] = -1000;
 	
-	//scr_Setup_Default_Shot_Stats();
-
-	scr_Music_Set();
 }

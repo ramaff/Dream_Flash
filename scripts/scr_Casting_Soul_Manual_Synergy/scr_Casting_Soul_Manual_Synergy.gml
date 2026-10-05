@@ -8,7 +8,7 @@ function scr_Casting_Soul_Manual_Synergy(_cw){
 		
 		if _cw.Shot_Melee = true and _casting {
 			
-			_cw.Shot_Extra_Stats = [scr_Dupe_Struct(_cw)];
+			_cw.Shot_Extra_Stats = [variable_clone(_cw)];
 		
 			_cw.Shot_Type = "obj_Melee_Caster_Shot";
 			_cw.Shot_Life_Span = 180;
@@ -23,7 +23,7 @@ function scr_Casting_Soul_Manual_Synergy(_cw){
 			
 			_cw.Shot_Power = _cw.Shot_Power * 2;
 			
-			_cw.Shot_Extra_Stats = [scr_Dupe_Struct(_cw)];
+			_cw.Shot_Extra_Stats = [variable_clone(_cw)];
 		
 			//_cw.Shot_Beam = 0;
 			_cw.Shot_Speed = max(_cw.Shot_Speed, 5);
