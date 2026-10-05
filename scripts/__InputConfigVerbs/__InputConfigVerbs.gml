@@ -20,7 +20,7 @@ function __InputConfigVerbs()
 		AS_UP,
         AS_DOWN,
         AS_LEFT,
-        AS_RIGHT
+        AS_RIGHT,
     }
     
     enum INPUT_CLUSTER
@@ -28,6 +28,7 @@ function __InputConfigVerbs()
         //Add your own clusters here!
         //Clusters are used for two-dimensional checkers (InputDirection() etc.)
         NAVIGATION,
+        AIM
     }
     
     if (not INPUT_ON_SWITCH)
@@ -50,6 +51,8 @@ function __InputConfigVerbs()
         InputDefineVerb(INPUT_VERB.WARP,    "warp",       mb_right,            gp_shoulderr);
 		InputDefineVerb(INPUT_VERB.W_LEFT,  "w_left",       "C",          gp_shoulderlb);
         InputDefineVerb(INPUT_VERB.W_RIGHT, "w_right",       "Z",         gp_shoulderrb);
+        // order is up, right, down, left
+        InputDefineCluster(INPUT_CLUSTER.AIM,INPUT_VERB.AS_UP,INPUT_VERB.AS_RIGHT,INPUT_VERB.AS_DOWN,INPUT_VERB.AS_LEFT);
     }
     else //Flip A/B over on Switch
     {
