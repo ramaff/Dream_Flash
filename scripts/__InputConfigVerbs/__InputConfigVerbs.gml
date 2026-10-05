@@ -20,7 +20,7 @@ function __InputConfigVerbs()
 		AS_UP,
         AS_DOWN,
         AS_LEFT,
-        AS_RIGHT,
+        AS_RIGHT
     }
     
     enum INPUT_CLUSTER

@@ -573,6 +573,7 @@
   "name":"Dream_Flash",
   "resources":[
     {"id":{"name":"AnimationCurve1","path":"animcurves/AnimationCurve1/AnimationCurve1.yy",},},
+    {"id":{"name":"controller_distance_curve","path":"animcurves/controller_distance_curve/controller_distance_curve.yy",},},
     {"id":{"name":"Steamworks","path":"extensions/Steamworks/Steamworks.yy",},},
     {"id":{"name":"Big_Crit_Font","path":"fonts/Big_Crit_Font/Big_Crit_Font.yy",},},
     {"id":{"name":"Crit_Font","path":"fonts/Crit_Font/Crit_Font.yy",},},
@@ -2375,6 +2376,7 @@
     {"id":{"name":"scr_Soul_Level_Up_Threshold_Set","path":"scripts/scr_Soul_Level_Up_Threshold_Set/scr_Soul_Level_Up_Threshold_Set.yy",},},
     {"id":{"name":"scr_Soul_Menu_Cloud","path":"scripts/scr_Soul_Menu_Cloud/scr_Soul_Menu_Cloud.yy",},},
     {"id":{"name":"scr_Soul_Move_Particle","path":"scripts/scr_Soul_Move_Particle/scr_Soul_Move_Particle.yy",},},
+    {"id":{"name":"scr_Soul_Movement_Extra_Mult_Tick","path":"scripts/scr_Soul_Movement_Extra_Mult_Tick/scr_Soul_Movement_Extra_Mult_Tick.yy",},},
     {"id":{"name":"scr_Soul_Outside_Check","path":"scripts/scr_Soul_Outside_Check/scr_Soul_Outside_Check.yy",},},
     {"id":{"name":"scr_Soul_Particle_Step","path":"scripts/scr_Soul_Particle_Step/scr_Soul_Particle_Step.yy",},},
     {"id":{"name":"scr_Soul_Particles","path":"scripts/scr_Soul_Particles/scr_Soul_Particles.yy",},},
