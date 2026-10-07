@@ -1,6 +1,9 @@
+if instance_exists(obj_new_mega_map) and no_mouse >= 60
+    exit
+
 var _sc = camcon.window_scale
-var _x = (x - camera_get_view_x(view))*_sc //* _sc
-var _y = (y - camera_get_view_y(view))*_sc //* _sc
+var _x = (x - camera_get_view_x(view))*_sc
+var _y = (y - camera_get_view_y(view))*_sc
 
 var tMaxDelay = (120 - obj_Soul_Parent.tdelayconservation) / ((40 + global.soulperception + global.soulperceptionTemp) / 40) / obj_Soul_Parent.tdelayconservationfactor;
 

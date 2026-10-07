@@ -1,7 +1,3 @@
-/// @description Insert description here
-// You can write your code in this editor
-#macro view view_camera[0]
-
 var tote_bosses = instance_number(obj_Main_Boss_Parent)
 var potency = min(2, tote_bosses)
 var fac = (1 / tote_bosses) * potency

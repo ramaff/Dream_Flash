@@ -13,33 +13,35 @@ if !InputMouseMoved() {
     var _dir = InputDirection(dir, INPUT_CLUSTER.AIM);
     var _mag = InputDistance(INPUT_CLUSTER.AIM);
     
-    dir += angle_difference(_dir, dir) * 0.2;
+    if _mag >= 0.1{
+        dir += angle_difference(_dir, dir) * 0.2;
+        dist = lerp(dist, animcurve_channel_evaluate(_anch, _mag), 0.075);
+    }
     
-    var _max_dist = camera_get_view_height(view) / 2 + (camera_get_view_height(view) / 2 * dist_plus)
-    dist = lerp(dist, animcurve_channel_evaluate(_anch, _mag), 0.075);
-    
+    var _max_dist = camera_get_view_height(view) * 0.7
     x = obj_Soul_Parent.x + lengthdir_x(_max_dist * dist, dir);
     y = obj_Soul_Parent.y + lengthdir_y(_max_dist * dist, dir);
-        
-    if InputCheck(INPUT_VERB.WARP){
+    
+    /*
+    if InputCheck(INPUT_VERB.W_RIGHT){
         dist_plus = lerp(dist_plus,1,0.025)
     }
     else {
     	dist_plus = lerp(dist_plus,0,0.15)
     }
-
+    */
     
 	if room != Title_Screen {
 		x = clamp(x, _cur_x, _cur_x + winx);
 		y = clamp(y, _cur_y, _cur_y + winy);
 	}
+    
 	
 } else {
 	stop_following_mouse = 0;	
 }
 
 if stop_following_mouse < 60 || !InputDeviceGetAnyGamepadConnected() {
-
 	if window_has_focus() {
 	    x = mouse_x;
 	    y = mouse_y;

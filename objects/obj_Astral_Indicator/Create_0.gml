@@ -7,10 +7,11 @@ if instance_number(obj_Astral_Indicator) > 1 {
 }
 
 stop_following_mouse = 0
+no_mouse = 0
 cloud = noone;
 
-    dir = 0
-    dist_x = 0
-    dist_y = 0
+dir = 0
+dist_x = 0
+dist_y = 0
 dist = 0
 dist_plus = 0

@@ -31,7 +31,7 @@ function scr_Game_Zoom(zoom) {
 		display_set_gui_size(camcon.view_width * camcon.window_scale, camcon.view_height * camcon.window_scale);
 	}
 	
-	//surface_resize(application_surface, display_get_width(), display_get_height());
+	surface_resize(application_surface, display_get_width(), display_get_height());
 	
 	camcon.alarm[0] = 1;
 	

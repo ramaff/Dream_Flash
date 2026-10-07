@@ -21,7 +21,7 @@ if InputCheck(INPUT_VERB.SHOOT ) || variable_struct_exists(soul_step_status_effe
 if InputReleased(INPUT_VERB.SHOOT ) {
 	event_user(1)	
 }
-if InputReleased(INPUT_VERB.WARP ) {
+if InputPressed(INPUT_VERB.WARP ) {
 	event_user(2)
 }
 

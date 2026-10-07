@@ -7,6 +7,10 @@ room_explorable = []
 room_number = 0
 room_mouse_on = -1
 current_room = global.currentroom
+
+room_on = -1
+room_on_pos = [ global.floor[current_room][FLOOR_VALUES.X_POS],global.floor[current_room][FLOOR_VALUES.Y_POS] ]
+room_side = [0,0]
         
 room_data_update = function () {
 	room_x = []
@@ -21,6 +25,11 @@ room_data_update = function () {
     var _base_x = global.floor[current_room,1]
     var _base_y = global.floor[current_room,2]
     
+    if room_on != -1{
+        _base_x = global.floor[room_on,1]
+        _base_y = global.floor[room_on,2]
+    }
+    
 	for (var i = 0; i <= global.maxRooms; i++) {
         var _cx = global.floor[i,1]
         var _cy = global.floor[i,2]
@@ -28,7 +37,7 @@ room_data_update = function () {
 		var _gy = _base_y - _cy
 		var _type = global.floor[i,0]
         var _visited = global.floor[i,FLOOR_VALUES.VISITED]
-
+        
 		room_x[i] = (_gx * _spacing) - (_gy * _spacing) + _base_x - _base_y
 		room_y[i] = (_gx * _spacing) + (_gy * _spacing) + _base_x + _base_y
 		room_type[i] = _type
@@ -65,7 +74,12 @@ map_surface_update = function (){
         	_index = 1
         }
         
-        draw_sprite_ext(spr_Mega_Map_Square,_index,504+room_x[i],504+room_y[i],1.7,1.7,0,c_white,1)
+        var _alpha = 1
+        if global.floor[i][FLOOR_VALUES.VISITED] == 0{
+            _alpha = 0.8
+        }
+        
+        draw_sprite_ext(spr_Mega_Map_Square,_index,504+room_x[i],504+room_y[i],1.7,1.7,0,c_white,_alpha)
     }
     
     gpu_set_blendmode(bm_subtract)
