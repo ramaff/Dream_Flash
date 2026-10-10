@@ -1,15 +1,10 @@
 
 function scr_Pause_Main_Spawn() {
-	//with Camera_Control {
-	///	event_perform(ev_step_end,0);
-	//}
-	
 	var iwidth = Camera_Control.ideal_width;
 	var iheight = Camera_Control.ideal_height;
 	var izoom = 0.875;	
-	//view_zoom = lerp(ideal_zoom, view_zoom, 0.0001)
 
-	var vzoom = izoom//clamp(view_zoom, 0.5, 2);
+	var vzoom = izoom
 	var view_width_zoom = iwidth / vzoom;
 	var view_height_zoom = iheight / vzoom;
  

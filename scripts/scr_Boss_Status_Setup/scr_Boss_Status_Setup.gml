@@ -41,13 +41,6 @@ function scr_Boss_Status_Setup(version=1) {
 
 	state = states.normal;
 	
-	if instance_exists(Mind_Chamber_Room_Control) {
-		state = states.spawned;	
-		alarm[11] = 150;
-		image_speed = 0;
-		path_speed = 0;
-	}
-	
 	init_path_position = path_position;
 	alarm[7] = 3;
 	//state = states.spawned;

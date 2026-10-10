@@ -48,8 +48,8 @@ function scr_Key_Press_Movement(_vspeed = 0, _hspeed = 0, _max_speed = 5, _accel
 	}
 	
 	return {
-		"v_speed": _vspeed,	
-		"h_speed": _hspeed
+		v_speed: _vspeed,	
+		h_speed: _hspeed
 	}
 
 }

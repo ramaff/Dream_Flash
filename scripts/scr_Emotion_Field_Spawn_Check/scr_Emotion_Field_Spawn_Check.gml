@@ -82,7 +82,7 @@ function scr_Emotion_Field_Spawn_Check(){
 	}
         
 	if global.floor[global.currentroom,0] = "Normal" || global.floor[global.currentroom,0] = "Spawn" {
-	    //instance_create(x,y,Normal_Room_Start_Control)
+
 	} else {
 		scr_Stat_Field_Spawn();
 	}

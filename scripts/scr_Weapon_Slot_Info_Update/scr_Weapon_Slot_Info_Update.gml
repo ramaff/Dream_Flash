@@ -1,14 +1,5 @@
-// Script assets have changed for v2.3.0 see
-// https://help.yoyogames.com/hc/en-us/articles/360005277377 for more information
-
-function scr_sort_by_scale(a, b) {
-	return a.scale < b.scale;
-}
-
 function scr_Weapon_Slot_Info_Update(_weapon_slot_info){
-	//Print_DF($"window_scale: {camcon.window_scale}, view_zoom: {camcon.view_zoom}", 5)
-	//Print_DF($"camera_get_view_height: {camera_get_view_height(view)}", 5)
-	var _win_y = camcon.window_scale * camcon.view_zoom * camera_get_view_height(view) - 120;
+	var _win_y = 540 - 120;
 	
 	var _i = 0;
 	var _scale = 1;
@@ -24,25 +15,19 @@ function scr_Weapon_Slot_Info_Update(_weapon_slot_info){
 	var _angle_displacement = 360 / global.weaponslots
 
 	for(_i = 0; _i < global.weaponslots; _i++) {
-
 	    var _weap = Soul_Weapons_Control.weapon[_i].weapon_id;
 		_scale = 0.7 - (0.35 * abs(angle_difference(270, _angle) / 180))
 		_xx = _xx_center + lengthdir_x(_xx_width, _angle)
 		_yy = _yy_center + (lengthdir_y(_yy_width, _angle) * 2 * _scale)
 
-		_weapon_slot_info[_i] = {
-			"xx": _xx,
-			"yy": _yy,
-			"scale": _scale,
-			"weap": _weap,
-		}
-		
-		_angle += _angle_displacement
+		_weapon_slot_info[_i].xx = _xx
+		_weapon_slot_info[_i].yy = _yy
+		_weapon_slot_info[_i].scale = _scale
+		_weapon_slot_info[_i].weap = _weap
 
+		_angle += _angle_displacement
 	}
+	
 	Soul_Weapons_Control.angular_rotation = floor(Soul_Weapons_Control.angular_rotation * 0.9)
 	
-	array_sort(_weapon_slot_info, scr_sort_by_scale)
-	
-	return _weapon_slot_info
 }

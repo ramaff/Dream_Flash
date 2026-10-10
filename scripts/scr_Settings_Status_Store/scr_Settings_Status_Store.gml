@@ -20,9 +20,5 @@ function scr_Settings_Status_Store() {
 	global.gameScreenShake = 1;
 	global.gameParticles = 1;
 	global.gameGraphics = "High";
-	
-	scr_Controls_Setup();
-
-
 
 }

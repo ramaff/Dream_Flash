@@ -10,7 +10,7 @@
   "compression":0,
   "compressionQuality":4,
   "conversionMode":0,
-  "duration":1.088481,
+  "duration":1.0884807,
   "exportDir":"",
   "name":"snd_Camera_Flash",
   "parent":{
