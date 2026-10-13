@@ -1,0 +1,23 @@
+enum HEART_TYPE{
+    NORMAL = 1,
+    MINI,
+    SURVIVOR,
+    JUMBO,
+    MECHANICAL,
+    UNDYING,
+    FART,
+    SPIKE,
+    BLEEDING,
+    MAGICIAN,
+    ROCKET,
+    LIGHTNING,
+    SCALEY,
+    BEAST,
+    RUBBER,
+    JELLO,
+    SOAPY,
+    COPING = 51,
+    SECURE,
+    SEETHING,
+    BODY_RAG = 103
+}

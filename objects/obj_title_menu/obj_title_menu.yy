@@ -10,8 +10,8 @@
   "name":"obj_title_menu",
   "overriddenProperties":[],
   "parent":{
-    "name":"Objects",
-    "path":"folders/Objects.yy",
+    "name":"Game Stuff",
+    "path":"folders/Objects/Game UI/Game Stuff.yy",
   },
   "parentObjectId":null,
   "persistent":false,

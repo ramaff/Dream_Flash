@@ -60,18 +60,14 @@ map_surface_update = function (){
         var _index = 0
         
         switch (_type) {
-        	default: _index = 4 break;
+        	default: _index = 3 break;
             case "Normal": _index = 0 break;
             case "Spawn": _index = 0 break;
-            case "Boss": _index = 2 break;
-            case "Shop": _index = 5 break;
-            case "Super Boss": _index = 3 break;
-            case "Chamber": _index = 6 break;
-            case "State": _index = 7 break;
-        }
-        
-        if i = global.currentroom {
-        	_index = 1
+            case "Boss": _index = 1 break;
+            case "Shop": _index = 4 break;
+            case "Super Boss": _index = 2 break;
+            case "Chamber": _index = 5 break;
+            case "State": _index = 6 break;
         }
         
         var _alpha = 1
@@ -79,7 +75,13 @@ map_surface_update = function (){
             _alpha = 0.8
         }
         
-        draw_sprite_ext(spr_Mega_Map_Square,_index,504+room_x[i],504+room_y[i],1.7,1.7,0,c_white,_alpha)
+        if i = global.currentroom {
+        	draw_sprite_ext(spr_Mega_Map_Square_On,_index,504+room_x[i],504+room_y[i],1.7,1.7,0,c_white,_alpha)
+        }
+        else {
+        	draw_sprite_ext(spr_Mega_Map_Square,_index,504+room_x[i],504+room_y[i],1.7,1.7,0,c_white,_alpha)
+        }
+        
     }
     
     gpu_set_blendmode(bm_subtract)

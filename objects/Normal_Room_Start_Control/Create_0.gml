@@ -16,8 +16,6 @@ instance_create((room_width / 2) + global.soulSpawnXAdd,(room_height / 2) + glob
 
 scr_Wall_Form();
 
-scr_Hazard_Form();
-
 scr_T04();
 
 scr_Stat_Field_Chain_Check(); // this causes a memory leak, don't do it every step

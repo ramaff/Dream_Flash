@@ -6,16 +6,6 @@ function scr_Room_Change_Actions() {
 	global.roomSizeX = global.floor[global.currentroom,3];
 	global.roomSizeY = global.floor[global.currentroom,3];
 
-	var roomEnvironment = global.floor[global.currentroom,4];
-
-	if roomEnvironment = bg_Deep_Woods_Tiles || roomEnvironment = bg_Cave_Tiles || roomEnvironment = bg_Graveyard_Tiles {
-	    global.roomdarkness = 0.3;
-	}
-
-	if roomEnvironment = bg_Depths_Tiles {
-	    global.roomdarkness = 0.45;
-	}
-
 	scr_Room_Change_Variables();
 
 	var roomType = global.floor[global.currentroom,0];

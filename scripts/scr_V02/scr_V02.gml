@@ -11,7 +11,7 @@ function scr_V02() {
 		
 			global.V2activate++;
 			
-			scr_Add_New_Heart(1, 20);
+			scr_Add_New_Heart(HEART_TYPE.NORMAL, 20);
 		
 		}
 	

@@ -1,12 +1,4 @@
 function scr_Wall_Form() {
-	/*
-	Floor_Layout_Control.Flash[global.currentroom,3] = floor(Flash[i,3] / 128) * 128;
-
-	var si = Floor_Layout_Control.Flash[global.currentroom,3];
-
-	global.roomSizeX = si;
-	global.rommSizeY = si;
-	*/
 
 	leftMiddleX = room_width / 2 - global.roomSizeX / 2;
 	leftMiddleY = room_height / 2;

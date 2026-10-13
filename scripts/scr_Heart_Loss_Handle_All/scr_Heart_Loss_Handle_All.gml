@@ -1,7 +1,7 @@
 // Script assets have changed for v2.3.0 see
 // https://help.yoyogames.com/hc/en-us/articles/360005277377 for more information
 function scr_Heart_Loss_Handle_All(_heart) {
-	if _heart.heart_id = 6 {
+	if _heart.heart_id = HEART_TYPE.UNDYING {
 		if global.H06refill < 0 {
 			global.H06refill = 0;	
 		}

@@ -1,7 +1,7 @@
 /// @description Insert description here
 // You can write your code in this editor
 
-if global.currenthearttype != 9 {
+if global.currenthearttype != HEART_TYPE.BLEEDING {
 	instance_destroy()	
 }
 

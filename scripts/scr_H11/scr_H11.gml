@@ -4,7 +4,7 @@
 
 function scr_H11_Status_Build_Up(_current_weapon_stats) {
 	
-	if global.currenthearttype != 11 {
+	if global.currenthearttype != HEART_TYPE.ROCKET {
 		exit;	
 	}
 	

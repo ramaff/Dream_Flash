@@ -29,12 +29,6 @@ if leave = 1 {
 	cloudS = spr_Recollection_Hover_Cloud_Leave;
 	image_speed = 1/60;
 }
-if recollectionMirror = 1 {
-	//cloudS = spr_Reco_Hover_Cloud_Left;
-}
-if recollectionMirror = 2 {
-	//cloudS = spr_Reco_Hover_Cloud_Down;
-}
 
 var _text_xoffset = 172;
 var _text_xoffset_minus = 172;

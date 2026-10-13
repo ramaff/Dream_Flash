@@ -28,8 +28,6 @@ scr_Boss_Summon(boss,champ,boost,difficulty,0);
 properSize = global.floor[global.currentroom,3];
 properBG = global.floor[global.currentroom,4];
 
-scr_Hazard_Form();
-
 badSpiritSend = 0;
 
 startHope = global.soulhope;
