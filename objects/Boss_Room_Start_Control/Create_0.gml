@@ -15,10 +15,6 @@ global.orbit[2] = 0;
 global.orbit[3] = 0;
 global.orbit[999] = -1000;
 
-//scr_Room_Effect_Setup()
-
-//instance_create(0,0, obj_Medium_Room_Wall);
-
 global.bosscount = 0;
 global.bossval = 0;
 
@@ -31,8 +27,6 @@ scr_Boss_Summon(boss,champ,boost,difficulty,0);
 
 properSize = global.floor[global.currentroom,3];
 properBG = global.floor[global.currentroom,4];
-
-instance_create(x,y,obj_Environment_Emitter)
 
 scr_Hazard_Form();
 

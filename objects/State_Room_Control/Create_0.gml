@@ -27,6 +27,4 @@ if !(instance_exists(obj_Environmental_Control)) {
 	instance_create(x,y, obj_Environmental_Control);	
 }
 
-instance_create(x,y,obj_Environment_Emitter)
-
 complete = false;

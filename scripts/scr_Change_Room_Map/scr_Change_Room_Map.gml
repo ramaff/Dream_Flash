@@ -28,9 +28,6 @@ function scr_Change_Room_Map(argument0) {
     
 	    if nextRoomType = "Boss" || nextRoomType = "Super Boss" {
 	        room_goto(Medium_Flash_Boss_Room);
-	        //if global.floor[nextRoom,3] = 1216 {
-	        //    room_goto(Large_Flash_Boss_Room);
-	        //}
 	        global.currentroom = nextRoom;
 	    }
     

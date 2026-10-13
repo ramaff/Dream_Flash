@@ -17,8 +17,8 @@
   ],
   "name":"rm_controller_sanity_test",
   "parent":{
-    "name":"Rooms",
-    "path":"folders/Rooms.yy",
+    "name":"other",
+    "path":"folders/Rooms/other.yy",
   },
   "parentRoom":null,
   "physicsSettings":{
@@ -49,8 +49,8 @@
   ],
   "viewSettings":{
     "clearDisplayBuffer":true,
-    "clearViewBackground":false,
-    "enableViews":false,
+    "clearViewBackground":true,
+    "enableViews":true,
     "inheritViewSettings":false,
   },
   "volume":1.0,
