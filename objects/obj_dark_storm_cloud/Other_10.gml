@@ -9,7 +9,7 @@ var bull = bullet_type;
 var _seg_size = 80;
 
 for(var _count = 0; _count < 17; _count++) {
-	with instance_create(_xx, _yy, bull) {
+	with instance_create_depth(_xx, _yy, 0, bull) {
 		scr_Bullet_Shoot_Properties();
 		bulletpower = 0;
 							

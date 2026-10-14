@@ -5,7 +5,7 @@
 	ddir = 0;
 	bulletlife = bulletlife * 2;
 	repeat(6) {
-        with instance_create(x,y,obj_Basic_Bullet) {
+        with instance_create_depth(x,y,0,obj_Basic_Bullet) {
             scr_Bullet_Replicate_Properties();
 			bulletsize = 0.5;
 			image_xscale = bulletsize;
@@ -20,7 +20,7 @@
     }
 	dir += 180 / 12;
 	repeat(12) {
-        with instance_create(x,y,obj_Basic_Bullet) {
+        with instance_create_depth(x,y,0,obj_Basic_Bullet) {
             scr_Bullet_Replicate_Properties();
 			bulletsize = 0.5;
 			image_xscale = bulletsize;
@@ -35,7 +35,7 @@
     }
 	dir += 180 / 24;
 	repeat(24) {
-        with instance_create(x,y,obj_Basic_Bullet) {
+        with instance_create_depth(x,y,0,obj_Basic_Bullet) {
             scr_Bullet_Replicate_Properties();
 			bulletsize = 0.5;
 			image_xscale = bulletsize;

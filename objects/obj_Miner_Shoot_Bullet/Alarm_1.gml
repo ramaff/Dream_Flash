@@ -1,6 +1,6 @@
 var dir = -5 + random(10);
 repeat(4) {
-    with instance_create(x,y,obj_Basic_Bullet) {
+    with instance_create_depth(x,y,0,obj_Basic_Bullet) {
         scr_Bullet_Replicate_Properties();
 		bulletlifespan = 400;
 		alarm[0] = bulletlifespan;

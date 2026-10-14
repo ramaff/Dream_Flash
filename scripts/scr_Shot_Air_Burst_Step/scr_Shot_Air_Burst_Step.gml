@@ -23,7 +23,7 @@ function scr_Shot_Air_Burst_Step(){
 					if sprd < 0 {
 						dir = random(sprd) - (sprd / 2)
 					}
-			        with instance_create(x,y,_obj) {
+			        with instance_create_depth(x,y,0,_obj) {
 						var _v_shot_air_burst_stats = other.shot_stats.Shot_Air_Burst_Stats[burstIndex]
 				
 						shot_stats = scr_Duplicate_Shot_Stats(_v_shot_air_burst_stats, variable_clone(_stats), dir);

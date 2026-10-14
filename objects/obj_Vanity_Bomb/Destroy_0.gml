@@ -3,7 +3,7 @@
 var dir = random(360);
 repeat(3) {
 		bulletlife = 160;
-	    with instance_create(x,y,obj_Vanity_Shoot_Everywhere_Bullet) {
+	    with instance_create_depth(x,y,0,obj_Vanity_Shoot_Everywhere_Bullet) {
 	        scr_Bullet_Replicate_Properties();
 	        bulletsize = 0.5;
 	        image_xscale = bulletsize;

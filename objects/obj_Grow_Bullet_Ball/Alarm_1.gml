@@ -1,6 +1,6 @@
 dir = 0;
 repeat(1) {
-    with instance_create(x,y,bulletgrowinto) {
+    with instance_create_depth(x,y,0,bulletgrowinto) {
         scr_Bullet_Replicate_Properties();
 		bulletlife = other.bulletlife;
 		alarm[0] = bulletlife;

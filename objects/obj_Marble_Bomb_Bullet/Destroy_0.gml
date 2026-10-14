@@ -1,7 +1,7 @@
 /// @description Insert description here
 // You can write your code in this editor
 
-with instance_create(x,y,obj_Bullet_Explosion) {
+with instance_create_depth(x,y,0,obj_Bullet_Explosion) {
     scr_Bullet_Replicate_Properties(false);
     bulletsprite = spr_Bullet_Explosion
     sprite_index = bulletsprite;

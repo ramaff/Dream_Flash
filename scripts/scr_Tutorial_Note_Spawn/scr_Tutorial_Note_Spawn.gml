@@ -13,7 +13,7 @@ function scr_Tutorial_Note_Spawn(_tutorial_keyword = "base_tutorial", _bypass = 
 		exit;	
 	}
 	
-	with instance_create(room_width / 2,room_height / 2, obj_tutorial_note) {
+	with instance_create_depth(room_width / 2,room_height / 2, 0, obj_tutorial_note) {
 		tutorial_keyword = _tutorial_keyword
 		tutorial_info = _tutorial_info
 

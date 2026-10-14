@@ -72,7 +72,7 @@ function scr_Bullet_Replicate_Properties(_keep_part = false) {
 	alarm[8] = 2;
 	speed = bulletspeed;
 				
-	with instance_create(x,y,obj_LightS) {
+	with instance_create_depth(x,y,0,obj_LightS) {
 		target = other.id;
 		//lightsize = other.shot_stats.Shot_Light_Size;
 				

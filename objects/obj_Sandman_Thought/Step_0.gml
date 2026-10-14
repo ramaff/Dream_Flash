@@ -10,14 +10,14 @@ if instance_exists(obj_Sandman) {
     xx = lengthdir_x(dist * 0.66,ang);
     yy = lengthdir_y(dist * 0.66,ang);
     
-    with instance_create(x + xx,y + yy,obj_Thought) {
+    with instance_create_depth(x + xx,y + yy,-1,obj_Thought) {
         image_index = 0;
     }
     
     xx = lengthdir_x(dist * 0.33,ang);
     yy = lengthdir_y(dist * 0.33,ang);
     
-    with instance_create(x + xx,y + yy,obj_Thought) {
+    with instance_create_depth(x + xx,y + yy,-1,obj_Thought) {
         image_index = 1;
     }
 } else {

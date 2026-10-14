@@ -26,11 +26,10 @@ repeat(5) {
 	var xx = lengthdir_x(dist * 0.16 * num,ang);
 	var yy = lengthdir_y(dist * 0.16 * num,ang);
     
-	with instance_create(x + xx,y + yy,obj_Thought) {
+	with instance_create_depth(x + xx,y + yy,-1,obj_Thought) {
 		sprite_index = spr_Boss_Chain;
 		image_xscale = 0.4;
 		image_yscale = 0.4;
 	    image_index = 0;
 	}
 }
-	

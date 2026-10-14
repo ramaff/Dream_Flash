@@ -3,7 +3,7 @@ var dir = scr_Soul_Point() - 60;
 repeat(16) {
     var sspeed = 1;
     repeat(2) {
-	    with instance_create(x,y,obj_Rebound_Bullet) {
+	    with instance_create_depth(x,y,0,obj_Rebound_Bullet) {
 	        scr_Bullet_Replicate_Properties();
 			bulletlife = 180;
 			alarm[0] = bulletlife;

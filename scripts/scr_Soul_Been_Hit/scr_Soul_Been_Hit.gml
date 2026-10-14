@@ -14,12 +14,11 @@ function scr_Soul_Been_Hit() {
 			var xx = random(64) - (64 / 2);
 			var yy = random(64) - (64 / 2);
 	
-			with instance_create(x + xx,y + yy,obj_Weapon_Trail) {
+			with instance_create_depth(x + xx,y + yy,depth - 1,obj_Weapon_Trail) {
 		
 				sprite_index = spr_Soul_Big_Bit;
 		
 				image_angle = other.image_angle;
-				depth = other.depth - 1;
 		
 				image_blend = c_white;
 

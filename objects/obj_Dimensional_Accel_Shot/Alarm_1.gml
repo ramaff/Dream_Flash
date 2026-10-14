@@ -1,6 +1,6 @@
 alarm[1] = 20;
 
-with instance_create(x,y,obj_Fasing_Bullet_Parent) {
+with instance_create_depth(x,y,0,obj_Fasing_Bullet_Parent) {
     scr_Bullet_Replicate_Properties();
 	bulletsize = 0.5;
 	image_xscale = bulletsize;

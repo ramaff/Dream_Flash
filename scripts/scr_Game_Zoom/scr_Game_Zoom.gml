@@ -37,7 +37,7 @@ function scr_Game_Zoom(zoom) {
 	
 	if instance_exists(obj_Bloom_Control) {
 		instance_destroy(obj_Bloom_Control);
-		instance_create(0,0,obj_Bloom_Control);
+		instance_create_depth(0,0,0,obj_Bloom_Control);
 	}
 	
 	global.gameResolutionX = camcon.view_width * camcon.window_scale;

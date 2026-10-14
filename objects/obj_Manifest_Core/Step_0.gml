@@ -3,7 +3,7 @@
 scr_Boss_Step();
 
 if currentphase = 2 {
-    instance_create(x,y, obj_Manifest_Core_Solid) {
+    instance_create_depth(x,y,0, obj_Manifest_Core_Solid) {
         champ = other.champ;
         boost = other.boost;
         coreNum = other.coreCount;

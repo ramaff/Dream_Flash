@@ -1,4 +1,4 @@
-with instance_create(x,y,obj_Explode_Hit) {
+with instance_create_depth(x,y,0,obj_Explode_Hit) {
     scr_Bullet_Replicate_Properties();
     sprite_index = spr_Boss_Green_Explosion;
     image_speed = 1;
@@ -11,7 +11,7 @@ with instance_create(x,y,obj_Explode_Hit) {
     alarm[0] = 15;
 }
 
-with instance_create(x,y,obj_Poison_Pool) {
+with instance_create_depth(x,y,0,obj_Poison_Pool) {
         scr_Bullet_Replicate_Properties();
         bulletsprite = spr_Poison_Pool;
         sprite_index = spr_Poison_Pool;

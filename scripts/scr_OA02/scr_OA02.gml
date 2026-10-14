@@ -9,7 +9,7 @@ function scr_Optimism_Parts() {
 	var ssize = 0.4 + random(0.2);
 	var llife = 10 + irandom(2);
 	repeat(8) {
-		with instance_create(x,y,obj_Item_Trail) {
+		with instance_create_depth(x,y,0,obj_Item_Trail) {
 			direction = ddir;
 			speed = sspd;
 						

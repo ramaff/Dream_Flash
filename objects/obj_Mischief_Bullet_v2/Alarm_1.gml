@@ -1,5 +1,5 @@
 if distance_to_object(obj_Soul) < 400 {
-    with instance_create(x,y,obj_Basic_Bullet) {
+    with instance_create_depth(x,y,0,obj_Basic_Bullet) {
             scr_Bullet_Replicate_Properties();
             bulletsize = other.bulletsize;
             image_xscale = bulletsize;

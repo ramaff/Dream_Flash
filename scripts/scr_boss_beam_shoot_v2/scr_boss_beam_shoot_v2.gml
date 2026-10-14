@@ -15,7 +15,7 @@ function scr_shoot_beam(_attack_stats, _xx, _yy, _lightning = false) {
 		var _zag = -0.5 + irandom(1);
 		var _next_seg_offset = 0;
 		for(var _count = 0; _count < _beam_segments; _count++) {
-			with instance_create(_xx, _yy, _bull) {
+			with instance_create_depth(_xx, _yy, 0, _bull) {
 				bullet_stats = variable_clone(_attack_stats)
 		        scr_bullet_shoot_properties_v2(bullet_stats);
 			

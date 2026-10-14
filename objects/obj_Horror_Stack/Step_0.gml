@@ -182,7 +182,7 @@ if bossActiveAttackDuration[3] <= 0 {
 if bossStack = 3
 if bosshealth <= bossmaxhealth / 2 or currentphase = finalphase {
     bossStack -= 1;
-    with instance_create(x,y - 100, obj_Flying_Stacklet) {
+    with instance_create_depth(x,y - 100,0, obj_Flying_Stacklet) {
         champ = other.champ;
         boost = other.boost;
 		bossValue = other.bossValue;
@@ -200,7 +200,7 @@ if bosshealth <= bossmaxhealth / 2 or currentphase = finalphase {
 if bossStack = 2
 if currentphase = finalphase {
     bossStack -= 1;
-    with instance_create(x,y - 50, obj_Crawling_Stacklet) {
+    with instance_create_depth(x,y - 50,0, obj_Crawling_Stacklet) {
         champ = other.champ;
         boost = other.boost;
 		bossValue = other.bossValue;

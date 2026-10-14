@@ -2,7 +2,7 @@ var dir = random(360);
 var sfac = 0.8;
 repeat(30) {
 	sfac = 0.8;
-	with instance_create(x,y,obj_Direction_Bullet) {
+	with instance_create_depth(x,y,0,obj_Direction_Bullet) {
 	    scr_Bullet_Replicate_Properties();
 	    sprite_index = spr_Glowy_Enemy_Shot;
 	    bulletsize = 0.5;
@@ -22,7 +22,7 @@ var sfac = 1;
 repeat(12) {
 	sfac = 1;
 	repeat(3) {
-	    with instance_create(x,y,obj_Direction_Bullet) {
+	    with instance_create_depth(x,y,0,obj_Direction_Bullet) {
 	        scr_Bullet_Replicate_Properties();
 	        sprite_index = spr_Glowy_Enemy_Shot;
 	        bulletsize = 0.5;

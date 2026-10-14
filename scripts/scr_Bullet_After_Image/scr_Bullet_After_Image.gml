@@ -1,5 +1,5 @@
 function scr_Bullet_After_Image() {
-	with instance_create(x,y,obj_After_Image_Shot) {
+	with instance_create_depth(x,y,0,obj_After_Image_Shot) {
 	    sprite_index = other.sprite_index;
 	    image_angle = other.image_angle;
 	    image_index = other.image_index;

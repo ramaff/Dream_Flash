@@ -1,4 +1,3 @@
 if instance_exists(Soul_Weapons_Control) {
 	scr_Weapon_Slot_Info_Update(Soul_Weapons_Control.weapon_slot_info)
 }
-//instance_create(x,y,obj_Dream_Light_Setup);

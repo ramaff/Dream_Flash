@@ -1,4 +1,4 @@
-with instance_create(x,y,obj_Explode_Hit) {
+with instance_create_depth(x,y,0,obj_Explode_Hit) {
     scr_Bullet_Replicate_Properties();
     sprite_index = spr_Boss_Bullet_Explosion;
     image_speed = 1;

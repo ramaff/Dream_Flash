@@ -4,7 +4,7 @@ if deathSlash = 1 {
     
         dir += 1;
     
-        with instance_create(x,y,obj_Phase_Bullet) {
+        with instance_create_depth(x,y,0,obj_Phase_Bullet) {
                 scr_Bullet_Replicate_Properties();
                 sprite_index = spr_Glowy_Enemy_Shot;
                 bulletsize = 0.5;
@@ -21,7 +21,7 @@ if deathSlash = 1 {
     
         dir += 1;
     
-        with instance_create(x,y,obj_Phase_Bullet) {
+        with instance_create_depth(x,y,0,obj_Phase_Bullet) {
                 scr_Bullet_Replicate_Properties();
                 sprite_index = spr_Glowy_Enemy_Shot;
                 bulletsize = 0.5;

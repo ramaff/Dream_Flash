@@ -71,7 +71,7 @@ function scr_Stat_Up_Indication(_stat_up = 0, _level_up = false){
 			var _yy = obj_Soul_Parent.y - 40 + random(60)	
 		}
 	
-		with instance_create(_xx, _yy, _obj) {
+		with instance_create_depth(_xx, _yy, 0, _obj) {
 			stat_up_str = _stat_up_string;
 			stat_up_col = _stat_up_color;
 			level_up = _level_up

@@ -5,7 +5,7 @@ bossValue = 53;
 scr_Boss_Stats_Setup();
 
 
-    with instance_create(x+66,y-99, obj_Nightmare) {
+    with instance_create_depth(x+66,y-99,0, obj_Nightmare) {
         champ = other.champ;
         boost = other.boost;
         bossID = other.bossID;

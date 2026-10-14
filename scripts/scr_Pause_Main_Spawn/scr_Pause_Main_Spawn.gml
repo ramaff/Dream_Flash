@@ -19,13 +19,13 @@ function scr_Pause_Main_Spawn() {
 	var camY = camera_get_view_y(view) + (camera_get_view_height(view) / 2);
 	
 	instance_destroy(obj_Dream_Cursor)
-	var _cursor = instance_create(x,y,obj_Dream_Cursor);
+	var _cursor = instance_create_depth(x,y,-1000000,obj_Dream_Cursor);
 
-	instance_create(camX + 128,camY + 288,obj_Pause);
-	var _soul_butt = instance_create(camX - 224,camY - 240,obj_Soul_Menu_Butt);
-	var _reco_butt = instance_create(camX + 32,camY - 240,obj_Recollection_Menu_Butt);
-	var _settings_butt = instance_create(camX - 192,camY + 124,obj_Settings_Menu_Butt);
-	var _save_butt = instance_create(camX + 336,camY + 208,obj_Save_Quit);
+	instance_create_depth(camX + 128,camY + 288,0,obj_Pause);
+	var _soul_butt = instance_create_depth(camX - 224,camY - 240,-1,obj_Soul_Menu_Butt);
+	var _reco_butt = instance_create_depth(camX + 32,camY - 240,-1,obj_Recollection_Menu_Butt);
+	var _settings_butt = instance_create_depth(camX - 192,camY + 124,-1,obj_Settings_Menu_Butt);
+	var _save_butt = instance_create_depth(camX + 336,camY + 208,-1,obj_Save_Quit);
 	
 	_cursor.menu_grid[0, 0] = _soul_butt;
 	_cursor.menu_grid[1, 0] = _reco_butt;
@@ -46,7 +46,7 @@ function scr_Pause_Main_Spawn() {
 	}
 
 	repeat(99) {
-	    instance_create(camX + random(960),camY + random(960),obj_Pause_Sparkle)
+	    instance_create_depth(camX + random(960),camY + random(960),-1,obj_Pause_Sparkle)
 	}
 
 }

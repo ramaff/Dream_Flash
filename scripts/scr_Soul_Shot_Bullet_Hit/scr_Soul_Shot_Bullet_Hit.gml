@@ -117,7 +117,7 @@ function scr_soul_shot_bullet_hit_v2(_bullet_stats){
 				var bid = other.id;
 				
 				if instance_exists(bid) {
-					with instance_create(x,y,obj_Bullet_Ice_Cube) {
+					with instance_create_depth(x,y,0,obj_Bullet_Ice_Cube) {
 						target = bid;
 			
 						image_xscale = 0.05;
@@ -287,7 +287,7 @@ function scr_Soul_Shot_Bullet_Hit(){
 				var bid = other.id;
 				
 				if instance_exists(bid) {
-					with instance_create(x,y,obj_Bullet_Ice_Cube) {
+					with instance_create_depth(x,y,0,obj_Bullet_Ice_Cube) {
 						target = bid;
 			
 						image_xscale = 0.05;

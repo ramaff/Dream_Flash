@@ -5,7 +5,7 @@ var area = 1000;
 var xx = area / 2 - random(area);
 var yy = area / 2 - random(area);
 	
-	with instance_create(x + xx,y + yy,obj_Bullet_Trail_Target) {
+	with instance_create_depth(x + xx,y + yy,0,obj_Bullet_Trail_Target) {
 		
 		depth = other.depth + 2;
 		target = other.id;
@@ -28,16 +28,3 @@ var yy = area / 2 - random(area);
 		alarm[0] = life;
 
 	}
-
-/*
-with instance_create(x,y,obj_Direction_Bullet) {
-    scr_Bullet_Replicate_Properties();
-    sprite_index = spr_Glowy_Night_Shot;
-    bulletspeed = other.bulletspeed * 0;
-    bulletpower = other.bulletpower;
-    speed = bulletspeed;
-    direction = other.direction - 10 + random(20);
-    bulletlifespan = 300;
-    alarm[0] = bulletlifespan;
-}
-

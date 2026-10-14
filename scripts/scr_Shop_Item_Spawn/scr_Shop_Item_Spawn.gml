@@ -37,7 +37,7 @@ function scr_Shop_Item_Spawn() {
 	repeat(1)
 	{       
 	    if item[currItem] != 0 and item[currItem] != "0" {
-	        with instance_create(1024 + 50,576,obj_Item_Parent) {
+	        with instance_create_depth(1024 + 50,576,-2,obj_Item_Parent) {
 	            path_start(Shop_Path,0.25,path_action_continue,1)
 	            path_position = other.currItem / other.totalItems;
 	            itemOrbit = 999;
@@ -59,7 +59,7 @@ function scr_Shop_Item_Spawn() {
 	repeat(1)
 	{
 	    if item[currItem] != 0 and item[currItem] != "0" {
-	        with instance_create(1024 + 50,576, obj_Item_Parent) {
+	        with instance_create_depth(1024 + 50,576, -2, obj_Item_Parent) {
 	            path_start(Shop_Path,0.25,path_action_continue,1)        
 	            path_position = other.currItem / other.totalItems;
 	            itemOrbit = 999;
@@ -88,7 +88,7 @@ function scr_Shop_Item_Spawn() {
 	    if item[currItem] != 0 and item[currItem] != "0" {
 			if !(is_string(item[currItem])) {
 	        if frac(item[currItem]) = 0 {
-	            with instance_create(1024,576, obj_Item_Parent) {
+	            with instance_create_depth(1024,576, -2, obj_Item_Parent) {
 	                path_start(Shop_Path,0.25,path_action_continue,1);
 	                path_position = other.currItem / other.totalItems;
 	                itemOrbit = 999;
@@ -104,7 +104,7 @@ function scr_Shop_Item_Spawn() {
 					scr_Initial_Item_Memory_Get()
 	            }
 	        } else {
-	            with instance_create(1024,576, obj_Item_Parent) {
+	            with instance_create_depth(1024,576, -2, obj_Item_Parent) {
 	                path_start(Shop_Path,0.25,path_action_continue,1);
 	                path_position = other.currItem / other.totalItems;
 	                itemOrbit = 999;
@@ -131,7 +131,7 @@ function scr_Shop_Item_Spawn() {
 		    if item[currItem] != 0 and item[currItem] != "0" {
 				if !(is_string(item[currItem])) {
 		        if frac(item[currItem]) = 0 {
-			        with instance_create(1024 + 50,576, obj_Item_Parent) {
+			        with instance_create_depth(1024 + 50,576, -2, obj_Item_Parent) {
 			            path_start(Shop_Path,0.25,path_action_continue,1);
 		                path_position = other.currItem / other.totalItems;
 		                itemOrbit = 999;
@@ -148,7 +148,7 @@ function scr_Shop_Item_Spawn() {
 						event_user(0)
 			        }
 			    } else {
-		            with instance_create(1024,576, obj_Item_Parent) {
+		            with instance_create_depth(1024,576, -2, obj_Item_Parent) {
 		                path_start(Shop_Path,0.25,path_action_continue,1);
 		                path_position = other.currItem / other.totalItems;
 		                itemOrbit = 999;
@@ -165,7 +165,7 @@ function scr_Shop_Item_Spawn() {
 		            }
 		        }
 				} else {
-					with instance_create(1024 + 50,576, obj_Item_Parent) {
+					with instance_create_depth(1024 + 50,576, -2, obj_Item_Parent) {
 			            path_start(Shop_Path,0.25,path_action_continue,1)        
 			            path_position = other.currItem / other.totalItems;
 			            itemOrbit = 999;

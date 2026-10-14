@@ -19,7 +19,7 @@ function scr_Item_Recollection_Cloud(time = 1, _stacks = 1) {
 			}
 		}
 	
-		with instance_create(obj_Soul_Parent.x,obj_Soul_Parent.y,obj_In_Game_Recollection_Cloud) {
+		with instance_create_depth(obj_Soul_Parent.x,obj_Soul_Parent.y,0,obj_In_Game_Recollection_Cloud) {
 			recollectionPriceType = other.recollectionPriceType;
 			recollectionString = other.recollectionString;
 			priceString = other.priceString;

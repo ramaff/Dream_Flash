@@ -21,7 +21,7 @@ if recalls >= 1 {
 	if global.currentchapter = 4 {
 		recall_obj = obj_Soul_Nightmare;
 	}
-	with instance_create(x,y,recall_obj) {
+	with instance_create_depth(x,y,0,recall_obj) {
 	    direction = random(360);
 	    speed = 10 + random(8);
 			

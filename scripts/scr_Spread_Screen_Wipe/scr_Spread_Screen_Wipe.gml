@@ -11,7 +11,7 @@ function scr_Spread_Screen_Wipe() {
 	    dir = -(bullet_spread * (bullet_count - 1) / 2);
 	    repeat(bullet_count) {
 	        dir = -(bullet_spread / 2) + random(bullet_spread);
-	        with instance_create(xStart,bulletRightY,bullet_type) {
+	        with instance_create_depth(xStart,bulletRightY,0,bullet_type) {
 	            scr_Bullet_Shoot_Properties();
 	            speed = speed;
 				direction = other.bullet_direction + other.dir;

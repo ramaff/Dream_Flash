@@ -10,7 +10,7 @@
 	
 	if alarm[0] = 15 {
 		scr_Lightning_To_Target(spr_Boss_Sky_Lightning,x,y-64,x,y-864,4,64,image_blend, 30, true)
-		with instance_create(x,y,obj_Smart_Home_Bullet) {
+		with instance_create_depth(x,y,0,obj_Smart_Home_Bullet) {
 		    scr_Bullet_Replicate_Properties();
 			bulletsize = 0.5;
 			image_xscale = bulletsize;

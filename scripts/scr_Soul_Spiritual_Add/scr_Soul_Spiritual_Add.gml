@@ -4,7 +4,7 @@ function scr_Soul_Spiritual_Add() {
 
 	if spirit = "Hope" || spirit = "Bliss" || spirit = "Vanity" {
 	    repeat(5) {
-	        with instance_create(x,y,obj_Soul_Spiritual) {
+	        with instance_create_depth(x,y,0,obj_Soul_Spiritual) {
 	            spirit = other.spirit;
 	            direction = random(360);
 	            speed = 1 + random(4);
@@ -30,7 +30,7 @@ function scr_Soul_Spiritual_Add() {
 
 	if spirit = "Despair" || spirit = "Paranoia" || spirit = "Loathing" {
 	    repeat(3) {
-	        with instance_create(x,y,obj_Soul_Spiritual) {
+	        with instance_create_depth(x,y,0,obj_Soul_Spiritual) {
 	            spirit = other.spirit;
 	            direction = random(360);
 	            speed = 1 + random(4);
@@ -41,12 +41,5 @@ function scr_Soul_Spiritual_Add() {
 	    global.badSpirits++;
 	}
 	
-	/*if global.spiritTutorial = 0 {
-		instance_create(x,y,obj_Spirit_Note);	
-	} */
-	
 	scr_Tutorial_Note_Spawn("spirit_tutorial")
-
-
-
 }

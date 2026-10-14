@@ -27,7 +27,7 @@ for (var i = 0; i < 5; i++) {
 
 instance_destroy(Floor_Layout_Control)
 instance_destroy(Gui_Control)
-with instance_create(x,y,Floor_Layout_Control) {
+with instance_create_depth(x,y,-100,Floor_Layout_Control) {
     global.floor[0,3] = 1024;
     if global.currentchapter = 1 {
         global.floor[0,4] = spr_flash_base_g;
@@ -52,7 +52,7 @@ room_goto(Medium_Room);
 
 global.bosscount -= 1;
 
-instance_create(x,y,Gui_Control)
+instance_create_depth(x,y,0,Gui_Control)
 
 alarm[1] = 90;
 

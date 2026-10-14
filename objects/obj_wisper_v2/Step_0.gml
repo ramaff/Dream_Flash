@@ -132,7 +132,7 @@ if active_attack_delay <= 0 and pattern_cooldown <= 0 and pattern_count > 0 {
 
 if currentphase = finalphase and split = 0 {
     split = 1;
-    with instance_create(x,y, obj_wandering_wisper_v2) {
+    with instance_create_depth(x,y,0, obj_wandering_wisper_v2) {
 		difficulty = other.difficulty / 2;
         champ = other.champ + 0.1;
         boost = other.boost;
@@ -153,7 +153,7 @@ if currentphase = finalphase and split = 0 {
 		}
 
     }
-	with instance_create(x,y, obj_relentless_wisper_v2) {
+	with instance_create_depth(x,y,0, obj_relentless_wisper_v2) {
 		difficulty = other.difficulty / 2;
         champ = other.champ + 0.2;
         boost = other.boost;

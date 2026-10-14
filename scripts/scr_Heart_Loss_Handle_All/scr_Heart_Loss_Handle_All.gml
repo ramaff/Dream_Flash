@@ -9,7 +9,7 @@ function scr_Heart_Loss_Handle_All(_heart) {
 	}
 		
 	if obj_Soul_Parent.soulDeathFadeSpeed = 0 {
-	    instance_create(obj_Soul_Parent.x,obj_Soul_Parent.y,obj_Broken_Heart);
+	    instance_create_depth(obj_Soul_Parent.x,obj_Soul_Parent.y,-1,obj_Broken_Heart);
 	}
 	
 	scr_Heart_Loss_Event(_heart.heart_id);

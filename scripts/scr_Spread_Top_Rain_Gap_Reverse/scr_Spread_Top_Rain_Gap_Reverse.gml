@@ -11,7 +11,7 @@ function scr_Spread_Top_Rain_Gap_Reverse(argument0) {
 			bcount++;
 	        dir = -(bullet_spread / 2) + random(bullet_spread);
 			if ((bcount = gap) || (bcount = gap + 1) || (bcount = gap + 2) || (bcount = gap + 3) || (bcount = gap + 4) || (bcount = gap + 5) || (bcount = gap + 6) || (bcount = gap + 7) || (bcount = gap + 8)) {
-		        with instance_create(bulletTopX,(room_height / 2) - (global.roomSizeY / 2) - 500,bullet_type) {
+		        with instance_create_depth(bulletTopX,(room_height / 2) - (global.roomSizeY / 2) - 500, 0,bullet_type) {
 		            scr_Bullet_Shoot_Properties();
 		            speed = speed * (0.85 + random(0.25));
 					direction = other.bullet_direction + other.dir;

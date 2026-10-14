@@ -107,7 +107,7 @@ function scr_Boss_Beam_Attack_New(beamActive, beamOffest, beamFrame) {
 			
 			//beamSpr = beam_sprite;	
 			
-			with instance_create(bossxx[boss_beam_num] + beamxx,bossyy[boss_beam_num] + beamyy, beamObj) {
+			with instance_create_depth(bossxx[boss_beam_num] + beamxx,bossyy[boss_beam_num] + beamyy, 0, beamObj) {
 				scr_Bullet_Shoot_Properties();
 				alarm[0] = 1;
 	            //direction = other.bullet_direction + (other.dir) * ((40 + random(global.soulparanoia)) / 40);
@@ -138,7 +138,7 @@ function scr_Boss_Beam_Attack_New(beamActive, beamOffest, beamFrame) {
 			var dist = 20 + random(1300);
 			var beampartxx = lengthdir_x(dist, angle)
 			var beampartyy = lengthdir_y(dist, angle)
-			with instance_create(bossxx[boss_beam_num] + beampartxx - 10 + random(20), bossyy[boss_beam_num] + beampartyy - 10 + random(20),obj_Weapon_Trail) {
+			with instance_create_depth(bossxx[boss_beam_num] + beampartxx - 10 + random(20), bossyy[boss_beam_num] + beampartyy - 10 + random(20),0,obj_Weapon_Trail) {
 		
 				depth = other.depth + 2;
 		

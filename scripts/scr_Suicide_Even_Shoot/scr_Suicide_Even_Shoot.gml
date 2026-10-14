@@ -7,7 +7,7 @@ function scr_Suicide_Even_Shoot(bullet_count = 1, bullet_speed = 4, bullet_life 
 		
 	repeat(bullet_count) {
 	    dir += bullet_spread / bullet_count;
-	    with instance_create(x,y,bullet_type) {
+	    with instance_create_depth(x,y,0,bullet_type) {
 	        scr_Bullet_Shoot_Properties();
 	        bulletspeed = bullet_speed;
 	        bulletlife = bullet_life * (other.bullet_timefac_min + random(other.bullet_timefac_add));

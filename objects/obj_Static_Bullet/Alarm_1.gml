@@ -1,5 +1,5 @@
 if distance_to_object(obj_Soul) < 135 {
-    with instance_create(x,y,obj_Proportional_Homing_Bullet) {
+    with instance_create_depth(x,y,0,obj_Proportional_Homing_Bullet) {
             scr_Bullet_Replicate_Properties();
             bulletsize = 0.5;
             image_xscale = 0;

@@ -41,7 +41,7 @@ function scr_Calculate_Currency_Add(_return_recalls = false) {
 	}	
 	
 	repeat(recalls) {
-	    with instance_create(x,y,recall_obj) {
+	    with instance_create_depth(x,y,0,recall_obj) {
 	        direction = random(360);
 	        speed = 10 + random(8);
 	        //friction = 0.1

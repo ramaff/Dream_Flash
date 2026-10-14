@@ -2,7 +2,7 @@ function scr_W01(_xx, _yy) {
 	// Teleport Before Position Change
 
 	if global.W[1] > 0 {
-		with instance_create((x + _xx) / 2,(y + _yy) / 2,obj_Warp_Slash_Effect) {
+		with instance_create_depth((x + _xx) / 2,(y + _yy) / 2,0,obj_Warp_Slash_Effect) {
 			size = sqrt(((_xx - x) * (_xx - x)) + ((_yy - y) * (_yy - y)));
 			angle = point_direction(x,y,_xx,_yy);
 		}

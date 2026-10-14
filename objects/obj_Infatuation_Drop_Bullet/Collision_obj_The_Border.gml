@@ -3,7 +3,7 @@
 var seek = irandom(4);
 
 if seek = 2 {
-	with instance_create(x,y,obj_Phase_Home_No_Dir_Bullet) {
+	with instance_create_depth(x,y,0,obj_Phase_Home_No_Dir_Bullet) {
         scr_Bullet_Replicate_Properties();
         bulletsize = 0.4 + random(0.1);
         image_xscale = bulletsize;

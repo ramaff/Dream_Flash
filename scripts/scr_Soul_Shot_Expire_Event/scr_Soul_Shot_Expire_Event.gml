@@ -55,7 +55,7 @@ function scr_Soul_Shot_Expire_Event(){
 	    shot_stats.Shot_Hit_Again = 1;
 		if shot_stats.Shot_Beam = 0 {
 			var _shot_stats = variable_clone(shot_stats)
-		    with instance_create(obj_Soul_Parent.x,obj_Soul_Parent.y, object_index) {
+		    with instance_create_depth(obj_Soul_Parent.x,obj_Soul_Parent.y,0, object_index) {
 		        shot_stats = scr_Duplicate_Shot_Stats(_shot_stats, _shot_stats);
 				shot_stats.Shot_Exist_Time = 0;
 				image_alpha = 1;

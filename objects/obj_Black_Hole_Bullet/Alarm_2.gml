@@ -8,7 +8,7 @@ if alt mod 2 = 1 {
 var dir = random(360);
     repeat(4) {
         dir += 90;
-        with instance_create(x,y,bulType) {
+        with instance_create_depth(x,y,0,bulType) {
             scr_Bullet_Replicate_Properties();
 			bulletlife = 180;
 			alarm[0] = bulletlife;

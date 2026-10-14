@@ -8,7 +8,7 @@ function scr_Just_Shoot(absolute_pos = false) {
 			yy = boss_yoffset;	
 		}
 		repeat(bullet_count) {
-	        with instance_create(xx, yy,bullet_type) {
+	        with instance_create_depth(xx, yy,0,bullet_type) {
 	            scr_Bullet_Shoot_Properties();
 	            //direction = other.bullet_direction + (other.dir) * ((40 + random(global.soulparanoia)) / 40);
 				direction = other.bullet_direction + other.dir;

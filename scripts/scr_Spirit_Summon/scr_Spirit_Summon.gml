@@ -13,7 +13,7 @@ function scr_Spirit_Summon(bossform = obj_Masked_Hope_Spirit) {
 
 	//repeat(numBoss) {
 		if object_exists(bossform) {
-		    with (instance_create(room_width/2+xx,room_height/2+yy,bossform)) {
+		    with (instance_create_depth(room_width/2+xx,room_height/2+yy,0,bossform)) {
 		        difficulty = other.bossDifficulty;
 		        bossNum = bossOrder;
 		        bossOrder++;

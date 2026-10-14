@@ -17,7 +17,7 @@ if side = "right" {
 
 var yy = (room_height / 2) - 700 + random(1400);
 
-with instance_create(xx,yy, obj_Social_Anxiety_Spirit) {
+with instance_create_depth(xx,yy,0, obj_Social_Anxiety_Spirit) {
 	scr_Boss_Size_Setup(0.4 + random(0.1));
 	
 	if side = "left" {

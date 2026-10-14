@@ -3,7 +3,7 @@
 function scr_XB06(){
 
 	if global.XB[6] >= 1 {
-		instance_create(x,y,obj_Social_Anxiety_Control);	
+		instance_create_depth(x,y,0,obj_Social_Anxiety_Control);	
 	}
 
 }

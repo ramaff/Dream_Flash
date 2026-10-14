@@ -2,7 +2,7 @@
 // https://help.yoyogames.com/hc/en-us/articles/360005277377 for more information
 function scr_Screen_Flash(time){
 
-	with instance_create(x,y,obj_Screen_Flash) {
+	with instance_create_depth(x,y,-100,obj_Screen_Flash) {
 		flashLife = time;
 	}
 

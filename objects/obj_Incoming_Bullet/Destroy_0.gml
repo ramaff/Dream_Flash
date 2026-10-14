@@ -1,6 +1,6 @@
 /// @description Insert description here
 // You can write your code in this editor
-with instance_create(obj_Soul_Parent.perX,obj_Soul_Parent.perY - 1500,obj_Airstrike_Explode_Bullet) {
+with instance_create_depth(obj_Soul_Parent.perX,obj_Soul_Parent.perY - 1500,0,obj_Airstrike_Explode_Bullet) {
         scr_Bullet_Replicate_Properties();
 		bulletlifespan = 1516 / other.bulletspeed;
 		alarm[0] = bulletlifespan;

@@ -3,8 +3,7 @@
 
 if instance_exists(target) {
 
-	with instance_create(target.x + (xx_offset / 4), target.y + (yy_offset / 8), obj_In_Game_Recollection_Leadup_Cloud) {
-		depth = other.depth
+	with instance_create_depth(target.x + (xx_offset / 4), target.y + (yy_offset / 8),depth, obj_In_Game_Recollection_Leadup_Cloud) {
 		sprite_index = spr_Recollection_Cloud_v2_p1;
 		image_alpha = other.image_alpha;
 		image_xscale = other.image_xscale;
@@ -12,8 +11,7 @@ if instance_exists(target) {
 		alarm[0] = 1
 	}
 
-	with instance_create(target.x + (xx_offset / 2), target.y + (yy_offset / 5), obj_In_Game_Recollection_Leadup_Cloud) {
-		depth = other.depth
+	with instance_create_depth(target.x + (xx_offset / 2), target.y + (yy_offset / 5),depth, obj_In_Game_Recollection_Leadup_Cloud) {
 		sprite_index = spr_Recollection_Cloud_v2_p2;
 		image_alpha = other.image_alpha;
 		image_xscale = other.image_xscale;

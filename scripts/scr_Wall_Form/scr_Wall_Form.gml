@@ -13,7 +13,7 @@ function scr_Wall_Form() {
 	repeat(20) {
 
 	for(i = 0; i <= numWalls; i++) {
-	    with instance_create(leftMiddleX + xOffset,leftMiddleY + yOffset,obj_The_Border) {
+	    with instance_create_depth(leftMiddleX + xOffset,leftMiddleY + yOffset,1,obj_The_Border) {
 	        orientation = 1 * other.initialWall;
 	        type = 0;
 	        if (other.i = 0) {
@@ -31,7 +31,7 @@ function scr_Wall_Form() {
 	    yOffset += 32;
 	}
 	for(i = 0; i <= numWalls; i++) {
-	    with instance_create(leftMiddleX + xOffset,leftMiddleY + yOffset,obj_The_Border) {
+	    with instance_create_depth(leftMiddleX + xOffset,leftMiddleY + yOffset,1,obj_The_Border) {
 	        orientation = 2 * other.initialWall;
 	        type = 0;
 	        if (other.i = 0) {
@@ -50,7 +50,7 @@ function scr_Wall_Form() {
 	}
 	//yOffset += 32;
 	for(i = 0; i <= numWalls; i++) {
-	    with instance_create(leftMiddleX + xOffset,leftMiddleY + yOffset,obj_The_Border) {
+	    with instance_create_depth(leftMiddleX + xOffset,leftMiddleY + yOffset,1,obj_The_Border) {
 	        orientation = 3 * other.initialWall;
 	        type = 0;
 	        if (other.i = 0) {
@@ -68,7 +68,7 @@ function scr_Wall_Form() {
 	    yOffset -= 32;
 	}
 	for(i = 0; i <= numWalls; i++) {
-	    with instance_create(leftMiddleX + xOffset,leftMiddleY + yOffset,obj_The_Border) {
+	    with instance_create_depth(leftMiddleX + xOffset,leftMiddleY + yOffset,1,obj_The_Border) {
 	        orientation = 4 * other.initialWall;
 	        type = 0;
 	        if (other.i = 0) {

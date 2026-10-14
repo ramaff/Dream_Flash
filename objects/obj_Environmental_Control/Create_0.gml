@@ -1,6 +1,6 @@
 if global.currentchapter = 1 {
     repeat(225) {
-        instance_create(random(room_width),random(room_height),obj_Flash_Sparkle)
+        instance_create_depth(random(room_width),random(room_height),0,obj_Flash_Sparkle)
     }
 }
 if global.currentchapter = 2 {
@@ -11,11 +11,11 @@ if global.currentchapter = 3 {
 }
 if global.currentchapter = 4 {
     repeat(225) {
-        instance_create(random(room_width),random(room_height),obj_Flash_Sparkle)
+        instance_create_depth(random(room_width),random(room_height),0,obj_Flash_Sparkle)
     }
 }
-instance_create(x,y,obj_Charge_Indicator);
-with instance_create(room_width / 2,room_height / 2,obj_LightS) {
+instance_create_depth(x,y,-1000000,obj_Charge_Indicator);
+with instance_create_depth(room_width / 2,room_height / 2, 0,obj_LightS) {
     target = obj_Soul_Parent;
 	lightsize = 1;
 }
@@ -54,14 +54,11 @@ bg_yy = (room_height / 2 - 400) - 200 + random(400);
 var tilesize = 64;
 
 
-deepest_layer = instance_create(x, y, obj_background_drawing);
-deepest_layer.depth = 100000000;
+deepest_layer = instance_create_depth(x, y, 100000000, obj_background_drawing);
 
-deeper_layer = instance_create(x, y, obj_background_drawing);
-deeper_layer.depth = 1000000;
+deeper_layer = instance_create_depth(x, y, 1000000, obj_background_drawing);
 
-deep_layer = instance_create(x, y, obj_background_drawing);
-deep_layer.depth = 10000;
+deep_layer = instance_create_depth(x, y, 10000, obj_background_drawing);
 	
 var roomBG = global.floor[global.currentroom,4];
 var bgType = "Flash";

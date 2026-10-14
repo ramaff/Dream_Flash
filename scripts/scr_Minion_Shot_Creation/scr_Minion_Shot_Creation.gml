@@ -11,7 +11,7 @@ function scr_Minion_Shot_Creation() {
 			current_weapon_stats.Shot_Sprite = sprite_get_name(current_weapon_stats.Shot_Sprite)
 		}
 		
-	    with instance_create(x,y,asset_get_index(current_weapon_stats.Shot_Type)) {
+	    with instance_create_depth(x,y,0,asset_get_index(current_weapon_stats.Shot_Type)) {
 	        scr_Default_Shot_Variables();
 			shot_stats = variable_clone(other.current_weapon_stats);
 		

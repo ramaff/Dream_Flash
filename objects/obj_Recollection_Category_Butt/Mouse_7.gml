@@ -64,7 +64,7 @@ var _i = 0
 var _j = 0
 
 instance_destroy(obj_Dream_Cursor)
-var _cursor = instance_create(mouse_x,mouse_y,obj_Dream_Cursor);
+var _cursor = instance_create_depth(mouse_x,mouse_y,-1000000,obj_Dream_Cursor);
 
 if global.recollectCategory = "Weapons" {
     for(_i = 0; _i < (numOfButts / 3); _i++) {
@@ -75,7 +75,7 @@ if global.recollectCategory = "Weapons" {
 				break;
 			}
 			
-            with instance_create(camera_get_view_x(view) + 144 + 90 * _j,camera_get_view_y(view) + 208 + 96 * _i,obj_Recollection_Butt) {
+            with instance_create_depth(camera_get_view_x(view) + 144 + 90 * _j,camera_get_view_y(view) + 208 + 96 * _i,-1,obj_Recollection_Butt) {
                 //buttNum = other.buttNum;
                 //itemVal = _weapon_ids[_index]
 				itemVal = scr_Recollection_Panel_Assign(_weapon_ids, _index);
@@ -98,7 +98,7 @@ if global.recollectCategory = "Items" {
 				break;
 			}
 
-	        with instance_create(camera_get_view_x(view) + 144 + 90 * _j, camera_get_view_y(view) + 208 + 96 * _i,obj_Recollection_Butt) {
+	        with instance_create_depth(camera_get_view_x(view) + 144 + 90 * _j, camera_get_view_y(view) + 208 + 96 * _i,-1,obj_Recollection_Butt) {
 
 				itemVal = scr_Recollection_Panel_Assign(_item_ids, _index);
 	            //scr_Recollection_Panel_Assign();
@@ -116,7 +116,7 @@ if global.recollectCategory = "Items" {
 
 if global.recollectCategory = "Bosses" {
     for(_i = 0; _i < numOfButts; _i++) {
-        with instance_create(camera_get_view_x(view) + 176,camera_get_view_y(view) + 248 + 80 * _i,obj_Recollection_Butt) {
+        with instance_create_depth(camera_get_view_x(view) + 176,camera_get_view_y(view) + 248 + 80 * _i,-1,obj_Recollection_Butt) {
 			if _i mod 2 = 0 {
 				x += 120;
 			}
@@ -134,7 +134,7 @@ if global.recollectCategory = "Bosses" {
 
 if global.recollectCategory = "State" {
     for(_i = 0; _i < numOfButts; _i++) {
-        with instance_create(camera_get_view_x(view) + 176,camera_get_view_y(view) + 248 + 80 * _i,obj_Recollection_Butt) {
+        with instance_create_depth(camera_get_view_x(view) + 176,camera_get_view_y(view) + 248 + 80 * _i,-1,obj_Recollection_Butt) {
 			if _i mod 2 = 0 {
 				x += 120;
 			}
@@ -152,7 +152,7 @@ if global.recollectCategory = "State" {
 
 if global.recollectCategory = "Information" {
     for(_i = 0; _i < numOfButts; _i++) {
-        with instance_create(camera_get_view_x(view) + 176,camera_get_view_y(view) + 248 + 80 * _i,obj_Recollection_Butt) {
+        with instance_create_depth(camera_get_view_x(view) + 176,camera_get_view_y(view) + 248 + 80 * _i,-1,obj_Recollection_Butt) {
 			if _i mod 2 = 0 {
 				x += 120;
 			}
@@ -195,5 +195,5 @@ with (_cursor) {
 instance_destroy(obj_Recollection_Scroll_Bar)
 
 //if !instance_exists(obj_Recollection_Scroll_Bar) {
-	instance_create(camera_get_view_x(view) + 80,camera_get_view_y(view) + 144,obj_Recollection_Scroll_Bar);
+	instance_create_depth(camera_get_view_x(view) + 80,camera_get_view_y(view) + 144,0,obj_Recollection_Scroll_Bar);
 //}

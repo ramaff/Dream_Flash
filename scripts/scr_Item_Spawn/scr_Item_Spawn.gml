@@ -111,14 +111,14 @@ function scr_Item_Spawn() {
 
 	scr_Tutorial_Note_Spawn("item_field")
 
-	with instance_create(room_width/2,room_height/2,obj_Item_Field) {
+	with instance_create_depth(room_width/2,room_height/2,0,obj_Item_Field) {
 	    sprite_index = fieldSprite;
 		fieldColor = tFieldColor;
 	}
 
 	if fieldType = "Strength Field" || fieldType = "Vitality Field" || fieldType = "Dexterity Field" || fieldType = "Essence Field" || fieldType = "Perception Field" || fieldType = "State Field" {
 	    if item[13] != 0 and item[13] != "0" {
-	        with instance_create(1024 + 50,576,obj_Item_Parent) {
+	        with instance_create_depth(1024 + 50,576,-2,obj_Item_Parent) {
 				shop = 0;
 	            itemOrbit = 0;
 	            path_start(Item_Path_Minus,25,path_action_continue,1)
@@ -148,7 +148,7 @@ function scr_Item_Spawn() {
 	for(i = 1; i <= 12; i++) {
 		iTier = scr_Check_Special(item[i]);
 	    if item[i] != 0 and item[i] != "0" {
-		    with instance_create(1024 + 50,576,obj_Item_Parent) {
+		    with instance_create_depth(1024 + 50,576,-2,obj_Item_Parent) {
 				shop = 0;
 		        itemOrbit = 1 + floor((i-1) / 4);
 				itemOrbit = 1;

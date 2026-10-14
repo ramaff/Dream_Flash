@@ -21,21 +21,21 @@ if global.layerdeep = 2 {
 		_max_i = 3;
         for(i = 1; i <= 4; i++) {
 			if i != 4 {
-				with instance_create(camera_get_view_x(view) + camera_get_view_width(view) / 2 - 32 + 128,camera_get_view_y(view) + 96 * i,obj_Option_Button) {
+				with instance_create_depth(camera_get_view_x(view) + camera_get_view_width(view) / 2 - 32 + 128,camera_get_view_y(view) + 96 * i,-2,obj_Option_Button) {
 	                type = i;
 	                category = other.category;
 					_cursor.menu_grid[0, i - 1] = id;
 	            }
-	            with instance_create(camera_get_view_x(view) + camera_get_view_width(view) / 2 + 64 + 128,camera_get_view_y(view) + 96 * i,obj_Option_Pointer) {
+	            with instance_create_depth(camera_get_view_x(view) + camera_get_view_width(view) / 2 + 64 + 128,camera_get_view_y(view) + 96 * i,-2,obj_Option_Pointer) {
 	                type = i;
 	                category = other.category;
 	            }
-	            with instance_create(camera_get_view_x(view) + camera_get_view_width(view) / 2 - 128 + 128,camera_get_view_y(view) + 96 * i,obj_Option_Pointer) {
+	            with instance_create_depth(camera_get_view_x(view) + camera_get_view_width(view) / 2 - 128 + 128,camera_get_view_y(view) + 96 * i,-2,obj_Option_Pointer) {
 	                type = -i;
 	                category = other.category;
 	            }
 			} else {
-				with instance_create(camera_get_view_x(view) + camera_get_view_width(view) / 2 - 208,camera_get_view_y(view) + 96 * i,obj_Option_Button) {
+				with instance_create_depth(camera_get_view_x(view) + camera_get_view_width(view) / 2 - 208,camera_get_view_y(view) + 96 * i,-2,obj_Option_Button) {
 	                type = i;
 	                category = other.category;
 					sprite_index = spr_Option_Button_Big;
@@ -44,7 +44,7 @@ if global.layerdeep = 2 {
 					percent = global.gameScreenShake * 100;
 					_cursor.menu_grid[0, i - 1] = id;
 	            }
-				with instance_create(camera_get_view_x(view) + camera_get_view_width(view) / 2 + 80,camera_get_view_y(view) + 96 * i,obj_Option_Slider) {
+				with instance_create_depth(camera_get_view_x(view) + camera_get_view_width(view) / 2 + 80,camera_get_view_y(view) + 96 * i,-2,obj_Option_Slider) {
 	                type = i;
 	                category = other.category;
 	                percent = global.gameScreenShake * 100;
@@ -56,20 +56,16 @@ if global.layerdeep = 2 {
 		_max_i = 8;
 		_max_x = 1;
 		if !instance_exists(obj_Recollection_Scroll_Bar) {
-			instance_create(camera_get_view_x(view) + 32,camera_get_view_y(view) + 144,obj_Recollection_Scroll_Bar);
+			instance_create_depth(camera_get_view_x(view) + 32,camera_get_view_y(view) + 144,-2,obj_Recollection_Scroll_Bar);
 		}
 		for(i = 1; i <= 9; i++) {
-            with instance_create(camera_get_view_x(view) + camera_get_view_width(view) / 2 - 128 + 128,camera_get_view_y(view) + 96 * i,obj_Option_Button) {
+            with instance_create_depth(camera_get_view_x(view) + camera_get_view_width(view) / 2 - 128 + 128,camera_get_view_y(view) + 96 * i,-2,obj_Option_Button) {
                 type = i;
                 category = other.category;
 				_cursor.menu_grid[0, i - 1] = id;
             }
-            /*with instance_create(camera_get_view_x(view) + camera_get_view_width(view) / 2 + 64 + 128,camera_get_view_y(view) + 96 * i,obj_Option_Pointer) {
-                type = i;
-                category = other.category;
-            } */
         }
-			with instance_create(camera_get_view_x(view) + camera_get_view_width(view) / 2 + 384,camera_get_view_y(view) + 480,obj_Option_Reset) {
+			with instance_create_depth(camera_get_view_x(view) + camera_get_view_width(view) / 2 + 384,camera_get_view_y(view) + 480,-2,obj_Option_Reset) {
 	            type = 10;
 	            category = 2;
 				for(i = 1; i <= 9; i++) {
@@ -80,7 +76,7 @@ if global.layerdeep = 2 {
     if category = 3 {
 		_max_i = 2;
         for(i = 1; i <= 3; i++) {
-            with instance_create(camera_get_view_x(view) + camera_get_view_width(view) / 2 - 252,camera_get_view_y(view) + 96 * i,obj_Option_Button) {
+            with instance_create_depth(camera_get_view_x(view) + camera_get_view_width(view) / 2 - 252,camera_get_view_y(view) + 96 * i,-2,obj_Option_Button) {
                 type = i;
                 category = other.category;
 				_cursor.menu_grid[0, i - 1] = id;
@@ -91,7 +87,7 @@ if global.layerdeep = 2 {
                     percent = global.gameMusic;
                 }
             }
-            with instance_create(camera_get_view_x(view) + camera_get_view_width(view) / 2 - 32,camera_get_view_y(view) + 96 * i,obj_Option_Slider) {
+            with instance_create_depth(camera_get_view_x(view) + camera_get_view_width(view) / 2 - 32,camera_get_view_y(view) + 96 * i,-2,obj_Option_Slider) {
                 type = i;
                 category = other.category;
                 if type = 1 {
@@ -107,40 +103,40 @@ if global.layerdeep = 2 {
 		_max_i = 4;
         for(i = 11; i <= 15; i++) {
 			if i = 13 {
-				with instance_create(camera_get_view_x(view) + camera_get_view_width(view) / 2 - 252,camera_get_view_y(view) + 96 * (i - 10),obj_Option_Button) {
+				with instance_create_depth(camera_get_view_x(view) + camera_get_view_width(view) / 2 - 252,camera_get_view_y(view) + 96 * (i - 10),-2,obj_Option_Button) {
 	                type = i;
 					_cursor.menu_grid[0, i - 11] = id;
 	                category = other.category;
 					percent = global.gameBloomShader * 100;
 	            }
-				with instance_create(camera_get_view_x(view) + camera_get_view_width(view) / 2 - 32,camera_get_view_y(view) + 96 * (i - 10),obj_Option_Slider) {
+				with instance_create_depth(camera_get_view_x(view) + camera_get_view_width(view) / 2 - 32,camera_get_view_y(view) + 96 * (i - 10),-2,obj_Option_Slider) {
 	                type = i;
 	                category = other.category;
 	                percent = global.gameBloomShader * 100;
 	            }
 			} else if i = 15 {
-				with instance_create(camera_get_view_x(view) + camera_get_view_width(view) / 2 - 252,camera_get_view_y(view) + 96 * (i - 10),obj_Option_Button) {
+				with instance_create_depth(camera_get_view_x(view) + camera_get_view_width(view) / 2 - 252,camera_get_view_y(view) + 96 * (i - 10),-2,obj_Option_Button) {
 	                type = i;
 					_cursor.menu_grid[0, i - 11] = id;
 	                category = other.category;
 					percent = global.gameParticles * 100;
 	            }
-				with instance_create(camera_get_view_x(view) + camera_get_view_width(view) / 2 - 32,camera_get_view_y(view) + 96 * (i - 10),obj_Option_Slider) {
+				with instance_create_depth(camera_get_view_x(view) + camera_get_view_width(view) / 2 - 32,camera_get_view_y(view) + 96 * (i - 10),-2,obj_Option_Slider) {
 	                type = i;
 	                category = other.category;
 	                percent = global.gameParticles * 100;
 	            }
 			} else {
-				with instance_create(camera_get_view_x(view) + camera_get_view_width(view) / 2 - 252,camera_get_view_y(view) + 96 * (i - 10),obj_Option_Button) {
+				with instance_create_depth(camera_get_view_x(view) + camera_get_view_width(view) / 2 - 252,camera_get_view_y(view) + 96 * (i - 10),-2,obj_Option_Button) {
 	                type = i;
 					_cursor.menu_grid[0, i - 11] = id;
 	                category = other.category;
 	            }
-	            with instance_create(camera_get_view_x(view) + camera_get_view_width(view) / 2 + 64,camera_get_view_y(view) + 96 * (i - 10),obj_Option_Pointer) {
+	            with instance_create_depth(camera_get_view_x(view) + camera_get_view_width(view) / 2 + 64,camera_get_view_y(view) + 96 * (i - 10),-2,obj_Option_Pointer) {
 	                type = i;
 	                category = other.category;
 	            }
-	            with instance_create(camera_get_view_x(view) + camera_get_view_width(view) / 2 - 128,camera_get_view_y(view) + 96 * (i - 10),obj_Option_Pointer) {
+	            with instance_create_depth(camera_get_view_x(view) + camera_get_view_width(view) / 2 - 128,camera_get_view_y(view) + 96 * (i - 10),-2,obj_Option_Pointer) {
 	                type = -i;
 	                category = other.category;
 	            }
@@ -152,21 +148,21 @@ if global.layerdeep = 2 {
 		_max_i = 3;
         for(i = 1; i <= 2; i++) {
 			if i != 2 {
-				with instance_create(camera_get_view_x(view) + camera_get_view_width(view) / 2 - 32 + 128,camera_get_view_y(view) + 96 * i,obj_Option_Button) {
+				with instance_create_depth(camera_get_view_x(view) + camera_get_view_width(view) / 2 - 32 + 128,camera_get_view_y(view) + 96 * i,-2,obj_Option_Button) {
 	                type = i;
 	                category = other.category;
 					_cursor.menu_grid[0, i - 1] = id;
 	            }
-	            with instance_create(camera_get_view_x(view) + camera_get_view_width(view) / 2 + 64 + 128,camera_get_view_y(view) + 96 * i,obj_Option_Pointer) {
+	            with instance_create_depth(camera_get_view_x(view) + camera_get_view_width(view) / 2 + 64 + 128,camera_get_view_y(view) + 96 * i,-2,obj_Option_Pointer) {
 	                type = i;
 	                category = other.category;
 	            }
-	            with instance_create(camera_get_view_x(view) + camera_get_view_width(view) / 2 - 128 + 128,camera_get_view_y(view) + 96 * i,obj_Option_Pointer) {
+	            with instance_create_depth(camera_get_view_x(view) + camera_get_view_width(view) / 2 - 128 + 128,camera_get_view_y(view) + 96 * i,-2,obj_Option_Pointer) {
 	                type = -i;
 	                category = other.category;
 	            }
 			} else {
-				with instance_create(camera_get_view_x(view) + camera_get_view_width(view) / 2 - 208,camera_get_view_y(view) + 96 * i,obj_Option_Button) {
+				with instance_create_depth(camera_get_view_x(view) + camera_get_view_width(view) / 2 - 208,camera_get_view_y(view) + 96 * i,-2,obj_Option_Button) {
 	                type = i;
 	                category = other.category;
 					sprite_index = spr_Option_Button_Big;
@@ -175,7 +171,7 @@ if global.layerdeep = 2 {
 					percent = global.game_controller_sensitivity * 100;
 					_cursor.menu_grid[0, i - 1] = id;
 	            }
-				with instance_create(camera_get_view_x(view) + camera_get_view_width(view) / 2 + 80,camera_get_view_y(view) + 96 * i,obj_Option_Slider) {
+				with instance_create_depth(camera_get_view_x(view) + camera_get_view_width(view) / 2 + 80,camera_get_view_y(view) + 96 * i,-2,obj_Option_Slider) {
 	                type = i;
 	                category = other.category;
 	                percent = global.game_controller_sensitivity * 100;

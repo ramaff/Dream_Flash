@@ -4,7 +4,7 @@
     dir = random(360);
 	ddir = 0;
 	repeat(7) {
-        with instance_create(x,y,obj_Direction_Bullet) {
+        with instance_create_depth(x,y,0,obj_Direction_Bullet) {
             scr_Bullet_Replicate_Properties();
             sprite_index = spr_Fire_Shot;
             bulletspeed = other.bulletspeed * 0.45;
@@ -16,7 +16,7 @@
     }
 	dir += 360 / 28;
 	repeat(14) {
-        with instance_create(x,y,obj_Direction_Bullet) {
+        with instance_create_depth(x,y,0,obj_Direction_Bullet) {
             scr_Bullet_Replicate_Properties();
             sprite_index = spr_Fire_Shot;
             bulletspeed = other.bulletspeed * 0.3;

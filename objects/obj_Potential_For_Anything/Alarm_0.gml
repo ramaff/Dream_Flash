@@ -8,7 +8,7 @@ var _shot_trail_area = 80;
 var xx = random(_shot_trail_area) - (_shot_trail_area / 2);
 var yy = random(_shot_trail_area) - (_shot_trail_area / 2);
 
-with instance_create(x + xx,y + yy,obj_Field_Trail) {
+with instance_create_depth(x + xx,y + yy,0,obj_Field_Trail) {
 		
 	sprite_index = spr_Soul_Big_Bit;
 		
@@ -25,11 +25,4 @@ with instance_create(x + xx,y + yy,obj_Field_Trail) {
 
 	speed = 0.75 + random(0.75);
 	direction = random(360);
-}
-
-/*
-with instance_create(x,y,obj_Item_Spark) {
-alarm[0] = 30 + random(90);
-speed = 0.1 + random(0.8);
-direction = random(360);
 }

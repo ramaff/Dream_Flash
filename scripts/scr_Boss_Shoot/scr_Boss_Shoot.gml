@@ -16,7 +16,7 @@ function scr_Boss_Shoot(absolute_pos = false) {
 	}
 		
 	repeat(bullet_count) {
-	    with instance_create(xx, yy, bull) {
+	    with instance_create_depth(xx, yy, 0, bull) {
 	        scr_Bullet_Shoot_Properties();
 			if other.bullet_charged {
 				bulletgrowinto = other.bullet_type;

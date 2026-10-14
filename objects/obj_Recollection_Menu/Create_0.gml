@@ -12,12 +12,12 @@ if scr_State_Recollection_Unlocked() {
 var i;
 
 for(i = 1; i <= categoryNum; i++) {
-    with instance_create(camera_get_view_x(view) - 48 + 132 * i,camera_get_view_y(view) + 24,obj_Recollection_Category_Butt) {
+    with instance_create_depth(camera_get_view_x(view) - 48 + 132 * i,camera_get_view_y(view) + 24,-1,obj_Recollection_Category_Butt) {
         cat = i;
     }
 }
 
-with instance_create(camera_get_view_x(view),camera_get_view_y(view), obj_Recollection_Full_Cloud) {
+with instance_create_depth(camera_get_view_x(view),camera_get_view_y(view),0, obj_Recollection_Full_Cloud) {
 	depth = -1;	
 }
 

@@ -25,7 +25,7 @@ if currentphase = 1 {
 	if image_alpha = 0 {
 		scr_Boss_Teleport_Far();	
 	}
-	instance_create(x,y, obj_The_Veil_True_Boss) {
+	instance_create_depth(x,y,0, obj_The_Veil_True_Boss) {
         champ = other.champ;
         boost = other.boost;
         coreNum = other.coreCount;

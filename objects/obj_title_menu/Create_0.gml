@@ -7,7 +7,7 @@ global.spiritRoom = -1
 global.evilSpiritRoom = -1
 
 repeat(20 + irandom(5)) {
-    instance_create(random(room_width),random(room_height),obj_Flash_Sparkle)
+    instance_create_depth(random(room_width),random(room_height),0,obj_Flash_Sparkle)
 }
 
 depth = -100
@@ -22,7 +22,7 @@ enum TITLE_MENUS {
     PLAY
 }
 
-instance_create_depth(-64,-64, depth - 9999, obj_Dream_Cursor);
+instance_create_depth(-64,-64, depth -1000000, obj_Dream_Cursor);
 
 menu_main = {
     button_sprite: spr_Title_Screen_Butts,
@@ -48,8 +48,8 @@ menu_main.buttons.actions[0] = function () {
         global.loadrun = 0
         global.startrunbuttonpress = 1
         
-        instance_create(0,0,Run_Fade_Control);
-        instance_create(0,0,obj_Fade);
+        instance_create_depth(0,0,0,Run_Fade_Control);
+        instance_create_depth(0,0,-50,obj_Fade);
     }
     else {
     	current_menu = TITLE_MENUS.PLAY
@@ -215,15 +215,15 @@ play_menu.button_action[0] = function (){
     global.loadrun = 0
     global.startrunbuttonpress = 1
     
-    instance_create(0,0,Run_Fade_Control)
-    instance_create(0,0,obj_Fade)
+    instance_create_depth(0,0,0,Run_Fade_Control)
+    instance_create_depth(0,0,-50,obj_Fade)
 }
 play_menu.button_action[1] = function (){
     global.loadrun = 1
 	global.startrunbuttonpress = 1
     
-    instance_create(0,0,Run_Fade_Control)
-    instance_create(0,0,obj_Fade)
+    instance_create_depth(0,0,0,Run_Fade_Control)
+    instance_create_depth(0,0,-50,obj_Fade)
 }
     
 

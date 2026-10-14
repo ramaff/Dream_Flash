@@ -3,7 +3,7 @@
 if global.layerdeep = 2 {
     scr_Pause_Main_Leave();
     scr_Save_Options();
-    var _cursor = instance_create(mouse_x,mouse_y,obj_Dream_Cursor);
+    var _cursor = instance_create_depth(mouse_x,mouse_y,-1000000,obj_Dream_Cursor);
 
 	var _menu_grid = True_Start_Control.menu_grid
 	

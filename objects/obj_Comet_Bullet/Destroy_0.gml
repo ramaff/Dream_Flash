@@ -4,7 +4,7 @@
     dir = random(360);
 	ddir = 0;
 	repeat(4) {
-        with instance_create(x,y,obj_Direction_Bullet) {
+        with instance_create_depth(x,y,0,obj_Direction_Bullet) {
             scr_Bullet_Replicate_Properties();
             sprite_index = spr_Fire_Shot;
             bulletspeed = other.bulletspeed * 0.3;
@@ -15,7 +15,7 @@
 		ddir += 90;
     }
 	repeat(4) {
-        with instance_create(x,y,obj_Direction_Bullet) {
+        with instance_create_depth(x,y,0,obj_Direction_Bullet) {
             scr_Bullet_Replicate_Properties();
             sprite_index = spr_Fire_Shot;
             bulletspeed = other.bulletspeed * 0.35;
@@ -26,7 +26,7 @@
 		ddir += 90;
     }
 	repeat(4) {
-        with instance_create(x,y,obj_Direction_Bullet) {
+        with instance_create_depth(x,y,0,obj_Direction_Bullet) {
             scr_Bullet_Replicate_Properties();
             sprite_index = spr_Fire_Shot;
             bulletspeed = other.bulletspeed * 0.4;
@@ -38,7 +38,7 @@
     }
 	//dir += 15;
 	repeat(8) {
-        with instance_create(x,y,obj_Direction_Bullet) {
+        with instance_create_depth(x,y,0,obj_Direction_Bullet) {
             scr_Bullet_Replicate_Properties();
             sprite_index = spr_Fire_Shot;
             bulletspeed = other.bulletspeed * 0.25;

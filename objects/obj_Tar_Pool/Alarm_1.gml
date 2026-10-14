@@ -2,7 +2,7 @@
 // You can write your code in this editor
 	var dir = -45 + random(90);
 	repeat(1) {
-		with instance_create(x,y,obj_Lob_Bullet) {
+		with instance_create_depth(x,y,0,obj_Lob_Bullet) {
 	        scr_Bullet_Replicate_Properties();
 			bulletbounceY = 0;
 			bounce_speed = (3 + random(2));

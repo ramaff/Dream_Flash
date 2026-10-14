@@ -199,7 +199,7 @@ if bossActiveAttackDelay[1] <= 0 and bossPatternCooldown <= 0 and bossPatternCou
                 dir = random(360);
                 dirspeed = bulletspeed * (1.35 + random(0.5))
                 repeat(4) {
-                    with instance_create(x,y,obj_Basic_Bullet) {
+                    with instance_create_depth(x,y,0,obj_Basic_Bullet) {
                         scr_Bullet_Replicate_Properties();
                         sprite_index = spr_Glowy_Enemy_Shot;
                         bulletsize = 0.5;

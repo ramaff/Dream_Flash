@@ -31,7 +31,7 @@ function scr_Channel_Boss_Kill(type = "None"){
 			var sDir = random(360);
 
 			repeat(8) {
-				with instance_create(x,y,obj_State_Essence) {
+				with instance_create_depth(x,y,0,obj_State_Essence) {
 					direction = sDir;
 					speed = 15;
 				}

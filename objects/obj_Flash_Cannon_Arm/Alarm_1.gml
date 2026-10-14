@@ -1,4 +1,4 @@
-with instance_create(x + lengthdir_x(104, image_angle),y + lengthdir_y(104, image_angle),obj_Flash_Ball) {
+with instance_create_depth(x + lengthdir_x(104, image_angle),y + lengthdir_y(104, image_angle),0,obj_Flash_Ball) {
     scr_Bullet_Replicate_Properties();
     sprite_index = spr_Big_Flash_Shot;
     bulletspeed = other.bulletspeed;

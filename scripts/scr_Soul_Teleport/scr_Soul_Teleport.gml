@@ -88,7 +88,7 @@ function scr_Soul_Teleport(_evasion = false, _costs_money = true, _xx = obj_Astr
 			_angle_offset += _angle_add / _segs
 			scr_Soul_Move_Particle(_pxx, _pyy, "Teleport", _blend);
 			if _i mod 2 = 0 {
-				with instance_create(_pxx, _pyy, obj_After_Image) {
+				with instance_create_depth(_pxx, _pyy, 0, obj_After_Image) {
 					alarm[0] = 30 + (_i * 2)
 					shrinking = false
 					fading = true
@@ -105,7 +105,7 @@ function scr_Soul_Teleport(_evasion = false, _costs_money = true, _xx = obj_Astr
 			_red_amount -= 160 / _segs
 		}
 		
-		with instance_create(obj_Soul_Parent.x,obj_Soul_Parent.y,obj_Soul_Linger) {
+		with instance_create_depth(obj_Soul_Parent.x,obj_Soul_Parent.y,-1,obj_Soul_Linger) {
 		    if other.image_index = 1 {
 		        image_xscale = -1;
 		    } 

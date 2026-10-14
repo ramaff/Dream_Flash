@@ -24,7 +24,7 @@ function scr_Ascending_Soul_Teleport() {
 					yyy = y;
 					scr_Disk_Effect(30, 0.6, c_yellow)
 					repeat(2) {
-						with instance_create(x,y,obj_Ascended_Suck) {
+						with instance_create_depth(x,y,0,obj_Ascended_Suck) {
 			                target = soultar;
 							direction = random(360)
 							speed = 2 + random(2);

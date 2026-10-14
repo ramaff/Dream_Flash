@@ -6,7 +6,7 @@ var dir = random(2);
 
 	    dir += 1;
 
-	    with instance_create(x,y,obj_Orbital_Increase_Bullet) {
+	    with instance_create_depth(x,y,0,obj_Orbital_Increase_Bullet) {
 	            scr_Bullet_Replicate_Properties();
 				target = other.id;
 	            soulshotblock = 0;
@@ -28,7 +28,7 @@ var dir = random(2);
 
 	    dir += 1;
 
-	    with instance_create(x,y,obj_Orbital_Increase_Bullet) {
+	    with instance_create_depth(x,y,0,obj_Orbital_Increase_Bullet) {
 	            scr_Bullet_Replicate_Properties();
 				target = other.id;
 	            soulshotblock = 0;

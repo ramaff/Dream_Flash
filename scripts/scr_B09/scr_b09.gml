@@ -11,7 +11,7 @@ function scr_B09(damage){
 	
 		while(damage > threshold) {
 			damage -= threshold;
-			with instance_create(x,y, obj_Speech_Heart) {
+			with instance_create_depth(x,y,0, obj_Speech_Heart) {
 				speed = 15 + random(20);
 				direction = random(360);
 				bosstarget = bossid;
@@ -20,7 +20,7 @@ function scr_B09(damage){
 		if damage > 0 {
 			if scr_Chance(threshold / damage) {
 			
-				with instance_create(x,y, obj_Speech_Heart) {
+				with instance_create_depth(x,y,0, obj_Speech_Heart) {
 					speed = 15 + random(20);
 					direction = random(360);
 					bosstarget = bossid;

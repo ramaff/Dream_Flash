@@ -19,7 +19,7 @@ function scr_B10() {
 		        var hamount = _hamount;
 				scr_Heal_Soul(hamount);
 			}
-	        with instance_create(x,y,obj_Life_Suck) {
+	        with instance_create_depth(x,y,0,obj_Life_Suck) {
 	            target = _target;
 				direction = random(360)
 				speed = 4;

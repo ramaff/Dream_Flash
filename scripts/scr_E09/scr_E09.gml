@@ -3,7 +3,7 @@ function scr_E09() {
 
 	if global.E[9] > 0 {
 	    repeat(7) {
-	        with instance_create(x,y,obj_Time_Warp) {
+	        with instance_create_depth(x,y,0,obj_Time_Warp) {
 	            speed = 2 + random(2);
 	            direction = random(360);
 	            alarm[0] = 20 + irandom(20);

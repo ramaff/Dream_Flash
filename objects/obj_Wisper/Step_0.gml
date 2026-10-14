@@ -236,7 +236,7 @@ if bossActiveAttack[1] != 0 {
 
 if currentphase = finalphase and split = 0 {
     split = 1;
-    with instance_create(x,y, obj_Wandering_Wisper) {
+    with instance_create_depth(x,y,0, obj_Wandering_Wisper) {
 		difficulty = other.difficulty / 2;
         champ = other.champ + 0.1;
         boost = other.boost;
@@ -244,7 +244,7 @@ if currentphase = finalphase and split = 0 {
 		scr_Boss_Stats_Setup();
 		difficulty = Floor_Layout_Control.Flash[global.currentroom,24] / 2;
     }
-	with instance_create(x,y, obj_Relentless_Wisper) {
+	with instance_create_depth(x,y,0, obj_Relentless_Wisper) {
 		difficulty = other.difficulty / 2;
         champ = other.champ + 0.2;
         boost = other.boost;

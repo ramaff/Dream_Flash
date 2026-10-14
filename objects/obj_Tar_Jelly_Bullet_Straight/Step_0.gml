@@ -15,7 +15,7 @@ if bulletbounceY + bounce_speed < 0 {
 	
 	var spawned_pool_sprite = spr_Tar_Pool;
 	
-	with instance_create(x,y,obj_Tar_Pool) {
+	with instance_create_depth(x,y,0,obj_Tar_Pool) {
         scr_Bullet_Replicate_Properties();
         bulletsprite = spawned_pool_sprite;
         sprite_index = spawned_pool_sprite;

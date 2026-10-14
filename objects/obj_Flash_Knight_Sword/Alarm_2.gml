@@ -5,7 +5,7 @@ spd = 4;
     repeat(1) {
         spd += 5;
         out = random(48)
-        with instance_create(x + lengthdir_x(48 + out, image_angle),y + lengthdir_y(48 + out, image_angle),obj_Basic_Bullet) {
+        with instance_create_depth(x + lengthdir_x(48 + out, image_angle),y + lengthdir_y(48 + out, image_angle),0,obj_Basic_Bullet) {
             scr_Bullet_Replicate_Properties();
             sprite_index = spr_Glowy_Blue_Shot;
             bulletsize = 0.5;

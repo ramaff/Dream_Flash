@@ -36,7 +36,7 @@ for(i = 0; i < extra_shots_amount; i++) {
 		var _og_stats = other.shot_stats
 	
 	    repeat(ramt) {
-		    with instance_create(x + _xx,y + _yy, asset_get_index(current_extra_stats.Shot_Type)) {
+		    with instance_create_depth(x + _xx,y + _yy, 0, asset_get_index(current_extra_stats.Shot_Type)) {
 		        shot_stats = scr_Duplicate_Shot_Stats(current_extra_stats, variable_clone(_og_stats), dir);
 				
 				scr_Shot_Burst_Stats(current_extra_stats)

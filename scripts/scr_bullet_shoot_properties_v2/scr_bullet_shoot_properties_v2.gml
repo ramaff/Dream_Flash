@@ -38,7 +38,7 @@ function scr_bullet_shoot_properties_v2(_bullet_stats = bullet_stats) {
 	
 	speed = _bullet_stats.bullet_speed;
 	
-	with instance_create(x,y, obj_LightS) {
+	with instance_create_depth(x,y,0, obj_LightS) {
 		target = other.id;
 
 		lightsize = _bullet_stats.bullet_size;

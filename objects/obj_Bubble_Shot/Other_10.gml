@@ -6,7 +6,7 @@ dir = -shot_stats.Shot_Spread / 2;
 if is_array(shot_stats.Shot_Bubble_Air_Burst_Stats) {
 	var _pop_stats = shot_stats.Shot_Bubble_Air_Burst_Stats[0]
 	repeat(_pop_stats.Shot_Count) {
-		with instance_create(x,y,asset_get_index(_pop_stats.Shot_Type)) {
+		with instance_create_depth(x,y,0,asset_get_index(_pop_stats.Shot_Type)) {
 			shot_stats = scr_Duplicate_Shot_Stats(_pop_stats, variable_clone(other.shot_stats));
 			
 			shot_stats.Shot_Size_Relation = 1;

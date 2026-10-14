@@ -1,16 +1,8 @@
 dir = -10;
 repeat(3) {
-    with instance_create(x,y,obj_Basic_Bullet) {
+    with instance_create_depth(x,y,0,obj_Basic_Bullet) {
         scr_Bullet_Replicate_Properties();
-		/*
-		bpart = 2;
-		bpartsprite = spr_Bullet_Part;
-		bpartarea = 25
-		bpartfrequency = 5
-		bpartlife = 20
-		bpartcolor1 = make_color_rgb(255,0,0);
-		bpartcolor2 = bpartcolor1
-		*/
+
 		bulletlifespan = 300;
 		alarm[0] = bulletlifespan;
         bulletsize = 0.5;

@@ -4,7 +4,7 @@ function scr_Orbit_Shoot(orbital_distance, orbital_target, orbital_soul_angle) {
 
 	    var dir = 0;
 	    repeat(bullet_count) {
-	        with instance_create(x,y,bullet_type) {
+	        with instance_create_depth(x,y,0,bullet_type) {
 	            scr_Bullet_Shoot_Properties();
 	            image_angle = direction;
 	            target = orbital_target;

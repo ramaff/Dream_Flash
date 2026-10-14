@@ -33,7 +33,7 @@ function scr_Soul_Shot_Boss_Hit(_shot = other) {
 					}
 					while(ex_ess > 0) {
 						var pot = min(ex_ess, 10)
-						with instance_create(_xx,_yy,obj_Essence_Blop) {
+						with instance_create_depth(_xx,_yy,0,obj_Essence_Blop) {
 
 							speed = 12 + random(15);
 							direction = random(360);
@@ -255,7 +255,7 @@ function scr_Soul_Shot_Boss_Hit(_shot = other) {
 				}
 			
 				if shot_stats.Shot_Spike_Aura = true {
-					with instance_create(x, y, obj_Spike_Aura) {
+					with instance_create_depth(x, y, 0, obj_Spike_Aura) {
 						damage = _shot.shot_stats.Shot_Power * 1.35 * global.soulstateformboost / 40;
 						direction = _shot.direction - 45 + random(90);
 						image_angle = direction;

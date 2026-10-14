@@ -64,7 +64,7 @@ if !hit_again and other.shot_stats.Shot_Melee = 0 {
         dir = 0;
         var oshotid = shot_id;
         if duplicate = 7 {
-        with instance_create(x,y,obj_Lesser_Soul_Shot) {
+        with instance_create_depth(x,y,0,obj_Lesser_Soul_Shot) {
             //image = 1;
             shot_stats = scr_Duplicate_Shot_Stats();
 			shot_stats.Shot_Hit_Again = 1;

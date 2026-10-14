@@ -1,6 +1,6 @@
 global.floor[global.currentroom,3] = floor(global.floor[global.currentroom,3] / 128) * 128;
 
-instance_create((room_width / 2) + global.soulSpawnXAdd,(room_height / 2) + global.soulSpawnYAdd, obj_Basic_Soul);
+instance_create_depth((room_width / 2) + global.soulSpawnXAdd,(room_height / 2) + global.soulSpawnYAdd,-1, obj_Basic_Soul);
 
 scr_Wall_Form();
 

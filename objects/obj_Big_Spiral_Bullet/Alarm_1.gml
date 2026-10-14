@@ -3,7 +3,7 @@ repeat(4) {
 
     dir += 1;
 
-    with instance_create(x,y,obj_Orbital_Bullet) {
+    with instance_create_depth(x,y,0,obj_Orbital_Bullet) {
             scr_Bullet_Replicate_Properties();
 			target = other.id;
             soulshotblock = 0;

@@ -5,7 +5,7 @@ bossValue = 31;
 scr_Boss_Stats_Setup();
 
 if champ = 0 {
-    with instance_create(x+66,y-99, obj_Manifestation) {
+    with instance_create_depth(x+66,y-99,-1, obj_Manifestation) {
         champ = other.champ + 0.1;
         boost = other.boost;
         bossID = other.bossID;
@@ -15,7 +15,7 @@ if champ = 0 {
     }
 }
 if champ = 1 {
-    with instance_create(x+66,y-99, obj_Wall_Manifestation) {
+    with instance_create_depth(x+66,y-99,0, obj_Wall_Manifestation) {
         champ = other.champ + 0.1;
         boost = other.boost;
         bossID = other.bossID;

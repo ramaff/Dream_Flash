@@ -331,7 +331,7 @@ if (!instance_exists(obj_Soul_Collection_Small) and (!instance_exists(obj_Soul_C
 if currentphase = 1 {
 	image_index = 0;
 } else {
-	instance_create(x,y - 100, obj_True_Soul_Collector) {
+	instance_create_depth(x,y - 100,0, obj_True_Soul_Collector) {
         champ = other.champ;
         boost = other.boost;
         //coreNum = other.coreCount;

@@ -1,6 +1,6 @@
 /// @description Insert description here
 // You can write your code in this editor
-with instance_create(x,y,obj_stationary_damager_v2) {
+with instance_create_depth(x,y,0,obj_stationary_damager_v2) {
     bullet_stats = variable_clone(other.bullet_stats)
 	scr_bullet_shoot_properties_v2(bullet_stats);
     sprite_index = spr_Boss_Ground_Spike_Mask;

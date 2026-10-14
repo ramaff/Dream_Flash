@@ -52,7 +52,7 @@ function scr_State_Particles(){
 			partx = 0;
 		}
 		
-		with instance_create(x + partx - (partrad / 2) + random(partrad), y - 12 - (partrad / 2) + random(partrad),obj_State_Trail) {
+		with instance_create_depth(x + partx - (partrad / 2) + random(partrad), y - 12 - (partrad / 2) + random(partrad), 0,obj_State_Trail) {
 		
 			sprite_index = parts;
 		

@@ -63,8 +63,7 @@ function scr_Soul_Stat_Cloud() {
 	priceString = "";
 	recollectionMirror = 2;
 
-	with instance_create(x,y,obj_In_Game_Recollection_Cloud) {
-		depth = other.depth - 1;
+	with instance_create_depth(x,y,depth-1,obj_In_Game_Recollection_Cloud) {
 		target = other.id
 		xx_offset = 200;
 		yy_offset = 125;

@@ -1,7 +1,7 @@
 /// @description Insert description here
 // You can write your code in this editor
 
-with instance_create(x,y,obj_Lob_Home_Bullet) {
+with instance_create_depth(x,y,0,obj_Lob_Home_Bullet) {
 	scr_Bullet_Replicate_Properties();
 	bulletbounceY = 0;
 	bounce_speed = (1 + random(1));

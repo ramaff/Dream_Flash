@@ -11,7 +11,7 @@ if champ = 2 {
 
 repeat(_count) 
 {
-	with instance_create(x,y,obj_Lingering_Fire_Trail_Follow_Bullet) {
+	with instance_create_depth(x,y,0,obj_Lingering_Fire_Trail_Follow_Bullet) {
 		scr_Bullet_Replicate_Properties();
 		target = tar;
 		sprite_index = other.sprite_index;

@@ -30,7 +30,7 @@ function scr_Soul_Spawn(_cw_stats = current_weapon_stats) {
 	
 	repeat(Shot_Count) {
 
-	    with instance_create(x,y,asset_get_index(_cw_stats.Minion_Type)) {
+	    with instance_create_depth(x,y,0,asset_get_index(_cw_stats.Minion_Type)) {
 			followtarget = noone;
 			
 	        smovementspeed = _cw_stats.Minion_Speed;

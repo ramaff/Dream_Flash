@@ -2,7 +2,7 @@ repeat(4) {
 
     dir += 1;
 
-    with instance_create(x,y,obj_Basic_Laser_Bullet) {
+    with instance_create_depth(x,y,0,obj_Basic_Laser_Bullet) {
             scr_Bullet_Replicate_Properties();
             soulshotblock = 0;
             sprite_index = spr_Magic_Shot;

@@ -6,7 +6,7 @@ scr_Boss_Stats_Setup();
 
 coreCount = 1;
 repeat(4) {
-    with instance_create(x,y, obj_Manifest_Orbital) {
+    with instance_create_depth(x,y,0, obj_Manifest_Orbital) {
         champ = other.champ + 0.1;
 		bossValue = other.bossValue;
         boost = other.boost;
@@ -29,7 +29,7 @@ if boost = 2 {
 
 if champ = 2 {
     repeat(cextra) {
-        with instance_create(x,y, obj_Manifest_Orbital) {
+        with instance_create_depth(x,y,0, obj_Manifest_Orbital) {
             champ = other.champ + 0.1;
             boost = other.boost;
 			bossValue = other.bossValue;

@@ -1,7 +1,7 @@
 dir = bullDir;
     repeat(3) {
         dir += 120;
-        with instance_create(x,y,obj_Spin_Quickest_Phase_Bullet) {
+        with instance_create_depth(x,y,0,obj_Spin_Quickest_Phase_Bullet) {
             scr_Bullet_Replicate_Properties();
 			bulletlife = 90;
 			alarm[0] = bulletlife;

@@ -3,7 +3,7 @@
 
 dir = -30;
 repeat(5) {
-    with instance_create(x,y,obj_Basic_Bullet) {
+    with instance_create_depth(x,y,0,obj_Basic_Bullet) {
         scr_Bullet_Replicate_Properties();
 		bulletlifespan = 300;
 		alarm[0] = bulletlifespan;
@@ -23,7 +23,7 @@ repeat(5) {
 
 dir = random(36);
 repeat(10) {
-    with instance_create(x,y,obj_Basic_Bullet) {
+    with instance_create_depth(x,y,0,obj_Basic_Bullet) {
         scr_Bullet_Replicate_Properties();
 		bulletlifespan = 300;
 		alarm[0] = bulletlifespan;

@@ -9,12 +9,3 @@ if alarm[0] <= 15 {
 }
 
 friction = speed / (life / 3);
-
-/*
-with instance_create(x,y,obj_Particle_Parent_Front_Mult) {
-	sprite_index = other.sprite_index;
-	image_xscale = other.image_xscale;
-	image_yscale = other.image_yscale;
-	image_alpha = 0.1;
-	alarm[0] = 1;
-}

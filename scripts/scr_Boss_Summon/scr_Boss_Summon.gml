@@ -21,7 +21,7 @@ function scr_Boss_Summon() {
 
 	//if morph = 0 {
 		repeat(numBoss) {
-		    with (instance_create(room_width/2,room_height/2,bossform)) {
+		    with (instance_create_depth(room_width/2,room_height/2,0,bossform)) {
 		            difficulty = other.bossDifficulty;
 		            champ = other.bossChamp;
 		            boost = other.bossBoost;   
@@ -46,7 +46,7 @@ function scr_Boss_Summon() {
 					init_path_position = path_position;
 		    } 
 		    if global.boost = 2
-		    with (instance_create(room_width/2,room_height/2,bossform)) {
+		    with (instance_create_depth(room_width/2,room_height/2,0,bossform)) {
 		            difficulty = other.bossDifficulty;
 		            champ = other.bossChamp;
 		            boost = other.bossBoost;   

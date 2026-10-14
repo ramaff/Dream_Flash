@@ -1,6 +1,6 @@
 alarm[2] = 360 / (bulletspeed + (bulletOrbit / 10));
 
-with instance_create(x,y,obj_Accel_Bullet) {
+with instance_create_depth(x,y,0,obj_Accel_Bullet) {
     scr_Bullet_Replicate_Properties();
     sprite_index = spr_Glowy_Yellow_Shot;
     bulletspeed = 2 + other.bulletspeed * 0.2;

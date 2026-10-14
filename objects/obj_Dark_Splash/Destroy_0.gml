@@ -4,7 +4,7 @@
 dir = random(360);
 ddir = 0;
 	repeat(3) {
-        with instance_create(x,y,obj_Direction_Bullet) {
+        with instance_create_depth(x,y,0,obj_Direction_Bullet) {
             scr_Bullet_Replicate_Properties();
             sprite_index = spr_Glowy_Enemy_Shot;
             bulletsize = 0.5;
@@ -19,7 +19,7 @@ ddir = 0;
     }
 	ddir = 60;
 	repeat(3) {
-        with instance_create(x,y,obj_Direction_Bullet) {
+        with instance_create_depth(x,y,0,obj_Direction_Bullet) {
             scr_Bullet_Replicate_Properties();
             sprite_index = spr_Glowy_Enemy_Shot;
             bulletsize = 0.5;

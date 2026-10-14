@@ -118,7 +118,7 @@ function scr_Adjacent_Room_Cloud() {
 				alarm[0] = 20;
 			}
 		} else {
-			with instance_create(obj_Soul_Parent.x,obj_Soul_Parent.y,obj_In_Game_Recollection_Cloud) {
+			with instance_create_depth(obj_Soul_Parent.x,obj_Soul_Parent.y,0,obj_In_Game_Recollection_Cloud) {
 			    recollectionString = _recollection_string;
 			    priceString = _price_string;
 				

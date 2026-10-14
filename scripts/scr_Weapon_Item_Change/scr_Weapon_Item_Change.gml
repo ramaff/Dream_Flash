@@ -5,7 +5,7 @@ function scr_Weapon_Item_Change(_i = 0) {
 	
 	global.Weap[itemform]--;
 
-	with instance_create(1024,576, obj_Item_Parent) {
+	with instance_create_depth(1024,576,-2, obj_Item_Parent) {
 	    weapon = 1;
 		itemID = other.itemID;
 	    itemVal = other.itemform;

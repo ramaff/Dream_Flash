@@ -57,7 +57,7 @@ function scr_H08() {
 	
 	var _dam = 1.5;
 
-	with instance_create(x, y, obj_Spike_Aura_Maintain) {
+	with instance_create_depth(x, y, 0, obj_Spike_Aura_Maintain) {
 		damage = _dam * 2;
 		direction = _dir;
 		image_angle = direction;
@@ -67,7 +67,7 @@ function scr_H08() {
 		alarm[0] = 60;
 		origin = other.id;
 	}
-	with instance_create(x, y, obj_Spike_Aura_Maintain) {
+	with instance_create_depth(x, y, 0, obj_Spike_Aura_Maintain) {
 		damage = _dam;
 		direction = _dir;
 		image_angle = direction - 45;
@@ -77,7 +77,7 @@ function scr_H08() {
 		alarm[0] = 60;
 		origin = other.id;
 	}
-	with instance_create(x, y, obj_Spike_Aura_Maintain) {
+	with instance_create_depth(x, y, 0, obj_Spike_Aura_Maintain) {
 		damage = _dam;
 		direction = _dir;
 		image_angle = direction + 45;

@@ -6,7 +6,7 @@ function scr_Spread_Top_Rain() {
 	    //bulletTopX += -((global.roomSizeX / bullet_count) / 2) + random(global.roomSizeX / bullet_count);
 	    repeat(bullet_count) {
 	        dir = -(bullet_spread / 2) + random(bullet_spread);
-	        with instance_create(bulletTopX,(room_height / 2) - (global.roomSizeY / 2) - 500,bullet_type) {
+	        with instance_create_depth(bulletTopX,(room_height / 2) - (global.roomSizeY / 2) - 500, 0,bullet_type) {
 	            scr_Bullet_Shoot_Properties();
 	            speed = speed * (0.95 + random(0.1));
 				direction = other.bullet_direction + other.dir;

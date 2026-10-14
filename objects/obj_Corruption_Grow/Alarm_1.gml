@@ -1,6 +1,6 @@
 var dir = 0;
 repeat(3) {
-    with instance_create(x,y,obj_Corruption_Bomb) {
+    with instance_create_depth(x,y,0,obj_Corruption_Bomb) {
         scr_Bullet_Replicate_Properties();
 		bulletlifespan = 120;
 		alarm[0] = bulletlifespan;
@@ -23,7 +23,7 @@ repeat(3) {
 }
 	dir = 0;
 	repeat(30) {
-        with instance_create(x,y,obj_Basic_Bullet) {
+        with instance_create_depth(x,y,0,obj_Basic_Bullet) {
             scr_Bullet_Replicate_Properties();
 			bullet_lifespan = 240;
 			bulletsize = 0.5;
