@@ -13,7 +13,7 @@ if bossActiveAttackDelay[1] <= 0 and bossActiveAttackCooldown[1] <= 0 and bossAc
     if bossActiveAttack[1] = 1 {
 		image_index = 0;
 		
-		jumpDirection = "Up";
+		jumpDirection = JUMP_SIDE.UP;
 		jumpHeight = 0;
 		
 		bossActiveAttackDelay[1] = 0;
@@ -97,7 +97,7 @@ if state = states.jumping {
 	}
 	//} else {
 }
-if jumpDirection = "Down" and jumpHeight <= 10 {
+if jumpDirection = JUMP_SIDE.DOWN and jumpHeight <= 10 {
 		state = states.normal;
 		//image_index = 0;
 		//image_speed = 0;

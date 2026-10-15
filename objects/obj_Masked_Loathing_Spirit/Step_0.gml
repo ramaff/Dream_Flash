@@ -241,10 +241,6 @@ if bossActiveAttackDelay[1] <= 0 and bossPatternCooldown <= 0 and bossPatternCou
 				if bossPatternCount mod 5 = 0 {
 					scr_Boss_Stretch("Vertical", 0.1);	
 				}
-			
-				//scr_Boss_Beam_Attack_New("Active",35,scr_Boss_Beam_Frame(beamstart));
-            } else {
-                //scr_Boss_Beam_Attack_New("Dormant",35,scr_Boss_Beam_Frame(beamstart));
             }
         }
     }
@@ -331,13 +327,6 @@ if bossActiveAttackDelay[1] <= 0 and bossPatternCooldown <= 0 and bossPatternCou
 			var beamstart = (bossPatternCountMax - 30) - bossPatternCount;
         
 			scr_Easy_Boss_Beam_Shoot(bossPatternCountMax - 30, 36);
-		
-            if bossPatternCount < (bossPatternCountMax - 60) and bossPatternCount > 30 {
-               // scr_Boss_Beam_Attack_New("Active",35,scr_Boss_Beam_Frame(beamstart));
-             
-            } else {
-                //scr_Boss_Beam_Attack_New("Dormant",35,scr_Boss_Beam_Frame(beamstart));  
-            }
 			
 			if bossPatternCount mod 36 = 0 and bossPatternCount > 180 {
 				bullet_part = 2;
@@ -347,7 +336,6 @@ if bossActiveAttackDelay[1] <= 0 and bossPatternCooldown <= 0 and bossPatternCou
 				bullet_part_color1 = make_color_rgb(255,0,0);
 				bullet_part_color2 = make_color_rgb(255,0,0);
 				bullet_part_frequency = 4;
-	
 				bullet_type = obj_Angry_Miner_Bullet;
 	            bullet_sprite = spr_Glowy_Enemy_Shot;
 				bullet_size = 1;
@@ -367,7 +355,7 @@ if bossActiveAttackDelay[1] <= 0 and bossPatternCooldown <= 0 and bossPatternCou
         bullet_count = 3;
         bullet_spread = 360 / bullet_count;
         bullet_lifespan = 240;
-        scr_Orbit_Shoot(50,obj_Soul_Parent);
+        scr_Orbit_Shoot(50,obj_Soul_Parent,0);
     }
 	bossPatternCount -= 1;
     bossPatternCooldown += bossPatternCooldownMax;

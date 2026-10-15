@@ -49,14 +49,14 @@ function scr_D05_Status_Build_Up() {
 	if _near_bulls > 0 {
 		var _curr_flight_response = scr_Get_Status_Time("flight_response_omen");
 		var _status_effect = {
-			"duration": _curr_flight_response + 5 + _near_bulls,
-			"tick_script": scr_Soul_Flight_Response_Omen,
-			"tick_frequency": 1
+			duration: _curr_flight_response + 5 + _near_bulls,
+			tick_script: scr_Soul_Flight_Response_Omen,
+			tick_frequency: 1
 		}
 		var _status_effect_2 = {
-			"duration": _curr_flight_response + 5 + _near_bulls,
-			"max_duration": 600,
-			"bar_sprite": "spr_Flight_Response_Omen_Status_Effect_Bar"
+			duration: _curr_flight_response + 5 + _near_bulls,
+			max_duration: 600,
+			bar_sprite: spr_Flight_Response_Omen_Status_Effect_Bar
 		}
 		variable_struct_set(soul_step_status_effects, "flight_response_omen", [_status_effect])
 		variable_struct_set(soul_draw_status_effects, "flight_response_omen", [_status_effect_2])

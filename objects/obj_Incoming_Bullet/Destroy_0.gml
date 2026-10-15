@@ -14,5 +14,3 @@ with instance_create_depth(obj_Soul_Parent.perX,obj_Soul_Parent.perY - 1500,0,ob
         direction = scr_Soul_Point();
         speed = bulletspeed;
     }   
-	
-	scr_Boss_Bullet_Cleanup();

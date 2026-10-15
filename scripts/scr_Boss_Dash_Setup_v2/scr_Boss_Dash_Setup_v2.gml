@@ -5,6 +5,4 @@ function scr_Boss_Dash_Setup_v2(dir = scr_Soul_Point(), startSpeed = 0, maxSpeed
 
 	jump_direction = "None";
 	boss_height = 0;
-
-
 }

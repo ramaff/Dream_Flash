@@ -3,10 +3,6 @@
 function scr_D03(_current_weapon_stats){
 
 	if global.D[3] > 0 {
-		
-		//Weapon_Split_Visible = 1;
-        //Weapon_Split_Hit_Again = 1;
-		
 		_current_weapon_stats.Shot_Lobbing = true
 		_current_weapon_stats.Shot_Speed = _current_weapon_stats.Shot_Speed * 1.4;
 		_current_weapon_stats.Shot_Life_Span = _current_weapon_stats.Shot_Life_Span * 0.7;
@@ -28,10 +24,7 @@ function scr_D03(_current_weapon_stats){
 			_current_weapon_stats.Shot_Extra[_extra_index].Shot_Power = _current_weapon_stats.Shot_Power * 0.4;
 			_current_weapon_stats.Shot_Extra[_extra_index].Shot_Size = _current_weapon_stats.Shot_Size * 0.6;
 			_current_weapon_stats.Shot_Extra[_extra_index].Shot_Speed = _current_weapon_stats.Shot_Speed * (0.6 + random(0.6));
-		
 		}
-		
-		
-		}
+	}
 
 }

@@ -1,6 +1,5 @@
 function scr_D12_Activate() {
 	// Location Soul Item Step Before Event
-
 	if global.D[12] > 0 and sWindGustTime < 8 {
 	    sWindGustTime = 8;
 		
@@ -13,7 +12,4 @@ function scr_D12_Activate() {
 		scr_Disk_Effect(20, 0.9, color);
 		
 	}
-
-
-
 }

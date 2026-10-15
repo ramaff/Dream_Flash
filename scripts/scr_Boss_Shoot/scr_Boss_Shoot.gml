@@ -1,5 +1,5 @@
 function scr_Boss_Shoot(absolute_pos = false) {
-	scr_Spirit_Boss_BullFX_Pre();
+	scr_XB05(bullet_count);
 	
 	var dir = -(bullet_spread * (bullet_count - 1) / 2);
 	var xx = x + boss_xoffset;
@@ -21,13 +21,9 @@ function scr_Boss_Shoot(absolute_pos = false) {
 			if other.bullet_charged {
 				bulletgrowinto = other.bullet_type;
 			}
-	        //direction = other.bullet_direction + (other.dir) * ((40 + random(global.soulparanoia)) / 40);
 			direction = other.bullet_direction + dir;
-			scr_Spiritual_Stats_Boss_Bullet_Effects();
 	    }
 	    dir += bullet_spread;
 	}
-
-
 
 }

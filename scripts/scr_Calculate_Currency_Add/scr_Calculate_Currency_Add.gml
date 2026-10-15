@@ -44,9 +44,6 @@ function scr_Calculate_Currency_Add(_return_recalls = false) {
 	    with instance_create_depth(x,y,0,recall_obj) {
 	        direction = random(360);
 	        speed = 10 + random(8);
-	        //friction = 0.1
-	        //alarm[0] = 45 + random(10);
-			
 			image_xscale = 0.5;
 			image_yscale = 0.5;
 	    }

@@ -5,8 +5,6 @@
 // Set to 0 in scr_room_change_variables
 
 function scr_C01(){
-
 	currentenergyregenfactor += currentenergyregenfactor * (global.C01Boost / 1000);
 	global.C01Boost = min(global.C01Boost + 1, 600 * global.C[1])
-
 }

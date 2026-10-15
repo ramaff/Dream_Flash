@@ -22,7 +22,8 @@ function scr_Game_Zoom(zoom) {
 	}
 	
 	window_set_size(camcon.view_width * camcon.window_scale, camcon.view_height * camcon.window_scale);
-	if global.gameGraphics = "High" {
+	
+    if global.gameGraphics = "High" {
 		surface_resize(application_surface, camcon.view_width * camcon.window_scale, camcon.view_height * camcon.window_scale);
 		display_set_gui_size(camcon.view_width * camcon.window_scale, camcon.view_height * camcon.window_scale);
 		

@@ -1,22 +1,24 @@
-function scr_Jump_Movement(argument0) {
-	jumpSpeed = argument0;
-	
+enum JUMP_SIDE {
+    NONE,
+    UP,
+    DOWN
+}
+
+function scr_Jump_Movement(jumpSpeed) {
 	if bossPatternCount <= ((bossPatternCountMax / 2) + 0.5) {
-		jumpDirection = "Down";	
+		jumpDirection = JUMP_SIDE.DOWN;	
 	} else {
-		jumpDirection = "Up";	
+		jumpDirection = JUMP_SIDE.UP;	
 	}
 
 	var aspeed = jumpSpeed * 2 * ((bossPatternCount - ((bossPatternCountMax / 2) + 0.5)) / ((bossPatternCountMax / 2) + 0.5));
 	var bspeed = jumpSpeed * 2 * ((((bossPatternCountMax / 2) + 0.5) - bossPatternCount) / ((bossPatternCountMax / 2) + 0.5));
 
-	if jumpDirection = "Up" {
+	if jumpDirection = JUMP_SIDE.UP {
 		jumpHeight += aspeed;
 		y -= aspeed;
-	} else if jumpDirection = "Down" {
+	} else if jumpDirection = JUMP_SIDE.DOWN {
 		jumpHeight -= bspeed;
 		y += bspeed;
 	}
-
-
 }

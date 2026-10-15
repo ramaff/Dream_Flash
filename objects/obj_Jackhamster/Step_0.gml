@@ -76,7 +76,7 @@ if bossActiveAttackDelay[1] <= 0 and bossActiveAttackCooldown[1] <= 0 and bossAc
 	state = states.normal;
     
     if bossActiveAttack[1] = 1  {
-		jumpDirection = "Up";
+		jumpDirection = JUMP_SIDE.UP;
 		jumpHeight = 0;
 		
 		//bossActiveAttackDelay[champ] = 10;
@@ -102,7 +102,7 @@ if bossActiveAttackDelay[1] <= 0 and bossActiveAttackCooldown[1] <= 0 and bossAc
     if bossActiveAttack[1] = 2  {
 		bossHopCount = 5;
 		
-		jumpDirection = "Up";
+		jumpDirection = JUMP_SIDE.UP;
 		jumpHeight = 0;
 		
 		//bossActiveAttackDelay[champ] = 10;
@@ -130,7 +130,7 @@ if bossActiveAttackDelay[1] <= 0 and bossActiveAttackCooldown[1] <= 0 and bossAc
     if bossActiveAttack[1] = 3  {
 		bossHopCount = 5;
 		
-		jumpDirection = "Up";
+		jumpDirection = JUMP_SIDE.UP;
 		jumpHeight = 0;
 		
 		//bossActiveAttackDelay[champ] = 10;
@@ -156,7 +156,7 @@ if bossActiveAttackDelay[1] <= 0 and bossActiveAttackCooldown[1] <= 0 and bossAc
     }
     if bossActiveAttack[1] = 4 {
 		bossActiveAttackDelay[1] = 15;
-		jumpDirection = "Up";
+		jumpDirection = JUMP_SIDE.UP;
 		jumpHeight = 0;
 		
         scr_Boss_Dash_Setup();
@@ -180,7 +180,7 @@ if bossActiveAttackDelay[1] <= 0 and bossActiveAttackCooldown[1] <= 0 and bossAc
     if bossActiveAttack[1] = 5  {
 		bossHopCount = 10;
 		
-		jumpDirection = "Up";
+		jumpDirection = JUMP_SIDE.UP;
 		jumpHeight = 0;
 		
 		//bossActiveAttackDelay[champ] = 10;
@@ -322,7 +322,7 @@ if bossActiveAttackDelay[1] <= 0 and bossPatternCooldown <= 0 and bossPatternCou
 				bossHopCount--;
 				bossPatternCountMax = 15;
 				bossPatternCount = bossPatternCountMax;
-				jumpDirection = "Up";
+				jumpDirection = JUMP_SIDE.UP;
 				jumpHeight = 0;
 			
 				scr_Boss_Dash_Setup();
@@ -386,7 +386,7 @@ if bossActiveAttackDelay[1] <= 0 and bossPatternCooldown <= 0 and bossPatternCou
 				bossHopCount--;
 				bossPatternCountMax = 15;
 				bossPatternCount = bossPatternCountMax;
-				jumpDirection = "Up";
+				jumpDirection = JUMP_SIDE.UP;
 				jumpHeight = 0;
 			
 				scr_Boss_Dash_Setup();
@@ -494,7 +494,7 @@ if bossActiveAttackDelay[1] <= 0 and bossPatternCooldown <= 0 and bossPatternCou
 				bossHopCount--;
 				bossPatternCountMax = 15;
 				bossPatternCount = bossPatternCountMax;
-				jumpDirection = "Up";
+				jumpDirection = JUMP_SIDE.UP;
 				jumpHeight = 0;
 			
 				scr_Boss_Dash_Setup();
@@ -546,7 +546,7 @@ if state = states.jumping {
 	if jumpHeight > 10 || bossPatternCooldown > 0 {
 		//sprite_index = spr_Jello_Hop;
 	} else if jumpHeight <= 10 and bossActiveAttackDuration[1] < 10 {
-		if jumpDirection = "Down" {
+		if jumpDirection = JUMP_SIDE.DOWN {
 			state = states.normal;
 			//ghit = 1;
 		}
@@ -559,7 +559,7 @@ if state = states.jumping {
 if bossActiveAttackDuration[1] <= 0 { 
 	
 	state = states.normal;
-	jumpDirection = "None"
+	jumpDirection = JUMP_SIDE.NONE
 	jumpHeight = 0;
 	
     bossActiveAttack[1] = 0;

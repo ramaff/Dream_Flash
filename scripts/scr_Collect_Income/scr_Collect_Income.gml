@@ -2,29 +2,4 @@ function scr_Collect_Income() {
 	with (obj_Soul_Recall) {
 	    instance_destroy();
 	}
-	/*
-	with (obj_Soul_Spiritual) {
-	    if spirit = "Hope" {
-	        global.soulhope++;
-	    }
-	    if spirit = "Bliss" {
-	        global.soulbliss++;
-	    }
-	    if spirit = "Vanity" {
-	        global.soulassurance++;
-	    }
-	    if spirit = "Loathing" {
-	        global.soulloathing++;
-	    }
-	    if spirit = "Paranoia" {
-	        global.soulparanoia++;
-	    }
-	    if spirit = "Despair" {
-	        global.souldespair++;
-	    }
-	    instance_destroy();
-	}
-	*/
-
-
 }

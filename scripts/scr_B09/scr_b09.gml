@@ -6,7 +6,6 @@
 function scr_B09(damage){
 	if global.B[9] > 0 {
 		var threshold = 40;
-		
 		var bossid = other.id;
 	
 		while(damage > threshold) {

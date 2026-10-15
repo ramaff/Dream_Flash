@@ -251,7 +251,7 @@ if bossActiveAttackDelay[1] <= 0 and bossPatternCooldown <= 0 and bossPatternCou
         bullet_direction = 90 + (-5 + random(10)) / bossaccuracy;
         bullet_count = 1;
         
-    	scr_Spirit_Boss_BullFX_Pre();
+    	scr_XB05(bullet_count);
         dir = -(bullet_spread * (bullet_count - 1) / 2);
         repeat(bullet_count) {
             dir = -(bullet_spread / 2) + random(bullet_spread);
@@ -259,7 +259,7 @@ if bossActiveAttackDelay[1] <= 0 and bossPatternCooldown <= 0 and bossPatternCou
                 scr_Bullet_Shoot_Properties();
                 //direction = other.bullet_direction + (other.dir) * ((40 + random(global.soulparanoia)) / 40);
                 direction = other.bullet_direction + other.dir;
-                scr_Spiritual_Stats_Boss_Bullet_Effects();
+                
             }
         }
         

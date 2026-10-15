@@ -2,10 +2,6 @@
 // https://help.yoyogames.com/hc/en-us/articles/360005277377 for more information
 function scr_A05(){
 
-	/*repeat(8) {
-		scr_Particle_Burst(obj_State_Trail_Front, spr_Soul_Big_Bit, c_red, c_red, 1, 3 + random(3), 60 + random(60), 0, 100, 0.2 + random(0.3), 20 + random(20))	
-	} */
-	
 	with instance_create_depth(x, y, depth, obj_float_up_icon) {
 		soul_source = other.id;
 		sprite_index = spr_Fight_Response_Icon;
@@ -52,14 +48,14 @@ function scr_A05_Status_Build_Up() {
 	if _near_bulls > 0 {
 		var _curr_fight_response = scr_Get_Status_Time("fight_response_omen");
 		var _status_effect = {
-			"duration": _curr_fight_response + 5 + _near_bulls,
-			"tick_script": scr_Soul_Fight_Response_Omen,
-			"tick_frequency": 1
+			duration: _curr_fight_response + 5 + _near_bulls,
+			tick_script: scr_Soul_Fight_Response_Omen,
+			tick_frequency: 1
 		}
 		var _status_effect_2 = {
-			"duration": _curr_fight_response + 5 + _near_bulls,
-			"max_duration": 900,
-			"bar_sprite": "spr_Fight_Response_Omen_Status_Effect_Bar"
+			duration: _curr_fight_response + 5 + _near_bulls,
+			max_duration: 900,
+			bar_sprite: spr_Fight_Response_Omen_Status_Effect_Bar
 		}
 		variable_struct_set(soul_step_status_effects, "fight_response_omen", [_status_effect])
 		variable_struct_set(soul_draw_status_effects, "fight_response_omen", [_status_effect_2])

@@ -7,16 +7,16 @@ function scr_Soul_Poison_Omen(){
 			if _curr_poison > 360 {
 				soul_step_status_effects.poison_omen[0].duration -= 360;
 				var _status_effect = {
-					"duration": 1800,
-					"max_duration": 1800,
-					"tick_script": scr_Soul_Poison_Tick,
-					"tick_frequency": 180
+					duration: 1800,
+					max_duration: 1800,
+					tick_script: scr_Soul_Poison_Tick,
+					tick_frequency: 180
 				}
 				
 				var _status_effect_2 = {
-					"duration": 1800,
-					"max_duration": 1800,
-					"bar_sprite": "spr_Poison_Status_Effect_Bar"
+					duration: 1800,
+					max_duration: 1800,
+					bar_sprite: spr_Poison_Status_Effect_Bar
 				}
 				scr_Soul_Status_Effect_Add(soul_step_status_effects, "poison", _status_effect)
 				scr_Soul_Status_Effect_Add(soul_draw_status_effects, "poison", _status_effect_2)

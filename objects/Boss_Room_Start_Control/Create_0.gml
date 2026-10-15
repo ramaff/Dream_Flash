@@ -23,7 +23,7 @@ boss = global.floor[global.currentroom,21];
 champ = global.floor[global.currentroom,22];
 boost = global.floor[global.currentroom,23];
 
-scr_Boss_Summon(boss,champ,boost,difficulty,0);
+scr_Boss_Summon(boss,champ,boost,difficulty);
 
 properSize = global.floor[global.currentroom,3];
 properBG = global.floor[global.currentroom,4];

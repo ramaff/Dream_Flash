@@ -2,7 +2,6 @@
 // https://help.yoyogames.com/hc/en-us/articles/360005277377 for more information
 
 // In soul damage calc? 1/4 of damage taken is permanently degraded from heart
-
 function scr_B03(damage){
 	var i = global.currentheart;
 	with (Soul_Hearts_Control) {

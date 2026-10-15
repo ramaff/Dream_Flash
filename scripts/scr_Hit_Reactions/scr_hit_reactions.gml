@@ -23,15 +23,15 @@ function scr_Hit_Reactions(_damage_amount, _defense_amount) {
 			}
 			
 			var _status_effect = {
-				"duration": 360,
-				"tick_script": scr_Bounce_Back_Tick,
-				"tick_frequency": 60
+				duration: 360,
+				tick_script: scr_Bounce_Back_Tick,
+				tick_frequency: 60
 			}
 			scr_Soul_Status_Effect_Add(soul_step_status_effects, "bounce_back", _status_effect)	
 			var _status_effect_2 = {
-				"duration": 360,
-				"max_duration": 360,
-				"bar_sprite": "spr_Bounce_Back_Status_Effect_Bar"
+				duration: 360,
+				max_duration: 360,
+				bar_sprite: spr_Bounce_Back_Status_Effect_Bar
 			}
 			scr_Soul_Status_Effect_Add(soul_draw_status_effects, "bounce_back", _status_effect_2)
 		}

@@ -16,6 +16,4 @@ function scr_Boss_Wind(suckSpeed, suckAngle) {
 	        y += lengthdir_y(suckSpeed, suckAngle);
 	    }
 
-
-
 }

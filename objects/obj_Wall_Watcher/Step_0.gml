@@ -436,44 +436,12 @@ if bossActiveAttackDelay[1] <= 0 and bossPatternCooldown <= 0 and bossPatternCou
 		var beamstart = 135 - bossPatternCount;
 		
 		scr_Easy_Boss_Beam_Shoot(bossPatternCountMax, 18);
-    
-        /*if bossPatternCount < 105 {
-            scr_Boss_Beam_Attack_New("Active",18,scr_Boss_Beam_Frame(beamstart));  
-        } else {
-            scr_Boss_Beam_Attack_New("Dormant",18,scr_Boss_Beam_Frame(beamstart));    
-        } */
     }  
 	
 	if bossActiveAttack[1] = 7 {
 		if bossPatternCount mod 10 = 0 {
 			scr_Boss_Stretch("Horizontal",0.1);	
 		}
-		
-		/*
-        scr_Default_Attack_Settings();
-        bullet_type = obj_Laser_Beam_Charge;
-        bullet_sprite = spr_Laser_Beam_Charge;
-        bullet_speed = path_speed * 1;
-        bullet_power = bosspower;
-        bullet_direction = image_angle - 90 + (-0.1 + random(0.2)) / bossaccuracy;
-        bullet_lifespan = 7;
-        bullet_size = 1;
-        bullet_count = 1;
-        bullet_spread = 0;
-        boss_radius = 0;
-        bullet_sprite = spr_Solid_Red_Beam;
-        beam_sprite = spr_Solid_Red_Beam;
-        beamSize = 0.6;
-        bossbeamattackactive = 1;
-    
-        var beamstart = 225 - bossPatternCount;
-    
-        if bossPatternCount < 225 {
-            scr_Boss_Beam_Attack_New("Active",18,scr_Boss_Beam_Frame(beamstart));
-        } else {
-            scr_Boss_Beam_Attack_New("Dormant",18,scr_Boss_Beam_Frame(beamstart));    
-        }
-		*/
 		
 		bullet_part = 0;
 		

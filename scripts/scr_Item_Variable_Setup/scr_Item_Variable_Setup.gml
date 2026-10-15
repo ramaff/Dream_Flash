@@ -1,8 +1,5 @@
 function scr_Item_Variable_Setup() {
-	
 	scr_Item_Pools();
-	
-	/// state prog variables actually set up in soul stat control, the ones below are doing literally nothing.
 	
 	global.items = []
 	
@@ -23,10 +20,6 @@ function scr_Item_Variable_Setup() {
 	}
 	
 	global.WeaponJugglingDelay = {};
-	/*if instance_exists(obj_Soul_Parent) {
-		var _soul = obj_Soul_Parent.id;
-		global.WeaponJugglingDelay[_soul] = [0, 0, 0, 0, 0, 0, 0, 0, 0, 0];
-	} */
 	
 	global.gembeam_hits = ds_list_create();
 	
@@ -76,6 +69,4 @@ function scr_Item_Variable_Setup() {
 	for(i = 0; i < 9; i++) {
 		global.L01essence[i] = 50 * global.L[1];
 	}
-
-
 }

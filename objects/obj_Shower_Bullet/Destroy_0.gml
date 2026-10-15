@@ -17,5 +17,3 @@ with instance_create_depth(other.x,other.y,0,obj_Comet_Bullet) {
         direction = 270;
 		speed = bulletspeed;
     }   
-	
-	scr_Boss_Bullet_Cleanup();

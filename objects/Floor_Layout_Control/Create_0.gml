@@ -86,18 +86,18 @@ if global.loadrun = 0 || global.doneLoading = 1 {
 	    global.floor[i,9] = ""; // Boss Boost or Third Item
 	    for(j = 10; j <= 39; j++) {
 	        global.floor[i,j] = "";
-	    }
-		global.floor[i,21] = obj_Wall_Watcher;
+	    } 
+		global.floor[i,21] = BOSS_TYPE.WALL_WATCHER;
 		global.floor[i,22] = 0;
 		global.floor[i,23] = 0;
 		global.floor[i,24] = 0;
-		global.floor[i,25] = obj_Wall_Watcher;
-		global.floor[i,26] = obj_Wall_Watcher;
+		global.floor[i,25] = BOSS_TYPE.WALL_WATCHER;
+		global.floor[i,26] = BOSS_TYPE.WALL_WATCHER;
 		global.floor[i,27] = 0;
-		global.floor[i,28] = obj_Wall_Watcher;
+		global.floor[i,28] = BOSS_TYPE.WALL_WATCHER;
 		global.floor[i,29] = 0;
 		global.floor[i,30] = 0;
-		global.floor[i,31] = obj_Wall_Watcher;
+		global.floor[i,31] = BOSS_TYPE.WALL_WATCHER;
 		global.floor[i,32] = 0;
 		global.floor[i,33] = 0;
         global.floor[i,FLOOR_VALUES.VISITED] = false;

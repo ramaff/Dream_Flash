@@ -9,7 +9,4 @@ function scr_Bullet_After_Image() {
 		image_speed = 0;
 	    alarm[0] = 33;
 	}
-
-
-
 }

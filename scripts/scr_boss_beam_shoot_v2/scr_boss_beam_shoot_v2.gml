@@ -55,22 +55,16 @@ function scr_shoot_beam(_attack_stats, _xx, _yy, _lightning = false) {
 						if _zag = -0.5 {
 							_zag = 0.5;
 							image_yscale = -bullet_stats.bullet_size;
-							//image_xscale = -image_xscale;
-							
-							//seg_angle -= 90
+                            
 						} else if _zag = 0.5 {
 							_zag = -0.5;
 							image_yscale = bullet_stats.bullet_size;
-							//image_yscale = -image_yscale;
 						}
-						//image_yscale = -image_yscale;
+                        
 						seg_angle_displacement = 180 * _zag;
 						with seg_tail {
-							//seg_tail.seg_distance = seg_tail.seg_distance / 1.5;
 							seg_distance = seg_distance * 2
-							//scr_boss_beam_position_update();
 						}
-						//seg_angle += seg_angle_displacement
 						bullet_stats.bullet_sprite = "spr_Lightning_Beam_Turn";
 						bullet_stats.bullet_sprite_ontop = spr_Lightning_Beam_Turn_Ontop
 						bullet_stats.bullet_sprite_ontoptop = spr_Lightning_Beam_Turn_Ontoptop
@@ -82,8 +76,6 @@ function scr_shoot_beam(_attack_stats, _xx, _yy, _lightning = false) {
 		
 				_seg_tail = id;
 			}
-			//_xx += lengthdir_x(_seg_size, _attack_stats.bullet_direction + _dir)
-			//yy += lengthdir_y(_seg_size, _attack_stats.bullet_direction + _dir)
 		}
 		_dir += _attack_stats.bullet_spread;
 	}
@@ -91,14 +83,14 @@ function scr_shoot_beam(_attack_stats, _xx, _yy, _lightning = false) {
 }
 
 function scr_boss_beam_shoot_v2(_attack_stats = attack_stats, _absolute_pos = false, _lightning = false) {
-	scr_spirit_boss_bull_fx_pre_v2(_attack_stats);
+	scr_XB05_v2(_attack_stats);
 	
 	var _xx = x + _attack_stats.boss_xoffset;
 	var _yy = y + _attack_stats.boss_yoffset;
 		
 	if _absolute_pos {
-		_xx = _attack_stats.boss_xoffset;	
-		_yy = _attack_stats.boss_yoffset;	
+		_xx = _attack_stats.boss_xoffset;
+		_yy = _attack_stats.boss_yoffset;
 	}
 	
 	scr_shoot_beam(_attack_stats, _xx, _yy, _lightning)

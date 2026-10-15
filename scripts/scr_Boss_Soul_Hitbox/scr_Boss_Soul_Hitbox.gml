@@ -20,5 +20,4 @@ function scr_Boss_Soul_Hitbox(_hitbox_sprite = sprite_index, _hitbox_index = ima
 			alarm[0] = 1;
 		}
 	}
-	
 }

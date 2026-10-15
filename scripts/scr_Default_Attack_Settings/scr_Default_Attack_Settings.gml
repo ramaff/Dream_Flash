@@ -1,6 +1,4 @@
 function scr_Default_Attack_Settings() {
-	
-		// XB05
 		boss_bullet_count_modded = false;
 		
 		bullet_type = obj_Basic_Red_Bullet;
@@ -96,6 +94,4 @@ function scr_Default_Attack_Settings() {
 		minion_yy = 0;
 		
 		bullet_target = id;
-
-
 }

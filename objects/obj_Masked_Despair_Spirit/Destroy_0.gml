@@ -4,7 +4,7 @@ global.recollectionBoss[bossValue]++;
 
 if currentphase >= finalphase
 if bosshealth <= 0 {
-scr_Soul_Spiritual_Add("Despair");
+scr_Soul_Spiritual_Add(SPIRIT_TYPE.DESPAIR);
 }
 
 global.souldespair += 3;

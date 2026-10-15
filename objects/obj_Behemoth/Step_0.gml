@@ -48,7 +48,7 @@ if bossActiveAttackDelay[1] <= 0 and bossActiveAttackCooldown[1] <= 0 and bossAc
     }
     if bossActiveAttack[1] = 3 {
 		bossActiveAttackDelay[1] = 0;
-		jumpDirection = "Up";
+		jumpDirection = JUMP_SIDE.UP;
 		jumpHeight = 0;
 		
         scr_Boss_Dash_Setup();
@@ -324,8 +324,6 @@ if bossActiveAttackDelay[1] <= 0 and bossPatternCooldown <= 0 and bossPatternCou
 				scr_Boss_Stretch("Vertical", 0.05);	
 			}
 			
-            //scr_Boss_Beam_Attack_New("Active",35,scr_Boss_Beam_Frame(bFrame));
-            
             souldir = scr_Soul_Point();
             var adif = angle_difference(bossPatternDirection, souldir);
 			if champ != 2 {
@@ -345,10 +343,7 @@ if bossActiveAttackDelay[1] <= 0 and bossPatternCooldown <= 0 and bossPatternCou
 	            }
 			}
          
-        } else {
-            //scr_Boss_Beam_Attack_New("Dormant",35,scr_Boss_Beam_Frame(bFrame));
         }
-        
         if ((bossPatternCount mod 25 = 0) and (bossPatternCount > 0) and (bossPatternCount < bossPatternCountMax - 10)) {
             var length = 0
             while(!collision_point(x + lengthdir_x(length,bullet_direction),y + lengthdir_y(length,bullet_direction),obj_The_Border,true,true)) {
@@ -465,8 +460,6 @@ if bossActiveAttackDelay[1] <= 0 and bossPatternCooldown <= 0 and bossPatternCou
 				scr_Boss_Stretch("Vertical", 0.05);	
 			}
 			
-            //scr_Boss_Beam_Attack_New("Active",35,scr_Boss_Beam_Frame(bFrame));
-            
             souldir = scr_Soul_Point();
             var adif = angle_difference(bossPatternDirection, souldir);
 	        if adif < 0 {
@@ -476,10 +469,7 @@ if bossActiveAttackDelay[1] <= 0 and bossPatternCooldown <= 0 and bossPatternCou
 	            bossPatternDirection -= 0.25;
 	        }
          
-        } else {
-            //scr_Boss_Beam_Attack_New("Dormant",35,scr_Boss_Beam_Frame(bFrame));
         }
-        
 		
         if ((bossPatternCount mod 50 = 0) and (bossPatternCount > 0) and (bossPatternCount < bossPatternCountMax - 10)) {
             var length = 0

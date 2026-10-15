@@ -10,7 +10,6 @@ function scr_Spawn_Airbag(){
 		Shot_Sprite: "spr_Airbag_Shot",
 		Shot_Type: "obj_Soul_Physics_Shot",
 		Shot_Life_Span: 360,
-		//Shot_Angle: 0,
 		Shot_Pierce: 1000,
 		Shot_Point_Angle: false,
 		Spread: 0,
@@ -44,14 +43,14 @@ function scr_B03_Status_Build_Up() {
 		if _near_bulls > 0 {
 			var _curr_air_bag = scr_Get_Status_Time("air_bag_omen");
 			var _status_effect = {
-				"duration": _curr_air_bag + 5 + _near_bulls,
-				"tick_script": scr_Soul_Air_Bag_Omen,
-				"tick_frequency": 1
+				duration: _curr_air_bag + 5 + _near_bulls,
+				tick_script: scr_Soul_Air_Bag_Omen,
+				tick_frequency: 1
 			}
 			var _status_effect_2 = {
-				"duration": _curr_air_bag + 5 + _near_bulls,
-				"max_duration": 900,
-				"bar_sprite": "spr_Air_Bag_Omen_Status_Effect_Bar"
+				duration: _curr_air_bag + 5 + _near_bulls,
+				max_duration: 900,
+				bar_sprite: spr_Air_Bag_Omen_Status_Effect_Bar
 			}
 			variable_struct_set(soul_step_status_effects, "air_bag_omen", [_status_effect])
 			variable_struct_set(soul_draw_status_effects, "air_bag_omen", [_status_effect_2])

@@ -1,7 +1,4 @@
-function scr_Boss_Dash_Movement(argument0, argument1) {
-	dSpeedUpTime = argument0;
-	dSpeedDownTime = argument1;
-
+function scr_Boss_Dash_Movement(dSpeedUpTime, dSpeedDownTime) {
 	if bossPatternCount > (bossPatternCountMax - dSpeedUpTime) {
 		bossDashSpeed += bossMaxDashSpeed / dSpeedUpTime;	
 		if bossDashSpeed > bossMaxDashSpeed {
@@ -14,6 +11,4 @@ function scr_Boss_Dash_Movement(argument0, argument1) {
 			bossDashSpeed = 0;	
 		}
 	}
-
-
 }

@@ -19,13 +19,10 @@ function scr_Bullet_Shoot_Properties() {
 	bulletID = other.bullet_id;
 	soulshotblock = other.soul_shot_block;
 				
-	//if soulshotblock > 0 {
-		projectile_hit_id = other.bullet_hit_ID;
-		projectile_hits = {}// ds_list_create();
-				
-		//ds_list_copy(projectile_hits, other.bullet_hit_list); 
-		projectile_hits = other.bullet_hit_list
-	//}
+    projectile_hit_id = other.bullet_hit_ID;
+    projectile_hits = {}
+    projectile_hits = other.bullet_hit_list
+    
 	bossPart = other.boss_Part;
 	        
 	bulletsprite = other.bullet_sprite;
@@ -89,21 +86,14 @@ function scr_Bullet_Shoot_Properties() {
 	
 	with instance_create_depth(x,y,0,obj_LightS) {
 		target = other.id;
-		//lightsize = other.shot_stats.Shot_Light_Size;
-				
-		//sprite_index = spr_Bullet_Glow;
 		lightsize = other.bulletsize;
 	}
-				
-	if bpart != 0 {
-		scr_Bullet_Particle_Setup();
-	}
-				
+
 	bulletdepth = other.bullet_depth;
 	depth = bulletdepth;
 				
 	if bulletblend != 0 {
-		scr_Bullet_Blend(bulletblend);	
+		image_blend = bulletblend
 	}
 				
 	sizeF = 1;
@@ -111,7 +101,4 @@ function scr_Bullet_Shoot_Properties() {
 	if global.XA[2] > 0 {
 		scr_XA02_Bullet();
 	}
-
-
-
 }

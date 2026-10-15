@@ -11,7 +11,7 @@ if bossActiveAttackDelay[1] <= 0 and bossActiveAttackCooldown[1] <= 0 and bossAc
     if bossActiveAttack[1] = 1 {
 		image_index = 0;
 		
-		jumpDirection = "Up";
+		jumpDirection = JUMP_SIDE.UP;
 		jumpHeight = 0;
 		
 		bossActiveAttackDelay[1] = 0;

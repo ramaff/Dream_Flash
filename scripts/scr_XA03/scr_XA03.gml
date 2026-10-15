@@ -25,14 +25,14 @@ function scr_XA03_Status_Build_Up() {
 function scr_Update_Temper(_mag = 6) {
 	var _curr_temper = scr_Get_Status_Time("temper_omen");
 	var _status_effect = {
-		"duration": _curr_temper + _mag,
-		"tick_script": scr_Soul_Temper_Omen,
-		"tick_frequency": 1
+		duration: _curr_temper + _mag,
+		tick_script: scr_Soul_Temper_Omen,
+		tick_frequency: 1
 	}
 	var _status_effect_2 = {
-		"duration": _curr_temper + _mag,
-		"max_duration": 600,
-		"bar_sprite": "spr_Temper_Omen_Status_Effect_Bar"
+		duration: _curr_temper + _mag,
+		max_duration: 600,
+		bar_sprite: spr_Temper_Omen_Status_Effect_Bar
 	}
 	variable_struct_set(soul_step_status_effects, "temper_omen", [_status_effect])
 	variable_struct_set(soul_draw_status_effects, "temper_omen", [_status_effect_2])	
@@ -66,7 +66,6 @@ function scr_Temper_Activate() {
 		"max_duration": _dur,
 		"tick_script": scr_Temper_Tick,
 		"tick_frequency": 10,
-		//bar_sprite": "spr_Poison_Status_Effect_Bar"
 	}
 		
 	scr_Soul_Status_Effect_Add(soul_step_status_effects, "firerate_mult", _status_effect_3)

@@ -23,14 +23,14 @@ function scr_H08_Status_Build_Up() {
 	if _near_bulls > 0 {
 		var _curr_defensive = scr_Get_Status_Time("spike_heart_omen");
 		var _status_effect = {
-			"duration": _curr_defensive + ceil((5 + _near_bulls) * global.soulheartboost),
-			"tick_script": scr_Spike_Heart_Omen,
-			"tick_frequency": 1
+			duration: _curr_defensive + ceil((5 + _near_bulls) * global.soulheartboost),
+			tick_script: scr_Spike_Heart_Omen,
+			tick_frequency: 1
 		}
 		var _status_effect_2 = {
-			"duration": _curr_defensive + ceil((5 + _near_bulls) * global.soulheartboost),
-			"max_duration": 360,
-			"bar_sprite": "spr_Defensive_Omen_Status_Effect_Bar"
+			duration: _curr_defensive + ceil((5 + _near_bulls) * global.soulheartboost),
+			max_duration: 360,
+			bar_sprite: spr_Defensive_Omen_Status_Effect_Bar
 		}
 		variable_struct_set(soul_step_status_effects, "spike_heart_omen", [_status_effect])
 		variable_struct_set(soul_draw_status_effects, "spike_heart_omen", [_status_effect_2])

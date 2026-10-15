@@ -11,9 +11,9 @@ depth = 10;
 if poolSize > maxPoolSize {
 	poolSize = maxPoolSize;
 }
-	image_xscale = poolSize;
-	image_yscale = poolSize;
+image_xscale = poolSize;
+image_yscale = poolSize;
 	
-	if bulletblend != 0 {
-		scr_Bullet_Blend(bulletblend);	
-	}
+if bulletblend != 0 {
+    image_blend = bulletblend
+}

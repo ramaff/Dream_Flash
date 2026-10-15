@@ -2,8 +2,8 @@ function scr_Boss_Teleport_Near_Above() {
 	var xv = room_width / 2;
 	var yv = room_height / 2;
 
-	potx = xv - ((global.roomSizeX + 512) / 2) + random(global.roomSizeX + 512);
-	poty = yv - ((global.roomSizeY + 512) / 2) + random(global.roomSizeY + 512);
+	var potx = xv - ((global.roomSizeX + 512) / 2) + random(global.roomSizeX + 512);
+	var poty = yv - ((global.roomSizeY + 512) / 2) + random(global.roomSizeY + 512);
 
 	var xval = potx - xv;
 	var yval = poty - yv;
@@ -14,21 +14,16 @@ function scr_Boss_Teleport_Near_Above() {
 
 	var above = 0;
 
-
-	//if abs(xval) < (((global.roomSizeX + 512) / 2) - abs(yval)) and abs(yval) < (((global.roomSizeY + 512) / 2) - abs(xval)) {
-	//    inside = 1;
-	//}
-
 	with obj_Soul_Parent {
-	    if point_distance(perX, perY, other.potx, other.poty) > 100 {
+	    if point_distance(perX, perY, potx, poty) > 100 {
 	        away = 1;
 	    }
-	    if point_distance(perX, perY, other.potx, other.poty) < 175 {
+	    if point_distance(perX, perY, potx, poty) < 175 {
 	        close = 1;
 	    }
 	}
 
-	if distance_to_point(other.potx, other.poty) > 75 {
+	if distance_to_point(potx, poty) > 75 {
 	    port = 1;
 	} else {
 	    port = 1;
@@ -42,7 +37,6 @@ function scr_Boss_Teleport_Near_Above() {
 	    x = potx;
 	    y = poty;
 	} else {
-		//tcount++;
 	    scr_Boss_Teleport_Near_Above();
 	}
 

@@ -1,9 +1,3 @@
-/// @description Insert description here
-// You can write your code in this editor
-	//if bulletblend != 0 {
-	//	scr_Bullet_Blend(bulletblend);	
-	//}
-
 if image_index < 8 || image_index >= 11 {
 	bulletpower = 0;	
 } else {

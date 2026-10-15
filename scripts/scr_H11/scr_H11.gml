@@ -15,19 +15,19 @@ function scr_H11_Status_Build_Up(_current_weapon_stats) {
 		var _dur = scr_Get_Status_Time("rocket") + _mag
 		_dur = min(400 * global.soulheartboost, _dur);
 		var _status_effect = {
-			"duration": _dur,
-			"tick_script": scr_Rocket_Tick,
-			"tick_frequency": 1
+			duration: _dur,
+			tick_script: scr_Rocket_Tick,
+			tick_frequency: 1
 		}
 		variable_struct_set(soul_step_status_effects, "rocket", [_status_effect])
 		
 		var _status_effect_2 = {
-			"duration": 60,
-			"magnitude": 1.5
+			duration: 60,
+			magnitude: 1.5
 		}
 		var _status_effect_3 = {
-			"duration": 60,
-			"magnitude": 0.85
+			duration: 60,
+			magnitude: 0.85
 		}
 	
 		scr_Soul_Status_Effect_Add(soul_step_status_effects, "essence_mult", _status_effect_2)

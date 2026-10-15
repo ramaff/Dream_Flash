@@ -1,6 +1,6 @@
 function scr_Boss_Size_Setup(_size) {
 	bossSize = _size;
-	//bossSize = 1;
+    
 	image_xscale = bossSize;
 	image_yscale = bossSize;
 
@@ -8,6 +8,4 @@ function scr_Boss_Size_Setup(_size) {
 	bossSizeY = bossSize;
 	
 	facing_direction = 1;
-
-
 }

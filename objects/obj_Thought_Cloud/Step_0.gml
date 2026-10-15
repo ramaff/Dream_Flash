@@ -80,13 +80,13 @@ if bossPassiveAttack[1] = 3 {
     bullet_speed = bossbulletspeed * (2.35 + random(0.6));
     bullet_lifespan = 450;
     
-    scr_Spirit_Boss_BullFX_Pre();
+    scr_XB05(bullet_count);
     dir = -(bullet_spread * (bullet_count - 1) / 2);
     repeat(bullet_count) {
         with instance_create_depth(obj_Soul_Parent.x,(room_height / 2) - (global.roomSizeY / 2) - 500,0,bullet_type) {
             scr_Bullet_Shoot_Properties();
             direction = other.bullet_direction + other.dir;
-            scr_Spiritual_Stats_Boss_Bullet_Effects();
+            
         }
         dir += bullet_spread;
     }

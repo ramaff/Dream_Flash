@@ -1,5 +1,7 @@
 function scr_State_Boss_Choose(only_forced_bosses = false) {
 
+    var bossn = 0
+    
 	if !only_forced_bosses {
 		bossn = choose(1,2,3,4,6,7,9,10);
 	} else {
@@ -9,14 +11,14 @@ function scr_State_Boss_Choose(only_forced_bosses = false) {
 	var bosstype = noone;
 	var cMaxProg = 2;
 	
-	snakedis = global.snakeprogress;
-	beastdis = global.beastprogress;
-	mechdis = global.mechprogress;
-	scrubdis = global.scrubprogress;
-	spikedis = global.spikeprogress;
-	bleedingdis = global.bleedingprogress;
-	castingdis = global.castingprogress;
-	ascendingdis = global.ascendingprogress;
+	var snakedis = global.snakeprogress;
+	var beastdis = global.beastprogress;
+	var mechdis = global.mechprogress;
+	var scrubdis = global.scrubprogress;
+	var spikedis = global.spikeprogress;
+	var bleedingdis = global.bleedingprogress;
+	var castingdis = global.castingprogress;
+	var ascendingdis = global.ascendingprogress;
 	
 	scr_State_Stat_Credits();
 	
@@ -58,31 +60,29 @@ function scr_State_Boss_Choose(only_forced_bosses = false) {
 		case 0:
 			return noone;
 		case 1:
-			bosstype = obj_Snake_Eyes;
+			bosstype = BOSS_TYPE.SNAKE_EYES;
 			break;
 		case 2:
-			bosstype = obj_King_Of_Beasts
+			bosstype = BOSS_TYPE.KING_OF_BEASTS
 			break;
 		case 3:
-			bosstype = obj_The_Construct;
+			bosstype = BOSS_TYPE.THE_CONSTRUCT;
 			break;
 		case 4:
-			bosstype = obj_Brainwash;
+			bosstype = BOSS_TYPE.BRAINWASH;
 			break;
 		case 6:
-			bosstype = obj_Bed_Bug;
+			bosstype = BOSS_TYPE.BED_BUG;
 			break;
 		case 7:
-			bosstype = obj_Dungeon_Master;
+			bosstype = BOSS_TYPE.DUNGEON_MASTER;
 			break;
 		case 9:
-			bosstype = obj_Sleep_Caster;
+			bosstype = BOSS_TYPE.SLEEP_CASTER;
 			break;
 		case 10:
-			bosstype = obj_Head_In_The_Clouds;
+			bosstype = BOSS_TYPE.HEAD_IN_THE_CLOUDS;
 			break;
-		
-		
 	}
 
 	return bosstype;

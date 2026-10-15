@@ -1,5 +1,4 @@
 function scr_Soul_Push_Pull_Offset(xo, yo, suckSpeed) {
-
 	    with (obj_Soul) {
 	        var suckAngle = point_direction(x,y,other.x+xo,other.y+yo);
         
@@ -15,7 +14,4 @@ function scr_Soul_Push_Pull_Offset(xo, yo, suckSpeed) {
 	        y += lengthdir_y(suckSpeed * 0.75, suckAngle);
         
 	    }
-
-
-
 }

@@ -14,22 +14,22 @@ function scr_Load_Room() {
 	}
 	
 	with (obj_Soul_Spiritual) {
-	    if spirit = "Hope" {
+	    if spirit = SPIRIT_TYPE.HOPE {
 	        global.soulhope++;
 	    }
-	    if spirit = "Bliss" {
+	    if spirit = SPIRIT_TYPE.BLISS {
 	        global.soulbliss++;
 	    }
-	    if spirit = "Vanity" {
+	    if spirit = SPIRIT_TYPE.VANITY {
 	        global.soulassurance++;
 	    }
-	    if spirit = "Loathing" {
+	    if spirit = SPIRIT_TYPE.LOATHING {
 	        global.soulloathing++;
 	    }
-	    if spirit = "Paranoia" {
+	    if spirit = SPIRIT_TYPE.PARANOIA {
 	        global.soulparanoia++;
 	    }
-	    if spirit = "Despair" {
+	    if spirit = SPIRIT_TYPE.DESPAIR {
 	        global.souldespair++;
 	    }
 	    instance_destroy();

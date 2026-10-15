@@ -1,6 +1,5 @@
 function scr_D12_Gust() {
 	// Location Soul Item Step Before Event
-
 	if sWindGustTime > 0 {
 	    var _suckpow = (20 + (40 * global.D[12])) * (1 + global.teleportboost);
 	    scr_Enemy_Bullet_Suck(-_suckpow);

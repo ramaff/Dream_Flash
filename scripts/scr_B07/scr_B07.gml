@@ -1,8 +1,5 @@
 function scr_B07() {
 	// Location Soul Step Event
-
-
-		
 	var interval = round(360 / global.B[7])
 	if (global.roomtime mod interval == 0) and instance_number(obj_Encouragement_Bubble) < (2 + global.B[7]) {
 		with instance_create_depth(x,y,0,obj_Encouragement_Bubble) {
@@ -10,5 +7,4 @@ function scr_B07() {
 			scr_Basic_Teleport();
 		}	
 	}	
-
 }

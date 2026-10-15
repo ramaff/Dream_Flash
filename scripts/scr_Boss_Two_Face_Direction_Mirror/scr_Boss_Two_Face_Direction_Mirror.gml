@@ -4,7 +4,4 @@ function scr_Boss_Two_Face_Direction_Mirror() {
 	} else if hspeed < 0 {
 	    image_xscale = -bossSize;
 	}
-
-
-
 }

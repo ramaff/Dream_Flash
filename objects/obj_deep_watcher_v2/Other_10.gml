@@ -24,7 +24,7 @@ for(var _count = 0; _count < 17; _count++) {
 		}
 		direction = other.bullet_direction;
 		image_angle = direction;
-		scr_Spiritual_Stats_Boss_Bullet_Effects();
+		
 		
 		seg_tail = _seg_tail;
 		seg_distance = _seg_size;

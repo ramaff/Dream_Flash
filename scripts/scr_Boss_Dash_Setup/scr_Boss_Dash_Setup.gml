@@ -3,8 +3,6 @@ function scr_Boss_Dash_Setup(dir = scr_Soul_Point(), startSpeed = 0, maxSpeed = 
 	bossMaxDashSpeed = maxSpeed;
 	bossDashDirection = dir;
 
-	jumpDirection = "None";
+	jumpDirection = JUMP_SIDE.NONE;
 	jumpHeight = 0;
-
-
 }

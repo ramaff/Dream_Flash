@@ -3,7 +3,6 @@ function scr_A14_Size() {
 }
 
 function scr_A14() {
-
 	var _dmg = (global.A[14]) * shot_stats.Shot_Power / 120;
 	var _size = scr_A14_Size()
 	with(obj_Boss_Parent) {

@@ -1,12 +1,8 @@
 function scr_Emotion_Item_Choose(_class, _counter, _room) {
-	itemtype = noone;
-	elementString = "";
-
-	elementString = "I";
+	var itemtype = noone;
+	var elementString = "I";
 
 	var itemform = 1 + irandom(35);
-	
-	
 
 	var wTier = "Basic";
 	
@@ -41,7 +37,4 @@ function scr_Emotion_Item_Choose(_class, _counter, _room) {
 	} else {
 		return itemtype;
 	}
-
-
-
 }

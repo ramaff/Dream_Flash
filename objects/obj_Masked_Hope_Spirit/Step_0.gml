@@ -221,9 +221,6 @@ if bossActiveAttackDelay[1] <= 0 and bossPatternCooldown <= 0 and bossPatternCou
 			if bossPatternCount mod 5 = 0 {
 				scr_Boss_Stretch("Vertical", 0.05);	
 			}
-            //scr_Boss_Beam_Attack_New("Active",35,scr_Boss_Beam_Frame(beamStart)); 
-        } else {
-            //scr_Boss_Beam_Attack_New("Dormant",35,scr_Boss_Beam_Frame(beamStart));  
         } 
         
         if frac((bossPatternCount - 1) / 45) = 0 and bossPatternCount > 0 {

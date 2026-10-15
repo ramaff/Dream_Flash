@@ -89,7 +89,7 @@ if bossActiveAttackDelay[1] <= 0 and bossActiveAttackCooldown[1] <= 0 and bossAc
         
     }
     if bossActiveAttack[1] = 3  {
-		jumpDirection = "Up";
+		jumpDirection = JUMP_SIDE.UP;
 		jumpHeight = 0;
 		
 		//bossActiveAttackDelay[champ] = 10;
@@ -404,7 +404,7 @@ if state = states.jumping {
 	if jumpHeight > 10 || bossPatternCooldown > 0 {
 		//sprite_index = spr_Jello_Hop;
 	} else if jumpHeight <= 10 {
-		if jumpDirection = "Down" {
+		if jumpDirection = JUMP_SIDE.DOWN {
 			state = states.normal;
 			//ghit = 1;
 		}
@@ -417,7 +417,7 @@ if state = states.jumping {
 if bossActiveAttackDuration[1] <= 0 { 
 	
 	state = states.normal;
-	jumpDirection = "None"
+	jumpDirection = JUMP_SIDE.NONE
 	jumpHeight = 0;
 	
     bossActiveAttack[1] = 0;

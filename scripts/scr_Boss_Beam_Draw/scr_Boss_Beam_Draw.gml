@@ -1,6 +1,4 @@
-function scr_Boss_Beam_Draw() {
-	var angle = argument[0];
-	var length = argument[1];
+function scr_Boss_Beam_Draw(angle,length) {
 
 	if beam_sprite = spr_Red_Beam {
 	    beamSpr = spr_Red_Beam;

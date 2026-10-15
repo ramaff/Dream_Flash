@@ -65,7 +65,7 @@ function scr_shoot_bullets(_attack_stats, _ox, _oy) {
 }
 
 function scr_boss_shoot_v2(_attack_stats = attack_stats, _absolute_pos = false) {
-	scr_spirit_boss_bull_fx_pre_v2(_attack_stats);
+    scr_XB05_v2(_attack_stats);
 	
 	var _xx = x + _attack_stats.boss_xoffset;
 	var _yy = y + _attack_stats.boss_yoffset;
