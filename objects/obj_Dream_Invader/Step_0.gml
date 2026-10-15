@@ -309,9 +309,9 @@ if bossActiveAttackDelay[1] <= 0 and bossPatternCooldown <= 0 and bossPatternCou
         boss_yoffset = 15;
     
         if bossPatternCount < 340 {
-            scr_Boss_Beam_Attack("Active",24);  
+            scr_Boss_Beam_Attack(24,true);  
         } else {
-            scr_Boss_Beam_Attack("Dormant",24);  
+            scr_Boss_Beam_Attack(24);  
         }
     }
 	

@@ -4,7 +4,7 @@
 
 var _tar = id;
 repeat(2) {
-	with instance_create(x,y,obj_Follow_The_Leader_Bullet) {
+	with instance_create_depth(x,y,0,obj_Follow_The_Leader_Bullet) {
 		scr_Bullet_Replicate_Properties();
 		target = _tar;
 		sprite_index = other.sprite_index;

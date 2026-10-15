@@ -1,6 +1,6 @@
 global.floor[global.currentroom,3] = floor(global.floor[global.currentroom,3] / 128) * 128;
 
-instance_create((room_width / 2) + global.soulSpawnXAdd,(room_height / 2) + global.soulSpawnYAdd, obj_Basic_Soul);
+instance_create_depth((room_width / 2) + global.soulSpawnXAdd,(room_height / 2) + global.soulSpawnYAdd,-1, obj_Basic_Soul);
 
 scr_Wall_Form();
 
@@ -27,8 +27,6 @@ for(i = 1; i <= 13; i++) {
 }
 
 scr_Item_Spawn(field, item[1], item[2], item[3], item[4], item[5], item[6], item[7], item[8], item[9], item[10], item[11], item[12], item[13]);
-
-instance_create(x,y,obj_Environment_Emitter)
 
 if scr_Room_Leavable() {
     scr_Room_End();

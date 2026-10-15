@@ -410,7 +410,7 @@ if bossActiveAttackDelay[1] <= 0 and bossPatternsCooldown[1] <= 0 and bossPatter
 		var beamFr = min(5,floor((bossPatternsCountMax[1] - bossPatternsCount[1]) / 5));
 		
         if bossPatternsCount[1] < 210 {
-           scr_Boss_Beam_Attack_New("Active",36,beamFr);
+           scr_Boss_Beam_Attack_New(36,beamFr,true);
 			
 			if bossPatternsCount[1] < 210 {
 				souldir = scr_Soul_Point();
@@ -425,7 +425,7 @@ if bossActiveAttackDelay[1] <= 0 and bossPatternsCooldown[1] <= 0 and bossPatter
 				beamAccel -= beamAccel / 200;
 			}
         } else {
-            scr_Boss_Beam_Attack_New("Dormant",36,beamFr); 
+            scr_Boss_Beam_Attack_New(36,beamFr); 
         }
 		
 		
@@ -478,13 +478,13 @@ if bossActiveAttackDelay[1] <= 0 and bossPatternsCooldown[1] <= 0 and bossPatter
 			boss_xoffset = lengthdir_x(85,image_angle + 180);
 	        boss_yoffset = lengthdir_y(85,image_angle + 180);
 	        bossoffsetangle = 0;
-            scr_Boss_Beam_Attack_New("Active",36, beamFr);
+            scr_Boss_Beam_Attack_New(36, beamFr,true);
 			
 			bullet_direction = bossPatternDirection + image_angle - 90 + (-0.1 + random(0.2)) / bossaccuracy;
 			boss_xoffset = lengthdir_x(-85,image_angle + 180);
 	        boss_yoffset = lengthdir_y(-85,image_angle + 180);
 	        bossoffsetangle = 0;
-            scr_Boss_Beam_Attack_New("Active",36, beamFr);
+            scr_Boss_Beam_Attack_New(36, beamFr,true);
 			
 			if bossPatternsCount[1] < 325 {
 				bossPatternDirection += beamTurnSpeed;
@@ -496,12 +496,12 @@ if bossActiveAttackDelay[1] <= 0 and bossPatternsCooldown[1] <= 0 and bossPatter
             boss_xoffset = lengthdir_x(85,image_angle + 180);
 	        boss_yoffset = lengthdir_y(85,image_angle + 180);
 	        bossoffsetangle = 0;
-            scr_Boss_Beam_Attack_New("Dormant",36,beamFr);
+            scr_Boss_Beam_Attack_New(36,beamFr);
 			
 			boss_xoffset = lengthdir_x(-85,image_angle + 180);
 	        boss_yoffset = lengthdir_y(-85,image_angle + 180);
 	        bossoffsetangle = 0;
-            scr_Boss_Beam_Attack_New("Dormant",36,beamFr);
+            scr_Boss_Beam_Attack_New(36,beamFr);
         }
 		
 		if frac(bossPatternsCount[1] / 100) = 0 {
@@ -522,115 +522,6 @@ if bossActiveAttackDelay[1] <= 0 and bossPatternsCooldown[1] <= 0 and bossPatter
     bossPatternsCount[1] -= 1;
     bossPatternsCooldown[1] += bossPatternsCooldownMax[1];
 }
-
-/*
-if bossActiveAttackDelay[2] <= 0 and bossPatternsCooldown[2] <= 0 and bossPatternsCount[2] > 0 {
-        
-    if bossActiveAttack[2] = 2 { 
-        bullet_type = obj_Phase_Bullet;
-        bullet_sprite = spr_Enemy_Shot;
-        bullet_speed = bossbulletspeed * 1.1;
-        bullet_direction = direction + 90 + (-10 + random(20)) / bossaccuracy;
-        bullet_count = 2;
-        bullet_spread = 10 + random(10);
-        boss_xoffset = lengthdir_x(85,direction + 180);
-        boss_yoffset = lengthdir_y(85,direction + 180);
-        scr_Offset_Normal_Shoot();
-    }
-    if bossActiveAttack[2] = 3 { 
-        bullet_type = obj_Phase_Bullet;
-        bullet_sprite = spr_Arcane_Bullet;
-        bullet_speed = bossbulletspeed * 1.55;
-        bullet_direction = direction + 90 + (-10 + random(20)) / bossaccuracy;
-        bullet_count = 5;
-        bullet_spread = 21;
-        boss_xoffset = lengthdir_x(85,direction + 180);
-        boss_yoffset = lengthdir_y(85,direction + 180);
-        scr_Offset_Normal_Shoot();
-    }
-    if bossActiveAttack[2] = 4 { 
-        scr_Default_Attack_Settings();
-        bullet_power = bosspower * 0.5;
-        bullet_direction = direction + 90 + (-0.1 + random(0.2)) / bossaccuracy;
-        bullet_size = 1;
-        bullet_count = 1;
-        bullet_spread = 0;
-        boss_radius = 0;
-        
-        bullet_sprite = spr_Arcane_Beam;
-        beam_sprite = spr_Arcane_Beam;
-        bossbeamattackactive = 1;
-    
-        boss_xoffset = lengthdir_x(85,direction + 180);
-        boss_yoffset = lengthdir_y(85,direction + 180);
-        bossoffsetangle = 0;
-        if bossPatternsCount[2] < 90 {
-            scr_Boss_Beam_Attack("Active",36);  
-        } else {
-            scr_Boss_Beam_Attack("Dormant",36);  
-        }
-    }
-    
-    bossPatternsCount[2] -= 1;
-    bossPatternsCooldown[2] += bossPatternsCooldownMax[2];
-}
-
-if bossActiveAttackDelay[3] <= 0 and bossPatternsCooldown[3] <= 0 and bossPatternsCount[3] > 0 {
-        
-    if bossActiveAttack[3] = 1 { // Holy Tear Barrage
-        bullet_type = obj_Slight_Home_Bullet;
-        bullet_sprite = spr_Soaring_Tear;
-        bullet_power = bosspower * 1.5;
-        bullet_size = 0.75
-        bullet_direction = direction + 90 + (-10 + random(20)) / bossaccuracy;
-        bullet_count = 1;
-        scr_Just_Shoot();
-    }
-    if bossActiveAttack[3] = 2 { // Echo Barrage
-        bullet_type = obj_Echolocation_Shot;
-        bullet_sprite = spr_Soaring_Echo;
-        bullet_lifespan = 540;
-        bullet_speed = bossbulletspeed * 1.75;
-        bullet_count = 3 + 1 * (bossPatternsCountMax[3] - bossPatternsCount[3]);
-        bullet_spread = 15;
-        scr_Just_Shoot();
-    }
-    
-    if bossActiveAttack[3] = 3 {
-        scr_Default_Attack_Settings();
-        bullet_power = bosspower * 0.5;
-        bullet_direction = direction + 90 + (-0.1 + random(0.2)) / bossaccuracy;
-        bullet_size = 1;
-        bullet_count = 1;
-        bullet_spread = 0;
-        boss_radius = 0;
-        
-        bullet_sprite = spr_Arcane_Beam;
-        beam_sprite = spr_Arcane_Beam;
-        bossbeamattackactive = 1;
-    
-        if bossPatternsCount[3] < 90 {
-            scr_Boss_Beam_Attack("Active",36);  
-        } else {
-            scr_Boss_Beam_Attack("Dormant",36);  
-        }
-        
-    }  
-    
-    if bossActiveAttack[3] = 4 { // Echo Barrage
-        bullet_sprite = spr_Arcane_Echo;
-        bullet_type = obj_Arcane_Echo;
-        bullet_speed = bossbulletspeed * 1.75;
-        bullet_lifespan = 540;
-        bullet_count = 3 + 1 * (bossPatternsCountMax[3] - bossPatternsCount[3]);
-        bullet_spread = 18;
-        scr_Just_Shoot();
-    }
-    
-    bossPatternsCount[3] -= 1;
-    bossPatternsCooldown[3] += bossPatternsCooldownMax[3];
-}
-*/
 
 /// Active Attack Post
    

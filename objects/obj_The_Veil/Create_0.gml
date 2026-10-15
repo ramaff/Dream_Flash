@@ -14,7 +14,7 @@ scr_Default_Attack_Settings();
 coreCount = 1;
 var mdir = 0;
 repeat(4) {
-    with instance_create(x,y, obj_Veil_Mask) {
+    with instance_create_depth(x,y,0, obj_Veil_Mask) {
         champ = other.champ + 0.1;
         boost = other.boost;
         coreNum = other.coreCount;

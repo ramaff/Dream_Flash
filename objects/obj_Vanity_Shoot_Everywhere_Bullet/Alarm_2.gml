@@ -3,7 +3,7 @@ var dir = scr_Soul_Point() - 60;
 repeat(5) {
     var sspeed = 0.7;
     repeat(3) {
-	    with instance_create(x,y,obj_Basic_Bullet) {
+	    with instance_create_depth(x,y,0,obj_Basic_Bullet) {
 	        scr_Bullet_Replicate_Properties();
 	        bulletsize = 0.5;
 	        image_xscale = bulletsize;

@@ -11,7 +11,7 @@ if soulinvincibility = 0 {
     val = random(9) + random(other.bosscontactdamage);
     
     if val >= 8 {
-        with instance_create(x,y,obj_Essential_Essence) {
+        with instance_create_depth(x,y,0,obj_Essential_Essence) {
             speed = 0.5 + random(0.8);
             friction = 0.01;
             direction = random(360);

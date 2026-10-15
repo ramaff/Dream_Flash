@@ -4,6 +4,4 @@ function scr_Boss_Size_Lerp(argument0) {
 
 	image_xscale = bossSizeX;
 	image_yscale = bossSizeY;
-
-
 }

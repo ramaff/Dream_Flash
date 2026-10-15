@@ -54,19 +54,19 @@ scr_Item_Pools();
 
 pal_swap_init_system(shd_pal_swapper,shd_pal_html_sprite,shd_pal_html_surface);
 
-instance_create(x,y, Soul_Stat_Control);
-instance_create(x,y, Soul_Hearts_Control);
-instance_create(x,y, Soul_Weapons_Control);
-instance_create(x,y, Master_Depth_Draw_Control);
-instance_create(x,y, Pause_Control);
-instance_create(x,y, Floor_Layout_Control);
-instance_create(x,y, obj_Light_Control);
-instance_create(x,y, obj_Particle_Control);
+instance_create_depth(x,y,0, Soul_Stat_Control);
+instance_create_depth(x,y,0, Soul_Hearts_Control);
+instance_create_depth(x,y,0, Soul_Weapons_Control);
+instance_create_depth(x,y,0, Master_Depth_Draw_Control);
+instance_create_depth(x,y,0, Pause_Control);
+instance_create_depth(x,y,-100, Floor_Layout_Control);
+instance_create_depth(x,y,-2, obj_Light_Control);
+instance_create_depth(x,y,0, obj_Particle_Control);
 
 alarm[0] = 1;
 //alarm[0] = 15;
 
-instance_create(room_width / 2,room_height / 2, obj_Basic_Soul);
+instance_create_depth(room_width / 2,room_height / 2,-1, obj_Basic_Soul);
 
 scr_Game_Control_Setup();
 scr_Room_Change_Variables();

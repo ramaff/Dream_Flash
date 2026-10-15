@@ -6,7 +6,7 @@
 function scr_N02(){
 	var ct = obj_Soul_Parent.id;
 	repeat(global.N[2]) {
-		with instance_create(x,y - 40, obj_Productivity) {
+		with instance_create_depth(x,y - 40,0, obj_Productivity) {
 			followtarget = ct;
 			ct = id;
 		}

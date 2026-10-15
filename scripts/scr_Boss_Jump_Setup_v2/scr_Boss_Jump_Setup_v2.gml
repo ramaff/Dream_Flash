@@ -15,6 +15,4 @@ function scr_Boss_Jump_Setup_v2(startSpeed = 0, maxSpeed = 0, xx = x, yy = y, _t
 	state = states.jumping;
 	
 	scr_Hop_Distance_Calc_v2(maxSpeed, _dist);
-
-
 }

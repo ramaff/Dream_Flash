@@ -2,6 +2,13 @@
 // https://help.yoyogames.com/hc/en-us/articles/360005277377 for more information
 function scr_Key_Press_Movement(_vspeed = 0, _hspeed = 0, _max_speed = 5, _acceleration = 1, _friction = 0.2, _hard_cap = true){
 
+    if instance_exists(obj_new_mega_map){
+        return {
+            h_speed : 0,
+            v_speed : 0
+        }
+    }
+
 	var dx = InputValue(INPUT_VERB.RIGHT ) - InputValue(INPUT_VERB.LEFT );
 	var dy = InputValue(INPUT_VERB.DOWN ) - InputValue(INPUT_VERB.UP );
 	

@@ -13,7 +13,7 @@ function scr_Dead_Boss(_diff = difficulty, _ko_time = 40){
 		scr_Particle_Burst(obj_Wind_Particle, spr_Soul_Big_Bit, c_white, c_white, 8, 12, 22.5, 45, 0, 0.7, 45, true)
 
 	} else {
-		with instance_create(x,y, obj_Dead_Boss) {
+		with instance_create_depth(x,y, depth, obj_Dead_Boss) {
 			difficulty = _diff
 			recalls = scr_Calculate_Currency_Add(true)
 			boss_palette = other.boss_palette;

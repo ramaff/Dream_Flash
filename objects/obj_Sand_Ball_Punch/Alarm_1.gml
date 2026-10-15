@@ -1,6 +1,6 @@
 dir = 0;
 repeat(1) {
-    with instance_create(x,y,obj_Sandman_Punch) {
+    with instance_create_depth(x,y,-1,obj_Sandman_Punch) {
         scr_Bullet_Replicate_Properties();
         sprite_index = spr_Sandman_Punch;
         bulletsize = 0.3;

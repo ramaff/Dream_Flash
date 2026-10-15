@@ -5,7 +5,7 @@
 
 function scr_XA04_Shot_Mod(){
 	
-	if global.XA[4] > 0 and global.currenthearttype = 53 {
+	if global.XA[4] > 0 and global.currenthearttype = HEART_TYPE.SEETHING {
 		repeat(global.XA[4]) {
 			shot_stats.Shot_Life_Span = shot_stats.Shot_Life_Span * 0.8;
 			shot_stats.Shot_Speed += shot_stats.Shot_Speed * 0.25;

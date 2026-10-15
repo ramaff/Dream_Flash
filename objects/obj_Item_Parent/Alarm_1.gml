@@ -8,7 +8,7 @@ var _shot_trail_area = 80;
 var xx = random(_shot_trail_area) - (_shot_trail_area / 2);
 var yy = random(_shot_trail_area) - (_shot_trail_area / 2);
 
-with instance_create(x + xx,y + yy,obj_Field_Trail) {
+with instance_create_depth(x + xx,y + yy, 0,obj_Field_Trail) {
 		
 	sprite_index = spr_White_Diamond;
 		

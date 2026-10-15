@@ -5,7 +5,7 @@ var dist = 150;
 	
 	repeat(4) {
 
-	    with instance_create(x,y,obj_School_Bullet) {
+	    with instance_create_depth(x,y,0,obj_School_Bullet) {
 	            scr_Bullet_Replicate_Properties();
 				target = other.id;
 	            soulshotblock = 0;
@@ -32,7 +32,7 @@ var dist = 150;
 
 repeat(3) {
 
-	    with instance_create(x,y,obj_School_Bullet) {
+	    with instance_create_depth(x,y,0,obj_School_Bullet) {
 	            scr_Bullet_Replicate_Properties();
 				target = other.id;
 	            soulshotblock = 0;

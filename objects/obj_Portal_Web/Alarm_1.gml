@@ -1,12 +1,11 @@
 
 	var dir = -15;
-	if spindir = 0 {
-		var ob = obj_Spin_Bullet;
-	} else {
-		var ob = obj_Alt_Spin_Bullet;
+    var ob = obj_Spin_Bullet
+	if spindir != 0 {
+		ob = obj_Alt_Spin_Bullet;
 	}
 	repeat(3) {
-		with instance_create(x,y,ob) {
+		with instance_create_depth(x,y,0,ob) {
 	        scr_Bullet_Replicate_Properties();
             bulletsize = 0.5;
             image_xscale = bulletsize;

@@ -5,7 +5,7 @@ alarm[2] = 180 + random(30);
 var dir = -12;
 
 repeat(5) {
-	with instance_create(x,y,obj_Fasing_Bullet_Parent) {
+	with instance_create_depth(x,y,0,obj_Fasing_Bullet_Parent) {
 	    scr_Bullet_Replicate_Properties();
 	    sprite_index = spr_Glowy_Green_Shot;
 	    bulletspeed = other.bulletspeed * 1;

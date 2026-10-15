@@ -3,6 +3,6 @@
 function scr_OA03(){
 	var roomtype = global.floor[global.currentroom,0];
 	if global.OA[3] > 0 and roomtype != "Emotion Field" and roomtype != "Weapon Field" {
-		instance_create((room_width / 2) - 200,(room_height / 2) + 200, obj_Feeling_Lucky);
+		instance_create_depth((room_width / 2) - 200,(room_height / 2) + 200,0, obj_Feeling_Lucky);
 	}
 }

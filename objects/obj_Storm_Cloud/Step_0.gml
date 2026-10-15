@@ -423,13 +423,6 @@ if bossActiveAttackDelay[1] <= 0 and bossPatternCooldown <= 0 and bossPatternCou
 			var beamstart = bossPatternCountMax - bossPatternCount;
 			
 			scr_Easy_Boss_Beam_Shoot(bossPatternCountMax, 18);
-			
-	       /* if bossPatternCount < 45 {
-	            scr_Boss_Beam_Attack_New("Active",18,scr_Boss_Beam_Frame(beamstart));
-	        } else {
-	            scr_Boss_Beam_Attack_New("Dormant",18,scr_Boss_Beam_Frame(beamstart));
-	        } */
-			
 		}
 		
 		speed = bossDashSpeed;

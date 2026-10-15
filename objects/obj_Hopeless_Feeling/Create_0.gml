@@ -16,8 +16,6 @@ scontactdamage = 5;
 
 saccuracy = 1;
 
-//direction = 45 + 90 * irandom(3);
-//speed = smovementspeed;
 alarm[3] = 60;
 
 image_speed = 0;

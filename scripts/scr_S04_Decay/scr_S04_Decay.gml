@@ -6,7 +6,7 @@
 function scr_S04_Decay(damage){
 	var i = global.currentheart;
 	with (Soul_Hearts_Control) {
-		if heart[i].heart_id = 51 {
+		if heart[i].heart_id = HEART_TYPE.COPING {
 			heart[i].health_decay += damage * 0.25;
 			if heart[i].health_decay > heart[i].max_health - 1 {
 				heart[i].health_decay = heart[i].max_health - 1;

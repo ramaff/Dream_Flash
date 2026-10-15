@@ -4,7 +4,7 @@ function scr_OB03() {
 	if global.OB[3] > 0 {
 
 	    repeat(global.OB[3]) {
-			with instance_create(x,y,obj_Happy_Place) {
+			with instance_create_depth(x,y,0,obj_Happy_Place) {
 				size = 0.01;	
 				scr_Basic_Teleport();
 			}	

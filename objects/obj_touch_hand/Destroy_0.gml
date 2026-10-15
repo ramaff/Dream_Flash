@@ -1,7 +1,7 @@
 /// @description Insert description here
 // You can write your code in this editor
 
-with instance_create(x,y, obj_Dead_Boss) {
+with instance_create_depth(x,y,0, obj_Dead_Boss) {
 	difficulty = -1;
 	recalls = 0;
 	boss_palette = other.boss_palette;

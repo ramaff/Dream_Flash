@@ -2,7 +2,7 @@
 // You can write your code in this editor
 scr_Bullet_Teleport();
 y -= 1500;
-with instance_create(other.x,other.y,obj_Comet_Bullet) {
+with instance_create_depth(other.x,other.y,0,obj_Comet_Bullet) {
         scr_Bullet_Replicate_Properties();
 		bulletlifespan = 1516 / other.bulletspeed;
 		alarm[0] = bulletlifespan;
@@ -17,5 +17,3 @@ with instance_create(other.x,other.y,obj_Comet_Bullet) {
         direction = 270;
 		speed = bulletspeed;
     }   
-	
-	scr_Boss_Bullet_Cleanup();

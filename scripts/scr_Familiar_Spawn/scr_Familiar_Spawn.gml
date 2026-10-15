@@ -12,7 +12,7 @@ function scr_spawn_familar(_xx, _yy, _familiar, _follow_target = noone) {
 	
 	var _ct = noone;
 	if !instance_exists(obj)
-	with instance_create(_xx, _yy, _familiar) {
+	with instance_create_depth(_xx, _yy, 0, _familiar) {
 		followtarget = _follow_target
 		_ct = id;
 		scr_Minion_Follow_Adjust();

@@ -1,11 +1,17 @@
-function scr_Soul_Spiritual_Add() {
-	var giveFac = 1;
-	spirit = argument[0];
+enum SPIRIT_TYPE {
+    HOPE,
+    BLISS,
+    VANITY,
+    DESPAIR,
+    PARANOIA,
+    LOATHING
+}
 
-	if spirit = "Hope" || spirit = "Bliss" || spirit = "Vanity" {
+function scr_Soul_Spiritual_Add(_spirit) {
+	if _spirit = SPIRIT_TYPE.HOPE || _spirit = SPIRIT_TYPE.BLISS || _spirit = SPIRIT_TYPE.VANITY {
 	    repeat(5) {
-	        with instance_create(x,y,obj_Soul_Spiritual) {
-	            spirit = other.spirit;
+	        with instance_create_depth(x,y,0,obj_Soul_Spiritual) {
+	            spirit = _spirit;
 	            direction = random(360);
 	            speed = 1 + random(4);
 	            friction = 0.1
@@ -21,17 +27,15 @@ function scr_Soul_Spiritual_Add() {
 	                break;
 	            }
 	        }
-	        global.floor[badSpiritRoom,26] = scr_Spirit_Choose("Bad");
-	        //global.floor[badSpiritRoom,3] += 128;
-			//global.floor[badSpiritRoom,3] = scr_Floor_To_Nearest(global.floor[badSpiritRoom,3], 256)
+	        global.floor[badSpiritRoom,26] = scr_Spirit_Choose(true);
 	        global.evilSpiritRoom = badSpiritRoom;
 	    }
 	}
 
-	if spirit = "Despair" || spirit = "Paranoia" || spirit = "Loathing" {
+	if _spirit = SPIRIT_TYPE.DESPAIR || _spirit = SPIRIT_TYPE.PARANOIA || _spirit = SPIRIT_TYPE.LOATHING {
 	    repeat(3) {
-	        with instance_create(x,y,obj_Soul_Spiritual) {
-	            spirit = other.spirit;
+	        with instance_create_depth(x,y,0,obj_Soul_Spiritual) {
+	            spirit = _spirit;
 	            direction = random(360);
 	            speed = 1 + random(4);
 	            friction = 0.1
@@ -41,12 +45,5 @@ function scr_Soul_Spiritual_Add() {
 	    global.badSpirits++;
 	}
 	
-	/*if global.spiritTutorial = 0 {
-		instance_create(x,y,obj_Spirit_Note);	
-	} */
-	
 	scr_Tutorial_Note_Spawn("spirit_tutorial")
-
-
-
 }

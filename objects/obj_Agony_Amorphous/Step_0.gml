@@ -36,7 +36,7 @@ if bossActiveAttackDelay[champ] <= 0 and bossActiveAttackCooldown[champ] <= 0 an
     if bossActiveAttack[champ] = 3 {
 		//bossActiveAttackDelay[champ] = 15;
 		
-        jumpDirection = "Up";
+        jumpDirection = JUMP_SIDE.UP;
 		jumpHeight = 0;
 		
         scr_Boss_Dash_Setup();
@@ -257,7 +257,7 @@ if bossActiveAttackDelay[1] <= 0 and bossPatternCooldown <= 0 and bossPatternCou
 			
 			bossHopCount--;
 			bossPatternCount = bossPatternCountMax + 15;
-			jumpDirection = "Up";
+			jumpDirection = JUMP_SIDE.UP;
 			jumpHeight = 0;
 			image_index = 0;
 			
@@ -285,11 +285,10 @@ if jumpHeight < 10 {
 }
 
 /// Active Attack Post
-   
 if bossActiveAttackDuration[champ] <= 0 { 
 	
 	state = states.normal;
-	jumpDirection = "None"
+	jumpDirection = JUMP_SIDE.NONE
 	jumpHeight = 0;
 	
 	sprite_index = spr_Agony_Amorphous;	
@@ -313,7 +312,7 @@ if state = states.jumping {
 	
 		sprite_index = spr_Agony_Amorphous_Hop;
 	/*} else*/ if jumpHeight <= 10 {
-		if jumpDirection = "Down" {
+		if jumpDirection = JUMP_SIDE.DOWN {
 			state = states.normal;
 		}
 		if bossActiveAttackDuration[champ] <= 0 {

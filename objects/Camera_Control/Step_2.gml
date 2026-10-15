@@ -1,7 +1,3 @@
-/// @description Insert description here
-// You can write your code in this editor
-#macro view view_camera[0]
-
 var tote_bosses = instance_number(obj_Main_Boss_Parent)
 var potency = min(2, tote_bosses)
 var fac = (1 / tote_bosses) * potency
@@ -13,22 +9,21 @@ if instance_exists(Floor_Layout_Control) and global.layerdeep < 1 {
 		ideal_zoom = 0.8;
 	}
 	
-	if global.cameramode = "Boss" {
-		var extra_zoom = 0
-		with (obj_Main_Boss_Parent) {
-			var dist = point_distance(x,y, obj_Soul_Parent.x, obj_Soul_Parent.y);
-			//dist += point_distance(x,y, room_width / 2, room_height / 2)
-			
-			if dist > 300 {
-				extra_zoom = max(extra_zoom, (dist - 300))
-			}
-			
-		}
-		ideal_zoom = power((1024 / (rsize + extra_zoom)), 0.25);
-	}
+    var extra_zoom = 0
+    with (obj_Main_Boss_Parent) {
+        var dist = point_distance(x,y, obj_Soul_Parent.x, obj_Soul_Parent.y);
+        
+        
+        if dist > 300 {
+            extra_zoom = max(extra_zoom, (dist - 300))
+        }
+        
+    }
+    ideal_zoom = power((1024 / (rsize + extra_zoom)), 0.25);
+
 	
 	if instance_exists(obj_Class_Level_Up_Indicator) and global.level_up_camera_lock = 1 {
-		var ideal_zoom = 1;
+		ideal_zoom = 1;
 	}
 
 	view_zoom = lerp(view_zoom, ideal_zoom, 0.0175)
@@ -54,27 +49,22 @@ if instance_exists(obj_Soul_Parent) {
 	var xAv = 0;
 	var yAv = 0;
 	
-	if global.cameramode = "Soul" {
-		xAv = mean(obj_Soul_Parent.x * 6,room_width / 2,obj_Astral_Indicator.x * 2) / 3;
-		yAv = mean(obj_Soul_Parent.y * 6,room_height / 2,obj_Astral_Indicator.y * 2) / 3;
-	}
-	if global.cameramode = "Boss" {
 		
-		var totalaveragers = 8.5;
-		var xTote = (obj_Soul_Parent.x * 6) + (obj_Astral_Indicator.x * 1.5) + (room_width / 2);
-		var yTote = (obj_Soul_Parent.y * 6) + (obj_Astral_Indicator.y * 1.5) + (room_height / 2);
+    var totalaveragers = 8.5;
+    var xTote = (obj_Soul_Parent.x * 6) + (obj_Astral_Indicator.x * 1.5) + (room_width / 2);
+    var yTote = (obj_Soul_Parent.y * 6) + (obj_Astral_Indicator.y * 1.5) + (room_height / 2);
 
-		with (obj_Main_Boss_Parent) {
-			if state = states.normal || state = states.jumping {
-				xTote += x * fac;
-				yTote += y * fac;
-				totalaveragers += fac;
-			}
-		}
-		
-		xAv = xTote / totalaveragers;
-		yAv = yTote / totalaveragers;
-	}
+    with (obj_Main_Boss_Parent) {
+        if state = states.normal || state = states.jumping {
+            xTote += x * fac;
+            yTote += y * fac;
+            totalaveragers += fac;
+        }
+    }
+    
+    xAv = xTote / totalaveragers;
+    yAv = yTote / totalaveragers;
+
 	
 	if instance_exists(obj_In_Game_Recollection_Cloud) {
 		xAv = mean(xAv * 7, obj_In_Game_Recollection_Cloud.x) / 4;	

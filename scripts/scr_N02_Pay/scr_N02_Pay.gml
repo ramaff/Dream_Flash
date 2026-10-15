@@ -9,7 +9,7 @@ function scr_N02_Pay(){
 	with (obj_Productivity) {
 		if !dim {
 			repeat(2 + irandom(global.currentchapter)) {
-				with instance_create(x,y,_recall_objs[global.currentchapter - 1]) {
+				with instance_create_depth(x,y,0,_recall_objs[global.currentchapter - 1]) {
 				    direction = random(360);
 				    speed = 1 + random(4);
 				    friction = 0.1

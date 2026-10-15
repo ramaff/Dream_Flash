@@ -1,6 +1,6 @@
 dir = 0;
 repeat(1) {
-    with instance_create(x,y,obj_Crush_Bomb) {
+    with instance_create_depth(x,y,0,obj_Crush_Bomb) {
         scr_Bullet_Replicate_Properties();
 		bulletlifespan = 80;
 		alarm[0] = bulletlifespan;

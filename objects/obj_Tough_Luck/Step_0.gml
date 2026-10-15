@@ -137,7 +137,7 @@ if bossActiveAttackDelay[1] <= 0 and bossActiveAttackCooldown[1] <= 0 and bossAc
     }
     if bossActiveAttack[1] = 12 {
 		bossActiveAttackDelay[1] = 15;
-		jumpDirection = "Up";
+		jumpDirection = JUMP_SIDE.UP;
 		jumpHeight = 0;
 		
         scr_Boss_Dash_Setup();
@@ -227,27 +227,6 @@ if bossActiveAttackDelay[1] <= 0 and bossPatternCooldown <= 0 and bossPatternCou
         if adif > 0 {
             bossPatternDirection += 0.25 + ((bossPatternCountMax - bossPatternCount) / 30);
         }
-		
-		/*
-		var beamstart = bossPatternCountMax - bossPatternCount
-    
-        if bossPatternCount < 140 {
-            scr_Boss_Beam_Attack_New("Active",18,scr_Boss_Beam_Frame(beamstart));
-            
-            souldir = scr_Soul_Point();
-            var adif = angle_difference(bossPatternDirection, souldir);
-            if adif < 0 {
-                bossPatternDirection += 0.25 + ((bossPatternCountMax - bossPatternCount) / 30);
-            }
-            if adif > 0 {
-                bossPatternDirection += 0.25 + ((bossPatternCountMax - bossPatternCount) / 30);
-            }
-         
-        } else {
-            scr_Boss_Beam_Attack_New("Dormant",18,scr_Boss_Beam_Frame(beamstart));
-        }
-		*/
-        
     }
 
     if bossActiveAttack[1] = 2 {
@@ -500,9 +479,9 @@ if bossActiveAttackDelay[1] <= 0 and bossPatternCooldown <= 0 and bossPatternCou
 		
 		
         if bossPatternCount < 280 {
-            scr_Boss_Beam_Attack("Active",24);  
+            scr_Boss_Beam_Attack(24,true);  
         } else {
-            scr_Boss_Beam_Attack("Dormant",24);  
+            scr_Boss_Beam_Attack(24);  
         }
     }
 	

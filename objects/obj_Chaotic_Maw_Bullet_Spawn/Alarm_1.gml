@@ -1,5 +1,5 @@
 dir = -10 + random(20);
-    with instance_create(x,y,obj_Chaotic_Maw_Bullet) {
+    with instance_create_depth(x,y,0,obj_Chaotic_Maw_Bullet) {
         scr_Bullet_Replicate_Properties();
 		sprite_index = spr_Chaotic_Big_Shot;
         bulletsize = 0.5;

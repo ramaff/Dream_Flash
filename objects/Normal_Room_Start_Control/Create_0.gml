@@ -12,13 +12,9 @@ global.orbit[3] = 0;
 global.orbit[999] = -1000;
 
 
-instance_create((room_width / 2) + global.soulSpawnXAdd,(room_height / 2) + global.soulSpawnYAdd, obj_Basic_Soul);
+instance_create_depth((room_width / 2) + global.soulSpawnXAdd,(room_height / 2) + global.soulSpawnYAdd,-1, obj_Basic_Soul);
 
 scr_Wall_Form();
-
-instance_create(x,y,obj_Environment_Emitter)
-
-scr_Hazard_Form();
 
 scr_T04();
 

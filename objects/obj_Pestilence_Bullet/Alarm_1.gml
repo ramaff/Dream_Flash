@@ -1,6 +1,6 @@
 alarm[1] = 6 + irandom(6);
 
-with instance_create(x,y,obj_Poison_Pool) {
+with instance_create_depth(x,y,0,obj_Poison_Pool) {
     scr_Bullet_Replicate_Properties();
 	image_speed = 0.2;
     sprite_index = spr_Corrosive_Pool;

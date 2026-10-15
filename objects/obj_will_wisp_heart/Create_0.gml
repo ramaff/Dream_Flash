@@ -17,7 +17,7 @@ death_sprite = spr_Wisp_Mask_Heart_ko
 boss_palette = spr_boss_template_palette;
 boss_palette_index = champ;
 
-with instance_create(x,y,obj_will_wisp_mask) {
+with instance_create_depth(x,y,0,obj_will_wisp_mask) {
 	target = other.id
 	
 	boss_value = 59

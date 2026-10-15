@@ -67,7 +67,7 @@ if bossActiveAttackDelay[1] <= 0 and bossActiveAttackCooldown[1] <= 0 and bossAc
     }
 	if bossActiveAttack[1] = 5 {
 		bossActiveAttackDelay[1] = 20;
-		jumpDirection = "Up";
+		jumpDirection = JUMP_SIDE.UP;
 		jumpHeight = 0;
 		
         scr_Boss_Dash_Setup();
@@ -241,7 +241,7 @@ if (bossActiveAttack[1] = 5 and (bossActiveAttackDelay[1] > 0)) {
 	}
 } 
 if bossActiveAttack[1] = 5 and (bossActiveAttackDelay[1] < 0) {
-	if jumpDirection = "Down" {
+	if jumpDirection = JUMP_SIDE.DOWN {
 		sprite_index = spr_Amorphous_Prime_Fall_Down;	
 	} else {
 		sprite_index = spr_Amorphous_Prime_Spring_Up;	
@@ -276,7 +276,7 @@ if state = states.jumping {
 	
 		//sprite_index = spr_Agony_Amorphous_Hop;
 	/*} else*/ if jumpHeight <= 10 {
-		if jumpDirection = "Down" {
+		if jumpDirection = JUMP_SIDE.DOWN {
 			state = states.normal;
 		}
 		if bossActiveAttackDuration[1] <= 0 {
@@ -305,7 +305,7 @@ if bossActiveAttack[1] = 1 || bossActiveAttack[1] = 3 || bossActiveAttack[1] = 4
 		if image_index > 6 {
 			image_index = 6;		
 		}
-		if jumpDirection = "Down" {
+		if jumpDirection = JUMP_SIDE.DOWN {
 			if image_index < 7 {
 				image_index = 7;	
 			}
@@ -321,7 +321,7 @@ if bossActiveAttack[1] = 1 || bossActiveAttack[1] = 3 || bossActiveAttack[1] = 4
 		}
 	}
 	/*
-	if jumpDirection = "Down" and bossPatternCount <= 1 {
+	if jumpDirection = JUMP_SIDE.DOWN and bossPatternCount <= 1 {
 		if image_index < 11 {
 			image_index = 11;	
 		}

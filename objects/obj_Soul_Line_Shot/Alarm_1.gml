@@ -1,6 +1,6 @@
 alarm[1] = 6;
 
-with instance_create(x,y,obj_Delayed_Home_Bullet) {
+with instance_create_depth(x,y,0,obj_Delayed_Home_Bullet) {
     scr_Bullet_Replicate_Properties();
     sprite_index = spr_Glowy_Night_Shot;
     bulletspeed = other.bulletspeed * (0.01 + random(0.04));

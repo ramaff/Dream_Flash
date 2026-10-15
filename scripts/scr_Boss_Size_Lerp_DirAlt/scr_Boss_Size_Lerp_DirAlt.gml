@@ -10,6 +10,4 @@ function scr_Boss_Size_Lerp_DirAlt(argument0) {
 
 	image_xscale = facing_direction * abs(bossSizeX);
 	image_yscale = bossSizeY;
-
-
 }

@@ -22,7 +22,7 @@ if instance_exists(obj_Soul_Parent) and currentphase = 1 {
     var xx = lengthdir_x(dist * 0.66,ang);
     var yy = lengthdir_y(dist * 0.66,ang);
     
-    with instance_create(x + xx,y + yy,obj_Thought) {
+    with instance_create_depth(x + xx,y + yy,-1,obj_Thought) {
         image_index = 0;
 		depth = other.depth + 50;
     }
@@ -30,7 +30,7 @@ if instance_exists(obj_Soul_Parent) and currentphase = 1 {
     xx = lengthdir_x(dist * 0.33,ang);
     yy = lengthdir_y(dist * 0.33,ang);
     
-    with instance_create(x + xx,y + yy,obj_Thought) {
+    with instance_create_depth(x + xx,y + yy,-1,obj_Thought) {
         image_index = 1;
 		depth = other.depth + 50;
     }
@@ -267,14 +267,8 @@ if bossActiveAttackDelay[1] <= 0 and bossPatternCooldown <= 0 and bossPatternCou
 		scr_Easy_Boss_Beam_Shoot(bossPatternCountMax, 35);
     
         if (bossPatternCount < (bossPatternCountMax - 20)) {
-			
-	        //scr_Boss_Beam_Attack_New("Active",35,scr_Boss_Beam_Frame(beamstart));
-            
 			var aacc = (bossPatternCountMax - bossPatternCount) / 120;
 	        bossPatternDirection += 0.25 + aacc;
-         
-        } else {
-            //scr_Boss_Beam_Attack_New("Dormant",35,scr_Boss_Beam_Frame(beamstart)); 
         }
         
         if ((bossPatternCount mod 20 = 0) and (bossPatternCount > 0) and (bossPatternCount < bossPatternCountMax - 30)) {

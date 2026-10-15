@@ -1,6 +1,6 @@
 dir = -10;
 //repeat(3) {
-    with instance_create(x,y,obj_Homing_Bullet) {
+    with instance_create_depth(x,y,0,obj_Homing_Bullet) {
         scr_Bullet_Replicate_Properties();
 		bulletlifespan = 400;
 		alarm[0] = bulletlifespan;

@@ -7,7 +7,7 @@ function scr_M01(){
 
 	if (global.roomtime = 360 || global.roomtime = 720) {
 		repeat(global.M[1]) {
-		    with instance_create(x,y, obj_Wandering_Soul) {
+		    with instance_create_depth(x,y,0, obj_Wandering_Soul) {
 				followtarget = noone;
 				scr_Minion_Follow_Adjust()
 			}

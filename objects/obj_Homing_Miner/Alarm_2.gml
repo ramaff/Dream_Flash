@@ -1,5 +1,5 @@
 
-with instance_create(x,y,obj_Explode_Hit) {
+with instance_create_depth(x,y,0,obj_Explode_Hit) {
     scr_Bullet_Replicate_Properties();
     sprite_index = spr_Exploding_Shot;
     image_speed = 0;
@@ -14,7 +14,7 @@ with instance_create(x,y,obj_Explode_Hit) {
 
 var dir = random(360);
 repeat(8) {
-    with instance_create(x,y,obj_Basic_Bullet) {
+    with instance_create_depth(x,y,0,obj_Basic_Bullet) {
         scr_Bullet_Replicate_Properties();
 		bulletlifespan = 300;
 		alarm[0] = bulletlifespan;

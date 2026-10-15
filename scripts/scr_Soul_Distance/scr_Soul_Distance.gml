@@ -4,5 +4,4 @@ function scr_Soul_Distance(xx = x, yy = y) {
 	} else {
 		return point_distance(xx, yy, obj_Soul_Parent.perX, obj_Soul_Parent.perY);
 	}
-
 }

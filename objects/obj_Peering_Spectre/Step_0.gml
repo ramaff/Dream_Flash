@@ -282,7 +282,7 @@ if bossActiveAttackDelay[1] <= 0 and bossPatternCooldown <= 0 and bossPatternCou
 		var beamstart = 120 - bossPatternCount
     
         if bossPatternCount < 100 {
-            scr_Boss_Beam_Attack_New("Active",24,scr_Boss_Beam_Frame(beamstart));  
+            scr_Boss_Beam_Attack_New(24,min(beamstart,2),true);  
 			souldir = scr_Soul_Point();
 			var adif = angle_difference(bossPatternDirection, souldir);
             if adif < 0 {
@@ -292,7 +292,7 @@ if bossActiveAttackDelay[1] <= 0 and bossPatternCooldown <= 0 and bossPatternCou
                 bossPatternDirection -= 0.3;
             }
         } else {
-            scr_Boss_Beam_Attack_New("Dormant",24,scr_Boss_Beam_Frame(beamstart));   
+            scr_Boss_Beam_Attack_New(24,min(beamstart,2));   
         }
     
     }

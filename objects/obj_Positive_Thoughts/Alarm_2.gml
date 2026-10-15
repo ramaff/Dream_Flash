@@ -1,6 +1,6 @@
 scr_Minion_Reload();
 
-with instance_create(x,y,obj_Positive_Essence) {
+with instance_create_depth(x,y,0,obj_Positive_Essence) {
     PositiveType = 1 + irandom(4);
     if PositiveType = 1 {
         sprite_index = spr_Strength_Up_Item;

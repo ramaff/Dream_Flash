@@ -1,7 +1,6 @@
 // Script assets have changed for v2.3.0 see
 // https://help.yoyogames.com/hc/en-us/articles/360005277377 for more information
 function scr_H07(){
-		
 	var _xx = x + soulCurrentHorizontalSpeed;
 	var _yy = y + soulCurrentVerticalSpeed;
 	var _pow = 10 * global.soulheartboost;
@@ -13,6 +12,4 @@ function scr_H07(){
 	var _dir = point_direction(x, y, _xx, _yy)
 				
 	scr_Fart(_xx, _yy, _dist, _dir, _pow, _poison_pow, _poison_size, _poison_sprite_size)
-
-
 }

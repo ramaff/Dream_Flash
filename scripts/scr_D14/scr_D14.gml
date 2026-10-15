@@ -1,6 +1,5 @@
 function scr_D14() {
 	// Location Soul Move Around Step
-
 	var _move_speed = sqrt((soulCurrentHorizontalSpeed * soulCurrentHorizontalSpeed) + (soulCurrentVerticalSpeed * soulCurrentVerticalSpeed))
 	
 	if _move_speed > 0 {
@@ -24,9 +23,6 @@ function scr_D14() {
 		global.D14Trigger++;
 		var color = make_color_rgb(0, 255, 84);
 		
-		/*if global.D14Trigger mod 10 = 0 {
-			scr_Particle_Burst(obj_Wind_Particle, spr_Soul_Big_Bit, color, color, 1, 2 + _move_speed, _move_direction - 180, 180, 20, 0.3 + random(0.15), 30 + random(15), false)
-		} */
 		if global.D14Trigger >= 20 {
 			scr_Disk_Effect(15, 0.75, color);
 			global.D14Trigger = 0;

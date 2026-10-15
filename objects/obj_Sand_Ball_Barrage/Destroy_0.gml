@@ -3,7 +3,7 @@
 dir = -45 + (random(90));
     repeat(12) {
         dir += 30;
-        with instance_create(x,y,obj_Basic_Bullet) {
+        with instance_create_depth(x,y,0,obj_Basic_Bullet) {
             bulletlifespan = 300;
             scr_Bullet_Replicate_Properties();
             sprite_index = spr_Glowy_Enemy_Shot;

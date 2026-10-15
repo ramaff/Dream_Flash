@@ -6,7 +6,7 @@ for(var _i = 0; _i < 3; _i++) {
 		_butt = id;
 	} */
 	heart[_i] = {
-		"heart_id": 1,
+		"heart_id": HEART_TYPE.NORMAL,
 		"health": 20,
 		"max_health": 20,
 		"health_decay": 0,
@@ -16,7 +16,7 @@ for(var _i = 0; _i < 3; _i++) {
 }
 
 global.currentheart = 2;
-global.currenthearttype = 1;
+global.currenthearttype = HEART_TYPE.NORMAL;
 
 heart_slot_info = []
 heart_script = noone;

@@ -14,7 +14,7 @@ if instance_exists(obj_Fleeing_Twin_Horror) and currentphase = 1 {
 	    var xx = lengthdir_x(dist * 0.1 * num,ang);
 	    var yy = lengthdir_y(dist * 0.1 * num,ang);
     
-	    with instance_create(x + xx,y + yy,obj_Thought) {
+	    with instance_create_depth(x + xx,y + yy,-1,obj_Thought) {
 			sprite_index = spr_Boss_Chain;
 	        image_index = 0;
 	    }
@@ -110,7 +110,7 @@ if bossActiveAttack[1] = 3 and bossActiveAttackDuration[1] > 0 {
 	    var xx = lengthdir_x(dist * 0.1 * num,ang);
 	    var yy = lengthdir_y(dist * 0.1 * num,ang);
     
-	    with instance_create(x + xx,y + yy,obj_Thought) {
+	    with instance_create_depth(x + xx,y + yy,-1,obj_Thought) {
 			sprite_index = spr_Soul_Chain;
 	        image_index = 0;
 	    }

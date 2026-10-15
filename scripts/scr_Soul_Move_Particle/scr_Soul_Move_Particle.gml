@@ -42,7 +42,7 @@ function scr_Soul_Move_Particle(xx, yy, type, _blend = c_white){
 	}
 	
 	if type = "Teleport" {
-		with instance_create(xx + partx - (partrad / 2) + random(partrad), yy + 12 - (partrad / 2) + random(partrad),obj_Friction_Part) {
+		with instance_create_depth(xx + partx - (partrad / 2) + random(partrad), yy + 12 - (partrad / 2) + random(partrad), 0,obj_Friction_Part) {
 		
 			sprite_index = parts;
 		
@@ -63,7 +63,7 @@ function scr_Soul_Move_Particle(xx, yy, type, _blend = c_white){
 
 		}
 	} else {
-		with instance_create(xx + partx - (partrad / 2) + random(partrad), yy + 12 - (partrad / 2) + random(partrad),obj_Soul_Trail) {
+		with instance_create_depth(xx + partx - (partrad / 2) + random(partrad), yy + 12 - (partrad / 2) + random(partrad), 0,obj_Soul_Trail) {
 		
 			sprite_index = parts;
 		

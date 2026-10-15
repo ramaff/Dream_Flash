@@ -4,7 +4,7 @@ dir = 0;
 spd = 4;
     repeat(1) {
         spd += 5;
-        with instance_create(x + lengthdir_x(64, image_angle),y + lengthdir_y(64, image_angle),obj_Basic_Bullet) {
+        with instance_create_depth(x + lengthdir_x(64, image_angle),y + lengthdir_y(64, image_angle),0,obj_Basic_Bullet) {
             scr_Bullet_Replicate_Properties();
             sprite_index = spr_Flash_Shot;
             bulletspeed = other.bulletspeed * 2;

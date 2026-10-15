@@ -132,14 +132,16 @@ if !scr_Room_Leavable() {
     scr_Mini_Map();
 	
     
-	if (keyboard_check(ord(global.gameMapExpand)) || InputCheck(INPUT_VERB.SPECIAL) ) and instance_number(obj_new_mega_map) == 0 {
-        instance_create_depth(0,0,depth,obj_new_mega_map)
-	}
-	if !keyboard_check(ord(global.gameMapExpand)) and !InputCheck(INPUT_VERB.SPECIAL) {
-		with obj_new_mega_map{
-            instance_destroy()
+	if InputPressed(INPUT_VERB.SPECIAL){
+        if !instance_exists(obj_new_mega_map){
+            instance_create_depth(0,0,depth,obj_new_mega_map)
         }
-    }
+        else if instance_exists(obj_new_mega_map){
+        	with obj_new_mega_map{
+                instance_destroy()
+            }
+        }
+	}
 
     var _rm_type = global.floor[global.currentroom,0];
     

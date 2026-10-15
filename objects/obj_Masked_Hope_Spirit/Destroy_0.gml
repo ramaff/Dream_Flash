@@ -4,7 +4,7 @@ global.recollectionBoss[bossValue]++;
 
 if currentphase >= finalphase
 if bosshealth <= 0 {
-	scr_Soul_Spiritual_Add("Hope");
+	scr_Soul_Spiritual_Add(SPIRIT_TYPE.HOPE);
 	global.soulhope += 5;
 	scr_Stat_Up_Indication(7);
 }

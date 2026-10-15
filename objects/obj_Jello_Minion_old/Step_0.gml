@@ -9,7 +9,7 @@ if bossActiveAttackDelay[1] <= 0 and bossActiveAttackCooldown[1] <= 0 and bossAc
 	state = states.normal;
 	
     if bossActiveAttack[1] = 1 {
-		jumpDirection = "Up";
+		jumpDirection = JUMP_SIDE.UP;
 		jumpHeight = 0;
 		
         scr_Boss_Dash_Setup();
@@ -56,7 +56,7 @@ if state = states.jumping {
 	if jumpHeight > 10 {
 		image_index = 1;
 	} else {
-		if jumpDirection = "Down" {
+		if jumpDirection = JUMP_SIDE.DOWN {
 			state = states.normal;
 		}
 		image_index = 0;

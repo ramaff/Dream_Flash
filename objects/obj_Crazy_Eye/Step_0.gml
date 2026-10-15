@@ -316,13 +316,7 @@ if bossActiveAttackDelay[1] <= 0 and bossPatternCooldown <= 0 and bossPatternCou
 		boss_xoffset = 5;
     
 		scr_Easy_Boss_Beam_Shoot(bossPatternCountMax, 25);
-        /*var beamFr = min(5,floor((bossPatternCountMax - bossPatternCount) / 5));
-        if bossPatternCount < (bossPatternCountMax - 30) {
-            scr_Boss_Beam_Attack_New("Active",25,beamFr);  
-        } else {
-            scr_Boss_Beam_Attack_New("Dormant",25,beamFr);    
-        } */
-		
+
 		var beamMoveSpeed = (bossPatternCountMax - bossPatternCount) / 40;
 		y -= beamMoveSpeed;
 		x = scr_Converge(x, obj_Soul_Parent.perX, beamMoveSpeed);
@@ -395,14 +389,7 @@ if bossActiveAttackDelay[1] <= 0 and bossPatternCooldown <= 0 and bossPatternCou
 		boss_yoffset = -60;
 		
 		scr_Easy_Boss_Beam_Shoot(bossPatternCountMax, 25);
-		/*
-		var beamFr = min(5,floor((bossPatternCountMax - bossPatternCount) / 5));
-        if bossPatternCount < (bossPatternCountMax - 30) {
-            scr_Boss_Beam_Attack_New("Active",25,beamFr);  
-        } else {
-            scr_Boss_Beam_Attack_New("Dormant",25,beamFr);    
-        } */
-		
+
 		var beamMoveSpeed = (bossPatternCountMax - bossPatternCount) / 1500;
 		bossPatternDirection = scr_Converge(bossPatternDirection, scr_Soul_Point(), beamMoveSpeed);
 		

@@ -1,21 +1,21 @@
 if global.currentchapter = 1 {
-instance_create(0,0,obj_Sparkle_Emitter);
-//draw_background_part(bg_Flash,0,0,992,992,528,80);
+    repeat(225) {
+        instance_create_depth(random(room_width),random(room_height),0,obj_Flash_Sparkle)
+    }
 }
 if global.currentchapter = 2 {
-instance_create(0,0,obj_Heart_Emitter);
-//draw_background_part(bg_Feel,0,0,992,992,528,80);
+    //there was no effect
 }
 if global.currentchapter = 3 {
-instance_create(0,0,obj_Dream_Emitter);
-//draw_background_part(bg_Dream,0,0,992,992,528,80);
+    //the object did nothing
 }
 if global.currentchapter = 4 {
-instance_create(0,0,obj_Sparkle_Emitter);
-//draw_background_part(bg_Nightmare,0,0,992,992,528,80);
+    repeat(225) {
+        instance_create_depth(random(room_width),random(room_height),0,obj_Flash_Sparkle)
+    }
 }
-instance_create(x,y,obj_Charge_Indicator);
-with instance_create(room_width / 2,room_height / 2,obj_LightS) {
+instance_create_depth(x,y,-1000000,obj_Charge_Indicator);
+with instance_create_depth(room_width / 2,room_height / 2, 0,obj_LightS) {
     target = obj_Soul_Parent;
 	lightsize = 1;
 }
@@ -45,9 +45,6 @@ if global.floor[global.currentroom, 3] >= 1280 and variable_struct_exists(_large
 	global.floor[global.currentroom,4] = variable_struct_get(_large_bgs, _bg);
 }
 
-properTileSet = ts_Flash_Tiles;
-properTileFall = ts_Flash_Fall_Out;
-
 xx = (room_width / 2);
 yy = (room_height / 2);
 
@@ -57,17 +54,11 @@ bg_yy = (room_height / 2 - 400) - 200 + random(400);
 var tilesize = 64;
 
 
-deepest_layer = instance_create(x, y, obj_background_drawing);
-deepest_layer.depth = 100000000;
+deepest_layer = instance_create_depth(x, y, 100000000, obj_background_drawing);
 
-deeper_layer = instance_create(x, y, obj_background_drawing);
-deeper_layer.depth = 1000000;
+deeper_layer = instance_create_depth(x, y, 1000000, obj_background_drawing);
 
-deep_layer = instance_create(x, y, obj_background_drawing);
-deep_layer.depth = 10000;
-
-//forward_layer = instance_create(x, y, obj_background_drawing);
-//forward_layer.depth = -100;
+deep_layer = instance_create_depth(x, y, 10000, obj_background_drawing);
 	
 var roomBG = global.floor[global.currentroom,4];
 var bgType = "Flash";

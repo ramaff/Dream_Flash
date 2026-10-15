@@ -18,7 +18,4 @@ function scr_Wall_Phase_Sometimes() {
 
 		bossDashDirection = direction;
 	}
-
-
-
 }

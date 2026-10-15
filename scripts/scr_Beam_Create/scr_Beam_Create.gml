@@ -119,7 +119,7 @@ function scr_Beam_Create(shxx, shyy, beamseg, beamdir, curvedir, beamstop, beamx
 						
 						_current_burst_stats.Shot_Hit_Again = 1
 						
-						with instance_create(shxx + beamxx,shyy + beamyy,obj_Beam_Shot) {
+						with instance_create_depth(shxx + beamxx,shyy + beamyy,0,obj_Beam_Shot) {
 							var _v_shot_air_burst_stats = _current_burst_stats
 					
 							shot_stats = scr_Duplicate_Shot_Stats(_v_shot_air_burst_stats, variable_clone(_original_shot_stats), dir);
@@ -159,7 +159,7 @@ function scr_Beam_Create(shxx, shyy, beamseg, beamdir, curvedir, beamstop, beamx
 		shot_stats.Shot_Hit_Again = 0;
 		
 		if (beamseg != beamtotalsegs || beamtype = 3) {
-			with instance_create(shxx + beamxx,shyy + beamyy,obj_Beam_Shot) {
+			with instance_create_depth(shxx + beamxx,shyy + beamyy,0,obj_Beam_Shot) {
 
 				shot_stats = scr_Duplicate_Shot_Stats(_original_shot_stats, _original_shot_stats);
 				

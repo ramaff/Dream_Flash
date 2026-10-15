@@ -8,7 +8,7 @@ function scr_Swap_Heart(_heart_id) {
 	
 	switch(_heart_id) {
 	
-		case 2:
+		case HEART_TYPE.MINI:
 			_heart_stats = {
 				"ssize": -0.3,
 				"spowerfactor": -2,
@@ -17,7 +17,7 @@ function scr_Swap_Heart(_heart_id) {
 				"smovementfactor": 0.3
 			}
 			break;
-		case 4:
+		case HEART_TYPE.JUMBO:
 			_heart_stats = {
 				"ssize": 0.3,
 				"spowerfactor": 3,
@@ -26,7 +26,7 @@ function scr_Swap_Heart(_heart_id) {
 				"smovementfactor": -0.3
 			}
 			break;
-		case 12:
+		case HEART_TYPE.LIGHTNING:
 			_heart_stats = {
 				"senergyregenfactor": 0.3
 			}

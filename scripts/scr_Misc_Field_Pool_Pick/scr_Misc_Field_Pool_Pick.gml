@@ -1,10 +1,8 @@
 // Script assets have changed for v2.3.0 see
 // https://help.yoyogames.com/hc/en-us/articles/360005277377 for more information
 function scr_Misc_Field_Pool_Pick(){
-	//var type = choose(1,1,1,2,2,2,3,4,5,6,7,8,9,10);
 	var itemcount = 0;
 	
-	//var _g_size = ceil(ds_list_size(global.g_item_pool) / 2)
 	var _g_size = 0;
 	var _h_size = ceil(ds_list_size(global.h_item_pool) / 1.5)
 	var _m_size = ceil(ds_list_size(global.m_item_pool) / 2)
@@ -63,7 +61,5 @@ function scr_Misc_Field_Pool_Pick(){
 	itemcount += _w_size
 	//if _type <= itemcount { /// W
 	return scr_Pool_Pick(global.w_item_pool);
-	
-	//return scr_Misc_Field_Pool_Pick()
 	
 }

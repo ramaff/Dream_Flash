@@ -1,35 +1,32 @@
 function scr_default_attack_settings_v2() {
-	
-		// XB05
-		boss_bullet_count_modded = false;
-		
-		attack_stats = scr_base_bullet_stats(bossbulletspeed * 1.5, bosspower, bossaccuracy, id);
+    boss_bullet_count_modded = false;
     
-	    minion_count = 1;
-	    minion_type = noone;
-	    minion_maxhealth = bossmaxhealth;
-	    minion_health = bossmaxhealth;
-	    minion_power = bosspower;
-	    minion_knockdefense = bossknockdefense - 10;
-	    minion_movespeed = bossmovespeed;
-	    minion_attackspeed = bossattackspeed;
-	    minion_accuracy = bossaccuracy;    
-	    minion_defense = bossdefense;
-	    minion_bulletspeed = bossbulletspeed;
-	    minion_knockbackforce = bossknockbackforce;
-	    minion_contactdamage = bosscontactdamage;
-		minion_target = other.id;
-		minion_spawn_animation = noone;
-		
-		deadknockdirection = 0;
-		minion_dir = 0;
-		minion_speed = 0;
-		minion_height = 0;
-		minion_attack_cooldown = 90;
-	
-		minion_xx = 0;
-		minion_yy = 0;
+    attack_stats = scr_base_bullet_stats(bossbulletspeed * 1.5, bosspower, bossaccuracy, id);
 
+    minion_count = 1;
+    minion_type = noone;
+    minion_maxhealth = bossmaxhealth;
+    minion_health = bossmaxhealth;
+    minion_power = bosspower;
+    minion_knockdefense = bossknockdefense - 10;
+    minion_movespeed = bossmovespeed;
+    minion_attackspeed = bossattackspeed;
+    minion_accuracy = bossaccuracy;    
+    minion_defense = bossdefense;
+    minion_bulletspeed = bossbulletspeed;
+    minion_knockbackforce = bossknockbackforce;
+    minion_contactdamage = bosscontactdamage;
+    minion_target = other.id;
+    minion_spawn_animation = noone;
+    
+    deadknockdirection = 0;
+    minion_dir = 0;
+    minion_speed = 0;
+    minion_height = 0;
+    minion_attack_cooldown = 90;
+
+    minion_xx = 0;
+    minion_yy = 0;
 }
 
 function scr_base_bullet_stats(_boss_bullet_speed, _bullet_power, _bullet_accuracy = 1, _bullet_origin = bullet_stats.bullet_origin) {

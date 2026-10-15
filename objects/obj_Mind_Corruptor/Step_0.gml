@@ -273,12 +273,7 @@ if bossActiveAttackDelay[1] <= 0 and bossPatternCooldown <= 0 and bossPatternCou
 		scr_Easy_Boss_Beam_Shoot(bossPatternCountMax, 30);
 			
 	    if bossPatternCount < 280 {
-			
-	        //scr_Boss_Beam_Attack_New("Active",35,scr_Boss_Beam_Frame(beamstart));
-				
 			bossPatternDirection += 0.5 + ((280 - bossPatternCount) / 560);
-	    } else {
-	        //scr_Boss_Beam_Attack_New("Dormant",35,scr_Boss_Beam_Frame(beamstart));
 	    }
 			
 		if bossPatternCount mod (15) = 0 {

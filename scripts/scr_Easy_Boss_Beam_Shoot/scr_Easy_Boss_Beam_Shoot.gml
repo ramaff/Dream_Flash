@@ -4,9 +4,9 @@ function scr_Easy_Boss_Beam_Shoot(beamStartCount, beamOffset){
 
 	var beamFr = min(5,floor((beamStartCount - bossPatternCount) / 5));
     if bossPatternCount < (beamStartCount - 30) {
-        scr_Boss_Beam_Attack_New("Active",beamOffset,beamFr);  
+        scr_Boss_Beam_Attack_New(beamOffset,beamFr,true);  
     } else {
-        scr_Boss_Beam_Attack_New("Dormant",beamOffset,beamFr);    
+        scr_Boss_Beam_Attack_New(beamOffset,beamFr);    
     }
 
 }

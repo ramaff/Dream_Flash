@@ -4,7 +4,7 @@ global.recollectionBoss[bossValue]++;
 
 if currentphase >= finalphase
 if bosshealth <= 0 {
-scr_Soul_Spiritual_Add("Paranoia");
+scr_Soul_Spiritual_Add(SPIRIT_TYPE.PARANOIA);
 }
 
 global.soulparanoia += 3;

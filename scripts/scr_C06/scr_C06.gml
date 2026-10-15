@@ -1,8 +1,5 @@
 function scr_C06() {
 	// Location Soul Hit by Bullet Event
-    
-	//var val = irandom(2 * global.C[6]) + irandom(60);
-    
 	if global.roomtime mod round(20 / global.C[6]) = 0 {
 		if (instance_exists(obj_Bullet_Parent) and (distance_to_object(obj_Bullet_Parent) < 100)) {
 		    var tar = instance_nearest(x,y,obj_Bullet_Parent).id;
@@ -14,12 +11,6 @@ function scr_C06() {
 			}
 			
 			scr_Refresh_Soul(4)
-			
-			
-			//scr_Essence_Defense_Field();
 		}
 	}
-
-
-
 }

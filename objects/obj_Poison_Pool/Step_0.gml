@@ -25,6 +25,6 @@ if alarm[0] <= 15 {
 } 
 	
 	
-	if bulletblend != 0 {
-		scr_Bullet_Blend(bulletblend);	
-	}
+if bulletblend != 0 {
+    image_blend = bulletblend
+}

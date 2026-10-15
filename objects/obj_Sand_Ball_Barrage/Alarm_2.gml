@@ -6,7 +6,7 @@ arraydir = scr_Angle_Converge(arraydir, scr_Soul_Point(), 7.5)
 
 
 repeat(1) {
-    with instance_create(x,y,obj_Phase_Bullet) {
+    with instance_create_depth(x,y,0,obj_Phase_Bullet) {
         depth = -1.5;
         bulletlifespan = 240;
         scr_Bullet_Replicate_Properties();

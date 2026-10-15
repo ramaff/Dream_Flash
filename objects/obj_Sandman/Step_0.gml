@@ -30,7 +30,7 @@ if currentphase = 3 and thoughtOut = 0 {
     thoughtOut = 1;
     global.bosscount += 1;
     
-    with instance_create(x,y, obj_Sandman_Thought) {
+    with instance_create_depth(x,y,0, obj_Sandman_Thought) {
         champ = other.champ + 0.1;
         boost = other.boost;
 		bossValue = other.bossValue;

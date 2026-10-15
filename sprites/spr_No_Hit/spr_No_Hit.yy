@@ -11,7 +11,9 @@
   "DynamicTexturePage":false,
   "edgeFiltering":false,
   "For3D":false,
-  "frames":[],
+  "frames":[
+    {"$GMSpriteFrame":"v1","%Name":"25f7c185-ab3d-42bd-bdff-4e97dfd931f3","name":"25f7c185-ab3d-42bd-bdff-4e97dfd931f3","resourceType":"GMSpriteFrame","resourceVersion":"2.0",},
+  ],
   "gridX":0,
   "gridY":0,
   "height":32,
@@ -47,7 +49,7 @@
     },
     "eventStubScript":null,
     "eventToFunction":{},
-    "length":0.0,
+    "length":1.0,
     "lockOrigin":false,
     "moments":{
       "$KeyframeStore<MomentsEventKeyframe>":"",
@@ -65,12 +67,13 @@
     "showBackdropImage":false,
     "timeUnits":1,
     "tracks":[
-      {"$GMSpriteFramesTrack":"","builtinName":0,"events":[],"inheritsTrackColour":true,"interpolation":1,"isCreationTrack":false,"keyframes":{"$KeyframeStore<SpriteFrameKeyframe>":"","Keyframes":[],"resourceType":"KeyframeStore<SpriteFrameKeyframe>","resourceVersion":"2.0",},"modifiers":[],"name":"frames","resourceType":"GMSpriteFramesTrack","resourceVersion":"2.0","spriteId":null,"trackColour":0,"tracks":[],"traits":0,},
+      {"$GMSpriteFramesTrack":"","builtinName":0,"events":[],"inheritsTrackColour":true,"interpolation":1,"isCreationTrack":false,"keyframes":{"$KeyframeStore<SpriteFrameKeyframe>":"","Keyframes":[
+            {"$Keyframe<SpriteFrameKeyframe>":"","Channels":{
+                "0":{"$SpriteFrameKeyframe":"","Id":{"name":"25f7c185-ab3d-42bd-bdff-4e97dfd931f3","path":"sprites/spr_No_Hit/spr_No_Hit.yy",},"resourceType":"SpriteFrameKeyframe","resourceVersion":"2.0",},
+              },"Disabled":false,"id":"34bf0300-170f-4cd9-9103-b6023449fc45","IsCreationKey":false,"Key":0.0,"Length":1.0,"resourceType":"Keyframe<SpriteFrameKeyframe>","resourceVersion":"2.0","Stretch":false,},
+          ],"resourceType":"KeyframeStore<SpriteFrameKeyframe>","resourceVersion":"2.0",},"modifiers":[],"name":"frames","resourceType":"GMSpriteFramesTrack","resourceVersion":"2.0","spriteId":null,"trackColour":0,"tracks":[],"traits":0,},
     ],
-    "visibleRange":{
-      "x":0.0,
-      "y":0.0,
-    },
+    "visibleRange":null,
     "volume":1.0,
     "xorigin":16,
     "yorigin":16,

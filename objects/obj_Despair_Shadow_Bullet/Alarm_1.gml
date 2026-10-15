@@ -1,5 +1,5 @@
 
-        with instance_create(x,y,obj_Orbit_Bullet) {
+        with instance_create_depth(x,y,0,obj_Orbit_Bullet) {
             scr_Bullet_Replicate_Properties();
             bulletlifespan = 570 + random(60);
             alarm[0] = bulletlifespan;

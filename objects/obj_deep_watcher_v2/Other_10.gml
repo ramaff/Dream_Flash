@@ -10,7 +10,7 @@ var _seg_size = 128 * bullet_size;
 var _seg_tail = id;
 
 for(var _count = 0; _count < 17; _count++) {
-	with instance_create(_xx, _yy, bull) {
+	with instance_create_depth(_xx, _yy, 0, bull) {
 		scr_Bullet_Shoot_Properties();
 		bulletpower = 0;
 							
@@ -24,7 +24,7 @@ for(var _count = 0; _count < 17; _count++) {
 		}
 		direction = other.bullet_direction;
 		image_angle = direction;
-		scr_Spiritual_Stats_Boss_Bullet_Effects();
+		
 		
 		seg_tail = _seg_tail;
 		seg_distance = _seg_size;

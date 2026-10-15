@@ -27,7 +27,7 @@ if instance_number(obj_Item_Parent) = 0 and instance_number(obj_Main_Boss_Parent
 		boost = global.floor[global.currentroom,33];
 	}
 
-	scr_Boss_Summon(boss,champ,boost,difficulty,0);
+	scr_Boss_Summon(boss,champ,boost,difficulty);
 	
 	global.floor[global.currentroom,0] = "Chamber"
 	

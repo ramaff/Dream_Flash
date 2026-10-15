@@ -20,7 +20,7 @@ if instance_exists(obj_Boss_Parent) {
 }
 
 if scr_Chance(2) {
-	with instance_create(x,y,obj_Healthy_Essence) {
+	with instance_create_depth(x,y,0,obj_Healthy_Essence) {
 	    speed = 0.5 + random(0.8);
 	    friction = 0.01;
 	    direction = random(360);

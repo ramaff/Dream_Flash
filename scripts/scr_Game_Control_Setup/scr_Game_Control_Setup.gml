@@ -4,11 +4,9 @@ function scr_Game_Control_Setup() {
 	global.glasstime = 0;
 	global.currentdarkness = 0;
 	global.stagedamage = 10;
-	
-	global.cameramode = "Boss";
 
 	scr_Item_Variable_Setup();
-	global.weapon_stats = scr_Load_Weapon_Stats();
+	global.weapon_stats = scr_Import_Json("df_weapon_stats.json", json_parse);
 	global.item_stats = scr_Import_Json("df_item_stats.json", json_parse);
 	global.boss_stats = scr_Import_Json("df_boss_stats.json", json_parse);
 	global.tutorial_info = scr_Import_Json("df_tutorial_info.json", json_parse);

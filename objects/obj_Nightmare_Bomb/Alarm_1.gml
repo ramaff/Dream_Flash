@@ -4,7 +4,7 @@ var sfac = 0.8;
 repeat(12) {
 	sfac = 0.7;
 	repeat(2) {
-	    with instance_create(x,y,obj_Direction_Bullet) {
+	    with instance_create_depth(x,y,0,obj_Direction_Bullet) {
 	        scr_Bullet_Replicate_Properties();
 	        sprite_index = spr_Glowy_Enemy_Shot;
 	        bulletsize = 0.5;

@@ -44,7 +44,7 @@ if instance_number(obj_conga_line) <= total_num {
 			line_angle = scr_Soul_Point();
 		}
 		line_angle = round(line_angle / 90) * 90
-		with instance_create(xx,yy,obj_conga_line) {
+		with instance_create_depth(xx,yy,0,obj_conga_line) {
 			followtarget = ct;
 		
 			ct = id;

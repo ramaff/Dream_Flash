@@ -220,7 +220,7 @@ if bossActiveAttackDelay[1] <= 0 and bossPatternCooldown <= 0 and bossPatternCou
 				scr_Boss_Stretch("Vertical", 0.05);	
 			}
 			
-            scr_Boss_Beam_Attack("Active",35); 
+            scr_Boss_Beam_Attack(35,true); 
             
             souldir = scr_Soul_Point();
             var adif = angle_difference(bossPatternDirection, souldir);
@@ -242,7 +242,7 @@ if bossActiveAttackDelay[1] <= 0 and bossPatternCooldown <= 0 and bossPatternCou
 			}
          
         } else {
-            scr_Boss_Beam_Attack("Dormant",35);  
+            scr_Boss_Beam_Attack(35);  
         }
         
         if ((bossPatternCount mod 25 = 0) and (bossPatternCount > 0) and (bossPatternCount < bossPatternCountMax - 10)) {
@@ -338,7 +338,7 @@ if (bossActiveAttack[1] = 5 and (bossActiveAttackDelay[1] > 0)) {
 	}
 } 
 if bossActiveAttack[1] = 5 and (bossActiveAttackDelay[1] < 0) {
-	if jumpDirection = "Down" {
+	if jumpDirection = JUMP_SIDE.DOWN {
 		sprite_index = spr_Amorphous_Prime_Fall_Down;	
 	} else {
 		sprite_index = spr_Amorphous_Prime_Spring_Up;	
@@ -373,7 +373,7 @@ if state = states.jumping {
 	
 		//sprite_index = spr_Agony_Amorphous_Hop;
 	/*} else*/ if jumpHeight <= 10 {
-		if jumpDirection = "Down" {
+		if jumpDirection = JUMP_SIDE.DOWN {
 			state = states.normal;
 		}
 		if bossActiveAttackDuration[1] <= 0 {

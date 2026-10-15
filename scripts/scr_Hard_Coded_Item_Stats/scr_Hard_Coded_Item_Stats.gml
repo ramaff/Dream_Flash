@@ -494,55 +494,55 @@ function scr_Hard_Coded_Item_Stats(itemVal, items_to_add = 1, reload = false) {
 	if !reload {
 
 		if itemVal = "H01" {
-			scr_Add_New_Heart(1, 20)
+			scr_Add_New_Heart(HEART_TYPE.NORMAL, 20)
 		}
 		if itemVal = "H02" {
-			scr_Add_New_Heart(2, 20);
+			scr_Add_New_Heart(HEART_TYPE.MINI, 20);
 		}
 		if itemVal = "H03" {
-			scr_Add_New_Heart(3, 20, undefined, 2);
+			scr_Add_New_Heart(HEART_TYPE.SURVIVOR, 20, undefined, 2);
 		}
 		if itemVal = "H04" {
-			scr_Add_New_Heart(4, 40);
+			scr_Add_New_Heart(HEART_TYPE.JUMBO, 40);
 		}
 		if itemVal = "H05" {
-		    scr_Add_New_Heart(5, 20);
+		    scr_Add_New_Heart(HEART_TYPE.MECHANICAL, 20);
 		}
 		if itemVal = "H06" {
-		    scr_Add_New_Heart(6, 10);
+		    scr_Add_New_Heart(HEART_TYPE.UNDYING, 10);
 		}
 		if itemVal = "H07" {
-			scr_Add_New_Heart(7, 20);
+			scr_Add_New_Heart(HEART_TYPE.FART, 20);
 		}
 		if itemVal = "H08" {
-		    scr_Add_New_Heart(8, 20);
+		    scr_Add_New_Heart(HEART_TYPE.SPIKE, 20);
 		}
 		if itemVal = "H09" {
-		    scr_Add_New_Heart(9, 20);
+		    scr_Add_New_Heart(HEART_TYPE.BLEEDING, 20);
 		}
 		if itemVal = "H10" {
-		    scr_Add_New_Heart(10, 20);
+		    scr_Add_New_Heart(HEART_TYPE.MAGICIAN, 20);
 		}
 		if itemVal = "H11" {
-		    scr_Add_New_Heart(11, 20);
+		    scr_Add_New_Heart(HEART_TYPE.ROCKET, 20);
 		}
 		if itemVal = "H12" {
-		    scr_Add_New_Heart(12, 20);
+		    scr_Add_New_Heart(HEART_TYPE.LIGHTNING, 20);
 		}
 		if itemVal = "H13" {
-		    scr_Add_New_Heart(13, 20);
+		    scr_Add_New_Heart(HEART_TYPE.SCALEY, 20);
 		}
 		if itemVal = "H14" {
-		    scr_Add_New_Heart(14, 25);
+		    scr_Add_New_Heart(HEART_TYPE.BEAST, 25);
 		}
 		if itemVal = "H15" {
-		    scr_Add_New_Heart(15, 20);
+		    scr_Add_New_Heart(HEART_TYPE.RUBBER, 20);
 		}
 		if itemVal = "H16" {
-		    scr_Add_New_Heart(16, 20);
+		    scr_Add_New_Heart(HEART_TYPE.JELLO, 20);
 		}
 		if itemVal = "H17" {
-		    scr_Add_New_Heart(17, 20);
+		    scr_Add_New_Heart(HEART_TYPE.SOAPY, 20);
 		}
 	
 		if recoGroup = "I" and !reload {
@@ -647,47 +647,47 @@ function scr_Hard_Coded_Item_Stats(itemVal, items_to_add = 1, reload = false) {
 	
 
 		if itemVal = "J01" {
-			scr_Add_New_Heart(1, 20);
+			scr_Add_New_Heart(HEART_TYPE.NORMAL, 20);
 		    global.soulstrength += 4;
 		    obj_Soul_Parent.sstrength += 4;
 		    //global.J[1]++;
 		}
 		if itemVal = "J02" {
-		    scr_Add_New_Heart(1, 20);
+		    scr_Add_New_Heart(HEART_TYPE.NORMAL, 20);
 		    global.soulvitality += 4;
 		    obj_Soul_Parent.svitality += 4;
 		    //global.J[2]++;
 		}
 		if itemVal = "J03" {
-		    scr_Add_New_Heart(1, 20);
+		    scr_Add_New_Heart(HEART_TYPE.NORMAL, 20);
 		    global.soulessence += 4;
 		    obj_Soul_Parent.sessence += 4;
 		    //global.J[3]++;
 		}
 		if itemVal = "J04" {
-		    scr_Add_New_Heart(1, 20);
+		    scr_Add_New_Heart(HEART_TYPE.NORMAL, 20);
 		    global.souldexterity += 4;
 		    obj_Soul_Parent.sdexterity += 4;
 		    //global.J[4]++;
 		}
 		if itemVal = "J05" {
-		    scr_Add_New_Heart(1, 20);
+		    scr_Add_New_Heart(HEART_TYPE.NORMAL, 20);
 		    global.soulperception += 4;
 		    obj_Soul_Parent.sperception += 4;
 		    //global.J[5]++;
 		}
 		if itemVal = "J06" {
-		    scr_Add_New_Heart(1, 20);
+		    scr_Add_New_Heart(HEART_TYPE.NORMAL, 20);
 		    global.soulstate += 4;
 		    obj_Soul_Parent.sstate += 4;
 		    //global.J[6]++;
 		}
 		if itemVal = "J07" {
-		    scr_Add_New_Heart(1, 20);
+		    scr_Add_New_Heart(HEART_TYPE.NORMAL, 20);
 		    //global.J[7]++;
 		}
 		if itemVal = "J08" {
-		    scr_Add_New_Heart(1, 20);
+		    scr_Add_New_Heart(HEART_TYPE.NORMAL, 20);
 		    //global.J[8]++;
 		}
 
@@ -925,7 +925,7 @@ function scr_Hard_Coded_Item_Stats(itemVal, items_to_add = 1, reload = false) {
 	if itemVal = "OC02" {
 	    //global.OC[2]++;
 		if !reload {
-			scr_Add_New_Heart(52, 20);
+			scr_Add_New_Heart(HEART_TYPE.SECURE, 20);
 		}
 	}
 	if itemVal = "OC03" {

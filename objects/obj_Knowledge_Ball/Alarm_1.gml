@@ -2,7 +2,7 @@ if distance_to_object(obj_Soul) < 210 {
 if (bulletpower > (bulletpowermax / 2)) {
     dir = -10;
     repeat(3) {
-        with instance_create(x,y,obj_Basic_Bullet) {
+        with instance_create_depth(x,y,0,obj_Basic_Bullet) {
             scr_Bullet_Replicate_Properties();
             soulshotblock = 0;
             sprite_index = spr_White_Shot;

@@ -3,7 +3,7 @@ global.floor[global.currentroom,3] = floor(global.floor[global.currentroom,3] / 
 global.roomSizeX = global.floor[global.currentroom,3];
 global.roomSizeY = global.floor[global.currentroom,3];
 
-instance_create((room_width / 2) + global.soulSpawnXAdd,(room_height / 2) + global.soulSpawnYAdd, obj_Basic_Soul);
+instance_create_depth((room_width / 2) + global.soulSpawnXAdd,(room_height / 2) + global.soulSpawnYAdd,-1, obj_Basic_Soul);
 
 scr_Wall_Form();
 
@@ -15,10 +15,6 @@ global.orbit[2] = 0;
 global.orbit[3] = 0;
 global.orbit[999] = -1000;
 
-//scr_Room_Effect_Setup()
-
-//instance_create(0,0, obj_Medium_Room_Wall);
-
 global.bosscount = 0;
 global.bossval = 0;
 
@@ -27,14 +23,10 @@ boss = global.floor[global.currentroom,21];
 champ = global.floor[global.currentroom,22];
 boost = global.floor[global.currentroom,23];
 
-scr_Boss_Summon(boss,champ,boost,difficulty,0);
+scr_Boss_Summon(boss,champ,boost,difficulty);
 
 properSize = global.floor[global.currentroom,3];
 properBG = global.floor[global.currentroom,4];
-
-instance_create(x,y,obj_Environment_Emitter)
-
-scr_Hazard_Form();
 
 badSpiritSend = 0;
 

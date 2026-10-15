@@ -1,7 +1,7 @@
 /// @description Insert description here
 // You can write your code in this editor
 
-with instance_create(x,y,obj_Recollection_Menu_Butt) {
+with instance_create_depth(x,y,-1,obj_Recollection_Menu_Butt) {
 	event_perform(ev_mouse, ev_left_release)
 }
 with (obj_Recollection_Category_Butt) {

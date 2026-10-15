@@ -1,23 +1,19 @@
-function scr_Boss_Beam_Attack_New(beamActive, beamOffest, beamFrame) {
-	
+function scr_Boss_Beam_Attack_New(beamOffest, beamFrame, active = false) {
 	var beamseg = 1;
 	//var curvedir = other.Shot_Beam_Curve * (-1 + random(2))
 	
-	dir = -(bullet_spread * (bullet_count - 1) / 2);
-	beamdir = dir;
+	var dir = -(bullet_spread * (bullet_count - 1) / 2);
+	var beamdir = dir;
 	bulletNum = 0;
 		
-	beamxx = lengthdir_x(-6, beamdir)
-	beamyy = lengthdir_y(-6, beamdir)
+	var beamxx = lengthdir_x(-6, beamdir)
+	var beamyy = lengthdir_y(-6, beamdir)
 		
 	var splitsize = 40 * other.beamSize;
 	var beamtotalsegs = 3;
 	
-	beamHit = argument[0];
-	space = argument[1];
-	
 	var beamObj = obj_Beam_Bullet;
-	if beamActive = "Dormant" {
+	if beamActive == false{
 		beamObj = obj_Beam_Show;	
 	}
 	
@@ -75,16 +71,18 @@ function scr_Boss_Beam_Attack_New(beamActive, beamOffest, beamFrame) {
 			length = setbeamlength;	
 		}
         
+        var offsetx = 0
+        var offsety = 0
 	    if bossoffsetangle = 1 {
-	        var offsetx = lengthdir_x(boss_xoffset,angle);
-	        var offsety = lengthdir_y(boss_yoffset,angle);
+	        offsetx = lengthdir_x(boss_xoffset,angle);
+	        offsety = lengthdir_y(boss_yoffset,angle);
 	    } else {
-	        var offsetx = boss_xoffset;
-	        var offsety = boss_yoffset;
+	        offsetx = boss_xoffset;
+	        offsety = boss_yoffset;
 	    }
         
-	    bossxx[boss_beam_num] = x + offsetx + lengthdir_x(16+space,angle);
-	    bossyy[boss_beam_num] = y + offsety + lengthdir_y(16+space,angle);
+	    bossxx[boss_beam_num] = x + offsetx + lengthdir_x(16+beamOffest,angle);
+	    bossyy[boss_beam_num] = y + offsety + lengthdir_y(16+beamOffest,angle);
         
 	    //scr_Boss_Beam_Draw(angle,length);
 		
@@ -107,7 +105,7 @@ function scr_Boss_Beam_Attack_New(beamActive, beamOffest, beamFrame) {
 			
 			//beamSpr = beam_sprite;	
 			
-			with instance_create(bossxx[boss_beam_num] + beamxx,bossyy[boss_beam_num] + beamyy, beamObj) {
+			with instance_create_depth(bossxx[boss_beam_num] + beamxx,bossyy[boss_beam_num] + beamyy, 0, beamObj) {
 				scr_Bullet_Shoot_Properties();
 				alarm[0] = 1;
 	            //direction = other.bullet_direction + (other.dir) * ((40 + random(global.soulparanoia)) / 40);
@@ -134,11 +132,11 @@ function scr_Boss_Beam_Attack_New(beamActive, beamOffest, beamFrame) {
 			}
 		}
 		
-		if /*(beamseg = beamPartNum) and*/ beamActive != "Dormant" {
+		if active == true{
 			var dist = 20 + random(1300);
 			var beampartxx = lengthdir_x(dist, angle)
 			var beampartyy = lengthdir_y(dist, angle)
-			with instance_create(bossxx[boss_beam_num] + beampartxx - 10 + random(20), bossyy[boss_beam_num] + beampartyy - 10 + random(20),obj_Weapon_Trail) {
+			with instance_create_depth(bossxx[boss_beam_num] + beampartxx - 10 + random(20), bossyy[boss_beam_num] + beampartyy - 10 + random(20),0,obj_Weapon_Trail) {
 		
 				depth = other.depth + 2;
 		

@@ -104,7 +104,7 @@ if active_attack_delay <= 0 and active_attack_cooldown <= 0 and active_attack_du
 			var _yy = y + lengthdir_y(100, _ang)
 			_ang += 120
 			
-	        with instance_create(_xx, _yy, obj_Bullet_Portal) {
+	        with instance_create_depth(_xx, _yy,0, obj_Bullet_Portal) {
 				alarm[0] = 330;
 				
 			}

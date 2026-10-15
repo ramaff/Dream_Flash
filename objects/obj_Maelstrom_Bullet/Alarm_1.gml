@@ -1,7 +1,7 @@
 dir = bullDir;
     repeat(4) {
         dir += 90;
-        with instance_create(x,y,obj_Basic_Bullet) {
+        with instance_create_depth(x,y,0,obj_Basic_Bullet) {
             scr_Bullet_Replicate_Properties();
             sprite_index = spr_Glowy_Pink_Shot;
             bulletspeed = other.bulletspeed * 2.25;

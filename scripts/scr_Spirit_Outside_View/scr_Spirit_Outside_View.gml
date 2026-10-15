@@ -1,9 +1,10 @@
 function scr_Spirit_Outside_View() {
 	if currentphase = 1 {
+
 	    var vleft = camera_get_view_x(view);
 	    var vtop = camera_get_view_y(view);
-	    var vright = camera_get_view_x(view) + camera_get_view_width(view);
-	    var vbottom = camera_get_view_y(view) + camera_get_view_height(view);
+	    var vright = vleft + camera_get_view_width(view);
+	    var vbottom = vtop + camera_get_view_height(view);
     
 	    var rleft = 0;
 	    var rright = room_width;
@@ -19,8 +20,5 @@ function scr_Spirit_Outside_View() {
 	    if x < rleft || x > rright || y < rtop || y > rbottom {
 	        instance_destroy();
 	    }
-	}
-
-
-
+    }
 }

@@ -29,8 +29,4 @@ function scr_Boss_Attack_Step(_version = 1) {
 		active_attack_delay -= 1;
 		pattern_cooldown -= 1;
 	}
-
-
-
-
 }

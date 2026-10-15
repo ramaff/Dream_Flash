@@ -48,7 +48,7 @@ if global.gameParticles > 0 {
 		var xx = random(_area) - (_area / 2);
 		var yy = random(_area) - (_area / 2);
 	
-		with instance_create(x + xx,y + yy, asset_get_index(shot_stats.Shot_Trail_Type)) {
+		with instance_create_depth(x + xx,y + yy, 0, asset_get_index(shot_stats.Shot_Trail_Type)) {
 		
 			sprite_index = asset_get_index(other.shot_stats.Shot_Trail_Sprite);
 		

@@ -17,7 +17,7 @@ function scr_Mechanical_Turret_Spawns(){
 				followtar = id;
 			}
 		}
-		with instance_create(x,y,obj_Turret_Soul) {
+		with instance_create_depth(x,y,0,obj_Turret_Soul) {
 			followtarget = followtar
 		}
 		global.turretSpawnTime = 120 / ((160 + global.souldexterity + global.souldexterityTemp) / 160) / (sstatefirerate * ((200 + global.soulassurance + global.soulassuranceTemp) / 200) * ((10 + scr_Get_Status_Magnitude(id, "firerate_mult")) / 10));

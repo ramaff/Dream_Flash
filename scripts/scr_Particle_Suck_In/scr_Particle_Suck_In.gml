@@ -10,7 +10,7 @@ function scr_Particle_Suck_In(particletype = obj_Bullet_Trail_Target, particlesp
 			var xx = lengthdir_x(dist, angle)
 			var yy = lengthdir_y(dist, angle)
 	
-			with instance_create(x + xx,y + yy, particletype) {
+			with instance_create_depth(x + xx,y + yy, 0, particletype) {
 		
 				target = other.id;
 		

@@ -30,7 +30,7 @@ for(var i = 0; i < 10; i++) {
 	_xx += lengthdir_x(i * 3, 0);
 	_yy += lengthdir_y(i * 3, 0);
 		
-	with instance_create(_xx,_yy,obj_thought_chain) {
+	with instance_create_depth(_xx,_yy,0,obj_thought_chain) {
 		target = _ct;
 		target_weight = _tw;
 		
@@ -44,7 +44,7 @@ for(var i = 0; i < 10; i++) {
 	_tw = 2;
 }
 
-with instance_create(_xx,_yy,obj_sleep_hound) {
+with instance_create_depth(_xx,_yy,0,obj_sleep_hound) {
 	target = _ct;
 	target_weight = _tw;
 	

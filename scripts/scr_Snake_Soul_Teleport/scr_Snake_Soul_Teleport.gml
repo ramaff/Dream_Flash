@@ -8,7 +8,7 @@ function scr_Snake_Soul_Teleport() {
 		var ang = point_direction(x,y, obj_Astral_Indicator.x, obj_Astral_Indicator.y);
 		
 		repeat(3) {
-		    with instance_create(x + lengthdir_x(dis / 30 * dur, ang),y + lengthdir_y(dis / 30 * dur, ang),obj_Dream_Glitch) {
+		    with instance_create_depth(x + lengthdir_x(dis / 30 * dur, ang),y + lengthdir_y(dis / 30 * dur, ang),0,obj_Dream_Glitch) {
 				scr_Soul_Utility_Setup();
 				sprite_index = other.sprite_index;
 				size = other.size;

@@ -5,13 +5,9 @@ global.bosscount -= 1;
 
 if new_boss == true {
 	global.recollectionBoss[boss_value]++;
-	//var _recalls = scr_Calculate_Currency_Add(true)
 	
 } else {
 	global.recollectionBoss[bossValue]++;
-	
-	//scr_Calculate_Currency_Add();
-
 	scr_Sound_Effect(sd_Boss_Kill);
 }
 

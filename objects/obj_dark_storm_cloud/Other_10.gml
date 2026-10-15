@@ -9,7 +9,7 @@ var bull = bullet_type;
 var _seg_size = 80;
 
 for(var _count = 0; _count < 17; _count++) {
-	with instance_create(_xx, _yy, bull) {
+	with instance_create_depth(_xx, _yy, 0, bull) {
 		scr_Bullet_Shoot_Properties();
 		bulletpower = 0;
 							
@@ -36,7 +36,7 @@ for(var _count = 0; _count < 17; _count++) {
 		//direction = other.bullet_direction + (other.dir) * ((40 + random(global.soulparanoia)) / 40);
 		direction = other.bullet_direction;
 		image_angle = direction;
-		scr_Spiritual_Stats_Boss_Bullet_Effects();
+		
 	}
 	bullet_direction = dir + (90 * _zag)
 	_xx += lengthdir_x(_seg_size, bullet_direction)

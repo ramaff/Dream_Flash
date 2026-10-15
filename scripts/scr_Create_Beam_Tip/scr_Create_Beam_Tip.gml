@@ -2,7 +2,7 @@
 // https://help.yoyogames.com/hc/en-us/articles/360005277377 for more information
 function scr_Create_Beam_Tip(shxx, shyy, beamxx, beamyy, beamsize, beamdir){
 
-	with instance_create(shxx + beamxx,shyy + beamyy,obj_Laser_Tip) {
+	with instance_create_depth(shxx + beamxx,shyy + beamyy, 0,obj_Laser_Tip) {
 					
 		image_xscale = beamsize * 0.8;
 		image_yscale = beamsize * 0.8;

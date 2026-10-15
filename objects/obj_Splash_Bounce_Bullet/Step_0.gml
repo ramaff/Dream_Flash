@@ -14,7 +14,7 @@ if bulletbounceY + bounce_speed < 0 {
 	var dir = direction + 75 + random(30);
 
 	repeat(2) {
-		with instance_create(x,y,obj_Direction_Bullet) {
+		with instance_create_depth(x,y,0,obj_Direction_Bullet) {
 	        scr_Bullet_Replicate_Properties();
 	        bulletsprite = spr_Tear_Drop_Bullet;
 	        sprite_index = spr_Tear_Drop_Bullet;

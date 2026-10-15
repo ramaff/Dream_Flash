@@ -1,5 +1,4 @@
 function scr_Boss_Attack_Setup(_version = 1) {
-	
 	// XB05
 	boss_bullet_count_modded = false;
 	

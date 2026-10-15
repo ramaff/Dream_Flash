@@ -1,5 +1,5 @@
 
-with instance_create(x,y,obj_Homing_Dormant_Bullet) {
+with instance_create_depth(x,y,0,obj_Homing_Dormant_Bullet) {
     scr_Bullet_Replicate_Properties();
     sprite_index = spr_Homing_Dormant_Shot;
     bulletspeed = other.bulletspeed * (0.16 + random(0.12));

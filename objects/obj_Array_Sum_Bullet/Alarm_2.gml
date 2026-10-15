@@ -1,7 +1,7 @@
 /// @description Insert description here
 // You can write your code in this editor
 if distance_to_point(obj_Soul_Parent.x, obj_Soul_Parent.y) > 100 {
-	with instance_create(x,y,obj_Array_Bullet) {
+	with instance_create_depth(x,y,0,obj_Array_Bullet) {
 	    scr_Bullet_Replicate_Properties();
 		bulletsize = 0.5;
 		image_xscale = 0.5;
@@ -13,7 +13,7 @@ if distance_to_point(obj_Soul_Parent.x, obj_Soul_Parent.y) > 100 {
 	    direction = other.direction + 90;
 	    alarm[0] = 180;
 	}
-	with instance_create(x,y,obj_Array_Bullet) {
+	with instance_create_depth(x,y,0,obj_Array_Bullet) {
 	    scr_Bullet_Replicate_Properties();
 		bulletsize = 0.5;
 		image_xscale = 0.5;

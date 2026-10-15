@@ -10,7 +10,6 @@ if (Pause_Control.pause) {
 	exit;	
 }
 
-//global.currentheart = variable_struct_get(heart[-1], "heart_id");
 global.currentheart = array_length(heart) - 1;
 if global.currentheart < 0 {
 	exit;	

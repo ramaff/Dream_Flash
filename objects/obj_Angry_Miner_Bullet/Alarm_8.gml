@@ -6,9 +6,7 @@ if bpart = 2 {
 	var xx = bpartarea / 2 - random(bpartarea);
 	var yy = bpartarea / 2 - random(bpartarea);
 	
-	with instance_create(x + xx,y + yy,obj_Weapon_Trail) {
-		
-		depth = other.depth + 2;
+	with instance_create_depth(x + xx,y + yy,depth+2,obj_Weapon_Trail) {
 		
 		sprite_index = other.bpartsprite;
 		

@@ -3,7 +3,7 @@
 
 dir = -25 + (-3 + random(6));
     repeat(2) {
-        with instance_create(x,y,obj_Basic_Bullet) {
+        with instance_create_depth(x,y,0,obj_Basic_Bullet) {
             scr_Bullet_Replicate_Properties();
             sprite_index = spr_Ache_Bullet;
             bulletspeed = other.bulletspeed * 1;

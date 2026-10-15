@@ -6,7 +6,7 @@ if currentphase = 2 and !instance_exists(obj_Migraine_After_Image) {
 	var num = 1;
 	var targ = id;
 	repeat(3) {
-		with instance_create(x,y, obj_Migraine_After_Image) {
+		with instance_create_depth(x,y,depth+1, obj_Migraine_After_Image) {
 			target = targ;
 			dist = 40;
 			targ = id;

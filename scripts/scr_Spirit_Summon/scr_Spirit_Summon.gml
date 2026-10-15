@@ -11,19 +11,13 @@ function scr_Spirit_Summon(bossform = obj_Masked_Hope_Spirit) {
 	var xx = choose(750,-750);
 	var yy = choose(750,-750);
 
-	//repeat(numBoss) {
-		if object_exists(bossform) {
-		    with (instance_create(room_width/2+xx,room_height/2+yy,bossform)) {
-		        difficulty = other.bossDifficulty;
-		        bossNum = bossOrder;
-		        bossOrder++;
-				global.bosscount++;
-		    } 
-		}
-	//}
-
-
-
-
+    if object_exists(bossform) {
+        with (instance_create_depth(room_width/2+xx,room_height/2+yy,0,bossform)) {
+            difficulty = other.bossDifficulty;
+            bossNum = bossOrder;
+            bossOrder++;
+            global.bosscount++;
+        } 
+    }
 
 }

@@ -1,6 +1,4 @@
 function scr_Save_Run() {
-
-	
 	if global.currentheart < 0 {
 		exit;	
 	}

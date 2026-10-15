@@ -2,18 +2,18 @@ function scr_Boss_Teleport_From_Out() {
 	var xv = room_width / 2;
 	var yv = room_height / 2;
 
-	potx = xv - ((global.roomSizeX - 256) / 2) + random(global.roomSizeX - 256);
-	poty = yv - ((global.roomSizeY - 256) / 2) + random(global.roomSizeY - 256);
+	var potx = xv - ((global.roomSizeX - 256) / 2) + random(global.roomSizeX - 256);
+	var poty = yv - ((global.roomSizeY - 256) / 2) + random(global.roomSizeY - 256);
 
-	outx1 = global.roomSizeX + 128;
-	outx2 = global.roomSizeX + 256;
-	outy1 = global.roomSizeY + 128;
-	outy2 = global.roomSizeY + 256;
+	var outx1 = global.roomSizeX + 128;
+	var outx2 = global.roomSizeX + 256;
+	var outy1 = global.roomSizeY + 128;
+	var outy2 = global.roomSizeY + 256;
 
 	var xval = potx - xv;
 	var yval = poty - yv;
 	var inside = 0;
-	away = 0;
+	var away = 0;
 	var port = 0;
 
 
@@ -22,14 +22,14 @@ function scr_Boss_Teleport_From_Out() {
 	}
 
 	with obj_Soul_Parent {
-	    if point_distance(perX, perY, other.potx, other.poty) > 150 {
-	        other.away = 1;
+	    if point_distance(perX, perY, potx, poty) > 150 {
+	       away = 1;
 	    } else {
-	        other.away = 0;
+	        away = 0;
 	    }
 	}
 
-	if distance_to_point(other.potx, other.poty) > 100 {
+	if distance_to_point(potx, poty) > 100 {
 	    port = 1;
 	} else {
 	    port = 0;
@@ -43,7 +43,4 @@ function scr_Boss_Teleport_From_Out() {
 	
 		direction = scr_Soul_Point();
 	}
-
-
-
 }

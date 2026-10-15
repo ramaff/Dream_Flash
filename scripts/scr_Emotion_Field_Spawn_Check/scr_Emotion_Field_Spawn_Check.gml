@@ -5,11 +5,6 @@
 // scr_Room_Change_Actions
 
 function scr_Emotion_Field_Spawn_Check(){
-	//Print_DF(global.emoteFieldSpawn)
-	
-	/*if instance_exists(Chapter_Change_Control) and global.floor[global.currentroom,0] != "Spawn" {
-		exit;	
-	} */
 	if instance_exists(obj_Item_Parent) {
 		exit;	
 	}
@@ -81,9 +76,7 @@ function scr_Emotion_Field_Spawn_Check(){
 		scr_Stat_Field_Check();
 	}
         
-	if global.floor[global.currentroom,0] = "Normal" || global.floor[global.currentroom,0] = "Spawn" {
-	    //instance_create(x,y,Normal_Room_Start_Control)
-	} else {
+	if global.floor[global.currentroom,0] != "Normal" and global.floor[global.currentroom,0] != "Spawn" {
 		scr_Stat_Field_Spawn();
 	}
 }

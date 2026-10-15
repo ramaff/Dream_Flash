@@ -12,7 +12,6 @@ function scr_State_Form(){
 	}
 	
 	if scurrentstate = "Powering Up" {
-		//sprite_index = spr_Soul_Powering_Up;	
 		scr_F03(true);
 	} else if scurrentstate != "Base" {
 		scr_F03(false);

@@ -1,7 +1,3 @@
-//scr_Room_Effect_Step();
-
-//if ((global.bosscount <= 0) and (global.spiritRoom != global.currentroom) and (global.evilSpiritRoom != global.currentroom)) and instance_number(obj_Boss_Parent) = 0 {
-
 if scr_Room_Leavable() {  
 	scr_Room_End();
 	var roomType = global.floor[global.currentroom,0];

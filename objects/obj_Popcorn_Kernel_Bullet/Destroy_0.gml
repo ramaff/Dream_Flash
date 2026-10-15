@@ -3,7 +3,7 @@
 
 var _og_dir = 0;
 
-with instance_create(x,y,obj_Friction_Bullet) {
+with instance_create_depth(x,y,0,obj_Friction_Bullet) {
     scr_Bullet_Replicate_Properties();
 	bulletlifespan = 180;
 	alarm[0] = bulletlifespan;
@@ -25,7 +25,7 @@ repeat(3) {
 	var _xx = lengthdir_x(20, _dir);
 	var _yy = lengthdir_y(20, _dir);
 	
-	with instance_create(x + _xx, y + _yy, obj_Friction_Bullet) {
+	with instance_create_depth(x + _xx, y + _yy,0, obj_Friction_Bullet) {
 	    scr_Bullet_Replicate_Properties();
 		bulletlifespan = 180;
 		alarm[0] = bulletlifespan;

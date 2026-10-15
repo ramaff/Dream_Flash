@@ -5,11 +5,7 @@ sprog = 1;
 
 
 
-with instance_create(camX - 352,camY + 240,obj_Back_To_Soul_Menu_Button) {
-	depth = -1000000;	
-}
-with instance_create(camX - 256,camY + 240,obj_State_Menu_Button) {
-	depth = -1000000;	
-}
+instance_create_depth(camX - 352,camY + 240,-1000000,obj_Back_To_Soul_Menu_Button)
+instance_create_depth(camX - 256,camY + 240,-1000000,obj_State_Menu_Button)
 
 scr_Tutorial_Note_Spawn("state_menu_tutorial")

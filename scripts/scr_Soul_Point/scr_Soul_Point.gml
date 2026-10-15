@@ -4,5 +4,4 @@ function scr_Soul_Point(xx = x, yy = y){
 	} else {
 		return point_direction(xx, yy, obj_Soul_Parent.perX,obj_Soul_Parent.perY);
 	}
-
 }

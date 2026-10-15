@@ -5,21 +5,18 @@ function scr_Bullet_Replicate_Properties(_keep_part = false) {
 				
 	soulshotblock = other.soulshotblock;
 				
-	//if soulshotblock > 0 {
-		projectile_hit_id = other.projectile_hit_id;
-		projectile_hits = {}//ds_list_create();
-		//if ds_exists(other.projectile_hits, ds_type_list) {
-		//	ds_list_copy(projectile_hits, other.projectile_hits);
-		//}
-		if is_struct(other.projectile_hits) {
-			projectile_hits = other.projectile_hits
-		}
-	//}
+
+    projectile_hit_id = other.projectile_hit_id;
+    projectile_hits = {}
+
+    if is_struct(other.projectile_hits) {
+        projectile_hits = other.projectile_hits
+    }
+
 	bossPart = other.bossPart;
 	bulletsprite = other.bulletsprite;
 	sprite_index = bulletsprite;
-	//baseDepth = other.baseDepth + 0.0035;
-			
+
 	bpart = 0;
 	if _keep_part = true {
 		bpart = other.bpart	
@@ -72,28 +69,17 @@ function scr_Bullet_Replicate_Properties(_keep_part = false) {
 	alarm[8] = 2;
 	speed = bulletspeed;
 				
-	with instance_create(x,y,obj_LightS) {
+	with instance_create_depth(x,y,0,obj_LightS) {
 		target = other.id;
-		//lightsize = other.shot_stats.Shot_Light_Size;
-				
-		//sprite_index = spr_Bullet_Glow;
 		lightsize = other.bulletsize;
 	}
 				
-	if bpart != 0 {
-		scr_Bullet_Particle_Setup();
-	}
-				
 	if bulletblend != 0 {
-		scr_Bullet_Blend(bulletblend);	
+		image_blend = bulletblend
 	}
 	
 	bounce_speed = other.bounce_speed;
 	bounce_gravity = other.bounce_gravity;
 	bullet_bounce_Y = other.bullet_bounce_Y;
-				
-	//sizeF = other.sizeF;
-
-
 
 }

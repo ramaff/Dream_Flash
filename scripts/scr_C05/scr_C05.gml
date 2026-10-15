@@ -1,6 +1,5 @@
 function scr_C05() {
 	// Location Soul Hit by Bullet Event
-
 	    if global.roomtime mod round(20 / global.C[5]) = 0 {
 			with (obj_Boss_Parent) {
 			    if distance_to_object(other) < 155 {
@@ -21,14 +20,8 @@ function scr_C05() {
 			
 					scr_Lightning_To_Target(spr_Lightning_Streak, other.x, other.y, x, y, max_streaks, streak_length, streak_color)
 	
-					//scr_Shot_Lightning_Chain(max_streaks, streak_target, chains, xst, yst, streak_length, chain_damage, streak_color, chain_range)
-			
 					scr_Refresh_Soul(4)
-			
-					//scr_Essence_Attack_Field();
 			    }
 			}
 		}
-
-
 }

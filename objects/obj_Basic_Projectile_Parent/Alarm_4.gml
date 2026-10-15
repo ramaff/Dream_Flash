@@ -13,7 +13,7 @@ if global.gameParticles > 0 {
 		var _speed = 0;
 		var _direction = 0;
 	
-		with instance_create(x + xx,y + yy, obj_Weapon_Trail) {
+		with instance_create_depth(x + xx,y + yy, 0, obj_Weapon_Trail) {
 
 			sprite_index = spr_Thicker_Lightning_Streak;
 			image_index = irandom(2);

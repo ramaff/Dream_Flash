@@ -23,7 +23,7 @@ function scr_Item_Click(_stacks = 1, _linger = false, _destroy = true){
 	var sDir = random(360);
 
 	repeat(8) {
-		with instance_create(x,y,obj_Item_Essence) {
+		with instance_create_depth(x,y,0,obj_Item_Essence) {
 			direction = sDir;
 			speed = 15;
 		}

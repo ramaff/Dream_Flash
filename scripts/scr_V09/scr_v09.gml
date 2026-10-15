@@ -7,7 +7,7 @@ function scr_V09(){
 			var _pot = 0
 			while(_ex_ess > 0) {
 				_pot = min(_ex_ess, 10)
-				with instance_create(x,y,obj_Blood_Lust_Flow) {
+				with instance_create_depth(x,y,0,obj_Blood_Lust_Flow) {
 					speed = 4 + random(4);
 					direction = random(360);
 					size = sqrt(_pot) / 5;

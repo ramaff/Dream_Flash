@@ -2,7 +2,7 @@
 // You can write your code in this editor
 var dir = -45;
     repeat(5) {
-        with instance_create(x,y,obj_Basic_Bullet) {
+        with instance_create_depth(x,y,0,obj_Basic_Bullet) {
             scr_Bullet_Replicate_Properties();
             sprite_index = spr_Glowy_Enemy_Shot;
 			bulletsize = 0.5

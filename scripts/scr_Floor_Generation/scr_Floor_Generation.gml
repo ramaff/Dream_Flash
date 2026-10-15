@@ -154,11 +154,11 @@ function scr_Floor_Generation() {
 				global.floor[i,3] += random(8) * global.floor[i,24];
 	        } */
 	        if i = global.spiritRoom {
-	            global.floor[i,25] = scr_Spirit_Choose("Good");
+	            global.floor[i,25] = scr_Spirit_Choose(false);
 	            //global.floor[i,3] += 128;
 	        }
 	        if i = global.evilSpiritRoom {
-	            global.floor[i,26] = scr_Spirit_Choose("Bad");
+	            global.floor[i,26] = scr_Spirit_Choose(true);
 	            //global.floor[i,3] += 128;
 	        }
 	    }

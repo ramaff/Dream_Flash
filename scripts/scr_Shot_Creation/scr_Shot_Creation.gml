@@ -242,10 +242,9 @@ function scr_Shot_Creation(_cw = current_weapon_stats, _prime_shot = false) {
 					speed = 0;	
 				}
 				if shot_stats.Shot_Light = 1 {
-					with instance_create(x,y,obj_LightS) {
+					with instance_create_depth(x,y,0,obj_LightS) {
 						target = other.id;
 						lightsize = other.shot_stats.Shot_Light_Size;
-						//lightsize = 1;
 					}
 				}
 		

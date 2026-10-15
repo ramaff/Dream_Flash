@@ -16,7 +16,7 @@ alarm[1] = 1;
 alarm[2] = 2;
 
 if instance_number(obj_Astral_Indicator) < 1 {
-	instance_create(x,y,obj_Astral_Indicator);
+	instance_create_depth(x,y,-1000000,obj_Astral_Indicator);
 }
 
 upixelH = shader_get_uniform(shOutline,"pixelH");

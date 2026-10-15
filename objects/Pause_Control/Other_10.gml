@@ -19,7 +19,7 @@ if global.layerdeep < 2 and global.doneLoading = 1 and global.doneTransitioning 
         instance_activate_all();
         scr_Pause_Main_Leave();
         scr_Save_Options();
-        instance_create(x,y,obj_Light_Control);
+        instance_create_depth(x,y,0-2,obj_Light_Control);
     }
 }
 
